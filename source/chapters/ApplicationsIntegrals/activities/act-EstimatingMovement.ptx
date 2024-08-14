@@ -1,0 +1,121 @@
+<activity>
+    <title>Estimating Movement</title>
+    <introduction>
+      <p>
+        We're observing an object traveling back and forth in a straight line. Throughout a 5 minute interval, we get the following information about the velocity (in feet/second) of the object.
+      </p>
+      <table>
+        <title>Velocity of an Object</title>
+        <tabular halign="center">
+          <row header="yes">
+            <cell><m>t</m></cell>
+            <cell><m>v(t)</m></cell>
+          </row>
+          <row>
+            <cell>0</cell>
+            <cell>0</cell>
+          </row>
+          <row>
+            <cell>30</cell>
+            <cell>2</cell>
+          </row>
+          <row>
+            <cell>60</cell>
+            <cell>4.25</cell>
+          </row>
+          <row>
+            <cell>90</cell>
+            <cell>5.75</cell>
+          </row>
+          <row>
+            <cell>120</cell>
+            <cell>3.5</cell>
+          </row>
+          <row>
+            <cell>150</cell>
+            <cell>0.75</cell>
+          </row>
+          <row>
+            <cell>180</cell>
+            <cell>-1.25</cell>
+          </row>
+          <row>
+            <cell>210</cell>
+            <cell>-3.5</cell>
+          </row>
+          <row>
+            <cell>240</cell>
+            <cell>-2.75</cell>
+          </row>
+          <row>
+            <cell>270</cell>
+            <cell>-0.5</cell>
+          </row>
+          <row>
+            <cell>300</cell>
+            <cell>-0.25</cell>
+          </row>
+        </tabular>
+      </table>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Describe the motion of the object in general.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          How do we interpret the different values of velocity? How do we interpret the sign of velocity? What about how velocity changes from one of the 30-second time points to the next?
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          When was the acceleration of the object the greatest? When was it the least?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          You can decide how to interpret the "least" acceleration: it is either where the acceleration is closes to 0, or it is the most negative value of the acceleration. These are interpreted differently, but it's a bit ambiguous what we might mean when we say "least acceleration."
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Estimate the total displacement of the object over the 5 minute interval. What is the overall change in posistion from the start to the end?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          How do we use velocity and some time interval to estimate the distance traveled? How do we estimate/assume the velocity on each 30-second time interval?
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Is this different than the total distance that the object traveled over the 5 minute interval? Why or why not?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          How do we think about (or ignore) the direction of the object? Why is this important here?
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          If we know the initial position of the object, how could we find the posistion of the object at some time, $t$, where $t$ is a multiple of 30 between 0 and 300?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Can we limit the time intervals that we use to calculate the object's displacement? How do we use displacement and a starting point to find an ending point?
+        </p>
+      </hint>
+    </task>
+  </activity>

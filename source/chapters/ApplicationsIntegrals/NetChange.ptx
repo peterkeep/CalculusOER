@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-NetChange" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Integrals as Net Change</title>
+  <introduction>
+    <p>
+      We have some rudimentary ideas of what an integral is, but we want to challenge and expand those ideas by examing the object at the root of the definition of the definite integral: a Riemann sum.
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec-estimating-movement">
+    <title>Estimating Movement</title>
+    <p>
+      Here is some text leading to our first activity.
+    </p>
+    <xi:include href="./activities/act-EstimatingMovement.ptx" />
+    <p>
+      So what are the big ideas in this short activity? There are a lot, and many of them are already things we know, at least to some level.
+      So we are really focusing on adding depth to our understanding of these big ideas.
+      Let's list them in the order that they showed up in this activity:
+    <ol>
+      <li>
+        <p>
+          We interpret the velocity as the derivative of the position of the object. So when we interpret the value of the velocity of the object (large vs small, positive vs negative, etc.) we are interpreting these through the lens of a rate of change.
+        </p>
+      </li>
+      <li>
+        <p>
+          Acceleration is the derivative of the velocity function. While we don't have the full picture of the velocity function at any value of <m>t</m>, we still were interested in the rates at which velocity changes with regard to time.
+        </p>
+      </li>
+      <li>
+        <p>
+          We can estimate the total <em>displacement</em> of the object by predicting how far it traveled in eahc 30-second time interval. We might pick the starting velocity for each 30-second interval and multiply that by 30 seconds. We could alternatively pick the ending velocity of each 30-second interval. Then we can add all of these products of velocity and time together to approximate a total change in position! Doesn't this feel like a Riemann sum?
+        </p>
+      </li>
+      <li>
+        <p>
+          When we calculate displacement, the negative velocities get multiplied out to get negative changes in position for the object -- that's because a negative velocity means that the object is moving backwards. If we wanted to calculate the distance traveled, then we need to not account for negative velocities. We can just disregard the sign of the velocity on each time interval and repeat the process above. So, another Riemann sum then?
+        </p>
+      </li>
+      <li>
+        <p>
+          In order to forecast some position at time <m>t</m>, we just need to start with the initial position, and then calculate (or approximate) the displacement from <m>t=0</m> to whatever time <m>t\leq 300</m> we care about, and then add the displacement to the intitial position.
+        </p>
+      </li>
+    </ol>
+    Ok, now let's formalize those results!
+  </p>
+  </subsection>
+
+  <subsection xml:id="subsec-position-velocity-acceleration">
+    <title>Position, Velocity, and Acceleration</title>
+    <p>
+      We know that the velocity of an object is really a rate of change of the position of that object with regard to time. 
+Similarly, the acceleration of an object is the rate of change of the velocity of the object with regard to time.
+So we're really thinking about derivatives!
+    </p>
+    <definition xml:id="def-position-velovity-acceleration">
+      <statement>
+        <p>
+          For an object moving along a straight line, if <m>s(t)</m> represents the <term>position</term> of that object at time <m>t</m>, then the <term>velocity</term> of theobject at time <m>t</m> is <m>v(t) = s'(t)</m> and the <term>acceleration</term> of the object at time <m>t</m> is <m>a(t) = v'(t) = s''(t)</m>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Once we establish this relationship, we can answer questions about movement of an object using the same interpretations of derivatives that we practiced in Chapter 3 of this text.
+    </p>
+    <xi:include href="./activities/act-Jogger.ptx" />
+  </subsection>
+
+
+  </section>
