@@ -1,9 +1,47 @@
-<activity>
+<activity xml:id="act-Jogger">
     <title>A Friendly Jogger</title>
     <introduction>
         <p>
-            
+            Consider a jogger running along a straight-line path, where their velocity at <m>t</m> hours is <m>v(t)=2t^2-8t+6</m>, and velocity is measured in miles per hour. We begin observing this jogger at <m>t=0</m> and observe them over a course of 3 hours.
         </p>
     </introduction>
+    <task>
+        <statement>
+            <p>
+                When is the jogger's acceleration equal to 0 mi/hr<m>^2</m>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Solve <m>a(t) = v'(t) = 0</m>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Does this time represent a maximum or minimum velocity for the jogger? 
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You can use the First Derivative Test or the Second Derivative Test here!
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                When is the jogger's velocity equal to 0 mi/hr?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Describe the motion of the jogger, including information about the direction that they travel and their top speeds.
+            </p>
+        </statement>
+    </task>
     
 </activity>

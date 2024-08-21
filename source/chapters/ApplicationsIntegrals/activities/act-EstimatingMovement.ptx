@@ -1,4 +1,4 @@
-<activity>
+<activity xml:id="act-estimating-movement"> 
     <title>Estimating Movement</title>
     <introduction>
       <p>
@@ -85,7 +85,7 @@
     <task>
       <statement>
         <p>
-          Estimate the total displacement of the object over the 5 minute interval. What is the overall change in posistion from the start to the end?
+          Estimate the total displacement of the object over the 5 minute interval. What is the overall change in position from the start to the end?
         </p>
       </statement>
       <hint>
@@ -109,7 +109,7 @@
     <task>
       <statement>
         <p>
-          If we know the initial position of the object, how could we find the posistion of the object at some time, $t$, where $t$ is a multiple of 30 between 0 and 300?
+          If we know the initial position of the object, how could we find the position of the object at some time, <m>t</m>, where <m>t</m> is a multiple of 30 between 0 and 300?
         </p>
       </statement>
       <hint>

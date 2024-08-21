@@ -4,7 +4,7 @@
   <title>Integrals as Net Change</title>
   <introduction>
     <p>
-      We have some rudimentary ideas of what an integral is, but we want to challenge and expand those ideas by examing the object at the root of the definition of the definite integral: a Riemann sum.
+      We have some rudimentary ideas of what an integral is, but we want to challenge and expand those ideas by examining the object at the root of the definition of the definite integral: a Riemann sum.
     </p>
   </introduction>
 
@@ -56,7 +56,7 @@
 Similarly, the acceleration of an object is the rate of change of the velocity of the object with regard to time.
 So we're really thinking about derivatives!
     </p>
-    <definition xml:id="def-position-velovity-acceleration">
+    <definition xml:id="def-position-velocity-acceleration">
       <statement>
         <p>
           For an object moving along a straight line, if <m>s(t)</m> represents the <term>position</term> of that object at time <m>t</m>, then the <term>velocity</term> of theobject at time <m>t</m> is <m>v(t) = s'(t)</m> and the <term>acceleration</term> of the object at time <m>t</m> is <m>a(t) = v'(t) = s''(t)</m>.
@@ -67,6 +67,60 @@ So we're really thinking about derivatives!
       Once we establish this relationship, we can answer questions about movement of an object using the same interpretations of derivatives that we practiced in Chapter 3 of this text.
     </p>
     <xi:include href="./activities/act-Jogger.ptx" />
+  </subsection>
+
+  <subsection xml:id="subsec-displacement-distance-speed">
+    <title>Displacement, Distance, and Speed</title>
+    <p>
+      Let's revisit <xref ref="act-estimating-movement"/>. When we approximated the displacement of the object, we built a Riemann sum:
+
+      <me>\sum_{k=1}^{10} v(t_k^*) \Delta t</me>
+
+      We chose our <m>t_k^*</m> as either the time at the beginning of each 30-second interval or the time atr the end of the 30-second interval, but that was only because of the limited information that we had about different values of <m>v(t)</m>. If we had information about the <m>v(t)</m> function at any values of <m>t</m> (<m>0\leq t\leq 300</m>), then we could pick <em>any</em> time in each 30-second time interval for our Riemann sum!
+
+      We might note, though, that if we did have this kind of information about the velocity at any time in the 5-minute interval, then we would also build a more precise approximation by subdividing the time interval into smaller/shorter pieces.
+
+      So maybe the Riemann sum <m>\sum_{k=1}^100 v(t_k^*)\Delta t</m> (where we are dividing up the 5 minute interval into 100 3-second intervals) would do a better job!
+
+      But why stop there? If we have the definition of the velocity function, and so we can truly obtain the velocity of the object at <em>any</em> time in the 5 minute interval, then we can use the definition of the definite integral as the limit of a Riemann sum:
+
+      <me>\lim_{n\to\infty} \sum_{k=1}^n v(t_k^*) \Delta t = \int_{t=0}^{t=300} v(t)\;dt</me>
+
+      This should work out well with our first understanding of displacement: the displacement of an object is just the difference in position from the starting time to the ending time. So we could say that if <m>s(t)</m> is the position function, then we might expect to represent displacement from <m>t=a</m> to <m>t=b</m> as <m>s(b)-s(a)</m>. But isn't this just the Fundamental Theorem of Calculus, since <m>s'(t) = v(t)</m>?
+    </p>
+    <definition xml:id="def-displacement">
+      <statement>
+        <p>
+          If an object is moving along a straight line with velocity <m>v(t)</m> and position <m>s(t)</m>, then the <term>displacement</term> of the object from time <m>t=a</m> to <m>t=b</m> is 
+          <me>\int_{t=a}^{t=b} v(t)\;dt = s(b)-s(a)</me>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Let's keep revisiting the same activity. We also noticed that when we looked at the <em>distance</em> compared to the displacement, the only difference was that we were integrating the absolute value of the velocity function, since we didn't care about the sign of the velocity (the direction that the object was traveling) on each interval.
+    </p>
+    <definition xml:id="def-distance">
+      <statement>
+        <p>
+          If an object is moving along a straight line with velocity <m>v(t)</m>, then the <term>distance</term> traveled by the object from time <m>t=a</m> to <m>t=b</m> is:
+          <me>\int_{t=a}^{t=b}|v(t)|\;dt</me>
+          Here, we call <m>|v(t)|</m> the <term>speed</term> of the object (instead of the velocity).
+        </p>
+      </statement>
+    </definition>
+    <p>
+      We should note that we don't have any quick and easy ways of dealing with the integral of the absolute value of a function.
+
+      <me>
+        v(t)| = 
+        \begin{cases}
+            -v(t) \amp \text{when } v(t)\lt 0\\
+            \phantom{-}v(t) \amp \text{when } v(t)\geq 0
+        \end{cases}
+      </me>
+
+      So, in order for us to integrate <m>|v(t)|</m>, we need to think about where the velocity passes through 0, so that we can see where it might change from positive to negative.
+    </p>
   </subsection>
 
 

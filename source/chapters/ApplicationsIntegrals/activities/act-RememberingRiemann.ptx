@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<activity xml:id="act-RememberingRiemann" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Remembering Riemann Sums</title>
+    <introduction>
+        <p>
+            Let's start with the function <m>f(x)</m> on the interval <m>[a,b]</m> with <m>f(x) \gt 0</m> on the interval. We will construct a Riemman sum to approximate the area under the curve on this interval, and then build that into the integral formula.
+        </p>
+        <figure xml:id="fig-1Curve-1">
+            <caption>The curve described above.</caption>
+            <image source="1Curve-1.png" width="100%">
+                <shortdescription>A graph of a positive curve, labeled f(x), from x=a to x=b. The region between the curve and the x-axis is shaded.</shortdescription>
+            </image>
+        </figure>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Divide the interval <m>[a,b]</m> into 4 equally-sized subintervals.
+            </p>
+        </statement>
+    </task>
+    
+</activity>

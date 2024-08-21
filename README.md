@@ -35,9 +35,9 @@ Appendix: More Limits
 - derivatives of inverse functions
 - logarithmic differentiation
 - related rates
-- conic sections
 
 Appendix: Hyperbolic Trig
+- intro to conic sections
 - intro to hyperbolic trigonometric functions
 - identities
 - derivatives
