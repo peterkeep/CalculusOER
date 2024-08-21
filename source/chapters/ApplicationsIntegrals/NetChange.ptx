@@ -80,7 +80,7 @@ So we're really thinking about derivatives!
 
       We might note, though, that if we did have this kind of information about the velocity at any time in the 5-minute interval, then we would also build a more precise approximation by subdividing the time interval into smaller/shorter pieces.
 
-      So maybe the Riemann sum <m>\sum_{k=1}^100 v(t_k^*)\Delta t</m> (where we are dividing up the 5 minute interval into 100 3-second intervals) would do a better job!
+      So maybe the Riemann sum <m>\sum_{k=1}^{100} v(t_k^*)\Delta t</m> (where we are dividing up the 5 minute interval into 100 3-second intervals) would do a better job!
 
       But why stop there? If we have the definition of the velocity function, and so we can truly obtain the velocity of the object at <em>any</em> time in the 5 minute interval, then we can use the definition of the definite integral as the limit of a Riemann sum:
 
@@ -121,7 +121,50 @@ So we're really thinking about derivatives!
 
       So, in order for us to integrate <m>|v(t)|</m>, we need to think about where the velocity passes through 0, so that we can see where it might change from positive to negative.
     </p>
+    <xi:include href="./activities/act-Jogger-2.ptx" />
   </subsection>
 
+  <subsection xml:id="subsec-FutureValueFunction">
+    <title>Finding the Future Value of a Function</title>
+    <p>
+      We can again think back to <xref ref="act-EstimatingMovement"/> and build our last result of this section. Remember when we were looking to predict the location of our object at different times: we said it was reasonable to start at our initial position, and then add the displacement of the object from that initial time up to the time that we were interested in. So, to estimate the object's position after 150 seconds, we would calculate:
+      <me>
+        s(0)+\int_{t=0}^{t=150} v(t)\;dt
+      </me>.
+      But we said we could do this to estimate the object's position at any value for time, <m>t</m>.
+    </p>
+    <definition xml:id="def-FuturePosition">
+      <title>Future Position of an Object</title>
+      <statement>
+        <p>
+          For some object moving along a straight line with velocity <m>v(t)</m> and an intitial position of <m>s(a)</m>, the <term>future position of the object</term> at some time <m>t</m> (with <m>t\geq a</m>) is:
+          <me>
+            \underbrace{s(t)}_{\text{future}\atop \text{position}} = \underbrace{s(0)}_{\text{initial}\atop\text{position}} + \underbrace{\int_{x=a}^{x=t} v(x)\;dx}_{\text{displacement from}\atop{a \text{ to } t}}
+          </me>
+        
+        Note that we change the variable in the velocity function while we integrate: since we want our position function to be in terms of <m>t</m>, the ending time point that we calculate the displacemetn up to, we need to choose a different variable to write velocity in terms of. Mechanically, there is no difference, since we're just swapping out the variables and naming them <m>x</m>.</p>
+      </statement>
+    </definition>
+    <p>
+      We can note that this relationship between velocity and position can exist in many other context: any pair of functions that are derivatives/antiderivatives of each other can have this relationship!
+    </p>
+
+    <definition xml:id="def-FutureValue">
+      <title>Net Change and Future Value</title>
+      <statement>
+        <p>
+          Suppose the value <m>F(t)</m> changes over time at a known rate <m>F'(t)</m>. Then the <term>net change</term> in <m>F</m> between <m>t=a</m> and <m>t=b</m> is:
+          <me>
+            F(b)-F(a) = \int_{t=a}^{t=b} F'(t)\;dt
+          </me>.
+          Similarly, given the initial value <m>F(a)</m>, the <term>future value</term> of <m>F</m> at time <m>t\geq a</m> is:
+          <me>
+            F(t) = F(a) + \int_{x=a}^{x=t} F'(x)\;dx
+          </me>
+        </p>
+      </statement>
+    </definition>
+
+  </subsection>
 
   </section>

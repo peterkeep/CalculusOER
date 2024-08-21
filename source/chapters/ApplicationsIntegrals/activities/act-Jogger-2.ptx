@@ -1,0 +1,41 @@
+<activity xml:id="act-Jogger-2">
+    <title>Tracking our Jogger</title>
+    <introduction>
+        <p>
+            Let's revisit our jogger from <xref ref="act-Jogger"/>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Calculate the total displacement of the jogger from <m>t=0</m> to <m>t=3</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Set up and evaluate a definite integral here, using the velocity function.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Think back to our descroption of the jogger's movement: when is this jogger moving backwards? Split up the time interval from <m>t=0</m> (the start of their run) to <m>t=c</m> (where <m>c</m> is the time that the jogger changed direction) to <m>t=3</m>. Calculate the displacements on each of these two intervals. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Calculate the total distance that the jogger traveled in their 3 hour run.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Remember that we're really calculating: 
+                <me>\left\vert \int_{t=0}^{t=c} v(t)\;dt\right\vert + \left\vert \int_{t=c}^{t=3} v(t)\;dt\right\vert</me>
+            </p>
+        </hint>
+    </task>
+    
+</activity>

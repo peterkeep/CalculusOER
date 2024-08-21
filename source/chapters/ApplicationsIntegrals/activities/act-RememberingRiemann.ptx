@@ -7,8 +7,8 @@
             Let's start with the function <m>f(x)</m> on the interval <m>[a,b]</m> with <m>f(x) \gt 0</m> on the interval. We will construct a Riemman sum to approximate the area under the curve on this interval, and then build that into the integral formula.
         </p>
         <figure xml:id="fig-1Curve-1">
-            <caption>The curve described above.</caption>
-            <image source="1Curve-1.png" width="100%">
+            <caption></caption>
+            <image source="1Curve-1.png" width="70%">
                 <shortdescription>A graph of a positive curve, labeled f(x), from x=a to x=b. The region between the curve and the x-axis is shaded.</shortdescription>
             </image>
         </figure>
@@ -17,6 +17,91 @@
         <statement>
             <p>
                 Divide the interval <m>[a,b]</m> into 4 equally-sized subintervals.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Pick an <m>x_k^*</m> for <m>k=1,2,3,4</m>, one for each subinterval. Then, plot the points <m>(x_1^*, f(x_1^*))</m>, <m>(x_2^*, f(x_2^*))</m>, <m>(x_3^*, f(x_3^*))</m>, and <m>(x_4^*, f(x_4^*))</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                These points are just general ones, and you don't have to come up with actual numbers for the <m>x</m>-values or the corresponding <m>y</m>-values. Instead, just draw them in on the curve, somewhere in each of the subintervals.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use these 4 points to draw 4 rectangles. What are the dimensions of these rectangles (the height and width)?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You won't have any numbers to calculate here, really: instead, see if you can calculate the widths by thinking about the total width of your interval. Then calculate the heights by thinking about the points you created.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the area of each rectangle by multiplying the heights and widths for each rectangle.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Add up the areas to construct a Riemman sum. Is this sum very accurate? Why or why not?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Try to think about the accuracy of your area approximation by looking at it visually. Are there any places where your approximation looks far away from the actual area we're thinking about?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now we will generalize a little more. Let's say we divide this up into <m>n</m> equally-sized pieces (instead of 4). Instead of trying to pick an <m>x_k^*</m> for the unknown number of subintervals (since we don't have a value for <m>n</m> yet), let's just focus on one of these: the arbitrary <m>k</m>th subinterval.
+            </p>
+            <figure xml:id="fig-1Curve-2">
+                <caption></caption>
+                <image source="1Curve-2.png" width="70%">
+                    <shortdescription>The same graph of a positive curve, labeled f(x), from x=a to x=b. Now, though, there is a single rectangle sitting on the x-axis and spanning up to f(x). It is delta-x wide, and the top of the rectangle touches the graph at the point (x_k, f(x_k)).</shortdescription>
+                </image>
+            </figure>
+            <p>
+                What are the fimensions of this <m>k</m>th rectangle?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find <m>A_k</m>, the area of this <m>k</m>th rectangle.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Add up the areas of <m>A_k</m> for <m>k=1,2,3,...,n</m> to approximate the total area, <m>A</m>
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You might want to use summation notation, starting with <m>\sum_{k=1}^n</m>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Apply a limit as <m>n\to \infty</m> to this Riemann sum in order to construct the integral formula for the area under the curve <m>f(x)</m> from <m>x=a</m> to <m>x=b</m>.
             </p>
         </statement>
     </task>
