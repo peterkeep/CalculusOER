@@ -8,7 +8,7 @@
     </p>
   </introduction>
 
-  <subsection xml:id="subsec-estimating-movement">
+  <subsection xml:id="subsec-EstimatingMovement">
     <title>Estimating Movement</title>
     <p>
       Here is some text leading to our first activity.
@@ -72,7 +72,7 @@ So we're really thinking about derivatives!
   <subsection xml:id="subsec-displacement-distance-speed">
     <title>Displacement, Distance, and Speed</title>
     <p>
-      Let's revisit <xref ref="act-estimating-movement"/>. When we approximated the displacement of the object, we built a Riemann sum:
+      Let's revisit <xref ref="act-EstimatingMovement"/>. When we approximated the displacement of the object, we built a Riemann sum:
 
       <me>\sum_{k=1}^{10} v(t_k^*) \Delta t</me>
 
