@@ -4,6 +4,12 @@
         <p>
             Let's start with our same function <m>f(x)</m> on the same interval <m>[a,b]</m>m but also add the function <m>g(x)</m> on the same interval, with <m>f(x) \gt g(x) \gt 0</m> on the interval. We will construct a Riemann sum to approximate the area between these two curves on this interval, and then build that into the integral formula.
         </p>
+        <figure xml:id="fig-2Curve-1">
+            <caption></caption>
+            <image source="2Curve-1.png" width="70%">
+                <shortdescription>A graph of a positive curve and a less positive curve, g(x), labeled f(x), from x=a to x=b. The space between these curves is shaded.</shortdescription>
+            </image>
+        </figure>
     </introduction>
 
     <task>
@@ -45,7 +51,14 @@
         <statement>
             <p>
                 Now we will generalize a little more. Let's say we divide this up into <m>n</m> equally-sized pieces (instead of 4). Instead of trying to pick an <m>x_k^*</m> for the unknown number of subintervals (since we don't have a value for <m>n</m> yet), let's just focus on one of these: the arbitrary <m>k</m>th subinterval.
-
+            </p>
+            <figure xml:id="fig-1Curve-2">
+                <caption></caption>
+                <image source="2Curve-2.png" width="70%">
+                    <shortdescription>The same graph of the two curves f(x) and g(x) between x=a and x=b. Now, though, there is a single rectangle sitting on g(x) and spanning up to f(x). It is delta-x wide. The bottom of the rectangle touches the graph at the point (x_k, g(x_k)) and the top of the rectangle touches the graph at the point (x_k, f(x_k)).</shortdescription>
+                </image>
+            </figure>
+            <p>
                 What are the dimensions of this <m>k</m>th rectangle?
             </p>
         </statement>

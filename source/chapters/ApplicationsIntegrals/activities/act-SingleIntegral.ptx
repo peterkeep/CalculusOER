@@ -4,6 +4,12 @@
         <p>
             Let's consider the same setup as earlier: the region bounded between two curves, <m>y=x+6</m> and <m>y=x^3</m>, as well as the <m>x</m>-axis (the line <m>y=0</m>). We'll need to name these functions, so let's call them <m>f(x) = x^3</m> and <m>g(x) = x+6</m>. But this time, we'll approach the region a bit differently: we're going to try to find the area of the region using only a single integral.
         </p>
+        <figure xml:id="fig-SingleInt-1">
+            <caption></caption>
+            <image source="SingleInt-1.png" width="50%">
+                <shortdescription>A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled. </shortdescription>
+            </image>
+        </figure>
     </introduction>
 
     <task>
@@ -70,7 +76,12 @@
             <p>
                 Again, we'll generalize this and think about the <m>k</m>th rectangle, pictured below.
             </p>
-
+            <figure xml:id="fig-SingleInt-2">
+                <caption></caption>
+                <image source="SingleInt-2.png" width="50%">
+                    <shortdescription> The same region, but this time with a horizontal rectangle spanning across it, with the height labeled delta y. The curves are re-labeled x=y-6 and x = cuberoot(y). </shortdescription>
+                </image>
+            </figure>
             <p>
                 Which variable defines the location of the <m>k</m>th rectangle, here? That is, if you were to describe <em>where</em> in this graph the <m>k</m>th rectangle is laying, would you describe it with an <m>x</m> or <m>y</m> variable? This will act as our general input variable for the integral we're ending with.
             </p>
