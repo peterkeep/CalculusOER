@@ -1,0 +1,119 @@
+<activity xml:id="act-SingleIntegral">
+    <title>Trying for a Single Integral</title>
+    <introduction>
+        <p>
+            Let's consider the same setup as earlier: the region bounded between two curves, <m>y=x+6</m> and <m>y=x^3</m>, as well as the <m>x</m>-axis (the line <m>y=0</m>). We'll need to name these functions, so let's call them <m>f(x) = x^3</m> and <m>g(x) = x+6</m>. But this time, we'll approach the region a bit differently: we're going to try to find the area of the region using only a single integral.
+        </p>
+    </introduction>
+
+    <task>
+        <statement>
+            <p>
+                The range of <m>y</m>-values in this region span from <m>y=0</m> to <m>y=8</m>. Divide this interval evenly into 4 equally sized-subintervals. What is the height of each subinterval? We'll call this <m>\Delta y</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <m>\Delta y = \dfrac{8-0}{4}</m>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Pick a <m>y</m>-value from each sub-interval. You can call these <m>y_1^*</m>, <m>y_2^*</m>, <m>y_3^*</m>, and <m>y_4^*</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the corresponding <m>x</m>-values on the <m>f(x)</m> function for each of the <m>y</m>-values you selected. These will be <m>f^{-1}(y_1^*)</m>, <m>f^{-1}(y_2^*)</m>, <m>f^{-1}(y_3^*)</m>, and <m>f^{-1}(y_4^*)</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You're really just putting your <m>y</m>-values into the equation <m>y=x+6</m> and solving for <m>x</m>. Or you can solve for <m>f^{-1}(y)</m> in general, by solving for <m>x</m> while leaving <m>y</m> as a variable.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Do the same thing for the <m>g</m> function. Now you have 8 points that you can plot: <m>\left(f^{-1}(y_1^*), y_1^*\right)</m>, <m>\left(f^{-1}(y_2^*), y_2^*\right)</m>, <m>\left(f^{-1}(y_3^*), y_3^*\right)</m>, and <m>\left(f^{-1}(y_4^*), y_4^*\right)</m> as well as  <m>\left(g^{-1}(y_1^*), y_1^*\right)</m>, <m>\left(g^{-1}(y_2^*), y_2^*\right)</m>, <m>\left(g^{-1}(y_3^*), y_3^*\right)</m>, and <m>\left(g^{-1}(y_4^*), y_4^*\right)</m>. Plot them.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use these points to draw 4 rectangles with points on <m>f</m> and <m>g</m> determining the left and right ends of the rectangle. What are the dimensions of these rectangles (height and width)?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the area of each rectangle by multiplying the height and widths for each rectangle.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Add up the areas to construct a Riemann sum.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Again, we'll generalize this and think about the <m>k</m>th rectangle, pictured below.
+            </p>
+
+            <p>
+                Which variable defines the location of the <m>k</m>th rectangle, here? That is, if you were to describe <em>where</em> in this graph the <m>k</m>th rectangle is laying, would you describe it with an <m>x</m> or <m>y</m> variable? This will act as our general input variable for the integral we're ending with.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What are the dimensions of the <m>k</m>th rectangle?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find <m>A_k</m>, the area of this <m>k</m>th rectangle.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Add up the areas of <m>A_k</m> for <m>k=1,2,3,...,n</m> to approximate the total area, <m>A</m>
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You might want to use summation notation, starting with <m>\sum_{k=1}^n</m>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Apply a limit as <m>n\to \infty</m> to this Riemann sum in order to construct the integral formula for the area between the curves <m>f(x)</m> and <m>g(x)</m> from <m>x=a</m> to <m>x=b</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now that you have an integral, evaluate it! Find the area of this region to compare with the work we did previously, where we used multiple integrals to measure the size of this same region.
+            </p>
+        </statement>
+    </task>
+</activity>

@@ -1,0 +1,79 @@
+<activity xml:id="act-AreaBetweenCurves">
+    <title>Area Between Curves</title>
+    <introduction>
+        <p>
+            Let's start with our same function <m>f(x)</m> on the same interval <m>[a,b]</m>m but also add the function <m>g(x)</m> on the same interval, with <m>f(x) \gt g(x) \gt 0</m> on the interval. We will construct a Riemann sum to approximate the area between these two curves on this interval, and then build that into the integral formula.
+        </p>
+    </introduction>
+
+    <task>
+        <statement>
+            <p>
+                Divide the interval <m>[a,b]</m> into 4 equally-sized subintervals.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Pick an <m>x_k^*</m> for <m>k=1,2,3,4</m>, one for each subinterval. Plot the points <m>(x_1^*, f(x_1^*))</m>, <m>(x_2^*, f(x_2^*))</m>, <m>(x_3^*, f(x_3^*))</m>, and <m>(x_4^*, f(x_4^*))</m>. Then plot the corresponding points on the <m>g</m> function: <m>(x_1^*, g(x_1^*))</m>, <m>(x_2^*, g(x_2^*))</m>, <m>(x_3^*, g(x_3^*))</m>, and <m>(x_4^*, g(x_4^*))</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use these 8 points to draw 4 rectangles, with the points on the <m>f</m> function defining the tops of the rectangles and the points on the <m>g</m> function defining the bottoms of the rectangles. What are the dimensions of these rectangles (the height and width)?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the area of each rectangle by multiplying the heights and widths for each rectangle.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Add up the areas to construct a Riemman sum. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now we will generalize a little more. Let's say we divide this up into <m>n</m> equally-sized pieces (instead of 4). Instead of trying to pick an <m>x_k^*</m> for the unknown number of subintervals (since we don't have a value for <m>n</m> yet), let's just focus on one of these: the arbitrary <m>k</m>th subinterval.
+
+                What are the dimensions of this <m>k</m>th rectangle?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find <m>A_k</m>, the area of this <m>k</m>th rectangle.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Add up the areas of <m>A_k</m> for <m>k=1,2,3,...,n</m> to approximate the total area, <m>A</m>
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You might want to use summation notation, starting with <m>\sum_{k=1}^n</m>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Apply a limit as <m>n\to \infty</m> to this Riemann sum in order to construct the integral formula for the area between the curves <m>f(x)</m> and <m>g(x)</m> from <m>x=a</m> to <m>x=b</m>.
+            </p>
+        </statement>
+    </task>
+</activity>

@@ -80,10 +80,12 @@ Appendix: Numerical Integration
 - trigonometric substitutions
 - partial fractions
 
-Appendix: More Integration Techniques
-- 
+Appendix: More Integration Techniques (maybe?)
+
 
 7. Applications of Definite Integrals
+- net change and future value
+    - Python: net change and future value
 - area between curves
     - Python: area between curves
 - volumes of solids of revolution
