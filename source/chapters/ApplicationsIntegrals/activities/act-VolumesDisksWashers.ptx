@@ -1,0 +1,48 @@
+<activity xml:id="act-VolumesDisksWashers">
+    <title>Volumes by Disks/Washers</title>
+    <introduction>
+        <p>
+            Consider the region bounded between the curves <m>y=4+2x-x^2</m> and <m>y=\dfrac{4}{x+1}</m>. Will will create a 3-dimensional solid by revolving this region around the <m>x</m>-axis.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Visualize the solid you'll create when you revolve this region around the <m>x</m>-axis.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Draw a single rectangle in your region, standing perpendicular to the <m>x</m>-axis.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's use this rectangle to visualize the <m>k</m>th slice of this 3-dimensional solid. What does the "face" of it look like?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the area of the face of the <m>k</m>th slice. 
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Note that this is a 2-dimensional shape, and we're just finding the area of it.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Set up, and evaluate, the integral representing the volume of the solid.
+            </p>
+        </statement>
+    </task>
+</activity>

@@ -17,9 +17,17 @@
     <subsection xml:id="subsec-AreaBetweenCurves">
         <title>Building an Integral Formula for the Area Between Curves</title>
         <xi:include href="./activities/act-AreaBetweenCurves.ptx" />
-        <p>
-            Example here.
-        </p>
+        <definition xml:id="def-AreaBetweenCurves">
+            <title>Area Between Curves</title>
+            <statement>
+                <p>
+                    If <m>f</m> and <m>g</m> are continuous functions with <m>f(x)\geq g(x)</m> on the interval <m>[a,b]</m>, then the area of the region bounded between the curves <m>y=f(x)</m> and <m>y=g(x)</m> from <m>x=a</m> to <m>x=b</m> is:
+                    <me>
+                        A = \int_{x=a}^{x=b} \left(f(x)-g(x)\right)\;dx
+                    </me>.
+                </p>
+            </statement>
+        </definition>
     </subsection>
     <subsection xml:id="subsec-ChangingPerspective">
         <title>Changing Perspective</title>
@@ -27,5 +35,16 @@
             Text here.
         </p>
         <xi:include href="./activities/act-SingleIntegral.ptx" />
+        <definition xml:id="def-AreaBetweenCurves-y">
+            <title>Area Between Curves (in terms of <m>y</m>)</title>
+            <statement>
+                <p>
+                    If <m>f</m> and <m>g</m> are continuous functions with <m>f^{-1}(y)\geq g^{-1}(y)</m> on the interval of <m>y</m>-values <m>[c,d]</m>, then the area of the region bounded between the curves <m>x=f^{-1}(y)</m> and <m>x=g^{-1}(y)</m> is:
+                    <me>
+                        A = \int_{y=c}^{y=d}\left(f^{-1}(y)-g^{-1}(y)\right)\;dy
+                    </me>.
+                </p>
+            </statement>
+        </definition>
     </subsection>
 </section>
