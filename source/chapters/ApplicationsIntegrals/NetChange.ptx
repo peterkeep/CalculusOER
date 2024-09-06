@@ -142,7 +142,7 @@ So we're really thinking about derivatives!
             \underbrace{s(t)}_{\text{future}\atop \text{position}} = \underbrace{s(0)}_{\text{initial}\atop\text{position}} + \underbrace{\int_{x=a}^{x=t} v(x)\;dx}_{\text{displacement from}\atop{a \text{ to } t}}
           </me>
         
-        Note that we change the variable in the velocity function while we integrate: since we want our position function to be in terms of <m>t</m>, the ending time point that we calculate the displacemetn up to, we need to choose a different variable to write velocity in terms of. Mechanically, there is no difference, since we're just swapping out the variables and naming them <m>x</m>.</p>
+        Note that we change the variable in the velocity function while we integrate: since we want our position function to be in terms of <m>t</m>, the ending time point that we calculate the displacement up to, we need to choose a different variable to write velocity in terms of. Mechanically, there is no difference, since we're just swapping out the variables and naming them <m>x</m>.</p>
       </statement>
     </definition>
     <p>

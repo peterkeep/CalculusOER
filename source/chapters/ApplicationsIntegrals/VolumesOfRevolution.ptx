@@ -2,7 +2,34 @@
 
 <section xml:id="sec-VolumesOfRevolution" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Volumes of Solids of Revolution</title>
-
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-FromAreaToVolume">
+    <title>From Area To Volume</title>
+    <p>
+      Text.
+    </p>
+    <definition xml:id="def-VolumesDisksWashers">
+      <title>Volume by Disks/Washers</title>
+      <statement>
+        <p>
+          If <m>f</m> and <m>g</m> are continuous functions with <m>f(x)\geq g(x) \geq 0</m> on the interval <m>[a,b]</m>, then the volume of the solid formed by revolving the region bounded between the curves <m>y=f(x)</m> and <m>y=g(x)</m> from <m>x=a</m> to <m>x=b</m> around the <m>x</m>-axis is:
+          <me>
+            V = \pi\int_{x=a}^{x=b}\left( (f(x))^2 - (g(x))^2 \right)\;dx
+          </me>.
+          This is called the <term>Washer Method</term>. Note that if <m>g(x) = 0</m>, then the resulting volume is:
+          <me>
+            V = \pi\int_{x=a}^{x=b}\left(f(x)\right)^2\;dx
+          </me>.
+          This is called the <term>Disk Method</term>.
+        </p>
+      </statement>
+    </definition>
+    <xi:include href="./activities/act-VolumesDisksWashers.ptx" />
+    <xi:include href="./activities/act-VolumesDisksWashers-y.ptx" />
+  </subsection>
 
 </section>
