@@ -269,7 +269,26 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-RiemannSums"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">5.2</span><span class="space"> </span><span class="title">Riemann Sums and Area Approximations</span>
 </h2>
-<div class="para" id="sec-RiemannSums-2">Text of section.</div></section></div>
+<div class="para" id="sec-RiemannSums-2">Text of section.</div>
+<article class="definition definition-like" id="def-RiemannSum"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Riemann Sum.</span>
+</h3> <div class="para logical" id="def-RiemannSum-2-1">
+<div class="para">For a closed interval <span class="process-math">\([a,b]\)</span> with a partition <span class="process-math">\(P=\{x_0, x_1, ..., x_n\}\)</span> with <span class="process-math">\(a=x_0 \lt x_1\lt ...\lt x_n=b\text{,}\)</span> consider some <span class="process-math">\(x_k^*\text{,}\)</span> any <span class="process-math">\(x\)</span>-value in the interval <span class="process-math">\([x_{k-1}, x_k]\)</span> and <span class="process-math">\(\Delta x_k\text{,}\)</span> the length of the interval <span class="process-math">\([x_{k-1|, x_k]\text{.}\)</span> If <span class="process-math">\(f\)</span> is a function that is defined on the interval <span class="process-math">\([a,b]\text{,}\)</span> then we call the sum</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=1}^n f(x_k^*) \Delta x_k = f(x_1^*) \Delta x_1 + f(x_2^*)\Delta x_2 + ... + f(x_n^*) \Delta x_n
+\end{equation*}
+</div>
+<div class="para">a <dfn class="terminology">Riemann Sum</dfn> for <span class="process-math">\(f\)</span> on <span class="process-math">\([a,b]\text{.}\)</span>
+</div>
+</div></article><div class="para logical" id="sec-RiemannSums-4">
+<div class="para">In practice, we typically choose a <em class="emphasis">Regular Partition</em>, where each subinterval <span class="process-math">\([x_{k-1}, x_k]\)</span> is equally-wide, and so <span class="process-math">\(\Delta x_k = \frac{b-a}{n}\)</span> for every <span class="process-math">\(k=1,2,...,n\text{.}\)</span> We then normally write our Riemann sum as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=1}^n f(x_k^*) \Delta x = f(x_1^*) \Delta x + f(x_2^*)\Delta x + ... + f(x_n^*) \Delta x\text{.}
+\end{equation*}
+</div>
+</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-IndefiniteIntegrals.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-DefiniteIntegral.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
