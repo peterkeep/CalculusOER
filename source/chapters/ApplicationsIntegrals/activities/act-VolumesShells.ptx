@@ -1,0 +1,45 @@
+<activity xml:id="act-VolumesShells">
+    <title>Volume by Shells</title>
+    <introduction>
+        <p>
+            Let's consider the region bounded by the curves <m>y=x^3</m> and <m>y-x+6</m> as well as the line <m>y=0</m>. You might remember this region from <xref ref="act-SingleIntegral"/>. This time, we'll create a 3-dimensional solid by revolving the region around the <m>x</m>-axis
+        </p>
+        <figure xml:id="fig-VolumeShells">
+            <caption></caption>
+            <image source="SingleInt-1.png" width="50%">
+                <shortdescription>A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled. </shortdescription>
+            </image>
+        </figure>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Sketch one or two rectangles that are <em>perpendicular</em> to the <m>x</m>-axis. Then set up an integral expression to find the volume of the solid using them.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Note that in this context, we're actually using disks and washers. Also note that the bottom of the rectangles are bounded by <m>y=0</m> from <m>x=-6</m> to <m>x=0</m> and then switches to being bounded by <m>y=x^3</m> from <m>x=0</m> to <m>x=2</m>. 
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now draw a single rectangle in the region that is <em>parallel</em> to the axis of revolution. Use this rectangle to visualize the <m>k</m>th slice of this 3-dimensional solid. What does that single rectangle create when it is revolved around the <m>x</m>-axis?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                This won't create a disk or washer!
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Set up and evaluate the integral expression representing the volume of the solid.
+            </p>
+        </statement>
+    </task>
+</activity>

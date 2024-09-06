@@ -32,4 +32,20 @@
     <xi:include href="./activities/act-VolumesDisksWashers-y.ptx" />
   </subsection>
 
+  <subsection xml:id="subsec-Re-OrientingRectangles">
+    <title>Re-Orienting our Rectangles</title>
+    <definition xml:id="def-VolumesShells">
+      <title>Volume by Shells</title>
+      <statement>
+        <p>
+          If <m>f(x)</m> and <m>g(x)</m> are continuous functions with <m>f(x)\geq g(x)</m> on the interval <m>[a,b]</m> (with <m>a\geq0</m>), then the volume of the solid formed when the region bounded between the curves <m>y=f(x)</m> and <m>y=g(x)</m> from <m>x=a</m> to <m>x=b</m> is revolved around the <m>y</m>-axis is 
+          <me>
+            V = 2\pi \int_{x=a}^{x=b} x\left(f(x)-g(x)\right)\;dx
+          </me>.
+        </p>
+      </statement>
+    </definition>
+    <xi:include href="./activities/act-VolumesShells.ptx" />
+  </subsection>
+
 </section>
