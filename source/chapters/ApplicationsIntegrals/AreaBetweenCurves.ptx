@@ -13,10 +13,24 @@
             Text here.
         </p>
         <xi:include href="./activities/act-RememberingRiemann.ptx" />
+        <p>
+            This activity hopefully reminds of the definition of a Riemann Sum (<xref ref="def-RiemannSum"/>) from earlier in this text (<xref ref="sec-RiemannSums"/>).
+        </p>
     </subsection>
     <subsection xml:id="subsec-AreaBetweenCurves">
         <title>Building an Integral Formula for the Area Between Curves</title>
         <xi:include href="./activities/act-AreaBetweenCurves.ptx" />
+        <definition xml:id="def-AreaBetweenCurves">
+            <title>Area Between Curves</title>
+            <statement>
+                <p>
+                    If <m>f(x)</m> and <m>g(x)</m> are continuous functions with <m>f(x)\geq g(x)</m> on the interval <m>[a,b]</m>, then the <term>area bounded between the curves</term> <m>y=f(x)</m> and <m>y=g(x)</m> between <m>x=a</m> and <m>x=b</m> is
+                    <me>
+                        A = \int_{x=a}^{x=b} \left(f(x)-g(x)\right)\;dx
+                    </me>.
+                </p>
+            </statement>
+        </definition>
         <p>
             Example here.
         </p>
@@ -28,4 +42,18 @@
         </p>
         <xi:include href="./activities/act-SingleIntegral.ptx" />
     </subsection>
+    <p>
+        We can re-write our definition of the area between curves (<xref ref="def-AreaBetweenCurves"/>) to account for this change in perspective, by thinking about these same functions in terms of <m>y</m>.
+    </p>
+    <definition xml:id="def-AreaBetweenCurves-y">
+        <title>Area Between Curves (in terms of <m>y</m>)</title>
+        <statement>
+            <p>
+                If <m>f(y)</m> and <m>g(y)</m> are continuous functions with <m>f(y) \geq g(y)</m> on the interval of <m>y</m>-values <m>[c,d]</m>, then the <term>area bounded between the curves</term> <m>x=f(y)</m> and <m>x=g(y)</m> from <m>y=c</m> to <m>y=d</m> is
+                <me>
+                    A = \int_{y=c}^{y=d} \left( f(y) - g(y)\right)\;dy
+                </me>.
+            </p>
+        </statement>
+    </definition>
 </section>
