@@ -106,8 +106,7 @@ window.MathJax = {
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-AreaBetweenCurves.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-ApplicationIntegrals.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-MoreVolumes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
-\DeclareMathOperator{\d}{d}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-AreaBetweenCurves.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-ApplicationIntegrals.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-MoreVolumes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -224,7 +223,10 @@ window.MathJax = {
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AreaBetweenCurves.html#subsec-ChangingPerspective" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Changing Perspective</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Volumes of Solids of Revolution</span></a></div></li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-VolumesOfRevolution.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Volumes of Solids of Revolution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-FromAreaToVolume" class="internal"><span class="codenumber">7.3.1</span> <span class="title">From Area To Volume</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-MoreVolumes.html" class="internal"><span class="codenumber">7.4</span> <span class="title">More Volumes of Solids of Revolution</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ArcLength.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Arc Length</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SurfaceArea.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Surface Area</span></a></div></li>
@@ -269,7 +271,46 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-VolumesOfRevolution"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">7.3</span><span class="space"> </span><span class="title">Volumes of Solids of Revolution</span>
 </h2>
-<div class="para" id="sec-VolumesOfRevolution-2">Text of section.</div></section></div>
+<section class="introduction" id="sec-VolumesOfRevolution-2"><div class="para" id="sec-VolumesOfRevolution-2-1"></div></section><section class="subsection" id="subsec-FromAreaToVolume"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.3.1</span><span class="space"> </span><span class="title">From Area To Volume</span>
+</h3>
+<div class="para" id="subsec-FromAreaToVolume-2">Text.</div>
+<article class="definition definition-like" id="def-VolumesDisksWashers"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Volume by Disks/Washers.</span>
+</h4> <div class="para logical" id="def-VolumesDisksWashers-2-1">
+<div class="para">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are continuous functions with <span class="process-math">\(f(x)\geq g(x) \geq 0\)</span> on the interval <span class="process-math">\([a,b]\text{,}\)</span> then the volume of the solid formed by revolving the region bounded between the curves <span class="process-math">\(y=f(x)\)</span> and <span class="process-math">\(y=g(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> around the <span class="process-math">\(x\)</span>-axis is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V = \pi\int_{x=a}^{x=b}\left( (f(x))^2 - (g(x))^2 \right)\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">This is called the <dfn class="terminology">Washer Method</dfn>. Note that if <span class="process-math">\(g(x) = 0\text{,}\)</span> then the resulting volume is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V = \pi\int_{x=a}^{x=b}\left(f(x)\right)^2\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">This is called the <dfn class="terminology">Disk Method</dfn>.</div>
+</div></article><article class="activity project-like" id="act-VolumesDisksWashers"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Volumes by Disks/Washers.</span>
+</h4>
+<div class="introduction" id="act-VolumesDisksWashers-2"><div class="para" id="act-VolumesDisksWashers-2-1">Consider the region bounded between the curves <span class="process-math">\(y=4+2x-x^2\)</span> and <span class="process-math">\(y=\dfrac{4}{x+1}\text{.}\)</span> Will will create a 3-dimensional solid by revolving this region around the <span class="process-math">\(x\)</span>-axis.</div></div>
+<article class="task exercise-like" id="act-VolumesDisksWashers-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-VolumesDisksWashers-3-1-1">Visualize the solid you’ll create when you revolve this region around the <span class="process-math">\(x\)</span>-axis.</div></article><article class="task exercise-like" id="act-VolumesDisksWashers-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-VolumesDisksWashers-4-1-1">Draw a single rectangle in your region, standing perpendicular to the <span class="process-math">\(x\)</span>-axis.</div></article><article class="task exercise-like" id="act-VolumesDisksWashers-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-VolumesDisksWashers-5-1-1">Let’s use this rectangle to visualize the <span class="process-math">\(k\)</span>th slice of this 3-dimensional solid. What does the "face" of it look like?</div></article><article class="task exercise-like" id="act-VolumesDisksWashers-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-VolumesDisksWashers-6-1-1">Find the area of the face of the <span class="process-math">\(k\)</span>th slice.</div>
+<div class="solutions"><details id="act-VolumesDisksWashers-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-VolumesDisksWashers-6-2-1">Note that this is a 2-dimensional shape, and we’re just finding the area of it.</div></div></details></div></article><article class="task exercise-like" id="act-VolumesDisksWashers-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-VolumesDisksWashers-7-1-1">Set up, and evaluate, the integral representing the volume of the solid.</div></article></article><article class="activity project-like" id="act-VolumesDisksWashers-y"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Another Volume.</span>
+</h4>
+<div class="introduction" id="act-VolumesDisksWashers-y-2"><div class="para" id="act-VolumesDisksWashers-y-2-1">Now lets consider another region: this time, the one bounded between the curves <span class="process-math">\(y=x\)</span> and <span class="process-math">\(y=3\sqrt{x}\text{.}\)</span> We will, again, create a 3-dimensional solid by revolving this region around the <span class="process-math">\(y\)</span>-axis.</div></div>
+<article class="task exercise-like" id="act-VolumesDisksWashers-y-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-VolumesDisksWashers-y-3-1-1">Visualize the solid you’ll create when you revolve this region around the <span class="process-math">\(y\)</span>-axis.</div></article><article class="task exercise-like" id="act-VolumesDisksWashers-y-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-VolumesDisksWashers-y-4-1-1">Draw a single rectangle in your region standing perpendicular to the <span class="process-math">\(y\)</span>-axis.</div></article><article class="task exercise-like" id="act-VolumesDisksWashers-y-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-VolumesDisksWashers-y-5-1-1">Let’s use this rectangle to visualize the <span class="process-math">\(k\)</span>th slice of this 3-dimensional solid. What does the "face" of it look like?</div></article><article class="task exercise-like" id="act-VolumesDisksWashers-y-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-VolumesDisksWashers-y-6-1-1">Find the area of the face of the <span class="process-math">\(k\)</span>th slice.</div></article><article class="task exercise-like" id="act-VolumesDisksWashers-y-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-VolumesDisksWashers-y-7-1-1">Set up and evaluate the integral representing the volume of this solid.</div></article></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-AreaBetweenCurves.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-MoreVolumes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
