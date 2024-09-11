@@ -88,6 +88,11 @@ window.MathJax = {
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+#subsec-EstimatingMovement-4-1 { counter-set: subsec-EstimatingMovement-4-1 0; }
+#subsec-EstimatingMovement-4-1 > li::marker { content: ""counter(subsec-EstimatingMovement-4-1,decimal)"."; }
+#subsec-EstimatingMovement-4-1 > li { counter-increment: subsec-EstimatingMovement-4-1; }
+</style>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -225,9 +230,18 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-VolumesOfRevolution.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Volumes of Solids of Revolution</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-FromAreaToVolume" class="internal"><span class="codenumber">7.3.1</span> <span class="title">From Area To Volume</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-FromAreaToVolume" class="internal"><span class="codenumber">7.3.1</span> <span class="title">From Area To Volume</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-Re-OrientingRectangles" class="internal"><span class="codenumber">7.3.2</span> <span class="title">Re-Orienting our Rectangles</span></a></div></li>
+</ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-MoreVolumes.html" class="internal"><span class="codenumber">7.4</span> <span class="title">More Volumes of Solids of Revolution</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-MoreVolumes.html" class="internal"><span class="codenumber">7.4</span> <span class="title">More Volumes: Shifting the Axis of Revolution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreVolumes.html#subsec-WhatChanges" class="internal"><span class="codenumber">7.4.1</span> <span class="title">What Changes?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreVolumes.html#subsec-FormalizingTheChanges" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Formalizing These Changes in the Washers and Shells</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ArcLength.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Arc Length</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SurfaceArea.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Surface Area</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Other Applications of Integrals</span></a></div></li>
@@ -291,7 +305,7 @@ window.MathJax = {
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="space"> </span><span class="title">Defining a Limit</span>
 </h3>
 <article class="objectives goal-like" id="subsec-defining-a-limit-2"><h4 class="heading"><span class="type">Objectives</span></h4>
-<ul class="disc"><li id="subsec-defining-a-limit-2-1-1"><div class="para" id="subsec-defining-a-limit-2-1-1-1">How do we formalize this idea of thinking about what happens "as we get close" to something?</div></li></ul></article><article class="definition definition-like" id="def-Limit"><h4 class="heading">
+<ul class="disc" id="subsec-defining-a-limit-2-1"><li id="subsec-defining-a-limit-2-1-1"><div class="para" id="subsec-defining-a-limit-2-1-1-1">How do we formalize this idea of thinking about what happens "as we get close" to something?</div></li></ul></article><article class="definition definition-like" id="def-Limit"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Limit of a Function.</span>
 </h4> <div class="para logical" id="def-Limit-2-1">
 <div class="para">For the function <span class="process-math">\(f(x)\)</span> defined at all <span class="process-math">\(x\)</span>-xalues around <span class="process-math">\(a\)</span> (except maybe at <span class="process-math">\(x=a\)</span> itself), we say that the limit as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> of <span class="process-math">\(f(x)\)</span> is <span class="process-math">\(L\)</span> if <span class="process-math">\(f(x)\)</span> is arbitrarily close to the single, real number <span class="process-math">\(L\)</span> whenever <span class="process-math">\(x\)</span> is sufficiently close to, but not equal to, <span class="process-math">\(a\text{.}\)</span> We write this as:</div>

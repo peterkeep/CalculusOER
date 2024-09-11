@@ -520,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.3",
   "title": "Volumes of Solids of Revolution",
-  "body": " Volumes of Solids of Revolution       From Area To Volume  Text.   Volume by Disks\/Washers   If and are continuous functions with on the interval , then the volume of the solid formed by revolving the region bounded between the curves and from to around the -axis is: . This is called the Washer Method . Note that if , then the resulting volume is: . This is called the Disk Method .     Volumes by Disks\/Washers   Consider the region bounded between the curves and . Will will create a 3-dimensional solid by revolving this region around the -axis.    Visualize the solid you'll create when you revolve this region around the -axis.    Draw a single rectangle in your region, standing perpendicular to the -axis.    Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    Find the area of the face of the th slice.   Note that this is a 2-dimensional shape, and we're just finding the area of it.    Set up, and evaluate, the integral representing the volume of the solid.     Another Volume   Now lets consider another region: this time, the one bounded between the curves and . We will, again, create a 3-dimensional solid by revolving this region around the -axis.    Visualize the solid you'll create when you revolve this region around the -axis.    Draw a single rectangle in your region standing perpendicular to the -axis.    Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    Find the area of the face of the th slice.    Set up and evaluate the integral representing the volume of this solid.     "
+  "body": " Volumes of Solids of Revolution       From Area To Volume  Text.   Volume by Disks\/Washers   If and are continuous functions with on the interval , then the volume of the solid formed by revolving the region bounded between the curves and from to around the -axis is: . This is called the Washer Method . Note that if , then the resulting volume is: . This is called the Disk Method .     Volumes by Disks\/Washers   Consider the region bounded between the curves and . Will will create a 3-dimensional solid by revolving this region around the -axis.    Visualize the solid you'll create when you revolve this region around the -axis.    Draw a single rectangle in your region, standing perpendicular to the -axis.    Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    Find the area of the face of the th slice.   Note that this is a 2-dimensional shape, and we're just finding the area of it.    Set up, and evaluate, the integral representing the volume of the solid.     Another Volume   Now lets consider another region: this time, the one bounded between the curves and . We will, again, create a 3-dimensional solid by revolving this region around the -axis.    Visualize the solid you'll create when you revolve this region around the -axis.    Draw a single rectangle in your region standing perpendicular to the -axis.    Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    Find the area of the face of the th slice.    Set up and evaluate the integral representing the volume of this solid.      Re-Orienting our Rectangles   Volume by Shells   If and are continuous functions with on the interval (with ), then the volume of the solid formed when the region bounded between the curves and from to is revolved around the -axis is .     Volume by Shells   Let's consider the region bounded by the curves and as well as the line . You might remember this region from . This time, we'll create a 3-dimensional solid by revolving the region around the -axis     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.      Sketch one or two rectangles that are perpendicular to the -axis. Then set up an integral expression to find the volume of the solid using them.   Note that in this context, we're actually using disks and washers. Also note that the bottom of the rectangles are bounded by from to and then switches to being bounded by from to .    Now draw a single rectangle in the region that is parallel to the axis of revolution. Use this rectangle to visualize the th slice of this 3-dimensional solid. What does that single rectangle create when it is revolved around the -axis?   This won't create a disk or washer!    Set up and evaluate the integral expression representing the volume of the solid.     "
 },
 {
   "id": "def-VolumesDisksWashers",
@@ -550,13 +550,58 @@ var ptx_lunr_docs = [
   "body": " Another Volume   Now lets consider another region: this time, the one bounded between the curves and . We will, again, create a 3-dimensional solid by revolving this region around the -axis.    Visualize the solid you'll create when you revolve this region around the -axis.    Draw a single rectangle in your region standing perpendicular to the -axis.    Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    Find the area of the face of the th slice.    Set up and evaluate the integral representing the volume of this solid.   "
 },
 {
+  "id": "def-VolumesShells",
+  "level": "2",
+  "url": "sec-VolumesOfRevolution.html#def-VolumesShells",
+  "type": "Definition",
+  "number": "7.3.2",
+  "title": "Volume by Shells.",
+  "body": " Volume by Shells   If and are continuous functions with on the interval (with ), then the volume of the solid formed when the region bounded between the curves and from to is revolved around the -axis is .   "
+},
+{
+  "id": "act-VolumesShells",
+  "level": "2",
+  "url": "sec-VolumesOfRevolution.html#act-VolumesShells",
+  "type": "Activity",
+  "number": "7.3.3",
+  "title": "Volume by Shells.",
+  "body": " Volume by Shells   Let's consider the region bounded by the curves and as well as the line . You might remember this region from . This time, we'll create a 3-dimensional solid by revolving the region around the -axis     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.      Sketch one or two rectangles that are perpendicular to the -axis. Then set up an integral expression to find the volume of the solid using them.   Note that in this context, we're actually using disks and washers. Also note that the bottom of the rectangles are bounded by from to and then switches to being bounded by from to .    Now draw a single rectangle in the region that is parallel to the axis of revolution. Use this rectangle to visualize the th slice of this 3-dimensional solid. What does that single rectangle create when it is revolved around the -axis?   This won't create a disk or washer!    Set up and evaluate the integral expression representing the volume of the solid.   "
+},
+{
   "id": "sec-MoreVolumes",
   "level": "1",
   "url": "sec-MoreVolumes.html",
   "type": "Section",
   "number": "7.4",
-  "title": "More Volumes of Solids of Revolution",
-  "body": " More Volumes of Solids of Revolution  Text of section.  "
+  "title": "More Volumes: Shifting the Axis of Revolution",
+  "body": " More Volumes: Shifting the Axis of Revolution   We have introduced some methods for creating and calculating the volume of different 3 dimensional solids of revolution.    What Changes?  Let's first consider a volume created using disks or washers.   What Changes (in the Washer Method) with a New Axis?   Let's revisit , and ask some more follow-up questions. First, we'll tinker with the solid we created: instead of revolving around the -axis, let's revolve the same solid around the horizontal line .    What changes, if anything, do you have to make to the rectangle you drew in ?    What changes, if anything, do you have to make to the area of the \"face\" th washer?    What changes, if anything, do you have to make to the eventual volume integral for this solid?    Now let's consider a volume created using shells.   What Changes (in the Shell Method) with a New Axis?   Let's revisit , and ask some more follow-up questions about the shell method. Again, we'll tinker with the solid we created: instead of revolving around the -axis, let's revolve the same solid around the horizontal line .    What changes, if anything, do you have to make to the rectangle you drew in ?    What changes, if anything, do you have to make to the area of the rectangle formed by \"unrolling\" up th cylinder?    What changes, if anything, do you have to make to the eventual volume integral for this solid?    In both of these cases, we can notice that the only changes we make are to the radii : we just need to re-measure the distance from axis of revolution to either the ends of the rectangle (in the washer method) or the side of the rectangle (in the shell method).    Formalizing These Changes in the Washers and Shells   More Shifted Axes   We're going to spend some time constructing several different volume integrals in this activity. We'll consider the same region each time, but make changes to the axis of revolution. For each, we'll want to think about what kind of method we're using (disks\/washers or shells) and how the different axis of revolution gets implemented into our volume integral formulas.  Let's consider the region bounded by the curves and between and .    Let's start with revolving this around the -axis and thinking about the solid formed. While you set up your volume integral, think carefully about which method you'll be using (disks\/washers or shells) as well as which variable you are integrating with regard to ( or ).   Note that in this region, we definitely want to use rectangles that stand up vertically. That means that they'll have a very small width, , and sit perpendicular to the axis of revolution.    Now let's create a different solid by revolving this region around the -axis. Set up a volume integral, and continue to think carefully about which method you'll be using (disks\/washers or shells) as well as which variable you are integrating with regard to ( or ).   We still will use the same tall rectangle with a small side length, but this time it will be parallel to our axis of revolution.     "
+},
+{
+  "id": "act-VolumesWhatChanges-Washers",
+  "level": "2",
+  "url": "sec-MoreVolumes.html#act-VolumesWhatChanges-Washers",
+  "type": "Activity",
+  "number": "7.4.1",
+  "title": "What Changes (in the Washer Method) with a New Axis?",
+  "body": " What Changes (in the Washer Method) with a New Axis?   Let's revisit , and ask some more follow-up questions. First, we'll tinker with the solid we created: instead of revolving around the -axis, let's revolve the same solid around the horizontal line .    What changes, if anything, do you have to make to the rectangle you drew in ?    What changes, if anything, do you have to make to the area of the \"face\" th washer?    What changes, if anything, do you have to make to the eventual volume integral for this solid?   "
+},
+{
+  "id": "act-VolumesWhatChanges-Shells",
+  "level": "2",
+  "url": "sec-MoreVolumes.html#act-VolumesWhatChanges-Shells",
+  "type": "Activity",
+  "number": "7.4.2",
+  "title": "What Changes (in the Shell Method) with a New Axis?",
+  "body": " What Changes (in the Shell Method) with a New Axis?   Let's revisit , and ask some more follow-up questions about the shell method. Again, we'll tinker with the solid we created: instead of revolving around the -axis, let's revolve the same solid around the horizontal line .    What changes, if anything, do you have to make to the rectangle you drew in ?    What changes, if anything, do you have to make to the area of the rectangle formed by \"unrolling\" up th cylinder?    What changes, if anything, do you have to make to the eventual volume integral for this solid?   "
+},
+{
+  "id": "act-ShiftedAxes",
+  "level": "2",
+  "url": "sec-MoreVolumes.html#act-ShiftedAxes",
+  "type": "Activity",
+  "number": "7.4.3",
+  "title": "More Shifted Axes.",
+  "body": " More Shifted Axes   We're going to spend some time constructing several different volume integrals in this activity. We'll consider the same region each time, but make changes to the axis of revolution. For each, we'll want to think about what kind of method we're using (disks\/washers or shells) and how the different axis of revolution gets implemented into our volume integral formulas.  Let's consider the region bounded by the curves and between and .    Let's start with revolving this around the -axis and thinking about the solid formed. While you set up your volume integral, think carefully about which method you'll be using (disks\/washers or shells) as well as which variable you are integrating with regard to ( or ).   Note that in this region, we definitely want to use rectangles that stand up vertically. That means that they'll have a very small width, , and sit perpendicular to the axis of revolution.    Now let's create a different solid by revolving this region around the -axis. Set up a volume integral, and continue to think carefully about which method you'll be using (disks\/washers or shells) as well as which variable you are integrating with regard to ( or ).   We still will use the same tall rectangle with a small side length, but this time it will be parallel to our axis of revolution.   "
 },
 {
   "id": "sec-ArcLength",

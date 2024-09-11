@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>More Volumes of Solids of Revolution</title>
+<title>More Volumes: Shifting the Axis of Revolution</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -88,6 +88,11 @@ window.MathJax = {
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+#subsec-EstimatingMovement-4-1 { counter-set: subsec-EstimatingMovement-4-1 0; }
+#subsec-EstimatingMovement-4-1 > li::marker { content: ""counter(subsec-EstimatingMovement-4-1,decimal)"."; }
+#subsec-EstimatingMovement-4-1 > li { counter-increment: subsec-EstimatingMovement-4-1; }
+</style>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -225,9 +230,18 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-VolumesOfRevolution.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Volumes of Solids of Revolution</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-FromAreaToVolume" class="internal"><span class="codenumber">7.3.1</span> <span class="title">From Area To Volume</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-FromAreaToVolume" class="internal"><span class="codenumber">7.3.1</span> <span class="title">From Area To Volume</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-Re-OrientingRectangles" class="internal"><span class="codenumber">7.3.2</span> <span class="title">Re-Orienting our Rectangles</span></a></div></li>
+</ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-MoreVolumes.html" class="internal"><span class="codenumber">7.4</span> <span class="title">More Volumes of Solids of Revolution</span></a></div></li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-MoreVolumes.html" class="internal"><span class="codenumber">7.4</span> <span class="title">More Volumes: Shifting the Axis of Revolution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreVolumes.html#subsec-WhatChanges" class="internal"><span class="codenumber">7.4.1</span> <span class="title">What Changes?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreVolumes.html#subsec-FormalizingTheChanges" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Formalizing These Changes in the Washers and Shells</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ArcLength.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Arc Length</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SurfaceArea.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Surface Area</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Other Applications of Integrals</span></a></div></li>
@@ -269,9 +283,44 @@ window.MathJax = {
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-MoreVolumes"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">7.4</span><span class="space"> </span><span class="title">More Volumes of Solids of Revolution</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">7.4</span><span class="space"> </span><span class="title">More Volumes: Shifting the Axis of Revolution</span>
 </h2>
-<div class="para" id="sec-MoreVolumes-2">Text of section.</div></section></div>
+<section class="introduction" id="sec-MoreVolumes-2"><div class="para" id="sec-MoreVolumes-2-1">We have introduced some methods for creating and calculating the volume of different 3 dimensional solids of revolution.</div></section><section class="subsection" id="subsec-WhatChanges"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.4.1</span><span class="space"> </span><span class="title">What Changes?</span>
+</h3>
+<div class="para" id="subsec-WhatChanges-2">Let’s first consider a volume created using disks or washers.</div>
+<article class="activity project-like" id="act-VolumesWhatChanges-Washers"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">What Changes (in the Washer Method) with a New Axis?</span>
+</h4>
+<div class="introduction" id="act-VolumesWhatChanges-Washers-2"><div class="para" id="act-VolumesWhatChanges-Washers-2-1">Let’s revisit <a href="sec-VolumesOfRevolution.html#act-VolumesDisksWashers" class="xref" data-knowl="./knowl/xref/act-VolumesDisksWashers.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.3.1: Volumes by Disks/Washers">Activity 7.3.1 Volumes by Disks/Washers</a>, and ask some more follow-up questions. First, we’ll tinker with the solid we created: instead of revolving around the <span class="process-math">\(x\)</span>-axis, let’s revolve the same solid around the horizontal line <span class="process-math">\(y=-3\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="act-VolumesWhatChanges-Washers-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-VolumesWhatChanges-Washers-3-1-1">What changes, if anything, do you have to make to the rectangle you drew in <a href="sec-VolumesOfRevolution.html#act-VolumesDisksWashers" class="xref" data-knowl="./knowl/xref/act-VolumesDisksWashers.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.3.1: Volumes by Disks/Washers">Activity 7.3.1</a>?</div></article><article class="task exercise-like" id="act-VolumesWhatChanges-Washers-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-VolumesWhatChanges-Washers-4-1-1">What changes, if anything, do you have to make to the area of the "face" <span class="process-math">\(k\)</span>th washer?</div></article><article class="task exercise-like" id="act-VolumesWhatChanges-Washers-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-VolumesWhatChanges-Washers-5-1-1">What changes, if anything, do you have to make to the eventual volume integral for this solid?</div></article></article><div class="para" id="subsec-WhatChanges-4">Now let’s consider a volume created using shells.</div>
+<article class="activity project-like" id="act-VolumesWhatChanges-Shells"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">What Changes (in the Shell Method) with a New Axis?</span>
+</h4>
+<div class="introduction" id="act-VolumesWhatChanges-Shells-2"><div class="para" id="act-VolumesWhatChanges-Shells-2-1">Let’s revisit <a href="sec-VolumesOfRevolution.html#act-VolumesShells" class="xref" data-knowl="./knowl/xref/act-VolumesShells.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.3.3: Volume by Shells">Activity 7.3.3</a>, and ask some more follow-up questions about the shell method. Again, we’ll tinker with the solid we created: instead of revolving around the <span class="process-math">\(x\)</span>-axis, let’s revolve the same solid around the horizontal line <span class="process-math">\(y=9\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="act-VolumesWhatChanges-Shells-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-VolumesWhatChanges-Shells-3-1-1">What changes, if anything, do you have to make to the rectangle you drew in <a href="sec-VolumesOfRevolution.html#act-VolumesShells" class="xref" data-knowl="./knowl/xref/act-VolumesShells.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.3.3: Volume by Shells">Activity 7.3.3</a>?</div></article><article class="task exercise-like" id="act-VolumesWhatChanges-Shells-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-VolumesWhatChanges-Shells-4-1-1">What changes, if anything, do you have to make to the area of the rectangle formed by "unrolling" up <span class="process-math">\(k\)</span>th cylinder?</div></article><article class="task exercise-like" id="act-VolumesWhatChanges-Shells-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-VolumesWhatChanges-Shells-5-1-1">What changes, if anything, do you have to make to the eventual volume integral for this solid?</div></article></article><div class="para" id="subsec-WhatChanges-6">In both of these cases, we can notice that the only changes we make are to the <em class="emphasis">radii</em>: we just need to re-measure the distance from axis of revolution to either the ends of the rectangle (in the washer method) or the side of the rectangle (in the shell method).</div></section><section class="subsection" id="subsec-FormalizingTheChanges"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.4.2</span><span class="space"> </span><span class="title">Formalizing These Changes in the Washers and Shells</span>
+</h3>
+<article class="activity project-like" id="act-ShiftedAxes"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">More Shifted Axes.</span>
+</h4>
+<div class="introduction" id="act-ShiftedAxes-2">
+<div class="para" id="act-ShiftedAxes-2-1">We’re going to spend some time constructing <em class="emphasis">several</em> different volume integrals in this activity. We’ll consider the same region each time, but make changes to the axis of revolution. For each, we’ll want to think about what kind of method we’re using (disks/washers or shells) and how the different axis of revolution gets implemented into our volume integral formulas.</div> <div class="para" id="act-ShiftedAxes-2-2">Let’s consider the region bounded by the curves <span class="process-math">\(y=\cos(x)+3\)</span> and <span class="process-math">\(y=\dfrac{x}{2}\)</span> between <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=2\pi\text{.}\)</span>
+</div>
+</div>
+<article class="task exercise-like" id="act-ShiftedAxes-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-ShiftedAxes-3-1-1">Let’s start with revolving this around the <span class="process-math">\(x\)</span>-axis and thinking about the solid formed. While you set up your volume integral, think carefully about which method you’ll be using (disks/washers or shells) as well as which variable you are integrating with regard to (<span class="process-math">\(x\)</span> or <span class="process-math">\(y\)</span>).</div>
+<div class="solutions"><details id="act-ShiftedAxes-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-ShiftedAxes-3-2-1">Note that in this region, we definitely want to use rectangles that stand up vertically. That means that they’ll have a very small width, <span class="process-math">\(\Delta x\text{,}\)</span> and sit perpendicular to the axis of revolution.</div></div></details></div></article><article class="task exercise-like" id="act-ShiftedAxes-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-ShiftedAxes-4-1-1">Now let’s create a different solid by revolving this region around the <span class="process-math">\(y\)</span>-axis. Set up a volume integral, and continue to think carefully about which method you’ll be using (disks/washers or shells) as well as which variable you are integrating with regard to (<span class="process-math">\(x\)</span> or <span class="process-math">\(y\)</span>).</div>
+<div class="solutions"><details id="act-ShiftedAxes-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-ShiftedAxes-4-2-1">We still will use the same tall rectangle with a small <span class="process-math">\(\Delta x\)</span> side length, but this time it will be parallel to our axis of revolution.</div></div></details></div></article></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-VolumesOfRevolution.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-ArcLength.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
