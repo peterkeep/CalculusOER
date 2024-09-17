@@ -1,0 +1,79 @@
+<activity xml:id="act-ArcLength">
+    <title>Discovering the Arc Length Formula</title>
+    <introduction>
+        <p>
+            We're going to re-visit some formulas that we use to measure distances and lengths. We'll try to use these formulas to construct a Riemann sum.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Consider the right triangle pictured. How do we use the Pythagorean Theorem to find the length of the hypotenuse, <m>c</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How do we use the distance formula to find the length of the line between the two points, <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m>, pictured?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How are these two things the same? How are they different?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now we'll transfer this way of calculating distances to a curved function. We'll slice the curve into <m>n</m> segments, and approximate the length of each segment with a straight line.
+
+                Find the length <m>\ell_k</m>, using the distance formula.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                It might be easier to think about the distance formula, but use <m>\Delta x</m> and <m>\Delta y_k</m> instead.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <m>\ell_k = \sqrt{(\Delta x)^2 + (\Delta y_k)^2}</m>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Estimate the total length of the curve by adding up the lengths <m>\ell_k</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <m>\ell \approx \sum_{k=1}^n \sqrt{(\Delta x)^2+(\Delta y_k)^2}</m>
+            </p>
+        </solution>
+    </task>
+    <conclusion>
+        <p>
+            We'll note that this sum is <em>not</em> a Riemann sum! Why not?
+
+            <ol>
+                <li>
+                    <p>
+                        The <m>\Delta x</m>, width of each subinterval, needs to be multiplied (typically at the end of the sum).
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We need an output of some function evaluated at a single <m>x</m>-value, <m>x_k^*</m>, from the interval. Right now, we are looking at two function outputs, since we find <m>\Delta y_k</m> based on the difference in the <m>y</m>-values at the end points.
+                    </p>
+                </li>
+            </ol>
+            We'll work at correcting these issues and constructing an actual Riemann sum now.
+        </p>
+    </conclusion>
+</activity>
