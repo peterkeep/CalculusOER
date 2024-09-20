@@ -136,13 +136,22 @@ var ptx_lunr_docs = [
   "body": " Some Early Derivative Rules  Text of section.  "
 },
 {
-  "id": "sec-ProductQuotientRules",
+  "id": "sec-ProductQuotientRule",
   "level": "1",
-  "url": "sec-ProductQuotientRules.html",
+  "url": "sec-ProductQuotientRule.html",
   "type": "Section",
   "number": "2.4",
   "title": "The Product and Quotient Rules",
-  "body": " The Product and Quotient Rules  Text of section.  "
+  "body": " The Product and Quotient Rules  Text of section.   The Product Rule   If and are functions that are differentiable at and , then: . For convenience, this is often written as: .    "
+},
+{
+  "id": "thm-ProductRule",
+  "level": "2",
+  "url": "sec-ProductQuotientRule.html#thm-ProductRule",
+  "type": "Theorem",
+  "number": "2.4.1",
+  "title": "The Product Rule.",
+  "body": " The Product Rule   If and are functions that are differentiable at and , then: . For convenience, this is often written as: .   "
 },
 {
   "id": "sec-ChainRule",
@@ -151,7 +160,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.5",
   "title": "The Chain Rule",
-  "body": " The Chain Rule  Text of section.  "
+  "body": " The Chain Rule  Text of section.   The Chain Rule   For the composite function , if we define and , then, as long as both and are differentiable at and respectively: . Alternatively, this can be written as: .    "
+},
+{
+  "id": "thm-ChainRule",
+  "level": "2",
+  "url": "sec-ChainRule.html#thm-ChainRule",
+  "type": "Theorem",
+  "number": "2.5.1",
+  "title": "The Chain Rule.",
+  "body": " The Chain Rule   For the composite function , if we define and , then, as long as both and are differentiable at and respectively: . Alternatively, this can be written as: .   "
 },
 {
   "id": "sec-ImplicitDifferentiation",
@@ -325,13 +343,13 @@ var ptx_lunr_docs = [
   "body": " More Definite Integrals  Text of section.  "
 },
 {
-  "id": "sec-uSubtitution",
+  "id": "sec-uSubstitution",
   "level": "1",
-  "url": "sec-uSubtitution.html",
+  "url": "sec-uSubstitution.html",
   "type": "Section",
   "number": "6.1",
-  "title": "<span class=\"process-math\">\\(u\\)<\/span>-Subtitution",
-  "body": " -Subtitution   Title     "
+  "title": "<span class=\"process-math\">\\(u\\)<\/span>-Substitution",
+  "body": " -Substitution   Title     "
 },
 {
   "id": "sec-AlgebraicManipulations",
@@ -349,7 +367,52 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.3",
   "title": "Integration By Parts",
-  "body": " Integration By Parts  Text of section.  "
+  "body": " Integration By Parts   We've seen now that is a useful technique for undo-ing . We set up the variable substitution with the specific goal of going backwards through the Chain Rule and antidifferentiating some composition of functions. A reasonable next step is to ask: What other derivative rules can we \"undo?\" What other operations between functions should we think about? This brings us to Integration by Parts, the integration technique specifically for undo-ing .    Discovering the Integration by Parts Formula   Discovering the Integration by Parts Formula   The product rule for derivatives says that: . We know that we intend to \"undo\" the product rule, so let's try to re-frame the product rule from a rule about derivatives to a rule about antiderivatives.    Antidifferentiate the product rule by antidifferentiating each side of the equation.    Note that on the left side of this equation you're antidifferentiating a derivative. What will that give you? Then, on the right side, we're just splitting up the terms of the product rule into two different integrals.    On the right side, we have two integrals. Since each of them has a product of functions (one function and a derivative of another), we can isolate one of them in this equation and create a formula for how to antidifferentiate a product of functions! Solve for .    Look back at this formula for . Explain how this is really the product rule for derivatives (without just undo-ing all of the steps we have just done).    What made it so useful to pick instead of in this case? Since we know that we are going to get another integral, one that specifically has the new derivative and new antiderivative that we find from the parts we picked, we noticed that differentiating the function was much nicer than antidifferentiating it: we get a constant that we multiply by the trig function in this new integral, instead of a power function with an even bigger exponent. We can also notice that when it comes to the trig function, it doesn't really matter if we differentiate it or antidifferentiate it. In both cases, we get a in our new integral, with the only difference being whether it is positive or negative.    We typically use the substitutions and to re-write the integrals.   Integration by Parts   Suppose and are both differentiable functions. Then: .    When we select the parts for our integral, we are selecting a function to be labeled and a function to be labeled as . We begin with one of the pieces of the product rule, a function multiplied by some other function's derivative. It is important to recognize that we do different things to these functions: for one of them, , we need to find the derivative, . For the other, , we need to find an antiderivative, . Because of these differences, it is important to build some good intuition for how to select the parts.    Intuition for Selecting the Parts   Picking the Parts for Integration by Parts   Let's consider the integral: . We'll investigate how to set up the integration by parts formula with the different choices for the parts.    We'll start with selecting and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using your labeled pieces. Notice that the integration by parts formula gives us another integral. Don't worry about antidifferentiating this yet, let's just set the pieces up.        Let's swap the pieces and try the setup with and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Compare the two results we have. Which setup do you think will be easier to move forward with? Why?   When we say we need to keep moving forward with our setup, what we mean is that we have another integral to antidifferentiate. Which one will be easier to work with: or ?    Finalize your work with the setup you have chosen to find .    What made things so much better when we chose compared to ? We know that the new integral from our integration by parts formula will be built from the new pieces, the derivative we find from and the antiderivative we pick from . So when we differentiate , we get a constant, compared to antidifferentiating and getting another power function, but with a larger exponent. We know this will be combined with a function no matter what (since the derivative and antiderivatives of will only differ in their sign). So picking the version that gets that second integral to be built from a trig function and a constant is going to be much nicer than a trig function and a power function. It was nice to pick to be the piece that we found the derivative of!    Let's practice this comparison with another example in order to build our intuition for picking the parts in our integration by parts formula.   Picking the Parts for Integration by Parts   This time we'll look at a very similar integral: . Again, we'll set this up two different ways and compsare them.    We'll start with selecting and . Fill in the following with the rest of the pieces:    You're not forgetting how to antidifferentiate . This is just something we don't know yet!    Ok, so here we have to swap the pieces and try the setup with and , since we only know how to differentiate . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Why was it fine for us to antidifferentiate in this example, but not in ?    Finish this work to find .   Notice that .    So here, we didn't actually get much choice. We couldn't pick in order to differentiate it (and get a constant to multiply into our second integral) since we don't know how to antidifferentiate (yet: once we know how, it might be fun to come back to this problem and try it again with the parts flipped). But we can also notice that it ended up being fine to antidifferentiate : the increased power from our power rule didn't really matter much when we combined it with the derivative of the logarithm, since the derivative of the log is also a power function ! So we were able to combine those easily and actually integrate that second integral.     It is common for students to want to place functions into sort of hierarchy or classification guidelines for choosing the parts. Some students have found that the acronym LIPET (logs, inverse trig, power functions, exponentials, and trig functions) can be a useful tool for selecting the parts. When you have two different types of functions, it might help to select to be whichever function shows up first in that list.     Integrate the following:        It doesn't matter whether we differentiate or antidifferentiate , since we'll get the same thing. Let's pick so that we can differentiate it.     We need to do more integration by parts!       "
+},
+{
+  "id": "act-IntegrationByParts",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#act-IntegrationByParts",
+  "type": "Activity",
+  "number": "6.3.1",
+  "title": "Discovering the Integration by Parts Formula.",
+  "body": " Discovering the Integration by Parts Formula   The product rule for derivatives says that: . We know that we intend to \"undo\" the product rule, so let's try to re-frame the product rule from a rule about derivatives to a rule about antiderivatives.    Antidifferentiate the product rule by antidifferentiating each side of the equation.    Note that on the left side of this equation you're antidifferentiating a derivative. What will that give you? Then, on the right side, we're just splitting up the terms of the product rule into two different integrals.    On the right side, we have two integrals. Since each of them has a product of functions (one function and a derivative of another), we can isolate one of them in this equation and create a formula for how to antidifferentiate a product of functions! Solve for .    Look back at this formula for . Explain how this is really the product rule for derivatives (without just undo-ing all of the steps we have just done).    What made it so useful to pick instead of in this case? Since we know that we are going to get another integral, one that specifically has the new derivative and new antiderivative that we find from the parts we picked, we noticed that differentiating the function was much nicer than antidifferentiating it: we get a constant that we multiply by the trig function in this new integral, instead of a power function with an even bigger exponent. We can also notice that when it comes to the trig function, it doesn't really matter if we differentiate it or antidifferentiate it. In both cases, we get a in our new integral, with the only difference being whether it is positive or negative.   "
+},
+{
+  "id": "thm-IntegrationByParts",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#thm-IntegrationByParts",
+  "type": "Theorem",
+  "number": "6.3.1",
+  "title": "Integration by Parts.",
+  "body": " Integration by Parts   Suppose and are both differentiable functions. Then: .   "
+},
+{
+  "id": "act-PickingParts-1",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#act-PickingParts-1",
+  "type": "Activity",
+  "number": "6.3.2",
+  "title": "Picking the Parts for Integration by Parts.",
+  "body": " Picking the Parts for Integration by Parts   Let's consider the integral: . We'll investigate how to set up the integration by parts formula with the different choices for the parts.    We'll start with selecting and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using your labeled pieces. Notice that the integration by parts formula gives us another integral. Don't worry about antidifferentiating this yet, let's just set the pieces up.        Let's swap the pieces and try the setup with and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Compare the two results we have. Which setup do you think will be easier to move forward with? Why?   When we say we need to keep moving forward with our setup, what we mean is that we have another integral to antidifferentiate. Which one will be easier to work with: or ?    Finalize your work with the setup you have chosen to find .    What made things so much better when we chose compared to ? We know that the new integral from our integration by parts formula will be built from the new pieces, the derivative we find from and the antiderivative we pick from . So when we differentiate , we get a constant, compared to antidifferentiating and getting another power function, but with a larger exponent. We know this will be combined with a function no matter what (since the derivative and antiderivatives of will only differ in their sign). So picking the version that gets that second integral to be built from a trig function and a constant is going to be much nicer than a trig function and a power function. It was nice to pick to be the piece that we found the derivative of!   "
+},
+{
+  "id": "act-PickingParts-2",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#act-PickingParts-2",
+  "type": "Activity",
+  "number": "6.3.3",
+  "title": "Picking the Parts for Integration by Parts.",
+  "body": " Picking the Parts for Integration by Parts   This time we'll look at a very similar integral: . Again, we'll set this up two different ways and compsare them.    We'll start with selecting and . Fill in the following with the rest of the pieces:    You're not forgetting how to antidifferentiate . This is just something we don't know yet!    Ok, so here we have to swap the pieces and try the setup with and , since we only know how to differentiate . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Why was it fine for us to antidifferentiate in this example, but not in ?    Finish this work to find .   Notice that .    So here, we didn't actually get much choice. We couldn't pick in order to differentiate it (and get a constant to multiply into our second integral) since we don't know how to antidifferentiate (yet: once we know how, it might be fun to come back to this problem and try it again with the parts flipped). But we can also notice that it ended up being fine to antidifferentiate : the increased power from our power rule didn't really matter much when we combined it with the derivative of the logarithm, since the derivative of the log is also a power function ! So we were able to combine those easily and actually integrate that second integral.   "
+},
+{
+  "id": "subsec-PickingParts-6",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#subsec-PickingParts-6",
+  "type": "Example",
+  "number": "6.3.2",
+  "title": "",
+  "body": "  Integrate the following:        It doesn't matter whether we differentiate or antidifferentiate , since we'll get the same thing. Let's pick so that we can differentiate it.     We need to do more integration by parts!     "
 },
 {
   "id": "sec-PowersOfTrig",
