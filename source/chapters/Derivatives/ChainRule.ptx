@@ -4,5 +4,21 @@
   <title>The Chain Rule</title>
 
   <p> Text of section. </p>
+  <theorem xml:id="thm-ChainRule">
+    <title>The Chain Rule</title>
+      <statement>
+      <p>
+        For the composite function <m>y=f(g(x))</m>, if we define <m>u=g(x)</m> and <m>y=f(u)</m>, then, as long as both <m>f</m> and <m>g</m> are differentiable at <m>u</m> and <m>x</m> respectively:
+        <me>
+          \ddx{f(g(x))} = \frac{d}{du}\left(f(u)\right)\cdot \frac{d}{dx}\left(g(x)\right)
+        </me>.
+        Alternatively, this can be written as:
+        <me>
+          \dydx = \dd{y}{u} \cdot \dd{u}{x} \hspace{1cm} \text{or}\hspace{1cm} \frac{d}{dx}\left(f(g(x))\right) = f'(g(x))\cdot g'(x)
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+  
 
 </section>

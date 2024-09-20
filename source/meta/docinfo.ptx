@@ -21,6 +21,10 @@
   <!-- it defines. -->
   <macros> 
     \newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
+    \newcommand{\ddx}[1]{\frac{d}{dx}\left(#1\right)}
+    \newcommand{\dd}[2]{\frac{d#1}{d#2}}
+    \newcommand{\dydx}{\frac{dy}{dx}}
+    \renewcommand{\blank}[1]{\underline{\hspace{#1}}}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->

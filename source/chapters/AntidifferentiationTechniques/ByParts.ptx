@@ -2,7 +2,91 @@
 
 <section xml:id="sec-IntegrationByParts" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Integration By Parts</title>
+  <introduction>
+    <p>
+      We've seen now that <xref ref="sec-uSubstitution" text="title"/> is a useful technique for undo-ing <xref ref="thm-ChainRule" text="title"/>. We set up the variable substitution with the specific goal of going backwards through the Chain Rule and antidifferentiating some composition of functions.
 
-  <p> Text of section. </p>
+      A reasonable next step is to ask: What other derivative rules can we "undo?" What other operations between functions should we think about? This brings us to Integration by Parts, the integration technique specifically for undo-ing <xref ref="thm-ProductRule" text="title"/>.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-DiscoveringIntegrationByParts">
+    <title>Discovering the Integration by Parts Formula</title>
+    <xi:include href="./activities/act-IntegrationByParts.ptx" />
+   <p>
+    We typically use the substitutions <m>du = u'\;dx</m> and <m>dv=v'\;dx</m> to re-write the integrals.
+   </p> 
+  <theorem xml:id="thm-IntegrationByParts">
+    <title>Integration by Parts</title>      
+    <statement>
+      <p>
+        Suppose <m>u(x)</m> and <m>v(x)</m> are both differentiable   functions. Then:
+        <me>
+          \int u\;dv = uv - \int v\;du
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    When we select the parts for our integral, we are selecting a function to be labeled <m>u</m> and a function to be labeled as <m>dv</m>. We begin with one of the pieces of the product rule, a function multiplied by some other function's derivative. It is important to recognize that we do different things to these functions: for one of them, <m>u</m>, we need to find the derivative, <m>du</m>. For the other, <m>dv</m>, we need to find an antiderivative, <m>b</m>. Because of these differences, it is important to build some good intuition for how to select the parts. 
+  </p>
+  </subsection>
+  <subsection xml:id="subsec-PickingParts">
+    <title>Intuition for Selecting the Parts</title>
+  <xi:include href="./activities/act-PickingParts-1.ptx" />
+  <p>
+    Let's practice this comparison with another example in order to build our intuition for picking the parts in our integration by parts formula.
+  </p>
+  <xi:include href="./activities/act-PickingParts-2.ptx" />
+  <aside>
+    <p>
+      It is common for students to want to place functions into sort of hierarchy or classification guidelines for choosing the parts. Some students have found that the acronym LIPET (logs, inverse trig, power functions, exponentials, and trig functions) can be a useful tool for selecting the parts. When you have two different types of functions, it might help to select <m>u</m> to be whichever function shows up first in that list.
+    </p>
+  </aside>
+  <example>
+    <introduction>
+      <p>
+        Integrate the following:
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\int x^2 e^x\;dx</m>
+        </p>
+      </statement>
+      <hint>
+        <p>
+          It doesn't matter whether we differentiate or antidifferentiate <m>e^x</m>, since we'll get the same thing. Let's pick <m>u=x^2</m> so that we can differentiate it.
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <me>
+            \begin{array}{ll}
+              u = x^2 \amp v = e^x\\
+              du = 2x\; dx \amp dv = e^x\;dx
+            \end{array}
+          </me>
+          <me>
+            \int x^2e^x\;dx = x^2e^x - \int 2xe^x \;dx
+          </me>
+            We need to do more integration by parts!
+          <me>
+            \begin{array}{ll}
+              u = 2x \amp v = e^x\\
+              du = 2\;dx \amp dv = e^x\;dx
+            \end{array}
+          </me>
+          <me>
+            \begin{aligned}
+            \int x^2e^x\;dx \amp = x^2e^x - \left(2xe^x - \int 2e^x\;dx\right)\\
+            \amp = x^2e^x-2xe^x+2e^x+C
+            \end{aligned}
+          </me>
+        </p>
+      </solution>
+    </task>
+  </example>
+  </subsection>
 
 </section>

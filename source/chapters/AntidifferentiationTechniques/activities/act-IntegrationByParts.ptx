@@ -1,0 +1,54 @@
+<activity xml:id="act-IntegrationByParts">
+    <title>Discovering the Integration by Parts Formula</title>
+    <introduction>
+        <p>
+            The product rule for derivatives says that:
+            <me>
+                \ddx{u(x)\cdot v(x)} = \blank{5cm} + \blank{5cm}
+            </me>.
+            We know that we intend to "undo" the product rule, so let's try to re-frame the product rule from a rule about derivatives to a rule about antiderivatives.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Antidifferentiate the product rule by antidifferentiating each side of the equation.
+                <me>
+                    \begin{aligned}
+                        \int \left(\ddx{u\cdot v}\right)\;dx \amp= \int \blank{5 cm}+ \blank{5 cm} dx\\
+                        \blank{5 cm} \amp= \int \blank{5 cm} dx + \int \blank{5 cm} dx
+                    \end{aligned}
+                </me>
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Note that on the left side of this equation you're antidifferentiating a derivative. What will that give you? Then, on the right side, we're just splitting up the terms of the product rule into two different integrals.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                On the right side, we have two integrals. Since each of them has a product of functions (one function and a derivative of another), we can isolate one of them in this equation and create a formula for how to antidifferentiate a product of functions!
+
+                Solve for <m>\int u v'\;dx</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Look back at this formula for <m>\int u v'\;dx</m>. Explain how this is really the product rule for derivatives (without just undo-ing all of the steps we have just done).
+            </p>
+        </statement>
+    </task>
+    <conclusion>
+        <p>
+            What made it so useful to pick <m>u=x</m> instead of <m>dv = x\;dx</m> in this case? Since we know that we are going to get another integral, one that specifically has the new derivative and new antiderivative that we find from the parts we picked, we noticed that differentiating the function <m>x</m> was much nicer than antidifferentiating it: we get a constant that we multiply by the trig function in this new integral, instead of a power function with an even bigger exponent.
+
+            We can also notice that when it comes to the trig function, it doesn't really matter if we differentiate it or antidifferentiate it. In both cases, we get a <m>cos(x)</m> in our new integral, with the only difference being whether it is positive or negative.
+        </p>
+    </conclusion>
+    
+</activity>

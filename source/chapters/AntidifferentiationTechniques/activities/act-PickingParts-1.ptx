@@ -1,0 +1,88 @@
+<activity xml:id="act-PickingParts-1">
+    <title>Picking the Parts for Integration by Parts</title>
+    <introduction>
+        <p>
+            Let's consider the integral:
+            <me>
+                \int x\sin(x)\;dx
+            </me>.
+            We'll investigate how to set up the integration by parts formula with the different choices for the parts.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                We'll start with selecting <m>u=x</m> and <m>dv = \sin(x)\;dx</m>. Fill in the following with the rest of the pieces:
+                <me>
+                    \begin{array}{ll}
+                        u = x \amp v = \blank{3cm}\\
+                        du = \blank{3cm} \amp dv = \sin(x)\;dx
+                    \end{array}
+                </me>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now set up the integration by parts formula using your labeled pieces. Notice that the integration by parts formula gives us another integral. Don't worry about antidifferentiating this yet, let's just set the pieces up.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <m>\int u\;dv = uv - \int v\;du</m>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's swap the pieces and try the setup with <m>u=\sin(x)</m> and <m>dv = x\;dx</m>. Fill in the following with the rest of the pieces:
+                <me>
+                    \begin{array}{ll}
+                        u = \sin(x) \amp v = \blank{3cm}\\
+                        du = \blank{3cm} \amp dv = x\;dx
+                    \end{array}
+                </me>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now set up the integration by parts formula using this setup.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <m>\int u\;dv = uv - \int v\;du</m>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Compare the two results we have. Which setup do you think will be easier to move forward with? Why?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                When we say we need to keep moving forward with our setup, what we mean is that we have another integral to antidifferentiate. Which one will be easier to work with: <m>\int (-\cos(x))\;dx</m> or <m>\int \left(\frac{x^2}{2}\cos(x)\right)</m>?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Finalize your work with the setup you have chosen to find <m>\int x\sin(x)\;dx</m>.
+            </p>
+        </statement>
+    </task>
+    <conclusion>
+        <p>
+            What made things so much better when we chose <m>u=x</m> compared to <m>dv = x\;dx</m>? We know that the new integral from our integration by parts formula will be built from the new pieces, the derivative we find from <m>u</m> and the antiderivative we pick from <m>dv</m>. So when we differentiate <m>u=x</m>, we get a constant, compared to antidifferentiating <m>dv = x\;dx</m> and getting another power function, but with a larger exponent. We know this will be combined with a <m>cos(x)</m> function no matter what (since the derivative and antiderivatives of <m>sin(x)</m> will only differ in their sign). So picking the version that gets that second integral to be built from a trig function and a constant is going to be much nicer than a trig function and a power function.
+
+            It was nice to pick <m>x</m> to be the piece that we found the derivative of!
+        </p>
+    </conclusion>
+</activity>

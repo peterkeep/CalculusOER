@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-ProductQuotientRules" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-ProductQuotientRule" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Product and Quotient Rules</title>
 
   <p> Text of section. </p>
+
+  <theorem xml:id="thm-ProductRule">
+    <title>The Product Rule</title>
+    <statement>
+      <p>
+        If <m>u(x)</m> and <m>v(x)</m> are functions that are differentiable at <m>x</m> and <m>f(x) = u(x)\cdot v(x)</m>, then:
+        <me>
+          \ddx{f(x)} = u'(x)\cdot v(x) + u(x) \cdot v'(x)
+        </me>.
+        For convenience, this is often written as:
+        <me>
+          \ddx{u\cdot v} = u'v + uv' \hspace{1cm} \text{or}\hspace{1cm} \ddx{u\cdot v} = v \left(\dd{u}{x}\right) + u \left(\dd{v}{x}\right)
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+  
 
 </section>
