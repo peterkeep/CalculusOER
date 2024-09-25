@@ -32,61 +32,211 @@
   </subsection>
   <subsection xml:id="subsec-PickingParts">
     <title>Intuition for Selecting the Parts</title>
-  <xi:include href="./activities/act-PickingParts-1.ptx" />
-  <p>
-    Let's practice this comparison with another example in order to build our intuition for picking the parts in our integration by parts formula.
-  </p>
-  <xi:include href="./activities/act-PickingParts-2.ptx" />
-  <aside>
-    <p>
-      It is common for students to want to place functions into sort of hierarchy or classification guidelines for choosing the parts. Some students have found that the acronym LIPET (logs, inverse trig, power functions, exponentials, and trig functions) can be a useful tool for selecting the parts. When you have two different types of functions, it might help to select <m>u</m> to be whichever function shows up first in that list.
+    <xi:include href="./activities/act-PickingParts-1.ptx" />
+   <p>
+     Let's practice this comparison with another example in order to build our intuition for picking the parts in our integration by parts formula.
     </p>
-  </aside>
-  <example>
-    <introduction>
+    <xi:include href="./activities/act-PickingParts-2.ptx" />
+    <aside>
       <p>
-        Integrate the following:
+        It is common for students to want to place functions into sort of hierarchy or classification guidelines for choosing the parts. Some students have found that the acronym LIPET (logs, inverse trig, power functions, exponentials, and trig functions) can be a useful tool for selecting the parts. When you have two different types of functions, it might help to select <m>u</m> to be whichever function shows up first in that list.
       </p>
-    </introduction>
-    <task>
+    </aside>
+    <example>
+      <introduction>
+        <p>
+          Integrate the following:
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\int x^2 e^x\;dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            It doesn't matter whether we differentiate or antidifferentiate <m>e^x</m>, since we'll get the same thing. Let's pick <m>u=x^2</m> so that we can differentiate it.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <me>
+              \begin{array}{ll}
+                u = x^2 &amp; v = e^x\\
+                du = 2x\; dx &amp; dv = e^x\;dx
+              \end{array}
+            </me>
+            <me>
+              \int x^2e^x\;dx = x^2e^x - \int 2xe^x \;dx
+            </me>
+              We need to do more integration by parts!
+            <me>
+              \begin{array}{ll}
+                u = 2x &amp; v = e^x\\
+                du = 2\;dx &amp; dv = e^x\;dx
+              \end{array}
+            </me>
+            <me>
+              \begin{aligned}
+              \int x^2e^x\;dx &amp; = x^2e^x - \left(2xe^x - \int 2e^x\;dx\right)\\
+              &amp; = x^2e^x-2xe^x+2e^x+C
+              \end{aligned}
+            </me>
+          </p>
+        </solution>
+      </task>
+      <task xml:id="ex-2xarctan">
+        <statement>
+          <p>
+            <m>\int 2x\tan^{-1}(x)\;dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            We don't know how to antidifferentiate <m>\tan^{-1}(x)</m>, but we do know how to differentiate it!
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <me>
+              \begin{array}{ll}
+                u = \tan^{-1}(x) &amp; v = x^2\\
+                du = \frac{1}{x^2+1}\;dx &amp; dv = 2x\;dx
+              \end{array}
+            </me>
+            <me>
+              \begin{aligned}
+                \int 2x\tan^{-1}(x)\;dx &amp; = x^2\tan^{-1}(x) - \int \frac{x^2}{x^2+1}\;dx\\
+                &amp; = x^2\tan^{-1}(x) - \int \frac{(x^2+1)-1}{x^2+1}\;dx &amp; \text{Alternatively, use long division.}\\
+                &amp; = x^2\tan^{-1}(x) - \int 1 - \frac{1}{x^2+1}\;dx\\
+                &amp; = x^2\tan^{-1}(x) - x + \tan^{-1}(x)+C
+              \end{aligned}
+            </me>
+          </p>
+        </solution>
+      </task>
+    </example>
+  </subsection>
+  <subsection xml:id="subsec-FlexibleChoices">
+    <title>Some Flexible Choices for Parts</title>
+    <p>
+      We're going to look at a couple of examples where we can showcase some of the flexibility we have with our choices of parts. First, we'll revisit <xref ref="ex-2xarctan"/>.In this example, when we got to that second integral, we noticed that for the fraction <m>\frac{x^2}{x^2+1}</m>, we could either do some long division (since the degrees in the numerator and denominator are the same) or do some clever re-writing of the numerator. Either way, we know that this fraction is <em>almost</em> 1...It's really <m>1\pm</m> some bit (in this case, the extra bit was a fraction <m>\frac{1}{x^2+1}</m>).
+
+      What if we chose our parts differently? Not the <m>u</m> and <m>dv</m> parts, though, since we still haven't figured out how to antidifferentiate <m>\tan^{-1}(x)</m>. But we get one more choice!
+
+      Once we choose <m>u</m>, we don't really get a separate choice for <m>du</m>: it's simply the derivative of <m>u</m> with regard to <m>x</m> multiplied by the differential <m>dx</m>. But consider our choice of <m>dv</m>, and the subsequent process of finding <m>v</m>. Yes, there's only one possible answer, but in a much more real sense, there isn't just one possible answer. There are an infinite number of them! We know, due to the <xref ref="thm-MVT" text="title"/> and then later due to <xref ref="thm-OffByConstant"/>, that there are an infinite number of antiderivatives, all differing by at most a constant term. So let's pick a more appropriate antiderivative!
+    </p>
+    <example>
       <statement>
         <p>
-          <m>\int x^2 e^x\;dx</m>
+          Integrate <m>\int 2x\tan^{-1}(x)\;dx</m>, this time making a more intentional choice for <m>v</m>.
         </p>
       </statement>
       <hint>
         <p>
-          It doesn't matter whether we differentiate or antidifferentiate <m>e^x</m>, since we'll get the same thing. Let's pick <m>u=x^2</m> so that we can differentiate it.
+          Note that if we pick <m>v = x^2+1</m>, then the second integral will be just delightful.
         </p>
       </hint>
       <solution>
         <p>
           <me>
             \begin{array}{ll}
-              u = x^2 \amp v = e^x\\
-              du = 2x\; dx \amp dv = e^x\;dx
-            \end{array}
-          </me>
-          <me>
-            \int x^2e^x\;dx = x^2e^x - \int 2xe^x \;dx
-          </me>
-            We need to do more integration by parts!
-          <me>
-            \begin{array}{ll}
-              u = 2x \amp v = e^x\\
-              du = 2\;dx \amp dv = e^x\;dx
+              u = \tan^{-1}(x) &amp; v = x^2+1\\
+              du = \frac{1}{x^2+1}\;dx &amp; dv = 2x\;dx
             \end{array}
           </me>
           <me>
             \begin{aligned}
-            \int x^2e^x\;dx \amp = x^2e^x - \left(2xe^x - \int 2e^x\;dx\right)\\
-            \amp = x^2e^x-2xe^x+2e^x+C
+              \int 2x\tan^{-1}(x)\;dx &amp; = (x^2+1)\tan^{-1}(x) - \int \frac{x^2+1}{x^2+1}\;dx\\
+              &amp; = x^2\tan^{-1}(x) + \tan^{-1}(x) - \int \;dx\\
+              &amp; = x^2\tan^{-1}(x) + \tan^{-1}(x) - x + C
             \end{aligned}
           </me>
         </p>
       </solution>
-    </task>
-  </example>
+    </example>
+    <p>
+      So we get the same thing, but didn't have to think through the long division or the forced factoring. But the trade off here is that we almost <em>have to</em> see this coming to notice it. This flexibility doesn't always come into play for us. But we can look at a different kind of flexibility.
+
+      We've looked at integrals with both <m>\ln(x)</m> and <m>\tan^{-1}(x)</m>. For these, and for other inverse functions specifically, we pick them to be the <m>u</m> part in our integration by parts problems because we don't know how do antidifferentiate them.
+
+      So let's look at <m>\int \ln(x)\;dx</m>, and we'll solve this integral by, specifically, differentiating <m>\ln(x)</m> instead of antidifferentiating it.
+    </p>
+    <example>
+      <title>Antidifferentiating the Log Function</title>   
+      <statement>
+        <p>
+          Integrate <m>\int \ln(x)\;dx</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Pick <m>u=\ln(x)</m>, since we can differentiate it. What does that leave for <m>dv</m>?
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <me>
+            \begin{array}{ll}
+              u = \ln(x) &amp; v = x\\
+              du = \frac{1}{x}\;dx &amp; dv = \;dx
+            \end{array}
+          </me> 
+          <me>
+            \begin{aligned}
+              \int \ln(x)\;dx &amp;= x\ln(x) - \int \frac{x}{x}\;dx\\
+              &amp; = x\ln(x) - x + C
+            \end{aligned}
+          </me>
+        </p>
+      </solution>
+    </example>
+    <p>
+      We can use this same strategy to find antiderivatives of <m>\tan^{-1}(x)</m>, <m>\sin^{-1}(x)</m>, and eventually <m>\sec^{-1}(x)</m>. 
+    </p>
+    <aside>
+      <p>
+        For <m>\int \sec^{-1}(x)\;dx</m>, we'll need to use this same tactic of setting <m>u=\sec^{-1}(x)</m> and <m>dv = \;dx</m>, but then later on we'll need to use a technique called <xref ref="sec-TrigSub" text="title"/> to finish the problem.
+      </p>
+    </aside>
+    <p>
+      Now that we know the antiderivative family for <m>\ln(x)</m>, we can revisit the problem in <xref ref="act-PickingParts-2"/>, <m>\int x\ln(x)\;dx</m>, and try to work through the integration by parts when <m>u=x</m> and <m>dv = \ln(x)\;dx</m>. 
+    </p>
+    <example>
+      <statement>
+        <p>
+          Integrate <m>\int x\ln(x)\;dx</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            \begin{array}{ll}
+              u = x &amp; v = x\ln(x)-x\\
+              du = \;dx &amp; dv = \ln(x)\;dx
+            \end{array}
+          </me>
+          <me>
+            \begin{aligned}
+              \int x\ln(x)\;dx &amp; = x(x\ln(x)-x) - \int x\ln(x)-x\;dx\\
+              &amp; x^2\ln(x)-x^2 - \int x\ln(x)\;dx + \int x \;dx\\
+              &amp;x^2\ln(x)-x^2 + \frac{x^2}{2} - \int x\ln(x)\;dx
+            \end{aligned}
+          </me>
+          <p>
+            Note that this last integral is really recognizable: it's the one we started with! Let's "solve" this equation for that integral by adding it to both sides of our equation.
+          </p>
+          <me>
+            \begin{aligned}
+              2\int x\ln(x)\;dx &amp; = x^2\ln(x) - \frac{x^2}{2}\\
+              \int x\ln(x)\;dx &amp; = \frac{x^2\ln(x)}{2} - \frac{x^2}{4} + C
+            \end{aligned}
+          </me>
+          
+        </p>
+      </solution>
+    </example>
   </subsection>
 
 </section>

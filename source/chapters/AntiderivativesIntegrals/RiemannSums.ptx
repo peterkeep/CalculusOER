@@ -9,7 +9,7 @@
     <title>Riemann Sum</title>
     <statement>
       <p>
-        For a closed interval <m>[a,b]</m> with a partition <m>P=\{x_0, x_1, ..., x_n\}</m> with <m>a=x_0 \lt x_1\lt ...\lt x_n=b</m>, consider some <m>x_k^*</m>, any <m>x</m>-value in the interval <m>[x_{k-1}, x_k]</m> and <m>\Delta x_k</m>, the length of the interval <m>[x_{k-1|, x_k]</m>. If <m>f</m> is a function that is defined on the interval <m>[a,b]</m>, then we call the sum 
+        For a closed interval <m>[a,b]</m> with a partition <m>P=\{x_0, x_1, ..., x_n\}</m> with <m>a=x_0 \lt x_1\lt ...\lt x_n=b</m>, consider some <m>x_k^*</m>, any <m>x</m>-value in the interval <m>[x_{k-1}, x_k]</m> and <m>\Delta x_k</m>, the length of the interval <m>[x_{k-1}, x_k]</m>. If <m>f</m> is a function that is defined on the interval <m>[a,b]</m>, then we call the sum 
           <me>
             \sum_{k=1}^n f(x_k^*) \Delta x_k = f(x_1^*) \Delta x_1 + f(x_2^*)\Delta x_2 + ... + f(x_n^*) \Delta x_n
           </me>
