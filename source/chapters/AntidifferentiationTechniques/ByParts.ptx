@@ -224,9 +224,7 @@
               &amp;x^2\ln(x)-x^2 + \frac{x^2}{2} - \int x\ln(x)\;dx
             \end{aligned}
           </me>
-          <p>
             Note that this last integral is really recognizable: it's the one we started with! Let's "solve" this equation for that integral by adding it to both sides of our equation.
-          </p>
           <me>
             \begin{aligned}
               2\int x\ln(x)\;dx &amp; = x^2\ln(x) - \frac{x^2}{2}\\
@@ -236,6 +234,84 @@
           
         </p>
       </solution>
+    </example>
+  </subsection>
+  <subsection xml:id="subsec-SolvingForIntegral">
+    <title>Solving for th Integral</title>
+    <p>
+      In this last example, we ended up seeing the original integral repeated when we did integration by parts. This is a useful technique, especially when we deal with functions that have a kind of "repeating" structure to their derivatives or antiderivatives. We'll look at a couple of classic integrals where we see this kind of technique employed.
+    </p>
+    <example>
+      <introduction>
+        <p>
+          For each of the following integrals, use integration by parts to solve.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\int \sin(x)\cos(x)\;dx</m>
+          </p>
+        </statement>
+        <hint>  
+          <p>
+            This one is pretty straight forward, since it doesn't really matter what we select as our parts. Notice, though, that this isn't the only way we can approach this! We can use <m>u</m>-substitution, or even re-write this using a trigonometric identity.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <me>
+              \begin{array}{ll}
+                u = \sin(x) &amp; v = \sin(x)\\
+                du = \cos(x)\;dx &amp; dv = \cos(x)\;dx
+              \end{array}
+            </me>
+            <me>
+              \begin{aligned}
+                \int \sin(x)\cos(x)\;dx &amp; = \sin^2(x) - \int \sin(x)\cos(x)\;dx\\
+                2\int \sin(x)\cos(x)\;dx &amp; = \sin^2(x)\\
+                \int \sin(x)\cos(x)\;dx &amp; = \frac{\sin^2(x)}{2} + C
+              \end{aligned}
+            </me>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\int e^x\cos(x)\;dx</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <me>
+              \begin{array}{ll}
+                u = e^x &amp; v = \sin(x)\\
+                du = e^x\;dx &amp; dv = \cos(x)\;dx
+              \end{array}
+            </me>
+            <me>
+              \begin{aligned}
+                \int e^x\cos(x)\;dx &amp; = e^x\sin(x) - \int e^x\sin(x)\;dx
+              \end{aligned}
+            </me>
+            <me>
+              \begin{array}{ll}
+                u = e^x &amp; v = -\cos(x)\\
+                du = e^x\;dx &amp; dv = \sin(x)\;dx
+              \end{array}
+            </me>
+            <me>
+              \begin{aligned}
+                \int e^x\cos(x)\;dx &amp; = e^x\sin(x) - \int e^x\sin(x)\;dx\\
+                \int e^x\cos(x)\;dx &amp; = e^x\sin(x) + e^x\cos(x) - \int e^x\cos(x)\;dx\\
+                2\int e^x\cos(x)\;dx &amp; = e^x\sin(x) + e^x\cos(x)\\
+                \int e^x\cos(x)\;dx &amp; = \frac{e^x\sin(x) + e^x\cos(x)}{2}+C
+              \end{aligned}
+            </me>
+          </p>
+        </solution>
+      </task>
     </example>
   </subsection>
 
