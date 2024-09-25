@@ -115,7 +115,7 @@ window.MathJax = {
 \newcommand{\ddx}[1]{\frac{d}{dx}\left(#1\right)}
 \newcommand{\dd}[2]{\frac{d#1}{d#2}}
 \newcommand{\dydx}{\frac{dy}{dx}}
-\renewcommand{\blank}[1]{\underline{\hspace{#1}}}
+\newcommand{\blank}[1]{\underline{\hspace{#1}}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -176,7 +176,11 @@ window.MathJax = {
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-MeanValueTheorem.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Mean Value Theorem</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-Slopes" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Slopes</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-Slopes" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Slopes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-MVT" class="internal"><span class="codenumber">4.1.2</span> <span class="title">The Mean Value Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-ResultsFromMVT" class="internal"><span class="codenumber">4.1.3</span> <span class="title">More Results due to the Mean Value Theorem</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Increasing and Decreasing Functions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Concavity.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Concavity</span></a></div></li>
@@ -211,6 +215,7 @@ window.MathJax = {
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-DiscoveringIntegrationByParts" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Discovering the Integration by Parts Formula</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-PickingParts" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Intuition for Selecting the Parts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-FlexibleChoices" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Some Flexible Choices for Parts</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-PowersOfTrig.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Integrating Powers of Trigonometric Functions</span></a></div></li>
@@ -305,7 +310,7 @@ window.MathJax = {
 <div class="para">The product rule for derivatives says that:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\ddx{u(x)\cdot v(x)} = \blank{5cm} + \blank{5cm}\text{.}
+\ddx{u(x)\cdot v(x)} = \blank{3cm} + \blank{3cm}\text{.}
 \end{equation*}
 </div>
 <div class="para">We know that we intend to "undo" the product rule, so let’s try to re-frame the product rule from a rule about derivatives to a rule about antiderivatives.</div>
@@ -316,8 +321,8 @@ window.MathJax = {
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{aligned}
-\int \left(\ddx{u\cdot v}\right)\;dx \amp= \int \blank{5 cm}+ \blank{5 cm} dx\\
-\blank{5 cm} \amp= \int \blank{5 cm} dx + \int \blank{5 cm} dx
+\int \left(\ddx{u\cdot v}\right)\;dx \amp= \int \blank{2 cm}+ \blank{2 cm} dx\\
+\blank{2 cm} \amp= \int \blank{2 cm} dx + \int \blank{2 cm} dx
 \end{aligned}
 \end{equation*}
 </div>
@@ -435,8 +440,8 @@ du = \blank{3cm} \amp dv = x\;dx
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{array}{ll}
-u = x^2 \amp v = e^x\\
-du = 2x\; dx \amp dv = e^x\;dx
+u = x^2 &amp; v = e^x\\
+du = 2x\; dx &amp; dv = e^x\;dx
 \end{array}
 \end{equation*}
 </div>
@@ -449,21 +454,132 @@ du = 2x\; dx \amp dv = e^x\;dx
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{array}{ll}
-u = 2x \amp v = e^x\\
-du = 2\;dx \amp dv = e^x\;dx
+u = 2x &amp; v = e^x\\
+du = 2\;dx &amp; dv = e^x\;dx
 \end{array}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{aligned}
-\int x^2e^x\;dx \amp = x^2e^x - \left(2xe^x - \int 2e^x\;dx\right)\\
-\amp = x^2e^x-2xe^x+2e^x+C
+\int x^2e^x\;dx &amp; = x^2e^x - \left(2xe^x - \int 2e^x\;dx\right)\\
+&amp; = x^2e^x-2xe^x+2e^x+C
 \end{aligned}
 \end{equation*}
 </div>
 </div></div></details>
-</div></article></article></details></section></section></div>
+</div></article><article class="task exercise-like" id="ex-2xarctan"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-2xarctan-1-1"><span class="process-math">\(\int 2x\tan^{-1}(x)\;dx\)</span></div>
+<div class="solutions">
+<details id="ex-2xarctan-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-2xarctan-2-1">We don’t know how to antidifferentiate <span class="process-math">\(\tan^{-1}(x)\text{,}\)</span> but we do know how to differentiate it!</div></div></details><details id="ex-2xarctan-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="ex-2xarctan-3-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ll}
+u = \tan^{-1}(x) &amp; v = x^2\\
+du = \frac{1}{x^2+1}\;dx &amp; dv = 2x\;dx
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\int 2x\tan^{-1}(x)\;dx &amp; = x^2\tan^{-1}(x) - \int \frac{x^2}{x^2+1}\;dx\\
+&amp; = x^2\tan^{-1}(x) - \int \frac{(x^2+1)-1}{x^2+1}\;dx &amp; \text{Alternatively, use long division.}\\
+&amp; = x^2\tan^{-1}(x) - \int 1 - \frac{1}{x^2+1}\;dx\\
+&amp; = x^2\tan^{-1}(x) - x + \tan^{-1}(x)+C
+\end{aligned}
+\end{equation*}
+</div>
+</div></div></details>
+</div></article></article></details></section><section class="subsection" id="subsec-FlexibleChoices"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="space"> </span><span class="title">Some Flexible Choices for Parts</span>
+</h3>
+<div class="para" id="subsec-FlexibleChoices-2">We’re going to look at a couple of examples where we can showcase some of the flexibility we have with our choices of parts. First, we’ll revisit <a href="sec-IntegrationByParts.html#ex-2xarctan" class="xref" data-knowl="./knowl/xref/ex-2xarctan.html" data-reveal-label="Reveal" data-close-label="Close" title="Task 6.3.2.b">Task 6.3.2.b</a>.In this example, when we got to that second integral, we noticed that for the fraction <span class="process-math">\(\frac{x^2}{x^2+1}\text{,}\)</span> we could either do some long division (since the degrees in the numerator and denominator are the same) or do some clever re-writing of the numerator. Either way, we know that this fraction is <em class="emphasis">almost</em> 1...It’s really <span class="process-math">\(1\pm\)</span> some bit (in this case, the extra bit was a fraction <span class="process-math">\(\frac{1}{x^2+1}\)</span>). What if we chose our parts differently? Not the <span class="process-math">\(u\)</span> and <span class="process-math">\(dv\)</span> parts, though, since we still haven’t figured out how to antidifferentiate <span class="process-math">\(\tan^{-1}(x)\text{.}\)</span> But we get one more choice! Once we choose <span class="process-math">\(u\text{,}\)</span> we don’t really get a separate choice for <span class="process-math">\(du\text{:}\)</span> it’s simply the derivative of <span class="process-math">\(u\)</span> with regard to <span class="process-math">\(x\)</span> multiplied by the differential <span class="process-math">\(dx\text{.}\)</span> But consider our choice of <span class="process-math">\(dv\text{,}\)</span> and the subsequent process of finding <span class="process-math">\(v\text{.}\)</span> Yes, there’s only one possible answer, but in a much more real sense, there isn’t just one possible answer. There are an infinite number of them! We know, due to the <a href="sec-MeanValueTheorem.html#thm-MVT" class="xref" data-knowl="./knowl/xref/thm-MVT.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.1: Mean Value Theorem">Mean Value Theorem</a> and then later due to <a href="sec-MeanValueTheorem.html#thm-OffByConstant" class="xref" data-knowl="./knowl/xref/thm-OffByConstant.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.2">Theorem 4.1.2</a>, that there are an infinite number of antiderivatives, all differing by at most a constant term. So let’s pick a more appropriate antiderivative!</div>
+<details id="subsec-FlexibleChoices-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-FlexibleChoices-3-1-1">Integrate <span class="process-math">\(\int 2x\tan^{-1}(x)\;dx\text{,}\)</span> this time making a more intentional choice for <span class="process-math">\(v\text{.}\)</span>
+</div>
+<div class="solutions">
+<details id="subsec-FlexibleChoices-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-FlexibleChoices-3-2-1">Note that if we pick <span class="process-math">\(v = x^2+1\text{,}\)</span> then the second integral will be just delightful.</div></div></details><details id="subsec-FlexibleChoices-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-FlexibleChoices-3-3-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ll}
+u = \tan^{-1}(x) &amp; v = x^2+1\\
+du = \frac{1}{x^2+1}\;dx &amp; dv = 2x\;dx
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\int 2x\tan^{-1}(x)\;dx &amp; = (x^2+1)\tan^{-1}(x) - \int \frac{x^2+1}{x^2+1}\;dx\\
+&amp; = x^2\tan^{-1}(x) + \tan^{-1}(x) - \int \;dx\\
+&amp; = x^2\tan^{-1}(x) + \tan^{-1}(x) - x + C
+\end{aligned}
+\end{equation*}
+</div>
+</div></div></details>
+</div></article></details><div class="para" id="subsec-FlexibleChoices-4">So we get the same thing, but didn’t have to think through the long division or the forced factoring. But the trade off here is that we almost <em class="emphasis">have to</em> see this coming to notice it. This flexibility doesn’t always come into play for us. But we can look at a different kind of flexibility. We’ve looked at integrals with both <span class="process-math">\(\ln(x)\)</span> and <span class="process-math">\(\tan^{-1}(x)\text{.}\)</span> For these, and for other inverse functions specifically, we pick them to be the <span class="process-math">\(u\)</span> part in our integration by parts problems because we don’t know how do antidifferentiate them. So let’s look at <span class="process-math">\(\int \ln(x)\;dx\text{,}\)</span> and we’ll solve this integral by, specifically, differentiating <span class="process-math">\(\ln(x)\)</span> instead of antidifferentiating it.</div>
+<details id="subsec-FlexibleChoices-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Antidifferentiating the Log Function.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-FlexibleChoices-5-2-1">Integrate <span class="process-math">\(\int \ln(x)\;dx\text{.}\)</span>
+</div>
+<div class="solutions">
+<details id="subsec-FlexibleChoices-5-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-FlexibleChoices-5-3-1">Pick <span class="process-math">\(u=\ln(x)\text{,}\)</span> since we can differentiate it. What does that leave for <span class="process-math">\(dv\text{?}\)</span>
+</div></div></details><details id="subsec-FlexibleChoices-5-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-FlexibleChoices-5-4-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ll}
+u = \ln(x) &amp; v = x\\
+du = \frac{1}{x}\;dx &amp; dv = \;dx
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\int \ln(x)\;dx &amp;= x\ln(x) - \int \frac{x}{x}\;dx\\
+&amp; = x\ln(x) - x + C
+\end{aligned}
+\end{equation*}
+</div>
+</div></div></details>
+</div></article></details><div class="para" id="subsec-FlexibleChoices-6">We can use this same strategy to find antiderivatives of <span class="process-math">\(\tan^{-1}(x)\text{,}\)</span> <span class="process-math">\(\sin^{-1}(x)\text{,}\)</span> and eventually <span class="process-math">\(\sec^{-1}(x)\text{.}\)</span>
+</div>
+<aside class="aside aside-like" id="subsec-FlexibleChoices-7"><div class="para" id="subsec-FlexibleChoices-7-1">For <span class="process-math">\(\int \sec^{-1}(x)\;dx\text{,}\)</span> we’ll need to use this same tactic of setting <span class="process-math">\(u=\sec^{-1}(x)\)</span> and <span class="process-math">\(dv = \;dx\text{,}\)</span> but then later on we’ll need to use a technique called <a href="sec-TrigSub.html" class="internal" title="Section 6.5: Trigonometric Substitution">Trigonometric Substitution</a> to finish the problem.</div></aside><div class="para" id="subsec-FlexibleChoices-8">Now that we know the antiderivative family for <span class="process-math">\(\ln(x)\text{,}\)</span> we can revisit the problem in <a href="sec-IntegrationByParts.html#act-PickingParts-2" class="xref" data-knowl="./knowl/xref/act-PickingParts-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 6.3.3: Picking the Parts for Integration by Parts">Activity 6.3.3</a>, <span class="process-math">\(\int x\ln(x)\;dx\text{,}\)</span> and try to work through the integration by parts when <span class="process-math">\(u=x\)</span> and <span class="process-math">\(dv = \ln(x)\;dx\text{.}\)</span>
+</div>
+<details id="subsec-FlexibleChoices-9" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.5</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-FlexibleChoices-9-1-1">Integrate <span class="process-math">\(\int x\ln(x)\;dx\text{.}\)</span>
+</div>
+<div class="solutions"><details id="subsec-FlexibleChoices-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-FlexibleChoices-9-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ll}
+u = x &amp; v = x\ln(x)-x\\
+du = \;dx &amp; dv = \ln(x)\;dx
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\int x\ln(x)\;dx &amp; = x(x\ln(x)-x) - \int x\ln(x)-x\;dx\\
+&amp; x^2\ln(x)-x^2 - \int x\ln(x)\;dx + \int x \;dx\\
+&amp;x^2\ln(x)-x^2 + \frac{x^2}{2} - \int x\ln(x)\;dx
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para"><div class="para" id="subsec-FlexibleChoices-9-2-1-3">Note that this last integral is really recognizable: it’s the one we started with! Let’s "solve" this equation for that integral by adding it to both sides of our equation.</div></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+2\int x\ln(x)\;dx &amp; = x^2\ln(x) - \frac{x^2}{2}\\
+\int x\ln(x)\;dx &amp; = \frac{x^2\ln(x)}{2} - \frac{x^2}{4} + C
+\end{aligned}
+\end{equation*}
+</div>
+</div></div></details></div></article></details></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-AlgebraicManipulations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-PowersOfTrig.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
