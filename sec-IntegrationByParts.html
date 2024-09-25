@@ -216,6 +216,7 @@ window.MathJax = {
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-DiscoveringIntegrationByParts" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Discovering the Integration by Parts Formula</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-PickingParts" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Intuition for Selecting the Parts</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-FlexibleChoices" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Some Flexible Choices for Parts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-SolvingForIntegral" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Solving for th Integral</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-PowersOfTrig.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Integrating Powers of Trigonometric Functions</span></a></div></li>
@@ -570,7 +571,7 @@ du = \;dx &amp; dv = \ln(x)\;dx
 \end{aligned}
 \end{equation*}
 </div>
-<div class="para"><div class="para" id="subsec-FlexibleChoices-9-2-1-3">Note that this last integral is really recognizable: it’s the one we started with! Let’s "solve" this equation for that integral by adding it to both sides of our equation.</div></div>
+<div class="para">Note that this last integral is really recognizable: it’s the one we started with! Let’s "solve" this equation for that integral by adding it to both sides of our equation.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{aligned}
@@ -579,7 +580,72 @@ du = \;dx &amp; dv = \ln(x)\;dx
 \end{aligned}
 \end{equation*}
 </div>
-</div></div></details></div></article></details></section></section></div>
+</div></div></details></div></article></details></section><section class="subsection" id="subsec-SolvingForIntegral"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.4</span><span class="space"> </span><span class="title">Solving for th Integral</span>
+</h3>
+<div class="para" id="subsec-SolvingForIntegral-2">In this last example, we ended up seeing the original integral repeated when we did integration by parts. This is a useful technique, especially when we deal with functions that have a kind of "repeating" structure to their derivatives or antiderivatives. We’ll look at a couple of classic integrals where we see this kind of technique employed.</div>
+<details id="subsec-SolvingForIntegral-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.6</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-SolvingForIntegral-3-1"><div class="para" id="subsec-SolvingForIntegral-3-1-1">For each of the following integrals, use integration by parts to solve.</div></div>
+<article class="task exercise-like" id="subsec-SolvingForIntegral-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-SolvingForIntegral-3-2-1-1"><span class="process-math">\(\int \sin(x)\cos(x)\;dx\)</span></div>
+<div class="solutions">
+<details id="subsec-SolvingForIntegral-3-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-SolvingForIntegral-3-2-2-1">This one is pretty straight forward, since it doesn’t really matter what we select as our parts. Notice, though, that this isn’t the only way we can approach this! We can use <span class="process-math">\(u\)</span>-substitution, or even re-write this using a trigonometric identity.</div></div></details><details id="subsec-SolvingForIntegral-3-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-SolvingForIntegral-3-2-3-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ll}
+u = \sin(x) &amp; v = \sin(x)\\
+du = \cos(x)\;dx &amp; dv = \cos(x)\;dx
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\int \sin(x)\cos(x)\;dx &amp; = \sin^2(x) - \int \sin(x)\cos(x)\;dx\\
+2\int \sin(x)\cos(x)\;dx &amp; = \sin^2(x)\\
+\int \sin(x)\cos(x)\;dx &amp; = \frac{\sin^2(x)}{2} + C
+\end{aligned}
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><article class="task exercise-like" id="subsec-SolvingForIntegral-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-SolvingForIntegral-3-3-1-1"><span class="process-math">\(\int e^x\cos(x)\;dx\)</span></div>
+<div class="solutions"><details id="subsec-SolvingForIntegral-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-SolvingForIntegral-3-3-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ll}
+u = e^x &amp; v = \sin(x)\\
+du = e^x\;dx &amp; dv = \cos(x)\;dx
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\int e^x\cos(x)\;dx &amp; = e^x\sin(x) - \int e^x\sin(x)\;dx
+\end{aligned}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ll}
+u = e^x &amp; v = -\cos(x)\\
+du = e^x\;dx &amp; dv = \sin(x)\;dx
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\int e^x\cos(x)\;dx &amp; = e^x\sin(x) - \int e^x\sin(x)\;dx\\
+\int e^x\cos(x)\;dx &amp; = e^x\sin(x) + e^x\cos(x) - \int e^x\cos(x)\;dx\\
+2\int e^x\cos(x)\;dx &amp; = e^x\sin(x) + e^x\cos(x)\\
+\int e^x\cos(x)\;dx &amp; = \frac{e^x\sin(x) + e^x\cos(x)}{2}+C
+\end{aligned}
+\end{equation*}
+</div>
+</div></div></details></div></article></article></details></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-AlgebraicManipulations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-PowersOfTrig.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
