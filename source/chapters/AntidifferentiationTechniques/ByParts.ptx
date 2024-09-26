@@ -247,7 +247,7 @@
           For each of the following integrals, use integration by parts to solve.
         </p>
       </introduction>
-      <task>
+      <task xml:id="ex-sincos">
         <statement>
           <p>
             <m>\int \sin(x)\cos(x)\;dx</m>
@@ -313,6 +313,11 @@
         </solution>
       </task>
     </example>
+    <p>
+      Notice that we can come up with a bunch of different examples that are similar to <xref ref="ex-sincos"/>. If we put trigonometric functions inside our integral, we'll have some options with how we approach them! We can use <m>u</m>-substitution, since the derivatives of trigonometric functions are other trigonometric functions. In <xref ref="ex-sincos"/>, for instance, we could write <m>u=\sin(x)</m> and <m>du = \cos(x)\;dx</m>, or even chose <m>u=\cos(x)</m> and <m>du = -\sin(x)\;dx</m>. 
+
+      The real issues will come when our integrand is not just a product of two trigonometric functions, but when they are products of trigonometric functions raised to exponents. We'll have some combinations of these products (which maybe makes us think about integration by parts) and composition (which points towards <m>u</m>-substitution). In the next section, we'll develop some strategies to deal with these kinds of integrals.
+    </p>
   </subsection>
 
 </section>
