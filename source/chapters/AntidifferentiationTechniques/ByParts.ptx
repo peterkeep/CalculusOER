@@ -5,7 +5,8 @@
   <introduction>
     <p>
       We've seen now that <xref ref="sec-uSubstitution" text="title"/> is a useful technique for undo-ing <xref ref="thm-ChainRule" text="title"/>. We set up the variable substitution with the specific goal of going backwards through the Chain Rule and antidifferentiating some composition of functions.
-
+    </p>
+    <p>
       A reasonable next step is to ask: What other derivative rules can we "undo?" What other operations between functions should we think about? This brings us to Integration by Parts, the integration technique specifically for undo-ing <xref ref="thm-ProductRule" text="title"/>.
     </p>
   </introduction>
@@ -122,9 +123,11 @@
     <title>Some Flexible Choices for Parts</title>
     <p>
       We're going to look at a couple of examples where we can showcase some of the flexibility we have with our choices of parts. First, we'll revisit <xref ref="ex-2xarctan"/>.In this example, when we got to that second integral, we noticed that for the fraction <m>\frac{x^2}{x^2+1}</m>, we could either do some long division (since the degrees in the numerator and denominator are the same) or do some clever re-writing of the numerator. Either way, we know that this fraction is <em>almost</em> 1...It's really <m>1\pm</m> some bit (in this case, the extra bit was a fraction <m>\frac{1}{x^2+1}</m>).
-
+    </p>
+    <p>
       What if we chose our parts differently? Not the <m>u</m> and <m>dv</m> parts, though, since we still haven't figured out how to antidifferentiate <m>\tan^{-1}(x)</m>. But we get one more choice!
-
+    </p>
+    <p>
       Once we choose <m>u</m>, we don't really get a separate choice for <m>du</m>: it's simply the derivative of <m>u</m> with regard to <m>x</m> multiplied by the differential <m>dx</m>. But consider our choice of <m>dv</m>, and the subsequent process of finding <m>v</m>. Yes, there's only one possible answer, but in a much more real sense, there isn't just one possible answer. There are an infinite number of them! We know, due to the <xref ref="thm-MVT" text="title"/> and then later due to <xref ref="thm-OffByConstant"/>, that there are an infinite number of antiderivatives, all differing by at most a constant term. So let's pick a more appropriate antiderivative!
     </p>
     <example>
@@ -158,9 +161,11 @@
     </example>
     <p>
       So we get the same thing, but didn't have to think through the long division or the forced factoring. But the trade off here is that we almost <em>have to</em> see this coming to notice it. This flexibility doesn't always come into play for us. But we can look at a different kind of flexibility.
-
+    </p>
+    <p>
       We've looked at integrals with both <m>\ln(x)</m> and <m>\tan^{-1}(x)</m>. For these, and for other inverse functions specifically, we pick them to be the <m>u</m> part in our integration by parts problems because we don't know how do antidifferentiate them.
-
+    </p>
+    <p>
       So let's look at <m>\int \ln(x)\;dx</m>, and we'll solve this integral by, specifically, differentiating <m>\ln(x)</m> instead of antidifferentiating it.
     </p>
     <example>
@@ -314,8 +319,9 @@
       </task>
     </example>
     <p>
-      Notice that we can come up with a bunch of different examples that are similar to <xref ref="ex-sincos"/>. If we put trigonometric functions inside our integral, we'll have some options with how we approach them! We can use <m>u</m>-substitution, since the derivatives of trigonometric functions are other trigonometric functions. In <xref ref="ex-sincos"/>, for instance, we could write <m>u=\sin(x)</m> and <m>du = \cos(x)\;dx</m>, or even chose <m>u=\cos(x)</m> and <m>du = -\sin(x)\;dx</m>. 
-
+      Notice that we can come up with a bunch of different examples that are similar to <xref ref="ex-sincos"/>. If we put trigonometric functions inside our integral, we'll have some options with how we approach them! We can use <m>u</m>-substitution, since the derivatives of trigonometric functions are other trigonometric functions. In <xref ref="ex-sincos"/>, for instance, we could write <m>u=\sin(x)</m> and <m>du = \cos(x)\;dx</m>, or even chose <m>u=\cos(x)</m> and <m>du = -\sin(x)\;dx</m>.
+    </p>
+    <p>
       The real issues will come when our integrand is not just a product of two trigonometric functions, but when they are products of trigonometric functions raised to exponents. We'll have some combinations of these products (which maybe makes us think about integration by parts) and composition (which points towards <m>u</m>-substitution). In the next section, we'll develop some strategies to deal with these kinds of integrals.
     </p>
   </subsection>

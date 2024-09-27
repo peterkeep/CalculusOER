@@ -1,0 +1,60 @@
+<activity xml:id="act-CompareContrast">
+    <title>Compare and Contrast</title>
+    <introduction>
+        <p>
+            Let's do a quick comparison of two integrals, keeping the above examples in mind.
+
+            Consider these two integrals:
+
+            <md>
+                <mrow>\int \sin^4(x)\cos(x)\;dx \amp \amp\text{compared with} \amp \amp \int \sin^4(x)\cos^3(x)\;dx</mrow>
+            </md>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Consider the first integral, <m>\int \sin^4(x)\cos(x)\;dx</m>. Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                It might be helpful to notice that <m>\sin^4(x)</m> can be re-written as <m>\left(\sin(x)\right)^4</m>. Does this help reveal something important about the structure of this integrand?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now consider the second integral, <m>\int \sin^4(x)\cos^3(x)\;dx</m>. Does the same integration strategy work here? What happens when you apply the same thing?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Let <m>u=\sin(x)</m> again, and <m>du=\cos(x)\;dx</m>. What happens with the cosine functions? How many are "left" after applying our substitution?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                We know that <m>\sin(x)</m> and <m>cos(x)</m> are related to each other through derivatives (each is the derivative of the other, up to a negative). Is there some other connection that we have between these functions? We might especially notice that we have a <m>\cos^2(x)</m> left over in our integral. Can we write this in terms of <m>\sin(x)</m>, so that we can write it in terms of <m>u</m>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We have a trigonometric identity (the Pythagorean Identity):
+                <me>
+                    \sin^2(x)+\cos^2(x) = 1
+                </me>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Why would this strategy not have worked if we were looking at the integrals <m>\int\sin^4(x)\cos^2(x)\;dx</m> or <m>\int \sin^4(x)\cos^4(x)\;dx</m>? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?
+            </p>
+        </statement>
+    </task>
+</activity>
