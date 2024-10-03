@@ -54,7 +54,7 @@
       </statement>
     </algorithm>
     <p>
-      A strange note, here, is that we typically pick our <m>u</m>-substitution based on looking to see a suitable candidate for <m>u</m>: we look for functions that are composed "inside" of other functions or we look for a function whose derivative is in the integral (the "function-derivative pair" that we talk about in <xref ref="sec-uSubstitution" text="type-hybrid"/>). Here, though, we're selecting our substitution based on <m>du</m>: we're looking to see which function we can set aside one copy of for the differential, and then have an even power left over so that we can apply the Pythagorean Identity to translate the rest.
+      A strange note, here, is that we typically pick our <m>u</m>-substitution based on looking to see a suitable candidate for <m>u</m>: we look for functions that are composed "inside" of other functions or we look for a function whose derivative is in the integral (the "function-derivative pair" that we talk about in <xref ref="sec-uSubstitution"/>). Here, though, we're selecting our substitution based on <m>du</m>: we're looking to see which function we can set aside one copy of for the differential, and then have an even power left over so that we can apply the Pythagorean Identity to translate the rest.
     </p>
   </subsection>
   <subsection xml:id="subsec-StrategySecantsTanges">

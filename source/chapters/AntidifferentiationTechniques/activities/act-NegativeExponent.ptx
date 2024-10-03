@@ -1,0 +1,63 @@
+<activity xml:id="act-NegativeExponent">
+    <title>A Negative Exponent</title>
+    <introduction>
+        <p>
+            Let's think about this integral:
+                <me>
+                    \int \frac{1}{1+e^{-x}}\;dx
+                </me>.
+        </p>
+    </introduction>
+        <task>
+        <statement>
+            <p>
+                Is there any composition in this integral? Pick it out, and either explain or show that using this to guide your substitution will not be helpful.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Notice that <m>-x</m> is composed inside of the exponential function. Try a substitution with <m>u=-x</m>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What does <m>e^{-x}</m> mean? What does <m>\frac{1}{e^{-x}}</m> mean?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Re-write the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Re-write <m>e^{-x}</m> as <m>\frac{1}{e^x}</m>, giving you:
+                <me>
+                    \int \fra{1}{1+\frac{1}{e^x}}\;dx
+                </me>.
+            </p>
+        </hint>
+        <hint>
+            <p>
+                Either add the fractions in the denominator or multiply the whole fraction by <m>\frac{e^x}{e^x}</m>.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                You should have an integral that looks like:
+                <me>\int \frac{e^x}{e^x+1}\;dx</me>.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Why is this new integral set up so much better for the purpose of <m>u</m>-substitution? How could we tell this just by looking at the initial integral?
+            </p>
+        </statement>
+    </task>
+</activity>

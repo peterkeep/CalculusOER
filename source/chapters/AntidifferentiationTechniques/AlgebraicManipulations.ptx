@@ -3,6 +3,40 @@
 <section xml:id="sec-AlgebraicManipulations" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Manipulating Integrands to Reveal Substitution</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      We've looked at how to use a variable substitution to antidifferentiate composite functions. We've already seen, though, that sometimes identifying and actually using a helpful substitution can be difficult to do. In this section, we want to introduce some different strategies for noticing and setting up useful substitutions in some specific instances. 
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-Rewriting">
+    <title>Rewriting the Integrand</title>
+    <xi:include href="./activities/act-NegativeExponent.ptx" />
+    <example>
+      <task>
+        <statement>
+          <p>
+            <m>\int \frac{1}{x+x^{-1}}\;dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Try to re-write this integral as <m>\int \frac{x}{x^2+1}\;dx</m>.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <md>
+              <mrow>\int \frac{1}{x+x^{-1}}\;dx \amp= \int \frac{x}{x^2+1}\;dx </mrow>
+              <mrow> u=x^2+1\;\;\amp\;\;du=2x\;dx </mrow>
+              <mrow>\int \frac{x}{x^2+1}\;dx \amp= \frac{1}{2}\int \frac{2x}{x^2+1}\;dx </mrow>
+              <mrow> \amp = \frac{1}{2}\int \frac{1}{u}\;du</mrow>
+              <mrow> \amp =\frac{1}{2}\ln|u|+C</mrow>
+              <mrow> \amp \frac{1}{1}\ln(x^2+1)+C</mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </example>
+  </subsection>
 
 </section>
