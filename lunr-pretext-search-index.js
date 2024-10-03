@@ -499,7 +499,7 @@ var ptx_lunr_docs = [
   "id": "alg-PowersSineCosine",
   "level": "2",
   "url": "sec-PowersOfTrig.html#alg-PowersSineCosine",
-  "type": "Process",
+  "type": "Strategy",
   "number": "6.4.1",
   "title": "Integrating Powers of Sine and Cosine.",
   "body": " Integrating Powers of Sine and Cosine   For integrals in the form where and are real number exponents:   If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If both and are even, we can either use or use the following power-reducing trigonometric identities:       "
@@ -517,7 +517,7 @@ var ptx_lunr_docs = [
   "id": "alg-PowersSecTan",
   "level": "2",
   "url": "sec-PowersOfTrig.html#alg-PowersSecTan",
-  "type": "Process",
+  "type": "Strategy",
   "number": "6.4.2",
   "title": "Integrating Powers of Secant and Tangent.",
   "body": " Integrating Powers of Secant and Tangent   For integrals in the form where and are real number exponents:   If , the exponent on , is odd, we can use and . Then we can apply the Pythagorean Identity .    If , the exponent on , is even, we can use and . Then we can apply the Pythagorean Identity .    If is odd and is even, we can use .      "
