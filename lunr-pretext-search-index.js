@@ -385,7 +385,25 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Manipulating Integrands to Reveal Substitution",
-  "body": " Manipulating Integrands to Reveal Substitution  Text of section.  "
+  "body": " Manipulating Integrands to Reveal Substitution   We've looked at how to use a variable substitution to antidifferentiate composite functions. We've already seen, though, that sometimes identifying and actually using a helpful substitution can be difficult to do. In this section, we want to introduce some different strategies for noticing and setting up useful substitutions in some specific instances.    Rewriting the Integrand   A Negative Exponent   Let's think about this integral: .    Is there any composition in this integral? Pick it out, and either explain or show that using this to guide your substitution will not be helpful.   Notice that is composed inside of the exponential function. Try a substitution with .    What does mean? What does mean?    Re-write the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?   Re-write as , giving you: .   Either add the fractions in the denominator or multiply the whole fraction by .   You should have an integral that looks like: .    Why is this new integral set up so much better for the purpose of -substitution? How could we tell this just by looking at the initial integral?          Try to re-write this integral as .         "
+},
+{
+  "id": "act-NegativeExponent",
+  "level": "2",
+  "url": "sec-AlgebraicManipulations.html#act-NegativeExponent",
+  "type": "Activity",
+  "number": "6.2.1",
+  "title": "A Negative Exponent.",
+  "body": " A Negative Exponent   Let's think about this integral: .    Is there any composition in this integral? Pick it out, and either explain or show that using this to guide your substitution will not be helpful.   Notice that is composed inside of the exponential function. Try a substitution with .    What does mean? What does mean?    Re-write the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?   Re-write as , giving you: .   Either add the fractions in the denominator or multiply the whole fraction by .   You should have an integral that looks like: .    Why is this new integral set up so much better for the purpose of -substitution? How could we tell this just by looking at the initial integral?   "
+},
+{
+  "id": "subsec-Rewriting-3",
+  "level": "2",
+  "url": "sec-AlgebraicManipulations.html#subsec-Rewriting-3",
+  "type": "Example",
+  "number": "6.2.1",
+  "title": "",
+  "body": "      Try to re-write this integral as .       "
 },
 {
   "id": "sec-IntegrationByParts",

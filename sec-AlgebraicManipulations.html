@@ -209,7 +209,10 @@ window.MathJax = {
 <div class="toc-title-box"><a href="sec-uSubstitution.html" class="internal"><span class="codenumber">6.1</span> <span class="title"><span class="process-math">\(u\)</span>-Substitution</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-MoreToTranslate" class="internal"><span class="codenumber">6.1.1</span> <span class="title">More to Translate</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Manipulating Integrands to Reveal Substitution</span></a></div></li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-AlgebraicManipulations.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Manipulating Integrands to Reveal Substitution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-Rewriting" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Rewriting the Integrand</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntegrationByParts.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Integration By Parts</span></a></div>
 <ul class="structural toc-item-list">
@@ -307,7 +310,61 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-AlgebraicManipulations"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">6.2</span><span class="space"> </span><span class="title">Manipulating Integrands to Reveal Substitution</span>
 </h2>
-<div class="para" id="sec-AlgebraicManipulations-2">Text of section.</div></section></div>
+<section class="introduction" id="sec-AlgebraicManipulations-2"><div class="para" id="sec-AlgebraicManipulations-2-1">We’ve looked at how to use a variable substitution to antidifferentiate composite functions. We’ve already seen, though, that sometimes identifying and actually using a helpful substitution can be difficult to do. In this section, we want to introduce some different strategies for noticing and setting up useful substitutions in some specific instances.</div></section><section class="subsection" id="subsec-Rewriting"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="space"> </span><span class="title">Rewriting the Integrand</span>
+</h3>
+<article class="activity project-like" id="act-NegativeExponent"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">A Negative Exponent.</span>
+</h4>
+<div class="introduction" id="act-NegativeExponent-2"><div class="para logical" id="act-NegativeExponent-2-1">
+<div class="para">Let’s think about this integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{1}{1+e^{-x}}\;dx\text{.}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="act-NegativeExponent-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-NegativeExponent-3-1-1">Is there any composition in this integral? Pick it out, and either explain or show that using this to guide your substitution will not be helpful.</div>
+<div class="solutions"><details id="act-NegativeExponent-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-NegativeExponent-3-2-1">Notice that <span class="process-math">\(-x\)</span> is composed inside of the exponential function. Try a substitution with <span class="process-math">\(u=-x\text{.}\)</span>
+</div></div></details></div></article><article class="task exercise-like" id="act-NegativeExponent-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-NegativeExponent-4-1-1">What does <span class="process-math">\(e^{-x}\)</span> mean? What does <span class="process-math">\(\frac{1}{e^{-x}}\)</span> mean?</div></article><article class="task exercise-like" id="act-NegativeExponent-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-NegativeExponent-5-1-1">Re-write the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?</div>
+<div class="solutions">
+<details id="act-NegativeExponent-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-NegativeExponent-5-2-1">
+<div class="para">Re-write <span class="process-math">\(e^{-x}\)</span> as <span class="process-math">\(\frac{1}{e^x}\text{,}\)</span> giving you:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \fra{1}{1+\frac{1}{e^x}}\;dx\text{.}
+\end{equation*}
+</div>
+</div></div></details><details id="act-NegativeExponent-5-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-NegativeExponent-5-3-1">Either add the fractions in the denominator or multiply the whole fraction by <span class="process-math">\(\frac{e^x}{e^x}\text{.}\)</span>
+</div></div></details><details id="act-NegativeExponent-5-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-NegativeExponent-5-4-1">
+<div class="para">You should have an integral that looks like:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{e^x}{e^x+1}\;dx\text{.}
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><article class="task exercise-like" id="act-NegativeExponent-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-NegativeExponent-6-1-1">Why is this new integral set up so much better for the purpose of <span class="process-math">\(u\)</span>-substitution? How could we tell this just by looking at the initial integral?</div></article></article><details id="subsec-Rewriting-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><article class="task exercise-like" id="subsec-Rewriting-3-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-Rewriting-3-1-1-1"><span class="process-math">\(\int \frac{1}{x+x^{-1}}\;dx\)</span></div>
+<div class="solutions">
+<details id="subsec-Rewriting-3-1-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-Rewriting-3-1-2-1">Try to re-write this integral as <span class="process-math">\(\int \frac{x}{x^2+1}\;dx\text{.}\)</span>
+</div></div></details><details id="subsec-Rewriting-3-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-Rewriting-3-1-3-1"><div class="displaymath process-math" id="subsec-Rewriting-3-1-3-1-1">
+\begin{align*}
+\int \frac{1}{x+x^{-1}}\;dx \amp= \int \frac{x}{x^2+1}\;dx \\
+u=x^2+1\;\;\amp\;\;du=2x\;dx \\
+\int \frac{x}{x^2+1}\;dx \amp= \frac{1}{2}\int \frac{2x}{x^2+1}\;dx \\
+\amp = \frac{1}{2}\int \frac{1}{u}\;du\\
+\amp =\frac{1}{2}\ln|u|+C\\
+\amp \frac{1}{1}\ln(x^2+1)+C
+\end{align*}
+</div></div></div></details>
+</div></article></article></details></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-uSubstitution.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-IntegrationByParts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
