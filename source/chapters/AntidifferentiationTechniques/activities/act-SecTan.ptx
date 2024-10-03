@@ -1,0 +1,104 @@
+<activity xml:id="act-SecTan">
+    <title>Compare and Contrast (Again)</title>
+    <introduction>
+        <p>
+            We're going to do another Compare and Contrast, but this time we're only going to consider one integral:
+            <me>
+                \int \sec^4(x)\tan^3(x)\;dx
+            </me>.
+            We're going to employ another strategy, similar to the one for <xref ref="alg-PowersSineCosine" text="title"/>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is:
+                <me>
+                    \sin^2(x)+\cos^2(x)=1
+                </me>.
+                Since we want a version that connects <m>\tan(x)</m>, which is also written as <m>\frac{\sin(x)}{\cos(x)}</m>, with <m>\sec(x)</m>, or <m>\frac{1}{\cos(x)}</m>, let's divide everything in the Pythagorean Identity by <m>\cos^2(x)</m>:
+                <md>
+                    <mrow> \frac{\sin^2(x)}{\blank{2cm}} + \frac{\cos^2(x)}{\blank{2cm}} \amp = \frac{1}{\blank{2cm}}</mrow>
+                    <mrow> \blank{3cm} + \blank{3cm} \amp = \blank{3cm} </mrow>
+                </md>
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <me>\tan^2(x)+1 = \sec^2(x)</me>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now start with the integral. We're going to use two different processes here, two different <m>u</m>-substitutions. First, set <m>u=\tan(x)</m>. Complete the substitution and solve the integral.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Here, <m>du = \sec^2(x)\;dx</m>. We'll also use <m>\sec^2(x) = \tan^2(x)+1</m>.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\int \sec^4(x)\tan^3(x)\;dx \amp = \int \underbrace{\sec^2(x)}_{\tan^2(x)+1} \tan^3(x) \sec^2(x)\;dx </mrow>
+                    <mrow> \amp =\int (u^2+1)u^3\;du</mrow>
+                    <mrow> \amp =\int u^5+u^3\;du</mrow>
+                    <mrow> \amp = \frac{u^6}{6}+\frac{u^4}{4}+C</mrow>
+                    <mrow> \amp = \frac{\tan^6(x)}{6}+\frac{\tan^4(x)}{4}+C</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now try the integral again, this time using <m>u=\sec(x)</m> as your substitution.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Now <m>du=\sec(x)\tan(x)\;dx</m>, and we'll use the same Pythagorean identity, just re-written as <m>\tan^2(x) = \sec^2(x)-1</m>.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\int \sec^4(x)\tan^3(x)\;dx \amp = \int \sec^3(x)\underbrace{\tan^2(x)}_{\sec^2(x)-1}\sec(x)\tan(x)\;dx </mrow>
+                    <mrow> \amp = \int u^3(u^2-1)\;du</mrow>
+                    <mrow> \amp = \int u^5-u^3\;du</mrow>
+                    <mrow> \amp = \frac{u^6}{6}-\frac{u^4}{4}+C</mrow>
+                    <mrow> \amp = \frac{\sec^6(x)}{6} - \frac{\sec^4(x)}{4} + C</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For each of these integrals, why were the exponents set up <em>just right</em> for <m>u</m>-substitution each time? How does the structure of the derivatives of each function play into this?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Notice we had an even exponent on the <m>\sec(x)</m> function, but an odd exponent on the <m>\tan(x)</m> function.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Which substitution would be best for the integral <m>\int \sec^4(x)\tan^4(x)\;dx</m>. Why?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Which substitution would be best for the integral <m>\int \sec^3(x)]tan^3(x)\;dx</m>. Why?
+            </p>
+        </statement>
+    </task>
+</activity>
