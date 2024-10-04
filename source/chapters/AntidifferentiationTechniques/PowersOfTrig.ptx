@@ -24,9 +24,8 @@
     <title>Building a Strategy for Powers of Sines and Cosines</title>
     <xi:include href="./activities/act-CompareContrast.ptx" />
 
-    <algorithm xml:id="alg-PowersSineCosine">
+    <assemblage xml:id="strat-PowersSineCosine">
       <title>Integrating Powers of Sine and Cosine</title>
-      <statement>
         <p>
           For integrals in the form <m>\int \sin^p(x)\cos^q(x)\;dx</m> where <m>p</m> and <m>q</m> are real number exponents:
           <ul>
@@ -42,7 +41,7 @@
             </li>
             <li>
               <p>
-                If both <m>p</m> and <m>q</m> are even, we can either use <xref ref="thm-IntegrationByParts" text="title"/> or use the following power-reducing trigonometric identities:
+                If both <m>p</m> and <m>q</m> are even, we can either use <xref ref="strat-IntegrationByParts" text="title"/> or use the following power-reducing trigonometric identities:
                 <md>
                   <mrow> \sin^2(x) \amp=\dfrac{1-\cos(2x)}{2} = \frac{1}{2}-\frac{\cos(2x)}{2} </mrow>
                   <mrow> \cos^2(x) \amp=\dfrac{1+\cos(2x)}{2} = \frac{1}{2}+\frac{\cos(2x)}{2} </mrow>
@@ -51,8 +50,7 @@
             </li>
           </ul>
         </p>
-      </statement>
-    </algorithm>
+      </assemblage>
     <p>
       A strange note, here, is that we typically pick our <m>u</m>-substitution based on looking to see a suitable candidate for <m>u</m>: we look for functions that are composed "inside" of other functions or we look for a function whose derivative is in the integral (the "function-derivative pair" that we talk about in <xref ref="sec-uSubstitution"/>). Here, though, we're selecting our substitution based on <m>du</m>: we're looking to see which function we can set aside one copy of for the differential, and then have an even power left over so that we can apply the Pythagorean Identity to translate the rest.
     </p>
@@ -60,30 +58,28 @@
   <subsection xml:id="subsec-StrategySecantsTanges">
     <title>Building a Strategy for Powers of Secants and Tangents</title>
     <xi:include href="./activities/act-SecTan.ptx" />
-    <algorithm xml:id="alg-PowersSecTan">
+    <assemblage xml:id="strat-PowersSecTan">
       <title>Integrating Powers of Secant and Tangent</title>
-      <statement>
-        <p>
-          For integrals in the form <m>\int \sec^p(x)\tan^q(x)\;dx</m> where <m>p</m> and <m>q</m> are real number exponents:
-          <ul>
-            <li>
-              <p>
-                If <m>q</m>, the exponent on <m>\tan(x)</m>, is odd, we can use <m>u=\sec(x)</m> and <m>du=\sec(x)\tan(x)\;dx</m>. Then we can apply the Pythagorean Identity <m>\tan^2(x)=\sec^2(x)-1</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                If <m>p</m>, the exponent on <m>\sec(x)</m>, is even, we can use <m>u=\tan(x)</m> and <m>du=\sec^2(x)\;dx</m>. Then we can apply the Pythagorean Identity <m>\sec^2(x)=\tan^2(x)+1</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                If <m>p</m> is odd and <m>q</m> is even, we can use <xref ref="thm-IntegrationByParts" text="title"/>.
-              </p>
-            </li>
-          </ul>
-        </p>
-      </statement>
-    </algorithm>
+      <p>
+        For integrals in the form <m>\int \sec^p(x)\tan^q(x)\;dx</m> where <m>p</m> and <m>q</m> are real number exponents:
+        <ul>
+          <li>
+            <p>
+              If <m>q</m>, the exponent on <m>\tan(x)</m>, is odd, we can use <m>u=\sec(x)</m> and <m>du=\sec(x)\tan(x)\;dx</m>. Then we can apply the Pythagorean Identity <m>\tan^2(x)=\sec^2(x)-1</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>p</m>, the exponent on <m>\sec(x)</m>, is even, we can use <m>u=\tan(x)</m> and <m>du=\sec^2(x)\;dx</m>. Then we can apply the Pythagorean Identity <m>\sec^2(x)=\tan^2(x)+1</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>p</m> is odd and <m>q</m> is even, we can use <xref ref="strat-IntegrationByParts" text="title"/>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </assemblage>
   </subsection>
 </section>

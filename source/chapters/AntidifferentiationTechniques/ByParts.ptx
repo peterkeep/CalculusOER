@@ -16,17 +16,15 @@
    <p>
     We typically use the substitutions <m>du = u'\;dx</m> and <m>dv=v'\;dx</m> to re-write the integrals.
    </p> 
-  <theorem xml:id="thm-IntegrationByParts">
+  <assemblage xml:id="strat-IntegrationByParts">
     <title>Integration by Parts</title>      
-    <statement>
-      <p>
-        Suppose <m>u(x)</m> and <m>v(x)</m> are both differentiable   functions. Then:
-        <me>
-          \int u\;dv = uv - \int v\;du
-        </me>.
-      </p>
-    </statement>
-  </theorem>
+    <p>
+      Suppose <m>u(x)</m> and <m>v(x)</m> are both differentiable   functions. Then:
+      <me>
+        \int u\;dv = uv - \int v\;du
+      </me>.
+    </p>
+  </assemblage>
   <p>
     When we select the parts for our integral, we are selecting a function to be labeled <m>u</m> and a function to be labeled as <m>dv</m>. We begin with one of the pieces of the product rule, a function multiplied by some other function's derivative. It is important to recognize that we do different things to these functions: for one of them, <m>u</m>, we need to find the derivative, <m>du</m>. For the other, <m>dv</m>, we need to find an antiderivative, <m>b</m>. Because of these differences, it is important to build some good intuition for how to select the parts. 
   </p>
