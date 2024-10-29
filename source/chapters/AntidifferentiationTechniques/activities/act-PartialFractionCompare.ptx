@@ -1,0 +1,51 @@
+<activity xlm:id="act-PartialFractionCompare">
+    <title>Comparing Rational Integrands</title>
+    <task>
+        <statement>
+            <p>
+                Try to integrate the following:
+                <me>
+                    \int \frac{9x+6}{x^2+3x-4}\;dx
+                </me>.
+                Explain what about this integral makes things very difficult.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Annoyingly, you can write this as:
+                <me>
+                    \frac{9}{2}\int \frac{2x+3 - \frac{5}{3}}{x^2+3x-4}\;dx = \frac{9}{2}\int \frac{2x+3}{x^2+3x-4} \;dx - \frac{15}{2}\int \frac{1}{x^2+3x-4}\;dx
+                </me>.
+                Now explain why the second integral is difficult.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Confirm that
+                <me>
+                    \frac{6}{x+4} + \frac{3}{x-1} = \frac{9x+6}{x^2+3x-4}
+                </me>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Try to integrate the following:
+                <me>
+                    \int \frac{6}{x+4} + \frac{3}{x-1}\;dx
+                </me>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Which integral of the two would you rather integrate? Why? 
+            </p>
+        </statement>
+    </task>
+    
+</activity>
