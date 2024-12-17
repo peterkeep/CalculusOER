@@ -27,14 +27,18 @@ Appendix: More Limits
     - Python: calculating slopes
 - interpreting derivatives
 - some early derivative rules
+    - basic properties, power rule, sin(x), cos(x), e^x
 - product and quotient rule
+    - rest of the trig functions
 - chain rule
+    - more exponential functions
 
 3. Implicit Differentiation
 - implicit differentiation
 - derivatives of inverse functions
+    - log(x), inverse trig functions
 - logarithmic differentiation
-- related rates
+    - general power rule
 
 Appendix: Hyperbolic Trig
 - intro to conic sections
