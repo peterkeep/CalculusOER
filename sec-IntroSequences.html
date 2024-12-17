@@ -211,7 +211,10 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-AlgebraicManipulations.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Manipulating Integrands to Reveal Substitution</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-Rewriting" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Rewriting the Integrand</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-Rewriting" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Rewriting the Integrand</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-RationalFunctions" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Antidifferentiating Rational Functions</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntegrationByParts.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Integration By Parts</span></a></div>
@@ -278,7 +281,7 @@ window.MathJax = {
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="sec-IntroSequences.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Introduction to Infinite Sequences</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-DifferentOne" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Title</span></a></div></li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-SequencesAsFunctions" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Sequences as Functions</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-IntroSeries.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Introduction to Infinite Series</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DivergenceTest.html" class="internal"><span class="codenumber">8.3</span> <span class="title">The Divergence Test and the Harmonic Series</span></a></div></li>
@@ -310,10 +313,47 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-IntroSequences"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">8.1</span><span class="space"> </span><span class="title">Introduction to Infinite Sequences</span>
 </h2>
-<section class="subsection" id="subsec-DifferentOne"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.1.1</span><span class="space"> </span><span class="title">Title</span>
+<section class="subsection" id="subsec-SequencesAsFunctions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.1.1</span><span class="space"> </span><span class="title">Sequences as Functions</span>
 </h3>
-<div class="para" id="subsec-DifferentOne-2"></div></section></section></div>
+<div class="para" id="subsec-SequencesAsFunctions-2">Before we move on to our actual goal of analyzing infinite series, we will construct infinite sequences. The big thing to remember here is that, when we build and analyze these sequences, we are are really building and analyzing functions. We want to keep this idea of sequences as functions in the forefront, since it will help us as we think about accumulating these function values into infinite series.</div>
+<article class="activity project-like" id="act-FirstSequences"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Building our First Sequences.</span>
+</h4>
+<div class="introduction" id="act-FirstSequences-2"><div class="para" id="act-FirstSequences-2-1">We might already have some familiarity with sequences. Here, we’ll focus less on some of the detailed mechanics and just think about these sequences as functions.</div></div>
+<article class="task exercise-like" id="act-FirstSequences-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-FirstSequences-3-1-1">Describe a sequence of numbers where you use a consistent rule/function to build each term (each number) based only on the <em class="emphasis">previous term</em> in the sequence. You will need to decide on some first term to start your sequence.</div></article><article class="task exercise-like" id="act-FirstSequences-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-FirstSequences-4-1-1">Describe a different sequence of numbers using the same rule to generate new terms/numbers from the previous one. What do you need to do to make these two sequences different from each other?</div></article><article class="task exercise-like" id="act-FirstSequences-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-FirstSequences-5-1-1">Describe a new sequence of numbers where you use a consistent rule/function to build each term based on its position in the sequence (i.e. the first term will be some rule/function based on the input 1, the second will be based on 2, you’ll use 3 to get the third term, etc.). We will call the position of each term in the sequence the <em class="emphasis">index</em>.</div></article><article class="task exercise-like" id="act-FirstSequences-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-FirstSequences-6-1-1">Describe another, new, sequence of numbers where you use a consistent rule/function to build each term based on its index. This time, make the terms get smaller in size as the index increases.</div></article></article><article class="definition definition-like" id="def-ExplicitFormula"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Explicit Formula.</span>
+</h4> <div class="para" id="def-ExplicitFormula-2-1">An infinite sequence defined using an <dfn class="terminology">explicit formula</dfn> is one where the <span class="process-math">\(n\)</span>th term of the sequence is defined as a function output of <span class="process-math">\(n\text{,}\)</span> the term’s index.</div> <div class="para logical" id="def-ExplicitFormula-2-2">
+<div class="para">Using notation, we might say that <span class="process-math">\(a_n = f(n)\)</span> where:</div>
+<ul class="disc" id="def-ExplicitFormula-2-2-2">
+<li id="def-ExplicitFormula-2-2-2-1"><div class="para" id="def-ExplicitFormula-2-2-2-1-1">
+<span class="process-math">\(a\)</span> is the ``name’’ of the sequence (similar to how <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are common names of functions).</div></li>
+<li id="def-ExplicitFormula-2-2-2-2"><div class="para" id="def-ExplicitFormula-2-2-2-2-1">
+<span class="process-math">\(n\)</span> is the index of the term, typically a non-negative integer.</div></li>
+<li id="def-ExplicitFormula-2-2-2-3"><div class="para" id="def-ExplicitFormula-2-2-2-3-1">
+<span class="process-math">\(f(n)\)</span> is the function that we use to generate the terms.</div></li>
+</ul>
+</div></article><article class="definition definition-like" id="def-RecursionRelation"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Recursion Relation.</span>
+</h4> <div class="para" id="def-RecursionRelation-2-1">A sequence is defined using a <dfn class="terminology">recursion relation</dfn> is one where the <span class="process-math">\(n\)</span>th term of the sequence is defined as a function output of the previous term, the <span class="process-math">\((n-1)\)</span>st term. The sequence also needs some initial term to base the subsequent terms from.</div> <div class="para" id="def-RecursionRelation-2-2">Using notation, we might say that <span class="process-math">\(a_{n} = f(a_{n-1})\text{.}\)</span>
+</div></article><div class="para" id="subsec-SequencesAsFunctions-6">These definitions are relatively limited. You might, for instance, know of a <em class="emphasis">very</em> famous sequence that is defined recursively by having each term being the sum of the <em class="emphasis">two</em> previous terms. Our study of sequences will be brief and all pointing towards infinite series, so there are a lot of nuances about sequences that we will skip.</div></section><article class="activity project-like" id="act-FirstSequencesAgain"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Returning to our First Sequences.</span>
+</h3>
+<div class="introduction" id="act-FirstSequencesAgain-2"><div class="para" id="act-FirstSequencesAgain-2-1">Let’s return back to the four sequences we created in <a href="sec-IntroSequences.html#act-FirstSequences" class="xref" data-knowl="./knowl/xref/act-FirstSequences.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.1.1: Building our First Sequences">Activity 8.1.1</a>.</div></div>
+<article class="task exercise-like" id="act-FirstSequencesAgain-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="act-FirstSequencesAgain-3-1-1">For each of the sequences, how are we going to define them? Explicit formulas? Recursion relations? How do you know?</div></article><article class="task exercise-like" id="act-FirstSequencesAgain-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-FirstSequencesAgain-4-1-1">Now, for each sequence, define the sequence formally using either an explicit formula or recursion relation, whichever matches with how you described the sequence in <a href="sec-IntroSequences.html#act-FirstSequences" class="xref" data-knowl="./knowl/xref/act-FirstSequences.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.1.1: Building our First Sequences">Activity 8.1.1</a>.</div></article></article><details id="sec-IntroSequences-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Practice Writing some Terms.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="introduction" id="sec-IntroSequences-4-2"><div class="para" id="sec-IntroSequences-4-2-1">For each of the following sequences, write out the first handful of terms. There isn’t a set amount, but you should write out enough to get a feel for the sequence structure and how the different ways of defining the sequences work. In each, you can start the index <span class="process-math">\(n\)</span> at 1 and count upwards (<span class="process-math">\(n=1,2,3,...\)</span>).</div></div>
+<article class="task exercise-like" id="sec-IntroSequences-4-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-IntroSequences-4-3-1-1">
+<span class="process-math">\(a_1 = \frac{1}{3}\)</span> and <span class="process-math">\(a_n = 2(a_{n-1})^2\)</span>
+</div></article><article class="task exercise-like" id="sec-IntroSequences-4-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-IntroSequences-4-4-1-1"><span class="process-math">\(b_n = \frac{\sin(n)}{n^2}\)</span></div></article></article></details></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-InfiniteSeries.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-IntroSeries.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

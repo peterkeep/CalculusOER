@@ -211,7 +211,10 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-AlgebraicManipulations.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Manipulating Integrands to Reveal Substitution</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-Rewriting" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Rewriting the Integrand</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-Rewriting" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Rewriting the Integrand</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-RationalFunctions" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Antidifferentiating Rational Functions</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntegrationByParts.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Integration By Parts</span></a></div>
@@ -278,7 +281,7 @@ window.MathJax = {
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntroSequences.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Introduction to Infinite Sequences</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-DifferentOne" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Title</span></a></div></li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-SequencesAsFunctions" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Sequences as Functions</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-IntroSeries.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Introduction to Infinite Series</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DivergenceTest.html" class="internal"><span class="codenumber">8.3</span> <span class="title">The Divergence Test and the Harmonic Series</span></a></div></li>
@@ -311,7 +314,7 @@ window.MathJax = {
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">6.4</span><span class="space"> </span><span class="title">Integrating Powers of Trigonometric Functions</span>
 </h2>
 <section class="introduction" id="sec-PowersOfTrig-2"><div class="para" id="sec-PowersOfTrig-2-1">Let’s remind ourselves of two example problems that we’ve done in the past.</div> <div class="para" id="sec-PowersOfTrig-2-2">In <a href="sec-uSubstitution.html#ex-uSubTurn" class="xref" data-knowl="./knowl/xref/ex-uSubTurn.html" data-reveal-label="Reveal" data-close-label="Close" title="Task 6.1.1.a">Task 6.1.1.a</a>, we performed a <span class="process-math">\(u\)</span>-substitution, but needed to work to re-write our whole integrand in terms of <span class="process-math">\(u\text{.}\)</span> Specifically, we found that in the numerator, there was an <span class="process-math">\(x^3\text{,}\)</span> but <span class="process-math">\(du=2x\;dx\text{.}\)</span> We were substituting out a linear function of <span class="process-math">\(x\)</span> in the numerator, but the actual function was cubic. This wasn’t a problem: we re-wrote <span class="process-math">\(x^3=x^2\cdot x\text{,}\)</span> and noticed that the extra <span class="process-math">\(x^2\)</span> was able to be substituted, since we could re-write out subsitution rule: we noted that <span class="process-math">\(u=x^2+1\)</span> is equivalent to <span class="process-math">\(x^2=u-1\text{.}\)</span> This meant that even though we had an extra factor of <span class="process-math">\(x^2\)</span> "in" the part that we were using for substituting in the differential <span class="process-math">\(du\text{,}\)</span> we were still able to translate the whole function to be written in terms of <span class="process-math">\(u\text{.}\)</span>
-</div> <div class="para" id="sec-PowersOfTrig-2-3">Then, more recently, in <a href="sec-IntegrationByParts.html#ex-sincos" class="xref" data-knowl="./knowl/xref/ex-sincos.html" data-reveal-label="Reveal" data-close-label="Close" title="Task 6.3.6.a">Task 6.3.6.a</a>, we noted that we could use a mix of methods to integrate this:</div> <div class="para" id="sec-PowersOfTrig-2-4">One on hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that’s what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a <span class="process-math">\(u\)</span>-substitution was also appropriate.</div> <div class="para" id="sec-PowersOfTrig-2-5">In this section, we’ll explore more combinations of trigonometric functions and build a strategy for antidifferentiating them that includes some ideas from both of these previous examples.</div></section><section class="subsection" id="subsec-StrategySinesCosines"><h3 class="heading hide-type">
+</div> <div class="para" id="sec-PowersOfTrig-2-3">Then, more recently, in <a href="sec-IntegrationByParts.html#ex-sincos" class="xref" data-knowl="./knowl/xref/ex-sincos.html" data-reveal-label="Reveal" data-close-label="Close" title="Task 6.3.5.a">Task 6.3.5.a</a>, we noted that we could use a mix of methods to integrate this:</div> <div class="para" id="sec-PowersOfTrig-2-4">One on hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that’s what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a <span class="process-math">\(u\)</span>-substitution was also appropriate.</div> <div class="para" id="sec-PowersOfTrig-2-5">In this section, we’ll explore more combinations of trigonometric functions and build a strategy for antidifferentiating them that includes some ideas from both of these previous examples.</div></section><section class="subsection" id="subsec-StrategySinesCosines"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.4.1</span><span class="space"> </span><span class="title">Building a Strategy for Powers of Sines and Cosines</span>
 </h3>
 <article class="activity project-like" id="act-CompareContrast"><h4 class="heading">
@@ -340,19 +343,17 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div></div></details></div></article><article class="task exercise-like" id="act-CompareContrast-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-CompareContrast-6-1-1">Why would this strategy not have worked if we were looking at the integrals <span class="process-math">\(\int\sin^4(x)\cos^2(x)\;dx\)</span> or <span class="process-math">\(\int \sin^4(x)\cos^4(x)\;dx\text{?}\)</span> What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?</div></article></article><article class="algorithm theorem-like" id="alg-PowersSineCosine"><h4 class="heading">
-<span class="type">Strategy</span><span class="space"> </span><span class="codenumber">6.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Integrating Powers of Sine and Cosine.</span>
-</h4>
-<div class="para logical" id="alg-PowersSineCosine-2-1">
+<div class="para" id="act-CompareContrast-6-1-1">Why would this strategy not have worked if we were looking at the integrals <span class="process-math">\(\int\sin^4(x)\cos^2(x)\;dx\)</span> or <span class="process-math">\(\int \sin^4(x)\cos^4(x)\;dx\text{?}\)</span> What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?</div></article></article><article class="assemblage assemblage-like" id="strat-PowersSineCosine"><h4 class="heading"><span class="title">Integrating Powers of Sine and Cosine.</span></h4>
+<div class="para logical" id="strat-PowersSineCosine-2">
 <div class="para">For integrals in the form <span class="process-math">\(\int \sin^p(x)\cos^q(x)\;dx\)</span> where <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> are real number exponents:</div>
-<ul class="disc" id="alg-PowersSineCosine-2-1-4">
-<li id="alg-PowersSineCosine-2-1-4-1"><div class="para" id="alg-PowersSineCosine-2-1-4-1-1">If <span class="process-math">\(q\text{,}\)</span> the exponent on <span class="process-math">\(\cos(x)\)</span> is odd, we should use <span class="process-math">\(u=\sin(x)\)</span> and <span class="process-math">\(du=\cos(x)\;dx\text{.}\)</span> Then we can apply the Pythagorean Identity <span class="process-math">\(\cos^2(x)=1-\sin^2(x)\text{.}\)</span>
+<ul class="disc" id="strat-PowersSineCosine-2-4">
+<li id="strat-PowersSineCosine-2-4-1"><div class="para" id="strat-PowersSineCosine-2-4-1-1">If <span class="process-math">\(q\text{,}\)</span> the exponent on <span class="process-math">\(\cos(x)\)</span> is odd, we should use <span class="process-math">\(u=\sin(x)\)</span> and <span class="process-math">\(du=\cos(x)\;dx\text{.}\)</span> Then we can apply the Pythagorean Identity <span class="process-math">\(\cos^2(x)=1-\sin^2(x)\text{.}\)</span>
 </div></li>
-<li id="alg-PowersSineCosine-2-1-4-2"><div class="para" id="alg-PowersSineCosine-2-1-4-2-1">If <span class="process-math">\(p\text{,}\)</span> the exponent on <span class="process-math">\(\sin(x)\)</span> is odd, we should use <span class="process-math">\(u=\cos(x)\)</span> and <span class="process-math">\(du=-\sin(x)\;dx\text{.}\)</span> Then we can apply the Pythagorean Identity <span class="process-math">\(\sin^2(x)=1-\cos^2(x)\text{.}\)</span>
+<li id="strat-PowersSineCosine-2-4-2"><div class="para" id="strat-PowersSineCosine-2-4-2-1">If <span class="process-math">\(p\text{,}\)</span> the exponent on <span class="process-math">\(\sin(x)\)</span> is odd, we should use <span class="process-math">\(u=\cos(x)\)</span> and <span class="process-math">\(du=-\sin(x)\;dx\text{.}\)</span> Then we can apply the Pythagorean Identity <span class="process-math">\(\sin^2(x)=1-\cos^2(x)\text{.}\)</span>
 </div></li>
-<li id="alg-PowersSineCosine-2-1-4-3"><div class="para logical" id="alg-PowersSineCosine-2-1-4-3-1">
-<div class="para">If both <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> are even, we can either use <a href="sec-IntegrationByParts.html#thm-IntegrationByParts" class="xref" data-knowl="./knowl/xref/thm-IntegrationByParts.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.3.1: Integration by Parts">Integration by Parts</a> or use the following power-reducing trigonometric identities:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-IntegrationByParts.html" id="alg-PowersSineCosine-2-1-4-3-1-4">
+<li id="strat-PowersSineCosine-2-4-3"><div class="para logical" id="strat-PowersSineCosine-2-4-3-1">
+<div class="para">If both <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> are even, we can either use <a href="sec-IntegrationByParts.html#strat-IntegrationByParts" class="xref" data-knowl="./knowl/xref/strat-IntegrationByParts.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Integration by Parts">Integration by Parts</a> or use the following power-reducing trigonometric identities:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/strat-IntegrationByParts.html" id="strat-PowersSineCosine-2-4-3-1-4">
 \begin{align*}
 \sin^2(x) \amp=\dfrac{1-\cos(2x)}{2} = \frac{1}{2}-\frac{\cos(2x)}{2} \\
 \cos^2(x) \amp=\dfrac{1+\cos(2x)}{2} = \frac{1}{2}+\frac{\cos(2x)}{2} 
@@ -368,12 +369,12 @@ window.MathJax = {
 </h4>
 <div class="introduction" id="act-SecTan-2"><div class="para logical" id="act-SecTan-2-1">
 <div class="para">We’re going to do another Compare and Contrast, but this time we’re only going to consider one integral:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/alg-PowersSineCosine.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/strat-PowersSineCosine.html">
 \begin{equation*}
 \int \sec^4(x)\tan^3(x)\;dx\text{.}
 \end{equation*}
 </div>
-<div class="para">We’re going to employ another strategy, similar to the one for <a href="sec-PowersOfTrig.html#alg-PowersSineCosine" class="xref" data-knowl="./knowl/xref/alg-PowersSineCosine.html" data-reveal-label="Reveal" data-close-label="Close" title="Strategy 6.4.1: Integrating Powers of Sine and Cosine">Integrating Powers of Sine and Cosine</a>.</div>
+<div class="para">We’re going to employ another strategy, similar to the one for <a href="sec-PowersOfTrig.html#strat-PowersSineCosine" class="xref" data-knowl="./knowl/xref/strat-PowersSineCosine.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Integrating Powers of Sine and Cosine">Integrating Powers of Sine and Cosine</a>.</div>
 </div></div>
 <article class="task exercise-like" id="act-SecTan-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para logical" id="act-SecTan-3-1-1">
@@ -426,17 +427,15 @@ window.MathJax = {
 <div class="para" id="act-SecTan-6-1-1">For each of these integrals, why were the exponents set up <em class="emphasis">just right</em> for <span class="process-math">\(u\)</span>-substitution each time? How does the structure of the derivatives of each function play into this?</div>
 <div class="solutions"><details id="act-SecTan-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-SecTan-6-2-1">Notice we had an even exponent on the <span class="process-math">\(\sec(x)\)</span> function, but an odd exponent on the <span class="process-math">\(\tan(x)\)</span> function.</div></div></details></div></article><article class="task exercise-like" id="act-SecTan-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="act-SecTan-7-1-1">Which substitution would be best for the integral <span class="process-math">\(\int \sec^4(x)\tan^4(x)\;dx\text{.}\)</span> Why?</div></article><article class="task exercise-like" id="act-SecTan-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="act-SecTan-8-1-1">Which substitution would be best for the integral <span class="process-math">\(\int \sec^3(x)\tan^3(x)\;dx\text{.}\)</span> Why?</div></article></article><article class="algorithm theorem-like" id="alg-PowersSecTan"><h4 class="heading">
-<span class="type">Strategy</span><span class="space"> </span><span class="codenumber">6.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Integrating Powers of Secant and Tangent.</span>
-</h4>
-<div class="para logical" id="alg-PowersSecTan-2-1">
+<div class="para" id="act-SecTan-8-1-1">Which substitution would be best for the integral <span class="process-math">\(\int \sec^3(x)\tan^3(x)\;dx\text{.}\)</span> Why?</div></article></article><article class="assemblage assemblage-like" id="strat-PowersSecTan"><h4 class="heading"><span class="title">Integrating Powers of Secant and Tangent.</span></h4>
+<div class="para logical" id="strat-PowersSecTan-2">
 <div class="para">For integrals in the form <span class="process-math">\(\int \sec^p(x)\tan^q(x)\;dx\)</span> where <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> are real number exponents:</div>
-<ul class="disc" id="alg-PowersSecTan-2-1-4">
-<li id="alg-PowersSecTan-2-1-4-1"><div class="para" id="alg-PowersSecTan-2-1-4-1-1">If <span class="process-math">\(q\text{,}\)</span> the exponent on <span class="process-math">\(\tan(x)\text{,}\)</span> is odd, we can use <span class="process-math">\(u=\sec(x)\)</span> and <span class="process-math">\(du=\sec(x)\tan(x)\;dx\text{.}\)</span> Then we can apply the Pythagorean Identity <span class="process-math">\(\tan^2(x)=\sec^2(x)-1\text{.}\)</span>
+<ul class="disc" id="strat-PowersSecTan-2-4">
+<li id="strat-PowersSecTan-2-4-1"><div class="para" id="strat-PowersSecTan-2-4-1-1">If <span class="process-math">\(q\text{,}\)</span> the exponent on <span class="process-math">\(\tan(x)\text{,}\)</span> is odd, we can use <span class="process-math">\(u=\sec(x)\)</span> and <span class="process-math">\(du=\sec(x)\tan(x)\;dx\text{.}\)</span> Then we can apply the Pythagorean Identity <span class="process-math">\(\tan^2(x)=\sec^2(x)-1\text{.}\)</span>
 </div></li>
-<li id="alg-PowersSecTan-2-1-4-2"><div class="para" id="alg-PowersSecTan-2-1-4-2-1">If <span class="process-math">\(p\text{,}\)</span> the exponent on <span class="process-math">\(\sec(x)\text{,}\)</span> is even, we can use <span class="process-math">\(u=\tan(x)\)</span> and <span class="process-math">\(du=\sec^2(x)\;dx\text{.}\)</span> Then we can apply the Pythagorean Identity <span class="process-math">\(\sec^2(x)=\tan^2(x)+1\text{.}\)</span>
+<li id="strat-PowersSecTan-2-4-2"><div class="para" id="strat-PowersSecTan-2-4-2-1">If <span class="process-math">\(p\text{,}\)</span> the exponent on <span class="process-math">\(\sec(x)\text{,}\)</span> is even, we can use <span class="process-math">\(u=\tan(x)\)</span> and <span class="process-math">\(du=\sec^2(x)\;dx\text{.}\)</span> Then we can apply the Pythagorean Identity <span class="process-math">\(\sec^2(x)=\tan^2(x)+1\text{.}\)</span>
 </div></li>
-<li id="alg-PowersSecTan-2-1-4-3"><div class="para" id="alg-PowersSecTan-2-1-4-3-1">If <span class="process-math">\(p\)</span> is odd and <span class="process-math">\(q\)</span> is even, we can use <a href="sec-IntegrationByParts.html#thm-IntegrationByParts" class="xref" data-knowl="./knowl/xref/thm-IntegrationByParts.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.3.1: Integration by Parts">Integration by Parts</a>.</div></li>
+<li id="strat-PowersSecTan-2-4-3"><div class="para" id="strat-PowersSecTan-2-4-3-1">If <span class="process-math">\(p\)</span> is odd and <span class="process-math">\(q\)</span> is even, we can use <a href="sec-IntegrationByParts.html#strat-IntegrationByParts" class="xref" data-knowl="./knowl/xref/strat-IntegrationByParts.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Integration by Parts">Integration by Parts</a>.</div></li>
 </ul>
 </div></article></section></section></div>
 <div class="ptx-content-footer">
