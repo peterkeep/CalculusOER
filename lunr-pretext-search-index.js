@@ -97,7 +97,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.8",
   "title": "The Squeeze Theorem and Other Tricks",
-  "body": " The Squeeze Theorem and Other Tricks  Text of section.  "
+  "body": " The Squeeze Theorem and Other Tricks   The Squeeze Theorem   For some functions , , and which are all defined and ordered for -values near (but not necessarily at itself), and for some real number , if we know that then we also know that .    "
+},
+{
+  "id": "thm-SqueezeTheorem",
+  "level": "2",
+  "url": "sec-SqueezeTheorem.html#thm-SqueezeTheorem",
+  "type": "Theorem",
+  "number": "1.8.1",
+  "title": "The Squeeze Theorem.",
+  "body": " The Squeeze Theorem   For some functions , , and which are all defined and ordered for -values near (but not necessarily at itself), and for some real number , if we know that then we also know that .   "
 },
 {
   "id": "sec-Continuity",
@@ -532,9 +541,9 @@ var ptx_lunr_docs = [
   "body": " Partial Fractions   Comparing Rational Integrands   Try to integrate the following: . Explain what about this integral makes things very difficult.   Annoyingly, you can write this as: . Now explain why the second integral is difficult.    Confirm that .    Try to integrate the following: .    Which integral of the two would you rather integrate? Why?    "
 },
 {
-  "id": "sec-PartialFractions-2",
+  "id": "act-PartialFractionCompare",
   "level": "2",
-  "url": "sec-PartialFractions.html#sec-PartialFractions-2",
+  "url": "sec-PartialFractions.html#act-PartialFractionCompare",
   "type": "Activity",
   "number": "6.6.1",
   "title": "Comparing Rational Integrands.",
@@ -808,7 +817,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.1",
   "title": "Introduction to Infinite Sequences",
-  "body": " Introduction to Infinite Sequences   Sequences as Functions  Before we move on to our actual goal of analyzing infinite series, we will construct infinite sequences. The big thing to remember here is that, when we build and analyze these sequences, we are are really building and analyzing functions. We want to keep this idea of sequences as functions in the forefront, since it will help us as we think about accumulating these function values into infinite series.   Building our First Sequences   We might already have some familiarity with sequences. Here, we'll focus less on some of the detailed mechanics and just think about these sequences as functions.    Describe a sequence of numbers where you use a consistent rule\/function to build each term (each number) based only on the previous term in the sequence. You will need to decide on some first term to start your sequence.    Describe a different sequence of numbers using the same rule to generate new terms\/numbers from the previous one. What do you need to do to make these two sequences different from each other?    Describe a new sequence of numbers where you use a consistent rule\/function to build each term based on its position in the sequence (i.e. the first term will be some rule\/function based on the input 1, the second will be based on 2, you'll use 3 to get the third term, etc.). We will call the position of each term in the sequence the index .    Describe another, new, sequence of numbers where you use a consistent rule\/function to build each term based on its index. This time, make the terms get smaller in size as the index increases.     Explicit Formula   An infinite sequence defined using an explicit formula is one where the th term of the sequence is defined as a function output of , the term's index.  Using notation, we might say that where:    is the ``name'' of the sequence (similar to how and are common names of functions).     is the index of the term, typically a non-negative integer.     is the function that we use to generate the terms.        Recursion Relation   A sequence is defined using a recursion relation is one where the th term of the sequence is defined as a function output of the previous term, the st term. The sequence also needs some initial term to base the subsequent terms from.  Using notation, we might say that .    These definitions are relatively limited. You might, for instance, know of a very famous sequence that is defined recursively by having each term being the sum of the two previous terms. Our study of sequences will be brief and all pointing towards infinite series, so there are a lot of nuances about sequences that we will skip.    Returning to our First Sequences   Let's return back to the four sequences we created in .    For each of the sequences, how are we going to define them? Explicit formulas? Recursion relations? How do you know?    Now, for each sequence, define the sequence formally using either an explicit formula or recursion relation, whichever matches with how you described the sequence in .     Practice Writing some Terms   For each of the following sequences, write out the first handful of terms. There isn't a set amount, but you should write out enough to get a feel for the sequence structure and how the different ways of defining the sequences work. In each, you can start the index at 1 and count upwards ( ).     and                    "
+  "body": " Introduction to Infinite Sequences   Sequences as Functions  Before we move on to our actual goal of analyzing infinite series, we will construct infinite sequences. The big thing to remember here is that, when we build and analyze these sequences, we are are really building and analyzing functions. We want to keep this idea of sequences as functions in the forefront, since it will help us as we think about accumulating these function values into infinite series.   Building our First Sequences   We might already have some familiarity with sequences. Here, we'll focus less on some of the detailed mechanics and just think about these sequences as functions.    Describe a sequence of numbers where you use a consistent rule\/function to build each term (each number) based only on the previous term in the sequence. You will need to decide on some first term to start your sequence.    Describe a different sequence of numbers using the same rule to generate new terms\/numbers from the previous one. What do you need to do to make these two sequences different from each other?    Describe a new sequence of numbers where you use a consistent rule\/function to build each term based on its position in the sequence (i.e. the first term will be some rule\/function based on the input 1, the second will be based on 2, you'll use 3 to get the third term, etc.). We will call the position of each term in the sequence the index .    Describe another, new, sequence of numbers where you use a consistent rule\/function to build each term based on its index. This time, make the terms get smaller in size as the index increases.     Explicit Formula   An infinite sequence defined using an explicit formula is one where the th term of the sequence is defined as a function output of , the term's index.  Using notation, we might say that where:    is the ``name'' of the sequence (similar to how and are common names of functions).     is the index of the term, typically a non-negative integer.     is the function that we use to generate the terms.        Recursion Relation   A sequence is defined using a recursion relation is one where the th term of the sequence is defined as a function output of the previous term, the st term. The sequence also needs some initial term to base the subsequent terms from.  Using notation, we might say that .    These definitions are relatively limited. You might, for instance, know of a very famous sequence that is defined recursively by having each term being the sum of the two previous terms. Our study of sequences will be brief and all pointing towards infinite series, so there are a lot of nuances about sequences that we will skip.    Returning to our First Sequences   Let's return back to the four sequences we created in .    For each of the sequences, how are we going to define them? Explicit formulas? Recursion relations? How do you know?    Now, for each sequence, define the sequence formally using either an explicit formula or recursion relation, whichever matches with how you described the sequence in .     Practice Writing some Terms   For each of the following sequences, write out the first handful of terms. There isn't a set amount, but you should write out enough to get a feel for the sequence structure and how the different ways of defining the sequences work. In each, you can start the index at 1 and count upwards ( ).     and                     Describing These Sequences   Let's look at the sequences from . Go through the following tasks for each sequence.    What do you think each sequence is \"counting towards\" (if anything)?   If you're not sure, maybe you need to write out a few more terms! You can also change how you write the numbers themselves: in some cases, fractions might be helpful, but in others it might be useful to write the numbers in decimal form. Maybe you'll approximate values of the sine or exponential functions, or maybe you'll leave them as or .    Can you show that the sequence is counting towards what you think it is with a limit (or show that it's not counting towards anything)?   Some of these limits, as , will be tricky to work with! When might you want to use ? When might you want to use ?     Sequence Terminology  If a sequence is a function (and we're saying in this introductory section that it is), then we can think of all of the different terminology and adjectives that we use to describe functions. How many of them are relevant to sequences?   Continuous?    Differentiable?    Integrable?    Increasing?    Decreasing?   For now, we'll talk about sequences in two ways: their direction and the size of their terms.   Direction of a Sequence   We say that a sequence is increasing if, for all , . If for all then we say that is non-decreasing .  We say that a sequence is decreasing if, for all , . If for all then we say that is non-increasing .  We say that is constant if , but this is a very boring sequence and we will likely not think terribly hard about these kinds of sequences.  Sometimes we might say that a sequence is eventually non-increasing if there is some , and the sequence is non-increasing for , and similarly for eventually non-decreasing .     Monotonic Sequences   For the sequence , we say that is monotonic if is either non-increasing or non-decreasing.     Bounded Sequences   We say that a sequence is bounded below if there is some real number such that for all .  Similarly we say that a sequence is bounded above if there is some real number such that for all .  If a sequence has both an upper bound and a lower bound, then we often just say that the sequence is bounded .    Lastly, we'll focus on the end-behavior of a sequence. We'll think about convergence of a sequence in the same way that we did for : does the limit exist?   Sequence Convergence   For the sequence , if is some real number and , the we say that the sequence  converges to . If this limit does not exist, we say that the sequence  diverges .     Monotone Convergence Theorem   If is a sequence that is both monotonic and bounded, then it must converge.      Write the Sequence Rules   We'll look at some sequences by writing out the first handful of terms. From there, our goal is to write out more terms and eventually define each sequence fully.  For each sequence, write an explicit formula and a recursion relation to define the sequence. You can choose whether to start your index at or .        It might be helpful to write these numbers using a common denominator! Or at least some of the numbers.   If you are recursively multiplying by a number each time, what will that look like in the explicit formula? How do we represent repeated multiplication?         "
 },
 {
   "id": "act-FirstSequences",
@@ -847,13 +856,76 @@ var ptx_lunr_docs = [
   "body": " Returning to our First Sequences   Let's return back to the four sequences we created in .    For each of the sequences, how are we going to define them? Explicit formulas? Recursion relations? How do you know?    Now, for each sequence, define the sequence formally using either an explicit formula or recursion relation, whichever matches with how you described the sequence in .   "
 },
 {
-  "id": "sec-IntroSequences-4",
+  "id": "ex-PracticeWritingTerms",
   "level": "2",
-  "url": "sec-IntroSequences.html#sec-IntroSequences-4",
+  "url": "sec-IntroSequences.html#ex-PracticeWritingTerms",
   "type": "Example",
   "number": "8.1.3",
   "title": "Practice Writing some Terms.",
   "body": " Practice Writing some Terms   For each of the following sequences, write out the first handful of terms. There isn't a set amount, but you should write out enough to get a feel for the sequence structure and how the different ways of defining the sequences work. In each, you can start the index at 1 and count upwards ( ).     and                   "
+},
+{
+  "id": "act-DescribingSequences",
+  "level": "2",
+  "url": "sec-IntroSequences.html#act-DescribingSequences",
+  "type": "Activity",
+  "number": "8.1.3",
+  "title": "Describing These Sequences.",
+  "body": " Describing These Sequences   Let's look at the sequences from . Go through the following tasks for each sequence.    What do you think each sequence is \"counting towards\" (if anything)?   If you're not sure, maybe you need to write out a few more terms! You can also change how you write the numbers themselves: in some cases, fractions might be helpful, but in others it might be useful to write the numbers in decimal form. Maybe you'll approximate values of the sine or exponential functions, or maybe you'll leave them as or .    Can you show that the sequence is counting towards what you think it is with a limit (or show that it's not counting towards anything)?   Some of these limits, as , will be tricky to work with! When might you want to use ? When might you want to use ?   "
+},
+{
+  "id": "def-SequenceDirection",
+  "level": "2",
+  "url": "sec-IntroSequences.html#def-SequenceDirection",
+  "type": "Definition",
+  "number": "8.1.4",
+  "title": "Direction of a Sequence.",
+  "body": " Direction of a Sequence   We say that a sequence is increasing if, for all , . If for all then we say that is non-decreasing .  We say that a sequence is decreasing if, for all , . If for all then we say that is non-increasing .  We say that is constant if , but this is a very boring sequence and we will likely not think terribly hard about these kinds of sequences.  Sometimes we might say that a sequence is eventually non-increasing if there is some , and the sequence is non-increasing for , and similarly for eventually non-decreasing .   "
+},
+{
+  "id": "def-Monotonic",
+  "level": "2",
+  "url": "sec-IntroSequences.html#def-Monotonic",
+  "type": "Definition",
+  "number": "8.1.5",
+  "title": "Monotonic Sequences.",
+  "body": " Monotonic Sequences   For the sequence , we say that is monotonic if is either non-increasing or non-decreasing.   "
+},
+{
+  "id": "def-Bounded",
+  "level": "2",
+  "url": "sec-IntroSequences.html#def-Bounded",
+  "type": "Definition",
+  "number": "8.1.6",
+  "title": "Bounded Sequences.",
+  "body": " Bounded Sequences   We say that a sequence is bounded below if there is some real number such that for all .  Similarly we say that a sequence is bounded above if there is some real number such that for all .  If a sequence has both an upper bound and a lower bound, then we often just say that the sequence is bounded .   "
+},
+{
+  "id": "def-SequenceConvergence",
+  "level": "2",
+  "url": "sec-IntroSequences.html#def-SequenceConvergence",
+  "type": "Definition",
+  "number": "8.1.7",
+  "title": "Sequence Convergence.",
+  "body": " Sequence Convergence   For the sequence , if is some real number and , the we say that the sequence  converges to . If this limit does not exist, we say that the sequence  diverges .   "
+},
+{
+  "id": "thm-MonotoneConvergence",
+  "level": "2",
+  "url": "sec-IntroSequences.html#thm-MonotoneConvergence",
+  "type": "Theorem",
+  "number": "8.1.8",
+  "title": "Monotone Convergence Theorem.",
+  "body": " Monotone Convergence Theorem   If is a sequence that is both monotonic and bounded, then it must converge.   "
+},
+{
+  "id": "act-WriteSequences",
+  "level": "2",
+  "url": "sec-IntroSequences.html#act-WriteSequences",
+  "type": "Activity",
+  "number": "8.1.4",
+  "title": "Write the Sequence Rules.",
+  "body": " Write the Sequence Rules   We'll look at some sequences by writing out the first handful of terms. From there, our goal is to write out more terms and eventually define each sequence fully.  For each sequence, write an explicit formula and a recursion relation to define the sequence. You can choose whether to start your index at or .        It might be helpful to write these numbers using a common denominator! Or at least some of the numbers.   If you are recursively multiplying by a number each time, what will that look like in the explicit formula? How do we represent repeated multiplication?        "
 },
 {
   "id": "sec-IntroSeries",
