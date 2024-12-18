@@ -3,6 +3,18 @@
 <section xml:id="sec-SqueezeTheorem" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Squeeze Theorem and Other Tricks</title>
 
-  <p> Text of section. </p>
+  <theorem xml:id="thm-SqueezeTheorem">
+    <title>The Squeeze Theorem</title>
+    <statement>
+      <p>
+        For some functions <m>f(x)</m>, <m>g(x)</m>, and <m>h(x)</m> which are all defined and ordered <m>f(x)\leq g(x)\leq h(x)</m> for <m>x</m>-values near <m>x=a</m> (but not necessarily at <m>x=a</m> itself), and for some real number <m>L</m>, if we know that 
+        <me>
+          \lim_{x\to a} f(x) = L = \lim_{x\to a} h(x)
+        </me>
+        then we also know that <m>\lim_{x\to a} g(x) = L</m>.
+      </p>
+    </statement>
+  </theorem>
+  
 
 </section>

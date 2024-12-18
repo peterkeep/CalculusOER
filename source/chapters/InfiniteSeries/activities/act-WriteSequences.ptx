@@ -1,0 +1,36 @@
+<activity xml:id="act-WriteSequences">
+    <title>Write the Sequence Rules</title>
+    <introduction>
+        <p>
+            We'll look at some sequences by writing out the first handful of terms. From there, our goal is to write out more terms and eventually define each sequence fully.
+        </p>
+        <p>
+            For each sequence, write an explicit formula and a recursion relation to define the sequence. You can choose whether to start your index at <m>n=0</m> or <m>n=1</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                <m>\{a_n\} = \left\{4, \frac{2}{3}, \frac{1}{9}, \frac{1}{54}, ...\right\}</m>
+            </p>
+        </statement>
+        <hint>
+            <p>
+                It might be helpful to write these numbers using a common denominator! Or at least some of the numbers.
+            </p>
+        </hint>
+        <hint>
+            <p>
+                If you are recursively multiplying by a number each time, what will that look like in the explicit formula? How do we represent repeated multiplication?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                <m>\{b_n\} = \left\{\frac{3}{5}, \frac{2}{5}, \frac{5}{17}, \frac{3}{13}, \frac{7}{37},...,\right\}</m>
+            </p>
+        </statement>
+    </task>
+    
+</activity>

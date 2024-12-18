@@ -53,7 +53,7 @@
         </p>
     </subsection>
     <xi:include href="./activities/act-FirstSequencesAgain.ptx" />
-    <example>
+    <example xml:id="ex-PracticeWritingTerms">
         <title>Practice Writing some Terms</title>
         <introduction>
             <p>
@@ -89,6 +89,100 @@
             </statement>
         </task>
     </example>
+    <xi:include href="./activities/act-DescribingSequences.ptx" />
 
+    <subsection xml:id="subsec-SequenceTerminology">
+        <title>Sequence Terminology</title>
+        <p>
+            If a sequence is a function (and we're saying in this introductory section that it is), then we can think of all of the different terminology and adjectives that we use to describe functions. How many of them are relevant to sequences?
+            <ul>
+                <li>
+                    <p>
+                        Continuous?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Differentiable?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Integrable?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Increasing?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Decreasing?
+                    </p>
+                </li>
+            </ul>
+            For now, we'll talk about sequences in two ways: their direction and the size of their terms.
+        </p>
+        <definition xml:id="def-SequenceDirection">
+        <title>Direction of a Sequence</title>        
+            <statement>
+                <p>
+                    We say that a sequence <m>\{a_n\}_{n=1}^\infty</m> is <term>increasing</term> if, for all <m>n=1,2,3...</m>, <m>a_{n+1}\gt a_n</m>. If <m>a_{n+1}\geq a_n</m> for all <m>n=1,2,3,...</m> then we say that <m>a_n</m> is <term>non-decreasing</term>.
+                </p>
+                <p>
+                    We say that a sequence <m>\{a_n\}_{n=1}^\infty</m> is <term>decreasing</term> if, for all <m>n=1,2,3...</m>, <m>a_{n+1}\lt a_n</m>. If <m>a_{n+1}\leq a_n</m> for all <m>n=1,2,3,...</m> then we say that <m>a_n</m> is <term>non-increasing</term>.
+                </p>
+                <p>
+                    We say that <m>a_n</m> is constant if <m>a_{n+1}=a_n</m>, but this is a very boring sequence and we will likely not think terribly hard about these kinds of sequences.
+                </p>
+                <p>
+                    Sometimes we might say that a sequence is <term>eventually non-increasing</term> if there is some <m>N>1</m>, and the sequence is non-increasing for <m>n=N, N+1, N+2, ...</m>, and similarly for <term>eventually non-decreasing</term>.
+                </p>
+            </statement>
+        </definition>
+        <definition xml:id="def-Monotonic">
+        <title>Monotonic Sequences</title>
+            <statement>
+                <p>
+                    For the sequence <m>\{a_n\}_{n=1}^\infty</m>, we say that <m>a_n</m> is <term>monotonic</term> if <m>a_n</m> is either non-increasing or non-decreasing.
+                </p>
+            </statement>
+        </definition>
+        <definition xml:id="def-Bounded">
+        <title>Bounded Sequences</title>
+            <statement>
+                <p>
+                    We say that a sequence <m>\{a_n\}_{n=1}^\infty</m> is <term>bounded below</term> if there is some real number <m>M</m> such that <m>a_n\geq M</m> for all <m>n=1,2,3,...</m>.
+                </p>
+                <p>
+                    Similarly we say that a sequence <m>\{a_n\}_{n=1}^\infty</m> is <term>bounded above</term> if there is some real number <m>N</m> such that <m>a_n\leq N</m> for all <m>n=1,2,3,...</m>.
+                </p>
+                <p>
+                    If a sequence has both an upper bound and a lower bound, then we often just say that the sequence is <term>bounded</term>.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            Lastly, we'll focus on the end-behavior of a sequence. We'll think about convergence of a sequence in the same way that we did for <xref ref="sec-ImproperIntegrals" text="title"/>: does the limit exist?
+        </p>
+        <definition xml:id="def-SequenceConvergence">
+        <title>Sequence Convergence</title>
+            <statement>
+                <p>
+                    For the sequence <m>\{a_n\}</m>, if <m>L</m> is some real number and <m>\lim_{n\to\infty}a_n = L</m>, the we say that the sequence <m>\{a_n\}</m> <term>converges</term> to <m>L</m>. If this limit does not exist, we say that the sequence <m>\{a_n\}</m> <term>diverges</term>.
+                </p>
+            </statement>
+        </definition>
+        <theorem xml:id="thm-MonotoneConvergence">
+            <title>Monotone Convergence Theorem</title>
+            <statement>
+                <p>
+                    If <m>\{a_n\}</m> is a sequence that is both monotonic and bounded, then it must converge.
+                </p>
+            </statement>
+        </theorem>
+    </subsection>
+    <xi:include href="./activities/act-WriteSequences.ptx" />
 
 </section>

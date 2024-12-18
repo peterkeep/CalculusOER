@@ -1,0 +1,33 @@
+<activity xml:id="act-DescribingSequences">
+    <title>Describing These Sequences</title>
+    <introduction>
+        <p>
+            Let's look at the sequences from <xref ref="ex-PracticeWritingTerms"/>. Go through the following tasks for each sequence.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                What do you think each sequence is "counting towards" (if anything)?       
+            </p>
+        </statement>
+        <hint>
+            <p>
+                If you're not sure, maybe you need to write out a few more terms! You can also change how you write the numbers themselves: in some cases, fractions might be helpful, but in others it might be useful to write the numbers in decimal form. Maybe you'll approximate values of the sine or exponential functions, or maybe you'll leave them as <m>\sin(2)</m> or <m>e^3</m>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you show that the sequence is counting towards what you think it is with a limit (or show that it's not counting towards anything)?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Some of these limits, as <m>n\to \infty</m>, will be tricky to work with! When might you want to use <xref ref="thm-SqueezeTheorem" text="title"/>? When might you want to use <xref ref="sec-LHopitalsRule" text="title"/>?
+            </p>
+        </hint>
+    </task>
+    
+</activity>
