@@ -51,7 +51,6 @@
         <p>
             These definitions are relatively limited. You might, for instance, know of a <em>very</em> famous sequence that is defined recursively by having each term being the sum of the <em>two</em> previous terms. Our study of sequences will be brief and all pointing towards infinite series, so there are a lot of nuances about sequences that we will skip.
         </p>
-    </subsection>
     <xi:include href="./activities/act-FirstSequencesAgain.ptx" />
     <example xml:id="ex-PracticeWritingTerms">
         <title>Practice Writing some Terms</title>
@@ -90,7 +89,19 @@
         </task>
     </example>
     <xi:include href="./activities/act-DescribingSequences.ptx" />
+    <xi:include href="./activities/act-WriteSequences.ptx" />
+    <p>
+        Before moving on, we should think about a couple of notes:
+        <ul>
+            <li>
+                <p>
+                    
+                </p>
+            </li>
+        </ul>
+    </p>
 
+    </subsection>
     <subsection xml:id="subsec-SequenceTerminology">
         <title>Sequence Terminology</title>
         <p>
@@ -182,7 +193,139 @@
                 </p>
             </statement>
         </theorem>
+        <p>This theorem seems to be a bit obvious to many students: why would we care about this, when we can just find a limit of the explicit formula for a sequence? We'll see throughout the rest of this chapter that this theorem is one of the most important and most useful results in our study of infinite sequences and infinite series. For now, though, let's use it to find the limits of some recursively defined sequences.</p>
     </subsection>
-    <xi:include href="./activities/act-WriteSequences.ptx" />
-
+    <subsection xml:id="subsec-RecursiveLimits">
+        <title>Some Cool Recursive Examples</title>
+    <p>
+        Let's re-visit one of the recursively defined sequences that we've seen already and then think about a couple of other interesting ones. Before we do that, though, we should recognize why we need to treat recursively defined sequences a bit differently than ones defined explicitly.
+    </p>
+    <p>
+        In an explicit formula, the terms themselves are a function of <m>n</m>, the index. This means that we can simply apply a limit as <m>n\to\infty</m> to understand whether or not the sequence converges and what it might converge to. These limits could be tricky, but we have the tools to evaluate them! In a recursion relation, though, each term is not a function of the index, which means we can't easily apply a limit as <m>n\to\infty</m> to the term definition.
+    </p>
+    <p>
+        We'll be able to apply a limit, but it will feel a bit different: we're going to go into the limit work under the assumption that the limit exists. Let's see how it goes.
+    </p>
+    <example xml:id="ex-FirstRecursiveSequence">
+        <introduction>
+        <p>Let's re-visit the first sequence from <xref ref="ex-PracticeWritingTerms"/>: <m>\{a_n\}_{n=1}^\infty</m> where <m>a_1 = \frac{1}{3}</m> and <m>a_{n} = 2(a_{n-1})^2</m>.</p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Let's start by assuming that the sequence converges. That means that there exists some real number <m>L</m> such that
+                    <me> \lim_{n\to\infty} a_n = L </me>.
+                </p>
+                <p>
+                    What would this <m>L</m> be, if it exists? A key thing to note is that if <m>\lim_{n\to\infty} a_n</m> exists (and we have a symbol, <m>L</m>, for it) then we can say that
+                    <me>\lim_{n\to\infty} a_{n-1} = L</me>.
+                    Whether or not this is obvious to you is not a mark of your understanding, but we need to make sure that this ends up being obvious to you. If it's not, that's ok! But it is an indicator that you should take a couple of minutes to think about this. Once you are convinced that these two limits are the same thing, move on to the next part.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Let's now apply a limit to the sequence definition:
+                </p>
+                <md>
+                    <mrow>a_n \amp = 2(a_{n-1})^2</mrow>
+                    <mrow>\lim_{n\to \infty} a_n \amp = \lim_{n\to\infty} 2(a_{n-1})^2 </mrow>
+                    <mrow>\underbrace{\lim_{n\to\infty} a_n}_{L} \amp = 2\left(\underbrace{\lim_{n\to\infty} a_{n-1}}_{L}\right)^2</mrow>
+                    <mrow>L \amp =2L^2</mrow>
+                    <mrow>0 \amp =2L^2-L</mrow>
+                    <mrow>0 \amp= L(2L-1) </mrow>
+                </md>
+                <p>
+                    And so we have two solutions to this equation: <m>L=0</m> and <m>L=\frac{1}{2}</m>. This is strange: how can a sequence have more than one value that it converges to?
+                </p>
+                <p>
+                    It's because we have yet to take into account the initial term, <m>a_1</m>! Depending on this value, the sequence might converge or not, and if it does converge, then there are two options for what the sequence can converge to, based on the value of <m>a_1</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    You can do the next part on your own, but I want you to pick different numbers for <m>a_1</m> and write out some terms of the resulting sequence. You should find that some of them look like they're converging to <m>0</m>, one of them will converge to <m>\frac{1}{2}</m> (it's a fun hunt to find which one), and some will diverge.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    You should find that if <m>a_1=\frac{1}{2}</m>, then the sequence is constant and converges to <m>\frac{1}{2}</m>. If <m>0\leq|a_1|\lt \frac{1}{2}</m> then the sequence seems like it'll converge to <m>0</m>. And if <m>|a_1|\gt \frac{1}{2}</m>, then it looks like the sequence diverges.
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Now it is up to us to show that this sequence, with <m>a_1 = \frac{1}{3}</m>, does converge. Sure, we have some evidence and a good conjecture that it converges to <m>\frac{1}{2}</m>, but that is just our good guess based on what we have seen in the first handful of numbers.
+                </p>
+                <p>
+                    We will attempt to convince ourselves that this sequence is both monotonic and bounded. We'll begin with boundedness.
+                </p>
+                <p>
+                    It should be clear that <m>a_n\gt 0</m>, since as long as <m>a_{n-1} \neq 0</m>, then <m>(a_{n-1})^2\gt 0</m>. Since we start with <m>a_1 \neq 0</m>, we are guaranteed to get non-zero values from the formula for a new term! Great news, we have a lower bound.
+                </p>
+                <p>
+                    Let's show that <m>\frac{1}{2}</m> is an upper bound: <m>a_n \lt \frac{1}{2}</m> when
+                    <md>
+                        <mrow>2(a_{n-1})^2 \amp \lt \frac{1}{2}</mrow>
+                        <mrow>(a_{n-1})^2 \amp \lt \frac{1}{4}</mrow>
+                        <mrow>a_{n-1} \amp \lt \frac{1}{2}</mrow>
+                    </md>
+                </p>
+                <p>
+                    Since <m>a_1\lt \frac{1}{2}</m>, we know that each successive term will also be less than <m>\frac{1}{2}</m>. So we have an upper bound!
+                </p>
+                <p>
+                    So the sequence <m>\{a_n\}</m> is bounded. Now we just need to convince ourselves that this sequence is monotonic. We know that our terms are bounded above by <m>\frac{1}{2}</m>, and I hope that this means we can convince ourselves that since our terms are smaller than this, which would produce a constant sequence, then all of our terms are probably decreasing.
+                </p>
+                <p>
+                    Let's show this by showing that <m>a_{n+1}-a_n \lt 0</m>:
+                    <md>
+                        <mrow>a_{n+1} - a_n \amp = 2(a_n)^2 - a_n</mrow>
+                        <mrow> \amp = a_n(2a_n - 1)</mrow>
+                    </md>
+                    We can solve for when this is negative! It shouldn't be hard to show that <m>a_n(2a_n-1)\lt 0</m> when <m>0\lt a_n \lt \frac{1}{2}</m>. And we've already shown this is true in our case!
+                </p>
+                <p>
+                    So <m>\{a_n\}</m> is bounded and monotonic and must therefore converge because of the <xref ref="thm-MonotoneConvergence" text="title"/>. Because <m>a_1\lt\frac{1}{2}</m>, we know that this sequence doesn't converge to <m>\frac{1}{2}</m>, and so must converge to the only other option: 0.
+                </p>
+            </statement>
+        </task>
+    </example>
+    <p>
+        There are some other fun ways of doing this same thing for other recursive examples. The argument above is relatively bulky to use, and so we understandably will not think about recursively defined sequences very much: we'll leave that topic for another course where we have more time to really explore them. If you are interested in trying this same argument with other sequences though, we'll end this section with two more fun examples.
+    </p>
+    <example xml:id="ex-FunRecursive">
+        <task>
+            <statement>
+                <p>
+                    Consider the sequence defined by <m>b_{n}=\sqrt{2+b_{n-1}}</m> with <m>b_1 = \sqrt{2}</m>. Does this sequence converge? To what?
+                </p>
+                <p></p>
+            </statement>
+            <hint>
+                <p>
+                    Write out some terms to get a feel for things! Then, assuming that the sequence converges to some real number, <m>L</m>, think about what happens when you apply a limit as <m>n\to\infty</m>: we should get the equation <m>L=\sqrt{2+L}</m>. 
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Consider the sequence defined by <m>c_n = \frac{1}{2(c_{n-1})+1}</m> with <m>c_1 = 1</m>. Does this sequence converge? To what?
+                </p>
+                <p></p>
+            </statement>
+            <hint>
+                <p>
+                    Write out some terms to get a feel for things! Then, assuming that the sequence converges to some real number, <m>L</m>, think about what happens when you apply a limit as <m>n\to\infty</m>: we should get the equation <m>L=\frac{1}{2L+1}</m>. 
+                </p>
+            </hint>
+        </task>
+    </example>
+    </subsection>
+    
 </section>

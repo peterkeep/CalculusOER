@@ -16,7 +16,7 @@
         </statement>
         <hint>
             <p>
-                It might be helpful to write these numbers using a common denominator! Or at least some of the numbers.
+                It might be helpful to write these numbers using a common denominator! Or at least some of the numbers. Alternatively, you can try a common <em>numerator</em> (which is very fun to do, since we normally don't do that).
             </p>
         </hint>
         <hint>
@@ -29,6 +29,40 @@
         <statement>
             <p>
                 <m>\{b_n\} = \left\{\frac{3}{5}, \frac{2}{5}, \frac{5}{17}, \frac{3}{13}, \frac{7}{37},...,\right\}</m>
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You can re-write these fractions! Have any of them been "reduced?"
+            </p>
+        </hint>
+        <hint>
+            <p>
+                Re-write <m>\frac{2}{5}</m> and <m>\frac{3}{13}</m> by scaling the numerator and denominator by 2. Can you find a formula for the numerator and denominator separately? This one is <em>very</em> difficult to find a recursion relation for, so feel free to only write it explicitly!
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                <m>\{c_n\} = \left\{\frac{1}{5}, \frac{3}{5}, 1, \frac{7}{5},...\right\}</m>       
+            </p>
+        </statement>
+        <hint>
+            <p>
+                This one will definitely be helpful to re-write so that all fractions have a common denominator.
+            </p>
+        </hint>
+        <hint>
+            <p>
+                If you are recursively adding something, how does that show up in the explicit formula? How do we repeatedly add?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What kinds of connections do you notice between the explicit formulas and the recursion relations for these sequences?
             </p>
         </statement>
     </task>
