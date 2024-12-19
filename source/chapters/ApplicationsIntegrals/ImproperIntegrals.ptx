@@ -3,6 +3,15 @@
 <section xml:id="sec-ImproperIntegrals" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Improper Integrals</title>
 
-  <p> Text of section. </p>
+  <assemblage xml:id="strat-ImproperIntegralsWidth">
+    <title>Evaluating Improper Integrals (Infinite Width)</title>
+    <p>
+      For a function <m>f(x)</m> that is continuous on <m>[a,\infty)</m>, we can evaluate the improper integral <m>\int_{x=a}^\infty f(x)\;dx</m>:
+
+      <me>
+        \int_{x=a}^\infty f(x)\;dx = \lim_{t\to\infty} \int_{x=a}^{x=t} f(x)\;dx
+      </me>.
+    </p>
+  </assemblage>
 
 </section>

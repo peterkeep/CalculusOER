@@ -3,6 +3,29 @@
 <section xml:id="sec-FTOC" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Fundamental Theorem of Calculus</title>
 
-  <p> Text of section. </p>
+  <theorem xml:id="thm-FTOC1">
+    <title>Fundamental Theorem of Calculus (Part 1)</title>
+    <statement>
+      <p>
+        For a function <m>f</m> that is continuous on an interval <m>[a,b]</m>, and a function <m>A(x) = \int_{t=a}^{t=x} f(t)\;dt</m> defined for <m>x</m>-values in <m>[a,b]</m>, then <m>A'(x) = f(x)</m>. That is:
+        <me>
+          \ddx{\int_{t=a}^{t=x} f(t)\;dt} = f(x)
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+
+    <theorem xml:id="thm-FTOC2">
+      <title>Fundamental Theorem of Calculus (Part 2)</title>
+    <statement>
+      <p>
+        For a function <m>f(x)</m> continuous on the closed interval <m>[a,b]</m> and some <m>F(x)</m>, an antiderivative of <m>f(x)</m> (<m>F'(x)=f(x)</m> on <m>[a,b]</m>), then
+        <me>
+          \int_{x=a}^{x=b} f(x)\;dx = F(x)\bigg{|}_{x=a}^{x=b} = F(b)-F(a)
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+  
 
 </section>

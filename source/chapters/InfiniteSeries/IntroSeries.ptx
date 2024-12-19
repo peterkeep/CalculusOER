@@ -3,6 +3,49 @@
 <section xml:id="sec-IntroSeries" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Introduction to Infinite Series</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+        Let's try to introduce the idea of an infinite series using a framework that we know and are (maybe) comfortable with: integrals!
+    </p>
+    <p>
+        With an integral, we have a nice way of evaluating integrals of nicely behaved functions with finite limits of integration (<xref ref="thm-FTOC2" text="title"/>).
+    </p>
+    <p>
+        Then, when we talked about improper integrals, we built a nice way to think about evaluating integrals with unbounded limits of integration (<xref ref="strat-ImproperIntegralsWidth" text="title"/>). How will we use this to think about infinite series, a sum of the infinitely many terms from an infinite sequence?
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-PartialSums">
+    <title>Partial Sums</title>
+      <p>
+      If we approach infinite series in a manner similar to improper integrals, then we will need to do a couple of things.
+      <ol>
+        <li>
+          <p>
+            Truncate the infinite series at some finite ending point. This is what we did with the integral, when we replaced the infinity with some real number variable <m>t</m>. We might use <m>n</m> for the series "ending index."
+          </p>
+        </li>
+        <li>
+          <p>
+            Find a formula for this truncated/finite version. For the integrals, we could use the <xref ref="thm-FTOC2" text="title"/> for this! For series, we'll need to do something else.
+          </p>
+        </li>
+        <li>
+          <p>
+            Apply a limit as <m>t</m> (or <m>n</m> in the case of infinite series) goes off to infinity!
+          </p>
+        </li>
+      </ol>
+    </p>
+    <xi:include href="./activities/act-IntroSeries.ptx" />
+    <definition xml:id="def-PartialSum">
+    <title>Partial Sum</title>
+      <statement>
+        <p>
+          For an infinite series <m>\sum_{k=1}^\infty a_k</m>, we call <m>S_n = \sum_{k=1}^{k=n} a_k</m> the <m>n</m>th <term>Partial Sum</term> of the infinite series.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  
 
 </section>
