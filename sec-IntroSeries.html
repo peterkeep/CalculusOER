@@ -92,6 +92,9 @@ window.MathJax = {
 #subsec-EstimatingMovement-4-1 { counter-set: subsec-EstimatingMovement-4-1 0; }
 #subsec-EstimatingMovement-4-1 > li::marker { content: ""counter(subsec-EstimatingMovement-4-1,decimal)"."; }
 #subsec-EstimatingMovement-4-1 > li { counter-increment: subsec-EstimatingMovement-4-1; }
+#subsec-PartialSums-2-1 { counter-set: subsec-PartialSums-2-1 0; }
+#subsec-PartialSums-2-1 > li::marker { content: ""counter(subsec-PartialSums-2-1,decimal)"."; }
+#subsec-PartialSums-2-1 > li { counter-increment: subsec-PartialSums-2-1; }
 </style>
 </head>
 <body class="pretext book ignore-math">
@@ -284,9 +287,13 @@ window.MathJax = {
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-SequencesAsFunctions" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Sequences as Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-SequenceTerminology" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Sequence Terminology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-RecursiveLimits" class="internal"><span class="codenumber">8.1.3</span> <span class="title">Some Cool Recursive Examples</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-IntroSeries.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Introduction to Infinite Series</span></a></div></li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-IntroSeries.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Introduction to Infinite Series</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSeries.html#subsec-PartialSums" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Partial Sums</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DivergenceTest.html" class="internal"><span class="codenumber">8.3</span> <span class="title">The Divergence Test and the Harmonic Series</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-AlternatingSeries.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Alternating Series and Conditional Convergence</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-IntegralTest.html" class="internal"><span class="codenumber">8.5</span> <span class="title">The Integral Test</span></a></div></li>
@@ -316,7 +323,47 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-IntroSeries"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">8.2</span><span class="space"> </span><span class="title">Introduction to Infinite Series</span>
 </h2>
-<div class="para" id="sec-IntroSeries-2">Text of section.</div></section></div>
+<section class="introduction" id="sec-IntroSeries-2"><div class="para" id="sec-IntroSeries-2-1">Let’s try to introduce the idea of an infinite series using a framework that we know and are (maybe) comfortable with: integrals!</div> <div class="para" id="sec-IntroSeries-2-2">With an integral, we have a nice way of evaluating integrals of nicely behaved functions with finite limits of integration (<a href="sec-FTOC.html#thm-FTOC2" class="xref" data-knowl="./knowl/xref/thm-FTOC2.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.4.2: Fundamental Theorem of Calculus (Part 2)">Fundamental Theorem of Calculus (Part 2)</a>).</div> <div class="para" id="sec-IntroSeries-2-3">Then, when we talked about improper integrals, we built a nice way to think about evaluating integrals with unbounded limits of integration (<a href="sec-ImproperIntegrals.html#strat-ImproperIntegralsWidth" class="xref" data-knowl="./knowl/xref/strat-ImproperIntegralsWidth.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Evaluating Improper Integrals (Infinite Width)">Evaluating Improper Integrals (Infinite Width)</a>). How will we use this to think about infinite series, a sum of the infinitely many terms from an infinite sequence?</div></section><section class="subsection" id="subsec-PartialSums"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.2.1</span><span class="space"> </span><span class="title">Partial Sums</span>
+</h3>
+<div class="para logical" id="subsec-PartialSums-2">
+<div class="para">If we approach infinite series in a manner similar to improper integrals, then we will need to do a couple of things.</div>
+<ol class="decimal" id="subsec-PartialSums-2-1">
+<li id="subsec-PartialSums-2-1-1"><div class="para" id="subsec-PartialSums-2-1-1-1">Truncate the infinite series at some finite ending point. This is what we did with the integral, when we replaced the infinity with some real number variable <span class="process-math">\(t\text{.}\)</span> We might use <span class="process-math">\(n\)</span> for the series "ending index."</div></li>
+<li id="subsec-PartialSums-2-1-2"><div class="para" id="subsec-PartialSums-2-1-2-1">Find a formula for this truncated/finite version. For the integrals, we could use the <a href="sec-FTOC.html#thm-FTOC2" class="xref" data-knowl="./knowl/xref/thm-FTOC2.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.4.2: Fundamental Theorem of Calculus (Part 2)">Fundamental Theorem of Calculus (Part 2)</a> for this! For series, we’ll need to do something else.</div></li>
+<li id="subsec-PartialSums-2-1-3"><div class="para" id="subsec-PartialSums-2-1-3-1">Apply a limit as <span class="process-math">\(t\)</span> (or <span class="process-math">\(n\)</span> in the case of infinite series) goes off to infinity!</div></li>
+</ol>
+</div>
+<article class="activity project-like" id="act-IntroSeries"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">How Do We Think About Infinite Series?</span>
+</h4>
+<div class="introduction" id="act-IntroSeries-2"><div class="para logical" id="act-IntroSeries-2-1">
+<div class="para">Let’s consider the following sequence:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left\{\frac{9}{10^n}\right\}_{n=1}^\infty
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="act-IntroSeries-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-IntroSeries-3-1-1">White out the first 5 terms of the sequence.</div></article><article class="task exercise-like" id="act-IntroSeries-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-IntroSeries-4-1-1">What does this sequence converge to? Show this with a limit!</div></article><article class="task exercise-like" id="act-IntroSeries-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="act-IntroSeries-5-1-1">
+<div class="para">Now we’ll construct a new sequence, this time by adding things up. We’re going to be working with the sequence <span class="process-math">\(\{S_n\}_{n=1}^\infty\)</span> where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+S_n = \sum_{k=1}^{k=n} \left(\frac{9}{10^k}\right)\text{.}
+\end{equation*}
+</div>
+<div class="para">Write out the first five terms of this sequence: <span class="process-math">\(S_1, S_2, S_3, S_4, S_5\text{.}\)</span>
+</div>
+</div></article><article class="task exercise-like" id="act-IntroSeries-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-IntroSeries-6-1-1">Can you come up with an explicit formula for <span class="process-math">\(S_n\text{?}\)</span>
+</div></article><article class="task exercise-like" id="act-IntroSeries-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-IntroSeries-7-1-1">Does <span class="process-math">\(\{S_n\}\)</span> converge or diverge? Use a limit to find what it converges to!</div></article><article class="task exercise-like" id="act-IntroSeries-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-IntroSeries-8-1-1">What do you think this means for the infinite series <span class="process-math">\(\sum_{k=1}^\infty \left(\frac{9}{10^k}\right)\text{?}\)</span> Does the infinite series converge or diverge?</div></article></article><article class="definition definition-like" id="def-PartialSum"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Partial Sum.</span>
+</h4> <div class="para" id="def-PartialSum-2-1">For an infinite series <span class="process-math">\(\sum_{k=1}^\infty a_k\text{,}\)</span> we call <span class="process-math">\(S_n = \sum_{k=1}^{k=n} a_k\)</span> the <span class="process-math">\(n\)</span>th <dfn class="terminology">Partial Sum</dfn> of the infinite series.</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-IntroSequences.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-DivergenceTest.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
