@@ -53,5 +53,21 @@
             </p>
         </statement>
     </task>
-    
+    <conclusion>
+        <p>
+            This is hopefully a nice little introduction to how we'll think about infinite series: we'll consider, instead, the sequence of sums where we add up more and more terms. This is also a nice first example, because we really just showed that
+            <me>
+                0.999...=1
+            </me>
+            since
+            <md>
+                <mrow>\sum_{k=1}^\infty \left(\frac{9}{10^k}\right)\amp = \frac{9}{10} + \frac{9}{100} + \frac{9}{1000} + ...</mrow>
+                <mrow> \amp = 0.9+0.09+0.009+...</mrow>
+                <mrow> \amp 1 </mrow>
+            </md>.
+        </p>
+        <p>
+            But more importantly, we now have a good strategy for thinking about infinite series as sequences of <em>partial sums</em>.
+        </p>
+    </conclusion>
 </activity>

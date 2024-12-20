@@ -41,10 +41,122 @@
     <title>Partial Sum</title>
       <statement>
         <p>
-          For an infinite series <m>\sum_{k=1}^\infty a_k</m>, we call <m>S_n = \sum_{k=1}^{k=n} a_k</m> the <m>n</m>th <term>Partial Sum</term> of the infinite series.
+          For an infinite series <m>\sum_{k=1}^\infty a_k</m>, we call <m>S_n = \sum_{k=1}^{n} a_k</m> the <m>n</m>th <term>Partial Sum</term> of the infinite series.
         </p>
       </statement>
     </definition>
+    <definition xml:id="def-SeriesConvergence">
+    <title>Series Convergence</title>
+      <statement>
+        <p>
+          We say that the infinite series <m>\sum_{k=1}^\infty a_k</m> <term>converges</term> to the real number <m>L</m> if the sequence <m>\{S_n\}_{n=1}^\infty</m> converges to <m>L</m> (<m>\lim_{n\to\infty} S_n = L</m>), where <m>S_n = \sum_{k=1}^n a_k</m> is the <m>n</m>th partial sum of the infinite series.
+        </p>
+        <p>
+          If the sequence of partial sums <m>\{S_n\}_{n=1}^\infty</m> diverges (the limit <m>\lim_{n\to\infty} S_n</m> does not exist), then we say that the infinite series <m>\sum_{k=1}^\infty a_k</m> <term>diverges</term>.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  <subsection xml:id="subsec-SpecialSeries">
+    <title>Special Series</title>
+    <p>
+      Let's look at three examples where we can think about partial sums and play with our new idea of series convergence.
+    </p>
+    <example>
+    <introduction>
+      <p>
+        For each of the following series, write out a few of the terms of the series. Then write out the corresponding partial sums. Use these to find a formula for <m>S_n</m>, the <m>n</m>th partial sum. Then make a claim about whether or not the series converges and what it converges to.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\sum_{k=0}^\infty \left(\frac{1}{2^k}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow> S_0 \amp = 1</mrow>
+            <mrow> S_1 \amp = 1+\frac{1}{2} = \frac{3}{2}</mrow>
+            <mrow> S_2 \amp = 1+\frac{1}{2}+\frac{1}{4} = \frac{7}{4} </mrow>
+            <mrow>S_3 \amp = 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} = \frac{15}{8} </mrow>
+            <mrow> S_n \amp = 1+ \frac{1}{2} + \frac{1}{4} + ... + \frac{1}{2^n} = \frac{2^{n+1}-1}{2^n} </mrow>
+            <mrow> \amp = 2-\frac{1}{2^n}</mrow>
+            <mrow>\lim_{n\to\infty} S_n \amp = \lim_{n\to\infty}\left(2 - \frac{1}{2^n}\right) </mrow>
+            <mrow> \amp = 2</mrow>
+          </md>
+          The series converges to 2.
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\sum_{k=2}^\infty \left(\frac{k}{\ln(k)} - \frac{k+1}{\ln(k+1)}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow> S_2 \amp= \frac{2}{\ln(2)} - \frac{3}{\ln(3)} </mrow>
+            <mrow> S_3 \amp = \frac{2}{\ln(2)} \underbrace{- \frac{3}{\ln(3)} + \frac{3}{\ln(3)}}_{0} - \frac{4}{\ln(4)}</mrow>
+            <mrow> \amp = \frac{2}{\ln(2)} - \frac{4}{\ln(4)}</mrow>
+            <mrow> S_4 \amp = \frac{2}{\ln(2)} \underbrace{- \frac{3}{\ln(3)} + \frac{3}{\ln(3)}}_{0} \underbrace{- \frac{4}{\ln(4)} + \frac{4}{\ln(4)}}_{0} - \frac{5}{\ln(5)}</mrow>
+            <mrow> \amp = \frac{2}{\ln(2)} - \frac{5}{\ln(5)}</mrow>
+            <mrow> S_5 \amp = \frac{2}{\ln(2)} \underbrace{- \frac{3}{\ln(3)} + \frac{3}{\ln(3)}}_{0} \underbrace{- \frac{4}{\ln(4)} + \frac{4}{\ln(4)}}_{0} \underbrace{- \frac{5}{\ln(5)} + \frac{6}{\ln(6)}}_{0} - \frac{6}{\ln(6)}</mrow>
+            <mrow> \amp = \frac{2}{\ln(2)} - \frac{6}{\ln(6)}</mrow>
+            <mrow> S_n \amp = \frac{2}{\ln(2)} \underbrace{- \frac{3}{\ln(3)} + \frac{3}{\ln(3)}}_{0} \underbrace{- \frac{4}{\ln(4)} + \frac{4}{\ln(4)}}_{0} \underbrace{- \frac{5}{\ln(5)} + ... + \frac{n}{\ln(n)}}_{0} - \frac{n+1}{\ln(n+1)}</mrow>
+            <mrow> \amp = \frac{2}{\ln(2)} - \frac{n+1}{\ln(n+1)}</mrow>
+            <mrow>\lim_{n\to\infty} S_n \amp =\lim_{n\to\infty} \frac{2}{\ln(2)} - \frac{n+1}{\ln(n+1)}</mrow>
+            <mrow> \amp = -\infty</mrow>
+          </md>
+          So the series <m>\sum_{k=2}^\infty \left(\frac{k}{\ln(k)} - \frac{k+1}{\ln(k+1)}\right)</m> diverges.
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\sum_{k=2}^\infty \left(\frac{2}{k^2-1}\right)</m> 
+        </p>
+      </statement>
+      <hint>
+        <p>
+          This one is tricky! It's hard to notice anything unless we write out the series term formula a bit differently. Use <xref ref="sec-PartialFractions" text="title"/> to re-write <m>\frac{2}{k^2-1}</m> as <m>\frac{1}{k-1} - \frac{1}{k+1}</m>.
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <me>
+            \sum_{k=2}^\infty \left(\frac{2}{k^2-1}\right) = \sum_{k=2}^\infty \left(\frac{1}{k-1} - \frac{1}{k+1}\right)
+          </me>
+
+          <md>
+            <mrow> S_2 \amp = 1 - \frac{1}{3} </mrow>
+            <mrow> S_3 \amp = 1 - \frac{1}{3} + \frac{1}{2} - \frac{1}{4} </mrow>
+            <mrow> S_4 \amp = 1 - \frac{1}{3} + \frac{1}{2} - \frac{1}{4} + \frac{1}{3} - \frac{1}{5}</mrow>
+            <mrow> \amp = 1 + \frac{1}{2} - \frac{1}{4} - \frac{1}{5}</mrow>
+            <mrow> S_5 \amp = 1 - \frac{1}{3} + \frac{1}{2} - \frac{1}{4} + \frac{1}{3} - \frac{1}{5} + \frac{1}{4} - \frac{1}{6}</mrow>
+            <mrow> \amp = 1 + \frac{1}{2} - \frac{1}{5} - \frac{1}{6}</mrow>
+            <mrow>S_n \amp = 1 - \frac{1}{3} + \frac{1}{2} - \frac{1}{4} + \frac{1}{3} - \frac{1}{5} + \frac{1}{4} - \frac{1}{6} + ... + \underbrace{\frac{1}{n-2} - \frac{1}{n}}_{a_{n-1}} + \underbrace{\frac{1}{n-1} - \frac{1}{n+1}}_{a_{n}}</mrow>
+            <mrow> \amp 1 + \frac{1}{2} - \frac{1}{n} - \frac{1}{n+2}</mrow>
+            <mrow>\lim_{n\to\infty} S_n \amp = \lim_{n\to\infty} \left(1 + \frac{1}{2} - \frac{1}{n} - \frac{1}{n+2}\right) </mrow>
+            <mrow> \amp = \frac{3}{2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </task>
+    </example>
+    <p>
+      These examples are a bit misleading: we often won't be able to do this kind of thing! For most infinite series, we will struggle to find an explicit formula for the <m>n</m>th partial sum. In these examples, though, we took advantage of some specific structure.
+    </p>
+    <p>
+      In this first example (as well as the example in <xref ref="act-IntroSeries"/>), we noticed that because of the exponential function defining the terms, we were able to find some nice patterns in the partial sums. We'll explore this a bit more later in <xref ref="sec-CommonSeries"/>.
+    </p>
+    <p>
+      Then in these other two examples, we noticed that once we could write each term as really a difference of two fractions that have a really similar structure, we got these "repeat" values from term to term where the opposite signs made things add up to 0. These are called "telescoping series," and they're mostly fun examples to think about partial sum formulas. We'll see some pop up later though, and Partial Fraction Decomposition is a nice trick to keep in mind for these kinds of things.
+    </p>
   </subsection>
   
 
