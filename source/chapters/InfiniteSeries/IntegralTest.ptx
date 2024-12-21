@@ -2,7 +2,113 @@
 
 <section xml:id="sec-IntegralTest" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Integral Test</title>
+  <subsection xml:id="subsec-SeriesAsIntegrals">
+    <title>Infinite Series As a Kind of Integral</title>
+    <p>
+      We start here with a connection between objects. Earlier (in <xref ref="subsec-SequencesAsFunctions"/>) we tried to describe sequences as just a special kind of function: the domain is the set of non-negative integer (or positive integers, depending on whether we start our index at <m>n=0</m> or <m>n=1</m>) and we map these inputs to real number outputs. And now we want to think about what it might mean to accumulate the values of these kinds of functions.
+    </p>
+    <p>
+      Function value accumulation is what we've been looking at lately! That's what integration is! We are trying to accumulate all of the function values and weigh them based on their "width." In the context of continuous functions, that means we start approximating this accumulation by looking at some finite number of function values that we pick, and we give them some <m>\Delta x</m> width between them. That's our Riemann sum:
+      <me>
+        \sum_{k=1}^n f(x_k^*) \; \Delta x
+      </me>
+      And from there, we work on making that space between function values get smaller (as the number of function values we use gets higher). So when <m>n</m> is the number of function values, we can let <m>n\to \infty</m> and correspondingly we get <m>\Delta x \to dx</m>, the differential in our integral:
+      <me>
+        \lim_{n\to\infty} \sum_{k=1}^n f(x_k^*) \;\Delta x = \int_{x=a}^{x=b}f(x)\;dx
+      </me>.
+    </p>
+    <p>
+      And this is how we've talked about infinite series so far, even adopting the same notions of convergence and thinking about how we extend a familiar idea (in this case adding numbers, compared to integrating a function) out to infinity: we just keep walking our (finite) ending point out to infinity using a limit!
+    </p>
+    <p>
+      So this brings us to this comparison of the same types of objects across these two different contexts.
+    </p>
+    <table>
+      <title>Comparisons of Calculus Objects in Continuous and Discrete Contexts</title>
+      <tabular halign="center">
+        <row header="yes" bottom="medium">
+          <cell>Object</cell>
+          <cell>Continuous Context</cell>
+          <cell>Discrete Context</cell>
+        </row>
+        <row bottom="minor">
+          <cell>Function</cell>
+          <cell><m>f(x)</m></cell>
+          <cell><m>a_k</m></cell>
+        </row>
+        <row>
+          <cell>Graph</cell>
+        </row>
+        <row>
+          <cell>Finite Accumulation</cell>
+          <cell>Definite Integral</cell>
+          <cell>Partial Sum</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell><m>\displaystyle A(t) = \int_{x=0}^{x=t} f(x)\;dx</m></cell>
+          <cell><m>\displaystyle S_n = \sum_{k=0}^n a_k</m></cell>
+        </row>
+        <row>
+          <cell>Infinite Accumulation</cell>
+          <cell>Improper Integral</cell>
+          <cell>Infinite Series</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell><m>\displaystyle\int_{x=0}^\infty f(x)\;dx</m></cell>
+          <cell><m>\displaystyle\sum_{k=0}^\infty a_k</m></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      So in this section, we'll investigate this link between infinite series and improper integrals as the same kind of object occurring in different contexts. Intuitively, then, they'll be related to each other, under the right conditions.
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-IntegralTest">
+    <title>The Integral Test</title>
+    <p>
+      We'll build the integral test.
+    </p>
+    <theorem xml:id="thm-IntegralTest">
+      <title>Integral Test</title>
+      <statement>
+        <p>
+          If <m>\sum_{k=0}^\infty a_k</m> is an infinite series with <m>a_k\gt 0</m> for all <m>k\geq 0</m> and <m>f(x)</m> is a continuous and decreasing function with <m>f(k) = a_k</m> for all <m>k\geq 0</m>, then we can compare the behaviors of <m>\sum_{k=0}^\infty a_k</m> and <m>\int_{x=0}^\infty f(x)\;dx</m>: the integral and the series are guaranteed to either both diverge or both converge.
+        </p> 
+      </statement>
+    </theorem>
+  </subsection>
+  <subsection xml:id="subsec-WhyDecreasing">
+    <title>Why Do We Need These Conditions?</title>
+    <p>
+      Riemann sum approximation
+      Oscillating function can make an integral converge but series diverge
+      <m>\sin^2(\pi(x))</m> opposite.
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-pSeries">
+    <title>A Family of Series Types: <m>p</m>-Series</title>
 
-  <p> Text of section. </p>
+    <definition xml:id="def-pSeries">
+    <title><m>p</m>-Series</title>
+      <statement>
+        <p>
+          We call the infinite series <m>\sum_{k=1}^\infty \frac{1}{k^p}</m> where <m>p</m> is a real number a <term><m>p</m>-Series</term>.
+        </p>
+      </statement>
+    </definition>
+    
+    <theorem xml:id="thm-pSeries">
+      <title><m>p</m>-Series Convergence Criteria</title>
+      <statement>
+        <p>
+          The infinite series <m>\sum_{k=1}^\infty \frac{1}{k^p}</m> where <m>p</m> is a real number converges when <m>p\gt 1</m> and diverges when <m>p\leq 1</m>.
+        </p>
+      </statement>
+    </theorem>
+    
+  </subsection>
+  
 
 </section>

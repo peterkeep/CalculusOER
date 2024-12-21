@@ -2,7 +2,43 @@
 
 <section xml:id="sec-DivergenceTest" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Divergence Test and the Harmonic Series</title>
-
-  <p> Text of section. </p>
+  <subsection xml:id="subsec-RelationsihpSeqSeries">
+    <title>The Relationship Between a Sequence and Series</title>
+    <p>
+      <theorem xml:id="thm-HarmonicSeriesDiverges">
+        <title>The Harmonic Series Diverges</title>
+        <statement>
+          <p>
+            The <term>Harmonic Series</term>, <m>\sum_{k=1}^\infty \frac{1}{k}</m>, diverges.
+          </p>
+        </statement>
+        <proof>
+          <p>
+            Let's assume, for the sake of eventual contradiction, that the harmonic series converges.
+          </p>
+        </proof>
+      </theorem>
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-DivergenceTest">
+    <title>The Divergence Test</title>
+    <theorem xml:id="thm-DivergenceTest">
+      <title>Divergence Test</title>
+      <statement>
+        <p>
+          For an infinite series <m>\sum_{k=0}^\infty a_k</m>, if the infinite series converges then
+          <me>
+            \lim_{k\to\infty} a_k = 0
+          </me>.
+          This is equivalent to saying that if 
+          <me>
+            \lim_{k\to\infty} a_k\neq 0
+          </me>
+          then the infinite series <m>\sum_{k=0}^\infty a_k</m> diverges.
+        </p>
+      </statement>
+    </theorem>
+    
+  </subsection>
 
 </section>

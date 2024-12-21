@@ -114,8 +114,8 @@ Appendix: More Definite/Improper Integrals
 - introduction to sequences
 - introduction to series
     - Python: sequences and series
-- the integral test
 - the divergence test and the harmonic series
+- the integral test
 - alternating series test and conditional convergence
     - Python: conditional and absolute convergence
 - common series types
