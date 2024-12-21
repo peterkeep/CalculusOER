@@ -6,8 +6,9 @@
 1. Limits
 - introduction to limits
 - first definition of a limit
-- approximations numerically and graphically
+- approximations numerically and visually
     - Python: approximating limits
+    - approximate sin(x)/x visually
 - evaluating limits
 - infinite limits
 - end behavior limits
@@ -51,7 +52,7 @@ Appendix: Hyperbolic Trig
 - increasing/decreasing
 - concavity
 - interpreting the first and second derivative
-- end behavior derivatives
+- end behavior derivatives ?
 - absolute maximums/minimums
 - optimization
 - linear approximation of functions
@@ -76,6 +77,8 @@ Appendix: Numerical Integration
     - Python: Monte Carlo simulations
 
 6. Antidifferentiation Techniques
+- improper integrals
+    - Python: improper integrals
 - substitution
     - Python: visualizing substitution
 - algebraic manipulations
@@ -91,7 +94,8 @@ Appendix: More Integration Techniques (maybe?)
 - net change and future value
     - Python: net change and future value
 - area between curves
-    - Python: area between curves
+    - Python: area between curve- improper integrals
+    - Python: improper integralss
 - volumes of solids of revolution
 - more volumes
     - Python: volumes
@@ -100,8 +104,6 @@ Appendix: More Integration Techniques (maybe?)
 - surface area
     - Python: surface area
 - other applications
-- improper integrals
-    - Python: improper integrals
 
 Appendix: More Definite/Improper Integrals
 - probability and expected values
@@ -112,10 +114,10 @@ Appendix: More Definite/Improper Integrals
 - introduction to sequences
 - introduction to series
     - Python: sequences and series
+- the integral test
 - the divergence test and the harmonic series
 - alternating series test and conditional convergence
     - Python: conditional and absolute convergence
-- the integral test
 - common series types
 - comparison test
 - ratio/root tests
@@ -129,7 +131,7 @@ Appendix: More Series Tests
 - polynomial approximations
 - Taylor series
     - Python: Taylor series convergence
-- power series properties
+- Power series convergence
 - building Taylor series
     - Python: applying Taylor series
 
