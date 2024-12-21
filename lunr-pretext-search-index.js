@@ -1015,25 +1015,79 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "The Divergence Test and the Harmonic Series",
-  "body": " The Divergence Test and the Harmonic Series  Text of section.  "
+  "body": " The Divergence Test and the Harmonic Series   The Relationship Between a Sequence and Series    The Harmonic Series Diverges   The Harmonic Series , , diverges.    Let's assume, for the sake of eventual contradiction, that the harmonic series converges.       The Divergence Test   Divergence Test   For an infinite series , if the infinite series converges then . This is equivalent to saying that if then the infinite series diverges.     "
 },
 {
-  "id": "sec-AlternatingSeries",
-  "level": "1",
-  "url": "sec-AlternatingSeries.html",
-  "type": "Section",
-  "number": "8.4",
-  "title": "Alternating Series and Conditional Convergence",
-  "body": " Alternating Series and Conditional Convergence  Text of section.  "
+  "id": "subsec-RelationsihpSeqSeries-2",
+  "level": "2",
+  "url": "sec-DivergenceTest.html#subsec-RelationsihpSeqSeries-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Harmonic Series "
+},
+{
+  "id": "thm-DivergenceTest",
+  "level": "2",
+  "url": "sec-DivergenceTest.html#thm-DivergenceTest",
+  "type": "Theorem",
+  "number": "8.3.2",
+  "title": "Divergence Test.",
+  "body": " Divergence Test   For an infinite series , if the infinite series converges then . This is equivalent to saying that if then the infinite series diverges.   "
 },
 {
   "id": "sec-IntegralTest",
   "level": "1",
   "url": "sec-IntegralTest.html",
   "type": "Section",
-  "number": "8.5",
+  "number": "8.4",
   "title": "The Integral Test",
-  "body": " The Integral Test  Text of section.  "
+  "body": " The Integral Test   Infinite Series As a Kind of Integral  We start here with a connection between objects. Earlier (in ) we tried to describe sequences as just a special kind of function: the domain is the set of non-negative integer (or positive integers, depending on whether we start our index at or ) and we map these inputs to real number outputs. And now we want to think about what it might mean to accumulate the values of these kinds of functions.  Function value accumulation is what we've been looking at lately! That's what integration is! We are trying to accumulate all of the function values and weigh them based on their \"width.\" In the context of continuous functions, that means we start approximating this accumulation by looking at some finite number of function values that we pick, and we give them some width between them. That's our Riemann sum: And from there, we work on making that space between function values get smaller (as the number of function values we use gets higher). So when is the number of function values, we can let and correspondingly we get , the differential in our integral: .  And this is how we've talked about infinite series so far, even adopting the same notions of convergence and thinking about how we extend a familiar idea (in this case adding numbers, compared to integrating a function) out to infinity: we just keep walking our (finite) ending point out to infinity using a limit!  So this brings us to this comparison of the same types of objects across these two different contexts.   Comparisons of Calculus Objects in Continuous and Discrete Contexts    Object  Continuous Context  Discrete Context    Function      Graph    Finite Accumulation  Definite Integral  Partial Sum         Infinite Accumulation  Improper Integral  Infinite Series          So in this section, we'll investigate this link between infinite series and improper integrals as the same kind of object occurring in different contexts. Intuitively, then, they'll be related to each other, under the right conditions.    The Integral Test  We'll build the integral test.   Integral Test   If is an infinite series with for all and is a continuous and decreasing function with for all , then we can compare the behaviors of and : the integral and the series are guaranteed to either both diverge or both converge.      Why Do We Need These Conditions?  Riemann sum approximation Oscillating function can make an integral converge but series diverge opposite.    A Family of Series Types: -Series   -Series   We call the infinite series where is a real number a -Series .     -Series Convergence Criteria   The infinite series where is a real number converges when and diverges when .     "
+},
+{
+  "id": "subsec-SeriesAsIntegrals-6",
+  "level": "2",
+  "url": "sec-IntegralTest.html#subsec-SeriesAsIntegrals-6",
+  "type": "Table",
+  "number": "8.4.1",
+  "title": "Comparisons of Calculus Objects in Continuous and Discrete Contexts",
+  "body": " Comparisons of Calculus Objects in Continuous and Discrete Contexts    Object  Continuous Context  Discrete Context    Function      Graph    Finite Accumulation  Definite Integral  Partial Sum         Infinite Accumulation  Improper Integral  Infinite Series         "
+},
+{
+  "id": "thm-IntegralTest",
+  "level": "2",
+  "url": "sec-IntegralTest.html#thm-IntegralTest",
+  "type": "Theorem",
+  "number": "8.4.2",
+  "title": "Integral Test.",
+  "body": " Integral Test   If is an infinite series with for all and is a continuous and decreasing function with for all , then we can compare the behaviors of and : the integral and the series are guaranteed to either both diverge or both converge.   "
+},
+{
+  "id": "def-pSeries",
+  "level": "2",
+  "url": "sec-IntegralTest.html#def-pSeries",
+  "type": "Definition",
+  "number": "8.4.3",
+  "title": "<span class=\"process-math\">\\(p\\)<\/span>-Series.",
+  "body": " -Series   We call the infinite series where is a real number a -Series .   "
+},
+{
+  "id": "thm-pSeries",
+  "level": "2",
+  "url": "sec-IntegralTest.html#thm-pSeries",
+  "type": "Theorem",
+  "number": "8.4.4",
+  "title": "<span class=\"process-math\">\\(p\\)<\/span>-Series Convergence Criteria.",
+  "body": " -Series Convergence Criteria   The infinite series where is a real number converges when and diverges when .   "
+},
+{
+  "id": "sec-AlternatingSeries",
+  "level": "1",
+  "url": "sec-AlternatingSeries.html",
+  "type": "Section",
+  "number": "8.5",
+  "title": "Alternating Series and Conditional Convergence",
+  "body": " Alternating Series and Conditional Convergence  Text of section.  "
 },
 {
   "id": "sec-CommonSeries",
