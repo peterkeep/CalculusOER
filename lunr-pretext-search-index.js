@@ -388,11 +388,20 @@ var ptx_lunr_docs = [
   "body": " More Definite Integrals  Text of section.  "
 },
 {
+  "id": "sec-ImproperIntegrals",
+  "level": "1",
+  "url": "sec-ImproperIntegrals.html",
+  "type": "Section",
+  "number": "6.1",
+  "title": "Improper Integrals",
+  "body": " Improper Integrals   Evaluating Improper Integrals (Infinite Width)  For a function that is continuous on , we can evaluate the improper integral : .   "
+},
+{
   "id": "sec-uSubstitution",
   "level": "1",
   "url": "sec-uSubstitution.html",
   "type": "Section",
-  "number": "6.1",
+  "number": "6.2",
   "title": "<span class=\"process-math\">\\(u\\)<\/span>-Substitution",
   "body": " -Substitution   More to Translate    Integrate the following, making sure to translate the whole integrand function to be written in terms of .        We can write as , or if you really want to, we can write it as          "
 },
@@ -401,7 +410,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-uSubstitution.html#subsec-MoreToTranslate-2",
   "type": "Example",
-  "number": "6.1.1",
+  "number": "6.2.1",
   "title": "",
   "body": "  Integrate the following, making sure to translate the whole integrand function to be written in terms of .        We can write as , or if you really want to, we can write it as        "
 },
@@ -410,7 +419,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-AlgebraicManipulations.html",
   "type": "Section",
-  "number": "6.2",
+  "number": "6.3",
   "title": "Manipulating Integrands to Reveal Substitution",
   "body": " Manipulating Integrands to Reveal Substitution   We've looked at how to use a variable substitution to antidifferentiate composite functions. We've already seen, though, that sometimes identifying and actually using a helpful substitution can be difficult to do. In this section, we want to introduce some different strategies for noticing and setting up useful substitutions in some specific instances.    Rewriting the Integrand   A Negative Exponent   Let's think about this integral: .    Is there any composition in this integral? Pick it out, and either explain or show that using this to guide your substitution will not be helpful.   Notice that is composed inside of the exponential function. Try a substitution with .    What does mean? What does mean?    Re-write the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?   Re-write as , giving you: .   Either add the fractions in the denominator or multiply the whole fraction by .   You should have an integral that looks like: .    Why is this new integral set up so much better for the purpose of -substitution? How could we tell this just by looking at the initial integral?          Try to re-write this integral as .          Antidifferentiating Rational Functions  Strategies for antidifferentiating rational functions are just that: strategies. There aren't really easy ways to antidifferentiate these, but we'll find some common tactics to apply and try to build our intuition for noticing the different kinds of structure we can have in these rational functions. All of these strategies are based around cleverly re-writing our rational functions (using some algebraic manipulations) to reveal some structure. We'll try to notice the structure, so that we know what we're trying to reveal.   Integrating Rational Functions      "
 },
@@ -419,7 +428,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlgebraicManipulations.html#act-NegativeExponent",
   "type": "Activity",
-  "number": "6.2.1",
+  "number": "6.3.1",
   "title": "A Negative Exponent.",
   "body": " A Negative Exponent   Let's think about this integral: .    Is there any composition in this integral? Pick it out, and either explain or show that using this to guide your substitution will not be helpful.   Notice that is composed inside of the exponential function. Try a substitution with .    What does mean? What does mean?    Re-write the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?   Re-write as , giving you: .   Either add the fractions in the denominator or multiply the whole fraction by .   You should have an integral that looks like: .    Why is this new integral set up so much better for the purpose of -substitution? How could we tell this just by looking at the initial integral?   "
 },
@@ -428,7 +437,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlgebraicManipulations.html#subsec-Rewriting-3",
   "type": "Example",
-  "number": "6.2.1",
+  "number": "6.3.1",
   "title": "",
   "body": "      Try to re-write this integral as .       "
 },
@@ -437,7 +446,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-IntegrationByParts.html",
   "type": "Section",
-  "number": "6.3",
+  "number": "6.4",
   "title": "Integration By Parts",
   "body": " Integration By Parts   We've seen now that is a useful technique for undo-ing . We set up the variable substitution with the specific goal of going backwards through the Chain Rule and antidifferentiating some composition of functions.  A reasonable next step is to ask: What other derivative rules can we \"undo?\" What other operations between functions should we think about? This brings us to Integration by Parts, the integration technique specifically for undo-ing .    Discovering the Integration by Parts Formula   Discovering the Integration by Parts Formula   The product rule for derivatives says that: . We know that we intend to \"undo\" the product rule, so let's try to re-frame the product rule from a rule about derivatives to a rule about antiderivatives.    Antidifferentiate the product rule by antidifferentiating each side of the equation.    Note that on the left side of this equation you're antidifferentiating a derivative. What will that give you? Then, on the right side, we're just splitting up the terms of the product rule into two different integrals.    On the right side, we have two integrals. Since each of them has a product of functions (one function and a derivative of another), we can isolate one of them in this equation and create a formula for how to antidifferentiate a product of functions! Solve for .    Look back at this formula for . Explain how this is really the product rule for derivatives (without just undo-ing all of the steps we have just done).    What made it so useful to pick instead of in this case? Since we know that we are going to get another integral, one that specifically has the new derivative and new antiderivative that we find from the parts we picked, we noticed that differentiating the function was much nicer than antidifferentiating it: we get a constant that we multiply by the trig function in this new integral, instead of a power function with an even bigger exponent. We can also notice that when it comes to the trig function, it doesn't really matter if we differentiate it or antidifferentiate it. In both cases, we get a in our new integral, with the only difference being whether it is positive or negative.    We typically use the substitutions and to re-write the integrals.   Integration by Parts  Suppose and are both differentiable functions. Then: .   When we select the parts for our integral, we are selecting a function to be labeled and a function to be labeled as . We begin with one of the pieces of the product rule, a function multiplied by some other function's derivative. It is important to recognize that we do different things to these functions: for one of them, , we need to find the derivative, . For the other, , we need to find an antiderivative, . Because of these differences, it is important to build some good intuition for how to select the parts.    Intuition for Selecting the Parts   Picking the Parts for Integration by Parts   Let's consider the integral: . We'll investigate how to set up the integration by parts formula with the different choices for the parts.    We'll start with selecting and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using your labeled pieces. Notice that the integration by parts formula gives us another integral. Don't worry about antidifferentiating this yet, let's just set the pieces up.        Let's swap the pieces and try the setup with and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Compare the two results we have. Which setup do you think will be easier to move forward with? Why?   When we say we need to keep moving forward with our setup, what we mean is that we have another integral to antidifferentiate. Which one will be easier to work with: or ?    Finalize your work with the setup you have chosen to find .    What made things so much better when we chose compared to ? We know that the new integral from our integration by parts formula will be built from the new pieces, the derivative we find from and the antiderivative we pick from . So when we differentiate , we get a constant, compared to antidifferentiating and getting another power function, but with a larger exponent. We know this will be combined with a function no matter what (since the derivative and antiderivatives of will only differ in their sign). So picking the version that gets that second integral to be built from a trig function and a constant is going to be much nicer than a trig function and a power function. It was nice to pick to be the piece that we found the derivative of!    Let's practice this comparison with another example in order to build our intuition for picking the parts in our integration by parts formula.   Picking the Parts for Integration by Parts   This time we'll look at a very similar integral: . Again, we'll set this up two different ways and compsare them.    We'll start with selecting and . Fill in the following with the rest of the pieces:    You're not forgetting how to antidifferentiate . This is just something we don't know yet!    Ok, so here we have to swap the pieces and try the setup with and , since we only know how to differentiate . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Why was it fine for us to antidifferentiate in this example, but not in ?    Finish this work to find .   Notice that .    So here, we didn't actually get much choice. We couldn't pick in order to differentiate it (and get a constant to multiply into our second integral) since we don't know how to antidifferentiate (yet: once we know how, it might be fun to come back to this problem and try it again with the parts flipped). But we can also notice that it ended up being fine to antidifferentiate : the increased power from our power rule didn't really matter much when we combined it with the derivative of the logarithm, since the derivative of the log is also a power function ! So we were able to combine those easily and actually integrate that second integral.     It is common for students to want to place functions into sort of hierarchy or classification guidelines for choosing the parts. Some students have found that the acronym LIPET (logs, inverse trig, power functions, exponentials, and trig functions) can be a useful tool for selecting the parts. When you have two different types of functions, it might help to select to be whichever function shows up first in that list.     Integrate the following:        It doesn't matter whether we differentiate or antidifferentiate , since we'll get the same thing. Let's pick so that we can differentiate it.     We need to do more integration by parts!          We don't know how to antidifferentiate , but we do know how to differentiate it!           Some Flexible Choices for Parts  We're going to look at a couple of examples where we can showcase some of the flexibility we have with our choices of parts. First, we'll revisit .In this example, when we got to that second integral, we noticed that for the fraction , we could either do some long division (since the degrees in the numerator and denominator are the same) or do some clever re-writing of the numerator. Either way, we know that this fraction is almost 1...It's really some bit (in this case, the extra bit was a fraction ).  What if we chose our parts differently? Not the and parts, though, since we still haven't figured out how to antidifferentiate . But we get one more choice!  Once we choose , we don't really get a separate choice for : it's simply the derivative of with regard to multiplied by the differential . But consider our choice of , and the subsequent process of finding . Yes, there's only one possible answer, but in a much more real sense, there isn't just one possible answer. There are an infinite number of them! We know, due to the and then later due to , that there are an infinite number of antiderivatives, all differing by at most a constant term. So let's pick a more appropriate antiderivative!    Integrate , this time making a more intentional choice for .    Note that if we pick , then the second integral will be just delightful.          So we get the same thing, but didn't have to think through the long division or the forced factoring. But the trade off here is that we almost have to see this coming to notice it. This flexibility doesn't always come into play for us. But we can look at a different kind of flexibility.  We've looked at integrals with both and . For these, and for other inverse functions specifically, we pick them to be the part in our integration by parts problems because we don't know how do antidifferentiate them.  So let's look at , and we'll solve this integral by, specifically, differentiating instead of antidifferentiating it.   Antidifferentiating the Log Function   Integrate .    Pick , since we can differentiate it. What does that leave for ?          We can use this same strategy to find antiderivatives of , , and eventually .   For , we'll need to use this same tactic of setting and , but then later on we'll need to use a technique called to finish the problem.   Now that we know the antiderivative family for , we can revisit the problem in , , and try to work through the integration by parts when and .    Integrate .      Note that this last integral is really recognizable: it's the one we started with! Let's \"solve\" this equation for that integral by adding it to both sides of our equation.       Solving for the Integral  In this last example, we ended up seeing the original integral repeated when we did integration by parts. This is a useful technique, especially when we deal with functions that have a kind of \"repeating\" structure to their derivatives or antiderivatives. We'll look at a couple of classic integrals where we see this kind of technique employed.    For each of the following integrals, use integration by parts to solve.        This one is pretty straight forward, since it doesn't really matter what we select as our parts. Notice, though, that this isn't the only way we can approach this! We can use -substitution, or even re-write this using a trigonometric identity.                     Notice that we can come up with a bunch of different examples that are similar to . If we put trigonometric functions inside our integral, we'll have some options with how we approach them! We can use -substitution, since the derivatives of trigonometric functions are other trigonometric functions. In , for instance, we could write and , or even chose and .  The real issues will come when our integrand is not just a product of two trigonometric functions, but when they are products of trigonometric functions raised to exponents. We'll have some combinations of these products (which maybe makes us think about integration by parts) and composition (which points towards -substitution). In the next section, we'll develop some strategies to deal with these kinds of integrals.   "
 },
@@ -446,7 +455,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#act-IntegrationByParts",
   "type": "Activity",
-  "number": "6.3.1",
+  "number": "6.4.1",
   "title": "Discovering the Integration by Parts Formula.",
   "body": " Discovering the Integration by Parts Formula   The product rule for derivatives says that: . We know that we intend to \"undo\" the product rule, so let's try to re-frame the product rule from a rule about derivatives to a rule about antiderivatives.    Antidifferentiate the product rule by antidifferentiating each side of the equation.    Note that on the left side of this equation you're antidifferentiating a derivative. What will that give you? Then, on the right side, we're just splitting up the terms of the product rule into two different integrals.    On the right side, we have two integrals. Since each of them has a product of functions (one function and a derivative of another), we can isolate one of them in this equation and create a formula for how to antidifferentiate a product of functions! Solve for .    Look back at this formula for . Explain how this is really the product rule for derivatives (without just undo-ing all of the steps we have just done).    What made it so useful to pick instead of in this case? Since we know that we are going to get another integral, one that specifically has the new derivative and new antiderivative that we find from the parts we picked, we noticed that differentiating the function was much nicer than antidifferentiating it: we get a constant that we multiply by the trig function in this new integral, instead of a power function with an even bigger exponent. We can also notice that when it comes to the trig function, it doesn't really matter if we differentiate it or antidifferentiate it. In both cases, we get a in our new integral, with the only difference being whether it is positive or negative.   "
 },
@@ -455,7 +464,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#act-PickingParts-1",
   "type": "Activity",
-  "number": "6.3.2",
+  "number": "6.4.2",
   "title": "Picking the Parts for Integration by Parts.",
   "body": " Picking the Parts for Integration by Parts   Let's consider the integral: . We'll investigate how to set up the integration by parts formula with the different choices for the parts.    We'll start with selecting and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using your labeled pieces. Notice that the integration by parts formula gives us another integral. Don't worry about antidifferentiating this yet, let's just set the pieces up.        Let's swap the pieces and try the setup with and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Compare the two results we have. Which setup do you think will be easier to move forward with? Why?   When we say we need to keep moving forward with our setup, what we mean is that we have another integral to antidifferentiate. Which one will be easier to work with: or ?    Finalize your work with the setup you have chosen to find .    What made things so much better when we chose compared to ? We know that the new integral from our integration by parts formula will be built from the new pieces, the derivative we find from and the antiderivative we pick from . So when we differentiate , we get a constant, compared to antidifferentiating and getting another power function, but with a larger exponent. We know this will be combined with a function no matter what (since the derivative and antiderivatives of will only differ in their sign). So picking the version that gets that second integral to be built from a trig function and a constant is going to be much nicer than a trig function and a power function. It was nice to pick to be the piece that we found the derivative of!   "
 },
@@ -464,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#act-PickingParts-2",
   "type": "Activity",
-  "number": "6.3.3",
+  "number": "6.4.3",
   "title": "Picking the Parts for Integration by Parts.",
   "body": " Picking the Parts for Integration by Parts   This time we'll look at a very similar integral: . Again, we'll set this up two different ways and compsare them.    We'll start with selecting and . Fill in the following with the rest of the pieces:    You're not forgetting how to antidifferentiate . This is just something we don't know yet!    Ok, so here we have to swap the pieces and try the setup with and , since we only know how to differentiate . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Why was it fine for us to antidifferentiate in this example, but not in ?    Finish this work to find .   Notice that .    So here, we didn't actually get much choice. We couldn't pick in order to differentiate it (and get a constant to multiply into our second integral) since we don't know how to antidifferentiate (yet: once we know how, it might be fun to come back to this problem and try it again with the parts flipped). But we can also notice that it ended up being fine to antidifferentiate : the increased power from our power rule didn't really matter much when we combined it with the derivative of the logarithm, since the derivative of the log is also a power function ! So we were able to combine those easily and actually integrate that second integral.   "
 },
@@ -473,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#subsec-PickingParts-6",
   "type": "Example",
-  "number": "6.3.1",
+  "number": "6.4.1",
   "title": "",
   "body": "  Integrate the following:        It doesn't matter whether we differentiate or antidifferentiate , since we'll get the same thing. Let's pick so that we can differentiate it.     We need to do more integration by parts!          We don't know how to antidifferentiate , but we do know how to differentiate it!        "
 },
@@ -482,7 +491,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#subsec-FlexibleChoices-5",
   "type": "Example",
-  "number": "6.3.2",
+  "number": "6.4.2",
   "title": "",
   "body": "  Integrate , this time making a more intentional choice for .    Note that if we pick , then the second integral will be just delightful.         "
 },
@@ -491,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#subsec-FlexibleChoices-9",
   "type": "Example",
-  "number": "6.3.3",
+  "number": "6.4.3",
   "title": "Antidifferentiating the Log Function.",
   "body": " Antidifferentiating the Log Function   Integrate .    Pick , since we can differentiate it. What does that leave for ?         "
 },
@@ -500,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#subsec-FlexibleChoices-13",
   "type": "Example",
-  "number": "6.3.4",
+  "number": "6.4.4",
   "title": "",
   "body": "  Integrate .      Note that this last integral is really recognizable: it's the one we started with! Let's \"solve\" this equation for that integral by adding it to both sides of our equation.    "
 },
@@ -509,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#subsec-SolvingForIntegral-3",
   "type": "Example",
-  "number": "6.3.5",
+  "number": "6.4.5",
   "title": "",
   "body": "  For each of the following integrals, use integration by parts to solve.        This one is pretty straight forward, since it doesn't really matter what we select as our parts. Notice, though, that this isn't the only way we can approach this! We can use -substitution, or even re-write this using a trigonometric identity.                    "
 },
@@ -518,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-PowersOfTrig.html",
   "type": "Section",
-  "number": "6.4",
+  "number": "6.5",
   "title": "Integrating Powers of Trigonometric Functions",
   "body": " Integrating Powers of Trigonometric Functions   Let's remind ourselves of two example problems that we've done in the past.  In , we performed a -substitution, but needed to work to re-write our whole integrand in terms of . Specifically, we found that in the numerator, there was an , but . We were substituting out a linear function of in the numerator, but the actual function was cubic. This wasn't a problem: we re-wrote , and noticed that the extra was able to be substituted, since we could re-write out subsitution rule: we noted that is equivalent to . This meant that even though we had an extra factor of \"in\" the part that we were using for substituting in the differential , we were still able to translate the whole function to be written in terms of .  Then, more recently, in , we noted that we could use a mix of methods to integrate this:  One on hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that's what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a -substitution was also appropriate.  In this section, we'll explore more combinations of trigonometric functions and build a strategy for antidifferentiating them that includes some ideas from both of these previous examples.    Building a Strategy for Powers of Sines and Cosines   Compare and Contrast   Let's do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:     Consider the first integral, . Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.   It might be helpful to notice that can be re-written as . Does this help reveal something important about the structure of this integrand?    Now consider the second integral, . Does the same integration strategy work here? What happens when you apply the same thing?   Let again, and . What happens with the cosine functions? How many are \"left\" after applying our substitution?    We know that and are related to each other through derivatives (each is the derivative of the other, up to a negative). Is there some other connection that we have between these functions? We might especially notice that we have a left over in our integral. Can we write this in terms of , so that we can write it in terms of ?   We have a trigonometric identity (the Pythagorean Identity): .    Why would this strategy not have worked if we were looking at the integrals or ? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?     Integrating Powers of Sine and Cosine  For integrals in the form where and are real number exponents:   If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If both and are even, we can either use or use the following power-reducing trigonometric identities:       A strange note, here, is that we typically pick our -substitution based on looking to see a suitable candidate for : we look for functions that are composed \"inside\" of other functions or we look for a function whose derivative is in the integral (the \"function-derivative pair\" that we talk about in ). Here, though, we're selecting our substitution based on : we're looking to see which function we can set aside one copy of for the differential, and then have an even power left over so that we can apply the Pythagorean Identity to translate the rest.    Building a Strategy for Powers of Secants and Tangents   Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .    Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which is also written as , with , or , let's divide everything in the Pythagorean Identity by :         Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.   Here, . We'll also use .        Now try the integral again, this time using as your substitution.   Now , and we'll use the same Pythagorean identity, just re-written as .        For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?   Notice we had an even exponent on the function, but an odd exponent on the function.    Which substitution would be best for the integral . Why?    Which substitution would be best for the integral . Why?     Integrating Powers of Secant and Tangent  For integrals in the form where and are real number exponents:   If , the exponent on , is odd, we can use and . Then we can apply the Pythagorean Identity .    If , the exponent on , is even, we can use and . Then we can apply the Pythagorean Identity .    If is odd and is even, we can use .       "
 },
@@ -527,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowersOfTrig.html#act-CompareContrast",
   "type": "Activity",
-  "number": "6.4.1",
+  "number": "6.5.1",
   "title": "Compare and Contrast.",
   "body": " Compare and Contrast   Let's do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:     Consider the first integral, . Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.   It might be helpful to notice that can be re-written as . Does this help reveal something important about the structure of this integrand?    Now consider the second integral, . Does the same integration strategy work here? What happens when you apply the same thing?   Let again, and . What happens with the cosine functions? How many are \"left\" after applying our substitution?    We know that and are related to each other through derivatives (each is the derivative of the other, up to a negative). Is there some other connection that we have between these functions? We might especially notice that we have a left over in our integral. Can we write this in terms of , so that we can write it in terms of ?   We have a trigonometric identity (the Pythagorean Identity): .    Why would this strategy not have worked if we were looking at the integrals or ? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?   "
 },
@@ -536,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowersOfTrig.html#act-SecTan",
   "type": "Activity",
-  "number": "6.4.2",
+  "number": "6.5.2",
   "title": "Compare and Contrast (Again).",
   "body": " Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .    Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which is also written as , with , or , let's divide everything in the Pythagorean Identity by :         Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.   Here, . We'll also use .        Now try the integral again, this time using as your substitution.   Now , and we'll use the same Pythagorean identity, just re-written as .        For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?   Notice we had an even exponent on the function, but an odd exponent on the function.    Which substitution would be best for the integral . Why?    Which substitution would be best for the integral . Why?   "
 },
@@ -545,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-TrigSub.html",
   "type": "Section",
-  "number": "6.5",
+  "number": "6.6",
   "title": "Trigonometric Substitution",
   "body": " Trigonometric Substitution  Text of section.  "
 },
@@ -554,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-PartialFractions.html",
   "type": "Section",
-  "number": "6.6",
+  "number": "6.7",
   "title": "Partial Fractions",
   "body": " Partial Fractions   Comparing Rational Integrands   Try to integrate the following: . Explain what about this integral makes things very difficult.   Annoyingly, you can write this as: . Now explain why the second integral is difficult.    Confirm that .    Try to integrate the following: .    Which integral of the two would you rather integrate? Why?    "
 },
@@ -563,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PartialFractions.html#act-PartialFractionCompare",
   "type": "Activity",
-  "number": "6.6.1",
+  "number": "6.7.1",
   "title": "Comparing Rational Integrands.",
   "body": " Comparing Rational Integrands   Try to integrate the following: . Explain what about this integral makes things very difficult.   Annoyingly, you can write this as: . Now explain why the second integral is difficult.    Confirm that .    Try to integrate the following: .    Which integral of the two would you rather integrate? Why?   "
 },
@@ -818,15 +827,6 @@ var ptx_lunr_docs = [
   "number": "7.7",
   "title": "Other Applications of Integrals",
   "body": " Other Applications of Integrals  Text of section.  "
-},
-{
-  "id": "sec-ImproperIntegrals",
-  "level": "1",
-  "url": "sec-ImproperIntegrals.html",
-  "type": "Section",
-  "number": "7.8",
-  "title": "Improper Integrals",
-  "body": " Improper Integrals   Evaluating Improper Integrals (Infinite Width)  For a function that is continuous on , we can evaluate the improper integral : .   "
 },
 {
   "id": "sec-IntroSequences",
