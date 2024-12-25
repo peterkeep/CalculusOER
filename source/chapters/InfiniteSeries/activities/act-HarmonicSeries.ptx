@@ -1,0 +1,132 @@
+<activity xml:id="act-HarmonicSeries">
+    <title>Investigating the Harmonic Series</title>
+    <task>
+        <statement>
+            <p>
+                Write out the first several terms of the harmonic series, terms from <m>\left\{\frac{1}{k}\right\}_{k=1}^\infty</m>. Write however many you need to get a feel for how the terms work.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you find out how many terms you would have to go "into" the series before the term was less than 0.00000001?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                When is <m>\frac{1}{k}\lt \frac{1}{10^8}</m>?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+               Can you do this same kind of thing, no matter how small? For instance, how many terms would you have to go into the series before the term was less than some real number <m>\varepsilon</m> where <m>\varepsilon\gt 0</m>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                When is <m>\frac{1}{k}\lt \varepsilon</m>?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Remind/explain/convince yourself that what we've really done is show that <m>\lim_{k\to\infty}\frac{1}{k} =0</m>. This isn't a new or terribly interesting fact, but make sure that you understand why the argument above shows this.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's do something very similar, but with <m>\left\{\sum_{k=1}^n \frac{1}{k}\right\}_{n=1}^\infty</m>, the sequence of partial sums, instead. Write out the first few partial sums. There's no specific number that you <em>need</em> to write, but make sure to write enough partial sums to get a feel for how the partial sums work.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you find out how many terms you need to add up until the partial sum is larger than 1?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Find a value for <m>n</m> to give
+                <me>
+                    \sum_{k=1}^n \frac{1}{k} \gt 1
+                </me>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you find out how many terms you need to add up until the partial sum is larger than 5?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Find a value for <m>n</m> to give
+                <me>
+                    \sum_{k=1}^n \frac{1}{k} \gt 5
+                </me>.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                  <me>
+                    \sum_{k=1}^{83} \frac{1}{k} \approx 5.00207...
+                </me>
+                This is the first partial sum greater than 5.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you find out how many terms you need to add up until the partial sum is larger than 10?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Find a value for <m>n</m> to give
+                <me>
+                    \sum_{k=1}^n \frac{1}{k} \gt 10
+                </me>.
+                This will be absolutely awful to try calculating by hand! Use some piece of technology!
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <me>
+                    \sum_{k=1}^{12367} \frac{1}{k} \approx 10.000043...
+                </me>
+                This is the first partial sum greater than 10.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+               Do you think that for any positive number <m>S</m>, we can always find some partial sum <m>\sum_{k=1}^n \frac{1}{k} \gt S</m>? What do you think this would mean about 
+               <me>\lim_{n\to\infty}S_n = \lim_{n\to\infty} \sum_{k=1}^n \frac{1}{k}</me>?
+            </p>
+        </statement>
+    </task>
+    <conclusion>
+        <p>
+            To actually show that for any <m>S \gt 0</m> we could always find an <m>n\gt 1</m> where 
+            <me>
+                \sum_{k=1}^n \frac{1}{k} \gt S
+            </me>
+            is an extremely difficult task! We will show that the Harmonic Series diverges in a different way, but for now I want us to notice these contradictory results: we have a series whose terms get small, but whose partial sums do not seem to converge.
+        </p>
+        <p>
+            We have <m>\frac{1}{k}\to 0</m> but it seems like <m>\lim_{n\to\infty} S_n</m> does not exist. Is this behavior special to the Harmonic Series? Is this something we should make note of? Is there some other connection between the terms of a series and the behavior of the partial sums of the series that we need to note?
+        </p>
+    </conclusion>
+
+    
+</activity>

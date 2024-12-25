@@ -2,23 +2,43 @@
 
 <section xml:id="sec-DivergenceTest" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Divergence Test and the Harmonic Series</title>
-  <subsection xml:id="subsec-RelationsihpSeqSeries">
+  <subsection xml:id="subsec-RelationshipSeqSeries">
     <title>The Relationship Between a Sequence and Series</title>
     <p>
-      <theorem xml:id="thm-HarmonicSeriesDiverges">
-        <title>The Harmonic Series Diverges</title>
-        <statement>
-          <p>
-            The <term>Harmonic Series</term>, <m>\sum_{k=1}^\infty \frac{1}{k}</m>, diverges.
-          </p>
-        </statement>
-        <proof>
-          <p>
-            Let's assume, for the sake of eventual contradiction, that the harmonic series converges.
-          </p>
-        </proof>
-      </theorem>
+      We have looked at both infinite sequences and infinite series so far, and, to make things complicated, we're really thinking about an infinite series (of terms from an infinite sequence) as an infinite sequence (of partial sums of the series). We've looked at how to visualize these (in both <xref ref="subsec-GraphingSequences"/> and <xref ref="subsec-VisualizingPartialSums"/>).
     </p>
+    <p>
+        Let's first start with defining a new series. This is a relatively important one by itself (it <em>does</em> have its own name), but it's mostly an important series because it leads us into some new and interesting ways of thinking about series in general.
+    </p>
+    <definition xml:id="def-HarmonicSeries">
+        <title>Harmonic Series</title>
+        <statement>
+            <p>
+                We call the series 
+                <me>
+                    \sum_{k=1}^\infty \frac{1}{k}
+                </me>
+                the <term>Harmonic Series</term>.
+            </p>
+        </statement>
+    </definition>
+    <xi:include href="./activities/act-HarmonicSeries.ptx" />
+    <p>
+      Let's continue to think about this strange series, but actually prove that the series itself diverges.
+    </p>
+    <theorem xml:id="thm-HarmonicSeriesDiverges">
+      <title>The Harmonic Series Diverges</title>
+      <statement>
+        <p>
+          The <term>Harmonic Series</term>, <m>\sum_{k=1}^\infty \frac{1}{k}</m>, diverges.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          Let's assume, for the sake of eventual contradiction, that the harmonic series converges.
+        </p>
+      </proof>
+    </theorem>
   </subsection>
   <subsection xml:id="subsec-DivergenceTest">
     <title>The Divergence Test</title>
@@ -37,8 +57,26 @@
           then the infinite series <m>\sum_{k=0}^\infty a_k</m> diverges.
         </p>
       </statement>
+      <proof>
+        <p>
+          
+        </p>
+      </proof>
     </theorem>
-    
+    <example>
+    <introduction>
+      <p>
+        Apply the Divergence Test to the following series and interpret the results.
+      </p>
+    </introduction>
+      <task>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </task>
+    </example>
   </subsection>
 
 </section>
