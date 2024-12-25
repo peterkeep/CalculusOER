@@ -95,12 +95,29 @@
         <ul>
             <li>
                 <p>
-                    
+                    Notes about recursion and explicit formulas
                 </p>
             </li>
         </ul>
     </p>
-
+    </subsection>
+    <subsection xml:id="subsec-GraphingSequences">
+        <title>Graphing Sequences</title>
+        <p>
+            We have tried introducing and talking about sequences as special types of functions, mapping natural number inputs to real number outputs. If we are committed to thinking about sequences as functions, with maybe some special context, then we should really investigate how one of our primary representations of functions (graphs) manifests itself in this new context.
+        </p>
+        <p>
+            There really is not too much to think about here! We can focus on the domain of these functions. If we define a sequence <m>\{a_n\}</m> explicitly, then we have some function <m>a_n = f(n)</m>, and we can plot this sequence function in the same way that we normally would any other function <m>g(x)</m>. We will use the horizontal axis for the inputs and the vertical axis to represent the outputs, and try to visualize the graph as the set of all of the pairs of inputs with their (single) corresponding output.
+        </p>
+        <p>
+            The only new feature, then, is that these functions have only non-negative integer inputs. So when we plot the points, we do not get some nice curve acting as a visual representation of the function: we get discrete points floating on the 2-dimensional plane, each with some consistent horizontal spacing between them.
+        </p>
+        <p>
+            Graph comparison.
+        </p>
+        <p>
+            Let's continue to think about these sequences as just functions in a special kind of context. How does this discrete context change how we talk about functions and what kinds of terminology we use?
+        </p>
     </subsection>
     <subsection xml:id="subsec-SequenceTerminology">
         <title>Sequence Terminology</title>
