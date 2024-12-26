@@ -72,9 +72,14 @@
       <task>
         <statement>
           <p>
-            
+            <m>\displaystyle \left\{\frac{k^15 - 4k^10 + 10k^4}{e^{2k}}\right\}_{k=0}^\infty</m>
           </p>
         </statement>
+        <hint>
+          <p>
+            We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator (<xref ref="thm-PolynomialEndBehavior" text="title"/>). We could also get this same result using some other techniques, like what we use to prove that theorem. Then we can use <xref ref="thm-LHopitalsRule" text="title"/> to evaluate the limit, since we have a <m>\frac{\infty}{\infty}</m> indeterminate form.
+          </p>
+        </hint>
       </task>
     </example>
   </subsection>

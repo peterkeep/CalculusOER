@@ -5,4 +5,40 @@
 
   <p> Text of section. </p>
 
+  <theorem xml:id="thm-LHopitalsRule">
+    <title>L'Hopital's Rule</title>
+    <statement>
+      <p>
+        If <m>f(x)</m> and <m>g(x)</m> are functions and <m>a</m> is some real number with <m>f</m> and <m>g</m> both being differentiable at <m>a</m> and <m>\lim_{x\to a} f(x) = 0</m> and <m>\lim_{x\to a}g(x) = 0</m>, then
+        <me>
+          \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}
+        </me>.
+        Similarly, this holds if <m>\lim_{x\to a} f(x) = \pm\infty</m> and <m>\lim_{x\to a} g(x) = \pm \infty</m>.
+      </p>
+      <p>
+        If <m>f</m> and <m>g</m> are both differentiable as <m>x\to \infty</m> and either:
+        <ul>
+          <li>
+            <p>
+              <m>\lim_{x\to\infty} f(x) = 0</m> and <m>\lim_{x\to\infty} g(x) = 0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\lim_{x\to\infty}f(x) = \pm\infty</m> and <m>\lim_{x\to\infty} g(x) = \pm\infty</m>
+            </p>
+          </li>
+        </ul>
+        then
+         <me>
+          \lim_{x\to \infty} \frac{f(x)}{g(x)} = \lim_{x\to \infty} \frac{f'(x)}{g'(x)}
+        </me>.
+      </p>
+      <p>
+        This is also true as <m>x\to-\infty</m>.
+      </p>
+    </statement>
+  </theorem>
+  
+
 </section>
