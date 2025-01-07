@@ -1,0 +1,151 @@
+<activity xml:id="act-ImpossibleCombinations">
+    <title>(Im)Possible Combinations</title>
+    <introduction>
+        <p>
+            When we have thought about infinite series, we have thought about three different mathematical objects: the sequence of terms of the series, the sequence of partial sums of the series, and the infinite series itself. As a reminder, if we had an infinite series 
+            <me>
+                \sum_{k=1}^\infty a_k
+            </me>
+            we can say that:
+            <ul>
+                <li>
+                    <p>
+                        <m>\left\{a_k\right\}_{k=1}^\infty</m> is the sequence of terms of the series
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>S_n = \sum_{k=1}^n a_k</m> is a partial sum and <m>\left\{S_n\right\}_{n=1}^\infty</m> is the sequence of partial sums of the series
+                    </p>
+                </li>
+            </ul>
+            For each of these three objects -- the terms, the partial sums, and the series -- we have some notion of what it means for that object to converge or diverge.
+        </p>
+        <p>
+            Consider the following table of all of the different combinations of convergence and divergence of the three objects. For each combination, decide whether this combination is possible or impossible. If it is possible, give an example of an infinite series whose terms, partial sums, and the series itself converge/diverge appropriately. If it is impossible, give an explanation of why.
+        </p>
+        <table>
+            <title>(Im)Possible Combinations</title>
+            <tabular>
+            <row header="yes" bottom="minor">
+                <cell><m>\displaystyle \left\{a_k\right\}_{k=1}^\infty</m></cell>
+                <cell><m>\displaystyle \{S_n\}_{n=1}^\infty</m></cell>
+                <cell><m>\displaystyle \sum_{k=1}^\infty a_k</m></cell>
+                <cell>(Im)Possible?</cell>
+                <cell>Example or Explanation</cell>
+            </row>
+            <row>
+                <cell>Converges</cell>
+                <cell>Converges</cell>
+                <cell>Converges</cell>
+                <cell></cell>
+                <cell></cell>
+            </row>
+            <row>
+                <cell>Converges</cell>
+                <cell>Converges</cell>
+                <cell>Diverges</cell>
+                <cell></cell>
+                <cell></cell>
+            </row>
+            <row>
+                <cell>Converges</cell>
+                <cell>Diverges</cell>
+                <cell>Converges</cell>
+                <cell></cell>
+                <cell></cell>
+            </row>
+            <row>
+                <cell>Converges</cell>
+                <cell>Diverges</cell>
+                <cell>Diverges</cell>
+                <cell></cell>
+                <cell></cell>
+            </row>
+            <row>
+                <cell>Diverges</cell>
+                <cell>Converges</cell>
+                <cell>Converges</cell>
+                <cell></cell>
+                <cell></cell>
+            </row>
+            <row>
+                <cell>Diverges</cell>
+                <cell>Converges</cell>
+                <cell>Diverges</cell>
+                <cell></cell>
+                <cell></cell>
+            </row>
+            <row>
+                <cell>Diverges</cell>
+                <cell>Diverges</cell>
+                <cell>Converges</cell>
+                <cell></cell>
+                <cell></cell>
+            </row>
+            <row>
+                <cell>Diverges</cell>
+                <cell>Diverges</cell>
+                <cell>Diverges</cell>
+                <cell></cell>
+                <cell></cell>
+            </row>
+        </tabular>
+        </table>
+        
+    </introduction>
+    <hint>
+        <p>
+            We can think back to some results or definitions that connect pairs of these objects. Can you think of any result or definition that connects an infinite series and a sequence of partial sums? What about a result or definition that connects the sequence of terms with the infinite series?
+        </p>
+    </hint>
+    <hint>
+        <p>
+            Look back at <xref ref="def-SeriesConvergence"/> and <xref ref="thm-DivergenceTest"/>.
+        </p>
+    </hint>
+    <solution>
+        <table>
+            <title>(Im)Possible Combinations</title>
+            <tabular>
+            <row header="yes" bottom="minor">
+        
+                <cell>(Im)Possible?</cell>
+                <cell>Example or Explanation</cell>
+            </row>
+            <row>
+                <cell>Possible</cell>
+                <cell>Any converging series serves as an example.</cell>
+            </row>
+            <row>
+                <cell>Impossible</cell>
+                <cell>The sequence of partial sums and the infinite series are the same object, and so must behave in the same way. <xref ref="def-SeriesConvergence"/></cell>
+            </row>
+            <row>
+                <cell>Impossible</cell>
+                <cell>The sequence of partial sums and the infinite series are the same object, and so must behave in the same way. <xref ref="def-SeriesConvergence"/></cell>
+            </row>
+            <row>
+                <cell>Possible</cell>
+                <cell></cell>
+            </row>
+            <row>
+                <cell>Impossible</cell>
+                <cell>If the infinite series converges, then the sequence of terms must converge to 0. <xref ref="thm-DivergenceTest"/></cell>
+            </row>
+            <row>
+                <cell>Impossible</cell>
+                <cell>The sequence of partial sums and the infinite series are the same object, and so must behave in the same way. <xref ref="def-SeriesConvergence"/></cell>
+            </row>
+            <row>
+                <cell>Impossible</cell>
+                <cell>Both of the reasons, <xref ref="def-SeriesConvergence"/> and <xref ref="thm-DivergenceTest"/> apply here!</cell>
+            </row>
+            <row>
+                <cell>Possible</cell>
+                <cell></cell>
+            </row>
+        </tabular>
+        </table>
+    </solution>
+</activity>

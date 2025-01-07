@@ -3,6 +3,123 @@
 <section xml:id="sec-CommonSeries" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Common Series Types</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      In this section, we'll stop and recap some of the common series types that we should recognize moving forward. We'll look at the structure of these series (mainly the functions defining the <em>terms</em> of the series) as well as the convergence criteria for them.
+    </p>
+    <p>
+      Look back to <xref ref="act-IntroSeries"/>. We noticed that we were able to find an explicit formula for the <m>n</m>th partial sum, which allowed us to evaluate <m>\lim_{n\to\infty}S_n</m>. We noticed this again in <xref ref="ex-geometric"/>. 
+    </p>
+    <p>
+      But there are some differences between <em>why</em> we were able to find formulas for the <m>n</m>th partial sum in each of these examples. Let's first focus on the infinite series with terms defined by exponential functions.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-GeometricSeries">
+    <title>Geometric Series</title>
+    <definition xml:id="def-GeometricSeries">
+    <title>Geometric Series</title>
+    <statement>
+      <p>
+        For real numbers <m>a</m> and <m>r</m> with <m>a, r \neq 0</m>, we say that the series
+        <me>\sum_{k=0}^\infty ar^k = a + ar + ar^2 + ar^3 + ...</me>
+        is a <term>geometric series</term>. We call <m>r</m> the <term>constant ratio</term> and <m>a</m> the <term>initial term</term>.
+      </p>
+    </statement>
+    </definition>
+    <theorem xml:id="thm-GeometricSeries">
+      <title>Geometric Series Convergence Criteria</title>
+      <statement>
+        <p>
+          A geometric series <m>\sum_{k=0}^\infty ar^k</m> converges to <m>\frac{a}{1-r}</m> when <m>|r|\lt 1</m> and diverges if <m>|r|\geq 1</m>.
+        </p>
+      </statement>
+    </theorem>
+    
+  </subsection>
+  <subsection xml:id="subsec-pSeries">
+    <title><m>p</m>-Series</title>
+    <definition xml:id="def-pSeries">
+    <title><m>p</m>-Series</title>
+      <statement>
+        <p>
+          For a real number <m>p</m>, we say that the series
+          <me>\sum_{k=1}^\infty \frac{1}{k^p}</me>
+          is a <term><m>p</m>-series</term>. We mostly will be concerned about the case where <m>p\gt 0</m>, making the terms of the series be reciprocal power functions.
+        </p>
+      </statement>
+    </definition>
+    <theorem xml:id="thm-pSeries">
+      <title><m>p</m>-Series Convergence Criteria</title>
+      <statement>
+        <p>
+          A <m>p</m>-series <m>\sum_{k=1}^\infty \frac{1}{k^p}</m> converges when <m>p\gt 1</m> and diverges when <m>p\leq 1</m>.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          Let's divide this into four cases: when <m>p\leq 0</m>, when <m>0\lt p \lt 1</m>, when <m>p=1</m>, and when <m>p\gt 1</m>.
+        </p>
+        <p><em>Case 1: <m>p\leq 0</m></em></p>
+        <p>
+          Note that for <m>\frac{1}{k^p}</m> with <m>p\lt 0</m>, we can write this as <m>k^{|p|}</m>. Now we can consider the limit of the terms, in order to use the <xref ref="thm-DivergenceTest" text="title"/>.
+          <me>\lim_{k\to\infty} \frac{1}{k^p} = \lim_{k\to \infty} k^{|p|}</me>
+          Since this limit is non-zero (since it is either <m>\infty</m> or 1, depending on whether <m>p=0</m> or not), the series diverges by the Divergence Test.
+        </p>
+        <p>
+          <em>Case 2: <m>0\lt p\lt 1</m></em>
+        </p>
+        <p>
+          When <m>0 \lt p \lt 1</m>, we can apply the <xref ref="thm-IntegralTest" text="title"/> to the series. It is worth showing that the conditions of the test are met, but this is left up to the reader.
+        </p>
+        <p>
+          So now we will consider the integral <m>\int_{x=1}^\infty \frac{1}{x^p}\;dx</m> as a way of seeing whether the series <m>\sum_{k=1}^\infty \frac{1}{k^p}</m> converges or diverges.
+        
+          <md>
+            <mrow> \int_{x=0}^\infty \frac{1}{x^p}\;dx\amp = \lim_{t\to\infty}\int_{x=1}^{x=t} \frac{1}{x^p}\;dx</mrow>
+            <mrow> \amp = \lim_{t\to\infty} \left(\frac{x^{1-p}}{(1-p)}\right)\bigg|_{x=1}^{x=t}</mrow>
+            <mrow> \amp = \lim_{t\to\infty} \frac{t^{1-p}}{1-p} - \frac{1}{1-p}</mrow>
+          </md>
+          We can note that since <m>0\lt p \lt 1</m>, that <m>1-p\gt 0</m>. This means that when <m>t\to\infty</m>, <m>t^{1-p}\to\infty</m> as well.
+          <me>
+            \int_{x=0}^\infty \frac{1}{x^p}\;dx\ = \lim_{t\to\infty} \frac{t^{1-p}}{1-p} - \frac{1}{1-p} = \infty
+          </me>
+          This integral diverges, and so then does the series.
+        </p>
+        <p>
+          <em>Case 3: <m>p=1 </m></em>
+        </p>
+        <p>
+          This is the <xref ref="def-HarmonicSeries" text="title"/>! This series diverges (<xref ref="thm-HarmonicSeriesDiverges"/>).
+        </p>
+        <p>
+          <em>Case 4: <m>p\gt 1</m></em>
+        </p>
+        <p>
+          We can repeat the proof from <em>Case 2</em>, but we will end with a different conclusion based on the sign of the exponent! Let us, again, apply the Integral Test.
+        </p>
+        <p>
+          Consider the integral <m>\int_{x=1}^\infty \frac{1}{x^p}\;dx</m> as a way of seeing whether the series <m>\sum_{k=1}^\infty \frac{1}{k^p}</m> converges or diverges.
+        
+          <md>
+            <mrow> \int_{x=0}^\infty \frac{1}{x^p}\;dx\amp = \lim_{t\to\infty}\int_{x=1}^{x=t} \frac{1}{x^p}\;dx</mrow>
+            <mrow> \amp = \lim_{t\to\infty} \left(\frac{x^{1-p}}{(1-p)}\right)\bigg|_{x=1}^{x=t}</mrow>
+            <mrow> \amp = \lim_{t\to\infty} \frac{t^{1-p}}{1-p} - \frac{1}{1-p}</mrow>
+          </md>
+
+          Now, though, we have <m>p\gt 1</m> which means that <m>1-p \lt 0</m>. This means that <m>t^{1-p} = \frac{1}{t^{|p-1|}}</m>. So now we will consider the limit, and note that as <m>t\to\infty</m>, we get <m>\frac{1}{t^{|p-1|}}\to 0</m>.
+          <me>
+            \int_{x=0}^\infty \frac{1}{x^p}\;dx\ = \lim_{t\to\infty} \frac{1}{(1-p)t^{|p-1|}} - \frac{1}{1-p} = -\frac{1}{1-p}
+          </me>
+          This integral converges, and so then does the series. We remember, though, that the series converges to something different than the integral, and so we do not know what the series converges to.
+        </p>
+      </proof>
+    </theorem>
+    
+  </subsection>
+<subsection xml:id="subsec-RecappingObjects">
+  <title>Recapping Our Mathematical Objects</title>
+  <xi:include href="./activities/act-ImpossibleCombinations.ptx" />
+</subsection>
+
 
 </section>
