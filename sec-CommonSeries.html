@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US" dir="ltr" data-legacy-colorscheme="blue_red">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Common Series Types</title>
@@ -73,43 +73,21 @@ window.MathJax = {
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
-<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX_Course_Title_Here';
-eBookConfig.basecourse = 'PTX_Base_Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.0';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.917314eae5e3ab90.bundle.js"></script><script src="_static/prefix-347.8328b60515045466.bundle.js"></script><script src="_static/prefix-runestone.b5027876c2f06108.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <style>
 #subsec-EstimatingMovement-4-1 { counter-set: subsec-EstimatingMovement-4-1 0; }
 #subsec-EstimatingMovement-4-1 > li::marker { content: ""counter(subsec-EstimatingMovement-4-1,decimal)"."; }
@@ -125,8 +103,7 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="CalculusOER.html"><span class="title">Calculus OER:</span> <span class="subtitle">With Activities and Python Examples/Labs</span></a></h1>
 <p class="byline">Peter Keep</p>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
 <div class="search-results-controls">
@@ -137,8 +114,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-AlternatingSeries.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-InfiniteSeries.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-ComparisonTests.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-AlternatingSeries.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-InfiniteSeries.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-ComparisonTests.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
 \newcommand{\ddx}[1]{\frac{d}{dx}\left(#1\right)}
 \newcommand{\dd}[2]{\frac{d#1}{d#2}}
 \newcommand{\dydx}{\frac{dy}{dx}}
@@ -150,7 +126,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Limits.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits</span></a></div>
@@ -336,11 +312,17 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-SeriesAsIntegrals" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Infinite Series As a Kind of Integral</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-IntegralTest" class="internal"><span class="codenumber">8.4.2</span> <span class="title">The Integral Test</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-WhyDecreasing" class="internal"><span class="codenumber">8.4.3</span> <span class="title">Why Do We Need These Conditions?</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-pSeries" class="internal"><span class="codenumber">8.4.4</span> <span class="title">A Family of Series Types: <span class="process-math">\(p\)</span>-Series</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-AlternatingSeries.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Alternating Series and Conditional Convergence</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-CommonSeries.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Common Series Types</span></a></div></li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-CommonSeries.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Common Series Types</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CommonSeries.html#subsec-GeometricSeries" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Geometric Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CommonSeries.html#subsec-pSeries" class="internal"><span class="codenumber">8.6.2</span> <span class="title"><span class="process-math">\(p\)</span>-Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CommonSeries.html#subsec-RecappingObjects" class="internal"><span class="codenumber">8.6.3</span> <span class="title">Recapping Our Mathematical Objects</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ComparisonTests.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Comparison Tests</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-RatioRootTests.html" class="internal"><span class="codenumber">8.8</span> <span class="title">The Ratio and Root Tests</span></a></div></li>
 </ul>
@@ -366,13 +348,216 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-CommonSeries"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">8.6</span><span class="space"> </span><span class="title">Common Series Types</span>
 </h2>
-<div class="para" id="sec-CommonSeries-2">Text of section.</div></section></div>
+<section class="introduction" id="sec-CommonSeries-2"><div class="para" id="sec-CommonSeries-2-1">In this section, we’ll stop and recap some of the common series types that we should recognize moving forward. We’ll look at the structure of these series (mainly the functions defining the <em class="emphasis">terms</em> of the series) as well as the convergence criteria for them.</div> <div class="para" id="sec-CommonSeries-2-2">Look back to <a href="sec-IntroSeries.html#act-IntroSeries" class="xref" data-knowl="./knowl/xref/act-IntroSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.2.1: How Do We Think About Infinite Series?">Activity 8.2.1</a>. We noticed that we were able to find an explicit formula for the <span class="process-math">\(n\)</span>th partial sum, which allowed us to evaluate <span class="process-math">\(\lim_{n\to\infty}S_n\text{.}\)</span> We noticed this again in <a href="sec-IntroSeries.html#ex-geometric" class="xref" data-knowl="./knowl/xref/ex-geometric.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 8.2.3">Example 8.2.3</a>.</div> <div class="para" id="sec-CommonSeries-2-3">But there are some differences between <em class="emphasis">why</em> we were able to find formulas for the <span class="process-math">\(n\)</span>th partial sum in each of these examples. Let’s first focus on the infinite series with terms defined by exponential functions.</div></section><section class="subsection" id="subsec-GeometricSeries"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.6.1</span><span class="space"> </span><span class="title">Geometric Series</span>
+</h3>
+<article class="definition definition-like" id="def-GeometricSeries"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.6.1</span><span class="period">.</span><span class="space"> </span><span class="title">Geometric Series.</span>
+</h4> <div class="para logical" id="def-GeometricSeries-2-1">
+<div class="para">For real numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(r\)</span> with <span class="process-math">\(a, r \neq 0\text{,}\)</span> we say that the series</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=0}^\infty ar^k = a + ar + ar^2 + ar^3 + ...
+\end{equation*}
+</div>
+<div class="para">is a <dfn class="terminology">geometric series</dfn>. We call <span class="process-math">\(r\)</span> the <dfn class="terminology">constant ratio</dfn> and <span class="process-math">\(a\)</span> the <dfn class="terminology">initial term</dfn>.</div>
+</div></article><article class="theorem theorem-like" id="thm-GeometricSeries"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.6.2</span><span class="period">.</span><span class="space"> </span><span class="title">Geometric Series Convergence Criteria.</span>
+</h4>
+<div class="para" id="thm-GeometricSeries-2-1">A geometric series <span class="process-math">\(\sum_{k=0}^\infty ar^k\)</span> converges to <span class="process-math">\(\frac{a}{1-r}\)</span> when <span class="process-math">\(|r|\lt 1\)</span> and diverges if <span class="process-math">\(|r|\geq 1\text{.}\)</span>
+</div></article></section><section class="subsection" id="subsec-pSeries"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.6.2</span><span class="space"> </span><span class="title"><span class="process-math">\(p\)</span>-Series</span>
+</h3>
+<article class="definition definition-like" id="def-pSeries"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.6.3</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(p\)</span>-Series.</span>
+</h4> <div class="para logical" id="def-pSeries-2-1">
+<div class="para">For a real number <span class="process-math">\(p\text{,}\)</span> we say that the series</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=1}^\infty \frac{1}{k^p}
+\end{equation*}
+</div>
+<div class="para">is a <dfn class="terminology"><span class="process-math">\(p\)</span>-series</dfn>. We mostly will be concerned about the case where <span class="process-math">\(p\gt 0\text{,}\)</span> making the terms of the series be reciprocal power functions.</div>
+</div></article><article class="theorem theorem-like" id="thm-pSeries"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.6.4</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(p\)</span>-Series Convergence Criteria.</span>
+</h4>
+<div class="para" id="thm-pSeries-2-1">A <span class="process-math">\(p\)</span>-series <span class="process-math">\(\sum_{k=1}^\infty \frac{1}{k^p}\)</span> converges when <span class="process-math">\(p\gt 1\)</span> and diverges when <span class="process-math">\(p\leq 1\text{.}\)</span>
+</div></article><details id="thm-pSeries-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-pSeries-3-1">Let’s divide this into four cases: when <span class="process-math">\(p\leq 0\text{,}\)</span> when <span class="process-math">\(0\lt p \lt 1\text{,}\)</span> when <span class="process-math">\(p=1\text{,}\)</span> and when <span class="process-math">\(p\gt 1\text{.}\)</span>
+</div> <div class="para" id="thm-pSeries-3-2"><em class="emphasis">Case 1: <span class="process-math">\(p\leq 0\)</span></em></div> <div class="para logical" id="thm-pSeries-3-3">
+<div class="para">Note that for <span class="process-math">\(\frac{1}{k^p}\)</span> with <span class="process-math">\(p\lt 0\text{,}\)</span> we can write this as <span class="process-math">\(k^{|p|}\text{.}\)</span> Now we can consider the limit of the terms, in order to use the <a href="sec-DivergenceTest.html#thm-DivergenceTest" class="xref" data-knowl="./knowl/xref/thm-DivergenceTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.3.3: Divergence Test">Divergence Test</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-DivergenceTest.html">
+\begin{equation*}
+\lim_{k\to\infty} \frac{1}{k^p} = \lim_{k\to \infty} k^{|p|}
+\end{equation*}
+</div>
+<div class="para">Since this limit is non-zero (since it is either <span class="process-math">\(\infty\)</span> or 1, depending on whether <span class="process-math">\(p=0\)</span> or not), the series diverges by the Divergence Test.</div>
+</div> <div class="para" id="thm-pSeries-3-4"><em class="emphasis">Case 2: <span class="process-math">\(0\lt p\lt 1\)</span></em></div> <div class="para" id="thm-pSeries-3-5">When <span class="process-math">\(0 \lt p \lt 1\text{,}\)</span> we can apply the <a href="sec-IntegralTest.html#thm-IntegralTest" class="xref" data-knowl="./knowl/xref/thm-IntegralTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.4.2: Integral Test">Integral Test</a> to the series. It is worth showing that the conditions of the test are met, but this is left up to the reader.</div> <div class="para logical" id="thm-pSeries-3-6">
+<div class="para">So now we will consider the integral <span class="process-math">\(\int_{x=1}^\infty \frac{1}{x^p}\;dx\)</span> as a way of seeing whether the series <span class="process-math">\(\sum_{k=1}^\infty \frac{1}{k^p}\)</span> converges or diverges.</div>
+<div class="displaymath process-math" id="thm-pSeries-3-6-3">
+\begin{align*}
+\int_{x=0}^\infty \frac{1}{x^p}\;dx\amp = \lim_{t\to\infty}\int_{x=1}^{x=t} \frac{1}{x^p}\;dx\\
+\amp = \lim_{t\to\infty} \left(\frac{x^{1-p}}{(1-p)}\right)\bigg|_{x=1}^{x=t}\\
+\amp = \lim_{t\to\infty} \frac{t^{1-p}}{1-p} - \frac{1}{1-p}
+\end{align*}
+</div>
+<div class="para">We can note that since <span class="process-math">\(0\lt p \lt 1\text{,}\)</span> that <span class="process-math">\(1-p\gt 0\text{.}\)</span> This means that when <span class="process-math">\(t\to\infty\text{,}\)</span> <span class="process-math">\(t^{1-p}\to\infty\)</span> as well.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^\infty \frac{1}{x^p}\;dx\ = \lim_{t\to\infty} \frac{t^{1-p}}{1-p} - \frac{1}{1-p} = \infty
+\end{equation*}
+</div>
+<div class="para">This integral diverges, and so then does the series.</div>
+</div> <div class="para" id="thm-pSeries-3-7"><em class="emphasis">Case 3: <span class="process-math">\(p=1 \)</span></em></div> <div class="para" id="thm-pSeries-3-8">This is the <a href="sec-DivergenceTest.html#def-HarmonicSeries" class="xref" data-knowl="./knowl/xref/def-HarmonicSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.3.1: Harmonic Series">Harmonic Series</a>! This series diverges (<a href="sec-DivergenceTest.html#thm-HarmonicSeriesDiverges" class="xref" data-knowl="./knowl/xref/thm-HarmonicSeriesDiverges.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.3.2: The Harmonic Series Diverges">Theorem 8.3.2</a>).</div> <div class="para" id="thm-pSeries-3-9"><em class="emphasis">Case 4: <span class="process-math">\(p\gt 1\)</span></em></div> <div class="para" id="thm-pSeries-3-10">We can repeat the proof from <em class="emphasis">Case 2</em>, but we will end with a different conclusion based on the sign of the exponent! Let us, again, apply the Integral Test.</div> <div class="para logical" id="thm-pSeries-3-11">
+<div class="para">Consider the integral <span class="process-math">\(\int_{x=1}^\infty \frac{1}{x^p}\;dx\)</span> as a way of seeing whether the series <span class="process-math">\(\sum_{k=1}^\infty \frac{1}{k^p}\)</span> converges or diverges.</div>
+<div class="displaymath process-math" id="thm-pSeries-3-11-3">
+\begin{align*}
+\int_{x=0}^\infty \frac{1}{x^p}\;dx\amp = \lim_{t\to\infty}\int_{x=1}^{x=t} \frac{1}{x^p}\;dx\\
+\amp = \lim_{t\to\infty} \left(\frac{x^{1-p}}{(1-p)}\right)\bigg|_{x=1}^{x=t}\\
+\amp = \lim_{t\to\infty} \frac{t^{1-p}}{1-p} - \frac{1}{1-p}
+\end{align*}
+</div>
+<div class="para">Now, though, we have <span class="process-math">\(p\gt 1\)</span> which means that <span class="process-math">\(1-p \lt 0\text{.}\)</span> This means that <span class="process-math">\(t^{1-p} = \frac{1}{t^{|p-1|}}\text{.}\)</span> So now we will consider the limit, and note that as <span class="process-math">\(t\to\infty\text{,}\)</span> we get <span class="process-math">\(\frac{1}{t^{|p-1|}}\to 0\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^\infty \frac{1}{x^p}\;dx\ = \lim_{t\to\infty} \frac{1}{(1-p)t^{|p-1|}} - \frac{1}{1-p} = -\frac{1}{1-p}
+\end{equation*}
+</div>
+<div class="para">This integral converges, and so then does the series. We remember, though, that the series converges to something different than the integral, and so we do not know what the series converges to.</div>
+</div></article></details></section><section class="subsection" id="subsec-RecappingObjects"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.6.3</span><span class="space"> </span><span class="title">Recapping Our Mathematical Objects</span>
+</h3>
+<article class="activity project-like" id="act-ImpossibleCombinations"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.6.1</span><span class="period">.</span><span class="space"> </span><span class="title">(Im)Possible Combinations.</span>
+</h4> <div class="introduction" id="act-ImpossibleCombinations-2">
+<div class="para logical" id="act-ImpossibleCombinations-2-1">
+<div class="para">When we have thought about infinite series, we have thought about three different mathematical objects: the sequence of terms of the series, the sequence of partial sums of the series, and the infinite series itself. As a reminder, if we had an infinite series</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=1}^\infty a_k
+\end{equation*}
+</div>
+<div class="para">we can say that:</div>
+<ul class="disc" id="act-ImpossibleCombinations-2-1-2">
+<li id="act-ImpossibleCombinations-2-1-2-1"><div class="para" id="act-ImpossibleCombinations-2-1-2-1-1">
+<span class="process-math">\(\left\{a_k\right\}_{k=1}^\infty\)</span> is the sequence of terms of the series</div></li>
+<li id="act-ImpossibleCombinations-2-1-2-2"><div class="para" id="act-ImpossibleCombinations-2-1-2-2-1">
+<span class="process-math">\(S_n = \sum_{k=1}^n a_k\)</span> is a partial sum and <span class="process-math">\(\left\{S_n\right\}_{n=1}^\infty\)</span> is the sequence of partial sums of the series</div></li>
+</ul>
+<div class="para">For each of these three objects -- the terms, the partial sums, and the series -- we have some notion of what it means for that object to converge or diverge.</div>
+</div> <div class="para" id="act-ImpossibleCombinations-2-2">Consider the following table of all of the different combinations of convergence and divergence of the three objects. For each combination, decide whether this combination is possible or impossible. If it is possible, give an example of an infinite series whose terms, partial sums, and the series itself converge/diverge appropriately. If it is impossible, give an explanation of why.</div> <figure class="table table-like" id="act-ImpossibleCombinations-2-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.6.5<span class="period">.</span></span><span class="space"> </span>(Im)Possible Combinations</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\displaystyle \left\{a_k\right\}_{k=1}^\infty\)</span></th>
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\displaystyle \{S_n\}_{n=1}^\infty\)</span></th>
+<th scope="col" class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\displaystyle \sum_{k=1}^\infty a_k\)</span></th>
+<th scope="col" class="l m b1 r0 l0 t0 lines">(Im)Possible?</th>
+<th scope="col" class="l m b1 r0 l0 t0 lines">Example or Explanation</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Converges</td>
+<td class="l m b0 r0 l0 t0 lines">Converges</td>
+<td class="l m b0 r0 l0 t0 lines">Converges</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Converges</td>
+<td class="l m b0 r0 l0 t0 lines">Converges</td>
+<td class="l m b0 r0 l0 t0 lines">Diverges</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Converges</td>
+<td class="l m b0 r0 l0 t0 lines">Diverges</td>
+<td class="l m b0 r0 l0 t0 lines">Converges</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Converges</td>
+<td class="l m b0 r0 l0 t0 lines">Diverges</td>
+<td class="l m b0 r0 l0 t0 lines">Diverges</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Diverges</td>
+<td class="l m b0 r0 l0 t0 lines">Converges</td>
+<td class="l m b0 r0 l0 t0 lines">Converges</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Diverges</td>
+<td class="l m b0 r0 l0 t0 lines">Converges</td>
+<td class="l m b0 r0 l0 t0 lines">Diverges</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Diverges</td>
+<td class="l m b0 r0 l0 t0 lines">Diverges</td>
+<td class="l m b0 r0 l0 t0 lines">Converges</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Diverges</td>
+<td class="l m b0 r0 l0 t0 lines">Diverges</td>
+<td class="l m b0 r0 l0 t0 lines">Diverges</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure>
+</div> <details id="act-ImpossibleCombinations-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-ImpossibleCombinations-3-1">We can think back to some results or definitions that connect pairs of these objects. Can you think of any result or definition that connects an infinite series and a sequence of partial sums? What about a result or definition that connects the sequence of terms with the infinite series?</div></div></details> <details id="act-ImpossibleCombinations-4" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-ImpossibleCombinations-4-1">Look back at <a href="sec-IntroSeries.html#def-SeriesConvergence" class="xref" data-knowl="./knowl/xref/def-SeriesConvergence.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.2.2: Series Convergence">Definition 8.2.2</a> and <a href="sec-DivergenceTest.html#thm-DivergenceTest" class="xref" data-knowl="./knowl/xref/thm-DivergenceTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.3.3: Divergence Test">Theorem 8.3.3</a>.</div></div></details> <details id="act-ImpossibleCombinations-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><figure class="table table-like" id="act-ImpossibleCombinations-5-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.6.6<span class="period">.</span></span><span class="space"> </span>(Im)Possible Combinations</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines">(Im)Possible?</th>
+<th scope="col" class="l m b1 r0 l0 t0 lines">Example or Explanation</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Possible</td>
+<td class="l m b0 r0 l0 t0 lines">Any converging series serves as an example.</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Impossible</td>
+<td class="l m b0 r0 l0 t0 lines">The sequence of partial sums and the infinite series are the same object, and so must behave in the same way. <a href="sec-IntroSeries.html#def-SeriesConvergence" class="xref" data-knowl="./knowl/xref/def-SeriesConvergence.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.2.2: Series Convergence">Definition 8.2.2</a>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Impossible</td>
+<td class="l m b0 r0 l0 t0 lines">The sequence of partial sums and the infinite series are the same object, and so must behave in the same way. <a href="sec-IntroSeries.html#def-SeriesConvergence" class="xref" data-knowl="./knowl/xref/def-SeriesConvergence.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.2.2: Series Convergence">Definition 8.2.2</a>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Possible</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Impossible</td>
+<td class="l m b0 r0 l0 t0 lines">If the infinite series converges, then the sequence of terms must converge to 0. <a href="sec-DivergenceTest.html#thm-DivergenceTest" class="xref" data-knowl="./knowl/xref/thm-DivergenceTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.3.3: Divergence Test">Theorem 8.3.3</a>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Impossible</td>
+<td class="l m b0 r0 l0 t0 lines">The sequence of partial sums and the infinite series are the same object, and so must behave in the same way. <a href="sec-IntroSeries.html#def-SeriesConvergence" class="xref" data-knowl="./knowl/xref/def-SeriesConvergence.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.2.2: Series Convergence">Definition 8.2.2</a>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Impossible</td>
+<td class="l m b0 r0 l0 t0 lines">Both of the reasons, <a href="sec-IntroSeries.html#def-SeriesConvergence" class="xref" data-knowl="./knowl/xref/def-SeriesConvergence.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.2.2: Series Convergence">Definition 8.2.2</a> and <a href="sec-DivergenceTest.html#thm-DivergenceTest" class="xref" data-knowl="./knowl/xref/thm-DivergenceTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.3.3: Divergence Test">Theorem 8.3.3</a> apply here!</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Possible</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure></div></details></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-AlternatingSeries.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-ComparisonTests.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
 </body>
 </html>

@@ -35,9 +35,7 @@ function scrollTocToActive() {
     //  Don't use scrollIntoView because it changes users tab position in Chrome
     //  and messes up keyboard navigation
     tocEntry.closest("li").classList.add("active");
-    // Scroll only if the tocEntry is below the bottom half of the window,
-    // scrolling to that position.
-    document.querySelector("#ptx-toc").scrollTop = tocEntry.offsetTop - 0.4 * self.innerHeight;
+    document.querySelector("#ptx-toc").scrollTop = tocEntry.offsetTop;
 }
 
 function toggletoc() {
@@ -53,12 +51,12 @@ function toggletoc() {
    scrollTocToActive();
 }
 
-window.addEventListener("DOMContentLoaded",function(event) {
+window.addEventListener("load",function(event) {
        thetocbutton = document.getElementsByClassName("toc-toggle")[0];
        thetocbutton.addEventListener('click', () => toggletoc() );
 });
 
-window.addEventListener("DOMContentLoaded",function(event) {
+window.addEventListener("load",function(event) {
        scrollTocToActive();
 });
 

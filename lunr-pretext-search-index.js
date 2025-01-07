@@ -1,6 +1,15 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
+  "id": "frontmatter",
+  "level": "1",
+  "url": "frontmatter.html",
+  "type": "Front Matter",
+  "number": "",
+  "title": "Front Matter",
+  "body": "   Peter Keep  Mathematics  Moraine Valley Community College   Last revised:     "
+},
+{
   "id": "sec-IntroLimits",
   "level": "1",
   "url": "sec-IntroLimits.html",
@@ -70,7 +79,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.6",
   "title": "End Behavior Limits",
-  "body": " End Behavior Limits  Text of section.  "
+  "body": " End Behavior Limits  Text of section.   Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.    "
+},
+{
+  "id": "thm-PolynomialEndBehavior",
+  "level": "2",
+  "url": "sec-EndBehaviorLimits.html#thm-PolynomialEndBehavior",
+  "type": "Theorem",
+  "number": "1.6.1",
+  "title": "Polynomial End Behavior Limits.",
+  "body": " Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.   "
 },
 {
   "id": "sec-IndeterminateForms",
@@ -304,7 +322,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.9",
   "title": "L’Hopital’s Rule",
-  "body": " L'Hopital's Rule  Text of section.  "
+  "body": " L'Hopital's Rule  Text of section.   L'Hopital's Rule   If and are functions and is some real number with and both being differentiable at and and , then . Similarly, this holds if and .  If and are both differentiable as and either:    and      and    then .  This is also true as .    "
+},
+{
+  "id": "thm-LHopitalsRule",
+  "level": "2",
+  "url": "sec-LHopitalsRule.html#thm-LHopitalsRule",
+  "type": "Theorem",
+  "number": "4.9.1",
+  "title": "L’Hopital’s Rule.",
+  "body": " L'Hopital's Rule   If and are functions and is some real number with and both being differentiable at and and , then . Similarly, this holds if and .  If and are both differentiable as and either:    and      and    then .  This is also true as .   "
 },
 {
   "id": "sec-IndefiniteIntegrals",
@@ -991,9 +1018,9 @@ var ptx_lunr_docs = [
   "body": " Series Convergence   We say that the infinite series  converges to the real number if the sequence converges to ( ), where is the th partial sum of the infinite series.  If the sequence of partial sums diverges (the limit does not exist), then we say that the infinite series  diverges .   "
 },
 {
-  "id": "subsec-SpecialSeries-3",
+  "id": "ex-geometric",
   "level": "2",
-  "url": "sec-IntroSeries.html#subsec-SpecialSeries-3",
+  "url": "sec-IntroSeries.html#ex-geometric",
   "type": "Example",
   "number": "8.2.3",
   "title": "",
@@ -1006,7 +1033,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "The Divergence Test and the Harmonic Series",
-  "body": " The Divergence Test and the Harmonic Series   The Relationship Between a Sequence and Series  We have looked at both infinite sequences and infinite series so far, and, to make things complicated, we're really thinking about an infinite series (of terms from an infinite sequence) as an infinite sequence (of partial sums of the series). We've looked at how to visualize these (in both and ).  Let's first start with defining a new series. This is a relatively important one by itself (it does have its own name), but it's mostly an important series because it leads us into some new and interesting ways of thinking about series in general.   Harmonic Series   We call the series the Harmonic Series .     Investigating the Harmonic Series   Write out the first several terms of the harmonic series, terms from . Write however many you need to get a feel for how the terms work.    Can you find out how many terms you would have to go \"into\" the series before the term was less than 0.00000001?   When is ?    Can you do this same kind of thing, no matter how small? For instance, how many terms would you have to go into the series before the term was less than some real number where ?   When is ?    Remind\/explain\/convince yourself that what we've really done is show that . This isn't a new or terribly interesting fact, but make sure that you understand why the argument above shows this.    Let's do something very similar, but with , the sequence of partial sums, instead. Write out the first few partial sums. There's no specific number that you need to write, but make sure to write enough partial sums to get a feel for how the partial sums work.    Can you find out how many terms you need to add up until the partial sum is larger than 1?   Find a value for to give .    Can you find out how many terms you need to add up until the partial sum is larger than 5?   Find a value for to give .    This is the first partial sum greater than 5.    Can you find out how many terms you need to add up until the partial sum is larger than 10?   Find a value for to give . This will be absolutely awful to try calculating by hand! Use some piece of technology!    This is the first partial sum greater than 10.    Do you think that for any positive number , we can always find some partial sum ? What do you think this would mean about ?    To actually show that for any we could always find an where is an extremely difficult task! We will show that the Harmonic Series diverges in a different way, but for now I want us to notice these contradictory results: we have a series whose terms get small, but whose partial sums do not seem to converge.  We have but it seems like does not exist. Is this behavior special to the Harmonic Series? Is this something we should make note of? Is there some other connection between the terms of a series and the behavior of the partial sums of the series that we need to note?    Let's continue to think about this strange series, but actually prove that the series itself diverges.   The Harmonic Series Diverges   The Harmonic Series , , diverges.    Let's assume, for the sake of eventual contradiction, that the harmonic series converges.      The Divergence Test   Divergence Test   For an infinite series , if the infinite series converges then . This is equivalent to saying that if then the infinite series diverges.          Apply the Divergence Test to the following series and interpret the results.         "
+  "body": " The Divergence Test and the Harmonic Series   The Relationship Between a Sequence and Series  We have looked at both infinite sequences and infinite series so far, and, to make things complicated, we're really thinking about an infinite series (of terms from an infinite sequence) as an infinite sequence (of partial sums of the series). We've looked at how to visualize these (in both and ).  Let's first start with defining a new series. This is a relatively important one by itself (it does have its own name), but it's mostly an important series because it leads us into some new and interesting ways of thinking about series in general.   Harmonic Series   We call the series the Harmonic Series .     Investigating the Harmonic Series   Write out the first several terms of the harmonic series, terms from . Write however many you need to get a feel for how the terms work.    Can you find out how many terms you would have to go \"into\" the series before the term was less than 0.00000001?   When is ?    Can you do this same kind of thing, no matter how small? For instance, how many terms would you have to go into the series before the term was less than some real number where ?   When is ?    Remind\/explain\/convince yourself that what we've really done is show that . This isn't a new or terribly interesting fact, but make sure that you understand why the argument above shows this.    Let's do something very similar, but with , the sequence of partial sums, instead. Write out the first few partial sums. There's no specific number that you need to write, but make sure to write enough partial sums to get a feel for how the partial sums work.    Can you find out how many terms you need to add up until the partial sum is larger than 1?   Find a value for to give .    Can you find out how many terms you need to add up until the partial sum is larger than 5?   Find a value for to give .    This is the first partial sum greater than 5.    Can you find out how many terms you need to add up until the partial sum is larger than 10?   Find a value for to give . This will be absolutely awful to try calculating by hand! Use some piece of technology!    This is the first partial sum greater than 10.    Do you think that for any positive number , we can always find some partial sum ? What do you think this would mean about ?    To actually show that for any we could always find an where is an extremely difficult task! We will show that the Harmonic Series diverges in a different way, but for now I want us to notice these contradictory results: we have a series whose terms get small, but whose partial sums do not seem to converge.  We have but it seems like does not exist. Is this behavior special to the Harmonic Series? Is this something we should make note of? Is there some other connection between the terms of a series and the behavior of the partial sums of the series that we need to note?    Let's continue to think about this strange series, but actually prove that the series itself diverges.   The Harmonic Series Diverges   The Harmonic Series , , diverges.    Let's assume, for the sake of eventual contradiction, that the harmonic series converges.      The Divergence Test   Divergence Test   For an infinite series , if the infinite series converges then . This is equivalent to saying that if then the infinite series diverges.          Apply the Divergence Test to the following series and interpret the results.        We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator ( ). We could also get this same result using some other techniques, like what we use to prove that theorem. Then we can use to evaluate the limit, since we have a indeterminate form.     "
 },
 {
   "id": "def-HarmonicSeries",
@@ -1051,7 +1078,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "8.3.4",
   "title": "",
-  "body": "  Apply the Divergence Test to the following series and interpret the results.       "
+  "body": "  Apply the Divergence Test to the following series and interpret the results.        We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator ( ). We could also get this same result using some other techniques, like what we use to prove that theorem. Then we can use to evaluate the limit, since we have a indeterminate form.   "
 },
 {
   "id": "sec-IntegralTest",
@@ -1060,7 +1087,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.4",
   "title": "The Integral Test",
-  "body": " The Integral Test   Infinite Series As a Kind of Integral  We start here with a connection between objects. Earlier (in ) we tried to describe sequences as just a special kind of function: the domain is the set of non-negative integer (or positive integers, depending on whether we start our index at or ) and we map these inputs to real number outputs. And now we want to think about what it might mean to accumulate the values of these kinds of functions.  Function value accumulation is what we've been looking at lately! That's what integration is! We are trying to accumulate all of the function values and weigh them based on their \"width.\" In the context of continuous functions, that means we start approximating this accumulation by looking at some finite number of function values that we pick, and we give them some width between them. That's our Riemann sum: And from there, we work on making that space between function values get smaller (as the number of function values we use gets higher). So when is the number of function values, we can let and correspondingly we get , the differential in our integral: .  And this is how we've talked about infinite series so far, even adopting the same notions of convergence and thinking about how we extend a familiar idea (in this case adding numbers, compared to integrating a function) out to infinity: we just keep walking our (finite) ending point out to infinity using a limit!  So this brings us to this comparison of the same types of objects across these two different contexts.   Comparisons of Calculus Objects in Continuous and Discrete Contexts    Object  Continuous Context  Discrete Context    Function      Graph    Finite Accumulation  Definite Integral  Partial Sum         Infinite Accumulation  Improper Integral  Infinite Series          So in this section, we'll investigate this link between infinite series and improper integrals as the same kind of object occurring in different contexts. Intuitively, then, they'll be related to each other, under the right conditions.    The Integral Test  We'll build the integral test.   Integral Test   If is an infinite series with for all and is a continuous and decreasing function with for all , then we can compare the behaviors of and : the integral and the series are guaranteed to either both diverge or both converge.      Why Do We Need These Conditions?  Riemann sum approximation Oscillating function can make an integral converge but series diverge opposite.    A Family of Series Types: -Series   -Series   We call the infinite series where is a real number a -Series .     -Series Convergence Criteria   The infinite series where is a real number converges when and diverges when .     "
+  "body": " The Integral Test   Infinite Series As a Kind of Integral  We start here with a connection between objects. Earlier (in ) we tried to describe sequences as just a special kind of function: the domain is the set of non-negative integer (or positive integers, depending on whether we start our index at or ) and we map these inputs to real number outputs. And now we want to think about what it might mean to accumulate the values of these kinds of functions.  Function value accumulation is what we've been looking at lately! That's what integration is! We are trying to accumulate all of the function values and weigh them based on their \"width.\" In the context of continuous functions, that means we start approximating this accumulation by looking at some finite number of function values that we pick, and we give them some width between them. That's our Riemann sum: And from there, we work on making that space between function values get smaller (as the number of function values we use gets higher). So when is the number of function values, we can let and correspondingly we get , the differential in our integral: .  And this is how we've talked about infinite series so far, even adopting the same notions of convergence and thinking about how we extend a familiar idea (in this case adding numbers, compared to integrating a function) out to infinity: we just keep walking our (finite) ending point out to infinity using a limit!  So this brings us to this comparison of the same types of objects across these two different contexts.   Comparisons of Calculus Objects in Continuous and Discrete Contexts    Object  Continuous Context  Discrete Context    Function      Graph    Finite Accumulation  Definite Integral  Partial Sum         Infinite Accumulation  Improper Integral  Infinite Series          So in this section, we'll investigate this link between infinite series and improper integrals as the same kind of object occurring in different contexts. Intuitively, then, they'll be related to each other, under the right conditions.    The Integral Test  We'll build the integral test.   Integral Test   If is an infinite series with for all and is a continuous and decreasing function with for all , then we can compare the behaviors of and : the integral and the series are guaranteed to either both diverge or both converge.      Why Do We Need These Conditions?  Riemann sum approximation Oscillating function can make an integral converge but series diverge opposite.   "
 },
 {
   "id": "subsec-SeriesAsIntegrals-6",
@@ -1081,24 +1108,6 @@ var ptx_lunr_docs = [
   "body": " Integral Test   If is an infinite series with for all and is a continuous and decreasing function with for all , then we can compare the behaviors of and : the integral and the series are guaranteed to either both diverge or both converge.   "
 },
 {
-  "id": "def-pSeries",
-  "level": "2",
-  "url": "sec-IntegralTest.html#def-pSeries",
-  "type": "Definition",
-  "number": "8.4.3",
-  "title": "<span class=\"process-math\">\\(p\\)<\/span>-Series.",
-  "body": " -Series   We call the infinite series where is a real number a -Series .   "
-},
-{
-  "id": "thm-pSeries",
-  "level": "2",
-  "url": "sec-IntegralTest.html#thm-pSeries",
-  "type": "Theorem",
-  "number": "8.4.4",
-  "title": "<span class=\"process-math\">\\(p\\)<\/span>-Series Convergence Criteria.",
-  "body": " -Series Convergence Criteria   The infinite series where is a real number converges when and diverges when .   "
-},
-{
   "id": "sec-AlternatingSeries",
   "level": "1",
   "url": "sec-AlternatingSeries.html",
@@ -1114,7 +1123,52 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.6",
   "title": "Common Series Types",
-  "body": " Common Series Types  Text of section.  "
+  "body": " Common Series Types   In this section, we'll stop and recap some of the common series types that we should recognize moving forward. We'll look at the structure of these series (mainly the functions defining the terms of the series) as well as the convergence criteria for them.  Look back to . We noticed that we were able to find an explicit formula for the th partial sum, which allowed us to evaluate . We noticed this again in .  But there are some differences between why we were able to find formulas for the th partial sum in each of these examples. Let's first focus on the infinite series with terms defined by exponential functions.    Geometric Series   Geometric Series   For real numbers and with , we say that the series is a geometric series . We call the constant ratio and the initial term .     Geometric Series Convergence Criteria   A geometric series converges to when and diverges if .      -Series   -Series   For a real number , we say that the series is a -series . We mostly will be concerned about the case where , making the terms of the series be reciprocal power functions.     -Series Convergence Criteria   A -series converges when and diverges when .    Let's divide this into four cases: when , when , when , and when .  Case 1:  Note that for with , we can write this as . Now we can consider the limit of the terms, in order to use the . Since this limit is non-zero (since it is either or 1, depending on whether or not), the series diverges by the Divergence Test.   Case 2:   When , we can apply the to the series. It is worth showing that the conditions of the test are met, but this is left up to the reader.  So now we will consider the integral as a way of seeing whether the series converges or diverges. We can note that since , that . This means that when , as well. This integral diverges, and so then does the series.   Case 3:   This is the ! This series diverges ( ).   Case 4:   We can repeat the proof from Case 2 , but we will end with a different conclusion based on the sign of the exponent! Let us, again, apply the Integral Test.  Consider the integral as a way of seeing whether the series converges or diverges. Now, though, we have which means that . This means that . So now we will consider the limit, and note that as , we get . This integral converges, and so then does the series. We remember, though, that the series converges to something different than the integral, and so we do not know what the series converges to.      Recapping Our Mathematical Objects   (Im)Possible Combinations   When we have thought about infinite series, we have thought about three different mathematical objects: the sequence of terms of the series, the sequence of partial sums of the series, and the infinite series itself. As a reminder, if we had an infinite series we can say that:    is the sequence of terms of the series     is a partial sum and is the sequence of partial sums of the series   For each of these three objects -- the terms, the partial sums, and the series -- we have some notion of what it means for that object to converge or diverge.  Consider the following table of all of the different combinations of convergence and divergence of the three objects. For each combination, decide whether this combination is possible or impossible. If it is possible, give an example of an infinite series whose terms, partial sums, and the series itself converge\/diverge appropriately. If it is impossible, give an explanation of why.   (Im)Possible Combinations       (Im)Possible?  Example or Explanation    Converges  Converges  Converges      Converges  Converges  Diverges      Converges  Diverges  Converges      Converges  Diverges  Diverges      Diverges  Converges  Converges      Diverges  Converges  Diverges      Diverges  Diverges  Converges      Diverges  Diverges  Diverges         We can think back to some results or definitions that connect pairs of these objects. Can you think of any result or definition that connects an infinite series and a sequence of partial sums? What about a result or definition that connects the sequence of terms with the infinite series?    Look back at and .     (Im)Possible Combinations    (Im)Possible?  Example or Explanation    Possible  Any converging series serves as an example.    Impossible  The sequence of partial sums and the infinite series are the same object, and so must behave in the same way.    Impossible  The sequence of partial sums and the infinite series are the same object, and so must behave in the same way.    Possible     Impossible  If the infinite series converges, then the sequence of terms must converge to 0.    Impossible  The sequence of partial sums and the infinite series are the same object, and so must behave in the same way.    Impossible  Both of the reasons, and apply here!    Possible         "
+},
+{
+  "id": "def-GeometricSeries",
+  "level": "2",
+  "url": "sec-CommonSeries.html#def-GeometricSeries",
+  "type": "Definition",
+  "number": "8.6.1",
+  "title": "Geometric Series.",
+  "body": " Geometric Series   For real numbers and with , we say that the series is a geometric series . We call the constant ratio and the initial term .   "
+},
+{
+  "id": "thm-GeometricSeries",
+  "level": "2",
+  "url": "sec-CommonSeries.html#thm-GeometricSeries",
+  "type": "Theorem",
+  "number": "8.6.2",
+  "title": "Geometric Series Convergence Criteria.",
+  "body": " Geometric Series Convergence Criteria   A geometric series converges to when and diverges if .   "
+},
+{
+  "id": "def-pSeries",
+  "level": "2",
+  "url": "sec-CommonSeries.html#def-pSeries",
+  "type": "Definition",
+  "number": "8.6.3",
+  "title": "<span class=\"process-math\">\\(p\\)<\/span>-Series.",
+  "body": " -Series   For a real number , we say that the series is a -series . We mostly will be concerned about the case where , making the terms of the series be reciprocal power functions.   "
+},
+{
+  "id": "thm-pSeries",
+  "level": "2",
+  "url": "sec-CommonSeries.html#thm-pSeries",
+  "type": "Theorem",
+  "number": "8.6.4",
+  "title": "<span class=\"process-math\">\\(p\\)<\/span>-Series Convergence Criteria.",
+  "body": " -Series Convergence Criteria   A -series converges when and diverges when .    Let's divide this into four cases: when , when , when , and when .  Case 1:  Note that for with , we can write this as . Now we can consider the limit of the terms, in order to use the . Since this limit is non-zero (since it is either or 1, depending on whether or not), the series diverges by the Divergence Test.   Case 2:   When , we can apply the to the series. It is worth showing that the conditions of the test are met, but this is left up to the reader.  So now we will consider the integral as a way of seeing whether the series converges or diverges. We can note that since , that . This means that when , as well. This integral diverges, and so then does the series.   Case 3:   This is the ! This series diverges ( ).   Case 4:   We can repeat the proof from Case 2 , but we will end with a different conclusion based on the sign of the exponent! Let us, again, apply the Integral Test.  Consider the integral as a way of seeing whether the series converges or diverges. Now, though, we have which means that . This means that . So now we will consider the limit, and note that as , we get . This integral converges, and so then does the series. We remember, though, that the series converges to something different than the integral, and so we do not know what the series converges to.   "
+},
+{
+  "id": "act-ImpossibleCombinations",
+  "level": "2",
+  "url": "sec-CommonSeries.html#act-ImpossibleCombinations",
+  "type": "Activity",
+  "number": "8.6.1",
+  "title": "(Im)Possible Combinations.",
+  "body": " (Im)Possible Combinations   When we have thought about infinite series, we have thought about three different mathematical objects: the sequence of terms of the series, the sequence of partial sums of the series, and the infinite series itself. As a reminder, if we had an infinite series we can say that:    is the sequence of terms of the series     is a partial sum and is the sequence of partial sums of the series   For each of these three objects -- the terms, the partial sums, and the series -- we have some notion of what it means for that object to converge or diverge.  Consider the following table of all of the different combinations of convergence and divergence of the three objects. For each combination, decide whether this combination is possible or impossible. If it is possible, give an example of an infinite series whose terms, partial sums, and the series itself converge\/diverge appropriately. If it is impossible, give an explanation of why.   (Im)Possible Combinations       (Im)Possible?  Example or Explanation    Converges  Converges  Converges      Converges  Converges  Diverges      Converges  Diverges  Converges      Converges  Diverges  Diverges      Diverges  Converges  Converges      Diverges  Converges  Diverges      Diverges  Diverges  Converges      Diverges  Diverges  Diverges         We can think back to some results or definitions that connect pairs of these objects. Can you think of any result or definition that connects an infinite series and a sequence of partial sums? What about a result or definition that connects the sequence of terms with the infinite series?    Look back at and .     (Im)Possible Combinations    (Im)Possible?  Example or Explanation    Possible  Any converging series serves as an example.    Impossible  The sequence of partial sums and the infinite series are the same object, and so must behave in the same way.    Impossible  The sequence of partial sums and the infinite series are the same object, and so must behave in the same way.    Possible     Impossible  If the infinite series converges, then the sequence of terms must converge to 0.    Impossible  The sequence of partial sums and the infinite series are the same object, and so must behave in the same way.    Impossible  Both of the reasons, and apply here!    Possible       "
 },
 {
   "id": "sec-ComparisonTests",
