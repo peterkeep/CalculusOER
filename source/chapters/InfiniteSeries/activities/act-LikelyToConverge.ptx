@@ -33,9 +33,9 @@
             <p>
                 Now let's think of the partial sums:
                 <md>
-                   <mrow>\left\{\sum_{k=0}^n a_k\right\} \amp \amp \text{vs} \amp  \amp \left\{\sum_{k=0}^n (-1)^k a_k\right\} </mrow>
+                   <mrow>\left\{\sum_{k=0}^n a_k\right\}_{n=0}^\infty \amp \amp \text{vs} \amp  \amp \left\{\sum_{k=0}^n (-1)^k a_k\right\}_{n=0}^\infty </mrow>
                 </md>   
-                Is either of these more or less likely to converge? Does this tell us anything about whether or not the corresponding series converges?          
+                Is either of these sequences more or less likely to converge? Does this tell us anything about whether or not the corresponding series converges?          
             </p>
         </statement>
     </task>

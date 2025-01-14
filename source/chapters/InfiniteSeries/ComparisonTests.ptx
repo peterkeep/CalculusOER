@@ -3,6 +3,48 @@
 <section xml:id="sec-ComparisonTests" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Comparison Tests</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      So far, our strategies for thinking about infinite series have been focused around drawing a connection between the infinite series we care about and some other mathematical object:
+      <ul>
+        <li>
+          <p>
+            The <xref ref="thm-DivergenceTest" text="title"/> draws a connection (even thought it's a limited one) between the terms of the series and the series itself.
+          </p>
+        </li>
+        <li>
+          <p>
+            The <xref ref="thm-AlternatingSeriesTest" text="title"/> draws a (stronger) connection between the terms of, specifically, an <xref ref="def-AlternatingSeries" text="title"/> and the series itself.
+          </p>
+        </li>
+        <li>
+          <p>
+            The <xref ref="thm-IntegralTest" text="title"/> draws a connection between the series and a corresponding integral.
+          </p>
+        </li>
+      </ul>
+      Now we'll work on building the most important series convergence test mechanism: we'll draw a link between the series we care about and some other series that we already know about.
+    </p>
+    <p>
+      This is helpful for three reasons:
+      <ol>
+        <li>
+          <p>
+            We already have a couple of types of series that we know about (<xref ref="sec-CommonSeries"/>), and we can keep adding to that list.
+          </p>
+        </li>
+        <li>
+          <p>
+            We can take advantage of similar structure or common term formulas when we see them to essentially say, "This series kind of looks like one that I recognize. I wonder if they act the same?"
+          </p>
+        </li>
+        <li>
+          <p>
+            We don't always have to integrate things using the Integral Test! Integrating can be hard! 
+          </p>
+        </li>
+      </ol>
+    </p>
+  </introduction>
 
 </section>

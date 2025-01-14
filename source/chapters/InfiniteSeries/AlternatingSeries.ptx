@@ -11,4 +11,26 @@
     We definitely have fewer tools to use, since we don't get anything that relies on applying the <xref ref="thm-MonotoneConvergence" text="title"/> to partial sums. So instead, we'll take a brief detour into something we call <term>Alternating Series</term> (a series whose terms alternate in sign).
   </p>
   <xi:include href="./activities/act-LikelyToConverge.ptx" />
+
+  <definition xml:id="def-AlternatingSeries">
+  <title>Alternating Series</title>
+    <statement>
+      <p>
+        An infinite series <m>\sum_{k=0}^\infty a_k</m> is called an <term>Alternating Series</term> when <m>a_k = (-1)^k|a_k|</m> or <m>a_k = (-1)^{k+1}|a_k|</m> for all <m>k=0,1,2,...</m>. That is, the sign of the terms alternates:
+        <me>
+          \sum_{k=0}^\infty a_k = |a_0| - |a_1| + |a_2| - + ...
+        </me>
+      </p>
+    </statement>
+  </definition>
+
+  <theorem xml:id="thm-AlternatingSeriesTest">
+    <title>Alternating Series Test</title>   
+    <statement>
+      <p>
+        If <m>\sum_{k=0}^\infty a_k</m> is an alternating series and the size of the terms <m>|a_k|</m> is decreasing, then if <m>\lim_{k\to \infty} a_k = 0</m> then <m>\sum_{k=0}^\infty a_k</m> converges.
+      </p>
+    </statement>
+  </theorem>
+  
 </section>
