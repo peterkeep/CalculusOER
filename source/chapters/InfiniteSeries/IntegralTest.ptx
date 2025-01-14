@@ -87,28 +87,6 @@
       <m>\sin^2(\pi(x))</m> opposite.
     </p>
   </subsection>
-  <subsection xml:id="subsec-pSeries">
-    <title>A Family of Series Types: <m>p</m>-Series</title>
 
-    <definition xml:id="def-pSeries">
-    <title><m>p</m>-Series</title>
-      <statement>
-        <p>
-          We call the infinite series <m>\sum_{k=1}^\infty \frac{1}{k^p}</m> where <m>p</m> is a real number a <term><m>p</m>-Series</term>.
-        </p>
-      </statement>
-    </definition>
-    
-    <theorem xml:id="thm-pSeries">
-      <title><m>p</m>-Series Convergence Criteria</title>
-      <statement>
-        <p>
-          The infinite series <m>\sum_{k=1}^\infty \frac{1}{k^p}</m> where <m>p</m> is a real number converges when <m>p\gt 1</m> and diverges when <m>p\leq 1</m>.
-        </p>
-      </statement>
-    </theorem>
-    
-  </subsection>
-  
 
 </section>
