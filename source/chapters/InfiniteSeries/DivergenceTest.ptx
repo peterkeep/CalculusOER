@@ -72,7 +72,7 @@
       <task>
         <statement>
           <p>
-            <m>\displaystyle \left\{\frac{k^15 - 4k^10 + 10k^4}{e^{2k}}\right\}_{k=0}^\infty</m>
+            <m>\displaystyle \sum_{k=0}^\infty \frac{k^15 - 4k^10 + 10k^4}{e^{2k}}</m>
           </p>
         </statement>
         <hint>
@@ -80,6 +80,20 @@
             We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator (<xref ref="thm-PolynomialEndBehavior" text="title"/>). We could also get this same result using some other techniques, like what we use to prove that theorem. Then we can use <xref ref="thm-LHopitalsRule" text="title"/> to evaluate the limit, since we have a <m>\frac{\infty}{\infty}</m> indeterminate form.
           </p>
         </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{k^2+1}</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{\sqrt[k]{k}}</m>
+          </p>
+        </statement>
       </task>
     </example>
   </subsection>

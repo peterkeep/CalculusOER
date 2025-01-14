@@ -3,6 +3,12 @@
 <section xml:id="sec-AlternatingSeries" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Alternating Series and Conditional Convergence</title>
 
-  <p> Text of section. </p>
-
+  <p>Before we move too far forward, let's circle back to a point made in <xref ref="subsec-WhyConditions"/>. In the <xref ref="thm-IntegralTest" text="title"/>, we required the terms of our series (and the continuous function we connected it with) to be positive. This was really just a mechanism that allowed us to say, in our proof, that the sequence of partial sums was monotonic. When we accumulate more of a positive thing, the total gets bigger. This is half of what we needed for us to employ the <xref ref="thm-MonotoneConvergence" text="title"/>. Because this is such a useful tool, we'll see more of this "positive term series" condition showing up in the tools we use to see if a series converges.</p>
+  <p>
+    But that makes this a perfect time to stop and ask a hallowed mathematical question: <em>What happens if that property isn't there?</em> What happens when our series does not only have positive terms?
+  </p>
+  <p>
+    We definitely have fewer tools to use, since we don't get anything that relies on applying the <xref ref="thm-MonotoneConvergence" text="title"/> to partial sums. So instead, we'll take a brief detour into something we call <term>Alternating Series</term> (a series whose terms alternate in sign).
+  </p>
+  <xi:include href="./activities/act-LikelyToConverge.ptx" />
 </section>

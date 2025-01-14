@@ -1,0 +1,42 @@
+<activity xml:id="act-LikelyToConverge">
+    <title>Which is More Likely to Converge?</title>
+    <introduction>
+        <p>
+            We're going to try to think about what might be different when we analyze an alternating series compared to a series with only positive (or non-negative) terms.
+        </p>
+        <p>
+            Let's say that <m>\{a_k\}_{k=0}^\infty</m> is some sequence of positive real numbers. Now let's consider the two series:
+        <md>
+            <mrow> \sum_{k=0}^\infty a_k \amp \amp \text{vs} \amp \amp \sum_{k=0}^\infty (-1)^k a_k</mrow>
+        </md>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Let's first consider the sequences of terms: <m>\{a_k\}</m> compared with <m>\{(-1)^k a_k\}</m>. Is either of these more or less likely to converge? Does this tell us anything about whether or not the corresponding series converges?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Try thinking about how we might find <m>\lim_{k\to\infty} (-1)^k a_k</m>, especially using the <xref ref="thm-SqueezeTheorem" text="title"/>.
+            </p>
+        </hint>
+        <hint>
+            <p>
+                What does the <xref ref="thm-DivergenceTest" text="title"/> say? Is either of these sequences more or less likely to converge to 0 (or not)?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now let's think of the partial sums:
+                <md>
+                   <mrow>\left\{\sum_{k=0}^n a_k\right\} \amp \amp \text{vs} \amp  \amp \left\{\sum_{k=0}^n (-1)^k a_k\right\} </mrow>
+                </md>   
+                Is either of these more or less likely to converge? Does this tell us anything about whether or not the corresponding series converges?          
+            </p>
+        </statement>
+    </task>
+</activity>
