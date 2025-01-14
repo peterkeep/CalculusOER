@@ -46,5 +46,90 @@
       </ol>
     </p>
   </introduction>
+  <subsection xml:id="subsec-ComparingPartialSums">
+    <title>Comparing Partial Sums</title>
+    <p>
+      We're going to start by trying to do the same thing we did when we build the <xref ref="thm-IntegralTest" text="title"/>: show that the partial sums are monotonic and bounded and then make use of the <xref ref="thm-MonotoneConvergence" text="title"/>.
+      <theorem xml:id="thm-DirectComparisonTest">
+        <title>Direct Comparison Test</title>        
+        <statement>
+          <p>
+            If <m>\sum_{k=0}^\infty a_k</m> and <m>\sum_{k=10}^\infty</m> are infinite series with positive terms (<m>a_k\gt 0</m> and <m>b_k\gt 0</m> for <m>k\geq 0</m>) with the ordering <m>a_k \leq b_k</m> for <m>k\geq 0</m>, then:
+            <ul>
+              <li>
+                <p>
+                  If <m>\sum_{k=0}^\infty a_k</m> diverges, then <m>\sum_{k=0}^\infty b_k</m> also diverges.
+                </p>
+              </li>
+              <li>
+                <p>
+                  If <m>\sum_{k=0}^\infty b_k</m> converges, then <m>\sum_{k=0}^\infty a_k</m> also converges.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </theorem>
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-FailedComparisons">
+  <title>Failed Comparisons</title>
+  <p>
+    
+  </p>
+</subsection>
+<subsection xml:id="subsec-LimitComparison">
+  <title>Limit Comparison</title>
+  <theorem xml:id="thm-LimitComparisonTest">
+    <title>Limit Comparison Test</title>
+    <statement>
+      <p>
+         If <m>\sum_{k=0}^\infty a_k</m> and <m>\sum_{k=0}^\infty b_k</m> are infinite series with positive terms (<m>a_k\gt 0</m> and <m>b_k\gt 0</m> for <m>k\geq 0</m>), then we can consider <m>\displaystyle\lim_{k\to\infty} \frac{a_k}{b_k}</m>.
+         <ul>
+          <li>
+            <p>
+              If <m>\displaystyle\lim_{k\to\infty} \frac{a_k}{b_k} = 0</m>, then: 
+              <ul>
+                <li>
+                  <p>
+                    If <m>\sum_{k=0}^\infty a_k</m> diverges, then <m>\sum_{k=0}^\infty b_k</m> diverges as well.
+                  </p>
+                </li>
+                 <li>
+                  <p>
+                    If <m>\sum_{k=0}^\infty b_k</m> converges, then <m>\sum_{k=0}^\infty a_k</m> converges as well.
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>\displaystyle\lim_{k\to\infty} \frac{a_k}{b_k} = \infty</m>, then: 
+              <ul>
+                <li>
+                  <p>
+                    If <m>\sum_{k=0}^\infty a_k</m> converges, then <m>\sum_{k=0}^\infty b_k</m> converges as well.
+                  </p>
+                </li>
+                 <li>
+                  <p>
+                    If <m>\sum_{k=0}^\infty b_k</m> diverges, then <m>\sum_{k=0}^\infty a_k</m> diverges as well.
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>\displaystyle\lim_{k\to\infty} \frac{a_k}{b_k} = L</m> where <m>L</m> is some non-zero real number, then <m>\sum_{k=0}^\infty a_k</m> and <m>\sum_{k=0}^\infty b_k</m> will either both converge or both diverge.
+            </p>
+          </li>
+         </ul>
+      </p>
+    </statement>
+  </theorem>
+  
+</subsection>
 
 </section>
