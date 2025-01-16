@@ -129,6 +129,27 @@
       </p>
     </statement>
   </theorem>
+
+  <theorem xml:id="thm-RationalComparison">
+    <statement>
+      <p>
+        If <m>a_k</m> is a rational function of <m>k</m>,  <m>a_k = \frac{p(k)}{q(k)}</m> \where both <m>p(k)</m> and <m>q(k)</m> are polynomial functions, then:
+        <ul>
+          <li>
+            <p>
+              If <m>\deg(q(k)-p(k)) \gt 1</m>, then <m>\sum_{k=1}^\infty a_k</m> converges.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>\deg(q(k)-p(k)) \leq 1</m>, then <m>\sum_{k=1}^\infty a_k</m> diverges.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </theorem>
+  
   
 </subsection>
 
