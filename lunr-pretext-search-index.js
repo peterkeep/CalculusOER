@@ -1204,7 +1204,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.7",
   "title": "Comparison Tests",
-  "body": " Comparison Tests   So far, our strategies for thinking about infinite series have been focused around drawing a connection between the infinite series we care about and some other mathematical object:   The draws a connection (even thought it's a limited one) between the terms of the series and the series itself.    The draws a (stronger) connection between the terms of, specifically, an and the series itself.    The draws a connection between the series and a corresponding integral.   Now we'll work on building the most important series convergence test mechanism: we'll draw a link between the series we care about and some other series that we already know about.  This is helpful for three reasons:   We already have a couple of types of series that we know about ( ), and we can keep adding to that list.    We can take advantage of similar structure or common term formulas when we see them to essentially say, \"This series kind of looks like one that I recognize. I wonder if they act the same?\"    We don't always have to integrate things using the Integral Test! Integrating can be hard!       Comparing Partial Sums  We're going to start by trying to do the same thing we did when we build the : show that the partial sums are monotonic and bounded and then make use of the .  Direct Comparison Test   If and are infinite series with positive terms ( and for ) with the ordering for , then:   If diverges, then also diverges.    If converges, then also converges.          Failed Comparisons      Limit Comparison   Limit Comparison Test   If and are infinite series with positive terms ( and for ), then we can consider .   If , then:   If diverges, then diverges as well.    If converges, then converges as well.       If , then:   If converges, then converges as well.    If diverges, then diverges as well.       If where is some non-zero real number, then and will either both converge or both diverge.         If is a rational function of , \\where both and are polynomial functions, then:   If , then converges.    If , then diverges.        "
+  "body": " Comparison Tests   So far, our strategies for thinking about infinite series have been focused around drawing a connection between the infinite series we care about and some other mathematical object:   The draws a connection (even thought it's a limited one) between the terms of the series and the series itself.    The draws a (stronger) connection between the terms of, specifically, an and the series itself.    The draws a connection between the series and a corresponding integral.   Now we'll work on building the most important series convergence test mechanism: we'll draw a link between the series we care about and some other series that we already know about.  This is helpful for three reasons:   We already have a couple of types of series that we know about ( ), and we can keep adding to that list.    We can take advantage of similar structure or common term formulas when we see them to essentially say, \"This series kind of looks like one that I recognize. I wonder if they act the same?\"    We don't always have to integrate things using the Integral Test! Integrating can be hard!       Comparing Partial Sums  We're going to start by trying to do the same thing we did when we build the : show that the partial sums are monotonic and bounded and then make use of the .   Direct Comparison Test   If and are infinite series with positive terms ( and for ) with the ordering for , then:   If diverges, then also diverges.    If converges, then also converges.         Failed Comparisons      Limit Comparison   Limit Comparison Test   If and are infinite series with positive terms ( and for ), then we can consider .   If , then:   If diverges, then diverges as well.    If converges, then converges as well.       If , then:   If converges, then converges as well.    If diverges, then diverges as well.       If where is some non-zero real number, then and will either both converge or both diverge.         If is a rational function of , \\where both and are polynomial functions, then:   If , then converges.    If , then diverges.        "
 },
 {
   "id": "thm-DirectComparisonTest",
@@ -1240,7 +1240,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.8",
   "title": "The Ratio and Root Tests",
-  "body": " The Ratio and Root Tests  Text of section.  "
+  "body": " The Ratio and Root Tests   Introduction, remind that the is super useful for rational functions and things that act like .    Eventually Geometric-ish  We'll look at series that act like geometric series, but first let's remind us what Geometric Series act like.   Reminder about Geometric Series   We are going to build some convergence tests that try to link some infinite series to the family of geometric series and show that even though a series is not geometric, it might act enough like one to be considered \"eventually geometric-ish.\"  But first, what does it mean for a series to be a geometric series?    Describe a defining characteristic of a geometric series. What makes it geometric?    Can you describe this characteristic in another way? For instance, if you described a geometric series using a characteristic about the , can you describe the same characteristic in the context of the instead? Or vice versa?   What kinds of functions do we see in the formula for the terms of a geometric series?   How do you describe how you might get from one term in a geometric series to the next one?    Write out a generalized and simplified form of the term of a geometric series explicitly and recursively. In each case, solve for , the ratio between terms.     Root Test   Let be an infinite series with for and consider .   If there is some real number with and , then the series converges.    If there is some real number with and or if does not exist, then the series diverges.    If then the Root Test fails and is inconclusive.        Ratio Test   Let be an infinite series with for and consider .   If there is some real number with and , then the series converges.    If there is some real number with and or if does not exist, then the series diverges.    If then the Root Test fails and is inconclusive.        "
+},
+{
+  "id": "act-ReminderGeometric",
+  "level": "2",
+  "url": "sec-RatioRootTests.html#act-ReminderGeometric",
+  "type": "Activity",
+  "number": "8.8.1",
+  "title": "Reminder about Geometric Series.",
+  "body": " Reminder about Geometric Series   We are going to build some convergence tests that try to link some infinite series to the family of geometric series and show that even though a series is not geometric, it might act enough like one to be considered \"eventually geometric-ish.\"  But first, what does it mean for a series to be a geometric series?    Describe a defining characteristic of a geometric series. What makes it geometric?    Can you describe this characteristic in another way? For instance, if you described a geometric series using a characteristic about the , can you describe the same characteristic in the context of the instead? Or vice versa?   What kinds of functions do we see in the formula for the terms of a geometric series?   How do you describe how you might get from one term in a geometric series to the next one?    Write out a generalized and simplified form of the term of a geometric series explicitly and recursively. In each case, solve for , the ratio between terms.   "
+},
+{
+  "id": "thm-RootTest",
+  "level": "2",
+  "url": "sec-RatioRootTests.html#thm-RootTest",
+  "type": "Theorem",
+  "number": "8.8.1",
+  "title": "Root Test.",
+  "body": " Root Test   Let be an infinite series with for and consider .   If there is some real number with and , then the series converges.    If there is some real number with and or if does not exist, then the series diverges.    If then the Root Test fails and is inconclusive.      "
+},
+{
+  "id": "thm-RatioTest",
+  "level": "2",
+  "url": "sec-RatioRootTests.html#thm-RatioTest",
+  "type": "Theorem",
+  "number": "8.8.2",
+  "title": "Ratio Test.",
+  "body": " Ratio Test   Let be an infinite series with for and consider .   If there is some real number with and , then the series converges.    If there is some real number with and or if does not exist, then the series diverges.    If then the Root Test fails and is inconclusive.      "
 },
 {
   "id": "sec-PolynomialApproximation",

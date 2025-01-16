@@ -12,7 +12,7 @@
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Calculus OER">
+<meta property="book:title" content="Discovering Calculus">
 <meta property="book:author" content="Peter Keep">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
@@ -124,7 +124,7 @@ eBookConfig.enable_chatcodes =  false;
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
-<h1 class="heading"><a href="CalculusOER.html"><span class="title">Calculus OER:</span> <span class="subtitle">With Activities and Python Examples/Labs</span></a></h1>
+<h1 class="heading"><a href="DiscoveringCalculus.html"><span class="title">Discovering Calculus:</span> <span class="subtitle">Single-Variable Calculus Topics with Motivating Activities</span></a></h1>
 <p class="byline">Peter Keep</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -357,7 +357,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ComparisonTests.html#subsec-LimitComparison" class="internal"><span class="codenumber">8.7.3</span> <span class="title">Limit Comparison</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-RatioRootTests.html" class="internal"><span class="codenumber">8.8</span> <span class="title">The Ratio and Root Tests</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-RatioRootTests.html" class="internal"><span class="codenumber">8.8</span> <span class="title">The Ratio and Root Tests</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RatioRootTests.html#subsec-EventuallyGeometricish" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Eventually Geometric-ish</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -400,7 +403,8 @@ eBookConfig.enable_chatcodes =  false;
 </div></section><section class="subsection" id="subsec-ComparingPartialSums"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.7.1</span><span class="space"> </span><span class="title">Comparing Partial Sums</span>
 </h3>
-<div class="para" id="subsec-ComparingPartialSums-2">We’re going to start by trying to do the same thing we did when we build the <a href="sec-IntegralTest.html#thm-IntegralTest" class="xref" data-knowl="./knowl/xref/thm-IntegralTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.4.2: Integral Test">Integral Test</a>: show that the partial sums are monotonic and bounded and then make use of the <a href="sec-IntroSequences.html#thm-MonotoneConvergence" class="xref" data-knowl="./knowl/xref/thm-MonotoneConvergence.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.1.8: Monotone Convergence Theorem">Monotone Convergence Theorem</a>. <article class="theorem theorem-like" id="thm-DirectComparisonTest"><h4 class="heading">
+<div class="para" id="subsec-ComparingPartialSums-2">We’re going to start by trying to do the same thing we did when we build the <a href="sec-IntegralTest.html#thm-IntegralTest" class="xref" data-knowl="./knowl/xref/thm-IntegralTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.4.2: Integral Test">Integral Test</a>: show that the partial sums are monotonic and bounded and then make use of the <a href="sec-IntroSequences.html#thm-MonotoneConvergence" class="xref" data-knowl="./knowl/xref/thm-MonotoneConvergence.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.1.8: Monotone Convergence Theorem">Monotone Convergence Theorem</a>.</div>
+<article class="theorem theorem-like" id="thm-DirectComparisonTest"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.7.1</span><span class="period">.</span><span class="space"> </span><span class="title">Direct Comparison Test.</span>
 </h4>
 <div class="para logical" id="thm-DirectComparisonTest-2-1">
@@ -409,8 +413,7 @@ eBookConfig.enable_chatcodes =  false;
 <li id="thm-DirectComparisonTest-2-1-8-1"><div class="para" id="thm-DirectComparisonTest-2-1-8-1-1">If <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> diverges, then <span class="process-math">\(\sum_{k=0}^\infty b_k\)</span> also diverges.</div></li>
 <li id="thm-DirectComparisonTest-2-1-8-2"><div class="para" id="thm-DirectComparisonTest-2-1-8-2-1">If <span class="process-math">\(\sum_{k=0}^\infty b_k\)</span> converges, then <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> also converges.</div></li>
 </ul>
-</div></article>
-</div></section><section class="subsection" id="subsec-FailedComparisons"><h3 class="heading hide-type">
+</div></article></section><section class="subsection" id="subsec-FailedComparisons"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.7.2</span><span class="space"> </span><span class="title">Failed Comparisons</span>
 </h3>
 <div class="para" id="subsec-FailedComparisons-2"></div></section><section class="subsection" id="subsec-LimitComparison"><h3 class="heading hide-type">
