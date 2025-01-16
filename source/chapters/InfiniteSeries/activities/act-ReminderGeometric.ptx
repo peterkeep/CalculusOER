@@ -1,0 +1,43 @@
+<activity xml:id="act-ReminderGeometric">
+    <title>Reminder about Geometric Series</title>
+    <introduction>
+        <p>
+            We are going to build some convergence tests that try to link some infinite series to the family of geometric series and show that even though a series is <em>not</em> geometric, it might act enough like one to be considered "eventually geometric-ish."
+        </p>
+        <p>
+            But first, what does it mean for a series to be a geometric series?
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Describe a defining characteristic of a geometric series. What makes it geometric?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you describe this characteristic in another way? For instance, if you described a geometric series using a characteristic about the <xref ref="def-ExplicitFormula" text="title"/>, can you describe the same characteristic in the context of the <xref ref="def-RecursionRelation" text="title"/> instead? Or vice versa?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What kinds of functions do we see in the formula for the terms of a geometric series?
+            </p>
+        </hint>
+        <hint>
+            <p>
+                How do you describe how you might get from one term in a geometric series to the next one?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Write out a generalized and simplified form of the term <m>a_k</m> of a geometric series explicitly and recursively. In each case, solve for <m>r</m>, the ratio between terms.
+            </p>
+        </statement>
+    </task>
+    
+</activity>

@@ -4,7 +4,8 @@
 <!-- works. -->
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
-  <titlepage>
+
+  <bibinfo>
     <author>
       <personname>Peter Keep</personname>
       <department>Mathematics</department>
@@ -13,6 +14,10 @@
     <date>
       Last revised: <today />
     </date>
+  </bibinfo>
+
+  <titlepage>
+    <titlepage-items/>
   </titlepage>
 
   <!-- <colophon>

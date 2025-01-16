@@ -50,7 +50,8 @@
     <title>Comparing Partial Sums</title>
     <p>
       We're going to start by trying to do the same thing we did when we build the <xref ref="thm-IntegralTest" text="title"/>: show that the partial sums are monotonic and bounded and then make use of the <xref ref="thm-MonotoneConvergence" text="title"/>.
-      <theorem xml:id="thm-DirectComparisonTest">
+    </p>
+    <theorem xml:id="thm-DirectComparisonTest">
         <title>Direct Comparison Test</title>        
         <statement>
           <p>
@@ -70,7 +71,6 @@
           </p>
         </statement>
       </theorem>
-    </p>
   </subsection>
   <subsection xml:id="subsec-FailedComparisons">
   <title>Failed Comparisons</title>

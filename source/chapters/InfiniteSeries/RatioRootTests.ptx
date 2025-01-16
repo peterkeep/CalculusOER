@@ -3,6 +3,70 @@
 <section xml:id="sec-RatioRootTests" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Ratio and Root Tests</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      Introduction, remind that the <xref ref="thm-LimitComparisonTest" text="title"/> is super useful for rational functions and things that act like <xref ref="def-pSeries" text="title"/>.
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec-EventuallyGeometricish">
+    <title>Eventually Geometric-ish</title>
+    <p>
+        We'll look at series that act like geometric series, but first let's remind us what Geometric Series act like.
+    </p>
+    <xi:include href="./activities/act-ReminderGeometric.ptx" />
+    <theorem xml:id="thm-RootTest">
+      <title>Root Test</title>
+      <statement>
+        <p>
+          Let <m>\sum_{k=0}^\infty a_k</m> be an infinite series with <m>a_k\gt 0</m> for <m>k\geq 0</m> and consider <m>\lim_{k\to\infty} \sqrt[k]{a_k}</m>.
+          <ul>
+            <li>
+              <p>
+                If there is some real number <m>r</m> with <m>r=\lim_{k\to\infty} \sqrt[k]{a_k}</m> and <m>0\leq r \lt 1</m>, then the series <m>\sum_{k=0}^\infty a_k</m> converges.
+              </p>
+            </li>
+            <li>
+              <p>
+                If there is some real number <m>r</m> with <m>r=\lim_{k\to\infty} \sqrt[k]{a_k}</m> and <m>r\gt</m> or if <m>\lim_{k\to\infty} \sqrt[k]{a_k}</m> does not exist, then the series <m>\sum_{k=0}^\infty a_k</m> diverges.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>\lim_{k\to\infty} \sqrt[k]{a_k}=1</m> then the Root Test fails and is inconclusive.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <theorem xml:id="thm-RatioTest">
+      <title>Ratio Test</title>
+      <statement>
+        <p>
+          Let <m>\sum_{k=0}^\infty a_k</m> be an infinite series with <m>a_k\gt 0</m> for <m>k\geq 0</m> and consider <m>\lim_{k\to\infty} \frac{a_{k+1}}{a_k}</m>.
+          <ul>
+            <li>
+              <p>
+                If there is some real number <m>r</m> with <m>r=\lim_{k\to\infty} \frac{a_{k+1}}{a_k}</m> and <m>0\leq r \lt 1</m>, then the series <m>\sum_{k=0}^\infty a_k</m> converges.
+              </p>
+            </li>
+            <li>
+              <p>
+                If there is some real number <m>r</m> with <m>r=\lim_{k\to\infty} \frac{a_{k+1}}{a_k}</m> and <m>r\gt</m> or if <m>\lim_{k\to\infty} \frac{a_{k+1}}{a_k}</m> does not exist, then the series <m>\sum_{k=0}^\infty a_k</m> diverges.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>\lim_{k\to\infty} \frac{a_{k+1}}{a_k}=1</m> then the Root Test fails and is inconclusive.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+  </subsection>
 
 </section>
