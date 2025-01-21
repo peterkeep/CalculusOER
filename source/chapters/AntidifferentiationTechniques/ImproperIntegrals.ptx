@@ -3,15 +3,70 @@
 <section xml:id="sec-ImproperIntegrals" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Improper Integrals</title>
 
+  <xi:include href="./activities/act-RememberingTheme.ptx" />
+
+  <xi:include href="./activities/act-RememberingFTOC.ptx" />
+
+  <definition xml:id="def-ImproperIntegral">
+    <title>Improper Integral</title>
+    <statement>
+      <p>
+        An integral is an <term>improper integral</term> if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:
+        <ol>
+          <li>
+            <p>
+              The interval that we integrate the function over is unbounded in width, or infinitely wide.
+            </p>
+          </li>
+          <li>
+            <p>
+              The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over. 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </definition>
+
   <assemblage xml:id="strat-ImproperIntegralsWidth">
     <title>Evaluating Improper Integrals (Infinite Width)</title>
     <p>
-      For a function <m>f(x)</m> that is continuous on <m>[a,\infty)</m>, we can evaluate the improper integral <m>\int_{x=a}^\infty f(x)\;dx</m>:
+      For a function <m>f(x)</m> that is continuous on <m>[a,\infty)</m>, we can evaluate the improper integral <m>\displaystyle\int_{x=a}^\infty f(x)\;dx</m>:
 
       <me>
         \int_{x=a}^\infty f(x)\;dx = \lim_{t\to\infty} \int_{x=a}^{x=t} f(x)\;dx
       </me>.
     </p>
+    <p>
+      If <m>f(x)</m> is continuous on <m>(-\infty,b]</m>, we can evaluate the improper integral <m>\displaystyle\int_{-\infty}^{x=b} f(x)\;dx</m>:
+
+      <me>
+        \int_{-\infty}^{x=b} f(x)\;dx = \lim_{t\to -\infty} \int_{x=t}^{x=b} f(x)\;dx
+      </me>.
+    </p>
+    <p>
+      Finally, if <m>f(x)</m> is continuous on <m>(-\infty,\infty)</m> and <m>c</m> is some real number, then we can evaluate the improper integral <m>\displaystyle\int_{-\infty}^{\infty}f(x)\;dx</m>:
+      <me>
+        \int_{-\infty}^{\infty}f(x)\;dx = \lim_{t\to -\infty} \int_{x=t}^{x=c} f(x)\;dx + \lim_{t\to\infty} \int_{x=c}^{x=t} f(x)\;dx
+      </me>.
+    </p>
   </assemblage>
 
+    <assemblage xml:id="strat-ImproperIntegralsHeight">
+    <title>Evaluating Improper Integrals (Infinite Height)</title>
+    <p>
+      For a function <m>f(x)</m> that has an unbounded discontinuity (a vertical asymptote) at <m>x=c</m>
+    </p>
+  </assemblage>
+
+
+    <definition xml:id="def-ConvergenceImproperIntegral">
+    <title>Convergence of an Improper Integral</title>
+    <statement>
+      <p>
+        We say that an improper integral <term>converges</term> if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral <term>diverges</term>.
+      </p>
+    </statement>
+  </definition>
+  <xi:include href="./exercises/exercise-ImproperIntegrals.ptx" />
 </section>

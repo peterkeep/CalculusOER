@@ -1,0 +1,143 @@
+<exercises xml:id="exercises-ImproperIntegrals">
+    <exercise>
+      <p>
+        Explain what it means for an integral to be improper. What kinds of issues are we looking at?
+      </p>
+    </exercise>
+    <exercise>
+      <p>
+        Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width).
+      </p>
+    </exercise>
+    <exercise>
+      <p>
+        Give an example of an integral that is improper due to an unbounded integrand (infinite height).
+      </p>
+    </exercise>
+    <exercise>
+      <p>
+        What does it mean for an improper integral to ``converge?'' How does this connect with limits?
+      </p>
+    </exercise>
+    <exercise>
+      <p>
+        What does it mean for an improper integral to ``diverge?'' How does this connect with limits?
+      </p>
+    </exercise>
+    <exercise>
+      <p>
+        Why do we need to use limits to evaluate improper integrals?
+      </p>
+    </exercise>
+    <exercise>
+      <introduction>
+        <p>
+          For each of the following improper integrals:
+          <ul>
+            <li>
+              <p>
+                Explain why the integral is improper. Be specific, and point out the issues in detail.
+              </p>
+            </li>
+            <li>
+              <p>
+                Set up the integral using the correct limit notation.
+              </p>
+            </li>
+            <li>
+              <p>
+                Antidifferentiate and evaluate the limit.
+              </p>
+            </li>
+            <li>
+              <p>
+                Explain whether the integral converges or diverges.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int_{x=0}^{\infty} \frac{1}{\sqrt{x+1}}\;dx</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int_{x=0}^{\infty} e^{-2x}\;dx</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int_{x=-1}^{x=3} \dfrac{1}{x+1}\;dx </m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int_{-\infty}^{x=0} \sqrt{e^x}\;dx</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int_{x=2}^{x=8} \dfrac{5}{(x-2)^3}\;dx</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int_{x=1}^{x=12} \dfrac{dx}{\sqrt[5]{12-x}}</m>
+          </p>
+        </statement>
+      </task>
+    </exercise>
+    <exercise>
+      <p>
+         One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of <m>k</m> makes the function <m>\dfrac{kx}{(x^2+3)^{5/4}}</m> a valid probability distribution on the interval <m>[0,\infty)</m>?
+      </p>
+    </exercise>
+    <exercise>
+      <introduction>
+        <p>
+          Let's consider the integral <m>\displaystyle \int_{x=1}^{\infty} \dfrac{\sqrt{x^2+1}}{x^2}\;dx</m>. This is a difficult integral to evaluate!
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            First, compare <m>\sqrt{x^2+1}</m> to <m>\sqrt{x^2}</m> using an inequality: which one is bigger?
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Second, use this inequality to compare the function <m>\dfrac{\sqrt{x^2+1}}{x^2}</m> to <m>\dfrac{1}{x}</m> for <m>x\gt 0</m>: which one is bigger? Again, use your inequality from above to help!
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Now compare <m>\displaystyle \int_{x=1}^\infty \dfrac{\sqrt{x^2+1}}{x^2}\;dx</m> to <m>\displaystyle \int_{x=1}^\infty \dfrac{1}{x}\;dx</m>. Which one is bigger?
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Explain how we can use this result to make a conclusion about whether our integral, <m>\displaystyle \int_{x=1}^\infty \dfrac{\sqrt{x^2+1}}{x^2}\;dx</m> converges or diverges.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+</exercises>
