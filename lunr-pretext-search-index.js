@@ -403,7 +403,124 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Improper Integrals",
-  "body": " Improper Integrals   Evaluating Improper Integrals (Infinite Width)  For a function that is continuous on , we can evaluate the improper integral : .   "
+  "body": " Improper Integrals   Remembering a Theme so Far   Let's say that we want to find what the -values of some function are when the -values are \"infinitely close to\" some value, . Since there is no single -value that is \"infinitely close to\" that we can evaluate at, we need to do something else. How do we do this?    Let's say that we want to find the rate of change of some function instantaneously at a point with . We can't find a rate of change unless we have two points, since we need to find some differences in the outputs and inputs. How do we do this?    Suppose you want to find the total area, covered by an infinite number of infinitely thin rectangles. You have a formula for finding the dimensions and areas for some finite number of rectangles, but how do we get an infinite number of them?    Can you find the common calculus theme in each of these scenarios?     Remembering the Fundamental Theorem of Calculus   We want to think about generalizing our notion of integrals a bit. So in this activity, section, we're going to think about some of the requirements for the Fundamental Theorem of Calculus and try to loosen them up a bit to see what happens. We'll try to construct meaningful approaches to these situations that fit our overall goals of calculating area under a curve.  This practice, in general, is a really good and common mathematical process: taking some result and playing with the requirements or assumptions to see what else can happen. So it might feel like we're just fiddling with the \"What if?\" questions, but what we're actually doing is good mathematics!    What does the Fundamental Theorem of Calculus say about evaluating the definite integral ?    What do we need to be true about our setup, our function, etc. for us to be able to apply this technique to evaluate ?    We are going to introduce the idea of \"Improper Integrals\" as kind-of-but-not-quite definite integrals that we can evaluate. They are going to violate the requirements for the Fundamental Theorem of Calculus, but we'll work to salvage them in meaningful ways.     Improper Integral   An integral is an improper integral if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:   The interval that we integrate the function over is unbounded in width, or infinitely wide.    The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over.        Evaluating Improper Integrals (Infinite Width)  For a function that is continuous on , we can evaluate the improper integral : .  If is continuous on , we can evaluate the improper integral : .  Finally, if is continuous on and is some real number, then we can evaluate the improper integral : .    Evaluating Improper Integrals (Infinite Height)  For a function that has an unbounded discontinuity (a vertical asymptote) at     Convergence of an Improper Integral   We say that an improper integral converges if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral diverges .     Explain what it means for an integral to be improper. What kinds of issues are we looking at?  Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width).  Give an example of an integral that is improper due to an unbounded integrand (infinite height).  What does it mean for an improper integral to ``converge?'' How does this connect with limits?  What does it mean for an improper integral to ``diverge?'' How does this connect with limits?  Why do we need to use limits to evaluate improper integrals?   For each of the following improper integrals:   Explain why the integral is improper. Be specific, and point out the issues in detail.    Set up the integral using the correct limit notation.    Antidifferentiate and evaluate the limit.    Explain whether the integral converges or diverges.                              One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of makes the function a valid probability distribution on the interval ?   Let's consider the integral . This is a difficult integral to evaluate!   First, compare to using an inequality: which one is bigger?   Second, use this inequality to compare the function to for : which one is bigger? Again, use your inequality from above to help!   Now compare to . Which one is bigger?   Explain how we can use this result to make a conclusion about whether our integral, converges or diverges.    "
+},
+{
+  "id": "act-RememberingTheme",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#act-RememberingTheme",
+  "type": "Activity",
+  "number": "6.1.1",
+  "title": "Remembering a Theme so Far.",
+  "body": " Remembering a Theme so Far   Let's say that we want to find what the -values of some function are when the -values are \"infinitely close to\" some value, . Since there is no single -value that is \"infinitely close to\" that we can evaluate at, we need to do something else. How do we do this?    Let's say that we want to find the rate of change of some function instantaneously at a point with . We can't find a rate of change unless we have two points, since we need to find some differences in the outputs and inputs. How do we do this?    Suppose you want to find the total area, covered by an infinite number of infinitely thin rectangles. You have a formula for finding the dimensions and areas for some finite number of rectangles, but how do we get an infinite number of them?    Can you find the common calculus theme in each of these scenarios?   "
+},
+{
+  "id": "act-RememberingFTOC",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#act-RememberingFTOC",
+  "type": "Activity",
+  "number": "6.1.2",
+  "title": "Remembering the Fundamental Theorem of Calculus.",
+  "body": " Remembering the Fundamental Theorem of Calculus   We want to think about generalizing our notion of integrals a bit. So in this activity, section, we're going to think about some of the requirements for the Fundamental Theorem of Calculus and try to loosen them up a bit to see what happens. We'll try to construct meaningful approaches to these situations that fit our overall goals of calculating area under a curve.  This practice, in general, is a really good and common mathematical process: taking some result and playing with the requirements or assumptions to see what else can happen. So it might feel like we're just fiddling with the \"What if?\" questions, but what we're actually doing is good mathematics!    What does the Fundamental Theorem of Calculus say about evaluating the definite integral ?    What do we need to be true about our setup, our function, etc. for us to be able to apply this technique to evaluate ?    We are going to introduce the idea of \"Improper Integrals\" as kind-of-but-not-quite definite integrals that we can evaluate. They are going to violate the requirements for the Fundamental Theorem of Calculus, but we'll work to salvage them in meaningful ways.   "
+},
+{
+  "id": "def-ImproperIntegral",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#def-ImproperIntegral",
+  "type": "Definition",
+  "number": "6.1.1",
+  "title": "Improper Integral.",
+  "body": " Improper Integral   An integral is an improper integral if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:   The interval that we integrate the function over is unbounded in width, or infinitely wide.    The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over.      "
+},
+{
+  "id": "def-ConvergenceImproperIntegral",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#def-ConvergenceImproperIntegral",
+  "type": "Definition",
+  "number": "6.1.2",
+  "title": "Convergence of an Improper Integral.",
+  "body": " Convergence of an Improper Integral   We say that an improper integral converges if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral diverges .   "
+},
+{
+  "id": "exercises-ImproperIntegrals-1",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-1",
+  "type": "Exercise",
+  "number": "6.1.1",
+  "title": "",
+  "body": "Explain what it means for an integral to be improper. What kinds of issues are we looking at? "
+},
+{
+  "id": "exercises-ImproperIntegrals-2",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-2",
+  "type": "Exercise",
+  "number": "6.1.2",
+  "title": "",
+  "body": "Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width). "
+},
+{
+  "id": "exercises-ImproperIntegrals-3",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-3",
+  "type": "Exercise",
+  "number": "6.1.3",
+  "title": "",
+  "body": "Give an example of an integral that is improper due to an unbounded integrand (infinite height). "
+},
+{
+  "id": "exercises-ImproperIntegrals-4",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-4",
+  "type": "Exercise",
+  "number": "6.1.4",
+  "title": "",
+  "body": "What does it mean for an improper integral to ``converge?'' How does this connect with limits? "
+},
+{
+  "id": "exercises-ImproperIntegrals-5",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-5",
+  "type": "Exercise",
+  "number": "6.1.5",
+  "title": "",
+  "body": "What does it mean for an improper integral to ``diverge?'' How does this connect with limits? "
+},
+{
+  "id": "exercises-ImproperIntegrals-6",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-6",
+  "type": "Exercise",
+  "number": "6.1.6",
+  "title": "",
+  "body": "Why do we need to use limits to evaluate improper integrals? "
+},
+{
+  "id": "exercises-ImproperIntegrals-7",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-7",
+  "type": "Exercise",
+  "number": "6.1.7",
+  "title": "",
+  "body": " For each of the following improper integrals:   Explain why the integral is improper. Be specific, and point out the issues in detail.    Set up the integral using the correct limit notation.    Antidifferentiate and evaluate the limit.    Explain whether the integral converges or diverges.                             "
+},
+{
+  "id": "exercises-ImproperIntegrals-8",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-8",
+  "type": "Exercise",
+  "number": "6.1.8",
+  "title": "",
+  "body": "One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of makes the function a valid probability distribution on the interval ? "
+},
+{
+  "id": "exercises-ImproperIntegrals-9",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-9",
+  "type": "Exercise",
+  "number": "6.1.9",
+  "title": "",
+  "body": " Let's consider the integral . This is a difficult integral to evaluate!   First, compare to using an inequality: which one is bigger?   Second, use this inequality to compare the function to for : which one is bigger? Again, use your inequality from above to help!   Now compare to . Which one is bigger?   Explain how we can use this result to make a conclusion about whether our integral, converges or diverges.  "
 },
 {
   "id": "sec-uSubstitution",

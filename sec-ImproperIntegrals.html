@@ -100,16 +100,19 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.5.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
+<script src="_static/prefix-runtime.8b270ccf5298bad1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.d966d31a41778c59.css">
 <style>
+#def-ImproperIntegral-2-1-2 { counter-set: def-ImproperIntegral-2-1-2 0; }
+#def-ImproperIntegral-2-1-2 > li::marker { content: ""counter(def-ImproperIntegral-2-1-2,decimal)"."; }
+#def-ImproperIntegral-2-1-2 > li { counter-increment: def-ImproperIntegral-2-1-2; }
 #subsec-EstimatingMovement-4-1 { counter-set: subsec-EstimatingMovement-4-1 0; }
 #subsec-EstimatingMovement-4-1 > li::marker { content: ""counter(subsec-EstimatingMovement-4-1,decimal)"."; }
 #subsec-EstimatingMovement-4-1 > li { counter-increment: subsec-EstimatingMovement-4-1; }
@@ -234,7 +237,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-AntidifferentiationTechniques.html" class="internal"><span class="codenumber">6</span> <span class="title">Techniques for Antidifferentiation</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Improper Integrals</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-ImproperIntegrals.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Improper Integrals</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#exercises-ImproperIntegrals" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-uSubstitution.html" class="internal"><span class="codenumber">6.2</span> <span class="title"><span class="process-math">\(u\)</span>-Substitution</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-MoreToTranslate" class="internal"><span class="codenumber">6.2.1</span> <span class="title">More to Translate</span></a></div></li></ul>
@@ -384,16 +390,99 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-ImproperIntegrals"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">6.1</span><span class="space"> </span><span class="title">Improper Integrals</span>
 </h2>
-<article class="assemblage assemblage-like" id="strat-ImproperIntegralsWidth"><h3 class="heading"><span class="title">Evaluating Improper Integrals (Infinite Width).</span></h3>
+<article class="activity project-like" id="act-RememberingTheme"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Remembering a Theme so Far.</span>
+</h3>
+<article class="task exercise-like" id="act-RememberingTheme-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="act-RememberingTheme-2-1-1">Let’s say that we want to find what the <span class="process-math">\(y\)</span>-values of some function <span class="process-math">\(f(x)\)</span> are when the <span class="process-math">\(x\)</span>-values are "infinitely close to" some value, <span class="process-math">\(x=a\text{.}\)</span> Since there is no single <span class="process-math">\(x\)</span>-value that is "infinitely close to" <span class="process-math">\(a\)</span> that we can evaluate <span class="process-math">\(f(x)\)</span> at, we need to do something else. How do we do this?</div></article><article class="task exercise-like" id="act-RememberingTheme-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-RememberingTheme-3-1-1">Let’s say that we want to find the rate of change of some function instantaneously at a point with <span class="process-math">\(x=a\text{.}\)</span> We can’t find a rate of change unless we have two points, since we need to find some differences in the outputs and inputs. How do we do this?</div></article><article class="task exercise-like" id="act-RememberingTheme-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="act-RememberingTheme-4-1-1">Suppose you want to find the total area, covered by an infinite number of infinitely thin rectangles. You have a formula for finding the dimensions and areas for some finite number of rectangles, but how do we get an infinite number of them?</div></article><article class="task exercise-like" id="act-RememberingTheme-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="act-RememberingTheme-5-1-1">Can you find the common calculus theme in each of these scenarios?</div></article></article><article class="activity project-like" id="act-RememberingFTOC"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Remembering the Fundamental Theorem of Calculus.</span>
+</h3>
+<div class="introduction" id="act-RememberingFTOC-2">
+<div class="para" id="act-RememberingFTOC-2-1">We want to think about generalizing our notion of integrals a bit. So in this activity, section, we’re going to think about some of the requirements for the Fundamental Theorem of Calculus and try to loosen them up a bit to see what happens. We’ll try to construct meaningful approaches to these situations that fit our overall goals of calculating area under a curve.</div>
+<div class="para" id="act-RememberingFTOC-2-2">This practice, in general, is a really good and common mathematical process: taking some result and playing with the requirements or assumptions to see what else can happen. So it might feel like we’re just fiddling with the "What if?" questions, but what we’re actually doing is good mathematics!</div>
+</div>
+<article class="task exercise-like" id="act-RememberingFTOC-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="act-RememberingFTOC-3-1-1">What does the Fundamental Theorem of Calculus say about evaluating the definite integral <span class="process-math">\(\displaystyle \int_{x=a}^{x=b} f(x)\, dx\text{?}\)</span>
+</div></article><article class="task exercise-like" id="act-RememberingFTOC-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-RememberingFTOC-4-1-1">What do we need to be true about our setup, our function, etc. for us to be able to apply this technique to evaluate <span class="process-math">\(\displaystyle \int_{x=a}^{x=b} f(x)\,dx\text{?}\)</span>
+</div></article><div class="conclusion" id="act-RememberingFTOC-5"><div class="para" id="act-RememberingFTOC-5-1">We are going to introduce the idea of "Improper Integrals" as kind-of-but-not-quite definite integrals that we can evaluate. They are going to violate the requirements for the Fundamental Theorem of Calculus, but we’ll work to salvage them in meaningful ways.</div></div></article><article class="definition definition-like" id="def-ImproperIntegral"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Improper Integral.</span>
+</h3>
+<div class="para logical" id="def-ImproperIntegral-2-1">
+<div class="para">An integral is an <dfn class="terminology">improper integral</dfn> if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:</div>
+<ol class="decimal" id="def-ImproperIntegral-2-1-2">
+<li id="def-ImproperIntegral-2-1-2-1"><div class="para" id="def-ImproperIntegral-2-1-2-1-1">The interval that we integrate the function over is unbounded in width, or infinitely wide.</div></li>
+<li id="def-ImproperIntegral-2-1-2-2"><div class="para" id="def-ImproperIntegral-2-1-2-2-1">The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over.</div></li>
+</ol>
+</div></article><article class="assemblage assemblage-like" id="strat-ImproperIntegralsWidth"><h3 class="heading"><span class="title">Evaluating Improper Integrals (Infinite Width).</span></h3>
 <div class="para logical" id="strat-ImproperIntegralsWidth-2">
-<div class="para">For a function <span class="process-math">\(f(x)\)</span> that is continuous on <span class="process-math">\([a,\infty)\text{,}\)</span> we can evaluate the improper integral <span class="process-math">\(\int_{x=a}^\infty f(x)\;dx\text{:}\)</span>
+<div class="para">For a function <span class="process-math">\(f(x)\)</span> that is continuous on <span class="process-math">\([a,\infty)\text{,}\)</span> we can evaluate the improper integral <span class="process-math">\(\displaystyle\int_{x=a}^\infty f(x)\;dx\text{:}\)</span>
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
 \int_{x=a}^\infty f(x)\;dx = \lim_{t\to\infty} \int_{x=a}^{x=t} f(x)\;dx\text{.}
 \end{equation*}
 </div>
-</div></article></section></div>
+</div>
+<div class="para logical" id="strat-ImproperIntegralsWidth-3">
+<div class="para">If <span class="process-math">\(f(x)\)</span> is continuous on <span class="process-math">\((-\infty,b]\text{,}\)</span> we can evaluate the improper integral <span class="process-math">\(\displaystyle\int_{-\infty}^{x=b} f(x)\;dx\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{-\infty}^{x=b} f(x)\;dx = \lim_{t\to -\infty} \int_{x=t}^{x=b} f(x)\;dx\text{.}
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="strat-ImproperIntegralsWidth-4">
+<div class="para">Finally, if <span class="process-math">\(f(x)\)</span> is continuous on <span class="process-math">\((-\infty,\infty)\)</span> and <span class="process-math">\(c\)</span> is some real number, then we can evaluate the improper integral <span class="process-math">\(\displaystyle\int_{-\infty}^{\infty}f(x)\;dx\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{-\infty}^{\infty}f(x)\;dx = \lim_{t\to -\infty} \int_{x=t}^{x=c} f(x)\;dx + \lim_{t\to\infty} \int_{x=c}^{x=t} f(x)\;dx\text{.}
+\end{equation*}
+</div>
+</div></article><article class="assemblage assemblage-like" id="strat-ImproperIntegralsHeight"><h3 class="heading"><span class="title">Evaluating Improper Integrals (Infinite Height).</span></h3>
+<div class="para" id="strat-ImproperIntegralsHeight-2">For a function <span class="process-math">\(f(x)\)</span> that has an unbounded discontinuity (a vertical asymptote) at <span class="process-math">\(x=c\)</span>
+</div></article><article class="definition definition-like" id="def-ConvergenceImproperIntegral"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Convergence of an Improper Integral.</span>
+</h3>
+<div class="para" id="def-ConvergenceImproperIntegral-2-1">We say that an improper integral <dfn class="terminology">converges</dfn> if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral <dfn class="terminology">diverges</dfn>.</div></article><section class="exercises" id="exercises-ImproperIntegrals"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="exercises-ImproperIntegrals-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="exercises-ImproperIntegrals-1-1">Explain what it means for an integral to be improper. What kinds of issues are we looking at?</div></article><article class="exercise exercise-like" id="exercises-ImproperIntegrals-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="exercises-ImproperIntegrals-2-1">Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width).</div></article><article class="exercise exercise-like" id="exercises-ImproperIntegrals-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="exercises-ImproperIntegrals-3-1">Give an example of an integral that is improper due to an unbounded integrand (infinite height).</div></article><article class="exercise exercise-like" id="exercises-ImproperIntegrals-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="exercises-ImproperIntegrals-4-1">What does it mean for an improper integral to ``converge?’’ How does this connect with limits?</div></article><article class="exercise exercise-like" id="exercises-ImproperIntegrals-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para" id="exercises-ImproperIntegrals-5-1">What does it mean for an improper integral to ``diverge?’’ How does this connect with limits?</div></article><article class="exercise exercise-like" id="exercises-ImproperIntegrals-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="exercises-ImproperIntegrals-6-1">Why do we need to use limits to evaluate improper integrals?</div></article><article class="exercise exercise-like" id="exercises-ImproperIntegrals-7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="introduction" id="exercises-ImproperIntegrals-7-1"><div class="para logical" id="exercises-ImproperIntegrals-7-1-1">
+<div class="para">For each of the following improper integrals:</div>
+<ul class="disc" id="exercises-ImproperIntegrals-7-1-1-1">
+<li id="exercises-ImproperIntegrals-7-1-1-1-1"><div class="para" id="exercises-ImproperIntegrals-7-1-1-1-1-1">Explain why the integral is improper. Be specific, and point out the issues in detail.</div></li>
+<li id="exercises-ImproperIntegrals-7-1-1-1-2"><div class="para" id="exercises-ImproperIntegrals-7-1-1-1-2-1">Set up the integral using the correct limit notation.</div></li>
+<li id="exercises-ImproperIntegrals-7-1-1-1-3"><div class="para" id="exercises-ImproperIntegrals-7-1-1-1-3-1">Antidifferentiate and evaluate the limit.</div></li>
+<li id="exercises-ImproperIntegrals-7-1-1-1-4"><div class="para" id="exercises-ImproperIntegrals-7-1-1-1-4-1">Explain whether the integral converges or diverges.</div></li>
+</ul>
+</div></div>
+<article class="task exercise-like" id="exercises-ImproperIntegrals-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-ImproperIntegrals-7-2-1-1"><span class="process-math">\(\displaystyle \int_{x=0}^{\infty} \frac{1}{\sqrt{x+1}}\;dx\)</span></div></article><article class="task exercise-like" id="exercises-ImproperIntegrals-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-ImproperIntegrals-7-3-1-1"><span class="process-math">\(\displaystyle \int_{x=0}^{\infty} e^{-2x}\;dx\)</span></div></article><article class="task exercise-like" id="exercises-ImproperIntegrals-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="exercises-ImproperIntegrals-7-4-1-1"><span class="process-math">\(\displaystyle \int_{x=-1}^{x=3} \dfrac{1}{x+1}\;dx \)</span></div></article><article class="task exercise-like" id="exercises-ImproperIntegrals-7-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="exercises-ImproperIntegrals-7-5-1-1"><span class="process-math">\(\displaystyle \int_{-\infty}^{x=0} \sqrt{e^x}\;dx\)</span></div></article><article class="task exercise-like" id="exercises-ImproperIntegrals-7-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="exercises-ImproperIntegrals-7-6-1-1"><span class="process-math">\(\displaystyle \int_{x=2}^{x=8} \dfrac{5}{(x-2)^3}\;dx\)</span></div></article><article class="task exercise-like" id="exercises-ImproperIntegrals-7-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="exercises-ImproperIntegrals-7-7-1-1"><span class="process-math">\(\displaystyle \int_{x=1}^{x=12} \dfrac{dx}{\sqrt[5]{12-x}}\)</span></div></article></article><article class="exercise exercise-like" id="exercises-ImproperIntegrals-8"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="exercises-ImproperIntegrals-8-1">One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of <span class="process-math">\(k\)</span> makes the function <span class="process-math">\(\dfrac{kx}{(x^2+3)^{5/4}}\)</span> a valid probability distribution on the interval <span class="process-math">\([0,\infty)\text{?}\)</span>
+</div></article><article class="exercise exercise-like" id="exercises-ImproperIntegrals-9"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="introduction" id="exercises-ImproperIntegrals-9-1"><div class="para" id="exercises-ImproperIntegrals-9-1-1">Let’s consider the integral <span class="process-math">\(\displaystyle \int_{x=1}^{\infty} \dfrac{\sqrt{x^2+1}}{x^2}\;dx\text{.}\)</span> This is a difficult integral to evaluate!</div></div>
+<article class="task exercise-like" id="exercises-ImproperIntegrals-9-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-ImproperIntegrals-9-2-1-1">First, compare <span class="process-math">\(\sqrt{x^2+1}\)</span> to <span class="process-math">\(\sqrt{x^2}\)</span> using an inequality: which one is bigger?</div></article><article class="task exercise-like" id="exercises-ImproperIntegrals-9-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-ImproperIntegrals-9-3-1-1">Second, use this inequality to compare the function <span class="process-math">\(\dfrac{\sqrt{x^2+1}}{x^2}\)</span> to <span class="process-math">\(\dfrac{1}{x}\)</span> for <span class="process-math">\(x\gt 0\text{:}\)</span> which one is bigger? Again, use your inequality from above to help!</div></article><article class="task exercise-like" id="exercises-ImproperIntegrals-9-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="exercises-ImproperIntegrals-9-4-1-1">Now compare <span class="process-math">\(\displaystyle \int_{x=1}^\infty \dfrac{\sqrt{x^2+1}}{x^2}\;dx\)</span> to <span class="process-math">\(\displaystyle \int_{x=1}^\infty \dfrac{1}{x}\;dx\text{.}\)</span> Which one is bigger?</div></article><article class="task exercise-like" id="exercises-ImproperIntegrals-9-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="exercises-ImproperIntegrals-9-5-1-1">Explain how we can use this result to make a conclusion about whether our integral, <span class="process-math">\(\displaystyle \int_{x=1}^\infty \dfrac{\sqrt{x^2+1}}{x^2}\;dx\)</span> converges or diverges.</div></article></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-AntidifferentiationTechniques.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-uSubstitution.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
