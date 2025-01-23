@@ -1,0 +1,97 @@
+<activity xlm:id="act-ApproximatingLimitsGraphically">
+    <title>Approximating Limits</title>
+    <introduction>
+        <p>
+            For each of the following graphs of functions, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Approximate <m>\displaystyle \lim_{x\to 1} f(x)</m> using the graph of the function <m>f(x)</m> below.
+            </p>
+            <figure xml:id="fig-ApproxLimit1">
+                <caption></caption>
+                <image source="Limits/ApproxLimit1.png" width="70%">
+                    <shortdescription>A decreasing linear function with a single point removed from the line. At the x-value x=1, there is a hole on the line at y=1, and a point is located at (1,0).</shortdescription>
+                </image>
+            </figure>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Approximate <m>\displaystyle \lim_{x\to 2} g(x)</m> using the graph of the function <m>g(x)</m> below.
+            </p>
+            <figure xml:id="fig-ApproxLimit2">
+                <caption></caption>
+                <image source="Limits/ApproxLimit2.png" width="70%">
+                    <shortdescription>
+                        A piecewise defined function, where the graph is split up into two sections around x=2. For x-values less than (and equal) to 2, the function is decreasing and curves downward towards a filled in point at (2,1). Then the graph drops to an open point at (2,0), where the graph is linear and increasing afterwards from that hole.
+                    </shortdescription>
+                </image>
+            </figure>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Approximate the following three limits using the graph of the function <m>h(x)</m> below.
+                <ul>
+                    <li>
+                        <p>
+                            <m>\displaystyle \lim_{x\to -1} h(x)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle \lim_{x\to 0} h(x)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle \lim_{x\to 2} h(x)</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+            <figure xml:id="fig-ApproxLimit3">
+                <caption></caption>
+                <image source="Limits/ApproxLimit3.png" width="70%">
+                    <shortdescription>
+                        A piecewise-defined fucntion with three distinct pieces. For x-values less than -1, the graph is increasing and curves towards an open hole at (-1,0). Then, at x=-1, we have a point at (-1,1). The graph is constant at y=1 until a hole at (0,1). After this hole, it decreases from (0,1) towards and through (3,0) linearly.
+                    </shortdescription>
+                </image>
+            </figure>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Why do we say these are "approximations" or "estimations" of the limits we're interested in?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Are there any limit statements that you made that you are 100% confident in? Which ones?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Which limit statements are you least confident in? What about them makes them ones you aren't confident in?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                 What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?
+            </p>
+        </statement>
+    </task>
+    
+</activity>

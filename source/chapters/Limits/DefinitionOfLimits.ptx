@@ -2,41 +2,7 @@
 
 <section xml:id="sec-DefinitionOfLimits" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Definition of the Limit</title>
-  <introduction>
-    <p>
-      Almost 2,500 years ago, the Greek philosopher Zeno of Elea gifted the world with a set of philosophical paradoxes that provide the foundation for how we will begin our study of calculus. Perhaps the most famous of Zeno's paradoxes is the paradox of Achilles and the Tortoise.
-    </p>
-  </introduction>
-
-  <subsection xml:id="subsec-AchillesTortoise">
-    <title>Achilles and the Tortoise</title>
-    
-    <p>In the paradox of Achilles and the Tortoise, the Greek hero Achilles is in a race with a tortoise. Obviously the tortoise is much slower than Achilles, and so the tortoise gets a 100m head start. The race begins, and while the tortoise moves as quickly as it can, Achilles has the obvious advantage. They both are running at a constant speed, with Achilles running faster. Achilles runs 100m, catching up to the tortoise's starting point.</p>
-
-    <p>In the meantime, the tortoise has moved 2 meters. Achilles has almost caught up and passed the tortoise at this point! In a <em>very</em> short time, Achilles is able to run the 2 meters to catch up to where the tortoise was. Unfortunately, in that short amount of time, the tortoise has kept on moving, and is farther along by now.</p>
-
-    <p>Every time Achilles catches up to where the tortoise was, the tortoise has moved farther along, and Achilles has to keep catching up.</p>
-
-    <p>Can Achilles, the paragon of athleticism, ever catch the tortoise?</p>
-  </subsection>
-  <subsection xml:id="subsec-ModernRetelling">
-    <title>A Modern Retelling</title>
-    <p>A college student is excited about having enrolled in their first calculus class. On the first day of class, they head to class. When they enter the hallway with their classroom at the end, they take a breath and excitedly head to class. </p>
-
-    <p>In order to get to class, though, they have to travel halfway down the hallway. Almost there.</p>
-
-    <p>Now, to go the rest of the way, the student will half to get to the point that is halfway between them and the door. Getting closer.</p>
-
-    <p>They're getting excited. Finally, their first calculus class! But to get to the class, they have to reach the point halfway between them and the door.</p>
-
-    <p>Their smile starts fading. They repeat the process, and go halfway from their position to the door. They're closer, but not there yet. </p>
-
-    <p>If they keep having to reach the new halfway point, and that halfway point is never actually <em>at</em> the door, then will they ever get there?</p>
-
-    <p>Halfway to the door, then halfway again, closer and closer without ever getting there.</p>
-
-    <p>Will the student ever get there, or are they doomed to keep getting closer and closer without ever reaching the door? </p>
-  </subsection>
+  
   
   <subsection xml:id="subsec-DefiningALimit">
     <title>Defining a Limit</title>
@@ -90,8 +56,6 @@
   </subsection>
 <subsection xml:id="subsec-ApproximatingLimits">
   <title>Approximating Limits Using Our New Definition</title>
-  <p>
-    Text here.
-  </p>
+  <xi:include href="./activities/act-ApproximateLimitsGraphically.ptx" />
 </subsection>
 </section>
