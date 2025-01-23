@@ -8,7 +8,7 @@
     </p>
   </introduction>
 
-  <subsection xml:id="subsec-achilles-and-the-tortoise">
+  <subsection xml:id="subsec-AchillesTortoise">
     <title>Achilles and the Tortoise</title>
     
     <p>In the paradox of Achilles and the Tortoise, the Greek hero Achilles is in a race with a tortoise. Obviously the tortoise is much slower than Achilles, and so the tortoise gets a 100m head start. The race begins, and while the tortoise moves as quickly as it can, Achilles has the obvious advantage. They both are running at a constant speed, with Achilles running faster. Achilles runs 100m, catching up to the tortoise's starting point.</p>
@@ -19,7 +19,7 @@
 
     <p>Can Achilles, the paragon of athleticism, ever catch the tortoise?</p>
   </subsection>
-  <subsection xml:id="subsec-a-modern-retelling">
+  <subsection xml:id="subsec-ModernRetelling">
     <title>A Modern Retelling</title>
     <p>A college student is excited about having enrolled in their first calculus class. On the first day of class, they head to class. When they enter the hallway with their classroom at the end, they take a breath and excitedly head to class. </p>
 
@@ -38,25 +38,17 @@
     <p>Will the student ever get there, or are they doomed to keep getting closer and closer without ever reaching the door? </p>
   </subsection>
   
-  <subsection xml:id="subsec-defining-a-limit">
+  <subsection xml:id="subsec-DefiningALimit">
     <title>Defining a Limit</title>
 
-    <objectives>
-      <ul>
-        <li>
-          <p>
-            How do we formalize this idea of thinking about what happens "as we get close" to something?
-          </p>
-        </li>
-      </ul>
-    </objectives>
+    <xi:include href="./activities/act-CloseOrNot.ptx" />
     
     
     <definition xml:id="def-Limit">
       <title>Limit of a Function</title>  
         <statement>
           <p>
-            For the function <m>f(x)</m> defined at all <m>x</m>-xalues around <m>a</m> (except maybe at <m>x=a</m> itself), we say that the limit as <m>x</m> approaches <m>a</m> of <m>f(x)</m> is <m>L</m> if <m>f(x)</m> is arbitrarily close to the single, real number <m>L</m> whenever <m>x</m> is sufficiently close to, but not equal to, <m>a</m>.
+            For the function <m>f(x)</m> defined at all <m>x</m>-xalues around <m>a</m> (except maybe at <m>x=a</m> itself), we say that the <term>limit of <m>f(x)</m></term> as <m>x</m> approaches <m>a</m> is <m>L</m> if <m>f(x)</m> is arbitrarily close to the single, real number <m>L</m> whenever <m>x</m> is sufficiently close to, but not equal to, <m>a</m>.
             We write this as:
             <me>
               \lim_{x\to a} f(x) = L
@@ -65,5 +57,41 @@
           </p>
         </statement>
       </definition>
+      <p>
+        When we say "around <m>x=a</m>", we really just mean on either side of it. We can clarify if we want.
+      </p>
+      <definition xml:id="def-LeftSidedLimit">
+      <title>Left-Sided Limit</title>
+        <statement>
+          <p>
+            For the function <m>f(x)</m> defined at all <m>x</m>-xalues around and less than <m>a</m>, we say that the <term>left-sided limit of <m>f(x)</m></term> as <m>x</m> approaches <m>a</m> is <m>L</m> if <m>f(x)</m> is arbitrarily close to the single, real number <m>L</m> whenever <m>x</m> is sufficiently close to, but less than, <m>a</m>.
+            We write this as:
+            <me>
+              \lim_{x\to a^-} f(x) = L
+            </me>
+            or sometimes we write <m>f(x) \to L</m> when <m>x\to a^-</m>.
+          </p>
+        </statement>
+      </definition>
+
+      <definition xml:id="def-RightSidedLimit">
+      <title>Right-Sided Limit</title>
+        <statement>
+          <p>
+            For the function <m>f(x)</m> defined at all <m>x</m>-xalues around and greater than <m>a</m>, we say that the <term>right-sided limit of <m>f(x)</m></term> as <m>x</m> approaches <m>a</m> is <m>L</m> if <m>f(x)</m> is arbitrarily close to the single, real number <m>L</m> whenever <m>x</m> is sufficiently close to, but greater than, <m>a</m>.
+            We write this as:
+            <me>
+              \lim_{x\to a^+} f(x) = L
+            </me>
+            or sometimes we write <m>f(x) \to L</m> when <m>x\to a^+</m>.
+          </p>
+        </statement>
+      </definition>
   </subsection>
+<subsection xml:id="subsec-ApproximatingLimits">
+  <title>Approximating Limits Using Our New Definition</title>
+  <p>
+    Text here.
+  </p>
+</subsection>
 </section>

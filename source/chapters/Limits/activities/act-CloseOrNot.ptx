@@ -1,0 +1,113 @@
+<activity xml:id="act-CloseOrNot">
+    <title>Close or Not?</title>
+    <introduction>
+        <p>
+            We're going to try to think how we might define "close"-ness as a property, but, more importantly, we're going to try to realize the struggle of creating definitions in a mathematical context. We want our definition to be meaningful, precise, and useful, and those are hard goals to reach! Coming to some agreement on this is a particularly tricky task.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                For each of the following pairs of things, decide on which pairs you would classify as "close" to each other.
+                <ul>
+                    <li>
+                        <p>
+                            You, right now, and the nearest city with a population of 1 million or higher
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Your two nostrils
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            You and the door of the room you are in
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            You and the person nearest you
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The floor of the room you are in and the ceiling of the room you are in
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For your classification of "close," what does "close" mean? Finish the sentence: A pair of objects are <em>close</em> to each other if...
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's think about how close two things would have to be in order to satisfy everyone's definition of "close." Pick two objects that you think everyone would agree are "close," if by "everyone" we meant:
+                <ul>
+                    <li>
+                        <p>
+                            All of the people in the building you are in right now.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            All of the people in the city that you are in right now.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            All of the people in the country that you are in right now.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Everyone, everywhere, all at once.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's put ourselves into the context of functions and numbers. Consider the linear function <m>y=4x-1</m>. Our goal is to find some <m>x</m>-values that, when we put them into our function, give us <m>y</m>-value outputs that are "close" to the number 2. You get to define what close means.
+            </p>
+            <p>
+                First, evaluate <m>f(0)</m> and <m>f(1)</m>. Are these <m>y</m>-values "close" to 2, in your definition of "close?"
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Pick five more, different, numbers that are "close" to 2 in your definition of "close." For each one, find the <m>x</m>-values that give you those <m>y</m>-values.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How far away from <m>x=\frac{3}{4}</m> can you go and still have <m>y</m>-value outputs that are "close" to 2?
+            </p>
+        </statement>
+    </task>
+    <conclusion>
+        <p>
+            To wrap this up, think about your points that you have: you have a list of <m>x</m>-coordinates that are clustered around <m>x=\frac{3}{4}</m> where, when you evaluate <m>y=4x-1</m> at those <m>x</m>-values, you get <m>y</m>-values that are "close" to 2. Great!
+        </p>
+        <p>
+            Do you think others will agree? Or do you think that other people might look at your list of <m>y</m>-values and decide that some of them <em>aren't</em> close to 2?
+        </p>
+        <p>
+            Do you think you would agree with other peoples' lists? Or you do think that you might look at other peoples' lists of <m>y</m>-values and decide that some of them <em>aren't</em> close to 2?
+        </p>
+    </conclusion>
+</activity>
