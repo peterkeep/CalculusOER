@@ -1,0 +1,121 @@
+<activity xml:id="act-ApproximateLimitsNumerically">
+    <title>Approximating Limits Numerically</title>
+    <introduction>
+        <p>
+            For each of the following tables of function values, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Approximate <m>\displaystyle \lim_{x\to 1} f(x)</m> using the table of values of <m>f(x)</m> below.
+            </p>
+                <table>
+                <title></title>              
+                    <tabular>
+                        <row bottom="medium">
+                            <cell> <m>x</m></cell>
+                            <cell>0.5</cell>
+                            <cell>0.9</cell>
+                            <cell>0.99</cell>
+                            <cell>1</cell>
+                            <cell>1.01</cell>
+                            <cell>1.1</cell>
+                            <cell>1.5</cell>
+                        </row>
+                        <row>
+                            <cell><m>f(x)</m></cell>
+                            <cell>8.672</cell>
+                            <cell>9.2</cell>
+                            <cell>9.0001</cell>
+                            <cell>-7</cell>
+                            <cell>8.9998</cell>
+                            <cell>9.5</cell>
+                            <cell>7.59</cell>
+                        </row>
+                    </tabular>
+                </table>
+        </statement>
+    </task>
+
+    <task>
+        <statement>
+            <p>
+                Approximate <m>\displaystyle \lim_{x\to -3} g(x)</m> using the table of values of <m>g(x)</m> below.
+            </p>
+                <table>
+                <title></title>              
+                    <tabular>
+                        <row bottom="medium">
+                            <cell> <m>x</m></cell>
+                            <cell> -3.5 </cell>
+                            <cell> -3.1 </cell>
+                            <cell> -3.01 </cell>
+                            <cell> -3 </cell>
+                            <cell> -2.99 </cell>
+                            <cell> -2.9 </cell>
+                            <cell> -2.5 </cell>
+                        </row>
+                        <row>
+                            <cell><m>g(x)</m></cell>
+                            <cell> -4.41 </cell>
+                            <cell> -3.89 </cell>
+                            <cell> -4.003 </cell>
+                            <cell> -4 </cell>
+                            <cell> 7.035 </cell>
+                            <cell> 2.06 </cell>
+                            <cell> -4.65 </cell>
+                        </row>
+                    </tabular>
+                </table>
+        </statement>
+    </task>
+
+    <task>
+        <statement>
+            <p>
+                Approximate <m>\displaystyle \lim_{x\to \pi} h(x)</m> using the table of values of <m>h(x)</m> below.
+            </p>
+                <table>
+                <title></title>              
+                    <tabular>
+                        <row bottom="medium">
+                            <cell> <m> x </m></cell>
+                            <cell> 3.1 </cell>
+                            <cell> 3.14 </cell>
+                            <cell> 3.141 </cell>
+                            <cell> <m>\pi</m> </cell>
+                            <cell> 3.142 </cell>
+                            <cell> 3.15 </cell>
+                            <cell> 3.2</cell>
+                        </row>
+                        <row>
+                            <cell><m>h(x)</m></cell>
+                            <cell> 6 </cell>
+                            <cell> 6 </cell>
+                            <cell> 6 </cell>
+                            <cell> undefined </cell>
+                            <cell> 5.915 </cell>
+                            <cell> 6.75 </cell>
+                            <cell> 8.12</cell>
+                        </row>
+                    </tabular>
+                </table>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Are you 100% confident about the existence (or lack of existence) of any of these limits?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?
+            </p>
+        </statement>
+    </task>
+    
+</activity>
