@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "The Definition of the Limit",
-  "body": " The Definition of the Limit   Defining a Limit   Close or Not?   We're going to try to think how we might define \"close\"-ness as a property, but, more importantly, we're going to try to realize the struggle of creating definitions in a mathematical context. We want our definition to be meaningful, precise, and useful, and those are hard goals to reach! Coming to some agreement on this is a particularly tricky task.    For each of the following pairs of things, decide on which pairs you would classify as \"close\" to each other.   You, right now, and the nearest city with a population of 1 million or higher    Your two nostrils    You and the door of the room you are in    You and the person nearest you    The floor of the room you are in and the ceiling of the room you are in       For your classification of \"close,\" what does \"close\" mean? Finish the sentence: A pair of objects are close to each other if...    Let's think about how close two things would have to be in order to satisfy everyone's definition of \"close.\" Pick two objects that you think everyone would agree are \"close,\" if by \"everyone\" we meant:   All of the people in the building you are in right now.    All of the people in the city that you are in right now.    All of the people in the country that you are in right now.    Everyone, everywhere, all at once.       Let's put ourselves into the context of functions and numbers. Consider the linear function . Our goal is to find some -values that, when we put them into our function, give us -value outputs that are \"close\" to the number 2. You get to define what close means.  First, evaluate and . Are these -values \"close\" to 2, in your definition of \"close?\"    Pick five more, different, numbers that are \"close\" to 2 in your definition of \"close.\" For each one, find the -values that give you those -values.    How far away from can you go and still have -value outputs that are \"close\" to 2?    To wrap this up, think about your points that you have: you have a list of -coordinates that are clustered around where, when you evaluate at those -values, you get -values that are \"close\" to 2. Great!  Do you think others will agree? Or do you think that other people might look at your list of -values and decide that some of them aren't close to 2?  Do you think you would agree with other peoples' lists? Or you do think that you might look at other peoples' lists of -values and decide that some of them aren't close to 2?     Limit of a Function   For the function defined at all -xalues around (except maybe at itself), we say that the limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but not equal to, . We write this as: or sometimes we write when .    When we say \"around \", we really just mean on either side of it. We can clarify if we want.   Left-Sided Limit   For the function defined at all -xalues around and less than , we say that the left-sided limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but less than, . We write this as: or sometimes we write when .     Right-Sided Limit   For the function defined at all -xalues around and greater than , we say that the right-sided limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but greater than, . We write this as: or sometimes we write when .      Approximating Limits Using Our New Definition   Approximating Limits   For each of the following graphs of functions, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.    Approximate using the graph of the function below.     A decreasing linear function with a single point removed from the line. At the x-value x=1, there is a hole on the line at y=1, and a point is located at (1,0).      Approximate using the graph of the function below.     A piecewise defined function, where the graph is split up into two sections around x=2. For x-values less than (and equal) to 2, the function is decreasing and curves downward towards a filled in point at (2,1). Then the graph drops to an open point at (2,0), where the graph is linear and increasing afterwards from that hole.      Approximate the following three limits using the graph of the function below.                      A piecewise-defined fucntion with three distinct pieces. For x-values less than -1, the graph is increasing and curves towards an open hole at (-1,0). Then, at x=-1, we have a point at (-1,1). The graph is constant at y=1 until a hole at (0,1). After this hole, it decreases from (0,1) towards and through (3,0) linearly.      Why do we say these are \"approximations\" or \"estimations\" of the limits we're interested in?    Are there any limit statements that you made that you are 100% confident in? Which ones?    Which limit statements are you least confident in? What about them makes them ones you aren't confident in?    What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?     "
+  "body": " The Definition of the Limit   Defining a Limit   Close or Not?   We're going to try to think how we might define \"close\"-ness as a property, but, more importantly, we're going to try to realize the struggle of creating definitions in a mathematical context. We want our definition to be meaningful, precise, and useful, and those are hard goals to reach! Coming to some agreement on this is a particularly tricky task.    For each of the following pairs of things, decide on which pairs you would classify as \"close\" to each other.   You, right now, and the nearest city with a population of 1 million or higher    Your two nostrils    You and the door of the room you are in    You and the person nearest you    The floor of the room you are in and the ceiling of the room you are in       For your classification of \"close,\" what does \"close\" mean? Finish the sentence: A pair of objects are close to each other if...    Let's think about how close two things would have to be in order to satisfy everyone's definition of \"close.\" Pick two objects that you think everyone would agree are \"close,\" if by \"everyone\" we meant:   All of the people in the building you are in right now.    All of the people in the city that you are in right now.    All of the people in the country that you are in right now.    Everyone, everywhere, all at once.       Let's put ourselves into the context of functions and numbers. Consider the linear function . Our goal is to find some -values that, when we put them into our function, give us -value outputs that are \"close\" to the number 2. You get to define what close means.  First, evaluate and . Are these -values \"close\" to 2, in your definition of \"close?\"    Pick five more, different, numbers that are \"close\" to 2 in your definition of \"close.\" For each one, find the -values that give you those -values.    How far away from can you go and still have -value outputs that are \"close\" to 2?    To wrap this up, think about your points that you have: you have a list of -coordinates that are clustered around where, when you evaluate at those -values, you get -values that are \"close\" to 2. Great!  Do you think others will agree? Or do you think that other people might look at your list of -values and decide that some of them aren't close to 2?  Do you think you would agree with other peoples' lists? Or you do think that you might look at other peoples' lists of -values and decide that some of them aren't close to 2?     Limit of a Function   For the function defined at all -xalues around (except maybe at itself), we say that the limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but not equal to, . We write this as: or sometimes we write when .    When we say \"around \", we really just mean on either side of it. We can clarify if we want.   Left-Sided Limit   For the function defined at all -xalues around and less than , we say that the left-sided limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but less than, . We write this as: or sometimes we write when .     Right-Sided Limit   For the function defined at all -xalues around and greater than , we say that the right-sided limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but greater than, . We write this as: or sometimes we write when .      Approximating Limits Using Our New Definition   Approximating Limits   For each of the following graphs of functions, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.    Approximate using the graph of the function below.     A decreasing linear function with a single point removed from the line. At the x-value x=1, there is a hole on the line at y=1, and a point is located at (1,0).      Approximate using the graph of the function below.     A piecewise defined function, where the graph is split up into two sections around x=2. For x-values less than (and equal) to 2, the function is decreasing and curves downward towards a filled in point at (2,1). Then the graph drops to an open point at (2,0), where the graph is linear and increasing afterwards from that hole.      Approximate the following three limits using the graph of the function below.                      A piecewise-defined fucntion with three distinct pieces. For x-values less than -1, the graph is increasing and curves towards an open hole at (-1,0). Then, at x=-1, we have a point at (-1,1). The graph is constant at y=1 until a hole at (0,1). After this hole, it decreases from (0,1) towards and through (3,0) linearly.      Why do we say these are \"approximations\" or \"estimations\" of the limits we're interested in?    Are there any limit statements that you made that you are 100% confident in? Which ones?    Which limit statements are you least confident in? What about them makes them ones you aren't confident in?    What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?     Approximating Limits Numerically   For each of the following tables of function values, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.    Approximate using the table of values of below.        0.5  0.9  0.99  1  1.01  1.1  1.5     8.672  9.2  9.0001  -7  8.9998  9.5  7.59       Approximate using the table of values of below.        -3.5  -3.1  -3.01  -3  -2.99  -2.9  -2.5     -4.41  -3.89  -4.003  -4  7.035  2.06  -4.65       Approximate using the table of values of below.        3.1  3.14  3.141     3.142  3.15  3.2     6  6  6  undefined  5.915  6.75  8.12       Are you 100% confident about the existence (or lack of existence) of any of these limits?    What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?     "
 },
 {
   "id": "act-CloseOrNot",
@@ -64,22 +64,31 @@ var ptx_lunr_docs = [
   "body": " Approximating Limits   For each of the following graphs of functions, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.    Approximate using the graph of the function below.     A decreasing linear function with a single point removed from the line. At the x-value x=1, there is a hole on the line at y=1, and a point is located at (1,0).      Approximate using the graph of the function below.     A piecewise defined function, where the graph is split up into two sections around x=2. For x-values less than (and equal) to 2, the function is decreasing and curves downward towards a filled in point at (2,1). Then the graph drops to an open point at (2,0), where the graph is linear and increasing afterwards from that hole.      Approximate the following three limits using the graph of the function below.                      A piecewise-defined fucntion with three distinct pieces. For x-values less than -1, the graph is increasing and curves towards an open hole at (-1,0). Then, at x=-1, we have a point at (-1,1). The graph is constant at y=1 until a hole at (0,1). After this hole, it decreases from (0,1) towards and through (3,0) linearly.      Why do we say these are \"approximations\" or \"estimations\" of the limits we're interested in?    Are there any limit statements that you made that you are 100% confident in? Which ones?    Which limit statements are you least confident in? What about them makes them ones you aren't confident in?    What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?   "
 },
 {
-  "id": "sec-ApproximatingLimits",
-  "level": "1",
-  "url": "sec-ApproximatingLimits.html",
-  "type": "Section",
-  "number": "1.3",
-  "title": "Approximating Limits Numerically and Graphically",
-  "body": " Approximating Limits Numerically and Graphically  Text of section.  "
+  "id": "act-ApproximateLimitsNumerically",
+  "level": "2",
+  "url": "sec-DefinitionOfLimits.html#act-ApproximateLimitsNumerically",
+  "type": "Activity",
+  "number": "1.2.3",
+  "title": "Approximating Limits Numerically.",
+  "body": " Approximating Limits Numerically   For each of the following tables of function values, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.    Approximate using the table of values of below.        0.5  0.9  0.99  1  1.01  1.1  1.5     8.672  9.2  9.0001  -7  8.9998  9.5  7.59       Approximate using the table of values of below.        -3.5  -3.1  -3.01  -3  -2.99  -2.9  -2.5     -4.41  -3.89  -4.003  -4  7.035  2.06  -4.65       Approximate using the table of values of below.        3.1  3.14  3.141     3.142  3.15  3.2     6  6  6  undefined  5.915  6.75  8.12       Are you 100% confident about the existence (or lack of existence) of any of these limits?    What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?   "
 },
 {
   "id": "sec-EvaluatingLimits",
   "level": "1",
   "url": "sec-EvaluatingLimits.html",
   "type": "Section",
-  "number": "1.4",
+  "number": "1.3",
   "title": "Evaluating Limits",
   "body": " Evaluating Limits  Text of section.  "
+},
+{
+  "id": "sec-IndeterminateForms",
+  "level": "1",
+  "url": "sec-IndeterminateForms.html",
+  "type": "Section",
+  "number": "1.4",
+  "title": "First Indeterminate Forms",
+  "body": " First Indeterminate Forms  Text of section.  "
 },
 {
   "id": "sec-InfiniteLimits",
@@ -109,20 +118,11 @@ var ptx_lunr_docs = [
   "body": " Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.   "
 },
 {
-  "id": "sec-IndeterminateForms",
-  "level": "1",
-  "url": "sec-IndeterminateForms.html",
-  "type": "Section",
-  "number": "1.7",
-  "title": "First Indeterminate Forms",
-  "body": " First Indeterminate Forms  Text of section.  "
-},
-{
   "id": "sec-SqueezeTheorem",
   "level": "1",
   "url": "sec-SqueezeTheorem.html",
   "type": "Section",
-  "number": "1.8",
+  "number": "1.7",
   "title": "The Squeeze Theorem and Other Tricks",
   "body": " The Squeeze Theorem and Other Tricks   The Squeeze Theorem   For some functions , , and which are all defined and ordered for -values near (but not necessarily at itself), and for some real number , if we know that then we also know that .    "
 },
@@ -131,7 +131,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-SqueezeTheorem.html#thm-SqueezeTheorem",
   "type": "Theorem",
-  "number": "1.8.1",
+  "number": "1.7.1",
   "title": "The Squeeze Theorem.",
   "body": " The Squeeze Theorem   For some functions , , and which are all defined and ordered for -values near (but not necessarily at itself), and for some real number , if we know that then we also know that .   "
 },
@@ -140,7 +140,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Continuity.html",
   "type": "Section",
-  "number": "1.9",
+  "number": "1.8",
   "title": "Continuity and the Intermediate Value Theorem",
   "body": " Continuity and the Intermediate Value Theorem  Text of section.  "
 },
