@@ -9,5 +9,96 @@
 
     <xi:include href="./activities/act-EstimatingToEvaluating-2.ptx" />
   </subsection>
+  <subsection xml:id="subsec-LimitProperties">
+    <title>Limit Properties</title>
+    <theorem xml:id="thm-CombinationsOfLimits">
+      <title>Combinations of Limits</title>
+      <statement>
+        <p>
+          If <m>f(x)</m> and <m>g(x)</m> are two functions defined at <m>x</m>-values around, but maybe not at, <m>x=a</m> and <m>\displaystyle \lim_{x\to a}f(x)</m> and <m>\displaystyle \lim_{x\to a}g(x)</m> both exist, then we can evaluate limits of combinations of these functions.
+        </p>
+        <ol>
+          <li>
+            <p>
+              <em>Sums:</em> The limit of the sum of <m>f(x)</m> and <m>g(x)</m> is the sum of the limits of <m>f(x)</m> and <m>g(x)</m>:
+              <me>
+                \lim_{x\to a}\left(f(x)+g(x)\right) = \lim_{x\to a} f(x) + \lim_{x\to a} g(x)
+              </me>
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Differences:</em> The limit of a difference of <m>f(x)</m> and <m>g(x)</m> is the difference of the limits of <m>f(x)</m> and <m>g(x)</m>:
+              <me>
+                \lim_{x\to a} \left(f(x)-g(x)\right) = \lim_{x\to a} f(x) - \lim_{x\to a} g(x)
+              </me>
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Coefficients:</em> If <m>k</m> is some real number coefficient, then:
+              <me>\lim_{x\to a} kf(x) = k\lim_{x\to a} f(x)</me>
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Products:</em> The limit of a product of <m>f(x)</m> and <m>g(x)</m> is the product of the limits of <m>f(x)</m> and <m>g(x)</m>:
+              <me>
+                \lim_{x\to a} \left(f(x)\cdot g(x)\right) = \left(\lim_{x\to a}f(x)\right) \cdot \left(\lim_{x\to a}g(x)\right)
+              </me>
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Quotients:</em> The limit of a quotient of <m>f(x)</m> and <m>g(x)</m> is the quotient of the limits of <m>f(x)</m> and <m>g(x)</m> (provided that you do not divide by 0):
+              <me>
+                \lim_{x\to a} \left(\frac{f(x)}{g(x)}\right) = \frac{\displaystyle \left(\lim_{x\to a} f(x)\right)}{\displaystyle \left(\lim_{x\to a}g(x)\right)} \hspace{1cm} (\text{if } \lim_{x\to a} g(x)\neq 0)
+              </me>
+            </p>
+          </li>
+        </ol>
+      </statement>
+    </theorem>
+    <theorem xml:id="thm-LimitsOfTwoFunctions">
+      <title>Limits of Two Basic Functions</title>
+      <statement>
+        <p>
+          Let <m>a</m> be some real number.
+          <ol>
+            <li>
+              <p>
+                <em>Limit of a Constant Function:</em> If <m>k</m> is some real number constant, then:
+                <me>
+                  \lim_{x\to a} k = k
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>Limit of the Identity Function:</em> 
+                <me>
+                  \lim_{x\to a} x = a
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </theorem>
+    <xi:include href="./activities/act-LimitsOfPolynomials.ptx" />
+    <theorem xml:id="thm-LimitsOfPolynomials">
+      <title>Limits of Polynomials</title>
+      <statement>
+        <p>
+          If <m>p(x)</m> is a polynomial function and <m>a</m> is some real number, then:
+          <me>
+            \lim_{x\to a}p(x) = p(a)
+          </me>
+        </p>
+      </statement>
+    </theorem>
+    
+    
+  </subsection>
 
 </section>

@@ -1,0 +1,63 @@
+<activity xml:id="act-LimitsOfPolynomials">
+    <title>Limits of Polynomial Functions</title>
+    <introduction>
+        <p>
+            We're going to use a combination of properties from <xref ref="thm-CombinationsOfLimits"/> and <xref ref="thm-LimitsOfTwoFunctions"/> to think a bit more deeply about polynomial functions. Let's consider a polynomial function:
+                <me>
+                    f(x) =  2x^4-4x^3+\frac{x}{2}-5
+                </me>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                We're going to evaluate the limit <m>\displaystyle \lim_{x\to 1} f(x)</m>. First, use the properties from <xref ref="thm-CombinationsOfLimits"/> to re-write this limit as 4 different limits added or subtracted together.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>\lim_{x\to 1} (2x^4) - \lim_{x\to 1} (4x^3) + \lim_{x\to 1}\left(\frac{x}{2}\right) - \lim_{x\to 1} 5</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now, for each of these limits, re-write them as products of things until you have only limits of constants and identity functions, as in <xref ref="thm-LimitsOfTwoFunctions"/>. Evaluate your limits.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <me>2\left(\lim_{x\to 1} x\right)^4 - 4\left(\lim_{x\to 1} x\right)^3 + \frac{1}{2}\left(\lim_{x\to 1}x\right) - \lim_{x\to 1} 5</me>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Based on the definition of a limit (<xref ref="def-Limit"/>), we normally say that <m>\displaystyle \lim_{x\to 1} f(x)</m> is not dependent on the value of <m>f(1)</m>. Why do we say this?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Compare the values of <m>\displaystyle \lim_{x\to 1} f(x)</m> and <m>f(1)</m>. Why do these values feel connected?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Come up with a new polynomial function: some combination of coefficients with <m>x</m>'s raised to natural number exponents. Call your new polynomial function <m>g(x)</m>. Evaluate <m>\displaystyle \lim_{x\to -1} g(x)</m> and compare the value to <m>g(-1)</m>. Explain why these values are the same.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Explain why, for any polynomial function <m>p(x)</m>, the limit <m>\displaystyle \lim_{x\to a}p(x)</m> is the same value as <m>p(a)</m>.
+            </p>
+        </statement>
+    </task>
+</activity>
