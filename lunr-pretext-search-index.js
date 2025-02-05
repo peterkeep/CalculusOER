@@ -79,7 +79,25 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Evaluating Limits",
-  "body": " Evaluating Limits  Text of section.  "
+  "body": " Evaluating Limits   Adding Precision to Our Estimations   From Estimating to Evaluating Limits (Part 1)   Let's consider the following graphs of functions and .    The function decreases linearly towards (1,1), but has a hole there. After the holw the function increases away from this point. There is a point above the curve at (1,3).   Graph of the function .     The graph increases until (1,3) and then decreases down to the filled in point at (2,2). There is a jump down towards an open point at (2,1). The function continues decreasing from here until (3,0), where it starts increasing again.   Graph of the function .       Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                     Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                     Find the values of and .    For the limits and function values above, which of these are you most confident in? What about the limit, function value, or graph of the function makes you confident about your answer?  Similarly, which of these are you the least confident in? What about the limit, function value, or graph of the function makes you not have confidence in your answer?     From Estimating to Evaluating Limits (Part 2)   Let's consider the following graphs of functions and , now with the added labels of the equations defining each part of these functions.    The function decreases linearly towards (1,1), but has a hole there. After the holw the function increases away from this point. There is a point above the curve at (1,3). The graph also has the function labeled on it: y=2-x when x is less than 1, and y = x^2\/4 - x\/2 + 5\/4 when x is greater than 1.   Graph of the function .     The graph increases until (1,3) and then decreases down to the filled in point at (2,2). There is a jump down towards an open point at (2,1). The function continues decreasing from here until (3,0), where it starts increasing again. The graph also has the function labeled on it: y=3-(x-1)^2 when x is less than or equal to 2, and y=(x-3)^2 when x is greater than 2.   Graph of the function .       Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                     Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                     Does the addition of the function rules change the level of confidence you have in these answers? What limits are you more confident in with this added information?    Consider these functions without their graphs:  Find the limits and . Compare these values of and : are they related at all?     "
+},
+{
+  "id": "act-EstimatingToEvaluating-1",
+  "level": "2",
+  "url": "sec-EvaluatingLimits.html#act-EstimatingToEvaluating-1",
+  "type": "Activity",
+  "number": "1.3.1",
+  "title": "From Estimating to Evaluating Limits (Part 1).",
+  "body": " From Estimating to Evaluating Limits (Part 1)   Let's consider the following graphs of functions and .    The function decreases linearly towards (1,1), but has a hole there. After the holw the function increases away from this point. There is a point above the curve at (1,3).   Graph of the function .     The graph increases until (1,3) and then decreases down to the filled in point at (2,2). There is a jump down towards an open point at (2,1). The function continues decreasing from here until (3,0), where it starts increasing again.   Graph of the function .       Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                     Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                     Find the values of and .    For the limits and function values above, which of these are you most confident in? What about the limit, function value, or graph of the function makes you confident about your answer?  Similarly, which of these are you the least confident in? What about the limit, function value, or graph of the function makes you not have confidence in your answer?   "
+},
+{
+  "id": "act-EstimatingToEvaluating-2",
+  "level": "2",
+  "url": "sec-EvaluatingLimits.html#act-EstimatingToEvaluating-2",
+  "type": "Activity",
+  "number": "1.3.2",
+  "title": "From Estimating to Evaluating Limits (Part 2).",
+  "body": " From Estimating to Evaluating Limits (Part 2)   Let's consider the following graphs of functions and , now with the added labels of the equations defining each part of these functions.    The function decreases linearly towards (1,1), but has a hole there. After the holw the function increases away from this point. There is a point above the curve at (1,3). The graph also has the function labeled on it: y=2-x when x is less than 1, and y = x^2\/4 - x\/2 + 5\/4 when x is greater than 1.   Graph of the function .     The graph increases until (1,3) and then decreases down to the filled in point at (2,2). There is a jump down towards an open point at (2,1). The function continues decreasing from here until (3,0), where it starts increasing again. The graph also has the function labeled on it: y=3-(x-1)^2 when x is less than or equal to 2, and y=(x-3)^2 when x is greater than 2.   Graph of the function .       Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                     Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                     Does the addition of the function rules change the level of confidence you have in these answers? What limits are you more confident in with this added information?    Consider these functions without their graphs:  Find the limits and . Compare these values of and : are they related at all?   "
 },
 {
   "id": "sec-IndeterminateForms",
@@ -106,14 +124,23 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.6",
   "title": "End Behavior Limits",
-  "body": " End Behavior Limits  Text of section.   Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.    "
+  "body": " End Behavior Limits  Text of section.   Limit at Infinity   If is defined for all large -values     Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.    "
+},
+{
+  "id": "def-LimitAtInfinity",
+  "level": "2",
+  "url": "sec-EndBehaviorLimits.html#def-LimitAtInfinity",
+  "type": "Definition",
+  "number": "1.6.1",
+  "title": "Limit at Infinity.",
+  "body": " Limit at Infinity   If is defined for all large -values   "
 },
 {
   "id": "thm-PolynomialEndBehavior",
   "level": "2",
   "url": "sec-EndBehaviorLimits.html#thm-PolynomialEndBehavior",
   "type": "Theorem",
-  "number": "1.6.1",
+  "number": "1.6.2",
   "title": "Polynomial End Behavior Limits.",
   "body": " Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.   "
 },
