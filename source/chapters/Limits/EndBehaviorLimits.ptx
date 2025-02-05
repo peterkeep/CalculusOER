@@ -4,24 +4,32 @@
   <title>End Behavior Limits</title>
 
   <p> Text of section. </p>
-    <theorem xml:id="thm-PolynomialEndBehavior">
-      <title>Polynomial End Behavior Limits</title>
-      <statement>
-        <p>
-          For some polynomial function:
-          <me>
-            p(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0
-          </me>
-          with <m>n</m> a positive integer (the degree) and all of the coefficients <m>a_0, a_1, ..., a_n</m> real numbers (with <m>a_n\neq 0</m>), then 
-          <me>
-            \lim_{x\to\infty} p(x) = \lim_{x\to\infty} a_n x^n
-          </me>         
-        </p>
-        <p>
-          That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.
-        </p>
-      </statement>
-    </theorem>
+  <definition xml:id="def-LimitAtInfinity">
+  <title>Limit at Infinity</title>
+    <statement>
+      <p>
+        If <m>f(x)</m> is defined for all large <m>x</m>-values 
+      </p>
+    </statement>
+  </definition>
+  <theorem xml:id="thm-PolynomialEndBehavior">
+    <title>Polynomial End Behavior Limits</title>
+    <statement>
+      <p>
+        For some polynomial function:
+        <me>
+          p(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0
+        </me>
+        with <m>n</m> a positive integer (the degree) and all of the coefficients <m>a_0, a_1, ..., a_n</m> real numbers (with <m>a_n\neq 0</m>), then 
+        <me>
+          \lim_{x\to\infty} p(x) = \lim_{x\to\infty} a_n x^n
+        </me>         
+      </p>
+      <p>
+        That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.
+      </p>
+    </statement>
+  </theorem>
     
 
 </section>
