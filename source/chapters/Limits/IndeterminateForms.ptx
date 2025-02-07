@@ -2,7 +2,32 @@
 
 <section xml:id="sec-IndeterminateForms" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>First Indeterminate Forms</title>
+  <introduction>
 
-  <p> Text of section. </p>
+    <xi:include href="./activities/act-SlightlyDifferentFunctions.ptx" />
 
+     <theorem xml:id="thm-SlightlyDifferentFunctions">
+        <title>Limits of (Slightly) Different Functions</title>    
+        <statement>
+          <p>
+            If <m>f(x)</m> and <m>g(x)</m> are two functions defined at <m>x</m>-values around <m>a</m> (but maybe not at <m>x=a</m> itself) with <m>f(x) = g(x)</m> for the <m>x</m>-values around <m>a</m> but with <m>f(a)\neq g(a)</m> then <m>\displaystyle \lim_{x\to a}f(x) = \lim_{x\to a}g(x)</m>, if the limits exist.
+          </p>
+        </statement>
+      </theorem>
+  </introduction>
+  <subsection xml:id="subsec-FirstIndeterminateForms">
+    <title>A First Introduction to Indeterminate Forms</title>
+    <definition xml:id="def-IndeterminateForm">
+    <title>Indeterminate Form</title> 
+      <statement>
+        <p>
+          We say that a limit has an <term>indeterminate form</term> if the general structure of the limit could take on any different value, or not exist, depending on the specific circumstances.
+        </p>
+        <p>
+          For instance, if <m>\displaystyle \lim_{x\to a} f(x) = 0</m> and <m>\displaystyle \lim_{x\to a} g(x) = 0</m>, then we say that the limit <m>\displaystyle \lim_{x\to a}\left(\frac{f(x)}{g(x)}\right)</m> has an indeterminate form. We typically denote this using the informal symbol <m>\frac{0}{0}</m>.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  
 </section>

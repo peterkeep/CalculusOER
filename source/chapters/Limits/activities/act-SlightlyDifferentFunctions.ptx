@@ -1,0 +1,72 @@
+<activity xml:id="act-SlightlyDifferentFunctions">
+    <title>Limits of (Slightly) Different Functions</title>
+    <task>
+        <statement>
+            <p>
+                Using the graph of <m>f(x)</m> below, approximate <m>\displaystyle \lim_{x\to 1} f(x)</m>.
+                <figure xml:id="fig-SlightlyDifferent-1">
+                <image source="./Limits/SlightlyDifferent-1.png" width="50%">
+                    <shortdescription>A graph of a decreasing function down to an open hole at (1,1). There is a point above the curve at (1,3). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing.</shortdescription>
+                </image>
+                    <caption></caption>
+                </figure>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Using the graph of the slightly different function <m>g(x)</m> below, approximate <m>\displaystyle \lim_{x\to 1} g(x)</m>.
+                <figure xml:id="fig-SlightlyDifferent-2">
+                <image source="./Limits/SlightlyDifferent-2.png" width="50%">
+                    <shortdescription>A graph of a decreasing function down to an open hole at (1,1). There is a point below the curve at (1,-1). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing. It is the same graph as the function f(x) above other than the point at (1,3) being at (1,-1).</shortdescription>
+                </image>
+                    <caption></caption>
+                </figure>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Compare the values of <m>f(1)</m> and <m>g(1)</m> and discuss the impact that this difference had on the values of the limits.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For the function <m>r(t)</m> defined below, evaluate the limit <m>\displaystyle \lim_{x\to 4} r(t)</m>.
+                <me>
+                    r(t) = 
+                    \begin{cases}
+                        2t - \frac{4}{t} \amp \text{when } t\lt 4\\
+                        8 \amp \text{when } t=4\\
+                        t^2 - t-5 \amp \text{when } t\gt 4
+                    \end{cases}
+                </me>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For the slightly different function <m>s(t)</m> defined below, evaluate the limit <m>\displaystyle \lim_{x\to 4} s(t)</m>.
+                <me>
+                    s(t) = 
+                    \begin{cases}
+                        2t - \frac{4}{t} \amp \text{when } t\leq 4\\
+                        t^2 - t-5 \amp \text{when } t\gt 4
+                    \end{cases}
+                </me>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Do the changes in the way that the function was defined impact the evaluation of the limit at all? Why not?
+            </p>
+        </statement>
+    </task>
+</activity>
