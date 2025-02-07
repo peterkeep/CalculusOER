@@ -100,7 +100,7 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.5';
+eBookConfig.runestone_version = '7.5.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
@@ -187,7 +187,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-LimitProperties" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Limit Properties</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-IndeterminateForms.html" class="internal"><span class="codenumber">1.4</span> <span class="title">First Indeterminate Forms</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-IndeterminateForms.html" class="internal"><span class="codenumber">1.4</span> <span class="title">First Indeterminate Forms</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-FirstIndeterminateForms" class="internal"><span class="codenumber">1.4.1</span> <span class="title">A First Introduction to Indeterminate Forms</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-InfiniteLimits.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Infinite Limits</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-EndBehaviorLimits.html" class="internal"><span class="codenumber">1.6</span> <span class="title">End Behavior Limits</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.7</span> <span class="title">The Squeeze Theorem and Other Tricks</span></a></div></li>
@@ -406,7 +409,55 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-IndeterminateForms"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.4</span><span class="space"> </span><span class="title">First Indeterminate Forms</span>
 </h2>
-<div class="para" id="sec-IndeterminateForms-2">Text of section.</div></section></div>
+<section class="introduction" id="sec-IndeterminateForms-2"><article class="activity project-like" id="act-SlightlyDifferentFunctions"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Limits of (Slightly) Different Functions.</span>
+</h3>
+<article class="task exercise-like" id="act-SlightlyDifferentFunctions-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="act-SlightlyDifferentFunctions-2-1-1">Using the graph of <span class="process-math">\(f(x)\)</span> below, approximate <span class="process-math">\(\displaystyle \lim_{x\to 1} f(x)\text{.}\)</span> <figure class="figure figure-like" id="fig-SlightlyDifferent-1"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./Limits/SlightlyDifferent-1.png" class="contained" alt="A graph of a decreasing function down to an open hole at (1,1). There is a point above the curve at (1,3). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div></article><article class="task exercise-like" id="act-SlightlyDifferentFunctions-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-SlightlyDifferentFunctions-3-1-1">Using the graph of the slightly different function <span class="process-math">\(g(x)\)</span> below, approximate <span class="process-math">\(\displaystyle \lim_{x\to 1} g(x)\text{.}\)</span> <figure class="figure figure-like" id="fig-SlightlyDifferent-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./Limits/SlightlyDifferent-2.png" class="contained" alt="A graph of a decreasing function down to an open hole at (1,1). There is a point below the curve at (1,-1). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing. It is the same graph as the function f(x) above other than the point at (1,3) being at (1,-1)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div></article><article class="task exercise-like" id="act-SlightlyDifferentFunctions-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="act-SlightlyDifferentFunctions-4-1-1">Compare the values of <span class="process-math">\(f(1)\)</span> and <span class="process-math">\(g(1)\)</span> and discuss the impact that this difference had on the values of the limits.</div></article><article class="task exercise-like" id="act-SlightlyDifferentFunctions-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para logical" id="act-SlightlyDifferentFunctions-5-1-1">
+<div class="para">For the function <span class="process-math">\(r(t)\)</span> defined below, evaluate the limit <span class="process-math">\(\displaystyle \lim_{x\to 4} r(t)\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r(t) = 
+\begin{cases}
+2t - \frac{4}{t} \amp \text{when } t\lt 4\\
+8 \amp \text{when } t=4\\
+t^2 - t-5 \amp \text{when } t\gt 4
+\end{cases}
+\end{equation*}
+</div>
+</div></article><article class="task exercise-like" id="act-SlightlyDifferentFunctions-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para logical" id="act-SlightlyDifferentFunctions-6-1-1">
+<div class="para">For the slightly different function <span class="process-math">\(s(t)\)</span> defined below, evaluate the limit <span class="process-math">\(\displaystyle \lim_{x\to 4} s(t)\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s(t) = 
+\begin{cases}
+2t - \frac{4}{t} \amp \text{when } t\leq 4\\
+t^2 - t-5 \amp \text{when } t\gt 4
+\end{cases}
+\end{equation*}
+</div>
+</div></article><article class="task exercise-like" id="act-SlightlyDifferentFunctions-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="act-SlightlyDifferentFunctions-7-1-1">Do the changes in the way that the function was defined impact the evaluation of the limit at all? Why not?</div></article></article><article class="theorem theorem-like" id="thm-SlightlyDifferentFunctions"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Limits of (Slightly) Different Functions.</span>
+</h3>
+<div class="para" id="thm-SlightlyDifferentFunctions-2-1">If <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are two functions defined at <span class="process-math">\(x\)</span>-values around <span class="process-math">\(a\)</span> (but maybe not at <span class="process-math">\(x=a\)</span> itself) with <span class="process-math">\(f(x) = g(x)\)</span> for the <span class="process-math">\(x\)</span>-values around <span class="process-math">\(a\)</span> but with <span class="process-math">\(f(a)\neq g(a)\)</span> then <span class="process-math">\(\displaystyle \lim_{x\to a}f(x) = \lim_{x\to a}g(x)\text{,}\)</span> if the limits exist.</div></article></section><section class="subsection" id="subsec-FirstIndeterminateForms"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="space"> </span><span class="title">A First Introduction to Indeterminate Forms</span>
+</h3>
+<article class="definition definition-like" id="def-IndeterminateForm"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Indeterminate Form.</span>
+</h4>
+<div class="para" id="def-IndeterminateForm-2-1">We say that a limit has an <dfn class="terminology">indeterminate form</dfn> if the general structure of the limit could take on any different value, or not exist, depending on the specific circumstances.</div> <div class="para" id="def-IndeterminateForm-2-2">For instance, if <span class="process-math">\(\displaystyle \lim_{x\to a} f(x) = 0\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to a} g(x) = 0\text{,}\)</span> then we say that the limit <span class="process-math">\(\displaystyle \lim_{x\to a}\left(\frac{f(x)}{g(x)}\right)\)</span> has an indeterminate form. We typically denote this using the informal symbol <span class="process-math">\(\frac{0}{0}\text{.}\)</span>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-EvaluatingLimits.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-InfiniteLimits.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

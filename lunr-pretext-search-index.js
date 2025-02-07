@@ -142,7 +142,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "First Indeterminate Forms",
-  "body": " First Indeterminate Forms  Text of section.  "
+  "body": " First Indeterminate Forms    Limits of (Slightly) Different Functions   Using the graph of below, approximate .   A graph of a decreasing function down to an open hole at (1,1). There is a point above the curve at (1,3). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing.        Using the graph of the slightly different function below, approximate .   A graph of a decreasing function down to an open hole at (1,1). There is a point below the curve at (1,-1). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing. It is the same graph as the function f(x) above other than the point at (1,3) being at (1,-1).        Compare the values of and and discuss the impact that this difference had on the values of the limits.    For the function defined below, evaluate the limit .     For the slightly different function defined below, evaluate the limit .     Do the changes in the way that the function was defined impact the evaluation of the limit at all? Why not?     Limits of (Slightly) Different Functions   If and are two functions defined at -values around (but maybe not at itself) with for the -values around but with then , if the limits exist.      A First Introduction to Indeterminate Forms   Indeterminate Form   We say that a limit has an indeterminate form if the general structure of the limit could take on any different value, or not exist, depending on the specific circumstances.  For instance, if and , then we say that the limit has an indeterminate form. We typically denote this using the informal symbol .     "
+},
+{
+  "id": "act-SlightlyDifferentFunctions",
+  "level": "2",
+  "url": "sec-IndeterminateForms.html#act-SlightlyDifferentFunctions",
+  "type": "Activity",
+  "number": "1.4.1",
+  "title": "Limits of (Slightly) Different Functions.",
+  "body": " Limits of (Slightly) Different Functions   Using the graph of below, approximate .   A graph of a decreasing function down to an open hole at (1,1). There is a point above the curve at (1,3). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing.        Using the graph of the slightly different function below, approximate .   A graph of a decreasing function down to an open hole at (1,1). There is a point below the curve at (1,-1). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing. It is the same graph as the function f(x) above other than the point at (1,3) being at (1,-1).        Compare the values of and and discuss the impact that this difference had on the values of the limits.    For the function defined below, evaluate the limit .     For the slightly different function defined below, evaluate the limit .     Do the changes in the way that the function was defined impact the evaluation of the limit at all? Why not?   "
+},
+{
+  "id": "thm-SlightlyDifferentFunctions",
+  "level": "2",
+  "url": "sec-IndeterminateForms.html#thm-SlightlyDifferentFunctions",
+  "type": "Theorem",
+  "number": "1.4.3",
+  "title": "Limits of (Slightly) Different Functions.",
+  "body": " Limits of (Slightly) Different Functions   If and are two functions defined at -values around (but maybe not at itself) with for the -values around but with then , if the limits exist.   "
+},
+{
+  "id": "def-IndeterminateForm",
+  "level": "2",
+  "url": "sec-IndeterminateForms.html#def-IndeterminateForm",
+  "type": "Definition",
+  "number": "1.4.4",
+  "title": "Indeterminate Form.",
+  "body": " Indeterminate Form   We say that a limit has an indeterminate form if the general structure of the limit could take on any different value, or not exist, depending on the specific circumstances.  For instance, if and , then we say that the limit has an indeterminate form. We typically denote this using the informal symbol .   "
 },
 {
   "id": "sec-InfiniteLimits",
