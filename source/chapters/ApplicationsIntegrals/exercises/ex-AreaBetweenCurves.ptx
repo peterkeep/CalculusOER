@@ -1,0 +1,146 @@
+<exercises xml:id="ex-AreaBetweenCurves">
+    <exercise>
+        <p>
+            Explain how we use the "slice and sum" method to build an integral formula for the area bounded between curves. Give some details, enough to make sure you understand how the Riemann sums are constructed and how they turn into our integral formula.
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            What are some changes/considerations that we need to make when we decide to set up our integral in terms of <m>y</m> instead of <m>x</m>?
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Set up (and practice evaluating) an integral expression representing the area of each of the regions described below.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=x^2+1</m> and <m>y=4x+1</m> between <m>x=0</m> and <m>x=2</m>.
+                </p>
+            </statement>
+            <hint>
+                <interactive desmos="6bpwvbxk2w" width="60%" aspect="2:3" />
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=x</m> and <m>y=4-x</m> between <m>x=0</m> and <m>x=2</m>
+                </p>
+            </statement>
+            <hint>
+                <interactive desmos="kie0khz2u9" width="60%" aspect="2:3" />
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=\sqrt{x}+2</m> and <m>y=x</m> and the line <m>x=0</m>.
+                </p>
+            </statement>
+            <hint>
+               <interactive desmos="upz6hfkaf1" width="60%" aspect="2:3" />
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=\dfrac{2}{x^2+1}</m> and <m>y=x^2</m>.
+                </p>
+            </statement>
+            <hint>
+               <interactive desmos="lqkhjc4ql5" width="60%" aspect="2:3" />
+            </hint>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Set up and evaluate an integral representing the area of each of the regions described below. Explain whether you chose to integrate with respect to <m>x</m> or <m>y</m>, and why you made that choice.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=\sin(x)</m> and <m>y=\cos(x)</m> and the line <m>y=0</m> between <m>x=0</m> and <m>x=\frac{\pi}{2}</m>.
+                </p>
+            </statement>
+            <hint>
+                <interactive desmos="lg4wcxz4ug" width="60%" aspect="2:3" />
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=x</m> and <m>y=x^2-2</m> and the line <m>y=0</m> in the first quadrant.
+                </p>
+            </statement>
+            <hint>
+                <interactive desmos="ppypwkyscy" width="60%" aspect="2:3" />
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=x</m> and <m>y=x^2-2</m> and the line <m>y=0</m> in the third quadrant.
+                </p>
+            </statement>
+            <hint>
+                <interactive desmos="u4knulzafb" width="60%" aspect="2:3" />
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=3x</m>, <m>y=4-x^2</m>, and <m>y=x^2</m> in the first quadrant.
+                </p>
+            </statement>
+            <hint>
+                <interactive desmos="r2gchjvtbn" width="60%" aspect="2:3" />
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=\sqrt{32x}</m>, <m>y=2x^2</m>, and  <m>y=-4x+6</m> in the first quadrant.
+                </p>
+            </statement>
+            <hint>
+                <interactive desmos="55wd9reyqd" width="60%" aspect="2:3" />
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The <em>other</em> region bounded by the curves <m>y=\sqrt{32x}</m>, <m>y=2x^2</m>, and  <m>y=-4x+6</m> in the first quadrant.
+                </p>
+            </statement>
+            <hint>
+                <interactive desmos="wqkgqyinp6" width="60%" aspect="2:3" />
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>x=2y</m> and <m>x=y^2-3</m>.
+                </p>
+            </statement>
+            <hint>
+                <interactive desmos="9obq4ogzey" width="60%" aspect="2:3" />
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region(s) bounded by the curves <m>y=x^3</m> and <m>y=x</m>.
+                </p>
+            </statement>
+            <hint>
+                <interactive desmos="j75mtftfvm" width="60%" aspect="2:3" />
+            </hint>
+        </task>
+    </exercise>
+</exercises>
