@@ -559,81 +559,81 @@ var ptx_lunr_docs = [
   "body": " Convergence of an Improper Integral   We say that an improper integral converges if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral diverges .   "
 },
 {
-  "id": "exercises-ImproperIntegrals-1",
+  "id": "ex-ImproperIntegrals-1",
   "level": "2",
-  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-1",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-1",
   "type": "Exercise",
   "number": "6.1.1",
   "title": "",
   "body": "Explain what it means for an integral to be improper. What kinds of issues are we looking at? "
 },
 {
-  "id": "exercises-ImproperIntegrals-2",
+  "id": "ex-ImproperIntegrals-2",
   "level": "2",
-  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-2",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-2",
   "type": "Exercise",
   "number": "6.1.2",
   "title": "",
   "body": "Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width). "
 },
 {
-  "id": "exercises-ImproperIntegrals-3",
+  "id": "ex-ImproperIntegrals-3",
   "level": "2",
-  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-3",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-3",
   "type": "Exercise",
   "number": "6.1.3",
   "title": "",
   "body": "Give an example of an integral that is improper due to an unbounded integrand (infinite height). "
 },
 {
-  "id": "exercises-ImproperIntegrals-4",
+  "id": "ex-ImproperIntegrals-4",
   "level": "2",
-  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-4",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-4",
   "type": "Exercise",
   "number": "6.1.4",
   "title": "",
   "body": "What does it mean for an improper integral to ``converge?'' How does this connect with limits? "
 },
 {
-  "id": "exercises-ImproperIntegrals-5",
+  "id": "ex-ImproperIntegrals-5",
   "level": "2",
-  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-5",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-5",
   "type": "Exercise",
   "number": "6.1.5",
   "title": "",
   "body": "What does it mean for an improper integral to ``diverge?'' How does this connect with limits? "
 },
 {
-  "id": "exercises-ImproperIntegrals-6",
+  "id": "ex-ImproperIntegrals-6",
   "level": "2",
-  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-6",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-6",
   "type": "Exercise",
   "number": "6.1.6",
   "title": "",
   "body": "Why do we need to use limits to evaluate improper integrals? "
 },
 {
-  "id": "exercises-ImproperIntegrals-7",
+  "id": "ex-ImproperIntegrals-7",
   "level": "2",
-  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-7",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-7",
   "type": "Exercise",
   "number": "6.1.7",
   "title": "",
   "body": " For each of the following improper integrals:   Explain why the integral is improper. Be specific, and point out the issues in detail.    Set up the integral using the correct limit notation.    Antidifferentiate and evaluate the limit.    Explain whether the integral converges or diverges.                             "
 },
 {
-  "id": "exercises-ImproperIntegrals-8",
+  "id": "ex-ImproperIntegrals-8",
   "level": "2",
-  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-8",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-8",
   "type": "Exercise",
   "number": "6.1.8",
   "title": "",
   "body": "One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of makes the function a valid probability distribution on the interval ? "
 },
 {
-  "id": "exercises-ImproperIntegrals-9",
+  "id": "ex-ImproperIntegrals-9",
   "level": "2",
-  "url": "sec-ImproperIntegrals.html#exercises-ImproperIntegrals-9",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-9",
   "type": "Exercise",
   "number": "6.1.9",
   "title": "",
@@ -907,7 +907,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.2",
   "title": "Area Between Curves",
-  "body": " Area Between Curves   Let's remember Riemann Sums.    Remembering Riemann Sums  Text here.   Remembering Riemann Sums   Let's start with the function on the interval with on the interval. We will construct a Riemman sum to approximate the area under the curve on this interval, and then build that into the integral formula.     A graph of a positive curve, labeled f(x), from x=a to x=b. The region between the curve and the x-axis is shaded.      Divide the interval into 4 equally-sized subintervals.    Pick an for , one for each subinterval. Then, plot the points , , , and .   These points are just general ones, and you don't have to come up with actual numbers for the -values or the corresponding -values. Instead, just draw them in on the curve, somewhere in each of the subintervals.    Use these 4 points to draw 4 rectangles. What are the dimensions of these rectangles (the height and width)?   You won't have any numbers to calculate here, really: instead, see if you can calculate the widths by thinking about the total width of your interval. Then calculate the heights by thinking about the points you created.    Find the area of each rectangle by multiplying the heights and widths for each rectangle.    Add up the areas to construct a Riemman sum. Is this sum very accurate? Why or why not?   Try to think about the accuracy of your area approximation by looking at it visually. Are there any places where your approximation looks far away from the actual area we're thinking about?    Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of a positive curve, labeled f(x), from x=a to x=b. Now, though, there is a single rectangle sitting on the x-axis and spanning up to f(x). It is delta-x wide, and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Find , the area of this th rectangle.    Add up the areas of for to approximate the total area,    You might want to use summation notation, starting with     Apply a limit as to this Riemann sum in order to construct the integral formula for the area under the curve from to .    This activity hopefully reminds of the definition of a Riemann Sum ( ) from earlier in this text ( ).    Building an Integral Formula for the Area Between Curves   Area Between Curves   Let's start with our same function on the same interval m but also add the function on the same interval, with on the interval. We will construct a Riemann sum to approximate the area between these two curves on this interval, and then build that into the integral formula.     A graph of a positive curve and a less positive curve, g(x), labeled f(x), from x=a to x=b. The space between these curves is shaded.      Divide the interval into 4 equally-sized subintervals.    Pick an for , one for each subinterval. Plot the points , , , and . Then plot the corresponding points on the function: , , , and .    Use these 8 points to draw 4 rectangles, with the points on the function defining the tops of the rectangles and the points on the function defining the bottoms of the rectangles. What are the dimensions of these rectangles (the height and width)?    Find the area of each rectangle by multiplying the heights and widths for each rectangle.    Add up the areas to construct a Riemman sum.    Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of the two curves f(x) and g(x) between x=a and x=b. Now, though, there is a single rectangle sitting on g(x) and spanning up to f(x). It is delta-x wide. The bottom of the rectangle touches the graph at the point (x_k, g(x_k)) and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Find , the area of this th rectangle.    Add up the areas of for to approximate the total area,    You might want to use summation notation, starting with     Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .     Area Between Curves   If and are continuous functions with on the interval , then the area bounded between the curves  and between and is .    Example here.    Changing Perspective  Text here.   Trying for a Single Integral   Let's consider the same setup as earlier: the region bounded between two curves, and , as well as the -axis (the line ). We'll need to name these functions, so let's call them and . But this time, we'll approach the region a bit differently: we're going to try to find the area of the region using only a single integral.     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.      The range of -values in this region span from to . Divide this interval evenly into 4 equally sized-subintervals. What is the height of each subinterval? We'll call this .        Pick a -value from each sub-interval. You can call these , , , and .    Find the corresponding -values on the function for each of the -values you selected. These will be , , , and .   You're really just putting your -values into the equation and solving for . Or you can solve for in general, by solving for while leaving as a variable.    Do the same thing for the function. Now you have 8 points that you can plot: , , , and as well as , , , and . Plot them.    Use these points to draw 4 rectangles with points on and determining the left and right ends of the rectangle. What are the dimensions of these rectangles (height and width)?    Find the area of each rectangle by multiplying the height and widths for each rectangle.    Add up the areas to construct a Riemann sum.    Again, we'll generalize this and think about the th rectangle, pictured below.     The same region, but this time with a horizontal rectangle spanning across it, with the height labeled delta y. The curves are re-labeled x=y-6 and x = cuberoot(y).    Which variable defines the location of the th rectangle, here? That is, if you were to describe where in this graph the th rectangle is laying, would you describe it with an or variable? This will act as our general input variable for the integral we're ending with.    What are the dimensions of the th rectangle?    Find , the area of this th rectangle.    Add up the areas of for to approximate the total area,    You might want to use summation notation, starting with     Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .    Now that you have an integral, evaluate it! Find the area of this region to compare with the work we did previously, where we used multiple integrals to measure the size of this same region.    We can re-write our definition of the area between curves ( ) to account for this change in perspective, by thinking about these same functions in terms of .   Area Between Curves (in terms of )   If and are continuous functions with on the interval of -values , then the area bounded between the curves  and from to is .     "
+  "body": " Area Between Curves   Let's remember Riemann Sums.    Remembering Riemann Sums  Text here.   Remembering Riemann Sums   Let's start with the function on the interval with on the interval. We will construct a Riemman sum to approximate the area under the curve on this interval, and then build that into the integral formula.     A graph of a positive curve, labeled f(x), from x=a to x=b. The region between the curve and the x-axis is shaded.      Divide the interval into 4 equally-sized subintervals.    Pick an for , one for each subinterval. Then, plot the points , , , and .   These points are just general ones, and you don't have to come up with actual numbers for the -values or the corresponding -values. Instead, just draw them in on the curve, somewhere in each of the subintervals.    Use these 4 points to draw 4 rectangles. What are the dimensions of these rectangles (the height and width)?   You won't have any numbers to calculate here, really: instead, see if you can calculate the widths by thinking about the total width of your interval. Then calculate the heights by thinking about the points you created.    Find the area of each rectangle by multiplying the heights and widths for each rectangle.    Add up the areas to construct a Riemman sum. Is this sum very accurate? Why or why not?   Try to think about the accuracy of your area approximation by looking at it visually. Are there any places where your approximation looks far away from the actual area we're thinking about?    Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of a positive curve, labeled f(x), from x=a to x=b. Now, though, there is a single rectangle sitting on the x-axis and spanning up to f(x). It is delta-x wide, and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Find , the area of this th rectangle.    Add up the areas of for to approximate the total area,    You might want to use summation notation, starting with     Apply a limit as to this Riemann sum in order to construct the integral formula for the area under the curve from to .    This activity hopefully reminds of the definition of a Riemann Sum ( ) from earlier in this text ( ).    Building an Integral Formula for the Area Between Curves   Area Between Curves   Let's start with our same function on the same interval m but also add the function on the same interval, with on the interval. We will construct a Riemann sum to approximate the area between these two curves on this interval, and then build that into the integral formula.     A graph of a positive curve and a less positive curve, g(x), labeled f(x), from x=a to x=b. The space between these curves is shaded.      Divide the interval into 4 equally-sized subintervals.    Pick an for , one for each subinterval. Plot the points , , , and . Then plot the corresponding points on the function: , , , and .    Use these 8 points to draw 4 rectangles, with the points on the function defining the tops of the rectangles and the points on the function defining the bottoms of the rectangles. What are the dimensions of these rectangles (the height and width)?    Find the area of each rectangle by multiplying the heights and widths for each rectangle.    Add up the areas to construct a Riemman sum.    Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of the two curves f(x) and g(x) between x=a and x=b. Now, though, there is a single rectangle sitting on g(x) and spanning up to f(x). It is delta-x wide. The bottom of the rectangle touches the graph at the point (x_k, g(x_k)) and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Find , the area of this th rectangle.    Add up the areas of for to approximate the total area,    You might want to use summation notation, starting with     Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .     Area Between Curves   If and are continuous functions with on the interval , then the area bounded between the curves  and between and is .    Example here.    Changing Perspective  Text here.   Trying for a Single Integral   Let's consider the same setup as earlier: the region bounded between two curves, and , as well as the -axis (the line ). We'll need to name these functions, so let's call them and . But this time, we'll approach the region a bit differently: we're going to try to find the area of the region using only a single integral.     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.      The range of -values in this region span from to . Divide this interval evenly into 4 equally sized-subintervals. What is the height of each subinterval? We'll call this .        Pick a -value from each sub-interval. You can call these , , , and .    Find the corresponding -values on the function for each of the -values you selected. These will be , , , and .   You're really just putting your -values into the equation and solving for . Or you can solve for in general, by solving for while leaving as a variable.    Do the same thing for the function. Now you have 8 points that you can plot: , , , and as well as , , , and . Plot them.    Use these points to draw 4 rectangles with points on and determining the left and right ends of the rectangle. What are the dimensions of these rectangles (height and width)?    Find the area of each rectangle by multiplying the height and widths for each rectangle.    Add up the areas to construct a Riemann sum.    Again, we'll generalize this and think about the th rectangle, pictured below.     The same region, but this time with a horizontal rectangle spanning across it, with the height labeled delta y. The curves are re-labeled x=y-6 and x = cuberoot(y).    Which variable defines the location of the th rectangle, here? That is, if you were to describe where in this graph the th rectangle is laying, would you describe it with an or variable? This will act as our general input variable for the integral we're ending with.    What are the dimensions of the th rectangle?    Find , the area of this th rectangle.    Add up the areas of for to approximate the total area,    You might want to use summation notation, starting with     Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .    Now that you have an integral, evaluate it! Find the area of this region to compare with the work we did previously, where we used multiple integrals to measure the size of this same region.    We can re-write our definition of the area between curves ( ) to account for this change in perspective, by thinking about these same functions in terms of .   Area Between Curves (in terms of )   If and are continuous functions with on the interval of -values , then the area bounded between the curves  and from to is .      Explain how we use the \"slice and sum\" method to build an integral formula for the area bounded between curves. Give some details, enough to make sure you understand how the Riemann sums are constructed and how they turn into our integral formula.  What are some changes\/considerations that we need to make when we decide to set up our integral in terms of instead of ?   Set up (and practice evaluating) an integral expression representing the area of each of the regions described below.   The region bounded by the curves and between and .     The region bounded by the curves and between and      The region bounded by the curves and and the line .     The region bounded by the curves and .      Set up and evaluate an integral representing the area of each of the regions described below. Explain whether you chose to integrate with respect to or , and why you made that choice.   The region bounded by the curves and and the line between and .     The region bounded by the curves and and the line in the first quadrant.     The region bounded by the curves and and the line in the third quadrant.     The region bounded by the curves , , and in the first quadrant.     The region bounded by the curves , , and in the first quadrant.     The other region bounded by the curves , , and in the first quadrant.     The region bounded by the curves and .     The region(s) bounded by the curves and .      "
 },
 {
   "id": "act-RememberingRiemann",
@@ -953,6 +953,42 @@ var ptx_lunr_docs = [
   "number": "7.2.8",
   "title": "Area Between Curves (in terms of <span class=\"process-math\">\\(y\\)<\/span>).",
   "body": " Area Between Curves (in terms of )   If and are continuous functions with on the interval of -values , then the area bounded between the curves  and from to is .   "
+},
+{
+  "id": "ex-AreaBetweenCurves-1",
+  "level": "2",
+  "url": "sec-AreaBetweenCurves.html#ex-AreaBetweenCurves-1",
+  "type": "Exercise",
+  "number": "7.2.4.1",
+  "title": "",
+  "body": "Explain how we use the \"slice and sum\" method to build an integral formula for the area bounded between curves. Give some details, enough to make sure you understand how the Riemann sums are constructed and how they turn into our integral formula. "
+},
+{
+  "id": "ex-AreaBetweenCurves-2",
+  "level": "2",
+  "url": "sec-AreaBetweenCurves.html#ex-AreaBetweenCurves-2",
+  "type": "Exercise",
+  "number": "7.2.4.2",
+  "title": "",
+  "body": "What are some changes\/considerations that we need to make when we decide to set up our integral in terms of instead of ? "
+},
+{
+  "id": "ex-AreaBetweenCurves-3",
+  "level": "2",
+  "url": "sec-AreaBetweenCurves.html#ex-AreaBetweenCurves-3",
+  "type": "Exercise",
+  "number": "7.2.4.3",
+  "title": "",
+  "body": " Set up (and practice evaluating) an integral expression representing the area of each of the regions described below.   The region bounded by the curves and between and .     The region bounded by the curves and between and      The region bounded by the curves and and the line .     The region bounded by the curves and .    "
+},
+{
+  "id": "ex-AreaBetweenCurves-4",
+  "level": "2",
+  "url": "sec-AreaBetweenCurves.html#ex-AreaBetweenCurves-4",
+  "type": "Exercise",
+  "number": "7.2.4.4",
+  "title": "",
+  "body": " Set up and evaluate an integral representing the area of each of the regions described below. Explain whether you chose to integrate with respect to or , and why you made that choice.   The region bounded by the curves and and the line between and .     The region bounded by the curves and and the line in the first quadrant.     The region bounded by the curves and and the line in the third quadrant.     The region bounded by the curves , , and in the first quadrant.     The region bounded by the curves , , and in the first quadrant.     The other region bounded by the curves , , and in the first quadrant.     The region bounded by the curves and .     The region(s) bounded by the curves and .    "
 },
 {
   "id": "sec-VolumesOfRevolution",
