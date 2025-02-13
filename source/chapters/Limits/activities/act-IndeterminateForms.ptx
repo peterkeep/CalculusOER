@@ -1,0 +1,110 @@
+<activity xml:id="act-IndeterminateForms">
+    <task>
+        <statement>
+            <p>
+                Were going to evaluate <m>\displaystyle \lim_{x\to 3} \left(\dfrac{x^2-7x+12}{x-3}\right)</m>.
+                <ul>
+                    <li>
+                        <p>
+                            First, check that we get the indeterminate form <m>\frac{0}{0}</m> when <m>x\to 3</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Now we want to find a new function that is equivalent to <m>f(x) = \dfrac{x^2-7x+12}{x-3}</m> for all <m>x</m>-values other than <m>x=3</m>. Try factoring the numerator, <m>x^2-7x+12</m>. What do you notice?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            "Cancel" out any factors that show up in the numerator and denominator. Make a special note about what that factor is.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            This function is equivalent to <m>f(x) = \dfrac{x^2-7x+12}{x-3}</m> except at <m>x=3</m>. The difference is that this function has an actual function output at <m>x=3</m>, while <m>f(x)</m> doesn't. Evaluate the limit as <m>x\to 3</m> for your new function.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now we'll evaluate a new limit: <m>\displaystyle \lim_{x\to 1}\left(\dfrac{\sqrt{x^2+3}-2}{x^2-5x+4}\right)</m>.
+                <ul>
+                    <li>
+                        <p>
+                            First, check that we get the indeterminate form <m>\frac{0}{0}</m> when <m>x\to 1</m>.                        
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Now we want a new function that is equivalent to <m>g(x)=\dfrac{\sqrt{x^2+3}-2}{x^2-5x+4}</m> for all <m>x</m>-values other than <m>x=1</m>. Try multiplying the numerator and the denominator by <m>(\sqrt{x^2+3}+2)</m>. We'll call this the "conjugate" of the numerator.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            In your multiplication, confirm that <m>(\sqrt{x^2+3}-2)(\sqrt{x^2+3}+2) = (x^2+3)-4</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Try to factor the new numerator and denominator. Do you notice anything? Can you "cancel" anything? Make another note of what factor(s) you cancel. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            This function is equivalent to <m>g(x) = \dfrac{\sqrt{x^2+3}-2}{x^2-5x+4}</m> except at <m>x=1</m>. The difference is that this function has an actual function output at <m>x=1</m>, while <m>g(x)</m> doesn't. Evaluate the limit as <m>x\to 1</m> for your new function.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Our last limit in this activity is going to be <m>\displaystyle \lim_{x\to -2}\left(\dfrac{3-\frac{3}{x+3}}{x^2+2x}\right)</m>.
+                <ul>
+                    <li>
+                        <p>
+                            Again, check to see that we get the indeterminate form <m>\frac{0}{0}</m> when <m>x\to -2</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Again, we want a new function that is equivalent to <m>h(x)=\dfrac{3-\frac{3}{x+3}}{x^2+2x}</m> for all <m>x</m>-values other than <m>x=-2</m>. Try completing the subtraction in the numerator, <m>3-\frac{3}{x+3}</m>, using "common denominators." 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Try to factor the new numerator and denominator(s). Do you notice anything? Can you "cancel" anything? Make another note of what factor(s) you cancel. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            For the final time, we've found a function that is equivalent to <m>h(x) =\dfrac{3-\frac{3}{x+3}}{x^2+2x}</m> except at <m>x=-2</m>. The difference is that this function has an actual function output at <m>x=-2</m>, while <m>h(x)</m> doesn't. Evaluate the limit as <m>x\to -2</m> for your new function.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                In each of the previous limits, we ended up finding a factor that was shared in the numerator and denominator to cancel. Think back to each example and the factor you found. Why is it clear that these <em>must</em> have been the factors we found to cancel?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's say we have some new function <m>f(x)</m> where <m>\displaystyle \lim_{x\to 5} f(x) \stackrel{?}{\to} \frac{0}{0}</m>. You know, based on these examples, that you're going to apply <em>some</em> algebra trick to re-write your function, factor, and cancel. Can you predict what you will end up looking for to cancel in the numerator and denominator? Why?
+            </p>
+        </statement>
+    </task>
+    
+    
+</activity>
