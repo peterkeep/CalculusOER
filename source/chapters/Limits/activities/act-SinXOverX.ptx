@@ -1,0 +1,76 @@
+<activity xml:id="act-SinXOverX">
+    <introduction>
+      <p>
+        Let's consider a new limit:
+        <me>
+          \lim_{\theta\to 0} \frac{\sin(\theta)}{\theta}
+        </me>.
+        This one is strange!
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Notice that this function, <m>f(\theta) = \dfrac{\sin(\theta)}{\theta}</m>, is resistent to our algebra tricks:
+          <ul>
+            <li>
+              <p>
+                There's nothing to "factor" here, since our trigonometric function is not a polynomial.
+              </p>
+            </li>
+            <li>
+              <p>
+                We can't use a trick like the "conjugate" to multiply and re-write, since there's no square roots and also only one term in the numerator.
+              </p>
+            </li>
+            <li>
+              <p>
+                There aren't any fractions that we can combine by addition or subtraction.
+              </p>
+            </li>
+          </ul> 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Be frustrated at this new limit for resisting our algebra tricks.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Now let's think about the meaning of <m>\sin(\theta)</m> and even <m>\theta</m> in general. In this text, we will often use Greek letters, like <m>\theta</m>, to represent angles. In general, these angles will be measured in radians (unless otherwise specified). So what does the sine function <em>do</em> or <em>tell us</em>? What is a radian?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          On the unit circle, if we plot some point at an angle of <m>\theta</m>, then the coordinates of that point can be represented with trig functions! Which ones?
+        </p>
+      </hint>
+      <hint>
+        <p>
+          The length of the curve defining a unit circle is <m>2\pi</m>. This also corresponds to the angle we would use to represent moving all the way around the circle. What must the length of the portion of the circle be up to some point at an angle <m>\theta</m>?
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          In the following graph, use the slider for <m>a</m> to change the angle of the point and compare the arc length and the height. What happens when the angle is close to 0? You will probably have to zoom in!
+        </p>
+        <p>
+            <interactive desmos="gdaxaqbxxq" width="70%" aspect="2:3" /> 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Explain to yourself, until you are absolutely certain, why the two lengths <em>must</em> be the same in the limit as <m>\theta\to 0</m>. What does this mean about <m>\displaystyle \lim_{\theta\to 0}\frac{\sin(\theta)}{0} </m>?
+        </p>
+      </statement>
+    </task>
+</activity>

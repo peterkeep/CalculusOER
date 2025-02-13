@@ -30,5 +30,18 @@
     </definition>
     <xi:include href="./activities/act-IndeterminateForms.ptx" />
   </subsection>
+<subsection xml:id="subsec-WhatIfIndeterminateForms">
+  <title>What if There Is No Algebra Trick?</title>
+  <p>
+    We've seen some nice examples above where we were able to use some algebra to manipulate functions in such was as to force some shared factor in the numerator and denominator into revealing itself. From there, we were able to apply <xref ref="thm-SlightlyDifferentFunctions"/> and swap out our problematic function with a new one, knowing that the limit would be the same.
+  </p>
+  <p>
+    But what if we can't do that? What if the specific structure of the function seems <em>resistent</em> somehow to our attempts at wielding algebra? 
+  </p>
+  <p>
+    This happens a lot, and we'll investigate some more of those types of limits in <xref ref="sec-LHopitalsRule"/>. For now, though, let's look at a very famous limit and reason our way through the indeterminate form.
+  </p>
+  <xi:include href="./activities/act-SinXOverX.ptx" />
+</subsection>
   
 </section>
