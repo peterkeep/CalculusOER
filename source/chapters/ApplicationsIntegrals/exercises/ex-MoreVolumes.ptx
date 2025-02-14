@@ -1,0 +1,82 @@
+<exercises xml:id="ex-MoreVolumes">
+    <exercise>
+        <p>
+            Consider the integral formula for computing volumes of a solid of revolution using the disk/washer method. What part of this integral formula represents the radius/radii of any circle(s)? Why is the radius represented using the function output from the curve(s) defining the region?
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Consider the integral formula for computing volumes of a solid of revolution using the shell method. What part of this integral formula represents the radius/radii of any circle(s)? Why is the radius not represented using the function output from the curve(s) defining the region?
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the solids described below, set up an integral expression using disks/washers representing the volume of the solid.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curve <m>y=1-\sqrt{x}</m> in the first quadrant, revolved around <m>x=2</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curve <m>y=1-\sqrt{x}</m> in the first quadrant, revolved around <m>x=-1</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curve <m>y=1-\sqrt{x}</m> in the first quadrant, revolved around <m>y=-2</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curve <m>y=1-\sqrt{x}</m> in the first quadrant, revolved around <m>y=3</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the solids described below, set up an integral expression using shells representing the volume of the solid.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=\sqrt{x}</m> and <m>y=x</m> in the first quadrant, revolved around the line <m>x=2</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=\sqrt{x}</m> and <m>y=x</m> in the first quadrant, revolved around the line <m>x=-1</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=\sqrt{x}</m> and <m>y=x</m> in the first quadrant, revolved around the line <m>y=-2</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=\sqrt{x}</m> and <m>y=x</m> in the first quadrant, revolved around the line <m>y=3</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

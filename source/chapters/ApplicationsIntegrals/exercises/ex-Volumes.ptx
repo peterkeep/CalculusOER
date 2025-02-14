@@ -1,0 +1,163 @@
+<exercises xml:id="ex-Volumes">
+    <exercise>
+        <p>
+            We say that the volume of a solid can be thought of as <m>\displaystyle \int_{x=a}^{x=b}A(x)\;dx</m> where <m>A(x)</m> is a function describing the cross-sectional area of our solid at an <m>x</m>-value between <m>x=a</m> and <m>x=b</m>. Explain how this integral formula gets built, referencing the slice-and-sum (Riemann sum) method.
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Explain the differences and similarities between the disk and washer methods for finding volumes of solids of revolution.
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            When do we integrate with regard to <m>x</m> (using a <m>dx</m> in our integral and writing our functions with <m>x</m>-value inputs) and when do we integrate with regard to <m>y</m> (using a <m>dy</m> in our integral and writing our functions with <m>y</m>-value inputs) when we're finding volumes using disks and washers? How do we know?
+        </p>
+    </exercise>
+    <exercise xml:id="problem-Washers">
+        <introduction>
+            <p>
+                For each of the solids described below, set up an integral using the <em>disk/washer method</em> that describes the volume of the solid. It will be helpful to visualize the region, a rectangle on that region, as well as the rectangle revolved around the axis of revolution.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curve <m>y=2x</m> and the lines <m>y=0</m> and <m>x=3</m>, revolved around the <m>x</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curve <m>y=e^{-2x}</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=\ln(2)</m>, revolved around the <m>x</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=\ln(x)</m> and <m>y=\sqrt{x}</m> between <m>y=0</m> and <m>y=1</m>, revolved around the <m>y</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=2x+1</m> and <m>y=x</m> between <m>x=0</m> and <m>x=3</m>, revolved around the <m>x</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curve <m>y=x^3</m>, the <m>x</m>-axis, and the line <m>x=2</m>, revolved around the <m>y</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curve <m>y=x^3</m> and the <m>y</m>-axis between <m>y=0</m> and <m>y=2</m>, revolved around the <m>y</m>-axis.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <p>
+            Explain where the pieces of the shell formula come from. How is this different than using disks/washers?
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Say we're revolving a region around the <m>x</m>-axis to create a solid. Using the disk/washer method, we will integrate with respect to <m>x</m>. Using the shell method, we integrate with respect to <m>y</m>. Explain the difference, and why this difference occurs. 
+        </p>
+    </exercise>
+    <exercise xml:id="problem-Shells">
+        <introduction>
+            <p>
+                For each of the solids described below, set up an integral using the <em>shell method</em> that describes the volume of the solid. It will be helpful to visualize the region, a rectangle on that region, as well as the rectangle revolved around the axis of revolution.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curve <m>y=3x</m> and the lines <m>x=0</m> and <m>y=5</m>, revolved around the <m>y</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curve <m>y=\sqrt{x}</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=9</m>, revolved around the <m>x</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=2-x^2</m> and <m>y=x</m> and the line <m>x=0</m> revolved around the <m>y</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=sin(x^2)+2</m> and <m>y=x</m> from <m>x=0</m> to <m>x=1</m>, revolved around the <m>y</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=x^2-6x+10</m> and <m>y=2+4x-x^2</m> revolved around the <m>y</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=\sqrt{2x}</m> and <m>y=4-x</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=4</m>, revolved around the <m>x</m>-axis.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <p>
+            Pick at least 2 integrals from <xref ref="problem-Washers" text="type-hybrid"/> to re-write using shells instead. What about those regions did you look for to choose which ones to re-write and which ones to not?
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Pick at least 2 integrals from <xref ref="problem-Shells" text="type-hybrid"/> to re-write using disks/washers instead. What about those regions did you look for to choose which ones to re-write and which ones to not?
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following solids, set up an integral expression using either the disk/washer method or the shell method. You don't need to evaluate them, but you should do some careful thinking about how you set these up, especially as you choose between methods and what variable you are integrating with.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=x^2+1</m> and <m>y=x^3+1</m> in the first quadrant, revolved around the <m>x</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=x^2+1</m> and <m>y=x^3+1</m> in the first quadrant, revolved around the <m>y</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The region bounded by the curves <m>y=\frac{1}{x}</m> and <m>y=1-(x+1)^2</m> in the first quadrant, revolved around the <m>x</m>-axis.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
