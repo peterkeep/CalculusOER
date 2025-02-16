@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>The Divergence Test and the Harmonic Series</title>
+<title>Discover Calculus</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -123,7 +123,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-IntroSeries.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-InfiniteSeries.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-IntegralTest.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><a class="next-button button" href="frontmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
 \newcommand{\ddx}[1]{\frac{d}{dx}\left(#1\right)}
 \newcommand{\dd}[2]{\frac{d#1}{d#2}}
@@ -311,9 +311,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Other Applications of Integrals</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-InfiniteSeries.html" class="internal"><span class="codenumber">8</span> <span class="title">Infinite Series</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntroSequences.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Introduction to Infinite Sequences</span></a></div>
 <ul class="structural toc-item-list">
@@ -331,9 +331,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSeries.html#subsec-SpecialSeries" class="internal"><span class="codenumber">8.2.3</span> <span class="title">Special Series</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section contains-active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DivergenceTest.html" class="internal"><span class="codenumber">8.3</span> <span class="title">The Divergence Test and the Harmonic Series</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-RelationshipSeqSeries" class="internal"><span class="codenumber">8.3.1</span> <span class="title">The Relationship Between a Sequence and Series</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-DivergenceTest" class="internal"><span class="codenumber">8.3.2</span> <span class="title">The Divergence Test</span></a></div></li>
 </ul>
@@ -387,137 +387,21 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-DivergenceTest"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">8.3</span><span class="space"> </span><span class="title">The Divergence Test and the Harmonic Series</span>
-</h2>
-<section class="subsection" id="subsec-RelationshipSeqSeries"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.3.1</span><span class="space"> </span><span class="title">The Relationship Between a Sequence and Series</span>
-</h3>
-<div class="para" id="subsec-RelationshipSeqSeries-2">We have looked at both infinite sequences and infinite series so far, and, to make things complicated, we’re really thinking about an infinite series (of terms from an infinite sequence) as an infinite sequence (of partial sums of the series). We’ve looked at how to visualize these (in both <a href="sec-IntroSequences.html#subsec-GraphingSequences" class="internal" title="Subsection 8.1.2: Graphing Sequences">Subsection 8.1.2</a> and <a href="sec-IntroSeries.html#subsec-VisualizingPartialSums" class="internal" title="Subsection 8.2.2: Visualizing the Sequence of Partial Sums">Subsection 8.2.2</a>).</div>
-<div class="para" id="subsec-RelationshipSeqSeries-3">Let’s first start with defining a new series. This is a relatively important one by itself (it <em class="emphasis">does</em> have its own name), but it’s mostly an important series because it leads us into some new and interesting ways of thinking about series in general.</div>
-<article class="definition definition-like" id="def-HarmonicSeries"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Harmonic Series.</span>
-</h4>
-<div class="para logical" id="def-HarmonicSeries-2-1">
-<div class="para">We call the series</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\sum_{k=1}^\infty \frac{1}{k}
-\end{equation*}
-</div>
-<div class="para">the <dfn class="terminology">Harmonic Series</dfn>.</div>
-</div></article><article class="activity project-like" id="act-HarmonicSeries"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Investigating the Harmonic Series.</span>
-</h4>
-<article class="task exercise-like" id="act-HarmonicSeries-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-HarmonicSeries-2-1-1">Write out the first several terms of the harmonic series, terms from <span class="process-math">\(\left\{\frac{1}{k}\right\}_{k=1}^\infty\text{.}\)</span> Write however many you need to get a feel for how the terms work.</div></article><article class="task exercise-like" id="act-HarmonicSeries-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-HarmonicSeries-3-1-1">Can you find out how many terms you would have to go "into" the series before the term was less than 0.00000001?</div>
-<div class="solutions"><details id="act-HarmonicSeries-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-HarmonicSeries-3-2-1">When is <span class="process-math">\(\frac{1}{k}\lt \frac{1}{10^8}\text{?}\)</span>
-</div></div></details></div></article><article class="task exercise-like" id="act-HarmonicSeries-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="act-HarmonicSeries-4-1-1">Can you do this same kind of thing, no matter how small? For instance, how many terms would you have to go into the series before the term was less than some real number <span class="process-math">\(\varepsilon\)</span> where <span class="process-math">\(\varepsilon\gt 0\text{?}\)</span>
-</div>
-<div class="solutions"><details id="act-HarmonicSeries-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-HarmonicSeries-4-2-1">When is <span class="process-math">\(\frac{1}{k}\lt \varepsilon\text{?}\)</span>
-</div></div></details></div></article><article class="task exercise-like" id="act-HarmonicSeries-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-HarmonicSeries-5-1-1">Remind/explain/convince yourself that what we’ve really done is show that <span class="process-math">\(\lim_{k\to\infty}\frac{1}{k} =0\text{.}\)</span> This isn’t a new or terribly interesting fact, but make sure that you understand why the argument above shows this.</div></article><article class="task exercise-like" id="act-HarmonicSeries-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="act-HarmonicSeries-6-1-1">Let’s do something very similar, but with <span class="process-math">\(\left\{\sum_{k=1}^n \frac{1}{k}\right\}_{n=1}^\infty\text{,}\)</span> the sequence of partial sums, instead. Write out the first few partial sums. There’s no specific number that you <em class="emphasis">need</em> to write, but make sure to write enough partial sums to get a feel for how the partial sums work.</div></article><article class="task exercise-like" id="act-HarmonicSeries-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="act-HarmonicSeries-7-1-1">Can you find out how many terms you need to add up until the partial sum is larger than 1?</div>
-<div class="solutions"><details id="act-HarmonicSeries-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-HarmonicSeries-7-2-1">
-<div class="para">Find a value for <span class="process-math">\(n\)</span> to give</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\sum_{k=1}^n \frac{1}{k} \gt 1\text{.}
-\end{equation*}
-</div>
-</div></div></details></div></article><article class="task exercise-like" id="act-HarmonicSeries-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
-<div class="para" id="act-HarmonicSeries-8-1-1">Can you find out how many terms you need to add up until the partial sum is larger than 5?</div>
-<div class="solutions">
-<details id="act-HarmonicSeries-8-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-HarmonicSeries-8-2-1">
-<div class="para">Find a value for <span class="process-math">\(n\)</span> to give</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\sum_{k=1}^n \frac{1}{k} \gt 5\text{.}
-\end{equation*}
-</div>
-</div></div></details><details id="act-HarmonicSeries-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-HarmonicSeries-8-3-1">
-<div class="displaymath process-math">
-\begin{equation*}
-\sum_{k=1}^{83} \frac{1}{k} \approx 5.00207...
-\end{equation*}
-</div>
-<div class="para">This is the first partial sum greater than 5.</div>
-</div></div></details>
-</div></article><article class="task exercise-like" id="act-HarmonicSeries-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
-<div class="para" id="act-HarmonicSeries-9-1-1">Can you find out how many terms you need to add up until the partial sum is larger than 10?</div>
-<div class="solutions">
-<details id="act-HarmonicSeries-9-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-HarmonicSeries-9-2-1">
-<div class="para">Find a value for <span class="process-math">\(n\)</span> to give</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\sum_{k=1}^n \frac{1}{k} \gt 10\text{.}
-\end{equation*}
-</div>
-<div class="para">This will be absolutely awful to try calculating by hand! Use some piece of technology!</div>
-</div></div></details><details id="act-HarmonicSeries-9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-HarmonicSeries-9-3-1">
-<div class="displaymath process-math">
-\begin{equation*}
-\sum_{k=1}^{12367} \frac{1}{k} \approx 10.000043...
-\end{equation*}
-</div>
-<div class="para">This is the first partial sum greater than 10.</div>
-</div></div></details>
-</div></article><article class="task exercise-like" id="act-HarmonicSeries-10"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para logical" id="act-HarmonicSeries-10-1-1">
-<div class="para">Do you think that for any positive number <span class="process-math">\(S\text{,}\)</span> we can always find some partial sum <span class="process-math">\(\sum_{k=1}^n \frac{1}{k} \gt S\text{?}\)</span> What do you think this would mean about</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\lim_{n\to\infty}S_n = \lim_{n\to\infty} \sum_{k=1}^n \frac{1}{k}\text{?}
-\end{equation*}
-</div>
-</div></article><div class="conclusion" id="act-HarmonicSeries-11">
-<div class="para logical" id="act-HarmonicSeries-11-1">
-<div class="para">To actually show that for any <span class="process-math">\(S \gt 0\)</span> we could always find an <span class="process-math">\(n\gt 1\)</span> where</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\sum_{k=1}^n \frac{1}{k} \gt S
-\end{equation*}
-</div>
-<div class="para">is an extremely difficult task! We will show that the Harmonic Series diverges in a different way, but for now I want us to notice these contradictory results: we have a series whose terms get small, but whose partial sums do not seem to converge.</div>
-</div>
-<div class="para" id="act-HarmonicSeries-11-2">We have <span class="process-math">\(\frac{1}{k}\to 0\)</span> but it seems like <span class="process-math">\(\lim_{n\to\infty} S_n\)</span> does not exist. Is this behavior special to the Harmonic Series? Is this something we should make note of? Is there some other connection between the terms of a series and the behavior of the partial sums of the series that we need to note?</div>
-</div></article><div class="para" id="subsec-RelationshipSeqSeries-6">Let’s continue to think about this strange series, but actually prove that the series itself diverges.</div>
-<article class="theorem theorem-like" id="thm-HarmonicSeriesDiverges"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">The Harmonic Series Diverges.</span>
-</h4>
-<div class="para" id="thm-HarmonicSeriesDiverges-2-1">The <dfn class="terminology">Harmonic Series</dfn>, <span class="process-math">\(\sum_{k=1}^\infty \frac{1}{k}\text{,}\)</span> diverges.</div></article><details id="thm-HarmonicSeriesDiverges-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-HarmonicSeriesDiverges-3-1">Let’s assume, for the sake of eventual contradiction, that the harmonic series converges.</div></article></details></section><section class="subsection" id="subsec-DivergenceTest"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.3.2</span><span class="space"> </span><span class="title">The Divergence Test</span>
-</h3>
-<article class="theorem theorem-like" id="thm-DivergenceTest"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Divergence Test.</span>
-</h4>
-<div class="para logical" id="thm-DivergenceTest-2-1">
-<div class="para">For an infinite series <span class="process-math">\(\sum_{k=0}^\infty a_k\text{,}\)</span> if the infinite series converges then</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\lim_{k\to\infty} a_k = 0\text{.}
-\end{equation*}
-</div>
-<div class="para">This is equivalent to saying that if</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\lim_{k\to\infty} a_k\neq 0
-\end{equation*}
-</div>
-<div class="para">then the infinite series <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> diverges.</div>
-</div></article><details id="thm-DivergenceTest-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-DivergenceTest-3-1"></div></article></details><details id="subsec-DivergenceTest-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.3.4</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-DivergenceTest-3-1"><div class="para" id="subsec-DivergenceTest-3-1-1">Apply the Divergence Test to the following series and interpret the results.</div></div>
-<article class="task exercise-like" id="subsec-DivergenceTest-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="subsec-DivergenceTest-3-2-1-1"><span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{k^15 - 4k^10 + 10k^4}{e^{2k}}\)</span></div>
-<div class="solutions"><details id="subsec-DivergenceTest-3-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-DivergenceTest-3-2-2-1">We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator (<a href="sec-EndBehaviorLimits.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.6.2: Polynomial End Behavior Limits">Polynomial End Behavior Limits</a>). We could also get this same result using some other techniques, like what we use to prove that theorem. Then we can use <a href="sec-LHopitalsRule.html#thm-LHopitalsRule" class="xref" data-knowl="./knowl/xref/thm-LHopitalsRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.9.1: L’Hopital’s Rule">L’Hopital’s Rule</a> to evaluate the limit, since we have a <span class="process-math">\(\frac{\infty}{\infty}\)</span> indeterminate form.</div></div></details></div></article><article class="task exercise-like" id="subsec-DivergenceTest-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="subsec-DivergenceTest-3-3-1-1"><span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{k^2+1}\)</span></div></article><article class="task exercise-like" id="subsec-DivergenceTest-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="subsec-DivergenceTest-3-4-1-1"><span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{\sqrt[k]{k}}\)</span></div></article></article></details></section></section></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="book" id="DiscoverCalculus"><nav class="summary-links"><ul>
+<li><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></li>
+<li><a href="ch-Limits.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits</span></a></li>
+<li><a href="ch-Derivatives.html" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a></li>
+<li><a href="ch-ImplicitDifferentiation.html" class="internal"><span class="codenumber">3</span> <span class="title">Implicit Differentiation</span></a></li>
+<li><a href="ch-ApplicationsDerivatives.html" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Derivatives</span></a></li>
+<li><a href="ch-AntiderivativesIntegrals.html" class="internal"><span class="codenumber">5</span> <span class="title">Antiderivatives and Integrals</span></a></li>
+<li><a href="ch-AntidifferentiationTechniques.html" class="internal"><span class="codenumber">6</span> <span class="title">Techniques for Antidifferentiation</span></a></li>
+<li><a href="ch-ApplicationIntegrals.html" class="internal"><span class="codenumber">7</span> <span class="title">Applications of Integrals</span></a></li>
+<li><a href="ch-InfiniteSeries.html" class="internal"><span class="codenumber">8</span> <span class="title">Infinite Series</span></a></li>
+<li><a href="ch-PowerSeries.html" class="internal"><span class="codenumber">9</span> <span class="title">Power Series</span></a></li>
+<li><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></li>
+</ul></nav></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-IntroSeries.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-IntegralTest.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="frontmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
