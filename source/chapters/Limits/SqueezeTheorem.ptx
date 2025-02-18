@@ -2,6 +2,7 @@
 
 <section xml:id="sec-SqueezeTheorem" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Squeeze Theorem</title>
+  <xi:include href="./activities/act-WeirdEndBehavior.ptx" />
 
   <theorem xml:id="thm-SqueezeTheorem">
     <title>The Squeeze Theorem</title>
@@ -11,10 +12,11 @@
         <me>
           \lim_{x\to a} f(x) = L = \lim_{x\to a} h(x)
         </me>
-        then we also know that <m>\lim_{x\to a} g(x) = L</m>.
+        then we also know that <m>\displaystyle \lim_{x\to a} g(x) = L</m>.
       </p>
     </statement>
   </theorem>
+  <xi:include href="./activities/act-SketchSqueeze.ptx" />
   
 
 </section>

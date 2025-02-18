@@ -1,0 +1,45 @@
+<activity xml:id="act-SketchSqueeze">
+    <title>Sketch This Function Around This Point</title>
+    <task>
+        <statement>
+            <p>
+                Sketch or visualize the functions <m>f(x) = x^2+3</m> and <m>h(x)=2x+2</m>, especially around <m>x=1</m>.
+            </p>
+        </statement>
+        <hint>
+            <interactive desmos="tagisgwxw2" width="70%" aspect="2:3" />
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Sketch some other function, <m>g(x)</m> where <m>f(x)\leq g(x)\leq h(x)</m> for the <m>x</m>-values around (byt maybe not at) <m>x=1</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use the Squeeze Theorem to evaluate and explain <m>\displaystyle \lim_{x\to 1}g(x)</m> for your function <m>g(x)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Is this limit dependent on the specific version of <m>g(x)</m> that you sketched? Would this limit be different for someone else's choice of <m>g(x)</m> given the same parameters?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What information must be true (if anything) about <m>\displaystyle \lim_{x\to 3} g(x)</m> and <m>\displaystyle \lim_{x\to 0} g(x)</m>?
+            </p>
+            <p>
+                Do we know that these limits exist? If they do, do we have information about their values?
+            </p>
+        </statement>
+    </task>
+    
+</activity>

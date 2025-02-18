@@ -1,0 +1,101 @@
+<activity xml:id="act-WeirdEndBehavior">
+    <title>A Weird End Behavior Limit</title>
+    <introduction>
+        <p>
+            In this activity, we're going to find the following limit:
+            <me>
+                \lim_{x\to\infty} \left(\dfrac{\sin^2(x)}{x^2+1}\right)
+            </me>.
+            This limit is a bit weird, in that we really haven't looked at trigonometric functions that much. We're going to start by looking at a different limit in the hopes that we can eventually build towards this one.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Consider, instead, the following limit:
+                <me>
+                    \lim_{x\to\infty} \left(\frac{1}{x^2+1}\right)
+                </me>.
+                Find the limit and connect the process or intuition behind it to at least one of the results from this text.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Start with <xref ref="thm-CombinationsOfLimits"/> to think about the numerator and denominator separately.
+            </p>
+        </hint>
+        <hint>
+            <p>
+                Can you use <xref ref="thm-PolynomialEndBehavior"/> in the denominator?
+            </p>
+        </hint>
+        <hint>
+            <p>
+                Is <xref ref="thm-EndBehaviorReciprocalPower"/> relevant?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's put this limit aside and briefly talk about the sine function. What are some things to remember about this function? What should we know? How does it behave?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What kinds of values doe we expect <m>\sin(x)</m> to take on for different values of <m>x</m>?
+                <me><fillin characters="10" /> \leq \sin(x) \leq <fillin characters="10" /></me>
+            </p>
+            
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What happens when we square the sine function? What kinds of  values can that take on?
+                <me><fillin characters="10" /> \leq \sin^2(x) \leq <fillin characters="10" /></me>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Think back to our original goal: we wanted to know the end behavior of <m>\dfrac{\sin^2(x)}{x^2+1}</m>. Right now we have two bits of information:
+                <ul>
+                    <li>
+                        <p>
+                            We know <m>\displaystyle \lim_{x\to\infty}\left(\frac{1}{x^2+1}\right)</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We know some information about the behavior of <m>\sin^2(x)</m>. Specifically, we have some bounds on its values.
+                        </p>
+                    </li>
+                </ul>
+                Can we combine this information?
+            </p>
+            <p>
+                In your inequality above, multiply <m>\left(\frac{1}{x^2+1}\right)</m> onto all three pieces of the inequality. Make sure you're convinced about the direction or order of the inequality and whether or not it changes with this multiplication.
+                <me>\underbrace{\frac{<fillin characters="10" />}{x^2+1}}_{\text{call this }f(x)} \leq \frac{\sin^2(x)}{x^2+1} \leq \underbrace{\frac{<fillin characters="10" />}{x^2+1}}_{\text{call this }h(x)} </me>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For your functions <m>f(x)</m> and <m>h(x)</m>, evaluate <m>\displaystyle \lim_{x\to\infty} f(x)</m> and <m>\displaystyle \lim_{x\to\infty} h(x)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What do you think this means about the limit we're interested in, <m>\displaystyle \lim_{x\to\infty} \left(\frac{\sin^2(x)}{x^2+1}\right)</m>?
+            </p>
+        </statement>
+    </task>
+    
+</activity>
