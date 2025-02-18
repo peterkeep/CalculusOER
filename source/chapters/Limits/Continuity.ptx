@@ -3,6 +3,97 @@
 <section xml:id="sec-Continuity" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Continuity and the Intermediate Value Theorem</title>
 
-  <p> Text of section. </p>
+  <subsection xml:id="subsec-ContinuityAsConnectedness">
+    <title>Continuity as Connectedness</title>
+    <p>
+      
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec-ContinuityAsClassification">
+    <title>Continuity as Classification</title>
+    <definition xml:id="def-ContinuousAtPoint">
+      <title>Continuous at a Point</title>
+      <statement>
+        <p>
+          The function <m>f(x)</m> is <term>continuous</term> at an <m>x</m>-value in the domain of <m>f(x)</m> if <m>x=a</m> if <m>\displaystyle \lim_{x\to a}f(x)=f(a)</m>.
+        </p>
+        <p>
+          If <m>f(x)</m> is not continuous at <m>x=a</m>, but one of the one-sided limits is equal to the function output, then we can define <term>directional continuity</term> at that point:
+          <ul>
+            <li>
+              <p>
+                We say <m>f(x)</m> is <term>continuous on the left</term> at <m>x=a</m> when <m>\displaystyle \lim_{x\to a^-} f(x)=f(a)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                We say <m>f(x)</m> is <term>continuous on the right</term> at <m>x=a</m> when <m>\displaystyle \lim_{x\to a^+} f(x)=f(a)</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-ContinuousOnInterval">
+    <title>Continuous on an Interval</title>
+      <statement>
+        <p>
+          We say that <m>f(x)</m> is <term>continuous on the interval</term> <m>(a,b)</m> if <m>f(x)</m> is continuous at every <m>x</m>-value with <m>a\lt x \lt b</m>.
+        </p>
+        <p>
+          If <m>f(x)</m> is continuous on the right at <m>x=a</m> and/or continuous on the left at <m>x=b</m>, then we will say that <m>f(x)</m> is continuous on the interval <m>[a,b)</m>, <m>(a,b]</m>, or <m>[a,b]</m>, whichever is relevant.
+        </p>
+      </statement>
+    </definition>
+
+  </subsection>
+  <subsection xml:id="subsec-Discontinuities">
+    <title>Discontinuities</title>
+    <assemblage xml:id="assemblage-Discontinuities">
+      <title>Where is a Function not Continuous?</title>
+      <p>
+        Most of the functions that we consider in this text will be continuous everywhere that it makes sense: on their domain. That is, if there is a point defined at some <m>x</m>-value, it is likely that the function's limit matches the <m>y</m>-value of the point. More specifically, though:
+        <ul>
+          <li>
+            <p>
+              A function is discontinuous at any location that results in an infinite limit. These are locations where <m>f(x)</m> is undefined and the limit is infinite (and so doesn't exist).
+            </p>
+          </li>
+          <li>
+            <p>
+              A function is, in general, discontinuous wherever it is undefined. This seems silly to say! We probably could have left this unsaid. 
+            </p>
+          </li>
+          <li>
+            <p>
+              A function that is defined as a piecewise function could be discontinuous at locations where the pieces meet: maybe the limit doesn't exist, or maybe the function value is not defined, or maybe the limit exists and the function value is defined but they do not match.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </assemblage>
+  </subsection>
+  <subsection xml:id="subsec-IntermediateValueTheorem">
+    <title>Intermediate Value Theorem</title>
+    <theorem xml:id="thm-IVT">
+      <title>Intermediate Value Theorem</title>
+      <statement>
+        <p>
+          If <m>f(x)</m> is a function that is continuous on <m>[a,b]</m> with <m>f(a)\neq f(b)</m> and <m>L</m> is any real number between <m>f(a)</m> and <m>f(b)</m> (either <m>f(a)\lt L \lt f(b)</m> or <m>f(b) \lt L \lt f(a)</m>), then there exists some <m>c</m> between <m>a</m> and <m>b</m> (<m>a\lt c \lt b</m>) such that <m>f(c)=L</m>.
+        </p>
+      </statement>
+    </theorem>
+    <aside>
+      <p>
+        This theorem was stated as early as the 5th century BCE by Bryson of Heraclea. Back then, a really interesting problem was related to "squaring the circle." That is, given a circle with some measurable radius, can we construct a square with equal area? This is obviously true, in that we can just use a square with the side length <m>r\sqrt{\pi}</m>. What we typically mean by "construct," though, is to create this square using only a compass and straightedge (a ruler without length markings) and only a finite number of steps. This was finally proven to be impossible in 1882, approximately 2300 years later.
+      </p>
+      <p>
+        Bryson of Heraclea knew that the square itself existed (even if he couldn't construct it) because he was able to find a square with area less than a circle (by inscribing a square inside of the circle) and a square with area greater than a circle (where the circle is inscribed in the square). Since he posited that he could increase the size of the square in a continuous manner (without using those words), he claimed that a square with area equal to that of the circle must exist, since the area of the square passes through all values from the smaller area to the larger area.
+      </p>
+    </aside>
+    
+  </subsection>
 
 </section>
