@@ -24,7 +24,11 @@
           We say that a limit has an <term>indeterminate form</term> if the general structure of the limit could take on any different value, or not exist, depending on the specific circumstances.
         </p>
         <p>
-          For instance, if <m>\displaystyle \lim_{x\to a} f(x) = 0</m> and <m>\displaystyle \lim_{x\to a} g(x) = 0</m>, then we say that the limit <m>\displaystyle \lim_{x\to a}\left(\frac{f(x)}{g(x)}\right)</m> has an indeterminate form. We typically denote this using the informal symbol <m>\frac{0}{0}</m>.
+          For instance, if <m>\displaystyle \lim_{x\to a} f(x) = 0</m> and <m>\displaystyle \lim_{x\to a} g(x) = 0</m>, then we say that the limit <m>\displaystyle \lim_{x\to a}\left(\frac{f(x)}{g(x)}\right)</m> has an indeterminate form. We typically denote this using the informal symbol <m>\frac{0}{0}</m>, as in:
+          <me>
+            \lim_{x\to a}\left(\frac{f(x)}{g(x)}\right) \stackrel{?}\to \frac{0}{0}
+          </me>.
+          
         </p>
       </statement>
     </definition>

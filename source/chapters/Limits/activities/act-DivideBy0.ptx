@@ -1,0 +1,108 @@
+<activity xml:id="act-DivideBy0">
+    <title>What Happens When We Divide by 0?</title>
+    <introduction>
+        <p>
+            First, let's make sure we're clear on one thing: there is no real number than is represented as some other number divided by 0.
+        </p>
+        <p>
+            When we talk about "dividing by 0" here (and in <xref ref="sec-IndeterminateForms"/>), we're talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator <em>gets arbitrarily close to 0</em> (or, the limit of the denominator is 0). 
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Remember when, once upon a time, you learned that dividing one a number by a  fraction is the same as multiplying the first number by the reciprocal of the fraction? Why is this true?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the relationship between a number and its reciprocal? How does the size of a number impact the size of the reciprocal? Why?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Consider <m>12\div N</m>. What is the value of this division problem when:
+                <ul>
+                    <li>
+                        <p>
+                            <m>N=6</m>?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>N=4</m>?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>N=3</m>?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>N=2</m>?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>N=1</m>?
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's again consider <m>12\div N</m>. What is the value of this division problem when:
+                <ul>
+                    <li>
+                        <p>
+                            <m>N = \frac{1}{2}</m>?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>N= \frac{1}{3}</m>?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>N=\frac{1}{4}</m>?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>N=\frac{1}{6}</m>?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>N=\frac{1}{1000}</m>?
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Consider a function <m>f(x) = \frac{12}{x}</m>. What happens to the value of this function when <m>x\to 0^+</m>? Note that this means that the <m>x</m>-values we're considering most are very small and positive.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Consider a function <m>f(x) = \frac{12}{x}</m>. What happens to the value of this function when <m>x\to 0^-</m>? Note that this means that the <m>x</m>-values we're considering most are very small and negative.
+            </p>
+        </statement>
+    </task>
+    
+</activity>
