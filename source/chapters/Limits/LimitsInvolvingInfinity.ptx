@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-EndBehaviorLimits" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>End Behavior Limits</title>
+<section xml:id="sec-LimitsInvolvingInfinity" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Limits Involving Infinity</title>
 
-  <p> Text of section. </p>
-  <definition xml:id="def-LimitAtInfinity">
+  <introduction>
+    <p>
+      Two types of limits involving infinity.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-InfiniteLimits">
+    <title>Infinite Limits</title>
+    <p>
+      
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-EndBehaviorLimits">
+    <title>End Behavior Limits</title>
+    <definition xml:id="def-LimitAtInfinity">
   <title>Limit at Infinity</title>
     <statement>
       <p>
@@ -30,6 +42,6 @@
       </p>
     </statement>
   </theorem>
-    
+  </subsection>
 
 </section>
