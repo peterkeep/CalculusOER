@@ -148,7 +148,12 @@
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
       <css 
         theme="denver"
-        palette="bold"/>
+        color-main="#085646"
+        color-do="#D16014"
+        color-fact="#5762D5"
+        color-meta="#3F292B"
+        />
+
 
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
