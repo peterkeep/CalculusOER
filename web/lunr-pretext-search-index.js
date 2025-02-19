@@ -142,7 +142,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "First Indeterminate Forms",
-  "body": " First Indeterminate Forms    Limits of (Slightly) Different Functions   Using the graph of below, approximate .   A graph of a decreasing function down to an open hole at (1,1). There is a point above the curve at (1,3). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing.        Using the graph of the slightly different function below, approximate .   A graph of a decreasing function down to an open hole at (1,1). There is a point below the curve at (1,-1). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing. It is the same graph as the function f(x) above other than the point at (1,3) being at (1,-1).        Compare the values of and and discuss the impact that this difference had on the values of the limits.    For the function defined below, evaluate the limit .     For the slightly different function defined below, evaluate the limit .     Do the changes in the way that the function was defined impact the evaluation of the limit at all? Why not?     Limits of (Slightly) Different Functions   If and are two functions defined at -values around (but maybe not at itself) with for the -values around but with then , if the limits exist.      A First Introduction to Indeterminate Forms   Indeterminate Form   We say that a limit has an indeterminate form if the general structure of the limit could take on any different value, or not exist, depending on the specific circumstances.  For instance, if and , then we say that the limit has an indeterminate form. We typically denote this using the informal symbol .      Were going to evaluate .   First, check that we get the indeterminate form when .    Now we want to find a new function that is equivalent to for all -values other than . Try factoring the numerator, . What do you notice?    \"Cancel\" out any factors that show up in the numerator and denominator. Make a special note about what that factor is.    This function is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.       Now we'll evaluate a new limit: .   First, check that we get the indeterminate form when .    Now we want a new function that is equivalent to for all -values other than . Try multiplying the numerator and the denominator by . We'll call this the \"conjugate\" of the numerator.    In your multiplication, confirm that .    Try to factor the new numerator and denominator. Do you notice anything? Can you \"cancel\" anything? Make another note of what factor(s) you cancel.    This function is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.       Our last limit in this activity is going to be .   Again, check to see that we get the indeterminate form when .    Again, we want a new function that is equivalent to for all -values other than . Try completing the subtraction in the numerator, , using \"common denominators.\"    Try to factor the new numerator and denominator(s). Do you notice anything? Can you \"cancel\" anything? Make another note of what factor(s) you cancel.    For the final time, we've found a function that is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.       In each of the previous limits, we ended up finding a factor that was shared in the numerator and denominator to cancel. Think back to each example and the factor you found. Why is it clear that these must have been the factors we found to cancel?    Let's say we have some new function where . You know, based on these examples, that you're going to apply some algebra trick to re-write your function, factor, and cancel. Can you predict what you will end up looking for to cancel in the numerator and denominator? Why?      What if There Is No Algebra Trick?  We've seen some nice examples above where we were able to use some algebra to manipulate functions in such was as to force some shared factor in the numerator and denominator into revealing itself. From there, we were able to apply and swap out our problematic function with a new one, knowing that the limit would be the same.  But what if we can't do that? What if the specific structure of the function seems resistent somehow to our attempts at wielding algebra?  This happens a lot, and we'll investigate some more of those types of limits in . For now, though, let's look at a very famous limit and reason our way through the indeterminate form.    Let's consider a new limit: . This one is strange!    Notice that this function, , is resistent to our algebra tricks:   There's nothing to \"factor\" here, since our trigonometric function is not a polynomial.    We can't use a trick like the \"conjugate\" to multiply and re-write, since there's no square roots and also only one term in the numerator.    There aren't any fractions that we can combine by addition or subtraction.       Be frustrated at this new limit for resisting our algebra tricks.    Now let's think about the meaning of and even in general. In this text, we will often use Greek letters, like , to represent angles. In general, these angles will be measured in radians (unless otherwise specified). So what does the sine function do or tell us ? What is a radian?   On the unit circle, if we plot some point at an angle of , then the coordinates of that point can be represented with trig functions! Which ones?   The length of the curve defining a unit circle is . This also corresponds to the angle we would use to represent moving all the way around the circle. What must the length of the portion of the circle be up to some point at an angle ?    In the following graph, use the slider for to change the angle of the point and compare the arc length and the height. What happens when the angle is close to 0? You will probably have to zoom in!       Explain to yourself, until you are absolutely certain, why the two lengths must be the same in the limit as . What does this mean about ?     "
+  "body": " First Indeterminate Forms    Limits of (Slightly) Different Functions   Using the graph of below, approximate .   A graph of a decreasing function down to an open hole at (1,1). There is a point above the curve at (1,3). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing.        Using the graph of the slightly different function below, approximate .   A graph of a decreasing function down to an open hole at (1,1). There is a point below the curve at (1,-1). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing. It is the same graph as the function f(x) above other than the point at (1,3) being at (1,-1).        Compare the values of and and discuss the impact that this difference had on the values of the limits.    For the function defined below, evaluate the limit .     For the slightly different function defined below, evaluate the limit .     Do the changes in the way that the function was defined impact the evaluation of the limit at all? Why not?     Limits of (Slightly) Different Functions   If and are two functions defined at -values around (but maybe not at itself) with for the -values around but with then , if the limits exist.      A First Introduction to Indeterminate Forms   Indeterminate Form   We say that a limit has an indeterminate form if the general structure of the limit could take on any different value, or not exist, depending on the specific circumstances.  For instance, if and , then we say that the limit has an indeterminate form. We typically denote this using the informal symbol , as in: .      Were going to evaluate .   First, check that we get the indeterminate form when .    Now we want to find a new function that is equivalent to for all -values other than . Try factoring the numerator, . What do you notice?    \"Cancel\" out any factors that show up in the numerator and denominator. Make a special note about what that factor is.    This function is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.       Now we'll evaluate a new limit: .   First, check that we get the indeterminate form when .    Now we want a new function that is equivalent to for all -values other than . Try multiplying the numerator and the denominator by . We'll call this the \"conjugate\" of the numerator.    In your multiplication, confirm that .    Try to factor the new numerator and denominator. Do you notice anything? Can you \"cancel\" anything? Make another note of what factor(s) you cancel.    This function is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.       Our last limit in this activity is going to be .   Again, check to see that we get the indeterminate form when .    Again, we want a new function that is equivalent to for all -values other than . Try completing the subtraction in the numerator, , using \"common denominators.\"    Try to factor the new numerator and denominator(s). Do you notice anything? Can you \"cancel\" anything? Make another note of what factor(s) you cancel.    For the final time, we've found a function that is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.       In each of the previous limits, we ended up finding a factor that was shared in the numerator and denominator to cancel. Think back to each example and the factor you found. Why is it clear that these must have been the factors we found to cancel?    Let's say we have some new function where . You know, based on these examples, that you're going to apply some algebra trick to re-write your function, factor, and cancel. Can you predict what you will end up looking for to cancel in the numerator and denominator? Why?      What if There Is No Algebra Trick?  We've seen some nice examples above where we were able to use some algebra to manipulate functions in such was as to force some shared factor in the numerator and denominator into revealing itself. From there, we were able to apply and swap out our problematic function with a new one, knowing that the limit would be the same.  But what if we can't do that? What if the specific structure of the function seems resistent somehow to our attempts at wielding algebra?  This happens a lot, and we'll investigate some more of those types of limits in . For now, though, let's look at a very famous limit and reason our way through the indeterminate form.    Let's consider a new limit: . This one is strange!    Notice that this function, , is resistent to our algebra tricks:   There's nothing to \"factor\" here, since our trigonometric function is not a polynomial.    We can't use a trick like the \"conjugate\" to multiply and re-write, since there's no square roots and also only one term in the numerator.    There aren't any fractions that we can combine by addition or subtraction.       Be frustrated at this new limit for resisting our algebra tricks.    Now let's think about the meaning of and even in general. In this text, we will often use Greek letters, like , to represent angles. In general, these angles will be measured in radians (unless otherwise specified). So what does the sine function do or tell us ? What is a radian?   On the unit circle, if we plot some point at an angle of , then the coordinates of that point can be represented with trig functions! Which ones?   The length of the curve defining a unit circle is . This also corresponds to the angle we would use to represent moving all the way around the circle. What must the length of the portion of the circle be up to some point at an angle ?    In the following graph, use the slider for to change the angle of the point and compare the arc length and the height. What happens when the angle is close to 0? You will probably have to zoom in!       Explain to yourself, until you are absolutely certain, why the two lengths must be the same in the limit as . What does this mean about ?     "
 },
 {
   "id": "act-SlightlyDifferentFunctions",
@@ -169,7 +169,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.4.4",
   "title": "Indeterminate Form.",
-  "body": " Indeterminate Form   We say that a limit has an indeterminate form if the general structure of the limit could take on any different value, or not exist, depending on the specific circumstances.  For instance, if and , then we say that the limit has an indeterminate form. We typically denote this using the informal symbol .   "
+  "body": " Indeterminate Form   We say that a limit has an indeterminate form if the general structure of the limit could take on any different value, or not exist, depending on the specific circumstances.  For instance, if and , then we say that the limit has an indeterminate form. We typically denote this using the informal symbol , as in: .   "
 },
 {
   "id": "act-IndeterminateForms",
@@ -190,67 +190,184 @@ var ptx_lunr_docs = [
   "body": "  Let's consider a new limit: . This one is strange!    Notice that this function, , is resistent to our algebra tricks:   There's nothing to \"factor\" here, since our trigonometric function is not a polynomial.    We can't use a trick like the \"conjugate\" to multiply and re-write, since there's no square roots and also only one term in the numerator.    There aren't any fractions that we can combine by addition or subtraction.       Be frustrated at this new limit for resisting our algebra tricks.    Now let's think about the meaning of and even in general. In this text, we will often use Greek letters, like , to represent angles. In general, these angles will be measured in radians (unless otherwise specified). So what does the sine function do or tell us ? What is a radian?   On the unit circle, if we plot some point at an angle of , then the coordinates of that point can be represented with trig functions! Which ones?   The length of the curve defining a unit circle is . This also corresponds to the angle we would use to represent moving all the way around the circle. What must the length of the portion of the circle be up to some point at an angle ?    In the following graph, use the slider for to change the angle of the point and compare the arc length and the height. What happens when the angle is close to 0? You will probably have to zoom in!       Explain to yourself, until you are absolutely certain, why the two lengths must be the same in the limit as . What does this mean about ?   "
 },
 {
-  "id": "sec-InfiniteLimits",
+  "id": "sec-LimitsInvolvingInfinity",
   "level": "1",
-  "url": "sec-InfiniteLimits.html",
+  "url": "sec-LimitsInvolvingInfinity.html",
   "type": "Section",
   "number": "1.5",
-  "title": "Infinite Limits",
-  "body": " Infinite Limits  Text of section.  "
+  "title": "Limits Involving Infinity",
+  "body": " Limits Involving Infinity   Two types of limits involving infinity. In both cases, we'll mostly just consider what happens when we divide by small things and what happens when we divide by big things. We can summarize this here, though:   Fractions with small denominators are big, and fractions with big denominators are small.     Infinite Limits   What Happens When We Divide by 0?   First, let's make sure we're clear on one thing: there is no real number than is represented as some other number divided by 0.  When we talk about \"dividing by 0\" here (and in ), we're talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator gets arbitrarily close to 0 (or, the limit of the denominator is 0).    Remember when, once upon a time, you learned that dividing one a number by a fraction is the same as multiplying the first number by the reciprocal of the fraction? Why is this true?    What is the relationship between a number and its reciprocal? How does the size of a number impact the size of the reciprocal? Why?    Consider . What is the value of this division problem when:    ?     ?     ?     ?     ?       Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?       Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very small and positive.    Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very small and negative.     Infinite Limit   We say that a function has an infinite limit at if is arbitrarily large (positive or negative) when is sufficiently close to, but not equal to, .  We would then say, depending on the sign of the values of , that: . If the sign of both one-sided limits are the same, we can say that (depending on the sign), but it is helpful to note that, by the definition of the , this limit does not exist, since is not arbitrarily close to a single real number.     Dividing by 0 in a Limit   If with and , then has an at . We will often denote this behavior as: where is meant to be some shorthand representation of a non-zero limit in the numerator (often, but not necessarily, some real number).     Evaluating Infinite Limits  Once we know that , we know a bunch of information right away!   This limit doesn't exist.    The function has a vertical asymptote at , causing these unbounded -values near .    The one sided limits must be either or .    We only need to focus on the sign of the one sided limits! And signs of products and quotients are easy to follow.     So a pretty typical process is to factor as much as we can, and check the sign of each factor (in a numerator or denominator) as and . From there, we can find the sign of in both of those cases, which will tell us the one-sided limit.     For each function, find the relevant one-sided limits at the input-value mentioned. If you can use a two-sided limit statement to discuss the behavior of the function around this input-value, then do so.     and      and      and       End Behavior Limits   What Happens When We Divide by Infinity?   Again, we need to start by making something clear: if we were really going to try divide some real number by infinity, then we would need to re-build our definition of what it means to divide. In the context we're in right now, we only have division defined as an operation for real (and maybe complex) numbers. Since infinity is neither, then we will not literally divide by infinity.  When we talk about \"dividing by infinity\" here, we're again talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator gets arbitrarily large (positive or negative) (or, the limit of the denominator is infinite).    Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?       Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?       Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very large and positive.    Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very large and negative.    Why is there no difference in the behavior of as compared to when the sign of the function outputs are opposite ( when and when )?     Limit at Infinity   If is defined for all large and positive -values and gets arbitrarily close to the single real number when gets sufficiently large, then we say: .  Similarly, if is defined for all large and negative -values and gets arbitrarily close to the single real number when gets sufficiently negative, then we say: .  In the case that has a limit at infinity that exists, then we say has a horizontal asymptote at .  Lastly, if is defined for all large and positive (or negative) -values and gets arbitrarily large and positive (or negative) when gets sufficiently large (or negative), then we could say: .    Because the primary focus for limits at infinity is the end behavior of a function, we will often refer to these limits as end behavior limits .   End Behavior of Reciprocal Power Functions   If is a positive real number, then: .     Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.    Consider the polynomial function: where is some integer and is a real number for . For simplicity, we will consider only the limit as , but we could easily repeat this exact proof for the case where .  Before we consider this limit, we can factor out , the variable with the highest exponent: Now consider the limit of this product: We can see that in the second limit, we have a single constant term, , followed by reciprocal power functions. Then, due to , we know that the second limit will by , since the reciprocal power functions will all approach 0. And so as we claimed.      For each function, find the limits as and .                      Matching the Limits   We're going to look at four graphs of functions, as well as a list of limit statements. Match the limit statements with the graphs that match that behavior. Note that is is possible for a limit to be relevant on more than one graph.    Now consider these four function definitions. Using your knowledge of limits, as well as the matching you've already done, match the definitions of these four functions with the graphs that go with them, and then also the limits that are relevant. (These limits will already be matched with the graphs, so you don't need to do further work here).     "
 },
 {
-  "id": "sec-EndBehaviorLimits",
-  "level": "1",
-  "url": "sec-EndBehaviorLimits.html",
-  "type": "Section",
-  "number": "1.6",
-  "title": "End Behavior Limits",
-  "body": " End Behavior Limits  Text of section.   Limit at Infinity   If is defined for all large -values     Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.    "
+  "id": "act-DivideBy0",
+  "level": "2",
+  "url": "sec-LimitsInvolvingInfinity.html#act-DivideBy0",
+  "type": "Activity",
+  "number": "1.5.1",
+  "title": "What Happens When We Divide by 0?",
+  "body": " What Happens When We Divide by 0?   First, let's make sure we're clear on one thing: there is no real number than is represented as some other number divided by 0.  When we talk about \"dividing by 0\" here (and in ), we're talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator gets arbitrarily close to 0 (or, the limit of the denominator is 0).    Remember when, once upon a time, you learned that dividing one a number by a fraction is the same as multiplying the first number by the reciprocal of the fraction? Why is this true?    What is the relationship between a number and its reciprocal? How does the size of a number impact the size of the reciprocal? Why?    Consider . What is the value of this division problem when:    ?     ?     ?     ?     ?       Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?       Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very small and positive.    Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very small and negative.   "
+},
+{
+  "id": "def-InfiniteLimit",
+  "level": "2",
+  "url": "sec-LimitsInvolvingInfinity.html#def-InfiniteLimit",
+  "type": "Definition",
+  "number": "1.5.1",
+  "title": "Infinite Limit.",
+  "body": " Infinite Limit   We say that a function has an infinite limit at if is arbitrarily large (positive or negative) when is sufficiently close to, but not equal to, .  We would then say, depending on the sign of the values of , that: . If the sign of both one-sided limits are the same, we can say that (depending on the sign), but it is helpful to note that, by the definition of the , this limit does not exist, since is not arbitrarily close to a single real number.   "
+},
+{
+  "id": "thm-DivBy0-InfiniteLimit",
+  "level": "2",
+  "url": "sec-LimitsInvolvingInfinity.html#thm-DivBy0-InfiniteLimit",
+  "type": "Theorem",
+  "number": "1.5.2",
+  "title": "Dividing by 0 in a Limit.",
+  "body": " Dividing by 0 in a Limit   If with and , then has an at . We will often denote this behavior as: where is meant to be some shorthand representation of a non-zero limit in the numerator (often, but not necessarily, some real number).   "
+},
+{
+  "id": "subsec-InfiniteLimits-6",
+  "level": "2",
+  "url": "sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits-6",
+  "type": "Example",
+  "number": "1.5.3",
+  "title": "",
+  "body": "  For each function, find the relevant one-sided limits at the input-value mentioned. If you can use a two-sided limit statement to discuss the behavior of the function around this input-value, then do so.     and      and      and    "
+},
+{
+  "id": "act-DivideByInfinity",
+  "level": "2",
+  "url": "sec-LimitsInvolvingInfinity.html#act-DivideByInfinity",
+  "type": "Activity",
+  "number": "1.5.2",
+  "title": "What Happens When We Divide by Infinity?",
+  "body": " What Happens When We Divide by Infinity?   Again, we need to start by making something clear: if we were really going to try divide some real number by infinity, then we would need to re-build our definition of what it means to divide. In the context we're in right now, we only have division defined as an operation for real (and maybe complex) numbers. Since infinity is neither, then we will not literally divide by infinity.  When we talk about \"dividing by infinity\" here, we're again talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator gets arbitrarily large (positive or negative) (or, the limit of the denominator is infinite).    Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?       Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?       Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very large and positive.    Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very large and negative.    Why is there no difference in the behavior of as compared to when the sign of the function outputs are opposite ( when and when )?   "
 },
 {
   "id": "def-LimitAtInfinity",
   "level": "2",
-  "url": "sec-EndBehaviorLimits.html#def-LimitAtInfinity",
+  "url": "sec-LimitsInvolvingInfinity.html#def-LimitAtInfinity",
   "type": "Definition",
-  "number": "1.6.1",
+  "number": "1.5.4",
   "title": "Limit at Infinity.",
-  "body": " Limit at Infinity   If is defined for all large -values   "
+  "body": " Limit at Infinity   If is defined for all large and positive -values and gets arbitrarily close to the single real number when gets sufficiently large, then we say: .  Similarly, if is defined for all large and negative -values and gets arbitrarily close to the single real number when gets sufficiently negative, then we say: .  In the case that has a limit at infinity that exists, then we say has a horizontal asymptote at .  Lastly, if is defined for all large and positive (or negative) -values and gets arbitrarily large and positive (or negative) when gets sufficiently large (or negative), then we could say: .   "
+},
+{
+  "id": "subsec-EndBehaviorLimits-4",
+  "level": "2",
+  "url": "sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "end behavior limits "
+},
+{
+  "id": "thm-EndBehaviorReciprocalPower",
+  "level": "2",
+  "url": "sec-LimitsInvolvingInfinity.html#thm-EndBehaviorReciprocalPower",
+  "type": "Theorem",
+  "number": "1.5.5",
+  "title": "End Behavior of Reciprocal Power Functions.",
+  "body": " End Behavior of Reciprocal Power Functions   If is a positive real number, then: .   "
 },
 {
   "id": "thm-PolynomialEndBehavior",
   "level": "2",
-  "url": "sec-EndBehaviorLimits.html#thm-PolynomialEndBehavior",
+  "url": "sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior",
   "type": "Theorem",
-  "number": "1.6.2",
+  "number": "1.5.6",
   "title": "Polynomial End Behavior Limits.",
-  "body": " Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.   "
+  "body": " Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.    Consider the polynomial function: where is some integer and is a real number for . For simplicity, we will consider only the limit as , but we could easily repeat this exact proof for the case where .  Before we consider this limit, we can factor out , the variable with the highest exponent: Now consider the limit of this product: We can see that in the second limit, we have a single constant term, , followed by reciprocal power functions. Then, due to , we know that the second limit will by , since the reciprocal power functions will all approach 0. And so as we claimed.   "
+},
+{
+  "id": "subsec-EndBehaviorLimits-7",
+  "level": "2",
+  "url": "sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits-7",
+  "type": "Example",
+  "number": "1.5.7",
+  "title": "",
+  "body": "  For each function, find the limits as and .                  "
+},
+{
+  "id": "act-MatchingLimits",
+  "level": "2",
+  "url": "sec-LimitsInvolvingInfinity.html#act-MatchingLimits",
+  "type": "Activity",
+  "number": "1.5.3",
+  "title": "Matching the Limits.",
+  "body": " Matching the Limits   We're going to look at four graphs of functions, as well as a list of limit statements. Match the limit statements with the graphs that match that behavior. Note that is is possible for a limit to be relevant on more than one graph.    Now consider these four function definitions. Using your knowledge of limits, as well as the matching you've already done, match the definitions of these four functions with the graphs that go with them, and then also the limits that are relevant. (These limits will already be matched with the graphs, so you don't need to do further work here).   "
 },
 {
   "id": "sec-SqueezeTheorem",
   "level": "1",
   "url": "sec-SqueezeTheorem.html",
   "type": "Section",
-  "number": "1.7",
-  "title": "The Squeeze Theorem and Other Tricks",
-  "body": " The Squeeze Theorem and Other Tricks   The Squeeze Theorem   For some functions , , and which are all defined and ordered for -values near (but not necessarily at itself), and for some real number , if we know that then we also know that .    "
+  "number": "1.6",
+  "title": "The Squeeze Theorem",
+  "body": " The Squeeze Theorem   A Weird End Behavior Limit   In this activity, we're going to find the following limit: . This limit is a bit weird, in that we really haven't looked at trigonometric functions that much. We're going to start by looking at a different limit in the hopes that we can eventually build towards this one.    Consider, instead, the following limit: . Find the limit and connect the process or intuition behind it to at least one of the results from this text.   Start with to think about the numerator and denominator separately.   Can you use in the denominator?   Is relevant?    Let's put this limit aside and briefly talk about the sine function. What are some things to remember about this function? What should we know? How does it behave?    What kinds of values doe we expect to take on for different values of ?     What happens when we square the sine function? What kinds of values can that take on?     Think back to our original goal: we wanted to know the end behavior of . Right now we have two bits of information:   We know .    We know some information about the behavior of . Specifically, we have some bounds on its values.   Can we combine this information?  In your inequality above, multiply onto all three pieces of the inequality. Make sure you're convinced about the direction or order of the inequality and whether or not it changes with this multiplication.     For your functions and , evaluate and .    What do you think this means about the limit we're interested in, ?     The Squeeze Theorem   For some functions , , and which are all defined and ordered for -values near (but not necessarily at itself), and for some real number , if we know that then we also know that .     Sketch This Function Around This Point   Sketch or visualize the functions and , especially around .      Sketch some other function, where for the -values around (byt maybe not at) .    Use the Squeeze Theorem to evaluate and explain for your function .    Is this limit dependent on the specific version of that you sketched? Would this limit be different for someone else's choice of given the same parameters?    What information must be true (if anything) about and ?  Do we know that these limits exist? If they do, do we have information about their values?    "
+},
+{
+  "id": "act-WeirdEndBehavior",
+  "level": "2",
+  "url": "sec-SqueezeTheorem.html#act-WeirdEndBehavior",
+  "type": "Activity",
+  "number": "1.6.1",
+  "title": "A Weird End Behavior Limit.",
+  "body": " A Weird End Behavior Limit   In this activity, we're going to find the following limit: . This limit is a bit weird, in that we really haven't looked at trigonometric functions that much. We're going to start by looking at a different limit in the hopes that we can eventually build towards this one.    Consider, instead, the following limit: . Find the limit and connect the process or intuition behind it to at least one of the results from this text.   Start with to think about the numerator and denominator separately.   Can you use in the denominator?   Is relevant?    Let's put this limit aside and briefly talk about the sine function. What are some things to remember about this function? What should we know? How does it behave?    What kinds of values doe we expect to take on for different values of ?     What happens when we square the sine function? What kinds of values can that take on?     Think back to our original goal: we wanted to know the end behavior of . Right now we have two bits of information:   We know .    We know some information about the behavior of . Specifically, we have some bounds on its values.   Can we combine this information?  In your inequality above, multiply onto all three pieces of the inequality. Make sure you're convinced about the direction or order of the inequality and whether or not it changes with this multiplication.     For your functions and , evaluate and .    What do you think this means about the limit we're interested in, ?   "
 },
 {
   "id": "thm-SqueezeTheorem",
   "level": "2",
   "url": "sec-SqueezeTheorem.html#thm-SqueezeTheorem",
   "type": "Theorem",
-  "number": "1.7.1",
+  "number": "1.6.1",
   "title": "The Squeeze Theorem.",
   "body": " The Squeeze Theorem   For some functions , , and which are all defined and ordered for -values near (but not necessarily at itself), and for some real number , if we know that then we also know that .   "
+},
+{
+  "id": "act-SketchSqueeze",
+  "level": "2",
+  "url": "sec-SqueezeTheorem.html#act-SketchSqueeze",
+  "type": "Activity",
+  "number": "1.6.2",
+  "title": "Sketch This Function Around This Point.",
+  "body": " Sketch This Function Around This Point   Sketch or visualize the functions and , especially around .      Sketch some other function, where for the -values around (byt maybe not at) .    Use the Squeeze Theorem to evaluate and explain for your function .    Is this limit dependent on the specific version of that you sketched? Would this limit be different for someone else's choice of given the same parameters?    What information must be true (if anything) about and ?  Do we know that these limits exist? If they do, do we have information about their values?   "
 },
 {
   "id": "sec-Continuity",
   "level": "1",
   "url": "sec-Continuity.html",
   "type": "Section",
-  "number": "1.8",
+  "number": "1.7",
   "title": "Continuity and the Intermediate Value Theorem",
-  "body": " Continuity and the Intermediate Value Theorem  Text of section.  "
+  "body": " Continuity and the Intermediate Value Theorem   Continuity as Connectedness      Continuity as Classification   Continuous at a Point   The function is continuous at an -value in the domain of if if .  If is not continuous at , but one of the one-sided limits is equal to the function output, then we can define directional continuity at that point:   We say is continuous on the left at when .    We say is continuous on the right at when .        Continuous on an Interval   We say that is continuous on the interval  if is continuous at every -value with .  If is continuous on the right at and\/or continuous on the left at , then we will say that is continuous on the interval , , or , whichever is relevant.      Discontinuities   Where is a Function not Continuous?  Most of the functions that we consider in this text will be continuous everywhere that it makes sense: on their domain. That is, if there is a point defined at some -value, it is likely that the function's limit matches the -value of the point. More specifically, though:   A function is discontinuous at any location that results in an infinite limit. These are locations where is undefined and the limit is infinite (and so doesn't exist).    A function is, in general, discontinuous wherever it is undefined. This seems silly to say! We probably could have left this unsaid.    A function that is defined as a piecewise function could be discontinuous at locations where the pieces meet: maybe the limit doesn't exist, or maybe the function value is not defined, or maybe the limit exists and the function value is defined but they do not match.        Intermediate Value Theorem   Intermediate Value Theorem   If is a function that is continuous on with and is any real number between and (either or ), then there exists some between and ( ) such that .     This theorem was stated as early as the 5th century BCE by Bryson of Heraclea. Back then, a really interesting problem was related to \"squaring the circle.\" That is, given a circle with some measurable radius, can we construct a square with equal area? This is obviously true, in that we can just use a square with the side length . What we typically mean by \"construct,\" though, is to create this square using only a compass and straightedge (a ruler without length markings) and only a finite number of steps. This was finally proven to be impossible in 1882, approximately 2300 years later.  Bryson of Heraclea knew that the square itself existed (even if he couldn't construct it) because he was able to find a square with area less than a circle (by inscribing a square inside of the circle) and a square with area greater than a circle (where the circle is inscribed in the square). Since he posited that he could increase the size of the square in a continuous manner (without using those words), he claimed that a square with area equal to that of the circle must exist, since the area of the square passes through all values from the smaller area to the larger area.    "
+},
+{
+  "id": "def-ContinuousAtPoint",
+  "level": "2",
+  "url": "sec-Continuity.html#def-ContinuousAtPoint",
+  "type": "Definition",
+  "number": "1.7.1",
+  "title": "Continuous at a Point.",
+  "body": " Continuous at a Point   The function is continuous at an -value in the domain of if if .  If is not continuous at , but one of the one-sided limits is equal to the function output, then we can define directional continuity at that point:   We say is continuous on the left at when .    We say is continuous on the right at when .      "
+},
+{
+  "id": "def-ContinuousOnInterval",
+  "level": "2",
+  "url": "sec-Continuity.html#def-ContinuousOnInterval",
+  "type": "Definition",
+  "number": "1.7.2",
+  "title": "Continuous on an Interval.",
+  "body": " Continuous on an Interval   We say that is continuous on the interval  if is continuous at every -value with .  If is continuous on the right at and\/or continuous on the left at , then we will say that is continuous on the interval , , or , whichever is relevant.   "
+},
+{
+  "id": "thm-IVT",
+  "level": "2",
+  "url": "sec-Continuity.html#thm-IVT",
+  "type": "Theorem",
+  "number": "1.7.3",
+  "title": "Intermediate Value Theorem.",
+  "body": " Intermediate Value Theorem   If is a function that is continuous on with and is any real number between and (either or ), then there exists some between and ( ) such that .   "
 },
 {
   "id": "sec-IntroDerivatives",
@@ -532,317 +649,11 @@ var ptx_lunr_docs = [
   "body": " More Definite Integrals  Text of section.  "
 },
 {
-  "id": "sec-ImproperIntegrals",
-  "level": "1",
-  "url": "sec-ImproperIntegrals.html",
-  "type": "Section",
-  "number": "6.1",
-  "title": "Improper Integrals",
-  "body": " Improper Integrals   Remembering a Theme so Far   Let's say that we want to find what the -values of some function are when the -values are \"infinitely close to\" some value, . Since there is no single -value that is \"infinitely close to\" that we can evaluate at, we need to do something else. How do we do this?    Let's say that we want to find the rate of change of some function instantaneously at a point with . We can't find a rate of change unless we have two points, since we need to find some differences in the outputs and inputs. How do we do this?    Suppose you want to find the total area, covered by an infinite number of infinitely thin rectangles. You have a formula for finding the dimensions and areas for some finite number of rectangles, but how do we get an infinite number of them?    Can you find the common calculus theme in each of these scenarios?     Remembering the Fundamental Theorem of Calculus   We want to think about generalizing our notion of integrals a bit. So in this activity, section, we're going to think about some of the requirements for the Fundamental Theorem of Calculus and try to loosen them up a bit to see what happens. We'll try to construct meaningful approaches to these situations that fit our overall goals of calculating area under a curve.  This practice, in general, is a really good and common mathematical process: taking some result and playing with the requirements or assumptions to see what else can happen. So it might feel like we're just fiddling with the \"What if?\" questions, but what we're actually doing is good mathematics!    What does the Fundamental Theorem of Calculus say about evaluating the definite integral ?    What do we need to be true about our setup, our function, etc. for us to be able to apply this technique to evaluate ?    We are going to introduce the idea of \"Improper Integrals\" as kind-of-but-not-quite definite integrals that we can evaluate. They are going to violate the requirements for the Fundamental Theorem of Calculus, but we'll work to salvage them in meaningful ways.     Improper Integral   An integral is an improper integral if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:   The interval that we integrate the function over is unbounded in width, or infinitely wide.    The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over.        Evaluating Improper Integrals (Infinite Width)  For a function that is continuous on , we can evaluate the improper integral : .  If is continuous on , we can evaluate the improper integral : .  Finally, if is continuous on and is some real number, then we can evaluate the improper integral : .    Evaluating Improper Integrals (Infinite Height)  For a function that has an unbounded discontinuity (a vertical asymptote) at     Convergence of an Improper Integral   We say that an improper integral converges if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral diverges .     Explain what it means for an integral to be improper. What kinds of issues are we looking at?  Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width).  Give an example of an integral that is improper due to an unbounded integrand (infinite height).  What does it mean for an improper integral to ``converge?'' How does this connect with limits?  What does it mean for an improper integral to ``diverge?'' How does this connect with limits?  Why do we need to use limits to evaluate improper integrals?   For each of the following improper integrals:   Explain why the integral is improper. Be specific, and point out the issues in detail.    Set up the integral using the correct limit notation.    Antidifferentiate and evaluate the limit.    Explain whether the integral converges or diverges.                              One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of makes the function a valid probability distribution on the interval ?   Let's consider the integral . This is a difficult integral to evaluate!   First, compare to using an inequality: which one is bigger?   Second, use this inequality to compare the function to for : which one is bigger? Again, use your inequality from above to help!   Now compare to . Which one is bigger?   Explain how we can use this result to make a conclusion about whether our integral, converges or diverges.    "
-},
-{
-  "id": "act-RememberingTheme",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#act-RememberingTheme",
-  "type": "Activity",
-  "number": "6.1.1",
-  "title": "Remembering a Theme so Far.",
-  "body": " Remembering a Theme so Far   Let's say that we want to find what the -values of some function are when the -values are \"infinitely close to\" some value, . Since there is no single -value that is \"infinitely close to\" that we can evaluate at, we need to do something else. How do we do this?    Let's say that we want to find the rate of change of some function instantaneously at a point with . We can't find a rate of change unless we have two points, since we need to find some differences in the outputs and inputs. How do we do this?    Suppose you want to find the total area, covered by an infinite number of infinitely thin rectangles. You have a formula for finding the dimensions and areas for some finite number of rectangles, but how do we get an infinite number of them?    Can you find the common calculus theme in each of these scenarios?   "
-},
-{
-  "id": "act-RememberingFTOC",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#act-RememberingFTOC",
-  "type": "Activity",
-  "number": "6.1.2",
-  "title": "Remembering the Fundamental Theorem of Calculus.",
-  "body": " Remembering the Fundamental Theorem of Calculus   We want to think about generalizing our notion of integrals a bit. So in this activity, section, we're going to think about some of the requirements for the Fundamental Theorem of Calculus and try to loosen them up a bit to see what happens. We'll try to construct meaningful approaches to these situations that fit our overall goals of calculating area under a curve.  This practice, in general, is a really good and common mathematical process: taking some result and playing with the requirements or assumptions to see what else can happen. So it might feel like we're just fiddling with the \"What if?\" questions, but what we're actually doing is good mathematics!    What does the Fundamental Theorem of Calculus say about evaluating the definite integral ?    What do we need to be true about our setup, our function, etc. for us to be able to apply this technique to evaluate ?    We are going to introduce the idea of \"Improper Integrals\" as kind-of-but-not-quite definite integrals that we can evaluate. They are going to violate the requirements for the Fundamental Theorem of Calculus, but we'll work to salvage them in meaningful ways.   "
-},
-{
-  "id": "def-ImproperIntegral",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#def-ImproperIntegral",
-  "type": "Definition",
-  "number": "6.1.1",
-  "title": "Improper Integral.",
-  "body": " Improper Integral   An integral is an improper integral if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:   The interval that we integrate the function over is unbounded in width, or infinitely wide.    The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over.      "
-},
-{
-  "id": "def-ConvergenceImproperIntegral",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#def-ConvergenceImproperIntegral",
-  "type": "Definition",
-  "number": "6.1.2",
-  "title": "Convergence of an Improper Integral.",
-  "body": " Convergence of an Improper Integral   We say that an improper integral converges if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral diverges .   "
-},
-{
-  "id": "ex-ImproperIntegrals-1",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-1",
-  "type": "Exercise",
-  "number": "6.1.1",
-  "title": "",
-  "body": "Explain what it means for an integral to be improper. What kinds of issues are we looking at? "
-},
-{
-  "id": "ex-ImproperIntegrals-2",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-2",
-  "type": "Exercise",
-  "number": "6.1.2",
-  "title": "",
-  "body": "Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width). "
-},
-{
-  "id": "ex-ImproperIntegrals-3",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-3",
-  "type": "Exercise",
-  "number": "6.1.3",
-  "title": "",
-  "body": "Give an example of an integral that is improper due to an unbounded integrand (infinite height). "
-},
-{
-  "id": "ex-ImproperIntegrals-4",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-4",
-  "type": "Exercise",
-  "number": "6.1.4",
-  "title": "",
-  "body": "What does it mean for an improper integral to ``converge?'' How does this connect with limits? "
-},
-{
-  "id": "ex-ImproperIntegrals-5",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-5",
-  "type": "Exercise",
-  "number": "6.1.5",
-  "title": "",
-  "body": "What does it mean for an improper integral to ``diverge?'' How does this connect with limits? "
-},
-{
-  "id": "ex-ImproperIntegrals-6",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-6",
-  "type": "Exercise",
-  "number": "6.1.6",
-  "title": "",
-  "body": "Why do we need to use limits to evaluate improper integrals? "
-},
-{
-  "id": "ex-ImproperIntegrals-7",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-7",
-  "type": "Exercise",
-  "number": "6.1.7",
-  "title": "",
-  "body": " For each of the following improper integrals:   Explain why the integral is improper. Be specific, and point out the issues in detail.    Set up the integral using the correct limit notation.    Antidifferentiate and evaluate the limit.    Explain whether the integral converges or diverges.                             "
-},
-{
-  "id": "ex-ImproperIntegrals-8",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-8",
-  "type": "Exercise",
-  "number": "6.1.8",
-  "title": "",
-  "body": "One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of makes the function a valid probability distribution on the interval ? "
-},
-{
-  "id": "ex-ImproperIntegrals-9",
-  "level": "2",
-  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-9",
-  "type": "Exercise",
-  "number": "6.1.9",
-  "title": "",
-  "body": " Let's consider the integral . This is a difficult integral to evaluate!   First, compare to using an inequality: which one is bigger?   Second, use this inequality to compare the function to for : which one is bigger? Again, use your inequality from above to help!   Now compare to . Which one is bigger?   Explain how we can use this result to make a conclusion about whether our integral, converges or diverges.  "
-},
-{
-  "id": "sec-uSubstitution",
-  "level": "1",
-  "url": "sec-uSubstitution.html",
-  "type": "Section",
-  "number": "6.2",
-  "title": "<span class=\"process-math\">\\(u\\)<\/span>-Substitution",
-  "body": " -Substitution   More to Translate    Integrate the following, making sure to translate the whole integrand function to be written in terms of .        We can write as , or if you really want to, we can write it as          "
-},
-{
-  "id": "subsec-MoreToTranslate-2",
-  "level": "2",
-  "url": "sec-uSubstitution.html#subsec-MoreToTranslate-2",
-  "type": "Example",
-  "number": "6.2.1",
-  "title": "",
-  "body": "  Integrate the following, making sure to translate the whole integrand function to be written in terms of .        We can write as , or if you really want to, we can write it as        "
-},
-{
-  "id": "sec-AlgebraicManipulations",
-  "level": "1",
-  "url": "sec-AlgebraicManipulations.html",
-  "type": "Section",
-  "number": "6.3",
-  "title": "Manipulating Integrands to Reveal Substitution",
-  "body": " Manipulating Integrands to Reveal Substitution   We've looked at how to use a variable substitution to antidifferentiate composite functions. We've already seen, though, that sometimes identifying and actually using a helpful substitution can be difficult to do. In this section, we want to introduce some different strategies for noticing and setting up useful substitutions in some specific instances.    Rewriting the Integrand   A Negative Exponent   Let's think about this integral: .    Is there any composition in this integral? Pick it out, and either explain or show that using this to guide your substitution will not be helpful.   Notice that is composed inside of the exponential function. Try a substitution with .    What does mean? What does mean?    Re-write the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?   Re-write as , giving you: .   Either add the fractions in the denominator or multiply the whole fraction by .   You should have an integral that looks like: .    Why is this new integral set up so much better for the purpose of -substitution? How could we tell this just by looking at the initial integral?          Try to re-write this integral as .          Antidifferentiating Rational Functions  Strategies for antidifferentiating rational functions are just that: strategies. There aren't really easy ways to antidifferentiate these, but we'll find some common tactics to apply and try to build our intuition for noticing the different kinds of structure we can have in these rational functions. All of these strategies are based around cleverly re-writing our rational functions (using some algebraic manipulations) to reveal some structure. We'll try to notice the structure, so that we know what we're trying to reveal.   Integrating Rational Functions      "
-},
-{
-  "id": "act-NegativeExponent",
-  "level": "2",
-  "url": "sec-AlgebraicManipulations.html#act-NegativeExponent",
-  "type": "Activity",
-  "number": "6.3.1",
-  "title": "A Negative Exponent.",
-  "body": " A Negative Exponent   Let's think about this integral: .    Is there any composition in this integral? Pick it out, and either explain or show that using this to guide your substitution will not be helpful.   Notice that is composed inside of the exponential function. Try a substitution with .    What does mean? What does mean?    Re-write the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?   Re-write as , giving you: .   Either add the fractions in the denominator or multiply the whole fraction by .   You should have an integral that looks like: .    Why is this new integral set up so much better for the purpose of -substitution? How could we tell this just by looking at the initial integral?   "
-},
-{
-  "id": "subsec-Rewriting-3",
-  "level": "2",
-  "url": "sec-AlgebraicManipulations.html#subsec-Rewriting-3",
-  "type": "Example",
-  "number": "6.3.1",
-  "title": "",
-  "body": "      Try to re-write this integral as .       "
-},
-{
-  "id": "sec-IntegrationByParts",
-  "level": "1",
-  "url": "sec-IntegrationByParts.html",
-  "type": "Section",
-  "number": "6.4",
-  "title": "Integration By Parts",
-  "body": " Integration By Parts   We've seen now that is a useful technique for undo-ing . We set up the variable substitution with the specific goal of going backwards through the Chain Rule and antidifferentiating some composition of functions.  A reasonable next step is to ask: What other derivative rules can we \"undo?\" What other operations between functions should we think about? This brings us to Integration by Parts, the integration technique specifically for undo-ing .    Discovering the Integration by Parts Formula   Discovering the Integration by Parts Formula   The product rule for derivatives says that: . We know that we intend to \"undo\" the product rule, so let's try to re-frame the product rule from a rule about derivatives to a rule about antiderivatives.    Antidifferentiate the product rule by antidifferentiating each side of the equation.    Note that on the left side of this equation you're antidifferentiating a derivative. What will that give you? Then, on the right side, we're just splitting up the terms of the product rule into two different integrals.    On the right side, we have two integrals. Since each of them has a product of functions (one function and a derivative of another), we can isolate one of them in this equation and create a formula for how to antidifferentiate a product of functions! Solve for .    Look back at this formula for . Explain how this is really the product rule for derivatives (without just undo-ing all of the steps we have just done).    What made it so useful to pick instead of in this case? Since we know that we are going to get another integral, one that specifically has the new derivative and new antiderivative that we find from the parts we picked, we noticed that differentiating the function was much nicer than antidifferentiating it: we get a constant that we multiply by the trig function in this new integral, instead of a power function with an even bigger exponent. We can also notice that when it comes to the trig function, it doesn't really matter if we differentiate it or antidifferentiate it. In both cases, we get a in our new integral, with the only difference being whether it is positive or negative.    We typically use the substitutions and to re-write the integrals.   Integration by Parts  Suppose and are both differentiable functions. Then: .   When we select the parts for our integral, we are selecting a function to be labeled and a function to be labeled as . We begin with one of the pieces of the product rule, a function multiplied by some other function's derivative. It is important to recognize that we do different things to these functions: for one of them, , we need to find the derivative, . For the other, , we need to find an antiderivative, . Because of these differences, it is important to build some good intuition for how to select the parts.    Intuition for Selecting the Parts   Picking the Parts for Integration by Parts   Let's consider the integral: . We'll investigate how to set up the integration by parts formula with the different choices for the parts.    We'll start with selecting and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using your labeled pieces. Notice that the integration by parts formula gives us another integral. Don't worry about antidifferentiating this yet, let's just set the pieces up.        Let's swap the pieces and try the setup with and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Compare the two results we have. Which setup do you think will be easier to move forward with? Why?   When we say we need to keep moving forward with our setup, what we mean is that we have another integral to antidifferentiate. Which one will be easier to work with: or ?    Finalize your work with the setup you have chosen to find .    What made things so much better when we chose compared to ? We know that the new integral from our integration by parts formula will be built from the new pieces, the derivative we find from and the antiderivative we pick from . So when we differentiate , we get a constant, compared to antidifferentiating and getting another power function, but with a larger exponent. We know this will be combined with a function no matter what (since the derivative and antiderivatives of will only differ in their sign). So picking the version that gets that second integral to be built from a trig function and a constant is going to be much nicer than a trig function and a power function. It was nice to pick to be the piece that we found the derivative of!    Let's practice this comparison with another example in order to build our intuition for picking the parts in our integration by parts formula.   Picking the Parts for Integration by Parts   This time we'll look at a very similar integral: . Again, we'll set this up two different ways and compsare them.    We'll start with selecting and . Fill in the following with the rest of the pieces:    You're not forgetting how to antidifferentiate . This is just something we don't know yet!    Ok, so here we have to swap the pieces and try the setup with and , since we only know how to differentiate . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Why was it fine for us to antidifferentiate in this example, but not in ?    Finish this work to find .   Notice that .    So here, we didn't actually get much choice. We couldn't pick in order to differentiate it (and get a constant to multiply into our second integral) since we don't know how to antidifferentiate (yet: once we know how, it might be fun to come back to this problem and try it again with the parts flipped). But we can also notice that it ended up being fine to antidifferentiate : the increased power from our power rule didn't really matter much when we combined it with the derivative of the logarithm, since the derivative of the log is also a power function ! So we were able to combine those easily and actually integrate that second integral.     It is common for students to want to place functions into sort of hierarchy or classification guidelines for choosing the parts. Some students have found that the acronym LIPET (logs, inverse trig, power functions, exponentials, and trig functions) can be a useful tool for selecting the parts. When you have two different types of functions, it might help to select to be whichever function shows up first in that list.     Integrate the following:        It doesn't matter whether we differentiate or antidifferentiate , since we'll get the same thing. Let's pick so that we can differentiate it.     We need to do more integration by parts!          We don't know how to antidifferentiate , but we do know how to differentiate it!           Some Flexible Choices for Parts  We're going to look at a couple of examples where we can showcase some of the flexibility we have with our choices of parts. First, we'll revisit .In this example, when we got to that second integral, we noticed that for the fraction , we could either do some long division (since the degrees in the numerator and denominator are the same) or do some clever re-writing of the numerator. Either way, we know that this fraction is almost 1...It's really some bit (in this case, the extra bit was a fraction ).  What if we chose our parts differently? Not the and parts, though, since we still haven't figured out how to antidifferentiate . But we get one more choice!  Once we choose , we don't really get a separate choice for : it's simply the derivative of with regard to multiplied by the differential . But consider our choice of , and the subsequent process of finding . Yes, there's only one possible answer, but in a much more real sense, there isn't just one possible answer. There are an infinite number of them! We know, due to the and then later due to , that there are an infinite number of antiderivatives, all differing by at most a constant term. So let's pick a more appropriate antiderivative!    Integrate , this time making a more intentional choice for .    Note that if we pick , then the second integral will be just delightful.          So we get the same thing, but didn't have to think through the long division or the forced factoring. But the trade off here is that we almost have to see this coming to notice it. This flexibility doesn't always come into play for us. But we can look at a different kind of flexibility.  We've looked at integrals with both and . For these, and for other inverse functions specifically, we pick them to be the part in our integration by parts problems because we don't know how do antidifferentiate them.  So let's look at , and we'll solve this integral by, specifically, differentiating instead of antidifferentiating it.   Antidifferentiating the Log Function   Integrate .    Pick , since we can differentiate it. What does that leave for ?          We can use this same strategy to find antiderivatives of , , and eventually .   For , we'll need to use this same tactic of setting and , but then later on we'll need to use a technique called to finish the problem.   Now that we know the antiderivative family for , we can revisit the problem in , , and try to work through the integration by parts when and .    Integrate .      Note that this last integral is really recognizable: it's the one we started with! Let's \"solve\" this equation for that integral by adding it to both sides of our equation.       Solving for the Integral  In this last example, we ended up seeing the original integral repeated when we did integration by parts. This is a useful technique, especially when we deal with functions that have a kind of \"repeating\" structure to their derivatives or antiderivatives. We'll look at a couple of classic integrals where we see this kind of technique employed.    For each of the following integrals, use integration by parts to solve.        This one is pretty straight forward, since it doesn't really matter what we select as our parts. Notice, though, that this isn't the only way we can approach this! We can use -substitution, or even re-write this using a trigonometric identity.                     Notice that we can come up with a bunch of different examples that are similar to . If we put trigonometric functions inside our integral, we'll have some options with how we approach them! We can use -substitution, since the derivatives of trigonometric functions are other trigonometric functions. In , for instance, we could write and , or even chose and .  The real issues will come when our integrand is not just a product of two trigonometric functions, but when they are products of trigonometric functions raised to exponents. We'll have some combinations of these products (which maybe makes us think about integration by parts) and composition (which points towards -substitution). In the next section, we'll develop some strategies to deal with these kinds of integrals.   "
-},
-{
-  "id": "act-IntegrationByParts",
-  "level": "2",
-  "url": "sec-IntegrationByParts.html#act-IntegrationByParts",
-  "type": "Activity",
-  "number": "6.4.1",
-  "title": "Discovering the Integration by Parts Formula.",
-  "body": " Discovering the Integration by Parts Formula   The product rule for derivatives says that: . We know that we intend to \"undo\" the product rule, so let's try to re-frame the product rule from a rule about derivatives to a rule about antiderivatives.    Antidifferentiate the product rule by antidifferentiating each side of the equation.    Note that on the left side of this equation you're antidifferentiating a derivative. What will that give you? Then, on the right side, we're just splitting up the terms of the product rule into two different integrals.    On the right side, we have two integrals. Since each of them has a product of functions (one function and a derivative of another), we can isolate one of them in this equation and create a formula for how to antidifferentiate a product of functions! Solve for .    Look back at this formula for . Explain how this is really the product rule for derivatives (without just undo-ing all of the steps we have just done).    What made it so useful to pick instead of in this case? Since we know that we are going to get another integral, one that specifically has the new derivative and new antiderivative that we find from the parts we picked, we noticed that differentiating the function was much nicer than antidifferentiating it: we get a constant that we multiply by the trig function in this new integral, instead of a power function with an even bigger exponent. We can also notice that when it comes to the trig function, it doesn't really matter if we differentiate it or antidifferentiate it. In both cases, we get a in our new integral, with the only difference being whether it is positive or negative.   "
-},
-{
-  "id": "act-PickingParts-1",
-  "level": "2",
-  "url": "sec-IntegrationByParts.html#act-PickingParts-1",
-  "type": "Activity",
-  "number": "6.4.2",
-  "title": "Picking the Parts for Integration by Parts.",
-  "body": " Picking the Parts for Integration by Parts   Let's consider the integral: . We'll investigate how to set up the integration by parts formula with the different choices for the parts.    We'll start with selecting and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using your labeled pieces. Notice that the integration by parts formula gives us another integral. Don't worry about antidifferentiating this yet, let's just set the pieces up.        Let's swap the pieces and try the setup with and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Compare the two results we have. Which setup do you think will be easier to move forward with? Why?   When we say we need to keep moving forward with our setup, what we mean is that we have another integral to antidifferentiate. Which one will be easier to work with: or ?    Finalize your work with the setup you have chosen to find .    What made things so much better when we chose compared to ? We know that the new integral from our integration by parts formula will be built from the new pieces, the derivative we find from and the antiderivative we pick from . So when we differentiate , we get a constant, compared to antidifferentiating and getting another power function, but with a larger exponent. We know this will be combined with a function no matter what (since the derivative and antiderivatives of will only differ in their sign). So picking the version that gets that second integral to be built from a trig function and a constant is going to be much nicer than a trig function and a power function. It was nice to pick to be the piece that we found the derivative of!   "
-},
-{
-  "id": "act-PickingParts-2",
-  "level": "2",
-  "url": "sec-IntegrationByParts.html#act-PickingParts-2",
-  "type": "Activity",
-  "number": "6.4.3",
-  "title": "Picking the Parts for Integration by Parts.",
-  "body": " Picking the Parts for Integration by Parts   This time we'll look at a very similar integral: . Again, we'll set this up two different ways and compsare them.    We'll start with selecting and . Fill in the following with the rest of the pieces:    You're not forgetting how to antidifferentiate . This is just something we don't know yet!    Ok, so here we have to swap the pieces and try the setup with and , since we only know how to differentiate . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Why was it fine for us to antidifferentiate in this example, but not in ?    Finish this work to find .   Notice that .    So here, we didn't actually get much choice. We couldn't pick in order to differentiate it (and get a constant to multiply into our second integral) since we don't know how to antidifferentiate (yet: once we know how, it might be fun to come back to this problem and try it again with the parts flipped). But we can also notice that it ended up being fine to antidifferentiate : the increased power from our power rule didn't really matter much when we combined it with the derivative of the logarithm, since the derivative of the log is also a power function ! So we were able to combine those easily and actually integrate that second integral.   "
-},
-{
-  "id": "subsec-PickingParts-6",
-  "level": "2",
-  "url": "sec-IntegrationByParts.html#subsec-PickingParts-6",
-  "type": "Example",
-  "number": "6.4.1",
-  "title": "",
-  "body": "  Integrate the following:        It doesn't matter whether we differentiate or antidifferentiate , since we'll get the same thing. Let's pick so that we can differentiate it.     We need to do more integration by parts!          We don't know how to antidifferentiate , but we do know how to differentiate it!        "
-},
-{
-  "id": "subsec-FlexibleChoices-5",
-  "level": "2",
-  "url": "sec-IntegrationByParts.html#subsec-FlexibleChoices-5",
-  "type": "Example",
-  "number": "6.4.2",
-  "title": "",
-  "body": "  Integrate , this time making a more intentional choice for .    Note that if we pick , then the second integral will be just delightful.         "
-},
-{
-  "id": "subsec-FlexibleChoices-9",
-  "level": "2",
-  "url": "sec-IntegrationByParts.html#subsec-FlexibleChoices-9",
-  "type": "Example",
-  "number": "6.4.3",
-  "title": "Antidifferentiating the Log Function.",
-  "body": " Antidifferentiating the Log Function   Integrate .    Pick , since we can differentiate it. What does that leave for ?         "
-},
-{
-  "id": "subsec-FlexibleChoices-13",
-  "level": "2",
-  "url": "sec-IntegrationByParts.html#subsec-FlexibleChoices-13",
-  "type": "Example",
-  "number": "6.4.4",
-  "title": "",
-  "body": "  Integrate .      Note that this last integral is really recognizable: it's the one we started with! Let's \"solve\" this equation for that integral by adding it to both sides of our equation.    "
-},
-{
-  "id": "subsec-SolvingForIntegral-3",
-  "level": "2",
-  "url": "sec-IntegrationByParts.html#subsec-SolvingForIntegral-3",
-  "type": "Example",
-  "number": "6.4.5",
-  "title": "",
-  "body": "  For each of the following integrals, use integration by parts to solve.        This one is pretty straight forward, since it doesn't really matter what we select as our parts. Notice, though, that this isn't the only way we can approach this! We can use -substitution, or even re-write this using a trigonometric identity.                    "
-},
-{
-  "id": "sec-PowersOfTrig",
-  "level": "1",
-  "url": "sec-PowersOfTrig.html",
-  "type": "Section",
-  "number": "6.5",
-  "title": "Integrating Powers of Trigonometric Functions",
-  "body": " Integrating Powers of Trigonometric Functions   Let's remind ourselves of two example problems that we've done in the past.  In , we performed a -substitution, but needed to work to re-write our whole integrand in terms of . Specifically, we found that in the numerator, there was an , but . We were substituting out a linear function of in the numerator, but the actual function was cubic. This wasn't a problem: we re-wrote , and noticed that the extra was able to be substituted, since we could re-write out subsitution rule: we noted that is equivalent to . This meant that even though we had an extra factor of \"in\" the part that we were using for substituting in the differential , we were still able to translate the whole function to be written in terms of .  Then, more recently, in , we noted that we could use a mix of methods to integrate this:  One on hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that's what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a -substitution was also appropriate.  In this section, we'll explore more combinations of trigonometric functions and build a strategy for antidifferentiating them that includes some ideas from both of these previous examples.    Building a Strategy for Powers of Sines and Cosines   Compare and Contrast   Let's do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:     Consider the first integral, . Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.   It might be helpful to notice that can be re-written as . Does this help reveal something important about the structure of this integrand?    Now consider the second integral, . Does the same integration strategy work here? What happens when you apply the same thing?   Let again, and . What happens with the cosine functions? How many are \"left\" after applying our substitution?    We know that and are related to each other through derivatives (each is the derivative of the other, up to a negative). Is there some other connection that we have between these functions? We might especially notice that we have a left over in our integral. Can we write this in terms of , so that we can write it in terms of ?   We have a trigonometric identity (the Pythagorean Identity): .    Why would this strategy not have worked if we were looking at the integrals or ? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?     Integrating Powers of Sine and Cosine  For integrals in the form where and are real number exponents:   If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If both and are even, we can either use or use the following power-reducing trigonometric identities:       A strange note, here, is that we typically pick our -substitution based on looking to see a suitable candidate for : we look for functions that are composed \"inside\" of other functions or we look for a function whose derivative is in the integral (the \"function-derivative pair\" that we talk about in ). Here, though, we're selecting our substitution based on : we're looking to see which function we can set aside one copy of for the differential, and then have an even power left over so that we can apply the Pythagorean Identity to translate the rest.    Building a Strategy for Powers of Secants and Tangents   Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .    Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which is also written as , with , or , let's divide everything in the Pythagorean Identity by :         Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.   Here, . We'll also use .        Now try the integral again, this time using as your substitution.   Now , and we'll use the same Pythagorean identity, just re-written as .        For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?   Notice we had an even exponent on the function, but an odd exponent on the function.    Which substitution would be best for the integral . Why?    Which substitution would be best for the integral . Why?     Integrating Powers of Secant and Tangent  For integrals in the form where and are real number exponents:   If , the exponent on , is odd, we can use and . Then we can apply the Pythagorean Identity .    If , the exponent on , is even, we can use and . Then we can apply the Pythagorean Identity .    If is odd and is even, we can use .       "
-},
-{
-  "id": "act-CompareContrast",
-  "level": "2",
-  "url": "sec-PowersOfTrig.html#act-CompareContrast",
-  "type": "Activity",
-  "number": "6.5.1",
-  "title": "Compare and Contrast.",
-  "body": " Compare and Contrast   Let's do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:     Consider the first integral, . Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.   It might be helpful to notice that can be re-written as . Does this help reveal something important about the structure of this integrand?    Now consider the second integral, . Does the same integration strategy work here? What happens when you apply the same thing?   Let again, and . What happens with the cosine functions? How many are \"left\" after applying our substitution?    We know that and are related to each other through derivatives (each is the derivative of the other, up to a negative). Is there some other connection that we have between these functions? We might especially notice that we have a left over in our integral. Can we write this in terms of , so that we can write it in terms of ?   We have a trigonometric identity (the Pythagorean Identity): .    Why would this strategy not have worked if we were looking at the integrals or ? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?   "
-},
-{
-  "id": "act-SecTan",
-  "level": "2",
-  "url": "sec-PowersOfTrig.html#act-SecTan",
-  "type": "Activity",
-  "number": "6.5.2",
-  "title": "Compare and Contrast (Again).",
-  "body": " Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .    Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which is also written as , with , or , let's divide everything in the Pythagorean Identity by :         Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.   Here, . We'll also use .        Now try the integral again, this time using as your substitution.   Now , and we'll use the same Pythagorean identity, just re-written as .        For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?   Notice we had an even exponent on the function, but an odd exponent on the function.    Which substitution would be best for the integral . Why?    Which substitution would be best for the integral . Why?   "
-},
-{
-  "id": "sec-TrigSub",
-  "level": "1",
-  "url": "sec-TrigSub.html",
-  "type": "Section",
-  "number": "6.6",
-  "title": "Trigonometric Substitution",
-  "body": " Trigonometric Substitution  Text of section.  "
-},
-{
-  "id": "sec-PartialFractions",
-  "level": "1",
-  "url": "sec-PartialFractions.html",
-  "type": "Section",
-  "number": "6.7",
-  "title": "Partial Fractions",
-  "body": " Partial Fractions   Comparing Rational Integrands   Try to integrate the following: . Explain what about this integral makes things very difficult.   Annoyingly, you can write this as: . Now explain why the second integral is difficult.    Confirm that .    Try to integrate the following: .    Which integral of the two would you rather integrate? Why?    "
-},
-{
-  "id": "act-PartialFractionCompare",
-  "level": "2",
-  "url": "sec-PartialFractions.html#act-PartialFractionCompare",
-  "type": "Activity",
-  "number": "6.7.1",
-  "title": "Comparing Rational Integrands.",
-  "body": " Comparing Rational Integrands   Try to integrate the following: . Explain what about this integral makes things very difficult.   Annoyingly, you can write this as: . Now explain why the second integral is difficult.    Confirm that .    Try to integrate the following: .    Which integral of the two would you rather integrate? Why?   "
-},
-{
   "id": "sec-NetChange",
   "level": "1",
   "url": "sec-NetChange.html",
   "type": "Section",
-  "number": "7.1",
+  "number": "6.1",
   "title": "Integrals as Net Change",
   "body": " Integrals as Net Change   We have some rudimentary ideas of what an integral is, but we want to challenge and expand those ideas by examining the object at the root of the definition of the definite integral: a Riemann sum.    Estimating Movement  Here is some text leading to our first activity.   Estimating Movement   We're observing an object traveling back and forth in a straight line. Throughout a 5 minute interval, we get the following information about the velocity (in feet\/second) of the object.   Velocity of an Object        0  0    30  2    60  4.25    90  5.75    120  3.5    150  0.75    180  -1.25    210  -3.5    240  -2.75    270  -0.5    300  -0.25       Describe the motion of the object in general.   How do we interpret the different values of velocity? How do we interpret the sign of velocity? What about how velocity changes from one of the 30-second time points to the next?    When was the acceleration of the object the greatest? When was it the least?   You can decide how to interpret the \"least\" acceleration: it is either where the acceleration is closes to 0, or it is the most negative value of the acceleration. These are interpreted differently, but it's a bit ambiguous what we might mean when we say \"least acceleration.\"    Estimate the total displacement of the object over the 5 minute interval. What is the overall change in position from the start to the end?   How do we use velocity and some time interval to estimate the distance traveled? How do we estimate\/assume the velocity on each 30-second time interval?    Is this different than the total distance that the object traveled over the 5 minute interval? Why or why not?   How do we think about (or ignore) the direction of the object? Why is this important here?    If we know the initial position of the object, how could we find the position of the object at some time, , where is a multiple of 30 between 0 and 300?   Can we limit the time intervals that we use to calculate the object's displacement? How do we use displacement and a starting point to find an ending point?    So what are the big ideas in this short activity? There are a lot, and many of them are already things we know, at least to some level. So we are really focusing on adding depth to our understanding of these big ideas. Let's list them in the order that they showed up in this activity:   We interpret the velocity as the derivative of the position of the object. So when we interpret the value of the velocity of the object (large vs small, positive vs negative, etc.) we are interpreting these through the lens of a rate of change.    Acceleration is the derivative of the velocity function. While we don't have the full picture of the velocity function at any value of , we still were interested in the rates at which velocity changes with regard to time.    We can estimate the total displacement of the object by predicting how far it traveled in eahc 30-second time interval. We might pick the starting velocity for each 30-second interval and multiply that by 30 seconds. We could alternatively pick the ending velocity of each 30-second interval. Then we can add all of these products of velocity and time together to approximate a total change in position! Doesn't this feel like a Riemann sum?    When we calculate displacement, the negative velocities get multiplied out to get negative changes in position for the object -- that's because a negative velocity means that the object is moving backwards. If we wanted to calculate the distance traveled, then we need to not account for negative velocities. We can just disregard the sign of the velocity on each time interval and repeat the process above. So, another Riemann sum then?    In order to forecast some position at time , we just need to start with the initial position, and then calculate (or approximate) the displacement from to whatever time we care about, and then add the displacement to the intitial position.   Ok, now let's formalize those results!    Position, Velocity, and Acceleration  We know that the velocity of an object is really a rate of change of the position of that object with regard to time. Similarly, the acceleration of an object is the rate of change of the velocity of the object with regard to time. So we're really thinking about derivatives!    For an object moving along a straight line, if represents the position of that object at time , then the velocity of theobject at time is and the acceleration of the object at time is .    Once we establish this relationship, we can answer questions about movement of an object using the same interpretations of derivatives that we practiced in Chapter 3 of this text.   A Friendly Jogger   Consider a jogger running along a straight-line path, where their velocity at hours is , and velocity is measured in miles per hour. We begin observing this jogger at and observe them over a course of 3 hours.    When is the jogger's acceleration equal to 0 mi\/hr ?   Solve .    Does this time represent a maximum or minimum velocity for the jogger?   You can use the First Derivative Test or the Second Derivative Test here!    When is the jogger's velocity equal to 0 mi\/hr?    Describe the motion of the jogger, including information about the direction that they travel and their top speeds.      Displacement, Distance, and Speed  Let's revisit . When we approximated the displacement of the object, we built a Riemann sum: We chose our as either the time at the beginning of each 30-second interval or the time atr the end of the 30-second interval, but that was only because of the limited information that we had about different values of . If we had information about the function at any values of ( ), then we could pick any time in each 30-second time interval for our Riemann sum! We might note, though, that if we did have this kind of information about the velocity at any time in the 5-minute interval, then we would also build a more precise approximation by subdividing the time interval into smaller\/shorter pieces. So maybe the Riemann sum (where we are dividing up the 5 minute interval into 100 3-second intervals) would do a better job! But why stop there? If we have the definition of the velocity function, and so we can truly obtain the velocity of the object at any time in the 5 minute interval, then we can use the definition of the definite integral as the limit of a Riemann sum: This should work out well with our first understanding of displacement: the displacement of an object is just the difference in position from the starting time to the ending time. So we could say that if is the position function, then we might expect to represent displacement from to as . But isn't this just the Fundamental Theorem of Calculus, since ?    If an object is moving along a straight line with velocity and position , then the displacement of the object from time to is     Let's keep revisiting the same activity. We also noticed that when we looked at the distance compared to the displacement, the only difference was that we were integrating the absolute value of the velocity function, since we didn't care about the sign of the velocity (the direction that the object was traveling) on each interval.    If an object is moving along a straight line with velocity , then the distance traveled by the object from time to is: Here, we call the speed of the object (instead of the velocity).    We should note that we don't have any quick and easy ways of dealing with the integral of the absolute value of a function. So, in order for us to integrate , we need to think about where the velocity passes through 0, so that we can see where it might change from positive to negative.   Tracking our Jogger   Let's revisit our jogger from .    Calculate the total displacement of the jogger from to .   Set up and evaluate a definite integral here, using the velocity function.    Think back to our descroption of the jogger's movement: when is this jogger moving backwards? Split up the time interval from (the start of their run) to (where is the time that the jogger changed direction) to . Calculate the displacements on each of these two intervals.    Calculate the total distance that the jogger traveled in their 3 hour run.   Remember that we're really calculating:       Finding the Future Value of a Function  We can again think back to and build our last result of this section. Remember when we were looking to predict the location of our object at different times: we said it was reasonable to start at our initial position, and then add the displacement of the object from that initial time up to the time that we were interested in. So, to estimate the object's position after 150 seconds, we would calculate: . But we said we could do this to estimate the object's position at any value for time, .   Future Position of an Object   For some object moving along a straight line with velocity and an intitial position of , the future position of the object at some time (with ) is: Note that we change the variable in the velocity function while we integrate: since we want our position function to be in terms of , the ending time point that we calculate the displacement up to, we need to choose a different variable to write velocity in terms of. Mechanically, there is no difference, since we're just swapping out the variables and naming them .    We can note that this relationship between velocity and position can exist in many other context: any pair of functions that are derivatives\/antiderivatives of each other can have this relationship!   Net Change and Future Value   Suppose the value changes over time at a known rate . Then the net change in between and is: . Similarly, given the initial value , the future value of at time is:      "
 },
@@ -851,7 +662,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#act-EstimatingMovement",
   "type": "Activity",
-  "number": "7.1.1",
+  "number": "6.1.1",
   "title": "Estimating Movement.",
   "body": " Estimating Movement   We're observing an object traveling back and forth in a straight line. Throughout a 5 minute interval, we get the following information about the velocity (in feet\/second) of the object.   Velocity of an Object        0  0    30  2    60  4.25    90  5.75    120  3.5    150  0.75    180  -1.25    210  -3.5    240  -2.75    270  -0.5    300  -0.25       Describe the motion of the object in general.   How do we interpret the different values of velocity? How do we interpret the sign of velocity? What about how velocity changes from one of the 30-second time points to the next?    When was the acceleration of the object the greatest? When was it the least?   You can decide how to interpret the \"least\" acceleration: it is either where the acceleration is closes to 0, or it is the most negative value of the acceleration. These are interpreted differently, but it's a bit ambiguous what we might mean when we say \"least acceleration.\"    Estimate the total displacement of the object over the 5 minute interval. What is the overall change in position from the start to the end?   How do we use velocity and some time interval to estimate the distance traveled? How do we estimate\/assume the velocity on each 30-second time interval?    Is this different than the total distance that the object traveled over the 5 minute interval? Why or why not?   How do we think about (or ignore) the direction of the object? Why is this important here?    If we know the initial position of the object, how could we find the position of the object at some time, , where is a multiple of 30 between 0 and 300?   Can we limit the time intervals that we use to calculate the object's displacement? How do we use displacement and a starting point to find an ending point?   "
 },
@@ -860,7 +671,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#def-position-velocity-acceleration",
   "type": "Definition",
-  "number": "7.1.2",
+  "number": "6.1.2",
   "title": "",
   "body": "  For an object moving along a straight line, if represents the position of that object at time , then the velocity of theobject at time is and the acceleration of the object at time is .   "
 },
@@ -869,7 +680,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#act-Jogger",
   "type": "Activity",
-  "number": "7.1.2",
+  "number": "6.1.2",
   "title": "A Friendly Jogger.",
   "body": " A Friendly Jogger   Consider a jogger running along a straight-line path, where their velocity at hours is , and velocity is measured in miles per hour. We begin observing this jogger at and observe them over a course of 3 hours.    When is the jogger's acceleration equal to 0 mi\/hr ?   Solve .    Does this time represent a maximum or minimum velocity for the jogger?   You can use the First Derivative Test or the Second Derivative Test here!    When is the jogger's velocity equal to 0 mi\/hr?    Describe the motion of the jogger, including information about the direction that they travel and their top speeds.   "
 },
@@ -878,7 +689,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#def-displacement",
   "type": "Definition",
-  "number": "7.1.3",
+  "number": "6.1.3",
   "title": "",
   "body": "  If an object is moving along a straight line with velocity and position , then the displacement of the object from time to is    "
 },
@@ -887,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#def-distance",
   "type": "Definition",
-  "number": "7.1.4",
+  "number": "6.1.4",
   "title": "",
   "body": "  If an object is moving along a straight line with velocity , then the distance traveled by the object from time to is: Here, we call the speed of the object (instead of the velocity).   "
 },
@@ -896,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#act-Jogger-2",
   "type": "Activity",
-  "number": "7.1.3",
+  "number": "6.1.3",
   "title": "Tracking our Jogger.",
   "body": " Tracking our Jogger   Let's revisit our jogger from .    Calculate the total displacement of the jogger from to .   Set up and evaluate a definite integral here, using the velocity function.    Think back to our descroption of the jogger's movement: when is this jogger moving backwards? Split up the time interval from (the start of their run) to (where is the time that the jogger changed direction) to . Calculate the displacements on each of these two intervals.    Calculate the total distance that the jogger traveled in their 3 hour run.   Remember that we're really calculating:    "
 },
@@ -905,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#def-FuturePosition",
   "type": "Definition",
-  "number": "7.1.5",
+  "number": "6.1.5",
   "title": "Future Position of an Object.",
   "body": " Future Position of an Object   For some object moving along a straight line with velocity and an intitial position of , the future position of the object at some time (with ) is: Note that we change the variable in the velocity function while we integrate: since we want our position function to be in terms of , the ending time point that we calculate the displacement up to, we need to choose a different variable to write velocity in terms of. Mechanically, there is no difference, since we're just swapping out the variables and naming them .   "
 },
@@ -914,7 +725,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#def-FutureValue",
   "type": "Definition",
-  "number": "7.1.6",
+  "number": "6.1.6",
   "title": "Net Change and Future Value.",
   "body": " Net Change and Future Value   Suppose the value changes over time at a known rate . Then the net change in between and is: . Similarly, given the initial value , the future value of at time is:    "
 },
@@ -923,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-AreaBetweenCurves.html",
   "type": "Section",
-  "number": "7.2",
+  "number": "6.2",
   "title": "Area Between Curves",
   "body": " Area Between Curves   Let's remember Riemann Sums.    Remembering Riemann Sums  Text here.   Remembering Riemann Sums   Let's start with the function on the interval with on the interval. We will construct a Riemman sum to approximate the area under the curve on this interval, and then build that into the integral formula.     A graph of a positive curve, labeled f(x), from x=a to x=b. The region between the curve and the x-axis is shaded.      Divide the interval into 4 equally-sized subintervals.    Pick an for , one for each subinterval. Then, plot the points , , , and .   These points are just general ones, and you don't have to come up with actual numbers for the -values or the corresponding -values. Instead, just draw them in on the curve, somewhere in each of the subintervals.    Use these 4 points to draw 4 rectangles. What are the dimensions of these rectangles (the height and width)?   You won't have any numbers to calculate here, really: instead, see if you can calculate the widths by thinking about the total width of your interval. Then calculate the heights by thinking about the points you created.    Find the area of each rectangle by multiplying the heights and widths for each rectangle.    Add up the areas to construct a Riemman sum. Is this sum very accurate? Why or why not?   Try to think about the accuracy of your area approximation by looking at it visually. Are there any places where your approximation looks far away from the actual area we're thinking about?    Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of a positive curve, labeled f(x), from x=a to x=b. Now, though, there is a single rectangle sitting on the x-axis and spanning up to f(x). It is delta-x wide, and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Find , the area of this th rectangle.    Add up the areas of for to approximate the total area,    You might want to use summation notation, starting with     Apply a limit as to this Riemann sum in order to construct the integral formula for the area under the curve from to .    This activity hopefully reminds of the definition of a Riemann Sum ( ) from earlier in this text ( ).    Building an Integral Formula for the Area Between Curves   Area Between Curves   Let's start with our same function on the same interval m but also add the function on the same interval, with on the interval. We will construct a Riemann sum to approximate the area between these two curves on this interval, and then build that into the integral formula.     A graph of a positive curve and a less positive curve, g(x), labeled f(x), from x=a to x=b. The space between these curves is shaded.      Divide the interval into 4 equally-sized subintervals.    Pick an for , one for each subinterval. Plot the points , , , and . Then plot the corresponding points on the function: , , , and .    Use these 8 points to draw 4 rectangles, with the points on the function defining the tops of the rectangles and the points on the function defining the bottoms of the rectangles. What are the dimensions of these rectangles (the height and width)?    Find the area of each rectangle by multiplying the heights and widths for each rectangle.    Add up the areas to construct a Riemman sum.    Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of the two curves f(x) and g(x) between x=a and x=b. Now, though, there is a single rectangle sitting on g(x) and spanning up to f(x). It is delta-x wide. The bottom of the rectangle touches the graph at the point (x_k, g(x_k)) and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Find , the area of this th rectangle.    Add up the areas of for to approximate the total area,    You might want to use summation notation, starting with     Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .     Area Between Curves   If and are continuous functions with on the interval , then the area bounded between the curves  and between and is .    Example here.    Changing Perspective  Text here.   Trying for a Single Integral   Let's consider the same setup as earlier: the region bounded between two curves, and , as well as the -axis (the line ). We'll need to name these functions, so let's call them and . But this time, we'll approach the region a bit differently: we're going to try to find the area of the region using only a single integral.     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.      The range of -values in this region span from to . Divide this interval evenly into 4 equally sized-subintervals. What is the height of each subinterval? We'll call this .        Pick a -value from each sub-interval. You can call these , , , and .    Find the corresponding -values on the function for each of the -values you selected. These will be , , , and .   You're really just putting your -values into the equation and solving for . Or you can solve for in general, by solving for while leaving as a variable.    Do the same thing for the function. Now you have 8 points that you can plot: , , , and as well as , , , and . Plot them.    Use these points to draw 4 rectangles with points on and determining the left and right ends of the rectangle. What are the dimensions of these rectangles (height and width)?    Find the area of each rectangle by multiplying the height and widths for each rectangle.    Add up the areas to construct a Riemann sum.    Again, we'll generalize this and think about the th rectangle, pictured below.     The same region, but this time with a horizontal rectangle spanning across it, with the height labeled delta y. The curves are re-labeled x=y-6 and x = cuberoot(y).    Which variable defines the location of the th rectangle, here? That is, if you were to describe where in this graph the th rectangle is laying, would you describe it with an or variable? This will act as our general input variable for the integral we're ending with.    What are the dimensions of the th rectangle?    Find , the area of this th rectangle.    Add up the areas of for to approximate the total area,    You might want to use summation notation, starting with     Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .    Now that you have an integral, evaluate it! Find the area of this region to compare with the work we did previously, where we used multiple integrals to measure the size of this same region.    We can re-write our definition of the area between curves ( ) to account for this change in perspective, by thinking about these same functions in terms of .   Area Between Curves (in terms of )   If and are continuous functions with on the interval of -values , then the area bounded between the curves  and from to is .      Explain how we use the \"slice and sum\" method to build an integral formula for the area bounded between curves. Give some details, enough to make sure you understand how the Riemann sums are constructed and how they turn into our integral formula.  What are some changes\/considerations that we need to make when we decide to set up our integral in terms of instead of ?   Set up (and practice evaluating) an integral expression representing the area of each of the regions described below.   The region bounded by the curves and between and .     The region bounded by the curves and between and      The region bounded by the curves and and the line .     The region bounded by the curves and .      Set up and evaluate an integral representing the area of each of the regions described below. Explain whether you chose to integrate with respect to or , and why you made that choice.   The region bounded by the curves and and the line between and .     The region bounded by the curves and and the line in the first quadrant.     The region bounded by the curves and and the line in the third quadrant.     The region bounded by the curves , , and in the first quadrant.     The region bounded by the curves , , and in the first quadrant.     The other region bounded by the curves , , and in the first quadrant.     The region bounded by the curves and .     The region(s) bounded by the curves and .      "
 },
@@ -932,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#act-RememberingRiemann",
   "type": "Activity",
-  "number": "7.2.1",
+  "number": "6.2.1",
   "title": "Remembering Riemann Sums.",
   "body": " Remembering Riemann Sums   Let's start with the function on the interval with on the interval. We will construct a Riemman sum to approximate the area under the curve on this interval, and then build that into the integral formula.     A graph of a positive curve, labeled f(x), from x=a to x=b. The region between the curve and the x-axis is shaded.      Divide the interval into 4 equally-sized subintervals.    Pick an for , one for each subinterval. Then, plot the points , , , and .   These points are just general ones, and you don't have to come up with actual numbers for the -values or the corresponding -values. Instead, just draw them in on the curve, somewhere in each of the subintervals.    Use these 4 points to draw 4 rectangles. What are the dimensions of these rectangles (the height and width)?   You won't have any numbers to calculate here, really: instead, see if you can calculate the widths by thinking about the total width of your interval. Then calculate the heights by thinking about the points you created.    Find the area of each rectangle by multiplying the heights and widths for each rectangle.    Add up the areas to construct a Riemman sum. Is this sum very accurate? Why or why not?   Try to think about the accuracy of your area approximation by looking at it visually. Are there any places where your approximation looks far away from the actual area we're thinking about?    Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of a positive curve, labeled f(x), from x=a to x=b. Now, though, there is a single rectangle sitting on the x-axis and spanning up to f(x). It is delta-x wide, and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Find , the area of this th rectangle.    Add up the areas of for to approximate the total area,    You might want to use summation notation, starting with     Apply a limit as to this Riemann sum in order to construct the integral formula for the area under the curve from to .   "
 },
@@ -941,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#act-AreaBetweenCurves",
   "type": "Activity",
-  "number": "7.2.2",
+  "number": "6.2.2",
   "title": "Area Between Curves.",
   "body": " Area Between Curves   Let's start with our same function on the same interval m but also add the function on the same interval, with on the interval. We will construct a Riemann sum to approximate the area between these two curves on this interval, and then build that into the integral formula.     A graph of a positive curve and a less positive curve, g(x), labeled f(x), from x=a to x=b. The space between these curves is shaded.      Divide the interval into 4 equally-sized subintervals.    Pick an for , one for each subinterval. Plot the points , , , and . Then plot the corresponding points on the function: , , , and .    Use these 8 points to draw 4 rectangles, with the points on the function defining the tops of the rectangles and the points on the function defining the bottoms of the rectangles. What are the dimensions of these rectangles (the height and width)?    Find the area of each rectangle by multiplying the heights and widths for each rectangle.    Add up the areas to construct a Riemman sum.    Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of the two curves f(x) and g(x) between x=a and x=b. Now, though, there is a single rectangle sitting on g(x) and spanning up to f(x). It is delta-x wide. The bottom of the rectangle touches the graph at the point (x_k, g(x_k)) and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Find , the area of this th rectangle.    Add up the areas of for to approximate the total area,    You might want to use summation notation, starting with     Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .   "
 },
@@ -950,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#def-AreaBetweenCurves",
   "type": "Definition",
-  "number": "7.2.5",
+  "number": "6.2.5",
   "title": "Area Between Curves.",
   "body": " Area Between Curves   If and are continuous functions with on the interval , then the area bounded between the curves  and between and is .   "
 },
@@ -959,7 +770,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#act-SingleIntegral",
   "type": "Activity",
-  "number": "7.2.3",
+  "number": "6.2.3",
   "title": "Trying for a Single Integral.",
   "body": " Trying for a Single Integral   Let's consider the same setup as earlier: the region bounded between two curves, and , as well as the -axis (the line ). We'll need to name these functions, so let's call them and . But this time, we'll approach the region a bit differently: we're going to try to find the area of the region using only a single integral.     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.      The range of -values in this region span from to . Divide this interval evenly into 4 equally sized-subintervals. What is the height of each subinterval? We'll call this .        Pick a -value from each sub-interval. You can call these , , , and .    Find the corresponding -values on the function for each of the -values you selected. These will be , , , and .   You're really just putting your -values into the equation and solving for . Or you can solve for in general, by solving for while leaving as a variable.    Do the same thing for the function. Now you have 8 points that you can plot: , , , and as well as , , , and . Plot them.    Use these points to draw 4 rectangles with points on and determining the left and right ends of the rectangle. What are the dimensions of these rectangles (height and width)?    Find the area of each rectangle by multiplying the height and widths for each rectangle.    Add up the areas to construct a Riemann sum.    Again, we'll generalize this and think about the th rectangle, pictured below.     The same region, but this time with a horizontal rectangle spanning across it, with the height labeled delta y. The curves are re-labeled x=y-6 and x = cuberoot(y).    Which variable defines the location of the th rectangle, here? That is, if you were to describe where in this graph the th rectangle is laying, would you describe it with an or variable? This will act as our general input variable for the integral we're ending with.    What are the dimensions of the th rectangle?    Find , the area of this th rectangle.    Add up the areas of for to approximate the total area,    You might want to use summation notation, starting with     Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .    Now that you have an integral, evaluate it! Find the area of this region to compare with the work we did previously, where we used multiple integrals to measure the size of this same region.   "
 },
@@ -968,7 +779,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#def-AreaBetweenCurves-y",
   "type": "Definition",
-  "number": "7.2.8",
+  "number": "6.2.8",
   "title": "Area Between Curves (in terms of <span class=\"process-math\">\\(y\\)<\/span>).",
   "body": " Area Between Curves (in terms of )   If and are continuous functions with on the interval of -values , then the area bounded between the curves  and from to is .   "
 },
@@ -977,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#ex-AreaBetweenCurves-1",
   "type": "Exercise",
-  "number": "7.2.4.1",
+  "number": "6.2.4.1",
   "title": "",
   "body": "Explain how we use the \"slice and sum\" method to build an integral formula for the area bounded between curves. Give some details, enough to make sure you understand how the Riemann sums are constructed and how they turn into our integral formula. "
 },
@@ -986,7 +797,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#ex-AreaBetweenCurves-2",
   "type": "Exercise",
-  "number": "7.2.4.2",
+  "number": "6.2.4.2",
   "title": "",
   "body": "What are some changes\/considerations that we need to make when we decide to set up our integral in terms of instead of ? "
 },
@@ -995,7 +806,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#ex-AreaBetweenCurves-3",
   "type": "Exercise",
-  "number": "7.2.4.3",
+  "number": "6.2.4.3",
   "title": "",
   "body": " Set up (and practice evaluating) an integral expression representing the area of each of the regions described below.   The region bounded by the curves and between and .     The region bounded by the curves and between and      The region bounded by the curves and and the line .     The region bounded by the curves and .    "
 },
@@ -1004,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#ex-AreaBetweenCurves-4",
   "type": "Exercise",
-  "number": "7.2.4.4",
+  "number": "6.2.4.4",
   "title": "",
   "body": " Set up and evaluate an integral representing the area of each of the regions described below. Explain whether you chose to integrate with respect to or , and why you made that choice.   The region bounded by the curves and and the line between and .     The region bounded by the curves and and the line in the first quadrant.     The region bounded by the curves and and the line in the third quadrant.     The region bounded by the curves , , and in the first quadrant.     The region bounded by the curves , , and in the first quadrant.     The other region bounded by the curves , , and in the first quadrant.     The region bounded by the curves and .     The region(s) bounded by the curves and .    "
 },
@@ -1013,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-VolumesOfRevolution.html",
   "type": "Section",
-  "number": "7.3",
+  "number": "6.3",
   "title": "Volumes of Solids of Revolution",
   "body": " Volumes of Solids of Revolution       From Area To Volume  Text.   Volume by Disks\/Washers   If and are continuous functions with on the interval , then the volume of the solid formed by revolving the region bounded between the curves and from to around the -axis is: . This is called the Washer Method . Note that if , then the resulting volume is: . This is called the Disk Method .     Volumes by Disks\/Washers   Consider the region bounded between the curves and . Will will create a 3-dimensional solid by revolving this region around the -axis.    Visualize the solid you'll create when you revolve this region around the -axis.    Draw a single rectangle in your region, standing perpendicular to the -axis.    Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    Find the area of the face of the th slice.   Note that this is a 2-dimensional shape, and we're just finding the area of it.    Set up, and evaluate, the integral representing the volume of the solid.     Another Volume   Now lets consider another region: this time, the one bounded between the curves and . We will, again, create a 3-dimensional solid by revolving this region around the -axis.    Visualize the solid you'll create when you revolve this region around the -axis.    Draw a single rectangle in your region standing perpendicular to the -axis.    Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    Find the area of the face of the th slice.    Set up and evaluate the integral representing the volume of this solid.      Re-Orienting our Rectangles   Volume by Shells   If and are continuous functions with on the interval (with ), then the volume of the solid formed when the region bounded between the curves and from to is revolved around the -axis is .     Volume by Shells   Let's consider the region bounded by the curves and as well as the line . You might remember this region from . This time, we'll create a 3-dimensional solid by revolving the region around the -axis     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.      Sketch one or two rectangles that are perpendicular to the -axis. Then set up an integral expression to find the volume of the solid using them.   Note that in this context, we're actually using disks and washers. Also note that the bottom of the rectangles are bounded by from to and then switches to being bounded by from to .    Now draw a single rectangle in the region that is parallel to the axis of revolution. Use this rectangle to visualize the th slice of this 3-dimensional solid. What does that single rectangle create when it is revolved around the -axis?   This won't create a disk or washer!    Set up and evaluate the integral expression representing the volume of the solid.      We say that the volume of a solid can be thought of as where is a function describing the cross-sectional area of our solid at an -value between and . Explain how this integral formula gets built, referencing the slice-and-sum (Riemann sum) method.  Explain the differences and similarities between the disk and washer methods for finding volumes of solids of revolution.  When do we integrate with regard to (using a in our integral and writing our functions with -value inputs) and when do we integrate with regard to (using a in our integral and writing our functions with -value inputs) when we're finding volumes using disks and washers? How do we know?   For each of the solids described below, set up an integral using the disk\/washer method that describes the volume of the solid. It will be helpful to visualize the region, a rectangle on that region, as well as the rectangle revolved around the axis of revolution.   The region bounded by the curve and the lines and , revolved around the -axis.     The region bounded by the curve and the -axis between and , revolved around the -axis.     The region bounded by the curves and between and , revolved around the -axis.     The region bounded by the curves and between and , revolved around the -axis.     The region bounded by the curve , the -axis, and the line , revolved around the -axis.     The region bounded by the curve and the -axis between and , revolved around the -axis.     Explain where the pieces of the shell formula come from. How is this different than using disks\/washers?  Say we're revolving a region around the -axis to create a solid. Using the disk\/washer method, we will integrate with respect to . Using the shell method, we integrate with respect to . Explain the difference, and why this difference occurs.   For each of the solids described below, set up an integral using the shell method that describes the volume of the solid. It will be helpful to visualize the region, a rectangle on that region, as well as the rectangle revolved around the axis of revolution.   The region bounded by the curve and the lines and , revolved around the -axis.     The region bounded by the curve and the -axis between and , revolved around the -axis.     The region bounded by the curves and and the line revolved around the -axis.     The region bounded by the curves and from to , revolved around the -axis.     The region bounded by the curves and revolved around the -axis.     The region bounded by the curves and and the -axis between and , revolved around the -axis.     Pick at least 2 integrals from to re-write using shells instead. What about those regions did you look for to choose which ones to re-write and which ones to not?  Pick at least 2 integrals from to re-write using disks\/washers instead. What about those regions did you look for to choose which ones to re-write and which ones to not?   For each of the following solids, set up an integral expression using either the disk\/washer method or the shell method. You don't need to evaluate them, but you should do some careful thinking about how you set these up, especially as you choose between methods and what variable you are integrating with.   The region bounded by the curves and in the first quadrant, revolved around the -axis.     The region bounded by the curves and in the first quadrant, revolved around the -axis.     The region bounded by the curves and in the first quadrant, revolved around the -axis.      "
 },
@@ -1022,7 +833,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#def-VolumesDisksWashers",
   "type": "Definition",
-  "number": "7.3.1",
+  "number": "6.3.1",
   "title": "Volume by Disks\/Washers.",
   "body": " Volume by Disks\/Washers   If and are continuous functions with on the interval , then the volume of the solid formed by revolving the region bounded between the curves and from to around the -axis is: . This is called the Washer Method . Note that if , then the resulting volume is: . This is called the Disk Method .   "
 },
@@ -1031,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#act-VolumesDisksWashers",
   "type": "Activity",
-  "number": "7.3.1",
+  "number": "6.3.1",
   "title": "Volumes by Disks\/Washers.",
   "body": " Volumes by Disks\/Washers   Consider the region bounded between the curves and . Will will create a 3-dimensional solid by revolving this region around the -axis.    Visualize the solid you'll create when you revolve this region around the -axis.    Draw a single rectangle in your region, standing perpendicular to the -axis.    Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    Find the area of the face of the th slice.   Note that this is a 2-dimensional shape, and we're just finding the area of it.    Set up, and evaluate, the integral representing the volume of the solid.   "
 },
@@ -1040,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#act-VolumesDisksWashers-y",
   "type": "Activity",
-  "number": "7.3.2",
+  "number": "6.3.2",
   "title": "Another Volume.",
   "body": " Another Volume   Now lets consider another region: this time, the one bounded between the curves and . We will, again, create a 3-dimensional solid by revolving this region around the -axis.    Visualize the solid you'll create when you revolve this region around the -axis.    Draw a single rectangle in your region standing perpendicular to the -axis.    Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    Find the area of the face of the th slice.    Set up and evaluate the integral representing the volume of this solid.   "
 },
@@ -1049,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#def-VolumesShells",
   "type": "Definition",
-  "number": "7.3.2",
+  "number": "6.3.2",
   "title": "Volume by Shells.",
   "body": " Volume by Shells   If and are continuous functions with on the interval (with ), then the volume of the solid formed when the region bounded between the curves and from to is revolved around the -axis is .   "
 },
@@ -1058,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#act-VolumesShells",
   "type": "Activity",
-  "number": "7.3.3",
+  "number": "6.3.3",
   "title": "Volume by Shells.",
   "body": " Volume by Shells   Let's consider the region bounded by the curves and as well as the line . You might remember this region from . This time, we'll create a 3-dimensional solid by revolving the region around the -axis     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.      Sketch one or two rectangles that are perpendicular to the -axis. Then set up an integral expression to find the volume of the solid using them.   Note that in this context, we're actually using disks and washers. Also note that the bottom of the rectangles are bounded by from to and then switches to being bounded by from to .    Now draw a single rectangle in the region that is parallel to the axis of revolution. Use this rectangle to visualize the th slice of this 3-dimensional solid. What does that single rectangle create when it is revolved around the -axis?   This won't create a disk or washer!    Set up and evaluate the integral expression representing the volume of the solid.   "
 },
@@ -1067,7 +878,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#ex-Volumes-1",
   "type": "Exercise",
-  "number": "7.3.3.1",
+  "number": "6.3.3.1",
   "title": "",
   "body": "We say that the volume of a solid can be thought of as where is a function describing the cross-sectional area of our solid at an -value between and . Explain how this integral formula gets built, referencing the slice-and-sum (Riemann sum) method. "
 },
@@ -1076,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#ex-Volumes-2",
   "type": "Exercise",
-  "number": "7.3.3.2",
+  "number": "6.3.3.2",
   "title": "",
   "body": "Explain the differences and similarities between the disk and washer methods for finding volumes of solids of revolution. "
 },
@@ -1085,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#ex-Volumes-3",
   "type": "Exercise",
-  "number": "7.3.3.3",
+  "number": "6.3.3.3",
   "title": "",
   "body": "When do we integrate with regard to (using a in our integral and writing our functions with -value inputs) and when do we integrate with regard to (using a in our integral and writing our functions with -value inputs) when we're finding volumes using disks and washers? How do we know? "
 },
@@ -1094,7 +905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#problem-Washers",
   "type": "Exercise",
-  "number": "7.3.3.4",
+  "number": "6.3.3.4",
   "title": "",
   "body": " For each of the solids described below, set up an integral using the disk\/washer method that describes the volume of the solid. It will be helpful to visualize the region, a rectangle on that region, as well as the rectangle revolved around the axis of revolution.   The region bounded by the curve and the lines and , revolved around the -axis.     The region bounded by the curve and the -axis between and , revolved around the -axis.     The region bounded by the curves and between and , revolved around the -axis.     The region bounded by the curves and between and , revolved around the -axis.     The region bounded by the curve , the -axis, and the line , revolved around the -axis.     The region bounded by the curve and the -axis between and , revolved around the -axis.    "
 },
@@ -1103,7 +914,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#ex-Volumes-5",
   "type": "Exercise",
-  "number": "7.3.3.5",
+  "number": "6.3.3.5",
   "title": "",
   "body": "Explain where the pieces of the shell formula come from. How is this different than using disks\/washers? "
 },
@@ -1112,7 +923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#ex-Volumes-6",
   "type": "Exercise",
-  "number": "7.3.3.6",
+  "number": "6.3.3.6",
   "title": "",
   "body": "Say we're revolving a region around the -axis to create a solid. Using the disk\/washer method, we will integrate with respect to . Using the shell method, we integrate with respect to . Explain the difference, and why this difference occurs. "
 },
@@ -1121,7 +932,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#problem-Shells",
   "type": "Exercise",
-  "number": "7.3.3.7",
+  "number": "6.3.3.7",
   "title": "",
   "body": " For each of the solids described below, set up an integral using the shell method that describes the volume of the solid. It will be helpful to visualize the region, a rectangle on that region, as well as the rectangle revolved around the axis of revolution.   The region bounded by the curve and the lines and , revolved around the -axis.     The region bounded by the curve and the -axis between and , revolved around the -axis.     The region bounded by the curves and and the line revolved around the -axis.     The region bounded by the curves and from to , revolved around the -axis.     The region bounded by the curves and revolved around the -axis.     The region bounded by the curves and and the -axis between and , revolved around the -axis.    "
 },
@@ -1130,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#ex-Volumes-8",
   "type": "Exercise",
-  "number": "7.3.3.8",
+  "number": "6.3.3.8",
   "title": "",
   "body": "Pick at least 2 integrals from to re-write using shells instead. What about those regions did you look for to choose which ones to re-write and which ones to not? "
 },
@@ -1139,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#ex-Volumes-9",
   "type": "Exercise",
-  "number": "7.3.3.9",
+  "number": "6.3.3.9",
   "title": "",
   "body": "Pick at least 2 integrals from to re-write using disks\/washers instead. What about those regions did you look for to choose which ones to re-write and which ones to not? "
 },
@@ -1148,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#ex-Volumes-10",
   "type": "Exercise",
-  "number": "7.3.3.10",
+  "number": "6.3.3.10",
   "title": "",
   "body": " For each of the following solids, set up an integral expression using either the disk\/washer method or the shell method. You don't need to evaluate them, but you should do some careful thinking about how you set these up, especially as you choose between methods and what variable you are integrating with.   The region bounded by the curves and in the first quadrant, revolved around the -axis.     The region bounded by the curves and in the first quadrant, revolved around the -axis.     The region bounded by the curves and in the first quadrant, revolved around the -axis.    "
 },
@@ -1157,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-MoreVolumes.html",
   "type": "Section",
-  "number": "7.4",
+  "number": "6.4",
   "title": "More Volumes: Shifting the Axis of Revolution",
   "body": " More Volumes: Shifting the Axis of Revolution   We have introduced some methods for creating and calculating the volume of different 3 dimensional solids of revolution.    What Changes?  Let's first consider a volume created using disks or washers.   What Changes (in the Washer Method) with a New Axis?   Let's revisit , and ask some more follow-up questions. First, we'll tinker with the solid we created: instead of revolving around the -axis, let's revolve the same solid around the horizontal line .    What changes, if anything, do you have to make to the rectangle you drew in ?    What changes, if anything, do you have to make to the area of the \"face\" th washer?    What changes, if anything, do you have to make to the eventual volume integral for this solid?    Now let's consider a volume created using shells.   What Changes (in the Shell Method) with a New Axis?   Let's revisit , and ask some more follow-up questions about the shell method. Again, we'll tinker with the solid we created: instead of revolving around the -axis, let's revolve the same solid around the horizontal line .    What changes, if anything, do you have to make to the rectangle you drew in ?    What changes, if anything, do you have to make to the area of the rectangle formed by \"unrolling\" up th cylinder?    What changes, if anything, do you have to make to the eventual volume integral for this solid?    In both of these cases, we can notice that the only changes we make are to the radii : we just need to re-measure the distance from axis of revolution to either the ends of the rectangle (in the washer method) or the side of the rectangle (in the shell method).    Formalizing These Changes in the Washers and Shells   More Shifted Axes   We're going to spend some time constructing several different volume integrals in this activity. We'll consider the same region each time, but make changes to the axis of revolution. For each, we'll want to think about what kind of method we're using (disks\/washers or shells) and how the different axis of revolution gets implemented into our volume integral formulas.  Let's consider the region bounded by the curves and between and .    Let's start with revolving this around the -axis and thinking about the solid formed. While you set up your volume integral, think carefully about which method you'll be using (disks\/washers or shells) as well as which variable you are integrating with regard to ( or ).   Note that in this region, we definitely want to use rectangles that stand up vertically. That means that they'll have a very small width, , and sit perpendicular to the axis of revolution.    Now let's create a different solid by revolving this region around the -axis. Set up a volume integral, and continue to think carefully about which method you'll be using (disks\/washers or shells) as well as which variable you are integrating with regard to ( or ).   We still will use the same tall rectangle with a small side length, but this time it will be parallel to our axis of revolution.    We'll start shifting our axis of revolution now. We'll revolve the same region around the horizontal line to create a solid. Set up an integral expression to calculate the volume.   Note that we're still using the same rectangle (perpendicular to this horizontal axis), and so still integrating with regard to , and using the washer method.   Since in the washer method our function outputs represent the radii, we need to re-measure the distance from our curves to the axis of revolution to find each circle's radius in the washer formula. For a -value on each curve, how do we find the vertical distance down to the line ?    Now revolve the region around the line to create a solid of revolution, and write down the integral representing the volume.   Note, now, that the -value of the axis of revolution is larger than all of the -values on the curves, meaning that to measure the distance from the axis of revolution to the curves, we might measure them in the opposite direction. Also, which curve is further away from the axis of revolution, representing the larger\/outer radius?    Let's change things up. Revolve the region around the vertical line to create a new solid. Set up an integral representing the volume of that solid.   Note that the same rectangle that we used before is standing parallel to our axis of revolution. We're going to change methodology, and use the shell method!   Normally we use the input variable ( in this case) to measure the radius from the rectangles at different -value to the axis of revolution, the -axis. Now, though, we're not looking at the distance from -values to . We're looking to find the radius, the distance from -values in this region to .    We'll do one more solid. Let's revolve this region around the line . Set up an integral representing the volume.   Note that this time, the axis of revolution's -value is larger than all of the -values in our region. So when we subtract to measure the radius, we need to subtract from down to the varying -values in the region.      Consider the integral formula for computing volumes of a solid of revolution using the disk\/washer method. What part of this integral formula represents the radius\/radii of any circle(s)? Why is the radius represented using the function output from the curve(s) defining the region?  Consider the integral formula for computing volumes of a solid of revolution using the shell method. What part of this integral formula represents the radius\/radii of any circle(s)? Why is the radius not represented using the function output from the curve(s) defining the region?   For each of the solids described below, set up an integral expression using disks\/washers representing the volume of the solid.   The region bounded by the curve in the first quadrant, revolved around .   The region bounded by the curve in the first quadrant, revolved around .   The region bounded by the curve in the first quadrant, revolved around .   The region bounded by the curve in the first quadrant, revolved around .    For each of the solids described below, set up an integral expression using shells representing the volume of the solid.   The region bounded by the curves and in the first quadrant, revolved around the line .   The region bounded by the curves and in the first quadrant, revolved around the line .   The region bounded by the curves and in the first quadrant, revolved around the line .   The region bounded by the curves and in the first quadrant, revolved around the line .    "
 },
@@ -1166,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreVolumes.html#act-VolumesWhatChanges-Washers",
   "type": "Activity",
-  "number": "7.4.1",
+  "number": "6.4.1",
   "title": "What Changes (in the Washer Method) with a New Axis?",
   "body": " What Changes (in the Washer Method) with a New Axis?   Let's revisit , and ask some more follow-up questions. First, we'll tinker with the solid we created: instead of revolving around the -axis, let's revolve the same solid around the horizontal line .    What changes, if anything, do you have to make to the rectangle you drew in ?    What changes, if anything, do you have to make to the area of the \"face\" th washer?    What changes, if anything, do you have to make to the eventual volume integral for this solid?   "
 },
@@ -1175,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreVolumes.html#act-VolumesWhatChanges-Shells",
   "type": "Activity",
-  "number": "7.4.2",
+  "number": "6.4.2",
   "title": "What Changes (in the Shell Method) with a New Axis?",
   "body": " What Changes (in the Shell Method) with a New Axis?   Let's revisit , and ask some more follow-up questions about the shell method. Again, we'll tinker with the solid we created: instead of revolving around the -axis, let's revolve the same solid around the horizontal line .    What changes, if anything, do you have to make to the rectangle you drew in ?    What changes, if anything, do you have to make to the area of the rectangle formed by \"unrolling\" up th cylinder?    What changes, if anything, do you have to make to the eventual volume integral for this solid?   "
 },
@@ -1184,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreVolumes.html#act-ShiftedAxes",
   "type": "Activity",
-  "number": "7.4.3",
+  "number": "6.4.3",
   "title": "More Shifted Axes.",
   "body": " More Shifted Axes   We're going to spend some time constructing several different volume integrals in this activity. We'll consider the same region each time, but make changes to the axis of revolution. For each, we'll want to think about what kind of method we're using (disks\/washers or shells) and how the different axis of revolution gets implemented into our volume integral formulas.  Let's consider the region bounded by the curves and between and .    Let's start with revolving this around the -axis and thinking about the solid formed. While you set up your volume integral, think carefully about which method you'll be using (disks\/washers or shells) as well as which variable you are integrating with regard to ( or ).   Note that in this region, we definitely want to use rectangles that stand up vertically. That means that they'll have a very small width, , and sit perpendicular to the axis of revolution.    Now let's create a different solid by revolving this region around the -axis. Set up a volume integral, and continue to think carefully about which method you'll be using (disks\/washers or shells) as well as which variable you are integrating with regard to ( or ).   We still will use the same tall rectangle with a small side length, but this time it will be parallel to our axis of revolution.    We'll start shifting our axis of revolution now. We'll revolve the same region around the horizontal line to create a solid. Set up an integral expression to calculate the volume.   Note that we're still using the same rectangle (perpendicular to this horizontal axis), and so still integrating with regard to , and using the washer method.   Since in the washer method our function outputs represent the radii, we need to re-measure the distance from our curves to the axis of revolution to find each circle's radius in the washer formula. For a -value on each curve, how do we find the vertical distance down to the line ?    Now revolve the region around the line to create a solid of revolution, and write down the integral representing the volume.   Note, now, that the -value of the axis of revolution is larger than all of the -values on the curves, meaning that to measure the distance from the axis of revolution to the curves, we might measure them in the opposite direction. Also, which curve is further away from the axis of revolution, representing the larger\/outer radius?    Let's change things up. Revolve the region around the vertical line to create a new solid. Set up an integral representing the volume of that solid.   Note that the same rectangle that we used before is standing parallel to our axis of revolution. We're going to change methodology, and use the shell method!   Normally we use the input variable ( in this case) to measure the radius from the rectangles at different -value to the axis of revolution, the -axis. Now, though, we're not looking at the distance from -values to . We're looking to find the radius, the distance from -values in this region to .    We'll do one more solid. Let's revolve this region around the line . Set up an integral representing the volume.   Note that this time, the axis of revolution's -value is larger than all of the -values in our region. So when we subtract to measure the radius, we need to subtract from down to the varying -values in the region.   "
 },
@@ -1193,7 +1004,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreVolumes.html#ex-MoreVolumes-1",
   "type": "Exercise",
-  "number": "7.4.3.1",
+  "number": "6.4.3.1",
   "title": "",
   "body": "Consider the integral formula for computing volumes of a solid of revolution using the disk\/washer method. What part of this integral formula represents the radius\/radii of any circle(s)? Why is the radius represented using the function output from the curve(s) defining the region? "
 },
@@ -1202,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreVolumes.html#ex-MoreVolumes-2",
   "type": "Exercise",
-  "number": "7.4.3.2",
+  "number": "6.4.3.2",
   "title": "",
   "body": "Consider the integral formula for computing volumes of a solid of revolution using the shell method. What part of this integral formula represents the radius\/radii of any circle(s)? Why is the radius not represented using the function output from the curve(s) defining the region? "
 },
@@ -1211,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreVolumes.html#ex-MoreVolumes-3",
   "type": "Exercise",
-  "number": "7.4.3.3",
+  "number": "6.4.3.3",
   "title": "",
   "body": " For each of the solids described below, set up an integral expression using disks\/washers representing the volume of the solid.   The region bounded by the curve in the first quadrant, revolved around .   The region bounded by the curve in the first quadrant, revolved around .   The region bounded by the curve in the first quadrant, revolved around .   The region bounded by the curve in the first quadrant, revolved around .  "
 },
@@ -1220,36 +1031,333 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreVolumes.html#ex-MoreVolumes-4",
   "type": "Exercise",
-  "number": "7.4.3.4",
+  "number": "6.4.3.4",
   "title": "",
   "body": " For each of the solids described below, set up an integral expression using shells representing the volume of the solid.   The region bounded by the curves and in the first quadrant, revolved around the line .   The region bounded by the curves and in the first quadrant, revolved around the line .   The region bounded by the curves and in the first quadrant, revolved around the line .   The region bounded by the curves and in the first quadrant, revolved around the line .  "
 },
 {
-  "id": "sec-ArcLength",
+  "id": "sec-ArcLengthSurfaceArea",
   "level": "1",
-  "url": "sec-ArcLength.html",
+  "url": "sec-ArcLengthSurfaceArea.html",
   "type": "Section",
-  "number": "7.5",
-  "title": "Arc Length",
-  "body": " Arc Length  Text of section.  "
-},
-{
-  "id": "sec-SurfaceArea",
-  "level": "1",
-  "url": "sec-SurfaceArea.html",
-  "type": "Section",
-  "number": "7.6",
-  "title": "Surface Area",
-  "body": " Surface Area  Text of section.  "
+  "number": "6.5",
+  "title": "Arc Length and Surface Area",
+  "body": " Arc Length and Surface Area  Text of section.  "
 },
 {
   "id": "sec-OtherApplications",
   "level": "1",
   "url": "sec-OtherApplications.html",
   "type": "Section",
-  "number": "7.7",
+  "number": "6.6",
   "title": "Other Applications of Integrals",
   "body": " Other Applications of Integrals  Text of section.  "
+},
+{
+  "id": "sec-ImproperIntegrals",
+  "level": "1",
+  "url": "sec-ImproperIntegrals.html",
+  "type": "Section",
+  "number": "7.1",
+  "title": "Improper Integrals",
+  "body": " Improper Integrals   Remembering a Theme so Far   Let's say that we want to find what the -values of some function are when the -values are \"infinitely close to\" some value, . Since there is no single -value that is \"infinitely close to\" that we can evaluate at, we need to do something else. How do we do this?    Let's say that we want to find the rate of change of some function instantaneously at a point with . We can't find a rate of change unless we have two points, since we need to find some differences in the outputs and inputs. How do we do this?    Suppose you want to find the total area, covered by an infinite number of infinitely thin rectangles. You have a formula for finding the dimensions and areas for some finite number of rectangles, but how do we get an infinite number of them?    Can you find the common calculus theme in each of these scenarios?     Remembering the Fundamental Theorem of Calculus   We want to think about generalizing our notion of integrals a bit. So in this activity, section, we're going to think about some of the requirements for the Fundamental Theorem of Calculus and try to loosen them up a bit to see what happens. We'll try to construct meaningful approaches to these situations that fit our overall goals of calculating area under a curve.  This practice, in general, is a really good and common mathematical process: taking some result and playing with the requirements or assumptions to see what else can happen. So it might feel like we're just fiddling with the \"What if?\" questions, but what we're actually doing is good mathematics!    What does the Fundamental Theorem of Calculus say about evaluating the definite integral ?    What do we need to be true about our setup, our function, etc. for us to be able to apply this technique to evaluate ?    We are going to introduce the idea of \"Improper Integrals\" as kind-of-but-not-quite definite integrals that we can evaluate. They are going to violate the requirements for the Fundamental Theorem of Calculus, but we'll work to salvage them in meaningful ways.     Improper Integral   An integral is an improper integral if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:   The interval that we integrate the function over is unbounded in width, or infinitely wide.    The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over.        Evaluating Improper Integrals (Infinite Width)  For a function that is continuous on , we can evaluate the improper integral : .  If is continuous on , we can evaluate the improper integral : .  Finally, if is continuous on and is some real number, then we can evaluate the improper integral : .    Evaluating Improper Integrals (Infinite Height)  For a function that has an unbounded discontinuity (a vertical asymptote) at     Convergence of an Improper Integral   We say that an improper integral converges if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral diverges .     Explain what it means for an integral to be improper. What kinds of issues are we looking at?  Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width).  Give an example of an integral that is improper due to an unbounded integrand (infinite height).  What does it mean for an improper integral to ``converge?'' How does this connect with limits?  What does it mean for an improper integral to ``diverge?'' How does this connect with limits?  Why do we need to use limits to evaluate improper integrals?   For each of the following improper integrals:   Explain why the integral is improper. Be specific, and point out the issues in detail.    Set up the integral using the correct limit notation.    Antidifferentiate and evaluate the limit.    Explain whether the integral converges or diverges.                              One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of makes the function a valid probability distribution on the interval ?   Let's consider the integral . This is a difficult integral to evaluate!   First, compare to using an inequality: which one is bigger?   Second, use this inequality to compare the function to for : which one is bigger? Again, use your inequality from above to help!   Now compare to . Which one is bigger?   Explain how we can use this result to make a conclusion about whether our integral, converges or diverges.    "
+},
+{
+  "id": "act-RememberingTheme",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#act-RememberingTheme",
+  "type": "Activity",
+  "number": "7.1.1",
+  "title": "Remembering a Theme so Far.",
+  "body": " Remembering a Theme so Far   Let's say that we want to find what the -values of some function are when the -values are \"infinitely close to\" some value, . Since there is no single -value that is \"infinitely close to\" that we can evaluate at, we need to do something else. How do we do this?    Let's say that we want to find the rate of change of some function instantaneously at a point with . We can't find a rate of change unless we have two points, since we need to find some differences in the outputs and inputs. How do we do this?    Suppose you want to find the total area, covered by an infinite number of infinitely thin rectangles. You have a formula for finding the dimensions and areas for some finite number of rectangles, but how do we get an infinite number of them?    Can you find the common calculus theme in each of these scenarios?   "
+},
+{
+  "id": "act-RememberingFTOC",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#act-RememberingFTOC",
+  "type": "Activity",
+  "number": "7.1.2",
+  "title": "Remembering the Fundamental Theorem of Calculus.",
+  "body": " Remembering the Fundamental Theorem of Calculus   We want to think about generalizing our notion of integrals a bit. So in this activity, section, we're going to think about some of the requirements for the Fundamental Theorem of Calculus and try to loosen them up a bit to see what happens. We'll try to construct meaningful approaches to these situations that fit our overall goals of calculating area under a curve.  This practice, in general, is a really good and common mathematical process: taking some result and playing with the requirements or assumptions to see what else can happen. So it might feel like we're just fiddling with the \"What if?\" questions, but what we're actually doing is good mathematics!    What does the Fundamental Theorem of Calculus say about evaluating the definite integral ?    What do we need to be true about our setup, our function, etc. for us to be able to apply this technique to evaluate ?    We are going to introduce the idea of \"Improper Integrals\" as kind-of-but-not-quite definite integrals that we can evaluate. They are going to violate the requirements for the Fundamental Theorem of Calculus, but we'll work to salvage them in meaningful ways.   "
+},
+{
+  "id": "def-ImproperIntegral",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#def-ImproperIntegral",
+  "type": "Definition",
+  "number": "7.1.1",
+  "title": "Improper Integral.",
+  "body": " Improper Integral   An integral is an improper integral if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:   The interval that we integrate the function over is unbounded in width, or infinitely wide.    The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over.      "
+},
+{
+  "id": "def-ConvergenceImproperIntegral",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#def-ConvergenceImproperIntegral",
+  "type": "Definition",
+  "number": "7.1.2",
+  "title": "Convergence of an Improper Integral.",
+  "body": " Convergence of an Improper Integral   We say that an improper integral converges if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral diverges .   "
+},
+{
+  "id": "ex-ImproperIntegrals-1",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-1",
+  "type": "Exercise",
+  "number": "7.1.1",
+  "title": "",
+  "body": "Explain what it means for an integral to be improper. What kinds of issues are we looking at? "
+},
+{
+  "id": "ex-ImproperIntegrals-2",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-2",
+  "type": "Exercise",
+  "number": "7.1.2",
+  "title": "",
+  "body": "Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width). "
+},
+{
+  "id": "ex-ImproperIntegrals-3",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-3",
+  "type": "Exercise",
+  "number": "7.1.3",
+  "title": "",
+  "body": "Give an example of an integral that is improper due to an unbounded integrand (infinite height). "
+},
+{
+  "id": "ex-ImproperIntegrals-4",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-4",
+  "type": "Exercise",
+  "number": "7.1.4",
+  "title": "",
+  "body": "What does it mean for an improper integral to ``converge?'' How does this connect with limits? "
+},
+{
+  "id": "ex-ImproperIntegrals-5",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-5",
+  "type": "Exercise",
+  "number": "7.1.5",
+  "title": "",
+  "body": "What does it mean for an improper integral to ``diverge?'' How does this connect with limits? "
+},
+{
+  "id": "ex-ImproperIntegrals-6",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-6",
+  "type": "Exercise",
+  "number": "7.1.6",
+  "title": "",
+  "body": "Why do we need to use limits to evaluate improper integrals? "
+},
+{
+  "id": "ex-ImproperIntegrals-7",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-7",
+  "type": "Exercise",
+  "number": "7.1.7",
+  "title": "",
+  "body": " For each of the following improper integrals:   Explain why the integral is improper. Be specific, and point out the issues in detail.    Set up the integral using the correct limit notation.    Antidifferentiate and evaluate the limit.    Explain whether the integral converges or diverges.                             "
+},
+{
+  "id": "ex-ImproperIntegrals-8",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-8",
+  "type": "Exercise",
+  "number": "7.1.8",
+  "title": "",
+  "body": "One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of makes the function a valid probability distribution on the interval ? "
+},
+{
+  "id": "ex-ImproperIntegrals-9",
+  "level": "2",
+  "url": "sec-ImproperIntegrals.html#ex-ImproperIntegrals-9",
+  "type": "Exercise",
+  "number": "7.1.9",
+  "title": "",
+  "body": " Let's consider the integral . This is a difficult integral to evaluate!   First, compare to using an inequality: which one is bigger?   Second, use this inequality to compare the function to for : which one is bigger? Again, use your inequality from above to help!   Now compare to . Which one is bigger?   Explain how we can use this result to make a conclusion about whether our integral, converges or diverges.  "
+},
+{
+  "id": "sec-uSubstitution",
+  "level": "1",
+  "url": "sec-uSubstitution.html",
+  "type": "Section",
+  "number": "7.2",
+  "title": "<span class=\"process-math\">\\(u\\)<\/span>-Substitution",
+  "body": " -Substitution   More to Translate    Integrate the following, making sure to translate the whole integrand function to be written in terms of .        We can write as , or if you really want to, we can write it as          "
+},
+{
+  "id": "subsec-MoreToTranslate-2",
+  "level": "2",
+  "url": "sec-uSubstitution.html#subsec-MoreToTranslate-2",
+  "type": "Example",
+  "number": "7.2.1",
+  "title": "",
+  "body": "  Integrate the following, making sure to translate the whole integrand function to be written in terms of .        We can write as , or if you really want to, we can write it as        "
+},
+{
+  "id": "sec-AlgebraicManipulations",
+  "level": "1",
+  "url": "sec-AlgebraicManipulations.html",
+  "type": "Section",
+  "number": "7.3",
+  "title": "Manipulating Integrands to Reveal Substitution",
+  "body": " Manipulating Integrands to Reveal Substitution   We've looked at how to use a variable substitution to antidifferentiate composite functions. We've already seen, though, that sometimes identifying and actually using a helpful substitution can be difficult to do. In this section, we want to introduce some different strategies for noticing and setting up useful substitutions in some specific instances.    Rewriting the Integrand   A Negative Exponent   Let's think about this integral: .    Is there any composition in this integral? Pick it out, and either explain or show that using this to guide your substitution will not be helpful.   Notice that is composed inside of the exponential function. Try a substitution with .    What does mean? What does mean?    Re-write the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?   Re-write as , giving you: .   Either add the fractions in the denominator or multiply the whole fraction by .   You should have an integral that looks like: .    Why is this new integral set up so much better for the purpose of -substitution? How could we tell this just by looking at the initial integral?          Try to re-write this integral as .          Antidifferentiating Rational Functions  Strategies for antidifferentiating rational functions are just that: strategies. There aren't really easy ways to antidifferentiate these, but we'll find some common tactics to apply and try to build our intuition for noticing the different kinds of structure we can have in these rational functions. All of these strategies are based around cleverly re-writing our rational functions (using some algebraic manipulations) to reveal some structure. We'll try to notice the structure, so that we know what we're trying to reveal.   Integrating Rational Functions      "
+},
+{
+  "id": "act-NegativeExponent",
+  "level": "2",
+  "url": "sec-AlgebraicManipulations.html#act-NegativeExponent",
+  "type": "Activity",
+  "number": "7.3.1",
+  "title": "A Negative Exponent.",
+  "body": " A Negative Exponent   Let's think about this integral: .    Is there any composition in this integral? Pick it out, and either explain or show that using this to guide your substitution will not be helpful.   Notice that is composed inside of the exponential function. Try a substitution with .    What does mean? What does mean?    Re-write the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?   Re-write as , giving you: .   Either add the fractions in the denominator or multiply the whole fraction by .   You should have an integral that looks like: .    Why is this new integral set up so much better for the purpose of -substitution? How could we tell this just by looking at the initial integral?   "
+},
+{
+  "id": "subsec-Rewriting-3",
+  "level": "2",
+  "url": "sec-AlgebraicManipulations.html#subsec-Rewriting-3",
+  "type": "Example",
+  "number": "7.3.1",
+  "title": "",
+  "body": "      Try to re-write this integral as .       "
+},
+{
+  "id": "sec-IntegrationByParts",
+  "level": "1",
+  "url": "sec-IntegrationByParts.html",
+  "type": "Section",
+  "number": "7.4",
+  "title": "Integration By Parts",
+  "body": " Integration By Parts   We've seen now that is a useful technique for undo-ing . We set up the variable substitution with the specific goal of going backwards through the Chain Rule and antidifferentiating some composition of functions.  A reasonable next step is to ask: What other derivative rules can we \"undo?\" What other operations between functions should we think about? This brings us to Integration by Parts, the integration technique specifically for undo-ing .    Discovering the Integration by Parts Formula   Discovering the Integration by Parts Formula   The product rule for derivatives says that: . We know that we intend to \"undo\" the product rule, so let's try to re-frame the product rule from a rule about derivatives to a rule about antiderivatives.    Antidifferentiate the product rule by antidifferentiating each side of the equation.    Note that on the left side of this equation you're antidifferentiating a derivative. What will that give you? Then, on the right side, we're just splitting up the terms of the product rule into two different integrals.    On the right side, we have two integrals. Since each of them has a product of functions (one function and a derivative of another), we can isolate one of them in this equation and create a formula for how to antidifferentiate a product of functions! Solve for .    Look back at this formula for . Explain how this is really the product rule for derivatives (without just undo-ing all of the steps we have just done).    What made it so useful to pick instead of in this case? Since we know that we are going to get another integral, one that specifically has the new derivative and new antiderivative that we find from the parts we picked, we noticed that differentiating the function was much nicer than antidifferentiating it: we get a constant that we multiply by the trig function in this new integral, instead of a power function with an even bigger exponent. We can also notice that when it comes to the trig function, it doesn't really matter if we differentiate it or antidifferentiate it. In both cases, we get a in our new integral, with the only difference being whether it is positive or negative.    We typically use the substitutions and to re-write the integrals.   Integration by Parts  Suppose and are both differentiable functions. Then: .   When we select the parts for our integral, we are selecting a function to be labeled and a function to be labeled as . We begin with one of the pieces of the product rule, a function multiplied by some other function's derivative. It is important to recognize that we do different things to these functions: for one of them, , we need to find the derivative, . For the other, , we need to find an antiderivative, . Because of these differences, it is important to build some good intuition for how to select the parts.    Intuition for Selecting the Parts   Picking the Parts for Integration by Parts   Let's consider the integral: . We'll investigate how to set up the integration by parts formula with the different choices for the parts.    We'll start with selecting and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using your labeled pieces. Notice that the integration by parts formula gives us another integral. Don't worry about antidifferentiating this yet, let's just set the pieces up.        Let's swap the pieces and try the setup with and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Compare the two results we have. Which setup do you think will be easier to move forward with? Why?   When we say we need to keep moving forward with our setup, what we mean is that we have another integral to antidifferentiate. Which one will be easier to work with: or ?    Finalize your work with the setup you have chosen to find .    What made things so much better when we chose compared to ? We know that the new integral from our integration by parts formula will be built from the new pieces, the derivative we find from and the antiderivative we pick from . So when we differentiate , we get a constant, compared to antidifferentiating and getting another power function, but with a larger exponent. We know this will be combined with a function no matter what (since the derivative and antiderivatives of will only differ in their sign). So picking the version that gets that second integral to be built from a trig function and a constant is going to be much nicer than a trig function and a power function. It was nice to pick to be the piece that we found the derivative of!    Let's practice this comparison with another example in order to build our intuition for picking the parts in our integration by parts formula.   Picking the Parts for Integration by Parts   This time we'll look at a very similar integral: . Again, we'll set this up two different ways and compsare them.    We'll start with selecting and . Fill in the following with the rest of the pieces:    You're not forgetting how to antidifferentiate . This is just something we don't know yet!    Ok, so here we have to swap the pieces and try the setup with and , since we only know how to differentiate . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Why was it fine for us to antidifferentiate in this example, but not in ?    Finish this work to find .   Notice that .    So here, we didn't actually get much choice. We couldn't pick in order to differentiate it (and get a constant to multiply into our second integral) since we don't know how to antidifferentiate (yet: once we know how, it might be fun to come back to this problem and try it again with the parts flipped). But we can also notice that it ended up being fine to antidifferentiate : the increased power from our power rule didn't really matter much when we combined it with the derivative of the logarithm, since the derivative of the log is also a power function ! So we were able to combine those easily and actually integrate that second integral.     It is common for students to want to place functions into sort of hierarchy or classification guidelines for choosing the parts. Some students have found that the acronym LIPET (logs, inverse trig, power functions, exponentials, and trig functions) can be a useful tool for selecting the parts. When you have two different types of functions, it might help to select to be whichever function shows up first in that list.     Integrate the following:        It doesn't matter whether we differentiate or antidifferentiate , since we'll get the same thing. Let's pick so that we can differentiate it.     We need to do more integration by parts!          We don't know how to antidifferentiate , but we do know how to differentiate it!           Some Flexible Choices for Parts  We're going to look at a couple of examples where we can showcase some of the flexibility we have with our choices of parts. First, we'll revisit .In this example, when we got to that second integral, we noticed that for the fraction , we could either do some long division (since the degrees in the numerator and denominator are the same) or do some clever re-writing of the numerator. Either way, we know that this fraction is almost 1...It's really some bit (in this case, the extra bit was a fraction ).  What if we chose our parts differently? Not the and parts, though, since we still haven't figured out how to antidifferentiate . But we get one more choice!  Once we choose , we don't really get a separate choice for : it's simply the derivative of with regard to multiplied by the differential . But consider our choice of , and the subsequent process of finding . Yes, there's only one possible answer, but in a much more real sense, there isn't just one possible answer. There are an infinite number of them! We know, due to the and then later due to , that there are an infinite number of antiderivatives, all differing by at most a constant term. So let's pick a more appropriate antiderivative!    Integrate , this time making a more intentional choice for .    Note that if we pick , then the second integral will be just delightful.          So we get the same thing, but didn't have to think through the long division or the forced factoring. But the trade off here is that we almost have to see this coming to notice it. This flexibility doesn't always come into play for us. But we can look at a different kind of flexibility.  We've looked at integrals with both and . For these, and for other inverse functions specifically, we pick them to be the part in our integration by parts problems because we don't know how do antidifferentiate them.  So let's look at , and we'll solve this integral by, specifically, differentiating instead of antidifferentiating it.   Antidifferentiating the Log Function   Integrate .    Pick , since we can differentiate it. What does that leave for ?          We can use this same strategy to find antiderivatives of , , and eventually .   For , we'll need to use this same tactic of setting and , but then later on we'll need to use a technique called to finish the problem.   Now that we know the antiderivative family for , we can revisit the problem in , , and try to work through the integration by parts when and .    Integrate .      Note that this last integral is really recognizable: it's the one we started with! Let's \"solve\" this equation for that integral by adding it to both sides of our equation.       Solving for the Integral  In this last example, we ended up seeing the original integral repeated when we did integration by parts. This is a useful technique, especially when we deal with functions that have a kind of \"repeating\" structure to their derivatives or antiderivatives. We'll look at a couple of classic integrals where we see this kind of technique employed.    For each of the following integrals, use integration by parts to solve.        This one is pretty straight forward, since it doesn't really matter what we select as our parts. Notice, though, that this isn't the only way we can approach this! We can use -substitution, or even re-write this using a trigonometric identity.                     Notice that we can come up with a bunch of different examples that are similar to . If we put trigonometric functions inside our integral, we'll have some options with how we approach them! We can use -substitution, since the derivatives of trigonometric functions are other trigonometric functions. In , for instance, we could write and , or even chose and .  The real issues will come when our integrand is not just a product of two trigonometric functions, but when they are products of trigonometric functions raised to exponents. We'll have some combinations of these products (which maybe makes us think about integration by parts) and composition (which points towards -substitution). In the next section, we'll develop some strategies to deal with these kinds of integrals.   "
+},
+{
+  "id": "act-IntegrationByParts",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#act-IntegrationByParts",
+  "type": "Activity",
+  "number": "7.4.1",
+  "title": "Discovering the Integration by Parts Formula.",
+  "body": " Discovering the Integration by Parts Formula   The product rule for derivatives says that: . We know that we intend to \"undo\" the product rule, so let's try to re-frame the product rule from a rule about derivatives to a rule about antiderivatives.    Antidifferentiate the product rule by antidifferentiating each side of the equation.    Note that on the left side of this equation you're antidifferentiating a derivative. What will that give you? Then, on the right side, we're just splitting up the terms of the product rule into two different integrals.    On the right side, we have two integrals. Since each of them has a product of functions (one function and a derivative of another), we can isolate one of them in this equation and create a formula for how to antidifferentiate a product of functions! Solve for .    Look back at this formula for . Explain how this is really the product rule for derivatives (without just undo-ing all of the steps we have just done).    What made it so useful to pick instead of in this case? Since we know that we are going to get another integral, one that specifically has the new derivative and new antiderivative that we find from the parts we picked, we noticed that differentiating the function was much nicer than antidifferentiating it: we get a constant that we multiply by the trig function in this new integral, instead of a power function with an even bigger exponent. We can also notice that when it comes to the trig function, it doesn't really matter if we differentiate it or antidifferentiate it. In both cases, we get a in our new integral, with the only difference being whether it is positive or negative.   "
+},
+{
+  "id": "act-PickingParts-1",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#act-PickingParts-1",
+  "type": "Activity",
+  "number": "7.4.2",
+  "title": "Picking the Parts for Integration by Parts.",
+  "body": " Picking the Parts for Integration by Parts   Let's consider the integral: . We'll investigate how to set up the integration by parts formula with the different choices for the parts.    We'll start with selecting and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using your labeled pieces. Notice that the integration by parts formula gives us another integral. Don't worry about antidifferentiating this yet, let's just set the pieces up.        Let's swap the pieces and try the setup with and . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Compare the two results we have. Which setup do you think will be easier to move forward with? Why?   When we say we need to keep moving forward with our setup, what we mean is that we have another integral to antidifferentiate. Which one will be easier to work with: or ?    Finalize your work with the setup you have chosen to find .    What made things so much better when we chose compared to ? We know that the new integral from our integration by parts formula will be built from the new pieces, the derivative we find from and the antiderivative we pick from . So when we differentiate , we get a constant, compared to antidifferentiating and getting another power function, but with a larger exponent. We know this will be combined with a function no matter what (since the derivative and antiderivatives of will only differ in their sign). So picking the version that gets that second integral to be built from a trig function and a constant is going to be much nicer than a trig function and a power function. It was nice to pick to be the piece that we found the derivative of!   "
+},
+{
+  "id": "act-PickingParts-2",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#act-PickingParts-2",
+  "type": "Activity",
+  "number": "7.4.3",
+  "title": "Picking the Parts for Integration by Parts.",
+  "body": " Picking the Parts for Integration by Parts   This time we'll look at a very similar integral: . Again, we'll set this up two different ways and compsare them.    We'll start with selecting and . Fill in the following with the rest of the pieces:    You're not forgetting how to antidifferentiate . This is just something we don't know yet!    Ok, so here we have to swap the pieces and try the setup with and , since we only know how to differentiate . Fill in the following with the rest of the pieces:     Now set up the integration by parts formula using this setup.        Why was it fine for us to antidifferentiate in this example, but not in ?    Finish this work to find .   Notice that .    So here, we didn't actually get much choice. We couldn't pick in order to differentiate it (and get a constant to multiply into our second integral) since we don't know how to antidifferentiate (yet: once we know how, it might be fun to come back to this problem and try it again with the parts flipped). But we can also notice that it ended up being fine to antidifferentiate : the increased power from our power rule didn't really matter much when we combined it with the derivative of the logarithm, since the derivative of the log is also a power function ! So we were able to combine those easily and actually integrate that second integral.   "
+},
+{
+  "id": "subsec-PickingParts-6",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#subsec-PickingParts-6",
+  "type": "Example",
+  "number": "7.4.1",
+  "title": "",
+  "body": "  Integrate the following:        It doesn't matter whether we differentiate or antidifferentiate , since we'll get the same thing. Let's pick so that we can differentiate it.     We need to do more integration by parts!          We don't know how to antidifferentiate , but we do know how to differentiate it!        "
+},
+{
+  "id": "subsec-FlexibleChoices-5",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#subsec-FlexibleChoices-5",
+  "type": "Example",
+  "number": "7.4.2",
+  "title": "",
+  "body": "  Integrate , this time making a more intentional choice for .    Note that if we pick , then the second integral will be just delightful.         "
+},
+{
+  "id": "subsec-FlexibleChoices-9",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#subsec-FlexibleChoices-9",
+  "type": "Example",
+  "number": "7.4.3",
+  "title": "Antidifferentiating the Log Function.",
+  "body": " Antidifferentiating the Log Function   Integrate .    Pick , since we can differentiate it. What does that leave for ?         "
+},
+{
+  "id": "subsec-FlexibleChoices-13",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#subsec-FlexibleChoices-13",
+  "type": "Example",
+  "number": "7.4.4",
+  "title": "",
+  "body": "  Integrate .      Note that this last integral is really recognizable: it's the one we started with! Let's \"solve\" this equation for that integral by adding it to both sides of our equation.    "
+},
+{
+  "id": "subsec-SolvingForIntegral-3",
+  "level": "2",
+  "url": "sec-IntegrationByParts.html#subsec-SolvingForIntegral-3",
+  "type": "Example",
+  "number": "7.4.5",
+  "title": "",
+  "body": "  For each of the following integrals, use integration by parts to solve.        This one is pretty straight forward, since it doesn't really matter what we select as our parts. Notice, though, that this isn't the only way we can approach this! We can use -substitution, or even re-write this using a trigonometric identity.                    "
+},
+{
+  "id": "sec-PowersOfTrig",
+  "level": "1",
+  "url": "sec-PowersOfTrig.html",
+  "type": "Section",
+  "number": "7.5",
+  "title": "Integrating Powers of Trigonometric Functions",
+  "body": " Integrating Powers of Trigonometric Functions   Let's remind ourselves of two example problems that we've done in the past.  In , we performed a -substitution, but needed to work to re-write our whole integrand in terms of . Specifically, we found that in the numerator, there was an , but . We were substituting out a linear function of in the numerator, but the actual function was cubic. This wasn't a problem: we re-wrote , and noticed that the extra was able to be substituted, since we could re-write out subsitution rule: we noted that is equivalent to . This meant that even though we had an extra factor of \"in\" the part that we were using for substituting in the differential , we were still able to translate the whole function to be written in terms of .  Then, more recently, in , we noted that we could use a mix of methods to integrate this:  One on hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that's what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a -substitution was also appropriate.  In this section, we'll explore more combinations of trigonometric functions and build a strategy for antidifferentiating them that includes some ideas from both of these previous examples.    Building a Strategy for Powers of Sines and Cosines   Compare and Contrast   Let's do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:     Consider the first integral, . Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.   It might be helpful to notice that can be re-written as . Does this help reveal something important about the structure of this integrand?    Now consider the second integral, . Does the same integration strategy work here? What happens when you apply the same thing?   Let again, and . What happens with the cosine functions? How many are \"left\" after applying our substitution?    We know that and are related to each other through derivatives (each is the derivative of the other, up to a negative). Is there some other connection that we have between these functions? We might especially notice that we have a left over in our integral. Can we write this in terms of , so that we can write it in terms of ?   We have a trigonometric identity (the Pythagorean Identity): .    Why would this strategy not have worked if we were looking at the integrals or ? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?     Integrating Powers of Sine and Cosine  For integrals in the form where and are real number exponents:   If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If both and are even, we can either use or use the following power-reducing trigonometric identities:       A strange note, here, is that we typically pick our -substitution based on looking to see a suitable candidate for : we look for functions that are composed \"inside\" of other functions or we look for a function whose derivative is in the integral (the \"function-derivative pair\" that we talk about in ). Here, though, we're selecting our substitution based on : we're looking to see which function we can set aside one copy of for the differential, and then have an even power left over so that we can apply the Pythagorean Identity to translate the rest.    Building a Strategy for Powers of Secants and Tangents   Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .    Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which is also written as , with , or , let's divide everything in the Pythagorean Identity by :         Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.   Here, . We'll also use .        Now try the integral again, this time using as your substitution.   Now , and we'll use the same Pythagorean identity, just re-written as .        For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?   Notice we had an even exponent on the function, but an odd exponent on the function.    Which substitution would be best for the integral . Why?    Which substitution would be best for the integral . Why?     Integrating Powers of Secant and Tangent  For integrals in the form where and are real number exponents:   If , the exponent on , is odd, we can use and . Then we can apply the Pythagorean Identity .    If , the exponent on , is even, we can use and . Then we can apply the Pythagorean Identity .    If is odd and is even, we can use .       "
+},
+{
+  "id": "act-CompareContrast",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#act-CompareContrast",
+  "type": "Activity",
+  "number": "7.5.1",
+  "title": "Compare and Contrast.",
+  "body": " Compare and Contrast   Let's do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:     Consider the first integral, . Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.   It might be helpful to notice that can be re-written as . Does this help reveal something important about the structure of this integrand?    Now consider the second integral, . Does the same integration strategy work here? What happens when you apply the same thing?   Let again, and . What happens with the cosine functions? How many are \"left\" after applying our substitution?    We know that and are related to each other through derivatives (each is the derivative of the other, up to a negative). Is there some other connection that we have between these functions? We might especially notice that we have a left over in our integral. Can we write this in terms of , so that we can write it in terms of ?   We have a trigonometric identity (the Pythagorean Identity): .    Why would this strategy not have worked if we were looking at the integrals or ? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?   "
+},
+{
+  "id": "act-SecTan",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#act-SecTan",
+  "type": "Activity",
+  "number": "7.5.2",
+  "title": "Compare and Contrast (Again).",
+  "body": " Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .    Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which is also written as , with , or , let's divide everything in the Pythagorean Identity by :         Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.   Here, . We'll also use .        Now try the integral again, this time using as your substitution.   Now , and we'll use the same Pythagorean identity, just re-written as .        For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?   Notice we had an even exponent on the function, but an odd exponent on the function.    Which substitution would be best for the integral . Why?    Which substitution would be best for the integral . Why?   "
+},
+{
+  "id": "sec-TrigSub",
+  "level": "1",
+  "url": "sec-TrigSub.html",
+  "type": "Section",
+  "number": "7.6",
+  "title": "Trigonometric Substitution",
+  "body": " Trigonometric Substitution  Text of section.  "
+},
+{
+  "id": "sec-PartialFractions",
+  "level": "1",
+  "url": "sec-PartialFractions.html",
+  "type": "Section",
+  "number": "7.7",
+  "title": "Partial Fractions",
+  "body": " Partial Fractions   Comparing Rational Integrands   Try to integrate the following: . Explain what about this integral makes things very difficult.   Annoyingly, you can write this as: . Now explain why the second integral is difficult.    Confirm that .    Try to integrate the following: .    Which integral of the two would you rather integrate? Why?    "
+},
+{
+  "id": "act-PartialFractionCompare",
+  "level": "2",
+  "url": "sec-PartialFractions.html#act-PartialFractionCompare",
+  "type": "Activity",
+  "number": "7.7.1",
+  "title": "Comparing Rational Integrands.",
+  "body": " Comparing Rational Integrands   Try to integrate the following: . Explain what about this integral makes things very difficult.   Annoyingly, you can write this as: . Now explain why the second integral is difficult.    Confirm that .    Try to integrate the following: .    Which integral of the two would you rather integrate? Why?   "
 },
 {
   "id": "sec-IntroSequences",
