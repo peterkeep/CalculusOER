@@ -53,6 +53,15 @@
           </p>
         </statement>
       </definition>
+      <theorem xml:id="thm-LimitExistence">
+        <title>Mismatched Limits</title>       
+        <statement>
+          <p>
+            For a function <m>f(x)</m>, if both <m>\displaystyle\lim_{x\to a^-} f(x) \neq \lim_{x\to a^+} f(x)</m>, then we say that <m>\displaystyle\lim_{x\to a} f(x)</m> does not exist. That is, there is no single real number <m>L</m> that <m>f(x)</m> is arbitrarily close to for <m>x</m>-values that are sufficiently close to, but not equal to, <m>x=a</m>.
+          </p>
+        </statement>
+      </theorem>
+        
   </subsection>
 <subsection xml:id="subsec-ApproximatingLimits">
   <title>Approximating Limits Using Our New Definition</title>

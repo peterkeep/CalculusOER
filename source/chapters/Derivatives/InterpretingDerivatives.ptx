@@ -3,6 +3,135 @@
 <section xml:id="sec-InterpretingDerivatives" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Interpreting Derivatives</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      What is a derivative?
+    </p>
+    <p>
+      This can feel like a silly question, since we're calculating it and getting used to finding them. But what is it?
+    </p>
+    <p>
+      In this section, we just want to remind ourselves of what this object is, how we should hold it in our minds as we move through the course, and then practice being flexible with this interpretation.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-DerivativeIsSlope">
+    <title>The Derivative is a Slope</title>
+    <p>
+      
+    </p>
+  </subsection>
+<subsection xml:id="subsec-DerivativeIsChange">
+  <title>The Derivative is a Rate of Change</title>
+  <p>
+    
+  </p>
+</subsection>
+
+  <subsection xml:id="subsec-DerivativeIsLimit">
+    <title>The Derivative is a Limit</title>
+    <p>
+      Look back at the definition of <xref ref="def-DerivativeAtPoint" text="title"/>. The end of it is interesting: "provided that the limit exists." We need to keep in mind that this is a limit, and so a derivative exists or fails to exist whenever that limit exists or fails to exist.
+    </p>
+    <p>
+      What are some ways that a limit fails to exist?
+          <ul>
+            <li>
+              <p>
+                A limit doesn't exist if the left-side limit and the right-side limit do not match: <xref ref="thm-LimitExistence" text="type-global-title"/>.
+              </p>
+            </li>
+            <li>
+              <p>
+                A limit doesn't exist if it is an <xref ref="def-InfiniteLimit" text="title"/>.
+              </p>
+            </li>
+          </ul>
+          What do each of these situations look like when we're considering the limit of slopes?
+    </p>
+    <assemblage xml:id="assemblage-DerivativesDontExist">
+      <title>When Does a Derivative Not Exist?</title>
+      <p>
+        <ol>
+          <li>
+            <p>
+              A derivative doesn't exist at points where the slopes on either side of the point don't match.
+            </p>
+          </li>
+          <li>
+            <p>
+              A derivative doesn't exist at points with vertical tangent lines.
+            </p>
+          </li>
+          <li>
+            <p>
+              A derivative doesn't exist at points where the function is not continuous.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </assemblage>
+
+  </subsection>
+  <subsection xml:id="subsec-DerivativeIsFunction">
+    <title>The Derivative is a Function</title>
+    <p>
+      
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-DerivativeNotation">
+    <title>Notation for Derivatives</title>
+    <p>
+      So far we've been using the "prime" notation to represent derivatives: the derivative of <m>f(x)</m> is <m>f'(x)</m>. We will continue to use this notation, but we'll introduce a bunch of other ways of writing notation to represent the derivative. Each new notation will emphasize some aspect of the derivative that will serve to be useful, even though they all represent essentially the same thing.
+    </p>
+    <tabular>
+    <col/><col/><col/><col width="40%"/>
+      <row header="yes" bottom="medium">
+        <cell>Function</cell>
+        <cell>Derivative</cell>
+        <cell>Derivative at <m>x=a</m></cell>
+        <cell>Emphasis</cell>
+      </row>
+      <row bottom="minor">
+        <cell><m>f(x)</m></cell>
+        <cell><m>f'(x)</m></cell>
+        <cell><m>f'(a)</m></cell>
+        <cell>
+          <p>
+          The derivative is a function. The function takes in <m>x</m>-value inputs and returns the slope of <m>f</m> at that <m>x</m>-value.
+          </p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell><m>y</m></cell>
+        <cell><m>y'</m></cell>
+        <cell><m>y'\bigg|_{x=a}</m></cell>
+        <cell>
+          <p>
+            We can find slopes on any curve, not just functions. This is sometimes also used as a way to simplify the notation, especially when we want to manipulate equations involving <m>y'</m>.
+          </p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell><m>y</m></cell>
+        <cell><m>\frac{dy}{dx}</m></cell>
+        <cell><m>\frac{dy}{dx}\bigg|_{x=a}</m></cell>
+        <cell>
+          <p>
+            The derivative is a slope. It is <m>\frac{\Delta y}{\Delta x}</m> as <m>\Delta x \to 0</m>, and we use <m>dx</m> and <m>dy</m> (called <term>differentials</term>) to represent <m>\Delta x</m> and <m>\Delta y</m> as the limits as <m>\Delta x \to 0</m>. This notation is also useful to tell us what the rate of change is: what is changing (in this case <m>y</m>) and what is it changing based on (in this case <m>x</m>).
+          </p> 
+        </cell>
+      </row>
+      <row bottom="medium">
+        <cell><m>f(x)</m></cell>
+        <cell><m>\frac{d}{dx}\left(f(x)\right)</m></cell>
+        <cell><m>\frac{d}{dx}\left(f(x)\right)\bigg|_{x=a}</m></cell>
+        <cell>
+         <p>
+          The derivative is an action that we do to some function. We can call it an <term>operator</term>, although we won't formally define that term in this text. We'll look at this idea more in <xref ref="sec-ImplicitDifferentiation"/>. We can specify what we are expecting the input variable to be, based on the differential <m>dx</m> in the denominator. 
+          </p> 
+        </cell>
+      </row>
+     </tabular>
+  </subsection>
 
 </section>

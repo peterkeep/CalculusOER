@@ -73,8 +73,8 @@
                 Just to make it clear what we've done, lay out your slopes in this table:      
             </p>
              <tabular halign="right">
-                    <row header="yes" bottom="minor" >
-                        <cell><m>(0,f(0))</m> and...</cell>
+                    <row header="yes" bottom="medium" >
+                        <cell>Between <m>(0,f(0))</m> and...</cell>
                         <cell>Slope</cell>
                     </row>
                     <row>
@@ -106,7 +106,7 @@
                         <cell><m>(-0.5,f(-0.5))</m></cell>
                         <cell> </cell>
                     </row>
-                    <row>
+                    <row bottom="medium">
                         <cell><m>(-1,f(-1))</m></cell>
                         <cell> </cell>
                     </row>
