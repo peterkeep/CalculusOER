@@ -1,0 +1,64 @@
+<activity xml:id="act-InterpretDerivativeFunction">
+    <title>Interpreting the Derivative as a Function</title>
+    <introduction>
+        <p>
+             In <xref ref="act-ManySlopes" text="type-global-title"/>, we calculated the derivative function for <m>j(x)=x^2-4</m>. Using the definition of <xref ref="def-DerivativeFunction" text="title"/>, we can see that <m>j'(x)=2x</m>. Let's explore that a bit more.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Sketch the graphs of <m>j(x)=x^2-4</m> and <m>j'(x)=2x</m>. Describe the shapes of these graphs.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the coordinates of the point at <m>x=\frac{1}{2}</m> on both the graph of <m>j(x)</m> and <m>j'(x)</m>. Plot the point on each graph.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Think back to our previous interpretations of the derivative: how do we interpret the <m>y</m>-value output you found for the <m>j'</m> function?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the coordinates of another point at some other <m>x</m>-value on both the graph of <m>j(x)</m> and <m>j'(x)</m>. Plot the point on each graph, and explain what the output of <m>j'</m> tells us at this point.  
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use your graph of <m>j'(x)</m> to find the <m>x</m>-intercept of <m>j'(x)</m>. Locate the point on <m>j(x)</m> with this same <m>x</m>-value. How do we know, visually, that this point is the <m>x</m>-intercept of <m>j'(x)</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use your graph of <m>j'(x)</m> to find where <m>j'(x)</m> is positive. Pick two <m>x</m>-values where <m>j'(x)\gt 0</m>. What do you expect this to look like on the graph of <m>j(x)</m>? Find the matching points (at the same <m>x</m>-values) on the graph of <m>j(x)</m> to confirm.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use your graph of <m>j'(x)</m> to find where <m>j'(x)</m> is negative. Pick two <m>x</m>-values where <m>j'(x)\lt 0</m>. What do you expect this to look like on the graph of <m>j(x)</m>? Find the matching points (at the same <m>x</m>-values) on the graph of <m>j(x)</m> to confirm.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's wrap this up with one final pair of points. Let's think about the point <m>(-3,5)</m> on the graph of <m>j(x)</m> and the point <m>(-3,-6)</m> on the graph of <m>j'(x)</m>. First, explain what the value of <m>-6</m> (the output of <m>j'</m> at <m>x=-3</m>) means about the point <m>(-3,5)</m> on <m>j(x)</m>. Finally, why can we not use the value <m>5</m> (the output of <m>j</m> at <m>x=-3</m>) means about the point <m>(-3,-6)</m> on <m>j'(x)</m>?
+            </p>
+        </statement>
+    </task>
+</activity>
