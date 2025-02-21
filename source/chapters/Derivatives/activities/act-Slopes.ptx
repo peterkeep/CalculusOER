@@ -1,0 +1,134 @@
+<activity xml:id="act-Slopes">
+    <title>CThinking about Slopes</title>
+    <introduction>
+        <p>
+        We're going to calculate and make some conjectures about slopes of lines between points, where the points are on the graph of a function. Let's define the following function:
+        <me>
+            f(x)=\frac{1}{x+2}
+        </me>.
+    </p>
+    </introduction>
+    
+    <task>
+        <statement>
+            <p>
+                We're going to calculate a lot of slopes! Calculate the slope of the line connecting each pair of points on the curve of <m>f(x)</m>:
+                <ul>
+                    <li>
+                        <p>
+                            <m>(-1, f(-1))</m> and <m>(0,f(0))</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>(-0.5, f(-0.5))</m> and <m>(0,f(0))</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>(-0.1, f(-0.1))</m> and <m>(0,f(0))</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>(-0.001, f(-.001))</m> and <m>(0,f(0))</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's calculate another group of slopes. Find the slope of the lines connecting these pairs of points:
+                <ul>
+                    <li>
+                        <p>
+                            <m>(0,f(0))</m> and <m>(1,f(1))</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>(0,f(0))</m> and <m>(0.5,f(0.5))</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>(0,f(0))</m> and <m>(0.1,f(0.1))</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>(0,f(0))</m> and <m>(0.001,f(0.001))</m>
+                        </p>
+                    </li>
+                </ul>       
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Just to make it clear what we've done, lay out your slopes in this table:      
+            </p>
+             <tabular halign="right">
+                    <row header="yes" bottom="minor" >
+                        <cell><m>(0,f(0))</m> and...</cell>
+                        <cell>Slope</cell>
+                    </row>
+                    <row>
+                        <cell><m>(1,f(1))</m></cell>
+                        <cell> </cell>
+                    </row>
+                    <row>
+                        <cell><m>(0.5,f(0.5))</m></cell>
+                        <cell> </cell>
+                    </row>
+                    <row>
+                        <cell><m>(0.1,f(0.1))</m></cell>
+                        <cell> </cell>
+                    </row>
+                    <row bottom="minor" >
+                        <cell><m>(0.01,f(0.01))</m></cell>
+                        <cell> </cell>
+                    </row>
+   
+                    <row>
+                        <cell><m>(-0.01,f(-0.01))</m></cell>
+                        <cell> </cell>
+                    </row>
+                    <row>
+                        <cell><m>(-0.1,f(-0.1))</m></cell>
+                        <cell> </cell>
+                    </row>
+                    <row>
+                        <cell><m>(-0.5,f(-0.5))</m></cell>
+                        <cell> </cell>
+                    </row>
+                    <row>
+                        <cell><m>(-1,f(-1))</m></cell>
+                        <cell> </cell>
+                    </row>
+                </tabular> 
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now imagine a line that is tangent to the graph of <m>f(x)</m> at <m>x=0</m>. We are thinking of a line that touches the graph at <m>x=0</m>, but runs along side of the curve there instead of through it.
+            </p>
+            <p>
+                Make a conjecture about the slope of this line, using what we've seen above.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+               Can you represent the slope you're thinking of above with a limit? What limit are we approximating in the slope calculations above? Set up the limit and evaluate it, confirming your conjecture.
+            </p>
+        </statement>
+    </task>
+    
+</activity>

@@ -1,14 +1,45 @@
 <section xml:id="sec-IntroDerivatives" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Introduction to Derivatives</title>
     <introduction>
-        <p>
-            
-        </p>
+       <p>
+            We'll start this off by thinking about slopes.
+       </p>
     </introduction>
-    <subsection xml:id="subsec-ThinkingAboutSlopes">
-        <title>Thinking About Slopes</title>
-        <p>
-            
-        </p>
+    <subsection xml:id="subsec-DefiningDerivative">
+        <title>Defining the Derivative</title>
+        <xi:include href="./activities/act-Slopes.ptx" />
+
+        <xi:include href="./activities/act-TangentLine.ptx" />
+
+        <definition xml:id="def-DerivativeAtPoint">
+        <title>Derivative at a Point</title>
+            <statement>
+                <p>
+                    For a function <m>f(x)</m>, we say that the <term>derivative</term> of <m>f(x)</m> at <m>x=a</m> is:
+                    <me>
+                        f'(a) = \lim_{x\to a} \left(\frac{f(x)-f(a)}{x-a}\right)
+                    </me>
+                    provided that the limit exists.
+                </p>
+                <p>
+                    If <m>f'(a)</m> exists, then we say <m>f(x)</m> is <term>differentiable</term> at <m>a</m>.
+                </p>
+            </statement>
+        </definition>
+    </subsection>
+    <subsection xml:id="subsec-ManySlopes">
+        <title>Calculating a Bunch of Slopes at Once</title>
+        <definition xml:id="def-DerivativeFunction">
+        <title>The Derivative Function</title>
+            <statement>
+                <p>
+                    For a function <m>f(x)</m>, the derivative of <m>f(x)</m>, denoted <m>f'(x)</m>, is:
+                    <me>
+                        f'(x) = \lim_{\Delta x\to 0} \left( \frac{f(x+\Delta x) - f(x)}{\Delta x} \right)
+                    </me>
+                    for <m>x</m>-values in the domain of <m>f(x)</m> where this limit exists.
+                </p>
+            </statement>
+        </definition>
     </subsection>
 </section>

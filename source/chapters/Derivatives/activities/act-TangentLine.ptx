@@ -1,0 +1,30 @@
+<activity xml:id="act-TangentLine">
+    <title>Finding a Tangent Line</title>
+    <introduction>
+        <p>
+            Let's think about a new function, <m>g(x) = \sqrt{2-x}</m>. We're going to think about this function around the point at <m>x=1</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Ok, we are going to think about this function at this point, so let's find the coordinates of the point first. What's the <m>y</m>-value on our curve at <m>x=1</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use a limit similar to the one you constructed in <xref ref="act-Slopes"/> to find the slope of the line tangent to the graph of <m>g(x)</m> at <m>x=1</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now that you have a slope of this line, and the coordinates of a point that the line passes through, can you find the equation of the line?
+            </p>
+        </statement>
+    </task>
+    
+</activity>
