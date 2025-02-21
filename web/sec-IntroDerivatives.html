@@ -198,7 +198,16 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-ManySlopes" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Calculating a Bunch of Slopes at Once</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Interpreting Derivatives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-InterpretingDerivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Interpreting Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsSlope" class="internal"><span class="codenumber">2.2.1</span> <span class="title">The Derivative is a Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsChange" class="internal"><span class="codenumber">2.2.2</span> <span class="title">The Derivative is a Rate of Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsLimit" class="internal"><span class="codenumber">2.2.3</span> <span class="title">The Derivative is a Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsFunction" class="internal"><span class="codenumber">2.2.4</span> <span class="title">The Derivative is a Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeNotation" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Notation for Derivatives</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Product and Quotient Rules</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ChainRule.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The Chain Rule</span></a></div></li>
@@ -409,7 +418,7 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="space"> </span><span class="title">Defining the Derivative</span>
 </h3>
 <article class="activity project-like" id="act-Slopes"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">CThinking about Slopes.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Thinking about Slopes.</span>
 </h4>
 <div class="introduction" id="act-Slopes-2"><div class="para logical" id="act-Slopes-2-1">
 <div class="para">We’re going to calculate and make some conjectures about slopes of lines between points, where the points are on the graph of a function. Let’s define the following function:</div>
@@ -457,9 +466,8 @@ f(x)=\frac{1}{x+2}\text{.}
 </div></article><article class="task exercise-like" id="act-Slopes-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="act-Slopes-5-1-1">Just to make it clear what we’ve done, lay out your slopes in this table:</div> <div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
-<th scope="col" class="r m b1 r0 l0 t0 lines">
-<span class="process-math">\((0,f(0))\)</span> and...</th>
-<th scope="col" class="r m b1 r0 l0 t0 lines">Slope</th>
+<th scope="col" class="r m b2 r0 l0 t0 lines">Between <span class="process-math">\((0,f(0))\)</span> and...</th>
+<th scope="col" class="r m b2 r0 l0 t0 lines">Slope</th>
 </tr>
 <tr>
 <td class="r m b0 r0 l0 t0 lines"><span class="process-math">\((1,f(1))\)</span></td>
@@ -490,8 +498,8 @@ f(x)=\frac{1}{x+2}\text{.}
 <td class="r m b0 r0 l0 t0 lines"></td>
 </tr>
 <tr>
-<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\((-1,f(-1))\)</span></td>
-<td class="r m b0 r0 l0 t0 lines"></td>
+<td class="r m b2 r0 l0 t0 lines"><span class="process-math">\((-1,f(-1))\)</span></td>
+<td class="r m b2 r0 l0 t0 lines"></td>
 </tr>
 </table></div></article><article class="task exercise-like" id="act-Slopes-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="act-Slopes-6-1-1">Now imagine a line that is tangent to the graph of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=0\text{.}\)</span> We are thinking of a line that touches the graph at <span class="process-math">\(x=0\text{,}\)</span> but runs along side of the curve there instead of through it.</div> <div class="para" id="act-Slopes-6-1-2">Make a conjecture about the slope of this line, using what we’ve seen above.</div></article><article class="task exercise-like" id="act-Slopes-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
@@ -503,7 +511,7 @@ f(x)=\frac{1}{x+2}\text{.}
 <article class="task exercise-like" id="act-TangentLine-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="act-TangentLine-3-1-1">Ok, we are going to think about this function at this point, so let’s find the coordinates of the point first. What’s the <span class="process-math">\(y\)</span>-value on our curve at <span class="process-math">\(x=1\text{?}\)</span>
 </div></article><article class="task exercise-like" id="act-TangentLine-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-TangentLine-4-1-1">Use a limit similar to the one you constructed in <a href="sec-IntroDerivatives.html#act-Slopes" class="xref" data-knowl="./knowl/xref/act-Slopes.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 2.1.1: CThinking about Slopes">Activity 2.1.1</a> to find the slope of the line tangent to the graph of <span class="process-math">\(g(x)\)</span> at <span class="process-math">\(x=1\text{.}\)</span>
+<div class="para" id="act-TangentLine-4-1-1">Use a limit similar to the one you constructed in <a href="sec-IntroDerivatives.html#act-Slopes" class="xref" data-knowl="./knowl/xref/act-Slopes.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 2.1.1: Thinking about Slopes">Activity 2.1.1</a> to find the slope of the line tangent to the graph of <span class="process-math">\(g(x)\)</span> at <span class="process-math">\(x=1\text{.}\)</span>
 </div></article><article class="task exercise-like" id="act-TangentLine-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="act-TangentLine-5-1-1">Now that you have a slope of this line, and the coordinates of a point that the line passes through, can you find the equation of the line?</div></article></article><article class="definition definition-like" id="def-DerivativeAtPoint"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Derivative at a Point.</span>
@@ -520,7 +528,46 @@ f'(a) = \lim_{x\to a} \left(\frac{f(x)-f(a)}{x-a}\right)
 </div></article></section><section class="subsection" id="subsec-ManySlopes"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="space"> </span><span class="title">Calculating a Bunch of Slopes at Once</span>
 </h3>
-<article class="definition definition-like" id="def-DerivativeFunction"><h4 class="heading">
+<article class="activity project-like" id="act-ManySlopes"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Calculating a Bunch of Slopes.</span>
+</h4>
+<div class="introduction" id="act-ManySlopes-2">
+<div class="para" id="act-ManySlopes-2-1">Let’s do this all again, but this time we’ll calculate the slope at a bunch of different points on the same function.</div>
+<div class="para" id="act-ManySlopes-2-2">Let’s use <span class="process-math">\(j(x)=x^2-4\text{.}\)</span>
+</div>
+</div>
+<article class="task exercise-like" id="act-ManySlopes-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="act-ManySlopes-3-1-1">
+<div class="para">Start calculating the following derivatives, using the definition of the <a href="sec-IntroDerivatives.html#def-DerivativeAtPoint" class="xref" data-knowl="./knowl/xref/def-DerivativeAtPoint.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.1: Derivative at a Point">Derivative at a Point</a>:</div>
+<ul class="disc" id="act-ManySlopes-3-1-1-2">
+<li id="act-ManySlopes-3-1-1-2-1"><div class="para" id="act-ManySlopes-3-1-1-2-1-1"><span class="process-math">\(\displaystyle j'(-2)\)</span></div></li>
+<li id="act-ManySlopes-3-1-1-2-2"><div class="para" id="act-ManySlopes-3-1-1-2-2-1"><span class="process-math">\(\displaystyle j'(0)\)</span></div></li>
+<li id="act-ManySlopes-3-1-1-2-3"><div class="para" id="act-ManySlopes-3-1-1-2-3-1"><span class="process-math">\(\displaystyle j'(1/3)\)</span></div></li>
+<li id="act-ManySlopes-3-1-1-2-4"><div class="para" id="act-ManySlopes-3-1-1-2-4-1"><span class="process-math">\(\displaystyle j'(-1)\)</span></div></li>
+</ul>
+</div></article><article class="task exercise-like" id="act-ManySlopes-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-ManySlopes-4-1-1">Stop calculating the above derivatives when you get tired/bored of it. How many did you get through?</div></article><article class="task exercise-like" id="act-ManySlopes-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-ManySlopes-5-1-1">Notice how repetitive this is: on one hand, we have to set up a completely different limit each time (since we’re looking at a different point on the function each time). On the other hand, you might have noticed that the work is all the same: you factor and cancel over and over. These limits are all ones that we covered in <a href="sec-IndeterminateForms.html" class="internal" title="Section 1.4: First Indeterminate Forms">Section 1.4 First Indeterminate Forms</a>, and so it’s no surprise that we keep using the same algebra manipulations over and over again to evaluate these limits.</div> <div class="para" id="act-ManySlopes-5-1-2">Do you notice any patterns, any connections between the <span class="process-math">\(x\)</span>-value you used for each point and the slope you calculated at that point? You might need to go back and do some more.</div></article><article class="task exercise-like" id="act-ManySlopes-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para logical" id="act-ManySlopes-6-1-1">
+<div class="para">Try to evaluate this limit in general:</div>
+<div class="displaymath process-math" id="act-ManySlopes-6-1-1-1">
+\begin{align*}
+j'(a)\amp= \lim_{x\to a}\left(\frac{j(x)-j(a)}{x-a}\right) \\
+\amp = \lim_{x\to a} \left(\frac{(x^2-4)-(a^2-4)}{x-a}\right)\text{.}
+\end{align*}
+</div>
+<div class="para">Remember, you know how this goes! You’re going to do the same sorts of algebra that you did earlier!</div>
+</div> <div class="para" id="act-ManySlopes-6-1-2">What is the formula, the pattern, the way of finding the slope on the <span class="process-math">\(j(x)\)</span> function at any <span class="process-math">\(x\)</span>-value, <span class="process-math">\(x=a\text{?}\)</span>
+</div></article><article class="task exercise-like" id="act-ManySlopes-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para logical" id="act-ManySlopes-7-1-1">
+<div class="para">Confirm this by using your new formula to re-calculate the following derivatives:</div>
+<ul class="disc" id="act-ManySlopes-7-1-1-1">
+<li id="act-ManySlopes-7-1-1-1-1"><div class="para" id="act-ManySlopes-7-1-1-1-1-1"><span class="process-math">\(\displaystyle j'(-2)\)</span></div></li>
+<li id="act-ManySlopes-7-1-1-1-2"><div class="para" id="act-ManySlopes-7-1-1-1-2-1"><span class="process-math">\(\displaystyle j'(0)\)</span></div></li>
+<li id="act-ManySlopes-7-1-1-1-3"><div class="para" id="act-ManySlopes-7-1-1-1-3-1"><span class="process-math">\(\displaystyle j'(1/3)\)</span></div></li>
+<li id="act-ManySlopes-7-1-1-1-4"><div class="para" id="act-ManySlopes-7-1-1-1-4-1"><span class="process-math">\(\displaystyle j'(-1)\)</span></div></li>
+</ul>
+</div></article><div class="conclusion" id="act-ManySlopes-8"><div class="para" id="act-ManySlopes-8-1">We’re going to try to think about the derivative as something that can be calculated in general, as well as something that can be calculated at a point. We’ll define a new way of calculating it, still a limit of slopes, that will be a bit more general.</div></div></article><article class="definition definition-like" id="def-DerivativeFunction"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">The Derivative Function.</span>
 </h4>
 <div class="para logical" id="def-DerivativeFunction-2-1">
