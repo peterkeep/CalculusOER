@@ -1,0 +1,62 @@
+<activity xml:id="act-InterpretDerivativeChange">
+    <title>Interpreting the Derivative as a Rate of Change</title>
+    <introduction>
+        <p>
+            This is going to somewhat feel redundant, since maybe we know that a slope is really just a rate of change. But hopefully we'll be able to explore this a bit more and see how we can use a derivative to tell us information about some specific context.
+        </p>
+        <p>
+            Let's say that we want to model the speed of a car as it races along a strip of the road. By the time we start measuring it (we'll call this time 0), the position the car (along the straight strip of road) is:
+            <me>
+                s(t) = 73t + t^2
+            </me>,
+            where <m>t</m> is time measured in seconds and <m>s(t)</m> is the position measured in feet. Let's say that this function is only relevant on the domain <m>0\leq t\leq 15</m>. That is, we only model the position of the car for a 15-second window as it speeds past us.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                How far does the car travel in the 15 seconds that we model it? What was the car's average velocity on those 15 seconds?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Calculate <m>s'(t)</m>, the derivative of <m>s(t)</m>, using <xref ref="def-DerivativeFunction" text="type-global-title"/>. What information does this tell us about our vehicle?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What is the rate at which the position (in feet) of the vehicle changes per unit time (in seconds)? What do we call this, and what are the units?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Calculate <m>s'(0)</m>. Why is this smaller than the average velocity you found? What does that mean about the velocity of the car?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                If we call <m>v(t)=s'(t)</m>, then calculate <m>v'(t)</m>. Note that this is a derivative of a derivative. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find <m>v'(0)</m>. Why does this make sense when we think about the difference between the average velocity on the time interval and the value of <m>v(0)</m> that we calculated?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What does it mean when we notice that <m>v'(t)</m> is constant? Explain this by interpreting it in terms of both the velocity of the vehicle as well as the position.
+            </p>
+        </statement>
+    </task>
+</activity>

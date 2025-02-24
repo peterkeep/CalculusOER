@@ -1,0 +1,79 @@
+<activity xml:id="act-InterpretDerivativeSlope">
+    <title>Interpreting the Derivative as a Slope</title>
+    <introduction>
+        <p>
+            In <xref ref="act-Slopes" text="type-global-title"/> and <xref ref="act-TangentLine" text="type-global-title"/>, we built the idea of a derivative by calculating slopes and using them. Let's continue this by considering the function <m>f(x) = \dfrac{1}{x^2}</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Use <xref ref="def-DerivativeAtPoint" text="type-global-title"/> to find <m>f'(2)</m>. What does this value represent?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Consider the graph of <m>f(x)</m>.
+            </p>
+            <interactive desmos="vxgjelfgg4" width="60%" aspect="2:3" />
+            <p>
+                Sketch the line that would be tangent to the graph of <m>f(x)</m> at <m>x=2</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Remember that we can write the equation of a line in two ways:
+                <ul>
+                    <li>
+                        <p>
+                            The equation of a line with slope <m>m</m> that passes through the point <m>(a,f(a))</m> is:
+                            <me>
+                                y=m(x-a)+f(a)
+                            </me>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The equation of a line with slope <m>m</m> that passes the point <m>(0,b)</m> (this is another way of saying that the <m>y</m>-intercept of the line is <m>b</m>) is:
+                            <me>
+                                y=mx+b
+                            </me>.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Find the equation of the line tangent to <m>f(x)</m> at <m>x=2</m>. Add it to the desmos graph above to check your equation.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                This tangent line is very similar to the actual curve of the function <m>f(x)</m> near <m>x=2</m>. Another way of saying this is that while the slope of <m>f(x)</m> is not always the value you found for <m>f'(2)</m>, it is close to that for <m>x</m>-values near <m>2</m>.
+            </p>
+            <p>
+                Use this idea of slope to predict where the <m>y</m>-value of our function will be at <m>2.01</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We know that slope is <m>\dfrac{\Delta y}{\Delta x}</m> and we're using the fact that <m>\dfrac{dy}{dx} \approx \dfrac{\Delta y}{\Delta x}</m> for small values of <m>\Delta x</m>.
+            </p>
+            <p>
+                Here, we have <m>\Delta x= 0.01</m>, so can you use the slope to approximate the corresponding <m>\Delta y</m> and figure out the new <m>y</m>-value?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Compare this value with <m>f(2.01) = \dfrac{1}{2.01^2}</m>. How close was it? 
+            </p>
+        </statement>
+    </task>
+</activity>
