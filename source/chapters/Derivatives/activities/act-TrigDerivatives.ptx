@@ -1,0 +1,201 @@
+<activity xml:id="act-TrigDerivatives">
+    <title>Derivatives of Trigonometric Functions</title>
+    <introduction>
+        <p>
+            Let's try to think through the derivatives of <m>y=\sin(\theta)</m> and <m>y=\cos(\theta)</m>. In this activity, we'll look at graphs and try to collect some information about the derivative functions. We'll be practicing out interpretations, so if you need to brush up on <xref ref="sec-InterpretingDerivatives"/> before we start, that's fine!
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+               The following animation includes both the graph of <m>y=\sin(x)</m>, and the line tangent to <m>y=\sin(x)</m>. Watch as the point where we build the tangent line moves along the graph, between <m>x=-2\pi</m> and <m>x=2\pi</m>.
+            </p>
+            <interactive desmos="2idvleovm7" width="70%" ratio="1:1"/>
+            <p>
+                Collect as much information about the derivative, <m>y'</m>, as you can. What do you know about it? What are some facts about the slopes of the tangent lines in this animation?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What kinds of values do the slopes take? Are there some values that these slopes will never be? Can you find any special points on this graph where you can actually tell what the slope is?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Fill in the following table as best as you can.
+            </p>
+            <table halign="center">
+                <title>Values of Sine and its Derivative</title>
+                <tabular>
+                <col halign="center"/><col width="40%"/><col width="40%"/>
+                    <row header="yes" bottom="medium">
+                        <cell><m>x</m></cell> 
+                        <cell><m>y=\sin(x)</m></cell>
+                        <cell><m>y'</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>-2\pi</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>-\frac{3\pi}{2}</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>-\pi</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>-\frac{\pi}{2}</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>0</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>\frac{\pi}{2}</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>\pi</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>\frac{3\pi}{2}</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row bottom="medium"> 
+                        <cell><m>2\pi</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's visualize these points. Consider the plotted points added to the graph from above.
+            </p>
+            <interactive desmos="k3blg3skqh" width="70%" ratio="1:1"/>
+            <p>
+                Do you recognize any curves that might connect these dots?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Can you imagine a function that oscillates smoothly between <m>-1</m> and <m>1</m>, but seems phase shifted from the sine function? A function that, when we evaluate it at 0, returns 1 (compared to <m>\sin(0)=0</m>)?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's repeat this process using the <m>y=\cos(x)</m> function instead.
+            </p>
+            <p>
+               The following animation includes both the graph of <m>y=\cos(x)</m>, and the line tangent to <m>y=\cos(x)</m>. Watch as the point where we build the tangent line moves along the graph, between <m>x=-2\pi</m> and <m>x=2\pi</m>.
+            </p>
+            <interactive desmos="xvy4dad2j0" width="70%" ratio="1:1"/>
+            <p>
+                Collect as much information about the derivative, <m>y'</m>, as you can. What do you know about it? What are some facts about the slopes of the tangent lines in this animation?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What kinds of values do the slopes take? Are there some values that these slopes will never be? Can you find any special points on this graph where you can actually tell what the slope is?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Fill in the following table as best as you can.
+            </p>
+            <table halign="center">
+                <title>Values of Cosine and its Derivative</title>
+                <tabular>
+                <col halign="center"/><col width="40%"/><col width="40%"/>
+                    <row header="yes" bottom="medium">
+                        <cell><m>x</m></cell> 
+                        <cell><m>y=\cos(x)</m></cell>
+                        <cell><m>y'</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>-2\pi</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>-\frac{3\pi}{2}</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>-\pi</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>-\frac{\pi}{2}</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>0</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>\frac{\pi}{2}</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>\pi</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell><m>\frac{3\pi}{2}</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row bottom="medium"> 
+                        <cell><m>2\pi</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's visualize these points. Consider the plotted points added to the graph from above.
+            </p>
+            <interactive desmos="67a9tmf4ge" width="70%" ratio="1:1"/>
+            <p>
+                Do you recognize any curves that might connect these dots?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Be careful with your guess here: it's tempting to guess that <m>y'=\sin(x)</m>, but it might be helpful to plot the points from the sine function alongside these ones to notice how <m>y'</m> is similar but different than the sine function.
+            </p>
+        </hint>
+    </task>
+</activity>

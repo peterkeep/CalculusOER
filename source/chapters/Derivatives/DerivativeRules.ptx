@@ -37,7 +37,7 @@
       </statement>
     </theorem>
     <p>
-      We have shown that this is true for <m>n=2,3,4,...</m>, but this is also true for <em>any</em> value of <m>n</m> (including non-integers and non-positives). We will prove this more formally later (in <xref ref="sec-LogarithmicDifferentiation"/>), and until then we will be free to use this result.
+      We have shown that this is true for <m>n=2,3,4,...</m>, but this is also true for <em>any</em> value of <m>n</m> (including <m>n=1</m>, non-integers, and non-positives). We will prove this more formally later (in <xref ref="sec-LogarithmicDifferentiation"/>), and until then we will be free to use this result.
     </p>
     <example>
       <introduction>
@@ -60,6 +60,96 @@
         </statement>
       </task>
     </example>
+    <p>
+      In this activity, we also found one other result.
+    </p>
+    <theorem xml:id="thm-DerivativeConstant">
+      <title>Derivative of a Constant Function</title>
+      <statement>
+        <p>
+          If <m>y=k</m> where <m>k</m> is some real number constant, then <m>y'=0</m>. Another way of saying this is:
+          <me>
+            \frac{d}{dx}\left(k\right)=0
+         </me>.
+        </p>
+      </statement>
+    </theorem>
+    
+    <xi:include href="./activities/act-TrigDerivatives.ptx" />
+    <theorem xml:id="thm-TrigDerivatives">
+      <title>Derivatives of the Sine and Cosine Functions</title>
+      <statement>
+        <p>
+          <me>
+            \dfrac{d}{d\theta}\left(\sin(\theta)\right) = \cos(\theta)
+          </me>
+          </p>
+          <p>
+          <me>
+            \dfrac{d}{d\theta}\left(\cos(\theta)\right) = -\sin(\theta)
+          </me>
+        </p>
+      </statement>
+      <proof>
+        <p>
+          Include this one! The circle one! It's good!
+        </p>
+      </proof>
+    </theorem>
+    <xi:include href="./activities/act-ExponentialDerivatives.ptx" />
+    <theorem xml:id="thm-ExponentialDerivative">
+      <title>Derivative of the Exponential Function</title>
+      <statement>
+        <p>
+          <me>
+            \frac{d}{dx}\left(e^x\right) = e^x
+          </me>
+        </p>
+      </statement>
+    </theorem>
+    
   </subsection>
+
+  <subsection xml:id="subsec-DerivativeProperties">
+    <title>Some Properties of Derivatives in General</title>
+    <theorem xml:id="thm-CombinationsOfDerivatives">
+      <statement>
+        <p>
+          If <m>f(x)</m> and <m>g(x)</m> are differentiable functions, then the following statements about their derivatives are true.
+          <ol>
+            <li>
+              <p>
+                <em>Sums:</em> The derivative of the sum of <m>f(x)</m> and <m>g(x)</m> is the sum of the derivatives of <m>f(x)</m> and <m>g(x)</m>:
+
+                <md>
+                  <mrow>  \frac{d}{dx} \left(f(x) + g(x)\right) \amp  = \left(\frac{d}{dx} f(x)\right) + \left(\frac{d}{dx} g(x)\right)</mrow>
+                  <mrow> \amp = f'(x) + g'(x)</mrow>
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>Differences:</em> The derivative of the difference of <m>f(x)</m> and <m>g(x)</m> is the difference of the derivatives of <m>f(x)</m> and <m>g(x)</m>:
+
+                <md>
+                  <mrow>  \frac{d}{dx} \left(f(x) - g(x)\right) \amp  = \left(\frac{d}{dx} f(x)\right) - \left(\frac{d}{dx} g(x)\right)</mrow>
+                  <mrow> \amp = f'(x) - g'(x)</mrow>
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>Coefficients:</em> If <m>k</m> is some real number coefficient, then:
+                 <md>
+                  <mrow>  \frac{d}{dx} \left(kf(x)\right) \amp  = k\left(\frac{d}{dx} f(x)\right) </mrow>
+                  <mrow> \amp = kf'(x)</mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </theorem>
+  </subsection> 
 
 </section>
