@@ -1,0 +1,98 @@
+<activity xml:id="act-DerivativesOfPowerFunctions">
+    <title>Derivatives of Power Functions</title>
+    <introduction>
+        <p>
+            We're going to do a bit of pattern recognition here, which means that we will need to differentiate several different power functions. For our reference, a power function (in general) is a function in the form <m>f(x)=a(x^n)</m> where <m>n</m> and <m>a</m> are real numbers, and <m>a\neq 0</m>.
+        </p>
+        <p>
+            Let's begin our focus on the power functions <m>x^2</m>, <m>x^3</m>, and <m>x^4</m>. We're going to use <xref ref="def-DerivativeFunction" text="type-global-title"/> a lot, so feel free to review it before we begin.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Find <m>\dfrac{d}{dx}\left(x^2\right)</m>. As a brief follow up, compare this to the derivative <m>j'(x)</m> that you found in <xref ref="act-ManySlopes" text="type-global-title"/>. Why are they the same? What does the difference, the <m>-4</m>, in the <m>j(x)</m> function do to the graph of it (compared to the graph of <m>x^2</m>) and why does this not impact the derivative?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Remember that the graph of <m>x^2-4</m> has the same shape as the graph of <m>x^2</m>, but has been shifted down by 4 units. Why does this vertical shift not change the value of the derivative at any <m>x</m>-value?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find <m>\dfrac{d}{dx}\left(x^3\right)</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Remember that <m>(x+\Delta x)^3 = (x+\Delta x)(x+\Delta x)(x+\Delta x)</m>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find <m>\dfrac{d}{dx}\left(x^4\right)</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Remember that <m>(x+\Delta x)^4 = (x+\Delta x)(x+\Delta x)(x+\Delta x)(x+\Delta x)</m>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Notice that in these derivative calculations, the main work is in multiplying <m>(x+\Delta x)^n</m>. Look back at the work done in all three of these derivative calculations and find some unifying steps to describe how you evaluate the limit/calculate the derivative <em>after</em> this tedious multiplication was finished. What steps did you do? Is it always the same thing?        
+            </p>
+            <p>
+                Another way of stating this is: if I told you that I knew what <m>(x+\Delta x)^5</m> was, could you give me some details on how the derivative limit would be finished?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Finish the following derivative calculation:
+                <md>
+                    <mrow>\frac{d}{dx}\left(x^5\right) \amp =\lim_{\Delta x\to 0} \left(\frac{(x+\Delta x)^5 - x^5}{\Delta x}\right) </mrow>
+                    <mrow> \amp = \lim_{\Delta x\to 0} \left(\frac{(x^5+5x^4\Delta x + 10x^3\Delta x^2 + 10x^2\Delta x^3 + 5 x\Delta x^4 + \Delta x^5)-x^5}{\Delta x}\right)</mrow>
+                    <mrow> \amp = \leadsto ...</mrow>
+                </md>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Make a conjecture about the derivative of a power function in general, <m>\frac{d}{dx}(x^n)</m>.   
+            </p>
+        </statement>
+    </task>
+    <conclusion>
+        <p>
+            Something to notice here is that the calculation in this limit is really dependent on knowing what <m>(x+\Delta x)^n</m> is. When <m>n</m> is an integer with <m>n\geq 2</m>, this really just translates to multiplication. If we can figure out how to multiply <m>(x+\Delta x)^n</m> in general, then this limit calculation will be pretty easy to do. We noticed that:
+            <ol>
+                <li>
+                    <p>
+                        The first term of that multiplication will combine with the subtraction of <m>x^n</m> in the numerator and subtract to 0.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The rest of the terms in the multiplication have at least one copy of <m>\Delta x</m>, and so we can factor out <m>\Delta x</m> and "cancel" it with the <m>\Delta x</m> in the denominator.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Once this has done, we've escaped the portion of the limit that was giving us the <m>\frac{0}{0}</m> indeterminate form, and so we can evaluate the limit as <m>\Delta x\to 0</m>. The result is just that whatever terms still have at least one remaining copy of <m>\Delta x</m> in it "go to" 0, and we're left with just the terms that do not have any copies of <m>\Delta x</m> in them.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </conclusion>
+</activity>

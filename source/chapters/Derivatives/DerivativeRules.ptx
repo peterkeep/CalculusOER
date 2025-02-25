@@ -3,6 +3,63 @@
 <section xml:id="sec-DerivativeRules" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Some Early Derivative Rules</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      We are going to break this topic into two parts:
+      <ol>
+        <li>
+          <p>
+            We will try to find some common patterns or connections between derivatives and specific functions. For instance, when we use <xref ref="def-DerivativeFunction" text="type-global-title"/> to build a derivative, are there patterns in the work of evaluating that limit that will allow us to get through the limit work quickly? Can we group some functions together based on how we might deal with the limit?
+          </p>
+        </li>
+        <li>
+          <p>
+            We will try to think about derivatives a bit more generally and show how we can build some basic properties to help us think about differentiating variations of the functions that we recognize.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-DerivativesOfCommonFunctions">
+    <title>Derivatives of Common Functions</title>
+    <xi:include href="./activities/act-DerivativesOfPowerFunctions.ptx" />
+    <p>
+      Triangle binomial theorem for coefficients.
+    </p>
+    <theorem xml:id="thm-PowerRuleDerivatives">
+      <title>Power Rule for Derivatives</title>
+      <statement>
+        <p>
+          <me>
+            \frac{d}{dx}(x^n) = nx^{n-1}
+          </me>
+        </p>
+      </statement>
+    </theorem>
+    <p>
+      We have shown that this is true for <m>n=2,3,4,...</m>, but this is also true for <em>any</em> value of <m>n</m> (including non-integers and non-positives). We will prove this more formally later (in <xref ref="sec-LogarithmicDifferentiation"/>), and until then we will be free to use this result.
+    </p>
+    <example>
+      <introduction>
+        <p>
+          Let's confirm this Power Rule for two examples that we are familiar with.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+           Find the derivative <m>\frac{d}{dx}\left(\sqrt{x}\right)</m> using the limit definition of the derivative function. Note that <m>\sqrt{x}= x^{1/2}</m> and <m>\frac{1}{2\sqrt{x}} = \frac{1}{2}x^{-1/2}</m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+           Find the derivative <m>\frac{d}{dx}\left(\frac{1}{x}\right)</m> using the limit definition of the derivative function. Note that <m>\frac{1}{x}= x^{-1}</m> and <m>-\frac{1}{x^2} = -x^{-2}</m>.
+          </p>
+        </statement>
+      </task>
+    </example>
+  </subsection>
 
 </section>
