@@ -193,10 +193,28 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntroDerivatives.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Derivatives</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-ThinkingAboutSlopes" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Thinking About Slopes</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-DefiningDerivative" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Defining the Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-ManySlopes" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Calculating a Bunch of Slopes at Once</span></a></div></li>
+</ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Interpreting Derivatives</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-InterpretingDerivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Interpreting Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsSlope" class="internal"><span class="codenumber">2.2.1</span> <span class="title">The Derivative is a Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsChange" class="internal"><span class="codenumber">2.2.2</span> <span class="title">The Derivative is a Rate of Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsLimit" class="internal"><span class="codenumber">2.2.3</span> <span class="title">The Derivative is a Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsFunction" class="internal"><span class="codenumber">2.2.4</span> <span class="title">The Derivative is a Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeNotation" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Notation for Derivatives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfCommonFunctions" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Derivatives of Common Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativeProperties" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Some Properties of Derivatives in General</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Product and Quotient Rules</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ChainRule.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The Chain Rule</span></a></div></li>
 </ul>
@@ -473,6 +491,10 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">or sometimes we write <span class="process-math">\(f(x) \to L\)</span> when <span class="process-math">\(x\to a^+\text{.}\)</span>
 </div>
+</div></article><article class="theorem theorem-like" id="thm-LimitExistence"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Mismatched Limits.</span>
+</h4>
+<div class="para" id="thm-LimitExistence-2-1">For a function <span class="process-math">\(f(x)\text{,}\)</span> if both <span class="process-math">\(\displaystyle\lim_{x\to a^-} f(x) \neq \lim_{x\to a^+} f(x)\text{,}\)</span> then we say that <span class="process-math">\(\displaystyle\lim_{x\to a} f(x)\)</span> does not exist. That is, there is no single real number <span class="process-math">\(L\)</span> that <span class="process-math">\(f(x)\)</span> is arbitrarily close to for <span class="process-math">\(x\)</span>-values that are sufficiently close to, but not equal to, <span class="process-math">\(x=a\text{.}\)</span>
 </div></article></section><section class="subsection" id="subsec-ApproximatingLimits"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="space"> </span><span class="title">Approximating Limits Using Our New Definition</span>
 </h3>
@@ -482,9 +504,9 @@ eBookConfig.enable_chatcodes =  false;
 <div class="introduction" id="act-ApproximatingLimitsGraphically-2"><div class="para" id="act-ApproximatingLimitsGraphically-2-1">For each of the following graphs of functions, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.</div></div>
 <article class="task exercise-like" id="act-ApproximatingLimitsGraphically-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="act-ApproximatingLimitsGraphically-3-1-1">Approximate <span class="process-math">\(\displaystyle \lim_{x\to 1} f(x)\)</span> using the graph of the function <span class="process-math">\(f(x)\)</span> below.</div> <figure class="figure figure-like" id="fig-ApproxLimit1"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/Limits/ApproxLimit1.png" class="contained" alt="A decreasing linear function with a single point removed from the line. At the x-value x=1, there is a hole on the line at y=1, and a point is located at (1,0)."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="act-ApproximatingLimitsGraphically-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="act-ApproximatingLimitsGraphically-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="act-ApproximatingLimitsGraphically-4-1-1">Approximate <span class="process-math">\(\displaystyle \lim_{x\to 2} g(x)\)</span> using the graph of the function <span class="process-math">\(g(x)\)</span> below.</div> <figure class="figure figure-like" id="fig-ApproxLimit2"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/Limits/ApproxLimit2.png" class="contained" alt="A piecewise defined function, where the graph is split up into two sections around x=2. For x-values less than (and equal) to 2, the function is decreasing and curves downward towards a filled in point at (2,1). Then the graph drops to an open point at (2,0), where the graph is linear and increasing afterwards from that hole."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="act-ApproximatingLimitsGraphically-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.6<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="act-ApproximatingLimitsGraphically-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para logical" id="act-ApproximatingLimitsGraphically-5-1-1">
 <div class="para">Approximate the following three limits using the graph of the function <span class="process-math">\(h(x)\)</span> below.</div>
 <ul class="disc" id="act-ApproximatingLimitsGraphically-5-1-1-2">
@@ -493,7 +515,7 @@ eBookConfig.enable_chatcodes =  false;
 <li id="act-ApproximatingLimitsGraphically-5-1-1-2-3"><div class="para" id="act-ApproximatingLimitsGraphically-5-1-1-2-3-1"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to 2} h(x)\)</span></div></li>
 </ul>
 </div> <figure class="figure figure-like" id="fig-ApproxLimit3"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/Limits/ApproxLimit3.png" class="contained" alt="A piecewise-defined fucntion with three distinct pieces. For x-values less than -1, the graph is increasing and curves towards an open hole at (-1,0). Then, at x=-1, we have a point at (-1,1). The graph is constant at y=1 until a hole at (0,1). After this hole, it decreases from (0,1) towards and through (3,0) linearly."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.6<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="act-ApproximatingLimitsGraphically-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.7<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="act-ApproximatingLimitsGraphically-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="act-ApproximatingLimitsGraphically-6-1-1">Why do we say these are "approximations" or "estimations" of the limits we’re interested in?</div></article><article class="task exercise-like" id="act-ApproximatingLimitsGraphically-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="act-ApproximatingLimitsGraphically-7-1-1">Are there any limit statements that you made that you are 100% confident in? Which ones?</div></article><article class="task exercise-like" id="act-ApproximatingLimitsGraphically-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="act-ApproximatingLimitsGraphically-8-1-1">Which limit statements are you least confident in? What about them makes them ones you aren’t confident in?</div></article><article class="task exercise-like" id="act-ApproximatingLimitsGraphically-9"><h5 class="heading"><span class="codenumber">(g)</span></h5>
@@ -502,7 +524,7 @@ eBookConfig.enable_chatcodes =  false;
 </h4>
 <div class="introduction" id="act-ApproximateLimitsNumerically-2"><div class="para" id="act-ApproximateLimitsNumerically-2-1">For each of the following tables of function values, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.</div></div>
 <article class="task exercise-like" id="act-ApproximateLimitsNumerically-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-ApproximateLimitsNumerically-3-1-1">Approximate <span class="process-math">\(\displaystyle \lim_{x\to 1} f(x)\)</span> using the table of values of <span class="process-math">\(f(x)\)</span> below.</div> <figure class="table table-like" id="act-ApproximateLimitsNumerically-3-1-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.7<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="act-ApproximateLimitsNumerically-3-1-1">Approximate <span class="process-math">\(\displaystyle \lim_{x\to 1} f(x)\)</span> using the table of values of <span class="process-math">\(f(x)\)</span> below.</div> <figure class="table table-like" id="act-ApproximateLimitsNumerically-3-1-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.8<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b2 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
 <td class="l m b2 r0 l0 t0 lines">0.5</td>
@@ -524,7 +546,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="l m b0 r0 l0 t0 lines">7.59</td>
 </tr>
 </table></div></figure></article><article class="task exercise-like" id="act-ApproximateLimitsNumerically-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-ApproximateLimitsNumerically-4-1-1">Approximate <span class="process-math">\(\displaystyle \lim_{x\to -3} g(x)\)</span> using the table of values of <span class="process-math">\(g(x)\)</span> below.</div> <figure class="table table-like" id="act-ApproximateLimitsNumerically-4-1-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.8<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="act-ApproximateLimitsNumerically-4-1-1">Approximate <span class="process-math">\(\displaystyle \lim_{x\to -3} g(x)\)</span> using the table of values of <span class="process-math">\(g(x)\)</span> below.</div> <figure class="table table-like" id="act-ApproximateLimitsNumerically-4-1-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.9<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b2 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
 <td class="l m b2 r0 l0 t0 lines">-3.5</td>
@@ -546,7 +568,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="l m b0 r0 l0 t0 lines">-4.65</td>
 </tr>
 </table></div></figure></article><article class="task exercise-like" id="act-ApproximateLimitsNumerically-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="act-ApproximateLimitsNumerically-5-1-1">Approximate <span class="process-math">\(\displaystyle \lim_{x\to \pi} h(x)\)</span> using the table of values of <span class="process-math">\(h(x)\)</span> below.</div> <figure class="table table-like" id="act-ApproximateLimitsNumerically-5-1-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.9<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="act-ApproximateLimitsNumerically-5-1-1">Approximate <span class="process-math">\(\displaystyle \lim_{x\to \pi} h(x)\)</span> using the table of values of <span class="process-math">\(h(x)\)</span> below.</div> <figure class="table table-like" id="act-ApproximateLimitsNumerically-5-1-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.10<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b2 r0 l0 t0 lines"><span class="process-math">\(x \)</span></td>
 <td class="l m b2 r0 l0 t0 lines">3.1</td>

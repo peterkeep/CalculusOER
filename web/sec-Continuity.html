@@ -193,10 +193,28 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntroDerivatives.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Derivatives</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-ThinkingAboutSlopes" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Thinking About Slopes</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-DefiningDerivative" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Defining the Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-ManySlopes" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Calculating a Bunch of Slopes at Once</span></a></div></li>
+</ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Interpreting Derivatives</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-InterpretingDerivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Interpreting Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsSlope" class="internal"><span class="codenumber">2.2.1</span> <span class="title">The Derivative is a Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsChange" class="internal"><span class="codenumber">2.2.2</span> <span class="title">The Derivative is a Rate of Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsLimit" class="internal"><span class="codenumber">2.2.3</span> <span class="title">The Derivative is a Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsFunction" class="internal"><span class="codenumber">2.2.4</span> <span class="title">The Derivative is a Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeNotation" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Notation for Derivatives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfCommonFunctions" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Derivatives of Common Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativeProperties" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Some Properties of Derivatives in General</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Product and Quotient Rules</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ChainRule.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The Chain Rule</span></a></div></li>
 </ul>
@@ -443,7 +461,7 @@ eBookConfig.enable_chatcodes =  false;
 </h4>
 <div class="para" id="thm-IVT-2-1">If <span class="process-math">\(f(x)\)</span> is a function that is continuous on <span class="process-math">\([a,b]\)</span> with <span class="process-math">\(f(a)\neq f(b)\)</span> and <span class="process-math">\(L\)</span> is any real number between <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(f(b)\)</span> (either <span class="process-math">\(f(a)\lt L \lt f(b)\)</span> or <span class="process-math">\(f(b) \lt L \lt f(a)\)</span>), then there exists some <span class="process-math">\(c\)</span> between <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> (<span class="process-math">\(a\lt c \lt b\)</span>) such that <span class="process-math">\(f(c)=L\text{.}\)</span>
 </div></article><aside class="aside aside-like" id="subsec-IntermediateValueTheorem-3"><div class="para" id="subsec-IntermediateValueTheorem-3-1">This theorem was stated as early as the 5th century BCE by Bryson of Heraclea. Back then, a really interesting problem was related to "squaring the circle." That is, given a circle with some measurable radius, can we construct a square with equal area? This is obviously true, in that we can just use a square with the side length <span class="process-math">\(r\sqrt{\pi}\text{.}\)</span> What we typically mean by "construct," though, is to create this square using only a compass and straightedge (a ruler without length markings) and only a finite number of steps. This was finally proven to be impossible in 1882, approximately 2300 years later.</div>
-<div class="para" id="subsec-IntermediateValueTheorem-3-2">Bryson of Heraclea knew that the square itself existed (even if he couldn’t construct it) because he was able to find a square with area less than a circle (by inscribing a square inside of the circle) and a square with area greater than a circle (where the circle is inscribed in the square). Since he posited that he could increase the size of the square in a continuous manner (without using those words), he claimed that a square with area equal to that of the circle must exist, since the area of the square passes through all values from the smaller area to the larger area.</div></aside></section></section></div>
+<div class="para" id="subsec-IntermediateValueTheorem-3-2">Bryson of Heraclea knew that the square itself existed (even if he couldn’t construct it) because he was able to find a circle with area less than the square (by inscribing a circle inside of the square) and a circle with area greater than the square (where the square is inscribed in the circle). Since he posited that he could increase the size of the circle in a continuous manner (without using those words), he claimed that a square with area equal to that of the circle must exist, since the area of the circle passes through all values from the smaller area to the larger area.</div></aside></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-SqueezeTheorem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Derivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

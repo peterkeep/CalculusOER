@@ -193,10 +193,28 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntroDerivatives.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Derivatives</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-ThinkingAboutSlopes" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Thinking About Slopes</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-DefiningDerivative" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Defining the Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-ManySlopes" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Calculating a Bunch of Slopes at Once</span></a></div></li>
+</ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Interpreting Derivatives</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-InterpretingDerivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Interpreting Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsSlope" class="internal"><span class="codenumber">2.2.1</span> <span class="title">The Derivative is a Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsChange" class="internal"><span class="codenumber">2.2.2</span> <span class="title">The Derivative is a Rate of Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsLimit" class="internal"><span class="codenumber">2.2.3</span> <span class="title">The Derivative is a Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsFunction" class="internal"><span class="codenumber">2.2.4</span> <span class="title">The Derivative is a Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeNotation" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Notation for Derivatives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfCommonFunctions" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Derivatives of Common Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativeProperties" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Some Properties of Derivatives in General</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Product and Quotient Rules</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ChainRule.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The Chain Rule</span></a></div></li>
 </ul>
@@ -402,7 +420,265 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-DerivativeRules"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.3</span><span class="space"> </span><span class="title">Some Early Derivative Rules</span>
 </h2>
-<div class="para" id="sec-DerivativeRules-2">Text of section.</div></section></div>
+<section class="introduction" id="sec-DerivativeRules-2"><div class="para logical" id="sec-DerivativeRules-2-1">
+<div class="para">We are going to break this topic into two parts:</div>
+<ol class="decimal" id="sec-DerivativeRules-2-1-1">
+<li id="sec-DerivativeRules-2-1-1-1"><div class="para" id="sec-DerivativeRules-2-1-1-1-1">We will try to find some common patterns or connections between derivatives and specific functions. For instance, when we use <a href="sec-IntroDerivatives.html#def-DerivativeFunction" class="xref" data-knowl="./knowl/xref/def-DerivativeFunction.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.2: The Derivative Function">Definition 2.1.2 The Derivative Function</a> to build a derivative, are there patterns in the work of evaluating that limit that will allow us to get through the limit work quickly? Can we group some functions together based on how we might deal with the limit?</div></li>
+<li id="sec-DerivativeRules-2-1-1-2"><div class="para" id="sec-DerivativeRules-2-1-1-2-1">We will try to think about derivatives a bit more generally and show how we can build some basic properties to help us think about differentiating variations of the functions that we recognize.</div></li>
+</ol>
+</div></section><section class="subsection" id="subsec-DerivativesOfCommonFunctions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="space"> </span><span class="title">Derivatives of Common Functions</span>
+</h3>
+<article class="activity project-like" id="act-DerivativesOfPowerFunctions"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Derivatives of Power Functions.</span>
+</h4>
+<div class="introduction" id="act-DerivativesOfPowerFunctions-2">
+<div class="para" id="act-DerivativesOfPowerFunctions-2-1">We’re going to do a bit of pattern recognition here, which means that we will need to differentiate several different power functions. For our reference, a power function (in general) is a function in the form <span class="process-math">\(f(x)=a(x^n)\)</span> where <span class="process-math">\(n\)</span> and <span class="process-math">\(a\)</span> are real numbers, and <span class="process-math">\(a\neq 0\text{.}\)</span>
+</div>
+<div class="para" id="act-DerivativesOfPowerFunctions-2-2">Let’s begin our focus on the power functions <span class="process-math">\(x^2\text{,}\)</span> <span class="process-math">\(x^3\text{,}\)</span> and <span class="process-math">\(x^4\text{.}\)</span> We’re going to use <a href="sec-IntroDerivatives.html#def-DerivativeFunction" class="xref" data-knowl="./knowl/xref/def-DerivativeFunction.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.2: The Derivative Function">Definition 2.1.2 The Derivative Function</a> a lot, so feel free to review it before we begin.</div>
+</div>
+<article class="task exercise-like" id="act-DerivativesOfPowerFunctions-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-DerivativesOfPowerFunctions-3-1-1">Find <span class="process-math">\(\dfrac{d}{dx}\left(x^2\right)\text{.}\)</span> As a brief follow up, compare this to the derivative <span class="process-math">\(j'(x)\)</span> that you found in <a href="sec-IntroDerivatives.html#act-ManySlopes" class="xref" data-knowl="./knowl/xref/act-ManySlopes.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 2.1.3: Calculating a Bunch of Slopes">Activity 2.1.3 Calculating a Bunch of Slopes</a>. Why are they the same? What does the difference, the <span class="process-math">\(-4\text{,}\)</span> in the <span class="process-math">\(j(x)\)</span> function do to the graph of it (compared to the graph of <span class="process-math">\(x^2\)</span>) and why does this not impact the derivative?</div>
+<div class="solutions"><details id="act-DerivativesOfPowerFunctions-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-DerivativesOfPowerFunctions-3-2-1">Remember that the graph of <span class="process-math">\(x^2-4\)</span> has the same shape as the graph of <span class="process-math">\(x^2\text{,}\)</span> but has been shifted down by 4 units. Why does this vertical shift not change the value of the derivative at any <span class="process-math">\(x\)</span>-value?</div></div></details></div></article><article class="task exercise-like" id="act-DerivativesOfPowerFunctions-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-DerivativesOfPowerFunctions-4-1-1">Find <span class="process-math">\(\dfrac{d}{dx}\left(x^3\right)\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-DerivativesOfPowerFunctions-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-DerivativesOfPowerFunctions-4-2-1">Remember that <span class="process-math">\((x+\Delta x)^3 = (x+\Delta x)(x+\Delta x)(x+\Delta x)\)</span>
+</div></div></details></div></article><article class="task exercise-like" id="act-DerivativesOfPowerFunctions-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-DerivativesOfPowerFunctions-5-1-1">Find <span class="process-math">\(\dfrac{d}{dx}\left(x^4\right)\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-DerivativesOfPowerFunctions-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-DerivativesOfPowerFunctions-5-2-1">Remember that <span class="process-math">\((x+\Delta x)^4 = (x+\Delta x)(x+\Delta x)(x+\Delta x)(x+\Delta x)\)</span>
+</div></div></details></div></article><article class="task exercise-like" id="act-DerivativesOfPowerFunctions-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-DerivativesOfPowerFunctions-6-1-1">Notice that in these derivative calculations, the main work is in multiplying <span class="process-math">\((x+\Delta x)^n\text{.}\)</span> Look back at the work done in all three of these derivative calculations and find some unifying steps to describe how you evaluate the limit/calculate the derivative <em class="emphasis">after</em> this tedious multiplication was finished. What steps did you do? Is it always the same thing?</div> <div class="para" id="act-DerivativesOfPowerFunctions-6-1-2">Another way of stating this is: if I told you that I knew what <span class="process-math">\((x+\Delta x)^5\)</span> was, could you give me some details on how the derivative limit would be finished?</div></article><article class="task exercise-like" id="act-DerivativesOfPowerFunctions-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para logical" id="act-DerivativesOfPowerFunctions-7-1-1">
+<div class="para">Finish the following derivative calculation:</div>
+<div class="displaymath process-math" id="act-DerivativesOfPowerFunctions-7-1-1-1">
+\begin{align*}
+\frac{d}{dx}\left(x^5\right) \amp =\lim_{\Delta x\to 0} \left(\frac{(x+\Delta x)^5 - x^5}{\Delta x}\right) \\
+\amp = \lim_{\Delta x\to 0} \left(\frac{(x^5+5x^4\Delta x + 10x^3\Delta x^2 + 10x^2\Delta x^3 + 5 x\Delta x^4 + \Delta x^5)-x^5}{\Delta x}\right)\\
+\amp = \leadsto ...
+\end{align*}
+</div>
+</div></article><article class="task exercise-like" id="act-DerivativesOfPowerFunctions-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-DerivativesOfPowerFunctions-8-1-1">Make a conjecture about the derivative of a power function in general, <span class="process-math">\(\frac{d}{dx}(x^n)\text{.}\)</span>
+</div></article><div class="conclusion" id="act-DerivativesOfPowerFunctions-9"><div class="para logical" id="act-DerivativesOfPowerFunctions-9-1">
+<div class="para">Something to notice here is that the calculation in this limit is really dependent on knowing what <span class="process-math">\((x+\Delta x)^n\)</span> is. When <span class="process-math">\(n\)</span> is an integer with <span class="process-math">\(n\geq 2\text{,}\)</span> this really just translates to multiplication. If we can figure out how to multiply <span class="process-math">\((x+\Delta x)^n\)</span> in general, then this limit calculation will be pretty easy to do. We noticed that:</div>
+<ol class="decimal" id="act-DerivativesOfPowerFunctions-9-1-5">
+<li id="act-DerivativesOfPowerFunctions-9-1-5-1"><div class="para" id="act-DerivativesOfPowerFunctions-9-1-5-1-1">The first term of that multiplication will combine with the subtraction of <span class="process-math">\(x^n\)</span> in the numerator and subtract to 0.</div></li>
+<li id="act-DerivativesOfPowerFunctions-9-1-5-2"><div class="para" id="act-DerivativesOfPowerFunctions-9-1-5-2-1">The rest of the terms in the multiplication have at least one copy of <span class="process-math">\(\Delta x\text{,}\)</span> and so we can factor out <span class="process-math">\(\Delta x\)</span> and "cancel" it with the <span class="process-math">\(\Delta x\)</span> in the denominator.</div></li>
+<li id="act-DerivativesOfPowerFunctions-9-1-5-3"><div class="para" id="act-DerivativesOfPowerFunctions-9-1-5-3-1">Once this has done, we’ve escaped the portion of the limit that was giving us the <span class="process-math">\(\frac{0}{0}\)</span> indeterminate form, and so we can evaluate the limit as <span class="process-math">\(\Delta x\to 0\text{.}\)</span> The result is just that whatever terms still have at least one remaining copy of <span class="process-math">\(\Delta x\)</span> in it "go to" 0, and we’re left with just the terms that do not have any copies of <span class="process-math">\(\Delta x\)</span> in them.</div></li>
+</ol>
+</div></div></article><div class="para" id="subsec-DerivativesOfCommonFunctions-3">Triangle binomial theorem for coefficients.</div>
+<article class="theorem theorem-like" id="thm-PowerRuleDerivatives"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Power Rule for Derivatives.</span>
+</h4>
+<div class="para logical" id="thm-PowerRuleDerivatives-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\frac{d}{dx}(x^n) = nx^{n-1}
+\end{equation*}
+</div></div></article><div class="para" id="subsec-DerivativesOfCommonFunctions-5">We have shown that this is true for <span class="process-math">\(n=2,3,4,...\text{,}\)</span> but this is also true for <em class="emphasis">any</em> value of <span class="process-math">\(n\)</span> (including <span class="process-math">\(n=1\text{,}\)</span> non-integers, and non-positives). We will prove this more formally later (in <a href="sec-LogarithmicDifferentiation.html" class="internal" title="Section 3.3: Logarithmic Differentiation">Section 3.3</a>), and until then we will be free to use this result.</div>
+<details id="subsec-DerivativesOfCommonFunctions-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-DerivativesOfCommonFunctions-6-1"><div class="para" id="subsec-DerivativesOfCommonFunctions-6-1-1">Let’s confirm this Power Rule for two examples that we are familiar with.</div></div>
+<article class="task exercise-like" id="subsec-DerivativesOfCommonFunctions-6-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-DerivativesOfCommonFunctions-6-2-1-1">Find the derivative <span class="process-math">\(\frac{d}{dx}\left(\sqrt{x}\right)\)</span> using the limit definition of the derivative function. Note that <span class="process-math">\(\sqrt{x}= x^{1/2}\)</span> and <span class="process-math">\(\frac{1}{2\sqrt{x}} = \frac{1}{2}x^{-1/2}\text{.}\)</span>
+</div></article><article class="task exercise-like" id="subsec-DerivativesOfCommonFunctions-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-DerivativesOfCommonFunctions-6-3-1-1">Find the derivative <span class="process-math">\(\frac{d}{dx}\left(\frac{1}{x}\right)\)</span> using the limit definition of the derivative function. Note that <span class="process-math">\(\frac{1}{x}= x^{-1}\)</span> and <span class="process-math">\(-\frac{1}{x^2} = -x^{-2}\text{.}\)</span>
+</div></article></article></details><div class="para" id="subsec-DerivativesOfCommonFunctions-7">In this activity, we also found one other result.</div>
+<article class="theorem theorem-like" id="thm-DerivativeConstant"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Derivative of a Constant Function.</span>
+</h4>
+<div class="para logical" id="thm-DerivativeConstant-2-1">
+<div class="para">If <span class="process-math">\(y=k\)</span> where <span class="process-math">\(k\)</span> is some real number constant, then <span class="process-math">\(y'=0\text{.}\)</span> Another way of saying this is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{d}{dx}\left(k\right)=0\text{.}
+\end{equation*}
+</div>
+</div></article><article class="activity project-like" id="act-TrigDerivatives"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Derivatives of Trigonometric Functions.</span>
+</h4>
+<div class="introduction" id="act-TrigDerivatives-2"><div class="para" id="act-TrigDerivatives-2-1">Let’s try to think through the derivatives of <span class="process-math">\(y=\sin(\theta)\)</span> and <span class="process-math">\(y=\cos(\theta)\text{.}\)</span> In this activity, we’ll look at graphs and try to collect some information about the derivative functions. We’ll be practicing out interpretations, so if you need to brush up on <a href="sec-InterpretingDerivatives.html" class="internal" title="Section 2.2: Interpreting Derivatives">Section 2.2</a> before we start, that’s fine!</div></div>
+<article class="task exercise-like" id="act-TrigDerivatives-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-TrigDerivatives-3-1-1">The following animation includes both the graph of <span class="process-math">\(y=\sin(x)\text{,}\)</span> and the line tangent to <span class="process-math">\(y=\sin(x)\text{.}\)</span> Watch as the point where we build the tangent line moves along the graph, between <span class="process-math">\(x=-2\pi\)</span> and <span class="process-math">\(x=2\pi\text{.}\)</span>
+</div> <iframe src="https://www.desmos.com/calculator/2idvleovm7" id="act-TrigDerivatives-3-1-2" width="420" height="420"></iframe> <div class="para" id="act-TrigDerivatives-3-1-3">Collect as much information about the derivative, <span class="process-math">\(y'\text{,}\)</span> as you can. What do you know about it? What are some facts about the slopes of the tangent lines in this animation?</div>
+<div class="solutions"><details id="act-TrigDerivatives-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-TrigDerivatives-3-2-1">What kinds of values do the slopes take? Are there some values that these slopes will never be? Can you find any special points on this graph where you can actually tell what the slope is?</div></div></details></div></article><article class="task exercise-like" id="act-TrigDerivatives-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-TrigDerivatives-4-1-1">Fill in the following table as best as you can.</div> <figure class="table table-like" id="act-TrigDerivatives-4-1-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.3.4<span class="period">.</span></span><span class="space"> </span>Values of Sine and its Derivative</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b2 r0 l0 t0 lines"><span class="process-math">\(x\)</span></th>
+<th scope="col" class="l m b2 r0 l0 t0 lines"><span class="process-math">\(y=\sin(x)\)</span></th>
+<th scope="col" class="l m b2 r0 l0 t0 lines"><span class="process-math">\(y'\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-2\pi\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-\frac{3\pi}{2}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-\pi\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-\frac{\pi}{2}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{\pi}{2}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\pi\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{3\pi}{2}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(2\pi\)</span></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure></article><article class="task exercise-like" id="act-TrigDerivatives-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-TrigDerivatives-5-1-1">Let’s visualize these points. Consider the plotted points added to the graph from above.</div> <iframe src="https://www.desmos.com/calculator/k3blg3skqh" id="act-TrigDerivatives-5-1-2" width="420" height="420"></iframe> <div class="para" id="act-TrigDerivatives-5-1-3">Do you recognize any curves that might connect these dots?</div>
+<div class="solutions"><details id="act-TrigDerivatives-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-TrigDerivatives-5-2-1">Can you imagine a function that oscillates smoothly between <span class="process-math">\(-1\)</span> and <span class="process-math">\(1\text{,}\)</span> but seems phase shifted from the sine function? A function that, when we evaluate it at 0, returns 1 (compared to <span class="process-math">\(\sin(0)=0\)</span>)?</div></div></details></div></article><article class="task exercise-like" id="act-TrigDerivatives-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-TrigDerivatives-6-1-1">Let’s repeat this process using the <span class="process-math">\(y=\cos(x)\)</span> function instead.</div> <div class="para" id="act-TrigDerivatives-6-1-2">The following animation includes both the graph of <span class="process-math">\(y=\cos(x)\text{,}\)</span> and the line tangent to <span class="process-math">\(y=\cos(x)\text{.}\)</span> Watch as the point where we build the tangent line moves along the graph, between <span class="process-math">\(x=-2\pi\)</span> and <span class="process-math">\(x=2\pi\text{.}\)</span>
+</div> <iframe src="https://www.desmos.com/calculator/xvy4dad2j0" id="act-TrigDerivatives-6-1-3" width="420" height="420"></iframe> <div class="para" id="act-TrigDerivatives-6-1-4">Collect as much information about the derivative, <span class="process-math">\(y'\text{,}\)</span> as you can. What do you know about it? What are some facts about the slopes of the tangent lines in this animation?</div>
+<div class="solutions"><details id="act-TrigDerivatives-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-TrigDerivatives-6-2-1">What kinds of values do the slopes take? Are there some values that these slopes will never be? Can you find any special points on this graph where you can actually tell what the slope is?</div></div></details></div></article><article class="task exercise-like" id="act-TrigDerivatives-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-TrigDerivatives-7-1-1">Fill in the following table as best as you can.</div> <figure class="table table-like" id="act-TrigDerivatives-7-1-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.3.5<span class="period">.</span></span><span class="space"> </span>Values of Cosine and its Derivative</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b2 r0 l0 t0 lines"><span class="process-math">\(x\)</span></th>
+<th scope="col" class="l m b2 r0 l0 t0 lines"><span class="process-math">\(y=\cos(x)\)</span></th>
+<th scope="col" class="l m b2 r0 l0 t0 lines"><span class="process-math">\(y'\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-2\pi\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-\frac{3\pi}{2}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-\pi\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-\frac{\pi}{2}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{\pi}{2}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\pi\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{3\pi}{2}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(2\pi\)</span></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure></article><article class="task exercise-like" id="act-TrigDerivatives-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-TrigDerivatives-8-1-1">Let’s visualize these points. Consider the plotted points added to the graph from above.</div> <iframe src="https://www.desmos.com/calculator/67a9tmf4ge" id="act-TrigDerivatives-8-1-2" width="420" height="420"></iframe> <div class="para" id="act-TrigDerivatives-8-1-3">Do you recognize any curves that might connect these dots?</div>
+<div class="solutions"><details id="act-TrigDerivatives-8-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-TrigDerivatives-8-2-1">Be careful with your guess here: it’s tempting to guess that <span class="process-math">\(y'=\sin(x)\text{,}\)</span> but it might be helpful to plot the points from the sine function alongside these ones to notice how <span class="process-math">\(y'\)</span> is similar but different than the sine function.</div></div></details></div></article></article><article class="theorem theorem-like" id="thm-TrigDerivatives"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Derivatives of the Sine and Cosine Functions.</span>
+</h4>
+<div class="para logical" id="thm-TrigDerivatives-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\dfrac{d}{d\theta}\left(\sin(\theta)\right) = \cos(\theta)
+\end{equation*}
+</div></div> <div class="para logical" id="thm-TrigDerivatives-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\dfrac{d}{d\theta}\left(\cos(\theta)\right) = -\sin(\theta)
+\end{equation*}
+</div></div></article><details id="thm-TrigDerivatives-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-TrigDerivatives-3-1">Include this one! The circle one! It’s good!</div></article></details><article class="activity project-like" id="act-ExponentialDerivatives"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Derivative of the Exponential Function.</span>
+</h4>
+<div class="introduction" id="act-ExponentialDerivatives-2"><div class="para" id="act-ExponentialDerivatives-2-1">Introduce <span class="process-math">\(y=e^x\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="act-ExponentialDerivatives-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-ExponentialDerivatives-3-1-1">Look at the slopes on the exponential function.</div></article></article><article class="theorem theorem-like" id="thm-ExponentialDerivative"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Derivative of the Exponential Function.</span>
+</h4>
+<div class="para logical" id="thm-ExponentialDerivative-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\frac{d}{dx}\left(e^x\right) = e^x
+\end{equation*}
+</div></div></article></section><section class="subsection" id="subsec-DerivativeProperties"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="space"> </span><span class="title">Some Properties of Derivatives in General</span>
+</h3>
+<article class="theorem theorem-like" id="thm-CombinationsOfDerivatives"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="thm-CombinationsOfDerivatives-1-1">
+<div class="para">If <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are differentiable functions, then the following statements about their derivatives are true.</div>
+<ol class="decimal" id="thm-CombinationsOfDerivatives-1-1-3">
+<li id="thm-CombinationsOfDerivatives-1-1-3-1"><div class="para logical" id="thm-CombinationsOfDerivatives-1-1-3-1-1">
+<div class="para">
+<em class="emphasis">Sums:</em> The derivative of the sum of <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> is the sum of the derivatives of <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="thm-CombinationsOfDerivatives-1-1-3-1-1-6">
+\begin{align*}
+\frac{d}{dx} \left(f(x) + g(x)\right) \amp  = \left(\frac{d}{dx} f(x)\right) + \left(\frac{d}{dx} g(x)\right)\\
+\amp = f'(x) + g'(x)
+\end{align*}
+</div>
+</div></li>
+<li id="thm-CombinationsOfDerivatives-1-1-3-2"><div class="para logical" id="thm-CombinationsOfDerivatives-1-1-3-2-1">
+<div class="para">
+<em class="emphasis">Differences:</em> The derivative of the difference of <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> is the difference of the derivatives of <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="thm-CombinationsOfDerivatives-1-1-3-2-1-6">
+\begin{align*}
+\frac{d}{dx} \left(f(x) - g(x)\right) \amp  = \left(\frac{d}{dx} f(x)\right) - \left(\frac{d}{dx} g(x)\right)\\
+\amp = f'(x) - g'(x)
+\end{align*}
+</div>
+</div></li>
+<li id="thm-CombinationsOfDerivatives-1-1-3-3"><div class="para logical" id="thm-CombinationsOfDerivatives-1-1-3-3-1">
+<div class="para">
+<em class="emphasis">Coefficients:</em> If <span class="process-math">\(k\)</span> is some real number coefficient, then:</div>
+<div class="displaymath process-math" id="thm-CombinationsOfDerivatives-1-1-3-3-1-3">
+\begin{align*}
+\frac{d}{dx} \left(kf(x)\right) \amp  = k\left(\frac{d}{dx} f(x)\right) \\
+\amp = kf'(x)
+\end{align*}
+</div>
+</div></li>
+</ol>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-InterpretingDerivatives.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-ProductQuotientRule.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
