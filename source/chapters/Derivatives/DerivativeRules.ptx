@@ -144,6 +144,7 @@
   <subsection xml:id="subsec-DerivativeProperties">
     <title>Some Properties of Derivatives in General</title>
     <theorem xml:id="thm-CombinationsOfDerivatives">
+      <title>Combinations of Derivatives</title>
       <statement>
         <p>
           If <m>f(x)</m> and <m>g(x)</m> are differentiable functions, then the following statements about their derivatives are true.
@@ -181,6 +182,31 @@
         </p>
       </statement>
     </theorem>
+    <example>
+      <title>Putting These Together</title>
+      <introduction>
+        <p>
+          Find the following derivatives:
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \ddx{4x^5 - \dfrac{5x}{2}+6\cos(x)-1}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow> \ddx{4x^5 - \dfrac{5x}{2}+6\cos(x)-1}\amp = \ddx{4x^5} - \ddx{\dfrac{5x}{2}} + \ddx{6\cos(x)} - \ddx{1} </mrow>
+              <mrow> \amp =4\ddx{x^5} - \dfrac{5}{2}\ddx{x} + 6\ddx{\cos(x)} - \ddx{1}</mrow>         
+              <mrow> \amp =4(5x^4) - \dfrac{5}{2}(1) + 6(-\sin(x)) - 0</mrow>
+              <mrow> \amp =20x^4 - \dfrac{5}{2} - 6\sin(x)</mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </example>
   </subsection> 
 
 </section>
