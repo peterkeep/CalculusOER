@@ -1,0 +1,121 @@
+<exercises xml:id="ex-AlgebraicManipulations">
+    <exercise>
+        <introduction>
+            <p>
+                Use polynomial division or some clever factoring to re-write and find the following indefinite integrals or evaluate the following definite integrals.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \left(\dfrac{x+4}{x-3}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \left(\dfrac{x^2+4}{x-4}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \left(\dfrac{t^2+t+6}{t^2+1}\right)\;dt</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint_{x=2}^{x=4}\left(\dfrac{x^3+1}{x-1}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint_{x=0}^{x=1} \left(\dfrac{x^4+1}{x^2+1}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise xml:id="problem-CompleteTheSquare">
+        <introduction>
+            <p>
+                Complete the square in order to find the following indefinite integrals.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint\left( \dfrac{1}{x^2-2x+10} \right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint\left( \dfrac{x}{x^2+4x+8} \right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \left( \dfrac{2x}{x^4+6x^2+10} \right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Find the following indefinite integrals.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint\left(\dfrac{1}{x^{-1}+1}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint\left(\dfrac{\sin(\theta)+\tan(\theta)}{\cos^2(\theta)}\right)\;d\theta</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint\left(\dfrac{1-x}{1-\sqrt{x}}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint\left(\dfrac{1}{1-\sin^2(\theta)}\right)\;d\theta</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint\left( \dfrac{x^{2/3}-x^3}{x^{1/4}} \right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint\left(\dfrac{4+x}{\sqrt{1-x^2}}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

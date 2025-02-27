@@ -23,8 +23,12 @@
     \newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
     \newcommand{\ddx}[1]{\frac{d}{dx}\left(#1\right)}
     \newcommand{\dd}[2]{\frac{d#1}{d#2}}
+    \newcommand{\Dd}[2]{\dfrac{d#1}{d#2}}
     \newcommand{\dydx}{\frac{dy}{dx}}
-    \newcommand{\blank}[1]{\underline{\hspace{#1}}}
+    \newcommand{\Dydx}{\dfrac{dy}{dx}}
+    \newcommand{\blank}[1]{\underline{\hspace{#1}}} 
+    \newcommand{\dint}{\displaystyle \int}
+
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->
@@ -38,6 +42,7 @@
 
   <!-- It is possible to rename elements: -->
   <rename element="algorithm" xml:lang="en-US">Strategy</rename>
+  <rename element="exercises" xml:lang="en-US">Practice Problems</rename>
 
   <!-- Specify the default type of cross reference: -->
   <!-- <cross-references text="type-global" /> -->

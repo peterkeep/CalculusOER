@@ -1,0 +1,188 @@
+<exercises xml:id="ex-ByParts">
+    <exercise>
+        <p>
+            Explain how we build the Integration by Parts formula, as well as what the purpose of this integration strategy is.
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            How do you choose options for <m>u</m> and <m>dv</m>? What are some good strategies to think about?
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Let's say that you make a choice for <m>u</m> and <m>dv</m> and begin working through the Integration by Parts strategy. How can you tell if you've made a poor choice for your parts? Can you <em>always</em> tell?
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Integrate the following.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint 3x\sin(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint 5xe^x\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint x^2e^{-x}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint x^2\ln(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint x^2\cos(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint x^3e^{-x}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint x\sin(x)\cos(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint e^x\sin(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \sin^{-1}(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \tan^{-1}(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Evaluate the following definite integrals.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint_{x=1}^{x=e} x\ln(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint_{x=0}^{x=\pi/4} x\cos(2x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint_{x=0}^{x=\ln(5)} xe^{x}\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                In this problem, we'll consider the integral <m>\dint \sin^2(x)\;dx</m>. We'll integrate this in two different ways!
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    We know that:
+                    <me>
+                        \dint \sin^2(x)\;dx = \dint \sin(x)\sin(x)\;dx
+                    </me>. 
+                    Use the Integration by Parts strategy, and especially note that you can solve for the integral (<xref ref="subsec-SolvingForIntegral" text="type-global-title"/>).
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    We can use a trigonometric identity to re-write the integral:
+                    <me>
+                        \sin^2(x) = \dfrac{1-\cos(2x)}{2}
+                    </me>.
+                    So we have:
+                    <me>
+                        \int \sin^2(x)\;dx = \int \frac{1}{2} - \frac{1}{2}\cos(2x)\;dx
+                    </me>.
+                    Use <m>u</m>-substitution.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Were your answers the same or different? Should they be the same? Why or why not? Are they connected somehow? 
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    They might be different, but they should only be different by at most a constant.
+                </p>
+            </hint>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For these next problems, we'll use <m>x=u^2</m> and <m>dx = 2u\;du</m> to substitute into the integral as written. Then use Integration by Parts.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \sin(\sqrt{x})\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint e^{\sqrt{x}}\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
