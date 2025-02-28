@@ -1,0 +1,66 @@
+<activity xml:id="act-MotivatingProductRule" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Thinking About Derivatives of Products</title>
+    <introduction>
+        <p>
+            Let's start with two quick facts:
+
+            <me>
+                \ddx{x^3} =3x^2 \text{ and } \ddx{\sin(x)}=\cos(x)
+            </me>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                What is <m>\Ddx{x^3+\sin(x)}</m>? What about <m>\Ddx{x^3-\sin(x)}</m>? 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Based on what you just explained, what is a reasonable assumption about what <m>\Ddx{x^3\sin(x)}</m> might be?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Does it seem reasonable that we could just multiply the derivatives together, and say that <m>\Ddx{x^3\sin(x)}</m> was the same thing as 
+                <me>
+                    \ddx{x^3}\cdot \ddx{\sin(x)}
+                </me>?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's just think about <m>\Ddx{x^3}</m> for a moment. What <em>is</em> <m>x^3</m>? Can you write this as a product? Call one of your functions <m>f(x)</m> and the other <m>g(x)</m>. You should have that <m>x^3 = f(x)g(x)</m> for whatever you used.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use your example to explain why, in general, <m>\Ddx{f(x)g(x)}\neq \Ddx{f(x)}\cdot\Ddx{g(x)}</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's show another way that we know this. Think about <m>\sin(x)</m>. We know two things:
+                <me>
+                    \sin(x) = (1)(\sin(x)) \text{ and } \ddx{\sin(x)}=\cos(x)
+                </me>.
+                What, though, is <m>\Ddx{1}\cdot\Ddx{\sin(x)}</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use all of this to reassure yourself that even though the derivative of a sum of functions is the sum of the derivatives of the functions, we will need to develop a better understanding of how the derivatives of products of functions work.
+            </p>
+        </statement>
+    </task>
+</activity>
