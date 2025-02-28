@@ -22,8 +22,8 @@
         <attractTo threshold="0.5"><point>(2,$$f(2))</point></attractTo>
       </constraints>
     </point>
-    <point name="xint" styleNumber="2" draggable="false" labelPosition="upperright">
-      ($b,0)
+    <point name="xint" styleNumber="2" labelPosition="upperright">
+      ($b,$b-$b)
        <label><m>($b, 0)</m></label>
     </point>
   <lineSegment endpoints="$xint ($xint.x, $afa.y)" styleNumber="6" labelPosition="upperleft">
