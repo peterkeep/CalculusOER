@@ -83,13 +83,40 @@ window.MathJax = {
 \definecolor{fillinmathshade}{gray}{0.9}
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<div style="width:600px; height:600px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet">
+<div style="width:540px; height:450px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet">
 <div class="doenetml-loading" style="text-align:center">
 <p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-                    </script>
+                    <!-- https://www.doenet.org/portfolioeditor/_nxt57ZgKCtTuIlPZToUs7/_uJHXa49f07w46Zl1zzTgh -->
+
+<p><em>Instructions:</em> Drag the point along the graph of the sine function and examine the tangent line at the point. Alternatively, input the <m>x</m>-value you'd like to use to construct the tangent line.</p>
+
+<p><m>x=</m><mathInput name="a" prefill="0"/></p>
+
+<setup>
+  <function name="f">sin(x)</function>
+  <derivative name="fPrime">$f</derivative>
+</setup>
+<graph xTickScaleFactor="pi" xmin="-6.5" xmax="6.5" ymin="-3" ymax="3" showNavigation="false" identicalAxisScales >
+    $f
+    <function name="g" styleNumber="2">$$fPrime($a)*(x-$a) + $$f($a)</function>
+    <point name="afa" styleNumber="1">($a,$$f($a))
+      <constraints>
+        <attractTo threshold="0.3"><point>(-2pi,$$f(-2pi))</point></attractTo>
+        <attractTo threshold="0.3"><point>(-3pi/2,$$f(-3pi/2))</point></attractTo>
+        <attractTo threshold="0.3"><point>(-pi,$$f(-pi))</point></attractTo>
+        <attractTo threshold="0.3"><point>(-pi/2,$$f(-pi/2))</point></attractTo>
+        <attractTo threshold="0.3"><point>(0,$$f(0))</point></attractTo>
+        <attractTo threshold="0.3"><point>(pi/2,$$f(pi/2))</point></attractTo>
+        <attractTo threshold="0.3"><point>(pi,$$f(pi))</point></attractTo>
+        <attractTo threshold="0.3"><point>(3pi/2,$$f(3pi/2))</point></attractTo>
+        <attractTo threshold="0.3"><point>(2pi,$$f(2pi))</point></attractTo>
+      </constraints>
+    </point>
+</graph>
+                </script>
 </div></div>
 </body>
 </html>
