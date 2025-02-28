@@ -1,4 +1,4 @@
-<activity xml:id="act-ExponentialDerivatives">
+<activity xml:id="act-ExponentialDerivatives" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Derivative of the Exponential Function</title>
     <introduction>
         <p>
@@ -8,9 +8,13 @@
     <task>
         <statement>
             <p>
-                The animation below includes both the graph of <m>y=e^x</m> and the line tangent to <m>y=e^x</m>. Watch as the point moves along the curve.
+                The plot below includes both the graph of <m>y=e^x</m> and the line tangent to <m>y=e^x</m>. Watch as the point moves along the curve.
             </p>
-            <interactive desmos="jxvdmhyrwf" width="60%" ratio="3:2" />
+            <interactive platform="doenetml" width="90%" aspect="1:1.2">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/TangentExponential-1.xml"/>
+                </slate>
+            </interactive>
             <p>
                 Collect as much information about the derivative, <m>y'</m>, as you can. What do you know about it? What are some facts about the slopes of the tangent lines in this animation?
             </p>
@@ -26,7 +30,11 @@
             <p>
                 There is a slightly hidden fact about slopes and tangent lines in this animation. In the following animation, we'll add (and label) one more point. Let's look at this again, this time noting the point at which this tangent line crosses the <m>x</m>-axis. This will make it easier to think about slopes!
             </p>
-            <interactive desmos="itojmhgmlx" width="60%" ratio="3:2" />
+            <interactive platform="doenetml" width="90%" aspect="1:1.2">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/TangentExponential-2.xml"/>
+                </slate>
+            </interactive>
             <p>
                 What information does this reveal about the slopes?
             </p>

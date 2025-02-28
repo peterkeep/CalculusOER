@@ -1,0 +1,23 @@
+<!-- https://www.doenet.org/portfolioeditor/_PoPaBbGRfhZr7Qaqrau4Z/_xCMOpog4e09xZoCWqFbOf -->
+
+<p><em>Instructions:</em> Drag the point along the graph of the sine function and examine the tangent line at the point. Alternatively, input the <m>x</m>-value you'd like to use to construct the tangent line.</p>
+
+<p><m>x=</m><mathInput name="a" prefill="0"/></p>
+
+<setup>
+  <function name="f">e^x</function>
+  <derivative name="fPrime">$f</derivative>
+</setup>
+<graph xmin="-3" xmax="3" ymin="-0.5" ymax="8" showNavigation="false" >
+    $f
+    <function name="g" styleNumber="2">$$fPrime($a)*(x-$a) + $$f($a)</function>
+    <point name="afa" styleNumber="1">($a,$$f($a))
+      <constraints>
+        <attractTo threshold="0.5"><point>(-2,$$f(-2))</point></attractTo>
+        <attractTo threshold="0.5"><point>(-1,$$f(-1))</point></attractTo>
+        <attractTo threshold="0.5"><point>(0,$$f(0))</point></attractTo>
+        <attractTo threshold="0.5"><point>(1,$$f(1))</point></attractTo>
+        <attractTo threshold="0.5"><point>(2,$$f(2))</point></attractTo>
+      </constraints>
+    </point>
+</graph>

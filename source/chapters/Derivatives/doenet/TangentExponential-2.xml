@@ -1,0 +1,35 @@
+<!-- https://www.doenet.org/portfolioeditor/_G3LJqgZWiVCWVbhw16nd5/_iiVnpDmtRxXgCfbLpKS3r -->
+
+<p><em>Instructions:</em> Drag the point along the graph of the exponential function and examine the tangent line at the point. Alternatively, input the <m>x</m>-value you'd like to use to construct the tangent line.</p>
+
+<p><m>x=</m><mathInput name="a" prefill="0"/></p>
+
+<setup>
+  <function name="f">e^x</function>
+  <derivative name="fPrime">$f</derivative>
+  <number name="b">$a-1</number>
+</setup>
+<graph xmin="-3" xmax="3" ymin="-1" ymax="8" showNavigation="false" >
+    $f
+    <function name="g" styleNumber="2">$$fPrime($a)*(x-$a) + $$f($a)</function>
+    <point name="afa" styleNumber="1" labelPosition="lowerright">($a,$$f($a))
+      <label><m>($a, e^{$a})</m></label>
+      <constraints>
+        <attractTo threshold="0.5"><point>(-2,$$f(-2))</point></attractTo>
+        <attractTo threshold="0.5"><point>(-1,$$f(-1))</point></attractTo>
+        <attractTo threshold="0.5"><point>(0,$$f(0))</point></attractTo>
+        <attractTo threshold="0.5"><point>(1,$$f(1))</point></attractTo>
+        <attractTo threshold="0.5"><point>(2,$$f(2))</point></attractTo>
+      </constraints>
+    </point>
+    <point name="xint" styleNumber="2" draggable="false" labelPosition="upperright">
+      ($b,0)
+       <label><m>($b, 0)</m></label>
+    </point>
+  <lineSegment endpoints="$xint ($xint.x, $afa.y)" styleNumber="6" labelPosition="upperleft">
+    <label><m>\Delta y = e^{$a}</m></label>
+  </lineSegment>
+  <lineSegment endpoints="$afa ($xint.x, $afa.y)" styleNumber="6" labelPosition="upperleft">
+    <label><m>\Delta x = 1</m></label>
+  </lineSegment>
+</graph>
