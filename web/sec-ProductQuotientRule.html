@@ -126,6 +126,7 @@ eBookConfig.enable_chatcodes =  false;
 <span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-DerivativeRules.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Derivatives.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-ChainRule.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
 \newcommand{\ddx}[1]{\frac{d}{dx}\left(#1\right)}
+\newcommand{\Ddx}[1]{\dfrac{d}{dx}\left(#1\right)}
 \newcommand{\dd}[2]{\frac{d#1}{d#2}}
 \newcommand{\Dd}[2]{\dfrac{d#1}{d#2}}
 \newcommand{\dydx}{\frac{dy}{dx}}
@@ -425,7 +426,59 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-ProductQuotientRule"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.4</span><span class="space"> </span><span class="title">The Product and Quotient Rules</span>
 </h2>
-<div class="para" id="sec-ProductQuotientRule-2">Text of section.</div>
+<section class="introduction" id="sec-ProductQuotientRule-2"><div class="para" id="sec-ProductQuotientRule-2-1">We saw in <a href="sec-DerivativeRules.html#thm-CombinationsOfDerivatives" class="xref" data-knowl="./knowl/xref/thm-CombinationsOfDerivatives.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.3.6: Combinations of Derivatives">Theorem 2.3.6 Combinations of Derivatives</a> that when we want to find the derivative of a sum or difference of functions, we can just find the derivatives of each function separately, and then combine the derivatives back together (by adding or subtracting). This, hopefully, is pretty intuitive: of course a slope of a sum of things is just the slopes of each thing added together!</div>
+<div class="para" id="sec-ProductQuotientRule-2-2">In this section, we want to think about derivatives of product and quotients of functions. What happens when we differentiate a function that is really just two functions multiplied together?</div></section><article class="activity project-like" id="act-MotivatingProductRule"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Thinking About Derivatives of Products.</span>
+</h3>
+<div class="introduction" id="act-MotivatingProductRule-2"><div class="para logical" id="act-MotivatingProductRule-2-1">
+<div class="para">Let’s start with two quick facts:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{x^3} =3x^2 \text{ and } \ddx{\sin(x)}=\cos(x)\text{.}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="act-MotivatingProductRule-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="act-MotivatingProductRule-3-1-1">What is <span class="process-math">\(\Ddx{x^3+\sin(x)}\text{?}\)</span> What about <span class="process-math">\(\Ddx{x^3-\sin(x)}\text{?}\)</span>
+</div></article><article class="task exercise-like" id="act-MotivatingProductRule-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-MotivatingProductRule-4-1-1">Based on what you just explained, what is a reasonable assumption about what <span class="process-math">\(\Ddx{x^3\sin(x)}\)</span> might be?</div>
+<div class="solutions"><details id="act-MotivatingProductRule-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-MotivatingProductRule-4-2-1">
+<div class="para">Does it seem reasonable that we could just multiply the derivatives together, and say that <span class="process-math">\(\Ddx{x^3\sin(x)}\)</span> was the same thing as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{x^3}\cdot \ddx{\sin(x)}\text{?}
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="task exercise-like" id="act-MotivatingProductRule-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="act-MotivatingProductRule-5-1-1">Let’s just think about <span class="process-math">\(\Ddx{x^3}\)</span> for a moment. What <em class="emphasis">is</em> <span class="process-math">\(x^3\text{?}\)</span> Can you write this as a product? Call one of your functions <span class="process-math">\(f(x)\)</span> and the other <span class="process-math">\(g(x)\text{.}\)</span> You should have that <span class="process-math">\(x^3 = f(x)g(x)\)</span> for whatever you used.</div></article><article class="task exercise-like" id="act-MotivatingProductRule-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="act-MotivatingProductRule-6-1-1">Use your example to explain why, in general, <span class="process-math">\(\Ddx{f(x)g(x)}\neq \Ddx{f(x)}\cdot\Ddx{g(x)}\text{.}\)</span>
+</div></article><article class="task exercise-like" id="act-MotivatingProductRule-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para logical" id="act-MotivatingProductRule-7-1-1">
+<div class="para">Let’s show another way that we know this. Think about <span class="process-math">\(\sin(x)\text{.}\)</span> We know two things:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sin(x) = (1)(\sin(x)) \text{ and } \ddx{\sin(x)}=\cos(x)\text{.}
+\end{equation*}
+</div>
+<div class="para">What, though, is <span class="process-math">\(\Ddx{1}\cdot\Ddx{\sin(x)}\text{?}\)</span>
+</div>
+</div></article><article class="task exercise-like" id="act-MotivatingProductRule-8"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="act-MotivatingProductRule-8-1-1">Use all of this to reassure yourself that even though the derivative of a sum of functions is the sum of the derivatives of the functions, we will need to develop a better understanding of how the derivatives of products of functions work.</div></article></article><div class="para" id="sec-ProductQuotientRule-4">A thing that I like to think about is this: if <span class="process-math">\(\Ddx{f(x)g(x)} = f'(x)g'(x)\text{,}\)</span> then every function’s derivative would be 0.</div>
+<div class="para" id="sec-ProductQuotientRule-5">In the example with the <span class="process-math">\(\sin(x)\)</span> function, we noticed that we could write the function as <span class="process-math">\((1)(\sin(x))\text{.}\)</span> This is true of every function!</div>
+<div class="para logical" id="sec-ProductQuotientRule-6">
+<div class="para">If <span class="process-math">\(\Ddx{f(x)g(x)} = f'(x)g'(x)\text{,}\)</span> then we could say that for any function <span class="process-math">\(f(x)\)</span> with a derivative <span class="process-math">\(f'(x)\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-ProductQuotientRule-6-4">
+\begin{align*}
+\ddx{f(x)} \amp = \ddx{1\cdot f(x)}\\
+\amp = \ddx{1}\ddx{f(x)}\\
+\amp = 0 \cdot f'(x)\\
+\amp =0\text{.}
+\end{align*}
+</div>
+<div class="para">This, obviously, can’t be true! We know of <em class="emphasis">tons</em> of functions that have non-zero slopes...<em class="emphasis">most</em> of them do!</div>
+</div>
+<div class="para" id="sec-ProductQuotientRule-7">So, we hopefully have some motivation for building a rule to that helps us think about derivatives of products of functions.</div>
 <article class="theorem theorem-like" id="thm-ProductRule"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">The Product Rule.</span>
 </h3>
