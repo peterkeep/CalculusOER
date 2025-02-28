@@ -1,0 +1,9 @@
+<p><em>Instructions:</em> Drag the point along the graph of the sine function and examine the tangent line at the point. Alternatively, input the <m>x</m>-value you'd like to use to construct the tangent line.</p>
+
+
+<p><m>x=</m><mathInput name="a" prefill="0"/></p>
+<graph xTickScaleFactor="pi" xmin="-6.5" xmax="6.5" ymin="-6.5" ymax="6.5">
+    <function name="f">sin(x)</function>
+    <function name="g" styleNumber="2">cos($a)*(x-$a) + sin($a)</function>
+    <point name="afa" styleNumber="1">($a,$$f($a))</point>
+</graph>

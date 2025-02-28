@@ -8,9 +8,16 @@
     <task>
         <statement>
             <p>
-               The following animation includes both the graph of <m>y=\sin(x)</m>, and the line tangent to <m>y=\sin(x)</m>. Watch as the point where we build the tangent line moves along the graph, between <m>x=-2\pi</m> and <m>x=2\pi</m>.
+               The following plot includes both the graph of <m>y=\sin(x)</m>, and the line tangent to <m>y=\sin(x)</m>. Watch as the point where we build the tangent line moves along the graph, between <m>x=-2\pi</m> and <m>x=2\pi</m>.
             </p>
-            <interactive desmos="2idvleovm7" width="70%" ratio="1:1"/>
+            <!-- <interactive desmos="2idvleovm7" width="70%" ratio="1:1"/> -->
+
+            <interactive platform="doenetml" width="100%" aspect="1:1">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/TangentSine.xml"/>
+                </slate>
+            </interactive>
+
             <p>
                 Collect as much information about the derivative, <m>y'</m>, as you can. What do you know about it? What are some facts about the slopes of the tangent lines in this animation?
             </p>
