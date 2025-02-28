@@ -1,0 +1,17 @@
+<!-- https://www.doenet.org/portfolioeditor/_HNVQ21NufxkhzhhvFIAXq/_IdEdlMJ3noECPUES6Zz7K -->
+
+<setup>
+  <function name="f">1/x^2</function>
+  <number name="a">1</number>
+  <function name="line" styleNumber="2">$guess</function>
+</setup>
+
+<graph xmin="-3" xmax="3" ymin="-1" ymax="3" showNavigation="false" identicalAxisScales >
+  $f
+  <point name="point">(2$a/$a,$$f(2))</point>
+  $line
+</graph>
+
+<p>What do you think the equation of the line tangent to <m>f(x)=\dfrac{1}{x^2}</m> at <m>x=2</m> is?</p>
+
+<p>Tangent Line: <m>y=</m><mathInput name="guess"></mathInput></p>

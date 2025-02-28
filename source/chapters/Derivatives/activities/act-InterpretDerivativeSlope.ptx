@@ -1,4 +1,4 @@
-<activity xml:id="act-InterpretDerivativeSlope">
+<activity xml:id="act-InterpretDerivativeSlope" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Interpreting the Derivative as a Slope</title>
     <introduction>
         <p>
@@ -15,16 +15,8 @@
     <task>
         <statement>
             <p>
-                Consider the graph of <m>f(x)</m>.
+                We want to plot the line that would be tangent to the graph of <m>f(x)</m> at <m>x=2</m>.
             </p>
-            <interactive desmos="vxgjelfgg4" width="60%" aspect="2:3" />
-            <p>
-                Sketch the line that would be tangent to the graph of <m>f(x)</m> at <m>x=2</m>.
-            </p>
-        </statement>
-    </task>
-    <task>
-        <statement>
             <p>
                 Remember that we can write the equation of a line in two ways:
                 <ul>
@@ -47,8 +39,14 @@
                 </ul>
             </p>
             <p>
-                Find the equation of the line tangent to <m>f(x)</m> at <m>x=2</m>. Add it to the desmos graph above to check your equation.
+                Find the equation of the line tangent to <m>f(x)</m> at <m>x=2</m>. Add it to the graph of <m>f(x)=\dfrac{1}{x^2}</m> below to check your equation.
             </p>
+            <interactive platform="doenetml" width="90%" aspect="1:1">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/InterpretSlope.xml"/>
+                </slate>
+            </interactive>
+            
         </statement>
     </task>
     <task>
