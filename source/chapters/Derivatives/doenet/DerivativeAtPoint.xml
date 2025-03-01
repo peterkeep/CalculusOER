@@ -1,0 +1,28 @@
+<!-- https://www.doenet.org/portfolioeditor/_hQlmfrAXcaILA6VMwDqno/_JhVQI15XpqiGqY6y0YnS3 -->
+
+
+<setup>
+  <function name="f">x*(x-2)*(x-9)/30+4</function>
+  <point name="point">(-$a/$a, $$f($a))</point>
+  <number name="a">-1</number>
+  <number name="b">9</number>
+  <point name="second" styleNumber="2">($b, $$f($b))</point>
+  <number name="slope">($second.y - $point.y)/($second.x - $point.x)</number>
+</setup>
+
+<p><em>Instructions:</em> Drag the red point to move it.</p>
+
+<graph xmin="-4" xmax="14" ymin="-4" ymax="8" identicalAxisScales>
+  $f
+  $point
+  $second
+  <line through="$point $second" styleNumber="2"/>
+  <lineSegment endpoints="$point ($second.x, $point.y)" styleNumber="6" labelPosition="lowerleft">
+    <label><m>\Delta x</m></label>
+  </lineSegment>
+  <lineSegment endpoints="($second.x, $point.y) $second" styleNumber="6" labelPosition="lowerright">
+    <label><m>\Delta y</m></label>
+  </lineSegment>
+</graph>
+
+<p>The current slope between $point and $second is: <me>\dfrac{\Delta y}{\Delta x} = $slope</me></p>

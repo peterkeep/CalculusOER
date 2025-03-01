@@ -2,7 +2,24 @@
     <title>Introduction to Derivatives</title>
     <introduction>
        <p>
-            We'll start this off by thinking about slopes.
+            We'll start this off by thinking about slopes. Before we begin, you should be able to answer the following questions:
+            <ul>
+                <li>
+                    <p>
+                        What <em>is</em> a slope? How could you describe it?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        How do you calculate the slope of a line between two points?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If we have a function <m>f(x)</m> and we pick two points on the curve of the function, what does the slope of a straight line connecting the two points tell us? What kind of behavior about <m>f(x)</m> does this slope describe?
+                    </p>
+                </li>
+            </ul>
        </p>
     </introduction>
     <subsection xml:id="subsec-DefiningDerivative">
@@ -26,6 +43,21 @@
                 </p>
             </statement>
         </definition>
+        <p>
+            We can investigate this definition visually. Consider the function <m>f(x)</m> plotted below, where we will look at the point <m>(-1, f(-1))</m>. In the definition of the limit, we'll let <m>a=-1</m>, and so consider:
+            <me>
+                \lim_{x\to-1}\left(\dfrac{f(x)-f(-1)}{x-(-1)}\right)
+            </me>.
+            Can you estimate the limit of the slope of the tangent line as <m>x\to -1</m>?
+        </p>
+            <interactive platform="doenetml" width="90%" aspect="1.1:1">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="./doenet/DerivativeAtPoint.xml"/>
+            </slate>
+        </interactive>
+        <p>
+            Does it look like the limit of the slope between <m>(-1,f(-1))</m> and <m>(x,f(x))</m> exists as <m>x\to -1</m>? What do you think it is?
+        </p>
     </subsection>
     <subsection xml:id="subsec-ManySlopes">
         <title>Calculating a Bunch of Slopes at Once</title>
