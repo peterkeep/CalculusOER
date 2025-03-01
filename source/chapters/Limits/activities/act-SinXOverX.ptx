@@ -1,4 +1,4 @@
-<activity xml:id="act-SinXOverX">
+<activity xml:id="act-SinXOverX" xmlns:xi="http://www.w3.org/2001/XInclude">
     <introduction>
       <p>
         Let's consider a new limit:
@@ -59,17 +59,19 @@
     <task>
       <statement>
         <p>
-          In the following graph, use the slider for <m>a</m> to change the angle of the point and compare the arc length and the height. What happens when the angle is close to 0? You will probably have to zoom in!
+          Let's visualize our limit, then, by comparing the lengths of the arc and the height of the point as <m>\theta\to 0</m>. 
         </p>
-        <p>
-            <interactive desmos="gdaxaqbxxq" width="70%" aspect="2:3" /> 
-        </p>
+        <interactive platform="doenetml" width="90%" aspect="2:3">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/sinXoverX.xml"/>
+            </slate>
+        </interactive>
       </statement>
     </task>
     <task>
       <statement>
         <p>
-          Explain to yourself, until you are absolutely certain, why the two lengths <em>must</em> be the same in the limit as <m>\theta\to 0</m>. What does this mean about <m>\displaystyle \lim_{\theta\to 0}\frac{\sin(\theta)}{0} </m>?
+          Explain to yourself, until you are absolutely certain, why the two lengths <em>must</em> be the same in the limit as <m>\theta\to 0</m>. What does this mean about <m>\displaystyle \lim_{\theta\to 0}\frac{\sin(\theta)}{\theta} </m>?
         </p>
       </statement>
     </task>

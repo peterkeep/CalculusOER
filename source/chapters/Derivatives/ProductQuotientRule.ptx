@@ -2,7 +2,6 @@
 
 <section xml:id="sec-ProductQuotientRule" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Product and Quotient Rules</title>
-
   <introduction>
     <p>
       We saw in <xref ref="thm-CombinationsOfDerivatives" text="type-global-title"/> that when we want to find the derivative of a sum or difference of functions, we can just find the derivatives of each function separately, and then combine the derivatives back together (by adding or subtracting). This, hopefully, is pretty intuitive: of course a slope of a sum of things is just the slopes of each thing added together!
@@ -10,28 +9,30 @@
     <p>
       In this section, we want to think about derivatives of product and quotients of functions. What happens when we differentiate a function that is really just two functions multiplied together?
     </p>
-  </introduction>
-  <xi:include href="./activities/act-MotivatingProductRule.ptx" />
-  <p>
-            A thing that I like to think about is this: if <m>\Ddx{f(x)g(x)} = f'(x)g'(x)</m>, then every function's derivative would be 0.
-        </p>
-        <p>
-            In the example with the <m>\sin(x)</m> function, we noticed that we could write the function as <m>(1)(\sin(x))</m>. This is true of every function!
-        </p>
-        <p>
-            If <m>\Ddx{f(x)g(x)} = f'(x)g'(x)</m>, then we could say that for any function <m>f(x)</m> with a derivative <m>f'(x)</m>:
-            <md>
-                <mrow>\ddx{f(x)} \amp = \ddx{1\cdot f(x)}</mrow>
-                <mrow> \amp = \ddx{1}\ddx{f(x)}</mrow>
-                <mrow> \amp = 0 \cdot f'(x)</mrow>
-                <mrow> \amp =0</mrow>
-            </md>.
 
-            This, obviously, can't be true! We know of <em>tons</em> of functions that have non-zero slopes...<em>most</em> of them do! 
-        </p>
-        <p>
-          So, we hopefully have some motivation for building a rule to that helps us think about derivatives of products of functions. 
-        </p>
+    <xi:include href="./activities/act-MotivatingProductRule.ptx" />
+    <p>
+        A thing that I like to think about is this: if <m>\Ddx{f(x)g(x)} = f'(x)g'(x)</m>, then every function's derivative would be 0.
+    </p>
+    <p>
+        In the example with the <m>\sin(x)</m> function, we noticed that we could write the function as <m>(1)(\sin(x))</m>. This is true of every function!
+    </p>
+    <p>
+        If <m>\Ddx{f(x)g(x)} = f'(x)g'(x)</m>, then we could say that for any function <m>f(x)</m> with a derivative <m>f'(x)</m>:
+        <md>
+            <mrow>\ddx{f(x)} \amp = \ddx{1\cdot f(x)}</mrow>
+            <mrow> \amp = \ddx{1}\ddx{f(x)}</mrow>
+            <mrow> \amp = 0 \cdot f'(x)</mrow>
+            <mrow> \amp =0</mrow>
+        </md>.
+
+        This, obviously, can't be true! We know of <em>tons</em> of functions that have non-zero slopes...<em>most</em> of them do! 
+    </p>
+    <p>
+      So, we hopefully have some motivation for building a rule to that helps us think about derivatives of products of functions. 
+    </p>
+  </introduction>
+  
   <subsection xml:id="subsec-ProductRule">
     <title>The Product Rule</title>
       <theorem xml:id="thm-ProductRule">

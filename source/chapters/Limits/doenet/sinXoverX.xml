@@ -1,0 +1,31 @@
+<!-- https://www.doenet.org/portfolioeditor/_JNDw9vGpTxepIIM7gSmjq/_HD34aRwKMmB4PV67f1Y8S -->
+
+<setup>
+  <circle name="circle" styleNumber="1" draggable="false"></circle>
+  <function name="f">-sqrt(1-x^2)</function>
+  <function name="g" domain="[-1,cos($a)]">sqrt(1-x^2)</function>
+  <point name="point" styleNumber="1">(cos($a), sin($a))</point>
+  <function name="arc" styleNumber="3" domain="[cos($a),1]" labelPosition="left">
+    sqrt(1-x^2)
+    <label><m>\theta</m></label>
+  </function>
+</setup>
+
+<p><em>Instructions:</em> Use the slider to change the angle pictured (alternatively, you can type in a specific angle if you'd like). As <m>\theta\to 0</m>, you might need to zoom in. Compare the lengths of the orange arc defined by the angle (the arc is <m>\theta</m> long) and the red line measuring the vertical component of the point on the circle (the height is <m>\sin(\theta)</m>).</p>
+
+<slider from="0.001" to="pi/4" name="a" step="0.001" initialValue="pi/4" >
+  <label><m>\theta</m></label>
+</slider>
+
+<p><m>\theta = </m><mathInput name="angle" bindValueTo="$a"/></p>
+
+<graph xmin="-1.1" xmax="1.1" ymin="-1.1" ymax="1.1">
+  $f
+  $g
+  $point
+  $arc
+  <lineSegment name="height" endpoints="($point.x, $a-$a) $point" styleNumber="2" labelPosition="lowerleft">
+    <label><m>\sin(\theta)</m></label>
+  </lineSegment>
+  <lineSegment endpoints="($a-$a, $a-$a) $point" styleNumber="5"/>
+</graph>
