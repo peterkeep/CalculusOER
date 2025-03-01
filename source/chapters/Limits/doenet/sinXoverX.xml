@@ -11,7 +11,7 @@
   </function>
 </setup>
 
-<p><em>Instructions:</em> Use the slider to change the angle pictured (alternatively, you can type in a specific angle if you'd like). As <m>\theta\to 0</m>, you might need to zoom in. Compare the lengths of the orange arc defined by the angle (the arc is <m>\theta</m> long) and the red line measuring the vertical component of the point on the circle (the height is <m>\sin(\theta)</m>).</p>
+<p><em>Instructions:</em> Use the slider to change the angle pictured (alternatively, you can type in a specific angle if you'd like). As <m>\theta\to 0</m>, you might need to zoom in. Compare the lengths of the orange arc defined by the angle (the length is <m>\theta</m>) and the red line measuring the vertical component of the point on the circle (the height is <m>\sin(\theta)</m>).</p>
 
 <slider from="0.001" to="pi/4" name="a" step="0.001" initialValue="pi/4" >
   <label><m>\theta</m></label>
