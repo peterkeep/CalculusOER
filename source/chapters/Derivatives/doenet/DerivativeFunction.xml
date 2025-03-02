@@ -1,0 +1,35 @@
+<!-- https://www.doenet.org/portfolioeditor/_S6mAUZ4VhT1ZCW7AEI4wP/_0r4h3t3a1PPikR9aaBs1z -->
+
+<setup>
+  <function name="f">x*(x-2)*(x-9)/30+4</function>
+  <point name="point">($a, $$f($a))</point>
+  <number name="a">-1</number>
+  <number name="b">$a+$delta</number>
+  <point name="second" styleNumber="2">($b, $$f($b))</point>
+  <number name="slope">($second.y - $point.y)/($second.x - $point.x)</number>
+</setup>
+
+<p><em>Instructions:</em> Drag the blue point to move it. Use the slider to change the size of <m>\Delta x</m>. The values of <m>\Delta y = f(x+\Delta x)-f(x)</m> and <m>\Delta x</m> are marked on each axis in orange.</p>
+
+<slider name="delta" from="-3" to="10" step="0.001" initialValue="10">
+  <label><m>\Delta x</m></label>
+</slider>
+
+<graph xmin="-6" xmax="12" ymin="-4" ymax="8" identicalAxisScales>
+  $f
+  $point
+  $second
+  <line through="$point $second" styleNumber="2"/>
+  <lineSegment endpoints="$point ($point.x, $point.y-$point.y)" styleNumber="6"/>
+  <lineSegment endpoints="$point ($point.y-$point.y, $point.y)" styleNumber="6"/>
+  <lineSegment endpoints="($second.x,$point.y-$point.y) $second" styleNumber="6"/>
+  <lineSegment endpoints="($point.y-$point.y, $second.y) $second" styleNumber="6"/>
+  <lineSegment endpoints="($point.x, $point.y-$point.y) ($second.x, $point.y-$point.y)" labelPosition="upperleft" styleNumber="3">
+    <label><m>\Delta x</m></label>
+  </lineSegment>
+  <lineSegment endpoints="($point.y-$point.y, $point.y) ($point.y-$point.y, $second.y)" labelPosition="upperleft" styleNumber="3">
+    <label><m>f(x+\Delta x)-f(x)</m></label>
+  </lineSegment>
+</graph>
+
+<p>The current slope between $point and $second is: <me>\dfrac{f(x+\Delta x) - f(x)}{\Delta x} = $slope</me>.</p>

@@ -1,13 +1,11 @@
 <!-- https://www.doenet.org/portfolioeditor/_JNDw9vGpTxepIIM7gSmjq/_HD34aRwKMmB4PV67f1Y8S -->
 
 <setup>
-  <circle name="circle" styleNumber="1" draggable="false"></circle>
   <function name="f">-sqrt(1-x^2)</function>
   <function name="g" domain="[-1,cos($a)]">sqrt(1-x^2)</function>
   <point name="point" styleNumber="1">(cos($a), sin($a))</point>
-  <function name="arc" styleNumber="3" domain="[cos($a),1]" labelPosition="left">
+  <function name="arc" styleNumber="3" domain="[cos($a),1]">
     sqrt(1-x^2)
-    <label><m>\theta</m></label>
   </function>
 </setup>
 
@@ -24,6 +22,7 @@
   $g
   $point
   $arc
+  <label anchor="(1.05cos($a/2), sin($a/2))" draggable="false"><m>\theta</m></label>
   <lineSegment name="height" endpoints="($point.x, $a-$a) $point" styleNumber="2" labelPosition="lowerleft">
     <label><m>\sin(\theta)</m></label>
   </lineSegment>

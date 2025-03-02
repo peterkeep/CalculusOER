@@ -183,6 +183,14 @@
         </p>
       </statement>
     </theorem>
+    <p>
+      We can think about each of these properties through the lense of how combining these functions impacts the slopes. For instance, if we wanted to visualize the property about coefficients (that <m>\ddx{kf(x)}=k\ddx{f(x)}</m>), we can visualize this coefficient as a scaling factor.
+    </p>
+    <interactive platform="doenetml" width="90%" aspect="1:1.1">
+        <slate surface="doenetml">
+            <xi:include parse="text" href="./doenet/ScaledDerivatives.xml"/>
+        </slate>
+    </interactive>
     <example>
       <title>Putting These Together</title>
       <introduction>

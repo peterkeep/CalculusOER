@@ -50,7 +50,7 @@
             </me>.
             Can you estimate the limit of the slope of the tangent line as <m>x\to -1</m>?
         </p>
-            <interactive platform="doenetml" width="90%" aspect="1.1:1">
+        <interactive platform="doenetml" width="90%" aspect="1.1:1">
             <slate surface="doenetml">
                 <xi:include parse="text" href="./doenet/DerivativeAtPoint.xml"/>
             </slate>
@@ -74,5 +74,16 @@
                 </p>
             </statement>
         </definition>
+        <p>
+            This definition feels pretty different, but we can hopefully notice that this is really just calculating a slope. Notice, in the following plot, that there is a significant difference. In the visualization of the <xref ref="def-DerivativeAtPoint" text="title"/>, the first point was fixed into place and the second point was the one that we moved and changed. It was the one with the variable <m>x</m>-value.
+        </p>
+        <p>
+            Notice in the following visualization that the <em>first</em> point is the one that is moveable while the <em>second</em> point is defined based on the first one (and the horizontal difference between the points, <m>\Delta x</m>). This means that we don't need to define one specific point, and can find the slope of the line tangent to <m>f(x)</m> at some changing <m>x</m>-value.
+        </p>
+        <interactive platform="doenetml" width="90%" aspect="1:1.25">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="./doenet/DerivativeFunction.xml"/>
+            </slate>
+        </interactive>
     </subsection>
 </section>

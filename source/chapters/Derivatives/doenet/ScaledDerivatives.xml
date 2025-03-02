@@ -1,0 +1,53 @@
+<!-- https://www.doenet.org/portfolioeditor/_AO2VDBm8vhWmK8O6BG83t/_peFDFQgX2wNbL5XtgbvgS -->
+
+<setup>
+  <function name="f">x*(x-2)*(x-9)/30+4</function>
+  <function name="fbase" styleNumber="6">$f</function>
+  <derivative name="dfdx">$f</derivative>
+  <line name="tan" slope="$$dfdx($a)" through="$point" styleNumber="2"/>
+  <number name="a">-1</number>
+  <point name="point">($a, $$f($a))</point>
+  <point name="pointbase" styleNumber="6">($a, $$fbase($a))</point>
+  <function name="g" styleNumber="3">$k$f</function>
+  <point styleNumber="3" name="kpoint">($a, $$g($a))</point>
+  <derivative name="dgdx">$g</derivative>
+  <line name="ktan" slope="$$dgdx($a)" through="$kpoint" styleNumber="2"/>
+</setup>
+
+<p><em>Instructions:</em> The function <m>f(x)</m> is graphed on the left. On the right is a scaled function, <m>g(x) = kf(x)</m>. Change the scaling factor, <m>k</m>, and see how the graph of <m>g(x)</m> changes. Then, find the corresponding change in the slope of the line tangent at the point.</p>
+<slider name="k" from="-2" to="4" step="0.001" initialValue="1" labelIsName/>
+
+<sideBySide>
+  <p><me>\text{Graph of }f(x)</me></p>
+
+  <p><me>\text{Graph of }g(x)=$k\cdot f(x)</me></p>
+</sideBySide>
+
+<sideBySide>
+  <graph showBorder="false" showNavigation="false" displayXAxisTickLabels="false" displayYAxisTickLabels="false">
+    $f
+    $point
+    $tan
+    <lineSegment endpoints="$point ($point.x-2, $point.y)" styleNumber="6" labelPosition="upperright">
+      <label><m>\Delta x</m></label>
+    </lineSegment>
+    <lineSegment endpoints="($point.x-2, $point.y-2*$tan.slope) ($point.x-2, $point.y)" styleNumber="6" labelPosition="lowerleft">
+      <label><m>\Delta y</m></label>
+    </lineSegment>
+  </graph>
+
+  <graph showBorder="false" showNavigation="true" displayXAxisTickLabels="false" displayYAxisTickLabels="false">
+    $fbase
+    $pointbase
+    $g
+    $kpoint
+    $ktan
+    <lineSegment endpoints="$kpoint ($kpoint.x-2, $kpoint.y)" styleNumber="6" labelPosition="upperright">
+      <label><m>\Delta x</m></label>
+    </lineSegment>
+    <lineSegment endpoints="($kpoint.x-2, $kpoint.y-2*$ktan.slope) ($kpoint.x-2, $kpoint.y)" styleNumber="6" labelPosition="lowerleft">
+      <label><m>($k)(\Delta y)</m></label>
+    </lineSegment>
+  </graph>
+  
+</sideBySide>
