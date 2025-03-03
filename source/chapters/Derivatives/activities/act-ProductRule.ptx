@@ -1,0 +1,89 @@
+<activity xml:id="act-ProductRule" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Building a Product Rule</title>
+    <introduction>
+        <p>
+            Let's investigate how we might differentiate the product of two functions:
+            <me>
+                \ddx{f(x)g(x)}
+            </me>.
+            We'll use an area model for multiplication here: we can consider a rectangle where the side lengths are functions <m>f(x)</m> and <m>g(x)</m> that change for different values of <m>x</m>. Maybe <m>x</m> is representative of some type of time component, and the side lengths change size based on time, but it could be anything.
+        </p>
+        <p>
+            If we want to think about <m>\ddx{f(x)g(x)}</m>, then we're really considering the change in area of the rectangle.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Find the area of the two rectangles. The second rectangle is just one where the input variable for the side length has changed by some amount, leading to a different side length.    
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Write out a way of calculating the difference in these areas.       
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's try to calculate this difference in a second way: by finding the actual area of the region that is new in the second rectangle.
+            </p>
+            <p>
+                In order to do this, we've broken the region up into three pieces. Calculate the areas of the three pieces. Use this to fill in the following equation:
+                <me>
+                    f(x+\Delta x)g(x+\Delta x) - f(x)g(x) = <fillin characters="20" />
+                </me>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                We do not want to calculate the total change in area: a derivative is a <em>rate of change</em>, so in order to think about the derivative we need to divide by the change in input, <m>\Delta x</m>.
+            </p>
+            <p>
+                We'll also want to think about this derivative as an <em>instantaneous</em> rate of change, meaning we will consider a limit as <m>\Delta x \to 0</m>. Fill in the following:
+                <md>
+                    <mrow> \ddx{f(x)g(x)} \amp \lim_{\Delta x \to 0} \left( \frac{f(x+\Delta x)g(x+\Delta x) - f(x)g(x)}{\Delta x} \right)</mrow>
+                    <mrow> \amp = \lim_{\Delta x\to 0} \left(\frac{<fillin characters="20" />}{\Delta x}\right)</mrow>
+                </md>
+                We can split this fraction up into three fractions:
+                <md>
+                    <mrow> \ddx{f(x)g(x)} \amp = \lim_{\Delta x \to 0} \left(\frac{<fillin characters="10" />}{\Delta x}\right)</mrow>
+                    <mrow> \amp  + \lim_{\Delta x \to 0} \left(\frac{<fillin characters="10" />}{\Delta x}\right) </mrow>
+                    <mrow> \amp + \lim_{\Delta x \to 0} \left(\frac{<fillin characters="10" />}{\Delta x}\right) </mrow>
+                </md>
+                
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                In any limit with <m>f(x)</m> or <m>g(x)</m> in it, notice that we can factor part out of the limit, since these functions do not rely on <m>\Delta x</m>, the part that changes in the limit. Factor these out.
+            </p>
+            <p>
+                In the third limit, factor out either <m>\displaystyle \lim_{\Delta x\to 0} \left(f(x+\Delta x) - f(x)\right)</m> or <m>\displaystyle \lim_{\Delta x\to 0} \left(g(x+\Delta x) - g(x)\right)</m>.
+                <md>
+                    <mrow> \ddx{f(x)g(x)} \amp = f(x)\lim_{\Delta x \to 0} \left(\frac{<fillin characters="10" />}{\Delta x}\right)</mrow>
+                    <mrow> \amp  + g(x)\lim_{\Delta x \to 0} \left(\frac{<fillin characters="10" />}{\Delta x}\right) </mrow>
+                    <mrow> \amp +\lim_{\Delta x\to 0}\left(<fillin characters="10" />\right)\left( \lim_{\Delta x \to 0} \left(\frac{<fillin characters="10" />}{\Delta x}\right)\right) </mrow>
+                </md>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use <xref ref="def-DerivativeFunction" text="type-global-title"/> to re-write these limits. Show that when <m>\Delta x\to 0</m>, we get:
+                <me>
+                    f(x)g'(x) + g(x)f'(x) + 0
+                </me>.
+            </p>
+        </statement>
+    </task>
+
+</activity>

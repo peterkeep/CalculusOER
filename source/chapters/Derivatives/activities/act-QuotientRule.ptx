@@ -1,0 +1,56 @@
+<activity xml:id="act-QuotientRule" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Constructing a Quotient Rule</title>
+    <introduction>
+        <p>
+            We're going to start with a function that is a quotient of two other functions:
+            <me>
+                f(x) = \frac{u(x)}{v(x)}
+            </me>.
+            Our goal is that we want to find <m>f'(x)</m>, but we're going to shuffle this function around first. We won't calculate this derivative directly!
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Start with <m>f(x)=\dfrac{u(x)}{v(x)}</m>. Multiply <m>v(x)</m> on both sides to write a definition for <m>u(x)</m>.
+                <me>
+                    u(x) = <fillin characters="20" />
+                </me>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find <m>u'(x)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Wait: we don't care about <m>u'(x)</m>. Right? We care about finding <m>f'(x)</m>!
+            </p>
+            <p>
+                Use what you found for <m>u'(x)</m> and solve for <m>f'(x)</m>.
+                <me>
+                    f'(x) = <fillin characters="20" />
+                </me>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                This is a strange formula: we have a formula for <m>f'(x)</m> written in terms of <m>f(x)</m>! But we said earlier that <m>f(x) = \dfrac{u(x)}{v(x)}</m>.
+            </p>
+            <p>
+                In your formula for <m>f'(x)</m>, replace <m>f(x)</m> with <m>\dfrac{u(x)}{v(x)}</m>.
+                <me>
+                    f'(x) = <fillin characters="20" />
+                </me>
+            </p>
+        </statement>
+    </task>
+    
+</activity>

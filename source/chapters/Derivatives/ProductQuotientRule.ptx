@@ -35,23 +35,220 @@
   
   <subsection xml:id="subsec-ProductRule">
     <title>The Product Rule</title>
-      <theorem xml:id="thm-ProductRule">
-        <title>The Product Rule</title>
+
+    <xi:include href="./activities/act-ProductRule.ptx" />
+
+    <theorem xml:id="thm-ProductRule">
+      <title>Product Rule</title>
+      <statement>
+        <p>
+          If <m>u(x)</m> and <m>v(x)</m> are functions that are differentiable at <m>x</m> and <m>f(x) = u(x)\cdot v(x)</m>, then:
+          <me>
+            \ddx{f(x)} = u'(x)\cdot v(x) + u(x) \cdot v'(x)
+          </me>.
+          For convenience, this is often written as:
+          <me>
+            \ddx{u\cdot v} = u'v + uv' \hspace{1cm} \text{or}\hspace{1cm} \ddx{u\cdot v} = v \left(\dd{u}{x}\right) + u \left(\dd{v}{x}\right)
+          </me>.
+        </p>
+      </statement>
+    </theorem>
+
+    <example>
+      <introduction>
+        <p>
+          Use the <xref ref="thm-ProductRule" text="title"/> to find the following derivatives.
+        </p>
+      </introduction>
+      <task>
         <statement>
           <p>
-            If <m>u(x)</m> and <m>v(x)</m> are functions that are differentiable at <m>x</m> and <m>f(x) = u(x)\cdot v(x)</m>, then:
-            <me>
-              \ddx{f(x)} = u'(x)\cdot v(x) + u(x) \cdot v'(x)
-            </me>.
-            For convenience, this is often written as:
-            <me>
-              \ddx{u\cdot v} = u'v + uv' \hspace{1cm} \text{or}\hspace{1cm} \ddx{u\cdot v} = v \left(\dd{u}{x}\right) + u \left(\dd{v}{x}\right)
-            </me>.
+           <m>\Ddx{x^3 \sin(x)}</m> 
           </p>
         </statement>
-      </theorem>
+        <hint>
+          <p>
+            Use <m>u=x^3</m> and <m>v=\sin(x)</m>. Now find <m>u'</m> and <m>v'</m>, and use:
+            <me>
+              \ddx{uv} = u'v+uv'
+            </me>.
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\Ddx{(x^3+4x)e^x}</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\Ddx{\sqrt{x}\cos(x)}</m>
+          </p>
+        </statement>
+      </task>
+    </example>
   </subsection>
   
-  
+  <subsection xml:id="subsec-QuotientRule">
+    <title>What about Dividing?</title>
+    <p>
+      So we can differentiate a product of functions, and the obvious next question should be about division: if we needed to build a reasonable way of differentiating a product, shouldn't we also need to build a new way of thinking about derivatives of quotients?
+    </p>
+    <p>
+      A nice thing that we can do is think about division as really just multiplication. For instance, if we want to differentiate <m>\Ddx{\dfrac{\sin(x)}{x^2}}</m>,
+      then we can just think about this quotient as really a product:
+      <me>
+        \ddx{\frac{\sin(x)}{x^2}} = \ddx{\frac{1}{x^2}\left(\sin(x)\right)}
+      </me>.
+      Now we can just apply product rule!
+      <md>
+        <mrow>\ddx{\frac{1}{x^2}\left(\sin(x)\right)} \amp =\ddx{x^{-2}\sin(x)}</mrow>
+        <mrow>u = \sin(x) \amp \;\;\; v = x^{-2} </mrow>
+        <mrow>u'=\cos(x) \amp \;\;\; v'=-2x^{-3}</mrow>
+        <mrow> \ddx{\sin(x)x^{-2}}\amp  = x^{-2}\cos(x) + (-2x^{-3}\sin(x))</mrow>
+        <mrow> \amp = \frac{\cos(x)}{x^2} - \frac{2\sin(x)}{x^3}</mrow>
+      </md>
+    </p>
+    <p>
+      This works great! We can <em>always</em> think about quotients as just products of reciprocals! But the problem is that we can't always differentiate these reciprocals (for now). We were able to differentiate <m>\dfrac{1}{x^2}</m> by re-writing this as just a power function (with a negative exponent).
+    </p>
+    <p>
+      What about this flipped example:
+      <me>
+        \ddx{\frac{x^2}{\sin(x)}}
+      </me>?
+      In order for us to do the same thing, we need to re-write this as
+      <me>
+        \ddx{x^2\left(\sin(x)\right)^{-1}}
+      </me>
+      but we don't know how to differentiate <m>\left(\sin(x)\right)^{-1}</m> (yet).
+    </p>
+    <p>
+      So let's try to build a general way of differentiating quotients.
+    </p>
+    <xi:include href="./activities/act-QuotientRule.ptx" />
+    <p>
+      This formula is fine, but a little clunky. We'll try to re-write it in some nice ways, but it is a bit more complex than the <xref ref="thm-ProductRule" text="title"/>.
+    </p>
+    <theorem xml:id="thm-QuotientRule">
+      <title>Quotient Rule</title>
+      <statement>
+        <p>
+          If <m>u(x)</m> and <m>v(x)</m> are differentiable at <m>x</m> and <m>f(x) = \dfrac{u(x)}{v(x)}</m> then:
+          <me>
+            f'(x) = \dfrac{v(x)u'(x) - u(x)v'(x)}{(v(x))^2}
+          </me>.
+        </p>
+        <p>
+          For convenience, this is often written as:
+          <me>
+            \ddx{\frac{u}{v}} = \frac{vu'-uv'}{v^2}
+          </me>.
+        </p>
+      </statement>
+    </theorem>
+    <example>
+      <introduction>
+        <p>
+          Use the <xref ref="thm-QuotientRule" text="title"/> to find the following derivatives.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\Ddx{\frac{\sin(x)}{x^2}}</m> 
+          </p>
+          <p>
+            Once you have this derivative, confirm that it is the same as <m>\dfrac{\cos(x)}{x^2} - \dfrac{2\sin(x)}{x^3}</m>, the way that we found it using the Product Rule.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\Ddx{\dfrac{x^2}{\sin(x)}}</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\Ddx{\dfrac{x+4}{x^2+1}}</m>
+          </p>
+        </statement>
+      </task>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-MoreTrigDerivatives">
+    <title>Derivatives of (the Rest of the) Trigonometric Functions</title>
+    <p>
+      You might remember that of the six main trigonometric functions, we can write four of them in terms of the other two: here are the different trigonometric functions written in terms of sine and cosine functions:
+      <md>
+        <mrow>\tan(x) \amp = \left(\frac{\sin(x)}{\cos(x)}\right)</mrow>
+        <mrow>\sec(x) \amp = \left(\frac{1}{\cos(x)}\right)</mrow>
+        <mrow>\cot(x) \amp = \left(\frac{\cos(x)}{\sin(x)}\right) </mrow>
+        <mrow>\csc(x) \amp = \left(\frac{1}{\sin(x)}\right)</mrow>
+      </md>
+    </p>
+    <example>
+      <introduction>
+        <p>
+          Find the derivatives of the remaining trigonometric functions.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\Ddx{\tan(x)}</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Write <m>\Ddx{\tan(x)} = \Ddx{\dfrac{\sin(x)}{\cos(x)}}</m> and use the Quotient Rule.
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\Ddx{\sec(x)}</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Write <m>\Ddx{\sec(x)} = \Ddx{\dfrac{1}{\cos(x)}}</m> and use the Quotient Rule.
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\Ddx{\cot(x)}</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Write <m>\Ddx{\cot(x)} = \Ddx{\dfrac{\cos(x)}{\sin(x)}}</m> and use the Quotient Rule.
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\Ddx{\csc(x)}</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Write <m>\Ddx{\csc(x)} = \Ddx{\dfrac{1}{\cos(x)}}</m> and use the Quotient Rule.
+          </p>
+        </hint>
+      </task>
+    </example>
+  </subsection>
 
 </section>
