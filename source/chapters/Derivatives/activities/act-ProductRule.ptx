@@ -17,6 +17,19 @@
             <p>
                 Find the area of the two rectangles. The second rectangle is just one where the input variable for the side length has changed by some amount, leading to a different side length.    
             </p>
+            
+                <figure xml:id="fig-ProductRule1">
+                    <caption></caption>
+                    <sidebyside widths="40% 55%" valign="bottom">
+                        <image source="./Derivatives/ProductRule1.png">
+                            <shortdescription>A rectangle with the width labeled f(x) and the height labeled g(x).</shortdescription>
+                        </image>
+                        <image source="./Derivatives/ProductRule2.png">
+                            <shortdescription>A larger rectangle with the width labeled f(x+ delta x) and the height labeled g(x + delta x). The original, smaller, rectangle is marked with a dotted line inside of the new larger rectangle.</shortdescription>
+                        </image>
+                    </sidebyside>
+                </figure>
+
         </statement>
     </task>
     <task>
@@ -31,6 +44,12 @@
             <p>
                 Let's try to calculate this difference in a second way: by finding the actual area of the region that is new in the second rectangle.
             </p>
+            <figure xml:id="ProductRule2">
+                <caption></caption>
+                <image source="./Derivatives/ProductRule3.png" width="50%">
+                    <shortdescription>A small rectangle inside a larger rectangle. The difference is broken up into three shaded in regions. A bar on the top, a bar on the right, and a corner piece.</shortdescription>
+                </image>
+            </figure>
             <p>
                 In order to do this, we've broken the region up into three pieces. Calculate the areas of the three pieces. Use this to fill in the following equation:
                 <me>

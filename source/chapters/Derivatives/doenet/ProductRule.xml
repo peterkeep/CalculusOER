@@ -1,0 +1,72 @@
+<!-- https://www.doenet.org/portfolioeditor/_ZWT6Eb6oFui8hFQQRq8Po/_Y4eHQwS6VHms1HSFAPYuq -->
+
+<setup>
+  <function name="f">x-0.1x</function>
+  <function name="g">sqrt(x)+0.1x</function>
+  <number name="init">3</number>
+  <polygon name="fg" stylenumber="5" draggable="false" layer="2"
+      vertices="(0,0) 
+                ($$f($init),0) 
+                ($$f($init),$$g($init)) 
+                (0,$$g($init))" />
+  <polygon name="fgdelta" stylenumber="4" draggable="false" layer="1"
+      vertices="(0,$$g($init)) 
+                ($$f($init),$$g($init)) 
+                ($$f($init),$$g($init+$delta)) 
+                (0,$$g($init+$delta))" filled />
+  <polygon name="fdeltag" stylenumber="4" draggable="false" layer="1"
+      vertices="($$f($init),0) 
+                ($$f($init+$delta),0) 
+                ($$f($init+$delta),$$g($init)) 
+                ($$f($init),$$g($init))" filled/>
+  <polygon name="fdeltagdelta" stylenumber="2" draggable="false" layer="1"
+      vertices="($$f($init),$$g($init)) 
+                ($$f($init+$delta),$$g($init)) 
+                ($$f($init+$delta),$$g($init+$delta)) 
+                ($$f($init),$$g($init+$delta))" filled/>
+</setup>
+
+<p><em>Instructions:</em> Move the slider to change the value of <m>\Delta x</m>. This will change the side lengths of the larger rectangle, and the corresponding change in area from the small rectangle to the large rectangle.</p>
+
+<slider name="delta" from="0.001" to="1" initialValue="1" step="0.001" showValue="false" showTicks="false">
+  <label><m>\Delta x</m></label>
+</slider>
+
+<graph xmin="-2" xmax="5.6" ymin="-0.4" ymax="2.8" 
+  displayXAxis="false" displayYAxis="false" identicalAxisScales
+  showNavigation="false" fixLocation showBorder="false">
+  $fg
+  $fgdelta
+  $fdeltag
+  $fdeltagdelta
+  <label anchor="($$f($init)/2, 0.1)" positionFromAnchor="top">
+    <m>f(x)</m>
+  </label>
+  <label anchor="($$f($init)/2, $$g($init+$delta)+0.1)" 
+    positionFromAnchor="top" styleNumber="4">
+    <m>f(x)</m>
+  </label>
+  <label anchor="(($$f($init+$delta)+$$f($init))/2, -0.1)"
+    positionFromAnchor="bottom" styleNumber="4">
+    <m>f(x+\Delta x) - f(x)</m>
+  </label>
+  <label anchor="(($$f($init+$delta)+$$f($init))/2,$$g($init+$delta)+0.1)"
+    positionFromAnchor="top" styleNumber="2">
+    <m>f(x+\Delta x) - f(x)</m>
+  </label>
+  <label anchor="(0.1, $$g($init)/2)" positionFromAnchor="right">
+    <m>g(x)</m>
+  </label>
+  <label anchor="($$f($init+$delta)+0.1, $$g($init)/2)" 
+    positionFromAnchor="right" styleNumber="4">
+    <m>g(x)</m>
+  </label>
+  <label anchor="(-0.1, ($$g($init+$delta)+$$g($init))/2)"
+    positionFromAnchor="left" styleNumber="4">
+    <m>g(x+\Delta x) - g(x)</m>
+  </label>
+  <label anchor="($$f($init+$delta)+0.1,($$g($init+$delta)+$$g($init))/2)"
+    positionFromAnchor="right" styleNumber="2">
+    <m>g(x+\Delta x) - g(x)</m>
+  </label>
+</graph>

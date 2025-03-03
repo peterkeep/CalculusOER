@@ -38,6 +38,16 @@
 
     <xi:include href="./activities/act-ProductRule.ptx" />
 
+    <p>
+      We can investigate this visual a bit more dynamically: see the differences in area as <m>\Delta x\to 0</m>. What parts are left, when <m>\Delta x \to 0</m>? What areas aren't visible?
+    </p>
+
+    <interactive platform="doenetml" width="100%" aspect="1.4:1">
+        <slate surface="doenetml">
+            <xi:include parse="text" href="./doenet/ProductRule.xml"/>
+        </slate>
+    </interactive>
+
     <theorem xml:id="thm-ProductRule">
       <title>Product Rule</title>
       <statement>
