@@ -221,7 +221,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-ProductQuotientRule.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Product and Quotient Rules</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-ProductRule" class="internal"><span class="codenumber">2.4.1</span> <span class="title">The Product Rule</span></a></div></li></ul>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-ProductRule" class="internal"><span class="codenumber">2.4.1</span> <span class="title">The Product Rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-QuotientRule" class="internal"><span class="codenumber">2.4.2</span> <span class="title">What about Dividing?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-MoreTrigDerivatives" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Derivatives of (the Rest of the) Trigonometric Functions</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ChainRule.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The Chain Rule</span></a></div></li>
 </ul>
@@ -485,8 +489,70 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="sec-ProductQuotientRule-2-7">So, we hopefully have some motivation for building a rule to that helps us think about derivatives of products of functions.</div></section><section class="subsection" id="subsec-ProductRule"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="space"> </span><span class="title">The Product Rule</span>
 </h3>
-<article class="theorem theorem-like" id="thm-ProductRule"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">The Product Rule.</span>
+<article class="activity project-like" id="act-ProductRule"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Building a Product Rule.</span>
+</h4>
+<div class="introduction" id="act-ProductRule-2">
+<div class="para logical" id="act-ProductRule-2-1">
+<div class="para">Let’s investigate how we might differentiate the product of two functions:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{f(x)g(x)}\text{.}
+\end{equation*}
+</div>
+<div class="para">We’ll use an area model for multiplication here: we can consider a rectangle where the side lengths are functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> that change for different values of <span class="process-math">\(x\text{.}\)</span> Maybe <span class="process-math">\(x\)</span> is representative of some type of time component, and the side lengths change size based on time, but it could be anything.</div>
+</div>
+<div class="para" id="act-ProductRule-2-2">If we want to think about <span class="process-math">\(\ddx{f(x)g(x)}\text{,}\)</span> then we’re really considering the change in area of the rectangle.</div>
+</div>
+<article class="task exercise-like" id="act-ProductRule-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-ProductRule-3-1-1">Find the area of the two rectangles. The second rectangle is just one where the input variable for the side length has changed by some amount, leading to a different side length.</div></article><article class="task exercise-like" id="act-ProductRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-ProductRule-4-1-1">Write out a way of calculating the difference in these areas.</div></article><article class="task exercise-like" id="act-ProductRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-ProductRule-5-1-1">Let’s try to calculate this difference in a second way: by finding the actual area of the region that is new in the second rectangle.</div> <div class="para logical" id="act-ProductRule-5-1-2">
+<div class="para">In order to do this, we’ve broken the region up into three pieces. Calculate the areas of the three pieces. Use this to fill in the following equation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x+\Delta x)g(x+\Delta x) - f(x)g(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}\text{.}
+\end{equation*}
+</div>
+</div></article><article class="task exercise-like" id="act-ProductRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-ProductRule-6-1-1">We do not want to calculate the total change in area: a derivative is a <em class="emphasis">rate of change</em>, so in order to think about the derivative we need to divide by the change in input, <span class="process-math">\(\Delta x\text{.}\)</span>
+</div> <div class="para logical" id="act-ProductRule-6-1-2">
+<div class="para">We’ll also want to think about this derivative as an <em class="emphasis">instantaneous</em> rate of change, meaning we will consider a limit as <span class="process-math">\(\Delta x \to 0\text{.}\)</span> Fill in the following:</div>
+<div class="displaymath process-math" id="act-ProductRule-6-1-2-3">
+\begin{align*}
+\ddx{f(x)g(x)} \amp \lim_{\Delta x \to 0} \left( \frac{f(x+\Delta x)g(x+\Delta x) - f(x)g(x)}{\Delta x} \right)\\
+\amp = \lim_{\Delta x\to 0} \left(\frac{\fillinmath{XXXXXXXXXXXXXXXXXXXX}}{\Delta x}\right)
+\end{align*}
+</div>
+<div class="para">We can split this fraction up into three fractions:</div>
+<div class="displaymath process-math" id="act-ProductRule-6-1-2-4">
+\begin{align*}
+\ddx{f(x)g(x)} \amp = \lim_{\Delta x \to 0} \left(\frac{\fillinmath{XXXXXXXXXX}}{\Delta x}\right)\\
+\amp  + \lim_{\Delta x \to 0} \left(\frac{\fillinmath{XXXXXXXXXX}}{\Delta x}\right) \\
+\amp + \lim_{\Delta x \to 0} \left(\frac{\fillinmath{XXXXXXXXXX}}{\Delta x}\right) 
+\end{align*}
+</div>
+</div></article><article class="task exercise-like" id="act-ProductRule-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-ProductRule-7-1-1">In any limit with <span class="process-math">\(f(x)\)</span> or <span class="process-math">\(g(x)\)</span> in it, notice that we can factor part out of the limit, since these functions do not rely on <span class="process-math">\(\Delta x\text{,}\)</span> the part that changes in the limit. Factor these out.</div> <div class="para logical" id="act-ProductRule-7-1-2">
+<div class="para">In the third limit, factor out either <span class="process-math">\(\displaystyle \lim_{\Delta x\to 0} \left(f(x+\Delta x) - f(x)\right)\)</span> or <span class="process-math">\(\displaystyle \lim_{\Delta x\to 0} \left(g(x+\Delta x) - g(x)\right)\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="act-ProductRule-7-1-2-3">
+\begin{align*}
+\ddx{f(x)g(x)} \amp = f(x)\lim_{\Delta x \to 0} \left(\frac{\fillinmath{XXXXXXXXXX}}{\Delta x}\right)\\
+\amp  + g(x)\lim_{\Delta x \to 0} \left(\frac{\fillinmath{XXXXXXXXXX}}{\Delta x}\right) \\
+\amp +\lim_{\Delta x\to 0}\left(\fillinmath{XXXXXXXXXX}\right)\left( \lim_{\Delta x \to 0} \left(\frac{\fillinmath{XXXXXXXXXX}}{\Delta x}\right)\right) 
+\end{align*}
+</div>
+</div></article><article class="task exercise-like" id="act-ProductRule-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para logical" id="act-ProductRule-8-1-1">
+<div class="para">Use <a href="sec-IntroDerivatives.html#def-DerivativeFunction" class="xref" data-knowl="./knowl/xref/def-DerivativeFunction.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.2: The Derivative Function">Definition 2.1.2 The Derivative Function</a> to re-write these limits. Show that when <span class="process-math">\(\Delta x\to 0\text{,}\)</span> we get:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def-DerivativeFunction.html">
+\begin{equation*}
+f(x)g'(x) + g(x)f'(x) + 0\text{.}
+\end{equation*}
+</div>
+</div></article></article><article class="theorem theorem-like" id="thm-ProductRule"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Product Rule.</span>
 </h4>
 <div class="para logical" id="thm-ProductRule-2-1">
 <div class="para">If <span class="process-math">\(u(x)\)</span> and <span class="process-math">\(v(x)\)</span> are functions that are differentiable at <span class="process-math">\(x\)</span> and <span class="process-math">\(f(x) = u(x)\cdot v(x)\text{,}\)</span> then:</div>
@@ -501,7 +567,152 @@ eBookConfig.enable_chatcodes =  false;
 \ddx{u\cdot v} = u'v + uv' \hspace{1cm} \text{or}\hspace{1cm} \ddx{u\cdot v} = v \left(\dd{u}{x}\right) + u \left(\dd{v}{x}\right)\text{.}
 \end{equation*}
 </div>
-</div></article></section></section></div>
+</div></article><details id="subsec-ProductRule-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-ProductRule-4-1"><div class="para" id="subsec-ProductRule-4-1-1">Use the <a href="sec-ProductQuotientRule.html#thm-ProductRule" class="xref" data-knowl="./knowl/xref/thm-ProductRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.1: Product Rule">Product Rule</a> to find the following derivatives.</div></div>
+<article class="task exercise-like" id="subsec-ProductRule-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-ProductRule-4-2-1-1"><span class="process-math">\(\Ddx{x^3 \sin(x)}\)</span></div>
+<div class="solutions"><details id="subsec-ProductRule-4-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="subsec-ProductRule-4-2-2-1">
+<div class="para">Use <span class="process-math">\(u=x^3\)</span> and <span class="process-math">\(v=\sin(x)\text{.}\)</span> Now find <span class="process-math">\(u'\)</span> and <span class="process-math">\(v'\text{,}\)</span> and use:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{uv} = u'v+uv'\text{.}
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="task exercise-like" id="subsec-ProductRule-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-ProductRule-4-3-1-1"><span class="process-math">\(\Ddx{(x^3+4x)e^x}\)</span></div></article><article class="task exercise-like" id="subsec-ProductRule-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-ProductRule-4-4-1-1"><span class="process-math">\(\Ddx{\sqrt{x}\cos(x)}\)</span></div></article></article></details></section><section class="subsection" id="subsec-QuotientRule"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="space"> </span><span class="title">What about Dividing?</span>
+</h3>
+<div class="para" id="subsec-QuotientRule-2">So we can differentiate a product of functions, and the obvious next question should be about division: if we needed to build a reasonable way of differentiating a product, shouldn’t we also need to build a new way of thinking about derivatives of quotients?</div>
+<div class="para logical" id="subsec-QuotientRule-3">
+<div class="para">A nice thing that we can do is think about division as really just multiplication. For instance, if we want to differentiate <span class="process-math">\(\Ddx{\dfrac{\sin(x)}{x^2}}\text{,}\)</span> then we can just think about this quotient as really a product:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{\frac{\sin(x)}{x^2}} = \ddx{\frac{1}{x^2}\left(\sin(x)\right)}\text{.}
+\end{equation*}
+</div>
+<div class="para">Now we can just apply product rule!</div>
+<div class="displaymath process-math" id="subsec-QuotientRule-3-3">
+\begin{align*}
+\ddx{\frac{1}{x^2}\left(\sin(x)\right)} \amp =\ddx{x^{-2}\sin(x)}\\
+u = \sin(x) \amp \;\;\; v = x^{-2} \\
+u'=\cos(x) \amp \;\;\; v'=-2x^{-3}\\
+\ddx{\sin(x)x^{-2}}\amp  = x^{-2}\cos(x) + (-2x^{-3}\sin(x))\\
+\amp = \frac{\cos(x)}{x^2} - \frac{2\sin(x)}{x^3}
+\end{align*}
+</div>
+</div>
+<div class="para" id="subsec-QuotientRule-4">This works great! We can <em class="emphasis">always</em> think about quotients as just products of reciprocals! But the problem is that we can’t always differentiate these reciprocals (for now). We were able to differentiate <span class="process-math">\(\dfrac{1}{x^2}\)</span> by re-writing this as just a power function (with a negative exponent).</div>
+<div class="para logical" id="subsec-QuotientRule-5">
+<div class="para">What about this flipped example:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{\frac{x^2}{\sin(x)}}\text{?}
+\end{equation*}
+</div>
+<div class="para">In order for us to do the same thing, we need to re-write this as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{x^2\left(\sin(x)\right)^{-1}}
+\end{equation*}
+</div>
+<div class="para">but we don’t know how to differentiate <span class="process-math">\(\left(\sin(x)\right)^{-1}\)</span> (yet).</div>
+</div>
+<div class="para" id="subsec-QuotientRule-6">So let’s try to build a general way of differentiating quotients.</div>
+<article class="activity project-like" id="act-QuotientRule"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Constructing a Quotient Rule.</span>
+</h4>
+<div class="introduction" id="act-QuotientRule-2"><div class="para logical" id="act-QuotientRule-2-1">
+<div class="para">We’re going to start with a function that is a quotient of two other functions:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \frac{u(x)}{v(x)}\text{.}
+\end{equation*}
+</div>
+<div class="para">Our goal is that we want to find <span class="process-math">\(f'(x)\text{,}\)</span> but we’re going to shuffle this function around first. We won’t calculate this derivative directly!</div>
+</div></div>
+<article class="task exercise-like" id="act-QuotientRule-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="act-QuotientRule-3-1-1">
+<div class="para">Start with <span class="process-math">\(f(x)=\dfrac{u(x)}{v(x)}\text{.}\)</span> Multiply <span class="process-math">\(v(x)\)</span> on both sides to write a definition for <span class="process-math">\(u(x)\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}
+\end{equation*}
+</div>
+</div></article><article class="task exercise-like" id="act-QuotientRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-QuotientRule-4-1-1">Find <span class="process-math">\(u'(x)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="act-QuotientRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-QuotientRule-5-1-1">Wait: we don’t care about <span class="process-math">\(u'(x)\text{.}\)</span> Right? We care about finding <span class="process-math">\(f'(x)\text{!}\)</span>
+</div> <div class="para logical" id="act-QuotientRule-5-1-2">
+<div class="para">Use what you found for <span class="process-math">\(u'(x)\)</span> and solve for <span class="process-math">\(f'(x)\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f'(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}
+\end{equation*}
+</div>
+</div></article><article class="task exercise-like" id="act-QuotientRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-QuotientRule-6-1-1">This is a strange formula: we have a formula for <span class="process-math">\(f'(x)\)</span> written in terms of <span class="process-math">\(f(x)\text{!}\)</span> But we said earlier that <span class="process-math">\(f(x) = \dfrac{u(x)}{v(x)}\text{.}\)</span>
+</div> <div class="para logical" id="act-QuotientRule-6-1-2">
+<div class="para">In your formula for <span class="process-math">\(f'(x)\text{,}\)</span> replace <span class="process-math">\(f(x)\)</span> with <span class="process-math">\(\dfrac{u(x)}{v(x)}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f'(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}
+\end{equation*}
+</div>
+</div></article></article><div class="para" id="subsec-QuotientRule-8">This formula is fine, but a little clunky. We’ll try to re-write it in some nice ways, but it is a bit more complex than the <a href="sec-ProductQuotientRule.html#thm-ProductRule" class="xref" data-knowl="./knowl/xref/thm-ProductRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.1: Product Rule">Product Rule</a>.</div>
+<article class="theorem theorem-like" id="thm-QuotientRule"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Quotient Rule.</span>
+</h4>
+<div class="para logical" id="thm-QuotientRule-2-1">
+<div class="para">If <span class="process-math">\(u(x)\)</span> and <span class="process-math">\(v(x)\)</span> are differentiable at <span class="process-math">\(x\)</span> and <span class="process-math">\(f(x) = \dfrac{u(x)}{v(x)}\)</span> then:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f'(x) = \dfrac{v(x)u'(x) - u(x)v'(x)}{(v(x))^2}\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical" id="thm-QuotientRule-2-2">
+<div class="para">For convenience, this is often written as:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{\frac{u}{v}} = \frac{vu'-uv'}{v^2}\text{.}
+\end{equation*}
+</div>
+</div></article><details id="subsec-QuotientRule-10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-QuotientRule-10-1"><div class="para" id="subsec-QuotientRule-10-1-1">Use the <a href="sec-ProductQuotientRule.html#thm-QuotientRule" class="xref" data-knowl="./knowl/xref/thm-QuotientRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.3: Quotient Rule">Quotient Rule</a> to find the following derivatives.</div></div>
+<article class="task exercise-like" id="subsec-QuotientRule-10-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-QuotientRule-10-2-1-1"><span class="process-math">\(\Ddx{\frac{\sin(x)}{x^2}}\)</span></div> <div class="para" id="subsec-QuotientRule-10-2-1-2">Once you have this derivative, confirm that it is the same as <span class="process-math">\(\dfrac{\cos(x)}{x^2} - \dfrac{2\sin(x)}{x^3}\text{,}\)</span> the way that we found it using the Product Rule.</div></article><article class="task exercise-like" id="subsec-QuotientRule-10-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-QuotientRule-10-3-1-1"><span class="process-math">\(\Ddx{\dfrac{x^2}{\sin(x)}}\)</span></div></article><article class="task exercise-like" id="subsec-QuotientRule-10-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-QuotientRule-10-4-1-1"><span class="process-math">\(\Ddx{\dfrac{x+4}{x^2+1}}\)</span></div></article></article></details></section><section class="subsection" id="subsec-MoreTrigDerivatives"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="space"> </span><span class="title">Derivatives of (the Rest of the) Trigonometric Functions</span>
+</h3>
+<div class="para logical" id="subsec-MoreTrigDerivatives-2">
+<div class="para">You might remember that of the six main trigonometric functions, we can write four of them in terms of the other two: here are the different trigonometric functions written in terms of sine and cosine functions:</div>
+<div class="displaymath process-math" id="subsec-MoreTrigDerivatives-2-1">
+\begin{align*}
+\tan(x) \amp = \left(\frac{\sin(x)}{\cos(x)}\right)\\
+\sec(x) \amp = \left(\frac{1}{\cos(x)}\right)\\
+\cot(x) \amp = \left(\frac{\cos(x)}{\sin(x)}\right) \\
+\csc(x) \amp = \left(\frac{1}{\sin(x)}\right)
+\end{align*}
+</div>
+</div>
+<details id="subsec-MoreTrigDerivatives-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-MoreTrigDerivatives-3-1"><div class="para" id="subsec-MoreTrigDerivatives-3-1-1">Find the derivatives of the remaining trigonometric functions.</div></div>
+<article class="task exercise-like" id="subsec-MoreTrigDerivatives-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-MoreTrigDerivatives-3-2-1-1"><span class="process-math">\(\Ddx{\tan(x)}\)</span></div>
+<div class="solutions"><details id="subsec-MoreTrigDerivatives-3-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-MoreTrigDerivatives-3-2-2-1">Write <span class="process-math">\(\Ddx{\tan(x)} = \Ddx{\dfrac{\sin(x)}{\cos(x)}}\)</span> and use the Quotient Rule.</div></div></details></div></article><article class="task exercise-like" id="subsec-MoreTrigDerivatives-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-MoreTrigDerivatives-3-3-1-1"><span class="process-math">\(\Ddx{\sec(x)}\)</span></div>
+<div class="solutions"><details id="subsec-MoreTrigDerivatives-3-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-MoreTrigDerivatives-3-3-2-1">Write <span class="process-math">\(\Ddx{\sec(x)} = \Ddx{\dfrac{1}{\cos(x)}}\)</span> and use the Quotient Rule.</div></div></details></div></article><article class="task exercise-like" id="subsec-MoreTrigDerivatives-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-MoreTrigDerivatives-3-4-1-1"><span class="process-math">\(\Ddx{\cot(x)}\)</span></div>
+<div class="solutions"><details id="subsec-MoreTrigDerivatives-3-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-MoreTrigDerivatives-3-4-2-1">Write <span class="process-math">\(\Ddx{\cot(x)} = \Ddx{\dfrac{\cos(x)}{\sin(x)}}\)</span> and use the Quotient Rule.</div></div></details></div></article><article class="task exercise-like" id="subsec-MoreTrigDerivatives-3-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="subsec-MoreTrigDerivatives-3-5-1-1"><span class="process-math">\(\Ddx{\csc(x)}\)</span></div>
+<div class="solutions"><details id="subsec-MoreTrigDerivatives-3-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-MoreTrigDerivatives-3-5-2-1">Write <span class="process-math">\(\Ddx{\csc(x)} = \Ddx{\dfrac{1}{\cos(x)}}\)</span> and use the Quotient Rule.</div></div></details></div></article></article></details></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-DerivativeRules.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-ChainRule.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -592,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.4",
   "title": "The Product and Quotient Rules",
-  "body": " The Product and Quotient Rules   We saw in that when we want to find the derivative of a sum or difference of functions, we can just find the derivatives of each function separately, and then combine the derivatives back together (by adding or subtracting). This, hopefully, is pretty intuitive: of course a slope of a sum of things is just the slopes of each thing added together!  In this section, we want to think about derivatives of product and quotients of functions. What happens when we differentiate a function that is really just two functions multiplied together?   Thinking About Derivatives of Products   Let's start with two quick facts: .    What is ? What about ?    Based on what you just explained, what is a reasonable assumption about what might be?   Does it seem reasonable that we could just multiply the derivatives together, and say that was the same thing as ?    Let's just think about for a moment. What is  ? Can you write this as a product? Call one of your functions and the other . You should have that for whatever you used.    Use your example to explain why, in general, .    Let's show another way that we know this. Think about . We know two things: . What, though, is ?    Use all of this to reassure yourself that even though the derivative of a sum of functions is the sum of the derivatives of the functions, we will need to develop a better understanding of how the derivatives of products of functions work.    A thing that I like to think about is this: if , then every function's derivative would be 0.  In the example with the function, we noticed that we could write the function as . This is true of every function!  If , then we could say that for any function with a derivative : . This, obviously, can't be true! We know of tons of functions that have non-zero slopes... most of them do!  So, we hopefully have some motivation for building a rule to that helps us think about derivatives of products of functions.    The Product Rule   The Product Rule   If and are functions that are differentiable at and , then: . For convenience, this is often written as: .     "
+  "body": " The Product and Quotient Rules   We saw in that when we want to find the derivative of a sum or difference of functions, we can just find the derivatives of each function separately, and then combine the derivatives back together (by adding or subtracting). This, hopefully, is pretty intuitive: of course a slope of a sum of things is just the slopes of each thing added together!  In this section, we want to think about derivatives of product and quotients of functions. What happens when we differentiate a function that is really just two functions multiplied together?   Thinking About Derivatives of Products   Let's start with two quick facts: .    What is ? What about ?    Based on what you just explained, what is a reasonable assumption about what might be?   Does it seem reasonable that we could just multiply the derivatives together, and say that was the same thing as ?    Let's just think about for a moment. What is  ? Can you write this as a product? Call one of your functions and the other . You should have that for whatever you used.    Use your example to explain why, in general, .    Let's show another way that we know this. Think about . We know two things: . What, though, is ?    Use all of this to reassure yourself that even though the derivative of a sum of functions is the sum of the derivatives of the functions, we will need to develop a better understanding of how the derivatives of products of functions work.    A thing that I like to think about is this: if , then every function's derivative would be 0.  In the example with the function, we noticed that we could write the function as . This is true of every function!  If , then we could say that for any function with a derivative : . This, obviously, can't be true! We know of tons of functions that have non-zero slopes... most of them do!  So, we hopefully have some motivation for building a rule to that helps us think about derivatives of products of functions.    The Product Rule   Building a Product Rule   Let's investigate how we might differentiate the product of two functions: . We'll use an area model for multiplication here: we can consider a rectangle where the side lengths are functions and that change for different values of . Maybe is representative of some type of time component, and the side lengths change size based on time, but it could be anything.  If we want to think about , then we're really considering the change in area of the rectangle.    Find the area of the two rectangles. The second rectangle is just one where the input variable for the side length has changed by some amount, leading to a different side length.    Write out a way of calculating the difference in these areas.    Let's try to calculate this difference in a second way: by finding the actual area of the region that is new in the second rectangle.  In order to do this, we've broken the region up into three pieces. Calculate the areas of the three pieces. Use this to fill in the following equation: .    We do not want to calculate the total change in area: a derivative is a rate of change , so in order to think about the derivative we need to divide by the change in input, .  We'll also want to think about this derivative as an instantaneous rate of change, meaning we will consider a limit as . Fill in the following: We can split this fraction up into three fractions:     In any limit with or in it, notice that we can factor part out of the limit, since these functions do not rely on , the part that changes in the limit. Factor these out.  In the third limit, factor out either or .     Use to re-write these limits. Show that when , we get: .     Product Rule   If and are functions that are differentiable at and , then: . For convenience, this is often written as: .      Use the to find the following derivatives.        Use and . Now find and , and use: .                What about Dividing?  So we can differentiate a product of functions, and the obvious next question should be about division: if we needed to build a reasonable way of differentiating a product, shouldn't we also need to build a new way of thinking about derivatives of quotients?  A nice thing that we can do is think about division as really just multiplication. For instance, if we want to differentiate , then we can just think about this quotient as really a product: . Now we can just apply product rule!   This works great! We can always think about quotients as just products of reciprocals! But the problem is that we can't always differentiate these reciprocals (for now). We were able to differentiate by re-writing this as just a power function (with a negative exponent).  What about this flipped example: ? In order for us to do the same thing, we need to re-write this as but we don't know how to differentiate (yet).  So let's try to build a general way of differentiating quotients.   Constructing a Quotient Rule   We're going to start with a function that is a quotient of two other functions: . Our goal is that we want to find , but we're going to shuffle this function around first. We won't calculate this derivative directly!    Start with . Multiply on both sides to write a definition for .     Find .    Wait: we don't care about . Right? We care about finding !  Use what you found for and solve for .     This is a strange formula: we have a formula for written in terms of ! But we said earlier that .  In your formula for , replace with .     This formula is fine, but a little clunky. We'll try to re-write it in some nice ways, but it is a bit more complex than the .   Quotient Rule   If and are differentiable at and then: .  For convenience, this is often written as: .      Use the to find the following derivatives.       Once you have this derivative, confirm that it is the same as , the way that we found it using the Product Rule.                Derivatives of (the Rest of the) Trigonometric Functions  You might remember that of the six main trigonometric functions, we can write four of them in terms of the other two: here are the different trigonometric functions written in terms of sine and cosine functions:     Find the derivatives of the remaining trigonometric functions.        Write and use the Quotient Rule.        Write and use the Quotient Rule.        Write and use the Quotient Rule.        Write and use the Quotient Rule.     "
 },
 {
   "id": "act-MotivatingProductRule",
@@ -604,13 +604,67 @@ var ptx_lunr_docs = [
   "body": " Thinking About Derivatives of Products   Let's start with two quick facts: .    What is ? What about ?    Based on what you just explained, what is a reasonable assumption about what might be?   Does it seem reasonable that we could just multiply the derivatives together, and say that was the same thing as ?    Let's just think about for a moment. What is  ? Can you write this as a product? Call one of your functions and the other . You should have that for whatever you used.    Use your example to explain why, in general, .    Let's show another way that we know this. Think about . We know two things: . What, though, is ?    Use all of this to reassure yourself that even though the derivative of a sum of functions is the sum of the derivatives of the functions, we will need to develop a better understanding of how the derivatives of products of functions work.   "
 },
 {
+  "id": "act-ProductRule",
+  "level": "2",
+  "url": "sec-ProductQuotientRule.html#act-ProductRule",
+  "type": "Activity",
+  "number": "2.4.2",
+  "title": "Building a Product Rule.",
+  "body": " Building a Product Rule   Let's investigate how we might differentiate the product of two functions: . We'll use an area model for multiplication here: we can consider a rectangle where the side lengths are functions and that change for different values of . Maybe is representative of some type of time component, and the side lengths change size based on time, but it could be anything.  If we want to think about , then we're really considering the change in area of the rectangle.    Find the area of the two rectangles. The second rectangle is just one where the input variable for the side length has changed by some amount, leading to a different side length.    Write out a way of calculating the difference in these areas.    Let's try to calculate this difference in a second way: by finding the actual area of the region that is new in the second rectangle.  In order to do this, we've broken the region up into three pieces. Calculate the areas of the three pieces. Use this to fill in the following equation: .    We do not want to calculate the total change in area: a derivative is a rate of change , so in order to think about the derivative we need to divide by the change in input, .  We'll also want to think about this derivative as an instantaneous rate of change, meaning we will consider a limit as . Fill in the following: We can split this fraction up into three fractions:     In any limit with or in it, notice that we can factor part out of the limit, since these functions do not rely on , the part that changes in the limit. Factor these out.  In the third limit, factor out either or .     Use to re-write these limits. Show that when , we get: .   "
+},
+{
   "id": "thm-ProductRule",
   "level": "2",
   "url": "sec-ProductQuotientRule.html#thm-ProductRule",
   "type": "Theorem",
   "number": "2.4.1",
-  "title": "The Product Rule.",
-  "body": " The Product Rule   If and are functions that are differentiable at and , then: . For convenience, this is often written as: .   "
+  "title": "Product Rule.",
+  "body": " Product Rule   If and are functions that are differentiable at and , then: . For convenience, this is often written as: .   "
+},
+{
+  "id": "subsec-ProductRule-4",
+  "level": "2",
+  "url": "sec-ProductQuotientRule.html#subsec-ProductRule-4",
+  "type": "Example",
+  "number": "2.4.2",
+  "title": "",
+  "body": "  Use the to find the following derivatives.        Use and . Now find and , and use: .             "
+},
+{
+  "id": "act-QuotientRule",
+  "level": "2",
+  "url": "sec-ProductQuotientRule.html#act-QuotientRule",
+  "type": "Activity",
+  "number": "2.4.3",
+  "title": "Constructing a Quotient Rule.",
+  "body": " Constructing a Quotient Rule   We're going to start with a function that is a quotient of two other functions: . Our goal is that we want to find , but we're going to shuffle this function around first. We won't calculate this derivative directly!    Start with . Multiply on both sides to write a definition for .     Find .    Wait: we don't care about . Right? We care about finding !  Use what you found for and solve for .     This is a strange formula: we have a formula for written in terms of ! But we said earlier that .  In your formula for , replace with .    "
+},
+{
+  "id": "thm-QuotientRule",
+  "level": "2",
+  "url": "sec-ProductQuotientRule.html#thm-QuotientRule",
+  "type": "Theorem",
+  "number": "2.4.3",
+  "title": "Quotient Rule.",
+  "body": " Quotient Rule   If and are differentiable at and then: .  For convenience, this is often written as: .   "
+},
+{
+  "id": "subsec-QuotientRule-10",
+  "level": "2",
+  "url": "sec-ProductQuotientRule.html#subsec-QuotientRule-10",
+  "type": "Example",
+  "number": "2.4.4",
+  "title": "",
+  "body": "  Use the to find the following derivatives.       Once you have this derivative, confirm that it is the same as , the way that we found it using the Product Rule.             "
+},
+{
+  "id": "subsec-MoreTrigDerivatives-3",
+  "level": "2",
+  "url": "sec-ProductQuotientRule.html#subsec-MoreTrigDerivatives-3",
+  "type": "Example",
+  "number": "2.4.5",
+  "title": "",
+  "body": "  Find the derivatives of the remaining trigonometric functions.        Write and use the Quotient Rule.        Write and use the Quotient Rule.        Write and use the Quotient Rule.        Write and use the Quotient Rule.   "
 },
 {
   "id": "sec-ChainRule",
