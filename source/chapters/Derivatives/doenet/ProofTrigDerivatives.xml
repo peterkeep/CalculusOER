@@ -1,0 +1,72 @@
+<!-- https://www.doenet.org/portfolioeditor/_tiSNJ8r6ClpqXbBBZfagS/_GwJYXnAbtbRBaViFdsEPl -->
+
+<setup>
+  <function name="f" styleNumber="1">-sqrt(1-x^2)</function>
+  <function name="g" domain="[-1,cos($a+$delta)]" styleNumber="1">sqrt(1-x^2)</function>
+  <function name="h" domain="[cos($a),1]" styleNumber="1">sqrt(1-x^2)</function>
+  <point name="point" styleNumber="1">(cos($a), sin($a))</point>
+  <point name="dpoint" styleNumber="3">(cos($a+$delta), sin($a+$delta))</point>
+  <number name="a">pi/5</number>
+  <number name="delta">-$d</number>
+  <function name="arc" styleNumber="4" domain="[cos($a+$delta),cos($a)]">
+    sqrt(1-x^2)
+  </function>
+</setup>
+
+<p>
+  <em>Instructions:</em> Move the slider to change the size of <m>\Delta \theta</m>. Specifically we want to keep an eye on these things:
+  <ol>
+    <li>
+      <p>Note that as <m>\Delta \theta\to 0</m>, the purple arc converges on the straight line connecting the two points on the circle. This means that the purple shape becomes a triangle in the limit.
+      </p>
+    </li>
+    <li>
+      <p>We can see that the purple triangle will become similar to the red triangle. Since the hypotenuse of the red triangle is 1 and the hypotenuse of the eventual purple triangle will be <m>\Delta \theta</m>, we can say that <m>\Delta \theta</m> is the scaling factor between these triangles.</p>
+    </li>
+  </ol>
+</p>
+
+<slider from="-pi/8" to="-0.001" name="d" step="0.001" 
+  initialValue="-pi/8" showTicks="false" showValue="false">
+  <label><m>\Delta \theta \to 0</m></label>
+</slider>
+
+<graph xmin="-0.1" xmax="1.3" ymin="-0.1" ymax="1.1" identicalAxisScales>
+<!-- Circle -->
+  $f
+  $g
+  $h
+  $arc
+  <label anchor="(1.05cos($a/2), sin($a/2))" draggable="false"><m>\theta</m></label>
+  <lineSegment name="height" endpoints="($point.x, $a-$a) $point" 
+    styleNumber="2"/>
+<!--   Delta theta -->
+  <lineSegment endpoints="$point $dpoint" styleNumber="5"/>
+  <lineSegment endpoints="($a-$a, $a-$a) $dpoint" styleNumber="5"/>
+<!--  Red Triangle -->
+  <label styleNumber="2" anchor="(cos($a)-0.07, sin($a)/2)">
+    <m>\sin(\theta)</m>
+  </label>
+  <lineSegment name="width" endpoints="($point.x, $a-$a) ($a-$a, $a-$a)" 
+    styleNumber="2"/>
+  <label styleNumber="2" anchor="(cos($a)/2, 0.05)"><m>\cos(\theta)</m></label>
+  <label styleNumber="2" anchor="(cos($a)/2+0.02, sin($a)/2-0.02)"><m>1</m></label>
+  <lineSegment endpoints="($a-$a, $a-$a) $point" styleNumber="2"/>
+<!-- Purple Triangle -->
+  <lineSegment endpoints="$dpoint ($point.x, $dpoint.y)" styleNumber="4"/>
+  <lineSegment endpoints="$point ($point.x, $dpoint.y)" styleNumber="4"/>
+  <label anchor="(($point.x + $dpoint.x)/2, $dpoint.y+0.05)"
+    styleNumber="4">
+    <m>\cos(\theta) - \cos(\theta+\Delta\theta)</m>
+  </label>
+  <label anchor="($point.x+0.02, ($dpoint.y+$point.y)/2)"
+    styleNumber="4" positionFromAnchor="right">
+    <m>\sin(\theta+\Delta\theta) - \sin(\theta)</m>
+  </label>
+  <label anchor="(cos($a+$delta/2-0.01), sin($a+$delta/2)-0.01)" 
+    positionFromAnchor="lowerleft" styleNumber="4">
+    <m>\Delta \theta</m>
+  </label>
+
+  
+</graph>
