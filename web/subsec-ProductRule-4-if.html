@@ -96,17 +96,17 @@ window.MathJax = {
   <function name="f">x-0.1x</function>
   <function name="g">sqrt(x)+0.1x</function>
   <number name="init">3</number>
-  <polygon name="fg" stylenumber="5" draggable="false" layer="2"
+  <polygon name="fg" stylenumber="5" draggable="false" layer="1"
       vertices="(0,0) 
                 ($$f($init),0) 
                 ($$f($init),$$g($init)) 
                 (0,$$g($init))" />
-  <polygon name="fgdelta" stylenumber="4" draggable="false" layer="1"
+  <polygon name="fgdelta" stylenumber="4" draggable="false" layer="2"
       vertices="(0,$$g($init)) 
                 ($$f($init),$$g($init)) 
                 ($$f($init),$$g($init+$delta)) 
-                (0,$$g($init+$delta))" filled />
-  <polygon name="fdeltag" stylenumber="4" draggable="false" layer="1"
+                (0,$$g($init+$delta))" filled/>
+  <polygon name="fdeltag" stylenumber="4" draggable="false" layer="2"
       vertices="($$f($init),0) 
                 ($$f($init+$delta),0) 
                 ($$f($init+$delta),$$g($init)) 

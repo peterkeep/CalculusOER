@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/doenet-standalone-test@0.6.0/dist/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/doenet-standalone-test@0.6.0/dist/doenet-standalone.min.js"></script><script>function onLoad() {window.renderDoenetToContainer(document.querySelector(".doenetml-applet"))}</script>
+</head>
+<body class="ptx-content ignore-math">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
+\newcommand{\ddx}[1]{\frac{d}{dx}\left(#1\right)}
+\newcommand{\Ddx}[1]{\dfrac{d}{dx}\left(#1\right)}
+\newcommand{\dd}[2]{\frac{d#1}{d#2}}
+\newcommand{\Dd}[2]{\dfrac{d#1}{d#2}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\Dydx}{\dfrac{dy}{dx}}
+\newcommand{\blank}[1]{\underline{\hspace{#1}}} 
+\newcommand{\dint}{\displaystyle \int}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="width:600px; height:660px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet">
+<div class="doenetml-loading" style="text-align:center">
+<p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
+<p>Waiting on the page to load...</p>
+</div>
+<script type="text/doenetml">
+                    <!-- https://www.doenet.org/portfolioeditor/_5i2IebqNfQ3H0oXwpVuAR/_dj0n4pwWTWRmtG17Tqzv4 -->
+
+<setup>
+  <function name="f" styleNumber="4">x^2+3</function>
+  <function name="h" styleNumber="3">2x+2</function>
+  <lineSegment endpoints="(1-$delta, $$f(1-$delta)) (1-$delta, $$h(1-$delta))"/>
+</setup>
+
+<p><em>Instructions:</em> Sketch a graph of a function <m>g(x)</m> where <m>f(x)\leq g(x)\leq h(x)</m> for the <m>x</m>-values near 1 (but not necessarily for <m>x=1</m>). To help visualize this, your sketch needs to pass through the red lines as <m>x\to 1</m>. </p>
+
+<slider name="delta" from="-2" to="-0.001" step="0.001" 
+  initialValue="-2" showTicks="false" showValue="false">
+  <label><m>x\to 1</m></label>
+</slider>
+
+<graph xmin="-2" xmax="4" ymin="-1" ymax="12">
+  $f
+  <label styleNumber="4" anchor="(1.5, $$f(1.5)+1)" draggable="false"><m>f(x)</m></label>
+  $h
+  <label styleNumber="3" anchor="(1.5, $$h(1.5)-1)" draggable="false"><m>h(x)</m></label>
+  <lineSegment endpoints="(1-$delta, $$f(1-$delta)) 
+    (1-$delta, $$h(1-$delta))" styleNumber="2"/>
+  <lineSegment endpoints="(1+$delta, $$f(1+$delta)) 
+    (1+$delta, $$h(1+$delta))" styleNumber="2"/>
+</graph>
+                </script>
+</div></div>
+</body>
+</html>
