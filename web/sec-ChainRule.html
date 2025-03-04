@@ -227,7 +227,14 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-MoreTrigDerivatives" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Derivatives of (the Rest of the) Trigonometric Functions</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-ChainRule.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The Chain Rule</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-ChainRule.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The Chain Rule</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-CompositionDecomposition" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Composition and Decomposition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-ChainRule" class="internal"><span class="codenumber">2.5.2</span> <span class="title">The Chain Rule, Intuitively</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-DoingChainRule" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Doing is Different than Knowing</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -433,10 +440,50 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-ChainRule"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.5</span><span class="space"> </span><span class="title">The Chain Rule</span>
 </h2>
-<div class="para" id="sec-ChainRule-2">Text of section.</div>
-<article class="theorem theorem-like" id="thm-ChainRule"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">The Chain Rule.</span>
+<section class="introduction" id="sec-ChainRule-2"><div class="para" id="sec-ChainRule-2-1">We’ve been building up some intuition and rules to help us think about differentiating different functions and combinations of functions. We can find derivatives of scaled functions, sums of functions, differences of functions, products of functions, and also quotients of functions.</div>
+<div class="para" id="sec-ChainRule-2-2">In this section, we’ll look at our last operation between functions: composition.</div></section><section class="subsection" id="subsec-CompositionDecomposition"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="space"> </span><span class="title">Composition and Decomposition</span>
 </h3>
+<div class="para" id="subsec-CompositionDecomposition-2">An important part of finding derivatives of products and quotients is identifying the component functions that are being multiplied/divided (often labeled <span class="process-math">\(u(x)\)</span> or just <span class="process-math">\(u\)</span> and <span class="process-math">\(v(x)\)</span> or just <span class="process-math">\(v\)</span>). From there, we find the derivatives of each of the component functions, and then use the formula from the <a href="sec-ProductQuotientRule.html#thm-ProductRule" class="xref" data-knowl="./knowl/xref/thm-ProductRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.3: Product Rule">Product Rule</a> or <a href="sec-ProductQuotientRule.html#thm-QuotientRule" class="xref" data-knowl="./knowl/xref/thm-QuotientRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.5: Quotient Rule">Quotient Rule</a> to put the pieces together.</div>
+<div class="para" id="subsec-CompositionDecomposition-3">Thinking about derivatives of composed functions will be the same: we’ll need to identify what functions are being composed inside of other functions, and use those pieces in some formulaic way to represent the derivative. On that note, let’s remind ourselves and practice working with composition (and decomposition) of functions.</div>
+<article class="activity project-like" id="act-CompositionDecomposition"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">Composition (and Decomposition) Pictionary.</span>
+</h4>
+<div class="introduction" id="act-CompositionDecomposition-2"><div class="para" id="act-CompositionDecomposition-2-1">This activity will involve a second group, or at least a partner. We’ll go through the first part of this activity, and then connect with a second group/person to finish the second part.</div></div>
+<article class="task exercise-like" id="act-CompositionDecomposition-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-CompositionDecomposition-3-1-1">Build two functions, calling them <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{.}\)</span> Pick whatever kinds of functions you’d like, but this activity will work best if these functions are in a kind of sweet-spot between "simple" and "complicated," but don’t overthink this.</div></article><article class="task exercise-like" id="act-CompositionDecomposition-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-CompositionDecomposition-4-1-1">Compose <span class="process-math">\(g(x)\)</span> inside of <span class="process-math">\(f(x)\)</span> to create <span class="process-math">\((f\circ g)(x)\text{,}\)</span> which we can also write as <span class="process-math">\(f\left(g(x)\right)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="act-CompositionDecomposition-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-CompositionDecomposition-5-1-1">Write your composed <span class="process-math">\(f\left(g(x)\right)\)</span> function on a separate sheet of paper. Do not leave any indication of what your chosen <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are. Just write your composed function by itself.</div> <div class="para" id="act-CompositionDecomposition-5-1-2">Now, pass this composed <span class="process-math">\(f\left(g(x)\right)\)</span> to your partner/a second group.</div></article><article class="task exercise-like" id="act-CompositionDecomposition-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-CompositionDecomposition-6-1-1">You should have received a new function from some other person/group. It is different than yours, but also labeled <span class="process-math">\(f\left(g(x)\right)\)</span> (with different choices of <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span>).</div> <div class="para" id="act-CompositionDecomposition-6-1-2">Identify a possibility for <span class="process-math">\(f(x)\text{,}\)</span> the outside function in this composition, as well as a possibility for <span class="process-math">\(g(x)\text{,}\)</span> the inside function in this composition. You can check your answer by composing these!</div></article><article class="task exercise-like" id="act-CompositionDecomposition-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-CompositionDecomposition-7-1-1">Write a different pair of possibilities for <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> that will still give you the same composed function, <span class="process-math">\(f\left(g(x)\right)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="act-CompositionDecomposition-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-CompositionDecomposition-8-1-1">Check with your partner/the second group: did you identify the pair of functions that they originally used?</div> <div class="para" id="act-CompositionDecomposition-8-1-2">Did whoever you passed your composed function to correctly identify your functions?</div></article></article><div class="para" id="subsec-CompositionDecomposition-5">A big thing to notice here is that when we pick the pieces of functions that we think were composed inside of each other, there’s not a single obvious answer. This is pretty different compared to, say, using the <a href="sec-ProductQuotientRule.html#thm-QuotientRule" class="xref" data-knowl="./knowl/xref/thm-QuotientRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.5: Quotient Rule">Quotient Rule</a>. In these quotients, we have a natural division (literally) between the pieces. Here, it’s much more subjective for us when we decide to label an "inside" function and an "outside" function.</div>
+<div class="para" id="subsec-CompositionDecomposition-6">We will build up our intuition to find a good balance for how we pick these.</div></section><section class="subsection" id="subsec-ChainRule"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="space"> </span><span class="title">The Chain Rule, Intuitively</span>
+</h3>
+<div class="para" id="subsec-ChainRule-2">Before we build the Chain Rule for differentiating composed functions, we should talk about some notation. Earlier (in <a href="sec-InterpretingDerivatives.html#subsec-DerivativeNotation" class="internal" title="Subsection 2.2.5: Notation for Derivatives">Subsection 2.2.5</a>) we talked about the derivative notation, <span class="process-math">\(\dydx\text{.}\)</span> One of the things we mentioned is that while we know that the derivative is an instantaneous rate of change, this notation is helpful to tell us <em class="emphasis">what</em> is changing with regard to <em class="emphasis">what</em>.</div>
+<div class="para" id="subsec-ChainRule-3">In <span class="process-math">\(\dydx\text{,}\)</span> we are calculating how much the <span class="process-math">\(y\)</span>-variable changes when <span class="process-math">\(x\)</span> increases. If we talked about <span class="process-math">\(\dd{f}{t}\text{,}\)</span> then we are discussing how much <span class="process-math">\(f\)</span> changes for an increase in <span class="process-math">\(t\text{,}\)</span> whatever these variables represent.</div>
+<article class="activity project-like" id="act-Gears"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Gears and Chains.</span>
+</h4>
+<div class="introduction" id="act-Gears-2">
+<div class="para" id="act-Gears-2-1">Let’s think about some gears. We’ve got three gears, all different sizes. But the gears are linked together, and a small motor works to spin one of the gears. Since the gears are linked, when one gear spins, they all do. But since they are different sizes, they complete a different number of revolutions: the smaller ones spin more times than the larger ones, since they have a smaller circumference.</div>
+<figure class="figure figure-like" id="fig-ChainGears"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/./Derivatives/ChainRuleGears.gif" class="contained" alt='Three circles, each with a point on it spinning around. The first circle is the largest: it is labeled "Gear A." The second circle is the smallest: it is labeled "Gear B." The last circle is a medium size: it is labeled "Gear C."'></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="act-Gears-2-3">For our purpose, let’s say that Gear A is being driven by the motor.</div>
+</div>
+<article class="task exercise-like" id="act-Gears-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-Gears-3-1-1">Let’s try to quantify how much "faster" Gear B is spinning compared to Gear A. How many revolutions does Gear B complete in the time it takes Gear A to complete one revolution?</div></article><article class="task exercise-like" id="act-Gears-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-Gears-4-1-1">Now quantify the speed of Gear C compared to its neighbor, Gear B. How many revolutions does Gear C complete in the time it takes Gear B to complete one revolution?</div></article><article class="task exercise-like" id="act-Gears-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-Gears-5-1-1">Use the above relative "speeds" to compare Gear C and Gear A: how many revolutions does Gear C complete in the time it takes Gear A to complete one revolution?</div> <div class="para" id="act-Gears-5-1-2">More importantly, how do we find this?</div></article><article class="task exercise-like" id="act-Gears-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-Gears-6-1-1">Now let’s translate this into some derivative notation: we’ve really been finding rates at which one thing changes (the speed of the gear spinning) relative to another’s.</div> <div class="para" id="act-Gears-6-1-2">Call the speed of Gear B compared to Gear A: <span class="process-math">\(\dd{B}{A}\text{.}\)</span> Now call the speed of Gear C compared to Gear B: <span class="process-math">\(\dd{C}{B}\text{.}\)</span> Come up with a formula to find <span class="process-math">\(\dd{C}{A}\text{.}\)</span>
+</div></article></article><div class="para" id="subsec-ChainRule-5">So what we need to do now is to somehow translate this intuitive idea of multiplying rates of change to build a strategy for thinking about derivatives of composed functions.</div>
+<div class="para" id="subsec-ChainRule-6">We can think of these linked gears as functions: Gear C changes based on what is happening with Gear B, which changes based on Gear A. We can translate Gear A to be an input variable, like <span class="process-math">\(x\text{.}\)</span> Then Gear B is a function based on that: we can call it <span class="process-math">\(g(x)\text{.}\)</span> Then Gear C is a function that takes in the position of Gear B (the function <span class="process-math">\(g(x)\)</span>), and so we can think of it as <span class="process-math">\(f(g(x))\text{.}\)</span>
+</div>
+<div class="para" id="subsec-ChainRule-7">To build the derivative rule for composite functions, we need to find how the "outside" function changes as the "inside" function changes (<span class="process-math">\(\dd{C}{B}\)</span> in this case) and multiply that by how the "inside" function changes as the input variable changes (<span class="process-math">\(\dd{B}{A}\)</span> here).</div>
+<article class="theorem theorem-like" id="thm-ChainRule"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">The Chain Rule.</span>
+</h4>
 <div class="para logical" id="thm-ChainRule-2-1">
 <div class="para">For the composite function <span class="process-math">\(y=f(g(x))\text{,}\)</span> if we define <span class="process-math">\(u=g(x)\)</span> and <span class="process-math">\(y=f(u)\text{,}\)</span> then, as long as both <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are differentiable at <span class="process-math">\(u\)</span> and <span class="process-math">\(x\)</span> respectively:</div>
 <div class="displaymath process-math">
@@ -450,7 +497,52 @@ eBookConfig.enable_chatcodes =  false;
 \dydx = \dd{y}{u} \cdot \dd{u}{x} \hspace{1cm} \text{or}\hspace{1cm} \frac{d}{dx}\left(f(g(x))\right) = f'(g(x))\cdot g'(x)\text{.}
 \end{equation*}
 </div>
-</div></article></section></div>
+</div></article></section><section class="subsection" id="subsec-DoingChainRule"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="space"> </span><span class="title">Doing is Different than Knowing</span>
+</h3>
+<div class="para" id="subsec-DoingChainRule-2">It is lovely to know that the Chain Rule is really just linking the two rates of change together to connect a function with an input variable through a middle processing function. That’s great!</div>
+<div class="para logical" id="subsec-DoingChainRule-3">
+<div class="para">But doing the Chain Rule is different than just knowing it, so let’s walk through a first example. Let’s find the following derivative:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{\sin(x^2)}
+\end{equation*}
+</div>
+<div class="para">We’ll call the "inside" function <span class="process-math">\(u=x^2\text{,}\)</span> so we can really write the whole function (normally we’re calling this <span class="process-math">\(y\)</span>) as <span class="process-math">\(y=\sin(u)\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-DoingChainRule-3-5">
+\begin{align*}
+\ddx{\underbrace{\sin(\overbrace{x^2}^{u})}_{y}}\amp =\dd{y}{u} \cdot \dd{u}{x}\\
+\amp = \frac{d}{du}\left(\sin(u)\right) \cdot \frac{d}{dx}\left(x^2\right)
+\end{align*}
+</div>
+<div class="para">What we can notice, here, is that <span class="process-math">\(\sin(u)\)</span> is just a function of some variable <span class="process-math">\(u\text{,}\)</span> and we want to find <span class="process-math">\(\dd{y}{u}\text{,}\)</span> the rate at which <span class="process-math">\(y=\sin(u)\)</span> changes with regard to its input variable. This might feel a bit strange, since <span class="process-math">\(u\)</span> isn’t just an input variable: it <em class="emphasis">means</em> something, since we have that <span class="process-math">\(u=x^2\text{.}\)</span> This is fine! The extra <span class="process-math">\(\dd{u}{x}\)</span> that we multiply will take care of linking this derivative to the input variable <span class="process-math">\(x\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-DoingChainRule-3-15">
+\begin{align*}
+\ddx{\underbrace{\sin(\overbrace{x^2}^{u})}_{y}}\amp  = \frac{d}{du}\left(\sin(u)\right) \cdot \frac{d}{dx}\left(x^2\right)\\
+\amp = \cos(u) \cdot 2x\\
+\amp = \cos(x^2)\cdot 2x \\
+\amp =  2x\cos(x^2)
+\end{align*}
+</div>
+<div class="para">After we finished differentiating <span class="process-math">\(\frac{d}{du}\left(\sin(u)\right)\text{,}\)</span> you’ll notice that we used the fact that <span class="process-math">\(u=x^2\)</span> to write our combination of derivatives (the derivative of the "outside" function and the derivative of the "inside" function) in terms of the same input variable again.</div>
+</div>
+<div class="para" id="subsec-DoingChainRule-4">The last line, rewriting <span class="process-math">\(\cos(x^2)\cdot 2x \)</span> as <span class="process-math">\(2x\cos(x^2)\text{,}\)</span> is just for aesthetics.</div>
+<div class="para" id="subsec-DoingChainRule-5">Now you’re ready to try some more examples! In each, focus on identifying a natural selection for the "inside" function, <span class="process-math">\(u\text{.}\)</span>
+</div>
+<details id="subsec-DoingChainRule-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-DoingChainRule-6-1"><div class="para" id="subsec-DoingChainRule-6-1-1">Use the Chain Rule to differentiate the following:</div></div>
+<article class="task exercise-like" id="subsec-DoingChainRule-6-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-DoingChainRule-6-2-1-1"><span class="process-math">\(\Ddx{\sqrt{x^2+4}}\)</span></div>
+<div class="solutions"><details id="subsec-DoingChainRule-6-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-DoingChainRule-6-2-2-1">Notice that <span class="process-math">\(x^2+4\)</span> is composed under the square root. Use <span class="process-math">\(u=x^2+4\text{.}\)</span>
+</div></div></details></div></article><article class="task exercise-like" id="subsec-DoingChainRule-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-DoingChainRule-6-3-1-1"><span class="process-math">\(\Ddx{e^{\tan(x)}}\)</span></div>
+<div class="solutions"><details id="subsec-DoingChainRule-6-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-DoingChainRule-6-3-2-1">Try letting <span class="process-math">\(u=\tan(x)\text{,}\)</span> since it’s composed inside the exponent of the exponential function.</div></div></details></div></article><article class="task exercise-like" id="subsec-DoingChainRule-6-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-DoingChainRule-6-4-1-1"><span class="process-math">\(\Ddx{\sin^5(x)}\)</span></div>
+<div class="solutions"><details id="subsec-DoingChainRule-6-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-DoingChainRule-6-4-2-1">You could think about this as <span class="process-math">\(\Ddx{\sin(x)\sin(x)\sin(x)\sin(x)\sin(x)}\)</span> and try to use a very annoying product rule, but it might be easier to think about this as <span class="process-math">\(\Ddx{(\sin(x))^5}\text{.}\)</span>
+</div></div></details></div></article></article></details></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-ProductQuotientRule.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-ImplicitDifferentiation.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
