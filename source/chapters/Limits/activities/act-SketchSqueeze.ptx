@@ -1,4 +1,4 @@
-<activity xml:id="act-SketchSqueeze">
+<activity xml:id="act-SketchSqueeze" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Sketch This Function Around This Point</title>
     <task>
         <statement>
@@ -6,17 +6,17 @@
                 Sketch or visualize the functions <m>f(x) = x^2+3</m> and <m>h(x)=2x+2</m>, especially around <m>x=1</m>.
             </p>
         </statement>
-        <hint>
-            <p>
-                <interactive desmos="tagisgwxw2" width="60%" aspect="2:3" />
-            </p>
-        </hint>
     </task>
     <task>
         <statement>
             <p>
-                Sketch some other function, <m>g(x)</m> where <m>f(x)\leq g(x)\leq h(x)</m> for the <m>x</m>-values around (byt maybe not at) <m>x=1</m>.
+                Now we want to add in a sketch of some function <m>g(x)</m>, all the while satisfying the requirements of the Squeeze Theorem.
             </p>
+            <interactive platform="doenetml" width="100%" aspect="1:1.1">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/SketchSqueezeTheorem.xml"/>
+                </slate>
+            </interactive>
         </statement>
     </task>
     <task>
