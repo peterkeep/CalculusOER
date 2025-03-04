@@ -3,22 +3,139 @@
 <section xml:id="sec-ChainRule" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Chain Rule</title>
 
-  <p> Text of section. </p>
-  <theorem xml:id="thm-ChainRule">
+  <introduction>
+    <p>
+      We've been building up some intuition and rules to help us think about differentiating different functions and combinations of functions. We can find derivatives of scaled functions, sums of functions, differences of functions, products of functions, and also quotients of functions.
+    </p>
+    <p>
+      In this section, we'll look at our last operation between functions: composition.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-CompositionDecomposition">
+    <title>Composition and Decomposition</title>
+    <p>
+      An important part of finding derivatives of products and quotients is identifying the component functions that are being multiplied/divided (often labeled <m>u(x)</m> or just <m>u</m> and <m>v(x)</m> or just <m>v</m>). From there, we find the derivatives of each of the component functions, and then use the formula from the <xref ref="thm-ProductRule" text="title"/> or <xref ref="thm-QuotientRule" text="title"/> to put the pieces together.
+    </p>
+    <p>
+      Thinking about derivatives of composed functions will be the same: we'll need to identify what functions are being composed inside of other functions, and use those pieces in some formulaic way to represent the derivative. On that note, let's remind ourselves and practice working with composition (and decomposition) of functions.
+    </p>
+    <xi:include href="./activities/act-CompositionDecomposition.ptx" />
+    <p>
+      A big thing to notice here is that when we pick the pieces of functions that we think were composed inside of each other, there's not a single obvious answer. This is pretty different compared to, say, using the <xref ref="thm-QuotientRule" text="title"/>. In these quotients, we have a natural division (literally) between the pieces. Here, it's much more subjective for us when we decide to label an "inside" function and an "outside" function.
+    </p>
+    <p>
+      We will build up our intuition to find a good balance for how we pick these.
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-ChainRule">
+    <title>The Chain Rule, Intuitively</title>
+    <p>
+      Before we build the Chain Rule for differentiating composed functions, we should talk about some notation. Earlier (in <xref ref="subsec-DerivativeNotation"/>) we talked about the derivative notation, <m>\dydx</m>. One of the things we mentioned is that while we know that the derivative is an instantaneous rate of change, this notation is helpful to tell us <em>what</em> is changing with regard to <em>what</em>.
+    </p>
+    <p>
+      In <m>\dydx</m>, we are calculating how much the <m>y</m>-variable changes when <m>x</m> increases. If we talked about <m>\dd{f}{t}</m>, then we are discussing how much <m>f</m> changes for an increase in <m>t</m>, whatever these variables represent.
+    </p>
+    <xi:include href="./activities/act-Gears.ptx" />
+    <p>
+      So what we need to do now is to somehow translate this intuitive idea of multiplying rates of change to build a strategy for thinking about derivatives of composed functions.
+    </p>
+    <p>
+      We can think of these linked gears as functions: Gear C changes based on what is happening with Gear B, which changes based on Gear A. We can translate Gear A to be an input variable, like <m>x</m>. Then Gear B is a function based on that: we can call it <m>g(x)</m>. Then Gear C is a function that takes in the position of Gear B (the function <m>g(x)</m>), and so we can think of it as <m>f(g(x))</m>.
+    </p>
+    <p>
+      To build the derivative rule for composite functions, we need to find how the "outside" function changes as the "inside" function changes (<m>\dd{C}{B}</m> in this case) and multiply that by how the "inside" function changes as the input variable changes (<m>\dd{B}{A}</m> here).
+    </p>
+    <theorem xml:id="thm-ChainRule">
     <title>The Chain Rule</title>
       <statement>
-      <p>
-        For the composite function <m>y=f(g(x))</m>, if we define <m>u=g(x)</m> and <m>y=f(u)</m>, then, as long as both <m>f</m> and <m>g</m> are differentiable at <m>u</m> and <m>x</m> respectively:
-        <me>
-          \ddx{f(g(x))} = \frac{d}{du}\left(f(u)\right)\cdot \frac{d}{dx}\left(g(x)\right)
-        </me>.
-        Alternatively, this can be written as:
-        <me>
-          \dydx = \dd{y}{u} \cdot \dd{u}{x} \hspace{1cm} \text{or}\hspace{1cm} \frac{d}{dx}\left(f(g(x))\right) = f'(g(x))\cdot g'(x)
-        </me>.
-      </p>
-    </statement>
-  </theorem>
+        <p>
+          For the composite function <m>y=f(g(x))</m>, if we define <m>u=g(x)</m> and <m>y=f(u)</m>, then, as long as both <m>f</m> and <m>g</m> are differentiable at <m>u</m> and <m>x</m> respectively:
+          <me>
+            \ddx{f(g(x))} = \frac{d}{du}\left(f(u)\right)\cdot \frac{d}{dx}\left(g(x)\right)
+          </me>.
+          Alternatively, this can be written as:
+          <me>
+            \dydx = \dd{y}{u} \cdot \dd{u}{x} \hspace{1cm} \text{or}\hspace{1cm} \frac{d}{dx}\left(f(g(x))\right) = f'(g(x))\cdot g'(x)
+          </me>.
+        </p>
+      </statement>
+    </theorem>
+  </subsection>
+  <subsection xml:id="subsec-DoingChainRule">
+    <title>Doing is Different than Knowing</title>
+    <p>
+      It is lovely to know that the Chain Rule is really just linking the two rates of change together to connect a function with an input variable through a middle processing function. That's great!
+    </p>
+    <p>
+      But doing the Chain Rule is different than just knowing it, so let's walk through a first example. Let's find the following derivative:
+      <me>
+        \ddx{\sin(x^2)}
+      </me>
+      We'll call the "inside" function <m>u=x^2</m>, so we can really write the whole function (normally we're calling this <m>y</m>) as <m>y=\sin(u)</m>.
+      <md>
+        <mrow> \ddx{\underbrace{\sin(\overbrace{x^2}^{u})}_{y}}\amp =\dd{y}{u} \cdot \dd{u}{x}</mrow>
+        <mrow> \amp = \frac{d}{du}\left(\sin(u)\right) \cdot \frac{d}{dx}\left(x^2\right)</mrow>
+      </md>
+      What we can notice, here, is that <m>\sin(u)</m> is just a function of some variable <m>u</m>, and we want to find <m>\dd{y}{u}</m>, the rate at which <m>y=\sin(u)</m> changes with regard to its input variable. This might feel a bit strange, since <m>u</m> isn't just an input variable: it <em>means</em> something, since we have that <m>u=x^2</m>. This is fine! The extra <m>\dd{u}{x}</m> that we multiply will take care of linking this derivative to the input variable <m>x</m>.
+      <md>
+        <mrow> \ddx{\underbrace{\sin(\overbrace{x^2}^{u})}_{y}}\amp  = \frac{d}{du}\left(\sin(u)\right) \cdot \frac{d}{dx}\left(x^2\right)</mrow>
+        <mrow> \amp = \cos(u) \cdot 2x</mrow>
+        <mrow> \amp = \cos(x^2)\cdot 2x </mrow>
+        <mrow> \amp =  2x\cos(x^2)</mrow>
+      </md>
+      After we finished differentiating <m>\frac{d}{du}\left(\sin(u)\right)</m>, you'll notice that we used the fact that <m>u=x^2</m> to write our combination of derivatives (the derivative of the "outside" function and the derivative of the "inside" function) in terms of the same input variable again.
+    </p>
+    <p>
+      The last line, rewriting <m>\cos(x^2)\cdot 2x </m> as <m>2x\cos(x^2)</m>, is just for aesthetics.
+    </p>
+    <p>
+      Now you're ready to try some more examples! In each, focus on identifying a natural selection for the "inside" function, <m>u</m>.
+    </p>
+    <example>
+      <introduction>
+        <p>
+          Use the Chain Rule to differentiate the following:
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\Ddx{\sqrt{x^2+4}}</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Notice that <m>x^2+4</m> is composed under the square root. Use <m>u=x^2+4</m>.
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\Ddx{e^{\tan(x)}}</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Try letting <m>u=\tan(x)</m>, since it's composed inside the exponent of the exponential function.
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\Ddx{\sin^5(x)}</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            You could think about this as <m>\Ddx{\sin(x)\sin(x)\sin(x)\sin(x)\sin(x)}</m> and try to use a very annoying product rule, but it might be easier to think about this as <m>\Ddx{(\sin(x))^5}</m>.
+          </p>
+        </hint>
+      </task>
+    </example>
+  </subsection>
+  
   
 
 </section>

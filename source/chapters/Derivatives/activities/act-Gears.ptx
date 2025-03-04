@@ -1,0 +1,51 @@
+<activity xml:id="act-Gears" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Gears and Chains</title>
+    <introduction>
+        <p>
+            Let's think about some gears. We've got three gears, all different sizes. But the gears are linked together, and a small motor works to spin one of the gears. Since the gears are linked, when one gear spins, they all do. But since they are different sizes, they complete a different number of revolutions: the smaller ones spin more times than the larger ones, since they have a smaller circumference.
+        </p>
+        <figure xml:id="fig-ChainGears">
+            <caption></caption>
+            <image source="./Derivatives/ChainRuleGears.gif" width="60%">
+                <shortdescription>Three circles, each with a point on it spinning around. The first circle is the largest: it is labeled "Gear A." The second circle is the smallest: it is labeled "Gear B." The last circle is a medium size: it is labeled "Gear C."</shortdescription>
+            </image>
+        </figure>
+        <p>
+            For our purpose, let's say that Gear A is being driven by the motor.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Let's try to quantify how much "faster" Gear B is spinning compared to Gear A. How many revolutions does Gear B complete in the time it takes Gear A to complete one revolution?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now quantify the speed of Gear C compared to its neighbor, Gear B. How many revolutions does Gear C complete in the time it takes Gear B to complete one revolution?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use the above relative "speeds" to compare Gear C and Gear A: how many revolutions does Gear C complete in the time it takes Gear A to complete one revolution?
+            </p>
+            <p>
+                More importantly, how do we find this?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now let's translate this into some derivative notation: we've really been finding rates at which one thing changes (the speed of the gear spinning) relative to another's.
+            </p>
+            <p>
+                Call the speed of Gear B compared to Gear A: <m>\dd{B}{A}</m>. Now call the speed of Gear C compared to Gear B: <m>\dd{C}{B}</m>. Come up with a formula to find <m>\dd{C}{A}</m>.
+            </p>
+        </statement>
+    </task>
+</activity>

@@ -1,0 +1,59 @@
+<activity xml:id="act-CompositionDecomposition" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Composition (and Decomposition) Pictionary</title>
+    <introduction>
+        <p>
+            This activity will involve a second group, or at least a partner. We'll go through the first part of this activity, and then connect with a second group/person to finish the second part.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Build two functions, calling them <m>f(x)</m> and <m>g(x)</m>. Pick whatever kinds of functions you'd like, but this activity will work best if these functions are in a kind of sweet-spot between "simple" and "complicated," but don't overthink this.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Compose <m>g(x)</m> inside of <m>f(x)</m> to create <m>(f\circ g)(x)</m>, which we can also write as <m>f\left(g(x)\right)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Write your composed <m>f\left(g(x)\right)</m> function on a separate sheet of paper. Do not leave any indication of what your chosen <m>f(x)</m> and <m>g(x)</m> are. Just write your composed function by itself.
+            </p>
+            <p>
+                Now, pass this composed <m>f\left(g(x)\right)</m> to your partner/a second group.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                You should have received a new function from some other person/group. It is different than yours, but also labeled <m>f\left(g(x)\right)</m> (with different choices of <m>f(x)</m> and <m>g(x)</m>).
+            </p>
+            <p>
+                Identify a possibility for <m>f(x)</m>, the outside function in this composition, as well as a possibility for <m>g(x)</m>, the inside function in this composition. You can check your answer by composing these!
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Write a different pair of possibilities for <m>f(x)</m> and <m>g(x)</m> that will still give you the same composed function, <m>f\left(g(x)\right)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Check with your partner/the second group: did you identify the pair of functions that they originally used?
+            </p>
+            <p>
+                Did whoever you passed your composed function to correctly identify your functions?
+            </p>
+        </statement>
+    </task>
+</activity>
