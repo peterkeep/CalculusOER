@@ -1,0 +1,37 @@
+<!-- https://www.doenet.org/portfolioeditor/_3Qp7y1YuT4I4A6cRf8fyX/_a3iZpqOIOdMIWG2PfkR9V -->
+
+<setup>
+  <number name="a">$$uinv(1/2)</number>
+  <number name="b">$$uinv(4)</number>
+  <function name="u">x^(3-$h)</function>
+  <derivative name="dudx">$u</derivative>
+  <function name="uinv">x^(1/(3-$h))</function>
+  <function name="f">sin(x)</function>
+  <function name="fu" domain="[0,infinity)">$$f($u)$dudx</function>
+</setup>
+<p><em>Instructions:</em> Slide to perform the variable substitution: 
+  <md>
+    <mrow>u \amp= g(x)</mrow> 
+    <mrow>du\amp=g'(x)\;dx </mrow>
+  </md>
+</p>
+<slider name="h" from="1" to="2" step="0.001" initialValue="1"
+  showTicks="false" showValue="false">
+  <label>Slide from <m>x</m> to <m>u</m></label>
+</slider>
+
+<graph xmin="-0.2" xmax="$$uinv(4)+0.5" ymin="-3.2" ymax="3.2">
+  $fu
+  <lineSegment endpoints="($a, 0) ($a, $$fu($a))" draggable="false" styleNumber="6"/>
+  <lineSegment endpoints="($b, 0) ($b, $$fu($b))" draggable="false" styleNumber="6"/>
+  <regionBetweenCurveXAxis function="$fu" boundaryValues="$a $b"/>
+</graph>
+
+<p>
+    Note how the changes in the heights of the function correspond with changes in the width of the interval to preserve the area. 
+  <md>
+    <mrow>
+      \int_{x=a}^{x=b} f((g(x))g'(x)\;dx \amp = \int_{u=g(a)}^{u=g(b)} f(u)\;du 
+    </mrow>
+  </md>
+</p>

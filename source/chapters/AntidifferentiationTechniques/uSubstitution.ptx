@@ -2,6 +2,25 @@
 
 <section xml:id="sec-uSubstitution" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title><m>u</m>-Substitution</title>
+
+    <subsection xml:id="subsec-UndoChainRule">
+        <title>Undoing the Chain Rule</title>
+        <p>
+            
+        </p>
+    </subsection>
+
+    <subsection xml:id="subsec-uSubDefiniteIntegrals">
+        <title>Substitution for Definite Integrals</title>
+        <p>
+            
+        </p>
+         <interactive platform="doenetml" width="90%" aspect="1:1.5">
+        <slate surface="doenetml">
+            <xi:include parse="text" href="./doenet/uSubDefinite.xml"/>
+        </slate>
+    </interactive>
+    </subsection>
     
     <subsection xml:id="subsec-MoreToTranslate">
         <title>More to Translate</title>
