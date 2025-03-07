@@ -1465,7 +1465,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.2",
   "title": "<span class=\"process-math\">\\(u\\)<\/span>-Substitution",
-  "body": " -Substitution   More to Translate    Integrate the following, making sure to translate the whole integrand function to be written in terms of .        We can write as , or if you really want to, we can write it as          "
+  "body": " -Substitution   Undoing the Chain Rule      Substitution for Definite Integrals       More to Translate    Integrate the following, making sure to translate the whole integrand function to be written in terms of .        We can write as , or if you really want to, we can write it as          "
 },
 {
   "id": "subsec-MoreToTranslate-2",
