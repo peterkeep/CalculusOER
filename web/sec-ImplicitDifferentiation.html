@@ -242,7 +242,10 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Implicit Differentiation</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-DerivativeOperator" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Using a Derivative as an Operator</span></a></div></li></ul>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-ExplicitImplicit" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Explicit vs. Implicit Definitions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-DerivativeOperator" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Using a Derivative as an Operator</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DerivativeInverse.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Derivatives of Inverse Functions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Logarithmic Differentiation</span></a></div></li>
@@ -444,10 +447,157 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-ImplicitDifferentiation"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">3.1</span><span class="space"> </span><span class="title">Implicit Differentiation</span>
 </h2>
-<section class="introduction" id="sec-ImplicitDifferentiation-2"><div class="para" id="sec-ImplicitDifferentiation-2-1"></div></section><section class="subsection" id="subsec-DerivativeOperator"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="space"> </span><span class="title">Using a Derivative as an Operator</span>
+<section class="introduction" id="sec-ImplicitDifferentiation-2"><div class="para logical" id="sec-ImplicitDifferentiation-2-1">
+<div class="para">Let’s quickly recap what we’ve done with this new calculus object, the derivative:</div>
+<ol class="decimal" id="sec-ImplicitDifferentiation-2-1-1">
+<li id="sec-ImplicitDifferentiation-2-1-1-1"><div class="para" id="sec-ImplicitDifferentiation-2-1-1-1-1">We defined the derivative at a point (<a href="sec-IntroDerivatives.html#def-DerivativeAtPoint" class="xref" data-knowl="./knowl/xref/def-DerivativeAtPoint.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.1: Derivative at a Point">Definition 2.1.1</a>) to find the slope of a line touching a graph of a function <span class="process-math">\(f(x)\)</span> at a single point. We call this the "slope of the tangent line" at a point.</div></li>
+<li id="sec-ImplicitDifferentiation-2-1-1-2"><div class="para" id="sec-ImplicitDifferentiation-2-1-1-2-1">Once we calculated this slope, we quickly found a way to think about the derivative as a <em class="emphasis">function</em> (<a href="sec-IntroDerivatives.html#def-DerivativeFunction" class="xref" data-knowl="./knowl/xref/def-DerivativeFunction.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.2: The Derivative Function">Definition 2.1.2</a>) that connects <span class="process-math">\(x\)</span>-values with the slope of the line tangent to <span class="process-math">\(f(x)\)</span> at that <span class="process-math">\(x\)</span>-value.</div></li>
+<li id="sec-ImplicitDifferentiation-2-1-1-3"><div class="para" id="sec-ImplicitDifferentiation-2-1-1-3-1">We thought about how we could interpret the derivative as more than just a slope (<a href="sec-InterpretingDerivatives.html" class="internal" title="Section 2.2: Interpreting Derivatives">Section 2.2</a>). We can think about this as an instantaneous rate of change, and use it to add detail to how we think about mathematical models of different things.</div></li>
+<li id="sec-ImplicitDifferentiation-2-1-1-4"><div class="para" id="sec-ImplicitDifferentiation-2-1-1-4-1">We spent some time building up shortcuts, noticing patterns, and generalizing ways of finding these derivative functions for specific functions (<a href="sec-DerivativeRules.html" class="internal" title="Section 2.3: Some Early Derivative Rules">Section 2.3</a>) as well as combinations of those functions (<a href="sec-ProductQuotientRule.html" class="internal" title="Section 2.4: The Product and Quotient Rules">Section 2.4</a> and <a href="sec-ChainRule.html" class="internal" title="Section 2.5: The Chain Rule">Section 2.5</a>).</div></li>
+</ol>
+<div class="para">Our goal, now, is to generalize this a bit. What happens when we push past the restriction of only dealing with <em class="emphasis">functions</em>? Can we think of some reasonable <em class="emphasis">non-functions</em> that might produce curves? Might we think about tangent lines and slopes in these contexts?</div>
+</div></section><section class="subsection" id="subsec-ExplicitImplicit"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="space"> </span><span class="title">Explicit vs. Implicit Definitions</span>
 </h3>
-<div class="para" id="subsec-DerivativeOperator-2"></div></section></section></div>
+<div class="para logical" id="subsec-ExplicitImplicit-2">
+<div class="para">
+<article class="definition definition-like" id="def-ExplicitImplicit"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Explicitly and Implicitly Defined Curves.</span>
+</h4>
+<div class="para logical" id="def-ExplicitImplicit-2-1">
+<div class="para">A function or curve that is defined <dfn class="terminology">explicitly</dfn> is one where the relationship between the variables is stated in with an equation like <span class="process-math">\(y=f(x)\text{.}\)</span> Here, <span class="process-math">\(x\)</span> is the input variable and we can find each corresponding value of the <span class="process-math">\(y\)</span>-variable by applying some operations to <span class="process-math">\(x\text{.}\)</span> As an example, we might consider the following function:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y=3x+1\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical" id="def-ExplicitImplicit-2-2">
+<div class="para">A function or curve that is defined <dfn class="terminology">implicitly</dfn> us one where the relationship between the variables is stated with an equation connecting the variables, but not necessarily one which is "solved" for a single variable. Here, the relationship between variables is not stated with the typical "input" and "output" variables. As an example, we might consider the same function as above, but defined as:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y-3x-1=0\text{.}
+\end{equation*}
+</div>
+</div> <div class="para" id="def-ExplicitImplicit-2-3">Often, an implicitly defined curve is one where we <em class="emphasis">cannot</em> solve for a single variable by isolating it.</div></article> A classic and important implicitly defined curve is the unit circle:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2+y^2=1\text{.}
+\end{equation*}
+</div>
+<div class="para">We can try to isolate for <span class="process-math">\(y\)</span> and write this as an explicitly defined curve, and end up with:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y=\sqrt{1-x^2}\text{.}
+\end{equation*}
+</div>
+<div class="para">Unfortunately, this only displays the upper half of the circle, since the square root will only output positive values. In this case, we can get around this by defining the circle with two functions.</div>
+</div>
+<iframe id="subsec-ExplicitImplicit-3" width="540" height="324" src="subsec-ExplicitImplicit-3-if.html"></iframe><div class="para" id="subsec-ExplicitImplicit-4">As we move forward, let’s work with this circle using the implicitly defined version (<span class="process-math">\(x^2+y^2=1\)</span>). How might we find a slope of a line tangent to this circle at some point?</div></section><section class="subsection" id="subsec-DerivativeOperator"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="space"> </span><span class="title">Using a Derivative as an Operator</span>
+</h3>
+<div class="para" id="subsec-DerivativeOperator-2">Let’s recall back to <a href="sec-InterpretingDerivatives.html#subsec-DerivativeNotation" class="internal" title="Subsection 2.2.5: Notation for Derivatives">Subsection 2.2.5 Notation for Derivatives</a>. We talked about how we can use the notation <span class="process-math">\(\ddx{f(x)}\)</span> as a kind of action: the notation says "find the derivative of <span class="process-math">\(f(x)\)</span> with respect to <span class="process-math">\(x\text{.}\)</span>" When we say "with respect to <span class="process-math">\(x\text{,}\)</span>" we mean that we are treating <span class="process-math">\(x\)</span> as an input variable, and trying to find out how <span class="process-math">\(f\)</span> changes based on changes to that input. The notation says, "find the rate at which <span class="process-math">\(f(x)\)</span> changes as <span class="process-math">\(x\)</span> increases."</div>
+<div class="para" id="subsec-DerivativeOperator-3">Because this notation is a call to action, we can use it when we’re dealing with an equation. We can call back to our early algebra days, where we learn that whatever we do to one side of an equation needs to be done to the other side as well, in order to maintain the equality.</div>
+<div class="para" id="subsec-DerivativeOperator-4">We can apply this to our derivative actions: we can differentiate both sides of an equation!</div>
+<article class="activity project-like" id="act-ImplicitChainRule"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Thinking about the Chain Rule.</span>
+</h4>
+<article class="task exercise-like" id="act-ImplicitChainRule-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="act-ImplicitChainRule-2-1-1">
+<div class="para">Explain to someone how (and why) we use the <a href="sec-ChainRule.html#thm-ChainRule" class="xref" data-knowl="./knowl/xref/thm-ChainRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.5.2: The Chain Rule">The Chain Rule</a> to find the following derivative:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-ChainRule.html">
+\begin{equation*}
+\ddx{\sqrt{\sin(x)}}\text{.}
+\end{equation*}
+</div>
+</div></article><article class="task exercise-like" id="act-ImplicitChainRule-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="act-ImplicitChainRule-3-1-1">
+<div class="para">Let’s say that <span class="process-math">\(f(x)=\sin(x)\text{.}\)</span> Explain how we find the following derivative:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{\sqrt{f(x)}}\text{.}
+\end{equation*}
+</div>
+<div class="para">How is this different, or not different, than the previous derivative?</div>
+</div></article><article class="task exercise-like" id="act-ImplicitChainRule-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="act-ImplicitChainRule-4-1-1">
+<div class="para">Let’s say that we have some other function, <span class="process-math">\(g(x)\text{.}\)</span> Explain how we find the following derivative:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{\sqrt{g(x)}}\text{.}
+\end{equation*}
+</div>
+<div class="para">How is this different, or not different, than the previous derivatives?</div>
+</div></article><article class="task exercise-like" id="act-ImplicitChainRule-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para logical" id="act-ImplicitChainRule-5-1-1">
+<div class="para">What is the difference between the following derivatives:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{\sqrt{x}} \hspace{0.7cm} \ddx{\sqrt{y}} \hspace{0.7cm} \dd{}{y}\left(\sqrt{y}\right)
+\end{equation*}
+</div>
+</div>
+<div class="solutions">
+<details id="act-ImplicitChainRule-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-ImplicitChainRule-5-2-1">When do we need to use the Chain Rule? When do we need to use some linking derivative to connect the function we’re looking at with the variable we care about?</div></div></details><details id="act-ImplicitChainRule-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-ImplicitChainRule-5-3-1"><div class="displaymath process-math" id="act-ImplicitChainRule-5-3-1-1">
+\begin{align*}
+\ddx{\sqrt{x}} \amp = \ddx{x^{1/2}}\\
+\amp = \frac{1}{2}(x^{-1/2})\\
+\amp = \frac{1}{2\sqrt{x}}
+\end{align*}
+</div></div>
+<div class="para logical" id="act-ImplicitChainRule-5-3-2"><div class="displaymath process-math" id="act-ImplicitChainRule-5-3-2-1">
+\begin{align*}
+\ddx{\sqrt{y}} \amp = \dd{}{y}\left(y^{1/2}\right) \cdot \dydx\\
+\amp = \frac{1}{2}(y^{-1/2}) \cdot \dydx\\
+\amp = \frac{1}{2\sqrt{y}}\cdot \dydx\\
+\text{or } \amp \frac{y'}{2\sqrt{y}} 
+\end{align*}
+</div></div>
+<div class="para logical" id="act-ImplicitChainRule-5-3-3"><div class="displaymath process-math" id="act-ImplicitChainRule-5-3-3-1">
+\begin{align*}
+\dd{}{y}\left(\sqrt{y}\right) \amp = \ddx{x^{1/2}}\\
+\amp = \frac{1}{2}(y^{-1/2})\\
+\amp = \frac{1}{2\sqrt{y}}
+\end{align*}
+</div></div>
+</div></details>
+</div></article></article><div class="para" id="subsec-DerivativeOperator-6">Because we’ll be applying our derivative notation to pieces of some equation, we’ll need to be very aware of where we need to apply the Chain Rule.</div>
+<div class="para" id="subsec-DerivativeOperator-7">Now we can look at some examples of implicitly defined curves and think about questions about the derivative. Let’s start with our circle.</div>
+<article class="activity project-like" id="act-Circle"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Slopes on a Circle.</span>
+</h4>
+<div class="introduction" id="act-Circle-2"><div class="para" id="act-Circle-2-1">Visualize the unit circle. Feel free to draw one, or find the picture above. We’re going to think about slopes on this circle.</div></div>
+<article class="task exercise-like" id="act-Circle-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-Circle-3-1-1">Point out the locations on the unit circle where you would expect to see tangent lines that are perfectly horizontal. What do you think the value of the derivative, <span class="process-math">\(\dydx\text{,}\)</span> would be at these points?</div></article><article class="task exercise-like" id="act-Circle-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-Circle-4-1-1">Point out the locations on the unit circle where you would expect to see tangent lines that are perfectly vertical. What do you think the value of the derivative, <span class="process-math">\(\dydx\text{,}\)</span> would be at these points?</div></article><article class="task exercise-like" id="act-Circle-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-Circle-5-1-1">Find the point(s) where <span class="process-math">\(x=\frac{1}{2}\text{.}\)</span> What do you think the value of the derivative, <span class="process-math">\(\dydx\text{,}\)</span> would be at these points?</div>
+<div class="solutions"><details id="act-Circle-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-Circle-5-2-1">There are two points to consider here: <span class="process-math">\(\left(\frac{1}{2}, \frac{\sqrt{3}}{2}\right)\)</span> and <span class="process-math">\(\left(\frac{1}{2}, \frac{-\sqrt{3}}{2}\right)\text{.}\)</span>
+</div></div></details></div></article><article class="task exercise-like" id="act-Circle-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para logical" id="act-Circle-6-1-1">
+<div class="para">For the unit circle defined by the equation <span class="process-math">\(x^2+y^2=1\text{,}\)</span> apply the derivative to both sides of this equation to get the following:</div>
+<div class="displaymath process-math" id="act-Circle-6-1-1-2">
+\begin{align*}
+\ddx{x^2+y^2} \amp = \ddx{1} \\
+\ddx{x^2} + \ddx{y^2} \amp = \ddx{1}
+\end{align*}
+</div>
+<div class="para">Carefully consider each of these derivatives (each of the terms). Which of these will you need to apply the Chain Rule for?</div>
+</div></article><article class="task exercise-like" id="act-Circle-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-Circle-7-1-1">Differentiate. Solve for <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{,}\)</span> whichever notation you decide to use.</div>
+<div class="solutions">
+<details id="act-Circle-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-Circle-7-2-1">Make sure to use the Chain Rule when necessary!</div></div></details><details id="act-Circle-7-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-Circle-7-3-1">
+<span class="process-math">\(\Ddx{y^2} = \Dd{}{y}\left(y^2\right)\Dydx = 2y\cdot \Dydx\)</span> or <span class="process-math">\(2yy'\)</span>
+</div></div></details>
+</div></article><article class="task exercise-like" id="act-Circle-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para logical" id="act-Circle-8-1-1">
+<div class="para">Go back to the first few questions, and try to answer them again:</div>
+<ol class="decimal" id="act-Circle-8-1-1-1">
+<li id="act-Circle-8-1-1-1-1"><div class="para" id="act-Circle-8-1-1-1-1-1">Find the locations of any horizontal tangent lines (where <span class="process-math">\(\dydx=0\)</span>).</div></li>
+<li id="act-Circle-8-1-1-1-2"><div class="para" id="act-Circle-8-1-1-1-2-1">Find the locations of any vertical tangent lines (where <span class="process-math">\(\dydx\)</span> doesn’t exist, or where you would divide by 0).</div></li>
+<li id="act-Circle-8-1-1-1-3"><div class="para" id="act-Circle-8-1-1-1-3-1">Find the values of <span class="process-math">\(\dydx\)</span> for the points on the circle where <span class="process-math">\(x=\frac{1}{2}\text{.}\)</span>
+</div></li>
+</ol>
+</div></article></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-ImplicitDifferentiation.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-DerivativeInverse.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
