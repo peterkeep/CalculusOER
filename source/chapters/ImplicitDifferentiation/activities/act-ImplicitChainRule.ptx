@@ -1,0 +1,74 @@
+<activity xml:id="act-ImplicitChainRule" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Thinking about the Chain Rule</title>
+    <task>
+        <statement>
+            <p>
+                Explain to someone how (and why) we use the <xref ref="thm-ChainRule" text="title"/> to find the following derivative:
+                <me>
+                    \ddx{\sqrt{\sin(x)}}
+                </me>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's say that <m>f(x)=\sin(x)</m>. Explain how we find the following derivative:
+                <me>
+                    \ddx{\sqrt{f(x)}}
+                </me>.
+                How is this different, or not different, than the previous derivative?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's say that we have some other function, <m>g(x)</m>. Explain how we find the following derivative:
+                <me>
+                    \ddx{\sqrt{g(x)}}
+                </me>.
+                How is this different, or not different, than the previous derivatives?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the difference between the following derivatives:
+                <me>
+                    \ddx{\sqrt{x}} \hspace{0.7cm} \ddx{\sqrt{y}} \hspace{0.7cm} \dd{}{y}\left(\sqrt{y}\right)
+                </me>
+            </p>
+        </statement>
+        <hint>
+            <p>
+                When do we need to use the Chain Rule? When do we need to use some linking derivative to connect the function we're looking at with the variable we care about?
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\ddx{\sqrt{x}} \amp = \ddx{x^{1/2}}</mrow>
+                    <mrow> \amp = \frac{1}{2}(x^{-1/2})</mrow>
+                    <mrow> \amp = \frac{1}{2\sqrt{x}}</mrow>
+                </md>
+            </p>
+            <p>
+                <md>
+                    <mrow>\ddx{\sqrt{y}} \amp = \dd{}{y}\left(y^{1/2}\right) \cdot \dydx</mrow>
+                    <mrow> \amp = \frac{1}{2}(y^{-1/2}) \cdot \dydx</mrow>
+                    <mrow> \amp = \frac{1}{2\sqrt{y}}\cdot \dydx</mrow>
+                    <mrow>\text{or } \amp \frac{y'}{2\sqrt{y}} </mrow>
+                </md>
+            </p>
+            <p>
+                <md>
+                    <mrow>\dd{}{y}\left(\sqrt{y}\right) \amp = \ddx{x^{1/2}}</mrow>
+                    <mrow> \amp = \frac{1}{2}(y^{-1/2})</mrow>
+                    <mrow> \amp = \frac{1}{2\sqrt{y}}</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+</activity>

@@ -4,14 +4,95 @@
     <title>Implicit Differentiation</title>
     <introduction>
         <p>
-            
+            Let's quickly recap what we've done with this new calculus object, the derivative:
+            <ol>
+                <li>
+                    <p>
+                        We defined the derivative at a point (<xref ref="def-DerivativeAtPoint"/>) to find the slope of a line touching a graph of a function <m>f(x)</m> at a single point. We call this the "slope of the tangent line" at a point.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Once we calculated this slope, we quickly found a way to think about the derivative as a <em>function</em> (<xref ref="def-DerivativeFunction"/>) that connects <m>x</m>-values with the slope of the line tangent to <m>f(x)</m> at that <m>x</m>-value.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We thought about how we could interpret the derivative as more than just a slope (<xref ref="sec-InterpretingDerivatives"/>). We can think about this as an instantaneous rate of change, and use it to add detail to how we think about mathematical models of different things.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We spent some time building up shortcuts, noticing patterns, and generalizing ways of finding these derivative functions for specific functions (<xref ref="sec-DerivativeRules"/>) as well as combinations of those functions (<xref ref="sec-ProductQuotientRule"/> and <xref ref="sec-ChainRule"/>).
+                    </p>
+                </li>
+            </ol>
+            Our goal, now, is to generalize this a bit. What happens when we push past the restriction of only dealing with <em>functions</em>? Can we think of some reasonable <em>non-functions</em> that might produce curves? Might we think about tangent lines and slopes in these contexts?
         </p>
     </introduction>
 
+    <subsection xml:id="subsec-ExplicitImplicit">
+        <title>Explicit vs. Implicit Definitions</title>
+        <p>
+            <definition xml:id="def-ExplicitImplicit">
+            <title>Explicitly and Implicitly Defined Curves</title>
+                <statement>
+                    <p>
+                        A function or curve that is defined <term>explicitly</term> is one where the relationship between the variables is stated in with an equation like <m>y=f(x)</m>. Here, <m>x</m> is the input variable and we can find each corresponding value of the <m>y</m>-variable by applying some operations to <m>x</m>. As an example, we might consider the following function:
+                        <me>
+                            y=3x+1
+                        </me>.
+                        
+                    </p>
+                    <p>
+                        A function or curve that is defined <term>implicitly</term> us one where the relationship between the variables is stated with an equation connecting the variables, but not necessarily one which is "solved" for a single variable. Here, the relationship between variables is not stated with the typical "input" and "output" variables. As an example, we might consider the same function as above, but defined as:
+                        <me>
+                            y-3x-1=0
+                        </me>.
+                    </p>
+                    <p>
+                        Often, an implicitly defined curve is one where we <em>cannot</em> solve for a single variable by isolating it.
+                    </p>
+                </statement>
+            </definition>
+            A classic and important implicitly defined curve is the unit circle:
+            <me>
+                x^2+y^2=1
+            </me>.
+            We can try to isolate for <m>y</m> and write this as an explicitly defined curve, and end up with:
+            <me>
+                y=\sqrt{1-x^2}
+            </me>. 
+            Unfortunately, this only displays the upper half of the circle, since the square root will only output positive values. In this case, we can get around this by defining the circle with two functions.
+        </p>
+        <interactive platform="doenetml" width="90%" aspect="1:0.6">
+        <slate surface="doenetml">
+            <xi:include parse="text" href="./doenet/CircleExplicitImplicit.xml"/>
+        </slate>
+    </interactive>
+    <p>
+        As we move forward, let's work with this circle using the implicitly defined version (<m>x^2+y^2=1</m>). How might we find a slope of a line tangent to this circle at some point?
+    </p>
+    </subsection>
+    
     <subsection xml:id="subsec-DerivativeOperator">
         <title>Using a Derivative as an Operator</title>
         <p>
-            
+            Let's recall back to <xref ref="subsec-DerivativeNotation" text="type-global-title"/>. We talked about how we can use the notation <m>\ddx{f(x)}</m> as a kind of action: the notation says "find the derivative of <m>f(x)</m> with respect to <m>x</m>." When we say "with respect to <m>x</m>," we mean that we are treating <m>x</m> as an input variable, and trying to find out how <m>f</m> changes based on changes to that input. The notation says, "find the rate at which <m>f(x)</m> changes as <m>x</m> increases."
         </p>
+        <p>
+            Because this notation is a call to action, we can use it when we're dealing with an equation. We can call back to our early algebra days, where we learn that whatever we do to one side of an equation needs to be done to the other side as well, in order to maintain the equality.
+        </p>
+        <p>
+            We can apply this to our derivative actions: we can differentiate both sides of an equation!
+        </p>
+        <xi:include href="./activities/act-ImplicitChainRule.ptx" />
+        <p>
+            Because we'll be applying our derivative notation to pieces of some equation, we'll need to be very aware of where we need to apply the Chain Rule.
+        </p>
+        <p>
+            Now we can look at some examples of implicitly defined curves and think about questions about the derivative. Let's start with our circle.
+        </p>
+        <xi:include href="./activities/act-Circle.ptx" />
     </subsection>
 </section>

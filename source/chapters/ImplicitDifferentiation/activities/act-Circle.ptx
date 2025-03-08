@@ -1,0 +1,88 @@
+<activity xml:id="act-Circle" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Slopes on a Circle</title>
+    <introduction>
+        <p>
+            Visualize the unit circle. Feel free to draw one, or find the picture above. We're going to think about slopes on this circle.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Point out the locations on the unit circle where you would expect to see tangent lines that are perfectly horizontal. What do you think the value of the derivative, <m>\dydx</m>, would be at these points?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Point out the locations on the unit circle where you would expect to see tangent lines that are perfectly vertical. What do you think the value of the derivative, <m>\dydx</m>, would be at these points?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the point(s) where <m>x=\frac{1}{2}</m>. What do you think the value of the derivative, <m>\dydx</m>, would be at these points?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                There are two points to consider here: <m>\left(\frac{1}{2}, \frac{\sqrt{3}}{2}\right)</m> and <m>\left(\frac{1}{2}, \frac{-\sqrt{3}}{2}\right)</m>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For the unit circle defined by the equation <m>x^2+y^2=1</m>, apply the derivative to both sides of this equation to get the following:
+                <md>
+                    <mrow> \ddx{x^2+y^2} \amp = \ddx{1} </mrow>
+                    <mrow> \ddx{x^2} + \ddx{y^2} \amp = \ddx{1}</mrow>
+                </md>
+                Carefully consider each of these derivatives (each of the terms). Which of these will you need to apply the Chain Rule for?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Differentiate. Solve for <m>\dydx</m> or <m>y'</m>, whichever notation you decide to use.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Make sure to use the Chain Rule when necessary!
+            </p>
+        </hint>
+        <hint>
+            <p>
+                <m>\Ddx{y^2} = \Dd{}{y}\left(y^2\right)\Dydx = 2y\cdot \Dydx</m> or <m>2yy'</m>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Go back to the first few questions, and try to answer them again:
+                <ol>
+                    <li>
+                        <p>
+                            Find the locations of any horizontal tangent lines (where <m>\dydx=0</m>).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find the locations of any vertical tangent lines (where <m>\dydx</m> doesn't exist, or where you would divide by 0).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find the values of <m>\dydx</m> for the points on the circle where <m>x=\frac{1}{2}</m>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </task>
+    
+</activity>
