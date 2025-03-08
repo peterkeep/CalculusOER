@@ -1,0 +1,101 @@
+<activity xml:id="act-ImplicitSine" xmlns:xsi="http://www.w3.org/2001/XInclude">
+    <title></title>
+    <introduction>
+        <p>
+            Let's consider a new curve:
+            <me>
+                \sin(x)+\sin(y)=x^2y^2
+            </me>.
+            <figure xml:id="SineImplicitCurve">
+                <caption></caption>
+                <image source="./ImplicitDifferentiation/SineImplicitCurve.png">
+                    <shortdescription>A curve with 4 independent loops visible. The main, middle, loop, looks like a deformed circle. It passes through the origin, and has some straight sides and almost pointed corners, although they are still round. On the x-axis, there are two very flat round loops: one around (8,0) and another around (-5,0). A third one lays on the y-axis around (-5,0).</shortdescription>
+                </image>
+            </figure>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                We are going to find <m>\dydx</m> or <m>y'</m>. Let's dive into differentiation:
+                <md>
+                    <mrow>\ddx{\sin(x)+\sin(y)} \amp =\ddx{x^2y^2}</mrow>
+                    <mrow>\ddx{\sin(x)} + \ddx{\sin(y)} \amp = \ddx{x^2y^2}</mrow>
+                </md>
+                Think carefully about these derivatives. For each of the three, how will you approach it? What kinds of nuances or rules or strategies will you need to think about? Why?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Are any of these derivatives involving a variable other than <m>x</m>, the input variable (based on our <m>\dydx</m> notation, since we are thinking about how <m>y</m> changes <em>with regard to</em> <m>x</m>).
+            </p>
+            <p>
+                Are any of these derivatives involving any other combination of functions? Are there products and/or quotients that we need to think about?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Implement your ideas or strategies from above to differentiate each term. 
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We need to apply the Chain Rule to <m>\ddx{\sin(y)}</m> and then we need to apply the Product Rule <m>\ddx{x^2y^2}</m>. Notice that when we find the derivative of <m>y^2</m> for the Product Rule, we need to use the Chain Rule!
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\ddx{\sin(x)+\sin(y)} \amp =\ddx{x^2y^2}</mrow>
+                    <mrow>\ddx{\sin(x)} + \ddx{\sin(y)} \amp = \ddx{x^2y^2}</mrow>
+                    <mrow>\cos(x) + \cos(y)\cdot \dydx \amp = 2xy^2 + 2x^2y\cdot \dydx</mrow>
+                    <mrow>\text{or } \cos(x)+y'\cos(y) \amp = 2xy^2 + 2x^2yy'</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now we need to solve for <m>\dydx</m> or <m>y'</m>, whichever you are using. While this equation can look complicated, we can notice something about the "location" of <m>\dydx</m> or <m>y'</m> in our equation.
+            </p>
+            <p>
+                Why do we always know that <m>\dydx</m> or <m>y'</m> will be <em>multiplied</em> on a term whenever it shows up?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now that we are confident that we will <em>always</em> know that we are multiplying this derivative, we can employ a consistent strategy:
+                <ol>
+                    <li>
+                        <p>
+                            Rearrange our equation so that every term with a <m>\dydx</m> or <m>y'</m> is on one side, and everything without is on the other.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Now we are guaranteed that <m>\dydx</m> or <m>y'</m> is a common factor: factor it out.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Now we can solve for <m>\dydx</m> or <m>y'</m> by dividing!
+                        </p>
+                    </li>
+                </ol>
+                Solve for <m>\dydx</m> or <m>y'</m> in your equation!
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Build the equation of a line that lays tangent to the curve at the origin. Does the value of <m>\dydx</m> at <m>(0,0)</m> look reasonable to you?
+            </p>
+        </statement>
+    </task>
+</activity>

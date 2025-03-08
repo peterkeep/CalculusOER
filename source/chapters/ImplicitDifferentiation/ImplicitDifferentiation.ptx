@@ -94,5 +94,189 @@
             Now we can look at some examples of implicitly defined curves and think about questions about the derivative. Let's start with our circle.
         </p>
         <xi:include href="./activities/act-Circle.ptx" />
+        <example>
+            <introduction>
+                <p>
+                    Let's repeat some of this process, but using a new curve. Consider the curve defined by the equation:
+                    <me>y^2=x^3-x+1</me>.
+                    This curve is a special curve with some interesting mathematical properties, and is actually a part of a family of curves called <term>elliptic curves</term>. For now, let's just consider it as a fun curve to look at, and use implicit differentiation to think about it.
+                </p>
+                <figure xml:id="fig-EllipticCurve">
+                    <caption></caption>
+                    <image source="./ImplicitDifferentiation/EllipticCurve.png" width="60%">
+                        <shortdescription>
+                            The elliptic curve, y^2=x^3-x+1. If has a flared horseshoe type shape. The curve has a symmetry across the x-axis, and the upper section starts somewhere near (-1.3,0). It starts moving vertically upwards, and then curves towards (-1,1). From there, it descends lightly towards somewhere near (0.6, 0.6), where it flares upwards. The portion under the x-axis is a reflection of this.
+                        </shortdescription>
+                    </image>
+                </figure>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Mark the locations on the curve where it looks like the curve will have horizontal tangent lines. How many did you find?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Mark the locations on the curve where it looks like the curve will have vertical tangent lines. How many did you find?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Find the point(s) where <m>x=0</m>. What do you think the value of the derivative, <m>\dydx</m>, would be at these points?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        For the elliptic curve defined by the equation <m>y^2=x^3-x+1</m>, apply the derivative to both sides of this equation:
+                        <md>
+                            <mrow>\ddx{y^2} \amp = \ddx{x^3-x+1}</mrow>
+                            <mrow>\ddx{y^2} \amp = \ddx{x^3}-\ddx{x} + \ddx{1}</mrow>
+                        </md>
+                        Carefully consider each of these derivatives (each of the terms). Which of these will you need to apply the Chain Rule for?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Differentiate. Solve for <m>\dydx</m> or <m>y'</m>, whichever notation you decide to use.
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        Make sure to use the Chain Rule when necessary!
+                    </p>
+                </hint>
+                <hint>
+                    <p>
+                        <m>\Ddx{y^2} = \Dd{}{y}\left(y^2\right)\Dydx = 2y\cdot \Dydx</m> or <m>2yy'</m>
+                    </p>
+                </hint>
+            </task>
+                <task>
+                    <statement>
+                        <p>
+                            Go back to the first few questions, and try to answer them again:
+                            <ol>
+                                <li>
+                                    <p>
+                                        Find the locations of any horizontal tangent lines (where <m>\dydx=0</m>).
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Find the locations of any vertical tangent lines (where <m>\dydx</m> doesn't exist, or where you would divide by 0).
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Find the values of <m>\dydx</m> for the points on the curve where <m>x=0</m>.
+                                    </p>
+                                </li>
+                            </ol>
+                        </p>
+                    </statement>
+                </task>
+        </example>
+        <p>
+            This example was pretty similar to the first activity: in both of these, we use the Chain Rule to differentiate <m>\ddx{y^2}</m>. Let's look at another example.
+        </p>    
+        <xi:include href="./activities/act-ImplicitSine.ptx" />
     </subsection>
+    <subsection xml:id="subsec-SummaryAndStrategy">
+        <title>Some Summary and Strategy</title>
+        <p>
+            Let's wrap this up with some general strategy and summary of what we've seen.
+        </p>
+        <p>
+            The first thing we can notice is that we have talked through how to employ two of the three big derivative rules: we used Chain Rule throughout these examples, and in <xref ref="act-ImplicitSine"/> we needed to use the Product Rule in order to differentiate <m>\ddx{x^2y^2}</m>. We have a glaring omission from our examples so far, though. Where is the Quotient Rule?
+        </p>
+        <p>
+            In these implicitly defined curves, we can manipulate the equations to never have to think about division! Consider the curve:
+            <me>
+                \frac{\sin(x)}{x} + \frac{\sin(y)}{x} = xy^2
+            </me>.
+            Graph this curve in a graphing utility like desmos. Does it look any different than the curve in <xref ref="act-ImplicitSine"/>?
+        </p>
+        <p>
+            The only difference, really, is that the curve with the division is not defined at <m>x=0</m>. As long as we keep those domain issues in mind, we can multiply everything by <m>x</m> to get our familiar equation:
+            <me>
+                \sin(x)+\sin(y)=x^2y^2
+            </me>.
+            And there we go, we never have to think about the Quotient Rule in these kinds of contexts!
+        </p>
+        <p>
+            So we really only need a strategy for using the Chain Rule and the Product Rule.
+        </p>
+        <assemblage xml:id="strat-ImplicitDifferentiation">
+            <title>Strategy for Implicit Differentiation</title>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            We use the <em>Chain Rule</em> whenever we differentiate something like <m>\dd{}{y}\left(f(y)\right)</m>. We differentiate whatever the function is, and multiply by the derivative of <m>y</m>: <m>f'(y)y'</m>.
+                        </p>
+                        <p>
+                            This generalizes more: any time the variable in our derivative notation does not match the variable in the function/term, we need to use the Chain Rule:
+                            <me>
+                                \dd{}{y}\left(e^x\right) \hspace{0.7cm} 
+                                \dd{}{t}\left(\sin(x)\right) \hspace{0.7cm}
+                                \dd{}{x}\left(y^4\right)
+                            </me>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We use the <em>Product Rule</em> whenever we differentiate a term with some combination of <m>x</m> and <m>y</m> variables. More generally, we can use the Product Rule any time we have a combination of at least two variables. We have to treat these as different kinds of functions getting multiplied!
+                            <me>
+                                \dd{}{y}\left(xe^y\right) \hspace{0.7cm} 
+                                \dd{}{t}\left(\cos(t)\sin(x)\right) \hspace{0.7cm}
+                                \dd{}{x}\left(y^4\sqrt{x+1}\right)
+                            </me>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </assemblage> 
+    </subsection>
+    <conclusion>
+        <p>
+            From here on out, we will use the ideas of implicit differentiation to accomplish two things:
+            <ol>
+                <li>
+                    <p>
+                        We have a bit more flexibility with how we think of derivatives! We do not need to be restricted to only thinking about functions in order to think about rates of change or slopes at a point. We can think about any curve, any relationship between variables, and think about the relationship between them based on how one changes with regard to the other.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Implicit differentiation will be a very useful tool. Even when we have functions that can be written explicitly, they might be hard to deal with -- overly complex or maybe involving functions that we aren't used to. It is absolutely possible, and a really useful strategy, to re-write the relationship between variables implicitly! We can maybe create a version of these equations that we can differentiate!
+                    </p>
+                </li>
+            </ol>
+            We're going to use this second idea first: in the next section we'll be thinking about inverse functions. We do not have any idea of how to think about derivatives of logarithmic functions, like <m>y=\ln(x)</m>.
+        </p>
+        <p>
+            We can re-write this:
+            <me>
+                y=\ln(x) \longleftrightarrow x=e^y
+            </me>.
+            This second representation is something we can differentiate!
+        </p>
+        <p>
+            Similarly, if we wanted to think about the derivative of <m>y=\tan^{-1}(x)</m>, we might instead think about re-writing this:
+            <me>
+                y=\tan^{-1}(x) \longleftrightarrow x=\tan(y)
+            </me>.
+            There are some weird issues to think about with the domains and ranges of these functions, but this is how we'll approach these derivatives next.
+        </p>
+    </conclusion>
+    
 </section>
