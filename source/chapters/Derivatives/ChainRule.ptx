@@ -135,6 +135,57 @@
       </task>
     </example>
   </subsection>
+<subsection xml:id="subsec-GeneralizedExponential">
+  <title>Generalizing the Derivative of the Exponential</title>
+  <p>
+    Earlier, we looked at the specific derivative for <m>f(x)=e^x</m> (<xref ref="thm-ExponentialDerivative"/>), but we haven't talked about derivatives of other exponential functions. What about things like <m>y=2^x</m> or <m>y=\left(\frac{1}{2}\right)^x</m>? We can use a nice fact about exponentials and <em>logarithms</em>. We'll think more about log functions later (starting in <xref ref="sec-DerivativesInverse" text="type-global-text"/>), but we can think a bit about them now.
+  </p>
+  <p>
+    A big fact to recall is that a logarithm is a way of finding an exponent with a specific property. If we want to find the exponent that we would need to put on the number <m>e</m> to give us <m>9</m> as an answer, we could use <m>\ln(9)</m>.
+    <me>
+      e^{\ln(9)} = 9
+    </me>
+    This is just because logs are defined in this circular way: they are, by definition, the exponent you would need to output whatever number is inside the log.
+  </p>
+  <p>
+    This means that if we want to think about the number <m>2</m>, but written in a different way, we can think of <m>e^{\ln(2)}</m>.
+  </p>
+  <p>
+    Ok, but why would we <em>ever</em> use this? This seems like a ridiculous way to write a number as basic as 2!
+  </p>
+  <p>
+    Consider the following:
+    <me>
+      2^x = \left(\underbrace{e^{\ln(2)}}_{=2}\right)^x
+    </me>
+    But we also might notice that we can re-write this using an exponent rule! We know that in general: <m>\left(a^b\right)^c = a^{b\cdot c}</m>. Let's re-write this exponential function:
+    <md>
+      <mrow> 2^x \amp = \left(e^{\ln(2)}\right)^x</mrow>
+      <mrow> \amp =e^{\ln(2)\cdot x}</mrow>
+    </md>
+    Remember, <m>\ln(2)</m> is just a number: it's specifically the number you have to put in the exponent on <m>e</m> to get 2. So this is just a coefficient on <m>x</m>. We can differentiate and use the Chain Rule!
+    <md>
+      <mrow>\ddx{2^x} \amp = \ddx{e^{\ln(2)\cdot x}}</mrow>
+      <mrow> \amp = e^{\ln(2)\cdot x}\cdot \ln(2)</mrow>
+    </md>
+    Now we can remember that <m>e^{\ln(2)\cdot x}</m> is really <m>\left(e^{\ln(2)}\right)^x</m> which is just <m>2^x</m>.
+  </p>
+  <p>
+    So we get <m>\Ddx{2^x} = 2^x\ln(2)</m>. We can notice that we can re-create this with <em>any</em> (reasonable) value for the base of this exponential function.
+  </p>
+  <theorem xml:id="thm-GeneralizedExponentialDerivaitve">
+    <title>Derivative of the Generalized Exponential Function</title>    
+    <statement>
+      <p>
+        If <m>b\gt 0</m> and <m>b\neq 1</m>, then:
+        <me>
+          \ddx{b^x} = b^x\ln(b)
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+  
+</subsection>
   
   
 
