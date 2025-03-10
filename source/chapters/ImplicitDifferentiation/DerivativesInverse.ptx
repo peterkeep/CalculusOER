@@ -3,6 +3,55 @@
 <section xml:id="sec-DerivativeInverse" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Derivatives of Inverse Functions</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      We should start here by saying: we're going to be thinking about inverse functions, and so maybe it will be helpful to recap some facts about inverse functions.
+      <ul>
+        <li>
+          <p>
+            If <m>y=f(x)</m> is some function, then we can use the inverse function to represent this relationship between variables: <m>x=f^{-1}(y)</m>.Some examples:
+            <ul>
+              <li>
+                <p>
+                  <m>y=e^x \longleftrightarrow x=\ln(y)</m>. That is, the logarithm function "solves" for the exponent (sometimes this is easier to just say that the logarithm <em>is</em> the exponent).
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>y=\sin(\theta)\longleftrightarrow \theta =\sin^{-1}(y)</m>. That is, this inverse sine function (or sometimes <m>\arcsin(y)</m>) finds the angle at which sine of that angle is <m>y</m>. With these trigonometric functions, we need to make some restrictions: because there are an infinite number of angles that will produce the same output of the sine function (reflecting the angle across the <m>y</m>-axis will do it, as will adding any multiple of <m>2\pi</m>), we restrict the angles that the inverse sine function can output to being in <m>\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]</m>.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Based on this re-representation above, we can always compose a function and its inverse to get the identity function, <m>y=x</m>. In general, if <m>y=f(x)</m> has an inverse function <m>f^{-1}</m>, then <m>\left(f\circ f^{-1}\right)(x)=f\left(f^{-1}(x)\right) = x</m>. Similarly, we can compose in the opposite order: <m>\left(f^{-1}\circ f\right)(x) = f^{-1}\left(f(x)\right) = x</m>. This can be a bit trickier to think about for the inverse trigonometric functions, since this only works on intervals of <m>x</m> where that inverse is defined. So we end up with strange things like:
+            <me>\sin^{-1}\left(\sin\left(\frac{3\pi}{2}\right)\right) = \sin^{-1}\left(-1\right) = -\frac{\pi}{2}</me>.
+            This is because the inverse sine function finds only angles in the interval <m>\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]</m>, and the angles <m>\frac{3\pi}{2}</m> and <m>-\frac{\pi}{2}</m> are <em>coterminal</em> (and so have the same output from the sine function).
+          </p>
+        </li>
+      </ul>
+      With these small facts in mind, we can think about derivatives of inverse functions.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-WieldingImplicitDifferentiation">
+    <title>Wielding Implicit Differentiation</title>
+    <p>
+      We're going to do a very cool thing: in order to find derivatives of inverse functions, we can invert the relationship between <m>x</m> and <m>y</m>, and then use <xref ref="sec-ImplicitDifferentiation" text="title"/> to find <m>\dydx</m>. 
+    </p>
+    <xi:include href="./activities/act-lnxDerivative.ptx" />
+    <theorem xml:id="thm-DerivativeLog">
+      <title>Derivative of the Logarithmic Function</title>
+      <statement>
+        <p>
+          <me>\ddx{\ln(x)}=\frac{1}{x}</me>
+          Further, since <m>\log_b(x) = \frac{\ln(x)}{\ln(b)}</m> (for <m>b\geq 0</m> and <m>b\neq 1</m>), we can say that:
+          <me>\ddx{\log_b(x)} = \frac{1}{x\ln(b)}</me>.
+        </p>
+      </statement>
+    </theorem>
+    
+  </subsection>
 
 </section>

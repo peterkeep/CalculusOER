@@ -1,0 +1,77 @@
+<activity xml:id="act-lnxDerivative" xmlns:xsi="http://www.w3.org/2001/XInclude">
+    <title>Building the Derivative of the Logarithm</title>
+    <introduction>
+        <p>
+            We're going to accomplish two things here:
+            <ol>
+                <li>
+                    <p>
+                        By the end of this activity, we'll have a nice way of thinking about <m>\ddx{\ln(x)}</m>, and we will now be able to differentiate functions involving logarithms!
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Throughout this activity, we're going to develop a way of approaching derivatives of inverse functions more generally. Then we can apply this framework to other functions!
+                    </p>
+                </li>
+            </ol>
+            Let's think about this logarithmic function!
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                We have stated (a couple of times now) how we define the log function:
+                <me>
+                    y=e^x \longleftrightarrow x=\ln(y)
+                </me>.
+                This arrow goes both directions: the log function is the inverse of the exponential, but the exponential is the inverse of the log function!                
+            </p>
+            <p>
+                Can you re-write the relationship <m>y=\ln(x)</m> using its inverse (the exponential)?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For your inverted <m>y=\ln(x)</m> from above (it should be <m>x=<fillin characters="5" /></m>), apply a derivative operator to both sides, and use implicit differentiation to find <m>\dydx</m> or <m>y'</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Where do we have to use Chain Rule?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                A weird thing that we can notice is that when we use implicit differentiation, it is common to end up with our derivative written in terms of both <m>x</m> and <m>y</m> variables. This makes sense for our earlier examples: we needed specific coordinates of the point on the circle, for instance, to find the slope there.
+            </p>
+            <p>
+                But if <m>y=\ln(x)</m>, we want <m>\dydx</m> or <m>y'</m> to be a function of <m>x</m>: 
+                <me>
+                    f(x)=\ln(x) \longrightarrow f'(x)=<fillin characters="5" />
+                </me>.
+                Your derivative is written with only <m>y</m> values.
+            </p>
+            <p>
+                Since <m>y=\ln(x)</m>, replace any instance of <m>y</m> with the log function. What do you have left?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Remember that <m>y=\ln(x)</m>. Substitute this into your equation for <m>\dydx</m>. Can you write this in a pretty simplistic way?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Remember that <m>e^{\ln(x)}=x</m>, since these functions are inverses of each other!
+            </p>
+        </hint>
+    </task>
+    
+</activity>
