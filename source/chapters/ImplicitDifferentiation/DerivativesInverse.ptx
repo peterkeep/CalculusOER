@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-DerivativeInverse" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-DerivativesInverse" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Derivatives of Inverse Functions</title>
 
   <introduction>
@@ -46,12 +46,17 @@
       <statement>
         <p>
           <me>\ddx{\ln(x)}=\frac{1}{x}</me>
+          for <m>x\gt 0</m>.
+        </p>
+        <p>
           Further, since <m>\log_b(x) = \frac{\ln(x)}{\ln(b)}</m> (for <m>b\geq 0</m> and <m>b\neq 1</m>), we can say that:
-          <me>\ddx{\log_b(x)} = \frac{1}{x\ln(b)}</me>.
+          <me>\ddx{\log_b(x)} = \frac{1}{x\ln(b)}</me>
+          for <m>x\gt 0</m>.
         </p>
       </statement>
     </theorem>
-    
+    <p>Let's try a similar thing with inverse trigonometric functions.</p>
+      <xi:include href="./activities/act-InverseSineDerivative.ptx" />
   </subsection>
 
 </section>

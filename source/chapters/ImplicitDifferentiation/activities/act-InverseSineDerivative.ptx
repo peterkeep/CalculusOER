@@ -1,0 +1,77 @@
+<activity xml:id="act-InverseSineDerivative" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Finding the Derivative of the Inverse Sine Function</title>
+    <introduction>
+        <p>
+            We're going to do the same trick, except that there will be a couple of small differences due to thinking specifically about trigonometric functions.
+        </p>
+        <p>
+            Let's think about the function <m>y=\sin^{-1}(x)</m>. We know that this is equivalent to <m>x=\sin(y)</m> (for <m>y</m>-values in <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>).
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Move the point around the portion of the unit circle in the graph below. Convince yourself that:
+                <ul>
+                    <li>
+                        <p>
+                            <m>\sin(y)=x</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\sin(y)\geq 0</m> when <m>0\leq y \leq \frac{\pi}{2}</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\sin(y)\lt 0</m> when <m>-\frac{\pi}{2}\leq y \lt 0</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+            <interactive platform="doenetml" width="90%" aspect="1:0.9">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/InverseSine.xml"/>
+                </slate>
+            </interactive>
+            <p>
+                What is <m>\cos(y)</m> in this figure? Does the sign change depending on the value of <m>y</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use implicit differentiation and the equation <m>x=\sin(y)</m> to find <m>\dydx</m> or <m>y'</m>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                If you still have your derivative written in terms of <m>y</m>, make sure to write <m>\cos(y)</m> in terms of <m>x</m>!
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's think about the domain of this derivative: what <m>x</m>-values make sense to think about?
+            </p>
+            <p>
+                Think about this both in terms of what <m>x</m>-values reasonably fit into your formula of <m>\ddx{\sin^{-1}(x)}</m> as well as the domain of the inverse sine function in general.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Notice that in the denominator of <m>\ddx{\sin^{-1}(x)}</m>, you have a square root. Based on that information (and the visual above), what do you expect to be true about the sign of the derivative of the inverse sine function?
+            </p>
+            <p>
+                Confirm this by playing with the graph of <m>y=\sin^{-1}(x)</m> below.
+            </p>
+        </statement>
+    </task>
+</activity>

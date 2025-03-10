@@ -1,0 +1,58 @@
+<setup>
+  <circle name="circle"/>
+  <function name="f" domain="[cos(7pi/15), cos(pi/15)]">sqrt(1-x^2)</function>
+  <point name="point" coords="(cos(pi/5),sin(pi/5))" draggable="true" showCoordsWhenDragging="false">
+    <constraints>
+      <constrainTo>$circle</constrainTo>
+    </constraints>
+  </point>
+  <point name="ancHyp">
+    <conditionalContent>
+      <case condition="$point.y >=0">
+        ($point.x/2, $point.y/2+0.1)
+      </case>
+      <case condition="$point.y <0">
+        ($point.x/2, $point.y/2-0.1)
+      </case>
+    </conditionalContent>
+  </point>
+  <point name="ancx">
+    <conditionalContent>
+      <case condition="$point.y >=0">
+        ($point.x/2, -0.1)
+      </case>
+      <case condition="$point.y <0">
+        ($point.x/2, 0.1)
+      </case>
+    </conditionalContent>
+  </point>
+</setup>
+
+<graph xmin="-0.05" xmax="1.35" ymin="-1.15" ymax="1.15" identicalAxisScales
+  showNavigation="false" fixAxes displayXAxisTickLabels="false" displayYAxisTickLabels="false" size="small">
+  $circle
+  $point
+  <lineSegment endpoints="(0,0) $point" endpointsDraggable="false" draggable="false"/>
+  <lineSegment endpoints="(0,0) ($point.x, 0)" endpointsDraggable="false" styleNumber="2" draggable="false"/>
+  <label anchor="$ancx" styleNumber="2">
+    <m>\sqrt{1-x^2}</m>
+  </label>
+  <lineSegment endpoints="$point ($point.x, 0)" endpointsDraggable="false" styleNumber="2" draggable="false"/>
+  <label anchor="($point.x+0.03, $point.y/2)" positionFromAnchor="right" styleNumber="2">
+    <conditionalContent>
+      <case condition="$point.y>=0">
+      <m>x\\(x\geq0)</m>
+      </case>
+      <case condition="$point.y<0">
+      <m>x\\(x\lt0)</m>
+      </case>
+    </conditionalContent>
+  </label>
+  <label anchor="(0.2cos(arccos($point.x)), 0.2sin(arcsin($point.y)/2.2))" styleNumber="1">
+    <m>y</m>
+  </label>
+  <label anchor="$ancHyp">
+    <m>1</m>
+  </label>
+  
+</graph>
