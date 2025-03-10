@@ -1,0 +1,22 @@
+<!-- https://www.doenet.org/portfolioeditor/_JK2Z3so9dPvJNkEpmIelf/_BBMEm0gJvqAGUUgvBfacm -->
+
+<setup>
+  <point name="point">(0,0)
+    <constraints>
+      <constrainTo>$f</constrainTo>
+    </constraints>
+  </point>
+  <function name="f">arcsin(x)</function>
+  <derivative name="dfdx">$f</derivative>
+  <function name="tangent" styleNumber="2">
+    $$dfdx($point.x)*(x-$point.x)+$point.y
+  </function>
+</setup>
+
+<p><em>Instructions:</em> Move the point on the graph of <m>y=\sin^{-1}(x)</m> and think about what must be true about the derivative <m>\frac{dy}{dx}</m>.</p>
+
+<graph xmin="-1.1" xmax="1.1" ymin="-pi/2-0.1" ymax="pi/2+0.1" identicalAxisScales size="small" fixAxes>
+  $f
+  $point
+  $tangent
+</graph>

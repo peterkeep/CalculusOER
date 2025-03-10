@@ -1,0 +1,83 @@
+<!-- https://www.doenet.org/portfolioeditor/_JPdtQx1FB5PFypycLn0Uo/_SL9cgYHHEBiWKiA1Ibw39 -->
+
+<setup>
+  <circle name="circle"/>
+  <point name="point" coords="(cos(pi/5),sin(pi/5))" draggable="true" showCoordsWhenDragging="false">
+    <constraints>
+      <constrainTo>$circle</constrainTo>
+    </constraints>
+  </point>
+  <point name="ancHyp">
+    <conditionalContent>
+      <case condition="$point.y >=0">
+        ($point.x/2, $point.y/2+0.1)
+      </case>
+      <case condition="$point.y <0">
+        ($point.x/2, $point.y/2-0.1)
+      </case>
+    </conditionalContent>
+  </point>
+  <point name="ancx">
+    <conditionalContent>
+      <case condition="$point.x >=0">
+        ($point.x + 0.05, $point.y/2)
+      </case>
+      <case condition="$point.x <0">
+        ($point.x-0.25, $point.y/2)
+      </case>
+    </conditionalContent>
+  </point>
+</setup>
+
+<p>
+  <em>Instructions:</em> For angles <m>y</m> in <m>\left[0, \pi\right]</m>, find the signs of <m>\tan(y)</m> and <m>\sec(y)</m>. When are each of them positive or negative?
+</p>
+
+<graph xmin="-1.35" xmax="1.35" ymin="-.15" ymax="1.15" identicalAxisScales
+  showNavigation="false" fixAxes displayXAxisTickLabels="false" displayYAxisTickLabels="false" size="medium">
+  $circle
+  $point
+  <lineSegment endpoints="(0,0) $point" styleNumber="5" endpointsDraggable="false" draggable="false"/>
+  <lineSegment endpoints="(0,0) ($point.x, 0)" endpointsDraggable="false" styleNumber="2" draggable="false"/>
+  <label anchor="($point.x/2, -0.1)" styleNumber="2" draggable="false">
+    <conditionalContent>
+      <case condition="$point.x>0">
+        <m>\cos(y) \gt 0</m>
+      </case>
+      <case condition="$point.x<0">
+        <m>\cos(y) \lt 0</m>
+      </case>
+      <case condition="$point.x=0">
+        <m>\cos(y) = 0</m>
+      </case>
+    </conditionalContent>
+  </label>
+  <lineSegment endpoints="$point ($point.x, 0)" endpointsDraggable="false" styleNumber="2" draggable="false"/>
+  <label anchor="$ancx" positionFromAnchor="right" styleNumber="2">
+    <m>\sin(y)</m>
+  </label>
+  <label anchor="(0.2cos(arccos($point.x)), 0.2sin(arcsin($point.y)/2.2))" styleNumber="1">
+    <m>y</m>
+  </label>
+  <label anchor="$ancHyp">
+    <m>1</m>
+  </label>  
+</graph>
+<aside><title>Hint</title>
+<p>
+  <conditionalContent>
+    <case condition="$point.x>0">
+      <me>\tan(y) = \frac{\sin(y)}{\cos(y)} \gt 0</me>
+      <me>\sec(y) = \frac{1}{\cos(y)} \gt 0</me>
+    </case>
+    <case condition="$point.x<0">
+      <me>\tan(y) = \frac{\sin(y)}{\cos(y)} \lt 0</me>
+      <me>\sec(y) = \frac{1}{\cos(y)} \lt 0</me>
+    </case>
+    <case condition="$point.x=0">
+      <me>\tan(y) = \frac{\sin(y)}{\cos(y)} \text{ is undefined}</me>
+      <me>\sec(y) = \frac{1}{\cos(y)} \text{ is undefined}</me>
+    </case>
+  </conditionalContent>
+</p>
+</aside>

@@ -1,3 +1,5 @@
+<!-- https://www.doenet.org/portfolioeditor/_x1uotFzk6sJ6KDndtREDH/_98MNRwBF4AP31QeqYQEFS -->
+
 <setup>
   <circle name="circle"/>
   <function name="f" domain="[cos(7pi/15), cos(pi/15)]">sqrt(1-x^2)</function>
@@ -32,7 +34,7 @@
   showNavigation="false" fixAxes displayXAxisTickLabels="false" displayYAxisTickLabels="false" size="small">
   $circle
   $point
-  <lineSegment endpoints="(0,0) $point" endpointsDraggable="false" draggable="false"/>
+  <lineSegment endpoints="(0,0) $point" styleNumber="5" endpointsDraggable="false" draggable="false"/>
   <lineSegment endpoints="(0,0) ($point.x, 0)" endpointsDraggable="false" styleNumber="2" draggable="false"/>
   <label anchor="$ancx" styleNumber="2">
     <m>\sqrt{1-x^2}</m>

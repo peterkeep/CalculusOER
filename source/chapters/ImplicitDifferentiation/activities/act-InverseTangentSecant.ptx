@@ -1,0 +1,88 @@
+<activity xml:id="act-InverseTangentSecant" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Building the Derivatives for Inverse Tangent and Secant</title>
+    
+    <task>
+        <statement>
+            <p>
+                Consider the triangle representing the case when <m>y=\tan^{-1}(x)</m>.
+            </p>
+            <figure xml:id="fig-InvTanTriangle">
+                <caption></caption>
+                <image source="./ImplicitDifferentiation/InvTanTriangle.png" width="50%">
+                    <shortdescription>Right triangle with hypotenuse sqrt(x^2+1) and the other side lengths 1 and x. The angle between 1 and sqrt(x^2+1) is labeled y.</shortdescription>
+                </image>
+            </figure>
+            <p>
+                For <m>x=\tan(y)</m>, find <m>\dydx</m> using implicit differentiation. Find an appropriate expression for <m>\sec(y)</m> based on the triangle above, but we will refer back to the version with the <m>\sec(y)</m> in it later.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Consider the triangle representing the case when <m>y=\sec^{-1}(x)</m>.
+            </p>
+            <figure xml:id="fig-InvSecTriangle">
+                <caption></caption>
+                <image source="./ImplicitDifferentiation/InvSecTriangle.png" width="50%">
+                    <shortdescription>Right triangle with hypotenuse x and the other side lengths 1 and sqrt(x^2-1). The angle between 1 and x is labeled y.</shortdescription>
+                </image>
+            </figure>
+            <p>
+                For <m>x=\sec(y)</m>, find <m>\dydx</m> using implicit differentiation. Find an appropriate expression for <m>\sec(y)</m> and <m>\tan(y)</m> based on the triangle above, but we will refer back to the version with the functions of <m>y</m> in it later.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Here's a graph of just the unit circle for angles <m>[0,\pi]</m>. We are choosing to focus on this region, since these are the angles that the inverse tangent and inverse secant functions will return to us. We want to investigate the signs of <m>\tan(y)</m> and <m>\sec(y)</m>.
+            </p>
+            <interactive platform="doenetml" width="90%" aspect="1:0.8">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/InverseTangentSecantSigns.xml"/>
+                </slate>
+            </interactive>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Go back to our derivative expressions for both the inverse tangent and inverse secant functions. What do we know about the signs of these derivatives?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Notice that in <m>\ddx{\tan^{-1}(x)} = \frac{1}{\sec^2(y)}</m>, we know that the derivative must be positive. Even when <m>\sec(y)\lt 0</m>, we are squaring it.
+            </p>
+            <p>
+                In <m>\ddx{\sec^{-1}(x)} = \frac{1}{\sec(y)\tan(y)}</m>, we know that the derivative must also always be positive. Whenever <m>\sec(y)\lt 0</m>, we have <m>\tan(y)\lt 0</m>, and so the product must be positive.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Confirm your idea about the sign of the derivatives by investigating the graphs of each function.
+            </p>
+            <interactive platform="doenetml" width="90%" aspect="1:0.7">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/InverseTangentLines.xml"/>
+                </slate>
+            </interactive>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How do we need to write these derivatives, when we write them in terms of <m>x</m> to account for the sign of the derivative?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Use an absolute value in the formula for <m>\ddx{\sec^{-1}(x)}</m>!
+            </p>
+        </hint>
+    </task>
+    
+</activity>

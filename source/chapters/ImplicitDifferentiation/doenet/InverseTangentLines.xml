@@ -1,0 +1,45 @@
+<!-- https://www.doenet.org/portfolioeditor/_xkVPuEhUGLjxT6ONycurT/_uWXIEgONrIYZXeP6SVpVw -->
+
+<setup>
+  <point name="point">(0,0)
+    <constraints>
+      <constrainTo>$f</constrainTo>
+    </constraints>
+  </point>
+  <function name="f">arctan(x)</function>
+  <derivative name="dfdx">$f</derivative>
+  <function name="tangent" styleNumber="2">
+    $$dfdx($point.x)*(x-$point.x)+$point.y
+  </function>
+  <point name="pointS">(1,0)
+    <constraints>
+      <constrainTo>$fS</constrainTo>
+    </constraints>
+  </point>
+  <function name="fS">arcsec(x)</function>
+  <derivative name="dfdxS">$f</derivative>
+  <function name="tangentS" styleNumber="2">
+    $$dfdxS($pointS.x)*(x-$pointS.x)+$pointS.y
+  </function>
+</setup>
+
+<p><em>Instructions:</em> Move the points on the graphs of <m>y=\tan^{-1}(x)</m> and <m>y=\sec^{-1}(x)</m> and think about what must be true about the signs of the derivatives.</p>
+
+<sideBySide>
+  <p><me>\text{Graph of }y=\tan^{-1}(x)</me></p>
+
+  <p><me>\text{Graph of }y=\sec^{-1}(x)</me></p>
+</sideBySide>
+<sideBySide>
+<graph xmin="-4" xmax="4" ymin="-pi/2-0.5" ymax="pi/2+0.5" size="medium" identicalAxisScales showBorder="false" >
+  $f
+  $point
+  $tangent
+</graph>
+  
+<graph xmin="-4" xmax="4" ymin="-0.5" ymax="pi+0.5" size="medium" identicalAxisScales showBorder="false">
+  $fS
+  $pointS
+  $tangentS
+</graph>
+</sideBySide>

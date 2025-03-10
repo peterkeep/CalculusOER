@@ -55,8 +55,36 @@
         </p>
       </statement>
     </theorem>
-    <p>Let's try a similar thing with inverse trigonometric functions.</p>
-      <xi:include href="./activities/act-InverseSineDerivative.ptx" />
+  </subsection>
+
+  <subsection xml:id="subsec-InverseTrigDerivatives">
+    <title>Derivatives of the Inverse Trigonometric Functions</title>
+    <p>Let's try a similar thing with inverse trigonometric functions. We'll start with the inverse sine function, <m>y=\sin^{-1}(x)</m>.</p>
+    <xi:include href="./activities/act-InverseSineDerivative.ptx" />
+    <p>
+      Let's repeat the process to find the derivatives of <m>y=\tan^{-1}(x)</m> and <m>y=\sec^{-1}(x)</m>. 
+    </p>
+    <xi:include href="./activities/act-InverseTangentSecant.ptx" />
+    <p>
+      It is important to think carefully about how things might change when we start thinking about other trigonometric functions. For instance, what happens when we think about <m>y=\cos^{-1}(x)</m> instead? We <em>could</em> repeat the process from <xref ref="act-InverseSineDerivative"/> with <m>y=\cos^{-1}(x)</m> instead (and we'll do that for <m>y=\tan^{-1}(x)</m>), but for now let's think about the graph of <m>y=\cos^{-1}(x)</m>.
+    </p>
+    <xi:include href="./activities/act-InverseCosineGraph.ptx" />
+    <theorem xml:id="thm-InverseTrigDerivatives">
+      <title>Derivatives of the Inverse Trigonometric Functions</title>
+      <statement>
+        <p>
+          <md>
+            <mrow>\ddx{\sin^{-1}(x)} \amp = \frac{1}{\sqrt{1-x^2}} \amp \text{Domain: }-1\lt x\lt 1</mrow>
+            <mrow>\ddx{\cos^{-1}(x)} \amp = -\frac{1}{\sqrt{1-x^2}} \amp \text{Domain: }-1\lt x\lt 1</mrow>
+            <mrow>\ddx{\tan^{-1}(x)} \amp = \frac{1}{x^2+1} \amp \text{Domain: all Real numbers} </mrow>
+            <mrow>\ddx{\cot^{-1}(x)} \amp = -\frac{1}{x^2+1} \amp \text{Domain: all Real numbers}</mrow>
+            <mrow>\ddx{\sec^{-1}(x)} \amp = \frac{1}{|x|\sqrt{x^2-1}} \amp \text{Domain: } x\lt -1 \text{ and } x \gt 1</mrow>
+            <mrow>\ddx{\csc^{-1}(x)} \amp = -\frac{1}{|x|\sqrt{x^2-1}} \amp \text{Domain: }x\lt -1 \text{ and } x \gt 1</mrow>
+          </md>
+        </p>
+      </statement>
+    </theorem>
+    
   </subsection>
 
 </section>

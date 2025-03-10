@@ -72,6 +72,21 @@
             <p>
                 Confirm this by playing with the graph of <m>y=\sin^{-1}(x)</m> below.
             </p>
+            <interactive platform="doenetml" width="90%" aspect="1:1">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/InverseSineTangent.xml"/>
+                </slate>
+            </interactive>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Investigate the behavior of <m>\dydx</m> at the end-points of the function: at <m>x=-1</m> and <m>x=1</m>. What do the slopes look like they're doing, graphically?
+            </p>
+            <p>
+                How does this work when you look at the function you built above? What happens when you try to find <m>\Dydx\bigg|_{x=-1}</m> or <m>\Dydx\bigg|_{x=1}</m>?
+            </p>
         </statement>
     </task>
 </activity>

@@ -1,0 +1,76 @@
+<activity xml:id="act-InverseCosineGraph" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Connecting These Inverse Functions</title>
+    <introduction>
+        <p>
+            We're going to look at a graph of <m>y=\cos^{-1}(x)</m>, but we're specifically going to try to compare it to the graph of <m>y=\sin^{-1}(x)</m>. We'll use some graphical transformations to make these functions match up, and then later we'll think about derivatives.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+           <p>
+            Ok, consider the graph of <m>y=\cos^{-1}(x)</m> and a transformed version of the inverse sine function. Apply some graphical transformations to make these match!
+           </p>
+           <interactive platform="doenetml" width="90%" aspect="1:1.2">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/InverseCosine.xml"/>
+                </slate>
+            </interactive>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                It might be fun to think about another reason that this connection between <m>\sin^{-1}(x)</m> and <m>\cos^{-1}(x)</m> exists.
+            </p>
+            <p>
+                Consider this triangle:
+                <figure xml:id="fig-TriangleInverseCosine">
+                    <caption></caption>
+                    <image source="./ImplicitDifferentiation/triangle.png" width="40%">
+                        <shortdescription>A right triangle with side lengths labeled x and sqrt(1-x^2) with the hypotenuse labeled 1.</shortdescription>
+                    </image>
+                </figure> We're going to think about these inverse trigonometric functions as angles: let <m>\alpha = \cos^{-1}(x)</m> and <m>\beta = \sin^{-1}(x)</m>. We can re-write these as:
+                <md>
+                    <mrow>\cos(\alpha) \amp = x</mrow>
+                    <mrow>\sin(\beta) \amp =x </mrow>
+                </md>.
+                Can you fill in your triangle using this information?
+            </p>
+            <p>
+                Why does <m>\alpha + \beta = \frac{\pi}{2}</m>? Convince yourself that this is what we did with the graphical transformations above, as well.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use this equation above, re-writing <m>\cos^{-1}(x)</m> as some expression involving the inverse sine function, and then find
+                <me>
+                    \ddx{\cos^{-1}(x)}
+                </me>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <me>
+                    \ddx{\cos^{-1}(x)} = \ddx{-\sin^{-1}(x)+\frac{\pi}{2}}
+                </me>
+            </p>
+        </hint>
+    </task>
+    <conclusion>
+        <p>
+            We could repeat this task to try to connect the graph of <m>y=\tan^{-1}(x)</m> with <m>y=\cot^{-1}(x)</m> as well as the graph of <m>y=\sec^{-1}(x)</m> with <m>y=\csc^{-1}(x)</m>, but we can hopefully see what will happen. In each case, we have the same kind of connection that we saw in the triangle, since these are cofunctions of each other!
+        </p>
+        <p>
+            We can summarize by believing that:
+            <md>
+                <mrow>\ddx{\cos^{-1}(x)} \amp =-\ddx{\sin^{-1}(x)} = -\frac{1}{\sqrt{1-x^2}}</mrow>
+                <mrow> \ddx{\cot^{-1}(x)} \amp =-\ddx{\tan^{-1}(x)} =-\frac{1}{x^2+1}</mrow>
+                <mrow>\ddx{\csc^{-1}(x)} \amp = -\ddx{\sec^{-1}(x)}= -\frac{1}{|x|\sqrt{x^2-1}}</mrow>
+            </md>
+        </p>
+    </conclusion>
+
+    
+</activity>
