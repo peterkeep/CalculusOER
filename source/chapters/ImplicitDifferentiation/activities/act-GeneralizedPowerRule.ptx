@@ -1,0 +1,77 @@
+<activity xml:id="act-GeneralizedPowerRule" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Returning to the Power Rule</title>
+    <introduction>
+        <p>
+            Back in <xref ref="sec-DerivativeRules"/> we built an explanation for why <m>\ddx{x^n}=nx^{n-1}</m> that relied on thinking about exponents as repeated multiplication: it relied on <m>n</m> being some positive integer. We said, at the time, that the Power Rule generalizes and works for <em>any</em> integer, but did so without explanation.
+        </p>
+        <p>
+            Let's consider <m>y=x^n</m> where <m>n</m> is just some real number without any other restrictions.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Apply a logarithm to both sides of this equation:
+                <me>
+                    \ln(y) = \ln(x^n)
+                </me>
+                Now use one of the <xref ref="fact-LogProperties" text="title"/> to re-write this equation.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use implicit differentiation to find <m>\dydx</m> or <m>y'</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Remember that when you solve for <m>\dydx</m> or <m>y'</m>, you might have some <m>y</m>-variables in your derivative. Replace them with <m>y=x^n</m>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Explain to yourself why this is equivalent to the Power Rule that we built so long ago:
+                <me>
+                    \ddx{x^n}=nx^{n=1}
+                </me>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's get weird. What if we have a not-quite-power function? Where the thing in the exponent isn't simply a number, but another variable?
+            </p>
+            <p>
+                Let's use the same technique to think about <m>y=x^x</m> and its derivative. First, though, confirm that this is not a power function (and so we cannot use the Power Rule to find the derivative) and is also not an exponential function (and so the derivative isn't itself or itself scaled by a log).
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now apply a log to both sides:
+                <me>
+                    \ln(y) = \ln(x^x)
+                </me>.
+                Re-write this using the same log property as before, and then use implicit differentiation to find <m>\dydx</m> or <m>y'</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Don't forget that in order to find <m>\dydx{x\ln(x)}</m>, we need to use the Product Rule.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Explain to yourself why logs are friends, especially when trying to differentiate functions in the form of <m>y=\left(f(x)\right)^{g(x)}</m>.
+            </p>
+        </statement>
+    </task>
+</activity>

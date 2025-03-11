@@ -2,7 +2,103 @@
 
 <section xml:id="sec-LogarithmicDifferentiation" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Logarithmic Differentiation</title>
-
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      We're going to start with a quick fact about logs and their derivatives. The derivative rule for <m>\ddx{\ln(x)}</m> is still relatively new for us, so it is ok to still be getting comfortable with it, but we should notice this nice fact.
+    </p>
+    <fact xml:id="fact-ChainRuleLog">
+      <title>Derivative of the Log of a Function</title>
+      <statement>
+        <p>
+          <me>
+            \ddx{\ln(f(x))} = \frac{f'(x)}{f(x)} \;\;(\text{when } f(x)\gt 0)
+          </me>
+          Note that there's nothing really special going on here: this is just an application of the <xref ref="thm-ChainRule" text="title"/> to the <xref ref="thm-DerivativeLog" text="title"/>.
+        </p>
+      </statement>
+    </fact>
+    <p>
+      Throughout this section, the goal is to convince any open-minded readers of one thing:
+    </p>
+    <p>
+      <em>Logs are friends.</em>
+    </p>
+        <p>
+      Let us be informal and technically not quite correct but hopefully clear in this. Logs really are friendly mathematical objects. They were <em>created</em> to be friendly objects! In a time when doing arithmetic with large numbers was difficult due to a lack of computing technology, logs were introduced to make arithmetic easier.
+    </p>
+    <p>
+      The general idea is that, if there is some kind of hierarchy of operations, then logs transform operations between things into different operations that are lower on the hierarchy of operations. So logs turn things like products (repeated addition) and quotients (repeated subtraction) into addition and subtraction. Logs turn exponents (repeated multiplication) into coefficients.
+    </p>
+    <p>
+      Using math notation, we can write the following log properties.
+    </p>
+    <fact xml:id="fact-LogProperties">
+    <title>Properties of Logarithms</title>
+      <statement>
+        <p>
+          We will make use of the following properties of logarithms.
+          <ul>
+            <li>
+              <p>
+                <m>\ln(xy) = \ln(x)+\ln(y)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\ln\left(\frac{x}{y}\right) = \ln(x)-\ln(y)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\ln(x^y) = y\ln(x)</m>
+              </p>
+            </li>
+          </ul>
+          Because of the domain of the log function, we need <m>x,y\gt 0</m> for these properties to make sense. We will use them relatively loosely, with functions that take on negative and positive values, and not worry too much about the domain issues when we don't need to.
+        </p>
+      </statement>
+    </fact>
+  </introduction>
+  <subsection xml:id="subsec-LogsAreFriends">
+    <title>Logs Are Friends!</title>
+    <p>
+      Ok, so how will we use these new-found friends? We're going to think about some functions (and combinations of functions) that are new to us and that aren't so clear for us to use things like the Product, Quotient, or Chain Rule. We'll try to use logs to re-write our functions into some easier to approach implicitly defined relationships in order for us to differentiate.
+    </p>
+    <p>
+      But first, let's build an explanation for the <xref ref="thm-PowerRuleDerivatives" text="title"/>. 
+    </p>
+    <xi:include href="./activities/act-GeneralizedPowerRule.ptx" />
+    <p>
+      This idea that we've just implemented (applying a logarithm to make some function more friendly and then using implicit differentiation to differentiate) is often called <term>logarithmic differentiation</term>. It works so well because <em>logs are friends</em>.
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-WowSoFriendly">
+    <title>Wow, So Friendly!</title>
+    <p>
+      This is incredible! We can now differentiate a whole new class of functions! Functions raised to functions, what could we think of next!
+    </p>
+    <p>
+      How about products and quotients of functions? I know, I know, we have <xref ref="sec-ProductQuotientRule" text="title"/>...what about <em>big</em> products and quotients? Annoying ones. Complicated ones.
+    </p>
+    <xi:include href="./activities/act-LogsProductsQuotients.ptx" />
+  </subsection>
+  <conclusion>
+    <p>
+      So how do we wrap this up? I hope we can see that logs are a useful and powerful tool: we can use logarithmic differentiation to transform our functions to become "easier to work with" versions of themselves: we put everything on a log-scale and allow our properties of logarithms to make the operations become a bit more accessible.
+    </p>
+    <p>
+      This is a commonly used trick in many applications of calculus. Specifically, this is used often enough in statistics that there is a whole paradigm of estimation (called Maximum Likelihood Estimation) that uses a log-transformed version of a likelihood function and then applies some basic calculus ideas (that we'll cover in <xref ref="sec-Optimization"/>) to perform some powerful estimations.
+    </p>
+    <p>
+      While I hope that we end up leaving this section knowing that <em>logs are friends</em>, we can probably add a second (and related result) that we're using over and over.
+    </p>
+    <p>
+      <em>Using the Chain Rule is probably easier than any other option.</em>
+    </p>
+    <p>
+      We apply logs in order to re-write these functions in a friendly way <em>because</em> we would rather use the Chain Rule than any combination of other derivative strategies.
+    </p>
+  </conclusion>
+  
 
 </section>
