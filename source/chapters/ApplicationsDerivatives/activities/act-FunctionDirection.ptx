@@ -1,0 +1,82 @@
+<activity xml:id="act-FunctionDirection" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>How Should We Think About Direction?</title>
+    <introduction>
+        <p>
+            Our goal in this activity is to motivate some new terminology and results that will help us talk about the "direction" of a function and some interesting points on a function (related to the direction of a function). For us to do this, we'll look at some different examples of functions and try to think about some unifying ideas. 
+        </p>
+        <figure xml:id="fig-Direction">
+            <caption></caption>
+            <sbsgroup widths="35% 35%" margins="auto">
+                <sidebyside>
+                    <image source="./ApplicationsDerivatives/Direction1.png">
+                    <shortdescription>A rational function that increases gently up to a point in the third quadrant, then decreases towards a vertical asymptote at x=0. In the first quadrant, the function decreases down to some point, and then gently increases.</shortdescription>
+                </image>
+                <image source="./ApplicationsDerivatives/Direction2.png">
+                    <shortdescription>A polynomial function that decreases down to a point, then increases, then decreases, then increases.</shortdescription>
+                </image>
+                </sidebyside>
+                <sidebyside>
+                <image source="./ApplicationsDerivatives/Direction3.png">
+                    <shortdescription>A kind of oscillating function that looks like it bounces off of the horizontal axis, creating sharp corners. It gently changes direction near the peak. The graph decreases, hits the axis and increases, then gently decreases towards the horizontal axis. It bounces one more time, and increases then decreases.</shortdescription>
+                </image>
+                <image source="./ApplicationsDerivatives/Direction4.png">
+                    <shortdescription>A bell curve, with horizontal asymptote at y=0. It increases up to a point on the top where it changes to decreasing towards the horizontal axis.</shortdescription>
+                </image>
+                </sidebyside>
+            </sbsgroup>
+        </figure>
+        <p>
+            These examples do not cover all of the possibilities of how a function can act, but will hopefully provide us enough fertile ground to think about some different situations.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                In each graph, find and identify:
+                
+                <ul>
+                    <li>
+                        <p>
+                            The intervals where the function is increasing. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The intervals where the function is decreasing. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The points (or locations) around and between these intervals, the points where the function changes direction or the direction terminates.
+                        </p>
+                    </li>
+                </ul> 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Make a conjecture about the behavior of a function at any point where the function changes direction.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What do you think has to be true about the derivative at these points?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Look at the highest and lowest points on each function. You can even include the points that are highest and lowest just compared to the points around it. Make a conjecture about the behavior of the function at these points.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What do you think has to be true about the derivative at these points?
+            </p>
+        </hint>
+    </task>
+    
+</activity>

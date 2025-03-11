@@ -2,7 +2,105 @@
 
 <section xml:id="sec-IncreasingDecreasing" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Increasing and Decreasing Functions</title>
+  <introduction>
+    <xi:include href="./activities/act-FunctionDirection.ptx" />
+    <p>
+      We want to turn this little bit of thinking and exploring into some useful definitions for us. To craft these definitions, we need to start with thinking about what we care about and why we might care about it.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-CriticalPointsLocalMaxMins">
+    <title>Critical Points, Local Maximums, and Local Minimums</title>
+    <p>
+      Let's start by saying what we're really looking for is the highest and lowest points on a function. These points are interesting, have useful applications, and are difficult to find in general without calculus. We hopefully noticed, though, that these points always end up showing up at the same kinds of locations! They're points where the direction of a function changes (or terminates).
+    </p>
+    <p>
+      We also noticed that there are some common characteristics of those points. They're points where the derivative was either 0 or didn't exist. So we'll start by defining these points, and then we'll define the idea of "highest" and "lowest" points. Then we'll put together a result that we hopefully noticed here: that the highest and lowest points show up at these points where the derivative is 0 or doesn't exist.
+    </p>
+    <definition xml:id="def-CriticalPoint">
+      <title>Critical Point of a Function</title>
+      <statement>
+        <p>
+          We say that a point <m>(c, f(c))</m> on the graph of <m>y=f(x)</m> is a <term>critical point</term> of the function <m>f</m> if <m>f'(c)=0</m> or <m>f'(c)</m> doesn't exist.
+        </p>
+        <p>
+          If <m>(c, f(c))</m> is a critical point of <m>f</m>, then we sometimes will call <m>x=c</m> a <term>critical number</term> and <m>y=f(c)</m> a <term>critical value</term>. 
+        </p>
+      </statement>
+    </definition>
+    <p>
+      So these are the points we will look for to find the "highest" and "lowest" points.
+    </p>
+    <p>
+      Now we need to define this idea so that we can build the result that tells us how to find these highest and lowest points.
+    </p>
+    <definition xml:id="def-LocalMaxMin">
+    <title>Local Maximum/Minimum</title>
+      <statement>
+        <p>
+          A point <m>(c,f(c))</m> is a <term>local maximum</term> of <m>f(x)</m> if there is some open interval of real numbers <m>(a,b)</m> around <m>x=c</m> (that is, <m>a\lt c\lt b</m>) and <m>f(c)\geq f(x)</m> for all <m>x</m>-values in the intersection of <m>(a,b)</m> and the domain of <m>f</m>.
+        </p>
+        <p>
+          Similarly, a point <m>(c,f(c))</m> is a <term>local minimum</term> of <m>f(x)</m> if there is some open interval of real numbers <m>(a,b)</m> around <m>x=c</m> (that is, <m>a\lt c\lt b</m>) and <m>f(c)\leq f(x)</m> for all <m>x</m>-values in the intersection of <m>(a,b)</m> and the domain of <m>f</m>.
+        </p>
+        <p>
+          These are really just slightly technical ways of saying that <m>f(c)</m> is either the highest or lowest <m>y</m>-value produced by the function <m>f</m> for the <m>x</m>-values near <m>x=c</m>.
+        </p>
+      </statement>
+    </definition>
+    <aside>
+      <p>
+        If you look around online, or in other textbooks, you'll find different definitions of these same kinds of pints. Some of those definitions have silly stipulations, like saying that an ending point of a function cannot be a local maximum/local minimum.
+      </p>
+      <p>
+        This seems to come from some sense that the derivative must be defined on each "side" of a local max/min. In this book, we'll not worry about this restriction, and instead just look at the highest and lowest points relative to the other points near it.
+      </p>
+    </aside>
+    <p>
+      Now we want to build the connection between these points. In <xref ref="act-FunctionDirection"/>, we pointed out that the highest and lowest points on a function all had the common theme of showing up at places where the derivative was 0 or didn't exist. 
+    </p>
+    <theorem xml:id="thm-LocalMaxMinAtCriticalPoints">
+      <title>Every Local Maximum/Minimum Occurs at a Critical Point</title>
+      <statement>
+        <p>
+          Every local maximum or local minimum of <m>f</m> occurs at a critical point of <m>f</m>.
+        </p>
+        <p>
+          Another way of saying this is that if <m>(c,f(c))</m> is a local maximum or local minimum of <m>f</m>, then it must also be a critical point of <m>f</m>.
+        </p>
+      </statement>
+    </theorem>
+    <p>
+      WAIT! STOP! Before you move on, let's make sure we understand what this theorem is saying. Or maybe what this theorem is <em>not</em> saying.
+    </p>
+    <p>
+      Notice that we are not saying that every critical point is a local maximum or local minimum! This is a classic "every square is a rectangle but not every rectangle is a square" situation.
+    </p>
+    <p>
+      Every local maximum/minimum occurs at a critical point, but not every critical point is a local maximum/minimum. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-FindingDirection">
+    <title>Direction of a Function (and Where it Changes)</title>
+    <p>
+      Let's build up a way of classifying critical points as local maximums, local minimums, or neither.
+    </p>
+    <xi:include href="./activities/act-ComparingCriticalPoints.ptx" />
+    <p>
+      This is great! What we'll notice is that 
+    </p>
 
-  <p> Text of section. </p>
+    <theorem xml:id="thm-FirstDerivativeTest">
+    <title>First Derivative Test</title>
+    <statement>
+      <p>
+        
+      </p>
+    </statement>
+  </theorem>
+  </subsection>
+  
+
+  
+  
 
 </section>
