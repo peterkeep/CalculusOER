@@ -256,7 +256,13 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativesInverse.html#subsec-InverseTrigDerivatives" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Derivatives of the Inverse Trigonometric Functions</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Logarithmic Differentiation</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Logarithmic Differentiation</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#subsec-LogsAreFriends" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Logs Are Friends!</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#subsec-WowSoFriendly" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Wow, So Friendly!</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-RelatedRates.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Related Rates</span></a></div></li>
 </ul>
 </li>
@@ -455,7 +461,134 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-LogarithmicDifferentiation"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">3.3</span><span class="space"> </span><span class="title">Logarithmic Differentiation</span>
 </h2>
-<div class="para" id="sec-LogarithmicDifferentiation-2">Text of section.</div></section></div>
+<section class="introduction" id="sec-LogarithmicDifferentiation-2"><div class="para" id="sec-LogarithmicDifferentiation-2-1">We’re going to start with a quick fact about logs and their derivatives. The derivative rule for <span class="process-math">\(\ddx{\ln(x)}\)</span> is still relatively new for us, so it is ok to still be getting comfortable with it, but we should notice this nice fact.</div>
+<article class="fact theorem-like" id="fact-ChainRuleLog"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Derivative of the Log of a Function.</span>
+</h3>
+<div class="para logical" id="fact-ChainRuleLog-2-1">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-ChainRule.html ./knowl/xref/thm-DerivativeLog.html">
+\begin{equation*}
+\ddx{\ln(f(x))} = \frac{f'(x)}{f(x)} \;\;(\text{when } f(x)\gt 0)
+\end{equation*}
+</div>
+<div class="para">Note that there’s nothing really special going on here: this is just an application of the <a href="sec-ChainRule.html#thm-ChainRule" class="xref" data-knowl="./knowl/xref/thm-ChainRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.5.2: The Chain Rule">The Chain Rule</a> to the <a href="sec-DerivativesInverse.html#thm-DerivativeLog" class="xref" data-knowl="./knowl/xref/thm-DerivativeLog.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 3.2.1: Derivative of the Logarithmic Function">Derivative of the Logarithmic Function</a>.</div>
+</div></article><div class="para" id="sec-LogarithmicDifferentiation-2-3">Throughout this section, the goal is to convince any open-minded readers of one thing:</div>
+<div class="para" id="sec-LogarithmicDifferentiation-2-4"><em class="emphasis">Logs are friends.</em></div>
+<div class="para" id="sec-LogarithmicDifferentiation-2-5">Let us be informal and technically not quite correct but hopefully clear in this. Logs really are friendly mathematical objects. They were <em class="emphasis">created</em> to be friendly objects! In a time when doing arithmetic with large numbers was difficult due to a lack of computing technology, logs were introduced to make arithmetic easier.</div>
+<div class="para" id="sec-LogarithmicDifferentiation-2-6">The general idea is that, if there is some kind of hierarchy of operations, then logs transform operations between things into different operations that are lower on the hierarchy of operations. So logs turn things like products (repeated addition) and quotients (repeated subtraction) into addition and subtraction. Logs turn exponents (repeated multiplication) into coefficients.</div>
+<div class="para" id="sec-LogarithmicDifferentiation-2-7">Using math notation, we can write the following log properties.</div>
+<article class="fact theorem-like" id="fact-LogProperties"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of Logarithms.</span>
+</h3>
+<div class="para logical" id="fact-LogProperties-2-1">
+<div class="para">We will make use of the following properties of logarithms.</div>
+<ul class="disc" id="fact-LogProperties-2-1-1">
+<li id="fact-LogProperties-2-1-1-1"><div class="para" id="fact-LogProperties-2-1-1-1-1"><span class="process-math">\(\displaystyle \ln(xy) = \ln(x)+\ln(y)\)</span></div></li>
+<li id="fact-LogProperties-2-1-1-2"><div class="para" id="fact-LogProperties-2-1-1-2-1"><span class="process-math">\(\displaystyle \ln\left(\frac{x}{y}\right) = \ln(x)-\ln(y)\)</span></div></li>
+<li id="fact-LogProperties-2-1-1-3"><div class="para" id="fact-LogProperties-2-1-1-3-1"><span class="process-math">\(\displaystyle \ln(x^y) = y\ln(x)\)</span></div></li>
+</ul>
+<div class="para">Because of the domain of the log function, we need <span class="process-math">\(x,y\gt 0\)</span> for these properties to make sense. We will use them relatively loosely, with functions that take on negative and positive values, and not worry too much about the domain issues when we don’t need to.</div>
+</div></article></section><section class="subsection" id="subsec-LogsAreFriends"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="space"> </span><span class="title">Logs Are Friends!</span>
+</h3>
+<div class="para" id="subsec-LogsAreFriends-2">Ok, so how will we use these new-found friends? We’re going to think about some functions (and combinations of functions) that are new to us and that aren’t so clear for us to use things like the Product, Quotient, or Chain Rule. We’ll try to use logs to re-write our functions into some easier to approach implicitly defined relationships in order for us to differentiate.</div>
+<div class="para" id="subsec-LogsAreFriends-3">But first, let’s build an explanation for the <a href="sec-DerivativeRules.html#thm-PowerRuleDerivatives" class="xref" data-knowl="./knowl/xref/thm-PowerRuleDerivatives.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.3.1: Power Rule for Derivatives">Power Rule for Derivatives</a>.</div>
+<article class="activity project-like" id="act-GeneralizedPowerRule"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Returning to the Power Rule.</span>
+</h4>
+<div class="introduction" id="act-GeneralizedPowerRule-2">
+<div class="para" id="act-GeneralizedPowerRule-2-1">Back in <a href="sec-DerivativeRules.html" class="internal" title="Section 2.3: Some Early Derivative Rules">Section 2.3</a> we built an explanation for why <span class="process-math">\(\ddx{x^n}=nx^{n-1}\)</span> that relied on thinking about exponents as repeated multiplication: it relied on <span class="process-math">\(n\)</span> being some positive integer. We said, at the time, that the Power Rule generalizes and works for <em class="emphasis">any</em> integer, but did so without explanation.</div>
+<div class="para" id="act-GeneralizedPowerRule-2-2">Let’s consider <span class="process-math">\(y=x^n\)</span> where <span class="process-math">\(n\)</span> is just some real number without any other restrictions.</div>
+</div>
+<article class="task exercise-like" id="act-GeneralizedPowerRule-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="act-GeneralizedPowerRule-3-1-1">
+<div class="para">Apply a logarithm to both sides of this equation:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fact-LogProperties.html">
+\begin{equation*}
+\ln(y) = \ln(x^n)
+\end{equation*}
+</div>
+<div class="para">Now use one of the <a href="sec-LogarithmicDifferentiation.html#fact-LogProperties" class="xref" data-knowl="./knowl/xref/fact-LogProperties.html" data-reveal-label="Reveal" data-close-label="Close" title="Fact 3.3.2: Properties of Logarithms">Properties of Logarithms</a> to re-write this equation.</div>
+</div></article><article class="task exercise-like" id="act-GeneralizedPowerRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-GeneralizedPowerRule-4-1-1">Use implicit differentiation to find <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-GeneralizedPowerRule-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-GeneralizedPowerRule-4-2-1">Remember that when you solve for <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{,}\)</span> you might have some <span class="process-math">\(y\)</span>-variables in your derivative. Replace them with <span class="process-math">\(y=x^n\text{.}\)</span>
+</div></div></details></div></article><article class="task exercise-like" id="act-GeneralizedPowerRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="act-GeneralizedPowerRule-5-1-1">
+<div class="para">Explain to yourself why this is equivalent to the Power Rule that we built so long ago:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{x^n}=nx^{n=1}\text{.}
+\end{equation*}
+</div>
+</div></article><article class="task exercise-like" id="act-GeneralizedPowerRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-GeneralizedPowerRule-6-1-1">Let’s get weird. What if we have a not-quite-power function? Where the thing in the exponent isn’t simply a number, but another variable?</div> <div class="para" id="act-GeneralizedPowerRule-6-1-2">Let’s use the same technique to think about <span class="process-math">\(y=x^x\)</span> and its derivative. First, though, confirm that this is not a power function (and so we cannot use the Power Rule to find the derivative) and is also not an exponential function (and so the derivative isn’t itself or itself scaled by a log).</div></article><article class="task exercise-like" id="act-GeneralizedPowerRule-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para logical" id="act-GeneralizedPowerRule-7-1-1">
+<div class="para">Now apply a log to both sides:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ln(y) = \ln(x^x)\text{.}
+\end{equation*}
+</div>
+<div class="para">Re-write this using the same log property as before, and then use implicit differentiation to find <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{.}\)</span>
+</div>
+</div>
+<div class="solutions"><details id="act-GeneralizedPowerRule-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-GeneralizedPowerRule-7-2-1">Don’t forget that in order to find <span class="process-math">\(\dydx{x\ln(x)}\text{,}\)</span> we need to use the Product Rule.</div></div></details></div></article><article class="task exercise-like" id="act-GeneralizedPowerRule-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-GeneralizedPowerRule-8-1-1">Explain to yourself why logs are friends, especially when trying to differentiate functions in the form of <span class="process-math">\(y=\left(f(x)\right)^{g(x)}\text{.}\)</span>
+</div></article></article><div class="para" id="subsec-LogsAreFriends-5">This idea that we’ve just implemented (applying a logarithm to make some function more friendly and then using implicit differentiation to differentiate) is often called <dfn class="terminology">logarithmic differentiation</dfn>. It works so well because <em class="emphasis">logs are friends</em>.</div></section><section class="subsection" id="subsec-WowSoFriendly"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="space"> </span><span class="title">Wow, So Friendly!</span>
+</h3>
+<div class="para" id="subsec-WowSoFriendly-2">This is incredible! We can now differentiate a whole new class of functions! Functions raised to functions, what could we think of next!</div>
+<div class="para" id="subsec-WowSoFriendly-3">How about products and quotients of functions? I know, I know, we have <a href="sec-ProductQuotientRule.html" class="internal" title="Section 2.4: The Product and Quotient Rules">The Product and Quotient Rules</a>...what about <em class="emphasis">big</em> products and quotients? Annoying ones. Complicated ones.</div>
+<article class="activity project-like" id="act-LogsProductsQuotients"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Logarithmic Differentiation with Products and Quotients.</span>
+</h4>
+<div class="introduction" id="act-LogsProductsQuotients-2"><div class="para logical" id="act-LogsProductsQuotients-2-1">
+<div class="para">Let’s say we’ve got some function that has products and quotients in it. Like, a lot. Consider the function:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y=\frac{(x-4)^2\sqrt{3x+1}}{(x+1)^7(x+5)^3}\text{.}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="act-LogsProductsQuotients-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-LogsProductsQuotients-3-1-1">Work out a general strategy for how you would find <span class="process-math">\(y'\)</span> directly. Where would you have to use Quotient Rule? What are the pieces? Where would you have to use Product Rule? What are the pieces? Where would you have to use Chain Rule? What are the pieces?</div> <div class="para" id="act-LogsProductsQuotients-3-1-2">To be clear: do not actually differentiate this. Just look at it in horror and try to outline a plan that some other fool would use.</div> <div class="para" id="act-LogsProductsQuotients-3-1-3">Click on the "Solution" below to see what the fool did.</div>
+<div class="solutions"><details id="act-LogsProductsQuotients-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-LogsProductsQuotients-3-2-1">
+<div class="displaymath process-math" id="act-LogsProductsQuotients-3-2-1-1">
+\begin{align*}
+\dydx \amp =\ddx{\frac{(x-4)^2\sqrt{3x+1}}{(x+1)^7(x+5)^3}}\\
+\amp = \dfrac{ (x+1)^7(x+5)^3\ddx{\overbrace{(x-4)^2\sqrt{3x+1}}^{\text{Product Rule}}} - (x-4)^2\sqrt{3x+1} \ddx{\overbrace{(x+1)^7(x+5)^3}^{\text{Product Rule}}}}{((x+1)^7(x+5)^3)^2}\\
+\amp = \frac{(x+1)^7(x+5)^3\left(2(x-4)\sqrt{3x+1} + \frac{3(x-4)^2}{2\sqrt{3x+1}}\right) - (x-4)^2\sqrt{3x+1}\left(7(x+1)^6(x+5)^3 + 3(x+1)^7(x+5)^2\right)}{(x+1)^{14}(x+5)^{6}}
+\end{align*}
+</div>
+<div class="para">What now? Can we "simplify" this somehow? Maybe, but I am <em class="emphasis">not</em> doing any more of this!</div>
+</div></div></details></div></article><article class="task exercise-like" id="act-LogsProductsQuotients-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="act-LogsProductsQuotients-4-1-1">
+<div class="para">Let’s instead use logarithmic differentiation. First, apply the log to both sides to get:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ln(y) = \ln\left(\frac{(x-4)^2\sqrt{3x+1}}{(x+1)^7(x+5)^3}\right)\text{.}
+\end{equation*}
+</div>
+<div class="para">Since this function is just a bunch of products of things with exponents all put into some big quotient, we can use our log properties to re-write this!</div>
+</div></article><article class="task exercise-like" id="act-LogsProductsQuotients-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="act-LogsProductsQuotients-5-1-1">
+<div class="para">We should have:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ln(y) = 3\ln(x-4)+\frac{1}{2}\ln(3x+1) - 7\ln(x+1) - 3\ln(x+5)\text{.}
+\end{equation*}
+</div>
+<div class="para">Confirm this.</div>
+</div></article><article class="task exercise-like" id="act-LogsProductsQuotients-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-LogsProductsQuotients-6-1-1">Now differentiate both sides! You’ll have to use some Chain Rule (but not a lot)! Refer back to <a href="sec-LogarithmicDifferentiation.html#fact-ChainRuleLog" class="xref" data-knowl="./knowl/xref/fact-ChainRuleLog.html" data-reveal-label="Reveal" data-close-label="Close" title="Fact 3.3.1: Derivative of the Log of a Function">Fact 3.3.1</a> for help here.</div></article><article class="task exercise-like" id="act-LogsProductsQuotients-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-LogsProductsQuotients-7-1-1">Solve for <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{.}\)</span>
+</div></article><article class="task exercise-like" id="act-LogsProductsQuotients-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-LogsProductsQuotients-8-1-1">While this is not a <em class="emphasis">nice</em> looking expression for the derivative, spend some time confirming that this was a nicer <em class="emphasis">process</em> then differentiating directly. This is because logs are friends.</div></article></article></section><section class="conclusion" id="sec-LogarithmicDifferentiation-5"><div class="para" id="sec-LogarithmicDifferentiation-5-1">So how do we wrap this up? I hope we can see that logs are a useful and powerful tool: we can use logarithmic differentiation to transform our functions to become "easier to work with" versions of themselves: we put everything on a log-scale and allow our properties of logarithms to make the operations become a bit more accessible.</div>
+<div class="para" id="sec-LogarithmicDifferentiation-5-2">This is a commonly used trick in many applications of calculus. Specifically, this is used often enough in statistics that there is a whole paradigm of estimation (called Maximum Likelihood Estimation) that uses a log-transformed version of a likelihood function and then applies some basic calculus ideas (that we’ll cover in <a href="sec-Optimization.html" class="internal" title="Section 4.6: Optimization">Section 4.6</a>) to perform some powerful estimations.</div>
+<div class="para" id="sec-LogarithmicDifferentiation-5-3">While I hope that we end up leaving this section knowing that <em class="emphasis">logs are friends</em>, we can probably add a second (and related result) that we’re using over and over.</div>
+<div class="para" id="sec-LogarithmicDifferentiation-5-4"><em class="emphasis">Using the Chain Rule is probably easier than any other option.</em></div>
+<div class="para" id="sec-LogarithmicDifferentiation-5-5">We apply logs in order to re-write these functions in a friendly way <em class="emphasis">because</em> we would rather use the Chain Rule than any combination of other derivative strategies.</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-DerivativesInverse.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-RelatedRates.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
