@@ -1,0 +1,97 @@
+<!-- https://doenet.org/portfolioeditor/_e0Zl2rjvA8GweNOBUp5DN/_IFku4mkcIZLylbxL44Ix6 -->
+
+<setup>
+  <function name="f" domain="[0,1]">x^2</function>
+  <function name="g" domain="[0,1]">-(x-1)^2+1</function>
+  <number name="a">0</number>
+  <point name="fPoint">($a, $$f($a))
+  <constraints>
+    <constrainTo>$f</constrainTo>
+  </constraints>
+  </point>
+  
+  <point name="gPoint">($a, $$g($a))
+  <constraints>
+    <constrainTo>$g</constrainTo>
+  </constraints>
+  </point>
+  <derivative name="dfdx">$f</derivative>
+  <derivative name="dgdx">$g</derivative>
+  <function name="fTangent" styleNumber="2">$$dfdx($a)(x-$a)+$$f($a)</function>
+  <function name="gTangent" styleNumber="2">$$dgdx($a)(x-$a)+$$g($a)</function>
+  <text name="TanLabel">
+    <conditionalContent>
+      <case condition="$ToggleTangent">Hide Tangent Lines</case>
+      <else>Show Tangent Lines</else>
+    </conditionalContent>
+  </text>
+  <text name="DerivativeLabel">
+    <conditionalContent>
+      <case condition="$ToggleDerivative">Hide Graphs of Derivatives</case>
+      <else>Show Graphs of Derivatives</else>
+    </conditionalContent>
+  </text>
+</setup>
+
+<p><em>Instructions:</em> Compare the functions <m>f(x)</m> and <m>g(x)</m> on the interval <m>[0,1]</m>.</p>
+
+<p><em>Hint 1:</em> Click the button below to add tangent lines to the graphs of <m>f(x)</m> and <m>g(x)</m>.</p>
+
+<booleanInput name="ToggleTangent" asToggleButton>
+  <label>$TanLabel</label>
+</booleanInput>
+
+<sideBySide>
+  <p><me>\text{Graph of } f(x)</me></p>
+  <p><me>\text{Graph of } g(x)</me></p>
+</sideBySide>
+<sideBySide>
+  <graph xmin="-0.1" xmax="1.1" ymin="-0.1" ymax="1.1" size="small" fixAxes>
+    $f
+    <conditionalContent condition="$ToggleTangent">
+    $fPoint
+    $fTangent
+    </conditionalContent>
+  </graph>
+
+  <graph xmin="-0.15" xmax="1.1" ymin="-0.1" ymax="1.1" size="small" fixAxes>
+    $g
+    <conditionalContent condition="$ToggleTangent">
+    $gPoint
+    $gTangent
+    </conditionalContent>
+  </graph>
+</sideBySide>
+
+<p><em>Hint 2:</em> Click the button below to see the graphs of the derivative functions, <m>f'(x)</m> and <m>g'(x)</m>.</p>
+
+<booleanInput name="ToggleDerivative" asToggleButton>
+  <label>$DerivativeLabel</label>
+</booleanInput>
+
+<conditionalContent condition="$ToggleDerivative">
+  <sideBySide>
+    <p><me>\text{Graph of } f'(x)</me></p>
+    <p><me>\text{Graph of } g'(x)</me></p>
+  </sideBySide>
+
+  <sideBySide>
+    <graph xmin="-0.1" xmax="1.1" ymin="-0.2" ymax="2.2" size="small" fixAxes>
+      <function domain="[0,$a]" styleNumber="2">$dfdx</function>
+      <point styleNumber="2">($a, $$dfdx($a))
+        <constraints>
+          <constrainTo>$dfdx</constrainTo>
+        </constraints>
+      </point>
+    </graph>
+
+    <graph xmin="-0.1" xmax="1.1" ymin="-0.2" ymax="2.2" size="small" fixAxes>
+      <function domain="[0,$a]" styleNumber="2">$dgdx</function>
+      <point styleNumber="2">($a, $$dgdx($a))
+        <constraints>
+          <constrainTo>$dgdx</constrainTo>
+        </constraints>
+      </point>
+    </graph>
+  </sideBySide>
+</conditionalContent>

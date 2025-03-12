@@ -1,0 +1,36 @@
+<activity xml:id="act-CompareCurves" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Compare These Curves</title>
+    <task>
+        <statement>
+            <p>
+                Consider the two curves pictured below. Compare and contrast them. What characteristics of these functions are the same? What characteristics of these functions are different?
+            </p>
+            <interactive platform="doenetml" width="95%" aspect="1:1.2">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/ConcavityComparison.xml"/>
+                </slate>
+            </interactive>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Explain the similarities you found by only talking about the slopes of each function (the values of <m>f'(x)</m> and <m>g'(x)</m>).
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Explain the differences you found by only talking about the slopes of each function (the values of <m>f'(x)</m> and <m>g'(x)</m>).
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Make a conjecture about the <em>rate of change</em> of both <m>f'</m> and <m>g'</m>. We'll call these things <term>second derivative</term> functions, <m>f''(x)</m> and <m>g''(x)</m>.
+            </p>
+        </statement>
+    </task>
+</activity>
