@@ -133,6 +133,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\Dydx}{\dfrac{dy}{dx}}
 \newcommand{\blank}[1]{\underline{\hspace{#1}}} 
 \newcommand{\dint}{\displaystyle \int}
+\newcommand{\va}{┊}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -263,7 +264,6 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#subsec-WowSoFriendly" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Wow, So Friendly!</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-RelatedRates.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Related Rates</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
@@ -277,14 +277,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-ResultsFromMVT" class="internal"><span class="codenumber">4.1.3</span> <span class="title">More Results due to the Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Increasing and Decreasing Functions</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-IncreasingDecreasing.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Increasing and Decreasing Functions</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-CriticalPointsLocalMaxMins" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Critical Points, Local Maximums, and Local Minimums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-FindingDirection" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Direction of a Function (and Where it Changes)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-StrangeDomains" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Strange Domains</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Concavity.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Concavity</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-InterpretFirstSecondDerivative.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Interpreting the First and Second Derivatives</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Global Maximums and Minimums</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Optimization.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Optimization</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LinearApproximation.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Linear Approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-NewtonsMethod.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Newton’s Method for Approximating Zeros</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LHopitalsRule.html" class="internal"><span class="codenumber">4.9</span> <span class="title">L’Hopital’s Rule</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Global Maximums and Minimums</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Optimization.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Optimization</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LinearApproximation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Linear Approximations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LHopitalsRule.html" class="internal"><span class="codenumber">4.7</span> <span class="title">L’Hopital’s Rule</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -461,7 +466,368 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-IncreasingDecreasing"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">4.2</span><span class="space"> </span><span class="title">Increasing and Decreasing Functions</span>
 </h2>
-<div class="para" id="sec-IncreasingDecreasing-2">Text of section.</div></section></div>
+<section class="introduction" id="sec-IncreasingDecreasing-2"><article class="activity project-like" id="act-FunctionDirection"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">How Should We Think About Direction?</span>
+</h3>
+<div class="introduction" id="act-FunctionDirection-2">
+<div class="para" id="act-FunctionDirection-2-1">Our goal in this activity is to motivate some new terminology and results that will help us talk about the "direction" of a function and some interesting points on a function (related to the direction of a function). For us to do this, we’ll look at some different examples of functions and try to think about some unifying ideas.</div>
+<figure class="figure figure-like" id="fig-Direction"><div class="sbsgroup">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:7.5%;margin-right:7.5%;">
+<div class="sbspanel top" style="width:41.1764705882353%;"><img src="external/./ApplicationsDerivatives/Direction1.png" class="contained" alt="A rational function that increases gently up to a point in the third quadrant, then decreases towards a vertical asymptote at x=0. In the first quadrant, the function decreases down to some point, and then gently increases."></div>
+<div class="sbspanel top" style="width:41.1764705882353%;"><img src="external/./ApplicationsDerivatives/Direction2.png" class="contained" alt="A polynomial function that decreases down to a point, then increases, then decreases, then increases."></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:7.5%;margin-right:7.5%;">
+<div class="sbspanel top" style="width:41.1764705882353%;"><img src="external/./ApplicationsDerivatives/Direction3.png" class="contained" alt="A kind of oscillating function that looks like it bounces off of the horizontal axis, creating sharp corners. It gently changes direction near the peak. The graph decreases, hits the axis and increases, then gently decreases towards the horizontal axis. It bounces one more time, and increases then decreases."></div>
+<div class="sbspanel top" style="width:41.1764705882353%;"><img src="external/./ApplicationsDerivatives/Direction4.png" class="contained" alt="A bell curve, with horizontal asymptote at y=0. It increases up to a point on the top where it changes to decreasing towards the horizontal axis."></div>
+</div></div>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="act-FunctionDirection-2-3">These examples do not cover all of the possibilities of how a function can act, but will hopefully provide us enough fertile ground to think about some different situations.</div>
+</div>
+<article class="task exercise-like" id="act-FunctionDirection-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="act-FunctionDirection-3-1-1">
+<div class="para">In each graph, find and identify:</div>
+<ul class="disc" id="act-FunctionDirection-3-1-1-1">
+<li id="act-FunctionDirection-3-1-1-1-1"><div class="para" id="act-FunctionDirection-3-1-1-1-1-1">The intervals where the function is increasing.</div></li>
+<li id="act-FunctionDirection-3-1-1-1-2"><div class="para" id="act-FunctionDirection-3-1-1-1-2-1">The intervals where the function is decreasing.</div></li>
+<li id="act-FunctionDirection-3-1-1-1-3"><div class="para" id="act-FunctionDirection-3-1-1-1-3-1">The points (or locations) around and between these intervals, the points where the function changes direction or the direction terminates.</div></li>
+</ul>
+</div></article><article class="task exercise-like" id="act-FunctionDirection-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-FunctionDirection-4-1-1">Make a conjecture about the behavior of a function at any point where the function changes direction.</div>
+<div class="solutions"><details id="act-FunctionDirection-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-FunctionDirection-4-2-1">What do you think has to be true about the derivative at these points?</div></div></details></div></article><article class="task exercise-like" id="act-FunctionDirection-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="act-FunctionDirection-5-1-1">Look at the highest and lowest points on each function. You can even include the points that are highest and lowest just compared to the points around it. Make a conjecture about the behavior of the function at these points.</div>
+<div class="solutions"><details id="act-FunctionDirection-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-FunctionDirection-5-2-1">What do you think has to be true about the derivative at these points?</div></div></details></div></article></article><div class="para" id="sec-IncreasingDecreasing-2-2">We want to turn this little bit of thinking and exploring into some useful definitions for us. To craft these definitions, we need to start with thinking about what we care about and why we might care about it.</div></section><section class="subsection" id="subsec-CriticalPointsLocalMaxMins"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="space"> </span><span class="title">Critical Points, Local Maximums, and Local Minimums</span>
+</h3>
+<div class="para" id="subsec-CriticalPointsLocalMaxMins-2">Let’s start by saying what we’re really looking for is the highest and lowest points on a function. These points are interesting, have useful applications, and are difficult to find in general without calculus. We hopefully noticed, though, that these points always end up showing up at the same kinds of locations! They’re points where the direction of a function changes (or terminates).</div>
+<div class="para" id="subsec-CriticalPointsLocalMaxMins-3">We also noticed that there are some common characteristics of those points. They’re points where the derivative was either 0 or didn’t exist. So we’ll start by defining these points, and then we’ll define the idea of "highest" and "lowest" points. Then we’ll put together a result that we hopefully noticed here: that the highest and lowest points show up at these points where the derivative is 0 or doesn’t exist.</div>
+<article class="definition definition-like" id="def-CriticalPoint"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Critical Point of a Function.</span>
+</h4>
+<div class="para" id="def-CriticalPoint-2-1">We say that a point <span class="process-math">\((c, f(c))\)</span> on the graph of <span class="process-math">\(y=f(x)\)</span> is a <dfn class="terminology">critical point</dfn> of the function <span class="process-math">\(f\)</span> if <span class="process-math">\(f'(c)=0\)</span> or <span class="process-math">\(f'(c)\)</span> doesn’t exist.</div> <div class="para" id="def-CriticalPoint-2-2">If <span class="process-math">\((c, f(c))\)</span> is a critical point of <span class="process-math">\(f\text{,}\)</span> then we sometimes will call <span class="process-math">\(x=c\)</span> a <dfn class="terminology">critical number</dfn> and <span class="process-math">\(y=f(c)\)</span> a <dfn class="terminology">critical value</dfn>.</div></article><div class="para" id="subsec-CriticalPointsLocalMaxMins-5">So these are the points we will look for to find the "highest" and "lowest" points.</div>
+<div class="para" id="subsec-CriticalPointsLocalMaxMins-6">Now we need to define this idea so that we can build the result that tells us how to find these highest and lowest points.</div>
+<article class="definition definition-like" id="def-LocalMaxMin"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Local Maximum/Minimum.</span>
+</h4>
+<div class="para" id="def-LocalMaxMin-2-1">A point <span class="process-math">\((c,f(c))\)</span> is a <dfn class="terminology">local maximum</dfn> of <span class="process-math">\(f(x)\)</span> if there is some open interval of real numbers <span class="process-math">\((a,b)\)</span> around <span class="process-math">\(x=c\)</span> (that is, <span class="process-math">\(a\lt c\lt b\)</span>) and <span class="process-math">\(f(c)\geq f(x)\)</span> for all <span class="process-math">\(x\)</span>-values in the intersection of <span class="process-math">\((a,b)\)</span> and the domain of <span class="process-math">\(f\text{.}\)</span>
+</div> <div class="para" id="def-LocalMaxMin-2-2">Similarly, a point <span class="process-math">\((c,f(c))\)</span> is a <dfn class="terminology">local minimum</dfn> of <span class="process-math">\(f(x)\)</span> if there is some open interval of real numbers <span class="process-math">\((a,b)\)</span> around <span class="process-math">\(x=c\)</span> (that is, <span class="process-math">\(a\lt c\lt b\)</span>) and <span class="process-math">\(f(c)\leq f(x)\)</span> for all <span class="process-math">\(x\)</span>-values in the intersection of <span class="process-math">\((a,b)\)</span> and the domain of <span class="process-math">\(f\text{.}\)</span>
+</div> <div class="para" id="def-LocalMaxMin-2-3">These are really just slightly technical ways of saying that <span class="process-math">\(f(c)\)</span> is either the highest or lowest <span class="process-math">\(y\)</span>-value produced by the function <span class="process-math">\(f\)</span> for the <span class="process-math">\(x\)</span>-values near <span class="process-math">\(x=c\text{.}\)</span>
+</div></article><aside class="aside aside-like" id="subsec-CriticalPointsLocalMaxMins-8"><div class="para" id="subsec-CriticalPointsLocalMaxMins-8-1">If you look around online, or in other textbooks, you’ll find different definitions of these same kinds of pints. Some of those definitions have silly stipulations, like saying that an ending point of a function cannot be a local maximum/local minimum.</div>
+<div class="para" id="subsec-CriticalPointsLocalMaxMins-8-2">This seems to come from some sense that the derivative must be defined on each "side" of a local max/min. In this book, we’ll not worry about this restriction, and instead just look at the highest and lowest points relative to the other points near it.</div></aside><div class="para" id="subsec-CriticalPointsLocalMaxMins-9">Now we want to build the connection between these points. In <a href="sec-IncreasingDecreasing.html#act-FunctionDirection" class="xref" data-knowl="./knowl/xref/act-FunctionDirection.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 4.2.1: How Should We Think About Direction?">Activity 4.2.1</a>, we pointed out that the highest and lowest points on a function all had the common theme of showing up at places where the derivative was 0 or didn’t exist.</div>
+<article class="theorem theorem-like" id="thm-LocalMaxMinAtCriticalPoints"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Every Local Maximum/Minimum Occurs at a Critical Point.</span>
+</h4>
+<div class="para" id="thm-LocalMaxMinAtCriticalPoints-2-1">Every local maximum or local minimum of <span class="process-math">\(f\)</span> occurs at a critical point of <span class="process-math">\(f\text{.}\)</span>
+</div> <div class="para" id="thm-LocalMaxMinAtCriticalPoints-2-2">Another way of saying this is that if <span class="process-math">\((c,f(c))\)</span> is a local maximum or local minimum of <span class="process-math">\(f\text{,}\)</span> then it must also be a critical point of <span class="process-math">\(f\text{.}\)</span>
+</div></article><div class="para" id="subsec-CriticalPointsLocalMaxMins-11">WAIT! STOP! Before you move on, let’s make sure we understand what this theorem is saying. Or maybe what this theorem is <em class="emphasis">not</em> saying.</div>
+<div class="para" id="subsec-CriticalPointsLocalMaxMins-12">Notice that we are not saying that every critical point is a local maximum or local minimum! This is a classic "every square is a rectangle but not every rectangle is a square" situation.</div>
+<div class="para" id="subsec-CriticalPointsLocalMaxMins-13">Every local maximum/minimum occurs at a critical point, but not every critical point is a local maximum/minimum.</div></section><section class="subsection" id="subsec-FindingDirection"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="space"> </span><span class="title">Direction of a Function (and Where it Changes)</span>
+</h3>
+<div class="para" id="subsec-FindingDirection-2">Let’s build up a way of classifying critical points as local maximums, local minimums, or neither.</div>
+<article class="activity project-like" id="act-ComparingCriticalPoints"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Comparing Critical Points.</span>
+</h4>
+<div class="introduction" id="act-ComparingCriticalPoints-2"><div class="para logical" id="act-ComparingCriticalPoints-2-1">
+<div class="para">Let’s think about four different functions:</div>
+<ul class="disc" id="act-ComparingCriticalPoints-2-1-1">
+<li id="act-ComparingCriticalPoints-2-1-1-1"><div class="para" id="act-ComparingCriticalPoints-2-1-1-1-1"><span class="process-math">\(\displaystyle f(x) = 4+3x-x^2\)</span></div></li>
+<li id="act-ComparingCriticalPoints-2-1-1-2"><div class="para" id="act-ComparingCriticalPoints-2-1-1-2-1"><span class="process-math">\(\displaystyle g(x) = \sqrt[3]{x+1}+1+x\)</span></div></li>
+<li id="act-ComparingCriticalPoints-2-1-1-3"><div class="para" id="act-ComparingCriticalPoints-2-1-1-3-1"><span class="process-math">\(\displaystyle h(x)=(x-4)^{2/3}\)</span></div></li>
+<li id="act-ComparingCriticalPoints-2-1-1-4"><div class="para" id="act-ComparingCriticalPoints-2-1-1-4-1"><span class="process-math">\(\displaystyle j(x)=1-x^3-x^5\)</span></div></li>
+</ul>
+<div class="para">Our goal is to find the critical points on the interval <span class="process-math">\((-\infty,\infty)\)</span> and then to try to figure out if these critical points are local maximums or local minimums or just points that the function increases or decreases through.</div>
+</div></div>
+<article class="task exercise-like" id="act-ComparingCriticalPoints-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-ComparingCriticalPoints-3-1-1">To start, we’re going to be finding critical points. Without looking at a picture of the graph of the function, find the derivative.</div> <div class="para" id="act-ComparingCriticalPoints-3-1-2">Are there any <span class="process-math">\(x\)</span>-values (in the domain of the function) where the derivative doesn’t exist? We are normally looking for things like division by 0 here, but we could be finding more than that. Check out <a href="sec-InterpretingDerivatives.html#strat-DerivativesDontExist" class="xref" data-knowl="./knowl/xref/strat-DerivativesDontExist.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: When Does a Derivative Not Exist?">When Does a Derivative Not Exist?</a> to remind yourself if needed.</div> <div class="para" id="act-ComparingCriticalPoints-3-1-3">Are there any <span class="process-math">\(x\)</span>-values (in the domain of the function) where the derivative is 0?</div></article><article class="task exercise-like" id="act-ComparingCriticalPoints-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-ComparingCriticalPoints-4-1-1">Now that we have the critical points for the function, let’s think about where the derivative might be positive and negative. These will correspond to the direction of a function, based on <a href="sec-MeanValueTheorem.html#thm-IncreasingDecreasing" class="xref" data-knowl="./knowl/xref/thm-IncreasingDecreasing.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.2: Sign of the Derivative">Theorem 4.1.2 Sign of the Derivative</a>.</div> <div class="para" id="act-ComparingCriticalPoints-4-1-2">Write out the intervals of <span class="process-math">\(x\)</span>-values around and between your list of critical points. For each interval, what is the sign of the derivative? What do these signs mean about the direction of your function?</div></article><article class="task exercise-like" id="act-ComparingCriticalPoints-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="act-ComparingCriticalPoints-5-1-1">
+<div class="para">Without looking at the graph of your function:</div>
+<ul class="disc" id="act-ComparingCriticalPoints-5-1-1-1">
+<li id="act-ComparingCriticalPoints-5-1-1-1-1"><div class="para" id="act-ComparingCriticalPoints-5-1-1-1-1-1">What changes about how your function increases up to or decreases down to a critical point based on whether the derivative was 0 or the derivative didn’t exist?</div></li>
+<li id="act-ComparingCriticalPoints-5-1-1-1-2"><div class="para" id="act-ComparingCriticalPoints-5-1-1-1-2-1">Does your function change direction at a critical point? What will that look like, whether it does or does not change direction?</div></li>
+</ul>
+</div></article><article class="task exercise-like" id="act-ComparingCriticalPoints-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-ComparingCriticalPoints-6-1-1">Give a basic sketch of your graph. It might be helpful to find the <span class="process-math">\(y\)</span>-values for any critical points you’ve got. Then you can sketch your function increasing/decreasing in the intervals between these points.</div> <div class="para" id="act-ComparingCriticalPoints-6-1-2">In your sketch, include enough detail to tell whether the derivative is 0 or doesn’t exist at each critical point.</div></article><article class="task exercise-like" id="act-ComparingCriticalPoints-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-ComparingCriticalPoints-7-1-1">Compare your sketch to the actual graph of the function (you can find all of the graphs in the hint).</div>
+<div class="solutions"><details id="act-ComparingCriticalPoints-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-ComparingCriticalPoints-7-2-1"><figure class="figure figure-like" id="fig-CriticalPointActivity"><div class="sbsgroup">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel top" style="width:36.8421052631579%;"><img src="external/./ApplicationsDerivatives/critical-f.png" class="contained" alt="A graph of f(x). It is a parabola that increases up to a horizontal tangent line a the point (3/2, 25/4), and then decreases away from it."></div>
+<div class="sbspanel top" style="width:57.8947368421053%;"><img src="external/./ApplicationsDerivatives/critical-g.png" class="contained" alt="A graph of g(x). It increases to a vertical tangent line at (-1,0), and then continues increases from there."></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel top" style="width:63.1578947368421%;"><img src="external/./ApplicationsDerivatives/critical-h.png" class="contained" alt="A graph of h(x). It decreases down to a vertical tangent line at (4,0), and then increases away from it, forming a cusp or sharp corner."></div>
+<div class="sbspanel top" style="width:31.5789473684211%;"><img src="external/./ApplicationsDerivatives/critical-j.png" class="contained" alt="A graph of j(x). It decreases down to a horizontal tangent line at (0,1), and then decreases away from it."></div>
+</div></div>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div></div></details></div></article></article><div class="para" id="subsec-FindingDirection-4">This is great, we have a nice strategy for thinking about critical points!</div>
+<div class="para" id="subsec-FindingDirection-5">Something we can notice: in finding these critical points (as well as thinking about the domain of the function), we found <em class="emphasis">all</em> of the locations where the derivative is both not positive and not negative. This is a weird way of saying that all of the intervals in between the critical points we found and any breaks in the domain of the function (like if there were vertical asymptotes or holes or something) are places where the derivative is positive or negative.</div>
+<div class="para" id="subsec-FindingDirection-6">Even more exciting: if the derivative function we found is continuous, then the <a href="sec-Continuity.html#thm-IVT" class="xref" data-knowl="./knowl/xref/thm-IVT.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.7.3: Intermediate Value Theorem">Intermediate Value Theorem</a> says that it will <em class="emphasis">only</em> change signs at these critical points (or places like vertical asymptotes or holes). So this means that we can always construct a little chart or something, think about the <span class="process-math">\(x\)</span>-values around and at critical points or other breaks in the domain, and then look at what the derivative does as we move through those intervals and <span class="process-math">\(x\)</span>-values.</div>
+<div class="para" id="subsec-FindingDirection-7">This will serve as a nice way of thinking about what’s going on with our functions!</div>
+<article class="theorem theorem-like" id="thm-FirstDerivativeTest"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">First Derivative Test.</span>
+</h4>
+<div class="para logical" id="thm-FirstDerivativeTest-2-1">
+<div class="para">If <span class="process-math">\((c,f(c))\)</span> is a critical point of <span class="process-math">\(f\)</span> and we can evaluate the derivative <span class="process-math">\(f'\)</span> on either side of this point, then we can use the signs of the first derivative to classify the critical point:</div>
+<ul class="disc" id="thm-FirstDerivativeTest-2-1-4">
+<li id="thm-FirstDerivativeTest-2-1-4-1"><div class="para" id="thm-FirstDerivativeTest-2-1-4-1-1">If the sign of <span class="process-math">\(f'\)</span> changes from positive to negative as <span class="process-math">\(x\)</span> passes through <span class="process-math">\(x=c\text{,}\)</span> then <span class="process-math">\((c,f(c))\)</span> is a local maximum.</div></li>
+<li id="thm-FirstDerivativeTest-2-1-4-2"><div class="para" id="thm-FirstDerivativeTest-2-1-4-2-1">If the sign of <span class="process-math">\(f'\)</span> changes from negative to positive as <span class="process-math">\(x\)</span> passes through <span class="process-math">\(x=c\text{,}\)</span> then <span class="process-math">\((c,f(c))\)</span> is a local minimum.</div></li>
+<li id="thm-FirstDerivativeTest-2-1-4-3"><div class="para" id="thm-FirstDerivativeTest-2-1-4-3-1">If the sign of <span class="process-math">\(f'\)</span> does not change as <span class="process-math">\(x\)</span> passes through <span class="process-math">\(x=c\text{,}\)</span> then the function <span class="process-math">\(f\)</span> increases or decreases (depending on whether <span class="process-math">\(f'\gt 0\)</span> or <span class="process-math">\(f'\lt 0\)</span>) through <span class="process-math">\(x=c\text{.}\)</span>
+</div></li>
+</ul>
+<div class="para">We will often lay these results out in a chart or table, like the following: <div class="sbsgroup">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel fixed-width top" style="width:50%;"><table class="tabular">
+<tr>
+<td class="c m b1 r0 l0 t2" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-1-5-1-1"><span class="process-math">\(x\)</span></div></td>
+<td class="c m b1 r0 l0 t2 lines"></td>
+<td class="c m b1 r0 l0 t2" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-1-5-3-1"><span class="process-math">\(c\)</span></div></td>
+<td class="c m b1 r0 l0 t2 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-1-6-1-1"><span class="process-math">\(f'\)</span></div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-1-6-2-1"><span class="process-math">\(\oplus\)</span></div></td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-1-6-4-1"><span class="process-math">\(\ominus\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-1-7-1-1"><span class="process-math">\(f\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-1-7-2-1"><span class="process-math">\(\nearrow\)</span></div></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-1-7-4-1"><span class="process-math">\(\searrow\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-1-8-3-1">local max</div></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:50%;"><table class="tabular">
+<tr>
+<td class="c m b1 r0 l0 t2" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-2-5-1-1"><span class="process-math">\(x\)</span></div></td>
+<td class="c m b1 r0 l0 t2 lines"></td>
+<td class="c m b1 r0 l0 t2" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-2-5-3-1"><span class="process-math">\(c\)</span></div></td>
+<td class="c m b1 r0 l0 t2 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-2-6-1-1"><span class="process-math">\(f'\)</span></div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-2-6-2-1"><span class="process-math">\(\ominus\)</span></div></td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-2-6-4-1"><span class="process-math">\(\oplus\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-2-7-1-1"><span class="process-math">\(f\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-2-7-2-1"><span class="process-math">\(\searrow\)</span></div></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-2-7-4-1"><span class="process-math">\(\nearrow\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0" style="max-width:75px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-1-2-8-3-1">local min</div></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel fixed-width top" style="width:50%;"><table class="tabular">
+<tr>
+<td class="c m b1 r0 l0 t2" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-1-5-1-1"><span class="process-math">\(x\)</span></div></td>
+<td class="c m b1 r0 l0 t2 lines"></td>
+<td class="c m b1 r0 l0 t2" style="max-width:93px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-1-5-3-1"><span class="process-math">\(c\)</span></div></td>
+<td class="c m b1 r0 l0 t2 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-1-6-1-1"><span class="process-math">\(f'\)</span></div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-1-6-2-1"><span class="process-math">\(\oplus\)</span></div></td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-1-6-4-1"><span class="process-math">\(\oplus\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-1-7-1-1"><span class="process-math">\(f\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-1-7-2-1"><span class="process-math">\(\nearrow\)</span></div></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-1-7-4-1"><span class="process-math">\(\nearrow\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0" style="max-width:93px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-1-8-3-1">increasing through</div></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:50%;"><table class="tabular">
+<tr>
+<td class="c m b1 r0 l0 t2" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-2-5-1-1"><span class="process-math">\(x\)</span></div></td>
+<td class="c m b1 r0 l0 t2 lines"></td>
+<td class="c m b1 r0 l0 t2" style="max-width:93px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-2-5-3-1"><span class="process-math">\(c\)</span></div></td>
+<td class="c m b1 r0 l0 t2 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-2-6-1-1"><span class="process-math">\(f'\)</span></div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-2-6-2-1"><span class="process-math">\(\ominus\)</span></div></td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-2-6-4-1"><span class="process-math">\(\ominus\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-2-7-1-1"><span class="process-math">\(f\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-2-7-2-1"><span class="process-math">\(\searrow\)</span></div></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0" style="max-width:69px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-2-7-4-1"><span class="process-math">\(\searrow\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0" style="max-width:93px;"><div class="para" id="thm-FirstDerivativeTest-2-1-5-2-2-8-3-1">decreasing through</div></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</div></div>
+</div>
+</div>
+</div></article></section><section class="subsection" id="subsec-StrangeDomains"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="space"> </span><span class="title">Strange Domains</span>
+</h3>
+<div class="para" id="subsec-StrangeDomains-2">We’ll look at two more examples, both of them using functions whose domain is <em class="emphasis">not</em> <span class="process-math">\((-\infty, \infty)\text{.}\)</span>
+</div>
+<details id="subsec-StrangeDomains-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.7</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><article class="task exercise-like" id="subsec-StrangeDomains-3-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="subsec-StrangeDomains-3-1-1-1">
+<div class="para">Consider the function</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \dfrac{x^2}{(x-3)^2}\text{.}
+\end{equation*}
+</div>
+<div class="para">Find domain of <span class="process-math">\(f\text{,}\)</span> the critical points of <span class="process-math">\(f\text{,}\)</span> and then the intervals where <span class="process-math">\(f\)</span> is increasing/decreasing. Then, classify any critical points local maximums/minimums if necessary.</div>
+</div>
+<div class="solutions">
+<details id="subsec-StrangeDomains-3-1-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-StrangeDomains-3-1-2-1"><span class="process-math">\(f'(x) = -\dfrac{6x}{(x-3)^3}\)</span></div></div></details><details id="subsec-StrangeDomains-3-1-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-StrangeDomains-3-1-3-1">The function <span class="process-math">\(f(x)\)</span> has one critical point at <span class="process-math">\((0,0)\text{.}\)</span> Why isn’t there a critical point at <span class="process-math">\(x=3\text{?}\)</span> What is happening there instead?</div></div></details><details id="subsec-StrangeDomains-3-1-4" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-StrangeDomains-3-1-4-1"><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-4-1-1-7-1-1"><span class="process-math">\(x\)</span></div></td>
+<td class="l m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-4-1-1-7-2-1"><span class="process-math">\((-\infty, 0)\)</span></div></td>
+<td class="l m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-4-1-1-7-3-1"><span class="process-math">\(0\)</span></div></td>
+<td class="l m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-4-1-1-7-4-1"><span class="process-math">\((0,3)\)</span></div></td>
+<td class="l m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-4-1-1-7-5-1"><span class="process-math">\(3\)</span></div></td>
+<td class="l m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-4-1-1-7-6-1"><span class="process-math">\((3,\infty)\)</span></div></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-4-1-1-8-1-1"><span class="process-math">\(f'\)</span></div></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b2 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-4-1-1-9-1-1"><span class="process-math">\(f\)</span></div></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></details><details id="subsec-StrangeDomains-3-1-5" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="subsec-StrangeDomains-3-1-5-1">The domain of <span class="process-math">\(f(x)\)</span> is <span class="process-math">\((-\infty, 3)\cup(3,\infty)\)</span> due to the vertical asymptote at <span class="process-math">\(x=3\text{.}\)</span> The only critical point is at <span class="process-math">\((0,0)\text{.}\)</span> The table below shows where <span class="process-math">\(f\)</span> is increasing and decreasing, as well as any local maximums or minimums. <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-7-1-1"><span class="process-math">\(x\)</span></div></td>
+<td class="c m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-7-2-1"><span class="process-math">\((-\infty, 0)\)</span></div></td>
+<td class="c m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-7-3-1"><span class="process-math">\(0\)</span></div></td>
+<td class="c m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-7-4-1"><span class="process-math">\((0,3)\)</span></div></td>
+<td class="c m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-7-5-1"><span class="process-math">\(3\)</span></div></td>
+<td class="c m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-7-6-1"><span class="process-math">\((3,\infty)\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-8-1-1"><span class="process-math">\(f'\)</span></div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-8-2-1"><span class="process-math">\(\ominus\)</span></div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-8-3-1"><span class="process-math">\(0\)</span></div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-8-4-1"><span class="process-math">\(\oplus\)</span></div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-8-5-1"><span class="process-math">\(\va\)</span></div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-8-6-1"><span class="process-math">\(\ominus\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-9-1-1"><span class="process-math">\(f\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-9-2-1"><span class="process-math">\(\searrow\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-9-3-1"><span class="process-math">\((0,0)\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-9-4-1"><span class="process-math">\(\nearrow\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-9-5-1"><span class="process-math">\(\va\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-9-6-1"><span class="process-math">\(\searrow\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-10-2-1">decreasing</div></td>
+<td class="c m b2 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-10-3-1">local min</div></td>
+<td class="c m b2 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-10-4-1">increasing</div></td>
+<td class="c m b2 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-10-5-1">asymptote</div></td>
+<td class="c m b2 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-1-5-1-6-10-6-1">decreasing</div></td>
+</tr>
+</table></div>
+</div></div></details>
+</div></article><article class="task exercise-like" id="subsec-StrangeDomains-3-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="subsec-StrangeDomains-3-2-1-1">
+<div class="para">Consider the function</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g(x) = \sqrt{x}-x+1\text{.}
+\end{equation*}
+</div>
+<div class="para">Find domain of <span class="process-math">\(g\text{,}\)</span> the critical points of <span class="process-math">\(g\text{,}\)</span> and then the intervals where <span class="process-math">\(g\)</span> is increasing/decreasing. Then, classify any critical points local maximums/minimums if necessary.</div>
+</div>
+<div class="solutions">
+<details id="subsec-StrangeDomains-3-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-StrangeDomains-3-2-2-1"><span class="process-math">\(g'(x)=\dfrac{1}{2\sqrt{x}}-1\)</span></div></div></details><details id="subsec-StrangeDomains-3-2-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-StrangeDomains-3-2-3-1">Notice that, by our definition of critical points, both <span class="process-math">\((0,1)\)</span> and <span class="process-math">\(\left(\frac{1}{4},\frac{3}{4}\right)\)</span> are critical points.</div></div></details><details id="subsec-StrangeDomains-3-2-4" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-StrangeDomains-3-2-4-1"><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-4-1-1-7-1-1"><span class="process-math">\(x\)</span></div></td>
+<td class="l m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-4-1-1-7-2-1"><span class="process-math">\(0\)</span></div></td>
+<td class="l m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-4-1-1-7-3-1"><span class="process-math">\(\left(0,\frac{1}{4}\right)\)</span></div></td>
+<td class="l m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-4-1-1-7-4-1"><span class="process-math">\(\frac{1}{4}\)</span></div></td>
+<td class="l m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-4-1-1-7-5-1"><span class="process-math">\(\left(\frac{1}{4},\infty\right)\)</span></div></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-4-1-1-8-1-1"><span class="process-math">\(g'\)</span></div></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b2 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-4-1-1-9-1-1"><span class="process-math">\(g\)</span></div></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></details><details id="subsec-StrangeDomains-3-2-5" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="subsec-StrangeDomains-3-2-5-1">The domain of <span class="process-math">\(g(x)\)</span> is <span class="process-math">\([0,\infty)\text{.}\)</span> There are two critical points: one at <span class="process-math">\((0,1)\)</span> and another at <span class="process-math">\(\left(\frac{1}{4},\frac{3}{4}\right)\text{.}\)</span> The table below shows where <span class="process-math">\(g\)</span> is increasing and decreasing, as well as any local maximums or minimums. <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-7-1-1"><span class="process-math">\(x\)</span></div></td>
+<td class="c m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-7-2-1"><span class="process-math">\(0\)</span></div></td>
+<td class="c m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-7-3-1"><span class="process-math">\(\left(0,\frac{1}{4}\right)\)</span></div></td>
+<td class="c m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-7-4-1"><span class="process-math">\(\frac{1}{4}\)</span></div></td>
+<td class="c m b1 r0 l0 t2" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-7-5-1"><span class="process-math">\(\left(\frac{1}{4},\infty\right)\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-8-1-1"><span class="process-math">\(g'\)</span></div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-8-2-1">DNE</div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-8-3-1"><span class="process-math">\(\ominus\)</span></div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-8-4-1"><span class="process-math">\(0\)</span></div></td>
+<td class="c m b1 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-8-5-1"><span class="process-math">\(\oplus\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-9-1-1"><span class="process-math">\(g\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-9-2-1"><span class="process-math">\((0,1)\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-9-3-1"><span class="process-math">\(\searrow\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-9-4-1"><span class="process-math">\(\left(\frac{1}{4},\frac{3}{4}\right)\)</span></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-9-5-1"><span class="process-math">\(\nearrow\)</span></div></td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-10-2-1">local max</div></td>
+<td class="c m b2 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-10-3-1">decreasing</div></td>
+<td class="c m b2 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-10-4-1">local min</div></td>
+<td class="c m b2 r0 l0 t0" style="max-width:96px;"><div class="para" id="subsec-StrangeDomains-3-2-5-1-6-10-5-1">increasing</div></td>
+</tr>
+</table></div>
+</div></div></details>
+</div></article></article></details></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-MeanValueTheorem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Concavity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

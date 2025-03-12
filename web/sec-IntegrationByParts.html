@@ -133,6 +133,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\Dydx}{\dfrac{dy}{dx}}
 \newcommand{\blank}[1]{\underline{\hspace{#1}}} 
 \newcommand{\dint}{\displaystyle \int}
+\newcommand{\va}{┊}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -263,7 +264,6 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#subsec-WowSoFriendly" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Wow, So Friendly!</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-RelatedRates.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Related Rates</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -277,14 +277,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-ResultsFromMVT" class="internal"><span class="codenumber">4.1.3</span> <span class="title">More Results due to the Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Increasing and Decreasing Functions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IncreasingDecreasing.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Increasing and Decreasing Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-CriticalPointsLocalMaxMins" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Critical Points, Local Maximums, and Local Minimums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-FindingDirection" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Direction of a Function (and Where it Changes)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-StrangeDomains" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Strange Domains</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Concavity.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Concavity</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-InterpretFirstSecondDerivative.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Interpreting the First and Second Derivatives</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Global Maximums and Minimums</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Optimization.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Optimization</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LinearApproximation.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Linear Approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-NewtonsMethod.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Newton’s Method for Approximating Zeros</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LHopitalsRule.html" class="internal"><span class="codenumber">4.9</span> <span class="title">L’Hopital’s Rule</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Global Maximums and Minimums</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Optimization.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Optimization</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LinearApproximation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Linear Approximations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LHopitalsRule.html" class="internal"><span class="codenumber">4.7</span> <span class="title">L’Hopital’s Rule</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -656,7 +661,7 @@ du = \frac{1}{x^2+1}\;dx &amp; dv = 2x\;dx
 </h3>
 <div class="para" id="subsec-FlexibleChoices-2">We’re going to look at a couple of examples where we can showcase some of the flexibility we have with our choices of parts. First, we’ll revisit <a href="sec-IntegrationByParts.html#ex-2xarctan" class="xref" data-knowl="./knowl/xref/ex-2xarctan.html" data-reveal-label="Reveal" data-close-label="Close" title="Task 7.4.1.b">Task 7.4.1.b</a>.In this example, when we got to that second integral, we noticed that for the fraction <span class="process-math">\(\frac{x^2}{x^2+1}\text{,}\)</span> we could either do some long division (since the degrees in the numerator and denominator are the same) or do some clever re-writing of the numerator. Either way, we know that this fraction is <em class="emphasis">almost</em> 1...It’s really <span class="process-math">\(1\pm\)</span> some bit (in this case, the extra bit was a fraction <span class="process-math">\(\frac{1}{x^2+1}\)</span>).</div>
 <div class="para" id="subsec-FlexibleChoices-3">What if we chose our parts differently? Not the <span class="process-math">\(u\)</span> and <span class="process-math">\(dv\)</span> parts, though, since we still haven’t figured out how to antidifferentiate <span class="process-math">\(\tan^{-1}(x)\text{.}\)</span> But we get one more choice!</div>
-<div class="para" id="subsec-FlexibleChoices-4">Once we choose <span class="process-math">\(u\text{,}\)</span> we don’t really get a separate choice for <span class="process-math">\(du\text{:}\)</span> it’s simply the derivative of <span class="process-math">\(u\)</span> with regard to <span class="process-math">\(x\)</span> multiplied by the differential <span class="process-math">\(dx\text{.}\)</span> But consider our choice of <span class="process-math">\(dv\text{,}\)</span> and the subsequent process of finding <span class="process-math">\(v\text{.}\)</span> Yes, there’s only one possible answer, but in a much more real sense, there isn’t just one possible answer. There are an infinite number of them! We know, due to the <a href="sec-MeanValueTheorem.html#thm-MVT" class="xref" data-knowl="./knowl/xref/thm-MVT.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.1: Mean Value Theorem">Mean Value Theorem</a> and then later due to <a href="sec-MeanValueTheorem.html#thm-OffByConstant" class="xref" data-knowl="./knowl/xref/thm-OffByConstant.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.2">Theorem 4.1.2</a>, that there are an infinite number of antiderivatives, all differing by at most a constant term. So let’s pick a more appropriate antiderivative!</div>
+<div class="para" id="subsec-FlexibleChoices-4">Once we choose <span class="process-math">\(u\text{,}\)</span> we don’t really get a separate choice for <span class="process-math">\(du\text{:}\)</span> it’s simply the derivative of <span class="process-math">\(u\)</span> with regard to <span class="process-math">\(x\)</span> multiplied by the differential <span class="process-math">\(dx\text{.}\)</span> But consider our choice of <span class="process-math">\(dv\text{,}\)</span> and the subsequent process of finding <span class="process-math">\(v\text{.}\)</span> Yes, there’s only one possible answer, but in a much more real sense, there isn’t just one possible answer. There are an infinite number of them! We know, due to the <a href="sec-MeanValueTheorem.html#thm-MVT" class="xref" data-knowl="./knowl/xref/thm-MVT.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.1: Mean Value Theorem">Mean Value Theorem</a> and then later due to <a href="sec-MeanValueTheorem.html#thm-OffByConstant" class="xref" data-knowl="./knowl/xref/thm-OffByConstant.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.3: Equal Derivatives Correspond with Related Functions">Theorem 4.1.3</a>, that there are an infinite number of antiderivatives, all differing by at most a constant term. So let’s pick a more appropriate antiderivative!</div>
 <details id="subsec-FlexibleChoices-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.4.2</span><span class="period">.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-FlexibleChoices-5-1-1">Integrate <span class="process-math">\(\int 2x\tan^{-1}(x)\;dx\text{,}\)</span> this time making a more intentional choice for <span class="process-math">\(v\text{.}\)</span>

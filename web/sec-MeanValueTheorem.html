@@ -133,6 +133,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\Dydx}{\dfrac{dy}{dx}}
 \newcommand{\blank}[1]{\underline{\hspace{#1}}} 
 \newcommand{\dint}{\displaystyle \int}
+\newcommand{\va}{┊}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -263,7 +264,6 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#subsec-WowSoFriendly" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Wow, So Friendly!</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-RelatedRates.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Related Rates</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
@@ -277,14 +277,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-ResultsFromMVT" class="internal"><span class="codenumber">4.1.3</span> <span class="title">More Results due to the Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Increasing and Decreasing Functions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IncreasingDecreasing.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Increasing and Decreasing Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-CriticalPointsLocalMaxMins" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Critical Points, Local Maximums, and Local Minimums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-FindingDirection" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Direction of a Function (and Where it Changes)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-StrangeDomains" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Strange Domains</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Concavity.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Concavity</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-InterpretFirstSecondDerivative.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Interpreting the First and Second Derivatives</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Global Maximums and Minimums</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Optimization.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Optimization</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LinearApproximation.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Linear Approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-NewtonsMethod.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Newton’s Method for Approximating Zeros</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LHopitalsRule.html" class="internal"><span class="codenumber">4.9</span> <span class="title">L’Hopital’s Rule</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Global Maximums and Minimums</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Optimization.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Optimization</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LinearApproximation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Linear Approximations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LHopitalsRule.html" class="internal"><span class="codenumber">4.7</span> <span class="title">L’Hopital’s Rule</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -480,10 +485,15 @@ f'(c) = \frac{f(b)-f(a)}{b-a}\text{.}
 </div></article></section><section class="subsection" id="subsec-ResultsFromMVT"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="space"> </span><span class="title">More Results due to the Mean Value Theorem</span>
 </h3>
-<article class="theorem theorem-like" id="thm-OffByConstant"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span>
+<article class="theorem theorem-like" id="thm-IncreasingDecreasing"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Sign of the Derivative.</span>
 </h4>
-<div class="para" id="thm-OffByConstant-1-1">For two functions <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{,}\)</span> both differentiable on <span class="process-math">\((a,b)\text{,}\)</span> if <span class="process-math">\(f'(x)=g'(x)\)</span> for all <span class="process-math">\(x\)</span>-values on <span class="process-math">\((a,b)\text{,}\)</span> then we know that <span class="process-math">\(f(x)=g(x)+C\)</span> for some real number constant <span class="process-math">\(C\text{.}\)</span> That is, the only differences in <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are due to a difference in the constant term.</div></article></section></section></div>
+<div class="para" id="thm-IncreasingDecreasing-2-1">If <span class="process-math">\(f\)</span> is a function that is differentiable on the interval <span class="process-math">\((a,b)\)</span> and <span class="process-math">\(f'(x)\gt 0\)</span> for all <span class="process-math">\(x\)</span> in the interval <span class="process-math">\((a,b)\text{,}\)</span> then <span class="process-math">\(f\)</span> must be increasing on <span class="process-math">\((a,b)\text{.}\)</span>
+</div> <div class="para" id="thm-IncreasingDecreasing-2-2">Similarly, if <span class="process-math">\(f'(x)\lt 0\)</span> for all <span class="process-math">\(x\)</span> in the interval <span class="process-math">\((a,b)\text{,}\)</span> then <span class="process-math">\(f\)</span> must be decreasing on <span class="process-math">\((a,b)\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-OffByConstant"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Equal Derivatives Correspond with Related Functions.</span>
+</h4>
+<div class="para" id="thm-OffByConstant-2-1">For two functions <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{,}\)</span> both differentiable on <span class="process-math">\((a,b)\text{,}\)</span> if <span class="process-math">\(f'(x)=g'(x)\)</span> for all <span class="process-math">\(x\)</span>-values on <span class="process-math">\((a,b)\text{,}\)</span> then we know that <span class="process-math">\(f(x)=g(x)+C\)</span> for some real number constant <span class="process-math">\(C\text{.}\)</span> That is, the only differences in <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are due to a difference in the constant term.</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-ApplicationsDerivatives.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-IncreasingDecreasing.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

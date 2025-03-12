@@ -892,22 +892,13 @@ var ptx_lunr_docs = [
   "body": " Logarithmic Differentiation with Products and Quotients   Let's say we've got some function that has products and quotients in it. Like, a lot. Consider the function: .    Work out a general strategy for how you would find directly. Where would you have to use Quotient Rule? What are the pieces? Where would you have to use Product Rule? What are the pieces? Where would you have to use Chain Rule? What are the pieces?  To be clear: do not actually differentiate this. Just look at it in horror and try to outline a plan that some other fool would use.  Click on the \"Solution\" below to see what the fool did.    What now? Can we \"simplify\" this somehow? Maybe, but I am not doing any more of this!    Let's instead use logarithmic differentiation. First, apply the log to both sides to get: . Since this function is just a bunch of products of things with exponents all put into some big quotient, we can use our log properties to re-write this!    We should have: . Confirm this.    Now differentiate both sides! You'll have to use some Chain Rule (but not a lot)! Refer back to for help here.    Solve for or .    While this is not a nice looking expression for the derivative, spend some time confirming that this was a nicer process then differentiating directly. This is because logs are friends.   "
 },
 {
-  "id": "sec-RelatedRates",
-  "level": "1",
-  "url": "sec-RelatedRates.html",
-  "type": "Section",
-  "number": "3.4",
-  "title": "Related Rates",
-  "body": " Related Rates  Text of section.  "
-},
-{
   "id": "sec-MeanValueTheorem",
   "level": "1",
   "url": "sec-MeanValueTheorem.html",
   "type": "Section",
   "number": "4.1",
   "title": "Mean Value Theorem",
-  "body": " Mean Value Theorem   Text    Slopes  Text    The Mean Value Theorem   Mean Value Theorem   For a function that is continuous on the closed interval and differentiable on the open interval , then there is some value with where: .      More Results due to the Mean Value Theorem    For two functions and , both differentiable on , if for all -values on , then we know that for some real number constant . That is, the only differences in and are due to a difference in the constant term.     "
+  "body": " Mean Value Theorem   Text    Slopes  Text    The Mean Value Theorem   Mean Value Theorem   For a function that is continuous on the closed interval and differentiable on the open interval , then there is some value with where: .      More Results due to the Mean Value Theorem   Sign of the Derivative   If is a function that is differentiable on the interval and for all in the interval , then must be increasing on .  Similarly, if for all in the interval , then must be decreasing on .     Equal Derivatives Correspond with Related Functions   For two functions and , both differentiable on , if for all -values on , then we know that for some real number constant . That is, the only differences in and are due to a difference in the constant term.     "
 },
 {
   "id": "thm-MVT",
@@ -919,13 +910,22 @@ var ptx_lunr_docs = [
   "body": " Mean Value Theorem   For a function that is continuous on the closed interval and differentiable on the open interval , then there is some value with where: .   "
 },
 {
+  "id": "thm-IncreasingDecreasing",
+  "level": "2",
+  "url": "sec-MeanValueTheorem.html#thm-IncreasingDecreasing",
+  "type": "Theorem",
+  "number": "4.1.2",
+  "title": "Sign of the Derivative.",
+  "body": " Sign of the Derivative   If is a function that is differentiable on the interval and for all in the interval , then must be increasing on .  Similarly, if for all in the interval , then must be decreasing on .   "
+},
+{
   "id": "thm-OffByConstant",
   "level": "2",
   "url": "sec-MeanValueTheorem.html#thm-OffByConstant",
   "type": "Theorem",
-  "number": "4.1.2",
-  "title": "",
-  "body": "  For two functions and , both differentiable on , if for all -values on , then we know that for some real number constant . That is, the only differences in and are due to a difference in the constant term.   "
+  "number": "4.1.3",
+  "title": "Equal Derivatives Correspond with Related Functions.",
+  "body": " Equal Derivatives Correspond with Related Functions   For two functions and , both differentiable on , if for all -values on , then we know that for some real number constant . That is, the only differences in and are due to a difference in the constant term.   "
 },
 {
   "id": "sec-IncreasingDecreasing",
@@ -934,7 +934,70 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Increasing and Decreasing Functions",
-  "body": " Increasing and Decreasing Functions  Text of section.  "
+  "body": " Increasing and Decreasing Functions    How Should We Think About Direction?   Our goal in this activity is to motivate some new terminology and results that will help us talk about the \"direction\" of a function and some interesting points on a function (related to the direction of a function). For us to do this, we'll look at some different examples of functions and try to think about some unifying ideas.       A rational function that increases gently up to a point in the third quadrant, then decreases towards a vertical asymptote at x=0. In the first quadrant, the function decreases down to some point, and then gently increases.    A polynomial function that decreases down to a point, then increases, then decreases, then increases.      A kind of oscillating function that looks like it bounces off of the horizontal axis, creating sharp corners. It gently changes direction near the peak. The graph decreases, hits the axis and increases, then gently decreases towards the horizontal axis. It bounces one more time, and increases then decreases.    A bell curve, with horizontal asymptote at y=0. It increases up to a point on the top where it changes to decreasing towards the horizontal axis.      These examples do not cover all of the possibilities of how a function can act, but will hopefully provide us enough fertile ground to think about some different situations.    In each graph, find and identify:   The intervals where the function is increasing.    The intervals where the function is decreasing.    The points (or locations) around and between these intervals, the points where the function changes direction or the direction terminates.       Make a conjecture about the behavior of a function at any point where the function changes direction.   What do you think has to be true about the derivative at these points?    Look at the highest and lowest points on each function. You can even include the points that are highest and lowest just compared to the points around it. Make a conjecture about the behavior of the function at these points.   What do you think has to be true about the derivative at these points?    We want to turn this little bit of thinking and exploring into some useful definitions for us. To craft these definitions, we need to start with thinking about what we care about and why we might care about it.    Critical Points, Local Maximums, and Local Minimums  Let's start by saying what we're really looking for is the highest and lowest points on a function. These points are interesting, have useful applications, and are difficult to find in general without calculus. We hopefully noticed, though, that these points always end up showing up at the same kinds of locations! They're points where the direction of a function changes (or terminates).  We also noticed that there are some common characteristics of those points. They're points where the derivative was either 0 or didn't exist. So we'll start by defining these points, and then we'll define the idea of \"highest\" and \"lowest\" points. Then we'll put together a result that we hopefully noticed here: that the highest and lowest points show up at these points where the derivative is 0 or doesn't exist.   Critical Point of a Function   We say that a point on the graph of is a critical point of the function if or doesn't exist.  If is a critical point of , then we sometimes will call a critical number and a critical value .    So these are the points we will look for to find the \"highest\" and \"lowest\" points.  Now we need to define this idea so that we can build the result that tells us how to find these highest and lowest points.   Local Maximum\/Minimum   A point is a local maximum of if there is some open interval of real numbers around (that is, ) and for all -values in the intersection of and the domain of .  Similarly, a point is a local minimum of if there is some open interval of real numbers around (that is, ) and for all -values in the intersection of and the domain of .  These are really just slightly technical ways of saying that is either the highest or lowest -value produced by the function for the -values near .     If you look around online, or in other textbooks, you'll find different definitions of these same kinds of pints. Some of those definitions have silly stipulations, like saying that an ending point of a function cannot be a local maximum\/local minimum.  This seems to come from some sense that the derivative must be defined on each \"side\" of a local max\/min. In this book, we'll not worry about this restriction, and instead just look at the highest and lowest points relative to the other points near it.   Now we want to build the connection between these points. In , we pointed out that the highest and lowest points on a function all had the common theme of showing up at places where the derivative was 0 or didn't exist.   Every Local Maximum\/Minimum Occurs at a Critical Point   Every local maximum or local minimum of occurs at a critical point of .  Another way of saying this is that if is a local maximum or local minimum of , then it must also be a critical point of .    WAIT! STOP! Before you move on, let's make sure we understand what this theorem is saying. Or maybe what this theorem is not saying.  Notice that we are not saying that every critical point is a local maximum or local minimum! This is a classic \"every square is a rectangle but not every rectangle is a square\" situation.  Every local maximum\/minimum occurs at a critical point, but not every critical point is a local maximum\/minimum.    Direction of a Function (and Where it Changes)  Let's build up a way of classifying critical points as local maximums, local minimums, or neither.   Comparing Critical Points   Let's think about four different functions:                      Our goal is to find the critical points on the interval and then to try to figure out if these critical points are local maximums or local minimums or just points that the function increases or decreases through.    To start, we're going to be finding critical points. Without looking at a picture of the graph of the function, find the derivative.  Are there any -values (in the domain of the function) where the derivative doesn't exist? We are normally looking for things like division by 0 here, but we could be finding more than that. Check out to remind yourself if needed.  Are there any -values (in the domain of the function) where the derivative is 0?    Now that we have the critical points for the function, let's think about where the derivative might be positive and negative. These will correspond to the direction of a function, based on .  Write out the intervals of -values around and between your list of critical points. For each interval, what is the sign of the derivative? What do these signs mean about the direction of your function?    Without looking at the graph of your function:   What changes about how your function increases up to or decreases down to a critical point based on whether the derivative was 0 or the derivative didn't exist?    Does your function change direction at a critical point? What will that look like, whether it does or does not change direction?       Give a basic sketch of your graph. It might be helpful to find the -values for any critical points you've got. Then you can sketch your function increasing\/decreasing in the intervals between these points.  In your sketch, include enough detail to tell whether the derivative is 0 or doesn't exist at each critical point.    Compare your sketch to the actual graph of the function (you can find all of the graphs in the hint).         A graph of f(x). It is a parabola that increases up to a horizontal tangent line a the point (3\/2, 25\/4), and then decreases away from it.    A graph of g(x). It increases to a vertical tangent line at (-1,0), and then continues increases from there.      A graph of h(x). It decreases down to a vertical tangent line at (4,0), and then increases away from it, forming a cusp or sharp corner.    A graph of j(x). It decreases down to a horizontal tangent line at (0,1), and then decreases away from it.         This is great, we have a nice strategy for thinking about critical points!  Something we can notice: in finding these critical points (as well as thinking about the domain of the function), we found all of the locations where the derivative is both not positive and not negative. This is a weird way of saying that all of the intervals in between the critical points we found and any breaks in the domain of the function (like if there were vertical asymptotes or holes or something) are places where the derivative is positive or negative.  Even more exciting: if the derivative function we found is continuous, then the says that it will only change signs at these critical points (or places like vertical asymptotes or holes). So this means that we can always construct a little chart or something, think about the -values around and at critical points or other breaks in the domain, and then look at what the derivative does as we move through those intervals and -values.  This will serve as a nice way of thinking about what's going on with our functions!   First Derivative Test   If is a critical point of and we can evaluate the derivative on either side of this point, then we can use the signs of the first derivative to classify the critical point:   If the sign of changes from positive to negative as passes through , then is a local maximum.    If the sign of changes from negative to positive as passes through , then is a local minimum.    If the sign of does not change as passes through , then the function increases or decreases (depending on whether or ) through .   We will often lay these results out in a chart or table, like the following:                             local max                               local min                                 increasing through                               decreasing through            Strange Domains  We'll look at two more examples, both of them using functions whose domain is not  .    Consider the function . Find domain of , the critical points of , and then the intervals where is increasing\/decreasing. Then, classify any critical points local maximums\/minimums if necessary.       The function has one critical point at . Why isn't there a critical point at ? What is happening there instead?                                      The domain of is due to the vertical asymptote at . The only critical point is at . The table below shows where is increasing and decreasing, as well as any local maximums or minimums.                                  decreasing  local min  increasing  asymptote  decreasing       Consider the function . Find domain of , the critical points of , and then the intervals where is increasing\/decreasing. Then, classify any critical points local maximums\/minimums if necessary.       Notice that, by our definition of critical points, both and are critical points.                                   The domain of is . There are two critical points: one at and another at . The table below shows where is increasing and decreasing, as well as any local maximums or minimums.                 DNE               local max  decreasing  local min  increasing        "
+},
+{
+  "id": "act-FunctionDirection",
+  "level": "2",
+  "url": "sec-IncreasingDecreasing.html#act-FunctionDirection",
+  "type": "Activity",
+  "number": "4.2.1",
+  "title": "How Should We Think About Direction?",
+  "body": " How Should We Think About Direction?   Our goal in this activity is to motivate some new terminology and results that will help us talk about the \"direction\" of a function and some interesting points on a function (related to the direction of a function). For us to do this, we'll look at some different examples of functions and try to think about some unifying ideas.       A rational function that increases gently up to a point in the third quadrant, then decreases towards a vertical asymptote at x=0. In the first quadrant, the function decreases down to some point, and then gently increases.    A polynomial function that decreases down to a point, then increases, then decreases, then increases.      A kind of oscillating function that looks like it bounces off of the horizontal axis, creating sharp corners. It gently changes direction near the peak. The graph decreases, hits the axis and increases, then gently decreases towards the horizontal axis. It bounces one more time, and increases then decreases.    A bell curve, with horizontal asymptote at y=0. It increases up to a point on the top where it changes to decreasing towards the horizontal axis.      These examples do not cover all of the possibilities of how a function can act, but will hopefully provide us enough fertile ground to think about some different situations.    In each graph, find and identify:   The intervals where the function is increasing.    The intervals where the function is decreasing.    The points (or locations) around and between these intervals, the points where the function changes direction or the direction terminates.       Make a conjecture about the behavior of a function at any point where the function changes direction.   What do you think has to be true about the derivative at these points?    Look at the highest and lowest points on each function. You can even include the points that are highest and lowest just compared to the points around it. Make a conjecture about the behavior of the function at these points.   What do you think has to be true about the derivative at these points?   "
+},
+{
+  "id": "def-CriticalPoint",
+  "level": "2",
+  "url": "sec-IncreasingDecreasing.html#def-CriticalPoint",
+  "type": "Definition",
+  "number": "4.2.2",
+  "title": "Critical Point of a Function.",
+  "body": " Critical Point of a Function   We say that a point on the graph of is a critical point of the function if or doesn't exist.  If is a critical point of , then we sometimes will call a critical number and a critical value .   "
+},
+{
+  "id": "def-LocalMaxMin",
+  "level": "2",
+  "url": "sec-IncreasingDecreasing.html#def-LocalMaxMin",
+  "type": "Definition",
+  "number": "4.2.3",
+  "title": "Local Maximum\/Minimum.",
+  "body": " Local Maximum\/Minimum   A point is a local maximum of if there is some open interval of real numbers around (that is, ) and for all -values in the intersection of and the domain of .  Similarly, a point is a local minimum of if there is some open interval of real numbers around (that is, ) and for all -values in the intersection of and the domain of .  These are really just slightly technical ways of saying that is either the highest or lowest -value produced by the function for the -values near .   "
+},
+{
+  "id": "thm-LocalMaxMinAtCriticalPoints",
+  "level": "2",
+  "url": "sec-IncreasingDecreasing.html#thm-LocalMaxMinAtCriticalPoints",
+  "type": "Theorem",
+  "number": "4.2.4",
+  "title": "Every Local Maximum\/Minimum Occurs at a Critical Point.",
+  "body": " Every Local Maximum\/Minimum Occurs at a Critical Point   Every local maximum or local minimum of occurs at a critical point of .  Another way of saying this is that if is a local maximum or local minimum of , then it must also be a critical point of .   "
+},
+{
+  "id": "act-ComparingCriticalPoints",
+  "level": "2",
+  "url": "sec-IncreasingDecreasing.html#act-ComparingCriticalPoints",
+  "type": "Activity",
+  "number": "4.2.2",
+  "title": "Comparing Critical Points.",
+  "body": " Comparing Critical Points   Let's think about four different functions:                      Our goal is to find the critical points on the interval and then to try to figure out if these critical points are local maximums or local minimums or just points that the function increases or decreases through.    To start, we're going to be finding critical points. Without looking at a picture of the graph of the function, find the derivative.  Are there any -values (in the domain of the function) where the derivative doesn't exist? We are normally looking for things like division by 0 here, but we could be finding more than that. Check out to remind yourself if needed.  Are there any -values (in the domain of the function) where the derivative is 0?    Now that we have the critical points for the function, let's think about where the derivative might be positive and negative. These will correspond to the direction of a function, based on .  Write out the intervals of -values around and between your list of critical points. For each interval, what is the sign of the derivative? What do these signs mean about the direction of your function?    Without looking at the graph of your function:   What changes about how your function increases up to or decreases down to a critical point based on whether the derivative was 0 or the derivative didn't exist?    Does your function change direction at a critical point? What will that look like, whether it does or does not change direction?       Give a basic sketch of your graph. It might be helpful to find the -values for any critical points you've got. Then you can sketch your function increasing\/decreasing in the intervals between these points.  In your sketch, include enough detail to tell whether the derivative is 0 or doesn't exist at each critical point.    Compare your sketch to the actual graph of the function (you can find all of the graphs in the hint).         A graph of f(x). It is a parabola that increases up to a horizontal tangent line a the point (3\/2, 25\/4), and then decreases away from it.    A graph of g(x). It increases to a vertical tangent line at (-1,0), and then continues increases from there.      A graph of h(x). It decreases down to a vertical tangent line at (4,0), and then increases away from it, forming a cusp or sharp corner.    A graph of j(x). It decreases down to a horizontal tangent line at (0,1), and then decreases away from it.        "
+},
+{
+  "id": "thm-FirstDerivativeTest",
+  "level": "2",
+  "url": "sec-IncreasingDecreasing.html#thm-FirstDerivativeTest",
+  "type": "Theorem",
+  "number": "4.2.6",
+  "title": "First Derivative Test.",
+  "body": " First Derivative Test   If is a critical point of and we can evaluate the derivative on either side of this point, then we can use the signs of the first derivative to classify the critical point:   If the sign of changes from positive to negative as passes through , then is a local maximum.    If the sign of changes from negative to positive as passes through , then is a local minimum.    If the sign of does not change as passes through , then the function increases or decreases (depending on whether or ) through .   We will often lay these results out in a chart or table, like the following:                             local max                               local min                                 increasing through                               decreasing through         "
+},
+{
+  "id": "subsec-StrangeDomains-3",
+  "level": "2",
+  "url": "sec-IncreasingDecreasing.html#subsec-StrangeDomains-3",
+  "type": "Example",
+  "number": "4.2.7",
+  "title": "",
+  "body": "  Consider the function . Find domain of , the critical points of , and then the intervals where is increasing\/decreasing. Then, classify any critical points local maximums\/minimums if necessary.       The function has one critical point at . Why isn't there a critical point at ? What is happening there instead?                                      The domain of is due to the vertical asymptote at . The only critical point is at . The table below shows where is increasing and decreasing, as well as any local maximums or minimums.                                  decreasing  local min  increasing  asymptote  decreasing       Consider the function . Find domain of , the critical points of , and then the intervals where is increasing\/decreasing. Then, classify any critical points local maximums\/minimums if necessary.       Notice that, by our definition of critical points, both and are critical points.                                   The domain of is . There are two critical points: one at and another at . The table below shows where is increasing and decreasing, as well as any local maximums or minimums.                 DNE               local max  decreasing  local min  increasing      "
 },
 {
   "id": "sec-Concavity",
@@ -946,20 +1009,11 @@ var ptx_lunr_docs = [
   "body": " Concavity  Text of section.  "
 },
 {
-  "id": "sec-InterpretFirstSecondDerivative",
-  "level": "1",
-  "url": "sec-InterpretFirstSecondDerivative.html",
-  "type": "Section",
-  "number": "4.4",
-  "title": "Interpreting the First and Second Derivatives",
-  "body": " Interpreting the First and Second Derivatives  Text of section.  "
-},
-{
   "id": "sec-GlobalMaxMins",
   "level": "1",
   "url": "sec-GlobalMaxMins.html",
   "type": "Section",
-  "number": "4.5",
+  "number": "4.4",
   "title": "Global Maximums and Minimums",
   "body": " Global Maximums and Minimums  Text of section.  "
 },
@@ -968,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Optimization.html",
   "type": "Section",
-  "number": "4.6",
+  "number": "4.5",
   "title": "Optimization",
   "body": " Optimization  Text of section.  "
 },
@@ -977,25 +1031,16 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-LinearApproximation.html",
   "type": "Section",
-  "number": "4.7",
+  "number": "4.6",
   "title": "Linear Approximations",
   "body": " Linear Approximations  Text of section.  "
-},
-{
-  "id": "sec-NewtonsMethod",
-  "level": "1",
-  "url": "sec-NewtonsMethod.html",
-  "type": "Section",
-  "number": "4.8",
-  "title": "Newton’s Method for Approximating Zeros",
-  "body": " Newton's Method for Approximating Zeros  Text of section.  "
 },
 {
   "id": "sec-LHopitalsRule",
   "level": "1",
   "url": "sec-LHopitalsRule.html",
   "type": "Section",
-  "number": "4.9",
+  "number": "4.7",
   "title": "L’Hopital’s Rule",
   "body": " L'Hopital's Rule  Text of section.   L'Hopital's Rule   If and are functions and is some real number with and both being differentiable at and and , then . Similarly, this holds if and .  If and are both differentiable as and either:    and      and    then .  This is also true as .    "
 },
@@ -1004,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LHopitalsRule.html#thm-LHopitalsRule",
   "type": "Theorem",
-  "number": "4.9.1",
+  "number": "4.7.1",
   "title": "L’Hopital’s Rule.",
   "body": " L'Hopital's Rule   If and are functions and is some real number with and both being differentiable at and and , then . Similarly, this holds if and .  If and are both differentiable as and either:    and      and    then .  This is also true as .   "
 },
