@@ -307,6 +307,7 @@
         </hint>
         <answer>
           <p>
+            The domain of <m>f(x)</m> is <m>(-\infty, 3)\cup(3,\infty)</m> due to the vertical asymptote at <m>x=3</m>. The only critical point is at <m>(0,0)</m>. The table below shows where <m>f</m> is increasing and decreasing, as well as any local maximums or minimums.
             <tabular>
               <col width="16%" top="medium" halign="center"/>
               <col width="16%" top="medium" halign="center"/>
@@ -350,6 +351,100 @@
           </p>
         </answer>
       </task>
+      <task>
+        <statement>
+          <p>
+            Consider the function 
+            <me>g(x) = \sqrt{x}-x+1</me>.
+            Find domain of <m>g</m>, the critical points of <m>g</m>, and then the intervals where <m>g</m> is increasing/decreasing. Then, classify any critical points local maximums/minimums if necessary.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            <m>g'(x)=\dfrac{1}{2\sqrt{x}}-1</m>
+          </p>
+        </hint>
+        <hint>
+          <p>
+            Notice that, by our definition of critical points, both <m>(0,1)</m> and <m>\left(\frac{1}{4},\frac{3}{4}\right)</m> are critical points.
+          </p>
+        </hint>
+        <hint>
+          <p>
+            <tabular>
+              <col width="16%" top="medium"/>
+              <col width="16%" top="medium"/>
+              <col width="16%" top="medium"/>
+              <col width="16%" top="medium"/>
+              <col width="16%" top="medium"/>
+              <col width="16%" top="medium"/>
+              <row bottom="minor">
+                <cell><p><m>x</m></p></cell>
+                <cell><p><m>0</m></p></cell>
+                <cell><p><m>\left(0,\frac{1}{4}\right)</m></p></cell>
+                <cell><p><m>\frac{1}{4}</m></p></cell>
+                <cell><p><m>\left(\frac{1}{4},\infty\right)</m></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>g'</m></p></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row bottom="medium">
+                <cell><p><m>g</m></p></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+          </p>
+        </hint>
+        <answer>
+          <p>
+            The domain of <m>g(x)</m> is <m>[0,\infty)</m>. There are two critical points: one at <m>(0,1)</m> and another at <m>\left(\frac{1}{4},\frac{3}{4}\right)</m>. The table below shows where <m>g</m> is increasing and decreasing, as well as any local maximums or minimums.
+            <tabular>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <row bottom="minor">
+                <cell><p><m>x</m></p></cell>
+                <cell><p><m>0</m></p></cell>
+                <cell><p><m>\left(0,\frac{1}{4}\right)</m></p></cell>
+                <cell><p><m>\frac{1}{4}</m></p></cell>
+                <cell><p><m>\left(\frac{1}{4},\infty\right)</m></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>g'</m></p></cell>
+                <cell><p>DNE</p></cell>
+                <cell><p><m>\ominus</m></p></cell>
+                <cell><p><m>0</m></p></cell>
+                <cell><p><m>\oplus</m></p></cell>
+              </row>
+              <row>
+                <cell><p><m>g</m></p></cell>
+                <cell><p><m>(0,1)</m></p></cell>
+                <cell><p><m>\searrow</m></p></cell>
+                <cell><p><m>\left(\frac{1}{4},\frac{3}{4}\right)</m></p></cell>
+                <cell><p><m>\nearrow</m></p></cell>
+              </row>
+              <row bottom="medium">
+                <cell></cell>
+                <cell><p>local max</p></cell>
+                <cell><p>decreasing</p></cell>
+                <cell><p>local min</p></cell>
+                <cell><p>increasing</p></cell>
+              </row>
+            </tabular>
+          </p>
+        </answer>
+      </task>
+
     </example>
   </subsection>
 
