@@ -6,18 +6,114 @@
             <ul>
                 <li>
                     <p>
-                        <m>f(x) = </m>
+                        <m>f(x) = 4+3x-x^2</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>g(x) = \sqrt[3]{x+1}+1+x</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>h(x)=(x-4)^{2/3}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>j(x)=1-x^3-x^5</m>
                     </p>
                 </li>
             </ul>
+            Our goal is to find the critical points on the interval <m>(-\infty,\infty)</m> and then to try to figure out if these critical points are local maximums or local minimums or just points that the function increases or decreases through.
         </p>
     </introduction>
     <task>
         <statement>
             <p>
-                
+                To start, we're going to be finding critical points. Without looking at a picture of the graph of the function, find the derivative.
+            </p>
+            <p>
+                Are there any <m>x</m>-values (in the domain of the function) where the derivative doesn't exist? We are normally looking for things like division by 0 here, but we could be finding more than that. Check out <xref ref="strat-DerivativesDontExist" text="title"/> to remind yourself if needed.
+            </p>
+            <p>
+                Are there any <m>x</m>-values (in the domain of the function) where the derivative is 0?
             </p>
         </statement>
     </task>
-    
+    <task>
+        <statement>
+            <p>
+                Now that we have the critical points for the function, let's think about where the derivative might be positive and negative. These will correspond to the direction of a function, based on <xref ref="thm-IncreasingDecreasing" text="type-global-title"/>.
+            </p>
+            <p>
+                Write out the intervals of <m>x</m>-values around and between your list of critical points. For each interval, what is the sign of the derivative? What do these signs mean about the direction of your function?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Without looking at the graph of your function:
+                <ul>
+                    <li>
+                        <p>
+                            What changes about how your function increases up to or decreases down to a critical point based on whether the derivative was 0 or the derivative didn't exist?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Does your function change direction at a critical point? What will that look like, whether it does or does not change direction?
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Give a basic sketch of your graph. It might be helpful to find the <m>y</m>-values for any critical points you've got. Then you can sketch your function increasing/decreasing in the intervals between these points.
+            </p>
+            <p>
+                In your sketch, include enough detail to tell whether the derivative is 0 or doesn't exist at each critical point.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Compare your sketch to the actual graph of the function (you can find all of the graphs in the hint). 
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <figure xml:id="fig-CriticalPointActivity">
+                    <caption></caption>
+                    <sbsgroup>
+                    <sidebyside widths="35% 55%">
+                        <image source="./ApplicationsDerivatives/critical-f.png">
+                            <shortdescription>A graph of f(x). It is a parabola that increases up to a horizontal tangent line a the point (3/2, 25/4), and then decreases away from it.</shortdescription>
+                        </image>
+
+                        <image source="./ApplicationsDerivatives/critical-g.png">
+                            <shortdescription>A graph of g(x). It increases to a vertical tangent line at (-1,0), and then continues increases from there.</shortdescription>
+                        </image>
+                    </sidebyside>
+
+                    <sidebyside widths="60% 30%">
+                        <image source="./ApplicationsDerivatives/critical-h.png">
+                            <shortdescription>A graph of h(x). It decreases down to a vertical tangent line at (4,0), and then increases away from it, forming a cusp or sharp corner.</shortdescription>
+                        </image>
+
+                        <image source="./ApplicationsDerivatives/critical-j.png">
+                            <shortdescription>A graph of j(x). It decreases down to a horizontal tangent line at (0,1), and then decreases away from it.</shortdescription>
+                        </image>
+                    </sidebyside>
+                </sbsgroup>
+                </figure>
+                
+            </p>
+        </hint>
+    </task>
 </activity>

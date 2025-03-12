@@ -86,19 +86,272 @@
     </p>
     <xi:include href="./activities/act-ComparingCriticalPoints.ptx" />
     <p>
-      This is great! What we'll notice is that 
+      This is great, we have a nice strategy for thinking about critical points!
     </p>
+    <p> 
+      Something we can notice: in finding these critical points (as well as thinking about the domain of the function), we found <em>all</em> of the locations where the derivative is both not positive and not negative. This is a weird way of saying that all of the intervals in between the critical points we found and any breaks in the domain of the function (like if there were vertical asymptotes or holes or something) are places where the derivative is positive or negative.
+  </p>
+  <p>
+      Even more exciting: if the derivative function we found is continuous, then the <xref ref="thm-IVT" text="title"/> says that it will <em>only</em> change signs at these critical points (or places like vertical asymptotes or holes). So this means that we can always construct a little chart or something, think about the <m>x</m>-values around and at critical points or other breaks in the domain, and then look at what the derivative does as we move through those intervals and <m>x</m>-values.
+  </p>
+  <p>
+    This will serve as a nice way of thinking about what's going on with our functions!
+  </p>
+  <theorem xml:id="thm-FirstDerivativeTest">
+  <title>First Derivative Test</title>
+  <statement>
+    <p>
+      If <m>(c,f(c))</m> is a critical point of <m>f</m> and we can evaluate the derivative <m>f'</m> on either side of this point, then we can use the signs of the first derivative to classify the critical point:
+      <ul>
+        <li>
+          <p>
+            If the sign of <m>f'</m> changes from positive to negative as <m>x</m> passes through <m>x=c</m>, then <m>(c,f(c))</m> is a local maximum.
+          </p>
+        </li>
+        <li>
+          <p>
+            If the sign of <m>f'</m> changes from negative to positive as <m>x</m> passes through <m>x=c</m>, then <m>(c,f(c))</m> is a local minimum.
+          </p>
+        </li>
+        <li>
+          <p>
+            If the sign of <m>f'</m> does not change as <m>x</m> passes through <m>x=c</m>, then the function <m>f</m> increases or decreases (depending on whether <m>f'\gt 0</m> or <m>f'\lt 0</m>) through <m>x=c</m>.
+          </p>
+        </li>
+      </ul>
+      We will often lay these results out in a chart or table, like the following:
+      <sbsgroup widths="50% 50%">
+        <sidebyside>
+          <tabular>
+            <col width="25%" halign="center" top="medium"/> 
+            <col width="25%" halign="center" top="medium"/> 
+            <col width="25%" halign="center" top="medium"/> 
+            <col width="25%" halign="center" top="medium"/> 
+            <row bottom="minor">
+              <cell><p><m>x</m></p></cell> <cell></cell> 
+              <cell><p><m>c</m></p></cell> <cell></cell>
+            </row>
+            <row bottom="minor">
+              <cell><p><m>f'</m></p></cell>
+              <cell><p><m>\oplus</m></p></cell>
+              <cell></cell>
+              <cell><p><m>\ominus</m></p></cell>
+            </row>
+            <row>
+              <cell><p><m>f</m></p></cell>
+              <cell><p><m>\nearrow</m></p></cell>
+              <cell></cell>
+              <cell><p><m>\searrow</m></p></cell>
+            </row>
+            <row bottom="medium">
+              <cell></cell>
+              <cell></cell>
+              <cell><p>local max</p></cell>
+              <cell></cell>
+            </row>
+          </tabular>
 
-    <theorem xml:id="thm-FirstDerivativeTest">
-    <title>First Derivative Test</title>
-    <statement>
-      <p>
-        
-      </p>
-    </statement>
+          <tabular>
+            <col width="25%" halign="center" top="medium"/> 
+            <col width="25%" halign="center" top="medium"/> 
+            <col width="25%" halign="center" top="medium"/> 
+            <col width="25%" halign="center" top="medium"/> 
+            <row bottom="minor">
+              <cell><p><m>x</m></p></cell> <cell></cell> 
+              <cell><p><m>c</m></p></cell> <cell></cell>
+            </row>
+            <row bottom="minor">
+              <cell><p><m>f'</m></p></cell>
+              <cell><p><m>\ominus</m></p></cell>
+              <cell></cell>
+              <cell><p><m>\oplus</m></p></cell>
+            </row>
+            <row>
+              <cell><p><m>f</m></p></cell>
+              <cell><p><m>\searrow</m></p></cell>
+              <cell></cell>
+              <cell><p><m>\nearrow</m></p></cell>
+            </row>
+            <row bottom="medium">
+              <cell></cell>
+              <cell></cell>
+              <cell><p>local min</p></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+        </sidebyside>
+
+        <sidebyside>
+          <tabular>
+            <col width="23%" halign="center" top="medium"/> 
+            <col width="23%" halign="center" top="medium"/> 
+            <col width="31%" halign="center" top="medium"/> 
+            <col width="23%" halign="center" top="medium"/> 
+            <row bottom="minor">
+              <cell><p><m>x</m></p></cell> <cell></cell> 
+              <cell><p><m>c</m></p></cell> <cell></cell>
+            </row>
+            <row bottom="minor">
+              <cell><p><m>f'</m></p></cell>
+              <cell><p><m>\oplus</m></p></cell>
+              <cell></cell>
+              <cell><p><m>\oplus</m></p></cell>
+            </row>
+            <row>
+              <cell><p><m>f</m></p></cell>
+              <cell><p><m>\nearrow</m></p></cell>
+              <cell></cell>
+              <cell><p><m>\nearrow</m></p></cell>
+            </row>
+            <row bottom="medium">
+              <cell></cell>
+              <cell></cell>
+              <cell><p>increasing through</p></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+
+          <tabular>
+            <col width="23%" halign="center" top="medium"/> 
+            <col width="23%" halign="center" top="medium"/> 
+            <col width="31%" halign="center" top="medium"/> 
+            <col width="23%" halign="center" top="medium"/>  
+            <row bottom="minor">
+              <cell><p><m>x</m></p></cell> <cell></cell> 
+              <cell><p><m>c</m></p></cell> <cell></cell>
+            </row>
+            <row bottom="minor">
+              <cell><p><m>f'</m></p></cell>
+              <cell><p><m>\ominus</m></p></cell>
+              <cell></cell>
+              <cell><p><m>\ominus</m></p></cell>
+            </row>
+            <row>
+              <cell><p><m>f</m></p></cell>
+              <cell><p><m>\searrow</m></p></cell>
+              <cell></cell>
+              <cell><p><m>\searrow</m></p></cell>
+            </row>
+            <row bottom="medium">
+              <cell></cell>
+              <cell></cell>
+              <cell><p>decreasing through</p></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+        </sidebyside>
+      </sbsgroup>
+    </p>
+  </statement>
   </theorem>
   </subsection>
-  
+  <subsection xml:id="subsec-StrangeDomains">
+    <title>Strange Domains</title>
+    <p>
+      We'll look at two more examples, both of them using functions whose domain is <em>not</em> <m>(-\infty, \infty)</m>.
+    </p>
+    <example>
+      <task>
+        <statement>
+          <p>
+            Consider the function 
+            <me>f(x) = \dfrac{x^2}{(x-3)^2}</me>.
+            Find domain of <m>f</m>, the critical points of <m>f</m>, and then the intervals where <m>f</m> is increasing/decreasing. Then, classify any critical points local maximums/minimums if necessary.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            <m>f'(x) = -\dfrac{6x}{(x-3)^3}</m>
+          </p>
+        </hint>
+        <hint>
+          <p>
+            The function <m>f(x)</m> has one critical point at <m>(0,0)</m>. Why isn't there a critical point at <m>x=3</m>? What is happening there instead?
+          </p>
+        </hint>
+        <hint>
+          <p>
+            <tabular>
+              <col width="16%" top="medium"/>
+              <col width="16%" top="medium"/>
+              <col width="16%" top="medium"/>
+              <col width="16%" top="medium"/>
+              <col width="16%" top="medium"/>
+              <col width="16%" top="medium"/>
+              <row bottom="minor">
+                <cell><p><m>x</m></p></cell>
+                <cell><p><m>(-\infty, 0)</m></p></cell>
+                <cell><p><m>0</m></p></cell>
+                <cell><p><m>(0,3)</m></p></cell>
+                <cell><p><m>3</m></p></cell>
+                <cell><p><m>(3,\infty)</m></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>f'</m></p></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row bottom="medium">
+                <cell><p><m>f</m></p></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+          </p>
+        </hint>
+        <answer>
+          <p>
+            <tabular>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <row bottom="minor">
+                <cell><p><m>x</m></p></cell>
+                <cell><p><m>(-\infty, 0)</m></p></cell>
+                <cell><p><m>0</m></p></cell>
+                <cell><p><m>(0,3)</m></p></cell>
+                <cell><p><m>3</m></p></cell>
+                <cell><p><m>(3,\infty)</m></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>f'</m></p></cell>
+                <cell><p><m>\ominus</m></p></cell>
+                <cell><p><m>0</m></p></cell>
+                <cell><p><m>\oplus</m></p></cell>
+                <cell><p><m>\va</m></p></cell>
+                <cell><p><m>\ominus</m></p></cell>
+              </row>
+              <row>
+                <cell><p><m>f</m></p></cell>
+                <cell><p><m>\searrow</m></p></cell>
+                <cell><p><m>(0,0)</m></p></cell>
+                <cell><p><m>\nearrow</m></p></cell>
+                <cell><p><m>\va</m></p></cell>
+                <cell><p><m>\searrow</m></p></cell>
+              </row>
+              <row bottom="medium">
+                <cell></cell>
+                <cell><p>decreasing</p></cell>
+                <cell><p>local min</p></cell>
+                <cell><p>increasing</p></cell>
+                <cell><p>asymptote</p></cell>
+                <cell><p>decreasing</p></cell>
+              </row>
+            </tabular>
+          </p>
+        </answer>
+      </task>
+    </example>
+  </subsection>
 
   
   

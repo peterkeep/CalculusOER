@@ -30,7 +30,22 @@
     </subsection>
     <subsection xml:id="subsec-ResultsFromMVT">
         <title>More Results due to the Mean Value Theorem</title>
-        <theorem xml:id="thm-OffByConstant">         
+        <theorem xml:id="thm-IncreasingDecreasing">
+            <title>Sign of the Derivative</title>
+            <statement>
+                <p>
+                    If <m>f</m> is a function that is differentiable on the interval <m>(a,b)</m> and <m>f'(x)\gt 0</m> for all <m>x</m> in the interval <m>(a,b)</m>, then <m>f</m> must be increasing on <m>(a,b)</m>.
+                </p>
+                <p>
+                    Similarly, if <m>f'(x)\lt 0</m> for all <m>x</m> in the interval <m>(a,b)</m>, then <m>f</m> must be decreasing on <m>(a,b)</m>.
+                </p>
+            </statement>
+        </theorem>
+        
+        <theorem xml:id="thm-OffByConstant"> 
+            <title>Equal Derivatives Correspond with Related Functions</title>
+            
+                    
             <statement>
                 <p>
                     For two functions <m>f</m> and <m>g</m>, both differentiable on <m>(a,b)</m>, if <m>f'(x)=g'(x)</m> for all <m>x</m>-values on <m>(a,b)</m>, then we know that <m>f(x)=g(x)+C</m> for some real number constant <m>C</m>. That is, the only differences in <m>f</m> and <m>g</m> are due to a difference in the constant term.
