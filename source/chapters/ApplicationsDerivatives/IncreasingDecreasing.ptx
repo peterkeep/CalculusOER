@@ -250,13 +250,13 @@
     <p>
       We'll look at two more examples, both of them using functions whose domain is <em>not</em> <m>(-\infty, \infty)</m>.
     </p>
-    <example>
+    <example xml:id="ex-StrangeDomains">
       <task>
         <statement>
           <p>
             Consider the function 
             <me>f(x) = \dfrac{x^2}{(x-3)^2}</me>.
-            Find domain of <m>f</m>, the critical points of <m>f</m>, and then the intervals where <m>f</m> is increasing/decreasing. Then, classify any critical points local maximums/minimums if necessary.
+            Find the domain of <m>f</m>, the critical points of <m>f</m>, and then the intervals where <m>f</m> is increasing/decreasing. Then, classify any critical points local maximums/minimums if necessary.
           </p>
         </statement>
         <hint>
@@ -356,7 +356,7 @@
           <p>
             Consider the function 
             <me>g(x) = \sqrt{x}-x+1</me>.
-            Find domain of <m>g</m>, the critical points of <m>g</m>, and then the intervals where <m>g</m> is increasing/decreasing. Then, classify any critical points local maximums/minimums if necessary.
+            Find the domain of <m>g</m>, the critical points of <m>g</m>, and then the intervals where <m>g</m> is increasing/decreasing. Then, classify any critical points local maximums/minimums if necessary.
           </p>
         </statement>
         <hint>
@@ -444,11 +444,25 @@
           </p>
         </answer>
       </task>
-
     </example>
+    <p>
+      So we have two things to notice:
+      <ol>
+        <li>
+          <p>
+            When we have some gap or missing spot in the domain of a function, that can still divide up the intervals where our function is increasing or decreasing! We should notice, though, that since this isn't actually a <em>point</em> on the curve of our function, it won't be a critical point and so we have to interpret it differently: we can't use the <xref ref="thm-FirstDerivativeTest" text="title"/>!
+          </p>
+        </li>
+        <li>
+          <p>
+            An ending point of an interval is a location where the derivative cannot exist! We could define a <em>one-sided derivative</em> (similar to how we defined one-sided continuity in <xref ref="def-ContinuousAtPoint"/>), but for now we'll just say that the derivative doesn't exist, and call those ending points critical points. That means that depending on the direction that a function goes away (or leading up to) that ending point, we can classify it as a local maximum or minimum.
+          </p>
+        </li>
+      </ol>
+      Lastly, just a couple of notes: in these little tables or charts (sometimes called <term>sign charts</term>, since they are showing the signs of the derivative), we'll use some shorthand notation. In <xref ref="ex-StrangeDomains"/>, we used "DNE" to mean that a derivative "does not exist" at a point. Similarly, we used <m>\va</m> to represent the vertical asymptote at that <m>x</m>-value (so that we didn't accidentally think it was a local maximum or minimum based on the signs of the derivative around it).
+    </p>
+    <p>
+      Moving forward, we'll use this same kind of analysis to think about how the derivative might be changing on these intervals. This rate of change of the slopes, the <term>second derivative</term>, will be a useful tool for gathering more information about how a function might be acting.
+    </p>
   </subsection>
-
-  
-  
-
 </section>
