@@ -1,0 +1,52 @@
+<activity xml:id="act-FDTGraphically" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>First Derivative Test Graphically</title>
+    <introduction>
+        <p>
+            Let's focus on looking at a picture of a derivative, <m>f'(x)</m>, and trying to collect information about the function <m>f(x)</m>. This is what we've done already, except that we've done it by thinking about the representation of <m>f'(x)</m> as a function rule written out with algebraic symbols. Here we'll focus on connecting all of that to the picture of the graphs.
+        </p>
+        <p>
+            For all of the following questions, refer to the plot below. You can add information with the hints whenever you need to. Don't reveal the picture of <m>f(x)</m> until you're really ready to check what you know.
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:1.6">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/FirstDerivativeTest.xml"/>
+            </slate>
+        </interactive>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Based on the graph of <m>f'(x)</m>, estimate the interval(s) of <m>x</m>-values where <m>f(x)</m> is increasing.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Based on the graph of <m>f'(x)</m>, estimate the interval(s) of <m>x</m>-values where <m>f(x)</m> is decreasing.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the <m>x</m>-values of the critical points of <m>f(x)</m>. Once you've estimated these, classify them as local maximums, local minimums, or neither. Explain your reasoning.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What do you think the graph of <m>f(x)</m> looks like? Do your best to sketch it or explain it before revealing it!
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Why could we estimate the <m>x</m>-values of the critical numbers of <m>f(x)</m>, but not find the actual coordinates? How come we can't find the <m>y</m>-value based on looking at the graph of <m>f'(x)</m>?
+            </p>
+        </statement>
+    </task>
+    
+</activity>

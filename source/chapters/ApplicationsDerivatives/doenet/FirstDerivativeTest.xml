@@ -1,0 +1,100 @@
+<!-- https://doenet.org/portfolioeditor/_Gauu2ktlWc6KV890faCno/_xIRikV6Yjl994V7wFD15F -->
+
+<setup>
+  <function name="F" styleNumber="6">x^3-3x</function>
+  <derivative name="f" styleNumber="2">$F</derivative>
+  <number name="a">-1.5</number>
+  <point name="point" styleNumber="2">($a, $$f($a))
+    <constraints>
+      <constrainTo>
+        $f
+      </constrainTo>
+      
+    </constraints>
+  </point>
+  <text name="fSign">
+    <conditionalContent>
+      <case condition="$$f($a)>0">
+        positive.
+      </case>
+      <case condition="$$f($a)<0">
+        negative.
+      </case>
+      <case condition="$$f($a)=0">
+        0
+      </case>
+    </conditionalContent>
+  </text>
+  <text name="FDirection">
+    <conditionalContent>
+      <case condition="$$f($a)>0">
+        increasing.
+      </case>
+      <case condition="$$f($a)<0">
+        decreasing.
+      </case>
+      <case condition="$$f($a)=0">
+        ...
+      </case>
+    </conditionalContent>
+  </text>
+  <text name="FLabel">
+    <conditionalContent>
+      <case condition="$ToggleF">Hide Graph of f(x)</case>
+      <else>Show Graph of f(x)</else>
+    </conditionalContent>
+  </text>
+</setup>
+
+<p><em>Instructions:</em> Move the point on the graph of <m>f'(x)</m> and connect it to the behavior of <m>f(x)</m>. Reveal the hints to think more about interpreting what you see on the graph of <m>f'(x)</m>. Finally, click the button to show the graph of <m>f(x)</m> to check your understanding.</p> 
+
+<sideBySide>
+  <p><me>\text{Graph of } f'(x)</me></p>
+
+  <conditionalContent condition="$ToggleF">
+    <p><me>\text{Graph of } f(x)</me></p>
+  </conditionalContent>
+</sideBySide>
+
+<sideBySide>
+  <graph size="small" xmin="-2" xmax="2" ymin="-4" ymax="5" fixAxes>
+    $f
+    $point
+  </graph>
+
+  <conditionalContent condition="$ToggleF">
+    <graph size="small" xmin="-2" xmax="2" ymin="-3" ymax="3" fixAxes>
+      $F
+      <function domain="(-infty,$a]">$F</function>
+      <point>($a, $$F($a))
+        <constraints>
+          <constrainTo>
+            $F
+          </constrainTo>
+        </constraints>
+      </point>
+      <function domain="[$a-1/2, $a+1/2]" styleNumber="2">$$f($a)(x-$a)+$$F($a)</function>
+    </graph>  
+  </conditionalContent>
+</sideBySide>
+<aside>
+  <title>Hint: How do we interpret the height of the point on <m>f'(x)</m>?</title>
+  <sideBySide>
+    <p>The value of <m>f'</m> at this <m>x</m>-value is <m>$$f($a)</m>.</p>
+
+    <p>The slope of <m>f(x)</m> at this <m>x</m>-value is <m>$$f($a)</m>.</p>
+  </sideBySide>
+</aside>
+
+<aside>
+  <title>Hint: What do we learn about <m>f(x)</m> from the graph of <m>f'(x)</m>?</title>
+  <sideBySide>
+    <p>The value of <m>f'</m> at this <m>x</m>-value is $fSign</p>
+
+    <p>The direction of <m>f</m> is $FDirection</p>
+  </sideBySide>
+</aside>
+<p><term>Check your understanding:</term> Click the button to reveal the graph of <m>f(x)</m>.</p>
+<booleanInput name="ToggleF" asToggleButton>
+  <label>$FLabel</label>
+</booleanInput>

@@ -245,6 +245,18 @@
   </statement>
   </theorem>
   </subsection>
+
+  <subsection xml:id="subsec-FDTGraphically">
+    <title>Using the Graph of the First Derivative</title>
+    <xi:include href="./activities/act-FDTGraphically.ptx" />
+    <p>
+      Reading the graphs of functions is, in general, an important skill. But it's an especially important idea to be able to read and understand the graph of a function like a derivative and then interpret what we are seeing into some other context.
+    </p>
+    <p>
+      So for us to really excel here, we'll want to focus on the fact that a first derivative tells about the <em>slope</em> or <em>direction</em> of a function. Whatever <m>y</m>-values we find on the graph of a <m>f'(x)</m> needs to be interpreted as a slope or rate of change of <m>f(x)</m>. Then we can string these slopes or rates of changes together to try to think about the behavior of <m>f(x)</m> by knowing how the <m>y</m>-values are changing as we move along the curve of <m>y=f(x)</m>!
+    </p>
+  </subsection>
+
   <subsection xml:id="subsec-StrangeDomains">
     <title>Strange Domains</title>
     <p>
