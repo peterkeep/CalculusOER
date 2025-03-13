@@ -1024,7 +1024,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.3",
   "title": "Concavity",
-  "body": " Concavity  Text of section.  "
+  "body": " Concavity   Compare These Curves   Consider the two curves pictured below. Compare and contrast them. What characteristics of these functions are the same? What characteristics of these functions are different?     Explain the similarities you found by only talking about the slopes of each function (the values of and ).    Explain the differences you found by only talking about the slopes of each function (the values of and ).    Make a conjecture about the rate of change of both and . We'll call these things second derivative functions, and .    "
+},
+{
+  "id": "act-CompareCurves",
+  "level": "2",
+  "url": "sec-Concavity.html#act-CompareCurves",
+  "type": "Activity",
+  "number": "4.3.1",
+  "title": "Compare These Curves.",
+  "body": " Compare These Curves   Consider the two curves pictured below. Compare and contrast them. What characteristics of these functions are the same? What characteristics of these functions are different?     Explain the similarities you found by only talking about the slopes of each function (the values of and ).    Explain the differences you found by only talking about the slopes of each function (the values of and ).    Make a conjecture about the rate of change of both and . We'll call these things second derivative functions, and .   "
 },
 {
   "id": "sec-GlobalMaxMins",
