@@ -1,6 +1,51 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
+  "id": "frontmatter-3",
+  "level": "1",
+  "url": "frontmatter-3.html",
+  "type": "Colophon",
+  "number": "",
+  "title": "Colophon",
+  "body": "  "
+},
+{
+  "id": "acknowledements",
+  "level": "1",
+  "url": "acknowledements.html",
+  "type": "Acknowledgements",
+  "number": "",
+  "title": "Acknowledgements",
+  "body": " Acknowledgements    "
+},
+{
+  "id": "Preface-NoteOnAI",
+  "level": "1",
+  "url": "Preface-NoteOnAI.html",
+  "type": "Preface",
+  "number": "",
+  "title": "Disclosure about the Use of AI",
+  "body": " Disclosure about the Use of AI  This book has been lovingly written by a human.  Me.  Peter Keep.  I have used a lot of different tools, both for inspiration and for actually creating resources for this book. None of those tools has involved any form of generative AI.  I could list all of the ways that I think using generative AI in education is, at minimum, problematic. More pointedly, I believe that it is unethical. More broadly, I believe that the use of generative AI for any use-case that I have encountered to be unethical.  In my classes, I try to help students realize the joy and value of working at something and creating something and struggling with something and knowing something. Giving worth to something, even an imperfect thing. Celebrating our accomplishments, even when (especially when?) there is room to grow in those accomplishments. And so I have taken that advice in the creation of this book. I have created a book that is definitely not perfect. I have struggled to write it. There are parts of it that could be (need to be) improved.  But I was the one that created it. I struggled with it. I know it.  I hope that this book can also be a useful tool for others to use, and I have left the copyright to be about as open as possible. Others can take this, use it, can change it, add to it, subtract from it, etc.  In leaving this copyright open for others to change this book, I cannot guarantee that every version of this book is free from the mindless and joyless output from some Large Language Model. But I want to leave this note up in hopes that anyone who does inject some output from some generative AI product into this book will take it down. If this note, or some statement similar to it, is not present in the version of the book you are accessing, please be cautious. Find a different calculus textbook to read!  Find something written by a human. Find the words of some other mathematician who tries, maybe imperfectly, to share the ideas of calculus.  Teaching and learning is about humans communicating with each other, and only humans can do that.  "
+},
+{
+  "id": "preface-ForInstructors",
+  "level": "1",
+  "url": "preface-ForInstructors.html",
+  "type": "Preface",
+  "number": "",
+  "title": "Notes for Instructors",
+  "body": " Notes for Instructors    "
+},
+{
+  "id": "preface-ForStudents",
+  "level": "1",
+  "url": "preface-ForStudents.html",
+  "type": "Preface",
+  "number": "",
+  "title": "Notes for Students",
+  "body": " Notes for Students    "
+},
+{
   "id": "sec-IntroLimits",
   "level": "1",
   "url": "sec-IntroLimits.html",
