@@ -14,24 +14,28 @@
     <date>
       Last revised: <today />
     </date>
+    <website>
+      <url href="https://www.discovercalculus.com">DiscoverCalculus.com</url>
+    </website>
+    <copyright>
+      <year>2024<ndash />2025</year>
+      <holder>Peter Keep</holder>
+      <shortlicense> This work is licensed under the Creative Commons Attribution-By 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by/4.0/" visual="creativecommons.org/licenses/by/4.0"> CreativeCommons.org</url>
+      </shortlicense>
+    </copyright>
   </bibinfo>
 
   <titlepage>
     <titlepage-items/>
   </titlepage>
 
-  <!-- <colophon>
-
-    <website>
-      <url href="https://pretextbook.org">My Website</url>
-    </website>
-
-    <copyright>
-      <year>2020<ndash />2023</year>
-      <holder>You</holder>
-      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
-      </shortlicense>
-    </copyright>
-  </colophon> -->
+  <colophon>
+    <colophon-items/>
+  </colophon>
+  <xi:include href="./prefaces/Acknowledgements.ptx" />
+  <xi:include href="./prefaces/NoteOnAI.ptx" />
+  <xi:include href="./prefaces/ForInstructors.ptx" />
+  <xi:include href="./prefaces/ForStudents.ptx" />
+  
 </frontmatter>
 
