@@ -1,0 +1,235 @@
+<activity xml:id="axt-FindingConcavity" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Finding a Function's Concavity</title>
+    <introduction>
+        <p>
+            We're going to consider a pretty complicated function to work with, and employ a strategy similar to what we did with the first derivative:
+            <ul>
+                <li>
+                    <p>
+                        Our goal is to find the sign of <m>f''(x)</m> on different intervals and where that sign <em>changes</em>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        To do' this, we'll find the places that <m>f''(x)=0</m> or where <m>f''(x)</m> doesn't exist. These are the critical points of <m>f'(x)</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        From there, we can build a little sign chart, where we split up the <m>x</m>-values based on the domain of <m>f</m> and the critical numbers of <m>f'</m>. Then we can attach each interval of <m>x</m>-values with a sign of the second derivative, <m>f''</m>, on that interval.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We'll interpret these signs. For any intervals where <m>f''(x)\gt 0</m>, we know that <m>f'(x)</m> must be increasing and so <m>f(x)</m> is concave up. Similarly, for any intervals where <m>f''(x)\lt 0</m>, we know that <m>f'(x)</m> must be decreasing and so <m>f(x)</m> is concave down. 
+                    </p>
+                </li>
+            </ul>
+            Let's consider the function
+            <me>
+                f(x)=\ln(x^2+1) - \dfrac{x^2}{2}
+            </me>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Find the first derivative, <m>f'(x)</m>, and use some algebra to confirm that it is really:
+                <me>
+                    f'(x)= - \dfrac{x(x+1)(x-1)}{x^2+1}
+                </me>.
+                While we have this first derivative, we <em>could</em> find the critical points of <m>f(x)</m> and then classify those critical points using the <xref ref="thm-FirstDerivativeTest" text="title"/>.
+            </p>
+            <p>
+                For our goal of finding the intervals where <m>f(x)</m> is concave up and concave down, and then finding the inflection points of <m>f</m>, let's move on.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the second derivative, <m>f''(x)</m>, and confirm that this is really:
+                <me>
+                    f''(x)=-\dfrac{x^4+4x^2-1}{(x^2+1)^2}
+                </me>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Our goal is to find the <m>x</m>-values where <m>f''(x)=0</m> or where <m>f''(x)</m> doesn't exist.
+            </p>
+            <p>
+                Note that in order to find where <m>f''(x)=0</m>, we are really looking at the <m>x</m>-values that make the numerator <m>0</m>:
+                <me>
+                    x^4+4x^2-1=0
+                </me>.
+                Then, to find where <m>f''(x)</m> doesn't exist, we are finding the <m>x</m>-values that make the denominator <m>0</m>:
+                <me>
+                    (x^2+1)^2=0
+                </me>.
+                Solve these equations.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Here are two strategies for solving <m>x^4+4x^2-1=0</m>:
+                <ol>
+                    <li>
+                        <p>
+                            Write some sort of substitution where <m>u=x^2</m>
+                            <md>
+                                <mrow>(x^2)^2 + 4(x^2)-1 \amp =0</mrow>
+                                <mrow>u^2+4u+1 \amp =0</mrow>
+                            </md>
+                            Now solve this for <m>u</m> using the quadratic formula. Note that in the end, the two values you get will be possibilities for <m>u=x^2</m>. Make sure you get your answer to be in terms of <m>x</m>!
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            A similar technique (really the same thing) is to "complete the square" and write your equation this way:
+                            <me>
+                                (x^2+2)^2-5=0
+                            </me>.
+                            Now solve for <m>x</m> in a natural way.
+                        </p>
+                        <p>
+                            Something to note here is that <m>x^2+2\gt 0</m>, so <m>x^2+2 = \sqrt{5}</m> (and notably not <m>-\sqrt{5}</m>).
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </hint>
+        <answer>
+            <p>
+                You should get that the critical points of <m>f'(x)</m> are at <m>x=-\sqrt{\sqrt{5}-2}</m> and <m>x=\sqrt{\sqrt{5}-2}</m>.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                You have two critical points of <m>f'(x)</m> (let's just call them <m>x_1</m> and <m>x_2</m>). These are possible inflection points of <m>f(x)</m>, but we need to check to see if the concavity changes at these points.
+            </p>
+            <p>
+                Fill in the following sign chart and interpret.
+            </p>
+            <p>
+                 <tabular>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <row bottom="minor">
+                <cell><p><m>x</m></p></cell>
+                <cell><p><m>(-\infty, x_1)</m></p></cell>
+                <cell><p><m>x_1</m></p></cell>
+                <cell><p><m>(x_1,x_2)</m></p></cell>
+                <cell><p><m>x_2</m></p></cell>
+                <cell><p><m>(x_2,\infty)</m></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>f''</m></p></cell>
+                <cell><p><m></m></p></cell>
+                <cell><p><m></m></p></cell>
+                <cell><p><m></m></p></cell>
+                <cell><p><m></m></p></cell>
+                <cell><p><m></m></p></cell>
+              </row>
+              <row>
+                <cell><p><m>f</m></p></cell>
+                <cell><p><m></m></p></cell>
+                <cell><p><m></m></p></cell>
+                <cell><p><m></m></p></cell>
+                <cell><p><m></m></p></cell>
+                <cell><p><m></m></p></cell>
+              </row>
+              <row bottom="medium">
+                <cell></cell>
+                <cell><p></p></cell>
+                <cell><p></p></cell>
+                <cell><p></p></cell>
+                <cell><p></p></cell>
+                <cell><p></p></cell>
+              </row>
+            </tabular>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <tabular>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <col width="16%" top="medium" halign="center"/>
+              <row bottom="minor">
+                <cell><p><m>x</m></p></cell>
+                <cell><p><m>(-\infty, x_1)</m></p></cell>
+                <cell><p><m>x_1</m></p></cell>
+                <cell><p><m>(x_1,x_2)</m></p></cell>
+                <cell><p><m>x_2</m></p></cell>
+                <cell><p><m>(x_2,\infty)</m></p></cell>
+              </row>
+              <row bottom="minor">
+                <cell><p><m>f''</m></p></cell>
+                <cell><p><m>\ominus</m></p></cell>
+                <cell><p><m>0</m></p></cell>
+                <cell><p><m>\oplus</m></p></cell>
+                <cell><p><m>0</m></p></cell>
+                <cell><p><m>\ominus</m></p></cell>
+              </row>
+              <row>
+                <cell><p><m>f</m></p></cell>
+                <cell><p><m>\frown</m></p></cell>
+                <cell><p><m></m></p></cell>
+                <cell><p><m>\smile</m></p></cell>
+                <cell><p><m></m></p></cell>
+                <cell><p><m>\frown</m></p></cell>
+              </row>
+              <row bottom="medium">
+                <cell></cell>
+                <cell><p>concave down</p></cell>
+                <cell><p>inflection point</p></cell>
+                <cell><p>concave up</p></cell>
+                <cell><p>inflection point</p></cell>
+                <cell><p>concave down</p></cell>
+              </row>
+            </tabular>
+            </p>
+        </answer>
+    </task>
+    <conclusion>
+        <p>
+            Let's confirm what we've just calculated graphically. Below, we have three graphs: 
+            <ol>
+                <li>
+                    <p>
+                        <m>f(x) = \ln(x^2+1)-\dfrac{x^2}{2}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>f'(x)=- \dfrac{x(x+1)(x-1)}{x^2+1}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>f''(x) = -\dfrac{x^4+4x^2-1}{(x^2+1)^2}</m>
+                    </p>
+                </li>
+            </ol>
+            Move the point on any graph and make sure the statements about signs, directions, and concavity match what you found! You should notice that signs of the first and second derivative change at the local maximums/minimums and the inflection points that we found.
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:1.8">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/VisualizingSecondDerivative.xml"/>
+            </slate>
+        </interactive>
+    </conclusion>
+    
+</activity>
