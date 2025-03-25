@@ -1,0 +1,233 @@
+<exercises xml:id="ex-NetChange">
+    <exercise>
+        <introduction>
+            <p>
+                Explain the following terms in reference to an object moving along a straight path from time <m>t=a</m> to time <m>t=b</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <term>Position</term> of the object at time <m>t</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <term>Displacement</term> of the object.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <term>Distance</term> traveled by the object.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <term>Velocity</term> of the object at time <m>t</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <term>Speed</term> of the object at time <m>t</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the graph of a velocity function, <m>v(t)</m>, of some object moving along a line on the time interval <m>[0,7]</m>.
+            </p>
+            <figure xml:id="ex-Velovity">
+                <caption></caption>
+                <image source="./ApplicationsIntegrals/ex-Velocity.png" width="50%">
+                    <shortdescription>A polynomial function that starts at (0,0), decreases down to some negative output around t=2, increases to (4,0) and then continues to some positive output before decreasing and ending at (7,0).</shortdescription>
+                </image>
+            </figure>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Do you expect the displacement of the object from <m>t=0</m> to <m>t=7</m> to be positive, negative, or 0?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Write two different expressions that represent the total displacement of the object from <m>t=0</m> to <m>t=7</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Do you expect the distance traveled by the object from <m>t=0</m> to <m>t=7</m> to be positive, negative, or 0?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Write two different expressions that represent the total distance traveled by the object from <m>t=0</m> to <m>t=7</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Let's consider an animal running along a straight path with the velocity function:
+                <md>
+                    <mrow>v(t) \amp = \frac{t^4}{10} - t^3 + \frac{27t^2}{10} - \frac{9t}{5}</mrow>
+                    <mrow> \amp = \frac{t}{10}(t-1)(t-3)(t-6)</mrow>
+                </md>
+                on the time interval <m>[0,6]</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    What is the total displacement of the animal on the time interval <m>[0,1]</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What is the total displacement of the animal on the time interval <m>[1,3]</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What is the total displacement of the animal on the time interval <m>[3,6]</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What is the total displacement of the animal on the time interval <m>[0,6]</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What is the total distance traveled by the animal on the time interval <m>[0,6]</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Write a short summary of the animal's movement, including notes about direction, speed, and where the animal travels.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider an object with velocity function <m>v(t)=t^2-4t+2</m> on the interval <m>[0,100]</m> with the initial position <m>s(0)=3</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Determine the position function, <m>s(t)</m>, for <m>0\leq t\leq 100</m> using the <xref ref="thm-FuturePosition" text="title"/>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Determine the position function, <m>s(t)</m>, for <m>0\leq t\leq 100</m> using the <xref ref="strat-InitialValueProblems" text="title"/> strategy.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Compare the results from both methods. Explain why these are equivalent.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider an object with an acceleration function <m>a(t) = t+\sin(2\pi t)</m> for <m>t\geq 0</m> with <m>v(0)=5</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Determine the velocity function, <m>v(t)</m>, for <m>t\geq 0</m> using the <xref ref="thm-FuturePosition" text="title"/>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Determine the velocity function, <m>v(t)</m>, for <m>t\geq 0</m> using the <xref ref="strat-InitialValueProblems" text="title"/> strategy.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Can you obtain the position function, <m>s(t)</m>? Explain why or why not, based on the information given.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                During a brake test for a heavy truck, the truck decelerates from an initial velocity of 88 ft/s with the acceleration function <m>a(t) = -17</m> ft/s². Assume that the initial position of the truck is <m>s(0)=0</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Find the velocity function for the truck.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    When does the truck stop? In this situation, the truck won't have a negative velocity (since it's just braking and not eventually going in reverse). What time interval is the velocity function relevant on?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What is the total displacement of the truck on this time interval?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Safety standards say that for a truck like this, it needs to be able to stop (from a speed of 88ft/s) in, at most, 200 feet. 
+                </p>
+                <p>
+                    Do we need to make changes to the braking mechanism, in order to have the acceleration function change? If so, what does the acceleration need to be (assuming it is constant and we are just replacing it with a new negative number)?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
