@@ -1,0 +1,106 @@
+<exercises xml:id="ex-TrigSub">
+    <exercise>
+        <p>
+            Explain how trigonometric substitution helps to convert sums or differences of squares to products of squares. Why is this helpful? When is it helpful?
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Draw a right triangle with <m>\sqrt{x^2-4}</m> as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing <m>\sqrt{x^2-4}</m>?
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Draw a right triangle with <m>\sqrt{4-x^2}</m> as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing <m>\sqrt{4-x^2}</m>?
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Draw a right triangle with <m>\sqrt{x^2+4}</m> as one of the hypotenuse. What are the lengths of the other two sides? What would be an appropriate substitution for an integral containing <m>\sqrt{x^2+4}</m>?
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Integrate the following using an appropriate trigonometric substitution.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \frac{x^2}{\sqrt{16-x^2}}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \frac{\sqrt{1-x^2}}{x^2}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \frac{1}{(9x^2+1)^{3/2}}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \frac{\sqrt{x^2-1}}{x}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \sqrt{49-x^2}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \frac{1}{x(x^2-1)^{3/2}}\;dx</m> (for <m>x\gt 1</m>)
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \frac{x^3}{\sqrt{4+x^2}}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \frac{x^2}{(x^2+81)^2}\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Complete the square and then integrate.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \frac{1}{x^2-8x+62}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \frac{x^2-8x+16}{(-x^2+8x+9)^{3/2}}\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
