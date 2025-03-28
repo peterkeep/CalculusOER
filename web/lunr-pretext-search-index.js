@@ -2032,7 +2032,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.5",
   "title": "Integrating Powers of Trigonometric Functions",
-  "body": " Integrating Powers of Trigonometric Functions   Let's remind ourselves of two example problems that we've done in the past.  In , we performed a -substitution, but needed to work to re-write our whole integrand in terms of . Specifically, we found that in the numerator, there was an , but . We were substituting out a linear function of in the numerator, but the actual function was cubic. This wasn't a problem: we re-wrote , and noticed that the extra was able to be substituted, since we could re-write out subsitution rule: we noted that is equivalent to . This meant that even though we had an extra factor of \"in\" the part that we were using for substituting in the differential , we were still able to translate the whole function to be written in terms of .  Then, more recently, in , we noted that we could use a mix of methods to integrate this:  One on hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that's what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a -substitution was also appropriate.  In this section, we'll explore more combinations of trigonometric functions and build a strategy for antidifferentiating them that includes some ideas from both of these previous examples.    Building a Strategy for Powers of Sines and Cosines   Compare and Contrast   Let's do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:     Consider the first integral, . Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.   It might be helpful to notice that can be re-written as . Does this help reveal something important about the structure of this integrand?    Now consider the second integral, . Does the same integration strategy work here? What happens when you apply the same thing?   Let again, and . What happens with the cosine functions? How many are \"left\" after applying our substitution?    We know that and are related to each other through derivatives (each is the derivative of the other, up to a negative). Is there some other connection that we have between these functions? We might especially notice that we have a left over in our integral. Can we write this in terms of , so that we can write it in terms of ?   We have a trigonometric identity (the Pythagorean Identity): .    Why would this strategy not have worked if we were looking at the integrals or ? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?     Integrating Powers of Sine and Cosine  For integrals in the form where and are real number exponents:   If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If both and are even, we can either use or use the following power-reducing trigonometric identities:       A strange note, here, is that we typically pick our -substitution based on looking to see a suitable candidate for : we look for functions that are composed \"inside\" of other functions or we look for a function whose derivative is in the integral (the \"function-derivative pair\" that we talk about in ). Here, though, we're selecting our substitution based on : we're looking to see which function we can set aside one copy of for the differential, and then have an even power left over so that we can apply the Pythagorean Identity to translate the rest.    Building a Strategy for Powers of Secants and Tangents   Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .    Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which is also written as , with , or , let's divide everything in the Pythagorean Identity by :         Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.   Here, . We'll also use .        Now try the integral again, this time using as your substitution.   Now , and we'll use the same Pythagorean identity, just re-written as .        For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?   Notice we had an even exponent on the function, but an odd exponent on the function.    Which substitution would be best for the integral . Why?    Which substitution would be best for the integral . Why?     Integrating Powers of Secant and Tangent  For integrals in the form where and are real number exponents:   If , the exponent on , is odd, we can use and . Then we can apply the Pythagorean Identity .    If , the exponent on , is even, we can use and . Then we can apply the Pythagorean Identity .    If is odd and is even, we can use .       "
+  "body": " Integrating Powers of Trigonometric Functions   Let's remind ourselves of two example problems that we've done in the past.  In , we performed a -substitution, but needed to work to re-write our whole integrand in terms of . Specifically, we found that in the numerator, there was an , but . We were substituting out a linear function of in the numerator, but the actual function was cubic. This wasn't a problem: we re-wrote , and noticed that the extra was able to be substituted, since we could re-write out subsitution rule: we noted that is equivalent to . This meant that even though we had an extra factor of \"in\" the part that we were using for substituting in the differential , we were still able to translate the whole function to be written in terms of .  Then, more recently, in , we noted that we could use a mix of methods to integrate this:  One on hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that's what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a -substitution was also appropriate.  In this section, we'll explore more combinations of trigonometric functions and build a strategy for antidifferentiating them that includes some ideas from both of these previous examples.    Building a Strategy for Powers of Sines and Cosines   Compare and Contrast   Let's do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:     Consider the first integral, . Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.   It might be helpful to notice that can be re-written as . Does this help reveal something important about the structure of this integrand?    Now consider the second integral, . Does the same integration strategy work here? What happens when you apply the same thing?   Let again, and . What happens with the cosine functions? How many are \"left\" after applying our substitution?    We know that and are related to each other through derivatives (each is the derivative of the other, up to a negative). Is there some other connection that we have between these functions? We might especially notice that we have a left over in our integral. Can we write this in terms of , so that we can write it in terms of ?   We have a trigonometric identity (the Pythagorean Identity): .    Why would this strategy not have worked if we were looking at the integrals or ? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?     Integrating Powers of Sine and Cosine  For integrals in the form where and are real number exponents:   If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If both and are even, we can either use or use the following power-reducing trigonometric identities:       A strange note, here, is that we typically pick our -substitution based on looking to see a suitable candidate for : we look for functions that are composed \"inside\" of other functions or we look for a function whose derivative is in the integral (the \"function-derivative pair\" that we talk about in ). Here, though, we're selecting our substitution based on : we're looking to see which function we can set aside one copy of for the differential, and then have an even power left over so that we can apply the Pythagorean Identity to translate the rest.    Building a Strategy for Powers of Secants and Tangents   Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .    Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which is also written as , with , or , let's divide everything in the Pythagorean Identity by :         Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.   Here, . We'll also use .        Now try the integral again, this time using as your substitution.   Now , and we'll use the same Pythagorean identity, just re-written as .        For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?   Notice we had an even exponent on the function, but an odd exponent on the function.    Which substitution would be best for the integral . Why?    Which substitution would be best for the integral . Why?     Integrating Powers of Secant and Tangent  For integrals in the form where and are real number exponents:   If , the exponent on , is odd, we can use and . Then we can apply the Pythagorean Identity .    If , the exponent on , is even, we can use and . Then we can apply the Pythagorean Identity .    If is odd and is even, we can use .        For an integral , how do you know whether to use or as the substitution?  For an integral , how do you know whether to use or as the substitution?   Integrate the following.                            Integrate the following.                    Consider the integral .   Use the trigonometric identity: to integrate.   Use integration by parts to integrate.   Check out    Which of these techniques do you think was easier to implement and use? Why is that?    Consider the integral .   Use the trigonometric identity: to integrate.   Use integration by parts to integrate.   Try picking and .   Which of these techniques did you prefer? Why?    Integrate the following integrals.       Use a Pythagorean Identity to convert this to be written in terms of secant functions.       Integration by parts works well here, and it's helpful to know the derivative of and an antiderivative of .       You can technically use either or here.        "
 },
 {
   "id": "act-CompareContrast",
@@ -2053,13 +2053,130 @@ var ptx_lunr_docs = [
   "body": " Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .    Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which is also written as , with , or , let's divide everything in the Pythagorean Identity by :         Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.   Here, . We'll also use .        Now try the integral again, this time using as your substitution.   Now , and we'll use the same Pythagorean identity, just re-written as .        For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?   Notice we had an even exponent on the function, but an odd exponent on the function.    Which substitution would be best for the integral . Why?    Which substitution would be best for the integral . Why?   "
 },
 {
+  "id": "ex-PowersOfTrig-1",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-1",
+  "type": "Exercise",
+  "number": "7.5.3.1",
+  "title": "",
+  "body": "For an integral , how do you know whether to use or as the substitution? "
+},
+{
+  "id": "ex-PowersOfTrig-2",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-2",
+  "type": "Exercise",
+  "number": "7.5.3.2",
+  "title": "",
+  "body": "For an integral , how do you know whether to use or as the substitution? "
+},
+{
+  "id": "ex-PowersOfTrig-3",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-3",
+  "type": "Exercise",
+  "number": "7.5.3.3",
+  "title": "",
+  "body": " Integrate the following.                          "
+},
+{
+  "id": "ex-PowersOfTrig-4",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-4",
+  "type": "Exercise",
+  "number": "7.5.3.4",
+  "title": "",
+  "body": " Integrate the following.                  "
+},
+{
+  "id": "ex-PowersOfTrig-5",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-5",
+  "type": "Exercise",
+  "number": "7.5.3.5",
+  "title": "",
+  "body": " Consider the integral .   Use the trigonometric identity: to integrate.   Use integration by parts to integrate.   Check out    Which of these techniques do you think was easier to implement and use? Why is that?  "
+},
+{
+  "id": "ex-PowersOfTrig-6",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-6",
+  "type": "Exercise",
+  "number": "7.5.3.6",
+  "title": "",
+  "body": " Consider the integral .   Use the trigonometric identity: to integrate.   Use integration by parts to integrate.   Try picking and .   Which of these techniques did you prefer? Why?  "
+},
+{
+  "id": "ex-PowersOfTrig-7",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-7",
+  "type": "Exercise",
+  "number": "7.5.3.7",
+  "title": "",
+  "body": " Integrate the following integrals.       Use a Pythagorean Identity to convert this to be written in terms of secant functions.       Integration by parts works well here, and it's helpful to know the derivative of and an antiderivative of .       You can technically use either or here.      "
+},
+{
   "id": "sec-TrigSub",
   "level": "1",
   "url": "sec-TrigSub.html",
   "type": "Section",
   "number": "7.6",
   "title": "Trigonometric Substitution",
-  "body": " Trigonometric Substitution  Text of section.  "
+  "body": " Trigonometric Substitution  Text of section.   Explain how trigonometric substitution helps to convert sums or differences of squares to products of squares. Why is this helpful? When is it helpful?  Draw a right triangle with as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing ?  Draw a right triangle with as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing ?  Draw a right triangle with as one of the hypotenuse. What are the lengths of the other two sides? What would be an appropriate substitution for an integral containing ?   Integrate the following using an appropriate trigonometric substitution.                        (for )            Complete the square and then integrate.            "
+},
+{
+  "id": "ex-TrigSub-1",
+  "level": "2",
+  "url": "sec-TrigSub.html#ex-TrigSub-1",
+  "type": "Exercise",
+  "number": "7.6.1",
+  "title": "",
+  "body": "Explain how trigonometric substitution helps to convert sums or differences of squares to products of squares. Why is this helpful? When is it helpful? "
+},
+{
+  "id": "ex-TrigSub-2",
+  "level": "2",
+  "url": "sec-TrigSub.html#ex-TrigSub-2",
+  "type": "Exercise",
+  "number": "7.6.2",
+  "title": "",
+  "body": "Draw a right triangle with as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing ? "
+},
+{
+  "id": "ex-TrigSub-3",
+  "level": "2",
+  "url": "sec-TrigSub.html#ex-TrigSub-3",
+  "type": "Exercise",
+  "number": "7.6.3",
+  "title": "",
+  "body": "Draw a right triangle with as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing ? "
+},
+{
+  "id": "ex-TrigSub-4",
+  "level": "2",
+  "url": "sec-TrigSub.html#ex-TrigSub-4",
+  "type": "Exercise",
+  "number": "7.6.4",
+  "title": "",
+  "body": "Draw a right triangle with as one of the hypotenuse. What are the lengths of the other two sides? What would be an appropriate substitution for an integral containing ? "
+},
+{
+  "id": "ex-TrigSub-5",
+  "level": "2",
+  "url": "sec-TrigSub.html#ex-TrigSub-5",
+  "type": "Exercise",
+  "number": "7.6.5",
+  "title": "",
+  "body": " Integrate the following using an appropriate trigonometric substitution.                        (for )          "
+},
+{
+  "id": "ex-TrigSub-6",
+  "level": "2",
+  "url": "sec-TrigSub.html#ex-TrigSub-6",
+  "type": "Exercise",
+  "number": "7.6.6",
+  "title": "",
+  "body": " Complete the square and then integrate.          "
 },
 {
   "id": "sec-PartialFractions",
@@ -2068,7 +2185,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.7",
   "title": "Partial Fractions",
-  "body": " Partial Fractions   Comparing Rational Integrands   Try to integrate the following: . Explain what about this integral makes things very difficult.   Annoyingly, you can write this as: . Now explain why the second integral is difficult.    Confirm that .    Try to integrate the following: .    Which integral of the two would you rather integrate? Why?    "
+  "body": " Partial Fractions   Comparing Rational Integrands   We're going to compare three integrals:       Start with the first integral: . How would you approach integrating this?   This is a constant over a quadratic: can you complete the square?    Try the same tactic on the second integral: . You don't need to complete this integral, but think about how you might proceed.   Check the structure of the denominator when you complete the square: since you don't end up with a sum of squares, you can't use the inverse tangent setup. You'll need to do a trig substitution instead...    Think about the third integral: . How would you integrate this?    The third integral is unique from the other two in that is has two terms. Let's combine them together to see how we could write this integral to compare it more closely to the other two.  Subtract using common denominators and compare your re-written integral to the other two.    Which of these integrals and\/or representations of an integral is easiest to work with? Which one is most annoying to work with? Why?    "
 },
 {
   "id": "act-PartialFractionCompare",
@@ -2077,7 +2194,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "7.7.1",
   "title": "Comparing Rational Integrands.",
-  "body": " Comparing Rational Integrands   Try to integrate the following: . Explain what about this integral makes things very difficult.   Annoyingly, you can write this as: . Now explain why the second integral is difficult.    Confirm that .    Try to integrate the following: .    Which integral of the two would you rather integrate? Why?   "
+  "body": " Comparing Rational Integrands   We're going to compare three integrals:       Start with the first integral: . How would you approach integrating this?   This is a constant over a quadratic: can you complete the square?    Try the same tactic on the second integral: . You don't need to complete this integral, but think about how you might proceed.   Check the structure of the denominator when you complete the square: since you don't end up with a sum of squares, you can't use the inverse tangent setup. You'll need to do a trig substitution instead...    Think about the third integral: . How would you integrate this?    The third integral is unique from the other two in that is has two terms. Let's combine them together to see how we could write this integral to compare it more closely to the other two.  Subtract using common denominators and compare your re-written integral to the other two.    Which of these integrals and\/or representations of an integral is easiest to work with? Which one is most annoying to work with? Why?   "
 },
 {
   "id": "sec-IntroSequences",

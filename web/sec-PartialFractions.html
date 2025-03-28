@@ -395,9 +395,13 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#subsec-StrategySinesCosines" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Building a Strategy for Powers of Sines and Cosines</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#subsec-StrategySecantsTanges" class="internal"><span class="codenumber">7.5.2</span> <span class="title">Building a Strategy for Powers of Secants and Tangents</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#ex-PowersOfTrig" class="internal"><span class="codenumber">7.5.3</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-TrigSub.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Trigonometric Substitution</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-TrigSub.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Trigonometric Substitution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-TrigSub.html#ex-TrigSub" class="internal"><span class="codenumber">7.6</span> <span class="title">Practice Problems</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-PartialFractions.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Partial Fractions</span></a></div></li>
 </ul>
 </li>
@@ -483,42 +487,56 @@ eBookConfig.enable_chatcodes =  false;
 <article class="activity project-like" id="act-PartialFractionCompare"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.7.1</span><span class="period">.</span><span class="space"> </span><span class="title">Comparing Rational Integrands.</span>
 </h3>
-<article class="task exercise-like" id="act-PartialFractionCompare-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para logical" id="act-PartialFractionCompare-2-1-1">
-<div class="para">Try to integrate the following:</div>
+<div class="introduction" id="act-PartialFractionCompare-2"><div class="para logical" id="act-PartialFractionCompare-2-1">
+<div class="para">We’re going to compare three integrals:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int \frac{9x+6}{x^2+3x-4}\;dx\text{.}
+\int \frac{2}{x^2+4x+5}\;dx
 \end{equation*}
 </div>
-<div class="para">Explain what about this integral makes things very difficult.</div>
-</div>
-<div class="solutions"><details id="act-PartialFractionCompare-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-PartialFractionCompare-2-2-1">
-<div class="para">Annoyingly, you can write this as:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{9}{2}\int \frac{2x+3 - \frac{5}{3}}{x^2+3x-4}\;dx = \frac{9}{2}\int \frac{2x+3}{x^2+3x-4} \;dx - \frac{15}{2}\int \frac{1}{x^2+3x-4}\;dx\text{.}
+\int \frac{2}{x^2+4x+3}\;dx
 \end{equation*}
 </div>
-<div class="para">Now explain why the second integral is difficult.</div>
-</div></div></details></div></article><article class="task exercise-like" id="act-PartialFractionCompare-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \left(\frac{1}{x+1} - \frac{1}{x+3}\right)\;dx
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="act-PartialFractionCompare-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical" id="act-PartialFractionCompare-3-1-1">
-<div class="para">Confirm that</div>
+<div class="para">Start with the first integral:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{6}{x+4} + \frac{3}{x-1} = \frac{9x+6}{x^2+3x-4}\text{.}
+\int \frac{2}{x^2+4x+5}\;dx\text{.}
 \end{equation*}
 </div>
-</div></article><article class="task exercise-like" id="act-PartialFractionCompare-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para">How would you approach integrating this?</div>
+</div>
+<div class="solutions"><details id="act-PartialFractionCompare-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-PartialFractionCompare-3-2-1">This is a constant over a quadratic: can you complete the square?</div></div></details></div></article><article class="task exercise-like" id="act-PartialFractionCompare-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para logical" id="act-PartialFractionCompare-4-1-1">
-<div class="para">Try to integrate the following:</div>
+<div class="para">Try the same tactic on the second integral:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int \frac{6}{x+4} + \frac{3}{x-1}\;dx\text{.}
+\int \frac{2}{x^2+4x+3}\;dx\text{.}
 \end{equation*}
 </div>
-</div></article><article class="task exercise-like" id="act-PartialFractionCompare-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="act-PartialFractionCompare-5-1-1">Which integral of the two would you rather integrate? Why?</div></article></article></section></div>
+<div class="para">You don’t need to complete this integral, but think about how you might proceed.</div>
+</div>
+<div class="solutions"><details id="act-PartialFractionCompare-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-PartialFractionCompare-4-2-1">Check the structure of the denominator when you complete the square: since you don’t end up with a sum of squares, you can’t use the inverse tangent setup. You’ll need to do a trig substitution instead...</div></div></details></div></article><article class="task exercise-like" id="act-PartialFractionCompare-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="act-PartialFractionCompare-5-1-1">
+<div class="para">Think about the third integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \left(\frac{1}{x+1} - \frac{1}{x+3}\right)\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">How would you integrate this?</div>
+</div></article><article class="task exercise-like" id="act-PartialFractionCompare-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="act-PartialFractionCompare-6-1-1">The third integral is unique from the other two in that is has two terms. Let’s combine them together to see how we could write this integral to compare it more closely to the other two.</div> <div class="para" id="act-PartialFractionCompare-6-1-2">Subtract <span class="process-math">\(\dfrac{1}{x+1}-\dfrac{1}{x+3}\)</span> using common denominators and compare your re-written integral to the other two.</div></article><article class="task exercise-like" id="act-PartialFractionCompare-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="act-PartialFractionCompare-7-1-1">Which of these integrals and/or representations of an integral is easiest to work with? Which one is most annoying to work with? Why?</div></article></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-TrigSub.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-InfiniteSeries.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
