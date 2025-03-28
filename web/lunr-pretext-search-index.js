@@ -2185,7 +2185,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.7",
   "title": "Partial Fractions",
-  "body": " Partial Fractions   Comparing Rational Integrands   We're going to compare three integrals:       Start with the first integral: . How would you approach integrating this?   This is a constant over a quadratic: can you complete the square?    Try the same tactic on the second integral: . You don't need to complete this integral, but think about how you might proceed.   Check the structure of the denominator when you complete the square: since you don't end up with a sum of squares, you can't use the inverse tangent setup. You'll need to do a trig substitution instead...    Think about the third integral: . How would you integrate this?    The third integral is unique from the other two in that is has two terms. Let's combine them together to see how we could write this integral to compare it more closely to the other two.  Subtract using common denominators and compare your re-written integral to the other two.    Which of these integrals and\/or representations of an integral is easiest to work with? Which one is most annoying to work with? Why?    "
+  "body": " Partial Fractions   Comparing Rational Integrands   We're going to compare three integrals:       Start with the first integral: . How would you approach integrating this?   This is a constant over a quadratic: can you complete the square, and then connect the result to an inverse tangent function?    Try the same tactic on the second integral: . You don't need to complete this integral, but think about how you might proceed.   Check the structure of the denominator when you complete the square: since you don't end up with a sum of squares, you can't use the inverse tangent setup. You'll need to do a trig substitution instead...    Think about the third integral: . How would you integrate this?    The third integral is unique from the other two in that is has two terms. Let's combine them together to see how we could write this integral to compare it more closely to the other two.  Subtract using common denominators and compare your re-written integral to the other two.    Which of these integrals and\/or representations of an integral is easiest to work with? Which one is most annoying to work with? Why?     Why do we use partial fraction decomposition on some integrals of rational functions? Give an example and explain why it is helpful in your example.   For each rational function described, write out the corresponding partial fraction forms.    where is some polynomial with degree less than 3.    where is some polynomial with degree less than 5.    where is some polynomial with degree less than 4.    where is some polynomial with degree less than 4.   There's some factoring to be done here! Note that and then we can factor .    Consider the following integral, with the partial fraction forms written out: .   Write an equation connecting the numerators.   Find (and use) a specific -value to input into the equation to solve for .   Use , and notice what happens to the rest of the terms.   Find (and use) a specific -value to input into the equation to solve for .   Use , and notice what happens to the rest of the terms.   Why can you not use this strategy to solve for coefficients or ?   Find the cubic terms (you will need to do some multiplication) on both sides of your equation. Use these to solve for .   Find the constant terms (you will need to do some multiplication) on both sides of your equation. Use these to solve for .   Integrate!    Explain why partial fractions is not an appropriate technique for the following integral: . How should we approach this integral, instead?   Note the degree in the numerator compared to the denominator!    Integrate the following.                           In the problems we are looking at in this section, we're limiting ourselves to, at most, irreducible quadratic factors in the denominator. In problems with simple linear factors, repeated linear factors, or irreducible quadratic factors, what types of antiderivative functions do you expect to see? Explain.   For each of the following integrals, we will do some preliminary work before using partial fractions to integrate. Really, we'll perform a specific -substitution that will give us some resulting integral to use partial fractions on.    where we use .   If then and our resulting integral looks like: .    where we use .   If then and the resulting integral is: .    where we use .   If then and the resulting integral is: .    "
 },
 {
   "id": "act-PartialFractionCompare",
@@ -2194,7 +2194,70 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "7.7.1",
   "title": "Comparing Rational Integrands.",
-  "body": " Comparing Rational Integrands   We're going to compare three integrals:       Start with the first integral: . How would you approach integrating this?   This is a constant over a quadratic: can you complete the square?    Try the same tactic on the second integral: . You don't need to complete this integral, but think about how you might proceed.   Check the structure of the denominator when you complete the square: since you don't end up with a sum of squares, you can't use the inverse tangent setup. You'll need to do a trig substitution instead...    Think about the third integral: . How would you integrate this?    The third integral is unique from the other two in that is has two terms. Let's combine them together to see how we could write this integral to compare it more closely to the other two.  Subtract using common denominators and compare your re-written integral to the other two.    Which of these integrals and\/or representations of an integral is easiest to work with? Which one is most annoying to work with? Why?   "
+  "body": " Comparing Rational Integrands   We're going to compare three integrals:       Start with the first integral: . How would you approach integrating this?   This is a constant over a quadratic: can you complete the square, and then connect the result to an inverse tangent function?    Try the same tactic on the second integral: . You don't need to complete this integral, but think about how you might proceed.   Check the structure of the denominator when you complete the square: since you don't end up with a sum of squares, you can't use the inverse tangent setup. You'll need to do a trig substitution instead...    Think about the third integral: . How would you integrate this?    The third integral is unique from the other two in that is has two terms. Let's combine them together to see how we could write this integral to compare it more closely to the other two.  Subtract using common denominators and compare your re-written integral to the other two.    Which of these integrals and\/or representations of an integral is easiest to work with? Which one is most annoying to work with? Why?   "
+},
+{
+  "id": "ex-PartialFractions-1",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-1",
+  "type": "Exercise",
+  "number": "7.7.1",
+  "title": "",
+  "body": "Why do we use partial fraction decomposition on some integrals of rational functions? Give an example and explain why it is helpful in your example. "
+},
+{
+  "id": "ex-PartialFractions-2",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-2",
+  "type": "Exercise",
+  "number": "7.7.2",
+  "title": "",
+  "body": " For each rational function described, write out the corresponding partial fraction forms.    where is some polynomial with degree less than 3.    where is some polynomial with degree less than 5.    where is some polynomial with degree less than 4.    where is some polynomial with degree less than 4.   There's some factoring to be done here! Note that and then we can factor .  "
+},
+{
+  "id": "ex-PartialFractions-3",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-3",
+  "type": "Exercise",
+  "number": "7.7.3",
+  "title": "",
+  "body": " Consider the following integral, with the partial fraction forms written out: .   Write an equation connecting the numerators.   Find (and use) a specific -value to input into the equation to solve for .   Use , and notice what happens to the rest of the terms.   Find (and use) a specific -value to input into the equation to solve for .   Use , and notice what happens to the rest of the terms.   Why can you not use this strategy to solve for coefficients or ?   Find the cubic terms (you will need to do some multiplication) on both sides of your equation. Use these to solve for .   Find the constant terms (you will need to do some multiplication) on both sides of your equation. Use these to solve for .   Integrate!  "
+},
+{
+  "id": "ex-PartialFractions-4",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-4",
+  "type": "Exercise",
+  "number": "7.7.4",
+  "title": "",
+  "body": " Explain why partial fractions is not an appropriate technique for the following integral: . How should we approach this integral, instead?   Note the degree in the numerator compared to the denominator!  "
+},
+{
+  "id": "ex-PartialFractions-5",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-5",
+  "type": "Exercise",
+  "number": "7.7.5",
+  "title": "",
+  "body": " Integrate the following.                          "
+},
+{
+  "id": "ex-PartialFractions-6",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-6",
+  "type": "Exercise",
+  "number": "7.7.6",
+  "title": "",
+  "body": "In the problems we are looking at in this section, we're limiting ourselves to, at most, irreducible quadratic factors in the denominator. In problems with simple linear factors, repeated linear factors, or irreducible quadratic factors, what types of antiderivative functions do you expect to see? Explain. "
+},
+{
+  "id": "ex-PartialFractions-7",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-7",
+  "type": "Exercise",
+  "number": "7.7.7",
+  "title": "",
+  "body": " For each of the following integrals, we will do some preliminary work before using partial fractions to integrate. Really, we'll perform a specific -substitution that will give us some resulting integral to use partial fractions on.    where we use .   If then and our resulting integral looks like: .    where we use .   If then and the resulting integral is: .    where we use .   If then and the resulting integral is: .  "
 },
 {
   "id": "sec-IntroSequences",
