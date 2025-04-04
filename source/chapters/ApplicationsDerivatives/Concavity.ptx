@@ -2,20 +2,193 @@
 
 <section xml:id="sec-Concavity" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Concavity</title>
+  <introduction>
+     <xi:include href="./activities/act-CompareCurves.ptx" />
+  </introduction>
+ 
+  <subsection xml:id="subsec-DefiningCurvature">
+    <title>Defining the Curvature of a Curve</title>
+    <definition xml:id="def-Concavity">
+      <title>Concavity and Inflection Points</title>  
+      <statement>
+        <p>
+          We say that a function if <term>concave up</term> on an interval <m>(a,b)</m> if <m>f'(x)</m> is increasing on the interval. If <m>f'(x)</m> is decreasing on the interval, then we say that <m>f(x)</m> is <term>concave down</term>.
+        </p>
+        <p>
+          We say that a point <m>(c, f(c))</m> is an <term>inflection point</term> if it is a point at which <m>f</m> changes concavity (from concave up to concave down or vice versa).
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Note that when we think about a function being concave up or down on some interval, we can think about this in different ways. Curvature can sometimes be hard to recognize visually, but one of the things we can see from the visual above is the interaction between the tangent line and the curve:
+      <ul>
+        <li>
+          <p>
+            If the function is concave up on some interval, then the tangent line sits below the function at every point on that interval. The function curves <em>upward</em> away from the tangent line. Sometimes people will say that the curvature is concave "up, like a cup."
+          </p>
+        </li>
+        <li>
+          <p>
+            If the function is concave down on some interval, then the tangent line sits above the function at every point on that interval. The function curves <em>downward</em> away from the tangent line. Sometimes people will say that the curvature is concave "down, like a frown."
+          </p>
+        </li>
+      </ul>
+      So we have some visual ways of thinking about these different types of curvature. Annoyingly, though, it is still relatively difficult to pinpoint the exact (or even close) location of an inflection point. We might be able to pretty easily point at the locations of local maximums and local minimums on a graph of a function, but it can be hard to see the exact point at which a graph of a function changes from concave up to down or vice versa. We'll focus on finding them algebraically first, but then we'll think a bit more about the graphs of functions later.
+    </p>
 
-  <xi:include href="./activities/act-CompareCurves.ptx" />
-
-  <definition xml:id="def-Concavity">
-  <title>Concavity and Inflection Points</title>  
-    <statement>
-      <p>
-        We say that a function if <term>concave up</term> on an interval <m>(a,b)</m> if <m>f'(x)</m> is increasing on the interval. If <m>f'(x)</m> is decreasing on the interval, then we say that <m>f(x)</m> is <term>concave down</term>.
-      </p>
-      <p>
-        We say that a point <m>(c, f(c))</m> is an <term>inflection point</term> if it is a point at which <m>f</m> changes concavity (from concave up to concave down or vice versa).
-      </p>
-    </statement>
-  </definition>
-
-  <xi:include href="./activities/act-FindingConcavity.ptx" />
+    <xi:include href="./activities/act-FindingConcavity.ptx" />
+    <p>
+      Let's circle back to the definition of <xref ref="def-Concavity" text="title"/> and think about these from the perspective of <m>f'(x)</m>.
+    </p>
+    <p>
+      We can notice that, by the definition, any inflection point is a point at which <m>f(x)</m> changes concavity, and so is a point where <m>f'(x)</m> changes direction. That means we are looking at local maximums or local minimums of <m>f'(x)</m> (as long as they're not at the end points of some domain)! Similarly, these are points at which <m>f''(x)</m> changes sign, and so we are thinking about the <m>x</m>-intercepts of these second derivatives (or other kinds of locations where the second derivative could change signs).
+    </p>
+    <example>
+      <introduction>
+        <p>
+          Let's look at a few more examples, but this time they can be ones with derivatives that are a bit easier to work with.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Consider the function <m>f(x) = \ln(x^2+1)</m>. Find the intervals where <m>f</m> is concave up, the intervals where it is concave down, and then find the locations of any inflection points.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Consider the function <m>g(x) = e^{-x^2}</m>. Find the intervals where <m>g</m> is concave up, the intervals where it is concave down, and then find the locations of any inflection points.
+          </p>
+        </statement>
+      </task>
+    </example>
+    <p>
+      At this point, we have three different functions that we are juggling: a function <m>f(x)</m> (or whatever name we give it), the first derivative <m>f'(x)</m>, and the second derivative <m>f''(x)</m>. We'll want to keep in mind the role of each of these.
+      <ul>
+        <li>
+          <p>
+            <m>f(x)</m> tells us the height, the <m>y</m>-value, of the function at some point.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f'(x)</m> tells us the direction, the slope, of the function at some point.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f''(x)</m> tells us the curvature, the concavity, of the function at some point.
+          </p>
+        </li>
+      </ul>
+      We can try to summarize this in a small table:
+      <tabular>
+        <row>
+          <cell><m>f(x)</m></cell>
+          <cell><m>\nearrow</m></cell>
+          <cell><m>\searrow</m></cell>
+          <cell><m>\smile</m></cell>
+          <cell><m>\frown</m></cell>
+        </row>
+        <row>
+          <cell><m>f'(x)</m></cell>
+          <cell><m>\oplus</m></cell>
+          <cell><m>\ominus</m></cell>
+          <cell><m>\nearrow</m></cell>
+          <cell><m>\searrow</m></cell>
+          <cell><m>\smile</m></cell>
+          <cell><m>\frown</m></cell>
+        </row>
+        <row>
+          <cell><m>f''(x)</m></cell> 
+          <cell></cell>
+          <cell></cell>
+          <cell><m>\oplus</m></cell>
+          <cell><m>\ominus</m></cell>
+          <cell><m>\nearrow</m></cell>
+          <cell><m>\searrow</m></cell>
+        </row>
+        <row>
+          <cell><m>f'''(x)</m></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell><m>\oplus</m></cell>
+          <cell><m>\ominus</m></cell>
+        </row>
+      </tabular>
+      Notice that we could extend this table and think about any triplet of functions/derivatives in a row: we just need to think about what is positive/negative, what is increasing/decreasing, and what is concave up/down. If we wanted, we could try to define some adjective to describe what is happening to a function when <m>f'(x)</m> is concave up/down, but let's not. It's hard enough to visualize concavity, and it will be difficult to visualize rates of change of the concavity.
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-ConcavityAtCriticalPoints">
+    <title>Interpreting the Concavity at Critical Points</title>
+    <p>
+      
+    </p>
+    <theorem xml:id="thm-SecondDerivativeTest">
+      <title>Second Derivative Test for Local Maximums or Local Minimums</title>
+      <statement>
+        <p>
+          If <m>(c,f(c))</m> is a critical point of <m>f</m> with <m>f'(c)=0</m>, then we can use the value of the second derivative at <m>x=c</m> to classify the critical point:
+          <ol>
+            <li>
+              <p>
+                If <m>f''(c)\gt 0</m>, then <m>f</m> is concave up at and around <m>x=c</m>, and so the function has a local minimum at <m>(c,f(c))</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>f''(c)\lt 0</m>, then <m>f</m> is concave down at and around <m>x=c</m>, and so the function has a local maximum at <m>(c,f(c))</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>f''(c)=0</m>, then the Second Derivative Test is inconclusive.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </theorem>
+    <example>
+      <introduction>
+        <p>
+          Find any critical points of the following functions. For each, use the Second Derivative Test to classify the critical point. If the Second Derivative Test fails (we get that the second derivative evaluated at the critical point is 0, and so is inconclusive), then classify the critical point in some other way.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>f(x)=x\ln(x)-x</m> where the domain of <m>f</m> is <m>(0,\infty)</m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>g(x)=5x+\frac{1}{x}</m> where the domain of <m>g</m> is <m>(0,\infty)</m>.
+          </p>
+        </statement>
+      </task>
+    </example>
+    <p>
+      Let's leave this here, with a few questions for you to think about:
+      <ul>
+        <li>
+          <p>
+            When, for you, do you think it would be reasonable to use the Second Derivative Test instead of the First Derivative Test? What goes into making this decision? 
+          </p>
+        </li>
+        <li>
+          <p>
+            When, for you, do you think it would be reasonable to use the First Derivative Test instead of the Second Derivative Test? What does into making this decision?
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+ 
 </section>
