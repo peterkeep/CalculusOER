@@ -2,8 +2,30 @@
 
 <section xml:id="sec-IndefiniteIntegrals" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Antiderivatives and Indefinite Integrals</title>
-    <p>
-        
-    </p>
+
+    <subsection xml:id="subsec-InitialValueProblems">
+        <title>Initial Value Problems</title>
+        <assemblage xml:id="strat-InitialValueProblems">
+            <title>Solving Initial Value Problems</title>
+            <p>
+                For some function <m>f(x)</m>, if we want to find an antiderivative function <m>F(x)</m> and we know some "initial value," <m>F(a)</m>, then we can find the exact antiderivative by:
+                <ol>
+                    <li>
+                        <p>
+                            Finding the family of antiderivatives:
+                            <me>
+                                \int f(x)\;dx = F(x)+C
+                            </me>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Using the initial value to solve for the constant <m>C</m>, by evaluating <m>F(x)+C</m> at <m>x=a</m> and solving for <m>C</m>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </assemblage>
+    </subsection>
 
 </section>

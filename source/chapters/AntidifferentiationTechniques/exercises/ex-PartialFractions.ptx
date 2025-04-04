@@ -1,0 +1,238 @@
+<exercises xml:id="ex-PartialFractions">
+    <exercise>
+        <p>
+            Why do we use partial fraction decomposition on some integrals of rational functions? Give an example and explain why it is helpful in your example.
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each rational function described, write out the corresponding partial fraction forms.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{p(x)}{(x-4)(x+2)(x-1)}</m> where <m>p(x)</m> is some polynomial with degree less than 3.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{p(x)}{(x+1)^2(3x-5)^3}</m> where <m>p(x)</m> is some polynomial with degree less than 5.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{p(x)}{(x^2+1)(x^2+2x+5)}</m> where <m>p(x)</m> is some polynomial with degree less than 4.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{p(x)}{x^4-1}</m> where <m>p(x)</m> is some polynomial with degree less than 4.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    There's some factoring to be done here! Note that <m>x^4-1 = (x^2-1)(x^2+1)</m> and then we can factor <m>x^2-1 = (x-1)(x+1)</m>.
+                </p>
+            </hint>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the following integral, with the partial fraction forms written out:
+                <me>
+                    \int \frac{x^3+6x^2-x}{(x-2)(x+1)(x^2+1)}\;dx = \int \left(\frac{A}{x-2} + \frac{B}{x+1}+\frac{Cx+D}{x^2+1}\right)\;dx
+                </me>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Write an equation connecting the numerators.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find (and use) a specific <m>x</m>-value to input into the equation to solve for <m>A</m>.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Use <m>x=2</m>, and notice what happens to the rest of the terms.
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find (and use) a specific <m>x</m>-value to input into the equation to solve for <m>B</m>.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Use <m>x=-1</m>, and notice what happens to the rest of the terms.
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Why can you not use this strategy to solve for coefficients <m>C</m> or <m>D</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find the cubic terms (you will need to do some multiplication) on both sides of your equation. Use these to solve for <m>C</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find the constant terms (you will need to do some multiplication) on both sides of your equation. Use these to solve for <m>D</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Integrate!
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            Explain why partial fractions is not an appropriate technique for the following integral:
+            <me>
+                \int \dfrac{x^2+x}{x^2-x+1}\;dx
+            </me>.
+            How should we approach this integral, instead?
+        </p>
+        </statement>
+        <hint>
+            <p>
+                Note the degree in the numerator compared to the denominator! 
+            </p>
+        </hint>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Integrate the following.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \dfrac{2}{(x-1)(x+3)}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \dfrac{4x+1}{(x-4)(x+5)}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \dfrac{2x^2-15x+32}{x(x^2-8x^2+64)}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \dfrac{1}{(x+2)(x-2)}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \dfrac{20x}{(x-1)(x^2+4x+5)}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \dfrac{x^2}{(x-2)^3}\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <p>
+            In the problems we are looking at in this section, we're limiting ourselves to, at most, irreducible quadratic factors in the denominator. In problems with simple linear factors, repeated linear factors, or irreducible quadratic factors, what types of antiderivative functions do you expect to see? Explain.
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following integrals, we will do some preliminary work before using partial fractions to integrate. Really, we'll perform a specific <m>u</m>-substitution that will give us some resulting integral to use partial fractions on. 
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \dfrac{4e^{2x}}{(e^{2x}+3)(e^{2x}-5)}\;dx</m> where we use <m>u=e^{2x}</m>.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    If <m>u=e^{2x}</m> then <m>du=2e^{2x}\;dx</m> and our resulting integral looks like:
+                    <me>
+                        \int \frac{2}{(u+3)(u-5)}\;du
+                    </me>.
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \sqrt{e^x+1}\;dx</m> where we use <m>u=\sqrt{e^x+1}</m>.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    If <m>u=\sqrt{e^x+1}</m> then <m>du = \dfrac{e^x}{2\sqrt{e^x+1}}\;dx</m> and the resulting integral is:
+                    <me>
+                        \int \frac{2u^2}{u^2-1}\;du = \int 2 + \frac{2}{u^2-1}\;du
+                    </me>.
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \dfrac{\sqrt{x}+3}{\sqrt{x}(x-1)}\;dx</m> where we use <m>u=\sqrt{x}</m>.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    If <m>u=\sqrt{x}</m> then <m>du=\dfrac{1}{2\sqrt{x}}\;dx</m> and the resulting integral is:
+                    <me>
+                        \int \frac{2u+6}{u^2-1}\;du
+                    </me>.
+                </p>
+            </hint>
+        </task>
+    </exercise>
+</exercises>

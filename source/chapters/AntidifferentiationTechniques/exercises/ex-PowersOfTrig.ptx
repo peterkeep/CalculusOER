@@ -1,0 +1,220 @@
+<exercises xml:id="ex-PowersOfTrig">
+    <exercise>
+        <p>
+            For an integral <m>\dint \sin^a(x)\cos^b(x)\;dx</m>, how do you know whether to use <m>u=\sin(x)</m> or <m>u=\cos(x)</m> as the substitution?
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            For an integral <m>\dint \tan^a(x)\sec^b(x)\;dx</m>, how do you know whether to use <m>u=\tan(x)</m> or <m>u=\sec(x)</m> as the substitution?
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Integrate the following.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \sin^3(x)\cos^2(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \sin^2(x)\cos^3(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \sin^3(x)\cos^3(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \tan^4(x)\sec^4(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \tan^3(x)\sec^3(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \tan^3(x)\sec^4(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Integrate the following.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \sin^{3/4}(x)\cos^5(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \tan^5(x)\sec^{-1/2}(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \sin^{3/4}(x)\cos^5(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \tan^5(x)\sec^{-1/2}(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the integral <m>\dint \sin^2(x)\;dx</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Use the trigonometric identity:
+                    <me>
+                        \sin^2(x) = \frac{1-\cos(2x)}{2}
+                    </me>
+                    to integrate.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use integration by parts to integrate.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Check out <xref ref="subsec-SolvingForIntegral" text="type-global-title"/>
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Which of these techniques do you think was easier to implement and use? Why is that?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the integral <m>\dint \cos^4(x)\;dx</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Use the trigonometric identity:
+                    <me>
+                        \cos^2(x) = \frac{1+\cos(2x)}{2}
+                    </me>
+                    to integrate.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use integration by parts to integrate.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Try picking <m>u=\cos^3(x)</m> and <m>dv=\cos(x)\;dx</m>.
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Which of these techniques did you prefer? Why?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Integrate the following integrals.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \tan^2(x)\;dx</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Use a Pythagorean Identity to convert this to be written in terms of secant functions.
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \sec^3(x)\;dx</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Integration by parts works well here, and it's helpful to know the derivative of <m>\sec(x)</m> and an antiderivative of <m>\sec^2(x)</m>.
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \tan^5(x)\;dx</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    You can technically use either <m>u=\sec(x)</m> or <m>u=\tan(x)</m> here.
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dint \sin^5(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
