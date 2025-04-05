@@ -2,7 +2,125 @@
 
 <section xml:id="sec-GlobalMaxMins" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Global Maximums and Minimums</title>
+  <introduction>
+    <p>
+      
+    </p>
+    <definition xml:id="def-GlobalMaxMin">
+      <title>Global Maximum and Global Minimum</title>
+      <statement>
+        <p>
+          A function has a <term>global maximum</term> value of <m>f(c)</m> if <m>f(c)\geq f(x)</m> for all <m>x</m>-values in the domain of <m>f</m>.
+        </p>
+        <p>
+          A function has a <term>global minimum</term> value of <m>f(c)</m> if <m>f(c)\leq f(x)</m> for all <m>x</m>-values in the domain of <m>f</m>.
+        </p>
+      </statement>
+    </definition>
 
-  <p> Text of section. </p>
-
+  </introduction>
+  <subsection xml:id="subsec-BothMaxMins">
+    <title>When Do We Guarantee Both a Global Maximum and a Global Minimum?</title>
+    <theorem xml:id="thm-ExtremeValueTheorem">
+      <title>Extreme Value Theorem</title>
+      <statement>
+        <p>
+          If <m>f(x)</m> is a continuous function on a closed interval <m>[a,b]</m> then <m>f</m> must have both a global maximum and a global minimum on the interval.
+        </p>
+      </statement>
+    </theorem>
+    <p>
+      The Extreme Value Theorem guarantees the existence of both the global maximums and minimums, but we actually get more than just this out of the Extreme Value Theorem. Once we <em>know</em> that both of the global maximums and minimums exist, we can find them pretty easily.
+    </p>
+    <p>
+      The global maximum of a function, if it exists for the function on the domain/interval, is just the local maximum with the largest <m>y</m>-value. Similarly, the global minimum, if it exists, is the local minimum with the lowest <m>y</m>-value.
+    </p>
+    <p>
+      So once we know they both exist for a function on an interval, we can simply collect the critical points of the function (including the ending points of the domain) and compare the <m>y</m>-value function outputs! 
+    </p>
+    <example>
+      <introduction>
+        <p>
+          Check to see if each function (on the stated domain) satisfies the conditions of the Extreme Value Theorem, and then find any global maximums/minimums of the function on the interval.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>f(x)=\ln(x^2+4x+7)</m> on <m>[-1,3]</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>g(x)=3x^4-5x</m> on <m>[-3,4]</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>j(x)=\sqrt[3]{x+4}</m> on <m>[-6, -1]</m>
+          </p>
+        </statement>
+      </task>
+    </example>
+    
+  </subsection>
+  <subsection xml:id="subsec-WhatAboutOpenIntervals">
+    <title>What about Domains of Functions that Aren't Closed?</title>
+    <p>
+      Without the conditions that imply the Extreme Value Theorem, things become trickier. For instance, if the function is not continuous, then the function might have some unbounded behavior at a vertical asymptote. In this case, we might need to look at the one-sided limits around that asymptote, in order to see if our function tends towards positive or negative infinity on either side of the asymptote. This could tell us that the function doesn't have a global maximum, a global minimum, or that it doesn't have either.
+    </p>
+    <p>
+      Similarly, if the function is not defined on a closed interval, then we need to investigate what happens to the function's behavior as the function moves towards the "ends" of the interval (which could be a real number but something like positive or negative infinity). These end behavior limits could exist, in which case we need to compare these heights of horizontal asymptotes or open ends of an interval to the heights of any critical numbers.
+    </p>
+    <p>
+      But we might also find that the function tends towards infinity or negative infinity in the end behavior.
+    </p>
+    <p>
+      And there are other things to consider about discontinuity of a function (other than vertical asymptotes)!
+    </p>
+    <p>
+      All in all, it should be evident that if we remove one or both of the conditions on our function that <em>guarantees</em> the existence of a global maximum and a global minimum, it becomes much harder to find them, since we have so many different options to consider.
+    </p>
+    <p>
+      To simplify things, we will look at one case where things align in our favor: a continuous function that only has a single local maximum/minimum on an interval.
+    </p>
+    <theorem xml:id="thm-GlobalMaxMinOpenInterval">
+      <statement>
+        <p>
+          If <m>f(x)</m> is a continuous function on some interval, and <m>f</m> has only a single critical point (call it <m>(c,f(c))</m>) where the direction changes, then if that point is a local maximum of <m>f</m>, then <m>f(c)</m> is the global maximum. Similarly, if <m>(c,f(c))</m> is a local minimum, then <m>f(c)</m> is the global minimum of <m>f</m>.
+        </p>
+      </statement>
+    </theorem>
+    <p>
+      This is a great result to give us a path forward without having to check all of the edge cases and possibilities mentioned above. There are many functions that might have only a single critical point, or if it does have more than one critical point, only a single one of them acting as a local maximum/minimum.
+    </p>
+    <p>
+      Note here that we do need to classify the critical point as a local maximum or minimum! We'll use the <xref ref="thm-FirstDerivativeTest" text="title"/> or the <xref ref="thm-SecondDerivativeTest" text="title"/> for this classification.
+    </p>
+    <example>
+      <introduction>
+        <p>
+          For each function, find any global maximums/minimums that may exist.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>f(x)=x\ln(x)-x</m> and note that the domain of this function is <m>(0,\infty)</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>g(x)=xe^{-x}</m> and note that the domain of this function is <m>(-\infty, \infty)</m>.
+          </p>
+        </statement>
+      </task>
+    </example>
+  </subsection>
 </section>
