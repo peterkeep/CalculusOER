@@ -1141,7 +1141,61 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Global Maximums and Minimums",
-  "body": " Global Maximums and Minimums  Text of section.  "
+  "body": " Global Maximums and Minimums   We need to start with a definition, and we can start with contrasting what we want the difference between a local maximum\/minimum and a global maximum\/minimum. Sometimes these are also called absolute maximum\/minimums.  What do you want the difference to be?  If we focus on the terms or the names we're giving, then the difference should be based on the distinction between the words \"local\" and \"global.\" In one, we're considering some confined and relatively arbitrary geographic area, just the things around or in the neighborhood. In the other, our context grows until we're considering the whole picture, the whole space that we're interested in!   Global Maximum and Global Minimum   A function has a global maximum value of if for all -values in the domain of .  A function has a global minimum value of if for all -values in the domain of .    Note that the difference between this definition and is the types of -values we're comparing to: in this new definition, we just use all of the -values in the domain. In the definition for a local max\/min, we had to construct some interval to intersect with the domain in order to just consider the \"local\" picture.   When Would We Not Have Maximums or Minimnums?   In this section, we're going to define these global maximums and then, most importantly, try to predict when these global maximums or global minimums might actually exist for a function.  To start, maybe we should come up with some examples of functions that do not have them!    Come up with some situations where a function does not have some combination of global maximum\/minimums. Sketch some graphs!    Come up with some examples of graphs of functions that are bounded (do not ever have -values that tend towards infinity in a limit) that do not have some combination of global maximum\/minimums.    For the examples of graphs that you have built or collected, features of the functions that allow for the examples you picked? If you could impose some requirements that would \"fix\" the examples you found (so that they had both a global maximum and a global minimum), what requirements could you use?      When Do We Guarantee Both a Global Maximum and a Global Minimum?   Extreme Value Theorem   If is a continuous function on a closed interval then must have both a global maximum and a global minimum on the interval.    The Extreme Value Theorem guarantees the existence of both the global maximums and minimums, but we actually get more than just this out of the Extreme Value Theorem. Once we know that both of the global maximums and minimums exist, we can find them pretty easily.  The global maximum of a function, if it exists for the function on the domain\/interval, is just the local maximum with the largest -value. Similarly, the global minimum, if it exists, is the local minimum with the lowest -value.  So once we know they both exist for a function on an interval, we can simply collect the critical points of the function (including the ending points of the domain) and compare the -value function outputs!    Check to see if each function (on the stated domain) satisfies the conditions of the Extreme Value Theorem, and then find any global maximums\/minimums of the function on the interval.     on      on      on       What about Domains of Functions that Aren't Closed?  Without the conditions that imply the Extreme Value Theorem, things become trickier. For instance, if the function is not continuous, then the function might have some unbounded behavior at a vertical asymptote. In this case, we might need to look at the one-sided limits around that asymptote, in order to see if our function tends towards positive or negative infinity on either side of the asymptote. This could tell us that the function doesn't have a global maximum, a global minimum, or that it doesn't have either.  Similarly, if the function is not defined on a closed interval, then we need to investigate what happens to the function's behavior as the function moves towards the \"ends\" of the interval (which could be a real number but something like positive or negative infinity). These end behavior limits could exist, in which case we need to compare these heights of horizontal asymptotes or open ends of an interval to the heights of any critical numbers.  But we might also find that the function tends towards infinity or negative infinity in the end behavior.  And there are other things to consider about discontinuity of a function (other than vertical asymptotes)!  All in all, it should be evident that if we remove one or both of the conditions on our function that guarantees the existence of a global maximum and a global minimum, it becomes much harder to find them, since we have so many different options to consider.  To simplify things, we will look at one case where things align in our favor: a continuous function that only has a single local maximum\/minimum on an interval.    If is a continuous function on some interval, and has only a single critical point (call it ) where the direction changes, then if that point is a local maximum of , then is the global maximum. Similarly, if is a local minimum, then is the global minimum of .    This is a great result to give us a path forward without having to check all of the edge cases and possibilities mentioned above. There are many functions that might have only a single critical point, or if it does have more than one critical point, only a single one of them acting as a local maximum\/minimum.  Note here that we do need to classify the critical point as a local maximum or minimum! We'll use the or the for this classification.    For each function, find any global maximums\/minimums that may exist.     and note that the domain of this function is      and note that the domain of this function is .     "
+},
+{
+  "id": "def-GlobalMaxMin",
+  "level": "2",
+  "url": "sec-GlobalMaxMins.html#def-GlobalMaxMin",
+  "type": "Definition",
+  "number": "4.4.1",
+  "title": "Global Maximum and Global Minimum.",
+  "body": " Global Maximum and Global Minimum   A function has a global maximum value of if for all -values in the domain of .  A function has a global minimum value of if for all -values in the domain of .   "
+},
+{
+  "id": "act-NoMaxMin",
+  "level": "2",
+  "url": "sec-GlobalMaxMins.html#act-NoMaxMin",
+  "type": "Activity",
+  "number": "4.4.1",
+  "title": "When Would We Not Have Maximums or Minimnums?",
+  "body": " When Would We Not Have Maximums or Minimnums?   In this section, we're going to define these global maximums and then, most importantly, try to predict when these global maximums or global minimums might actually exist for a function.  To start, maybe we should come up with some examples of functions that do not have them!    Come up with some situations where a function does not have some combination of global maximum\/minimums. Sketch some graphs!    Come up with some examples of graphs of functions that are bounded (do not ever have -values that tend towards infinity in a limit) that do not have some combination of global maximum\/minimums.    For the examples of graphs that you have built or collected, features of the functions that allow for the examples you picked? If you could impose some requirements that would \"fix\" the examples you found (so that they had both a global maximum and a global minimum), what requirements could you use?   "
+},
+{
+  "id": "thm-ExtremeValueTheorem",
+  "level": "2",
+  "url": "sec-GlobalMaxMins.html#thm-ExtremeValueTheorem",
+  "type": "Theorem",
+  "number": "4.4.2",
+  "title": "Extreme Value Theorem.",
+  "body": " Extreme Value Theorem   If is a continuous function on a closed interval then must have both a global maximum and a global minimum on the interval.   "
+},
+{
+  "id": "subsec-BothMaxMins-6",
+  "level": "2",
+  "url": "sec-GlobalMaxMins.html#subsec-BothMaxMins-6",
+  "type": "Example",
+  "number": "4.4.3",
+  "title": "",
+  "body": "  Check to see if each function (on the stated domain) satisfies the conditions of the Extreme Value Theorem, and then find any global maximums\/minimums of the function on the interval.     on      on      on    "
+},
+{
+  "id": "thm-GlobalMaxMinOpenInterval",
+  "level": "2",
+  "url": "sec-GlobalMaxMins.html#thm-GlobalMaxMinOpenInterval",
+  "type": "Theorem",
+  "number": "4.4.4",
+  "title": "",
+  "body": "  If is a continuous function on some interval, and has only a single critical point (call it ) where the direction changes, then if that point is a local maximum of , then is the global maximum. Similarly, if is a local minimum, then is the global minimum of .   "
+},
+{
+  "id": "subsec-WhatAboutOpenIntervals-11",
+  "level": "2",
+  "url": "sec-GlobalMaxMins.html#subsec-WhatAboutOpenIntervals-11",
+  "type": "Example",
+  "number": "4.4.5",
+  "title": "",
+  "body": "  For each function, find any global maximums\/minimums that may exist.     and note that the domain of this function is      and note that the domain of this function is .   "
 },
 {
   "id": "sec-Optimization",
@@ -1186,7 +1240,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Antiderivatives and Indefinite Integrals",
-  "body": " Antiderivatives and Indefinite Integrals    "
+  "body": " Antiderivatives and Indefinite Integrals   Initial Value Problems   Solving Initial Value Problems  For some function , if we want to find an antiderivative function and we know some \"initial value,\" , then we can find the exact antiderivative by:   Finding the family of antiderivatives: .    Using the initial value to solve for the constant , by evaluating at and solving for .       "
 },
 {
   "id": "sec-RiemannSums",
@@ -1258,7 +1312,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Integrals as Net Change",
-  "body": " Integrals as Net Change   We have some rudimentary ideas of what an integral is, but we want to challenge and expand those ideas by examining the object at the root of the definition of the definite integral: a Riemann sum.    Estimating Movement  Here is some text leading to our first activity.   Estimating Movement   We're observing an object traveling back and forth in a straight line. Throughout a 5 minute interval, we get the following information about the velocity (in feet\/second) of the object.   Velocity of an Object        0  0    30  2    60  4.25    90  5.75    120  3.5    150  0.75    180  -1.25    210  -3.5    240  -2.75    270  -0.5    300  -0.25       Describe the motion of the object in general.   How do we interpret the different values of velocity? How do we interpret the sign of velocity? What about how velocity changes from one of the 30-second time points to the next?    When was the acceleration of the object the greatest? When was it the least?   You can decide how to interpret the \"least\" acceleration: it is either where the acceleration is closes to 0, or it is the most negative value of the acceleration. These are interpreted differently, but it's a bit ambiguous what we might mean when we say \"least acceleration.\"    Estimate the total displacement of the object over the 5 minute interval. What is the overall change in position from the start to the end?   How do we use velocity and some time interval to estimate the distance traveled? How do we estimate\/assume the velocity on each 30-second time interval?    Is this different than the total distance that the object traveled over the 5 minute interval? Why or why not?   How do we think about (or ignore) the direction of the object? Why is this important here?    If we know the initial position of the object, how could we find the position of the object at some time, , where is a multiple of 30 between 0 and 300?   Can we limit the time intervals that we use to calculate the object's displacement? How do we use displacement and a starting point to find an ending point?    So what are the big ideas in this short activity? There are a lot, and many of them are already things we know, at least to some level. So we are really focusing on adding depth to our understanding of these big ideas. Let's list them in the order that they showed up in this activity:   We interpret the velocity as the derivative of the position of the object. So when we interpret the value of the velocity of the object (large vs small, positive vs negative, etc.) we are interpreting these through the lens of a rate of change.    Acceleration is the derivative of the velocity function. While we don't have the full picture of the velocity function at any value of , we still were interested in the rates at which velocity changes with regard to time.    We can estimate the total displacement of the object by predicting how far it traveled in eahc 30-second time interval. We might pick the starting velocity for each 30-second interval and multiply that by 30 seconds. We could alternatively pick the ending velocity of each 30-second interval. Then we can add all of these products of velocity and time together to approximate a total change in position! Doesn't this feel like a Riemann sum?    When we calculate displacement, the negative velocities get multiplied out to get negative changes in position for the object -- that's because a negative velocity means that the object is moving backwards. If we wanted to calculate the distance traveled, then we need to not account for negative velocities. We can just disregard the sign of the velocity on each time interval and repeat the process above. So, another Riemann sum then?    In order to forecast some position at time , we just need to start with the initial position, and then calculate (or approximate) the displacement from to whatever time we care about, and then add the displacement to the intitial position.   Ok, now let's formalize those results!    Position, Velocity, and Acceleration  We know that the velocity of an object is really a rate of change of the position of that object with regard to time. Similarly, the acceleration of an object is the rate of change of the velocity of the object with regard to time. So we're really thinking about derivatives!    For an object moving along a straight line, if represents the position of that object at time , then the velocity of theobject at time is and the acceleration of the object at time is .    Once we establish this relationship, we can answer questions about movement of an object using the same interpretations of derivatives that we practiced in Chapter 3 of this text.   A Friendly Jogger   Consider a jogger running along a straight-line path, where their velocity at hours is , and velocity is measured in miles per hour. We begin observing this jogger at and observe them over a course of 3 hours.    When is the jogger's acceleration equal to 0 mi\/hr ?   Solve .    Does this time represent a maximum or minimum velocity for the jogger?   You can use the First Derivative Test or the Second Derivative Test here!    When is the jogger's velocity equal to 0 mi\/hr?    Describe the motion of the jogger, including information about the direction that they travel and their top speeds.      Displacement, Distance, and Speed  Let's revisit . When we approximated the displacement of the object, we built a Riemann sum: We chose our as either the time at the beginning of each 30-second interval or the time atr the end of the 30-second interval, but that was only because of the limited information that we had about different values of . If we had information about the function at any values of ( ), then we could pick any time in each 30-second time interval for our Riemann sum! We might note, though, that if we did have this kind of information about the velocity at any time in the 5-minute interval, then we would also build a more precise approximation by subdividing the time interval into smaller\/shorter pieces. So maybe the Riemann sum (where we are dividing up the 5 minute interval into 100 3-second intervals) would do a better job! But why stop there? If we have the definition of the velocity function, and so we can truly obtain the velocity of the object at any time in the 5 minute interval, then we can use the definition of the definite integral as the limit of a Riemann sum: This should work out well with our first understanding of displacement: the displacement of an object is just the difference in position from the starting time to the ending time. So we could say that if is the position function, then we might expect to represent displacement from to as . But isn't this just the Fundamental Theorem of Calculus, since ?    If an object is moving along a straight line with velocity and position , then the displacement of the object from time to is     Let's keep revisiting the same activity. We also noticed that when we looked at the distance compared to the displacement, the only difference was that we were integrating the absolute value of the velocity function, since we didn't care about the sign of the velocity (the direction that the object was traveling) on each interval.    If an object is moving along a straight line with velocity , then the distance traveled by the object from time to is: Here, we call the speed of the object (instead of the velocity).    We should note that we don't have any quick and easy ways of dealing with the integral of the absolute value of a function. So, in order for us to integrate , we need to think about where the velocity passes through 0, so that we can see where it might change from positive to negative.   Tracking our Jogger   Let's revisit our jogger from .    Calculate the total displacement of the jogger from to .   Set up and evaluate a definite integral here, using the velocity function.    Think back to our descroption of the jogger's movement: when is this jogger moving backwards? Split up the time interval from (the start of their run) to (where is the time that the jogger changed direction) to . Calculate the displacements on each of these two intervals.    Calculate the total distance that the jogger traveled in their 3 hour run.   Remember that we're really calculating:       Finding the Future Value of a Function  We can again think back to and build our last result of this section. Remember when we were looking to predict the location of our object at different times: we said it was reasonable to start at our initial position, and then add the displacement of the object from that initial time up to the time that we were interested in. So, to estimate the object's position after 150 seconds, we would calculate: . But we said we could do this to estimate the object's position at any value for time, .   Future Position of an Object   For some object moving along a straight line with velocity and an intitial position of , the future position of the object at some time (with ) is: Note that we change the variable in the velocity function while we integrate: since we want our position function to be in terms of , the ending time point that we calculate the displacement up to, we need to choose a different variable to write velocity in terms of. Mechanically, there is no difference, since we're just swapping out the variables and naming them .    We can note that this relationship between velocity and position can exist in many other context: any pair of functions that are derivatives\/antiderivatives of each other can have this relationship!   Net Change and Future Value   Suppose the value changes over time at a known rate . Then the net change in between and is: . Similarly, given the initial value , the future value of at time is:      "
+  "body": " Integrals as Net Change   We have some rudimentary ideas of what an integral is, but we want to challenge and expand those ideas by examining the object at the root of the definition of the definite integral: a Riemann sum.    Estimating Movement  Here is some text leading to our first activity.   Estimating Movement   We're observing an object traveling back and forth in a straight line. Throughout a 5 minute interval, we get the following information about the velocity (in feet\/second) of the object.   Velocity of an Object        0  0    30  2    60  4.25    90  5.75    120  3.5    150  0.75    180  -1.25    210  -3.5    240  -2.75    270  -0.5    300  -0.25       Describe the motion of the object in general.   How do we interpret the different values of velocity? How do we interpret the sign of velocity? What about how velocity changes from one of the 30-second time points to the next?    When was the acceleration of the object the greatest? When was it the least?   You can decide how to interpret the \"least\" acceleration: it is either where the acceleration is closes to 0, or it is the most negative value of the acceleration. These are interpreted differently, but it's a bit ambiguous what we might mean when we say \"least acceleration.\"    Estimate the total displacement of the object over the 5 minute interval. What is the overall change in position from the start to the end?   How do we use velocity and some time interval to estimate the distance traveled? How do we estimate\/assume the velocity on each 30-second time interval?    Is this different than the total distance that the object traveled over the 5 minute interval? Why or why not?   How do we think about (or ignore) the direction of the object? Why is this important here?    If we know the initial position of the object, how could we find the position of the object at some time, , where is a multiple of 30 between 0 and 300?   Can we limit the time intervals that we use to calculate the object's displacement? How do we use displacement and a starting point to find an ending point?    So what are the big ideas in this short activity? There are a lot, and many of them are already things we know, at least to some level. So we are really focusing on adding depth to our understanding of these big ideas. Let's list them in the order that they showed up in this activity:   We interpret the velocity as the derivative of the position of the object. So when we interpret the value of the velocity of the object (large vs small, positive vs negative, etc.) we are interpreting these through the lens of a rate of change.    Acceleration is the derivative of the velocity function. While we don't have the full picture of the velocity function at any value of , we still were interested in the rates at which velocity changes with regard to time.    We can estimate the total displacement of the object by predicting how far it traveled in eahc 30-second time interval. We might pick the starting velocity for each 30-second interval and multiply that by 30 seconds. We could alternatively pick the ending velocity of each 30-second interval. Then we can add all of these products of velocity and time together to approximate a total change in position! Doesn't this feel like a Riemann sum?    When we calculate displacement, the negative velocities get multiplied out to get negative changes in position for the object -- that's because a negative velocity means that the object is moving backwards. If we wanted to calculate the distance traveled, then we need to not account for negative velocities. We can just disregard the sign of the velocity on each time interval and repeat the process above. So, another Riemann sum then?    In order to forecast some position at time , we just need to start with the initial position, and then calculate (or approximate) the displacement from to whatever time we care about, and then add the displacement to the intitial position.   Ok, now let's formalize those results!    Position, Velocity, and Acceleration  We know that the velocity of an object is really a rate of change of the position of that object with regard to time. Similarly, the acceleration of an object is the rate of change of the velocity of the object with regard to time. So we're really thinking about derivatives!    For an object moving along a straight line, if represents the position of that object at time , then the velocity of theobject at time is and the acceleration of the object at time is .    Once we establish this relationship, we can answer questions about movement of an object using the same interpretations of derivatives that we practiced in Chapter 3 of this text.   A Friendly Jogger   Consider a jogger running along a straight-line path, where their velocity at hours is , and velocity is measured in miles per hour. We begin observing this jogger at and observe them over a course of 3 hours.    When is the jogger's acceleration equal to 0 mi\/hr ?   Solve .    Does this time represent a maximum or minimum velocity for the jogger?   You can use the First Derivative Test or the Second Derivative Test here!    When is the jogger's velocity equal to 0 mi\/hr?    Describe the motion of the jogger, including information about the direction that they travel and their top speeds.      Displacement, Distance, and Speed  Let's revisit . When we approximated the displacement of the object, we built a Riemann sum: We chose our as either the time at the beginning of each 30-second interval or the time atr the end of the 30-second interval, but that was only because of the limited information that we had about different values of . If we had information about the function at any values of ( ), then we could pick any time in each 30-second time interval for our Riemann sum! We might note, though, that if we did have this kind of information about the velocity at any time in the 5-minute interval, then we would also build a more precise approximation by subdividing the time interval into smaller\/shorter pieces. So maybe the Riemann sum (where we are dividing up the 5 minute interval into 100 3-second intervals) would do a better job! But why stop there? If we have the definition of the velocity function, and so we can truly obtain the velocity of the object at any time in the 5 minute interval, then we can use the definition of the definite integral as the limit of a Riemann sum: This should work out well with our first understanding of displacement: the displacement of an object is just the difference in position from the starting time to the ending time. So we could say that if is the position function, then we might expect to represent displacement from to as . But isn't this just the Fundamental Theorem of Calculus, since ?    If an object is moving along a straight line with velocity and position , then the displacement of the object from time to is     Let's keep revisiting the same activity. We also noticed that when we looked at the distance compared to the displacement, the only difference was that we were integrating the absolute value of the velocity function, since we didn't care about the sign of the velocity (the direction that the object was traveling) on each interval.    If an object is moving along a straight line with velocity , then the distance traveled by the object from time to is: Here, we call the speed of the object (instead of the velocity).    We should note that we don't have any quick and easy ways of dealing with the integral of the absolute value of a function. So, in order for us to integrate , we need to think about where the velocity passes through 0, so that we can see where it might change from positive to negative.   Tracking our Jogger   Let's revisit our jogger from .    Calculate the total displacement of the jogger from to .   Set up and evaluate a definite integral here, using the velocity function.    Think back to our descroption of the jogger's movement: when is this jogger moving backwards? Split up the time interval from (the start of their run) to (where is the time that the jogger changed direction) to . Calculate the displacements on each of these two intervals.    Calculate the total distance that the jogger traveled in their 3 hour run.   Remember that we're really calculating:       Finding the Future Value of a Function  We can again think back to and build our last result of this section. Remember when we were looking to predict the location of our object at different times: we said it was reasonable to start at our initial position, and then add the displacement of the object from that initial time up to the time that we were interested in. So, to estimate the object's position after 150 seconds, we would calculate: . But we said we could do this to estimate the object's position at any value for time, .   Future Position of an Object   For some object moving along a straight line with velocity and an intitial position of , the future position of the object at some time (with ) is: Note that we change the variable in the velocity function while we integrate: since we want our position function to be in terms of , the ending time point that we calculate the displacement up to, we need to choose a different variable to write velocity in terms of. Mechanically, there is no difference, since we're just swapping out the variables and naming them .    We can note that this relationship between velocity and position can exist in many other context: any pair of functions that are derivatives\/antiderivatives of each other can have this relationship!   Net Change and Future Value   Suppose the value changes over time at a known rate . Then the net change in between and is: . Similarly, given the initial value , the future value of at time is:        Explain the following terms in reference to an object moving along a straight path from time to time .    Position of the object at time .    Displacement of the object.    Distance traveled by the object.    Velocity of the object at time .    Speed of the object at time .    Consider the graph of a velocity function, , of some object moving along a line on the time interval .     A polynomial function that starts at (0,0), decreases down to some negative output around t=2, increases to (4,0) and then continues to some positive output before decreasing and ending at (7,0).     Do you expect the displacement of the object from to to be positive, negative, or 0?   Write two different expressions that represent the total displacement of the object from to .   Do you expect the distance traveled by the object from to to be positive, negative, or 0?   Write two different expressions that represent the total distance traveled by the object from to .    Let's consider an animal running along a straight path with the velocity function: on the time interval .   What is the total displacement of the animal on the time interval ?   What is the total displacement of the animal on the time interval ?   What is the total displacement of the animal on the time interval ?   What is the total displacement of the animal on the time interval ?   What is the total distance traveled by the animal on the time interval ?   Write a short summary of the animal's movement, including notes about direction, speed, and where the animal travels.    Consider an object with velocity function on the interval with the initial position .   Determine the position function, , for using the .   Determine the position function, , for using the strategy.   Compare the results from both methods. Explain why these are equivalent.    Consider an object with an acceleration function for with .   Determine the velocity function, , for using the .   Determine the velocity function, , for using the strategy.   Can you obtain the position function, ? Explain why or why not, based on the information given.    During a brake test for a heavy truck, the truck decelerates from an initial velocity of 88 ft\/s with the acceleration function ft\/s². Assume that the initial position of the truck is .   Find the velocity function for the truck.   When does the truck stop? In this situation, the truck won't have a negative velocity (since it's just braking and not eventually going in reverse). What time interval is the velocity function relevant on?   What is the total displacement of the truck on this time interval?   Safety standards say that for a truck like this, it needs to be able to stop (from a speed of 88ft\/s) in, at most, 200 feet.  Do we need to make changes to the braking mechanism, in order to have the acceleration function change? If so, what does the acceleration need to be (assuming it is constant and we are just replacing it with a new negative number)?    "
 },
 {
   "id": "act-EstimatingMovement",
@@ -1315,22 +1369,76 @@ var ptx_lunr_docs = [
   "body": " Tracking our Jogger   Let's revisit our jogger from .    Calculate the total displacement of the jogger from to .   Set up and evaluate a definite integral here, using the velocity function.    Think back to our descroption of the jogger's movement: when is this jogger moving backwards? Split up the time interval from (the start of their run) to (where is the time that the jogger changed direction) to . Calculate the displacements on each of these two intervals.    Calculate the total distance that the jogger traveled in their 3 hour run.   Remember that we're really calculating:    "
 },
 {
-  "id": "def-FuturePosition",
+  "id": "thm-FuturePosition",
   "level": "2",
-  "url": "sec-NetChange.html#def-FuturePosition",
-  "type": "Definition",
+  "url": "sec-NetChange.html#thm-FuturePosition",
+  "type": "Theorem",
   "number": "6.1.5",
   "title": "Future Position of an Object.",
   "body": " Future Position of an Object   For some object moving along a straight line with velocity and an intitial position of , the future position of the object at some time (with ) is: Note that we change the variable in the velocity function while we integrate: since we want our position function to be in terms of , the ending time point that we calculate the displacement up to, we need to choose a different variable to write velocity in terms of. Mechanically, there is no difference, since we're just swapping out the variables and naming them .   "
 },
 {
-  "id": "def-FutureValue",
+  "id": "thm-FutureValue",
   "level": "2",
-  "url": "sec-NetChange.html#def-FutureValue",
-  "type": "Definition",
+  "url": "sec-NetChange.html#thm-FutureValue",
+  "type": "Theorem",
   "number": "6.1.6",
   "title": "Net Change and Future Value.",
   "body": " Net Change and Future Value   Suppose the value changes over time at a known rate . Then the net change in between and is: . Similarly, given the initial value , the future value of at time is:    "
+},
+{
+  "id": "ex-NetChange-1",
+  "level": "2",
+  "url": "sec-NetChange.html#ex-NetChange-1",
+  "type": "Exercise",
+  "number": "6.1.5.1",
+  "title": "",
+  "body": " Explain the following terms in reference to an object moving along a straight path from time to time .    Position of the object at time .    Displacement of the object.    Distance traveled by the object.    Velocity of the object at time .    Speed of the object at time .  "
+},
+{
+  "id": "ex-NetChange-2",
+  "level": "2",
+  "url": "sec-NetChange.html#ex-NetChange-2",
+  "type": "Exercise",
+  "number": "6.1.5.2",
+  "title": "",
+  "body": " Consider the graph of a velocity function, , of some object moving along a line on the time interval .     A polynomial function that starts at (0,0), decreases down to some negative output around t=2, increases to (4,0) and then continues to some positive output before decreasing and ending at (7,0).     Do you expect the displacement of the object from to to be positive, negative, or 0?   Write two different expressions that represent the total displacement of the object from to .   Do you expect the distance traveled by the object from to to be positive, negative, or 0?   Write two different expressions that represent the total distance traveled by the object from to .  "
+},
+{
+  "id": "ex-NetChange-3",
+  "level": "2",
+  "url": "sec-NetChange.html#ex-NetChange-3",
+  "type": "Exercise",
+  "number": "6.1.5.3",
+  "title": "",
+  "body": " Let's consider an animal running along a straight path with the velocity function: on the time interval .   What is the total displacement of the animal on the time interval ?   What is the total displacement of the animal on the time interval ?   What is the total displacement of the animal on the time interval ?   What is the total displacement of the animal on the time interval ?   What is the total distance traveled by the animal on the time interval ?   Write a short summary of the animal's movement, including notes about direction, speed, and where the animal travels.  "
+},
+{
+  "id": "ex-NetChange-4",
+  "level": "2",
+  "url": "sec-NetChange.html#ex-NetChange-4",
+  "type": "Exercise",
+  "number": "6.1.5.4",
+  "title": "",
+  "body": " Consider an object with velocity function on the interval with the initial position .   Determine the position function, , for using the .   Determine the position function, , for using the strategy.   Compare the results from both methods. Explain why these are equivalent.  "
+},
+{
+  "id": "ex-NetChange-5",
+  "level": "2",
+  "url": "sec-NetChange.html#ex-NetChange-5",
+  "type": "Exercise",
+  "number": "6.1.5.5",
+  "title": "",
+  "body": " Consider an object with an acceleration function for with .   Determine the velocity function, , for using the .   Determine the velocity function, , for using the strategy.   Can you obtain the position function, ? Explain why or why not, based on the information given.  "
+},
+{
+  "id": "ex-NetChange-6",
+  "level": "2",
+  "url": "sec-NetChange.html#ex-NetChange-6",
+  "type": "Exercise",
+  "number": "6.1.5.6",
+  "title": "",
+  "body": " During a brake test for a heavy truck, the truck decelerates from an initial velocity of 88 ft\/s with the acceleration function ft\/s². Assume that the initial position of the truck is .   Find the velocity function for the truck.   When does the truck stop? In this situation, the truck won't have a negative velocity (since it's just braking and not eventually going in reverse). What time interval is the velocity function relevant on?   What is the total displacement of the truck on this time interval?   Safety standards say that for a truck like this, it needs to be able to stop (from a speed of 88ft\/s) in, at most, 200 feet.  Do we need to make changes to the braking mechanism, in order to have the acceleration function change? If so, what does the acceleration need to be (assuming it is constant and we are just replacing it with a new negative number)?  "
 },
 {
   "id": "sec-AreaBetweenCurves",
@@ -2005,7 +2113,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.5",
   "title": "Integrating Powers of Trigonometric Functions",
-  "body": " Integrating Powers of Trigonometric Functions   Let's remind ourselves of two example problems that we've done in the past.  In , we performed a -substitution, but needed to work to re-write our whole integrand in terms of . Specifically, we found that in the numerator, there was an , but . We were substituting out a linear function of in the numerator, but the actual function was cubic. This wasn't a problem: we re-wrote , and noticed that the extra was able to be substituted, since we could re-write out subsitution rule: we noted that is equivalent to . This meant that even though we had an extra factor of \"in\" the part that we were using for substituting in the differential , we were still able to translate the whole function to be written in terms of .  Then, more recently, in , we noted that we could use a mix of methods to integrate this:  One on hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that's what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a -substitution was also appropriate.  In this section, we'll explore more combinations of trigonometric functions and build a strategy for antidifferentiating them that includes some ideas from both of these previous examples.    Building a Strategy for Powers of Sines and Cosines   Compare and Contrast   Let's do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:     Consider the first integral, . Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.   It might be helpful to notice that can be re-written as . Does this help reveal something important about the structure of this integrand?    Now consider the second integral, . Does the same integration strategy work here? What happens when you apply the same thing?   Let again, and . What happens with the cosine functions? How many are \"left\" after applying our substitution?    We know that and are related to each other through derivatives (each is the derivative of the other, up to a negative). Is there some other connection that we have between these functions? We might especially notice that we have a left over in our integral. Can we write this in terms of , so that we can write it in terms of ?   We have a trigonometric identity (the Pythagorean Identity): .    Why would this strategy not have worked if we were looking at the integrals or ? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?     Integrating Powers of Sine and Cosine  For integrals in the form where and are real number exponents:   If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If both and are even, we can either use or use the following power-reducing trigonometric identities:       A strange note, here, is that we typically pick our -substitution based on looking to see a suitable candidate for : we look for functions that are composed \"inside\" of other functions or we look for a function whose derivative is in the integral (the \"function-derivative pair\" that we talk about in ). Here, though, we're selecting our substitution based on : we're looking to see which function we can set aside one copy of for the differential, and then have an even power left over so that we can apply the Pythagorean Identity to translate the rest.    Building a Strategy for Powers of Secants and Tangents   Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .    Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which is also written as , with , or , let's divide everything in the Pythagorean Identity by :         Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.   Here, . We'll also use .        Now try the integral again, this time using as your substitution.   Now , and we'll use the same Pythagorean identity, just re-written as .        For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?   Notice we had an even exponent on the function, but an odd exponent on the function.    Which substitution would be best for the integral . Why?    Which substitution would be best for the integral . Why?     Integrating Powers of Secant and Tangent  For integrals in the form where and are real number exponents:   If , the exponent on , is odd, we can use and . Then we can apply the Pythagorean Identity .    If , the exponent on , is even, we can use and . Then we can apply the Pythagorean Identity .    If is odd and is even, we can use .       "
+  "body": " Integrating Powers of Trigonometric Functions   Let's remind ourselves of two example problems that we've done in the past.  In , we performed a -substitution, but needed to work to re-write our whole integrand in terms of . Specifically, we found that in the numerator, there was an , but . We were substituting out a linear function of in the numerator, but the actual function was cubic. This wasn't a problem: we re-wrote , and noticed that the extra was able to be substituted, since we could re-write out subsitution rule: we noted that is equivalent to . This meant that even though we had an extra factor of \"in\" the part that we were using for substituting in the differential , we were still able to translate the whole function to be written in terms of .  Then, more recently, in , we noted that we could use a mix of methods to integrate this:  One on hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that's what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a -substitution was also appropriate.  In this section, we'll explore more combinations of trigonometric functions and build a strategy for antidifferentiating them that includes some ideas from both of these previous examples.    Building a Strategy for Powers of Sines and Cosines   Compare and Contrast   Let's do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:     Consider the first integral, . Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.   It might be helpful to notice that can be re-written as . Does this help reveal something important about the structure of this integrand?    Now consider the second integral, . Does the same integration strategy work here? What happens when you apply the same thing?   Let again, and . What happens with the cosine functions? How many are \"left\" after applying our substitution?    We know that and are related to each other through derivatives (each is the derivative of the other, up to a negative). Is there some other connection that we have between these functions? We might especially notice that we have a left over in our integral. Can we write this in terms of , so that we can write it in terms of ?   We have a trigonometric identity (the Pythagorean Identity): .    Why would this strategy not have worked if we were looking at the integrals or ? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?     Integrating Powers of Sine and Cosine  For integrals in the form where and are real number exponents:   If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If , the exponent on is odd, we should use and . Then we can apply the Pythagorean Identity .    If both and are even, we can either use or use the following power-reducing trigonometric identities:       A strange note, here, is that we typically pick our -substitution based on looking to see a suitable candidate for : we look for functions that are composed \"inside\" of other functions or we look for a function whose derivative is in the integral (the \"function-derivative pair\" that we talk about in ). Here, though, we're selecting our substitution based on : we're looking to see which function we can set aside one copy of for the differential, and then have an even power left over so that we can apply the Pythagorean Identity to translate the rest.    Building a Strategy for Powers of Secants and Tangents   Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .    Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which is also written as , with , or , let's divide everything in the Pythagorean Identity by :         Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.   Here, . We'll also use .        Now try the integral again, this time using as your substitution.   Now , and we'll use the same Pythagorean identity, just re-written as .        For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?   Notice we had an even exponent on the function, but an odd exponent on the function.    Which substitution would be best for the integral . Why?    Which substitution would be best for the integral . Why?     Integrating Powers of Secant and Tangent  For integrals in the form where and are real number exponents:   If , the exponent on , is odd, we can use and . Then we can apply the Pythagorean Identity .    If , the exponent on , is even, we can use and . Then we can apply the Pythagorean Identity .    If is odd and is even, we can use .        For an integral , how do you know whether to use or as the substitution?  For an integral , how do you know whether to use or as the substitution?   Integrate the following.                            Integrate the following.                    Consider the integral .   Use the trigonometric identity: to integrate.   Use integration by parts to integrate.   Check out    Which of these techniques do you think was easier to implement and use? Why is that?    Consider the integral .   Use the trigonometric identity: to integrate.   Use integration by parts to integrate.   Try picking and .   Which of these techniques did you prefer? Why?    Integrate the following integrals.       Use a Pythagorean Identity to convert this to be written in terms of secant functions.       Integration by parts works well here, and it's helpful to know the derivative of and an antiderivative of .       You can technically use either or here.        "
 },
 {
   "id": "act-CompareContrast",
@@ -2026,13 +2134,130 @@ var ptx_lunr_docs = [
   "body": " Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .    Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which is also written as , with , or , let's divide everything in the Pythagorean Identity by :         Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.   Here, . We'll also use .        Now try the integral again, this time using as your substitution.   Now , and we'll use the same Pythagorean identity, just re-written as .        For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?   Notice we had an even exponent on the function, but an odd exponent on the function.    Which substitution would be best for the integral . Why?    Which substitution would be best for the integral . Why?   "
 },
 {
+  "id": "ex-PowersOfTrig-1",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-1",
+  "type": "Exercise",
+  "number": "7.5.3.1",
+  "title": "",
+  "body": "For an integral , how do you know whether to use or as the substitution? "
+},
+{
+  "id": "ex-PowersOfTrig-2",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-2",
+  "type": "Exercise",
+  "number": "7.5.3.2",
+  "title": "",
+  "body": "For an integral , how do you know whether to use or as the substitution? "
+},
+{
+  "id": "ex-PowersOfTrig-3",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-3",
+  "type": "Exercise",
+  "number": "7.5.3.3",
+  "title": "",
+  "body": " Integrate the following.                          "
+},
+{
+  "id": "ex-PowersOfTrig-4",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-4",
+  "type": "Exercise",
+  "number": "7.5.3.4",
+  "title": "",
+  "body": " Integrate the following.                  "
+},
+{
+  "id": "ex-PowersOfTrig-5",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-5",
+  "type": "Exercise",
+  "number": "7.5.3.5",
+  "title": "",
+  "body": " Consider the integral .   Use the trigonometric identity: to integrate.   Use integration by parts to integrate.   Check out    Which of these techniques do you think was easier to implement and use? Why is that?  "
+},
+{
+  "id": "ex-PowersOfTrig-6",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-6",
+  "type": "Exercise",
+  "number": "7.5.3.6",
+  "title": "",
+  "body": " Consider the integral .   Use the trigonometric identity: to integrate.   Use integration by parts to integrate.   Try picking and .   Which of these techniques did you prefer? Why?  "
+},
+{
+  "id": "ex-PowersOfTrig-7",
+  "level": "2",
+  "url": "sec-PowersOfTrig.html#ex-PowersOfTrig-7",
+  "type": "Exercise",
+  "number": "7.5.3.7",
+  "title": "",
+  "body": " Integrate the following integrals.       Use a Pythagorean Identity to convert this to be written in terms of secant functions.       Integration by parts works well here, and it's helpful to know the derivative of and an antiderivative of .       You can technically use either or here.      "
+},
+{
   "id": "sec-TrigSub",
   "level": "1",
   "url": "sec-TrigSub.html",
   "type": "Section",
   "number": "7.6",
   "title": "Trigonometric Substitution",
-  "body": " Trigonometric Substitution  Text of section.  "
+  "body": " Trigonometric Substitution  Text of section.   Explain how trigonometric substitution helps to convert sums or differences of squares to products of squares. Why is this helpful? When is it helpful?  Draw a right triangle with as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing ?  Draw a right triangle with as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing ?  Draw a right triangle with as one of the hypotenuse. What are the lengths of the other two sides? What would be an appropriate substitution for an integral containing ?   Integrate the following using an appropriate trigonometric substitution.                        (for )            Complete the square and then integrate.            "
+},
+{
+  "id": "ex-TrigSub-1",
+  "level": "2",
+  "url": "sec-TrigSub.html#ex-TrigSub-1",
+  "type": "Exercise",
+  "number": "7.6.1",
+  "title": "",
+  "body": "Explain how trigonometric substitution helps to convert sums or differences of squares to products of squares. Why is this helpful? When is it helpful? "
+},
+{
+  "id": "ex-TrigSub-2",
+  "level": "2",
+  "url": "sec-TrigSub.html#ex-TrigSub-2",
+  "type": "Exercise",
+  "number": "7.6.2",
+  "title": "",
+  "body": "Draw a right triangle with as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing ? "
+},
+{
+  "id": "ex-TrigSub-3",
+  "level": "2",
+  "url": "sec-TrigSub.html#ex-TrigSub-3",
+  "type": "Exercise",
+  "number": "7.6.3",
+  "title": "",
+  "body": "Draw a right triangle with as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing ? "
+},
+{
+  "id": "ex-TrigSub-4",
+  "level": "2",
+  "url": "sec-TrigSub.html#ex-TrigSub-4",
+  "type": "Exercise",
+  "number": "7.6.4",
+  "title": "",
+  "body": "Draw a right triangle with as one of the hypotenuse. What are the lengths of the other two sides? What would be an appropriate substitution for an integral containing ? "
+},
+{
+  "id": "ex-TrigSub-5",
+  "level": "2",
+  "url": "sec-TrigSub.html#ex-TrigSub-5",
+  "type": "Exercise",
+  "number": "7.6.5",
+  "title": "",
+  "body": " Integrate the following using an appropriate trigonometric substitution.                        (for )          "
+},
+{
+  "id": "ex-TrigSub-6",
+  "level": "2",
+  "url": "sec-TrigSub.html#ex-TrigSub-6",
+  "type": "Exercise",
+  "number": "7.6.6",
+  "title": "",
+  "body": " Complete the square and then integrate.          "
 },
 {
   "id": "sec-PartialFractions",
@@ -2041,7 +2266,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.7",
   "title": "Partial Fractions",
-  "body": " Partial Fractions   Comparing Rational Integrands   Try to integrate the following: . Explain what about this integral makes things very difficult.   Annoyingly, you can write this as: . Now explain why the second integral is difficult.    Confirm that .    Try to integrate the following: .    Which integral of the two would you rather integrate? Why?    "
+  "body": " Partial Fractions   Comparing Rational Integrands   We're going to compare three integrals:       Start with the first integral: . How would you approach integrating this?   This is a constant over a quadratic: can you complete the square, and then connect the result to an inverse tangent function?    Try the same tactic on the second integral: . You don't need to complete this integral, but think about how you might proceed.   Check the structure of the denominator when you complete the square: since you don't end up with a sum of squares, you can't use the inverse tangent setup. You'll need to do a trig substitution instead...    Think about the third integral: . How would you integrate this?    The third integral is unique from the other two in that is has two terms. Let's combine them together to see how we could write this integral to compare it more closely to the other two.  Subtract using common denominators and compare your re-written integral to the other two.    Which of these integrals and\/or representations of an integral is easiest to work with? Which one is most annoying to work with? Why?     Why do we use partial fraction decomposition on some integrals of rational functions? Give an example and explain why it is helpful in your example.   For each rational function described, write out the corresponding partial fraction forms.    where is some polynomial with degree less than 3.    where is some polynomial with degree less than 5.    where is some polynomial with degree less than 4.    where is some polynomial with degree less than 4.   There's some factoring to be done here! Note that and then we can factor .    Consider the following integral, with the partial fraction forms written out: .   Write an equation connecting the numerators.   Find (and use) a specific -value to input into the equation to solve for .   Use , and notice what happens to the rest of the terms.   Find (and use) a specific -value to input into the equation to solve for .   Use , and notice what happens to the rest of the terms.   Why can you not use this strategy to solve for coefficients or ?   Find the cubic terms (you will need to do some multiplication) on both sides of your equation. Use these to solve for .   Find the constant terms (you will need to do some multiplication) on both sides of your equation. Use these to solve for .   Integrate!    Explain why partial fractions is not an appropriate technique for the following integral: . How should we approach this integral, instead?   Note the degree in the numerator compared to the denominator!    Integrate the following.                           In the problems we are looking at in this section, we're limiting ourselves to, at most, irreducible quadratic factors in the denominator. In problems with simple linear factors, repeated linear factors, or irreducible quadratic factors, what types of antiderivative functions do you expect to see? Explain.   For each of the following integrals, we will do some preliminary work before using partial fractions to integrate. Really, we'll perform a specific -substitution that will give us some resulting integral to use partial fractions on.    where we use .   If then and our resulting integral looks like: .    where we use .   If then and the resulting integral is: .    where we use .   If then and the resulting integral is: .    "
 },
 {
   "id": "act-PartialFractionCompare",
@@ -2050,7 +2275,70 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "7.7.1",
   "title": "Comparing Rational Integrands.",
-  "body": " Comparing Rational Integrands   Try to integrate the following: . Explain what about this integral makes things very difficult.   Annoyingly, you can write this as: . Now explain why the second integral is difficult.    Confirm that .    Try to integrate the following: .    Which integral of the two would you rather integrate? Why?   "
+  "body": " Comparing Rational Integrands   We're going to compare three integrals:       Start with the first integral: . How would you approach integrating this?   This is a constant over a quadratic: can you complete the square, and then connect the result to an inverse tangent function?    Try the same tactic on the second integral: . You don't need to complete this integral, but think about how you might proceed.   Check the structure of the denominator when you complete the square: since you don't end up with a sum of squares, you can't use the inverse tangent setup. You'll need to do a trig substitution instead...    Think about the third integral: . How would you integrate this?    The third integral is unique from the other two in that is has two terms. Let's combine them together to see how we could write this integral to compare it more closely to the other two.  Subtract using common denominators and compare your re-written integral to the other two.    Which of these integrals and\/or representations of an integral is easiest to work with? Which one is most annoying to work with? Why?   "
+},
+{
+  "id": "ex-PartialFractions-1",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-1",
+  "type": "Exercise",
+  "number": "7.7.1",
+  "title": "",
+  "body": "Why do we use partial fraction decomposition on some integrals of rational functions? Give an example and explain why it is helpful in your example. "
+},
+{
+  "id": "ex-PartialFractions-2",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-2",
+  "type": "Exercise",
+  "number": "7.7.2",
+  "title": "",
+  "body": " For each rational function described, write out the corresponding partial fraction forms.    where is some polynomial with degree less than 3.    where is some polynomial with degree less than 5.    where is some polynomial with degree less than 4.    where is some polynomial with degree less than 4.   There's some factoring to be done here! Note that and then we can factor .  "
+},
+{
+  "id": "ex-PartialFractions-3",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-3",
+  "type": "Exercise",
+  "number": "7.7.3",
+  "title": "",
+  "body": " Consider the following integral, with the partial fraction forms written out: .   Write an equation connecting the numerators.   Find (and use) a specific -value to input into the equation to solve for .   Use , and notice what happens to the rest of the terms.   Find (and use) a specific -value to input into the equation to solve for .   Use , and notice what happens to the rest of the terms.   Why can you not use this strategy to solve for coefficients or ?   Find the cubic terms (you will need to do some multiplication) on both sides of your equation. Use these to solve for .   Find the constant terms (you will need to do some multiplication) on both sides of your equation. Use these to solve for .   Integrate!  "
+},
+{
+  "id": "ex-PartialFractions-4",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-4",
+  "type": "Exercise",
+  "number": "7.7.4",
+  "title": "",
+  "body": " Explain why partial fractions is not an appropriate technique for the following integral: . How should we approach this integral, instead?   Note the degree in the numerator compared to the denominator!  "
+},
+{
+  "id": "ex-PartialFractions-5",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-5",
+  "type": "Exercise",
+  "number": "7.7.5",
+  "title": "",
+  "body": " Integrate the following.                          "
+},
+{
+  "id": "ex-PartialFractions-6",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-6",
+  "type": "Exercise",
+  "number": "7.7.6",
+  "title": "",
+  "body": "In the problems we are looking at in this section, we're limiting ourselves to, at most, irreducible quadratic factors in the denominator. In problems with simple linear factors, repeated linear factors, or irreducible quadratic factors, what types of antiderivative functions do you expect to see? Explain. "
+},
+{
+  "id": "ex-PartialFractions-7",
+  "level": "2",
+  "url": "sec-PartialFractions.html#ex-PartialFractions-7",
+  "type": "Exercise",
+  "number": "7.7.7",
+  "title": "",
+  "body": " For each of the following integrals, we will do some preliminary work before using partial fractions to integrate. Really, we'll perform a specific -substitution that will give us some resulting integral to use partial fractions on.    where we use .   If then and our resulting integral looks like: .    where we use .   If then and the resulting integral is: .    where we use .   If then and the resulting integral is: .  "
 },
 {
   "id": "sec-IntroSequences",
