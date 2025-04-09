@@ -122,6 +122,88 @@
         <p>
             Secretly, the Mean Value Theorem is the driving force behind most of the results we will look at from here on out, at least when the requirements include continuity <em>and</em> differentiability on an interval. You can almost guarantee that if a theorem or result has these two requirements, then the Mean Value Theorem is likely at work.
         </p>
+        <p>
+            Let's look at one example, at least, before we move on.
+        </p>
+        <example>
+            <introduction>
+                <p>
+                    Let's say that a person is planning on biking to their college campus, 8 miles away. At 2:39pm they send a text to their friend with a selfie of them on their bike about to start their trip, captioned "Beautiful day for a ride!" At 3:27pm, they post a picture on their social media of them in front of the bike rack on campus.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        What was the average velocity of the student between 2:39pm and 3:27pm?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        The total trip took 48 minutes (or 0.8 hours), and the student traveled a total distance of 8 miles.
+                    </p>
+                    <p>
+                        The student's average velocity is <m>\dfrac{8}{0.8} = 10</m> miles per hour.
+                    </p>
+                </solution>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The Mean Value Theorem connects average slopes with slopes of tangent lines. What does that mean, in general, in this context?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        In this case, the average rate of change of the function on the interval is the average velocity of the biker. So then the instantaneous rate of change must correspond with an instantaneous velocity, of their velocity at some specific point in time.
+                    </p>
+                </solution>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Make a claim about the instantaneous velocity of the student on their bike at some point in time.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We know that at some point between 2:39pm and 3:27pm, the cyclist had to be traveling at exactly 10 miles per hour.
+                    </p>
+                </solution>
+            </task>
+        </example>
+        <example>
+            <task>
+                <statement>
+                    <p>
+                        For a function <m>f(x)=\sqrt{x}+1</m> on the interval <m>[1,4]</m>, find the point that the Mean Value Theorem guarantees the existence of, and explain what it is.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Let's calculate the average slope on the interval:
+                        <md>
+                            <mrow> \frac{f(4)-f(1)}{4-1} \amp = \frac{(\sqrt{4}+1)-(\sqrt{1}+1)}{3} </mrow>
+                            <mrow> \amp = \frac{1}{3}</mrow>
+                        </md>
+                        So we know that there is some <m>x</m>-value between 1 and 4 where <m>f'(x)=\dfrac{1}{3}</m>.
+                    </p>
+                    <p>
+                        The derivative is <m>f'(x)=\dfrac{1}{2\sqrt{x}}</m>, so we can solve for <m>x</m>:
+                        <md>
+                            <mrow>f'(x) \amp = \frac{1}{3}</mrow>
+                            <mrow>\frac{1}{2\sqrt{x}} \amp = \frac{1}{3}</mrow>
+                            <mrow>2\sqrt{x} \amp= 3</mrow>
+                            <mrow>\sqrt{x} \amp = \frac{3}{2}</mrow>
+                            <mrow>x \amp = \frac{9}{4}</mrow>
+                        </md>
+                        So the point guaranteed to exist by the Mean Value Theorem is located at <m>\left(\frac{9}{4}, \frac{5}{2}\right)</m>, where the slope of the tangent line is <m>f'\left(\frac{9}{4}\right) = \frac{1}{3}</m>.
+                    </p>
+                </solution>
+            </task>
+        </example>
+        <p>
+            These examples are fine, but the real power of the Mean Value Theorem comes in how we can use it to general more interesting results. Let's check those out!
+        </p>
     </subsection>
     <subsection xml:id="subsec-ResultsFromMVT">
         <title>More Results due to the Mean Value Theorem</title>
@@ -240,4 +322,15 @@
             We'll use this result a bit later on, but it's a great example of how we can use the Mean Value Theorem to connect information about the derivative to information about how a function might work.
         </p>
     </subsection>
+    <conclusion>
+        <p>
+            Let me interject my own opinion here: I think the Mean Value Theorem is extremely important. But I also don't think that it is that important for you to <em>use</em>. 
+        </p> 
+        <p> 
+            I think you should know the general idea of connecting the slopes of the line tangent to the curve and the average slope on an interval. I think you should remember the picture we looked at. I think you should be content to see some results later on in the course and smile fondly about how the Mean Value Theorem is under the surface, churning away and getting us cool results to think about. I think we should be happy that the Mean Value Theorem is here and we can recognize it as, maybe, the most important result in this textbook.
+        </p>
+        <p>
+            But we don't need to pretend that we need to actually <em>use</em> it directly...we aren't going to need to compute a lot or anything like that. We'll just <em>know</em> it.
+        </p>
+    </conclusion>
 </section>
