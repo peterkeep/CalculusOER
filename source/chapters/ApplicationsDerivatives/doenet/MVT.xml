@@ -1,0 +1,42 @@
+<!-- https://www.doenet.org/portfolioeditor/_i5Gy7MqVS86c5zlxwxXHm/_AHZ2vuPQ1mmEESrbedDzY -->
+
+<setup>
+  <function name="f" styleNumber="6">(x-8)(x-6)(x+8)/60</function>
+  <function name="fEnds" domain="[-6,6]">(x-8)(x-6)(x+8)/60</function>
+  <derivative name="fPrime">$fEnds</derivative>
+  <number name="a">0</number>
+  <point name="point" styleNumber="$styleToggle">($a,$$fEnds($a))
+    <constraints>
+      <constrainTo>$fEnds</constrainTo>
+    </constraints>
+  </point>
+  <function name="tan" domain="[$a-3, $a+3]" styleNumber="$styleToggle">$$fPrime($a)(x-$a)+$$fEnds($a)</function>
+  <point name="P" styleNumber="1" fixLocation>(-6, $$f(-6))</point>
+  <point name="Q" styleNumber="1" fixLocation>(6, $$f(6))</point>
+  <number name="avgSlope">($P.y - $Q.y) / ($P.x - $Q.x)</number>
+  <number name="instSlope" styleNumber="2">$$fPrime($a)</number>
+
+  <styleDefinitions>
+    <styleDefinition styleNumber="4" markerColor="#07aa60" 
+      markerStyle="square" markerSize="5" fillColor="#07aa60" 
+      lineColor="#07aa60" lineStyle="solid" lineWidth="3" />
+   </styleDefinitions>
+  <conditionalContent assignNames="styleToggle">
+    <case condition="abs($avgSlope - $instSlope) < 0.02">4</case>
+    <else>2</else>
+  </conditionalContent>
+</setup>
+
+<p><em>Instructions:</em> Move the point in the interval and try to make the slope of the line tangent to the curve at the point match the slope of the line connecting the endpoints of the interval.</p>
+
+<graph ymin="-4" identicalAxisScales fixAxes>
+  $f
+  $fEnds
+  $P
+  $Q
+  <lineSegment endpoints="$P $Q" styleNumber="3"/>
+  $point
+  $tan
+</graph>
+
+<p>You should notice when you find the point where the tangent line is parallel to the line conecting the endpoints.</p>

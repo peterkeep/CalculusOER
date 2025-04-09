@@ -4,14 +4,100 @@
     <title>Mean Value Theorem</title>
     <introduction>
         <p>
-            Text
+           Let's begin here with some weird questions. The questions aren't weird because of what they're asking. Instead, they're weird because of the logic of how we interpret them compared to how we <em>want</em> to interpret them.
+           <ol>
+            <li>
+                <p>
+                    Why is the derivative of a constant function 0?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Why do <m>y=x^2+7</m> and <m>y=x^2-3</m> have the same derivative?
+                </p>
+            </li>
+            <li>
+                <p>
+                    If a function is only increasing on the interval <m>(0,1)</m>, what do we know about the derivative at any of these <m>x</m>-values in <m>(0,1)</m>?
+                </p>
+            </li>
+           </ol>
+           These questions are ones we can think through and answer.
+           <aside>
+            <p>
+                Here are some answers for these first three questions:
+                <ol>
+                    <li>
+                        <p>
+                            A constant function has all of the same <m>y</m>-values for any <m>x</m>-value in the domain: of course the slope everywhere is 0! There isn't any change in the <m>y</m>-values!
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We can differentiate these functions term by term: we know that the <m>x^2</m> term has a derivative of <m>2x</m>, and then for each function's constant, the derivative has to be 0. So it doesn't matter what each constant was, the derivatives wouldn't rely on that value!
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            If a function is increasing on an interval, then it means that for any pair of <m>x</m>-values, <m>x_1\lt x_2</m>, we get <m>y</m>-values in the same order: <m>f(x_1)\lt f(x_2)</m>. If we find the limit of slopes as <m>x_1\to x_2</m>, we'll always get a positive slope, so the derivative has to be positive.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+           </aside>
+        </p>
+        <p>
+        What's tricky is that these don't always say what we <em>want</em> to say. For instance, I might sometimes want to say the following:
+        <ol>
+            <li>
+                <p>
+                    If you know a function's derivative is 0, then you know the function is constant. Another way of saying this is that the <em>only</em> functions whose derivative is 0 are constant functions.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Similarly, we might want to say that if you know two functions that have the same derivative, then the only difference between the functions is a constant. There aren't any other ways for functions to be different with the same derivative.
+                </p>
+            </li>
+            <li>
+                <p>
+                    We might want to say that if you know the derivative is positive on an interval, that means that the function has to be increasing. 
+                </p>
+            </li>
+        </ol>
+        Do you see the (slight) difference?
+        </p>
+        <p>
+        What we'll secretly see is that all of these statements are actually correct but require a result for us to say them. The Mean Value Theorem will be the result that we use to build important and helpful results throughout the rest of this course.
         </p>
     </introduction>
 
     <subsection xml:id="subsec-Slopes">
         <title>Slopes</title>
         <p>
-            Text
+            We have two different kinds of slopes that we think of right now: a slope between two points, and a slope at a single point.
+        </p>
+        <p>
+            We can translate this into a rate of change! We think of two rates of change: an average rate of change on some interval and the instantaneous rate of change at some point.
+        </p>
+        <p>
+            We will try to connect these two different slopes/rates of change for "well-behaved" functions. Let's take a look at an example. In the graph below, we have a curve where we are considering some closed interval, as well as a point within that interval. Both slopes are visualized and calculated: the slope between the ending points of the interval is the average slope, while the slope of the line tangent to the curve at a point is the instantaneous slope. Move the point/interval around and get a feel for how these two different slopes relate (or don't relate!) to each other.
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:1">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="./doenet/AvgVsInstSlope.xml"/>
+            </slate>
+        </interactive>
+        <p>
+            If you move the interval/point around enough, you'll see that sometimes these two slopes are really similar and sometimes they're very different. But what if the point in the middle of the interval wasn't so "set" at being stuck in the exact middle of the interval? What if we stuck the interval in place, and then had the freedom to move the point anywhere in the interval?
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:0.95">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="./doenet/MVT.xml"/>
+            </slate>
+        </interactive>
+        <p>
+            Do you think we will <em>always</em> be able to do this? What kinds of functions will have these points where the slope at the point matches the average slope on the interval?
         </p>
     </subsection>
     <subsection xml:id="subsec-MVT">
@@ -27,11 +113,39 @@
                 </p>
             </statement>
         </theorem>
+        <p>
+            This theorem is really just guaranteeing the existence of at least one of the points we found above: a point where the slope of the line tangent to the curve is the same as the slope between the endpoints of the interval. We can (and, very briefly, we will) use this theorem to find the point that is guaranteed to exist, but we will, more generally, use this theorem as a tool for connection.
+        </p>
+        <p>
+            We will try to use it as a way of connecting derivatives to the behavior of a function. The Mean Value Theorem gives us this equation where on one side we have a derivative, and on the other side we have function outputs. This is really similar to the definition of the <xref ref="def-DerivativeAtPoint" text="title"/>, except that in this case we have no limit: we just get to use the behavior of the function on an interval around the point.
+        </p>
+        <p>
+            Secretly, the Mean Value Theorem is the driving force behind most of the results we will look at from here on out, at least when the requirements include continuity <em>and</em> differentiability on an interval. You can almost guarantee that if a theorem or result has these two requirements, then the Mean Value Theorem is likely at work.
+        </p>
     </subsection>
     <subsection xml:id="subsec-ResultsFromMVT">
         <title>More Results due to the Mean Value Theorem</title>
+        <p>
+            First, let's remind ourselves of what it means for a function to be increasing or decreasing on an interval.
+        </p>
+        <definition xml:id="def-IncreasingDecreasing">
+        <title>Increasing and Decreasing on an Interval</title>
+            <statement>
+                <p>
+                    A function <m>f(x)</m> is <term>increasing</term> on the interval <m>(a,b)</m> if, for every pair of <m>x</m>-values <m>x_1</m> and <m>x_2</m> (with <m>x_1
+                    \lt x_2</m>), <m>f(x_1)\
+                    \lt f(x_2)</m>.
+                </p>
+                <p>
+                    If <m>f(x_1)\gt f(x_2)</m>, then we say that <m>f</m> is <term>decreasing</term> on the interval <m>(a,b)</m>.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            Note that we classify a function as increasing or decreasing based on comparing two function outputs. This is a perfect time to use the Mean Value Theorem, since it can connect these pairs of function outputs with a derivative!
+        </p>
         <theorem xml:id="thm-IncreasingDecreasing">
-            <title>Sign of the Derivative</title>
+            <title>Sign of the Derivative and Direction of a Function</title>
             <statement>
                 <p>
                     If <m>f</m> is a function that is differentiable on the interval <m>(a,b)</m> and <m>f'(x)\gt 0</m> for all <m>x</m> in the interval <m>(a,b)</m>, then <m>f</m> must be increasing on <m>(a,b)</m>.
@@ -40,18 +154,90 @@
                     Similarly, if <m>f'(x)\lt 0</m> for all <m>x</m> in the interval <m>(a,b)</m>, then <m>f</m> must be decreasing on <m>(a,b)</m>.
                 </p>
             </statement>
+            <proof>
+                <p>
+                    Before we begin, let's just agree to think about only the case where <m>f'(x)\gt 0</m> on the interval <m>(a,b)</m>. The other case (where <m>f'(x)\lt 0</m>) ends up being the exact same argument, with some changes in signs and directions of inequalities. So we'll say <m>f'(x)\gt 0</m> for all <m>x</m>-values in the interval <m>(a,b)</m>.
+                </p>
+                <p>Ok, let's begin!</p>
+                <p>
+                    Let's pick two arbitrary <m>x</m>-values from the interval <m>(a,b)</m>. Call them <m>x_1</m> and <m>x_2</m>, and we'll make sure that we name them in a way where <m>x_1\lt x_2</m>. Now, <m>f</m> must be continuous on <m>[x_1,x_2]</m> and differentiable on <m>(x_1, x_2)</m>. We also know that <m>f'(x)\gt 0</m> for every <m>x</m> in the interval (<m>x_1\lt x\lt x_2</m>).
+                </p>
+                <p>
+                    The Mean Value Theorem says that there is some <m>x=c</m> in <m>(x_1,x_2)</m> with 
+                    <me>
+                        f'(c)=\frac{f(x_2)-f(x_1)}{x_2-x_1}
+                    </me>.
+                    Equivalently, this means that 
+                    <me>
+                        f'(c)(x_2-x_1) = f(x_2)-f(x_1)
+                    </me>.
+                    Notice that <m>f'(c)\gt 0</m> (since the derivative is positive everywhere in the interval) and <m>(x_2-x_1)gt 0</m> (by the wat we named these <m>x</m>-values). This means that <m> f'(c)(x_2-x_1)\gt 0</m>, and so <m>(f(x_2)-f(x_1))\gt 0</m> as well.
+                </p>
+                <p>
+                    Ok so notice what just happened: we arbitrarily chose <m>x</m>-values <m>x_1</m> and <m>x_2</m> and noticed that for any of these pairs where <m>x_1\lt x_2</m>, we found that <m>f(x_1)\lt f(x_2)</m>. This is exactly what it means for <m>f</m> to be increasing on the interval <m>(a,b)</m> (based on <xref ref="def-IncreasingDecreasing"/>).
+                </p>
+            </proof>
+        </theorem>
+        <p>
+            We'll use this result pretty extensively in the next couple of topics. It is helpful for us to use this to connect the signs of a derivative with our intuition about what that must mean for the direction of a function.
+        </p>
+
+        <theorem xml:id="thm-ZeroDerivative">
+            <title>If a Function's Derivative is 0, it's Constant</title>
+            <statement>
+                <p>
+                    If <m>f(x)</m> is a function defined on <m>(a,b)</m> with <m>f'(x)=0</m> for all <m>x</m>-values in the interval <m>(a,b)</m>, then <m>f(x)</m> is a constant function.
+                </p>
+            </statement>
+            <proof>
+                <p>
+                    We can almost exactly replicate the proof from <xref ref="thm-IncreasingDecreasing"/> here!
+                </p>
+                <p>
+                    Let's pick two arbitrary <m>x</m>-values from the interval <m>(a,b)</m>. Call them <m>x_1</m> and <m>x_2</m>, and we'll again make sure that we name them in a way where <m>x_1\lt x_2</m>. Now, <m>f</m> must be continuous on <m>[x_1,x_2]</m> and differentiable on <m>(x_1, x_2)</m>. This time, we know that <m>f'(x)= 0</m> for every <m>x</m> in the interval (<m>x_1\lt x\lt x_2</m>).
+                </p>
+                <p>
+                    The Mean Value Theorem says that there is some <m>x=c</m> in <m>(x_1,x_2)</m> with 
+                    <me>
+                        f'(c)=\frac{f(x_2)-f(x_1)}{x_2-x_1}
+                    </me>.
+                    Equivalently, this means that 
+                    <me>
+                        f'(c)(x_2-x_1) = f(x_2)-f(x_1)
+                    </me>.
+                    Notice that <m>f'(c)= 0</m> (since the derivative is zero everywhere in the interval). This means that <m> f'(c)(x_2-x_1)= 0</m>, and so <m>(f(x_2)-f(x_1))= 0</m> as well.
+                </p>
+                <p>
+                    This means that every <m>y</m>-value from the function is the same as every other one, since we picked these points arbitrarily. So <m>f</m> must be a constant function!
+                </p>
+            </proof>
         </theorem>
         
+        
         <theorem xml:id="thm-OffByConstant"> 
-            <title>Equal Derivatives Correspond with Related Functions</title>
-            
-                    
+            <title>Equal Derivatives Correspond with Related Functions</title>  
             <statement>
                 <p>
                     For two functions <m>f</m> and <m>g</m>, both differentiable on <m>(a,b)</m>, if <m>f'(x)=g'(x)</m> for all <m>x</m>-values on <m>(a,b)</m>, then we know that <m>f(x)=g(x)+C</m> for some real number constant <m>C</m>. That is, the only differences in <m>f</m> and <m>g</m> are due to a difference in the constant term.
                 </p>
             </statement>
+            <proof>
+                <p>
+                    This one is pretty easy to prove: we're going to use a fun little trick where we connect this theorem to <xref ref="thm-ZeroDerivative"/>.
+                </p>
+                <p>
+                    Let's think about these two functions <m>f</m> and <m>g</m> with <m>f'(x)=g'(x)</m>, and let's think about a function <m>h(x)=f(x)-g(x)</m>. Now we can notice that <m>h'(x)=f'(x)-g'(x)</m> which has to be 0.
+                </p>
+                <p>
+                    Oh wow, <m>h(x)</m> is a function with <m>h'(x)=0</m> on the interval <m>(a,b)</m>. It must be a constant function (based on <xref ref="thm-ZeroDerivative"/>)! Let's call it <m>h(x)=C</m>, where <m>C</m> is some real number constant.
+                </p>
+                <p>
+                    This means that <m>f(x)-g(x)=C</m>, and we can see that the only difference between these two functions is a constant.
+                </p>
+            </proof>
         </theorem>
-        
+        <p>
+            We'll use this result a bit later on, but it's a great example of how we can use the Mean Value Theorem to connect information about the derivative to information about how a function might work.
+        </p>
     </subsection>
 </section>

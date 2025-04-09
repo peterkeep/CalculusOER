@@ -1,0 +1,26 @@
+<!-- https://www.doenet.org/portfolioeditor/_MIinBPapnArG3nOcWG3YT/_P4uJCNezOIwGr79Su4NUH -->
+
+<setup>
+  <function name="f" styleNumber="6">(x-1)(x-3)(x+5)/40</function>
+  <function name="fEnds" domain="[$a-3,$a+3]">$f</function>
+  <derivative name="fPrime">$f</derivative>
+  <number name="a">2</number>
+  <point name="point" styleNumber="2">($a,$$f($a))</point>
+  <function name="tan" domain="[$a-2, $a+2]" styleNumber="2">$$fPrime($a)(x-$a)+$$f($a)</function>
+  <point name="P" styleNumber="1">($a-3, $$f($a-3))</point>
+  <point name="Q" styleNumber="1">($a+3, $$f($a+3))</point>
+  <number name="avgSlope">($P.y - $Q.y) / ($P.x - $Q.x)</number>
+  <number name="instSlope" styleNumber="2">$$fPrime($a)</number>
+</setup>
+
+<graph fixAxes>
+  $f
+  $fEnds
+  $P
+  $Q
+  <lineSegment endpoints="$P $Q" styleNumber="3"/>
+  $point
+  $tan
+</graph>
+
+The average slope on the interval is: <m>$avgSlope</m>. The instantaneous slope at the point is: <m>$instSlope</m>.
