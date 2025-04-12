@@ -1249,7 +1249,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.6",
   "title": "Linear Approximations",
-  "body": " Linear Approximations  Text of section.  "
+  "body": " Linear Approximations   We're going to return to a pretty central idea here, one that we've been using and developing and really exploring. But let's think about the very basic version of what we've been looking at over this whole chapter (and more):   The derivative of a function tells us the slope of the line tangent to the function at a point.   But what we'll do is explore how this tangent line and the graph of our function interact and relate to each other. Let's start with just playing with a graph and seeing if we can discover some things to say about the relationship between a tangent line and the function it is lying tangent to!   The effect that we are seeing when we zoom in on a function is sometimes described as our function being locally linear . What do you think this means? Why is this a good description of what we're looking at, and how these differentiable functions are constructed?  Would this effect be noticeable for every function, even ones that are not differentiable at some points?    Linearly Approximating a Function      Differentials      Approximating Zeros of a Function     "
+},
+{
+  "id": "sec-LinearApproximation-2-5",
+  "level": "2",
+  "url": "sec-LinearApproximation.html#sec-LinearApproximation-2-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "locally linear "
 },
 {
   "id": "sec-LHopitalsRule",
