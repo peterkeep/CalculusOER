@@ -1,0 +1,38 @@
+<!-- https://doenet.org/portfolioeditor/_01odg3vz5j7WGCkub4Zfm/_jEQqOFfuhZf76crYxHdAR -->
+
+<setup>
+    <function name="f">(x-2)(x+1)(x+5)/10</function>
+    <point name="P">(1, $$f(1))
+      <constraints>
+        <constrainTo>$f</constrainTo>
+      </constraints>
+    </point>
+    <derivative name="fPrime">$f</derivative>
+    <function name="tan" styleNumber="2">$$fPrime($P.x)(x - $P.x) + $P.y</function>
+    <number name="xmin">$P.x-3.01+3*$zoom</number>
+    <number name="xmax">$P.x+3.01-3*$zoom</number>
+    <number name="ymin">$P.y-3.01+3*$zoom</number>
+    <number name="ymax">$P.y+3.01-3*$zoom</number>
+  </setup>
+  
+  <p><em>Instructions:</em> The graph on the left is the graph of <m>f(x)</m>, a function that is continuous and differentiable on <m>(-\infty, \infty)</m>. The dotted rectangle around the point is the viewing window for the graph on the right. Use the slider to zoom in closer on the point, and see how the curve of <m>f(x)</m> and the tangent line at the point relate to each other. You can also drag the point around to view this at different locations.</p>
+  
+  <p>Drag to zoom in.</p>
+  <slider name="zoom" from="0" to="1" step="0.01" showTicks="false" showValue="false"/>
+  
+  <sideBySide>
+    <graph size="small" xmin="-7" xmax="6" ymin="-6.5" ymax="6.5" fixAxes>
+      $f
+      $P
+      $tan
+      <rectangle vertices="($xmin, $ymin) ($xmax, $ymax)" styleNumber="6"/>
+    </graph>
+  
+    <graph size="small" 
+      xmin="$xmin" xmax="$xmax" ymin="$ymin" ymax="$ymax"
+      fixAxes>
+      $f
+      $P
+      $tan
+    </graph>
+  </sideBySide>

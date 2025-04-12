@@ -2,7 +2,44 @@
 
 <section xml:id="sec-LinearApproximation" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Linear Approximations</title>
-
-  <p> Text of section. </p>
-
+  <introduction>
+    <p>
+      We're going to return to a pretty central idea here, one that we've been using and developing and really exploring. But let's think about the very basic version of what we've been looking at over this whole chapter (and more):
+    </p>
+    <p>
+      <em>The derivative of a function tells us the slope of the line tangent to the function at a point.</em>
+    </p>
+    <p>
+      But what we'll do is explore how this tangent line and the graph of our function interact and relate to each other. Let's start with just playing with a graph and seeing if we can discover some things to say about the relationship between a tangent line and the function it is lying tangent to!
+    </p>
+    <interactive platform="doenetml" width="95%" aspect="1:1">
+      <slate surface="doenetml">
+          <xi:include parse="text" href="./doenet/LocalLinearity.xml"/>
+      </slate>
+  </interactive>
+  <p>
+    The effect that we are seeing when we zoom in on a function is sometimes described as our function being <term>locally linear</term>. What do you think this means? Why is this a good description of what we're looking at, and how these differentiable functions are constructed?
+  </p>
+  <p>
+    Would this effect be noticeable for every function, even ones that are not differentiable at some points?
+  </p>
+  </introduction>
+  <subsection xml:id="subsec-LinearApproximation">
+    <title>Linearly Approximating a Function</title>
+    <p>
+      
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-Differentials">
+    <title>Differentials</title>
+    <p>
+      
+    </p>  
+  </subsection>
+  <subsection xml:id="subsec-ApproximatingZeros">
+    <title>Approximating Zeros of a Function</title>
+    <p>
+      
+    </p>
+  </subsection>
 </section>
