@@ -97,15 +97,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.16';
+eBookConfig.runestone_version = '7.6.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.a0c870bab402ccbf.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97de40e034b535c5.css">
+<script src="_static/prefix-runtime.052b07dd5d5bd82e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.253ff4af1e53e55f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
@@ -314,8 +314,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-LinearApproximation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Linear Approximations</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LinearApproximation.html#subsec-LinearApproximation" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Linearly Approximating a Function</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LinearApproximation.html#subsec-Differentials" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Differentials</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LinearApproximation.html#subsec-ApproximatingZeros" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Approximating Zeros of a Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LinearApproximation.html#subsec-ApproximatingZeros" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Approximating Zeros of a Function</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LHopitalsRule.html" class="internal"><span class="codenumber">4.7</span> <span class="title">L’Hopital’s Rule</span></a></div></li>
@@ -510,14 +509,86 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="sec-LinearApproximation-2-2"><em class="emphasis">The derivative of a function tells us the slope of the line tangent to the function at a point.</em></div>
 <div class="para" id="sec-LinearApproximation-2-3">But what we’ll do is explore how this tangent line and the graph of our function interact and relate to each other. Let’s start with just playing with a graph and seeing if we can discover some things to say about the relationship between a tangent line and the function it is lying tangent to!</div>
 <iframe id="sec-LinearApproximation-2-4" width="570" height="570" src="sec-LinearApproximation-2-4-if.html"></iframe><div class="para" id="sec-LinearApproximation-2-5">The effect that we are seeing when we zoom in on a function is sometimes described as our function being <dfn class="terminology">locally linear</dfn>. What do you think this means? Why is this a good description of what we’re looking at, and how these differentiable functions are constructed?</div>
-<div class="para" id="sec-LinearApproximation-2-6">Would this effect be noticeable for every function, even ones that are not differentiable at some points?</div></section><section class="subsection" id="subsec-LinearApproximation"><h3 class="heading hide-type">
+<div class="para" id="sec-LinearApproximation-2-6">Would this effect be noticeable for every function, even ones that are not differentiable at some points?</div>
+<div class="para" id="sec-LinearApproximation-2-7">Convince yourself that a function will not look locally linear at a point where the function is not differentiable. You might want to remind yourself what it looks like, graphically, when a derivative doesn’t exist: <a href="sec-InterpretingDerivatives.html#strat-DerivativesDontExist" class="xref" data-knowl="./knowl/xref/strat-DerivativesDontExist.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: When Does a Derivative Not Exist?">When Does a Derivative Not Exist?</a>
+</div></section><section class="subsection" id="subsec-LinearApproximation"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.6.1</span><span class="space"> </span><span class="title">Linearly Approximating a Function</span>
 </h3>
-<div class="para" id="subsec-LinearApproximation-2"></div></section><section class="subsection" id="subsec-Differentials"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.6.2</span><span class="space"> </span><span class="title">Differentials</span>
-</h3>
-<div class="para" id="subsec-Differentials-2"></div></section><section class="subsection" id="subsec-ApproximatingZeros"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.6.3</span><span class="space"> </span><span class="title">Approximating Zeros of a Function</span>
+<div class="para logical" id="subsec-LinearApproximation-2">
+<div class="para">The visual above should provide us with a nice framework to think about how we might approximate a function linearly, but we can recap some basic ideas:</div>
+<ul class="disc" id="subsec-LinearApproximation-2-1">
+<li id="subsec-LinearApproximation-2-1-1"><div class="para" id="subsec-LinearApproximation-2-1-1-1">When we say "linear approximation," we’re really just referring to the tangent line at some point.</div></li>
+<li id="subsec-LinearApproximation-2-1-2"><div class="para" id="subsec-LinearApproximation-2-1-2-1">Our functions only look "locally linear" when we zoom in around some single point. Another way of saying this is that our tangent line only matches the behavior of our function really close to the point where we built the tangent line.</div></li>
+<li id="subsec-LinearApproximation-2-1-3"><div class="para" id="subsec-LinearApproximation-2-1-3-1">We have a kind of vague or ambiguous idea of accuracy in approximation. While a tangent line follows the behavior of the function "around" that point where it was built, the actual rate at which it deviates from our function is different. If we move the point in the visual above, we’ll see that at some locations, our function is pretty linear and doesn’t move away from the tangent line very quickly. In other locations, the function turns quickly away from the tangent line!</div></li>
+</ul>
+</div>
+<article class="definition definition-like" id="def-LinearApproximation"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.6.1</span><span class="period">.</span><span class="space"> </span><span class="title">Linear Approximation of a Function.</span>
+</h4>
+<div class="para logical" id="def-LinearApproximation-2-1">
+<div class="para">If <span class="process-math">\(f(x)\)</span> is differentiable at <span class="process-math">\(x=a\text{,}\)</span> then we say that a <dfn class="terminology">linear approximation</dfn> of <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=a\)</span> is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L(x) = f'(a)(x-a)+f(a)\text{.}
+\end{equation*}
+</div>
+<div class="para">We know, then, that <span class="process-math">\(L(x)\approx f(x)\)</span> for <span class="process-math">\(x\)</span>-values "close" to the center, <span class="process-math">\(x=a\text{.}\)</span>
+</div>
+</div> <div class="para" id="def-LinearApproximation-2-2">Note that the <dfn class="terminology">center</dfn> is just the point at which we are building this linear approximation: the point at which we build the tangent line.</div></article><div class="para" id="subsec-LinearApproximation-4">Let’s see this in action!</div>
+<article class="activity project-like" id="act-LinearApproximation-Exponential"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.1</span><span class="period">.</span><span class="space"> </span><span class="title">Approximating an Exponential Function.</span>
+</h4>
+<div class="introduction" id="act-LinearApproximation-Exponential-2"><div class="para" id="act-LinearApproximation-Exponential-2-1">Let’s consider the function <span class="process-math">\(f(x)=e^x\text{.}\)</span> We’re going to build the linear approximation, <span class="process-math">\(L(x)\text{,}\)</span> but we also want to focus on understanding what the "center" is, and how we think about accuracy of our estimations.</div></div>
+<article class="task exercise-like" id="act-LinearApproximation-Exponential-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="act-LinearApproximation-Exponential-3-1-1">
+<div class="para">We first need to find a "good" center for our linear approximation. We have two real requirements here:</div>
+<ol class="decimal" id="act-LinearApproximation-Exponential-3-1-1-1">
+<li id="act-LinearApproximation-Exponential-3-1-1-1-1"><div class="para" id="act-LinearApproximation-Exponential-3-1-1-1-1-1">We need the center to be some <span class="process-math">\(x\)</span>-value that will be "close" to the inputs we’re most interested in. We know that <span class="process-math">\(L(x)\approx f(x)\)</span> for <span class="process-math">\(x\)</span>-values "near" the center, so we should keep this in mind. We don’t have a specific input that we’re interested in (we are not specifically focused on estimating <span class="process-math">\(f(7.35)\)</span> for instance), so we don’t need to worry about this for now.</div></li>
+<li id="act-LinearApproximation-Exponential-3-1-1-1-2"><div class="para" id="act-LinearApproximation-Exponential-3-1-1-1-2-1">We are going to need to evaluate the function and its derivative at the center: we use <span class="process-math">\(f'(a)\)</span> to find the slope and <span class="process-math">\(f(a)\)</span> to find a <span class="process-math">\(y\)</span>-value for a point on the line. We’d like to choose a center that will make evaluating these functions reasonable, if we can!</div></li>
+</ol>
+<div class="para">We are going to choose a center of 0: why?</div>
+</div></article><article class="task exercise-like" id="act-LinearApproximation-Exponential-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-LinearApproximation-Exponential-4-1-1">Build a linear approximation of <span class="process-math">\(f(x)=e^x\)</span> centered at <span class="process-math">\(x=0\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-LinearApproximation-Exponential-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-LinearApproximation-Exponential-4-2-1">Build a line with a slope of <span class="process-math">\(f'(0)\)</span> that goes through the point <span class="process-math">\((0, f(0))\text{.}\)</span>
+</div></div></details></div></article><article class="task exercise-like" id="act-LinearApproximation-Exponential-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-LinearApproximation-Exponential-5-1-1">Use your linear approximation to estimate the value of <span class="process-math">\(\sqrt[10]{e} = e^{\frac{1}{10}}\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-LinearApproximation-Exponential-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-LinearApproximation-Exponential-5-2-1">Since <span class="process-math">\(L(x)\approx f(x)\)</span> for <span class="process-math">\(x\)</span>-values near 0, we can say that <span class="process-math">\(L(1/10)\approx f(1/10)\text{.}\)</span> So you can evaluate your linear approximation function at <span class="process-math">\(x=\frac{1}{10}\text{.}\)</span>
+</div></div></details></div></article><article class="task exercise-like" id="act-LinearApproximation-Exponential-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-LinearApproximation-Exponential-6-1-1">Let’s visualize this approximation a bit:</div> <iframe id="act-LinearApproximation-Exponential-6-1-2" width="570" height="684" src="act-LinearApproximation-Exponential-6-1-2-if.html"></iframe> <div class="para" id="act-LinearApproximation-Exponential-6-1-3">Are you confident in your approximation of <span class="process-math">\(\sqrt[10]{e}\text{?}\)</span> Would you be more or less confident in an approximation of <span class="process-math">\(\frac{1}{e}\text{?}\)</span> Why?</div></article><article class="task exercise-like" id="act-LinearApproximation-Exponential-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-LinearApproximation-Exponential-7-1-1">Is your estimate of <span class="process-math">\(\sqrt[10]{e}\)</span> too big or too small? How can you tell, without even calculating the actual value of <span class="process-math">\(\sqrt[10]{e}\text{?}\)</span>
+</div> <div class="para" id="act-LinearApproximation-Exponential-7-1-2">How can you tell that <em class="emphasis">every</em> estimate that you get out of <em class="emphasis">any</em> linear approximation of <span class="process-math">\(e^x\)</span> (no matter what the center is) is going to be too small?</div>
+<div class="solutions"><details id="act-LinearApproximation-Exponential-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-LinearApproximation-Exponential-7-2-1">It might be helpful to think about how the function moves away from the tangent line: how do the slopes of <span class="process-math">\(e^x\)</span> change? Can you link this to ideas of concavity?</div></div></details></div></article></article><div class="para" id="subsec-LinearApproximation-6">In this activity, we did not have to think much about an appropriate choice of center. We tried to justify our choice, but that’s different than having to <em class="emphasis">make</em> a choice. Let’s approach this a bit differently in our next examples.</div>
+<article class="activity project-like" id="act-LinearApproximations"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.2</span><span class="period">.</span><span class="space"> </span><span class="title">Approximating some Values.</span>
+</h4>
+<div class="introduction" id="act-LinearApproximations-2"><div class="para logical" id="act-LinearApproximations-2-1">
+<div class="para">Pick one of the following values to approximate:</div>
+<ul class="disc" id="act-LinearApproximations-2-1-1">
+<li id="act-LinearApproximations-2-1-1-1"><div class="para" id="act-LinearApproximations-2-1-1-1-1"><span class="process-math">\(\displaystyle \sin(-0.023)\)</span></div></li>
+<li id="act-LinearApproximations-2-1-1-2"><div class="para" id="act-LinearApproximations-2-1-1-2-1"><span class="process-math">\(\displaystyle \ln(2)\)</span></div></li>
+<li id="act-LinearApproximations-2-1-1-3"><div class="para" id="act-LinearApproximations-2-1-1-3-1"><span class="process-math">\(\displaystyle \sqrt{8}\)</span></div></li>
+<li id="act-LinearApproximations-2-1-1-4"><div class="para" id="act-LinearApproximations-2-1-1-4-1"><span class="process-math">\(\displaystyle \sqrt[3]{10}\)</span></div></li>
+</ul>
+<div class="para">Throughout the rest of this activity, use your value to build a linear approximation of some relevant function and estimate the value you chose.</div>
+</div></div>
+<article class="task exercise-like" id="act-LinearApproximations-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="act-LinearApproximations-3-1-1">
+<div class="para">To build a linear approximation of some function at some center, we need two things:</div>
+<ol class="decimal" id="act-LinearApproximations-3-1-1-1">
+<li id="act-LinearApproximations-3-1-1-1-1"><div class="para" id="act-LinearApproximations-3-1-1-1-1-1">A function.</div></li>
+<li id="act-LinearApproximations-3-1-1-1-2"><div class="para" id="act-LinearApproximations-3-1-1-1-2-1">A center.</div></li>
+</ol>
+<div class="para">What function will you be using for <span class="process-math">\(f(x)\text{?}\)</span> Why that one?</div>
+</div>
+<div class="solutions"><details id="act-LinearApproximations-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-LinearApproximations-3-2-1">Your value should look like the output of some function after you plug in some <span class="process-math">\(x\)</span>-value. What function?</div></div></details></div></article><article class="task exercise-like" id="act-LinearApproximations-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-LinearApproximations-4-1-1">What center are you choosing? Why that one?</div>
+<div class="solutions"><details id="act-LinearApproximations-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-LinearApproximations-4-2-1">Remember that we want some input for your function that is both close to the input you’d like to estimate your function at and also a reasonable one to know the value of your function and its derivative.</div></div></details></div></article><article class="task exercise-like" id="act-LinearApproximations-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-LinearApproximations-5-1-1">Build your linear approximation at your center! You should end up with an actual linear function. It might be helpful to plot this linear function and your actual function to confirm that you have actually built a tangent line.</div></article><article class="task exercise-like" id="act-LinearApproximations-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-LinearApproximations-6-1-1">Use your linear approximation function to estimate your value! Report the estimate, and comment on the accuracy of your estimate. Without calculating the actual value, can you tell if this is close or not? Do you have an overestimate or underestimate?</div>
+<div class="solutions"><details id="act-LinearApproximations-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-LinearApproximations-6-2-1">Think about issues relating to the distance from the center, the concavity of the function, and even the rate at which the slopes change away as we move away from the center.</div></div></details></div></article></article></section><section class="subsection" id="subsec-ApproximatingZeros"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.6.2</span><span class="space"> </span><span class="title">Approximating Zeros of a Function</span>
 </h3>
 <div class="para" id="subsec-ApproximatingZeros-2"></div></section></section></div>
 <div class="ptx-content-footer">
