@@ -23,23 +23,66 @@
   <p>
     Would this effect be noticeable for every function, even ones that are not differentiable at some points?
   </p>
+  <p>
+    Convince yourself that a function will not look locally linear at a point where the function is not differentiable. You might want to remind yourself what it looks like, graphically, when a derivative doesn't exist: <xref ref="strat-DerivativesDontExist" text="title"/>
+  </p>
   </introduction>
   <subsection xml:id="subsec-LinearApproximation">
     <title>Linearly Approximating a Function</title>
     <p>
-      
+      The visual above should provide us with a nice framework to think about how we might approximate a function linearly, but we can recap some basic ideas:
+      <ul>
+        <li>
+          <p>
+            When we say "linear approximation," we're really just referring to the tangent line at some point.
+          </p>
+        </li>
+        <li>
+          <p>
+            Our functions only look "locally linear" when we zoom in around some single point. Another way of saying this is that our tangent line only matches the behavior of our function really close to the point where we built the tangent line.
+          </p>
+        </li>
+        <li>
+          <p>
+            We have a kind of vague or ambiguous idea of accuracy in approximation. While a tangent line follows the behavior of the function "around" that point where it was built, the actual rate at which it deviates from our function is different. If we move the point in the visual above, we'll see that at some locations, our function is pretty linear and doesn't move away from the tangent line very quickly. In other locations, the function turns quickly away from the tangent line! 
+          </p>
+        </li>
+      </ul>
     </p>
-  </subsection>
-  <subsection xml:id="subsec-Differentials">
-    <title>Differentials</title>
+    <definition xml:id="def-LinearApproximation">
+      <title>Linear Approximation of a Function</title>      
+      <statement>
+        <p>
+          If <m>f(x)</m> is differentiable at <m>x=a</m>, then we say that a <term>linear approximation</term> of <m>f(x)</m> centered at <m>x=a</m> is:
+          <me>
+            L(x) = f'(a)(x-a)+f(a)
+          </me>.
+          We know, then, that <m>L(x)\approx f(x)</m> for <m>x</m>-values "close" to the center, <m>x=a</m>. 
+        </p>
+        <p>
+          Note that the <term>center</term> is just the point at which we are building this linear approximation: the point at which we build the tangent line.
+        </p>
+      </statement>
+    </definition>
     <p>
-      
-    </p>  
+      Let's see this in action!
+    </p>
+    <xi:include href="./activities/act-LinearApproximation-Exponential.ptx" />
+    <p>
+      In this activity, we did not have to think much about an appropriate choice of center. We tried to justify our choice, but that's different than having to <em>make</em> a choice. Let's approach this a bit differently in our next examples.
+    </p>
+    <xi:include href="./activities/act-LinearApproximations.ptx" />
   </subsection>
+
   <subsection xml:id="subsec-ApproximatingZeros">
     <title>Approximating Zeros of a Function</title>
     <p>
       
     </p>
   </subsection>
+  <conclusion>
+    <p>
+      
+    </p>
+  </conclusion>
 </section>

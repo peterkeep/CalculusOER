@@ -1,0 +1,30 @@
+<!-- https://doenet.org/portfolioeditor/_5dRJx70rIclgyh32CMVYd/_TYEMSwOs1Fhk3B8LupOF7 -->
+
+<setup>
+    <function name="f" domain="[-1,1]">e^x</function>
+    <function name="exp">e^x</function>
+    <function name="L" styleNumber="2">x+1</function>
+    <point fixed="true">(0,1)</point>
+    <point name="Pf">(1, $$f(1))
+      <constraints>
+        <constrainTo>$f</constrainTo>
+      </constraints>
+    </point>
+    <point name="PL" styleNumber="2">($Pf.x, $$L($Pf.x))</point>
+  </setup>
+  <p><em>Instructions:</em> The red line is the linear approximation of the exponential function, centered at <m>x=0</m>. Move the point around to see how well the linear approximation actually estimates the <m>y</m>-value outputs from the exponential function.</p>
+  <md>
+    <mrow> L(x) \amp \approx f(x) \amp \text{for } x\text{-values close to 0.}</mrow>
+    <mrow> x+1 \amp \approx e^x</mrow>
+  </md>
+  
+  <graph xmin="-3" xmax="3" ymin="-1" ymax="4" identicalAxisScales fixAxes>
+    $exp
+    $L
+    $Pf
+    $PL
+  </graph>
+  <md>
+    <mrow> L($Pf.x) \amp \approx f($Pf.x)</mrow>
+    <mrow> $$L($Pf.x) \amp \approx e^{$Pf.x}</mrow>
+  </md>

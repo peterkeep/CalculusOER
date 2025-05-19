@@ -1,0 +1,83 @@
+<activity xml:id="act-LinearApproximation-Exponential" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Approximating an Exponential Function</title>
+    <introduction>
+        <p>
+            Let's consider the function <m>f(x)=e^x</m>. We're going to build the linear approximation, <m>L(x)</m>, but we also want to focus on understanding what the "center" is, and how we think about accuracy of our estimations.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                We first need to find a "good" center for our linear approximation. We have two real requirements here:
+                <ol>
+                    <li>
+                        <p>
+                            We need the center to be some <m>x</m>-value that will be "close" to the inputs we're most interested in. We know that <m>L(x)\approx f(x)</m> for <m>x</m>-values "near" the center, so we should keep this in mind. We don't have a specific input that we're interested in (we are not specifically focused on estimating <m>f(7.35)</m> for instance), so we don't need to worry about this for now.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We are going to need to evaluate the function and its derivative at the center: we use <m>f'(a)</m> to find the slope and <m>f(a)</m> to find a <m>y</m>-value for a point on the line. We'd like to choose a center that will make evaluating these functions reasonable, if we can!
+                        </p>
+                    </li>
+                </ol>
+                We are going to choose a center of 0: why?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Build a linear approximation of <m>f(x)=e^x</m> centered at <m>x=0</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Build a line with a slope of <m>f'(0)</m> that goes through the point <m>(0, f(0))</m>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use your linear approximation to estimate the value of <m>\sqrt[10]{e} = e^{\frac{1}{10}}</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Since <m>L(x)\approx f(x)</m> for <m>x</m>-values near 0, we can say that <m>L(1/10)\approx f(1/10)</m>. So you can evaluate your linear approximation function at <m>x=\frac{1}{10}</m>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's visualize this approximation a bit:
+            </p>
+                <interactive platform="doenetml" width="95%" aspect="1:1.2">
+                    <slate surface="doenetml">
+                        <xi:include parse="text" href="../doenet/LinearApproximation-Exponential.xml"/>
+                    </slate>
+                </interactive>
+            <p>
+                Are you confident in your approximation of <m>\sqrt[10]{e}</m>? Would you be more or less confident in an approximation of <m>\frac{1}{e}</m>? Why?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Is your estimate of <m>\sqrt[10]{e}</m> too big or too small? How can you tell, without even calculating the actual value of <m>\sqrt[10]{e}</m>?
+            </p>
+            <p>
+                How can you tell that <em>every</em> estimate that you get out of <em>any</em> linear approximation of <m>e^x</m> (no matter what the center is) is going to be too small?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                It might be helpful to think about how the function moves away from the tangent line: how do the slopes of <m>e^x</m> change? Can you link this to ideas of concavity?
+            </p>
+        </hint>
+    </task>
+    
+</activity>

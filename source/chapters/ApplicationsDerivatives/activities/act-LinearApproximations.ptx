@@ -1,0 +1,88 @@
+<activity xml:id="act-LinearApproximations">
+    <title>Approximating some Values</title>
+    <introduction>
+        <p>
+            Pick one of the following values to approximate:
+            <ul>
+                <li>
+                    <p>
+                        <m>\sin(-0.023)</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\ln(2)</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\sqrt{8}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\sqrt[3]{10}</m>
+                    </p>
+                </li>
+            </ul>
+            Throughout the rest of this activity, use your value to build a linear approximation of some relevant function and estimate the value you chose.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                To build a linear approximation of some function at some center, we need two things:
+                <ol>
+                    <li>
+                        <p>
+                            A function.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            A center.
+                        </p>
+                    </li>
+                </ol>
+                What function will you be using for <m>f(x)</m>? Why that one?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Your value should look like the output of some function after you plug in some <m>x</m>-value. What function?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What center are you choosing? Why that one?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Remember that we want some input for your function that is both close to the input you'd like to estimate your function at and also a reasonable one to know the value of your function and its derivative.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Build your linear approximation at your center! You should end up with an actual linear function. It might be helpful to plot this linear function and your actual function to confirm that you have actually built a tangent line.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use your linear approximation function to estimate your value! Report the estimate, and comment on the accuracy of your estimate. Without calculating the actual value, can you tell if this is close or not? Do you have an overestimate or underestimate?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Think about issues relating to the distance from the center, the concavity of the function, and even the rate at which the slopes change away as we move away from the center.
+            </p>
+        </hint>
+    </task>
+    
+</activity>
