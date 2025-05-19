@@ -72,17 +72,32 @@
       In this activity, we did not have to think much about an appropriate choice of center. We tried to justify our choice, but that's different than having to <em>make</em> a choice. Let's approach this a bit differently in our next examples.
     </p>
     <xi:include href="./activities/act-LinearApproximations.ptx" />
+    <p>
+      So far, we have been pretty limited in what we can actually <em>do</em> with these linear approximations. A function is only locally linear when we look at a very small interval of <m>x</m>-values. Once we move away from the center far enough (and it's often not that far), then our function curves away from the tangent line and our linear approximation is not at all accurate.
+    </p>
+    <aside>
+      <p>
+        If you want to see how we can make these linear approximations more accurate, then we can try to think about using a quadratic or cubic function instead: something with some curves built into it that can try to follow the function's behavior a bit! We'll cover that in <xref ref="sec-PolynomialApproximation" text="type-global-title"/>.
+      </p>
+    </aside>
   </subsection>
 
   <subsection xml:id="subsec-ApproximatingZeros">
     <title>Approximating Zeros of a Function</title>
     <p>
-      
+      Let's look one really cool application of linear approximations before we finish things up in this section.
     </p>
-  </subsection>
-  <conclusion>
     <p>
-      
+      In approximately 60 AD, Heron of Alexandria presented a method for approximating square roots (probably...historians know very little about exactly when Heron was born and died, but they think he saw an eclipse that matched one from 62 AD, so it's a good guess). This algorithm was presented along with different formulas for volumes and surface areas of a mixture of objects. 
     </p>
-  </conclusion>
+    <aside>
+      <p>
+        You might know of Heron from Heron's formula for the area of a triangle!
+      </p>
+    </aside>
+    <p>
+      Over 1000 years later, in the late 1660's, Isaac Newton was one of a long list of mathematicians  to re-create this formula in a more general way, where we can use it to approximate roots of polynomials. This method was later extended by several different mathematicians, and is now known as the <term>Newton-Raphson method</term>, or sometimes more simply <term>Newton's method</term>.
+    </p>
+    <xi:include href="./activities/act-NewtonsMethod.ptx" />
+  </subsection>
 </section>

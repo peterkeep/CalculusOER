@@ -1,0 +1,123 @@
+<activity xml:id="act-NewtonsMethod" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Walking in the Footsteps of Ancient Mathematicians</title>
+    <introduction>
+        <p>
+            Let's travel all the way back to the first (or maybe second) century AD and recreate Heron's method to approximate the value of <m>\sqrt{2}</m>. We'll develop this using modern calculus, and simple linear approximation.
+        </p>
+        <p>
+            We're going to re-frame the problem, and instead we're going to try to use a linear approximation of <m>f(x)=x^2-2</m> to approximate the <m>x</m>-value where <m>f(x)=0</m>. We know enough about quadratic functions to know that there are two values: <m>x=-\sqrt{2}</m> and <m>x=\sqrt{2}</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                We're going to build a linear approximation of <m>f(x) = x^2-2</m>, and we need a reasonable center. Honestly, any integer will work, since we can evaluate <m>f</m> and <m>f'</m> really easily, but we want to find one that is close to <m>\sqrt{2}</m>. Let's center our approximation at <m>x=2</m>.
+            </p>
+            <p>
+                Find <m>f'(x)</m>, and then construct the linear approximation:
+                <me>
+                    L(x) = f'(2)(x-2)+f(2)
+                </me>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                Since <m>f'(x)=2x</m>, we have <m>f'(2)=4</m> and <m>f(2) = 2</m>. So then we end up with the following for our linear approximation:
+                <me>
+                    L(x) = 4(x-2)+2
+                </me>.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now we know that <m>L(x)\approx f(x)</m> for <m>x</m>-values near our center, <m>x=2</m>. What if we estimate the <m>x</m>-value where <m>f(x)=0</m> by solving <m>L(x)=0</m> instead? Since <m>L(x)\approx f(x)</m>, the <m>x</m>-value where <m>L(x)=0</m> should make <m>f(x)</m> pretty close to 0 at least.
+            </p>
+            <p>
+                Solve <m>L(x)=0</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>0 \amp = 4(x-2)+2</mrow>
+                    <mrow>-2 \amp 4(x-2)</mrow>
+                    <mrow>-\frac{2}{4} \amp x-2</mrow>
+                    <mrow>2 - \frac{1}{2} \amp x</mrow>
+                    <mrow> x \amp = \frac{3}{2} </mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Ok, this might be kind of close to the value of <m>\sqrt{2}</m>, right? Let's visualize this.
+            </p>
+            <p>
+                Hm...so this isn't that good of an approximation yet. We can check this by looking at the actual value of our function at <m>x=\frac{3}{2}</m> and seeing if it's close to 0.
+                <md>
+                    <mrow>f\left(\frac{3}{2}\right) \amp = \left(\frac{3}{2}\right)^2 - 2</mrow>
+                    <mrow> \amp = \frac{9}{4} - 2</mrow>
+                    <mrow> \amp \frac{1}{4}</mrow>
+                </md>
+                This...isn't that close to 0.
+            </p>
+            <p>
+                So let's try this again. This time, though, let's center our <em>new</em> linear approximation at <m>x=\frac{3}{2}</m>. 
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>L(x) \amp f'\left(\frac{3}{2}\right)\left(x-\frac{3}{2}\right)+f\left(\frac{3}{2}\right) </mrow>
+                    <mrow> \amp = 3\left(x-\frac{3}{2}) + \frac{1}{4}</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now set this <em>new</em> linear approximation equal to 0 and solve <m>L(x)=0</m> to estimate the solution to <m>f(x)=0</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>0 \amp = 3\left(x-\frac{3}{2}) + \frac{1}{4}</mrow>
+                    <mrow>-\frac{1}{4} \amp = 3\left(x-\frac{3}{2}\right)</mrow>
+                    <mrow>-\frac{1}{12} \amp = x- \frac{3}{2}</mrow>
+                    <mrow>\frac{3}{2} - \frac{1}{12} \amp </mrow>
+                    <mrow>x \amp= \frac{17}{12} </mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                We can keep repeating this process, and that's exactly what the mathematicians we talked about discovered.
+            </p>
+            <p>
+                Say we've build a linear approximation at some <m>x</m>-value (we'll call it <m>x_{\mbox{old}}</m>).
+                <me>
+                    L(x) = f'(x_{\mbox{old}})(x-x_{\mbox{old}}) + f(x_{\mbox{old}})
+                </me>.
+                Set this equal to 0 and solve.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow> 0 \amp= f'(x_{\mbox{old}})(x-x_{\mbox{old}}) + f(x_{\mbox{old}}) </mrow>
+                    <mrow>-f(x_{\mbox{old}}) \amp = f'(x_{\mbox{old}})(x-x_{\mbox{old}})</mrow>
+                    <mrow>-\frac{f(x_{\mbox{old}})}{f'(x_{\mbox{old}})} \amp x-x_{\mbox{old}} </mrow>
+                    <mrow>x \amp = x_{\mbox{old}} - \frac{f(x_{\mbox{old}})}{f'(x_{\mbox{old}})} </mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    
+</activity>
