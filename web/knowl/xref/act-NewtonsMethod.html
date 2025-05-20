@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="activity project-like"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.3</span><span class="period">.</span><span class="space"> </span><span class="title">Walking in the Footsteps of Ancient Mathematicians.</span>
+</h4>
+<div class="introduction">
+<div class="para">Let’s travel all the way back to the first (or maybe second) century AD and recreate Heron’s method to approximate the value of <span class="process-math">\(\sqrt{2}\text{.}\)</span> We’ll develop this using modern calculus, and simple linear approximation.</div>
+<div class="para">We’re going to re-frame the problem, and instead we’re going to try to use a linear approximation of <span class="process-math">\(f(x)=x^2-2\)</span> to approximate the <span class="process-math">\(x\)</span>-value where <span class="process-math">\(f(x)=0\text{.}\)</span> We know enough about quadratic functions to know that there are two values: <span class="process-math">\(x=-\sqrt{2}\)</span> and <span class="process-math">\(x=\sqrt{2}\text{.}\)</span>
+</div>
+</div>
+<article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para">We’re going to build a linear approximation of <span class="process-math">\(f(x) = x^2-2\text{,}\)</span> and we need a reasonable center. Honestly, any integer will work, since we can evaluate <span class="process-math">\(f\)</span> and <span class="process-math">\(f'\)</span> really easily, but we want to find one that is close to <span class="process-math">\(\sqrt{2}\text{.}\)</span> Let’s center our approximation at <span class="process-math">\(x=2\text{.}\)</span>
+</div> <div class="para logical">
+<div class="para">Find <span class="process-math">\(f'(x)\text{,}\)</span> and then construct the linear approximation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L(x) = f'(2)(x-2)+f(2)\text{.}
+\end{equation*}
+</div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">Since <span class="process-math">\(f'(x)=2x\text{,}\)</span> we have <span class="process-math">\(f'(2)=4\)</span> and <span class="process-math">\(f(2) = 2\text{.}\)</span> So then we end up with the following for our linear approximation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L(x) = 4(x-2)+2\text{.}
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para">Now we know that <span class="process-math">\(L(x)\approx f(x)\)</span> for <span class="process-math">\(x\)</span>-values near our center, <span class="process-math">\(x=2\text{.}\)</span> What if we estimate the <span class="process-math">\(x\)</span>-value where <span class="process-math">\(f(x)=0\)</span> by solving <span class="process-math">\(L(x)=0\)</span> instead? Since <span class="process-math">\(L(x)\approx f(x)\text{,}\)</span> the <span class="process-math">\(x\)</span>-value where <span class="process-math">\(L(x)=0\)</span> should make <span class="process-math">\(f(x)\)</span> pretty close to 0 at least.</div> <div class="para">Solve <span class="process-math">\(L(x)=0\text{.}\)</span>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+0 \amp = 4(x-2)+2\\
+-2 \amp 4(x-2)\\
+-\frac{2}{4} \amp x-2\\
+2 - \frac{1}{2} \amp x\\
+x \amp = \frac{3}{2} 
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para">Ok, this might be kind of close to the value of <span class="process-math">\(\sqrt{2}\text{,}\)</span> right? Let’s visualize this.</div> <div class="para logical">
+<div class="para">Hm...so this isn’t that good of an approximation yet. We can check this by looking at the actual value of our function at <span class="process-math">\(x=\frac{3}{2}\)</span> and seeing if it’s close to 0.</div>
+<div class="displaymath process-math">
+\begin{align*}
+f\left(\frac{3}{2}\right) \amp = \left(\frac{3}{2}\right)^2 - 2\\
+\amp = \frac{9}{4} - 2\\
+\amp \frac{1}{4}
+\end{align*}
+</div>
+<div class="para">This...isn’t that close to 0.</div>
+</div> <div class="para">So let’s try this again. This time, though, let’s center our <em class="emphasis">new</em> linear approximation at <span class="process-math">\(x=\frac{3}{2}\text{.}\)</span>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+L(x) \amp f'\left(\frac{3}{2}\right)\left(x-\frac{3}{2}\right)+f\left(\frac{3}{2}\right) \\
+\amp = 3\left(x-\frac{3}{2}) + \frac{1}{4}
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para">Now set this <em class="emphasis">new</em> linear approximation equal to 0 and solve <span class="process-math">\(L(x)=0\)</span> to estimate the solution to <span class="process-math">\(f(x)=0\text{.}\)</span>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+0 \amp = 3\left(x-\frac{3}{2}) + \frac{1}{4}\\
+-\frac{1}{4} \amp = 3\left(x-\frac{3}{2}\right)\\
+-\frac{1}{12} \amp = x- \frac{3}{2}\\
+\frac{3}{2} - \frac{1}{12} \amp \\
+x \amp= \frac{17}{12} 
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para">We can keep repeating this process, and that’s exactly what the mathematicians we talked about discovered.</div> <div class="para logical">
+<div class="para">Say we’ve build a linear approximation at some <span class="process-math">\(x\)</span>-value (we’ll call it <span class="process-math">\(x_{\text{old}}\)</span>).</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L(x) = f'(x_{\text{old}})(x-x_{\text{old}}) + f(x_{\text{old}})\text{.}
+\end{equation*}
+</div>
+<div class="para">Set this equal to 0 and solve.</div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+0 \amp= f'(x_{\text{old}})(x-x_{\text{old}}) + f(x_{\text{old}}) \\
+-f(x_{\text{old}}) \amp = f'(x_{\text{old}})(x-x_{\text{old}})\\
+-\frac{f(x_{\text{old}})}{f'(x_{\text{old}})} \amp x-x_{\text{old}} \\
+x \amp = x_{\text{old}} - \frac{f(x_{\text{old}})}{f'(x_{\text{old}})} 
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para">Let’s visualize these calculations.</div> <iframe id="act-NewtonsMethod-8-1-2" width="570" height="798" src="act-NewtonsMethod-8-1-2-if.html"></iframe> <div class="para">Something kind of strange happens in the last two steps. Why does the value of our estimation not change? What happens to our estimate?</div></article></article><span class="incontext"><a class="internal" href="sec-LinearApproximation.html#act-NewtonsMethod">in-context</a></span>
+</body>
+</html>

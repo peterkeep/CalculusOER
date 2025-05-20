@@ -97,14 +97,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.6.5';
+eBookConfig.runestone_version = '7.7.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.052b07dd5d5bd82e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.253ff4af1e53e55f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.5eb70769dc5e56d7.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.253ff4af1e53e55f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 </head>
 <body class="pretext book ignore-math">
@@ -587,10 +587,117 @@ L(x) = f'(a)(x-a)+f(a)\text{.}
 <div class="solutions"><details id="act-LinearApproximations-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-LinearApproximations-4-2-1">Remember that we want some input for your function that is both close to the input you’d like to estimate your function at and also a reasonable one to know the value of your function and its derivative.</div></div></details></div></article><article class="task exercise-like" id="act-LinearApproximations-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="act-LinearApproximations-5-1-1">Build your linear approximation at your center! You should end up with an actual linear function. It might be helpful to plot this linear function and your actual function to confirm that you have actually built a tangent line.</div></article><article class="task exercise-like" id="act-LinearApproximations-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="act-LinearApproximations-6-1-1">Use your linear approximation function to estimate your value! Report the estimate, and comment on the accuracy of your estimate. Without calculating the actual value, can you tell if this is close or not? Do you have an overestimate or underestimate?</div>
-<div class="solutions"><details id="act-LinearApproximations-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-LinearApproximations-6-2-1">Think about issues relating to the distance from the center, the concavity of the function, and even the rate at which the slopes change away as we move away from the center.</div></div></details></div></article></article></section><section class="subsection" id="subsec-ApproximatingZeros"><h3 class="heading hide-type">
+<div class="solutions"><details id="act-LinearApproximations-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-LinearApproximations-6-2-1">Think about issues relating to the distance from the center, the concavity of the function, and even the rate at which the slopes change away as we move away from the center.</div></div></details></div></article></article><div class="para" id="subsec-LinearApproximation-8">So far, we have been pretty limited in what we can actually <em class="emphasis">do</em> with these linear approximations. A function is only locally linear when we look at a very small interval of <span class="process-math">\(x\)</span>-values. Once we move away from the center far enough (and it’s often not that far), then our function curves away from the tangent line and our linear approximation is not at all accurate.</div>
+<aside class="aside aside-like" id="subsec-LinearApproximation-9"><div class="para" id="subsec-LinearApproximation-9-1">If you want to see how we can make these linear approximations more accurate, then we can try to think about using a quadratic or cubic function instead: something with some curves built into it that can try to follow the function’s behavior a bit! We’ll cover that in <a href="sec-PolynomialApproximation.html" class="internal" title="Section 9.1: Polynomial Approximations of Functions">Section 9.1 Polynomial Approximations of Functions</a>.</div></aside></section><section class="subsection" id="subsec-ApproximatingZeros"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.6.2</span><span class="space"> </span><span class="title">Approximating Zeros of a Function</span>
 </h3>
-<div class="para" id="subsec-ApproximatingZeros-2"></div></section></section></div>
+<div class="para" id="subsec-ApproximatingZeros-2">Let’s look one really cool application of linear approximations before we finish things up in this section.</div>
+<div class="para" id="subsec-ApproximatingZeros-3">In approximately 60 AD, Heron of Alexandria presented a method for approximating square roots (probably...historians know very little about exactly when Heron was born and died, but they think he saw an eclipse that matched one from 62 AD, so it’s a good guess). This algorithm was presented along with different formulas for volumes and surface areas of a mixture of objects.</div>
+<aside class="aside aside-like" id="subsec-ApproximatingZeros-4"><div class="para" id="subsec-ApproximatingZeros-4-1">You might know of Heron from Heron’s formula for the area of a triangle!</div></aside><div class="para" id="subsec-ApproximatingZeros-5">Over 1000 years later, in the late 1660’s, Isaac Newton was one of a long list of mathematicians  to re-create this formula in a more general way, where we can use it to approximate roots of polynomials. This method was later extended by several different mathematicians, and is now known as the <dfn class="terminology">Newton-Raphson method</dfn>, or sometimes more simply <dfn class="terminology">Newton’s method</dfn>.</div>
+<article class="activity project-like" id="act-NewtonsMethod"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.6.3</span><span class="period">.</span><span class="space"> </span><span class="title">Walking in the Footsteps of Ancient Mathematicians.</span>
+</h4>
+<div class="introduction" id="act-NewtonsMethod-2">
+<div class="para" id="act-NewtonsMethod-2-1">Let’s travel all the way back to the first (or maybe second) century AD and recreate Heron’s method to approximate the value of <span class="process-math">\(\sqrt{2}\text{.}\)</span> We’ll develop this using modern calculus, and simple linear approximation.</div>
+<div class="para" id="act-NewtonsMethod-2-2">We’re going to re-frame the problem, and instead we’re going to try to use a linear approximation of <span class="process-math">\(f(x)=x^2-2\)</span> to approximate the <span class="process-math">\(x\)</span>-value where <span class="process-math">\(f(x)=0\text{.}\)</span> We know enough about quadratic functions to know that there are two values: <span class="process-math">\(x=-\sqrt{2}\)</span> and <span class="process-math">\(x=\sqrt{2}\text{.}\)</span>
+</div>
+</div>
+<article class="task exercise-like" id="act-NewtonsMethod-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-NewtonsMethod-3-1-1">We’re going to build a linear approximation of <span class="process-math">\(f(x) = x^2-2\text{,}\)</span> and we need a reasonable center. Honestly, any integer will work, since we can evaluate <span class="process-math">\(f\)</span> and <span class="process-math">\(f'\)</span> really easily, but we want to find one that is close to <span class="process-math">\(\sqrt{2}\text{.}\)</span> Let’s center our approximation at <span class="process-math">\(x=2\text{.}\)</span>
+</div> <div class="para logical" id="act-NewtonsMethod-3-1-2">
+<div class="para">Find <span class="process-math">\(f'(x)\text{,}\)</span> and then construct the linear approximation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L(x) = f'(2)(x-2)+f(2)\text{.}
+\end{equation*}
+</div>
+</div>
+<div class="solutions"><details id="act-NewtonsMethod-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-NewtonsMethod-3-2-1">
+<div class="para">Since <span class="process-math">\(f'(x)=2x\text{,}\)</span> we have <span class="process-math">\(f'(2)=4\)</span> and <span class="process-math">\(f(2) = 2\text{.}\)</span> So then we end up with the following for our linear approximation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L(x) = 4(x-2)+2\text{.}
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="task exercise-like" id="act-NewtonsMethod-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-NewtonsMethod-4-1-1">Now we know that <span class="process-math">\(L(x)\approx f(x)\)</span> for <span class="process-math">\(x\)</span>-values near our center, <span class="process-math">\(x=2\text{.}\)</span> What if we estimate the <span class="process-math">\(x\)</span>-value where <span class="process-math">\(f(x)=0\)</span> by solving <span class="process-math">\(L(x)=0\)</span> instead? Since <span class="process-math">\(L(x)\approx f(x)\text{,}\)</span> the <span class="process-math">\(x\)</span>-value where <span class="process-math">\(L(x)=0\)</span> should make <span class="process-math">\(f(x)\)</span> pretty close to 0 at least.</div> <div class="para" id="act-NewtonsMethod-4-1-2">Solve <span class="process-math">\(L(x)=0\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-NewtonsMethod-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-NewtonsMethod-4-2-1"><div class="displaymath process-math" id="act-NewtonsMethod-4-2-1-1">
+\begin{align*}
+0 \amp = 4(x-2)+2\\
+-2 \amp 4(x-2)\\
+-\frac{2}{4} \amp x-2\\
+2 - \frac{1}{2} \amp x\\
+x \amp = \frac{3}{2} 
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like" id="act-NewtonsMethod-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-NewtonsMethod-5-1-1">Ok, this might be kind of close to the value of <span class="process-math">\(\sqrt{2}\text{,}\)</span> right? Let’s visualize this.</div> <div class="para logical" id="act-NewtonsMethod-5-1-2">
+<div class="para">Hm...so this isn’t that good of an approximation yet. We can check this by looking at the actual value of our function at <span class="process-math">\(x=\frac{3}{2}\)</span> and seeing if it’s close to 0.</div>
+<div class="displaymath process-math" id="act-NewtonsMethod-5-1-2-2">
+\begin{align*}
+f\left(\frac{3}{2}\right) \amp = \left(\frac{3}{2}\right)^2 - 2\\
+\amp = \frac{9}{4} - 2\\
+\amp \frac{1}{4}
+\end{align*}
+</div>
+<div class="para">This...isn’t that close to 0.</div>
+</div> <div class="para" id="act-NewtonsMethod-5-1-3">So let’s try this again. This time, though, let’s center our <em class="emphasis">new</em> linear approximation at <span class="process-math">\(x=\frac{3}{2}\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-NewtonsMethod-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-NewtonsMethod-5-2-1"><div class="displaymath process-math" id="act-NewtonsMethod-5-2-1-1">
+\begin{align*}
+L(x) \amp f'\left(\frac{3}{2}\right)\left(x-\frac{3}{2}\right)+f\left(\frac{3}{2}\right) \\
+\amp = 3\left(x-\frac{3}{2}) + \frac{1}{4}
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like" id="act-NewtonsMethod-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-NewtonsMethod-6-1-1">Now set this <em class="emphasis">new</em> linear approximation equal to 0 and solve <span class="process-math">\(L(x)=0\)</span> to estimate the solution to <span class="process-math">\(f(x)=0\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-NewtonsMethod-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-NewtonsMethod-6-2-1"><div class="displaymath process-math" id="act-NewtonsMethod-6-2-1-1">
+\begin{align*}
+0 \amp = 3\left(x-\frac{3}{2}) + \frac{1}{4}\\
+-\frac{1}{4} \amp = 3\left(x-\frac{3}{2}\right)\\
+-\frac{1}{12} \amp = x- \frac{3}{2}\\
+\frac{3}{2} - \frac{1}{12} \amp \\
+x \amp= \frac{17}{12} 
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like" id="act-NewtonsMethod-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-NewtonsMethod-7-1-1">We can keep repeating this process, and that’s exactly what the mathematicians we talked about discovered.</div> <div class="para logical" id="act-NewtonsMethod-7-1-2">
+<div class="para">Say we’ve build a linear approximation at some <span class="process-math">\(x\)</span>-value (we’ll call it <span class="process-math">\(x_{\text{old}}\)</span>).</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L(x) = f'(x_{\text{old}})(x-x_{\text{old}}) + f(x_{\text{old}})\text{.}
+\end{equation*}
+</div>
+<div class="para">Set this equal to 0 and solve.</div>
+</div>
+<div class="solutions"><details id="act-NewtonsMethod-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-NewtonsMethod-7-2-1"><div class="displaymath process-math" id="act-NewtonsMethod-7-2-1-1">
+\begin{align*}
+0 \amp= f'(x_{\text{old}})(x-x_{\text{old}}) + f(x_{\text{old}}) \\
+-f(x_{\text{old}}) \amp = f'(x_{\text{old}})(x-x_{\text{old}})\\
+-\frac{f(x_{\text{old}})}{f'(x_{\text{old}})} \amp x-x_{\text{old}} \\
+x \amp = x_{\text{old}} - \frac{f(x_{\text{old}})}{f'(x_{\text{old}})} 
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like" id="act-NewtonsMethod-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-NewtonsMethod-8-1-1">Let’s visualize these calculations.</div> <iframe id="act-NewtonsMethod-8-1-2" width="570" height="798" src="act-NewtonsMethod-8-1-2-if.html"></iframe> <div class="para" id="act-NewtonsMethod-8-1-3">Something kind of strange happens in the last two steps. Why does the value of our estimation not change? What happens to our estimate?</div></article></article><article class="definition definition-like" id="def-NewtonsMethod"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.6.2</span><span class="period">.</span><span class="space"> </span><span class="title">Newton’s Method for Approximating Zeros of Functions.</span>
+</h4>
+<div class="para logical" id="def-NewtonsMethod-2-1">
+<div class="para">If <span class="process-math">\(x_0\)</span> is some initial estimation of a solution to <span class="process-math">\(f(x)=0\text{,}\)</span> then we we can iteratively generate more estimations using the following formula:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x_n = x_{n-1} - \frac{f(x_{n-1})}{f'(x_{n-1})}
+\end{equation*}
+</div>
+<div class="para">provided that <span class="process-math">\(f'(x_{n-1})\)</span> exists and is non-zero.</div>
+</div></article><div class="para logical" id="subsec-ApproximatingZeros-8">
+<div class="para">A good question to ask is about when this process stops. If we want to estimate some <span class="process-math">\(x\)</span>-intercept of a function, like <span class="process-math">\(\sqrt{2}\)</span> in <a href="sec-LinearApproximation.html#act-NewtonsMethod" class="xref" data-knowl="./knowl/xref/act-NewtonsMethod.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 4.6.3: Walking in the Footsteps of Ancient Mathematicians">Activity 4.6.3</a>, then how many steps is enough? There are a couple of ways we can approach this:</div>
+<ol class="decimal" id="subsec-ApproximatingZeros-8-4">
+<li id="subsec-ApproximatingZeros-8-4-1"><div class="para" id="subsec-ApproximatingZeros-8-4-1-1">We can just state at the beginning how many iterations we’re going to do. This is what happened in <a href="sec-LinearApproximation.html#act-NewtonsMethod" class="xref" data-knowl="./knowl/xref/act-NewtonsMethod.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 4.6.3: Walking in the Footsteps of Ancient Mathematicians">Activity 4.6.3</a>, since this activity was written to only make you calculate a specific number of these estimations. We could have started by saying that we’ll calculate this 3 times, or maybe 100 times.</div></li>
+<li id="subsec-ApproximatingZeros-8-4-2"><div class="para" id="subsec-ApproximatingZeros-8-4-2-1">We can test to see what <span class="process-math">\(f(x_n)\)</span> is, and then stop when it is within some pre-determined distance from 0. We also did this when we noticed that <span class="process-math">\(f\left(\frac{3}{2}\right)=\frac{1}{4}\)</span> was not very close to 0 (after our first estimation), and so we should calculate this again. We could start by saying that we’ll continue until we see a <span class="process-math">\(y\)</span>-value that is within 0.0001 of 0, or some other small distance.</div></li>
+<li id="subsec-ApproximatingZeros-8-4-3"><div class="para" id="subsec-ApproximatingZeros-8-4-3-1">We can test to see how close our approximations are to each other, and stop when they’re close enough. We saw this happen in the visualization: the last two estimates were the same! They actually weren’t, but since the applet only displayed 4 decimal places, the numbers appeared the same after rounding. Maybe we set some criteria there, or we look at the distance between <span class="process-math">\(x_n\)</span> and <span class="process-math">\(x_{n-1}\)</span> (two successive estimates) and stop when they are within some distance from each other.</div></li>
+</ol>
+<div class="para">In reality, we often choose a combination of these. Maybe we set distance threshold for stopping, but use a maximum of 10 iterations as a backup plan. This happens often when we code this algorithm and have a computer run it. It is possible for this code to never give us two successive estimates that are close enough to stop, and so the code would run forever unless we cut it off at 100 iterations or some other value.</div>
+</div>
+<div class="para" id="subsec-ApproximatingZeros-9">A wonderful thing about this small process is that, while it is ancient (dating back to Heron in the first or second century), it is still used today. This is a powerful estimation method that can be used in a variety of areas including statistics and data science.</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-Optimization.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-LHopitalsRule.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
