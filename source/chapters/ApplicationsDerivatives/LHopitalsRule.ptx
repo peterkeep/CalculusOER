@@ -98,15 +98,226 @@
         </p>
       </statement>
     </theorem>
+    <example xml:id="ex-FirstLHopitalsRule">
+      <title>Some First Limits</title>
+      <introduction>
+        <p>
+          Evaluate the following limits. You should first confirm that they are, actually, indeterminate forms!
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \lim_{x\to 0}\left(\frac{\sin(x)}{x}\right)</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \lim_{x\to 5} \left(\frac{x^2-6x+5}{x-5}\right)</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \lim_{x\to 1}\left(\frac{\ln(x)}{x-1}\right)</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \lim_{x\to \infty} \left(\frac{x^2-6x+5}{x-5}\right)</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \lim_{x\to \infty}\left(\frac{\ln(x)}{x-1}\right)</m>
+          </p>
+        </statement>
+      </task>
+    </example>
+    <p>
+      There are more indeterminate forms than these two! In each of the following cases, we mean that a limit with this form can take on different values (or not exist). Other indeterminate forms that we can consider include:
+      <ul>
+        <li>
+          <p>
+            <m>f(x)\cdot g(x)\stackrel{?}{\to} 0\cdot \infty</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\left(f(x)-g(x)\right) \stackrel{?}{\to} \infty-\infty</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f(x)^{g(x)} \stackrel{?}{\to} 0^0</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f(x)^{g(x)} \stackrel{?}{\to} 1^\infty</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f(x)^{g(x)} \stackrel{?}{\to} \infty^0</m>
+          </p>
+        </li>
+      </ul>
+      The issue with these, though, is that L'Hôpital's Rule only applies to quotients! We needed that quotient for the algebra to work out when we canceled things out to end up with the ratio of slopes.
+    </p>
+    <p>
+      So our strategies for these other indeterminate forms will all require us to manipulate the product, difference, or expeonential in order to force some division to show up somehow.
+    </p>
   </subsection>
 
   <subsection xml:id="subsec-ForcingDivision">
     <title>Forcing Division</title>
-    <p>
-      
-    </p>
+    <introduction>
+      <p>
+        Let's look at each new indeterminate form classified into groups based on the operation between the functions.
+      </p>
+    </introduction>
+    <subsubsection xml:id="subsubsec-Products">
+      <title>Products!</title>
+      <p>
+        We can re-write <m>f(x)\cdot g(x)</m> as a quotient by dividing by a reciprocal. So either
+        <me>
+          f(x)\cdot g(x) = \frac{f(x)}{1/g(x)}
+        </me>
+        or 
+        <me>
+          f(x)\cdot g(x) = \frac{g(x)}{1/f(x)}
+        </me>.
+        Our choice ends up being based on what is most helpful.
+      </p>
+      <example xml:id="ex-xlnx">
+        <statement>
+          <p>
+            Evaluate the limit:
+            <me>
+              \lim_{x\to 0^+} \left(x\ln(x)\right)
+            </me>
+            Note that since <m>x\to 0</m> and <m>\ln(x)\to -\infty</m>, this is a <m>0\cdot\infty</m> indeterminate form.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Re-write this limit as:
+            <me>
+              \lim_{x\to 0^+} \left(\frac{\ln(x)}{1/x}\right)
+            </me>.
+            Note that this is not an <m>\frac{\infty}{\infty}</m> indeterminate form, and we can use L'Hôpital's Rule.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <md>
+              <mrow>\lim_{x\to 0^+} \left(x\ln(x)\right)\amp = \lim_{x\to 0^+} \left(\frac{\ln(x)}{1/x}\right) </mrow>
+              <mrow> \amp = \lim_{x\to 0^+} \left(\frac{\ddx{\ln(x)}}{\ddx{1/x}}\right)</mrow>
+              <mrow> \amp = \lim_{x\to 0^+} \left(\frac{1/x}{-1/x^2}\right)</mrow>
+              <mrow> \amp \lim_{x\to 0^+} \left(\frac{1}{x}\right)\left(-\frac{x^2}{1}\right)</mrow>
+              <mrow> \amp = \lim_{x\to 0^+} (-x)</mrow>
+              <mrow> \amp = 0</mrow>
+            </md>
+            So <m>\displaystyle\lim_{x\to 0^+} x\ln(x)=0</m>.
+          </p>
+        </solution>
+      </example>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-Differences">
+      <title>Differences!</title>
+      <p>
+        We can re-write <m>f(x)-g(x)</m> as a product by factoring something out of the difference. Then, if the product is a <m>0\cdot\infty</m> indeterminate form, we can divide by a reciprocal to turn it into a quotient.
+      </p>
+      <p>
+        Choosing what to factor out is sometimes very difficult. But we should note that this is the strategy we used to evaluate <xref ref="thm-PolynomialEndBehavior" text="title"/>.
+      </p>
+      <example>
+        <statement>
+          <p>
+            Evaluate the following limit:
+            <me>
+              \lim_{x\to \infty} \left(2^x - x^2\right)
+            </me>
+            Note that since <m>2^x\to \infty</m> and <m>x^2\to \infty</m>, this is an <m>\infty-\infty</m> indeterminate form.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Try to factor out <m>2^x</m>. You won't be able to actual factor it nicely, but you'll end up with a fraction term <m>\frac{x^2}{2^x}</m> that is an <m>\frac{\infty}{\infty}</m> indeterminate form!
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <md>
+              <mrow>\lim_{x\to\infty} \left(2^x-x^2\right)\amp = \lim_{x\to \infty} 2^x\left(1 - \frac{x^2}{2^x}\right) </mrow>
+            </md>
+            Let's focus on the limit <m>\displaystyle \lim_{x\to \infty} \left(\frac{x^2}{2^x}\right)</m>, since it is in an <m>\frac{\infty}{\infty}</m> indeterminate form.
+            <md>
+              <mrow> \lim_{x\to \infty} \left(\frac{x^2}{2^x}\right)\amp \stackrel{?}{\to} \frac{\infty}{\infty}</mrow>
+              <mrow> \amp = \lim_{x\to\infty} \frac{\ddx{x^2}}{\ddx{2^x}}</mrow>
+              <mrow> \amp = \lim_{x\to \infty} \frac{2x}{2^x\ln(2)}</mrow>
+              <mrow> \lim_{x\to \infty} \frac{2x}{2^x\ln(2)}\amp \stackrel{?}{\to} \frac{\infty}{\infty}</mrow>
+              <mrow> \amp = \lim_{x\to\infty} \frac{\ddx{2x}}{\ddx{2^x\ln(2)}}</mrow>
+              <mrow> \amp = \lim_{x\to \infty} \frac{2}{2^x\ln(2)\ln(2)}</mrow>
+              <mrow> \lim_{x\to \infty} \frac{2}{2^x\ln(2)\ln(2)}\amp \stackrel{?}{\to} \frac{2}{\infty} = 0</mrow>
+            </md>
+            So then we can go back to our original limit:
+            <md>
+              <mrow>\lim_{x\to\infty} \left(2^x-x^2\right)\amp = \lim_{x\to \infty} 2^x\left(1 - \frac{x^2}{2^x}\right) </mrow>
+              <mrow> \amp = \infty(1-0) = \infty</mrow>
+            </md>
+          </p>
+        </solution>
+      </example>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-Exponentials">
+      <title>Exponentials!</title>
+      <p>
+        We can think about how we approached these types of functions raised to functions when we learned about <xref ref="sec-LogarithmicDifferentiation" text="title"/>.
+      </p>
+      <p>
+        We were able to use logarithms to re-write these types of exponentials as products. So we can say that:
+        <md>
+          <mrow>f(x)^{g(x)} \amp = e^{\ln\left(f(x)^{g(x)}\right)}</mrow>
+          <mrow> \amp = e^{g(x)\ln(f(x))}</mrow>
+        </md>
+        When we think about limits, the continuity of the exponential function allows us to just focus on the limit of the exponent, <m>g(x)\ln(f(x))</m>, which is likely an indeterminate form that we've seen!
+      </p>
+      <example>
+        <statement>
+          <p>
+            Evaluate the following limit:
+            <me>
+              \lim_{x\to 0^+} x^x
+            </me>
+            Note that this is the <m>0^0</m> indeterminate form.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            We can re-write <m>x^x</m> as <m>e^{\ln\left(x^x\right)}</m> which is the same as <m>e^{x\ln(x)}</m>. Now we can evaluate the limit <m>\displaystyle\lim_{x\to 0^+} x\ln(x)</m>, and make sure to return the value into the exponent.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            We know from <xref ref="ex-xlnx"/> that <m>\displaystyle\lim_{x\to 0^+} x\ln(x) = 0</m>. So then:
+            <md>
+              <mrow>\lim_{x\to 0^+} x^x \amp = \lim_{x\to 0^+} e^{x\ln(x)} </mrow>
+              <mrow> \amp = e^{\lim_{x\to 0^+} x\ln(x)}</mrow>
+              <mrow> \amp = e^0 = 1</mrow>
+            </md>
+            So <m>\displaystyle \lim_{x\to 0^+} x^x = 1</m>.
+          </p>
+        </solution>
+      </example>
+    </subsubsection>
   </subsection>
-
-  
-
 </section>
