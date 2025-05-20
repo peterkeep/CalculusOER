@@ -99,5 +99,39 @@
       Over 1000 years later, in the late 1660's, Isaac Newton was one of a long list of mathematicians  to re-create this formula in a more general way, where we can use it to approximate roots of polynomials. This method was later extended by several different mathematicians, and is now known as the <term>Newton-Raphson method</term>, or sometimes more simply <term>Newton's method</term>.
     </p>
     <xi:include href="./activities/act-NewtonsMethod.ptx" />
+    <definition xml:id="def-NewtonsMethod">
+      <title>Newton's Method for Approximating Zeros of Functions</title>
+      <statement>
+        <p>
+          If <m>x_0</m> is some initial estimation of a solution to <m>f(x)=0</m>, then we we can iteratively generate more estimations using the following formula:
+          <me>x_n = x_{n-1} - \frac{f(x_{n-1})}{f'(x_{n-1})}</me> 
+          provided that <m>f'(x_{n-1})</m> exists and is non-zero.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      A good question to ask is about when this process stops. If we want to estimate some <m>x</m>-intercept of a function, like <m>\sqrt{2}</m> in <xref ref="act-NewtonsMethod"/>, then how many steps is enough? There are a couple of ways we can approach this:
+      <ol>
+        <li>
+          <p>
+            We can just state at the beginning how many iterations we're going to do. This is what happened in <xref ref="act-NewtonsMethod"/>, since this activity was written to only make you calculate a specific number of these estimations. We could have started by saying that we'll calculate this 3 times, or maybe 100 times.
+          </p>
+        </li>
+        <li>
+          <p>
+            We can test to see what <m>f(x_n)</m> is, and then stop when it is within some pre-determined distance from 0. We also did this when we noticed that <m>f\left(\frac{3}{2}\right)=\frac{1}{4}</m> was not very close to 0 (after our first estimation), and so we should calculate this again. We could start by saying that we'll continue until we see a <m>y</m>-value that is within 0.0001 of 0, or some other small distance.
+          </p>
+        </li>
+        <li>
+          <p>
+            We can test to see how close our approximations are to each other, and stop when they're close enough. We saw this happen in the visualization: the last two estimates were the same! They actually weren't, but since the applet only displayed 4 decimal places, the numbers appeared the same after rounding. Maybe we set some criteria there, or we look at the distance between <m>x_n</m> and <m>x_{n-1}</m> (two successive estimates) and stop when they are within some distance from each other.
+          </p>
+        </li>
+      </ol>
+      In reality, we often choose a combination of these. Maybe we set distance threshold for stopping, but use a maximum of 10 iterations as a backup plan. This happens often when we code this algorithm and have a computer run it. It is possible for this code to never give us two successive estimates that are close enough to stop, and so the code would run forever unless we cut it off at 100 iterations or some other value.
+    </p>
+    <p>
+      A wonderful thing about this small process is that, while it is ancient (dating back to Heron in the first or second century), it is still used today. This is a powerful estimation method that can be used in a variety of areas including statistics and data science.
+    </p>
   </subsection>
 </section>

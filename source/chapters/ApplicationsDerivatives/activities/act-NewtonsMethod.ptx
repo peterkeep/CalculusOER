@@ -101,9 +101,9 @@
                 We can keep repeating this process, and that's exactly what the mathematicians we talked about discovered.
             </p>
             <p>
-                Say we've build a linear approximation at some <m>x</m>-value (we'll call it <m>x_{\mbox{old}}</m>).
+                Say we've build a linear approximation at some <m>x</m>-value (we'll call it <m>x_{\text{old}}</m>).
                 <me>
-                    L(x) = f'(x_{\mbox{old}})(x-x_{\mbox{old}}) + f(x_{\mbox{old}})
+                    L(x) = f'(x_{\text{old}})(x-x_{\text{old}}) + f(x_{\text{old}})
                 </me>.
                 Set this equal to 0 and solve.
             </p>
@@ -111,13 +111,27 @@
         <solution>
             <p>
                 <md>
-                    <mrow> 0 \amp= f'(x_{\mbox{old}})(x-x_{\mbox{old}}) + f(x_{\mbox{old}}) </mrow>
-                    <mrow>-f(x_{\mbox{old}}) \amp = f'(x_{\mbox{old}})(x-x_{\mbox{old}})</mrow>
-                    <mrow>-\frac{f(x_{\mbox{old}})}{f'(x_{\mbox{old}})} \amp x-x_{\mbox{old}} </mrow>
-                    <mrow>x \amp = x_{\mbox{old}} - \frac{f(x_{\mbox{old}})}{f'(x_{\mbox{old}})} </mrow>
+                    <mrow> 0 \amp= f'(x_{\text{old}})(x-x_{\text{old}}) + f(x_{\text{old}}) </mrow>
+                    <mrow>-f(x_{\text{old}}) \amp = f'(x_{\text{old}})(x-x_{\text{old}})</mrow>
+                    <mrow>-\frac{f(x_{\text{old}})}{f'(x_{\text{old}})} \amp x-x_{\text{old}} </mrow>
+                    <mrow>x \amp = x_{\text{old}} - \frac{f(x_{\text{old}})}{f'(x_{\text{old}})} </mrow>
                 </md>
             </p>
         </solution>
     </task>
-    
+    <task>
+        <statement>
+            <p>
+                Let's visualize these calculations.
+            </p>
+            <interactive platform="doenetml" width="95%" aspect="1:1.4">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/NewtonsMethod.xml"/>
+                </slate>
+            </interactive>
+            <p>
+                Something kind of strange happens in the last two steps. Why does the value of our estimation not change? What happens to our estimate?
+            </p>
+        </statement>
+    </task>
 </activity>
