@@ -1320,8 +1320,17 @@ var ptx_lunr_docs = [
   "url": "sec-LHopitalsRule.html",
   "type": "Section",
   "number": "4.7",
-  "title": "L’Hopital’s Rule",
-  "body": " L'Hopital's Rule  Text of section.   L'Hopital's Rule   If and are functions and is some real number with and both being differentiable at and and , then . Similarly, this holds if and .  If and are both differentiable as and either:    and      and    then .  This is also true as .    "
+  "title": "L’Hôpital’s Rule",
+  "body": " L'Hôpital's Rule   We're going to re-visit limits, but with a slightly new problem-solving tool. Specifically, we'll be thinking about Indeterminate Forms. We noticed, back in , that we could evaluate limits for indeterminate forms by swapping out the function with another function that was mostly equivalent, only differing at the -value we were approaching in the limit ( ).  We ended that section by thinking about a limit where this was difficult, in .  We're now going to build a more systematic (and helpful) way of thinking about these limits using the ideas of Linear Approximation!    Indeterminate Forms  We have given a preliminary definition of Indeterminate Forms already ( ), but let's remember how these work.  We said that is an indeterminate form, since a limit whose numerator and denominator approach 0 can end up taking on different values or even not exist. For instance, we can notice that the definition of the is a limit with this indeterminate form. As long as is continuous (a necessity of it being differentiable) at , then: But we have seen so many different values that this limit can end up being! We have spent most of the past two chapters in this text playing with derivatives and evaluating them: all of those values come from this limit! We have also seen that, even for continuous functions, this limit may not exist. A function can be non-differentiable at .  We can show the same thing for a second indeterminate form: , which we will simplify by just using the symbol . For us to see that limits with this form can take on different values (or not exist), we just need to think about end behavior limits for rational functions ( ).  Let's think about the following limit: . As long as , then this limit looks like it's in the form of . Sure, the denominator is really approaching , but we really just mean that there is an infinite numerator and an infinite denominator, regardless of sign.  We also know that the actual limit depends on the degrees and ! Try to spend a couple of minutes confirming the next few claims:   If , then this limit is .    If , then this limit is .    If , then this limit doesn't exist.   All of this to show us that we have some forms of limits where we can't immediately tell what the actual value of the limit is (or if it even exists). L'Hôpital's Rule will be a way for us to navigate these limits a little easier than before, in some cases.    L'Hôpital's Rule   Building L'Hôpital's Rule   We're going to take a closer look at the indeterminate form, , and use our new ideas of linear approximation to think about how these types of things work.  We're going to be working with the following limit: where and are differentiable at (since we're going to want to build linear approximations of them).    Write out the linear approximations for both and , both centered at . We'll call them and .   We're just using the formula for , but with for one of them and in the other.    Describe how well or how poorly these linear approximations estimate the values from our functions and ? What happens to these approximations as we get close to the center ? What happens in the limit as ?   You can revisit the local linearity visualization from to see what happens, in general, with a linear approximation of a function as we zoom in on the center.    Let's re-write our limit. We can replace with our formula for its linear approximation, and replace with its linear approximation, :     Up until now, we have not thought about indeterminate forms at all. Let's start now.  If this limit is a indeterminate form, then that means that and .  Since our functions are, by definition, differentiable at , then they also have to be continuous at . What does this mean about the values of and ?   Take a look back at our definition of function being . How does the function value relate to the limit? What does that mean in our case?    Use this new information about the values of and to revisit the limit. We re-wrote by replacing each function with its linear approximation. What happens with the algebra when we know this information about and ?   We re-wrote and also know that in this case (due to the indeterminate form) that and .    So we have a really nice result here! In the indeterminate form, we can replace the ratio of the -values from our functions with the ratio of slopes (coming from the first derivatives) of our functions.  In general, we'll put a step in between, where we find and first before trying to evaluate these derivatives at .     L'Hôpital's Rule   If and are functions and is some real number with and both being differentiable at and and , then . Similarly, this holds if and .  If and are both differentiable as and either:    and      and    then .  This is also true as .     Some First Limits   Evaluate the following limits. You should first confirm that they are, actually, indeterminate forms!                             There are more indeterminate forms than these two! In each of the following cases, we mean that a limit with this form can take on different values (or not exist). Other indeterminate forms that we can consider include:                           The issue with these, though, is that L'Hôpital's Rule only applies to quotients! We needed that quotient for the algebra to work out when we canceled things out to end up with the ratio of slopes.  So our strategies for these other indeterminate forms will all require us to manipulate the product, difference, or expeonential in order to force some division to show up somehow.    Forcing Division   Let's look at each new indeterminate form classified into groups based on the operation between the functions.    Products!  We can re-write as a quotient by dividing by a reciprocal. So either or . Our choice ends up being based on what is most helpful.    Evaluate the limit: Note that since and , this is a indeterminate form.    Re-write this limit as: . Note that this is not an indeterminate form, and we can use L'Hôpital's Rule.     So .      Differences!  We can re-write as a product by factoring something out of the difference. Then, if the product is a indeterminate form, we can divide by a reciprocal to turn it into a quotient.  Choosing what to factor out is sometimes very difficult. But we should note that this is the strategy we used to evaluate .    Evaluate the following limit: Note that since and , this is an indeterminate form.    Try to factor out . You won't be able to actual factor it nicely, but you'll end up with a fraction term that is an indeterminate form!     Let's focus on the limit , since it is in an indeterminate form. So then we can go back to our original limit:       Exponentials!  We can think about how we approached these types of functions raised to functions when we learned about .  We were able to use logarithms to re-write these types of exponentials as products. So we can say that: When we think about limits, the continuity of the exponential function allows us to just focus on the limit of the exponent, , which is likely an indeterminate form that we've seen!    Evaluate the following limit: Note that this is the indeterminate form.    We can re-write as which is the same as . Now we can evaluate the limit , and make sure to return the value into the exponent.    We know from that . So then: So .      "
+},
+{
+  "id": "act-LHopitalsRule",
+  "level": "2",
+  "url": "sec-LHopitalsRule.html#act-LHopitalsRule",
+  "type": "Activity",
+  "number": "4.7.1",
+  "title": "Building L’Hôpital’s Rule.",
+  "body": " Building L'Hôpital's Rule   We're going to take a closer look at the indeterminate form, , and use our new ideas of linear approximation to think about how these types of things work.  We're going to be working with the following limit: where and are differentiable at (since we're going to want to build linear approximations of them).    Write out the linear approximations for both and , both centered at . We'll call them and .   We're just using the formula for , but with for one of them and in the other.    Describe how well or how poorly these linear approximations estimate the values from our functions and ? What happens to these approximations as we get close to the center ? What happens in the limit as ?   You can revisit the local linearity visualization from to see what happens, in general, with a linear approximation of a function as we zoom in on the center.    Let's re-write our limit. We can replace with our formula for its linear approximation, and replace with its linear approximation, :     Up until now, we have not thought about indeterminate forms at all. Let's start now.  If this limit is a indeterminate form, then that means that and .  Since our functions are, by definition, differentiable at , then they also have to be continuous at . What does this mean about the values of and ?   Take a look back at our definition of function being . How does the function value relate to the limit? What does that mean in our case?    Use this new information about the values of and to revisit the limit. We re-wrote by replacing each function with its linear approximation. What happens with the algebra when we know this information about and ?   We re-wrote and also know that in this case (due to the indeterminate form) that and .    So we have a really nice result here! In the indeterminate form, we can replace the ratio of the -values from our functions with the ratio of slopes (coming from the first derivatives) of our functions.  In general, we'll put a step in between, where we find and first before trying to evaluate these derivatives at .   "
 },
 {
   "id": "thm-LHopitalsRule",
@@ -1329,8 +1338,44 @@ var ptx_lunr_docs = [
   "url": "sec-LHopitalsRule.html#thm-LHopitalsRule",
   "type": "Theorem",
   "number": "4.7.1",
-  "title": "L’Hopital’s Rule.",
-  "body": " L'Hopital's Rule   If and are functions and is some real number with and both being differentiable at and and , then . Similarly, this holds if and .  If and are both differentiable as and either:    and      and    then .  This is also true as .   "
+  "title": "L’Hôpital’s Rule.",
+  "body": " L'Hôpital's Rule   If and are functions and is some real number with and both being differentiable at and and , then . Similarly, this holds if and .  If and are both differentiable as and either:    and      and    then .  This is also true as .   "
+},
+{
+  "id": "ex-FirstLHopitalsRule",
+  "level": "2",
+  "url": "sec-LHopitalsRule.html#ex-FirstLHopitalsRule",
+  "type": "Example",
+  "number": "4.7.2",
+  "title": "Some First Limits.",
+  "body": " Some First Limits   Evaluate the following limits. You should first confirm that they are, actually, indeterminate forms!                            "
+},
+{
+  "id": "ex-xlnx",
+  "level": "2",
+  "url": "sec-LHopitalsRule.html#ex-xlnx",
+  "type": "Example",
+  "number": "4.7.3",
+  "title": "",
+  "body": "  Evaluate the limit: Note that since and , this is a indeterminate form.    Re-write this limit as: . Note that this is not an indeterminate form, and we can use L'Hôpital's Rule.     So .   "
+},
+{
+  "id": "subsubsec-Differences-4",
+  "level": "2",
+  "url": "sec-LHopitalsRule.html#subsubsec-Differences-4",
+  "type": "Example",
+  "number": "4.7.4",
+  "title": "",
+  "body": "  Evaluate the following limit: Note that since and , this is an indeterminate form.    Try to factor out . You won't be able to actual factor it nicely, but you'll end up with a fraction term that is an indeterminate form!     Let's focus on the limit , since it is in an indeterminate form. So then we can go back to our original limit:    "
+},
+{
+  "id": "subsubsec-Exponentials-4",
+  "level": "2",
+  "url": "sec-LHopitalsRule.html#subsubsec-Exponentials-4",
+  "type": "Example",
+  "number": "4.7.5",
+  "title": "",
+  "body": "  Evaluate the following limit: Note that this is the indeterminate form.    We can re-write as which is the same as . Now we can evaluate the limit , and make sure to return the value into the exponent.    We know from that . So then: So .   "
 },
 {
   "id": "sec-IndefiniteIntegrals",

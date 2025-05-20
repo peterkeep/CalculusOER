@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.7.3</span><span class="period">.</span>
+</h5>
+<div class="para logical">
+<div class="para">Evaluate the limit:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 0^+} \left(x\ln(x)\right)
+\end{equation*}
+</div>
+<div class="para">Note that since <span class="process-math">\(x\to 0\)</span> and <span class="process-math">\(\ln(x)\to -\infty\text{,}\)</span> this is a <span class="process-math">\(0\cdot\infty\)</span> indeterminate form.</div>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical">
+<div class="para">Re-write this limit as:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 0^+} \left(\frac{\ln(x)}{1/x}\right)\text{.}
+\end{equation*}
+</div>
+<div class="para">Note that this is not an <span class="process-math">\(\frac{\infty}{\infty}\)</span> indeterminate form, and we can use L’Hôpital’s Rule.</div>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="displaymath process-math">
+\begin{align*}
+\lim_{x\to 0^+} \left(x\ln(x)\right)\amp = \lim_{x\to 0^+} \left(\frac{\ln(x)}{1/x}\right) \\
+\amp = \lim_{x\to 0^+} \left(\frac{\ddx{\ln(x)}}{\ddx{1/x}}\right)\\
+\amp = \lim_{x\to 0^+} \left(\frac{1/x}{-1/x^2}\right)\\
+\amp \lim_{x\to 0^+} \left(\frac{1}{x}\right)\left(-\frac{x^2}{1}\right)\\
+\amp = \lim_{x\to 0^+} (-x)\\
+\amp = 0
+\end{align*}
+</div>
+<div class="para">So <span class="process-math">\(\displaystyle\lim_{x\to 0^+} x\ln(x)=0\text{.}\)</span>
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="sec-LHopitalsRule.html#ex-xlnx">in-context</a></span>
+</body>
+</html>

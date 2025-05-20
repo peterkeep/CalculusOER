@@ -317,7 +317,21 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LinearApproximation.html#subsec-ApproximatingZeros" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Approximating Zeros of a Function</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LHopitalsRule.html" class="internal"><span class="codenumber">4.7</span> <span class="title">L’Hopital’s Rule</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-LHopitalsRule.html" class="internal"><span class="codenumber">4.7</span> <span class="title">L’Hôpital’s Rule</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsec-IndeterminateForms" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Indeterminate Forms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsec-LHopitalsRule" class="internal"><span class="codenumber">4.7.2</span> <span class="title">L’Hôpital’s Rule</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsec-ForcingDivision" class="internal"><span class="codenumber">4.7.3</span> <span class="title">Forcing Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsubsec-Products" class="internal"><span class="codenumber">4.7.3.1</span> <span class="title">Products!</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsubsec-Differences" class="internal"><span class="codenumber">4.7.3.2</span> <span class="title">Differences!</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsubsec-Exponentials" class="internal"><span class="codenumber">4.7.3.3</span> <span class="title">Exponentials!</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -628,7 +642,7 @@ eBookConfig.enable_chatcodes =  false;
 </h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-DivergenceTest-3-1"><div class="para" id="subsec-DivergenceTest-3-1-1">Apply the Divergence Test to the following series and interpret the results.</div></div>
 <article class="task exercise-like" id="subsec-DivergenceTest-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="subsec-DivergenceTest-3-2-1-1"><span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{k^15 - 4k^10 + 10k^4}{e^{2k}}\)</span></div>
-<div class="solutions"><details id="subsec-DivergenceTest-3-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-DivergenceTest-3-2-2-1">We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator (<a href="sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6: Polynomial End Behavior Limits">Polynomial End Behavior Limits</a>). We could also get this same result using some other techniques, like what we use to prove that theorem. Then we can use <a href="sec-LHopitalsRule.html#thm-LHopitalsRule" class="xref" data-knowl="./knowl/xref/thm-LHopitalsRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.7.1: L’Hopital’s Rule">L’Hopital’s Rule</a> to evaluate the limit, since we have a <span class="process-math">\(\frac{\infty}{\infty}\)</span> indeterminate form.</div></div></details></div></article><article class="task exercise-like" id="subsec-DivergenceTest-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="solutions"><details id="subsec-DivergenceTest-3-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-DivergenceTest-3-2-2-1">We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator (<a href="sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6: Polynomial End Behavior Limits">Polynomial End Behavior Limits</a>). We could also get this same result using some other techniques, like what we use to prove that theorem. Then we can use <a href="sec-LHopitalsRule.html#thm-LHopitalsRule" class="xref" data-knowl="./knowl/xref/thm-LHopitalsRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.7.1: L’Hôpital’s Rule">L’Hôpital’s Rule</a> to evaluate the limit, since we have a <span class="process-math">\(\frac{\infty}{\infty}\)</span> indeterminate form.</div></div></details></div></article><article class="task exercise-like" id="subsec-DivergenceTest-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="subsec-DivergenceTest-3-3-1-1"><span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{k^2+1}\)</span></div></article><article class="task exercise-like" id="subsec-DivergenceTest-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="subsec-DivergenceTest-3-4-1-1"><span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{\sqrt[k]{k}}\)</span></div></article></article></details></section></section></div>
 <div class="ptx-content-footer">
