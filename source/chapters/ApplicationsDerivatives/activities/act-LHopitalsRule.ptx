@@ -1,0 +1,89 @@
+<activity xml:id="act-LHopitalsRule">
+    <title>Building L'Hôpital's Rule</title>
+    <introduction>
+        <p>
+            We're going to take a closer look at the indeterminate form, <m>\frac{0}{0}</m>, and use our new ideas of linear approximation to think about how these types of things work.
+        </p>
+        <p>
+            We're going to be working with the following limit:
+            <me>\lim_{x\to a}\frac{f(x)}{g(x)}</me>
+            where <m>f(x)</m> and <m>g(x)</m> are differentiable at <m>x=a</m> (since we're going to want to build linear approximations of them).
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Write out the linear approximations for both <m>f(x)</m> and <m>g(x)</m>, both centered at <m>x=a</m>. We'll call them <m>L_f(x)</m> and <m>L_g(x)</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We're just using the formula for <xref ref="def-LinearApproximation" text="title"/>, but with <m>f(x)</m> for one of them and <m>g(x)</m> in the other.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Describe how well or how poorly these linear approximations estimate the values from our functions <m>f(x)</m> and <m>g(x)</m>? What happens to these approximations as we get close to the center <m>x=a</m>? What happens in the limit as <m>x\to a</m>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You can revisit the local linearity visualization from <xref ref="sec-LinearApproximation"/> to see what happens, in general, with a linear approximation of a function as we zoom in on the center.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's re-write our limit. We can replace <m>f(x)</m> with our formula for its linear approximation, <m>L_f(x)</m> and replace <m>g(x)</m> with its linear approximation, <m>L_g(x)</m>:
+                <me>
+                    \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \left(\frac{<fillin characters="15" />}{<fillin characters="15" />}\right)
+                </me>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Up until now, we have not thought about indeterminate forms at all. Let's start now.
+            </p>
+            <p>
+                If this limit is a <m>\frac{0}{0}</m> indeterminate form, then that means that <m>\displaystyle \lim_{x\to a} f(x) = 0</m> and <m>\displaystyle \lim_{x\to a} g(x) = 0</m>.
+            </p>
+            <p>
+                Since our functions are, by definition, differentiable at <m>x=a</m>, then they also have to be continuous at <m>x=a</m>. What does this mean about the values of <m>f(a)</m> and <m>g(a)</m>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Take a look back at our definition of function being <xref ref="def-ContinuousAtPoint" text="title"/>. How does the function value relate to the limit? What does that mean in our case?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use this new information about the values of <m>f(a)</m> and <m>g(a)</m> to revisit the limit. We re-wrote <m>\displaystyle \lim_{x\to a} \frac{f(x)}{g(x)}</m> by replacing each function with its linear approximation. What happens with the algebra when we know this information about <m>f(a)</m> and <m>g(a)</m>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We re-wrote
+                <me>
+                    \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \left(\frac{f'(a)(x-a)+f(a)}{g'(a)(x-a)+g(a)}\right)
+                </me>
+                and also know that in this case (due to the <m>\frac{0}{0}</m> indeterminate form) that <m>f(a)=0</m> and <m>g(a)=0</m>.
+            </p>
+        </hint>
+    </task>
+    <conclusion>
+        <p>
+            So we have a really nice result here! In the <m>\frac{0}{0}</m> indeterminate form, we can replace the ratio of the <m>y</m>-values from our functions with the ratio of slopes (coming from the first derivatives) of our functions.
+        </p>
+        <p>
+            In general, we'll put a step in between, where we find <m>f'(x)</m> and <m>g'(x)</m> first before trying to evaluate these derivatives at <m>x=a</m>.
+        </p>
+    </conclusion>
+</activity>

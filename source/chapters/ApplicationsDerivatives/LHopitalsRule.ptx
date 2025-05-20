@@ -1,44 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-LHopitalsRule" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>L'Hopital's Rule</title>
+  <title>L'Hôpital's Rule</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      We're going to re-visit limits, but with a slightly new problem-solving tool. Specifically, we'll be thinking about Indeterminate Forms. We noticed, back in <xref ref="sec-IndeterminateForms" text="type-global"/>, that we could evaluate limits for indeterminate forms by swapping out the function with another function that was mostly equivalent, only differing at the <m>x</m>-value we were approaching in the limit (<xref ref="thm-SlightlyDifferentFunctions" text="type-global-title"/>). 
+    </p>
+    <p>
+      We ended that section by thinking about a limit where this was difficult, in <xref ref="act-SinXOverX"/>. 
+    </p>
+    <p>
+      We're now going to build a more systematic (and helpful) way of thinking about these limits using the ideas of Linear Approximation!
+    </p>
+  </introduction>
 
-  <theorem xml:id="thm-LHopitalsRule">
-    <title>L'Hopital's Rule</title>
-    <statement>
-      <p>
-        If <m>f(x)</m> and <m>g(x)</m> are functions and <m>a</m> is some real number with <m>f</m> and <m>g</m> both being differentiable at <m>a</m> and <m>\lim_{x\to a} f(x) = 0</m> and <m>\lim_{x\to a}g(x) = 0</m>, then
-        <me>
-          \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}
-        </me>.
-        Similarly, this holds if <m>\lim_{x\to a} f(x) = \pm\infty</m> and <m>\lim_{x\to a} g(x) = \pm \infty</m>.
-      </p>
-      <p>
-        If <m>f</m> and <m>g</m> are both differentiable as <m>x\to \infty</m> and either:
-        <ul>
-          <li>
-            <p>
-              <m>\lim_{x\to\infty} f(x) = 0</m> and <m>\lim_{x\to\infty} g(x) = 0</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\lim_{x\to\infty}f(x) = \pm\infty</m> and <m>\lim_{x\to\infty} g(x) = \pm\infty</m>
-            </p>
-          </li>
-        </ul>
-        then
-         <me>
-          \lim_{x\to \infty} \frac{f(x)}{g(x)} = \lim_{x\to \infty} \frac{f'(x)}{g'(x)}
-        </me>.
-      </p>
-      <p>
-        This is also true as <m>x\to-\infty</m>.
-      </p>
-    </statement>
-  </theorem>
+  <subsection xml:id="subsec-IndeterminateForms">
+    <title>Indeterminate Forms</title>
+    <p>
+      We have given a preliminary definition of Indeterminate Forms already (<xref ref="def-IndeterminateForm"/>), but let's remember how these work.
+    </p>
+    <p>
+      We said that <m>\frac{0}{0}</m> is an indeterminate form, since a limit whose numerator and denominator approach 0 can end up taking on different values or even not exist. For instance, we can notice that the definition of the <xref ref="def-DerivativeAtPoint" text="title"/> is a limit with this indeterminate form. As long as <m>f(x)</m> is continuous (a necessity of it being differentiable) at <m>x=a</m>, then:
+      <me>
+        \lim_{x\to a} \left(\frac{f(x)-f(a)}{x-a}\right) \stackrel{?}{\to} \frac{f(a)-f(a)}{a-a} = \frac{0}{0}
+      </me>
+      But we have seen so many different values that this limit can end up being! We have spent most of the past two chapters in this text playing with derivatives and evaluating them: all of those values come from this limit! We have also seen that, even for continuous functions, this limit may not exist. A function can be non-differentiable at <m>x=a</m>.
+    </p>
+    <p>
+      We can show the same thing for a second indeterminate form: <m>\frac{\pm\infty}{\pm\infty}</m>, which we will simplify by just using the symbol <m>\frac{\infty}{\infty}</m>. For us to see that limits with this form can take on different values (or not exist), we just need to think about end behavior limits for rational functions (<xref ref="subsec-EndBehaviorLimits"/>).
+    </p>
+    <p>
+      Let's think about the following limit:
+      <me>
+        \lim_{x\to \infty} \left(\frac{2x^m+1}{1-3x^n}\right)
+      </me>.
+      As long as <m>m,n\gt 0</m>, then this limit looks like it's in the form of <m>\frac{\infty}{\infty}</m>. Sure, the denominator is really approaching <m>-\infty</m>, but we really just mean that there is an infinite numerator and an infinite denominator, regardless of sign.
+    </p>
+    <p>
+      We also know that the actual limit depends on the degrees <m>m</m> and <m>n</m>! Try to spend a couple of minutes confirming the next few claims:
+      <ul>
+        <li>
+          <p>
+            If <m>m\lt n</m>, then this limit is <m>0</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>m=n</m>, then this limit is <m>-\frac{2}{3}</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>m\gt n</m>, then this limit doesn't exist.
+          </p>
+        </li>
+      </ul>
+      All of this to show us that we have some forms of limits where we can't immediately tell what the actual value of the limit is (or if it even exists). L'Hôpital's Rule will be a way for us to navigate these limits a little easier than before, in some cases.
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec-LHopitalsRule">
+    <title>L'Hôpital's Rule</title>
+    <xi:include href="./activities/act-LHopitalsRule.ptx" />
+    
+    <theorem xml:id="thm-LHopitalsRule">
+      <title>L'Hôpital's Rule</title>
+      <statement>
+        <p>
+          If <m>f(x)</m> and <m>g(x)</m> are functions and <m>a</m> is some real number with <m>f</m> and <m>g</m> both being differentiable at <m>a</m> and <m>\displaystyle\lim_{x\to a} f(x) = 0</m> and <m>\displaystyle\lim_{x\to a}g(x) = 0</m>, then
+          <me>
+            \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}
+          </me>.
+          Similarly, this holds if <m>\displaystyle\lim_{x\to a} f(x) = \pm\infty</m> and <m>\displaystyle\lim_{x\to a} g(x) = \pm \infty</m>.
+        </p>
+        <p>
+          If <m>f</m> and <m>g</m> are both differentiable as <m>x\to \infty</m> and either:
+          <ul>
+            <li>
+              <p>
+                <m>\displaystyle\lim_{x\to\infty} f(x) = 0</m> and <m>\displaystyle\lim_{x\to\infty} g(x) = 0</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\displaystyle\lim_{x\to\infty}f(x) = \pm\infty</m> and <m>\displaystyle\lim_{x\to\infty} g(x) = \pm\infty</m>
+              </p>
+            </li>
+          </ul>
+          then
+          <me>
+            \lim_{x\to \infty} \frac{f(x)}{g(x)} = \lim_{x\to \infty} \frac{f'(x)}{g'(x)}
+          </me>.
+        </p>
+        <p>
+          This is also true as <m>x\to-\infty</m>.
+        </p>
+      </statement>
+    </theorem>
+  </subsection>
+
+  <subsection xml:id="subsec-ForcingDivision">
+    <title>Forcing Division</title>
+    <p>
+      
+    </p>
+  </subsection>
+
   
 
 </section>
