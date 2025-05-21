@@ -1,0 +1,45 @@
+<activity xml:id="act-ApproximatingArea" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Approximating Areas</title>
+    <introduction>
+        <p>
+            We're going to consider two different functions, and some areas based on them. Let's think about two functions: <m>f(x)=2x+1</m> and <m>g(x) = x^2+1</m>. For both of these functions, we'll focus on the interval <m>[0,2]</m>. Instead of thinking about the function only, we'll be considering the two-dimensional region bounded between the graph of our function and the <m>x</m>-axis between <m>x=0</m> and <m>x=2</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Find the area of the region bounded between the graph of <m>f(x) = 2x+1</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=2</m>.
+            </p>
+            <p>
+                How did you evaluate this area? What kind(s) of shape(s) did you think about?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            
+            <p>
+                Estimate the area of the region bounded between the graph of <m>g(x)=x^2+1</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=2</m>.
+            </p>
+            <aside>
+                <p>
+                    Archimedes of Syracuse discovered how to calculate this area exactly, without estimation, around 300 BC, writing his results in the now-famous "Quadrature of the Parabola." This is, notably, before the formalization of Calculus (during the 1600's). It might be unfair to say that Archimedes proved this "without using calculus," though, since his technique, the "Method of Exhaustion," is really a version of what we do in calculus, but without a formal framework of limits.
+                </p>
+            </aside>
+            <p>
+                How did you estimate this area? What kind(s) of shape(s) did you think about? 
+            </p>
+            
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Come up with an upper and lower bound for this area. In other words, give an underestimate and overestimate for the actual area we would like to know.
+            </p>
+            <p>
+                How did you come up with these estimates? How "good" do you think your estimates are? Can you come up with "better" (or closer) ones?
+            </p>
+        </statement>
+    </task>
+</activity>

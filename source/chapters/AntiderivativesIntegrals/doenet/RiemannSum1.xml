@@ -1,0 +1,17 @@
+<setup>
+    <function name="f" domain="[0,2]">x^2+1</function>
+    <number name="y">$$f($x)</number>
+    <point name="P" draggable="false" styleNumber="6">($x, $y)</point>
+  </setup>
+  
+  <p><em>Instructions:</em> Input an <m>x</m>-value to construct a rectangle for approximating the area.</p>
+  
+  <p>Input a value in the interval <m>[0,2]</m>: <nbsp/> <m>x=</m><mathInput name="x"/></p>
+  <graph xmin="-0.5" xmax="2.5" ymin="-0.5" ymax="5.5" fixAxes>
+    <function name="fExt">x^2+1</function>
+    <regionBetweenCurveXAxis boundaryValues="0 2" function="$fExt" />
+    <rectangle name="rect" vertices="(0,0) (2, $y)" styleNumber="6" filled draggable="false"/>
+    $P
+  </graph>
+  
+  <p>Your rectangle has a width of 2 and a height of $y, and your approximation of the area is $rect.area.</p>

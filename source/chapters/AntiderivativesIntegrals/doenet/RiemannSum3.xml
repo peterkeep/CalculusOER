@@ -1,0 +1,31 @@
+<setup>
+    <function name="f">x^2+1</function>
+    <function name="fA" domain="[0,2/3]">x^2+1</function>
+    <function name="fB" domain="[2/3,4/3]">x^2+1</function>
+    <function name="fC" domain="[4/3,2]">x^2+1</function>
+    <point name="PA" draggable="false" styleNumber="6">($xA, $$fA($xA))</point>
+    <point name="PB" draggable="false" styleNumber="6">($xB, $$fB($xB))</point>
+    <point name="PC" draggable="false" styleNumber="6">($xC, $$fC($xC))</point>
+    <number name="area">$rectA.area+$rectB.area+$rectC.area</number>
+  </setup>
+  
+  <p><em>Instructions:</em> Input three <m>x</m>-values to construct rectangles for approximating the area.</p>
+  
+  <p>Input a value in the interval <m>\left[0,\frac{2}{3}\right]</m>: <nbsp/> <m>x_1=</m><mathInput name="xA"/></p>
+  <p>Input a value in the interval <m>\left[\frac{2}{3}, \frac{4}{3}\right]</m>: <nbsp/> <m>x_2=</m><mathInput name="xB"/></p>
+  <p>Input a value in the interval <m>\left[\frac{4}{3},2\right]</m>: <nbsp/> <m>x_3=</m><mathInput name="xC"/></p>
+  
+  
+  <graph xmin="-0.5" xmax="2.5" ymin="-0.5" ymax="5.5" fixAxes>
+    $f
+    <regionBetweenCurveXAxis boundaryValues="0 2" function="$f" />
+    <rectangle name="rectA" vertices="(0,0) (2/3, $$fA($xA))" styleNumber="6" filled draggable="false"/>
+    <rectangle name="rectB" vertices="(2/3,0) (4/3, $$fB($xB))" styleNumber="6" filled draggable="false"/>
+    <rectangle name="rectC" vertices="(4/3,0) (2, $$fC($xC))" styleNumber="6" filled draggable="false"/>
+    $PA
+    $PB
+    $PC
+  </graph>
+  
+  <p>Your rectangles all have widths of <m>\frac{2}{3}</m> and heights of $rectA.height, $rectB.height, and $rectC.height.</p>
+  <p>The areas are $rectA.area, $rectB.area, and $rectC.area, so your approximation of the total area is $area.</p>

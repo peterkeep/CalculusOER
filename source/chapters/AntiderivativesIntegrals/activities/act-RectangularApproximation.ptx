@@ -1,0 +1,97 @@
+<activity xml:id="act-RectangularApproximation" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Approximating the Area using Rectangles</title>
+    <introduction>
+        <p>
+            We're going to stick with the function <m>g(x)=x^2+1</m> on the interval <m>[0,2]</m>, and keep thinking about the area bounded by the curve and the <m>x</m>-axis on this interval. We're going to approximate the area in a couple of different tries, each one more accurate than the one before. By the end of this activity, we'll have a pretty good process built!
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Let's start with approximating this region with a single rectangle. We're going to define the rectangle by picking some <m>x</m>-value in the interval <m>[0,2]</m>. Then, we'll use the point at that <m>x</m>-value to define the height of our rectangle.
+            </p>
+            <p>
+                Essentially, we are picking a single point on the our function on the interval and our approximation is pretending that the single point we picked is representative of the whole function on the interval.
+            </p>
+            <interactive platform="doenetml" width="95%" aspect="1:1.2">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/RiemannSum1.xml"/>
+            </slate>
+        </interactive>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you try re-picking an <m>x</m>-value, and trying to find one that gets you an area approximation that is pretty good? 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                We're going to use more rectangles. Let's jump up to 3 rectangles. If we split up the interval between <m>x=0</m> and <m>x=2</m> into 3 rectangles, we can make them all the same width, and pick an <m>x</m>-value that we can use to get a representative point for each of the 3 rectangles.
+            </p>
+            <p>
+                We'll need to pick 3 <m>x</m>-values this time.
+            </p>
+            <interactive platform="doenetml" width="95%" aspect="1:1.5">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/RiemannSum3.xml"/>
+            </slate>
+        </interactive>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you try re-picking your <m>x</m>-values, and trying to find one that gets you an area approximation that is pretty good? 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's scale this up a bit. Pick a good number for your number of rectangles. We'll call this value <m>n</m>.
+            </p>
+            <p>
+                (If you're working in a classroom, maybe it would be good to pick the number of groups or the number of students, or some other number between 10 and 20 or something like that.)
+            </p>
+            <p>
+                For your value <m>n</m>, we're going to divide up the interval between <m>x=0</m> and <m>x=2</m> into <m>n</m> pieces. These will be the intervals that we pick from to get our rectangles. What are the subintervals? What are the widths of each subinterval (and then the widths of the rectangles)? Call this with <m>\Delta x</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For each subinterval, pick an <m>x</m>-value in the subinterval to represent it. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Evaluate the function <m>f(x)=x^2+1</m> at each of the <m>x</m>-values you picked. These are the heights of your rectangles!
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the areas of each rectangle by multiplying the height of each rectangle by <m>\Delta x</m>, the width of each rectangle.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Add these areas up to get a total approximation of the actual area!
+            </p>
+            <p>
+                What do you think: is it worth fiddling with what <m>x</m>-value to pick from each subinterval to try to get a better approximation? If <m>n</m> is large, do you think it matters how we pick the <m>x</m>-values from each subinterval? 
+            </p>
+        </statement>
+    </task>
+    
+</activity>
