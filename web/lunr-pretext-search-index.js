@@ -1384,7 +1384,115 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Antiderivatives and Indefinite Integrals",
-  "body": " Antiderivatives and Indefinite Integrals   Initial Value Problems   Solving Initial Value Problems  For some function , if we want to find an antiderivative function and we know some \"initial value,\" , then we can find the exact antiderivative by:   Finding the family of antiderivatives: .    Using the initial value to solve for the constant , by evaluating at and solving for .       "
+  "body": " Antiderivatives and Indefinite Integrals   We've been spending a lot of time thinking about derivatives! We've done this in a couple of different ways:   We have thought carefully about what derivatives are, what they measure, and how to interpret them.    We have built up a whole list of tools that we can use to actually find or calculate these derivatives. We know how to differentiate most functions (and combinations of functions) that we can think of!    We've been able to apply these derivatives to some specific contexts to solve problems or analyze functions and mathematical models.   Let's think about derivatives in a slightly different way!   Find a Function Where...   For each of the following derivatives, find a function whose first (or second) derivative matches the listed derivative.                             Go back through each of the above derivatives, and find a different option for that still works. Make sure that it is something completely unique, and not just an equivalent function that is written differently.  Why are able to find multiple answers in these questions, but not when we are given a function and need to find a derivative?    We've done two things here: thought about how we might \"undo\" differnentiation, and discovered a nice property about constants.  Note that we've already discovered this rule! We proved it, back when we were playing with the . We built a related theorem that showed that two functions can have the same derivative, and if they do then they are off by, at most, a constant: .  Let's visualize this phenomena!     Antiderivatives  We want to try to define and name these \"backwards derivatives.\" Instead of calling them the \"negative first\" derivative, we will name them as antiderivatives .   Antiderivative   For a function , we say that is an antiderivative of on an interval if on the interval.  We call the family of antiderivatives of , where represents any real number constant.      For each of the following functions, find the family of antiderivatives.        Do we know a function whose derivative is ?            We won't be undoing the Power Rule with either of these! We might try to think about functions whose derivatives are and .      We use absolute values in the logarithm because we want to find a functions whose derivative is on the whole interval that is defined. The log function is only defined for positive inputs, but we would like to be able put any non-zero input into our function (since that's the domain of ).        It might help to write the function as .          Initial Value Problems   A File Sorting Speed Test   A computer program is trying to sort a group of computer files based on their size. The program isn't very efficient, and the time that it takes to sort the files increases when it tries to sort more files.  The time that it takes, measured in seconds, based on the total, cumulative size of the files , measured in gigabytes, is modeled by a function . We don't know the function, but we do know that the time increases at an instantaneous rate of seconds when the total size, increases slightly.    We can build a function for . What is it?        Find all of the possibilities for the function modeling the time, , that it takes the computer program to sort files with a total size of .   We are looking for the family of antiderivatives of .    What does your constant represent, here? You can interpret it graphically, interpret it by thinking about derivatives, but you should also interpret it in terms of the time that it takes this program to sort these files by size.    Let's say that we feed some number of files totaling up to 1.4GB in size into this program. It takes 0.24 seconds to sort the files by size.  Find the function, , that models the how quickly this program sorts these files.    We call this type of problem an \"initial value problem.\" Here, we ended up solving for a family of antiderivatives, but then using some more information about that antiderivative (in this case, information about file size and time) to find the specific antiderivative function that was relevant.   Solving Initial Value Problems  For some function , if we want to find an antiderivative function and we know some \"initial value,\" , then we can find the exact antiderivative by:   Finding the family of antiderivatives: .    Using the initial value to solve for the constant , by evaluating at and solving the resulting equation.        For , find where .    For , find where and .      Indefinite Integrals  To finish this out, we'll just build some notation that represents these families of antiderivatives. We can use words to describe them, but it will be helpful to introduce some quick way of writing this using notation.   Indefinite Integral   An indefinite integral represents a family of antiderivatives: where    is a symbol directing us to find a family of antiderivatives (or integrate)     is called the integrand     is a differential, and represents both the \"end\" of the integral as well as an indicator of what the input variable of the integrand should be (or what variable we antidifferentiate \"with regard to\").     is an antiderivative of (where ).     is called the \"constant of integration\" and represents any real number         Find families of antiderivatives according to each of the following indefinite integrals.             While we do not know how to antidifferentiate products of functions yet, we can just multiply the integrand function! Antidifferentiate this.        Similar to the previous problem, we do not know how to antidifferentiate quotients, but we can re-write this function before we antidifferentiate! Antidifferentiate this!    All we have left to do now is to just formalize the antiderivative rules we've been intuitively building and using.   Power Rule for Antiderivatives    for      Antiderivatives Related to the Exponential and Log Functions         Antiderivatives of Trigonometric Functions         Combinations of Indefinite Integrals       Sums:       Differences:       Coefficients:         These should all be very familiar, since they are really just restatements of the results from .  We should also be comfortable recognizing derivatives of functions that we know, in order to find more functions that we can antidifferentiate.   "
+},
+{
+  "id": "act-FindFunction",
+  "level": "2",
+  "url": "sec-IndefiniteIntegrals.html#act-FindFunction",
+  "type": "Activity",
+  "number": "5.1.1",
+  "title": "Find a Function Where....",
+  "body": " Find a Function Where...   For each of the following derivatives, find a function whose first (or second) derivative matches the listed derivative.                             Go back through each of the above derivatives, and find a different option for that still works. Make sure that it is something completely unique, and not just an equivalent function that is written differently.  Why are able to find multiple answers in these questions, but not when we are given a function and need to find a derivative?   "
+},
+{
+  "id": "subsec-Antiderivatives-2",
+  "level": "2",
+  "url": "sec-IndefiniteIntegrals.html#subsec-Antiderivatives-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "antiderivatives "
+},
+{
+  "id": "def-Antiderivative",
+  "level": "2",
+  "url": "sec-IndefiniteIntegrals.html#def-Antiderivative",
+  "type": "Definition",
+  "number": "5.1.1",
+  "title": "Antiderivative.",
+  "body": " Antiderivative   For a function , we say that is an antiderivative of on an interval if on the interval.  We call the family of antiderivatives of , where represents any real number constant.   "
+},
+{
+  "id": "subsec-Antiderivatives-4",
+  "level": "2",
+  "url": "sec-IndefiniteIntegrals.html#subsec-Antiderivatives-4",
+  "type": "Example",
+  "number": "5.1.2",
+  "title": "",
+  "body": "  For each of the following functions, find the family of antiderivatives.        Do we know a function whose derivative is ?            We won't be undoing the Power Rule with either of these! We might try to think about functions whose derivatives are and .      We use absolute values in the logarithm because we want to find a functions whose derivative is on the whole interval that is defined. The log function is only defined for positive inputs, but we would like to be able put any non-zero input into our function (since that's the domain of ).        It might help to write the function as .       "
+},
+{
+  "id": "act-InitialValueProblem",
+  "level": "2",
+  "url": "sec-IndefiniteIntegrals.html#act-InitialValueProblem",
+  "type": "Activity",
+  "number": "5.1.2",
+  "title": "A File Sorting Speed Test.",
+  "body": " A File Sorting Speed Test   A computer program is trying to sort a group of computer files based on their size. The program isn't very efficient, and the time that it takes to sort the files increases when it tries to sort more files.  The time that it takes, measured in seconds, based on the total, cumulative size of the files , measured in gigabytes, is modeled by a function . We don't know the function, but we do know that the time increases at an instantaneous rate of seconds when the total size, increases slightly.    We can build a function for . What is it?        Find all of the possibilities for the function modeling the time, , that it takes the computer program to sort files with a total size of .   We are looking for the family of antiderivatives of .    What does your constant represent, here? You can interpret it graphically, interpret it by thinking about derivatives, but you should also interpret it in terms of the time that it takes this program to sort these files by size.    Let's say that we feed some number of files totaling up to 1.4GB in size into this program. It takes 0.24 seconds to sort the files by size.  Find the function, , that models the how quickly this program sorts these files.   "
+},
+{
+  "id": "subsec-InitialValueProblems-5",
+  "level": "2",
+  "url": "sec-IndefiniteIntegrals.html#subsec-InitialValueProblems-5",
+  "type": "Example",
+  "number": "5.1.3",
+  "title": "",
+  "body": "  For , find where .    For , find where and .   "
+},
+{
+  "id": "def-IndefiniteIntegral",
+  "level": "2",
+  "url": "sec-IndefiniteIntegrals.html#def-IndefiniteIntegral",
+  "type": "Definition",
+  "number": "5.1.4",
+  "title": "Indefinite Integral.",
+  "body": " Indefinite Integral   An indefinite integral represents a family of antiderivatives: where    is a symbol directing us to find a family of antiderivatives (or integrate)     is called the integrand     is a differential, and represents both the \"end\" of the integral as well as an indicator of what the input variable of the integrand should be (or what variable we antidifferentiate \"with regard to\").     is an antiderivative of (where ).     is called the \"constant of integration\" and represents any real number      "
+},
+{
+  "id": "subsec-IndefiniteIntegrals-4",
+  "level": "2",
+  "url": "sec-IndefiniteIntegrals.html#subsec-IndefiniteIntegrals-4",
+  "type": "Example",
+  "number": "5.1.5",
+  "title": "",
+  "body": "  Find families of antiderivatives according to each of the following indefinite integrals.             While we do not know how to antidifferentiate products of functions yet, we can just multiply the integrand function! Antidifferentiate this.        Similar to the previous problem, we do not know how to antidifferentiate quotients, but we can re-write this function before we antidifferentiate! Antidifferentiate this!   "
+},
+{
+  "id": "thm-PowerRuleAntiderivatives",
+  "level": "2",
+  "url": "sec-IndefiniteIntegrals.html#thm-PowerRuleAntiderivatives",
+  "type": "Theorem",
+  "number": "5.1.6",
+  "title": "Power Rule for Antiderivatives.",
+  "body": " Power Rule for Antiderivatives    for    "
+},
+{
+  "id": "thm-ExpLogAntiderivatives",
+  "level": "2",
+  "url": "sec-IndefiniteIntegrals.html#thm-ExpLogAntiderivatives",
+  "type": "Theorem",
+  "number": "5.1.7",
+  "title": "Antiderivatives Related to the Exponential and Log Functions.",
+  "body": " Antiderivatives Related to the Exponential and Log Functions       "
+},
+{
+  "id": "thm-TrigAntiderivatives",
+  "level": "2",
+  "url": "sec-IndefiniteIntegrals.html#thm-TrigAntiderivatives",
+  "type": "Theorem",
+  "number": "5.1.8",
+  "title": "Antiderivatives of Trigonometric Functions.",
+  "body": " Antiderivatives of Trigonometric Functions       "
+},
+{
+  "id": "thm-CombinationsOfIntegrals",
+  "level": "2",
+  "url": "sec-IndefiniteIntegrals.html#thm-CombinationsOfIntegrals",
+  "type": "Theorem",
+  "number": "5.1.9",
+  "title": "Combinations of Indefinite Integrals.",
+  "body": " Combinations of Indefinite Integrals       Sums:       Differences:       Coefficients:        "
 },
 {
   "id": "sec-RiemannSums",

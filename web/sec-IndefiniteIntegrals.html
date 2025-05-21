@@ -339,7 +339,11 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Antiderivatives and Indefinite Integrals</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-InitialValueProblems" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Initial Value Problems</span></a></div></li></ul>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-Antiderivatives" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Antiderivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-InitialValueProblems" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Initial Value Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-IndefiniteIntegrals" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Indefinite Integrals</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-RiemannSums.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Riemann Sums and Area Approximations</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Definite Integral</span></a></div></li>
@@ -519,25 +523,185 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-IndefiniteIntegrals"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">5.1</span><span class="space"> </span><span class="title">Antiderivatives and Indefinite Integrals</span>
 </h2>
-<section class="subsection" id="subsec-InitialValueProblems"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.1.1</span><span class="space"> </span><span class="title">Initial Value Problems</span>
+<section class="introduction" id="sec-IndefiniteIntegrals-2"><div class="para logical" id="sec-IndefiniteIntegrals-2-1">
+<div class="para">We’ve been spending a lot of time thinking about derivatives! We’ve done this in a couple of different ways:</div>
+<ol class="decimal" id="sec-IndefiniteIntegrals-2-1-1">
+<li id="sec-IndefiniteIntegrals-2-1-1-1"><div class="para" id="sec-IndefiniteIntegrals-2-1-1-1-1">We have thought carefully about what derivatives are, what they measure, and how to interpret them.</div></li>
+<li id="sec-IndefiniteIntegrals-2-1-1-2"><div class="para" id="sec-IndefiniteIntegrals-2-1-1-2-1">We have built up a whole list of tools that we can use to actually find or calculate these derivatives. We know how to differentiate most functions (and combinations of functions) that we can think of!</div></li>
+<li id="sec-IndefiniteIntegrals-2-1-1-3"><div class="para" id="sec-IndefiniteIntegrals-2-1-1-3-1">We’ve been able to apply these derivatives to some specific contexts to solve problems or analyze functions and mathematical models.</div></li>
+</ol>
+<div class="para">Let’s think about derivatives in a slightly different way!</div>
+</div>
+<article class="activity project-like" id="act-FindFunction"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Find a Function Where....</span>
 </h3>
+<div class="introduction" id="act-FindFunction-2"><div class="para" id="act-FindFunction-2-1">For each of the following derivatives, find a function <span class="process-math">\(f(x)\)</span> whose first (or second) derivative matches the listed derivative.</div></div>
+<article class="task exercise-like" id="act-FindFunction-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="act-FindFunction-3-1-1"><span class="process-math">\(f'(x)=4x^3 + 6\)</span></div></article><article class="task exercise-like" id="act-FindFunction-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-FindFunction-4-1-1"><span class="process-math">\(f'(x)=8x^7-x^4+x\)</span></div></article><article class="task exercise-like" id="act-FindFunction-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="act-FindFunction-5-1-1"><span class="process-math">\(f'(x)=\sqrt{x}-\dfrac{1}{x^2}\)</span></div></article><article class="task exercise-like" id="act-FindFunction-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="act-FindFunction-6-1-1"><span class="process-math">\(f''(x)=x^3+\cos(x)\)</span></div></article><article class="task exercise-like" id="act-FindFunction-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="act-FindFunction-7-1-1"><span class="process-math">\(f''(x)=e^x - \dfrac{1}{\sqrt[3]{x}}\)</span></div></article><article class="task exercise-like" id="act-FindFunction-8"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="act-FindFunction-8-1-1">Go back through each of the above derivatives, and find a different option for <span class="process-math">\(f(x)\)</span> that still works. Make sure that it is something completely unique, and not just an equivalent function that is written differently.</div> <div class="para" id="act-FindFunction-8-1-2">Why are able to find multiple answers in these questions, but not when we are given a function and need to find a derivative?</div></article></article><div class="para" id="sec-IndefiniteIntegrals-2-3">We’ve done two things here: thought about how we might "undo" differnentiation, and discovered a nice property about constants.</div>
+<div class="para" id="sec-IndefiniteIntegrals-2-4">Note that we’ve already discovered this rule! We proved it, back when we were playing with the <a href="sec-MeanValueTheorem.html#thm-MVT" class="xref" data-knowl="./knowl/xref/thm-MVT.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.1: Mean Value Theorem">Mean Value Theorem</a>. We built a related theorem that showed that two functions can have the same derivative, and if they do then they are off by, at most, a constant: <a href="sec-MeanValueTheorem.html#thm-OffByConstant" class="xref" data-knowl="./knowl/xref/thm-OffByConstant.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.7: Equal Derivatives Correspond with Related Functions">Theorem 4.1.7 Equal Derivatives Correspond with Related Functions</a>.</div>
+<div class="para" id="sec-IndefiniteIntegrals-2-5">Let’s visualize this phenomena!</div>
+<iframe id="sec-IndefiniteIntegrals-2-6" width="570" height="627" src="sec-IndefiniteIntegrals-2-6-if.html"></iframe></section><section class="subsection" id="subsec-Antiderivatives"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.1.1</span><span class="space"> </span><span class="title">Antiderivatives</span>
+</h3>
+<div class="para" id="subsec-Antiderivatives-2">We want to try to define and name these "backwards derivatives." Instead of calling them the "negative first" derivative, we will name them as <dfn class="terminology">antiderivatives</dfn>.</div>
+<article class="definition definition-like" id="def-Antiderivative"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Antiderivative.</span>
+</h4>
+<div class="para" id="def-Antiderivative-2-1">For a function <span class="process-math">\(f(x)\text{,}\)</span> we say that <span class="process-math">\(F(x)\)</span> is an <dfn class="terminology">antiderivative</dfn> of <span class="process-math">\(f(x)\)</span> on an interval if <span class="process-math">\(F'(x)=f(x)\)</span> on the interval.</div> <div class="para" id="def-Antiderivative-2-2">We call <span class="process-math">\(F(x)+C\)</span> the <dfn class="terminology">family of antiderivatives</dfn> of <span class="process-math">\(f(x)\text{,}\)</span> where <span class="process-math">\(C\)</span> represents any real number constant.</div></article><details id="subsec-Antiderivatives-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.2</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-Antiderivatives-4-1"><div class="para" id="subsec-Antiderivatives-4-1-1">For each of the following functions, find the family of antiderivatives.</div></div>
+<article class="task exercise-like" id="subsec-Antiderivatives-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-Antiderivatives-4-2-1-1"><span class="process-math">\(f(x)=7x+\sec^2(x)\)</span></div>
+<div class="solutions">
+<details id="subsec-Antiderivatives-4-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-Antiderivatives-4-2-2-1">Do we know a function whose derivative is <span class="process-math">\(\sec^2(x)\text{?}\)</span>
+</div></div></details><details id="subsec-Antiderivatives-4-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-Antiderivatives-4-2-3-1"><span class="process-math">\(F(x) = \dfrac{7x^2}{2} + \tan(x) + C\)</span></div></div></details>
+</div></article><article class="task exercise-like" id="subsec-Antiderivatives-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-Antiderivatives-4-3-1-1"><span class="process-math">\(g(x) = \dfrac{5}{x} - \dfrac{3}{1+x^2}\)</span></div>
+<div class="solutions">
+<details id="subsec-Antiderivatives-4-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-Antiderivatives-4-3-2-1">We won’t be undoing the Power Rule with either of these! We might try to think about functions whose derivatives are <span class="process-math">\(\frac{1}{x}\)</span> and <span class="process-math">\(\frac{1}{1+x^2}\text{.}\)</span>
+</div></div></details><details id="subsec-Antiderivatives-4-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-Antiderivatives-4-3-3-1"><span class="process-math">\(G(x) = 5\ln|x| - 3\tan^{-1}(x)+C\)</span></div>
+<div class="para" id="subsec-Antiderivatives-4-3-3-2">We use absolute values in the logarithm because we want to find a functions whose derivative is <span class="process-math">\(g(x)\)</span> on the whole interval that <span class="process-math">\(g(x)\)</span> is defined. The log function is only defined for positive inputs, but we would like to be able put any non-zero input into our function (since that’s the domain of <span class="process-math">\(g\)</span>).</div>
+</div></details>
+</div></article><article class="task exercise-like" id="subsec-Antiderivatives-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-Antiderivatives-4-4-1-1"><span class="process-math">\(j(x) = x^5-4x+1 - \dfrac{4}{3x^5}\)</span></div>
+<div class="solutions">
+<details id="subsec-Antiderivatives-4-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-Antiderivatives-4-4-2-1">It might help to write the function as <span class="process-math">\(j(x) = x^5 - 4x + 1 - \dfrac{4}{3}x^{-5}\text{.}\)</span>
+</div></div></details><details id="subsec-Antiderivatives-4-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-Antiderivatives-4-4-3-1"><span class="process-math">\(J(x) = \dfrac{x^6}{6} - 2x^2+x + \dfrac{1}{3x^4} +C\)</span></div></div></details>
+</div></article></article></details></section><section class="subsection" id="subsec-InitialValueProblems"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.1.2</span><span class="space"> </span><span class="title">Initial Value Problems</span>
+</h3>
+<article class="activity project-like" id="act-InitialValueProblem"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">A File Sorting Speed Test.</span>
+</h4>
+<div class="introduction" id="act-InitialValueProblem-2">
+<div class="para" id="act-InitialValueProblem-2-1">A computer program is trying to sort a group of computer files based on their size. The program isn’t very efficient, and the time that it takes to sort the files increases when it tries to sort more files.</div>
+<div class="para" id="act-InitialValueProblem-2-2">The time that it takes, measured in seconds, based on the total, cumulative size of the files <span class="process-math">\(g\text{,}\)</span> measured in gigabytes, is modeled by a function <span class="process-math">\(T(g)\text{.}\)</span> We don’t know the function, but we do know that the time increases at an instantaneous rate of <span class="process-math">\(0.0001g\)</span> seconds when the total size, <span class="process-math">\(g\)</span> increases slightly.</div>
+</div>
+<article class="task exercise-like" id="act-InitialValueProblem-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-InitialValueProblem-3-1-1">We can build a function for <span class="process-math">\(T'(g)\text{.}\)</span> What is it?</div>
+<div class="solutions"><details id="act-InitialValueProblem-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="act-InitialValueProblem-3-2-1"><span class="process-math">\(T'(g) = 0.0001g\)</span></div></div></details></div></article><article class="task exercise-like" id="act-InitialValueProblem-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-InitialValueProblem-4-1-1">Find all of the possibilities for the function modeling the time, <span class="process-math">\(T\text{,}\)</span> that it takes the computer program to sort files with a total size of <span class="process-math">\(g\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-InitialValueProblem-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-InitialValueProblem-4-2-1">We are looking for the family of antiderivatives of <span class="process-math">\(T'(g)\text{.}\)</span>
+</div></div></details></div></article><article class="task exercise-like" id="act-InitialValueProblem-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-InitialValueProblem-5-1-1">What does your constant <span class="process-math">\(C\)</span> represent, here? You can interpret it graphically, interpret it by thinking about derivatives, but you should also interpret it in terms of the time that it takes this program to sort these files by size.</div></article><article class="task exercise-like" id="act-InitialValueProblem-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-InitialValueProblem-6-1-1">Let’s say that we feed some number of files totaling up to 1.4GB in size into this program. It takes 0.24 seconds to sort the files by size.</div> <div class="para" id="act-InitialValueProblem-6-1-2">Find the function, <span class="process-math">\(T(g)\text{,}\)</span> that models the how quickly this program sorts these files.</div></article></article><div class="para" id="subsec-InitialValueProblems-3">We call this type of problem an "initial value problem." Here, we ended up solving for a family of antiderivatives, but then using some more information about that antiderivative (in this case, information about file size and time) to find the specific antiderivative function that was relevant.</div>
 <article class="assemblage assemblage-like" id="strat-InitialValueProblems"><h4 class="heading"><span class="title">Solving Initial Value Problems.</span></h4>
 <div class="para logical" id="strat-InitialValueProblems-2">
 <div class="para">For some function <span class="process-math">\(f(x)\text{,}\)</span> if we want to find an antiderivative function <span class="process-math">\(F(x)\)</span> and we know some "initial value," <span class="process-math">\(F(a)\text{,}\)</span> then we can find the exact antiderivative by:</div>
 <ol class="decimal" id="strat-InitialValueProblems-2-4">
-<li id="strat-InitialValueProblems-2-4-1"><div class="para logical" id="strat-InitialValueProblems-2-4-1-1">
-<div class="para">Finding the family of antiderivatives:</div>
+<li id="strat-InitialValueProblems-2-4-1"><div class="para" id="strat-InitialValueProblems-2-4-1-1">Finding the family of antiderivatives: <span class="process-math">\(F(x)+C\text{.}\)</span>
+</div></li>
+<li id="strat-InitialValueProblems-2-4-2"><div class="para" id="strat-InitialValueProblems-2-4-2-1">Using the initial value to solve for the constant <span class="process-math">\(C\text{,}\)</span> by evaluating <span class="process-math">\(F(x)+C\)</span> at <span class="process-math">\(x=a\)</span> and solving the resulting equation.</div></li>
+</ol>
+</div></article><details id="subsec-InitialValueProblems-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.3</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><article class="task exercise-like" id="subsec-InitialValueProblems-5-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-InitialValueProblems-5-1-1-1">For <span class="process-math">\(f(x) = \dfrac{x^5}{2}+\sin(x)\text{,}\)</span> find <span class="process-math">\(F(x)\)</span> where <span class="process-math">\(F(0)=3\text{.}\)</span>
+</div></article><article class="task exercise-like" id="subsec-InitialValueProblems-5-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-InitialValueProblems-5-2-1-1">For <span class="process-math">\(g'(x) = e^x\text{,}\)</span> find <span class="process-math">\(G(x)\)</span> where <span class="process-math">\(G(0)=4\)</span> and <span class="process-math">\(g(0)=2\text{.}\)</span>
+</div></article></article></details></section><section class="subsection" id="subsec-IndefiniteIntegrals"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.1.3</span><span class="space"> </span><span class="title">Indefinite Integrals</span>
+</h3>
+<div class="para" id="subsec-IndefiniteIntegrals-2">To finish this out, we’ll just build some notation that represents these families of antiderivatives. We can use words to describe them, but it will be helpful to introduce some quick way of writing this using notation.</div>
+<article class="definition definition-like" id="def-IndefiniteIntegral"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Indefinite Integral.</span>
+</h4>
+<div class="para logical" id="def-IndefiniteIntegral-2-1">
+<div class="para">An <dfn class="terminology">indefinite integral</dfn> represents a family of antiderivatives:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int f(x)\;dx = F(x)+C\text{.}
+\int f(x)\;dx = F(x)+C
 \end{equation*}
 </div>
+<div class="para">where</div>
+<ul class="disc" id="def-IndefiniteIntegral-2-1-3">
+<li id="def-IndefiniteIntegral-2-1-3-1"><div class="para" id="def-IndefiniteIntegral-2-1-3-1-1">
+<span class="process-math">\(\displaystyle \int\)</span> is a symbol directing us to find a family of antiderivatives (or integrate)</div></li>
+<li id="def-IndefiniteIntegral-2-1-3-2"><div class="para" id="def-IndefiniteIntegral-2-1-3-2-1">
+<span class="process-math">\(f(x)\)</span> is called the integrand</div></li>
+<li id="def-IndefiniteIntegral-2-1-3-3"><div class="para" id="def-IndefiniteIntegral-2-1-3-3-1">
+<span class="process-math">\(dx\)</span> is a differential, and represents both the "end" of the integral as well as an indicator of what the input variable of the integrand should be (or what variable we antidifferentiate "with regard to").</div></li>
+<li id="def-IndefiniteIntegral-2-1-3-4"><div class="para" id="def-IndefiniteIntegral-2-1-3-4-1">
+<span class="process-math">\(F(x)\)</span> is an antiderivative of <span class="process-math">\(f(x)\)</span> (where <span class="process-math">\(F'(x)=f(x)\)</span>).</div></li>
+<li id="def-IndefiniteIntegral-2-1-3-5"><div class="para" id="def-IndefiniteIntegral-2-1-3-5-1">
+<span class="process-math">\(C\)</span> is called the "constant of integration" and represents any real number</div></li>
+</ul>
+</div></article><details id="subsec-IndefiniteIntegrals-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.5</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-IndefiniteIntegrals-4-1"><div class="para" id="subsec-IndefiniteIntegrals-4-1-1">Find families of antiderivatives according to each of the following indefinite integrals.</div></div>
+<article class="task exercise-like" id="subsec-IndefiniteIntegrals-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-IndefiniteIntegrals-4-2-1-1"><span class="process-math">\(\displaystyle \int \left(\dfrac{4}{x} - \sqrt{x}\right)\;dx\)</span></div></article><article class="task exercise-like" id="subsec-IndefiniteIntegrals-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-IndefiniteIntegrals-4-3-1-1"><span class="process-math">\(\displaystyle \int (x+4)(x^2-7)\;dx\)</span></div>
+<div class="solutions"><details id="subsec-IndefiniteIntegrals-4-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="subsec-IndefiniteIntegrals-4-3-2-1">
+<div class="para">While we do not know how to antidifferentiate products of functions yet, we can just multiply the integrand function!</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x+4)(x^2-7) = x^3 + 4x^2-7x-28
+\end{equation*}
+</div>
+<div class="para">Antidifferentiate this.</div>
+</div></div></details></div></article><article class="task exercise-like" id="subsec-IndefiniteIntegrals-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-IndefiniteIntegrals-4-4-1-1"><span class="process-math">\(\displaystyle \int \left(\frac{xe^x - 1}{x}\right)\;dx\)</span></div>
+<div class="solutions"><details id="subsec-IndefiniteIntegrals-4-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="subsec-IndefiniteIntegrals-4-4-2-1">
+<div class="para">Similar to the previous problem, we do not know how to antidifferentiate quotients, but we can re-write this function before we antidifferentiate!</div>
+<div class="displaymath process-math" id="subsec-IndefiniteIntegrals-4-4-2-1-1">
+\begin{align*}
+\frac{xe^x-1}{x} \amp = \frac{xe^x}{x}-\frac{1}{x}\\
+\amp = e^x - \frac{1}{x}
+\end{align*}
+</div>
+<div class="para">Antidifferentiate this!</div>
+</div></div></details></div></article></article></details><div class="para" id="subsec-IndefiniteIntegrals-5">All we have left to do now is to just formalize the antiderivative rules we’ve been intuitively building and using.</div>
+<article class="theorem theorem-like" id="thm-PowerRuleAntiderivatives"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Power Rule for Antiderivatives.</span>
+</h4>
+<div class="para logical" id="thm-PowerRuleAntiderivatives-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\int x^n\;dx = \dfrac{x^{n+1}}{n+1}+C
+\end{equation*}
+</div>
+<div class="para">for <span class="process-math">\(n\neq -1\)</span>
+</div>
+</div></article><article class="theorem theorem-like" id="thm-ExpLogAntiderivatives"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Antiderivatives Related to the Exponential and Log Functions.</span>
+</h4>
+<div class="para logical" id="thm-ExpLogAntiderivatives-2-1"><div class="displaymath process-math" id="thm-ExpLogAntiderivatives-2-1-1">
+\begin{align*}
+\int e^x\;dx \amp = e^x+C\\
+\int b^x\;dx \amp = \frac{b^x}{\ln(b)}+C \amp \text{for }b\gt 0 \text{ and } b\neq 1\\
+\int \frac{1}{x}\;dx \amp = \ln|x|+C
+\end{align*}
+</div></div></article><article class="theorem theorem-like" id="thm-TrigAntiderivatives"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Antiderivatives of Trigonometric Functions.</span>
+</h4>
+<div class="para logical" id="thm-TrigAntiderivatives-2-1"><div class="displaymath process-math" id="thm-TrigAntiderivatives-2-1-1">
+\begin{align*}
+\int \sin(x)\;dx \amp = -\cos(x)+C\\
+\int \cos(x)\;dx \amp = \sin(x) + C 
+\end{align*}
+</div></div></article><article class="theorem theorem-like" id="thm-CombinationsOfIntegrals"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">Combinations of Indefinite Integrals.</span>
+</h4>
+<div class="para logical" id="thm-CombinationsOfIntegrals-2-1"><ol class="decimal" id="thm-CombinationsOfIntegrals-2-1-1">
+<li id="thm-CombinationsOfIntegrals-2-1-1-1"><div class="para" id="thm-CombinationsOfIntegrals-2-1-1-1-1">
+<em class="emphasis">Sums:</em> <span class="process-math">\(\displaystyle \int (f(x)+g(x))\;dx = \int f(x)\;dx + \int g(x)\;dx\)</span>
 </div></li>
-<li id="strat-InitialValueProblems-2-4-2"><div class="para" id="strat-InitialValueProblems-2-4-2-1">Using the initial value to solve for the constant <span class="process-math">\(C\text{,}\)</span> by evaluating <span class="process-math">\(F(x)+C\)</span> at <span class="process-math">\(x=a\)</span> and solving for <span class="process-math">\(C\text{.}\)</span>
+<li id="thm-CombinationsOfIntegrals-2-1-1-2"><div class="para" id="thm-CombinationsOfIntegrals-2-1-1-2-1">
+<em class="emphasis">Differences:</em> <span class="process-math">\(\displaystyle \int (f(x)-g(x))\;dx = \int f(x)\;dx - \int g(x)\;dx\)</span>
 </div></li>
-</ol>
-</div></article></section></section></div>
+<li id="thm-CombinationsOfIntegrals-2-1-1-3"><div class="para" id="thm-CombinationsOfIntegrals-2-1-1-3-1">
+<em class="emphasis">Coefficients:</em> <span class="process-math">\(\displaystyle \int (kf(x))\;dx = k\int f(x)\;dx\)</span>
+</div></li>
+</ol></div></article><div class="para" id="subsec-IndefiniteIntegrals-10">These should all be very familiar, since they are really just restatements of the results from <a href="sec-DerivativeRules.html" class="internal" title="Section 2.3: Some Early Derivative Rules">Section 2.3 Some Early Derivative Rules</a>.</div>
+<div class="para" id="subsec-IndefiniteIntegrals-11">We should also be comfortable recognizing derivatives of functions that we know, in order to find more functions that we can antidifferentiate.</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-AntiderivativesIntegrals.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-RiemannSums.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
