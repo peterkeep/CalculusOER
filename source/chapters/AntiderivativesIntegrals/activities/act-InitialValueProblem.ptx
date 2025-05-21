@@ -1,0 +1,52 @@
+<activity xml:id="act-InitialValueProblem">
+    <title>A File Sorting Speed Test</title>
+    <introduction>
+        <p>
+            A computer program is trying to sort a group of computer files based on their size. The program isn't very efficient, and the time that it takes to sort the files increases when it tries to sort more files.
+        </p>
+        <p>
+            The time that it takes, measured in seconds, based on the total, cumulative size of the files <m>g</m>, measured in gigabytes, is modeled by a function <m>T(g)</m>. We don't know the function, but we do know that the time increases at an instantaneous rate of <m>0.0001g</m> seconds when the total size, <m>g</m> increases slightly.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                We can build a function for <m>T'(g)</m>. What is it?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <m>T'(g) = 0.0001g</m>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find all of the possibilities for the function modeling the time, <m>T</m>, that it takes the computer program to sort files with a total size of <m>g</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We are looking for the family of antiderivatives of <m>T'(g)</m>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+               What does your constant <m>C</m> represent, here? You can interpret it graphically, interpret it by thinking about derivatives, but you should also interpret it in terms of the time that it takes this program to sort these files by size. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's say that we feed some number of files totaling up to 1.4GB in size into this program. It takes 0.24 seconds to sort the files by size.
+            </p>
+            <p>
+                Find the function, <m>T(g)</m>, that models the how quickly this program sorts these files.
+            </p>
+        </statement>
+    </task>
+</activity>

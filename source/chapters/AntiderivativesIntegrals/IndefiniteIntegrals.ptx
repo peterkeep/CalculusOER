@@ -2,9 +2,128 @@
 
 <section xml:id="sec-IndefiniteIntegrals" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Antiderivatives and Indefinite Integrals</title>
-
+    <introduction>
+        <p>
+            We've been spending a lot of time thinking about derivatives! We've done this in a couple of different ways:
+            <ol>
+                <li>
+                    <p>
+                        We have thought carefully about what derivatives are, what they measure, and how to interpret them.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We have built up a whole list of tools that we can use to actually find or calculate these derivatives. We know how to differentiate most functions (and combinations of functions) that we can think of!
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We've been able to apply these derivatives to some specific contexts to solve problems or analyze functions and mathematical models.
+                    </p>
+                </li>
+            </ol>
+            Let's think about derivatives in a slightly different way!
+        </p>
+        <xi:include href="./activities/act-FindFunction.ptx" />
+        <p>
+            We've done two things here: thought about how we might "undo" differnentiation, and discovered a nice property about constants.
+        </p>
+        <p>
+            Note that we've already discovered this rule! We proved it, back when we were playing with the <xref ref="thm-MVT" text="title"/>. We built a related theorem that showed that two functions can have the same derivative, and if they do then they are off by, at most, a constant: <xref ref="thm-OffByConstant" text="type-global-title"/>.
+        </p>
+        <p>
+            Let's visualize this phenomena!
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:1.1">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="./doenet/FamilyOfAntiderivatives.xml"/>
+            </slate>
+        </interactive>
+    </introduction>
+    <subsection xml:id="subsec-Antiderivatives">
+        <title>Antiderivatives</title>
+        <p>
+            We want to try to define and name these "backwards derivatives." Instead of calling them the "negative first" derivative, we will name them as <term>antiderivatives</term>.
+        </p>
+        <definition xml:id="def-Antiderivative">
+            <title>Antiderivative</title>
+            <statement>
+                <p>
+                    For a function <m>f(x)</m>, we say that <m>F(x)</m> is an <term>antiderivative</term> of <m>f(x)</m> on an interval if <m>F'(x)=f(x)</m> on the interval.
+                </p>
+                <p>
+                    We call <m>F(x)+C</m> the <term>family of antiderivatives</term> of <m>f(x)</m>, where <m>C</m> represents any real number constant.
+                </p>
+            </statement>
+        </definition>
+        <example>
+            <introduction>
+                <p>
+                    For each of the following functions, find the family of antiderivatives.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        <m>f(x)=7x+\sec^2(x)</m>
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        Do we know a function whose derivative is <m>\sec^2(x)</m>?
+                    </p>
+                </hint>
+                <solution>
+                    <p>
+                        <m>F(x) = \dfrac{7x^2}{2} + \tan(x) + C</m>
+                    </p>
+                </solution>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>g(x) = \dfrac{5}{x} - \dfrac{3}{1+x^2}</m>
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        We won't be undoing the Power Rule with either of these! We might try to think about functions whose derivatives are <m>\frac{1}{x}</m> and <m>\frac{1}{1+x^2}</m>.
+                    </p>
+                </hint>
+                <solution>
+                    <p>
+                        <m>G(x) = 5\ln|x| - 3\tan^{-1}(x)+C</m>
+                    </p>
+                    <p>
+                        We use absolute values in the logarithm because we want to find a functions whose derivative is <m>g(x)</m> on the whole interval that <m>g(x)</m> is defined. The log function is only defined for positive inputs, but we would like to be able put any non-zero input into our function (since that's the domain of <m>g</m>).
+                    </p>
+                </solution>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>j(x) = x^5-4x+1 - \dfrac{4}{3x^5}</m>
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        It might help to write the function as <m>j(x) = x^5 - 4x + 1 - \dfrac{4}{3}x^{-5}</m>.
+                    </p>
+                </hint>
+                <solution>
+                    <p>
+                        <m>J(x) = \dfrac{x^6}{6} - 2x^2+x + \dfrac{1}{3x^4} +C</m>
+                    </p>
+                </solution>
+            </task>
+        </example>
+    </subsection>
     <subsection xml:id="subsec-InitialValueProblems">
         <title>Initial Value Problems</title>
+        <xi:include href="./activities/act-InitialValueProblem.ptx" />
+        <p>
+            We call this type of problem an "initial value problem." Here, we ended up solving for a family of antiderivatives, but then using some more information about that antiderivative (in this case, information about file size and time) to find the specific antiderivative function that was relevant.
+        </p>
         <assemblage xml:id="strat-InitialValueProblems">
             <title>Solving Initial Value Problems</title>
             <p>
@@ -12,20 +131,193 @@
                 <ol>
                     <li>
                         <p>
-                            Finding the family of antiderivatives:
-                            <me>
-                                \int f(x)\;dx = F(x)+C
-                            </me>.
+                            Finding the family of antiderivatives: <m>F(x)+C</m>.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Using the initial value to solve for the constant <m>C</m>, by evaluating <m>F(x)+C</m> at <m>x=a</m> and solving for <m>C</m>.
+                            Using the initial value to solve for the constant <m>C</m>, by evaluating <m>F(x)+C</m> at <m>x=a</m> and solving the resulting equation.
                         </p>
                     </li>
                 </ol>
             </p>
         </assemblage>
+        <example>
+            <task>
+                <statement>
+                    <p>
+                        For <m>f(x) = \dfrac{x^5}{2}+\sin(x)</m>, find <m>F(x)</m> where <m>F(0)=3</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        For <m>g'(x) = e^x</m>, find <m>G(x)</m> where <m>G(0)=4</m> and <m>g(0)=2</m>.
+                    </p>
+                </statement>
+            </task>
+        </example>
     </subsection>
+    <subsection xml:id="subsec-IndefiniteIntegrals">
+        <title>Indefinite Integrals</title>
+        <p>
+            To finish this out, we'll just build some notation that represents these families of antiderivatives. We can use words to describe them, but it will be helpful to introduce some quick way of writing this using notation.
+        </p>
+        <definition xml:id="def-IndefiniteIntegral">
+            <title>Indefinite Integral</title>    
+            <statement>
+                <p>
+                    An <term>indefinite integral</term> represents a family of antiderivatives:
+                    <me>
+                        \int f(x)\;dx = F(x)+C
+                    </me>
+                    where
+                    <ul>
+                        <li>
+                            <p>
+                                <m>\displaystyle \int</m> is a symbol directing us to find a family of antiderivatives (or integrate)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(x)</m> is called the integrand
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>dx</m> is a differential, and represents both the "end" of the integral as well as an indicator of what the input variable of the integrand should be (or what variable we antidifferentiate "with regard to").
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>F(x)</m> is an antiderivative of <m>f(x)</m> (where <m>F'(x)=f(x)</m>).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>C</m> is called the "constant of integration" and represents any real number
+                            </p>
+                        </li>
+                    </ul>
+                </p> 
+            </statement>
+        </definition>
+        <example>
+            <introduction>
+                <p>
+                    Find families of antiderivatives according to each of the following indefinite integrals.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        <m>\displaystyle \int \left(\dfrac{4}{x} - \sqrt{x}\right)\;dx</m>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>\displaystyle \int (x+4)(x^2-7)\;dx</m>
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        While we do not know how to antidifferentiate products of functions yet, we can just multiply the integrand function!
+                        <me>
+                            (x+4)(x^2-7) = x^3 + 4x^2-7x-28
+                        </me>
+                        Antidifferentiate this.
+                    </p>
+                </hint>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <m>\displaystyle \int \left(\frac{xe^x - 1}{x}\right)\;dx</m>
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        Similar to the previous problem, we do not know how to antidifferentiate quotients, but we can re-write this function before we antidifferentiate!
+                        <md>
+                            <mrow>\frac{xe^x-1}{x} \amp = \frac{xe^x}{x}-\frac{1}{x}</mrow>
+                            <mrow> \amp = e^x - \frac{1}{x}</mrow>
+                        </md>
+                        Antidifferentiate this!
+                    </p>
+                </hint>
+            </task>
+        </example>
+        <p>
+            All we have left to do now is to just formalize the antiderivative rules we've been intuitively building and using.
+        </p>
+        <theorem xml:id="thm-PowerRuleAntiderivatives">
+            <title>Power Rule for Antiderivatives</title>
+            <statement>
+                <p>
+                    <me>
+                        \int x^n\;dx = \dfrac{x^{n+1}}{n+1}+C
+                    </me>
+                    for <m>n\neq -1</m>
+                </p>
+            </statement>
+        </theorem>
+        <theorem xml:id="thm-ExpLogAntiderivatives">
+            <title>Antiderivatives Related to the Exponential and Log Functions</title>
+            <statement>
+                <p>
+                    <md>
+                        <mrow>\int e^x\;dx \amp = e^x+C</mrow>
+                        <mrow>\int b^x\;dx \amp = \frac{b^x}{\ln(b)}+C \amp \text{for }b\gt 0 \text{ and } b\neq 1</mrow>
+                        <mrow> \int \frac{1}{x}\;dx \amp = \ln|x|+C</mrow>
+                    </md>
+                </p>
+            </statement>
+        </theorem>
+        <theorem xml:id="thm-TrigAntiderivatives">
+            <title>Antiderivatives of Trigonometric Functions</title>
+            <statement>
+                <p>
+                     <md>
+                        <mrow>\int \sin(x)\;dx \amp = -\cos(x)+C</mrow>
+                        <mrow>\int \cos(x)\;dx \amp = \sin(x) + C </mrow>
+                     </md>
+                </p>
+            </statement>
+        </theorem>
+        <theorem xml:id="thm-CombinationsOfIntegrals">
+            <title>Combinations of Indefinite Integrals</title>
+            <statement>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <em>Sums:</em> <m>\displaystyle \int (f(x)+g(x))\;dx = \int f(x)\;dx + \int g(x)\;dx</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <em>Differences:</em> <m>\displaystyle \int (f(x)-g(x))\;dx = \int f(x)\;dx - \int g(x)\;dx</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <em>Coefficients:</em> <m>\displaystyle \int (kf(x))\;dx = k\int f(x)\;dx</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </theorem>
+        <p>
+            These should all be very familiar, since they are really just restatements of the results from <xref ref="sec-DerivativeRules" text="type-global-title"/>.
+        </p>
+        <p>
+            We should also be comfortable recognizing derivatives of functions that we know, in order to find more functions that we can antidifferentiate.
+        </p>
+    </subsection>
+
 
 </section>

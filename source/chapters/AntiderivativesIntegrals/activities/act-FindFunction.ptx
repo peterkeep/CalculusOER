@@ -1,0 +1,53 @@
+<activity xml:id="act-FindFunction">
+    <title>Find a Function Where...</title>
+    <introduction>
+        <p>
+            For each of the following derivatives, find a function <m>f(x)</m> whose first (or second) derivative matches the listed derivative.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                <m>f'(x)=4x^3 + 6</m>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                <m>f'(x)=8x^7-x^4+x</m>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                <m>f'(x)=\sqrt{x}-\dfrac{1}{x^2}</m>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                <m>f''(x)=x^3+\cos(x)</m>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                <m>f''(x)=e^x - \dfrac{1}{\sqrt[3]{x}}</m>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Go back through each of the above derivatives, and find a different option for <m>f(x)</m> that still works. Make sure that it is something completely unique, and not just an equivalent function that is written differently.
+            </p>
+            <p>
+                Why are able to find multiple answers in these questions, but not when we are given a function and need to find a derivative?
+            </p>
+        </statement>
+    </task>
+</activity>

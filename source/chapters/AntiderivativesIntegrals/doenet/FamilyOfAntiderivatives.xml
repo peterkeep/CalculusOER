@@ -1,0 +1,28 @@
+<setup>
+    <function name="F">(x-1)(x+2)(x-4)/10 + $shift</function>
+    <point name="P">(-1,$$F(-1))
+      <constraints>
+        <constrainTo>
+          $F
+        </constrainTo>
+      </constraints>
+    </point>
+    <derivative name="f">$F</derivative>
+    <function name="tangent" styleNumber="2">$$f($P.x)(x-$P.x)+$$F($P.x)</function>
+  </setup>
+  
+  <p><em>Instructions:</em> Move the slider to shift the function <m>F(x)</m> up or down. Compare the slopes at a point as the function shifts up and down. Does the slope (the derivative) change as we shift the function up or down?</p>
+  
+  <slider name="shift" initialValue="0" from="-2" to="2" step="0.01" showValue="false" showTicks="false">
+    <label>
+      <m>\leftarrow</m> Shift Down <nbsp/> <nbsp/> <nbsp/> <nbsp/><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/><nbsp/> <nbsp/>  Shift Up <m>\rightarrow</m>
+    </label>
+  </slider>
+  
+  <graph size="medium" fixAxes xmin="-4" xmax="6" ymin="-3.5" ymax="3.5" identicalAxisScales>
+    $F
+    $P
+    $tangent
+  </graph>
+  
+  <p>The slope of the tangent line is <m>F'($P.x)=$$f($P.x)</m>.</p>
