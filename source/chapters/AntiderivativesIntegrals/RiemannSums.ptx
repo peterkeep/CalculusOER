@@ -59,7 +59,7 @@
         </p>
       </statement>
     </definition>
-    <note>
+    <note xml:id="note-RegularPartition"> 
       <p>
         In practice, we typically choose a <em>Regular Partition</em>, where each subinterval <m>[x_{k-1}, x_k]</m> is equally-wide, and so <m>\Delta x_k = \frac{b-a}{n}</m> for every <m>k=1,2,...,n</m>. We then normally write our Riemann sum as
         <me>
@@ -97,15 +97,24 @@
             <p>
               <em>Left Riemann Sum:</em> We pick the left-most <m>x</m>-value from each subinterval. That is, if the partition is <m>\{a=x_0, x_1, x_2, ..., b=x_n\}</m>, then we choose <m>\{a, x_1, x_2, ..., x_{n-1}\}</m> as our <m>x</m>-values to evaluate <m>f</m> at for the rectangle heights.
             </p>
+            <p>
+              We refer to these as <m>L_n</m>, a Left Riemann sum with <m>n</m> rectangles.
+            </p>
           </li>
           <li>
             <p>
               <em>Right Riemann Sum:</em> We pick the right-most <m>x</m>-value from each subinterval. That is, if the partition is <m>\{a=x_0, x_1, x_2, ..., b=x_n\}</m>, then we choose <m>\{x_1, x_2, ..., b\}</m> as our <m>x</m>-values to evaluate <m>f</m> at for the rectangle heights.
             </p>
+            <p>
+              We refer to these as <m>R_n</m>, a Right Riemann sum with <m>n</m> rectangles.
+            </p>
           </li>
           <li>
             <p>
               <em>Midpoint Riemann Sum:</em> We pick the <m>x</m>-value that is in the middle of each subinterval. That is, if the partition is <m>\{a=x_0, x_1, x_2, ..., b=x_n\}</m>, then we choose <m>\left\{\frac{a+x_1}{2}, \frac{x_1+x_2}{2}, ..., \frac{x_{n-1}+b}{2}\right\}</m> as our <m>x</m>-values to evaluate <m>f</m> at for the rectangle heights.
+            </p>
+            <p>
+              We refer to these as <m>M_n</m>, a Midpoint Riemann sum with <m>n</m> rectangles.
             </p>
           </li>
         </ul>
