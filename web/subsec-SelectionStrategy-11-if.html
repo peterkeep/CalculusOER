@@ -92,91 +92,101 @@ window.MathJax = {
 </div>
 <script type="text/doenetml">
           <setup>
-    <!-- Calculate the offset: sample point x_i^* = x_i + offset -->
-    <!-- Left, Mid and Right Endpoint Rule corresponds to 0, 1, 2 in following computation -->
-    <conditionalContent assignNames="ruleChoiceNumber">
-        <case condition="$ruleChoice=Left Riemann Sum">0</case>
-        <case condition="$ruleChoice=Midpoint Riemann Sum">1</case>
-        <case condition="$ruleChoice=Right Riemann Sum">2</case>
-    </conditionalContent>
-    <number name="offset">$dx*$ruleChoiceNumber / 2</number>
-    <!-- numeric version of dx in case symbolic version (displayed to user) slows things down -->
-    <number name="dxN">$dx</number>
+  <!-- Calculate the offset: sample point x_i^* = x_i + offset -->
+  <!-- Left, Mid and Right Endpoint Rule corresponds to 0, 1, 2 in following computation -->
+  <conditionalContent assignNames="ruleChoiceNumber">
+    <case condition="$ruleChoice=Left Riemann Sum">0</case>
+    <case condition="$ruleChoice=Midpoint Riemann Sum">1</case>
+    <case condition="$ruleChoice=Right Riemann Sum">2</case>
+  </conditionalContent>
+  <number name="offset">$dx*$ruleChoiceNumber / 2</number>
+  <!-- numeric version of dx in case symbolic version (displayed to user) slows things down -->
+  <number name="dxN">$dx</number>
 
-    <!-- Compute the x_i's here, instead of within the graph -->
-    <sequence from="$a" to="$b-$dx" step="$dx" name="xiValues"/>
-    <!-- For help in zooming into the graph correctly: what are the minimum and maximum rectangle heights? -->
-    <!-- make sure to to include 0 in the computations, in case all heights are positive (or negative) -->
-    <!-- note: could use $$f($xVal+$offset), but tacking $$f($b) on the computation means less shifting
-        of the graph when switching between rules (if rectanges stretch beyond the graph with right 
-        endpoints but not left, for example.  Less shifting seems better -->
-    <map name="fValues"><template>$$f($xVal)</template><sources alias="xVal">$xiValues</sources></map>
-    <number name="minY"><min>0 $fValues $$f($b)</min></number>
-    <number name="maxY"><max>0 $fValues $$f($b)</max></number>
+  <!-- Compute the x_i's here, instead of within the graph -->
+  <sequence from="$a" to="$b-$dx" step="$dx" name="xiValues"/>
+  <!-- For help in zooming into the graph correctly: what are the minimum and maximum rectangle heights? -->
+  <!-- make sure to to include 0 in the computations, in case all heights are positive (or negative) -->
+  <!-- note: could use $$f($xVal+$offset), but tacking $$f($b) on the computation means less shifting
+      of the graph when switching between rules (if rectanges stretch beyond the graph with right 
+      endpoints but not left, for example.  Less shifting seems better -->
+  <map name="fValues"><template>$$f($xVal)</template><sources alias="xVal">$xiValues</sources></map>
+  <number name="minY"><min>0 $fValues $$f($b)</min></number>
+  <number name="maxY"><max>0 $fValues $$f($b)</max></number>
 </setup>
-  
+
 <p><em>Instructions:</em> In this Riemann Sum calculator, you can input your own function, your own starting point (<m>x=a</m>) and ending point (<m>x=b</m>), and the number of rectangles you'd like to use (<m>n</m>). Then, select your strategy for selecting the <m>x</m>-values from each of the subintervals (Left, Midpoint, or Right Riemann Sums).</p>
-  
-  <!-- Start by definining the function, a, b, and n (and hence dx), and rule choice -->
-  <table suppressTableNameInTitle="true">
-      <row>
-        <cell halign="right"><m>f(x) = </m></cell>
-        <cell><mathinput prefill="x^2+1" name="fnFormula" /></cell>
-      </row>
-      <row>
-        <cell halign="right"><m>a =</m></cell>
-        <cell><mathinput name="a" prefill="0" /></cell>
-      </row>
-      <row>
-        <cell halign="right"><m>b =</m></cell>
-        <cell><mathinput name="b" prefill="2" /></cell>
-      </row>
-      <row>
-        <cell halign="right"><m>n =</m></cell>
-        <cell><mathinput prefill="5" name="n" /></cell>
-      </row>
-      <row>
-        <cell halign="right"><m>\Delta x =</m></cell><cell><math simplify name="dx">($b-$a)/$n</math></cell>
-      </row>
-      <row>
-        <cell halign="right">Selection Strategy for <m>x_k^*</m>:</cell>
-        <cell><choiceInput name="ruleChoice" inline="true" preselectChoice="1">
-            <choice>Left Riemann Sum</choice>
-            <choice>Midpoint Riemann Sum</choice>
-            <choice>Right Riemann Sum</choice>
-        </choiceInput>
-        </cell>
-      </row>
-  </table>
-  
-  <!-- Graph the function, points at (a,0) and (b,0), and then the n rectangles -->
-  <graph xmin="$a-1" xmax="$b+1" ymin="$minY-1" ymax="$maxY+1" 
-    identicalAxisScales="false" showNavigation="false">
-    <function name="f" layer="0" symbolic>$fnFormula</function>
-    <regionBetweenCurveXAxis function="$f" boundaryValues="$a $b" />
-  
-  <map>
-    <template>
-      <polygon stylenumber="6" filled draggable="false"
-        vertices="($xVal,0) 
-                  ($xVal+$dxN,0) 
-                  ($xVal+$dxN, $$f($xVal+$offset)) 
-                  ($xVal,$$f($xVal+$offset))" />
-    </template>
-    <sources alias="xVal">
-      <sequence from="$a" to="$b-$dxN" step="$dxN" />
-    </sources>
-  </map>  
+
+<!-- Start by definining the function, a, b, and n (and hence dx), and rule choice -->
+<table suppressTableNameInTitle="true">
+    <row>
+      <cell halign="right"><m>f(x) = </m></cell>
+      <cell><mathinput prefill="x^2+1" name="fnFormula" /></cell>
+    </row>
+    <row>
+      <cell halign="right"><m>a =</m></cell>
+      <cell><mathinput name="a" prefill="0" /></cell>
+    </row>
+    <row>
+      <cell halign="right"><m>b =</m></cell>
+      <cell><mathinput name="b" prefill="2" /></cell>
+    </row>
+    <row>
+      <cell halign="right"><m>n =</m></cell>
+      <cell><mathinput prefill="5" name="n" /></cell>
+    </row>
+    <row>
+      <cell halign="right"><m>\Delta x =</m></cell><cell><math simplify name="dx">($b-$a)/$n</math></cell>
+    </row>
+    <row>
+      <cell halign="right">Selection Strategy for <m>x_k^*</m>:</cell>
+      <cell><choiceInput name="ruleChoice" inline="true" preselectChoice="1">
+          <choice>Left Riemann Sum</choice>
+          <choice>Midpoint Riemann Sum</choice>
+          <choice>Right Riemann Sum</choice>
+      </choiceInput>
+      </cell>
+    </row>
+</table>
+
+<!-- Graph the function, points at (a,0) and (b,0), and then the n rectangles -->
+<graph xmin="$a-1" xmax="$b+1" ymin="$minY-1" ymax="$maxY+1" 
+  identicalAxisScales="false" showNavigation="false">
+  <function name="f" layer="0" symbolic>$fnFormula</function>
+  <regionBetweenCurveXAxis function="$f" boundaryValues="$a $b" />
+
+<map>
+  <template>
+    <polygon stylenumber="6" filled draggable="false"
+      vertices="($xVal,0) 
+                ($xVal+$dxN,0) 
+                ($xVal+$dxN, $$f($xVal+$offset)) 
+                ($xVal,$$f($xVal+$offset))" />
+  </template>
+  <sources alias="xVal">
+    <sequence from="$a" to="$b-$dxN" step="$dxN" />
+  </sources>
+</map>  
 </graph>
-  
+
 <p>
-    Your area approximation is: 
-    <sum displaydecimals="4">
-        <map>
-        <template><number>$$f($xVal+$offset)*$dx</number></template>
-        <sources alias="xVal">$xiValues</sources>
-        </map>
-    </sum>.
+  Your area approximation is: <conditionalContent>
+    <case condition="$ruleChoice=Left Riemann Sum">
+      <m>L_{$n}=</m>
+    </case>
+    <case condition="$ruleChoice=Right Riemann Sum">
+      <m>R_{$n}=</m>
+    </case>
+    <case condition="$ruleChoice=Midpoint Riemann Sum">
+      <m>M_{$n}=</m>
+    </case>
+  </conditionalContent>
+  <sum displaydecimals="4">
+    <map>
+      <template><number>$$f($xVal+$offset)*$dx</number></template>
+      <sources alias="xVal">$xiValues</sources>
+    </map>
+  </sum>.
 </p>
       </script>
 </div></div>
