@@ -352,15 +352,14 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RiemannSums.html#subsec-SelectionStrategy" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Selection Strategies</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-DefiniteIntegral.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Definite Integral</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#subsec-EvaluatingAreas" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Evaluating Areas (Instead of Approximating Them)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#subsec-SignedArea" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Signed Area</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#subsec-PropertiesOfDefiniteIntegrals" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Properties of Definite Integrals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Definite Integral</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-FTOC.html" class="internal"><span class="codenumber">5.4</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FTOC.html#subsec-AreasAndAntierivatives" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Areas and Antiderivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FTOC.html#subsec-EvaluatingIntegrals" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Evaluating Definite Integrals</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-FTOC.html" class="internal"><span class="codenumber">5.4</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html" class="internal"><span class="codenumber">5.5</span> <span class="title">More Definite Integrals</span></a></div></li>
 </ul>
 </li>
@@ -536,19 +535,68 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-FTOC"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">5.4</span><span class="space"> </span><span class="title">The Fundamental Theorem of Calculus</span>
 </h2>
-<article class="theorem theorem-like" id="thm-FTOC1"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Fundamental Theorem of Calculus (Part 1).</span>
+<section class="introduction" id="sec-FTOC-2"><div class="para" id="sec-FTOC-2-1">Let’s remind ourselves of how we interpret derivatives. We are going to repeat a task that we did in <a href="sec-IncreasingDecreasing.html#act-FDTGraphically" class="xref" data-knowl="./knowl/xref/act-FDTGraphically.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 4.2.3: First Derivative Test Graphically">Activity 4.2.3 First Derivative Test Graphically</a>. It should feel familiar, which is good! We’re going to use the intuition to make the big connection we’ve been forecasting so far.</div>
+<article class="activity project-like" id="act-InterpretDerivative"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Interpreting the Graph of a Derivarive.</span>
 </h3>
+<div class="introduction" id="act-InterpretDerivative-2">
+<div class="para" id="act-InterpretDerivative-2-1">Let’s look at a picture of a graph of the first derivative, <span class="process-math">\(f'(x)\text{,}\)</span> and try to get some information about <span class="process-math">\(f(x)\)</span> from it. Use the following graph of <span class="process-math">\(f'(x)\text{,}\)</span> the first derivative, to answer the questions about <span class="process-math">\(f(x)\text{.}\)</span>
+</div>
+<iframe id="act-InterpretDerivative-2-2" width="570" height="599" src="act-InterpretDerivative-2-2-if.html"></iframe><div class="para" id="act-InterpretDerivative-2-3">Since we don’t have a huge amount of detail, you’ll likely have to estimate the <span class="process-math">\(x\)</span>-values for intervals and points in the following questions, but that’s ok! Estimate away! Just make sure you know what you’re looking for in the graph of <span class="process-math">\(f'(x)\)</span> to answer these questions.</div>
+</div>
+<article class="task exercise-like" id="act-InterpretDerivative-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="act-InterpretDerivative-3-1-1">List the intervals on which <span class="process-math">\(f(x)\)</span> is increasing. What about decreasing?</div></article><article class="task exercise-like" id="act-InterpretDerivative-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-InterpretDerivative-4-1-1">Find the <span class="process-math">\(x\)</span>-values of any local maximums and/or local minimums of <span class="process-math">\(f(x)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="act-InterpretDerivative-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="act-InterpretDerivative-5-1-1">List the intervals on which <span class="process-math">\(f(x)\)</span> is concave up. What about concave down?</div></article><article class="task exercise-like" id="act-InterpretDerivative-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="act-InterpretDerivative-6-1-1">Find the <span class="process-math">\(x\)</span>-values of any inflection points of <span class="process-math">\(f(x)\text{.}\)</span>
+</div></article></article></section><section class="subsection" id="subsec-AreasAndAntierivatives"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="space"> </span><span class="title">Areas and Antiderivatives</span>
+</h3>
+<article class="activity project-like" id="act-FTOC1"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Interpreting Area.</span>
+</h4>
+<div class="introduction" id="act-FTOC1-2">
+<div class="para logical" id="act-FTOC1-2-1">
+<div class="para">First, we’re going to define a bit of a weird function. Sometimes it’s called the <dfn class="terminology">Area function</dfn>:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(x)=\int_{t=0}^{t=x} g(t)\;dt\text{.}
+\end{equation*}
+</div>
+<div class="para">This is a strange function, because we’re defining the function as an integral of another function. Specifically, note that the <em class="emphasis">input</em> for our area function <span class="process-math">\(A(x)\)</span> is the ending limit of integration: we’re calculating the signed area "under" the curve of <span class="process-math">\(g(t)\)</span> from <span class="process-math">\(t=0\)</span> up to some variable ending point <span class="process-math">\(t=x\text{.}\)</span>
+</div>
+</div>
+<div class="para" id="act-FTOC1-2-2">We can visualize this function by looking at the areas we create as we change <span class="process-math">\(x\text{.}\)</span> For now, get used to just seeing the area "under" <span class="process-math">\(g\)</span> when we move the point around. The areas themselves are the outputs of the function <span class="process-math">\(A(x)\text{.}\)</span>
+</div>
+<iframe id="act-FTOC1-2-3" width="570" height="741" src="act-FTOC1-2-3-if.html"></iframe><div class="para" id="act-FTOC1-2-4">Now we can think about this area function, and try to connect it to the graph of <span class="process-math">\(g(t)\text{.}\)</span>
+</div>
+</div>
+<article class="task exercise-like" id="act-FTOC1-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-FTOC1-3-1-1">List the intervals on which <span class="process-math">\(A(x)\)</span> is increasing. What about decreasing?</div></article><article class="task exercise-like" id="act-FTOC1-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-FTOC1-4-1-1">Find the <span class="process-math">\(x\)</span>-values of any local maximums and/or local minimums of <span class="process-math">\(A(x)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="act-FTOC1-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-FTOC1-5-1-1">List the intervals on which <span class="process-math">\(A(x)\)</span> is concave up. What about concave down?</div></article><article class="task exercise-like" id="act-FTOC1-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-FTOC1-6-1-1">Find the <span class="process-math">\(x\)</span>-values of any inflection points of <span class="process-math">\(A(x)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="act-FTOC1-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-FTOC1-7-1-1">Compare your answers here to your answers about the behavior of <span class="process-math">\(f(x)\)</span> based on the (same) graph of <span class="process-math">\(f'(x)\)</span> in <a href="sec-FTOC.html#act-InterpretDerivative" class="xref" data-knowl="./knowl/xref/act-InterpretDerivative.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.4.1: Interpreting the Graph of a Derivarive">Activity 5.4.1</a>.</div> <div class="para" id="act-FTOC1-7-1-2">What does this mean about the connection between areas and derivatives, or areas and antiderivatives?</div></article></article><div class="para" id="subsec-AreasAndAntierivatives-3">There it is! The way that we can interpret antiderivatives of functions! We found that the derivative of the function that tells us the signed area trapped between a curve and the <span class="process-math">\(x\)</span>-axis between a fixed starting point and a variable ending point is the curve itself.</div>
+<div class="para" id="subsec-AreasAndAntierivatives-4">Another way of saying this, though, is that the function that tells us the signed area trapped between a curve and the <span class="process-math">\(x\)</span>-axis between a fixed starting point and a variable ending point is an antiderivative of the curve itself! This is the Fundamental Theorem of Calculus, or at least half of it.</div>
+<article class="theorem theorem-like" id="thm-FTOC1"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Fundamental Theorem of Calculus (Part 1).</span>
+</h4>
 <div class="para logical" id="thm-FTOC1-2-1">
-<div class="para">For a function <span class="process-math">\(f\)</span> that is continuous on an interval <span class="process-math">\([a,b]\text{,}\)</span> and a function <span class="process-math">\(A(x) = \int_{t=a}^{t=x} f(t)\;dt\)</span> defined for <span class="process-math">\(x\)</span>-values in <span class="process-math">\([a,b]\text{,}\)</span> then <span class="process-math">\(A'(x) = f(x)\text{.}\)</span> That is:</div>
+<div class="para">For a function <span class="process-math">\(f\)</span> that is continuous on an interval <span class="process-math">\([a,b]\text{,}\)</span> and a function <span class="process-math">\(A(x) = \displaystyle\int_{t=a}^{t=x} f(t)\;dt\)</span> defined for <span class="process-math">\(x\)</span>-values in <span class="process-math">\([a,b]\text{,}\)</span> then <span class="process-math">\(A'(x) = f(x)\text{.}\)</span> That is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \ddx{\int_{t=a}^{t=x} f(t)\;dt} = f(x)\text{.}
 \end{equation*}
 </div>
-</div></article><article class="theorem theorem-like" id="thm-FTOC2"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Fundamental Theorem of Calculus (Part 2).</span>
+</div></article></section><section class="subsection" id="subsec-EvaluatingIntegrals"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="space"> </span><span class="title">Evaluating Definite Integrals</span>
 </h3>
+<article class="theorem theorem-like" id="thm-FTOC2"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Fundamental Theorem of Calculus (Part 2).</span>
+</h4>
 <div class="para logical" id="thm-FTOC2-2-1">
 <div class="para">For a function <span class="process-math">\(f(x)\)</span> continuous on the closed interval <span class="process-math">\([a,b]\)</span> and some <span class="process-math">\(F(x)\text{,}\)</span> an antiderivative of <span class="process-math">\(f(x)\)</span> (<span class="process-math">\(F'(x)=f(x)\)</span> on <span class="process-math">\([a,b]\)</span>), then</div>
 <div class="displaymath process-math">
@@ -556,7 +604,7 @@ eBookConfig.enable_chatcodes =  false;
 \int_{x=a}^{x=b} f(x)\;dx = F(x)\bigg{|}_{x=a}^{x=b} = F(b)-F(a)\text{.}
 \end{equation*}
 </div>
-</div></article></section></div>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-DefiniteIntegral.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-MoreDefiniteIntegral.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
