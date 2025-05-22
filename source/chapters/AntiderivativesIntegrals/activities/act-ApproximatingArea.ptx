@@ -9,6 +9,12 @@
         <statement>
             <p>
                 Find the area of the region bounded between the graph of <m>f(x) = 2x+1</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=2</m>.
+                <figure xml:id="fig-ApproxAreas-f">
+                    <caption></caption>
+                    <image source="AntiderivativesIntegrals/ApproxArea-f.png" width="35%">
+                        <shortdescription>A graph of the linear function f(x)=2x+1. The points (0,1) and (2,5) are marked, and there is a shaded in trapezoid shape under the line to the axis between these points.</shortdescription>
+                    </image>
+                </figure>
             </p>
             <p>
                 How did you evaluate this area? What kind(s) of shape(s) did you think about?
@@ -20,6 +26,12 @@
             
             <p>
                 Estimate the area of the region bounded between the graph of <m>g(x)=x^2+1</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=2</m>.
+                <figure xml:id="fig-ApproxAreas-g">
+                    <caption></caption>
+                    <image source="AntiderivativesIntegrals/ApproxArea-g.png" width="35%">
+                        <shortdescription>A graph of the quadratic function g(x)=x^2+1. The points (0,1) and (2,5) are marked, and there is a shaded in shape under the line to the axis between these points.</shortdescription>
+                    </image>
+                </figure>
             </p>
             <aside>
                 <p>

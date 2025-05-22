@@ -4,8 +4,14 @@
         <p>
             We're going to think about the same region, kind of.
         </p>
+        <figure xml:id="fig-WeirdArea-2">
+            <caption></caption>
+            <image source="AntiderivativesIntegrals/WeirdArea.png" width="35%">
+                <shortdescription>A graph of the linear function f(x)=4-3x. The points (0,4) and (3,-5) are marked, and the region between the curve and the axis is shaded in. This shape makes two triangles, one above the axis and one below it, since the line crosses the x-axis.</shortdescription>
+            </image>
+        </figure>
         <p>
-            Let's think about the sam linear function, <m>f(x)=4-3x</m>, but this time we'll approximate and evaluate the area bounded between <m>f(x)</m> and the <m>x</m>-axis from <m>x=3</m> to <m>x=0</m>:
+            Let's think about the same linear function, <m>f(x)=4-3x</m>, but this time we'll approximate and evaluate the area bounded between <m>f(x)</m> and the <m>x</m>-axis from <m>x=3</m> to <m>x=0</m>:
             <me>
                 \int_{x=3}^{x=0}(4-3x)\;dx
             </me>
