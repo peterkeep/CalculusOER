@@ -1,0 +1,102 @@
+<activity xml:id="act-WeirdAreas" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Weird Areas</title>
+    <introduction>
+        <p>
+            Let's think about a simple linear function, <m>f(x)=4-3x</m>. We'll both approximate and evaluate the area bounded between <m>f(x)</m> and the <m>x</m>-axis from <m>x=0</m> to <m>x=3</m>:
+            <me>
+                \int_{x=0}^{x=3}(4-3x)\;dx
+            </me>
+            
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Explain why we do not need to think about Riemann sums in order for us to calculate the shaded in area. How would you calculate this without using calculus?
+            </p>
+            <p>
+                Calculate the area!
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Are there some shapes that you recognize? What are the dimensions of these shapes?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's approximate this area using a Riemann sum. Calculate <m>L_3</m>, the Left Riemann sum with <m>n=3</m> rectangles.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You're going to divide up the interval from <m>x=0</m> to <m>x=3</m> into 3 subintervals: <m>[0,1]</m>, <m>[1,2]</m>, and <m>[2,3]</m>. Note that <m>\Delta x=1</m>.
+            </p>
+            <p>
+                Then you're picking the left-most <m>x</m>-value from each subinterval (<m>x_1^* = 0</m>, <m>x_2^* = 1</m>, and <m>x_3^*=2</m>) to plug into <m>f(x)</m> in order to find the heights of your rectangles.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's approximate this area a second time, but with a different selection strategy for our <m>x</m>-values. Calculate <m>R_3</m>, the Right Riemann sum with <m>n=3</m> rectangles.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You're still going to divide up the interval from <m>x=0</m> to <m>x=3</m> into 3 subintervals: <m>[0,1]</m>, <m>[1,2]</m>, and <m>[2,3]</m>. We still have <m>\Delta x=1</m>.
+            </p>
+            <p>
+                Then you're picking the right-most <m>x</m>-value from each subinterval (<m>x_1^* = 1</m>, <m>x_2^* = 2</m>, and <m>x_3^*=3</m>) to plug into <m>f(x)</m> in order to find the heights of your rectangles.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Compare your answers for <m>L_3</m> and <m>R_3</m>. They should be <em>very</em> different. Why? What is happening that makes <m>R_3</m> specifically such a weird value?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Do you need to go back and re-calculate the area geometrically (from the first part of this activity)? Explain why your answer for <m>\displaystyle \int_{x=0}^{x=3}(4-3x)\;dx</m> <em>should</em> be negative, based on the Riemann sums we calculated.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Did you account for "negative" area in the second trianglular region in this integral?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find a value <m>x=b</m> such that:
+                <me>
+                    \int_{x=0}^{x=b}(4-3x)\;dx=0
+                </me>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find a <em>different</em> value <m>x=b</m> such that:
+                <me>
+                    \int_{x=0}^{x=b}(4-3x)\;dx=0
+                </me>.
+                Is there a second way of making this area 0?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Depending on what you did earlier, you might have to find some ending <m>x</m>-value that "balances" the area above and below the <m>x</m>-axis. If you already did this, then you might have to find an ending <m>x</m>-value that collapses this shape down to a 1-dimensional shape with no area.
+            </p>
+        </hint>
+    </task>
+</activity>

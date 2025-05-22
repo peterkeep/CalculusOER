@@ -13,23 +13,131 @@
   <subsection xml:id="subsec-EvaluatingAreas">
     <title>Evaluating Areas (Instead of Approximating Them)</title>
     <p>
-      Our goal is to move from approximating area to evaluating areas: calculating the real value of the area of these regions bounded between curves and the <m>x</m>-axis.
+      Our goal is to move from approximating area to evaluating areas: calculating the real value of the area of these regions bounded between curves and the <m>x</m>-axis. We have already decided (when we built the framework for Riemann sums and made scalability and precision in our estimates a focus) that the area we're interested in is the result of some limiting process: we increase the number of slices, <m>n</m>, and in turn decrease the width of each slice, <m>\Delta x</m>.
     </p>
+    <definition xml:id="def-DefiniteIntegral">
+      <title>Definite Integral</title>
+      <statement>
+        <p>
+          If <m>f(x)</m> is some function defined on the interval <m>[a,b]</m> and <m>\displaystyle\sum_{k=1}^n f(x_k^*)\Delta x</m> is a Riemann sum with <m>n</m> slices and <m>\Delta x = \frac{b-a}{n}</m>, then we say that the <term>definite integral</term> of <m>f(x)</m> from <m>x=a</m> to <m>x=b</m> is:
+          <me>
+            \int_{x=a}^{x=b} f(x)\;dx = \lim_{n\to\infty} \sum_{k=1}^n f(x_k^*)\Delta x
+          </me>
+          if this limit exists. When this limit exists, we say that <m>f(x)</m> is <term>integrable</term> on the interval <m>[a,b]</m>.
+        </p>
+        <p>
+          We call <m>x=a</m> and <m>x=b</m> the <term>limits of integration</term> for this definite integral, and we read <m>\displaystyle \int_{x=a}^{x=b} f(x)\;dx</m> as "the integral from <m>x=a</m> to <m>x=b</m> of <m>f(x)</m> with regard to <m>x</m>," or sometimes we might just say "of <m>f(x)\;dx</m>" for short.
+        </p>
+      </statement>
+    </definition>
+    <note xml:id="note-GeneralDelta">
+      <p>
+        This is assuming we're using a <em>Regular Partition</em> (<xref ref="note-RegularPartition"/>). If we are not, and each slice has its own width called <m>\Delta x_k</m>, then the definition of a definite integral requires that as <m>n\to \infty</m> we see <m>\Delta x_k\to 0</m> for all <m>k=1,2,...,n</m>. Essentially, we need all of the widths to eventually get tiny: we can't let one slice take up half of the width and then let all of the other slices get tiny, since that would still be an approximation of the area we want.
+      </p>
+      <p>
+        We don't need to worry about this, though, since we'll always just choose to make all of the <m>\Delta x_k</m>'s the same size: <m>\Delta x = \frac{b-a}{n}</m>.
+      </p>
+    </note>
+    <p>
+      Let us make something <em>very</em> clear: we will absolutely not calculate these areas this way. Let's see why not.
+    </p>
+    <p>
+      Let's say we want to calculate <m>\displaystyle \int_{x=0}^{x=2} (x^2+1)\;dx</m>. This is the area we were estimating in <xref ref="act-RectangularApproximation" text="type-global-title"/>. How many slices did you pick at the end of this activity? How annoying was it to add up those areas?
+    </p>
+    <p>
+      Whatever you did, it's not enough: even if we decided to divide this region up into <m>n=1000</m> pieces, this is merely an approximation of the limit we want: 
+      <me>
+        \int_{x=0}^{x=2}(x^2+1)\;dx = \lim_{n\to \infty} \sum_{k=1}^n \underbrace{\left((x_k^*)^2+1\right)}_{f(x_k^*)}\underbrace{\left(\frac{2}{n}\right)}_{\Delta x}
+      </me>
+      There are some ways of evaluating this specific limit using some known formulas for sums of squares and end behavior limits of rational functions. But these techniques are extremely limited: we might get lucky being able to fiddle with this limit of this sum for this function, but we won't be so lucky in general.
+    </p>
+    <p>
+      Instead, let's just think about these areas, focus on what types of functions are integrable, and then build towards our end goal of connecting these areas to antiderivatives.
+    </p>    
   </subsection>
 
   <subsection xml:id="subsec-SignedArea">
     <title>Signed Area</title>
     <p>
-
+      We're going to now deal with the consequences of our decisions. A truth about mathematics, sometimes not an obvious truth, is that every time we state a definition what we are actually doing is making a decision. We are deciding on some common way of classifying and describing an object. These classifications and descriptions are choices that we are making: choices to prioritize some property or aspect over a different one, choices to include or exclude a type of object into the group of things we're interested in, choices that come with downstream effects.
+    </p>
+    <p>
+      We chose to define the area bounded between a curve defined by the function <m>f(x)</m> and the <m>x</m>-axis between <m>x=a</m> and <m>x=b</m> as:
+      <me>
+        \int_{x=a}^{x=b} f(x)\;dx = \lim_{n\to\infty} \sum_{k=1}^n f(x_k^*)\Delta x
+      </me>.
+      We are going to stand by this definition. It's a good one, for the reasons we described at the beginning of <xref ref="sec-RiemannSums" text="type-global-title"/>.
+    </p>
+    <p>
+      But there are some weird things to notice. Let's notice them!
+    </p>
+    <xi:include href="./activities/act-WeirdAreas.ptx" />
+    <p>
+      Weird areas, right? Negative? That's not how we normally think about areas. So we have to be slightly careful with how we describe this new object, the definite integral, that we've built. We don't need to go back and change anything about the object itself: we just need to change how we talk about it.
+    </p>
+    <p>
+      It's common to think about <m>\displaystyle \int_{x=a}^{x=b}f(x)\;dx</m> as the "area under the curve <m>f(x)</m> from <m>x=a</m> to <m>x=b</m>," but we know that's not really true. Instead, we'll think about it as a <term>signed area</term> of the region bounded between the curve <m>f(x)</m> and the <m>x</m>-axis from <m>x=a</m> to <m>x=b</m>. When we say "signed area," we're just referring to the consequence of using <m>y</m>-values to define "heights" of the rectangles: when the curve is under the <m>x</m>-axis, we end up with negative values for heights, and so those rectangles have negative area. 
+    </p>
+    <xi:include href="./activities/act-WeirdAreas-2.ptx" />
+    <p>
+      Ok so we have some intuition about how the signs of these areas work, and we've also built up some nice properties that we can talk through. Let's finish this section by just summarizing some of the things we've done and thinking about what kinds of functions this works for!
     </p>
   </subsection>
   <subsection xml:id="subsec-PropertiesOfDefiniteIntegrals">
     <title>Properties of Definite Integrals</title>
-    
+    <p>
+      First, this result should be reasonable: we can always calculate these areas for continuous functions!
+    </p>
+    <theorem xml:id="thm-IntegrableFunction">
+      <title>Continuous Functions are Integrable</title>
+      <statement>
+        <p>
+          If <m>f(x)</m> is continuous on the interval <m>[a,b]</m>, then <m>f(x)</m> is integrable on <m>[a,b]</m>. That is, the limit <m>\displaystyle \lim_{n\to\infty} \sum_{k=1}^n f(x_k^*)\Delta x</m> exists and so we can evaluate the definite integral:
+          <me>
+            \int_{x=a}^{x=b} f(x)\;dx
+          </me>.
+        </p>
+      </statement>
+    </theorem>
+    <p>
+      We'll come back to this, but first, let's summarize some properties that we've discovered.
+    </p>
+    <theorem xml:id="thm-DefiniteIntegralProperties">
+      <title>Properties of Definite Integrals</title>
+      <statement>
+        <p>
+          If <m>a</m>. <m>b</m>, and <m>c</m> are real numbers and <m>f(x)</m> is a function that is continuous on the intervals <m>[a,b]</m> and <m>[b,c]</m>, then:
+          <ul>
+            <li>
+              <p>
+                The signed area under a single point is 0:
+                <me>\displaystyle \int_{x=a}^{x=a}f(x)\;dx=0</me>
+              </p>
+            </li>
+            <li>
+              <p>
+                We can cut a region into pieces and evaluate the areas separately:
+                <me>
+                  \int_{x=a}^{x=c} f(x)\;dx = \int_{x=a}^{x=b} f(x)\;dx + \int_{x=b}^{x=c}f(x)\;dx
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                When we integrate a function "backwards" through an interval, we an area with an opposite sign:
+                <me>
+                  \int_{x=a}^{x=b}f(x)\;dx = -\int_{x=b}^{x=a} f(x)\;dx
+                </me>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
   </subsection>
   <conclusion>
     <p>
-      
+      Ok, that's enough of this: let's get to the point and try to figure out how to actually calculate these areas without relying on our functions being "nice" enough that we can use geometry!
     </p>
   </conclusion>
 </section>

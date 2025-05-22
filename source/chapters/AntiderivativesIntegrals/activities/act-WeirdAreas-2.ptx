@@ -1,0 +1,46 @@
+<activity xml:id="act-WeirdAreas-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Weird Areas - Part 2</title>
+    <introduction>
+        <p>
+            We're going to think about the same region, kind of.
+        </p>
+        <p>
+            Let's think about the sam linear function, <m>f(x)=4-3x</m>, but this time we'll approximate and evaluate the area bounded between <m>f(x)</m> and the <m>x</m>-axis from <m>x=3</m> to <m>x=0</m>:
+            <me>
+                \int_{x=3}^{x=0}(4-3x)\;dx
+            </me>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Use geometry to calculate the area. Compare this to the result from <xref ref="act-WeirdAreas"/>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's approximate this using a Riemann sum. Calculate <m>M_3</m>, the Midpoint Riemann sum with <m>n=3</m> rectangles.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You're going to divide up the interval from <m>x=3</m> to <m>x=0</m> into 3 subintervals: <m>[3,2]</m>, <m>[2,1]</m>, and <m>[1,2]</m>.
+            </p>
+            <p>
+                Then you're picking the middle <m>x</m>-value from each subinterval (<m>x_1^* = \frac{1}{2}</m>, <m>x_2^* = \frac{3}{2}</m>, and <m>x_3^*={5}{2}</m>) to plug into <m>f(x)</m> in order to find the heights of your rectangles.
+            </p>
+            <p>
+                If <m>\Delta x = \frac{b-a}{n}</m> and <m>a=3</m>, <m>b=0</m>, and <m>n=3</m>, then what value do we use for the widths, <m>\Delta x</m>?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Do you need to go back and re-calculate the area geometrically (from the first part of this activity)? Explain why your answer for <m>\displaystyle \int_{x=3}^{x=0}(4-3x)\;dx</m> <em>should</em> be positive, based on the Riemann sums we calculated.
+            </p>
+        </statement>
+    </task>
+</activity>
