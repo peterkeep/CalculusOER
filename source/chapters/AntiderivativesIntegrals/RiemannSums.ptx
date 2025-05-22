@@ -74,9 +74,52 @@
   <subsection xml:id="subsec-SelectionStrategy">
     <title>Selection Strategies</title>
     <p>
-      
+      This is great! We have a scalable way to approximate areas, and it seems like we can pretty easily increase the precision of our approximations by increasing <m>n</m>, the number of slices/rectangles that we use. And the great thing about this is that when we do increase <m>n</m>, we don't increase the complexity of our calculations! 
     </p>
-
+    <p>
+      Sure, it would be tedious to calculate and add 100 areas of rectangles by hand, but those area calculations don't get more difficult: there are just more of them.
+    </p>
+    <p>
+      The only real downside is that when we increase the number of slices/rectangles, we are really increasing the number of decisions that we have to make: we have to choose an <m>x_k^*</m> for each subinterval, and so while it isn't hard to just calculate a bunch of areas and add them up, it is difficult, on a human level, to make a bunch of decisions about which <m>x</m>-value to choose from each subinterval. But this decision isn't even that important!
+    </p>
+    <p>
+      We use the "star" notation on the <m>x_k^*</m> to represent the fact that it really doesn't matter which <m>x</m>-value gets chosen from the subinterval: as long as we pick one, we get an approximation! And when <m>n</m> increases, it matters less and less what the actual <m>x</m>-value is: as long as our function <m>f(x)</m> is continuous, then there will be not much variation among the <m>y</m>-value outputs for any <m>x</m>-values in each (small) interval!
+    </p>
+    <p>
+      All of this to say: let's make a single decision about picking <m>n</m> <m>x</m>-values from <m>n</m> subintervals instead of having to make <m>n</m> decisions (one for each <m>x</m>-value).
+    </p>
+    <assemblage xml:id="strat-LeftRightMidRiemannSums">
+      <title>Left, Right, and Midpoint Riemann Sums</title>
+      <p>
+        When we build a Riemann sum, we can make a choice to systematically choose the values for <m>x_k^*</m> (for <m>k=1,2,..., n</m>). There are many ways of doing this, but here are three:
+        <ul>
+          <li>
+            <p>
+              <em>Left Riemann Sum:</em> We pick the left-most <m>x</m>-value from each subinterval. That is, if the partition is <m>\{a=x_0, x_1, x_2, ..., b=x_n\}</m>, then we choose <m>\{a, x_1, x_2, ..., x_{n-1}\}</m> as our <m>x</m>-values to evaluate <m>f</m> at for the rectangle heights.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Right Riemann Sum:</em> We pick the right-most <m>x</m>-value from each subinterval. That is, if the partition is <m>\{a=x_0, x_1, x_2, ..., b=x_n\}</m>, then we choose <m>\{x_1, x_2, ..., b\}</m> as our <m>x</m>-values to evaluate <m>f</m> at for the rectangle heights.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Midpoint Riemann Sum:</em> We pick the <m>x</m>-value that is in the middle of each subinterval. That is, if the partition is <m>\{a=x_0, x_1, x_2, ..., b=x_n\}</m>, then we choose <m>\left\{\frac{a+x_1}{2}, \frac{x_1+x_2}{2}, ..., \frac{x_{n-1}+b}{2}\right\}</m> as our <m>x</m>-values to evaluate <m>f</m> at for the rectangle heights.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </assemblage>
+    <p>
+      None of this is a requirement for a Riemann sum, but we will consistently find that when we limit the number of decisions that we have to make, the complexity of the calculation decreases.
+    </p>
+    <p>
+      Notice that we've already made a similar choice with how we calculate <m>\Delta x</m>: it is not required that each rectangle have the same width, but it is very nice to not have to think about <m>n</m> different widths!
+    </p>
+    <p>
+      Lastly, we'll finish with a nice interactive Riemann sum calculator. Feel free to explore some different graphs and see how the Riemann sums work when we change how we select the values for <m>x_k^*</m> as well as when we change the number of rectangles, <m>n</m>.
+    </p>
     <interactive platform="doenetml" width="95%" aspect="1:1.6">
       <slate surface="doenetml">
           <xi:include parse="text" href="./doenet/RiemannSumN.xml"/>
