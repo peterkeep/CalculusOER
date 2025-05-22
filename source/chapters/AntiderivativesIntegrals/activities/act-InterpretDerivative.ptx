@@ -1,0 +1,44 @@
+<activity xml:id="act-InterpretDerivative" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Interpreting the Graph of a Derivarive</title>
+    <introduction>
+        <p>
+            Let's look at a picture of a graph of the first derivative, <m>f'(x)</m>, and try to get some information about <m>f(x)</m> from it. Use the following graph of <m>f'(x)</m>, the first derivative, to answer the questions about <m>f(x)</m>.
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:1.05">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/FTOC-1.xml"/>
+            </slate>
+        </interactive>
+        <p>
+            Since we don't have a huge amount of detail, you'll likely have to estimate the <m>x</m>-values for intervals and points in the following questions, but that's ok! Estimate away! Just make sure you know what you're looking for in the graph of <m>f'(x)</m> to answer these questions.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                List the intervals on which <m>f(x)</m> is increasing. What about decreasing?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the <m>x</m>-values of any local maximums and/or local minimums of <m>f(x)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                List the intervals on which <m>f(x)</m> is concave up. What about concave down?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the <m>x</m>-values of any inflection points of <m>f(x)</m>.
+            </p>
+        </statement>
+    </task>
+</activity>

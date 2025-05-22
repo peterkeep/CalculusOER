@@ -1,0 +1,61 @@
+<activity xml:id="act-FTOC1" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Interpreting Area</title>
+    <introduction>
+        <p>
+            First, we're going to define a bit of a weird function. Sometimes it's called the <term>Area function</term>:
+            <me>
+                A(x)=\int_{t=0}^{t=x} g(t)\;dt
+            </me>.
+            This is a strange function, because we're defining the function as an integral of another function. Specifically, note that the <em>input</em> for our area function <m>A(x)</m> is the ending limit of integration: we're calculating the signed area "under" the curve of <m>g(t)</m> from <m>t=0</m> up to some variable ending point <m>t=x</m>.
+        </p>
+        <p>
+            We can visualize this function by looking at the areas we create as we change <m>x</m>. For now, get used to just seeing the area "under" <m>g</m> when we move the point around. The areas themselves are the outputs of the function <m>A(x)</m>.
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:1.3">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/FTOC-2.xml"/>
+            </slate>
+        </interactive>
+        <p>
+            Now we can think about this area function, and try to connect it to the graph of <m>g(t)</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                List the intervals on which <m>A(x)</m> is increasing. What about decreasing?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the <m>x</m>-values of any local maximums and/or local minimums of <m>A(x)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                List the intervals on which <m>A(x)</m> is concave up. What about concave down?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the <m>x</m>-values of any inflection points of <m>A(x)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Compare your answers here to your answers about the behavior of <m>f(x)</m> based on the (same) graph of <m>f'(x)</m> in <xref ref="act-InterpretDerivative"/>.
+            </p>
+            <p>
+                What does this mean about the connection between areas and derivatives, or areas and antiderivatives?
+            </p>
+        </statement>
+    </task>
+</activity>

@@ -1,0 +1,79 @@
+<setup>
+  <function name="F" domain="[0,6]">1/40(32x - 12x^2 - 4x^3 + x^4)</function>
+  <derivative name="f" styleNumber="2">$F</derivative>
+  <number name="a">0</number>
+  <point name="point" styleNumber="2">($a, $$f($a))
+    <constraints>
+      <constrainTo>
+        $f
+      </constrainTo>
+    </constraints>
+  </point>
+  <text name="FLabel">
+    <conditionalContent>
+      <case condition="$ToggleF">Hide Graph of A(x)</case>
+      <else>Show Graph of A(x)</else>
+    </conditionalContent>
+  </text>
+  <point name="anc">
+    <conditionalContent>
+      <case condition="$point.y >=0">
+        <conditionalContent>
+          <case condition="$point.x<4">
+            ($point.x+0.7, $point.y+0.3)
+          </case>
+          <case condition="$point.x>=4">
+            ($point.x-0.7, $point.y+0.3)
+          </case>
+        </conditionalContent>
+      </case>
+      <case condition="$point.y <0">
+        ($point.x-0.7, $point.y-0.3)
+      </case>
+    </conditionalContent>
+  </point>
+</setup>
+
+<p>
+  <em>Instructions:</em> Move the point on the graph of <m>g(t)</m> and connect it to the behavior of <m>A(x)</m> where
+  <me>A(x) = \int_{t=0}^{t=x}g(t)\;dt</me> 
+    Click the button to show the graph of <m>A(x)</m> to check your understanding.
+</p> 
+
+<sideBySide>
+  <p><me>\text{Graph of } g(t)</me></p>
+  <conditionalContent condition="$ToggleF">
+    <p><me>\text{Graph of } A(x)=\int_{t=0}^{t=x} g(t)\;dt</me></p>
+  </conditionalContent>
+</sideBySide>
+
+<sideBySide>
+  <graph xmin="-0.5" xmax="5" ymin="-2" ymax="4" fixAxes size="small" displayYAxisTickLabels="false" yTickScaleFactor="100" xTickScaleFactor="">
+    $f
+    $point
+    <regionBetweenCurveXAxis function="$f" boundaryValues="0 $a" styleNumber="2"/>
+    <label styleNumber="2" anchor="$anc">
+      <m>(x,g(x))</m>
+    </label>
+  </graph>
+
+  
+  <conditionalContent condition="$ToggleF">
+    <graph xmin="-0.5" xmax="5" ymin="-2" ymax="2" fixAxes size="small" displayYAxisTickLabels="false" yTickScaleFactor="100" xTickScaleFactor="">
+      $F
+      <point>($a, $$F($a))
+        <constraints>
+          <constrainTo>
+            $F
+          </constrainTo>
+        </constraints>
+      </point>
+      <function domain="[$a-1/2, $a+1/2]" styleNumber="2">$$f($a)(x-$a)+$$F($a)</function>
+    </graph>  
+  </conditionalContent>
+</sideBySide>
+
+<p><term>Check your understanding:</term> Click the button to reveal the graph of <m>A(x)</m>.</p>
+<booleanInput name="ToggleF" asToggleButton>
+  <label>$FLabel</label>
+</booleanInput>
