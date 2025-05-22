@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-DefiniteIntegral" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Definite Integral</title>
+  <title>The Definite Integral</title>
+  <introduction>
+    <p>
+      The big result from our last section on Riemann sums is not just that we can approximate areas by thinking about a bunch of small (thin) rectangles. The big result is that this strategy is scalable: we can increase <m>n</m>, the number of slices/rectangles, and essentially guarantee that, eventually, our approximations will be very accurate.
+    </p>
+    <p>
+      Now, we move from a concrete process for building rectangles to calculate areas to a more conceptual framework: what happens when <m>n\to \infty</m>?
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-EvaluatingAreas">
+    <title>Evaluating Areas (Instead of Approximating Them)</title>
+    <p>
+      Our goal is to move from approximating area to evaluating areas: calculating the real value of the area of these regions bounded between curves and the <m>x</m>-axis.
+    </p>
+  </subsection>
 
-  <p> The Definite Integral </p>
+  <subsection xml:id="subsec-SignedArea">
+    <title>Signed Area</title>
+    <p>
 
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-PropertiesOfDefiniteIntegrals">
+    <title>Properties of Definite Integrals</title>
+    
+  </subsection>
+  <conclusion>
+    <p>
+      
+    </p>
+  </conclusion>
 </section>
