@@ -558,7 +558,7 @@ eBookConfig.enable_chatcodes =  false;
 </div> <div class="para" id="def-DefiniteIntegral-2-2">We call <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\)</span> the <dfn class="terminology">limits of integration</dfn> for this definite integral, and we read <span class="process-math">\(\displaystyle \int_{x=a}^{x=b} f(x)\;dx\)</span> as "the integral from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> of <span class="process-math">\(f(x)\)</span> with regard to <span class="process-math">\(x\text{,}\)</span>" or sometimes we might just say "of <span class="process-math">\(f(x)\;dx\)</span>" for short.</div></article><article class="note remark-like" id="note-GeneralDelta"><h4 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span>
 </h4>
-<div class="para" id="note-GeneralDelta-1">This is assuming we’re using a <em class="emphasis">Regular Partition</em> (<a href="sec-RiemannSums.html#note-RegularPartition" class="xref" data-knowl="./knowl/xref/note-RegularPartition.html" data-reveal-label="Reveal" data-close-label="Close" title="Note 5.2.2">Note 5.2.2</a>). If we are not, and each slice has its own width called <span class="process-math">\(\Delta x_k\text{,}\)</span> then the definition of a definite integral requires that as <span class="process-math">\(n\to \infty\)</span> we see <span class="process-math">\(\Delta x_k\to 0\)</span> for all <span class="process-math">\(k=1,2,...,n\text{.}\)</span> Essentially, we need all of the widths to eventually get tiny: we can’t let one slice take up half of the width and then let all of the other slices get tiny, since that would still be an approximation of the area we want.</div>
+<div class="para" id="note-GeneralDelta-1">This is assuming we’re using a <em class="emphasis">Regular Partition</em> (<a href="sec-RiemannSums.html#note-RegularPartition" class="xref" data-knowl="./knowl/xref/note-RegularPartition.html" data-reveal-label="Reveal" data-close-label="Close" title="Note 5.2.4">Note 5.2.4</a>). If we are not, and each slice has its own width called <span class="process-math">\(\Delta x_k\text{,}\)</span> then the definition of a definite integral requires that as <span class="process-math">\(n\to \infty\)</span> we see <span class="process-math">\(\Delta x_k\to 0\)</span> for all <span class="process-math">\(k=1,2,...,n\text{.}\)</span> Essentially, we need all of the widths to eventually get tiny: we can’t let one slice take up half of the width and then let all of the other slices get tiny, since that would still be an approximation of the area we want.</div>
 <div class="para" id="note-GeneralDelta-2">We don’t need to worry about this, though, since we’ll always just choose to make all of the <span class="process-math">\(\Delta x_k\)</span>’s the same size: <span class="process-math">\(\Delta x = \frac{b-a}{n}\text{.}\)</span>
 </div></article><div class="para" id="subsec-EvaluatingAreas-5">Let us make something <em class="emphasis">very</em> clear: we will absolutely not calculate these areas this way. Let’s see why not.</div>
 <div class="para" id="subsec-EvaluatingAreas-6">Let’s say we want to calculate <span class="process-math">\(\displaystyle \int_{x=0}^{x=2} (x^2+1)\;dx\text{.}\)</span> This is the area we were estimating in <a href="sec-RiemannSums.html#act-RectangularApproximation" class="xref" data-knowl="./knowl/xref/act-RectangularApproximation.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.2.2: Approximating the Area using Rectangles">Activity 5.2.2 Approximating the Area using Rectangles</a>. How many slices did you pick at the end of this activity? How annoying was it to add up those areas?</div>
@@ -596,6 +596,8 @@ eBookConfig.enable_chatcodes =  false;
 \int_{x=0}^{x=3}(4-3x)\;dx
 \end{equation*}
 </div>
+<div class="para"><figure class="figure figure-like" id="fig-WeirdArea"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="external/AntiderivativesIntegrals/WeirdArea.png" class="contained" alt="A graph of the linear function f(x)=4-3x. The points (0,4) and (3,-5) are marked, and the region between the curve and the axis is shaded in. This shape makes two triangles, one above the axis and one below it, since the line crosses the x-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
 </div></div>
 <article class="task exercise-like" id="act-WeirdAreas-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="act-WeirdAreas-3-1-1">Explain why we do not need to think about Riemann sums in order for us to calculate the shaded in area. How would you calculate this without using calculus?</div> <div class="para" id="act-WeirdAreas-3-1-2">Calculate the area!</div>
@@ -639,8 +641,9 @@ eBookConfig.enable_chatcodes =  false;
 </h4>
 <div class="introduction" id="act-WeirdAreas-2-2">
 <div class="para" id="act-WeirdAreas-2-2-1">We’re going to think about the same region, kind of.</div>
-<div class="para logical" id="act-WeirdAreas-2-2-2">
-<div class="para">Let’s think about the sam linear function, <span class="process-math">\(f(x)=4-3x\text{,}\)</span> but this time we’ll approximate and evaluate the area bounded between <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(x=3\)</span> to <span class="process-math">\(x=0\text{:}\)</span>
+<figure class="figure figure-like" id="fig-WeirdArea-2"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="external/AntiderivativesIntegrals/WeirdArea.png" class="contained" alt="A graph of the linear function f(x)=4-3x. The points (0,4) and (3,-5) are marked, and the region between the curve and the axis is shaded in. This shape makes two triangles, one above the axis and one below it, since the line crosses the x-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para logical" id="act-WeirdAreas-2-2-3">
+<div class="para">Let’s think about the same linear function, <span class="process-math">\(f(x)=4-3x\text{,}\)</span> but this time we’ll approximate and evaluate the area bounded between <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(x=3\)</span> to <span class="process-math">\(x=0\text{:}\)</span>
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -664,7 +667,7 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <div class="para" id="subsec-PropertiesOfDefiniteIntegrals-2">First, this result should be reasonable: we can always calculate these areas for continuous functions!</div>
 <article class="theorem theorem-like" id="thm-IntegrableFunction"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous Functions are Integrable.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous Functions are Integrable.</span>
 </h4>
 <div class="para logical" id="thm-IntegrableFunction-2-1">
 <div class="para">If <span class="process-math">\(f(x)\)</span> is continuous on the interval <span class="process-math">\([a,b]\text{,}\)</span> then <span class="process-math">\(f(x)\)</span> is integrable on <span class="process-math">\([a,b]\text{.}\)</span> That is, the limit <span class="process-math">\(\displaystyle \lim_{n\to\infty} \sum_{k=1}^n f(x_k^*)\Delta x\)</span> exists and so we can evaluate the definite integral:</div>
@@ -675,7 +678,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div></article><div class="para" id="subsec-PropertiesOfDefiniteIntegrals-4">We’ll come back to this, but first, let’s summarize some properties that we’ve discovered.</div>
 <article class="theorem theorem-like" id="thm-DefiniteIntegralProperties"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of Definite Integrals.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of Definite Integrals.</span>
 </h4>
 <div class="para logical" id="thm-DefiniteIntegralProperties-2-1">
 <div class="para">If <span class="process-math">\(a\text{.}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\)</span> are real numbers and <span class="process-math">\(f(x)\)</span> is a function that is continuous on the intervals <span class="process-math">\([a,b]\)</span> and <span class="process-math">\([b,c]\text{,}\)</span> then:</div>
