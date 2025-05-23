@@ -44,7 +44,16 @@
             <mrow> A(x+\Delta x) - A(x)\amp =\left(\int_{t=a}^{t=x+\Delta x} f(t)\;dt\right) - \left(\int_{t=a}^{t=x} f(t)\;dt\right)</mrow>
             <mrow> \amp = \int_{t=x}^{t=x+\Delta x} f(t)\;dt</mrow>
           </md>
-          Let's approximate this integral with a Riemann sum with <m>n=1</m> rectangle. The total width of our interval is <m>\Delta x</m>, so we have that 
+          Let's approximate this integral with a Riemann sum with <m>n=1</m> rectangle.
+        </p>
+        <figure xml:id="fig-AreaFunction-1">
+          <caption></caption>
+          <image source="AntiderivativesIntegrals/AreaFunction-1.png" width="90%">
+            <shortdescription>Area shaded in under a curve from t=a to t=x, labeled A(x). After this there is a rectangle with width Delta x that touches the curve at some point (x*,f(x*)). The rectangle spans from t=x to t=x + Delta x.</shortdescription>
+          </image>
+        </figure> 
+        <p> 
+          The total width of our interval is <m>\Delta x</m>, so we have that 
           <me>
             \int_{t=x}^{t=x+\Delta x} f(t)\;dt \approx f(x^*) \Delta x
           </me>
@@ -63,6 +72,12 @@
               <p>
                 This approximation gets better as <m>\Delta x</m> gets smaller, and as <m>\Delta x\to 0</m> we have <m>A'(x)\to f(x^*)</m>.
               </p>
+              <figure xml:id="fig-AreaFunction-2">
+                <caption></caption>
+                <image source="AntiderivativesIntegrals/AreaFunction-2.png" width="90%">
+                  <shortdescription>Area shaded in under a curve from t=a to t=x, labeled A(x). After this there is a very thin rectangle that touches the curve at some point (x*,f(x*)). This point looks like it's essentially at the same point as t=x, and the rectangle spans from t=x to some other t value close by, with the label Delta x approaches 0. </shortdescription>
+                </image>
+              </figure> 
             </li>
             <li>
               <p>
