@@ -1,0 +1,91 @@
+<activity xml:id="act-FTOC2">
+    <title>Evaluating Areas and Antiderivatives</title>
+    <introduction>
+        <p>
+            In this short activity, we'll just collect information about antiderivatives and this new area function,
+            <me>
+                A(x)=\int_{t=a}^{t=x} f(t)\;dt
+            </me>
+            for a function <m>f(t)</m> that is continuous on the interval <m>a\leq t\leq x</m>.
+        </p>
+        <p>
+            For our purposes in this activity, let's say that <m>f(x)=x+\cos(x)</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                From the <xref ref="thm-FTOC1" text="title"/>, we know that <m>A(x)</m> is an antiderivative of <m>f(x)</m>, since <m>A'(x)=f(x)</m>.
+            </p>
+            <p>
+                Write out the function <m>A(x)</m>, and then name/write out one <em>other</em> antiderivative of <m>f(x)</m>, some <m>F(x)</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <m>\displaystyle A(x)= \int_{t=a}^{t=x} t+\cos(t)\;dt</m>, and for <m>F(x)</m> you can use your antidifferentiation rules from <xref ref="sec-IndefiniteIntegrals" text="type-global-title"/>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                We know that all of the antiderivatives of a function are connected to each other. 
+            </p>
+            <p>
+                Describe the connection between <m>A(x)</m> and your <m>F(x)</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                This is the result that we proved in <xref ref="thm-OffByConstant"/> and used to define a <term>family of antiderivatives</term> in <xref ref="def-Antiderivative"/>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the value of <m>A(a)</m>? What is the value of <m>F(a)</m>? How are they different from each other?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <me>
+                    A(a) = \int_{t=a}^{t=a} f(t)\;dt = 0
+                </me>
+                For <m>F(a)</m>, you can evaluate your antiderivative at <m>x=a</m>. The important part is thinking about how these two values are different from each other.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the value of <m>A(b)</m>? What is the value of <m>F(b)</m>? How are they different from each other?
+            </p>
+        </statement>
+        <hint>    
+            <p>
+                <me>
+                    A(b) = \int_{t=a}^{t=b} f(t)\;dt
+                </me>
+                For <m>F(a)</m>, you can evaluate your antiderivative at <m>x=b</m>. The important part is thinking about how these two values are different from each other. Is the difference between these values the same, or different from the difference between <m>A(a)</m> and <m>F(a)</m>?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What about the differences: <m>A(b)-A(a)</m> compared to <m>F(b)-F(a)</m>? 
+            </p>
+        </statement>
+        <hint>
+            <p>
+                It is worth noting that:
+                <md>
+                    <mrow>A(b)-A(a) \amp = A(b)-0</mrow>
+                    <mrow> \amp = \int_{t=a}^{t=b} f(t)\;dt</mrow>
+                </md>
+            </p>
+        </hint>
+    </task>
+</activity>
