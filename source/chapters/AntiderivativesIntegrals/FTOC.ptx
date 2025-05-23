@@ -189,13 +189,13 @@
       <task>
         <statement>
           <p>
-            <m>\displaystyle \int{x=1}^{x=4}\left(\sqrt{x}-e^x\right)\;dx</m>
+            <m>\displaystyle \int_{x=1}^{x=4}\left(\sqrt{x}-e^x\right)\;dx</m>
           </p>
         </statement>
         <solution>
           <p>
             <md>
-              <mrow> \int_{x=1}^{x=4}\left(\sqrt{x}-e^x\right)\;dx\amp =\int{x=1}^{x=4}\left(x^{1/2}-e^x\right)\;dx</mrow>
+              <mrow> \int_{x=1}^{x=4}\left(\sqrt{x}-e^x\right)\;dx\amp =\int_{x=1}^{x=4}\left(x^{1/2}-e^x\right)\;dx</mrow>
               <mrow> \amp = \left(\frac{x^{3/2}}{3/2}-e^x\right)\bigg|_{x=1}^{x=4}</mrow>
               <mrow> \amp = \left(\frac{2(4)^{3/2}}{3}-e^{4}\right)-\left(\frac{2(1)^{3/2}}{3}-e^1\right)</mrow>
               <mrow> \amp = \frac{14}{3}-e^4+e</mrow>
