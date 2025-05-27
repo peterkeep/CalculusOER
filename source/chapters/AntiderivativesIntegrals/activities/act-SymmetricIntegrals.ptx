@@ -1,0 +1,140 @@
+<activity xml:id="act-SymmetricIntegrals">
+    <title>Connecting Symmetric Integrals</title>
+    <introduction>
+        <p>
+            We're going to do some sketching here, and I want you to be clear about something: your sketches can be absolutely terrible. It's ok! They just need to embody the kind of symmetry we're talking about. You will probably sketch something and notice that your areas aren't to scale (or maybe even the wrong sign!), and that's fine.
+        </p>
+        <p>
+            It might be helpful to practice sketching graphs accurately, but don't worry if that part is a struggle.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Sketch a function <m>f(x)</m> with the following properties: 
+                <ul>
+                    <li>
+                        <p>
+                            <m>f(x)</m> is <em>even symmetric</em> on the interval <m>[-6,6]</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle\int_{x=0}^{x=6} f(x)\;dx = 4</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle \int_{x=-6}^{x=-2}f(x)\;dx = -1</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the values of the following integrals:
+                <ul>
+                    <li>
+                        <p>
+                            <m>\displaystyle\int_{x=0}^{x=2} f(x)\;dx</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle\int_{x=-6}^{x=6} f(x)\;dx</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Since <m>f(x)</m> is even symmetric, what are the two other integrals that we know about? How can we use those to help us find these two?
+            </p>
+        </hint>
+        <answer>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            <m>\displaystyle\int_{x=0}^{x=2} f(x)\;dx = 5</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle\int_{x=-6}^{x=6} f(x)\;dx = 8</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Sketch a function <m>g(x)</m> with the following properties: 
+                <ul>
+                    <li>
+                        <p>
+                            <m>g(x)</m> is <em>odd symmetric</em> on the interval <m>[-9,9]</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle\int_{x=0}^{x=4} g(x)\;dx = 5</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle \int_{x=-9}^{x=0}g(x)\;dx = 2</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the values of the following integrals:
+                <ul>
+                    <li>
+                        <p>
+                            <m>\displaystyle\int_{x=-9}^{x=-4} g(x)\;dx</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle\int_{x=-4}^{x=9} g(x)\;dx</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Since <m>g(x)</m> is even symmetric, what are the two other integrals that we know about? How can we use those to help us find these two?
+            </p>
+        </hint>
+        <answer>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            <m>\displaystyle\int_{x=-9}^{x=-4} g(x)\;dx = 7</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle\int_{x=-4}^{x=9} g(x)\;dx = -2</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </answer>
+    </task>
+    
+</activity>

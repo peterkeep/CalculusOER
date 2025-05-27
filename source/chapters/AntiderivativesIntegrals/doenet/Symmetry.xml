@@ -1,0 +1,89 @@
+<!-- https://doenet.org/portfolioeditor/_99UxF9dlqJeL6OQSxymRR/_q7bJw8nxzEWZm19AWMprY -->
+
+<setup>
+  <function name="f" domain="[0,oo)">
+    x^4(x-4)(x-7)(x-8)/1000
+  </function>
+  <function name="even" domain="(-oo, 0]">
+    (-x)^4(-x-4)(-x-7)(-x-8)/1000
+  </function>
+  <function name="odd" domain="(-oo,0]">
+    -$even
+  </function>
+  <point name="P">(6, $$f(6))
+    <constraints>
+      <constrainTo>
+        $f
+      </constrainTo>
+    </constraints>
+  </point>
+  <point name="PEven" styleNumber="2">
+    (-$P.x, $P.y)
+    <constraints>
+      <constrainTo>
+        $even
+      </constrainTo>
+    </constraints>
+  </point>
+  <point name="POdd" styleNumber="2">
+    (-$P.x, -$P.y)
+    <constraints>
+      <constrainTo>
+        $odd
+      </constrainTo>
+    </constraints>
+  </point>
+  <regionBetweenCurveXAxis name="intF" function="$f" boundaryValues="0 $P.x"/>
+  <regionBetweenCurveXAxis name="intEven" function="$even" boundaryValues="-$P.x 0" styleNumber="2"/> 
+  <regionBetweenCurveXAxis name="intOdd" function="$odd" boundaryValues="-$P.x 0" styleNumber="2"/> 
+
+</setup>
+<p><em>Instructions:</em> Use the selection options and drag the points to remind yourself how even and odd symmetry looks graphically in both the way the functions are represented and also with how the areas/integrals are impacted.</p>
+<p>Select which type of symmetry you'd like to visualize:
+<choiceInput name="switch">
+  <choice preSelect>Even Symmetry</choice>
+  <choice>Odd Symmetry</choice>
+</choiceInput>
+</p>
+
+
+<graph fixAxes xmin="-9" xmax="9" ymin="-6.5" ymax="6.5" identicalAxisScales>
+  $f
+  $P
+  <conditionalContent>
+    <case condition="$_choice1.selected">
+      $even
+      $PEven
+      <conditionalContent>
+        <case condition="$integral=true">
+          $intF
+          $intEven
+        </case>
+      </conditionalContent>
+    </case>
+    <case condition="$_choice2.selected">
+       $odd
+      $POdd
+      <conditionalContent>
+        <case condition="$integral=true">
+          $intF
+          $intOdd
+        </case>
+      </conditionalContent>
+    </case>
+  </conditionalContent>
+    
+</graph>
+
+<booleanInput name="integral" asToggleButton>
+  <label>
+    <conditionalContent>
+      <case condition="$integral=false">
+        Show integrals
+      </case>
+      <case condition="$integral=true">
+        Hide integrals
+      </case>
+    </conditionalContent>
+  </label>
+</booleanInput>

@@ -1,8 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-MoreDefiniteIntegral" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>More Definite Integrals</title>
+  <title>More Results about Definite Integrals</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      We'll end this chapter by looking a bit more closely at  definite integrals and pulling a couple of small results out of our understanding of them, as well as some prior knowledge.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-Symmetry">
+    <title>Symmetry</title>
+    <xi:include href="./activities/act-Symmetry.ptx" />
 
+    <theorem xml:id="thm-SymmetricIntegrals">
+      <title>Definite Integrals of Symmetric Functions</title>
+      <statement>
+        <p>
+          If <m>f(x)</m> is a continuous function on <m>[-a,a]</m> for some real number <m>a\gt 0</m>, then:
+          <ul>
+            <li>
+              <p>
+                If <m>f(x)</m> is even symmetric on <m>[-a,a]</m>, then: 
+                <me>\int_{x=-a}^{x=0} f(x)\;dx = \int_{x=0}^{x=a}f(x)\;dx</me>.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>f(x)</m> is odd symmetric on <m>[-a,a]</m>, then:
+                <me>\int_{x=-a}^{x=0} f(x)\;dx = -\int_{x=0}^{x=a}f(x)\;dx</me>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+    <xi:include href="./activities/act-SymmetricIntegrals.ptx" />
+    
+
+  </subsection>
+
+  <subsection xml:id="subsec-AverageValue">
+    <title>Average Value of a Function</title>
+    <theorem xml:id="thm-AverageValue">
+      <title>Average Value of a Function</title>    
+      <statement>
+        <p>
+          If a function <m>f(x)</m> is continuous on the interval <m>[a,b]</m>, then the average value of <m>f(x)</m> on <m>[a,b]</m> is:
+          <me>
+            \frac{\displaystyle\int_{x=a}^{x=b}f(x)\;dx}{b-a}
+          </me>.
+        </p>
+      </statement>
+    </theorem>
+    
+  </subsection>
 </section>

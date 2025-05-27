@@ -1,0 +1,46 @@
+<activity xml:id="act-Symmetry" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Symmetry in Functions and Integrals</title>
+    <introduction>
+        <p>
+            First, let's take a moment to remind ourselves (or see for the first time) what two types of "symmetry" we'll be considering. We call them "even" and "odd" symmetry, but sometimes we think of them as a "reflective" symmetry and a "rotational" symmetry in the graphs of our functions.
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:1.1">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/Symmetry.xml"/>
+            </slate>
+        </interactive>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Convince yourself that you know what we mean when we say that a function is <term>even symmetric</term> on an interval if <m>f(-x)=f(x)</m> on the interval.
+            </p>
+            <p>
+                Similarly, convince yourself that you know what we mean when we say that a function is <term>odd symmetric</term> on an interval if <m>f(-x)=-f(x)</m> on the interval.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Look at the relationship between the points on the graphs when you select the different symmetries: How do their <m>x</m>-values relate to each other? How do their <m>y</m>-values relate to each other?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now let's think about areas. Before we visualize too much, let's start with a small question: How does the height of a function impact the area defined by a definite integral? It should be helpful to think about Riemann sums and areas of rectangles here.
+            </p>
+            <p>
+                The important question then, is how does a function being even or odd symmetric tell us information about areas defined by definite integrals of that function?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                If we know that for an even symmetric function, there are some heights/<m>y</m>-values that are the same, then we know that there are some areas/integrals that should also be the same. Which ones?
+            </p>
+            <p>
+                If we know that for an odd symmetric function, there are some heights/<m>y</m>-values that are opposite, then we know that there are some areas/integrals that should also be opposite. Which ones?
+            </p>
+        </hint>
+    </task>
+</activity>
