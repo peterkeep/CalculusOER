@@ -1,0 +1,55 @@
+<activity xml:id="act-AvgValue" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Visualizing the Average Height of a Function</title>
+    <introduction>
+        <p>
+            We are going to build a formula to find the "average height" or "average value" of a function <m>f(x)</m> on the interval <m>[a,b]</m>. We're going to look at a function and try to find the average height. Along the way, we'll think a bit about areas!
+        </p>
+        
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Consider the following function. Find the average height of the function on the interval pictured!
+            </p>
+            <interactive platform="doenetml" width="95%" aspect="1:1.3">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/AvgValue.xml"/>
+            </slate>
+        </interactive>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How does the area "under" the curve <m>f(x)</m> on the interval compare to the area of the rectangle formed by the average height line?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How do you define the two areas? 
+            </p>
+        </statement>
+        <hint>
+            <p>
+                One of these is the area under <m>f(x)</m> from <m>x=a</m> to <m>x=b</m>, which we can use calculus for!
+            </p>
+            <p>
+                The other is the area of a rectangle with a height (the average height of <m>f(x)</m>) and a width (the width of the interval).
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Set up an equation connecting the two areas, and solve for the average height of <m>f(x)</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                If <m>\text{area} = \text{height}\times\text{width}</m>, then doesn't it make sense that <m>\text{height} = \dfrac{\text{area}}{\text{width}}</m>? How, then, do we find average height by dividing an area and a width?
+            </p>
+        </hint>
+    </task>
+</activity>
