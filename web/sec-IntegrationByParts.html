@@ -134,6 +134,9 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\blank}[1]{\underline{\hspace{#1}}} 
 \newcommand{\dint}{\displaystyle \int}
 \newcommand{\va}{┊}
+\usepackage{xcolor}
+\definecolor{DCgreen}{HTML}{085646}
+\definecolor{DCblue}{HTML}{5762D5}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -375,7 +378,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-uSubstitution.html" class="internal"><span class="codenumber">5.6</span> <span class="title"><span class="process-math">\(u\)</span>-Substitution</span></a></div>
+<div class="toc-title-box"><a href="sec-uSubstitution.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Introduction to <span class="process-math">\(u\)</span>-Substitution</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-UndoChainRule" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Undoing the Chain Rule</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-uSubDefiniteIntegrals" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Substitution for Definite Integrals</span></a></div></li>
@@ -552,7 +555,7 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-IntegrationByParts"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">7.4</span><span class="space"> </span><span class="title">Integration By Parts</span>
 </h2>
-<section class="introduction" id="sec-IntegrationByParts-2"><div class="para" id="sec-IntegrationByParts-2-1">We’ve seen now that <a href="sec-uSubstitution.html" class="internal" title="Section 5.6: u-Substitution"><span class="process-math">\(u\)</span>-Substitution</a> is a useful technique for undo-ing <a href="sec-ChainRule.html#thm-ChainRule" class="xref" data-knowl="./knowl/xref/thm-ChainRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.5.2: The Chain Rule">The Chain Rule</a>. We set up the variable substitution with the specific goal of going backwards through the Chain Rule and antidifferentiating some composition of functions.</div>
+<section class="introduction" id="sec-IntegrationByParts-2"><div class="para" id="sec-IntegrationByParts-2-1">We’ve seen now that <a href="sec-uSubstitution.html" class="internal" title="Section 5.6: Introduction to u-Substitution">Introduction to <span class="process-math">\(u\)</span>-Substitution</a> is a useful technique for undo-ing <a href="sec-ChainRule.html#thm-ChainRule" class="xref" data-knowl="./knowl/xref/thm-ChainRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.5.2: The Chain Rule">The Chain Rule</a>. We set up the variable substitution with the specific goal of going backwards through the Chain Rule and antidifferentiating some composition of functions.</div>
 <div class="para" id="sec-IntegrationByParts-2-2">A reasonable next step is to ask: What other derivative rules can we "undo?" What other operations between functions should we think about? This brings us to Integration by Parts, the integration technique specifically for undo-ing <a href="sec-ProductQuotientRule.html#thm-ProductRule" class="xref" data-knowl="./knowl/xref/thm-ProductRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.3: Product Rule">Product Rule</a>.</div></section><section class="subsection" id="subsec-DiscoveringIntegrationByParts"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.4.1</span><span class="space"> </span><span class="title">Discovering the Integration by Parts Formula</span>
 </h3>

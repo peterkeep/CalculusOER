@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>u-Substitution</title>
+<title>Introduction to u-Substitution</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -134,6 +134,9 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\blank}[1]{\underline{\hspace{#1}}} 
 \newcommand{\dint}{\displaystyle \int}
 \newcommand{\va}{┊}
+\usepackage{xcolor}
+\definecolor{DCgreen}{HTML}{085646}
+\definecolor{DCblue}{HTML}{5762D5}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -375,7 +378,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section contains-active">
-<div class="toc-title-box"><a href="sec-uSubstitution.html" class="internal"><span class="codenumber">5.6</span> <span class="title"><span class="process-math">\(u\)</span>-Substitution</span></a></div>
+<div class="toc-title-box"><a href="sec-uSubstitution.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Introduction to <span class="process-math">\(u\)</span>-Substitution</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-UndoChainRule" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Undoing the Chain Rule</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-uSubDefiniteIntegrals" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Substitution for Definite Integrals</span></a></div></li>
@@ -550,12 +553,193 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-uSubstitution"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.6</span><span class="space"> </span><span class="title"><span class="process-math">\(u\)</span>-Substitution</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.6</span><span class="space"> </span><span class="title">Introduction to <span class="process-math">\(u\)</span>-Substitution</span>
 </h2>
-<section class="subsection" id="subsec-UndoChainRule"><h3 class="heading hide-type">
+<section class="introduction" id="sec-uSubstitution-2"><div class="para" id="sec-uSubstitution-2-1">We have spent some time thinking about integrals, both indefinite and definite integrals, and what they represent. Let’s end this discussion of integration with some classifications of indefinite integrals.</div>
+<div class="para" id="sec-uSubstitution-2-2">This classification is completely unserious, but maybe helpful. Let’s say that we had to classify each of the following integrals as <kbd class="kbdkey">Easy</kbd>, <kbd class="kbdkey">Medium</kbd>, or <kbd class="kbdkey">Hard</kbd>. Again, these are completely ambiguous and not at all defined, but I hope that we can see the spirit of what we’re thinking of. Here are the three integrals that we want to classify:</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="sec-uSubstitution-2-3-1"><div class="displaymath process-math">
+\begin{equation*}
+\int x^5\;dx
+\end{equation*}
+</div></div></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="sec-uSubstitution-2-3-2"><div class="displaymath process-math">
+\begin{equation*}
+\int \sec^2(x)\;dx
+\end{equation*}
+</div></div></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para logical" id="sec-uSubstitution-2-3-3"><div class="displaymath process-math">
+\begin{equation*}
+\int \frac{x^3}{1+x^2}\;dx
+\end{equation*}
+</div></div></div>
+</div></div>
+<div class="para" id="sec-uSubstitution-2-4">Which one could have the <kbd class="kbdkey">Easy</kbd>? What about a <kbd class="kbdkey">Medium</kbd> difficulty integral? What makes this one a bit harder, but not so hard to be classified as <kbd class="kbdkey">Hard</kbd>? Can you even solve the <kbd class="kbdkey">Hard</kbd> right now?</div>
+<div class="para" id="sec-uSubstitution-2-5">Let’s think about a legitimately difficult integral, but one that we <em class="emphasis">can</em> actually think about.</div>
+<article class="activity project-like" id="act-UndoChainRule"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.1</span><span class="period">.</span><span class="space"> </span><span class="title">A Hard Integral.</span>
+</h3>
+<div class="introduction" id="act-UndoChainRule-2">
+<div class="para" id="act-UndoChainRule-2-1">We’re going to be thinking about two integrals here, but before we do, we should remind ourselves about how we can "re-phrase" an integration question.</div>
+<div class="para" id="act-UndoChainRule-2-2">If we are asked to find <span class="process-math">\(\displaystyle \int f(x)\;dx\text{,}\)</span> then we are really being asked to find some function <span class="process-math">\(F(x)\)</span> whose derivative is <span class="process-math">\(f(x)\text{.}\)</span> Of course, we’re actually being asked to find <em class="emphasis">all</em> of the possible functions that fit this requirement, but we know that the constant of integration covers all of the differences.</div>
+<div class="para" id="act-UndoChainRule-2-3">This means that we can (and should?) check our answers pretty consistently: just find a derivative and check that it matches the integrand!</div>
+</div>
+<article class="task exercise-like" id="act-UndoChainRule-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="act-UndoChainRule-3-1-1">Find <span class="process-math">\(\displaystyle \int 3x^2e^{x^3}\;dx\text{.}\)</span>
+</div>
+<div class="solutions">
+<details id="act-UndoChainRule-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-UndoChainRule-3-2-1">Find a function <span class="process-math">\(F(x)\)</span> where <span class="process-math">\(F'(x)=3x^2e^{x^3}\text{.}\)</span>
+</div></div></details><details id="act-UndoChainRule-3-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-UndoChainRule-3-3-1">If you’re looking at the structure of <span class="process-math">\(F'(x)=3x^2e^{x^3}\text{,}\)</span> can you tell what kind of derivative rule we had to have used in order to get this derivative?</div>
+<div class="para" id="act-UndoChainRule-3-3-2">How do we use that to "undo" this differentiation?</div>
+</div></details>
+</div></article><article class="task exercise-like" id="act-UndoChainRule-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-UndoChainRule-4-1-1">Explain the role of <span class="process-math">\(3x^2\)</span> in the integral. Explain why the positioning of <span class="process-math">\(x^3\)</span> matters.</div></article><article class="task exercise-like" id="act-UndoChainRule-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="act-UndoChainRule-5-1-1">
+<div class="para">Let’s try another one.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int 7x^6\cos(x^7)\;dx
+\end{equation*}
+</div>
+</div>
+<div class="solutions"><details id="act-UndoChainRule-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-UndoChainRule-5-2-1">Can you find the same kind of structure here? Is there a function-derivative pairing or composition here that signifies the end result of the Chain Rule?</div></div></details></div></article><article class="task exercise-like" id="act-UndoChainRule-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="act-UndoChainRule-6-1-1">How can you tell, in general, that the derivative you’re looking at is one that was produced through the Chain Rule and not the Product Rule?</div></article></article></section><section class="subsection" id="subsec-UndoChainRule"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.6.1</span><span class="space"> </span><span class="title">Undoing the Chain Rule</span>
 </h3>
-<div class="para" id="subsec-UndoChainRule-2"></div></section><section class="subsection" id="subsec-uSubDefiniteIntegrals"><h3 class="heading hide-type">
+<div class="para" id="subsec-UndoChainRule-2">Let’s try to formalize this process of "undoing the Chain Rule" that we noticed in <a href="sec-uSubstitution.html#act-UndoChainRule" class="xref" data-knowl="./knowl/xref/act-UndoChainRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.6.1: A Hard Integral">Activity 5.6.1</a>. It might be helpful to, first, think about the Chain Rule and how the differentiation process works. Let’s look at the differentiating <span class="process-math">\(\sin(x^7)\)</span> using the Chain Rule.</div>
+<div class="para logical" id="subsec-UndoChainRule-3">
+<div class="para">The first thing we should do when finding <span class="process-math">\(\ddx{\sin(x^7)}\)</span> is recognize and identify the composition. We might call <span class="process-math">\(x^7\)</span> the "inside" function, or re-label it as <span class="process-math">\(u\text{.}\)</span> Then we know that the Chain Rule will tell us to differentiate the "outside" function with regard to the "inside" function (or <span class="process-math">\(u\)</span> if we re-label things) and then multiply by the derivative of the inside function (or <span class="process-math">\(\frac{du}{dx}\)</span>).</div>
+<div class="displaymath process-math" id="subsec-UndoChainRule-3-6">
+\begin{align*}
+\ddx{\sin(\underbrace{x^7}_{u})} \amp =\ddx{\sin(u)}\\
+\amp = \frac{d}{du}\left(\sin(u)\right)\left(\frac{du}{dx}\right)\\
+\amp = \cos(u)\ddx{x^7}\\
+\amp = \cos(x^7)7x^6
+\end{align*}
+</div>
+<div class="para">From here, we might re-write things to make it look nicer (coefficients look weird when they’re not in the front 😭) and write:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ddx{\sin(x^7)}= 7x^6\cos(x^7)
+\end{equation*}
+</div>
+</div>
+<div class="para" id="subsec-UndoChainRule-4">When we work through this process backwards, we’ll need to identify the "inside" function, but also find the derivative of that "inside" function, <span class="process-math">\(\frac{du}{dx}\text{.}\)</span> This derivative gets introduced in the Chain Rule, and so it will have to be picked out when we undo the Chain Rule.</div>
+<div class="para" id="subsec-UndoChainRule-5">Let’s build this process and go through the integral <span class="process-math">\(\displaystyle \int 7x^6\cos(x^7)\;dx\)</span> from <a href="sec-uSubstitution.html#act-UndoChainRule" class="xref" data-knowl="./knowl/xref/act-UndoChainRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.6.1: A Hard Integral">Activity 5.6.1</a>.</div>
+<article class="assemblage assemblage-like" id="strat-uSubstitution"><h4 class="heading"><span class="title">Process for <span class="process-math">\(u\)</span>-Substitution.</span></h4>
+<div class="para logical" id="strat-uSubstitution-2"><ol class="decimal" id="strat-uSubstitution-2-1">
+<li id="strat-uSubstitution-2-1-1">
+<div class="para" id="strat-uSubstitution-2-1-1-1">Identify an "inside" function and/or a "function-derivative pair." We’ll label the "inside" function, or the "function" part of the "function-derivative pair," as <span class="process-math">\(u\text{.}\)</span>
+</div>
+<div class="para" id="strat-uSubstitution-2-1-1-2">
+<em class="emphasis">Example:</em> In our integral <span class="process-math">\(\displaystyle\int 7x^6\cos(x^7)\;dx\)</span> we can see the "inside" function is <span class="process-math">\(x^7\text{,}\)</span> and also we have <span class="process-math">\(x^7\)</span> and <span class="process-math">\(7x^6\)</span> as the function-derivative pair. Let <span class="process-math">\(u=x^7\text{.}\)</span>
+</div>
+</li>
+<li id="strat-uSubstitution-2-1-2">
+<div class="para" id="strat-uSubstitution-2-1-2-1">Define the substitution for the differential, <span class="process-math">\(du=u'\;dx\text{.}\)</span> We can think about this as a result from knowing that <span class="process-math">\(\frac{du}{dx}=u'\text{,}\)</span> or by thinking that a small change in <span class="process-math">\(u\)</span> corresponds with <span class="process-math">\(u'\)</span> multiplied by a small change in <span class="process-math">\(dx\text{.}\)</span>
+</div>
+<div class="para" id="strat-uSubstitution-2-1-2-2">
+<em class="emphasis">Example:</em> In our integral <span class="process-math">\(\displaystyle\int 7x^6\cos(x^7)\;dx\text{,}\)</span> we labeled <span class="process-math">\(u=x^7\text{.}\)</span> This means that <span class="process-math">\(du=7x^6\;dx\text{,}\)</span> since this is the derivative of <span class="process-math">\(x^7\text{.}\)</span>
+</div>
+</li>
+<li id="strat-uSubstitution-2-1-3">
+<div class="para" id="strat-uSubstitution-2-1-3-1">Substitute! Re-write the integral, replacing the parts that you’ve labeled as <span class="process-math">\(u\)</span> and <span class="process-math">\(du\text{.}\)</span>
+</div>
+<div class="para logical" id="strat-uSubstitution-2-1-3-2">
+<div class="para">
+<em class="emphasis">Example:</em> We can re-write our integral to make this a bit easier to see:</div>
+<div class="displaymath process-math" id="strat-uSubstitution-2-1-3-2-2">
+\begin{align*}
+\int 7x^6\cos(x)\;dx \amp = \int \cos(\underbrace{x^7}_{u})\underbrace{7x^6\;dx}_{du}\\
+\amp = \int \cos(u)\;du
+\end{align*}
+</div>
+</div>
+</li>
+<li id="strat-uSubstitution-2-1-4">
+<div class="para" id="strat-uSubstitution-2-1-4-1">Antidifferentiate! We should have an integral that is "written in terms of <span class="process-math">\(u\text{,}\)</span>" and so we can antidifferentiate the function as if <span class="process-math">\(u\)</span> was our input variable. Notice that what we’ve done with our substitution is to undo the "multiply by the derivative of the inside function" step of the Chain Rule. Now we can antidifferentiate the "outside" function!</div>
+<div class="para" id="strat-uSubstitution-2-1-4-2">
+<em class="emphasis">Example:</em> <span class="process-math">\(\displaystyle\int\cos(u)\;du = \sin(u)+C\)</span>
+</div>
+</li>
+<li id="strat-uSubstitution-2-1-5">
+<div class="para" id="strat-uSubstitution-2-1-5-1">Substitute "back" to have our antiderivative family written in terms of our original input variable, <span class="process-math">\(x\)</span> in this case. We’ll replace <span class="process-math">\(u\)</span> with whatever we had defined our substitution to be in step 1.</div>
+<div class="para logical" id="strat-uSubstitution-2-1-5-2">
+<div class="para">
+<em class="emphasis">Example:</em> We defined <span class="process-math">\(u=x^7\text{,}\)</span> so:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sin(u)+C = \sin(x^7)+C
+\end{equation*}
+</div>
+</div>
+</li>
+</ol></div></article><div class="para" id="subsec-UndoChainRule-7">Let’s practice this with some more examples.</div>
+<article class="activity project-like" id="act-uSubPicking"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.2</span><span class="period">.</span><span class="space"> </span><span class="title">Picking the Pieces of a Substitution.</span>
+</h4>
+<div class="introduction" id="act-uSubPicking-2"><div class="para" id="act-uSubPicking-2-1">We’re going to look at three integrals. Instead of working through them one-at-a-time, we’ll look at all three simultaneously, where we can practice identifying, substituting, and antidifferentiating all at the same time.</div></div>
+<article class="task exercise-like" id="act-uSubPicking-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="act-uSubPicking-3-1-1">
+<div class="para">Let’s consider these three integrals:</div>
+<ul class="disc" id="act-uSubPicking-3-1-1-1">
+<li id="act-uSubPicking-3-1-1-1-1"><div class="para" id="act-uSubPicking-3-1-1-1-1-1"><span class="process-math">\(\displaystyle \displaystyle\int \frac{3x^2+1}{(x^3+x-2)^2}\;dx\)</span></div></li>
+<li id="act-uSubPicking-3-1-1-1-2"><div class="para" id="act-uSubPicking-3-1-1-1-2-1"><span class="process-math">\(\displaystyle \displaystyle \int \cos(x)\sqrt{\sin(x)}\;dx\)</span></div></li>
+<li id="act-uSubPicking-3-1-1-1-3"><div class="para" id="act-uSubPicking-3-1-1-1-3-1"><span class="process-math">\(\displaystyle \displaystyle \int \frac{(\ln(x))^3}{x}\;dx\)</span></div></li>
+</ul>
+<div class="para">For each of these integrals, identify the substitution: define <span class="process-math">\(u\)</span> as some function of <span class="process-math">\(x\text{.}\)</span>
+</div>
+</div>
+<div class="solutions">
+<details id="act-uSubPicking-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-uSubPicking-3-2-1">Can you find the composition in each one? If you notice the function-derivative pairing instead, then you can think about making <span class="process-math">\(u\)</span> the "function" portion!</div></div></details><details id="act-uSubPicking-3-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="act-uSubPicking-3-3-1"><ul class="disc" id="act-uSubPicking-3-3-1-1">
+<li id="act-uSubPicking-3-3-1-1-1"><div class="para" id="act-uSubPicking-3-3-1-1-1-1">For <span class="process-math">\(\displaystyle\int \frac{3x^2+1}{(x^3+x-2)^2}\;dx\text{,}\)</span> let <span class="process-math">\(u=x^3+x-2\text{.}\)</span>
+</div></li>
+<li id="act-uSubPicking-3-3-1-1-2"><div class="para" id="act-uSubPicking-3-3-1-1-2-1">For <span class="process-math">\(\displaystyle \int \cos(x)\sqrt{\sin(x)}\;dx\text{,}\)</span> let <span class="process-math">\(u=\sin(x)\text{.}\)</span>
+</div></li>
+<li id="act-uSubPicking-3-3-1-1-3"><div class="para" id="act-uSubPicking-3-3-1-1-3-1">For <span class="process-math">\(\displaystyle \int \frac{(\ln(x))^3}{x}\;dx\text{,}\)</span> let <span class="process-math">\(u=\ln(x)\text{.}\)</span>
+</div></li>
+</ul></div></div></details>
+</div></article><article class="task exercise-like" id="act-uSubPicking-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-uSubPicking-4-1-1">For each substitution, define <span class="process-math">\(du=u'\;dx\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-uSubPicking-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="act-uSubPicking-4-2-1"><ul class="disc" id="act-uSubPicking-4-2-1-1">
+<li id="act-uSubPicking-4-2-1-1-1"><div class="para" id="act-uSubPicking-4-2-1-1-1-1">For <span class="process-math">\(u=x^3+x-1\text{,}\)</span> <span class="process-math">\(du=(3x^2+1)\;dx\text{.}\)</span>
+</div></li>
+<li id="act-uSubPicking-4-2-1-1-2"><div class="para" id="act-uSubPicking-4-2-1-1-2-1">For <span class="process-math">\(u=\sin(x)\text{,}\)</span> <span class="process-math">\(du=\cos(x)\;dx\text{.}\)</span>
+</div></li>
+<li id="act-uSubPicking-4-2-1-1-3"><div class="para" id="act-uSubPicking-4-2-1-1-3-1">For <span class="process-math">\(u=\ln(x)\text{,}\)</span> <span class="process-math">\(du=\frac{1}{x}\;dx\text{.}\)</span>
+</div></li>
+</ul></div></div></details></div></article><article class="task exercise-like" id="act-uSubPicking-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-uSubPicking-5-1-1">For each integral, use your substitution (for both <span class="process-math">\(u\)</span> and the differential <span class="process-math">\(du\)</span>) to re-write the integral.</div>
+<div class="solutions"><details id="act-uSubPicking-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="act-uSubPicking-5-2-1"><ul class="disc" id="act-uSubPicking-5-2-1-1">
+<li id="act-uSubPicking-5-2-1-1-1"><div class="para" id="act-uSubPicking-5-2-1-1-1-1"><span class="process-math">\(\displaystyle \displaystyle\int \frac{3x^2+1}{(x^3+x-2)^2}\;dx =\int \frac{1}{u^2}\;du\)</span></div></li>
+<li id="act-uSubPicking-5-2-1-1-2"><div class="para" id="act-uSubPicking-5-2-1-1-2-1"><span class="process-math">\(\displaystyle \displaystyle \int \cos(x)\sqrt{\sin(x)}\;dx = \int \sqrt{u}\;du\)</span></div></li>
+<li id="act-uSubPicking-5-2-1-1-3"><div class="para" id="act-uSubPicking-5-2-1-1-3-1"><span class="process-math">\(\displaystyle \displaystyle \int \frac{(\ln(x))^3}{x}\;dx = \int u^3\;du\)</span></div></li>
+</ul></div></div></details></div></article><article class="task exercise-like" id="act-uSubPicking-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-uSubPicking-6-1-1">Antidifferentiate each integral, and then use your substitution to write each integral back in terms of <span class="process-math">\(x\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-uSubPicking-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="act-uSubPicking-6-2-1"><ul class="disc" id="act-uSubPicking-6-2-1-1">
+<li id="act-uSubPicking-6-2-1-1-1"><div class="para logical" id="act-uSubPicking-6-2-1-1-1-1"><div class="displaymath process-math" id="act-uSubPicking-6-2-1-1-1-1-1">
+\begin{align*}
+\int \frac{1}{u^2}\;du \amp = -\frac{1}{u}+C\\
+\amp = -\frac{1}{x^3+x-2}+C
+\end{align*}
+</div></div></li>
+<li id="act-uSubPicking-6-2-1-1-2"><div class="para logical" id="act-uSubPicking-6-2-1-1-2-1"><div class="displaymath process-math" id="act-uSubPicking-6-2-1-1-2-1-1">
+\begin{align*}
+\int \sqrt{u}\;du \amp = \frac{2 u^{3/2}}{3}+C\\
+\amp = \frac{2(\sin(x))^{3/2}}{3}+C
+\end{align*}
+</div></div></li>
+<li id="act-uSubPicking-6-2-1-1-3"><div class="para logical" id="act-uSubPicking-6-2-1-1-3-1"><div class="displaymath process-math" id="act-uSubPicking-6-2-1-1-3-1-1">
+\begin{align*}
+\int u^3\;du \amp = \frac{u^4}{4}+C\\
+\amp = \frac{(\ln(x))^4}{4}+C
+\end{align*}
+</div></div></li>
+</ul></div></div></details></div></article></article><figure class="figure figure-like" id="fig-uSub"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/fig-uSub-2.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.6.1<span class="period">.</span></span><span class="space"> </span>General idea of how a variable substitution in an integral works.</figcaption></figure></section><section class="subsection" id="subsec-uSubDefiniteIntegrals"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.6.2</span><span class="space"> </span><span class="title">Substitution for Definite Integrals</span>
 </h3>
 <div class="para" id="subsec-uSubDefiniteIntegrals-2"></div>
@@ -563,13 +747,13 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.6.3</span><span class="space"> </span><span class="title">More to Translate</span>
 </h3>
 <details id="subsec-MoreToTranslate-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.6.1</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.6.2</span><span class="period">.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-MoreToTranslate-2-1"><div class="para" id="subsec-MoreToTranslate-2-1-1">Integrate the following, making sure to translate the whole integrand function to be written in terms of <span class="process-math">\(u\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="ex-uSubTurn"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="ex-uSubTurn-1-1"><span class="process-math">\(\int \left( \frac{x^3}{\sqrt{x^2+1}} \right)\;dx\)</span></div>
+<div class="para" id="ex-uSubTurn-1-1"><span class="process-math">\(\displaystyle\int \left( \frac{x^3}{\sqrt{x^2+1}} \right)\;dx\)</span></div>
 <div class="solutions">
-<details id="ex-uSubTurn-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-uSubTurn-2-1">We can write <span class="process-math">\(x^3\)</span> as <span class="process-math">\(x^2\cdot x\text{,}\)</span> or if you <em class="emphasis">really</em> want to, we can write it as <span class="process-math">\(\frac{1}{2}m^2\cdot(2x)\)</span>
+<details id="ex-uSubTurn-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-uSubTurn-2-1">We can write <span class="process-math">\(x^3\)</span> as <span class="process-math">\(x^2\cdot x\text{,}\)</span> or if you <em class="emphasis">really</em> want to, we can write it as <span class="process-math">\(\frac{1}{2}x^2\cdot(2x)\)</span>
 </div></div></details><details id="ex-uSubTurn-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="ex-uSubTurn-3-1"><div class="displaymath process-math" id="ex-uSubTurn-3-1-1">
 \begin{align*}
 \int \left(\frac{x^3}{\sqrt{x^2+1}}\right)\;dx \amp u = x^2+1\\
