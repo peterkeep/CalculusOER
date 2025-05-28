@@ -1,0 +1,63 @@
+<activity xml:id="act-UndoChainRule">
+    <title>A Hard Integral</title>
+    <introduction>
+        <p>
+            We're going to be thinking about two integrals here, but before we do, we should remind ourselves about how we can "re-phrase" an integration question.
+        </p>
+        <p>
+            If we are asked to find <m>\displaystyle \int f(x)\;dx</m>, then we are really being asked to find some function <m>F(x)</m> whose derivative is <m>f(x)</m>. Of course, we're actually being asked to find <em>all</em> of the possible functions that fit this requirement, but we know that the constant of integration covers all of the differences.
+        </p>
+        <p>
+            This means that we can (and should?) check our answers pretty consistently: just find a derivative and check that it matches the integrand!
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Find <m>\displaystyle \int 3x^2e^{x^3}\;dx</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Find a function <m>F(x)</m> where <m>F'(x)=3x^2e^{x^3}</m>.
+            </p>
+        </hint>
+        <hint>
+            <p>
+                If you're looking at the structure of <m>F'(x)=3x^2e^{x^3}</m>, can you tell what kind of derivative rule we had to have used in order to get this derivative?
+            </p>
+            <p>
+                How do we use that to "undo" this differentiation?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Explain the role of <m>3x^2</m> in the integral. Explain why the positioning of <m>x^3</m> matters. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's try another one.
+                <me>
+                    \int 7x^6\cos(x^7)\;dx
+                </me>
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Can you find the same kind of structure here? Is there a function-derivative pairing or composition here that signifies the end result of the Chain Rule?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How can you tell, in general, that the derivative you're looking at is one that was produced through the Chain Rule and not the Product Rule?
+            </p>
+        </statement>
+    </task>
+</activity>

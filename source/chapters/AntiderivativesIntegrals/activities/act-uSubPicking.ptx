@@ -1,0 +1,152 @@
+<activity xml:id="act-uSubPicking">
+    <title>Picking the Pieces of a Substitution</title>
+    <introduction>
+        <p>
+            We're going to look at three integrals. Instead of working through them one-at-a-time, we'll look at all three simultaneously, where we can practice identifying, substituting, and antidifferentiating all at the same time.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Let's consider these three integrals:
+                <ul>
+                    <li>
+                        <p>
+                            <m>\displaystyle\int \frac{3x^2+1}{(x^3+x-2)^2}\;dx</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle \int \cos(x)\sqrt{\sin(x)}\;dx</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle \int \frac{(\ln(x))^3}{x}\;dx</m>
+                        </p>
+                    </li>
+                </ul>
+                For each of these integrals, identify the substitution: define <m>u</m> as some function of <m>x</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Can you find the composition in each one? If you notice the function-derivative pairing instead, then you can think about making <m>u</m> the "function" portion!
+            </p>
+        </hint>
+        <answer>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            For <m>\displaystyle\int \frac{3x^2+1}{(x^3+x-2)^2}\;dx</m>, let <m>u=x^3+x-2</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            For <m>\displaystyle \int \cos(x)\sqrt{\sin(x)}\;dx</m>, let <m>u=\sin(x)</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            For <m>\displaystyle \int \frac{(\ln(x))^3}{x}\;dx</m>, let <m>u=\ln(x)</m>.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For each substitution, define <m>du=u'\;dx</m>.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            For <m>u=x^3+x-1</m>, <m>du=(3x^2+1)\;dx</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            For <m>u=\sin(x)</m>, <m>du=\cos(x)\;dx</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            For <m>u=\ln(x)</m>, <m>du=\frac{1}{x}\;dx</m>.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For each integral, use your substitution (for both <m>u</m> and the differential <m>du</m>) to re-write the integral.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            <m>\displaystyle\int \frac{3x^2+1}{(x^3+x-2)^2}\;dx =\int \frac{1}{u^2}\;du</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle \int \cos(x)\sqrt{\sin(x)}\;dx = \int \sqrt{u}\;du</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle \int \frac{(\ln(x))^3}{x}\;dx = \int u^3\;du</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Antidifferentiate each integral, and then use your substitution to write each integral back in terms of <m>x</m>.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ul>
+                        <li>
+                            <p>
+                                <md>
+                                    <mrow>\int \frac{1}{u^2}\;du \amp = -\frac{1}{u}+C</mrow>
+                                    <mrow> \amp = -\frac{1}{x^3+x-2}+C</mrow>
+                                </md>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <md>
+                                    <mrow>\int \sqrt{u}\;du \amp = \frac{2 u^{3/2}}{3}+C</mrow>
+                                    <mrow> \amp = \frac{2(\sin(x))^{3/2}}{3}+C</mrow>
+                                </md>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <md>
+                                    <mrow>\int u^3\;du \amp = \frac{u^4}{4}+C</mrow>
+                                    <mrow> \amp = \frac{(\ln(x))^4}{4}+C</mrow>
+                                </md>
+                            </p>
+                        </li>
+                    </ul>
+            </p>
+        </answer>
+    </task>    
+</activity>
