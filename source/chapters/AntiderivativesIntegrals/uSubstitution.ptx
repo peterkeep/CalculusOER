@@ -117,6 +117,14 @@
             Let's practice this with some more examples.
         </p>
         <xi:include href="./activities/act-uSubPicking.ptx" />
+        <p>
+            Let's try to explain a little bit of what is happening. This style of problem solving is really useful in mathematics, and shows up in many places.
+        </p>
+        <aside>
+            <p>
+                The first time I saw <xref ref="fig-uSub"/> was in a Differential Equations class. We were learning about Laplace transformations, a technique that is very useful for solving a variety of problems. My professor was explaining why and how Laplace transformations were so powerful, and drew a version of the figure I've included to explain <m>u</m>-substitution. It was so helpful for me to understand what was happening, but the most helpful thing was when the professor said, offhand, "But that's exactly the same type of thing that <m>u</m>-substitution does, too." So many things fell into place for me because of that comment! You are guaranteed to see different versions of this picture throughout this textbook, but you can also keep an eye out for this in different problem-solving techniques in mathematics.
+            </p>
+        </aside>
         <figure xml:id="fig-uSub">
             <caption>General idea of how a variable substitution in an integral works.</caption>
             <image width="80%">
@@ -151,12 +159,35 @@
                 </latex-image>
             </image>
         </figure>
+        <p>
+            Let's explain what is happening in this picture. First, we typically are presented with integrals in some context. Our goal is to antidifferentiate. So for <m>\displaystyle\int f(x)\;dx</m>, we hope to antidifferentiate and end up with <m>F(x)+C</m>, the family of antiderivative of <m>f(x)</m>. These two things (the indefinite integral and the family of antiderivatives) exist in the same context (since they're defined with the same variable). We have spent some time moving directly from <m>\displaystyle f(x)\;dx</m> to <m>F(x)+C</m>. But now we're seeing that this isn't always as direct of a path as we might wish: some integrals are <em>hard</em>.
+        </p>
+        <p>
+            In this case, we can try to identify what the problem is (in this case, composition) and find some transformation to apply to our integral. We choose a variable substitution, and we translate our integral to a different context (in this case, by writing it in terms of a different variable). In order for us to do this, we ned to define some substitution <m>u</m>, and then translate <m>dx</m> into <m>du</m> using the relationship <m>du=u'\;dx</m>.
+        </p>
+        <p>
+            Once we have this new integral, of a different function <m>g(u)</m> in a different context with <m>u</m> acting as the input, we try to antidifferentiate again. If we pick our substitution carefully and we know what kind of problem we're trying to fix (in this case, getting around the composition), then this new integral in the <m>u</m> context could be "easier" to antidifferentiate. So our goal is to antidifferentiate the integral, but we can antidifferentiate it after translating it to a different context.
+        </p>
+        <p>
+            Once we have this antiderivative, we can translate that antiderivative family back to the original context (in this case, we write it in terms of <m>x</m>). We do this by utilizing the same translation or substitution that we defined earlier: we have something defined to link <m>u</m> and <m>x</m>. We can notice that, since the object we're translating is not an integral anymore, we do not have a differential to translate.
+        </p>
+        <p>
+            And there we have it: <m>u</m>-substitution works by identifying a problem that makes our task hard, translating our object to a friendlier context based on what we know about our problem, solving the problem in this friendlier context, and then finally translating the solution back to our original context.
+        </p>
+        <aside>
+            <p>
+                Doesn't this feel like what we do with <xref ref="sec-LogarithmicDifferentiation" text="title"/>? Use logs to translate our function to a friendlier form, differentiate in the log-context, and then try to translate back by solving for <m>y'</m>?
+            </p>
+        </aside>
+        <p>
+            Let's practice this new strategy!
+        </p>
     </subsection>
 
     <subsection xml:id="subsec-uSubDefiniteIntegrals">
         <title>Substitution for Definite Integrals</title>
         <p>
-            
+            We can amend our picture from <xref ref="fig-uSub"/> to include definite integrals: in this case, we can evaluate the definite integral in either context, as long as we translate the limits of integration as well.
         </p>
         <figure xml:id="fig-uSubDefinite">
             <caption>General idea of how a variable substitution in a definite integral works.</caption>
@@ -203,11 +234,17 @@
                 </latex-image>
             </image>
         </figure>
+        <p>
+            To see a visualization of what is happening, we can look below: move the slider to see the continuous deformation of the integral as we apply the variable substitution:
+        </p>
          <interactive platform="doenetml" width="90%" aspect="1:1.5">
         <slate surface="doenetml">
             <xi:include parse="text" href="./doenet/uSubDefinite.xml"/>
         </slate>
     </interactive>
+    <p>
+        Something we can say is that, since the area doesn't change when we do a variable substitution, then area is <term>invariant</term> under the transformation we're applying with that variable substitution.    
+    </p>
     </subsection>
     
     <subsection xml:id="subsec-MoreToTranslate">
