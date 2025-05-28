@@ -1690,7 +1690,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.5",
   "title": "More Results about Definite Integrals",
-  "body": " More Results about Definite Integrals   We'll end this chapter by looking a bit more closely at definite integrals and pulling a couple of small results out of our understanding of them, as well as some prior knowledge.    Symmetry   Symmetry in Functions and Integrals   First, let's take a moment to remind ourselves (or see for the first time) what two types of \"symmetry\" we'll be considering. We call them \"even\" and \"odd\" symmetry, but sometimes we think of them as a \"reflective\" symmetry and a \"rotational\" symmetry in the graphs of our functions.     Convince yourself that you know what we mean when we say that a function is even symmetric on an interval if on the interval.  Similarly, convince yourself that you know what we mean when we say that a function is odd symmetric on an interval if on the interval.   Look at the relationship between the points on the graphs when you select the different symmetries: How do their -values relate to each other? How do their -values relate to each other?    Now let's think about areas. Before we visualize too much, let's start with a small question: How does the height of a function impact the area defined by a definite integral? It should be helpful to think about Riemann sums and areas of rectangles here.  The important question then, is how does a function being even or odd symmetric tell us information about areas defined by definite integrals of that function?   If we know that for an even symmetric function, there are some heights\/ -values that are the same, then we know that there are some areas\/integrals that should also be the same. Which ones?  If we know that for an odd symmetric function, there are some heights\/ -values that are opposite, then we know that there are some areas\/integrals that should also be opposite. Which ones?     Definite Integrals of Symmetric Functions   If is a continuous function on for some real number , then:   If is even symmetric on , then: .    If is odd symmetric on , then: .        Connecting Symmetric Integrals   We're going to do some sketching here, and I want you to be clear about something: your sketches can be absolutely terrible. It's ok! They just need to embody the kind of symmetry we're talking about. You will probably sketch something and notice that your areas aren't to scale (or maybe even the wrong sign!), and that's fine.  It might be helpful to practice sketching graphs accurately, but don't worry if that part is a struggle.    Sketch a function with the following properties:    is even symmetric on the interval                  Find the values of the following integrals:               Since is even symmetric, what are the two other integrals that we know about? How can we use those to help us find these two?                   Sketch a function with the following properties:    is odd symmetric on the interval                  Find the values of the following integrals:               Since is even symmetric, what are the two other integrals that we know about? How can we use those to help us find these two?                     Average Value of a Function   Visualizing the Average Height of a Function   We are going to build a formula to find the \"average height\" or \"average value\" of a function on the interval . We're going to look at a function and try to find the average height. Along the way, we'll think a bit about areas!    Consider the following function. Find the average height of the function on the interval pictured!     How does the area \"under\" the curve on the interval compare to the area of the rectangle formed by the average height line?    How do you define the two areas?   One of these is the area under from to , which we can use calculus for!  The other is the area of a rectangle with a height (the average height of ) and a width (the width of the interval).    Set up an equation connecting the two areas, and solve for the average height of .   If , then doesn't it make sense that      Average Value of a Function   If a function is continuous on the interval , then the average value of on is: .     "
+  "body": " More Results about Definite Integrals   We'll end this chapter by looking a bit more closely at definite integrals and pulling a couple of small results out of our understanding of them, as well as some prior knowledge.    Symmetry   Symmetry in Functions and Integrals   First, let's take a moment to remind ourselves (or see for the first time) what two types of \"symmetry\" we'll be considering. We call them \"even\" and \"odd\" symmetry, but sometimes we think of them as a \"reflective\" symmetry and a \"rotational\" symmetry in the graphs of our functions.     Convince yourself that you know what we mean when we say that a function is even symmetric on an interval if on the interval.  Similarly, convince yourself that you know what we mean when we say that a function is odd symmetric on an interval if on the interval.   Look at the relationship between the points on the graphs when you select the different symmetries: How do their -values relate to each other? How do their -values relate to each other?    Now let's think about areas. Before we visualize too much, let's start with a small question: How does the height of a function impact the area defined by a definite integral? It should be helpful to think about Riemann sums and areas of rectangles here.  The important question then, is how does a function being even or odd symmetric tell us information about areas defined by definite integrals of that function?   If we know that for an even symmetric function, there are some heights\/ -values that are the same, then we know that there are some areas\/integrals that should also be the same. Which ones?  If we know that for an odd symmetric function, there are some heights\/ -values that are opposite, then we know that there are some areas\/integrals that should also be opposite. Which ones?     Definite Integrals of Symmetric Functions   If is a continuous function on for some real number , then:   If is even symmetric on , then: .    If is odd symmetric on , then: .        Connecting Symmetric Integrals   We're going to do some sketching here, and I want you to be clear about something: your sketches can be absolutely terrible. It's ok! They just need to embody the kind of symmetry we're talking about. You will probably sketch something and notice that your areas aren't to scale (or maybe even the wrong sign!), and that's fine.  It might be helpful to practice sketching graphs accurately, but don't worry if that part is a struggle.    Sketch a function with the following properties:    is even symmetric on the interval                  Find the values of the following integrals:               Since is even symmetric, what are the two other integrals that we know about? How can we use those to help us find these two?                   Sketch a function with the following properties:    is odd symmetric on the interval                  Find the values of the following integrals:               Since is even symmetric, what are the two other integrals that we know about? How can we use those to help us find these two?                     Average Value of a Function   Visualizing the Average Height of a Function   We are going to build a formula to find the \"average height\" or \"average value\" of a function on the interval . We're going to look at a function and try to find the average height. Along the way, we'll think a bit about areas!    Consider the following function. Find the average height of the function on the interval pictured!     How does the area \"under\" the curve on the interval compare to the area of the rectangle formed by the average height line?    How do you define the two areas?   One of these is the area under from to , which we can use calculus for!  The other is the area of a rectangle with a height (the average height of ) and a width (the width of the interval).    Set up an equation connecting the two areas, and solve for the average height of .   If , then doesn't it make sense that ? How, then, do we find average height by dividing an area and a width?     Average Value of a Function   If a function is continuous on the interval , then the average value of on is: .     "
 },
 {
   "id": "act-Symmetry",
@@ -1726,7 +1726,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "5.5.3",
   "title": "Visualizing the Average Height of a Function.",
-  "body": " Visualizing the Average Height of a Function   We are going to build a formula to find the \"average height\" or \"average value\" of a function on the interval . We're going to look at a function and try to find the average height. Along the way, we'll think a bit about areas!    Consider the following function. Find the average height of the function on the interval pictured!     How does the area \"under\" the curve on the interval compare to the area of the rectangle formed by the average height line?    How do you define the two areas?   One of these is the area under from to , which we can use calculus for!  The other is the area of a rectangle with a height (the average height of ) and a width (the width of the interval).    Set up an equation connecting the two areas, and solve for the average height of .   If , then doesn't it make sense that    "
+  "body": " Visualizing the Average Height of a Function   We are going to build a formula to find the \"average height\" or \"average value\" of a function on the interval . We're going to look at a function and try to find the average height. Along the way, we'll think a bit about areas!    Consider the following function. Find the average height of the function on the interval pictured!     How does the area \"under\" the curve on the interval compare to the area of the rectangle formed by the average height line?    How do you define the two areas?   One of these is the area under from to , which we can use calculus for!  The other is the area of a rectangle with a height (the average height of ) and a width (the width of the interval).    Set up an equation connecting the two areas, and solve for the average height of .   If , then doesn't it make sense that ? How, then, do we find average height by dividing an area and a width?   "
 },
 {
   "id": "thm-AverageValue",
@@ -1736,6 +1736,24 @@ var ptx_lunr_docs = [
   "number": "5.5.2",
   "title": "Average Value of a Function.",
   "body": " Average Value of a Function   If a function is continuous on the interval , then the average value of on is: .   "
+},
+{
+  "id": "sec-uSubstitution",
+  "level": "1",
+  "url": "sec-uSubstitution.html",
+  "type": "Section",
+  "number": "5.6",
+  "title": "<span class=\"process-math\">\\(u\\)<\/span>-Substitution",
+  "body": " -Substitution   Undoing the Chain Rule      Substitution for Definite Integrals       More to Translate    Integrate the following, making sure to translate the whole integrand function to be written in terms of .        We can write as , or if you really want to, we can write it as          "
+},
+{
+  "id": "subsec-MoreToTranslate-2",
+  "level": "2",
+  "url": "sec-uSubstitution.html#subsec-MoreToTranslate-2",
+  "type": "Example",
+  "number": "5.6.1",
+  "title": "",
+  "body": "  Integrate the following, making sure to translate the whole integrand function to be written in terms of .        We can write as , or if you really want to, we can write it as        "
 },
 {
   "id": "sec-NetChange",
@@ -2323,22 +2341,13 @@ var ptx_lunr_docs = [
   "body": " Let's consider the integral . This is a difficult integral to evaluate!   First, compare to using an inequality: which one is bigger?   Second, use this inequality to compare the function to for : which one is bigger? Again, use your inequality from above to help!   Now compare to . Which one is bigger?   Explain how we can use this result to make a conclusion about whether our integral, converges or diverges.  "
 },
 {
-  "id": "sec-uSubstitution",
+  "id": "sec-MoreuSubstitution",
   "level": "1",
-  "url": "sec-uSubstitution.html",
+  "url": "sec-MoreuSubstitution.html",
   "type": "Section",
   "number": "7.2",
-  "title": "<span class=\"process-math\">\\(u\\)<\/span>-Substitution",
-  "body": " -Substitution   Undoing the Chain Rule      Substitution for Definite Integrals       More to Translate    Integrate the following, making sure to translate the whole integrand function to be written in terms of .        We can write as , or if you really want to, we can write it as          "
-},
-{
-  "id": "subsec-MoreToTranslate-2",
-  "level": "2",
-  "url": "sec-uSubstitution.html#subsec-MoreToTranslate-2",
-  "type": "Example",
-  "number": "7.2.1",
-  "title": "",
-  "body": "  Integrate the following, making sure to translate the whole integrand function to be written in terms of .        We can write as , or if you really want to, we can write it as        "
+  "title": "More on <span class=\"process-math\">\\(u\\)<\/span>-Substitution",
+  "body": " More on -Substitution       Variable Substitution in Integrals     "
 },
 {
   "id": "sec-AlgebraicManipulations",
