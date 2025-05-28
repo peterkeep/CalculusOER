@@ -123,30 +123,30 @@
                 <shortdescription></shortdescription>
                 <latex-image>
                     \begin{tikzpicture}
-                        \draw (0,0) -- (0,5);
-                        \draw (0,5) -- (3,5);
-                        \draw (3,5) -- (3,0);
-                        \draw (3,0) -- (0,0);
-                        \node at (1.5, 4) [above] {$\displaystyle\int f(x)\;dx$};
-                        \node at (1.5, 1) [below] {$F(x)+C$};
-                        \draw[-latex, line width=1.5pt] (1.5, 4) -- (1.5, 1);
-                        \node at (1.5, 5.2) [above] {\Large $x$ Context};
+                        \draw[DCgreen] (0,0) -- (0,5);
+                        \draw[DCgreen] (0,5) -- (3,5);
+                        \draw[DCgreen] (3,5) -- (3,0);
+                        \draw[DCgreen] (3,0) -- (0,0);
+                        \node[DCgreen] at (1.5, 4) [above] {$\displaystyle\int f(x)\;dx$};
+                        \node[DCgreen] at (1.5, 1) [below] {$F(x)+C$};
+                        \draw[-latex, line width=1.5pt][DCgreen] (1.5, 4) -- (1.5, 1);
+                        \node[DCgreen] at (1.5, 5.2) [above] {\Large $x$ Context};
 
-                        \draw[DCgreen] (5,0) -- (5,5);
-                        \draw[DCgreen] (5,5) -- (8,5);
-                        \draw[DCgreen] (8,5) -- (8,0);
-                        \draw[DCgreen] (8,0) -- (5,0);
-                        \node[DCgreen] at (6.5, 4) [above] {$\displaystyle\int g(u)\;du$};
-                        \node[DCgreen] at (6.5, 1) [below] {$G(u)+C$};
-                        \draw[-latex, line width = 1.5pt][DCgreen] (6.5, 4) -- (6.5, 1);
-                        \node[DCgreen] at (6.5, 5.2) [above] {\Large $u$ Context};
+                        \draw[DCblue] (5,0) -- (5,5);
+                        \draw[DCblue] (5,5) -- (8,5);
+                        \draw[DCblue] (8,5) -- (8,0);
+                        \draw[DCblue] (8,0) -- (5,0);
+                        \node[DCblue] at (6.5, 4) [above] {$\displaystyle\int g(u)\;du$};
+                        \node[DCblue] at (6.5, 1) [below] {$G(u)+C$};
+                        \draw[-latex, line width = 1.5pt][DCblue] (6.5, 4) -- (6.5, 1);
+                        \node[DCblue] at (6.5, 5.2) [above] {\Large $u$ Context};
 
-                        \draw[-latex, line width = 1.2pt][DCblue] (2.5,4.5) .. controls (3.2,5) and (4.8,5) .. (5.5,4.5);
-                        \node[DCblue] at (4,5) [above] {$u = \leadsto ...$};
-                        \node[DCblue] at (4,4.8) [below] {$du = u'\;dx$};
+                        \draw[-latex, line width = 1.2pt][DCred] (2.5,4.5) .. controls (3.2,5) and (4.8,5) .. (5.5,4.5);
+                        \node[DCred] at (4,5) [above] {$u = \leadsto ...$};
+                        \node[DCred] at (4,4.8) [below] {$du = u'\;dx$};
 
-                        \draw[-latex, line width = 1.2pt][DCblue] (5.5,0.7) .. controls (4.8, 0.2) and (3.2,0.2) .. (2.5,0.7);
-                        \node[DCblue] at (4,0.4) [above] {$u = \leadsto ...$};
+                        \draw[-latex, line width = 1.2pt][DCred] (5.5,0.7) .. controls (4.8, 0.2) and (3.2,0.2) .. (2.5,0.7);
+                        \node[DCred] at (4,0.4) [above] {$u = \leadsto ...$};
                     \end{tikzpicture}
                 </latex-image>
             </image>
@@ -158,6 +158,51 @@
         <p>
             
         </p>
+        <figure xml:id="fig-uSubDefinite">
+            <caption>General idea of how a variable substitution in a definite integral works.</caption>
+            <image width="80%">
+                <shortdescription></shortdescription>
+                <latex-image>
+                    \begin{tikzpicture}
+                        \node[DCgreen] at (1.5, 5.3) [above] {\Large $x$ Context};
+                        \draw[DCgreen] (0,0) -- (0,5.1);
+                        \draw[DCgreen] (0,5.1) -- (3,5.1);
+                        \draw[DCgreen] (3,5.1) -- (3,0);
+                        \draw[DCgreen] (3,0) -- (0,0);
+
+                        \node[DCgreen] at (1.5, 4) [above] {$\displaystyle\int_{x=a}^{x=b} f(x)\;dx$};
+                        \node[DCgreen] at (1.5, 2.7) [below] {$F(x)+C$};
+                        \draw[-latex, line width=1.5pt][DCgreen] (1.5, 4) -- (1.5, 2.7);
+
+                        \draw[-latex, line width = 1.5pt][DCgreen] (1.5, 2) -- (1.5, 0.7);
+                        \node[DCgreen] at (1.5, 0.7) [below] {$F(b)-F(a)$};
+                        
+                        \node[DCblue] at (6.5, 5.3) [above] {\Large $u$ Context};
+                        \draw[DCblue] (5,0) -- (5,5.1);
+                        \draw[DCblue] (5,5.1) -- (8,5.1);
+                        \draw[DCblue] (8,5.1) -- (8,0);
+                        \draw[DCblue] (8,0) -- (5,0);
+
+                        \node[DCblue] at (6.5, 4) [above] {$\displaystyle\int_{u=c}^{u=d} g(u)\;du$};
+                        \node[DCblue] at (6.5, 2.7) [below] {$G(u)+C$};
+                        \draw[-latex, line width = 1.5pt][DCblue] (6.5, 4) -- (6.5, 2.7);
+
+                        \draw[-latex, line width = 1.5pt][DCblue] (6.5, 2) -- (6.5, 0.7);
+                        \node[DCblue] at (6.5, 0.7) [below] {$G(d)-G(c)$};
+
+                        \draw[-latex, line width = 1.2pt][DCred] (2.6,4.5) .. controls (3.2,5) and (4.8,5) .. (5.4,4.5);
+                        \node[DCred] at (4,5) [above] {$u = \leadsto ...$};
+                        \node[DCred] at (4,4.8) [below] {$du = u'\;dx$};
+
+                        \draw[-latex, line width = 1.2pt][DCred] (5.5,2.4) .. controls (4.8, 1.9) and (3.2,1.9) .. (2.5,2.4);
+                        \node[DCred] at (4,2.1) [above] {$u = \leadsto ...$};
+
+                        \draw[latex-latex, line width = 1.2pt][black] (2.5, 0.4) -- (5.5, 0.4);
+                        \node[black] at (4, 0.4) [above] {equivalent};
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
          <interactive platform="doenetml" width="90%" aspect="1:1.5">
         <slate surface="doenetml">
             <xi:include parse="text" href="./doenet/uSubDefinite.xml"/>
