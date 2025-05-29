@@ -122,7 +122,7 @@
         </p>
         <aside>
             <p>
-                The first time I saw <xref ref="fig-uSub"/> was in a Differential Equations class. We were learning about Laplace transformations, a technique that is very useful for solving a variety of problems. My professor was explaining why and how Laplace transformations were so powerful, and drew a version of the figure I've included to explain <m>u</m>-substitution. It was so helpful for me to understand what was happening, but the most helpful thing was when the professor said, offhand, "But that's exactly the same type of thing that <m>u</m>-substitution does, too." So many things fell into place for me because of that comment! You are guaranteed to see different versions of this picture throughout this textbook, but you can also keep an eye out for this in different problem-solving techniques in mathematics.
+                The first time I saw <xref ref="fig-uSub"/> was in a Differential Equations class. We were learning about Laplace transformations, a technique that is very useful for solving a variety of problems in the field of differential equations. My professor was explaining why and how Laplace transformations were so powerful, and drew a version of the figure I've included to explain <m>u</m>-substitution. It was so helpful for me to understand what was happening, but the most helpful thing was when the professor said, offhand, "But that's exactly the same type of thing that <m>u</m>-substitution does, too." So many things fell into place for me because of that comment! You are guaranteed to see different versions of this picture throughout this textbook, but you can also keep an eye out for this in different problem-solving techniques in mathematics.
             </p>
         </aside>
         <figure xml:id="fig-uSub">
@@ -186,6 +186,60 @@
 
     <subsection xml:id="subsec-uSubDefiniteIntegrals">
         <title>Substitution for Definite Integrals</title>
+        <p>
+            How would we evaluate the following definite integral?
+            <me>
+                \int_{x=0}^{x=2}\left(\frac{x+1}{x^2+2x+1}\right)\;dx
+            </me>
+            We can think back to what the <xref ref="thm-FTOC2" text="title"/> says about evaluating a definite integral. We need to do two things:
+            <ol>
+                <li>
+                    <p>
+                        Find an antiderivative of our function, <m>F(x)</m>. Any antiderivative will do, and we often pick the one where the constant term is 0.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Evaluate the antiderivative at the end points of the interval and subtract: <m>F(b)-F(a)</m>.
+                    </p>
+                </li>
+            </ol>
+            So for us to evaluate this definite integral, we can split the work into two parts.
+        </p>
+        <p>
+            <em>Part 1: Antidifferentiation.</em> We can think about the function <m>f(x) = \dfrac{x+1}{x^2+2x+1}</m> and find the family of antiderivatives. Then, we can disregard the constant term (by selecting the antiderivative where the constant is 0 for convenience).
+        </p>
+        <p>
+            So we'll use <m>u</m>-substitution on the integral <m>\displaystyle \int \left(\frac{x+1}{x^2+2x+1}\right)\;dx</m>. 
+        </p>
+        <p>
+            We can use <m>u=x^2+2x+1</m>, which gives us <m>du=(2x+2)\;dx</m> or <m>du=2(x+1)\;dx</m>.
+            <md>
+                <mrow>\int \left(\frac{x+1}{x^2+2x+1}\right)\;dx\amp = {\color{red}{\frac{1}{2}}}\int \left(\frac{{\color{red}{2}}(x+1)}{x^2+2x+1}\right)\;dx</mrow>
+                <mrow> \amp = \frac{1}{2}\int \frac{1}{u}\;du</mrow>
+                <mrow> \amp = \frac{1}{2}\ln|u|+C</mrow>
+                <mrow> \amp = \frac{1}{2}\ln|x^2+2x+1|+C</mrow>
+            </md>
+            So let's choose <m>F(x) = \frac{1}{2}\ln|x^2+2x+1|</m> as the antiderivative we'll use.
+        </p>
+        <p>
+            <em>Part 2: Evaluate at the End Points.</em> For the integral <m>\displaystyle \int_{x=0}^{x=2}\left(\frac{x+1}{x^2+2x+1}\right)\;dx</m>, our ending points are <m>x=2</m> and <m>x=0</m>, so let's evaluate!
+            <md>
+                <mrow>F(2) \amp = \frac{1}{2}\ln|(2)^2+2(2)+1|</mrow>
+                <mrow> \amp = \frac{1}{2}\ln(9)</mrow>
+                <mrow>F(0) \amp = \frac{1}{2}\ln|(0)^2+2(0)+1|</mrow>
+                <mrow> \amp = \frac{1}{2}\ln(1) = 0</mrow>
+                <mrow>F(2)-F(1) \amp = \frac{1}{2}\ln(9)-0</mrow>
+                <mrow> \amp = \frac{1}{2}\ln(9)</mrow>
+                <mrow> \amp = \ln(3)</mrow>
+            </md>
+        </p>
+        <p>
+            Great, so we have a way of evaluating this integral!
+            <me>
+                \int_{x=0}^{x=2}\left(\frac{x+1}{x^2+2x+1}\right)\;dx = \ln(3)
+            </me>
+        </p>
         <p>
             We can amend our picture from <xref ref="fig-uSub"/> to include definite integrals: in this case, we can evaluate the definite integral in either context, as long as we translate the limits of integration as well.
         </p>
