@@ -736,7 +736,7 @@ eBookConfig.enable_chatcodes =  false;
 \end{align*}
 </div></div></li>
 </ul></div></div></details></div></article></article><div class="para" id="subsec-UndoChainRule-9">Let’s try to explain a little bit of what is happening. This style of problem solving is really useful in mathematics, and shows up in many places.</div>
-<aside class="aside aside-like" id="subsec-UndoChainRule-10"><div class="para" id="subsec-UndoChainRule-10-1">The first time I saw <a href="sec-uSubstitution.html#fig-uSub" class="xref" data-knowl="./knowl/xref/fig-uSub.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.6.1">Figure 5.6.1</a> was in a Differential Equations class. We were learning about Laplace transformations, a technique that is very useful for solving a variety of problems. My professor was explaining why and how Laplace transformations were so powerful, and drew a version of the figure I’ve included to explain <span class="process-math">\(u\)</span>-substitution. It was so helpful for me to understand what was happening, but the most helpful thing was when the professor said, offhand, "But that’s exactly the same type of thing that <span class="process-math">\(u\)</span>-substitution does, too." So many things fell into place for me because of that comment! You are guaranteed to see different versions of this picture throughout this textbook, but you can also keep an eye out for this in different problem-solving techniques in mathematics.</div></aside><figure class="figure figure-like" id="fig-uSub"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/fig-uSub-2.svg" role="img" class="contained" alt=""></div>
+<aside class="aside aside-like" id="subsec-UndoChainRule-10"><div class="para" id="subsec-UndoChainRule-10-1">The first time I saw <a href="sec-uSubstitution.html#fig-uSub" class="xref" data-knowl="./knowl/xref/fig-uSub.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.6.1">Figure 5.6.1</a> was in a Differential Equations class. We were learning about Laplace transformations, a technique that is very useful for solving a variety of problems in the field of differential equations. My professor was explaining why and how Laplace transformations were so powerful, and drew a version of the figure I’ve included to explain <span class="process-math">\(u\)</span>-substitution. It was so helpful for me to understand what was happening, but the most helpful thing was when the professor said, offhand, "But that’s exactly the same type of thing that <span class="process-math">\(u\)</span>-substitution does, too." So many things fell into place for me because of that comment! You are guaranteed to see different versions of this picture throughout this textbook, but you can also keep an eye out for this in different problem-solving techniques in mathematics.</div></aside><figure class="figure figure-like" id="fig-uSub"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/fig-uSub-2.svg" role="img" class="contained" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.6.1<span class="period">.</span></span><span class="space"> </span>General idea of how a variable substitution in an integral works.</figcaption></figure><div class="para" id="subsec-UndoChainRule-12">Let’s explain what is happening in this picture. First, we typically are presented with integrals in some context. Our goal is to antidifferentiate. So for <span class="process-math">\(\displaystyle\int f(x)\;dx\text{,}\)</span> we hope to antidifferentiate and end up with <span class="process-math">\(F(x)+C\text{,}\)</span> the family of antiderivative of <span class="process-math">\(f(x)\text{.}\)</span> These two things (the indefinite integral and the family of antiderivatives) exist in the same context (since they’re defined with the same variable). We have spent some time moving directly from <span class="process-math">\(\displaystyle f(x)\;dx\)</span> to <span class="process-math">\(F(x)+C\text{.}\)</span> But now we’re seeing that this isn’t always as direct of a path as we might wish: some integrals are <em class="emphasis">hard</em>.</div>
 <div class="para" id="subsec-UndoChainRule-13">In this case, we can try to identify what the problem is (in this case, composition) and find some transformation to apply to our integral. We choose a variable substitution, and we translate our integral to a different context (in this case, by writing it in terms of a different variable). In order for us to do this, we ned to define some substitution <span class="process-math">\(u\text{,}\)</span> and then translate <span class="process-math">\(dx\)</span> into <span class="process-math">\(du\)</span> using the relationship <span class="process-math">\(du=u'\;dx\text{.}\)</span>
 </div>
@@ -747,10 +747,65 @@ eBookConfig.enable_chatcodes =  false;
 </div></aside><div class="para" id="subsec-UndoChainRule-18">Let’s practice this new strategy!</div></section><section class="subsection" id="subsec-uSubDefiniteIntegrals"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.6.2</span><span class="space"> </span><span class="title">Substitution for Definite Integrals</span>
 </h3>
-<div class="para" id="subsec-uSubDefiniteIntegrals-2">We can amend our picture from <a href="sec-uSubstitution.html#fig-uSub" class="xref" data-knowl="./knowl/xref/fig-uSub.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.6.1">Figure 5.6.1</a> to include definite integrals: in this case, we can evaluate the definite integral in either context, as long as we translate the limits of integration as well.</div>
+<div class="para logical" id="subsec-uSubDefiniteIntegrals-2">
+<div class="para">How would we evaluate the following definite integral?</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-FTOC2.html">
+\begin{equation*}
+\int_{x=0}^{x=2}\left(\frac{x+1}{x^2+2x+1}\right)\;dx
+\end{equation*}
+</div>
+<div class="para">We can think back to what the <a href="sec-FTOC.html#thm-FTOC2" class="xref" data-knowl="./knowl/xref/thm-FTOC2.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.4.4: Fundamental Theorem of Calculus (Part 2)">Fundamental Theorem of Calculus (Part 2)</a> says about evaluating a definite integral. We need to do two things:</div>
+<ol class="decimal" id="subsec-uSubDefiniteIntegrals-2-3">
+<li id="subsec-uSubDefiniteIntegrals-2-3-1"><div class="para" id="subsec-uSubDefiniteIntegrals-2-3-1-1">Find an antiderivative of our function, <span class="process-math">\(F(x)\text{.}\)</span> Any antiderivative will do, and we often pick the one where the constant term is 0.</div></li>
+<li id="subsec-uSubDefiniteIntegrals-2-3-2"><div class="para" id="subsec-uSubDefiniteIntegrals-2-3-2-1">Evaluate the antiderivative at the end points of the interval and subtract: <span class="process-math">\(F(b)-F(a)\text{.}\)</span>
+</div></li>
+</ol>
+<div class="para">So for us to evaluate this definite integral, we can split the work into two parts.</div>
+</div>
+<div class="para" id="subsec-uSubDefiniteIntegrals-3">
+<em class="emphasis">Part 1: Antidifferentiation.</em> We can think about the function <span class="process-math">\(f(x) = \dfrac{x+1}{x^2+2x+1}\)</span> and find the family of antiderivatives. Then, we can disregard the constant term (by selecting the antiderivative where the constant is 0 for convenience).</div>
+<div class="para" id="subsec-uSubDefiniteIntegrals-4">So we’ll use <span class="process-math">\(u\)</span>-substitution on the integral <span class="process-math">\(\displaystyle \int \left(\frac{x+1}{x^2+2x+1}\right)\;dx\text{.}\)</span>
+</div>
+<div class="para logical" id="subsec-uSubDefiniteIntegrals-5">
+<div class="para">We can use <span class="process-math">\(u=x^2+2x+1\text{,}\)</span> which gives us <span class="process-math">\(du=(2x+2)\;dx\)</span> or <span class="process-math">\(du=2(x+1)\;dx\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-uSubDefiniteIntegrals-5-4">
+\begin{align*}
+\int \left(\frac{x+1}{x^2+2x+1}\right)\;dx\amp = {\color{red}{\frac{1}{2}}}\int \left(\frac{{\color{red}{2}}(x+1)}{x^2+2x+1}\right)\;dx\\
+\amp = \frac{1}{2}\int \frac{1}{u}\;du\\
+\amp = \frac{1}{2}\ln|u|+C\\
+\amp = \frac{1}{2}\ln|x^2+2x+1|+C
+\end{align*}
+</div>
+<div class="para">So let’s choose <span class="process-math">\(F(x) = \frac{1}{2}\ln|x^2+2x+1|\)</span> as the antiderivative we’ll use.</div>
+</div>
+<div class="para logical" id="subsec-uSubDefiniteIntegrals-6">
+<div class="para">
+<em class="emphasis">Part 2: Evaluate at the End Points.</em> For the integral <span class="process-math">\(\displaystyle \int_{x=0}^{x=2}\left(\frac{x+1}{x^2+2x+1}\right)\;dx\text{,}\)</span> our ending points are <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=0\text{,}\)</span> so let’s evaluate!</div>
+<div class="displaymath process-math" id="subsec-uSubDefiniteIntegrals-6-5">
+\begin{align*}
+F(2) \amp = \frac{1}{2}\ln|(2)^2+2(2)+1|\\
+\amp = \frac{1}{2}\ln(9)\\
+F(0) \amp = \frac{1}{2}\ln|(0)^2+2(0)+1|\\
+\amp = \frac{1}{2}\ln(1) = 0\\
+F(2)-F(1) \amp = \frac{1}{2}\ln(9)-0\\
+\amp = \frac{1}{2}\ln(9)\\
+\amp = \ln(3)
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="subsec-uSubDefiniteIntegrals-7">
+<div class="para">Great, so we have a way of evaluating this integral!</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^{x=2}\left(\frac{x+1}{x^2+2x+1}\right)\;dx = \ln(3)
+\end{equation*}
+</div>
+</div>
+<div class="para" id="subsec-uSubDefiniteIntegrals-8">We can amend our picture from <a href="sec-uSubstitution.html#fig-uSub" class="xref" data-knowl="./knowl/xref/fig-uSub.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.6.1">Figure 5.6.1</a> to include definite integrals: in this case, we can evaluate the definite integral in either context, as long as we translate the limits of integration as well.</div>
 <figure class="figure figure-like" id="fig-uSubDefinite"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/fig-uSubDefinite-2.svg" role="img" class="contained" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.6.2<span class="period">.</span></span><span class="space"> </span>General idea of how a variable substitution in a definite integral works.</figcaption></figure><div class="para" id="subsec-uSubDefiniteIntegrals-4">To see a visualization of what is happening, we can look below: move the slider to see the continuous deformation of the integral as we apply the variable substitution:</div>
-<iframe id="subsec-uSubDefiniteIntegrals-5" width="540" height="810" src="subsec-uSubDefiniteIntegrals-5-if.html"></iframe><div class="para" id="subsec-uSubDefiniteIntegrals-6">Something we can say is that, since the area doesn’t change when we do a variable substitution, then area is <dfn class="terminology">invariant</dfn> under the transformation we’re applying with that variable substitution.</div></section><section class="subsection" id="subsec-MoreToTranslate"><h3 class="heading hide-type">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.6.2<span class="period">.</span></span><span class="space"> </span>General idea of how a variable substitution in a definite integral works.</figcaption></figure><div class="para" id="subsec-uSubDefiniteIntegrals-10">To see a visualization of what is happening, we can look below: move the slider to see the continuous deformation of the integral as we apply the variable substitution:</div>
+<iframe id="subsec-uSubDefiniteIntegrals-11" width="540" height="810" src="subsec-uSubDefiniteIntegrals-11-if.html"></iframe><div class="para" id="subsec-uSubDefiniteIntegrals-12">Something we can say is that, since the area doesn’t change when we do a variable substitution, then area is <dfn class="terminology">invariant</dfn> under the transformation we’re applying with that variable substitution.</div></section><section class="subsection" id="subsec-MoreToTranslate"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.6.3</span><span class="space"> </span><span class="title">More to Translate</span>
 </h3>
 <details id="subsec-MoreToTranslate-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
