@@ -1,0 +1,109 @@
+<activity xml:id="act-duFixes">
+    <title>Compare Two Integrals</title>
+    <introduction>
+        <p>
+            Let's compare two integrals, and use this to build a more general strategy for performing <m>u</m>-substitution.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Consider the following integral:
+                <me>
+                    \int -4x^3\sec^2(1-x^4)\;dx
+                </me>
+                Select and justify a choice for <m>u</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Where is the composition? Do you see a function-derivative pair?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Perform the <m>u</m>-substitution and antidifferentiate, and then substitute back to write your antiderivative in terms of <m>x</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                We'll let <m>u=1-x^4</m>, and so <m>du = -4x^3\;dx</m>.
+                <md>
+                    <mrow>\int -4x^3\sec^2(1-x^4)\;dx \amp = \int \sec^2(\underbrace{1-x^4}_{u})\underbrace{(-4x^3)\;dx}_{du} </mrow>
+                    <mrow> \amp = \int \sec^2(u)\;du</mrow>
+                    <mrow> \amp = \tan(u)+C</mrow>
+                    <mrow> \amp = \tan(1-x^4)+C</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Compare that integral to this one:
+                <me>
+                    \int x^3\sec^2(1-x^4)\;dx
+                </me>
+                What is different about this new integral? What has remained the same? How does that impact your choice for <m>u</m>, or <em>does</em> it impact your choice for <m>u</m>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Notice that nothing has changed about the "inside" function!
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Has that changed what <m>du</m> should be? 
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Remember that <m>du=u'\;dx</m>. If we didn't change our selection of <m>u</m>, then shouldn't <m>du</m> remain the same as well?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Ok so we've noticed an issue here. There are <em>plenty</em> of good ways of solving this problem, where <m>du</m> doesn't "show up" perfectly in our integral. In this case, we have that we're missing a necessary coefficient. We have the <m>x^3</m> part, but we are missing the <m>-4</m>.
+            </p>
+            <p>
+                Try to re-write our integral with a <m>-4</m> coefficient in there. We'll do that by multiplying the integrand function by <m>1</m>, disguised as <m>\frac{-4}{-4}</m> or <m>\left(-\frac{1}{4}\right)(-4)</m>.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <md>
+                    <mrow>\int x^3\sec^2(1-x^4)\;dx \amp = \int {\color{red}{\left(-\frac{1}{4}\right)(-4)}}x^3\sec^2(1-x^4)\;dx </mrow>
+                    <mrow> \amp = {\color{red}{-\frac{1}{4}}}\int {\color{red}{-4}}x^3\sec^2(1-x^4)\;dx</mrow>
+                </md>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now we can use the same <m>u</m>-substitution as before, and integrate in a similar way! Notice, though, that we will retain the coefficient of <m>-\frac{1}{4}</m>.
+            </p>
+            <p>
+                (This should be reasonable: our integral is <m>-\frac{1}{4}</m> of the original one, since our coefficient was <m>1</m> to the original's <m>-4</m>.)
+            </p>
+            <p>
+                Go ahead and integrate!
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>
+                    \int x^3\sec^2(1-x^4)\;dx = -\frac{1}{4}\tan(1-x^4)+C
+                </me>
+            </p>
+        </answer>
+    </task>
+
+</activity>
