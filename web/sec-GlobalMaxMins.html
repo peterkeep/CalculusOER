@@ -586,9 +586,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="thm-ExtremeValueTheorem-2-1">If <span class="process-math">\(f(x)\)</span> is a continuous function on a closed interval <span class="process-math">\([a,b]\)</span> then <span class="process-math">\(f\)</span> must have both a global maximum and a global minimum on the interval.</div></article><div class="para" id="subsec-BothMaxMins-3">The Extreme Value Theorem guarantees the existence of both the global maximums and minimums, but we actually get more than just this out of the Extreme Value Theorem. Once we <em class="emphasis">know</em> that both of the global maximums and minimums exist, we can find them pretty easily.</div>
 <div class="para" id="subsec-BothMaxMins-4">The global maximum of a function, if it exists for the function on the domain/interval, is just the local maximum with the largest <span class="process-math">\(y\)</span>-value. Similarly, the global minimum, if it exists, is the local minimum with the lowest <span class="process-math">\(y\)</span>-value.</div>
 <div class="para" id="subsec-BothMaxMins-5">So once we know they both exist for a function on an interval, we can simply collect the critical points of the function (including the ending points of the domain) and compare the <span class="process-math">\(y\)</span>-value function outputs!</div>
-<details id="subsec-BothMaxMins-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="subsec-BothMaxMins-6"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.3</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-BothMaxMins-6-1"><div class="para" id="subsec-BothMaxMins-6-1-1">Check to see if each function (on the stated domain) satisfies the conditions of the Extreme Value Theorem, and then find any global maximums/minimums of the function on the interval.</div></div>
+</h4>
+<div class="introduction" id="subsec-BothMaxMins-6-1"><div class="para" id="subsec-BothMaxMins-6-1-1">Check to see if each function (on the stated domain) satisfies the conditions of the Extreme Value Theorem, and then find any global maximums/minimums of the function on the interval.</div></div>
 <article class="task exercise-like" id="subsec-BothMaxMins-6-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="subsec-BothMaxMins-6-2-1-1">
 <span class="process-math">\(f(x)=\ln(x^2+4x+7)\)</span> on <span class="process-math">\([-1,3]\)</span>
@@ -598,7 +599,7 @@ eBookConfig.enable_chatcodes =  false;
 </div></article><article class="task exercise-like" id="subsec-BothMaxMins-6-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="subsec-BothMaxMins-6-4-1-1">
 <span class="process-math">\(j(x)=\sqrt[3]{x+4}\)</span> on <span class="process-math">\([-6, -1]\)</span>
-</div></article></article></details></section><section class="subsection" id="subsec-WhatAboutOpenIntervals"><h3 class="heading hide-type">
+</div></article></article></section><section class="subsection" id="subsec-WhatAboutOpenIntervals"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.2</span><span class="space"> </span><span class="title">What about Domains of Functions that Aren’t Closed?</span>
 </h3>
 <div class="para" id="subsec-WhatAboutOpenIntervals-2">Without the conditions that imply the Extreme Value Theorem, things become trickier. For instance, if the function is not continuous, then the function might have some unbounded behavior at a vertical asymptote. In this case, we might need to look at the one-sided limits around that asymptote, in order to see if our function tends towards positive or negative infinity on either side of the asymptote. This could tell us that the function doesn’t have a global maximum, a global minimum, or that it doesn’t have either.</div>
@@ -613,16 +614,17 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="thm-GlobalMaxMinOpenInterval-1-1">If <span class="process-math">\(f(x)\)</span> is a continuous function on some interval, and <span class="process-math">\(f\)</span> has only a single critical point (call it <span class="process-math">\((c,f(c))\)</span>) where the direction changes, then if that point is a local maximum of <span class="process-math">\(f\text{,}\)</span> then <span class="process-math">\(f(c)\)</span> is the global maximum. Similarly, if <span class="process-math">\((c,f(c))\)</span> is a local minimum, then <span class="process-math">\(f(c)\)</span> is the global minimum of <span class="process-math">\(f\text{.}\)</span>
 </div></article><div class="para" id="subsec-WhatAboutOpenIntervals-9">This is a great result to give us a path forward without having to check all of the edge cases and possibilities mentioned above. There are many functions that might have only a single critical point, or if it does have more than one critical point, only a single one of them acting as a local maximum/minimum.</div>
 <div class="para" id="subsec-WhatAboutOpenIntervals-10">Note here that we do need to classify the critical point as a local maximum or minimum! We’ll use the <a href="sec-IncreasingDecreasing.html#thm-FirstDerivativeTest" class="xref" data-knowl="./knowl/xref/thm-FirstDerivativeTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.2.6: First Derivative Test">First Derivative Test</a> or the <a href="sec-Concavity.html#thm-SecondDerivativeTest" class="xref" data-knowl="./knowl/xref/thm-SecondDerivativeTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.3.3: Second Derivative Test for Local Maximums or Local Minimums">Second Derivative Test for Local Maximums or Local Minimums</a> for this classification.</div>
-<details id="subsec-WhatAboutOpenIntervals-11" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="subsec-WhatAboutOpenIntervals-11"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.5</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-WhatAboutOpenIntervals-11-1"><div class="para" id="subsec-WhatAboutOpenIntervals-11-1-1">For each function, find any global maximums/minimums that may exist.</div></div>
+</h4>
+<div class="introduction" id="subsec-WhatAboutOpenIntervals-11-1"><div class="para" id="subsec-WhatAboutOpenIntervals-11-1-1">For each function, find any global maximums/minimums that may exist.</div></div>
 <article class="task exercise-like" id="subsec-WhatAboutOpenIntervals-11-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="subsec-WhatAboutOpenIntervals-11-2-1-1">
 <span class="process-math">\(f(x)=x\ln(x)-x\)</span> and note that the domain of this function is <span class="process-math">\((0,\infty)\)</span>
 </div></article><article class="task exercise-like" id="subsec-WhatAboutOpenIntervals-11-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="subsec-WhatAboutOpenIntervals-11-3-1-1">
 <span class="process-math">\(g(x)=xe^{-x}\)</span> and note that the domain of this function is <span class="process-math">\((-\infty, \infty)\text{.}\)</span>
-</div></article></article></details></section></section></div>
+</div></article></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-Concavity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Optimization.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

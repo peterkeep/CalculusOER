@@ -676,15 +676,16 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 </div> <div class="para" id="thm-LHopitalsRule-2-3">This is also true as <span class="process-math">\(x\to-\infty\text{.}\)</span>
-</div></article><details id="ex-FirstLHopitalsRule" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+</div></article><article class="example example-like" id="ex-FirstLHopitalsRule"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.7.2</span><span class="period">.</span><span class="space"> </span><span class="title">Some First Limits.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="ex-FirstLHopitalsRule-2"><div class="para" id="ex-FirstLHopitalsRule-2-1">Evaluate the following limits. You should first confirm that they are, actually, indeterminate forms!</div></div>
+</h4>
+<div class="introduction" id="ex-FirstLHopitalsRule-2"><div class="para" id="ex-FirstLHopitalsRule-2-1">Evaluate the following limits. You should first confirm that they are, actually, indeterminate forms!</div></div>
 <article class="task exercise-like" id="ex-FirstLHopitalsRule-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ex-FirstLHopitalsRule-3-1-1"><span class="process-math">\(\displaystyle \lim_{x\to 0}\left(\frac{\sin(x)}{x}\right)\)</span></div></article><article class="task exercise-like" id="ex-FirstLHopitalsRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-FirstLHopitalsRule-4-1-1"><span class="process-math">\(\displaystyle \lim_{x\to 5} \left(\frac{x^2-6x+5}{x-5}\right)\)</span></div></article><article class="task exercise-like" id="ex-FirstLHopitalsRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-FirstLHopitalsRule-5-1-1"><span class="process-math">\(\displaystyle \lim_{x\to 1}\left(\frac{\ln(x)}{x-1}\right)\)</span></div></article><article class="task exercise-like" id="ex-FirstLHopitalsRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-FirstLHopitalsRule-6-1-1"><span class="process-math">\(\displaystyle \lim_{x\to \infty} \left(\frac{x^2-6x+5}{x-5}\right)\)</span></div></article><article class="task exercise-like" id="ex-FirstLHopitalsRule-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="ex-FirstLHopitalsRule-7-1-1"><span class="process-math">\(\displaystyle \lim_{x\to \infty}\left(\frac{\ln(x)}{x-1}\right)\)</span></div></article></article></details><div class="para logical" id="subsec-LHopitalsRule-5">
+<div class="para" id="ex-FirstLHopitalsRule-7-1-1"><span class="process-math">\(\displaystyle \lim_{x\to \infty}\left(\frac{\ln(x)}{x-1}\right)\)</span></div></article></article><div class="para logical" id="subsec-LHopitalsRule-5">
 <div class="para">There are more indeterminate forms than these two! In each of the following cases, we mean that a limit with this form can take on different values (or not exist). Other indeterminate forms that we can consider include:</div>
 <ul class="disc" id="subsec-LHopitalsRule-5-1">
 <li id="subsec-LHopitalsRule-5-1-1"><div class="para" id="subsec-LHopitalsRule-5-1-1-1"><span class="process-math">\(\displaystyle f(x)\cdot g(x)\stackrel{?}{\to} 0\cdot \infty\)</span></div></li>
@@ -716,9 +717,10 @@ f(x)\cdot g(x) = \frac{g(x)}{1/f(x)}\text{.}
 </div>
 <div class="para">Our choice ends up being based on what is most helpful.</div>
 </div>
-<details id="ex-xlnx" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<article class="example example-like" id="ex-xlnx"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.7.3</span><span class="period">.</span>
-</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="ex-xlnx-1-1">
+</h5>
+<div class="para logical" id="ex-xlnx-1-1">
 <div class="para">Evaluate the limit:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -750,14 +752,15 @@ f(x)\cdot g(x) = \frac{g(x)}{1/f(x)}\text{.}
 <div class="para">So <span class="process-math">\(\displaystyle\lim_{x\to 0^+} x\ln(x)=0\text{.}\)</span>
 </div>
 </div></div></details>
-</div></article></details></section><section class="subsubsection" id="subsubsec-Differences"><h4 class="heading hide-type">
+</div></article></section><section class="subsubsection" id="subsubsec-Differences"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">4.7.3.2</span><span class="space"> </span><span class="title">Differences!</span>
 </h4>
 <div class="para" id="subsubsec-Differences-2">We can re-write <span class="process-math">\(f(x)-g(x)\)</span> as a product by factoring something out of the difference. Then, if the product is a <span class="process-math">\(0\cdot\infty\)</span> indeterminate form, we can divide by a reciprocal to turn it into a quotient.</div>
 <div class="para" id="subsubsec-Differences-3">Choosing what to factor out is sometimes very difficult. But we should note that this is the strategy we used to evaluate <a href="sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6: Polynomial End Behavior Limits">Polynomial End Behavior Limits</a>.</div>
-<details id="subsubsec-Differences-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<article class="example example-like" id="subsubsec-Differences-4"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.7.4</span><span class="period">.</span>
-</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="subsubsec-Differences-4-1-1">
+</h5>
+<div class="para logical" id="subsubsec-Differences-4-1-1">
 <div class="para">Evaluate the following limit:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -793,7 +796,7 @@ f(x)\cdot g(x) = \frac{g(x)}{1/f(x)}\text{.}
 \end{align*}
 </div>
 </div></div></details>
-</div></article></details></section><section class="subsubsection" id="subsubsec-Exponentials"><h4 class="heading hide-type">
+</div></article></section><section class="subsubsection" id="subsubsec-Exponentials"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">4.7.3.3</span><span class="space"> </span><span class="title">Exponentials!</span>
 </h4>
 <div class="para" id="subsubsec-Exponentials-2">We can think about how we approached these types of functions raised to functions when we learned about <a href="sec-LogarithmicDifferentiation.html" class="internal" title="Section 3.3: Logarithmic Differentiation">Logarithmic Differentiation</a>.</div>
@@ -807,9 +810,10 @@ f(x)^{g(x)} \amp = e^{\ln\left(f(x)^{g(x)}\right)}\\
 </div>
 <div class="para">When we think about limits, the continuity of the exponential function allows us to just focus on the limit of the exponent, <span class="process-math">\(g(x)\ln(f(x))\text{,}\)</span> which is likely an indeterminate form that we’ve seen!</div>
 </div>
-<details id="subsubsec-Exponentials-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<article class="example example-like" id="subsubsec-Exponentials-4"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.7.5</span><span class="period">.</span>
-</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="subsubsec-Exponentials-4-1-1">
+</h5>
+<div class="para logical" id="subsubsec-Exponentials-4-1-1">
 <div class="para">Evaluate the following limit:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -831,7 +835,7 @@ f(x)^{g(x)} \amp = e^{\ln\left(f(x)^{g(x)}\right)}\\
 <div class="para">So <span class="process-math">\(\displaystyle \lim_{x\to 0^+} x^x = 1\text{.}\)</span>
 </div>
 </div></div></details>
-</div></article></details></section></section></section></div>
+</div></article></section></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-LinearApproximation.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-AntiderivativesIntegrals.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
