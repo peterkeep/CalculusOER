@@ -1,0 +1,228 @@
+<activity xml:id="act-VolumeCan">
+    <title>Constructing a Can</title>
+    <introduction>
+        <p>
+           A typical can of pop is 355 ml, and has around 15 ml of headspace (air). This results in a can that can hold approximately 23 cubic inches of volume. 
+        </p>
+        <p>
+            Let's say we want to construct this can in the most efficient way, where we use the least amount of material. How could we do that? What are the dimensions of the can?
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                First, let's think of our can and try to translate this to some geometric shape with variable names. Collect as much information as we can about this setup! What is the shape? What are the names of the dimensions? 
+            </p>
+        </statement>
+        <solution>
+            <p>
+                Our can is probably a cylinder! For a cylinder, we can define it based on a radius and height, and we normally call them <m>r</m> and <m>h</m>. Both of these will be measured in inches.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the actual measurement that we are trying to optimize? Are we finding a maximum or a minimum?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                We're trying to minimize the amount of material used to create the can: this should match up with surface area!
+            </p>
+            <p>
+                The formula for the surface area of a cylinder is <m>A = 2\pi r^2 + 2\pi r h</m>.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What other information about the can do we know? How do we translate this into a constraint, or a connection between our variables?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                We're told that the volume is 23 cubic inches! The volume formula for a cylinder is <m>V=\pi r^2 h</m>, so we have a constraint:
+                <me>
+                    23=\pi r^2 h
+                </me>.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What kinds of values can our variables take on? Is there a smallest value for either? A largest? Are there other limitations to these?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                It's hopefully obvious that we need positive dimensions to make sense: we can't have a can with a negative radius or a negative height.
+            </p>
+            <p>
+                Notice, also, that neither dimension can be equal to <m>0</m>: if one of them were <m>0</m>, then the volume would also be <m>0</m>, which doesn't work with our constraint!
+            </p>
+            <p>
+                We can also notice that as one dimension gets close to 0, think about the radius for example, then the other dimension, the height in this case, would need to get <em>really</em> large to compensate and keep the volume fixed.
+            </p>
+            <p>
+                All of this to say that our intervals are:
+                <md>
+                    <mrow>r \amp \gt 0</mrow>
+                    <mrow>h \amp \gt 0</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now we need to set up a calculus statement. This part mostly relies on us finding a way to build a single-variable function defining the surface area. Build that function, and then write down the calculus statement.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Can you solve the constraint, <m>23=\pi r^2 h</m> for one of the variables? Can you then use that replace or substitute out one of the variables in our surface area formula to create a function, <m>A(h)</m> or <m>A(r)</m>?
+            </p>
+        </hint>
+        <solution>
+            <p>
+                We have two options here, depending on which variable you isolated in the constraint and then substituted. These are the two ways of isolating for a variable in the constraint:
+                <ol>
+                    <li>
+                        <p>
+                            <m>\displaystyle 23=\pi r^2 h \longrightarrow h = \frac{23}{\pi r^2}</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle 23 = \pi r^2 h \longrightarrow r = \sqrt[3]{\frac{23}{\pi h}}</m>
+                        </p>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <p>
+                            We want to find the minimum of <m>A(r) = 2\pi r + \dfrac{46}{r}</m> on <m>(0,\infty)</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We want to find the minimum of <m>A(h)=2\pi\sqrt[3]{\dfrac{23}{\pi h}} + \dfrac{46}{h}</m> on <m>(0,\infty)</m>
+                        </p>
+                    </li>
+                </ol>
+                Personally, I think the first option is probably easier to work with.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Do some calculus to find the global maximum or minimum, and solve the optimization problem.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Find a derivative, then find critical points, and test them using with the <xref ref="thm-FirstDerivativeTest" text="title"/> or the <xref ref="thm-SecondDerivativeTest" text="title"/>. Make sure you find the other dimension after you've confirmed that you found the minimum of the <m>A</m> function!
+            </p>
+        </hint>
+        <solution>
+            <p>
+                Let's look at the version with <m>A(r) = 2\pi r^2 + \dfrac{46}{r}</m> on <m>(0,\infty)</m>.
+                <md>
+                    <mrow>A'(r) \amp = 4\pi r - \frac{46}{r^2} </mrow>
+                    <mrow> \text{Solve } A'(r)\amp=0 </mrow>
+                    <mrow>0 \amp = 4\pi r - \frac{46}{r^2} </mrow>
+                    <mrow>\frac{46}{r^2} \amp= 4\pi r</mrow>
+                    <mrow>\frac{1}{r^2} \amp = \frac{2\pi r}{23} </mrow>
+                    <mrow>r^2 \amp = \frac{23}{2\pi r}</mrow>
+                    <mrow> r^3 \amp = \frac{23}{2\pi}</mrow>
+                    <mrow>r \amp = \sqrt[3]{\frac{23}{2\pi}} </mrow>
+                </md>
+                So we have a critical point on <m>A(r)</m> at <m>r=\sqrt[3]{\dfrac{23}{2\pi}}</m>. Now we need to test it to ensure that it is a minimum (since that's what we're trying to find). We have two options to do this: the First Derivative Test, or the Second Derivative Test.
+                <ol>
+                    <li>
+                        <p>
+                            <em>FDT:</em>
+                            <tabular>
+                                <col width="25%" top="medium" halign="center"/>
+                                <col width="25%" top="medium" halign="center"/>
+                                <col width="25%" top="medium" halign="center"/>
+                                <col width="25%" top="medium" halign="center"/>
+                                <row bottom="minor">
+                                    <cell><p><m>r</m></p></cell>
+                                    <cell><p><m>\left(0,\sqrt[3]{\frac{23}{2\pi}}\right)</m></p></cell>
+                                    <cell><p><m>\sqrt[3]{\frac{23}{2\pi}}</m></p></cell>
+                                    <cell><p><m>\left(\sqrt[3]{\frac{23}{2\pi}},\infty\right)</m></p></cell>
+                                </row>
+                                <row bottom="minor">
+                                    <cell><p><m>A'</m></p></cell>
+                                    <cell><p><m>\ominus</m></p></cell>
+                                    <cell><p><m>0</m></p></cell>
+                                    <cell><p><m>\oplus</m></p></cell>
+                                </row>
+                                <row>
+                                    <cell><p><m>A</m></p></cell>
+                                    <cell><p><m>\searrow</m></p></cell>
+                                    <cell><p></p></cell>
+                                    <cell><p><m>\nearrow</m></p></cell>
+                                </row>
+                                <row bottom="medium">
+                                    <cell></cell>
+                                    <cell><p>decreasing</p></cell>
+                                    <cell><p>local min</p></cell>
+                                    <cell><p>increasing</p></cell>
+                                </row>
+                            </tabular>
+                            Since this is the only turning point, then we know that there is a global minimum of <m>A</m> at <m>r=\sqrt[3]{\frac{23}{2\pi}}</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <em>SDT:</em>
+                            <me>
+                                A''(r) = 4\pi + \frac{92}{r^3}
+                            </me>
+                            Hang on one second: notice that no matter what, since <m>r\gt 0</m>, then we can see that <m>A''(r)\gt 0</m>. We don't even need to evaluate this second derivative at the critical point to know that the function is concave up here!
+                        </p>
+                        <p>
+                            So then we have to have a local minimum, and since it's the only turning point, a global minimum of <m>A</m> at <m>r=\sqrt[3]{\dfrac{23}{2\pi}}</m>.
+                        </p>
+                    </li>
+                </ol>
+                So we found our minimum! Now we just need to find the other dimension, <m>h</m>.
+                <md>
+                    <mrow>h \amp = \frac{23}{\pi r^2} \amp \text{This is the constraint.}</mrow>
+                    <mrow>h \amp = \frac{23}{\pi \left(\sqrt[3]{\frac{23}{2\pi}}\right)^2}</mrow>
+                    <mrow>h \amp = \left(\frac{23}{\pi}\right)\left(\frac{2\pi}{23}\right)^{2/3}</mrow>
+                    <mrow>h \amp =2^{2/3}\left(\frac{23}{\pi}\right)^{1/3}</mrow>
+                    <mrow>h \amp 2 \sqrt[3]{\frac{23}{2\pi}}</mrow>
+                </md>
+                This is a lot of algebra, when we could have just plopped these values into a calculator and noticed the same, interesting thing.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the relationship between <m>r</m> and <m>h</m>, here? How do they compare? What about the height and diameter of our can?
+            </p>
+            <p>
+                Is this relationship noticeable in a typical can of pop? 
+            </p>
+        </statement>
+        <hint>
+            <p>
+                The height is twice the radius, or the height is equal to the diameter!
+            </p>
+            <p>
+                We might call this a "square-cylinder", since the "width" and the height of the cylinder are equal.
+            </p>
+            <p>
+                Do you ever see "square-cylinder" cans?
+            </p>
+        </hint>
+    </task>
+</activity>
