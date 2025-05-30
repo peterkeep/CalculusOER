@@ -89,10 +89,10 @@
               <p>
                 <em>FDT:</em>
                 <tabular>
-                  <col width="25%" top="medium"/>
-                  <col width="25%" top="medium"/>
-                  <col width="25%" top="medium"/>
-                  <col width="25%" top="medium"/>
+                  <col width="25%" top="medium" halign="center"/>
+                  <col width="25%" top="medium" halign="center"/>
+                  <col width="25%" top="medium" halign="center"/>
+                  <col width="25%" top="medium" halign="center"/>
                   <row bottom="minor">
                     <cell><p><m>a</m></p></cell>
                     <cell><p><m>[0,7)</m></p></cell>
@@ -135,9 +135,9 @@
               <p>
                 <em>EVT:</em>
                 <tabular>
-                  <col width="33%" top="medium"/>
-                  <col width="33%" top="medium"/>
-                  <col width="33%" top="medium"/>
+                  <col width="33%" top="medium" halign="center"/>
+                  <col width="33%" top="medium" halign="center"/>
+                  <col width="33%" top="medium" halign="left"/>
                   <row bottom="minor">
                     <cell><p><m>a</m></p></cell>
                     <cell><p><m>P</m></p></cell>
