@@ -128,7 +128,9 @@
         <figure xml:id="fig-uSub">
             <caption>General idea of how a variable substitution in an integral works.</caption>
             <image width="80%">
-                <shortdescription></shortdescription>
+                <shortdescription>
+                    Two rectangles, one labeled "x Context" and the other, beside it, labeled "u Context." Inside the "x Context" rectangle is an integral of f(x) dx with an arrow pointing towards F(x)+C. Inside the "u Context" rectangle is an integral of g(u) du with an arrow pointing towards G(u)+C. There is an arrow connecting the integral of f(x) dx in the first rectangle to the integral of g(u) du labeled u = ... and du = u' dx. Then there is an arrow connecting G(u)+C to F(x)+C labeled u = ...
+                </shortdescription>
                 <latex-image>
                     \begin{tikzpicture}
                         \draw[DCgreen] (0,0) -- (0,5);
@@ -298,7 +300,9 @@
             <figure xml:id="fig-uSubDefinite">
                 <caption>General idea of how a variable substitution in a definite integral works.</caption>
                 <image width="80%">
-                    <shortdescription></shortdescription>
+                    <shortdescription>
+                        Two rectangles, one labeled "x Context" and the other, beside it, labeled "u Context." Inside the "x Context" rectangle is an integral from x=a to x=b of f(x) dx with an arrow pointing towards F(x)+C and then an arrow continuing to F(b)-F(a). Inside the "u Context" rectangle is an integral from u=c to u=d of g(u) du with an arrow pointing towards G(u)+C and then an arrow continuing to G(d)-G(c). There is an arrow connecting the integral of f(x) dx in the first rectangle to the integral of g(u) du labeled u = ... and du = u' dx. Then there is an arrow connecting G(u)+C to F(x)+C labeled u = ... Then there is a double-sided arrow connecting F(b)-F(a) and G(d)-G(c) labeled "equivalent."
+                    </shortdescription>
                     <latex-image>
                         \begin{tikzpicture}
                             \node[DCgreen] at (1.5, 5.3) [above] {\Large $x$ Context};
