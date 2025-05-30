@@ -750,7 +750,76 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="subsec-UndoChainRule-15">Once we have this antiderivative, we can translate that antiderivative family back to the original context (in this case, we write it in terms of <span class="process-math">\(x\)</span>). We do this by utilizing the same translation or substitution that we defined earlier: we have something defined to link <span class="process-math">\(u\)</span> and <span class="process-math">\(x\text{.}\)</span> We can notice that, since the object we’re translating is not an integral anymore, we do not have a differential to translate.</div>
 <div class="para" id="subsec-UndoChainRule-16">And there we have it: <span class="process-math">\(u\)</span>-substitution works by identifying a problem that makes our task hard, translating our object to a friendlier context based on what we know about our problem, solving the problem in this friendlier context, and then finally translating the solution back to our original context.</div>
 <aside class="aside aside-like" id="subsec-UndoChainRule-17"><div class="para" id="subsec-UndoChainRule-17-1">Doesn’t this feel like what we do with <a href="sec-LogarithmicDifferentiation.html" class="internal" title="Section 3.3: Logarithmic Differentiation">Logarithmic Differentiation</a>? Use logs to translate our function to a friendlier form, differentiate in the log-context, and then try to translate back by solving for <span class="process-math">\(y'\text{?}\)</span>
-</div></aside><div class="para" id="subsec-UndoChainRule-18">Let’s practice this new strategy!</div></section><section class="subsection" id="subsec-uSubDefiniteIntegrals"><h3 class="heading hide-type">
+</div></aside><div class="para" id="subsec-UndoChainRule-18">Let’s practice this new strategy!</div>
+<article class="activity project-like" id="act-duFixes"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.3</span><span class="period">.</span><span class="space"> </span><span class="title">Compare Two Integrals.</span>
+</h4>
+<div class="introduction" id="act-duFixes-2"><div class="para" id="act-duFixes-2-1">Let’s compare two integrals, and use this to build a more general strategy for performing <span class="process-math">\(u\)</span>-substitution.</div></div>
+<article class="task exercise-like" id="act-duFixes-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="act-duFixes-3-1-1">
+<div class="para">Consider the following integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int -4x^3\sec^2(1-x^4)\;dx
+\end{equation*}
+</div>
+<div class="para">Select and justify a choice for <span class="process-math">\(u\text{.}\)</span>
+</div>
+</div>
+<div class="solutions"><details id="act-duFixes-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-duFixes-3-2-1">Where is the composition? Do you see a function-derivative pair?</div></div></details></div></article><article class="task exercise-like" id="act-duFixes-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-duFixes-4-1-1">Perform the <span class="process-math">\(u\)</span>-substitution and antidifferentiate, and then substitute back to write your antiderivative in terms of <span class="process-math">\(x\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-duFixes-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-duFixes-4-2-1">
+<div class="para">We’ll let <span class="process-math">\(u=1-x^4\text{,}\)</span> and so <span class="process-math">\(du = -4x^3\;dx\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="act-duFixes-4-2-1-3">
+\begin{align*}
+\int -4x^3\sec^2(1-x^4)\;dx \amp = \int \sec^2(\underbrace{1-x^4}_{u})\underbrace{(-4x^3)\;dx}_{du} \\
+\amp = \int \sec^2(u)\;du\\
+\amp = \tan(u)+C\\
+\amp = \tan(1-x^4)+C
+\end{align*}
+</div>
+</div></div></details></div></article><article class="task exercise-like" id="act-duFixes-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="act-duFixes-5-1-1">
+<div class="para">Compare that integral to this one:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int x^3\sec^2(1-x^4)\;dx
+\end{equation*}
+</div>
+<div class="para">What is different about this new integral? What has remained the same? How does that impact your choice for <span class="process-math">\(u\text{,}\)</span> or <em class="emphasis">does</em> it impact your choice for <span class="process-math">\(u\text{?}\)</span>
+</div>
+</div>
+<div class="solutions"><details id="act-duFixes-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-duFixes-5-2-1">Notice that nothing has changed about the "inside" function!</div></div></details></div></article><article class="task exercise-like" id="act-duFixes-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-duFixes-6-1-1">Has that changed what <span class="process-math">\(du\)</span> should be?</div>
+<div class="solutions"><details id="act-duFixes-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-duFixes-6-2-1">Remember that <span class="process-math">\(du=u'\;dx\text{.}\)</span> If we didn’t change our selection of <span class="process-math">\(u\text{,}\)</span> then shouldn’t <span class="process-math">\(du\)</span> remain the same as well?</div></div></details></div></article><article class="task exercise-like" id="act-duFixes-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-duFixes-7-1-1">Ok so we’ve noticed an issue here. There are <em class="emphasis">plenty</em> of good ways of solving this problem, where <span class="process-math">\(du\)</span> doesn’t "show up" perfectly in our integral. In this case, we have that we’re missing a necessary coefficient. We have the <span class="process-math">\(x^3\)</span> part, but we are missing the <span class="process-math">\(-4\text{.}\)</span>
+</div> <div class="para" id="act-duFixes-7-1-2">Try to re-write our integral with a <span class="process-math">\(-4\)</span> coefficient in there. We’ll do that by multiplying the integrand function by <span class="process-math">\(1\text{,}\)</span> disguised as <span class="process-math">\(\frac{-4}{-4}\)</span> or <span class="process-math">\(\left(-\frac{1}{4}\right)(-4)\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-duFixes-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="act-duFixes-7-2-1"><div class="displaymath process-math" id="act-duFixes-7-2-1-1">
+\begin{align*}
+\int x^3\sec^2(1-x^4)\;dx \amp = \int {\color{red}{\left(-\frac{1}{4}\right)(-4)}}x^3\sec^2(1-x^4)\;dx \\
+\amp = {\color{red}{-\frac{1}{4}}}\int {\color{red}{-4}}x^3\sec^2(1-x^4)\;dx
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like" id="act-duFixes-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-duFixes-8-1-1">Now we can use the same <span class="process-math">\(u\)</span>-substitution as before, and integrate in a similar way! Notice, though, that we will retain the coefficient of <span class="process-math">\(-\frac{1}{4}\text{.}\)</span>
+</div> <div class="para" id="act-duFixes-8-1-2">(This should be reasonable: our integral is <span class="process-math">\(-\frac{1}{4}\)</span> of the original one, since our coefficient was <span class="process-math">\(1\)</span> to the original’s <span class="process-math">\(-4\text{.}\)</span>)</div> <div class="para" id="act-duFixes-8-1-3">Go ahead and integrate!</div>
+<div class="solutions"><details id="act-duFixes-8-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="act-duFixes-8-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\int x^3\sec^2(1-x^4)\;dx = -\frac{1}{4}\tan(1-x^4)+C
+\end{equation*}
+</div></div></div></details></div></article></article><div class="para" id="subsec-UndoChainRule-20">This gives us a general strategy that we can use: if we pick a <span class="process-math">\(u\)</span>-substitution, but we cannot find <span class="process-math">\(du\)</span> in our integral, we can try to manipulate the integrand function to find it! We normally do this by applying some operation and its inverse (like multiplying by <span class="process-math">\(-4\)</span> and dividing by it as well, as in <a href="sec-uSubstitution.html#act-duFixes" class="xref" data-knowl="./knowl/xref/act-duFixes.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.6.3: Compare Two Integrals">Activity 5.6.3</a>).</div>
+<article class="assemblage assemblage-like" id="strat-duFixes"><h4 class="heading"><span class="title">Fixing Coefficients for <span class="process-math">\(du\)</span>.</span></h4>
+<div class="para logical" id="strat-duFixes-2">
+<div class="para">If we choose to perform a <span class="process-math">\(u\)</span>-substitution in the integral <span class="process-math">\(\displaystyle \int f(x)\;dx\text{,}\)</span> but we require a coefficient <span class="process-math">\(k\)</span> in our definition of <span class="process-math">\(du\text{,}\)</span> we can "fix" the coefficient in our integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{k}\int kf(x)\;dx
+\end{equation*}
+</div>
+<div class="para">This strategy works well for coefficients, since we can factor out the <span class="process-math">\(\frac{1}{k}\)</span> from the integral.</div>
+</div></article></section><section class="subsection" id="subsec-uSubDefiniteIntegrals"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.6.2</span><span class="space"> </span><span class="title">Substitution for Definite Integrals</span>
 </h3>
 <section class="introduction" id="subsec-uSubDefiniteIntegrals-2"><div class="para logical" id="subsec-uSubDefiniteIntegrals-2-1">
@@ -845,15 +914,42 @@ F(2)-F(1) \amp = \frac{1}{2}\ln(9)-0\\
 <iframe id="subsec-uSubDefiniteIntegrals-5-4" width="540" height="810" src="subsec-uSubDefiniteIntegrals-5-4-if.html"></iframe><div class="para" id="subsec-uSubDefiniteIntegrals-5-5">Something we can say is that, since the area doesn’t change when we do a variable substitution, then area is <dfn class="terminology">invariant</dfn> under the transformation we’re applying with that variable substitution.</div></section></section><section class="subsection" id="subsec-MoreToTranslate"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.6.3</span><span class="space"> </span><span class="title">More to Translate</span>
 </h3>
-<details id="subsec-MoreToTranslate-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="para" id="subsec-MoreToTranslate-2">There are more little tricks and nuances that we can think about with <span class="process-math">\(u\)</span>-substitution: in general, this is an extremely flexible integration technique that we’ll use in a variety of ways. For now, let’s leave things off with one more interesting example.</div>
+<div class="para" id="subsec-MoreToTranslate-3">In this example, we’ll see a similar kind of issue to the one we saw in <a href="sec-uSubstitution.html#act-duFixes" class="xref" data-knowl="./knowl/xref/act-duFixes.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.6.3: Compare Two Integrals">Activity 5.6.3</a>: when we pick our substitution, there will be some issues "finding" <span class="process-math">\(du\text{.}\)</span>
+</div>
+<details id="subsec-MoreToTranslate-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.6.3</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-MoreToTranslate-2-1"><div class="para" id="subsec-MoreToTranslate-2-1-1">Integrate the following, making sure to translate the whole integrand function to be written in terms of <span class="process-math">\(u\text{.}\)</span>
-</div></div>
+</h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsec-MoreToTranslate-4-1"></div>
 <article class="task exercise-like" id="ex-uSubTurn"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="ex-uSubTurn-1-1"><span class="process-math">\(\displaystyle\int \left( \frac{x^3}{\sqrt{x^2+1}} \right)\;dx\)</span></div>
+<div class="para logical" id="ex-uSubTurn-1-1">
+<div class="para">Integrate the following, making sure to translate the whole integrand function to be written in terms of <span class="process-math">\(u\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \left( \frac{x^3}{\sqrt{x^2+1}} \right)\;dx
+\end{equation*}
+</div>
+</div>
 <div class="solutions">
-<details id="ex-uSubTurn-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-uSubTurn-2-1">We can write <span class="process-math">\(x^3\)</span> as <span class="process-math">\(x^2\cdot x\text{,}\)</span> or if you <em class="emphasis">really</em> want to, we can write it as <span class="process-math">\(\frac{1}{2}x^2\cdot(2x)\)</span>
-</div></div></details><details id="ex-uSubTurn-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="ex-uSubTurn-3-1"><div class="displaymath process-math" id="ex-uSubTurn-3-1-1">
+<details id="ex-uSubTurn-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-uSubTurn-2-1">First, notice that <span class="process-math">\(u=x^2+1\)</span> is a great choice: we really want to focus on that composition. If this is the case, though, then <span class="process-math">\(du=2x\;dx\text{.}\)</span>
+</div></div></details><details id="ex-uSubTurn-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-uSubTurn-3-1">We can write <span class="process-math">\(x^3\)</span> as <span class="process-math">\(x^2\cdot x\text{,}\)</span> or if you <em class="emphasis">really</em> want to, we can write it as <span class="process-math">\(\frac{1}{2}x^2\cdot(2x)\)</span>
+</div></div></details><details id="ex-uSubTurn-4" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="ex-uSubTurn-4-1">
+<div class="para">Our <span class="process-math">\(u\)</span>-substitution formula can be written in a whole bunch of different ways!</div>
+<div class="displaymath process-math" id="ex-uSubTurn-4-1-2">
+\begin{align*}
+u \amp =x^2+1\\
+x^2 \amp = u-1\\
+x \amp =\pm\sqrt{u-1}
+\end{align*}
+</div>
+<div class="para">These are all equivalent, but the first two might be the most helpful:</div>
+<ul class="disc" id="ex-uSubTurn-4-1-3">
+<li id="ex-uSubTurn-4-1-3-1"><div class="para" id="ex-uSubTurn-4-1-3-1-1">Anywhere in our integral that we can see an <span class="process-math">\(x^2+1\text{,}\)</span> we can replace that with <span class="process-math">\(u\text{.}\)</span>
+</div></li>
+<li id="ex-uSubTurn-4-1-3-2"><div class="para" id="ex-uSubTurn-4-1-3-2-1">We can also replace any <em class="emphasis">extra</em> <span class="process-math">\(x^2\)</span> pieces with <span class="process-math">\(u-1\text{!}\)</span>
+</div></li>
+</ul>
+</div></div></details><details id="ex-uSubTurn-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="ex-uSubTurn-5-1"><div class="displaymath process-math" id="ex-uSubTurn-5-1-1">
 \begin{align*}
 \int \left(\frac{x^3}{\sqrt{x^2+1}}\right)\;dx \amp u = x^2+1\\
 \amp du = 2x\;dx\\
@@ -865,7 +961,7 @@ F(2)-F(1) \amp = \frac{1}{2}\ln(9)-0\\
 \amp = \frac{(x^2+1)^{3/2}}{3} - \sqrt{x^2+1}+C
 \end{align*}
 </div></div></div></details>
-</div></article></article></details></section></section></div>
+</div></article></article></details></section><section class="conclusion" id="sec-uSubstitution-6"><div class="para" id="sec-uSubstitution-6-1">We’ll spend more time thinking about <span class="process-math">\(u\)</span>-substitution (as well as other variable substitutions) later on in <a href="ch-AntidifferentiationTechniques.html" class="internal" title="Chapter 7: Techniques for Antidifferentiation">Chapter 7</a>. For now, this is a good stopping point, and should give us enough of a handle on <span class="process-math">\(u\)</span>-substitution to integrate some difficult integrals!</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-MoreDefiniteIntegral.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-ApplicationIntegrals.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

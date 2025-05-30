@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="activity project-like"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.3</span><span class="period">.</span><span class="space"> </span><span class="title">Compare Two Integrals.</span>
+</h4>
+<div class="introduction"><div class="para">Let’s compare two integrals, and use this to build a more general strategy for performing <span class="process-math">\(u\)</span>-substitution.</div></div>
+<article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical">
+<div class="para">Consider the following integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int -4x^3\sec^2(1-x^4)\;dx
+\end{equation*}
+</div>
+<div class="para">Select and justify a choice for <span class="process-math">\(u\text{.}\)</span>
+</div>
+</div>
+<div class="solutions"><details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Where is the composition? Do you see a function-derivative pair?</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para">Perform the <span class="process-math">\(u\)</span>-substitution and antidifferentiate, and then substitute back to write your antiderivative in terms of <span class="process-math">\(x\text{.}\)</span>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">We’ll let <span class="process-math">\(u=1-x^4\text{,}\)</span> and so <span class="process-math">\(du = -4x^3\;dx\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\int -4x^3\sec^2(1-x^4)\;dx \amp = \int \sec^2(\underbrace{1-x^4}_{u})\underbrace{(-4x^3)\;dx}_{du} \\
+\amp = \int \sec^2(u)\;du\\
+\amp = \tan(u)+C\\
+\amp = \tan(1-x^4)+C
+\end{align*}
+</div>
+</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical">
+<div class="para">Compare that integral to this one:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int x^3\sec^2(1-x^4)\;dx
+\end{equation*}
+</div>
+<div class="para">What is different about this new integral? What has remained the same? How does that impact your choice for <span class="process-math">\(u\text{,}\)</span> or <em class="emphasis">does</em> it impact your choice for <span class="process-math">\(u\text{?}\)</span>
+</div>
+</div>
+<div class="solutions"><details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Notice that nothing has changed about the "inside" function!</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para">Has that changed what <span class="process-math">\(du\)</span> should be?</div>
+<div class="solutions"><details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Remember that <span class="process-math">\(du=u'\;dx\text{.}\)</span> If we didn’t change our selection of <span class="process-math">\(u\text{,}\)</span> then shouldn’t <span class="process-math">\(du\)</span> remain the same as well?</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para">Ok so we’ve noticed an issue here. There are <em class="emphasis">plenty</em> of good ways of solving this problem, where <span class="process-math">\(du\)</span> doesn’t "show up" perfectly in our integral. In this case, we have that we’re missing a necessary coefficient. We have the <span class="process-math">\(x^3\)</span> part, but we are missing the <span class="process-math">\(-4\text{.}\)</span>
+</div> <div class="para">Try to re-write our integral with a <span class="process-math">\(-4\)</span> coefficient in there. We’ll do that by multiplying the integrand function by <span class="process-math">\(1\text{,}\)</span> disguised as <span class="process-math">\(\frac{-4}{-4}\)</span> or <span class="process-math">\(\left(-\frac{1}{4}\right)(-4)\text{.}\)</span>
+</div>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+\int x^3\sec^2(1-x^4)\;dx \amp = \int {\color{red}{\left(-\frac{1}{4}\right)(-4)}}x^3\sec^2(1-x^4)\;dx \\
+\amp = {\color{red}{-\frac{1}{4}}}\int {\color{red}{-4}}x^3\sec^2(1-x^4)\;dx
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para">Now we can use the same <span class="process-math">\(u\)</span>-substitution as before, and integrate in a similar way! Notice, though, that we will retain the coefficient of <span class="process-math">\(-\frac{1}{4}\text{.}\)</span>
+</div> <div class="para">(This should be reasonable: our integral is <span class="process-math">\(-\frac{1}{4}\)</span> of the original one, since our coefficient was <span class="process-math">\(1\)</span> to the original’s <span class="process-math">\(-4\text{.}\)</span>)</div> <div class="para">Go ahead and integrate!</div>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\int x^3\sec^2(1-x^4)\;dx = -\frac{1}{4}\tan(1-x^4)+C
+\end{equation*}
+</div></div></div></details></div></article></article><span class="incontext"><a class="internal" href="sec-uSubstitution.html#act-duFixes">in-context</a></span>
+</body>
+</html>
