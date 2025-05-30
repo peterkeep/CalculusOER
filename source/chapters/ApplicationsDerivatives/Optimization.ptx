@@ -3,6 +3,276 @@
 <section xml:id="sec-Optimization" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Optimization</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      How do we use calculus to make decisions? If we're trying to find the best allocation of time between different tasks, or if we're trying to construct some object with limited resources, or if we're trying to find some other solution to the question, "How do we make the best/most/maximum/minimum of..." then we can think about translating these to a calculus context.
+    </p>
+    <p>
+      Optimization problems are some of the clearest application of calculus concepts to applied problems from any industry or field. While there certainly aren't teams of calculus experts in every office waiting for these kinds of problems to arrive, these problems are routinely solved using calculus, either done by computer software or coming from calculus experts who make sweeping recommendations across a whole field or some other source.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-OptimizationFramework">
+    <title>Optimization Framework</title>
+    <p>
+      We'll start this discussion with a small example. This is <em>not</em> an example that shows up in "real life," but will be helpful to build a strategy for approaching these problems. 
+    </p>
+    <p>
+      Here's our problem:
+    </p>
+    <example xml:id="ex-FirstOptimization">
+      <statement>
+        <p>
+          Find two numbers that add to get 14 but give the largest possible product.
+        </p>
+        <p>
+          That's it. That's the problem. It's not super interesting, right? Let's think about how we'll solve it.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, we want to think about our two numbers. We'll need variable names for these. You can use whatever letters you'd like here: I'm going to be boring and pick <m>a</m> and <m>b</m> as the names of my two numbers. What do we know about <m>a</m> and <m>b</m>?
+        </p>
+        <p>
+          The first thing that we know is that <m>a+b=14</m>. This isn't a huge amount of information, but it does provide us with a nice connection between our numbers. If we know what one number is, then we automatically know the second one: if one number is <m>4</m>, then the other number is whatever we need to add to <m>4</m> to get <m>14</m>.
+        </p>
+        <p>
+          We also know that we're interesting in the product: <m>P=ab</m>. We don't, currently, know anything about this product other than the fact that we want it to be large. Ok so automatically, we know that both <m>a</m> and <m>b</m> need to be positive: if we had one number that was positive (like <m>15</m>) and one number that was negative (like <m>-1</m>), then the product will be negative, and even though they add to <m>14</m>, we are <em>not</em> going to get a big product.
+        </p>
+        <p>
+          So we know that for both of these numbers <m>a,b\geq 0</m>.
+        </p>
+        <p>
+          This doesn't seem like a lot of information, but we can put it all together really nicely. For instance, I can manipulate the fact that these two numbers add to get <m>14</m> into an equation that tells me what the value of one number is based on the other:
+          <me>
+            a+b=14 \longrightarrow b=14-a
+          </me>.
+          I can also write my product as an actual function of a single variable:
+          <me>
+            P=ab \longrightarrow P(a)=a(\underbrace{14-a}_{b})
+          </me>.
+          Lastly, I actually know a domain for this function: we know that <m>a\geq 0</m>, but since <m>b\geq 0</m>, then <m>a\leq 14</m>. We <em>can't</em> have a number larger than <m>14</m>, since the other number would be negative.
+        </p>
+        <aside>
+          <p>
+            I just said that we <em>can't</em> have a negative product, but nothing in this problem says that. We just know that a negative product will be small. But we don't <em>have</em> to limit each number to be between 0 and 14. We could just allow them to be bigger than 14 (and thus also allowed to be smaller than 0) and we'll just get a bunch of negative products that aren't the maximum one. Oh well!
+          </p>
+          <p>
+            We are making a similar choice by <em>including</em> the pair <m>0</m> and <m>14</m> as a possibility. Do we <em>really</em> think that this could give us the biggest product? NO! The product is 0! But it's maybe convenient to have a closed interval as the domain of this function, so why not?
+          </p>
+          <p>
+            All along the way, we're making choices that guide how we think about this problem. In real life, we'll do the same thing. The only difference is that the choices that we make about what are reasonable values for our inputs to take on are more meaningful, since those inputs represent real things. We have to take these choices seriously.
+          </p>
+        </aside>
+        <p>
+          Ok, so we have a function representing the product, <m>P(a)=a(14-a)</m> and a domain for that function, <m>[0,14]</m>, and we know we want to find the maximum for it. This is a calculus problem that we can actually do! Take a moment to do it.
+        </p>
+      </solution>
+      <solution>
+        <p>
+          <md>
+            <mrow> P(a) \amp= 14a-a^2 </mrow>
+            <mrow>P'(a) \amp = 14-2a</mrow>
+          </md>
+          Now we can find the critical points.
+          <md>
+            <mrow>P'(a) \amp =0</mrow>
+            <mrow>14-2a \amp =0</mrow>
+            <mrow>-2a \amp = -14</mrow>
+            <mrow>a \amp 7</mrow>
+          </md>
+          We also know that the ending points at <m>a=0</m> and <m>a=14</m> are critical, since the derivative cannot exist.
+        </p>
+        <p> 
+          There is a point on the product function when <m>a=7</m> where we have a horizontal tangent line. Does this represent a maximum or a minimum? We have some options for how to do this:
+          <ol>
+            <li>
+              <p>
+                <em>FDT:</em>
+                <tabular>
+                  <col width="25%" top="medium"/>
+                  <col width="25%" top="medium"/>
+                  <col width="25%" top="medium"/>
+                  <col width="25%" top="medium"/>
+                  <row bottom="minor">
+                    <cell><p><m>a</m></p></cell>
+                    <cell><p><m>[0,7)</m></p></cell>
+                    <cell><p><m>7</m></p></cell>
+                    <cell><p><m>(7,14]</m></p></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell><p><m>P'</m></p></cell>
+                    <cell><p><m>\oplus</m></p></cell>
+                    <cell><p><m>0</m></p></cell>
+                    <cell><p><m>\ominus</m></p></cell>
+                  </row>
+                  <row>
+                    <cell><p><m>P</m></p></cell>
+                    <cell><p><m>\nearrow</m></p></cell>
+                    <cell><p><m>(7,49)</m></p></cell>
+                    <cell><p><m>\searrow</m></p></cell>
+                  </row>
+                  <row bottom="medium">
+                    <cell></cell>
+                    <cell><p>increasing</p></cell>
+                    <cell><p>local max</p></cell>
+                    <cell><p>decreasing</p></cell>
+                  </row>
+                </tabular>
+                Since this is the only turning point, it must be the global maximum!
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>SDT:</em>
+                <md>
+                  <mrow>P''(a) \amp = -2</mrow>
+                  <mrow>P''(7) \amp \lt 0 </mrow>
+                </md>
+                Since the function is concave down at this point, then we know that the function reaches a local maximum when <m>a=7</m>. Since this is the only turning point, it must be the global maximum!
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>EVT:</em>
+                <tabular>
+                  <col width="33%" top="medium"/>
+                  <col width="33%" top="medium"/>
+                  <col width="33%" top="medium"/>
+                  <row bottom="minor">
+                    <cell><p><m>a</m></p></cell>
+                    <cell><p><m>P</m></p></cell>
+                    <cell><p></p></cell>
+                  </row>
+                  <row>
+                    <cell><p><m>0</m></p></cell>
+                    <cell><p><m>0</m></p></cell>
+                    <cell><p>global minimum</p></cell>
+                  </row>
+                  <row>
+                    <cell><p><m>7</m></p></cell>
+                    <cell><p><m>49</m></p></cell>
+                    <cell><p>global maximum</p></cell>
+                  </row>
+                  <row bottom="medium">
+                    <cell><p><m>14</m></p></cell>
+                    <cell><p><m>0</m></p></cell>
+                    <cell><p>global minimum</p></cell>                  
+                  </row>
+                </tabular>
+              </p>
+            </li>
+          </ol>
+          However we do this, we find that there is a maximum product when <m>a=7</m>. What is the second number, <m>b</m>? Well we know that they add to 14, so:
+          <md>
+            <mrow> b=14-a \longrightarrow b \amp =14-7</mrow>
+            <mrow> \amp = 7</mrow>
+          </md>
+          So our two numbers are <m>7</m> and <m>7</m>, and they multiply to get <m>49</m>, the biggest possible product between two numbers that add to <m>14</m>.
+        </p>
+      </solution>
+    </example>
+    <p>
+      We have accomplished something, even if it's not much. Hurray, we solved a pretty unimportant problem about numbers!
+    </p>
+    <p>
+      More importantly, though, we set up a process for how we're going to approach optimization problems.
+    </p>
+    <assemblage xml:id="strat-Optimization">
+      <title>Optimization Process</title>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <em>Label variables.</em> What are the quantities that we care about? What are the kinds of measurements that we're given or need to find information about? Label them!
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Find a formula to optimize.</em> What are we trying to find the maximum or minimum of? Is it a formula that we might already know, or is there some other way of constructing that formula? This might involve drawing some geometric shape to get a clue!
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Find a constraint.</em> The <term>constraint</term> is really just some other connection between variables that guides their relationship. If we know some of the variables, there might be a way to find another one, since it would then depend on that variable.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Find some domains.</em> For your variables, what are the smallest and largest possible values that they can reasonably take on? Are there any? 
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Set up a calculus statement.</em> A <term>calculus statement</term> is a sentence that includes:
+              <ol>
+                <li>
+                  <p>
+                    A function you are optimizing. This should be a function with only one input, so we might need to use the constraint to re-write out formula from earlier in order for it to only have a single input variable.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    A domain for that function. This should be the interval you found earlier that is relevant for your choice of input variables.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Some indication of whether you're finding a maximum or a minimum.
+                  </p>
+                </li>
+              </ol>
+              An example of a calculus statement might be something like: "We want to find the <c>[maximum/minimum]</c> of <c>[function]</c> on <c>[domain]</c>."
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Do calculus.</em> We want to find a global maximum or a minimum of a function...we know how to do that! We'll find critical points, and then use the <xref ref="thm-FirstDerivativeTest" text="title"/>, the <xref ref="thm-SecondDerivativeTest" text="title"/>, or the <xref ref="thm-ExtremeValueTheorem" text="title"/> (and it's follow-up strategy) to find the global or absolute maximum/minimum!
+            </p>
+          </li>
+        </ol>
+      </p>
+    </assemblage>
+    <p>
+      In our example, we did the following:
+      <ol>
+        <li>
+          <p>
+            <em>Label variables.</em> Our two numbers were <m>a</m> and <m>b</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Find a formula to optimize.</em> We said that <m>P=ab</m> was the product.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Find a constraint.</em> We knew that <m>a+b=14</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Find some domains.</em> We reasoned that <m>0\leq a\leq 14</m> and <m>0\leq b \leq 14</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Set up a calculus statement.</em> We wanted to find the maximum of <m>P(a)=a(\underbrace{14-a}_{b})</m> on <m>[0,14]</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Do calculus.</em> We showed how we could use three different techniques to solve this.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-VolumeOfCan">
+    <title>Volume of a Can</title>
+    <p>
+      
+    </p>
+  </subsection>
 
 </section>
