@@ -136,7 +136,9 @@
         </p>
       </statement>
     </definition>
-    <xi:include href="./activities/act-GammaFunction.ptx" />
+    <p>
+      All we've done here is added some language: we'll say that an improper integral diverges if the limit doesn't exist. And if the limit exists, we'll say that the improper integral "converges to <fillin characters="5" />."
+    </p>
   </subsection>
   <xi:include href="./exercises/ex-ImproperIntegrals.ptx" />
 </section>
