@@ -11,7 +11,7 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="assemblage assemblage-like"><h3 class="heading"><span class="title">Evaluating Improper Integrals (Infinite Width).</span></h3>
+<article class="assemblage assemblage-like"><h4 class="heading"><span class="title">Evaluating Improper Integrals (Infinite Width).</span></h4>
 <div class="para logical">
 <div class="para">For a function <span class="process-math">\(f(x)\)</span> that is continuous on <span class="process-math">\([a,\infty)\text{,}\)</span> we can evaluate the improper integral <span class="process-math">\(\displaystyle\int_{x=a}^\infty f(x)\;dx\text{:}\)</span>
 </div>
@@ -31,12 +31,13 @@
 </div>
 </div>
 <div class="para logical">
-<div class="para">Finally, if <span class="process-math">\(f(x)\)</span> is continuous on <span class="process-math">\((-\infty,\infty)\)</span> and <span class="process-math">\(c\)</span> is some real number, then we can evaluate the improper integral <span class="process-math">\(\displaystyle\int_{-\infty}^{\infty}f(x)\;dx\text{:}\)</span>
+<div class="para">Finally, if <span class="process-math">\(f(x)\)</span> is continuous on <span class="process-math">\((-\infty,\infty)\)</span> and <span class="process-math">\(m\)</span> is some real number, then we can evaluate the improper integral <span class="process-math">\(\displaystyle\int_{-\infty}^{\infty}f(x)\;dx\text{:}\)</span>
 </div>
 <div class="displaymath process-math">
-\begin{equation*}
-\int_{-\infty}^{\infty}f(x)\;dx = \lim_{t\to -\infty} \int_{x=t}^{x=c} f(x)\;dx + \lim_{t\to\infty} \int_{x=c}^{x=t} f(x)\;dx\text{.}
-\end{equation*}
+\begin{align*}
+\int_{-\infty}^{\infty}f(x)\;dx \amp = \int_{-\infty}^{x=m} f(x)\;dx + \int_{x=m}^{\infty} f(x)\;dx\\
+\amp = \lim_{t\to -\infty} \int_{x=t}^{x=m} f(x)\;dx + \lim_{t\to\infty} \int_{x=m}^{x=t} f(x)\;dx 
+\end{align*}
 </div>
 </div></article><span class="incontext"><a class="internal" href="sec-ImproperIntegrals.html#strat-ImproperIntegralsWidth">in-context</a></span>
 </body>

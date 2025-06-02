@@ -97,14 +97,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.1';
+eBookConfig.runestone_version = '7.7.3';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.cf591bce111c14c1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.472f5a2f0bfe3571.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.107bf2d9be20d9c4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 </head>
 <body class="pretext book ignore-math">
@@ -314,6 +314,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Optimization.html#subsec-OptimizationFramework" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Optimization Framework</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Optimization.html#subsec-VolumeAndSurfaceArea" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Balancing Volume and Surface Area</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Optimization.html#subsec-MoreOptimizationExamples" class="internal"><span class="codenumber">4.5.3</span> <span class="title">What Other Examples Can We Do?</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -443,7 +444,12 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ImproperIntegrals.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Improper Integrals</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#ex-ImproperIntegrals" class="internal"><span class="codenumber">7.1</span> <span class="title">Practice Problems</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#subsec-ImproprtIntegrals" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Improprt Integrals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#subsec-ImproperIntegralStrategies" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Strategies for Evaluating Improper Integrals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#subsec-IntegralConvergence" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Convergence and Divergence of an Improper Integral</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#ex-ImproperIntegrals" class="internal"><span class="codenumber">7.1.4</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-MoreuSubstitution.html" class="internal"><span class="codenumber">7.2</span> <span class="title">More on <span class="process-math">\(u\)</span>-Substitution</span></a></div>
@@ -556,7 +562,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="app-limits.html" class="internal"><span class="codenumber">A</span> <span class="title">More on Limits</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="app-CarnationLetter.html" class="internal"><span class="codenumber">A</span> <span class="title">Carnation Letter</span></a></div></li>
 <li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
@@ -883,7 +889,18 @@ h \amp 2 \sqrt[3]{\frac{23}{2\pi}}
 <div class="para" id="act-VolumeCan-9-2-2">We might call this a "square-cylinder", since the "width" and the height of the cylinder are equal.</div>
 <div class="para" id="act-VolumeCan-9-2-3">Do you ever see "square-cylinder" cans?</div>
 </div></details></div></article></article><div class="para" id="subsec-VolumeAndSurfaceArea-4">So why, then, do we never see cans that look like this? It is certainly worth thinking about how the setup and assumptions we made in this activity might not be the way things work in real life.</div>
-<div class="para" id="subsec-VolumeAndSurfaceArea-5">What are some reasons that we might not see these dimensions in a can of pop?</div></section></section></div>
+<div class="para" id="subsec-VolumeAndSurfaceArea-5">What are some reasons that we might not see these dimensions in a can of pop?</div>
+<article class="note remark-like" id="subsec-VolumeAndSurfaceArea-6"><h4 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">4.5.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-VolumeAndSurfaceArea-6-1">This question (why do the dimensions of cans not match what we found as the optimal solution?) is interesting, and sometime in the in the 1980’s, a math professor felt strongly enough about it that they wrote a letter to Carnation, a brand of food products that produces canned goods, asking why reality doesn’t match mathematics.</div>
+<div class="para" id="subsec-VolumeAndSurfaceArea-6-2">The professor received a response from the Assistant Product Manager of Friskies Buffet with 5 reasons for the non-square dimensions. The full text of the letter can be found here: <a href="app-CarnationLetter.html" class="internal" title="Appendix A: Carnation Letter">Appendix A Carnation Letter</a>.</div></article></section><section class="subsection" id="subsec-MoreOptimizationExamples"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.5.3</span><span class="space"> </span><span class="title">What Other Examples Can We Do?</span>
+</h3>
+<div class="para" id="subsec-MoreOptimizationExamples-2">There’s a really important point to make from the <a href="app-CarnationLetter.html" class="internal" title="Appendix A: Carnation Letter">Carnation Letter</a>: in real life, our optimization problems are multi-variable problems. We’re balancing <em class="emphasis">many</em> different aspects of a process or a problem to find an optimal solution. That’s hard to do in a calculus course that focuses on single-variable functions!</div>
+<div class="para" id="subsec-MoreOptimizationExamples-3">So what kinds of problems can we actually do?</div>
+<div class="para" id="subsec-MoreOptimizationExamples-4">There are a bunch, but they don’t really stand up to intense scrutiny: if we looked carefully at most of the "classic" optimization problems that we see in calculus texts, they’d fall apart just like the optimal can problem from <a href="sec-Optimization.html#act-VolumeCan" class="xref" data-knowl="./knowl/xref/act-VolumeCan.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 4.5.1: Constructing a Can">Activity 4.5.1</a>.</div>
+<div class="para" id="subsec-MoreOptimizationExamples-5">That said, it’s good to practice thinking about using constraints and translating physical situations into formulas and functions, so try the practice problems to get used to this part of the optimization process!</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-GlobalMaxMins.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-LinearApproximation.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
