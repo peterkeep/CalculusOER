@@ -4,13 +4,21 @@
     <title>More on <m>u</m>-Substitution</title>
     <introduction>
         <p>
-            
+            We're going to do some more thinking about an integration topic that we've technically already introduced in <xref ref="sec-uSubstitution"/>. We're going to do a bit more with it now, and try to build some more flexibility, so definitely review that introduction section if you'd like!
         </p>
+        <p>
+            Before moving on, we should work through these few examples, just to make sure we remember what we're up to.
+        </p>
+        <xi:include href="./activities/act-uSubRecap.ptx" />
     </introduction>
     <subsection xml:id="subsec-VariableSubstitution">
         <title>Variable Substitution in Integrals</title>
         <p>
-            
+            In <m>u</m>-substitution, we focus a lot on one specific kind of structure: composition in our integrand function and/or some function-derivative pairing present. We do this because we're undo-ing the <xref ref="thm-ChainRule" text="title"/>. Variable substitutions can be much more general in their goal, but this is a good one to focus on because it solves a specific problem that we might run into while integrating.
         </p>
+        <p>
+            But we can use <m>u</m>-substitution more generally as a kind of grouping mechanism. 
+        </p>
+        <xi:include href="./activities/act-TurnAround.ptx" />
     </subsection>
 </section>

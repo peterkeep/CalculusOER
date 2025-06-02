@@ -1,0 +1,58 @@
+<activity xml:id="act-uSubRecap">
+    <title>Recapping <m>u</m>-Substitution</title>
+    <introduction>
+        <p>
+            We're going to consider a few integrals, and work through each of the questions for all integrals.
+            <ol>
+                <li>
+                    <p>
+                        <m>\displaystyle \int \left(\frac{1}{\sqrt{4-3x}}\right)\;dx</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\displaystyle \int x^2(5+x^3)^7\;dx</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\displaystyle \int \left(\frac{\sin(x)}{\cos(x)}\right)\;dx</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\displaystyle \int \left(xe^{-x^2}\right)\;dx</m>
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                For each integral, explain why <m>u</m>-substitution is a good choice. How can you tell, just by looking at the integral, that this strategy will be a reasonable thing to try?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For each integral, explain your choice of <m>u</m>, what that means for how we define <m>du</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For each integral, is your definition of <m>du</m> present in the integrand function? How do you go about making this substitution when the integrand function isn't set up perfectly?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Finish the substitution and integration, and substitute back to the original variable.
+            </p>
+        </statement>
+    </task>
+</activity>
