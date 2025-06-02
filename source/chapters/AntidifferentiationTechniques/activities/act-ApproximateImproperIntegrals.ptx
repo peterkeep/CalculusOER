@@ -1,0 +1,157 @@
+<activity xml:id="Act-ApproximateImproperIntegrals" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Approximating Improper Integrals</title>
+    <introduction>
+        <p>
+            In this activity, we're going to look at two improper integrals:
+            <ol>
+                <li>
+                    <p>
+                        <m>\displaystyle \int_{x=2}^{\infty} \frac{1}{(x+1)^2}\;dx</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\displaystyle \int_{x=-1}^{x=2} \frac{1}{(x+1)^2}\;dx</m>
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                First, let's just clarify to ourselves what it means for an integral to be improper. Why are each of these integrals improper? Be specific!
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's focus on <m>\displaystyle \int_{x=2}^{\infty} \frac{1}{(x+1)^2}\;dx</m> first. We're going to look at the slightly different integral:
+                <me>
+                    \int_{x=2}^{x=t} \frac{1}{(x+1)^2}\;dx
+                </me>.
+                As long as <m>t</m> is some real number with <m>t\gt 2</m>, then our function is continuous and bounded on <m>[2,t]</m>, and so we can evaluate this integral:
+                <me>
+                    \int_{x=2}^{x=t} \frac{1}{(x+1)^2}\;dx = F(t)-F(2)
+                </me>
+                where <m>F(x)</m> is an antiderivative of <m>f(x)=\dfrac{1}{(x+1)^2}</m>.
+            </p>
+            <p>
+                Find and antiderivative, <m>F(x)</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You'll need to use <m>u</m>-substitution, with <m>u=(x+1)</m> and <m>du=dx</m>.
+            </p>
+        </hint>
+        <hint>
+            <p>
+                You should be thinking about finding an antiderivative using an indefinite integral: <m>\displaystyle\int \frac{1}{u^2}\;du = \int u^{-2}\;du</m>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now we're going to evaluate some areas for different values of <m>t</m>. Use your antiderivative <m>F(x)</m> from above!
+                <ul>
+                    <li>
+                        <p>
+                            Let's start with making <m>t=99</m>. So we're going to evaluate:
+                            <me>
+                                \int_{x=2}^{x=99} \frac{1}{(x+1)^2}\;dx = F(99)-F(2)
+                            </me>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Now let <m>t=999</m>. Evaluate:
+                            <me>
+                                \int_{x=2}^{x=999} \frac{1}{(x+1)^2}\;dx = F(999)-F(2)
+                            </me>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Now let <m>t=9999</m>. Evaluate:
+                            <me>
+                                \int_{x=2}^{x=9999} \frac{1}{(x+1)^2}\;dx = F(9999)-F(2)
+                            </me>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Based on what you found, what do you <em>think</em> is happening when <m>t\to \infty</m> to the definite integral
+                <me>
+                    \int_{x=2}^{x=t} \frac{1}{(x+1)^2}\;dx = F(t)-F(2)
+                </me>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Ok, we're going to switch our focus to the other improper integral,<m>\displaystyle \int_{x=-1}^{x=2} \frac{1}{(x+1)^2}\;dx</m>. again, we'll look at a slightly different integral:
+                <me>
+                    \int_{x=t}^{x=2} \frac{1}{(x+1)^2}\;dx
+                </me>.
+                As long as <m>t</m> is some real number with <m>-1\lt t \lt 2</m>, then our function is continuous and bounded on <m>[t,2]</m>, and so we can evaluate this integral:
+                <me>
+                    \int_{x=t}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F(t)
+                </me>
+                where <m>F(x)</m> is an antiderivative of <m>f(x)=\dfrac{1}{(x+1)^2}</m>. We can just use the same antiderivative as before!
+            </p>
+            <p>
+                We're going to evaluate this intergal for different values of <m>t</m> again, but this time we'll use values that are close to <m>-1</m>, but slightly bigger, since we want to be in the interval <m>[-1,2]</m>.
+                <ul>
+                    <li>
+                        <p>
+                            Let's start with making <m>t=-\frac{9}{10}</m>. So we're going to evaluate:
+                            <me>
+                                \int_{x=-9/10}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F\left(-\frac{9}{10}\right)
+                            </me>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Now let <m>t=-\frac{99}{100}</m>. Evaluate:
+                            <me>
+                                \int_{x=-99/100}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F\left(-\frac{99}{100}\right)
+                            </me>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Now let <m>t=-\frac{999}{1000}</m>. Evaluate:
+                            <me>
+                                \int_{x=-999/1000}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F\left(-\frac{999}{1000}\right)
+                            </me>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Based on what you found, what do you <em>think</em> is happening when <m>t\to -1^+</m> to the definite integral
+                <me>
+                    \int_{x=t}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F(t)
+                </me>?
+            </p>
+        </statement>
+    </task>
+    <conclusion>
+        <p>
+            We can think about putting this a bit more generally into limit notation, but we'll get to this later.
+        </p>
+    </conclusion>
+</activity>

@@ -2,71 +2,138 @@
 
 <section xml:id="sec-ImproperIntegrals" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Improper Integrals</title>
-
-  <xi:include href="./activities/act-RememberingTheme.ptx" />
-
-  <xi:include href="./activities/act-RememberingFTOC.ptx" />
-
-  <definition xml:id="def-ImproperIntegral">
-    <title>Improper Integral</title>
-    <statement>
+  <introduction>
+    <p>
+      We're going to think a bit about integration with a twist: what happens when our "definite" integrals can't actually be evaluated? First, let's try to sink ourselves back into the context we've been in for a while now: what kinds of problems have we encountered so far, and how do we use our calculus intuition to get around those problems?
+    </p>
+    <xi:include href="./activities/act-RememberingTheme.ptx" />
+    <p> 
+      So moving forward, we want to remember how we typically have solved these problems. Now, let's try to identify the types of problems with integrals that we need to figure our way around.
+    </p>
+    <xi:include href="./activities/act-RememberingFTOC.ptx" />
+    <p>
+      This should build a pretty good idea of a new "class" of integrals: ones that aren't <em>quite</em> definite integrals that we can evaluate with the Fundamental Theorem of Calculus, but ones that we can use limits to get at.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-ImproprtIntegrals">
+    <title>Improprt Integrals</title>
+    <definition xml:id="def-ImproperIntegral">
+      <title>Improper Integral</title>
+      <statement>
+        <p>
+          An integral is an <term>improper integral</term> if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:
+          <ol>
+            <li>
+              <p>
+                The interval that we integrate the function over is unbounded in width, or infinitely wide.
+              </p>
+            </li>
+            <li>
+              <p>
+                The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over. 
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      With this definition, we can think about the strategies that we got from <xref ref="act-RememberingTheme"/>: we're going to identify the problems in our integral (infinite width of the interval or infinite height of the integrand function) and use a limit!
+    </p>
+    <p>
+      Before we formalize that, though, let's try to think about how this works by being really explicit about what this limit is actually doing.
+    </p>
+    <xi:include href="./activities/act-ApproximateImproperIntegrals.ptx" />
+    <p>
+      Ok, let's formalize these limits with some strategies for evaluating improper integrals!
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-ImproperIntegralStrategies">
+    <title>Strategies for Evaluating Improper Integrals</title>
+    <assemblage xml:id="strat-ImproperIntegralsWidth">
+      <title>Evaluating Improper Integrals (Infinite Width)</title>
       <p>
-        An integral is an <term>improper integral</term> if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:
-        <ol>
-          <li>
-            <p>
-              The interval that we integrate the function over is unbounded in width, or infinitely wide.
-            </p>
-          </li>
-          <li>
-            <p>
-              The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over. 
-            </p>
-          </li>
-        </ol>
+        For a function <m>f(x)</m> that is continuous on <m>[a,\infty)</m>, we can evaluate the improper integral <m>\displaystyle\int_{x=a}^\infty f(x)\;dx</m>:
+
+        <me>
+          \int_{x=a}^\infty f(x)\;dx = \lim_{t\to\infty} \int_{x=a}^{x=t} f(x)\;dx
+        </me>.
       </p>
-    </statement>
-  </definition>
+      <p>
+        If <m>f(x)</m> is continuous on <m>(-\infty,b]</m>, we can evaluate the improper integral <m>\displaystyle\int_{-\infty}^{x=b} f(x)\;dx</m>:
 
-  <assemblage xml:id="strat-ImproperIntegralsWidth">
-    <title>Evaluating Improper Integrals (Infinite Width)</title>
-    <p>
-      For a function <m>f(x)</m> that is continuous on <m>[a,\infty)</m>, we can evaluate the improper integral <m>\displaystyle\int_{x=a}^\infty f(x)\;dx</m>:
-
-      <me>
-        \int_{x=a}^\infty f(x)\;dx = \lim_{t\to\infty} \int_{x=a}^{x=t} f(x)\;dx
-      </me>.
-    </p>
-    <p>
-      If <m>f(x)</m> is continuous on <m>(-\infty,b]</m>, we can evaluate the improper integral <m>\displaystyle\int_{-\infty}^{x=b} f(x)\;dx</m>:
-
-      <me>
-        \int_{-\infty}^{x=b} f(x)\;dx = \lim_{t\to -\infty} \int_{x=t}^{x=b} f(x)\;dx
-      </me>.
-    </p>
-    <p>
-      Finally, if <m>f(x)</m> is continuous on <m>(-\infty,\infty)</m> and <m>c</m> is some real number, then we can evaluate the improper integral <m>\displaystyle\int_{-\infty}^{\infty}f(x)\;dx</m>:
-      <me>
-        \int_{-\infty}^{\infty}f(x)\;dx = \lim_{t\to -\infty} \int_{x=t}^{x=c} f(x)\;dx + \lim_{t\to\infty} \int_{x=c}^{x=t} f(x)\;dx
-      </me>.
-    </p>
-  </assemblage>
+        <me>
+          \int_{-\infty}^{x=b} f(x)\;dx = \lim_{t\to -\infty} \int_{x=t}^{x=b} f(x)\;dx
+        </me>.
+      </p>
+      <p>
+        Finally, if <m>f(x)</m> is continuous on <m>(-\infty,\infty)</m> and <m>m</m> is some real number, then we can evaluate the improper integral <m>\displaystyle\int_{-\infty}^{\infty}f(x)\;dx</m>:
+        <md>
+          <mrow>\int_{-\infty}^{\infty}f(x)\;dx \amp = \int_{-\infty}^{x=m} f(x)\;dx + \int_{x=m}^{\infty} f(x)\;dx</mrow>
+          <mrow> \amp = \lim_{t\to -\infty} \int_{x=t}^{x=m} f(x)\;dx + \lim_{t\to\infty} \int_{x=m}^{x=t} f(x)\;dx </mrow>
+        </md>
+      </p>
+    </assemblage>
+    <example>
+      <statement>
+        <p>
+          Evaluate the improper integral <m>\displaystyle \int_{x=2}^{\infty}\frac{1}{(x+1)^2}dx</m> by evaluating the limit:
+          <me>
+            \lim_{t\to\infty} \int_{x=2}^{x=t} \frac{1}{(x+1)^2}dx = \lim_{t\to\infty} \left(F(t)-F(2)\right)
+          </me>.
+          Try to interpret this limit. What does it mean if this limit doesn't exist? What does it mean if the limit does exist? What does the actual number represent?
+        </p>
+      </statement>
+    </example>
 
     <assemblage xml:id="strat-ImproperIntegralsHeight">
-    <title>Evaluating Improper Integrals (Infinite Height)</title>
-    <p>
-      For a function <m>f(x)</m> that has an unbounded discontinuity (a vertical asymptote) at <m>x=c</m>
-    </p>
-  </assemblage>
-
-
-    <definition xml:id="def-ConvergenceImproperIntegral">
-    <title>Convergence of an Improper Integral</title>
-    <statement>
+      <title>Evaluating Improper Integrals (Infinite Height)</title>
       <p>
-        We say that an improper integral <term>converges</term> if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral <term>diverges</term>.
+        For a function <m>f(x)</m> that has an unbounded discontinuity (a vertical asymptote) at <m>x=m</m> with <m>a\lt m\lt b</m>, but is otherwise continuous on <m>[a,b]</m>, then we can evaluate the improper integrals:
+        <md>
+          <mrow>\int_{x=m}^{x=b} f(x)\;dx \amp = \lim_{t\to m^+}\int_{x=t}^{x=b} f(x)\;dx </mrow>
+          <mrow>\int_{x=a}^{x=m} f(x)\;dx \amp = \lim_{t\to m^-} \int_{x=a}^{x=t} f(x)\;dx</mrow>
+          <mrow>\int_{x=a}^{x=b} f(x)\;dx \amp = \int_{x=a}^{x=m} f(x)\;dx + \int_{x=m}^{x=b} f(x)\;dx </mrow>
+          <mrow> \amp = \lim_{t\to m^-} \int_{x=a}^{x=t} f(x)\;dx + \lim_{t\to m^+}\int_{x=t}^{x=b} f(x)\;dx </mrow>
+        </md>
       </p>
-    </statement>
-  </definition>
+    </assemblage>
+    <example>
+      <statement>
+        <p>
+          Evaluate the improper integral <m>\displaystyle \int_{x=-1}^{x=2}\frac{1}{(x+1)^2}dx</m> by evaluating the limit:
+          <me>
+            \lim_{t\to -1^{+}} \int_{x=t}^{x=2} \frac{1}{(x+1)^2}dx = \lim_{t\to -1^+} \left(F(2)-F(t)\right)
+          </me>.
+          Try to interpret this limit. What does it mean if this limit doesn't exist? What does it mean if the limit does exist? What does the actual number represent?
+        </p>
+      </statement>
+    </example>
+    <p>
+      Ok, let's note that we can classify these improper integrals into two categories. We have already classified them based on the <em>reason</em> that they're improper. But now we can also classify them based on the outcome of the limit:
+      <ol>
+        <li>
+          <p>
+            Improper integrals (of any type) whose limit exists.
+          </p>
+        </li>
+        <li>
+          <p>
+            Improper integrals (of any type) where the limit doesn't exist.
+          </p>
+        </li>
+      </ol>
+      Let's define a term for this, so that our classification isn't so wordy.
+    </p>
+    <definition xml:id="def-ConvergenceImproperIntegral">
+      <title>Convergence of an Improper Integral</title>
+      <statement>
+        <p>
+          We say that an improper integral <term>converges</term> if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral <term>diverges</term>.
+        </p>
+      </statement>
+    </definition>
+    <xi:include href="./activities/act-GammaFunction.ptx" />
+  </subsection>
   <xi:include href="./exercises/ex-ImproperIntegrals.ptx" />
 </section>
