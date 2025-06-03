@@ -22,13 +22,14 @@
       </statement>
       <hint>
         <p>
-          Try to re-write this integral as <m>\int \frac{x}{x^2+1}\;dx</m>.
+          Try to re-write this integral by noticing that <m>x^{-1}=\dfrac{1}{x}</m>. Then try to make the resulting fraction a bit nicer to look at, since it has a fraction inside of the denominator of another fraction.
         </p>
       </hint>
       <solution>
         <p>
           <md>
-            <mrow>\int \frac{1}{x+x^{-1}}\;dx \amp= \int \frac{x}{x^2+1}\;dx </mrow>
+            <mrow>\int \frac{1}{x+x^{-1}}\;dx \amp = \int \frac{1}{x+\frac{1}{x}}\cdot\frac{x}{x}\;dx</mrow>
+            <mrow>\amp= \int \frac{x}{x^2+1}\;dx </mrow>
             <mrow> u=x^2+1\;\;\amp\;\;du=2x\;dx </mrow>
             <mrow>\int \frac{x}{x^2+1}\;dx \amp= \frac{1}{2}\int \frac{2x}{x^2+1}\;dx </mrow>
             <mrow> \amp = \frac{1}{2}\int \frac{1}{u}\;du</mrow>
@@ -46,6 +47,16 @@
       Strategies for antidifferentiating rational functions are just that: strategies. There isn't one consistent rule to use to antidifferentiate these (like there is with derivatives and the Quotient Rule), but we'll find some common tactics to apply and try to build our intuition for noticing the different kinds of structure we can have in these rational functions. All of these strategies are based around cleverly re-writing our rational functions (using some algebraic manipulations) to reveal some structure. We'll try to notice the structure, so that we know what we're trying to reveal.
     </p>
     <xi:include href="./activities/act-Division.ptx" />
+    <p>
+      This gives us a good approach for whenever division will help us rewrite our rational function as some polynomial and a remainder.
+    </p>
+    <p>
+      Let's look at two more rational functions: these ones won't be good candidates to use long division, but we'll try to build some intuition for why we will need to re-write one of them to get a substitution that works.
+    </p>
+    <xi:include href="./activities/act-LogVsInvTan.ptx" />
+    <p>
+      
+    </p>
     <assemblage xml:id="strat-RationalFunctions">
       <title>Integrating Rational Functions</title>
       <p>

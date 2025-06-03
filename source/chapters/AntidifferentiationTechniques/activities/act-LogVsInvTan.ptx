@@ -1,0 +1,95 @@
+<activity xml:id="act-LogsVsInvTan">
+    <title>Comparing Two Very Similar Integrals</title>
+    <introduction>
+        <p>
+           We're going to compare these two integrals:
+        </p>
+        <sidebyside>
+            <p>
+                <me>
+                    \int \frac{x+2}{x^2+4x+5}\;dx
+                </me>
+            </p>
+            <p>
+                <me>
+                    \int \frac{2}{x^2+4x+5}\;dx
+                </me> 
+            </p>
+        </sidebyside> 
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Describe why <m>u=x^2+4x+5</m> is such a useful choice for the first integral, but not for the second. How do the differences in these two integrals influence this substitution, even though the denominators are the same?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                If <m>u=x^2+4x+5</m>, then <m>du=(2x+4)\;dx</m> for both integrals. Why is this good for one integral but not the other?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Why would it be useful to have a <em>linear</em> substitution rule (instead of the <em>quadratic</em> one that we picked) for the second integral? Why would that match the structure of the numerator better?
+            </p>
+            <p>
+                Go ahead and integrate the first integral.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>u = x^2+4x+5\;\; \amp \;\; du=(2x+4)\;dx</mrow>
+                    <mrow>\int \frac{x+2}{x^2+4x+5}\;dx \amp </mrow>
+                    <mrow> \amp = \frac{1}{2}\int \frac{2(x+2)}{x^2+4x+5}\;dx</mrow>
+                    <mrow> \amp = \frac{1}{2} \int \frac{1}{u}\;du</mrow>
+                    <mrow> \amp = \frac{1}{2} \ln|u|+C</mrow>
+                    <mrow> \amp = \frac{1}{2}\ln|x^2+4x+5|+C</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                We're going to write the denominator, <m>x^2+4x+5</m> in a different way, in order to get a linear function composed into something familiar.
+            </p>
+            <p>
+                <term>Complete the square</term> for this polynomial: that is, find some linear factor <m>(x+k)</m> and a real number <m>b</m> such that <m>(x+h)^2+b = x^2+4x+3</m>. This should feel familiar, since we have already tried to force polynomials to factor cleverly in <xref ref="act-Division"/>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We want to find a constant term so that <m>(x+<fillin characters="2" />)^2</m> gives us <m>x^2+4x+<fillin characters="2" /></m>. Then we can compare the quadratic to <m>x^2+4x+5</m> to see how far off it is!
+            </p>
+        </hint>
+        <solution>
+            <p>
+                We can use <m>(x+2)^2</m> since <m>(x+2)^2=x^2+4x+4</m>. Then we can write:
+                <me>
+                    x^2+4x+5 = \overbrace{(x+2)^2}^{x^2+4x+4}+1
+                </me>.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                There is an intuitive substitution to pick, since we now have more obvious composition. Pick it. What kind of integral do we end up with and how do we antidifferentiate? Complete this problem!
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\int \frac{4}{x^2+4x+5}\;dx \amp = \int \frac{4}{(x+4)^2+1}\;dx</mrow>
+                    <mrow>u = x+4 \;\;\amp \;\;du=dx </mrow>
+                    <mrow>\int \frac{4}{(x+4)^2+1}\;dx \amp = \int \frac{4}{u^2+1}\;du</mrow>
+                    <mrow> \amp = 4\tan^{-1}(u)+C</mrow>
+                    <mrow> \amp =4\tan^{-1}(x+4)+C</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+</activity>
