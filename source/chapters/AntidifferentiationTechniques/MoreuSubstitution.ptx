@@ -47,7 +47,7 @@
                 </li>
             </ol>
         </p>
-        <example>
+        <example xml:id="ex-TurnAround">
             <statement>
                 <p>
                     Find the following indefinite integral:
@@ -67,10 +67,10 @@
                         <mrow>u=x-1 \amp \longrightarrow x=u+1</mrow>
                         <mrow>du \amp = dx  </mrow>
                         <mrow>\int \frac{x^2+3x-1}{x-1}\;dx\amp = \int \frac{(u+1)^2+3(u+1)-1}{u}\;du</mrow>
-                        <mrow> \amp = \int \frac{u^2+5u+4}{u}\;du</mrow>
-                        <mrow> \amp = \int u + 5 + \frac{4}{u}\;du</mrow>
-                        <mrow> \amp = \frac{u^2}{2}+5u+4\ln|u|+C</mrow>
-                        <mrow> \amp = \frac{(x-1)^2}{2}+5(x-1)+4\ln|x-1|+C</mrow>
+                        <mrow> \amp = \int \frac{u^2+5u+3}{u}\;du</mrow>
+                        <mrow> \amp = \int u + 5 + \frac{3}{u}\;du</mrow>
+                        <mrow> \amp = \frac{u^2}{2}+5u+3\ln|u|+C</mrow>
+                        <mrow> \amp = \frac{(x-1)^2}{2}+5(x-1)+3\ln|x-1|+C</mrow>
                     </md>
                     There are some ways of re-writing this antiderivative family: we could try to group up all of the constant terms by multiplying everything out. Feel free to do this, but it is completely unnecessary. 
                 </p>
