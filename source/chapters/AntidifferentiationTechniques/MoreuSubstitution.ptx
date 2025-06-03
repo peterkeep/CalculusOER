@@ -16,9 +16,86 @@
         <p>
             In <m>u</m>-substitution, we focus a lot on one specific kind of structure: composition in our integrand function and/or some function-derivative pairing present. We do this because we're undo-ing the <xref ref="thm-ChainRule" text="title"/>. Variable substitutions can be much more general in their goal, but this is a good one to focus on because it solves a specific problem that we might run into while integrating.
         </p>
+        <assemblage xml:id="strat-uSub">
+            <title>Strategy for <m>u</m>-Substitution</title>
+            <p>
+                <em>Goal:</em> undo the Chain Rule, or antidifferentiate functions with composition.
+            </p>
+            <p>
+                <em>Process:</em> We'll translate <m>\int f(x)\;dx</m> to <m>\int g(u)\;du</m> by labeling some "inside" function as <m>u</m>, and substituting its derivative, <m>du=u'\;dx</m>.
+            </p>
+        </assemblage>
         <p>
             But we can use <m>u</m>-substitution more generally as a kind of grouping mechanism. 
         </p>
         <xi:include href="./activities/act-TurnAround.ptx" />
+        <p>
+            In both of these examples, we got around not being able to multiply (using the distributive property) or divide (by splitting up our fraction into two with common denominators) by grouping some terms together with our substitution. Once we wrote <m>x+5</m> as <m>u</m> in both of these, we were able to distribute <m>u^{1/3}</m> across the two other terms, and we were able to divide <m>u-5</m> by <m>u</m> through splitting the single fraction into two fractions.
+        </p>
+        <p>
+            The term <term>turn-around</term> problem is a good one because we're <em>turning around</em> two things:
+            <ol>
+                <li>
+                    <p>
+                        The substitution itself, by solving for <m>u</m> instead of <m>x</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The structure of the integral, by grouping <m>x+5</m> into one term, <m>u</m> and expanding <m>x</m> into two terms, <m>u-5</m>. This allowed us to change how the algebra would work, making it much friendlier!
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <example>
+            <statement>
+                <p>
+                    Find the following indefinite integral:
+                    <me>
+                        \int \frac{x^2+3x-1}{x-1}\;dx
+                    </me>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Try letting <m>u=x-1</m> so that <m>du=dx</m>. Then we can say that <m>x=u+1</m>.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u=x-1 \amp \longrightarrow x=u+1</mrow>
+                        <mrow>du \amp = dx  </mrow>
+                        <mrow>\int \frac{x^2+3x-1}{x-1}\;dx\amp = \int \frac{(u+1)^2+3(u+1)-1}{u}\;du</mrow>
+                        <mrow> \amp = \int \frac{u^2+5u+4}{u}\;du</mrow>
+                        <mrow> \amp = \int u + 5 + \frac{4}{u}\;du</mrow>
+                        <mrow> \amp = \frac{u^2}{2}+5u+4\ln|u|+C</mrow>
+                        <mrow> \amp = \frac{(x-1)^2}{2}+5(x-1)+4\ln|x-1|+C</mrow>
+                    </md>
+                    There are some ways of re-writing this antiderivative family: we could try to group up all of the constant terms by multiplying everything out. Feel free to do this, but it is completely unnecessary. 
+                </p>
+            </solution>
+        </example>
+        <p>
+            This specific example is an interesting one, because we actually have a couple of different options with how we approach it. This is true in a lot of cases: there is very rarely only a single approach to an integral that will eventually work out. Sometimes there are approaches or more techniques that are more obvious to some people, and sometimes there are approaches that seem more easy/difficult for some people. But even still, we are often presented with many choices we could make in how we approach our integration.
+        </p>
+        <p>
+            Moving forward in this chapter, we'll present a whole host of strategies for how we might integrate different types of functions and how we might approach different structures that we see in the integrals we'll look at. We'll try to balance a difficult duality:
+            <ul>
+                <li>
+                    <p>
+                        There is rarely no single "right" way to do things! We can't summarize things with strongly worded rules like "if you function looks like this, then you have to do this to antidifferentiate."
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We would like to build some good intuition, and so having some tried-and-true strategies to fall back on will help! We can try to identify some intuitive strategies, even if they're not the only ones that will work.
+                    </p>
+                </li>
+            </ul>
+        </p>
+        <p>
+            All of this to simply say: we are going to present a lot of problems with a lot of solutions, and there simply isn't enough space to write out alternative approaches for each one. We will try to re-visit some integrals to think about alternative strategies when we are able to, though!
+        </p>
     </subsection>
 </section>

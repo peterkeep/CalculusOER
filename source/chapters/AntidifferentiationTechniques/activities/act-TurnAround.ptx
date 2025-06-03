@@ -24,7 +24,99 @@
     <task>
         <statement>
             <p>
-                
+                Identify <m>du</m> for your chosen <m>u</m>-substitution. When you substitute, you should notice that there are some extra bits in this integrand function that have not been assigned to be translated over to be written in terms of <m>u</m>. Which parts?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                If we let <m>u=x+5</m>, then <m>du=dx</m>.
+                <me>
+                    \int x\sqrt[3]{x+5}\;dx = \int {\color{red}{x}} \sqrt[3]{u}\;du
+                </me>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                We need to think about how to write <m>x</m> in terms of <m>u</m>. Luckily, we already have everything we need! We have defined a link between the <m>x</m> variable and the <m>u</m> variable. We defined it as <m>u</m> being written as some function of <m>x</m>, but can we "turn around" that link to write <m>x</m> in terms of <m>u</m>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We let <m>u=x+5</m>. Solve this for <m>x</m>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Substitute the integral to be fully written in terms of <m>u</m>. 
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>u = x+5 \amp \longrightarrow x=u-5</mrow>
+                    <mrow>du \amp = dx </mrow>
+                    <mrow> \int x\sqrt[3]{x+5}\;dx \amp = \int (u-5)\sqrt[3]{u}\;du</mrow>
+                    <mrow> \amp = \int (u-5)u^{1/3}\;du </mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Before antidifferentiating, compare this integral with the original one. Specifically thinking about how we might multiply, describe the differences between the integrals with regard to composition and re-writing our integrand.
+            </p>
+            <p>
+                Then, go ahead and use this nicely re-written version to antidifferentiate and substitute back to <m>x</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow> \int x\sqrt[3]{x+5}\;dx \amp = \int (u-5)u^{1/3}\;du</mrow>
+                    <mrow> \amp = \int u^{4/3}-5^{1/3}\;du</mrow>
+                    <mrow> \amp = \frac{3u^{7/3}}{7}-\frac{15u^{4/3}}{4}+C</mrow>
+                    <mrow> \amp = \frac{3(x+5)^{7/3}}{7}-\frac{15(x+5)^{4/3}}{4}+C</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Apply this same strategy to the following integral:
+                <me>
+                    \int \frac{x}{x+5}\;dx
+                </me>.
+                This integral might be a bit trickier to find the composition in order to identify the <m>u</m>-substitution! Give some things a try!
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>u = x+5 \amp \longrightarrow x=u-5</mrow>
+                    <mrow>du \amp = dx </mrow>
+                    <mrow> \int \frac{x}{x+5}\;dx \amp = \int \frac{u-5}{u}\;du</mrow>
+                    <mrow> \amp = \int \frac{u}{u}-\frac{5}{u}\;du </mrow>
+                    <mrow> \amp \int 1 - \frac{5}{u}\;du</mrow>
+                    <mrow> \amp = u-5\ln|u|+C</mrow>
+                    <mrow> \amp = (x+5) - 5\ln|x+5|+C</mrow>
+                </md>
+                Since this antiderivative has an extra constant (the <m>5</m> being added to <m>x</m>), we can write a smaller version of this by combining the <m>5</m> with the constant of integration:
+                <me>
+                     \int \frac{x}{x+5}\;dx = x-5\ln|x+5|+C
+                </me>.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Compare your integral in terms of <m>x</m> with the substituted version, in terms of <m>u</m>. Why was the second one so much easier to think about or re-write?
             </p>
         </statement>
     </task>
