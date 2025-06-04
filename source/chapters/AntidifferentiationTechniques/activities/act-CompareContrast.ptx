@@ -3,15 +3,24 @@
     <introduction>
         <p>
             Let's do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:
-            <md>
-                <mrow>\int \sin^4(x)\cos(x)\;dx \amp \amp\text{compared with} \amp \amp \int \sin^4(x)\cos^3(x)\;dx</mrow>
-            </md>
         </p>
+        <sidebyside>
+            <p>
+                <me>
+                    \int \sin^4(x)\cos(x)\;dx
+                </me>
+            </p>
+            <p>
+                <me>
+                    \int \sin^4(x)\cos^3(x)\;dx
+                </me>
+            </p>
+        </sidebyside>
     </introduction>
     <task>
         <statement>
             <p>
-                Consider the first integral, <m>\int \sin^4(x)\cos(x)\;dx</m>. Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.
+                Consider the first integral,<m>\displaystyle\int\sin^4(x)\cos(x)\;dx</m>. Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.
             </p>
         </statement>
         <hint>
@@ -23,7 +32,7 @@
     <task>
         <statement>
             <p>
-                Now consider the second integral, <m>\int \sin^4(x)\cos^3(x)\;dx</m>. Does the same integration strategy work here? What happens when you apply the same thing?
+                Now consider the second integral,<m>\displaystyle\int\sin^4(x)\cos^3(x)\;dx</m>. Does the same integration strategy work here? What happens when you apply the same thing?
             </p>
         </statement>
         <hint>
@@ -50,7 +59,7 @@
     <task>
         <statement>
             <p>
-                Why would this strategy not have worked if we were looking at the integrals <m>\int\sin^4(x)\cos^2(x)\;dx</m> or <m>\int \sin^4(x)\cos^4(x)\;dx</m>? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?
+                Why would this strategy not have worked if we were looking at the integrals <m>\int\sin^4(x)\cos^2(x)\;dx</m> or<m>\displaystyle\int\sin^4(x)\cos^4(x)\;dx</m>? What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?
             </p>
         </statement>
     </task>
