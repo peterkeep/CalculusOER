@@ -11,13 +11,59 @@
   <subsection xml:id="subsec-Rewriting">
     <title>Rewriting the Integrand</title>
     <p>
-      We're going to look at a few different examples or strategies that revolve around the same idea: we're going to reveal 
+      We're going to look at a few different examples or strategies that revolve around the same idea: we're going to reveal a reasonable function to antidifferentiate, whether its through finding a substitution or putting our function into some other recognizeable form.
+    </p>
+    <example>
+      <introduction>
+        <p>
+          For each of the following integrals, re-write the integrand function using some algebraic manipulation, trigonometric identity, or some other strategy. Then, once the integrand function is in a friendlier form, antidifferentiate.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int \tan^2(\theta)\;d\theta</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Can you think of a trigonometric identity that can help translate the squared tangent function into some other squared trigonometric function that we recognize as the derivative of something?
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle\int \left(\frac{x^2-9}{x+3}\right)\;dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Try some factoring! Can you factor and cancel?
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle\int\left(\frac{\sqrt{x}-4}{x^2}\right)\;dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Split this fraction into <m>\displaystyle\int \left(\frac{\sqrt{x}{x^2}} - \frac{4}{x^2}\right)\;dx</m>. Then, can you write these two terms as power functions?
+          </p>
+        </hint>
+      </task>
+    </example>
+    <p>
+      Let's look at one more type of example, just to re-iterate what we're thinking about with these re-written functions.
     </p>
     <xi:include href="./activities/act-NegativeExponent.ptx" />
     <example>
       <statement>
         <p>
-          <m>\displaystyle \int \frac{1}{x+x^{-1}}\;dx</m>
+          Re-write the integrand function for <m>\displaystyle \int \frac{1}{x+x^{-1}}\;dx</m>, and then integrate using an appropriate substitution.
         </p>
       </statement>
       <hint>
@@ -39,7 +85,9 @@
         </p>
       </solution>
     </example>
-
+    <p>
+      This last example is a good one to help us transition into thinking about a whole class of functions: rational functions! As a reminder, these are just polynomials divided by polynomials. 
+    </p>
   </subsection>
   <subsection xml:id="subsec-RationalFunctions">
     <title>Antidifferentiating Rational Functions</title>
@@ -55,16 +103,70 @@
     </p>
     <xi:include href="./activities/act-LogVsInvTan.ptx" />
     <p>
-      
+      Going forward, when you see a quadratic denominator in a rational function, what are some things you can think about and strategies you can use, based on what the rest of the function looks like? We want to summarize this a bit!
     </p>
     <assemblage xml:id="strat-RationalFunctions">
       <title>Integrating Rational Functions</title>
       <p>
-        
+        If <m>f(x)=\dfrac{p_n(x)}{p_m(x)}</m> where <m>p_n(x)</m> is a degree <m>n</m> polynomial and <m>p_m(x)</m> is a degree <m>m</m> polynomial, then we can think about how we might integrate <m>\displaystyle \int f(x)\;dx</m> based on degrees.
+        <ul>
+          <li>
+            <p>
+              If <m>n\geq m</m> (the degree in the numerator is at least the degree in the denominator), then we can use long division to write <m>f(x)</m> as some polynomial with degree <m>n-m</m> and some remainder.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>n=m-1</m> (the degree of the numerator is one less than the degree of the denominator), then we can try a <m>u</m>-substitution where <m>u=p_m(x)</m>, since the derivative of <m>p_m(x)</m> is a polynomial of degree <m>n</m>. If this substitution works, we can antidifferentiate to get some sort of logarithm.
+            </p>
+            <p>
+              This is not guaranteed to work, but for now (without other strategies), this is something we can think about.
+            </p>
+          </li>
+          <li>
+            <p>
+              If we can reduce <m>f(x)</m> (through some transformation or substitution) to a rational function that is a constant term divided by quadratic function (or if it already is), then we can complete the square in the denominator to get to a form that can be antidifferentiated to an inverse tangent function.
+            </p>
+          </li>
+        </ul>
       </p>
     </assemblage>
+    <p>
+      In the last point, we are referencing the strategy we found in <xref ref="act-LogVsInvTan"/>. We have a bit more of a general version of this strategy.
+    </p>
+    <theorem xml:id="thm-GeneralizedInvTan">
+      <title>Generalized Inverse Tangent Forms</title>
+      <statement>
+        <p>
+          <me>
+            \int \frac{1}{u^2+a^2}\;du = \frac{1}{a}\tan^{-1}\left(\frac{u}{a}\right)+C
+          </me>
+        </p>
+      </statement>
+      <proof>
+        <p>
+          This is really just based on a clever substitution. Once we see this specific constant over a sum of squares, we can factor out a convenient coefficient to force the denominator to look like a sum of something squared and 1.
+          <md>
+            <mrow>\int \frac{1}{u^2+a^2}\;du \amp= \frac{1}{a^2}\int \frac{1}{\frac{u^2}{a^2}+1} \;du</mrow>
+            <mrow> \amp = \frac{1}{a^2}\int \frac{1}{\left(\frac{u}{a}\right)^2+1}\;du</mrow>
+          </md>
+          Now we can let <m>w=\frac{u}{a}</m> and <m>dw=\frac{1}{a}\;du</m>.
+          <md>
+            <mrow> \frac{1}{a^2}\int \frac{1}{\left(\frac{u}{a}\right)^2+1}\;du \amp = \frac{1}{a}\int \frac{1}{\left(\frac{u}{a}\right)^2+1}\left(\frac{1}{a}\right)\;du</mrow>
+            <mrow> \amp =\frac{1}{a}\int \frac{1}{w^2+1}\;dw</mrow>
+            <mrow> \amp = \frac{1}{a}\tan^{-1}(w)+C</mrow>
+            <mrow> \amp = \frac{1}{a}\tan^{-1}\left(\frac{u}{a}\right)+C</mrow>
+          </md>
+          This strategy can also be used for other inverse trigonometric derivatives. But we will use the inverse tangent form most of all, and thus we want to outline it fully.
+        </p>
+      </proof>
+    </theorem>
   </subsection>
-
+  <conclusion>
+    <p>
+      We have much more to talk about with integration. From here, we can move on to more systematic strategies <mdash/> ones that have some goals based on familiar things like operations that we might notice or specific variable substitutions that can be useful.
+    </p>
+  </conclusion>
   <xi:include href="./exercises/ex-AlgebraicManipulations.ptx" />
 
 </section>
