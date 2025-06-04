@@ -573,7 +573,7 @@ eBookConfig.enable_chatcodes =  false;
 <section class="introduction" id="sec-PowersOfTrig-2"><div class="para" id="sec-PowersOfTrig-2-1">Let’s remind ourselves of two example problems that we’ve done in the past.</div>
 <div class="para" id="sec-PowersOfTrig-2-2">In <a href="sec-uSubstitution.html#ex-uSubTurn" class="xref" data-knowl="./knowl/xref/ex-uSubTurn.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.6.3">Example 5.6.3</a>, we performed a <span class="process-math">\(u\)</span>-substitution, but needed to work to re-write our whole integrand in terms of <span class="process-math">\(u\text{.}\)</span> Specifically, we found that in the numerator, there was an <span class="process-math">\(x^3\text{,}\)</span> but <span class="process-math">\(du=2x\;dx\text{.}\)</span> We were substituting out a linear function of <span class="process-math">\(x\)</span> in the numerator, but the actual function was cubic. This wasn’t a problem: we re-wrote <span class="process-math">\(x^3=x^2\cdot x\text{,}\)</span> and noticed that the extra <span class="process-math">\(x^2\)</span> was able to be substituted, since we could re-write out subsitution rule: we noted that <span class="process-math">\(u=x^2+1\)</span> is equivalent to <span class="process-math">\(x^2=u-1\text{.}\)</span> This meant that even though we had an extra factor of <span class="process-math">\(x^2\)</span> "in" the part that we were using for substituting in the differential <span class="process-math">\(du\text{,}\)</span> we were still able to translate the whole function to be written in terms of <span class="process-math">\(u\text{.}\)</span>
 </div>
-<div class="para" id="sec-PowersOfTrig-2-3">Then, more recently, in <a href="sec-IntegrationByParts.html#ex-sincos" class="xref" data-knowl="./knowl/xref/ex-sincos.html" data-reveal-label="Reveal" data-close-label="Close" title="Task 7.4.5.a">Task 7.4.5.a</a>, we noted that we could use a mix of methods to integrate this:</div>
+<div class="para" id="sec-PowersOfTrig-2-3">Then, more recently, in <a href="sec-IntegrationByParts.html#ex-sincos" class="xref" data-knowl="./knowl/xref/ex-sincos.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 7.4.5">Example 7.4.5</a>, we noted that we could use a mix of methods to integrate this:</div>
 <div class="para" id="sec-PowersOfTrig-2-4">One on hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that’s what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a <span class="process-math">\(u\)</span>-substitution was also appropriate.</div>
 <div class="para" id="sec-PowersOfTrig-2-5">In this section, we’ll explore more combinations of trigonometric functions and build a strategy for antidifferentiating them that includes some ideas from both of these previous examples.</div></section><section class="subsection" id="subsec-StrategySinesCosines"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.5.1</span><span class="space"> </span><span class="title">Building a Strategy for Powers of Sines and Cosines</span>
@@ -581,18 +581,25 @@ eBookConfig.enable_chatcodes =  false;
 <article class="activity project-like" id="act-CompareContrast"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">Compare and Contrast.</span>
 </h4>
-<div class="introduction" id="act-CompareContrast-2"><div class="para logical" id="act-CompareContrast-2-1">
-<div class="para">Let’s do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:</div>
-<div class="displaymath process-math" id="act-CompareContrast-2-1-1">
-\begin{align*}
-\int \sin^4(x)\cos(x)\;dx \amp \amp\text{compared with} \amp \amp \int \sin^4(x)\cos^3(x)\;dx
-\end{align*}
-</div>
+<div class="introduction" id="act-CompareContrast-2">
+<div class="para" id="act-CompareContrast-2-1">Let’s do a quick comparison of two integrals, keeping the above examples in mind. Consider these two integrals:</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="act-CompareContrast-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\int \sin^4(x)\cos(x)\;dx
+\end{equation*}
+</div></div></div>
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="act-CompareContrast-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\int \sin^4(x)\cos^3(x)\;dx
+\end{equation*}
+</div></div></div>
 </div></div>
+</div>
 <article class="task exercise-like" id="act-CompareContrast-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-CompareContrast-3-1-1">Consider the first integral, <span class="process-math">\(\int \sin^4(x)\cos(x)\;dx\text{.}\)</span> Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.</div>
+<div class="para" id="act-CompareContrast-3-1-1">Consider the first integral,<span class="process-math">\(\displaystyle\int\sin^4(x)\cos(x)\;dx\text{.}\)</span> Think about and set up a good technique for antidifferentiating. Without actually solving the integral, explain why this technique will work.</div>
 <div class="solutions"><details id="act-CompareContrast-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-CompareContrast-3-2-1">It might be helpful to notice that <span class="process-math">\(\sin^4(x)\)</span> can be re-written as <span class="process-math">\(\left(\sin(x)\right)^4\text{.}\)</span> Does this help reveal something important about the structure of this integrand?</div></div></details></div></article><article class="task exercise-like" id="act-CompareContrast-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-CompareContrast-4-1-1">Now consider the second integral, <span class="process-math">\(\int \sin^4(x)\cos^3(x)\;dx\text{.}\)</span> Does the same integration strategy work here? What happens when you apply the same thing?</div>
+<div class="para" id="act-CompareContrast-4-1-1">Now consider the second integral,<span class="process-math">\(\displaystyle\int\sin^4(x)\cos^3(x)\;dx\text{.}\)</span> Does the same integration strategy work here? What happens when you apply the same thing?</div>
 <div class="solutions"><details id="act-CompareContrast-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-CompareContrast-4-2-1">Let <span class="process-math">\(u=\sin(x)\)</span> again, and <span class="process-math">\(du=\cos(x)\;dx\text{.}\)</span> What happens with the cosine functions? How many are "left" after applying our substitution?</div></div></details></div></article><article class="task exercise-like" id="act-CompareContrast-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="act-CompareContrast-5-1-1">We know that <span class="process-math">\(\sin(x)\)</span> and <span class="process-math">\(\cos(x)\)</span> are related to each other through derivatives (each is the derivative of the other, up to a negative). Is there some other connection that we have between these functions? We might especially notice that we have a <span class="process-math">\(\cos^2(x)\)</span> left over in our integral. Can we write this in terms of <span class="process-math">\(\sin(x)\text{,}\)</span> so that we can write it in terms of <span class="process-math">\(u\text{?}\)</span>
 </div>
@@ -604,9 +611,9 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 </div></div></details></div></article><article class="task exercise-like" id="act-CompareContrast-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-CompareContrast-6-1-1">Why would this strategy not have worked if we were looking at the integrals <span class="process-math">\(\int\sin^4(x)\cos^2(x)\;dx\)</span> or <span class="process-math">\(\int \sin^4(x)\cos^4(x)\;dx\text{?}\)</span> What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?</div></article></article><article class="assemblage assemblage-like" id="strat-PowersSineCosine"><h4 class="heading"><span class="title">Integrating Powers of Sine and Cosine.</span></h4>
+<div class="para" id="act-CompareContrast-6-1-1">Why would this strategy not have worked if we were looking at the integrals <span class="process-math">\(\int\sin^4(x)\cos^2(x)\;dx\)</span> or<span class="process-math">\(\displaystyle\int\sin^4(x)\cos^4(x)\;dx\text{?}\)</span> What, specifically, did we need in order to use this combination of substitution and trigonometric identity to solve the integral?</div></article></article><article class="assemblage assemblage-like" id="strat-PowersSineCosine"><h4 class="heading"><span class="title">Integrating Powers of Sine and Cosine.</span></h4>
 <div class="para logical" id="strat-PowersSineCosine-2">
-<div class="para">For integrals in the form <span class="process-math">\(\int \sin^p(x)\cos^q(x)\;dx\)</span> where <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> are real number exponents:</div>
+<div class="para">For integrals in the form<span class="process-math">\(\displaystyle\int\sin^p(x)\cos^q(x)\;dx\)</span> where <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> are real number exponents:</div>
 <ul class="disc" id="strat-PowersSineCosine-2-4">
 <li id="strat-PowersSineCosine-2-4-1"><div class="para" id="strat-PowersSineCosine-2-4-1-1">If <span class="process-math">\(q\text{,}\)</span> the exponent on <span class="process-math">\(\cos(x)\)</span> is odd, we should use <span class="process-math">\(u=\sin(x)\)</span> and <span class="process-math">\(du=\cos(x)\;dx\text{.}\)</span> Then we can apply the Pythagorean Identity <span class="process-math">\(\cos^2(x)=1-\sin^2(x)\text{.}\)</span>
 </div></li>
@@ -649,8 +656,8 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="displaymath process-math" id="act-SecTan-3-1-1-7">
 \begin{align*}
-\frac{\sin^2(x)}{\blank{2cm}} + \frac{\cos^2(x)}{\blank{2cm}} \amp = \frac{1}{\blank{2cm}}\\
-\blank{3cm} + \blank{3cm} \amp = \blank{3cm} 
+\frac{\sin^2(x)}{\fillinmath{XXXXX}} + \frac{\cos^2(x)}{\fillinmath{XXXXX}} \amp = \frac{1}{\fillinmath{XXXXX}}\\
+\fillinmath{XXXXX} + \fillinmath{XXXXX} \amp = \fillinmath{XXXXX} 
 \end{align*}
 </div>
 </div>
@@ -687,10 +694,10 @@ eBookConfig.enable_chatcodes =  false;
 </div></article><article class="task exercise-like" id="act-SecTan-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="act-SecTan-6-1-1">For each of these integrals, why were the exponents set up <em class="emphasis">just right</em> for <span class="process-math">\(u\)</span>-substitution each time? How does the structure of the derivatives of each function play into this?</div>
 <div class="solutions"><details id="act-SecTan-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-SecTan-6-2-1">Notice we had an even exponent on the <span class="process-math">\(\sec(x)\)</span> function, but an odd exponent on the <span class="process-math">\(\tan(x)\)</span> function.</div></div></details></div></article><article class="task exercise-like" id="act-SecTan-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="act-SecTan-7-1-1">Which substitution would be best for the integral <span class="process-math">\(\int \sec^4(x)\tan^4(x)\;dx\text{.}\)</span> Why?</div></article><article class="task exercise-like" id="act-SecTan-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="act-SecTan-8-1-1">Which substitution would be best for the integral <span class="process-math">\(\int \sec^3(x)\tan^3(x)\;dx\text{.}\)</span> Why?</div></article></article><article class="assemblage assemblage-like" id="strat-PowersSecTan"><h4 class="heading"><span class="title">Integrating Powers of Secant and Tangent.</span></h4>
+<div class="para" id="act-SecTan-7-1-1">Which substitution would be best for the integral<span class="process-math">\(\displaystyle\int\sec^4(x)\tan^4(x)\;dx\text{.}\)</span> Why?</div></article><article class="task exercise-like" id="act-SecTan-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-SecTan-8-1-1">Which substitution would be best for the integral<span class="process-math">\(\displaystyle\int\sec^3(x)\tan^3(x)\;dx\text{.}\)</span> Why?</div></article></article><article class="assemblage assemblage-like" id="strat-PowersSecTan"><h4 class="heading"><span class="title">Integrating Powers of Secant and Tangent.</span></h4>
 <div class="para logical" id="strat-PowersSecTan-2">
-<div class="para">For integrals in the form <span class="process-math">\(\int \sec^p(x)\tan^q(x)\;dx\)</span> where <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> are real number exponents:</div>
+<div class="para">For integrals in the form<span class="process-math">\(\displaystyle\int\sec^p(x)\tan^q(x)\;dx\)</span> where <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> are real number exponents:</div>
 <ul class="disc" id="strat-PowersSecTan-2-4">
 <li id="strat-PowersSecTan-2-4-1"><div class="para" id="strat-PowersSecTan-2-4-1-1">If <span class="process-math">\(q\text{,}\)</span> the exponent on <span class="process-math">\(\tan(x)\text{,}\)</span> is odd, we can use <span class="process-math">\(u=\sec(x)\)</span> and <span class="process-math">\(du=\sec(x)\tan(x)\;dx\text{.}\)</span> Then we can apply the Pythagorean Identity <span class="process-math">\(\tan^2(x)=\sec^2(x)-1\text{.}\)</span>
 </div></li>

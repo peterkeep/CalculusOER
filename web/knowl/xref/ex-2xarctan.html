@@ -11,10 +11,47 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="task exercise-like"><h5 class="heading">
-<span class="type">Task</span><span class="space"> </span><span class="codenumber">7.4.1.b</span><span class="period">.</span>
-</h5>
-<div class="para"><span class="process-math">\(\int 2x\tan^{-1}(x)\;dx\)</span></div>
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.4.1</span><span class="period">.</span>
+</h4>
+<div class="introduction"><div class="para">Integrate the following:</div></div>
+<article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para"><span class="process-math">\(\displaystyle\int x^2 e^x\;dx\)</span></div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">It doesn’t matter whether we differentiate or antidifferentiate <span class="process-math">\(e^x\text{,}\)</span> since we’ll get the same thing. Let’s pick <span class="process-math">\(u=x^2\)</span> so that we can differentiate it.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ll}
+u = x^2 &amp; v = e^x\\
+du = 2x\; dx &amp; dv = e^x\;dx
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int x^2e^x\;dx = x^2e^x - \int 2xe^x \;dx
+\end{equation*}
+</div>
+<div class="para">We need to do more integration by parts!</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ll}
+u = 2x &amp; v = e^x\\
+du = 2\;dx &amp; dv = e^x\;dx
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\int x^2e^x\;dx &amp; = x^2e^x - \left(2xe^x - \int 2e^x\;dx\right)\\
+&amp; = x^2e^x-2xe^x+2e^x+C
+\end{aligned}
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para"><span class="process-math">\(\displaystyle \int 2x\tan^{-1}(x)\;dx\)</span></div>
 <div class="solutions">
 <details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">We don’t know how to antidifferentiate <span class="process-math">\(\tan^{-1}(x)\text{,}\)</span> but we do know how to differentiate it!</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
 <div class="displaymath process-math">
@@ -36,6 +73,6 @@ du = \frac{1}{x^2+1}\;dx &amp; dv = 2x\;dx
 \end{equation*}
 </div>
 </div></div></details>
-</div></article><span class="incontext"><a class="internal" href="sec-IntegrationByParts.html#ex-2xarctan">in-context</a></span>
+</div></article></article><span class="incontext"><a class="internal" href="sec-IntegrationByParts.html#ex-2xarctan">in-context</a></span>
 </body>
 </html>

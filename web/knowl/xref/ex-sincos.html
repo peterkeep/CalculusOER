@@ -11,10 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="task exercise-like"><h5 class="heading">
-<span class="type">Task</span><span class="space"> </span><span class="codenumber">7.4.5.a</span><span class="period">.</span>
-</h5>
-<div class="para"><span class="process-math">\(\int \sin(x)\cos(x)\;dx\)</span></div>
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.4.5</span><span class="period">.</span>
+</h4>
+<div class="introduction"><div class="para">For each of the following integrals, use integration by parts to solve.</div></div>
+<article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para"><span class="process-math">\(\displaystyle \int \sin(x)\cos(x)\;dx\)</span></div>
 <div class="solutions">
 <details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">This one is pretty straight forward, since it doesn’t really matter what we select as our parts. Notice, though, that this isn’t the only way we can approach this! We can use <span class="process-math">\(u\)</span>-substitution, or even re-write this using a trigonometric identity.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
 <div class="displaymath process-math">
@@ -35,6 +37,42 @@ du = \cos(x)\;dx &amp; dv = \cos(x)\;dx
 \end{equation*}
 </div>
 </div></div></details>
-</div></article><span class="incontext"><a class="internal" href="sec-IntegrationByParts.html#ex-sincos">in-context</a></span>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para"><span class="process-math">\(\displaystyle \int e^x\cos(x)\;dx\)</span></div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ll}
+u = e^x &amp; v = \sin(x)\\
+du = e^x\;dx &amp; dv = \cos(x)\;dx
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\int e^x\cos(x)\;dx &amp; = e^x\sin(x) - \int e^x\sin(x)\;dx
+\end{aligned}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ll}
+u = e^x &amp; v = -\cos(x)\\
+du = e^x\;dx &amp; dv = \sin(x)\;dx
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\int e^x\cos(x)\;dx &amp; = e^x\sin(x) - \int e^x\sin(x)\;dx\\
+\int e^x\cos(x)\;dx &amp; = e^x\sin(x) + e^x\cos(x) - \int e^x\cos(x)\;dx\\
+2\int e^x\cos(x)\;dx &amp; = e^x\sin(x) + e^x\cos(x)\\
+\int e^x\cos(x)\;dx &amp; = \frac{e^x\sin(x) + e^x\cos(x)}{2}+C
+\end{aligned}
+\end{equation*}
+</div>
+</div></div></details></div></article></article><span class="incontext"><a class="internal" href="sec-IntegrationByParts.html#ex-sincos">in-context</a></span>
 </body>
 </html>
