@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Manipulating Integrands to Reveal Substitution</title>
+<title>Manipulating Integrands</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -456,7 +456,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreuSubstitution.html#subsec-VariableSubstitution" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Variable Substitution in Integrals</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section contains-active">
-<div class="toc-title-box"><a href="sec-AlgebraicManipulations.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Manipulating Integrands to Reveal Substitution</span></a></div>
+<div class="toc-title-box"><a href="sec-AlgebraicManipulations.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Manipulating Integrands</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-Rewriting" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Rewriting the Integrand</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-RationalFunctions" class="internal"><span class="codenumber">7.3.2</span> <span class="title">Antidifferentiating Rational Functions</span></a></div></li>
@@ -568,11 +568,23 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-AlgebraicManipulations"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">7.3</span><span class="space"> </span><span class="title">Manipulating Integrands to Reveal Substitution</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">7.3</span><span class="space"> </span><span class="title">Manipulating Integrands</span>
 </h2>
 <section class="introduction" id="sec-AlgebraicManipulations-2"><div class="para" id="sec-AlgebraicManipulations-2-1">We’ve looked at how to use a variable substitution to antidifferentiate composite functions. We’ve already seen, though, that sometimes identifying and actually using a helpful substitution can be difficult to do. In this section, we want to introduce some different strategies for noticing and setting up useful substitutions in some specific instances.</div></section><section class="subsection" id="subsec-Rewriting"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.3.1</span><span class="space"> </span><span class="title">Rewriting the Integrand</span>
 </h3>
+<div class="para" id="subsec-Rewriting-2">We’re going to look at a few different examples or strategies that revolve around the same idea: we’re going to reveal a reasonable function to antidifferentiate, whether its through finding a substitution or putting our function into some other recognizeable form.</div>
+<article class="example example-like" id="subsec-Rewriting-3"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.1</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="subsec-Rewriting-3-1"><div class="para" id="subsec-Rewriting-3-1-1">For each of the following integrals, re-write the integrand function using some algebraic manipulation, trigonometric identity, or some other strategy. Then, once the integrand function is in a friendlier form, antidifferentiate.</div></div>
+<article class="task exercise-like" id="subsec-Rewriting-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-Rewriting-3-2-1-1"><span class="process-math">\(\displaystyle \int \tan^2(\theta)\;d\theta\)</span></div>
+<div class="solutions"><details id="subsec-Rewriting-3-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-Rewriting-3-2-2-1">Can you think of a trigonometric identity that can help translate the squared tangent function into some other squared trigonometric function that we recognize as the derivative of something?</div></div></details></div></article><article class="task exercise-like" id="subsec-Rewriting-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-Rewriting-3-3-1-1"><span class="process-math">\(\displaystyle\int \left(\frac{x^2-9}{x+3}\right)\;dx\)</span></div>
+<div class="solutions"><details id="subsec-Rewriting-3-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-Rewriting-3-3-2-1">Try some factoring! Can you factor and cancel?</div></div></details></div></article><article class="task exercise-like" id="subsec-Rewriting-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-Rewriting-3-4-1-1"><span class="process-math">\(\displaystyle\int\left(\frac{\sqrt{x}-4}{x^2}\right)\;dx\)</span></div>
+<div class="solutions"><details id="subsec-Rewriting-3-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-Rewriting-3-4-2-1">Split this fraction into <span class="process-math">\(\displaystyle\int \left(\frac{\sqrt{x}{x^2}} - \frac{4}{x^2}\right)\;dx\text{.}\)</span> Then, can you write these two terms as power functions?</div></div></details></div></article></article><div class="para" id="subsec-Rewriting-4">Let’s look at one more type of example, just to re-iterate what we’re thinking about with these re-written functions.</div>
 <article class="activity project-like" id="act-NegativeExponent"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">A Negative Exponent.</span>
 </h4>
@@ -608,16 +620,15 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div></div></details>
 </div></article><article class="task exercise-like" id="act-NegativeExponent-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-NegativeExponent-6-1-1">Why is this new integral set up so much better for the purpose of <span class="process-math">\(u\)</span>-substitution? How could we tell this just by looking at the initial integral?</div></article></article><article class="example example-like" id="subsec-Rewriting-3"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.1</span><span class="period">.</span>
+<div class="para" id="act-NegativeExponent-6-1-1">Why is this new integral set up so much better for the purpose of <span class="process-math">\(u\)</span>-substitution? How could we tell this just by looking at the initial integral?</div></article></article><article class="example example-like" id="subsec-Rewriting-6"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.2</span><span class="period">.</span>
 </h4>
-<article class="task exercise-like" id="subsec-Rewriting-3-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="subsec-Rewriting-3-1-1-1"><span class="process-math">\(\int \frac{1}{x+x^{-1}}\;dx\)</span></div>
+<div class="para" id="subsec-Rewriting-6-1-1">Re-write the integrand function for <span class="process-math">\(\displaystyle \int \frac{1}{x+x^{-1}}\;dx\text{,}\)</span> and then integrate using an appropriate substitution.</div>
 <div class="solutions">
-<details id="subsec-Rewriting-3-1-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-Rewriting-3-1-2-1">Try to re-write this integral as <span class="process-math">\(\int \frac{x}{x^2+1}\;dx\text{.}\)</span>
-</div></div></details><details id="subsec-Rewriting-3-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-Rewriting-3-1-3-1"><div class="displaymath process-math" id="subsec-Rewriting-3-1-3-1-1">
+<details id="subsec-Rewriting-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-Rewriting-6-2-1">Try to re-write this integral by noticing that <span class="process-math">\(x^{-1}=\dfrac{1}{x}\text{.}\)</span> Then try to make the resulting fraction a bit nicer to look at, since it has a fraction inside of the denominator of another fraction.</div></div></details><details id="subsec-Rewriting-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-Rewriting-6-3-1"><div class="displaymath process-math" id="subsec-Rewriting-6-3-1-1">
 \begin{align*}
-\int \frac{1}{x+x^{-1}}\;dx \amp= \int \frac{x}{x^2+1}\;dx \\
+\int \frac{1}{x+x^{-1}}\;dx \amp = \int \frac{1}{x+\frac{1}{x}}\cdot\frac{x}{x}\;dx\\
+\amp= \int \frac{x}{x^2+1}\;dx \\
 u=x^2+1\;\;\amp\;\;du=2x\;dx \\
 \int \frac{x}{x^2+1}\;dx \amp= \frac{1}{2}\int \frac{2x}{x^2+1}\;dx \\
 \amp = \frac{1}{2}\int \frac{1}{u}\;du\\
@@ -625,12 +636,256 @@ u=x^2+1\;\;\amp\;\;du=2x\;dx \\
 \amp \frac{1}{2}\ln(x^2+1)+C
 \end{align*}
 </div></div></div></details>
-</div></article></article></section><section class="subsection" id="subsec-RationalFunctions"><h3 class="heading hide-type">
+</div></article><div class="para" id="subsec-Rewriting-7">This last example is a good one to help us transition into thinking about a whole class of functions: rational functions! As a reminder, these are just polynomials divided by polynomials.</div></section><section class="subsection" id="subsec-RationalFunctions"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.3.2</span><span class="space"> </span><span class="title">Antidifferentiating Rational Functions</span>
 </h3>
-<div class="para" id="subsec-RationalFunctions-2">Strategies for antidifferentiating rational functions are just that: strategies. There aren’t really easy ways to antidifferentiate these, but we’ll find some common tactics to apply and try to build our intuition for noticing the different kinds of structure we can have in these rational functions. All of these strategies are based around cleverly re-writing our rational functions (using some algebraic manipulations) to reveal some structure. We’ll try to notice the structure, so that we know what we’re trying to reveal.</div>
+<div class="para" id="subsec-RationalFunctions-2">Strategies for antidifferentiating rational functions are just that: strategies. There isn’t one consistent rule to use to antidifferentiate these (like there is with derivatives and the Quotient Rule), but we’ll find some common tactics to apply and try to build our intuition for noticing the different kinds of structure we can have in these rational functions. All of these strategies are based around cleverly re-writing our rational functions (using some algebraic manipulations) to reveal some structure. We’ll try to notice the structure, so that we know what we’re trying to reveal.</div>
+<article class="activity project-like" id="act-Division"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Integrating a Rational Function Three Ways.</span>
+</h4>
+<div class="introduction" id="act-Division-2"><div class="para logical" id="act-Division-2-1">
+<div class="para">We’re going to think about the integral:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-TurnAround.html">
+\begin{equation*}
+\int \left( \frac{x^2+3x-1}{x-1}\right)\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">Let’s find 3 different ways of integrating this. This is kind of misleading, since we’re actually going to look at 2, since we’ve already used <span class="process-math">\(u\)</span>-substitution to integrate this in <a href="sec-MoreuSubstitution.html#ex-TurnAround" class="xref" data-knowl="./knowl/xref/ex-TurnAround.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 7.2.1">Example 7.2.1</a>.</div>
+</div></div>
+<article class="task exercise-like" id="act-Division-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="act-Division-3-1-1">
+<div class="para">Let’s just notice some things about this rational function.</div>
+<ul class="disc" id="act-Division-3-1-1-1">
+<li id="act-Division-3-1-1-1-1"><div class="para" id="act-Division-3-1-1-1-1-1">Are there any vertical asymptotes? How do you know where to find them?</div></li>
+<li id="act-Division-3-1-1-1-2"><div class="para" id="act-Division-3-1-1-1-2-1">Are there any horizontal asymptotes? How do you know that there <em class="emphasis">aren’t</em>?</div></li>
+<li id="act-Division-3-1-1-1-3"><div class="para" id="act-Division-3-1-1-1-3-1">When you zoom really far out on the graph of this function, it looks like a different kind of function. What kind of function? Why is that?</div></li>
+</ul>
+</div>
+<div class="solutions"><details id="act-Division-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-Division-3-2-1"><ul class="disc" id="act-Division-3-2-1-1">
+<li id="act-Division-3-2-1-1-1"><div class="para" id="act-Division-3-2-1-1-1-1">There’s a vertical asymptote at <span class="process-math">\(x=1\text{,}\)</span> since that’s where we’d find a limit with the form <span class="process-math">\(\frac{\#}{0}\text{,}\)</span> like in <a href="sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits" class="internal" title="Subsection 1.5.1: Infinite Limits">Subsection 1.5.1 Infinite Limits</a>.</div></li>
+<li id="act-Division-3-2-1-1-2"><div class="para" id="act-Division-3-2-1-1-2-1">There aren’t any horizontal asymptotes! We know that because the degree is larger in the numerator, like in <a href="sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits" class="internal" title="Subsection 1.5.2: End Behavior Limits">Subsection 1.5.2 End Behavior Limits</a>.</div></li>
+<li id="act-Division-3-2-1-1-3">
+<div class="para" id="act-Division-3-2-1-1-3-1">This graph looks linear:</div>
+<iframe src="https://www.desmos.com/calculator/y94v249fss" id="act-Division-3-2-1-1-3-2" width="360" height="540"></iframe><div class="para" id="act-Division-3-2-1-1-3-3">This is because the numerator is one degree larger than the denominator. When we divide these two functions, we expect to end up with some sort of linear function and a remainder that approachs 0 as <span class="process-math">\(x\to\pm\infty\text{.}\)</span>
+</div>
+</li>
+</ul></div></div></details></div></article><article class="task exercise-like" id="act-Division-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-Division-4-1-1">Now we’re going to re-write the function itself: <span class="process-math">\(\dfrac{x^2+3x-1}{x-1}\)</span> means we’re dividing <span class="process-math">\((x^2+3x-1)\)</span> by <span class="process-math">\((x-1)\text{.}\)</span> So let’s do the division!</div> <div class="para" id="act-Division-4-1-2"><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"></td>
+<td class="r m b2 r0 l0 t0 lines"></td>
+<td class="r m b2 r0 l0 t0 lines"></td>
+<td class="r m b2 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="r m b0 r2 l0 t0 lines"><span class="process-math">\(x-1\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(x^2\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(+3x\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+</tr>
+</table></div></div>
+<div class="solutions"><details id="act-Division-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="act-Division-4-2-1"><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"></td>
+<td class="r m b2 r0 l0 t0 lines"></td>
+<td class="r m b2 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="r m b2 r0 l0 t0 lines"><span class="process-math">\(+4\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(+\frac{3}{x-1}\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r2 l0 t0 lines"><span class="process-math">\(x-1\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(x^2\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(+3x\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(-\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\((x^2\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(-x)\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(\downarrow\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"></td>
+<td class="r m b0 r0 l0 t0 lines"></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(4x\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(-\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\((4x\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(-4)\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"></td>
+<td class="r m b0 r0 l0 t0 lines"></td>
+<td class="r m b0 r0 l0 t0 lines"></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+</tr>
+</table></div></div></div></details></div></article><article class="task exercise-like" id="act-Division-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-Division-5-1-1">Re-write your integral using this new version of the function. Notice that we haven’t done any calculus or antidifferentiating yet. Explain why this new version of this integrand function is easier to antidifferentiate. What do you get?</div>
+<div class="solutions"><details id="act-Division-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-Division-5-2-1"><div class="displaymath process-math" id="act-Division-5-2-1-1">
+\begin{align*}
+\int \left(\frac{x^2+3x-1}{x-1}\right)\;dx \amp = \int x+4+\frac{3}{x-1}\;dx\\
+\amp = \frac{x^2}{2}+4x+3\ln|x-1|+C
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like" id="act-Division-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-Division-6-1-1">Let’s approach this integral differently. We said earlier that this function is really an "almost" linear function in disguise: when we divide the quadratic numerator by a linear denominator, we expect a linear function to be left over. In the long division, we saw this happen! We ended with a linear function and some remainder.</div> <div class="para logical" id="act-Division-6-1-2">
+<div class="para">Let’s try to uncover this linear function. If we’re looking to find what linear functions multiply together to get <span class="process-math">\((x^2+3x-1)\text{,}\)</span> then we can try factoring!</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{x^2+3x-1}{x-1}=\frac{(\fillinmath{XXXXX})(\fillinmath{XXXXX})}{x-1}
+\end{equation*}
+</div>
+<div class="para">In order for this factoring to be useful, we want to be able to "cancel" out the <span class="process-math">\(x-1\)</span> factor in the denominator. We’re really only interested in what linear factor will multiply by <span class="process-math">\((x-1)\)</span> to get <span class="process-math">\((x^2+3x-1)\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{x^2+3x-1}{x-1}=\frac{(x-1)(\fillinmath{XXXXX})}{x-1}
+\end{equation*}
+</div>
+</div> <div class="para" id="act-Division-6-1-3">First, explain why there is no linear function factor that accomplishes this.</div></article><article class="task exercise-like" id="act-Division-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-Division-7-1-1">What if were able to "almost" factor this?</div> <div class="para" id="act-Division-7-1-2">If there <em class="emphasis">was</em> a linear factor that multiplied by <span class="process-math">\((x-1)\)</span> to get <span class="process-math">\((x^2+3x-1)\text{,}\)</span> then the linear portions would multiply together to get <span class="process-math">\(x^2\text{.}\)</span> What does this mean about the first linear term of our factor?</div>
+<div class="solutions"><details id="act-Division-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="act-Division-7-2-1">We need <span class="process-math">\((x-1)(x+\fillinmath{XX})=(x^2+3x-1)\)</span> since <span class="process-math">\(x(x)=x^2\text{.}\)</span>
+</div></div></details></div></article><article class="task exercise-like" id="act-Division-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-Division-8-1-1">What does the constant term of our missing factor need to be? We are hoping that whatever it is can multiply by <span class="process-math">\(x\)</span> (from <span class="process-math">\(x-1\)</span>) and combine with the <span class="process-math">\(-x\)</span> (from the constant <span class="process-math">\(-1\)</span> multiplied by <span class="process-math">\(x\)</span> in our missing factor) to match the <span class="process-math">\(3x\)</span> in <span class="process-math">\(x^2+3x-1\text{.}\)</span>
+</div> <div class="para" id="act-Division-8-1-2">What is it?</div>
+<div class="solutions"><details id="act-Division-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="act-Division-8-2-1">We need to find <span class="process-math">\(a\)</span> where when we multiply <span class="process-math">\((x-1)(x+a)\)</span> we end up with <span class="process-math">\(ax-x=3x\text{.}\)</span> It should be clear that <span class="process-math">\(a=4\text{.}\)</span>
+</div>
+<div class="para" id="act-Division-8-2-2">Our missing factor is <span class="process-math">\((x-4)\text{.}\)</span>
+</div>
+</div></details></div></article><article class="task exercise-like" id="act-Division-9"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para logical" id="act-Division-9-1-1">
+<div class="para">Note that we have <em class="emphasis">not</em> factored <span class="process-math">\((x^2+3x-1)\text{!}\)</span> We <em class="emphasis">almost</em> did: we found two factors:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x-1)(\fillinmath{XXXXX}) = x^2+3x+\fillinmath{XX}\text{.}
+\end{equation*}
+</div>
+</div> <div class="para" id="act-Division-9-1-2">How far off is the actual polynomial that we are working with, <span class="process-math">\(x^2+3x-1\text{?}\)</span>
+</div> <div class="para" id="act-Division-9-1-3">Write <span class="process-math">\(x^2+3x-1\)</span> as your two factors plus or minus some remainder.</div>
+<div class="solutions">
+<details id="act-Division-9-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-Division-9-2-1">
+<div class="para">Find the constant term where:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2+3x-1=(x-1)(x+4)+\fillinmath{XX}\text{.}
+\end{equation*}
+</div>
+</div></div></details><details id="act-Division-9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-Division-9-3-1">
+<div class="para">Since <span class="process-math">\((x-1)(x+4)=x^2+3x-4\text{,}\)</span> we need to add <span class="process-math">\(3\)</span> to get <span class="process-math">\(x^2+3x-1\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2+3x-1 = \overbrace{(x-1)(x+4)}^{x^2+3x-4}+3
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><article class="task exercise-like" id="act-Division-10"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="para" id="act-Division-10-1-1">You should get the same thing that we got from using long division! Great! The rest of the integral will work the same.</div> <div class="para" id="act-Division-10-1-2">Before we end, though, compare this antiderivative to the one we got in <a href="sec-MoreuSubstitution.html#ex-TurnAround" class="xref" data-knowl="./knowl/xref/ex-TurnAround.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 7.2.1">Example 7.2.1</a>. It’s different. Why? Is this a problem?</div>
+<div class="solutions"><details id="act-Division-10-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-Division-10-2-1">
+<div class="para">It’s only off by a constant! Show this by expanding all of the multiplication in</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{(x-1)^2}{2}+5(x-1)+3\ln|x-1|\text{.}
+\end{equation*}
+</div>
+</div></div></details></div></article></article><div class="para" id="subsec-RationalFunctions-4">This gives us a good approach for whenever division will help us rewrite our rational function as some polynomial and a remainder.</div>
+<div class="para" id="subsec-RationalFunctions-5">Let’s look at two more rational functions: these ones won’t be good candidates to use long division, but we’ll try to build some intuition for why we will need to re-write one of them to get a substitution that works.</div>
+<article class="activity project-like" id="act-LogVsInvTan"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Comparing Two Very Similar Integrals.</span>
+</h4>
+<div class="introduction" id="act-LogVsInvTan-2">
+<div class="para" id="act-LogVsInvTan-2-1">We’re going to compare these two integrals:</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="act-LogVsInvTan-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\int \frac{x+2}{x^2+4x+5}\;dx
+\end{equation*}
+</div></div></div>
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="act-LogVsInvTan-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\int \frac{2}{x^2+4x+5}\;dx
+\end{equation*}
+</div></div></div>
+</div></div>
+</div>
+<article class="task exercise-like" id="act-LogVsInvTan-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-LogVsInvTan-3-1-1">Describe why <span class="process-math">\(u=x^2+4x+5\)</span> is such a useful choice for the first integral, but not for the second. How do the differences in these two integrals influence this substitution, even though the denominators are the same?</div>
+<div class="solutions"><details id="act-LogVsInvTan-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-LogVsInvTan-3-2-1">If <span class="process-math">\(u=x^2+4x+5\text{,}\)</span> then <span class="process-math">\(du=(2x+4)\;dx\)</span> for both integrals. Why is this good for one integral but not the other?</div></div></details></div></article><article class="task exercise-like" id="act-LogVsInvTan-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-LogVsInvTan-4-1-1">Why would it be useful to have a <em class="emphasis">linear</em> substitution rule (instead of the <em class="emphasis">quadratic</em> one that we picked) for the second integral? Why would that match the structure of the numerator better?</div> <div class="para" id="act-LogVsInvTan-4-1-2">Go ahead and integrate the first integral.</div>
+<div class="solutions"><details id="act-LogVsInvTan-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-LogVsInvTan-4-2-1"><div class="displaymath process-math" id="act-LogVsInvTan-4-2-1-1">
+\begin{align*}
+u = x^2+4x+5\;\; \amp \;\; du=(2x+4)\;dx\\
+\int \frac{x+2}{x^2+4x+5}\;dx \amp \\
+\amp = \frac{1}{2}\int \frac{2(x+2)}{x^2+4x+5}\;dx\\
+\amp = \frac{1}{2} \int \frac{1}{u}\;du\\
+\amp = \frac{1}{2} \ln|u|+C\\
+\amp = \frac{1}{2}\ln|x^2+4x+5|+C
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like" id="act-LogVsInvTan-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-LogVsInvTan-5-1-1">We’re going to write the denominator, <span class="process-math">\(x^2+4x+5\)</span> in a different way, in order to get a linear function composed into something familiar.</div> <div class="para" id="act-LogVsInvTan-5-1-2">
+<dfn class="terminology">Complete the square</dfn> for this polynomial: that is, find some linear factor <span class="process-math">\((x+k)\)</span> and a real number <span class="process-math">\(b\)</span> such that <span class="process-math">\((x+h)^2+b = x^2+4x+3\text{.}\)</span> This should feel familiar, since we have already tried to force polynomials to factor cleverly in <a href="sec-AlgebraicManipulations.html#act-Division" class="xref" data-knowl="./knowl/xref/act-Division.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.3.2: Integrating a Rational Function Three Ways">Activity 7.3.2</a>.</div>
+<div class="solutions">
+<details id="act-LogVsInvTan-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-LogVsInvTan-5-2-1">We want to find a constant term so that <span class="process-math">\((x+\fillinmath{XX})^2\)</span> gives us <span class="process-math">\(x^2+4x+\fillinmath{XX}\text{.}\)</span> Then we can compare the quadratic to <span class="process-math">\(x^2+4x+5\)</span> to see how far off it is!</div></div></details><details id="act-LogVsInvTan-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-LogVsInvTan-5-3-1">
+<div class="para">We can use <span class="process-math">\((x+2)^2\)</span> since <span class="process-math">\((x+2)^2=x^2+4x+4\text{.}\)</span> Then we can write:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2+4x+5 = \overbrace{(x+2)^2}^{x^2+4x+4}+1\text{.}
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><article class="task exercise-like" id="act-LogVsInvTan-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-LogVsInvTan-6-1-1">There is an intuitive substitution to pick, since we now have more obvious composition. Pick it. What kind of integral do we end up with and how do we antidifferentiate? Complete this problem!</div>
+<div class="solutions"><details id="act-LogVsInvTan-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-LogVsInvTan-6-2-1"><div class="displaymath process-math" id="act-LogVsInvTan-6-2-1-1">
+\begin{align*}
+\int \frac{4}{x^2+4x+5}\;dx \amp = \int \frac{4}{(x+4)^2+1}\;dx\\
+u = x+4 \;\;\amp \;\;du=dx \\
+\int \frac{4}{(x+4)^2+1}\;dx \amp = \int \frac{4}{u^2+1}\;du\\
+\amp = 4\tan^{-1}(u)+C\\
+\amp =4\tan^{-1}(x+4)+C
+\end{align*}
+</div></div></div></details></div></article></article><div class="para" id="subsec-RationalFunctions-7">Going forward, when you see a quadratic denominator in a rational function, what are some things you can think about and strategies you can use, based on what the rest of the function looks like? We want to summarize this a bit!</div>
 <article class="assemblage assemblage-like" id="strat-RationalFunctions"><h4 class="heading"><span class="title">Integrating Rational Functions.</span></h4>
-<div class="para" id="strat-RationalFunctions-2"></div></article></section><section class="exercises" id="ex-AlgebraicManipulations"><h3 class="heading hide-type">
+<div class="para logical" id="strat-RationalFunctions-2">
+<div class="para">If <span class="process-math">\(f(x)=\dfrac{p_n(x)}{p_m(x)}\)</span> where <span class="process-math">\(p_n(x)\)</span> is a degree <span class="process-math">\(n\)</span> polynomial and <span class="process-math">\(p_m(x)\)</span> is a degree <span class="process-math">\(m\)</span> polynomial, then we can think about how we might integrate <span class="process-math">\(\displaystyle \int f(x)\;dx\)</span> based on degrees.</div>
+<ul class="disc" id="strat-RationalFunctions-2-7">
+<li id="strat-RationalFunctions-2-7-1"><div class="para" id="strat-RationalFunctions-2-7-1-1">If <span class="process-math">\(n\geq m\)</span> (the degree in the numerator is at least the degree in the denominator), then we can use long division to write <span class="process-math">\(f(x)\)</span> as some polynomial with degree <span class="process-math">\(n-m\)</span> and some remainder.</div></li>
+<li id="strat-RationalFunctions-2-7-2">
+<div class="para" id="strat-RationalFunctions-2-7-2-1">If <span class="process-math">\(n=m-1\)</span> (the degree of the numerator is one less than the degree of the denominator), then we can try a <span class="process-math">\(u\)</span>-substitution where <span class="process-math">\(u=p_m(x)\text{,}\)</span> since the derivative of <span class="process-math">\(p_m(x)\)</span> is a polynomial of degree <span class="process-math">\(n\text{.}\)</span> If this substitution works, we can antidifferentiate to get some sort of logarithm.</div>
+<div class="para" id="strat-RationalFunctions-2-7-2-2">This is not guaranteed to work, but for now (without other strategies), this is something we can think about.</div>
+</li>
+<li id="strat-RationalFunctions-2-7-3"><div class="para" id="strat-RationalFunctions-2-7-3-1">If we can reduce <span class="process-math">\(f(x)\)</span> (through some transformation or substitution) to a rational function that is a constant term divided by quadratic function (or if it already is), then we can complete the square in the denominator to get to a form that can be antidifferentiated to an inverse tangent function.</div></li>
+</ul>
+</div></article><div class="para" id="subsec-RationalFunctions-9">In the last point, we are referencing the strategy we found in <a href="sec-AlgebraicManipulations.html#act-LogVsInvTan" class="xref" data-knowl="./knowl/xref/act-LogVsInvTan.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.3.3: Comparing Two Very Similar Integrals">Activity 7.3.3</a>. We have a bit more of a general version of this strategy.</div>
+<article class="theorem theorem-like" id="thm-GeneralizedInvTan"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Generalized Inverse Tangent Forms.</span>
+</h4>
+<div class="para logical" id="thm-GeneralizedInvTan-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\int \frac{1}{u^2+a^2}\;du = \frac{1}{a}\tan^{-1}\left(\frac{u}{a}\right)+C
+\end{equation*}
+</div></div></article><details id="thm-GeneralizedInvTan-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="thm-GeneralizedInvTan-3-1">
+<div class="para">This is really just based on a clever substitution. Once we see this specific constant over a sum of squares, we can factor out a convenient coefficient to force the denominator to look like a sum of something squared and 1.</div>
+<div class="displaymath process-math" id="thm-GeneralizedInvTan-3-1-1">
+\begin{align*}
+\int \frac{1}{u^2+a^2}\;du \amp= \frac{1}{a^2}\int \frac{1}{\frac{u^2}{a^2}+1} \;du\\
+\amp = \frac{1}{a^2}\int \frac{1}{\left(\frac{u}{a}\right)^2+1}\;du
+\end{align*}
+</div>
+<div class="para">Now we can let <span class="process-math">\(w=\frac{u}{a}\)</span> and <span class="process-math">\(dw=\frac{1}{a}\;du\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="thm-GeneralizedInvTan-3-1-4">
+\begin{align*}
+\frac{1}{a^2}\int \frac{1}{\left(\frac{u}{a}\right)^2+1}\;du \amp = \frac{1}{a}\int \frac{1}{\left(\frac{u}{a}\right)^2+1}\left(\frac{1}{a}\right)\;du\\
+\amp =\frac{1}{a}\int \frac{1}{w^2+1}\;dw\\
+\amp = \frac{1}{a}\tan^{-1}(w)+C\\
+\amp = \frac{1}{a}\tan^{-1}\left(\frac{u}{a}\right)+C
+\end{align*}
+</div>
+<div class="para">This strategy can also be used for other inverse trigonometric derivatives. But we will use the inverse tangent form most of all, and thus we want to outline it fully.</div>
+</div></article></details></section><section class="conclusion" id="sec-AlgebraicManipulations-5"><div class="para" id="sec-AlgebraicManipulations-5-1">We have much more to talk about with integration. From here, we can move on to more systematic strategies — ones that have some goals based on familiar things like operations that we might notice or specific variable substitutions that can be useful.</div></section><section class="exercises" id="ex-AlgebraicManipulations"><h3 class="heading hide-type">
 <span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber">7.3.3</span><span class="space"> </span><span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="ex-AlgebraicManipulations-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>

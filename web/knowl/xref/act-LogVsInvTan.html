@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="activity project-like"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Comparing Two Very Similar Integrals.</span>
+</h4>
+<div class="introduction">
+<div class="para">We’re going to compare these two integrals:</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\int \frac{x+2}{x^2+4x+5}\;dx
+\end{equation*}
+</div></div></div>
+<div class="sbspanel top" style="width:50%;"><div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\int \frac{2}{x^2+4x+5}\;dx
+\end{equation*}
+</div></div></div>
+</div></div>
+</div>
+<article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para">Describe why <span class="process-math">\(u=x^2+4x+5\)</span> is such a useful choice for the first integral, but not for the second. How do the differences in these two integrals influence this substitution, even though the denominators are the same?</div>
+<div class="solutions"><details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">If <span class="process-math">\(u=x^2+4x+5\text{,}\)</span> then <span class="process-math">\(du=(2x+4)\;dx\)</span> for both integrals. Why is this good for one integral but not the other?</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para">Why would it be useful to have a <em class="emphasis">linear</em> substitution rule (instead of the <em class="emphasis">quadratic</em> one that we picked) for the second integral? Why would that match the structure of the numerator better?</div> <div class="para">Go ahead and integrate the first integral.</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+u = x^2+4x+5\;\; \amp \;\; du=(2x+4)\;dx\\
+\int \frac{x+2}{x^2+4x+5}\;dx \amp \\
+\amp = \frac{1}{2}\int \frac{2(x+2)}{x^2+4x+5}\;dx\\
+\amp = \frac{1}{2} \int \frac{1}{u}\;du\\
+\amp = \frac{1}{2} \ln|u|+C\\
+\amp = \frac{1}{2}\ln|x^2+4x+5|+C
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para">We’re going to write the denominator, <span class="process-math">\(x^2+4x+5\)</span> in a different way, in order to get a linear function composed into something familiar.</div> <div class="para">
+<dfn class="terminology">Complete the square</dfn> for this polynomial: that is, find some linear factor <span class="process-math">\((x+k)\)</span> and a real number <span class="process-math">\(b\)</span> such that <span class="process-math">\((x+h)^2+b = x^2+4x+3\text{.}\)</span> This should feel familiar, since we have already tried to force polynomials to factor cleverly in <a href="sec-AlgebraicManipulations.html#act-Division" class="xref" data-knowl="./knowl/xref/act-Division.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.3.2: Integrating a Rational Function Three Ways">Activity 7.3.2</a>.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">We want to find a constant term so that <span class="process-math">\((x+\fillinmath{XX})^2\)</span> gives us <span class="process-math">\(x^2+4x+\fillinmath{XX}\text{.}\)</span> Then we can compare the quadratic to <span class="process-math">\(x^2+4x+5\)</span> to see how far off it is!</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">We can use <span class="process-math">\((x+2)^2\)</span> since <span class="process-math">\((x+2)^2=x^2+4x+4\text{.}\)</span> Then we can write:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2+4x+5 = \overbrace{(x+2)^2}^{x^2+4x+4}+1\text{.}
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para">There is an intuitive substitution to pick, since we now have more obvious composition. Pick it. What kind of integral do we end up with and how do we antidifferentiate? Complete this problem!</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+\int \frac{4}{x^2+4x+5}\;dx \amp = \int \frac{4}{(x+4)^2+1}\;dx\\
+u = x+4 \;\;\amp \;\;du=dx \\
+\int \frac{4}{(x+4)^2+1}\;dx \amp = \int \frac{4}{u^2+1}\;du\\
+\amp = 4\tan^{-1}(u)+C\\
+\amp =4\tan^{-1}(x+4)+C
+\end{align*}
+</div></div></div></details></div></article></article><span class="incontext"><a class="internal" href="sec-AlgebraicManipulations.html#act-LogVsInvTan">in-context</a></span>
+</body>
+</html>
