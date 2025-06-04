@@ -3,8 +3,52 @@
 <section xml:id="sec-TrigSub" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Trigonometric Substitution</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-AnotherVariableSubstitution">
+    <title>Another Type of Variable Substitution</title>
+    <p>
+      We're going to employ another variable substitution, in the same way that we use <m>u</m>-substitution. The main difference is the goal: we're going to select our substitution not based on uncovering the composition in our function (like in <m>u</m>-substitution). Instead, we'll focus on selecting a trigonometric function in order to utilize the relevant Pythagorean identity to re-write our sum or difference of squares.
+    </p>
+    <figure xml:id="fig-TrigSub">
+      <caption>General idea of how this variable substitution works.</caption>
+      <image width="80%">
+          <shortdescription>
+              Two rectangles, one labeled "x Context" and the other, beside it, labeled "theta Context." Inside the "x Context" rectangle is an integral of f(x) dx with an arrow pointing towards F(x)+C. Inside the "theta Context" rectangle is an integral of g(theta) d theta with an arrow pointing towards G(theta)+C. There is an arrow connecting the integral of f(x) dx in the first rectangle to the integral of g(theta) d theta labeled x=T(theta) and dx = T'(theta) d theta. Then there is an arrow connecting G(theta)+C to F(x)+C labeled x = T(theta)
+          </shortdescription>
+          <latex-image>
+            \begin{tikzpicture}
+                \draw[DCgreen] (0,0) -- (0,5);
+                \draw[DCgreen] (0,5) -- (3,5);
+                \draw[DCgreen] (3,5) -- (3,0);
+                \draw[DCgreen] (3,0) -- (0,0);
+                \node[DCgreen] at (1.5, 4) [above] {$\displaystyle\int f(x)\;dx$};
+                \node[DCgreen] at (1.5, 1) [below] {$F(x)+C$};
+                \draw[-latex, line width=1.5pt][DCgreen] (1.5, 4) -- (1.5, 1);
+                \node[DCgreen] at (1.5, 5.2) [above] {\Large $x$ Context};
 
+                \draw[DCblue] (5,0) -- (5,5);
+                \draw[DCblue] (5,5) -- (8,5);
+                \draw[DCblue] (8,5) -- (8,0);
+                \draw[DCblue] (8,0) -- (5,0);
+                \node[DCblue] at (6.5, 4) [above] {$\displaystyle\int g(\theta)\;d\theta$};
+                \node[DCblue] at (6.5, 1) [below] {$G(\theta)+C$};
+                \draw[-latex, line width = 1.5pt][DCblue] (6.5, 4) -- (6.5, 1);
+                \node[DCblue] at (6.5, 5.2) [above] {\Large $\theta$ Context};
+
+                \draw[-latex, line width = 1.2pt][DCred] (2.5,4.5) .. controls (3.2,5) and (4.8,5) .. (5.5,4.5);
+                \node[DCred] at (4,4.9) [above] {\small $x=T(\theta)$};
+                \node[DCred] at (4,4.8) [below] {\small $dx = T'(\theta)\;d\theta$};
+                \draw[-latex, line width = 1.2pt][DCred] (5.5,0.7) .. controls (4.8, 0.2) and (3.2,0.2) .. (2.5,0.7);
+                \node[DCred] at (4,0.3) [above] {\small $x = T(\theta)$};
+            \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+  </subsection>
   <xi:include href="./exercises/ex-TrigSub.ptx" />
 
 </section>
