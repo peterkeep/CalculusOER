@@ -477,13 +477,16 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-PowersOfTrig.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Integrating Powers of Trigonometric Functions</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#subsec-StrategySinesCosines" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Building a Strategy for Powers of Sines and Cosines</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#subsec-StrategySecantsTanges" class="internal"><span class="codenumber">7.5.2</span> <span class="title">Building a Strategy for Powers of Secants and Tangents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#subsec-StrategySecantsTangents" class="internal"><span class="codenumber">7.5.2</span> <span class="title">Building a Strategy for Powers of Secants and Tangents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#ex-PowersOfTrig" class="internal"><span class="codenumber">7.5.3</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-TrigSub.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Trigonometric Substitution</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-TrigSub.html#ex-TrigSub" class="internal"><span class="codenumber">7.6</span> <span class="title">Practice Problems</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-TrigSub.html#subsec-AnotherVariableSubstitution" class="internal"><span class="codenumber">7.6.1</span> <span class="title">Another Type of Variable Substitution</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-TrigSub.html#ex-TrigSub" class="internal"><span class="codenumber">7.6.2</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PartialFractions.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Partial Fractions</span></a></div>
@@ -886,7 +889,71 @@ du = \;dx &amp; dv = \ln(x)\;dx
 </div></div></details></div></article></section><section class="subsection" id="subsec-SolvingForIntegral"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.4.4</span><span class="space"> </span><span class="title">Solving for the Integral</span>
 </h3>
-<div class="para" id="subsec-SolvingForIntegral-2">In this last example, we ended up seeing the original integral repeated when we did integration by parts. This is a useful technique, especially when we deal with functions that have a kind of "repeating" structure to their derivatives or antiderivatives. We’ll look at a couple of classic integrals where we see this kind of technique employed.</div>
+<div class="para" id="subsec-SolvingForIntegral-2">In this last example, we ended up seeing the original integral repeated when we did integration by parts. This is a useful technique, especially when we deal with functions that have a kind of "repeating" structure to their derivatives or antiderivatives. We’ll look at a couple of classic integrals where we see this kind of technique employed. Let’s have you explore this idea.</div>
+<article class="activity project-like" id="act-SolveIntegral"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Squared Trig Functions.</span>
+</h4>
+<div class="introduction" id="act-SolveIntegral-2">
+<div class="para" id="act-SolveIntegral-2-1">Let’s look at two integrals. We’ll talk about both at the same time, since they’re similar.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="act-SolveIntegral-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\int \sin^2(x)\;dx
+\end{equation*}
+</div></div></div>
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="act-SolveIntegral-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\int \cos^2(x)\;dx
+\end{equation*}
+</div></div></div>
+</div></div>
+</div>
+<article class="task exercise-like" id="act-SolveIntegral-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-SolveIntegral-3-1-1">What does it mean to "square" a trig function? Write these integrals in a different way, where the meaning of the "squared" exponent is more clear. What do you notice about the structure of these integrals, the operation in the integrand function? What does this mean about our choice of integration technique?</div>
+<div class="solutions"><details id="act-SolveIntegral-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-SolveIntegral-3-2-1"><div class="displaymath process-math" id="act-SolveIntegral-3-2-1-1">
+\begin{align*}
+\int \sin^2(x)\;dx \amp = \int \sin(x)\sin(x)\;dx \\
+\int \cos^2(x)\;dx \amp = \int \cos(x)\cos(x)\;dx
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like" id="act-SolveIntegral-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-SolveIntegral-4-1-1">If you were to use integration by parts on these integrals, does your choice of <span class="process-math">\(u\)</span> and <span class="process-math">\(dv\)</span> even matter here? Why not?</div>
+<div class="solutions"><details id="act-SolveIntegral-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-SolveIntegral-4-2-1">Is there a difference in the two functions being multiplied?</div></div></details></div></article><article class="task exercise-like" id="act-SolveIntegral-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-SolveIntegral-5-1-1">Apply the integration by parts formula to each. What do you notice?</div>
+<div class="solutions"><details id="act-SolveIntegral-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-SolveIntegral-5-2-1">
+<div class="para">For the integral <span class="process-math">\(\displaystyle \int \sin^2(x)\;dx\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="act-SolveIntegral-5-2-1-2">
+\begin{align*}
+u = \sin(x)\;\; \amp \;\;v = -\cos(x)\\
+du = \cos(x)\;dx \;\;\amp \;\;dv= \sin(x)\;dx \\
+\int \sin^2(x)\;dx \amp = -\sin(x)\cos(x)+\int \cos^2(x)\;dx 
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="act-SolveIntegral-5-2-2">
+<div class="para">For the integral <span class="process-math">\(\displaystyle \int \cos^2(x)\;dx\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="act-SolveIntegral-5-2-2-2">
+\begin{align*}
+u = \cos(x)\;\; \amp \;\;v = \sin(x)\\
+du = -\sin(x)\;dx \;\;\amp \;\;dv= \cos(x)\;dx \\
+\int \cos^2(x)\;dx \amp = \sin(x)\cos(x) + \int \sin^2(x)\;dx 
+\end{align*}
+</div>
+</div>
+</div></details></div></article><article class="task exercise-like" id="act-SolveIntegral-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para logical" id="act-SolveIntegral-6-1-1">
+<div class="para">Instead of applying another round of integration by parts to the resulting integral, use the Pythagorean identities to re-write these integrals:</div>
+<div class="displaymath process-math" id="act-SolveIntegral-6-1-1-1">
+\begin{align*}
+\sin^2(x) \amp = 1-\cos^2(x)\\
+\cos^2(x) \amp = 1-\sin^2(x)
+\end{align*}
+</div>
+</div></article><article class="task exercise-like" id="act-SolveIntegral-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-SolveIntegral-7-1-1">You should notice that in your equation for the integration of <span class="process-math">\(\displaystyle \sin^2(x)\;dx\text{,}\)</span> you have another copy of <span class="process-math">\(\displaystyle \int \sin^2(x)\;dx\text{.}\)</span> Similarly, in your equation for the integration of <span class="process-math">\(\displaystyle \cos^2(x)\;dx\text{,}\)</span> you have another copy of <span class="process-math">\(\displaystyle \int \cos^2(x)\;dx\text{.}\)</span>
+</div> <div class="para" id="act-SolveIntegral-7-1-2">Replace these integrals with a variable, like <span class="process-math">\(I\)</span> (for "integral"). Can you "solve" for this variable (integral)?</div></article></article><div class="para" id="subsec-SolvingForIntegral-4">This "solving for the integral" approach works well, but works best when we can see it coming. Notice that it happened here due to the repeating structure of the derivatives of the sine and cosine functions, as well as the Pythagorean identities. We can see some more examples of this in play with similar functions!</div>
 <article class="example example-like" id="ex-sincos"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.4.5</span><span class="period">.</span>
 </h4>
@@ -949,9 +1016,9 @@ du = e^x\;dx &amp; dv = \sin(x)\;dx
 \end{aligned}
 \end{equation*}
 </div>
-</div></div></details></div></article></article><div class="para" id="subsec-SolvingForIntegral-4">Notice that we can come up with a bunch of different examples that are similar to <a href="sec-IntegrationByParts.html#ex-sincos" class="xref" data-knowl="./knowl/xref/ex-sincos.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 7.4.5">Example 7.4.5</a>. If we put trigonometric functions inside our integral, we’ll have some options with how we approach them! We can use <span class="process-math">\(u\)</span>-substitution, since the derivatives of trigonometric functions are other trigonometric functions. In <a href="sec-IntegrationByParts.html#ex-sincos" class="xref" data-knowl="./knowl/xref/ex-sincos.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 7.4.5">Example 7.4.5</a>, for instance, we could write <span class="process-math">\(u=\sin(x)\)</span> and <span class="process-math">\(du = \cos(x)\;dx\text{,}\)</span> or even chose <span class="process-math">\(u=\cos(x)\)</span> and <span class="process-math">\(du = -\sin(x)\;dx\text{.}\)</span>
+</div></div></details></div></article></article><div class="para" id="subsec-SolvingForIntegral-6">Notice that we can come up with a bunch of different examples that are similar to <a href="sec-IntegrationByParts.html#ex-sincos" class="xref" data-knowl="./knowl/xref/ex-sincos.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 7.4.5">Example 7.4.5</a>. If we put trigonometric functions inside our integral, we’ll have some options with how we approach them! We can use <span class="process-math">\(u\)</span>-substitution, since the derivatives of trigonometric functions are other trigonometric functions. In <a href="sec-IntegrationByParts.html#ex-sincos" class="xref" data-knowl="./knowl/xref/ex-sincos.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 7.4.5">Example 7.4.5</a>, for instance, we could write <span class="process-math">\(u=\sin(x)\)</span> and <span class="process-math">\(du = \cos(x)\;dx\text{,}\)</span> or even chose <span class="process-math">\(u=\cos(x)\)</span> and <span class="process-math">\(du = -\sin(x)\;dx\text{.}\)</span>
 </div>
-<div class="para" id="subsec-SolvingForIntegral-5">The real issues will come when our integrand is not just a product of two trigonometric functions, but when they are products of trigonometric functions raised to exponents. We’ll have some combinations of these products (which maybe makes us think about integration by parts) and composition (which points towards <span class="process-math">\(u\)</span>-substitution). In the next section, we’ll develop some strategies to deal with these kinds of integrals.</div></section><section class="exercises" id="ex-ByParts"><h3 class="heading hide-type">
+<div class="para" id="subsec-SolvingForIntegral-7">The real issues will come when our integrand is not just a product of two trigonometric functions, but when they are products of trigonometric functions raised to exponents. We’ll have some combinations of these products (which maybe makes us think about integration by parts) and composition (which points towards <span class="process-math">\(u\)</span>-substitution). In the next section, we’ll develop some strategies to deal with these kinds of integrals.</div></section><section class="exercises" id="ex-ByParts"><h3 class="heading hide-type">
 <span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber">7.4.5</span><span class="space"> </span><span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="ex-ByParts-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>

@@ -233,7 +233,6 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-CompositionDecomposition" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Composition and Decomposition</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-ChainRule" class="internal"><span class="codenumber">2.5.2</span> <span class="title">The Chain Rule, Intuitively</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-DoingChainRule" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Doing is Different than Knowing</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-GeneralizedExponential" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Generalizing the Derivative of the Exponential</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -243,16 +242,9 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Implicit Differentiation</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-ExplicitImplicit" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Explicit vs. Implicit Definitions</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-DerivativeOperator" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Using a Derivative as an Operator</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-SummaryAndStrategy" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Some Summary and Strategy</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-DerivativeOperator" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Using a Derivative as an Operator</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section contains-active">
-<div class="toc-title-box"><a href="sec-DerivativeInverse.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Derivatives of Inverse Functions</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeInverse.html#subsec-WieldingImplicitDifferentiation" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Wielding Implicit Differentiation</span></a></div></li></ul>
-</li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-DerivativeInverse.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Derivatives of Inverse Functions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Logarithmic Differentiation</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-RelatedRates.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Related Rates</span></a></div></li>
 </ul>
@@ -452,111 +444,7 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-DerivativeInverse"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">3.2</span><span class="space"> </span><span class="title">Derivatives of Inverse Functions</span>
 </h2>
-<section class="introduction" id="sec-DerivativeInverse-2"><div class="para logical" id="sec-DerivativeInverse-2-1">
-<div class="para">We should start here by saying: we’re going to be thinking about inverse functions, and so maybe it will be helpful to recap some facts about inverse functions.</div>
-<ul class="disc" id="sec-DerivativeInverse-2-1-1">
-<li id="sec-DerivativeInverse-2-1-1-1"><div class="para logical" id="sec-DerivativeInverse-2-1-1-1-1">
-<div class="para">If <span class="process-math">\(y=f(x)\)</span> is some function, then we can use the inverse function to represent this relationship between variables: <span class="process-math">\(x=f^{-1}(y)\text{.}\)</span>Some examples:</div>
-<ul class="circle" id="sec-DerivativeInverse-2-1-1-1-1-3">
-<li id="sec-DerivativeInverse-2-1-1-1-1-3-1"><div class="para" id="sec-DerivativeInverse-2-1-1-1-1-3-1-1">
-<span class="process-math">\(y=e^x \longleftrightarrow x=\ln(y)\text{.}\)</span> That is, the logarithm function "solves" for the exponent (sometimes this is easier to just say that the logarithm <em class="emphasis">is</em> the exponent).</div></li>
-<li id="sec-DerivativeInverse-2-1-1-1-1-3-2"><div class="para" id="sec-DerivativeInverse-2-1-1-1-1-3-2-1">
-<span class="process-math">\(y=\sin(\theta)\longleftrightarrow \theta =\sin^{-1}(y)\text{.}\)</span> That is, this inverse sine function (or sometimes <span class="process-math">\(\arcsin(y)\)</span>) finds the angle at which sine of that angle is <span class="process-math">\(y\text{.}\)</span> With these trigonometric functions, we need to make some restrictions: because there are an infinite number of angles that will produce the same output of the sine function (reflecting the angle across the <span class="process-math">\(y\)</span>-axis will do it, as will adding any multiple of <span class="process-math">\(2\pi\)</span>), we restrict the angles that the inverse sine function can output to being in <span class="process-math">\(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\text{.}\)</span>
-</div></li>
-</ul>
-</div></li>
-<li id="sec-DerivativeInverse-2-1-1-2"><div class="para logical" id="sec-DerivativeInverse-2-1-1-2-1">
-<div class="para">Based on this re-representation above, we can always compose a function and its inverse to get the identity function, <span class="process-math">\(y=x\text{.}\)</span> In general, if <span class="process-math">\(y=f(x)\)</span> has an inverse function <span class="process-math">\(f^{-1}\text{,}\)</span> then <span class="process-math">\(\left(f\circ f^{-1}\right)(x)=f\left(f^{-1}(x)\right) = x\text{.}\)</span> Similarly, we can compose in the opposite order: <span class="process-math">\(\left(f^{-1}\circ f\right)(x) = f^{-1}\left(f(x)\right) = x\text{.}\)</span> This can be a bit trickier to think about for the inverse trigonometric functions, since this only works on intervals of <span class="process-math">\(x\)</span> where that inverse is defined. So we end up with strange things like:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\sin^{-1}\left(\sin\left(\frac{3\pi}{2}\right)\right) = \sin^{-1}\left(-1\right) = -\frac{\pi}{2}\text{.}
-\end{equation*}
-</div>
-<div class="para">This is because the inverse sine function finds only angles in the interval <span class="process-math">\(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\text{,}\)</span> and the angles <span class="process-math">\(\frac{3\pi}{2}\)</span> and <span class="process-math">\(-\frac{\pi}{2}\)</span> are <em class="emphasis">coterminal</em> (and so have the same output from the sine function).</div>
-</div></li>
-</ul>
-<div class="para">With these small facts in mind, we can think about derivatives of inverse functions.</div>
-</div></section><section class="subsection" id="subsec-WieldingImplicitDifferentiation"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="space"> </span><span class="title">Wielding Implicit Differentiation</span>
-</h3>
-<div class="para" id="subsec-WieldingImplicitDifferentiation-2">We’re going to do a very cool thing: in order to find derivatives of inverse functions, we can invert the relationship between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> and then use <a href="sec-ImplicitDifferentiation.html" class="internal" title="Section 3.1: Implicit Differentiation">Implicit Differentiation</a> to find <span class="process-math">\(\dydx\text{.}\)</span>
-</div>
-<article class="activity project-like" id="act-lnxDerivative"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Building the Derivative of the Logarithm.</span>
-</h4>
-<div class="introduction" id="act-lnxDerivative-2"><div class="para logical" id="act-lnxDerivative-2-1">
-<div class="para">We’re going to accomplish two things here:</div>
-<ol class="decimal" id="act-lnxDerivative-2-1-1">
-<li id="act-lnxDerivative-2-1-1-1"><div class="para" id="act-lnxDerivative-2-1-1-1-1">By the end of this activity, we’ll have a nice way of thinking about <span class="process-math">\(\ddx{\ln(x)}\text{,}\)</span> and we will now be able to differentiate functions involving logarithms!</div></li>
-<li id="act-lnxDerivative-2-1-1-2"><div class="para" id="act-lnxDerivative-2-1-1-2-1">Throughout this activity, we’re going to develop a way of approaching derivatives of inverse functions more generally. Then we can apply this framework to other functions!</div></li>
-</ol>
-<div class="para">Let’s think about this logarithmic function!</div>
-</div></div>
-<article class="task exercise-like" id="act-lnxDerivative-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para logical" id="act-lnxDerivative-3-1-1">
-<div class="para">We have stated (a couple of times now) how we define the log function:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-y=e^x \longleftrightarrow x=\ln(y)\text{.}
-\end{equation*}
-</div>
-<div class="para">This arrow goes both directions: the log function is the inverse of the exponential, but the exponential is the inverse of the log function!</div>
-</div> <div class="para" id="act-lnxDerivative-3-1-2">Can you re-write the relationship <span class="process-math">\(y=\ln(x)\)</span> using its inverse (the exponential)?</div></article><article class="task exercise-like" id="act-lnxDerivative-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-lnxDerivative-4-1-1">For your inverted <span class="process-math">\(y=\ln(x)\)</span> from above (it should be <span class="process-math">\(x=\fillinmath{XXXXX}\)</span>), apply a derivative operator to both sides, and use implicit differentiation to find <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{.}\)</span>
-</div>
-<div class="solutions"><details id="act-lnxDerivative-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-lnxDerivative-4-2-1">Where do we have to use Chain Rule?</div></div></details></div></article><article class="task exercise-like" id="act-lnxDerivative-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="act-lnxDerivative-5-1-1">A weird thing that we can notice is that when we use implicit differentiation, it is common to end up with our derivative written in terms of both <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> variables. This makes sense for our earlier examples: we needed specific coordinates of the point on the circle, for instance, to find the slope there.</div> <div class="para logical" id="act-lnxDerivative-5-1-2">
-<div class="para">But if <span class="process-math">\(y=\ln(x)\text{,}\)</span> we want <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span> to be a function of <span class="process-math">\(x\text{:}\)</span>
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f(x)=\ln(x) \longrightarrow f'(x)=\fillinmath{XXXXX}\text{.}
-\end{equation*}
-</div>
-<div class="para">Your derivative is written with only <span class="process-math">\(y\)</span> values.</div>
-</div> <div class="para" id="act-lnxDerivative-5-1-3">Since <span class="process-math">\(y=\ln(x)\text{,}\)</span> replace any instance of <span class="process-math">\(y\)</span> with the log function. What do you have left?</div></article><article class="task exercise-like" id="act-lnxDerivative-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-lnxDerivative-6-1-1">Remember that <span class="process-math">\(y=\ln(x)\text{.}\)</span> Substitute this into your equation for <span class="process-math">\(\dydx\text{.}\)</span> Can you write this in a pretty simplistic way?</div>
-<div class="solutions"><details id="act-lnxDerivative-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-lnxDerivative-6-2-1">Remember that <span class="process-math">\(e^{\ln(x)}=x\text{,}\)</span> since these functions are inverses of each other!</div></div></details></div></article></article><article class="theorem theorem-like" id="thm-DerivativeLog"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Derivative of the Logarithmic Function.</span>
-</h4>
-<div class="para logical" id="thm-DerivativeLog-2-1">
-<div class="displaymath process-math">
-\begin{equation*}
-\ddx{\ln(x)}=\frac{1}{x}
-\end{equation*}
-</div>
-<div class="para">Further, since <span class="process-math">\(\log_b(x) = \frac{\ln(x)}{\ln(b)}\)</span> (for <span class="process-math">\(b\geq 0\)</span> and <span class="process-math">\(b\neq 1\)</span>), we can say that:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\ddx{\log_b(x)} = \frac{1}{x\ln(b)}\text{.}
-\end{equation*}
-</div>
-</div></article><div class="para" id="subsec-WieldingImplicitDifferentiation-5">Let’s try a similar thing with inverse trigonometric functions.</div>
-<article class="activity project-like" id="act-InverseSineDerivative"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Finding the Derivative of the Inverse Sine Function.</span>
-</h4>
-<div class="introduction" id="act-InverseSineDerivative-2">
-<div class="para" id="act-InverseSineDerivative-2-1">We’re going to do the same trick, except that there will be a couple of small differences due to thinking specifically about trigonometric functions.</div>
-<div class="para" id="act-InverseSineDerivative-2-2">Let’s think about the function <span class="process-math">\(y=\sin^{-1}(x)\text{.}\)</span> We know that this is equivalent to <span class="process-math">\(x=\sin(y)\)</span> (for <span class="process-math">\(y\)</span>-values in <span class="process-math">\(\left[-\frac{\pi}{2},\frac{\pi}{2}\right]\)</span>).</div>
-</div>
-<article class="task exercise-like" id="act-InverseSineDerivative-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para logical" id="act-InverseSineDerivative-3-1-1">
-<div class="para">Move the point around the portion of the unit circle in the graph below. Convince yourself that:</div>
-<ul class="disc" id="act-InverseSineDerivative-3-1-1-1">
-<li id="act-InverseSineDerivative-3-1-1-1-1"><div class="para" id="act-InverseSineDerivative-3-1-1-1-1-1"><span class="process-math">\(\displaystyle \sin(y)=x\)</span></div></li>
-<li id="act-InverseSineDerivative-3-1-1-1-2"><div class="para" id="act-InverseSineDerivative-3-1-1-1-2-1">
-<span class="process-math">\(\sin(y)\geq 0\)</span> when <span class="process-math">\(0\leq y \leq \frac{\pi}{2}\)</span>
-</div></li>
-<li id="act-InverseSineDerivative-3-1-1-1-3"><div class="para" id="act-InverseSineDerivative-3-1-1-1-3-1">
-<span class="process-math">\(\sin(y)\lt 0\)</span> when <span class="process-math">\(-\frac{\pi}{2}\leq y \lt 0\)</span>
-</div></li>
-</ul>
-</div> <iframe id="act-InverseSineDerivative-3-1-2" width="540" height="486" src="act-InverseSineDerivative-3-1-2-if.html"></iframe> <div class="para" id="act-InverseSineDerivative-3-1-3">What is <span class="process-math">\(\cos(y)\)</span> in this figure? Does the sign change depending on the value of <span class="process-math">\(y\text{?}\)</span>
-</div></article><article class="task exercise-like" id="act-InverseSineDerivative-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-InverseSineDerivative-4-1-1">Use implicit differentiation and the equation <span class="process-math">\(x=\sin(y)\)</span> to find <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span>
-</div></article><article class="task exercise-like" id="act-InverseSineDerivative-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="act-InverseSineDerivative-5-1-1">If you still have your derivative written in terms of <span class="process-math">\(y\text{,}\)</span> make sure to write <span class="process-math">\(\cos(y)\)</span> in terms of <span class="process-math">\(x\text{!}\)</span>
-</div></article></article></section></section></div>
+<div class="para" id="sec-DerivativeInverse-2">Text of section.</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-ImplicitDifferentiation.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-LogarithmicDifferentiation.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
