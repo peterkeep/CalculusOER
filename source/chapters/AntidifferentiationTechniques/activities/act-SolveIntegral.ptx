@@ -1,0 +1,89 @@
+<activity xml:id="act-SolveIntegral">
+    <title>Squared Trig Functions</title>
+    <introduction>
+        <p>
+            Let's look at two integrals. We'll talk about both at the same time, since they're similar.
+        </p>
+        <sidebyside>
+            <p>
+                <me>\int \sin^2(x)\;dx</me>
+            </p>
+            <p>
+                <me>\int \cos^2(x)\;dx</me>
+            </p>
+        </sidebyside>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                What does it mean to "square" a trig function? Write these integrals in a different way, where the meaning of the "squared" exponent is more clear. What do you notice about the structure of these integrals, the operation in the integrand function? What does this mean about our choice of integration technique?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <md>
+                    <mrow> \int \sin^2(x)\;dx \amp = \int \sin(x)\sin(x)\;dx </mrow>
+                    <mrow> \int \cos^2(x)\;dx \amp = \int \cos(x)\cos(x)\;dx</mrow>
+                </md>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                If you were to use integration by parts on these integrals, does your choice of <m>u</m> and <m>dv</m> even matter here? Why not?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Is there a difference in the two functions being multiplied?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Apply the integration by parts formula to each. What do you notice?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                For the integral <m>\displaystyle \int \sin^2(x)\;dx</m>:
+                <md>
+                    <mrow>u = \sin(x)\;\; \amp \;\;v = -\cos(x)</mrow>
+                    <mrow>du = \cos(x)\;dx \;\;\amp \;\;dv= \sin(x)\;dx </mrow>
+                    <mrow> \int \sin^2(x)\;dx \amp = -\sin(x)\cos(x)+\int \cos^2(x)\;dx </mrow>
+                </md>
+            </p>
+            <p>
+                For the integral <m>\displaystyle \int \cos^2(x)\;dx</m>:
+                <md>
+                    <mrow>u = \cos(x)\;\; \amp \;\;v = \sin(x)</mrow>
+                    <mrow>du = -\sin(x)\;dx \;\;\amp \;\;dv= \cos(x)\;dx </mrow>
+                    <mrow> \int \cos^2(x)\;dx \amp = \sin(x)\cos(x) + \int \sin^2(x)\;dx </mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Instead of applying another round of integration by parts to the resulting integral, use the Pythagorean identities to re-write these integrals:
+                <md>
+                    <mrow>\sin^2(x) \amp = 1-\cos^2(x)</mrow>
+                    <mrow>\cos^2(x) \amp = 1-\sin^2(x)</mrow>
+                </md>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                You should notice that in your equation for the integration of <m>\displaystyle \sin^2(x)\;dx</m>, you have another copy of <m>\displaystyle \int \sin^2(x)\;dx</m>. Similarly, in your equation for the integration of <m>\displaystyle \cos^2(x)\;dx</m>, you have another copy of <m>\displaystyle \int \cos^2(x)\;dx</m>.
+            </p>
+            <p>
+                Replace these integrals with a variable, like <m>I</m> (for "integral"). Can you "solve" for this variable (integral)?
+            </p>
+        </statement>
+    </task>
+</activity>

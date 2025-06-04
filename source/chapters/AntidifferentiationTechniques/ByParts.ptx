@@ -265,7 +265,11 @@
   <subsection xml:id="subsec-SolvingForIntegral">
     <title>Solving for the Integral</title>
     <p>
-      In this last example, we ended up seeing the original integral repeated when we did integration by parts. This is a useful technique, especially when we deal with functions that have a kind of "repeating" structure to their derivatives or antiderivatives. We'll look at a couple of classic integrals where we see this kind of technique employed.
+      In this last example, we ended up seeing the original integral repeated when we did integration by parts. This is a useful technique, especially when we deal with functions that have a kind of "repeating" structure to their derivatives or antiderivatives. We'll look at a couple of classic integrals where we see this kind of technique employed. Let's have you explore this idea.
+    </p>
+    <xi:include href="./activities/act-SolveIntegral.ptx" />
+    <p>
+      This "solving for the integral" approach works well, but works best when we can see it coming. Notice that it happened here due to the repeating structure of the derivatives of the sine and cosine functions, as well as the Pythagorean identities. We can see some more examples of this in play with similar functions!
     </p>
     <example xml:id="ex-sincos">
       <introduction>
