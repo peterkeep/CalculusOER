@@ -246,8 +246,8 @@
           <me>
             \begin{aligned}
               \int x\ln(x)\;dx &amp; = x(x\ln(x)-x) - \int x\ln(x)-x\;dx\\
-              &amp; x^2\ln(x)-x^2 - \int x\ln(x)\;dx + \int x \;dx\\
-              &amp;x^2\ln(x)-x^2 + \frac{x^2}{2} - \int x\ln(x)\;dx
+              &amp; = x^2\ln(x)-x^2 - \int x\ln(x)\;dx + \int x \;dx\\
+              &amp; = x^2\ln(x)-x^2 + \frac{x^2}{2} - \int x\ln(x)\;dx
             \end{aligned}
           </me>
             Note that this last integral is really recognizable: it's the one we started with! Let's "solve" this equation for that integral by adding it to both sides of our equation.
