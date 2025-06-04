@@ -11,6 +11,9 @@
     </p>
     <p>
       Then, more recently, in <xref ref="ex-sincos"/>, we noted that we could use a mix of methods to integrate this:
+      <me>
+        \int \sin(x)\cos(x)\;dx
+      </me>.      
     </p>
     <p>
       One on hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that's what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a <m>u</m>-substitution was also appropriate.
@@ -54,8 +57,51 @@
     <p>
       A strange note, here, is that we typically pick our <m>u</m>-substitution based on looking to see a suitable candidate for <m>u</m>: we look for functions that are composed "inside" of other functions or we look for a function whose derivative is in the integral (the "function-derivative pair" that we talk about in <xref ref="sec-uSubstitution"/>). Here, though, we're selecting our substitution based on <m>du</m>: we're looking to see which function we can set aside one copy of for the differential, and then have an even power left over so that we can apply the Pythagorean Identity to translate the rest.
     </p>
+    <example>
+      <introduction>
+        <p>
+          For each of the following, identify an appropriate substitution, make a note of which trigonometric identity you'll use, and then integrate.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int \sin^5(x)\cos^6(x)\;dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Notice that the exponent on <m>\sin(x)</m> is odd: if you let <m>u=\cos(x)</m>, you'll end up with <m>\sin^4(x)</m> left over in your integral, and you can write it as <m>(\underbrace{1-\cos^2(x)}_{\sin^2(x)})^2</m>.
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int \sin^{4/3}(x)\cos^5(x)\;dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            This one seems scary at first, because of the fraction exponent. Notice, though, that you have <em>no hope</em> of converting fractional exponents of sine functions into cosine functions easily. So pick <m>u=\sin(x)</m> and try to convert any remaining cosines using <m>\cos^2(x)=1-\sin^2(x)</m>.
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int \sin^3(x)\cos^9(x)\;dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            You get a choice here! Both exponents are odd, so picking either function as <m>u</m> will leave you with an even exponent on the other function to use the Pythagorean Identity on. Is there a choice of <m>u</m> that will be easier than the other choice?
+          </p>
+        </hint>
+      </task>
+    </example>
   </subsection>
-  <subsection xml:id="subsec-StrategySecantsTanges">
+  <subsection xml:id="subsec-StrategySecantsTangents">
     <title>Building a Strategy for Powers of Secants and Tangents</title>
     <xi:include href="./activities/act-SecTan.ptx" />
     <assemblage xml:id="strat-PowersSecTan">
@@ -81,6 +127,49 @@
         </ul>
       </p>
     </assemblage>
+    <example>
+      <introduction>
+        <p>
+          For each of the following, identify an appropriate substitution, make a note of which trigonometric identity you'll use, and then integrate.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int \tan^3(x)\sec^8(x)\;dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            You have some choices here! If you use <m>u=\sec(x)</m>, then you'll end up with a remaining <m>tan^2(x)</m> to convert using a Pythagorean identity. Alternatively, if you use <m>u=\tan(x)</m>, you'll end up needing to convert the remaining <m>\sec^6(x) = (\sec^2(x))^3</m>.
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            \displaystyle \int \tan^{-5/2}(x)\sec^6(x)\;dx
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Another fraction exponent that is pushing us towards using <m>u=\tan(x)</m>. There will still be a <m>\sec^4(x)</m> to convert after substituting in <m>du</m>.
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int \tan^5(x)\sec^3(x)\;dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            The odd exponent on tangent is fine, since we can use <m>u=\sec(x)</m> to leave us with a <m>\tan^4(x)</m> to convert.
+          </p>
+        </hint>
+      </task>
+    </example>
   </subsection>
   <xi:include href="./exercises/ex-PowersOfTrig.ptx" />
 </section>
