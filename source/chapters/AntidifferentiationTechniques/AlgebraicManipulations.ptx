@@ -63,11 +63,12 @@
         </statement>
         <hint>
           <p>
-            This is a hard one, and we'll revisit it later with a better strategy, but for now you can notice something nice happen when you multiply the numerator and denominator by <m>(\sec(x)+\tan(x))</m>:
+            This is <delete>a hard one</delete> an annoying one, and we'll revisit it later with a better strategy, but for now you can notice something nice happen when you multiply the numerator and denominator by <m>(\sec(x)+\tan(x))</m>:
 
             <me>
               \int \sec(x)\left(\frac{\sec(x)+\tan(x)}{\sec(x)+\tan(x)}\right)\;dx = \int \frac{\sec^2(x)+\sec(x)\tan(x)}{\sec(x)+\tan(x)}\;dx
             </me>.
+            This strategy is <em>not</em> intuitive, in my opinion: the nice thing to multiply seemingly comes out of nowehere!
           </p>
         </hint>
       </task>
