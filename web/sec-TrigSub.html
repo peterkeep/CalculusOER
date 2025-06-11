@@ -97,7 +97,7 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.3';
+eBookConfig.runestone_version = '7.7.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
@@ -573,7 +573,62 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-TrigSub"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">7.6</span><span class="space"> </span><span class="title">Trigonometric Substitution</span>
 </h2>
-<section class="introduction" id="sec-TrigSub-2"><div class="para" id="sec-TrigSub-2-1"></div></section><section class="subsection" id="subsec-AnotherVariableSubstitution"><h3 class="heading hide-type">
+<section class="introduction" id="sec-TrigSub-2"><div class="para logical" id="sec-TrigSub-2-1">
+<div class="para">We’re going to look at an integral that requires a variable substitution, but our goal for the substitution will be a bit different. We’re going to focus on the structure of our integrand function, but we won’t be focusing on composition. Instead, we’re going to focus on some trigonometric identities that we’ve used already:</div>
+<div class="displaymath process-math" id="sec-TrigSub-2-1-1">
+\begin{align*}
+\sin^2(\theta) \amp =1-\cos^2(\theta)\\
+\tan^2(\theta) \amp =\sec^2(\theta)-1\\
+\sec^2(\theta) \amp = \tan^2(\theta)+1
+\end{align*}
+</div>
+</div>
+<article class="activity project-like" id="act-DifferenceOfSquares"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.6.1</span><span class="period">.</span><span class="space"> </span><span class="title">Difference of Squares.</span>
+</h3>
+<div class="introduction" id="act-DifferenceOfSquares-2"><div class="para logical" id="act-DifferenceOfSquares-2-1">
+<div class="para">Consider the integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \sqrt{1-x^2}\;dx\text{.}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="act-DifferenceOfSquares-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="act-DifferenceOfSquares-3-1-1">First, convince yourself that a normal <span class="process-math">\(u\)</span>-substitution will not be an effective strategy for integration in this case. Why not?</div>
+<div class="solutions"><details id="act-DifferenceOfSquares-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-DifferenceOfSquares-3-2-1">There is composition in this integrand function, but what part of our <span class="process-math">\(u\)</span>-substitution is missing?</div></div></details></div></article><article class="task exercise-like" id="act-DifferenceOfSquares-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-DifferenceOfSquares-4-1-1">Second, convince yourself that <span class="process-math">\(\sqrt{1-x^2}\neq \sqrt{1}-\sqrt{x^2}\text{.}\)</span> Why can we not distribute roots across sums and differences like this? When <em class="emphasis">can</em> we "distribute" roots across multiple things?</div>
+<div class="solutions"><details id="act-DifferenceOfSquares-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-DifferenceOfSquares-4-2-1">A root is really an exponent: why can’t we distribute exponents across sums and differences? Try this with <span class="process-math">\((1-x^2)^2\text{,}\)</span> and convince yourself that this isn’t <span class="process-math">\(1^2-(x^2)^2\text{.}\)</span>
+</div>
+<div class="para" id="act-DifferenceOfSquares-4-2-2">Notice, though, that something like <span class="process-math">\((4x^2)^2=4^2(x^2)^2\text{,}\)</span> and <span class="process-math">\(\sqrt{4x^2}\)</span> could act similarly.</div>
+</div></details></div></article><article class="task exercise-like" id="act-DifferenceOfSquares-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="act-DifferenceOfSquares-5-1-1">Our goal, then, is to utilize a substitution (using trigonometric functions) to somehow transform this difference of squared terms under the square root into a single product of squared things under the square root.</div> <div class="para" id="act-DifferenceOfSquares-5-1-2">Which trigonometric identities from our list of them above utilize differences of thing squared, and equate them to a single term?</div> <div class="para" id="act-DifferenceOfSquares-5-1-3">Can you use the order of the subtraction to help guide which substitution we should use?</div>
+<div class="solutions"><details id="act-DifferenceOfSquares-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-DifferenceOfSquares-5-2-1">We want to pick some trigonometric function <span class="process-math">\(T(\theta)\)</span> so that when we let <span class="process-math">\(x=T(\theta)\text{,}\)</span> we end up with one of the Pythagorean identities above. Is there something we can put in for <span class="process-math">\(x\)</span> such that <span class="process-math">\(1-x^2\)</span> becomes <span class="process-math">\(1-(T(\theta))^2\)</span> in a convenient way?</div></div></details></div></article><article class="task exercise-like" id="act-DifferenceOfSquares-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="act-DifferenceOfSquares-6-1-1">When we do a variable substitution in an integral, we are not only finding a way of transforming <span class="process-math">\(x\)</span> to be in terms of some other variable (in this case, <span class="process-math">\(\theta\)</span>). We also need to transform the differential, <span class="process-math">\(dx\text{.}\)</span> Based on your substitution of <span class="process-math">\(x=T(\theta)\text{,}\)</span> what is <span class="process-math">\(dx\text{?}\)</span>
+</div>
+<div class="solutions"><details id="act-DifferenceOfSquares-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-DifferenceOfSquares-6-2-1">We’ll use <span class="process-math">\(dx=T'(\theta)\;d\theta\text{.}\)</span> What is <span class="process-math">\(T'(\theta)\)</span> for you?</div></div></details></div></article><article class="task exercise-like" id="act-DifferenceOfSquares-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="act-DifferenceOfSquares-7-1-1">Perform your substitution! Use your substitution <span class="process-math">\(x=T(\theta)\)</span> and <span class="process-math">\(dx=T'(\theta)\;d\theta\text{.}\)</span> Note that we have picked this substitution with a very specific goal: we are hoping to notice a Pythagorean identity.</div> <div class="para" id="act-DifferenceOfSquares-7-1-2">After you have performed your substitution, apply the relevant Pythagorean identity to the <dfn class="terminology">radicand</dfn>: the bit of our function underneath the radical or root. What integral are we left with (in terms of <span class="process-math">\(\theta\)</span>)?</div>
+<div class="solutions">
+<details id="act-DifferenceOfSquares-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-DifferenceOfSquares-7-2-1">Since we are using <span class="process-math">\(x=\sin(\theta)\text{,}\)</span> we should notice <span class="process-math">\(1-\sin^2(\theta)\)</span> underneath the square root.</div></div></details><details id="act-DifferenceOfSquares-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-DifferenceOfSquares-7-3-1"><div class="displaymath process-math" id="act-DifferenceOfSquares-7-3-1-1">
+\begin{align*}
+x=\sin(\theta)\;\; \amp \;\; dx=\cos(\theta)\;d\theta\\
+\int \sqrt{1-x^2}\;dx \amp = \int \sqrt{\underbrace{1-\sin^2(\theta)}_{\cos^2(\theta)}} \cos(\theta)\;d\theta\\
+\amp = \int \sqrt{\cos^2(\theta)}\;\cos(\theta)\;d\theta\\
+\amp = \int \cos(\theta) \cos(\theta)\;d\theta\\
+\amp = \int \cos^2(\theta)\;d\theta
+\end{align*}
+</div></div></div></details>
+</div></article><div class="conclusion" id="act-DifferenceOfSquares-8"><div class="para logical" id="act-DifferenceOfSquares-8-1">
+<div class="para">This new integral is something we can antidifferentiate now! We have already done this one in <a href="sec-IntegrationByParts.html#act-SolveIntegral" class="xref" data-knowl="./knowl/xref/act-SolveIntegral.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.4.4: Squared Trig Functions">Activity 7.4.4 Squared Trig Functions</a>. So we can end up with:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-SolveIntegral.html" id="act-DifferenceOfSquares-8-1-2">
+\begin{align*}
+\int \sqrt{1-x^2}\;dx \amp = \int \cos^2(\theta)\;d\theta\\
+\amp = \frac{\theta + \sin(\theta)\cos(\theta)}{2}+C
+\end{align*}
+</div>
+<div class="para">It is up to us, now, to translate this antiderivative family to be written in terms of <span class="process-math">\(x\text{.}\)</span> We can utilize our substitution to do this, but let’s first think about how this variable substitution works a bit more.</div>
+</div></div></article></section><section class="subsection" id="subsec-AnotherVariableSubstitution"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.6.1</span><span class="space"> </span><span class="title">Another Type of Variable Substitution</span>
 </h3>
 <div class="para" id="subsec-AnotherVariableSubstitution-2">We’re going to employ another variable substitution, in the same way that we use <span class="process-math">\(u\)</span>-substitution. The main difference is the goal: we’re going to select our substitution not based on uncovering the composition in our function (like in <span class="process-math">\(u\)</span>-substitution). Instead, we’ll focus on selecting a trigonometric function in order to utilize the relevant Pythagorean identity to re-write our sum or difference of squares.</div>

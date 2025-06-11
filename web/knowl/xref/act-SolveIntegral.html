@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="activity project-like"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Squared Trig Functions.</span>
+</h4>
+<div class="introduction">
+<div class="para">Let’s look at two integrals. We’ll talk about both at the same time, since they’re similar.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\int \sin^2(x)\;dx
+\end{equation*}
+</div></div></div>
+<div class="sbspanel top" style="width:50%;"><div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\int \cos^2(x)\;dx
+\end{equation*}
+</div></div></div>
+</div></div>
+</div>
+<article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para">What does it mean to "square" a trig function? Write these integrals in a different way, where the meaning of the "squared" exponent is more clear. What do you notice about the structure of these integrals, the operation in the integrand function? What does this mean about our choice of integration technique?</div>
+<div class="solutions"><details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+\int \sin^2(x)\;dx \amp = \int \sin(x)\sin(x)\;dx \\
+\int \cos^2(x)\;dx \amp = \int \cos(x)\cos(x)\;dx
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para">If you were to use integration by parts on these integrals, does your choice of <span class="process-math">\(u\)</span> and <span class="process-math">\(dv\)</span> even matter here? Why not?</div>
+<div class="solutions"><details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Is there a difference in the two functions being multiplied?</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para">Apply the integration by parts formula to each. What do you notice?</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">For the integral <span class="process-math">\(\displaystyle \int \sin^2(x)\;dx\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+u = \sin(x)\;\; \amp \;\;v = -\cos(x)\\
+du = \cos(x)\;dx \;\;\amp \;\;dv= \sin(x)\;dx \\
+\int \sin^2(x)\;dx \amp = -\sin(x)\cos(x)+\int \cos^2(x)\;dx 
+\end{align*}
+</div>
+</div>
+<div class="para logical">
+<div class="para">For the integral <span class="process-math">\(\displaystyle \int \cos^2(x)\;dx\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+u = \cos(x)\;\; \amp \;\;v = \sin(x)\\
+du = -\sin(x)\;dx \;\;\amp \;\;dv= \cos(x)\;dx \\
+\int \cos^2(x)\;dx \amp = \sin(x)\cos(x) + \int \sin^2(x)\;dx 
+\end{align*}
+</div>
+</div>
+</div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para logical">
+<div class="para">Instead of applying another round of integration by parts to the resulting integral, use the Pythagorean identities to re-write these integrals:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\sin^2(x) \amp = 1-\cos^2(x)\\
+\cos^2(x) \amp = 1-\sin^2(x)
+\end{align*}
+</div>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para">You should notice that in your equation for the integration of <span class="process-math">\(\displaystyle \sin^2(x)\;dx\text{,}\)</span> you have another copy of <span class="process-math">\(\displaystyle \int \sin^2(x)\;dx\text{.}\)</span> Similarly, in your equation for the integration of <span class="process-math">\(\displaystyle \cos^2(x)\;dx\text{,}\)</span> you have another copy of <span class="process-math">\(\displaystyle \int \cos^2(x)\;dx\text{.}\)</span>
+</div> <div class="para">Replace these integrals with a variable, like <span class="process-math">\(I\)</span> (for "integral"). Can you "solve" for this variable (integral)?</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">For <span class="process-math">\(\int \sin^2(x)\;dx\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\int \sin^2(x)\;dx \amp = -\sin(x)\cos(x) + \int 1-\sin^2(x)\;dx\\
+I \amp = -\sin(x)\cos(x) + \int 1 \;dx - \underbrace{\int \sin^2(x)\;dx}_{I}\\
+I \amp = -\sin(x)\cos(x) + x - I\\
+2I \amp = -\sin(x)\cos(x)+x\\
+I \amp = \dfrac{-\sin(x)\cos(x)+x}{2}+C
+\end{align*}
+</div>
+<div class="para">So we end up with:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \sin^2(x)\;dx = \frac{x-\sin(x)\cos(x)}{2}+C\text{.}
+\end{equation*}
+</div>
+</div>
+<div class="para logical">
+<div class="para">For <span class="process-math">\(\int \cos^2(x)\;dx\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\int \cos^2(x)\;dx \amp = \sin(x)\cos(x) + \int 1-\cos^2(x)\;dx\\
+I \amp = \sin(x)\cos(x) + \int 1 \;dx - \underbrace{\int \cos^2(x)\;dx}_{I}\\
+I \amp = \sin(x)\cos(x) + x - I\\
+2I \amp = \sin(x)\cos(x)+x\\
+I \amp = \dfrac{\sin(x)\cos(x)+x}{2}+C
+\end{align*}
+</div>
+<div class="para">So we end up with:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \cos^2(x)\;dx = \frac{x+\sin(x)\cos(x)}{2}+C\text{.}
+\end{equation*}
+</div>
+</div>
+</div></details></div></article></article><span class="incontext"><a class="internal" href="sec-IntegrationByParts.html#act-SolveIntegral">in-context</a></span>
+</body>
+</html>

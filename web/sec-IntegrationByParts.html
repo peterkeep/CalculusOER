@@ -97,7 +97,7 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.3';
+eBookConfig.runestone_version = '7.7.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
@@ -953,7 +953,47 @@ du = -\sin(x)\;dx \;\;\amp \;\;dv= \cos(x)\;dx \\
 </div>
 </div></article><article class="task exercise-like" id="act-SolveIntegral-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="act-SolveIntegral-7-1-1">You should notice that in your equation for the integration of <span class="process-math">\(\displaystyle \sin^2(x)\;dx\text{,}\)</span> you have another copy of <span class="process-math">\(\displaystyle \int \sin^2(x)\;dx\text{.}\)</span> Similarly, in your equation for the integration of <span class="process-math">\(\displaystyle \cos^2(x)\;dx\text{,}\)</span> you have another copy of <span class="process-math">\(\displaystyle \int \cos^2(x)\;dx\text{.}\)</span>
-</div> <div class="para" id="act-SolveIntegral-7-1-2">Replace these integrals with a variable, like <span class="process-math">\(I\)</span> (for "integral"). Can you "solve" for this variable (integral)?</div></article></article><div class="para" id="subsec-SolvingForIntegral-4">This "solving for the integral" approach works well, but works best when we can see it coming. Notice that it happened here due to the repeating structure of the derivatives of the sine and cosine functions, as well as the Pythagorean identities. We can see some more examples of this in play with similar functions!</div>
+</div> <div class="para" id="act-SolveIntegral-7-1-2">Replace these integrals with a variable, like <span class="process-math">\(I\)</span> (for "integral"). Can you "solve" for this variable (integral)?</div>
+<div class="solutions"><details id="act-SolveIntegral-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-SolveIntegral-7-2-1">
+<div class="para">For <span class="process-math">\(\int \sin^2(x)\;dx\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="act-SolveIntegral-7-2-1-2">
+\begin{align*}
+\int \sin^2(x)\;dx \amp = -\sin(x)\cos(x) + \int 1-\sin^2(x)\;dx\\
+I \amp = -\sin(x)\cos(x) + \int 1 \;dx - \underbrace{\int \sin^2(x)\;dx}_{I}\\
+I \amp = -\sin(x)\cos(x) + x - I\\
+2I \amp = -\sin(x)\cos(x)+x\\
+I \amp = \dfrac{-\sin(x)\cos(x)+x}{2}+C
+\end{align*}
+</div>
+<div class="para">So we end up with:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \sin^2(x)\;dx = \frac{x-\sin(x)\cos(x)}{2}+C\text{.}
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="act-SolveIntegral-7-2-2">
+<div class="para">For <span class="process-math">\(\int \cos^2(x)\;dx\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="act-SolveIntegral-7-2-2-2">
+\begin{align*}
+\int \cos^2(x)\;dx \amp = \sin(x)\cos(x) + \int 1-\cos^2(x)\;dx\\
+I \amp = \sin(x)\cos(x) + \int 1 \;dx - \underbrace{\int \cos^2(x)\;dx}_{I}\\
+I \amp = \sin(x)\cos(x) + x - I\\
+2I \amp = \sin(x)\cos(x)+x\\
+I \amp = \dfrac{\sin(x)\cos(x)+x}{2}+C
+\end{align*}
+</div>
+<div class="para">So we end up with:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \cos^2(x)\;dx = \frac{x+\sin(x)\cos(x)}{2}+C\text{.}
+\end{equation*}
+</div>
+</div>
+</div></details></div></article></article><div class="para" id="subsec-SolvingForIntegral-4">This "solving for the integral" approach works well, but works best when we can see it coming. Notice that it happened here due to the repeating structure of the derivatives of the sine and cosine functions, as well as the Pythagorean identities. We can see some more examples of this in play with similar functions!</div>
 <article class="example example-like" id="ex-sincos"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.4.5</span><span class="period">.</span>
 </h4>
