@@ -85,5 +85,35 @@
                 Replace these integrals with a variable, like <m>I</m> (for "integral"). Can you "solve" for this variable (integral)?
             </p>
         </statement>
+        <solution>
+            <p>
+                For <m>\int \sin^2(x)\;dx</m>:
+                <md>
+                    <mrow>\int \sin^2(x)\;dx \amp = -\sin(x)\cos(x) + \int 1-\sin^2(x)\;dx</mrow>
+                    <mrow> I \amp = -\sin(x)\cos(x) + \int 1 \;dx - \underbrace{\int \sin^2(x)\;dx}_{I}</mrow>
+                    <mrow>I \amp = -\sin(x)\cos(x) + x - I</mrow>
+                    <mrow>2I \amp = -\sin(x)\cos(x)+x</mrow>
+                    <mrow>I \amp = \dfrac{-\sin(x)\cos(x)+x}{2}+C</mrow>
+                </md>
+                So we end up with:
+                <me>
+                    \int \sin^2(x)\;dx = \frac{x-\sin(x)\cos(x)}{2}+C
+                </me>.
+            </p>
+            <p>
+                For <m>\int \cos^2(x)\;dx</m>:
+                <md>
+                    <mrow>\int \cos^2(x)\;dx \amp = \sin(x)\cos(x) + \int 1-\cos^2(x)\;dx</mrow>
+                    <mrow> I \amp = \sin(x)\cos(x) + \int 1 \;dx - \underbrace{\int \cos^2(x)\;dx}_{I}</mrow>
+                    <mrow>I \amp = \sin(x)\cos(x) + x - I</mrow>
+                    <mrow>2I \amp = \sin(x)\cos(x)+x</mrow>
+                    <mrow>I \amp = \dfrac{\sin(x)\cos(x)+x}{2}+C</mrow>
+                </md>
+                So we end up with:
+                <me>
+                    \int \cos^2(x)\;dx = \frac{x+\sin(x)\cos(x)}{2}+C
+                </me>.
+            </p>
+        </solution>
     </task>
 </activity>

@@ -1,0 +1,104 @@
+<activity xml:id="act-DifferenceOfSquares">
+    <title>Difference of Squares</title>    
+    <introduction>
+        <p>
+            Consider the integral:
+            <me>
+                \int \sqrt{1-x^2}\;dx
+            </me>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                First, convince yourself that a normal <m>u</m>-substitution will not be an effective strategy for integration in this case. Why not?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                There is composition in this integrand function, but what part of our <m>u</m>-substitution is missing?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Second, convince yourself that <m>\sqrt{1-x^2}\neq \sqrt{1}-\sqrt{x^2}</m>. Why can we not distribute roots across sums and differences like this? When <em>can</em> we "distribute" roots across multiple things?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                A root is really an exponent: why can't we distribute exponents across sums and differences? Try this with <m>(1-x^2)^2</m>, and convince yourself that this isn't <m>1^2-(x^2)^2</m>.
+            </p>
+            <p>
+                Notice, though, that something like <m>(4x^2)^2=4^2(x^2)^2</m>, and <m>\sqrt{4x^2}</m> could act similarly.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Our goal, then, is to utilize a substitution (using trigonometric functions) to somehow transform this difference of squared terms under the square root into a single product of squared things under the square root.
+            </p>
+            <p>
+                Which trigonometric identities from our list of them above utilize differences of thing squared, and equate them to a single term?
+            </p>
+            <p>
+                Can you use the order of the subtraction to help guide which substitution we should use?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We want to pick some trigonometric function <m>T(\theta)</m> so that when we let <m>x=T(\theta)</m>, we end up with one of the Pythagorean identities above. Is there something we can put in for <m>x</m> such that <m>1-x^2</m> becomes <m>1-(T(\theta))^2</m> in a convenient way?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                When we do a variable substitution in an integral, we are not only finding a way of transforming <m>x</m> to be in terms of some other variable (in this case, <m>\theta</m>). We also need to transform the differential, <m>dx</m>. Based on your substitution of <m>x=T(\theta)</m>, what is <m>dx</m>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We'll use <m>dx=T'(\theta)\;d\theta</m>. What is <m>T'(\theta)</m> for you?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Perform your substitution! Use your substitution <m>x=T(\theta)</m> and <m>dx=T'(\theta)\;d\theta</m>. Note that we have picked this substitution with a very specific goal: we are hoping to notice a Pythagorean identity.
+            </p>
+            <p>
+                After you have performed your substitution, apply the relevant Pythagorean identity to the <term>radicand</term>: the bit of our function underneath the radical or root. What integral are we left with (in terms of <m>\theta</m>)?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Since we are using <m>x=\sin(\theta)</m>, we should notice <m>1-\sin^2(\theta)</m> underneath the square root.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <md>
+                    <mrow>x=\sin(\theta)\;\; \amp \;\; dx=\cos(\theta)\;d\theta</mrow>
+                    <mrow>\int \sqrt{1-x^2}\;dx \amp = \int \sqrt{\underbrace{1-\sin^2(\theta)}_{\cos^2(\theta)}} \cos(\theta)\;d\theta</mrow>
+                    <mrow> \amp = \int \sqrt{\cos^2(\theta)}\;\cos(\theta)\;d\theta</mrow>
+                    <mrow> \amp = \int \cos(\theta) \cos(\theta)\;d\theta</mrow>
+                    <mrow> \amp = \int \cos^2(\theta)\;d\theta</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <conclusion>
+        <p>
+            This new integral is something we can antidifferentiate now! We have already done this one in <xref ref="act-SolveIntegral" text="type-global-title"/>. So we can end up with:
+            <md>
+                <mrow>\int \sqrt{1-x^2}\;dx \amp = \int \cos^2(\theta)\;d\theta</mrow>
+                <mrow> \amp = \frac{\theta + \sin(\theta)\cos(\theta)}{2}+C</mrow>
+            </md>
+            It is up to us, now, to translate this antiderivative family to be written in terms of <m>x</m>. We can utilize our substitution to do this, but let's first think about how this variable substitution works a bit more.
+        </p>
+    </conclusion>
+</activity>

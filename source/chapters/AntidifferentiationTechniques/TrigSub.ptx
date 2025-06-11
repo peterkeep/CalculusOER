@@ -5,8 +5,14 @@
 
   <introduction>
     <p>
-      
+      We're going to look at an integral that requires a variable substitution, but our goal for the substitution will be a bit different. We're going to focus on the structure of our integrand function, but we won't be focusing on composition. Instead, we're going to focus on some trigonometric identities that we've used already:
+      <md>
+        <mrow>\sin^2(\theta) \amp =1-\cos^2(\theta)</mrow>
+        <mrow>\tan^2(\theta) \amp =\sec^2(\theta)-1</mrow>
+        <mrow>\sec^2(\theta) \amp = \tan^2(\theta)+1</mrow>
+      </md>
     </p>
+    <xi:include href="./activities/act-DifferenceOfSquares.ptx" />
   </introduction>
   <subsection xml:id="subsec-AnotherVariableSubstitution">
     <title>Another Type of Variable Substitution</title>
