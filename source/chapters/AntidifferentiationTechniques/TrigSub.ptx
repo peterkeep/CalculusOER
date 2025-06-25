@@ -54,6 +54,30 @@
         </latex-image>
       </image>
     </figure>
+    <p>
+      Ok, but how do we choose which trigonometric function to use in our substitution? Since we're focussing on sums or differences of squared terms, we can think of the different arrangements of terms, connect them with different Pythagorean identities, and set up some strategies for picking a trigonometric substitution.
+      <md>
+        <mrow> 1-x^2 \amp \longleftrightarrow  1-\sin^2(\theta) = \cos^2(\theta)</mrow>
+        <mrow> x^2-1 \amp \longleftrightarrow \sec^2(\theta)-1=\tan^2(\theta)</mrow>
+        <mrow> x^2+1 \amp \longleftrightarrow \tan^2(\theta)+1 = \sec^2(\theta)</mrow>
+      </md>
+      We can note that the sum is commutative, so we can treat <m>1+x^2</m> the same that we treat <m>x^2+1</m>.
+    </p>
+    <p>
+      We'll also notice that the constant term can differ: we can scale our Pythagorean identities by some constant easily to make sure that they match.
+      <md>
+        <mrow> a^2-x^2 \amp \longleftrightarrow  a^2-\left(a\sin(\theta)\right)^2 = \left(a\cos(\theta)\right)^2</mrow>
+        <mrow> x^2-a^2 \amp \longleftrightarrow \left(a\sec(\theta)\right)^2-a^2=\left(a\tan(\theta)\right)^2</mrow>
+        <mrow> x^2+a^2 \amp \longleftrightarrow \left(a\tan(\theta)\right)^2+a^2 = \left(a\sec(\theta)\right)^2</mrow>
+      </md>
+    </p>
+    <p>
+      This can be confusing, and we want to keep thinking about how we might recognize these structures to pick a substitution. Yes, we can recognize these Pythagorean identities. We can rely on the order of subtraction or noticing addition. But we can also think about this geometrically. The Pythagorean identities come from the Pythagorean Theorem, relating the squared lengths of the sides of a right triangle together. Let's visualize our substitutions geometrically.
+    </p>
+    <p>
+      We'll consider three triangles, each with side lengths of <m>x</m> and <m>a</m>. The third side length will vary between <m>\sqrt{x^2-a^2}</m>, <m>\sqrt{a^2-x^2}</m>, and <m>\sqrt{x^2+a^2}</m> (or the equivalent <m>\sqrt{a^2+x^2}</m>) based on which length is representing the hypotenuse.
+    </p>
+    <xi:include href="./activities/act-TrigSubTriangles.ptx" />
   </subsection>
   <xi:include href="./exercises/ex-TrigSub.ptx" />
 
