@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="theorem theorem-like"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Generalized Inverse Tangent Forms.</span>
+</h4>
+<div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\int \frac{1}{u^2+a^2}\;du = \frac{1}{a}\tan^{-1}\left(\frac{u}{a}\right)+C
+\end{equation*}
+</div></div></article><details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical">
+<div class="para">This is really just based on a clever substitution. Once we see this specific constant over a sum of squares, we can factor out a convenient coefficient to force the denominator to look like a sum of something squared and 1.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\int \frac{1}{u^2+a^2}\;du \amp= \frac{1}{a^2}\int \frac{1}{\frac{u^2}{a^2}+1} \;du\\
+\amp = \frac{1}{a^2}\int \frac{1}{\left(\frac{u}{a}\right)^2+1}\;du
+\end{align*}
+</div>
+<div class="para">Now we can let <span class="process-math">\(w=\frac{u}{a}\)</span> and <span class="process-math">\(dw=\frac{1}{a}\;du\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\frac{1}{a^2}\int \frac{1}{\left(\frac{u}{a}\right)^2+1}\;du \amp = \frac{1}{a}\int \frac{1}{\left(\frac{u}{a}\right)^2+1}\left(\frac{1}{a}\right)\;du\\
+\amp =\frac{1}{a}\int \frac{1}{w^2+1}\;dw\\
+\amp = \frac{1}{a}\tan^{-1}(w)+C\\
+\amp = \frac{1}{a}\tan^{-1}\left(\frac{u}{a}\right)+C
+\end{align*}
+</div>
+<div class="para">This strategy can also be used for other inverse trigonometric derivatives. But we will use the inverse tangent form most of all, and thus we want to outline it fully.</div>
+</div></article></details><span class="incontext"><a class="internal" href="sec-AlgebraicManipulations.html#thm-GeneralizedInvTan">in-context</a></span>
+</body>
+</html>

@@ -97,14 +97,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.5';
+eBookConfig.runestone_version = '7.8.3';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.107bf2d9be20d9c4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.8e4157bd77a28b29.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 </head>
 <body class="pretext book ignore-math">
@@ -435,7 +435,13 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-MoreVolumes.html#ex-MoreVolumes" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Arc Length and Surface Area</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Arc Length and Surface Area</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#subsec-ArcLength" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Integrals for Evaluating the Length of a Curve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#subsec-SurfaceArea" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Integrals for Evaluating the Surface Area of a Solid</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Other Applications of Integrals</span></a></div></li>
 </ul>
 </li>
@@ -633,7 +639,304 @@ x=\sin(\theta)\;\; \amp \;\; dx=\cos(\theta)\;d\theta\\
 </h3>
 <div class="para" id="subsec-AnotherVariableSubstitution-2">We’re going to employ another variable substitution, in the same way that we use <span class="process-math">\(u\)</span>-substitution. The main difference is the goal: we’re going to select our substitution not based on uncovering the composition in our function (like in <span class="process-math">\(u\)</span>-substitution). Instead, we’ll focus on selecting a trigonometric function in order to utilize the relevant Pythagorean identity to re-write our sum or difference of squares.</div>
 <figure class="figure figure-like" id="fig-TrigSub"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/fig-TrigSub-2.svg" role="img" class="contained" alt='Two rectangles, one labeled "x Context" and the other, beside it, labeled "theta Context." Inside the "x Context" rectangle is an integral of f(x) dx with an arrow pointing towards F(x)+C. Inside the "theta Context" rectangle is an integral of g(theta) d theta with an arrow pointing towards G(theta)+C. There is an arrow connecting the integral of f(x) dx in the first rectangle to the integral of g(theta) d theta labeled x=T(theta) and dx = T’(theta) d theta. Then there is an arrow connecting G(theta)+C to F(x)+C labeled x = T(theta)'></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.6.1<span class="period">.</span></span><span class="space"> </span>General idea of how this variable substitution works.</figcaption></figure></section><section class="exercises" id="ex-TrigSub"><h3 class="heading hide-type">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.6.1<span class="period">.</span></span><span class="space"> </span>General idea of how this variable substitution works.</figcaption></figure><div class="para logical" id="subsec-AnotherVariableSubstitution-4">
+<div class="para">Ok, but how do we choose which trigonometric function to use in our substitution? Since we’re focussing on sums or differences of squared terms, we can think of the different arrangements of terms, connect them with different Pythagorean identities, and set up some strategies for picking a trigonometric substitution.</div>
+<div class="displaymath process-math" id="subsec-AnotherVariableSubstitution-4-1">
+\begin{align*}
+1-x^2 \amp \longleftrightarrow  1-\sin^2(\theta) = \cos^2(\theta)\\
+x^2-1 \amp \longleftrightarrow \sec^2(\theta)-1=\tan^2(\theta)\\
+x^2+1 \amp \longleftrightarrow \tan^2(\theta)+1 = \sec^2(\theta)
+\end{align*}
+</div>
+<div class="para">We can note that the sum is commutative, so we can treat <span class="process-math">\(1+x^2\)</span> the same that we treat <span class="process-math">\(x^2+1\text{.}\)</span>
+</div>
+</div>
+<div class="para logical" id="subsec-AnotherVariableSubstitution-5">
+<div class="para">We’ll also notice that the constant term can differ: we can scale our Pythagorean identities by some constant easily to make sure that they match.</div>
+<div class="displaymath process-math" id="subsec-AnotherVariableSubstitution-5-1">
+\begin{align*}
+a^2-x^2 \amp \longleftrightarrow  a^2-\left(a\sin(\theta)\right)^2 = \left(a\cos(\theta)\right)^2\\
+x^2-a^2 \amp \longleftrightarrow \left(a\sec(\theta)\right)^2-a^2=\left(a\tan(\theta)\right)^2\\
+x^2+a^2 \amp \longleftrightarrow \left(a\tan(\theta)\right)^2+a^2 = \left(a\sec(\theta)\right)^2
+\end{align*}
+</div>
+</div>
+<div class="para" id="subsec-AnotherVariableSubstitution-6">This can be confusing, and we want to keep thinking about how we might recognize these structures to pick a substitution. Yes, we can recognize these Pythagorean identities. We can rely on the order of subtraction or noticing addition. But we can also think about this geometrically. The Pythagorean identities come from the Pythagorean Theorem, relating the squared lengths of the sides of a right triangle together. Let’s visualize our substitutions geometrically.</div>
+<div class="para" id="subsec-AnotherVariableSubstitution-7">We’ll consider three triangles, each with side lengths of <span class="process-math">\(x\)</span> and <span class="process-math">\(a\text{.}\)</span> The third side length will vary between <span class="process-math">\(\sqrt{x^2-a^2}\text{,}\)</span> <span class="process-math">\(\sqrt{a^2-x^2}\text{,}\)</span> and <span class="process-math">\(\sqrt{x^2+a^2}\)</span> (or the equivalent <span class="process-math">\(\sqrt{a^2+x^2}\)</span>) based on which length is representing the hypotenuse.</div>
+<article class="activity project-like" id="act-TrigSubTriangles"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.6.2</span><span class="period">.</span><span class="space"> </span><span class="title">Trig Substitution Geoemtry.</span>
+</h4>
+<div class="introduction" id="act-TrigSubTriangles-2"><div class="para" id="act-TrigSubTriangles-2-1">We’re going to consider three triangles, and we’re going to fill in side lengths. In each of these, we’ll assume that the lengths <span class="process-math">\(x\)</span> and <span class="process-math">\(a\)</span> are real numbers and are positive. <figure class="figure figure-like" id="fig-TrigSubTriangles"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel middle" style="width:31.0344827586207%;"><img src="generated/latex-image/fig-TrigSubTriangles-2-1.svg" role="img" class="contained" alt="Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled a."></div>
+<div class="sbspanel middle" style="width:31.0344827586207%;"><img src="generated/latex-image/fig-TrigSubTriangles-2-2.svg" role="img" class="contained" alt="Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled a."></div>
+<div class="sbspanel middle" style="width:31.0344827586207%;"><img src="generated/latex-image/fig-TrigSubTriangles-2-3.svg" role="img" class="contained" alt="Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled a, and the hypotenuse is labeled x."></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.6.2<span class="period">.</span></span><span class="space"> </span>Three triangles to guide our trigonometric substitutions.</figcaption></figure>
+</div></div>
+<article class="task exercise-like" id="act-TrigSubTriangles-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-TrigSubTriangles-3-1-1">Use the Pythagorean theorem to label the missing side length in each of the three triangles.</div></article><article class="task exercise-like" id="act-TrigSubTriangles-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-TrigSubTriangles-4-1-1">For each triangle, explain how you can tell which side length represents the hypotenuse when you see the lengths <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(a\text{,}\)</span> and then the missing lengths you found above: <span class="process-math">\(\sqrt{x^2-a^2}\text{,}\)</span> <span class="process-math">\(\sqrt{a^2-x^2}\text{,}\)</span> or <span class="process-math">\(\sqrt{x^2+a^2}\text{.}\)</span>
+</div>
+<div class="solutions">
+<details id="act-TrigSubTriangles-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-TrigSubTriangles-4-2-1">We know that the hypotenuse is the longest side length in a triangle. Just based on the square root length, how can you tell which length is longest?</div></div></details><details id="act-TrigSubTriangles-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="act-TrigSubTriangles-4-3-1">If one of the side lengths is <span class="process-math">\(\sqrt{x^2-a^2}\text{,}\)</span> then we know that <span class="process-math">\(x\gt a\)</span> (otherwise the square root is a non-real number). We also know that <span class="process-math">\(x\gt \sqrt{x^2-a^2}\)</span> (because <span class="process-math">\(a\gt 0\)</span>). This means that <span class="process-math">\(x\)</span> is the length of the hypotenuse.</div>
+<div class="para" id="act-TrigSubTriangles-4-3-2">If one of the side lengths is <span class="process-math">\(\sqrt{a^2-x^2}\text{,}\)</span> then we know that <span class="process-math">\(a\gt x\)</span> (otherwise the square root is a non-real number). We also know that <span class="process-math">\(a\gt \sqrt{a^2-x^2}\)</span> (because <span class="process-math">\(x\gt 0\)</span>). This means that <span class="process-math">\(a\)</span> is the length of the hypotenuse.</div>
+<div class="para" id="act-TrigSubTriangles-4-3-3">If one of the side lengths is <span class="process-math">\(\sqrt{x^2+a^2}\text{,}\)</span> then we know that <span class="process-math">\(\sqrt{x^2+a^2} \gt a\)</span> and <span class="process-math">\(\sqrt{x^2+a^2} \gt x\)</span> (because <span class="process-math">\(x,a\gt 0\)</span>). This means that <span class="process-math">\(\sqrt{x^2+a^2}\)</span> is the length of the hypotenuse.</div>
+</div></details>
+</div></article><article class="task exercise-like" id="act-TrigSubTriangles-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-TrigSubTriangles-5-1-1">For each triangle, find a trigonometric function of <span class="process-math">\(\theta\)</span> that connects lengths <span class="process-math">\(x\)</span> and <span class="process-math">\(a\)</span> to each other.</div> <div class="para" id="act-TrigSubTriangles-5-1-2">Solve each for <span class="process-math">\(x\)</span> to reveal the relevant substitution.</div></article><article class="task exercise-like" id="act-TrigSubTriangles-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-TrigSubTriangles-6-1-1">For each substitution, find the corresponding substitution for the differential, <span class="process-math">\(dx\text{.}\)</span>
+</div></article></article><div class="para" id="subsec-AnotherVariableSubstitution-9">This gives us a nice strategy for substitution!</div>
+<article class="assemblage assemblage-like" id="strat-TrigSub"><h4 class="heading"><span class="title">Trigonometric Substitution.</span></h4>
+<div class="para logical" id="strat-TrigSub-2">
+<div class="para">We have three (typical) ways of using trigonometric substitution to transform a sum or difference of squared terms into a product of squares.</div>
+<ul class="disc" id="strat-TrigSub-2-1">
+<li id="strat-TrigSub-2-1-1">
+<div class="para" id="strat-TrigSub-2-1-1-1">For an integral containing <span class="process-math">\((a^2-x^2)\text{,}\)</span> we can use the following triangle to build our substitution:</div>
+<figure class="figure figure-like" id="fig-TrigSubSine"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/fig-TrigSubSine-2.svg" role="img" class="contained" alt="Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled a, and the remaining side length is labeled sqrt(a^2-x^2)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.6.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para logical" id="strat-TrigSub-2-1-1-3">
+<div class="para">This results in using the following substitution and identity.</div>
+<div class="displaymath process-math" id="strat-TrigSub-2-1-1-3-1">
+\begin{align*}
+x \amp = a\sin(\theta)\\
+dx \amp = a\cos(\theta)\;d\theta\\
+a^2-\left(a\sin(\theta)\right)^2 \amp=\left(a\cos(\theta)\right)^2 
+\end{align*}
+</div>
+</div>
+</li>
+<li id="strat-TrigSub-2-1-2">
+<div class="para" id="strat-TrigSub-2-1-2-1">For an integral containing <span class="process-math">\((x^2-a^2)\text{,}\)</span> we can use the following triangle to build our substitution:</div>
+<figure class="figure figure-like" id="fig-TrigSubSecant"><div class="image-box" style="width: 67%; margin-left: 16.5%; margin-right: 16.5%;"><img src="generated/latex-image/fig-TrigSubSecant-2.svg" role="img" class="contained" alt="Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled a, and the hypotenuse is labeled x, and the remaining side length is labeled sqrt(x^2-a^2)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.6.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para logical" id="strat-TrigSub-2-1-2-3">
+<div class="para">This results in using the following substitution and identity.</div>
+<div class="displaymath process-math" id="strat-TrigSub-2-1-2-3-1">
+\begin{align*}
+x \amp = a\sec(\theta)\\
+dx \amp = a\sec(\theta)\tan(\theta)\;d\theta\\
+\left(a\sec(\theta)\right)^2 -a^2 \amp=\left(a\tan(\theta)\right)^2 
+\end{align*}
+</div>
+</div>
+</li>
+<li id="strat-TrigSub-2-1-3">
+<div class="para" id="strat-TrigSub-2-1-3-1">For an integral containing <span class="process-math">\((x^2+a^2)\text{,}\)</span> we can use the following triangle to build our substitution:</div>
+<figure class="figure figure-like" id="fig-TrigSubTan"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/fig-TrigSubTan-2.svg" role="img" class="contained" alt="Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled a. The hypotenuse is labeled sqrt(x^2+a^2)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.6.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para logical" id="strat-TrigSub-2-1-3-3">
+<div class="para">This results in using the following substitution and identity.</div>
+<div class="displaymath process-math" id="strat-TrigSub-2-1-3-3-1">
+\begin{align*}
+x \amp = a\tan(\theta)\\
+dx \amp = a\sec^2(\theta)\;d\theta\\
+\left(a\tan(\theta)\right)^2+a^2\ \amp=\left(a\sec(\theta)\right)^2 
+\end{align*}
+</div>
+</div>
+</li>
+</ul>
+</div></article><div class="para logical" id="subsec-AnotherVariableSubstitution-11">
+<div class="para">Two things to note before we move on:</div>
+<ol class="decimal" id="subsec-AnotherVariableSubstitution-11-1">
+<li id="subsec-AnotherVariableSubstitution-11-1-1"><div class="para" id="subsec-AnotherVariableSubstitution-11-1-1-1">There are really 6 main trigonometric substitutions. If you go back to <a href="sec-TrigSub.html#act-TrigSubTriangles" class="xref" data-knowl="./knowl/xref/act-TrigSubTriangles.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.6.2: Trig Substitution Geoemtry">Activity 7.6.2</a> and place the angle <span class="process-math">\(\theta\)</span> in the opposite corner of the triangle, the substitutions you build will all be using the "co-functions": cosine, cosecant, and cotangent. Each of these has a very similar structure with regard to derivatives (for the differential substitution) and Pythagorean identities. Each is equivalent to the respective sine, secant, and tangent substitutions. We often choose to use sine, secant, and tangent just due to familiarity.</div></li>
+<li id="subsec-AnotherVariableSubstitution-11-1-2"><div class="para" id="subsec-AnotherVariableSubstitution-11-1-2-1">We can use the triangle as a kind of key for our substitution! After antidifferentiating, we have some antiderivative family written in terms of an angle <span class="process-math">\(\theta\text{:}\)</span> we can use the triangle to substitution trigonometric functions of <span class="process-math">\(\theta\)</span> to be written in terms of <span class="process-math">\(x\text{.}\)</span>
+</div></li>
+</ol>
+</div>
+<article class="example example-like" id="subsec-AnotherVariableSubstitution-12"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.6.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-AnotherVariableSubstitution-12-1-1">We can finish the substitution we started in <a href="sec-TrigSub.html#act-DifferenceOfSquares" class="xref" data-knowl="./knowl/xref/act-DifferenceOfSquares.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.6.1: Difference of Squares">Activity 7.6.1</a>. We used the substitution <span class="process-math">\(x=\sin(\theta)\text{,}\)</span> but we can now construct the relevant triangle.</div> <div class="para" id="subsec-AnotherVariableSubstitution-12-1-2">Since we were hoping so use a substitution to re-write the difference of squares, <span class="process-math">\(\sqrt{1-x^2}\text{,}\)</span> we had the following triangle:</div> <figure class="figure figure-like" id="subsec-AnotherVariableSubstitution-12-1-3"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/subsec-AnotherVariableSubstitution-12-1-3-2.svg" role="img" class="contained" alt="Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled 1, and the remaining side length is labeled sqrt(1-x^2)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.6.7<span class="period">.</span></span><span class="space"> </span>Substitution used in <a href="sec-TrigSub.html#act-DifferenceOfSquares" class="xref" data-knowl="./knowl/xref/act-DifferenceOfSquares.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.6.1: Difference of Squares">Activity 7.6.1</a>.</figcaption></figure> <div class="para" id="subsec-AnotherVariableSubstitution-12-1-4">We can see that <span class="process-math">\(\sin(\theta)=\dfrac{x}{1}\)</span> or <span class="process-math">\(x=\sin(\theta)\text{,}\)</span> which was our substitution.</div> <div class="para logical" id="subsec-AnotherVariableSubstitution-12-1-5">
+<div class="para">But we were also left with the following antiderivative:</div>
+<div class="displaymath process-math" id="subsec-AnotherVariableSubstitution-12-1-5-1">
+\begin{align*}
+\int \sqrt{1-x^2}\;dx \amp = \int \cos^2(\theta)\;d\theta\\
+\amp = \frac{\theta + \sin(\theta)\cos(\theta)}{2}+C
+\end{align*}
+</div>
+<div class="para">Now we can substitute that antiderivative! We can see from our triangle that <span class="process-math">\(\cos(\theta)=\sqrt{1-x^2}\text{,}\)</span> <span class="process-math">\(\sin(\theta)=x\)</span> (this was also our original substitution anyways), and we also can invert our substitution to get <span class="process-math">\(\theta=\sin^{-1}(x)\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-AnotherVariableSubstitution-12-1-5-5">
+\begin{align*}
+\int \sqrt{1-x^2}\;dx \amp = \int \cos^2(\theta)\;d\theta\\
+\amp = \frac{\theta + \sin(\theta)\cos(\theta)}{2}+C\\
+\amp = \frac{1}{2}\left(\sin^{-1}(x) + x\sqrt{1-x^2}\right)+C
+\end{align*}
+</div>
+</div></article><article class="activity project-like" id="act-TrigSubPractice"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.6.3</span><span class="period">.</span><span class="space"> </span><span class="title">Practicing Trigonometric Substitution.</span>
+</h4>
+<div class="introduction" id="act-TrigSubPractice-2"><div class="para logical" id="act-TrigSubPractice-2-1">
+<div class="para">Let’s look at three integrals, and practice the kind of thinking we’ll need to use to apply trigonometric substitution to them.</div>
+<ol class="decimal" id="act-TrigSubPractice-2-1-1">
+<li id="act-TrigSubPractice-2-1-1-1"><div class="para" id="act-TrigSubPractice-2-1-1-1-1"><span class="process-math">\(\displaystyle \displaystyle \int \dfrac{\sqrt{x^2-9}}{x}\;dx\)</span></div></li>
+<li id="act-TrigSubPractice-2-1-1-2"><div class="para" id="act-TrigSubPractice-2-1-1-2-1"><span class="process-math">\(\displaystyle \displaystyle \int \frac{2}{(4-x^2)^{3/2}}\;dx\)</span></div></li>
+<li id="act-TrigSubPractice-2-1-1-3"><div class="para" id="act-TrigSubPractice-2-1-1-3-1"><span class="process-math">\(\displaystyle \displaystyle \int \frac{1}{x^2\sqrt{x^2+1}}\;dx\)</span></div></li>
+</ol>
+<div class="para">For each integral, do the following:</div>
+</div></div>
+<article class="task exercise-like" id="act-TrigSubPractice-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-TrigSubPractice-3-1-1">Identify the term (or terms) that signify that trigonometric substitution might be a reasonable strategy.</div>
+<div class="solutions"><details id="act-TrigSubPractice-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-TrigSubPractice-3-2-1">
+<div class="para">In each case, you’re looking for some sum or difference of squared terms, normally (but not always) nested inside of some square root. It also might be nice to re-write the second integral in order to notice the root:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{2}{(4-x^2)^{3/2}}\;dx = \int \frac{2}{\left(\sqrt{4-x^2}\right)^3}\;dx\text{.}
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="task exercise-like" id="act-TrigSubPractice-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-TrigSubPractice-4-1-1">Use that portion of the integral to compare three side lengths of a triangle. Which one is the largest (and so must represent the length of the hypotenuse)?</div>
+<div class="solutions">
+<details id="act-TrigSubPractice-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-TrigSubPractice-4-2-1"><ol class="decimal" id="act-TrigSubPractice-4-2-1-1">
+<li id="act-TrigSubPractice-4-2-1-1-1"><div class="para" id="act-TrigSubPractice-4-2-1-1-1-1">For the side lengths <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(3\text{,}\)</span> and <span class="process-math">\(\sqrt{x^2-9}\text{,}\)</span> which must be the largest? Think about <span class="process-math">\(\sqrt{x^2-9}\)</span> and what we can learn from it.</div></li>
+<li id="act-TrigSubPractice-4-2-1-1-2"><div class="para" id="act-TrigSubPractice-4-2-1-1-2-1">For the side lengths <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(2\text{,}\)</span> and <span class="process-math">\(\sqrt{4-x^2}\text{,}\)</span> which must be the largest? Think about <span class="process-math">\(\sqrt{4-x^2}\)</span> and what we can learn from it.</div></li>
+<li id="act-TrigSubPractice-4-2-1-1-3"><div class="para" id="act-TrigSubPractice-4-2-1-1-3-1">For the side lengths <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(1\text{,}\)</span> and <span class="process-math">\(\sqrt{x^2+1}\text{,}\)</span> which must be the largest? Think about <span class="process-math">\(\sqrt{x^2+1}\)</span> and what we can learn from it.</div></li>
+</ol></div></div></details><details id="act-TrigSubPractice-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-TrigSubPractice-4-3-1"><ol class="decimal" id="act-TrigSubPractice-4-3-1-1">
+<li id="act-TrigSubPractice-4-3-1-1-1"><div class="para" id="act-TrigSubPractice-4-3-1-1-1-1">We know that <span class="process-math">\(x\gt 3\text{,}\)</span> since <span class="process-math">\(x^2-9\gt 0\text{.}\)</span> Similarly, we know that <span class="process-math">\(x\gt \sqrt{x^2-9}\text{.}\)</span> So <span class="process-math">\(x\)</span> has to be the length of the hypotenuse.</div></li>
+<li id="act-TrigSubPractice-4-3-1-1-2"><div class="para" id="act-TrigSubPractice-4-3-1-1-2-1">We know that <span class="process-math">\(2\gt x\text{,}\)</span> since <span class="process-math">\(4-x^2\gt 0\text{.}\)</span> Similarly, we know that <span class="process-math">\(2\gt \sqrt{4-x^2}\text{.}\)</span> So <span class="process-math">\(2\)</span> has to be the length of the hypotenuse.</div></li>
+<li id="act-TrigSubPractice-4-3-1-1-3"><div class="para" id="act-TrigSubPractice-4-3-1-1-3-1">We know that <span class="process-math">\(\sqrt{x^2+1} \gt x\text{,}\)</span> since we are adding <span class="process-math">\(1\)</span> to <span class="process-math">\(x^2\)</span> under the square root. This is also the reason that <span class="process-math">\(\sqrt{x^2+1}\gt 1\)</span> (we are adding <span class="process-math">\(x^2\)</span> under the root). So <span class="process-math">\(\sqrt{x^2+1}\)</span> has to be the length of the hypotenuse.</div></li>
+</ol></div></div></details>
+</div></article><article class="task exercise-like" id="act-TrigSubPractice-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-TrigSubPractice-5-1-1">Construct the triangle, label an angle <span class="process-math">\(\theta\text{,}\)</span> and use a trigonometric function to connect the two single-term side lengths. (Feel free to change the angle you label in order to use the sine, secant, or tangent functions instead of their co-functions).</div>
+<div class="solutions"><details id="act-TrigSubPractice-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-TrigSubPractice-5-2-1"><ol class="decimal" id="act-TrigSubPractice-5-2-1-1">
+<li id="act-TrigSubPractice-5-2-1-1-1">
+<div class="para" id="act-TrigSubPractice-5-2-1-1-1-1">For the integral <span class="process-math">\(\displaystyle \int \frac{\sqrt{x^2-9}}{x}\;dx\text{,}\)</span> we have the following triangle.</div>
+<figure class="figure figure-like" id="act-TrigSubPractice-5-2-1-1-1-2"><div class="image-box" style="width: 67%; margin-left: 16.5%; margin-right: 16.5%;"><img src="generated/latex-image/act-TrigSubPractice-5-2-1-1-1-2-2.svg" role="img" class="contained" alt="Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled 3, and the hypotenuse is labeled x, and the remaining side length is labeled sqrt(x^2-9)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.6.8<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="act-TrigSubPractice-5-2-1-1-1-3">This gives us <span class="process-math">\(\cos(\theta) = \dfrac{3}{x}\)</span> or, equivalently, <span class="process-math">\(\sec(\theta)=\dfrac{x}{3}\text{.}\)</span>
+</div>
+</li>
+<li id="act-TrigSubPractice-5-2-1-1-2">
+<div class="para" id="act-TrigSubPractice-5-2-1-1-2-1">For the integral <span class="process-math">\(\displaystyle \int \frac{2}{(4-x^2)^{3/2}}\;dx\text{,}\)</span> we have the following triangle.</div>
+<figure class="figure figure-like" id="act-TrigSubPractice-5-2-1-1-2-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/act-TrigSubPractice-5-2-1-1-2-2-2.svg" role="img" class="contained" alt="Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled 2, and the remaining side length is labeled sqrt(4-x^2)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.6.9<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="act-TrigSubPractice-5-2-1-1-2-3">This gives us <span class="process-math">\(\sin(\theta) = \dfrac{x}{2}\text{.}\)</span>
+</div>
+</li>
+<li id="act-TrigSubPractice-5-2-1-1-3">
+<div class="para" id="act-TrigSubPractice-5-2-1-1-3-1">For the integral <span class="process-math">\(\displaystyle \int \frac{1}{x^2\sqrt{x^2+1}}\;dx\text{,}\)</span> we have the following triangle.</div>
+<figure class="figure figure-like" id="act-TrigSubPractice-5-2-1-1-3-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/act-TrigSubPractice-5-2-1-1-3-2-2.svg" role="img" class="contained" alt="Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled 1. The hypotenuse is labeled sqrt(x^2+1)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.6.10<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="act-TrigSubPractice-5-2-1-1-3-3">This gives us <span class="process-math">\(\tan(\theta) = \dfrac{x}{1}\)</span> or, equivalently, <span class="process-math">\(\tan(\theta)=x\text{.}\)</span>
+</div>
+</li>
+</ol></div></div></details></div></article><article class="task exercise-like" id="act-TrigSubPractice-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-TrigSubPractice-6-1-1">Define your substitution (for both <span class="process-math">\(x\)</span> and the differential <span class="process-math">\(dx\)</span>), and identify the Pythagorean identity that will be relevant for the integral.</div>
+<div class="solutions"><details id="act-TrigSubPractice-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-TrigSubPractice-6-2-1"><ol class="decimal" id="act-TrigSubPractice-6-2-1-1">
+<li id="act-TrigSubPractice-6-2-1-1-1">
+<div class="para" id="act-TrigSubPractice-6-2-1-1-1-1">We will use <span class="process-math">\(x=3\sec(\theta)\)</span> and <span class="process-math">\(dx=3\sec(\theta)\tan(\theta)\;d\theta\text{.}\)</span>
+</div>
+<div class="para" id="act-TrigSubPractice-6-2-1-1-1-2">Then, we can expect to find the Pythagorean identity <span class="process-math">\(9\sec^2(\theta)-9=9\tan^2(\theta)\text{.}\)</span>
+</div>
+</li>
+<li id="act-TrigSubPractice-6-2-1-1-2">
+<div class="para" id="act-TrigSubPractice-6-2-1-1-2-1">We will use <span class="process-math">\(x=2\sin(\theta)\)</span> and <span class="process-math">\(dx=2\cos(\theta)\;d\theta\text{.}\)</span>
+</div>
+<div class="para" id="act-TrigSubPractice-6-2-1-1-2-2">Then, we can expect to find the Pythagorean identity <span class="process-math">\(4-4\sin^2(\theta)=4\cos^2(\theta)\text{.}\)</span>
+</div>
+</li>
+<li id="act-TrigSubPractice-6-2-1-1-3">
+<div class="para" id="act-TrigSubPractice-6-2-1-1-3-1">We will use <span class="process-math">\(x=\tan(\theta)\)</span> and <span class="process-math">\(dx=\sec^2(\theta)\;d\theta\text{.}\)</span>
+</div>
+<div class="para" id="act-TrigSubPractice-6-2-1-1-3-2">Then, we can expect to find the Pythagorean identity <span class="process-math">\(\tan^2(\theta)+1=\sec^2(\theta)\text{.}\)</span>
+</div>
+</li>
+</ol></div></div></details></div></article><article class="task exercise-like" id="act-TrigSubPractice-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-TrigSubPractice-7-1-1">Substitute and antidifferentiate!</div>
+<div class="solutions">
+<details id="act-TrigSubPractice-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-TrigSubPractice-7-2-1"><ol class="decimal" id="act-TrigSubPractice-7-2-1-1">
+<li id="act-TrigSubPractice-7-2-1-1-1">
+<div class="para" id="act-TrigSubPractice-7-2-1-1-1-1"><span class="process-math">\(\displaystyle \int \frac{\sqrt{x^2-9}}{x}\;dx = \int \frac{\sqrt{9\sec^2(\theta)-9}}{3\sec(\theta)}\left(3\sec(\theta)\tan(\theta)\right)\;d\theta\)</span></div>
+<div class="para" id="act-TrigSubPractice-7-2-1-1-1-2">Also note that <span class="process-math">\(\sqrt{9\sec^2(\theta)-9} = \sqrt{9\tan^2(\theta)}\text{.}\)</span>
+</div>
+</li>
+<li id="act-TrigSubPractice-7-2-1-1-2">
+<div class="para" id="act-TrigSubPractice-7-2-1-1-2-1"><span class="process-math">\(\displaystyle \int \frac{2}{(4-x^2)^{3/2}}\;dx = \int \frac{2}{\left(\sqrt{4-4\sin^2(\theta)}\right)^3}\left(2\cos(\theta)\right)\;d\theta\)</span></div>
+<div class="para" id="act-TrigSubPractice-7-2-1-1-2-2">Also note that <span class="process-math">\(\sqrt{4-4\sin^2(\theta)} = \sqrt{4\cos^2(\theta)}\text{.}\)</span>
+</div>
+</li>
+<li id="act-TrigSubPractice-7-2-1-1-3">
+<div class="para" id="act-TrigSubPractice-7-2-1-1-3-1"><span class="process-math">\(\displaystyle \int \frac{1}{x^2\sqrt{x^2+1}}\;dx = \int \frac{1}{\tan^2(\theta)\sqrt{\tan^2(\theta)+1}}\left(\sec^2(\theta)\right)\;d\theta\)</span></div>
+<div class="para" id="act-TrigSubPractice-7-2-1-1-3-2">Also note that <span class="process-math">\(\sqrt{\tan^2(\theta)+1} = \sqrt{\sec^2(\theta)}\text{.}\)</span>
+</div>
+</li>
+</ol></div></div></details><details id="act-TrigSubPractice-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-TrigSubPractice-7-3-1"><ol class="decimal" id="act-TrigSubPractice-7-3-1-1">
+<li id="act-TrigSubPractice-7-3-1-1-1"><div class="para logical" id="act-TrigSubPractice-7-3-1-1-1-1">
+<div class="para">Using <span class="process-math">\(x=3\sec(\theta)\text{,}\)</span> we get:</div>
+<div class="displaymath process-math" id="act-TrigSubPractice-7-3-1-1-1-1-2">
+\begin{align*}
+\int \frac{\sqrt{x^2-9}}{x}\;dx \amp = \int \frac{\sqrt{9\sec^2(\theta)-9}}{3\sec(\theta)}\left(3\sec(\theta)\tan(\theta)\right)\;d\theta\\
+\amp = \int \frac{3\sqrt{9\tan^2(\theta)}\sec(theta)\tan(\theta)}{3\sec(\theta)}\;d\theta\\
+\amp = 3 \int \tan^2(\theta)\;d\theta\\
+\amp 3 \int \sec^2(\theta)-1\;d\theta\\
+\amp 3 \left(\tan(\theta)-\theta\right)+C\\
+\amp 3\tan(\theta)-3\theta+C
+\end{align*}
+</div>
+</div></li>
+<li id="act-TrigSubPractice-7-3-1-1-2"><div class="para logical" id="act-TrigSubPractice-7-3-1-1-2-1">
+<div class="para">Using <span class="process-math">\(x=2\sin(\theta)\text{,}\)</span> we get:</div>
+<div class="displaymath process-math" id="act-TrigSubPractice-7-3-1-1-2-1-2">
+\begin{align*}
+\int \frac{2}{(4-x^2)^{3/2}}\;dx \amp= \int \frac{2}{\left(\sqrt{4-4\sin^2(\theta)}\right)^3}\left(2\cos(\theta)\right)\;d\theta \\
+\amp = \int \frac{4\cos(\theta)}{\left(\sqrt{4\cos^2(\theta)}\right)^3}\;d\theta\\
+\amp =\frac{1}{2}\int \frac{1}{\cos^2(\theta)}\;d\theta\\
+\amp =\frac{1}{2} \int \sec^2(\theta)\;d\theta\\
+\amp = \frac{1}{2}\tan(\theta)+C
+\end{align*}
+</div>
+</div></li>
+<li id="act-TrigSubPractice-7-3-1-1-3"><div class="para logical" id="act-TrigSubPractice-7-3-1-1-3-1">
+<div class="para">Using <span class="process-math">\(x=\tan(\theta)\text{,}\)</span> we get:</div>
+<div class="displaymath process-math" id="act-TrigSubPractice-7-3-1-1-3-1-2">
+\begin{align*}
+\int \frac{1}{x^2\sqrt{x^2+1}}\;dx \amp= \int \frac{1}{\tan^2(\theta)\sqrt{\tan^2(\theta)+1}}\left(\sec^2(\theta)\right)\;d\theta\\
+\amp = \int \frac{\sec^2(\theta)}{\tan^2(\theta)\sqrt{\sec^2(\theta)}}\;d\theta \\
+\amp = \int \frac{\sec(\theta)}{\tan^2(\theta)}\\
+\amp = \int \frac{\cos(\theta)}{\sin^2(\theta)}\;d\theta\\
+\amp = \int \csc(\theta)\cot(\theta)\;d\theta\\
+\amp = -\csc(\theta)+C
+\end{align*}
+</div>
+</div></li>
+</ol></div></div></details>
+</div></article><article class="task exercise-like" id="act-TrigSubPractice-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-TrigSubPractice-8-1-1">Use your triangle to substitute your antiderivative back in terms of <span class="process-math">\(x\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-TrigSubPractice-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-TrigSubPractice-8-2-1"><ol class="decimal" id="act-TrigSubPractice-8-2-1-1">
+<li id="act-TrigSubPractice-8-2-1-1-1"><div class="para logical" id="act-TrigSubPractice-8-2-1-1-1-1">
+<div class="para">From the triangle, we get <span class="process-math">\(\tan(\theta) = \dfrac{\sqrt{x^2-9}}{3} \text{.}\)</span> Then, since <span class="process-math">\(\sec(\theta)=\dfrac{x}{3}\text{,}\)</span> we can use <span class="process-math">\(\theta = \sec^{-1}\left(\dfrac{x}{3}\right)\text{.}\)</span> This gives us:</div>
+<div class="displaymath process-math" id="act-TrigSubPractice-8-2-1-1-1-1-4">
+\begin{align*}
+\int \frac{\sqrt{x^2-9}}{x}\;dx \amp = 3 \int \sec^2(\theta)-1\;d\theta\\
+\amp = 3\tan(\theta) - 3\theta + C\\
+\amp = \sqrt{x^2-9} - 3\sec^{-1}\left(\frac{x}{3}\right)+C
+\end{align*}
+</div>
+</div></li>
+<li id="act-TrigSubPractice-8-2-1-1-2"><div class="para logical" id="act-TrigSubPractice-8-2-1-1-2-1">
+<div class="para">From the triangle, we get <span class="process-math">\(\tan(\theta) = \dfrac{x}{\sqrt{4-x^2}}\text{.}\)</span> This gives us:</div>
+<div class="displaymath process-math" id="act-TrigSubPractice-8-2-1-1-2-1-2">
+\begin{align*}
+\int \frac{2}{(4-x^2)^{3/2}}\;dx \amp= \frac{1}{2} \int \sec^2(\theta)\;d\theta\\
+\amp = \frac{1}{2}\tan(\theta)+C\\
+\amp = \frac{x}{2\sqrt{4-x^2}}+C
+\end{align*}
+</div>
+</div></li>
+<li id="act-TrigSubPractice-8-2-1-1-3"><div class="para logical" id="act-TrigSubPractice-8-2-1-1-3-1">
+<div class="para">From the triangle, we get <span class="process-math">\(\csc(\theta) = \dfrac{\sqrt{x^2+1}}{x}\text{.}\)</span> This gives us:</div>
+<div class="displaymath process-math" id="act-TrigSubPractice-8-2-1-1-3-1-2">
+\begin{align*}
+\int \frac{1}{x^2\sqrt{x^2+1}}\;dx \amp= \int \csc(\theta)\cot(\theta)\;d\theta\\
+\amp = -\csc(\theta)+C\\
+\amp = - \frac{\sqrt{x^2+1}}{x}+C
+\end{align*}
+</div>
+</div></li>
+</ol></div></div></details></div></article></article><div class="para" id="subsec-AnotherVariableSubstitution-14">Trigonometric substitution is pretty involved technique! Setting up the substitution is definitely not trivial. Because our substitution involves trigonometric functions, we end up with integrals of trigonometric functions that we then have to work to antidifferentiate. And substituting back to <span class="process-math">\(x\)</span> relies on us having set up a robust substitution strategy from the beginning.</div>
+<div class="para" id="subsec-AnotherVariableSubstitution-15">It can sometimes seem like this strategy is barely relevant: the goal of it is so focussed on the specific structure of the Pythagorean identities, and these might not feel very present.</div>
+<div class="para" id="subsec-AnotherVariableSubstitution-16">A friend of mine, though, says that once we start recognizing sums and differences of squares as being connected to Pythagoras, it’s hard to <em class="emphasis">not</em> see them.</div>
+<div class="para" id="subsec-AnotherVariableSubstitution-17">For instance, we can go back to <a href="sec-AlgebraicManipulations.html#thm-GeneralizedInvTan" class="xref" data-knowl="./knowl/xref/thm-GeneralizedInvTan.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.3.3: Generalized Inverse Tangent Forms">Theorem 7.3.3</a> and see the sum of squares in the denominator. Instead of doing any tricky factoring to get the <span class="process-math">\(u\)</span>-substitution to work, we could instead try a trigonometric substitution and get the same thing!</div>
+<div class="para" id="subsec-AnotherVariableSubstitution-18">Another friend of mine says that trigonometric substitution only exists so that we can evaluate arc length integrals (<a href="sec-ArcLengthSurfaceArea.html#subsec-ArcLength" class="internal" title="Subsection 6.5.1: Integrals for Evaluating the Length of a Curve">Subsection 6.5.1</a>).</div>
+<div class="para" id="subsec-AnotherVariableSubstitution-19">Whatever the case, this new substitution strategy should, at the very least, generalize the concept of a variable substitution in an integral to show that we can define these for a variety of purposes, all based on the kinds of structures that we’re seeing in the integrand function itself.</div></section><section class="exercises" id="ex-TrigSub"><h3 class="heading hide-type">
 <span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber">7.6.2</span><span class="space"> </span><span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="ex-TrigSub-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
