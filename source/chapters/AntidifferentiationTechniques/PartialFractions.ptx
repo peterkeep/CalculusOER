@@ -2,8 +2,76 @@
 
 <section xml:id="sec-PartialFractions" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Partial Fractions</title>
-
-  <xi:include href="./activities/act-PartialFractionCompare.ptx" />
+  <introduction>
+    <p>
+      In this last integration technique, we'll consider more rational functions. We've already thought about rational functions a bit (<xref ref="strat-RationalFunctions" text="title"/>), but here we'll add some more detail to a special type of rational function. Let's not spoil anything. Instead, we'll just jump into a quick comparison.
+    </p>
+    <xi:include href="./activities/act-PartialFractionCompare.ptx" />
+    <p>
+      We're going to try to take advantage of the re-written structure in <xref ref="act-PartialFractionCompare"/>: when we can decompose a "large" rational function into a sum of "smaller" rational functions, we'll be more likely to be able to antidifferentiate the "smaller" pieces.
+    </p>
+    <p>
+      The real trick, here, is going to be recognizing <em>when</em> we can do this and building a process for <em>how</em> we do this.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-WhenPartialFractions">
+    <title>When?</title>
+    <p>
+      In order to recognize <em>when</em> we will employ this strategy, we should think about what we're doing: We are attempting to write one fraction as a sum or difference of others. We're "undo-ing" fraction addition, here. We can remember that when we add (or subtract) fractions, we need to find a common denominator and re-write our fraction terms as equivalent versions with this same denominator. This is typically done by just "scaling" the numerator and denominator of a fraction by a factor (often then other denominator). For instance:
+      <md>
+        <mrow>\frac{3}{5} - \frac{1}{3} \amp  = \frac{3}{5}\left(\frac{3}{3}\right) - \frac{1}{3}\left(\frac{5}{5}\right)</mrow>
+        <mrow> \amp = \frac{9}{15} - \frac{5}{15}</mrow>
+        <mrow> \amp = \frac{4}{15}</mrow>
+      </md>
+      This same thing happens when we think about rational functions:
+      <md>
+        <mrow>\frac{1}{x} + \frac{2}{x-1} \amp = \frac{1}{x}\left(\frac{x-1}{x-1}\right) + \frac{2}{x-1}\left(\frac{x}{x}\right)</mrow>
+        <mrow> \amp = \frac{x-1}{x(x-1)} + \frac{2x}{x(x-1)}</mrow>
+        <mrow> \amp =\frac{3x-1}{x(x-1)}\;\;\text{ or } \;\;\frac{3x-1}{x^2-x}</mrow>
+      </md>
+    </p>
+    <p>
+      Now, we can notice something about these (common) denominators: since we scaled each fraction before adding/subtracting them, the denominator is a product of factors.
+    </p>
+    <p>
+      So right away we know that this method will only work well when we can factor the denominator of a rational integrand. 
+    </p>
+    <p>
+      We also know (from <xref ref="strat-RationalFunctions" text="title"/>) that once the degree of the numerator is at least the same (or larger) than the degree of the denominator, we can re-write things using division.
+    </p>
+    <p>
+      So, we will use this strategy of re-writing rational function integrands as sums or differences of "smaller" rational functions when:
+      <ol>
+        <li>
+          <p>
+            The denominator can be factored.
+          </p>
+        </li>
+        <li>
+          <p>
+            The degree of the denominator is larger than the degree of the numerator.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-HowPartialFractions">
+    <title>How?</title>
+    <p>
+      The actual process for finding the smaller "partial" fractions is not complicated. Once we have the denominator of our rational function factored, we can see what the possible denominators that had to "combine" to make a "common" denominator were. 
+    </p>
+    <p>
+      Our general process will be simple: set up these possible rational functions and put unknown placeholder numerators in place, making sure that the degree is smaller than the degree of the denominator. Then, we add these possible rational functions up and compare the numerator (with the unknown placeholders) to the numerator that we want (from our actual function that we're integrating).
+    </p>
+    <p>
+      There are more tricks along the way, but this process is simple to think about. What we'll find, though, is that the process is full of algebra, which can be tedious.
+    </p>
+    <p>
+      Let's look at two small examples to see how this could work.
+    </p>
+    <xi:include href="./activities/act-PartialFractionFirstExamples.ptx" />
+  </subsection>
+  
 
   <xi:include href="./exercises/ex-PartialFractions.ptx" />
 

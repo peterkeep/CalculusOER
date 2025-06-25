@@ -1,0 +1,172 @@
+<activity xml:id="act-PartialFractionsFirstExamples">
+    <title>First Examples of Partial Fractions</title>
+    <task>
+        <statement>
+            <p>
+                Consider the integral:
+                <me>
+                    \int \frac{6x-16}{x^2-4x+3}\;dx
+                </me>.
+                First, confirm that this would be <em>very</em> annoying to try to use <m>u</m>-substitution on, even though we have a linear numerator and quadratic denominator.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Notice that the denominator can be factored:
+                <me>
+                    \int \frac{6x-16}{(x-3)(x-1)}\;dx
+                </me>.
+                If this integrand function were a sum of two "smaller" rational functions, what would their denominators be? What do we know about their numerators?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                The denominators would need to multiply to get <m>(x-3)(x-1)</m>, and each numerator would have to have a degree smaller than its respective denominator.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                We might have something like <m>\dfrac{<fillin characters="2" />}{x-3}+\dfrac{<fillin characters="2" />}{x-1} = \dfrac{6x-16}{(x-3)(x-1)}</m>, where the numerators are constant terms (since their degree must be smaller than 1).
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use some variables (it's typical to use capital letters like <m>A</m>, <m>B</m>, <m>C</m>, etc.) to represent the numerators, and then add the partial fractions together. What do you get? How does this rational function compare to <m>\dfrac{6x-16}{(x-3)(x-1)}</m>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We want to try to add up <m>\dfrac{A}{x-3}+\dfrac{B}{x-1}</m> and compare the result to <m>\dfrac{6x-16}{(x-3)(x-1)}</m>.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\frac{A}{x-3} + \frac{B}{x-1} \amp = \frac{A}{x-3}\left(\frac{x-1}{x-1}\right) + \frac{B}{x-1}\left(\frac{x-3}{x-3}\right)</mrow>
+                    <mrow> \amp = \frac{A(x-1)}{(x-3)(x-1)} + \frac{B(x-3)}{(x-3)(x-1)}</mrow>
+                    <mrow> \amp = \frac{A(x-1)+B(x-3)}{(x-3)(x-1)}</mrow>
+                </md>
+                When we compare this to <m>\dfrac{6x-16}{(x-3)(x-1)}</m>, we can see that the denominators are the same, and so, if these are equal to each other, the numerators must be as well.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Set up an equation connecting the numerators, and solve for your unknown variables. What are the two fractions that added together to get <m>\dfrac{6x-16}{(x-3)(x-1)}</m>? 
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow> A(x-1)+B(x-3)\amp = 6x-16</mrow>
+                    <mrow>(A+B)x -(A+3B) \amp = 6x-16 </mrow>
+                </md>
+                This means that <m>A+B=6</m> and <m>A+3B=16</m>. There are a variety of ways to solve this, but we can say that <m>A=6-B</m>, and so then
+                <md>
+                    <mrow>A+3B \amp=16 </mrow>
+                    <mrow>(6-B)+3B \amp = 16</mrow>
+                    <mrow>2B \amp = 10</mrow>
+                    <mrow>B \amp =5</mrow>
+                </md>
+                Since <m>A=6-B</m>, we have <m>A=6-5=1</m>.
+            </p>
+            <p>
+                <me>
+                    \dfrac{6x-16}{(x-3)(x-1)} = \frac{1}{x-3}+\frac{5}{x-1}
+                </me>
+                
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Antidifferentiate to solve the integral <m>\displaystyle \int \frac{6x-16}{(x-3)(x-1)}\;dx</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\int \frac{6x-16}{(x-3)(x-1)}\;dx\amp = \int \frac{1}{x-3}+\frac{5}{x-1}\;dx</mrow>
+                    <mrow> \amp =\ln|x-3|+5\ln|x-1|+C</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's do the same thing with a new integral:
+                <me>
+                    \int \frac{3x^2-2x+3}{x(x^2+1)}\;dx
+                </me>.
+                What are the partial fraction forms? What kinds of numerators should we expect to see? Use variables to represent these.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                We expect to see partial fractions <m>\dfrac{<fillin characters="2" />}{x}</m> and <m>\dfrac{<fillin characters="2" />}{x^2+1}</m>. We know the numerator over <m>x</m> needs to be constant, but we could have a linear numerator over <m>x^2+1</m>. So our partial fractions are:
+                <me>
+                    \frac{A}{x}+\frac{Bx+C}{x^2+1}
+                </me>.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Add the partial fractions together and set up an equation for the numerators to solve. What are the two partial fractions after you solve for the unknown coefficients?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We want to find values for <m>A</m>, <m>B</m>, and <m>C</m> where
+                <me>
+                    \frac{A}{x}+\frac{Bx+C}{x^2+1} = \frac{3x^2-2x+3}{x(x^2+1)}
+                </me>.
+                Use common denominators to add
+                <me>
+                    \frac{A}{x}+\frac{Bx+C}{x^2+1}
+                </me>
+                and then set the resulting numerator equal to <m>3x^2-2x+3</m> and try to solve.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <md>
+                    <mrow> \frac{A}{x}+\frac{Bx+C}{x^2+1}\amp = \frac{A}{x}\left(\frac{x^2+1}{x^2+1}\right)+\frac{Bx+C}{x^2+1}\left(\frac{x}{x}\right) </mrow>
+                    <mrow> \amp = \frac{A(x^2+1)+(Bx+C)(x)}{x(x^2+1)}</mrow>
+                </md>
+                Then we can set the numerators equal to get:
+                <md>
+                    <mrow> A(x^2+1)+(Bx+C)(x)\amp = 3x^2-2x+3</mrow>
+                    <mrow>(A+B)x^2 + Cx + A \amp 3x^2-2x+3</mrow>
+                </md>
+                So now we can see that since <m>Cx=-2x</m>, we have <m>C=-2</m>. We can also look at the constant terms and see that <m>A=3</m>. Now we know that <m>(A+B)x^2=3x^2</m>, but since <m>A=3</m> we have <m>B=0</m>.
+            </p>
+            <p>
+                So we have <m>\displaystyle \int \frac{3x^2-2x+3}{x(x^2+1)}\;dx = \int \frac{3}{x}-\frac{2}{x^2+1}\;dx</m>.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Antidifferentiate and solve the integral <m>\displaystyle \int \frac{3x^2-2x+3}{x(x^2+1)}\;dx</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\int \frac{3x^2-2x+3}{x(x^2+1)}\;dx \amp = \int \frac{3}{x}-\frac{2}{x^2+1}\;dx</mrow>
+                    <mrow> \amp = 2\ln|x|-2\tan^{-1}(x)+C</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+</activity>
