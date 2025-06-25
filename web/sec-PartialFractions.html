@@ -496,7 +496,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-PartialFractions.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Partial Fractions</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PartialFractions.html#ex-PartialFractions" class="internal"><span class="codenumber">7.7</span> <span class="title">Practice Problems</span></a></div></li></ul>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-WhenPartialFractions" class="internal"><span class="codenumber">7.7.1</span> <span class="title">When?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-HowPartialFractions" class="internal"><span class="codenumber">7.7.2</span> <span class="title">How?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PartialFractions.html#ex-PartialFractions" class="internal"><span class="codenumber">7.7.3</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -579,6 +583,7 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-PartialFractions"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">7.7</span><span class="space"> </span><span class="title">Partial Fractions</span>
 </h2>
+<section class="introduction" id="sec-PartialFractions-2"><div class="para" id="sec-PartialFractions-2-1">In this last integration technique, we’ll consider more rational functions. We’ve already thought about rational functions a bit (<a href="sec-AlgebraicManipulations.html#strat-RationalFunctions" class="xref" data-knowl="./knowl/xref/strat-RationalFunctions.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Integrating Rational Functions">Integrating Rational Functions</a>), but here we’ll add some more detail to a special type of rational function. Let’s not spoil anything. Instead, we’ll just jump into a quick comparison.</div>
 <article class="activity project-like" id="act-PartialFractionCompare"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.7.1</span><span class="period">.</span><span class="space"> </span><span class="title">Comparing Rational Integrands.</span>
 </h3>
@@ -631,8 +636,184 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">How would you integrate this?</div>
 </div></article><article class="task exercise-like" id="act-PartialFractionCompare-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="act-PartialFractionCompare-6-1-1">The third integral is unique from the other two in that is has two terms. Let’s combine them together to see how we could write this integral to compare it more closely to the other two.</div> <div class="para" id="act-PartialFractionCompare-6-1-2">Subtract <span class="process-math">\(\dfrac{1}{x+1}-\dfrac{1}{x+3}\)</span> using common denominators and compare your re-written integral to the other two.</div></article><article class="task exercise-like" id="act-PartialFractionCompare-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="act-PartialFractionCompare-7-1-1">Which of these integrals and/or representations of an integral is easiest to work with? Which one is most annoying to work with? Why?</div></article></article><section class="exercises" id="ex-PartialFractions"><h3 class="heading hide-type">
-<span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice Problems</span>
+<div class="para" id="act-PartialFractionCompare-7-1-1">Which of these integrals and/or representations of an integral is easiest to work with? Which one is most annoying to work with? Why?</div></article></article><div class="para" id="sec-PartialFractions-2-3">We’re going to try to take advantage of the re-written structure in <a href="sec-PartialFractions.html#act-PartialFractionCompare" class="xref" data-knowl="./knowl/xref/act-PartialFractionCompare.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.7.1: Comparing Rational Integrands">Activity 7.7.1</a>: when we can decompose a "large" rational function into a sum of "smaller" rational functions, we’ll be more likely to be able to antidifferentiate the "smaller" pieces.</div>
+<div class="para" id="sec-PartialFractions-2-4">The real trick, here, is going to be recognizing <em class="emphasis">when</em> we can do this and building a process for <em class="emphasis">how</em> we do this.</div></section><section class="subsection" id="subsec-WhenPartialFractions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.7.1</span><span class="space"> </span><span class="title">When?</span>
+</h3>
+<div class="para logical" id="subsec-WhenPartialFractions-2">
+<div class="para">In order to recognize <em class="emphasis">when</em> we will employ this strategy, we should think about what we’re doing: We are attempting to write one fraction as a sum or difference of others. We’re "undo-ing" fraction addition, here. We can remember that when we add (or subtract) fractions, we need to find a common denominator and re-write our fraction terms as equivalent versions with this same denominator. This is typically done by just "scaling" the numerator and denominator of a fraction by a factor (often then other denominator). For instance:</div>
+<div class="displaymath process-math" id="subsec-WhenPartialFractions-2-2">
+\begin{align*}
+\frac{3}{5} - \frac{1}{3} \amp  = \frac{3}{5}\left(\frac{3}{3}\right) - \frac{1}{3}\left(\frac{5}{5}\right)\\
+\amp = \frac{9}{15} - \frac{5}{15}\\
+\amp = \frac{4}{15}
+\end{align*}
+</div>
+<div class="para">This same thing happens when we think about rational functions:</div>
+<div class="displaymath process-math" id="subsec-WhenPartialFractions-2-3">
+\begin{align*}
+\frac{1}{x} + \frac{2}{x-1} \amp = \frac{1}{x}\left(\frac{x-1}{x-1}\right) + \frac{2}{x-1}\left(\frac{x}{x}\right)\\
+\amp = \frac{x-1}{x(x-1)} + \frac{2x}{x(x-1)}\\
+\amp =\frac{3x-1}{x(x-1)}\;\;\text{ or } \;\;\frac{3x-1}{x^2-x}
+\end{align*}
+</div>
+</div>
+<div class="para" id="subsec-WhenPartialFractions-3">Now, we can notice something about these (common) denominators: since we scaled each fraction before adding/subtracting them, the denominator is a product of factors.</div>
+<div class="para" id="subsec-WhenPartialFractions-4">So right away we know that this method will only work well when we can factor the denominator of a rational integrand.</div>
+<div class="para" id="subsec-WhenPartialFractions-5">We also know (from <a href="sec-AlgebraicManipulations.html#strat-RationalFunctions" class="xref" data-knowl="./knowl/xref/strat-RationalFunctions.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Integrating Rational Functions">Integrating Rational Functions</a>) that once the degree of the numerator is at least the same (or larger) than the degree of the denominator, we can re-write things using division.</div>
+<div class="para logical" id="subsec-WhenPartialFractions-6">
+<div class="para">So, we will use this strategy of re-writing rational function integrands as sums or differences of "smaller" rational functions when:</div>
+<ol class="decimal" id="subsec-WhenPartialFractions-6-1">
+<li id="subsec-WhenPartialFractions-6-1-1"><div class="para" id="subsec-WhenPartialFractions-6-1-1-1">The denominator can be factored.</div></li>
+<li id="subsec-WhenPartialFractions-6-1-2"><div class="para" id="subsec-WhenPartialFractions-6-1-2-1">The degree of the denominator is larger than the degree of the numerator.</div></li>
+</ol>
+</div></section><section class="subsection" id="subsec-HowPartialFractions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.7.2</span><span class="space"> </span><span class="title">How?</span>
+</h3>
+<div class="para" id="subsec-HowPartialFractions-2">The actual process for finding the smaller "partial" fractions is not complicated. Once we have the denominator of our rational function factored, we can see what the possible denominators that had to "combine" to make a "common" denominator were.</div>
+<div class="para" id="subsec-HowPartialFractions-3">Our general process will be simple: set up these possible rational functions and put unknown placeholder numerators in place, making sure that the degree is smaller than the degree of the denominator. Then, we add these possible rational functions up and compare the numerator (with the unknown placeholders) to the numerator that we want (from our actual function that we’re integrating).</div>
+<div class="para" id="subsec-HowPartialFractions-4">There are more tricks along the way, but this process is simple to think about. What we’ll find, though, is that the process is full of algebra, which can be tedious.</div>
+<div class="para" id="subsec-HowPartialFractions-5">Let’s look at two small examples to see how this could work.</div>
+<article class="activity project-like" id="act-PartialFractionsFirstExamples"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.7.2</span><span class="period">.</span><span class="space"> </span><span class="title">First Examples of Partial Fractions.</span>
+</h4>
+<article class="task exercise-like" id="act-PartialFractionsFirstExamples-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="act-PartialFractionsFirstExamples-2-1-1">
+<div class="para">Consider the integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{6x-16}{x^2-4x+3}\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">First, confirm that this would be <em class="emphasis">very</em> annoying to try to use <span class="process-math">\(u\)</span>-substitution on, even though we have a linear numerator and quadratic denominator.</div>
+</div></article><article class="task exercise-like" id="act-PartialFractionsFirstExamples-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="act-PartialFractionsFirstExamples-3-1-1">
+<div class="para">Notice that the denominator can be factored:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{6x-16}{(x-3)(x-1)}\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">If this integrand function were a sum of two "smaller" rational functions, what would their denominators be? What do we know about their numerators?</div>
+</div>
+<div class="solutions">
+<details id="act-PartialFractionsFirstExamples-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-PartialFractionsFirstExamples-3-2-1">The denominators would need to multiply to get <span class="process-math">\((x-3)(x-1)\text{,}\)</span> and each numerator would have to have a degree smaller than its respective denominator.</div></div></details><details id="act-PartialFractionsFirstExamples-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="act-PartialFractionsFirstExamples-3-3-1">We might have something like <span class="process-math">\(\dfrac{\fillinmath{XX}}{x-3}+\dfrac{\fillinmath{XX}}{x-1} = \dfrac{6x-16}{(x-3)(x-1)}\text{,}\)</span> where the numerators are constant terms (since their degree must be smaller than 1).</div></div></details>
+</div></article><article class="task exercise-like" id="act-PartialFractionsFirstExamples-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-PartialFractionsFirstExamples-4-1-1">Use some variables (it’s typical to use capital letters like <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(C\text{,}\)</span> etc.) to represent the numerators, and then add the partial fractions together. What do you get? How does this rational function compare to <span class="process-math">\(\dfrac{6x-16}{(x-3)(x-1)}\text{?}\)</span>
+</div>
+<div class="solutions">
+<details id="act-PartialFractionsFirstExamples-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-PartialFractionsFirstExamples-4-2-1">We want to try to add up <span class="process-math">\(\dfrac{A}{x-3}+\dfrac{B}{x-1}\)</span> and compare the result to <span class="process-math">\(\dfrac{6x-16}{(x-3)(x-1)}\text{.}\)</span>
+</div></div></details><details id="act-PartialFractionsFirstExamples-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-PartialFractionsFirstExamples-4-3-1">
+<div class="displaymath process-math" id="act-PartialFractionsFirstExamples-4-3-1-1">
+\begin{align*}
+\frac{A}{x-3} + \frac{B}{x-1} \amp = \frac{A}{x-3}\left(\frac{x-1}{x-1}\right) + \frac{B}{x-1}\left(\frac{x-3}{x-3}\right)\\
+\amp = \frac{A(x-1)}{(x-3)(x-1)} + \frac{B(x-3)}{(x-3)(x-1)}\\
+\amp = \frac{A(x-1)+B(x-3)}{(x-3)(x-1)}
+\end{align*}
+</div>
+<div class="para">When we compare this to <span class="process-math">\(\dfrac{6x-16}{(x-3)(x-1)}\text{,}\)</span> we can see that the denominators are the same, and so, if these are equal to each other, the numerators must be as well.</div>
+</div></div></details>
+</div></article><article class="task exercise-like" id="act-PartialFractionsFirstExamples-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-PartialFractionsFirstExamples-5-1-1">Set up an equation connecting the numerators, and solve for your unknown variables. What are the two fractions that added together to get <span class="process-math">\(\dfrac{6x-16}{(x-3)(x-1)}\text{?}\)</span>
+</div>
+<div class="solutions"><details id="act-PartialFractionsFirstExamples-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-PartialFractionsFirstExamples-5-2-1">
+<div class="displaymath process-math" id="act-PartialFractionsFirstExamples-5-2-1-1">
+\begin{align*}
+A(x-1)+B(x-3)\amp = 6x-16\\
+(A+B)x -(A+3B) \amp = 6x-16 
+\end{align*}
+</div>
+<div class="para">This means that <span class="process-math">\(A+B=6\)</span> and <span class="process-math">\(A+3B=16\text{.}\)</span> There are a variety of ways to solve this, but we can say that <span class="process-math">\(A=6-B\text{,}\)</span> and so then</div>
+<div class="displaymath process-math" id="act-PartialFractionsFirstExamples-5-2-1-5">
+\begin{align*}
+A+3B \amp=16 \\
+(6-B)+3B \amp = 16\\
+2B \amp = 10\\
+B \amp =5
+\end{align*}
+</div>
+<div class="para">Since <span class="process-math">\(A=6-B\text{,}\)</span> we have <span class="process-math">\(A=6-5=1\text{.}\)</span>
+</div>
+</div>
+<div class="para logical" id="act-PartialFractionsFirstExamples-5-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\dfrac{6x-16}{(x-3)(x-1)} = \frac{1}{x-3}+\frac{5}{x-1}
+\end{equation*}
+</div></div>
+</div></details></div></article><article class="task exercise-like" id="act-PartialFractionsFirstExamples-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-PartialFractionsFirstExamples-6-1-1">Antidifferentiate to solve the integral <span class="process-math">\(\displaystyle \int \frac{6x-16}{(x-3)(x-1)}\;dx\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-PartialFractionsFirstExamples-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-PartialFractionsFirstExamples-6-2-1"><div class="displaymath process-math" id="act-PartialFractionsFirstExamples-6-2-1-1">
+\begin{align*}
+\int \frac{6x-16}{(x-3)(x-1)}\;dx\amp = \int \frac{1}{x-3}+\frac{5}{x-1}\;dx\\
+\amp =\ln|x-3|+5\ln|x-1|+C
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like" id="act-PartialFractionsFirstExamples-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para logical" id="act-PartialFractionsFirstExamples-7-1-1">
+<div class="para">Let’s do the same thing with a new integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{3x^2-2x+3}{x(x^2+1)}\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">What are the partial fraction forms? What kinds of numerators should we expect to see? Use variables to represent these.</div>
+</div>
+<div class="solutions"><details id="act-PartialFractionsFirstExamples-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-PartialFractionsFirstExamples-7-2-1">
+<div class="para">We expect to see partial fractions <span class="process-math">\(\dfrac{\fillinmath{XX}}{x}\)</span> and <span class="process-math">\(\dfrac{\fillinmath{XX}}{x^2+1}\text{.}\)</span> We know the numerator over <span class="process-math">\(x\)</span> needs to be constant, but we could have a linear numerator over <span class="process-math">\(x^2+1\text{.}\)</span> So our partial fractions are:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{A}{x}+\frac{Bx+C}{x^2+1}\text{.}
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="task exercise-like" id="act-PartialFractionsFirstExamples-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para" id="act-PartialFractionsFirstExamples-8-1-1">Add the partial fractions together and set up an equation for the numerators to solve. What are the two partial fractions after you solve for the unknown coefficients?</div>
+<div class="solutions">
+<details id="act-PartialFractionsFirstExamples-8-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-PartialFractionsFirstExamples-8-2-1">
+<div class="para">We want to find values for <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{A}{x}+\frac{Bx+C}{x^2+1} = \frac{3x^2-2x+3}{x(x^2+1)}\text{.}
+\end{equation*}
+</div>
+<div class="para">Use common denominators to add</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{A}{x}+\frac{Bx+C}{x^2+1}
+\end{equation*}
+</div>
+<div class="para">and then set the resulting numerator equal to <span class="process-math">\(3x^2-2x+3\)</span> and try to solve.</div>
+</div></div></details><details id="act-PartialFractionsFirstExamples-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-PartialFractionsFirstExamples-8-3-1">
+<div class="displaymath process-math" id="act-PartialFractionsFirstExamples-8-3-1-1">
+\begin{align*}
+\frac{A}{x}+\frac{Bx+C}{x^2+1}\amp = \frac{A}{x}\left(\frac{x^2+1}{x^2+1}\right)+\frac{Bx+C}{x^2+1}\left(\frac{x}{x}\right) \\
+\amp = \frac{A(x^2+1)+(Bx+C)(x)}{x(x^2+1)}
+\end{align*}
+</div>
+<div class="para">Then we can set the numerators equal to get:</div>
+<div class="displaymath process-math" id="act-PartialFractionsFirstExamples-8-3-1-2">
+\begin{align*}
+A(x^2+1)+(Bx+C)(x)\amp = 3x^2-2x+3\\
+(A+B)x^2 + Cx + A \amp 3x^2-2x+3
+\end{align*}
+</div>
+<div class="para">So now we can see that since <span class="process-math">\(Cx=-2x\text{,}\)</span> we have <span class="process-math">\(C=-2\text{.}\)</span> We can also look at the constant terms and see that <span class="process-math">\(A=3\text{.}\)</span> Now we know that <span class="process-math">\((A+B)x^2=3x^2\text{,}\)</span> but since <span class="process-math">\(A=3\)</span> we have <span class="process-math">\(B=0\text{.}\)</span>
+</div>
+</div>
+<div class="para" id="act-PartialFractionsFirstExamples-8-3-2">So we have <span class="process-math">\(\displaystyle \int \frac{3x^2-2x+3}{x(x^2+1)}\;dx = \int \frac{3}{x}-\frac{2}{x^2+1}\;dx\text{.}\)</span>
+</div>
+</div></details>
+</div></article><article class="task exercise-like" id="act-PartialFractionsFirstExamples-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="para" id="act-PartialFractionsFirstExamples-9-1-1">Antidifferentiate and solve the integral <span class="process-math">\(\displaystyle \int \frac{3x^2-2x+3}{x(x^2+1)}\;dx\text{.}\)</span>
+</div>
+<div class="solutions"><details id="act-PartialFractionsFirstExamples-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-PartialFractionsFirstExamples-9-2-1"><div class="displaymath process-math" id="act-PartialFractionsFirstExamples-9-2-1-1">
+\begin{align*}
+\int \frac{3x^2-2x+3}{x(x^2+1)}\;dx \amp = \int \frac{3}{x}-\frac{2}{x^2+1}\;dx\\
+\amp = 2\ln|x|-2\tan^{-1}(x)+C
+\end{align*}
+</div></div></div></details></div></article></article></section><section class="exercises" id="ex-PartialFractions"><h3 class="heading hide-type">
+<span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber">7.7.3</span><span class="space"> </span><span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="ex-PartialFractions-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
 <div class="para" id="ex-PartialFractions-1-1">Why do we use partial fraction decomposition on some integrals of rational functions? Give an example and explain why it is helpful in your example.</div></article><article class="exercise exercise-like" id="ex-PartialFractions-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
