@@ -2,15 +2,110 @@
     <title>Trig Substitution Geoemtry</title>
     <introduction>
         <p>
-            We're going to consider three triangles, and we're going to fill in side lengths.
+            We're going to consider three triangles, and we're going to fill in side lengths. In each of these, we'll assume that the lengths <m>x</m> and <m>a</m> are real numbers and are positive.
+            <figure xml:id="fig-TrigSubTriangles">
+                <caption>Three triangles to guide our trigonometric substitutions.</caption>
+                <sidebyside widths="30% 30% 30%" valign="middle">
+                    <image width="80%">
+                        <shortdescription>
+                            Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled a.
+                        </shortdescription>
+                        <latex-image>
+                            \begin{tikzpicture}
+                                \coordinate (A) at (0,0);
+                                \coordinate (B) at (5,0);
+                                \coordinate (C) at (5,2.5);
+                                \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {$a$};
+                                \draw (4.7,0) |- (5,0.3);
+                                \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+                                \node at (2.5,0) [above] {};
+                                \node at (5,1.25) [left] {$x$};
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                    <image width="80%">
+                        <shortdescription>
+                            Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled a.
+                        </shortdescription>
+                        <latex-image>
+                            \begin{tikzpicture}
+                                \coordinate (A) at (0,0);
+                                \coordinate (B) at (5,0);
+                                \coordinate (C) at (5,2.5);
+                                \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {};
+                                \draw (4.7,0) |- (5,0.3);
+                                \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+                                \node at (2.5,0) [above] {$a$};
+                                \node at (5,1.25) [left] {$x$};
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                    <image width="80%">
+                        <shortdescription>
+                            Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled a, and the hypotenuse is labeled x.
+                        </shortdescription>
+                        <latex-image>
+                            \begin{tikzpicture}
+                                \coordinate (A) at (0,0);
+                                \coordinate (B) at (5,0);
+                                \coordinate (C) at (5,2.5);
+                                \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {$x$};
+                                \draw (4.7,0) |- (5,0.3);
+                                \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+                                \node at (2.5,0) [above] {$a$};
+                                \node at (5,1.25) [left] {};
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                </sidebyside>
+            </figure>
         </p>
     </introduction>
     <task>
         <statement>
             <p>
-                
+                Use the Pythagorean theorem to label the missing side length in each of the three triangles.
             </p>
         </statement>
     </task>
-    
+    <task>
+        <statement>
+            <p>
+                For each triangle, explain how you can tell which side length represents the hypotenuse when you see the lengths <m>x</m>, <m>a</m>, and then the missing lengths you found above: <m>\sqrt{x^2-a^2}</m>, <m>\sqrt{a^2-x^2}</m>, or <m>\sqrt{x^2+a^2}</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We know that the hypotenuse is the longest side length in a triangle. Just based on the square root length, how can you tell which length is longest?
+            </p>
+        </hint>
+        <solution>
+            <p>
+                If one of the side lengths is <m>\sqrt{x^2-a^2}</m>, then we know that <m>x\gt a</m> (otherwise the square root is a non-real number). We also know that <m>x\gt \sqrt{x^2-a^2}</m> (because <m>a\gt 0</m>). This means that <m>x</m> is the length of the hypotenuse.
+            </p>
+            <p>
+                If one of the side lengths is <m>\sqrt{a^2-x^2}</m>, then we know that <m>a\gt x</m> (otherwise the square root is a non-real number). We also know that <m>a\gt \sqrt{a^2-x^2}</m> (because <m>x\gt 0</m>). This means that <m>a</m> is the length of the hypotenuse.
+            </p>
+            <p>
+                If one of the side lengths is <m>\sqrt{x^2+a^2}</m>, then we know that <m>\sqrt{x^2+a^2} \gt a</m> and <m>\sqrt{x^2+a^2} \gt x</m> (because <m>x,a\gt 0</m>). This means that <m>\sqrt{x^2+a^2}</m> is the length of the hypotenuse.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For each triangle, find a trigonometric function of <m>\theta</m> that connects lengths <m>x</m> and <m>a</m> to each other.
+            </p>
+            <p>
+                Solve each for <m>x</m> to reveal the relevant substitution.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For each substitution, find the corresponding substitution for the differential, <m>dx</m>.
+            </p>
+        </statement>
+    </task>    
 </activity>
