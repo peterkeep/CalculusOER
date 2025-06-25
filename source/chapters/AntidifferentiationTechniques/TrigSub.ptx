@@ -78,6 +78,196 @@
       We'll consider three triangles, each with side lengths of <m>x</m> and <m>a</m>. The third side length will vary between <m>\sqrt{x^2-a^2}</m>, <m>\sqrt{a^2-x^2}</m>, and <m>\sqrt{x^2+a^2}</m> (or the equivalent <m>\sqrt{a^2+x^2}</m>) based on which length is representing the hypotenuse.
     </p>
     <xi:include href="./activities/act-TrigSubTriangles.ptx" />
+    <p>
+      This gives us a nice strategy for substitution!
+    </p>
+    <assemblage xml:id="strat-TrigSub">
+      <title>Trigonometric Substitution</title>
+      <p>
+        We have three (typical) ways of using trigonometric substitution to transform a sum or difference of squared terms into a product of squares.
+        <ul>
+          <li>
+            <p>
+              For an integral containing <m>(a^2-x^2)</m>, we can use the following triangle to build our substitution:
+            </p>
+              <figure xml:id="fig-TrigSubSine">
+                <caption></caption>
+                <image width="50%">
+                  <shortdescription>
+                      Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled a, and the remaining side length is labeled sqrt(a^2-x^2).
+                  </shortdescription>
+                  <latex-image>
+                      \begin{tikzpicture}
+                          \coordinate (A) at (0,0);
+                          \coordinate (B) at (4,0);
+                          \coordinate (C) at (4,2);
+                          \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {$a$};
+                          \draw (3.7,0) |- (4,0.3);
+                          \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+                          \node at (2,0) [below] {$\sqrt{a^2-x^2}$};
+                          \node at (4,1) [right] {$x$};
+                      \end{tikzpicture}
+                  </latex-image>
+               </image>
+              </figure>
+              <p>
+              This results in using the following substitution and identity.
+              <md>
+                <mrow>x \amp = a\sin(\theta)</mrow>
+                <mrow>dx \amp = a\cos(\theta)\;d\theta</mrow>
+                <mrow>a^2-\left(a\sin(\theta)\right)^2 \amp=\left(a\cos(\theta)\right)^2 </mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              For an integral containing <m>(x^2-a^2)</m>, we can use the following triangle to build our substitution:
+            </p>
+              <figure xml:id="fig-TrigSubSecant">
+                <caption></caption>
+                <image width="67%">
+                    <shortdescription>
+                        Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled a, and the hypotenuse is labeled x, and the remaining side length is labeled sqrt(x^2-a^2).
+                    </shortdescription>
+                    <latex-image>
+                        \begin{tikzpicture}
+                            \coordinate (A) at (0,0);
+                            \coordinate (B) at (4,0);
+                            \coordinate (C) at (4,2);
+                            \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {$x$};
+                            \draw (3.7,0) |- (4,0.3);
+                            \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+                            \node at (2,0) [below] {$a$};
+                            \node at (4,1) [right] {$\sqrt{x^2-a^2}$};
+                        \end{tikzpicture}
+                    </latex-image>
+                </image>
+              </figure>
+              <p>
+              This results in using the following substitution and identity.
+              <md>
+                <mrow>x \amp = a\sec(\theta)</mrow>
+                <mrow>dx \amp = a\sec(\theta)\tan(\theta)\;d\theta</mrow>
+                <mrow>\left(a\sec(\theta)\right)^2 -a^2 \amp=\left(a\tan(\theta)\right)^2 </mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              For an integral containing <m>(x^2+a^2)</m>, we can use the following triangle to build our substitution:
+            </p>
+              <figure xml:id="fig-TrigSubTan">
+                <caption></caption>
+                <image width="50%">
+                  <shortdescription>
+                      Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled a. The hypotenuse is labeled sqrt(x^2+a^2).
+                  </shortdescription>
+                  <latex-image>
+                      \begin{tikzpicture}
+                          \coordinate (A) at (0,0);
+                          \coordinate (B) at (4,0);
+                          \coordinate (C) at (4,2);
+                          \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {$\sqrt{x^2+a^2}$};
+                          \draw (3.7,0) |- (4,0.3);
+                          \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+                          \node at (2,0) [below] {$a$};
+                          \node at (4,1) [right] {$x$};
+                      \end{tikzpicture}
+                    </latex-image>
+                </image>
+              </figure>
+              <p>
+              This results in using the following substitution and identity.
+              <md>
+                <mrow>x \amp = a\tan(\theta)</mrow>
+                <mrow>dx \amp = a\sec^2(\theta)\;d\theta</mrow>
+                <mrow>\left(a\tan(\theta)\right)^2+a^2\ \amp=\left(a\sec(\theta)\right)^2 </mrow>
+              </md>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </assemblage>
+    <p>
+      Two things to note before we move on:
+      <ol>
+        <li>
+          <p>
+            There are really 6 main trigonometric substitutions. If you go back to <xref ref="act-TrigSubTriangles"/> and place the angle <m>\theta</m> in the opposite corner of the triangle, the substitutions you build will all be using the "co-functions": cosine, cosecant, and cotangent. Each of these has a very similar structure with regard to derivatives (for the differential substitution) and Pythagorean identities. Each is equivalent to the respective sine, secant, and tangent substitutions. We often choose to use sine, secant, and tangent just due to familiarity.
+          </p>
+        </li>
+        <li>
+          <p>
+            We can use the triangle as a kind of key for our substitution! After antidifferentiating, we have some antiderivative family written in terms of an angle <m>\theta</m>: we can use the triangle to substitution trigonometric functions of <m>\theta</m> to be written in terms of <m>x</m>. 
+          </p>
+        </li>
+      </ol>
+    </p>
+    <example>
+      <statement>
+        <p>
+          We can finish the substitution we started in <xref ref="act-DifferenceOfSquares"/>. We used the substitution <m>x=\sin(\theta)</m>, but we can now construct the relevant triangle.
+        </p>
+        <p>
+          Since we were hoping so use a substitution to re-write the difference of squares, <m>\sqrt{1-x^2}</m>, we had the following triangle:
+        </p>
+        <figure>
+          <caption>Substitution used in <xref ref="act-DifferenceOfSquares"/>.</caption>
+          <image width="50%">
+                  <shortdescription>
+                      Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled 1, and the remaining side length is labeled sqrt(1-x^2).
+                  </shortdescription>
+                  <latex-image>
+                      \begin{tikzpicture}
+                          \coordinate (A) at (0,0);
+                          \coordinate (B) at (4,0);
+                          \coordinate (C) at (4,2);
+                          \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {$1$};
+                          \draw (3.7,0) |- (4,0.3);
+                          \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+                          \node at (2,0) [below] {$\sqrt{1-x^2}$};
+                          \node at (4,1) [right] {$x$};
+                      \end{tikzpicture}
+                  </latex-image>
+              </image>
+        </figure>
+        <p>
+          We can see that <m>\sin(\theta)=\dfrac{x}{1}</m> or <m>x=\sin(\theta)</m>, which was our substitution.
+        </p>
+        <p>
+          But we were also left with the following antiderivative:
+          <md>
+            <mrow>\int \sqrt{1-x^2}\;dx \amp = \int \cos^2(\theta)\;d\theta</mrow>
+            <mrow> \amp = \frac{\theta + \sin(\theta)\cos(\theta)}{2}+C</mrow>
+          </md>
+          Now we can substitute that antiderivative! We can see from our triangle that <m>\cos(\theta)=\sqrt{1-x^2}</m>, <m>\sin(\theta)=x</m> (this was also our original substitution anyways), and we also can invert our substitution to get <m>\theta=\sin^{-1}(x)</m>.
+          <md>
+            <mrow>\int \sqrt{1-x^2}\;dx \amp = \int \cos^2(\theta)\;d\theta</mrow>
+            <mrow> \amp = \frac{\theta + \sin(\theta)\cos(\theta)}{2}+C</mrow>
+            <mrow> \amp = \frac{1}{2}\left(\sin^{-1}(x) + x\sqrt{1-x^2}\right)+C</mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+    <xi:include href="./activities/act-TrigSubPractice.ptx" />
+    <p>
+      Trigonometric substitution is pretty involved technique! Setting up the substitution is definitely not trivial. Because our substitution involves trigonometric functions, we end up with integrals of trigonometric functions that we then have to work to antidifferentiate. And substituting back to <m>x</m> relies on us having set up a robust substitution strategy from the beginning.
+    </p>
+    <p>
+      It can sometimes seem like this strategy is barely relevant: the goal of it is so focussed on the specific structure of the Pythagorean identities, and these might not feel very present.
+    </p>
+    <p>
+      A friend of mine, though, says that once we start recognizing sums and differences of squares as being connected to Pythagoras, it's hard to <em>not</em> see them.
+    </p>
+    <p>
+      For instance, we can go back to <xref ref="thm-GeneralizedInvTan"/> and see the sum of squares in the denominator. Instead of doing any tricky factoring to get the <m>u</m>-substitution to work, we could instead try a trigonometric substitution and get the same thing!
+    </p>
+    <p>
+      Another friend of mine says that trigonometric substitution only exists so that we can evaluate arc length integrals (<xref ref="subsec-ArcLength"/>).
+    </p>
+    <p>
+      Whatever the case, this new substitution strategy should, at the very least, generalize the concept of a variable substitution in an integral to show that we can define these for a variety of purposes, all based on the kinds of structures that we're seeing in the integrand function itself.
+    </p>
   </subsection>
   <xi:include href="./exercises/ex-TrigSub.ptx" />
 

@@ -1,0 +1,350 @@
+<activity xml:id="act-TrigSubPractice">
+    <title>Practicing Trigonometric Substitution</title>
+    <introduction>
+        <p>
+            Let's look at three integrals, and practice the kind of thinking we'll need to use to apply trigonometric substitution to them.
+            <ol>
+                <li>
+                    <p>
+                        <m>\displaystyle \int \dfrac{\sqrt{x^2-9}}{x}\;dx</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                       <m>\displaystyle \int \frac{2}{(4-x^2)^{3/2}}\;dx</m> 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\displaystyle \int \frac{1}{x^2\sqrt{x^2+1}}\;dx</m>
+                    </p>
+                </li>
+            </ol>
+            For each integral, do the following:
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Identify the term (or terms) that signify that trigonometric substitution might be a reasonable strategy. 
+            </p>
+        </statement>
+        <hint>
+            <p>
+                In each case, you're looking for some sum or difference of squared terms, normally (but not always) nested inside of some square root.
+
+                It also might be nice to re-write the second integral in order to notice the root:
+                <me>
+                     \int \frac{2}{(4-x^2)^{3/2}}\;dx = \int \frac{2}{\left(\sqrt{4-x^2}\right)^3}\;dx
+                </me>.                
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use that portion of the integral to compare three side lengths of a triangle. Which one is the largest (and so must represent the length of the hypotenuse)?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            For the side lengths <m>x</m>, <m>3</m>, and <m>\sqrt{x^2-9}</m>, which must be the largest? Think about <m>\sqrt{x^2-9}</m> and what we can learn from it.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            For the side lengths <m>x</m>, <m>2</m>, and <m>\sqrt{4-x^2}</m>, which must be the largest? Think about <m>\sqrt{4-x^2}</m> and what we can learn from it. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            For the side lengths <m>x</m>, <m>1</m>, and <m>\sqrt{x^2+1}</m>, which must be the largest? Think about <m>\sqrt{x^2+1}</m> and what we can learn from it.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            We know that <m>x\gt 3</m>, since <m>x^2-9\gt 0</m>. Similarly, we know that <m>x\gt \sqrt{x^2-9}</m>. So <m>x</m> has to be the length of the hypotenuse.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We know that <m>2\gt x</m>, since <m>4-x^2\gt 0</m>. Similarly, we know that <m>2\gt \sqrt{4-x^2}</m>. So <m>2</m> has to be the length of the hypotenuse.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We know that <m>\sqrt{x^2+1} \gt x</m>, since we are adding <m>1</m> to <m>x^2</m> under the square root. This is also the reason that <m>\sqrt{x^2+1}\gt 1</m> (we are adding <m>x^2</m> under the root). So <m>\sqrt{x^2+1}</m> has to be the length of the hypotenuse.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Construct the triangle, label an angle <m>\theta</m>, and use a trigonometric function to connect the two single-term side lengths. (Feel free to change the angle you label in order to use the sine, secant, or tangent functions instead of their co-functions).
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            For the integral <m>\displaystyle \int \frac{\sqrt{x^2-9}}{x}\;dx</m>, we have the following triangle.
+                        </p>
+                        <figure>
+                            <caption></caption>
+                            <image width="67%">
+                                <shortdescription>
+                                    Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled 3, and the hypotenuse is labeled x, and the remaining side length is labeled sqrt(x^2-9).
+                                </shortdescription>
+                                <latex-image>
+                                    \begin{tikzpicture}
+                                        \coordinate (A) at (0,0);
+                                        \coordinate (B) at (4,0);
+                                        \coordinate (C) at (4,2);
+                                        \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {$x$};
+                                        \draw (3.7,0) |- (4,0.3);
+                                        \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+                                        \node at (2,0) [below] {$3$};
+                                        \node at (4,1) [right] {$\sqrt{x^2-9}$};
+                                    \end{tikzpicture}
+                                </latex-image>
+                            </image>
+                        </figure>
+                        <p>
+                            This gives us <m>\cos(\theta) = \dfrac{3}{x}</m> or, equivalently, <m>\sec(\theta)=\dfrac{x}{3}</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            For the integral <m>\displaystyle \int \frac{2}{(4-x^2)^{3/2}}\;dx</m>, we have the following triangle.
+                        </p>
+                        <figure>
+                            <caption></caption>
+                            <image width="50%">
+                                <shortdescription>
+                                    Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled 2, and the remaining side length is labeled sqrt(4-x^2).
+                                </shortdescription>
+                                <latex-image>
+                                    \begin{tikzpicture}
+                                        \coordinate (A) at (0,0);
+                                        \coordinate (B) at (4,0);
+                                        \coordinate (C) at (4,2);
+                                        \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {$2$};
+                                        \draw (3.7,0) |- (4,0.3);
+                                        \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+                                        \node at (2,0) [below] {$\sqrt{4-x^2}$};
+                                        \node at (4,1) [right] {$x$};
+                                    \end{tikzpicture}
+                                </latex-image>
+                            </image>
+                        </figure>
+                        <p>
+                            This gives us <m>\sin(\theta) = \dfrac{x}{2}</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            For the integral <m>\displaystyle \int \frac{1}{x^2\sqrt{x^2+1}}\;dx</m>, we have the following triangle.
+                        </p>
+                        <figure>
+                            <caption></caption>
+                            <image width="50%">
+                                <shortdescription>
+                                    Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled 1. The hypotenuse is labeled sqrt(x^2+1).
+                                </shortdescription>
+                                <latex-image>
+                                    \begin{tikzpicture}
+                                        \coordinate (A) at (0,0);
+                                        \coordinate (B) at (4,0);
+                                        \coordinate (C) at (4,2);
+                                        \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {$\sqrt{x^2+1}$};
+                                        \draw (3.7,0) |- (4,0.3);
+                                        \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+                                        \node at (2,0) [below] {$1$};
+                                        \node at (4,1) [right] {$x$};
+                                    \end{tikzpicture}
+                                </latex-image>
+                            </image>
+                        </figure>
+                        <p>
+                            This gives us <m>\tan(\theta) = \dfrac{x}{1}</m> or, equivalently, <m>\tan(\theta)=x</m>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Define your substitution (for both <m>x</m> and the differential <m>dx</m>), and identify the Pythagorean identity that will be relevant for the integral.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            We will use <m>x=3\sec(\theta)</m> and <m>dx=3\sec(\theta)\tan(\theta)\;d\theta</m>.
+                        </p>
+                        <p>
+                            Then, we can expect to find the Pythagorean identity <m>9\sec^2(\theta)-9=9\tan^2(\theta)</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We will use <m>x=2\sin(\theta)</m> and <m>dx=2\cos(\theta)\;d\theta</m>.
+                        </p>
+                        <p>
+                            Then, we can expect to find the Pythagorean identity <m>4-4\sin^2(\theta)=4\cos^2(\theta)</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We will use <m>x=\tan(\theta)</m> and <m>dx=\sec^2(\theta)\;d\theta</m>.
+                        </p>
+                        <p>
+                            Then, we can expect to find the Pythagorean identity <m>\tan^2(\theta)+1=\sec^2(\theta)</m>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Substitute and antidifferentiate!
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            <m>\displaystyle \int \frac{\sqrt{x^2-9}}{x}\;dx = \int \frac{\sqrt{9\sec^2(\theta)-9}}{3\sec(\theta)}\left(3\sec(\theta)\tan(\theta)\right)\;d\theta</m>
+                        </p>
+                        <p>
+                            Also note that <m>\sqrt{9\sec^2(\theta)-9} = \sqrt{9\tan^2(\theta)}</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle \int \frac{2}{(4-x^2)^{3/2}}\;dx = \int \frac{2}{\left(\sqrt{4-4\sin^2(\theta)}\right)^3}\left(2\cos(\theta)\right)\;d\theta</m>
+                        </p>
+                        <p>
+                            Also note that <m>\sqrt{4-4\sin^2(\theta)} = \sqrt{4\cos^2(\theta)}</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle \int \frac{1}{x^2\sqrt{x^2+1}}\;dx = \int \frac{1}{\tan^2(\theta)\sqrt{\tan^2(\theta)+1}}\left(\sec^2(\theta)\right)\;d\theta</m>
+                        </p>
+                        <p>
+                            Also note that <m>\sqrt{\tan^2(\theta)+1} = \sqrt{\sec^2(\theta)}</m>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Using <m>x=3\sec(\theta)</m>, we get:
+                            <md>
+                                <mrow> \int \frac{\sqrt{x^2-9}}{x}\;dx \amp = \int \frac{\sqrt{9\sec^2(\theta)-9}}{3\sec(\theta)}\left(3\sec(\theta)\tan(\theta)\right)\;d\theta</mrow>
+                                <mrow> \amp = \int \frac{3\sqrt{9\tan^2(\theta)}\sec(theta)\tan(\theta)}{3\sec(\theta)}\;d\theta</mrow>
+                                <mrow> \amp = 3 \int \tan^2(\theta)\;d\theta</mrow>
+                                <mrow> \amp 3 \int \sec^2(\theta)-1\;d\theta</mrow>
+                                <mrow> \amp 3 \left(\tan(\theta)-\theta\right)+C</mrow>
+                                <mrow> \amp 3\tan(\theta)-3\theta+C</mrow>
+                            </md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Using <m>x=2\sin(\theta)</m>, we get:
+                            <md>
+                                <mrow> \int \frac{2}{(4-x^2)^{3/2}}\;dx \amp= \int \frac{2}{\left(\sqrt{4-4\sin^2(\theta)}\right)^3}\left(2\cos(\theta)\right)\;d\theta </mrow>
+                                <mrow> \amp = \int \frac{4\cos(\theta)}{\left(\sqrt{4\cos^2(\theta)}\right)^3}\;d\theta</mrow>
+                                <mrow> \amp =\frac{1}{2}\int \frac{1}{\cos^2(\theta)}\;d\theta</mrow>
+                                <mrow> \amp =\frac{1}{2} \int \sec^2(\theta)\;d\theta</mrow>
+                                <mrow> \amp = \frac{1}{2}\tan(\theta)+C</mrow>
+                            </md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Using <m>x=\tan(\theta)</m>, we get:
+                            <md>
+                                <mrow> \int \frac{1}{x^2\sqrt{x^2+1}}\;dx \amp= \int \frac{1}{\tan^2(\theta)\sqrt{\tan^2(\theta)+1}}\left(\sec^2(\theta)\right)\;d\theta</mrow>
+                                <mrow> \amp = \int \frac{\sec^2(\theta)}{\tan^2(\theta)\sqrt{\sec^2(\theta)}}\;d\theta </mrow>
+                                <mrow> \amp = \int \frac{\sec(\theta)}{\tan^2(\theta)}</mrow>
+                                <mrow> \amp = \int \frac{\cos(\theta)}{\sin^2(\theta)}\;d\theta</mrow>
+                                <mrow> \amp = \int \csc(\theta)\cot(\theta)\;d\theta</mrow>
+                                <mrow> \amp = -\csc(\theta)+C</mrow>
+                            </md>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use your triangle to substitute your antiderivative back in terms of <m>x</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            From the triangle, we get <m>\tan(\theta) = \dfrac{\sqrt{x^2-9}}{3} </m>. Then, since <m>\sec(\theta)=\dfrac{x}{3}</m>, we can use <m>\theta = \sec^{-1}\left(\dfrac{x}{3}\right)</m>. This gives us:
+                            <md>
+                                <mrow> \int \frac{\sqrt{x^2-9}}{x}\;dx \amp = 3 \int \sec^2(\theta)-1\;d\theta</mrow>
+                                <mrow> \amp = 3\tan(\theta) - 3\theta + C</mrow>
+                                <mrow> \amp = \sqrt{x^2-9} - 3\sec^{-1}\left(\frac{x}{3}\right)+C</mrow>
+                            </md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            From the triangle, we get <m>\tan(\theta) = \dfrac{x}{\sqrt{4-x^2}}</m>. This gives us:
+                            <md>
+                                <mrow>\int \frac{2}{(4-x^2)^{3/2}}\;dx \amp= \frac{1}{2} \int \sec^2(\theta)\;d\theta</mrow>
+                                <mrow> \amp = \frac{1}{2}\tan(\theta)+C</mrow>
+                                <mrow> \amp = \frac{x}{2\sqrt{4-x^2}}+C</mrow>
+                            </md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            From the triangle, we get <m>\csc(\theta) = \dfrac{\sqrt{x^2+1}}{x}</m>. This gives us:
+                            <md>
+                                <mrow> \int \frac{1}{x^2\sqrt{x^2+1}}\;dx \amp= \int \csc(\theta)\cot(\theta)\;d\theta</mrow>
+                                <mrow> \amp = -\csc(\theta)+C</mrow>
+                                <mrow> \amp = - \frac{\sqrt{x^2+1}}{x}+C</mrow>
+                            </md>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </task>
+</activity>

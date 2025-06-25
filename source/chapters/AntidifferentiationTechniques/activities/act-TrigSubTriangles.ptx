@@ -13,13 +13,13 @@
                         <latex-image>
                             \begin{tikzpicture}
                                 \coordinate (A) at (0,0);
-                                \coordinate (B) at (5,0);
-                                \coordinate (C) at (5,2.5);
+                                \coordinate (B) at (4,0);
+                                \coordinate (C) at (4,2);
                                 \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {$a$};
-                                \draw (4.7,0) |- (5,0.3);
+                                \draw (3.7,0) |- (4,0.3);
                                 \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
-                                \node at (2.5,0) [above] {};
-                                \node at (5,1.25) [left] {$x$};
+                                \node at (2,0) [above] {};
+                                \node at (4,1) [left] {$x$};
                             \end{tikzpicture}
                         </latex-image>
                     </image>
@@ -30,13 +30,13 @@
                         <latex-image>
                             \begin{tikzpicture}
                                 \coordinate (A) at (0,0);
-                                \coordinate (B) at (5,0);
-                                \coordinate (C) at (5,2.5);
+                                \coordinate (B) at (4,0);
+                                \coordinate (C) at (4,2);
                                 \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {};
-                                \draw (4.7,0) |- (5,0.3);
+                                \draw (3.7,0) |- (4,0.3);
                                 \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
-                                \node at (2.5,0) [above] {$a$};
-                                \node at (5,1.25) [left] {$x$};
+                                \node at (2,0) [above] {$a$};
+                                \node at (4,1) [left] {$x$};
                             \end{tikzpicture}
                         </latex-image>
                     </image>
@@ -47,13 +47,13 @@
                         <latex-image>
                             \begin{tikzpicture}
                                 \coordinate (A) at (0,0);
-                                \coordinate (B) at (5,0);
-                                \coordinate (C) at (5,2.5);
+                                \coordinate (B) at (4,0);
+                                \coordinate (C) at (4,2);
                                 \draw (A) -- (B) -- (C) -- (A) node[midway, above, sloped] {$x$};
-                                \draw (4.7,0) |- (5,0.3);
+                                \draw (3.7,0) |- (4,0.3);
                                 \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
-                                \node at (2.5,0) [above] {$a$};
-                                \node at (5,1.25) [left] {};
+                                \node at (2,0) [above] {$a$};
+                                \node at (4,1) [left] {};
                             \end{tikzpicture}
                         </latex-image>
                     </image>
