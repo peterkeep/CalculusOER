@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="activity project-like"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.7.2</span><span class="period">.</span><span class="space"> </span><span class="title">First Examples of Partial Fractions.</span>
+</h4>
+<article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical">
+<div class="para">Consider the integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{6x-16}{x^2-4x+3}\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">First, confirm that this would be <em class="emphasis">very</em> annoying to try to use <span class="process-math">\(u\)</span>-substitution on, even though we have a linear numerator and quadratic denominator.</div>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical">
+<div class="para">Notice that the denominator can be factored:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{6x-16}{(x-3)(x-1)}\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">If this integrand function were a sum of two "smaller" rational functions, what would their denominators be? What do we know about their numerators?</div>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">The denominators would need to multiply to get <span class="process-math">\((x-3)(x-1)\text{,}\)</span> and each numerator would have to have a degree smaller than its respective denominator.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para">We might have something like <span class="process-math">\(\dfrac{\fillinmath{XX}}{x-3}+\dfrac{\fillinmath{XX}}{x-1} = \dfrac{6x-16}{(x-3)(x-1)}\text{,}\)</span> where the numerators are constant terms (since their degree must be smaller than 1).</div></div></details>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para">Use some variables (it’s typical to use capital letters like <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(C\text{,}\)</span> etc.) to represent the numerators, and then add the partial fractions together. What do you get? How does this rational function compare to <span class="process-math">\(\dfrac{6x-16}{(x-3)(x-1)}\text{?}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">We want to try to add up <span class="process-math">\(\dfrac{A}{x-3}+\dfrac{B}{x-1}\)</span> and compare the result to <span class="process-math">\(\dfrac{6x-16}{(x-3)(x-1)}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="displaymath process-math">
+\begin{align*}
+\frac{A}{x-3} + \frac{B}{x-1} \amp = \frac{A}{x-3}\left(\frac{x-1}{x-1}\right) + \frac{B}{x-1}\left(\frac{x-3}{x-3}\right)\\
+\amp = \frac{A(x-1)}{(x-3)(x-1)} + \frac{B(x-3)}{(x-3)(x-1)}\\
+\amp = \frac{A(x-1)+B(x-3)}{(x-3)(x-1)}
+\end{align*}
+</div>
+<div class="para">When we compare this to <span class="process-math">\(\dfrac{6x-16}{(x-3)(x-1)}\text{,}\)</span> we can see that the denominators are the same, and so, if these are equal to each other, the numerators must be as well.</div>
+</div></div></details>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para">Set up an equation connecting the numerators, and solve for your unknown variables. What are the two fractions that added together to get <span class="process-math">\(\dfrac{6x-16}{(x-3)(x-1)}\text{?}\)</span>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{align*}
+A(x-1)+B(x-3)\amp = 6x-16\\
+(A+B)x -(A+3B) \amp = 6x-16 
+\end{align*}
+</div>
+<div class="para">This means that <span class="process-math">\(A+B=6\)</span> and <span class="process-math">\(A+3B=16\text{.}\)</span> There are a variety of ways to solve this, but we can say that <span class="process-math">\(A=6-B\text{,}\)</span> and so then</div>
+<div class="displaymath process-math">
+\begin{align*}
+A+3B \amp=16 \\
+(6-B)+3B \amp = 16\\
+2B \amp = 10\\
+B \amp =5
+\end{align*}
+</div>
+<div class="para">Since <span class="process-math">\(A=6-B\text{,}\)</span> we have <span class="process-math">\(A=6-5=1\text{.}\)</span>
+</div>
+</div>
+<div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\dfrac{6x-16}{(x-3)(x-1)} = \frac{1}{x-3}+\frac{5}{x-1}
+\end{equation*}
+</div></div>
+</div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para">Antidifferentiate to solve the integral <span class="process-math">\(\displaystyle \int \frac{6x-16}{(x-3)(x-1)}\;dx\text{.}\)</span>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+\int \frac{6x-16}{(x-3)(x-1)}\;dx\amp = \int \frac{1}{x-3}+\frac{5}{x-1}\;dx\\
+\amp =\ln|x-3|+5\ln|x-1|+C
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para logical">
+<div class="para">Let’s do the same thing with a new integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{3x^2-2x+3}{x(x^2+1)}\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">What are the partial fraction forms? What kinds of numerators should we expect to see? Use variables to represent these.</div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">We expect to see partial fractions <span class="process-math">\(\dfrac{\fillinmath{XX}}{x}\)</span> and <span class="process-math">\(\dfrac{\fillinmath{XX}}{x^2+1}\text{.}\)</span> We know the numerator over <span class="process-math">\(x\)</span> needs to be constant, but we could have a linear numerator over <span class="process-math">\(x^2+1\text{.}\)</span> So our partial fractions are:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{A}{x}+\frac{Bx+C}{x^2+1}\text{.}
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para">Add the partial fractions together and set up an equation for the numerators to solve. What are the two partial fractions after you solve for the unknown coefficients?</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical">
+<div class="para">We want to find values for <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{A}{x}+\frac{Bx+C}{x^2+1} = \frac{3x^2-2x+3}{x(x^2+1)}\text{.}
+\end{equation*}
+</div>
+<div class="para">Use common denominators to add</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{A}{x}+\frac{Bx+C}{x^2+1}
+\end{equation*}
+</div>
+<div class="para">and then set the resulting numerator equal to <span class="process-math">\(3x^2-2x+3\)</span> and try to solve.</div>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{align*}
+\frac{A}{x}+\frac{Bx+C}{x^2+1}\amp = \frac{A}{x}\left(\frac{x^2+1}{x^2+1}\right)+\frac{Bx+C}{x^2+1}\left(\frac{x}{x}\right) \\
+\amp = \frac{A(x^2+1)+(Bx+C)(x)}{x(x^2+1)}
+\end{align*}
+</div>
+<div class="para">Then we can set the numerators equal to get:</div>
+<div class="displaymath process-math">
+\begin{align*}
+A(x^2+1)+(Bx+C)(x)\amp = 3x^2-2x+3\\
+(A+B)x^2 + Cx + A \amp 3x^2-2x+3
+\end{align*}
+</div>
+<div class="para">So now we can see that since <span class="process-math">\(Cx=-2x\text{,}\)</span> we have <span class="process-math">\(C=-2\text{.}\)</span> We can also look at the constant terms and see that <span class="process-math">\(A=3\text{.}\)</span> Now we know that <span class="process-math">\((A+B)x^2=3x^2\text{,}\)</span> but since <span class="process-math">\(A=3\)</span> we have <span class="process-math">\(B=0\text{.}\)</span>
+</div>
+</div>
+<div class="para">So we have <span class="process-math">\(\displaystyle \int \frac{3x^2-2x+3}{x(x^2+1)}\;dx = \int \frac{3}{x}-\frac{2}{x^2+1}\;dx\text{.}\)</span>
+</div>
+</div></details>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="para">Antidifferentiate and solve the integral <span class="process-math">\(\displaystyle \int \frac{3x^2-2x+3}{x(x^2+1)}\;dx\text{.}\)</span>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+\int \frac{3x^2-2x+3}{x(x^2+1)}\;dx \amp = \int \frac{3}{x}-\frac{2}{x^2+1}\;dx\\
+\amp = 2\ln|x|-2\tan^{-1}(x)+C
+\end{align*}
+</div></div></div></details></div></article></article><span class="incontext"><a class="internal" href="sec-PartialFractions.html#act-PartialFractionsFirstExamples">in-context</a></span>
+</body>
+</html>

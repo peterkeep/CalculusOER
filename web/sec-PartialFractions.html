@@ -97,14 +97,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.3';
+eBookConfig.runestone_version = '7.8.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.8e4157bd77a28b29.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 </head>
 <body class="pretext book ignore-math">
@@ -499,7 +499,15 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-WhenPartialFractions" class="internal"><span class="codenumber">7.7.1</span> <span class="title">When?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-HowPartialFractions" class="internal"><span class="codenumber">7.7.2</span> <span class="title">How?</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PartialFractions.html#ex-PartialFractions" class="internal"><span class="codenumber">7.7.3</span> <span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-SpecificStrategies" class="internal"><span class="codenumber">7.7.3</span> <span class="title">More Specific Strategies</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsubsec-SimpleLinear" class="internal"><span class="codenumber">7.7.3.1</span> <span class="title">Partial Fraction Type: Simple Linear Factors</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsubsec-IrreducibleQuadratics" class="internal"><span class="codenumber">7.7.3.2</span> <span class="title">Partial Fraction Type: Irreducible Quadratic Factors</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsubsec-RepeatedLinear" class="internal"><span class="codenumber">7.7.3.3</span> <span class="title">Partial Fraction Type: Repeated Linear Factors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PartialFractions.html#ex-PartialFractions" class="internal"><span class="codenumber">7.7.4</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -812,8 +820,350 @@ A(x^2+1)+(Bx+C)(x)\amp = 3x^2-2x+3\\
 \int \frac{3x^2-2x+3}{x(x^2+1)}\;dx \amp = \int \frac{3}{x}-\frac{2}{x^2+1}\;dx\\
 \amp = 2\ln|x|-2\tan^{-1}(x)+C
 \end{align*}
-</div></div></div></details></div></article></article></section><section class="exercises" id="ex-PartialFractions"><h3 class="heading hide-type">
-<span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber">7.7.3</span><span class="space"> </span><span class="title">Practice Problems</span>
+</div></div></div></details></div></article></article><div class="para logical" id="subsec-HowPartialFractions-7">
+<div class="para">So we can see the basics of how this will work:</div>
+<ol class="decimal" id="subsec-HowPartialFractions-7-1">
+<li id="subsec-HowPartialFractions-7-1-1"><div class="para" id="subsec-HowPartialFractions-7-1-1-1">Figure out the denominators of the fractions we could add to get the function we’re integrating.</div></li>
+<li id="subsec-HowPartialFractions-7-1-2"><div class="para" id="subsec-HowPartialFractions-7-1-2-1">Construct the partial fractions using placeholders for the numerators (making sure to keep the degree of the numerators smaller than the degree of the denominators).</div></li>
+<li id="subsec-HowPartialFractions-7-1-3"><div class="para" id="subsec-HowPartialFractions-7-1-3-1">Add these placeholder fractions up, and see what the coefficients would have to be in order to make them add to the function we’re integrating.</div></li>
+<li id="subsec-HowPartialFractions-7-1-4"><div class="para" id="subsec-HowPartialFractions-7-1-4-1">Antidifferentiate the smaller rational functions.</div></li>
+</ol>
+</div></section><section class="subsection" id="subsec-SpecificStrategies"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.7.3</span><span class="space"> </span><span class="title">More Specific Strategies</span>
+</h3>
+<section class="introduction" id="subsec-SpecificStrategies-2"><div class="para" id="subsec-SpecificStrategies-2-1">We’re going to investigate these partial fractions a bit more, and focus on two cases: linear denominators, and quadratic denominators. This will limit the scope of our work enough that this doesn’t get too wild, and also works well with the kinds of things we know how to antidifferentiate: we can antidifferentiate any rational function with a linear denominator and we know how to antidifferentiate many rational functions with quadratic denominators.</div></section><section class="subsubsection" id="subsubsec-SimpleLinear"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">7.7.3.1</span><span class="space"> </span><span class="title">Partial Fraction Type: Simple Linear Factors</span>
+</h4>
+<div class="para logical" id="subsubsec-SimpleLinear-2">
+<div class="para">For rational functions where the denominator has some linear factor like <span class="process-math">\((x-k)\text{,}\)</span> we can set up a partial fraction with just a constant coefficient in the numerator:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-PartialFractionsFirstExamples.html">
+\begin{equation*}
+\frac{A}{x-k}\text{.}
+\end{equation*}
+</div>
+<div class="para">We have outlined a pretty reasonable approach for these in <a href="sec-PartialFractions.html#act-PartialFractionsFirstExamples" class="xref" data-knowl="./knowl/xref/act-PartialFractionsFirstExamples.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.7.2: First Examples of Partial Fractions">Activity 7.7.2</a> when we worked on the integral</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-PartialFractionsFirstExamples.html">
+\begin{equation*}
+\int \frac{6x-16}{(x-3)(x-1)}\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">We can make note of something useful, though. At one point during the process, we had set up the two partial fractions, added them together, and then we said that we wanted to find the values of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> that made the general partial fraction forms we had set up match with the actual function we were hoping to integrate.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-PartialFractionsFirstExamples.html" id="subsubsec-SimpleLinear-2-7">
+\begin{align*}
+\frac{A}{x-3} + \frac{B}{x-1} \amp = \frac{A(x-1) + B(x-3)}{(x-3)(x-1)}\\
+\amp = \frac{6x-16}{(x-3)(x-1)}
+\end{align*}
+</div>
+<div class="para">What this meant for us was that we can set the numerators equal to each other and solve for <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-PartialFractionsFirstExamples.html">
+\begin{equation*}
+A(x-1)+B(x-3)=6x-16\text{.}
+\end{equation*}
+</div>
+<div class="para">Let’s pause here.</div>
+</div>
+<div class="para logical" id="subsubsec-SimpleLinear-3">
+<div class="para">We are hoping to find the values of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> that will make this equation work out for all values of <span class="process-math">\(x\text{.}\)</span> But we can also make use of the fact that this equation will be true for some <em class="emphasis">specific</em> values of <span class="process-math">\(x\text{.}\)</span> For instance, we can evaluate this equation at <span class="process-math">\(x=2\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-PartialFractionsFirstExamples.html" id="subsubsec-SimpleLinear-3-7">
+\begin{align*}
+A(2-1)+B(2-3) \amp = 6(2)-16\\
+A-B \amp = -4 
+\end{align*}
+</div>
+<div class="para">This just generates another equation connecting <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> that we could use like we did in in <a href="sec-PartialFractions.html#act-PartialFractionsFirstExamples" class="xref" data-knowl="./knowl/xref/act-PartialFractionsFirstExamples.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.7.2: First Examples of Partial Fractions">Activity 7.7.2</a>.</div>
+</div>
+<div class="para logical" id="subsubsec-SimpleLinear-4">
+<div class="para">But is there a nicer, more convenient <span class="process-math">\(x\)</span>-value to use? Can we force this to generate a nicer equation involving our unknown coefficients? Can we find some <span class="process-math">\(x\)</span>-values that will make the factors <span class="process-math">\((x-1)\)</span> and <span class="process-math">\((x-3)\)</span> go to 0, for instance?</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-PartialFractionsFirstExamples.html">
+\begin{equation*}
+A\underbrace{(x-1)}_{x=1}+B\underbrace{(x-3)}_{x=3}=6x-16
+\end{equation*}
+</div>
+<div class="para">Let’s try it!</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-PartialFractionsFirstExamples.html" id="subsubsec-SimpleLinear-4-6">
+\begin{align*}
+x=1: \amp \amp A(1-1)+B(1-3) \amp = 6(1)-16 \amp\\
+\amp \amp -2B \amp= -10 \amp\\
+\amp \amp B \amp = 5\\
+x=3: \amp \amp A(3-1)+B(3-3)\amp = 6(3)-16\\
+\amp \amp 2A \amp = 2\\
+\amp \amp A \amp = 1
+\end{align*}
+</div>
+<div class="para">These are the same values we had in <a href="sec-PartialFractions.html#act-PartialFractionsFirstExamples" class="xref" data-knowl="./knowl/xref/act-PartialFractionsFirstExamples.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.7.2: First Examples of Partial Fractions">Activity 7.7.2</a>! This strategy works well for <em class="emphasis">any</em> simple linear factors, and definitely helps to reduce the amount of algebra required.</div>
+</div>
+<article class="assemblage assemblage-like" id="strat-SimpleLinear"><h5 class="heading"><span class="title">Simple Linear Factors.</span></h5>
+<div class="para logical" id="strat-SimpleLinear-2">
+<div class="para">If a rational function has a simple linear factor in the denominator in the form <span class="process-math">\((x-k)\text{,}\)</span> then the corresponding partial fraction is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{A}{x-k}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(A\)</span> is a real number constant with <span class="process-math">\(A\neq 0\text{.}\)</span>
+</div>
+</div>
+<div class="para" id="strat-SimpleLinear-3">When we antidifferentiate these, we will end up with a logarithmic function.</div></article></section><section class="subsubsection" id="subsubsec-IrreducibleQuadratics"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">7.7.3.2</span><span class="space"> </span><span class="title">Partial Fraction Type: Irreducible Quadratic Factors</span>
+</h4>
+<div class="para" id="subsubsec-IrreducibleQuadratics-2">So what about our other example in <a href="sec-PartialFractions.html#act-PartialFractionsFirstExamples" class="xref" data-knowl="./knowl/xref/act-PartialFractionsFirstExamples.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.7.2: First Examples of Partial Fractions">Activity 7.7.2</a>? We had a quadratic factor (that couldn’t be factored nicely). We’ll call these <dfn class="terminology">irreducible quadratic</dfn> factors. The real difference was just the structure of the numerator, where we accounted for the option of the numerator being some linear function, <span class="process-math">\(Ax+B\text{.}\)</span>
+</div>
+<div class="para" id="subsubsec-IrreducibleQuadratics-3">There isn’t much more to say here, since the algebra can be frustrating to deal with. It can be helpful to save some of these coefficients for last: that way, we can find some of the "easier" ones (from the <a href="sec-PartialFractions.html#strat-SimpleLinear" class="xref" data-knowl="./knowl/xref/strat-SimpleLinear.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Simple Linear Factors">Simple Linear Factors</a> cases) first, and hopefully the remaining coefficients won’t be too difficult to find.</div>
+<article class="assemblage assemblage-like" id="strat-IrreducibleQuadratics"><h5 class="heading"><span class="title">Irreducible Quadratic Factors.</span></h5>
+<div class="para logical" id="strat-IrreducibleQuadratics-2">
+<div class="para">If a rational function has an irreducible quadratic factor in the denominator in the form <span class="process-math">\((ax^2+bx+c)\text{,}\)</span> then the corresponding partial fraction is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{Ax+B}{ax^2+bx+c}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are real number constants, and <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> cannot both be <span class="process-math">\(0\text{.}\)</span> That is, if one of <span class="process-math">\(A\)</span> or <span class="process-math">\(B\)</span> is <span class="process-math">\(0\text{,}\)</span> then the other cannot be.</div>
+</div>
+<div class="para" id="strat-IrreducibleQuadratics-3">When we antidifferentiate these, we can expect a logarithmic function, an inverse tangent function, or some combination of the two. We can get other antiderivatives, but those will be beyond the scope of this introductory text.</div></article></section><section class="subsubsection" id="subsubsec-RepeatedLinear"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">7.7.3.3</span><span class="space"> </span><span class="title">Partial Fraction Type: Repeated Linear Factors</span>
+</h4>
+<div class="para" id="subsubsec-RepeatedLinear-2">Let’s look at one last case. It’s a bit of a weird one, so we’ll explore it in its own example.</div>
+<article class="activity project-like" id="act-RepeatedLinear"><h5 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.7.3</span><span class="period">.</span><span class="space"> </span><span class="title">Fiddling with Repeated Factors.</span>
+</h5>
+<div class="introduction" id="act-RepeatedLinear-2"><div class="para logical" id="act-RepeatedLinear-2-1">
+<div class="para">Let’s sit with the following integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{3x+5}{x^2+2x+1}\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">Before we start, we can think about how annoying it would be to try to start with a <span class="process-math">\(u\)</span>-substitution where <span class="process-math">\(u=x^2+2x+1\text{.}\)</span>
+</div>
+</div></div>
+<article class="task exercise-like" id="act-RepeatedLinear-3"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="act-RepeatedLinear-3-1-1">Factor the denominator! What’s different about the factors in this denominator compared to the ones in <a href="sec-PartialFractions.html#act-PartialFractionsFirstExamples" class="xref" data-knowl="./knowl/xref/act-PartialFractionsFirstExamples.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.7.2: First Examples of Partial Fractions">Activity 7.7.2</a>?</div>
+<div class="solutions"><details id="act-RepeatedLinear-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="act-RepeatedLinear-3-2-1"><span class="process-math">\(x^2+2x+1=(x+1)(x+1)\)</span></div></div></details></div></article><article class="task exercise-like" id="act-RepeatedLinear-4"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="act-RepeatedLinear-4-1-1">Why can’t we use these two factors to create two partial fractions with <a href="sec-PartialFractions.html#strat-SimpleLinear" class="xref" data-knowl="./knowl/xref/strat-SimpleLinear.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Simple Linear Factors">Simple Linear Factors</a>?</div></article><article class="task exercise-like" id="act-RepeatedLinear-5"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<div class="para" id="act-RepeatedLinear-5-1-1">Ok, instead, we’re going to do some algebra that is reminiscent of what we have done before in <a href="sec-AlgebraicManipulations.html" class="internal" title="Section 7.3: Manipulating Integrands">Section 7.3</a>.</div> <div class="para logical" id="act-RepeatedLinear-5-1-2">
+<div class="para">Can you write the numerator, <span class="process-math">\(3x+5\text{,}\)</span> as some coefficient on the factor <span class="process-math">\((x+1)\)</span> with some constant "remainder?"</div>
+<div class="displaymath process-math">
+\begin{equation*}
+3x+5 = \fillinmath{XX}(x+1)+\fillinmath{XX}
+\end{equation*}
+</div>
+</div>
+<div class="solutions"><details id="act-RepeatedLinear-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="act-RepeatedLinear-5-2-1"><div class="displaymath process-math">
+\begin{equation*}
+3x+5 = 3(x+1)+2
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="act-RepeatedLinear-6"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<div class="para" id="act-RepeatedLinear-6-1-1">Why is this re-forming of the numerator useful? What does that do, when we write it over the factored denominator? Why did we choose <span class="process-math">\((x+1)\)</span> as the factor to use for our re-writing?</div> <div class="para" id="act-RepeatedLinear-6-1-2">Feel free to show why this is helpful!</div>
+<div class="solutions">
+<details id="act-RepeatedLinear-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-RepeatedLinear-6-2-1">Split the fraction up across the sum in the numerator!</div></div></details><details id="act-RepeatedLinear-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-RepeatedLinear-6-3-1"><div class="displaymath process-math" id="act-RepeatedLinear-6-3-1-1">
+\begin{align*}
+\frac{3x+5}{(x+1)^2} \amp = \frac{3(x+1)+2}{(x+1)^2}\\
+\amp = \frac{3(x+1)}{(x+1)^2} + \frac{2}{(x+1)^2}\\
+\amp = \frac{3}{x+1}+\frac{2}{(x+1)^2}
+\end{align*}
+</div></div></div></details>
+</div></article><article class="task exercise-like" id="act-RepeatedLinear-7"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<div class="para" id="act-RepeatedLinear-7-1-1">Integrate <span class="process-math">\(\displaystyle\int\frac{3x+5}{x^2+2x+1}\;dx\)</span> using your clever re-writing. Explain why this is a friendlier form.</div>
+<div class="solutions"><details id="act-RepeatedLinear-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-RepeatedLinear-7-2-1">
+<div class="para">We’ll use our re-written integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{3x+5}{x^2+2x+1}\;dx = \int \frac{3}{x+1}+\frac{2}{(x+1)^2}\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">Now, we can split this into two integrals to deal with separately. For both, we can use the <span class="process-math">\(u\)</span>-substitution <span class="process-math">\(u=x+1\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="act-RepeatedLinear-7-2-1-4">
+\begin{align*}
+\int \frac{3}{x+1}+\frac{2}{(x+1)^2}\;dx \amp = \int \frac{3}{u}\;du + \int \frac{2}{u^2}\;du\\
+\amp = 3\ln|u| - \frac{2}{u}+C\\
+\amp = 3\ln|x+1| - \frac{2}{x+1}+C
+\end{align*}
+</div>
+</div></div></details></div></article><div class="conclusion" id="act-RepeatedLinear-8"><div class="para" id="act-RepeatedLinear-8-1">This is something we can do, algebraically, for every fraction with a "repeated" factor like this. But, more importantly, we can incorporate this idea into how we think about partial fractions.</div></div></article><article class="assemblage assemblage-like" id="strat-RepeatedLinear"><h5 class="heading"><span class="title">Repeated Linear Factors.</span></h5>
+<div class="para logical" id="strat-RepeatedLinear-2">
+<div class="para">If a rational function has a repeated linear factor in the denominator in the form <span class="process-math">\((x-k)^n\text{,}\)</span> where m<span class="process-math">\(n\)</span> is some integer greater than 1, then the corresponding partial fractions are</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{A_1}{x-k} + \frac{A_2}{(x-k)^2} + ... + \frac{A_n}{(x-k)^n}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(A_1, A_2, ..., A_n\)</span> are real numbers and <span class="process-math">\(A_n\neq 0\text{.}\)</span>
+</div>
+</div>
+<div class="para" id="strat-RepeatedLinear-3">When we antidifferentiate these, we can expect to use the rule and maybe find a logarithm function.</div></article></section></section><section class="conclusion" id="sec-PartialFractions-6"><div class="para" id="sec-PartialFractions-6-1">At this point, we can spend our time going through one or two examples where we put this all together.</div>
+<article class="example example-like" id="sec-PartialFractions-6-2"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.7.1</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="sec-PartialFractions-6-2-1"><div class="para" id="sec-PartialFractions-6-2-1-1">For each of the following integrals, set up the relevant partial fraction forms, solve for the unknown coefficients, and then antidifferentiate.</div></div>
+<article class="task exercise-like" id="sec-PartialFractions-6-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-PartialFractions-6-2-2-1-1"><span class="process-math">\(\displaystyle \int \frac{5x^2+27x+51}{(x-2)(x+3)^3}\;dx\)</span></div>
+<div class="solutions">
+<details id="sec-PartialFractions-6-2-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="sec-PartialFractions-6-2-2-2-1">
+<div class="para">Your partial fraction forms will look like this:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{A}{x-2}+\frac{B}{x+3}+\frac{C}{(x+3)^2}+\frac{D}{(x+3)^3}\text{.}
+\end{equation*}
+</div>
+</div></div></details><details id="sec-PartialFractions-6-2-2-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-PartialFractions-6-2-2-3-1">You can find the values for <span class="process-math">\(A\)</span> and <span class="process-math">\(D\)</span> pretty easily by thinking about convenient <span class="process-math">\(x\)</span>-values, like we talked about in <a href="sec-PartialFractions.html#subsubsec-SimpleLinear" class="internal" title="Subsubsection 7.7.3.1: Partial Fraction Type: Simple Linear Factors">Subsubsection 7.7.3.1 Partial Fraction Type: Simple Linear Factors</a>.</div></div></details><details id="sec-PartialFractions-6-2-2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec-PartialFractions-6-2-2-4-1">
+<div class="para">We’ll re-write our integral using the partial fraction forms:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{5x^2+27x+51}{(x-2)(x+3)^3}\;dx = \int \frac{A}{x-2}+\frac{B}{x+3}+\frac{C}{(x+3)^2}+\frac{D}{(x+3)^3}\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">When we combine these fractions to compare the numerators, we end up with the following equation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(x+3)^3 + B(x-2)(x+3)^2 + C(x-2)(x+3)+D(x-2) = 5x^2+27x+51
+\end{equation*}
+</div>
+<div class="para">We can evaluate this at <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=-3\)</span> to reveal the values of <span class="process-math">\(A\)</span> and <span class="process-math">\(D\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-PartialFractions-6-2-2-4-1-7">
+\begin{align*}
+x=2: \amp \amp A(5)^3 \amp = 5(4)+27(2)+51 \amp\\
+\amp \amp A \amp =\frac{125}{125}=1\\
+x=-3: \amp \amp D(-5) \amp = 5(9)+27(-3)+51\\
+\amp \amp D \amp = \frac{15}{-5}=-3
+\end{align*}
+</div>
+<div class="para">Now that we know <span class="process-math">\(A=1\)</span> and <span class="process-math">\(D=-3\text{,}\)</span> we can put those into our equation connecting the numerators, and solve for <span class="process-math">\(B\)</span> and <span class="process-math">\(C\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x+3)^3 + B(x-2)(x+3)^2 + C(x-2)(x+3)-3(x-2) = 5x^2+27x+51
+\end{equation*}
+</div>
+<div class="para">If we just consider the cubic terms, then on the left side of the equation we have <span class="process-math">\(x^3+Bx^3\text{,}\)</span> and there are no cubic terms on the right side. This means that <span class="process-math">\(1+B=0\)</span> and so <span class="process-math">\(B=-1\text{.}\)</span>
+</div>
+</div>
+<div class="para logical" id="sec-PartialFractions-6-2-2-4-2">
+<div class="para">Similarly, we can consider just the constant terms of the (updated) equation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x+3)^3 - (x-2)(x+3)^2 + C(x-2)(x+3)-3(x-2) = 5x^2+27x+51
+\end{equation*}
+</div>
+<div class="para">We can see that on the left side, we’ll have <span class="process-math">\((3)^3-(-2)(3)^2 + C(-2)(3) - 3(-2)\)</span> and on the right side, the constant term is <span class="process-math">\(51\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-PartialFractions-6-2-2-4-2-4">
+\begin{align*}
+27+18-6C+6 \amp = 51\\
+51 - 6C \amp = 51\\
+C \amp =0
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="sec-PartialFractions-6-2-2-4-3">
+<div class="para">Finally, we have our new, re-written, integral. We can antidifferentiate.</div>
+<div class="displaymath process-math" id="sec-PartialFractions-6-2-2-4-3-1">
+\begin{align*}
+\int \frac{5x^2+27x+51}{(x-2)(x+3)^3}\;dx \amp= \int \frac{1}{x-2}-\frac{1}{x+3} - \frac{3}{(x+3)^3}\;dx \\
+\amp = \ln|x-2|-\ln|x+3| + \frac{3}{2(x+3)^2}+C
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><article class="task exercise-like" id="sec-PartialFractions-6-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-PartialFractions-6-2-3-1-1"><span class="process-math">\(\displaystyle \int \frac{6x^2+25x+27}{(x+1)(x^2+4x+5)}\;dx\)</span></div>
+<div class="solutions">
+<details id="sec-PartialFractions-6-2-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="sec-PartialFractions-6-2-3-2-1">
+<div class="para">Your partial fraction forms will look like this:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{A}{x+1} + \frac{Bx+C}{x^2+4x+5}\text{.}
+\end{equation*}
+</div>
+</div></div></details><details id="sec-PartialFractions-6-2-3-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-PartialFractions-6-2-3-3-1">You’ll be able to easily find <span class="process-math">\(A\)</span> by thinking about convenient <span class="process-math">\(x\)</span>-values, but not <span class="process-math">\(B\)</span> or <span class="process-math">\(C\text{.}\)</span>
+</div></div></details><details id="sec-PartialFractions-6-2-3-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec-PartialFractions-6-2-3-4-1">
+<div class="para">Let’s, again, re-write our integral using the partial fraction forms we set up:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{6x^2+25x+27}{(x+1)(x^2+4x+5)}\;dx = \int frac{A}{x+1} + \frac{Bx+C}{x^2+4x+5}\;dx
+\end{equation*}
+</div>
+<div class="para">Our equation for the combined numerator is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(x^2+4x+5) + (Bx+C)(x+1) = 6x^2+25x+27\text{.}
+\end{equation*}
+</div>
+<div class="para">We can find <span class="process-math">\(A\)</span> be evaluating at <span class="process-math">\(x=-1\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-PartialFractions-6-2-3-4-1-5">
+\begin{align*}
+x=-1:\amp \amp A(1-4+5) \amp = 6(1)-25+27\amp\\
+\amp \amp A\amp= \frac{8}{2} = 4
+\end{align*}
+</div>
+<div class="para">Now, knowing that <span class="process-math">\(A=2\text{,}\)</span> we can re-write our equation to solve for <span class="process-math">\(B\)</span> and <span class="process-math">\(C\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+4(x^2+4x+5) + (Bx+C)(x+1) = 6x^2+25x+27
+\end{equation*}
+</div>
+<div class="para">We can collect the quadratic terms, and see the following equation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+4x^2 + Bx^2 = 6x^2
+\end{equation*}
+</div>
+<div class="para">So <span class="process-math">\(B=2\text{.}\)</span>
+</div>
+</div>
+<div class="para logical" id="sec-PartialFractions-6-2-3-4-2">
+<div class="para">Similarly, we can collect the constant terms:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-GeneralizedInvTan.html">
+\begin{equation*}
+4(5) + C = 27\text{.}
+\end{equation*}
+</div>
+<div class="para">It is easy to see that <span class="process-math">\(C=7\text{.}\)</span> So we have our newly re-written integral:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-GeneralizedInvTan.html">
+\begin{equation*}
+\int \frac{6x^2+25x+27}{(x+1)(x^2+4x+5)}\;dx = \int \frac{4}{x+1}+ \frac{2x+7}{x^2+4x+5}\;dx
+\end{equation*}
+</div>
+<div class="para">The first term is pretty straight-forward to integrate: we’ll get a log. The second one, though, will take some work. Let’s consider it by itself:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-GeneralizedInvTan.html">
+\begin{equation*}
+\int frac{2x+7}{x^2+4x+5}\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">We can start with a <span class="process-math">\(u\)</span>-substitution of <span class="process-math">\(u=x^2+4x+5\text{,}\)</span> giving us <span class="process-math">\(dx=2x+4\;dx\text{.}\)</span> Let’s re-write the numerator as <span class="process-math">\(2x+4+3\)</span> in order to make this work:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-GeneralizedInvTan.html" id="sec-PartialFractions-6-2-3-4-2-9">
+\begin{align*}
+\int frac{2x+7}{x^2+4x+5}\;dx \amp =\int frac{(2x+4)+3}{x^2+4x+5}\;dx\\
+\amp = \int \frac{2x+4}{x^2+4x+5}\;dx + \int \frac{3}{x^2+4x+5}\;dx
+\end{align*}
+</div>
+<div class="para">Now, the first of these will work with our stated substitution. The second one, though, will require a different strategy. Let’s complete the square to get the inverse tangent form (<a href="sec-AlgebraicManipulations.html#thm-GeneralizedInvTan" class="xref" data-knowl="./knowl/xref/thm-GeneralizedInvTan.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.3.3: Generalized Inverse Tangent Forms">Theorem 7.3.3</a>). For all three integrals, then, we get:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-GeneralizedInvTan.html" id="sec-PartialFractions-6-2-3-4-2-11">
+\begin{align*}
+\int \frac{6x^2+25x+27}{(x+1)(x^2+4x+5)}\;dx \amp = \int \frac{4}{x+1}+ \frac{2x+7}{x^2+4x+5}\;dx\\
+\amp = \int \frac{4}{x+1}+ \frac{2x+4}{x^2+4x+5} + \frac{3}{x^2+4x+5}\;dx\\
+\amp =\int \frac{4}{x+1}+\frac{2x+4}{x^2+4x+5} + \frac{3}{(x+2)^2+1}\;dx\\
+\amp = 4\ln|x+1| + \ln|x^2+4x+5| + 3\tan^{-1}(x+2)+C
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article></article><div class="para" id="sec-PartialFractions-6-3">There are more things that we can think about, but it really ends up being just extensions of what we’ve done. For instance, we could think about repeated quadratic factors or irreducible polynomials that have larger degrees, but the general principles are the same: we set up a placeholder numerator that has a degree less than the denominator and try to solve for the unknown coefficients.</div>
+<div class="para logical" id="sec-PartialFractions-6-4">
+<div class="para">There are really only two limitations for us:</div>
+<ol class="decimal" id="sec-PartialFractions-6-4-1">
+<li id="sec-PartialFractions-6-4-1-1"><div class="para" id="sec-PartialFractions-6-4-1-1-1">As we increase the number of coefficients, it becomes very tedious to solve for them. It isn’t <em class="emphasis">difficult</em>, really: just a lot of algebra.</div></li>
+<li id="sec-PartialFractions-6-4-1-2"><div class="para" id="sec-PartialFractions-6-4-1-2-1">As we increase the degree of the kinds of denominators we see, we run out of approaches for antidifferentiation. We could spend <em class="emphasis">much</em> more time talking about integrating more rational functions or dive into the much of irrational coefficients (or even non-real ones), but this serves as a good stopping point for our purposes.</div></li>
+</ol>
+</div></section><section class="exercises" id="ex-PartialFractions"><h3 class="heading hide-type">
+<span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber">7.7.4</span><span class="space"> </span><span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="ex-PartialFractions-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
 <div class="para" id="ex-PartialFractions-1-1">Why do we use partial fraction decomposition on some integrals of rational functions? Give an example and explain why it is helpful in your example.</div></article><article class="exercise exercise-like" id="ex-PartialFractions-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
