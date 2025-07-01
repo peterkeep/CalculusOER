@@ -70,6 +70,71 @@
       Let's look at two small examples to see how this could work.
     </p>
     <xi:include href="./activities/act-PartialFractionFirstExamples.ptx" />
+    <p>
+      So we can see the basics of how this will work: 
+      <ol>
+        <li>
+          <p>
+            Figure out the denominators of the fractions we could add to get the function we're integrating.
+          </p>
+        </li>
+        <li>
+          <p>
+            Construct the partial fractions using placeholders for the numerators (making sure to keep the degree of the numerators smaller than the degree of the denominators).
+          </p>
+        </li>
+        <li>
+          <p>
+            Add these placeholder fractions up, and see what the coefficients would have to be in order to make them add to the function we're integrating.
+          </p>
+        </li>
+        <li>
+          <p>
+            Antidifferentiate the smaller rational functions.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-SpecificStrategies">
+    <title>More Specific Strategies</title>
+    <p>
+      We're going to investigate these partial fractions a bit more, and focus on two cases: linear denominators, and quadratic denominators. This will limit the scope of our work enough that this doesn't get too wild, and also works well with the kinds of things we know how to antidifferentiate: we can antidifferentiate any rational function with a linear denominator and we know how to antidifferentiate many rational functions with quadratic denominators.
+    </p>
+    <subsubsection xml:id="subsubsec-SimpleLinear">
+      <title>Partial Fraction Type: Simple Linear Factors</title>
+      <p>
+        For rational functions where the denominator has some linear factor like <m>(x-k)</m>, we can set up a partial fraction with just a constant coefficient in the numerator:
+        <me>
+          \frac{A}{x-k}
+        </me>.
+        We have outlined a pretty reasonable approach for these in <xref ref="act-PartialFractionsFirstExamples"/> when we worked on the integral
+        <me>
+          \int \frac{6x-16}{(x-3)(x-1)\;dx
+        </me>.
+        We can make note of something useful, though. At one point during the process, we had set up the two partial fractions, added them together, and then we said that we wanted to find the values of <m>A</m> and <m>B</m> that made the general partial fraction forms we had set up match with the actual function we were hoping to integrate.
+        <md>
+          <mrow>\frac{A}{x-3} + \frac{B}{x-1} \amp = \frac{A(x-1) + B(x-3)}{(x-3)(x-1)</mrow>
+            <mrow> \amp = \frac{6x-16}{(x-3)(x-1)}</mrow>
+        </md>
+        What this meant for us was that we can set the numerators equal to each other and solve for <m>A</m> and <m>B</m>:
+        <me>
+          A(x-1)+B(x-3)=6x-16
+        </me>.
+        Let's pause here.
+      </p>
+      <p>
+        We are hoping to find the values of <m>A</m> and <m>B</m> that will make this equation work out for all values of <m>x</m>. But we can also make use of the fact that this equation will be true for some <em>specific</em> values of <m>x</m>. For instance, we can evaluate this equation at <m>x=2</m>:
+        <md>
+          <mrow>A(2-1)+B(2-3) \amp = 6(2)-16</mrow>
+          <mrow>A-B \amp = -4 </mrow>
+        </md>
+        This just generates another equation connecting <m>A</m> and <m>B</m> that we could use like we did in in <xref ref="act-PartialFractionsFirstExamples"/>.
+      </p>
+      <p>
+        But is there a nicer, more convenient <m>x</m>-value to use? Can we force this to generate a nicer equation involving our unknown coefficients?
+      </p>
+    </subsubsection>
   </subsection>
   
 
