@@ -98,9 +98,11 @@
   </subsection>
   <subsection xml:id="subsec-SpecificStrategies">
     <title>More Specific Strategies</title>
-    <p>
+    <introduction>
+      <p>
       We're going to investigate these partial fractions a bit more, and focus on two cases: linear denominators, and quadratic denominators. This will limit the scope of our work enough that this doesn't get too wild, and also works well with the kinds of things we know how to antidifferentiate: we can antidifferentiate any rational function with a linear denominator and we know how to antidifferentiate many rational functions with quadratic denominators.
     </p>
+    </introduction>
     <subsubsection xml:id="subsubsec-SimpleLinear">
       <title>Partial Fraction Type: Simple Linear Factors</title>
       <p>
@@ -132,10 +134,243 @@
         This just generates another equation connecting <m>A</m> and <m>B</m> that we could use like we did in in <xref ref="act-PartialFractionsFirstExamples"/>.
       </p>
       <p>
-        But is there a nicer, more convenient <m>x</m>-value to use? Can we force this to generate a nicer equation involving our unknown coefficients?
+        But is there a nicer, more convenient <m>x</m>-value to use? Can we force this to generate a nicer equation involving our unknown coefficients? Can we find some <m>x</m>-values that will make the factors <m>(x-1)</m> and <m>(x-3)</m> go to 0, for instance?
+        <me>
+          A\underbrace{(x-1)}_{x=1}+B\underbrace{(x-3)}_{x=3}=6x-16
+        </me>
+        Let's try it!
+        <md>
+          <mrow>x=1: \amp \amp A(1-1)+B(1-3) \amp = 6(1)-16 \amp</mrow>
+          <mrow> \amp \amp -2B \amp= -10 \amp</mrow>
+          <mrow> \amp \amp B \amp = 5</mrow>
+          <mrow>x=3: \amp \amp A(3-1)+B(3-3)\amp = 6(3)-16</mrow>
+          <mrow> \amp \amp 2A \amp = 2</mrow>
+          <mrow>\amp \amp A \amp = 1</mrow>
+        </md>
+        These are the same values we had in <xref ref="act-PartialFractionsFirstExamples"/>! This strategy works well for <em>any</em> simple linear factors, and definitely helps to reduce the amount of algebra required.
       </p>
+      <assemblage xml:id="strat-SimpleLinear">
+        <title>Simple Linear Factors</title>
+        <p>
+          If a rational function has a simple linear factor in the denominator in the form <m>(x-k)</m>, then the corresponding partial fraction is
+          <me>
+            \frac{A}{x-k}
+          </me>
+          where <m>A</m> is a real number constant with <m>A\neq 0</m>.
+        </p>
+        <p>
+          When we antidifferentiate these, we will end up with a logarithmic function.
+        </p>
+      </assemblage>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-IrreducibleQuadratics">
+      <title>Partial Fraction Type: Irreducible Quadratic Factors</title>
+      <p>
+        So what about our other example in <xref ref="act-PartialFractionsFirstExamples"/>? We had a quadratic factor (that couldn't be factored nicely). We'll call these <term>irreducible quadratic</term> factors. The real difference was just the structure of the numerator, where we accounted for the option of the numerator being some linear function, <m>Ax+B</m>.
+      </p>
+      <p>
+        There isn't much more to say here, since the algebra can be frustrating to deal with. It can be helpful to save some of these coefficients for last: that way, we can find some of the "easier" ones (from the <xref ref="strat-SimpleLinear" text="title"/> cases) first, and hopefully the remaining coefficients won't be too difficult to find.
+      </p>
+      <assemblage xml:id="strat-IrreducibleQuadratics">
+        <title>Irreducible Quadratic Factors</title>
+        <p>
+          If a rational function has an irreducible quadratic factor in the denominator in the form <m>(ax^2+bx+c)</m>, then the corresponding partial fraction is
+          <me>
+            \frac{Ax+B}{ax^2+bx+c}
+          </me>
+          where <m>A</m> and <m>B</m> are real number constants, and <m>A</m> and <m>B</m> cannot both be <m>0</m>. That is, if one of <m>A</m> or <m>B</m> is <m>0</m>, then the other cannot be.
+        </p>
+        <p>
+          When we antidifferentiate these, we can expect a logarithmic function, an inverse tangent function, or some combination of the two. We can get other antiderivatives, but those will be beyond the scope of this introductory text.
+        </p>
+      </assemblage>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-RepeatedLinear">
+      <title>Partial Fraction Type: Repeated Linear Factors</title>
+      <p>
+        Let's look at one last case. It's a bit of a weird one, so we'll explore it in its own example.
+      </p>
+      <xi:include href="./activities/act-RepeatedLinear.ptx" />
+      <assemblage xml:id="strat-RepeatedLinear">
+        <title>Repeated Linear Factors</title>
+        <p>
+          If a rational function has a repeated linear factor in the denominator in the form <m>(x-k)^n</m>, where m<m>n</m> is some integer greater than 1, then the corresponding partial fractions are
+          <me>
+            \frac{A_1}{x-k} + \frac{A_2}{(x-k)^2} + ... + \frac{A_n}{(x-k)^n}
+          </me>
+          where <m>A_1, A_2, ..., A_n</m> are real numbers and <m>A_n\neq 0</m>.
+        </p>
+        <p>
+          When we antidifferentiate these, we can expect to use the rule and maybe find a logarithm function.
+        </p>
+      </assemblage>
     </subsubsection>
   </subsection>
+  <conclusion>
+    <p>
+      At this point, we can spend our time going through one or two examples where we put this all together. 
+    </p>
+    <example>
+      <introduction>
+        <p>
+          For each of the following integrals, set up the relevant partial fraction forms, solve for the unknown coefficients, and then antidifferentiate.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int \frac{5x^2+27x+51}{(x-2)(x+3)^3}\;dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Your partial fraction forms will look like this:
+            <me>
+              \frac{A}{x-2}+\frac{B}{x+3}+\frac{C}{(x+3)^2}+\frac{D}{(x+3)^3}
+            </me>.
+          </p>
+        </hint>
+        <hint>
+          <p>
+            You can find the values for <m>A</m> and <m>D</m> pretty easily by thinking about convenient <m>x</m>-values, like we talked about in <xref ref="subsubsec-SimpleLinear" text="type-global-title"/>.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            We'll re-write our integral using the partial fraction forms:
+            <me>
+              \int \frac{5x^2+27x+51}{(x-2)(x+3)^3}\;dx = \int \frac{A}{x-2}+\frac{B}{x+3}+\frac{C}{(x+3)^2}+\frac{D}{(x+3)^3}\;dx
+            </me>.
+            When we combine these fractions to compare the numerators, we end up with the following equation:
+            <me>
+              A(x+3)^3 + B(x-2)(x+3)^2 + C(x-2)(x+3)+D(x-2) = 5x^2+27x+51
+            </me>
+            We can evaluate this at <m>x=2</m> and <m>x=-3</m> to reveal the values of <m>A</m> and <m>D</m>:
+            <md>
+              <mrow>x=2: \amp \amp A(5)^3 \amp = 5(4)+27(2)+51 \amp</mrow>
+              <mrow>\amp \amp A \amp =\frac{125}{125}=1</mrow>
+              <mrow>x=-3: \amp \amp D(-5) \amp = 5(9)+27(-3)+51</mrow>
+              <mrow>\amp \amp D \amp = \frac{15}{-5}=-3</mrow>
+            </md>
+            Now that we know <m>A=1</m> and <m>D=-3</m>, we can put those into our equation connecting the numerators, and solve for <m>B</m> and <m>C</m>.
+            <me>
+              (x+3)^3 + B(x-2)(x+3)^2 + C(x-2)(x+3)-3(x-2) = 5x^2+27x+51
+            </me>
+            If we just consider the cubic terms, then on the left side of the equation we have <m>x^3+Bx^3</m>, and there are no cubic terms on the right side. This means that <m>1+B=0</m> and so <m>B=-1</m>.
+          </p>
+          <p>
+            Similarly, we can consider just the constant terms of the (updated) equation:
+            <me>
+              (x+3)^3 - (x-2)(x+3)^2 + C(x-2)(x+3)-3(x-2) = 5x^2+27x+51
+            </me>
+            We can see that on the left side, we'll have <m>(3)^3-(-2)(3)^2 + C(-2)(3) - 3(-2)</m> and on the right side, the constant term is <m>51</m>.
+            <md>
+              <mrow>27+18-6C+6 \amp = 51</mrow>
+              <mrow>51 - 6C \amp = 51</mrow>
+              <mrow>C \amp =0</mrow>
+            </md>
+          </p>
+          <p>
+            Finally, we have our new, re-written, integral. We can antidifferentiate.
+            <md>
+              <mrow>\int \frac{5x^2+27x+51}{(x-2)(x+3)^3}\;dx \amp= \int \frac{1}{x-2}-\frac{1}{x+3} - \frac{3}{(x+3)^3}\;dx </mrow>
+              <mrow> \amp = \ln|x-2|-\ln|x+3| + \frac{3}{2(x+3)^2}+C</mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \int \frac{6x^2+25x+27}{(x+1)(x^2+4x+5)}\;dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Your partial fraction forms will look like this:
+            <me>
+              \frac{A}{x+1} + \frac{Bx+C}{x^2+4x+5}
+            </me>.
+          </p>
+        </hint>
+        <hint>
+          <p>
+            You'll be able to easily find <m>A</m> by thinking about convenient <m>x</m>-values, but not <m>B</m> or <m>C</m>.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            Let's, again, re-write our integral using the partial fraction forms we set up:
+            <me>
+              \int \frac{6x^2+25x+27}{(x+1)(x^2+4x+5)}\;dx = \int frac{A}{x+1} + \frac{Bx+C}{x^2+4x+5}\;dx
+            </me>
+            Our equation for the combined numerator is:
+            <me>
+              A(x^2+4x+5) + (Bx+C)(x+1) = 6x^2+25x+27
+            </me>.
+            We can find <m>A</m> be evaluating at <m>x=-1</m>.
+            <md>
+              <mrow>x=-1:\amp \amp A(1-4+5) \amp = 6(1)-25+27\amp</mrow>
+              <mrow>\amp \amp A\amp= \frac{8}{2} = 4</mrow>
+            </md>
+            Now, knowing that <m>A=2</m>, we can re-write our equation to solve for <m>B</m> and <m>C</m>.
+            <me>
+              4(x^2+4x+5) + (Bx+C)(x+1) = 6x^2+25x+27
+            </me>
+            We can collect the quadratic terms, and see the following equation:
+            <me>
+              4x^2 + Bx^2 = 6x^2
+            </me>
+            So <m>B=2</m>.
+          </p>
+          <p>
+            Similarly, we can collect the constant terms:
+            <me>
+              4(5) + C = 27
+            </me>.
+            It is easy to see that <m>C=7</m>. So we have our newly re-written integral:
+            <me>
+               \int \frac{6x^2+25x+27}{(x+1)(x^2+4x+5)}\;dx = \int \frac{4}{x+1}+ \frac{2x+7}{x^2+4x+5}\;dx
+            </me>
+            The first term is pretty straight-forward to integrate: we'll get a log. The second one, though, will take some work. Let's consider it by itself:
+            <me>
+              \int frac{2x+7}{x^2+4x+5}\;dx
+            </me>.
+            We can start with a <m>u</m>-substitution of <m>u=x^2+4x+5</m>, giving us <m>dx=2x+4\;dx</m>. Let's re-write the numerator as <m>2x+4+3</m> in order to make this work:
+            <md>
+              <mrow>\int frac{2x+7}{x^2+4x+5}\;dx \amp =\int frac{(2x+4)+3}{x^2+4x+5}\;dx</mrow>
+              <mrow> \amp = \int \frac{2x+4}{x^2+4x+5}\;dx + \int \frac{3}{x^2+4x+5}\;dx</mrow>
+            </md>
+            Now, the first of these will work with our stated substitution. The second one, though, will require a different strategy. Let's complete the square to get the inverse tangent form (<xref ref="thm-GeneralizedInvTan"/>). For all three integrals, then, we get:
+            <md>
+              <mrow> \int \frac{6x^2+25x+27}{(x+1)(x^2+4x+5)}\;dx \amp = \int \frac{4}{x+1}+ \frac{2x+7}{x^2+4x+5}\;dx</mrow>
+              <mrow> \amp = \int \frac{4}{x+1}+ \frac{2x+4}{x^2+4x+5} + \frac{3}{x^2+4x+5}\;dx</mrow>
+              <mrow> \amp =\int \frac{4}{x+1}+\frac{2x+4}{x^2+4x+5} + \frac{3}{(x+2)^2+1}\;dx</mrow>
+              <mrow> \amp = 4\ln|x+1| + \ln|x^2+4x+5| + 3\tan^{-1}(x+2)+C</mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </example>
+    <p>
+      There are more things that we can think about, but it really ends up being just extensions of what we've done. For instance, we could think about repeated quadratic factors or irreducible polynomials that have larger degrees, but the general principles are the same: we set up a placeholder numerator that has a degree less than the denominator and try to solve for the unknown coefficients.
+    </p>
+    <p>
+      There are really only two limitations for us:
+      <ol>
+        <li>
+          <p>
+            As we increase the number of coefficients, it becomes very tedious to solve for them. It isn't <em>difficult</em>, really: just a lot of algebra. 
+          </p>
+        </li>
+        <li>
+          <p>
+            As we increase the degree of the kinds of denominators we see, we run out of approaches for antidifferentiation. We could spend <em>much</em> more time talking about integrating more rational functions or dive into the much of irrational coefficients (or even non-real ones), but this serves as a good stopping point for our purposes.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </conclusion>
   
 
   <xi:include href="./exercises/ex-PartialFractions.ptx" />

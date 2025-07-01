@@ -1,0 +1,102 @@
+<activity xml:id="act-RepeatedLinear">
+    <title>Fiddling with Repeated Factors</title>
+    <introduction>
+        <p>
+            Let's sit with the following integral:
+            <me>
+                \int \frac{3x+5}{x^2+2x+1}\;dx
+            </me>.
+            Before we start, we can think about how annoying it would be to try to start with a <m>u</m>-substitution where <m>u=x^2+2x+1</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Factor the denominator! What's different about the factors in this denominator compared to the ones in <xref ref="act-PartialFractionsFirstExamples"/>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>x^2+2x+1=(x+1)(x+1)</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Why can't we use these two factors to create two partial fractions with <xref ref="strat-SimpleLinear" text="title"/>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Ok, instead, we're going to do some algebra that is reminiscent of what we have done before in <xref ref="sec-AlgebraicManipulations"/>.
+            </p>
+            <p>
+                Can you write the numerator, <m>3x+5</m>, as some coefficient on the factor <m>(x+1)</m> with some constant "remainder?"
+                <me>
+                    3x+5 = <fillin characters="2" />(x+1)+<fillin characters="2" />
+                </me>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>
+                    3x+5 = 3(x+1)+2
+                </me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Why is this re-forming of the numerator useful? What does that do, when we write it over the factored denominator? Why did we choose <m>(x+1)</m> as the factor to use for our re-writing?
+            </p>
+            <p>
+                Feel free to show why this is helpful!
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Split the fraction up across the sum in the numerator!
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\frac{3x+5}{(x+1)^2} \amp = \frac{3(x+1)+2}{(x+1)^2}</mrow>
+                    <mrow> \amp = \frac{3(x+1)}{(x+1)^2} + \frac{2}{(x+1)^2}</mrow>
+                    <mrow> \amp = \frac{3}{x+1}+\frac{2}{(x+1)^2}
+                    </mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Integrate <m>\displaystyle\int\frac{3x+5}{x^2+2x+1}\;dx</m> using your clever re-writing. Explain why this is a friendlier form.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                We'll use our re-written integral:
+                <me>
+                    \int \frac{3x+5}{x^2+2x+1}\;dx = \int \frac{3}{x+1}+\frac{2}{(x+1)^2}\;dx
+                </me>.
+                Now, we can split this into two integrals to deal with separately. For both, we can use the <m>u</m>-substitution <m>u=x+1</m>.
+                <md>
+                    <mrow>\int \frac{3}{x+1}+\frac{2}{(x+1)^2}\;dx \amp = \int \frac{3}{u}\;du + \int \frac{2}{u^2}\;du</mrow>
+                    <mrow> \amp = 3\ln|u| - \frac{2}{u}+C</mrow>
+                    <mrow> \amp = 3\ln|x+1| - \frac{2}{x+1}+C</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <conclusion>
+        <p>
+            This is something we can do, algebraically, for every fraction with a "repeated" factor like this. But, more importantly, we can incorporate this idea into how we think about partial fractions.
+        </p>
+    </conclusion>
+</activity>
