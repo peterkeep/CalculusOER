@@ -114,7 +114,7 @@
         </me>.
         We can make note of something useful, though. At one point during the process, we had set up the two partial fractions, added them together, and then we said that we wanted to find the values of <m>A</m> and <m>B</m> that made the general partial fraction forms we had set up match with the actual function we were hoping to integrate.
         <md>
-          <mrow>\frac{A}{x-3} + \frac{B}{x-1} \amp = \frac{A(x-1) + B(x-3)}{(x-3)(x-1)</mrow>
+          <mrow>\frac{A}{x-3} + \frac{B}{x-1} \amp = \frac{A(x-1) + B(x-3)}{(x-3)(x-1)}</mrow>
             <mrow> \amp = \frac{6x-16}{(x-3)(x-1)}</mrow>
         </md>
         What this meant for us was that we can set the numerators equal to each other and solve for <m>A</m> and <m>B</m>:
