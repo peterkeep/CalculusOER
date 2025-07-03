@@ -14,13 +14,35 @@
 <article class="activity project-like"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Volumes by Disks/Washers.</span>
 </h4>
-<div class="introduction"><div class="para">Consider the region bounded between the curves <span class="process-math">\(y=4+2x-x^2\)</span> and <span class="process-math">\(y=\dfrac{4}{x+1}\text{.}\)</span> Will will create a 3-dimensional solid by revolving this region around the <span class="process-math">\(x\)</span>-axis.</div></div>
+<div class="introduction">
+<div class="para">Consider the region bounded between the curves <span class="process-math">\(y=4+2x-x^2\)</span> and <span class="process-math">\(y=\dfrac{4}{x+1}\text{.}\)</span> Will will create a 3-dimensional solid by revolving this region around the <span class="process-math">\(x\)</span>-axis.</div>
+<figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./ApplicationsIntegrals/WashersAct-1.png" class="contained" alt="Graph of the region bounded between the parabola y=4+2x-x^2 and the curve y=4/(x+1). The curves intersect at (0,4) and at (3,1), and the parabola defines the top of the region. The whole region is above the x-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.13<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div>
 <article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para">Visualize the solid you’ll create when you revolve this region around the <span class="process-math">\(x\)</span>-axis.</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para">Draw a single rectangle in your region, standing perpendicular to the <span class="process-math">\(x\)</span>-axis.</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para">Let’s use this rectangle to visualize the <span class="process-math">\(k\)</span>th slice of this 3-dimensional solid. What does the "face" of it look like?</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para">Let’s use this rectangle to visualize the <span class="process-math">\(k\)</span>th slice of this 3-dimensional solid. What does the "face" of it look like?</div>
+<div class="solutions"><details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">It should be a circle within a circle like in <a href="sec-VolumesOfRevolution.html#fig-Washers-5" class="xref" data-knowl="./knowl/xref/fig-Washers-5.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.3.11">Figure 6.3.11</a>, but can you be more detailed with labeling the radii?</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para">Find the area of the face of the <span class="process-math">\(k\)</span>th slice.</div>
-<div class="solutions"><details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Note that this is a 2-dimensional shape, and we’re just finding the area of it.</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para">Set up, and evaluate, the integral representing the volume of the solid.</div></article></article><span class="incontext"><a class="internal" href="sec-VolumesOfRevolution.html#act-VolumesDisksWashers">in-context</a></span>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Note that this is a 2-dimensional shape, and we’re just finding the area of it.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(A(x_k^*) = \pi\left((4+2x_k^*-(x_k^*)^2)^2 - \left(\frac{4}{x_k^*+1}\right)^2\right)\)</span></div></div></details>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para">Set up the integral representing the volume of the solid.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">The sum is going to be adding up all of the areas multiplied by <span class="process-math">\(\Delta x\text{.}\)</span> What will that look like in the integral?</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+V \amp = \lim_{n\to\infty}\sum_{k=1}^n \pi\left((4+2x_k^*-(x_k^*)^2)^2 - \left(\frac{4}{x_k^*+1}\right)^2\right)\Delta x\\
+\amp = \pi \int_{x=0}^{x=3}\left((4+2x-x^2)^2 - \left(\frac{4}{x+1}\right)^2\right)\;dx
+\end{align*}
+</div></div></div></details>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para">Can you describe how you would antidifferentiate and evaluate this integral?</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">What happens when you square these functions? What kinds of strategies will you use for the types of functions you’re left with?</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">The first function, the quadratic, will be annoying to square. We’ll end up with some big degree 4 polynomial, though, and antidifferentiating will be easy, since we can use the power rule.</div>
+<div class="para">The second function squared will give us <span class="process-math">\(\dfrac{4}{(x+1)^2}\text{.}\)</span> We can use a <span class="process-math">\(u\)</span>-substitution here with <span class="process-math">\(u=x+1\text{.}\)</span> Then we have a negative exponent and we can use more power rule!</div>
+</div></details>
+</div></article></article><span class="incontext"><a class="internal" href="sec-VolumesOfRevolution.html#act-VolumesDisksWashers">in-context</a></span>
 </body>
 </html>
