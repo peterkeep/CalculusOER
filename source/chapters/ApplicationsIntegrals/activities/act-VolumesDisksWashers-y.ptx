@@ -4,6 +4,14 @@
         <p>
             Now lets consider another region: this time, the one bounded between the curves <m>y=x</m> and <m>y=3\sqrt{x}</m>. We will, again, create a 3-dimensional solid by revolving this region around the <m>y</m>-axis.
         </p>
+        <figure xml:id="fig-WashersAct-2">
+            <caption></caption>
+            <image source="./ApplicationsIntegrals/WashersAct-2.png" width="50%">
+                <shortdescription>
+                    Graph of the region bounded between the root function y=3sqrt(x) and the line y=x. The curves intersect at (0,0) and at (9,9), and the root defines the top of the region. The whole region is above the x-axis.
+                </shortdescription>
+            </image>
+        </figure>
     </introduction>
     <task>
         <statement>
@@ -18,6 +26,11 @@
                 Draw a single rectangle in your region standing perpendicular to the <m>y</m>-axis.
             </p>
         </statement>
+        <hint>
+            <p>
+                Notice that your rectangle is sitting on its side now! This will change some things for us in a familiar way!
+            </p>
+        </hint>
     </task>
     <task>
         <statement>
@@ -25,6 +38,11 @@
                 Let's use this rectangle to visualize the <m>k</m>th slice of this 3-dimensional solid. What does the "face" of it look like?
             </p>
         </statement>
+        <hint>
+            <p>
+                It should be a circle within a circle like in <xref ref="fig-Washers-5"/>, but can you be more detailed with labeling the radii?
+            </p>
+        </hint>
     </task>
     <task>
         <statement>
@@ -32,12 +50,37 @@
                 Find the area of the face of the <m>k</m>th slice.
             </p>
         </statement>
+        <hint>
+            <p>
+                Note that this is a 2-dimensional shape, and we're just finding the area of it. You'll also notice that the radii are measuring a horizontal distance in terms of a differing height, so you'll want to express these as functions of <m>y</m>.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                The outer radius comes from the function <m>y=x</m>, but we'll invert it to be <m>x=y</m>.
+            </p>
+            <p>
+                The inner radius comes from the function <m>y=3\sqrt{x}</m>, but we'll invert it be written as <m>x=\left(\dfrac{y}{3}\right)^2</m> or <m>x=\dfrac{y^2}{9}</m>.
+                <me>
+                    A(y_k^*) = \pi\left((y_k^*)^2 - \left(\frac{(y_k^*)^2}{9}\right)^2\right)
+                </me>
+                
+            </p>
+        </solution>
     </task>
     <task>
         <statement>
             <p>
-                Set up and evaluate the integral representing the volume of this solid.
+                Set up the integral representing the volume of this solid.
             </p>
         </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>V \amp = \lim_{n\to\infty} \sum_{k=1}^n \pi\left((y_k^*)^2 - \left(\frac{(y_k^*)^2}{9}\right)^2\right) \Delta y</mrow>
+                    <mrow> \amp =\pi\int_{y=0}^{y=9} y^2-\frac{y^4}{81}\;dy</mrow>
+                </md>
+            </p>
+        </solution>
     </task>
 </activity>

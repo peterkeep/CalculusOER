@@ -4,6 +4,12 @@
         <p>
             Consider the region bounded between the curves <m>y=4+2x-x^2</m> and <m>y=\dfrac{4}{x+1}</m>. Will will create a 3-dimensional solid by revolving this region around the <m>x</m>-axis.
         </p>
+        <figure xml:id="fig-WashersAct-1">
+            <caption></caption>
+            <image source="./ApplicationsIntegrals/WashersAct-1.png" width="50%">
+                <shortdescription>Graph of the region bounded between the parabola y=4+2x-x^2 and the curve y=4/(x+1). The curves intersect at (0,4) and at (3,1), and the parabola defines the top of the region. The whole region is above the x-axis.</shortdescription>
+            </image>
+        </figure>
     </introduction>
     <task>
         <statement>
@@ -15,7 +21,7 @@
     <task>
         <statement>
             <p>
-                Draw a single rectangle in your region, standing perpendicular to the <m>x</m>-axis.
+                Draw a single rectangle in your region, standing perpendicular to the <m>x</m>-axis. 
             </p>
         </statement>
     </task>
@@ -25,6 +31,11 @@
                 Let's use this rectangle to visualize the <m>k</m>th slice of this 3-dimensional solid. What does the "face" of it look like?
             </p>
         </statement>
+        <hint>
+            <p>
+                It should be a circle within a circle like in <xref ref="fig-Washers-5"/>, but can you be more detailed with labeling the radii?
+            </p>
+        </hint>
     </task>
     <task>
         <statement>
@@ -37,12 +48,50 @@
                 Note that this is a 2-dimensional shape, and we're just finding the area of it.
             </p>
         </hint>
+        <answer>
+            <p>
+                <m>A(x_k^*) = \pi\left((4+2x_k^*-(x_k^*)^2)^2 - \left(\frac{4}{x_k^*+1}\right)^2\right)</m>
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
             <p>
-                Set up, and evaluate, the integral representing the volume of the solid.
+                Set up the integral representing the volume of the solid.
             </p>
         </statement>
+        <hint>
+            <p>
+                The sum is going to be adding up all of the areas multiplied by <m>\Delta x</m>. What will that look like in the integral?
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <md>
+                    <mrow>V \amp = \lim_{n\to\infty}\sum_{k=1}^n \pi\left((4+2x_k^*-(x_k^*)^2)^2 - \left(\frac{4}{x_k^*+1}\right)^2\right)\Delta x</mrow>
+                    <mrow> \amp = \pi \int_{x=0}^{x=3}\left((4+2x-x^2)^2 - \left(\frac{4}{x+1}\right)^2\right)\;dx</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you describe how you would antidifferentiate and evaluate this integral? 
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What happens when you square these functions? What kinds of strategies will you use for the types of functions you're left with?
+            </p>
+        </hint>
+        <solution>
+            <p>
+                The first function, the quadratic, will be annoying to square. We'll end up with some big degree 4 polynomial, though, and antidifferentiating will be easy, since we can use the power rule.
+            </p>
+            <p>
+                The second function squared will give us <m>\dfrac{4}{(x+1)^2}</m>. We can use a <m>u</m>-substitution here with <m>u=x+1</m>. Then we have a negative exponent and we can use more power rule!
+            </p>
+        </solution>
     </task>
 </activity>

@@ -169,12 +169,33 @@
         </p>
       </statement>
     </definition>
+    <p>
+      We'll walk through two examples where we construct these integral expressions before pretending to be too comfortable. Let's start with something similar to what we've just done.
+    </p>
     <xi:include href="./activities/act-VolumesDisksWashers.ptx" />
+    <p>
+      Ok, so when we're creating these integrals, we are really focussing on using the rectangle we drew to show us which functions serve as the large radius compared to the small radius. In the next example, we'll see another key thing to notice from a single rectangle.
+    </p>
     <xi:include href="./activities/act-VolumesDisksWashers-y.ptx" />
+    <p>
+      Notice that the rectangle was the clue that we were going to be using <m>\Delta y</m> when we calculated volumes. This ended up being the reason that we integrated with regard to <m>y</m>, since the <m>\Delta y\to dy</m> in the integral.
+    </p>
+    <p>
+      A single rectangle, carefully drawn, can give us a large amount of information as we try to juggle these volumes!
+    </p>
   </subsection>
 
   <subsection xml:id="subsec-Re-OrientingRectangles">
     <title>Re-Orienting our Rectangles</title>
+    <p>
+      We saw in <xref ref="act-VolumesDisksWashers-y"/> that thinking about the single rectangle we draw can be helpful. We'll see that again in this next formula that we build.
+    </p>
+    <p>
+      Notice that, in all of the previous work we've done, we've drawn our rectangle so that it is standing <em>perpendicular</em> to the axis of revolution. This is the kind of rectangle that, when we revolve it, traces out the "washer" shape!
+    </p>
+    <p>
+      So what happens when we change the orientation of our rectangle? What happens when we draw a rectangle that is <em>parallel</em> to the axis of revolution?
+    </p>
     <definition xml:id="def-VolumesShells">
       <title>Volume by Shells</title>
       <statement>
