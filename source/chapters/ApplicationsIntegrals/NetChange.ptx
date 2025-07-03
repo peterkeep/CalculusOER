@@ -4,15 +4,12 @@
   <title>Integrals as Net Change</title>
   <introduction>
     <p>
-      We have some rudimentary ideas of what an integral is, but we want to challenge and expand those ideas by examining the object at the root of the definition of the definite integral: a Riemann sum.
+      We have some rudimentary ideas of what an integral is, but we want to challenge and expand those ideas by examining the object at the root of the definition of the <xref ref="def-DefiniteIntegral" text="title"/>: a <xref ref="def-RiemannSum" text="title"/>. We want to generalize a bit more our notion of what a Riemann sum is. So for now, let's think about how we can use a Riemann sum to think about a measurement that will <em>not</em> be an area. That's been our only real context so far, so let's try to stretch that thinking.
     </p>
   </introduction>
 
   <subsection xml:id="subsec-EstimatingMovement">
     <title>Estimating Movement</title>
-    <p>
-      Here is some text leading to our first activity.
-    </p>
     <xi:include href="./activities/act-EstimatingMovement.ptx" />
     <p>
       So what are the big ideas in this short activity? There are a lot, and many of them are already things we know, at least to some level.
