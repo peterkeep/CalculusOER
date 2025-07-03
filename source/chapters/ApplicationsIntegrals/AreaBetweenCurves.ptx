@@ -4,17 +4,44 @@
     <title>Area Between Curves</title>
     <introduction>
         <p>
-            Let's remember Riemann Sums.
+            We're going to stick with our theme of thinking about a <xref ref="def-RiemannSum" text="title"/>, but this time we'll get back to thinking about area. First, we'll try to remind ourselves now just on what a Riemann sum is, but how we actually constructed it.
         </p>
     </introduction>
     <subsection xml:id="subsec-RememberingRiemannSums">
         <title>Remembering Riemann Sums</title>
-        <p>
-            Text here.
-        </p>
         <xi:include href="./activities/act-RememberingRiemann.ptx" />
         <p>
-            This activity hopefully reminds of the definition of a Riemann Sum (<xref ref="def-RiemannSum"/>) from earlier in this text (<xref ref="sec-RiemannSums"/>).
+            Hopefully this is helpful. If you'd like more reminders on this, you can always revisit <xref ref="sec-RiemannSums" text="type-global-title"/>. For now, though, we mainly want to think about the general process we're using:
+            <ol>
+                <li>
+                    <p>
+                        We slice the region from <m>x=a</m> to <m>x=b</m> into <m>n</m> pieces, and, for convenience, we choose an equal width: <m>\Delta x = \frac{b-a}{n}</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        From each of the slices, we select some <m>x</m>-value (called <m>x_k^*</m> from the <m>k</m>th slice). We use that to evaluate the function on each slice: <m>f(x_k^*)</m>. 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We multiply the function value, <m>f(x_k^*)</m>, with the width of the slice, <m>\Delta x</m>, to get the measured area of each slice, <m>A_k = f(x_k^*)\Delta x</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We can estimate the total measured area of the region by adding all of the areas of the slices together: 
+                        <me>A\approx \sum_{k=1}^n f(x_k^*)\Delta x</me>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If we keep adding more and more slices (that keep getting thinner and thinner), then we eventually (in the limit) evaluate the area exactly: 
+                        <me>A=\lim_{n\to\infty}\sum_{k=1}^n f(x_k^*)\Delta x</me>.
+                    </p>
+                </li>
+            </ol>
+            We're going to use this process (we'll call it the <term>slice-and-sum</term> process) for other measurements! Let's see how we can change this so slightly to measure a different area.
         </p>
     </subsection>
     <subsection xml:id="subsec-AreaBetweenCurves">
@@ -32,29 +59,129 @@
             </statement>
         </definition>
         <p>
-            Example here.
+            When we're applying this formula for the area between curves, we won't need to re-create the process from <xref ref="act-AreaBetweenCurves"/> to <em>create</em> the integral formula. We can simply identify the functions bounding the region and the end points of the interval, and set up the integral.
         </p>
+        <p>
+            We'll use the slice-and-sum process for two reasons:
+            <ol>
+                <li>
+                    <p>
+                        To justify these formulas that we continue to build! While this one isn't that difficult (you could have just built the formula by thinking about the area between curves as a difference in areas under each curves), some of the formulas we play with in this chapter will not be as intuitive.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        To help us understand what a Riemann sum actually <em>is</em>. It's a product of a function value from a subinterval multiplied by the width of that subinterval, summed up across some larger interval.
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <example>
+            <introduction>
+                <p>
+                    For each of the following regions, set up an integral expression representing the area of the region. We can also practice evaluating these integrals to actually calculate the areas.
+                </p>
+                <p>
+                    For each of these described regions, the hint will reveal a visualization of the region (using desmos). Feel free to use that to set up the integral expression!
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        The region bounded between the graphs <m>y=x^3+1</m> and <m>y=1-x^2</m> from <m>x=0</m> to <m>x=2</m>.
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        <interactive desmos="ltii6f9s7z" width="60%" aspect="2:3" />
+                    </p>
+                </hint>
+                <solution>
+                    <p>
+                        <md>
+                            <mrow> \int_{x=0}^{x=2}\left(x^3+1\right) - \left(1-x^2\right)\;dx \amp = \int_{x=0}^{x=2}\left(x^3+x^2\right)\;dx</mrow>
+                            <mrow> \amp = \frac{20}{3}</mrow>
+                        </md>
+                    </p>
+                </solution>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The region bounded between the graphs <m>y=sin(x)</m> and <m>y=\cos(x)</m> from <m>x=0</m> to <m>x=\pi</m>.
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        <interactive desmos="al8hqohekl" width="60%" aspect="2:3" />
+                    </p>
+                </hint>
+                <solution>
+                    <p>
+                        Notice that the boundary functions intersect at <m>x=\frac{\pi}{4}</m>, and they switch order. We'll need to split this region into two different regions in order to identify the "top" and "bottom" boundary functions.
+                        <md>
+                            <mrow>\int_{x=0}^{x=\pi/4} \cos(x)-\sin(x)\;dx + \int_{x=\pi/4}^{x=\pi} \sin(x)-\cos(x)\;dx \amp = \left(\sqrt{2}-1\right) + \left(1+\sqrt{2}\right) </mrow>
+                            <mrow> \amp = 2\sqrt{2}</mrow>
+                        </md>
+                    </p>
+                </solution>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The region bounded between the curves <m>y=x+6</m> and <m>y=x^3</m> and the <m>x</m>-axis.
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        <interactive desmos="k6o0iyelc2" width="60%" aspect="2:3" />
+                    </p>
+                </hint>
+                <solution>
+                    <p>
+                        On the interval <m>-6\leq x\leq 0</m>, the region is bounded above by <m>y=x+6</m> and below by the <m>x</m>-axis (<m>y=0</m>). On the interval <m>0\leq x\leq 2</m>, the region is bounded above by <m>y=x+6</m> and below by <m>y=x^3</m>.
+                        <md>
+                            <mrow>\int_{x=-6}^{x=0}\left(x+6\right)-0\;dx + \int_{x=0}^{x=2} \left(x+6\right) - \left(x^3\right)\;dx \amp = \int_{x=-6}^{x=0} x+6\;dx + \int_{x=0}^{x=2} 6+x-x^3 \;dx</mrow>
+                            <mrow> \amp = 18 + 10</mrow>
+                            <mrow> \amp = 28</mrow>
+                        </md>
+                    </p>
+                </solution>
+            </task>
+        </example>
     </subsection>
     <subsection xml:id="subsec-ChangingPerspective">
         <title>Changing Perspective</title>
         <p>
-            Text here.
+            This last example had two interesting regions: we had to split them into two pieces because the boundary functions changed order or, in the case of the last example, changed completely to different boundary functions.
+        </p>
+        <p>
+            We're going to re-do the last problem and work on trying to change our perspective a bit in order to get a single integral to evaluate the area.
         </p>
         <xi:include href="./activities/act-SingleIntegral.ptx" />
-    <p>
-        We can re-write our definition of the area between curves (<xref ref="def-AreaBetweenCurves"/>) to account for this change in perspective, by thinking about these same functions in terms of <m>y</m>.
-    </p>
-    <definition xml:id="def-AreaBetweenCurves-y">
-        <title>Area Between Curves (in terms of <m>y</m>)</title>
-        <statement>
-            <p>
-                If <m>f(y)</m> and <m>g(y)</m> are continuous functions with <m>f(y) \geq g(y)</m> on the interval of <m>y</m>-values <m>[c,d]</m>, then the <term>area bounded between the curves</term> <m>x=f(y)</m> and <m>x=g(y)</m> from <m>y=c</m> to <m>y=d</m> is
-                <me>
-                    A = \int_{y=c}^{y=d} \left( f(y) - g(y)\right)\;dy
-                </me>.
-            </p>
-        </statement>
-    </definition>
+        <p>
+            We can re-write our definition of the area between curves (<xref ref="def-AreaBetweenCurves"/>) to account for this change in perspective, by thinking about these same functions in terms of <m>y</m>.
+        </p>
+        <definition xml:id="def-AreaBetweenCurves-y">
+            <title>Area Between Curves (in terms of <m>y</m>)</title>
+            <statement>
+                <p>
+                    If <m>f(y)</m> and <m>g(y)</m> are continuous functions with <m>f(y) \geq g(y)</m> on the interval of <m>y</m>-values <m>[c,d]</m>, then the <term>area bounded between the curves</term> <m>x=f(y)</m> and <m>x=g(y)</m> from <m>y=c</m> to <m>y=d</m> is
+                    <me>
+                        A = \int_{y=c}^{y=d} \left( f(y) - g(y)\right)\;dy
+                    </me>.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            This strategy of inverting our functions to change the variable that we integrate with regard to is useful, but a tricky part of this is deciding <em>when</em> to change variables.
+        </p>
+        <p>
+            Something that we can look for is intersection points in the region we're working with. If, in our plan for setting up an integral, we would stack rectangles that would pass through an intersection point, then this indicates that we would need to split our region up to set up the integrals (since the boundary functions are changing). If we change the orientation of the rectangles, would they still pass through an intersection point? Are the functions that we're working with relatively easy to invert? Can we antidifferentiate these functions, or their inverted versions?
+        </p>
+        <p>
+            These are some of the things we'll consider as we make these decisions.
+        </p>
     </subsection>
     <xi:include href="./exercises/ex-AreaBetweenCurves.ptx" />
 </section>
