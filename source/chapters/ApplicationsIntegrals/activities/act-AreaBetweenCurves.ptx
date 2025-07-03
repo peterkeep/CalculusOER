@@ -62,6 +62,14 @@
                 What are the dimensions of this <m>k</m>th rectangle?
             </p>
         </statement>
+        <answer>
+            <p>
+                Height: <m>f(x_k^*) - g(x_k^*)</m>
+            </p>
+            <p>
+                Width: <m>\Delta x</m>
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -69,6 +77,11 @@
                 Find <m>A_k</m>, the area of this <m>k</m>th rectangle.
             </p>
         </statement>
+        <answer>
+            <p>
+                <m>A_k = \left(f(x_k^*) - g(x_k^*)\right)\Delta x</m>
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -81,6 +94,11 @@
                 You might want to use summation notation, starting with <m>\sum_{k=1}^n</m>
             </p>
         </hint>
+        <answer>
+            <p>
+                <m>\displaystyle A \approx \sum_{k=1}^n \left(f(x_k^*) - g(x_k^*)\right)\Delta x</m>
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -88,5 +106,13 @@
                 Apply a limit as <m>n\to \infty</m> to this Riemann sum in order to construct the integral formula for the area between the curves <m>f(x)</m> and <m>g(x)</m> from <m>x=a</m> to <m>x=b</m>.
             </p>
         </statement>
+        <answer>
+            <p>
+                <md>
+                    <mrow>A \amp = \lim_{n\to\infty} \sum_{k=1}^n \left(f(x_k^*)-g(x_k^*)\right)\Delta x </mrow>
+                    <mrow> \amp = \int_{x=a}^{x=b} \left(f(x)-g(x)\right)\;dx</mrow>
+                </md>
+            </p>
+        </answer>
     </task>
 </activity>
