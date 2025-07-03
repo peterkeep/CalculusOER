@@ -1,0 +1,97 @@
+<activity>
+    <title>Carving out a Hole in the Center</title>
+    <introduction>
+        <p>
+            We're going to look at the same solid as in <xref ref="fig-Disks-2"/>. But this time, when we define the 2-dimensional region that we're going to revolve around the <m>x</m>-axis, we're going to add a lower boundary function, <m>g(x)</m>. 
+        </p>
+        <figure xml:id="fig-Washers-1">
+            <caption></caption>
+            <image source="./ApplicationsIntegrals/Washers-1.png" width="70%">
+                <shortdescription>A graph of two functions. The upper function is red, labeled f(x), and is a wavy polynomial. It is above the second function, g(x), which is blue. It is less wavy. Both of them are above the x-axis, and go from a point labeled x=a to x=b where they both stop.</shortdescription>
+            </image>
+        </figure>
+        <p>
+            When we revolve this region around the <m>x</m>-axis, we get the following 3-dimensional solid.
+        </p>
+        <figure xml:id="fig-Washers-2">
+            <caption></caption>
+            <image source="./ApplicationsIntegrals/Washers-2.png" width="70%">
+                <shortdescription>The region revolved around the x-axis. It creates a vase type shape where the outer edge is the red f(x) function on the top and reflected onto the bottom. The inner function, g(x), creates a kind of tunnel through the solid.</shortdescription>
+            </image>
+        </figure>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                How is a single generic slice on this solid different than the one in <xref ref="fig-Disks-2"/>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Here is the rectangle that will define that slice!
+            </p>
+            <figure xml:id="fig-Washers-3">
+                <caption></caption>
+                <image source="./ApplicationsIntegrals/Washers-3.png" width="80%">
+                    <shortdescription>A graph of two functions. The upper function is red, labeled f(x), and is a wavy polynomial. It is above the second function, g(x), which is blue. It is less wavy. Both of them are above the x-axis, and go from a point labeled x=a to x=b where they both stop. A rectangle spans from the bottom g(x) function to the top f(x) function, with the point on the bottom labeled (x_k^*, g(x_k^*)) and the point on the top labeled (x_k^*, f(x_k^*)). The width of the rectangle is labeled Delta x.</shortdescription>
+                </image>
+            </figure>
+        </hint>
+        <hint>
+            <p>
+                Here is the slice formed when the rectangle revolves around the axis!
+            </p>
+            <figure xml:id="fig-Washers-4">
+                <caption></caption>
+                <image source="./ApplicationsIntegrals/Washers-4.png" width="80%">
+                    <shortdescription>The region revolved around the x-axis. It creates a vase type shape where the outer edge is the red f(x) function on the top and reflected onto the bottom. The inner function, g(x), creates a kind of tunnel through the solid. There is a disk with a hole in it, sliced in the middle of the solid. The width is labeled Delta x. The outer edge of the disk matches the function f(x) and the hole is formed from g(x).</shortdescription>
+                </image>
+            </figure>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find a formula for the area of the face of the cross-secional slice.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Here's a picture of the face of the slice!
+            </p>
+            <figure xml:id="fig-Washers-5">
+                <caption></caption>
+                <image source="./ApplicationsIntegrals/Washers-5.png" width="50%">
+                    <shortdescription>A circle within a circle. The larger circle has a red radius, labeled r_1. The smaller circle has a blue radius, labeled r_2. </shortdescription>
+                </image>
+            </figure>
+        </hint>
+        <solution>
+            <p>
+                <md>
+                    <mrow>A \amp = \pi r_1^2 - \pi r_2^2</mrow>
+                    <mrow>A(x_k^*) \amp = \pi \left(f(x_k^*)\right)^2 - \pi\left(g(x_k^*)\right)^2</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use the slice-and-sum process to create an integral expression representing the volume of this solid.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>V_k \amp=  \left(\pi \left(f(x_k^*)\right)^2 - \pi\left(g(x_k^*)\right)\right)\Delta x </mrow>
+                    <mrow> \amp = \pi\left((f(x_k^*))^2-(g(x_k^*))^2\right)\Delta x</mrow>
+                    <mrow>V \amp \approx \sum_{k=1}^n \pi\left((f(x_k^*))^2-(g(x_k^*))^2\right)\Delta x</mrow>
+                    <mrow>V \amp = \lim_{n\to\infty} \sum_{k=1}^n \pi\left((f(x_k^*))^2-(g(x_k^*))^2\right)\Delta x</mrow>
+                    <mrow> \amp = \int_{x=a}^{x=b} \pi\left((f(x))^2-(g(x))^2\right)\;dx</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    
+</activity>
