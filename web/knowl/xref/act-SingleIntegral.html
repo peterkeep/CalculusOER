@@ -17,7 +17,7 @@
 <div class="introduction">
 <div class="para">Let’s consider the same setup as earlier: the region bounded between two curves, <span class="process-math">\(y=x+6\)</span> and <span class="process-math">\(y=x^3\text{,}\)</span> as well as the <span class="process-math">\(x\)</span>-axis (the line <span class="process-math">\(y=0\)</span>). We’ll need to name these functions, so let’s call them <span class="process-math">\(f(x) = x^3\)</span> and <span class="process-math">\(g(x) = x+6\text{.}\)</span> But this time, we’ll approach the region a bit differently: we’re going to try to find the area of the region using only a single integral.</div>
 <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/ApplicationsIntegrals/SingleInt-1.png" class="contained" alt="A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.6<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.7<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
 </div>
 <article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para">The range of <span class="process-math">\(y\)</span>-values in this region span from <span class="process-math">\(y=0\)</span> to <span class="process-math">\(y=8\text{.}\)</span> Divide this interval evenly into 4 equally sized-subintervals. What is the height of each subinterval? We’ll call this <span class="process-math">\(\Delta y\text{.}\)</span>
@@ -33,15 +33,36 @@
 <div class="para">Find the area of each rectangle by multiplying the height and widths for each rectangle.</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(g)</span></h5>
 <div class="para">Add up the areas to construct a Riemann sum.</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(h)</span></h5>
 <div class="para">Again, we’ll generalize this and think about the <span class="process-math">\(k\)</span>th rectangle, pictured below.</div> <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/ApplicationsIntegrals/SingleInt-2.png" class="contained" alt="The same region, but this time with a horizontal rectangle spanning across it, with the height labeled delta y. The curves are re-labeled x=y-6 and x = cuberoot(y)."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.7<span class="period">.</span></span><span class="space"> </span></figcaption></figure> <div class="para">Which variable defines the location of the <span class="process-math">\(k\)</span>th rectangle, here? That is, if you were to describe <em class="emphasis">where</em> in this graph the <span class="process-math">\(k\)</span>th rectangle is laying, would you describe it with an <span class="process-math">\(x\)</span> or <span class="process-math">\(y\)</span> variable? This will act as our general input variable for the integral we’re ending with.</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para">What are the dimensions of the <span class="process-math">\(k\)</span>th rectangle?</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(j)</span></h5>
-<div class="para">Find <span class="process-math">\(A_k\text{,}\)</span> the area of this <span class="process-math">\(k\)</span>th rectangle.</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(k)</span></h5>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.8<span class="period">.</span></span><span class="space"> </span></figcaption></figure> <div class="para">Which variable defines the location of the <span class="process-math">\(k\)</span>th rectangle, here? That is, if you were to describe <em class="emphasis">where</em> in this graph the <span class="process-math">\(k\)</span>th rectangle is laying, would you describe it with an <span class="process-math">\(x\)</span> or <span class="process-math">\(y\)</span> variable? This will act as our general input variable for the integral we’re ending with.</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para">What are the dimensions of the <span class="process-math">\(k\)</span>th rectangle?</div>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para">Height: <span class="process-math">\(\Delta y\)</span>
+</div>
+<div class="para">Width: <span class="process-math">\(\sqrt[3]{y_k^*} - \left(y_k^*-6\right)\)</span>
+</div>
+</div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(j)</span></h5>
+<div class="para">Find <span class="process-math">\(A_k\text{,}\)</span> the area of this <span class="process-math">\(k\)</span>th rectangle.</div>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(A_k = \left(\sqrt[3]{y_k^*} - \left(y_k^*-6\right)\right)\Delta y\)</span></div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(k)</span></h5>
 <div class="para">Add up the areas of <span class="process-math">\(A_k\)</span> for <span class="process-math">\(k=1,2,3,...,n\)</span> to approximate the total area, <span class="process-math">\(A\)</span>
 </div>
-<div class="solutions"><details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">You might want to use summation notation, starting with <span class="process-math">\(\sum_{k=1}^n\)</span>
-</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(l)</span></h5>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">You might want to use summation notation, starting with <span class="process-math">\(\sum_{k=1}^n\)</span>
+</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\displaystyle A\approx \sum_{k=1}^n \left(\sqrt[3]{y_k^*} - \left(y_k^*-6\right)\right)\Delta y\)</span></div></div></details>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(l)</span></h5>
 <div class="para">Apply a limit as <span class="process-math">\(n\to \infty\)</span> to this Riemann sum in order to construct the integral formula for the area between the curves <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{.}\)</span>
-</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(m)</span></h5>
-<div class="para">Now that you have an integral, evaluate it! Find the area of this region to compare with the work we did previously, where we used multiple integrals to measure the size of this same region.</div></article></article><span class="incontext"><a class="internal" href="sec-AreaBetweenCurves.html#act-SingleIntegral">in-context</a></span>
+</div>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+A \amp = \lim_{n\to\infty} \sum_{k=1}^n \left(\sqrt[3]{y_k^*} - \left(y_k^*-6\right)\right)\Delta y\\
+\amp = \int_{y=0}^{y=8} \left(\sqrt[3]{y} - (y-6)\right)\;dy
+\end{align*}
+</div></div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(m)</span></h5>
+<div class="para">Now that you have an integral, evaluate it! Find the area of this region to compare with the work we did previously, where we used multiple integrals to measure the size of this same region.</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+\int_{y=0}^{y=8} \left(\sqrt[3]{y} - (y-6)\right)\;dy \amp = \int_{y=0}^{y=8} \left(y^{1/3} - y + 6\right)\;dy\\
+\amp = 28
+\end{align*}
+</div></div></div></details></div></article></article><span class="incontext"><a class="internal" href="sec-AreaBetweenCurves.html#act-SingleIntegral">in-context</a></span>
 </body>
 </html>

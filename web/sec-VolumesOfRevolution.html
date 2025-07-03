@@ -423,8 +423,9 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-VolumesOfRevolution.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Volumes of Solids of Revolution</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-FromAreaToVolume" class="internal"><span class="codenumber">6.3.1</span> <span class="title">From Area To Volume</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-Re-OrientingRectangles" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Re-Orienting our Rectangles</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#ex-Volumes" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-SolidsOfRevolution" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Solids of Revolution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-Re-OrientingRectangles" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Re-Orienting our Rectangles</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#ex-Volumes" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -591,12 +592,150 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-VolumesOfRevolution"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">6.3</span><span class="space"> </span><span class="title">Volumes of Solids of Revolution</span>
 </h2>
-<section class="introduction" id="sec-VolumesOfRevolution-2"><div class="para" id="sec-VolumesOfRevolution-2-1"></div></section><section class="subsection" id="subsec-FromAreaToVolume"><h3 class="heading hide-type">
+<section class="introduction" id="sec-VolumesOfRevolution-2"><div class="para" id="sec-VolumesOfRevolution-2-1">Hopefully by now we’re feeling pretty comfortable with the use of a Riemann sum to create an integral formula. So far, these integral formulas have matched with our intuition somewhat. We can probably justify the integral formula for displacement of an object (<a href="sec-NetChange.html#def-displacement" class="xref" data-knowl="./knowl/xref/def-displacement.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 6.1.3">Definition 6.1.3</a>) by thinking about the fact that position is an antiderivative of velocity. We can probably convince ourselves about the integral formula for the area between curves (<a href="sec-AreaBetweenCurves.html#def-AreaBetweenCurves" class="xref" data-knowl="./knowl/xref/def-AreaBetweenCurves.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 6.2.5: Area Between Curves">Definition 6.2.5 Area Between Curves</a>) by thinking about subtracting areas, geometrically.</div>
+<div class="para" id="sec-VolumesOfRevolution-2-2">We’re going to make a jump from a 2-dimensional measurement of size, area, to a 3-dimensional measurement of size, volume.</div></section><section class="subsection" id="subsec-FromAreaToVolume"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="space"> </span><span class="title">From Area To Volume</span>
 </h3>
-<div class="para" id="subsec-FromAreaToVolume-2">Text.</div>
-<article class="definition definition-like" id="def-VolumesDisksWashers"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Volume by Disks/Washers.</span>
+<div class="para logical" id="subsec-FromAreaToVolume-2">
+<div class="para">Here’s the basic idea, in a broad overview: if we want to calculate a volume, then we are going to be working with a 3-dimensional solid. We’ll use the slice-and-sum process:</div>
+<ol class="decimal" id="subsec-FromAreaToVolume-2-1">
+<li id="subsec-FromAreaToVolume-2-1-1"><div class="para" id="subsec-FromAreaToVolume-2-1-1-1">Slice the object into uniformly thick slices along some axis.</div></li>
+<li id="subsec-FromAreaToVolume-2-1-2"><div class="para logical" id="subsec-FromAreaToVolume-2-1-2-1">
+<div class="para">For each slice, we’ll approximate the volume. We can do this by thinking about the cross-sectional area. If we assume that the area is constant all the way through the slice (in the same way that we assumed earlier that the heights of our rectangles were constant), then we can simply multiply the cross-sectional area by the thickness to get the volume of each slice:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_k = A(x_k^*)\Delta x\text{.}
+\end{equation*}
+</div>
+</div></li>
+<li id="subsec-FromAreaToVolume-2-1-3"><div class="para logical" id="subsec-FromAreaToVolume-2-1-3-1">
+<div class="para">Approximate the total volume of the solid by adding the volumes of the slices together:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V \approx \sum_{k=1}^n A(x_k^*)\Delta x\text{.}
+\end{equation*}
+</div>
+</div></li>
+<li id="subsec-FromAreaToVolume-2-1-4"><div class="para logical" id="subsec-FromAreaToVolume-2-1-4-1">
+<div class="para">Apply a limit, where the number of slices gets infinitely big (and the thickness of each slice gets infinitely small):</div>
+<div class="displaymath process-math" id="subsec-FromAreaToVolume-2-1-4-1-1">
+\begin{align*}
+V \amp = \lim_{n\to\infty}\sum_{k=1}^n A(x_k^*)\Delta x\\
+\amp = \int_{x=a}^{x=b} A(x)\;dx
+\end{align*}
+</div>
+<div class="para">Here, <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are the <span class="process-math">\(x\)</span>-values that define the interval we’re slicing along and <span class="process-math">\(A(x)\)</span> is a formula for the cross-sectional area of the object at <span class="process-math">\(x\text{.}\)</span>
+</div>
+</div></li>
+</ol>
+<div class="para">The biggest issue here is going to be thinking about that formula for area. In order for us to do that, we’re going to think about a specific type of 3-dimensional solid, built in a systematic way so that we can find the cross-sectional areas easily.</div>
+</div></section><section class="subsection" id="subsec-SolidsOfRevolution"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="space"> </span><span class="title">Solids of Revolution</span>
+</h3>
+<div class="para" id="subsec-SolidsOfRevolution-2">A <dfn class="terminology">solid of revolution</dfn> is a strange type of solid: we’re going to define it based on a 2-dimensional region (we’ll use functions in a normal <span class="process-math">\(xy\)</span>-plane) that we then imagine revolving around a straight line axis. Maybe we define some region in the upper half of the plane, but then revolve it around the <span class="process-math">\(x\)</span>-axis. While we imagine this revolution, we want to think about the three dimensional solid that gets "traced" by the curve spinning around the axis. Let’s dive into an example to see.</div>
+<div class="para" id="subsec-SolidsOfRevolution-3">Let’s visualize some function <span class="process-math">\(f(x)\)</span> defined (and continuous) on the interval <span class="process-math">\([a,b]\)</span> and with <span class="process-math">\(f(x)\geq 0\)</span> on that interval. We’ll see why this is useful, but for now, we’re just thinking of some function.</div>
+<figure class="figure figure-like" id="fig-Disks-1"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./ApplicationsIntegrals/Disks-1.png" class="contained" alt="A graph of a red curve labeled f(x). The curve is above the x-axis and starts at the y-axis, and moves forward until it stops. There is are two points on the x-axis labeled x=a and x=b, representing the beginning and ending of the interval where this function is defined. The function looks like a sort of curvy polynomial, and the shape is unimportant."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-SolidsOfRevolution-5">We’re going to revolve this curve (and the region bounded between it and the <span class="process-math">\(x\)</span>-axis) around the <span class="process-math">\(x\)</span>-axis. This will create the following shape.</div>
+<figure class="figure figure-like" id="fig-Disks-2"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./ApplicationsIntegrals/Disks-2.png" class="contained" alt="The red curve, f(x), has been revolved around the x-axis. There is a reflection of this curve below the axis, and lines connecting the ends so that the shape looks like a vase on its side, where the outline of the vase is shaped like the graph f(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-SolidsOfRevolution-7">So our goal is to find the volume of this type of solid. The curve defining the edge of it can change, but the way that we create it will be systematic enough that we can build a formulaic integral expression for it.</div>
+<div class="para" id="subsec-SolidsOfRevolution-8">As you would imagine, we’ll start with a rectangle.</div>
+<figure class="figure figure-like" id="fig-Disks-3"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./ApplicationsIntegrals/Disks-3.png" class="contained" alt="A graph of a red curve labeled f(x). The curve is above the x-axis and starts at the y-axis, and moves forward until it stops. There is are two points on the x-axis labeled x=a and x=b, representing the beginning and ending of the interval where this function is defined. The function looks like a sort of curvy polynomial, and the shape is unimportant. There is a red rectangle spanning from the x-axis to the curve, touching the curve at a point labeled (x_k^*, f(x_k^*)). The width of the rectangle is labeled Delta x."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-SolidsOfRevolution-10">This rectangle will represent a single, generic slice. We really want to imagine a slice of the 3-dimensional solid, though, and so we will revolve this rectangle around the <span class="process-math">\(x\)</span>-axis. This will create a slice of our solid of revolution. From there, we can think about the volume of this generic <span class="process-math">\(k\)</span>th slice, and fall into the rhythm of our slice-and-sum process.</div>
+<figure class="figure figure-like" id="fig-Disks-4"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./ApplicationsIntegrals/Disks-4.png" class="contained" alt="The red curve, f(x), has been revolved around the x-axis. There is a reflection of this curve below the axis, and lines connecting the ends so that the shape looks like a vase on its side, where the outline of the vase is shaped like the graph f(x). Somewhere in the middle of the vase is a sliced region, looking like a small coin. This is the rectangle, revolved around the axis. The point on the curve is still labeled (x_k^*, f(x_k^*)) and the width of this slice is labeled Delta x."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-SolidsOfRevolution-12">We want to find the volume of this specific slice. To do this, we can remove this stubby cylinder from the solid and think about it directly. We can see the thickness of the slice is represented by <span class="process-math">\(\Delta x\text{,}\)</span> and so we need to think about the cross-sectional area of the "face" of this slice.</div>
+<figure class="figure figure-like" id="fig-Disks-6"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/./ApplicationsIntegrals/Disks-6.png" class="contained" alt="A circle where the radius is labeled r=f(x_k^*)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para logical" id="subsec-SolidsOfRevolution-14">
+<div class="para">This is something we can easily find the area of! We know the formula for the area of a circle: <span class="process-math">\(A=\pi r^2\text{.}\)</span> We’ll notice that the radius of this circle is the distance from the center of our slice to the outer edge: this is the height of the rectangle in <a href="sec-VolumesOfRevolution.html#fig-Disks-3" class="xref" data-knowl="./knowl/xref/fig-Disks-3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.3.3">Figure 6.3.3</a>. So we can use <span class="process-math">\(r=f(x_k^*)\text{,}\)</span> giving us the cross-sectional area of the <span class="process-math">\(k\)</span>th slice:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-Disks-3.html ./knowl/xref/fig-Disks-2.html">
+\begin{equation*}
+A(x_k^*) = \pi \left(f(x_k^*)\right)^2\text{.}
+\end{equation*}
+</div>
+<div class="para">Now we can drop into our slice and sum process:</div>
+<ol class="decimal" id="subsec-SolidsOfRevolution-14-6">
+<li id="subsec-SolidsOfRevolution-14-6-1"><div class="para logical" id="subsec-SolidsOfRevolution-14-6-1-1">
+<div class="para">The volume of the <span class="process-math">\(k\)</span>th slice is:</div>
+<div class="displaymath process-math" id="subsec-SolidsOfRevolution-14-6-1-1-2">
+\begin{align*}
+V_k \amp = A(x_k^*) \Delta x\\
+\amp = \pi\left(f(x_k^*)\right)^2 \Delta x
+\end{align*}
+</div>
+</div></li>
+<li id="subsec-SolidsOfRevolution-14-6-2">
+<div class="para logical" id="subsec-SolidsOfRevolution-14-6-2-1">
+<div class="para">We can approximate the volume by adding the slices:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-Disks-2.html">
+\begin{equation*}
+V \approx \sum_{k=1}^n \pi\left(f(x_k^*)\right)^2 \Delta x
+\end{equation*}
+</div>
+<div class="para">Sometimes this can be hard to visualize. We’re approximating the solid in <a href="sec-VolumesOfRevolution.html#fig-Disks-2" class="xref" data-knowl="./knowl/xref/fig-Disks-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.3.2">Figure 6.3.2</a> by thinking about a bunch of these circular disks stacked next to each other.</div>
+</div>
+<figure class="figure figure-like" id="fig-Disks-5"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./ApplicationsIntegrals/Disks-5.png" class="contained" alt="The 3-dimensional solid, but there are 10 grey circular disks stacked next to each other. The radius of each varies, matching with the curve outlining the vase-like image."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.6<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</li>
+<li id="subsec-SolidsOfRevolution-14-6-3"><div class="para logical" id="subsec-SolidsOfRevolution-14-6-3-1">
+<div class="para">We can apply a limit to evaluate the actual volume of the solid and construct a definite integral.</div>
+<div class="displaymath process-math" id="subsec-SolidsOfRevolution-14-6-3-1-1">
+\begin{align*}
+V \amp = \lim_{n\to\infty} \sum_{k=1}^n \pi\left(f(x_k^*)\right)^2 \Delta x\\
+\amp = \int_{x=a}^{x=b} \pi (f(x))^2\;dx
+\end{align*}
+</div>
+</div></li>
+</ol>
+</div>
+<div class="para" id="subsec-SolidsOfRevolution-15">This is great! We’ll call this volume integral the <dfn class="terminology">Disk Method</dfn>, since each cross section is a circular disk.</div>
+<div class="para" id="subsec-SolidsOfRevolution-16">What happens if we add a second curve defining a lower boundary to the region, like we did in <a href="sec-AreaBetweenCurves.html" class="internal" title="Section 6.2: Area Between Curves">Section 6.2 Area Between Curves</a> for areas?</div>
+<article class="activity project-like" id="subsec-SolidsOfRevolution-17"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Carving out a Hole in the Center.</span>
+</h4>
+<div class="introduction" id="subsec-SolidsOfRevolution-17-2">
+<div class="para" id="subsec-SolidsOfRevolution-17-2-1">We’re going to look at the same solid as in <a href="sec-VolumesOfRevolution.html#fig-Disks-2" class="xref" data-knowl="./knowl/xref/fig-Disks-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.3.2">Figure 6.3.2</a>. But this time, when we define the 2-dimensional region that we’re going to revolve around the <span class="process-math">\(x\)</span>-axis, we’re going to add a lower boundary function, <span class="process-math">\(g(x)\text{.}\)</span>
+</div>
+<figure class="figure figure-like" id="fig-Washers-1"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./ApplicationsIntegrals/Washers-1.png" class="contained" alt="A graph of two functions. The upper function is red, labeled f(x), and is a wavy polynomial. It is above the second function, g(x), which is blue. It is less wavy. Both of them are above the x-axis, and go from a point labeled x=a to x=b where they both stop."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.7<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-SolidsOfRevolution-17-2-3">When we revolve this region around the <span class="process-math">\(x\)</span>-axis, we get the following 3-dimensional solid.</div>
+<figure class="figure figure-like" id="fig-Washers-2"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./ApplicationsIntegrals/Washers-2.png" class="contained" alt="The region revolved around the x-axis. It creates a vase type shape where the outer edge is the red f(x) function on the top and reflected onto the bottom. The inner function, g(x), creates a kind of tunnel through the solid."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.8<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div>
+<article class="task exercise-like" id="subsec-SolidsOfRevolution-17-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-SolidsOfRevolution-17-3-1-1">How is a single generic slice on this solid different than the one in <a href="sec-VolumesOfRevolution.html#fig-Disks-2" class="xref" data-knowl="./knowl/xref/fig-Disks-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.3.2">Figure 6.3.2</a>?</div>
+<div class="solutions">
+<details id="subsec-SolidsOfRevolution-17-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-SolidsOfRevolution-17-3-2-1">Here is the rectangle that will define that slice!</div>
+<figure class="figure figure-like" id="fig-Washers-3"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/./ApplicationsIntegrals/Washers-3.png" class="contained" alt="A graph of two functions. The upper function is red, labeled f(x), and is a wavy polynomial. It is above the second function, g(x), which is blue. It is less wavy. Both of them are above the x-axis, and go from a point labeled x=a to x=b where they both stop. A rectangle spans from the bottom g(x) function to the top f(x) function, with the point on the bottom labeled (x_k^*, g(x_k^*)) and the point on the top labeled (x_k^*, f(x_k^*)). The width of the rectangle is labeled Delta x."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.9<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div></details><details id="subsec-SolidsOfRevolution-17-3-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-SolidsOfRevolution-17-3-3-1">Here is the slice formed when the rectangle revolves around the axis!</div>
+<figure class="figure figure-like" id="fig-Washers-4"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/./ApplicationsIntegrals/Washers-4.png" class="contained" alt="The region revolved around the x-axis. It creates a vase type shape where the outer edge is the red f(x) function on the top and reflected onto the bottom. The inner function, g(x), creates a kind of tunnel through the solid. There is a disk with a hole in it, sliced in the middle of the solid. The width is labeled Delta x. The outer edge of the disk matches the function f(x) and the hole is formed from g(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.10<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div></details>
+</div></article><article class="task exercise-like" id="subsec-SolidsOfRevolution-17-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-SolidsOfRevolution-17-4-1-1">Find a formula for the area of the face of the cross-secional slice.</div>
+<div class="solutions">
+<details id="subsec-SolidsOfRevolution-17-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-SolidsOfRevolution-17-4-2-1">Here’s a picture of the face of the slice!</div>
+<figure class="figure figure-like" id="fig-Washers-5"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./ApplicationsIntegrals/Washers-5.png" class="contained" alt="A circle within a circle. The larger circle has a red radius, labeled r_1. The smaller circle has a blue radius, labeled r_2."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.11<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div></details><details id="subsec-SolidsOfRevolution-17-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-SolidsOfRevolution-17-4-3-1"><div class="displaymath process-math" id="subsec-SolidsOfRevolution-17-4-3-1-1">
+\begin{align*}
+A \amp = \pi r_1^2 - \pi r_2^2\\
+A(x_k^*) \amp = \pi \left(f(x_k^*)\right)^2 - \pi\left(g(x_k^*)\right)^2
+\end{align*}
+</div></div></div></details>
+</div></article><article class="task exercise-like" id="subsec-SolidsOfRevolution-17-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-SolidsOfRevolution-17-5-1-1">Use the slice-and-sum process to create an integral expression representing the volume of this solid.</div>
+<div class="solutions"><details id="subsec-SolidsOfRevolution-17-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-SolidsOfRevolution-17-5-2-1"><div class="displaymath process-math" id="subsec-SolidsOfRevolution-17-5-2-1-1">
+\begin{align*}
+V_k \amp=  \left(\pi \left(f(x_k^*)\right)^2 - \pi\left(g(x_k^*)\right)\right)\Delta x \\
+\amp = \pi\left((f(x_k^*))^2-(g(x_k^*))^2\right)\Delta x\\
+V \amp \approx \sum_{k=1}^n \pi\left((f(x_k^*))^2-(g(x_k^*))^2\right)\Delta x\\
+V \amp = \lim_{n\to\infty} \sum_{k=1}^n \pi\left((f(x_k^*))^2-(g(x_k^*))^2\right)\Delta x\\
+\amp = \int_{x=a}^{x=b} \pi\left((f(x))^2-(g(x))^2\right)\;dx
+\end{align*}
+</div></div></div></details></div></article></article><article class="definition definition-like" id="def-VolumesDisksWashers"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.3.12</span><span class="period">.</span><span class="space"> </span><span class="title">Volume by Disks/Washers.</span>
 </h4>
 <div class="para logical" id="def-VolumesDisksWashers-2-1">
 <div class="para">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are continuous functions with <span class="process-math">\(f(x)\geq g(x) \geq 0\)</span> on the interval <span class="process-math">\([a,b]\text{,}\)</span> then the volume of the solid formed by revolving the region bounded between the curves <span class="process-math">\(y=f(x)\)</span> and <span class="process-math">\(y=g(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> around the <span class="process-math">\(x\)</span>-axis is:</div>
@@ -613,7 +752,7 @@ V = \pi\int_{x=a}^{x=b}\left(f(x)\right)^2\;dx\text{.}
 </div>
 <div class="para">This is called the <dfn class="terminology">Disk Method</dfn>.</div>
 </div></article><article class="activity project-like" id="act-VolumesDisksWashers"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Volumes by Disks/Washers.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Volumes by Disks/Washers.</span>
 </h4>
 <div class="introduction" id="act-VolumesDisksWashers-2"><div class="para" id="act-VolumesDisksWashers-2-1">Consider the region bounded between the curves <span class="process-math">\(y=4+2x-x^2\)</span> and <span class="process-math">\(y=\dfrac{4}{x+1}\text{.}\)</span> Will will create a 3-dimensional solid by revolving this region around the <span class="process-math">\(x\)</span>-axis.</div></div>
 <article class="task exercise-like" id="act-VolumesDisksWashers-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
@@ -623,7 +762,7 @@ V = \pi\int_{x=a}^{x=b}\left(f(x)\right)^2\;dx\text{.}
 <div class="para" id="act-VolumesDisksWashers-6-1-1">Find the area of the face of the <span class="process-math">\(k\)</span>th slice.</div>
 <div class="solutions"><details id="act-VolumesDisksWashers-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-VolumesDisksWashers-6-2-1">Note that this is a 2-dimensional shape, and we’re just finding the area of it.</div></div></details></div></article><article class="task exercise-like" id="act-VolumesDisksWashers-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="act-VolumesDisksWashers-7-1-1">Set up, and evaluate, the integral representing the volume of the solid.</div></article></article><article class="activity project-like" id="act-VolumesDisksWashers-y"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Another Volume.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Another Volume.</span>
 </h4>
 <div class="introduction" id="act-VolumesDisksWashers-y-2"><div class="para" id="act-VolumesDisksWashers-y-2-1">Now lets consider another region: this time, the one bounded between the curves <span class="process-math">\(y=x\)</span> and <span class="process-math">\(y=3\sqrt{x}\text{.}\)</span> We will, again, create a 3-dimensional solid by revolving this region around the <span class="process-math">\(y\)</span>-axis.</div></div>
 <article class="task exercise-like" id="act-VolumesDisksWashers-y-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
@@ -632,10 +771,10 @@ V = \pi\int_{x=a}^{x=b}\left(f(x)\right)^2\;dx\text{.}
 <div class="para" id="act-VolumesDisksWashers-y-5-1-1">Let’s use this rectangle to visualize the <span class="process-math">\(k\)</span>th slice of this 3-dimensional solid. What does the "face" of it look like?</div></article><article class="task exercise-like" id="act-VolumesDisksWashers-y-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="act-VolumesDisksWashers-y-6-1-1">Find the area of the face of the <span class="process-math">\(k\)</span>th slice.</div></article><article class="task exercise-like" id="act-VolumesDisksWashers-y-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="act-VolumesDisksWashers-y-7-1-1">Set up and evaluate the integral representing the volume of this solid.</div></article></article></section><section class="subsection" id="subsec-Re-OrientingRectangles"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="space"> </span><span class="title">Re-Orienting our Rectangles</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="space"> </span><span class="title">Re-Orienting our Rectangles</span>
 </h3>
 <article class="definition definition-like" id="def-VolumesShells"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Volume by Shells.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.3.13</span><span class="period">.</span><span class="space"> </span><span class="title">Volume by Shells.</span>
 </h4>
 <div class="para logical" id="def-VolumesShells-2-1">
 <div class="para">If <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are continuous functions with <span class="process-math">\(f(x)\geq g(x)\)</span> on the interval <span class="process-math">\([a,b]\)</span> (with <span class="process-math">\(a\geq0\)</span>), then the volume of the solid formed when the region bounded between the curves <span class="process-math">\(y=f(x)\)</span> and <span class="process-math">\(y=g(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> is revolved around the <span class="process-math">\(y\)</span>-axis is</div>
@@ -645,12 +784,12 @@ V = 2\pi \int_{x=a}^{x=b} x\left(f(x)-g(x)\right)\;dx\text{.}
 \end{equation*}
 </div>
 </div></article><article class="activity project-like" id="act-VolumesShells"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Volume by Shells.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Volume by Shells.</span>
 </h4>
 <div class="introduction" id="act-VolumesShells-2">
 <div class="para" id="act-VolumesShells-2-1">Let’s consider the region bounded by the curves <span class="process-math">\(y=x^3\)</span> and <span class="process-math">\(y-x+6\)</span> as well as the line <span class="process-math">\(y=0\text{.}\)</span> You might remember this region from <a href="sec-AreaBetweenCurves.html#act-SingleIntegral" class="xref" data-knowl="./knowl/xref/act-SingleIntegral.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 6.2.3: Trying for a Single Integral">Activity 6.2.3</a>. This time, we’ll create a 3-dimensional solid by revolving the region around the <span class="process-math">\(x\)</span>-axis</div>
 <figure class="figure figure-like" id="fig-VolumeShells"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./ApplicationsIntegrals/SingleInt-1.png" class="contained" alt="A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.14<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
 </div>
 <article class="task exercise-like" id="act-VolumesShells-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="act-VolumesShells-3-1-1">Sketch one or two rectangles that are <em class="emphasis">perpendicular</em> to the <span class="process-math">\(x\)</span>-axis. Then set up an integral expression to find the volume of the solid using them.</div>
@@ -659,7 +798,7 @@ V = 2\pi \int_{x=a}^{x=b} x\left(f(x)-g(x)\right)\;dx\text{.}
 <div class="para" id="act-VolumesShells-4-1-1">Now draw a single rectangle in the region that is <em class="emphasis">parallel</em> to the axis of revolution. Use this rectangle to visualize the <span class="process-math">\(k\)</span>th slice of this 3-dimensional solid. What does that single rectangle create when it is revolved around the <span class="process-math">\(x\)</span>-axis?</div>
 <div class="solutions"><details id="act-VolumesShells-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-VolumesShells-4-2-1">This won’t create a disk or washer!</div></div></details></div></article><article class="task exercise-like" id="act-VolumesShells-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="act-VolumesShells-5-1-1">Set up and evaluate the integral expression representing the volume of the solid.</div></article></article></section><section class="exercises" id="ex-Volumes"><h3 class="heading hide-type">
-<span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="space"> </span><span class="title">Practice Problems</span>
+<span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber">6.3.4</span><span class="space"> </span><span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="ex-Volumes-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
 <div class="para" id="ex-Volumes-1-1">We say that the volume of a solid can be thought of as <span class="process-math">\(\displaystyle \int_{x=a}^{x=b}A(x)\;dx\)</span> where <span class="process-math">\(A(x)\)</span> is a function describing the cross-sectional area of our solid at an <span class="process-math">\(x\)</span>-value between <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\text{.}\)</span> Explain how this integral formula gets built, referencing the slice-and-sum (Riemann sum) method.</div></article><article class="exercise exercise-like" id="ex-Volumes-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
@@ -695,8 +834,8 @@ V = 2\pi \int_{x=a}^{x=b} x\left(f(x)-g(x)\right)\;dx\text{.}
 <div class="solutions"><details id="problem-Shells-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><iframe src="https://www.desmos.com/calculator/hh8tmig9gb" id="problem-Shells-6-2-1" width="360" height="540"></iframe></div></details></div></article><article class="task exercise-like" id="problem-Shells-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="problem-Shells-7-1-1">The region bounded by the curves <span class="process-math">\(y=\sqrt{2x}\)</span> and <span class="process-math">\(y=4-x\)</span> and the <span class="process-math">\(x\)</span>-axis between <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=4\text{,}\)</span> revolved around the <span class="process-math">\(x\)</span>-axis.</div>
 <div class="solutions"><details id="problem-Shells-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><iframe src="https://www.desmos.com/calculator/p9fovjd08w" id="problem-Shells-7-2-1" width="360" height="540"></iframe></div></details></div></article></article><article class="exercise exercise-like" id="ex-Volumes-8"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
-<div class="para" id="ex-Volumes-8-1">Pick at least 2 integrals from <a href="sec-VolumesOfRevolution.html#problem-Washers" class="xref" data-knowl="./knowl/xref/problem-Washers.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 6.3.3.4">Exercise 4</a> to re-write using shells instead. What about those regions did you look for to choose which ones to re-write and which ones to not?</div></article><article class="exercise exercise-like" id="ex-Volumes-9"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
-<div class="para" id="ex-Volumes-9-1">Pick at least 2 integrals from <a href="sec-VolumesOfRevolution.html#problem-Shells" class="xref" data-knowl="./knowl/xref/problem-Shells.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 6.3.3.7">Exercise 7</a> to re-write using disks/washers instead. What about those regions did you look for to choose which ones to re-write and which ones to not?</div></article><article class="exercise exercise-like" id="ex-Volumes-10"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
+<div class="para" id="ex-Volumes-8-1">Pick at least 2 integrals from <a href="sec-VolumesOfRevolution.html#problem-Washers" class="xref" data-knowl="./knowl/xref/problem-Washers.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 6.3.4.4">Exercise 4</a> to re-write using shells instead. What about those regions did you look for to choose which ones to re-write and which ones to not?</div></article><article class="exercise exercise-like" id="ex-Volumes-9"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="para" id="ex-Volumes-9-1">Pick at least 2 integrals from <a href="sec-VolumesOfRevolution.html#problem-Shells" class="xref" data-knowl="./knowl/xref/problem-Shells.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 6.3.4.7">Exercise 7</a> to re-write using disks/washers instead. What about those regions did you look for to choose which ones to re-write and which ones to not?</div></article><article class="exercise exercise-like" id="ex-Volumes-10"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-Volumes-10-1"><div class="para" id="ex-Volumes-10-1-1">For each of the following solids, set up an integral expression using either the disk/washer method or the shell method. You don’t need to evaluate them, but you should do some careful thinking about how you set these up, especially as you choose between methods and what variable you are integrating with.</div></div>
 <article class="task exercise-like" id="ex-Volumes-10-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ex-Volumes-10-2-1-1">The region bounded by the curves <span class="process-math">\(y=x^2+1\)</span> and <span class="process-math">\(y=x^3+1\)</span> in the first quadrant, revolved around the <span class="process-math">\(x\)</span>-axis.</div>

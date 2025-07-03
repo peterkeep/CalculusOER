@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="activity project-like"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Area Between Curves.</span>
+</h4>
+<div class="introduction">
+<div class="para">Let’s start with our same function <span class="process-math">\(f(x)\)</span> on the same interval <span class="process-math">\([a,b]\)</span>m but also add the function <span class="process-math">\(g(x)\)</span> on the same interval, with <span class="process-math">\(f(x) \gt g(x) \gt 0\)</span> on the interval. We will construct a Riemann sum to approximate the area between these two curves on this interval, and then build that into the integral formula.</div>
+<figure class="figure figure-like"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/ApplicationsIntegrals/2Curve-1.png" class="contained" alt="A graph of a positive curve and a less positive curve, g(x), labeled f(x), from x=a to x=b. The space between these curves is shaded."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div>
+<article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para">Divide the interval <span class="process-math">\([a,b]\)</span> into 4 equally-sized subintervals.</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para">Pick an <span class="process-math">\(x_k^*\)</span> for <span class="process-math">\(k=1,2,3,4\text{,}\)</span> one for each subinterval. Plot the points <span class="process-math">\((x_1^*, f(x_1^*))\text{,}\)</span> <span class="process-math">\((x_2^*, f(x_2^*))\text{,}\)</span> <span class="process-math">\((x_3^*, f(x_3^*))\text{,}\)</span> and <span class="process-math">\((x_4^*, f(x_4^*))\text{.}\)</span> Then plot the corresponding points on the <span class="process-math">\(g\)</span> function: <span class="process-math">\((x_1^*, g(x_1^*))\text{,}\)</span> <span class="process-math">\((x_2^*, g(x_2^*))\text{,}\)</span> <span class="process-math">\((x_3^*, g(x_3^*))\text{,}\)</span> and <span class="process-math">\((x_4^*, g(x_4^*))\text{.}\)</span>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para">Use these 8 points to draw 4 rectangles, with the points on the <span class="process-math">\(f\)</span> function defining the tops of the rectangles and the points on the <span class="process-math">\(g\)</span> function defining the bottoms of the rectangles. What are the dimensions of these rectangles (the height and width)?</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para">Find the area of each rectangle by multiplying the heights and widths for each rectangle.</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para">Add up the areas to construct a Riemman sum.</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para">Now we will generalize a little more. Let’s say we divide this up into <span class="process-math">\(n\)</span> equally-sized pieces (instead of 4). Instead of trying to pick an <span class="process-math">\(x_k^*\)</span> for the unknown number of subintervals (since we don’t have a value for <span class="process-math">\(n\)</span> yet), let’s just focus on one of these: the arbitrary <span class="process-math">\(k\)</span>th subinterval.</div> <figure class="figure figure-like"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/ApplicationsIntegrals/2Curve-2.png" class="contained" alt="The same graph of the two curves f(x) and g(x) between x=a and x=b. Now, though, there is a single rectangle sitting on g(x) and spanning up to f(x). It is delta-x wide. The bottom of the rectangle touches the graph at the point (x_k, g(x_k)) and the top of the rectangle touches the graph at the point (x_k, f(x_k))."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure> <div class="para">What are the dimensions of this <span class="process-math">\(k\)</span>th rectangle?</div>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para">Height: <span class="process-math">\(f(x_k^*) - g(x_k^*)\)</span>
+</div>
+<div class="para">Width: <span class="process-math">\(\Delta x\)</span>
+</div>
+</div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para">Find <span class="process-math">\(A_k\text{,}\)</span> the area of this <span class="process-math">\(k\)</span>th rectangle.</div>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(A_k = \left(f(x_k^*) - g(x_k^*)\right)\Delta x\)</span></div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="para">Add up the areas of <span class="process-math">\(A_k\)</span> for <span class="process-math">\(k=1,2,3,...,n\)</span> to approximate the total area, <span class="process-math">\(A\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">You might want to use summation notation, starting with <span class="process-math">\(\sum_{k=1}^n\)</span>
+</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\displaystyle A \approx \sum_{k=1}^n \left(f(x_k^*) - g(x_k^*)\right)\Delta x\)</span></div></div></details>
+</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para">Apply a limit as <span class="process-math">\(n\to \infty\)</span> to this Riemann sum in order to construct the integral formula for the area between the curves <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{.}\)</span>
+</div>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+A \amp = \lim_{n\to\infty} \sum_{k=1}^n \left(f(x_k^*)-g(x_k^*)\right)\Delta x \\
+\amp = \int_{x=a}^{x=b} \left(f(x)-g(x)\right)\;dx
+\end{align*}
+</div></div></div></details></div></article></article><span class="incontext"><a class="internal" href="sec-AreaBetweenCurves.html#act-AreaBetweenCurves">in-context</a></span>
+</body>
+</html>
