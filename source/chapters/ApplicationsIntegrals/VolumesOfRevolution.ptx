@@ -194,7 +194,53 @@
       Notice that, in all of the previous work we've done, we've drawn our rectangle so that it is standing <em>perpendicular</em> to the axis of revolution. This is the kind of rectangle that, when we revolve it, traces out the "washer" shape!
     </p>
     <p>
-      So what happens when we change the orientation of our rectangle? What happens when we draw a rectangle that is <em>parallel</em> to the axis of revolution?
+      So what happens when we change the orientation of our rectangle? What happens when we draw a rectangle that is <em>parallel</em> to the axis of revolution? Let's consider the same region as before (the one we visualized in <xref ref="fig-Washers-1"/>) with the same rectangle as before (the one we visualized in <xref ref="fig-Washers-3"/>), but we'll revolve around the <m>y</m>-axis. 
+    </p>
+    <p>
+      When we revolve this region around the <m>y</m>-axis, we end up with the following solid.
+    </p>
+    <figure xml:id="fig-Shells-1">
+      <caption></caption>
+      <image source="./ApplicationsIntegrals/Shells-1.png" width="100%">
+        <shortdescription>A cylindrical looking solid, where the top of the solid is formed by the red f(x) function and its reflection across the y-axis, while the bottom is formed by the blue g(x) and its reflection. Some circles are also marked, showing the shape of the top.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      We want to focus on the single rectangle and the shape that it forms when we revolve it around the <m>y</m>-axis. From there, we can fall into our slice and sum process by thinking about how we might calculate the volume of this single sliced piece and then adding them up.
+    </p>
+    <figure xml:id="fig-Shells-2">
+      <caption></caption>
+      <image source="./ApplicationsIntegrals/Shells-2.png" width="100%">
+        <shortdescription>A cylindrical looking solid, where the top of the solid is formed by the red f(x) function and its reflection across the y-axis, while the bottom is formed by the blue g(x) and its reflection. Some circles are also marked, showing the shape of the top. A single rectangle and the small cylinder it forms is highlighted.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      For this rectangle, we can notice that when we revolve it around the <m>y</m>-axis, we create a hollow cylinder. We'll focus more specifically on this cylinder.
+    </p>
+    <figure xml:id="fig-Shells-3">
+      <caption></caption>
+      <image source="./ApplicationsIntegrals/Shells-3.png" width="100%">
+        <shortdescription>The single highlighted cylinder, with labels for its radius and height, as well as the thickness Delta x.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      Let's focus more on the cylinder. We'll need to find the volume of this cylinder. We can think of this volume as really the surface area of the cylinder multiplied by the thickness. Another way to visualize it is to think about cutting the cylinder open, and unfurling it to create a rectangular solid with some thickness.
+    </p>
+    <figure xml:id="fig-Shells-4">
+      <caption></caption>
+      <image source="./ApplicationsIntegrals/Shells-4.png" width="70%">
+        <shortdescription>The single highlighted cylinder in isolation with a cut across it. Underneath there is an arrow pointing towards the unfurled rectangle, where the width is labeled 2*pi*r and the height is labeled h, while the thickness is Delta x.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      So we can see that to find <m>V_k</m>, we're going to multiply <m>A(x_k^*)</m> and <m>\Delta x</m> again, where <m>A(x_k^*)</m> is the area of the cross-sectional "face." In this case, we can see how we'll construct this from the unfurled cylinder.
+      <md>
+        <mrow>V_k \amp= 2\pi r \Delta x </mrow>
+        <mrow> \amp = 2\pi (x_k^*)(f(x_k^*)-g(x_k^*))\Delta x</mrow>
+        <mrow>V \amp \approx \sum_{k=1}^n 2\pi (x_k^*)(f(x_k^*)-g(x_k^*))\Delta x</mrow>
+        <mrow>V \amp = \lim_{n\to\infty}  \sum_{k=1}^n 2\pi (x_k^*)(f(x_k^*)-g(x_k^*))\Delta x</mrow>
+        <mrow> \amp = \int_{x=a}^{x=b} 2\pi x(f(x)-g(x))\;dx</mrow>
+      </md>
     </p>
     <definition xml:id="def-VolumesShells">
       <title>Volume by Shells</title>
@@ -207,6 +253,9 @@
         </p>
       </statement>
     </definition>
+    <p>
+      We can apply this formula in a familiar example, and also practice changing variables.
+    </p>
     <xi:include href="./activities/act-VolumesShells.ptx" />
   </subsection>
   <xi:include href="./exercises/ex-Volumes.ptx" />

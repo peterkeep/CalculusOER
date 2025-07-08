@@ -22,6 +22,11 @@
                 Note that in this context, we're actually using disks and washers. Also note that the bottom of the rectangles are bounded by <m>y=0</m> from <m>x=-6</m> to <m>x=0</m> and then switches to being bounded by <m>y=x^3</m> from <m>x=0</m> to <m>x=2</m>. 
             </p>
         </hint>
+        <answer>
+            <p>
+                <me>V = \pi \int_{x=-6}^{x=0}(x+6)^2\;dx + \pi \int_{x=0}^{x=2} (x+6)^2 - (x^3)^2\;dx</me>
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -31,14 +36,26 @@
         </statement>
         <hint>
             <p>
-                This won't create a disk or washer!
+                This won't create a disk or washer! We'll have to change variables, and try to see how we can create a shell.
             </p>
         </hint>
     </task>
     <task>
         <statement>
             <p>
-                Set up and evaluate the integral expression representing the volume of the solid.
+                Set up the integral expression representing the volume of the solid.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>V = 2\pi \int_{y=0}^{y=8} y(\sqrt[3]{y} - (y-6))\;dy</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Confirm that your volumes are the same, no matter your approach to setting it up.
             </p>
         </statement>
     </task>
