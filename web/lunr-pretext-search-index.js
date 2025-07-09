@@ -2428,7 +2428,52 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.5",
   "title": "Arc Length and Surface Area",
-  "body": " Arc Length and Surface Area       Integrals for Evaluating the Length of a Curve      Integrals for Evaluating the Surface Area of a Solid     "
+  "body": " Arc Length and Surface Area   We're going to continue to think about different applications of definite integrals: what they can measure and how we can construct these integral formulas. In this section, we're going to add two more formulas for two more measurements. Before we get far into this discussion, we want to center the important parts of our discussion.  Sure, it is worth noting that, in this section, we'll add a 1-dimensional measurement of size to our list of things an integral can measure. We have talked about a 2-dimensional measure of size (area) and a 3-dimensional measure of size (volume), but we'll add length to the list now! We'll also add a 2-dimensional extension of perimeter to the list when we talk about surface area. That's cool!  But, more importantly, we're going to see how we can construct an integral formula from a Riemann sum, and we're going to get some experience constructing a Riemann sum to measure the thing we care about. In our study of integrals, it might not actually be that important to know how to calculate the specific kinds of volumes or lengths that we're talking about. But we can get some experience with using some formulas from a pretty comfortable field (geometry) to get some experience with the slice-and-sum process. And this process is a useful one to know! We want to see that a definite integral is more than just an area under a curve, and we want to be able to look at an integral formula for some measurement or calculation and see some of the parts of that formula that could be familiar.  Anyways, let's calculate some arc lengths.    Integrals for Evaluating the Length of a Curve  When we talk about arc length , we might think of the length of some portion of a circle. Here, we'll use it to refer to the length of some more general curve. We'll graph a function and think about how long the curve of the graph is from some point to another point.   Measuring Distance   Consider the following right-triangle with the normal names of side lengths.     A right triangle with the hypotenuse labeled c and the two other side lengths labeled a and b.    How do we use the Pythagorean Theorem to find the length of ?    Consider the two points and below.     Two points, (x_1, y_1) and (x_2, y_2), connected by a dashed line. The line is labeled d.    How do we use the distance formula to find the length of the line connecting the two point, ?    How are these two things the same? How are they different?    This might be a reminder of something we already knew, but let's make sure we are certain: when we calculate distances, we're really just using the Pythagorean Theorem! We can square the vertical distance between the points and the horizontal distance between the points, and then we the length of the straight line connecting two points is: . This will be a useful formula for us to find an integral expression for the length of a curve.  If we think about the slice-and-sum technique, then we'll want to visualize the th slice of whatever we're trying to measure. In this case, that means we'll divide the curve up into equally-wide slices and calculate the length of each subsection of the curve. We'll make a recognizable assumption: we'll assume that the curve is actually a straight line between the end points, and calculate that length.   We have made similar assumptions along the way!   When we calculated area, we assumed that the curve(s) defining our region were constant on each subinterval. This is what gave us rectangular slices, with flat tops and bottoms!    When we calculated volumes by disks and washers, we again assumed that the curve(s) were constant on each subinterval. This is what gave us constant radii on each disk\/washer!    When we calculated volumes by shells, this assumption of constant curves made the cylindrical shells have flat tops and bottoms!      Let's visualize the th slice.     A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k.    In order to calculate , the straight-line length connecting the end points of the th subinterval, we can use the Pythagorean Theorem or distance formula (from ).     A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k. There are vertical and horizontal lines forming a right triangle, with l_k being the hypotenuse. The vertical component is labeled Delta y_k while the horizontal component is labeled Delta x.    Let's start the slice-and-sum process. Two notes:   We're using to denote the vertical distance between the end points of the th subinterval because we expect these to differ for each subinterval. We don't need to do this for , since we've been slicing things into equally-wide subintervals this whole time.    This isn't a Riemann sum. This is much more important, and much more pressing.   Before we can do anything, we need to try to manipulate this sum so that it is in the form of a Riemann sum. What does this mean? What are the some of the things required for the Riemann sum structure that we don't have here? Feel free to look back at to remind yourself what elements are needed for a Riemann sum.  Notice, first, that we need a function evaluated at any single input on the subinterval: . In our version, we have a function evaluated twice at very specific inputs: . We'll need to re-think about how we represent this part in order to get a single function output.  We also need to have this function multiplied by . In our sum, we have as a part of the function itself, under the square root. We'll want to move this outside of the root. Let's start there.  We'll start by looking at the sum to approximate the length and factoring outside of the root. This looks better! We have floating around at the end of our sum, ready to turn into once we apply the limit as .  The inside of our root, though, is still a bit messed up. We would like a single function of , any -value from the th subinterval. Instead, we have a function involving the two -values of the end points and we still have involved in this part!  But we can notice something about : it really is the slope of the straight line! Can we use a function to represent this? We can absolutely approximate this slope using a function: the derivative!     A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k. There is a green point on the subinterval labeled (x_k^*, f(x_k^*)) with a tangent line formed in green. It runs almost parallel to the dashed line.    If we pick some point, , on the th subinterval, then we can approximate with . This is a fine approximation of this slope (and the guarantees that there is a point on the subinterval where exactly), but the real magic will happen when . The definition of the will make sure that these slopes are equal in the limit!  Let's return to our slice-and-sum process. This is a Riemann sum! We can apply a limit and get an integral!     Integrals for Evaluating the Surface Area of a Solid     "
+},
+{
+  "id": "subsec-ArcLength-2",
+  "level": "2",
+  "url": "sec-ArcLengthSurfaceArea.html#subsec-ArcLength-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "arc length "
+},
+{
+  "id": "act-MeasuringDistance",
+  "level": "2",
+  "url": "sec-ArcLengthSurfaceArea.html#act-MeasuringDistance",
+  "type": "Activity",
+  "number": "6.5.1",
+  "title": "Measuring Distance.",
+  "body": " Measuring Distance   Consider the following right-triangle with the normal names of side lengths.     A right triangle with the hypotenuse labeled c and the two other side lengths labeled a and b.    How do we use the Pythagorean Theorem to find the length of ?    Consider the two points and below.     Two points, (x_1, y_1) and (x_2, y_2), connected by a dashed line. The line is labeled d.    How do we use the distance formula to find the length of the line connecting the two point, ?    How are these two things the same? How are they different?   "
+},
+{
+  "id": "fig-ArcLength-1",
+  "level": "2",
+  "url": "sec-ArcLengthSurfaceArea.html#fig-ArcLength-1",
+  "type": "Figure",
+  "number": "6.5.3",
+  "title": "",
+  "body": "   A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k.   "
+},
+{
+  "id": "fig-ArcLength-2",
+  "level": "2",
+  "url": "sec-ArcLengthSurfaceArea.html#fig-ArcLength-2",
+  "type": "Figure",
+  "number": "6.5.4",
+  "title": "",
+  "body": "   A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k. There are vertical and horizontal lines forming a right triangle, with l_k being the hypotenuse. The vertical component is labeled Delta y_k while the horizontal component is labeled Delta x.   "
+},
+{
+  "id": "fig-ArcLength-3",
+  "level": "2",
+  "url": "sec-ArcLengthSurfaceArea.html#fig-ArcLength-3",
+  "type": "Figure",
+  "number": "6.5.5",
+  "title": "",
+  "body": "   A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k. There is a green point on the subinterval labeled (x_k^*, f(x_k^*)) with a tangent line formed in green. It runs almost parallel to the dashed line.   "
 },
 {
   "id": "sec-OtherApplications",
