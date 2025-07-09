@@ -1,0 +1,42 @@
+<activity xml:id="act-MeasuringDistance">
+    <title>Measuring Distance</title>
+    <task>
+        <statement>
+            <p>
+                Consider the following right-triangle with the normal names of side lengths.
+            </p>
+            <figure xml:id="fig-ArcLength-Triangle">
+                <caption></caption>
+                <image source="./ApplicationsIntegrals/Triangle.png" width="50%">
+                    <shortdescription>A right triangle with the hypotenuse labeled c and the two other side lengths labeled a and b.</shortdescription>
+                </image>
+            </figure>
+            <p>
+                How do we use the Pythagorean Theorem to find the length of <m>c</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Consider the two points <m>(x_1,y_1)</m> and <m>(x_2, y_2)</m> below. 
+            </p>
+            <figure xml:id="fig-ArcLength-Distance">
+                <caption></caption>
+                <image source="./ApplicationsIntegrals/Distance.png" width="50%">
+                    <shortdescription>Two points, (x_1, y_1) and (x_2, y_2), connected by a dashed line. The line is labeled d.</shortdescription>
+                </image>
+            </figure>
+            <p>
+                How do we use the distance formula to find the length of the line connecting the two point, <m>d</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How are these two things the same? How are they different?
+            </p>
+        </statement>
+    </task>
+</activity>

@@ -5,13 +5,142 @@
 
   <introduction>
     <p>
-      
+      We're going to continue to think about different applications of definite integrals: what they can measure and how we can construct these integral formulas. In this section, we're going to add two more formulas for two more measurements. Before we get far into this discussion, we want to center the important parts of our discussion.
+    </p>
+    <p>
+      Sure, it is worth noting that, in this section, we'll add a 1-dimensional measurement of size to our list of things an integral can measure. We have talked about a 2-dimensional measure of size (area) and a 3-dimensional measure of size (volume), but we'll add length to the list now! We'll also add a 2-dimensional extension of perimeter to the list when we talk about surface area. That's cool!
+    </p>
+    <p>
+      But, more importantly, we're going to see how we can construct an integral formula from a Riemann sum, and we're going to get some experience constructing a Riemann sum to measure the thing we care about. In our study of integrals, it might not actually be that important to know how to calculate the specific kinds of volumes or lengths that we're talking about. But we can get some experience with using some formulas from a pretty comfortable field (geometry) to get some experience with the slice-and-sum process. And this process is a useful one to know! We want to see that a definite integral is more than just an area under a curve, and we want to be able to look at an integral formula for some measurement or calculation and see some of the parts of that formula that could be familiar.
+    </p>
+    <p>
+      Anyways, let's calculate some arc lengths.
     </p>
   </introduction>
   <subsection xml:id="subsec-ArcLength">
     <title>Integrals for Evaluating the Length of a Curve</title>
     <p>
-      
+      When we talk about <term>arc length</term>, we might think of the length of some portion of a circle. Here, we'll use it to refer to the length of some more general curve. We'll graph a function and think about how long the curve of the graph is from some point to another point.
+    </p>
+    <xi:include href="./activities/act-MeasuringDistance.ptx" />
+    <p>
+      This might be a reminder of something we already knew, but let's make sure we are certain: when we calculate distances, we're really just using the Pythagorean Theorem! We can square the vertical distance between the points and the horizontal distance between the points, and then we the length of the straight line connecting two points is:
+      <me>
+        \ell = \sqrt{(\Delta x)^2 + (\Delta y)^2}
+      </me>.
+      This will be a useful formula for us to find an integral expression for the length of a curve.
+    </p>
+    <p>
+      If we think about the slice-and-sum technique, then we'll want to visualize the <m>k</m>th slice of whatever we're trying to measure. In this case, that means we'll divide the curve up into equally-wide slices and calculate the length of each subsection of the curve. We'll make a recognizable assumption: we'll assume that the curve is actually a straight line between the end points, and calculate that length.
+    </p>
+    <aside>
+        <p>
+          We have made similar assumptions along the way!
+          <ol>
+            <li>
+              <p>
+                When we calculated area, we assumed that the curve(s) defining our region were constant on each subinterval. This is what gave us rectangular slices, with flat tops and bottoms!
+              </p>
+            </li>
+            <li>
+              <p>
+                When we calculated volumes by disks and washers, we again assumed that the curve(s) were constant on each subinterval. This is what gave us constant radii on each disk/washer!
+              </p>
+            </li>
+            <li>
+              <p>
+                When we calculated volumes by shells, this assumption of constant curves made the cylindrical shells have flat tops and bottoms!
+              </p>
+            </li>
+          </ol>
+        </p>
+    </aside>
+    <p>
+      Let's visualize the <m>k</m>th slice.
+    </p>
+    <figure xml:id="fig-ArcLength-1">
+      <caption></caption>
+      <image source="./ApplicationsIntegrals/ArcLength-1.png" width="80%">
+        <shortdescription>A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      In order to calculate <m>\ell_k</m>, the straight-line length connecting the end points of the <m>k</m>th subinterval, we can use the Pythagorean Theorem or distance formula (from <xref ref="act-MeasuringDistance"/>).
+    </p>
+    <figure xml:id="fig-ArcLength-2">
+      <caption></caption>
+      <image source="./ApplicationsIntegrals/ArcLength-2.png" width="80%">
+        <shortdescription>A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k. There are vertical and horizontal lines forming a right triangle, with l_k being the hypotenuse. The vertical component is labeled Delta y_k while the horizontal component is labeled Delta x.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      Let's start the slice-and-sum process.
+      <md>
+        <mrow>\ell_k \amp = \sqrt{(\Delta x)^2+(\Delta y_k)^2} </mrow>
+        <mrow>\ell \amp \approx \sum_{k=1}^{n}\sqrt{(\Delta x)^2+(\Delta y_k)^2} </mrow>
+      </md>
+      Two notes:
+      <ol>
+        <li>
+          <p>
+            We're using <m>\Delta y_k</m> to denote the vertical distance between the end points of the <m>k</m>th subinterval because we expect these to differ for each subinterval. We don't need to do this for <m>\Delta x</m>, since we've been slicing things into equally-wide subintervals this whole time.
+          </p>
+        </li>
+        <li>
+          <p>
+            This isn't a Riemann sum. This is much more important, and much more pressing.
+          </p>
+        </li>
+      </ol>
+      Before we can do anything, we need to try to manipulate this sum so that it is in the form of a Riemann sum. What does this mean? What are the some of the things required for the Riemann sum structure that we don't have here? Feel free to look back at <xref ref="def-RiemannSum" text="type-global-title"/> to remind yourself what elements are needed for a Riemann sum.
+    </p>
+    <p>
+      Notice, first, that we need a function evaluated at any single input on the subinterval: <m>f(x_k^*)</m>. In our version, we have a function evaluated twice at very specific inputs:
+      <me>
+        \Delta y_k = f(x_{k+1}) - f(x_k)
+      </me>.
+      We'll need to re-think about how we represent this part in order to get a single function output.
+    </p>
+    <p>
+      We also need to have this function <em>multiplied</em> by <m>\Delta x</m>. In our sum, we have <m>\Delta x</m> as a part of the function itself, under the square root. We'll want to move this <m>\Delta x</m> outside of the root. Let's start there.
+    </p>
+    <p>
+      We'll start by looking at the sum to approximate the length <m>\ell</m> and factoring <m>\Delta x</m> outside of the root.
+      <md>
+        <mrow>\ell \amp \approx \sum_{k=1}^n \sqrt{(\Delta x)^2+(\Delta y_k)^2}</mrow>
+        <mrow> \amp = \sum_{k=1}^{n} \sqrt{(\Delta x)^2\left(1 + \frac{(\Delta y_k)^2}{(\Delta x)^2}\right)}</mrow>
+        <mrow> \amp \sum_{k=1}^{n}\Delta x \sqrt{1+\left(\frac{\Delta y_k}{\Delta x}\right)^2}</mrow>
+        <mrow>\ell \amp \approx \sum_{k=1}^n \sqrt{1+\left(\frac{\Delta y_k}{\Delta x}\right)^2} \Delta x</mrow>
+      </md>
+      This looks better! We have <m>\Delta x</m> floating around at the end of our sum, ready to turn into <m>dx</m> once we apply the limit as <m>n\to\infty</m>.
+    </p>
+    <p>
+      The inside of our root, though, is still a bit messed up. We would like a single function of <m>x_k^*</m>, any <m>x</m>-value from the <m>k</m>th subinterval. Instead, we have a function involving the two <m>x</m>-values of the end points <em>and</em> we still have <m>\Delta x</m> involved in this part!
+    </p>
+    <p>
+      But we can notice something about <m>\frac{\Delta y_k}{\Delta x}</m>: it really is the slope of the straight line! Can we use a function to represent this? We can <em>absolutely</em> approximate this slope using a function: the derivative!
+    </p>
+    <figure xml:id="fig-ArcLength-3">
+      <caption></caption>
+      <image source="./ApplicationsIntegrals/ArcLength-3.png" width="80%">
+        <shortdescription>A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k. There is a green point on the subinterval labeled (x_k^*, f(x_k^*)) with a tangent line formed in green. It runs almost parallel to the dashed line.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      If we pick some point, <m>(x_k^*, f(x_k^*))</m>, on the <m>k</m>th subinterval, then we can approximate <m>\frac{\Delta y_k}{\Delta x}</m> with <m>f'(x_k^*)</m>. This is a fine approximation of this slope (and the <xref ref="thm-MVT" text="title"/> guarantees that there is a point on the subinterval where <m>f'(x_k^*) = \frac{\Delta y_k}{\Delta x}</m> exactly), but the real magic will happen when <m>n\to\infty</m>. The definition of the <xref ref="def-DerivativeAtPoint" text="title"/> will make sure that these slopes are equal in the limit!
+    </p>
+    <p>
+      Let's return to our slice-and-sum process.
+      <md>
+        <mrow>\ell \amp \approx \sum_{k=1}^n \sqrt{1+\left(\frac{\Delta y_k}{\Delta x}\right)^2} \Delta x </mrow>
+        <mrow> \amp \approx \sum_{k=1}^n \sqrt{1+(f'(x_k^*))^2}\Delta x</mrow>
+      </md>
+      This <em>is</em> a Riemann sum! We can apply a limit and get an integral!
+      <md>
+        <mrow>\ell \amp \approx \sum_{k=1}^n \sqrt{1+(f'(x_k^*))^2}\Delta x</mrow>
+        <mrow>\ell \amp = \lim_{n\to\infty}\sum_{k=1}^n \sqrt{1+(f'(x_k^*))^2}\Delta x</mrow>
+        <mrow> \amp = \int_{x=a}^{x=b} \sqrt{1+(f'(x))^2}\;dx</mrow>
+      </md>
     </p>
   </subsection>
   <subsection xml:id="subsec-SurfaceArea">
