@@ -1,0 +1,121 @@
+<!-- https://doenet.org/portfolioeditor/_yxGZDGywLrK7Wr2arUQM4/_P7cM8lJpzslwz6tSJXzC8 -->
+
+<setup>
+  <!-- Styles -->
+  <styleDefinitions>
+    <styleDefinition styleNumber="1" lineWidth="3"/>
+    <styleDefinition styleNumber="2" markerStyle="circle" lineWidth="3"/>
+    <styleDefinition styleNumber="3" markerStyle="circle" lineWidth="3"/>
+    <styleDefinition styleNumber="5" lineWidth="3"/>
+  </styleDefinitions> 
+  <!-- Functions -->
+  <function name="f">2*(x-2)^3</function>
+  <function name="g" styleNumber="2">sqrt(2-x)</function>
+  <function name="y" styleNumber="3">2</function>
+  <function name="top" domain="[-2,3]">2</function>
+  <piecewiseFunction name="bottom" symbolic="false">
+    <function domain="[-2,2]">$g</function>
+    <function domain="(2,3]">$f</function>
+  </piecewiseFunction>
+  <function name="right" domain="[2,3]">2*(x-2)^3</function>
+  <function name="left" domain="[-2, 2]">sqrt(-x+2)</function>
+  <!-- dx -->
+  <point name="Px" styleNumber="3">(1,2)
+    <constraints>
+      <constrainTo>
+        $top
+      </constrainTo>
+    </constraints>
+  </point>
+  <conditionalContent name="xStyle">
+    <case condition="$Px.x <= 2">
+      2
+    </case>
+    <case condition="$Px.x > 2">
+      1
+    </case>
+  </conditionalContent>
+  <point name="Qx" styleNumber="$xStyle">($Px.x, $$bottom($Px.x))</point>
+  <!-- dy -->
+  <point name="Py" styleNumber="1">(2.7, 0.686)
+    <constraints>
+      <constrainTo>
+        $right
+      </constrainTo>
+    </constraints>
+  </point>
+  <point name="Qy" styleNumber="2">(2-($Py.y)^2, $Py.y)</point>
+  <!-- Misc -->
+  <number name="base" fixed>0</number>
+</setup>
+
+<p><em>Instructions:</em> Consider the solid formed when the region bounded between the curves <m>y=2(x-2)^3</m> and <m>y=\sqrt{2-x}</m> and the line <m>y=2</m> is revolved around the <m>x</m>-axis. Select the type of rectangle you would like to visualize, and then drag the rectangle through the region to investigate the rectangle's boundaries.</p>
+<p> Rectangle orientation:
+<choiceInput name="dx">
+  <choice preSelect><m>\Delta x</m></choice>
+  <choice><m>\Delta y</m></choice>
+</choiceInput>
+</p>
+
+<graph xmin="-3" xmax="4" ymin="-1" ymax="3" identicalAxisScales fixAxes>
+  $f
+  $g
+  $y
+  <conditionalContent>
+    <case condition="$_choice1.selected">
+      $Px
+      $Qx
+      <vector styleNumber="3" 
+        head="($Px.x-0.3, $Px.y)" tail="($Px.x-0.3, $base)"/>
+      <vector styleNumber="$xStyle" 
+        head="($Qx.x+0.3, $Qx.y)" tail="($Qx.x+0.3, $base)"/>
+      <rectangle vertices="($Px.x-0.2, $Px.y) ($Qx.x+0.2, $Qx.y)"
+        styleNumber="6" filled/>
+      <label anchor="($Qx.x, $Qx.y-0.2)"><m>\Delta x</m></label>
+    </case>
+    <case condition="$_choice2.selected">
+      $Py
+      $Qy
+      <vector stylenumber="5"
+        head="(2, $Py.y)" tail="(2, $base)" draggable="false"/>
+      <rectangle vertices="($Py.x, $Py.y-0.2) ($Qy.x, $Qy.y+0.2)"
+        styleNumber="6" filled/>
+      <label anchor="($Py.x+0.25, $Py.y)"><m>\Delta y</m></label>
+    </case>
+  </conditionalContent>
+</graph>
+<!-- Summary -->
+<conditionalContent>
+  <case condition="$_choice1.selected">
+    <p>The curve defining the top edge of the rectangle is: <m>y=$top</m>.</p>
+    <p>The curve defining the bottom edge of the rectangle is: <m>y=<conditionalContent>
+    <case condition="$Px.x <= 2">$g</case>
+    <case condition="$Px.x >2">$f</case>
+    </conditionalContent></m>.</p>
+  </case>
+  <case condition="$_choice2.selected">
+    <p>The curve defining the right edge of the rectangle is: <m>x=\sqrt[3]{\frac{y}{2}}+2</m>.</p>
+    <p>The curve defining the left edge of the rectangle is: <m>x=2-y^2</m>.</p>
+  </case>
+</conditionalContent>
+
+<aside>
+  <title>Reveal the integral expression for the volume of this solid.</title>
+  <conditionalContent>
+    <case condition="$_choice1.selected">
+      <p>
+        The outer radius of the washer is defined by <m>y=2</m>, while the inner radius changes from <m>y=\sqrt{2-x}</m> to <m>y=2(x-2)^3</m> at <m>x=2</m>.
+        <md>
+          <mrow> V \amp = \pi \int_{x=-2}^{x=2}\left((2)^2 - (\sqrt{2-x})^2\right)\;dx</mrow>
+          <mrow> \amp + \pi \int_{x=2}^{x=3}\left((2)^2 - (2(x-2)^3)^2\right)\;dx</mrow>
+        </md>
+      </p>
+    </case>
+    <case condition="$_choice2.selected">
+      <p>
+        The radius of the shell is <m>y</m>, while the length of the cylinder is the difference between <m>x=\sqrt[3]{\frac{y}{2}}+2</m> and <m>x=2-y^2</m>.
+        <me>V = 2\pi\int_{y=0}^{y=2} y\left(\left(\sqrt[3]{\frac{y}{2}}+2\right) - \left(2-y^2\right)\right)\;dy</me>
+      </p>
+    </case>
+  </conditionalContent>
+</aside>

@@ -258,5 +258,15 @@
     </p>
     <xi:include href="./activities/act-VolumesShells.ptx" />
   </subsection>
+  <conclusion>
+    <p>
+      To finish things up, let's look at another interactive graph (similar to how we ended <xref ref="sec-AreaBetweenCurves" text="type-global-title"/>) that can help show the differences between finding volume with regard to <m>x</m> (using <m>\Delta x</m> in our rectangles and <m>dx</m> in our integrals) and finding volume with regard to <m>y</m> (using <m>\Delta y</m> in our rectangles and <m>dy</m> in our integrals), and how this choice changes our method from washers to shells depending on the axis of revolution.
+    </p>
+    <interactive platform="doenetml" width="95%" aspect="1:1.62">
+      <slate surface="doenetml">
+        <xi:include parse="text" href="./doenet/dxVdyVolume.xml"/>
+      </slate>
+    </interactive>
+  </conclusion>
   <xi:include href="./exercises/ex-Volumes.ptx" />
 </section>

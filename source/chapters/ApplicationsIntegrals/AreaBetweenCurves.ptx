@@ -183,5 +183,15 @@
             These are some of the things we'll consider as we make these decisions.
         </p>
     </subsection>
+    <conclusion>
+        <p>
+            To finish things up, let's look at a nice little interactive graph that can help show the differences between finding area with regard to <m>x</m> (using <m>\Delta x</m> in our rectangles and <m>dx</m> in our integrals) and finding area with regard to <m>y</m> (using <m>\Delta y</m> in our rectangles and <m>dy</m> in our integrals).
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:1.4">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="./doenet/dxVdyArea.xml"/>
+            </slate>
+        </interactive>
+    </conclusion>
     <xi:include href="./exercises/ex-AreaBetweenCurves.ptx" />
 </section>

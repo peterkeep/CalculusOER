@@ -25,6 +25,17 @@
   </subsection>
   <subsection xml:id="subsec-FormalizingTheChanges">
     <title>Formalizing These Changes in the Washers and Shells</title>
+    <p>
+      We can look at yet another interactive graph (similar to how we ended <xref ref="sec-AreaBetweenCurves" text="type-global-title"/> and <xref ref="sec-VolumesOfRevolution" text="type-global-title"/>). This time, we'll think about how our axis of revolution as well as our choice of rectangle orientation impacts how we construct the washers or shells.
+    </p>
+    <interactive platform="doenetml" width="95%" aspect="1:1.95">
+      <slate surface="doenetml">
+        <xi:include parse="text" href="./doenet/dxVdyVolumeShifted.xml"/>
+      </slate>
+    </interactive>
+    <p>
+      Notice that in each case, we're re-measuring the radius! Whether we're measuring the radii of a washer by thinking about how far the function outputs are away from the axis of revolution or if we're measuring the radius of a shell by thinking about how far the input variable is away from the axis of revolution, we need to rethink this and do some subtraction.
+    </p>
     <xi:include href="./activities/act-ShiftedAxes.ptx" />
   </subsection>
   <xi:include href="./exercises/ex-MoreVolumes.ptx" />
