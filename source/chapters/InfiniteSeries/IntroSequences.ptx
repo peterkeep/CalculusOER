@@ -95,7 +95,24 @@
         <ul>
             <li>
                 <p>
-                    Notes about recursion and explicit formulas
+                    When we add something recursively (where we add the same thing repetitively to get from the <m>n</m>th term to the <m>(n+1)</m>st term), this is the same thing as multiplication in an explicit formula!
+                    <me>
+                        \underbrace{3 + 3 + ... + 3}_{n \text{ times}} = 3n
+                    </me>
+                </p>
+            </li>
+            <li>
+                <p>
+                    Similarly, when we multiply something recursively, we can think about this as an exponential in the explicit formula!
+                    <me>
+                        \underbrace{3\cdot 3 \cdot 3 \cdots 3}_{n \text{ times}} = 3^n
+                    </me>
+                    
+                </p>
+            </li>
+            <li>
+                <p>
+                    In general, it can be pretty difficult to find either of these formulas for a given sequence of numbers. In fact, in any sequence where only the first few terms are given, we can find an infinite number of formulas that provide those first few terms and then deviate on to any other numbers. We cannot easily extrapolate onto only one "pattern" or formula. Because of this, we'll try to limit our work as much as we can to situations where we have the formula defining the sequences.
                 </p>
             </li>
         </ul>
@@ -113,7 +130,33 @@
             The only new feature, then, is that these functions have only non-negative integer inputs. So when we plot the points, we do not get some nice curve acting as a visual representation of the function: we get discrete points floating on the 2-dimensional plane, each with some consistent horizontal spacing between them.
         </p>
         <p>
-            Graph comparison.
+            Consider, for example the following function and sequence:
+            <me>
+                f(x)= \frac{x}{x^2+1} \text{ for } x\geq 0
+            </me>
+            and
+            <me>
+                a_n = \frac{n}{n^2+1} \text{ for } n = 0, 1, 2, ...
+            </me>
+            We can graph the curve <m>y=f(x)</m> in the normal way, as a smooth curve starting at the point at <m>x=0</m>.       
+        </p>
+        <figure xml:id="fig-FunctionSequence-1">
+            <caption>The function <m>f(x)=\dfrac{x}{x^2+1}</m> plotted on the interval <m>[0,\infty)</m>.</caption>
+            <image source="./InfiniteSeries/FunctionSequence-1.png" width="80%">
+                <shortdescription>A green curve, starting at (0,0) and increasing until a point at y=1 and then decreasing towards the x-axis asymptotically.</shortdescription>
+            </image>
+        </figure>
+        <p>
+            When we plot the sequence <m>\left\{a_n\right\}</m>, though, we will visualize just the points on <m>f(x)</m> at non-negative integer inputs.
+        </p>
+        <figure xml:id="fig-FunctionSequence-2">
+            <caption>The sequence <m>\{a_n\}_{n=0}^{\infty}</m> for <m>a_n = \dfrac{n}{n^2+1}</m></caption>
+            <image source="./InfiniteSeries/FunctionSequence-2.png" width="80%">
+                <shortdescription>A barely visible plot of the same green curve, but with points at x=0, x=1, ..., x=10 highlighted.</shortdescription>
+            </image>
+        </figure>
+        <p>
+            We will typically not plot these with the smooth curve of the correesponding continuous function plotted, but in this first example it is useful to highlight how we think about this sequence as a function.
         </p>
         <p>
             Let's continue to think about these sequences as just functions in a special kind of context. How does this discrete context change how we talk about functions and what kinds of terminology we use?
@@ -169,6 +212,12 @@
                 </p>
             </statement>
         </definition>
+        <p>
+            A good example of a sequence that is eventually decreasing is the one we plotted in <xref ref="fig-FunctionSequence-2"/>. We can see that the sequence increases from <m>n=0</m> to <m>n=1</m> (since <m>a_0\lt a_1</m>), but then decreases after that.
+        </p>
+        <p>
+            We could think about the corresponding continuous function (the one plotted in <xref ref="fig-FunctionSequence-2"/>) and find the point at which our function starts decreasing: we just need to refer back to <xref ref="thm-FirstDerivativeTest" text="type-global-title"/> to find the interval(s) for which <m>f(x)=\dfrac{x}{x^2+1}</m> decreases.
+        </p>
         <definition xml:id="def-Monotonic">
         <title>Monotonic Sequences</title>
             <statement>
@@ -177,6 +226,9 @@
                 </p>
             </statement>
         </definition>
+        <p>
+            We can, again, include a little modifier to talk about a sequence being <term>eventually monotonic</term>.
+        </p>
         <definition xml:id="def-Bounded">
         <title>Bounded Sequences</title>
             <statement>
@@ -191,6 +243,9 @@
                 </p>
             </statement>
         </definition>
+        <p>
+            
+        </p>
         <p>
             Lastly, we'll focus on the end-behavior of a sequence. We'll think about convergence of a sequence in the same way that we did for <xref ref="sec-ImproperIntegrals" text="title"/>: does the limit exist?
         </p>

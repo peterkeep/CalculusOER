@@ -142,12 +142,156 @@
         <mrow> \amp = \int_{x=a}^{x=b} \sqrt{1+(f'(x))^2}\;dx</mrow>
       </md>
     </p>
+    <definition xml:id="def-ArcLength">
+      <title>Length of a Curve</title>
+      <statement>
+        <p>
+          If <m>f(x)</m> is continuous on the interval <m>[a,b]</m> and differentiable on <m>(a,b)</m>, then the length of the curve <m>y=f(x)</m> from <m>x=a</m> to <m>x=b</m> is:
+          <me>
+            \int_{x=a}^{x=b}\sqrt{1+(f'(x))^2}\;dx
+          </me>.
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <introduction>
+        <p>
+          Find an integral expression representing the length of the following curves.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            The curve <m>y=\dfrac{1}{x}</m> from <m>x=1</m> to <m>x=2</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since <m>y'=-\dfrac{1}{x^2}</m>, then we can construct the following integral:
+            <md>
+              <mrow>\ell \amp = \int_{x=1}^{x=2}\sqrt{1+(y')^2}\;dx</mrow>
+              <mrow> \amp = \int_{x=1}^{x=2} \sqrt{1+\left(-\frac{1}{x^2}\right)^2}\;dx</mrow>
+              <mrow> \amp = \int_{x=1}^{x=2}\sqrt{1+\frac{1}{x^4}}\;dx</mrow>
+            </md>
+            Instead of worrying about actually evaluating this integral, we'll leave it like this.
+          </p>
+          <p>
+            If you do want to fiddle with this integral, than it might be helpful to note that we can re-write it:
+            <md>
+              <mrow> \int_{x=1}^{x=2}\sqrt{1+\frac{1}{x^4}}\;dx \amp = \int_{x=1}^{x=2}\sqrt{\frac{x^4+1}{x^4}}\;dx </mrow>
+              <mrow> \amp = \int_{x=1}^{x=2} \frac{\sqrt{1+x^4}}{x^2}\;dx</mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            The curve <m>y=\sin^{-1}(x)</m> from <m>x=-1</m> to <m>x=1</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We know that <m>y'=\dfrac{1}{\sqrt{1-x^2}}</m>, so we can construct the following integral:
+            <md>
+              <mrow>\ell \amp = \int_{x=-1}^{x=1} \sqrt{1+\left(\frac{1}{\sqrt{1-x^2}}\right)^2}\;dx</mrow>
+              <mrow> \amp = \int_{x=-1}^{x=1} \sqrt{1+\frac{1}{1-x^2}}\;dx</mrow>
+            </md>
+            We can leave this integral like this for now.
+          </p>
+          <p>
+            Similar to the first example, though, we can re-write this if you'd like to explore it more!
+            <md>
+              <mrow> \int_{x=-1}^{x=1} \sqrt{1+\frac{1}{1-x^2}}\;dx \amp = \int_{x=-1}^{x=1} \sqrt{\frac{2-x^2}{1-x^2}}\;dx</mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </example>
   </subsection>
   <subsection xml:id="subsec-SurfaceArea">
     <title>Integrals for Evaluating the Surface Area of a Solid</title>
     <p>
-      
+      Moving from the length of some curve towards calculating the surface area of some solid of revolution won't be hard: we'll use the length formula in our procedure!
     </p>
+    <p>
+      Let's build this surface area formula. Consider some function, <m>f(x)</m>, on the interval from <m>x=a</m> to <m>x=b</m>.
+    </p>
+    <figure xml:id="fig-SurfaceArea-1">
+      <caption></caption>
+      <image source="./ApplicationsIntegrals/SurfaceArea-1.png" width="80%">
+        <shortdescription>A blue curve labeled f(x) spanning from a point at x=a to a point at x=b. The curve is above the x-axis.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      Instead of forming a rectangle for the <m>k</m>th slice, we'll do the same thing that we did for arc length: we'll connect the end points of the <m>k</m>th subinterval. This will create a trapezoid.
+    </p>
+    <figure xml:id="fig-SurfaceArea-2">
+      <caption></caption>
+      <image source="./ApplicationsIntegrals/SurfaceArea-2.png" width="80%">
+        <shortdescription>The same blue curve f(x). There are two more points along the curve connected by a straight line, and a shaded in trapezoid spanning from the diagonal line to the x-axis. The diagonal line of the trapezoid is labeled l_k, while the bottom spans from x_k to x_(k+1) and is labeled Delta x.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      We'll use <m>\ell_k</m> to represent the diagonal length of the line connecting the endpoints. Notice that this is going to become the arc length.
+    </p>
+    <p>
+      When we revolve the curve <m>y=f(x)</m> around the <m>x</m>-axis, we can see not just the solid created by the curve, but the solid representing this <m>k</m>th slice.
+    </p>
+    <sidebyside widths="65% 30%">
+      <figure xml:id="fig-SurfaceArea-3">
+      <caption></caption>
+      <image source="./ApplicationsIntegrals/SurfaceArea-3.png">
+        <shortdescription>A vase-like shape formed by the blue curve f(x) being revolved around the x-axis. The trapezoid is still pictured, and we can see the circular curves formed when it revolves around the x-axis. It creates a slice that looks like a trapezoidal-cylinder type shape.</shortdescription>
+      </image>
+    </figure>
+    <figure xml:id="fig-SurfaceArea-4">
+      <caption>The <m>k</m>th frustum-shaped slice.</caption>
+      <image source="./ApplicationsIntegrals/SurfaceArea-4.png">
+        <shortdescription>The kth slice, looking like a trapezoidal-cylinder type shape, with the radius on one side bigger than the other.</shortdescription>
+      </image>
+    </figure>
+    </sidebyside>
+    <p>
+      In order for us to find the surface area of this <m>k</m>th slice, we'll think about how "far" the diagonal line revolves. This is based on the circumference of each circular end of our slice, which means we have two radii to consider: the function outputs at both endpoints of the <m>k</m>th subinterval:
+      <me>
+        A_k = 2\pi\left(\frac{f(x_k)+f(x_{k+1})}{2}\right)\ell_k
+      </me>
+      This is going to become problematic, since we need only one function output evaluated at some <m>x_k^*</m> on the <m>k</m>th subinterval.
+    </p>
+    <p>
+      Instead, we can select some <m>x</m>-value on the interval and use the function output at that point to represent the radius of our <m>k</m>th slice.
+    </p>
+    <figure xml:id="fig-SurfaceArea-5">
+      <caption></caption>
+      <image source="./ApplicationsIntegrals/SurfaceArea-5.png" width="80%">
+        <shortdescription>The solid formed by f(x) being revolved around, and the kth slice visualized. There is also a green arrow pointing from the x-axis to a point on the kth interval labeled (x_k^*, f(x_k^*)) acting as a radius of the sliced solid.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      Instead of averaging the large and small radii from the end-points, we'll just select the one function output to represent this "average" radius. In the limit as <m>n\to\infty</m>, things will work out, since this randomly selected radius will become exactly equal the average radius in the limit since <m>\Delta x\to 0</m>.
+    </p>
+    <p>
+      Now we can slice and sum!
+      <md>
+        <mrow>A_k \amp = 2\pi f(x_k^*)\ell_k </mrow>
+        <mrow> \amp = 2\pi f(x_k^*) \sqrt{1+(f'(x_k^*))^2}\Delta x</mrow>
+        <mrow>A \amp \approx \sum_{k=1}^n 2\pi f(x_k^*) \sqrt{1+(f'(x_k^*))^2}\Delta x</mrow>
+        <mrow>A \amp = \lim_{n\to\infty} \sum_{k=1}^n 2\pi f(x_k^*) \sqrt{1+(f'(x_k^*))^2}\Delta x</mrow>
+        <mrow> \amp = \int_{x=a}^{x=b} 2\pi f(x)\sqrt{1+(f'(x))^2}\;dx</mrow>
+      </md>
+    </p>
+    <definition xml:id="def-SurfaceArea">
+      <title>Surface Area</title>
+      <statement>
+        <p>
+          Let <m>f(x)</m> is continuous with <m>f(x)\geq 0</m> on the interval <m>[a,b]</m> and differentiable on <m>(a,b)</m>. If the region bounded by <m>f(x)</m> and the <m>x</m>-axis from <m>x=a</m> to <m>x=b</m> is revolved around the <m>x</m>-axis, then the surface area of the resulting solid is:
+          <me>
+            A = 2\pi\int_{x=a}^{x=b} f(x)\sqrt{1+(f'(x))^2}\;dx
+          </me>.
+        </p>
+      </statement>
+    </definition>
   </subsection>
 
 </section>
