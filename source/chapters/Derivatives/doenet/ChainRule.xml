@@ -1,0 +1,48 @@
+<setup>
+    <!-- Styles -->
+  <styleDefinitions>
+    <styleDefinition styleNumber="1" lineWidth="3" textColor="#92B0FF"/>
+    <styleDefinition styleNumber="2" markerStyle="circle" lineWidth="3"/>
+    <styleDefinition styleNumber="3" markerStyle="circle" lineWidth="3"/>
+    <styleDefinition styleNumber="5" lineWidth="3"/>
+  </styleDefinitions>
+  <number name="t">1</number>
+  <circle center="(-4,0)" radius="3" name="GearA" draggable="false" styleNumber="1"/>
+  <circle center="(0,0)" radius="1" name="GearB" draggable="false" styleNumber="2"/>
+  <circle center="(3,0)" radius="2" name="GearC" draggable="false" styleNumber="3"/>
+  <animateFromSequence name="tAnimate" target="t" prop="value" from="0" to="4*pi" step="0.05" animationInterval="10" animationMode="increase" animationOn/>
+  <!-- Steps -->
+</setup>
+
+
+<conditionalContent>
+  <case condition="$hide=false">
+<graph displayXAxis="false" displayYAxis="false" xmin="-8" xmax="6" ymin="-4" ymax="4" identicalAxisScales="true" fixAxes showBorder="false">
+  $GearA
+  <point styleNumber="1">(3cos($t)-4, -3sin($t))</point>
+  $GearB
+  <point styleNumber="2">(-cos(3$t), -sin(3$t))</point>
+  $GearC
+  <point styleNumber="3">(2cos(1.5$t+pi/2)+3, -2sin(1.5$t+pi/2))</point>
+
+  <label styleNumber="1" anchor="(-4,3.5)" draggable="false">Gear A</label>
+  <label styleNumber="2" anchor="(0,1.5)" draggable="false">Gear B</label>
+  <label styleNumber="3" anchor="(3,2.5)" draggable="false">Gear C</label>
+</graph>
+  </case></conditionalContent>
+
+
+
+<booleanInput name="hide" asToggleButton>
+  <label>
+    <conditionalContent>
+      <case condition="$hide=false">
+        Hide the gears!
+      </case>
+      <case condition="$hide=true">
+        Go back!
+      </case>
+    </conditionalContent>
+  </label>
+</booleanInput>
+
