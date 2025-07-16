@@ -6,14 +6,19 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>The Divergence Test and the Harmonic Series</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="book:title" content="Discover Calculus">
-<meta property="book:author" content="Peter Keep">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -69,13 +74,12 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Discover Calculus">
+<meta property="book:author" content="Peter Keep">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -106,10 +110,12 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.a99e275a1e410b98.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.58623b9a3097f5e4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
-<h1 class="heading"><a href="DiscoverCalculus.html"><span class="title">Discover Calculus:</span> <span class="subtitle">Single-Variable Calculus Topics with Motivating Activities</span></a></h1>
+<h1 class="heading"><a href="DiscoverCalculus.html"><span class="title">Discover Calculus</span> <span class="subtitle">Single-Variable Calculus Topics with Motivating Activities</span></a></h1>
 <p class="byline">Peter Keep</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
@@ -595,8 +601,10 @@ eBookConfig.enable_chatcodes =  false;
 <section class="subsection" id="subsec-RelationshipSeqSeries"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.3.1</span><span class="space"> </span><span class="title">The Relationship Between a Sequence and Series</span>
 </h3>
-<div class="para" id="subsec-RelationshipSeqSeries-2">We have looked at both infinite sequences and infinite series so far, and, to make things complicated, we’re really thinking about an infinite series (of terms from an infinite sequence) as an infinite sequence (of partial sums of the series). We’ve looked at how to visualize these (in both <a href="sec-IntroSequences.html#subsec-GraphingSequences" class="internal" title="Subsection 8.1.2: Graphing Sequences">Subsection 8.1.2</a> and <a href="sec-IntroSeries.html#subsec-VisualizingPartialSums" class="internal" title="Subsection 8.2.2: Visualizing the Sequence of Partial Sums">Subsection 8.2.2</a>).</div>
-<div class="para" id="subsec-RelationshipSeqSeries-3">Let’s first start with defining a new series. This is a relatively important one by itself (it <em class="emphasis">does</em> have its own name), but it’s mostly an important series because it leads us into some new and interesting ways of thinking about series in general.</div>
+<div class="para" id="subsec-RelationshipSeqSeries-2">We have looked at both infinite sequences and infinite series so far, and, to make things complicated, we’re really thinking about an infinite series (of terms from an infinite sequence) as an infinite sequence (of partial sums of the series). We’ve looked at how to visualize these (in both <a href="sec-IntroSequences.html#subsec-GraphingSequences" class="internal" title="Subsection 8.1.2: Graphing Sequences">Subsection 8.1.2</a> and <a href="sec-IntroSeries.html#subsec-VisualizingPartialSums" class="internal" title="Subsection 8.2.2: Visualizing the Sequence of Partial Sums">Subsection 8.2.2</a>).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RelationshipSeqSeries-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RelationshipSeqSeries-3">Let’s first start with defining a new series. This is a relatively important one by itself (it <em class="emphasis">does</em> have its own name), but it’s mostly an important series because it leads us into some new and interesting ways of thinking about series in general.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RelationshipSeqSeries-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-HarmonicSeries"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Harmonic Series.</span>
 </h4>
@@ -608,50 +616,85 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">the <dfn class="terminology">Harmonic Series</dfn>.</div>
-</div></article><article class="activity project-like" id="act-HarmonicSeries"><h4 class="heading">
+<div class="autopermalink" data-description="Paragraph"><a href="#def-HarmonicSeries-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 8.3.1: Harmonic Series"><a href="#def-HarmonicSeries" title="Copy heading and permalink for Definition 8.3.1: Harmonic Series" aria-label="Copy heading and permalink for Definition 8.3.1: Harmonic Series">🔗</a></div></article><article class="activity project-like" id="act-HarmonicSeries"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Investigating the Harmonic Series.</span>
 </h4>
 <article class="task exercise-like" id="act-HarmonicSeries-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-HarmonicSeries-2-1-1">Write out the first several terms of the harmonic series, terms from <span class="process-math">\(\left\{\frac{1}{k}\right\}_{k=1}^\infty\text{.}\)</span> Write however many you need to get a feel for how the terms work.</div></article><article class="task exercise-like" id="act-HarmonicSeries-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-HarmonicSeries-3-1-1">Can you find out how many terms you would have to go "into" the series before the term was less than 0.00000001?</div>
-<div class="solutions"><details id="act-HarmonicSeries-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-HarmonicSeries-3-2-1">When is <span class="process-math">\(\frac{1}{k}\lt \frac{1}{10^8}\text{?}\)</span>
-</div></div></details></div></article><article class="task exercise-like" id="act-HarmonicSeries-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="act-HarmonicSeries-4-1-1">Can you do this same kind of thing, no matter how small? For instance, how many terms would you have to go into the series before the term was less than some real number <span class="process-math">\(\varepsilon\)</span> where <span class="process-math">\(\varepsilon\gt 0\text{?}\)</span>
+<div class="para" id="act-HarmonicSeries-2-1-1">Write out the first several terms of the harmonic series, terms from <span class="process-math">\(\left\{\frac{1}{k}\right\}_{k=1}^\infty\text{.}\)</span> Write however many you need to get a feel for how the terms work.<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="act-HarmonicSeries-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="act-HarmonicSeries-4-2-1">When is <span class="process-math">\(\frac{1}{k}\lt \varepsilon\text{?}\)</span>
-</div></div></details></div></article><article class="task exercise-like" id="act-HarmonicSeries-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-HarmonicSeries-5-1-1">Remind/explain/convince yourself that what we’ve really done is show that <span class="process-math">\(\lim_{k\to\infty}\frac{1}{k} =0\text{.}\)</span> This isn’t a new or terribly interesting fact, but make sure that you understand why the argument above shows this.</div></article><article class="task exercise-like" id="act-HarmonicSeries-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="act-HarmonicSeries-6-1-1">Let’s do something very similar, but with <span class="process-math">\(\left\{\sum_{k=1}^n \frac{1}{k}\right\}_{n=1}^\infty\text{,}\)</span> the sequence of partial sums, instead. Write out the first few partial sums. There’s no specific number that you <em class="emphasis">need</em> to write, but make sure to write enough partial sums to get a feel for how the partial sums work.</div></article><article class="task exercise-like" id="act-HarmonicSeries-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="act-HarmonicSeries-7-1-1">Can you find out how many terms you need to add up until the partial sum is larger than 1?</div>
-<div class="solutions"><details id="act-HarmonicSeries-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-HarmonicSeries-7-2-1">
+<div class="autopermalink" data-description="Task 8.3.1.a"><a href="#act-HarmonicSeries-2" title="Copy heading and permalink for Task 8.3.1.a" aria-label="Copy heading and permalink for Task 8.3.1.a">🔗</a></div></article><article class="task exercise-like" id="act-HarmonicSeries-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-HarmonicSeries-3-1-1">Can you find out how many terms you would have to go "into" the series before the term was less than 0.00000001?<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-HarmonicSeries-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-HarmonicSeries-3-2-1">When is <span class="process-math">\(\frac{1}{k}\lt \frac{1}{10^8}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.3.1.b.1"><a href="#act-HarmonicSeries-3-2" title="Copy heading and permalink for Hint 8.3.1.b.1" aria-label="Copy heading and permalink for Hint 8.3.1.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 8.3.1.b"><a href="#act-HarmonicSeries-3" title="Copy heading and permalink for Task 8.3.1.b" aria-label="Copy heading and permalink for Task 8.3.1.b">🔗</a></div></article><article class="task exercise-like" id="act-HarmonicSeries-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-HarmonicSeries-4-1-1">Can you do this same kind of thing, no matter how small? For instance, how many terms would you have to go into the series before the term was less than some real number <span class="process-math">\(\varepsilon\)</span> where <span class="process-math">\(\varepsilon\gt 0\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-HarmonicSeries-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-HarmonicSeries-4-2-1">When is <span class="process-math">\(\frac{1}{k}\lt \varepsilon\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.3.1.c.1"><a href="#act-HarmonicSeries-4-2" title="Copy heading and permalink for Hint 8.3.1.c.1" aria-label="Copy heading and permalink for Hint 8.3.1.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 8.3.1.c"><a href="#act-HarmonicSeries-4" title="Copy heading and permalink for Task 8.3.1.c" aria-label="Copy heading and permalink for Task 8.3.1.c">🔗</a></div></article><article class="task exercise-like" id="act-HarmonicSeries-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-HarmonicSeries-5-1-1">Remind/explain/convince yourself that what we’ve really done is show that <span class="process-math">\(\lim_{k\to\infty}\frac{1}{k} =0\text{.}\)</span> This isn’t a new or terribly interesting fact, but make sure that you understand why the argument above shows this.<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 8.3.1.d"><a href="#act-HarmonicSeries-5" title="Copy heading and permalink for Task 8.3.1.d" aria-label="Copy heading and permalink for Task 8.3.1.d">🔗</a></div></article><article class="task exercise-like" id="act-HarmonicSeries-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-HarmonicSeries-6-1-1">Let’s do something very similar, but with <span class="process-math">\(\left\{\sum_{k=1}^n \frac{1}{k}\right\}_{n=1}^\infty\text{,}\)</span> the sequence of partial sums, instead. Write out the first few partial sums. There’s no specific number that you <em class="emphasis">need</em> to write, but make sure to write enough partial sums to get a feel for how the partial sums work.<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 8.3.1.e"><a href="#act-HarmonicSeries-6" title="Copy heading and permalink for Task 8.3.1.e" aria-label="Copy heading and permalink for Task 8.3.1.e">🔗</a></div></article><article class="task exercise-like" id="act-HarmonicSeries-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-HarmonicSeries-7-1-1">Can you find out how many terms you need to add up until the partial sum is larger than 1?<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-HarmonicSeries-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para logical" id="act-HarmonicSeries-7-2-1">
 <div class="para">Find a value for <span class="process-math">\(n\)</span> to give</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \sum_{k=1}^n \frac{1}{k} \gt 1\text{.}
 \end{equation*}
 </div>
-</div></div></details></div></article><article class="task exercise-like" id="act-HarmonicSeries-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
-<div class="para" id="act-HarmonicSeries-8-1-1">Can you find out how many terms you need to add up until the partial sum is larger than 5?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.3.1.f.1"><a href="#act-HarmonicSeries-7-2" title="Copy heading and permalink for Hint 8.3.1.f.1" aria-label="Copy heading and permalink for Hint 8.3.1.f.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 8.3.1.f"><a href="#act-HarmonicSeries-7" title="Copy heading and permalink for Task 8.3.1.f" aria-label="Copy heading and permalink for Task 8.3.1.f">🔗</a></div></article><article class="task exercise-like" id="act-HarmonicSeries-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para" id="act-HarmonicSeries-8-1-1">Can you find out how many terms you need to add up until the partial sum is larger than 5?<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="solutions">
-<details id="act-HarmonicSeries-8-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-HarmonicSeries-8-2-1">
+<details id="act-HarmonicSeries-8-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para logical" id="act-HarmonicSeries-8-2-1">
 <div class="para">Find a value for <span class="process-math">\(n\)</span> to give</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \sum_{k=1}^n \frac{1}{k} \gt 5\text{.}
 \end{equation*}
 </div>
-</div></div></details><details id="act-HarmonicSeries-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-HarmonicSeries-8-3-1">
+<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.3.1.g.1"><a href="#act-HarmonicSeries-8-2" title="Copy heading and permalink for Hint 8.3.1.g.1" aria-label="Copy heading and permalink for Hint 8.3.1.g.1">🔗</a></div>
+</div></details><details id="act-HarmonicSeries-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-HarmonicSeries-8-3-1">
 <div class="displaymath process-math">
 \begin{equation*}
 \sum_{k=1}^{83} \frac{1}{k} \approx 5.00207...
 \end{equation*}
 </div>
 <div class="para">This is the first partial sum greater than 5.</div>
-</div></div></details>
-</div></article><article class="task exercise-like" id="act-HarmonicSeries-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
-<div class="para" id="act-HarmonicSeries-9-1-1">Can you find out how many terms you need to add up until the partial sum is larger than 10?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.3.1.g.1"><a href="#act-HarmonicSeries-8-3" title="Copy heading and permalink for Solution 8.3.1.g.1" aria-label="Copy heading and permalink for Solution 8.3.1.g.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 8.3.1.g"><a href="#act-HarmonicSeries-8" title="Copy heading and permalink for Task 8.3.1.g" aria-label="Copy heading and permalink for Task 8.3.1.g">🔗</a></div></article><article class="task exercise-like" id="act-HarmonicSeries-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="para" id="act-HarmonicSeries-9-1-1">Can you find out how many terms you need to add up until the partial sum is larger than 10?<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="solutions">
-<details id="act-HarmonicSeries-9-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="act-HarmonicSeries-9-2-1">
+<details id="act-HarmonicSeries-9-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para logical" id="act-HarmonicSeries-9-2-1">
 <div class="para">Find a value for <span class="process-math">\(n\)</span> to give</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -659,15 +702,23 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">This will be absolutely awful to try calculating by hand! Use some piece of technology!</div>
-</div></div></details><details id="act-HarmonicSeries-9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="act-HarmonicSeries-9-3-1">
+<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.3.1.h.1"><a href="#act-HarmonicSeries-9-2" title="Copy heading and permalink for Hint 8.3.1.h.1" aria-label="Copy heading and permalink for Hint 8.3.1.h.1">🔗</a></div>
+</div></details><details id="act-HarmonicSeries-9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-HarmonicSeries-9-3-1">
 <div class="displaymath process-math">
 \begin{equation*}
 \sum_{k=1}^{12367} \frac{1}{k} \approx 10.000043...
 \end{equation*}
 </div>
 <div class="para">This is the first partial sum greater than 10.</div>
-</div></div></details>
-</div></article><article class="task exercise-like" id="act-HarmonicSeries-10"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-9-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.3.1.h.1"><a href="#act-HarmonicSeries-9-3" title="Copy heading and permalink for Solution 8.3.1.h.1" aria-label="Copy heading and permalink for Solution 8.3.1.h.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 8.3.1.h"><a href="#act-HarmonicSeries-9" title="Copy heading and permalink for Task 8.3.1.h" aria-label="Copy heading and permalink for Task 8.3.1.h">🔗</a></div></article><article class="task exercise-like" id="act-HarmonicSeries-10"><h5 class="heading"><span class="codenumber">(i)</span></h5>
 <div class="para logical" id="act-HarmonicSeries-10-1-1">
 <div class="para">Do you think that for any positive number <span class="process-math">\(S\text{,}\)</span> we can always find some partial sum <span class="process-math">\(\sum_{k=1}^n \frac{1}{k} \gt S\text{?}\)</span> What do you think this would mean about</div>
 <div class="displaymath process-math">
@@ -675,7 +726,9 @@ eBookConfig.enable_chatcodes =  false;
 \lim_{n\to\infty}S_n = \lim_{n\to\infty} \sum_{k=1}^n \frac{1}{k}\text{?}
 \end{equation*}
 </div>
-</div></article><div class="conclusion" id="act-HarmonicSeries-11">
+<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 8.3.1.i"><a href="#act-HarmonicSeries-10" title="Copy heading and permalink for Task 8.3.1.i" aria-label="Copy heading and permalink for Task 8.3.1.i">🔗</a></div></article><div class="conclusion" id="act-HarmonicSeries-11">
 <div class="para logical" id="act-HarmonicSeries-11-1">
 <div class="para">To actually show that for any <span class="process-math">\(S \gt 0\)</span> we could always find an <span class="process-math">\(n\gt 1\)</span> where</div>
 <div class="displaymath process-math">
@@ -684,13 +737,21 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">is an extremely difficult task! We will show that the Harmonic Series diverges in a different way, but for now I want us to notice these contradictory results: we have a series whose terms get small, but whose partial sums do not seem to converge.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-HarmonicSeries-11-2">We have <span class="process-math">\(\frac{1}{k}\to 0\)</span> but it seems like <span class="process-math">\(\lim_{n\to\infty} S_n\)</span> does not exist. Is this behavior special to the Harmonic Series? Is this something we should make note of? Is there some other connection between the terms of a series and the behavior of the partial sums of the series that we need to note?</div>
-</div></article><div class="para" id="subsec-RelationshipSeqSeries-6">Let’s continue to think about this strange series, but actually prove that the series itself diverges.</div>
+<div class="para" id="act-HarmonicSeries-11-2">We have <span class="process-math">\(\frac{1}{k}\to 0\)</span> but it seems like <span class="process-math">\(\lim_{n\to\infty} S_n\)</span> does not exist. Is this behavior special to the Harmonic Series? Is this something we should make note of? Is there some other connection between the terms of a series and the behavior of the partial sums of the series that we need to note?<div class="autopermalink" data-description="Paragraph"><a href="#act-HarmonicSeries-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="autopermalink" data-description="Activity 8.3.1: Investigating the Harmonic Series"><a href="#act-HarmonicSeries" title="Copy heading and permalink for Activity 8.3.1: Investigating the Harmonic Series" aria-label="Copy heading and permalink for Activity 8.3.1: Investigating the Harmonic Series">🔗</a></div></article><div class="para" id="subsec-RelationshipSeqSeries-6">Let’s continue to think about this strange series, but actually prove that the series itself diverges.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RelationshipSeqSeries-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="thm-HarmonicSeriesDiverges"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">The Harmonic Series Diverges.</span>
 </h4>
-<div class="para" id="thm-HarmonicSeriesDiverges-2-1">The <dfn class="terminology">Harmonic Series</dfn>, <span class="process-math">\(\sum_{k=1}^\infty \frac{1}{k}\text{,}\)</span> diverges.</div></article><details id="thm-HarmonicSeriesDiverges-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-HarmonicSeriesDiverges-3-1">Let’s assume, for the sake of eventual contradiction, that the harmonic series converges.</div></article></details></section><section class="subsection" id="subsec-DivergenceTest"><h3 class="heading hide-type">
+<div class="para" id="thm-HarmonicSeriesDiverges-2-1">The <dfn class="terminology">Harmonic Series</dfn>, <span class="process-math">\(\sum_{k=1}^\infty \frac{1}{k}\text{,}\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-HarmonicSeriesDiverges-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 8.3.2: The Harmonic Series Diverges"><a href="#thm-HarmonicSeriesDiverges" title="Copy heading and permalink for Theorem 8.3.2: The Harmonic Series Diverges" aria-label="Copy heading and permalink for Theorem 8.3.2: The Harmonic Series Diverges">🔗</a></div></article><details id="thm-HarmonicSeriesDiverges-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-HarmonicSeriesDiverges-3-1">Let’s assume, for the sake of eventual contradiction, that the harmonic series converges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-HarmonicSeriesDiverges-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 8.3.2.1"><a href="#thm-HarmonicSeriesDiverges-3" title="Copy heading and permalink for Proof 8.3.2.1" aria-label="Copy heading and permalink for Proof 8.3.2.1">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 8.3.1: The Relationship Between a Sequence and Series"><a href="#subsec-RelationshipSeqSeries" title="Copy heading and permalink for Subsection 8.3.1: The Relationship Between a Sequence and Series" aria-label="Copy heading and permalink for Subsection 8.3.1: The Relationship Between a Sequence and Series">🔗</a></div></section><section class="subsection" id="subsec-DivergenceTest"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.3.2</span><span class="space"> </span><span class="title">The Divergence Test</span>
 </h3>
 <article class="theorem theorem-like" id="thm-DivergenceTest"><h4 class="heading">
@@ -710,16 +771,33 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">then the infinite series <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> diverges.</div>
-</div></article><details id="thm-DivergenceTest-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-DivergenceTest-3-1"></div></article></details><article class="example example-like" id="subsec-DivergenceTest-3"><h4 class="heading">
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-DivergenceTest-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 8.3.3: Divergence Test"><a href="#thm-DivergenceTest" title="Copy heading and permalink for Theorem 8.3.3: Divergence Test" aria-label="Copy heading and permalink for Theorem 8.3.3: Divergence Test">🔗</a></div></article><details id="thm-DivergenceTest-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-DivergenceTest-3-1"><div class="autopermalink" data-description="Paragraph"><a href="#thm-DivergenceTest-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Proof 8.3.3.1"><a href="#thm-DivergenceTest-3" title="Copy heading and permalink for Proof 8.3.3.1" aria-label="Copy heading and permalink for Proof 8.3.3.1">🔗</a></div></article></details><article class="example example-like" id="subsec-DivergenceTest-3"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">8.3.4</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="subsec-DivergenceTest-3-1"><div class="para" id="subsec-DivergenceTest-3-1-1">Apply the Divergence Test to the following series and interpret the results.</div></div>
+<div class="introduction" id="subsec-DivergenceTest-3-1"><div class="para" id="subsec-DivergenceTest-3-1-1">Apply the Divergence Test to the following series and interpret the results.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DivergenceTest-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
 <article class="task exercise-like" id="subsec-DivergenceTest-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="subsec-DivergenceTest-3-2-1-1"><span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{k^15 - 4k^10 + 10k^4}{e^{2k}}\)</span></div>
-<div class="solutions"><details id="subsec-DivergenceTest-3-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="subsec-DivergenceTest-3-2-2-1">We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator (<a href="sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6: Polynomial End Behavior Limits">Polynomial End Behavior Limits</a>). We could also get this same result using some other techniques, like what we use to prove that theorem. Then we can use <a href="sec-LHopitalsRule.html#thm-LHopitalsRule" class="xref" data-knowl="./knowl/xref/thm-LHopitalsRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.7.1: L’Hôpital’s Rule">L’Hôpital’s Rule</a> to evaluate the limit, since we have a <span class="process-math">\(\frac{\infty}{\infty}\)</span> indeterminate form.</div></div></details></div></article><article class="task exercise-like" id="subsec-DivergenceTest-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="subsec-DivergenceTest-3-3-1-1"><span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{k^2+1}\)</span></div></article><article class="task exercise-like" id="subsec-DivergenceTest-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="subsec-DivergenceTest-3-4-1-1"><span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{\sqrt[k]{k}}\)</span></div></article></article></section></section></div>
-<div class="ptx-content-footer">
+<div class="para" id="subsec-DivergenceTest-3-2-1-1">
+<span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{k^15 - 4k^10 + 10k^4}{e^{2k}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-DivergenceTest-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-DivergenceTest-3-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-DivergenceTest-3-2-2-1">We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator (<a href="sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6: Polynomial End Behavior Limits">Polynomial End Behavior Limits</a>). We could also get this same result using some other techniques, like what we use to prove that theorem. Then we can use <a href="sec-LHopitalsRule.html#thm-LHopitalsRule" class="xref" data-knowl="./knowl/xref/thm-LHopitalsRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.7.1: L’Hôpital’s Rule">L’Hôpital’s Rule</a> to evaluate the limit, since we have a <span class="process-math">\(\frac{\infty}{\infty}\)</span> indeterminate form.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DivergenceTest-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.3.4.a.1"><a href="#subsec-DivergenceTest-3-2-2" title="Copy heading and permalink for Hint 8.3.4.a.1" aria-label="Copy heading and permalink for Hint 8.3.4.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 8.3.4.a"><a href="#subsec-DivergenceTest-3-2" title="Copy heading and permalink for Task 8.3.4.a" aria-label="Copy heading and permalink for Task 8.3.4.a">🔗</a></div></article><article class="task exercise-like" id="subsec-DivergenceTest-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-DivergenceTest-3-3-1-1">
+<span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{k^2+1}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-DivergenceTest-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 8.3.4.b"><a href="#subsec-DivergenceTest-3-3" title="Copy heading and permalink for Task 8.3.4.b" aria-label="Copy heading and permalink for Task 8.3.4.b">🔗</a></div></article><article class="task exercise-like" id="subsec-DivergenceTest-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-DivergenceTest-3-4-1-1">
+<span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{\sqrt[k]{k}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-DivergenceTest-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 8.3.4.c"><a href="#subsec-DivergenceTest-3-4" title="Copy heading and permalink for Task 8.3.4.c" aria-label="Copy heading and permalink for Task 8.3.4.c">🔗</a></div></article><div class="autopermalink" data-description="Example 8.3.4"><a href="#subsec-DivergenceTest-3" title="Copy heading and permalink for Example 8.3.4" aria-label="Copy heading and permalink for Example 8.3.4">🔗</a></div></article><div class="autopermalink" data-description="Subsection 8.3.2: The Divergence Test"><a href="#subsec-DivergenceTest" title="Copy heading and permalink for Subsection 8.3.2: The Divergence Test" aria-label="Copy heading and permalink for Subsection 8.3.2: The Divergence Test">🔗</a></div></section><div class="autopermalink" data-description="Section 8.3: The Divergence Test and the Harmonic Series"><a href="#sec-DivergenceTest" title="Copy heading and permalink for Section 8.3: The Divergence Test and the Harmonic Series" aria-label="Copy heading and permalink for Section 8.3: The Divergence Test and the Harmonic Series">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-IntroSeries.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-IntegralTest.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>

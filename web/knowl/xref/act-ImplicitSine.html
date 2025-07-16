@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -22,7 +29,8 @@
 \end{equation*}
 </div>
 <div class="para"><figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/./ImplicitDifferentiation/SineImplicitCurve.png" class="contained" alt="A curve with 4 independent loops visible. The main, middle, loop, looks like a deformed circle. It passes through the origin, and has some straight sides and almost pointed corners, although they are still round. On the x-axis, there are two very flat round loops: one around (8,0) and another around (-5,0). A third one lays on the y-axis around (-5,0)."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.4<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 3.1.4"><a href="#SineImplicitCurve" title="Copy heading and permalink for Figure 3.1.4" aria-label="Copy heading and permalink for Figure 3.1.4">🔗</a></div></figcaption></figure></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para logical">
@@ -34,32 +42,68 @@
 \end{align*}
 </div>
 <div class="para">Think carefully about these derivatives. For each of the three, how will you approach it? What kinds of nuances or rules or strategies will you need to think about? Why?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para">Are any of these derivatives involving a variable other than <span class="process-math">\(x\text{,}\)</span> the input variable (based on our <span class="process-math">\(\dydx\)</span> notation, since we are thinking about how <span class="process-math">\(y\)</span> changes <em class="emphasis">with regard to</em> <span class="process-math">\(x\)</span>).</div>
-<div class="para">Are any of these derivatives involving any other combination of functions? Are there products and/or quotients that we need to think about?</div>
-</div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para">Implement your ideas or strategies from above to differentiate each term.</div>
+<div class="para">Are any of these derivatives involving a variable other than <span class="process-math">\(x\text{,}\)</span> the input variable (based on our <span class="process-math">\(\dydx\)</span> notation, since we are thinking about how <span class="process-math">\(y\)</span> changes <em class="emphasis">with regard to</em> <span class="process-math">\(x\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">Are any of these derivatives involving any other combination of functions? Are there products and/or quotients that we need to think about?<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 3.1.3.a.1"><a href="#act-ImplicitSine-3-2" title="Copy heading and permalink for Hint 3.1.3.a.1" aria-label="Copy heading and permalink for Hint 3.1.3.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 3.1.3.a"><a href="#act-ImplicitSine-3" title="Copy heading and permalink for Task 3.1.3.a" aria-label="Copy heading and permalink for Task 3.1.3.a">🔗</a></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para">Implement your ideas or strategies from above to differentiate each term.<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="solutions">
-<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">We need to apply the Chain Rule to <span class="process-math">\(\ddx{\sin(y)}\)</span> and then we need to apply the Product Rule <span class="process-math">\(\ddx{x^2y^2}\text{.}\)</span> Notice that when we find the derivative of <span class="process-math">\(y^2\)</span> for the Product Rule, we need to use the Chain Rule!</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para">We need to apply the Chain Rule to <span class="process-math">\(\ddx{\sin(y)}\)</span> and then we need to apply the Product Rule <span class="process-math">\(\ddx{x^2y^2}\text{.}\)</span> Notice that when we find the derivative of <span class="process-math">\(y^2\)</span> for the Product Rule, we need to use the Chain Rule!<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 3.1.3.b.1"><a href="#act-ImplicitSine-4-2" title="Copy heading and permalink for Hint 3.1.3.b.1" aria-label="Copy heading and permalink for Hint 3.1.3.b.1">🔗</a></div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="displaymath process-math">
 \begin{align*}
 \ddx{\sin(x)+\sin(y)} \amp =\ddx{x^2y^2}\\
 \ddx{\sin(x)} + \ddx{\sin(y)} \amp = \ddx{x^2y^2}\\
 \cos(x) + \cos(y)\cdot \dydx \amp = 2xy^2 + 2x^2y\cdot \dydx\\
 \text{or } \cos(x)+y'\cos(y) \amp = 2xy^2 + 2x^2yy'
 \end{align*}
-</div></div></div></details>
-</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para">Now we need to solve for <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{,}\)</span> whichever you are using. While this equation can look complicated, we can notice something about the "location" of <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span> in our equation.</div> <div class="para">Why do we always know that <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span> will be <em class="emphasis">multiplied</em> on a term whenever it shows up?</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.1.3.b.1"><a href="#act-ImplicitSine-4-3" title="Copy heading and permalink for Solution 3.1.3.b.1" aria-label="Copy heading and permalink for Solution 3.1.3.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 3.1.3.b"><a href="#act-ImplicitSine-4" title="Copy heading and permalink for Task 3.1.3.b" aria-label="Copy heading and permalink for Task 3.1.3.b">🔗</a></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para">Now we need to solve for <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{,}\)</span> whichever you are using. While this equation can look complicated, we can notice something about the "location" of <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span> in our equation.<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para">Why do we always know that <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span> will be <em class="emphasis">multiplied</em> on a term whenever it shows up?<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.1.3.c"><a href="#act-ImplicitSine-5" title="Copy heading and permalink for Task 3.1.3.c" aria-label="Copy heading and permalink for Task 3.1.3.c">🔗</a></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para logical">
 <div class="para">Now that we are confident that we will <em class="emphasis">always</em> know that we are multiplying this derivative, we can employ a consistent strategy:</div>
 <ol class="decimal" id="act-ImplicitSine-6-1-1-2">
-<li><div class="para">Rearrange our equation so that every term with a <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span> is on one side, and everything without is on the other.</div></li>
-<li><div class="para">Now we are guaranteed that <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span> is a common factor: factor it out.</div></li>
-<li><div class="para">Now we can solve for <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span> by dividing!</div></li>
+<li>
+<div class="para">Rearrange our equation so that every term with a <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span> is on one side, and everything without is on the other.<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-6-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#act-ImplicitSine-6-1-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li>
+<div class="para">Now we are guaranteed that <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span> is a common factor: factor it out.<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-6-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#act-ImplicitSine-6-1-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li>
+<div class="para">Now we can solve for <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span> by dividing!<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-6-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#act-ImplicitSine-6-1-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
 </ol>
 <div class="para">Solve for <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\)</span> in your equation!</div>
-</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para">Build the equation of a line that lays tangent to the curve at the origin. Does the value of <span class="process-math">\(\dydx\)</span> at <span class="process-math">\((0,0)\)</span> look reasonable to you?</div></article></article><span class="incontext"><a class="internal" href="sec-ImplicitDifferentiation.html#act-ImplicitSine">in-context</a></span>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.1.3.d"><a href="#act-ImplicitSine-6" title="Copy heading and permalink for Task 3.1.3.d" aria-label="Copy heading and permalink for Task 3.1.3.d">🔗</a></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para">Build the equation of a line that lays tangent to the curve at the origin. Does the value of <span class="process-math">\(\dydx\)</span> at <span class="process-math">\((0,0)\)</span> look reasonable to you?<div class="autopermalink" data-description="Paragraph"><a href="#act-ImplicitSine-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.1.3.e"><a href="#act-ImplicitSine-7" title="Copy heading and permalink for Task 3.1.3.e" aria-label="Copy heading and permalink for Task 3.1.3.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 3.1.3: "><a href="#act-ImplicitSine" title="Copy heading and permalink for Activity 3.1.3: " aria-label="Copy heading and permalink for Activity 3.1.3: ">🔗</a></div></article><span class="incontext"><a class="internal" href="sec-ImplicitDifferentiation.html#act-ImplicitSine">in-context</a></span>
 </body>
 </html>
