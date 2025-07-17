@@ -22,6 +22,18 @@
             </p>
         </statement>
     </definition>
+    <p>
+      You might not recognize this, but we've worked with a version of this before. The example series that we plotted in <xref ref="fig-PartialSum-3"/> was
+      <me>
+        \sum_{k=0}^{\infty} \frac{3}{k+1}
+      </me>.
+      We can notice that if we re-index this by starting at <m>k=1</m> instead of <m>k=0</m>, we were really just looking at a scaled version of the harmonic series.
+      <md>
+        <mrow> \sum_{k=0}^{\infty} \frac{3}{k+1} \amp = \sum_{k=1}^{\infty} \frac{3}{k}</mrow>
+        <mrow> \amp = 3\left(\sum_{k=1}^{\infty}\frac{1}{k}\right)</mrow>
+      </md>
+      
+    </p>
     <xi:include href="./activities/act-HarmonicSeries.ptx" />
     <p>
       Let's continue to think about this strange series, but actually prove that the series itself diverges.
@@ -30,15 +42,62 @@
       <title>The Harmonic Series Diverges</title>
       <statement>
         <p>
-          The <term>Harmonic Series</term>, <m>\sum_{k=1}^\infty \frac{1}{k}</m>, diverges.
+          The <term>Harmonic Series</term>, 
+          <me>\sum_{k=1}^\infty \frac{1}{k}</me>, 
+          diverges.
         </p>
       </statement>
       <proof>
         <p>
-          Let's assume, for the sake of eventual contradiction, that the harmonic series converges.
+          Let's assume, for the sake of eventual contradiction, that the harmonic series converges. Our goal in this proof is to show that this assumption (convergence) logically leads to an internal contradiction. This would mean that the assumption (convergence) cannot be true.
+        </p>
+        <p>
+          So, let's assume that the harmonic series converges.
+        </p>
+        <p>
+          Based on our definition of series convergence (<xref ref="def-SeriesConvergence"/>), there exists some real number <m>S</m> such that:
+          <me>
+            \lim_{n\to\infty} \sum_{k=1}^n \frac{1}{k} = S
+          </me>.
+          We're going to think about this number, <m>S</m>, and show that there cannot be such a number.
+        </p>
+        <p>
+          First, let's write out what <m>S</m> is:
+          <me>
+            S = 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \frac{1}{6} + ...
+          </me>
+          We're now going to systematically change the numbers being added together in order to create some number that is smaller than <m>S</m>: we're going to take all of the odd terms and make them as small as the next term after it:
+          <md>
+            <mrow> S \amp = 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \frac{1}{6} + ... 
+            </mrow>
+            <mrow>S \amp \gt \frac{1}{2} + \frac{1}{2} + \frac{1}{4} + \frac{1}{4} + \frac{1}{6}+ \frac{1}{6} + ...
+            </mrow>
+          </md>
+          Note, though, that we can group together these duplicate terms and add them. Let's do that!
+          <md>
+            <mrow>S \amp \gt \left(\frac{1}{2} + \frac{1}{2}\right) + \left(\frac{1}{4} + \frac{1}{4}\right) + \left(\frac{1}{6}+ \frac{1}{6}\right) + ...
+            </mrow>
+            <mrow>S \amp \gt 1 + \frac{1}{2} + \frac{1}{3} + ...</mrow>
+          </md>
+          But we should recognize this new series that is smaller than <m>S</m>...it's the harmonic series! Which, by our initial assumption, is also <m>S</m>!
+        </p>
+        <p>
+          Ok, so what we have shown is that if the harmonic series converges, then it converges to some number <m>S</m> that has the contradictory property of being smaller than itself.
+        </p>
+        <p>
+          There is no such number.
+        </p>
+        <p>
+          This is a contradiction, then, and so the harmonic series must diverge.
         </p>
       </proof>
     </theorem>
+    <p>
+      This is a strange result, and one that has been brought up again and again by mathematicians throughout history. We'll see that this series is notable because of its use later on in this chapter, but for now we can simply note that it is strange to see a series of terms that get so small (and so quickly) and yet the sum of those terms diverges.
+    </p>
+    <p>
+      The connection between the terms of a series and the behavior of the infinite series itself is maybe more mysterious than we initially thought. Since we will likely not have "access" to the formula for the partial sums (<xref ref="note-ExplicitFormulaPartialSums"/>), we will want to explore these kinds of connections as much as we can. They will be the things to help us analyze an infinite series.
+    </p>
   </subsection>
   <subsection xml:id="subsec-DivergenceTest">
     <title>The Divergence Test</title>
@@ -46,7 +105,7 @@
       <title>Divergence Test</title>
       <statement>
         <p>
-          For an infinite series <m>\sum_{k=0}^\infty a_k</m>, if the infinite series converges then
+          For an infinite series <m>\displaystyle\sum_{k=0}^\infty a_k</m>, if the infinite series converges then
           <me>
             \lim_{k\to\infty} a_k = 0
           </me>.
@@ -54,12 +113,46 @@
           <me>
             \lim_{k\to\infty} a_k\neq 0
           </me>
-          then the infinite series <m>\sum_{k=0}^\infty a_k</m> diverges.
+          then the infinite series <m>\displaystyle\sum_{k=0}^\infty a_k</m> diverges.
         </p>
       </statement>
       <proof>
         <p>
-          
+          We will prove the claim that if an infinite series converges, then its sequence of terms must converge to <m>0</m>.
+        </p>
+        <p>
+          This result will fall out of a simple exploration of what partial sums are. We noted in <xref ref="sec-IntroSeries"/> that we can write any partial sum as the sum of the previous partial sum and the next term:
+          <md>
+            <mrow>S_0 \amp = a_0 </mrow>
+            <mrow>S_1 \amp = a_0 + a_1 </mrow>
+            <mrow> \amp = S_0+ a_1</mrow>
+            <mrow>S_2 \amp = a_0+a_1+a_2</mrow>
+            <mrow> \amp = S_1 + a_2</mrow>
+            <mrow>S_3 \amp = a_0+a_1+a_2+a_3</mrow>
+            <mrow> \amp = S_2 + a_3</mrow>
+            <mrow> \amp \vdots </mrow>
+            <mrow>S_n \amp =a_0+a_1+...+a_n </mrow>
+            <mrow> \amp = S_{n-1}+a_n</mrow>
+          </md>
+          Let's now say that the series we are dealing with converges. This means that <m>\displaystyle\lim_{n\to\infty} S_n = S</m> for some real number <m>S</m>.
+        </p>
+        <p>
+          What, then, would the limit of <m>S_{n-1}</m> be as <m>n\to\infty</m>?
+        </p>
+        <p>
+          It has to also be <m>S</m>! If the partial sums converge, then these two partial sums must converge to each other <m>n</m> increases:
+          <me>
+            \lim_{n\to\infty} S_{n-1} = \lim_{n\to\infty} S_n 
+          </me>.
+        </p>
+        <p>
+          So, since <m>S_n = S_{n-1} + a_n</m>, we can investigate the limit of <m>a_n</m>:
+          <md>
+            <mrow>a_n \amp = S_n - S_{n-1} </mrow>
+            <mrow>\lim_{n\to\infty}a_n \amp = \lim_{n\to\infty}(S_n - S_{n-1}) </mrow>
+            <mrow> \amp = 0</mrow>
+          </md>
+          So of course the <m>n</m>th term has to converge to 0 in the limit!
         </p>
       </proof>
     </theorem>
@@ -72,7 +165,7 @@
       <task>
         <statement>
           <p>
-            <m>\displaystyle \sum_{k=0}^\infty \frac{k^15 - 4k^10 + 10k^4}{e^{2k}}</m>
+            <m>\displaystyle \sum_{k=0}^\infty \frac{k^{15} - 4k^{10} + 10k^4}{e^{2k}}</m>
           </p>
         </statement>
         <hint>
@@ -87,6 +180,14 @@
             <m>\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{k^2+1}</m>
           </p>
         </statement>
+        <hint>
+          <p>
+            These terms are strange! The <m>(-1)^{k+1}</m> part really just impacts the sign of the terms, since it is either <m>1</m> or <m>-1</m> depending on if <m>k</m> is even or odd.
+          </p>
+          <p>
+            We can consider only one sign (maybe the positive), and then try to make a conclusion about the alternating terms. Do they go to 0?
+          </p>
+        </hint>
       </task>
       <task>
         <statement>
@@ -94,6 +195,18 @@
             <m>\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{\sqrt[k]{k}}</m>
           </p>
         </statement>
+        <hint>
+          <p>
+            This is similar: focus on only the positive terms for now. But that denominator is also strange! If you want to focus only on the denominator, you can use the following friendly rearrangement:
+            <md>
+              <mrow>\lim_{k\to\infty} \sqrt[k]{k}\amp =\lim_{k\to\infty} k^{\frac{1}{k}}</mrow>
+              <mrow> \amp =\lim_{k\to\infty} e^{\ln\left(k^{1/k}\right)}</mrow>
+              <mrow> \amp = \lim_{k\to\infty} e^{\frac{1}{k}\ln(k)}</mrow>
+              <mrow> \amp = e^{\lim_{k\to\infty} \frac{\ln(k)}{k}}</mrow>
+            </md>
+            Now you can use <xref ref="thm-LHopitalsRule" text="title"/> to evaluate this part!
+          </p>
+        </hint>
       </task>
     </example>
   </subsection>
