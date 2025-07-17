@@ -41,7 +41,7 @@
     <title>Partial Sum</title>
       <statement>
         <p>
-          For an infinite series <m>\sum_{k=1}^\infty a_k</m>, we call <m>S_n = \sum_{k=1}^{n} a_k</m> the <m>n</m>th <term>Partial Sum</term> of the infinite series.
+          For an infinite series <m>\displaystyle \sum_{k=1}^\infty a_k</m>, we call <m>S_n = \displaystyle\sum_{k=1}^{n} a_k</m> the <m>n</m>th <term>Partial Sum</term> of the infinite series.
         </p>
       </statement>
     </definition>
@@ -49,10 +49,10 @@
     <title>Series Convergence</title>
       <statement>
         <p>
-          We say that the infinite series <m>\sum_{k=1}^\infty a_k</m> <term>converges</term> to the real number <m>L</m> if the sequence <m>\{S_n\}_{n=1}^\infty</m> converges to <m>L</m> (<m>\lim_{n\to\infty} S_n = L</m>), where <m>S_n = \sum_{k=1}^n a_k</m> is the <m>n</m>th partial sum of the infinite series.
+          We say that the infinite series <m>\displaystyle\sum_{k=1}^\infty a_k</m> <term>converges</term> to the real number <m>L</m> if the sequence <m>\{S_n\}_{n=1}^\infty</m> converges to <m>L</m> (where <m>\displaystyle\lim_{n\to\infty} S_n = L</m>), where <m>S_n = \displaystyle \sum_{k=1}^n a_k</m> is the <m>n</m>th partial sum of the infinite series.
         </p>
         <p>
-          If the sequence of partial sums <m>\{S_n\}_{n=1}^\infty</m> diverges (the limit <m>\lim_{n\to\infty} S_n</m> does not exist), then we say that the infinite series <m>\sum_{k=1}^\infty a_k</m> <term>diverges</term>.
+          If the sequence of partial sums <m>\{S_n\}_{n=1}^\infty</m> diverges (the limit <m>\displaystyle\lim_{n\to\infty} S_n</m> does not exist), then we say that the infinite series <m>\displaystyle\sum_{k=1}^\infty a_k</m> <term>diverges</term>.
         </p>
       </statement>
     </definition>
@@ -60,11 +60,78 @@
   <subsection xml:id="subsec-VisualizingPartialSums">
     <title>Visualizing the Sequence of Partial Sums</title>
     <p>
-      Since we'll think about an infinite series <m>\sum_{k=0}^\infty a_k</m> as the sequence of its partial sums, <m>\left\{\sum_{k=0}^n a_k\right\}</m>, then we can think about visualizing an infinite series as really the same thing as visualizing a sequence in general (<xref ref="subsec-GraphingSequences"/>).
+      Since we'll think about an infinite series <m>\displaystyle\sum_{k=0}^\infty a_k</m> as the sequence of its partial sums, <m>\left\{\displaystyle\sum_{k=0}^n a_k\right\}_{n=0}^\infty</m>, then we can think about visualizing an infinite series as really the same thing as visualizing a sequence in general (<xref ref="subsec-GraphingSequences"/>).
     </p>
     <p>
-      Graphing examples.
+      Let's consider, as a first (visual) example, the infinite series:
+      <me>
+        \sum_{k=0}^{\infty} \frac{3}{k+1}
+      </me>.
+      We can think about the two important sequences that we'll consider:
+      <me>
+      \underbrace{\left\{\frac{3}{n+1}\right\}_{n=0}^\infty}_{\{a_n\}\text{, the sequence of terms}} \hspace{1cm} \text{and}\hspace{1cm} \underbrace{\left\{\sum_{k=0}^n\frac{3}{k+1}\right\}_{n=0}^\infty}_{\{S_n\}\text{, the sequence of partial sums}}
+      </me>
     </p>
+    <p>
+      We can plot the sequence of terms, <m>\left\{\dfrac{3}{n+1}\right\}_{n=0}^{\infty}</m>, and visualize the limit <m>\displaystyle \lim_{n\to\infty} a_n=0</m>. This sequence of terms converges to 0.
+    </p>
+    <figure xml:id="fig-PartialSum-1">
+      <caption><m>\{a_n\}</m>, the sequence of terms in the series.</caption>
+      <image source="./InfiniteSeries/PartialSum-1.png" width="90%">
+        <shortdescription>Green points on a plot. The points descend (since the sequence is monotonically decreasing) towards a horizontal asymptote at 0. The horizontal axis of the plot is labeled n and the vertical axis is labeled a_n.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      Then, we can compare this with the plot of the partial sums, <m>\{S_n\}</m> where:
+      <me>
+        S_n = \sum_{k=0}^n \frac{3}{k+1}
+      </me>.
+    </p>
+    <figure xml:id="fig-PartialSum-2">
+      <caption><m>\{S_n\}</m>, the sequence of partial sums for the series.</caption>
+      <image source="./InfiniteSeries/PartialSum-2.png" width="90%">
+        <shortdescription>Red points on a plot. The points ascend (the sequence is monotonically increasing). The horizontal axis of the plot is labeled n and the vertical axis is labeled S_n.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      This image is fine, but not very good at showing how the sequence of terms and the sequence of partial sums are related to each other. We should note that each point in <xref ref="fig-PartialSum-2"/> is the accumulation of the heights of the preceding points in <xref ref="fig-PartialSum-1"/>. We can visualize this to make it easier by overlaying some information onto the plot of partial sums in <xref ref="fig-PartialSum-2"/>.
+    </p>
+    <figure xml:id="fig-PartialSum-3">
+      <caption><m>\{S_n\}</m> and <m>\{a_n\}</m> visualized together.</caption>
+      <image source="./InfiniteSeries/PartialSum-3.png" width="90%">
+        <shortdescription>The red plot of partial sums. Between each point is a green vertical line going from the height of the previous point to the height of the next point. These are labeled a_0, a_1, a_2, a_3, and then are unlableled afterwards. On the vertical axis, there are vertical positions representing the heights of each of the red points labeled S_0, S_1, S_2, S_3, ...</shortdescription>
+      </image>
+    </figure>
+    <p>
+      Hopefully this does a good job of illustrating the connections between the two:
+      <md>
+        <mrow>S_0 \amp = a_0 </mrow>
+        <mrow>S_1 \amp = a_0 + a_1 </mrow>
+        <mrow> \amp = S_0+ a_1</mrow>
+        <mrow>S_2 \amp = a_0+a_1+a_2</mrow>
+        <mrow> \amp = S_1 + a_2</mrow>
+        <mrow>S_3 \amp = a_0+a_1+a_2+a_3</mrow>
+        <mrow> \amp = S_2 + a_3</mrow>
+        <mrow> \amp \vdots </mrow>
+        <mrow>S_n \amp =a_0+a_1+...+a_n </mrow>
+        <mrow> \amp = S_{n-1}+a_n</mrow>
+      </md>
+    </p>
+    <note xml:id="note-ExplicitFormulaPartialSums">
+      <title>Finding Explicit Formulas</title>
+      <p>
+        We had noted earlier (in <xref ref="sec-IntroSequences"/>) that it was hard to find explicit formulas (or recursion relations) for sequences where we had the first few terms.
+      </p>
+      <p>
+        This remains true when we think about finding formulas for the sequences of partial sums. Notice that it is easy to find the location of the horizontal asymptote in <xref ref="fig-PartialSum-1"/> (by evaluating <m>\displaystyle \lim_{n\to\infty} a_n</m>), but that we did not attempt to find one to for the partial sums in <xref ref="fig-PartialSum-2"/> or <xref ref="fig-PartialSum-3"/>. 
+      </p>
+      <p>
+        If you'd like to try this, then we need to find a formula for <m>S_n</m>. Try to find the first several partial sums by adding up terms in the series. Then try to find a formula to predict the next partial sum. This will definitely not be easy!
+      </p>
+      <p>
+        Ok, actually, this will be an impossible task. There is no closed-form formula for this. We cannot simply find <m>\displaystyle \lim_{n\to\infty}S_n</m> in the way that we've found the limit of the sequence of terms.
+      </p>
+    </note>
   </subsection>
   <subsection xml:id="subsec-SpecialSeries">
     <title>Special Series</title>
@@ -80,7 +147,7 @@
     <task>
       <statement>
         <p>
-          <m>\sum_{k=0}^\infty \left(\frac{1}{2^k}\right)</m>
+          <m>\displaystyle\sum_{k=0}^\infty \left(\frac{1}{2^k}\right)</m>
         </p>
       </statement>
       <solution>
@@ -102,7 +169,7 @@
     <task>
       <statement>
         <p>
-          <m>\sum_{k=2}^\infty \left(\frac{k}{\ln(k)} - \frac{k+1}{\ln(k+1)}\right)</m>
+          <m>\displaystyle\sum_{k=2}^\infty \left(\frac{k}{\ln(k)} - \frac{k+1}{\ln(k+1)}\right)</m>
         </p>
       </statement>
       <solution>
@@ -127,12 +194,12 @@
     <task>
       <statement>
         <p>
-          <m>\sum_{k=2}^\infty \left(\frac{2}{k^2-1}\right)</m> 
+          <m>\displaystyle\sum_{k=2}^\infty \left(\frac{2}{k^2-1}\right)</m> 
         </p>
       </statement>
       <hint>
         <p>
-          This one is tricky! It's hard to notice anything unless we write out the series term formula a bit differently. Use <xref ref="sec-PartialFractions" text="title"/> to re-write <m>\frac{2}{k^2-1}</m> as <m>\frac{1}{k-1} - \frac{1}{k+1}</m>.
+          This one is tricky! It's hard to notice anything unless we write out the series term formula a bit differently. Use <xref ref="sec-PartialFractions" text="title"/> to re-write <m>\dfrac{2}{k^2-1}</m> as <m>\dfrac{1}{k-1} - \dfrac{1}{k+1}</m>.
         </p>
       </hint>
       <solution>
