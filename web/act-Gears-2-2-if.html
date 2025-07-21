@@ -108,7 +108,7 @@ window.MathJax = {
   <animateFromSequence name="tAnimate" target="t" from="0" to="4*pi" step="0.05" animationInterval="10" animationMode="increase" animationOn="true"/>
 </setup>
 
-<updateValue type="boolean" target="tAnimate"  prop="animationOn" newValue="not $tAnimate.animationOn">
+<updateValue type="boolean" target="tAnimate.animationOn" newValue="not $tAnimate.animationOn">
   <label>Start/Stop Animation</label>
 </updateValue> 
 
@@ -127,21 +127,6 @@ window.MathJax = {
   <label styleNumber="3" anchor="(3,2.5)" draggable="false">Gear C</label>
 </graph>
   </case></conditionalContent>
-
-
-
-<booleanInput name="hide" asToggleButton>
-  <label>
-    <conditionalContent>
-      <case condition="$hide=false">
-        Hide the gears!
-      </case>
-      <case condition="$hide=true">
-        Go back!
-      </case>
-    </conditionalContent>
-  </label>
-</booleanInput>
             </script>
 </div></div>
 </body>
