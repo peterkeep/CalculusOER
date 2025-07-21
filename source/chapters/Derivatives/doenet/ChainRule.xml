@@ -13,23 +13,25 @@
   <animateFromSequence name="tAnimate" target="t" from="0" to="4*pi" step="0.05" animationInterval="10" animationMode="increase" animationOn="true"/>
 </setup>
 
+<updateValue type="boolean" target="tAnimate"  prop="animationOn" newValue="not $tAnimate.animationOn">
+  <label>Start/Stop Animation</label>
+</updateValue> 
 
 <conditionalContent>
   <case condition="$hide=false">
-    <graph displayXAxis="false" displayYAxis="false" xmin="-8" xmax="6" ymin="-4" ymax="4" identicalAxisScales="true" fixAxes showBorder="false">
-      $GearA
-      <point styleNumber="1">(3cos($t)-4, -3sin($t))</point>
-      $GearB
-      <point styleNumber="2">(-cos(3$t), -sin(3$t))</point>
-      $GearC
-      <point styleNumber="3">(2cos(1.5$t+pi/2)+3, -2sin(1.5$t+pi/2))</point>
+<graph displayXAxis="false" displayYAxis="false" xmin="-8" xmax="6" ymin="-4" ymax="4" identicalAxisScales="true" fixAxes showBorder="false">
+  $GearA
+  <point styleNumber="1">(3cos($t)-4, -3sin($t))</point>
+  $GearB
+  <point styleNumber="2">(-cos(3$t), -sin(3$t))</point>
+  $GearC
+  <point styleNumber="3">(2cos(1.5$t+pi/2)+3, -2sin(1.5$t+pi/2))</point>
 
-      <label styleNumber="1" anchor="(-4,3.5)" draggable="false">Gear A</label>
-      <label styleNumber="2" anchor="(0,1.5)" draggable="false">Gear B</label>
-      <label styleNumber="3" anchor="(3,2.5)" draggable="false">Gear C</label>
-    </graph>
-  </case>
-</conditionalContent>
+  <label styleNumber="1" anchor="(-4,3.5)" draggable="false">Gear A</label>
+  <label styleNumber="2" anchor="(0,1.5)" draggable="false">Gear B</label>
+  <label styleNumber="3" anchor="(3,2.5)" draggable="false">Gear C</label>
+</graph>
+  </case></conditionalContent>
 
 
 
