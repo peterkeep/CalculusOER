@@ -10,7 +10,7 @@
   <circle center="(-4,0)" radius="3" name="GearA" draggable="false" styleNumber="1"/>
   <circle center="(0,0)" radius="1" name="GearB" draggable="false" styleNumber="2"/>
   <circle center="(3,0)" radius="2" name="GearC" draggable="false" styleNumber="3"/>
-  <animateFromSequence name="tAnimate" target="t" prop="value" from="0" to="4*pi" step="0.05" animationInterval="10" animationMode="increase" animationOn/>
+  <animateFromSequence name="tAnimate" target="t" from="0" to="4*pi" step="0.05" animationInterval="10" animationMode="increase" animationOn/>
 </setup>
 
 
