@@ -5,7 +5,10 @@
   <subsection xml:id="subsec-SeriesAsIntegrals">
     <title>Infinite Series As a Kind of Integral</title>
     <p>
-      We start here with a connection between objects. Earlier (in <xref ref="subsec-SequencesAsFunctions"/>) we tried to describe sequences as just a special kind of function: the domain is the set of non-negative integer (or positive integers, depending on whether we start our index at <m>n=0</m> or <m>n=1</m>) and we map these inputs to real number outputs. And now we want to think about what it might mean to accumulate the values of these kinds of functions.
+      Let's start here with a connection between objects. We've already thought about the connection between an infinite series and the sequence of terms of the series (<xref ref="thm-DivergenceTest" text="type-global-title"/>). Now we'll think about the connections between two objects that are similar to each other in that they both represent an accumulation of function values.
+    </p>
+    <p>
+      Earlier (in <xref ref="subsec-SequencesAsFunctions"/>) we tried to describe sequences as just a special kind of function: the domain is the set of non-negative integer (or positive integers, depending on whether we start our index at <m>n=0</m> or <m>n=1</m>) and we map these inputs to real number outputs. And now we want to think about what it might mean to accumulate the values of these kinds of functions.
     </p>
     <p>
       Function value accumulation is what we've been looking at lately! That's what integration is! We are trying to accumulate all of the function values and weigh them based on their "width." In the context of continuous functions, that means we start approximating this accumulation by looking at some finite number of function values that we pick, and we give them some <m>\Delta x</m> width between them. That's our Riemann sum:
@@ -38,6 +41,8 @@
         </row>
         <row>
           <cell>Graph</cell>
+          <cell><xref ref="fig-FunctionSequence-1"/></cell>
+          <cell><xref ref="fig-FunctionSequence-2"/></cell>
         </row>
         <row>
           <cell>Finite Accumulation</cell>
@@ -68,13 +73,13 @@
   <subsection xml:id="subsec-IntegralTest">
     <title>The Integral Test</title>
     <p>
-      We'll build the integral test.
+      The Integral Test is really about connecting the behavior of an integral and a series, and the way that we'll do it is by trying to visualize what an infinite series is (a sum of function values, where the function inputs are spaced apart by 1) and linking that to a Riemann sum. From there, we'll use the <xref ref="thm-MonotoneConvergence" text="title"/> on the sequence of partial sums to show that the series converges.
     </p>
     <theorem xml:id="thm-IntegralTest">
       <title>Integral Test</title>
       <statement>
         <p>
-          If <m>\sum_{k=0}^\infty a_k</m> is an infinite series with <m>a_k\gt 0</m> for all <m>k\geq 0</m> and <m>f(x)</m> is a continuous and decreasing function with <m>f(k) = a_k</m> for all <m>k\geq 0</m>, then we can compare the behaviors of <m>\sum_{k=0}^\infty a_k</m> and <m>\int_{x=0}^\infty f(x)\;dx</m>: the integral and the series are guaranteed to either both diverge or both converge.
+          If <m>\displaystyle\sum_{k=0}^\infty a_k</m> is an infinite series with <m>a_k\gt 0</m> for all <m>k\geq 0</m> and <m>f(x)</m> is a continuous and decreasing function with <m>f(k) = a_k</m> for all <m>k\geq 0</m>, then we can compare the behaviors of <m>\displaystyle\sum_{k=0}^\infty a_k</m> and <m>\displaystyle\int_{x=0}^\infty f(x)\;dx</m>: the integral and the series are guaranteed to either both diverge or both converge.
         </p> 
       </statement>
     </theorem>
