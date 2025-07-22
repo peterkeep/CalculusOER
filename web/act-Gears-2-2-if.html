@@ -105,12 +105,22 @@ window.MathJax = {
   <circle center="(-4,0)" radius="3" name="GearA" draggable="false" styleNumber="1"/>
   <circle center="(0,0)" radius="1" name="GearB" draggable="false" styleNumber="2"/>
   <circle center="(3,0)" radius="2" name="GearC" draggable="false" styleNumber="3"/>
-  <animateFromSequence name="tAnimate" target="t" from="0" to="4*pi" step="0.05" animationInterval="10" animationMode="increase" animationOn="true"/>
+  <animateFromSequence name="tAnimate" target="$t" from="0" to="4*pi" step="0.05" animationInterval="10" animationMode="increase" animationOn="true" />
 </setup>
 
-<updateValue type="boolean" target="tAnimate.animationOn" newValue="not $tAnimate.animationOn">
-  <label>Start/Stop Animation</label>
+<updateValue type="boolean" target="$tAnimate.animationOn" newValue="not $tAnimate.animationOn">
+  <label>
+    <conditionalContent>
+      <case condition="$tAnimate.animationOn = true">
+        Stop Animation
+      </case>
+      <case condition="$tAnimate.animationOn = false">
+        Start Animation
+      </case>
+    </conditionalContent>
+  </label>
 </updateValue> 
+
 
 <graph displayXAxis="false" displayYAxis="false" xmin="-8" xmax="6" ymin="-4" ymax="4" identicalAxisScales="true" fixAxes showBorder="false">
   $GearA
