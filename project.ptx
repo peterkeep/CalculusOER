@@ -11,7 +11,9 @@
     <target name="print"
             format="pdf"
             deploy-dir="pdf"
-            output-filename="DiscoverCalculus-PeterKeep.pdf" />
+            output-filename="DiscoverCalculus-PeterKeep.pdf" 
+            xsl="print-style.xsl" />
+    
   </targets>
 </project>
 
