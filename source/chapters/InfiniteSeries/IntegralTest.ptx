@@ -322,7 +322,7 @@
     <p>
       We can see that if we define the sequence of terms using <m>a_k=\sin^2(\pi\cdot k)</m>, then <m>a_k = 0</m> for <m>k=0,1,2,...</m>. This means that
       <me>
-        \sum_{k=0}^{\infty} sin^2(\pi\cdot k) = 0 + 0 + 0 + ... = 0
+        \sum_{k=0}^{\infty} \sin^2(\pi\cdot k) = 0 + 0 + 0 + ... = 0
       </me>.
       Meanwhile, we can see that the integral <m>\displaystyle \int_{x=0}^\infty \sin^2(\pi\cdot x)\;dx</m> will diverge to <m>\infty</m>, since every oscillation adds the same positive area over and over. The limit will not exist!
     </p>
