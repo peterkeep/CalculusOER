@@ -142,20 +142,192 @@
       <task>
         <statement>
           <p>
-            
+            <m>\displaystyle \sum_{k=0}^\infty \frac{1}{k^2+1}</m>
           </p>
         </statement>
+        <hint>
+          <p>
+            This would connect with the integral <m>\displaystyle \int_{x=0}^\infty \frac{1}{x^2+1}\;dx</m>. Does the function, <m>f(x)=\dfrac{1}{x^2+1}</m>, meet the requirements of the Integral Test? Does it look like something you could antidifferentiate?
+          </p>
+        </hint>
+        <solution>
+          <p>
+            This is a fine opportunity to apply the Integral Test. The Integral Test says that we can link the behavior of the integral and the series:
+            <me>
+              \sum_{k=0}^\infty \frac{1}{k^2+1} \sim \int_{x=0}^\infty \frac{1}{x^2+1}\;dx
+            </me>.
+            Let's think about the integral!
+            <md>
+              <mrow>\int_{x=0}^\infty \frac{1}{x^2+1}\;dx \amp = \lim_{t\to\infty}\int_{x=0}^{x=t}\frac{1}{x^2+1}\;dx</mrow>
+              <mrow> \amp = \lim_{t\to\infty} \left(\tan^{-1}(x)\right)\bigg|_{x=0}^{x=t}</mrow>
+              <mrow> \amp = \lim_{t\to\infty}\tan^{-1}(t) - \tan^{-1}(0)</mrow>
+              <mrow> \amp = \frac{\pi}{2} - \frac{\pi}{4}</mrow>
+              <mrow> \amp = \frac{\pi}{4}</mrow>
+            </md>
+            This integral converges.
+          </p>
+          <p>
+            <em>Conclusion:</em> Since the integral <m>\displaystyle \int_{x=0}^\infty \frac{1}{x^2+1}\;dx</m> converges, we know that the infinite series <m>\displaystyle \sum_{k=0}^\infty \frac{1}{k^2+1} </m> also converges.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{k=0}^{\infty} \frac{1}{e^{k^2}}</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            We can re-write <m>\dfrac{1}{e^{k^2}}</m> to <m>e^{-k^2}</m>, and so we're thinking about the integral <m>\displaystyle\int_{x=0}^\infty e^{-x^2}\;dx</m>. Does this function meet the conditions of the Integral Test? Can we antidifferentiate?
+          </p>
+        </hint>
+        <solution>
+          <p>
+            Unfortunately, this integral is going to be very difficult for us! The function <m>f(x)=e^{-x^2}</m> has an antiderivative on the interval <m>[0,\infty)</m> (it's a continuous function, and so it is integrable according to the <xref ref="thm-FTOC1" text="title"/>).
+          </p>
+          <p>
+            This function, though, doesn't have what we call an <term>elementary antiderivative</term>: any antideriative of <m>e^{-x^2}</m> can't be written as a combination of our basic function types.
+          </p>
+          <p>
+            This means that we're unable to integrate this using our typical techniques, and (for now), we don't know if the integral converges or not.
+          </p>
+          <p>
+            <em>Conclusion:</em> We won't apply the Integral Test, and so we don't know whether the series <m>\displaystyle \sum_{k=0}^{\infty} \frac{1}{e^{k^2}}</m> converges or not.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{k=1}^\infty \frac{k}{e^{k^2+1}}</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            The Integral Test would connect this series to <m>\displaystyle \int_{x=1}^{\infty} \frac{x}{e^{x^2+1}}\;dx</m>. Does the function <m>f(x)=\dfrac{x}{e^{x^2+1}}</m> meet the requirements of the Integral Test? Could we antidifferentiate?
+          </p>
+        </hint>
+        <solution>
+          <p>
+            Let's apply the Integral Test. we'll connect the behavior of the integral and the series:
+            <me>
+              \sum_{k=1}^{\infty} \frac{k}{e^{k^2+1}} \sim \int_{x=1}^\infty \frac{x}{e^{x^2+1}}\;dx
+            </me>.
+            We'll consider the integral, and use a <m>u</m>-substitution where <m>u=-(x^2+1)</m> and <m>du=-2x\;dx</m>.
+            <md>
+              <mrow>\int_{x=1}^\infty \frac{x}{e^{x^2+1}}\;dx \amp = \lim_{t\to\infty} \int_{x=1}^{x=t} \frac{x}{e^{x^2+1}}\;dx</mrow>
+              <mrow> \amp = \lim_{t\to\infty} -\frac{1}{2}\int_{x=1}^{x=t} \frac{-2x}{e^{x^2+1}}\;dx</mrow>
+              <mrow> \amp = -\frac{1}{2}\lim_{t\to\infty} \int_{u=-2}^{u=-(t^2+1)} e^u\;du</mrow>
+              <mrow> \amp = -\frac{1}{2}\lim_{t\to\infty}\left(e^u\right)\bigg|_{u=-2}^{u=-(t^2+1)}</mrow>
+              <mrow> \amp = -\frac{1}{2} \lim_{t\to\infty} e^{-t^2+1} - e^{-2}</mrow>
+              <mrow> \amp = 0 + \frac{1}{2e^2}</mrow>
+            </md>
+            This integral converges.
+          </p>
+          <p>
+            <em>Conclusion:</em> The integral <m>\displaystyle \int_{x=1}^\infty \frac{x}{e^{x^2+1}}\;dx </m> converges, and so we know that the infinite series <m>\displaystyle \sum_{k=1}^{\infty} \frac{k}{e^{k^2+1}}</m> also converges.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle\sum_{k=2}^{\infty} \frac{1}{k\ln(k)}</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            We're considering the function <m>f(x)=\dfrac{1}{x\ln(x)}</m> and the integral <m>\displaystyle \int_{x=2}^{\infty} \frac{1}{x\ln(x)}\;dx</m>. Does this work for the Integral Test?
+          </p>
+        </hint>
+        <solution>
+          <p>
+            If we apply the Integral Test, we're connecting the following series and integral:
+            <me>
+              \sum_{k=2}^{\infty} \frac{1}{k\ln(k)} \sim \int_{x=2}^{\infty} \frac{1}{x\ln(x)}\;dx
+            </me>.
+            We'll consider the integral and use the substitution <m>u=\ln(x)</m> so that <m>du=\dfrac{1}{x}\;dx</m>.
+            <md>
+              <mrow>\int_{x=2}^{\infty} \frac{1}{x\ln(x)}\;dx \amp =\lim_{t\to\infty} \int_{x=2}^{x=t} \frac{1}{x\ln(x)}\;dx</mrow>
+              <mrow> \amp = \lim_{t\to\infty} \int_{u=\ln(2)}^{u=\ln(t)} \frac{1}{u}\;du</mrow>
+              <mrow> \amp = \lim_{t\to\infty} \left(\ln|u|\right)\bigg|_{u=\ln(2)}^{u=\ln(t)}</mrow>
+              <mrow> \amp = \lim_{t\to\infty} \ln|\ln(t)| - \ln(\ln(2))</mrow>
+              <mrow> \amp = \infty</mrow>
+            </md>
+            This integral diverges.
+          </p>
+          <p>
+            <em>Conclusion:</em> We found that the integral <m>\displaystyle \int_{x=2}^{\infty} \frac{1}{x\ln(x)}\;dx</m> diverges, which means that the series <m>\displaystyle\sum_{k=2}^{\infty} \frac{1}{k\ln(k)}</m> also diverges.
+          </p>
+        </solution>
       </task>
     </example>
+    <p>
+      As we develop more strategies and tests for series convergence, we should pause and summarize our test.
+    </p>
+    <assemblage xml:id="strat-IntegralTest">
+      <title>Integral Test Strategy</title>
+      <p>
+         We want to use this for functions that are relatively easy to antidifferentiate. Looking for <m>u</m>-substitution is a good idea, and sometimes we can straightforwardly apply integration by parts.
+      </p>
+      <p>
+        We'll find, though, that this test will mostly be used to introduce a family of infinite series and build up our intuition about partial sums (since we're really using the integrals to find a bound on our monotonic sequence of partial sums).
+      </p>
+    </assemblage>
   </subsection>
   <subsection xml:id="subsec-WhyConditions">
     <title>Why Do We Need These Conditions?</title>
     <p>
-      Riemann sum approximation
-      Oscillating function can make an integral converge but series diverge
-      <m>\sin^2(\pi(x))</m> opposite.
+      Before we wrap things up, let's just add some commentary on the conditions or requirements of the Integral Test. This is really a part of a broader discussion on conditions/requirements in mathematical results in general, but we'll limit ourselves to just this specific test. There are three conditions that we can consider: positive, decreasing, and continuous.
+      <ol>
+        <li>
+          <p>
+            <em>Positive:</em> We need <m>f(x)</m> and <m>a_k</m> to be positive in order for us to get monotonic sequences. Since we know that <m>a_k\gt 0</m>, we guarantee ourselves that <m>S_{n+1}\gt S_n</m>, since we're really adding another positive term. The same thing is true for the integrals, where we guarantee that
+            <me>\displaystyle \int_{x=0}^{x=n+1} f(x)\;dx \gt \int_{x=0}^{x=n} f(x)\;dx</me>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Decreasing:</em> This one serves two purposes. First, we use the direction of the function to get some ideas on how the Left and Right Riemann sum compare to the areas: with a decreasing function, the Left sum will always overestimate the integral while the Right sum will underestimate it.
+          </p>
+          <p>
+            We could have just required our function to be <term>monotonic</term>, though, since that would guarantee that one of those Riemann sums overestimated the integral while the other underestimated it: we really don't care about the order. So why would we need it, specifically, to be decreasing? Easy: if <m>\{a_k\}</m> is positive and <em>increasing</em>, then <m>\displaystyle\lim_{k\to\infty} a_k \neq 0</m>, and we can just apply the <xref ref="thm-DivergenceTest" text="title"/>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Continuous:</em> This one is pretty simple. Continuity guarantees that an antiderivative of our function exists on the interval we're looking at. We might not be able to actually find it easily, but at least we know there is one! Without continuity, we can't antidifferentiate easily and it doesn't make sense to think about the integral.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      We talked about why it's nice to have a monotonic sequence of terms, but what happens when they aren't? Briefly, we can say that there are plenty of examples where the series and the integral may not behave similarly. For an easy to see example, let's consider the following series:
+      <me>
+        \sum_{k=0}^{\infty} \sin^2(\pi\cdot k)
+      </me>.
+      If we try to think about the corresponding integral, we're considering:
+      <me>
+        \int_{x=0}^\infty \sin^2(\pi\cdot x)\;dx
+      </me>.
+      Can you see what the problem is? The issue becomes evident when we plot the sequence of terms and the continuous function on the same axes.
+    </p>
+    <figure xml:id="fig-OscillatingIntegralTest">
+      <caption></caption>
+      <image source="./InfiniteSeries/OscillatingIntegralTest.png" width="70%">
+        <shortdescription>An oscillating, periodic, and positive green function labeled f(x) that touches the x-axis at every integer. These points are red, labeled a_0, a_1, a_2, ...</shortdescription>
+      </image>
+    </figure>
+    <p>
+      We can see that if we define the sequence of terms using <m>a_k=\sin^2(\pi\cdot k)</m>, then <m>a_k = 0</m> for <m>k=0,1,2,...</m>. This means that
+      <me>
+        \sum_{k=0}^{\infty} sin^2(\pi\cdot k) = 0 + 0 + 0 + ... = 0
+      </me>.
+      Meanwhile, we can see that the integral <m>\displaystyle \int_{x=0}^\infty \sin^2(\pi\cdot x)\;dx</m> will diverge to <m>\infty</m>, since every oscillation adds the same positive area over and over. The limit will not exist!
+    </p>
+    <p>
+      In the Integral Test, and in general, we want to (and need to) be careful about the conditions we apply: we want them to be general enough that we can actually use the test, but specific enough to protect against strange counter-examples.
     </p>
   </subsection>
-
-
 </section>
