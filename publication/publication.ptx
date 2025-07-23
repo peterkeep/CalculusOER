@@ -112,7 +112,7 @@
       <!--<worksheets formatted="yes" />-->
   </latex>
 
-  <html>
+  <html favicon="simple">
     <!-- A possible attribute for the html tag above is @short-answer-responses, with values either "always" or "graded".  As in: -->
     <!--<html short-answer-responses="always">-->
 
@@ -179,7 +179,7 @@
       <!--<calculator model="geogebra-classic" activecode="python" />-->
 
     <!-- Set the base URL of where the online version is hosted to have links in other formats -->
-      <!-- <baseurl href="changetomywebsite.org"/> -->
+      <baseurl href="discovercalculus.com"/>
 
     <!-- Control behavior of online WeBWorK, per type: -->
       <!--<webwork
