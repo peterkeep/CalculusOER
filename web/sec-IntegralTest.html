@@ -110,6 +110,8 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.787a04695534ef1e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.014cb392a13bd045.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -601,9 +603,11 @@ eBookConfig.enable_chatcodes =  false;
 <section class="subsection" id="subsec-SeriesAsIntegrals"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.4.1</span><span class="space"> </span><span class="title">Infinite Series As a Kind of Integral</span>
 </h3>
-<div class="para" id="subsec-SeriesAsIntegrals-2">We start here with a connection between objects. Earlier (in <a href="sec-IntroSequences.html#subsec-SequencesAsFunctions" class="internal" title="Subsection 8.1.1: Sequences as Functions">Subsection 8.1.1</a>) we tried to describe sequences as just a special kind of function: the domain is the set of non-negative integer (or positive integers, depending on whether we start our index at <span class="process-math">\(n=0\)</span> or <span class="process-math">\(n=1\)</span>) and we map these inputs to real number outputs. And now we want to think about what it might mean to accumulate the values of these kinds of functions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SeriesAsIntegrals-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-SeriesAsIntegrals-2">Let’s start here with a connection between objects. We’ve already thought about the connection between an infinite series and the sequence of terms of the series (<a href="sec-DivergenceTest.html#thm-DivergenceTest" class="xref" data-knowl="./knowl/xref/thm-DivergenceTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.3.3: Divergence Test">Theorem 8.3.3 Divergence Test</a>). Now we’ll think about the connections between two objects that are similar to each other in that they both represent an accumulation of function values.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SeriesAsIntegrals-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-SeriesAsIntegrals-3">
+<div class="para" id="subsec-SeriesAsIntegrals-3">Earlier (in <a href="sec-IntroSequences.html#subsec-SequencesAsFunctions" class="internal" title="Subsection 8.1.1: Sequences as Functions">Subsection 8.1.1</a>) we tried to describe sequences as just a special kind of function: the domain is the set of non-negative integer (or positive integers, depending on whether we start our index at <span class="process-math">\(n=0\)</span> or <span class="process-math">\(n=1\)</span>) and we map these inputs to real number outputs. And now we want to think about what it might mean to accumulate the values of these kinds of functions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SeriesAsIntegrals-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-SeriesAsIntegrals-4">
 <div class="para">Function value accumulation is what we’ve been looking at lately! That’s what integration is! We are trying to accumulate all of the function values and weigh them based on their "width." In the context of continuous functions, that means we start approximating this accumulation by looking at some finite number of function values that we pick, and we give them some <span class="process-math">\(\Delta x\)</span> width between them. That’s our Riemann sum:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -616,13 +620,13 @@ eBookConfig.enable_chatcodes =  false;
 \lim_{n\to\infty} \sum_{k=1}^n f(x_k^*) \;\Delta x = \int_{x=a}^{x=b}f(x)\;dx\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SeriesAsIntegrals-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SeriesAsIntegrals-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-SeriesAsIntegrals-4">And this is how we’ve talked about infinite series so far, even adopting the same notions of convergence and thinking about how we extend a familiar idea (in this case adding numbers, compared to integrating a function) out to infinity: we just keep walking our (finite) ending point out to infinity using a limit!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SeriesAsIntegrals-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-SeriesAsIntegrals-5">And this is how we’ve talked about infinite series so far, even adopting the same notions of convergence and thinking about how we extend a familiar idea (in this case adding numbers, compared to integrating a function) out to infinity: we just keep walking our (finite) ending point out to infinity using a limit!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SeriesAsIntegrals-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-SeriesAsIntegrals-5">So this brings us to this comparison of the same types of objects across these two different contexts.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SeriesAsIntegrals-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-SeriesAsIntegrals-6">So this brings us to this comparison of the same types of objects across these two different contexts.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SeriesAsIntegrals-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="table table-like" id="subsec-SeriesAsIntegrals-6"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.4.1<span class="period">.</span></span><span class="space"> </span>Comparisons of Calculus Objects in Continuous and Discrete Contexts<div class="autopermalink" data-description="Table 8.4.1: Comparisons of Calculus Objects in Continuous and Discrete Contexts"><a href="#subsec-SeriesAsIntegrals-6" title="Copy heading and permalink for Table 8.4.1: Comparisons of Calculus Objects in Continuous and Discrete Contexts" aria-label="Copy heading and permalink for Table 8.4.1: Comparisons of Calculus Objects in Continuous and Discrete Contexts">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="subsec-SeriesAsIntegrals-7"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.4.1<span class="period">.</span></span><span class="space"> </span>Comparisons of Calculus Objects in Continuous and Discrete Contexts<div class="autopermalink" data-description="Table 8.4.1: Comparisons of Calculus Objects in Continuous and Discrete Contexts"><a href="#subsec-SeriesAsIntegrals-7" title="Copy heading and permalink for Table 8.4.1: Comparisons of Calculus Objects in Continuous and Discrete Contexts" aria-label="Copy heading and permalink for Table 8.4.1: Comparisons of Calculus Objects in Continuous and Discrete Contexts">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b2 r0 l0 t0 lines">Object</th>
 <th scope="col" class="c m b2 r0 l0 t0 lines">Continuous Context</th>
@@ -633,7 +637,11 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(a_k\)</span></td>
 </tr>
-<tr><td class="c m b0 r0 l0 t0 lines">Graph</td></tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">Graph</td>
+<td class="c m b1 r0 l0 t0 lines"><a href="sec-IntroSequences.html#fig-FunctionSequence-1" class="xref" data-knowl="./knowl/xref/fig-FunctionSequence-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.1.4">Figure 8.1.4</a></td>
+<td class="c m b1 r0 l0 t0 lines"><a href="sec-IntroSequences.html#fig-FunctionSequence-2" class="xref" data-knowl="./knowl/xref/fig-FunctionSequence-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.1.5">Figure 8.1.5</a></td>
+</tr>
 <tr>
 <td class="c m b0 r0 l0 t0 lines">Finite Accumulation</td>
 <td class="c m b0 r0 l0 t0 lines">Definite Integral</td>
@@ -650,23 +658,232 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b0 r0 l0 t0 lines">Infinite Series</td>
 </tr>
 <tr>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\displaystyle\int_{x=0}^\infty f(x)\;dx\)</span></td>
-<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\displaystyle\sum_{k=0}^\infty a_k\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(\displaystyle\int_{x=0}^\infty f(x)\;dx\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(\displaystyle\sum_{k=0}^\infty a_k\)</span></td>
 </tr>
-</table></div></figure><div class="para" id="subsec-SeriesAsIntegrals-7">So in this section, we’ll investigate this link between infinite series and improper integrals as the same kind of object occurring in different contexts. Intuitively, then, they’ll be related to each other, under the right conditions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SeriesAsIntegrals-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</table></div></figure><div class="para" id="subsec-SeriesAsIntegrals-8">So in this section, we’ll investigate this link between infinite series and improper integrals as the same kind of object occurring in different contexts. Intuitively, then, they’ll be related to each other, under the right conditions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SeriesAsIntegrals-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 8.4.1: Infinite Series As a Kind of Integral"><a href="#subsec-SeriesAsIntegrals" title="Copy heading and permalink for Subsection 8.4.1: Infinite Series As a Kind of Integral" aria-label="Copy heading and permalink for Subsection 8.4.1: Infinite Series As a Kind of Integral">🔗</a></div></section><section class="subsection" id="subsec-IntegralTest"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.4.2</span><span class="space"> </span><span class="title">The Integral Test</span>
 </h3>
-<div class="para" id="subsec-IntegralTest-2">We’ll build the integral test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntegralTest-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-IntegralTest-2">The Integral Test is really about connecting the behavior of an integral and a series, and the way that we’ll do it is by trying to visualize what an infinite series is (a sum of function values, where the function inputs are spaced apart by 1) and linking that to a Riemann sum. From there, we’ll use the <a href="sec-IntroSequences.html#thm-MonotoneConvergence" class="xref" data-knowl="./knowl/xref/thm-MonotoneConvergence.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.1.10: Monotone Convergence Theorem">Monotone Convergence Theorem</a> on the sequence of partial sums to show that the series converges.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntegralTest-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="theorem theorem-like" id="thm-IntegralTest"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Integral Test.</span>
+<article class="activity project-like" id="act-IntegralTest"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Integrals and Infinite Series.</span>
 </h4>
-<div class="para" id="thm-IntegralTest-2-1">If <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> is an infinite series with <span class="process-math">\(a_k\gt 0\)</span> for all <span class="process-math">\(k\geq 0\)</span> and <span class="process-math">\(f(x)\)</span> is a continuous and decreasing function with <span class="process-math">\(f(k) = a_k\)</span> for all <span class="process-math">\(k\geq 0\text{,}\)</span> then we can compare the behaviors of <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> and <span class="process-math">\(\int_{x=0}^\infty f(x)\;dx\text{:}\)</span> the integral and the series are guaranteed to either both diverge or both converge.<div class="autopermalink" data-description="Paragraph"><a href="#thm-IntegralTest-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="act-IntegralTest-2">
+<div class="para logical" id="act-IntegralTest-2-1">
+<div class="para">We’re going to work with a graph of a continuous function, and we’re going to start with a couple of conditions:</div>
+<ol class="decimal" id="act-IntegralTest-2-1-1">
+<li id="act-IntegralTest-2-1-1-1">
+<div class="para" id="act-IntegralTest-2-1-1-1-1">Our function will be continuous wherever it’s defined.<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 8.4.2: Integral Test"><a href="#thm-IntegralTest" title="Copy heading and permalink for Theorem 8.4.2: Integral Test" aria-label="Copy heading and permalink for Theorem 8.4.2: Integral Test">🔗</a></div></article><div class="autopermalink" data-description="Subsection 8.4.2: The Integral Test"><a href="#subsec-IntegralTest" title="Copy heading and permalink for Subsection 8.4.2: The Integral Test" aria-label="Copy heading and permalink for Subsection 8.4.2: The Integral Test">🔗</a></div></section><section class="subsection" id="subsec-WhyConditions"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Item 1"><a href="#act-IntegralTest-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="act-IntegralTest-2-1-1-2">
+<div class="para" id="act-IntegralTest-2-1-1-2-1">Our function will be decreasing on its domain.<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#act-IntegralTest-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="act-IntegralTest-2-1-1-3">
+<div class="para" id="act-IntegralTest-2-1-1-3-1">All of the function outputs will be positive.<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#act-IntegralTest-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="para">Let’s not worry about picking a specific function for this, but we will visualize a graph of one that meets these three requirements.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-IntegralTest-1"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./InfiniteSeries/IntegralTest-1.png" class="contained" alt="A blue curve labeled f(x). The curve is positive, decreasing, and continuous. It is defined on [0,infinity) with, seemingly, a horizontal asymptote at the x-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.4.2<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 8.4.2"><a href="#fig-IntegralTest-1" title="Copy heading and permalink for Figure 8.4.2" aria-label="Copy heading and permalink for Figure 8.4.2">🔗</a></div></figcaption></figure><div class="para" id="act-IntegralTest-2-3">We can then visualize the sequence of terms, <span class="process-math">\(a_k = f(k)\)</span> for <span class="process-math">\(k=0, 1, 2, ...,\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-IntegralTest-2"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./InfiniteSeries/IntegralTest-2.png" class="contained" alt="A blue curve labeled f(x). The curve is positive, decreasing, and continuous. It is defined on [0,infinity) with, seemingly, a horizontal asymptote at the x-axis. On the plot there are red points, labeled a_0, a_1, a_2, ..., a_n."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.4.3<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 8.4.3"><a href="#fig-IntegralTest-2" title="Copy heading and permalink for Figure 8.4.3" aria-label="Copy heading and permalink for Figure 8.4.3">🔗</a></div></figcaption></figure>
+</div>
+<article class="task exercise-like" id="act-IntegralTest-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-IntegralTest-3-1-1">How does the partial sum, <span class="process-math">\(\displaystyle \sum_{k=0}^n a_k\)</span> compare to the Riemann sum for <span class="process-math">\(f(x)\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=n\)</span> with <span class="process-math">\(n\)</span> rectangles?<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="act-IntegralTest-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-IntegralTest-3-2-1">It might help to visualize the Left Riemann sum!<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.4.1.a.1"><a href="#act-IntegralTest-3-2" title="Copy heading and permalink for Hint 8.4.1.a.1" aria-label="Copy heading and permalink for Hint 8.4.1.a.1">🔗</a></div>
+</div></details><details id="act-IntegralTest-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="act-IntegralTest-3-3-1">Hopefully we can see that the partial sum, <span class="process-math">\(\displaystyle \sum_{k=0}^n a_k\)</span> is the exact same thing as the left Riemann sum!<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.4.1.a.1"><a href="#act-IntegralTest-3-3" title="Copy heading and permalink for Solution 8.4.1.a.1" aria-label="Copy heading and permalink for Solution 8.4.1.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 8.4.1.a"><a href="#act-IntegralTest-3" title="Copy heading and permalink for Task 8.4.1.a" aria-label="Copy heading and permalink for Task 8.4.1.a">🔗</a></div></article><article class="task exercise-like" id="act-IntegralTest-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="act-IntegralTest-4-1-1">
+<div class="para">We’re going to visualize the accumulation of <span class="process-math">\(f(x)\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=n\)</span> by thinking about the integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^{x=n} f(x)\;dx\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <figure class="figure figure-like" id="fig-IntegralTest-3"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./InfiniteSeries/IntegralTest-3.png" class="contained" alt="The blue curve, with the area shaded from x=0 to x=n. The area is labeled with the definite integral."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.4.4<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 8.4.4"><a href="#fig-IntegralTest-3" title="Copy heading and permalink for Figure 8.4.4" aria-label="Copy heading and permalink for Figure 8.4.4">🔗</a></div></figcaption></figure> <div class="para" id="act-IntegralTest-4-1-3">How does this area compare to the Riemann sum you thought of above? Compare them with an inequality and make sure you can explain why this has to be true.<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="act-IntegralTest-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-IntegralTest-4-2-1">Here’s a picture of the left Riemann sum!<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-IntegralTest-4"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./InfiniteSeries/IntegralTest-4.png" class="contained" alt="The left Riemann sum formed at each red point."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.4.5<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 8.4.5"><a href="#fig-IntegralTest-4" title="Copy heading and permalink for Figure 8.4.5" aria-label="Copy heading and permalink for Figure 8.4.5">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Hint 8.4.1.b.1"><a href="#act-IntegralTest-4-2" title="Copy heading and permalink for Hint 8.4.1.b.1" aria-label="Copy heading and permalink for Hint 8.4.1.b.1">🔗</a></div>
+</div></details><details id="act-IntegralTest-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-IntegralTest-4-3-1">
+<div class="para">Since <span class="process-math">\(\displaystyle \sum_{k=0}^n a_k\)</span> is a left Riemann sum for <span class="process-math">\(f(x)\text{,}\)</span> and since <span class="process-math">\(f(x)\)</span> is decreasing, then we know that each rectangle is formed from the highest point on each subinterval. That means that each rectangle’s area overestimates the area under the curve on that subinterval. Note, also, that since this is a left Riemann sum, the <span class="process-math">\(n\)</span>th rectangle is hanging past the end of the definite integral. This means that:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=0}^n a_k \gt \int_{x=0}^{x=n} f(x)\;dx\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.4.1.b.1"><a href="#act-IntegralTest-4-3" title="Copy heading and permalink for Solution 8.4.1.b.1" aria-label="Copy heading and permalink for Solution 8.4.1.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 8.4.1.b"><a href="#act-IntegralTest-4" title="Copy heading and permalink for Task 8.4.1.b" aria-label="Copy heading and permalink for Task 8.4.1.b">🔗</a></div></article><article class="task exercise-like" id="act-IntegralTest-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-IntegralTest-5-1-1">Remove the first term of the series, <span class="process-math">\(a_0\text{,}\)</span> and instead think of the sum <span class="process-math">\(\displaystyle \sum_{k=1}^n a_k\text{.}\)</span> Can you still think of this as a Riemann sum to approximate the area from the integral <span class="process-math">\(\displaystyle \int_{x=0}^{x=n} f(x)\;dx\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="act-IntegralTest-5-1-2">How does this new Riemann sum compare to the area formed by the integral? Compare them with an inequality and make sure you can explain why this has to be true.<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="act-IntegralTest-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-IntegralTest-5-2-1">Notice, now, that we need <span class="process-math">\(a_1\)</span> to be the representative height for the first rectangle. How does that change the formation of the rectangles?<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.4.1.c.1"><a href="#act-IntegralTest-5-2" title="Copy heading and permalink for Hint 8.4.1.c.1" aria-label="Copy heading and permalink for Hint 8.4.1.c.1">🔗</a></div>
+</div></details><details id="act-IntegralTest-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="act-IntegralTest-5-3-1">We can form a Right Riemann sum! Note that we don’t "overhang" the interval anymore.<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-IntegralTest-5"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./InfiniteSeries/IntegralTest-5.png" class="contained" alt="The right Riemann sum formed at each red point, other than the first one."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.4.6<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 8.4.6"><a href="#fig-IntegralTest-5" title="Copy heading and permalink for Figure 8.4.6" aria-label="Copy heading and permalink for Figure 8.4.6">🔗</a></div></figcaption></figure><div class="para logical" id="act-IntegralTest-5-3-3">
+<div class="para">Note, now, that we are using the lowest point on each subinterval to form the rectangle. This means that:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=1}^n a_k \lt \int_{x=0}^{x=n} f(x)\;dx\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-5-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.4.1.c.1"><a href="#act-IntegralTest-5-3" title="Copy heading and permalink for Solution 8.4.1.c.1" aria-label="Copy heading and permalink for Solution 8.4.1.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 8.4.1.c"><a href="#act-IntegralTest-5" title="Copy heading and permalink for Task 8.4.1.c" aria-label="Copy heading and permalink for Task 8.4.1.c">🔗</a></div></article><article class="task exercise-like" id="act-IntegralTest-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para logical" id="act-IntegralTest-6-1-1">
+<div class="para">We have thought about two sums, and we can connect them:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=0}^n a_k = a_0 + \sum_{k=1}^n a_k\text{.}
+\end{equation*}
+</div>
+<div class="para">Use the sums to bound the integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\fillinmath{XXXXXXXX} \lt \int_{x=0}^{x=n} f(x)\;dx \lt \fillinmath{XXXXXXXX}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-IntegralTest-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-IntegralTest-6-2-1">
+<div class="displaymath process-math" id="act-IntegralTest-6-2-1-1">
+\begin{align*}
+\sum_{k=1}^n a_k \amp \lt \int_{x=0}^{x=n} f(x)\;dx \lt \sum_{k=0}^n a_k \\
+\left(\sum_{k=0}^n a_k\right)-a_0 \amp \lt \int_{x=0}^{x=n} f(x)\;dx \lt \sum_{k=0}^n a_k 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.4.1.d.1"><a href="#act-IntegralTest-6-2" title="Copy heading and permalink for Solution 8.4.1.d.1" aria-label="Copy heading and permalink for Solution 8.4.1.d.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 8.4.1.d"><a href="#act-IntegralTest-6" title="Copy heading and permalink for Task 8.4.1.d" aria-label="Copy heading and permalink for Task 8.4.1.d">🔗</a></div></article><article class="task exercise-like" id="act-IntegralTest-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para logical" id="act-IntegralTest-7-1-1">
+<div class="para">Similarly, use the integral to bound the sum:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\fillinmath{XXXXXXXX} \lt \sum_{k=0}^n a_k \lt \fillinmath{XXXXXXXX}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-IntegralTest-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-IntegralTest-7-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^{x=n}f(x)\;dx \lt \sum_{k=0}^n a_k \lt a_0 + \int_{x=0}^{x=n}f(x)\;dx
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.4.1.e.1"><a href="#act-IntegralTest-7-2" title="Copy heading and permalink for Solution 8.4.1.e.1" aria-label="Copy heading and permalink for Solution 8.4.1.e.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 8.4.1.e"><a href="#act-IntegralTest-7" title="Copy heading and permalink for Task 8.4.1.e" aria-label="Copy heading and permalink for Task 8.4.1.e">🔗</a></div></article><div class="conclusion" id="act-IntegralTest-8"><div class="para" id="act-IntegralTest-8-1">These bounds are going to be super useful! Discovering them is the main task for finding the connections between improper integrals and infinite series. These inequalities might seem kind of strange at first, but we’re going to apply a limit to everything as <span class="process-math">\(n\to \infty\text{,}\)</span> and then think about our definitions of convergence (<a href="sec-ImproperIntegrals.html#def-ConvergenceImproperIntegral" class="xref" data-knowl="./knowl/xref/def-ConvergenceImproperIntegral.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 7.1.4: Convergence of an Improper Integral">Definition 7.1.4</a> and <a href="sec-IntroSeries.html#def-SeriesConvergence" class="xref" data-knowl="./knowl/xref/def-SeriesConvergence.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.2.2: Series Convergence">Definition 8.2.2</a>).<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralTest-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="autopermalink" data-description="Activity 8.4.1: Integrals and Infinite Series"><a href="#act-IntegralTest" title="Copy heading and permalink for Activity 8.4.1: Integrals and Infinite Series" aria-label="Copy heading and permalink for Activity 8.4.1: Integrals and Infinite Series">🔗</a></div></article><article class="theorem theorem-like" id="thm-IntegralTest"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.4.7</span><span class="period">.</span><span class="space"> </span><span class="title">Integral Test.</span>
+</h4>
+<div class="para" id="thm-IntegralTest-2-1">If <span class="process-math">\(\displaystyle\sum_{k=0}^\infty a_k\)</span> is an infinite series with <span class="process-math">\(a_k\gt 0\)</span> for all <span class="process-math">\(k\geq 0\)</span> and <span class="process-math">\(f(x)\)</span> is a continuous and decreasing function with <span class="process-math">\(f(k) = a_k\)</span> for all <span class="process-math">\(k\geq 0\text{,}\)</span> then we can compare the behaviors of <span class="process-math">\(\displaystyle\sum_{k=0}^\infty a_k\)</span> and <span class="process-math">\(\displaystyle\int_{x=0}^\infty f(x)\;dx\text{:}\)</span> the integral and the series are guaranteed to either both diverge or both converge.<div class="autopermalink" data-description="Paragraph"><a href="#thm-IntegralTest-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 8.4.7: Integral Test"><a href="#thm-IntegralTest" title="Copy heading and permalink for Theorem 8.4.7: Integral Test" aria-label="Copy heading and permalink for Theorem 8.4.7: Integral Test">🔗</a></div></article><details id="thm-IntegralTest-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-IntegralTest-3-1">The proof of this will come in two parts. First, we’ll prove that <span class="process-math">\(\displaystyle \sum_{k=0}^\infty a_k\)</span> converges when <span class="process-math">\(\displaystyle \int_{x=0}^\infty f(x)\;dx\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-IntegralTest-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="thm-IntegralTest-3-2">Then, we’ll prove that <span class="process-math">\(\displaystyle \sum_{k=0}^\infty a_k\)</span> diverges when <span class="process-math">\(\displaystyle \int_{x=0}^\infty f(x)\;dx\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-IntegralTest-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="thm-IntegralTest-3-3">
+<ol class="decimal" id="thm-IntegralTest-3-3-1">
+<li id="thm-IntegralTest-3-3-1-1">
+<div class="para logical" id="thm-IntegralTest-3-3-1-1-1">
+<div class="para">Let’s start with the assumption that <span class="process-math">\(\displaystyle \int_{x=0}^\infty f(x)\;dx\)</span> converges. We know, based on <a href="sec-ImproperIntegrals.html#def-ConvergenceImproperIntegral" class="xref" data-knowl="./knowl/xref/def-ConvergenceImproperIntegral.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 7.1.4: Convergence of an Improper Integral">Definition 7.1.4</a>, that this means that <span class="process-math">\(\displaystyle \lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx\)</span> exists. We also know, since <span class="process-math">\(f(x)\gt 0\text{,}\)</span> that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def-ConvergenceImproperIntegral.html">
+\begin{equation*}
+\lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx \gt \int_{x=0}^{x=n} f(x)\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">This means:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def-ConvergenceImproperIntegral.html" id="thm-IntegralTest-3-3-1-1-1-6">
+\begin{align*}
+\sum_{k=0}^n a_k \amp\lt a_0 + \int_{x=0}^{x=n} f(x)\;dx \\
+\sum_{k=0}^n a_k \amp \lt a_0 + \lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx \\
+\sum_{k=0}^n a_k \amp \lt a_0 + \int_{x=0}^\infty f(x)\;dx
+\end{align*}
+</div>
+<div class="para">This means that the partial sum, <span class="process-math">\(\displaystyle S_n = \sum_{k=0}^n a_k\)</span> has an upper bound.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-IntegralTest-3-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="thm-IntegralTest-3-3-1-1-2">We also know that, since <span class="process-math">\(a_k\gt 0\)</span> for all <span class="process-math">\(k=0,1,2,...\text{,}\)</span> then <span class="process-math">\(S_{n+1}\gt S_n\text{.}\)</span> This means that the sequence of partial sums, <span class="process-math">\(\{S_n\}_{n=0}^\infty\)</span> is both monotonic and bounded, and therefore must converge (by the <a href="sec-IntroSequences.html#thm-MonotoneConvergence" class="xref" data-knowl="./knowl/xref/thm-MonotoneConvergence.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.1.10: Monotone Convergence Theorem">Monotone Convergence Theorem</a>).<div class="autopermalink" data-description="Paragraph"><a href="#thm-IntegralTest-3-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="thm-IntegralTest-3-3-1-1-3">Thus, <span class="process-math">\(\displaystyle\sum_{k=0}^\infty a_k\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-IntegralTest-3-3-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#thm-IntegralTest-3-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="thm-IntegralTest-3-3-1-2">
+<div class="para logical" id="thm-IntegralTest-3-3-1-2-1">
+<div class="para">Now, we can start with the assumption that the integral <span class="process-math">\(\displaystyle \int_{x=0}^\infty f(x)\;dx\)</span> diverges. Since we know that <span class="process-math">\(f(x)\)</span> is positive, then we know that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-IntegralTest.html">
+\begin{equation*}
+\lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx = \infty\text{.}
+\end{equation*}
+</div>
+<div class="para">We can re-consider the inequalities from <a href="sec-IntegralTest.html#act-IntegralTest" class="xref" data-knowl="./knowl/xref/act-IntegralTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.4.1: Integrals and Infinite Series">Activity 8.4.1</a>:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-IntegralTest.html" id="thm-IntegralTest-3-3-1-2-1-5">
+\begin{align*}
+\int_{x=0}^{x=n} f(x)\;dx \amp\lt \sum_{k=0}^n a_k \\
+\lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx \amp \lt \lim_{n\to\infty} \sum_{k=0}^n a_k\\
+\infty \amp\lt \sum_{k=0}^\infty a_k 
+\end{align*}
+</div>
+<div class="para">So then <span class="process-math">\(\displaystyle \sum_{k=0}^\infty a_k\)</span> must also diverge.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-IntegralTest-3-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#thm-IntegralTest-3-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">This is everything we need to prove! Note that we could replicate this proof by swapping the role of the series and the integral to get the same conclusion.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-IntegralTest-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 8.4.7.1"><a href="#thm-IntegralTest-3" title="Copy heading and permalink for Proof 8.4.7.1" aria-label="Copy heading and permalink for Proof 8.4.7.1">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 8.4.2: The Integral Test"><a href="#subsec-IntegralTest" title="Copy heading and permalink for Subsection 8.4.2: The Integral Test" aria-label="Copy heading and permalink for Subsection 8.4.2: The Integral Test">🔗</a></div></section><section class="subsection" id="subsec-WhyConditions"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.4.3</span><span class="space"> </span><span class="title">Why Do We Need These Conditions?</span>
 </h3>
 <div class="para" id="subsec-WhyConditions-2">Riemann sum approximation Oscillating function can make an integral converge but series diverge <span class="process-math">\(\sin^2(\pi(x))\)</span> opposite.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-WhyConditions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
