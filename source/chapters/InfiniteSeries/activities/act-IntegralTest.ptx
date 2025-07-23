@@ -1,0 +1,172 @@
+<activity xml:id="act-IntegralTest">
+    <title>Integrals and Infinite Series</title>
+    <introduction>
+        <p>
+            We're going to work with a graph of a continuous function, and we're going to start with a couple of conditions:
+            <ol>
+                <li>
+                    <p>
+                        Our function will be continuous wherever it's defined.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Our function will be decreasing on its domain.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        All of the function outputs will be positive.
+                    </p>
+                </li>
+            </ol>
+            Let's not worry about picking a specific function for this, but we will visualize a graph of one that meets these three requirements.
+        </p>
+        <figure xml:id="fig-IntegralTest-1">
+            <caption></caption>
+            <image source="./InfiniteSeries/IntegralTest-1.png" width="70%">
+                <shortdescription>A blue curve labeled f(x). The curve is positive, decreasing, and continuous. It is defined on [0,infinity) with, seemingly, a horizontal asymptote at the x-axis.</shortdescription>
+            </image>
+        </figure>
+        <p>
+            We can then visualize the sequence of terms, <m>a_k = f(k)</m> for <m>k=0, 1, 2, ...,</m>.
+        </p>
+        <figure xml:id="fig-IntegralTest-2">
+            <caption></caption>
+            <image source="./InfiniteSeries/IntegralTest-2.png" width="70%">
+                <shortdescription>A blue curve labeled f(x). The curve is positive, decreasing, and continuous. It is defined on [0,infinity) with, seemingly, a horizontal asymptote at the x-axis. On the plot there are red points, labeled a_0, a_1, a_2, ..., a_n.</shortdescription>
+            </image>
+        </figure>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                How does the partial sum, <m>\displaystyle \sum_{k=0}^n a_k</m> compare to the Riemann sum for <m>f(x)</m> from <m>x=0</m> to <m>x=n</m> with <m>n</m> rectangles?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                It might help to visualize the Left Riemann sum!
+            </p>
+        </hint>
+        <solution>
+            <p>
+                Hopefully we can see that the partial sum, <m>\displaystyle \sum_{k=0}^n a_k</m> is the exact same thing as the left Riemann sum!
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                We're going to visualize the accumulation of <m>f(x)</m> from <m>x=0</m> to <m>x=n</m> by thinking about the integral:
+                <me>
+                    \int_{x=0}^{x=n} f(x)\;dx
+                </me>.
+            </p>
+            <figure xml:id="fig-IntegralTest-3">
+                <caption></caption>
+                <image source="./InfiniteSeries/IntegralTest-3.png" width="70%">
+                    <shortdescription>The blue curve, with the area shaded from x=0 to x=n. The area is labeled with the definite integral.</shortdescription>
+                </image>
+            </figure>
+            <p>
+                How does this area compare to the Riemann sum you thought of above? Compare them with an inequality and make sure you can explain why this has to be true.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Here's a picture of the left Riemann sum!
+            </p>
+            <figure xml:id="fig-IntegralTest-4">
+                <caption></caption>
+                <image source="./InfiniteSeries/IntegralTest-4.png" width="70%">
+                    <shortdescription>The left Riemann sum formed at each red point.</shortdescription>
+                </image>
+            </figure>
+        </hint>
+        <solution>
+            <p>
+                Since <m>\displaystyle \sum_{k=0}^n a_k</m> is a left Riemann sum for <m>f(x)</m>, and since <m>f(x)</m> is decreasing, then we know that each rectangle is formed from the highest point on each subinterval. That means that each rectangle's area overestimates the area under the curve on that subinterval. Note, also, that since this is a left Riemann sum, the <m>n</m>th rectangle is hanging past the end of the definite integral. This means that:
+                <me>
+                    \sum_{k=0}^n a_k \gt \int_{x=0}^{x=n} f(x)\;dx
+                </me>.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Remove the first term of the series, <m>a_0</m>, and instead think of the sum <m>\displaystyle \sum_{k=1}^n a_k</m>. Can you still think of this as a Riemann sum to approximate the area from the integral <m>\displaystyle \int_{x=0}^{x=n} f(x)\;dx</m>?
+            </p>
+            <p>
+                How does this new Riemann sum compare to the area formed by the integral? Compare them with an inequality and make sure you can explain why this has to be true.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Notice, now, that we need <m>a_1</m> to be the representative height for the first rectangle. How does that change the formation of the rectangles?
+            </p>
+        </hint>
+        <solution>
+            <p>
+                We can form a Right Riemann sum! Note that we don't "overhang" the interval anymore.
+            </p>
+            <figure xml:id="fig-IntegralTest-5">
+                <caption></caption>
+                <image source="./InfiniteSeries/IntegralTest-5.png" width="70%">
+                    <shortdescription>The right Riemann sum formed at each red point, other than the first one.</shortdescription>
+                </image>
+            </figure>
+            <p>
+                Note, now, that we are using the lowest point on each subinterval to form the rectangle. This means that:
+                <me>
+                    \sum_{k=1}^n a_k \lt \int_{x=0}^{x=n} f(x)\;dx
+                </me>.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                We have thought about two sums, and we can connect them:
+                <me>
+                    \sum_{k=0}^n a_k = a_0 + \sum_{k=1}^n a_k
+                </me>.
+                Use the sums to bound the integral:
+                <me>
+                    <fillin characters="8" /> \lt \int_{x=0}^{x=n} f(x)\;dx \lt <fillin characters="8" />
+                </me>
+            </p>
+        </statement>
+        <solution>
+            <p>
+               <md>
+                <mrow>\sum_{k=1}^n a_k \amp \lt \int_{x=0}^{x=n} f(x)\;dx \lt \sum_{k=0}^n a_k </mrow>
+                <mrow>\left(\sum_{k=0}^n a_k\right)-a_0 \amp \lt \int_{x=0}^{x=n} f(x)\;dx \lt \sum_{k=0}^n a_k </mrow>
+               </md> 
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Similarly, use the integral to bound the sum:
+                <me>
+                    <fillin characters="8" /> \lt \sum_{k=0}^n a_k \lt <fillin characters="8" />
+                </me>
+            </p>
+        </statement>
+        <solution>
+            <p>
+               <me>
+                \int_{x=0}^{x=n}f(x)\;dx \lt \sum_{k=0}^n a_k \lt a_0 + \int_{x=0}^{x=n}f(x)\;dx
+               </me>
+            </p>
+        </solution>
+    </task>
+    <conclusion>
+        <p>
+            These bounds are going to be super useful! Discovering them is the main task for finding the connections between improper integrals and infinite series. These inequalities might seem kind of strange at first, but we're going to apply a limit to everything as <m>n\to \infty</m>, and then think about our definitions of convergence (<xref ref="def-ConvergenceImproperIntegral"/> and <xref ref="def-SeriesConvergence"/>).
+        </p>
+    </conclusion>
+</activity>

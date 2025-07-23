@@ -39,7 +39,7 @@
           <cell><m>f(x)</m></cell>
           <cell><m>a_k</m></cell>
         </row>
-        <row>
+        <row bottom="minor">
           <cell>Graph</cell>
           <cell><xref ref="fig-FunctionSequence-1"/></cell>
           <cell><xref ref="fig-FunctionSequence-2"/></cell>
@@ -54,12 +54,12 @@
           <cell><m>\displaystyle A(t) = \int_{x=0}^{x=t} f(x)\;dx</m></cell>
           <cell><m>\displaystyle S_n = \sum_{k=0}^n a_k</m></cell>
         </row>
-        <row>
+        <row >
           <cell>Infinite Accumulation</cell>
           <cell>Improper Integral</cell>
           <cell>Infinite Series</cell>
         </row>
-        <row>
+        <row bottom="medium">
           <cell></cell>
           <cell><m>\displaystyle\int_{x=0}^\infty f(x)\;dx</m></cell>
           <cell><m>\displaystyle\sum_{k=0}^\infty a_k</m></cell>
@@ -75,6 +75,7 @@
     <p>
       The Integral Test is really about connecting the behavior of an integral and a series, and the way that we'll do it is by trying to visualize what an infinite series is (a sum of function values, where the function inputs are spaced apart by 1) and linking that to a Riemann sum. From there, we'll use the <xref ref="thm-MonotoneConvergence" text="title"/> on the sequence of partial sums to show that the series converges.
     </p>
+    <xi:include href="./activities/act-IntegralTest.ptx" />
     <theorem xml:id="thm-IntegralTest">
       <title>Integral Test</title>
       <statement>
@@ -82,6 +83,55 @@
           If <m>\displaystyle\sum_{k=0}^\infty a_k</m> is an infinite series with <m>a_k\gt 0</m> for all <m>k\geq 0</m> and <m>f(x)</m> is a continuous and decreasing function with <m>f(k) = a_k</m> for all <m>k\geq 0</m>, then we can compare the behaviors of <m>\displaystyle\sum_{k=0}^\infty a_k</m> and <m>\displaystyle\int_{x=0}^\infty f(x)\;dx</m>: the integral and the series are guaranteed to either both diverge or both converge.
         </p> 
       </statement>
+      <proof>
+        <p>
+          The proof of this will come in two parts. First, we'll prove that <m>\displaystyle \sum_{k=0}^\infty a_k</m> converges when <m>\displaystyle \int_{x=0}^\infty f(x)\;dx</m> converges.
+        </p>
+        <p>
+          Then, we'll prove that <m>\displaystyle \sum_{k=0}^\infty a_k</m> diverges when <m>\displaystyle \int_{x=0}^\infty f(x)\;dx</m> diverges.
+        </p>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Let's start with the assumption that <m>\displaystyle \int_{x=0}^\infty f(x)\;dx</m> converges. We know, based on <xref ref="def-ConvergenceImproperIntegral"/>, that this means that <m>\displaystyle \lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx</m> exists. We also know, since <m>f(x)\gt 0</m>, that 
+                <me>
+                  \lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx \gt \int_{x=0}^{x=n} f(x)\;dx
+                </me>.
+                This means:
+                <md>
+                  <mrow>\sum_{k=0}^n a_k \amp\lt a_0 + \int_{x=0}^{x=n} f(x)\;dx </mrow>
+                  <mrow>\sum_{k=0}^n a_k \amp \lt a_0 + \lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx </mrow>
+                  <mrow>\sum_{k=0}^n a_k \amp \lt a_0 + \int_{x=0}^\infty f(x)\;dx</mrow>
+                </md>
+                This means that the partial sum, <m>\displaystyle S_n = \sum_{k=0}^n a_k</m> has an upper bound.
+              </p>
+              <p>
+                We also know that, since <m>a_k\gt 0</m> for all <m>k=0,1,2,...</m>, then <m>S_{n+1}\gt S_n</m>. This means that the sequence of partial sums, <m>\{S_n\}_{n=0}^\infty</m> is both monotonic and bounded, and therefore must converge (by the <xref ref="thm-MonotoneConvergence" text="title"/>).
+              </p>
+              <p>
+                Thus, <m>\displaystyle\sum_{k=0}^\infty a_k</m> converges.
+              </p>
+            </li>
+            <li>
+              <p>
+                Now, we can start with the assumption that the integral <m>\displaystyle \int_{x=0}^\infty f(x)\;dx</m> diverges. Since we know that <m>f(x)</m> is positive, then we know that
+                <me>
+                  \lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx = \infty
+                </me>.
+                We can re-consider the inequalities from <xref ref="act-IntegralTest"/>:
+                <md>
+                  <mrow>\int_{x=0}^{x=n} f(x)\;dx \amp\lt \sum_{k=0}^n a_k </mrow>
+                  <mrow>\lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx \amp \lt \lim_{n\to\infty} \sum_{k=0}^n a_k</mrow>
+                  <mrow>\infty \amp\lt \sum_{k=0}^\infty a_k </mrow>
+                </md>
+                So then <m>\displaystyle \sum_{k=0}^\infty a_k</m> must also diverge.
+              </p>
+            </li>
+          </ol>
+          This is everything we need to prove! Note that we could replicate this proof by swapping the role of the series and the integral to get the same conclusion.
+        </p>
+      </proof>
     </theorem>
   </subsection>
   <subsection xml:id="subsec-WhyConditions">
