@@ -19,7 +19,7 @@
         </statement>
         <hint>
             <p>
-                Try thinking about how we might find <m>\lim_{k\to\infty} (-1)^k a_k</m>, especially using the <xref ref="thm-SqueezeTheorem" text="title"/>.
+                Try thinking about how we might find <m>\displaystyle\lim_{k\to\infty} (-1)^k a_k</m>, especially using the <xref ref="thm-SqueezeTheorem" text="title"/>.
             </p>
         </hint>
         <hint>
@@ -38,5 +38,26 @@
                 Is either of these sequences more or less likely to converge? Does this tell us anything about whether or not the corresponding series converges?          
             </p>
         </statement>
+        <hint>
+            <p>
+                It might be helpful to plot these partial sums! Referencing a picture like <xref ref="fig-PartialSum-3"/> and think about how this will change the plot of partial sums for terms that alternate in sign.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now make a conjecture about which infinite series is more likely to converge:
+                <md>
+                    <mrow> \sum_{k=0}^\infty a_k \amp \amp \text{vs} \amp \amp \sum_{k=0}^\infty (-1)^k a_k</mrow>
+                </md>
+                Remember that <m>a_k\gt 0</m> for <m>k=0,1,2,...</m>, so the only differences are the changes in sign.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Remember that series convergence is defined by the behavior of the sequence of partial sums!
+            </p>
+        </hint>
     </task>
 </activity>

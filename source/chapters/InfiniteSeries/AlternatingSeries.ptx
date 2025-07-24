@@ -2,35 +2,126 @@
 
 <section xml:id="sec-AlternatingSeries" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Alternating Series and Conditional Convergence</title>
-
-  <p>Before we move too far forward, let's circle back to a point made in <xref ref="subsec-WhyConditions"/>. In the <xref ref="thm-IntegralTest" text="title"/>, we required the terms of our series (and the continuous function we connected it with) to be positive. This was really just a mechanism that allowed us to say, in our proof, that the sequence of partial sums was monotonic. When we accumulate more of a positive thing, the total gets bigger. This is half of what we needed for us to employ the <xref ref="thm-MonotoneConvergence" text="title"/>. Because this is such a useful tool, we'll see more of this "positive term series" condition showing up in the tools we use to see if a series converges.</p>
-  <p>
-    But that makes this a perfect time to stop and ask a hallowed mathematical question: <em>What happens if that property isn't there?</em> What happens when our series does not only have positive terms?
-  </p>
-  <p>
-    We definitely have fewer tools to use, since we don't get anything that relies on applying the <xref ref="thm-MonotoneConvergence" text="title"/> to partial sums. So instead, we'll take a brief detour into something we call <term>Alternating Series</term> (a series whose terms alternate in sign).
-  </p>
-  <xi:include href="./activities/act-LikelyToConverge.ptx" />
-
-  <definition xml:id="def-AlternatingSeries">
-  <title>Alternating Series</title>
-    <statement>
+  <introduction>
+    <p>
+      Before we move too far forward, let's circle back to a point made in <xref ref="subsec-WhyConditions" text="type-global-title"/>. In the <xref ref="thm-IntegralTest" text="title"/>, we required the terms of our series (and the continuous function we connected it with) to be positive. This was really just a mechanism that allowed us to say, in our proof, that the sequence of partial sums was monotonic. When we accumulate more of a positive thing, the total gets bigger. This is half of what we needed for us to employ the <xref ref="thm-MonotoneConvergence" text="title"/>. And because this is such a useful tool, we'll see more of this "positive term series" condition showing up in the tools we use to see if a series converges.
+    </p>
+    <p>
+      But that makes this a perfect time to stop and ask a hallowed mathematical question: <em>What happens if that property isn't there?</em> What happens when our series does not only have positive terms?
+    </p>
+    <p>
+      We definitely have fewer tools to use, since we don't get anything that relies on applying the <xref ref="thm-MonotoneConvergence" text="title"/> to partial sums. So instead, we'll take a brief detour into something we call <term>Alternating Series</term> (a series whose terms alternate in sign).
+    </p>
+    <xi:include href="./activities/act-LikelyToConverge.ptx" />
+  </introduction>
+  <subsection xml:id="subsec-AlternatingSeries">
+    <title>Defining Alternating Series, and the Main Result</title>
+    <p>
+      Ok so hopefully we have convinced ourselves that a series that has terms that alternate in sign might have an "easier" time converging than a series with only positive terms. Let's start with a definition (so that we can continue to refer to these types of series easily), and then move towards the main result.
+    </p>
+    <definition xml:id="def-AlternatingSeries">
+    <title>Alternating Series</title>
+      <statement>
+        <p>
+          An infinite series <m>\displaystyle\sum_{k=0}^\infty a_k</m> is called an <term>Alternating Series</term> when <m>a_k = (-1)^k|a_k|</m> or <m>a_k = (-1)^{k+1}|a_k|</m> for all <m>k=0,1,2,...</m>. That is, the sign of the terms alternates:
+          <me>
+            \sum_{k=0}^\infty a_k = |a_0| - |a_1| + |a_2| - + ...
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      So this is the type of series we're thinking of: the terms perfectly alternate in sign. 
+    </p>
+    <aside>
       <p>
-        An infinite series <m>\sum_{k=0}^\infty a_k</m> is called an <term>Alternating Series</term> when <m>a_k = (-1)^k|a_k|</m> or <m>a_k = (-1)^{k+1}|a_k|</m> for all <m>k=0,1,2,...</m>. That is, the sign of the terms alternates:
-        <me>
-          \sum_{k=0}^\infty a_k = |a_0| - |a_1| + |a_2| - + ...
-        </me>
+        At the beginning of this section, we talked about removing conditions and seeing what happens. We are not fully generalizing to terms that are just different in sign, since we still have a specific format that the terms need to hold to: switching between positive, negative, positive negative, etc. Series that have a less consistent pattern between positive and negative signs are harder to think about, and so we will have to be satisfied with loosening the restrictions on signs of the terms without fully removing any conditions.
       </p>
-    </statement>
-  </definition>
-
-  <theorem xml:id="thm-AlternatingSeriesTest">
-    <title>Alternating Series Test</title>   
-    <statement>
-      <p>
-        If <m>\sum_{k=0}^\infty a_k</m> is an alternating series and the size of the terms <m>|a_k|</m> is decreasing, then if <m>\lim_{k\to \infty} a_k = 0</m> then <m>\sum_{k=0}^\infty a_k</m> converges.
-      </p>
-    </statement>
-  </theorem>
-  
+    </aside>
+    <p>
+      Now, we will bring into focus one of the main results about alternating series before investigating these types of series (and how they converge) further.
+    </p>
+    <p>
+      To lead into this new result, let's remind ourselves of a few things:
+      <ol>
+        <li>
+          <p>
+            Remember the <xref ref="thm-DivergenceTest" text="title"/>. We, specifically, want to remember that, in general, we don't know anything about a series if <m>\displaystyle \lim_{k\to\infty} a_k=0</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            We have typically been looking at infinite series where we impose a further restriction on the terms: we looked at infinite series with only <em>positive</em> terms. We can get a lot more information about these series!
+          </p>
+        </li>
+        <li>
+          <p>
+            Now we are looking at infinite series with a different kind of structure on their terms: the signs alternate. So it won't be a surprise when we get to add information about them!
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      The big idea that we'll use the extra information about these alternating series (based on how we defined them) to get more information from the limit of the terms. Normally we don't get any information when <m>\displaystyle \lim_{k\to\infty} a_k = 0</m>: the series of those terms could converge or diverge, and we can't tell! But with this new structure of the terms (the alternating signs), we'll actually be able to tell something from the limit of the terms being 0.
+    </p>
+    <p>
+      Let's look at it! We're going to think about visualizing the partial sums.
+    </p>
+    <p>
+      In <xref ref="fig-PartialSum-3"/>, we looked at the partial sums of an infinite series and saw how the terms made up the differences between those partial sums. We're going to think about this same picture, but think about it through the lense of:
+      <ol>
+        <li>
+          <p>
+            an alternating series (with terms that alternate in sign) where...
+          </p>
+        </li>
+        <li>
+          <p>
+            the terms of the alternating series approach 0 in the limit: <m>\displaystyle \lim_{k\to\infty} a_k = 0</m>. Note that this means that the <em>size</em> of the terms must go to 0 in the limit, <m>|a_k|\to 0</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <theorem xml:id="thm-AlternatingSeriesTest">
+      <title>Alternating Series Test</title>   
+      <statement>
+        <p>
+          If <m>\displaystyle\sum_{k=0}^\infty a_k</m> is an alternating series and the size of the terms <m>|a_k|</m> is decreasing, then if <m>\displaystyle\lim_{k\to \infty} a_k = 0</m> then <m>\displaystyle\sum_{k=0}^\infty a_k</m> converges.
+        </p>
+      </statement>
+    </theorem>
+    <p>
+      We can actually get another result really easily from this one! It's about how we might approximate the value that an infinite series converges to.
+    </p>
+    <p>
+      We know that if a series converges, it's because the limit of the partial sums exists. So we "just" need to find what the real number, <m>S</m>, is when
+      <me>
+        \lim_{n\to\infty} \sum_{k=0}^n a_k = S
+      </me>.
+      We said earlier, though, that this is pretty hard to do! We can always approximate this limit, though, by looking at a <em>big</em> partial sum: if the limit exists, then probably adding up the first 10,000 terms will be a pretty good approximation (since we don't expect the partial sums to change, much, as <m>n</m> gets bigger). But how many terms is enough to give us a good enough approximation?
+    </p>
+    <p>
+      That's a hard question to answer, until we think about alternating series.
+    </p>
+    <xi:include href="./activities/act-ApproximatingAlternating.ptx" />
+    <theorem xml:id="thm-ApproximatingAlternating">
+      <title>Approximations of Alternating Series</title>
+      <statement>
+        <p>
+          If <m>\displaystyle \sum_{k=0}^\infty a_k</m> is a converging alternating series, then the value <m>S</m> that the series converges to is bound between consecutive partial sums:
+          <me>
+            S_n \lt S \lt S_{n+1} \text{ for any integer } n\geq 0
+          </me>.
+          Another way of saying this is that the partial sum <m>S_n</m> approximates the actual value of <m>\displaystyle \sum_{k=0}^\infty a_k</m> with a maximum error of <m>|a_{n+1}|</m>.
+        </p>
+      </statement>
+    </theorem>
+    
+  </subsection>
+  <subsection xml:id="subsec-ConditionalConvergence">
+    <title>Convergence, More Carefully</title>
+    <p>
+      
+    </p>
+  </subsection>
 </section>
