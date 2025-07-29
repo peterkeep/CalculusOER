@@ -8,7 +8,7 @@
       In this section, we'll stop and recap some of the common series types that we should recognize moving forward. We'll look at the structure of these series (mainly the functions defining the <em>terms</em> of the series) as well as the convergence criteria for them.
     </p>
     <p>
-      Look back to <xref ref="act-IntroSeries"/>. We noticed that we were able to find an explicit formula for the <m>n</m>th partial sum, which allowed us to evaluate <m>\lim_{n\to\infty}S_n</m>. We noticed this again in <xref ref="ex-geometric"/>. 
+      Look back to <xref ref="act-IntroSeries"/>. We noticed that we were able to find an explicit formula for the <m>n</m>th partial sum, which allowed us to evaluate <m>\displaystyle\lim_{n\to\infty}S_n</m>. We noticed this again in <xref ref="ex-geometric"/>. 
     </p>
     <p>
       But there are some differences between <em>why</em> we were able to find formulas for the <m>n</m>th partial sum in each of these examples. Let's first focus on the infinite series with terms defined by exponential functions.
@@ -16,6 +16,25 @@
   </introduction>
   <subsection xml:id="subsec-GeometricSeries">
     <title>Geometric Series</title>
+    <p>
+      We're going to name these series and define them explicitly. The name, <term>geometric</term>, comes from the idea of a <term>geometric mean</term>: each term in the series is the geometric mean of the term before it and after it.
+    </p>
+    <aside>
+      <p>
+        The geometric mean is a way of finding a kind of average. Instead of adding up the values and dividing by the number of values, we multiply the values and then take an <m>n</m>th root, where <m>n</m> is the number of things averaged.
+      </p>
+      <p>
+        For instance, a geometric mean of the numbers 1, 4, and 5 is:
+        <me>
+          \sqrt[3]{1\cdot 4\cdot 5} = \sqrt[3]{20}
+        </me>
+        This is approximately 2.714. We can compare that to the arithmetic mean:
+        <me>
+          \dfrac{1+4+5}{3} = \dfrac{10}{3}
+        </me>.
+        These are just different kinds of measures of "center" of a list of values, although you might be most familiar with the arithmetic mean.
+      </p>
+    </aside>
     <definition xml:id="def-GeometricSeries">
     <title>Geometric Series</title>
     <statement>
@@ -26,11 +45,17 @@
       </p>
     </statement>
     </definition>
+    <p>
+      We noticed in <xref ref="sec-IntroSeries" text="type-global-title"/> that these kinds of series, with their exponential structure in the terms, make it relatively easy to find patterns or explicit formulas for the partial sums. Since we can find a formula for <m>S_n</m> based on <m>n</m>, we can find <m>\displaystyle\lim_{n\to\infty}S_n</m>. This was something we noted then, and said that it was a pretty rare property.
+    </p>
+    <p>
+      Let's generalize this a bit, and come up with a general formula for these partial sums. Once we have that, we will be able to find out what any geometric series converges to (if it does converge).
+    </p>
     <theorem xml:id="thm-GeometricSeries">
       <title>Geometric Series Convergence Criteria</title>
       <statement>
         <p>
-          A geometric series <m>\sum_{k=0}^\infty ar^k</m> converges to <m>\frac{a}{1-r}</m> when <m>|r|\lt 1</m> and diverges if <m>|r|\geq 1</m>.
+          A geometric series <m>\displaystyle\sum_{k=0}^\infty ar^k</m> converges to <m>\dfrac{a}{1-r}</m> when <m>|r|\lt 1</m> and diverges if <m>|r|\geq 1</m>.
         </p>
       </statement>
     </theorem>
@@ -38,6 +63,12 @@
   </subsection>
   <subsection xml:id="subsec-pSeries">
     <title><m>p</m>-Series</title>
+    <p>
+      Another type of structure that we can take advantage of is power functions. This way, we can leverage the <xref ref="thm-IntegralTest" text="title"/> (since antidifferentiating using the <xref ref="thm-PowerRuleAntiderivatives" text="title"/> will be easy) to classify whether or not these series converge.
+    </p>
+    <p>
+      Let's start by naming these. We'll focus on power functions with negative exponents, or reciprocal power functions.
+    </p>
     <definition xml:id="def-pSeries">
     <title><m>p</m>-Series</title>
       <statement>
@@ -48,11 +79,14 @@
         </p>
       </statement>
     </definition>
+    <p>
+      Now, we just need to think about integration, and the convergence classification comes quickly from there.
+    </p>
     <theorem xml:id="thm-pSeries">
       <title><m>p</m>-Series Convergence Criteria</title>
       <statement>
         <p>
-          A <m>p</m>-series <m>\sum_{k=1}^\infty \frac{1}{k^p}</m> converges when <m>p\gt 1</m> and diverges when <m>p\leq 1</m>.
+          A <m>p</m>-series <m>\displaystyle\sum_{k=1}^\infty \frac{1}{k^p}</m> converges when <m>p\gt 1</m> and diverges when <m>p\leq 1</m>.
         </p>
       </statement>
       <proof>

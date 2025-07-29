@@ -1,6 +1,6 @@
 <activity xml:id="act-ImpossibleCombinations">
     <title>(Im)Possible Combinations</title>
-    <introduction>
+    <statement>
         <p>
             When we have thought about infinite series, we have thought about three different mathematical objects: the sequence of terms of the series, the sequence of partial sums of the series, and the infinite series itself. As a reminder, if we had an infinite series 
             <me>
@@ -19,7 +19,7 @@
                     </p>
                 </li>
             </ul>
-            For each of these three objects -- the terms, the partial sums, and the series -- we have some notion of what it means for that object to converge or diverge.
+            For each of these three objects<mdash/>the terms, the partial sums, and the series<mdash/>we have some notion of what it means for that object to converge or diverge.
         </p>
         <p>
             Consider the following table of all of the different combinations of convergence and divergence of the three objects. For each combination, decide whether this combination is possible or impossible. If it is possible, give an example of an infinite series whose terms, partial sums, and the series itself converge/diverge appropriately. If it is impossible, give an explanation of why.
@@ -93,7 +93,7 @@
         </tabular>
         </table>
         
-    </introduction>
+    </statement>
     <hint>
         <p>
             We can think back to some results or definitions that connect pairs of these objects. Can you think of any result or definition that connects an infinite series and a sequence of partial sums? What about a result or definition that connects the sequence of terms with the infinite series?
