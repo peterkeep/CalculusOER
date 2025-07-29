@@ -2,15 +2,90 @@
     <title>Approximating an Alternating Series</title>
     <introduction>
         <p>
-            Let's look, again, at the picture of the partial sums of an alternating series in <xref ref="fig-PartialSum-3"/>. Now, let's change this, so that the series has terms that alternate in sign. We'll start with <m>a_0</m> being positive, so that all of the "even-indexed" terms are positive and all of the "odd-indexed" terms are negative.
+            Let's look, again, at the picture of the partial sums of an alternating series in <xref ref="fig-AlternatingPartial-1"/>. We're going to assume that the series converges, which means that:
+            <ul>
+                <li>
+                    <p>
+                        <m>\displaystyle \lim_{n\to\infty} S_n</m> exists.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\displaystyle\lim_{n\to\infty}a_n = 0</m>.
+                    </p>
+                </li>
+            </ul>
+            Let's add to our figure.
         </p>
-        
+        <figure xml:id="fig-AlternatingPartial-2">
+            <caption></caption>
+            <image source="./InfiniteSeries/AlternatingPartial-2.png" width="70%">
+                <shortdescription>
+                    Red points on a plot. They are labeled S_0, S_1, S_2, S_3, S_4, S_5, S_6, ... S_n, S_(n+1). The points bounce up and down, where the even indexed points are above. The vertical distance between each point is green and is labeled a_0, a_1, a_2, a_3, a_4, a_5, a_6, ... a_n, a_(n+1). These are getting smaller as we move from point to point. This means that the red points are getting closer to a grey dashed line that cuts through the points labeled lim_(n to infinity) S_n. 
+                </shortdescription>
+            </image>
+        </figure>
     </introduction>
     <task>
         <statement>
             <p>
-                
+                Why are the even-indexed partial sums sitting above the odd-indexed partial sums?
             </p>
         </statement>
+        <hint>
+            <p>
+                We started, in this case, with a positive term <m>a_0</m>, and then the rest of the signs alternate. How does this change the partial values of partial sums?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Why are the even-indexed partial sums sitting above the horizontal line, <m>\displaystyle \lim_{n\to\infty} S_n</m>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We know that the sizes of the terms, <m>|a_n|</m>, decreases. This means that the sequence <m>\{S_0, S_2, S_4, ...\}</m> is decreasing.
+            </p>
+            <p>
+                What does that mean about how these partial sums relate to the limit of partial sums?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Why are the odd-indexed partial sums sitting below the horizontal line, <m>\displaystyle \lim_{n\to\infty} S_n</m>?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We know that the sizes of the terms, <m>|a_n|</m>, decreases. This means that the sequence <m>\{S_1, S_3, S_5, ...\}</m> is increasing.
+            </p>
+            <p>
+                What does that mean about how these partial sums relate to the limit of partial sums?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                If we were trying to approximate the value of <m>\displaystyle\lim_{n\to\infty} S_n</m>, how can we use the partial sums to build an interval that approximates the value?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                Since all of the even-indexed partial sums are upper bounds of any approximation and the odd-indexed partial sums are lower bounds.  
+            </p>
+            <p>
+                This means that any pair of partial sums serves as an approximation:
+                <md>
+                    <mrow>S_1 \lt \amp\lim_{n\to\infty} S_n \lt S_0 </mrow>
+                    <mrow>S_{2n+1} \lt \amp \lim_{n\to\infty} S_n \lt S_{2n}
+                    </mrow>
+                </md>
+            </p>
+        </solution>
     </task>
 </activity>

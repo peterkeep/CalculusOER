@@ -85,7 +85,9 @@
     <figure xml:id="fig-AlternatingPartial-1">
             <caption>Partial sums of an alternating series.</caption>
             <image source="./InfiniteSeries/AlternatingPartial-1.png" width="60%">
-                <shortdescription>(for accessibility)</shortdescription>
+                <shortdescription>
+                  Red points on a plot. They are labeled S_0, S_1, S_2, S_3, S_4, S_5, S_6, ... S_n, S_(n+1). The points bounce up and down, where the even indexed points are above. The vertical distance between each point is green and is labeled a_0, a_1, a_2, a_3, a_4, a_5, a_6, ... a_n, a_(n+1). These are getting smaller as we move from point to point.
+                </shortdescription>
             </image>
         </figure>
         <p>
@@ -242,10 +244,9 @@
       <title>Approximations of Alternating Series</title>
       <statement>
         <p>
-          If <m>\displaystyle \sum_{k=0}^\infty a_k</m> is a converging alternating series, then the value <m>S</m> that the series converges to is bound between consecutive partial sums:
-          <me>
-            S_n \lt S \lt S_{n+1} \text{ for any integer } n\geq 0
-          </me>.
+          If <m>\displaystyle \sum_{k=0}^\infty a_k</m> is a converging alternating series, then the value <m>S</m> that the series converges to is bound between consecutive partial sums.
+        </p>
+        <p>
           Another way of saying this is that the partial sum <m>S_n</m> approximates the actual value of <m>\displaystyle \sum_{k=0}^\infty a_k</m> with a maximum error of <m>|a_{n+1}|</m>.
         </p>
       </statement>
@@ -255,7 +256,59 @@
   <subsection xml:id="subsec-ConditionalConvergence">
     <title>Convergence, More Carefully</title>
     <p>
-      
+      Let's circle back to an important point from <xref ref="act-LikelyToConverge"/>: an alternating series is more likely to converge than its positive-term counterpart.
     </p>
+    <p>
+      Let's look at a classic example of this: the alternating harmonic series.
+    </p>
+    <xi:include href="./activities/act-AlternatingHarmonicSeries.ptx" />
+    <p>
+      Let's look at another "version" of this "same" series. You'll notice that we're using scare-quotes on "version" and "same," and that's what we're going to investigate.
+    </p>
+    <xi:include href="./activities/act-RearrangedAlternatingHarmonicSeries.ptx" />
+    <p>
+      This is strange! We have two series that seem to be the same thing (one is just a re-arranged version of the other) that both converge, but they converge to different things!
+    </p>
+    <p>
+      This doesn't seem to follow the <em>normal</em> rules of addition: we lose the normal associative property of addition, where the order or the way that we group terms to add typically doesn't matter. Here it does!
+    </p>
+    <p>
+      It turns out (and we won't prove this) that this type of convergence happens only for alternating series, and further it only happens for alternating series whose positive-term counterpart diverges.
+    </p>
+    <definition xml:id="def-ConditionalConvergence">
+      <title>Conditional (and Absolute) Convergence</title> 
+      <statement>
+        <p>
+          If <m>\displaystyle \sum_{k=0}^\infty a_k</m> is a converging alternating series, then we say that the alternating series <m>\displaystyle\sum_{k=0}^\infty a_k</m> <term>converges conditionally</term> if <m>\displaystyle\sum_{k=0}^\infty |a_k|</m> diverges.
+        </p>
+        <p>
+          If, instead, the positive-term series <m>\displaystyle \sum_{k=0}^\infty |a_k|</m> converges as well, then we say that the alternating series <m>\displaystyle\sum_{k=0}^\infty a_k</m> <term>converges absolutely</term>.
+        </p>
+      </statement>
+    </definition>
+
   </subsection>
+  <conclusion>
+    <p>
+      So now, for a series whose terms alternate in size, we can:
+      <ul>
+        <li>
+          <p>
+            Classify whether the series converges or not (<xref ref="thm-AlternatingSeriesTest" text="type-global-title"/>).
+          </p>
+        </li>
+        <li>
+          <p>
+            Further classify any converging alternating series to see whether the value it converges to is invariant to re-arrangement. (<xref ref="def-ConditionalConvergence" text="type-global-title"/>).
+          </p>
+        </li>
+        <li>
+          <p>
+            Approximate the value that the series converges to using the <m>n</m>th partial sum, and also include an error bound on that approximation using the <m>|a_{n+1}|</m> (<xref ref="thm-ApproximatingAlternating"/>).
+          </p>
+        </li>
+      </ul>
+    </p>
+  </conclusion>
+
 </section>
