@@ -55,16 +55,16 @@
         <title>Direct Comparison Test</title>        
         <statement>
           <p>
-            If <m>\sum_{k=0}^\infty a_k</m> and <m>\sum_{k=10}^\infty</m> are infinite series with positive terms (<m>a_k\gt 0</m> and <m>b_k\gt 0</m> for <m>k\geq 0</m>) with the ordering <m>a_k \leq b_k</m> for <m>k\geq 0</m>, then:
+            If <m>\displaystyle\sum_{k=0}^\infty a_k</m> and <m>\displaystyle\sum_{k=0}^\infty b_k</m> are infinite series with positive terms (<m>a_k\gt 0</m> and <m>b_k\gt 0</m> for <m>k\geq 0</m>) with the ordering <m>a_k \leq b_k</m> for <m>k\geq 0</m>, then:
             <ul>
               <li>
                 <p>
-                  If <m>\sum_{k=0}^\infty a_k</m> diverges, then <m>\sum_{k=0}^\infty b_k</m> also diverges.
+                  If <m>\displaystyle\sum_{k=0}^\infty a_k</m> diverges, then <m>\displaystyle\sum_{k=0}^\infty b_k</m> also diverges.
                 </p>
               </li>
               <li>
                 <p>
-                  If <m>\sum_{k=0}^\infty b_k</m> converges, then <m>\sum_{k=0}^\infty a_k</m> also converges.
+                  If <m>\displaystyle\sum_{k=0}^\infty b_k</m> converges, then <m>\displaystyle\sum_{k=0}^\infty a_k</m> also converges.
                 </p>
               </li>
             </ul>
@@ -84,7 +84,7 @@
     <title>Limit Comparison Test</title>
     <statement>
       <p>
-         If <m>\sum_{k=0}^\infty a_k</m> and <m>\sum_{k=0}^\infty b_k</m> are infinite series with positive terms (<m>a_k\gt 0</m> and <m>b_k\gt 0</m> for <m>k\geq 0</m>), then we can consider <m>\displaystyle\lim_{k\to\infty} \frac{a_k}{b_k}</m>.
+         If <m>\displaystyle\sum_{k=0}^\infty a_k</m> and <m>\displaystyle\sum_{k=0}^\infty b_k</m> are infinite series with positive terms (<m>a_k\gt 0</m> and <m>b_k\gt 0</m> for <m>k\geq 0</m>), then we can consider <m>\displaystyle\lim_{k\to\infty} \frac{a_k}{b_k}</m>.
          <ul>
           <li>
             <p>
@@ -92,12 +92,12 @@
               <ul>
                 <li>
                   <p>
-                    If <m>\sum_{k=0}^\infty a_k</m> diverges, then <m>\sum_{k=0}^\infty b_k</m> diverges as well.
+                    If <m>\displaystyle\sum_{k=0}^\infty a_k</m> diverges, then <m>\displaystyle\sum_{k=0}^\infty b_k</m> diverges as well.
                   </p>
                 </li>
                  <li>
                   <p>
-                    If <m>\sum_{k=0}^\infty b_k</m> converges, then <m>\sum_{k=0}^\infty a_k</m> converges as well.
+                    If <m>\displaystyle\sum_{k=0}^\infty b_k</m> converges, then <m>\displaystyle\sum_{k=0}^\infty a_k</m> converges as well.
                   </p>
                 </li>
               </ul>
@@ -109,12 +109,12 @@
               <ul>
                 <li>
                   <p>
-                    If <m>\sum_{k=0}^\infty a_k</m> converges, then <m>\sum_{k=0}^\infty b_k</m> converges as well.
+                    If <m>\displaystyle\sum_{k=0}^\infty a_k</m> converges, then <m>\displaystyle\sum_{k=0}^\infty b_k</m> converges as well.
                   </p>
                 </li>
                  <li>
                   <p>
-                    If <m>\sum_{k=0}^\infty b_k</m> diverges, then <m>\sum_{k=0}^\infty a_k</m> diverges as well.
+                    If <m>\displaystyle\sum_{k=0}^\infty b_k</m> diverges, then <m>\displaystyle\sum_{k=0}^\infty a_k</m> diverges as well.
                   </p>
                 </li>
               </ul>
@@ -122,7 +122,7 @@
           </li>
           <li>
             <p>
-              If <m>\displaystyle\lim_{k\to\infty} \frac{a_k}{b_k} = L</m> where <m>L</m> is some non-zero real number, then <m>\sum_{k=0}^\infty a_k</m> and <m>\sum_{k=0}^\infty b_k</m> will either both converge or both diverge.
+              If <m>\displaystyle\lim_{k\to\infty} \frac{a_k}{b_k} = L</m> where <m>L</m> is some non-zero real number, then <m>\displaystyle\sum_{k=0}^\infty a_k</m> and <m>\displaystyle\sum_{k=0}^\infty b_k</m> will either both converge or both diverge.
             </p>
           </li>
          </ul>
@@ -133,16 +133,16 @@
   <theorem xml:id="thm-RationalComparison">
     <statement>
       <p>
-        If <m>a_k</m> is a rational function of <m>k</m>,  <m>a_k = \frac{p(k)}{q(k)}</m> \where both <m>p(k)</m> and <m>q(k)</m> are polynomial functions, then:
+        If <m>a_k</m> is a rational function of <m>k</m>,  <m>a_k = \dfrac{p(k)}{q(k)}</m> where both <m>p(k)</m> and <m>q(k)</m> are polynomial functions, then:
         <ul>
           <li>
             <p>
-              If <m>\deg(q(k)-p(k)) \gt 1</m>, then <m>\sum_{k=1}^\infty a_k</m> converges.
+              If <m>\deg(q(k)-p(k)) \gt 1</m>, then <m>\displaystyle\sum_{k=0}^\infty a_k</m> converges.
             </p>
           </li>
           <li>
             <p>
-              If <m>\deg(q(k)-p(k)) \leq 1</m>, then <m>\sum_{k=1}^\infty a_k</m> diverges.
+              If <m>\deg(q(k)-p(k)) \leq 1</m>, then <m>\displaystyle\sum_{k=0}^\infty a_k</m> diverges.
             </p>
           </li>
         </ul>
