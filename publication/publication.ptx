@@ -81,7 +81,10 @@
   <!-- for printing; set @sides="two" if the printing would be two- -->
   <!-- sided.  @pageref="yes/no" controls whether page number are   -->
   <!-- included in cross-references                                 -->
-  <latex>
+  <latex
+    print="yes"
+    sides="two"
+    pageref="no">
   <!-- Replace the <latex> tag above with the one below to try these-->
   <!--
     <latex
