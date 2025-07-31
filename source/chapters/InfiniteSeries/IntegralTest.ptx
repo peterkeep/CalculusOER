@@ -26,7 +26,7 @@
     <p>
       So this brings us to this comparison of the same types of objects across these two different contexts.
     </p>
-    <table>
+    <table xml:id="tbl-IntegralSeries">
       <title>Comparisons of Calculus Objects in Continuous and Discrete Contexts</title>
       <tabular halign="center">
         <row header="yes" bottom="medium">
@@ -133,6 +133,22 @@
         </p>
       </proof>
     </theorem>
+    <p>
+      So now we have a more formal link between these two objects. We have some intuition from <xref ref="tbl-IntegralSeries"/> that these are pretty similar objects: one of them is an accumulation of function values in a continuous context, while the other is an accumulation of function values in a discrete context.
+    </p>
+    <p>
+      We can think about this even more formally! We reminded ourselves at the beginning of this section that, when we think about the limit of a Riemann sum (in the <em>continuous context</em>) that as <m>n\to\infty</m>, we get <m>\Delta x \to dx</m>, where <m>dx</m> is essentially the distance between inputs. This produces our integral.
+    </p>
+    <p>
+      But now, in the <em>discrete context</em>, we have something different. Without being too formal, we can think about the corresponding limit of <m>\Delta k</m> as we slice this up further. Because our functions are in the discrete context, our inputs have a minimum distance between each other: they're all 1 unit apart! So here, in the limit where we expect <m>\Delta x\to dx</m>, we get <m>\Delta k\to 1</m>. And similarly, in a typical definite integral, we are adding up an infinite number of function outputs between some starting input and stopping input. Now in the discrete context, we don't get that! We get our normal partial sum: 
+      <me>
+        \sum_{k=0}^n a_k \underbrace{\Delta k}_{1} = \sum_{k=0}^n a_k
+      </me>.
+      So the <xref ref="thm-IntegralTest" text="title"/> is pretty obvious, really: these corresponding objects retain the same type of behavior when we translate them back and forth between the continuous context and the discrete context.
+    </p>
+    <p>
+      Great! Let's apply this, now.
+    </p>
     <example>
       <introduction>
         <p>
