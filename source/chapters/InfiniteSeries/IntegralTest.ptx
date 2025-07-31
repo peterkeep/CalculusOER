@@ -8,7 +8,7 @@
       Let's start here with a connection between objects. We've already thought about the connection between an infinite series and the sequence of terms of the series (<xref ref="thm-DivergenceTest" text="type-global-title"/>). Now we'll think about the connections between two objects that are similar to each other in that they both represent an accumulation of function values.
     </p>
     <p>
-      Earlier (in <xref ref="subsec-SequencesAsFunctions"/>) we tried to describe sequences as just a special kind of function: the domain is the set of non-negative integer (or positive integers, depending on whether we start our index at <m>n=0</m> or <m>n=1</m>) and we map these inputs to real number outputs. And now we want to think about what it might mean to accumulate the values of these kinds of functions.
+      Earlier (in <xref ref="subsec-SequencesAsFunctions" text="title"/>) we tried to describe sequences as just a special kind of function: the domain is the set of non-negative integer (or positive integers, depending on whether we start our index at <m>n=0</m> or <m>n=1</m>) and we map these inputs to real number outputs. And now we want to think about what it might mean to accumulate the values of these kinds of functions.
     </p>
     <p>
       Function value accumulation is what we've been looking at lately! That's what integration is! We are trying to accumulate all of the function values and weigh them based on their "width." In the context of continuous functions, that means we start approximating this accumulation by looking at some finite number of function values that we pick, and we give them some <m>\Delta x</m> width between them. That's our Riemann sum:
