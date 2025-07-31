@@ -2,7 +2,6 @@
 
 <section xml:id="sec-ComparisonTests" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Comparison Tests</title>
-
   <introduction>
     <p>
       So far, our strategies for thinking about infinite series have been focused around drawing a connection between the infinite series we care about and some other mathematical object:
@@ -51,6 +50,46 @@
     <p>
       We're going to start by trying to do the same thing we did when we build the <xref ref="thm-IntegralTest" text="title"/>: show that the partial sums are monotonic and bounded and then make use of the <xref ref="thm-MonotoneConvergence" text="title"/>.
     </p>
+    <xi:include href="./activities/act-Comparison.ptx" />
+    <p>
+      This is it! We have everything we need to construct another link: this time between the infinite series we care about and another infinite series that we think acts the same.
+    </p>
+    <p>
+      To illustrate what we've done, let's think about two sequences of terms: <m>\{a_k\}_{k=0}^\infty</m> and <m>\{b_k\}_{k=0}^infty</m> where <m>a_k\leq b_k</m> for <m>k\geq 0</m>. We can think of the graphs, pictured below.
+    </p>
+    <figure xml:id="fig-ComparisonTest-Terms">
+      <caption>The "smaller" sequence of terms <m>\{a_k\}_{k=0}^\infty</m> graphed alongside the "bigger" sequence of terms <m>\{b_k\}_{k=0}^\infty</m>.</caption>
+      <image source="./InfiniteSeries/ComparisonTest-Terms.png" width="80%">
+        <shortdescription>A sequence of green dots, labeled {b_k}, decreasing to the horizontal axis. There is a second sequence of red dots, labeled {a_k}, also decreasing to the horizontal axis. At some point, the green dots look like they're on top of the red ones.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      Now we can think about the graphs of these partial sums. Let's first think about what might happen if the series <m>\displaystyle \sum_{k=0}^\infty b_k</m> converges. We'll plot the partial sums, and the sequence of partial sums has to converge to something. But then we can think about the sequence of partial sums from the <m>a_k</m> terms: the smaller terms, of course, will build smaller partial sums.
+    </p>
+    <figure xml:id="fig-ComparisonTest-Converge">
+      <caption>Comparison of partial sums when <m>\displaystyle\sum_{k=0}^\infty b_k</m> converges.</caption>
+      <image source="./InfiniteSeries/ComparisonTest-Converge.png" width="80%">
+        <shortdescription>A sequence of green dots, labeled {partial sum of b_k}, increasing to a horizontal line. The line is labeled as the limit of the partial sums of b_k. There is a second sequence of red dots, labeled {partial sums of a_k}, also increasing but below the green dots.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      So we can pretty easily use <m>\displaystyle\lim_{n\to\infty}\sum_{k=0}^n b_k</m> as an upper bound on the sequence <m>\displaystyle \left\{\sum_{k=0}^n a_k\right\}_{n=0}^\infty</m>! And now we can say that the sequence of partial sums for <m>\displaystyle \sum_{k=0}^\infty a_k</m> is monotonic and bounded, and so it must converge.
+    </p>
+    <p>
+      Then we can ask about the diverging case. This time, we'll say that the smaller series, <m>\displaystyle \sum_{k=0}^\infty a_k</m> diverges.
+    </p>
+    <figure xml:id="fig-ComparisonTest-Diverge">
+      <caption>Comparison of partial sums when <m>\displaystyle\sum_{k=0}^\infty a_k</m> diverges.</caption>
+      <image source="./InfiniteSeries/ComparisonTest-Diverge.png" width="80%">
+        <shortdescription>A sequence of green dots, labeled {partial sum of b_k}, increasing to seemingly infinity. There is a second sequence of red dots, labeled {partial sums of a_k}, also increasing to seemingly infinity, but below the green dots.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      We can think that this "smaller" sequence of partial sums is "pushing" the "larger" sequence of partial sums up to infinity with it.
+    </p>
+    <p>
+      These two cases make up our first comparison mechanic between two infinite series.
+    </p>
     <theorem xml:id="thm-DirectComparisonTest">
         <title>Direct Comparison Test</title>        
         <statement>
@@ -71,6 +110,90 @@
           </p>
         </statement>
       </theorem>
+      <p>
+        At the end of <xref ref="sec-CommonSeries" text="type-global-title"/>, we referenced the series:
+        <me>
+          \sum_{k=0}^\infty \frac{1}{k^3+1}
+        </me>.
+        Let's use our new test!
+      </p>
+      <example>
+        <statement>
+          <p>
+            Does the series <m>\displaystyle \sum_{k=0}^\infty \frac{1}{k^3+1}</m> converge or diverge? How do you know?
+          </p>
+        </statement>
+        <hint>
+          <p>
+            If we're going to use our new <xref ref="thm-DirectComparisonTest" text="title"/>, we need to identify two things:
+            <ol>
+              <li>
+                <p>
+                  Some intuition on whether we think our series converges or not.
+                </p>
+              </li>
+              <li>
+                <p>
+                  An appropriate series to compare to. Likely, this will be either a <xref ref="def-GeometricSeries" text="title"/> or a <xref ref="def-pSeries" text="title"/>, since we have clear convergence criteria for each of those.
+                </p>
+              </li>
+            </ol>
+            We can do this in any order: sometimes we might use the structure of the series we're looking at to give us a good candidate to compare to, and that might tell us the behavior we think we're looking for. Other times we might have good intuition about convergence/divergence of the series which will tell us whether we need to find a series that is smaller or larger to compare to.
+          </p>
+          <p>
+            What do you think? Do we have a suitable comparison?
+          </p>
+        </hint>
+        <hint>
+          <p>
+            Compare to the <xref ref="def-pSeries" text="title"/> <m>\displaystyle \sum_{k=1}^\infty \frac{1}{k^3}</m>. Here, <m>p=3</m>. Based on this, do we need to show that <m>\dfrac{1}{k^3+1}</m> is greater than or less than <m>\dfrac{1}{k^3}</m>?
+          </p>
+          <p>
+            Show this!
+          </p>
+          <p>
+            Does the change in the starting index matter?
+          </p>
+        </hint>
+        <solution>
+          <p>
+            Let's compare our series to the converging <m>p</m>-series with <m>p=3</m>:
+            <me>
+              \sum_{k=0}^\infty \frac{1}{k^3+1}\sim \sum_{k=1}^\infty \frac{1}{k^3}
+            </me>.
+            We want to show that <m>\dfrac{1}{k^3+1}\leq \dfrac{1}{k^3}</m> for <m>k\geq 1</m>. 
+          </p>
+          <p>
+            Let's start with comparing the denominators, and move from there.
+            <me>
+              k^3+1 \gt k^3 \text{ for any value of } k
+            </me>
+            Now we can think about reciprocals:
+            <me>
+              \frac{1}{k^3+1} \lt \frac{1}{k^3} \text{ for all } k\geq 1
+            </me>.
+            This means that, since <m>\displaystyle \sum_{k=1}^\infty \frac{1}{k^3}</m> converges, then <m>\displaystyle\sum_{k=1}^\infty \frac{1}{k^3+1}</m> must also converge.
+          </p>
+          <p>
+            We can just add the term where <m>k=0</m> to get
+            <md>
+              <mrow>\sum_{k=0}^\infty \frac{1}{k^3+1} \amp = \overbrace{\frac{1}{0^3+1}}^{k=0} + \sum_{k=1}^\infty \frac{1}{k^3+1}</mrow>
+              <mrow> \amp = 1 + \sum_{k=1}^\infty \frac{1}{k^3+1}</mrow>
+            </md>
+            So then we know that our series, <m>\displaystyle\sum_{k=0}^\infty \frac{1}{k^3+1}</m> must converge.
+          </p>
+        </solution>
+      </example>
+      <p>
+        A quick note: in this example, we thought about building the link
+        <me>
+          \sum_{k=1}^\infty \frac{1}{k^3+1} \sim \sum_{k=1}^\infty \frac{1}{k^3}
+        </me>
+        and then arguing that changing the index to start at <m>k=0</m> by adding in a single term wouldn't change the behavior of the infinite series.
+      </p>
+      <p>
+        In general, we don't need to add in that last argument. We can assume from here on out that changing our starting index won't impact the behavior of the series (as long as we're avoiding things like division by 0 and such). So showing that <m>\dfrac{1}{k^3+1}\lt \dfrac{1}{k^3}</m> for <m>k\geq 1</m> is enough for us!
+      </p>
   </subsection>
   <subsection xml:id="subsec-FailedComparisons">
   <title>Failed Comparisons</title>

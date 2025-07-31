@@ -1,0 +1,55 @@
+<activity xml:id="act-Comparison">
+    <title>Comparisons to Bound Partial Sums</title>
+    <introduction>
+        <p>
+            This activity is mostly going to be thinking about proof mechanisms, and so it might be helpful to review <xref ref="act-IntegralTest" text="type-global-title"/>. If you want to see more, then the proof of <xref ref="thm-IntegralTest" text="title"/> will provide some further details on why the inequalities we built were useful.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                In the Integral Test, how did we guarantee that our sequence of partial sums was monotonic?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How did we know that, as long as the corresponding integral converged, then our sequence of partial sums was bounded?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How did we know that, as long as our integral diverged, then our sequence of partial sums had to diverge as well?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What happens if we swap out the integral we're connecting our series to with a different series? 
+            </p>
+            <p>
+                For these inequalities to be useful, what do we need to be true?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                For our sequence of partial sums to be bounded, we originally had that our partial sums were smaller than an expression involving an integral. Then, those integrals eventually converged to something, and so our sequence of partial sums was bounded by a value.
+            </p>
+            <p>
+                Can we swap out an integral for a different partial sum? What has to happen in the limit to guarantee that our series converges?
+            </p>
+        </hint>
+        <hint>
+            <p>
+                Similarly, when we showed that our partial sums were always greater than something involving an integral, then we were able to show that if that integral diverged, then our partial sums had no choice but to diverge to infinity as well.
+            </p>
+            <p>
+                What kind of partial sum do you need to change out the integral for?
+            </p>
+        </hint>
+    </task>
+</activity>
