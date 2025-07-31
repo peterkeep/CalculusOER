@@ -254,6 +254,7 @@
   </theorem>
 
   <theorem xml:id="thm-RationalComparison">
+    <title>Rational Comparison Theorem</title>
     <statement>
       <p>
         If <m>a_k</m> is a rational function of <m>k</m>,  <m>a_k = \dfrac{p(k)}{q(k)}</m> where both <m>p(k)</m> and <m>q(k)</m> are polynomial functions, then:
@@ -272,6 +273,11 @@
       </p>
     </statement>
   </theorem>
+  <note>
+    <p>
+      We can extend this result pretty easily by loosening up the "rational function" requirement. If we have combinations of power functions (even with non-integer exponents), this works as well!
+    </p>
+  </note>
   
   
 </subsection>
