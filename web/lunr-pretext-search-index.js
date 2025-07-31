@@ -3886,7 +3886,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.7",
   "title": "Comparison Tests",
-  "body": " Comparison Tests   So far, our strategies for thinking about infinite series have been focused around drawing a connection between the infinite series we care about and some other mathematical object:   The draws a connection (even thought it's a limited one) between the terms of the series and the series itself.    The draws a (stronger) connection between the terms of, specifically, an and the series itself.    The draws a connection between the series and a corresponding integral.   Now we'll work on building the most important series convergence test mechanism: we'll draw a link between the series we care about and some other series that we already know about.  This is helpful for three reasons:   We already have a couple of types of series that we know about ( ), and we can keep adding to that list.    We can take advantage of similar structure or common term formulas when we see them to essentially say, \"This series kind of looks like one that I recognize. I wonder if they act the same?\"    We don't always have to integrate things using the Integral Test! Integrating can be hard!       Comparing Partial Sums  We're going to start by trying to do the same thing we did when we build the : show that the partial sums are monotonic and bounded and then make use of the .   Comparisons to Bound Partial Sums   This activity is mostly going to be thinking about proof mechanisms, and so it might be helpful to review . If you want to see more, then the proof of will provide some further details on why the inequalities we built were useful.           Direct Comparison Test   If and are infinite series with positive terms ( and for ) with the ordering for , then:   If diverges, then also diverges.    If converges, then also converges.         Failed Comparisons      Limit Comparison   Limit Comparison Test   If and are infinite series with positive terms ( and for ), then we can consider .   If , then:   If diverges, then diverges as well.    If converges, then converges as well.       If , then:   If converges, then converges as well.    If diverges, then diverges as well.       If where is some non-zero real number, then and will either both converge or both diverge.         If is a rational function of , where both and are polynomial functions, then:   If , then converges.    If , then diverges.        "
+  "body": " Comparison Tests   So far, our strategies for thinking about infinite series have been focused around drawing a connection between the infinite series we care about and some other mathematical object:   The draws a connection (even thought it's a limited one) between the terms of the series and the series itself.    The draws a (stronger) connection between the terms of, specifically, an and the series itself.    The draws a connection between the series and a corresponding integral.   Now we'll work on building the most important series convergence test mechanism: we'll draw a link between the series we care about and some other series that we already know about.  This is helpful for three reasons:   We already have a couple of types of series that we know about ( ), and we can keep adding to that list.    We can take advantage of similar structure or common term formulas when we see them to essentially say, \"This series kind of looks like one that I recognize. I wonder if they act the same?\"    We don't always have to integrate things using the Integral Test! Integrating can be hard!       Comparing Partial Sums  We're going to start by trying to do the same thing we did when we build the : show that the partial sums are monotonic and bounded and then make use of the .   Comparisons to Bound Partial Sums   This activity is mostly going to be thinking about proof mechanisms, and so it might be helpful to review . If you want to see more, then the proof of will provide some further details on why the inequalities we built were useful.     In the Integral Test, how did we guarantee that our sequence of partial sums was monotonic?      How did we know that, as long as the corresponding integral converged, then our sequence of partial sums was bounded?      How did we know that, as long as our integral diverged, then our sequence of partial sums had to diverge as well?      What happens if we swap out the integral we're connecting our series to with a different series?  For these inequalities to be useful, what do we need to be true?    For our sequence of partial sums to be bounded, we originally had that our partial sums were smaller than an expression involving an integral. Then, those integrals eventually converged to something, and so our sequence of partial sums was bounded by a value.  Can we swap out an integral for a different partial sum? What has to happen in the limit to guarantee that our series converges?    Similarly, when we showed that our partial sums were always greater than something involving an integral, then we were able to show that if that integral diverged, then our partial sums had no choice but to diverge to infinity as well.  What kind of partial sum do you need to change out the integral for?     This is it! We have everything we need to construct another link: this time between the infinite series we care about and another infinite series that we think acts the same.  To illustrate what we've done, let's think about two sequences of terms: and where for . We can think of the graphs, pictured below.   The \"smaller\" sequence of terms graphed alongside the \"bigger\" sequence of terms .   A sequence of green dots, labeled {b_k}, decreasing to the horizontal axis. There is a second sequence of red dots, labeled {a_k}, also decreasing to the horizontal axis. At some point, the green dots look like they're on top of the red ones.    Now we can think about the graphs of these partial sums. Let's first think about what might happen if the series converges. We'll plot the partial sums, and the sequence of partial sums has to converge to something. But then we can think about the sequence of partial sums from the terms: the smaller terms, of course, will build smaller partial sums.   Comparison of partial sums when converges.   A sequence of green dots, labeled {partial sum of b_k}, increasing to a horizontal line. The line is labeled as the limit of the partial sums of b_k. There is a second sequence of red dots, labeled {partial sums of a_k}, also increasing but below the green dots.    So we can pretty easily use as an upper bound on the sequence ! And now we can say that the sequence of partial sums for is monotonic and bounded, and so it must converge.  Then we can ask about the diverging case. This time, we'll say that the smaller series, diverges.   Comparison of partial sums when diverges.   A sequence of green dots, labeled {partial sum of b_k}, increasing to seemingly infinity. There is a second sequence of red dots, labeled {partial sums of a_k}, also increasing to seemingly infinity, but below the green dots.    We can think that this \"smaller\" sequence of partial sums is \"pushing\" the \"larger\" sequence of partial sums up to infinity with it.  These two cases make up our first comparison mechanic between two infinite series.   Direct Comparison Test   If and are infinite series with positive terms ( and for ) with the ordering for , then:   If diverges, then also diverges.    If converges, then also converges.       At the end of , we referenced the series: . Let's use our new test!    Does the series converge or diverge? How do you know?    If we're going to use our new , we need to identify two things:   Some intuition on whether we think our series converges or not.    An appropriate series to compare to. Likely, this will be either a or a , since we have clear convergence criteria for each of those.   We can do this in any order: sometimes we might use the structure of the series we're looking at to give us a good candidate to compare to, and that might tell us the behavior we think we're looking for. Other times we might have good intuition about convergence\/divergence of the series which will tell us whether we need to find a series that is smaller or larger to compare to.  What do you think? Do we have a suitable comparison?    Compare to the  . Here, . Based on this, do we need to show that is greater than or less than ?  Show this!  Does the change in the starting index matter?    Let's compare our series to the converging -series with : . We want to show that for .  Let's start with comparing the denominators, and move from there. Now we can think about reciprocals: . This means that, since converges, then must also converge.  We can just add the term where to get So then we know that our series, must converge.    A quick note: in this example, we thought about building the link and then arguing that changing the index to start at by adding in a single term wouldn't change the behavior of the infinite series.  In general, we don't need to add in that last argument. We can assume from here on out that changing our starting index won't impact the behavior of the series (as long as we're avoiding things like division by 0 and such). So showing that for is enough for us!    Failed Comparisons      Limit Comparison   Limit Comparison Test   If and are infinite series with positive terms ( and for ), then we can consider .   If , then:   If diverges, then diverges as well.    If converges, then converges as well.       If , then:   If converges, then converges as well.    If diverges, then diverges as well.       If where is some non-zero real number, then and will either both converge or both diverge.        Rational Comparison Theorem   If is a rational function of , where both and are polynomial functions, then:   If , then converges.    If , then diverges.        We can extend this result pretty easily by loosening up the \"rational function\" requirement. If we have combinations of power functions (even with non-integer exponents), this works as well!    "
 },
 {
   "id": "act-Comparison",
@@ -3895,23 +3895,59 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "8.7.1",
   "title": "Comparisons to Bound Partial Sums.",
-  "body": " Comparisons to Bound Partial Sums   This activity is mostly going to be thinking about proof mechanisms, and so it might be helpful to review . If you want to see more, then the proof of will provide some further details on why the inequalities we built were useful.         "
+  "body": " Comparisons to Bound Partial Sums   This activity is mostly going to be thinking about proof mechanisms, and so it might be helpful to review . If you want to see more, then the proof of will provide some further details on why the inequalities we built were useful.     In the Integral Test, how did we guarantee that our sequence of partial sums was monotonic?      How did we know that, as long as the corresponding integral converged, then our sequence of partial sums was bounded?      How did we know that, as long as our integral diverged, then our sequence of partial sums had to diverge as well?      What happens if we swap out the integral we're connecting our series to with a different series?  For these inequalities to be useful, what do we need to be true?    For our sequence of partial sums to be bounded, we originally had that our partial sums were smaller than an expression involving an integral. Then, those integrals eventually converged to something, and so our sequence of partial sums was bounded by a value.  Can we swap out an integral for a different partial sum? What has to happen in the limit to guarantee that our series converges?    Similarly, when we showed that our partial sums were always greater than something involving an integral, then we were able to show that if that integral diverged, then our partial sums had no choice but to diverge to infinity as well.  What kind of partial sum do you need to change out the integral for?    "
+},
+{
+  "id": "fig-ComparisonTest-Terms",
+  "level": "2",
+  "url": "sec-ComparisonTests.html#fig-ComparisonTest-Terms",
+  "type": "Figure",
+  "number": "8.7.1",
+  "title": "",
+  "body": " The \"smaller\" sequence of terms graphed alongside the \"bigger\" sequence of terms .   A sequence of green dots, labeled {b_k}, decreasing to the horizontal axis. There is a second sequence of red dots, labeled {a_k}, also decreasing to the horizontal axis. At some point, the green dots look like they're on top of the red ones.   "
+},
+{
+  "id": "fig-ComparisonTest-Converge",
+  "level": "2",
+  "url": "sec-ComparisonTests.html#fig-ComparisonTest-Converge",
+  "type": "Figure",
+  "number": "8.7.2",
+  "title": "",
+  "body": " Comparison of partial sums when converges.   A sequence of green dots, labeled {partial sum of b_k}, increasing to a horizontal line. The line is labeled as the limit of the partial sums of b_k. There is a second sequence of red dots, labeled {partial sums of a_k}, also increasing but below the green dots.   "
+},
+{
+  "id": "fig-ComparisonTest-Diverge",
+  "level": "2",
+  "url": "sec-ComparisonTests.html#fig-ComparisonTest-Diverge",
+  "type": "Figure",
+  "number": "8.7.3",
+  "title": "",
+  "body": " Comparison of partial sums when diverges.   A sequence of green dots, labeled {partial sum of b_k}, increasing to seemingly infinity. There is a second sequence of red dots, labeled {partial sums of a_k}, also increasing to seemingly infinity, but below the green dots.   "
 },
 {
   "id": "thm-DirectComparisonTest",
   "level": "2",
   "url": "sec-ComparisonTests.html#thm-DirectComparisonTest",
   "type": "Theorem",
-  "number": "8.7.1",
+  "number": "8.7.4",
   "title": "Direct Comparison Test.",
   "body": " Direct Comparison Test   If and are infinite series with positive terms ( and for ) with the ordering for , then:   If diverges, then also diverges.    If converges, then also converges.      "
+},
+{
+  "id": "subsec-ComparingPartialSums-16",
+  "level": "2",
+  "url": "sec-ComparisonTests.html#subsec-ComparingPartialSums-16",
+  "type": "Example",
+  "number": "8.7.5",
+  "title": "",
+  "body": "  Does the series converge or diverge? How do you know?    If we're going to use our new , we need to identify two things:   Some intuition on whether we think our series converges or not.    An appropriate series to compare to. Likely, this will be either a or a , since we have clear convergence criteria for each of those.   We can do this in any order: sometimes we might use the structure of the series we're looking at to give us a good candidate to compare to, and that might tell us the behavior we think we're looking for. Other times we might have good intuition about convergence\/divergence of the series which will tell us whether we need to find a series that is smaller or larger to compare to.  What do you think? Do we have a suitable comparison?    Compare to the  . Here, . Based on this, do we need to show that is greater than or less than ?  Show this!  Does the change in the starting index matter?    Let's compare our series to the converging -series with : . We want to show that for .  Let's start with comparing the denominators, and move from there. Now we can think about reciprocals: . This means that, since converges, then must also converge.  We can just add the term where to get So then we know that our series, must converge.   "
 },
 {
   "id": "thm-LimitComparisonTest",
   "level": "2",
   "url": "sec-ComparisonTests.html#thm-LimitComparisonTest",
   "type": "Theorem",
-  "number": "8.7.2",
+  "number": "8.7.6",
   "title": "Limit Comparison Test.",
   "body": " Limit Comparison Test   If and are infinite series with positive terms ( and for ), then we can consider .   If , then:   If diverges, then diverges as well.    If converges, then converges as well.       If , then:   If converges, then converges as well.    If diverges, then diverges as well.       If where is some non-zero real number, then and will either both converge or both diverge.      "
 },
@@ -3920,9 +3956,18 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#thm-RationalComparison",
   "type": "Theorem",
-  "number": "8.7.3",
+  "number": "8.7.7",
+  "title": "Rational Comparison Theorem.",
+  "body": " Rational Comparison Theorem   If is a rational function of , where both and are polynomial functions, then:   If , then converges.    If , then diverges.      "
+},
+{
+  "id": "subsec-LimitComparison-4",
+  "level": "2",
+  "url": "sec-ComparisonTests.html#subsec-LimitComparison-4",
+  "type": "Note",
+  "number": "8.7.8",
   "title": "",
-  "body": "  If is a rational function of , where both and are polynomial functions, then:   If , then converges.    If , then diverges.      "
+  "body": " We can extend this result pretty easily by loosening up the \"rational function\" requirement. If we have combinations of power functions (even with non-integer exponents), this works as well!  "
 },
 {
   "id": "sec-RatioRootTests",
