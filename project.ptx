@@ -12,8 +12,29 @@
             format="pdf"
             deploy-dir="pdf"
             output-filename="DiscoverCalculus-PeterKeep.pdf" 
-            xsl="print-style.xsl" />
-    
+            xsl="print-style.xsl">
+      <stringparams project.hint="no"
+                    project.answer="no"
+                    project.solution="no"
+                    exercise.divisional.hint="no"
+                    exercise.divisional.answer="no"
+                    exercise.divisional.solution="no"/>
+    </target>
+    <target name="solutions"
+            format="latex"
+            source="main.ptx"
+            publication="solutions-publication.ptx"
+            xsl="solution-manual.xsl"
+            output-dir="solutions"
+            output-filename="DiscoverCalculus-Solutions.pdf" />
+    <target name="worksheet"
+            format="pdf"
+            xsl="worksheet.xsl"
+            output-filename="DiscoverCalculus-Worksheets.pdf">
+      <stringparams project.hint="no"
+                    project.answer="no"
+                    project.solution="no"/>
+    </target>
   </targets>
 </project>
 
