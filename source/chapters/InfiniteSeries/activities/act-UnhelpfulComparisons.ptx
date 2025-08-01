@@ -1,0 +1,164 @@
+<activity xml:id="act-UnhelpfulComparisons">
+    <title>(Un)Helpful Comparisons</title>
+    <introduction>
+        <p>
+            We're going to consider a handful of infinite series, here:
+            <ol>
+                <li>
+                    <p>
+                        <m>\displaystyle \sum_{k=1}^\infty \frac{2}{k(3^k)}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\displaystyle \sum_{k=3}^\infty \frac{\sqrt{k+1}}{k-2}</m>
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Pick a series that is reasonable to use as a comparison for each of the series listed. Remember, we want:
+                <ul>
+                    <li>
+                        <p>
+                            A series that is recognizable (probably a <xref ref="def-GeometricSeries" text="title"/> or a <xref ref="def-pSeries" text="title"/>), so that we know the behavior of it: we need to know whether the series we're comparing to converges or diverges!
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            A series that is similar enough to the series we're working with that we can construct an inequality comparing the term structure. It can be hard to compare functions that are seemingly unrelated to each other!
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            A series that has terms that are either larger or smaller than our series, depending on whether we are trying to show that our series converges or diverges.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+        <hint>
+            <p>
+                It can be useful to think about what the dominating pieces of each term structure are. What parts of the function will be most important, especially as the index, <m>k</m>, gets larger?
+            </p>
+        </hint>
+        <hint>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            In the denominator, think about <m>k</m> contrasted with <m>3^k</m>. Which of these will be more influential in determining the value of the term when <m>k</m> gets large?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            In the numerator, think about <m>k</m> contrasted with <m>+1</m> under the square root. Which of these will be more influential? In the denominator, contrast <m>k</m> and <m>-2</m>. Which of these will be more influential? What does this fraction look like when we just consider the numerator and denominator's most dominant pieces?
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Let's link the following two series using a comparison:
+                            <me>
+                                \sum_{k=1}^\infty \frac{2}{k(3^k)} \sim \sum_{k=1}^\infty \frac{2}{3^k}
+                            </me>.
+                            We can notice that <m>\displaystyle \sum_{k=1}^\infty \frac{2}{3^k}</m> is a geometric series with <m>a=\dfrac{2}{3}</m> and <m>r=\dfrac{1}{3}</m>. It converges!
+                        </p>
+                        <p>
+                            (Specifically, this series converges to 1.)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Let's link the following two series using a comparison:
+                            <me>
+                                 \sum_{k=3}^\infty \frac{\sqrt{k+1}}{k-2} \sim \sum_{k=3}^\infty \frac{\sqrt{k}}{k} = \sum_{k=3}^\infty \frac{1}{\sqrt{k}}
+                            </me>.
+                            Note that <m>\displaystyle \sum_{k=3}^\infty \frac{1}{\sqrt{k}}</m> is a diverging <m>p</m>-series, since <m>p=\dfrac{1}{2}</m>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Build the comparison from the series we start with to the one you picked. What kinds of conclusions can you make?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            When we compare <m>\dfrac{2}{k(3^k)}</m> with <m>\dfrac{2}{3^k}</m>, we can start with the denominator. What does multiplying by <m>k</m> do to the value of <m>3^k</m>? It might help to write some of the values out for <m>k=1, 2, 3,...</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            When we compare <m>\dfrac{\sqrt{k+1}}{k-2}</m> with <m>\dfrac{\sqrt{k}}{k}</m>, we can think of the numerator and denominator separately. What does adding 1 under the square root do to the value of <m>\sqrt{k}</m>? What does subtracting 2 in the denominator do to <m>k</m>? How do these impact the fraction?
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Since <m>k\geq 1</m>, we can say that
+                            <me>
+                                k(3^k) \geq 3^k \text{ for } k=1,2,3, ...
+                            </me>
+                            This means that
+                            <me>
+                                \frac{1}{k(3^k)}\leq \frac{1}{3^k} \text{ for } k=1,2,3,...
+                            </me>
+                            since a big denominator leads to a small fraction. Then, we can scale both by a factor of 2:
+                            <me>
+                                \frac{2}{k(3^k)}\leq \frac{2}{3^k} \text{ for } k=1,2,3,...
+                            </me>
+                        </p>
+                        <p>
+                            Since <m>\displaystyle \sum_{k=1}^\infty \frac{2}{3^k}</m> is a converging geometric series (since <m>r=\frac{1}{3}</m> and so <m>|r|\lt 1</m>), then we can say that <m>\displaystyle \sum_{k=1}^\infty \frac{2}{k(3^k)}</m> must also converge.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We can see that <m>k-2 \lt k</m>. Then, when we think about reciprocals, we see that
+                            <me>
+                                \frac{1}{k-2}\gt \frac{1}{k} \text{ for } k\gt 2
+                            </me>
+                            since a small denominator leads to a big fraction. Then, we can multiply both by <m>\sqrt{k}</m>:
+                            <me>
+                                \frac{\sqrt{k}}{k-2} \gt \frac{\sqrt{k}}{k}
+                            </me>.
+                            Finally, since <m>k+1 \gt k</m>, we know that <m>\sqrt{k+1}\gt \sqrt{k}</m>.
+                        </p>
+                        <p>
+                            This means that:
+                            <me>
+                                 \frac{\sqrt{k+1}}{k-2} \gt  \frac{\sqrt{k}}{k-2} \gt \frac{\sqrt{k}}{k}
+                            </me>.
+                            So, we have that <m>\dfrac{\sqrt{k+1}}{k-2} \gt \dfrac{1}{\sqrt{k}}</m> for <m>k= 3, 4, 5, ...</m>
+                        </p>
+                        <p>
+                            Since <m>\displaystyle \sum_{k=3}^\infty \frac{1}{\sqrt{k}}</m> is a diverging <m>p</m>-series (since <m>p=\frac{1}{2}\leq 1</m>), then <m>\displaystyle \sum_{k=3}^\infty \frac{\sqrt{k+1}}{k-2}</m> must also diverge.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </task>
+    
+</activity>

@@ -195,8 +195,9 @@
         In general, we don't need to add in that last argument. We can assume from here on out that changing our starting index won't impact the behavior of the series (as long as we're avoiding things like division by 0 and such). So showing that <m>\dfrac{1}{k^3+1}\lt \dfrac{1}{k^3}</m> for <m>k\geq 1</m> is enough for us!
       </p>
   </subsection>
-  <subsection xml:id="subsec-FailedComparisons">
-  <title>Failed Comparisons</title>
+  <subsection xml:id="subsec-UnhelpfulComparisons">
+  <title>(Un)Helpful Comparisons</title>
+  <xi:include href="./activities/act-UnhelpfulComparisons.ptx" />
   <p>
     
   </p>
