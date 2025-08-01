@@ -30,6 +30,7 @@
     <target name="worksheet"
             format="pdf"
             xsl="worksheet.xsl"
+            deploy-dir="ancillaries"
             output-filename="DiscoverCalculus-Worksheets.pdf">
       <stringparams project.hint="no"
                     project.answer="no"
