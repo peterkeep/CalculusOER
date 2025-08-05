@@ -199,7 +199,94 @@
   <title>(Un)Helpful Comparisons</title>
   <xi:include href="./activities/act-UnhelpfulComparisons.ptx" />
   <p>
-    
+    There are some ways around this. When we find a comparison that we think is reasonable, but has the wrong inequality for us to make a conclusion, we can do one of two things:
+    <ol>
+      <li>
+        <p>
+          Try a different comparison.
+        </p>
+      </li>
+      <li>
+        <p>
+          Try a different test.
+        </p>
+      </li>
+    </ol>
+    We'll address the second strategy momentarily.
+  </p>
+  <note>
+    <p>
+      In fact, we might argue that we could start with a different test! It might be more useful to skip using the <xref ref="thm-DirectComparisonTest" text="title"/> in favor of just using the <xref ref="thm-LimitComparisonTest" text="title"/>, which we'll see soon, or the <xref ref="thm-RatioTest" text="title"/> or <xref ref="thm-RootTest" text="title"/>, which we'll talk about in the next section.
+    </p>
+    <p>
+      I think that the only real reason to think about the Direct Comparison Test is that
+      <ul>
+        <li>
+          <p>
+            Sometimes it can be pretty quick to use. Sometimes.
+          </p>
+        </li>
+        <li>
+          <p>
+            It is much easier to see <em>why</em> it works, since we can make a nice argument about monotonic and bounded sequences of partial sums. From there, the Limit Comparison Test (coming up next) isn't a big jump conceptually. But it might be harder to start with.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </note>
+  <p>
+    So let's think about one of the series from <xref ref="act-UnhelpfulComparisons"/>:
+    <me>
+      \sum_{k=1}^\infty \frac{2k}{3^k}
+    </me>
+    We, intuitively, tried to compare this a related geometric series:
+    <me>
+      \sum_{k=1}^\infty \frac{2k}{3^k} \sim \underbrace{\sum_{k=1}^\infty \frac{2}{3^k}}_{\text{converges}}
+    </me>
+    Unfortunately, we weren't able to make this connection, since <m>\dfrac{2k}{3^k} \geq \dfrac{2}{3^k}</m> for <m>k=1,2,3\ldots</m>
+  </p>
+  <p>
+    We could, instead, still think that this is a converging series but compare it to the converging <m>p</m>-series, <m>\displaystyle \sum_{k=1}^\infty \frac{1}{k^2}</m>. We'll actually compare it to  <m>\displaystyle \sum_{k=1}^\infty \frac{2}{k^2}</m>, but this will converge as well (since the coefficient will just scale the value that the series converges to).
+  </p>
+  <p>
+    Note, first, that <m>3^k \geq k^3</m> for <m>k\geq 3</m>. At <m>k=3</m> we have <m>3^3=3^3</m>, but after this intersection point, the exponential will be larger than the power function.
+    <md>
+      <mrow>3^k \amp \geq k^3 \text{ for } k=3,4,5,...</mrow>
+      <mrow>\frac{1}{3^k} \amp \leq \frac{1}{k^3} \text{ for } k=3,4,5...</mrow>
+      <mrow>\frac{2k}{3^k} \amp \leq \frac{2k}{k^3} \text{ for } k=3,4,5...</mrow>
+      <mrow>\frac{2k}{3^k} \amp \leq \frac{2}{k^2} \text{ for } k=3,4,5...</mrow>
+    </md>
+    And there we go! We have <m>\dfrac{2k}{3^k} \leq \dfrac{2}{k^2}</m> for <m>k=3,4,5...</m> and <m>\displaystyle \sum_{k=3}^\infty \frac{2}{k^2}</m> converges, so then <m>\displaystyle \sum_{k=3}^\infty \frac{2k}{3^k}</m> must also converge.
+  </p>
+  <p>
+    Of course, we can add two more real numbers (when <m>k=1</m> and <m>k=2</m>), and the resulting series will still converge. So, <m>\displaystyle \sum_{k=1}^\infty \frac{2k}{3^k}</m> converges, just like we originally thought.
+  </p>
+  <p>
+    Let's not get ahead of ourselves: this quick change from one comparison to another is rarely easy! Here are some questions we can ask:
+    <ul>
+      <li>
+        <p>
+          Where did <m>\displaystyle\sum_{k=1}^\infty \frac{1}{k^2}</m> come from? How could we have anticipated that as being useful?
+        </p>
+      </li>
+      <li>
+        <p>
+          Didn't we think, originally, that this was <em>almost</em> a geometric series? Why are we switching to comparing to a <m>p</m>-series?
+        </p>
+      </li>
+      <li>
+        <p>
+          Is there some systematic way for us to think about what to compare to? Something other than appealing to growth rates?
+        </p>
+      </li>
+    </ul>
+    These questions will remain largely unanswered in this text, other than the following (unhelpful) solution: getting good at thinking about inequalities and comparisons means that inequalities and comparisons become easier.
+  </p>
+  <p>
+    This is not intended to be a self-indulged brag: <em>I am not that good at thinking about inequalities and comparisons either!</em> It's just meant to have you confront the fact that this test, while understandable, is not always useful in practice. There are better paths forward!
+  </p>
+  <p>
+    Let's follow those instead.
   </p>
 </subsection>
 <subsection xml:id="subsec-LimitComparison">

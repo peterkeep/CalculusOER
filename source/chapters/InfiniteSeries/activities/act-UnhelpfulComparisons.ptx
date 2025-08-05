@@ -160,5 +160,89 @@
             </p>
         </solution>
     </task>
-    
+    <task>
+        <statement>
+            <p>
+                We're going to change the series we're considering to two slightly different series:
+                <ol>
+                    <li>
+                        <p>
+                            <m>\displaystyle \sum_{k=1}^\infty \frac{2k}{3^k}</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\displaystyle \sum_{k=3}^\infty \frac{\sqrt{k-1}}{k+2}</m>
+                        </p>
+                    </li>
+                </ol>
+                How do these small changes impact the inequalities you built?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            We moved <m>k</m> from the denominator to the numerator. If the numerator is the thing getting bigger, how does that impact the size of this fraction in the same comparison as before?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We changed the signs: we're subtracting in the numerator and adding in the denominator. How does that impact the size of this fraction in the same comparison as before?
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Since <m>k\geq 1</m>, we know that <m>2k\geq 2</m>. This means that 
+                            <me>
+                                \frac{2k}{3^k} \geq \frac{2}{3^k} \text{ for } k=1,2,3,...
+                            </me>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We have <m>k+2 \gt k</m>, and so:
+                            <me>
+                                \frac{1}{k+2}\lt \frac{1}{k} \text{ for } k=3,4,5...
+                            </me>
+                            This means that:
+                            <me>
+                                \frac{\sqrt{k}}{k+2} \lt \frac{1}{\sqrt{k}} \text{ for } k=3,4,5...
+                            </me>
+                            Finally, since <m>\sqrt{k-1}\lt \sqrt{k}</m>, we have:
+                            <me>
+                                \frac{\sqrt{k-1}}{k+2} \lt \frac{1}{\sqrt{k}} \text{ for } k=3,4,5...
+                            </me>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How do these changes in the inequalities change the conclusions we can draw from the <xref ref="thm-DirectComparisonTest" text="title"/>? 
+            </p>
+        </statement>
+        <solution>
+            <p>
+                In both cases, the Direct Comparison Test is inconclusive. This means that we cannot conclude that either of these series converges or diverges: we don't have enough information to justify any claim we might make.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What do you <em>think</em> is happening with these series: do you think that these small changes are enough to change the behavior of the series (i.e. whether it converges or diverges)?
+            </p>
+        </statement>
+    </task>
 </activity>
