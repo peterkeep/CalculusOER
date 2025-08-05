@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<publication>
+   <!-- directories are relative to the main source PreTeXt file -->
+    <source>
+        <directories external="../assets" generated="../generated-assets" />
+    </source>
+    <latex sides="two" print="yes" />
+    <common>
+        <!-- List Chapters and Sections in sidebar Table of Contents -->
+        <tableofcontents level="3" />
+    </common>
+</publication>

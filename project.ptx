@@ -21,11 +21,11 @@
                     exercise.divisional.solution="no"/>
     </target>
     <target name="solutions"
-            format="latex"
+            format="pdf"
             source="main.ptx"
-            publication="solutions-publication.ptx"
-            xsl="solution-manual.xsl"
-            output-dir="solutions"
+            publication="pub-solutions.ptx"
+            xsl="solutions.xsl"
+            deploy-dir="ancillaries"
             output-filename="DiscoverCalculus-Solutions.pdf" />
     <target name="worksheet"
             format="pdf"
