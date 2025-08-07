@@ -1,0 +1,76 @@
+<activity xml:id="act-RatiosForComparison">
+    <title>Ratios for Comparison</title>
+    <introduction>
+        <p>
+            Let's start with some functions: we'll consider <m>f(x)</m> and <m>g(x)</m> as two functions that are continuous when <m>x\geq 0</m> with <m>f(x)\to 0</m> and <m>g(x)\to 0</m> as <m>x\to\infty</m>.
+        </p>
+        <p>
+            All of this is so that we can think about <m>\dfrac{f(x)}{g(x)}</m> and know that we have an indeterminate form. We could put the requirement of differentiability on these functions (so that we could think about <xref ref="thm-LHopitalsRule" text="title"/>), but we don't need to do that. 
+        </p>
+        <p>
+            We're going to now consider the limit:
+            <me>
+                \lim_{x\to\infty} \frac{f(x)}{g(x)}
+            </me>.            
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+               What would the limit <m>\displaystyle \lim_{x\to\infty} \frac{f(x)}{g(x)}</m> look like if <m>g(x)\to 0</m> with a faster growth rate than <m>f(x)</m> does? In this case, we might say that:
+               <me>
+                f(x) \gt \gt g(x)
+               </me>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What does it normally look like when a fraction of numbers has a very small denominator compared to the numerator?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What would the limit <m>\displaystyle \lim_{x\to\infty} \frac{f(x)}{g(x)}</m> look like if <m>f(x)\to 0</m> with a faster growth rate than <m>g(x)</m> does? In this case, we might say that:
+                <me>
+                    g(x) \gt \gt f(x)
+                </me>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What does it normally look like when a fraction of numbers has a very large denominator compared to the numerator?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                If the functions <m>f(x)</m> and <m>g(x)</m> eventually act equivalently, then what does the limit <m>\displaystyle \lim_{x\to\infty} \frac{f(x)}{g(x)}</m> look like?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                When we say that these two functions act equivalently, we might mean that while they both approach 0 in the limit, they do it in the same way, or with identical growth rates.
+            </p>
+        </hint>
+        <hint>
+            <p>
+                What does it normally look like when a fraction of numbers is something over an equivalent thing?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                If the function <m>f(x)</m> eventually acts like some scaled version of <m>g(x)</m>, then what does the limit <m>\displaystyle \lim_{x\to\infty} \frac{f(x)}{g(x)}</m> look like?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We can think that <m>f(x)\to L(g(x))</m> as <m>x\to\infty</m> for some real number <m>L</m>.
+            </p>
+        </hint>
+    </task>
+</activity>

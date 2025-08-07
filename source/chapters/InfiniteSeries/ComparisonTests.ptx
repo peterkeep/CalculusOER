@@ -117,7 +117,7 @@
         </me>.
         Let's use our new test!
       </p>
-      <example>
+      <example xml:id="ex-FirstComparisonIntuition">
         <statement>
           <p>
             Does the series <m>\displaystyle \sum_{k=0}^\infty \frac{1}{k^3+1}</m> converge or diverge? How do you know?
@@ -291,6 +291,46 @@
 </subsection>
 <subsection xml:id="subsec-LimitComparison">
   <title>Limit Comparison</title>
+  <p>
+    Let's revisit some of our intuition from earlier. When we talked about the series in <xref ref="ex-FirstComparisonIntuition"/>, we made the claim that it probably acted like the <m>p</m>-series <m>\displaystyle \sum_{k=1}^\infty \frac{1}{k^3}</m>. Why did we choose this series?
+  </p>
+  <p>
+    Similarly, how did we pick our comparisons in <xref ref="act-UnhelpfulComparisons"/>?
+  </p>
+  <p>
+    We had thought about what parts of the functions defining the terms of the series would take over as <m>k\to\infty</m>. We were thinking about which parts of these terms ends up dominating, in behavior, over the other parts.
+  </p>
+  <p>
+    We're thinking about limits, really!
+  </p>
+  <p>
+    We're going to use this intuition that we have about limits and relative growth rates to come up with another way of thinking about whether two things act similarly. There are a few ways that we could approach this, but it will be useful to think about this comparison of relative growth rates as ratios.
+  </p>
+  <p>
+    What if we think about the ratio of the functions defining the terms of the series we're comparing, and see how this ratio acts in the limit as <m>k\to\infty</m>?
+  </p>
+  <xi:include href="./activities/act-RatiosForComparison.ptx" />
+  <p>
+    So we have three outcomes of our comparisons using ratios of functions in the limit:
+    <ol>
+      <li>
+        <p>
+          The numerator function could, eventually, be so much larger than the denominator function that the limit of the ratio is infinite.
+        </p>
+      </li>
+      <li>
+        <p>
+          The denominator could, eventually, be so much larger than the numerator function that the limit of the ratio is zero.
+        </p>
+      </li>
+      <li>
+        <p>
+          The numerator and denominator could, eventually, act so similarly to each other (or like scaled versions of each other) that the limit is some real number that isn't 0. 
+        </p>
+      </li>
+    </ol>
+    This is the motivation for the next comparison test! We'll just think about the functions defining the terms of a series instead, and we'll make conclusions about the series themselves instead of the functions defining the terms.
+  </p>
   <theorem xml:id="thm-LimitComparisonTest">
     <title>Limit Comparison Test</title>
     <statement>
@@ -340,7 +380,136 @@
       </p>
     </statement>
   </theorem>
-
+  <example>
+    <introduction>
+      <p>
+        For each of the following infinite series, try to select an appropriate comparison series, and then apply a comparison test to make conclusions about whether the series converges or diverges.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}}</m>
+        </p>
+      </statement>
+      <hint>
+        <p>
+          What happens, in the limit as <m>k\to\infty</m> to <m>e^{1/k}</m>? How does <m>\sqrt{k^2+k}</m> act in the limit: does the <m>k</m> term influence much, compared to <m>k^2</m>?
+        </p>
+      </hint>
+      <hint>
+        <p>
+          One of the comparisons we can try is to link the behavior of these two series:
+          <me>
+            \sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}} \sim \sum_{k=1}^\infty \frac{1}{\sqrt{k^2}} = \sum_{k=1}^\infty \frac{1}{k}
+          </me>.
+        </p>
+      </hint>
+      <solution>
+        <p>
+          In order to link these series, we'll apply a limit comparison test:
+          <me>
+            \sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}} \sim \sum_{k=1}^\infty \frac{1}{\sqrt{k^2}} = \sum_{k=1}^\infty \frac{1}{k}
+          </me>.
+          So let's investigate the limit of the ratio of the terms.
+          <md>
+            <mrow>\lim_{k\to\infty} \frac{\left(\frac{e^{1/k}}{\sqrt{k^2+k}}\right)}{\left(\frac{1}{k}\right)} \amp = \lim_{k\to\infty} \left(\frac{e^{1/k}}{\sqrt{k^2+k}}\right)\left(\frac{k}{1}\right)</mrow>
+            <mrow> \amp = \lim_{k\to\infty} \frac{ke^{1/k}}{\sqrt{k^2+k}}</mrow>
+            <mrow> \amp = \left(\underbrace{\lim_{k\to\infty} e^{1/k}}_{\to e^0 = 1} \right)\left(\lim_{k\to\infty} \frac{k}{\sqrt{k^2+k}}\right)</mrow>
+            <mrow> \amp = \lim_{k\to\infty} \frac{k}{\sqrt{k^2+k}} </mrow>
+          </md>
+          This limit is one that we can think about using <xref ref="thm-PolynomialEndBehavior" text="type-global-name"/>: we can apply the limit in the denominator under the root, and notice that the whole thing is really dependent on the behavior of <m>k^2</m>.
+        </p>
+        <p>
+          We'll apply a technique that is used in the proof of the theorem.
+          <md>
+            <mrow> \lim_{k\to\infty} \frac{k}{\sqrt{k^2+k}}\amp = \lim_{k\to\infty} \frac{k}{\sqrt{k^2\left(1+\frac{k}{k^2}\right)}}</mrow>
+            <mrow> \amp = \lim_{k\to\infty} \frac{k}{\sqrt{k^2}\sqrt{1+\frac{1}{k}}}</mrow>
+            <mrow> \amp = \lim_{k\to\infty} \frac{k}{k\sqrt{1+\frac{1}{k}}}</mrow>
+            <mrow> \amp = \lim_{k\to\infty} \frac{1}{\sqrt{1+\frac{1}{k}}}</mrow>
+          </md>
+          Now, since <m>\dfrac{1}{k}\to 0</m> as <m>k\to\infty</m> we end up with:
+          <me>
+            \lim_{k\to\infty} \frac{\left(\frac{e^{1/k}}{\sqrt{k^2+k}}\right)}{\left(\frac{1}{k}\right)} = 1
+          </me>.
+          <em>Conclusions:</em> Since we're comparing our series to the diverging <m>p</m>-series <m>\displaystyle\sum_{k=1}^\infty \frac{1}{k}</m>, and the limit comparison test says that these two infinite series must have the same behavior (since the limit of the ratio of the term functions was 1), then we can conclude that the infinite series <m>\displaystyle \sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}}</m> also diverges.
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle\sum_{k=0}^\infty \frac{1}{k!}</m>
+        </p>
+      </statement>
+      <hint>
+        <p>
+          This is a hard one to come up with a reasonable comparison. Try writing out some terms and getting a feel for what kinds of things are happening structurally:
+          <ul>
+            <li>
+              <p>
+                Is there something you can describe, recursively, about how we get from one term in the series to the next?
+              </p>
+            </li>
+            <li>
+              <p>
+                Are there consistent operations that we're applying to terms?
+              </p>
+            </li>
+            <li>
+              <p>
+                Does this remind you of anything?
+              </p>
+            </li>
+          </ul>
+        </p>
+      </hint>
+      <solution>
+        <p>
+          We can compare this to a converging geometric series, <m>\displaystyle\sum_{k=0}^\infty \frac{1}{2^k}</m>. So, we want to draw the following link:
+          <me>
+            \sum_{k=0}^\infty \frac{1}{k!} \sim \sum_{k=0}^\infty \frac{1}{2^k}
+          </me>.
+          The limit comparison test follows as such:
+          <md>
+            <mrow>\lim_{k\to\infty} \frac{\left(\frac{1}{k!}\right)}{\left(\frac{1}{2^k}\right)} \amp  = \lim_{k\to\infty} \frac{2^k}{k!}</mrow>
+          </md>
+          We cannot use L'Hopital's Rule here, since <m>k!</m> is not a continuous function for real numbers (since it only takes in non-negative integer inputs) and so it is not differentiable.
+        </p>
+        <p>
+          We can, instead, appeal to growth rates: <m>k!</m> approaches infinity much faster than <m>2^k</m>, and so this fraction has a much larger denominator.
+          <me>
+            \lim_{k\to\infty} \frac{2^k}{k!} = 0
+          </me>.
+          <em>Conclusions:</em> By the Limit Comparison Test, this means that <m>\frac{1}{k!} \lt \lt \frac{1}{2^k}</m>, and so, since <m>\displaystyle\sum_{k=0}^\infty \frac{1}{2^k}</m> is a converging geometric series, then the infinite series <m>\displaystyle \sum_{k=0}^\infty \frac{1}{k!}</m> must also converge.
+        </p>
+      </solution>
+    </task>
+  </example>
+  <p>
+    There isn't anything special about the series we're comparing to: We could have used any mix of the following comparisons to find the same conclusions:
+    <ul>
+      <li>
+        <p>
+          <m>\displaystyle \sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}} \sim \sum_{k=1}^\infty \frac{1}{\sqrt{k}}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\displaystyle \sum_{k=0}^\infty \frac{1}{k!} \sim \sum_{k=1}^\infty \frac{1}{k^2}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\displaystyle \sum_{k=0}^\infty \frac{1}{k!} \sim \sum_{k=1}^\infty \frac{1}{10^k}</m>
+        </p>
+      </li>
+    </ul>
+    There's no magic series to compare to: one of the nice things about the limit comparison test is that we can compare a series to another one not based on similar structure, but based on intuited behavior: if you think a series converges, compare it to a converging <m>p</m>-series if you'd like!
+  </p>
+  <p>
+    There certainly are some instances where it is reasonable to pick a specific series to compare to based on the structure.
+  </p>
   <theorem xml:id="thm-RationalComparison">
     <title>Rational Comparison Theorem</title>
     <statement>
