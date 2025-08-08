@@ -101,14 +101,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.4';
+eBookConfig.runestone_version = '7.9.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.21df2a4c52b86839.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
@@ -732,43 +732,43 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">Let’s use our new test!</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComparingPartialSums-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="subsec-ComparingPartialSums-16"><h4 class="heading">
+<article class="example example-like" id="ex-FirstComparisonIntuition"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">8.7.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-ComparingPartialSums-16-1-1">Does the series <span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{1}{k^3+1}\)</span> converge or diverge? How do you know?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComparingPartialSums-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-FirstComparisonIntuition-1-1">Does the series <span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{1}{k^3+1}\)</span> converge or diverge? How do you know?<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstComparisonIntuition-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-ComparingPartialSums-16-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para logical" id="subsec-ComparingPartialSums-16-2-1">
+<details id="ex-FirstComparisonIntuition-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para logical" id="ex-FirstComparisonIntuition-2-1">
 <div class="para">If we’re going to use our new <a href="sec-ComparisonTests.html#thm-DirectComparisonTest" class="xref" data-knowl="./knowl/xref/thm-DirectComparisonTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.7.4: Direct Comparison Test">Direct Comparison Test</a>, we need to identify two things:</div>
-<ol class="decimal" id="subsec-ComparingPartialSums-16-2-1-2">
-<li id="subsec-ComparingPartialSums-16-2-1-2-1">
-<div class="para" id="subsec-ComparingPartialSums-16-2-1-2-1-1">Some intuition on whether we think our series converges or not.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComparingPartialSums-16-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ol class="decimal" id="ex-FirstComparisonIntuition-2-1-2">
+<li id="ex-FirstComparisonIntuition-2-1-2-1">
+<div class="para" id="ex-FirstComparisonIntuition-2-1-2-1-1">Some intuition on whether we think our series converges or not.<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstComparisonIntuition-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#subsec-ComparingPartialSums-16-2-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#ex-FirstComparisonIntuition-2-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
-<li id="subsec-ComparingPartialSums-16-2-1-2-2">
-<div class="para" id="subsec-ComparingPartialSums-16-2-1-2-2-1">An appropriate series to compare to. Likely, this will be either a <a href="sec-CommonSeries.html#def-GeometricSeries" class="xref" data-knowl="./knowl/xref/def-GeometricSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.6.1: Geometric Series">Geometric Series</a> or a <a href="sec-CommonSeries.html#def-pSeries" class="xref" data-knowl="./knowl/xref/def-pSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.6.3: p-Series"><span class="process-math">\(p\)</span>-Series</a>, since we have clear convergence criteria for each of those.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComparingPartialSums-16-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="ex-FirstComparisonIntuition-2-1-2-2">
+<div class="para" id="ex-FirstComparisonIntuition-2-1-2-2-1">An appropriate series to compare to. Likely, this will be either a <a href="sec-CommonSeries.html#def-GeometricSeries" class="xref" data-knowl="./knowl/xref/def-GeometricSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.6.1: Geometric Series">Geometric Series</a> or a <a href="sec-CommonSeries.html#def-pSeries" class="xref" data-knowl="./knowl/xref/def-pSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.6.3: p-Series"><span class="process-math">\(p\)</span>-Series</a>, since we have clear convergence criteria for each of those.<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstComparisonIntuition-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#subsec-ComparingPartialSums-16-2-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#ex-FirstComparisonIntuition-2-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
 <div class="para">We can do this in any order: sometimes we might use the structure of the series we’re looking at to give us a good candidate to compare to, and that might tell us the behavior we think we’re looking for. Other times we might have good intuition about convergence/divergence of the series which will tell us whether we need to find a series that is smaller or larger to compare to.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComparingPartialSums-16-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstComparisonIntuition-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-ComparingPartialSums-16-2-2">What do you think? Do we have a suitable comparison?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComparingPartialSums-16-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-FirstComparisonIntuition-2-2">What do you think? Do we have a suitable comparison?<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstComparisonIntuition-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 8.7.5.1"><a href="#subsec-ComparingPartialSums-16-2" title="Copy heading and permalink for Hint 8.7.5.1" aria-label="Copy heading and permalink for Hint 8.7.5.1">🔗</a></div>
-</div></details><details id="subsec-ComparingPartialSums-16-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="subsec-ComparingPartialSums-16-3-1">Compare to the <a href="sec-CommonSeries.html#def-pSeries" class="xref" data-knowl="./knowl/xref/def-pSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.6.3: p-Series"><span class="process-math">\(p\)</span>-Series</a> <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{1}{k^3}\text{.}\)</span> Here, <span class="process-math">\(p=3\text{.}\)</span> Based on this, do we need to show that <span class="process-math">\(\dfrac{1}{k^3+1}\)</span> is greater than or less than <span class="process-math">\(\dfrac{1}{k^3}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComparingPartialSums-16-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Hint 8.7.5.1"><a href="#ex-FirstComparisonIntuition-2" title="Copy heading and permalink for Hint 8.7.5.1" aria-label="Copy heading and permalink for Hint 8.7.5.1">🔗</a></div>
+</div></details><details id="ex-FirstComparisonIntuition-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="ex-FirstComparisonIntuition-3-1">Compare to the <a href="sec-CommonSeries.html#def-pSeries" class="xref" data-knowl="./knowl/xref/def-pSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.6.3: p-Series"><span class="process-math">\(p\)</span>-Series</a> <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{1}{k^3}\text{.}\)</span> Here, <span class="process-math">\(p=3\text{.}\)</span> Based on this, do we need to show that <span class="process-math">\(\dfrac{1}{k^3+1}\)</span> is greater than or less than <span class="process-math">\(\dfrac{1}{k^3}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstComparisonIntuition-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-ComparingPartialSums-16-3-2">Show this!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComparingPartialSums-16-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-FirstComparisonIntuition-3-2">Show this!<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstComparisonIntuition-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-ComparingPartialSums-16-3-3">Does the change in the starting index matter?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComparingPartialSums-16-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-FirstComparisonIntuition-3-3">Does the change in the starting index matter?<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstComparisonIntuition-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 8.7.5.2"><a href="#subsec-ComparingPartialSums-16-3" title="Copy heading and permalink for Hint 8.7.5.2" aria-label="Copy heading and permalink for Hint 8.7.5.2">🔗</a></div>
-</div></details><details id="subsec-ComparingPartialSums-16-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para logical" id="subsec-ComparingPartialSums-16-4-1">
+<div class="autopermalink" data-description="Hint 8.7.5.2"><a href="#ex-FirstComparisonIntuition-3" title="Copy heading and permalink for Hint 8.7.5.2" aria-label="Copy heading and permalink for Hint 8.7.5.2">🔗</a></div>
+</div></details><details id="ex-FirstComparisonIntuition-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-FirstComparisonIntuition-4-1">
 <div class="para">Let’s compare our series to the converging <span class="process-math">\(p\)</span>-series with <span class="process-math">\(p=3\text{:}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -778,9 +778,9 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">We want to show that <span class="process-math">\(\dfrac{1}{k^3+1}\leq \dfrac{1}{k^3}\)</span> for <span class="process-math">\(k\geq 1\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComparingPartialSums-16-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstComparisonIntuition-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-ComparingPartialSums-16-4-2">
+<div class="para logical" id="ex-FirstComparisonIntuition-4-2">
 <div class="para">Let’s start with comparing the denominators, and move from there.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -794,23 +794,23 @@ k^3+1 \gt k^3 \text{ for any value of } k
 \end{equation*}
 </div>
 <div class="para">This means that, since <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{1}{k^3}\)</span> converges, then <span class="process-math">\(\displaystyle\sum_{k=1}^\infty \frac{1}{k^3+1}\)</span> must also converge.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComparingPartialSums-16-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstComparisonIntuition-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-ComparingPartialSums-16-4-3">
+<div class="para logical" id="ex-FirstComparisonIntuition-4-3">
 <div class="para">We can just add the term where <span class="process-math">\(k=0\)</span> to get</div>
-<div class="displaymath process-math" id="subsec-ComparingPartialSums-16-4-3-2">
+<div class="displaymath process-math" id="ex-FirstComparisonIntuition-4-3-2">
 \begin{align*}
 \sum_{k=0}^\infty \frac{1}{k^3+1} \amp = \overbrace{\frac{1}{0^3+1}}^{k=0} + \sum_{k=1}^\infty \frac{1}{k^3+1}\\
 \amp = 1 + \sum_{k=1}^\infty \frac{1}{k^3+1}
 \end{align*}
 </div>
 <div class="para">So then we know that our series, <span class="process-math">\(\displaystyle\sum_{k=0}^\infty \frac{1}{k^3+1}\)</span> must converge.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComparingPartialSums-16-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstComparisonIntuition-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 8.7.5.1"><a href="#subsec-ComparingPartialSums-16-4" title="Copy heading and permalink for Solution 8.7.5.1" aria-label="Copy heading and permalink for Solution 8.7.5.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 8.7.5.1"><a href="#ex-FirstComparisonIntuition-4" title="Copy heading and permalink for Solution 8.7.5.1" aria-label="Copy heading and permalink for Solution 8.7.5.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 8.7.5"><a href="#subsec-ComparingPartialSums-16" title="Copy heading and permalink for Example 8.7.5" aria-label="Copy heading and permalink for Example 8.7.5">🔗</a></div></article><div class="para logical" id="subsec-ComparingPartialSums-17">
+<div class="autopermalink" data-description="Example 8.7.5"><a href="#ex-FirstComparisonIntuition" title="Copy heading and permalink for Example 8.7.5" aria-label="Copy heading and permalink for Example 8.7.5">🔗</a></div></article><div class="para logical" id="subsec-ComparingPartialSums-17">
 <div class="para">A quick note: in this example, we thought about building the link</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1213,6 +1213,110 @@ k(3^k) \geq 3^k \text{ for } k=1,2,3, ...
 <div class="autopermalink" data-description="Subsection: (Un)Helpful Comparisons"><a href="#subsec-UnhelpfulComparisons" title="Copy heading and permalink for Subsection: (Un)Helpful Comparisons" aria-label="Copy heading and permalink for Subsection: (Un)Helpful Comparisons">🔗</a></div></section><section class="subsection" id="subsec-LimitComparison"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Limit Comparison</span>
 </h3>
+<div class="para" id="subsec-LimitComparison-2">Let’s revisit some of our intuition from earlier. When we talked about the series in <a href="sec-ComparisonTests.html#ex-FirstComparisonIntuition" class="xref" data-knowl="./knowl/xref/ex-FirstComparisonIntuition.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 8.7.5">Example 8.7.5</a>, we made the claim that it probably acted like the <span class="process-math">\(p\)</span>-series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{1}{k^3}\text{.}\)</span> Why did we choose this series?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LimitComparison-3">Similarly, how did we pick our comparisons in <a href="sec-ComparisonTests.html#act-UnhelpfulComparisons" class="xref" data-knowl="./knowl/xref/act-UnhelpfulComparisons.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.7.2: (Un)Helpful Comparisons">Activity 8.7.2</a>?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LimitComparison-4">We had thought about what parts of the functions defining the terms of the series would take over as <span class="process-math">\(k\to\infty\text{.}\)</span> We were thinking about which parts of these terms ends up dominating, in behavior, over the other parts.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LimitComparison-5">We’re thinking about limits, really!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LimitComparison-6">We’re going to use this intuition that we have about limits and relative growth rates to come up with another way of thinking about whether two things act similarly. There are a few ways that we could approach this, but it will be useful to think about this comparison of relative growth rates as ratios.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LimitComparison-7">What if we think about the ratio of the functions defining the terms of the series we’re comparing, and see how this ratio acts in the limit as <span class="process-math">\(k\to\infty\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-RatiosForComparison"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.3</span><span class="period">.</span><span class="space"> </span><span class="title">Ratios for Comparison.</span>
+</h4>
+<div class="introduction" id="act-RatiosForComparison-2">
+<div class="para" id="act-RatiosForComparison-2-1">Let’s start with some functions: we’ll consider <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> as two functions that are continuous when <span class="process-math">\(x\geq 0\)</span> with <span class="process-math">\(f(x)\to 0\)</span> and <span class="process-math">\(g(x)\to 0\)</span> as <span class="process-math">\(x\to\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-RatiosForComparison-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="act-RatiosForComparison-2-2">All of this is so that we can think about <span class="process-math">\(\dfrac{f(x)}{g(x)}\)</span> and know that we have an indeterminate form. We could put the requirement of differentiability on these functions (so that we could think about <a href="sec-LHopitalsRule.html#thm-LHopitalsRule" class="xref" data-knowl="./knowl/xref/thm-LHopitalsRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.7.1: L’Hôpital’s Rule">L’Hôpital’s Rule</a>), but we don’t need to do that.<div class="autopermalink" data-description="Paragraph"><a href="#act-RatiosForComparison-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="act-RatiosForComparison-2-3">
+<div class="para">We’re going to now consider the limit:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to\infty} \frac{f(x)}{g(x)}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-RatiosForComparison-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="act-RatiosForComparison-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="act-RatiosForComparison-3-1-1">
+<div class="para">What would the limit <span class="process-math">\(\displaystyle \lim_{x\to\infty} \frac{f(x)}{g(x)}\)</span> look like if <span class="process-math">\(g(x)\to 0\)</span> with a faster growth rate than <span class="process-math">\(f(x)\)</span> does? In this case, we might say that:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) \gt \gt g(x)\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-RatiosForComparison-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-RatiosForComparison-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-RatiosForComparison-3-2-1">What does it normally look like when a fraction of numbers has a very small denominator compared to the numerator?<div class="autopermalink" data-description="Paragraph"><a href="#act-RatiosForComparison-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.7.3.a.1"><a href="#act-RatiosForComparison-3-2" title="Copy heading and permalink for Hint 8.7.3.a.1" aria-label="Copy heading and permalink for Hint 8.7.3.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 8.7.3.a"><a href="#act-RatiosForComparison-3" title="Copy heading and permalink for Task 8.7.3.a" aria-label="Copy heading and permalink for Task 8.7.3.a">🔗</a></div></article><article class="task exercise-like" id="act-RatiosForComparison-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="act-RatiosForComparison-4-1-1">
+<div class="para">What would the limit <span class="process-math">\(\displaystyle \lim_{x\to\infty} \frac{f(x)}{g(x)}\)</span> look like if <span class="process-math">\(f(x)\to 0\)</span> with a faster growth rate than <span class="process-math">\(g(x)\)</span> does? In this case, we might say that:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g(x) \gt \gt f(x)\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-RatiosForComparison-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-RatiosForComparison-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-RatiosForComparison-4-2-1">What does it normally look like when a fraction of numbers has a very large denominator compared to the numerator?<div class="autopermalink" data-description="Paragraph"><a href="#act-RatiosForComparison-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.7.3.b.1"><a href="#act-RatiosForComparison-4-2" title="Copy heading and permalink for Hint 8.7.3.b.1" aria-label="Copy heading and permalink for Hint 8.7.3.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 8.7.3.b"><a href="#act-RatiosForComparison-4" title="Copy heading and permalink for Task 8.7.3.b" aria-label="Copy heading and permalink for Task 8.7.3.b">🔗</a></div></article><article class="task exercise-like" id="act-RatiosForComparison-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-RatiosForComparison-5-1-1">If the functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> eventually act equivalently, then what does the limit <span class="process-math">\(\displaystyle \lim_{x\to\infty} \frac{f(x)}{g(x)}\)</span> look like?<div class="autopermalink" data-description="Paragraph"><a href="#act-RatiosForComparison-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="act-RatiosForComparison-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-RatiosForComparison-5-2-1">When we say that these two functions act equivalently, we might mean that while they both approach 0 in the limit, they do it in the same way, or with identical growth rates.<div class="autopermalink" data-description="Paragraph"><a href="#act-RatiosForComparison-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.7.3.c.1"><a href="#act-RatiosForComparison-5-2" title="Copy heading and permalink for Hint 8.7.3.c.1" aria-label="Copy heading and permalink for Hint 8.7.3.c.1">🔗</a></div>
+</div></details><details id="act-RatiosForComparison-5-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-RatiosForComparison-5-3-1">What does it normally look like when a fraction of numbers is something over an equivalent thing?<div class="autopermalink" data-description="Paragraph"><a href="#act-RatiosForComparison-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.7.3.c.2"><a href="#act-RatiosForComparison-5-3" title="Copy heading and permalink for Hint 8.7.3.c.2" aria-label="Copy heading and permalink for Hint 8.7.3.c.2">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 8.7.3.c"><a href="#act-RatiosForComparison-5" title="Copy heading and permalink for Task 8.7.3.c" aria-label="Copy heading and permalink for Task 8.7.3.c">🔗</a></div></article><article class="task exercise-like" id="act-RatiosForComparison-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-RatiosForComparison-6-1-1">If the function <span class="process-math">\(f(x)\)</span> eventually acts like some scaled version of <span class="process-math">\(g(x)\text{,}\)</span> then what does the limit <span class="process-math">\(\displaystyle \lim_{x\to\infty} \frac{f(x)}{g(x)}\)</span> look like?<div class="autopermalink" data-description="Paragraph"><a href="#act-RatiosForComparison-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-RatiosForComparison-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-RatiosForComparison-6-2-1">We can think that <span class="process-math">\(f(x)\to L(g(x))\)</span> as <span class="process-math">\(x\to\infty\)</span> for some real number <span class="process-math">\(L\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-RatiosForComparison-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.7.3.d.1"><a href="#act-RatiosForComparison-6-2" title="Copy heading and permalink for Hint 8.7.3.d.1" aria-label="Copy heading and permalink for Hint 8.7.3.d.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 8.7.3.d"><a href="#act-RatiosForComparison-6" title="Copy heading and permalink for Task 8.7.3.d" aria-label="Copy heading and permalink for Task 8.7.3.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 8.7.3: Ratios for Comparison"><a href="#act-RatiosForComparison" title="Copy heading and permalink for Activity 8.7.3: Ratios for Comparison" aria-label="Copy heading and permalink for Activity 8.7.3: Ratios for Comparison">🔗</a></div></article><div class="para logical" id="subsec-LimitComparison-9">
+<div class="para">So we have three outcomes of our comparisons using ratios of functions in the limit:</div>
+<ol class="decimal" id="subsec-LimitComparison-9-1">
+<li id="subsec-LimitComparison-9-1-1">
+<div class="para" id="subsec-LimitComparison-9-1-1-1">The numerator function could, eventually, be so much larger than the denominator function that the limit of the ratio is infinite.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-9-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-LimitComparison-9-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-LimitComparison-9-1-2">
+<div class="para" id="subsec-LimitComparison-9-1-2-1">The denominator could, eventually, be so much larger than the numerator function that the limit of the ratio is zero.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-9-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-LimitComparison-9-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-LimitComparison-9-1-3">
+<div class="para" id="subsec-LimitComparison-9-1-3-1">The numerator and denominator could, eventually, act so similarly to each other (or like scaled versions of each other) that the limit is some real number that isn’t 0.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-9-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-LimitComparison-9-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="para">This is the motivation for the next comparison test! We’ll just think about the functions defining the terms of a series instead, and we’ll make conclusions about the series themselves instead of the functions defining the terms.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="thm-LimitComparisonTest"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.7.7</span><span class="period">.</span><span class="space"> </span><span class="title">Limit Comparison Test.</span>
 </h4>
@@ -1266,31 +1370,261 @@ k(3^k) \geq 3^k \text{ for } k=1,2,3, ...
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#thm-LimitComparisonTest-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 8.7.7: Limit Comparison Test"><a href="#thm-LimitComparisonTest" title="Copy heading and permalink for Theorem 8.7.7: Limit Comparison Test" aria-label="Copy heading and permalink for Theorem 8.7.7: Limit Comparison Test">🔗</a></div></article><article class="theorem theorem-like" id="thm-RationalComparison"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.7.8</span><span class="period">.</span><span class="space"> </span><span class="title">Rational Comparison Theorem.</span>
+<div class="autopermalink" data-description="Theorem 8.7.7: Limit Comparison Test"><a href="#thm-LimitComparisonTest" title="Copy heading and permalink for Theorem 8.7.7: Limit Comparison Test" aria-label="Copy heading and permalink for Theorem 8.7.7: Limit Comparison Test">🔗</a></div></article><article class="example example-like" id="subsec-LimitComparison-11"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.7.8</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="subsec-LimitComparison-11-1"><div class="para" id="subsec-LimitComparison-11-1-1">For each of the following infinite series, try to select an appropriate comparison series, and then apply a comparison test to make conclusions about whether the series converges or diverges.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="subsec-LimitComparison-11-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-LimitComparison-11-2-1-1">
+<span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-LimitComparison-11-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-LimitComparison-11-2-2-1">What happens, in the limit as <span class="process-math">\(k\to\infty\)</span> to <span class="process-math">\(e^{1/k}\text{?}\)</span> How does <span class="process-math">\(\sqrt{k^2+k}\)</span> act in the limit: does the <span class="process-math">\(k\)</span> term influence much, compared to <span class="process-math">\(k^2\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.7.8.a.1"><a href="#subsec-LimitComparison-11-2-2" title="Copy heading and permalink for Hint 8.7.8.a.1" aria-label="Copy heading and permalink for Hint 8.7.8.a.1">🔗</a></div>
+</div></details><details id="subsec-LimitComparison-11-2-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para logical" id="subsec-LimitComparison-11-2-3-1">
+<div class="para">One of the comparisons we can try is to link the behavior of these two series:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}} \sim \sum_{k=1}^\infty \frac{1}{\sqrt{k^2}} = \sum_{k=1}^\infty \frac{1}{k}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.7.8.a.2"><a href="#subsec-LimitComparison-11-2-3" title="Copy heading and permalink for Hint 8.7.8.a.2" aria-label="Copy heading and permalink for Hint 8.7.8.a.2">🔗</a></div>
+</div></details><details id="subsec-LimitComparison-11-2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-LimitComparison-11-2-4-1">
+<div class="para">In order to link these series, we’ll apply a limit comparison test:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-PolynomialEndBehavior.html">
+\begin{equation*}
+\sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}} \sim \sum_{k=1}^\infty \frac{1}{\sqrt{k^2}} = \sum_{k=1}^\infty \frac{1}{k}\text{.}
+\end{equation*}
+</div>
+<div class="para">So let’s investigate the limit of the ratio of the terms.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-PolynomialEndBehavior.html" id="subsec-LimitComparison-11-2-4-1-2">
+\begin{align*}
+\lim_{k\to\infty} \frac{\left(\frac{e^{1/k}}{\sqrt{k^2+k}}\right)}{\left(\frac{1}{k}\right)} \amp = \lim_{k\to\infty} \left(\frac{e^{1/k}}{\sqrt{k^2+k}}\right)\left(\frac{k}{1}\right)\\
+\amp = \lim_{k\to\infty} \frac{ke^{1/k}}{\sqrt{k^2+k}}\\
+\amp = \left(\underbrace{\lim_{k\to\infty} e^{1/k}}_{\to e^0 = 1} \right)\left(\lim_{k\to\infty} \frac{k}{\sqrt{k^2+k}}\right)\\
+\amp = \lim_{k\to\infty} \frac{k}{\sqrt{k^2+k}} 
+\end{align*}
+</div>
+<div class="para">This limit is one that we can think about using <a href="sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.5.6: Polynomial End Behavior Limits">Theorem 1.5.6</a>: we can apply the limit in the denominator under the root, and notice that the whole thing is really dependent on the behavior of <span class="process-math">\(k^2\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-LimitComparison-11-2-4-2">
+<div class="para">We’ll apply a technique that is used in the proof of the theorem.</div>
+<div class="displaymath process-math" id="subsec-LimitComparison-11-2-4-2-1">
+\begin{align*}
+\lim_{k\to\infty} \frac{k}{\sqrt{k^2+k}}\amp = \lim_{k\to\infty} \frac{k}{\sqrt{k^2\left(1+\frac{k}{k^2}\right)}}\\
+\amp = \lim_{k\to\infty} \frac{k}{\sqrt{k^2}\sqrt{1+\frac{1}{k}}}\\
+\amp = \lim_{k\to\infty} \frac{k}{k\sqrt{1+\frac{1}{k}}}\\
+\amp = \lim_{k\to\infty} \frac{1}{\sqrt{1+\frac{1}{k}}}
+\end{align*}
+</div>
+<div class="para">Now, since <span class="process-math">\(\dfrac{1}{k}\to 0\)</span> as <span class="process-math">\(k\to\infty\)</span> we end up with:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{k\to\infty} \frac{\left(\frac{e^{1/k}}{\sqrt{k^2+k}}\right)}{\left(\frac{1}{k}\right)} = 1\text{.}
+\end{equation*}
+</div>
+<div class="para">
+<em class="emphasis">Conclusions:</em> Since we’re comparing our series to the diverging <span class="process-math">\(p\)</span>-series <span class="process-math">\(\displaystyle\sum_{k=1}^\infty \frac{1}{k}\text{,}\)</span> and the limit comparison test says that these two infinite series must have the same behavior (since the limit of the ratio of the term functions was 1), then we can conclude that the infinite series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}}\)</span> also diverges.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.7.8.a.1"><a href="#subsec-LimitComparison-11-2-4" title="Copy heading and permalink for Solution 8.7.8.a.1" aria-label="Copy heading and permalink for Solution 8.7.8.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 8.7.8.a"><a href="#subsec-LimitComparison-11-2" title="Copy heading and permalink for Task 8.7.8.a" aria-label="Copy heading and permalink for Task 8.7.8.a">🔗</a></div></article><article class="task exercise-like" id="subsec-LimitComparison-11-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-LimitComparison-11-3-1-1">
+<span class="process-math">\(\displaystyle\sum_{k=0}^\infty \frac{1}{k!}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-LimitComparison-11-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para logical" id="subsec-LimitComparison-11-3-2-1">
+<div class="para">This is a hard one to come up with a reasonable comparison. Try writing out some terms and getting a feel for what kinds of things are happening structurally:</div>
+<ul class="disc" id="subsec-LimitComparison-11-3-2-1-1">
+<li id="subsec-LimitComparison-11-3-2-1-1-1">
+<div class="para" id="subsec-LimitComparison-11-3-2-1-1-1-1">Is there something you can describe, recursively, about how we get from one term in the series to the next?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-3-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LimitComparison-11-3-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-LimitComparison-11-3-2-1-1-2">
+<div class="para" id="subsec-LimitComparison-11-3-2-1-1-2-1">Are there consistent operations that we’re applying to terms?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-3-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LimitComparison-11-3-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-LimitComparison-11-3-2-1-1-3">
+<div class="para" id="subsec-LimitComparison-11-3-2-1-1-3-1">Does this remind you of anything?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-3-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LimitComparison-11-3-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.7.8.b.1"><a href="#subsec-LimitComparison-11-3-2" title="Copy heading and permalink for Hint 8.7.8.b.1" aria-label="Copy heading and permalink for Hint 8.7.8.b.1">🔗</a></div>
+</div></details><details id="subsec-LimitComparison-11-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-LimitComparison-11-3-3-1">
+<div class="para">We can compare this to a converging geometric series, <span class="process-math">\(\displaystyle\sum_{k=0}^\infty \frac{1}{2^k}\text{.}\)</span> So, we want to draw the following link:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=0}^\infty \frac{1}{k!} \sim \sum_{k=0}^\infty \frac{1}{2^k}\text{.}
+\end{equation*}
+</div>
+<div class="para">The limit comparison test follows as such:</div>
+<div class="displaymath process-math" id="subsec-LimitComparison-11-3-3-1-3">
+\begin{align*}
+\lim_{k\to\infty} \frac{\left(\frac{1}{k!}\right)}{\left(\frac{1}{2^k}\right)} \amp  = \lim_{k\to\infty} \frac{2^k}{k!}
+\end{align*}
+</div>
+<div class="para">We cannot use L’Hopital’s Rule here, since <span class="process-math">\(k!\)</span> is not a continuous function for real numbers (since it only takes in non-negative integer inputs) and so it is not differentiable.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-LimitComparison-11-3-3-2">
+<div class="para">We can, instead, appeal to growth rates: <span class="process-math">\(k!\)</span> approaches infinity much faster than <span class="process-math">\(2^k\text{,}\)</span> and so this fraction has a much larger denominator.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{k\to\infty} \frac{2^k}{k!} = 0\text{.}
+\end{equation*}
+</div>
+<div class="para">
+<em class="emphasis">Conclusions:</em> By the Limit Comparison Test, this means that <span class="process-math">\(\frac{1}{k!} \lt \lt \frac{1}{2^k}\text{,}\)</span> and so, since <span class="process-math">\(\displaystyle\sum_{k=0}^\infty \frac{1}{2^k}\)</span> is a converging geometric series, then the infinite series <span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{1}{k!}\)</span> must also converge.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-11-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.7.8.b.1"><a href="#subsec-LimitComparison-11-3-3" title="Copy heading and permalink for Solution 8.7.8.b.1" aria-label="Copy heading and permalink for Solution 8.7.8.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 8.7.8.b"><a href="#subsec-LimitComparison-11-3" title="Copy heading and permalink for Task 8.7.8.b" aria-label="Copy heading and permalink for Task 8.7.8.b">🔗</a></div></article><div class="autopermalink" data-description="Example 8.7.8"><a href="#subsec-LimitComparison-11" title="Copy heading and permalink for Example 8.7.8" aria-label="Copy heading and permalink for Example 8.7.8">🔗</a></div></article><div class="para logical" id="subsec-LimitComparison-12">
+<div class="para">There isn’t anything special about the series we’re comparing to: We could have used any mix of the following comparisons to find the same conclusions:</div>
+<ul class="disc" id="subsec-LimitComparison-12-1">
+<li id="subsec-LimitComparison-12-1-1">
+<div class="para" id="subsec-LimitComparison-12-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle \sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}} \sim \sum_{k=1}^\infty \frac{1}{\sqrt{k}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-12-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LimitComparison-12-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-LimitComparison-12-1-2">
+<div class="para" id="subsec-LimitComparison-12-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle \sum_{k=0}^\infty \frac{1}{k!} \sim \sum_{k=1}^\infty \frac{1}{k^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-12-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LimitComparison-12-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-LimitComparison-12-1-3">
+<div class="para" id="subsec-LimitComparison-12-1-3-1">
+<span class="process-math">\(\displaystyle \displaystyle \sum_{k=0}^\infty \frac{1}{k!} \sim \sum_{k=1}^\infty \frac{1}{10^k}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-12-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LimitComparison-12-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">There’s no magic series to compare to: one of the nice things about the limit comparison test is that we can compare a series to another one not based on similar structure, but based on intuited behavior: if you think a series converges, compare it to a converging <span class="process-math">\(p\)</span>-series if you’d like!</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LimitComparison-13">There certainly are some instances where it is reasonable to pick a specific series to compare to based on the structure.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsec-LimitComparison-14"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.7.9</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="subsec-LimitComparison-14-1-1">
+<div class="para">Consider the following series:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=1}^\infty \frac{2k^2-k+3\sqrt{k}}{3k^{7/3}+4k^{5/3} - k^{2/5}}\text{.}
+\end{equation*}
+</div>
+<div class="para">Perform a test and state a conclusion about whether or not this series converges.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-LimitComparison-14-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-LimitComparison-14-2-1">There are a lot of power functions here! Which ones do you think are most important in deciding how quickly the terms approach 0?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.7.9.1"><a href="#subsec-LimitComparison-14-2" title="Copy heading and permalink for Hint 8.7.9.1" aria-label="Copy heading and permalink for Hint 8.7.9.1">🔗</a></div>
+</div></details><details id="subsec-LimitComparison-14-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-LimitComparison-14-3-1">This isn’t a <span class="process-math">\(p\)</span>-Series, but it might act like one. Compare it to a relevant <span class="process-math">\(p\)</span>-Series!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-14-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 8.7.9.2"><a href="#subsec-LimitComparison-14-3" title="Copy heading and permalink for Hint 8.7.9.2" aria-label="Copy heading and permalink for Hint 8.7.9.2">🔗</a></div>
+</div></details><details id="subsec-LimitComparison-14-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-LimitComparison-14-4-1">
+<div class="para">We can note that the numerator is really driven by the quadratic term, <span class="process-math">\(k^2\text{,}\)</span> while the denominator’s behavior is determined by <span class="process-math">\(k^{7/3}\text{,}\)</span> the power function with the highest exponent. We can make the following comparison:</div>
+<div class="displaymath process-math" id="subsec-LimitComparison-14-4-1-3">
+\begin{align*}
+\sum_{k=1}^\infty \frac{2k^2-k+3\sqrt{k}}{3k^{7/3}+4k^{5/3} - k^{2/5}} \amp \sim \sum_{k=1}^\infty \frac{k^2}{k^{7/3}}\\
+\amp \sim \sum_{k=1}^\infty \frac{1}{k^{1/3}}
+\end{align*}
+</div>
+<div class="para">Note that this is a diverging <span class="process-math">\(p\)</span>-series, and so, in performing this comparison, we think that our series also converges. Let’s show this using a limit comparison.</div>
+<div class="displaymath process-math" id="subsec-LimitComparison-14-4-1-5">
+\begin{align*}
+\lim_{k\to\infty} \frac{\left(\frac{1}{k^{1/3}}\right)}{\left(\frac{2k^2-k+3\sqrt{k}}{3k^{7/3}+4k^{5/3} - k^{2/5}}\right)} \amp = \lim_{k\to\infty} \left(\frac{1}{k^{1/3}}\right)\left(\frac{3k^{7/3}+4k^{5/3} - k^{2/5}}{2k^2-k+3\sqrt{k}}\right) \\
+\amp = \lim_{k\to\infty} \frac{3k^{7/3}+4k^{5/3} - k^{2/5}}{2k^{7/3}-k^{4/3}+3k^{5/6}}\\
+\amp = \frac{3}{2}
+\end{align*}
+</div>
+<div class="para">e<span class="process-math">\(Conclusion:\)</span> Since this limit is a non-zero real number, we can conclude that our two series have the same behavior. So, since <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{1}{k^{1/3}}\)</span> diverged, then we know that the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{2k^2-k+3\sqrt{k}}{3k^{7/3}+4k^{5/3} - k^{2/5}}\)</span> must also diverge.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-14-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.7.9.1"><a href="#subsec-LimitComparison-14-4" title="Copy heading and permalink for Solution 8.7.9.1" aria-label="Copy heading and permalink for Solution 8.7.9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 8.7.9"><a href="#subsec-LimitComparison-14" title="Copy heading and permalink for Example 8.7.9" aria-label="Copy heading and permalink for Example 8.7.9">🔗</a></div></article><div class="para" id="subsec-LimitComparison-15">This example is not unique! Note that out selection of the <span class="process-math">\(p\)</span>-series to use as comparison is based on what we know will happen in the limit that we eventually use in the test itself!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-RationalComparison"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.7.10</span><span class="period">.</span><span class="space"> </span><span class="title">Rational Comparison Theorem.</span>
 </h4>
 <div class="para logical" id="thm-RationalComparison-2-1">
 <div class="para">If <span class="process-math">\(a_k\)</span> is a rational function of <span class="process-math">\(k\text{,}\)</span>  <span class="process-math">\(a_k = \dfrac{p(k)}{q(k)}\)</span> where both <span class="process-math">\(p(k)\)</span> and <span class="process-math">\(q(k)\)</span> are polynomial functions, then:</div>
 <ul class="disc" id="thm-RationalComparison-2-1-6">
 <li id="thm-RationalComparison-2-1-6-1">
-<div class="para" id="thm-RationalComparison-2-1-6-1-1">If <span class="process-math">\(\deg(q(k)-p(k)) \gt 1\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum_{k=0}^\infty a_k\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RationalComparison-2-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm-RationalComparison-2-1-6-1-1">If <span class="process-math">\(\deg(q(k)-p(k)) \gt 1\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum_{k=1}^\infty a_k\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RationalComparison-2-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#thm-RationalComparison-2-1-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="thm-RationalComparison-2-1-6-2">
-<div class="para" id="thm-RationalComparison-2-1-6-2-1">If <span class="process-math">\(\deg(q(k)-p(k)) \leq 1\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum_{k=0}^\infty a_k\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RationalComparison-2-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm-RationalComparison-2-1-6-2-1">If <span class="process-math">\(\deg(q(k)-p(k)) \leq 1\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum_{k=1}^\infty a_k\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RationalComparison-2-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#thm-RationalComparison-2-1-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#thm-RationalComparison-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 8.7.8: Rational Comparison Theorem"><a href="#thm-RationalComparison" title="Copy heading and permalink for Theorem 8.7.8: Rational Comparison Theorem" aria-label="Copy heading and permalink for Theorem 8.7.8: Rational Comparison Theorem">🔗</a></div></article><article class="note remark-like" id="subsec-LimitComparison-4"><h4 class="heading">
-<span class="type">Note</span><span class="space"> </span><span class="codenumber">8.7.9</span><span class="period">.</span>
+<div class="autopermalink" data-description="Theorem 8.7.10: Rational Comparison Theorem"><a href="#thm-RationalComparison" title="Copy heading and permalink for Theorem 8.7.10: Rational Comparison Theorem" aria-label="Copy heading and permalink for Theorem 8.7.10: Rational Comparison Theorem">🔗</a></div></article><article class="note remark-like" id="subsec-LimitComparison-17"><h4 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">8.7.11</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-LimitComparison-4-1">We can extend this result pretty easily by loosening up the "rational function" requirement. If we have combinations of power functions (even with non-integer exponents), this works as well!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-LimitComparison-17-1">We can extend this result pretty easily by loosening up the "rational function" requirement. If we have combinations of power functions (even with non-integer exponents), this works as well!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LimitComparison-17-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Note 8.7.9"><a href="#subsec-LimitComparison-4" title="Copy heading and permalink for Note 8.7.9" aria-label="Copy heading and permalink for Note 8.7.9">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Limit Comparison"><a href="#subsec-LimitComparison" title="Copy heading and permalink for Subsection: Limit Comparison" aria-label="Copy heading and permalink for Subsection: Limit Comparison">🔗</a></div></section><div class="autopermalink" data-description="Section 8.7: Comparison Tests"><a href="#sec-ComparisonTests" title="Copy heading and permalink for Section 8.7: Comparison Tests" aria-label="Copy heading and permalink for Section 8.7: Comparison Tests">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Note 8.7.11"><a href="#subsec-LimitComparison-17" title="Copy heading and permalink for Note 8.7.11" aria-label="Copy heading and permalink for Note 8.7.11">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Limit Comparison"><a href="#subsec-LimitComparison" title="Copy heading and permalink for Subsection: Limit Comparison" aria-label="Copy heading and permalink for Subsection: Limit Comparison">🔗</a></div></section><section class="conclusion" id="sec-ComparisonTests-6"><div class="para" id="sec-ComparisonTests-6-1">So we have a great tool for analyzing series that look similar to <span class="process-math">\(p\)</span>-series: as long as the most aggressive pieces of our terms are defined by power functions, then we can connect the series to the relevant <span class="process-math">\(p\)</span>-series and use the same convergence criteria through arguments about the degrees of these power functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ComparisonTests-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-ComparisonTests-6-2">
+<div class="para">What about infinite series that are seemingly not connected to a <span class="process-math">\(p\)</span>-series? We saw other series in this section that acted more like a geometric series:</div>
+<ul class="disc" id="sec-ComparisonTests-6-2-2">
+<li id="sec-ComparisonTests-6-2-2-1">
+<div class="para" id="sec-ComparisonTests-6-2-2-1-1">
+<span class="process-math">\(\displaystyle \displaystyle \sum_{k=1}^\infty \frac{2}{k(3^k)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-ComparisonTests-6-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ComparisonTests-6-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-ComparisonTests-6-2-2-2">
+<div class="para" id="sec-ComparisonTests-6-2-2-2-1">
+<span class="process-math">\(\displaystyle \displaystyle \sum_{k=1}^\infty \frac{2k}{3^k}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-ComparisonTests-6-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ComparisonTests-6-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-ComparisonTests-6-2-2-3">
+<div class="para" id="sec-ComparisonTests-6-2-2-3-1">
+<span class="process-math">\(\displaystyle \displaystyle \sum_{k=1}^\infty \frac{1}{k!}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-ComparisonTests-6-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ComparisonTests-6-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">We can set up some comparisons, like we did in this section, for each of these series individually. But is there a result similar to <a href="sec-ComparisonTests.html#thm-RationalComparison" class="xref" data-knowl="./knowl/xref/thm-RationalComparison.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.7.10: Rational Comparison Theorem">Theorem 8.7.10</a> for series that act like a geometric series?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-ComparisonTests-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-ComparisonTests-6-3">It turns out that the answer is a resounding, "Yes!" We just need to think about what aspects of a geometric series we’re looking for.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ComparisonTests-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="autopermalink" data-description="Section 8.7: Comparison Tests"><a href="#sec-ComparisonTests" title="Copy heading and permalink for Section 8.7: Comparison Tests" aria-label="Copy heading and permalink for Section 8.7: Comparison Tests">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-CommonSeries.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-RatioRootTests.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
