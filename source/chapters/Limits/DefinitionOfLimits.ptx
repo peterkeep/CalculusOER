@@ -2,14 +2,32 @@
 
 <section xml:id="sec-DefinitionOfLimits" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Definition of the Limit</title>
-  
+  <introduction>
+    <p>
+      We're going to start this textbook by stating a definition. This is a common practice in math classes: we need to agree upon a common definition of the mathematical objects and adjectives we are thinking about. We will state a lot of definitions in this textbook.
+    </p>
+    <p>
+      What I hope we will do, though, is motivate these definitions. We want to arrive at a point where it makes sense to give a name to this phenomena or object that we're thinking of. Or maybe we arrive at a point where the specifics of the definition don't just come down to us out of nowhere, but feel like reasonable and obvious things to consider.
+    </p>
+    <p>
+      So for now, we're going to work on defining a very important and very key mathematical object that is used in calculus: the limit.
+    </p>
+    <p>
+      A limit is all about closeness, so let's first interact with the idea of closeness, and then work on a definition of a limit.
+    </p>
+  </introduction>
   
   <subsection xml:id="subsec-DefiningALimit">
     <title>Defining a Limit</title>
 
     <xi:include href="./activities/act-CloseOrNot.ptx" />
     
-    
+    <p>
+      The balance that we need to find, as we discovered in <xref ref="act-CloseOrNot"/>, is about being able to leave room for those with a very strict idea of what "close" might be. We will want to think of an idea kind of like "infinite closeness," but we're not going to frame it this way: we're going to think about a function's output being so close to some specific number that literally everyone can agree. It is so close that it is within every possible definition of closeness.
+    </p>
+    <p>
+      The general idea is that we want to think about the behavior of a function at inputs that are near some specific input. Is there a trend with the outputs? Are they all centered around a specific value or do they differ wildly?
+    </p>
     <definition xml:id="def-Limit">
       <title>Limit of a Function</title>  
         <statement>
@@ -24,7 +42,25 @@
         </statement>
       </definition>
       <p>
-        When we say "around <m>x=a</m>", we really just mean on either side of it. We can clarify if we want.
+        We can clarify a couple of things here:
+        <ul>
+          <li>
+            <p>
+              There are two types of <q>close</q> in this definition: <q>arbitrarily close</q> and <q>sufficiently close.</q> One of these is in references to <m>x</m>-values being close to a number and the other is in reference to function outputs being close to a specific number.
+            </p>
+          </li>
+          <li>
+            <p>
+              We are concerned with the behavior of a function around, but not at, a specific <m>x</m>-value: <m>x=a</m>. We don't really care about what the function is doing at that input (if anything at all), and we already have words to describe that kind of behavior! 
+            </p>
+          </li>
+          <li>
+            <p>
+              When we talk about <m>x</m>-values that are near <m>a</m>, that might reference <m>x</m>-values that are a bit bigger than <m>a</m> or <m>x</m>-values that are a bit smaller than <m>a</m>. We can be more specific by simply changing this definition to focus on only one <q>side</q> individually.
+            </p>
+          </li>
+        </ul>
+        We can go back to <xref ref="act-CloseOrNot"/> and think about how we chose <m>x</m>-values that were larger than <m>\frac{3}{4}</m> and smaller than <m>\frac{3}{4}</m>. Let's define these ideas a bit more formally!
       </p>
       <definition xml:id="def-LeftSidedLimit">
       <title>Left-Sided Limit</title>
@@ -53,18 +89,69 @@
           </p>
         </statement>
       </definition>
+      <p>
+        This should lead us to our first result in this textbook. This first result will do two things: 
+        <ol>
+          <li>
+            <p>
+              Introduce some language that we can use when we talk about limits as well as a classification that we can apply to them.
+            </p>
+          </li>
+          <li>
+            <p>
+              Introduce how we will build our results throughout the course of this text. We want to discover these results as things that are required for us to talk about (and do) calculus together, and hopefully we can motivate each one beforehand.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        In lieu of a formal activity, let's just review <xref ref="def-Limit" text="type-global-title"/> pose the following questions to think about:
+        <ul>
+          <li>
+            <p>
+              Why do we put emphasis on <m>L</m> being a number? What could happen if it wasn't?
+            </p>
+          </li>
+          <li>
+            <p>
+              Why do we put the emphasis on the number <m>L</m> being a <em>real</em> number? What other type(s) of number could it be?
+            </p>
+          </li>
+          <li>
+            <p>
+              Why do we put emphasis on <m>L</m> being a <em>single</em> number? How could we have the function be close to multiple real numbers?
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        We can look at one of the ways that we break the definition: by having two different values that the function gets close to.
+      </p>
       <theorem xml:id="thm-LimitExistence">
         <title>Mismatched Limits</title>       
         <statement>
           <p>
-            For a function <m>f(x)</m>, if both <m>\displaystyle\lim_{x\to a^-} f(x) \neq \lim_{x\to a^+} f(x)</m>, then we say that <m>\displaystyle\lim_{x\to a} f(x)</m> does not exist. That is, there is no single real number <m>L</m> that <m>f(x)</m> is arbitrarily close to for <m>x</m>-values that are sufficiently close to, but not equal to, <m>x=a</m>.
+            For a function <m>f(x)</m>, if both <m>\displaystyle\lim_{x\to a^-} f(x) \neq \lim_{x\to a^+} f(x)</m>, then we say that <m>\displaystyle\lim_{x\to a} f(x)</m> <term>does not exist</term>.
           </p>
         </statement>
       </theorem>
-        
   </subsection>
 <subsection xml:id="subsec-ApproximatingLimits">
   <title>Approximating Limits Using Our New Definition</title>
+  <p>
+    We have defined a new term, and now we do the typical mathematical task: define a new thing and then investigate it.
+  </p>
+  <aside>
+    <p>
+      A common joke in mathematics is that we <q>make up a guy to get mad at.</q> It's really only kind of a joke, because it really is a pretty good description of what we do! Here, we defined a new object and now we'll think about it and find ways that it frustrates us or some other weird behavior about it. That's mathematics!
+    </p>
+  </aside>
+  <p>
+    We will eventually get really good at thinking about limits and using them, but for now we just want to get familiar with them. Let's approximate these values that our function is near by looking at some pictures of graphs and some tables of function outputs.
+  </p>
+  <p>
+    Later on, we'll formalize this more. For now, we just want to use these pictures and tables to get familiar with <em>what</em> a limit even is.
+  </p>
   <xi:include href="./activities/act-ApproximateLimitsGraphically.ptx" />
 
   <xi:include href="./activities/act-ApproximateLimitsNumerically.ptx" />
