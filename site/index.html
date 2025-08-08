@@ -18,7 +18,14 @@
     </div>
     <div>
       <a href="https://www.discovercalculus.com/web/" class="w3-button w3-back1 w3-block w3-hover-list w3-padding-16">Read Online</a>
-      <a target="_blank" rel="noopener noreferrer" href="https://www.discovercalculus.com/pdf/DiscoverCalculus-PeterKeep.pdf" class="w3-button w3-back1 w3-block w3-hover-list w3-padding-16">Download</a>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Other Downloads</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.discovercalculus.com/pdf/DiscoverCalculus-PeterKeep.pdf">Full Text pdf</a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.discovercalculus.com/ancillaries/DiscoverCalculus-ActivityBook.pdf">Activity Workbook</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.discovercalculus.com/ancillaries/DiscoverCalculus-Solutions.pdf">Solutions</a>
+        </div>
+      </div>
       <a href="#aboutMe" class="w3-button w3-back1 w3-block w3-hover-list w3-padding-16">About the Author</a>
       <a href="#aboutDC" class="w3-button w3-back1 w3-block w3-hover-list w3-padding-16">About Discover Calculus</a>
       <a href="#contact" class="w3-button w3-back1 w3-block w3-hover-list w3-padding-16">Contact</a>
@@ -90,6 +97,30 @@
     </div>
   </div>
 </div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 
 <!-- Footer -->
 <footer class="w3-container w3-black w3-padding-16">

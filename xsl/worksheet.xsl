@@ -29,7 +29,7 @@
 <!-- We pull activities from each subsection -->
 <xsl:template match="subsection">
     <xsl:apply-templates select="activity"/>    
-    <xsl:text>\clearpage&#xA;&#xA;</xsl:text> 
+    <!-- <xsl:text>\clearpage&#xA;&#xA;</xsl:text>  -->
 </xsl:template>
 
 <!-- style of the activity boxes -->
