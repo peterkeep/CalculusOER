@@ -46,29 +46,20 @@ var ptx_lunr_docs = [
   "body": " Notes for Students    "
 },
 {
-  "id": "sec-IntroLimits",
-  "level": "1",
-  "url": "sec-IntroLimits.html",
-  "type": "Section",
-  "number": "1.1",
-  "title": "Introduction to Limits",
-  "body": " Introduction to Limits   Almost 2,500 years ago, the Greek philosopher Zeno of Elea gifted the world with a set of philosophical paradoxes that provide the foundation for how we will begin our study of calculus. Perhaps the most famous of Zeno's paradoxes is the paradox of Achilles and the Tortoise.    Achilles and the Tortoise  In the paradox of Achilles and the Tortoise, the Greek hero Achilles is in a race with a tortoise. Obviously the tortoise is much slower than Achilles, and so the tortoise gets a 100m head start. The race begins, and while the tortoise moves as quickly as it can, Achilles has the obvious advantage. They both are running at a constant speed, with Achilles running faster. Achilles runs 100m, catching up to the tortoise's starting point.  In the meantime, the tortoise has moved 2 meters. Achilles has almost caught up and passed the tortoise at this point! In a very short time, Achilles is able to run the 2 meters to catch up to where the tortoise was. Unfortunately, in that short amount of time, the tortoise has kept on moving, and is farther along by now.  Every time Achilles catches up to where the tortoise was, the tortoise has moved farther along, and Achilles has to keep catching up.  Can Achilles, the paragon of athleticism, ever catch the tortoise?    A Modern Retelling  A college student is excited about having enrolled in their first calculus class. On the first day of class, they head to class. When they enter the hallway with their classroom at the end, they take a breath and excitedly head to class.  In order to get to class, though, they have to travel halfway down the hallway. Almost there.  Now, to go the rest of the way, the student will half to get to the point that is halfway between them and the door. Getting closer.  They're getting excited. Finally, their first calculus class! But to get to the class, they have to reach the point halfway between them and the door.  Their smile starts fading. They repeat the process, and go halfway from their position to the door. They're closer, but not there yet.  If they keep having to reach the new halfway point, and that halfway point is never actually at the door, then will they ever get there?  Halfway to the door, then halfway again, closer and closer without ever getting there.  Will the student ever get there, or are they doomed to keep getting closer and closer without ever reaching the door?   "
-},
-{
   "id": "sec-DefinitionOfLimits",
   "level": "1",
   "url": "sec-DefinitionOfLimits.html",
   "type": "Section",
-  "number": "1.2",
+  "number": "1.1",
   "title": "The Definition of the Limit",
-  "body": " The Definition of the Limit   Defining a Limit   Close or Not?   We're going to try to think how we might define \"close\"-ness as a property, but, more importantly, we're going to try to realize the struggle of creating definitions in a mathematical context. We want our definition to be meaningful, precise, and useful, and those are hard goals to reach! Coming to some agreement on this is a particularly tricky task.     For each of the following pairs of things, decide on which pairs you would classify as \"close\" to each other.   You, right now, and the nearest city with a population of 1 million or higher    Your two nostrils    You and the door of the room you are in    You and the person nearest you    The floor of the room you are in and the ceiling of the room you are in         For your classification of \"close,\" what does \"close\" mean? Finish the sentence: A pair of objects are close to each other if...      Let's think about how close two things would have to be in order to satisfy everyone's definition of \"close.\" Pick two objects that you think everyone would agree are \"close,\" if by \"everyone\" we meant:   All of the people in the building you are in right now.    All of the people in the city that you are in right now.    All of the people in the country that you are in right now.    Everyone, everywhere, all at once.         Let's put ourselves into the context of functions and numbers. Consider the linear function . Our goal is to find some -values that, when we put them into our function, give us -value outputs that are \"close\" to the number 2. You get to define what close means.  First, evaluate and . Are these -values \"close\" to 2, in your definition of \"close?\"      Pick five more, different, numbers that are \"close\" to 2 in your definition of \"close.\" For each one, find the -values that give you those -values.      How far away from can you go and still have -value outputs that are \"close\" to 2?     To wrap this up, think about your points that you have: you have a list of -coordinates that are clustered around where, when you evaluate at those -values, you get -values that are \"close\" to 2. Great!  Do you think others will agree? Or do you think that other people might look at your list of -values and decide that some of them aren't close to 2?  Do you think you would agree with other peoples' lists? Or you do think that you might look at other peoples' lists of -values and decide that some of them aren't close to 2?     Limit of a Function   For the function defined at all -xalues around (except maybe at itself), we say that the limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but not equal to, . We write this as: or sometimes we write when .    When we say \"around \", we really just mean on either side of it. We can clarify if we want.   Left-Sided Limit   For the function defined at all -xalues around and less than , we say that the left-sided limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but less than, . We write this as: or sometimes we write when .     Right-Sided Limit   For the function defined at all -xalues around and greater than , we say that the right-sided limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but greater than, . We write this as: or sometimes we write when .     Mismatched Limits   For a function , if both , then we say that does not exist. That is, there is no single real number that is arbitrarily close to for -values that are sufficiently close to, but not equal to, .      Approximating Limits Using Our New Definition   Approximating Limits   For each of the following graphs of functions, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.     Approximate using the graph of the function below.     A decreasing linear function with a single point removed from the line. At the x-value x=1, there is a hole on the line at y=1, and a point is located at (1,0).        Approximate using the graph of the function below.     A piecewise defined function, where the graph is split up into two sections around x=2. For x-values less than (and equal) to 2, the function is decreasing and curves downward towards a filled in point at (2,1). Then the graph drops to an open point at (2,0), where the graph is linear and increasing afterwards from that hole.        Approximate the following three limits using the graph of the function below.                      A piecewise-defined fucntion with three distinct pieces. For x-values less than -1, the graph is increasing and curves towards an open hole at (-1,0). Then, at x=-1, we have a point at (-1,1). The graph is constant at y=1 until a hole at (0,1). After this hole, it decreases from (0,1) towards and through (3,0) linearly.        Why do we say these are \"approximations\" or \"estimations\" of the limits we're interested in?      Are there any limit statements that you made that you are 100% confident in? Which ones?      Which limit statements are you least confident in? What about them makes them ones you aren't confident in?      What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?      Approximating Limits Numerically   For each of the following tables of function values, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.     Approximate using the table of values of below.        0.5  0.9  0.99  1  1.01  1.1  1.5     8.672  9.2  9.0001  -7  8.9998  9.5  7.59         Approximate using the table of values of below.        -3.5  -3.1  -3.01  -3  -2.99  -2.9  -2.5     -4.41  -3.89  -4.003  -4  7.035  2.06  -4.65         Approximate using the table of values of below.        3.1  3.14  3.141     3.142  3.15  3.2     6  6  6  undefined  5.915  6.75  8.12         Are you 100% confident about the existence (or lack of existence) of any of these limits?      What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?      "
+  "body": " The Definition of the Limit   We're going to start this textbook by stating a definition. This is a common practice in math classes: we need to agree upon a common definition of the mathematical objects and adjectives we are thinking about. We will state a lot of definitions in this textbook.  What I hope we will do, though, is motivate these definitions. We want to arrive at a point where it makes sense to give a name to this phenomena or object that we're thinking of. Or maybe we arrive at a point where the specifics of the definition don't just come down to us out of nowhere, but feel like reasonable and obvious things to consider.  So for now, we're going to work on defining a very important and very key mathematical object that is used in calculus: the limit.  A limit is all about closeness, so let's first interact with the idea of closeness, and then work on a definition of a limit.    Defining a Limit   Close or Not?   We're going to try to think how we might define \"close\"-ness as a property, but, more importantly, we're going to try to realize the struggle of creating definitions in a mathematical context. We want our definition to be meaningful, precise, and useful, and those are hard goals to reach! Coming to some agreement on this is a particularly tricky task.     For each of the following pairs of things, decide on which pairs you would classify as \"close\" to each other.   You, right now, and the nearest city with a population of 1 million or higher    Your two nostrils    You and the door of the room you are in    You and the person nearest you    The floor of the room you are in and the ceiling of the room you are in         For your classification of \"close,\" what does \"close\" mean? Finish the sentence: A pair of objects are close to each other if...      Let's think about how close two things would have to be in order to satisfy everyone's definition of \"close.\" Pick two objects that you think everyone would agree are \"close,\" if by \"everyone\" we meant:   All of the people in the building you are in right now.    All of the people in the city that you are in right now.    All of the people in the country that you are in right now.    Everyone, everywhere, all at once.         Let's put ourselves into the context of functions and numbers. Consider the linear function . Our goal is to find some -values that, when we put them into our function, give us -value outputs that are \"close\" to the number 2. You get to define what close means.  First, evaluate and . Are these -values \"close\" to 2, in your definition of \"close?\"      Pick five more, different, numbers that are \"close\" to 2 in your definition of \"close.\" For each one, find the -values that give you those -values.      How far away from can you go and still have -value outputs that are \"close\" to 2?     To wrap this up, think about your points that you have: you have a list of -coordinates that are clustered around where, when you evaluate at those -values, you get -values that are \"close\" to 2. Great!  Do you think others will agree? Or do you think that other people might look at your list of -values and decide that some of them aren't close to 2?  Do you think you would agree with other peoples' lists? Or you do think that you might look at other peoples' lists of -values and decide that some of them aren't close to 2?    The balance that we need to find, as we discovered in , is about being able to leave room for those with a very strict idea of what \"close\" might be. We will want to think of an idea kind of like \"infinite closeness,\" but we're not going to frame it this way: we're going to think about a function's output being so close to some specific number that literally everyone can agree. It is so close that it is within every possible definition of closeness.  The general idea is that we want to think about the behavior of a function at inputs that are near some specific input. Is there a trend with the outputs? Are they all centered around a specific value or do they differ wildly?   Limit of a Function   For the function defined at all -xalues around (except maybe at itself), we say that the limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but not equal to, . We write this as: or sometimes we write when .    We can clarify a couple of things here:   There are two types of close in this definition: arbitrarily close and sufficiently close. One of these is in references to -values being close to a number and the other is in reference to function outputs being close to a specific number.    We are concerned with the behavior of a function around, but not at, a specific -value: . We don't really care about what the function is doing at that input (if anything at all), and we already have words to describe that kind of behavior!    When we talk about -values that are near , that might reference -values that are a bit bigger than or -values that are a bit smaller than . We can be more specific by simply changing this definition to focus on only one side individually.   We can go back to and think about how we chose -values that were larger than and smaller than . Let's define these ideas a bit more formally!   Left-Sided Limit   For the function defined at all -xalues around and less than , we say that the left-sided limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but less than, . We write this as: or sometimes we write when .     Right-Sided Limit   For the function defined at all -xalues around and greater than , we say that the right-sided limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but greater than, . We write this as: or sometimes we write when .    This should lead us to our first result in this textbook. This first result will do two things:   Introduce some language that we can use when we talk about limits as well as a classification that we can apply to them.    Introduce how we will build our results throughout the course of this text. We want to discover these results as things that are required for us to talk about (and do) calculus together, and hopefully we can motivate each one beforehand.     In lieu of a formal activity, let's just review pose the following questions to think about:   Why do we put emphasis on being a number? What could happen if it wasn't?    Why do we put the emphasis on the number being a real number? What other type(s) of number could it be?    Why do we put emphasis on being a single number? How could we have the function be close to multiple real numbers?     We can look at one of the ways that we break the definition: by having two different values that the function gets close to.   Mismatched Limits   For a function , if both , then we say that  does not exist .      Approximating Limits Using Our New Definition  We have defined a new term, and now we do the typical mathematical task: define a new thing and then investigate it.   A common joke in mathematics is that we make up a guy to get mad at. It's really only kind of a joke, because it really is a pretty good description of what we do! Here, we defined a new object and now we'll think about it and find ways that it frustrates us or some other weird behavior about it. That's mathematics!   We will eventually get really good at thinking about limits and using them, but for now we just want to get familiar with them. Let's approximate these values that our function is near by looking at some pictures of graphs and some tables of function outputs.  Later on, we'll formalize this more. For now, we just want to use these pictures and tables to get familiar with what a limit even is.   Approximating Limits   For each of the following graphs of functions, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.     Approximate using the graph of the function below.     A decreasing linear function with a single point removed from the line. At the x-value x=1, there is a hole on the line at y=1, and a point is located at (1,0).        Approximate using the graph of the function below.     A piecewise defined function, where the graph is split up into two sections around x=2. For x-values less than (and equal) to 2, the function is decreasing and curves downward towards a filled in point at (2,1). Then the graph drops to an open point at (2,0), where the graph is linear and increasing afterwards from that hole.        Approximate the following three limits using the graph of the function below.                      A piecewise-defined fucntion with three distinct pieces. For x-values less than -1, the graph is increasing and curves towards an open hole at (-1,0). Then, at x=-1, we have a point at (-1,1). The graph is constant at y=1 until a hole at (0,1). After this hole, it decreases from (0,1) towards and through (3,0) linearly.        Why do we say these are \"approximations\" or \"estimations\" of the limits we're interested in?      Are there any limit statements that you made that you are 100% confident in? Which ones?      Which limit statements are you least confident in? What about them makes them ones you aren't confident in?      What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?     It can be hard to focus on the aspects of a graph that we really care about for the purpose of a limit. Let's build a small strategy to help us think about what we're looking at. We'll start by just considering some function, . Using our definition of the as a guide, we'll make sure that it's defined around some -value, .   The function, .   The graph of a function f(x). It passes through the origin and then curves a bit in the first quadrant. There is a label for x=a on the horizontal axis.    Now we want to investigate more of our definition. We want to look at the -values that are around, but not equal to, .    The -values around .   The graph of a function f(x). Around x=a is a vertical band, representing the interval of x-values around x=a.     The -values around, but not equal to, .   The graph of a function f(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and the point at x=a has been removed.     We can see that we might as well remove any point at from our graph: we are only concerned with the behavior around that -value instead of the function's behavior at it.  And now our focus can turn to the function outputs. For the -values in this interval of inputs that we've constructed, is there some common real number that the corresponding function outputs are close to? We can visualize some interval of -values. We'll think of this as a target: we want to build an interval of -values that all of the function outputs from this interval of -values land in.   The corresponding function outputs are all in the target interval of -values.   The graph of a function f(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and there is a corresponding horizontal band of y-values surrounding a label y=L.    This is a pretty wide range of -values, but we can see that the graph of the function (when we limit to just the interval of -values selected) produces function outputs that exist only in that interval. We don't fill the interval, but that's fine!  What we really care about, though, is if these function outputs are all close to the same, single, real number. What we can do is look at a more strict idea of closeness in the -interval by shrinking it. In order for us to produce function outputs that are in this new, smaller, interval, we'll need to correspondingly shrink our interval of inputs to more closely surround .   The -values around, but not equal to, .   The graph of a function f(x) is highlighted in the interval of x-values. The interval of y-values is smaller, as is the interval of x-values.    In this visualization, we've also tried to focus on just the portion of our function that exists in this little intersection of intervals: we want to know what these functions values are close to, or more specifically if they are all close to the same thing. So we can de-emphasize the rest of our function!  All we're doing is working on a strategy to focus on the parts of this graph that matter: only the parts of the curve that are surrounding (but not that actual point specifically). From there, we just want to know what the function outputs are clustered around, if anything.  Let's look at this same kind of visualization for a limit that does not exist: we're going to think about the case where the one-sided limits don't match. We'll start a little further on in this visualization process: we have a function, and we can visualize an interval of -values whose function outputs land inside a target interval of -values.     The graph of a function g(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and there is a corresponding horizontal band of y-values. The function itself is a piecewise function and has a big vertical gap at x=a.    We can see the problem: that vertical space between the function on the left of and the where the function values are on the right of will make it so that horizontal bar cannot get much smaller. We can disregard the point at as well as the function outside of the interval, but once try to shrink the target interval of -values, but we'll see the problem.     The graph of a function g(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and there is a corresponding horizontal band of y-values. The function itself is a piecewise function and has a big vertical gap at x=a.    These function outputs are spread apart! They are not close to a single value. Instead, they're close to two! The function is close to a value on the left side, and then the function is close to a larger value on the right side. .  Now let's think about how we can approximate (and learn more about) limits using when we just think about the actual values of a function's inputs and corresponding outputs.   Approximating Limits Numerically   For each of the following tables of function values, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.     Approximate using the table of values of below.        0.5  0.9  0.99  1  1.01  1.1  1.5     8.672  9.2  9.0001  -7  8.9998  9.5  7.59         Approximate using the table of values of below.        -3.5  -3.1  -3.01  -3  -2.99  -2.9  -2.5     -4.41  -3.89  -4.003  -4  7.035  2.06  -4.65         Approximate using the table of values of below.        3.1  3.14  3.141     3.142  3.15  3.2     6  6  6  undefined  5.915  6.75  8.12         Are you 100% confident about the existence (or lack of existence) of any of these limits?      What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?       Overall, there's a common theme here: in either representation (graphically or numerically), we're making a best guess at the behavior of the function values around a point. We have limited information in these estimations, and so we're doing the best we can: in graphs, we're trying our best to make sense of the lack of precision in in the scales of our visual, and in the numerical tables we are only given a limited number of points to think about. In both cases, we are hoping to see more information to add more confidence to these estimations.  We want to make the jump from estimating these limits to evaluating them, and for that to happen, we'll need to add more information and more precision about the behavior of our function.   "
 },
 {
   "id": "act-CloseOrNot",
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#act-CloseOrNot",
   "type": "Activity",
-  "number": "1.2.1",
+  "number": "1.1.1",
   "title": "Close or Not?",
   "body": " Close or Not?   We're going to try to think how we might define \"close\"-ness as a property, but, more importantly, we're going to try to realize the struggle of creating definitions in a mathematical context. We want our definition to be meaningful, precise, and useful, and those are hard goals to reach! Coming to some agreement on this is a particularly tricky task.     For each of the following pairs of things, decide on which pairs you would classify as \"close\" to each other.   You, right now, and the nearest city with a population of 1 million or higher    Your two nostrils    You and the door of the room you are in    You and the person nearest you    The floor of the room you are in and the ceiling of the room you are in         For your classification of \"close,\" what does \"close\" mean? Finish the sentence: A pair of objects are close to each other if...      Let's think about how close two things would have to be in order to satisfy everyone's definition of \"close.\" Pick two objects that you think everyone would agree are \"close,\" if by \"everyone\" we meant:   All of the people in the building you are in right now.    All of the people in the city that you are in right now.    All of the people in the country that you are in right now.    Everyone, everywhere, all at once.         Let's put ourselves into the context of functions and numbers. Consider the linear function . Our goal is to find some -values that, when we put them into our function, give us -value outputs that are \"close\" to the number 2. You get to define what close means.  First, evaluate and . Are these -values \"close\" to 2, in your definition of \"close?\"      Pick five more, different, numbers that are \"close\" to 2 in your definition of \"close.\" For each one, find the -values that give you those -values.      How far away from can you go and still have -value outputs that are \"close\" to 2?     To wrap this up, think about your points that you have: you have a list of -coordinates that are clustered around where, when you evaluate at those -values, you get -values that are \"close\" to 2. Great!  Do you think others will agree? Or do you think that other people might look at your list of -values and decide that some of them aren't close to 2?  Do you think you would agree with other peoples' lists? Or you do think that you might look at other peoples' lists of -values and decide that some of them aren't close to 2?   "
 },
@@ -77,7 +68,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#def-Limit",
   "type": "Definition",
-  "number": "1.2.1",
+  "number": "1.1.1",
   "title": "Limit of a Function.",
   "body": " Limit of a Function   For the function defined at all -xalues around (except maybe at itself), we say that the limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but not equal to, . We write this as: or sometimes we write when .   "
 },
@@ -86,7 +77,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#def-LeftSidedLimit",
   "type": "Definition",
-  "number": "1.2.2",
+  "number": "1.1.2",
   "title": "Left-Sided Limit.",
   "body": " Left-Sided Limit   For the function defined at all -xalues around and less than , we say that the left-sided limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but less than, . We write this as: or sometimes we write when .   "
 },
@@ -95,7 +86,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#def-RightSidedLimit",
   "type": "Definition",
-  "number": "1.2.3",
+  "number": "1.1.3",
   "title": "Right-Sided Limit.",
   "body": " Right-Sided Limit   For the function defined at all -xalues around and greater than , we say that the right-sided limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but greater than, . We write this as: or sometimes we write when .   "
 },
@@ -104,25 +95,88 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#thm-LimitExistence",
   "type": "Theorem",
-  "number": "1.2.4",
+  "number": "1.1.4",
   "title": "Mismatched Limits.",
-  "body": " Mismatched Limits   For a function , if both , then we say that does not exist. That is, there is no single real number that is arbitrarily close to for -values that are sufficiently close to, but not equal to, .   "
+  "body": " Mismatched Limits   For a function , if both , then we say that  does not exist .   "
 },
 {
   "id": "act-ApproximatingLimitsGraphically",
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#act-ApproximatingLimitsGraphically",
   "type": "Activity",
-  "number": "1.2.2",
+  "number": "1.1.2",
   "title": "Approximating Limits.",
   "body": " Approximating Limits   For each of the following graphs of functions, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.     Approximate using the graph of the function below.     A decreasing linear function with a single point removed from the line. At the x-value x=1, there is a hole on the line at y=1, and a point is located at (1,0).        Approximate using the graph of the function below.     A piecewise defined function, where the graph is split up into two sections around x=2. For x-values less than (and equal) to 2, the function is decreasing and curves downward towards a filled in point at (2,1). Then the graph drops to an open point at (2,0), where the graph is linear and increasing afterwards from that hole.        Approximate the following three limits using the graph of the function below.                      A piecewise-defined fucntion with three distinct pieces. For x-values less than -1, the graph is increasing and curves towards an open hole at (-1,0). Then, at x=-1, we have a point at (-1,1). The graph is constant at y=1 until a hole at (0,1). After this hole, it decreases from (0,1) towards and through (3,0) linearly.        Why do we say these are \"approximations\" or \"estimations\" of the limits we're interested in?      Are there any limit statements that you made that you are 100% confident in? Which ones?      Which limit statements are you least confident in? What about them makes them ones you aren't confident in?      What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?    "
+},
+{
+  "id": "fig-LimitGraph1-1",
+  "level": "2",
+  "url": "sec-DefinitionOfLimits.html#fig-LimitGraph1-1",
+  "type": "Figure",
+  "number": "1.1.8",
+  "title": "",
+  "body": " The function, .   The graph of a function f(x). It passes through the origin and then curves a bit in the first quadrant. There is a label for x=a on the horizontal axis.   "
+},
+{
+  "id": "LimitGraph1-2",
+  "level": "2",
+  "url": "sec-DefinitionOfLimits.html#LimitGraph1-2",
+  "type": "Figure",
+  "number": "1.1.9",
+  "title": "",
+  "body": " The -values around .   The graph of a function f(x). Around x=a is a vertical band, representing the interval of x-values around x=a.   "
+},
+{
+  "id": "LimitGraph1-3",
+  "level": "2",
+  "url": "sec-DefinitionOfLimits.html#LimitGraph1-3",
+  "type": "Figure",
+  "number": "1.1.10",
+  "title": "",
+  "body": " The -values around, but not equal to, .   The graph of a function f(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and the point at x=a has been removed.   "
+},
+{
+  "id": "LimitGraph1-4",
+  "level": "2",
+  "url": "sec-DefinitionOfLimits.html#LimitGraph1-4",
+  "type": "Figure",
+  "number": "1.1.11",
+  "title": "",
+  "body": " The corresponding function outputs are all in the target interval of -values.   The graph of a function f(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and there is a corresponding horizontal band of y-values surrounding a label y=L.   "
+},
+{
+  "id": "LimitGraph1-5",
+  "level": "2",
+  "url": "sec-DefinitionOfLimits.html#LimitGraph1-5",
+  "type": "Figure",
+  "number": "1.1.12",
+  "title": "",
+  "body": " The -values around, but not equal to, .   The graph of a function f(x) is highlighted in the interval of x-values. The interval of y-values is smaller, as is the interval of x-values.   "
+},
+{
+  "id": "LimitGraph2-1",
+  "level": "2",
+  "url": "sec-DefinitionOfLimits.html#LimitGraph2-1",
+  "type": "Figure",
+  "number": "1.1.13",
+  "title": "",
+  "body": "   The graph of a function g(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and there is a corresponding horizontal band of y-values. The function itself is a piecewise function and has a big vertical gap at x=a.   "
+},
+{
+  "id": "LimitGraph2-2",
+  "level": "2",
+  "url": "sec-DefinitionOfLimits.html#LimitGraph2-2",
+  "type": "Figure",
+  "number": "1.1.14",
+  "title": "",
+  "body": "   The graph of a function g(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and there is a corresponding horizontal band of y-values. The function itself is a piecewise function and has a big vertical gap at x=a.   "
 },
 {
   "id": "act-ApproximateLimitsNumerically",
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#act-ApproximateLimitsNumerically",
   "type": "Activity",
-  "number": "1.2.3",
+  "number": "1.1.3",
   "title": "Approximating Limits Numerically.",
   "body": " Approximating Limits Numerically   For each of the following tables of function values, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.     Approximate using the table of values of below.        0.5  0.9  0.99  1  1.01  1.1  1.5     8.672  9.2  9.0001  -7  8.9998  9.5  7.59         Approximate using the table of values of below.        -3.5  -3.1  -3.01  -3  -2.99  -2.9  -2.5     -4.41  -3.89  -4.003  -4  7.035  2.06  -4.65         Approximate using the table of values of below.        3.1  3.14  3.141     3.142  3.15  3.2     6  6  6  undefined  5.915  6.75  8.12         Are you 100% confident about the existence (or lack of existence) of any of these limits?      What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?    "
 },
@@ -131,7 +185,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-EvaluatingLimits.html",
   "type": "Section",
-  "number": "1.3",
+  "number": "1.2",
   "title": "Evaluating Limits",
   "body": " Evaluating Limits   Adding Precision to Our Estimations   From Estimating to Evaluating Limits (Part 1)   Let's consider the following graphs of functions and .    The function decreases linearly towards (1,1), but has a hole there. After the holw the function increases away from this point. There is a point above the curve at (1,3).   Graph of the function .     The graph increases until (1,3) and then decreases down to the filled in point at (2,2). There is a jump down towards an open point at (2,1). The function continues decreasing from here until (3,0), where it starts increasing again.   Graph of the function .        Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                       Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                       Find the values of and .      For the limits and function values above, which of these are you most confident in? What about the limit, function value, or graph of the function makes you confident about your answer?  Similarly, which of these are you the least confident in? What about the limit, function value, or graph of the function makes you not have confidence in your answer?      From Estimating to Evaluating Limits (Part 2)   Let's consider the following graphs of functions and , now with the added labels of the equations defining each part of these functions.    The function decreases linearly towards (1,1), but has a hole there. After the holw the function increases away from this point. There is a point above the curve at (1,3). The graph also has the function labeled on it: y=2-x when x is less than 1, and y = x^2\/4 - x\/2 + 5\/4 when x is greater than 1.   Graph of the function .     The graph increases until (1,3) and then decreases down to the filled in point at (2,2). There is a jump down towards an open point at (2,1). The function continues decreasing from here until (3,0), where it starts increasing again. The graph also has the function labeled on it: y=3-(x-1)^2 when x is less than or equal to 2, and y=(x-3)^2 when x is greater than 2.   Graph of the function .        Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                       Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                       Does the addition of the function rules change the level of confidence you have in these answers? What limits are you more confident in with this added information?      Consider these functions without their graphs:  Find the limits and . Compare these values of and : are they related at all?       Limit Properties   Combinations of Limits   If and are two functions defined at -values around, but maybe not at, and and both exist, then we can evaluate limits of combinations of these functions.     Sums: The limit of the sum of and is the sum of the limits of and :      Differences: The limit of a difference of and is the difference of the limits of and :      Coefficients: If is some real number coefficient, then:      Products: The limit of a product of and is the product of the limits of and :      Quotients: The limit of a quotient of and is the quotient of the limits of and (provided that you do not divide by 0):        Limits of Two Basic Functions   Let be some real number.    Limit of a Constant Function: If is some real number constant, then:      Limit of the Identity Function:          Limits of Polynomial Functions   We're going to use a combination of properties from and to think a bit more deeply about polynomial functions. Let's consider a polynomial function:      We're going to evaluate the limit . First, use the properties from to re-write this limit as 4 different limits added or subtracted together.           Now, for each of these limits, re-write them as products of things until you have only limits of constants and identity functions, as in . Evaluate your limits.           Based on the definition of a limit ( ), we normally say that is not dependent on the value of . Why do we say this?      Compare the values of and . Why do these values feel connected?      Come up with a new polynomial function: some combination of coefficients with 's raised to natural number exponents. Call your new polynomial function . Evaluate and compare the value to . Explain why these values are the same.      Explain why, for any polynomial function , the limit is the same value as .      Limits of Polynomials   If is a polynomial function and is some real number, then:      "
 },
@@ -140,7 +194,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-EvaluatingLimits.html#act-EstimatingToEvaluating-1",
   "type": "Activity",
-  "number": "1.3.1",
+  "number": "1.2.1",
   "title": "From Estimating to Evaluating Limits (Part 1).",
   "body": " From Estimating to Evaluating Limits (Part 1)   Let's consider the following graphs of functions and .    The function decreases linearly towards (1,1), but has a hole there. After the holw the function increases away from this point. There is a point above the curve at (1,3).   Graph of the function .     The graph increases until (1,3) and then decreases down to the filled in point at (2,2). There is a jump down towards an open point at (2,1). The function continues decreasing from here until (3,0), where it starts increasing again.   Graph of the function .        Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                       Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                       Find the values of and .      For the limits and function values above, which of these are you most confident in? What about the limit, function value, or graph of the function makes you confident about your answer?  Similarly, which of these are you the least confident in? What about the limit, function value, or graph of the function makes you not have confidence in your answer?    "
 },
@@ -149,7 +203,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-EvaluatingLimits.html#act-EstimatingToEvaluating-2",
   "type": "Activity",
-  "number": "1.3.2",
+  "number": "1.2.2",
   "title": "From Estimating to Evaluating Limits (Part 2).",
   "body": " From Estimating to Evaluating Limits (Part 2)   Let's consider the following graphs of functions and , now with the added labels of the equations defining each part of these functions.    The function decreases linearly towards (1,1), but has a hole there. After the holw the function increases away from this point. There is a point above the curve at (1,3). The graph also has the function labeled on it: y=2-x when x is less than 1, and y = x^2\/4 - x\/2 + 5\/4 when x is greater than 1.   Graph of the function .     The graph increases until (1,3) and then decreases down to the filled in point at (2,2). There is a jump down towards an open point at (2,1). The function continues decreasing from here until (3,0), where it starts increasing again. The graph also has the function labeled on it: y=3-(x-1)^2 when x is less than or equal to 2, and y=(x-3)^2 when x is greater than 2.   Graph of the function .        Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                       Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                       Does the addition of the function rules change the level of confidence you have in these answers? What limits are you more confident in with this added information?      Consider these functions without their graphs:  Find the limits and . Compare these values of and : are they related at all?    "
 },
@@ -158,7 +212,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-EvaluatingLimits.html#thm-CombinationsOfLimits",
   "type": "Theorem",
-  "number": "1.3.5",
+  "number": "1.2.5",
   "title": "Combinations of Limits.",
   "body": " Combinations of Limits   If and are two functions defined at -values around, but maybe not at, and and both exist, then we can evaluate limits of combinations of these functions.     Sums: The limit of the sum of and is the sum of the limits of and :      Differences: The limit of a difference of and is the difference of the limits of and :      Coefficients: If is some real number coefficient, then:      Products: The limit of a product of and is the product of the limits of and :      Quotients: The limit of a quotient of and is the quotient of the limits of and (provided that you do not divide by 0):      "
 },
@@ -167,7 +221,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-EvaluatingLimits.html#thm-LimitsOfTwoFunctions",
   "type": "Theorem",
-  "number": "1.3.6",
+  "number": "1.2.6",
   "title": "Limits of Two Basic Functions.",
   "body": " Limits of Two Basic Functions   Let be some real number.    Limit of a Constant Function: If is some real number constant, then:      Limit of the Identity Function:        "
 },
@@ -176,7 +230,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-EvaluatingLimits.html#act-LimitsOfPolynomials",
   "type": "Activity",
-  "number": "1.3.3",
+  "number": "1.2.3",
   "title": "Limits of Polynomial Functions.",
   "body": " Limits of Polynomial Functions   We're going to use a combination of properties from and to think a bit more deeply about polynomial functions. Let's consider a polynomial function:      We're going to evaluate the limit . First, use the properties from to re-write this limit as 4 different limits added or subtracted together.           Now, for each of these limits, re-write them as products of things until you have only limits of constants and identity functions, as in . Evaluate your limits.           Based on the definition of a limit ( ), we normally say that is not dependent on the value of . Why do we say this?      Compare the values of and . Why do these values feel connected?      Come up with a new polynomial function: some combination of coefficients with 's raised to natural number exponents. Call your new polynomial function . Evaluate and compare the value to . Explain why these values are the same.      Explain why, for any polynomial function , the limit is the same value as .    "
 },
@@ -185,7 +239,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-EvaluatingLimits.html#thm-LimitsOfPolynomials",
   "type": "Theorem",
-  "number": "1.3.7",
+  "number": "1.2.7",
   "title": "Limits of Polynomials.",
   "body": " Limits of Polynomials   If is a polynomial function and is some real number, then:    "
 },
@@ -194,7 +248,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-IndeterminateForms.html",
   "type": "Section",
-  "number": "1.4",
+  "number": "1.3",
   "title": "First Indeterminate Forms",
   "body": " First Indeterminate Forms    Limits of (Slightly) Different Functions    Using the graph of below, approximate .   A graph of a decreasing function down to an open hole at (1,1). There is a point above the curve at (1,3). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing.          Using the graph of the slightly different function below, approximate .   A graph of a decreasing function down to an open hole at (1,1). There is a point below the curve at (1,-1). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing. It is the same graph as the function f(x) above other than the point at (1,3) being at (1,-1).          Compare the values of and and discuss the impact that this difference had on the values of the limits.      For the function defined below, evaluate the limit .       For the slightly different function defined below, evaluate the limit .       Do the changes in the way that the function was defined impact the evaluation of the limit at all? Why not?      Limits of (Slightly) Different Functions   If and are two functions defined at -values around (but maybe not at itself) with for the -values around but with then , if the limits exist.      A First Introduction to Indeterminate Forms   Indeterminate Form   We say that a limit has an indeterminate form if the general structure of the limit could take on any different value, or not exist, depending on the specific circumstances.  For instance, if and , then we say that the limit has an indeterminate form. We typically denote this using the informal symbol , as in: .       Were going to evaluate .   First, check that we get the indeterminate form when .    Now we want to find a new function that is equivalent to for all -values other than . Try factoring the numerator, . What do you notice?    \"Cancel\" out any factors that show up in the numerator and denominator. Make a special note about what that factor is.    This function is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.         Now we'll evaluate a new limit: .   First, check that we get the indeterminate form when .    Now we want a new function that is equivalent to for all -values other than . Try multiplying the numerator and the denominator by . We'll call this the \"conjugate\" of the numerator.    In your multiplication, confirm that .    Try to factor the new numerator and denominator. Do you notice anything? Can you \"cancel\" anything? Make another note of what factor(s) you cancel.    This function is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.         Our last limit in this activity is going to be .   Again, check to see that we get the indeterminate form when .    Again, we want a new function that is equivalent to for all -values other than . Try completing the subtraction in the numerator, , using \"common denominators.\"    Try to factor the new numerator and denominator(s). Do you notice anything? Can you \"cancel\" anything? Make another note of what factor(s) you cancel.    For the final time, we've found a function that is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.         In each of the previous limits, we ended up finding a factor that was shared in the numerator and denominator to cancel. Think back to each example and the factor you found. Why is it clear that these must have been the factors we found to cancel?      Let's say we have some new function where . You know, based on these examples, that you're going to apply some algebra trick to re-write your function, factor, and cancel. Can you predict what you will end up looking for to cancel in the numerator and denominator? Why?       What if There Is No Algebra Trick?  We've seen some nice examples above where we were able to use some algebra to manipulate functions in such was as to force some shared factor in the numerator and denominator into revealing itself. From there, we were able to apply and swap out our problematic function with a new one, knowing that the limit would be the same.  But what if we can't do that? What if the specific structure of the function seems resistent somehow to our attempts at wielding algebra?  This happens a lot, and we'll investigate some more of those types of limits in . For now, though, let's look at a very famous limit and reason our way through the indeterminate form.    Let's consider a new limit: . This one is strange!     Notice that this function, , is resistent to our algebra tricks:   There's nothing to \"factor\" here, since our trigonometric function is not a polynomial.    We can't use a trick like the \"conjugate\" to multiply and re-write, since there's no square roots and also only one term in the numerator.    There aren't any fractions that we can combine by addition or subtraction.         Be frustrated at this new limit for resisting our algebra tricks.      Now let's think about the meaning of and even in general. In this text, we will often use Greek letters, like , to represent angles. In general, these angles will be measured in radians (unless otherwise specified). So what does the sine function do or tell us ? What is a radian?    On the unit circle, if we plot some point at an angle of , then the coordinates of that point can be represented with trig functions! Which ones?    The length of the curve defining a unit circle is . This also corresponds to the angle we would use to represent moving all the way around the circle. What must the length of the portion of the circle be up to some point at an angle ?      Let's visualize our limit, then, by comparing the length of the arc and the height of the point as .       Explain to yourself, until you are absolutely certain, why the two lengths must be the same in the limit as . What does this mean about ?      "
 },
@@ -203,7 +257,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndeterminateForms.html#act-SlightlyDifferentFunctions",
   "type": "Activity",
-  "number": "1.4.1",
+  "number": "1.3.1",
   "title": "Limits of (Slightly) Different Functions.",
   "body": " Limits of (Slightly) Different Functions    Using the graph of below, approximate .   A graph of a decreasing function down to an open hole at (1,1). There is a point above the curve at (1,3). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing.          Using the graph of the slightly different function below, approximate .   A graph of a decreasing function down to an open hole at (1,1). There is a point below the curve at (1,-1). The graph continues from (1,1) and increases up to (3,3) where it begins decreasing. It is the same graph as the function f(x) above other than the point at (1,3) being at (1,-1).          Compare the values of and and discuss the impact that this difference had on the values of the limits.      For the function defined below, evaluate the limit .       For the slightly different function defined below, evaluate the limit .       Do the changes in the way that the function was defined impact the evaluation of the limit at all? Why not?    "
 },
@@ -212,7 +266,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndeterminateForms.html#thm-SlightlyDifferentFunctions",
   "type": "Theorem",
-  "number": "1.4.3",
+  "number": "1.3.3",
   "title": "Limits of (Slightly) Different Functions.",
   "body": " Limits of (Slightly) Different Functions   If and are two functions defined at -values around (but maybe not at itself) with for the -values around but with then , if the limits exist.   "
 },
@@ -221,7 +275,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndeterminateForms.html#def-IndeterminateForm",
   "type": "Definition",
-  "number": "1.4.4",
+  "number": "1.3.4",
   "title": "Indeterminate Form.",
   "body": " Indeterminate Form   We say that a limit has an indeterminate form if the general structure of the limit could take on any different value, or not exist, depending on the specific circumstances.  For instance, if and , then we say that the limit has an indeterminate form. We typically denote this using the informal symbol , as in: .   "
 },
@@ -230,7 +284,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndeterminateForms.html#act-IndeterminateForms",
   "type": "Activity",
-  "number": "1.4.2",
+  "number": "1.3.2",
   "title": "",
   "body": "   Were going to evaluate .   First, check that we get the indeterminate form when .    Now we want to find a new function that is equivalent to for all -values other than . Try factoring the numerator, . What do you notice?    \"Cancel\" out any factors that show up in the numerator and denominator. Make a special note about what that factor is.    This function is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.         Now we'll evaluate a new limit: .   First, check that we get the indeterminate form when .    Now we want a new function that is equivalent to for all -values other than . Try multiplying the numerator and the denominator by . We'll call this the \"conjugate\" of the numerator.    In your multiplication, confirm that .    Try to factor the new numerator and denominator. Do you notice anything? Can you \"cancel\" anything? Make another note of what factor(s) you cancel.    This function is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.         Our last limit in this activity is going to be .   Again, check to see that we get the indeterminate form when .    Again, we want a new function that is equivalent to for all -values other than . Try completing the subtraction in the numerator, , using \"common denominators.\"    Try to factor the new numerator and denominator(s). Do you notice anything? Can you \"cancel\" anything? Make another note of what factor(s) you cancel.    For the final time, we've found a function that is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.         In each of the previous limits, we ended up finding a factor that was shared in the numerator and denominator to cancel. Think back to each example and the factor you found. Why is it clear that these must have been the factors we found to cancel?      Let's say we have some new function where . You know, based on these examples, that you're going to apply some algebra trick to re-write your function, factor, and cancel. Can you predict what you will end up looking for to cancel in the numerator and denominator? Why?    "
 },
@@ -239,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndeterminateForms.html#act-SinXOverX",
   "type": "Activity",
-  "number": "1.4.3",
+  "number": "1.3.3",
   "title": "",
   "body": "  Let's consider a new limit: . This one is strange!     Notice that this function, , is resistent to our algebra tricks:   There's nothing to \"factor\" here, since our trigonometric function is not a polynomial.    We can't use a trick like the \"conjugate\" to multiply and re-write, since there's no square roots and also only one term in the numerator.    There aren't any fractions that we can combine by addition or subtraction.         Be frustrated at this new limit for resisting our algebra tricks.      Now let's think about the meaning of and even in general. In this text, we will often use Greek letters, like , to represent angles. In general, these angles will be measured in radians (unless otherwise specified). So what does the sine function do or tell us ? What is a radian?    On the unit circle, if we plot some point at an angle of , then the coordinates of that point can be represented with trig functions! Which ones?    The length of the curve defining a unit circle is . This also corresponds to the angle we would use to represent moving all the way around the circle. What must the length of the portion of the circle be up to some point at an angle ?      Let's visualize our limit, then, by comparing the length of the arc and the height of the point as .       Explain to yourself, until you are absolutely certain, why the two lengths must be the same in the limit as . What does this mean about ?    "
 },
@@ -248,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-LimitsInvolvingInfinity.html",
   "type": "Section",
-  "number": "1.5",
+  "number": "1.4",
   "title": "Limits Involving Infinity",
   "body": " Limits Involving Infinity   Two types of limits involving infinity. In both cases, we'll mostly just consider what happens when we divide by small things and what happens when we divide by big things. We can summarize this here, though:   Fractions with small denominators are big, and fractions with big denominators are small.     Infinite Limits   What Happens When We Divide by 0?   First, let's make sure we're clear on one thing: there is no real number than is represented as some other number divided by 0.  When we talk about \"dividing by 0\" here (and in ), we're talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator gets arbitrarily close to 0 (or, the limit of the denominator is 0).     Remember when, once upon a time, you learned that dividing one a number by a fraction is the same as multiplying the first number by the reciprocal of the fraction? Why is this true?      What is the relationship between a number and its reciprocal? How does the size of a number impact the size of the reciprocal? Why?      Consider . What is the value of this division problem when:    ?     ?     ?     ?     ?         Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?         Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very small and positive.      Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very small and negative.      Infinite Limit   We say that a function has an infinite limit at if is arbitrarily large (positive or negative) when is sufficiently close to, but not equal to, .  We would then say, depending on the sign of the values of , that: . If the sign of both one-sided limits are the same, we can say that (depending on the sign), but it is helpful to note that, by the definition of the , this limit does not exist, since is not arbitrarily close to a single real number.     Dividing by 0 in a Limit   If with and , then has an at . We will often denote this behavior as: where is meant to be some shorthand representation of a non-zero limit in the numerator (often, but not necessarily, some real number).     Evaluating Infinite Limits  Once we know that , we know a bunch of information right away!   This limit doesn't exist.    The function has a vertical asymptote at , causing these unbounded -values near .    The one sided limits must be either or .    We only need to focus on the sign of the one sided limits! And signs of products and quotients are easy to follow.     So a pretty typical process is to factor as much as we can, and check the sign of each factor (in a numerator or denominator) as and . From there, we can find the sign of in both of those cases, which will tell us the one-sided limit.     For each function, find the relevant one-sided limits at the input-value mentioned. If you can use a two-sided limit statement to discuss the behavior of the function around this input-value, then do so.      and        and        and        End Behavior Limits   What Happens When We Divide by Infinity?   Again, we need to start by making something clear: if we were really going to try divide some real number by infinity, then we would need to re-build our definition of what it means to divide. In the context we're in right now, we only have division defined as an operation for real (and maybe complex) numbers. Since infinity is neither, then we will not literally divide by infinity.  When we talk about \"dividing by infinity\" here, we're again talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator gets arbitrarily large (positive or negative) (or, the limit of the denominator is infinite).     Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?         Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?         Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very large and positive.      Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very large and negative.      Why is there no difference in the behavior of as compared to when the sign of the function outputs are opposite ( when and when )?      Limit at Infinity   If is defined for all large and positive -values and gets arbitrarily close to the single real number when gets sufficiently large, then we say: .  Similarly, if is defined for all large and negative -values and gets arbitrarily close to the single real number when gets sufficiently negative, then we say: .  In the case that has a limit at infinity that exists, then we say has a horizontal asymptote at .  Lastly, if is defined for all large and positive (or negative) -values and gets arbitrarily large and positive (or negative) when gets sufficiently large (or negative), then we could say: .    Because the primary focus for limits at infinity is the end behavior of a function, we will often refer to these limits as end behavior limits .   End Behavior of Reciprocal Power Functions   If is a positive real number, then: .     Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.    Consider the polynomial function: where is some integer and is a real number for . For simplicity, we will consider only the limit as , but we could easily repeat this exact proof for the case where .  Before we consider this limit, we can factor out , the variable with the highest exponent: Now consider the limit of this product: We can see that in the second limit, we have a single constant term, , followed by reciprocal power functions. Then, due to , we know that the second limit will by , since the reciprocal power functions will all approach 0. And so as we claimed.      For each function, find the limits as and .                            Matching the Limits    We're going to look at four graphs of functions, as well as a list of limit statements. Match the limit statements with the graphs that match that behavior. Note that is is possible for a limit to be relevant on more than one graph.      Now consider these four function definitions. Using your knowledge of limits, as well as the matching you've already done, match the definitions of these four functions with the graphs that go with them, and then also the limits that are relevant. (These limits will already be matched with the graphs, so you don't need to do further work here).      "
 },
@@ -257,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#act-DivideBy0",
   "type": "Activity",
-  "number": "1.5.1",
+  "number": "1.4.1",
   "title": "What Happens When We Divide by 0?",
   "body": " What Happens When We Divide by 0?   First, let's make sure we're clear on one thing: there is no real number than is represented as some other number divided by 0.  When we talk about \"dividing by 0\" here (and in ), we're talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator gets arbitrarily close to 0 (or, the limit of the denominator is 0).     Remember when, once upon a time, you learned that dividing one a number by a fraction is the same as multiplying the first number by the reciprocal of the fraction? Why is this true?      What is the relationship between a number and its reciprocal? How does the size of a number impact the size of the reciprocal? Why?      Consider . What is the value of this division problem when:    ?     ?     ?     ?     ?         Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?         Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very small and positive.      Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very small and negative.    "
 },
@@ -266,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#def-InfiniteLimit",
   "type": "Definition",
-  "number": "1.5.1",
+  "number": "1.4.1",
   "title": "Infinite Limit.",
   "body": " Infinite Limit   We say that a function has an infinite limit at if is arbitrarily large (positive or negative) when is sufficiently close to, but not equal to, .  We would then say, depending on the sign of the values of , that: . If the sign of both one-sided limits are the same, we can say that (depending on the sign), but it is helpful to note that, by the definition of the , this limit does not exist, since is not arbitrarily close to a single real number.   "
 },
@@ -275,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#thm-DivBy0-InfiniteLimit",
   "type": "Theorem",
-  "number": "1.5.2",
+  "number": "1.4.2",
   "title": "Dividing by 0 in a Limit.",
   "body": " Dividing by 0 in a Limit   If with and , then has an at . We will often denote this behavior as: where is meant to be some shorthand representation of a non-zero limit in the numerator (often, but not necessarily, some real number).   "
 },
@@ -284,7 +338,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits-6",
   "type": "Example",
-  "number": "1.5.3",
+  "number": "1.4.3",
   "title": "",
   "body": "  For each function, find the relevant one-sided limits at the input-value mentioned. If you can use a two-sided limit statement to discuss the behavior of the function around this input-value, then do so.      and        and        and     "
 },
@@ -293,7 +347,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#act-DivideByInfinity",
   "type": "Activity",
-  "number": "1.5.2",
+  "number": "1.4.2",
   "title": "What Happens When We Divide by Infinity?",
   "body": " What Happens When We Divide by Infinity?   Again, we need to start by making something clear: if we were really going to try divide some real number by infinity, then we would need to re-build our definition of what it means to divide. In the context we're in right now, we only have division defined as an operation for real (and maybe complex) numbers. Since infinity is neither, then we will not literally divide by infinity.  When we talk about \"dividing by infinity\" here, we're again talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator gets arbitrarily large (positive or negative) (or, the limit of the denominator is infinite).     Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?         Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?         Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very large and positive.      Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very large and negative.      Why is there no difference in the behavior of as compared to when the sign of the function outputs are opposite ( when and when )?    "
 },
@@ -302,7 +356,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#def-LimitAtInfinity",
   "type": "Definition",
-  "number": "1.5.4",
+  "number": "1.4.4",
   "title": "Limit at Infinity.",
   "body": " Limit at Infinity   If is defined for all large and positive -values and gets arbitrarily close to the single real number when gets sufficiently large, then we say: .  Similarly, if is defined for all large and negative -values and gets arbitrarily close to the single real number when gets sufficiently negative, then we say: .  In the case that has a limit at infinity that exists, then we say has a horizontal asymptote at .  Lastly, if is defined for all large and positive (or negative) -values and gets arbitrarily large and positive (or negative) when gets sufficiently large (or negative), then we could say: .   "
 },
@@ -320,7 +374,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#thm-EndBehaviorReciprocalPower",
   "type": "Theorem",
-  "number": "1.5.5",
+  "number": "1.4.5",
   "title": "End Behavior of Reciprocal Power Functions.",
   "body": " End Behavior of Reciprocal Power Functions   If is a positive real number, then: .   "
 },
@@ -329,7 +383,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior",
   "type": "Theorem",
-  "number": "1.5.6",
+  "number": "1.4.6",
   "title": "Polynomial End Behavior Limits.",
   "body": " Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.    Consider the polynomial function: where is some integer and is a real number for . For simplicity, we will consider only the limit as , but we could easily repeat this exact proof for the case where .  Before we consider this limit, we can factor out , the variable with the highest exponent: Now consider the limit of this product: We can see that in the second limit, we have a single constant term, , followed by reciprocal power functions. Then, due to , we know that the second limit will by , since the reciprocal power functions will all approach 0. And so as we claimed.   "
 },
@@ -338,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits-7",
   "type": "Example",
-  "number": "1.5.7",
+  "number": "1.4.7",
   "title": "",
   "body": "  For each function, find the limits as and .                        "
 },
@@ -347,7 +401,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#act-MatchingLimits",
   "type": "Activity",
-  "number": "1.5.3",
+  "number": "1.4.3",
   "title": "Matching the Limits.",
   "body": " Matching the Limits    We're going to look at four graphs of functions, as well as a list of limit statements. Match the limit statements with the graphs that match that behavior. Note that is is possible for a limit to be relevant on more than one graph.      Now consider these four function definitions. Using your knowledge of limits, as well as the matching you've already done, match the definitions of these four functions with the graphs that go with them, and then also the limits that are relevant. (These limits will already be matched with the graphs, so you don't need to do further work here).    "
 },
@@ -356,7 +410,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-SqueezeTheorem.html",
   "type": "Section",
-  "number": "1.6",
+  "number": "1.5",
   "title": "The Squeeze Theorem",
   "body": " The Squeeze Theorem   A Weird End Behavior Limit   In this activity, we're going to find the following limit: . This limit is a bit weird, in that we really haven't looked at trigonometric functions that much. We're going to start by looking at a different limit in the hopes that we can eventually build towards this one.     Consider, instead, the following limit: . Find the limit and connect the process or intuition behind it to at least one of the results from this text.    Start with to think about the numerator and denominator separately.    Can you use in the denominator?    Is relevant?      Let's put this limit aside and briefly talk about the sine function. What are some things to remember about this function? What should we know? How does it behave?      What kinds of values doe we expect to take on for different values of ?       What happens when we square the sine function? What kinds of values can that take on?       Think back to our original goal: we wanted to know the end behavior of . Right now we have two bits of information:   We know .    We know some information about the behavior of . Specifically, we have some bounds on its values.   Can we combine this information?  In your inequality above, multiply onto all three pieces of the inequality. Make sure you're convinced about the direction or order of the inequality and whether or not it changes with this multiplication.       For your functions and , evaluate and .      What do you think this means about the limit we're interested in, ?      The Squeeze Theorem   For some functions , , and which are all defined and ordered for -values near (but not necessarily at itself), and for some real number , if we know that then we also know that .     Sketch This Function Around This Point    Sketch or visualize the functions and , especially around .      Now we want to add in a sketch of some function , all the while satisfying the requirements of the Squeeze Theorem.       Use the Squeeze Theorem to evaluate and explain for your function .      Is this limit dependent on the specific version of that you sketched? Would this limit be different for someone else's choice of given the same parameters?      What information must be true (if anything) about and ?  Do we know that these limits exist? If they do, do we have information about their values?     "
 },
@@ -365,7 +419,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-SqueezeTheorem.html#act-WeirdEndBehavior",
   "type": "Activity",
-  "number": "1.6.1",
+  "number": "1.5.1",
   "title": "A Weird End Behavior Limit.",
   "body": " A Weird End Behavior Limit   In this activity, we're going to find the following limit: . This limit is a bit weird, in that we really haven't looked at trigonometric functions that much. We're going to start by looking at a different limit in the hopes that we can eventually build towards this one.     Consider, instead, the following limit: . Find the limit and connect the process or intuition behind it to at least one of the results from this text.    Start with to think about the numerator and denominator separately.    Can you use in the denominator?    Is relevant?      Let's put this limit aside and briefly talk about the sine function. What are some things to remember about this function? What should we know? How does it behave?      What kinds of values doe we expect to take on for different values of ?       What happens when we square the sine function? What kinds of values can that take on?       Think back to our original goal: we wanted to know the end behavior of . Right now we have two bits of information:   We know .    We know some information about the behavior of . Specifically, we have some bounds on its values.   Can we combine this information?  In your inequality above, multiply onto all three pieces of the inequality. Make sure you're convinced about the direction or order of the inequality and whether or not it changes with this multiplication.       For your functions and , evaluate and .      What do you think this means about the limit we're interested in, ?    "
 },
@@ -374,7 +428,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-SqueezeTheorem.html#thm-SqueezeTheorem",
   "type": "Theorem",
-  "number": "1.6.1",
+  "number": "1.5.1",
   "title": "The Squeeze Theorem.",
   "body": " The Squeeze Theorem   For some functions , , and which are all defined and ordered for -values near (but not necessarily at itself), and for some real number , if we know that then we also know that .   "
 },
@@ -383,7 +437,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-SqueezeTheorem.html#act-SketchSqueeze",
   "type": "Activity",
-  "number": "1.6.2",
+  "number": "1.5.2",
   "title": "Sketch This Function Around This Point.",
   "body": " Sketch This Function Around This Point    Sketch or visualize the functions and , especially around .      Now we want to add in a sketch of some function , all the while satisfying the requirements of the Squeeze Theorem.       Use the Squeeze Theorem to evaluate and explain for your function .      Is this limit dependent on the specific version of that you sketched? Would this limit be different for someone else's choice of given the same parameters?      What information must be true (if anything) about and ?  Do we know that these limits exist? If they do, do we have information about their values?    "
 },
@@ -392,7 +446,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Continuity.html",
   "type": "Section",
-  "number": "1.7",
+  "number": "1.6",
   "title": "Continuity and the Intermediate Value Theorem",
   "body": " Continuity and the Intermediate Value Theorem   Continuity as Connectedness      Continuity as Classification   Continuous at a Point   The function is continuous at an -value in the domain of if if .  If is not continuous at , but one of the one-sided limits is equal to the function output, then we can define directional continuity at that point:   We say is continuous on the left at when .    We say is continuous on the right at when .        Continuous on an Interval   We say that is continuous on the interval  if is continuous at every -value with .  If is continuous on the right at and\/or continuous on the left at , then we will say that is continuous on the interval , , or , whichever is relevant.      Discontinuities   Where is a Function not Continuous?  Most of the functions that we consider in this text will be continuous everywhere that it makes sense: on their domain. That is, if there is a point defined at some -value, it is likely that the function's limit matches the -value of the point. More specifically, though:   A function is discontinuous at any location that results in an infinite limit. These are locations where is undefined and the limit is infinite (and so doesn't exist).    A function is, in general, discontinuous wherever it is undefined. This seems silly to say! We probably could have left this unsaid.    A function that is defined as a piecewise function could be discontinuous at locations where the pieces meet: maybe the limit doesn't exist, or maybe the function value is not defined, or maybe the limit exists and the function value is defined but they do not match.        Intermediate Value Theorem   Intermediate Value Theorem   If is a function that is continuous on with and is any real number between and (either or ), then there exists some between and ( ) such that .     This theorem was stated as early as the 5th century BCE by Bryson of Heraclea. Back then, a really interesting problem was related to \"squaring the circle.\" That is, given a circle with some measurable radius, can we construct a square with equal area? This is obviously true, in that we can just use a square with the side length . What we typically mean by \"construct,\" though, is to create this square using only a compass and straightedge (a ruler without length markings) and only a finite number of steps. This was finally proven to be impossible in 1882, approximately 2300 years later.  Bryson of Heraclea knew that the square itself existed (even if he couldn't construct it) because he was able to find a circle with area less than the square (by inscribing a circle inside of the square) and a circle with area greater than the square (where the square is inscribed in the circle). Since he posited that he could increase the size of the circle in a continuous manner (without using those words), he claimed that a square with area equal to that of the circle must exist, since the area of the circle passes through all values from the smaller area to the larger area.    "
 },
@@ -401,7 +455,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Continuity.html#def-ContinuousAtPoint",
   "type": "Definition",
-  "number": "1.7.1",
+  "number": "1.6.1",
   "title": "Continuous at a Point.",
   "body": " Continuous at a Point   The function is continuous at an -value in the domain of if if .  If is not continuous at , but one of the one-sided limits is equal to the function output, then we can define directional continuity at that point:   We say is continuous on the left at when .    We say is continuous on the right at when .      "
 },
@@ -410,7 +464,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Continuity.html#def-ContinuousOnInterval",
   "type": "Definition",
-  "number": "1.7.2",
+  "number": "1.6.2",
   "title": "Continuous on an Interval.",
   "body": " Continuous on an Interval   We say that is continuous on the interval  if is continuous at every -value with .  If is continuous on the right at and\/or continuous on the left at , then we will say that is continuous on the interval , , or , whichever is relevant.   "
 },
@@ -419,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Continuity.html#thm-IVT",
   "type": "Theorem",
-  "number": "1.7.3",
+  "number": "1.6.3",
   "title": "Intermediate Value Theorem.",
   "body": " Intermediate Value Theorem   If is a function that is continuous on with and is any real number between and (either or ), then there exists some between and ( ) such that .   "
 },
