@@ -153,7 +153,98 @@
     Later on, we'll formalize this more. For now, we just want to use these pictures and tables to get familiar with <em>what</em> a limit even is.
   </p>
   <xi:include href="./activities/act-ApproximateLimitsGraphically.ptx" />
+  <p>
+    It can be hard to focus on the aspects of a graph that we really care about for the purpose of a limit. Let's build a small strategy to help us think about what we're looking at. We'll start by just considering some function, <m>f(x)</m>. Using our definition of the <xref ref="def-Limit" text="title"/> as a guide, we'll make sure that it's defined around some <m>x</m>-value, <m>x=a</m>.
+  </p>
+  <figure xml:id="fig-LimitGraph1-1">
+    <caption>The function, <m>f(x)</m>.</caption>
+    <image source="./Limits/LimitGraph1-1.png" width="65%">
+      <shortdescription>The graph of a function f(x). It passes through the origin and then curves a bit in the first quadrant. There is a label for x=a on the horizontal axis.</shortdescription>
+    </image>
+  </figure>
+  <p>
+    Now we want to investigate more of our definition. We want to look at the <m>x</m>-values that are around, but not equal to, <m>x=a</m>. 
+  </p>
+  <sidebyside>
+    <figure xml:id="LimitGraph1-2">
+      <caption>The <m>x</m>-values around <m>x=a</m>.</caption>
+      <image source="./Limits/LimitGraph1-2.png" width="45%">
+        <shortdescription>The graph of a function f(x). Around x=a is a vertical band, representing the interval of x-values around x=a. </shortdescription>
+      </image>
+    </figure>
 
+    <figure xml:id="LimitGraph1-3">
+      <caption>The <m>x</m>-values around, but not equal to, <m>x=a</m>.</caption>
+      <image source="./Limits/LimitGraph1-3.png" width="45%">
+        <shortdescription>The graph of a function f(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and the point at x=a has been removed.</shortdescription>
+      </image>
+    </figure>
+  </sidebyside>
+  <p>
+    We can see that we might as well remove any point at <m>x=a</m> from our graph: we are only concerned with the behavior around that <m>x</m>-value instead of the function's behavior at it.
+  </p>
+  <p>
+    And now our focus can turn to the function outputs. For the <m>x</m>-values in this interval of inputs that we've constructed, is there some common real number that the corresponding function outputs are close to? We can visualize some interval of <m>y</m>-values. We'll think of this as a target: we want to build an interval of <m>y</m>-values that all of the function outputs from this interval of <m>x</m>-values land in. 
+  </p>
+  <figure xml:id="LimitGraph1-4">
+    <caption>The corresponding function outputs <m>f(x)</m> are all in the target interval of <m>y</m>-values.</caption>
+    <image source="./Limits/LimitGraph1-4.png" width="65%">
+      <shortdescription>The graph of a function f(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and there is a corresponding horizontal band of y-values surrounding a label y=L.</shortdescription>
+    </image>
+  </figure>
+  <p>
+    This is a pretty wide range of <m>y</m>-values, but we can see that the graph of the function (when we limit to just the interval of <m>x</m>-values selected) produces function outputs that exist only in that interval. We don't <em>fill</em> the interval, but that's fine!
+  </p>
+  <p>
+    What we <em>really</em> care about, though, is if these function outputs are all close to the same, single, real number. What we can do is look at a more strict idea of <q>closeness</q> in the <m>y</m>-interval by shrinking it. In order for us to produce function outputs that are in this new, smaller, interval, we'll need to correspondingly shrink our interval of inputs to more closely surround <m>x=a</m>.
+  </p>
+  <figure xml:id="LimitGraph1-5">
+    <caption>The <m>x</m>-values around, but not equal to, <m>x=a</m>.</caption>
+    <image source="./Limits/LimitGraph1-5.png" width="65%">
+      <shortdescription>The graph of a function f(x) is highlighted in the interval of x-values. The interval of y-values is smaller, as is the interval of x-values.</shortdescription>
+    </image>
+  </figure>
+  <p>
+    In this visualization, we've also tried to focus on just the portion of our function that exists in this little intersection of intervals: we want to know what these functions values are close to, or more specifically if they are all close to the same thing. So we can de-emphasize the rest of our function!
+  </p>
+  <p>
+    All we're doing is working on a strategy to focus on the parts of this graph that matter: only the parts of the curve that are surrounding <m>x=a</m> (but not that actual point specifically). From there, we just want to know what the function outputs are clustered around, if anything.
+  </p>
+  <p>
+    Let's look at this same kind of visualization for a limit that does not exist: we're going to think about the case where the one-sided limits don't match. We'll start a little further on in this visualization process: we have a function, and we can visualize an interval of <m>x</m>-values whose function outputs land inside a target interval of <m>y</m>-values.
+  </p>
+  <figure xml:id="LimitGraph2-1">
+    <caption></caption>
+    <image source="./Limits/LimitGraph2-1.png" width="65%">
+      <shortdescription>The graph of a function g(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and there is a corresponding horizontal band of y-values. The function itself is a piecewise function and has a big vertical gap at x=a.</shortdescription>
+    </image>
+  </figure>
+  <p>
+    We can see the problem: that vertical space between the function on the left of <m>x=a</m> and the where the function values are on the right of <m>x=a</m> will make it so that horizontal bar cannot get much smaller. We can disregard the point at <m>x=a</m> as well as the function outside of the interval, but once try to shrink the target interval of <m>y</m>-values, but we'll see the problem.
+  </p>
+  <figure xml:id="LimitGraph2-2">
+    <caption></caption>
+    <image source="./Limits/LimitGraph2-2.png" width="65%">
+      <shortdescription>The graph of a function g(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and there is a corresponding horizontal band of y-values. The function itself is a piecewise function and has a big vertical gap at x=a.</shortdescription>
+    </image>
+  </figure>
+  <p>
+    These function outputs are spread apart! They are not close to a single value. Instead, they're close to two! The function is close to a value on the left side, and then the function is close to a larger value on the right side.
+    <me>
+      \lim_{x\to a^-} g(x) \neq \lim_{x\to a^+} g(x) \text{ and so } \lim_{x\to a} g(x) \text{ does not exist}
+    </me>.
+  </p>
+  <p>
+    Now let's think about how we can approximate (and learn more about) limits using when we just think about the actual values of a function's inputs and corresponding outputs.
+  </p>
   <xi:include href="./activities/act-ApproximateLimitsNumerically.ptx" />
 </subsection>
+<conclusion>
+  <p>
+    Overall, there's a common theme here: in either representation (graphically or numerically), we're making a best guess at the behavior of the function values around a point. We have limited information in these estimations, and so we're doing the best we can: in graphs, we're trying our best to make sense of the lack of precision in in the scales of our visual, and in the numerical tables we are only given a limited number of points to think about. In both cases, we are hoping to see more information to add more confidence to these estimations.
+  </p>
+  <p>
+    We want to make the jump from estimating these limits to evaluating them, and for that to happen, we'll need to add more information and more precision about the behavior of our function.
+  </p>
+</conclusion>
 </section>
