@@ -1,0 +1,63 @@
+<activity xml:id="act-CombinationsOfFunctions" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Combinations of Functions</title>
+    <introduction>
+        <p>
+            We want to remind ourselves how we can combine functions using different operations, and how we might find outputs based on the different combinations. Our goal is to then think about how this might work with limits: how can we summarize the behavior of combinations of functions around some point?
+        </p>
+        <p>
+            Let's consider some functions <m>f(x)=x^2+3</m> and <m>g(x)=x-\dfrac{1}{x}</m>. We'll say that the domain of both functions is <m>(0,\infty)</m> for our own convenience.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Let's consider the function <m>h(x)=f(x)+g(x)</m>. Describe at least two different ways of finding the value of <m>h(2)</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                You might think about writing out a function rule for <m>h(x)</m>. But can you also find <m>h(2)</m> without ever writing out a rule for <m>h(x)</m>?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                 If we instead define the function <m>h(x)=f(x)-g(x)</m>, how would you describe at least two different ways of finding the value of <m>h(2)</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What about a scaled version of one of these functions? If we let <m>h(x)=4f(x)</m> and <m>j(x)=\dfrac{g(x)}{3}</m>, can you describe more than one way to find the value of <m>h(3)</m> and <m>j(3)</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                You can probably guess where we're going: we're going to define a function that is the product of <m>f</m> and <m>g</m>: <m>h(x)=f(x)\cdot g(x)</m>. Describe more than one way of evaluating <m>h(4)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                And finally, let's define <m>h(x)=\dfrac{f(x)}{g(x)}</m>. Now describe more than one way of finding <m>h(4)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                If <m>h(x)=\dfrac{f(x)}{g(x)}</m>, then are there any <m>x</m>-values that are in the domain of <m>f</m> and <m>g</m> (<m>0\lt x</m>) that <m>h(x)</m> cannot be defined for? Why?
+            </p>
+        </statement>
+    </task>
+    <conclusion>
+        <p>
+            Ok, we can confront this big idea: when we combine functions, we can either evaluate the combination of the functions at some <m>x</m>-value or evaluate each function separately and just combine the answers! Of course, there are some limitations (like when the combination isn't nicely defined because of division by 0 or something else), but this is a good framework to move forward with!
+        </p>
+    </conclusion>
+</activity>

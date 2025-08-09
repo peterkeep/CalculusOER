@@ -6,59 +6,87 @@
   <subsection xml:id="subsec-AddingPrecisionToEstimations">
     <title>Adding Precision to Our Estimations</title>
     <xi:include href="./activities/act-EstimatingToEvaluating-1.ptx" />
-
+    <p>
+      We're going to repeat this process, but with a slight change to the representation of each function. Hopefully this will be illuminating in our attempt to add more precision to our estimations.
+    </p>
     <xi:include href="./activities/act-EstimatingToEvaluating-2.ptx" />
+    <p>
+      These two examples are hopefully helpful for us to see that when we are given the actual rule for a function <m>f</m> that connects <m>x</m> to the corresponding output <m>f(x)</m>, we are able to move past estimation. We suddenly have whatever level of precision we'd like, since we can immediately see what is happening with every <m>x</m> input to produce the corresponding <m>f(x)</m> output.
+    </p>
+    <p>
+      In order for us to formalize this evaluation of limits, we're going to think about some properties of this limit object.
+    </p>
   </subsection>
   <subsection xml:id="subsec-LimitProperties">
     <title>Limit Properties</title>
+    <xi:include href="./activities/act-CombinationsOfFunctions.ptx" />
+    <p>
+      Maybe this activity was obvious for you, but it might not have been! This isn't something that we always think about with functions, even if (deep down) we know it to be true. 
+    </p>
+    <p>
+      A nice extension that we can make is that moving past functions evaluated at a specific <m>x</m>-value towards descriptions of the behavior of functions <em>around</em> that specific <m>x</m>-value.
+    </p>
+    <p>
+      We'll apply this same kind of thinking (combining things by looking at each piece individually first, and then combining the answers together) to limits of combinations of functions.
+    </p>
     <theorem xml:id="thm-CombinationsOfLimits">
       <title>Combinations of Limits</title>
       <statement>
         <p>
           If <m>f(x)</m> and <m>g(x)</m> are two functions defined at <m>x</m>-values around, but maybe not at, <m>x=a</m> and <m>\displaystyle \lim_{x\to a}f(x)</m> and <m>\displaystyle \lim_{x\to a}g(x)</m> both exist, then we can evaluate limits of combinations of these functions.
+          <ol>
+            <li>
+              <p>
+                <em>Sums:</em> The limit of the sum of <m>f(x)</m> and <m>g(x)</m> is the sum of the limits of <m>f(x)</m> and <m>g(x)</m>:
+                <me>
+                  \lim_{x\to a}\left(f(x)+g(x)\right) = \lim_{x\to a} f(x) + \lim_{x\to a} g(x)
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>Differences:</em> The limit of a difference of <m>f(x)</m> and <m>g(x)</m> is the difference of the limits of <m>f(x)</m> and <m>g(x)</m>:
+                <me>
+                  \lim_{x\to a} \left(f(x)-g(x)\right) = \lim_{x\to a} f(x) - \lim_{x\to a} g(x)
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>Coefficients:</em> If <m>k</m> is some real number coefficient, then:
+                <me>\lim_{x\to a} kf(x) = k\lim_{x\to a} f(x)</me>
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>Products:</em> The limit of a product of <m>f(x)</m> and <m>g(x)</m> is the product of the limits of <m>f(x)</m> and <m>g(x)</m>:
+                <me>
+                  \lim_{x\to a} \left(f(x)\cdot g(x)\right) = \left(\lim_{x\to a}f(x)\right) \cdot \left(\lim_{x\to a}g(x)\right)
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>Quotients:</em> The limit of a quotient of <m>f(x)</m> and <m>g(x)</m> is the quotient of the limits of <m>f(x)</m> and <m>g(x)</m> (provided that you do not divide by 0):
+                <me>
+                  \lim_{x\to a} \left(\frac{f(x)}{g(x)}\right) = \frac{\displaystyle \left(\lim_{x\to a} f(x)\right)}{\displaystyle \left(\lim_{x\to a}g(x)\right)} \hspace{1cm} (\text{if } \lim_{x\to a} g(x)\neq 0)
+                </me>
+              </p>
+            </li>
+          </ol>
         </p>
-        <ol>
-          <li>
-            <p>
-              <em>Sums:</em> The limit of the sum of <m>f(x)</m> and <m>g(x)</m> is the sum of the limits of <m>f(x)</m> and <m>g(x)</m>:
-              <me>
-                \lim_{x\to a}\left(f(x)+g(x)\right) = \lim_{x\to a} f(x) + \lim_{x\to a} g(x)
-              </me>
-            </p>
-          </li>
-          <li>
-            <p>
-              <em>Differences:</em> The limit of a difference of <m>f(x)</m> and <m>g(x)</m> is the difference of the limits of <m>f(x)</m> and <m>g(x)</m>:
-              <me>
-                \lim_{x\to a} \left(f(x)-g(x)\right) = \lim_{x\to a} f(x) - \lim_{x\to a} g(x)
-              </me>
-            </p>
-          </li>
-          <li>
-            <p>
-              <em>Coefficients:</em> If <m>k</m> is some real number coefficient, then:
-              <me>\lim_{x\to a} kf(x) = k\lim_{x\to a} f(x)</me>
-            </p>
-          </li>
-          <li>
-            <p>
-              <em>Products:</em> The limit of a product of <m>f(x)</m> and <m>g(x)</m> is the product of the limits of <m>f(x)</m> and <m>g(x)</m>:
-              <me>
-                \lim_{x\to a} \left(f(x)\cdot g(x)\right) = \left(\lim_{x\to a}f(x)\right) \cdot \left(\lim_{x\to a}g(x)\right)
-              </me>
-            </p>
-          </li>
-          <li>
-            <p>
-              <em>Quotients:</em> The limit of a quotient of <m>f(x)</m> and <m>g(x)</m> is the quotient of the limits of <m>f(x)</m> and <m>g(x)</m> (provided that you do not divide by 0):
-              <me>
-                \lim_{x\to a} \left(\frac{f(x)}{g(x)}\right) = \frac{\displaystyle \left(\lim_{x\to a} f(x)\right)}{\displaystyle \left(\lim_{x\to a}g(x)\right)} \hspace{1cm} (\text{if } \lim_{x\to a} g(x)\neq 0)
-              </me>
-            </p>
-          </li>
-        </ol>
       </statement>
     </theorem>
+    <p>
+      We can summarize these properties: when we are thinking about our basic operations on functions, we can evaluate limits by just looking at the limits of each component function individually and then piecing those individual limit values back together.
+    </p>
+    <p>
+      This kind of structural <q>building-block</q> behavior is a really important one in mathematics. Whenever we define some new mathematical object, properties like this are typically good ideas for us to check in order to learn more about the object we've defined.
+    </p>
+    <p>
+      Ok, let's move on. We're going to turn our attention to something more concrete. We're going to think of two function types: constant functions and the identity function.
+    </p>
+    
     <theorem xml:id="thm-LimitsOfTwoFunctions">
       <title>Limits of Two Basic Functions</title>
       <statement>
@@ -85,7 +113,13 @@
         </p>
       </statement>
     </theorem>
+    <p>
+      These two functions might seem pretty simplistic (most functions that we think of are more complicated than these), but we can use these to build more functions!
+    </p>
     <xi:include href="./activities/act-LimitsOfPolynomials.ptx" />
+    <p>
+      This leads us to an important result about a whole class of functions: polynomials! We can (finally) evaluate the limit of a polynomial without having to think too carefully about the distinction between the behavior of the function <em>around</em> <m>x=a</m> and the behavior of the function <em>at</em> <m>x=a</m>.
+    </p>
     <theorem xml:id="thm-LimitsOfPolynomials">
       <title>Limits of Polynomials</title>
       <statement>
@@ -97,8 +131,31 @@
         </p>
       </statement>
     </theorem>
-    
-    
+    <p>
+      This result really just says that polynomials are friendly functions for limits: sure, a limit is really about the behavior of the function outputs around but not at <m>x=a</m>, but for polynomial functions, specifically, we can wave our hands and say <q>Ah, who cares, it's all the same anyways!</q>
+    </p>
   </subsection>
-
+  <conclusion>
+    <p>
+      Some questions that we might ask:
+      <ol>
+        <li>
+          <p>
+            Are there other functions that have the same nice result about them that <xref ref="thm-LimitsOfPolynomials"/> says for polynomials?
+          </p>
+        </li>
+        <li>
+          <p>
+            Are there some typical functions that we'll work with where this result <em>doesn't</em> work (and we actually have to be aware of the behavior around a point instead of at it)?
+          </p>
+        </li>
+        <li>
+          <p>
+            What are we even going to use these limits for, anyways? Why do we care about these?
+          </p>
+        </li>
+      </ol>
+      The answers to these questions will come slowly but surely, and we'll hopefully be able to start using these limits as a tool to think about more interesting and important topics soon: we just need to make sure we're familiar with them first.
+    </p>
+  </conclusion>
 </section>
