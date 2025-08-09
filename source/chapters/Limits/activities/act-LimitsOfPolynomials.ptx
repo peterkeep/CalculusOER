@@ -14,11 +14,11 @@
                 We're going to evaluate the limit <m>\displaystyle \lim_{x\to 1} f(x)</m>. First, use the properties from <xref ref="thm-CombinationsOfLimits"/> to re-write this limit as 4 different limits added or subtracted together.
             </p>
         </statement>
-        <answer>
+        <solution>
             <p>
                 <me>\lim_{x\to 1} (2x^4) - \lim_{x\to 1} (4x^3) + \lim_{x\to 1}\left(\frac{x}{2}\right) - \lim_{x\to 1} 5</me>
             </p>
-        </answer>
+        </solution>
     </task>
     <task>
         <statement>
@@ -26,11 +26,11 @@
                 Now, for each of these limits, re-write them as products of things until you have only limits of constants and identity functions, as in <xref ref="thm-LimitsOfTwoFunctions"/>. Evaluate your limits.
             </p>
         </statement>
-        <hint>
+        <solution>
             <p>
                 <me>2\left(\lim_{x\to 1} x\right)^4 - 4\left(\lim_{x\to 1} x\right)^3 + \frac{1}{2}\left(\lim_{x\to 1}x\right) - \lim_{x\to 1} 5</me>
             </p>
-        </hint>
+        </solution>
     </task>
     <task>
         <statement>
