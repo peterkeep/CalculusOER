@@ -19,6 +19,33 @@
                 You might think about writing out a function rule for <m>h(x)</m>. But can you also find <m>h(2)</m> without ever writing out a rule for <m>h(x)</m>?
             </p>
         </hint>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Since <m>h(x)=(x^2+3) + \left(x-\dfrac{1}{x}\right)</m>, we can evaluate <m>h(2)</m> by:
+                            <md>
+                                <mrow>h(2) \amp = 2^2+3+2-\frac{1}{2} </mrow>
+                                <mrow> \amp = \frac{17}{2}</mrow>
+                            </md>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Since <m>h(x)=f(x)+g(x)</m>, we can evaluate <m>h(2)</m> by:
+                            <md>
+                                <mrow>f(2) \amp = 7 </mrow>
+                                <mrow>g(2) \amp = \frac{3}{2}</mrow>
+                                <mrow>h(2) \amp = f(2)+g(2)</mrow>
+                                <mrow> \amp = 7 + \frac{3}{2}</mrow>
+                                <mrow> \amp = \frac{17}{2}</mrow>
+                            </md>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
     </task>
     <task>
         <statement>
