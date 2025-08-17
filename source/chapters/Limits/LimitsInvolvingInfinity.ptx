@@ -13,7 +13,13 @@
   </introduction>
   <subsection xml:id="subsec-InfiniteLimits">
     <title>Infinite Limits</title>
+    <p>
+      When we talked about indeterminate forms in <xref ref="sec-IndeterminateForms"/>, we noticed that the function value wasn't defined, since we divided by 0. Specifically, we were looking at the <m>\frac{0}{0}</m> form in the limit. What happens in other cases when we divide by 0 with a <em>nonzero</em> numerator?
+    </p>
     <xi:include href="./activities/act-DivideBy0.ptx" />
+    <p>
+      So we want to formalize this kind of behavior. We know that the limits that we're looking at don't exist (since there isn't a single, real number that the function outputs are all close to), but there is definitely some sort of consistent behavior that we'd like to signify.
+    </p>
     <definition xml:id="def-InfiniteLimit">
     <title>Infinite Limit</title>
       <statement>
@@ -29,6 +35,9 @@
         </p>
       </statement>
     </definition>
+    <p>
+      We know, from our adage <q><em>Fractions with small denominators are big, and fractions with big denominators are small,</em></q> that this type of behavior happens when the denominator is tiny compared to the numerator. We can summarize this:
+    </p>
     <theorem xml:id="thm-DivBy0-InfiniteLimit">
       <title>Dividing by 0 in a Limit</title>      
       <statement>
@@ -41,6 +50,9 @@
         </p>
       </statement>
     </theorem>
+    <p>
+      These kinds of limits are great, in that they're consistent to identify. We just look for this tiny denominator compared to the numerator, and go from there. We also know a lot about these types of limits, and can summarize this below. 
+    </p>
     <assemblage xml:id="strat-InfiniteLimits">
       <title>Evaluating Infinite Limits</title>
       <p>
@@ -101,100 +113,122 @@
         </statement>
       </task>
     </example>
-    
+    <p>
+      These are limits where <m>f(x)\to \pm\infty</m> when <m>x\to a</m> where <m>a</m> is a real number. What about the other way around? Is there a case where <m>x\to\pm\infty</m>, and what would we be looking at in the behavior of <m>f(x)</m>?
+    </p>
   </subsection>
   <subsection xml:id="subsec-EndBehaviorLimits">
     <title>End Behavior Limits</title>
     <xi:include href="./activities/act-DivideByInfinity.ptx" />
     <definition xml:id="def-LimitAtInfinity">
-  <title>Limit at Infinity</title>
-    <statement>
-      <p>
-        If <m>f(x)</m> is defined for all large and positive <m>x</m>-values and <m>f(x)</m> gets arbitrarily close to the single real number <m>L</m> when <m>x</m> gets sufficiently large, then we say:
-        <me>
-          \lim_{x\to\infty} f(x) = L
-        </me>.
-      </p>
-      <p>
-        Similarly, if <m>f(x)</m> is defined for all large and negative <m>x</m>-values and <m>f(x)</m> gets arbitrarily close to the single real number <m>L</m> when <m>x</m> gets sufficiently negative, then we say:
-        <me>
-          \lim_{x\to-\infty} f(x) = L
-        </me>.
-      </p>
-      <p>
-        In the case that <m>f(x)</m> has a <term>limit at infinity</term> that exists, then we say <m>f(x)</m> has a horizontal asymptote at <m>y=L</m>.
-      </p>
-      <p>
-        Lastly, if <m>f(x)</m> is defined for all large and positive (or negative) <m>x</m>-values and <m>f(x)</m> gets arbitrarily large and positive (or negative) when <m>x</m> gets sufficiently large (or negative), then we could say:
-        <me>
-          \lim_{x\to-\infty} f(x) = \pm\infty \text{ or } \lim_{x\to\infty} f(x) = \pm\infty</me>.
-      </p>
-    </statement>
-  </definition>
-  <p>
-    Because the primary focus for limits at infinity is the end behavior of a function, we will often refer to these limits as <term>end behavior limits</term>.
-  </p>
-  <theorem xml:id="thm-EndBehaviorReciprocalPower">
-    <title>End Behavior of Reciprocal Power Functions</title>
-    <statement>
-      <p>
-        If <m>p</m> is a positive real number, then:
-        <me>
-          \lim_{x\to\infty} \left(\frac{1}{x^p}\right) = 0 \text{ and } \lim_{x\to-\infty} \left(\frac{1}{x^p}\right) = 0 
-        </me>.
-      </p>
-    </statement>
-  </theorem>
-  
-  <theorem xml:id="thm-PolynomialEndBehavior">
-    <title>Polynomial End Behavior Limits</title>
-    <statement>
-      <p>
-        For some polynomial function:
-        <me>
-          p(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0
-        </me>
-        with <m>n</m> a positive integer (the degree) and all of the coefficients <m>a_0, a_1, ..., a_n</m> real numbers (with <m>a_n\neq 0</m>), then 
-        <me>
-          \lim_{x\to\infty} p(x) = \lim_{x\to\infty} a_n x^n
-        </me>         
-      </p>
-      <p>
-        That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.
-      </p>
-    </statement>
-    <proof>
-      <p>
-        Consider the polynomial function:
-        <me>
-          p(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0
-        </me>
-        where <m>n</m> is some integer and <m>a_k</m> is a real number for <m>k=0,1,2,...,n</m>. For simplicity, we will consider only the limit as <m>x\to\infty</m>, but we could easily repeat this exact proof for the case where <m>x\to-\infty</m>.
-        </p> 
+      <title>Limit at Infinity</title>
+      <statement>
         <p>
-          Before we consider this limit, we can factor out <m>x^n</m>, the variable with the highest exponent:
-        <md>
-          <mrow>p(x) \amp =a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0</mrow>
-          <mrow> \amp = x^n \left( \frac{a^nx^n}{x^n} + \frac{a_{n-1}x^{n-1}}{x^n} + ... + \frac{a_2x^2}{x^n} + \frac{a_1x}{x^n} + \frac{a_0}{x^n}\right)</mrow>
-          <mrow> \amp= x^n \left( a_n + \frac{a_{n-1}}{x} + ... + \frac{a_2}{x^{n-2}} + \frac{a_1}{x^{n-1}} + \frac{a_0}{x^n} \right) </mrow>
-        </md>
-        Now consider the limit of this product:
-        <md>
-          <mrow>\lim_{x\to\infty} p(x) \amp = \lim_{x\to\infty} x^n \left( a_n + \frac{a_{n-1}}{x} + ... + \frac{a_2}{x^{n-2}} + \frac{a_1}{x^{n-1}} + \frac{a_0}{x^n} \right) </mrow>
-          <mrow> \amp =\left(\lim_{x\to\infty} x^n\right)\left(\lim_{x\to\infty} a_n + \frac{a_{n-1}}{x} + ... + \frac{a_2}{x^{n-2}} + \frac{a_1}{x^{n-1}} + \frac{a_0}{x^n} \right)</mrow>
-        </md>
-        We can see that in the second limit, we have a single constant term, <m>a_n</m>, followed by reciprocal power functions. Then, due to <xref ref="thm-EndBehaviorReciprocalPower"/>, we know that the second limit will by <m>a_n</m>, since the reciprocal power functions will all approach 0.
-        <md>
-          <mrow> \lim_{x\to\infty} p(x) \amp =\left(\lim_{x\to\infty} x^n\right)\left(\lim_{x\to\infty} a_n + \frac{a_{n-1}}{x} + ... + \frac{a_2}{x^{n-2}} + \frac{a_1}{x^{n-1}} + \frac{a_0}{x^n} \right)</mrow>
-          <mrow> \amp = \left(\lim_{x\to\infty} x^n\right)\left(a_n + 0 + ... + 0 + 0 + 0\right)</mrow>
-          <mrow> \amp = \left(\lim_{x\to\infty} x^n\right)\left(a_n\right)</mrow>
-          <mrow> \amp = \lim_{x\to\infty} a_n x^n</mrow>
-        </md>
-        And so <m>\displaystyle \lim_{x\to\infty} p(x) = \lim_{x\to\infty} a_n x^n</m> as we claimed.
-      </p>
-    </proof>
-  </theorem>
-  <example>
+          If <m>f(x)</m> is defined for all large and positive <m>x</m>-values and <m>f(x)</m> gets arbitrarily close to the single real number <m>L</m> when <m>x</m> gets sufficiently large, then we say:
+          <me>
+            \lim_{x\to\infty} f(x) = L
+          </me>.
+        </p>
+        <p>
+          Similarly, if <m>f(x)</m> is defined for all large and negative <m>x</m>-values and <m>f(x)</m> gets arbitrarily close to the single real number <m>L</m> when <m>x</m> gets sufficiently negative, then we say:
+          <me>
+            \lim_{x\to-\infty} f(x) = L
+          </me>.
+        </p>
+        <p>
+          In the case that <m>f(x)</m> has a <term>limit at infinity</term> that exists, then we say <m>f(x)</m> has a horizontal asymptote at <m>y=L</m>.
+        </p>
+        <p>
+          Lastly, if <m>f(x)</m> is defined for all large and positive (or negative) <m>x</m>-values and <m>f(x)</m> gets arbitrarily large and positive (or negative) when <m>x</m> gets sufficiently large (or negative), then we could say:
+          <me>
+            \lim_{x\to-\infty} f(x) = \pm\infty \text{ or } \lim_{x\to\infty} f(x) = \pm\infty</me>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Because the primary focus for limits at infinity is the end behavior of a function, we will often refer to these limits as <term>end behavior limits</term>.
+    </p>
+    <p>
+      We're going to think about end-behavior of many types of functions, but we want to start with some small examples and build from there. So we're going to start by thinking about power functions. We're going to think about power functions in two ways:
+      <ol>
+        <li>
+          <p>
+            Power functions in the form of <m>x^p</m> (with <m>p\gt 0</m>). It shouldn't be too much work to convince yourself that these functions always have limits where, as <m>x\to \pm\infty</m>, <m>x^p\to\pm\infty</m> as well.
+          </p>
+        </li>
+        <li>
+          <p>
+            Reciprocal power functions, in the form <m>\dfrac{1}{x^p}</m> (still with <m>p\gt 0</m>). We already should have an idea of what's going to happen in these, based on <xref ref="act-DivideByInfinity"/>.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <theorem xml:id="thm-EndBehaviorReciprocalPower">
+      <title>End Behavior of Reciprocal Power Functions</title>
+      <statement>
+        <p>
+          If <m>p</m> is a positive real number, then:
+          <me>
+            \lim_{x\to\infty} \left(\frac{1}{x^p}\right) = 0 \text{ and } \lim_{x\to-\infty} \left(\frac{1}{x^p}\right) = 0 
+          </me>.
+        </p>
+      </statement>
+    </theorem>
+    <p>
+      Our last result is one that you might already know, but we'll provide some more justification for this. We can use our knowledge of end-behavior limits for both type of power functions to think about the end-behavior limits of polynomials in general! 
+    </p>
+    <theorem xml:id="thm-PolynomialEndBehavior">
+      <title>Polynomial End Behavior Limits</title>
+      <statement>
+        <p>
+          For some polynomial function:
+          <me>
+            p(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0
+          </me>
+          with <m>n</m> a positive integer (the degree) and all of the coefficients <m>a_0, a_1, ..., a_n</m> real numbers (with <m>a_n\neq 0</m>), then 
+          <me>
+            \lim_{x\to\infty} p(x) = \lim_{x\to\infty} a_n x^n
+          </me>         
+        </p>
+        <p>
+          That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          Consider the polynomial function:
+          <me>
+            p(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0
+          </me>
+          where <m>n</m> is some integer and <m>a_k</m> is a real number for <m>k=0,1,2,...,n</m>. For simplicity, we will consider only the limit as <m>x\to\infty</m>, but we could easily repeat this exact proof for the case where <m>x\to-\infty</m>.
+          </p> 
+          <p>
+            Before we consider this limit, we can factor out <m>x^n</m>, the variable with the highest exponent:
+          <md>
+            <mrow>p(x) \amp =a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0</mrow>
+            <mrow> \amp = x^n \left( \frac{a^nx^n}{x^n} + \frac{a_{n-1}x^{n-1}}{x^n} + ... + \frac{a_2x^2}{x^n} + \frac{a_1x}{x^n} + \frac{a_0}{x^n}\right)</mrow>
+            <mrow> \amp= x^n \left( a_n + \frac{a_{n-1}}{x} + ... + \frac{a_2}{x^{n-2}} + \frac{a_1}{x^{n-1}} + \frac{a_0}{x^n} \right) </mrow>
+          </md>
+          Now consider the limit of this product:
+          <md>
+            <mrow>\lim_{x\to\infty} p(x) \amp = \lim_{x\to\infty} x^n \left( a_n + \frac{a_{n-1}}{x} + ... + \frac{a_2}{x^{n-2}} + \frac{a_1}{x^{n-1}} + \frac{a_0}{x^n} \right) </mrow>
+            <mrow> \amp =\left(\lim_{x\to\infty} x^n\right)\left(\lim_{x\to\infty} a_n + \frac{a_{n-1}}{x} + ... + \frac{a_2}{x^{n-2}} + \frac{a_1}{x^{n-1}} + \frac{a_0}{x^n} \right)</mrow>
+          </md>
+          We can see that in the second limit, we have a single constant term, <m>a_n</m>, followed by reciprocal power functions. Then, due to <xref ref="thm-EndBehaviorReciprocalPower"/>, we know that the second limit will by <m>a_n</m>, since the reciprocal power functions will all approach 0.
+          <md>
+            <mrow> \lim_{x\to\infty} p(x) \amp =\left(\lim_{x\to\infty} x^n\right)\left(\lim_{x\to\infty} a_n + \frac{a_{n-1}}{x} + ... + \frac{a_2}{x^{n-2}} + \frac{a_1}{x^{n-1}} + \frac{a_0}{x^n} \right)</mrow>
+            <mrow> \amp = \left(\lim_{x\to\infty} x^n\right)\left(a_n + 0 + ... + 0 + 0 + 0\right)</mrow>
+            <mrow> \amp = \left(\lim_{x\to\infty} x^n\right)\left(a_n\right)</mrow>
+            <mrow> \amp = \lim_{x\to\infty} a_n x^n</mrow>
+          </md>
+          And so <m>\displaystyle \lim_{x\to\infty} p(x) = \lim_{x\to\infty} a_n x^n</m> as we claimed.
+        </p>
+      </proof>
+    </theorem>
+    <p>
+      Instead of spending our time thinking about these polynomial end-behavior limits too specifically (since we might already be familiar with this result), and just focus on using these polynomials in the middle of larger problems.
+    </p>
+    <example>
       <introduction>
         <p>
           For each function, find the limits as <m>x\to \infty</m> and <m>x\to-\infty</m>.
@@ -206,6 +240,39 @@
            <m>\left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right)</m> 
           </p>
         </statement>
+        <hint>
+          <p>
+            You can think about the limit in the numerator and the limit in the denominator. Based on <xref ref="thm-PolynomialEndBehavior"/>, which terms will be the ones to dictate the behavior of the numerator and denominator?
+          </p>
+        </hint>
+        <hint>
+          <p>
+            What happens when you think about just those dominant terms in the numerator and denominator and reduce the fraction? What is left?
+          </p>
+        </hint>
+        <solution>
+          <p>
+            We'll start with the same kind of factoring that is used in the proof of <xref ref="thm-PolynomialEndBehavior"/>.
+            <md>
+              <mrow>\left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right) \amp = \left(\dfrac{2x^2}{x^2}\right)\left(\dfrac{1-\frac{5}{2x}+\frac{1}{2x^2}}{1+\frac{8}{x}+\frac{16}{x^2}}\right) </mrow>
+              <mrow> \amp = 2\left(\dfrac{1-\frac{5}{2x}+\frac{1}{2x^2}}{1+\frac{8}{x}+\frac{16}{x^2}}\right) </mrow>
+            </md>
+            Now we can apply the limits as <m>x\to\infty</m> and <m>x\to-\infty</m>, since the reciprocal power functions will all <m>\to 0</m>.
+            <md>
+              <mrow>\lim_{x\to\infty} 2\left(\dfrac{1-\frac{5}{2x}+\frac{1}{2x^2}}{1+\frac{8}{x}+\frac{16}{x^2}}\right) \amp = 2(1) = 2 </mrow>
+              <mrow>\lim_{x\to-\infty} 2\left(\dfrac{1-\frac{5}{2x}+\frac{1}{2x^2}}{1+\frac{8}{x}+\frac{16}{x^2}}\right) \amp = 2(1) = 2 </mrow>
+            </md>
+            Alternatively, we could have done the following:
+            <md>
+              <mrow>\lim_{x\to \infty} \left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right) \amp = \dfrac{\lim_{x\to\infty}(2x^2-5x+1)}{\lim_{x\to\infty}(x^2+8x+16)}</mrow>
+              <mrow> \amp = \frac{\lim_{x\to\infty} 2x^2}{\lim_{x\to\infty}x^2}</mrow>
+              <mrow> \amp = \lim_{x\to\infty} \frac{2x^2}{x^2}</mrow>
+              <mrow> \amp = \lim_{x\to\infty} 2 = 2</mrow>
+            </md>
+            The same process could be used to show that:
+             <me>lim_{x\to -\infty} \left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right)=2</me>.
+          </p>
+        </solution>
       </task>
       <task>
         <statement>
@@ -213,6 +280,11 @@
             <m>\left(\dfrac{4x^2-x^5}{x^2-4x+3}\right)</m>
           </p>
         </statement>
+        <hint>
+          <p>
+            Be careful about which term (in the numerator) will persist!
+          </p>
+        </hint>
       </task>
       <task>
         <statement>
@@ -220,12 +292,23 @@
             <m>\dfrac{|x|}{3x}</m>
           </p>
         </statement>
+        <hint>
+          <p>
+            It might be helpful to remind yourself of the definition of the absolute value function:
+            <me>
+              |x| = \begin{cases}
+              -x \amp \text{when } x\lt0\\
+              x \amp \text{when } x\geq 0
+            </me>.
+            This means you can replace <m>|x|</m> with either <m>x</m> or <m>-x</m> in the limits as <m>x\to\infty</m> and <m>x\to-\infty</m>.
+          </p>
+        </hint>
       </task>
     </example>
   </subsection>
-<conclusion>
+<!-- <conclusion>
   <xi:include href="./activities/act-MatchingLimits.ptx" />
-</conclusion>
+</conclusion> -->
 
 
 
