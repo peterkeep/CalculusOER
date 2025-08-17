@@ -3,20 +3,42 @@
 <section xml:id="sec-IndeterminateForms" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>First Indeterminate Forms</title>
   <introduction>
-
-    <xi:include href="./activities/act-SlightlyDifferentFunctions.ptx" />
-
-     <theorem xml:id="thm-SlightlyDifferentFunctions">
-        <title>Limits of (Slightly) Different Functions</title>    
-        <statement>
+    <p>
+      We're going to really focus on one of the main aspects of a limit in this next activity. The activity should serve two purposes:
+      <ol>
+        <li>
           <p>
-            If <m>f(x)</m> and <m>g(x)</m> are two functions defined at <m>x</m>-values around <m>a</m> (but maybe not at <m>x=a</m> itself) with <m>f(x) = g(x)</m> for the <m>x</m>-values around <m>a</m> but with <m>f(a)\neq g(a)</m> then <m>\displaystyle \lim_{x\to a}f(x) = \lim_{x\to a}g(x)</m>, if the limits exist.
+            We'll review a really important property or aspect of what a limit is!
           </p>
-        </statement>
-      </theorem>
+        </li>
+        <li>
+          <p>
+            We'll look at this thing that we already know from a slightly different perspective (or maybe just a specific perspective), and we'll discover a really important and helpful result from it!
+          </p>
+        </li>
+      </ol>
+    </p>
+    <xi:include href="./activities/act-SlightlyDifferentFunctions.ptx" />
+    <p>
+      This is an important thing to notice: we can change our function by changing the value of the function at <m>x=a</m> without changing the value of the limit as <m>x\to a</m>.
+    </p>
+    <theorem xml:id="thm-SlightlyDifferentFunctions">
+      <title>Limits of (Slightly) Different Functions</title>    
+      <statement>
+        <p>
+          If <m>f(x)</m> and <m>g(x)</m> are two functions defined at <m>x</m>-values around <m>a</m> (but maybe not at <m>x=a</m> itself) with <m>f(x) = g(x)</m> for the <m>x</m>-values around <m>a</m> but with <m>f(a)\neq g(a)</m> then <m>\displaystyle \lim_{x\to a}f(x) = \lim_{x\to a}g(x)</m>, if the limits exist.
+        </p>
+      </statement>
+    </theorem>
+    <p>
+      Why will this be helpful? At the end of <xref ref="sec-EvaluatingLimits"/> we found that some functions (polynomials) are great: the limit of these functions is the same as the function value at the point (<xref ref="thm-LimitsOfPolynomials"/>). This is a special case, and many functions won't be so nice to work with. But maybe we could use <xref ref="thm-SlightlyDifferentFunctions"/> to swap out an annoying-to-work-with function for a nice-to-work-with function!
+    </p>
   </introduction>
   <subsection xml:id="subsec-FirstIndeterminateForms">
     <title>A First Introduction to Indeterminate Forms</title>
+    <p>
+      So before we begin applying this result, we will focus on a situation where we need it. We're going to do something strange: define a situation before we experience it.
+    </p>
     <definition xml:id="def-IndeterminateForm">
     <title>Indeterminate Form</title> 
       <statement>
@@ -28,11 +50,45 @@
           <me>
             \lim_{x\to a}\left(\frac{f(x)}{g(x)}\right) \stackrel{?}\to \frac{0}{0}
           </me>.
-          
         </p>
       </statement>
     </definition>
+    <p>
+      Ok, so why do we need this definition? What does the word <q>indeterminate</q> even mean, here?
+    </p>
+    <p>
+      We're going to see in this next activity that this kind of <m>\dfrac{0}{0}</m> form of a limit can actually lead to very different behavior: we call it indeterminate because we cannot determine, based solely on the form <m>\dfrac{0}{0}</m>, what the limit is or even if it will exist.
+    </p>
     <xi:include href="./activities/act-IndeterminateForms.ptx" />
+    <p>
+      This is great: we're applying <xref ref="thm-SlightlyDifferentFunctions"/> because in each algebraic manipulation, we change the domain of the function by removing some factor from the denominator!
+    </p>
+    <p>
+      These three algebra tricks are all we'll look at for now. In reality, there are plenty of little tricky manipulations we can use to slightly change functions, but if we focused on trying to build one for every situation we could run into, we'd spend the rest of this text just outlining different algebra tricks for different situations.
+    </p>
+    <assemblage xml:id="strat-AlgebraicManipulationsLimits">
+      <title>Algebra Tricks for Indeterminate Forms</title>
+      <p>
+        For limits with the <m>\frac{0}{0}</m> indeterminate form, we can apply the following algebraic tricks:
+        <ol>
+          <li>
+            <p>
+              <em>Factor and cancel:</em> This works well when we have polynomials divided by polynomials.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Conjugates:</em> This works well when we have some difference of square roots in the numerator or denominator.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Combine fractions with common denominators:</em> This works well when we have some subtraction with fractions inside of a numerator or denominator of another fraction.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </assemblage>
   </subsection>
 <subsection xml:id="subsec-WhatIfIndeterminateForms">
   <title>What if There Is No Algebra Trick?</title>
