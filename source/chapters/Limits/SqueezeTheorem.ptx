@@ -2,9 +2,30 @@
 
 <section xml:id="sec-SqueezeTheorem" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Squeeze Theorem</title>
-  <xi:include href="./activities/act-WeirdEndBehavior.ptx" />
-
-  <theorem xml:id="thm-SqueezeTheorem">
+  <introduction>
+    <p>
+      We won't get enough time to spend thinking about all of the possible techniques that we could use to evaluate limits, but in this section we'll investigate one more.
+    </p>
+    <p>
+      Here, we'll introduce a new limit involving a type of function that we've not used in limits so far: trigonometric functions.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-WeirdFunctionsWeirdBehavior">
+    <title>Weird Functions, Weird Behavior</title>
+    <p>
+      Ok, trigonometric functions aren't actually weird. But we want to look at a function that is slightly more complicated than the ones we've looked at so far.
+    </p>
+    <xi:include href="./activities/act-WeirdEndBehavior.ptx" />
+  </subsection>
+  <subsection xml:id="subsec-SqueezeTheorem">
+    <title>Squeeze Theorem</title>
+    <p>
+      This strategy is a really nice one to use when we know the behavior of some well-behaved <q>bounding</q> functions. We can try to off-load the task of summarizing the behavior of a strangely behaved function to these bounding functions, and follow them! As long as they approach each other, than the strangely behaved function has to have the same behavior.
+    </p>
+    <p>
+      Let's formalize this result carefully.
+    </p>
+    <theorem xml:id="thm-SqueezeTheorem">
     <title>The Squeeze Theorem</title>
     <statement>
       <p>
@@ -16,7 +37,41 @@
       </p>
     </statement>
   </theorem>
-  <xi:include href="./activities/act-SketchSqueeze.ptx" />
-  
+  <aside>
+      <p>
+        Sometimes this theorem is called the Sandwich Theorem, since the upper bounding function and the lower bounding function act as the slices of bread, while the strangely behaved middle function acts like the toppings on the sandwich.
+      </p>
+      <p>
+        We choose not to use that naming convention in this text in order to preserve the flexibility of the definition of a sandwich. An open-faced sandwich is still a sandwich (in the opinion of the textbook author), but this result clearly doesn't hold when we only have one bounding function.
+      </p>
+    </aside>
+    <p>
+      This theorem can be difficult to use, primarily because building the bounds for a function is difficult. In <xref ref="act-WeirdEndBehavior"/>, we were able to build the boundary functions by simply thinking about the bounds on the <m>\sin(x)</m>. This worked well, but we were only able to do this because of our familiarity with this function. With other functions, these bounds are harder to just <em>come up with</em>. This is especially true in that we need the bounds to accomplish multiple things at once:
+      <ul>
+        <li>
+          <p>
+            We need them to be ordered correctly with regard to the function we care about: one above it and one below it.
+          </p>
+        </li>
+        <li>
+          <p>
+            We need the limits of these functions to be things we can actually evaluate! This is the whole point: we use these (hopefully easier) limits to evaluate the (probably hard) limit that we're interested in.
+          </p>
+        </li>
+        <li>
+          <p>
+            We need the limits of these functions to be the same as <m>x\to a</m>, otherwise we're not certain about where our function actually is.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      In practice, we'll try to build any bounding functions with some assistance, or start with bounding functions already stated.
+    </p>
+    <p>
+      Let's see another way of thinking about this result using our graphical intuition.
+    </p>
+    <xi:include href="./activities/act-SketchSqueeze.ptx" />
+  </subsection>
 
 </section>
