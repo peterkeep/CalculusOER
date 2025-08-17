@@ -20,6 +20,32 @@
                     exercise.divisional.answer="no"
                     exercise.divisional.solution="no"/>
     </target>
+    <target name="printDC1"
+            format="pdf"
+            deploy-dir="pdf"
+            output-filename="DiscoverCalculus1-PeterKeep.pdf" 
+            xsl="DC1.xsl"
+            publication="pub-DC1.ptx">
+      <stringparams project.hint="no"
+                    project.answer="no"
+                    project.solution="no"
+                    exercise.divisional.hint="no"
+                    exercise.divisional.answer="no"
+                    exercise.divisional.solution="no"/>
+    </target>
+    <target name="printDC2"
+            format="pdf"
+            deploy-dir="pdf"
+            output-filename="DiscoverCalculus2-PeterKeep.pdf" 
+            xsl="DC2.xsl"
+            publication="pub-DC2.ptx">
+      <stringparams project.hint="no"
+                    project.answer="no"
+                    project.solution="no"
+                    exercise.divisional.hint="no"
+                    exercise.divisional.answer="no"
+                    exercise.divisional.solution="no"/>
+    </target>
     <target name="solutions"
             format="pdf"
             source="main.ptx"
@@ -27,11 +53,32 @@
             xsl="solutions.xsl"
             deploy-dir="ancillaries"
             output-filename="DiscoverCalculus-Solutions.pdf" />
-    <target name="worksheet"
+    <target name="activities"
             format="pdf"
-            xsl="worksheet.xsl"
+            xsl="activities.xsl"
             deploy-dir="ancillaries"
-            output-filename="DiscoverCalculus-ActivityBook.pdf">
+            output-filename="DiscoverCalculus-ActivityBook.pdf"
+            publication="pub-activity.ptx">
+      <stringparams project.hint="no"
+                    project.answer="no"
+                    project.solution="no"/>
+    </target>
+    <target name="activities1"
+            format="pdf"
+            xsl="activities1.xsl"
+            deploy-dir="ancillaries"
+            output-filename="DiscoverCalculus1-ActivityBook.pdf"
+            publication="pub-activity1.ptx">
+      <stringparams project.hint="no"
+                    project.answer="no"
+                    project.solution="no"/>
+    </target>
+    <target name="activities2"
+            format="pdf"
+            xsl="activities2.xsl"
+            deploy-dir="ancillaries"
+            output-filename="DiscoverCalculus2-ActivityBook.pdf"
+            publication="pub-activity2.ptx">
       <stringparams project.hint="no"
                     project.answer="no"
                     project.solution="no"/>

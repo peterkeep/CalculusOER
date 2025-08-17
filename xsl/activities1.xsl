@@ -29,7 +29,7 @@
 <!-- We pull activities from each subsection -->
 <xsl:template match="subsection">
     <xsl:apply-templates select="activity"/>    
-    <!-- <xsl:text>\clearpage&#xA;&#xA;</xsl:text>  -->
+    <!-- <xsl:text>\cleardoublepage&#xA;&#xA;</xsl:text>  -->
 </xsl:template>
 
 <!-- style of the activity boxes -->
@@ -46,7 +46,8 @@
         titlerule=0mm,
         toprule=0mm,
         bottomrule=0mm,
-        sharpish corners
+        sharpish corners,
+        after={\clearpage}
     </xsl:text>
 </xsl:template>
 
@@ -80,7 +81,14 @@
 <xsl:param name="latex.geometry" select="'letterpaper,margin=1in'" />
 
 
+<!-- Skip DC2 chapters -->
 
+<xsl:template match="id('ch-ApplicationsIntegrals')"/>
+<xsl:template match="id('ch-AntidifferentiationTechniques')"/>
+<xsl:template match="id('ch-InfiniteSeries')"/>
+<xsl:template match="id('ch-PowerSeries')"/>
+
+<!-- Skip DC2 Appendices -->
 
 
 </xsl:stylesheet>

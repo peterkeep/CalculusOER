@@ -5,9 +5,23 @@
   <xi:include href="./meta/docinfo.ptx" />
 
   <book xml:id="DiscoverCalculus">
-    <title>Discover Calculus</title>
-    <subtitle>Single-Variable Calculus Topics with Motivating Activities</subtitle>
+    <title component="main">Discover Calculus</title>
+    <subtitle component="main">Single-Variable Calculus Topics with Motivating Activities</subtitle>
 
+    <title component="DC1">Discover Calculus I</title>
+    <subtitle component="DC1">Single-Variable Differential Calculus Topics with Motivating Activities</subtitle>
+
+    <title component="DC2">Discover Calculus II</title>
+    <subtitle component="DC2">Single-Variable Integral Calculus Topics with Motivating Activities</subtitle>
+
+    <title component="activity">Discover Calculus - Activity Book</title>
+    <subtitle component="activity">All of the Activities from Each Chapter</subtitle>
+
+    <title component="activity1">Discover Calculus I - Activity Book</title>
+    <subtitle component="activity1">Activities for Differential Calculus Topics</subtitle>
+
+    <title component="activity2">Discover Calculus II - Activity Book</title>
+    <subtitle component="activity2">Activities for Integral Calculus Topics</subtitle>
     <!-- Include frontmatter -->
     <xi:include href="./meta/frontmatter.ptx" />
 
@@ -22,8 +36,6 @@
     <xi:include href="./chapters/InfiniteSeries/InfiniteSeriesIndex.ptx" />
     <xi:include href="./chapters/PowerSeries/PowerSeriesIndex.ptx" />
     
-
-
     <!-- Include backmatter -->
     <xi:include href="./meta/backmatter.ptx" />
 
