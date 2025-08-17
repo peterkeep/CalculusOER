@@ -1198,9 +1198,9 @@ var ptx_lunr_docs = [
   "body": " Concavity and Inflection Points   We say that a function if concave up on an interval if is increasing on the interval. If is decreasing on the interval, then we say that is concave down .  We say that a point is an inflection point if it is a point at which changes concavity (from concave up to concave down or vice versa).   "
 },
 {
-  "id": "axt-FindingConcavity",
+  "id": "act-FindingConcavity",
   "level": "2",
-  "url": "sec-Concavity.html#axt-FindingConcavity",
+  "url": "sec-Concavity.html#act-FindingConcavity",
   "type": "Activity",
   "number": "4.3.2",
   "title": "Finding a Function’s Concavity.",
@@ -2233,9 +2233,9 @@ var ptx_lunr_docs = [
   "body": "Disk Method "
 },
 {
-  "id": "subsec-SolidsOfRevolution-17",
+  "id": "act-Washer",
   "level": "2",
-  "url": "sec-VolumesOfRevolution.html#subsec-SolidsOfRevolution-17",
+  "url": "sec-VolumesOfRevolution.html#act-Washer",
   "type": "Activity",
   "number": "6.3.1",
   "title": "Carving out a Hole in the Center.",

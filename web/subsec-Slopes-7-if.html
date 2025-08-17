@@ -110,16 +110,17 @@ window.MathJax = {
   <point name="Q" styleNumber="1" fixLocation>(6, $$f(6))</point>
   <number name="avgSlope">($P.y - $Q.y) / ($P.x - $Q.x)</number>
   <number name="instSlope" styleNumber="2">$$fPrime($a)</number>
-
   <styleDefinitions>
     <styleDefinition styleNumber="4" markerColor="#07aa60" 
       markerStyle="square" markerSize="5" fillColor="#07aa60" 
       lineColor="#07aa60" lineStyle="solid" lineWidth="3" />
    </styleDefinitions>
-  <conditionalContent assignNames="styleToggle">
+  <number name="styleToggle">
+  <conditionalContent>
     <case condition="abs($avgSlope - $instSlope) < 0.02">4</case>
     <else>2</else>
   </conditionalContent>
+  </number>
 </setup>
 
 <p><em>Instructions:</em> Move the point in the interval and try to make the slope of the line tangent to the curve at the point match the slope of the line connecting the endpoints of the interval.</p>
@@ -134,7 +135,7 @@ window.MathJax = {
   $tan
 </graph>
 
-<p>You should notice when you find the point where the tangent line is parallel to the line conecting the endpoints.</p>
+<p>You should notice when you find the point where the tangent line is parallel to the line connecting the endpoints.</p>
             </script>
 </div></div>
 </body>
