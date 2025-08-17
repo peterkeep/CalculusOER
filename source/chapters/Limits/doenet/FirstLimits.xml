@@ -1,0 +1,76 @@
+<setup>
+  <function name="f">$k</function>
+  <function name="fShade" domain="[$a-0.1, $a+0.1]" styleNumber="2">$f</function>
+  <function name="g">x</function>
+  <function name="gShade" domain="[$a-0.1, $a+0.1]" styleNumber="2">$g</function>
+  <function name="o" fixed>0</function>
+  <boolean name="showConstant">$funcChoice.selectedIndices=1</boolean>
+  <boolean name="showId">$funcChoice.selectedIndices=2</boolean>
+  <number name="k">1</number>
+  <number name="a">2</number>
+  <point name="P" styleNumber="2">($a, $o)</point>
+  <!-- Lines for the constant function -->
+  <lineSegment name="intf1" styleNumber="6"
+    endpoints="($a-0.1, $o) ($a-0.1, $$f($a-0.1))" 
+    endpointsDraggable="false"/>
+  <lineSegment name="intf2" styleNumber="6"
+    endpoints="($a+0.1, $o) ($a+0.1, $$f($a+0.1))" 
+    endpointsDraggable="false"/>
+  <lineSegment name="intf1Y" styleNumber="6"
+    endpoints="(0, $$f($a-0.1)) ($a-0.1, $$f($a-0.1))" 
+    endpointsDraggable="false"/>
+  <lineSegment name="intf2Y" styleNumber="6"
+    endpoints="(0, $$f($a+0.1)) ($a+0.1, $$f($a+0.1))" 
+    endpointsDraggable="false"/>
+  <!-- Lines for the identity function -->
+  <lineSegment name="intg1" styleNumber="6"
+    endpoints="($a-0.1, $o) ($a-0.1, $$g($a-0.1))" 
+    endpointsDraggable="false"/>
+  <lineSegment name="intg2" styleNumber="6"
+    endpoints="($a+0.1, $o) ($a+0.1, $$g($a+0.1))" 
+    endpointsDraggable="false"/>
+  <lineSegment name="intg1Y" styleNumber="6"
+    endpoints="(0, $$g($a-0.1)) ($a-0.1, $$g($a-0.1))" 
+    endpointsDraggable="false"/>
+  <lineSegment name="intg2Y" styleNumber="6"
+    endpoints="(0, $$g($a+0.1)) ($a+0.1, $$g($a+0.1))" 
+    endpointsDraggable="false"/>
+</setup>
+
+<p>
+  <em>Instructions:</em> Select the function you'd like to visualize, and slide the red interval of <m>x</m>-values around. What kinds of function outputs occur for these <m>x</m>-values? Can you explain this using the function's structure/rule?
+</p>
+
+<choiceInput name="funcChoice">  
+  <choice preSelect>Constant Function: <m>y=k</m> (currently <m>y=$k</m>)</choice>
+  <choice>Identity Function: <m>y=x</m></choice>
+</choiceInput>
+
+<conditionalContent>
+  <case condition="$showConstant">
+    Select the value of the constant, <m>k</m>:
+    <slider name="slider" from="-2" to="2" step="0.01" initialValue="1" showTicks="false"  showValue="true" labelIsName bindValueTo="$k"/>
+  </case>
+</conditionalContent>
+
+<graph size="medium" xmin="-3" xmax="3" ymin="-3" ymax="3" identicalAxisScales fixAxes>
+  <conditionalContent>
+    <case condition="$showConstant">
+      $f
+      $fShade
+      $intf1
+      $intf1Y
+      $intf2
+      $intf2Y
+    </case>
+    <case condition="$showId">
+      $g
+      $gShade
+      $intg1
+      $intg1Y
+      $intg2
+      $intg2Y
+    </case>
+  </conditionalContent>
+  $P
+</graph>
