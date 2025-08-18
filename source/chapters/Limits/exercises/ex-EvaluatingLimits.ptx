@@ -1,0 +1,150 @@
+<exercises xml:id="ex-EvaluatingLimits">
+    <exercise>
+        <introduction>
+            <p>
+                Given <m>\displaystyle\lim_{x\to3} f(x) = 5</m> and <m>\displaystyle \lim_{x\to 3} g(x) = -2</m>, evaluate the following limits. If the limit doesn't exist, explain why. Write out a few steps and explanations to justify your work.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to3} \left(6f(x) -\frac{g(x)}{3}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 3} (f(x))^2g(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to3^-} \left(\frac{4g(x)}{f(x)} + 3f(x)\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to3^+} \left(\sqrt{f(x)} + \sqrt[3]{g(x)}\right)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Evaluate each limit. Justify your answers.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \lim_{x\to 0} (4x^3-6x^2+7x-10)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \lim_{x\to -2} (9-3x+x^2+3x^3+x^4)</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \lim_{t\to a} \left(9t^2 + 3at - 1\right)</m> where <m>a</m> is some real number
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \lim_{s\to 1} \left( \dfrac{5s^2-6s+1}{s^2-4} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \lim_{t\to 2} \left( \dfrac{4t-5}{6+t^2} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \lim_{z\to2} \sqrt{z^2+4z-8}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Evaluate each limit. If the limit does not exist, explain why not.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Let <m>f(x) =
+                        \begin{cases}
+                          3x-2 \amp \text{if } x\lt-1\\
+                          x^2+x-4 \amp \text{if } x\geq -1
+                        \end{cases}</m>. 
+                </p>
+                <p>
+                    Evaluate <m>\displaystyle \lim_{x\to-1^-} f(x)</m>, <m>\displaystyle \lim_{x\to-1^+} f(x)</m>, and <m>\displaystyle \lim_{x\to-1} f(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Let <m> g(x) =
+                        \begin{cases}
+                          \sqrt{6-x} \amp \text{if } x\lt -3\\
+                          6 \amp \text{if } x=-3\\
+                          \frac{2x+15}{3} \amp \text{if } x\gt -3
+                        \end{cases}</m>.
+                </p>
+                <p>
+                    Evaluate <m>\displaystyle \lim_{x\to -3^-} g(x)</m>, <m>\displaystyle \lim_{x\to-3^+} g(x)</m>, and <m>\displaystyle \lim_{x\to-3} g(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Let <m> s(t) =
+                        \begin{cases}
+                          t^2+1 \amp \text{if } t\lt1\\
+                          1-t^2\amp \text{if } t\geq 1
+                        \end{cases}</m>.
+                </p>
+                <p>
+                    Evaluate <m>\displaystyle \lim_{t\to1^-} s(t)</m>, <m>\displaystyle \lim_{t\to1^+} s(t)</m>, and <m>\displaystyle \lim_{t\to1} s(t)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Let <m>r(\theta) =
+                        \begin{cases}
+                          \sqrt{\theta+2}+\theta^3 \amp \text{if } \theta\lt 2\\
+                          3\theta+2 \amp \text{if } \theta\geq 2
+                        \end{cases}</m>.
+                </p>
+                <p>
+                    Evaluate <m>\displaystyle \lim_{\theta\to2^-} r(\theta)</m>, <m>\displaystyle \lim_{\theta\to2^+} r(\theta)</m>, and <m>\displaystyle \lim_{\theta\to2} r(\theta)</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
