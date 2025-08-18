@@ -1,0 +1,616 @@
+<exercises xml:id="ex-DefinitionOfLimits">
+    <exercise>
+        <p>
+            Explain in your own words the meaning of:
+            <me>
+                \lim_{x\to a^-}f(x)=L
+            </me>.
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Explain in your own words the meaning of:
+            <me>
+                \lim_{x\to a^+}f(x)=L
+            </me>.
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Explain in your own words the meaning of:
+            <me>
+                \lim_{x\to a}f(x)=L
+            </me>.
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Say we know that <m>\displaystyle\lim_{x\to3^-} f(x)=2</m> and <m>\displaystyle\lim_{x\to 3^+}f(x)=2</m>. What do we know (specifically or in general, if anything) about each of the following?
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(3)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We do not know anything about the value of <m>f(3)</m>, including whether or not there is such a vale.
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(2.999)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The value of <m>f(2.999)</m> should be close to the number <m>2</m>. We do not know exactly what the value is, though.
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(3.001)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The value of <m>f(3.001)</m> should be close to the number <m>2</m>. We do not know exactly what the value is, though.
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 3}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Since both the left and the right sided limits are the same single, real number (2), so is the limit: <m>\displaystyle\lim_{x\to 3}f(x)=2</m>.
+                </p>
+            </solution>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Which of the following is possible? Explain why or why not, and any other conclusions that we can draw.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    For some function <m>f(x)</m>, <m>\displaystyle\lim_{x\to 5} f(x)=6</m> and <m>f(5)=-3</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    This is possible.
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    For some function <m>g(x)</m>, <m>\displaystyle\lim_{x\to 4^-} f(x) = -\dfrac{3}{2}</m> and <m>\displaystyle\lim_{x\to 4^+}g(X) = \dfrac{4}{7}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    This is possible, although it means that <m>\displaystyle\lim_{x\to 4}g(x)</m> does not exist.
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    For some function <m>\ell(t)</m>, <m>\displaystyle \lim_{t\to \alpha} \ell(t) = 2</m> and <m>\displaystyle \lim_{t\to\alpha^+} \ell(t) = 1</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    This is not possible, since for <m>\displaystyle \lim_{t\to\alpha} \ell(t) = 2</m> we would need <m>\displaystyle \lim_{t\to \alpha^+} \ell(t) = 2</m> and <m>\displaystyle \lim_{t\to \alpha^-} \ell(t) = 2</m>.
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    For some function <m>r(\theta)</m>, <m>\displaystyle\lim_{\theta\to 0}r(\theta)</m> does not exist, <m>\displaystyle\lim_{\theta\to 0^-}r(\theta)=\pi</m>, and <m>\displaystyle\lim_{\theta\to 0^+}r(\theta)=-\frac{\pi}{2}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    This is possible.
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    For some function <m>j(w)</m>, <m>j(4) = \pi</m> while <m>\displaystyle \lim_{w\to 4}j(w)</m> does not exist.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    This is possible.
+                </p>
+            </solution>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Fill in the following tables in order to satisfy the requirements listed. Afterwards, include a sentence or two justifying your choices.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <em>Requirements:</em> <m>\displaystyle\lim_{x\to1} f(x)=3</m>
+                </p>
+                <tabular>
+                    <row bottom="medium">
+                        <cell><m>x</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><m>0.93</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><m>1</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><m>1.04</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f(x)</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                    </row>
+                </tabular>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    <em>Requirements:</em> <m>\displaystyle\lim_{x\to-5^-} f(x)=2</m>, <m>f(-5)=6</m>, and <m>\displaystyle\lim_{x\to -5}f(x)</m> doesn't exist.
+                </p>
+                <tabular>
+                    <row bottom="medium">
+                        <cell><m>x</m></cell>
+                        <cell><m>-5.2</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><m>-5</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><m>4.98</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                    </row>
+                    <row>
+                        <cell><m>f(x)</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                    </row>
+                </tabular>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    <em>Requirements:</em> <m>f(7)</m> does not exist and <m>\displaystyle \lim_{x\to 7} f(x)=3</m>
+                </p>
+                <tabular>
+                    <row bottom="medium">
+                        <cell><m>x</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><m>6.985</m></cell>
+                        <cell><m>7</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><m>7.002</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f(x)</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                    </row>
+                </tabular>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    <em>Requirements:</em> <m>\displaystyle\lim_{x\to 0^-} f(x)=\pi</m> and <m>\displaystyle\lim_{x\to 0^+} f(x)=e</m>.
+                </p>
+                <tabular>
+                    <row bottom="medium">
+                        <cell><m>x</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><m>-0.14</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><m>0</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><m>0.5</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f(x)</m></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                        <cell><fillin characters="5" /></cell>
+                    </row>
+                </tabular>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                From the following tables, estimate/report each of the requested values. Explain your choices.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <em>Requested:</em> <m>\displaystyle\lim_{x\to 1^-}f(x)</m>, <m>\displaystyle\lim_{x\to 1^+}f(x)</m>, <m>\displaystyle\lim_{x\to 1}f(x)</m>, and <m>f(1)</m>
+                </p>
+                <tabular>
+                    <row>
+                        <cell><m>x</m></cell>
+                        <cell><m>0.9</m></cell>
+                        <cell><m>0.99</m></cell>
+                        <cell><m>0.999</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>1.001</m></cell>
+                        <cell><m>1.01</m></cell>
+                        <cell><m>1.1</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f(x)</m></cell>
+                        <cell><m>2.4</m></cell>
+                        <cell><m>2.48</m></cell>
+                        <cell><m>2.4998</m></cell>
+                        <cell><m>9</m></cell>
+                        <cell><m>2.5004</m></cell>
+                        <cell><m>2.52</m></cell>
+                        <cell><m>2.8</m></cell>
+                    </row>
+                </tabular>
+            </statement>
+            <solution>
+                <p>
+                    <em>Estimated:</em>
+                    <ul>
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x\to1^-}f(x) = 2.5</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x\to1^+}f(x) = 2.5</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x\to1}f(x) = 2.5</m>
+                            </p>
+                        </li>
+                    </ul>
+                    <em>Reported:</em> <m>f(1)=9</m>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <em>Requested:</em> <m>\displaystyle\lim_{x\to 8^-}f(x)</m>, <m>\displaystyle\lim_{x\to 8^+}f(x)</m>, <m>\displaystyle\lim_{x\to 8}f(x)</m>, and <m>f(8)</m>
+                </p>
+                <tabular>
+                    <row>
+                        <cell><m>x</m></cell>
+                        <cell><m>7.9</m></cell>
+                        <cell><m>7.99</m></cell>
+                        <cell><m>7.999</m></cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>7.001</m></cell>
+                        <cell><m>7.01</m></cell>
+                        <cell><m>7.1</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f(x)</m></cell>
+                        <cell><m>-1.5</m></cell>
+                        <cell><m>-1.9</m></cell>
+                        <cell><m>-1.999</m></cell>
+                        <cell><m>-2</m></cell>
+                        <cell><m>7.0001</m></cell>
+                        <cell><m>7.2</m></cell>
+                        <cell><m>7.5</m></cell>
+                    </row>
+                </tabular>
+            </statement>
+            <solution>
+                <p>
+                    <em>Estimated:</em>
+                    <ul>
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x\to8^-}f(x) = -2</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x\to8^+}f(x) = 7</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x\to8}f(x)</m> doesn't exist
+                            </p>
+                        </li>
+                    </ul>
+                    <em>Reported:</em> <m>f(8)=-2</m>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <em>Requested:</em> <m>\displaystyle\lim_{x\to \pi^-}f(x)</m>, <m>\displaystyle\lim_{x\to \pi^+}f(x)</m>, <m>\displaystyle\lim_{x\to \pi}f(x)</m>, and <m>f(\pi)</m>
+                </p>
+                <tabular>
+                    <row>
+                        <cell><m>x</m></cell>
+                        <cell><m>3.1</m></cell>
+                        <cell><m>3.14</m></cell>
+                        <cell><m>3.141</m></cell>
+                        <cell><m>\pi</m></cell>
+                        <cell><m>3.142</m></cell>
+                        <cell><m>3.15</m></cell>
+                        <cell><m>3.2</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f(x)</m></cell>
+                        <cell><m>-3</m></cell>
+                        <cell><m>-3</m></cell>
+                        <cell><m>-3</m></cell>
+                        <cell>does not exist</cell>
+                        <cell><m>-3</m></cell>
+                        <cell><m>-3</m></cell>
+                        <cell><m>-3</m></cell>
+                    </row>
+                </tabular>
+            </statement>
+            <solution>
+                <p>
+                    <em>Estimated:</em>
+                    <ul>
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x\to\pi^-}f(x) = -3</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x\to\pi^+}f(x) = -3</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x\to\pi}f(x) = -3</m>
+                            </p>
+                        </li>
+                    </ul>
+                    <em>Reported:</em> <m>f(\pi)</m> does not exist
+                </p>
+            </solution>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the listed requirements, sketch a graph of a function that satisfies each. Afterwards, include a sentence or two justifying you sketch.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <em>Requirements:</em> <m>f(6)=0</m>, <m>\displaystyle\lim_{x\to6 } f(x)=-2</m>, <m>\displaystyle\lim_{x\to-2^-}f(x)=1</m>, and <m>\displaystyle\lim_{x\to -2} f(x)</m> does not exist.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <em>Requirements:</em> <m>\displaystyle\lim_{\omega\to 0 } \rho(\omega)=8</m>, <m>\displaystyle\lim_{\omega\to2 }\rho(\omega)=-2</m>, and <m>\rho(2)</m> does not exist.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <em>Requirements:</em> <m>\displaystyle\lim_{t\to -3^-} q(t)=0</m>, <m>\displaystyle\lim_{t\to-3^+} q(t)=4</m>, <m>\displaystyle\lim_{t\to -1} q(t)=9</m>, and <m>q(-1)=9</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                From the graph of <m>f(x)</m> below, estimate of each of the requested values. Explain each of your choices.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to-2^-}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\lim_{x\to-2^-}f(x)=0</m>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to-2^+}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\lim_{x\to-2^+}f(x)=1</m>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to-2}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\lim_{x\to-2}f(x)</m> doesn't exist, since the left and right sided limits don't match.
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 0^-}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\lim_{x\to 0^-}f(x)=1</m>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 0^+}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\lim_{x\to 0^+}f(x)=1</m>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 0}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\lim_{x\to 0}f(x)=1</m>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 1^-}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\lim_{x\to 1^-}f(x)=1</m>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 1^+}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\lim_{x\to 1^+}f(x)=1</m>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 1}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\lim_{x\to 1}f(x)=1</m>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 2^-}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\lim_{x\to 2^-}f(x)=0</m>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 2^+}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\lim_{x\to 2^+}f(x)=0</m>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 2}f(x)</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\lim_{x\to 2}f(x)=0</m>
+                </p>
+            </solution>
+        </task>
+    </exercise>
+</exercises>
