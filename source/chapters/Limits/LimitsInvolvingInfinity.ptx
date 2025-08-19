@@ -97,6 +97,61 @@
            <m>\left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right)</m> and <m>x=-4</m>
           </p>
         </statement>
+        <solution>
+          <p>
+            Let's first factor the denominator: we want to see the factor <m>(x+4)</m>, where we divide by <m>0</m>.
+            <me>
+              \left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right) = \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right)
+            </me>
+            Now, when <m>x\to 4</m>, we have <m>\left(\dfrac{2x^2-5x+1}{(x+4)^2}\right)\stackrel{?}{\to} \frac{13}{0}</m>. This is our <m>\frac{\#}{0}</m> form that tells us we have an infinite limit. We're going to look at the one-sided limits, but let's notice something:
+            <ul>
+              <li>
+                <p>
+                  For <m>x</m>-values close to <m>4</m>, we expect that the numerator will be close to <m>13</m>. No matter what <q>side</q> of <m>13</m> it is, it's still going to be positive.
+                </p>
+              </li>
+              <li>
+                <p>
+                  For <m>x</m>-values close to <m>4</m>, we expect the denominator to be close to <m>0</m>. Depending on what side of <m>0</m> it is, it could be positive or negative.
+                </p>
+              </li>
+            </ul>
+            So in our one-sided limits, we know that these both will be infinite limits (the function values will either approach <m>-\infty</m> or <m>\infty</m>). The only difference in these is the sign. So let's check the signs!
+          </p>
+          <p>
+            First, we'll consider <m>x\to -4^-</m>. That's <m>x\lt -4</m>. We know the numerator is positive, since it is close to <m>13</m>, and we also know that the factor <m>x+4\lt 0</m>.
+            <md>
+              <mrow>\lim_{x\to-4^-} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) \amp = \lim_{x\to-4^-} \left(\dfrac{\overbrace{2x^2-5x+1}^{\approx 13}}{(\underbrace{x+4}_{\approx 0})^2}\right) </mrow>
+              <mrow> \amp = \dfrac{\oplus}{(\ominus)^2}</mrow>
+              <mrow> \amp = \oplus</mrow>
+            </md>
+            So we know that <m>\displaystyle \lim_{x\to-4^-} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) </m> is an infinite limit, and we know that it is positive. 
+            <me>
+              \lim_{x\to-4^-} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) =\infty
+            </me>
+          </p>
+          <p>
+            Now we can check the signs of these factors when <m>x\to-4^+</m> (and so <m>x\gt-4</m>). The numerator is still close to <m>13</m>, and so still negative. Now, <m>(x+4)</m> is positive, and is still being squared.
+             <md>
+              <mrow>\lim_{x\to-4^+} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) \amp = \lim_{x\to-4^+} \left(\dfrac{\overbrace{2x^2-5x+1}^{\approx 13}}{(\underbrace{x+4}_{\approx 0})^2}\right) </mrow>
+              <mrow> \amp = \dfrac{\oplus}{(\oplus)^2}</mrow>
+              <mrow> \amp = \oplus</mrow>
+            </md>
+          </p>
+          <p>
+            Since this is an infinite limit and is also positive, we know that:
+             <me>
+              \lim_{x\to-4^+} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) =\infty
+            </me>.
+          </p>
+          <p>
+            Since the function approaches <m>\infty</m> on both sides, we can say that 
+            <me>
+              \lim_{x\to-4} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) =\infty
+            </me>,
+            but we know that this limit does not exist (since the function values are not close to a single real number).
+          </p>
+        </solution>
       </task>
       <task>
         <statement>
@@ -104,6 +159,35 @@
             <m>\left(\dfrac{4x^2-x^5}{x^2-4x+3}\right)</m> and <m>x=1</m>
           </p>
         </statement>
+        <solution>
+          <p>
+            We can start this in a similar way: factor the denominator to see the places where we divide by <m>0</m>:
+            <me>
+              \left(\dfrac{4x^2-x^5}{x^2-4x+3}\right) = \left(\dfrac{4x^2-x^5}{(x-3)(x-1)}\right)
+            </me>.
+            Now, when we think about the limit as <m>x\to 1^-</m>, we're thinking about <m>x\lt 1</m>. We can check the signs, again! The numerator has <m>4x^2-x^5 \to 3</m>, and so for <m>x</m>-values slightly smaller than <m>1</m>, this numerator is close to <m>3</m>, and so positive. Similarly, <m>(x-3)\to -2</m>, and so for <m>x</m>-values close to but less than <m>1</m>, this is negative. Then, we can see that <m>(x-1)\to 0</m>. This is the part that gives us the <m>\frac{\#}{0}</m> form. 
+          </p>
+          <p>
+            For <m>x\lt 1</m>, we have <m>(x-1)\lt 0</m>, and so this is negative.
+            <me>
+              \lim_{x\to 1^-}\left(\dfrac{\overbrace{4x^2-x^5}^{\oplus}}{(\underbrace{x-3}_{\ominus})(\underbrace{x-1}_{\ominus})}\right)\to \oplus
+            </me>
+            And so this limit is a positive infinite limit:
+            <me>
+              \lim_{x\to 1^-} \left(\dfrac{4x^2-x^5}{(x-3)(x-1)}\right) = \infty
+            </me>.
+          </p>
+          <p>
+            Now we can similarly check the signs when <m>x\to 1^+</m>, which is when <m>x\gt 1</m>. Note that, since <m>x</m> is still close to <m>1</m>, the numerator and the factor <m>(x-3)</m> will retain their sign. But, for the factor <m>(x-1)</m>, we get <m>(x-1)\gt 0</m>.
+            <me>
+              \lim_{x\to 1^-}\left(\dfrac{\overbrace{4x^2-x^5}^{\oplus}}{(\underbrace{x-3}_{\ominus})(\underbrace{x-1}_{\oplus})}\right)\to \ominus
+            </me>
+            And so this limit is a negative infinite limit:
+            <me>
+              \lim_{x\to 1^+} \left(\dfrac{4x^2-x^5}{(x-3)(x-1)}\right) = -\infty
+            </me>.
+          </p>
+        </solution>
       </task>
       <task>
         <statement>
@@ -111,6 +195,35 @@
             <m>\sec(\theta)</m> and <m>\theta = \dfrac{\pi}{2}</m>
           </p>
         </statement>
+        <solution>
+          <p>
+            We can think of <m>\sec(\theta)</m> as a reciprocal: <m>\dfrac{1}{\cos(\theta)}</m>. Now, we can see that <m>\cos\left(\frac{\pi}{2}\right) = 0</m>, hence this is an infinite limit.
+          </p>
+          <p>
+            Let's visualize <m>\cos\left(\frac{\pi}{2}\right)</m>, so that we can tell the sign of this denominator when <m>\theta</m> is on either side of <m>\frac{\pi}{2}</m>.
+          </p>
+          <figure xml:id="fig-OneSidedCos">
+            <caption></caption>
+            <image source="./Limits/OneSidedCos.png" width="60%">
+              <shortdescription>A unit circle with a point at (0,1) labeled (cos(pi/2),sin(pi/2)). On the right side of the point is a small blue arc labeled theta less than pi/2. On the left side of the point is a small red arc labeled theta greater than pi/2.</shortdescription>
+            </image>
+          </figure>
+          <p>
+            We can see that for <m>\theta\lt\frac{\pi}{2}</m>, we are looking at a point in the first quadrant with a positive horizontal component. So, in this case, <m>\cos(\theta)\gt 0</m>.
+          </p>
+          <p>
+            For the case when <m>\theta\gt\frac{\pi}{2}</m>, though, we are looking in the second quadrant with a negative horizontal component. So we see that <m>\cos(\theta)\lt 0</m>.
+          </p>
+          <p>
+            All of this to say: 
+            <me>
+              \lim_{\theta\to\frac{\pi}{2}^-} \sec(\theta) = \infty
+            </me>
+            <me>
+               \lim_{\theta\to\frac{\pi}{2}^+} \sec(\theta) = -\infty
+            </me>
+          </p>
+        </solution>
       </task>
     </example>
     <p>
@@ -310,7 +423,5 @@
 <!-- <conclusion>
   <xi:include href="./activities/act-MatchingLimits.ptx" />
 </conclusion> -->
-
-
-
+  <xi:include href="./exercises/ex-LimitsInvolvingInfinity.ptx" />
 </section>

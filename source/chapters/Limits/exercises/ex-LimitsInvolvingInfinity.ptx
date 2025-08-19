@@ -1,0 +1,216 @@
+<exercises xml:id="ex-LimitsInvolvingInfinity">
+    <exercise>
+        <introduction>
+            <p>
+                Use the graph of the function <m>f(x)</m> below to determine each limit.
+            </p>
+            <figure xml:id="fig-ex-Infinity1">
+                <caption>The function <m>f(x)</m>.</caption>
+                <image source="./Limits/ex-Infinity1.png" width="70%">
+                    <shortdescription>A rational function with a horizontal asymptote at y=0. At x=-3, the function increases up to a vertical asymptote and then decreases down from it. At x=5, the function increases up to a vertical asymptote and then increases away from it. At x=10 the function decreases towards a vertical asymptote and then decreases away from it.</shortdescription>
+                </image>
+            </figure>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to-3^-} f(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to-3^+} f(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to-3} f(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to5^-} f(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to5^+} f(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to5} f(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to10^-} f(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to10^+} f(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to10} f(x)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Use the graph of the function <m>g(x)</m> below to determine each limit.
+            </p>
+            <figure xml:id="fig-ex-Infinity2">
+                <caption>The function <m>g(x)</m>.</caption>
+                <image source="./Limits/ex-Infinity2.png" width="70%">
+                    <shortdescription>A graph of a function increasing away from a horizontal asymptote at x=-2 towards (0,0), and then decreasing towards a vertical asymptote at x=1. It decreases away from the vertical asymptote at x=1 towards a horizontal asymptote ay y=2.</shortdescription>
+                </image>
+            </figure>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to-\infty}g(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to\infty}g(x)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Use the graph of the function <m>h(x)</m> below to determine each limit.
+            </p>
+            <figure xml:id="fig-ex-Infinity3">
+                <caption>The function <m>h(x)</m>.</caption>
+                <image source="./Limits/ex-Infinity3.png" width="70%">
+                    <shortdescription>A function increases from the bottom left corner of the graph towards an open point at (-1,0). Then it decreases away from a point at (-1,1) towards a horizontal asymptote at y=0.</shortdescription>
+                </image>
+            </figure>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to-\infty}h(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to\infty}h(x)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each limit, fill in the table in a way that determines the limit, and report your answer.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to4^-} \left(\frac{3x}{x-4}\right)</m>
+                </p>
+                <tabular>
+                    <col/>
+                    <row bottom="medium">
+                        <cell halign="center"><m>x</m></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><m>4</m></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>\frac{3x}{x-4}</m></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center">does not exist</cell>
+                    </row>
+                </tabular>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to4^+} \left(\frac{3x}{x-4}\right)</m>
+                </p>
+                <tabular>
+                    <col/>
+                    <row bottom="medium">
+                        <cell halign="center"><m>x</m></cell>
+                        <cell halign="center"><m>4</m></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>\frac{3x}{x-4}</m></cell>
+                        <cell halign="center">does not exist</cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                    </row>
+                </tabular>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 1} \left(\frac{x-3}{(2x-4)(x-1)^2}\right)</m>
+                </p>
+                <tabular>
+                    <row bottom="medium">
+                        <cell halign="center"><m>x</m></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><m>1</m></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>\frac{x-3}{(2x-4)(x-1)^2}</m></cell>   
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center">does not exist</cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>
+                        <cell halign="center"><fillin characters="5" /></cell>                    
+                    </row>
+                </tabular>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
