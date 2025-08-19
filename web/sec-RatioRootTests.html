@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -168,6 +169,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-DefiningALimit" class="internal"><span class="title">Defining a Limit</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-ApproximatingLimits" class="internal"><span class="title">Approximating Limits Using Our New Definition</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#ex-DefinitionOfLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -175,6 +177,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-AddingPrecisionToEstimations" class="internal"><span class="title">Adding Precision to Our Estimations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-LimitProperties" class="internal"><span class="title">Limit Properties</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#ex-EvaluatingLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -182,6 +185,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-FirstIndeterminateForms" class="internal"><span class="title">A First Introduction to Indeterminate Forms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-WhatIfIndeterminateForms" class="internal"><span class="title">What if There Is No Algebra Trick?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#exercises-" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -189,9 +193,16 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits" class="internal"><span class="title">Infinite Limits</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits" class="internal"><span class="title">End Behavior Limits</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#ex-LimitsInvolvingInfinity" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-WeirdFunctionsWeirdBehavior" class="internal"><span class="title">Weird Functions, Weird Behavior</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-SqueezeTheorem" class="internal"><span class="title">Squeeze Theorem</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Continuity.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Continuity and the Intermediate Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -599,42 +610,42 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-RatioRootTests"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">8.8</span><span class="space"> </span><span class="title">The Ratio and Root Tests</span>
 </h2>
-<section class="introduction" id="sec-RatioRootTests-2"><div class="para" id="sec-RatioRootTests-2-1">Introduction, remind that the <a href="sec-ComparisonTests.html#thm-LimitComparisonTest" class="xref" data-knowl="./knowl/xref/thm-LimitComparisonTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.7.7: Limit Comparison Test">Limit Comparison Test</a> is super useful for rational functions and things that act like <a href="sec-CommonSeries.html#def-pSeries" class="xref" data-knowl="./knowl/xref/def-pSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.6.3: p-Series"><span class="process-math">\(p\)</span>-Series</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-RatioRootTests-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-RatioRootTests-2"><div class="para" id="sec-RatioRootTests-2-1">Introduction, remind that the <a href="sec-ComparisonTests.html#thm-LimitComparisonTest" class="xref" data-knowl="./knowl/xref/thm-LimitComparisonTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.7.7: Limit Comparison Test">Limit Comparison Test</a> is super useful for rational functions and things that act like <a href="sec-CommonSeries.html#def-pSeries" class="xref" data-knowl="./knowl/xref/def-pSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.6.3: p-Series"><span class="process-math">\(p\)</span>-Series</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-RatioRootTests-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsec-EventuallyGeometricish"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Eventually Geometric-ish</span>
 </h3>
-<div class="para" id="subsec-EventuallyGeometricish-2">We’ll look at series that act like geometric series, but first let’s remind us what Geometric Series act like.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EventuallyGeometricish-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-EventuallyGeometricish-2">We’ll look at series that act like geometric series, but first let’s remind us what Geometric Series act like.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EventuallyGeometricish-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-ReminderGeometric"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.8.1</span><span class="period">.</span><span class="space"> </span><span class="title">Reminder about Geometric Series.</span>
 </h4>
 <div class="introduction" id="act-ReminderGeometric-2">
-<div class="para" id="act-ReminderGeometric-2-1">We are going to build some convergence tests that try to link some infinite series to the family of geometric series and show that even though a series is <em class="emphasis">not</em> geometric, it might act enough like one to be considered "eventually geometric-ish."<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-ReminderGeometric-2-1">We are going to build some convergence tests that try to link some infinite series to the family of geometric series and show that even though a series is <em class="emphasis">not</em> geometric, it might act enough like one to be considered "eventually geometric-ish."<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-ReminderGeometric-2-2">But first, what does it mean for a series to be a geometric series?<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-ReminderGeometric-2-2">But first, what does it mean for a series to be a geometric series?<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="act-ReminderGeometric-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-ReminderGeometric-3-1-1">Describe a defining characteristic of a geometric series. What makes it geometric?<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-ReminderGeometric-3-1-1">Describe a defining characteristic of a geometric series. What makes it geometric?<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 8.8.1.a"><a href="#act-ReminderGeometric-3" title="Copy heading and permalink for Task 8.8.1.a" aria-label="Copy heading and permalink for Task 8.8.1.a">🔗</a></div></article><article class="task exercise-like" id="act-ReminderGeometric-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-ReminderGeometric-4-1-1">Can you describe this characteristic in another way? For instance, if you described a geometric series using a characteristic about the <a href="sec-IntroSequences.html#def-ExplicitFormula" class="xref" data-knowl="./knowl/xref/def-ExplicitFormula.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.1.1: Explicit Formula">Explicit Formula</a>, can you describe the same characteristic in the context of the <a href="sec-IntroSequences.html#def-RecursionRelation" class="xref" data-knowl="./knowl/xref/def-RecursionRelation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.1.2: Recursion Relation">Recursion Relation</a> instead? Or vice versa?<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 8.8.1.a"><a href="#act-ReminderGeometric-3" title="Copy heading and permalink for Task 8.8.1.a">🔗</a></div></article><article class="task exercise-like" id="act-ReminderGeometric-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-ReminderGeometric-4-1-1">Can you describe this characteristic in another way? For instance, if you described a geometric series using a characteristic about the <a href="sec-IntroSequences.html#def-ExplicitFormula" class="xref" data-knowl="./knowl/xref/def-ExplicitFormula.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.1.1: Explicit Formula">Explicit Formula</a>, can you describe the same characteristic in the context of the <a href="sec-IntroSequences.html#def-RecursionRelation" class="xref" data-knowl="./knowl/xref/def-RecursionRelation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.1.2: Recursion Relation">Recursion Relation</a> instead? Or vice versa?<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="act-ReminderGeometric-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-ReminderGeometric-4-2-1">What kinds of functions do we see in the formula for the terms of a geometric series?<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-ReminderGeometric-4-2-1">What kinds of functions do we see in the formula for the terms of a geometric series?<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 8.8.1.b.1"><a href="#act-ReminderGeometric-4-2" title="Copy heading and permalink for Hint 8.8.1.b.1" aria-label="Copy heading and permalink for Hint 8.8.1.b.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 8.8.1.b.1"><a href="#act-ReminderGeometric-4-2" title="Copy heading and permalink for Hint 8.8.1.b.1">🔗</a></div>
 </div></details><details id="act-ReminderGeometric-4-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-ReminderGeometric-4-3-1">How do you describe how you might get from one term in a geometric series to the next one?<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-ReminderGeometric-4-3-1">How do you describe how you might get from one term in a geometric series to the next one?<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-4-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 8.8.1.b.2"><a href="#act-ReminderGeometric-4-3" title="Copy heading and permalink for Hint 8.8.1.b.2" aria-label="Copy heading and permalink for Hint 8.8.1.b.2">🔗</a></div>
+<div class="autopermalink" data-description="Hint 8.8.1.b.2"><a href="#act-ReminderGeometric-4-3" title="Copy heading and permalink for Hint 8.8.1.b.2">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Task 8.8.1.b"><a href="#act-ReminderGeometric-4" title="Copy heading and permalink for Task 8.8.1.b" aria-label="Copy heading and permalink for Task 8.8.1.b">🔗</a></div></article><article class="task exercise-like" id="act-ReminderGeometric-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="act-ReminderGeometric-5-1-1">Write out a generalized and simplified form of the term <span class="process-math">\(a_k\)</span> of a geometric series explicitly and recursively. In each case, solve for <span class="process-math">\(r\text{,}\)</span> the ratio between terms.<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 8.8.1.b"><a href="#act-ReminderGeometric-4" title="Copy heading and permalink for Task 8.8.1.b">🔗</a></div></article><article class="task exercise-like" id="act-ReminderGeometric-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-ReminderGeometric-5-1-1">Write out a generalized and simplified form of the term <span class="process-math">\(a_k\)</span> of a geometric series explicitly and recursively. In each case, solve for <span class="process-math">\(r\text{,}\)</span> the ratio between terms.<div class="autopermalink" data-description="Paragraph"><a href="#act-ReminderGeometric-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 8.8.1.c"><a href="#act-ReminderGeometric-5" title="Copy heading and permalink for Task 8.8.1.c" aria-label="Copy heading and permalink for Task 8.8.1.c">🔗</a></div></article><div class="autopermalink" data-description="Activity 8.8.1: Reminder about Geometric Series"><a href="#act-ReminderGeometric" title="Copy heading and permalink for Activity 8.8.1: Reminder about Geometric Series" aria-label="Copy heading and permalink for Activity 8.8.1: Reminder about Geometric Series">🔗</a></div></article><article class="theorem theorem-like" id="thm-RootTest"><h4 class="heading">
+<div class="autopermalink" data-description="Task 8.8.1.c"><a href="#act-ReminderGeometric-5" title="Copy heading and permalink for Task 8.8.1.c">🔗</a></div></article><div class="autopermalink" data-description="Activity 8.8.1: Reminder about Geometric Series"><a href="#act-ReminderGeometric" title="Copy heading and permalink for Activity 8.8.1: Reminder about Geometric Series">🔗</a></div></article><article class="theorem theorem-like" id="thm-RootTest"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.8.1</span><span class="period">.</span><span class="space"> </span><span class="title">Root Test.</span>
 </h4>
 <div class="para logical" id="thm-RootTest-2-1">
@@ -642,24 +653,24 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <ul class="disc" id="thm-RootTest-2-1-5">
 <li id="thm-RootTest-2-1-5-1">
-<div class="para" id="thm-RootTest-2-1-5-1-1">If there is some real number <span class="process-math">\(r\)</span> with <span class="process-math">\(r=\lim_{k\to\infty} \sqrt[k]{a_k}\)</span> and <span class="process-math">\(0\leq r \lt 1\text{,}\)</span> then the series <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RootTest-2-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm-RootTest-2-1-5-1-1">If there is some real number <span class="process-math">\(r\)</span> with <span class="process-math">\(r=\lim_{k\to\infty} \sqrt[k]{a_k}\)</span> and <span class="process-math">\(0\leq r \lt 1\text{,}\)</span> then the series <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RootTest-2-1-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#thm-RootTest-2-1-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#thm-RootTest-2-1-5-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="thm-RootTest-2-1-5-2">
-<div class="para" id="thm-RootTest-2-1-5-2-1">If there is some real number <span class="process-math">\(r\)</span> with <span class="process-math">\(r=\lim_{k\to\infty} \sqrt[k]{a_k}\)</span> and <span class="process-math">\(r\gt\)</span> or if <span class="process-math">\(\lim_{k\to\infty} \sqrt[k]{a_k}\)</span> does not exist, then the series <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RootTest-2-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm-RootTest-2-1-5-2-1">If there is some real number <span class="process-math">\(r\)</span> with <span class="process-math">\(r=\lim_{k\to\infty} \sqrt[k]{a_k}\)</span> and <span class="process-math">\(r\gt\)</span> or if <span class="process-math">\(\lim_{k\to\infty} \sqrt[k]{a_k}\)</span> does not exist, then the series <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RootTest-2-1-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#thm-RootTest-2-1-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#thm-RootTest-2-1-5-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="thm-RootTest-2-1-5-3">
-<div class="para" id="thm-RootTest-2-1-5-3-1">If <span class="process-math">\(\lim_{k\to\infty} \sqrt[k]{a_k}=1\)</span> then the Root Test fails and is inconclusive.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RootTest-2-1-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm-RootTest-2-1-5-3-1">If <span class="process-math">\(\lim_{k\to\infty} \sqrt[k]{a_k}=1\)</span> then the Root Test fails and is inconclusive.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RootTest-2-1-5-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#thm-RootTest-2-1-5-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#thm-RootTest-2-1-5-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-RootTest-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-RootTest-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 8.8.1: Root Test"><a href="#thm-RootTest" title="Copy heading and permalink for Theorem 8.8.1: Root Test" aria-label="Copy heading and permalink for Theorem 8.8.1: Root Test">🔗</a></div></article><article class="theorem theorem-like" id="thm-RatioTest"><h4 class="heading">
+<div class="autopermalink" data-description="Theorem 8.8.1: Root Test"><a href="#thm-RootTest" title="Copy heading and permalink for Theorem 8.8.1: Root Test">🔗</a></div></article><article class="theorem theorem-like" id="thm-RatioTest"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">8.8.2</span><span class="period">.</span><span class="space"> </span><span class="title">Ratio Test.</span>
 </h4>
 <div class="para logical" id="thm-RatioTest-2-1">
@@ -667,24 +678,24 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <ul class="disc" id="thm-RatioTest-2-1-5">
 <li id="thm-RatioTest-2-1-5-1">
-<div class="para" id="thm-RatioTest-2-1-5-1-1">If there is some real number <span class="process-math">\(r\)</span> with <span class="process-math">\(r=\lim_{k\to\infty} \frac{a_{k+1}}{a_k}\)</span> and <span class="process-math">\(0\leq r \lt 1\text{,}\)</span> then the series <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RatioTest-2-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm-RatioTest-2-1-5-1-1">If there is some real number <span class="process-math">\(r\)</span> with <span class="process-math">\(r=\lim_{k\to\infty} \frac{a_{k+1}}{a_k}\)</span> and <span class="process-math">\(0\leq r \lt 1\text{,}\)</span> then the series <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RatioTest-2-1-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#thm-RatioTest-2-1-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#thm-RatioTest-2-1-5-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="thm-RatioTest-2-1-5-2">
-<div class="para" id="thm-RatioTest-2-1-5-2-1">If there is some real number <span class="process-math">\(r\)</span> with <span class="process-math">\(r=\lim_{k\to\infty} \frac{a_{k+1}}{a_k}\)</span> and <span class="process-math">\(r\gt\)</span> or if <span class="process-math">\(\lim_{k\to\infty} \frac{a_{k+1}}{a_k}\)</span> does not exist, then the series <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RatioTest-2-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm-RatioTest-2-1-5-2-1">If there is some real number <span class="process-math">\(r\)</span> with <span class="process-math">\(r=\lim_{k\to\infty} \frac{a_{k+1}}{a_k}\)</span> and <span class="process-math">\(r\gt\)</span> or if <span class="process-math">\(\lim_{k\to\infty} \frac{a_{k+1}}{a_k}\)</span> does not exist, then the series <span class="process-math">\(\sum_{k=0}^\infty a_k\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RatioTest-2-1-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#thm-RatioTest-2-1-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#thm-RatioTest-2-1-5-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="thm-RatioTest-2-1-5-3">
-<div class="para" id="thm-RatioTest-2-1-5-3-1">If <span class="process-math">\(\lim_{k\to\infty} \frac{a_{k+1}}{a_k}=1\)</span> then the Root Test fails and is inconclusive.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RatioTest-2-1-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm-RatioTest-2-1-5-3-1">If <span class="process-math">\(\lim_{k\to\infty} \frac{a_{k+1}}{a_k}=1\)</span> then the Root Test fails and is inconclusive.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RatioTest-2-1-5-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#thm-RatioTest-2-1-5-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#thm-RatioTest-2-1-5-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-RatioTest-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-RatioTest-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 8.8.2: Ratio Test"><a href="#thm-RatioTest" title="Copy heading and permalink for Theorem 8.8.2: Ratio Test" aria-label="Copy heading and permalink for Theorem 8.8.2: Ratio Test">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Eventually Geometric-ish"><a href="#subsec-EventuallyGeometricish" title="Copy heading and permalink for Subsection: Eventually Geometric-ish" aria-label="Copy heading and permalink for Subsection: Eventually Geometric-ish">🔗</a></div></section><div class="autopermalink" data-description="Section 8.8: The Ratio and Root Tests"><a href="#sec-RatioRootTests" title="Copy heading and permalink for Section 8.8: The Ratio and Root Tests" aria-label="Copy heading and permalink for Section 8.8: The Ratio and Root Tests">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Theorem 8.8.2: Ratio Test"><a href="#thm-RatioTest" title="Copy heading and permalink for Theorem 8.8.2: Ratio Test">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Eventually Geometric-ish"><a href="#subsec-EventuallyGeometricish" title="Copy heading and permalink for Subsection: Eventually Geometric-ish">🔗</a></div></section><div class="autopermalink" data-description="Section 8.8: The Ratio and Root Tests"><a href="#sec-RatioRootTests" title="Copy heading and permalink for Section 8.8: The Ratio and Root Tests">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-ComparisonTests.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-PowerSeries.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -168,6 +169,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-DefiningALimit" class="internal"><span class="title">Defining a Limit</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-ApproximatingLimits" class="internal"><span class="title">Approximating Limits Using Our New Definition</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#ex-DefinitionOfLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -175,6 +177,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-AddingPrecisionToEstimations" class="internal"><span class="title">Adding Precision to Our Estimations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-LimitProperties" class="internal"><span class="title">Limit Properties</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#ex-EvaluatingLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -182,6 +185,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-FirstIndeterminateForms" class="internal"><span class="title">A First Introduction to Indeterminate Forms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-WhatIfIndeterminateForms" class="internal"><span class="title">What if There Is No Algebra Trick?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#exercises-" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -189,9 +193,16 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits" class="internal"><span class="title">Infinite Limits</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits" class="internal"><span class="title">End Behavior Limits</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#ex-LimitsInvolvingInfinity" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-WeirdFunctionsWeirdBehavior" class="internal"><span class="title">Weird Functions, Weird Behavior</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-SqueezeTheorem" class="internal"><span class="title">Squeeze Theorem</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Continuity.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Continuity and the Intermediate Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -599,15 +610,15 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-LHopitalsRule"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">4.7</span><span class="space"> </span><span class="title">L’Hôpital’s Rule</span>
 </h2>
-<section class="introduction" id="sec-LHopitalsRule-2"><div class="para" id="sec-LHopitalsRule-2-1">We’re going to re-visit limits, but with a slightly new problem-solving tool. Specifically, we’ll be thinking about Indeterminate Forms. We noticed, back in <a href="sec-IndeterminateForms.html" class="internal" title="Section 1.3: First Indeterminate Forms">Section 1.3</a>, that we could evaluate limits for indeterminate forms by swapping out the function with another function that was mostly equivalent, only differing at the <span class="process-math">\(x\)</span>-value we were approaching in the limit (<a href="sec-IndeterminateForms.html#thm-SlightlyDifferentFunctions" class="xref" data-knowl="./knowl/xref/thm-SlightlyDifferentFunctions.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.3.3: Limits of (Slightly) Different Functions">Theorem 1.3.3 Limits of (Slightly) Different Functions</a>).<div class="autopermalink" data-description="Paragraph"><a href="#sec-LHopitalsRule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-LHopitalsRule-2"><div class="para" id="sec-LHopitalsRule-2-1">We’re going to re-visit limits, but with a slightly new problem-solving tool. Specifically, we’ll be thinking about Indeterminate Forms. We noticed, back in <a href="sec-IndeterminateForms.html" class="internal" title="Section 1.3: First Indeterminate Forms">Section 1.3</a>, that we could evaluate limits for indeterminate forms by swapping out the function with another function that was mostly equivalent, only differing at the <span class="process-math">\(x\)</span>-value we were approaching in the limit (<a href="sec-IndeterminateForms.html#thm-SlightlyDifferentFunctions" class="xref" data-knowl="./knowl/xref/thm-SlightlyDifferentFunctions.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.3.3: Limits of (Slightly) Different Functions">Theorem 1.3.3 Limits of (Slightly) Different Functions</a>).<div class="autopermalink" data-description="Paragraph"><a href="#sec-LHopitalsRule-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-LHopitalsRule-2-2">We ended that section by thinking about a limit where this was difficult, in <a href="sec-IndeterminateForms.html#act-SinXOverX" class="xref" data-knowl="./knowl/xref/act-SinXOverX.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.3.3">Activity 1.3.3</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-LHopitalsRule-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-LHopitalsRule-2-2">We ended that section by thinking about a limit where this was difficult, in <a href="sec-IndeterminateForms.html#act-SinXOverX" class="xref" data-knowl="./knowl/xref/act-SinXOverX.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.3.3">Activity 1.3.3</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-LHopitalsRule-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-LHopitalsRule-2-3">We’re now going to build a more systematic (and helpful) way of thinking about these limits using the ideas of Linear Approximation!<div class="autopermalink" data-description="Paragraph"><a href="#sec-LHopitalsRule-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-LHopitalsRule-2-3">We’re now going to build a more systematic (and helpful) way of thinking about these limits using the ideas of Linear Approximation!<div class="autopermalink" data-description="Paragraph"><a href="#sec-LHopitalsRule-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsec-IndeterminateForms"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Indeterminate Forms</span>
 </h3>
-<div class="para" id="subsec-IndeterminateForms-2">We have given a preliminary definition of Indeterminate Forms already (<a href="sec-IndeterminateForms.html#def-IndeterminateForm" class="xref" data-knowl="./knowl/xref/def-IndeterminateForm.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.3.4: Indeterminate Form">Definition 1.3.4</a>), but let’s remember how these work.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-IndeterminateForms-2">We have given a preliminary definition of Indeterminate Forms already (<a href="sec-IndeterminateForms.html#def-IndeterminateForm" class="xref" data-knowl="./knowl/xref/def-IndeterminateForm.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.3.4: Indeterminate Form">Definition 1.3.4</a>), but let’s remember how these work.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-IndeterminateForms-3">
 <div class="para">We said that <span class="process-math">\(\frac{0}{0}\)</span> is an indeterminate form, since a limit whose numerator and denominator approach 0 can end up taking on different values or even not exist. For instance, we can notice that the definition of the <a href="sec-IntroDerivatives.html#def-DerivativeAtPoint" class="xref" data-knowl="./knowl/xref/def-DerivativeAtPoint.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.1: Derivative at a Point">Derivative at a Point</a> is a limit with this indeterminate form. As long as <span class="process-math">\(f(x)\)</span> is continuous (a necessity of it being differentiable) at <span class="process-math">\(x=a\text{,}\)</span> then:</div>
@@ -618,9 +629,9 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">But we have seen so many different values that this limit can end up being! We have spent most of the past two chapters in this text playing with derivatives and evaluating them: all of those values come from this limit! We have also seen that, even for continuous functions, this limit may not exist. A function can be non-differentiable at <span class="process-math">\(x=a\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-IndeterminateForms-4">We can show the same thing for a second indeterminate form: <span class="process-math">\(\frac{\pm\infty}{\pm\infty}\text{,}\)</span> which we will simplify by just using the symbol <span class="process-math">\(\frac{\infty}{\infty}\text{.}\)</span> For us to see that limits with this form can take on different values (or not exist), we just need to think about end behavior limits for rational functions (<a href="sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits" class="internal" title="Subsection: End Behavior Limits">Subsection </a>).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-IndeterminateForms-4">We can show the same thing for a second indeterminate form: <span class="process-math">\(\frac{\pm\infty}{\pm\infty}\text{,}\)</span> which we will simplify by just using the symbol <span class="process-math">\(\frac{\infty}{\infty}\text{.}\)</span> For us to see that limits with this form can take on different values (or not exist), we just need to think about end behavior limits for rational functions (<a href="sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits" class="internal" title="Subsection: End Behavior Limits">Subsection </a>).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-IndeterminateForms-5">
 <div class="para">Let’s think about the following limit:</div>
@@ -630,38 +641,38 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">As long as <span class="process-math">\(m,n\gt 0\text{,}\)</span> then this limit looks like it’s in the form of <span class="process-math">\(\frac{\infty}{\infty}\text{.}\)</span> Sure, the denominator is really approaching <span class="process-math">\(-\infty\text{,}\)</span> but we really just mean that there is an infinite numerator and an infinite denominator, regardless of sign.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-IndeterminateForms-6">
 <div class="para">We also know that the actual limit depends on the degrees <span class="process-math">\(m\)</span> and <span class="process-math">\(n\text{!}\)</span> Try to spend a couple of minutes confirming the next few claims:</div>
 <ul class="disc" id="subsec-IndeterminateForms-6-3">
 <li id="subsec-IndeterminateForms-6-3-1">
-<div class="para" id="subsec-IndeterminateForms-6-3-1-1">If <span class="process-math">\(m\lt n\text{,}\)</span> then this limit is <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-IndeterminateForms-6-3-1-1">If <span class="process-math">\(m\lt n\text{,}\)</span> then this limit is <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-6-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-IndeterminateForms-6-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-IndeterminateForms-6-3-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-IndeterminateForms-6-3-2">
-<div class="para" id="subsec-IndeterminateForms-6-3-2-1">If <span class="process-math">\(m=n\text{,}\)</span> then this limit is <span class="process-math">\(-\frac{2}{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-IndeterminateForms-6-3-2-1">If <span class="process-math">\(m=n\text{,}\)</span> then this limit is <span class="process-math">\(-\frac{2}{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-6-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-IndeterminateForms-6-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-IndeterminateForms-6-3-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-IndeterminateForms-6-3-3">
-<div class="para" id="subsec-IndeterminateForms-6-3-3-1">If <span class="process-math">\(m\gt n\text{,}\)</span> then this limit doesn’t exist.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-6-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-IndeterminateForms-6-3-3-1">If <span class="process-math">\(m\gt n\text{,}\)</span> then this limit doesn’t exist.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-6-3-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-IndeterminateForms-6-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-IndeterminateForms-6-3-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">All of this to show us that we have some forms of limits where we can’t immediately tell what the actual value of the limit is (or if it even exists). L’Hôpital’s Rule will be a way for us to navigate these limits a little easier than before, in some cases.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IndeterminateForms-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Indeterminate Forms"><a href="#subsec-IndeterminateForms" title="Copy heading and permalink for Subsection: Indeterminate Forms" aria-label="Copy heading and permalink for Subsection: Indeterminate Forms">🔗</a></div></section><section class="subsection" id="subsec-LHopitalsRule"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection: Indeterminate Forms"><a href="#subsec-IndeterminateForms" title="Copy heading and permalink for Subsection: Indeterminate Forms">🔗</a></div></section><section class="subsection" id="subsec-LHopitalsRule"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">L’Hôpital’s Rule</span>
 </h3>
 <article class="activity project-like" id="act-LHopitalsRule"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.7.1</span><span class="period">.</span><span class="space"> </span><span class="title">Building L’Hôpital’s Rule.</span>
 </h4>
 <div class="introduction" id="act-LHopitalsRule-2">
-<div class="para" id="act-LHopitalsRule-2-1">We’re going to take a closer look at the indeterminate form, <span class="process-math">\(\frac{0}{0}\text{,}\)</span> and use our new ideas of linear approximation to think about how these types of things work.<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-LHopitalsRule-2-1">We’re going to take a closer look at the indeterminate form, <span class="process-math">\(\frac{0}{0}\text{,}\)</span> and use our new ideas of linear approximation to think about how these types of things work.<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="act-LHopitalsRule-2-2">
 <div class="para">We’re going to be working with the following limit:</div>
@@ -671,26 +682,26 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are differentiable at <span class="process-math">\(x=a\)</span> (since we’re going to want to build linear approximations of them).</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="act-LHopitalsRule-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-LHopitalsRule-3-1-1">Write out the linear approximations for both <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{,}\)</span> both centered at <span class="process-math">\(x=a\text{.}\)</span> We’ll call them <span class="process-math">\(L_f(x)\)</span> and <span class="process-math">\(L_g(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-LHopitalsRule-3-1-1">Write out the linear approximations for both <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{,}\)</span> both centered at <span class="process-math">\(x=a\text{.}\)</span> We’ll call them <span class="process-math">\(L_f(x)\)</span> and <span class="process-math">\(L_g(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="act-LHopitalsRule-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-LHopitalsRule-3-2-1">We’re just using the formula for <a href="sec-LinearApproximation.html#def-LinearApproximation" class="xref" data-knowl="./knowl/xref/def-LinearApproximation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 4.6.1: Linear Approximation of a Function">Linear Approximation of a Function</a>, but with <span class="process-math">\(f(x)\)</span> for one of them and <span class="process-math">\(g(x)\)</span> in the other.<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-LHopitalsRule-3-2-1">We’re just using the formula for <a href="sec-LinearApproximation.html#def-LinearApproximation" class="xref" data-knowl="./knowl/xref/def-LinearApproximation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 4.6.1: Linear Approximation of a Function">Linear Approximation of a Function</a>, but with <span class="process-math">\(f(x)\)</span> for one of them and <span class="process-math">\(g(x)\)</span> in the other.<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 4.7.1.a.1"><a href="#act-LHopitalsRule-3-2" title="Copy heading and permalink for Hint 4.7.1.a.1" aria-label="Copy heading and permalink for Hint 4.7.1.a.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 4.7.1.a.1"><a href="#act-LHopitalsRule-3-2" title="Copy heading and permalink for Hint 4.7.1.a.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 4.7.1.a"><a href="#act-LHopitalsRule-3" title="Copy heading and permalink for Task 4.7.1.a" aria-label="Copy heading and permalink for Task 4.7.1.a">🔗</a></div></article><article class="task exercise-like" id="act-LHopitalsRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-LHopitalsRule-4-1-1">Describe how well or how poorly these linear approximations estimate the values from our functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{?}\)</span> What happens to these approximations as we get close to the center <span class="process-math">\(x=a\text{?}\)</span> What happens in the limit as <span class="process-math">\(x\to a\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.7.1.a"><a href="#act-LHopitalsRule-3" title="Copy heading and permalink for Task 4.7.1.a">🔗</a></div></article><article class="task exercise-like" id="act-LHopitalsRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-LHopitalsRule-4-1-1">Describe how well or how poorly these linear approximations estimate the values from our functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{?}\)</span> What happens to these approximations as we get close to the center <span class="process-math">\(x=a\text{?}\)</span> What happens in the limit as <span class="process-math">\(x\to a\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="act-LHopitalsRule-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-LHopitalsRule-4-2-1">You can revisit the local linearity visualization from <a href="sec-LinearApproximation.html" class="internal" title="Section 4.6: Linear Approximations">Section 4.6</a> to see what happens, in general, with a linear approximation of a function as we zoom in on the center.<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-LHopitalsRule-4-2-1">You can revisit the local linearity visualization from <a href="sec-LinearApproximation.html" class="internal" title="Section 4.6: Linear Approximations">Section 4.6</a> to see what happens, in general, with a linear approximation of a function as we zoom in on the center.<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 4.7.1.b.1"><a href="#act-LHopitalsRule-4-2" title="Copy heading and permalink for Hint 4.7.1.b.1" aria-label="Copy heading and permalink for Hint 4.7.1.b.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 4.7.1.b.1"><a href="#act-LHopitalsRule-4-2" title="Copy heading and permalink for Hint 4.7.1.b.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 4.7.1.b"><a href="#act-LHopitalsRule-4" title="Copy heading and permalink for Task 4.7.1.b" aria-label="Copy heading and permalink for Task 4.7.1.b">🔗</a></div></article><article class="task exercise-like" id="act-LHopitalsRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" data-description="Task 4.7.1.b"><a href="#act-LHopitalsRule-4" title="Copy heading and permalink for Task 4.7.1.b">🔗</a></div></article><article class="task exercise-like" id="act-LHopitalsRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para logical" id="act-LHopitalsRule-5-1-1">
 <div class="para">Let’s re-write our limit. We can replace <span class="process-math">\(f(x)\)</span> with our formula for its linear approximation, <span class="process-math">\(L_f(x)\)</span> and replace <span class="process-math">\(g(x)\)</span> with its linear approximation, <span class="process-math">\(L_g(x)\text{:}\)</span>
 </div>
@@ -699,20 +710,20 @@ eBookConfig.enable_chatcodes =  false;
 \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \left(\frac{\fillinmath{XXXXXXXXXXXXXXX}}{\fillinmath{XXXXXXXXXXXXXXX}}\right)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.7.1.c"><a href="#act-LHopitalsRule-5" title="Copy heading and permalink for Task 4.7.1.c" aria-label="Copy heading and permalink for Task 4.7.1.c">🔗</a></div></article><article class="task exercise-like" id="act-LHopitalsRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-LHopitalsRule-6-1-1">Up until now, we have not thought about indeterminate forms at all. Let’s start now.<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="act-LHopitalsRule-6-1-2">If this limit is a <span class="process-math">\(\frac{0}{0}\)</span> indeterminate form, then that means that <span class="process-math">\(\displaystyle \lim_{x\to a} f(x) = 0\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to a} g(x) = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="act-LHopitalsRule-6-1-3">Since our functions are, by definition, differentiable at <span class="process-math">\(x=a\text{,}\)</span> then they also have to be continuous at <span class="process-math">\(x=a\text{.}\)</span> What does this mean about the values of <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(g(a)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-6-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.7.1.c"><a href="#act-LHopitalsRule-5" title="Copy heading and permalink for Task 4.7.1.c">🔗</a></div></article><article class="task exercise-like" id="act-LHopitalsRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-LHopitalsRule-6-1-1">Up until now, we have not thought about indeterminate forms at all. Let’s start now.<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="act-LHopitalsRule-6-1-2">If this limit is a <span class="process-math">\(\frac{0}{0}\)</span> indeterminate form, then that means that <span class="process-math">\(\displaystyle \lim_{x\to a} f(x) = 0\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to a} g(x) = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-6-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="act-LHopitalsRule-6-1-3">Since our functions are, by definition, differentiable at <span class="process-math">\(x=a\text{,}\)</span> then they also have to be continuous at <span class="process-math">\(x=a\text{.}\)</span> What does this mean about the values of <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(g(a)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-6-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="act-LHopitalsRule-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-LHopitalsRule-6-2-1">Take a look back at our definition of function being <a href="sec-Continuity.html#def-ContinuousAtPoint" class="xref" data-knowl="./knowl/xref/def-ContinuousAtPoint.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.6.1: Continuous at a Point">Continuous at a Point</a>. How does the function value relate to the limit? What does that mean in our case?<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-LHopitalsRule-6-2-1">Take a look back at our definition of function being <a href="sec-Continuity.html#def-ContinuousAtPoint" class="xref" data-knowl="./knowl/xref/def-ContinuousAtPoint.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.6.1: Continuous at a Point">Continuous at a Point</a>. How does the function value relate to the limit? What does that mean in our case?<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 4.7.1.d.1"><a href="#act-LHopitalsRule-6-2" title="Copy heading and permalink for Hint 4.7.1.d.1" aria-label="Copy heading and permalink for Hint 4.7.1.d.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 4.7.1.d.1"><a href="#act-LHopitalsRule-6-2" title="Copy heading and permalink for Hint 4.7.1.d.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 4.7.1.d"><a href="#act-LHopitalsRule-6" title="Copy heading and permalink for Task 4.7.1.d" aria-label="Copy heading and permalink for Task 4.7.1.d">🔗</a></div></article><article class="task exercise-like" id="act-LHopitalsRule-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="act-LHopitalsRule-7-1-1">Use this new information about the values of <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(g(a)\)</span> to revisit the limit. We re-wrote <span class="process-math">\(\displaystyle \lim_{x\to a} \frac{f(x)}{g(x)}\)</span> by replacing each function with its linear approximation. What happens with the algebra when we know this information about <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(g(a)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.7.1.d"><a href="#act-LHopitalsRule-6" title="Copy heading and permalink for Task 4.7.1.d">🔗</a></div></article><article class="task exercise-like" id="act-LHopitalsRule-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-LHopitalsRule-7-1-1">Use this new information about the values of <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(g(a)\)</span> to revisit the limit. We re-wrote <span class="process-math">\(\displaystyle \lim_{x\to a} \frac{f(x)}{g(x)}\)</span> by replacing each function with its linear approximation. What happens with the algebra when we know this information about <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(g(a)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="act-LHopitalsRule-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para logical" id="act-LHopitalsRule-7-2-1">
@@ -724,17 +735,17 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">and also know that in this case (due to the <span class="process-math">\(\frac{0}{0}\)</span> indeterminate form) that <span class="process-math">\(f(a)=0\)</span> and <span class="process-math">\(g(a)=0\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-7-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 4.7.1.e.1"><a href="#act-LHopitalsRule-7-2" title="Copy heading and permalink for Hint 4.7.1.e.1" aria-label="Copy heading and permalink for Hint 4.7.1.e.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 4.7.1.e.1"><a href="#act-LHopitalsRule-7-2" title="Copy heading and permalink for Hint 4.7.1.e.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 4.7.1.e"><a href="#act-LHopitalsRule-7" title="Copy heading and permalink for Task 4.7.1.e" aria-label="Copy heading and permalink for Task 4.7.1.e">🔗</a></div></article><div class="conclusion" id="act-LHopitalsRule-8">
-<div class="para" id="act-LHopitalsRule-8-1">So we have a really nice result here! In the <span class="process-math">\(\frac{0}{0}\)</span> indeterminate form, we can replace the ratio of the <span class="process-math">\(y\)</span>-values from our functions with the ratio of slopes (coming from the first derivatives) of our functions.<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.7.1.e"><a href="#act-LHopitalsRule-7" title="Copy heading and permalink for Task 4.7.1.e">🔗</a></div></article><div class="conclusion" id="act-LHopitalsRule-8">
+<div class="para" id="act-LHopitalsRule-8-1">So we have a really nice result here! In the <span class="process-math">\(\frac{0}{0}\)</span> indeterminate form, we can replace the ratio of the <span class="process-math">\(y\)</span>-values from our functions with the ratio of slopes (coming from the first derivatives) of our functions.<div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-8-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-LHopitalsRule-8-2">In general, we’ll put a step in between, where we find <span class="process-math">\(f'(x)\)</span> and <span class="process-math">\(g'(x)\)</span> first before trying to evaluate these derivatives at <span class="process-math">\(x=a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-LHopitalsRule-8-2">In general, we’ll put a step in between, where we find <span class="process-math">\(f'(x)\)</span> and <span class="process-math">\(g'(x)\)</span> first before trying to evaluate these derivatives at <span class="process-math">\(x=a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LHopitalsRule-8-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<div class="autopermalink" data-description="Activity 4.7.1: Building L’Hôpital’s Rule"><a href="#act-LHopitalsRule" title="Copy heading and permalink for Activity 4.7.1: Building L’Hôpital’s Rule" aria-label="Copy heading and permalink for Activity 4.7.1: Building L’Hôpital’s Rule">🔗</a></div></article><article class="theorem theorem-like" id="thm-LHopitalsRule"><h4 class="heading">
+<div class="autopermalink" data-description="Activity 4.7.1: Building L’Hôpital’s Rule"><a href="#act-LHopitalsRule" title="Copy heading and permalink for Activity 4.7.1: Building L’Hôpital’s Rule">🔗</a></div></article><article class="theorem theorem-like" id="thm-LHopitalsRule"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.7.1</span><span class="period">.</span><span class="space"> </span><span class="title">L’Hôpital’s Rule.</span>
 </h4>
 <div class="para logical" id="thm-LHopitalsRule-2-1">
@@ -746,21 +757,21 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">Similarly, this holds if <span class="process-math">\(\displaystyle\lim_{x\to a} f(x) = \pm\infty\)</span> and <span class="process-math">\(\displaystyle\lim_{x\to a} g(x) = \pm \infty\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-LHopitalsRule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-LHopitalsRule-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="thm-LHopitalsRule-2-2">
 <div class="para">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are both differentiable as <span class="process-math">\(x\to \infty\)</span> and either:</div>
 <ul class="disc" id="thm-LHopitalsRule-2-2-4">
 <li id="thm-LHopitalsRule-2-2-4-1">
 <div class="para" id="thm-LHopitalsRule-2-2-4-1-1">
-<span class="process-math">\(\displaystyle\lim_{x\to\infty} f(x) = 0\)</span> and <span class="process-math">\(\displaystyle\lim_{x\to\infty} g(x) = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-LHopitalsRule-2-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle\lim_{x\to\infty} f(x) = 0\)</span> and <span class="process-math">\(\displaystyle\lim_{x\to\infty} g(x) = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-LHopitalsRule-2-2-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#thm-LHopitalsRule-2-2-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#thm-LHopitalsRule-2-2-4-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="thm-LHopitalsRule-2-2-4-2">
 <div class="para" id="thm-LHopitalsRule-2-2-4-2-1">
-<span class="process-math">\(\displaystyle\lim_{x\to\infty}f(x) = \pm\infty\)</span> and <span class="process-math">\(\displaystyle\lim_{x\to\infty} g(x) = \pm\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-LHopitalsRule-2-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle\lim_{x\to\infty}f(x) = \pm\infty\)</span> and <span class="process-math">\(\displaystyle\lim_{x\to\infty} g(x) = \pm\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-LHopitalsRule-2-2-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#thm-LHopitalsRule-2-2-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#thm-LHopitalsRule-2-2-4-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">then</div>
@@ -769,77 +780,77 @@ eBookConfig.enable_chatcodes =  false;
 \lim_{x\to \infty} \frac{f(x)}{g(x)} = \lim_{x\to \infty} \frac{f'(x)}{g'(x)}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-LHopitalsRule-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="thm-LHopitalsRule-2-3">This is also true as <span class="process-math">\(x\to-\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-LHopitalsRule-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-LHopitalsRule-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="thm-LHopitalsRule-2-3">This is also true as <span class="process-math">\(x\to-\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-LHopitalsRule-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 4.7.1: L’Hôpital’s Rule"><a href="#thm-LHopitalsRule" title="Copy heading and permalink for Theorem 4.7.1: L’Hôpital’s Rule" aria-label="Copy heading and permalink for Theorem 4.7.1: L’Hôpital’s Rule">🔗</a></div></article><article class="example example-like" id="ex-FirstLHopitalsRule"><h4 class="heading">
+<div class="autopermalink" data-description="Theorem 4.7.1: L’Hôpital’s Rule"><a href="#thm-LHopitalsRule" title="Copy heading and permalink for Theorem 4.7.1: L’Hôpital’s Rule">🔗</a></div></article><article class="example example-like" id="ex-FirstLHopitalsRule"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.7.2</span><span class="period">.</span><span class="space"> </span><span class="title">Some First Limits.</span>
 </h4>
-<div class="introduction" id="ex-FirstLHopitalsRule-2"><div class="para" id="ex-FirstLHopitalsRule-2-1">Evaluate the following limits. You should first confirm that they are, actually, indeterminate forms!<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstLHopitalsRule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="ex-FirstLHopitalsRule-2"><div class="para" id="ex-FirstLHopitalsRule-2-1">Evaluate the following limits. You should first confirm that they are, actually, indeterminate forms!<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstLHopitalsRule-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="ex-FirstLHopitalsRule-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ex-FirstLHopitalsRule-3-1-1">
-<span class="process-math">\(\displaystyle \lim_{x\to 0}\left(\frac{\sin(x)}{x}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstLHopitalsRule-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \lim_{x\to 0}\left(\frac{\sin(x)}{x}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstLHopitalsRule-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.7.2.a"><a href="#ex-FirstLHopitalsRule-3" title="Copy heading and permalink for Task 4.7.2.a" aria-label="Copy heading and permalink for Task 4.7.2.a">🔗</a></div></article><article class="task exercise-like" id="ex-FirstLHopitalsRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Task 4.7.2.a"><a href="#ex-FirstLHopitalsRule-3" title="Copy heading and permalink for Task 4.7.2.a">🔗</a></div></article><article class="task exercise-like" id="ex-FirstLHopitalsRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-FirstLHopitalsRule-4-1-1">
-<span class="process-math">\(\displaystyle \lim_{x\to 5} \left(\frac{x^2-6x+5}{x-5}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstLHopitalsRule-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \lim_{x\to 5} \left(\frac{x^2-6x+5}{x-5}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstLHopitalsRule-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.7.2.b"><a href="#ex-FirstLHopitalsRule-4" title="Copy heading and permalink for Task 4.7.2.b" aria-label="Copy heading and permalink for Task 4.7.2.b">🔗</a></div></article><article class="task exercise-like" id="ex-FirstLHopitalsRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" data-description="Task 4.7.2.b"><a href="#ex-FirstLHopitalsRule-4" title="Copy heading and permalink for Task 4.7.2.b">🔗</a></div></article><article class="task exercise-like" id="ex-FirstLHopitalsRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-FirstLHopitalsRule-5-1-1">
-<span class="process-math">\(\displaystyle \lim_{x\to 1}\left(\frac{\ln(x)}{x-1}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstLHopitalsRule-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \lim_{x\to 1}\left(\frac{\ln(x)}{x-1}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstLHopitalsRule-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.7.2.c"><a href="#ex-FirstLHopitalsRule-5" title="Copy heading and permalink for Task 4.7.2.c" aria-label="Copy heading and permalink for Task 4.7.2.c">🔗</a></div></article><article class="task exercise-like" id="ex-FirstLHopitalsRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="autopermalink" data-description="Task 4.7.2.c"><a href="#ex-FirstLHopitalsRule-5" title="Copy heading and permalink for Task 4.7.2.c">🔗</a></div></article><article class="task exercise-like" id="ex-FirstLHopitalsRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-FirstLHopitalsRule-6-1-1">
-<span class="process-math">\(\displaystyle \lim_{x\to \infty} \left(\frac{x^2-6x+5}{x-5}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstLHopitalsRule-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \lim_{x\to \infty} \left(\frac{x^2-6x+5}{x-5}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstLHopitalsRule-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.7.2.d"><a href="#ex-FirstLHopitalsRule-6" title="Copy heading and permalink for Task 4.7.2.d" aria-label="Copy heading and permalink for Task 4.7.2.d">🔗</a></div></article><article class="task exercise-like" id="ex-FirstLHopitalsRule-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="autopermalink" data-description="Task 4.7.2.d"><a href="#ex-FirstLHopitalsRule-6" title="Copy heading and permalink for Task 4.7.2.d">🔗</a></div></article><article class="task exercise-like" id="ex-FirstLHopitalsRule-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="ex-FirstLHopitalsRule-7-1-1">
-<span class="process-math">\(\displaystyle \lim_{x\to \infty}\left(\frac{\ln(x)}{x-1}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstLHopitalsRule-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \lim_{x\to \infty}\left(\frac{\ln(x)}{x-1}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstLHopitalsRule-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.7.2.e"><a href="#ex-FirstLHopitalsRule-7" title="Copy heading and permalink for Task 4.7.2.e" aria-label="Copy heading and permalink for Task 4.7.2.e">🔗</a></div></article><div class="autopermalink" data-description="Example 4.7.2: Some First Limits"><a href="#ex-FirstLHopitalsRule" title="Copy heading and permalink for Example 4.7.2: Some First Limits" aria-label="Copy heading and permalink for Example 4.7.2: Some First Limits">🔗</a></div></article><div class="para logical" id="subsec-LHopitalsRule-5">
+<div class="autopermalink" data-description="Task 4.7.2.e"><a href="#ex-FirstLHopitalsRule-7" title="Copy heading and permalink for Task 4.7.2.e">🔗</a></div></article><div class="autopermalink" data-description="Example 4.7.2: Some First Limits"><a href="#ex-FirstLHopitalsRule" title="Copy heading and permalink for Example 4.7.2: Some First Limits">🔗</a></div></article><div class="para logical" id="subsec-LHopitalsRule-5">
 <div class="para">There are more indeterminate forms than these two! In each of the following cases, we mean that a limit with this form can take on different values (or not exist). Other indeterminate forms that we can consider include:</div>
 <ul class="disc" id="subsec-LHopitalsRule-5-1">
 <li id="subsec-LHopitalsRule-5-1-1">
 <div class="para" id="subsec-LHopitalsRule-5-1-1-1">
-<span class="process-math">\(\displaystyle f(x)\cdot g(x)\stackrel{?}{\to} 0\cdot \infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle f(x)\cdot g(x)\stackrel{?}{\to} 0\cdot \infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-5-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-LHopitalsRule-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LHopitalsRule-5-1-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-LHopitalsRule-5-1-2">
 <div class="para" id="subsec-LHopitalsRule-5-1-2-1">
-<span class="process-math">\(\displaystyle \left(f(x)-g(x)\right) \stackrel{?}{\to} \infty-\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \left(f(x)-g(x)\right) \stackrel{?}{\to} \infty-\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-5-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-LHopitalsRule-5-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LHopitalsRule-5-1-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-LHopitalsRule-5-1-3">
 <div class="para" id="subsec-LHopitalsRule-5-1-3-1">
-<span class="process-math">\(\displaystyle f(x)^{g(x)} \stackrel{?}{\to} 0^0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-5-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle f(x)^{g(x)} \stackrel{?}{\to} 0^0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-5-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-LHopitalsRule-5-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LHopitalsRule-5-1-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-LHopitalsRule-5-1-4">
 <div class="para" id="subsec-LHopitalsRule-5-1-4-1">
-<span class="process-math">\(\displaystyle f(x)^{g(x)} \stackrel{?}{\to} 1^\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-5-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle f(x)^{g(x)} \stackrel{?}{\to} 1^\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-5-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-LHopitalsRule-5-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LHopitalsRule-5-1-4" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-LHopitalsRule-5-1-5">
 <div class="para" id="subsec-LHopitalsRule-5-1-5-1">
-<span class="process-math">\(\displaystyle f(x)^{g(x)} \stackrel{?}{\to} \infty^0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-5-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle f(x)^{g(x)} \stackrel{?}{\to} \infty^0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-5-1-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-LHopitalsRule-5-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-LHopitalsRule-5-1-5" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">The issue with these, though, is that L’Hôpital’s Rule only applies to quotients! We needed that quotient for the algebra to work out when we canceled things out to end up with the ratio of slopes.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-LHopitalsRule-6">So our strategies for these other indeterminate forms will all require us to manipulate the product, difference, or expeonential in order to force some division to show up somehow.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-LHopitalsRule-6">So our strategies for these other indeterminate forms will all require us to manipulate the product, difference, or expeonential in order to force some division to show up somehow.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LHopitalsRule-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: L’Hôpital’s Rule"><a href="#subsec-LHopitalsRule" title="Copy heading and permalink for Subsection: L’Hôpital’s Rule" aria-label="Copy heading and permalink for Subsection: L’Hôpital’s Rule">🔗</a></div></section><section class="subsection" id="subsec-ForcingDivision"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection: L’Hôpital’s Rule"><a href="#subsec-LHopitalsRule" title="Copy heading and permalink for Subsection: L’Hôpital’s Rule">🔗</a></div></section><section class="subsection" id="subsec-ForcingDivision"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Forcing Division</span>
 </h3>
-<section class="introduction" id="subsec-ForcingDivision-2"><div class="para" id="subsec-ForcingDivision-2-1">Let’s look at each new indeterminate form classified into groups based on the operation between the functions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ForcingDivision-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="subsec-ForcingDivision-2"><div class="para" id="subsec-ForcingDivision-2-1">Let’s look at each new indeterminate form classified into groups based on the operation between the functions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ForcingDivision-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsubsection" id="subsubsec-Products"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Products!</span>
 </h4>
@@ -857,7 +868,7 @@ f(x)\cdot g(x) = \frac{g(x)}{1/f(x)}\text{.}
 \end{equation*}
 </div>
 <div class="para">Our choice ends up being based on what is most helpful.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Products-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Products-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="ex-xlnx"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.7.3</span><span class="period">.</span>
@@ -870,7 +881,7 @@ f(x)\cdot g(x) = \frac{g(x)}{1/f(x)}\text{.}
 \end{equation*}
 </div>
 <div class="para">Note that since <span class="process-math">\(x\to 0\)</span> and <span class="process-math">\(\ln(x)\to -\infty\text{,}\)</span> this is a <span class="process-math">\(0\cdot\infty\)</span> indeterminate form.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-xlnx-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-xlnx-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="ex-xlnx-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
@@ -882,9 +893,9 @@ f(x)\cdot g(x) = \frac{g(x)}{1/f(x)}\text{.}
 \end{equation*}
 </div>
 <div class="para">Note that this is not an <span class="process-math">\(\frac{\infty}{\infty}\)</span> indeterminate form, and we can use L’Hôpital’s Rule.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-xlnx-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-xlnx-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 4.7.3.1"><a href="#ex-xlnx-2" title="Copy heading and permalink for Hint 4.7.3.1" aria-label="Copy heading and permalink for Hint 4.7.3.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 4.7.3.1"><a href="#ex-xlnx-2" title="Copy heading and permalink for Hint 4.7.3.1">🔗</a></div>
 </div></details><details id="ex-xlnx-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="ex-xlnx-3-1">
 <div class="displaymath process-math" id="ex-xlnx-3-1-1">
@@ -899,17 +910,17 @@ f(x)\cdot g(x) = \frac{g(x)}{1/f(x)}\text{.}
 </div>
 <div class="para">So <span class="process-math">\(\displaystyle\lim_{x\to 0^+} x\ln(x)=0\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-xlnx-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-xlnx-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.7.3.1"><a href="#ex-xlnx-3" title="Copy heading and permalink for Solution 4.7.3.1" aria-label="Copy heading and permalink for Solution 4.7.3.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.7.3.1"><a href="#ex-xlnx-3" title="Copy heading and permalink for Solution 4.7.3.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.7.3"><a href="#ex-xlnx" title="Copy heading and permalink for Example 4.7.3" aria-label="Copy heading and permalink for Example 4.7.3">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Products!"><a href="#subsubsec-Products" title="Copy heading and permalink for Subsubsection: Products!" aria-label="Copy heading and permalink for Subsubsection: Products!">🔗</a></div></section><section class="subsubsection" id="subsubsec-Differences"><h4 class="heading hide-type">
+<div class="autopermalink" data-description="Example 4.7.3"><a href="#ex-xlnx" title="Copy heading and permalink for Example 4.7.3">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Products!"><a href="#subsubsec-Products" title="Copy heading and permalink for Subsubsection: Products!">🔗</a></div></section><section class="subsubsection" id="subsubsec-Differences"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Differences!</span>
 </h4>
-<div class="para" id="subsubsec-Differences-2">We can re-write <span class="process-math">\(f(x)-g(x)\)</span> as a product by factoring something out of the difference. Then, if the product is a <span class="process-math">\(0\cdot\infty\)</span> indeterminate form, we can divide by a reciprocal to turn it into a quotient.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Differences-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-Differences-2">We can re-write <span class="process-math">\(f(x)-g(x)\)</span> as a product by factoring something out of the difference. Then, if the product is a <span class="process-math">\(0\cdot\infty\)</span> indeterminate form, we can divide by a reciprocal to turn it into a quotient.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Differences-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsubsec-Differences-3">Choosing what to factor out is sometimes very difficult. But we should note that this is the strategy we used to evaluate <a href="sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.4.6: Polynomial End Behavior Limits">Polynomial End Behavior Limits</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Differences-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-Differences-3">Choosing what to factor out is sometimes very difficult. But we should note that this is the strategy we used to evaluate <a href="sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.4.7: Polynomial End Behavior Limits">Polynomial End Behavior Limits</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Differences-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="subsubsec-Differences-4"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.7.4</span><span class="period">.</span>
@@ -922,13 +933,13 @@ f(x)\cdot g(x) = \frac{g(x)}{1/f(x)}\text{.}
 \end{equation*}
 </div>
 <div class="para">Note that since <span class="process-math">\(2^x\to \infty\)</span> and <span class="process-math">\(x^2\to \infty\text{,}\)</span> this is an <span class="process-math">\(\infty-\infty\)</span> indeterminate form.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Differences-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Differences-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="subsubsec-Differences-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="subsubsec-Differences-4-2-1">Try to factor out <span class="process-math">\(2^x\text{.}\)</span> You won’t be able to actual factor it nicely, but you’ll end up with a fraction term <span class="process-math">\(\frac{x^2}{2^x}\)</span> that is an <span class="process-math">\(\frac{\infty}{\infty}\)</span> indeterminate form!<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Differences-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-Differences-4-2-1">Try to factor out <span class="process-math">\(2^x\text{.}\)</span> You won’t be able to actual factor it nicely, but you’ll end up with a fraction term <span class="process-math">\(\frac{x^2}{2^x}\)</span> that is an <span class="process-math">\(\frac{\infty}{\infty}\)</span> indeterminate form!<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Differences-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 4.7.4.1"><a href="#subsubsec-Differences-4-2" title="Copy heading and permalink for Hint 4.7.4.1" aria-label="Copy heading and permalink for Hint 4.7.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 4.7.4.1"><a href="#subsubsec-Differences-4-2" title="Copy heading and permalink for Hint 4.7.4.1">🔗</a></div>
 </div></details><details id="subsubsec-Differences-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="subsubsec-Differences-4-3-1">
 <div class="displaymath process-math" id="subsubsec-Differences-4-3-1-1">
@@ -955,15 +966,15 @@ f(x)\cdot g(x) = \frac{g(x)}{1/f(x)}\text{.}
 \amp = \infty(1-0) = \infty
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Differences-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Differences-4-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.7.4.1"><a href="#subsubsec-Differences-4-3" title="Copy heading and permalink for Solution 4.7.4.1" aria-label="Copy heading and permalink for Solution 4.7.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.7.4.1"><a href="#subsubsec-Differences-4-3" title="Copy heading and permalink for Solution 4.7.4.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.7.4"><a href="#subsubsec-Differences-4" title="Copy heading and permalink for Example 4.7.4" aria-label="Copy heading and permalink for Example 4.7.4">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Differences!"><a href="#subsubsec-Differences" title="Copy heading and permalink for Subsubsection: Differences!" aria-label="Copy heading and permalink for Subsubsection: Differences!">🔗</a></div></section><section class="subsubsection" id="subsubsec-Exponentials"><h4 class="heading hide-type">
+<div class="autopermalink" data-description="Example 4.7.4"><a href="#subsubsec-Differences-4" title="Copy heading and permalink for Example 4.7.4">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Differences!"><a href="#subsubsec-Differences" title="Copy heading and permalink for Subsubsection: Differences!">🔗</a></div></section><section class="subsubsection" id="subsubsec-Exponentials"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exponentials!</span>
 </h4>
-<div class="para" id="subsubsec-Exponentials-2">We can think about how we approached these types of functions raised to functions when we learned about <a href="sec-LogarithmicDifferentiation.html" class="internal" title="Section 3.3: Logarithmic Differentiation">Logarithmic Differentiation</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponentials-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-Exponentials-2">We can think about how we approached these types of functions raised to functions when we learned about <a href="sec-LogarithmicDifferentiation.html" class="internal" title="Section 3.3: Logarithmic Differentiation">Logarithmic Differentiation</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponentials-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsubsec-Exponentials-3">
 <div class="para">We were able to use logarithms to re-write these types of exponentials as products. So we can say that:</div>
@@ -974,7 +985,7 @@ f(x)^{g(x)} \amp = e^{\ln\left(f(x)^{g(x)}\right)}\\
 \end{align*}
 </div>
 <div class="para">When we think about limits, the continuity of the exponential function allows us to just focus on the limit of the exponent, <span class="process-math">\(g(x)\ln(f(x))\text{,}\)</span> which is likely an indeterminate form that we’ve seen!</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponentials-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponentials-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="subsubsec-Exponentials-4"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.7.5</span><span class="period">.</span>
@@ -987,13 +998,13 @@ f(x)^{g(x)} \amp = e^{\ln\left(f(x)^{g(x)}\right)}\\
 \end{equation*}
 </div>
 <div class="para">Note that this is the <span class="process-math">\(0^0\)</span> indeterminate form.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponentials-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponentials-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="subsubsec-Exponentials-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="subsubsec-Exponentials-4-2-1">We can re-write <span class="process-math">\(x^x\)</span> as <span class="process-math">\(e^{\ln\left(x^x\right)}\)</span> which is the same as <span class="process-math">\(e^{x\ln(x)}\text{.}\)</span> Now we can evaluate the limit <span class="process-math">\(\displaystyle\lim_{x\to 0^+} x\ln(x)\text{,}\)</span> and make sure to return the value into the exponent.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponentials-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-Exponentials-4-2-1">We can re-write <span class="process-math">\(x^x\)</span> as <span class="process-math">\(e^{\ln\left(x^x\right)}\)</span> which is the same as <span class="process-math">\(e^{x\ln(x)}\text{.}\)</span> Now we can evaluate the limit <span class="process-math">\(\displaystyle\lim_{x\to 0^+} x\ln(x)\text{,}\)</span> and make sure to return the value into the exponent.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponentials-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 4.7.5.1"><a href="#subsubsec-Exponentials-4-2" title="Copy heading and permalink for Hint 4.7.5.1" aria-label="Copy heading and permalink for Hint 4.7.5.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 4.7.5.1"><a href="#subsubsec-Exponentials-4-2" title="Copy heading and permalink for Hint 4.7.5.1">🔗</a></div>
 </div></details><details id="subsubsec-Exponentials-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="subsubsec-Exponentials-4-3-1">
 <div class="para">We know from <a href="sec-LHopitalsRule.html#ex-xlnx" class="xref" data-knowl="./knowl/xref/ex-xlnx.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 4.7.3">Example 4.7.3</a> that <span class="process-math">\(\displaystyle\lim_{x\to 0^+} x\ln(x) = 0\text{.}\)</span> So then:</div>
@@ -1006,12 +1017,12 @@ f(x)^{g(x)} \amp = e^{\ln\left(f(x)^{g(x)}\right)}\\
 </div>
 <div class="para">So <span class="process-math">\(\displaystyle \lim_{x\to 0^+} x^x = 1\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponentials-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponentials-4-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.7.5.1"><a href="#subsubsec-Exponentials-4-3" title="Copy heading and permalink for Solution 4.7.5.1" aria-label="Copy heading and permalink for Solution 4.7.5.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.7.5.1"><a href="#subsubsec-Exponentials-4-3" title="Copy heading and permalink for Solution 4.7.5.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.7.5"><a href="#subsubsec-Exponentials-4" title="Copy heading and permalink for Example 4.7.5" aria-label="Copy heading and permalink for Example 4.7.5">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Exponentials!"><a href="#subsubsec-Exponentials" title="Copy heading and permalink for Subsubsection: Exponentials!" aria-label="Copy heading and permalink for Subsubsection: Exponentials!">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Forcing Division"><a href="#subsec-ForcingDivision" title="Copy heading and permalink for Subsection: Forcing Division" aria-label="Copy heading and permalink for Subsection: Forcing Division">🔗</a></div></section><div class="autopermalink" data-description="Section 4.7: L’Hôpital’s Rule"><a href="#sec-LHopitalsRule" title="Copy heading and permalink for Section 4.7: L’Hôpital’s Rule" aria-label="Copy heading and permalink for Section 4.7: L’Hôpital’s Rule">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Example 4.7.5"><a href="#subsubsec-Exponentials-4" title="Copy heading and permalink for Example 4.7.5">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Exponentials!"><a href="#subsubsec-Exponentials" title="Copy heading and permalink for Subsubsection: Exponentials!">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Forcing Division"><a href="#subsec-ForcingDivision" title="Copy heading and permalink for Subsection: Forcing Division">🔗</a></div></section><div class="autopermalink" data-description="Section 4.7: L’Hôpital’s Rule"><a href="#sec-LHopitalsRule" title="Copy heading and permalink for Section 4.7: L’Hôpital’s Rule">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-LinearApproximation.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-AntiderivativesIntegrals.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

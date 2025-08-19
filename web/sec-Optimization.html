@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -168,6 +169,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-DefiningALimit" class="internal"><span class="title">Defining a Limit</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-ApproximatingLimits" class="internal"><span class="title">Approximating Limits Using Our New Definition</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#ex-DefinitionOfLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -175,6 +177,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-AddingPrecisionToEstimations" class="internal"><span class="title">Adding Precision to Our Estimations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-LimitProperties" class="internal"><span class="title">Limit Properties</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#ex-EvaluatingLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -182,6 +185,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-FirstIndeterminateForms" class="internal"><span class="title">A First Introduction to Indeterminate Forms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-WhatIfIndeterminateForms" class="internal"><span class="title">What if There Is No Algebra Trick?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#exercises-" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -189,9 +193,16 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits" class="internal"><span class="title">Infinite Limits</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits" class="internal"><span class="title">End Behavior Limits</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#ex-LimitsInvolvingInfinity" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-WeirdFunctionsWeirdBehavior" class="internal"><span class="title">Weird Functions, Weird Behavior</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-SqueezeTheorem" class="internal"><span class="title">Squeeze Theorem</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Continuity.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Continuity and the Intermediate Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -599,31 +610,31 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-Optimization"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">4.5</span><span class="space"> </span><span class="title">Optimization</span>
 </h2>
-<section class="introduction" id="sec-Optimization-2"><div class="para" id="sec-Optimization-2-1">How do we use calculus to make decisions? If we’re trying to find the best allocation of time between different tasks, or if we’re trying to construct some object with limited resources, or if we’re trying to find some other solution to the question, "How do we make the best/most/maximum/minimum of..." then we can think about translating these to a calculus context.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Optimization-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-Optimization-2"><div class="para" id="sec-Optimization-2-1">How do we use calculus to make decisions? If we’re trying to find the best allocation of time between different tasks, or if we’re trying to construct some object with limited resources, or if we’re trying to find some other solution to the question, "How do we make the best/most/maximum/minimum of..." then we can think about translating these to a calculus context.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Optimization-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-Optimization-2-2">Optimization problems are some of the clearest application of calculus concepts to applied problems from any industry or field. While there certainly aren’t teams of calculus experts in every office waiting for these kinds of problems to arrive, these problems are routinely solved using calculus, either done by computer software or coming from calculus experts who make sweeping recommendations across a whole field or some other source.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Optimization-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-Optimization-2-2">Optimization problems are some of the clearest application of calculus concepts to applied problems from any industry or field. While there certainly aren’t teams of calculus experts in every office waiting for these kinds of problems to arrive, these problems are routinely solved using calculus, either done by computer software or coming from calculus experts who make sweeping recommendations across a whole field or some other source.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Optimization-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsec-OptimizationFramework"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Optimization Framework</span>
 </h3>
-<div class="para" id="subsec-OptimizationFramework-2">We’ll start this discussion with a small example. This is <em class="emphasis">not</em> an example that shows up in "real life," but will be helpful to build a strategy for approaching these problems.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-OptimizationFramework-2">We’ll start this discussion with a small example. This is <em class="emphasis">not</em> an example that shows up in "real life," but will be helpful to build a strategy for approaching these problems.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-OptimizationFramework-3">Here’s our problem:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-OptimizationFramework-3">Here’s our problem:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="ex-FirstOptimization"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="ex-FirstOptimization-1-1">Find two numbers that add to get 14 but give the largest possible product.<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="ex-FirstOptimization-1-2">That’s it. That’s the problem. It’s not super interesting, right? Let’s think about how we’ll solve it.<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-FirstOptimization-1-1">Find two numbers that add to get 14 but give the largest possible product.<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-FirstOptimization-1-2">That’s it. That’s the problem. It’s not super interesting, right? Let’s think about how we’ll solve it.<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="ex-FirstOptimization-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-FirstOptimization-2-1">First, we want to think about our two numbers. We’ll need variable names for these. You can use whatever letters you’d like here: I’m going to be boring and pick <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> as the names of my two numbers. What do we know about <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-FirstOptimization-2-1">First, we want to think about our two numbers. We’ll need variable names for these. You can use whatever letters you’d like here: I’m going to be boring and pick <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> as the names of my two numbers. What do we know about <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ex-FirstOptimization-2-2">The first thing that we know is that <span class="process-math">\(a+b=14\text{.}\)</span> This isn’t a huge amount of information, but it does provide us with a nice connection between our numbers. If we know what one number is, then we automatically know the second one: if one number is <span class="process-math">\(4\text{,}\)</span> then the other number is whatever we need to add to <span class="process-math">\(4\)</span> to get <span class="process-math">\(14\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-FirstOptimization-2-2">The first thing that we know is that <span class="process-math">\(a+b=14\text{.}\)</span> This isn’t a huge amount of information, but it does provide us with a nice connection between our numbers. If we know what one number is, then we automatically know the second one: if one number is <span class="process-math">\(4\text{,}\)</span> then the other number is whatever we need to add to <span class="process-math">\(4\)</span> to get <span class="process-math">\(14\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ex-FirstOptimization-2-3">We also know that we’re interesting in the product: <span class="process-math">\(P=ab\text{.}\)</span> We don’t, currently, know anything about this product other than the fact that we want it to be large. Ok so automatically, we know that both <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> need to be positive: if we had one number that was positive (like <span class="process-math">\(15\)</span>) and one number that was negative (like <span class="process-math">\(-1\)</span>), then the product will be negative, and even though they add to <span class="process-math">\(14\text{,}\)</span> we are <em class="emphasis">not</em> going to get a big product.<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-FirstOptimization-2-3">We also know that we’re interesting in the product: <span class="process-math">\(P=ab\text{.}\)</span> We don’t, currently, know anything about this product other than the fact that we want it to be large. Ok so automatically, we know that both <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> need to be positive: if we had one number that was positive (like <span class="process-math">\(15\)</span>) and one number that was negative (like <span class="process-math">\(-1\)</span>), then the product will be negative, and even though they add to <span class="process-math">\(14\text{,}\)</span> we are <em class="emphasis">not</em> going to get a big product.<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ex-FirstOptimization-2-4">So we know that for both of these numbers <span class="process-math">\(a,b\geq 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-FirstOptimization-2-4">So we know that for both of these numbers <span class="process-math">\(a,b\geq 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ex-FirstOptimization-2-5">
 <div class="para">This doesn’t seem like a lot of information, but we can put it all together really nicely. For instance, I can manipulate the fact that these two numbers add to get <span class="process-math">\(14\)</span> into an equation that tells me what the value of one number is based on the other:</div>
@@ -639,16 +650,16 @@ P=ab \longrightarrow P(a)=a(\underbrace{14-a}_{b})\text{.}
 \end{equation*}
 </div>
 <div class="para">Lastly, I actually know a domain for this function: we know that <span class="process-math">\(a\geq 0\text{,}\)</span> but since <span class="process-math">\(b\geq 0\text{,}\)</span> then <span class="process-math">\(a\leq 14\text{.}\)</span> We <em class="emphasis">can’t</em> have a number larger than <span class="process-math">\(14\text{,}\)</span> since the other number would be negative.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<aside class="aside aside-like" id="ex-FirstOptimization-2-6"><div class="para" id="ex-FirstOptimization-2-6-1">I just said that we <em class="emphasis">can’t</em> have a negative product, but nothing in this problem says that. We just know that a negative product will be small. But we don’t <em class="emphasis">have</em> to limit each number to be between 0 and 14. We could just allow them to be bigger than 14 (and thus also allowed to be smaller than 0) and we’ll just get a bunch of negative products that aren’t the maximum one. Oh well!<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<aside class="aside aside-like" id="ex-FirstOptimization-2-6"><div class="para" id="ex-FirstOptimization-2-6-1">I just said that we <em class="emphasis">can’t</em> have a negative product, but nothing in this problem says that. We just know that a negative product will be small. But we don’t <em class="emphasis">have</em> to limit each number to be between 0 and 14. We could just allow them to be bigger than 14 (and thus also allowed to be smaller than 0) and we’ll just get a bunch of negative products that aren’t the maximum one. Oh well!<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-6-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ex-FirstOptimization-2-6-2">We are making a similar choice by <em class="emphasis">including</em> the pair <span class="process-math">\(0\)</span> and <span class="process-math">\(14\)</span> as a possibility. Do we <em class="emphasis">really</em> think that this could give us the biggest product? NO! The product is 0! But it’s maybe convenient to have a closed interval as the domain of this function, so why not?<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-FirstOptimization-2-6-2">We are making a similar choice by <em class="emphasis">including</em> the pair <span class="process-math">\(0\)</span> and <span class="process-math">\(14\)</span> as a possibility. Do we <em class="emphasis">really</em> think that this could give us the biggest product? NO! The product is 0! But it’s maybe convenient to have a closed interval as the domain of this function, so why not?<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-6-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ex-FirstOptimization-2-6-3">All along the way, we’re making choices that guide how we think about this problem. In real life, we’ll do the same thing. The only difference is that the choices that we make about what are reasonable values for our inputs to take on are more meaningful, since those inputs represent real things. We have to take these choices seriously.<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></aside><div class="para" id="ex-FirstOptimization-2-7">Ok, so we have a function representing the product, <span class="process-math">\(P(a)=a(14-a)\)</span> and a domain for that function, <span class="process-math">\([0,14]\text{,}\)</span> and we know we want to find the maximum for it. This is a calculus problem that we can actually do! Take a moment to do it.<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-FirstOptimization-2-6-3">All along the way, we’re making choices that guide how we think about this problem. In real life, we’ll do the same thing. The only difference is that the choices that we make about what are reasonable values for our inputs to take on are more meaningful, since those inputs represent real things. We have to take these choices seriously.<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-6-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside><div class="para" id="ex-FirstOptimization-2-7">Ok, so we have a function representing the product, <span class="process-math">\(P(a)=a(14-a)\)</span> and a domain for that function, <span class="process-math">\([0,14]\text{,}\)</span> and we know we want to find the maximum for it. This is a calculus problem that we can actually do! Take a moment to do it.<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-2-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.1.1"><a href="#ex-FirstOptimization-2" title="Copy heading and permalink for Solution 4.5.1.1" aria-label="Copy heading and permalink for Solution 4.5.1.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.1.1"><a href="#ex-FirstOptimization-2" title="Copy heading and permalink for Solution 4.5.1.1">🔗</a></div>
 </div></details><details id="ex-FirstOptimization-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="ex-FirstOptimization-3-1">
 <div class="displaymath process-math" id="ex-FirstOptimization-3-1-1">
@@ -667,7 +678,7 @@ a \amp =7
 \end{align*}
 </div>
 <div class="para">We also know that the ending points at <span class="process-math">\(a=0\)</span> and <span class="process-math">\(a=14\)</span> are critical, since the derivative cannot exist.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ex-FirstOptimization-3-2">
 <div class="para">There is a point on the product function when <span class="process-math">\(a=7\)</span> where we have a horizontal tangent line. Does this represent a maximum or a minimum? We have some options for how to do this:</div>
@@ -677,58 +688,58 @@ a \amp =7
 <em class="emphasis">FDT:</em> <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t2" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-5-1-1">
-<span class="process-math">\(a\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(a\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t2" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-5-2-1">
-<span class="process-math">\([0,7)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\([0,7)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t2" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-5-3-1">
-<span class="process-math">\(7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-5-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t2" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-5-4-1">
-<span class="process-math">\((7,14]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\((7,14]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-5-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 </tr>
 <tr>
 <td class="c m b1 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-6-1-1">
-<span class="process-math">\(P'\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(P'\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-6-2-1">
-<span class="process-math">\(\oplus\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\oplus\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-6-3-1">
-<span class="process-math">\(0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-6-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-6-4-1">
-<span class="process-math">\(\ominus\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\ominus\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-6-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 </tr>
 <tr>
 <td class="c m b0 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-7-1-1">
-<span class="process-math">\(P\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(P\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b0 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-7-2-1">
-<span class="process-math">\(\nearrow\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\nearrow\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-7-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b0 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-7-3-1">
-<span class="process-math">\((7,49)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\((7,49)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-7-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b0 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-7-4-1">
-<span class="process-math">\(\searrow\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-7-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\searrow\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-7-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 </tr>
 <tr>
 <td class="c m b2 r0 l0 t0 lines"></td>
-<td class="c m b2 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-8-2-1">increasing<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<td class="c m b2 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-8-2-1">increasing<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-8-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
-<td class="c m b2 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-8-3-1">local max<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<td class="c m b2 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-8-3-1">local max<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-8-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
-<td class="c m b2 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-8-4-1">decreasing<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-8-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<td class="c m b2 r0 l0 t0" style="max-width:150px;"><div class="para" id="ex-FirstOptimization-3-2-2-1-1-2-8-4-1">decreasing<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1-2-8-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 </tr>
-</table></div> Since this is the only turning point, it must be the global maximum!<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</table></div> Since this is the only turning point, it must be the global maximum!<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#ex-FirstOptimization-3-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#ex-FirstOptimization-3-2-2-1" title="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="ex-FirstOptimization-3-2-2-2">
 <div class="para logical" id="ex-FirstOptimization-3-2-2-2-1">
@@ -740,56 +751,56 @@ P''(7) \amp \lt 0
 \end{align*}
 </div>
 <div class="para">Since the function is concave down at this point, then we know that the function reaches a local maximum when <span class="process-math">\(a=7\text{.}\)</span> Since this is the only turning point, it must be the global maximum!</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#ex-FirstOptimization-3-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#ex-FirstOptimization-3-2-2-2" title="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 <li id="ex-FirstOptimization-3-2-2-3">
 <div class="para" id="ex-FirstOptimization-3-2-2-3-1">
 <em class="emphasis">EVT:</em> <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t2" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-4-1-1">
-<span class="process-math">\(a\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(a\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t2" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-4-2-1">
-<span class="process-math">\(P\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(P\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
-<td class="l m b1 r0 l0 t2" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-4-3-1"><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></td>
+<td class="l m b1 r0 l0 t2" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-4-3-1"><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-4-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div></div></td>
 </tr>
 <tr>
 <td class="c m b0 r0 l0 t0" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-5-1-1">
-<span class="process-math">\(0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b0 r0 l0 t0" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-5-2-1">
-<span class="process-math">\(0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
-<td class="l m b0 r0 l0 t0" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-5-3-1">global minimum<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<td class="l m b0 r0 l0 t0" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-5-3-1">global minimum<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-5-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 </tr>
 <tr>
 <td class="c m b0 r0 l0 t0" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-6-1-1">
-<span class="process-math">\(7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b0 r0 l0 t0" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-6-2-1">
-<span class="process-math">\(49\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(49\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
-<td class="l m b0 r0 l0 t0" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-6-3-1">global maximum<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<td class="l m b0 r0 l0 t0" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-6-3-1">global maximum<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-6-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 </tr>
 <tr>
 <td class="c m b2 r0 l0 t0" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-7-1-1">
-<span class="process-math">\(14\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(14\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b2 r0 l0 t0" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-7-2-1">
-<span class="process-math">\(0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-7-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
-<td class="l m b2 r0 l0 t0" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-7-3-1">global minimum<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<td class="l m b2 r0 l0 t0" style="max-width:198px;"><div class="para" id="ex-FirstOptimization-3-2-2-3-1-2-7-3-1">global minimum<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1-2-7-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 </tr>
 </table></div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#ex-FirstOptimization-3-2-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#ex-FirstOptimization-3-2-2-3" title="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
 </ol>
 <div class="para">However we do this, we find that there is a maximum product when <span class="process-math">\(a=7\text{.}\)</span> What is the second number, <span class="process-math">\(b\text{?}\)</span> Well we know that they add to 14, so:</div>
@@ -801,41 +812,41 @@ b=14-a \longrightarrow b \amp =14-7\\
 </div>
 <div class="para">So our two numbers are <span class="process-math">\(7\)</span> and <span class="process-math">\(7\text{,}\)</span> and they multiply to get <span class="process-math">\(49\text{,}\)</span> the biggest possible product between two numbers that add to <span class="process-math">\(14\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-FirstOptimization-3-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.1.2"><a href="#ex-FirstOptimization-3" title="Copy heading and permalink for Solution 4.5.1.2" aria-label="Copy heading and permalink for Solution 4.5.1.2">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.1.2"><a href="#ex-FirstOptimization-3" title="Copy heading and permalink for Solution 4.5.1.2">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.5.1"><a href="#ex-FirstOptimization" title="Copy heading and permalink for Example 4.5.1" aria-label="Copy heading and permalink for Example 4.5.1">🔗</a></div></article><div class="para" id="subsec-OptimizationFramework-5">We have accomplished something, even if it’s not much. Hurray, we solved a pretty unimportant problem about numbers!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.5.1"><a href="#ex-FirstOptimization" title="Copy heading and permalink for Example 4.5.1">🔗</a></div></article><div class="para" id="subsec-OptimizationFramework-5">We have accomplished something, even if it’s not much. Hurray, we solved a pretty unimportant problem about numbers!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-OptimizationFramework-6">More importantly, though, we set up a process for how we’re going to approach optimization problems.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-OptimizationFramework-6">More importantly, though, we set up a process for how we’re going to approach optimization problems.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="assemblage assemblage-like" id="strat-Optimization"><h4 class="heading"><span class="title">Optimization Process.</span></h4>
 <div class="para logical" id="strat-Optimization-2">
 <ol class="decimal" id="strat-Optimization-2-1">
 <li id="strat-Optimization-2-1-1">
 <div class="para" id="strat-Optimization-2-1-1-1">
-<em class="emphasis">Label variables.</em> What are the quantities that we care about? What are the kinds of measurements that we’re given or need to find information about? Label them!<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Label variables.</em> What are the quantities that we care about? What are the kinds of measurements that we’re given or need to find information about? Label them!<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#strat-Optimization-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#strat-Optimization-2-1-1" title="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="strat-Optimization-2-1-2">
 <div class="para" id="strat-Optimization-2-1-2-1">
-<em class="emphasis">Find a formula to optimize.</em> What are we trying to find the maximum or minimum of? Is it a formula that we might already know, or is there some other way of constructing that formula? This might involve drawing some geometric shape to get a clue!<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Find a formula to optimize.</em> What are we trying to find the maximum or minimum of? Is it a formula that we might already know, or is there some other way of constructing that formula? This might involve drawing some geometric shape to get a clue!<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#strat-Optimization-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#strat-Optimization-2-1-2" title="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 <li id="strat-Optimization-2-1-3">
 <div class="para" id="strat-Optimization-2-1-3-1">
-<em class="emphasis">Find a constraint.</em> The <dfn class="terminology">constraint</dfn> is really just some other connection between variables that guides their relationship. If we know some of the variables, there might be a way to find another one, since it would then depend on that variable.<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Find a constraint.</em> The <dfn class="terminology">constraint</dfn> is really just some other connection between variables that guides their relationship. If we know some of the variables, there might be a way to find another one, since it would then depend on that variable.<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#strat-Optimization-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#strat-Optimization-2-1-3" title="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
 <li id="strat-Optimization-2-1-4">
 <div class="para" id="strat-Optimization-2-1-4-1">
-<em class="emphasis">Find some domains.</em> For your variables, what are the smallest and largest possible values that they can reasonably take on? Are there any?<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Find some domains.</em> For your variables, what are the smallest and largest possible values that they can reasonably take on? Are there any?<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4"><a href="#strat-Optimization-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+<div class="autopermalink" data-description="Item 4"><a href="#strat-Optimization-2-1-4" title="Copy heading and permalink for Item 4">🔗</a></div>
 </li>
 <li id="strat-Optimization-2-1-5">
 <div class="para logical" id="strat-Optimization-2-1-5-1">
@@ -843,111 +854,111 @@ b=14-a \longrightarrow b \amp =14-7\\
 <em class="emphasis">Set up a calculus statement.</em> A <dfn class="terminology">calculus statement</dfn> is a sentence that includes:</div>
 <ol class="lower-alpha lower-alpha-level-1" id="strat-Optimization-2-1-5-1-3">
 <li id="strat-Optimization-2-1-5-1-3-1">
-<div class="para" id="strat-Optimization-2-1-5-1-3-1-1">A function you are optimizing. This should be a function with only one input, so we might need to use the constraint to re-write out formula from earlier in order for it to only have a single input variable.<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-5-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strat-Optimization-2-1-5-1-3-1-1">A function you are optimizing. This should be a function with only one input, so we might need to use the constraint to re-write out formula from earlier in order for it to only have a single input variable.<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-5-1-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 5.a"><a href="#strat-Optimization-2-1-5-1-3-1" title="Copy heading and permalink for Item 5.a" aria-label="Copy heading and permalink for Item 5.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 5.a"><a href="#strat-Optimization-2-1-5-1-3-1" title="Copy heading and permalink for Item 5.a">🔗</a></div>
 </li>
 <li id="strat-Optimization-2-1-5-1-3-2">
-<div class="para" id="strat-Optimization-2-1-5-1-3-2-1">A domain for that function. This should be the interval you found earlier that is relevant for your choice of input variables.<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-5-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strat-Optimization-2-1-5-1-3-2-1">A domain for that function. This should be the interval you found earlier that is relevant for your choice of input variables.<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-5-1-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 5.b"><a href="#strat-Optimization-2-1-5-1-3-2" title="Copy heading and permalink for Item 5.b" aria-label="Copy heading and permalink for Item 5.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 5.b"><a href="#strat-Optimization-2-1-5-1-3-2" title="Copy heading and permalink for Item 5.b">🔗</a></div>
 </li>
 <li id="strat-Optimization-2-1-5-1-3-3">
-<div class="para" id="strat-Optimization-2-1-5-1-3-3-1">Some indication of whether you’re finding a maximum or a minimum.<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-5-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strat-Optimization-2-1-5-1-3-3-1">Some indication of whether you’re finding a maximum or a minimum.<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-5-1-3-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 5.c"><a href="#strat-Optimization-2-1-5-1-3-3" title="Copy heading and permalink for Item 5.c" aria-label="Copy heading and permalink for Item 5.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 5.c"><a href="#strat-Optimization-2-1-5-1-3-3" title="Copy heading and permalink for Item 5.c">🔗</a></div>
 </li>
 </ol>
 <div class="para">An example of a calculus statement might be something like: "We want to find the <kbd class="kbdkey">maximum/minimum</kbd> of <kbd class="kbdkey">function</kbd> on <kbd class="kbdkey">domain</kbd>."</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 5"><a href="#strat-Optimization-2-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+<div class="autopermalink" data-description="Item 5"><a href="#strat-Optimization-2-1-5" title="Copy heading and permalink for Item 5">🔗</a></div>
 </li>
 <li id="strat-Optimization-2-1-6">
 <div class="para" id="strat-Optimization-2-1-6-1">
-<em class="emphasis">Do calculus.</em> We want to find a global maximum or a minimum of a function...we know how to do that! We’ll find critical points, and then use the <a href="sec-IncreasingDecreasing.html#thm-FirstDerivativeTest" class="xref" data-knowl="./knowl/xref/thm-FirstDerivativeTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.2.6: First Derivative Test">First Derivative Test</a>, the <a href="sec-Concavity.html#thm-SecondDerivativeTest" class="xref" data-knowl="./knowl/xref/thm-SecondDerivativeTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.3.3: Second Derivative Test for Local Maximums or Local Minimums">Second Derivative Test for Local Maximums or Local Minimums</a>, or the <a href="sec-GlobalMaxMins.html#thm-ExtremeValueTheorem" class="xref" data-knowl="./knowl/xref/thm-ExtremeValueTheorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.4.2: Extreme Value Theorem">Extreme Value Theorem</a> (and it’s follow-up strategy) to find the global or absolute maximum/minimum!<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Do calculus.</em> We want to find a global maximum or a minimum of a function...we know how to do that! We’ll find critical points, and then use the <a href="sec-IncreasingDecreasing.html#thm-FirstDerivativeTest" class="xref" data-knowl="./knowl/xref/thm-FirstDerivativeTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.2.6: First Derivative Test">First Derivative Test</a>, the <a href="sec-Concavity.html#thm-SecondDerivativeTest" class="xref" data-knowl="./knowl/xref/thm-SecondDerivativeTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.3.3: Second Derivative Test for Local Maximums or Local Minimums">Second Derivative Test for Local Maximums or Local Minimums</a>, or the <a href="sec-GlobalMaxMins.html#thm-ExtremeValueTheorem" class="xref" data-knowl="./knowl/xref/thm-ExtremeValueTheorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.4.2: Extreme Value Theorem">Extreme Value Theorem</a> (and it’s follow-up strategy) to find the global or absolute maximum/minimum!<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2-1-6-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 6"><a href="#strat-Optimization-2-1-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+<div class="autopermalink" data-description="Item 6"><a href="#strat-Optimization-2-1-6" title="Copy heading and permalink for Item 6">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#strat-Optimization-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: Optimization Process"><a href="#strat-Optimization" title="Copy heading and permalink for Assemblage: Optimization Process" aria-label="Copy heading and permalink for Assemblage: Optimization Process">🔗</a></div></article><div class="para logical" id="subsec-OptimizationFramework-8">
+<div class="autopermalink" data-description="Assemblage: Optimization Process"><a href="#strat-Optimization" title="Copy heading and permalink for Assemblage: Optimization Process">🔗</a></div></article><div class="para logical" id="subsec-OptimizationFramework-8">
 <div class="para">In our example, we did the following:</div>
 <ol class="decimal" id="subsec-OptimizationFramework-8-1">
 <li id="subsec-OptimizationFramework-8-1-1">
 <div class="para" id="subsec-OptimizationFramework-8-1-1-1">
-<em class="emphasis">Label variables.</em> Our two numbers were <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Label variables.</em> Our two numbers were <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#subsec-OptimizationFramework-8-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-OptimizationFramework-8-1-1" title="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="subsec-OptimizationFramework-8-1-2">
 <div class="para" id="subsec-OptimizationFramework-8-1-2-1">
-<em class="emphasis">Find a formula to optimize.</em> We said that <span class="process-math">\(P=ab\)</span> was the product.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Find a formula to optimize.</em> We said that <span class="process-math">\(P=ab\)</span> was the product.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#subsec-OptimizationFramework-8-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-OptimizationFramework-8-1-2" title="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 <li id="subsec-OptimizationFramework-8-1-3">
 <div class="para" id="subsec-OptimizationFramework-8-1-3-1">
-<em class="emphasis">Find a constraint.</em> We knew that <span class="process-math">\(a+b=14\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Find a constraint.</em> We knew that <span class="process-math">\(a+b=14\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#subsec-OptimizationFramework-8-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-OptimizationFramework-8-1-3" title="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
 <li id="subsec-OptimizationFramework-8-1-4">
 <div class="para" id="subsec-OptimizationFramework-8-1-4-1">
-<em class="emphasis">Find some domains.</em> We reasoned that <span class="process-math">\(0\leq a\leq 14\)</span> and <span class="process-math">\(0\leq b \leq 14\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Find some domains.</em> We reasoned that <span class="process-math">\(0\leq a\leq 14\)</span> and <span class="process-math">\(0\leq b \leq 14\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4"><a href="#subsec-OptimizationFramework-8-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+<div class="autopermalink" data-description="Item 4"><a href="#subsec-OptimizationFramework-8-1-4" title="Copy heading and permalink for Item 4">🔗</a></div>
 </li>
 <li id="subsec-OptimizationFramework-8-1-5">
 <div class="para" id="subsec-OptimizationFramework-8-1-5-1">
-<em class="emphasis">Set up a calculus statement.</em> We wanted to find the maximum of <span class="process-math">\(P(a)=a(\underbrace{14-a}_{b})\)</span> on <span class="process-math">\([0,14]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Set up a calculus statement.</em> We wanted to find the maximum of <span class="process-math">\(P(a)=a(\underbrace{14-a}_{b})\)</span> on <span class="process-math">\([0,14]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8-1-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 5"><a href="#subsec-OptimizationFramework-8-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+<div class="autopermalink" data-description="Item 5"><a href="#subsec-OptimizationFramework-8-1-5" title="Copy heading and permalink for Item 5">🔗</a></div>
 </li>
 <li id="subsec-OptimizationFramework-8-1-6">
 <div class="para" id="subsec-OptimizationFramework-8-1-6-1">
-<em class="emphasis">Do calculus.</em> We showed how we could use three different techniques to solve this.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Do calculus.</em> We showed how we could use three different techniques to solve this.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8-1-6-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 6"><a href="#subsec-OptimizationFramework-8-1-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+<div class="autopermalink" data-description="Item 6"><a href="#subsec-OptimizationFramework-8-1-6" title="Copy heading and permalink for Item 6">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OptimizationFramework-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Optimization Framework"><a href="#subsec-OptimizationFramework" title="Copy heading and permalink for Subsection: Optimization Framework" aria-label="Copy heading and permalink for Subsection: Optimization Framework">🔗</a></div></section><section class="subsection" id="subsec-VolumeAndSurfaceArea"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection: Optimization Framework"><a href="#subsec-OptimizationFramework" title="Copy heading and permalink for Subsection: Optimization Framework">🔗</a></div></section><section class="subsection" id="subsec-VolumeAndSurfaceArea"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Balancing Volume and Surface Area</span>
 </h3>
-<div class="para" id="subsec-VolumeAndSurfaceArea-2">Let’s use this new <a href="sec-Optimization.html#strat-Optimization" class="xref" data-knowl="./knowl/xref/strat-Optimization.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Optimization Process">Optimization Process</a> to solve a real problem. This one is a classic problem that (in my opinion) every student should try. I hope you’ll see why.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-VolumeAndSurfaceArea-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-VolumeAndSurfaceArea-2">Let’s use this new <a href="sec-Optimization.html#strat-Optimization" class="xref" data-knowl="./knowl/xref/strat-Optimization.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Optimization Process">Optimization Process</a> to solve a real problem. This one is a classic problem that (in my opinion) every student should try. I hope you’ll see why.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-VolumeAndSurfaceArea-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-VolumeCan"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">Constructing a Can.</span>
 </h4>
 <div class="introduction" id="act-VolumeCan-2">
-<div class="para" id="act-VolumeCan-2-1">A typical can of pop is 355 ml, and has around 15 ml of headspace (air). This results in a can that can hold approximately 23 cubic inches of volume.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-2-1">A typical can of pop is 355 ml, and has around 15 ml of headspace (air). This results in a can that can hold approximately 23 cubic inches of volume.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-VolumeCan-2-2">Let’s say we want to construct this can in the most efficient way, where we use the least amount of material. How could we do that? What are the dimensions of the can?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-2-2">Let’s say we want to construct this can in the most efficient way, where we use the least amount of material. How could we do that? What are the dimensions of the can?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="act-VolumeCan-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-VolumeCan-3-1-1">First, let’s think of our can and try to translate this to some geometric shape with variable names. Collect as much information as we can about this setup! What is the shape? What are the names of the dimensions?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-3-1-1">First, let’s think of our can and try to translate this to some geometric shape with variable names. Collect as much information as we can about this setup! What is the shape? What are the names of the dimensions?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="act-VolumeCan-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="act-VolumeCan-3-2-1">Our can is probably a cylinder! For a cylinder, we can define it based on a radius and height, and we normally call them <span class="process-math">\(r\)</span> and <span class="process-math">\(h\text{.}\)</span> Both of these will be measured in inches.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-3-2-1">Our can is probably a cylinder! For a cylinder, we can define it based on a radius and height, and we normally call them <span class="process-math">\(r\)</span> and <span class="process-math">\(h\text{.}\)</span> Both of these will be measured in inches.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.1.a.1"><a href="#act-VolumeCan-3-2" title="Copy heading and permalink for Solution 4.5.1.a.1" aria-label="Copy heading and permalink for Solution 4.5.1.a.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.1.a.1"><a href="#act-VolumeCan-3-2" title="Copy heading and permalink for Solution 4.5.1.a.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 4.5.1.a"><a href="#act-VolumeCan-3" title="Copy heading and permalink for Task 4.5.1.a" aria-label="Copy heading and permalink for Task 4.5.1.a">🔗</a></div></article><article class="task exercise-like" id="act-VolumeCan-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-VolumeCan-4-1-1">What is the actual measurement that we are trying to optimize? Are we finding a maximum or a minimum?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.5.1.a"><a href="#act-VolumeCan-3" title="Copy heading and permalink for Task 4.5.1.a">🔗</a></div></article><article class="task exercise-like" id="act-VolumeCan-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-VolumeCan-4-1-1">What is the actual measurement that we are trying to optimize? Are we finding a maximum or a minimum?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="act-VolumeCan-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="act-VolumeCan-4-2-1">We’re trying to minimize the amount of material used to create the can: this should match up with surface area!<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-4-2-1">We’re trying to minimize the amount of material used to create the can: this should match up with surface area!<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-VolumeCan-4-2-2">The formula for the surface area of a cylinder is <span class="process-math">\(A = 2\pi r^2 + 2\pi r h\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-4-2-2">The formula for the surface area of a cylinder is <span class="process-math">\(A = 2\pi r^2 + 2\pi r h\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-4-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.1.b.1"><a href="#act-VolumeCan-4-2" title="Copy heading and permalink for Solution 4.5.1.b.1" aria-label="Copy heading and permalink for Solution 4.5.1.b.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.1.b.1"><a href="#act-VolumeCan-4-2" title="Copy heading and permalink for Solution 4.5.1.b.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 4.5.1.b"><a href="#act-VolumeCan-4" title="Copy heading and permalink for Task 4.5.1.b" aria-label="Copy heading and permalink for Task 4.5.1.b">🔗</a></div></article><article class="task exercise-like" id="act-VolumeCan-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="act-VolumeCan-5-1-1">What other information about the can do we know? How do we translate this into a constraint, or a connection between our variables?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.5.1.b"><a href="#act-VolumeCan-4" title="Copy heading and permalink for Task 4.5.1.b">🔗</a></div></article><article class="task exercise-like" id="act-VolumeCan-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-VolumeCan-5-1-1">What other information about the can do we know? How do we translate this into a constraint, or a connection between our variables?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="act-VolumeCan-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="act-VolumeCan-5-2-1">
@@ -957,19 +968,19 @@ b=14-a \longrightarrow b \amp =14-7\\
 23=\pi r^2 h\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.1.c.1"><a href="#act-VolumeCan-5-2" title="Copy heading and permalink for Solution 4.5.1.c.1" aria-label="Copy heading and permalink for Solution 4.5.1.c.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.1.c.1"><a href="#act-VolumeCan-5-2" title="Copy heading and permalink for Solution 4.5.1.c.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 4.5.1.c"><a href="#act-VolumeCan-5" title="Copy heading and permalink for Task 4.5.1.c" aria-label="Copy heading and permalink for Task 4.5.1.c">🔗</a></div></article><article class="task exercise-like" id="act-VolumeCan-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-VolumeCan-6-1-1">What kinds of values can our variables take on? Is there a smallest value for either? A largest? Are there other limitations to these?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.5.1.c"><a href="#act-VolumeCan-5" title="Copy heading and permalink for Task 4.5.1.c">🔗</a></div></article><article class="task exercise-like" id="act-VolumeCan-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-VolumeCan-6-1-1">What kinds of values can our variables take on? Is there a smallest value for either? A largest? Are there other limitations to these?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="act-VolumeCan-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="act-VolumeCan-6-2-1">It’s hopefully obvious that we need positive dimensions to make sense: we can’t have a can with a negative radius or a negative height.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-6-2-1">It’s hopefully obvious that we need positive dimensions to make sense: we can’t have a can with a negative radius or a negative height.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-VolumeCan-6-2-2">Notice, also, that neither dimension can be equal to <span class="process-math">\(0\text{:}\)</span> if one of them were <span class="process-math">\(0\text{,}\)</span> then the volume would also be <span class="process-math">\(0\text{,}\)</span> which doesn’t work with our constraint!<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-6-2-2">Notice, also, that neither dimension can be equal to <span class="process-math">\(0\text{:}\)</span> if one of them were <span class="process-math">\(0\text{,}\)</span> then the volume would also be <span class="process-math">\(0\text{,}\)</span> which doesn’t work with our constraint!<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-6-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-VolumeCan-6-2-3">We can also notice that as one dimension gets close to 0, think about the radius for example, then the other dimension, the height in this case, would need to get <em class="emphasis">really</em> large to compensate and keep the volume fixed.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-6-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-6-2-3">We can also notice that as one dimension gets close to 0, think about the radius for example, then the other dimension, the height in this case, would need to get <em class="emphasis">really</em> large to compensate and keep the volume fixed.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-6-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="act-VolumeCan-6-2-4">
 <div class="para">All of this to say that our intervals are:</div>
@@ -979,61 +990,61 @@ r \amp \gt 0\\
 h \amp \gt 0
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-6-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-6-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.1.d.1"><a href="#act-VolumeCan-6-2" title="Copy heading and permalink for Solution 4.5.1.d.1" aria-label="Copy heading and permalink for Solution 4.5.1.d.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.1.d.1"><a href="#act-VolumeCan-6-2" title="Copy heading and permalink for Solution 4.5.1.d.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 4.5.1.d"><a href="#act-VolumeCan-6" title="Copy heading and permalink for Task 4.5.1.d" aria-label="Copy heading and permalink for Task 4.5.1.d">🔗</a></div></article><article class="task exercise-like" id="act-VolumeCan-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="act-VolumeCan-7-1-1">Now we need to set up a calculus statement. This part mostly relies on us finding a way to build a single-variable function defining the surface area. Build that function, and then write down the calculus statement.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.5.1.d"><a href="#act-VolumeCan-6" title="Copy heading and permalink for Task 4.5.1.d">🔗</a></div></article><article class="task exercise-like" id="act-VolumeCan-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-VolumeCan-7-1-1">Now we need to set up a calculus statement. This part mostly relies on us finding a way to build a single-variable function defining the surface area. Build that function, and then write down the calculus statement.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="act-VolumeCan-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-VolumeCan-7-2-1">Can you solve the constraint, <span class="process-math">\(23=\pi r^2 h\)</span> for one of the variables? Can you then use that replace or substitute out one of the variables in our surface area formula to create a function, <span class="process-math">\(A(h)\)</span> or <span class="process-math">\(A(r)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-7-2-1">Can you solve the constraint, <span class="process-math">\(23=\pi r^2 h\)</span> for one of the variables? Can you then use that replace or substitute out one of the variables in our surface area formula to create a function, <span class="process-math">\(A(h)\)</span> or <span class="process-math">\(A(r)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 4.5.1.e.1"><a href="#act-VolumeCan-7-2" title="Copy heading and permalink for Hint 4.5.1.e.1" aria-label="Copy heading and permalink for Hint 4.5.1.e.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 4.5.1.e.1"><a href="#act-VolumeCan-7-2" title="Copy heading and permalink for Hint 4.5.1.e.1">🔗</a></div>
 </div></details><details id="act-VolumeCan-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="act-VolumeCan-7-3-1">
 <div class="para">We have two options here, depending on which variable you isolated in the constraint and then substituted. These are the two ways of isolating for a variable in the constraint:</div>
 <ol class="decimal" id="act-VolumeCan-7-3-1-1">
 <li id="act-VolumeCan-7-3-1-1-1">
 <div class="para" id="act-VolumeCan-7-3-1-1-1-1">
-<span class="process-math">\(\displaystyle \displaystyle 23=\pi r^2 h \longrightarrow h = \frac{23}{\pi r^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \displaystyle 23=\pi r^2 h \longrightarrow h = \frac{23}{\pi r^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-3-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#act-VolumeCan-7-3-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#act-VolumeCan-7-3-1-1-1" title="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="act-VolumeCan-7-3-1-1-2">
 <div class="para" id="act-VolumeCan-7-3-1-1-2-1">
-<span class="process-math">\(\displaystyle \displaystyle 23 = \pi r^2 h \longrightarrow r = \sqrt[3]{\frac{23}{\pi h}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \displaystyle 23 = \pi r^2 h \longrightarrow r = \sqrt[3]{\frac{23}{\pi h}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-3-1-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#act-VolumeCan-7-3-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#act-VolumeCan-7-3-1-1-2" title="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
 <ol class="decimal" id="act-VolumeCan-7-3-1-2">
 <li id="act-VolumeCan-7-3-1-2-1">
-<div class="para" id="act-VolumeCan-7-3-1-2-1-1">We want to find the minimum of <span class="process-math">\(A(r) = 2\pi r + \dfrac{46}{r}\)</span> on <span class="process-math">\((0,\infty)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-7-3-1-2-1-1">We want to find the minimum of <span class="process-math">\(A(r) = 2\pi r + \dfrac{46}{r}\)</span> on <span class="process-math">\((0,\infty)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-3-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#act-VolumeCan-7-3-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#act-VolumeCan-7-3-1-2-1" title="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="act-VolumeCan-7-3-1-2-2">
-<div class="para" id="act-VolumeCan-7-3-1-2-2-1">We want to find the minimum of <span class="process-math">\(A(h)=2\pi\sqrt[3]{\dfrac{23}{\pi h}} + \dfrac{46}{h}\)</span> on <span class="process-math">\((0,\infty)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-3-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-7-3-1-2-2-1">We want to find the minimum of <span class="process-math">\(A(h)=2\pi\sqrt[3]{\dfrac{23}{\pi h}} + \dfrac{46}{h}\)</span> on <span class="process-math">\((0,\infty)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-3-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#act-VolumeCan-7-3-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#act-VolumeCan-7-3-1-2-2" title="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
 <div class="para">Personally, I think the first option is probably easier to work with.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-7-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.1.e.1"><a href="#act-VolumeCan-7-3" title="Copy heading and permalink for Solution 4.5.1.e.1" aria-label="Copy heading and permalink for Solution 4.5.1.e.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.1.e.1"><a href="#act-VolumeCan-7-3" title="Copy heading and permalink for Solution 4.5.1.e.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Task 4.5.1.e"><a href="#act-VolumeCan-7" title="Copy heading and permalink for Task 4.5.1.e" aria-label="Copy heading and permalink for Task 4.5.1.e">🔗</a></div></article><article class="task exercise-like" id="act-VolumeCan-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="act-VolumeCan-8-1-1">Do some calculus to find the global maximum or minimum, and solve the optimization problem.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.5.1.e"><a href="#act-VolumeCan-7" title="Copy heading and permalink for Task 4.5.1.e">🔗</a></div></article><article class="task exercise-like" id="act-VolumeCan-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-VolumeCan-8-1-1">Do some calculus to find the global maximum or minimum, and solve the optimization problem.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="act-VolumeCan-8-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-VolumeCan-8-2-1">Find a derivative, then find critical points, and test them using with the <a href="sec-IncreasingDecreasing.html#thm-FirstDerivativeTest" class="xref" data-knowl="./knowl/xref/thm-FirstDerivativeTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.2.6: First Derivative Test">First Derivative Test</a> or the <a href="sec-Concavity.html#thm-SecondDerivativeTest" class="xref" data-knowl="./knowl/xref/thm-SecondDerivativeTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.3.3: Second Derivative Test for Local Maximums or Local Minimums">Second Derivative Test for Local Maximums or Local Minimums</a>. Make sure you find the other dimension after you’ve confirmed that you found the minimum of the <span class="process-math">\(A\)</span> function!<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-8-2-1">Find a derivative, then find critical points, and test them using with the <a href="sec-IncreasingDecreasing.html#thm-FirstDerivativeTest" class="xref" data-knowl="./knowl/xref/thm-FirstDerivativeTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.2.6: First Derivative Test">First Derivative Test</a> or the <a href="sec-Concavity.html#thm-SecondDerivativeTest" class="xref" data-knowl="./knowl/xref/thm-SecondDerivativeTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.3.3: Second Derivative Test for Local Maximums or Local Minimums">Second Derivative Test for Local Maximums or Local Minimums</a>. Make sure you find the other dimension after you’ve confirmed that you found the minimum of the <span class="process-math">\(A\)</span> function!<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 4.5.1.f.1"><a href="#act-VolumeCan-8-2" title="Copy heading and permalink for Hint 4.5.1.f.1" aria-label="Copy heading and permalink for Hint 4.5.1.f.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 4.5.1.f.1"><a href="#act-VolumeCan-8-2" title="Copy heading and permalink for Hint 4.5.1.f.1">🔗</a></div>
 </div></details><details id="act-VolumeCan-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="act-VolumeCan-8-3-1">
 <div class="para">Let’s look at the version with <span class="process-math">\(A(r) = 2\pi r^2 + \dfrac{46}{r}\)</span> on <span class="process-math">\((0,\infty)\text{.}\)</span>
@@ -1057,56 +1068,56 @@ r \amp = \sqrt[3]{\frac{23}{2\pi}}
 <em class="emphasis">FDT:</em> <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t2" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-5-1-1">
-<span class="process-math">\(r\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(r\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t2" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-5-2-1">
-<span class="process-math">\(\left(0,\sqrt[3]{\frac{23}{2\pi}}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left(0,\sqrt[3]{\frac{23}{2\pi}}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t2" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-5-3-1">
-<span class="process-math">\(\sqrt[3]{\frac{23}{2\pi}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\sqrt[3]{\frac{23}{2\pi}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-5-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t2" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-5-4-1">
-<span class="process-math">\(\left(\sqrt[3]{\frac{23}{2\pi}},\infty\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\left(\sqrt[3]{\frac{23}{2\pi}},\infty\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-5-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 </tr>
 <tr>
 <td class="c m b1 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-6-1-1">
-<span class="process-math">\(A'\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A'\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-6-2-1">
-<span class="process-math">\(\ominus\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\ominus\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-6-3-1">
-<span class="process-math">\(0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-6-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b1 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-6-4-1">
-<span class="process-math">\(\oplus\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\oplus\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-6-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 </tr>
 <tr>
 <td class="c m b0 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-7-1-1">
-<span class="process-math">\(A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 <td class="c m b0 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-7-2-1">
-<span class="process-math">\(\searrow\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\searrow\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-7-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
-<td class="c m b0 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-7-3-1"><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></td>
+<td class="c m b0 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-7-3-1"><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-7-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div></div></td>
 <td class="c m b0 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-7-4-1">
-<span class="process-math">\(\nearrow\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-7-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\nearrow\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-7-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 </tr>
 <tr>
 <td class="c m b2 r0 l0 t0 lines"></td>
-<td class="c m b2 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-8-2-1">decreasing<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<td class="c m b2 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-8-2-1">decreasing<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-8-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
-<td class="c m b2 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-8-3-1">local min<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<td class="c m b2 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-8-3-1">local min<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-8-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
-<td class="c m b2 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-8-4-1">increasing<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-8-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<td class="c m b2 r0 l0 t0" style="max-width:150px;"><div class="para" id="act-VolumeCan-8-3-1-6-1-1-2-8-4-1">increasing<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1-2-8-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></td>
 </tr>
-</table></div> Since this is the only turning point, then we know that there is a global minimum of <span class="process-math">\(A\)</span> at <span class="process-math">\(r=\sqrt[3]{\frac{23}{2\pi}}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</table></div> Since this is the only turning point, then we know that there is a global minimum of <span class="process-math">\(A\)</span> at <span class="process-math">\(r=\sqrt[3]{\frac{23}{2\pi}}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#act-VolumeCan-8-3-1-6-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#act-VolumeCan-8-3-1-6-1" title="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="act-VolumeCan-8-3-1-6-2">
 <div class="para logical" id="act-VolumeCan-8-3-1-6-2-1">
@@ -1117,11 +1128,11 @@ A''(r) = 4\pi + \frac{92}{r^3}
 \end{equation*}
 </div>
 <div class="para">Hang on one second: notice that no matter what, since <span class="process-math">\(r\gt 0\text{,}\)</span> then we can see that <span class="process-math">\(A''(r)\gt 0\text{.}\)</span> We don’t even need to evaluate this second derivative at the critical point to know that the function is concave up here!</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-VolumeCan-8-3-1-6-2-2">So then we have to have a local minimum, and since it’s the only turning point, a global minimum of <span class="process-math">\(A\)</span> at <span class="process-math">\(r=\sqrt[3]{\dfrac{23}{2\pi}}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-8-3-1-6-2-2">So then we have to have a local minimum, and since it’s the only turning point, a global minimum of <span class="process-math">\(A\)</span> at <span class="process-math">\(r=\sqrt[3]{\dfrac{23}{2\pi}}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1-6-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#act-VolumeCan-8-3-1-6-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#act-VolumeCan-8-3-1-6-2" title="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
 <div class="para">So we found our minimum! Now we just need to find the other dimension, <span class="process-math">\(h\text{.}\)</span>
@@ -1136,47 +1147,47 @@ h \amp 2 \sqrt[3]{\frac{23}{2\pi}}
 \end{align*}
 </div>
 <div class="para">This is a lot of algebra, when we could have just plopped these values into a calculator and noticed the same, interesting thing.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-8-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.5.1.f.1"><a href="#act-VolumeCan-8-3" title="Copy heading and permalink for Solution 4.5.1.f.1" aria-label="Copy heading and permalink for Solution 4.5.1.f.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.1.f.1"><a href="#act-VolumeCan-8-3" title="Copy heading and permalink for Solution 4.5.1.f.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Task 4.5.1.f"><a href="#act-VolumeCan-8" title="Copy heading and permalink for Task 4.5.1.f" aria-label="Copy heading and permalink for Task 4.5.1.f">🔗</a></div></article><article class="task exercise-like" id="act-VolumeCan-9"><h5 class="heading"><span class="codenumber">(g)</span></h5>
-<div class="para" id="act-VolumeCan-9-1-1">What is the relationship between <span class="process-math">\(r\)</span> and <span class="process-math">\(h\text{,}\)</span> here? How do they compare? What about the height and diameter of our can?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="act-VolumeCan-9-1-2">Is this relationship noticeable in a typical can of pop?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-9-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.5.1.f"><a href="#act-VolumeCan-8" title="Copy heading and permalink for Task 4.5.1.f">🔗</a></div></article><article class="task exercise-like" id="act-VolumeCan-9"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para" id="act-VolumeCan-9-1-1">What is the relationship between <span class="process-math">\(r\)</span> and <span class="process-math">\(h\text{,}\)</span> here? How do they compare? What about the height and diameter of our can?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-9-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="act-VolumeCan-9-1-2">Is this relationship noticeable in a typical can of pop?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-9-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="act-VolumeCan-9-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-VolumeCan-9-2-1">The height is twice the radius, or the height is equal to the diameter!<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-9-2-1">The height is twice the radius, or the height is equal to the diameter!<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-9-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-VolumeCan-9-2-2">We might call this a "square-cylinder", since the "width" and the height of the cylinder are equal.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-9-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-9-2-2">We might call this a "square-cylinder", since the "width" and the height of the cylinder are equal.<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-9-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-VolumeCan-9-2-3">Do you ever see "square-cylinder" cans?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-9-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-VolumeCan-9-2-3">Do you ever see "square-cylinder" cans?<div class="autopermalink" data-description="Paragraph"><a href="#act-VolumeCan-9-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 4.5.1.g.1"><a href="#act-VolumeCan-9-2" title="Copy heading and permalink for Hint 4.5.1.g.1" aria-label="Copy heading and permalink for Hint 4.5.1.g.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 4.5.1.g.1"><a href="#act-VolumeCan-9-2" title="Copy heading and permalink for Hint 4.5.1.g.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 4.5.1.g"><a href="#act-VolumeCan-9" title="Copy heading and permalink for Task 4.5.1.g" aria-label="Copy heading and permalink for Task 4.5.1.g">🔗</a></div></article><div class="autopermalink" data-description="Activity 4.5.1: Constructing a Can"><a href="#act-VolumeCan" title="Copy heading and permalink for Activity 4.5.1: Constructing a Can" aria-label="Copy heading and permalink for Activity 4.5.1: Constructing a Can">🔗</a></div></article><div class="para" id="subsec-VolumeAndSurfaceArea-4">So why, then, do we never see cans that look like this? It is certainly worth thinking about how the setup and assumptions we made in this activity might not be the way things work in real life.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-VolumeAndSurfaceArea-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.5.1.g"><a href="#act-VolumeCan-9" title="Copy heading and permalink for Task 4.5.1.g">🔗</a></div></article><div class="autopermalink" data-description="Activity 4.5.1: Constructing a Can"><a href="#act-VolumeCan" title="Copy heading and permalink for Activity 4.5.1: Constructing a Can">🔗</a></div></article><div class="para" id="subsec-VolumeAndSurfaceArea-4">So why, then, do we never see cans that look like this? It is certainly worth thinking about how the setup and assumptions we made in this activity might not be the way things work in real life.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-VolumeAndSurfaceArea-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-VolumeAndSurfaceArea-5">What are some reasons that we might not see these dimensions in a can of pop?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-VolumeAndSurfaceArea-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-VolumeAndSurfaceArea-5">What are some reasons that we might not see these dimensions in a can of pop?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-VolumeAndSurfaceArea-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="note remark-like" id="subsec-VolumeAndSurfaceArea-6"><h4 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">4.5.2</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-VolumeAndSurfaceArea-6-1">This question (why do the dimensions of cans not match what we found as the optimal solution?) is interesting, and sometime in the in the 1980’s, a math professor felt strongly enough about it that they wrote a letter to Carnation, a brand of food products that produces canned goods, asking why reality doesn’t match mathematics.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-VolumeAndSurfaceArea-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-VolumeAndSurfaceArea-6-1">This question (why do the dimensions of cans not match what we found as the optimal solution?) is interesting, and sometime in the in the 1980’s, a math professor felt strongly enough about it that they wrote a letter to Carnation, a brand of food products that produces canned goods, asking why reality doesn’t match mathematics.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-VolumeAndSurfaceArea-6-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-VolumeAndSurfaceArea-6-2">The professor received a response from the Assistant Product Manager of Friskies Buffet with 5 reasons for the non-square dimensions. The full text of the letter can be found here: <a href="app-CarnationLetter.html" class="internal" title="Appendix A: Carnation Letter">Appendix A Carnation Letter</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-VolumeAndSurfaceArea-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-VolumeAndSurfaceArea-6-2">The professor received a response from the Assistant Product Manager of Friskies Buffet with 5 reasons for the non-square dimensions. The full text of the letter can be found here: <a href="app-CarnationLetter.html" class="internal" title="Appendix A: Carnation Letter">Appendix A Carnation Letter</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-VolumeAndSurfaceArea-6-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Note 4.5.2"><a href="#subsec-VolumeAndSurfaceArea-6" title="Copy heading and permalink for Note 4.5.2" aria-label="Copy heading and permalink for Note 4.5.2">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Balancing Volume and Surface Area"><a href="#subsec-VolumeAndSurfaceArea" title="Copy heading and permalink for Subsection: Balancing Volume and Surface Area" aria-label="Copy heading and permalink for Subsection: Balancing Volume and Surface Area">🔗</a></div></section><section class="subsection" id="subsec-MoreOptimizationExamples"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Note 4.5.2"><a href="#subsec-VolumeAndSurfaceArea-6" title="Copy heading and permalink for Note 4.5.2">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Balancing Volume and Surface Area"><a href="#subsec-VolumeAndSurfaceArea" title="Copy heading and permalink for Subsection: Balancing Volume and Surface Area">🔗</a></div></section><section class="subsection" id="subsec-MoreOptimizationExamples"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">What Other Examples Can We Do?</span>
 </h3>
-<div class="para" id="subsec-MoreOptimizationExamples-2">There’s a really important point to make from the <a href="app-CarnationLetter.html" class="internal" title="Appendix A: Carnation Letter">Carnation Letter</a>: in real life, our optimization problems are multi-variable problems. We’re balancing <em class="emphasis">many</em> different aspects of a process or a problem to find an optimal solution. That’s hard to do in a calculus course that focuses on single-variable functions!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreOptimizationExamples-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-MoreOptimizationExamples-2">There’s a really important point to make from the <a href="app-CarnationLetter.html" class="internal" title="Appendix A: Carnation Letter">Carnation Letter</a>: in real life, our optimization problems are multi-variable problems. We’re balancing <em class="emphasis">many</em> different aspects of a process or a problem to find an optimal solution. That’s hard to do in a calculus course that focuses on single-variable functions!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreOptimizationExamples-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-MoreOptimizationExamples-3">So what kinds of problems can we actually do?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreOptimizationExamples-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-MoreOptimizationExamples-3">So what kinds of problems can we actually do?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreOptimizationExamples-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-MoreOptimizationExamples-4">There are a bunch, but they don’t really stand up to intense scrutiny: if we looked carefully at most of the "classic" optimization problems that we see in calculus texts, they’d fall apart just like the optimal can problem from <a href="sec-Optimization.html#act-VolumeCan" class="xref" data-knowl="./knowl/xref/act-VolumeCan.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 4.5.1: Constructing a Can">Activity 4.5.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreOptimizationExamples-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-MoreOptimizationExamples-4">There are a bunch, but they don’t really stand up to intense scrutiny: if we looked carefully at most of the "classic" optimization problems that we see in calculus texts, they’d fall apart just like the optimal can problem from <a href="sec-Optimization.html#act-VolumeCan" class="xref" data-knowl="./knowl/xref/act-VolumeCan.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 4.5.1: Constructing a Can">Activity 4.5.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreOptimizationExamples-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-MoreOptimizationExamples-5">That said, it’s good to practice thinking about using constraints and translating physical situations into formulas and functions, so try the practice problems to get used to this part of the optimization process!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreOptimizationExamples-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-MoreOptimizationExamples-5">That said, it’s good to practice thinking about using constraints and translating physical situations into formulas and functions, so try the practice problems to get used to this part of the optimization process!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreOptimizationExamples-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: What Other Examples Can We Do?"><a href="#subsec-MoreOptimizationExamples" title="Copy heading and permalink for Subsection: What Other Examples Can We Do?" aria-label="Copy heading and permalink for Subsection: What Other Examples Can We Do?">🔗</a></div></section><div class="autopermalink" data-description="Section 4.5: Optimization"><a href="#sec-Optimization" title="Copy heading and permalink for Section 4.5: Optimization" aria-label="Copy heading and permalink for Section 4.5: Optimization">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Subsection: What Other Examples Can We Do?"><a href="#subsec-MoreOptimizationExamples" title="Copy heading and permalink for Subsection: What Other Examples Can We Do?">🔗</a></div></section><div class="autopermalink" data-description="Section 4.5: Optimization"><a href="#sec-Optimization" title="Copy heading and permalink for Section 4.5: Optimization">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-GlobalMaxMins.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-LinearApproximation.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

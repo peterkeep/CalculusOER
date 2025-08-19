@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -168,6 +169,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-DefiningALimit" class="internal"><span class="title">Defining a Limit</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-ApproximatingLimits" class="internal"><span class="title">Approximating Limits Using Our New Definition</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#ex-DefinitionOfLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -175,6 +177,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-AddingPrecisionToEstimations" class="internal"><span class="title">Adding Precision to Our Estimations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-LimitProperties" class="internal"><span class="title">Limit Properties</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#ex-EvaluatingLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -182,6 +185,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-FirstIndeterminateForms" class="internal"><span class="title">A First Introduction to Indeterminate Forms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-WhatIfIndeterminateForms" class="internal"><span class="title">What if There Is No Algebra Trick?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#exercises-" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section contains-active">
@@ -189,9 +193,16 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits" class="internal"><span class="title">Infinite Limits</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits" class="internal"><span class="title">End Behavior Limits</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#ex-LimitsInvolvingInfinity" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-WeirdFunctionsWeirdBehavior" class="internal"><span class="title">Weird Functions, Weird Behavior</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-SqueezeTheorem" class="internal"><span class="title">Squeeze Theorem</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Continuity.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Continuity and the Intermediate Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -599,112 +610,116 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-LimitsInvolvingInfinity"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.4</span><span class="space"> </span><span class="title">Limits Involving Infinity</span>
 </h2>
-<section class="introduction" id="sec-LimitsInvolvingInfinity-2"><div class="para" id="sec-LimitsInvolvingInfinity-2-1">Two types of limits involving infinity. In both cases, we’ll mostly just consider what happens when we divide by small things and what happens when we divide by big things. We can summarize this here, though:<div class="autopermalink" data-description="Paragraph"><a href="#sec-LimitsInvolvingInfinity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-LimitsInvolvingInfinity-2"><div class="para" id="sec-LimitsInvolvingInfinity-2-1">Two types of limits involving infinity. In both cases, we’ll mostly just consider what happens when we divide by small things and what happens when we divide by big things. We can summarize this here, though:<div class="autopermalink" data-description="Paragraph"><a href="#sec-LimitsInvolvingInfinity-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-LimitsInvolvingInfinity-2-2">
-<em class="emphasis">Fractions with small denominators are big, and fractions with big denominators are small.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-LimitsInvolvingInfinity-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Fractions with small denominators are big, and fractions with big denominators are small.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-LimitsInvolvingInfinity-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsec-InfiniteLimits"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Infinite Limits</span>
 </h3>
+<div class="para" id="subsec-InfiniteLimits-2">When we talked about indeterminate forms in <a href="sec-IndeterminateForms.html" class="internal" title="Section 1.3: First Indeterminate Forms">Section 1.3</a>, we noticed that the function value wasn’t defined, since we divided by 0. Specifically, we were looking at the <span class="process-math">\(\frac{0}{0}\)</span> form in the limit. What happens in other cases when we divide by 0 with a <em class="emphasis">nonzero</em> numerator?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="activity project-like" id="act-DivideBy0"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">What Happens When We Divide by 0?</span>
 </h4>
 <div class="introduction" id="act-DivideBy0-2">
-<div class="para" id="act-DivideBy0-2-1">First, let’s make sure we’re clear on one thing: there is no real number than is represented as some other number divided by 0.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-DivideBy0-2-1">First, let’s make sure we’re clear on one thing: there is no real number than is represented as some other number divided by 0.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-DivideBy0-2-2">When we talk about "dividing by 0" here (and in <a href="sec-IndeterminateForms.html" class="internal" title="Section 1.3: First Indeterminate Forms">Section 1.3</a>), we’re talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator <em class="emphasis">gets arbitrarily close to 0</em> (or, the limit of the denominator is 0).<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-DivideBy0-2-2">When we talk about "dividing by 0" here (and in <a href="sec-IndeterminateForms.html" class="internal" title="Section 1.3: First Indeterminate Forms">Section 1.3</a>), we’re talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator <em class="emphasis">gets arbitrarily close to 0</em> (or, the limit of the denominator is 0).<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="act-DivideBy0-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-DivideBy0-3-1-1">Remember when, once upon a time, you learned that dividing one a number by a  fraction is the same as multiplying the first number by the reciprocal of the fraction? Why is this true?<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-DivideBy0-3-1-1">Remember when, once upon a time, you learned that dividing one a number by a  fraction is the same as multiplying the first number by the reciprocal of the fraction? Why is this true?<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.1.a"><a href="#act-DivideBy0-3" title="Copy heading and permalink for Task 1.4.1.a" aria-label="Copy heading and permalink for Task 1.4.1.a">🔗</a></div></article><article class="task exercise-like" id="act-DivideBy0-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-DivideBy0-4-1-1">What is the relationship between a number and its reciprocal? How does the size of a number impact the size of the reciprocal? Why?<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.4.1.a"><a href="#act-DivideBy0-3" title="Copy heading and permalink for Task 1.4.1.a">🔗</a></div></article><article class="task exercise-like" id="act-DivideBy0-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-DivideBy0-4-1-1">What is the relationship between a number and its reciprocal? How does the size of a number impact the size of the reciprocal? Why?<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.1.b"><a href="#act-DivideBy0-4" title="Copy heading and permalink for Task 1.4.1.b" aria-label="Copy heading and permalink for Task 1.4.1.b">🔗</a></div></article><article class="task exercise-like" id="act-DivideBy0-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" data-description="Task 1.4.1.b"><a href="#act-DivideBy0-4" title="Copy heading and permalink for Task 1.4.1.b">🔗</a></div></article><article class="task exercise-like" id="act-DivideBy0-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para logical" id="act-DivideBy0-5-1-1">
 <div class="para">Consider <span class="process-math">\(12\div N\text{.}\)</span> What is the value of this division problem when:</div>
 <ul class="disc" id="act-DivideBy0-5-1-1-2">
 <li id="act-DivideBy0-5-1-1-2-1">
 <div class="para" id="act-DivideBy0-5-1-1-2-1-1">
-<span class="process-math">\(N=6\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-5-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=6\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-5-1-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-5-1-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-5-1-1-2-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideBy0-5-1-1-2-2">
 <div class="para" id="act-DivideBy0-5-1-1-2-2-1">
-<span class="process-math">\(N=4\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-5-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=4\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-5-1-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-5-1-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-5-1-1-2-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideBy0-5-1-1-2-3">
 <div class="para" id="act-DivideBy0-5-1-1-2-3-1">
-<span class="process-math">\(N=3\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-5-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=3\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-5-1-1-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-5-1-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-5-1-1-2-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideBy0-5-1-1-2-4">
 <div class="para" id="act-DivideBy0-5-1-1-2-4-1">
-<span class="process-math">\(N=2\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-5-1-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=2\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-5-1-1-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-5-1-1-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-5-1-1-2-4" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideBy0-5-1-1-2-5">
 <div class="para" id="act-DivideBy0-5-1-1-2-5-1">
-<span class="process-math">\(N=1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-5-1-1-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-5-1-1-2-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-5-1-1-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-5-1-1-2-5" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.1.c"><a href="#act-DivideBy0-5" title="Copy heading and permalink for Task 1.4.1.c" aria-label="Copy heading and permalink for Task 1.4.1.c">🔗</a></div></article><article class="task exercise-like" id="act-DivideBy0-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="autopermalink" data-description="Task 1.4.1.c"><a href="#act-DivideBy0-5" title="Copy heading and permalink for Task 1.4.1.c">🔗</a></div></article><article class="task exercise-like" id="act-DivideBy0-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para logical" id="act-DivideBy0-6-1-1">
 <div class="para">Let’s again consider <span class="process-math">\(12\div N\text{.}\)</span> What is the value of this division problem when:</div>
 <ul class="disc" id="act-DivideBy0-6-1-1-2">
 <li id="act-DivideBy0-6-1-1-2-1">
 <div class="para" id="act-DivideBy0-6-1-1-2-1-1">
-<span class="process-math">\(N = \frac{1}{2}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-6-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N = \frac{1}{2}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-6-1-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-6-1-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-6-1-1-2-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideBy0-6-1-1-2-2">
 <div class="para" id="act-DivideBy0-6-1-1-2-2-1">
-<span class="process-math">\(N= \frac{1}{3}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-6-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N= \frac{1}{3}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-6-1-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-6-1-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-6-1-1-2-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideBy0-6-1-1-2-3">
 <div class="para" id="act-DivideBy0-6-1-1-2-3-1">
-<span class="process-math">\(N=\frac{1}{4}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-6-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=\frac{1}{4}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-6-1-1-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-6-1-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-6-1-1-2-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideBy0-6-1-1-2-4">
 <div class="para" id="act-DivideBy0-6-1-1-2-4-1">
-<span class="process-math">\(N=\frac{1}{6}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-6-1-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=\frac{1}{6}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-6-1-1-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-6-1-1-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-6-1-1-2-4" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideBy0-6-1-1-2-5">
 <div class="para" id="act-DivideBy0-6-1-1-2-5-1">
-<span class="process-math">\(N=\frac{1}{1000}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-6-1-1-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=\frac{1}{1000}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-6-1-1-2-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-6-1-1-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideBy0-6-1-1-2-5" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.1.d"><a href="#act-DivideBy0-6" title="Copy heading and permalink for Task 1.4.1.d" aria-label="Copy heading and permalink for Task 1.4.1.d">🔗</a></div></article><article class="task exercise-like" id="act-DivideBy0-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="act-DivideBy0-7-1-1">Consider a function <span class="process-math">\(f(x) = \frac{12}{x}\text{.}\)</span> What happens to the value of this function when <span class="process-math">\(x\to 0^+\text{?}\)</span> Note that this means that the <span class="process-math">\(x\)</span>-values we’re considering most are very small and positive.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.4.1.d"><a href="#act-DivideBy0-6" title="Copy heading and permalink for Task 1.4.1.d">🔗</a></div></article><article class="task exercise-like" id="act-DivideBy0-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-DivideBy0-7-1-1">Consider a function <span class="process-math">\(f(x) = \frac{12}{x}\text{.}\)</span> What happens to the value of this function when <span class="process-math">\(x\to 0^+\text{?}\)</span> Note that this means that the <span class="process-math">\(x\)</span>-values we’re considering most are very small and positive.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.1.e"><a href="#act-DivideBy0-7" title="Copy heading and permalink for Task 1.4.1.e" aria-label="Copy heading and permalink for Task 1.4.1.e">🔗</a></div></article><article class="task exercise-like" id="act-DivideBy0-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="act-DivideBy0-8-1-1">Consider a function <span class="process-math">\(f(x) = \frac{12}{x}\text{.}\)</span> What happens to the value of this function when <span class="process-math">\(x\to 0^-\text{?}\)</span> Note that this means that the <span class="process-math">\(x\)</span>-values we’re considering most are very small and negative.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.4.1.e"><a href="#act-DivideBy0-7" title="Copy heading and permalink for Task 1.4.1.e">🔗</a></div></article><article class="task exercise-like" id="act-DivideBy0-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-DivideBy0-8-1-1">Consider a function <span class="process-math">\(f(x) = \frac{12}{x}\text{.}\)</span> What happens to the value of this function when <span class="process-math">\(x\to 0^-\text{?}\)</span> Note that this means that the <span class="process-math">\(x\)</span>-values we’re considering most are very small and negative.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-8-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.1.f"><a href="#act-DivideBy0-8" title="Copy heading and permalink for Task 1.4.1.f" aria-label="Copy heading and permalink for Task 1.4.1.f">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.4.1: What Happens When We Divide by 0?"><a href="#act-DivideBy0" title="Copy heading and permalink for Activity 1.4.1: What Happens When We Divide by 0?" aria-label="Copy heading and permalink for Activity 1.4.1: What Happens When We Divide by 0?">🔗</a></div></article><article class="definition definition-like" id="def-InfiniteLimit"><h4 class="heading">
+<div class="autopermalink" data-description="Task 1.4.1.f"><a href="#act-DivideBy0-8" title="Copy heading and permalink for Task 1.4.1.f">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.4.1: What Happens When We Divide by 0?"><a href="#act-DivideBy0" title="Copy heading and permalink for Activity 1.4.1: What Happens When We Divide by 0?">🔗</a></div></article><div class="para" id="subsec-InfiniteLimits-4">So we want to formalize this kind of behavior. We know that the limits that we’re looking at don’t exist (since there isn’t a single, real number that the function outputs are all close to), but there is definitely some sort of consistent behavior that we’d like to signify.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-InfiniteLimit"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Infinite Limit.</span>
 </h4>
-<div class="para" id="def-InfiniteLimit-2-1">We say that a function <span class="process-math">\(f(x)\)</span> has an <dfn class="terminology">infinite limit</dfn> at <span class="process-math">\(a\)</span> if <span class="process-math">\(f(x)\)</span> is arbitrarily large (positive or negative) when <span class="process-math">\(x\)</span> is sufficiently close to, but not equal to, <span class="process-math">\(x=a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-InfiniteLimit-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-InfiniteLimit-2-1">We say that a function <span class="process-math">\(f(x)\)</span> has an <dfn class="terminology">infinite limit</dfn> at <span class="process-math">\(a\)</span> if <span class="process-math">\(f(x)\)</span> is arbitrarily large (positive or negative) when <span class="process-math">\(x\)</span> is sufficiently close to, but not equal to, <span class="process-math">\(x=a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-InfiniteLimit-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="def-InfiniteLimit-2-2">
 <div class="para">We would then say, depending on the sign of the values of <span class="process-math">\(f(x)\text{,}\)</span> that:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def-Limit.html">
@@ -713,9 +728,11 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">If the sign of both one-sided limits are the same, we can say that <span class="process-math">\(\displaystyle \lim_{x\to a} f(x) = \pm \infty\)</span> (depending on the sign), but it is helpful to note that, by the definition of the <a href="sec-DefinitionOfLimits.html#def-Limit" class="xref" data-knowl="./knowl/xref/def-Limit.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.1: Limit of a Function">Limit of a Function</a>, this limit does not exist, since <span class="process-math">\(f(x)\)</span> is not arbitrarily close to a single real number.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#def-InfiniteLimit-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-InfiniteLimit-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.4.1: Infinite Limit"><a href="#def-InfiniteLimit" title="Copy heading and permalink for Definition 1.4.1: Infinite Limit" aria-label="Copy heading and permalink for Definition 1.4.1: Infinite Limit">🔗</a></div></article><article class="theorem theorem-like" id="thm-DivBy0-InfiniteLimit"><h4 class="heading">
+<div class="autopermalink" data-description="Definition 1.4.1: Infinite Limit"><a href="#def-InfiniteLimit" title="Copy heading and permalink for Definition 1.4.1: Infinite Limit">🔗</a></div></article><div class="para" id="subsec-InfiniteLimits-6">We know, from our adage “<em class="emphasis">Fractions with small denominators are big, and fractions with big denominators are small,</em>” that this type of behavior happens when the denominator is tiny compared to the numerator. We can summarize this:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-DivBy0-InfiniteLimit"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Dividing by 0 in a Limit.</span>
 </h4>
 <div class="para logical" id="thm-DivBy0-InfiniteLimit-2-1">
@@ -726,64 +743,214 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(\#\)</span> is meant to be some shorthand representation of a non-zero limit in the numerator (often, but not necessarily, some real number).</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-DivBy0-InfiniteLimit-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-DivBy0-InfiniteLimit-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 1.4.2: Dividing by 0 in a Limit"><a href="#thm-DivBy0-InfiniteLimit" title="Copy heading and permalink for Theorem 1.4.2: Dividing by 0 in a Limit" aria-label="Copy heading and permalink for Theorem 1.4.2: Dividing by 0 in a Limit">🔗</a></div></article><article class="assemblage assemblage-like" id="strat-InfiniteLimits"><h4 class="heading"><span class="title">Evaluating Infinite Limits.</span></h4>
+<div class="autopermalink" data-description="Theorem 1.4.2: Dividing by 0 in a Limit"><a href="#thm-DivBy0-InfiniteLimit" title="Copy heading and permalink for Theorem 1.4.2: Dividing by 0 in a Limit">🔗</a></div></article><div class="para" id="subsec-InfiniteLimits-8">These kinds of limits are great, in that they’re consistent to identify. We just look for this tiny denominator compared to the numerator, and go from there. We also know a lot about these types of limits, and can summarize this below.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="assemblage assemblage-like" id="strat-InfiniteLimits"><h4 class="heading"><span class="title">Evaluating Infinite Limits.</span></h4>
 <div class="para logical" id="strat-InfiniteLimits-2">
 <div class="para">Once we know that <span class="process-math">\(\displaystyle \lim_{x\to a}f(x) \stackrel{?}{\to} \frac{\#}{0}\text{,}\)</span> we know a bunch of information right away!</div>
 <ul class="disc" id="strat-InfiniteLimits-2-2">
 <li id="strat-InfiniteLimits-2-2-1">
-<div class="para" id="strat-InfiniteLimits-2-2-1-1">This limit doesn’t exist.<div class="autopermalink" data-description="Paragraph"><a href="#strat-InfiniteLimits-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strat-InfiniteLimits-2-2-1-1">This limit doesn’t exist.<div class="autopermalink" data-description="Paragraph"><a href="#strat-InfiniteLimits-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#strat-InfiniteLimits-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#strat-InfiniteLimits-2-2-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="strat-InfiniteLimits-2-2-2">
-<div class="para" id="strat-InfiniteLimits-2-2-2-1">The function <span class="process-math">\(f(x)\)</span> has a vertical asymptote at <span class="process-math">\(x=a\text{,}\)</span> causing these unbounded <span class="process-math">\(y\)</span>-values near <span class="process-math">\(x=a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#strat-InfiniteLimits-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strat-InfiniteLimits-2-2-2-1">The function <span class="process-math">\(f(x)\)</span> has a vertical asymptote at <span class="process-math">\(x=a\text{,}\)</span> causing these unbounded <span class="process-math">\(y\)</span>-values near <span class="process-math">\(x=a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#strat-InfiniteLimits-2-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#strat-InfiniteLimits-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#strat-InfiniteLimits-2-2-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="strat-InfiniteLimits-2-2-3">
-<div class="para" id="strat-InfiniteLimits-2-2-3-1">The one sided limits <em class="emphasis">must</em> be either <span class="process-math">\(\infty\)</span> or <span class="process-math">\(-\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#strat-InfiniteLimits-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strat-InfiniteLimits-2-2-3-1">The one sided limits <em class="emphasis">must</em> be either <span class="process-math">\(\infty\)</span> or <span class="process-math">\(-\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#strat-InfiniteLimits-2-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#strat-InfiniteLimits-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#strat-InfiniteLimits-2-2-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="strat-InfiniteLimits-2-2-4">
-<div class="para" id="strat-InfiniteLimits-2-2-4-1">We only need to focus on the sign of the one sided limits! And signs of products and quotients are easy to follow.<div class="autopermalink" data-description="Paragraph"><a href="#strat-InfiniteLimits-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strat-InfiniteLimits-2-2-4-1">We only need to focus on the sign of the one sided limits! And signs of products and quotients are easy to follow.<div class="autopermalink" data-description="Paragraph"><a href="#strat-InfiniteLimits-2-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#strat-InfiniteLimits-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#strat-InfiniteLimits-2-2-4" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#strat-InfiniteLimits-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#strat-InfiniteLimits-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="strat-InfiniteLimits-3">So a pretty typical process is to factor as much as we can, and check the sign of each factor (in a numerator or denominator) as <span class="process-math">\(x\to a^-\)</span> and <span class="process-math">\(x\to a^+\text{.}\)</span> From there, we can find the sign of <span class="process-math">\(f(x)\)</span> in both of those cases, which will tell us the one-sided limit.<div class="autopermalink" data-description="Paragraph"><a href="#strat-InfiniteLimits-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="strat-InfiniteLimits-3">So a pretty typical process is to factor as much as we can, and check the sign of each factor (in a numerator or denominator) as <span class="process-math">\(x\to a^-\)</span> and <span class="process-math">\(x\to a^+\text{.}\)</span> From there, we can find the sign of <span class="process-math">\(f(x)\)</span> in both of those cases, which will tell us the one-sided limit.<div class="autopermalink" data-description="Paragraph"><a href="#strat-InfiniteLimits-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: Evaluating Infinite Limits"><a href="#strat-InfiniteLimits" title="Copy heading and permalink for Assemblage: Evaluating Infinite Limits" aria-label="Copy heading and permalink for Assemblage: Evaluating Infinite Limits">🔗</a></div></article><article class="example example-like" id="subsec-InfiniteLimits-6"><h4 class="heading">
+<div class="autopermalink" data-description="Assemblage: Evaluating Infinite Limits"><a href="#strat-InfiniteLimits" title="Copy heading and permalink for Assemblage: Evaluating Infinite Limits">🔗</a></div></article><article class="example example-like" id="subsec-InfiniteLimits-10"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="subsec-InfiniteLimits-6-1"><div class="para" id="subsec-InfiniteLimits-6-1-1">For each function, find the relevant one-sided limits at the input-value mentioned. If you can use a two-sided limit statement to discuss the behavior of the function around this input-value, then do so.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="subsec-InfiniteLimits-10-1"><div class="para" id="subsec-InfiniteLimits-10-1-1">For each function, find the relevant one-sided limits at the input-value mentioned. If you can use a two-sided limit statement to discuss the behavior of the function around this input-value, then do so.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
-<article class="task exercise-like" id="subsec-InfiniteLimits-6-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="subsec-InfiniteLimits-6-2-1-1">
-<span class="process-math">\(\left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right)\)</span> and <span class="process-math">\(x=-4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="subsec-InfiniteLimits-10-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-InfiniteLimits-10-2-1-1">
+<span class="process-math">\(\left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right)\)</span> and <span class="process-math">\(x=-4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.3.a"><a href="#subsec-InfiniteLimits-6-2" title="Copy heading and permalink for Task 1.4.3.a" aria-label="Copy heading and permalink for Task 1.4.3.a">🔗</a></div></article><article class="task exercise-like" id="subsec-InfiniteLimits-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="subsec-InfiniteLimits-6-3-1-1">
-<span class="process-math">\(\left(\dfrac{4x^2-x^5}{x^2-4x+3}\right)\)</span> and <span class="process-math">\(x=1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="solutions"><details id="subsec-InfiniteLimits-10-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-InfiniteLimits-10-2-2-1">
+<div class="para">Let’s first factor the denominator: we want to see the factor <span class="process-math">\((x+4)\text{,}\)</span> where we divide by <span class="process-math">\(0\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Task 1.4.3.b"><a href="#subsec-InfiniteLimits-6-3" title="Copy heading and permalink for Task 1.4.3.b" aria-label="Copy heading and permalink for Task 1.4.3.b">🔗</a></div></article><article class="task exercise-like" id="subsec-InfiniteLimits-6-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="subsec-InfiniteLimits-6-4-1-1">
-<span class="process-math">\(\sec(\theta)\)</span> and <span class="process-math">\(\theta = \dfrac{\pi}{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right) = \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right)
+\end{equation*}
 </div>
-<div class="autopermalink" data-description="Task 1.4.3.c"><a href="#subsec-InfiniteLimits-6-4" title="Copy heading and permalink for Task 1.4.3.c" aria-label="Copy heading and permalink for Task 1.4.3.c">🔗</a></div></article><div class="autopermalink" data-description="Example 1.4.3"><a href="#subsec-InfiniteLimits-6" title="Copy heading and permalink for Example 1.4.3" aria-label="Copy heading and permalink for Example 1.4.3">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Infinite Limits"><a href="#subsec-InfiniteLimits" title="Copy heading and permalink for Subsection: Infinite Limits" aria-label="Copy heading and permalink for Subsection: Infinite Limits">🔗</a></div></section><section class="subsection" id="subsec-EndBehaviorLimits"><h3 class="heading hide-type">
+<div class="para">Now, when <span class="process-math">\(x\to 4\text{,}\)</span> we have <span class="process-math">\(\left(\dfrac{2x^2-5x+1}{(x+4)^2}\right)\stackrel{?}{\to} \frac{13}{0}\text{.}\)</span> This is our <span class="process-math">\(\frac{\#}{0}\)</span> form that tells us we have an infinite limit. We’re going to look at the one-sided limits, but let’s notice something:</div>
+<ul class="disc" id="subsec-InfiniteLimits-10-2-2-1-7">
+<li id="subsec-InfiniteLimits-10-2-2-1-7-1">
+<div class="para" id="subsec-InfiniteLimits-10-2-2-1-7-1-1">For <span class="process-math">\(x\)</span>-values close to <span class="process-math">\(4\text{,}\)</span> we expect that the numerator will be close to <span class="process-math">\(13\text{.}\)</span> No matter what “side” of <span class="process-math">\(13\)</span> it is, it’s still going to be positive.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-2-2-1-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-InfiniteLimits-10-2-2-1-7-1" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-InfiniteLimits-10-2-2-1-7-2">
+<div class="para" id="subsec-InfiniteLimits-10-2-2-1-7-2-1">For <span class="process-math">\(x\)</span>-values close to <span class="process-math">\(4\text{,}\)</span> we expect the denominator to be close to <span class="process-math">\(0\text{.}\)</span> Depending on what side of <span class="process-math">\(0\)</span> it is, it could be positive or negative.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-2-2-1-7-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-InfiniteLimits-10-2-2-1-7-2" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">So in our one-sided limits, we know that these both will be infinite limits (the function values will either approach <span class="process-math">\(-\infty\)</span> or <span class="process-math">\(\infty\)</span>). The only difference in these is the sign. So let’s check the signs!</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-InfiniteLimits-10-2-2-2">
+<div class="para">First, we’ll consider <span class="process-math">\(x\to -4^-\text{.}\)</span> That’s <span class="process-math">\(x\lt -4\text{.}\)</span> We know the numerator is positive, since it is close to <span class="process-math">\(13\text{,}\)</span> and we also know that the factor <span class="process-math">\(x+4\lt 0\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-InfiniteLimits-10-2-2-2-5">
+\begin{align*}
+\lim_{x\to-4^-} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) \amp = \lim_{x\to-4^-} \left(\dfrac{\overbrace{2x^2-5x+1}^{\approx 13}}{(\underbrace{x+4}_{\approx 0})^2}\right) \\
+\amp = \dfrac{\oplus}{(\ominus)^2}\\
+\amp = \oplus
+\end{align*}
+</div>
+<div class="para">So we know that <span class="process-math">\(\displaystyle \lim_{x\to-4^-} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) \)</span> is an infinite limit, and we know that it is positive.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to-4^-} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) =\infty
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-2-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-InfiniteLimits-10-2-2-3">
+<div class="para">Now we can check the signs of these factors when <span class="process-math">\(x\to-4^+\)</span> (and so <span class="process-math">\(x\gt-4\)</span>). The numerator is still close to <span class="process-math">\(13\text{,}\)</span> and so still negative. Now, <span class="process-math">\((x+4)\)</span> is positive, and is still being squared.</div>
+<div class="displaymath process-math" id="subsec-InfiniteLimits-10-2-2-3-5">
+\begin{align*}
+\lim_{x\to-4^+} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) \amp = \lim_{x\to-4^+} \left(\dfrac{\overbrace{2x^2-5x+1}^{\approx 13}}{(\underbrace{x+4}_{\approx 0})^2}\right) \\
+\amp = \dfrac{\oplus}{(\oplus)^2}\\
+\amp = \oplus
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-2-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-InfiniteLimits-10-2-2-4">
+<div class="para">Since this is an infinite limit and is also positive, we know that:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to-4^+} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) =\infty\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-2-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-InfiniteLimits-10-2-2-5">
+<div class="para">Since the function approaches <span class="process-math">\(\infty\)</span> on both sides, we can say that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to-4} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) =\infty\text{,}
+\end{equation*}
+</div>
+<div class="para">but we know that this limit does not exist (since the function values are not close to a single real number).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-2-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.4.3.a.1"><a href="#subsec-InfiniteLimits-10-2-2" title="Copy heading and permalink for Solution 1.4.3.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 1.4.3.a"><a href="#subsec-InfiniteLimits-10-2" title="Copy heading and permalink for Task 1.4.3.a">🔗</a></div></article><article class="task exercise-like" id="subsec-InfiniteLimits-10-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-InfiniteLimits-10-3-1-1">
+<span class="process-math">\(\left(\dfrac{4x^2-x^5}{x^2-4x+3}\right)\)</span> and <span class="process-math">\(x=1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-InfiniteLimits-10-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-InfiniteLimits-10-3-2-1">
+<div class="para">We can start this in a similar way: factor the denominator to see the places where we divide by <span class="process-math">\(0\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(\dfrac{4x^2-x^5}{x^2-4x+3}\right) = \left(\dfrac{4x^2-x^5}{(x-3)(x-1)}\right)\text{.}
+\end{equation*}
+</div>
+<div class="para">Now, when we think about the limit as <span class="process-math">\(x\to 1^-\text{,}\)</span> we’re thinking about <span class="process-math">\(x\lt 1\text{.}\)</span> We can check the signs, again! The numerator has <span class="process-math">\(4x^2-x^5 \to 3\text{,}\)</span> and so for <span class="process-math">\(x\)</span>-values slightly smaller than <span class="process-math">\(1\text{,}\)</span> this numerator is close to <span class="process-math">\(3\text{,}\)</span> and so positive. Similarly, <span class="process-math">\((x-3)\to -2\text{,}\)</span> and so for <span class="process-math">\(x\)</span>-values close to but less than <span class="process-math">\(1\text{,}\)</span> this is negative. Then, we can see that <span class="process-math">\((x-1)\to 0\text{.}\)</span> This is the part that gives us the <span class="process-math">\(\frac{\#}{0}\)</span> form.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-InfiniteLimits-10-3-2-2">
+<div class="para">For <span class="process-math">\(x\lt 1\text{,}\)</span> we have <span class="process-math">\((x-1)\lt 0\text{,}\)</span> and so this is negative.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 1^-}\left(\dfrac{\overbrace{4x^2-x^5}^{\oplus}}{(\underbrace{x-3}_{\ominus})(\underbrace{x-1}_{\ominus})}\right)\to \oplus
+\end{equation*}
+</div>
+<div class="para">And so this limit is a positive infinite limit:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 1^-} \left(\dfrac{4x^2-x^5}{(x-3)(x-1)}\right) = \infty\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-3-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-InfiniteLimits-10-3-2-3">
+<div class="para">Now we can similarly check the signs when <span class="process-math">\(x\to 1^+\text{,}\)</span> which is when <span class="process-math">\(x\gt 1\text{.}\)</span> Note that, since <span class="process-math">\(x\)</span> is still close to <span class="process-math">\(1\text{,}\)</span> the numerator and the factor <span class="process-math">\((x-3)\)</span> will retain their sign. But, for the factor <span class="process-math">\((x-1)\text{,}\)</span> we get <span class="process-math">\((x-1)\gt 0\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 1^-}\left(\dfrac{\overbrace{4x^2-x^5}^{\oplus}}{(\underbrace{x-3}_{\ominus})(\underbrace{x-1}_{\oplus})}\right)\to \ominus
+\end{equation*}
+</div>
+<div class="para">And so this limit is a negative infinite limit:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 1^+} \left(\dfrac{4x^2-x^5}{(x-3)(x-1)}\right) = -\infty\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-3-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.4.3.b.1"><a href="#subsec-InfiniteLimits-10-3-2" title="Copy heading and permalink for Solution 1.4.3.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 1.4.3.b"><a href="#subsec-InfiniteLimits-10-3" title="Copy heading and permalink for Task 1.4.3.b">🔗</a></div></article><article class="task exercise-like" id="subsec-InfiniteLimits-10-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-InfiniteLimits-10-4-1-1">
+<span class="process-math">\(\sec(\theta)\)</span> and <span class="process-math">\(\theta = \dfrac{\pi}{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-InfiniteLimits-10-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-InfiniteLimits-10-4-2-1">We can think of <span class="process-math">\(\sec(\theta)\)</span> as a reciprocal: <span class="process-math">\(\dfrac{1}{\cos(\theta)}\text{.}\)</span> Now, we can see that <span class="process-math">\(\cos\left(\frac{\pi}{2}\right) = 0\text{,}\)</span> hence this is an infinite limit.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-InfiniteLimits-10-4-2-2">Let’s visualize <span class="process-math">\(\cos\left(\frac{\pi}{2}\right)\text{,}\)</span> so that we can tell the sign of this denominator when <span class="process-math">\(\theta\)</span> is on either side of <span class="process-math">\(\frac{\pi}{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-4-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-OneSidedCos"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/./Limits/OneSidedCos.png" class="contained" alt="A unit circle with a point at (0,1) labeled (cos(pi/2),sin(pi/2)). On the right side of the point is a small blue arc labeled theta less than pi/2. On the left side of the point is a small red arc labeled theta greater than pi/2."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.4<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 1.4.4"><a href="#fig-OneSidedCos" title="Copy heading and permalink for Figure 1.4.4">🔗</a></div></figcaption></figure><div class="para" id="subsec-InfiniteLimits-10-4-2-4">We can see that for <span class="process-math">\(\theta\lt\frac{\pi}{2}\text{,}\)</span> we are looking at a point in the first quadrant with a positive horizontal component. So, in this case, <span class="process-math">\(\cos(\theta)\gt 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-4-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-InfiniteLimits-10-4-2-5">For the case when <span class="process-math">\(\theta\gt\frac{\pi}{2}\text{,}\)</span> though, we are looking in the second quadrant with a negative horizontal component. So we see that <span class="process-math">\(\cos(\theta)\lt 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-4-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-InfiniteLimits-10-4-2-6">
+<div class="para">All of this to say:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{\theta\to\frac{\pi}{2}^-} \sec(\theta) = \infty
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{\theta\to\frac{\pi}{2}^+} \sec(\theta) = -\infty
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-10-4-2-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.4.3.c.1"><a href="#subsec-InfiniteLimits-10-4-2" title="Copy heading and permalink for Solution 1.4.3.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 1.4.3.c"><a href="#subsec-InfiniteLimits-10-4" title="Copy heading and permalink for Task 1.4.3.c">🔗</a></div></article><div class="autopermalink" data-description="Example 1.4.3"><a href="#subsec-InfiniteLimits-10" title="Copy heading and permalink for Example 1.4.3">🔗</a></div></article><div class="para" id="subsec-InfiniteLimits-11">These are limits where <span class="process-math">\(f(x)\to \pm\infty\)</span> when <span class="process-math">\(x\to a\)</span> where <span class="process-math">\(a\)</span> is a real number. What about the other way around? Is there a case where <span class="process-math">\(x\to\pm\infty\text{,}\)</span> and what would we be looking at in the behavior of <span class="process-math">\(f(x)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-InfiniteLimits-11" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Infinite Limits"><a href="#subsec-InfiniteLimits" title="Copy heading and permalink for Subsection: Infinite Limits">🔗</a></div></section><section class="subsection" id="subsec-EndBehaviorLimits"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">End Behavior Limits</span>
 </h3>
 <article class="activity project-like" id="act-DivideByInfinity"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">What Happens When We Divide by Infinity?</span>
 </h4>
 <div class="introduction" id="act-DivideByInfinity-2">
-<div class="para" id="act-DivideByInfinity-2-1">Again, we need to start by making something clear: if we were really going to try divide some real number by infinity, then we would need to re-build our definition of what it means to divide. In the context we’re in right now, we only have division defined as an operation for real (and maybe complex) numbers. Since infinity is neither, then we will not literally divide by infinity.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-DivideByInfinity-2-1">Again, we need to start by making something clear: if we were really going to try divide some real number by infinity, then we would need to re-build our definition of what it means to divide. In the context we’re in right now, we only have division defined as an operation for real (and maybe complex) numbers. Since infinity is neither, then we will not literally divide by infinity.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-DivideByInfinity-2-2">When we talk about "dividing by infinity" here, we’re again talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator <em class="emphasis">gets arbitrarily large (positive or negative)</em> (or, the limit of the denominator is infinite).<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-DivideByInfinity-2-2">When we talk about "dividing by infinity" here, we’re again talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator <em class="emphasis">gets arbitrarily large (positive or negative)</em> (or, the limit of the denominator is infinite).<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="act-DivideByInfinity-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
@@ -792,85 +959,85 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="disc" id="act-DivideByInfinity-3-1-1-2">
 <li id="act-DivideByInfinity-3-1-1-2-1">
 <div class="para" id="act-DivideByInfinity-3-1-1-2-1-1">
-<span class="process-math">\(N=1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-3-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-3-1-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-3-1-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-3-1-1-2-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideByInfinity-3-1-1-2-2">
 <div class="para" id="act-DivideByInfinity-3-1-1-2-2-1">
-<span class="process-math">\(N=6\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-3-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=6\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-3-1-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-3-1-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-3-1-1-2-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideByInfinity-3-1-1-2-3">
 <div class="para" id="act-DivideByInfinity-3-1-1-2-3-1">
-<span class="process-math">\(N=12\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-3-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=12\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-3-1-1-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-3-1-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-3-1-1-2-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideByInfinity-3-1-1-2-4">
 <div class="para" id="act-DivideByInfinity-3-1-1-2-4-1">
-<span class="process-math">\(N=24\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-3-1-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=24\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-3-1-1-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-3-1-1-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-3-1-1-2-4" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideByInfinity-3-1-1-2-5">
 <div class="para" id="act-DivideByInfinity-3-1-1-2-5-1">
-<span class="process-math">\(N=1000\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-3-1-1-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=1000\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-3-1-1-2-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-3-1-1-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-3-1-1-2-5" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.2.a"><a href="#act-DivideByInfinity-3" title="Copy heading and permalink for Task 1.4.2.a" aria-label="Copy heading and permalink for Task 1.4.2.a">🔗</a></div></article><article class="task exercise-like" id="act-DivideByInfinity-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Task 1.4.2.a"><a href="#act-DivideByInfinity-3" title="Copy heading and permalink for Task 1.4.2.a">🔗</a></div></article><article class="task exercise-like" id="act-DivideByInfinity-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para logical" id="act-DivideByInfinity-4-1-1">
 <div class="para">Let’s again consider <span class="process-math">\(12\div N\text{.}\)</span> What is the value of this division problem when:</div>
 <ul class="disc" id="act-DivideByInfinity-4-1-1-2">
 <li id="act-DivideByInfinity-4-1-1-2-1">
 <div class="para" id="act-DivideByInfinity-4-1-1-2-1-1">
-<span class="process-math">\(N=-1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-4-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=-1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-4-1-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-4-1-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-4-1-1-2-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideByInfinity-4-1-1-2-2">
 <div class="para" id="act-DivideByInfinity-4-1-1-2-2-1">
-<span class="process-math">\(N=-6\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-4-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=-6\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-4-1-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-4-1-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-4-1-1-2-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideByInfinity-4-1-1-2-3">
 <div class="para" id="act-DivideByInfinity-4-1-1-2-3-1">
-<span class="process-math">\(N=-12\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-4-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=-12\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-4-1-1-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-4-1-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-4-1-1-2-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideByInfinity-4-1-1-2-4">
 <div class="para" id="act-DivideByInfinity-4-1-1-2-4-1">
-<span class="process-math">\(N=-24\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-4-1-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=-24\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-4-1-1-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-4-1-1-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-4-1-1-2-4" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-DivideByInfinity-4-1-1-2-5">
 <div class="para" id="act-DivideByInfinity-4-1-1-2-5-1">
-<span class="process-math">\(N=-1000\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-4-1-1-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(N=-1000\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-4-1-1-2-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-4-1-1-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-DivideByInfinity-4-1-1-2-5" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.2.b"><a href="#act-DivideByInfinity-4" title="Copy heading and permalink for Task 1.4.2.b" aria-label="Copy heading and permalink for Task 1.4.2.b">🔗</a></div></article><article class="task exercise-like" id="act-DivideByInfinity-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="act-DivideByInfinity-5-1-1">Consider a function <span class="process-math">\(f(x) = \frac{12}{x}\text{.}\)</span> What happens to the value of this function when <span class="process-math">\(x\to \infty\text{?}\)</span> Note that this means that the <span class="process-math">\(x\)</span>-values we’re considering most are very large and positive.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.4.2.b"><a href="#act-DivideByInfinity-4" title="Copy heading and permalink for Task 1.4.2.b">🔗</a></div></article><article class="task exercise-like" id="act-DivideByInfinity-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-DivideByInfinity-5-1-1">Consider a function <span class="process-math">\(f(x) = \frac{12}{x}\text{.}\)</span> What happens to the value of this function when <span class="process-math">\(x\to \infty\text{?}\)</span> Note that this means that the <span class="process-math">\(x\)</span>-values we’re considering most are very large and positive.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.2.c"><a href="#act-DivideByInfinity-5" title="Copy heading and permalink for Task 1.4.2.c" aria-label="Copy heading and permalink for Task 1.4.2.c">🔗</a></div></article><article class="task exercise-like" id="act-DivideByInfinity-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-DivideByInfinity-6-1-1">Consider a function <span class="process-math">\(f(x) = \frac{12}{x}\text{.}\)</span> What happens to the value of this function when <span class="process-math">\(x\to -\infty\text{?}\)</span> Note that this means that the <span class="process-math">\(x\)</span>-values we’re considering most are very large and negative.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.4.2.c"><a href="#act-DivideByInfinity-5" title="Copy heading and permalink for Task 1.4.2.c">🔗</a></div></article><article class="task exercise-like" id="act-DivideByInfinity-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-DivideByInfinity-6-1-1">Consider a function <span class="process-math">\(f(x) = \frac{12}{x}\text{.}\)</span> What happens to the value of this function when <span class="process-math">\(x\to -\infty\text{?}\)</span> Note that this means that the <span class="process-math">\(x\)</span>-values we’re considering most are very large and negative.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.2.d"><a href="#act-DivideByInfinity-6" title="Copy heading and permalink for Task 1.4.2.d" aria-label="Copy heading and permalink for Task 1.4.2.d">🔗</a></div></article><article class="task exercise-like" id="act-DivideByInfinity-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="act-DivideByInfinity-7-1-1">Why is there no difference in the behavior of <span class="process-math">\(f(x)\)</span> as <span class="process-math">\(x\to \infty\)</span> compared to <span class="process-math">\(x\to -\infty\)</span> when the sign of the function outputs are opposite (<span class="process-math">\(f(x)\gt 0\)</span> when <span class="process-math">\(x\to \infty\)</span> and <span class="process-math">\(f(x) \lt 0\)</span> when <span class="process-math">\(x\to-\infty\)</span>)?<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.4.2.d"><a href="#act-DivideByInfinity-6" title="Copy heading and permalink for Task 1.4.2.d">🔗</a></div></article><article class="task exercise-like" id="act-DivideByInfinity-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-DivideByInfinity-7-1-1">Why is there no difference in the behavior of <span class="process-math">\(f(x)\)</span> as <span class="process-math">\(x\to \infty\)</span> compared to <span class="process-math">\(x\to -\infty\)</span> when the sign of the function outputs are opposite (<span class="process-math">\(f(x)\gt 0\)</span> when <span class="process-math">\(x\to \infty\)</span> and <span class="process-math">\(f(x) \lt 0\)</span> when <span class="process-math">\(x\to-\infty\)</span>)?<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideByInfinity-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.2.e"><a href="#act-DivideByInfinity-7" title="Copy heading and permalink for Task 1.4.2.e" aria-label="Copy heading and permalink for Task 1.4.2.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.4.2: What Happens When We Divide by Infinity?"><a href="#act-DivideByInfinity" title="Copy heading and permalink for Activity 1.4.2: What Happens When We Divide by Infinity?" aria-label="Copy heading and permalink for Activity 1.4.2: What Happens When We Divide by Infinity?">🔗</a></div></article><article class="definition definition-like" id="def-LimitAtInfinity"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Limit at Infinity.</span>
+<div class="autopermalink" data-description="Task 1.4.2.e"><a href="#act-DivideByInfinity-7" title="Copy heading and permalink for Task 1.4.2.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.4.2: What Happens When We Divide by Infinity?"><a href="#act-DivideByInfinity" title="Copy heading and permalink for Activity 1.4.2: What Happens When We Divide by Infinity?">🔗</a></div></article><article class="definition definition-like" id="def-LimitAtInfinity"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Limit at Infinity.</span>
 </h4>
 <div class="para logical" id="def-LimitAtInfinity-2-1">
 <div class="para">If <span class="process-math">\(f(x)\)</span> is defined for all large and positive <span class="process-math">\(x\)</span>-values and <span class="process-math">\(f(x)\)</span> gets arbitrarily close to the single real number <span class="process-math">\(L\)</span> when <span class="process-math">\(x\)</span> gets sufficiently large, then we say:</div>
@@ -879,7 +1046,7 @@ eBookConfig.enable_chatcodes =  false;
 \lim_{x\to\infty} f(x) = L\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#def-LimitAtInfinity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-LimitAtInfinity-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="def-LimitAtInfinity-2-2">
 <div class="para">Similarly, if <span class="process-math">\(f(x)\)</span> is defined for all large and negative <span class="process-math">\(x\)</span>-values and <span class="process-math">\(f(x)\)</span> gets arbitrarily close to the single real number <span class="process-math">\(L\)</span> when <span class="process-math">\(x\)</span> gets sufficiently negative, then we say:</div>
 <div class="displaymath process-math">
@@ -887,8 +1054,8 @@ eBookConfig.enable_chatcodes =  false;
 \lim_{x\to-\infty} f(x) = L\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#def-LimitAtInfinity-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="def-LimitAtInfinity-2-3">In the case that <span class="process-math">\(f(x)\)</span> has a <dfn class="terminology">limit at infinity</dfn> that exists, then we say <span class="process-math">\(f(x)\)</span> has a horizontal asymptote at <span class="process-math">\(y=L\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-LimitAtInfinity-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-LimitAtInfinity-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="def-LimitAtInfinity-2-3">In the case that <span class="process-math">\(f(x)\)</span> has a <dfn class="terminology">limit at infinity</dfn> that exists, then we say <span class="process-math">\(f(x)\)</span> has a horizontal asymptote at <span class="process-math">\(y=L\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-LimitAtInfinity-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="def-LimitAtInfinity-2-4">
 <div class="para">Lastly, if <span class="process-math">\(f(x)\)</span> is defined for all large and positive (or negative) <span class="process-math">\(x\)</span>-values and <span class="process-math">\(f(x)\)</span> gets arbitrarily large and positive (or negative) when <span class="process-math">\(x\)</span> gets sufficiently large (or negative), then we could say:</div>
 <div class="displaymath process-math">
@@ -896,12 +1063,28 @@ eBookConfig.enable_chatcodes =  false;
 \lim_{x\to-\infty} f(x) = \pm\infty \text{ or } \lim_{x\to\infty} f(x) = \pm\infty\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#def-LimitAtInfinity-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-LimitAtInfinity-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.4.4: Limit at Infinity"><a href="#def-LimitAtInfinity" title="Copy heading and permalink for Definition 1.4.4: Limit at Infinity" aria-label="Copy heading and permalink for Definition 1.4.4: Limit at Infinity">🔗</a></div></article><div class="para" id="subsec-EndBehaviorLimits-4">Because the primary focus for limits at infinity is the end behavior of a function, we will often refer to these limits as <dfn class="terminology">end behavior limits</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 1.4.5: Limit at Infinity"><a href="#def-LimitAtInfinity" title="Copy heading and permalink for Definition 1.4.5: Limit at Infinity">🔗</a></div></article><div class="para" id="subsec-EndBehaviorLimits-4">Because the primary focus for limits at infinity is the end behavior of a function, we will often refer to these limits as <dfn class="terminology">end behavior limits</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-EndBehaviorLimits-5">
+<div class="para">We’re going to think about end-behavior of many types of functions, but we want to start with some small examples and build from there. So we’re going to start by thinking about power functions. We’re going to think about power functions in two ways:</div>
+<ol class="decimal" id="subsec-EndBehaviorLimits-5-1">
+<li id="subsec-EndBehaviorLimits-5-1-1">
+<div class="para" id="subsec-EndBehaviorLimits-5-1-1-1">Power functions in the form of <span class="process-math">\(x^p\)</span> (with <span class="process-math">\(p\gt 0\)</span>). It shouldn’t be too much work to convince yourself that these functions always have limits where, as <span class="process-math">\(x\to \pm\infty\text{,}\)</span> <span class="process-math">\(x^p\to\pm\infty\)</span> as well.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-5-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-EndBehaviorLimits-5-1-1" title="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-EndBehaviorLimits-5-1-2">
+<div class="para" id="subsec-EndBehaviorLimits-5-1-2-1">Reciprocal power functions, in the form <span class="process-math">\(\dfrac{1}{x^p}\)</span> (still with <span class="process-math">\(p\gt 0\)</span>). We already should have an idea of what’s going to happen in these, based on <a href="sec-LimitsInvolvingInfinity.html#act-DivideByInfinity" class="xref" data-knowl="./knowl/xref/act-DivideByInfinity.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.4.2: What Happens When We Divide by Infinity?">Activity 1.4.2</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-5-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-EndBehaviorLimits-5-1-2" title="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="thm-EndBehaviorReciprocalPower"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">End Behavior of Reciprocal Power Functions.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">End Behavior of Reciprocal Power Functions.</span>
 </h4>
 <div class="para logical" id="thm-EndBehaviorReciprocalPower-2-1">
 <div class="para">If <span class="process-math">\(p\)</span> is a positive real number, then:</div>
@@ -910,10 +1093,12 @@ eBookConfig.enable_chatcodes =  false;
 \lim_{x\to\infty} \left(\frac{1}{x^p}\right) = 0 \text{ and } \lim_{x\to-\infty} \left(\frac{1}{x^p}\right) = 0 \text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-EndBehaviorReciprocalPower-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-EndBehaviorReciprocalPower-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 1.4.5: End Behavior of Reciprocal Power Functions"><a href="#thm-EndBehaviorReciprocalPower" title="Copy heading and permalink for Theorem 1.4.5: End Behavior of Reciprocal Power Functions" aria-label="Copy heading and permalink for Theorem 1.4.5: End Behavior of Reciprocal Power Functions">🔗</a></div></article><article class="theorem theorem-like" id="thm-PolynomialEndBehavior"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Polynomial End Behavior Limits.</span>
+<div class="autopermalink" data-description="Theorem 1.4.6: End Behavior of Reciprocal Power Functions"><a href="#thm-EndBehaviorReciprocalPower" title="Copy heading and permalink for Theorem 1.4.6: End Behavior of Reciprocal Power Functions">🔗</a></div></article><div class="para" id="subsec-EndBehaviorLimits-7">Our last result is one that you might already know, but we’ll provide some more justification for this. We can use our knowledge of end-behavior limits for both type of power functions to think about the end-behavior limits of polynomials in general!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-PolynomialEndBehavior"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.4.7</span><span class="period">.</span><span class="space"> </span><span class="title">Polynomial End Behavior Limits.</span>
 </h4>
 <div class="para logical" id="thm-PolynomialEndBehavior-2-1">
 <div class="para">For some polynomial function:</div>
@@ -928,10 +1113,10 @@ p(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0
 \lim_{x\to\infty} p(x) = \lim_{x\to\infty} a_n x^n
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-PolynomialEndBehavior-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="thm-PolynomialEndBehavior-2-2">That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.<div class="autopermalink" data-description="Paragraph"><a href="#thm-PolynomialEndBehavior-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-PolynomialEndBehavior-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="thm-PolynomialEndBehavior-2-2">That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.<div class="autopermalink" data-description="Paragraph"><a href="#thm-PolynomialEndBehavior-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 1.4.6: Polynomial End Behavior Limits"><a href="#thm-PolynomialEndBehavior" title="Copy heading and permalink for Theorem 1.4.6: Polynomial End Behavior Limits" aria-label="Copy heading and permalink for Theorem 1.4.6: Polynomial End Behavior Limits">🔗</a></div></article><details id="thm-PolynomialEndBehavior-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="thm-PolynomialEndBehavior-3-1">
+<div class="autopermalink" data-description="Theorem 1.4.7: Polynomial End Behavior Limits"><a href="#thm-PolynomialEndBehavior" title="Copy heading and permalink for Theorem 1.4.7: Polynomial End Behavior Limits">🔗</a></div></article><details id="thm-PolynomialEndBehavior-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="thm-PolynomialEndBehavior-3-1">
 <div class="para">Consider the polynomial function:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -940,7 +1125,7 @@ p(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0
 </div>
 <div class="para">where <span class="process-math">\(n\)</span> is some integer and <span class="process-math">\(a_k\)</span> is a real number for <span class="process-math">\(k=0,1,2,...,n\text{.}\)</span> For simplicity, we will consider only the limit as <span class="process-math">\(x\to\infty\text{,}\)</span> but we could easily repeat this exact proof for the case where <span class="process-math">\(x\to-\infty\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-PolynomialEndBehavior-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-PolynomialEndBehavior-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="thm-PolynomialEndBehavior-3-2">
 <div class="para">Before we consider this limit, we can factor out <span class="process-math">\(x^n\text{,}\)</span> the variable with the highest exponent:</div>
@@ -958,7 +1143,7 @@ p(x) \amp =a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0\\
 \amp =\left(\lim_{x\to\infty} x^n\right)\left(\lim_{x\to\infty} a_n + \frac{a_{n-1}}{x} + ... + \frac{a_2}{x^{n-2}} + \frac{a_1}{x^{n-1}} + \frac{a_0}{x^n} \right)
 \end{align*}
 </div>
-<div class="para">We can see that in the second limit, we have a single constant term, <span class="process-math">\(a_n\text{,}\)</span> followed by reciprocal power functions. Then, due to <a href="sec-LimitsInvolvingInfinity.html#thm-EndBehaviorReciprocalPower" class="xref" data-knowl="./knowl/xref/thm-EndBehaviorReciprocalPower.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.4.5: End Behavior of Reciprocal Power Functions">Theorem 1.4.5</a>, we know that the second limit will by <span class="process-math">\(a_n\text{,}\)</span> since the reciprocal power functions will all approach 0.</div>
+<div class="para">We can see that in the second limit, we have a single constant term, <span class="process-math">\(a_n\text{,}\)</span> followed by reciprocal power functions. Then, due to <a href="sec-LimitsInvolvingInfinity.html#thm-EndBehaviorReciprocalPower" class="xref" data-knowl="./knowl/xref/thm-EndBehaviorReciprocalPower.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.4.6: End Behavior of Reciprocal Power Functions">Theorem 1.4.6</a>, we know that the second limit will by <span class="process-math">\(a_n\text{,}\)</span> since the reciprocal power functions will all approach 0.</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-EndBehaviorReciprocalPower.html" id="thm-PolynomialEndBehavior-3-2-7">
 \begin{align*}
 \lim_{x\to\infty} p(x) \amp =\left(\lim_{x\to\infty} x^n\right)\left(\lim_{x\to\infty} a_n + \frac{a_{n-1}}{x} + ... + \frac{a_2}{x^{n-2}} + \frac{a_1}{x^{n-1}} + \frac{a_0}{x^n} \right)\\
@@ -968,35 +1153,238 @@ p(x) \amp =a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0\\
 \end{align*}
 </div>
 <div class="para">And so <span class="process-math">\(\displaystyle \lim_{x\to\infty} p(x) = \lim_{x\to\infty} a_n x^n\)</span> as we claimed.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-PolynomialEndBehavior-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-PolynomialEndBehavior-3-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 1.4.6.1"><a href="#thm-PolynomialEndBehavior-3" title="Copy heading and permalink for Proof 1.4.6.1" aria-label="Copy heading and permalink for Proof 1.4.6.1">🔗</a></div></article></details><article class="example example-like" id="subsec-EndBehaviorLimits-7"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.7</span><span class="period">.</span>
+<div class="autopermalink" data-description="Proof 1.4.7.1"><a href="#thm-PolynomialEndBehavior-3" title="Copy heading and permalink for Proof 1.4.7.1">🔗</a></div></article></details><div class="para" id="subsec-EndBehaviorLimits-9">Instead of spending our time thinking about these polynomial end-behavior limits too specifically (since we might already be familiar with this result), and just focus on using these polynomials in the middle of larger problems.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsec-EndBehaviorLimits-10"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.8</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="subsec-EndBehaviorLimits-7-1"><div class="para" id="subsec-EndBehaviorLimits-7-1-1">For each function, find the limits as <span class="process-math">\(x\to \infty\)</span> and <span class="process-math">\(x\to-\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="subsec-EndBehaviorLimits-10-1"><div class="para" id="subsec-EndBehaviorLimits-10-1-1">For each function, find the limits as <span class="process-math">\(x\to \infty\)</span> and <span class="process-math">\(x\to-\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-10-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
-<article class="task exercise-like" id="subsec-EndBehaviorLimits-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="subsec-EndBehaviorLimits-7-2-1-1">
-<span class="process-math">\(\left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="subsec-EndBehaviorLimits-10-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-EndBehaviorLimits-10-2-1-1">
+<span class="process-math">\(\left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-10-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.7.a"><a href="#subsec-EndBehaviorLimits-7-2" title="Copy heading and permalink for Task 1.4.7.a" aria-label="Copy heading and permalink for Task 1.4.7.a">🔗</a></div></article><article class="task exercise-like" id="subsec-EndBehaviorLimits-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="subsec-EndBehaviorLimits-7-3-1-1">
-<span class="process-math">\(\left(\dfrac{4x^2-x^5}{x^2-4x+3}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="solutions">
+<details id="subsec-EndBehaviorLimits-10-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-EndBehaviorLimits-10-2-2-1">You can think about the limit in the numerator and the limit in the denominator. Based on <a href="sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.4.7: Polynomial End Behavior Limits">Theorem 1.4.7</a>, which terms will be the ones to dictate the behavior of the numerator and denominator?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-10-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.7.b"><a href="#subsec-EndBehaviorLimits-7-3" title="Copy heading and permalink for Task 1.4.7.b" aria-label="Copy heading and permalink for Task 1.4.7.b">🔗</a></div></article><article class="task exercise-like" id="subsec-EndBehaviorLimits-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="subsec-EndBehaviorLimits-7-4-1-1">
-<span class="process-math">\(\dfrac{|x|}{3x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Hint 1.4.8.a.1"><a href="#subsec-EndBehaviorLimits-10-2-2" title="Copy heading and permalink for Hint 1.4.8.a.1">🔗</a></div>
+</div></details><details id="subsec-EndBehaviorLimits-10-2-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-EndBehaviorLimits-10-2-3-1">What happens when you think about just those dominant terms in the numerator and denominator and reduce the fraction? What is left?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-10-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.7.c"><a href="#subsec-EndBehaviorLimits-7-4" title="Copy heading and permalink for Task 1.4.7.c" aria-label="Copy heading and permalink for Task 1.4.7.c">🔗</a></div></article><div class="autopermalink" data-description="Example 1.4.7"><a href="#subsec-EndBehaviorLimits-7" title="Copy heading and permalink for Example 1.4.7" aria-label="Copy heading and permalink for Example 1.4.7">🔗</a></div></article><div class="autopermalink" data-description="Subsection: End Behavior Limits"><a href="#subsec-EndBehaviorLimits" title="Copy heading and permalink for Subsection: End Behavior Limits" aria-label="Copy heading and permalink for Subsection: End Behavior Limits">🔗</a></div></section><section class="conclusion" id="sec-LimitsInvolvingInfinity-5"><article class="activity project-like" id="act-MatchingLimits"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Matching the Limits.</span>
+<div class="autopermalink" data-description="Hint 1.4.8.a.2"><a href="#subsec-EndBehaviorLimits-10-2-3" title="Copy heading and permalink for Hint 1.4.8.a.2">🔗</a></div>
+</div></details><details id="subsec-EndBehaviorLimits-10-2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-EndBehaviorLimits-10-2-4-1">
+<div class="para">We’ll start with the same kind of factoring that is used in the proof of <a href="sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.4.7: Polynomial End Behavior Limits">Theorem 1.4.7</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-PolynomialEndBehavior.html" id="subsec-EndBehaviorLimits-10-2-4-1-2">
+\begin{align*}
+\left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right) \amp = \left(\dfrac{2x^2}{x^2}\right)\left(\dfrac{1-\frac{5}{2x}+\frac{1}{2x^2}}{1+\frac{8}{x}+\frac{16}{x^2}}\right) \\
+\amp = 2\left(\dfrac{1-\frac{5}{2x}+\frac{1}{2x^2}}{1+\frac{8}{x}+\frac{16}{x^2}}\right) 
+\end{align*}
+</div>
+<div class="para">Now we can apply the limits as <span class="process-math">\(x\to\infty\)</span> and <span class="process-math">\(x\to-\infty\text{,}\)</span> since the reciprocal power functions will all <span class="process-math">\(\to 0\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-PolynomialEndBehavior.html" id="subsec-EndBehaviorLimits-10-2-4-1-6">
+\begin{align*}
+\lim_{x\to\infty} 2\left(\dfrac{1-\frac{5}{2x}+\frac{1}{2x^2}}{1+\frac{8}{x}+\frac{16}{x^2}}\right) \amp = 2(1) = 2 \\
+\lim_{x\to-\infty} 2\left(\dfrac{1-\frac{5}{2x}+\frac{1}{2x^2}}{1+\frac{8}{x}+\frac{16}{x^2}}\right) \amp = 2(1) = 2 
+\end{align*}
+</div>
+<div class="para">Alternatively, we could have done the following:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-PolynomialEndBehavior.html" id="subsec-EndBehaviorLimits-10-2-4-1-7">
+\begin{align*}
+\lim_{x\to \infty} \left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right) \amp = \dfrac{\lim_{x\to\infty}(2x^2-5x+1)}{\lim_{x\to\infty}(x^2+8x+16)}\\
+\amp = \frac{\lim_{x\to\infty} 2x^2}{\lim_{x\to\infty}x^2}\\
+\amp = \lim_{x\to\infty} \frac{2x^2}{x^2}\\
+\amp = \lim_{x\to\infty} 2 = 2
+\end{align*}
+</div>
+<div class="para">The same process could be used to show that:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-PolynomialEndBehavior.html">
+\begin{equation*}
+lim_{x\to -\infty} \left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right)=2\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-10-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.4.8.a.1"><a href="#subsec-EndBehaviorLimits-10-2-4" title="Copy heading and permalink for Solution 1.4.8.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 1.4.8.a"><a href="#subsec-EndBehaviorLimits-10-2" title="Copy heading and permalink for Task 1.4.8.a">🔗</a></div></article><article class="task exercise-like" id="subsec-EndBehaviorLimits-10-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-EndBehaviorLimits-10-3-1-1">
+<span class="process-math">\(\left(\dfrac{4x^2-x^5}{x^2-4x+3}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-10-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-EndBehaviorLimits-10-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-EndBehaviorLimits-10-3-2-1">Be careful about which term (in the numerator) will persist!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-10-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 1.4.8.b.1"><a href="#subsec-EndBehaviorLimits-10-3-2" title="Copy heading and permalink for Hint 1.4.8.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 1.4.8.b"><a href="#subsec-EndBehaviorLimits-10-3" title="Copy heading and permalink for Task 1.4.8.b">🔗</a></div></article><article class="task exercise-like" id="subsec-EndBehaviorLimits-10-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-EndBehaviorLimits-10-4-1-1">
+<span class="process-math">\(\dfrac{|x|}{3x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-10-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-EndBehaviorLimits-10-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para logical" id="subsec-EndBehaviorLimits-10-4-2-1">
+<div class="para">It might be helpful to remind yourself of the definition of the absolute value function:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|x| = \begin{cases}
+-x \amp \text{when } x\lt0\\
+x \amp \text{when } x\geq 0
+\end{cases}\text{.}
+\end{equation*}
+</div>
+<div class="para">This means you can replace <span class="process-math">\(|x|\)</span> with either <span class="process-math">\(x\)</span> or <span class="process-math">\(-x\)</span> in the limits as <span class="process-math">\(x\to\infty\)</span> and <span class="process-math">\(x\to-\infty\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-10-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 1.4.8.c.1"><a href="#subsec-EndBehaviorLimits-10-4-2" title="Copy heading and permalink for Hint 1.4.8.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 1.4.8.c"><a href="#subsec-EndBehaviorLimits-10-4" title="Copy heading and permalink for Task 1.4.8.c">🔗</a></div></article><div class="autopermalink" data-description="Example 1.4.8"><a href="#subsec-EndBehaviorLimits-10" title="Copy heading and permalink for Example 1.4.8">🔗</a></div></article><div class="autopermalink" data-description="Subsection: End Behavior Limits"><a href="#subsec-EndBehaviorLimits" title="Copy heading and permalink for Subsection: End Behavior Limits">🔗</a></div></section><section class="exercises" id="ex-LimitsInvolvingInfinity"><h3 class="heading hide-type">
+<span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice Problems</span>
 </h3>
-<article class="task exercise-like" id="act-MatchingLimits-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="act-MatchingLimits-2-1-1">We’re going to look at four graphs of functions, as well as a list of limit statements. Match the limit statements with the graphs that match that behavior. Note that is is possible for a limit to be relevant on more than one graph.<div class="autopermalink" data-description="Paragraph"><a href="#act-MatchingLimits-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="ex-LimitsInvolvingInfinity-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="introduction" id="ex-LimitsInvolvingInfinity-1-1">
+<div class="para" id="ex-LimitsInvolvingInfinity-1-1-1">Use the graph of the function <span class="process-math">\(f(x)\)</span> below to determine each limit.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.4.3.a"><a href="#act-MatchingLimits-2" title="Copy heading and permalink for Task 1.4.3.a" aria-label="Copy heading and permalink for Task 1.4.3.a">🔗</a></div></article><article class="task exercise-like" id="act-MatchingLimits-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="act-MatchingLimits-3-1-1">Now consider these four function definitions. Using your knowledge of limits, as well as the matching you’ve already done, match the definitions of these four functions with the graphs that go with them, and then also the limits that are relevant. (These limits will already be matched with the graphs, so you don’t need to do further work here).<div class="autopermalink" data-description="Paragraph"><a href="#act-MatchingLimits-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figure class="figure figure-like" id="fig-ex-Infinity1"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./Limits/ex-Infinity1.png" class="contained" alt="A rational function with a horizontal asymptote at y=0. At x=-3, the function increases up to a vertical asymptote and then decreases down from it. At x=5, the function increases up to a vertical asymptote and then increases away from it. At x=10 the function decreases towards a vertical asymptote and then decreases away from it."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.9<span class="period">.</span></span><span class="space"> </span>The function <span class="process-math">\(f(x)\text{.}\)</span><div class="autopermalink" data-description="Figure 1.4.9"><a href="#fig-ex-Infinity1" title="Copy heading and permalink for Figure 1.4.9">🔗</a></div></figcaption></figure>
 </div>
-<div class="autopermalink" data-description="Task 1.4.3.b"><a href="#act-MatchingLimits-3" title="Copy heading and permalink for Task 1.4.3.b" aria-label="Copy heading and permalink for Task 1.4.3.b">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.4.3: Matching the Limits"><a href="#act-MatchingLimits" title="Copy heading and permalink for Activity 1.4.3: Matching the Limits" aria-label="Copy heading and permalink for Activity 1.4.3: Matching the Limits">🔗</a></div></article></section><div class="autopermalink" data-description="Section 1.4: Limits Involving Infinity"><a href="#sec-LimitsInvolvingInfinity" title="Copy heading and permalink for Section 1.4: Limits Involving Infinity" aria-label="Copy heading and permalink for Section 1.4: Limits Involving Infinity">🔗</a></div></section></div>
+<article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-1-2-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to-3^-} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.a"><a href="#ex-LimitsInvolvingInfinity-1-2" title="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-1-3-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to-3^+} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.b"><a href="#ex-LimitsInvolvingInfinity-1-3" title="Copy heading and permalink for Task 1.b">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-1-4-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to-3} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.c"><a href="#ex-LimitsInvolvingInfinity-1-4" title="Copy heading and permalink for Task 1.c">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-1-5-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to5^-} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.d"><a href="#ex-LimitsInvolvingInfinity-1-5" title="Copy heading and permalink for Task 1.d">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-1-6-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to5^+} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.e"><a href="#ex-LimitsInvolvingInfinity-1-6" title="Copy heading and permalink for Task 1.e">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-1-7-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to5} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.f"><a href="#ex-LimitsInvolvingInfinity-1-7" title="Copy heading and permalink for Task 1.f">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-1-8-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to10^-} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-8-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.g"><a href="#ex-LimitsInvolvingInfinity-1-8" title="Copy heading and permalink for Task 1.g">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-1-9-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to10^+} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-9-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.h"><a href="#ex-LimitsInvolvingInfinity-1-9" title="Copy heading and permalink for Task 1.h">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-10"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-1-10-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to10} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-10-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.i"><a href="#ex-LimitsInvolvingInfinity-1-10" title="Copy heading and permalink for Task 1.i">🔗</a></div></article><div class="autopermalink" data-description="Exercise 1"><a href="#ex-LimitsInvolvingInfinity-1" title="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ex-LimitsInvolvingInfinity-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="introduction" id="ex-LimitsInvolvingInfinity-2-1">
+<div class="para" id="ex-LimitsInvolvingInfinity-2-1-1">Use the graph of the function <span class="process-math">\(g(x)\)</span> below to determine each limit.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-ex-Infinity2"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./Limits/ex-Infinity2.png" class="contained" alt="A graph of a function increasing away from a horizontal asymptote at x=-2 towards (0,0), and then decreasing towards a vertical asymptote at x=1. It decreases away from the vertical asymptote at x=1 towards a horizontal asymptote ay y=2."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.10<span class="period">.</span></span><span class="space"> </span>The function <span class="process-math">\(g(x)\text{.}\)</span><div class="autopermalink" data-description="Figure 1.4.10"><a href="#fig-ex-Infinity2" title="Copy heading and permalink for Figure 1.4.10">🔗</a></div></figcaption></figure>
+</div>
+<article class="task exercise-like" id="ex-LimitsInvolvingInfinity-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-2-2-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to-\infty}g(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.a"><a href="#ex-LimitsInvolvingInfinity-2-2" title="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-2-3-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to\infty}g(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-2-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.b"><a href="#ex-LimitsInvolvingInfinity-2-3" title="Copy heading and permalink for Task 2.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 2"><a href="#ex-LimitsInvolvingInfinity-2" title="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ex-LimitsInvolvingInfinity-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="introduction" id="ex-LimitsInvolvingInfinity-3-1">
+<div class="para" id="ex-LimitsInvolvingInfinity-3-1-1">Use the graph of the function <span class="process-math">\(h(x)\)</span> below to determine each limit.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-ex-Infinity3"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./Limits/ex-Infinity3.png" class="contained" alt="A function increases from the bottom left corner of the graph towards an open point at (-1,0). Then it decreases away from a point at (-1,1) towards a horizontal asymptote at y=0."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.11<span class="period">.</span></span><span class="space"> </span>The function <span class="process-math">\(h(x)\text{.}\)</span><div class="autopermalink" data-description="Figure 1.4.11"><a href="#fig-ex-Infinity3" title="Copy heading and permalink for Figure 1.4.11">🔗</a></div></figcaption></figure>
+</div>
+<article class="task exercise-like" id="ex-LimitsInvolvingInfinity-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-3-2-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to-\infty}h(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-3-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.a"><a href="#ex-LimitsInvolvingInfinity-3-2" title="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-3-3-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to\infty}h(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-3-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.b"><a href="#ex-LimitsInvolvingInfinity-3-3" title="Copy heading and permalink for Task 3.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 3"><a href="#ex-LimitsInvolvingInfinity-3" title="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ex-LimitsInvolvingInfinity-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="introduction" id="ex-LimitsInvolvingInfinity-4-1"><div class="para" id="ex-LimitsInvolvingInfinity-4-1-1">For each limit, fill in the table in a way that determines the limit, and report your answer.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ex-LimitsInvolvingInfinity-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-4-2-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to4^-} \left(\frac{3x}{x-4}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-4-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{3x}{x-4}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines">does not exist</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Task 4.a"><a href="#ex-LimitsInvolvingInfinity-4-2" title="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-4-3-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to4^+} \left(\frac{3x}{x-4}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-4-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{3x}{x-4}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">does not exist</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Task 4.b"><a href="#ex-LimitsInvolvingInfinity-4-3" title="Copy heading and permalink for Task 4.b">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ex-LimitsInvolvingInfinity-4-4-1-1">
+<span class="process-math">\(\displaystyle\lim_{x\to 1} \left(\frac{x-3}{(2x-4)(x-1)^2}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-4-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{x-3}{(2x-4)(x-1)^2}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines">does not exist</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Task 4.c"><a href="#ex-LimitsInvolvingInfinity-4-4" title="Copy heading and permalink for Task 4.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise 4"><a href="#ex-LimitsInvolvingInfinity-4" title="Copy heading and permalink for Exercise 4">🔗</a></div></article><div class="autopermalink" data-description="Practice Problems"><a href="#ex-LimitsInvolvingInfinity" title="Copy heading and permalink for Practice Problems">🔗</a></div></section><div class="autopermalink" data-description="Section 1.4: Limits Involving Infinity"><a href="#sec-LimitsInvolvingInfinity" title="Copy heading and permalink for Section 1.4: Limits Involving Infinity">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-IndeterminateForms.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-SqueezeTheorem.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

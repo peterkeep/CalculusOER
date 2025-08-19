@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -168,6 +169,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-DefiningALimit" class="internal"><span class="title">Defining a Limit</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-ApproximatingLimits" class="internal"><span class="title">Approximating Limits Using Our New Definition</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#ex-DefinitionOfLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -175,6 +177,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-AddingPrecisionToEstimations" class="internal"><span class="title">Adding Precision to Our Estimations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-LimitProperties" class="internal"><span class="title">Limit Properties</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#ex-EvaluatingLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -182,6 +185,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-FirstIndeterminateForms" class="internal"><span class="title">A First Introduction to Indeterminate Forms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-WhatIfIndeterminateForms" class="internal"><span class="title">What if There Is No Algebra Trick?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#exercises-" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -189,9 +193,16 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits" class="internal"><span class="title">Infinite Limits</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits" class="internal"><span class="title">End Behavior Limits</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#ex-LimitsInvolvingInfinity" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-WeirdFunctionsWeirdBehavior" class="internal"><span class="title">Weird Functions, Weird Behavior</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-SqueezeTheorem" class="internal"><span class="title">Squeeze Theorem</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Continuity.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Continuity and the Intermediate Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -599,29 +610,29 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="preface" id="Preface-NoteOnAI"><h2 class="heading hide-type">
 <span class="type">Preface</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Disclosure about the Use of AI</span>
 </h2>
-<div class="para" id="Preface-NoteOnAI-2">This book has been lovingly written by a human.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Preface-NoteOnAI-2">This book has been lovingly written by a human.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="Preface-NoteOnAI-3">Me.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Preface-NoteOnAI-3">Me.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="Preface-NoteOnAI-4">Peter Keep.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Preface-NoteOnAI-4">Peter Keep.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="Preface-NoteOnAI-5">I have used a lot of different tools, both for inspiration and for actually creating resources for this book. <em class="emphasis">None</em> of those tools has involved any form of generative AI.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Preface-NoteOnAI-5">I have used a lot of different tools, both for inspiration and for actually creating resources for this book. <em class="emphasis">None</em> of those tools has involved any form of generative AI.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="Preface-NoteOnAI-6">I could list all of the ways that I think using generative AI in education is, at minimum, problematic. More pointedly, I believe that it is unethical. More broadly, I believe that the use of generative AI for any use-case that I have encountered to be unethical.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Preface-NoteOnAI-6">I could list all of the ways that I think using generative AI in education is, at minimum, problematic. More pointedly, I believe that it is unethical. More broadly, I believe that the use of generative AI for any use-case that I have encountered to be unethical.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="Preface-NoteOnAI-7">In my classes, I try to help students realize the joy and value of working at something and creating something and struggling with something and knowing something. Giving worth to something, even an imperfect thing. Celebrating our accomplishments, even when (especially when?) there is room to grow in those accomplishments. And so I have taken that advice in the creation of this book. I have created a book that is definitely not perfect. I have struggled to write it. There are parts of it that could be (need to be) improved.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Preface-NoteOnAI-7">In my classes, I try to help students realize the joy and value of working at something and creating something and struggling with something and knowing something. Giving worth to something, even an imperfect thing. Celebrating our accomplishments, even when (especially when?) there is room to grow in those accomplishments. And so I have taken that advice in the creation of this book. I have created a book that is definitely not perfect. I have struggled to write it. There are parts of it that could be (need to be) improved.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="Preface-NoteOnAI-8">But I was the one that created it. I struggled with it. I know it.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Preface-NoteOnAI-8">But I was the one that created it. I struggled with it. I know it.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="Preface-NoteOnAI-9">I hope that this book can also be a useful tool for others to use, and I have left the copyright to be about as open as possible. Others can take this, use it, can change it, add to it, subtract from it, etc.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Preface-NoteOnAI-9">I hope that this book can also be a useful tool for others to use, and I have left the copyright to be about as open as possible. Others can take this, use it, can change it, add to it, subtract from it, etc.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="Preface-NoteOnAI-10">In leaving this copyright open for others to change this book, I cannot guarantee that every version of this book is free from the mindless and joyless output from some Large Language Model. But I want to leave this note up in hopes that anyone who <em class="emphasis">does</em> inject some output from some generative AI product into this book will take it down. If this note, or some statement similar to it, is not present in the version of the book you are accessing, please be cautious. Find a different calculus textbook to read!<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Preface-NoteOnAI-10">In leaving this copyright open for others to change this book, I cannot guarantee that every version of this book is free from the mindless and joyless output from some Large Language Model. But I want to leave this note up in hopes that anyone who <em class="emphasis">does</em> inject some output from some generative AI product into this book will take it down. If this note, or some statement similar to it, is not present in the version of the book you are accessing, please be cautious. Find a different calculus textbook to read!<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-10" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="Preface-NoteOnAI-11">Find something written by a human. Find the words of some other mathematician who tries, maybe imperfectly, to share the ideas of calculus.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Preface-NoteOnAI-11">Find something written by a human. Find the words of some other mathematician who tries, maybe imperfectly, to share the ideas of calculus.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-11" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="Preface-NoteOnAI-12">Teaching and learning is about humans communicating with each other, and only humans can do that.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Preface-NoteOnAI-12">Teaching and learning is about humans communicating with each other, and only humans can do that.<div class="autopermalink" data-description="Paragraph"><a href="#Preface-NoteOnAI-12" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Preface: Disclosure about the Use of AI"><a href="#Preface-NoteOnAI" title="Copy heading and permalink for Preface: Disclosure about the Use of AI" aria-label="Copy heading and permalink for Preface: Disclosure about the Use of AI">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Preface: Disclosure about the Use of AI"><a href="#Preface-NoteOnAI" title="Copy heading and permalink for Preface: Disclosure about the Use of AI">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="acknowledements.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="preface-ForInstructors.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

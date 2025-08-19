@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -168,6 +169,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-DefiningALimit" class="internal"><span class="title">Defining a Limit</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-ApproximatingLimits" class="internal"><span class="title">Approximating Limits Using Our New Definition</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#ex-DefinitionOfLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -175,6 +177,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-AddingPrecisionToEstimations" class="internal"><span class="title">Adding Precision to Our Estimations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-LimitProperties" class="internal"><span class="title">Limit Properties</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#ex-EvaluatingLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -182,6 +185,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-FirstIndeterminateForms" class="internal"><span class="title">A First Introduction to Indeterminate Forms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-WhatIfIndeterminateForms" class="internal"><span class="title">What if There Is No Algebra Trick?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#exercises-" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -189,9 +193,16 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits" class="internal"><span class="title">Infinite Limits</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits" class="internal"><span class="title">End Behavior Limits</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#ex-LimitsInvolvingInfinity" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-WeirdFunctionsWeirdBehavior" class="internal"><span class="title">Weird Functions, Weird Behavior</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-SqueezeTheorem" class="internal"><span class="title">Squeeze Theorem</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Continuity.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Continuity and the Intermediate Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -599,9 +610,17 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-SqueezeTheorem"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.5</span><span class="space"> </span><span class="title">The Squeeze Theorem</span>
 </h2>
-<article class="activity project-like" id="act-WeirdEndBehavior"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">A Weird End Behavior Limit.</span>
+<section class="introduction" id="sec-SqueezeTheorem-2"><div class="para" id="sec-SqueezeTheorem-2-1">We won’t get enough time to spend thinking about all of the possible techniques that we could use to evaluate limits, but in this section we’ll investigate one more.<div class="autopermalink" data-description="Paragraph"><a href="#sec-SqueezeTheorem-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-SqueezeTheorem-2-2">Here, we’ll introduce a new limit involving a type of function that we’ve not used in limits so far: trigonometric functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-SqueezeTheorem-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-WeirdFunctionsWeirdBehavior"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Weird Functions, Weird Behavior</span>
 </h3>
+<div class="para" id="subsec-WeirdFunctionsWeirdBehavior-2">Ok, trigonometric functions aren’t actually weird. But we want to look at a function that is slightly more complicated than the ones we’ve looked at so far.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-WeirdFunctionsWeirdBehavior-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-WeirdEndBehavior"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">A Weird End Behavior Limit.</span>
+</h4>
 <div class="introduction" id="act-WeirdEndBehavior-2"><div class="para logical" id="act-WeirdEndBehavior-2-1">
 <div class="para">In this activity, we’re going to find the following limit:</div>
 <div class="displaymath process-math">
@@ -610,9 +629,9 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">This limit is a bit weird, in that we really haven’t looked at trigonometric functions that much. We’re going to start by looking at a different limit in the hopes that we can eventually build towards this one.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
-<article class="task exercise-like" id="act-WeirdEndBehavior-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<article class="task exercise-like" id="act-WeirdEndBehavior-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para logical" id="act-WeirdEndBehavior-3-1-1">
 <div class="para">Consider, instead, the following limit:</div>
 <div class="displaymath process-math">
@@ -621,27 +640,27 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">Find the limit and connect the process or intuition behind it to at least one of the results from this text.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="act-WeirdEndBehavior-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-WeirdEndBehavior-3-2-1">Start with <a href="sec-EvaluatingLimits.html#thm-CombinationsOfLimits" class="xref" data-knowl="./knowl/xref/thm-CombinationsOfLimits.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.2.5: Combinations of Limits">Theorem 1.2.5</a> to think about the numerator and denominator separately.<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-WeirdEndBehavior-3-2-1">Start with <a href="sec-EvaluatingLimits.html#thm-CombinationsOfLimits" class="xref" data-knowl="./knowl/xref/thm-CombinationsOfLimits.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.2.5: Combinations of Limits">Theorem 1.2.5</a> to think about the numerator and denominator separately.<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 1.5.1.a.1"><a href="#act-WeirdEndBehavior-3-2" title="Copy heading and permalink for Hint 1.5.1.a.1" aria-label="Copy heading and permalink for Hint 1.5.1.a.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 1.5.1.a.1"><a href="#act-WeirdEndBehavior-3-2" title="Copy heading and permalink for Hint 1.5.1.a.1">🔗</a></div>
 </div></details><details id="act-WeirdEndBehavior-3-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-WeirdEndBehavior-3-3-1">Can you use <a href="sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.4.6: Polynomial End Behavior Limits">Theorem 1.4.6</a> in the denominator?<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-WeirdEndBehavior-3-3-1">Can you use <a href="sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior" class="xref" data-knowl="./knowl/xref/thm-PolynomialEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.4.7: Polynomial End Behavior Limits">Theorem 1.4.7</a> in the denominator?<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-3-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 1.5.1.a.2"><a href="#act-WeirdEndBehavior-3-3" title="Copy heading and permalink for Hint 1.5.1.a.2" aria-label="Copy heading and permalink for Hint 1.5.1.a.2">🔗</a></div>
+<div class="autopermalink" data-description="Hint 1.5.1.a.2"><a href="#act-WeirdEndBehavior-3-3" title="Copy heading and permalink for Hint 1.5.1.a.2">🔗</a></div>
 </div></details><details id="act-WeirdEndBehavior-3-4" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-WeirdEndBehavior-3-4-1">Is <a href="sec-LimitsInvolvingInfinity.html#thm-EndBehaviorReciprocalPower" class="xref" data-knowl="./knowl/xref/thm-EndBehaviorReciprocalPower.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.4.5: End Behavior of Reciprocal Power Functions">Theorem 1.4.5</a> relevant?<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-WeirdEndBehavior-3-4-1">Is <a href="sec-LimitsInvolvingInfinity.html#thm-EndBehaviorReciprocalPower" class="xref" data-knowl="./knowl/xref/thm-EndBehaviorReciprocalPower.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.4.6: End Behavior of Reciprocal Power Functions">Theorem 1.4.6</a> relevant?<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-3-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 1.5.1.a.3"><a href="#act-WeirdEndBehavior-3-4" title="Copy heading and permalink for Hint 1.5.1.a.3" aria-label="Copy heading and permalink for Hint 1.5.1.a.3">🔗</a></div>
+<div class="autopermalink" data-description="Hint 1.5.1.a.3"><a href="#act-WeirdEndBehavior-3-4" title="Copy heading and permalink for Hint 1.5.1.a.3">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Task 1.5.1.a"><a href="#act-WeirdEndBehavior-3" title="Copy heading and permalink for Task 1.5.1.a" aria-label="Copy heading and permalink for Task 1.5.1.a">🔗</a></div></article><article class="task exercise-like" id="act-WeirdEndBehavior-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="act-WeirdEndBehavior-4-1-1">Let’s put this limit aside and briefly talk about the sine function. What are some things to remember about this function? What should we know? How does it behave?<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.5.1.a"><a href="#act-WeirdEndBehavior-3" title="Copy heading and permalink for Task 1.5.1.a">🔗</a></div></article><article class="task exercise-like" id="act-WeirdEndBehavior-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-WeirdEndBehavior-4-1-1">Let’s put this limit aside and briefly talk about the sine function. What are some things to remember about this function? What should we know? How does it behave?<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.5.1.b"><a href="#act-WeirdEndBehavior-4" title="Copy heading and permalink for Task 1.5.1.b" aria-label="Copy heading and permalink for Task 1.5.1.b">🔗</a></div></article><article class="task exercise-like" id="act-WeirdEndBehavior-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="autopermalink" data-description="Task 1.5.1.b"><a href="#act-WeirdEndBehavior-4" title="Copy heading and permalink for Task 1.5.1.b">🔗</a></div></article><article class="task exercise-like" id="act-WeirdEndBehavior-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para logical" id="act-WeirdEndBehavior-5-1-1">
 <div class="para">What kinds of values doe we expect <span class="process-math">\(\sin(x)\)</span> to take on for different values of <span class="process-math">\(x\text{?}\)</span>
 </div>
@@ -650,9 +669,9 @@ eBookConfig.enable_chatcodes =  false;
 \fillinmath{XXXXXXXXXX} \leq \sin(x) \leq \fillinmath{XXXXXXXXXX}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.5.1.c"><a href="#act-WeirdEndBehavior-5" title="Copy heading and permalink for Task 1.5.1.c" aria-label="Copy heading and permalink for Task 1.5.1.c">🔗</a></div></article><article class="task exercise-like" id="act-WeirdEndBehavior-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="autopermalink" data-description="Task 1.5.1.c"><a href="#act-WeirdEndBehavior-5" title="Copy heading and permalink for Task 1.5.1.c">🔗</a></div></article><article class="task exercise-like" id="act-WeirdEndBehavior-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para logical" id="act-WeirdEndBehavior-6-1-1">
 <div class="para">What happens when we square the sine function? What kinds of  values can that take on?</div>
 <div class="displaymath process-math">
@@ -660,25 +679,25 @@ eBookConfig.enable_chatcodes =  false;
 \fillinmath{XXXXXXXXXX} \leq \sin^2(x) \leq \fillinmath{XXXXXXXXXX}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.5.1.d"><a href="#act-WeirdEndBehavior-6" title="Copy heading and permalink for Task 1.5.1.d" aria-label="Copy heading and permalink for Task 1.5.1.d">🔗</a></div></article><article class="task exercise-like" id="act-WeirdEndBehavior-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="autopermalink" data-description="Task 1.5.1.d"><a href="#act-WeirdEndBehavior-6" title="Copy heading and permalink for Task 1.5.1.d">🔗</a></div></article><article class="task exercise-like" id="act-WeirdEndBehavior-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para logical" id="act-WeirdEndBehavior-7-1-1">
 <div class="para">Think back to our original goal: we wanted to know the end behavior of <span class="process-math">\(\dfrac{\sin^2(x)}{x^2+1}\text{.}\)</span> Right now we have two bits of information:</div>
 <ul class="disc" id="act-WeirdEndBehavior-7-1-1-2">
 <li id="act-WeirdEndBehavior-7-1-1-2-1">
-<div class="para" id="act-WeirdEndBehavior-7-1-1-2-1-1">We know <span class="process-math">\(\displaystyle \lim_{x\to\infty}\left(\frac{1}{x^2+1}\right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-7-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-WeirdEndBehavior-7-1-1-2-1-1">We know <span class="process-math">\(\displaystyle \lim_{x\to\infty}\left(\frac{1}{x^2+1}\right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-7-1-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-WeirdEndBehavior-7-1-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-WeirdEndBehavior-7-1-1-2-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="act-WeirdEndBehavior-7-1-1-2-2">
-<div class="para" id="act-WeirdEndBehavior-7-1-1-2-2-1">We know some information about the behavior of <span class="process-math">\(\sin^2(x)\text{.}\)</span> Specifically, we have some bounds on its values.<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-7-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-WeirdEndBehavior-7-1-1-2-2-1">We know some information about the behavior of <span class="process-math">\(\sin^2(x)\text{.}\)</span> Specifically, we have some bounds on its values.<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-7-1-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#act-WeirdEndBehavior-7-1-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#act-WeirdEndBehavior-7-1-1-2-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">Can we combine this information?</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="act-WeirdEndBehavior-7-1-2">
 <div class="para">In your inequality above, multiply <span class="process-math">\(\left(\frac{1}{x^2+1}\right)\)</span> onto all three pieces of the inequality. Make sure you’re convinced about the direction or order of the inequality and whether or not it changes with this multiplication.</div>
 <div class="displaymath process-math">
@@ -686,17 +705,24 @@ eBookConfig.enable_chatcodes =  false;
 \underbrace{\frac{\fillinmath{XXXXXXXXXX}}{x^2+1}}_{\text{call this }f(x)} \leq \frac{\sin^2(x)}{x^2+1} \leq \underbrace{\frac{\fillinmath{XXXXXXXXXX}}{x^2+1}}_{\text{call this }h(x)} 
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-7-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.5.1.e"><a href="#act-WeirdEndBehavior-7" title="Copy heading and permalink for Task 1.5.1.e" aria-label="Copy heading and permalink for Task 1.5.1.e">🔗</a></div></article><article class="task exercise-like" id="act-WeirdEndBehavior-8"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<div class="para" id="act-WeirdEndBehavior-8-1-1">For your functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(h(x)\text{,}\)</span> evaluate <span class="process-math">\(\displaystyle \lim_{x\to\infty} f(x)\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to\infty} h(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.5.1.e"><a href="#act-WeirdEndBehavior-7" title="Copy heading and permalink for Task 1.5.1.e">🔗</a></div></article><article class="task exercise-like" id="act-WeirdEndBehavior-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-WeirdEndBehavior-8-1-1">For your functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(h(x)\text{,}\)</span> evaluate <span class="process-math">\(\displaystyle \lim_{x\to\infty} f(x)\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to\infty} h(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-8-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.5.1.f"><a href="#act-WeirdEndBehavior-8" title="Copy heading and permalink for Task 1.5.1.f" aria-label="Copy heading and permalink for Task 1.5.1.f">🔗</a></div></article><article class="task exercise-like" id="act-WeirdEndBehavior-9"><h4 class="heading"><span class="codenumber">(g)</span></h4>
-<div class="para" id="act-WeirdEndBehavior-9-1-1">What do you think this means about the limit we’re interested in, <span class="process-math">\(\displaystyle \lim_{x\to\infty} \left(\frac{\sin^2(x)}{x^2+1}\right)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.5.1.f"><a href="#act-WeirdEndBehavior-8" title="Copy heading and permalink for Task 1.5.1.f">🔗</a></div></article><article class="task exercise-like" id="act-WeirdEndBehavior-9"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para" id="act-WeirdEndBehavior-9-1-1">What do you think this means about the limit we’re interested in, <span class="process-math">\(\displaystyle \lim_{x\to\infty} \left(\frac{\sin^2(x)}{x^2+1}\right)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-WeirdEndBehavior-9-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.5.1.g"><a href="#act-WeirdEndBehavior-9" title="Copy heading and permalink for Task 1.5.1.g" aria-label="Copy heading and permalink for Task 1.5.1.g">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.5.1: A Weird End Behavior Limit"><a href="#act-WeirdEndBehavior" title="Copy heading and permalink for Activity 1.5.1: A Weird End Behavior Limit" aria-label="Copy heading and permalink for Activity 1.5.1: A Weird End Behavior Limit">🔗</a></div></article><article class="theorem theorem-like" id="thm-SqueezeTheorem"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">The Squeeze Theorem.</span>
+<div class="autopermalink" data-description="Task 1.5.1.g"><a href="#act-WeirdEndBehavior-9" title="Copy heading and permalink for Task 1.5.1.g">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.5.1: A Weird End Behavior Limit"><a href="#act-WeirdEndBehavior" title="Copy heading and permalink for Activity 1.5.1: A Weird End Behavior Limit">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Weird Functions, Weird Behavior"><a href="#subsec-WeirdFunctionsWeirdBehavior" title="Copy heading and permalink for Subsection: Weird Functions, Weird Behavior">🔗</a></div></section><section class="subsection" id="subsec-SqueezeTheorem"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Squeeze Theorem</span>
 </h3>
+<div class="para" id="subsec-SqueezeTheorem-2">This strategy is a really nice one to use when we know the behavior of some well-behaved “bounding” functions. We can try to off-load the task of summarizing the behavior of a strangely behaved function to these bounding functions, and follow them! As long as they approach each other, than the strangely behaved function has to have the same behavior.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SqueezeTheorem-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SqueezeTheorem-3">Let’s formalize this result carefully.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SqueezeTheorem-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-SqueezeTheorem"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">The Squeeze Theorem.</span>
+</h4>
 <div class="para logical" id="thm-SqueezeTheorem-2-1">
 <div class="para">For some functions <span class="process-math">\(f(x)\text{,}\)</span> <span class="process-math">\(g(x)\text{,}\)</span> and <span class="process-math">\(h(x)\)</span> which are all defined and ordered <span class="process-math">\(f(x)\leq g(x)\leq h(x)\)</span> for <span class="process-math">\(x\)</span>-values near <span class="process-math">\(x=a\)</span> (but not necessarily at <span class="process-math">\(x=a\)</span> itself), and for some real number <span class="process-math">\(L\text{,}\)</span> if we know that</div>
 <div class="displaymath process-math">
@@ -706,27 +732,55 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">then we also know that <span class="process-math">\(\displaystyle \lim_{x\to a} g(x) = L\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-SqueezeTheorem-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-SqueezeTheorem-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 1.5.1: The Squeeze Theorem"><a href="#thm-SqueezeTheorem" title="Copy heading and permalink for Theorem 1.5.1: The Squeeze Theorem" aria-label="Copy heading and permalink for Theorem 1.5.1: The Squeeze Theorem">🔗</a></div></article><article class="activity project-like" id="act-SketchSqueeze"><h3 class="heading">
+<div class="autopermalink" data-description="Theorem 1.5.1: The Squeeze Theorem"><a href="#thm-SqueezeTheorem" title="Copy heading and permalink for Theorem 1.5.1: The Squeeze Theorem">🔗</a></div></article><aside class="aside aside-like" id="subsec-SqueezeTheorem-5"><div class="para" id="subsec-SqueezeTheorem-5-1">Sometimes this theorem is called the Sandwich Theorem, since the upper bounding function and the lower bounding function act as the slices of bread, while the strangely behaved middle function acts like the toppings on the sandwich.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SqueezeTheorem-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SqueezeTheorem-5-2">We choose not to use that naming convention in this text in order to preserve the flexibility of the definition of a sandwich. An open-faced sandwich is still a sandwich (in the opinion of the textbook author), but this result clearly doesn’t hold when we only have one bounding function.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SqueezeTheorem-5-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside><div class="para logical" id="subsec-SqueezeTheorem-6">
+<div class="para">This theorem can be difficult to use, primarily because building the bounds for a function is difficult. In <a href="sec-SqueezeTheorem.html#act-WeirdEndBehavior" class="xref" data-knowl="./knowl/xref/act-WeirdEndBehavior.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.5.1: A Weird End Behavior Limit">Activity 1.5.1</a>, we were able to build the boundary functions by simply thinking about the bounds on the <span class="process-math">\(\sin(x)\text{.}\)</span> This worked well, but we were only able to do this because of our familiarity with this function. With other functions, these bounds are harder to just <em class="emphasis">come up with</em>. This is especially true in that we need the bounds to accomplish multiple things at once:</div>
+<ul class="disc" id="subsec-SqueezeTheorem-6-4">
+<li id="subsec-SqueezeTheorem-6-4-1">
+<div class="para" id="subsec-SqueezeTheorem-6-4-1-1">We need them to be ordered correctly with regard to the function we care about: one above it and one below it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SqueezeTheorem-6-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-SqueezeTheorem-6-4-1" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-SqueezeTheorem-6-4-2">
+<div class="para" id="subsec-SqueezeTheorem-6-4-2-1">We need the limits of these functions to be things we can actually evaluate! This is the whole point: we use these (hopefully easier) limits to evaluate the (probably hard) limit that we’re interested in.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SqueezeTheorem-6-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-SqueezeTheorem-6-4-2" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-SqueezeTheorem-6-4-3">
+<div class="para" id="subsec-SqueezeTheorem-6-4-3-1">We need the limits of these functions to be the same as <span class="process-math">\(x\to a\text{,}\)</span> otherwise we’re not certain about where our function actually is.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SqueezeTheorem-6-4-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-SqueezeTheorem-6-4-3" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SqueezeTheorem-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SqueezeTheorem-7">In practice, we’ll try to build any bounding functions with some assistance, or start with bounding functions already stated.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SqueezeTheorem-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SqueezeTheorem-8">Let’s see another way of thinking about this result using our graphical intuition.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SqueezeTheorem-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-SketchSqueeze"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Sketch This Function Around This Point.</span>
-</h3>
-<article class="task exercise-like" id="act-SketchSqueeze-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="act-SketchSqueeze-2-1-1">Sketch or visualize the functions <span class="process-math">\(f(x) = x^2+3\)</span> and <span class="process-math">\(h(x)=2x+2\text{,}\)</span> especially around <span class="process-math">\(x=1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-SketchSqueeze-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h4>
+<article class="task exercise-like" id="act-SketchSqueeze-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-SketchSqueeze-2-1-1">Sketch or visualize the functions <span class="process-math">\(f(x) = x^2+3\)</span> and <span class="process-math">\(h(x)=2x+2\text{,}\)</span> especially around <span class="process-math">\(x=1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-SketchSqueeze-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.5.2.a"><a href="#act-SketchSqueeze-2" title="Copy heading and permalink for Task 1.5.2.a" aria-label="Copy heading and permalink for Task 1.5.2.a">🔗</a></div></article><article class="task exercise-like" id="act-SketchSqueeze-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="act-SketchSqueeze-3-1-1">Now we want to add in a sketch of some function <span class="process-math">\(g(x)\text{,}\)</span> all the while satisfying the requirements of the Squeeze Theorem.<div class="autopermalink" data-description="Paragraph"><a href="#act-SketchSqueeze-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <iframe id="act-SketchSqueeze-3-1-2" width="600" height="660" src="act-SketchSqueeze-3-1-2-if.html"></iframe><div class="autopermalink" data-description="Task 1.5.2.b"><a href="#act-SketchSqueeze-3" title="Copy heading and permalink for Task 1.5.2.b" aria-label="Copy heading and permalink for Task 1.5.2.b">🔗</a></div></article><article class="task exercise-like" id="act-SketchSqueeze-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="act-SketchSqueeze-4-1-1">Use the Squeeze Theorem to evaluate and explain <span class="process-math">\(\displaystyle \lim_{x\to 1}g(x)\)</span> for your function <span class="process-math">\(g(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-SketchSqueeze-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.5.2.a"><a href="#act-SketchSqueeze-2" title="Copy heading and permalink for Task 1.5.2.a">🔗</a></div></article><article class="task exercise-like" id="act-SketchSqueeze-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-SketchSqueeze-3-1-1">Now we want to add in a sketch of some function <span class="process-math">\(g(x)\text{,}\)</span> all the while satisfying the requirements of the Squeeze Theorem.<div class="autopermalink" data-description="Paragraph"><a href="#act-SketchSqueeze-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <iframe id="act-SketchSqueeze-3-1-2" width="600" height="660" src="act-SketchSqueeze-3-1-2-if.html"></iframe><div class="autopermalink" data-description="Task 1.5.2.b"><a href="#act-SketchSqueeze-3" title="Copy heading and permalink for Task 1.5.2.b">🔗</a></div></article><article class="task exercise-like" id="act-SketchSqueeze-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-SketchSqueeze-4-1-1">Use the Squeeze Theorem to evaluate and explain <span class="process-math">\(\displaystyle \lim_{x\to 1}g(x)\)</span> for your function <span class="process-math">\(g(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-SketchSqueeze-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.5.2.c"><a href="#act-SketchSqueeze-4" title="Copy heading and permalink for Task 1.5.2.c" aria-label="Copy heading and permalink for Task 1.5.2.c">🔗</a></div></article><article class="task exercise-like" id="act-SketchSqueeze-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="act-SketchSqueeze-5-1-1">Is this limit dependent on the specific version of <span class="process-math">\(g(x)\)</span> that you sketched? Would this limit be different for someone else’s choice of <span class="process-math">\(g(x)\)</span> given the same parameters?<div class="autopermalink" data-description="Paragraph"><a href="#act-SketchSqueeze-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.5.2.c"><a href="#act-SketchSqueeze-4" title="Copy heading and permalink for Task 1.5.2.c">🔗</a></div></article><article class="task exercise-like" id="act-SketchSqueeze-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-SketchSqueeze-5-1-1">Is this limit dependent on the specific version of <span class="process-math">\(g(x)\)</span> that you sketched? Would this limit be different for someone else’s choice of <span class="process-math">\(g(x)\)</span> given the same parameters?<div class="autopermalink" data-description="Paragraph"><a href="#act-SketchSqueeze-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.5.2.d"><a href="#act-SketchSqueeze-5" title="Copy heading and permalink for Task 1.5.2.d" aria-label="Copy heading and permalink for Task 1.5.2.d">🔗</a></div></article><article class="task exercise-like" id="act-SketchSqueeze-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="act-SketchSqueeze-6-1-1">What information must be true (if anything) about <span class="process-math">\(\displaystyle \lim_{x\to 3} g(x)\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to 0} g(x)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-SketchSqueeze-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="act-SketchSqueeze-6-1-2">Do we know that these limits exist? If they do, do we have information about their values?<div class="autopermalink" data-description="Paragraph"><a href="#act-SketchSqueeze-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.5.2.d"><a href="#act-SketchSqueeze-5" title="Copy heading and permalink for Task 1.5.2.d">🔗</a></div></article><article class="task exercise-like" id="act-SketchSqueeze-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-SketchSqueeze-6-1-1">What information must be true (if anything) about <span class="process-math">\(\displaystyle \lim_{x\to 3} g(x)\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to 0} g(x)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-SketchSqueeze-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="act-SketchSqueeze-6-1-2">Do we know that these limits exist? If they do, do we have information about their values?<div class="autopermalink" data-description="Paragraph"><a href="#act-SketchSqueeze-6-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.5.2.e"><a href="#act-SketchSqueeze-6" title="Copy heading and permalink for Task 1.5.2.e" aria-label="Copy heading and permalink for Task 1.5.2.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.5.2: Sketch This Function Around This Point"><a href="#act-SketchSqueeze" title="Copy heading and permalink for Activity 1.5.2: Sketch This Function Around This Point" aria-label="Copy heading and permalink for Activity 1.5.2: Sketch This Function Around This Point">🔗</a></div></article><div class="autopermalink" data-description="Section 1.5: The Squeeze Theorem"><a href="#sec-SqueezeTheorem" title="Copy heading and permalink for Section 1.5: The Squeeze Theorem" aria-label="Copy heading and permalink for Section 1.5: The Squeeze Theorem">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Task 1.5.2.e"><a href="#act-SketchSqueeze-6" title="Copy heading and permalink for Task 1.5.2.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.5.2: Sketch This Function Around This Point"><a href="#act-SketchSqueeze" title="Copy heading and permalink for Activity 1.5.2: Sketch This Function Around This Point">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Squeeze Theorem"><a href="#subsec-SqueezeTheorem" title="Copy heading and permalink for Subsection: Squeeze Theorem">🔗</a></div></section><div class="autopermalink" data-description="Section 1.5: The Squeeze Theorem"><a href="#sec-SqueezeTheorem" title="Copy heading and permalink for Section 1.5: The Squeeze Theorem">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-LimitsInvolvingInfinity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Continuity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
