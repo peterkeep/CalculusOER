@@ -45,16 +45,39 @@
             <p>
                 Consider the following limit:
                 <me>
-                    \lim_{x\to}
-                </me>
-                
+                    \lim_{x\to 4}\left(\frac{\frac{2}{x+1} - \frac{x-2}{5}}{x-4}\right)
+                </me>.
             </p>
         </introduction>
+        <task>
+            <statement>
+                <p>
+                    Confirm that this limit has an indeterminate form.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate the limit.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    When you were evaluating the limit, you likely <q>cancelled</q> a factor of <m>(x-4)</m> from the numerator and denominator. Why might you have known, before factoring anything, that <m>(x-4)</m> would be a factor shared in the numerator and denominator?
+                </p>
+                <p>
+                    For instance, how did you know it wasn't going to be <m>(x-3)</m> or <m>(x+1)</m> or something else?
+                </p>
+            </statement>
+        </task>
     </exercise>
     <exercise>
         <introduction>
             <p>
-                Use the algebra tricks from <xref ref="strat-AlgebraicManipulationsLimits"/> to evaluate each limit.
+                Use the algebra tricks from <xref ref="strat-AlgebraicManipulationsLimits" text="title"/> to evaluate each limit.
             </p>
         </introduction>
         <task>
