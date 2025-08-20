@@ -54,9 +54,10 @@ Similarly, the acceleration of an object is the rate of change of the velocity o
 So we're really thinking about derivatives!
     </p>
     <definition xml:id="def-position-velocity-acceleration">
+      <title>Position, Velocity, and Acceleration Functions</title>
       <statement>
         <p>
-          For an object moving along a straight line, if <m>s(t)</m> represents the <term>position</term> of that object at time <m>t</m>, then the <term>velocity</term> of theobject at time <m>t</m> is <m>v(t) = s'(t)</m> and the <term>acceleration</term> of the object at time <m>t</m> is <m>a(t) = v'(t) = s''(t)</m>.
+          For an object moving along a straight line, if <m>s(t)</m> represents the <term>position</term> of that object at time <m>t</m>, then the <term>velocity</term> of the object at time <m>t</m> is <m>v(t) = s'(t)</m> and the <term>acceleration</term> of the object at time <m>t</m> is <m>a(t) = v'(t) = s''(t)</m>.
         </p>
       </statement>
     </definition>
@@ -86,6 +87,7 @@ So we're really thinking about derivatives!
       This should work out well with our first understanding of displacement: the displacement of an object is just the difference in position from the starting time to the ending time. So we could say that if <m>s(t)</m> is the position function, then we might expect to represent displacement from <m>t=a</m> to <m>t=b</m> as <m>s(b)-s(a)</m>. But isn't this just the Fundamental Theorem of Calculus, since <m>s'(t) = v(t)</m>?
     </p>
     <definition xml:id="def-displacement">
+      <title>Displacement of an Object</title>
       <statement>
         <p>
           If an object is moving along a straight line with velocity <m>v(t)</m> and position <m>s(t)</m>, then the <term>displacement</term> of the object from time <m>t=a</m> to <m>t=b</m> is 
@@ -97,6 +99,7 @@ So we're really thinking about derivatives!
       Let's keep revisiting the same activity. We also noticed that when we looked at the <em>distance</em> compared to the displacement, the only difference was that we were integrating the absolute value of the velocity function, since we didn't care about the sign of the velocity (the direction that the object was traveling) on each interval.
     </p>
     <definition xml:id="def-distance">
+      <title>Distance Traveled</title>
       <statement>
         <p>
           If an object is moving along a straight line with velocity <m>v(t)</m>, then the <term>distance</term> traveled by the object from time <m>t=a</m> to <m>t=b</m> is:
