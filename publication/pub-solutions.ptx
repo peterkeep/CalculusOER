@@ -3,10 +3,11 @@
    <!-- directories are relative to the main source PreTeXt file -->
     <source>
         <directories external="../assets" generated="../generated-assets" />
+        <version include="main"/>
     </source>
     <latex sides="two" print="yes" />
     <common>
         <!-- List Chapters and Sections in sidebar Table of Contents -->
-        <tableofcontents level="3" />
+        <tableofcontents level="2" />
     </common>
 </publication>
