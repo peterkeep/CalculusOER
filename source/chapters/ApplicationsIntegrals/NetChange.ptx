@@ -78,7 +78,7 @@ So we're really thinking about derivatives!
 
       We might note, though, that if we did have this kind of information about the velocity at any time in the 5-minute interval, then we would also build a more precise approximation by subdividing the time interval into smaller/shorter pieces.
 
-      So maybe the Riemann sum <m>\sum_{k=1}^{100} v(t_k^*)\Delta t</m> (where we are dividing up the 5 minute interval into 100 3-second intervals) would do a better job!
+      So maybe the Riemann sum <m>\displaystyle\sum_{k=1}^{100} v(t_k^*)\Delta t</m> (where we are dividing up the 5 minute interval into 100 3-second intervals) would do a better job!
 
       But why stop there? If we have the definition of the velocity function, and so we can truly obtain the velocity of the object at <em>any</em> time in the 5 minute interval, then we can use the definition of the definite integral as the limit of a Riemann sum:
 
@@ -112,7 +112,7 @@ So we're really thinking about derivatives!
       We should note that we don't have any quick and easy ways of dealing with the integral of the absolute value of a function.
 
       <me>
-        v(t)| = 
+        |v(t)| = 
         \begin{cases}
             -v(t) \amp \text{when } v(t)\lt 0\\
             \phantom{-}v(t) \amp \text{when } v(t)\geq 0
@@ -137,7 +137,7 @@ So we're really thinking about derivatives!
       <title>Future Position of an Object</title>
       <statement>
         <p>
-          For some object moving along a straight line with velocity <m>v(t)</m> and an intitial position of <m>s(a)</m>, the <term>future position of the object</term> at some time <m>t</m> (with <m>t\geq a</m>) is:
+          For some object moving along a straight line with velocity <m>v(t)</m> and an initial position of <m>s(a)</m>, the <term>future position of the object</term> at some time <m>t</m> (with <m>t\geq a</m>) is:
           <me>
             \underbrace{s(t)}_{\text{future}\atop \text{position}} = \underbrace{s(a)}_{\text{initial}\atop\text{position}} + \underbrace{\int_{x=a}^{x=t} v(x)\;dx}_{\text{displacement from}\atop{a \text{ to } t}}
           </me>
