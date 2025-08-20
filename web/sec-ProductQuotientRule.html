@@ -19,7 +19,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -610,9 +609,9 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-ProductQuotientRule"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.4</span><span class="space"> </span><span class="title">The Product and Quotient Rules</span>
 </h2>
-<section class="introduction" id="sec-ProductQuotientRule-2"><div class="para" id="sec-ProductQuotientRule-2-1">We saw in <a href="sec-DerivativeRules.html#thm-CombinationsOfDerivatives" class="xref" data-knowl="./knowl/xref/thm-CombinationsOfDerivatives.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.3.6: Combinations of Derivatives">Theorem 2.3.6 Combinations of Derivatives</a> that when we want to find the derivative of a sum or difference of functions, we can just find the derivatives of each function separately, and then combine the derivatives back together (by adding or subtracting). This, hopefully, is pretty intuitive: of course a slope of a sum of things is just the slopes of each thing added together!<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProductQuotientRule-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-ProductQuotientRule-2"><div class="para" id="sec-ProductQuotientRule-2-1">We saw in <a href="sec-DerivativeRules.html#thm-CombinationsOfDerivatives" class="xref" data-knowl="./knowl/xref/thm-CombinationsOfDerivatives.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.3.6: Combinations of Derivatives">Theorem 2.3.6 Combinations of Derivatives</a> that when we want to find the derivative of a sum or difference of functions, we can just find the derivatives of each function separately, and then combine the derivatives back together (by adding or subtracting). This, hopefully, is pretty intuitive: of course a slope of a sum of things is just the slopes of each thing added together!<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProductQuotientRule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-ProductQuotientRule-2-2">In this section, we want to think about derivatives of product and quotients of functions. What happens when we differentiate a function that is really just two functions multiplied together?<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProductQuotientRule-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-ProductQuotientRule-2-2">In this section, we want to think about derivatives of product and quotients of functions. What happens when we differentiate a function that is really just two functions multiplied together?<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProductQuotientRule-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-MotivatingProductRule"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Thinking About Derivatives of Products.</span>
@@ -624,13 +623,13 @@ eBookConfig.enable_chatcodes =  false;
 \ddx{x^3} =3x^2 \text{ and } \ddx{\sin(x)}=\cos(x)\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="act-MotivatingProductRule-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="act-MotivatingProductRule-3-1-1">What is <span class="process-math">\(\Ddx{x^3+\sin(x)}\text{?}\)</span> What about <span class="process-math">\(\Ddx{x^3-\sin(x)}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-MotivatingProductRule-3-1-1">What is <span class="process-math">\(\Ddx{x^3+\sin(x)}\text{?}\)</span> What about <span class="process-math">\(\Ddx{x^3-\sin(x)}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.1.a"><a href="#act-MotivatingProductRule-3" title="Copy heading and permalink for Task 2.4.1.a">🔗</a></div></article><article class="task exercise-like" id="act-MotivatingProductRule-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="act-MotivatingProductRule-4-1-1">Based on what you just explained, what is a reasonable assumption about what <span class="process-math">\(\Ddx{x^3\sin(x)}\)</span> might be?<div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.1.a"><a href="#act-MotivatingProductRule-3" title="Copy heading and permalink for Task 2.4.1.a" aria-label="Copy heading and permalink for Task 2.4.1.a">🔗</a></div></article><article class="task exercise-like" id="act-MotivatingProductRule-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-MotivatingProductRule-4-1-1">Based on what you just explained, what is a reasonable assumption about what <span class="process-math">\(\Ddx{x^3\sin(x)}\)</span> might be?<div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="act-MotivatingProductRule-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para logical" id="act-MotivatingProductRule-4-2-1">
@@ -640,17 +639,17 @@ eBookConfig.enable_chatcodes =  false;
 \ddx{x^3}\cdot \ddx{\sin(x)}\text{?}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 2.4.1.b.1"><a href="#act-MotivatingProductRule-4-2" title="Copy heading and permalink for Hint 2.4.1.b.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 2.4.1.b.1"><a href="#act-MotivatingProductRule-4-2" title="Copy heading and permalink for Hint 2.4.1.b.1" aria-label="Copy heading and permalink for Hint 2.4.1.b.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 2.4.1.b"><a href="#act-MotivatingProductRule-4" title="Copy heading and permalink for Task 2.4.1.b">🔗</a></div></article><article class="task exercise-like" id="act-MotivatingProductRule-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="act-MotivatingProductRule-5-1-1">Let’s just think about <span class="process-math">\(\Ddx{x^3}\)</span> for a moment. What <em class="emphasis">is</em> <span class="process-math">\(x^3\text{?}\)</span> Can you write this as a product? Call one of your functions <span class="process-math">\(f(x)\)</span> and the other <span class="process-math">\(g(x)\text{.}\)</span> You should have that <span class="process-math">\(x^3 = f(x)g(x)\)</span> for whatever you used.<div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.1.b"><a href="#act-MotivatingProductRule-4" title="Copy heading and permalink for Task 2.4.1.b" aria-label="Copy heading and permalink for Task 2.4.1.b">🔗</a></div></article><article class="task exercise-like" id="act-MotivatingProductRule-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="act-MotivatingProductRule-5-1-1">Let’s just think about <span class="process-math">\(\Ddx{x^3}\)</span> for a moment. What <em class="emphasis">is</em> <span class="process-math">\(x^3\text{?}\)</span> Can you write this as a product? Call one of your functions <span class="process-math">\(f(x)\)</span> and the other <span class="process-math">\(g(x)\text{.}\)</span> You should have that <span class="process-math">\(x^3 = f(x)g(x)\)</span> for whatever you used.<div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.1.c"><a href="#act-MotivatingProductRule-5" title="Copy heading and permalink for Task 2.4.1.c">🔗</a></div></article><article class="task exercise-like" id="act-MotivatingProductRule-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="act-MotivatingProductRule-6-1-1">Use your example to explain why, in general, <span class="process-math">\(\Ddx{f(x)g(x)}\neq \Ddx{f(x)}\cdot\Ddx{g(x)}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.1.c"><a href="#act-MotivatingProductRule-5" title="Copy heading and permalink for Task 2.4.1.c" aria-label="Copy heading and permalink for Task 2.4.1.c">🔗</a></div></article><article class="task exercise-like" id="act-MotivatingProductRule-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="act-MotivatingProductRule-6-1-1">Use your example to explain why, in general, <span class="process-math">\(\Ddx{f(x)g(x)}\neq \Ddx{f(x)}\cdot\Ddx{g(x)}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.1.d"><a href="#act-MotivatingProductRule-6" title="Copy heading and permalink for Task 2.4.1.d">🔗</a></div></article><article class="task exercise-like" id="act-MotivatingProductRule-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="autopermalink" data-description="Task 2.4.1.d"><a href="#act-MotivatingProductRule-6" title="Copy heading and permalink for Task 2.4.1.d" aria-label="Copy heading and permalink for Task 2.4.1.d">🔗</a></div></article><article class="task exercise-like" id="act-MotivatingProductRule-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <div class="para logical" id="act-MotivatingProductRule-7-1-1">
 <div class="para">Let’s show another way that we know this. Think about <span class="process-math">\(\sin(x)\text{.}\)</span> We know two things:</div>
 <div class="displaymath process-math">
@@ -660,14 +659,14 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">What, though, is <span class="process-math">\(\Ddx{1}\cdot\Ddx{\sin(x)}\text{?}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.1.e"><a href="#act-MotivatingProductRule-7" title="Copy heading and permalink for Task 2.4.1.e">🔗</a></div></article><article class="task exercise-like" id="act-MotivatingProductRule-8"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<div class="para" id="act-MotivatingProductRule-8-1-1">Use all of this to reassure yourself that even though the derivative of a sum of functions is the sum of the derivatives of the functions, we will need to develop a better understanding of how the derivatives of products of functions work.<div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-8-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.1.e"><a href="#act-MotivatingProductRule-7" title="Copy heading and permalink for Task 2.4.1.e" aria-label="Copy heading and permalink for Task 2.4.1.e">🔗</a></div></article><article class="task exercise-like" id="act-MotivatingProductRule-8"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="act-MotivatingProductRule-8-1-1">Use all of this to reassure yourself that even though the derivative of a sum of functions is the sum of the derivatives of the functions, we will need to develop a better understanding of how the derivatives of products of functions work.<div class="autopermalink" data-description="Paragraph"><a href="#act-MotivatingProductRule-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.1.f"><a href="#act-MotivatingProductRule-8" title="Copy heading and permalink for Task 2.4.1.f">🔗</a></div></article><div class="autopermalink" data-description="Activity 2.4.1: Thinking About Derivatives of Products"><a href="#act-MotivatingProductRule" title="Copy heading and permalink for Activity 2.4.1: Thinking About Derivatives of Products">🔗</a></div></article><div class="para" id="sec-ProductQuotientRule-2-4">A thing that I like to think about is this: if <span class="process-math">\(\Ddx{f(x)g(x)} = f'(x)g'(x)\text{,}\)</span> then every function’s derivative would be 0.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProductQuotientRule-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.1.f"><a href="#act-MotivatingProductRule-8" title="Copy heading and permalink for Task 2.4.1.f" aria-label="Copy heading and permalink for Task 2.4.1.f">🔗</a></div></article><div class="autopermalink" data-description="Activity 2.4.1: Thinking About Derivatives of Products"><a href="#act-MotivatingProductRule" title="Copy heading and permalink for Activity 2.4.1: Thinking About Derivatives of Products" aria-label="Copy heading and permalink for Activity 2.4.1: Thinking About Derivatives of Products">🔗</a></div></article><div class="para" id="sec-ProductQuotientRule-2-4">A thing that I like to think about is this: if <span class="process-math">\(\Ddx{f(x)g(x)} = f'(x)g'(x)\text{,}\)</span> then every function’s derivative would be 0.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProductQuotientRule-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-ProductQuotientRule-2-5">In the example with the <span class="process-math">\(\sin(x)\)</span> function, we noticed that we could write the function as <span class="process-math">\((1)(\sin(x))\text{.}\)</span> This is true of every function!<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProductQuotientRule-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-ProductQuotientRule-2-5">In the example with the <span class="process-math">\(\sin(x)\)</span> function, we noticed that we could write the function as <span class="process-math">\((1)(\sin(x))\text{.}\)</span> This is true of every function!<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProductQuotientRule-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-ProductQuotientRule-2-6">
 <div class="para">If <span class="process-math">\(\Ddx{f(x)g(x)} = f'(x)g'(x)\text{,}\)</span> then we could say that for any function <span class="process-math">\(f(x)\)</span> with a derivative <span class="process-math">\(f'(x)\text{:}\)</span>
@@ -681,9 +680,9 @@ eBookConfig.enable_chatcodes =  false;
 \end{align*}
 </div>
 <div class="para">This, obviously, can’t be true! We know of <em class="emphasis">tons</em> of functions that have non-zero slopes...<em class="emphasis">most</em> of them do!</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProductQuotientRule-2-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProductQuotientRule-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-ProductQuotientRule-2-7">So, we hopefully have some motivation for building a rule to that helps us think about derivatives of products of functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProductQuotientRule-2-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-ProductQuotientRule-2-7">So, we hopefully have some motivation for building a rule to that helps us think about derivatives of products of functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProductQuotientRule-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsec-ProductRule"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">The Product Rule</span>
 </h3>
@@ -699,34 +698,34 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">We’ll use an area model for multiplication here: we can consider a rectangle where the side lengths are functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> that change for different values of <span class="process-math">\(x\text{.}\)</span> Maybe <span class="process-math">\(x\)</span> is representative of some type of time component, and the side lengths change size based on time, but it could be anything.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-ProductRule-2-2">If we want to think about <span class="process-math">\(\ddx{f(x)g(x)}\text{,}\)</span> then we’re really considering the change in area of the rectangle.<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-ProductRule-2-2">If we want to think about <span class="process-math">\(\ddx{f(x)g(x)}\text{,}\)</span> then we’re really considering the change in area of the rectangle.<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="act-ProductRule-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-ProductRule-3-1-1">Find the area of the two rectangles. The second rectangle is just one where the input variable for the side length has changed by some amount, leading to a different side length.<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-ProductRule-3-1-1">Find the area of the two rectangles. The second rectangle is just one where the input variable for the side length has changed by some amount, leading to a different side length.<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <figure class="figure figure-like" id="fig-ProductRule1"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
 <div class="sbspanel bottom" style="width:41.025641025641%;"><img src="external/./Derivatives/ProductRule1.png" class="contained" alt="A rectangle with the width labeled f(x) and the height labeled g(x)."></div>
 <div class="sbspanel bottom" style="width:56.4102564102564%;"><img src="external/./Derivatives/ProductRule2.png" class="contained" alt="A larger rectangle with the width labeled f(x+ delta x) and the height labeled g(x + delta x). The original, smaller, rectangle is marked with a dotted line inside of the new larger rectangle."></div>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.4.1<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 2.4.1"><a href="#fig-ProductRule1" title="Copy heading and permalink for Figure 2.4.1">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Task 2.4.2.a"><a href="#act-ProductRule-3" title="Copy heading and permalink for Task 2.4.2.a">🔗</a></div></article><article class="task exercise-like" id="act-ProductRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-ProductRule-4-1-1">Write out a way of calculating the difference in these areas.<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.4.1<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 2.4.1"><a href="#fig-ProductRule1" title="Copy heading and permalink for Figure 2.4.1" aria-label="Copy heading and permalink for Figure 2.4.1">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Task 2.4.2.a"><a href="#act-ProductRule-3" title="Copy heading and permalink for Task 2.4.2.a" aria-label="Copy heading and permalink for Task 2.4.2.a">🔗</a></div></article><article class="task exercise-like" id="act-ProductRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-ProductRule-4-1-1">Write out a way of calculating the difference in these areas.<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.2.b"><a href="#act-ProductRule-4" title="Copy heading and permalink for Task 2.4.2.b">🔗</a></div></article><article class="task exercise-like" id="act-ProductRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="act-ProductRule-5-1-1">Let’s try to calculate this difference in a second way: by finding the actual area of the region that is new in the second rectangle.<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.2.b"><a href="#act-ProductRule-4" title="Copy heading and permalink for Task 2.4.2.b" aria-label="Copy heading and permalink for Task 2.4.2.b">🔗</a></div></article><article class="task exercise-like" id="act-ProductRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-ProductRule-5-1-1">Let’s try to calculate this difference in a second way: by finding the actual area of the region that is new in the second rectangle.<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <figure class="figure figure-like" id="ProductRule2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./Derivatives/ProductRule3.png" class="contained" alt="A small rectangle inside a larger rectangle. The difference is broken up into three shaded in regions. A bar on the top, a bar on the right, and a corner piece."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.4.2<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 2.4.2"><a href="#ProductRule2" title="Copy heading and permalink for Figure 2.4.2">🔗</a></div></figcaption></figure> <div class="para logical" id="act-ProductRule-5-1-3">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.4.2<span class="period">.</span></span><span class="space"> </span><div class="autopermalink" data-description="Figure 2.4.2"><a href="#ProductRule2" title="Copy heading and permalink for Figure 2.4.2" aria-label="Copy heading and permalink for Figure 2.4.2">🔗</a></div></figcaption></figure> <div class="para logical" id="act-ProductRule-5-1-3">
 <div class="para">In order to do this, we’ve broken the region up into three pieces. Calculate the areas of the three pieces. Use this to fill in the following equation:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 f(x+\Delta x)g(x+\Delta x) - f(x)g(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-5-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-5-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.2.c"><a href="#act-ProductRule-5" title="Copy heading and permalink for Task 2.4.2.c">🔗</a></div></article><article class="task exercise-like" id="act-ProductRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-ProductRule-6-1-1">We do not want to calculate the total change in area: a derivative is a <em class="emphasis">rate of change</em>, so in order to think about the derivative we need to divide by the change in input, <span class="process-math">\(\Delta x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.2.c"><a href="#act-ProductRule-5" title="Copy heading and permalink for Task 2.4.2.c" aria-label="Copy heading and permalink for Task 2.4.2.c">🔗</a></div></article><article class="task exercise-like" id="act-ProductRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-ProductRule-6-1-1">We do not want to calculate the total change in area: a derivative is a <em class="emphasis">rate of change</em>, so in order to think about the derivative we need to divide by the change in input, <span class="process-math">\(\Delta x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="act-ProductRule-6-1-2">
 <div class="para">We’ll also want to think about this derivative as an <em class="emphasis">instantaneous</em> rate of change, meaning we will consider a limit as <span class="process-math">\(\Delta x \to 0\text{.}\)</span> Fill in the following:</div>
 <div class="displaymath process-math" id="act-ProductRule-6-1-2-3">
@@ -743,10 +742,10 @@ f(x+\Delta x)g(x+\Delta x) - f(x)g(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}\text{.
 \amp + \lim_{\Delta x \to 0} \left(\frac{\fillinmath{XXXXXXXXXX}}{\Delta x}\right) 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-6-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.2.d"><a href="#act-ProductRule-6" title="Copy heading and permalink for Task 2.4.2.d">🔗</a></div></article><article class="task exercise-like" id="act-ProductRule-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="act-ProductRule-7-1-1">In any limit with <span class="process-math">\(f(x)\)</span> or <span class="process-math">\(g(x)\)</span> in it, notice that we can factor part out of the limit, since these functions do not rely on <span class="process-math">\(\Delta x\text{,}\)</span> the part that changes in the limit. Factor these out.<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.2.d"><a href="#act-ProductRule-6" title="Copy heading and permalink for Task 2.4.2.d" aria-label="Copy heading and permalink for Task 2.4.2.d">🔗</a></div></article><article class="task exercise-like" id="act-ProductRule-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-ProductRule-7-1-1">In any limit with <span class="process-math">\(f(x)\)</span> or <span class="process-math">\(g(x)\)</span> in it, notice that we can factor part out of the limit, since these functions do not rely on <span class="process-math">\(\Delta x\text{,}\)</span> the part that changes in the limit. Factor these out.<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="act-ProductRule-7-1-2">
 <div class="para">In the third limit, factor out either <span class="process-math">\(\displaystyle \lim_{\Delta x\to 0} \left(f(x+\Delta x) - f(x)\right)\)</span> or <span class="process-math">\(\displaystyle \lim_{\Delta x\to 0} \left(g(x+\Delta x) - g(x)\right)\text{.}\)</span>
 </div>
@@ -757,9 +756,9 @@ f(x+\Delta x)g(x+\Delta x) - f(x)g(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}\text{.
 \amp +\lim_{\Delta x\to 0}\left(\fillinmath{XXXXXXXXXX}\right)\left( \lim_{\Delta x \to 0} \left(\frac{\fillinmath{XXXXXXXXXX}}{\Delta x}\right)\right) 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-7-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.2.e"><a href="#act-ProductRule-7" title="Copy heading and permalink for Task 2.4.2.e">🔗</a></div></article><article class="task exercise-like" id="act-ProductRule-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="autopermalink" data-description="Task 2.4.2.e"><a href="#act-ProductRule-7" title="Copy heading and permalink for Task 2.4.2.e" aria-label="Copy heading and permalink for Task 2.4.2.e">🔗</a></div></article><article class="task exercise-like" id="act-ProductRule-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para logical" id="act-ProductRule-8-1-1">
 <div class="para">Use <a href="sec-IntroDerivatives.html#def-DerivativeFunction" class="xref" data-knowl="./knowl/xref/def-DerivativeFunction.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.2: The Derivative Function">Definition 2.1.2 The Derivative Function</a> to re-write these limits. Show that when <span class="process-math">\(\Delta x\to 0\text{,}\)</span> we get:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def-DerivativeFunction.html">
@@ -767,9 +766,9 @@ f(x+\Delta x)g(x+\Delta x) - f(x)g(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}\text{.
 f(x)g'(x) + g(x)f'(x) + 0\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-8-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ProductRule-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.2.f"><a href="#act-ProductRule-8" title="Copy heading and permalink for Task 2.4.2.f">🔗</a></div></article><div class="autopermalink" data-description="Activity 2.4.2: Building a Product Rule"><a href="#act-ProductRule" title="Copy heading and permalink for Activity 2.4.2: Building a Product Rule">🔗</a></div></article><div class="para" id="subsec-ProductRule-3">We can investigate this visual a bit more dynamically: see the differences in area as <span class="process-math">\(\Delta x\to 0\text{.}\)</span> What parts are left, when <span class="process-math">\(\Delta x \to 0\text{?}\)</span> What areas aren’t visible?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProductRule-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.2.f"><a href="#act-ProductRule-8" title="Copy heading and permalink for Task 2.4.2.f" aria-label="Copy heading and permalink for Task 2.4.2.f">🔗</a></div></article><div class="autopermalink" data-description="Activity 2.4.2: Building a Product Rule"><a href="#act-ProductRule" title="Copy heading and permalink for Activity 2.4.2: Building a Product Rule" aria-label="Copy heading and permalink for Activity 2.4.2: Building a Product Rule">🔗</a></div></article><div class="para" id="subsec-ProductRule-3">We can investigate this visual a bit more dynamically: see the differences in area as <span class="process-math">\(\Delta x\to 0\text{.}\)</span> What parts are left, when <span class="process-math">\(\Delta x \to 0\text{?}\)</span> What areas aren’t visible?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProductRule-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <iframe id="subsec-ProductRule-4" width="600" height="429" src="subsec-ProductRule-4-if.html"></iframe><article class="theorem theorem-like" id="thm-ProductRule"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Product Rule.</span>
@@ -787,16 +786,16 @@ f(x)g'(x) + g(x)f'(x) + 0\text{.}
 \ddx{u\cdot v} = u'v + uv' \hspace{1cm} \text{or}\hspace{1cm} \ddx{u\cdot v} = v \left(\dd{u}{x}\right) + u \left(\dd{v}{x}\right)\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-ProductRule-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-ProductRule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 2.4.3: Product Rule"><a href="#thm-ProductRule" title="Copy heading and permalink for Theorem 2.4.3: Product Rule">🔗</a></div></article><article class="example example-like" id="subsec-ProductRule-6"><h4 class="heading">
+<div class="autopermalink" data-description="Theorem 2.4.3: Product Rule"><a href="#thm-ProductRule" title="Copy heading and permalink for Theorem 2.4.3: Product Rule" aria-label="Copy heading and permalink for Theorem 2.4.3: Product Rule">🔗</a></div></article><article class="example example-like" id="subsec-ProductRule-6"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="subsec-ProductRule-6-1"><div class="para" id="subsec-ProductRule-6-1-1">Use the <a href="sec-ProductQuotientRule.html#thm-ProductRule" class="xref" data-knowl="./knowl/xref/thm-ProductRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.3: Product Rule">Product Rule</a> to find the following derivatives.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProductRule-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="subsec-ProductRule-6-1"><div class="para" id="subsec-ProductRule-6-1-1">Use the <a href="sec-ProductQuotientRule.html#thm-ProductRule" class="xref" data-knowl="./knowl/xref/thm-ProductRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.3: Product Rule">Product Rule</a> to find the following derivatives.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProductRule-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="subsec-ProductRule-6-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="subsec-ProductRule-6-2-1-1">
-<span class="process-math">\(\Ddx{x^3 \sin(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProductRule-6-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\Ddx{x^3 \sin(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProductRule-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="subsec-ProductRule-6-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para logical" id="subsec-ProductRule-6-2-2-1">
@@ -806,22 +805,22 @@ f(x)g'(x) + g(x)f'(x) + 0\text{.}
 \ddx{uv} = u'v+uv'\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProductRule-6-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProductRule-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 2.4.4.a.1"><a href="#subsec-ProductRule-6-2-2" title="Copy heading and permalink for Hint 2.4.4.a.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 2.4.4.a.1"><a href="#subsec-ProductRule-6-2-2" title="Copy heading and permalink for Hint 2.4.4.a.1" aria-label="Copy heading and permalink for Hint 2.4.4.a.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 2.4.4.a"><a href="#subsec-ProductRule-6-2" title="Copy heading and permalink for Task 2.4.4.a">🔗</a></div></article><article class="task exercise-like" id="subsec-ProductRule-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Task 2.4.4.a"><a href="#subsec-ProductRule-6-2" title="Copy heading and permalink for Task 2.4.4.a" aria-label="Copy heading and permalink for Task 2.4.4.a">🔗</a></div></article><article class="task exercise-like" id="subsec-ProductRule-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="subsec-ProductRule-6-3-1-1">
-<span class="process-math">\(\Ddx{(x^3+4x)e^x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProductRule-6-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\Ddx{(x^3+4x)e^x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProductRule-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.4.b"><a href="#subsec-ProductRule-6-3" title="Copy heading and permalink for Task 2.4.4.b">🔗</a></div></article><article class="task exercise-like" id="subsec-ProductRule-6-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" data-description="Task 2.4.4.b"><a href="#subsec-ProductRule-6-3" title="Copy heading and permalink for Task 2.4.4.b" aria-label="Copy heading and permalink for Task 2.4.4.b">🔗</a></div></article><article class="task exercise-like" id="subsec-ProductRule-6-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="subsec-ProductRule-6-4-1-1">
-<span class="process-math">\(\Ddx{\sqrt{x}\cos(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProductRule-6-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\Ddx{\sqrt{x}\cos(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProductRule-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.4.c"><a href="#subsec-ProductRule-6-4" title="Copy heading and permalink for Task 2.4.4.c">🔗</a></div></article><div class="autopermalink" data-description="Example 2.4.4"><a href="#subsec-ProductRule-6" title="Copy heading and permalink for Example 2.4.4">🔗</a></div></article><div class="autopermalink" data-description="Subsection: The Product Rule"><a href="#subsec-ProductRule" title="Copy heading and permalink for Subsection: The Product Rule">🔗</a></div></section><section class="subsection" id="subsec-QuotientRule"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Task 2.4.4.c"><a href="#subsec-ProductRule-6-4" title="Copy heading and permalink for Task 2.4.4.c" aria-label="Copy heading and permalink for Task 2.4.4.c">🔗</a></div></article><div class="autopermalink" data-description="Example 2.4.4"><a href="#subsec-ProductRule-6" title="Copy heading and permalink for Example 2.4.4" aria-label="Copy heading and permalink for Example 2.4.4">🔗</a></div></article><div class="autopermalink" data-description="Subsection: The Product Rule"><a href="#subsec-ProductRule" title="Copy heading and permalink for Subsection: The Product Rule" aria-label="Copy heading and permalink for Subsection: The Product Rule">🔗</a></div></section><section class="subsection" id="subsec-QuotientRule"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">What about Dividing?</span>
 </h3>
-<div class="para" id="subsec-QuotientRule-2">So we can differentiate a product of functions, and the obvious next question should be about division: if we needed to build a reasonable way of differentiating a product, shouldn’t we also need to build a new way of thinking about derivatives of quotients?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-QuotientRule-2">So we can differentiate a product of functions, and the obvious next question should be about division: if we needed to build a reasonable way of differentiating a product, shouldn’t we also need to build a new way of thinking about derivatives of quotients?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-QuotientRule-3">
 <div class="para">A nice thing that we can do is think about division as really just multiplication. For instance, if we want to differentiate <span class="process-math">\(\Ddx{\dfrac{\sin(x)}{x^2}}\text{,}\)</span> then we can just think about this quotient as really a product:</div>
@@ -840,9 +839,9 @@ u'=\cos(x) \amp \;\;\; v'=-2x^{-3}\\
 \amp = \frac{\cos(x)}{x^2} - \frac{2\sin(x)}{x^3}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-QuotientRule-4">This works great! We can <em class="emphasis">always</em> think about quotients as just products of reciprocals! But the problem is that we can’t always differentiate these reciprocals (for now). We were able to differentiate <span class="process-math">\(\dfrac{1}{x^2}\)</span> by re-writing this as just a power function (with a negative exponent).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-QuotientRule-4">This works great! We can <em class="emphasis">always</em> think about quotients as just products of reciprocals! But the problem is that we can’t always differentiate these reciprocals (for now). We were able to differentiate <span class="process-math">\(\dfrac{1}{x^2}\)</span> by re-writing this as just a power function (with a negative exponent).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-QuotientRule-5">
 <div class="para">What about this flipped example:</div>
@@ -858,9 +857,9 @@ u'=\cos(x) \amp \;\;\; v'=-2x^{-3}\\
 \end{equation*}
 </div>
 <div class="para">but we don’t know how to differentiate <span class="process-math">\(\left(\sin(x)\right)^{-1}\)</span> (yet).</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-QuotientRule-6">So let’s try to build a general way of differentiating quotients.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-QuotientRule-6">So let’s try to build a general way of differentiating quotients.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-QuotientRule"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Constructing a Quotient Rule.</span>
@@ -873,7 +872,7 @@ f(x) = \frac{u(x)}{v(x)}\text{.}
 \end{equation*}
 </div>
 <div class="para">Our goal is that we want to find <span class="process-math">\(f'(x)\text{,}\)</span> but we’re going to shuffle this function around first. We won’t calculate this derivative directly!</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="act-QuotientRule-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para logical" id="act-QuotientRule-3-1-1">
@@ -884,13 +883,13 @@ f(x) = \frac{u(x)}{v(x)}\text{.}
 u(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.3.a"><a href="#act-QuotientRule-3" title="Copy heading and permalink for Task 2.4.3.a">🔗</a></div></article><article class="task exercise-like" id="act-QuotientRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-QuotientRule-4-1-1">Find <span class="process-math">\(u'(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.3.a"><a href="#act-QuotientRule-3" title="Copy heading and permalink for Task 2.4.3.a" aria-label="Copy heading and permalink for Task 2.4.3.a">🔗</a></div></article><article class="task exercise-like" id="act-QuotientRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-QuotientRule-4-1-1">Find <span class="process-math">\(u'(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.3.b"><a href="#act-QuotientRule-4" title="Copy heading and permalink for Task 2.4.3.b">🔗</a></div></article><article class="task exercise-like" id="act-QuotientRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="act-QuotientRule-5-1-1">Wait: we don’t care about <span class="process-math">\(u'(x)\text{.}\)</span> Right? We care about finding <span class="process-math">\(f'(x)\text{!}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.3.b"><a href="#act-QuotientRule-4" title="Copy heading and permalink for Task 2.4.3.b" aria-label="Copy heading and permalink for Task 2.4.3.b">🔗</a></div></article><article class="task exercise-like" id="act-QuotientRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-QuotientRule-5-1-1">Wait: we don’t care about <span class="process-math">\(u'(x)\text{.}\)</span> Right? We care about finding <span class="process-math">\(f'(x)\text{!}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="act-QuotientRule-5-1-2">
 <div class="para">Use what you found for <span class="process-math">\(u'(x)\)</span> and solve for <span class="process-math">\(f'(x)\text{.}\)</span>
 </div>
@@ -899,10 +898,10 @@ u(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}
 f'(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-5-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.3.c"><a href="#act-QuotientRule-5" title="Copy heading and permalink for Task 2.4.3.c">🔗</a></div></article><article class="task exercise-like" id="act-QuotientRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-QuotientRule-6-1-1">This is a strange formula: we have a formula for <span class="process-math">\(f'(x)\)</span> written in terms of <span class="process-math">\(f(x)\text{!}\)</span> But we said earlier that <span class="process-math">\(f(x) = \dfrac{u(x)}{v(x)}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.3.c"><a href="#act-QuotientRule-5" title="Copy heading and permalink for Task 2.4.3.c" aria-label="Copy heading and permalink for Task 2.4.3.c">🔗</a></div></article><article class="task exercise-like" id="act-QuotientRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-QuotientRule-6-1-1">This is a strange formula: we have a formula for <span class="process-math">\(f'(x)\)</span> written in terms of <span class="process-math">\(f(x)\text{!}\)</span> But we said earlier that <span class="process-math">\(f(x) = \dfrac{u(x)}{v(x)}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="act-QuotientRule-6-1-2">
 <div class="para">In your formula for <span class="process-math">\(f'(x)\text{,}\)</span> replace <span class="process-math">\(f(x)\)</span> with <span class="process-math">\(\dfrac{u(x)}{v(x)}\text{.}\)</span>
 </div>
@@ -911,9 +910,9 @@ f'(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}
 f'(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-6-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-QuotientRule-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.3.d"><a href="#act-QuotientRule-6" title="Copy heading and permalink for Task 2.4.3.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 2.4.3: Constructing a Quotient Rule"><a href="#act-QuotientRule" title="Copy heading and permalink for Activity 2.4.3: Constructing a Quotient Rule">🔗</a></div></article><div class="para" id="subsec-QuotientRule-8">This formula is fine, but a little clunky. We’ll try to re-write it in some nice ways, but it is a bit more complex than the <a href="sec-ProductQuotientRule.html#thm-ProductRule" class="xref" data-knowl="./knowl/xref/thm-ProductRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.3: Product Rule">Product Rule</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.4.3.d"><a href="#act-QuotientRule-6" title="Copy heading and permalink for Task 2.4.3.d" aria-label="Copy heading and permalink for Task 2.4.3.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 2.4.3: Constructing a Quotient Rule"><a href="#act-QuotientRule" title="Copy heading and permalink for Activity 2.4.3: Constructing a Quotient Rule" aria-label="Copy heading and permalink for Activity 2.4.3: Constructing a Quotient Rule">🔗</a></div></article><div class="para" id="subsec-QuotientRule-8">This formula is fine, but a little clunky. We’ll try to re-write it in some nice ways, but it is a bit more complex than the <a href="sec-ProductQuotientRule.html#thm-ProductRule" class="xref" data-knowl="./knowl/xref/thm-ProductRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.3: Product Rule">Product Rule</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="thm-QuotientRule"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Quotient Rule.</span>
@@ -925,7 +924,7 @@ f'(x) = \fillinmath{XXXXXXXXXXXXXXXXXXXX}
 f'(x) = \dfrac{v(x)u'(x) - u(x)v'(x)}{(v(x))^2}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-QuotientRule-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-QuotientRule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="thm-QuotientRule-2-2">
 <div class="para">For convenience, this is often written as:</div>
 <div class="displaymath process-math">
@@ -933,27 +932,27 @@ f'(x) = \dfrac{v(x)u'(x) - u(x)v'(x)}{(v(x))^2}\text{.}
 \ddx{\frac{u}{v}} = \frac{vu'-uv'}{v^2}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-QuotientRule-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-QuotientRule-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 2.4.5: Quotient Rule"><a href="#thm-QuotientRule" title="Copy heading and permalink for Theorem 2.4.5: Quotient Rule">🔗</a></div></article><article class="example example-like" id="subsec-QuotientRule-10"><h4 class="heading">
+<div class="autopermalink" data-description="Theorem 2.4.5: Quotient Rule"><a href="#thm-QuotientRule" title="Copy heading and permalink for Theorem 2.4.5: Quotient Rule" aria-label="Copy heading and permalink for Theorem 2.4.5: Quotient Rule">🔗</a></div></article><article class="example example-like" id="subsec-QuotientRule-10"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.6</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="subsec-QuotientRule-10-1"><div class="para" id="subsec-QuotientRule-10-1-1">Use the <a href="sec-ProductQuotientRule.html#thm-QuotientRule" class="xref" data-knowl="./knowl/xref/thm-QuotientRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.5: Quotient Rule">Quotient Rule</a> to find the following derivatives.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-10-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="subsec-QuotientRule-10-1"><div class="para" id="subsec-QuotientRule-10-1-1">Use the <a href="sec-ProductQuotientRule.html#thm-QuotientRule" class="xref" data-knowl="./knowl/xref/thm-QuotientRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.4.5: Quotient Rule">Quotient Rule</a> to find the following derivatives.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="subsec-QuotientRule-10-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="subsec-QuotientRule-10-2-1-1">
-<span class="process-math">\(\Ddx{\dfrac{\sin(x)}{x^2}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-10-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="subsec-QuotientRule-10-2-1-2">Once you have this derivative, confirm that it is the same as <span class="process-math">\(\dfrac{\cos(x)}{x^2} - \dfrac{2\sin(x)}{x^3}\text{,}\)</span> the way that we found it using the Product Rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-10-2-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\Ddx{\dfrac{\sin(x)}{x^2}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-10-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="subsec-QuotientRule-10-2-1-2">Once you have this derivative, confirm that it is the same as <span class="process-math">\(\dfrac{\cos(x)}{x^2} - \dfrac{2\sin(x)}{x^3}\text{,}\)</span> the way that we found it using the Product Rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-10-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.6.a"><a href="#subsec-QuotientRule-10-2" title="Copy heading and permalink for Task 2.4.6.a">🔗</a></div></article><article class="task exercise-like" id="subsec-QuotientRule-10-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Task 2.4.6.a"><a href="#subsec-QuotientRule-10-2" title="Copy heading and permalink for Task 2.4.6.a" aria-label="Copy heading and permalink for Task 2.4.6.a">🔗</a></div></article><article class="task exercise-like" id="subsec-QuotientRule-10-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="subsec-QuotientRule-10-3-1-1">
-<span class="process-math">\(\Ddx{\dfrac{x^2}{\sin(x)}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-10-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\Ddx{\dfrac{x^2}{\sin(x)}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-10-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.6.b"><a href="#subsec-QuotientRule-10-3" title="Copy heading and permalink for Task 2.4.6.b">🔗</a></div></article><article class="task exercise-like" id="subsec-QuotientRule-10-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" data-description="Task 2.4.6.b"><a href="#subsec-QuotientRule-10-3" title="Copy heading and permalink for Task 2.4.6.b" aria-label="Copy heading and permalink for Task 2.4.6.b">🔗</a></div></article><article class="task exercise-like" id="subsec-QuotientRule-10-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="subsec-QuotientRule-10-4-1-1">
-<span class="process-math">\(\Ddx{\dfrac{x+4}{x^2+1}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-10-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\Ddx{\dfrac{x+4}{x^2+1}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuotientRule-10-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.4.6.c"><a href="#subsec-QuotientRule-10-4" title="Copy heading and permalink for Task 2.4.6.c">🔗</a></div></article><div class="autopermalink" data-description="Example 2.4.6"><a href="#subsec-QuotientRule-10" title="Copy heading and permalink for Example 2.4.6">🔗</a></div></article><div class="autopermalink" data-description="Subsection: What about Dividing?"><a href="#subsec-QuotientRule" title="Copy heading and permalink for Subsection: What about Dividing?">🔗</a></div></section><section class="subsection" id="subsec-MoreTrigDerivatives"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Task 2.4.6.c"><a href="#subsec-QuotientRule-10-4" title="Copy heading and permalink for Task 2.4.6.c" aria-label="Copy heading and permalink for Task 2.4.6.c">🔗</a></div></article><div class="autopermalink" data-description="Example 2.4.6"><a href="#subsec-QuotientRule-10" title="Copy heading and permalink for Example 2.4.6" aria-label="Copy heading and permalink for Example 2.4.6">🔗</a></div></article><div class="autopermalink" data-description="Subsection: What about Dividing?"><a href="#subsec-QuotientRule" title="Copy heading and permalink for Subsection: What about Dividing?" aria-label="Copy heading and permalink for Subsection: What about Dividing?">🔗</a></div></section><section class="subsection" id="subsec-MoreTrigDerivatives"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Derivatives of (the Rest of the) Trigonometric Functions</span>
 </h3>
 <div class="para logical" id="subsec-MoreTrigDerivatives-2">
@@ -966,50 +965,50 @@ f'(x) = \dfrac{v(x)u'(x) - u(x)v'(x)}{(v(x))^2}\text{.}
 \csc(x) \amp = \left(\frac{1}{\sin(x)}\right)
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="subsec-MoreTrigDerivatives-3"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.7</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="subsec-MoreTrigDerivatives-3-1"><div class="para" id="subsec-MoreTrigDerivatives-3-1-1">Find the derivatives of the remaining trigonometric functions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="subsec-MoreTrigDerivatives-3-1"><div class="para" id="subsec-MoreTrigDerivatives-3-1-1">Find the derivatives of the remaining trigonometric functions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="subsec-MoreTrigDerivatives-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="subsec-MoreTrigDerivatives-3-2-1-1">
-<span class="process-math">\(\Ddx{\tan(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\Ddx{\tan(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="subsec-MoreTrigDerivatives-3-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="subsec-MoreTrigDerivatives-3-2-2-1">Write <span class="process-math">\(\Ddx{\tan(x)} = \Ddx{\dfrac{\sin(x)}{\cos(x)}}\)</span> and use the Quotient Rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-MoreTrigDerivatives-3-2-2-1">Write <span class="process-math">\(\Ddx{\tan(x)} = \Ddx{\dfrac{\sin(x)}{\cos(x)}}\)</span> and use the Quotient Rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 2.4.7.a.1"><a href="#subsec-MoreTrigDerivatives-3-2-2" title="Copy heading and permalink for Hint 2.4.7.a.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 2.4.7.a.1"><a href="#subsec-MoreTrigDerivatives-3-2-2" title="Copy heading and permalink for Hint 2.4.7.a.1" aria-label="Copy heading and permalink for Hint 2.4.7.a.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 2.4.7.a"><a href="#subsec-MoreTrigDerivatives-3-2" title="Copy heading and permalink for Task 2.4.7.a">🔗</a></div></article><article class="task exercise-like" id="subsec-MoreTrigDerivatives-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Task 2.4.7.a"><a href="#subsec-MoreTrigDerivatives-3-2" title="Copy heading and permalink for Task 2.4.7.a" aria-label="Copy heading and permalink for Task 2.4.7.a">🔗</a></div></article><article class="task exercise-like" id="subsec-MoreTrigDerivatives-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="subsec-MoreTrigDerivatives-3-3-1-1">
-<span class="process-math">\(\Ddx{\sec(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\Ddx{\sec(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="subsec-MoreTrigDerivatives-3-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="subsec-MoreTrigDerivatives-3-3-2-1">Write <span class="process-math">\(\Ddx{\sec(x)} = \Ddx{\dfrac{1}{\cos(x)}}\)</span> and use the Quotient Rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-MoreTrigDerivatives-3-3-2-1">Write <span class="process-math">\(\Ddx{\sec(x)} = \Ddx{\dfrac{1}{\cos(x)}}\)</span> and use the Quotient Rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 2.4.7.b.1"><a href="#subsec-MoreTrigDerivatives-3-3-2" title="Copy heading and permalink for Hint 2.4.7.b.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 2.4.7.b.1"><a href="#subsec-MoreTrigDerivatives-3-3-2" title="Copy heading and permalink for Hint 2.4.7.b.1" aria-label="Copy heading and permalink for Hint 2.4.7.b.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 2.4.7.b"><a href="#subsec-MoreTrigDerivatives-3-3" title="Copy heading and permalink for Task 2.4.7.b">🔗</a></div></article><article class="task exercise-like" id="subsec-MoreTrigDerivatives-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" data-description="Task 2.4.7.b"><a href="#subsec-MoreTrigDerivatives-3-3" title="Copy heading and permalink for Task 2.4.7.b" aria-label="Copy heading and permalink for Task 2.4.7.b">🔗</a></div></article><article class="task exercise-like" id="subsec-MoreTrigDerivatives-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="subsec-MoreTrigDerivatives-3-4-1-1">
-<span class="process-math">\(\Ddx{\cot(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\Ddx{\cot(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="subsec-MoreTrigDerivatives-3-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="subsec-MoreTrigDerivatives-3-4-2-1">Write <span class="process-math">\(\Ddx{\cot(x)} = \Ddx{\dfrac{\cos(x)}{\sin(x)}}\)</span> and use the Quotient Rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-MoreTrigDerivatives-3-4-2-1">Write <span class="process-math">\(\Ddx{\cot(x)} = \Ddx{\dfrac{\cos(x)}{\sin(x)}}\)</span> and use the Quotient Rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 2.4.7.c.1"><a href="#subsec-MoreTrigDerivatives-3-4-2" title="Copy heading and permalink for Hint 2.4.7.c.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 2.4.7.c.1"><a href="#subsec-MoreTrigDerivatives-3-4-2" title="Copy heading and permalink for Hint 2.4.7.c.1" aria-label="Copy heading and permalink for Hint 2.4.7.c.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 2.4.7.c"><a href="#subsec-MoreTrigDerivatives-3-4" title="Copy heading and permalink for Task 2.4.7.c">🔗</a></div></article><article class="task exercise-like" id="subsec-MoreTrigDerivatives-3-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="autopermalink" data-description="Task 2.4.7.c"><a href="#subsec-MoreTrigDerivatives-3-4" title="Copy heading and permalink for Task 2.4.7.c" aria-label="Copy heading and permalink for Task 2.4.7.c">🔗</a></div></article><article class="task exercise-like" id="subsec-MoreTrigDerivatives-3-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="subsec-MoreTrigDerivatives-3-5-1-1">
-<span class="process-math">\(\Ddx{\csc(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\Ddx{\csc(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="subsec-MoreTrigDerivatives-3-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="subsec-MoreTrigDerivatives-3-5-2-1">Write <span class="process-math">\(\Ddx{\csc(x)} = \Ddx{\dfrac{1}{\cos(x)}}\)</span> and use the Quotient Rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-MoreTrigDerivatives-3-5-2-1">Write <span class="process-math">\(\Ddx{\csc(x)} = \Ddx{\dfrac{1}{\cos(x)}}\)</span> and use the Quotient Rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MoreTrigDerivatives-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 2.4.7.d.1"><a href="#subsec-MoreTrigDerivatives-3-5-2" title="Copy heading and permalink for Hint 2.4.7.d.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 2.4.7.d.1"><a href="#subsec-MoreTrigDerivatives-3-5-2" title="Copy heading and permalink for Hint 2.4.7.d.1" aria-label="Copy heading and permalink for Hint 2.4.7.d.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 2.4.7.d"><a href="#subsec-MoreTrigDerivatives-3-5" title="Copy heading and permalink for Task 2.4.7.d">🔗</a></div></article><div class="autopermalink" data-description="Example 2.4.7"><a href="#subsec-MoreTrigDerivatives-3" title="Copy heading and permalink for Example 2.4.7">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Derivatives of (the Rest of the) Trigonometric Functions"><a href="#subsec-MoreTrigDerivatives" title="Copy heading and permalink for Subsection: Derivatives of (the Rest of the) Trigonometric Functions">🔗</a></div></section><div class="autopermalink" data-description="Section 2.4: The Product and Quotient Rules"><a href="#sec-ProductQuotientRule" title="Copy heading and permalink for Section 2.4: The Product and Quotient Rules">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Task 2.4.7.d"><a href="#subsec-MoreTrigDerivatives-3-5" title="Copy heading and permalink for Task 2.4.7.d" aria-label="Copy heading and permalink for Task 2.4.7.d">🔗</a></div></article><div class="autopermalink" data-description="Example 2.4.7"><a href="#subsec-MoreTrigDerivatives-3" title="Copy heading and permalink for Example 2.4.7" aria-label="Copy heading and permalink for Example 2.4.7">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Derivatives of (the Rest of the) Trigonometric Functions"><a href="#subsec-MoreTrigDerivatives" title="Copy heading and permalink for Subsection: Derivatives of (the Rest of the) Trigonometric Functions" aria-label="Copy heading and permalink for Subsection: Derivatives of (the Rest of the) Trigonometric Functions">🔗</a></div></section><div class="autopermalink" data-description="Section 2.4: The Product and Quotient Rules"><a href="#sec-ProductQuotientRule" title="Copy heading and permalink for Section 2.4: The Product and Quotient Rules" aria-label="Copy heading and permalink for Section 2.4: The Product and Quotient Rules">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-DerivativeRules.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-ChainRule.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

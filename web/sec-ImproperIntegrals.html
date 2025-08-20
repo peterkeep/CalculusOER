@@ -19,7 +19,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -610,43 +609,43 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-ImproperIntegrals"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">7.1</span><span class="space"> </span><span class="title">Improper Integrals</span>
 </h2>
-<section class="introduction" id="sec-ImproperIntegrals-2"><div class="para" id="sec-ImproperIntegrals-2-1">We’re going to think a bit about integration with a twist: what happens when our "definite" integrals can’t actually be evaluated? First, let’s try to sink ourselves back into the context we’ve been in for a while now: what kinds of problems have we encountered so far, and how do we use our calculus intuition to get around those problems?<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImproperIntegrals-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-ImproperIntegrals-2"><div class="para" id="sec-ImproperIntegrals-2-1">We’re going to think a bit about integration with a twist: what happens when our "definite" integrals can’t actually be evaluated? First, let’s try to sink ourselves back into the context we’ve been in for a while now: what kinds of problems have we encountered so far, and how do we use our calculus intuition to get around those problems?<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImproperIntegrals-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-RememberingTheme"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Remembering a Theme so Far.</span>
 </h3>
 <article class="task exercise-like" id="act-RememberingTheme-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="act-RememberingTheme-2-1-1">Let’s say that we want to find what the <span class="process-math">\(y\)</span>-values of some function <span class="process-math">\(f(x)\)</span> are when the <span class="process-math">\(x\)</span>-values are "infinitely close to" some value, <span class="process-math">\(x=a\text{.}\)</span> Since there is no single <span class="process-math">\(x\)</span>-value that is "infinitely close to" <span class="process-math">\(a\)</span> that we can evaluate <span class="process-math">\(f(x)\)</span> at, we need to do something else. How do we do this?<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingTheme-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-RememberingTheme-2-1-1">Let’s say that we want to find what the <span class="process-math">\(y\)</span>-values of some function <span class="process-math">\(f(x)\)</span> are when the <span class="process-math">\(x\)</span>-values are "infinitely close to" some value, <span class="process-math">\(x=a\text{.}\)</span> Since there is no single <span class="process-math">\(x\)</span>-value that is "infinitely close to" <span class="process-math">\(a\)</span> that we can evaluate <span class="process-math">\(f(x)\)</span> at, we need to do something else. How do we do this?<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingTheme-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.1.1.a"><a href="#act-RememberingTheme-2" title="Copy heading and permalink for Task 7.1.1.a">🔗</a></div></article><article class="task exercise-like" id="act-RememberingTheme-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="act-RememberingTheme-3-1-1">Let’s say that we want to find the rate of change of some function instantaneously at a point with <span class="process-math">\(x=a\text{.}\)</span> We can’t find a rate of change unless we have two points, since we need to find some differences in the outputs and inputs. How do we do this?<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingTheme-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 7.1.1.a"><a href="#act-RememberingTheme-2" title="Copy heading and permalink for Task 7.1.1.a" aria-label="Copy heading and permalink for Task 7.1.1.a">🔗</a></div></article><article class="task exercise-like" id="act-RememberingTheme-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-RememberingTheme-3-1-1">Let’s say that we want to find the rate of change of some function instantaneously at a point with <span class="process-math">\(x=a\text{.}\)</span> We can’t find a rate of change unless we have two points, since we need to find some differences in the outputs and inputs. How do we do this?<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingTheme-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.1.1.b"><a href="#act-RememberingTheme-3" title="Copy heading and permalink for Task 7.1.1.b">🔗</a></div></article><article class="task exercise-like" id="act-RememberingTheme-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="act-RememberingTheme-4-1-1">Suppose you want to find the total area, covered by an infinite number of infinitely thin rectangles. You have a formula for finding the dimensions and areas for some finite number of rectangles, but how do we get an infinite number of them?<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingTheme-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 7.1.1.b"><a href="#act-RememberingTheme-3" title="Copy heading and permalink for Task 7.1.1.b" aria-label="Copy heading and permalink for Task 7.1.1.b">🔗</a></div></article><article class="task exercise-like" id="act-RememberingTheme-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="act-RememberingTheme-4-1-1">Suppose you want to find the total area, covered by an infinite number of infinitely thin rectangles. You have a formula for finding the dimensions and areas for some finite number of rectangles, but how do we get an infinite number of them?<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingTheme-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.1.1.c"><a href="#act-RememberingTheme-4" title="Copy heading and permalink for Task 7.1.1.c">🔗</a></div></article><article class="task exercise-like" id="act-RememberingTheme-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="act-RememberingTheme-5-1-1">Can you find the common calculus theme in each of these scenarios?<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingTheme-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 7.1.1.c"><a href="#act-RememberingTheme-4" title="Copy heading and permalink for Task 7.1.1.c" aria-label="Copy heading and permalink for Task 7.1.1.c">🔗</a></div></article><article class="task exercise-like" id="act-RememberingTheme-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="act-RememberingTheme-5-1-1">Can you find the common calculus theme in each of these scenarios?<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingTheme-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.1.1.d"><a href="#act-RememberingTheme-5" title="Copy heading and permalink for Task 7.1.1.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 7.1.1: Remembering a Theme so Far"><a href="#act-RememberingTheme" title="Copy heading and permalink for Activity 7.1.1: Remembering a Theme so Far">🔗</a></div></article><div class="para" id="sec-ImproperIntegrals-2-3">So moving forward, we want to remember how we typically have solved these problems. Now, let’s try to identify the types of problems with integrals that we need to figure our way around.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImproperIntegrals-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 7.1.1.d"><a href="#act-RememberingTheme-5" title="Copy heading and permalink for Task 7.1.1.d" aria-label="Copy heading and permalink for Task 7.1.1.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 7.1.1: Remembering a Theme so Far"><a href="#act-RememberingTheme" title="Copy heading and permalink for Activity 7.1.1: Remembering a Theme so Far" aria-label="Copy heading and permalink for Activity 7.1.1: Remembering a Theme so Far">🔗</a></div></article><div class="para" id="sec-ImproperIntegrals-2-3">So moving forward, we want to remember how we typically have solved these problems. Now, let’s try to identify the types of problems with integrals that we need to figure our way around.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImproperIntegrals-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-RememberingFTOC"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Remembering the Fundamental Theorem of Calculus.</span>
 </h3>
 <div class="introduction" id="act-RememberingFTOC-2">
-<div class="para" id="act-RememberingFTOC-2-1">We want to think about generalizing our notion of integrals a bit. So in this activity, section, we’re going to think about some of the requirements for the Fundamental Theorem of Calculus and try to loosen them up a bit to see what happens. We’ll try to construct meaningful approaches to these situations that fit our overall goals of calculating area under a curve.<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingFTOC-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-RememberingFTOC-2-1">We want to think about generalizing our notion of integrals a bit. So in this activity, section, we’re going to think about some of the requirements for the Fundamental Theorem of Calculus and try to loosen them up a bit to see what happens. We’ll try to construct meaningful approaches to these situations that fit our overall goals of calculating area under a curve.<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingFTOC-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-RememberingFTOC-2-2">This practice, in general, is a really good and common mathematical process: taking some result and playing with the requirements or assumptions to see what else can happen. So it might feel like we’re just fiddling with the "What if?" questions, but what we’re actually doing is good mathematics!<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingFTOC-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-RememberingFTOC-2-2">This practice, in general, is a really good and common mathematical process: taking some result and playing with the requirements or assumptions to see what else can happen. So it might feel like we’re just fiddling with the "What if?" questions, but what we’re actually doing is good mathematics!<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingFTOC-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="act-RememberingFTOC-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="act-RememberingFTOC-3-1-1">What does the Fundamental Theorem of Calculus say about evaluating the definite integral <span class="process-math">\(\displaystyle \int_{x=a}^{x=b} f(x)\, dx\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingFTOC-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-RememberingFTOC-3-1-1">What does the Fundamental Theorem of Calculus say about evaluating the definite integral <span class="process-math">\(\displaystyle \int_{x=a}^{x=b} f(x)\, dx\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingFTOC-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.1.2.a"><a href="#act-RememberingFTOC-3" title="Copy heading and permalink for Task 7.1.2.a">🔗</a></div></article><article class="task exercise-like" id="act-RememberingFTOC-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="act-RememberingFTOC-4-1-1">What do we need to be true about our setup, our function, etc. for us to be able to apply this technique to evaluate <span class="process-math">\(\displaystyle \int_{x=a}^{x=b} f(x)\,dx\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingFTOC-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 7.1.2.a"><a href="#act-RememberingFTOC-3" title="Copy heading and permalink for Task 7.1.2.a" aria-label="Copy heading and permalink for Task 7.1.2.a">🔗</a></div></article><article class="task exercise-like" id="act-RememberingFTOC-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-RememberingFTOC-4-1-1">What do we need to be true about our setup, our function, etc. for us to be able to apply this technique to evaluate <span class="process-math">\(\displaystyle \int_{x=a}^{x=b} f(x)\,dx\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingFTOC-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.1.2.b"><a href="#act-RememberingFTOC-4" title="Copy heading and permalink for Task 7.1.2.b">🔗</a></div></article><div class="conclusion" id="act-RememberingFTOC-5"><div class="para" id="act-RememberingFTOC-5-1">We are going to introduce the idea of "Improper Integrals" as kind-of-but-not-quite definite integrals that we can evaluate. They are going to violate the requirements for the Fundamental Theorem of Calculus, but we’ll work to salvage them in meaningful ways.<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingFTOC-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 7.1.2.b"><a href="#act-RememberingFTOC-4" title="Copy heading and permalink for Task 7.1.2.b" aria-label="Copy heading and permalink for Task 7.1.2.b">🔗</a></div></article><div class="conclusion" id="act-RememberingFTOC-5"><div class="para" id="act-RememberingFTOC-5-1">We are going to introduce the idea of "Improper Integrals" as kind-of-but-not-quite definite integrals that we can evaluate. They are going to violate the requirements for the Fundamental Theorem of Calculus, but we’ll work to salvage them in meaningful ways.<div class="autopermalink" data-description="Paragraph"><a href="#act-RememberingFTOC-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
-<div class="autopermalink" data-description="Activity 7.1.2: Remembering the Fundamental Theorem of Calculus"><a href="#act-RememberingFTOC" title="Copy heading and permalink for Activity 7.1.2: Remembering the Fundamental Theorem of Calculus">🔗</a></div></article><div class="para" id="sec-ImproperIntegrals-2-5">This should build a pretty good idea of a new "class" of integrals: ones that aren’t <em class="emphasis">quite</em> definite integrals that we can evaluate with the Fundamental Theorem of Calculus, but ones that we can use limits to get at.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImproperIntegrals-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Activity 7.1.2: Remembering the Fundamental Theorem of Calculus"><a href="#act-RememberingFTOC" title="Copy heading and permalink for Activity 7.1.2: Remembering the Fundamental Theorem of Calculus" aria-label="Copy heading and permalink for Activity 7.1.2: Remembering the Fundamental Theorem of Calculus">🔗</a></div></article><div class="para" id="sec-ImproperIntegrals-2-5">This should build a pretty good idea of a new "class" of integrals: ones that aren’t <em class="emphasis">quite</em> definite integrals that we can evaluate with the Fundamental Theorem of Calculus, but ones that we can use limits to get at.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImproperIntegrals-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsec-ImproprtIntegrals"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Improprt Integrals</span>
 </h3>
@@ -657,21 +656,21 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">An integral is an <dfn class="terminology">improper integral</dfn> if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:</div>
 <ol class="decimal" id="def-ImproperIntegral-2-1-2">
 <li id="def-ImproperIntegral-2-1-2-1">
-<div class="para" id="def-ImproperIntegral-2-1-2-1-1">The interval that we integrate the function over is unbounded in width, or infinitely wide.<div class="autopermalink" data-description="Paragraph"><a href="#def-ImproperIntegral-2-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-ImproperIntegral-2-1-2-1-1">The interval that we integrate the function over is unbounded in width, or infinitely wide.<div class="autopermalink" data-description="Paragraph"><a href="#def-ImproperIntegral-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#def-ImproperIntegral-2-1-2-1" title="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#def-ImproperIntegral-2-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="def-ImproperIntegral-2-1-2-2">
-<div class="para" id="def-ImproperIntegral-2-1-2-2-1">The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over.<div class="autopermalink" data-description="Paragraph"><a href="#def-ImproperIntegral-2-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-ImproperIntegral-2-1-2-2-1">The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over.<div class="autopermalink" data-description="Paragraph"><a href="#def-ImproperIntegral-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#def-ImproperIntegral-2-1-2-2" title="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#def-ImproperIntegral-2-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#def-ImproperIntegral-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-ImproperIntegral-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 7.1.1: Improper Integral"><a href="#def-ImproperIntegral" title="Copy heading and permalink for Definition 7.1.1: Improper Integral">🔗</a></div></article><div class="para" id="subsec-ImproprtIntegrals-3">With this definition, we can think about the strategies that we got from <a href="sec-ImproperIntegrals.html#act-RememberingTheme" class="xref" data-knowl="./knowl/xref/act-RememberingTheme.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.1.1: Remembering a Theme so Far">Activity 7.1.1</a>: we’re going to identify the problems in our integral (infinite width of the interval or infinite height of the integrand function) and use a limit!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproprtIntegrals-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 7.1.1: Improper Integral"><a href="#def-ImproperIntegral" title="Copy heading and permalink for Definition 7.1.1: Improper Integral" aria-label="Copy heading and permalink for Definition 7.1.1: Improper Integral">🔗</a></div></article><div class="para" id="subsec-ImproprtIntegrals-3">With this definition, we can think about the strategies that we got from <a href="sec-ImproperIntegrals.html#act-RememberingTheme" class="xref" data-knowl="./knowl/xref/act-RememberingTheme.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 7.1.1: Remembering a Theme so Far">Activity 7.1.1</a>: we’re going to identify the problems in our integral (infinite width of the interval or infinite height of the integrand function) and use a limit!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproprtIntegrals-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-ImproprtIntegrals-4">Before we formalize that, though, let’s try to think about how this works by being really explicit about what this limit is actually doing.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproprtIntegrals-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-ImproprtIntegrals-4">Before we formalize that, though, let’s try to think about how this works by being really explicit about what this limit is actually doing.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproprtIntegrals-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="Act-ApproximateImproperIntegrals"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Approximating Improper Integrals.</span>
@@ -681,23 +680,23 @@ eBookConfig.enable_chatcodes =  false;
 <ol class="decimal" id="Act-ApproximateImproperIntegrals-2-1-1">
 <li id="Act-ApproximateImproperIntegrals-2-1-1-1">
 <div class="para" id="Act-ApproximateImproperIntegrals-2-1-1-1-1">
-<span class="process-math">\(\displaystyle \displaystyle \int_{x=2}^{\infty} \frac{1}{(x+1)^2}\;dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-2-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \displaystyle \int_{x=2}^{\infty} \frac{1}{(x+1)^2}\;dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#Act-ApproximateImproperIntegrals-2-1-1-1" title="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#Act-ApproximateImproperIntegrals-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="Act-ApproximateImproperIntegrals-2-1-1-2">
 <div class="para" id="Act-ApproximateImproperIntegrals-2-1-1-2-1">
-<span class="process-math">\(\displaystyle \displaystyle \int_{x=-1}^{x=2} \frac{1}{(x+1)^2}\;dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-2-1-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \displaystyle \int_{x=-1}^{x=2} \frac{1}{(x+1)^2}\;dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#Act-ApproximateImproperIntegrals-2-1-1-2" title="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#Act-ApproximateImproperIntegrals-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="Act-ApproximateImproperIntegrals-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="Act-ApproximateImproperIntegrals-3-1-1">First, let’s just clarify to ourselves what it means for an integral to be improper. Why are each of these integrals improper? Be specific!<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Act-ApproximateImproperIntegrals-3-1-1">First, let’s just clarify to ourselves what it means for an integral to be improper. Why are each of these integrals improper? Be specific!<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.1.3.a"><a href="#Act-ApproximateImproperIntegrals-3" title="Copy heading and permalink for Task 7.1.3.a">🔗</a></div></article><article class="task exercise-like" id="Act-ApproximateImproperIntegrals-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Task 7.1.3.a"><a href="#Act-ApproximateImproperIntegrals-3" title="Copy heading and permalink for Task 7.1.3.a" aria-label="Copy heading and permalink for Task 7.1.3.a">🔗</a></div></article><article class="task exercise-like" id="Act-ApproximateImproperIntegrals-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para logical" id="Act-ApproximateImproperIntegrals-4-1-1">
 <div class="para">Let’s focus on <span class="process-math">\(\displaystyle \int_{x=2}^{\infty} \frac{1}{(x+1)^2}\;dx\)</span> first. We’re going to look at the slightly different integral:</div>
 <div class="displaymath process-math">
@@ -713,21 +712,21 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">where <span class="process-math">\(F(x)\)</span> is an antiderivative of <span class="process-math">\(f(x)=\dfrac{1}{(x+1)^2}\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="Act-ApproximateImproperIntegrals-4-1-2">Find and antiderivative, <span class="process-math">\(F(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-4-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="Act-ApproximateImproperIntegrals-4-1-2">Find and antiderivative, <span class="process-math">\(F(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="Act-ApproximateImproperIntegrals-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="Act-ApproximateImproperIntegrals-4-2-1">You’ll need to use <span class="process-math">\(u\)</span>-substitution, with <span class="process-math">\(u=(x+1)\)</span> and <span class="process-math">\(du=dx\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Act-ApproximateImproperIntegrals-4-2-1">You’ll need to use <span class="process-math">\(u\)</span>-substitution, with <span class="process-math">\(u=(x+1)\)</span> and <span class="process-math">\(du=dx\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 7.1.3.b.1"><a href="#Act-ApproximateImproperIntegrals-4-2" title="Copy heading and permalink for Hint 7.1.3.b.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 7.1.3.b.1"><a href="#Act-ApproximateImproperIntegrals-4-2" title="Copy heading and permalink for Hint 7.1.3.b.1" aria-label="Copy heading and permalink for Hint 7.1.3.b.1">🔗</a></div>
 </div></details><details id="Act-ApproximateImproperIntegrals-4-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="Act-ApproximateImproperIntegrals-4-3-1">You should be thinking about finding an antiderivative using an indefinite integral: <span class="process-math">\(\displaystyle\int \frac{1}{u^2}\;du = \int u^{-2}\;du\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-4-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="Act-ApproximateImproperIntegrals-4-3-1">You should be thinking about finding an antiderivative using an indefinite integral: <span class="process-math">\(\displaystyle\int \frac{1}{u^2}\;du = \int u^{-2}\;du\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 7.1.3.b.2"><a href="#Act-ApproximateImproperIntegrals-4-3" title="Copy heading and permalink for Hint 7.1.3.b.2">🔗</a></div>
+<div class="autopermalink" data-description="Hint 7.1.3.b.2"><a href="#Act-ApproximateImproperIntegrals-4-3" title="Copy heading and permalink for Hint 7.1.3.b.2" aria-label="Copy heading and permalink for Hint 7.1.3.b.2">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Task 7.1.3.b"><a href="#Act-ApproximateImproperIntegrals-4" title="Copy heading and permalink for Task 7.1.3.b">🔗</a></div></article><article class="task exercise-like" id="Act-ApproximateImproperIntegrals-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" data-description="Task 7.1.3.b"><a href="#Act-ApproximateImproperIntegrals-4" title="Copy heading and permalink for Task 7.1.3.b" aria-label="Copy heading and permalink for Task 7.1.3.b">🔗</a></div></article><article class="task exercise-like" id="Act-ApproximateImproperIntegrals-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para logical" id="Act-ApproximateImproperIntegrals-5-1-1">
 <div class="para">Now we’re going to evaluate some areas for different values of <span class="process-math">\(t\text{.}\)</span> Use your antiderivative <span class="process-math">\(F(x)\)</span> from above!</div>
 <ul class="disc" id="Act-ApproximateImproperIntegrals-5-1-1-3">
@@ -739,9 +738,9 @@ eBookConfig.enable_chatcodes =  false;
 \int_{x=2}^{x=99} \frac{1}{(x+1)^2}\;dx = F(99)-F(2)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-5-1-1-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-5-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#Act-ApproximateImproperIntegrals-5-1-1-3-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#Act-ApproximateImproperIntegrals-5-1-1-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="Act-ApproximateImproperIntegrals-5-1-1-3-2">
 <div class="para logical" id="Act-ApproximateImproperIntegrals-5-1-1-3-2-1">
@@ -751,9 +750,9 @@ eBookConfig.enable_chatcodes =  false;
 \int_{x=2}^{x=999} \frac{1}{(x+1)^2}\;dx = F(999)-F(2)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-5-1-1-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-5-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#Act-ApproximateImproperIntegrals-5-1-1-3-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#Act-ApproximateImproperIntegrals-5-1-1-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="Act-ApproximateImproperIntegrals-5-1-1-3-3">
 <div class="para logical" id="Act-ApproximateImproperIntegrals-5-1-1-3-3-1">
@@ -763,14 +762,14 @@ eBookConfig.enable_chatcodes =  false;
 \int_{x=2}^{x=9999} \frac{1}{(x+1)^2}\;dx = F(9999)-F(2)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-5-1-1-3-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-5-1-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#Act-ApproximateImproperIntegrals-5-1-1-3-3" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#Act-ApproximateImproperIntegrals-5-1-1-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.1.3.c"><a href="#Act-ApproximateImproperIntegrals-5" title="Copy heading and permalink for Task 7.1.3.c">🔗</a></div></article><article class="task exercise-like" id="Act-ApproximateImproperIntegrals-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="autopermalink" data-description="Task 7.1.3.c"><a href="#Act-ApproximateImproperIntegrals-5" title="Copy heading and permalink for Task 7.1.3.c" aria-label="Copy heading and permalink for Task 7.1.3.c">🔗</a></div></article><article class="task exercise-like" id="Act-ApproximateImproperIntegrals-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para logical" id="Act-ApproximateImproperIntegrals-6-1-1">
 <div class="para">Based on what you found, what do you <em class="emphasis">think</em> is happening when <span class="process-math">\(t\to \infty\)</span> to the definite integral</div>
 <div class="displaymath process-math">
@@ -778,9 +777,9 @@ eBookConfig.enable_chatcodes =  false;
 \int_{x=2}^{x=t} \frac{1}{(x+1)^2}\;dx = F(t)-F(2)\text{?}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.1.3.d"><a href="#Act-ApproximateImproperIntegrals-6" title="Copy heading and permalink for Task 7.1.3.d">🔗</a></div></article><article class="task exercise-like" id="Act-ApproximateImproperIntegrals-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="autopermalink" data-description="Task 7.1.3.d"><a href="#Act-ApproximateImproperIntegrals-6" title="Copy heading and permalink for Task 7.1.3.d" aria-label="Copy heading and permalink for Task 7.1.3.d">🔗</a></div></article><article class="task exercise-like" id="Act-ApproximateImproperIntegrals-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para logical" id="Act-ApproximateImproperIntegrals-7-1-1">
 <div class="para">Ok, we’re going to switch our focus to the other improper integral,<span class="process-math">\(\displaystyle \int_{x=-1}^{x=2} \frac{1}{(x+1)^2}\;dx\text{.}\)</span> again, we’ll look at a slightly different integral:</div>
 <div class="displaymath process-math">
@@ -795,7 +794,7 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(F(x)\)</span> is an antiderivative of <span class="process-math">\(f(x)=\dfrac{1}{(x+1)^2}\text{.}\)</span> We can just use the same antiderivative as before!</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="Act-ApproximateImproperIntegrals-7-1-2">
 <div class="para">We’re going to evaluate this intergal for different values of <span class="process-math">\(t\)</span> again, but this time we’ll use values that are close to <span class="process-math">\(-1\text{,}\)</span> but slightly bigger, since we want to be in the interval <span class="process-math">\([-1,2]\text{.}\)</span>
 </div>
@@ -808,9 +807,9 @@ eBookConfig.enable_chatcodes =  false;
 \int_{x=-9/10}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F\left(-\frac{9}{10}\right)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-7-1-2-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-7-1-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#Act-ApproximateImproperIntegrals-7-1-2-4-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#Act-ApproximateImproperIntegrals-7-1-2-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="Act-ApproximateImproperIntegrals-7-1-2-4-2">
 <div class="para logical" id="Act-ApproximateImproperIntegrals-7-1-2-4-2-1">
@@ -820,9 +819,9 @@ eBookConfig.enable_chatcodes =  false;
 \int_{x=-99/100}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F\left(-\frac{99}{100}\right)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-7-1-2-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-7-1-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#Act-ApproximateImproperIntegrals-7-1-2-4-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#Act-ApproximateImproperIntegrals-7-1-2-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="Act-ApproximateImproperIntegrals-7-1-2-4-3">
 <div class="para logical" id="Act-ApproximateImproperIntegrals-7-1-2-4-3-1">
@@ -832,14 +831,14 @@ eBookConfig.enable_chatcodes =  false;
 \int_{x=-999/1000}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F\left(-\frac{999}{1000}\right)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-7-1-2-4-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-7-1-2-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#Act-ApproximateImproperIntegrals-7-1-2-4-3" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#Act-ApproximateImproperIntegrals-7-1-2-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-7-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.1.3.e"><a href="#Act-ApproximateImproperIntegrals-7" title="Copy heading and permalink for Task 7.1.3.e">🔗</a></div></article><article class="task exercise-like" id="Act-ApproximateImproperIntegrals-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="autopermalink" data-description="Task 7.1.3.e"><a href="#Act-ApproximateImproperIntegrals-7" title="Copy heading and permalink for Task 7.1.3.e" aria-label="Copy heading and permalink for Task 7.1.3.e">🔗</a></div></article><article class="task exercise-like" id="Act-ApproximateImproperIntegrals-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para logical" id="Act-ApproximateImproperIntegrals-8-1-1">
 <div class="para">Based on what you found, what do you <em class="emphasis">think</em> is happening when <span class="process-math">\(t\to -1^+\)</span> to the definite integral</div>
 <div class="displaymath process-math">
@@ -847,13 +846,13 @@ eBookConfig.enable_chatcodes =  false;
 \int_{x=t}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F(t)\text{?}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-8-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.1.3.f"><a href="#Act-ApproximateImproperIntegrals-8" title="Copy heading and permalink for Task 7.1.3.f">🔗</a></div></article><div class="conclusion" id="Act-ApproximateImproperIntegrals-9"><div class="para" id="Act-ApproximateImproperIntegrals-9-1">We can think about putting this a bit more generally into limit notation, but we’ll get to this later.<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-9-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 7.1.3.f"><a href="#Act-ApproximateImproperIntegrals-8" title="Copy heading and permalink for Task 7.1.3.f" aria-label="Copy heading and permalink for Task 7.1.3.f">🔗</a></div></article><div class="conclusion" id="Act-ApproximateImproperIntegrals-9"><div class="para" id="Act-ApproximateImproperIntegrals-9-1">We can think about putting this a bit more generally into limit notation, but we’ll get to this later.<div class="autopermalink" data-description="Paragraph"><a href="#Act-ApproximateImproperIntegrals-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
-<div class="autopermalink" data-description="Activity 7.1.3: Approximating Improper Integrals"><a href="#Act-ApproximateImproperIntegrals" title="Copy heading and permalink for Activity 7.1.3: Approximating Improper Integrals">🔗</a></div></article><div class="para" id="subsec-ImproprtIntegrals-6">Ok, let’s formalize these limits with some strategies for evaluating improper integrals!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproprtIntegrals-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Activity 7.1.3: Approximating Improper Integrals"><a href="#Act-ApproximateImproperIntegrals" title="Copy heading and permalink for Activity 7.1.3: Approximating Improper Integrals" aria-label="Copy heading and permalink for Activity 7.1.3: Approximating Improper Integrals">🔗</a></div></article><div class="para" id="subsec-ImproprtIntegrals-6">Ok, let’s formalize these limits with some strategies for evaluating improper integrals!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproprtIntegrals-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Improprt Integrals"><a href="#subsec-ImproprtIntegrals" title="Copy heading and permalink for Subsection: Improprt Integrals">🔗</a></div></section><section class="subsection" id="subsec-ImproperIntegralStrategies"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection: Improprt Integrals"><a href="#subsec-ImproprtIntegrals" title="Copy heading and permalink for Subsection: Improprt Integrals" aria-label="Copy heading and permalink for Subsection: Improprt Integrals">🔗</a></div></section><section class="subsection" id="subsec-ImproperIntegralStrategies"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Strategies for Evaluating Improper Integrals</span>
 </h3>
 <article class="assemblage assemblage-like" id="strat-ImproperIntegralsWidth"><h4 class="heading"><span class="title">Evaluating Improper Integrals (Infinite Width).</span></h4>
@@ -865,7 +864,7 @@ eBookConfig.enable_chatcodes =  false;
 \int_{x=a}^\infty f(x)\;dx = \lim_{t\to\infty} \int_{x=a}^{x=t} f(x)\;dx\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#strat-ImproperIntegralsWidth-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#strat-ImproperIntegralsWidth-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="strat-ImproperIntegralsWidth-3">
 <div class="para">If <span class="process-math">\(f(x)\)</span> is continuous on <span class="process-math">\((-\infty,b]\text{,}\)</span> we can evaluate the improper integral <span class="process-math">\(\displaystyle\int_{-\infty}^{x=b} f(x)\;dx\text{:}\)</span>
@@ -875,7 +874,7 @@ eBookConfig.enable_chatcodes =  false;
 \int_{-\infty}^{x=b} f(x)\;dx = \lim_{t\to -\infty} \int_{x=t}^{x=b} f(x)\;dx\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#strat-ImproperIntegralsWidth-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#strat-ImproperIntegralsWidth-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="strat-ImproperIntegralsWidth-4">
 <div class="para">Finally, if <span class="process-math">\(f(x)\)</span> is continuous on <span class="process-math">\((-\infty,\infty)\)</span> and <span class="process-math">\(m\)</span> is some real number, then we can evaluate the improper integral <span class="process-math">\(\displaystyle\int_{-\infty}^{\infty}f(x)\;dx\text{:}\)</span>
@@ -886,9 +885,9 @@ eBookConfig.enable_chatcodes =  false;
 \amp = \lim_{t\to -\infty} \int_{x=t}^{x=m} f(x)\;dx + \lim_{t\to\infty} \int_{x=m}^{x=t} f(x)\;dx 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#strat-ImproperIntegralsWidth-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#strat-ImproperIntegralsWidth-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: Evaluating Improper Integrals (Infinite Width)"><a href="#strat-ImproperIntegralsWidth" title="Copy heading and permalink for Assemblage: Evaluating Improper Integrals (Infinite Width)">🔗</a></div></article><article class="example example-like" id="subsec-ImproperIntegralStrategies-3"><h4 class="heading">
+<div class="autopermalink" data-description="Assemblage: Evaluating Improper Integrals (Infinite Width)"><a href="#strat-ImproperIntegralsWidth" title="Copy heading and permalink for Assemblage: Evaluating Improper Integrals (Infinite Width)" aria-label="Copy heading and permalink for Assemblage: Evaluating Improper Integrals (Infinite Width)">🔗</a></div></article><article class="example example-like" id="subsec-ImproperIntegralStrategies-3"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.2</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="subsec-ImproperIntegralStrategies-3-1-1">
@@ -899,9 +898,9 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">Try to interpret this limit. What does it mean if this limit doesn’t exist? What does it mean if the limit does exist? What does the actual number represent?</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproperIntegralStrategies-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproperIntegralStrategies-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 7.1.2"><a href="#subsec-ImproperIntegralStrategies-3" title="Copy heading and permalink for Example 7.1.2">🔗</a></div></article><article class="assemblage assemblage-like" id="strat-ImproperIntegralsHeight"><h4 class="heading"><span class="title">Evaluating Improper Integrals (Infinite Height).</span></h4>
+<div class="autopermalink" data-description="Example 7.1.2"><a href="#subsec-ImproperIntegralStrategies-3" title="Copy heading and permalink for Example 7.1.2" aria-label="Copy heading and permalink for Example 7.1.2">🔗</a></div></article><article class="assemblage assemblage-like" id="strat-ImproperIntegralsHeight"><h4 class="heading"><span class="title">Evaluating Improper Integrals (Infinite Height).</span></h4>
 <div class="para logical" id="strat-ImproperIntegralsHeight-2">
 <div class="para">For a function <span class="process-math">\(f(x)\)</span> that has an unbounded discontinuity (a vertical asymptote) at <span class="process-math">\(x=m\)</span> with <span class="process-math">\(a\lt m\lt b\text{,}\)</span> but is otherwise continuous on <span class="process-math">\([a,b]\text{,}\)</span> then we can evaluate the improper integrals:</div>
 <div class="displaymath process-math" id="strat-ImproperIntegralsHeight-2-5">
@@ -912,9 +911,9 @@ eBookConfig.enable_chatcodes =  false;
 \amp = \lim_{t\to m^-} \int_{x=a}^{x=t} f(x)\;dx + \lim_{t\to m^+}\int_{x=t}^{x=b} f(x)\;dx 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#strat-ImproperIntegralsHeight-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#strat-ImproperIntegralsHeight-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: Evaluating Improper Integrals (Infinite Height)"><a href="#strat-ImproperIntegralsHeight" title="Copy heading and permalink for Assemblage: Evaluating Improper Integrals (Infinite Height)">🔗</a></div></article><article class="example example-like" id="subsec-ImproperIntegralStrategies-5"><h4 class="heading">
+<div class="autopermalink" data-description="Assemblage: Evaluating Improper Integrals (Infinite Height)"><a href="#strat-ImproperIntegralsHeight" title="Copy heading and permalink for Assemblage: Evaluating Improper Integrals (Infinite Height)" aria-label="Copy heading and permalink for Assemblage: Evaluating Improper Integrals (Infinite Height)">🔗</a></div></article><article class="example example-like" id="subsec-ImproperIntegralStrategies-5"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.3</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="subsec-ImproperIntegralStrategies-5-1-1">
@@ -925,126 +924,126 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">Try to interpret this limit. What does it mean if this limit doesn’t exist? What does it mean if the limit does exist? What does the actual number represent?</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproperIntegralStrategies-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproperIntegralStrategies-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 7.1.3"><a href="#subsec-ImproperIntegralStrategies-5" title="Copy heading and permalink for Example 7.1.3">🔗</a></div></article><div class="para logical" id="subsec-ImproperIntegralStrategies-6">
+<div class="autopermalink" data-description="Example 7.1.3"><a href="#subsec-ImproperIntegralStrategies-5" title="Copy heading and permalink for Example 7.1.3" aria-label="Copy heading and permalink for Example 7.1.3">🔗</a></div></article><div class="para logical" id="subsec-ImproperIntegralStrategies-6">
 <div class="para">Ok, let’s note that we can classify these improper integrals into two categories. We have already classified them based on the <em class="emphasis">reason</em> that they’re improper. But now we can also classify them based on the outcome of the limit:</div>
 <ol class="decimal" id="subsec-ImproperIntegralStrategies-6-2">
 <li id="subsec-ImproperIntegralStrategies-6-2-1">
-<div class="para" id="subsec-ImproperIntegralStrategies-6-2-1-1">Improper integrals (of any type) whose limit exists.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproperIntegralStrategies-6-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-ImproperIntegralStrategies-6-2-1-1">Improper integrals (of any type) whose limit exists.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproperIntegralStrategies-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#subsec-ImproperIntegralStrategies-6-2-1" title="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-ImproperIntegralStrategies-6-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="subsec-ImproperIntegralStrategies-6-2-2">
-<div class="para" id="subsec-ImproperIntegralStrategies-6-2-2-1">Improper integrals (of any type) where the limit doesn’t exist.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproperIntegralStrategies-6-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-ImproperIntegralStrategies-6-2-2-1">Improper integrals (of any type) where the limit doesn’t exist.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproperIntegralStrategies-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#subsec-ImproperIntegralStrategies-6-2-2" title="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-ImproperIntegralStrategies-6-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
 <div class="para">Let’s define a term for this, so that our classification isn’t so wordy.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproperIntegralStrategies-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ImproperIntegralStrategies-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Strategies for Evaluating Improper Integrals"><a href="#subsec-ImproperIntegralStrategies" title="Copy heading and permalink for Subsection: Strategies for Evaluating Improper Integrals">🔗</a></div></section><section class="subsection" id="subsec-IntegralConvergence"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection: Strategies for Evaluating Improper Integrals"><a href="#subsec-ImproperIntegralStrategies" title="Copy heading and permalink for Subsection: Strategies for Evaluating Improper Integrals" aria-label="Copy heading and permalink for Subsection: Strategies for Evaluating Improper Integrals">🔗</a></div></section><section class="subsection" id="subsec-IntegralConvergence"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Convergence and Divergence of an Improper Integral</span>
 </h3>
 <article class="definition definition-like" id="def-ConvergenceImproperIntegral"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Convergence of an Improper Integral.</span>
 </h4>
-<div class="para" id="def-ConvergenceImproperIntegral-2-1">We say that an improper integral <dfn class="terminology">converges</dfn> if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral <dfn class="terminology">diverges</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#def-ConvergenceImproperIntegral-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-ConvergenceImproperIntegral-2-1">We say that an improper integral <dfn class="terminology">converges</dfn> if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral <dfn class="terminology">diverges</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#def-ConvergenceImproperIntegral-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 7.1.4: Convergence of an Improper Integral"><a href="#def-ConvergenceImproperIntegral" title="Copy heading and permalink for Definition 7.1.4: Convergence of an Improper Integral">🔗</a></div></article><div class="para" id="subsec-IntegralConvergence-3">All we’ve done here is added some language: we’ll say that an improper integral diverges if the limit doesn’t exist. And if the limit exists, we’ll say that the improper integral "converges to <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>."<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntegralConvergence-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 7.1.4: Convergence of an Improper Integral"><a href="#def-ConvergenceImproperIntegral" title="Copy heading and permalink for Definition 7.1.4: Convergence of an Improper Integral" aria-label="Copy heading and permalink for Definition 7.1.4: Convergence of an Improper Integral">🔗</a></div></article><div class="para" id="subsec-IntegralConvergence-3">All we’ve done here is added some language: we’ll say that an improper integral diverges if the limit doesn’t exist. And if the limit exists, we’ll say that the improper integral "converges to <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>."<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntegralConvergence-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Convergence and Divergence of an Improper Integral"><a href="#subsec-IntegralConvergence" title="Copy heading and permalink for Subsection: Convergence and Divergence of an Improper Integral">🔗</a></div></section><section class="exercises" id="ex-ImproperIntegrals"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection: Convergence and Divergence of an Improper Integral"><a href="#subsec-IntegralConvergence" title="Copy heading and permalink for Subsection: Convergence and Divergence of an Improper Integral" aria-label="Copy heading and permalink for Subsection: Convergence and Divergence of an Improper Integral">🔗</a></div></section><section class="exercises" id="ex-ImproperIntegrals"><h3 class="heading hide-type">
 <span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="ex-ImproperIntegrals-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div class="para" id="ex-ImproperIntegrals-1-1">Explain what it means for an integral to be improper. What kinds of issues are we looking at?<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-ImproperIntegrals-1-1">Explain what it means for an integral to be improper. What kinds of issues are we looking at?<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 1"><a href="#ex-ImproperIntegrals-1" title="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div class="para" id="ex-ImproperIntegrals-2-1">Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width).<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 1"><a href="#ex-ImproperIntegrals-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="ex-ImproperIntegrals-2-1">Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width).<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 2"><a href="#ex-ImproperIntegrals-2" title="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="para" id="ex-ImproperIntegrals-3-1">Give an example of an integral that is improper due to an unbounded integrand (infinite height).<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 2"><a href="#ex-ImproperIntegrals-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="ex-ImproperIntegrals-3-1">Give an example of an integral that is improper due to an unbounded integrand (infinite height).<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 3"><a href="#ex-ImproperIntegrals-3" title="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
-<div class="para" id="ex-ImproperIntegrals-4-1">What does it mean for an improper integral to "converge?" How does this connect with limits?<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 3"><a href="#ex-ImproperIntegrals-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="ex-ImproperIntegrals-4-1">What does it mean for an improper integral to "converge?" How does this connect with limits?<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 4"><a href="#ex-ImproperIntegrals-4" title="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
-<div class="para" id="ex-ImproperIntegrals-5-1">What does it mean for an improper integral to "diverge?" How does this connect with limits?<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 4"><a href="#ex-ImproperIntegrals-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para" id="ex-ImproperIntegrals-5-1">What does it mean for an improper integral to "diverge?" How does this connect with limits?<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 5"><a href="#ex-ImproperIntegrals-5" title="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
-<div class="para" id="ex-ImproperIntegrals-6-1">Why do we need to use limits to evaluate improper integrals?<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-6-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 5"><a href="#ex-ImproperIntegrals-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="ex-ImproperIntegrals-6-1">Why do we need to use limits to evaluate improper integrals?<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 6"><a href="#ex-ImproperIntegrals-6" title="Copy heading and permalink for Exercise 6">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 6"><a href="#ex-ImproperIntegrals-6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-ImproperIntegrals-7-1"><div class="para logical" id="ex-ImproperIntegrals-7-1-1">
 <div class="para">For each of the following improper integrals:</div>
 <ul class="disc" id="ex-ImproperIntegrals-7-1-1-1">
 <li id="ex-ImproperIntegrals-7-1-1-1-1">
-<div class="para" id="ex-ImproperIntegrals-7-1-1-1-1-1">Explain why the integral is improper. Be specific, and point out the issues in detail.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-1-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-ImproperIntegrals-7-1-1-1-1-1">Explain why the integral is improper. Be specific, and point out the issues in detail.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#ex-ImproperIntegrals-7-1-1-1-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#ex-ImproperIntegrals-7-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="ex-ImproperIntegrals-7-1-1-1-2">
-<div class="para" id="ex-ImproperIntegrals-7-1-1-1-2-1">Set up the integral using the correct limit notation.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-1-1-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-ImproperIntegrals-7-1-1-1-2-1">Set up the integral using the correct limit notation.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#ex-ImproperIntegrals-7-1-1-1-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#ex-ImproperIntegrals-7-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="ex-ImproperIntegrals-7-1-1-1-3">
-<div class="para" id="ex-ImproperIntegrals-7-1-1-1-3-1">Antidifferentiate and evaluate the limit.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-1-1-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-ImproperIntegrals-7-1-1-1-3-1">Antidifferentiate and evaluate the limit.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#ex-ImproperIntegrals-7-1-1-1-3" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#ex-ImproperIntegrals-7-1-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="ex-ImproperIntegrals-7-1-1-1-4">
-<div class="para" id="ex-ImproperIntegrals-7-1-1-1-4-1">Explain whether the integral converges or diverges.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-1-1-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-ImproperIntegrals-7-1-1-1-4-1">Explain whether the integral converges or diverges.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#ex-ImproperIntegrals-7-1-1-1-4" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#ex-ImproperIntegrals-7-1-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="ex-ImproperIntegrals-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ex-ImproperIntegrals-7-2-1-1">
-<span class="process-math">\(\displaystyle \int_{x=0}^{\infty} \frac{1}{\sqrt{x+1}}\;dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \int_{x=0}^{\infty} \frac{1}{\sqrt{x+1}}\;dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.a"><a href="#ex-ImproperIntegrals-7-2" title="Copy heading and permalink for Task 7.a">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" data-description="Task 7.a"><a href="#ex-ImproperIntegrals-7-2" title="Copy heading and permalink for Task 7.a" aria-label="Copy heading and permalink for Task 7.a">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-ImproperIntegrals-7-3-1-1">
-<span class="process-math">\(\displaystyle \int_{x=0}^{\infty} e^{-2x}\;dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \int_{x=0}^{\infty} e^{-2x}\;dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.b"><a href="#ex-ImproperIntegrals-7-3" title="Copy heading and permalink for Task 7.b">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" data-description="Task 7.b"><a href="#ex-ImproperIntegrals-7-3" title="Copy heading and permalink for Task 7.b" aria-label="Copy heading and permalink for Task 7.b">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-ImproperIntegrals-7-4-1-1">
-<span class="process-math">\(\displaystyle \int_{x=-1}^{x=3} \dfrac{1}{x+1}\;dx \)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \int_{x=-1}^{x=3} \dfrac{1}{x+1}\;dx \)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.c"><a href="#ex-ImproperIntegrals-7-4" title="Copy heading and permalink for Task 7.c">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-7-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="autopermalink" data-description="Task 7.c"><a href="#ex-ImproperIntegrals-7-4" title="Copy heading and permalink for Task 7.c" aria-label="Copy heading and permalink for Task 7.c">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-7-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-ImproperIntegrals-7-5-1-1">
-<span class="process-math">\(\displaystyle \int_{-\infty}^{x=0} \sqrt{e^x}\;dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \int_{-\infty}^{x=0} \sqrt{e^x}\;dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.d"><a href="#ex-ImproperIntegrals-7-5" title="Copy heading and permalink for Task 7.d">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-7-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="autopermalink" data-description="Task 7.d"><a href="#ex-ImproperIntegrals-7-5" title="Copy heading and permalink for Task 7.d" aria-label="Copy heading and permalink for Task 7.d">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-7-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="ex-ImproperIntegrals-7-6-1-1">
-<span class="process-math">\(\displaystyle \int_{x=2}^{x=8} \dfrac{5}{(x-2)^3}\;dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \int_{x=2}^{x=8} \dfrac{5}{(x-2)^3}\;dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.e"><a href="#ex-ImproperIntegrals-7-6" title="Copy heading and permalink for Task 7.e">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-7-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="autopermalink" data-description="Task 7.e"><a href="#ex-ImproperIntegrals-7-6" title="Copy heading and permalink for Task 7.e" aria-label="Copy heading and permalink for Task 7.e">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-7-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="ex-ImproperIntegrals-7-7-1-1">
-<span class="process-math">\(\displaystyle \int_{x=1}^{x=12} \dfrac{dx}{\sqrt[5]{12-x}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \int_{x=1}^{x=12} \dfrac{dx}{\sqrt[5]{12-x}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-7-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.f"><a href="#ex-ImproperIntegrals-7-7" title="Copy heading and permalink for Task 7.f">🔗</a></div></article><div class="autopermalink" data-description="Exercise 7"><a href="#ex-ImproperIntegrals-7" title="Copy heading and permalink for Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-8"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
-<div class="para" id="ex-ImproperIntegrals-8-1">One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of <span class="process-math">\(k\)</span> makes the function <span class="process-math">\(\dfrac{kx}{(x^2+3)^{5/4}}\)</span> a valid probability distribution on the interval <span class="process-math">\([0,\infty)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-8-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 7.f"><a href="#ex-ImproperIntegrals-7-7" title="Copy heading and permalink for Task 7.f" aria-label="Copy heading and permalink for Task 7.f">🔗</a></div></article><div class="autopermalink" data-description="Exercise 7"><a href="#ex-ImproperIntegrals-7" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-8"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="ex-ImproperIntegrals-8-1">One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of <span class="process-math">\(k\)</span> makes the function <span class="process-math">\(\dfrac{kx}{(x^2+3)^{5/4}}\)</span> a valid probability distribution on the interval <span class="process-math">\([0,\infty)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 8"><a href="#ex-ImproperIntegrals-8" title="Copy heading and permalink for Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-9"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
-<div class="introduction" id="ex-ImproperIntegrals-9-1"><div class="para" id="ex-ImproperIntegrals-9-1-1">Let’s consider the integral <span class="process-math">\(\displaystyle \int_{x=1}^{\infty} \dfrac{\sqrt{x^2+1}}{x^2}\;dx\text{.}\)</span> This is a difficult integral to evaluate!<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-9-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 8"><a href="#ex-ImproperIntegrals-8" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="ex-ImproperIntegrals-9"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="introduction" id="ex-ImproperIntegrals-9-1"><div class="para" id="ex-ImproperIntegrals-9-1-1">Let’s consider the integral <span class="process-math">\(\displaystyle \int_{x=1}^{\infty} \dfrac{\sqrt{x^2+1}}{x^2}\;dx\text{.}\)</span> This is a difficult integral to evaluate!<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="ex-ImproperIntegrals-9-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="ex-ImproperIntegrals-9-2-1-1">First, compare <span class="process-math">\(\sqrt{x^2+1}\)</span> to <span class="process-math">\(\sqrt{x^2}\)</span> using an inequality: which one is bigger?<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-9-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-ImproperIntegrals-9-2-1-1">First, compare <span class="process-math">\(\sqrt{x^2+1}\)</span> to <span class="process-math">\(\sqrt{x^2}\)</span> using an inequality: which one is bigger?<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-9-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 9.a"><a href="#ex-ImproperIntegrals-9-2" title="Copy heading and permalink for Task 9.a">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-9-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="ex-ImproperIntegrals-9-3-1-1">Second, use this inequality to compare the function <span class="process-math">\(\dfrac{\sqrt{x^2+1}}{x^2}\)</span> to <span class="process-math">\(\dfrac{1}{x}\)</span> for <span class="process-math">\(x\gt 0\text{:}\)</span> which one is bigger? Again, use your inequality from above to help!<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-9-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 9.a"><a href="#ex-ImproperIntegrals-9-2" title="Copy heading and permalink for Task 9.a" aria-label="Copy heading and permalink for Task 9.a">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-9-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-ImproperIntegrals-9-3-1-1">Second, use this inequality to compare the function <span class="process-math">\(\dfrac{\sqrt{x^2+1}}{x^2}\)</span> to <span class="process-math">\(\dfrac{1}{x}\)</span> for <span class="process-math">\(x\gt 0\text{:}\)</span> which one is bigger? Again, use your inequality from above to help!<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-9-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 9.b"><a href="#ex-ImproperIntegrals-9-3" title="Copy heading and permalink for Task 9.b">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-9-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="ex-ImproperIntegrals-9-4-1-1">Now compare <span class="process-math">\(\displaystyle \int_{x=1}^\infty \dfrac{\sqrt{x^2+1}}{x^2}\;dx\)</span> to <span class="process-math">\(\displaystyle \int_{x=1}^\infty \dfrac{1}{x}\;dx\text{.}\)</span> Which one is bigger?<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-9-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 9.b"><a href="#ex-ImproperIntegrals-9-3" title="Copy heading and permalink for Task 9.b" aria-label="Copy heading and permalink for Task 9.b">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-9-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ex-ImproperIntegrals-9-4-1-1">Now compare <span class="process-math">\(\displaystyle \int_{x=1}^\infty \dfrac{\sqrt{x^2+1}}{x^2}\;dx\)</span> to <span class="process-math">\(\displaystyle \int_{x=1}^\infty \dfrac{1}{x}\;dx\text{.}\)</span> Which one is bigger?<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-9-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 9.c"><a href="#ex-ImproperIntegrals-9-4" title="Copy heading and permalink for Task 9.c">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-9-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="ex-ImproperIntegrals-9-5-1-1">Explain how we can use this result to make a conclusion about whether our integral, <span class="process-math">\(\displaystyle \int_{x=1}^\infty \dfrac{\sqrt{x^2+1}}{x^2}\;dx\)</span> converges or diverges.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-9-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 9.c"><a href="#ex-ImproperIntegrals-9-4" title="Copy heading and permalink for Task 9.c" aria-label="Copy heading and permalink for Task 9.c">🔗</a></div></article><article class="task exercise-like" id="ex-ImproperIntegrals-9-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ex-ImproperIntegrals-9-5-1-1">Explain how we can use this result to make a conclusion about whether our integral, <span class="process-math">\(\displaystyle \int_{x=1}^\infty \dfrac{\sqrt{x^2+1}}{x^2}\;dx\)</span> converges or diverges.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ImproperIntegrals-9-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 9.d"><a href="#ex-ImproperIntegrals-9-5" title="Copy heading and permalink for Task 9.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 9"><a href="#ex-ImproperIntegrals-9" title="Copy heading and permalink for Exercise 9">🔗</a></div></article><div class="autopermalink" data-description="Practice Problems"><a href="#ex-ImproperIntegrals" title="Copy heading and permalink for Practice Problems">🔗</a></div></section><div class="autopermalink" data-description="Section 7.1: Improper Integrals"><a href="#sec-ImproperIntegrals" title="Copy heading and permalink for Section 7.1: Improper Integrals">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Task 9.d"><a href="#ex-ImproperIntegrals-9-5" title="Copy heading and permalink for Task 9.d" aria-label="Copy heading and permalink for Task 9.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 9"><a href="#ex-ImproperIntegrals-9" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div></article><div class="autopermalink" data-description="Practice Problems"><a href="#ex-ImproperIntegrals" title="Copy heading and permalink for Practice Problems" aria-label="Copy heading and permalink for Practice Problems">🔗</a></div></section><div class="autopermalink" data-description="Section 7.1: Improper Integrals"><a href="#sec-ImproperIntegrals" title="Copy heading and permalink for Section 7.1: Improper Integrals" aria-label="Copy heading and permalink for Section 7.1: Improper Integrals">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-AntidifferentiationTechniques.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-MoreuSubstitution.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
