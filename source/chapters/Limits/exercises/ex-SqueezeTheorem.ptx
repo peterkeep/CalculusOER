@@ -1,0 +1,66 @@
+<exercises xml:id="ex-SqueezeTheorem">
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following statements, discuss the possible existence of the limit in question. Explain in detail how we might know whether the limit exists or not, or why it is impossible to tell.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    We want to know about <m> \displaystyle\lim_{x\to4} f(x) </m>, and we know that <m>a(x) \leq f(x) \leq b(x) </m> for all <m>x </m>-values, with <m>a(4)=3 </m> and <m>b(4)=3 </m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    We want to know about <m> \displaystyle\lim_{x\to0} f(x) </m>, and we know that <m> \displaystyle\lim_{x\to0} g(x)=5 </m> for the function <m>g(x)\geq f(x) </m> for <m>x </m>-values around 0.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    We want to know about <m> \displaystyle\lim_{x\to-1} f(x) </m>, and we know that <m>a(x)\leq f(x)\leq b(x) </m> for <m>x </m>-values around <m>-1 </m>, with <m> \displaystyle\lim_{x\to-1}a(x)=9 </m> and <m> \displaystyle\lim_{x\to-1}b(x)=9 </m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                We want to use the Squeeze Theorem to evaluate <m> \displaystyle\lim_{x\to0} \left( x^2\sin(\pi/x)\right) </m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Explain why we know that <m>-1\leq\sin(\pi/x)\leq 1 </m> for any non-zero <m>x </m>-values. Why does this inequality not hold for <m>x=0 </m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use the inequality from (a) to build an inequality of functions <m>f(x)\leq x^2\sin(\pi/x) \leq g(x) </m> for non-zero <m>x </m>-values.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    With these functions <m>f(x) </m> and <m>g(x) </m> from (b), find <m> \displaystyle\lim_{x\to0} f(x) </m> and <m> \displaystyle\lim_{x\to0} g(x) </m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                     Explain how the Squeeze Theorem tells us what the value of <m> \displaystyle\lim_{x\to0} x^2\sin(\pi/x) </m> is.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    
+</exercises>
