@@ -26,13 +26,6 @@
                 </p>
             </statement>
         </task>
-        <task>
-            <statement>
-                <p>
-                    <m>\displaystyle\lim_{x\to3^+} \left(\sqrt{f(x)} + \sqrt[3]{g(x)}\right)</m>
-                </p>
-            </statement>
-        </task>
     </exercise>
     <exercise>
         <introduction>
@@ -78,7 +71,7 @@
         <task>
             <statement>
                 <p>
-                    <m>\displaystyle \lim_{z\to2} \sqrt{z^2+4z-8}</m>
+                    <m>\displaystyle \lim_{z\to2} \frac{z^2-4}{z+2}</m>
                 </p>
             </statement>
         </task>
@@ -108,7 +101,7 @@
                 <p>
                     Let <m> g(x) =
                         \begin{cases}
-                          \sqrt{6-x} \amp \text{if } x\lt -3\\
+                          6+x \amp \text{if } x\lt -3\\
                           6 \amp \text{if } x=-3\\
                           \frac{2x+15}{3} \amp \text{if } x\gt -3
                         \end{cases}</m>.
@@ -137,7 +130,7 @@
                 <p>
                     Let <m>r(\theta) =
                         \begin{cases}
-                          \sqrt{\theta+2}+\theta^3 \amp \text{if } \theta\lt 2\\
+                          \theta-1+\theta^3 \amp \text{if } \theta\lt 2\\
                           3\theta+2 \amp \text{if } \theta\geq 2
                         \end{cases}</m>.
                 </p>
