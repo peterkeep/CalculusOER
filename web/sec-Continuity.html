@@ -200,13 +200,14 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-WeirdFunctionsWeirdBehavior" class="internal"><span class="title">Weird Functions, Weird Behavior</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-SqueezeTheorem" class="internal"><span class="title">Squeeze Theorem</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#ex-SqueezeTheorem" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-Continuity.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Continuity and the Intermediate Value Theorem</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-ContinuityAsConnectedness" class="internal"><span class="title">Continuity as Connectedness</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-ContinuityAsClassification" class="internal"><span class="title">Continuity as Classification</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-DefiningContinuity" class="internal"><span class="title">Defining Continuity</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-Discontinuities" class="internal"><span class="title">Discontinuities</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-IntermediateValueTheorem" class="internal"><span class="title">Intermediate Value Theorem</span></a></div></li>
 </ul>
@@ -609,15 +610,53 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-Continuity"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.6</span><span class="space"> </span><span class="title">Continuity and the Intermediate Value Theorem</span>
 </h2>
-<section class="subsection" id="subsec-ContinuityAsConnectedness"><h3 class="heading hide-type">
+<section class="introduction" id="sec-Continuity-2"><div class="para" id="sec-Continuity-2-1">What does it mean for a function to be continuous?<div class="autopermalink" data-description="Paragraph"><a href="#sec-Continuity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Continuity-2-2">This might be a familiar concept to you, and we all probably have some idea of what the word “continuous” means (or should mean), both in a colloquial context and in a math-specific context. Instead of focusing on some of the traditional ideas like “can you draw the graph without picking up your pencil”, we’re going to formalize the idea of continuity a bit.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Continuity-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Continuity-2-3">And the first thing that we’ll have to do is shift our intuition from what continuity is describing. We won’t (at least at first) use continuity as a classification of functions, as a whole. Instead, we’re going to think of continuity as a description of some “local” behavior.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Continuity-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-ContinuityAsConnectedness"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Continuity as Connectedness</span>
 </h3>
-<div class="para" id="subsec-ContinuityAsConnectedness-2"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ContinuityAsConnectedness-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="autopermalink" data-description="Subsection: Continuity as Connectedness"><a href="#subsec-ContinuityAsConnectedness" title="Copy heading and permalink for Subsection: Continuity as Connectedness" aria-label="Copy heading and permalink for Subsection: Continuity as Connectedness">🔗</a></div></section><section class="subsection" id="subsec-ContinuityAsClassification"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Continuity as Classification</span>
+<div class="para" id="subsec-ContinuityAsConnectedness-2">We’re going to try to think about what we want to describe when we define continuity. The description of “drawing a graph without picking up a pencil” is a global property, and also a pretty vague and ambiguous one.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ContinuityAsConnectedness-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-ClassifyContinuity"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.1</span><span class="period">.</span><span class="space"> </span><span class="title">Classification and Continuity.</span>
+</h4>
+<div class="introduction" id="act-ClassifyContinuity-2">
+<div class="para" id="act-ClassifyContinuity-2-1">Let’s consider the following functions, graphed below.<div class="autopermalink" data-description="Paragraph"><a href="#act-ClassifyContinuity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-ClassifyContinuity"><div class="sbsgroup">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="external/./Limits/ClassifyContinuity-a.png" class="contained" alt="A graph of a function with a vertical asymptote and a horizontal asymptote."></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="external/./Limits/ClassifyContinuity-b.png" class="contained" alt="A graph of a function that increases from (0,0) onward."></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="external/./Limits/ClassifyContinuity-c.png" class="contained" alt="A graph that increases up to a hole. Underneath that hole is a point that the function decreases away from."></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="external/./Limits/ClassifyContinuity-d.png" class="contained" alt="A graph with a horizontal asymptote. The graph looks like a bell curve with a hole at its peak."></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="external/./Limits/ClassifyContinuity-e.png" class="contained" alt="A polynomial looking function that increases up to a point, decreases down to a point, and then increases away from it."></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="external/./Limits/ClassifyContinuity-f.png" class="contained" alt="A graph of a straight line connecting two points."></div>
+</div></div>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.1<span class="period">.</span></span><span class="space"> </span>A variety of graphs for us to use to think about continuity.<div class="autopermalink" data-description="Figure 1.6.1"><a href="#fig-ClassifyContinuity" title="Copy heading and permalink for Figure 1.6.1" aria-label="Copy heading and permalink for Figure 1.6.1">🔗</a></div></figcaption></figure>
+</div>
+<article class="task exercise-like" id="act-ClassifyContinuity-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-ClassifyContinuity-3-1-1">Can you point out any points on the functions above that seem like the functions might not be continuous? Note that we’re not classifying each function as “continuous” or “not continuous”!<div class="autopermalink" data-description="Paragraph"><a href="#act-ClassifyContinuity-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.6.1.a"><a href="#act-ClassifyContinuity-3" title="Copy heading and permalink for Task 1.6.1.a" aria-label="Copy heading and permalink for Task 1.6.1.a">🔗</a></div></article><article class="task exercise-like" id="act-ClassifyContinuity-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-ClassifyContinuity-4-1-1">We want to build towards a definition of continuity using “connectedness” as the key: a function is continuous at a point if it is connected to itself. How does that work when we think about function values and limits? Use the graphs above and the points you looked at to help!<div class="autopermalink" data-description="Paragraph"><a href="#act-ClassifyContinuity-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.6.1.b"><a href="#act-ClassifyContinuity-4" title="Copy heading and permalink for Task 1.6.1.b" aria-label="Copy heading and permalink for Task 1.6.1.b">🔗</a></div></article><div class="autopermalink" data-description="Activity 1.6.1: Classification and Continuity"><a href="#act-ClassifyContinuity" title="Copy heading and permalink for Activity 1.6.1: Classification and Continuity" aria-label="Copy heading and permalink for Activity 1.6.1: Classification and Continuity">🔗</a></div></article><div class="para" id="subsec-ContinuityAsConnectedness-4">There are definitely some unknowns here. One of the questions that students ask a lot during an investigation like this is what we do about end-points. Is a function continuous at a closed ending-point in its domain? Is it connected to itself? To answer questions like this, we should try to write out what we mean by connectedness.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ContinuityAsConnectedness-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ContinuityAsConnectedness-5">A pretty basic version of this is something like “A function is connected to itself at a point if, for the inputs near that point, the function values are close to the function value at the point.” Maybe even more concise is “Small deviations in the inputs produce small changes in the outputs.”<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ContinuityAsConnectedness-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Continuity as Connectedness"><a href="#subsec-ContinuityAsConnectedness" title="Copy heading and permalink for Subsection: Continuity as Connectedness" aria-label="Copy heading and permalink for Subsection: Continuity as Connectedness">🔗</a></div></section><section class="subsection" id="subsec-DefiningContinuity"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Defining Continuity</span>
 </h3>
+<div class="para" id="subsec-DefiningContinuity-2">We’re going to take this idea of a function being connected to itself as “small deviations in the inputs produce small changes in the outputs” and write it down using limit notation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-ContinuousAtPoint"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.6.1</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous at a Point.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.6.2</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous at a Point.</span>
 </h4>
 <div class="para" id="def-ContinuousAtPoint-2-1">The function <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous</dfn> at an <span class="process-math">\(x\)</span>-value in the domain of <span class="process-math">\(f(x)\)</span> if <span class="process-math">\(x=a\)</span> if <span class="process-math">\(\displaystyle \lim_{x\to a}f(x)=f(a)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-ContinuousAtPoint-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="def-ContinuousAtPoint-2-2">
@@ -636,15 +675,97 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#def-ContinuousAtPoint-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.6.1: Continuous at a Point"><a href="#def-ContinuousAtPoint" title="Copy heading and permalink for Definition 1.6.1: Continuous at a Point" aria-label="Copy heading and permalink for Definition 1.6.1: Continuous at a Point">🔗</a></div></article><article class="definition definition-like" id="def-ContinuousOnInterval"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.6.2</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous on an Interval.</span>
+<div class="autopermalink" data-description="Definition 1.6.2: Continuous at a Point"><a href="#def-ContinuousAtPoint" title="Copy heading and permalink for Definition 1.6.2: Continuous at a Point" aria-label="Copy heading and permalink for Definition 1.6.2: Continuous at a Point">🔗</a></div></article><div class="para" id="subsec-DefiningContinuity-4">In using limits, we get some flexibility: we can talk about one-sided limits, specifically! This helps us take care of the pesky “Is a function connected to itself at a closed ending point,” question! We can say, using this definition, “Yes, on the left side!” or “Yes, on the right side!”<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsec-DefiningContinuity-5"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.3</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="subsec-DefiningContinuity-5-1"><div class="para logical" id="subsec-DefiningContinuity-5-1-1">
+<div class="para">For the function <span class="process-math">\(f(x)\)</span> defined below, decide whether or not the function is continuous at the point listed. If it is not continuous, report whether it is continuous on one side.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \begin{cases}
+2x+1 \amp \text{when } x\leq 2\\
+\dfrac{2x^2+7}{3} \amp \text{when } 2\lt x \lt 4\\
+\dfrac{6}{x-1} + 3 \amp \text{when } x\geq 4
+\end{cases}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="subsec-DefiningContinuity-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-DefiningContinuity-5-2-1-1">Is <span class="process-math">\(f(x)\)</span> continuous at the point <span class="process-math">\((2,5)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-DefiningContinuity-5-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-DefiningContinuity-5-2-2-1">Check the one-sided limits as <span class="process-math">\(x\to 2\text{.}\)</span> Do they both equal <span class="process-math">\(5\text{?}\)</span> Does one of them?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 1.6.3.a.1"><a href="#subsec-DefiningContinuity-5-2-2" title="Copy heading and permalink for Hint 1.6.3.a.1" aria-label="Copy heading and permalink for Hint 1.6.3.a.1">🔗</a></div>
+</div></details><details id="subsec-DefiningContinuity-5-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-DefiningContinuity-5-2-3-1">
+<div class="displaymath process-math" id="subsec-DefiningContinuity-5-2-3-1-1">
+\begin{align*}
+\lim_{x\to 2^-} f(x) \amp = \lim_{x\to 2^-} 2x+1\\
+\amp = 2(2)+1\\
+\amp = 5\\
+\lim_{x\to 2^+} f(x)\amp \lim_{x\to 2^+} \frac{2x^2+7}{3} \\
+\amp = \frac{2(2)^2+7}{3}\\
+\amp = 5
+\end{align*}
+</div>
+<div class="para">So <span class="process-math">\(\displaystyle\lim_{x\to 2}f(x) = 5\text{.}\)</span> Since <span class="process-math">\(f(2)=5\)</span> as well, we have <span class="process-math">\(\displaystyle\lim_{x\to 2}f(x) = f(2)\)</span> which means that <span class="process-math">\(f(x)\)</span> is continuous at <span class="process-math">\(x=2\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-5-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.6.3.a.1"><a href="#subsec-DefiningContinuity-5-2-3" title="Copy heading and permalink for Solution 1.6.3.a.1" aria-label="Copy heading and permalink for Solution 1.6.3.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 1.6.3.a"><a href="#subsec-DefiningContinuity-5-2" title="Copy heading and permalink for Task 1.6.3.a" aria-label="Copy heading and permalink for Task 1.6.3.a">🔗</a></div></article><article class="task exercise-like" id="subsec-DefiningContinuity-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-DefiningContinuity-5-3-1-1">Is <span class="process-math">\(f(x)\)</span> continuous at the point <span class="process-math">\((4, 5)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-DefiningContinuity-5-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-DefiningContinuity-5-3-2-1">Check the one-sided limits as <span class="process-math">\(x\to 4\text{.}\)</span> Do they both equal <span class="process-math">\(5\text{?}\)</span> Does one of them?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 1.6.3.b.1"><a href="#subsec-DefiningContinuity-5-3-2" title="Copy heading and permalink for Hint 1.6.3.b.1" aria-label="Copy heading and permalink for Hint 1.6.3.b.1">🔗</a></div>
+</div></details><details id="subsec-DefiningContinuity-5-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-DefiningContinuity-5-3-3-1">
+<div class="displaymath process-math" id="subsec-DefiningContinuity-5-3-3-1-1">
+\begin{align*}
+\lim_{x\to 4^-} f(x) \amp = \lim_{x\to 4^-} \frac{2x^2+7}{3}\\
+\amp = \frac{2(4)^2+7}{3}\\
+\amp = 13\\
+\lim_{x\to 4^+} f(x) \amp = \lim_{x\to 4^+}  \frac{6}{x-1} + 3\\
+\amp = \frac{6}{4-1}+3\\
+\amp = 5
+\end{align*}
+</div>
+<div class="para">Since <span class="process-math">\(\displaystyle \lim_{x\to 4^-} f(x) \neq \lim_{x\to 4^+} f(x) \)</span> we know that <span class="process-math">\(\displaystyle\lim_{x\to 4^} f(x) \)</span> doesn’t exist, and so this function cannot be continuous at <span class="process-math">\(x=4\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-5-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DefiningContinuity-5-3-3-2">But we can notice that <span class="process-math">\(\displaystyle\lim_{x\to 4^+} f(x) =f(4)\text{,}\)</span> and so we can say that the function is still continuous on the right side at <span class="process-math">\(x=4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-5-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.6.3.b.1"><a href="#subsec-DefiningContinuity-5-3-3" title="Copy heading and permalink for Solution 1.6.3.b.1" aria-label="Copy heading and permalink for Solution 1.6.3.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 1.6.3.b"><a href="#subsec-DefiningContinuity-5-3" title="Copy heading and permalink for Task 1.6.3.b" aria-label="Copy heading and permalink for Task 1.6.3.b">🔗</a></div></article><div class="autopermalink" data-description="Example 1.6.3"><a href="#subsec-DefiningContinuity-5" title="Copy heading and permalink for Example 1.6.3" aria-label="Copy heading and permalink for Example 1.6.3">🔗</a></div></article><div class="para" id="subsec-DefiningContinuity-6">Another bit of flexibility that we have with this definition is that, once we know whether a function is continuous at a point or not, we can string together points in an interval and classify a function as continuous on an interval.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-ContinuousOnInterval"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.6.4</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous on an Interval.</span>
 </h4>
 <div class="para" id="def-ContinuousOnInterval-2-1">We say that <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous on the interval</dfn> <span class="process-math">\((a,b)\)</span> if <span class="process-math">\(f(x)\)</span> is continuous at every <span class="process-math">\(x\)</span>-value with <span class="process-math">\(a\lt x \lt b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-ContinuousOnInterval-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="def-ContinuousOnInterval-2-2">If <span class="process-math">\(f(x)\)</span> is continuous on the right at <span class="process-math">\(x=a\)</span> and/or continuous on the left at <span class="process-math">\(x=b\text{,}\)</span> then we will say that <span class="process-math">\(f(x)\)</span> is continuous on the interval <span class="process-math">\([a,b)\text{,}\)</span> <span class="process-math">\((a,b]\text{,}\)</span> or <span class="process-math">\([a,b]\text{,}\)</span> whichever is relevant.<div class="autopermalink" data-description="Paragraph"><a href="#def-ContinuousOnInterval-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.6.2: Continuous on an Interval"><a href="#def-ContinuousOnInterval" title="Copy heading and permalink for Definition 1.6.2: Continuous on an Interval" aria-label="Copy heading and permalink for Definition 1.6.2: Continuous on an Interval">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Continuity as Classification"><a href="#subsec-ContinuityAsClassification" title="Copy heading and permalink for Subsection: Continuity as Classification" aria-label="Copy heading and permalink for Subsection: Continuity as Classification">🔗</a></div></section><section class="subsection" id="subsec-Discontinuities"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Definition 1.6.4: Continuous on an Interval"><a href="#def-ContinuousOnInterval" title="Copy heading and permalink for Definition 1.6.4: Continuous on an Interval" aria-label="Copy heading and permalink for Definition 1.6.4: Continuous on an Interval">🔗</a></div></article><div class="para" id="subsec-DefiningContinuity-8">Something to notice, here, is that we won’t do this by checking <em class="emphasis">each</em> individual <span class="process-math">\(x\)</span>-value in an interval. If we wanted to say that a function was continuous on <span class="process-math">\((0,1)\text{,}\)</span> we would then have to consider every real number between <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{.}\)</span> But there are an infinite amount of these!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DefiningContinuity-9">So when we talk about a function being continuous on an interval, we’ll really think about this by pointing out the places where a function is <em class="emphasis">not</em> continuous (<span class="process-math">\(x\)</span>-values where <span class="process-math">\(f(x)\)</span> violates some part of <a href="sec-Continuity.html#def-ContinuousAtPoint" class="xref" data-knowl="./knowl/xref/def-ContinuousAtPoint.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.6.2: Continuous at a Point">Definition 1.6.2</a>).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DefiningContinuity-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Defining Continuity"><a href="#subsec-DefiningContinuity" title="Copy heading and permalink for Subsection: Defining Continuity" aria-label="Copy heading and permalink for Subsection: Defining Continuity">🔗</a></div></section><section class="subsection" id="subsec-Discontinuities"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Discontinuities</span>
 </h3>
+<div class="para" id="subsec-Discontinuities-2">Since we’ll want to label functions at places that they are not continuous (in order to write the intervals where it <em class="emphasis">is</em> continuous), we should summarize some things about discontinuities.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="assemblage assemblage-like" id="assemblage-Discontinuities"><h4 class="heading"><span class="title">Where is a Function not Continuous?</span></h4>
 <div class="para logical" id="assemblage-Discontinuities-2">
 <div class="para">Most of the functions that we consider in this text will be continuous everywhere that it makes sense: on their domain. That is, if there is a point defined at some <span class="process-math">\(x\)</span>-value, it is likely that the function’s limit matches the <span class="process-math">\(y\)</span>-value of the point. More specifically, though:</div>
@@ -655,7 +776,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Item"><a href="#assemblage-Discontinuities-2-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="assemblage-Discontinuities-2-3-2">
-<div class="para" id="assemblage-Discontinuities-2-3-2-1">A function is, in general, discontinuous wherever it is undefined. This seems silly to say! We probably could have left this unsaid.<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-Discontinuities-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="assemblage-Discontinuities-2-3-2-1">A function is, in general, discontinuous at any <span class="process-math">\(x\)</span>-value where <span class="process-math">\(f(x)\)</span> is not defined. This seems silly to say! We probably could have left this unsaid. Of course <span class="process-math">\(f\)</span> isn’t continuous at an <span class="process-math">\(x\)</span>-value not in its domain.<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-Discontinuities-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#assemblage-Discontinuities-2-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
@@ -667,15 +788,151 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#assemblage-Discontinuities-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: Where is a Function not Continuous?"><a href="#assemblage-Discontinuities" title="Copy heading and permalink for Assemblage: Where is a Function not Continuous?" aria-label="Copy heading and permalink for Assemblage: Where is a Function not Continuous?">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Discontinuities"><a href="#subsec-Discontinuities" title="Copy heading and permalink for Subsection: Discontinuities" aria-label="Copy heading and permalink for Subsection: Discontinuities">🔗</a></div></section><section class="subsection" id="subsec-IntermediateValueTheorem"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Assemblage: Where is a Function not Continuous?"><a href="#assemblage-Discontinuities" title="Copy heading and permalink for Assemblage: Where is a Function not Continuous?" aria-label="Copy heading and permalink for Assemblage: Where is a Function not Continuous?">🔗</a></div></article><div class="para logical" id="subsec-Discontinuities-4">
+<div class="para">Some quick notes:</div>
+<ul class="disc" id="subsec-Discontinuities-4-1">
+<li id="subsec-Discontinuities-4-1-1">
+<div class="para" id="subsec-Discontinuities-4-1-1-1">Every polynomial function is continuous everywhere on its domain. We knew this already, from <a href="sec-EvaluatingLimits.html#thm-LimitsOfPolynomials" class="xref" data-knowl="./knowl/xref/thm-LimitsOfPolynomials.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.2.7: Limits of Polynomials">Theorem 1.2.7 Limits of Polynomials</a>: the limit is always the same as the function value at any input!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-Discontinuities-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-Discontinuities-4-1-2">
+<div class="para" id="subsec-Discontinuities-4-1-2-1">Rational functions are only discontinuous when there is division by 0.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-Discontinuities-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-Discontinuities-4-1-3">
+<div class="para" id="subsec-Discontinuities-4-1-3-1">Even-root functions (like square roots) are continuous whenever the radicand (the stuff under the root) is positive. We might need to investigate wherever the radicand is equal to <span class="process-math">\(0\text{,}\)</span> since the function might only be continuous on one side.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-Discontinuities-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-Discontinuities-4-1-4">
+<div class="para logical" id="subsec-Discontinuities-4-1-4-1">
+<div class="para">The following functions are continuous on their domains:</div>
+<ul class="circle" id="subsec-Discontinuities-4-1-4-1-1">
+<li id="subsec-Discontinuities-4-1-4-1-1-1">
+<div class="para" id="subsec-Discontinuities-4-1-4-1-1-1-1">
+<span class="process-math">\(y=\sin(x)\)</span> on <span class="process-math">\((-\infty,\infty)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-4-1-4-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-Discontinuities-4-1-4-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-Discontinuities-4-1-4-1-1-2">
+<div class="para" id="subsec-Discontinuities-4-1-4-1-1-2-1">
+<span class="process-math">\(y=\cos(x)\)</span> on <span class="process-math">\((-\infty,\infty)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-4-1-4-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-Discontinuities-4-1-4-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-Discontinuities-4-1-4-1-1-3">
+<div class="para" id="subsec-Discontinuities-4-1-4-1-1-3-1">
+<span class="process-math">\(y=e^x\)</span> on <span class="process-math">\((-\infty,\infty)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-4-1-4-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-Discontinuities-4-1-4-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-Discontinuities-4-1-4-1-1-4">
+<div class="para" id="subsec-Discontinuities-4-1-4-1-1-4-1">
+<span class="process-math">\(y=\ln(x)\)</span> on <span class="process-math">\((0,\infty)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-4-1-4-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-Discontinuities-4-1-4-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-4-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-Discontinuities-4-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsec-Discontinuities-5"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.5</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="subsec-Discontinuities-5-1-1">
+<div class="para">Let’s revisit the same function we looked at earlier:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \begin{cases}
+2x+1 \amp \text{when } x\leq 2\\
+\dfrac{2x^2+7}{3} \amp \text{when } 2\lt x \lt 4\\
+\dfrac{6}{x-1} + 3 \amp \text{when } x\geq 4
+\end{cases}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="subsec-Discontinuities-5-1-2">We already looked at what was happening at <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=4\text{.}\)</span> Are there any other <span class="process-math">\(x\)</span>-values where this function might not be continuous? Why or why not? Can you report the intervals on which <span class="process-math">\(f(x)\)</span> is continuous?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-Discontinuities-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-Discontinuities-5-2-1">Can you name the function type for <span class="process-math">\(x\lt 2\text{,}\)</span> <span class="process-math">\(2\lt x\lt 4\)</span> and <span class="process-math">\(x\gt 4\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 1.6.5.1"><a href="#subsec-Discontinuities-5-2" title="Copy heading and permalink for Hint 1.6.5.1" aria-label="Copy heading and permalink for Hint 1.6.5.1">🔗</a></div>
+</div></details><details id="subsec-Discontinuities-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-Discontinuities-5-3-1">Since <span class="process-math">\(f(x)\)</span> is polynomial for <span class="process-math">\(x\lt 2\)</span> and <span class="process-math">\(2\lt x\lt 4\text{,}\)</span> we know that the function is continuous on those intervals as well. We can see that for <span class="process-math">\(x\gt 4\text{,}\)</span> <span class="process-math">\(f(x)\)</span> is a rational function. Since the only <span class="process-math">\(x\)</span>-value where we might divide by 0 is outside of the interval for which this function part is defined, we know that this function is continuous for <span class="process-math">\(x\gt 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Discontinuities-5-3-2">Since our function is continuous at <span class="process-math">\(x=2\text{,}\)</span> we can say that it is continuous on the interval <span class="process-math">\((-\infty, 4)\text{.}\)</span> We also say that the function was continuous on the right at <span class="process-math">\(x=4\text{,}\)</span> and so we can say that <span class="process-math">\(f(x)\)</span> is also continuous on the interval <span class="process-math">\([4,\infty)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-5-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.6.5.1"><a href="#subsec-Discontinuities-5-3" title="Copy heading and permalink for Solution 1.6.5.1" aria-label="Copy heading and permalink for Solution 1.6.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 1.6.5"><a href="#subsec-Discontinuities-5" title="Copy heading and permalink for Example 1.6.5" aria-label="Copy heading and permalink for Example 1.6.5">🔗</a></div></article><div class="para" id="subsec-Discontinuities-6">We’ll end this section with one last result that will be pretty important. Continuity, as a property, will be useful as we move forward, but only for a few specific reasons. One is the following result.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-ContinuityWithComposition"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.6.6</span><span class="period">.</span><span class="space"> </span><span class="title">Continuity with Composition.</span>
+</h4>
+<div class="para logical" id="thm-ContinuityWithComposition-2-1">
+<div class="para">For two functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{,}\)</span> if <span class="process-math">\(\displaystyle\lim_{x\to a}g(x)=L\)</span> and <span class="process-math">\(f(x)\)</span> is continuous at <span class="process-math">\(x=L\text{,}\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to a} f(g(x)) = f\left(\lim_{x\to a}g(x)\right) = f(L)\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-ContinuityWithComposition-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 1.6.6: Continuity with Composition"><a href="#thm-ContinuityWithComposition" title="Copy heading and permalink for Theorem 1.6.6: Continuity with Composition" aria-label="Copy heading and permalink for Theorem 1.6.6: Continuity with Composition">🔗</a></div></article><div class="para" id="subsec-Discontinuities-8">This is a generalization of the properties of limits that we explored earlier (<a href="sec-EvaluatingLimits.html#thm-CombinationsOfLimits" class="xref" data-knowl="./knowl/xref/thm-CombinationsOfLimits.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.2.5: Combinations of Limits">Theorem 1.2.5 Combinations of Limits</a>). We can use this new theorem to evaluate limits by just noticing if pieces of our function might behave nicely with limits.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-Discontinuities-9">
+<div class="para">Let’s evaluate the following limit:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 1}\left(\sin\left(\sqrt{e^{x^2-2x+1}}\right)\right)\text{.}
+\end{equation*}
+</div>
+<div class="para">Notice that the sine function is continuous everywhere. This means that we can bring the limit statement “inside” by a layer:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 1}\left(\sin\left(\sqrt{e^{x^2-2x+1}}\right)\right) = \sin\left(\lim_{x\to 1}\sqrt{e^{x^2-2x+1}}\right)\text{.}
+\end{equation*}
+</div>
+<div class="para">Now we can think about the square root function: we know that the radicand function (the exponential) always produces positive outputs. So we can bring the limit statement “inside” by another layer of composition:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sin\left(\lim_{x\to 1}\sqrt{e^{x^2-2x+1}}\right) = \sin\left(\sqrt{\lim_{x\to 1}e^{x^2-2x+1}}\right)\text{.}
+\end{equation*}
+</div>
+<div class="para">The exponential function is also continuous everywhere:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sin\left(\sqrt{\lim_{x\to 1}e^{x^2-2x+1}}\right) = \sin\left(\sqrt{e^{\lim_{x\to 1}x^2-2x+1}}\right)\text{.}
+\end{equation*}
+</div>
+<div class="para">And we also know that polynomial functions are continuous everywhere!</div>
+<div class="displaymath process-math" id="subsec-Discontinuities-9-7">
+\begin{align*}
+\sin\left(\sqrt{e^{\lim_{x\to 1}x^2-2x+1}}\right) \amp = \sin\left(\sqrt{e^{(1)^2-2(2)+1}}\right) \\
+\amp = \sin\left(\sqrt{e^0}\right)\\
+\amp = \sin(1)
+\end{align*}
+</div>
+<div class="para">This seemingly difficult limit is actually as easy as just evaluating the function at the input, since the function behaves nicely.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Discontinuities-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Discontinuities"><a href="#subsec-Discontinuities" title="Copy heading and permalink for Subsection: Discontinuities" aria-label="Copy heading and permalink for Subsection: Discontinuities">🔗</a></div></section><section class="subsection" id="subsec-IntermediateValueTheorem"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Intermediate Value Theorem</span>
 </h3>
 <article class="theorem theorem-like" id="thm-IVT"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.6.3</span><span class="period">.</span><span class="space"> </span><span class="title">Intermediate Value Theorem.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.6.7</span><span class="period">.</span><span class="space"> </span><span class="title">Intermediate Value Theorem.</span>
 </h4>
 <div class="para" id="thm-IVT-2-1">If <span class="process-math">\(f(x)\)</span> is a function that is continuous on <span class="process-math">\([a,b]\)</span> with <span class="process-math">\(f(a)\neq f(b)\)</span> and <span class="process-math">\(L\)</span> is any real number between <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(f(b)\)</span> (either <span class="process-math">\(f(a)\lt L \lt f(b)\)</span> or <span class="process-math">\(f(b) \lt L \lt f(a)\)</span>), then there exists some <span class="process-math">\(c\)</span> between <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> (<span class="process-math">\(a\lt c \lt b\)</span>) such that <span class="process-math">\(f(c)=L\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-IVT-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 1.6.3: Intermediate Value Theorem"><a href="#thm-IVT" title="Copy heading and permalink for Theorem 1.6.3: Intermediate Value Theorem" aria-label="Copy heading and permalink for Theorem 1.6.3: Intermediate Value Theorem">🔗</a></div></article><aside class="aside aside-like" id="subsec-IntermediateValueTheorem-3"><div class="para" id="subsec-IntermediateValueTheorem-3-1">This theorem was stated as early as the 5th century BCE by Bryson of Heraclea. Back then, a really interesting problem was related to "squaring the circle." That is, given a circle with some measurable radius, can we construct a square with equal area? This is obviously true, in that we can just use a square with the side length <span class="process-math">\(r\sqrt{\pi}\text{.}\)</span> What we typically mean by "construct," though, is to create this square using only a compass and straightedge (a ruler without length markings) and only a finite number of steps. This was finally proven to be impossible in 1882, approximately 2300 years later.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Theorem 1.6.7: Intermediate Value Theorem"><a href="#thm-IVT" title="Copy heading and permalink for Theorem 1.6.7: Intermediate Value Theorem" aria-label="Copy heading and permalink for Theorem 1.6.7: Intermediate Value Theorem">🔗</a></div></article><aside class="aside aside-like" id="subsec-IntermediateValueTheorem-3"><div class="para" id="subsec-IntermediateValueTheorem-3-1">This theorem was stated as early as the 5th century BCE by Bryson of Heraclea. Back then, a really interesting problem was related to "squaring the circle." That is, given a circle with some measurable radius, can we construct a square with equal area? This is obviously true, in that we can just use a square with the side length <span class="process-math">\(r\sqrt{\pi}\text{.}\)</span> What we typically mean by "construct," though, is to create this square using only a compass and straightedge (a ruler without length markings) and only a finite number of steps. This was finally proven to be impossible in 1882, approximately 2300 years later.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-IntermediateValueTheorem-3-2">Bryson of Heraclea knew that the square itself existed (even if he couldn’t construct it) because he was able to find a circle with area less than the square (by inscribing a circle inside of the square) and a circle with area greater than the square (where the square is inscribed in the circle). Since he posited that he could increase the size of the circle in a continuous manner (without using those words), he claimed that a square with area equal to that of the circle must exist, since the area of the circle passes through all values from the smaller area to the larger area.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></aside><div class="autopermalink" data-description="Subsection: Intermediate Value Theorem"><a href="#subsec-IntermediateValueTheorem" title="Copy heading and permalink for Subsection: Intermediate Value Theorem" aria-label="Copy heading and permalink for Subsection: Intermediate Value Theorem">🔗</a></div></section><div class="autopermalink" data-description="Section 1.6: Continuity and the Intermediate Value Theorem"><a href="#sec-Continuity" title="Copy heading and permalink for Section 1.6: Continuity and the Intermediate Value Theorem" aria-label="Copy heading and permalink for Section 1.6: Continuity and the Intermediate Value Theorem">🔗</a></div></section></div>
