@@ -2,16 +2,38 @@
 
 <section xml:id="sec-Continuity" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Continuity and the Intermediate Value Theorem</title>
+  <introduction>
+    <p>
+      What does it mean for a function to be continuous?
+    </p>
+    <p>
+      This might be a familiar concept to you, and we all probably have some idea of what the word <q>continuous</q> means (or should mean), both in a colloquial context and in a math-specific context. Instead of focusing on some of the traditional ideas like <q>can you draw the graph without picking up your pencil</q>, we're going to formalize the idea of continuity a bit.
+    </p>
+    <p>
+      And the first thing that we'll have to do is shift our intuition from what continuity is describing. We won't (at least at first) use continuity as a classification of functions, as a whole. Instead, we're going to think of continuity as a description of some <q>local</q> behavior. 
+    </p>
+
+  </introduction>
 
   <subsection xml:id="subsec-ContinuityAsConnectedness">
     <title>Continuity as Connectedness</title>
     <p>
-      
+      We're going to try to think about what we want to describe when we define continuity. The description of <q>drawing a graph without picking up a pencil</q> is a global property, and also a pretty vague and ambiguous one.
+    </p>
+    <xi:include href="./activities/act-ClassifyContinuity.ptx" />
+    <p>
+      There are definitely some unknowns here. One of the questions that students ask a lot during an investigation like this is what we do about end-points. Is a function continuous at a closed ending-point in its domain? Is it connected to itself? To answer questions like this, we should try to write out what we mean by connectedness. 
+    </p>
+    <p>
+      A pretty basic version of this is something like <q>A function is connected to itself at a point if, for the inputs near that point, the function values are close to the function value at the point.</q> Maybe even more concise is <q>Small deviations in the inputs produce small changes in the outputs.</q>
     </p>
   </subsection>
 
-  <subsection xml:id="subsec-ContinuityAsClassification">
-    <title>Continuity as Classification</title>
+  <subsection xml:id="subsec-DefiningContinuity">
+    <title>Defining Continuity</title>
+    <p>
+      We're going to take this idea of a function being connected to itself as <q>small deviations in the inputs produce small changes in the outputs</q> and write it down using limit notation.
+    </p>
     <definition xml:id="def-ContinuousAtPoint">
       <title>Continuous at a Point</title>
       <statement>
@@ -35,7 +57,79 @@
         </p>
       </statement>
     </definition>
-
+    <p>
+      In using limits, we get some flexibility: we can talk about one-sided limits, specifically! This helps us take care of the pesky <q>Is a function connected to itself at a closed ending point,</q> question! We can say, using this definition, <q>Yes, on the left side!</q> or <q>Yes, on the right side!</q>
+    </p>
+    <example>
+      <introduction>
+        <p>
+          For the function <m>f(x)</m> defined below, decide whether or not the function is continuous at the point listed. If it is not continuous, report whether it is continuous on one side.
+          <me>
+            f(x) = \begin{cases}
+              2x+1 \amp \text{when } x\leq 2\\
+              \dfrac{2x^2+7}{3} \amp \text{when } 2\lt x \lt 4\\
+              \dfrac{6}{x-1} + 3 \amp \text{when } x\geq 4
+              \end{cases}
+          </me>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Is <m>f(x)</m> continuous at the point <m>(2,5)</m>?
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Check the one-sided limits as <m>x\to 2</m>. Do they both equal <m>5</m>? Does one of them?
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <md>
+              <mrow>\lim_{x\to 2^-} f(x) \amp = \lim_{x\to 2^-} 2x+1</mrow>
+              <mrow> \amp = 2(2)+1</mrow>
+              <mrow> \amp = 5</mrow>
+              <mrow>\lim_{x\to 2^+} f(x)\amp \lim_{x\to 2^+} \frac{2x^2+7}{3} </mrow>
+              <mrow> \amp = \frac{2(2)^2+7}{3}</mrow>
+              <mrow> \amp = 5</mrow>
+            </md>
+            So <m>\displaystyle\lim_{x\to 2}f(x) = 5</m>. Since <m>f(2)=5</m> as well, we have <m>\displaystyle\lim_{x\to 2}f(x) = f(2)</m> which means that <m>f(x)</m> is continuous at <m>x=2</m>.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Is <m>f(x)</m> continuous at the point <m>(4, 5)</m>?
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Check the one-sided limits as <m>x\to 4</m>. Do they both equal <m>5</m>? Does one of them?
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <md>
+              <mrow>\lim_{x\to 4^-} f(x) \amp = \lim_{x\to 4^-} \frac{2x^2+7}{3}</mrow>
+              <mrow> \amp = \frac{2(4)^2+7}{3}</mrow>
+              <mrow> \amp = 13</mrow>
+              <mrow>\lim_{x\to 4^+} f(x) \amp = \lim_{x\to 4^+}  \frac{6}{x-1} + 3</mrow>
+              <mrow> \amp = \frac{6}{4-1}+3</mrow>
+              <mrow> \amp = 5</mrow>
+            </md>
+            Since <m>\displaystyle \lim_{x\to 4^-} f(x) \neq \lim_{x\to 4^+} f(x) </m> we know that <m>\displaystyle\lim_{x\to 4^} f(x) </m> doesn't exist, and so this function cannot be continuous at <m>x=4</m>.
+          </p>
+          <p>
+            But we can notice that <m>\displaystyle\lim_{x\to 4^+} f(x) =f(4)</m>, and so we can say that the function is still continuous on the right side at <m>x=4</m>.
+          </p>
+        </solution>
+      </task>
+    </example>
+    <p>
+      Another bit of flexibility that we have with this definition is that, once we know whether a function is continuous at a point or not, we can string together points in an interval and classify a function as continuous on an interval.
+    </p>
     <definition xml:id="def-ContinuousOnInterval">
     <title>Continuous on an Interval</title>
       <statement>
@@ -47,10 +141,18 @@
         </p>
       </statement>
     </definition>
-
+    <p>
+      Something to notice, here, is that we won't do this by checking <em>each</em> individual <m>x</m>-value in an interval. If we wanted to say that a function was continuous on <m>(0,1)</m>, we would then have to consider every real number between <m>0</m> and <m>1</m>. But there are an infinite amount of these!
+    </p>
+    <p>
+      So when we talk about a function being continuous on an interval, we'll really think about this by pointing out the places where a function is <em>not</em> continuous (<m>x</m>-values where <m>f(x)</m> violates some part of <xref ref="def-ContinuousAtPoint"/>).
+    </p>
   </subsection>
   <subsection xml:id="subsec-Discontinuities">
     <title>Discontinuities</title>
+    <p>
+      Since we'll want to label functions at places that they are not continuous (in order to write the intervals where it <em>is</em> continuous), we should summarize some things about discontinuities.
+    </p>
     <assemblage xml:id="assemblage-Discontinuities">
       <title>Where is a Function not Continuous?</title>
       <p>
@@ -63,7 +165,7 @@
           </li>
           <li>
             <p>
-              A function is, in general, discontinuous wherever it is undefined. This seems silly to say! We probably could have left this unsaid. 
+              A function is, in general, discontinuous at any <m>x</m>-value where <m>f(x)</m> is not defined. This seems silly to say! We probably could have left this unsaid. Of course <m>f</m> isn't continuous at an <m>x</m>-value not in its domain.
             </p>
           </li>
           <li>
@@ -74,6 +176,125 @@
         </ul>
       </p>
     </assemblage>
+    <p>
+      Some quick notes:
+      <ul>
+        <li>
+          <p>
+            Every polynomial function is continuous everywhere on its domain. We knew this already, from <xref ref="thm-LimitsOfPolynomials" text="type-global-title"/>: the limit is always the same as the function value at any input!
+          </p>
+        </li>
+        <li>
+          <p>
+            Rational functions are only discontinuous when there is division by 0.
+          </p>
+        </li>
+        <li>
+          <p>
+            Even-root functions (like square roots) are continuous whenever the radicand (the stuff under the root) is positive. We might need to investigate wherever the radicand is equal to <m>0</m>, since the function might only be continuous on one side.
+          </p>
+        </li>
+        <li>
+          <p>
+            The following functions are continuous on their domains:
+            <ul>
+              <li>
+                <p>
+                  <m>y=\sin(x)</m> on <m>(-\infty,\infty)</m>
+                </p>
+              </li>
+               <li>
+                <p>
+                  <m>y=\cos(x)</m> on <m>(-\infty,\infty)</m>
+                </p>
+              </li>
+               <li>
+                <p>
+                  <m>y=e^x</m> on <m>(-\infty,\infty)</m>
+                </p>
+              </li>
+               <li>
+                <p>
+                  <m>y=\ln(x)</m> on <m>(0,\infty)</m>
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <example>
+      <statement>
+        <p>
+          Let's revisit the same function we looked at earlier:
+          <me>
+            f(x) = \begin{cases}
+              2x+1 \amp \text{when } x\leq 2\\
+              \dfrac{2x^2+7}{3} \amp \text{when } 2\lt x \lt 4\\
+              \dfrac{6}{x-1} + 3 \amp \text{when } x\geq 4
+              \end{cases}
+          </me>
+        </p>
+        <p>
+          We already looked at what was happening at <m>x=2</m> and <m>x=4</m>. Are there any other <m>x</m>-values where this function might not be continuous? Why or why not? Can you report the intervals on which <m>f(x)</m> is continuous?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Can you name the function type for <m>x\lt 2</m>, <m>2\lt x\lt 4</m> and <m>x\gt 4</m>?
+        </p>
+      </hint>
+      <solution>
+        <p>
+          Since <m>f(x)</m> is polynomial for <m>x\lt 2</m> and <m>2\lt x\lt 4</m>, we know that the function is continuous on those intervals as well. We can see that for <m>x\gt 4</m>, <m>f(x)</m> is a rational function. Since the only <m>x</m>-value where we might divide by 0 is outside of the interval for which this function part is defined, we know that this function is continuous for <m>x\gt 4</m>.
+        </p>
+        <p>
+          Since our function is continuous at <m>x=2</m>, we can say that it is continuous on the interval <m>(-\infty, 4)</m>. We also say that the function was continuous on the right at <m>x=4</m>, and so we can say that <m>f(x)</m> is also continuous on the interval <m>[4,\infty)</m>.
+        </p>
+      </solution>
+    </example>
+    <p>
+      We'll end this section with one last result that will be pretty important. Continuity, as a property, will be useful as we move forward, but only for a few specific reasons. One is the following result.
+    </p>
+    <theorem xml:id="thm-ContinuityWithComposition">
+      <title>Continuity with Composition</title>
+      <statement>
+        <p>
+          For two functions <m>f(x)</m> and <m>g(x)</m>, if <m>\displaystyle\lim_{x\to a}g(x)=L</m> and <m>f(x)</m> is continuous at <m>x=L</m>, then
+          <me>
+            \lim_{x\to a} f(g(x)) = f\left(\lim_{x\to a}g(x)\right) = f(L)
+          </me>.
+        </p>
+      </statement>
+    </theorem>
+    <p>
+      This is a generalization of the properties of limits that we explored earlier (<xref ref="thm-CombinationsOfLimits" text="type-global-title"/>). We can use this new theorem to evaluate limits by just noticing if pieces of our function might behave nicely with limits.
+    </p>
+    <p>
+      Let's evaluate the following limit:
+      <me>
+        \lim_{x\to 1}\left(\sin\left(\sqrt{e^{x^2-2x+1}}\right)\right)
+      </me>.
+      Notice that the sine function is continuous everywhere. This means that we can bring the limit statement <q>inside</q> by a layer:
+      <me>
+        \lim_{x\to 1}\left(\sin\left(\sqrt{e^{x^2-2x+1}}\right)\right) = \sin\left(\lim_{x\to 1}\sqrt{e^{x^2-2x+1}}\right)
+      </me>.
+      Now we can think about the square root function: we know that the radicand function (the exponential) always produces positive outputs. So we can bring the limit statement <q>inside</q> by another layer of composition:
+      <me>
+        \sin\left(\lim_{x\to 1}\sqrt{e^{x^2-2x+1}}\right) = \sin\left(\sqrt{\lim_{x\to 1}e^{x^2-2x+1}}\right)
+      </me>.
+      The exponential function is also continuous everywhere:
+      <me>
+        \sin\left(\sqrt{\lim_{x\to 1}e^{x^2-2x+1}}\right) = \sin\left(\sqrt{e^{\lim_{x\to 1}x^2-2x+1}}\right)
+      </me>.
+      And we also know that polynomial functions are continuous everywhere!
+      <md>
+        <mrow>\sin\left(\sqrt{e^{\lim_{x\to 1}x^2-2x+1}}\right) \amp = \sin\left(\sqrt{e^{(1)^2-2(2)+1}}\right) </mrow>
+        <mrow> \amp = \sin\left(\sqrt{e^0}\right)</mrow>
+        <mrow> \amp = \sin(1)</mrow>
+      </md>
+      This seemingly difficult limit is actually as easy as just evaluating the function at the input, since the function behaves nicely.
+    </p>
   </subsection>
   <subsection xml:id="subsec-IntermediateValueTheorem">
     <title>Intermediate Value Theorem</title>

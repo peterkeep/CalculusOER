@@ -1,0 +1,49 @@
+<activity xml:id="act-ClassifyContinuity">
+    <title>Classification and Continuity</title>
+    <introduction>
+        <p>
+            Let's consider the following functions, graphed below.
+        </p>
+        <figure xml:id="fig-ClassifyContinuity">
+            <caption>A variety of graphs for us to use to think about continuity.</caption>
+            <sbsgroup widths="30% 30% 30%">
+                <sidebyside>
+                    <image source="./Limits/ClassifyContinuity-a.png">
+                        <shortdescription>A graph of a function with a vertical asymptote and a horizontal asymptote.</shortdescription>
+                    </image>
+                    <image source="./Limits/ClassifyContinuity-b.png">
+                        <shortdescription>A graph of a function that increases from (0,0) onward.</shortdescription>
+                    </image>
+                    <image source="./Limits/ClassifyContinuity-c.png">
+                        <shortdescription>A graph that increases up to a hole. Underneath that hole is a point that the function decreases away from.</shortdescription>
+                    </image>
+                </sidebyside>
+                <sidebyside>
+                    <image source="./Limits/ClassifyContinuity-d.png">
+                        <shortdescription>A graph with a horizontal asymptote. The graph looks like a bell curve with a hole at its peak.</shortdescription>
+                    </image>
+                    <image source="./Limits/ClassifyContinuity-e.png">
+                        <shortdescription>A polynomial looking function that increases up to a point, decreases down to a point, and then increases away from it.</shortdescription>
+                    </image>
+                    <image source="./Limits/ClassifyContinuity-f.png">
+                        <shortdescription>A graph of a straight line connecting two points.</shortdescription>
+                    </image>
+                </sidebyside>
+            </sbsgroup>
+        </figure>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Can you point out any points on the functions above that seem like the functions might not be continuous? Note that we're not classifying each function as <q>continuous</q> or <q>not continuous</q>!
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                We want to build towards a definition of continuity using <q>connectedness</q> as the key: a function is continuous at a point if it is connected to itself. How does that work when we think about function values and limits? Use the graphs above and the points you looked at to help!
+            </p>
+        </statement>
+    </task>
+</activity>
