@@ -1,0 +1,78 @@
+<setup>
+  <circle name="circle" center="(0,0)" radius="1" fixed/>
+  <point name="A" styleNumber="2">(0,1)
+    <constraints>
+      <constrainTo>
+        $circle
+      </constrainTo>
+    </constraints>
+  </point>
+  <point name="B" styleNumber="2">
+    (-$A.x, -$A.y)
+  </point>
+  <boolean name="ATop">
+      $A.y > 0.8
+  </boolean>
+  <boolean name="BTop">
+    $B.y > 0.8
+  </boolean>
+  <boolean name="reveal">
+    <or>$ATop $BTop</or>
+  </boolean>
+  <text name="comparison">
+    <conditionalContent>
+      <case condition="$ATop">
+        \lt
+      </case>
+      <case condition="$BTop">
+        \gt
+      </case>
+      <case>
+        ?
+      </case>
+    </conditionalContent>
+  </text>
+  <text name="summary">
+    <conditionalContent>
+      <case condition="$ATop">
+        Since it's warmer at location <m>A</m> than it is at location <m>B</m>, we have:
+      </case>
+      <case condition="$BTop">
+        Since it's warmer at location <m>B</m> than it is at location <m>A</m>, we have:
+      </case>
+      <case>
+        We don't know the temperature at these locations, so we can't say much.
+      </case>
+    </conditionalContent>
+  </text>
+</setup>
+
+<p><em>Instructions:</em> Drag either of the points around on the circle. We can compare the temperature difference between the two points.</p>
+
+<graph xMin="-1.5" xMax="1.5" yMin="-1.3" yMax="1.3" fixAxes showBorder="false" displayXAxis="false" displayYAxis="false" identicalAxisScales>
+  $circle
+  $A
+  <label anchor="1.2*$A">
+    Person A
+  </label>
+  $B
+  <label anchor="1.2*$B">
+    Person B
+  </label>
+  <label anchor="(0,0.8)" draggable="false">
+    It's hot up here!
+  </label>
+  <label anchor="(0,-0.8)" draggable="false">
+    It's cold down here!
+  </label>
+  <conditionalContent>
+    <case condition="$reveal">
+      <vector tail="0.9*$B" head="0.9*$A" styleNumber="2"/>
+    </case>
+  </conditionalContent>
+</graph>
+
+<p>$summary</p>
+<md>
+  <mrow>\mathrm{temp}(B)-\mathrm{temp}(A)\amp \;\;\;\;\;\;\; $comparison \amp 0</mrow>
+</md>

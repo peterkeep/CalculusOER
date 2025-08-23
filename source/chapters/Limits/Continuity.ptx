@@ -298,6 +298,9 @@
   </subsection>
   <subsection xml:id="subsec-IntermediateValueTheorem">
     <title>Intermediate Value Theorem</title>
+    <p>
+      Let's introduce one of the biggest results coming from continuity of functions that exists. We're going to simply state the result and then discuss it, instead of building up towards it.
+    </p>
     <theorem xml:id="thm-IVT">
       <title>Intermediate Value Theorem</title>
       <statement>
@@ -314,7 +317,35 @@
         Bryson of Heraclea knew that the square itself existed (even if he couldn't construct it) because he was able to find a circle with area less than the square (by inscribing a circle inside of the square) and a circle with area greater than the square (where the square is inscribed in the circle). Since he posited that he could increase the size of the circle in a continuous manner (without using those words), he claimed that a square with area equal to that of the circle must exist, since the area of the circle passes through all values from the smaller area to the larger area.
       </p>
     </aside>
-    
+    <p>
+      This is a seemingly simple result (even if it is stated in a seemingly complicated way): of course, in order to go from a point at one <m>y</m>-value to another point at a different <m>y</m>-value, the function has to pass through all of the <m>y</m>-values in between. This is pretty obvious, once we see through the phrasing.
+    </p>
+    <p>
+      We can use this result in some pretty interesting ways, though! Here's a favorite:
+    </p>
+    <p> 
+      Let's consider two people, standing on polar opposite points on the earth. Let's say that these two people are carrying thermometers and are measuring the ambient temperature at their location. They coordinate their movement, and begin to move around the earth in a circle, remaining at polar opposite locations as they move.
+    </p>
+    <p>
+      How likely is it that the pair finds some location on their path where their temperature readings are exactly identical?
+    </p>
+    <p>
+      Let's pretend that the locations that they start in are different temperatures (or else yay, we found the spot where the temperatures are the same!), and that the starting position of person A is hotter than the starting position of person B.
+    </p>
+    <interactive platform="doenetml" width="90%" aspect="2:3">
+      <slate surface="doenetml">
+        <xi:include parse="text" href="./doenet/TemperatureIVT.xml"/>
+      </slate>
+    </interactive>
+    <p>
+      Can you see why we are guaranteed that there must be some pair of polar opposite locations where the ambient temperatures are identical?
+    </p>
+    <p>
+      If the ambient temperature differs continuously, then the intermediate value theorem says that between the locations where the temperature differential is negative and where it is positive, the temperature differential function must pass through zero!
+    </p>
+    <p>
+      This argument can be used in a variety of contexts, and can be used to show that you can typically fix a wobbly table (where the legs don't all rest nicely on the ground) or chair by rotating it until all of the legs rest nicely on the ground.
+    </p>
   </subsection>
 
 </section>
