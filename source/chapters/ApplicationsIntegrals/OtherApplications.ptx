@@ -2,7 +2,146 @@
 
 <section xml:id="sec-OtherApplications" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Other Applications of Integrals</title>
-
-  <p> Text of section. </p>
-
+  <introduction>
+    <p>
+      We should pause and think (even briefly) about the whole point of this chapter.
+    </p>
+    <p>
+      Do you think you will need to know how to calculate the volume of a solid of revolution?
+    </p>
+    <p>
+      Is being able to think about the surface area of a solid of revolution important?
+    </p>
+    <p>
+      Are you going to need to calculate a bunch of arc lengths constantly in your other classes, jobs, or spare time?
+    </p>
+    <p>
+      No. Probably not. It's fun to think about this stuff, but the goal is not really the formulas: it's the construction.
+    </p>
+    <p>
+      What we really should be leaving this chapter with is a renewed view of what a definite integral <em>is</em>. After <xref ref="ch-AntiderivativesIntegrals" text="type-global-title"/>, we probably thought about a definite integral as a measurement of the (signed) area <q>under the curve</q> (bounded between the curve and the <m>x</m>-axis). Hopefully now, though, we have a deeper view of the definite integral through this slice-and-sum process.
+    </p>
+    <p>
+      A definite integral is an accumulation of some function outputs multiplied by the space between the inputs. 
+    </p>
+    <p>
+      So when we do move past these topics into other classes, jobs, or your spare time, then you <em>will</em> run into formulas involving definite integrals. Hopefully, based on this chapter, we have the tools to deconstruct those formulas to find out what they are measuring and how they are measuring it.
+    </p>
+    <p>
+      To end the chapter, let's look at some applications of definite integrals into formulas from other academic fields.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-Mass">
+    <title>Physics Application: Mass</title>
+    <p>
+      Let's consider some object made out of a material with a constant density. To calculate the mass of the object, we need to know the size (the volume of the object) and the density, and then we can multiply:
+      <me>
+        \mathrm{mass} = \mathrm{density} \cdot \mathrm{volume}
+      </me>.
+      We've seen how we can use the slice-and-sum formula to calculate volumes by slicing the object into thin pieces and approximating the volume by multiplying the cross-sectional area by the thickness of the slice:
+      <me>
+        V_k = A(x_k^*) \Delta x
+      </me>. 
+      We can easily construct an integral formula for the mass of an object now! We just need to find some measurement of the mass of a single slice of an object, and then start summing until we end up with a definite integral! So, for an object spanning from <m>x=a</m> to <m>x=b</m> with density, <m>\rho</m>, we have:
+      <md>
+        <mrow>M_k \amp = \rho V_k</mrow>
+        <mrow> \amp = \rho A(x_k^*)\Delta x</mrow>
+        <mrow>M \amp \approx \sum_{k=1}^n \rho A(x_k^*)\Delta x</mrow>
+        <mrow>M \amp = \lim_{n\to\infty}\sum_{k=1}^n \rho A(x_k^*)\Delta x</mrow>
+        <mrow> \amp = \int_{x=a}^{x=b} \rho A(x)\;dx</mrow>
+      </md>
+      This is great! We can easily extend this to other situations, as well.
+    </p>
+    <p>
+      Imagine if the density of our object isn't constant. Maybe we have some metal alloy, where the mixture of the metal changes as we traverse through the object. This variable density can be represented, then, as <m>\rho(x)</m>. We can replace the constant <m>\rho</m> with <m>\rho(x_k^*)</m> and then eventually <m>\rho(x)</m> to get:
+      <me>
+        M = \int_{x=a}^{x=b} \rho(x) A(x)\;dx
+      </me>.
+    </p>
+    <theorem xml:id="thm-MassOfObject">
+      <title>Mass of an Object</title>
+      <statement>
+        <p>
+          For some solid spanning from <m>x=a</m> to <m>x=b</m> where <m>A(x)</m> is the cross-sectional area of the object at <m>x</m> and <m>\rho(x)</m> is the density of the object at <m>x</m>, then the total mass of the object is:
+          <me>
+             M = \int_{x=a}^{x=b} \rho(x) A(x)\;dx
+          </me>.
+        </p>
+      </statement>
+    </theorem>
+    <p>
+      For very thin objects, like wires, we can not consider the cross-sectional area and simply use what we call the <term>linear density</term>: <m>\rho(x)</m> measures the amount of mass per unit length (instead of mass per cubic unit of volume). In this case, our formula changes.
+    </p>
+    <theorem xml:id="thm-MassOfThinWire">
+      <title>Mass of a Thin Wire</title>      
+      <statement>
+        <p>
+          For some thin object (like a wire) spanning from <m>x=a</m> to <m>x=b</m>, then if <m>\rho(x)</m> measures the mass per unit of length (<m>\rho(x)</m> is a linear density function), then the mass of the object is:
+          <me>
+            M = \int_{x=a}^{x=b} \rho(x)\;dx
+          </me>.
+        </p>
+      </statement>
+    </theorem>
+    <example>
+      <introduction>
+        <p>
+          For each of the following objects, set up an integral expression to calculate the mass. Evaluate the integrals!
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            A thin wire that is <m>30</m> cm long with a density function <m>\rho(x) = 2 + \frac{x}{60}</m>, where <m>\rho(x)</m> measures the density of the wire at <m>x</m> in g/cm.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>M \amp = \int_{x=0}^{x=30} \left(2+\frac{x}{60}\right)\;dx</mrow>
+              <mrow> \amp = \left(2x+\frac{x^2}{120}\right)\bigg|_{x=0}^{x=30}</mrow>
+              <mrow> \amp = 60 + \frac{900}{120}</mrow>
+              <mrow> \amp = 67.5</mrow>
+            </md>
+            The mass of the wire is <m>67.5</m> g.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            A thin wire that is <m>100</m> cm long, with an unknown density. We assume that the density changes linearly from one end to the other, with the measured density at both ends being <m>5.1</m> g/cm and <m>4.7</m> g/cm.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Construct the density function using two points: <m>(0,5.1)</m> and <m>(100, 4.7)</m>. You could switch the orders and use <m>(0,4.7)</m> and <m>(100,5.1)</m> as well. What is the linear function connecting these points?
+          </p>
+        </hint>
+        <solution>
+          <p>
+            We'll use the points <m>(0,5.1)</m> and <m>(100, 4.7)</m> to construct <m>\rho(x)</m>.
+            <md>
+              <mrow>\rho(x) \amp = \left(\underbrace{\frac{4.7-5.1}{100-0}}_{\text{slope}}\right)(x-0)+5.1</mrow>
+              <mrow> \amp = -0.004x+5.1</mrow>
+            </md>
+            Now we can integrate:
+            <md>
+              <mrow>M \amp = \int_{x=0}^{x=100} 5.1-0.004x\;dx</mrow>
+              <mrow> \amp = (5.1x - 0.002x^2)\bigg|_{x=0}^{x=100}</mrow>
+              <mrow> \amp = 510-20</mrow>
+              <mrow> \amp = 490</mrow>
+            </md>
+            So the mass of the wire is <m>490</m> g.
+          </p>
+        </solution>
+      </task>
+    </example>
+  </subsection>
+  <subsection xml:id="subsec-Work">
+    <title>Physics Application: Work</title>
+    <p>
+      
+    </p>
+  </subsection>
 </section>
