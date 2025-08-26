@@ -59,6 +59,11 @@
                     Do you expect the displacement of the object from <m>t=0</m> to <m>t=7</m> to be positive, negative, or 0?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    Displacement will likely be negative, since it looks like the size of the integral between <m>t=0</m> and <m>t=4</m> is larger than the size of the integral from <m>t=4</m> up to <m>t=7</m>. Another way to say this is that there is more negative velocity accumulated than positive velocity.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -66,6 +71,23 @@
                     Write two different expressions that represent the total displacement of the object from <m>t=0</m> to <m>t=7</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    There are plenty of ways to do this! Here are two:
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\displaystyle \int_{t=0}^{t=7} v(t)\;dt</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\displaystyle \int_{t=0}^{t=4} v(t)\;dt + \int_{t=4}^{t=7} v(t)\;dt</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -73,6 +95,11 @@
                     Do you expect the distance traveled by the object from <m>t=0</m> to <m>t=7</m> to be positive, negative, or 0?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    Distance is always non-negative, and since the velocity was not just constant at 0 (with no movement), then we expect the distance to be positive. It is the integral of speed, which is <m>|v(t)|</m>, velocity without taking into account the direction.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -80,6 +107,23 @@
                     Write two different expressions that represent the total distance traveled by the object from <m>t=0</m> to <m>t=7</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    There are plenty of ways to do this! Here are two:
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\displaystyle \int_{t=0}^{t=7} |v(t)|\;dt</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\displaystyle -\int_{t=0}^{t=4} v(t)\;dt  \int_{t=4}^{t=7} v(t)\;dt</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -99,6 +143,15 @@
                     What is the total displacement of the animal on the time interval <m>[0,1]</m>?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int_{t=0}^{t=1} v(t)\;dt \amp = \int_{t=0}^{t=1} \frac{t^4}{10} - t^3 + \frac{27t^2}{10} - \frac{9t}{5} \;dt</mrow>
+                        <mrow> \amp\left( \frac{t^5}{50} - \frac{t^4}{4}+\frac{27t^3}{30} - \frac{9t^2}{10}\right)\bigg|_{t=0}^{t=1}</mrow>
+                        <mrow> \amp = -\frac{23}{100}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -106,6 +159,15 @@
                     What is the total displacement of the animal on the time interval <m>[1,3]</m>?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int_{t=1}^{t=3} v(t)\;dt \amp = \int_{t=1}^{t=3} \frac{t^4}{10} - t^3 + \frac{27t^2}{10} - \frac{9t}{5} \;dt</mrow>
+                        <mrow> \amp\left( \frac{t^5}{50} - \frac{t^4}{4}+\frac{27t^3}{30} - \frac{9t^2}{10}\right)\bigg|_{t=1}^{t=3}</mrow>
+                        <mrow> \amp = \frac{26}{25}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -113,6 +175,15 @@
                     What is the total displacement of the animal on the time interval <m>[3,6]</m>?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int_{t=3}^{t=6} v(t)\;dt \amp = \int_{t=3}^{t=6} \frac{t^4}{10} - t^3 + \frac{27t^2}{10} - \frac{9t}{5} \;dt</mrow>
+                        <mrow> \amp\left( \frac{t^5}{50} - \frac{t^4}{4}+\frac{27t^3}{30} - \frac{9t^2}{10}\right)\bigg|_{t=3}^{t=6}</mrow>
+                        <mrow> \amp = -\frac{729}{100}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -120,6 +191,16 @@
                     What is the total displacement of the animal on the time interval <m>[0,6]</m>?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    We can integrate from <m>t=0</m> to <m>t=6</m>, or just add up the previous displacements.
+                    <md>
+                        <mrow>\int_{t=0}^{t=6} v(t)\;dt \amp = \int_{t=0}^{t=6} \frac{t^4}{10} - t^3 + \frac{27t^2}{10} - \frac{9t}{5} \;dt</mrow>
+                        <mrow> \amp\left( \frac{t^5}{50} - \frac{t^4}{4}+\frac{27t^3}{30} - \frac{9t^2}{10}\right)\bigg|_{t=0}^{t=6}</mrow>
+                        <mrow> \amp = -\frac{162}{25}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -127,6 +208,17 @@
                     What is the total distance traveled by the animal on the time interval <m>[0,6]</m>?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int_{t=0}^{t=6} |v(t)|\;dt  \amp = \left|\int_{t=0}^{t=1} v(t)\;dt\right|</mrow>
+                        <mrow> \amp + \left|\int_{t=1}^{t=3} v(t)\;dt\right|
+                        </mrow>
+                        <mrow> \amp + \left|\int_{t=3}^{t=6} v(t)\;dt\right|</mrow>
+                        <mrow> \amp = \frac{214}{25}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -134,6 +226,11 @@
                     Write a short summary of the animal's movement, including notes about direction, speed, and where the animal travels.
                 </p>
             </statement>
+           <solution>
+            <p>
+                From <m>t=0</m> to <m>t=1</m>, the animal is moving backwards, slowly. It speeds up until around <m>t\approx 0.4</m> and then slows down until it stops and turns around at <m>t-1</m>. From then until <m>t=3</m> it moves forwards. It speeds up until around <m>t\approx 2.1</m>, and then slows down until it stops to turn back around at <m>t=3</m>. Then, it speeds up quickly in the negative direction until <m>t=\approx 5</m> when it begins to slow down to turn around at <m>t=6</m>. It accelerates very quickly in the positive direction until <m>t=7</m>.
+            </p>
+           </solution>
         </task>
     </exercise>
     <exercise>
@@ -148,6 +245,16 @@
                     Determine the position function, <m>s(t)</m>, for <m>0\leq t\leq 100</m> using the <xref ref="thm-FuturePosition" text="title"/>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>s(t) \amp = s(0) + \int_{x=0}^{x=t} v(x)\;dx </mrow>
+                        <mrow> \amp = 3 + \int_{x=0}^{x=t} x^2-4x+2\;dx</mrow>
+                        <mrow> \amp = 3 + \left(\frac{x^3}{3}-2x^2+2x\right)|_{x=0}^{x=t}</mrow>
+                        <mrow> \amp =\frac{t^3}{3}-2t^2+2t+3 \amp \text{on the interval }[0,100]</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -155,6 +262,21 @@
                     Determine the position function, <m>s(t)</m>, for <m>0\leq t\leq 100</m> using the <xref ref="strat-InitialValueProblems" text="title"/> strategy.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    We'll find the family of antiderivatives, of which <m>s(t)</m> is one.
+                    <md>
+                        <mrow> \int v(t)\;dt \amp = \int t^2-4t+2 \; dt  </mrow>
+                        <mrow> \amp = \frac{t^3}{3}-2t^2+2t + C</mrow>
+                    </md>
+                    Now, <m>s(t)</m> is the antiderivative where <m>s(0)=3</m>.
+                    <md>
+                        <mrow>3 \amp \frac{0^3}{3}-2(0)^2 + 2(0)+C</mrow>
+                        <mrow>3 \amp = C</mrow>
+                    </md>
+                    So <m>s(t) =\dfrac{t^3}{3}-2t^2+2t +3</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -176,6 +298,16 @@
                     Determine the velocity function, <m>v(t)</m>, for <m>t\geq 0</m> using the <xref ref="thm-FuturePosition" text="title"/>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>a(t) \amp = v(0)+\int_{x=0}^{x=t} a(x)\;dx</mrow>
+                        <mrow> \amp = 5 + \int_{x=0}^{x=t} \left(x+\sin(2\pi x)\right)\;dx</mrow>
+                        <mrow> \amp = 5 + \left(\frac{x^2}{2} - \frac{\cos(2\pi x)}{2\pi} \right)\bigg|_{x=0}^{x=t}</mrow>
+                        <mrow> \amp = \frac{t^2}{2}- \frac{\cos(2\pi t)}{2\pi} + 5 + \frac{1}{2\pi} \amp \text{for } t\geq 0</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -183,6 +315,20 @@
                     Determine the velocity function, <m>v(t)</m>, for <m>t\geq 0</m> using the <xref ref="strat-InitialValueProblems" text="title"/> strategy.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int a(t)\;dt \amp = \int t+\sin(2\pi t)\;dt  </mrow>
+                        <mrow> \amp  =  \frac{t^2}{2}- \frac{\cos(2\pi t)}{2\pi} +C </mrow>
+                    </md>
+                    We know that <m>v(t)</m> is one of these antiderivatives, so we can use <m>v(0)=5</m> to solve for <m>C</m>.
+                    <md>
+                        <mrow>5 \amp = \frac{0^2}{2}-\frac{\cos(0)}{2\pi} + C </mrow>
+                        <mrow>5 + \frac{1}{2\pi} \amp = C</mrow>
+                    </md>
+                    So <m>v(t)=\dfrac{t^2}{2}- \dfrac{\cos(2\pi t)}{2\pi} + 5 + \dfrac{1}{2\pi}</m> for <m>t\geq 0</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -190,6 +336,11 @@
                     Can you obtain the position function, <m>s(t)</m>? Explain why or why not, based on the information given.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    No, we cannot obtain the position function <m>s(t)</m>, since we do not know an initial (or any) position. We can only obtain the family of possible position functions.
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -204,6 +355,15 @@
                     Find the velocity function for the truck.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> v(t) \amp = v(0)+\int_{x=0}^{x=t} a(x)\;dx </mrow>
+                        <mrow> \amp 88 + \int_{x=0}^{x=t} -17\;dx</mrow>
+                        <mrow> \amp 88-17t</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -211,6 +371,16 @@
                     When does the truck stop? In this situation, the truck won't have a negative velocity (since it's just braking and not eventually going in reverse). What time interval is the velocity function relevant on?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    The truck stops when <m>v(t)=0</m>:
+                    <md>
+                        <mrow>0 \amp = 88-17t </mrow>
+                        <mrow>t \amp \frac{88}{17}</mrow>
+                    </md>
+                    This means that the velocity function is only relevant on the interval <m>\left[0, \frac{88}{17}\right]</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -218,6 +388,16 @@
                     What is the total displacement of the truck on this time interval?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int_{t=0}^{t=88/17} v(t)\;dt \amp = \int_{t=0}^{t=88/17} 88-17t\;dt</mrow>
+                        <mrow> \amp = \left(88t-\frac{17t^2}{2}\right)\bigg|_{t=0}^{t=88/17}</mrow>
+                        <mrow> \amp \frac{3872}{17}</mrow>
+                    </md>
+                    So the truck moved approximately <m>227.76</m> feet.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -228,6 +408,23 @@
                     Do we need to make changes to the braking mechanism, in order to have the acceleration function change? If so, what does the acceleration need to be (assuming it is constant and we are just replacing it with a new negative number)?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    Note that for an acceleration function <m>a(t) = -k</m> for some positive number <m>k</m>, the velocity function is <m>v(t)=88-kt</m> and the truck stops at <m>t=\frac{88}{k}</m>.
+                </p>
+                <p>
+                    Now we can set the displacement integral equal to 200 in order to solve for <m>k</m>.
+                    <md>
+                        <mrow>200 \amp = \int_{t=0}^{t=88/k} 88-kt\;dt </mrow>
+                        <mrow> \amp = \left( 88t - \frac{kt^2}{2}\right)\bigg|_{t=0}^{t=88/k}</mrow>
+                        <mrow> \amp = \frac{88^2}{k} - \frac{88^2}{2k}</mrow>
+                        <mrow> 200 \amp = \frac{88^2}{2k} </mrow>
+                        <mrow>400k \amp 88^2 </mrow>
+                        <mrow> k \amp = \frac{484}{25} = 19.36 </mrow>
+                    </md>
+                    So the truck needs to have an acceleration function of <m>a(t) = -19.36</m> ft/s<m>^2</m> or more negative for it to stop in time.
+                </p>
+            </solution>
         </task>
     </exercise>
 </exercises>

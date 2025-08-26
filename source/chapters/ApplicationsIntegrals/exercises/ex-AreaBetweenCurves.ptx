@@ -14,6 +14,9 @@
             <p>
                 Set up (and practice evaluating) an integral expression representing the area of each of the regions described below.
             </p>
+            <p>
+                The hint for each problem will open a graph of the region.
+            </p>
         </introduction>
         <task>
             <statement>
@@ -24,6 +27,13 @@
             <hint>
                 <interactive desmos="6bpwvbxk2w" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <me>
+                        \int_{x=0}^{x=2} (4x+1)-(x^2+1)\;dx  = \frac{16}{3}
+                    </me>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -34,6 +44,11 @@
             <hint>
                 <interactive desmos="kie0khz2u9" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <me>\int_{x=0}^{x=2} (4-x)-(x)\;dx = 4</me>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -44,6 +59,11 @@
             <hint>
                <interactive desmos="upz6hfkaf1" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <me>\int_{x=0}^{x=4}(\sqrt{x}+2) - (x)\;dx = \frac{16}{3}</me>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -54,6 +74,13 @@
             <hint>
                <interactive desmos="lqkhjc4ql5" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    This one has annoying limits of integration, and so evaluating the integral is more annoying than it is worth.
+
+                    <me>\int_{x=-\sqrt{\frac{\sqrt{5}-1}{2}}}^{x=\sqrt{\frac{\sqrt{5}-1}{2}}}\left(\frac{1}{x^2+1}\right)-(x^2)\;dx</me>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -69,8 +96,21 @@
                 </p>
             </statement>
             <hint>
-                <interactive desmos="lg4wcxz4ug" width="60%" aspect="2:3" />
+                <interactive desmos="2cowv5uc6s" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <me>\int_{x=0}^{x=\frac{\pi}{4}} \sin(x)\;dx + \int_{x=\frac{\pi}{4}}^{x=\frac{\pi}{2}}\cos(x)\;dx</me>
+                    Or, alternatively:
+                    <me>
+                        \int_{y=0}^{y=\frac{\sqrt{2}}{2}} \cos^{-1}(y)-\sin^{-1}(y)\;dy
+                    </me>.
+                    Admittedly, it is annoying to evaluate this in terms of <m>y</m>, even though it is satisfying to have only a single integral.
+                </p>
+                <p>
+                    The area itself is <m>2-\sqrt{2}</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -81,6 +121,16 @@
             <hint>
                 <interactive desmos="ppypwkyscy" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <me>\int_{x=0}^{x=\sqrt{2}} x\;dx + \int_{x=\sqrt{2}}^{x=2} x-(x^2-2)\;dx</me>
+                    Or alternatively:
+                    <me>
+                        \int_{y=0}^{y=2}\sqrt{y+2}-y\;dy
+                    </me>.
+                    In either case, the area is <m>\dfrac{10-4\sqrt{2}}{3}</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -91,16 +141,40 @@
             <hint>
                 <interactive desmos="u4knulzafb" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <me>
+                        \int_{x=-\sqrt{2}}^{x=-1} 0-(x^2-2)\;dx + \int_{x=-1}^{x=0} 0-(x)\;dx
+                    </me>
+                    Or, alternatively:
+                    <me>
+                        \int_{y=-1}^{y=0} y-\sqrt{y+2}\;dy    
+                    </me>.
+                    In either case, the area is <m>\dfrac{4\sqrt{2}}{3}-\dfrac{7}{6}</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
-                    The region bounded by the curves <m>y=3x</m>, <m>y=4-x^2</m>, and <m>y=x^2</m> in the first quadrant.
+                    The region bounded by the curves <m>y=3x</m>, <m>y=4-x^2</m>, and <m>y=x^2</m> in the first quadrant with <m>0\leq x \leq \sqrt{2}</m>.
                 </p>
             </statement>
             <hint>
                 <interactive desmos="r2gchjvtbn" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <me>
+                        \int_{x=0}^{x=1} (3x)-(x^2)\;dx + \int_{x=1}^{x=\sqrt{2}} (4-x^2)-(x^2)\;dx
+                    </me>
+                    Or, alternatively:
+                    <me>
+                        \int_{y=0}^{y=2} \sqrt{y}-\left(\frac{y}{3}\right)\;dy + \int_{y=2}^{y=3}\sqrt{4-y} - \left(\frac{y}{3}\right)\;dy
+                    </me>.
+                    In either case, the area is <m>\dfrac{8\sqrt{2}}{3} - \dfrac{13}{6}</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
