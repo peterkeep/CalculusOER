@@ -1,0 +1,132 @@
+<exercises xml:id="ex-Continuity">
+    <exercise>
+        <p>
+            Explain how the definition of continuity (<xref ref="def-ContinuousAtPoint"/>) describes a function being <q>connected to itself</q> at the point.
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            What does it mean for a function to be continuous on the left at a point? What about on the right?
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Use the definition of continuity at a point to determine whether each function is continuous at the point listed. If it is not, is the function continuous on one side at the point? Explain.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) =
+                        \begin{cases}
+                          4x+1 \amp \text{if } x\lt 1\\
+                          x^2+5 \amp \text{if } x\geq 1
+                        \end{cases}</m> at <m>x=1</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>g(x) =
+                        \begin{cases}
+                          6x^2-2 \amp \text{if } x\lt0\\
+                          4 \amp \text{if } x=0\\
+                          1-3\cos(x) \amp \text{if } x\gt 0
+                        \end{cases}</m> at <m>x=0</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>h(x) =
+                        \begin{cases}
+                          \left(\dfrac{x^2-1}{x+1}\right) \amp \text{if } x\neq -1\\
+                          -2 \amp\text{if } x=-1
+                        \end{cases}</m> at <m>x=-1</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Find the values of <m>a</m> that make the function continuous at the point that is listed. If no such value of <m>a</m> exists, say so and explain why.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) =
+                        \begin{cases}
+                          x -6\amp \text{if } x\lt3\\
+                          ax^2+1 \amp \text{if } x\geq 3
+                        \end{cases}</m> at <m>x=3</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) =
+                        \begin{cases}
+                          \dfrac{x^2-4}{x+2} \amp \text{if } x\neq -2\\
+                          a \amp \text{if } x=-2
+                        \end{cases}</m> at <m>x=-2</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Use the properties of composition and continuity to evaluate the following limits.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \lim_{x\to 0} \left(\sin\left(e^{\sqrt{x^2}}\right)\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \lim_{x\to 0} \ln\left(\dfrac{\cos(x^2)}{x^2+1}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \lim_{x\to 0} \sqrt[3]{\dfrac{x}{\sqrt{16x+1}-1}}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+        <p>
+            <q>Even a broken clock is right twice a day,</q> is a common phrase used to say that even an unreliable person can have a good point on accident. Explain how we can use the Intermediate Value Theorem to prove that a broken (analog) clock is guaranteed right twice per day. (Here, we're assuming that <q>broken</q> means stuck.)
+        </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Explain why this argument doesn't work to show that an unreliable person will be guaranteed to have a good point on accident.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Prove that at some point in your life you were exactly <m>\pi</m> feet tall.
+            </p>
+        </statement>
+    </exercise>
+</exercises>
