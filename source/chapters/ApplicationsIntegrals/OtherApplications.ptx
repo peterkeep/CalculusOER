@@ -140,8 +140,90 @@
   </subsection>
   <subsection xml:id="subsec-Work">
     <title>Physics Application: Work</title>
-    <p>
-      
-    </p>
+    <introduction>
+      <p>
+        Another example of a measurement found in physics contexts is Work. Work is, generally, the amount energy transferred to (or from, depending on perspective) an object by some force across some distance or displacement.
+        <me>
+          \mathrm{Work} = \mathrm{Force} \cdot \mathrm{distance}
+        </me>
+        In general, we can use the <q>slice-and-sum</q> process when the force applied to our object is some function of the position:
+        <md>
+          <mrow>W_k \amp = F(x_k^*) \Delta x </mrow>
+          <mrow>W \amp \approx \sum_{k=1}^n F(x_k^*) \Delta x</mrow>
+          <mrow>W \amp = \lim_{n\to\infty} \sum_{k=1}^n F(x_k^*) \Delta x</mrow>
+          <mrow> \amp = \int_{x=a}^{x=b} F(x)\;dx</mrow>
+        </md>
+      </p>
+      <theorem xml:id="thm-Work">
+        <title>Work Required</title>
+        <statement>
+          <p>
+            If <m>F(x)</m> is a function measuring the force applied to an object at some <m>x</m>-value in the interval <m>[a,b]</m>, then the work done to move the object across the interval is:
+            <me>
+              W=\int_{x=a}^{x=b} F(x)\;dx
+            </me>.
+          </p>
+        </statement>
+      </theorem>
+      <p>
+        In many contexts, we can notice that the force being applied to the object is dependent on the position of the object along its path. For instance, in the 1600's, British physicist Robert Hooke claimed (and proved) that the force required to stretch or compress a spring is directly proportional to the distance that it is away from <q>equilibrium</q> (the position the spring naturally rests in).
+      </p>
+    </introduction>
+    <subsubsection xml:id="subsubsec-Springs">
+      <title>Work: Springs</title>
+       <p>
+        We'll first look at the springs, since the force functions are relatively simple.
+      </p>
+      <example>
+        <introduction>
+          <p>
+            Calculate the work required to stretch or compress the following springs.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              A spring stretched to <m>0.1</m> m past its equilibrium position, where a Force of <m>F(x)=180x</m> is applied, measured in N.
+            </p> 
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>W \amp =\int_{x=0}^{x=0.1} 180x\;dx</mrow>
+                <mrow> \amp = 90x^2\bigg|_{x=0}^{x=0.1}</mrow>
+                <mrow> \amp = 0.9</mrow>
+              </md>
+              So the work required to stretch the spring is 0.9 J.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              A force of <m>81</m> N was applied to a spring to stretch it <m>0.8</m> m from its equilibrium position. Calculate the work required to stretch it <m>0.2</m> m further.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>F(x) \amp = \frac{81}{0.8} x </mrow>
+                <mrow> \amp = \frac{405x}{4}</mrow>
+                <mrow>W \amp = \int_{x=0.8}^{x=1} \frac{405x}{4}\;dx</mrow>
+                <mrow> \amp = \left(\frac{405x^2}{8}\right)\bigg|_{x=0.8}^{x=1}</mrow>
+                <mrow> \amp = \frac{405}{8} - \frac{162}{5}</mrow>
+                <mrow> \amp = \frac{729}{40}</mrow>
+              </md>
+              So the work required to stretch the spring is 18.225 J.
+            </p>
+          </solution>
+        </task>
+      </example>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-Pumping">
+      <title>Work: Pumping Problems</title>
+      <p>
+        
+      </p>
+    </subsubsection>
   </subsection>
 </section>
