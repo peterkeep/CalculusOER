@@ -210,6 +210,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-DefiningContinuity" class="internal"><span class="title">Defining Continuity</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-Discontinuities" class="internal"><span class="title">Discontinuities</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-IntermediateValueTheorem" class="internal"><span class="title">Intermediate Value Theorem</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Continuity.html#ex-Continuity" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -455,7 +456,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#subsec-SurfaceArea" class="internal"><span class="title">Integrals for Evaluating the Surface Area of a Solid</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Other Applications of Integrals</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Other Applications of Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Mass" class="internal"><span class="title">Physics Application: Mass</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Work" class="internal"><span class="title">Physics Application: Work</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Springs" class="internal"><span class="title">Work: Springs</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Pumping" class="internal"><span class="title">Work: Pumping Problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -890,7 +903,7 @@ A = \int_{x=a}^{x=b} \left(f(x)-g(x)\right)\;dx\text{.}
 </div></details>
 </div>
 <div class="autopermalink" data-description="Task 6.2.6.a"><a href="#subsec-AreaBetweenCurves-6-2" title="Copy heading and permalink for Task 6.2.6.a" aria-label="Copy heading and permalink for Task 6.2.6.a">🔗</a></div></article><article class="task exercise-like" id="subsec-AreaBetweenCurves-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="subsec-AreaBetweenCurves-6-3-1-1">The region bounded between the graphs <span class="process-math">\(y=sin(x)\)</span> and <span class="process-math">\(y=\cos(x)\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=\pi\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreaBetweenCurves-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-AreaBetweenCurves-6-3-1-1">The region bounded between the graphs <span class="process-math">\(y=\sin(x)\)</span> and <span class="process-math">\(y=\cos(x)\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=\pi\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreaBetweenCurves-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="subsec-AreaBetweenCurves-6-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
@@ -1086,59 +1099,193 @@ A = \int_{y=c}^{y=d} \left( f(y) - g(y)\right)\;dy\text{.}
 <div class="para" id="ex-AreaBetweenCurves-2-1">What are some changes/considerations that we need to make when we decide to set up our integral in terms of <span class="process-math">\(y\)</span> instead of <span class="process-math">\(x\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Exercise 2"><a href="#ex-AreaBetweenCurves-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ex-AreaBetweenCurves-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="introduction" id="ex-AreaBetweenCurves-3-1"><div class="para" id="ex-AreaBetweenCurves-3-1-1">Set up (and practice evaluating) an integral expression representing the area of each of the regions described below.<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div>
+<div class="introduction" id="ex-AreaBetweenCurves-3-1">
+<div class="para" id="ex-AreaBetweenCurves-3-1-1">Set up (and practice evaluating) an integral expression representing the area of each of the regions described below.<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-AreaBetweenCurves-3-1-2">The hint for each problem will open a graph of the region.<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
 <article class="task exercise-like" id="ex-AreaBetweenCurves-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ex-AreaBetweenCurves-3-2-1-1">The region bounded by the curves <span class="process-math">\(y=x^2+1\)</span> and <span class="process-math">\(y=4x+1\)</span> between <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-AreaBetweenCurves-3-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="solutions">
+<details id="ex-AreaBetweenCurves-3-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
 <iframe src="https://www.desmos.com/calculator/6bpwvbxk2w" id="ex-AreaBetweenCurves-3-2-2-1" width="360" height="540"></iframe><div class="autopermalink" data-description="Hint 3.a.1"><a href="#ex-AreaBetweenCurves-3-2-2" title="Copy heading and permalink for Hint 3.a.1" aria-label="Copy heading and permalink for Hint 3.a.1">🔗</a></div>
-</div></details></div>
+</div></details><details id="ex-AreaBetweenCurves-3-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-AreaBetweenCurves-3-2-3-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^{x=2} (4x+1)-(x^2+1)\;dx  = \frac{16}{3}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.a.1"><a href="#ex-AreaBetweenCurves-3-2-3" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" data-description="Task 3.a"><a href="#ex-AreaBetweenCurves-3-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ex-AreaBetweenCurves-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-AreaBetweenCurves-3-3-1-1">The region bounded by the curves <span class="process-math">\(y=x\)</span> and <span class="process-math">\(y=4-x\)</span> between <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-AreaBetweenCurves-3-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="solutions">
+<details id="ex-AreaBetweenCurves-3-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
 <iframe src="https://www.desmos.com/calculator/kie0khz2u9" id="ex-AreaBetweenCurves-3-3-2-1" width="360" height="540"></iframe><div class="autopermalink" data-description="Hint 3.b.1"><a href="#ex-AreaBetweenCurves-3-3-2" title="Copy heading and permalink for Hint 3.b.1" aria-label="Copy heading and permalink for Hint 3.b.1">🔗</a></div>
-</div></details></div>
+</div></details><details id="ex-AreaBetweenCurves-3-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-AreaBetweenCurves-3-3-3-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^{x=2} (4-x)-(x)\;dx = 4
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-3-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.b.1"><a href="#ex-AreaBetweenCurves-3-3-3" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" data-description="Task 3.b"><a href="#ex-AreaBetweenCurves-3-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><article class="task exercise-like" id="ex-AreaBetweenCurves-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-AreaBetweenCurves-3-4-1-1">The region bounded by the curves <span class="process-math">\(y=\sqrt{x}+2\)</span> and <span class="process-math">\(y=x\)</span> and the line <span class="process-math">\(x=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-AreaBetweenCurves-3-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="solutions">
+<details id="ex-AreaBetweenCurves-3-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
 <iframe src="https://www.desmos.com/calculator/upz6hfkaf1" id="ex-AreaBetweenCurves-3-4-2-1" width="360" height="540"></iframe><div class="autopermalink" data-description="Hint 3.c.1"><a href="#ex-AreaBetweenCurves-3-4-2" title="Copy heading and permalink for Hint 3.c.1" aria-label="Copy heading and permalink for Hint 3.c.1">🔗</a></div>
-</div></details></div>
+</div></details><details id="ex-AreaBetweenCurves-3-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-AreaBetweenCurves-3-4-3-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^{x=4}(\sqrt{x}+2) - (x)\;dx = \frac{16}{3}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-3-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.c.1"><a href="#ex-AreaBetweenCurves-3-4-3" title="Copy heading and permalink for Solution 3.c.1" aria-label="Copy heading and permalink for Solution 3.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" data-description="Task 3.c"><a href="#ex-AreaBetweenCurves-3-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div></article><article class="task exercise-like" id="ex-AreaBetweenCurves-3-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-AreaBetweenCurves-3-5-1-1">The region bounded by the curves <span class="process-math">\(y=\dfrac{2}{x^2+1}\)</span> and <span class="process-math">\(y=x^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-AreaBetweenCurves-3-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="solutions">
+<details id="ex-AreaBetweenCurves-3-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
 <iframe src="https://www.desmos.com/calculator/lqkhjc4ql5" id="ex-AreaBetweenCurves-3-5-2-1" width="360" height="540"></iframe><div class="autopermalink" data-description="Hint 3.d.1"><a href="#ex-AreaBetweenCurves-3-5-2" title="Copy heading and permalink for Hint 3.d.1" aria-label="Copy heading and permalink for Hint 3.d.1">🔗</a></div>
-</div></details></div>
+</div></details><details id="ex-AreaBetweenCurves-3-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-AreaBetweenCurves-3-5-3-1">
+<div class="para">This one has annoying limits of integration, and so evaluating the integral is more annoying than it is worth.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=-\sqrt{\frac{\sqrt{5}-1}{2}}}^{x=\sqrt{\frac{\sqrt{5}-1}{2}}}\left(\frac{1}{x^2+1}\right)-(x^2)\;dx
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-3-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.d.1"><a href="#ex-AreaBetweenCurves-3-5-3" title="Copy heading and permalink for Solution 3.d.1" aria-label="Copy heading and permalink for Solution 3.d.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" data-description="Task 3.d"><a href="#ex-AreaBetweenCurves-3-5" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 3"><a href="#ex-AreaBetweenCurves-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ex-AreaBetweenCurves-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-AreaBetweenCurves-4-1"><div class="para" id="ex-AreaBetweenCurves-4-1-1">Set up and evaluate an integral representing the area of each of the regions described below. Explain whether you chose to integrate with respect to <span class="process-math">\(x\)</span> or <span class="process-math">\(y\text{,}\)</span> and why you made that choice.<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="ex-AreaBetweenCurves-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ex-AreaBetweenCurves-4-2-1-1">The region bounded by the curves <span class="process-math">\(y=\sin(x)\)</span> and <span class="process-math">\(y=\cos(x)\)</span> and the line <span class="process-math">\(y=0\)</span> between <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=\frac{\pi}{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-AreaBetweenCurves-4-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<iframe src="https://www.desmos.com/calculator/lg4wcxz4ug" id="ex-AreaBetweenCurves-4-2-2-1" width="360" height="540"></iframe><div class="autopermalink" data-description="Hint 4.a.1"><a href="#ex-AreaBetweenCurves-4-2-2" title="Copy heading and permalink for Hint 4.a.1" aria-label="Copy heading and permalink for Hint 4.a.1">🔗</a></div>
-</div></details></div>
+<div class="solutions">
+<details id="ex-AreaBetweenCurves-4-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<iframe src="https://www.desmos.com/calculator/2cowv5uc6s" id="ex-AreaBetweenCurves-4-2-2-1" width="360" height="540"></iframe><div class="autopermalink" data-description="Hint 4.a.1"><a href="#ex-AreaBetweenCurves-4-2-2" title="Copy heading and permalink for Hint 4.a.1" aria-label="Copy heading and permalink for Hint 4.a.1">🔗</a></div>
+</div></details><details id="ex-AreaBetweenCurves-4-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-AreaBetweenCurves-4-2-3-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^{x=\frac{\pi}{4}} \sin(x)\;dx + \int_{x=\frac{\pi}{4}}^{x=\frac{\pi}{2}}\cos(x)\;dx
+\end{equation*}
+</div>
+<div class="para">Or, alternatively:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{y=0}^{y=\frac{\sqrt{2}}{2}} \cos^{-1}(y)-\sin^{-1}(y)\;dy\text{.}
+\end{equation*}
+</div>
+<div class="para">Admittedly, it is annoying to evaluate this in terms of <span class="process-math">\(y\text{,}\)</span> even though it is satisfying to have only a single integral.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-4-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-AreaBetweenCurves-4-2-3-2">The area itself is <span class="process-math">\(2-\sqrt{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-4-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.a.1"><a href="#ex-AreaBetweenCurves-4-2-3" title="Copy heading and permalink for Solution 4.a.1" aria-label="Copy heading and permalink for Solution 4.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" data-description="Task 4.a"><a href="#ex-AreaBetweenCurves-4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="ex-AreaBetweenCurves-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-AreaBetweenCurves-4-3-1-1">The region bounded by the curves <span class="process-math">\(y=x\)</span> and <span class="process-math">\(y=x^2-2\)</span> and the line <span class="process-math">\(y=0\)</span> in the first quadrant.<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-AreaBetweenCurves-4-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="solutions">
+<details id="ex-AreaBetweenCurves-4-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
 <iframe src="https://www.desmos.com/calculator/ppypwkyscy" id="ex-AreaBetweenCurves-4-3-2-1" width="360" height="540"></iframe><div class="autopermalink" data-description="Hint 4.b.1"><a href="#ex-AreaBetweenCurves-4-3-2" title="Copy heading and permalink for Hint 4.b.1" aria-label="Copy heading and permalink for Hint 4.b.1">🔗</a></div>
-</div></details></div>
+</div></details><details id="ex-AreaBetweenCurves-4-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-AreaBetweenCurves-4-3-3-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^{x=\sqrt{2}} x\;dx + \int_{x=\sqrt{2}}^{x=2} x-(x^2-2)\;dx
+\end{equation*}
+</div>
+<div class="para">Or alternatively:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{y=0}^{y=2}\sqrt{y+2}-y\;dy\text{.}
+\end{equation*}
+</div>
+<div class="para">In either case, the area is <span class="process-math">\(\dfrac{10-4\sqrt{2}}{3}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-4-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.b.1"><a href="#ex-AreaBetweenCurves-4-3-3" title="Copy heading and permalink for Solution 4.b.1" aria-label="Copy heading and permalink for Solution 4.b.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" data-description="Task 4.b"><a href="#ex-AreaBetweenCurves-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div></article><article class="task exercise-like" id="ex-AreaBetweenCurves-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-AreaBetweenCurves-4-4-1-1">The region bounded by the curves <span class="process-math">\(y=x\)</span> and <span class="process-math">\(y=x^2-2\)</span> and the line <span class="process-math">\(y=0\)</span> in the third quadrant.<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-AreaBetweenCurves-4-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="solutions">
+<details id="ex-AreaBetweenCurves-4-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
 <iframe src="https://www.desmos.com/calculator/u4knulzafb" id="ex-AreaBetweenCurves-4-4-2-1" width="360" height="540"></iframe><div class="autopermalink" data-description="Hint 4.c.1"><a href="#ex-AreaBetweenCurves-4-4-2" title="Copy heading and permalink for Hint 4.c.1" aria-label="Copy heading and permalink for Hint 4.c.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 4.c"><a href="#ex-AreaBetweenCurves-4-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div></article><article class="task exercise-like" id="ex-AreaBetweenCurves-4-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="ex-AreaBetweenCurves-4-5-1-1">The region bounded by the curves <span class="process-math">\(y=3x\text{,}\)</span> <span class="process-math">\(y=4-x^2\text{,}\)</span> and <span class="process-math">\(y=x^2\)</span> in the first quadrant.<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></details><details id="ex-AreaBetweenCurves-4-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-AreaBetweenCurves-4-4-3-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=-\sqrt{2}}^{x=-1} 0-(x^2-2)\;dx + \int_{x=-1}^{x=0} 0-(x)\;dx
+\end{equation*}
 </div>
-<div class="solutions"><details id="ex-AreaBetweenCurves-4-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para">Or, alternatively:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{y=-1}^{y=0} y-\sqrt{y+2}\;dy    \text{.}
+\end{equation*}
+</div>
+<div class="para">In either case, the area is <span class="process-math">\(\dfrac{4\sqrt{2}}{3}-\dfrac{7}{6}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-4-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.c.1"><a href="#ex-AreaBetweenCurves-4-4-3" title="Copy heading and permalink for Solution 4.c.1" aria-label="Copy heading and permalink for Solution 4.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 4.c"><a href="#ex-AreaBetweenCurves-4-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div></article><article class="task exercise-like" id="ex-AreaBetweenCurves-4-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ex-AreaBetweenCurves-4-5-1-1">The region bounded by the curves <span class="process-math">\(y=3x\text{,}\)</span> <span class="process-math">\(y=4-x^2\text{,}\)</span> and <span class="process-math">\(y=x^2\)</span> in the first quadrant with <span class="process-math">\(0\leq x \leq \sqrt{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-AreaBetweenCurves-4-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
 <iframe src="https://www.desmos.com/calculator/r2gchjvtbn" id="ex-AreaBetweenCurves-4-5-2-1" width="360" height="540"></iframe><div class="autopermalink" data-description="Hint 4.d.1"><a href="#ex-AreaBetweenCurves-4-5-2" title="Copy heading and permalink for Hint 4.d.1" aria-label="Copy heading and permalink for Hint 4.d.1">🔗</a></div>
-</div></details></div>
+</div></details><details id="ex-AreaBetweenCurves-4-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-AreaBetweenCurves-4-5-3-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^{x=1} (3x)-(x^2)\;dx + \int_{x=1}^{x=\sqrt{2}} (4-x^2)-(x^2)\;dx
+\end{equation*}
+</div>
+<div class="para">Or, alternatively:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{y=0}^{y=2} \sqrt{y}-\left(\frac{y}{3}\right)\;dy + \int_{y=2}^{y=3}\sqrt{4-y} - \left(\frac{y}{3}\right)\;dy\text{.}
+\end{equation*}
+</div>
+<div class="para">In either case, the area is <span class="process-math">\(\dfrac{8\sqrt{2}}{3} - \dfrac{13}{6}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-4-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.d.1"><a href="#ex-AreaBetweenCurves-4-5-3" title="Copy heading and permalink for Solution 4.d.1" aria-label="Copy heading and permalink for Solution 4.d.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" data-description="Task 4.d"><a href="#ex-AreaBetweenCurves-4-5" title="Copy heading and permalink for Task 4.d" aria-label="Copy heading and permalink for Task 4.d">🔗</a></div></article><article class="task exercise-like" id="ex-AreaBetweenCurves-4-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="ex-AreaBetweenCurves-4-6-1-1">The region bounded by the curves <span class="process-math">\(y=\sqrt{32x}\text{,}\)</span> <span class="process-math">\(y=2x^2\text{,}\)</span> and  <span class="process-math">\(y=-4x+6\)</span> in the first quadrant.<div class="autopermalink" data-description="Paragraph"><a href="#ex-AreaBetweenCurves-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>

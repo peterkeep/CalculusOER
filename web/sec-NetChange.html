@@ -210,6 +210,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-DefiningContinuity" class="internal"><span class="title">Defining Continuity</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-Discontinuities" class="internal"><span class="title">Discontinuities</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-IntermediateValueTheorem" class="internal"><span class="title">Intermediate Value Theorem</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Continuity.html#ex-Continuity" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -455,7 +456,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#subsec-SurfaceArea" class="internal"><span class="title">Integrals for Evaluating the Surface Area of a Solid</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Other Applications of Integrals</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Other Applications of Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Mass" class="internal"><span class="title">Physics Application: Mass</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Work" class="internal"><span class="title">Physics Application: Work</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Springs" class="internal"><span class="title">Work: Springs</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Pumping" class="internal"><span class="title">Work: Pumping Problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -958,15 +971,67 @@ F(t) = F(a) + \int_{x=a}^{x=t} F'(x)\;dx
 <article class="task exercise-like" id="ex-NetChange-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ex-NetChange-2-2-1-1">Do you expect the displacement of the object from <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t=7\)</span> to be positive, negative, or 0?<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-NetChange-2-2-2-1">Displacement will likely be negative, since it looks like the size of the integral between <span class="process-math">\(t=0\)</span> and <span class="process-math">\(t=4\)</span> is larger than the size of the integral from <span class="process-math">\(t=4\)</span> up to <span class="process-math">\(t=7\text{.}\)</span> Another way to say this is that there is more negative velocity accumulated than positive velocity.<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.a.1"><a href="#ex-NetChange-2-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 2.a"><a href="#ex-NetChange-2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-NetChange-2-3-1-1">Write two different expressions that represent the total displacement of the object from <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t=7\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-2-3-2-1">
+<div class="para">There are plenty of ways to do this! Here are two:</div>
+<ol class="lower-alpha lower-alpha-level-1" id="ex-NetChange-2-3-2-1-1">
+<li id="ex-NetChange-2-3-2-1-1-1">
+<div class="para" id="ex-NetChange-2-3-2-1-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle \int_{t=0}^{t=7} v(t)\;dt\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-2-3-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.a"><a href="#ex-NetChange-2-3-2-1-1-1" title="Copy heading and permalink for Item 2.a" aria-label="Copy heading and permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="ex-NetChange-2-3-2-1-1-2">
+<div class="para" id="ex-NetChange-2-3-2-1-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle \int_{t=0}^{t=4} v(t)\;dt + \int_{t=4}^{t=7} v(t)\;dt\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-2-3-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.b"><a href="#ex-NetChange-2-3-2-1-1-2" title="Copy heading and permalink for Item 2.b" aria-label="Copy heading and permalink for Item 2.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.b.1"><a href="#ex-NetChange-2-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 2.b"><a href="#ex-NetChange-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-NetChange-2-4-1-1">Do you expect the distance traveled by the object from <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t=7\)</span> to be positive, negative, or 0?<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-NetChange-2-4-2-1">Distance is always non-negative, and since the velocity was not just constant at 0 (with no movement), then we expect the distance to be positive. It is the integral of speed, which is <span class="process-math">\(|v(t)|\text{,}\)</span> velocity without taking into account the direction.<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.c.1"><a href="#ex-NetChange-2-4-2" title="Copy heading and permalink for Solution 2.c.1" aria-label="Copy heading and permalink for Solution 2.c.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 2.c"><a href="#ex-NetChange-2-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-NetChange-2-5-1-1">Write two different expressions that represent the total distance traveled by the object from <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t=7\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-2-5-2-1">
+<div class="para">There are plenty of ways to do this! Here are two:</div>
+<ol class="lower-alpha lower-alpha-level-1" id="ex-NetChange-2-5-2-1-1">
+<li id="ex-NetChange-2-5-2-1-1-1">
+<div class="para" id="ex-NetChange-2-5-2-1-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle \int_{t=0}^{t=7} |v(t)|\;dt\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-2-5-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.a"><a href="#ex-NetChange-2-5-2-1-1-1" title="Copy heading and permalink for Item 2.a" aria-label="Copy heading and permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="ex-NetChange-2-5-2-1-1-2">
+<div class="para" id="ex-NetChange-2-5-2-1-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle -\int_{t=0}^{t=4} v(t)\;dt  \int_{t=4}^{t=7} v(t)\;dt\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-2-5-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.b"><a href="#ex-NetChange-2-5-2-1-1-2" title="Copy heading and permalink for Item 2.b" aria-label="Copy heading and permalink for Item 2.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.d.1"><a href="#ex-NetChange-2-5-2" title="Copy heading and permalink for Solution 2.d.1" aria-label="Copy heading and permalink for Solution 2.d.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 2.d"><a href="#ex-NetChange-2-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 2"><a href="#ex-NetChange-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ex-NetChange-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-NetChange-3-1"><div class="para logical" id="ex-NetChange-3-1-1">
 <div class="para">Let’s consider an animal running along a straight path with the velocity function:</div>
@@ -983,30 +1048,139 @@ v(t) \amp = \frac{t^4}{10} - t^3 + \frac{27t^2}{10} - \frac{9t}{5}\\
 <article class="task exercise-like" id="ex-NetChange-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ex-NetChange-3-2-1-1">What is the total displacement of the animal on the time interval <span class="process-math">\([0,1]\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-3-2-2-1">
+<div class="displaymath process-math" id="ex-NetChange-3-2-2-1-1">
+\begin{align*}
+\int_{t=0}^{t=1} v(t)\;dt \amp = \int_{t=0}^{t=1} \frac{t^4}{10} - t^3 + \frac{27t^2}{10} - \frac{9t}{5} \;dt\\
+\amp\left( \frac{t^5}{50} - \frac{t^4}{4}+\frac{27t^3}{30} - \frac{9t^2}{10}\right)\bigg|_{t=0}^{t=1}\\
+\amp = -\frac{23}{100}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.a.1"><a href="#ex-NetChange-3-2-2" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 3.a"><a href="#ex-NetChange-3-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-NetChange-3-3-1-1">What is the total displacement of the animal on the time interval <span class="process-math">\([1,3]\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-3-3-2-1">
+<div class="displaymath process-math" id="ex-NetChange-3-3-2-1-1">
+\begin{align*}
+\int_{t=1}^{t=3} v(t)\;dt \amp = \int_{t=1}^{t=3} \frac{t^4}{10} - t^3 + \frac{27t^2}{10} - \frac{9t}{5} \;dt\\
+\amp\left( \frac{t^5}{50} - \frac{t^4}{4}+\frac{27t^3}{30} - \frac{9t^2}{10}\right)\bigg|_{t=1}^{t=3}\\
+\amp = \frac{26}{25}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.b.1"><a href="#ex-NetChange-3-3-2" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 3.b"><a href="#ex-NetChange-3-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-NetChange-3-4-1-1">What is the total displacement of the animal on the time interval <span class="process-math">\([3,6]\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-3-4-2-1">
+<div class="displaymath process-math" id="ex-NetChange-3-4-2-1-1">
+\begin{align*}
+\int_{t=3}^{t=6} v(t)\;dt \amp = \int_{t=3}^{t=6} \frac{t^4}{10} - t^3 + \frac{27t^2}{10} - \frac{9t}{5} \;dt\\
+\amp\left( \frac{t^5}{50} - \frac{t^4}{4}+\frac{27t^3}{30} - \frac{9t^2}{10}\right)\bigg|_{t=3}^{t=6}\\
+\amp = -\frac{729}{100}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-3-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.c.1"><a href="#ex-NetChange-3-4-2" title="Copy heading and permalink for Solution 3.c.1" aria-label="Copy heading and permalink for Solution 3.c.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 3.c"><a href="#ex-NetChange-3-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-3-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-NetChange-3-5-1-1">What is the total displacement of the animal on the time interval <span class="process-math">\([0,6]\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-3-5-2-1">
+<div class="para">We can integrate from <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t=6\text{,}\)</span> or just add up the previous displacements.</div>
+<div class="displaymath process-math" id="ex-NetChange-3-5-2-1-3">
+\begin{align*}
+\int_{t=0}^{t=6} v(t)\;dt \amp = \int_{t=0}^{t=6} \frac{t^4}{10} - t^3 + \frac{27t^2}{10} - \frac{9t}{5} \;dt\\
+\amp\left( \frac{t^5}{50} - \frac{t^4}{4}+\frac{27t^3}{30} - \frac{9t^2}{10}\right)\bigg|_{t=0}^{t=6}\\
+\amp = -\frac{162}{25}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.d.1"><a href="#ex-NetChange-3-5-2" title="Copy heading and permalink for Solution 3.d.1" aria-label="Copy heading and permalink for Solution 3.d.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 3.d"><a href="#ex-NetChange-3-5" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-3-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="ex-NetChange-3-6-1-1">What is the total distance traveled by the animal on the time interval <span class="process-math">\([0,6]\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-3-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-3-6-2-1">
+<div class="displaymath process-math" id="ex-NetChange-3-6-2-1-1">
+\begin{align*}
+\int_{t=0}^{t=6} |v(t)|\;dt  \amp = \left|\int_{t=0}^{t=1} v(t)\;dt\right|\\
+\amp + \left|\int_{t=1}^{t=3} v(t)\;dt\right|\\
+\amp + \left|\int_{t=3}^{t=6} v(t)\;dt\right|\\
+\amp = \frac{214}{25}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.e.1"><a href="#ex-NetChange-3-6-2" title="Copy heading and permalink for Solution 3.e.1" aria-label="Copy heading and permalink for Solution 3.e.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 3.e"><a href="#ex-NetChange-3-6" title="Copy heading and permalink for Task 3.e" aria-label="Copy heading and permalink for Task 3.e">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-3-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="ex-NetChange-3-7-1-1">Write a short summary of the animal’s movement, including notes about direction, speed, and where the animal travels.<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-3-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-NetChange-3-7-2-1">From <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t=1\text{,}\)</span> the animal is moving backwards, slowly. It speeds up until around <span class="process-math">\(t\approx 0.4\)</span> and then slows down until it stops and turns around at <span class="process-math">\(t-1\text{.}\)</span> From then until <span class="process-math">\(t=3\)</span> it moves forwards. It speeds up until around <span class="process-math">\(t\approx 2.1\text{,}\)</span> and then slows down until it stops to turn back around at <span class="process-math">\(t=3\text{.}\)</span> Then, it speeds up quickly in the negative direction until <span class="process-math">\(t=\approx 5\)</span> when it begins to slow down to turn around at <span class="process-math">\(t=6\text{.}\)</span> It accelerates very quickly in the positive direction until <span class="process-math">\(t=7\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-3-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.f.1"><a href="#ex-NetChange-3-7-2" title="Copy heading and permalink for Solution 3.f.1" aria-label="Copy heading and permalink for Solution 3.f.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 3.f"><a href="#ex-NetChange-3-7" title="Copy heading and permalink for Task 3.f" aria-label="Copy heading and permalink for Task 3.f">🔗</a></div></article><div class="autopermalink" data-description="Exercise 3"><a href="#ex-NetChange-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ex-NetChange-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-NetChange-4-1"><div class="para" id="ex-NetChange-4-1-1">Consider an object with velocity function <span class="process-math">\(v(t)=t^2-4t+2\)</span> on the interval <span class="process-math">\([0,100]\)</span> with the initial position <span class="process-math">\(s(0)=3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="ex-NetChange-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ex-NetChange-4-2-1-1">Determine the position function, <span class="process-math">\(s(t)\text{,}\)</span> for <span class="process-math">\(0\leq t\leq 100\)</span> using the <a href="sec-NetChange.html#thm-FuturePosition" class="xref" data-knowl="./knowl/xref/thm-FuturePosition.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.1.5: Future Position of an Object">Future Position of an Object</a>.<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-4-2-2-1">
+<div class="displaymath process-math" id="ex-NetChange-4-2-2-1-1">
+\begin{align*}
+s(t) \amp = s(0) + \int_{x=0}^{x=t} v(x)\;dx \\
+\amp = 3 + \int_{x=0}^{x=t} x^2-4x+2\;dx\\
+\amp = 3 + \left(\frac{x^3}{3}-2x^2+2x\right)|_{x=0}^{x=t}\\
+\amp =\frac{t^3}{3}-2t^2+2t+3 \amp \text{on the interval }[0,100]
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.a.1"><a href="#ex-NetChange-4-2-2" title="Copy heading and permalink for Solution 4.a.1" aria-label="Copy heading and permalink for Solution 4.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.a"><a href="#ex-NetChange-4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-NetChange-4-3-1-1">Determine the position function, <span class="process-math">\(s(t)\text{,}\)</span> for <span class="process-math">\(0\leq t\leq 100\)</span> using the <a href="sec-IndefiniteIntegrals.html#strat-InitialValueProblems" class="xref" data-knowl="./knowl/xref/strat-InitialValueProblems.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Solving Initial Value Problems">Solving Initial Value Problems</a> strategy.<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-4-3-2-1">
+<div class="para">We’ll find the family of antiderivatives, of which <span class="process-math">\(s(t)\)</span> is one.</div>
+<div class="displaymath process-math" id="ex-NetChange-4-3-2-1-2">
+\begin{align*}
+\int v(t)\;dt \amp = \int t^2-4t+2 \; dt  \\
+\amp = \frac{t^3}{3}-2t^2+2t + C
+\end{align*}
+</div>
+<div class="para">Now, <span class="process-math">\(s(t)\)</span> is the antiderivative where <span class="process-math">\(s(0)=3\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="ex-NetChange-4-3-2-1-5">
+\begin{align*}
+3 \amp \frac{0^3}{3}-2(0)^2 + 2(0)+C\\
+3 \amp = C
+\end{align*}
+</div>
+<div class="para">So <span class="process-math">\(s(t) =\dfrac{t^3}{3}-2t^2+2t +3\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.b.1"><a href="#ex-NetChange-4-3-2" title="Copy heading and permalink for Solution 4.b.1" aria-label="Copy heading and permalink for Solution 4.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.b"><a href="#ex-NetChange-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-NetChange-4-4-1-1">Compare the results from both methods. Explain why these are equivalent.<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1016,28 +1190,133 @@ v(t) \amp = \frac{t^4}{10} - t^3 + \frac{27t^2}{10} - \frac{9t}{5}\\
 <article class="task exercise-like" id="ex-NetChange-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ex-NetChange-5-2-1-1">Determine the velocity function, <span class="process-math">\(v(t)\text{,}\)</span> for <span class="process-math">\(t\geq 0\)</span> using the <a href="sec-NetChange.html#thm-FuturePosition" class="xref" data-knowl="./knowl/xref/thm-FuturePosition.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.1.5: Future Position of an Object">Future Position of an Object</a>.<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-5-2-2-1">
+<div class="displaymath process-math" id="ex-NetChange-5-2-2-1-1">
+\begin{align*}
+a(t) \amp = v(0)+\int_{x=0}^{x=t} a(x)\;dx\\
+\amp = 5 + \int_{x=0}^{x=t} \left(x+\sin(2\pi x)\right)\;dx\\
+\amp = 5 + \left(\frac{x^2}{2} - \frac{\cos(2\pi x)}{2\pi} \right)\bigg|_{x=0}^{x=t}\\
+\amp = \frac{t^2}{2}- \frac{\cos(2\pi t)}{2\pi} + 5 + \frac{1}{2\pi} \amp \text{for } t\geq 0
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.a.1"><a href="#ex-NetChange-5-2-2" title="Copy heading and permalink for Solution 5.a.1" aria-label="Copy heading and permalink for Solution 5.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 5.a"><a href="#ex-NetChange-5-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-NetChange-5-3-1-1">Determine the velocity function, <span class="process-math">\(v(t)\text{,}\)</span> for <span class="process-math">\(t\geq 0\)</span> using the <a href="sec-IndefiniteIntegrals.html#strat-InitialValueProblems" class="xref" data-knowl="./knowl/xref/strat-InitialValueProblems.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Solving Initial Value Problems">Solving Initial Value Problems</a> strategy.<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-5-3-2-1">
+<div class="displaymath process-math" id="ex-NetChange-5-3-2-1-1">
+\begin{align*}
+\int a(t)\;dt \amp = \int t+\sin(2\pi t)\;dt  \\
+\amp  =  \frac{t^2}{2}- \frac{\cos(2\pi t)}{2\pi} +C 
+\end{align*}
+</div>
+<div class="para">We know that <span class="process-math">\(v(t)\)</span> is one of these antiderivatives, so we can use <span class="process-math">\(v(0)=5\)</span> to solve for <span class="process-math">\(C\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="ex-NetChange-5-3-2-1-5">
+\begin{align*}
+5 \amp = \frac{0^2}{2}-\frac{\cos(0)}{2\pi} + C \\
+5 + \frac{1}{2\pi} \amp = C
+\end{align*}
+</div>
+<div class="para">So <span class="process-math">\(v(t)=\dfrac{t^2}{2}- \dfrac{\cos(2\pi t)}{2\pi} + 5 + \dfrac{1}{2\pi}\)</span> for <span class="process-math">\(t\geq 0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.b.1"><a href="#ex-NetChange-5-3-2" title="Copy heading and permalink for Solution 5.b.1" aria-label="Copy heading and permalink for Solution 5.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 5.b"><a href="#ex-NetChange-5-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-NetChange-5-4-1-1">Can you obtain the position function, <span class="process-math">\(s(t)\text{?}\)</span> Explain why or why not, based on the information given.<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-NetChange-5-4-2-1">No, we cannot obtain the position function <span class="process-math">\(s(t)\text{,}\)</span> since we do not know an initial (or any) position. We can only obtain the family of possible position functions.<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.c.1"><a href="#ex-NetChange-5-4-2" title="Copy heading and permalink for Solution 5.c.1" aria-label="Copy heading and permalink for Solution 5.c.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 5.c"><a href="#ex-NetChange-5-4" title="Copy heading and permalink for Task 5.c" aria-label="Copy heading and permalink for Task 5.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise 5"><a href="#ex-NetChange-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="ex-NetChange-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-NetChange-6-1"><div class="para" id="ex-NetChange-6-1-1">During a brake test for a heavy truck, the truck decelerates from an initial velocity of 88 ft/s with the acceleration function <span class="process-math">\(a(t) = -17\)</span> ft/s². Assume that the initial position of the truck is <span class="process-math">\(s(0)=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="ex-NetChange-6-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="ex-NetChange-6-2-1-1">Find the velocity function for the truck.<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-6-2-2-1">
+<div class="displaymath process-math" id="ex-NetChange-6-2-2-1-1">
+\begin{align*}
+v(t) \amp = v(0)+\int_{x=0}^{x=t} a(x)\;dx \\
+\amp 88 + \int_{x=0}^{x=t} -17\;dx\\
+\amp 88-17t
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.a.1"><a href="#ex-NetChange-6-2-2" title="Copy heading and permalink for Solution 6.a.1" aria-label="Copy heading and permalink for Solution 6.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 6.a"><a href="#ex-NetChange-6-2" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-NetChange-6-3-1-1">When does the truck stop? In this situation, the truck won’t have a negative velocity (since it’s just braking and not eventually going in reverse). What time interval is the velocity function relevant on?<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-6-3-2-1">
+<div class="para">The truck stops when <span class="process-math">\(v(t)=0\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="ex-NetChange-6-3-2-1-2">
+\begin{align*}
+0 \amp = 88-17t \\
+t \amp \frac{88}{17}
+\end{align*}
+</div>
+<div class="para">This means that the velocity function is only relevant on the interval <span class="process-math">\(\left[0, \frac{88}{17}\right]\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.b.1"><a href="#ex-NetChange-6-3-2" title="Copy heading and permalink for Solution 6.b.1" aria-label="Copy heading and permalink for Solution 6.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 6.b"><a href="#ex-NetChange-6-3" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-6-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-NetChange-6-4-1-1">What is the total displacement of the truck on this time interval?<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-NetChange-6-4-2-1">
+<div class="displaymath process-math" id="ex-NetChange-6-4-2-1-1">
+\begin{align*}
+\int_{t=0}^{t=88/17} v(t)\;dt \amp = \int_{t=0}^{t=88/17} 88-17t\;dt\\
+\amp = \left(88t-\frac{17t^2}{2}\right)\bigg|_{t=0}^{t=88/17}\\
+\amp \frac{3872}{17}
+\end{align*}
+</div>
+<div class="para">So the truck moved approximately <span class="process-math">\(227.76\)</span> feet.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-6-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.c.1"><a href="#ex-NetChange-6-4-2" title="Copy heading and permalink for Solution 6.c.1" aria-label="Copy heading and permalink for Solution 6.c.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 6.c"><a href="#ex-NetChange-6-4" title="Copy heading and permalink for Task 6.c" aria-label="Copy heading and permalink for Task 6.c">🔗</a></div></article><article class="task exercise-like" id="ex-NetChange-6-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-NetChange-6-5-1-1">Safety standards say that for a truck like this, it needs to be able to stop (from a speed of 88ft/s) in, at most, 200 feet.<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="ex-NetChange-6-5-1-2">Do we need to make changes to the braking mechanism, in order to have the acceleration function change? If so, what does the acceleration need to be (assuming it is constant and we are just replacing it with a new negative number)?<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-6-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-NetChange-6-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-NetChange-6-5-2-1">Note that for an acceleration function <span class="process-math">\(a(t) = -k\)</span> for some positive number <span class="process-math">\(k\text{,}\)</span> the velocity function is <span class="process-math">\(v(t)=88-kt\)</span> and the truck stops at <span class="process-math">\(t=\frac{88}{k}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-6-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-NetChange-6-5-2-2">
+<div class="para">Now we can set the displacement integral equal to 200 in order to solve for <span class="process-math">\(k\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="ex-NetChange-6-5-2-2-2">
+\begin{align*}
+200 \amp = \int_{t=0}^{t=88/k} 88-kt\;dt \\
+\amp = \left( 88t - \frac{kt^2}{2}\right)\bigg|_{t=0}^{t=88/k}\\
+\amp = \frac{88^2}{k} - \frac{88^2}{2k}\\
+200 \amp = \frac{88^2}{2k} \\
+400k \amp 88^2 \\
+k \amp = \frac{484}{25} = 19.36 
+\end{align*}
+</div>
+<div class="para">So the truck needs to have an acceleration function of <span class="process-math">\(a(t) = -19.36\)</span> ft/s<span class="process-math">\(^2\)</span> or more negative for it to stop in time.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-NetChange-6-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.d.1"><a href="#ex-NetChange-6-5-2" title="Copy heading and permalink for Solution 6.d.1" aria-label="Copy heading and permalink for Solution 6.d.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 6.d"><a href="#ex-NetChange-6-5" title="Copy heading and permalink for Task 6.d" aria-label="Copy heading and permalink for Task 6.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 6"><a href="#ex-NetChange-6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div></article><div class="autopermalink" data-description="Practice Problems"><a href="#ex-NetChange" title="Copy heading and permalink for Practice Problems" aria-label="Copy heading and permalink for Practice Problems">🔗</a></div></section><div class="autopermalink" data-description="Section 6.1: Integrals as Net Change"><a href="#sec-NetChange" title="Copy heading and permalink for Section 6.1: Integrals as Net Change" aria-label="Copy heading and permalink for Section 6.1: Integrals as Net Change">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-ApplicationsIntegrals.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-AreaBetweenCurves.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

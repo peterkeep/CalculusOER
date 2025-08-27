@@ -210,6 +210,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-DefiningContinuity" class="internal"><span class="title">Defining Continuity</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-Discontinuities" class="internal"><span class="title">Discontinuities</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-IntermediateValueTheorem" class="internal"><span class="title">Intermediate Value Theorem</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Continuity.html#ex-Continuity" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -455,7 +456,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#subsec-SurfaceArea" class="internal"><span class="title">Integrals for Evaluating the Surface Area of a Solid</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Other Applications of Integrals</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Other Applications of Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Mass" class="internal"><span class="title">Physics Application: Mass</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Work" class="internal"><span class="title">Physics Application: Work</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Springs" class="internal"><span class="title">Work: Springs</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Pumping" class="internal"><span class="title">Work: Pumping Problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -927,15 +940,115 @@ f(x) = \begin{cases}
 <div class="autopermalink" data-description="Subsection: Discontinuities"><a href="#subsec-Discontinuities" title="Copy heading and permalink for Subsection: Discontinuities" aria-label="Copy heading and permalink for Subsection: Discontinuities">🔗</a></div></section><section class="subsection" id="subsec-IntermediateValueTheorem"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Intermediate Value Theorem</span>
 </h3>
+<div class="para" id="subsec-IntermediateValueTheorem-2">Let’s introduce one of the biggest results coming from continuity of functions that exists. We’re going to simply state the result and then discuss it, instead of building up towards it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="thm-IVT"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.6.7</span><span class="period">.</span><span class="space"> </span><span class="title">Intermediate Value Theorem.</span>
 </h4>
 <div class="para" id="thm-IVT-2-1">If <span class="process-math">\(f(x)\)</span> is a function that is continuous on <span class="process-math">\([a,b]\)</span> with <span class="process-math">\(f(a)\neq f(b)\)</span> and <span class="process-math">\(L\)</span> is any real number between <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(f(b)\)</span> (either <span class="process-math">\(f(a)\lt L \lt f(b)\)</span> or <span class="process-math">\(f(b) \lt L \lt f(a)\)</span>), then there exists some <span class="process-math">\(c\)</span> between <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> (<span class="process-math">\(a\lt c \lt b\)</span>) such that <span class="process-math">\(f(c)=L\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-IVT-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 1.6.7: Intermediate Value Theorem"><a href="#thm-IVT" title="Copy heading and permalink for Theorem 1.6.7: Intermediate Value Theorem" aria-label="Copy heading and permalink for Theorem 1.6.7: Intermediate Value Theorem">🔗</a></div></article><aside class="aside aside-like" id="subsec-IntermediateValueTheorem-3"><div class="para" id="subsec-IntermediateValueTheorem-3-1">This theorem was stated as early as the 5th century BCE by Bryson of Heraclea. Back then, a really interesting problem was related to "squaring the circle." That is, given a circle with some measurable radius, can we construct a square with equal area? This is obviously true, in that we can just use a square with the side length <span class="process-math">\(r\sqrt{\pi}\text{.}\)</span> What we typically mean by "construct," though, is to create this square using only a compass and straightedge (a ruler without length markings) and only a finite number of steps. This was finally proven to be impossible in 1882, approximately 2300 years later.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Theorem 1.6.7: Intermediate Value Theorem"><a href="#thm-IVT" title="Copy heading and permalink for Theorem 1.6.7: Intermediate Value Theorem" aria-label="Copy heading and permalink for Theorem 1.6.7: Intermediate Value Theorem">🔗</a></div></article><aside class="aside aside-like" id="subsec-IntermediateValueTheorem-4"><div class="para" id="subsec-IntermediateValueTheorem-4-1">This theorem was stated as early as the 5th century BCE by Bryson of Heraclea. Back then, a really interesting problem was related to "squaring the circle." That is, given a circle with some measurable radius, can we construct a square with equal area? This is obviously true, in that we can just use a square with the side length <span class="process-math">\(r\sqrt{\pi}\text{.}\)</span> What we typically mean by "construct," though, is to create this square using only a compass and straightedge (a ruler without length markings) and only a finite number of steps. This was finally proven to be impossible in 1882, approximately 2300 years later.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-IntermediateValueTheorem-3-2">Bryson of Heraclea knew that the square itself existed (even if he couldn’t construct it) because he was able to find a circle with area less than the square (by inscribing a circle inside of the square) and a circle with area greater than the square (where the square is inscribed in the circle). Since he posited that he could increase the size of the circle in a continuous manner (without using those words), he claimed that a square with area equal to that of the circle must exist, since the area of the circle passes through all values from the smaller area to the larger area.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></aside><div class="autopermalink" data-description="Subsection: Intermediate Value Theorem"><a href="#subsec-IntermediateValueTheorem" title="Copy heading and permalink for Subsection: Intermediate Value Theorem" aria-label="Copy heading and permalink for Subsection: Intermediate Value Theorem">🔗</a></div></section><div class="autopermalink" data-description="Section 1.6: Continuity and the Intermediate Value Theorem"><a href="#sec-Continuity" title="Copy heading and permalink for Section 1.6: Continuity and the Intermediate Value Theorem" aria-label="Copy heading and permalink for Section 1.6: Continuity and the Intermediate Value Theorem">🔗</a></div></section></div>
+<div class="para" id="subsec-IntermediateValueTheorem-4-2">Bryson of Heraclea knew that the square itself existed (even if he couldn’t construct it) because he was able to find a circle with area less than the square (by inscribing a circle inside of the square) and a circle with area greater than the square (where the square is inscribed in the circle). Since he posited that he could increase the size of the circle in a continuous manner (without using those words), he claimed that a square with area equal to that of the circle must exist, since the area of the circle passes through all values from the smaller area to the larger area.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside><div class="para" id="subsec-IntermediateValueTheorem-5">This is a seemingly simple result (even if it is stated in a seemingly complicated way): of course, in order to go from a point at one <span class="process-math">\(y\)</span>-value to another point at a different <span class="process-math">\(y\)</span>-value, the function has to pass through all of the <span class="process-math">\(y\)</span>-values in between. This is pretty obvious, once we see through the phrasing.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-IntermediateValueTheorem-6">We can use this result in some pretty interesting ways, though! Here’s a favorite:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-IntermediateValueTheorem-7">Let’s consider two people, standing on polar opposite points on the earth. Let’s say that these two people are carrying thermometers and are measuring the ambient temperature at their location. They coordinate their movement, and begin to move around the earth in a circle, remaining at polar opposite locations as they move.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-IntermediateValueTheorem-8">How likely is it that the pair finds some location on their path where their temperature readings are exactly identical?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-IntermediateValueTheorem-9">Let’s pretend that the locations that they start in are different temperatures (or else yay, we found the spot where the temperatures are the same!), and that the starting position of person A is hotter than the starting position of person B.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<iframe id="subsec-IntermediateValueTheorem-10" width="540" height="810" src="subsec-IntermediateValueTheorem-10-if.html"></iframe><div class="para" id="subsec-IntermediateValueTheorem-11">Can you see why we are guaranteed that there must be some pair of polar opposite locations where the ambient temperatures are identical?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-IntermediateValueTheorem-12">If the ambient temperature differs continuously, then the <a href="sec-Continuity.html#thm-IVT" class="xref" data-knowl="./knowl/xref/thm-IVT.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 1.6.7: Intermediate Value Theorem">Intermediate Value Theorem</a> says that between the locations where the temperature differential is negative and where it is positive, the temperature differential function must pass through zero!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-IntermediateValueTheorem-13">This argument can be used in a variety of contexts, and can be used to show that you can typically fix a wobbly table (where the legs don’t all rest nicely on the ground) or chair by rotating it until all of the legs rest nicely on the ground.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-IntermediateValueTheorem-14">The theorem itself might not seem that interesting, but it’s important both historically and also as a means of making arguments function values, especially when we claim that a function has to be 0 (because we show that there is a point where the function is positive, a point where it is negative, and the function is continuous in between the points).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntermediateValueTheorem-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Intermediate Value Theorem"><a href="#subsec-IntermediateValueTheorem" title="Copy heading and permalink for Subsection: Intermediate Value Theorem" aria-label="Copy heading and permalink for Subsection: Intermediate Value Theorem">🔗</a></div></section><section class="exercises" id="ex-Continuity"><h3 class="heading hide-type">
+<span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="ex-Continuity-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="ex-Continuity-1-1">Explain how the definition of continuity (<a href="sec-Continuity.html#def-ContinuousAtPoint" class="xref" data-knowl="./knowl/xref/def-ContinuousAtPoint.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.6.2: Continuous at a Point">Definition 1.6.2</a>) describes a function being “connected to itself” at the point.<div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1"><a href="#ex-Continuity-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ex-Continuity-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="ex-Continuity-2-1">What does it mean for a function to be continuous on the left at a point? What about on the right?<div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2"><a href="#ex-Continuity-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ex-Continuity-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="introduction" id="ex-Continuity-3-1"><div class="para" id="ex-Continuity-3-1-1">Use the definition of continuity at a point to determine whether each function is continuous at the point listed. If it is not, is the function continuous on one side at the point? Explain.<div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ex-Continuity-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ex-Continuity-3-2-1-1">
+<span class="process-math">\(f(x) =
+\begin{cases}
+4x+1 \amp \text{if } x\lt 1\\
+x^2+5 \amp \text{if } x\geq 1
+\end{cases}\)</span> at <span class="process-math">\(x=1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.a"><a href="#ex-Continuity-3-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ex-Continuity-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-Continuity-3-3-1-1">
+<span class="process-math">\(g(x) =
+\begin{cases}
+6x^2-2 \amp \text{if } x\lt0\\
+4 \amp \text{if } x=0\\
+1-3\cos(x) \amp \text{if } x\gt 0
+\end{cases}\)</span> at <span class="process-math">\(x=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.b"><a href="#ex-Continuity-3-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><article class="task exercise-like" id="ex-Continuity-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ex-Continuity-3-4-1-1">
+<span class="process-math">\(h(x) =
+\begin{cases}
+\left(\dfrac{x^2-1}{x+1}\right) \amp \text{if } x\neq -1\\
+-2 \amp\text{if } x=-1
+\end{cases}\)</span> at <span class="process-math">\(x=-1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.c"><a href="#ex-Continuity-3-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise 3"><a href="#ex-Continuity-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ex-Continuity-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="introduction" id="ex-Continuity-4-1"><div class="para" id="ex-Continuity-4-1-1">Find the values of <span class="process-math">\(a\)</span> that make the function continuous at the point that is listed. If no such value of <span class="process-math">\(a\)</span> exists, say so and explain why.<div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ex-Continuity-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ex-Continuity-4-2-1-1">
+<span class="process-math">\(f(x) =
+\begin{cases}
+x -6\amp \text{if } x\lt3\\
+ax^2+1 \amp \text{if } x\geq 3
+\end{cases}\)</span> at <span class="process-math">\(x=3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.a"><a href="#ex-Continuity-4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="ex-Continuity-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-Continuity-4-3-1-1">
+<span class="process-math">\(f(x) =
+\begin{cases}
+\dfrac{x^2-4}{x+2} \amp \text{if } x\neq -2\\
+a \amp \text{if } x=-2
+\end{cases}\)</span> at <span class="process-math">\(x=-2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.b"><a href="#ex-Continuity-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 4"><a href="#ex-Continuity-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="ex-Continuity-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="introduction" id="ex-Continuity-5-1"><div class="para" id="ex-Continuity-5-1-1">Use the properties of composition and continuity to evaluate the following limits.<div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ex-Continuity-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ex-Continuity-5-2-1-1">
+<span class="process-math">\(\displaystyle \lim_{x\to 0} \left(\sin\left(e^{\sqrt{x^2}}\right)\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.a"><a href="#ex-Continuity-5-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div></article><article class="task exercise-like" id="ex-Continuity-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-Continuity-5-3-1-1">
+<span class="process-math">\(\displaystyle \lim_{x\to 0} \ln\left(\dfrac{\cos(x^2)}{x^2+1}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.b"><a href="#ex-Continuity-5-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div></article><article class="task exercise-like" id="ex-Continuity-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ex-Continuity-5-4-1-1">
+<span class="process-math">\(\displaystyle \lim_{x\to 0} \sqrt[3]{\dfrac{x}{\sqrt{16x+1}-1}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.c"><a href="#ex-Continuity-5-4" title="Copy heading and permalink for Task 5.c" aria-label="Copy heading and permalink for Task 5.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise 5"><a href="#ex-Continuity-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="ex-Continuity-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="ex-Continuity-6-1-1">“Even a broken clock is right twice a day,” is a common phrase used to say that even an unreliable person can have a good point on accident. Explain how we can use the Intermediate Value Theorem to prove that a broken (analog) clock is guaranteed right twice per day. (Here, we’re assuming that “broken” means stuck.)<div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 6"><a href="#ex-Continuity-6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div></article><article class="exercise exercise-like" id="ex-Continuity-7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para" id="ex-Continuity-7-1-1">Explain why this argument doesn’t work to show that an unreliable person will be guaranteed to have a good point on accident.<div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 7"><a href="#ex-Continuity-7" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="ex-Continuity-8"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="ex-Continuity-8-1-1">Prove that at some point in your life you were exactly <span class="process-math">\(\pi\)</span> feet tall.<div class="autopermalink" data-description="Paragraph"><a href="#ex-Continuity-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 8"><a href="#ex-Continuity-8" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div></article><div class="autopermalink" data-description="Practice Problems"><a href="#ex-Continuity" title="Copy heading and permalink for Practice Problems" aria-label="Copy heading and permalink for Practice Problems">🔗</a></div></section><div class="autopermalink" data-description="Section 1.6: Continuity and the Intermediate Value Theorem"><a href="#sec-Continuity" title="Copy heading and permalink for Section 1.6: Continuity and the Intermediate Value Theorem" aria-label="Copy heading and permalink for Section 1.6: Continuity and the Intermediate Value Theorem">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-SqueezeTheorem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Derivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

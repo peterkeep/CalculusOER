@@ -210,6 +210,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-DefiningContinuity" class="internal"><span class="title">Defining Continuity</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-Discontinuities" class="internal"><span class="title">Discontinuities</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-IntermediateValueTheorem" class="internal"><span class="title">Intermediate Value Theorem</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Continuity.html#ex-Continuity" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -455,7 +456,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#subsec-SurfaceArea" class="internal"><span class="title">Integrals for Evaluating the Surface Area of a Solid</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Other Applications of Integrals</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Other Applications of Integrals</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Mass" class="internal"><span class="title">Physics Application: Mass</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Work" class="internal"><span class="title">Physics Application: Work</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Springs" class="internal"><span class="title">Work: Springs</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Pumping" class="internal"><span class="title">Work: Pumping Problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -610,9 +623,229 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-OtherApplications"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">6.6</span><span class="space"> </span><span class="title">Other Applications of Integrals</span>
 </h2>
-<div class="para" id="sec-OtherApplications-2">Text of section.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-OtherApplications-2"><div class="para" id="sec-OtherApplications-2-1">We should pause and think (even briefly) about the whole point of this chapter.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Section 6.6: Other Applications of Integrals"><a href="#sec-OtherApplications" title="Copy heading and permalink for Section 6.6: Other Applications of Integrals" aria-label="Copy heading and permalink for Section 6.6: Other Applications of Integrals">🔗</a></div></section></div>
+<div class="para" id="sec-OtherApplications-2-2">Do you think you will need to know how to calculate the volume of a solid of revolution?<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-3">Is being able to think about the surface area of a solid of revolution important?<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-4">Are you going to need to calculate a bunch of arc lengths constantly in your other classes, jobs, or spare time?<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-5">No. Probably not. It’s fun to think about this stuff, but the goal is not really the formulas: it’s the construction.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-6">What we really should be leaving this chapter with is a renewed view of what a definite integral <em class="emphasis">is</em>. After <a href="ch-AntiderivativesIntegrals.html" class="internal" title="Chapter 5: Antiderivatives and Integrals">Chapter 5 Antiderivatives and Integrals</a>, we probably thought about a definite integral as a measurement of the (signed) area “under the curve” (bounded between the curve and the <span class="process-math">\(x\)</span>-axis). Hopefully now, though, we have a deeper view of the definite integral through this slice-and-sum process.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-7">A definite integral is an accumulation of some function outputs multiplied by the space between the inputs.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-8">So when we do move past these topics into other classes, jobs, or your spare time, then you <em class="emphasis">will</em> run into formulas involving definite integrals. Hopefully, based on this chapter, we have the tools to deconstruct those formulas to find out what they are measuring and how they are measuring it.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-9">To end the chapter, let’s look at some applications of definite integrals into formulas from other academic fields.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-Mass"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Physics Application: Mass</span>
+</h3>
+<div class="para logical" id="subsec-Mass-2">
+<div class="para">Let’s consider some object made out of a material with a constant density. To calculate the mass of the object, we need to know the size (the volume of the object) and the density, and then we can multiply:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathrm{mass} = \mathrm{density} \cdot \mathrm{volume}\text{.}
+\end{equation*}
+</div>
+<div class="para">We’ve seen how we can use the slice-and-sum formula to calculate volumes by slicing the object into thin pieces and approximating the volume by multiplying the cross-sectional area by the thickness of the slice:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_k = A(x_k^*) \Delta x\text{.}
+\end{equation*}
+</div>
+<div class="para">We can easily construct an integral formula for the mass of an object now! We just need to find some measurement of the mass of a single slice of an object, and then start summing until we end up with a definite integral! So, for an object spanning from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> with density, <span class="process-math">\(\rho\text{,}\)</span> we have:</div>
+<div class="displaymath process-math" id="subsec-Mass-2-6">
+\begin{align*}
+M_k \amp = \rho V_k\\
+\amp = \rho A(x_k^*)\Delta x\\
+M \amp \approx \sum_{k=1}^n \rho A(x_k^*)\Delta x\\
+M \amp = \lim_{n\to\infty}\sum_{k=1}^n \rho A(x_k^*)\Delta x\\
+\amp = \int_{x=a}^{x=b} \rho A(x)\;dx
+\end{align*}
+</div>
+<div class="para">This is great! We can easily extend this to other situations, as well.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-Mass-3">
+<div class="para">Imagine if the density of our object isn’t constant. Maybe we have some metal alloy, where the mixture of the metal changes as we traverse through the object. This variable density can be represented, then, as <span class="process-math">\(\rho(x)\text{.}\)</span> We can replace the constant <span class="process-math">\(\rho\)</span> with <span class="process-math">\(\rho(x_k^*)\)</span> and then eventually <span class="process-math">\(\rho(x)\)</span> to get:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+M = \int_{x=a}^{x=b} \rho(x) A(x)\;dx\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-MassOfObject"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.6.1</span><span class="period">.</span><span class="space"> </span><span class="title">Mass of an Object.</span>
+</h4>
+<div class="para logical" id="thm-MassOfObject-2-1">
+<div class="para">For some solid spanning from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> where <span class="process-math">\(A(x)\)</span> is the cross-sectional area of the object at <span class="process-math">\(x\)</span> and <span class="process-math">\(\rho(x)\)</span> is the density of the object at <span class="process-math">\(x\text{,}\)</span> then the total mass of the object is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+M = \int_{x=a}^{x=b} \rho(x) A(x)\;dx\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-MassOfObject-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 6.6.1: Mass of an Object"><a href="#thm-MassOfObject" title="Copy heading and permalink for Theorem 6.6.1: Mass of an Object" aria-label="Copy heading and permalink for Theorem 6.6.1: Mass of an Object">🔗</a></div></article><div class="para" id="subsec-Mass-5">For very thin objects, like wires, we can not consider the cross-sectional area and simply use what we call the <dfn class="terminology">linear density</dfn>: <span class="process-math">\(\rho(x)\)</span> measures the amount of mass per unit length (instead of mass per cubic unit of volume). In this case, our formula changes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-MassOfThinWire"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.6.2</span><span class="period">.</span><span class="space"> </span><span class="title">Mass of a Thin Wire.</span>
+</h4>
+<div class="para logical" id="thm-MassOfThinWire-2-1">
+<div class="para">For some thin object (like a wire) spanning from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{,}\)</span> then if <span class="process-math">\(\rho(x)\)</span> measures the mass per unit of length (<span class="process-math">\(\rho(x)\)</span> is a linear density function), then the mass of the object is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+M = \int_{x=a}^{x=b} \rho(x)\;dx\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-MassOfThinWire-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 6.6.2: Mass of a Thin Wire"><a href="#thm-MassOfThinWire" title="Copy heading and permalink for Theorem 6.6.2: Mass of a Thin Wire" aria-label="Copy heading and permalink for Theorem 6.6.2: Mass of a Thin Wire">🔗</a></div></article><article class="example example-like" id="subsec-Mass-7"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.6.3</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="subsec-Mass-7-1"><div class="para" id="subsec-Mass-7-1-1">For each of the following objects, set up an integral expression to calculate the mass. Evaluate the integrals!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="subsec-Mass-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-Mass-7-2-1-1">A thin wire that is <span class="process-math">\(30\)</span> cm long with a density function <span class="process-math">\(\rho(x) = 2 + \frac{x}{60}\text{,}\)</span> where <span class="process-math">\(\rho(x)\)</span> measures the density of the wire at <span class="process-math">\(x\)</span> in g/cm.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-Mass-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-Mass-7-2-2-1">
+<div class="displaymath process-math" id="subsec-Mass-7-2-2-1-1">
+\begin{align*}
+M \amp = \int_{x=0}^{x=30} \left(2+\frac{x}{60}\right)\;dx\\
+\amp = \left(2x+\frac{x^2}{120}\right)\bigg|_{x=0}^{x=30}\\
+\amp = 60 + \frac{900}{120}\\
+\amp = 67.5
+\end{align*}
+</div>
+<div class="para">The mass of the wire is <span class="process-math">\(67.5\)</span> g.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.6.3.a.1"><a href="#subsec-Mass-7-2-2" title="Copy heading and permalink for Solution 6.6.3.a.1" aria-label="Copy heading and permalink for Solution 6.6.3.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 6.6.3.a"><a href="#subsec-Mass-7-2" title="Copy heading and permalink for Task 6.6.3.a" aria-label="Copy heading and permalink for Task 6.6.3.a">🔗</a></div></article><article class="task exercise-like" id="subsec-Mass-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-Mass-7-3-1-1">A thin wire that is <span class="process-math">\(100\)</span> cm long, with an unknown density. We assume that the density changes linearly from one end to the other, with the measured density at both ends being <span class="process-math">\(5.1\)</span> g/cm and <span class="process-math">\(4.7\)</span> g/cm.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-Mass-7-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="subsec-Mass-7-3-2-1">Construct the density function using two points: <span class="process-math">\((0,5.1)\)</span> and <span class="process-math">\((100, 4.7)\text{.}\)</span> You could switch the orders and use <span class="process-math">\((0,4.7)\)</span> and <span class="process-math">\((100,5.1)\)</span> as well. What is the linear function connecting these points?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 6.6.3.b.1"><a href="#subsec-Mass-7-3-2" title="Copy heading and permalink for Hint 6.6.3.b.1" aria-label="Copy heading and permalink for Hint 6.6.3.b.1">🔗</a></div>
+</div></details><details id="subsec-Mass-7-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-Mass-7-3-3-1">
+<div class="para">We’ll use the points <span class="process-math">\((0,5.1)\)</span> and <span class="process-math">\((100, 4.7)\)</span> to construct <span class="process-math">\(\rho(x)\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-Mass-7-3-3-1-4">
+\begin{align*}
+\rho(x) \amp = \left(\underbrace{\frac{4.7-5.1}{100-0}}_{\text{slope}}\right)(x-0)+5.1\\
+\amp = -0.004x+5.1
+\end{align*}
+</div>
+<div class="para">Now we can integrate:</div>
+<div class="displaymath process-math" id="subsec-Mass-7-3-3-1-5">
+\begin{align*}
+M \amp = \int_{x=0}^{x=100} 5.1-0.004x\;dx\\
+\amp = (5.1x - 0.002x^2)\bigg|_{x=0}^{x=100}\\
+\amp = 510-20\\
+\amp = 490
+\end{align*}
+</div>
+<div class="para">So the mass of the wire is <span class="process-math">\(490\)</span> g.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-7-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.6.3.b.1"><a href="#subsec-Mass-7-3-3" title="Copy heading and permalink for Solution 6.6.3.b.1" aria-label="Copy heading and permalink for Solution 6.6.3.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 6.6.3.b"><a href="#subsec-Mass-7-3" title="Copy heading and permalink for Task 6.6.3.b" aria-label="Copy heading and permalink for Task 6.6.3.b">🔗</a></div></article><div class="autopermalink" data-description="Example 6.6.3"><a href="#subsec-Mass-7" title="Copy heading and permalink for Example 6.6.3" aria-label="Copy heading and permalink for Example 6.6.3">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Physics Application: Mass"><a href="#subsec-Mass" title="Copy heading and permalink for Subsection: Physics Application: Mass" aria-label="Copy heading and permalink for Subsection: Physics Application: Mass">🔗</a></div></section><section class="subsection" id="subsec-Work"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Physics Application: Work</span>
+</h3>
+<section class="introduction" id="subsec-Work-2"><div class="para logical" id="subsec-Work-2-1">
+<div class="para">Another example of a measurement found in physics contexts is Work. Work is, generally, the amount energy transferred to (or from, depending on perspective) an object by some force across some distance or displacement.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathrm{Work} = \mathrm{Force} \cdot \mathrm{distance}
+\end{equation*}
+</div>
+<div class="para">In general, we can use the “slice-and-sum” process when the force applied to our object is some function of the position:</div>
+<div class="displaymath process-math" id="subsec-Work-2-1-3">
+\begin{align*}
+W_k \amp = F(x_k^*) \Delta x \\
+W \amp \approx \sum_{k=1}^n F(x_k^*) \Delta x\\
+W \amp = \lim_{n\to\infty} \sum_{k=1}^n F(x_k^*) \Delta x\\
+\amp = \int_{x=a}^{x=b} F(x)\;dx
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Work-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-Work"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.6.4</span><span class="period">.</span><span class="space"> </span><span class="title">Work Required.</span>
+</h4>
+<div class="para logical" id="thm-Work-2-1">
+<div class="para">If <span class="process-math">\(F(x)\)</span> is a function measuring the force applied to an object at some <span class="process-math">\(x\)</span>-value in the interval <span class="process-math">\([a,b]\text{,}\)</span> then the work done to move the object across the interval is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W=\int_{x=a}^{x=b} F(x)\;dx\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-Work-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 6.6.4: Work Required"><a href="#thm-Work" title="Copy heading and permalink for Theorem 6.6.4: Work Required" aria-label="Copy heading and permalink for Theorem 6.6.4: Work Required">🔗</a></div></article><div class="para" id="subsec-Work-2-3">In many contexts, we can notice that the force being applied to the object is dependent on the position of the object along its path. For instance, in the 1600’s, British physicist Robert Hooke claimed (and proved) that the force required to stretch or compress a spring is directly proportional to the distance that it is away from “equilibrium” (the position the spring naturally rests in).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Work-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsubsection" id="subsubsec-Springs"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Work: Springs</span>
+</h4>
+<div class="para" id="subsubsec-Springs-2">We’ll first look at the springs, since the force functions are relatively simple.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Springs-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsubsec-Springs-3"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.6.5</span><span class="period">.</span>
+</h5>
+<div class="introduction" id="subsubsec-Springs-3-1"><div class="para" id="subsubsec-Springs-3-1-1">Calculate the work required to stretch or compress the following springs.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Springs-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="subsubsec-Springs-3-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="subsubsec-Springs-3-2-1-1">A spring stretched to <span class="process-math">\(0.1\)</span> m past its equilibrium position, where a Force of <span class="process-math">\(F(x)=180x\)</span> is applied, measured in N.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Springs-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsubsec-Springs-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsubsec-Springs-3-2-2-1">
+<div class="displaymath process-math" id="subsubsec-Springs-3-2-2-1-1">
+\begin{align*}
+W \amp =\int_{x=0}^{x=0.1} 180x\;dx\\
+\amp = 90x^2\bigg|_{x=0}^{x=0.1}\\
+\amp = 0.9
+\end{align*}
+</div>
+<div class="para">So the work required to stretch the spring is 0.9 J.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Springs-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.6.5.a.1"><a href="#subsubsec-Springs-3-2-2" title="Copy heading and permalink for Solution 6.6.5.a.1" aria-label="Copy heading and permalink for Solution 6.6.5.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 6.6.5.a"><a href="#subsubsec-Springs-3-2" title="Copy heading and permalink for Task 6.6.5.a" aria-label="Copy heading and permalink for Task 6.6.5.a">🔗</a></div></article><article class="task exercise-like" id="subsubsec-Springs-3-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="subsubsec-Springs-3-3-1-1">A force of <span class="process-math">\(81\)</span> N was applied to a spring to stretch it <span class="process-math">\(0.8\)</span> m from its equilibrium position. Calculate the work required to stretch it <span class="process-math">\(0.2\)</span> m further.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Springs-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsubsec-Springs-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsubsec-Springs-3-3-2-1">
+<div class="displaymath process-math" id="subsubsec-Springs-3-3-2-1-1">
+\begin{align*}
+F(x) \amp = \frac{81}{0.8} x \\
+\amp = \frac{405x}{4}\\
+W \amp = \int_{x=0.8}^{x=1} \frac{405x}{4}\;dx\\
+\amp = \left(\frac{405x^2}{8}\right)\bigg|_{x=0.8}^{x=1}\\
+\amp = \frac{405}{8} - \frac{162}{5}\\
+\amp = \frac{729}{40}
+\end{align*}
+</div>
+<div class="para">So the work required to stretch the spring is 18.225 J.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Springs-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.6.5.b.1"><a href="#subsubsec-Springs-3-3-2" title="Copy heading and permalink for Solution 6.6.5.b.1" aria-label="Copy heading and permalink for Solution 6.6.5.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 6.6.5.b"><a href="#subsubsec-Springs-3-3" title="Copy heading and permalink for Task 6.6.5.b" aria-label="Copy heading and permalink for Task 6.6.5.b">🔗</a></div></article><div class="autopermalink" data-description="Example 6.6.5"><a href="#subsubsec-Springs-3" title="Copy heading and permalink for Example 6.6.5" aria-label="Copy heading and permalink for Example 6.6.5">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Work: Springs"><a href="#subsubsec-Springs" title="Copy heading and permalink for Subsubsection: Work: Springs" aria-label="Copy heading and permalink for Subsubsection: Work: Springs">🔗</a></div></section><section class="subsubsection" id="subsubsec-Pumping"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Work: Pumping Problems</span>
+</h4>
+<div class="para" id="subsubsec-Pumping-2"><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Subsubsection: Work: Pumping Problems"><a href="#subsubsec-Pumping" title="Copy heading and permalink for Subsubsection: Work: Pumping Problems" aria-label="Copy heading and permalink for Subsubsection: Work: Pumping Problems">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Physics Application: Work"><a href="#subsec-Work" title="Copy heading and permalink for Subsection: Physics Application: Work" aria-label="Copy heading and permalink for Subsection: Physics Application: Work">🔗</a></div></section><div class="autopermalink" data-description="Section 6.6: Other Applications of Integrals"><a href="#sec-OtherApplications" title="Copy heading and permalink for Section 6.6: Other Applications of Integrals" aria-label="Copy heading and permalink for Section 6.6: Other Applications of Integrals">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-ArcLengthSurfaceArea.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-AntidifferentiationTechniques.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
