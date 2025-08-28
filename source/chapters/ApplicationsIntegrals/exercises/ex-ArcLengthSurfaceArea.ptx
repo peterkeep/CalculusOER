@@ -2,7 +2,7 @@
     <exercise>
         <statement>
             <p>
-                The formula for arc length of the function <m>f(x)</m> on the interval <m>[a,b]</m> is <m> \displaystyle L = \int_{x=a}^{x=b} \sqrt{1+f'(x)^2}\;dx</m>. Explain how this definition is built, using the slice-and-sum method. Make sure to explain how we the Pythagorean Theorem is involved.
+                The formula for arc length of the function <m>f(x)</m> on the interval <m>[a,b]</m> is <m>\displaystyle L = \int_{x=a}^{x=b} \sqrt{1+f'(x)^2}\;dx</m>. Explain how this definition is built, using the slice-and-sum method. Make sure to explain how we the Pythagorean Theorem is involved.
             </p>
         </statement>
     </exercise>
@@ -79,7 +79,7 @@
     <exercise>
         <statement>
             <p>
-                In the integral formula <m>A = \dint_a^b 2\pi f(x) \sqrt{1+f'(x)^2} \; dx</m>, what does <m>f(x)</m> represent? What about <m>2\pi</m>?
+                In the integral formula <m>\displaystyle A = \int_{x=a}^{x=b} 2\pi f(x) \sqrt{1+f'(x)^2} \; dx</m>, what does <m>f(x)</m> represent? What about <m>2\pi</m>?
             </p>
         </statement>
     </exercise>
