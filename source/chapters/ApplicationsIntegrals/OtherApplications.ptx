@@ -172,7 +172,7 @@
     <subsubsection xml:id="subsubsec-Springs">
       <title>Work: Springs</title>
        <p>
-        We'll first look at the springs, since the force functions are relatively simple.
+        We'll first look at the springs, since the force functions are relatively simple. Robert Hooke's claim (Hooke's Law) says that the force function for a spring is always in the form <m>F(x)=kx</m> where <m>k</m> is just some constant proportion connecting distance to the force required for that particular spring. 
       </p>
       <example>
         <introduction>
@@ -183,7 +183,7 @@
         <task>
           <statement>
             <p>
-              A spring stretched to <m>0.1</m> m past its equilibrium position, where a Force of <m>F(x)=180x</m> is applied, measured in N.
+              A spring stretched to 0.1 m past its equilibrium position, where a Force of <m>F(x)=180x</m> is applied, measured in N.
             </p> 
           </statement>
           <solution>
@@ -200,7 +200,7 @@
         <task>
           <statement>
             <p>
-              A force of <m>81</m> N was applied to a spring to stretch it <m>0.8</m> m from its equilibrium position. Calculate the work required to stretch it <m>0.2</m> m further.
+              A force of 81 N was applied to a spring to stretch it 0.8 m from its equilibrium position. Calculate the work required to stretch it 0.2 m further.
             </p>
           </statement>
           <solution>
@@ -222,8 +222,143 @@
     <subsubsection xml:id="subsubsec-Pumping">
       <title>Work: Pumping Problems</title>
       <p>
-        
+        We can explore another class of examples with some more complications in the setup. We still will be thinking about force and distance, but we can re-frame them with a new example.
       </p>
+      <p>
+        What if we pump liquid out of the top of a tank? How does that work? There are some fun things to think about. Let's visualize this tank below, and then talk through the construction of the formula.
+      </p>
+      <figure xml:id="fig-Pump">
+        <caption>Diagram of a pumping problem.</caption>
+        <image source="./ApplicationsIntegrals/Pump.png" width="50%">
+          <shortdescription>(for accessibility)</shortdescription>
+        </image>
+      </figure>
+      <p>
+        We can see a couple of notable things here:
+        <ul>
+          <li>
+            <p>
+              We're going to slice up the liquid. So from <m>y=a</m>, the bottom of the tank, up to <m>y=b</m>, the height at the top of the volume of liquid, we will create <m>k</m> slices (each at some <m>y_k^*</m> <m>y</m>-value) with <m>\Delta y</m> representing the thickness of the slice.
+            </p>
+          </li>
+          <li>
+            <p>
+              The distance portion of the formula is not represented by the width of a subinterval from the whole distance. Instead, we'll note that liquid at the top of the tank needs to be pumped a shorter distance than the liquid near the bottom of the tank. The distance part, then, is a function based on the <m>y</m>-value. So, if <m>y=h</m> is the height of the tank, then <m>(h-y_k^*)</m> is the distance that the liquid in the <m>k</m>th slice will move.
+            </p>
+          </li>
+          <li>
+            <p>
+              To calculate the force required to pump the liquid in the <m>k</m>th slice, we need to know the mass of the liquid and the acceleration needed to pump the liquid out of the tank. The acceleration will be whatever the acceleration needed to overcome gravity: we'll use <m>g</m>, the positive gravitational constant. For the mass, we'll think about the density of the liquid (a constant, <m>\rho</m>) and the volume of the <m>k</m>th slice.
+            </p>
+          </li>
+          <li>
+            <p>
+              To find the volume of the <m>k</m>th slice, we'll think about the cross-sectional area of the slice at <m>y_k^*</m> (we'll call it <m>A(y_k^*)</m>) multiplied by the thickness, <m>\Delta y</m>.
+            </p>
+          </li>
+        </ul>
+        This gives us the following in the slice-and-sum process:
+        <md>
+          <mrow>W_k \amp =F(y_k^*)(h-y_k^*)</mrow>
+          <mrow> \amp = \left(\rho A(y_k^*) \Delta y\right) g (h-y_k^*)</mrow>
+          <mrow> \amp = \rho g A(y_k^*) (h-y_k^*) \Delta y</mrow>
+          <mrow>W \amp \approx \sum_{k=1}^n \rho g A(y_k^*) (h-y_k^*) \Delta y</mrow>
+          <mrow>W \amp = \lim_{n\to\infty} \sum_{k=1}^n \rho g A(y_k^*) (h-y_k^*) \Delta y</mrow>
+          <mrow> \amp = \rho g \int_{y=a}^{y=b} A(y)(h-y)\;dy</mrow>
+        </md>
+        So, when we consider these pumping problems, we really need to take note of only a few things:
+        <ul>
+          <li>
+            <p>
+              What are the limits of integration? Where <em>is</em> the liquid we're pumping (based on <m>y</m>-value heights)?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the geometry of our tank? When we consider a single slice of the liquid, what kind of shape will we have, and how do we calculate the cross-sectional area?
+            </p>
+          </li>
+        </ul>
+      </p>
+      <example>
+        <introduction>
+          <p>
+            For each of the following tanks, calculate the work required to empty the liquid from the tank by pumping it through the top of the tank.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Consider a cylindrical tank, similar to the one in <xref ref="fig-Pump"/>. The radius of the tank is 0.5 m, and the height is 2 m. The tank is half full of some liquid with density <m>\rho</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The cross sectional area is:
+              <md>
+                <mrow>A \amp =\pi r^2 </mrow>
+                <mrow>A(y) \amp =\pi(0.5)^2</mrow>
+                <mrow> \amp = \frac{\pi}{4} </mrow>
+              </md>
+              Then the limits of integration will be from <m>y=0</m> to <m>y=1</m>, since the height is 2 m and the liquid, then, reaches to 1 m.
+              <md>
+                <mrow>W \amp = \rho g \int_{y=0}^{y=1}A(y)(2-y)\;dy</mrow>
+                <mrow> \amp = \frac{\rho g \pi}{4}\int_{y=0}^{y=1} 2-y\;dy</mrow>
+                <mrow> \amp =\frac{\rho g \pi}{4}\left(2y-\frac{y^2}{2}\right)\bigg|_{y=0}^{y=1}</mrow>
+                <mrow> \amp = \frac{\rho g \pi}{4}\left(\frac{3}{2}\right)</mrow>
+                <mrow> \amp = \frac{3\rho g \pi}{8}</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Now box-shaped tank, where the base of the tank is 1 meters by 3 meters and the height is 2 meter. The tank is filled all the way to the top with some liquid with density <m>\rho</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The cross sectional area is:
+              <md>
+                <mrow>A \amp =\ell w </mrow>
+                <mrow>A(y) \amp = 1(3)</mrow>
+                <mrow> \amp =3</mrow>
+              </md>
+              Then the limits of integration will be from <m>y=0</m> to <m>y=2</m>, since the height is 2 m and the liquid, then, reaches to the top.
+              <md>
+                <mrow>W \amp = \rho g \int_{y=0}^{y=2}A(y)(2-y)\;dy</mrow>
+                <mrow> \amp = 3\rho g\int_{y=0}^{y=2} 2-y\;dy</mrow>
+                <mrow> \amp = 3\left(2y-\frac{y^2}{2}\right)\bigg|_{y=0}^{y=2}</mrow>
+                <mrow> \amp = 3\left(2\right)</mrow>
+                <mrow> \amp = 6</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Consider a conical tank, where the radius of the base is 3 meters and the cone is 2 meters tall. The liquid is filled up to the 1.5 meter mark.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Finding the cross-sectional area function will be a bit harder. It is the area of a circle, but the radius changes based on the <m>y</m>-value. At <m>y=0</m>, we have <m>r=3</m>. At <m>y=2</m>, we have <m>r=0</m>. So the rate of change of the radius is -1.5 meters per meter of height.
+              <me>
+                A(y) = \pi (3-1.5y)^2
+              </me>
+              The limits of integration are from <m>y=0</m> to <m>y=1.5</m>:
+              <md>
+                <mrow>W \amp = \rho g \pi \int_{y=0}^{y=1.5}(3-1.5y)^2(2-y)\;dy</mrow>
+                <mrow> \amp = \rho g \pi \int_{y=0}^{y=1.5}18 - 27 y + 13.5 y^2 - 2.25 y^3 \;dy</mrow>
+                <mrow> \amp = \rho g \pi \left(18y - \frac{27y^2}{2} + \frac{13.5y^3}{3} - \frac{2.25y^4}{4}\right)\bigg|_{y=0}^{y=1.5}</mrow>
+                <mrow> \amp = \frac{2295\rho g \pi}{256}</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
+      </example>
     </subsubsection>
   </subsection>
 </section>
