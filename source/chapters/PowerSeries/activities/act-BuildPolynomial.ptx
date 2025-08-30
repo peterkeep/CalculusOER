@@ -1,0 +1,15 @@
+<activity xml:id="act-BuildPolynomial">
+    <title>Build a Polynomial</title>
+    <introduction>
+        <p>
+            We're going to use the formula in <xref ref="def-PolynomialApproximation"/> to construct two different polynomials that approximate two different approximations. Then, we'll use them to approximate things!
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                We're going to start with approximating the function <m>f(x)=\sin(x)</m> centered at <m>x=0</m>.
+            </p>
+        </statement>
+    </task>
+</activity>

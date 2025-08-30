@@ -2,8 +2,40 @@
 
 <section xml:id="sec-PolynomialApproximation" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Polynomial Approximations of Functions</title>
-    
-    <p>
-        
-    </p>
+    <introduction>
+        <p>
+            Before we start, it might be helpful to remind ourselves of the way we have used linear functions to approximate other functions in <xref ref="sec-LinearApproximation" text="type-global-title"/>.
+        </p>
+    </introduction>
+    <subsection xml:id="subsec-WhatDoWeWant">
+        <title>What Do We Want From a Polynomial Approximation?</title>
+        <p>
+            
+        </p>
+    </subsection>
+    <subsection xml:id="subsec-HowDoWeBuild">
+        <title>How Do We Build a Polynomial Approximation?</title>
+        <p>
+            
+        </p>
+        <definition xml:id="def-PolynomialApproximation">
+            <title>Polynomial Approximation</title>          
+            <statement>
+                <p>
+                    If <m>f(x)</m> is a function that is <m>n</m>-times differentiable at <m>x=a</m> (that is, the functions <m>f(a)</m>, <m>f'(a)</m>, <m>f''(a)</m>, ..., <m>f^{(n)}(a)</m> all exist), then the <m>n</m>th degree <term>polynomial approximation of <m>f(x)</m> centered at <m>x=a</m></term> is:
+                    <md>
+                        <mrow>p_n(x) \amp = f(a)+ f'(a)(x-a)+\frac{f''(a)}{2}(x-a)^2+...+ \frac{f^{(n)}(a)}{n!}(x-a)^n</mrow>
+                        <mrow> \amp = \sum_{k=1}^n \frac{f^{(k)}(a)}{k!}(x-a)^k</mrow>
+                    </md>
+                </p>
+            </statement>
+        </definition>
+        <xi:include href="./activities/act-BuildPolynomial.ptx" />
+    </subsection>
+    <subsection xml:id="subsec-AreThesePartialSums">
+        <title>Are These Partial Sums?</title>
+        <p>
+            
+        </p>
+    </subsection>
 </section>
