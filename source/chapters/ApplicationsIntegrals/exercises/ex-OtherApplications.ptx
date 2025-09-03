@@ -1,0 +1,107 @@
+<exercises xml:id="ex-OtherApplications">
+    <exercise>
+        <introduction>
+            <p>
+                Consider a thin wire whose density is variable and is written as <m>\rho(x)</m> on some interval. For each of the following density functions (and their intervals), build and evaluate an integral representing the mass of the wire.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\rho(x) = \dfrac{2x+1}{10}</m> on <m>[0, 10]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\rho(x) = x^2-2</m> on <m>[100, 200]</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider a spring that requires 100 N of force to stretch the spring 0.3 m from its equilibrium position.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Using Hooke's Law, find the spring constant <m>k</m> such that <m>F(x) = kx</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    How much work is required to stretch the spring 0.4 m from its equilibrium position?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    How much work is required to stretch the spring another 0.1 m after this?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider a spring that is stretched 0.1 m from its equilibrium position. It requires 10 N to stretch it an additional 0.2 m.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Using Hooke's Law, find the spring constant <m>k</m> such that <m>F(x) = kx</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    How much work is required to stretch the spring 1 m from its equilibrium position?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    How much work is required to compress the spring 0.2 m from is equilibrium position?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each tank, assume the density of the liquid is <m>\rho</m>, and set up and evaluate the integral representing the work required to pump the liquid out of the top of the tank.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    A square-based tank that is 2 meters tall with a 0.5 m <m>\times</m> 0.5 m base, full of liquid.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    A cylindrical tank where the base has a radius of 1 m and the height is 3 m, half-full of liquid.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    A frustum-shaped tank where the bottom radius is 4 m, the top radius is 1 m, the height is 2 m, and the tank is filled to a height of <m>\frac{2}{3}</m> m.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
