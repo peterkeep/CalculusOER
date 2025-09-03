@@ -4561,7 +4561,25 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.1",
   "title": "Polynomial Approximations of Functions",
-  "body": " Polynomial Approximations of Functions    "
+  "body": " Polynomial Approximations of Functions   Before we start, it might be helpful to remind ourselves of the way we have used linear functions to approximate other functions in .    What Do We Want From a Polynomial Approximation?      How Do We Build a Polynomial Approximation?     Polynomial Approximation   If is a function that is -times differentiable at (that is, the functions , , , ..., all exist), then the th degree polynomial approximation of centered at is:      Build a Polynomial   We're going to use the formula in to construct two different polynomials that approximate two different approximations. Then, we'll use them to approximate things!     We're going to start with approximating the function centered at .       Are These Partial Sums?     "
+},
+{
+  "id": "def-PolynomialApproximation",
+  "level": "2",
+  "url": "sec-PolynomialApproximation.html#def-PolynomialApproximation",
+  "type": "Definition",
+  "number": "9.1.1",
+  "title": "Polynomial Approximation.",
+  "body": " Polynomial Approximation   If is a function that is -times differentiable at (that is, the functions , , , ..., all exist), then the th degree polynomial approximation of centered at is:    "
+},
+{
+  "id": "act-BuildPolynomial",
+  "level": "2",
+  "url": "sec-PolynomialApproximation.html#act-BuildPolynomial",
+  "type": "Activity",
+  "number": "9.1.1",
+  "title": "Build a Polynomial.",
+  "body": " Build a Polynomial   We're going to use the formula in to construct two different polynomials that approximate two different approximations. Then, we'll use them to approximate things!     We're going to start with approximating the function centered at .    "
 },
 {
   "id": "sec-TaylorSeries",

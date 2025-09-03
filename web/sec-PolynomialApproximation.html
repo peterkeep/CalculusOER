@@ -606,7 +606,14 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-PowerSeries.html" class="internal"><span class="codenumber">9</span> <span class="title">Power Series</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Polynomial Approximations of Functions</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-PolynomialApproximation.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Polynomial Approximations of Functions</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#subsec-WhatDoWeWant" class="internal"><span class="title">What Do We Want From a Polynomial Approximation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#subsec-HowDoWeBuild" class="internal"><span class="title">How Do We Build a Polynomial Approximation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#subsec-AreThesePartialSums" class="internal"><span class="title">Are These Partial Sums?</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-TaylorSeries.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Taylor Series</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-PowerSeriesProperties.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Properties of Power Series</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html" class="internal"><span class="codenumber">9.4</span> <span class="title">How to Build Taylor Series</span></a></div></li>
@@ -624,8 +631,41 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-PolynomialApproximation"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">9.1</span><span class="space"> </span><span class="title">Polynomial Approximations of Functions</span>
 </h2>
-<div class="para" id="sec-PolynomialApproximation-2"><div class="autopermalink" data-description="Paragraph"><a href="#sec-PolynomialApproximation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="autopermalink" data-description="Section 9.1: Polynomial Approximations of Functions"><a href="#sec-PolynomialApproximation" title="Copy heading and permalink for Section 9.1: Polynomial Approximations of Functions" aria-label="Copy heading and permalink for Section 9.1: Polynomial Approximations of Functions">🔗</a></div></section></div>
+<section class="introduction" id="sec-PolynomialApproximation-2"><div class="para" id="sec-PolynomialApproximation-2-1">Before we start, it might be helpful to remind ourselves of the way we have used linear functions to approximate other functions in <a href="sec-LinearApproximation.html" class="internal" title="Section 4.6: Linear Approximations">Section 4.6 Linear Approximations</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-PolynomialApproximation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-WhatDoWeWant"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">What Do We Want From a Polynomial Approximation?</span>
+</h3>
+<div class="para" id="subsec-WhatDoWeWant-2"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-WhatDoWeWant-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Subsection: What Do We Want From a Polynomial Approximation?"><a href="#subsec-WhatDoWeWant" title="Copy heading and permalink for Subsection: What Do We Want From a Polynomial Approximation?" aria-label="Copy heading and permalink for Subsection: What Do We Want From a Polynomial Approximation?">🔗</a></div></section><section class="subsection" id="subsec-HowDoWeBuild"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">How Do We Build a Polynomial Approximation?</span>
+</h3>
+<div class="para" id="subsec-HowDoWeBuild-2"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-HowDoWeBuild-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<article class="definition definition-like" id="def-PolynomialApproximation"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Polynomial Approximation.</span>
+</h4>
+<div class="para logical" id="def-PolynomialApproximation-2-1">
+<div class="para">If <span class="process-math">\(f(x)\)</span> is a function that is <span class="process-math">\(n\)</span>-times differentiable at <span class="process-math">\(x=a\)</span> (that is, the functions <span class="process-math">\(f(a)\text{,}\)</span> <span class="process-math">\(f'(a)\text{,}\)</span> <span class="process-math">\(f''(a)\text{,}\)</span> ..., <span class="process-math">\(f^{(n)}(a)\)</span> all exist), then the <span class="process-math">\(n\)</span>th degree <dfn class="terminology">polynomial approximation of <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=a\)</span></dfn> is:</div>
+<div class="displaymath process-math" id="def-PolynomialApproximation-2-1-10">
+\begin{align*}
+p_n(x) \amp = f(a)+ f'(a)(x-a)+\frac{f''(a)}{2}(x-a)^2+...+ \frac{f^{(n)}(a)}{n!}(x-a)^n\\
+\amp = \sum_{k=1}^n \frac{f^{(k)}(a)}{k!}(x-a)^k
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-PolynomialApproximation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9.1.1: Polynomial Approximation"><a href="#def-PolynomialApproximation" title="Copy heading and permalink for Definition 9.1.1: Polynomial Approximation" aria-label="Copy heading and permalink for Definition 9.1.1: Polynomial Approximation">🔗</a></div></article><article class="activity project-like" id="act-BuildPolynomial"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Build a Polynomial.</span>
+</h4>
+<div class="introduction" id="act-BuildPolynomial-2"><div class="para" id="act-BuildPolynomial-2-1">We’re going to use the formula in <a href="sec-PolynomialApproximation.html#def-PolynomialApproximation" class="xref" data-knowl="./knowl/xref/def-PolynomialApproximation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 9.1.1: Polynomial Approximation">Definition 9.1.1</a> to construct two different polynomials that approximate two different approximations. Then, we’ll use them to approximate things!<div class="autopermalink" data-description="Paragraph"><a href="#act-BuildPolynomial-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="act-BuildPolynomial-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-BuildPolynomial-3-1-1">We’re going to start with approximating the function <span class="process-math">\(f(x)=\sin(x)\)</span> centered at <span class="process-math">\(x=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-BuildPolynomial-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.1.1.a"><a href="#act-BuildPolynomial-3" title="Copy heading and permalink for Task 9.1.1.a" aria-label="Copy heading and permalink for Task 9.1.1.a">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.1.1: Build a Polynomial"><a href="#act-BuildPolynomial" title="Copy heading and permalink for Activity 9.1.1: Build a Polynomial" aria-label="Copy heading and permalink for Activity 9.1.1: Build a Polynomial">🔗</a></div></article><div class="autopermalink" data-description="Subsection: How Do We Build a Polynomial Approximation?"><a href="#subsec-HowDoWeBuild" title="Copy heading and permalink for Subsection: How Do We Build a Polynomial Approximation?" aria-label="Copy heading and permalink for Subsection: How Do We Build a Polynomial Approximation?">🔗</a></div></section><section class="subsection" id="subsec-AreThesePartialSums"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Are These Partial Sums?</span>
+</h3>
+<div class="para" id="subsec-AreThesePartialSums-2"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreThesePartialSums-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Subsection: Are These Partial Sums?"><a href="#subsec-AreThesePartialSums" title="Copy heading and permalink for Subsection: Are These Partial Sums?" aria-label="Copy heading and permalink for Subsection: Are These Partial Sums?">🔗</a></div></section><div class="autopermalink" data-description="Section 9.1: Polynomial Approximations of Functions"><a href="#sec-PolynomialApproximation" title="Copy heading and permalink for Section 9.1: Polynomial Approximations of Functions" aria-label="Copy heading and permalink for Section 9.1: Polynomial Approximations of Functions">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-PowerSeries.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-TaylorSeries.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
