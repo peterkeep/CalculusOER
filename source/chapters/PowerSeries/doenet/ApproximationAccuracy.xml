@@ -1,0 +1,43 @@
+<setup>
+  <function name="f">sin(x)</function>
+  <function name="fApprox" styleNumber="2">x-x^3/6+x^5/120</function>
+  <function name="g">e^x</function>
+  <function name="gApprox" styleNumber="2">1+x+x^2/2+x^3/6+x^4/24+x^5/120</function>
+</setup>
+
+<p><em>Instructions:</em> Toggle between the functions <m>f(x)=\sin(x)</m> and <m>g(x)=e^x</m> to view the function and the 5th degree polynomial approximation of that function. Then, compare the approximations by dragging the point or inputting an <m>x</m>-value.</p>
+
+<choiceInput name="funcChoice">
+  <choice preSelect><m>f(x)=\sin(x)</m></choice>
+  <choice><m>g(x)=e^x</m></choice></choiceInput>
+
+<p>Approximate at <m>x=</m><mathInput name="a" prefill="0"/></p>
+
+<graph xMin="-4" xMax="4" yMin="-3" yMax="3" identicalAxisScales size="large">
+  <conditionalContent>
+    <case condition="$funcChoice.selectedIndices=1">
+      $f
+      <label styleNumber="1" anchor="(-3.5,0.75)" positionFromAnchor="right" fixed>
+        <m>f(x)=\sin(x)</m>
+      </label>
+      $fApprox
+      <label styleNumber="2" anchor="(-3.5,-1.35)" positionFromAnchor="right" fixed>
+        <m>p_5(x)=x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}</m>
+      </label>
+      <point styleNumber="2">($a, $$fApprox($a))</point>
+      <point>($a, $$f($a))</point>
+    </case>
+    <case condition="$funcChoice.selectedIndices=2">
+      $g
+      <label styleNumber="1" anchor="(-3.5,0.25)" positionFromAnchor="right" fixed>
+        <m>g(x)=e^x</m>
+      </label>
+      $gApprox
+      <label styleNumber="2" anchor="(-3.5,-1.8)" positionFromAnchor="right" fixed>
+        <m>p_5(x)=1+x+\dfrac{x^2}{2!}+\dfrac{x^3}{3!}+\dfrac{x^4}{4!}+\dfrac{x^5}{5!}</m>
+      </label>
+      <point styleNumber="2">($a, $$gApprox($a))</point>
+      <point>($a, $$g($a))</point>
+    </case>
+  </conditionalContent>
+</graph>

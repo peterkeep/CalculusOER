@@ -1,9 +1,41 @@
-<activity xml:id="act-CompareApproximations">
+<activity xml:id="act-CompareApproximations" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>How Good Are Our Approximations?</title>
     <introduction>
         <p>
-            
+            We're going to think more carefully about our approximations of <m>\sin(1)</m> and <m>e^{-3}</m> from <xref ref="act-BuildPolynomial"/>. In order for us to do this, let's visualize the function and the 5th degree polynomial for it.
         </p>
+        <interactive platform="doenetml" width="90%" aspect="1:1.3">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/ApproximationAccuracy.xml"/>
+            </slate>
+        </interactive>
     </introduction>
-    
+    <task>
+        <statement>
+            <p>
+               How good of a job did the polynomial approximation do when approximating <m>\sin(1)</m>? How can you tell, visually?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+               How good of a job did the polynomial approximation do when approximating <m>e^{-3}</m>? How can you tell, visually?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How does the relationship between the <q>center</q> and the <m>x</m>-value that we're approximating at impact the accuracy of our approximation?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How do you think you could make these approximations better (without changing the center)?
+            </p>
+        </statement>
+    </task>
 </activity>

@@ -31,6 +31,13 @@
             </statement>
         </definition>
         <xi:include href="./activities/act-BuildPolynomial.ptx" />
+        <p>
+            Now that we know how to build and use these, we should probably think about accuracy. Are the estimations coming from these polynomials even accurate? How do we talk about that?
+        </p>
+        <p>
+            We won't formally define this too much for now: instead, we'll just look at things visually and see if we can figure out what might go into how we talk about accuracy of our estimations.
+        </p>
+        <xi:include href="./activities/act-CompareApproximations.ptx" />
     </subsection>
     <subsection xml:id="subsec-AreThesePartialSums">
         <title>Are These Partial Sums?</title>
