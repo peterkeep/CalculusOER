@@ -6,6 +6,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="./core/pretext-latex.xsl"/>
 
+<xsl:template match="section">
+    <xsl:apply-imports />
+    <xsl:text>\cleardoublepage&#xA;&#xA;</xsl:text>
+</xsl:template>
+
 <xsl:template match="example" mode="tcb-style">
     <xsl:text>
         colframe=DCgreen, 
