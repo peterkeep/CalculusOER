@@ -8,7 +8,142 @@
     <task>
         <statement>
             <p>
-                We're going to start with approximating the function <m>f(x)=\sin(x)</m> centered at <m>x=0</m>.
+                We're going to start with approximating the function <m>f(x)=\sin(x)</m> centered at <m>x=0</m>. Let's choose to look at a 5th degree polynomial.
+            </p>
+            <p>
+                This means we'll need to find the first five derivatives of <m>f(x)=\sin(x)</m>. Then, we'll evaluate our function and the five derivatives at the center. After that, we can divide by the relevant factorial in order to create the coefficients of our polynomial.
+            </p>
+            <p>
+                Fill out the following chart to produce these coefficients.
+            </p>
+            <table>
+                <title>Coefficients for Polynomial Approximation</title>
+                <tabular>
+                    <row halign="center" bottom="medium">
+                        <cell><m>k</m></cell>
+                        <cell><m>f^{(k)}(x)</m></cell>
+                        <cell><m>f^{(k)}(a)</m></cell>
+                        <cell><m>\dfrac{f^{(k)}(a)}{k!}</m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>k=0</m></cell>
+                        <cell><m>f(x)=\sin(x)</m></cell>
+                        <cell><m>f(0)=<fillin characters="5" /></m></cell>
+                        <cell><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>k=1</m></cell>
+                        <cell><m>f'(x)=<fillin characters="5" /></m></cell>
+                        <cell><m>f'(0)=<fillin characters="5" /></m></cell>
+                        <cell><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>k=2</m></cell>
+                        <cell><m>f''(x)=<fillin characters="5" /></m></cell>
+                        <cell><m>f''(0)=<fillin characters="5" /></m></cell>
+                        <cell><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>k=3</m></cell>
+                        <cell><m>f'''(x)=<fillin characters="5" /></m></cell>
+                        <cell><m>f'''(0)=<fillin characters="5" /></m></cell>
+                        <cell><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>k=4</m></cell>
+                        <cell><m>f^{(4)}(x)=<fillin characters="5" /></m></cell>
+                        <cell><m>f^{(4)}(0)=<fillin characters="5" /></m></cell>
+                        <cell><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row halign="center" bottom="medium">
+                        <cell><m>k=5</m></cell>
+                        <cell><m>f^{(5)}(x)=<fillin characters="5" /></m></cell>
+                        <cell><m>f^{(5)}(0)=<fillin characters="5" /></m></cell>
+                        <cell><m><fillin characters="5" /></m></cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form <m>(x-a)^k</m> for <m>k=0,1,...,5</m>. These (added together) will form your polynomial, <m>p_5(x)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Approximate <m>f(1)=\sin(1)</m> using your polynomial.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's repeat this for another function. Let's build a 5th degree polynomial approximation of <m>g(x)=e^x</m> centered at <m>x=0</m>. We can construct the coefficients in the same way.
+            </p>
+            <table>
+                <title>Coefficients for Polynomial Approximation</title>
+                <tabular>
+                    <row halign="center" bottom="medium">
+                        <cell><m>k</m></cell>
+                        <cell><m>g^{(k)}(x)</m></cell>
+                        <cell><m>g^{(k)}(a)</m></cell>
+                        <cell><m>\dfrac{g^{(k)}(a)}{k!}</m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>k=0</m></cell>
+                        <cell><m>g(x)=e^x</m></cell>
+                        <cell><m>g(0)=<fillin characters="5" /></m></cell>
+                        <cell><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>k=1</m></cell>
+                        <cell><m>g'(x)=<fillin characters="5" /></m></cell>
+                        <cell><m>g'(0)=<fillin characters="5" /></m></cell>
+                        <cell><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>k=2</m></cell>
+                        <cell><m>g''(x)=<fillin characters="5" /></m></cell>
+                        <cell><m>g''(0)=<fillin characters="5" /></m></cell>
+                        <cell><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>k=3</m></cell>
+                        <cell><m>g'''(x)=<fillin characters="5" /></m></cell>
+                        <cell><m>g'''(0)=<fillin characters="5" /></m></cell>
+                        <cell><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>k=4</m></cell>
+                        <cell><m>g^{(4)}(x)=<fillin characters="5" /></m></cell>
+                        <cell><m>g^{(4)}(0)=<fillin characters="5" /></m></cell>
+                        <cell><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row halign="center" bottom="medium">
+                        <cell><m>k=5</m></cell>
+                        <cell><m>g^{(5)}(x)=<fillin characters="5" /></m></cell>
+                        <cell><m>g^{(5)}(0)=<fillin characters="5" /></m></cell>
+                        <cell><m><fillin characters="5" /></m></cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                And now, again, we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form <m>(x-a)^k</m> for <m>k=0,1,...,5</m>. These (added together) will form your polynomial, <m>p_5(x)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Approximate <m>g(-3)=\dfrac{1}{e^3}</m> using your polynomial.
             </p>
         </statement>
     </task>
