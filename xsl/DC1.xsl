@@ -18,8 +18,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:apply-templates select="." mode="number" />
 </xsl:template>
 
-<xsl:variable name="b-latex-hardcode-numbers" select="true()"/>
-
 <!-- Skip DC2 chapters -->
 
 <xsl:template match="id('ch-ApplicationsIntegrals')"/>

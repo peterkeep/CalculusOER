@@ -17,8 +17,6 @@
   <xsl:apply-templates select="." mode="number" />
 </xsl:template>
 
-<xsl:variable name="b-latex-hardcode-numbers" select="true()"/>
-
 
 <!-- We pull activities from each introduction -->
 <!-- We want to leave the introductions to activities, so we're skipping over them -->
