@@ -211,4 +211,152 @@
             </statement>
         </task>
     </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Evaluate the following limits analytically. Also evaluate the relevant one-sided limits when needed.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                   <m>\displaystyle\lim_{x\to-\infty} \left(2+4x-5x^2+\dfrac{x^3}{7} - \dfrac{8x^4}{9}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>\displaystyle\lim_{x\to\infty} \left( \dfrac{5x^3-4x+3}{2x+6}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>\displaystyle\lim_{x\to -3^-} \left( \dfrac{5x^3-4x+3}{2x+6}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>\displaystyle\lim_{x\to-\infty} \left( \dfrac{x-10}{3x+4}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>\displaystyle\lim_{x\to 2} \left( \dfrac{4x-1}{x^4-16}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>\displaystyle\lim_{x\to\infty} \left( \dfrac{6-5x^5}{2+3x^2}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>\displaystyle\lim_{x\to 1} \left( \dfrac{x^2+1}{x^3-2x^2+x}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>\displaystyle\lim_{\theta\to3\pi/2} \sin(\theta)\tan(\theta)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following functions, find the locations of any vertical asymptotes and report the behavior of the functions around those asymptotes using limit statements.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                   <m>f(x) = \dfrac{|x-4|}{x+2}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>g(x) = \dfrac{\sin x}{x^2-1}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>h(t) = \dfrac{4}{t} + \dfrac{9}{t-1}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    If you'd rather, you can add the terms together to get:
+                    <me>
+                        h(t)=\frac{13t-4}{t(t-1)}
+                    </me>.
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>s(w) = \dfrac{w^3-3w^2+w-1}{w^2-5w+6}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>f(x) = \dfrac{e^x}{(x-3)^4}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following functions, find the locations of any horizontal asymptotes using limit statements (as <m>x\to\infty</m> and <m>x\to-\infty</m>).
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                   <m>f(x)= 2 + \dfrac{10}{x^2}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>g(x)=\dfrac{4x^5-3x^3+5x-1}{10x^2+5x^3-5x^4}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>h(x) = \dfrac{3x^2+4x+\sqrt{x}}{1-\sqrt{x}-2x^2}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>j(x) = \dfrac{3}{5 + 10^{1/x}}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
 </exercises>
