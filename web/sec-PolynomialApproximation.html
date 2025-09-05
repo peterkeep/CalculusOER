@@ -101,14 +101,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.8';
+eBookConfig.runestone_version = '7.9.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.b215b0da62d655bd.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.fea5c754ab3e056b.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.b37c97cbe7a5455b.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
@@ -660,9 +660,110 @@ p_n(x) \amp = f(a)+ f'(a)(x-a)+\frac{f''(a)}{2}(x-a)^2+...+ \frac{f^{(n)}(a)}{n!
 <div class="introduction" id="act-BuildPolynomial-2"><div class="para" id="act-BuildPolynomial-2-1">We’re going to use the formula in <a href="sec-PolynomialApproximation.html#def-PolynomialApproximation" class="xref" data-knowl="./knowl/xref/def-PolynomialApproximation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 9.1.1: Polynomial Approximation">Definition 9.1.1</a> to construct two different polynomials that approximate two different approximations. Then, we’ll use them to approximate things!<div class="autopermalink" data-description="Paragraph"><a href="#act-BuildPolynomial-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="act-BuildPolynomial-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-BuildPolynomial-3-1-1">We’re going to start with approximating the function <span class="process-math">\(f(x)=\sin(x)\)</span> centered at <span class="process-math">\(x=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-BuildPolynomial-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-BuildPolynomial-3-1-1">We’re going to start with approximating the function <span class="process-math">\(f(x)=\sin(x)\)</span> centered at <span class="process-math">\(x=0\text{.}\)</span> Let’s choose to look at a 5th degree polynomial.<div class="autopermalink" data-description="Paragraph"><a href="#act-BuildPolynomial-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="act-BuildPolynomial-3-1-2">This means we’ll need to find the first five derivatives of <span class="process-math">\(f(x)=\sin(x)\text{.}\)</span> Then, we’ll evaluate our function and the five derivatives at the center. After that, we can divide by the relevant factorial in order to create the coefficients of our polynomial.<div class="autopermalink" data-description="Paragraph"><a href="#act-BuildPolynomial-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="act-BuildPolynomial-3-1-3">Fill out the following chart to produce these coefficients.<div class="autopermalink" data-description="Paragraph"><a href="#act-BuildPolynomial-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <figure class="table table-like" id="act-BuildPolynomial-3-1-4"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">9.1.2<span class="period">.</span></span><span class="space"> </span>Coefficients for Polynomial Approximation<div class="autopermalink" data-description="Table 9.1.2: Coefficients for Polynomial Approximation"><a href="#act-BuildPolynomial-3-1-4" title="Copy heading and permalink for Table 9.1.2: Coefficients for Polynomial Approximation" aria-label="Copy heading and permalink for Table 9.1.2: Coefficients for Polynomial Approximation">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(k\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(f^{(k)}(x)\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(f^{(k)}(a)\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(\dfrac{f^{(k)}(a)}{k!}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)=\sin(x)\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f'(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f'(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=2\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f''(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f''(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f'''(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f'''(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=4\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f^{(4)}(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f^{(4)}(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(k=5\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(f^{(5)}(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(f^{(5)}(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Task 9.1.1.a"><a href="#act-BuildPolynomial-3" title="Copy heading and permalink for Task 9.1.1.a" aria-label="Copy heading and permalink for Task 9.1.1.a">🔗</a></div></article><article class="task exercise-like" id="act-BuildPolynomial-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-BuildPolynomial-4-1-1">Now we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form <span class="process-math">\((x-a)^k\)</span> for <span class="process-math">\(k=0,1,...,5\text{.}\)</span> These (added together) will form your polynomial, <span class="process-math">\(p_5(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-BuildPolynomial-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 9.1.1.a"><a href="#act-BuildPolynomial-3" title="Copy heading and permalink for Task 9.1.1.a" aria-label="Copy heading and permalink for Task 9.1.1.a">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.1.1: Build a Polynomial"><a href="#act-BuildPolynomial" title="Copy heading and permalink for Activity 9.1.1: Build a Polynomial" aria-label="Copy heading and permalink for Activity 9.1.1: Build a Polynomial">🔗</a></div></article><div class="autopermalink" data-description="Subsection: How Do We Build a Polynomial Approximation?"><a href="#subsec-HowDoWeBuild" title="Copy heading and permalink for Subsection: How Do We Build a Polynomial Approximation?" aria-label="Copy heading and permalink for Subsection: How Do We Build a Polynomial Approximation?">🔗</a></div></section><section class="subsection" id="subsec-AreThesePartialSums"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Task 9.1.1.b"><a href="#act-BuildPolynomial-4" title="Copy heading and permalink for Task 9.1.1.b" aria-label="Copy heading and permalink for Task 9.1.1.b">🔗</a></div></article><article class="task exercise-like" id="act-BuildPolynomial-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-BuildPolynomial-5-1-1">Approximate <span class="process-math">\(f(1)=\sin(1)\)</span> using your polynomial.<div class="autopermalink" data-description="Paragraph"><a href="#act-BuildPolynomial-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.1.1.c"><a href="#act-BuildPolynomial-5" title="Copy heading and permalink for Task 9.1.1.c" aria-label="Copy heading and permalink for Task 9.1.1.c">🔗</a></div></article><article class="task exercise-like" id="act-BuildPolynomial-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-BuildPolynomial-6-1-1">Let’s repeat this for another function. Let’s build a 5th degree polynomial approximation of <span class="process-math">\(g(x)=e^x\)</span> centered at <span class="process-math">\(x=0\text{.}\)</span> We can construct the coefficients in the same way.<div class="autopermalink" data-description="Paragraph"><a href="#act-BuildPolynomial-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <figure class="table table-like" id="act-BuildPolynomial-6-1-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">9.1.3<span class="period">.</span></span><span class="space"> </span>Coefficients for Polynomial Approximation<div class="autopermalink" data-description="Table 9.1.3: Coefficients for Polynomial Approximation"><a href="#act-BuildPolynomial-6-1-2" title="Copy heading and permalink for Table 9.1.3: Coefficients for Polynomial Approximation" aria-label="Copy heading and permalink for Table 9.1.3: Coefficients for Polynomial Approximation">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(k\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(g^{(k)}(x)\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(g^{(k)}(a)\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(\dfrac{g^{(k)}(a)}{k!}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g(x)=e^x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g'(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g'(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=2\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g''(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g''(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g'''(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g'''(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=4\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g^{(4)}(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g^{(4)}(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(k=5\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(g^{(5)}(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(g^{(5)}(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Task 9.1.1.d"><a href="#act-BuildPolynomial-6" title="Copy heading and permalink for Task 9.1.1.d" aria-label="Copy heading and permalink for Task 9.1.1.d">🔗</a></div></article><article class="task exercise-like" id="act-BuildPolynomial-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-BuildPolynomial-7-1-1">And now, again, we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form <span class="process-math">\((x-a)^k\)</span> for <span class="process-math">\(k=0,1,...,5\text{.}\)</span> These (added together) will form your polynomial, <span class="process-math">\(p_5(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-BuildPolynomial-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.1.1.e"><a href="#act-BuildPolynomial-7" title="Copy heading and permalink for Task 9.1.1.e" aria-label="Copy heading and permalink for Task 9.1.1.e">🔗</a></div></article><article class="task exercise-like" id="act-BuildPolynomial-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="act-BuildPolynomial-8-1-1">Approximate <span class="process-math">\(g(-3)=\dfrac{1}{e^3}\)</span> using your polynomial.<div class="autopermalink" data-description="Paragraph"><a href="#act-BuildPolynomial-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.1.1.f"><a href="#act-BuildPolynomial-8" title="Copy heading and permalink for Task 9.1.1.f" aria-label="Copy heading and permalink for Task 9.1.1.f">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.1.1: Build a Polynomial"><a href="#act-BuildPolynomial" title="Copy heading and permalink for Activity 9.1.1: Build a Polynomial" aria-label="Copy heading and permalink for Activity 9.1.1: Build a Polynomial">🔗</a></div></article><div class="autopermalink" data-description="Subsection: How Do We Build a Polynomial Approximation?"><a href="#subsec-HowDoWeBuild" title="Copy heading and permalink for Subsection: How Do We Build a Polynomial Approximation?" aria-label="Copy heading and permalink for Subsection: How Do We Build a Polynomial Approximation?">🔗</a></div></section><section class="subsection" id="subsec-AreThesePartialSums"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Are These Partial Sums?</span>
 </h3>
 <div class="para" id="subsec-AreThesePartialSums-2"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreThesePartialSums-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
