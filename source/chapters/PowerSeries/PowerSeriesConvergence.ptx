@@ -1,8 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-PowerSeriesProperties" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Properties of Power Series</title>
+<section xml:id="sec-PowerSeriesConvergence" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Power Series Convergence</title>
 
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      At the end of <xref ref="sec-PolynomialApproximation" text="type-global-title"/>, we saw that these polynomial approximations can be thought of as partial sums of some larger infinite series. These infinite series are begging us to think about different notions of convergence, and at the end of the section, we saw that the polynomials, as the degree increases off to infinity, converge to match the function they are approximating, but this might be dependent on some interval of <m>x</m>-values. A domain, in a sense.
+    </p>
+    <p>
+      In this section, we'll investigate what it means for a power series, these infinite series of power functions, to converge. Let's define a power series, and then we can think about convergence from there.
+    </p>
+    <definition xml:id="def-PowerSeries">
+      <title>Power Series</title>
+      <statement>
+        <p>
+          A <term>power series</term> centered at <m>x=a</m> is an infinite series in the form:
+          <me>
+            \sum_{k=0}^\infty c_k(x-a)^k = c_0 + c_1(x-a)+c_2(x-a)^2+...
+          </me>
+          where <m>\{c_k\}_{k=0}^\infty</m> is a sequence of real numbered coefficients.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      We have a good idea of how we can build these sequences of coefficients in order for the power series we construct to converge to specific functions that we are interested in.
+    </p>
+    <p>
+      Before we state this formally, let's write down what we mean when we talk about convergence of power series.
+    </p>
+    <p>
+      One last thing: we have a kind of closure, so far, in our series. If we add up an infinite amount of numbers, then the infinite series might converge. If it does, it converges to a number (since sums of numbers are numbers). In a power series, though, we are adding up an infinite number of functions of <m>x</m>. If this series converges, it will converge to a function of <m>x</m> (since sums of functions are functions). So every power series is really a function.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-IntervalOfConvergence">
+    <title>Interval of Convergence</title>
+    <xi:include href="./activities/act-PolynomialDivision.ptx" />
+    <p>
+      In this activity, we see that we can re-think about our <xref ref="def-GeometricSeries" text="title"/> family of series as a power series! Then, instead of saying that we have some requirements on the <q>ratio</q> for the geometric series to converge, we can say that the power series <m>g(x)=\displaystyle\sum_{k=0}^\infty x^k</m> converges for <m>x</m>-values in the interval <m>(-1,1)</m>.
+    </p>
+    <aside>
+      <p>
+        If we do this same thing with our other common series, the <m>p</m>-series, then we'd not have a power series, but something slightly different:
+        <me>
+          f(x)=\sum_{k=1}^\infty \frac{1}{k^x}
+        </me>.
+        This series definitely converges for real <m>x</m>-values in the interval <m>(1,\infty)</m>.
+      </p>
+      <p>
+        This function is called the <term>Riemann zeta function</term>, and is hugely important to many different fields of mathematics. We often care about this function when it has complex-number inputs (instead of just real-number inputs). It is also the focal point of one of the most famous unsolved mathematical questions, the Riemann hypothesis.
+      </p>
+    </aside>
+    <p>
+      We noticed in <xref ref="act-ConvergeToWhat" text="type-global-title"/> that the polynomials built to approximate the natural log function does seem to converge to the function as <m>n\to\infty</m>, but only for specific <m>x</m>-values. Hopefully we have some nice ideas as to why that happened: there is a vertical asymptote, and so maybe the <q>distance</q> from the center that this polynomial could approximate <m>\ln(x)</m> at is limited!
+    </p>
+    <p>
+      In general, we can notice that this isn't new: we have families of infinite series that have specific values of variables for which they converge.
+    </p>
+    <p>
+      A big thing to notice is that these power series, by definition, include exponentials in them (since <m>x^k</m> is a power function of <m>x</m> but is also an exponential function of <m>k</m>). This means that they're great candidates to use the <xref ref="thm-RatioTest" text="title"/>. Since we have a variable <m>x</m> (and we don't know if this variable is taking on positive or negative values), we'll need to test these series for absolute convergence.
+    </p>
+    <xi:include href="./activities/act-PowerSeriesConvergence.ptx" />
+  </subsection>
+  <subsection xml:id="subsec-OperationsPowerSeries">
+    <title>Operations on Power Series</title>
+    
+  </subsection>
 
 </section>

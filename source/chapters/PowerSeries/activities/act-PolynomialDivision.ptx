@@ -1,0 +1,129 @@
+<activity xml:id="act-PolynomialDivision">
+    <title>Polynomial Division</title>
+    <introduction>
+        <p>
+            We're going to do some fiddling with polynomials, and hopefully use this as a bridge to connect how we think of polynomials and power series with how we think about our traditional infinite series and the notions of convergence that we've already built.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                We're going to factor some polynomials, but we might end up using some division. First, we'll confirm some factors that we already know. 
+                <me>
+                    x^2-1 = (x-1)(x+1)
+                </me>
+                We'll confirm this by using division.
+                <tabular>
+                    <row halign="right">
+                    <cell></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    </row>
+                    <row halign="right">
+                    <cell right="medium"><m>x-1</m></cell>
+                    <cell><m>x^2</m></cell>
+                    <cell><m></m></cell>
+                    <cell><m>-1</m></cell>
+                    </row>
+                </tabular>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now let's factor <m>x^3-1</m>. If the factors for this polynomial isn't as familiar, it might be helpful to know that <m>(x-1)</m> is also a factor of <m>x^3-1</m>.
+                <tabular>
+                    <row halign="right">
+                    <cell></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    </row>
+                    <row halign="right">
+                    <cell right="medium"><m>x-1</m></cell>
+                    <cell><m>x^3</m></cell>
+                    <cell><m></m></cell>
+                    <cell><m></m></cell>
+                    <cell><m>-1</m></cell>
+                    </row>
+                </tabular>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Let's try another one. Complete the following division.
+                <tabular>
+                    <row halign="right">
+                    <cell></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    </row>
+                    <row halign="right">
+                    <cell right="medium"><m>x-1</m></cell>
+                    <cell><m>x^4</m></cell>
+                    <cell><m></m></cell>
+                    <cell><m></m></cell>
+                    <cell><m></m></cell>
+                    <cell><m>-1</m></cell>
+                    </row>
+                </tabular>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you generalize this? Find the formula for <m>\dfrac{x^n-1}{x-1}</m> for some positive integer <m>n</m>.
+                <tabular>
+                    <row halign="right">
+                    <cell></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    <cell bottom="medium"></cell>
+                    </row>
+                    <row halign="right">
+                    <cell right="medium"><m>x-1</m></cell>
+                    <cell><m>x^n</m></cell>
+                    <cell><m></m></cell>
+                    <cell><m></m></cell>
+                    <cell><m></m></cell>
+                    <cell><m>-1</m></cell>
+                    </row>
+                </tabular>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now that we have good evidence that
+                <me>
+                    \sum_{k=0}^\infty x^k = \frac{x^n-1}{x-1}
+                </me>,
+                We can apply a limit as <m>n\to\infty</m>. 
+                <md>
+                    <mrow> \sum_{k=0}^\infty x^k \amp =\lim_{n\to\infty} \sum_{k=0}^n x^k </mrow>
+                    <mrow> \amp = \lim_{n\to\infty} \frac{x^n-1}{x-1}</mrow>
+                </md> 
+                For what values of <m>x</m> will this limit exist?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Revisit <xref ref="thm-GeometricSeries" text="type-global-title"/>. Is there any difference for what we've just done compared to this result that we already know?
+            </p>
+        </statement>
+    </task>
+</activity>

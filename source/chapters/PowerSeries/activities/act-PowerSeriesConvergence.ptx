@@ -1,0 +1,30 @@
+<activity xml:id="act-PowerSeriesConvergence">
+    <title>Some Power Series and their Convergence</title>
+    <introduction>
+        <p>
+            Let's consider a couple of power series and apply some convergence tests to them in order for us to find out how it might converge.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Consider the power series:
+                <me>
+                    \sum_{k=0}^\infty \frac{(x-1)^k}{k^2}
+                </me>.
+                In order for us to apply the Ratio Test, we'll actually need to consider the positive-term version:
+                <me>
+                    \sum_{k=0}^\infty \frac{|x-1|^k}{k^2}
+                </me>.
+                Apply the Ratio Test. What do you get in the limit of the ratio between terms?                
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                
+            </p>
+        </statement>
+    </task>
+</activity>
