@@ -4624,7 +4624,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.1",
   "title": "Polynomial Approximations of Functions",
-  "body": " Polynomial Approximations of Functions   Before we start, it might be helpful to remind ourselves of the way we have used linear functions to approximate other functions in .    What Do We Want From a Polynomial Approximation?      How Do We Build a Polynomial Approximation?     Polynomial Approximation   If is a function that is -times differentiable at (that is, the functions , , , ..., all exist), then the th degree polynomial approximation of centered at is:      Build a Polynomial   We're going to use the formula in to construct two different polynomials that approximate two different approximations. Then, we'll use them to approximate things!     We're going to start with approximating the function centered at . Let's choose to look at a 5th degree polynomial.  This means we'll need to find the first five derivatives of . Then, we'll evaluate our function and the five derivatives at the center. After that, we can divide by the relevant factorial in order to create the coefficients of our polynomial.  Fill out the following chart to produce these coefficients.   Coefficients for Polynomial Approximation                                                   Now we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form for . These (added together) will form your polynomial, .      Approximate using your polynomial.      Let's repeat this for another function. Let's build a 5th degree polynomial approximation of centered at . We can construct the coefficients in the same way.   Coefficients for Polynomial Approximation                                                   And now, again, we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form for . These (added together) will form your polynomial, .      Approximate using your polynomial.       Are These Partial Sums?     "
+  "body": " Polynomial Approximations of Functions   Before we start, it might be helpful to remind ourselves of the way we have used linear functions to approximate other functions in .    What Do We Want From a Polynomial Approximation?      How Do We Build a Polynomial Approximation?     Polynomial Approximation   If is a function that is -times differentiable at (that is, the functions , , , ..., all exist), then the th degree polynomial approximation of centered at is:      Build a Polynomial   We're going to use the formula in to construct two different polynomials that approximate two different approximations. Then, we'll use them to approximate things!     We're going to start with approximating the function centered at . Let's choose to look at a 5th degree polynomial.  This means we'll need to find the first five derivatives of . Then, we'll evaluate our function and the five derivatives at the center. After that, we can divide by the relevant factorial in order to create the coefficients of our polynomial.  Fill out the following chart to produce these coefficients.   Coefficients for Polynomial Approximation                                                   Now we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form for . These (added together) will form your polynomial, .      Approximate using your polynomial.      Let's repeat this for another function. Let's build a 5th degree polynomial approximation of centered at . We can construct the coefficients in the same way.   Coefficients for Polynomial Approximation                                                   And now, again, we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form for . These (added together) will form your polynomial, .      Approximate using your polynomial.     Now that we know how to build and use these, we should probably think about accuracy. Are the estimations coming from these polynomials even accurate? How do we talk about that?  We won't formally define this too much for now: instead, we'll just look at things visually and see if we can figure out what might go into how we talk about accuracy of our estimations.   How Good Are Our Approximations?   We're going to think more carefully about our approximations of and from . In order for us to do this, let's visualize the function and the 5th degree polynomial for it.      How good of a job did the polynomial approximation do when approximating ? How can you tell, visually?      How good of a job did the polynomial approximation do when approximating ? How can you tell, visually?      How does the relationship between the center and the -value that we're approximating at impact the accuracy of our approximation?      How do you think you could make these approximations better (without changing the center)?     So we have a couple of main ideas about the accuracy of our approximations. We don't need to formalize them, but we can use them as a guiding rule for how we talk about these polynomial approximations.   Accuracy in Polynomial Approximations     Approximations using -values closer to the center are likely to be more accurate than approximations using -values farther away from the center.    Polynomials with larger degrees give more accurate approximations than polynomials with smaller degrees at the same -values.        Are These Partial Sums?     Partial Sums of What?   Let's revisit our 5th degree polynomial approximations from . These approximations work well for -values that are close to 0, but we will not be more formal than that.     Make a conjecture about what the 7th degree polynomial approximations are for each of these functions.  What about the 15th degree?      Make a conjecture about what the general formula would be for these terms. If you were to write these out using summation notation, what would they look like?      Why does the polynomial approximation for the sine function only have odd-exponent terms?      Make a conjecture about what a polynomial approximation for centered at would be.      How Do These Polynomials Converge?   We're going to end here by thinking about these polynomials as some partial sum from an infinite series. If there is an infinite series, we should be prepared to think about convergence!  We're going to think about convergence in the same way that we have already: as an end behavior limit of the partial sums. So let's spend our time investigating this end behavior by visualizing polynomial approximations as the degree increases.      What happens to the polynomial approximation of centered at as the degree ?      Does this behavior change if we centered our approximation elsewhere?      What happens to the polynomial approximation of centered at as the degree ?      Does this behavior change if we centered our approximation elsewhere?      What happens to the polynomial approximation of centered at as the degree ?      Does this behavior change if we centered our approximation elsewhere?      What happens to the polynomial approximation of centered at as the degree ?      Describe the difference in what you're seeing with the log function compared to the other functions we've thought about. Describe how the polynomial approximations converge: do they converge to the log function? How? More importantly, where ?      Does this behavior change if we centered our approximation elsewhere?      "
 },
 {
   "id": "def-PolynomialApproximation",
@@ -4645,20 +4645,38 @@ var ptx_lunr_docs = [
   "body": " Build a Polynomial   We're going to use the formula in to construct two different polynomials that approximate two different approximations. Then, we'll use them to approximate things!     We're going to start with approximating the function centered at . Let's choose to look at a 5th degree polynomial.  This means we'll need to find the first five derivatives of . Then, we'll evaluate our function and the five derivatives at the center. After that, we can divide by the relevant factorial in order to create the coefficients of our polynomial.  Fill out the following chart to produce these coefficients.   Coefficients for Polynomial Approximation                                                   Now we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form for . These (added together) will form your polynomial, .      Approximate using your polynomial.      Let's repeat this for another function. Let's build a 5th degree polynomial approximation of centered at . We can construct the coefficients in the same way.   Coefficients for Polynomial Approximation                                                   And now, again, we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form for . These (added together) will form your polynomial, .      Approximate using your polynomial.    "
 },
 {
-  "id": "sec-TaylorSeries",
-  "level": "1",
-  "url": "sec-TaylorSeries.html",
-  "type": "Section",
-  "number": "9.2",
-  "title": "Taylor Series",
-  "body": " Taylor Series  Text of section.  "
+  "id": "act-CompareApproximations",
+  "level": "2",
+  "url": "sec-PolynomialApproximation.html#act-CompareApproximations",
+  "type": "Activity",
+  "number": "9.1.2",
+  "title": "How Good Are Our Approximations?",
+  "body": " How Good Are Our Approximations?   We're going to think more carefully about our approximations of and from . In order for us to do this, let's visualize the function and the 5th degree polynomial for it.      How good of a job did the polynomial approximation do when approximating ? How can you tell, visually?      How good of a job did the polynomial approximation do when approximating ? How can you tell, visually?      How does the relationship between the center and the -value that we're approximating at impact the accuracy of our approximation?      How do you think you could make these approximations better (without changing the center)?    "
+},
+{
+  "id": "act-PartialSumsOfWhat",
+  "level": "2",
+  "url": "sec-PolynomialApproximation.html#act-PartialSumsOfWhat",
+  "type": "Activity",
+  "number": "9.1.3",
+  "title": "Partial Sums of What?",
+  "body": " Partial Sums of What?   Let's revisit our 5th degree polynomial approximations from . These approximations work well for -values that are close to 0, but we will not be more formal than that.     Make a conjecture about what the 7th degree polynomial approximations are for each of these functions.  What about the 15th degree?      Make a conjecture about what the general formula would be for these terms. If you were to write these out using summation notation, what would they look like?      Why does the polynomial approximation for the sine function only have odd-exponent terms?      Make a conjecture about what a polynomial approximation for centered at would be.    "
+},
+{
+  "id": "act-ConvergeToWhat",
+  "level": "2",
+  "url": "sec-PolynomialApproximation.html#act-ConvergeToWhat",
+  "type": "Activity",
+  "number": "9.1.4",
+  "title": "How Do These Polynomials Converge?",
+  "body": " How Do These Polynomials Converge?   We're going to end here by thinking about these polynomials as some partial sum from an infinite series. If there is an infinite series, we should be prepared to think about convergence!  We're going to think about convergence in the same way that we have already: as an end behavior limit of the partial sums. So let's spend our time investigating this end behavior by visualizing polynomial approximations as the degree increases.      What happens to the polynomial approximation of centered at as the degree ?      Does this behavior change if we centered our approximation elsewhere?      What happens to the polynomial approximation of centered at as the degree ?      Does this behavior change if we centered our approximation elsewhere?      What happens to the polynomial approximation of centered at as the degree ?      Does this behavior change if we centered our approximation elsewhere?      What happens to the polynomial approximation of centered at as the degree ?      Describe the difference in what you're seeing with the log function compared to the other functions we've thought about. Describe how the polynomial approximations converge: do they converge to the log function? How? More importantly, where ?      Does this behavior change if we centered our approximation elsewhere?    "
 },
 {
   "id": "sec-PowerSeriesProperties",
   "level": "1",
   "url": "sec-PowerSeriesProperties.html",
   "type": "Section",
-  "number": "9.3",
+  "number": "9.2",
   "title": "Properties of Power Series",
   "body": " Properties of Power Series  Text of section.  "
 },
@@ -4667,7 +4685,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-BuildingTaylorSeries.html",
   "type": "Section",
-  "number": "9.4",
+  "number": "9.3",
   "title": "How to Build Taylor Series",
   "body": " How to Build Taylor Series  Text of section.  "
 },
@@ -4676,7 +4694,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-ApplyingTaylorSeries.html",
   "type": "Section",
-  "number": "9.5",
+  "number": "9.4",
   "title": "How to Use Taylor Series",
   "body": " How to Use Taylor Series  Text of section.  "
 },
