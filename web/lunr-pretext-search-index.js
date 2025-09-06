@@ -4672,13 +4672,49 @@ var ptx_lunr_docs = [
   "body": " How Do These Polynomials Converge?   We're going to end here by thinking about these polynomials as some partial sum from an infinite series. If there is an infinite series, we should be prepared to think about convergence!  We're going to think about convergence in the same way that we have already: as an end behavior limit of the partial sums. So let's spend our time investigating this end behavior by visualizing polynomial approximations as the degree increases.      What happens to the polynomial approximation of centered at as the degree ?      Does this behavior change if we centered our approximation elsewhere?      What happens to the polynomial approximation of centered at as the degree ?      Does this behavior change if we centered our approximation elsewhere?      What happens to the polynomial approximation of centered at as the degree ?      Does this behavior change if we centered our approximation elsewhere?      What happens to the polynomial approximation of centered at as the degree ?      Describe the difference in what you're seeing with the log function compared to the other functions we've thought about. Describe how the polynomial approximations converge: do they converge to the log function? How? More importantly, where ?      Does this behavior change if we centered our approximation elsewhere?    "
 },
 {
-  "id": "sec-PowerSeriesProperties",
+  "id": "sec-PowerSeriesConvergence",
   "level": "1",
-  "url": "sec-PowerSeriesProperties.html",
+  "url": "sec-PowerSeriesConvergence.html",
   "type": "Section",
   "number": "9.2",
-  "title": "Properties of Power Series",
-  "body": " Properties of Power Series  Text of section.  "
+  "title": "Power Series Convergence",
+  "body": " Power Series Convergence   At the end of , we saw that these polynomial approximations can be thought of as partial sums of some larger infinite series. These infinite series are begging us to think about different notions of convergence, and at the end of the section, we saw that the polynomials, as the degree increases off to infinity, converge to match the function they are approximating, but this might be dependent on some interval of -values. A domain, in a sense.  In this section, we'll investigate what it means for a power series, these infinite series of power functions, to converge. Let's define a power series, and then we can think about convergence from there.   Power Series   A power series centered at is an infinite series in the form: where is a sequence of real numbered coefficients.    We have a good idea of how we can build these sequences of coefficients in order for the power series we construct to converge to specific functions that we are interested in.  Before we state this formally, let's write down what we mean when we talk about convergence of power series.  One last thing: we have a kind of closure, so far, in our series. If we add up an infinite amount of numbers, then the infinite series might converge. If it does, it converges to a number (since sums of numbers are numbers). In a power series, though, we are adding up an infinite number of functions of . If this series converges, it will converge to a function of (since sums of functions are functions). So every power series is really a function.    Interval of Convergence   Polynomial Division   We're going to do some fiddling with polynomials, and hopefully use this as a bridge to connect how we think of polynomials and power series with how we think about our traditional infinite series and the notions of convergence that we've already built.     We're going to factor some polynomials, but we might end up using some division. First, we'll confirm some factors that we already know. We'll confirm this by using division.                    Now let's factor . If the factors for this polynomial isn't as familiar, it might be helpful to know that is also a factor of .                      Let's try another one. Complete the following division.                        Can you generalize this? Find the formula for for some positive integer .                        Now that we have good evidence that , We can apply a limit as . For what values of will this limit exist?      Revisit . Is there any difference for what we've just done compared to this result that we already know?     In this activity, we see that we can re-think about our family of series as a power series! Then, instead of saying that we have some requirements on the ratio for the geometric series to converge, we can say that the power series converges for -values in the interval .   If we do this same thing with our other common series, the -series, then we'd not have a power series, but something slightly different: . This series definitely converges for real -values in the interval .  This function is called the Riemann zeta function , and is hugely important to many different fields of mathematics. We often care about this function when it has complex-number inputs (instead of just real-number inputs). It is also the focal point of one of the most famous unsolved mathematical questions, the Riemann hypothesis.   We noticed in that the polynomials built to approximate the natural log function does seem to converge to the function as , but only for specific -values. Hopefully we have some nice ideas as to why that happened: there is a vertical asymptote, and so maybe the distance from the center that this polynomial could approximate at is limited!  In general, we can notice that this isn't new: we have families of infinite series that have specific values of variables for which they converge.  A big thing to notice is that these power series, by definition, include exponentials in them (since is a power function of but is also an exponential function of ). This means that they're great candidates to use the . Since we have a variable (and we don't know if this variable is taking on positive or negative values), we'll need to test these series for absolute convergence.   Some Power Series and their Convergence   Let's consider a couple of power series and apply some convergence tests to them in order for us to find out how it might converge.     Consider the power series: . In order for us to apply the Ratio Test, we'll actually need to consider the positive-term version: . Apply the Ratio Test. What do you get in the limit of the ratio between terms?             Operations on Power Series   "
+},
+{
+  "id": "def-PowerSeries",
+  "level": "2",
+  "url": "sec-PowerSeriesConvergence.html#def-PowerSeries",
+  "type": "Definition",
+  "number": "9.2.1",
+  "title": "Power Series.",
+  "body": " Power Series   A power series centered at is an infinite series in the form: where is a sequence of real numbered coefficients.   "
+},
+{
+  "id": "act-PolynomialDivision",
+  "level": "2",
+  "url": "sec-PowerSeriesConvergence.html#act-PolynomialDivision",
+  "type": "Activity",
+  "number": "9.2.1",
+  "title": "Polynomial Division.",
+  "body": " Polynomial Division   We're going to do some fiddling with polynomials, and hopefully use this as a bridge to connect how we think of polynomials and power series with how we think about our traditional infinite series and the notions of convergence that we've already built.     We're going to factor some polynomials, but we might end up using some division. First, we'll confirm some factors that we already know. We'll confirm this by using division.                    Now let's factor . If the factors for this polynomial isn't as familiar, it might be helpful to know that is also a factor of .                      Let's try another one. Complete the following division.                        Can you generalize this? Find the formula for for some positive integer .                        Now that we have good evidence that , We can apply a limit as . For what values of will this limit exist?      Revisit . Is there any difference for what we've just done compared to this result that we already know?    "
+},
+{
+  "id": "subsec-IntervalOfConvergence-4-2",
+  "level": "2",
+  "url": "sec-PowerSeriesConvergence.html#subsec-IntervalOfConvergence-4-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Riemann zeta function "
+},
+{
+  "id": "act-PowerSeriesConvergence",
+  "level": "2",
+  "url": "sec-PowerSeriesConvergence.html#act-PowerSeriesConvergence",
+  "type": "Activity",
+  "number": "9.2.2",
+  "title": "Some Power Series and their Convergence.",
+  "body": " Some Power Series and their Convergence   Let's consider a couple of power series and apply some convergence tests to them in order for us to find out how it might converge.     Consider the power series: . In order for us to apply the Ratio Test, we'll actually need to consider the positive-term version: . Apply the Ratio Test. What do you get in the limit of the ratio between terms?          "
 },
 {
   "id": "sec-BuildingTaylorSeries",
