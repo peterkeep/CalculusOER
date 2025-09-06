@@ -38,11 +38,33 @@
             We won't formally define this too much for now: instead, we'll just look at things visually and see if we can figure out what might go into how we talk about accuracy of our estimations.
         </p>
         <xi:include href="./activities/act-CompareApproximations.ptx" />
+        <p>
+            So we have a couple of main ideas about the accuracy of our approximations. We don't need to formalize them, but we can use them as a guiding rule for how we talk about these polynomial approximations.
+        </p>
+        <assemblage xml:id="strat-ApproximationAccuracy">
+            <title>Accuracy in Polynomial Approximations</title>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            Approximations using <m>x</m>-values closer to the center are likely to be more accurate than approximations using <m>x</m>-values farther away from the center.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Polynomials with larger degrees give more accurate approximations than polynomials with smaller degrees at the same <m>x</m>-values.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </assemblage>
     </subsection>
     <subsection xml:id="subsec-AreThesePartialSums">
         <title>Are These Partial Sums?</title>
         <p>
             
         </p>
+        <xi:include href="./activities/act-PartialSumsOfWhat.ptx" />
+        <xi:include href="./activities/act-ConvergeToWhat.ptx" />
     </subsection>
 </section>

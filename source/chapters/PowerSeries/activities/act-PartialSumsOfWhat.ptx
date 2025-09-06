@@ -1,0 +1,44 @@
+<activity xml:id="act-PartialSumsOfWhat">
+    <title>Partial Sums of What?</title>
+    <introduction>
+        <p>
+            Let's revisit our 5th degree polynomial approximations from <xref ref="act-BuildPolynomial"/>.
+            <md>
+                <mrow>\sin(x) \amp \approx x-\frac{x^3}{3!} +\frac{x^5}{5!}</mrow>
+                <mrow>e^x \amp \approx 1+x+\frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^5}{5!} </mrow>
+            </md>
+            These approximations work well for <m>x</m>-values that are close to 0, but we will not be more formal than that.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Make a conjecture about what the 7th degree polynomial approximations are for each of these functions.
+            </p>
+            <p>
+                What about the 15th degree?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Make a conjecture about what the general formula would be for these terms. If you were to write these out using summation notation, what would they look like?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Why does the polynomial approximation for the sine function only have odd-exponent terms?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Make a conjecture about what a polynomial approximation for <m>f(x)=\cos(x)</m> centered at <m>x=0</m> would be.
+            </p>
+        </statement>
+    </task>
+</activity>

@@ -1,0 +1,75 @@
+<activity xml:id="act-ConvergeToWhat">
+    <title>How Do These Polynomials Converge?</title>
+    <introduction>
+        <p>
+            We're going to end here by thinking about these polynomials as some partial sum from an infinite series. If there is an infinite series, we should be prepared to think about convergence!
+        </p>
+        <p>
+            We're going to think about convergence in the same way that we have already: as an end behavior limit of the partial sums. So let's spend our time investigating this end behavior by visualizing polynomial approximations as the degree increases.
+        </p>
+        <interactive geogebra="zsegynn4" width="90%" aspect="1:0.6"/>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                What happens to the polynomial approximation of <m>\sin(x)</m> centered at <m>x=0</m> as the degree <m>n\to\infty</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Does this behavior change if we centered our approximation elsewhere?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What happens to the polynomial approximation of <m>e^x</m> centered at <m>x=0</m> as the degree <m>n\to\infty</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Does this behavior change if we centered our approximation elsewhere?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What happens to the polynomial approximation of <m>\cos(x)</m> centered at <m>x=0</m> as the degree <m>n\to\infty</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Does this behavior change if we centered our approximation elsewhere?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What happens to the polynomial approximation of <m>\ln(x)</m> centered at <m>x=2</m> as the degree <m>n\to\infty</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Describe the difference in what you're seeing with the log function compared to the other functions we've thought about. Describe how the polynomial approximations converge: do they converge to the log function? How? More importantly, <em>where</em>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Does this behavior change if we centered our approximation elsewhere?
+            </p>
+        </statement>
+    </task>
+</activity>
