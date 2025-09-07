@@ -1,0 +1,103 @@
+<activity xml:id="act-GeometricSeriesFormula">
+    <title>Building a Convergence Formula for Geometric Series</title>
+    <introduction>
+        <p>
+            We're going to think of constructing two different ways of thinking about how much area of of a circle has been shaded. We can pretend we have a circle with area that is 1, where the radius is <m>r=\sqrt{\frac{1}{\pi}}</m>, giving 
+            <me>A=\pi\left(\sqrt{\frac{1}{\pi}}\right)^2 = 1</me>. 
+            Then we can describe the areas we're looking at as almost a percentages of the total area.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                We are going to split our circle into two parts, with <m>r</m> amount of the area left unshaded and so <m>1-r</m> area shaded. We'll shade in some angular sector.
+            </p>
+            <figure xml:id="fig-GeometricFormula-1">
+                <caption></caption>
+                <image source="./InfiniteSeries/GeometricFormula-1.png" width="50%">
+                    <shortdescription>(for accessibility)</shortdescription>
+                </image>
+            </figure>
+            <p>
+                This part is easy: how much of the area is shaded?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                This next step will set the stage for how we think about this problem now: we're going to divide the remaining white area up into the same proportional pieces: we'll shade in a ratio of <m>1-r</m> of the remaining white space and leave a ratio of <m>r</m> of the white space unshaded.
+            </p>
+            <figure xml:id="fig-GeometricFormula-2">
+                <caption></caption>
+                <image source="./InfiniteSeries/GeometricFormula-2.png" width="58%">
+                    <shortdescription>(for accessibility)</shortdescription>
+                </image>
+            </figure>
+            <p>
+                Can you describe two ways of calculating the total amount of shaded area?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                It could be helpful to consider how much area has been shaded or to not consider how much unshaded area is left over.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                We'll repeat the process: shade in more, where the ratio of shaded area to unshaded area is <m>1-r</m> to <m>r</m>.
+            </p>
+            <figure xml:id="fig-GeometricFormula-3">
+                <caption></caption>
+                <image source="./InfiniteSeries/GeometricFormula-3.png" width="58%">
+                    <shortdescription>(for accessibility)</shortdescription>
+                </image>
+            </figure>
+            <p>
+                Can you describe two ways of calculating the total amount of shaded area?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                It could be helpful to consider how much area has been shaded or to not consider how much unshaded area is left over.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now we're going to repeat this process until we've done it a total of <m>n+1</m> times.
+            </p>
+            <figure xml:id="fig-GeometricFormula-4">
+                <caption></caption>
+                <image source="./InfiniteSeries/GeometricFormula-4.png" width="65%">
+                    <shortdescription>(for accessibility)</shortdescription>
+                </image>
+            </figure>
+            <p>
+                Can you describe two ways of calculating the total amount of shaded area?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                It could be helpful to consider how much area has been shaded or to not consider how much unshaded area is left over.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                In the limit as <m>n\to\infty</m>, how much of the area is shaded in?
+            </p>
+            <p>
+                Notice that <m>(1-r)</m> is likely a common factor in one of your ways of calculating this area. Convince yourself, then, that:
+                <md>
+                    <mrow>\lim_{n\to\infty}\sum_{k=0}^n r^k \amp = \lim_{n\to\infty} (1+r+r^2+...+r^n) </mrow>
+                    <mrow> \amp = \frac{1}{1-r}</mrow>
+                </md>
+            </p>
+        </statement>
+    </task>
+</activity>

@@ -51,6 +51,10 @@
     <p>
       Let's generalize this a bit, and come up with a general formula for these partial sums. Once we have that, we will be able to find out what any geometric series converges to (if it does converge).
     </p>
+    <xi:include href="./activities/act-GeometricSeriesFormula.ptx" />
+    <p>
+      In order for us to move towards a formal statement of the geometric series convergence criteria, we can note that in the above activity, <m>0\leq r \lt 1</m>. We can extend this to negative values, with <m>|r|\lt 1</m>. We also can note that we could scale the area, maybe call it <m>a</m>, to get a similar formula.
+    </p>
     <theorem xml:id="thm-GeometricSeries">
       <title>Geometric Series Convergence Criteria</title>
       <statement>
