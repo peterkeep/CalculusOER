@@ -19,21 +19,21 @@
       <title>Root Test</title>
       <statement>
         <p>
-          Let <m>\sum_{k=0}^\infty a_k</m> be an infinite series with <m>a_k\gt 0</m> for <m>k\geq 0</m> and consider <m>\lim_{k\to\infty} \sqrt[k]{a_k}</m>.
+          Let <m>\displaystyle\sum_{k=0}^\infty a_k</m> be an infinite series with <m>a_k\gt 0</m> for <m>k\geq 0</m> and consider <m>\displaystyle\lim_{k\to\infty} \sqrt[k]{a_k}</m>.
           <ul>
             <li>
               <p>
-                If there is some real number <m>r</m> with <m>r=\lim_{k\to\infty} \sqrt[k]{a_k}</m> and <m>0\leq r \lt 1</m>, then the series <m>\sum_{k=0}^\infty a_k</m> converges.
+                If there is some real number <m>r</m> with <m>\displaystyle r=\lim_{k\to\infty} \sqrt[k]{a_k}</m> and <m>0\leq r \lt 1</m>, then the series <m>\displaystyle\sum_{k=0}^\infty a_k</m> converges.
               </p>
             </li>
             <li>
               <p>
-                If there is some real number <m>r</m> with <m>r=\lim_{k\to\infty} \sqrt[k]{a_k}</m> and <m>r\gt</m> or if <m>\lim_{k\to\infty} \sqrt[k]{a_k}</m> does not exist, then the series <m>\sum_{k=0}^\infty a_k</m> diverges.
+                If there is some real number <m>r</m> with <m>\displaystyle r=\lim_{k\to\infty} \sqrt[k]{a_k}</m> and <m>r\gt</m> or if <m>\displaystyle\lim_{k\to\infty} \sqrt[k]{a_k}</m> does not exist, then the series <m>\displaystyle\sum_{k=0}^\infty a_k</m> diverges.
               </p>
             </li>
             <li>
               <p>
-                If <m>\lim_{k\to\infty} \sqrt[k]{a_k}=1</m> then the Root Test fails and is inconclusive.
+                If <m>\displaystyle\lim_{k\to\infty} \sqrt[k]{a_k}=1</m> then the Root Test fails and is inconclusive.
               </p>
             </li>
           </ul>
@@ -45,21 +45,21 @@
       <title>Ratio Test</title>
       <statement>
         <p>
-          Let <m>\sum_{k=0}^\infty a_k</m> be an infinite series with <m>a_k\gt 0</m> for <m>k\geq 0</m> and consider <m>\lim_{k\to\infty} \frac{a_{k+1}}{a_k}</m>.
+          Let <m>\displaystyle\sum_{k=0}^\infty a_k</m> be an infinite series with <m>a_k\gt 0</m> for <m>k\geq 0</m> and consider <m>\displaystyle\lim_{k\to\infty} \frac{a_{k+1}}{a_k}</m>.
           <ul>
             <li>
               <p>
-                If there is some real number <m>r</m> with <m>r=\lim_{k\to\infty} \frac{a_{k+1}}{a_k}</m> and <m>0\leq r \lt 1</m>, then the series <m>\sum_{k=0}^\infty a_k</m> converges.
+                If there is some real number <m>r</m> with <m>r=\displaystyle\lim_{k\to\infty} \frac{a_{k+1}}{a_k}</m> and <m>0\leq r \lt 1</m>, then the series <m>\displaystyle\sum_{k=0}^\infty a_k</m> converges.
               </p>
             </li>
             <li>
               <p>
-                If there is some real number <m>r</m> with <m>r=\lim_{k\to\infty} \frac{a_{k+1}}{a_k}</m> and <m>r\gt</m> or if <m>\lim_{k\to\infty} \frac{a_{k+1}}{a_k}</m> does not exist, then the series <m>\sum_{k=0}^\infty a_k</m> diverges.
+                If there is some real number <m>r</m> with <m>r=\displaystyle\lim_{k\to\infty} \frac{a_{k+1}}{a_k}</m> and <m>r\gt</m> or if <m>\displaystyle\lim_{k\to\infty} \frac{a_{k+1}}{a_k}</m> does not exist, then the series <m>\displaystyle\sum_{k=0}^\infty a_k</m> diverges.
               </p>
             </li>
             <li>
               <p>
-                If <m>\lim_{k\to\infty} \frac{a_{k+1}}{a_k}=1</m> then the Root Test fails and is inconclusive.
+                If <m>\displaystyle\lim_{k\to\infty} \frac{a_{k+1}}{a_k}=1</m> then the Ratio Test fails and is inconclusive.
               </p>
             </li>
           </ul>
