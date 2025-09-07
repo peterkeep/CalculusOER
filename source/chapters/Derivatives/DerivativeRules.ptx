@@ -103,11 +103,32 @@
         <p>
           Consider the unit circle below. We have plotted the angle <m>\theta</m> and are reminded that the point on the circle that corresponds with the terminal side of the angle <m>\theta</m> has coordinates <m>(\cos(\theta),\sin(\theta))</m>. We can label the sides of the triangle pictured below.
         </p>
+        <figure xml:id="fig-TrigDerivative-1">
+          <caption>Unit circle with the angle <m>\theta</m>.</caption>
+          <image source="./Derivatives/TrigDerivative-1.png" width="70%">
+            <shortdescription>(for accessibility)</shortdescription>
+          </image>
+        </figure>
         <p>
           Now we consider a second point on the circle, this one formed by the terminal side of the angle <m>(\theta+\Delta \theta)</m>. This point has coordinates <m>(\cos(\theta+\Delta \theta), \sin(\theta+\Delta \theta))</m>. Note, below, that we want to find expressions for <m>\sin(\theta+\Delta\theta)-\sin(\theta)</m> and <m>\cos(\theta+\Delta\theta) - \cos(\theta)</m>. We can find these geometrically.
         </p>
+        <figure xml:id="fig-TrigDerivative-2">
+          <caption>Angles <m>\theta</m> and <m>\theta+\Delta\theta</m>.</caption>
+          <image source="./Derivatives/TrigDerivative-2.png" width="70%">
+            <shortdescription>(for accessibility)</shortdescription>
+          </image>
+        </figure>
         <p>
-          Note, then, that the two triangles look to be similar triangles. In fact, we will find that in the limit as <m>\Delta \theta\to 0</m>, the length <m>h</m> matches the arc length <m>\Delta \theta</m> perfectly, and thus lays at a right angle to the terminal side of the angle <m>\theta+\Delta \theta</m>. Since as <m>\Delta \theta\to 0</m> we have <m>h\to\Delta \theta</m>, we can find the other side lengths as well: <m>(\sin(\theta+\Delta\theta)-\sin(\theta))\to \Delta \theta \cos\theta</m> and <m>(\cos(\theta+\Delta \theta) - \cos(\theta))\to\Delta \theta \sin \theta</m>. So then <m>(\cos(\theta+\Delta\theta) - \cos(\theta))\to -\Delta \theta \sin \theta</m>.
+          Note, then, that the two triangles look to be similar triangles. We can say, then, that:
+          <md>
+            <mrow>\sin(\theta+\Delta\theta)-\sin(\theta)\amp \approx h\cos(\theta) </mrow>
+            <mrow>\cos(\theta)-\cos(\theta+\Delta\theta)\amp \approx h\sin(\theta) </mrow>
+          </md>
+          In fact, we will find that in the limit as <m>\Delta \theta\to 0</m>, the length <m>h</m> matches the arc length <m>\Delta \theta</m> perfectly, and thus lays at a right angle to the terminal side of the angle <m>\theta+\Delta \theta</m>. Since as <m>\Delta \theta\to 0</m> we have <m>h\to\Delta \theta</m>, we can say:
+          <md>
+            <mrow> (\sin(\theta+\Delta\theta)-\sin(\theta))\amp\to \Delta \theta \cos(\theta)</mrow>
+            <mrow> (\cos(\theta)-\cos(\theta+\Delta\theta))\amp\to \Delta \theta \sin(\theta)</mrow>
+          </md>
         </p>
         <p>
           Consider, then, the limits involved in the derivative calculations that we built earlier.
