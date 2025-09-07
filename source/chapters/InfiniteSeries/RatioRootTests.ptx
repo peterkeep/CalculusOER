@@ -5,16 +5,19 @@
 
   <introduction>
     <p>
-      Introduction, remind that the <xref ref="thm-LimitComparisonTest" text="title"/> is super useful for rational functions and things that act like <xref ref="def-pSeries" text="title"/>.
+      We have just learned about one of the big and important tools that are used for testing convergence. The <xref ref="thm-LimitComparisonTest" text="title"/> is super useful for rational functions and things that act like <xref ref="def-pSeries" text="title"/>, since these power functions and related function types behave so nicely, and are so friendly to work with, in the end behavior limit. The algebra typically works well, and we can analyze the limits pretty easily.
     </p>
+    <p>
+      In this section, we're going to try to draw a similar connection between our other family of common series, the <xref ref="def-GeometricSeries" text="title"/>, and series that act similarly. So for us to begin, we want to think about what it might mean for a series to have terms that act similarly to the terms of a geometric series.
+    </p>
+     <xi:include href="./activities/act-ReminderGeometric.ptx" />
   </introduction>
 
   <subsection xml:id="subsec-EventuallyGeometricish">
     <title>Eventually Geometric-ish</title>
     <p>
-        We'll look at series that act like geometric series, but first let's remind us what Geometric Series act like.
+      We're going to use these two guiding features of a geometric series to determine if a series is <em>geometric-ish</em>. That is, if a series is not actually a geometric series, do the terms act like terms from a geometric series in the limit? Is there some <em>eventually</em> (almost) constant ratio between consecutive terms? Is there one in the limit as <m>k\to\infty</m>? If the terms aren't actually exponential functions of <m>k</m>, do they kind of act like that in the limit as <m>k\to\infty</m>? If so, shouldn't they act like geometric series and converge with the same criteria?
     </p>
-    <xi:include href="./activities/act-ReminderGeometric.ptx" />
     <theorem xml:id="thm-RootTest">
       <title>Root Test</title>
       <statement>
@@ -66,7 +69,10 @@
         </p>
       </statement>
     </theorem>
-
+    <p>
+      So these tests are good and fine, but when do we use them? How do we know that they can be helpful? The key is to notice behavior in the terms of a series that look <q>kind of</q> geometric: we're looking for <m>k</m> up in the exponent on things and we're looking for repeated multiplication.
+    </p>
+    <xi:include href="./activities/act-FactorialsExponentials.ptx" />
   </subsection>
 
 </section>
