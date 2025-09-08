@@ -53,6 +53,25 @@
         </p>
       </statement>
     </theorem>
-    
+    <example>
+      <statement>
+        <p>
+          A small model glider airplane is thrown and travels for 10 seconds before it hits the ground. The height of the glider is modeled by the function <m>h(t)=6+\dfrac{7t}{5}-\dfrac{t^2}{5}</m> on the interval <m>[0,10]</m>.
+        </p>
+        <p>
+          Find the average height of the glider on the time interval.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{1}{10}\int_{t=0}^{t=10} 6+\dfrac{7t}{5}-\dfrac{t^2}{5}\;dt \amp = \frac{1}{10}\left(6t+\frac{7t^2}{10}-\frac{t^3}{15}\right)\bigg|_{t=0}^{t=10} </mrow>
+            <mrow> \amp = \frac{1}{10}\left(\frac{190}{3}\right)</mrow>
+            <mrow> \amp = \frac{190}{30}</mrow>
+          </md>
+          The glider has an average height of 6 feet and 4 inches.
+        </p>
+      </solution>
+    </example>
   </subsection>
 </section>
