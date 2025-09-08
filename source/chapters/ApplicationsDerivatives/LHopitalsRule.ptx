@@ -291,32 +291,70 @@
         </md>
         When we think about limits, the continuity of the exponential function allows us to just focus on the limit of the exponent, <m>g(x)\ln(f(x))</m>, which is likely an indeterminate form that we've seen!
       </p>
-      <example>
-        <statement>
-          <p>
-            Evaluate the following limit:
-            <me>
-              \lim_{x\to 0^+} x^x
-            </me>
-            Note that this is the <m>0^0</m> indeterminate form.
-          </p>
-        </statement>
-        <hint>
-          <p>
-            We can re-write <m>x^x</m> as <m>e^{\ln\left(x^x\right)}</m> which is the same as <m>e^{x\ln(x)}</m>. Now we can evaluate the limit <m>\displaystyle\lim_{x\to 0^+} x\ln(x)</m>, and make sure to return the value into the exponent.
-          </p>
-        </hint>
-        <solution>
-          <p>
-            We know from <xref ref="ex-xlnx"/> that <m>\displaystyle\lim_{x\to 0^+} x\ln(x) = 0</m>. So then:
-            <md>
-              <mrow>\lim_{x\to 0^+} x^x \amp = \lim_{x\to 0^+} e^{x\ln(x)} </mrow>
-              <mrow> \amp = e^{\lim_{x\to 0^+} x\ln(x)}</mrow>
-              <mrow> \amp = e^0 = 1</mrow>
-            </md>
-            So <m>\displaystyle \lim_{x\to 0^+} x^x = 1</m>.
-          </p>
-        </solution>
+      <example xml:id="ex-xRootx">
+        <task>
+          <statement>
+            <p>
+              Evaluate the following limit:
+              <me>
+                \lim_{x\to 0^+} x^x
+              </me>
+              Note that this is the <m>0^0</m> indeterminate form.
+            </p>
+          </statement>
+          <hint>
+            <p>
+              We can re-write <m>x^x</m> as <m>e^{\ln\left(x^x\right)}</m> which is the same as <m>e^{x\ln(x)}</m>. Now we can evaluate the limit <m>\displaystyle\lim_{x\to 0^+} x\ln(x)</m>, and make sure to return the value into the exponent.
+            </p>
+          </hint>
+          <solution>
+            <p>
+              We know from <xref ref="ex-xlnx"/> that <m>\displaystyle\lim_{x\to 0^+} x\ln(x) = 0</m>. So then:
+              <md>
+                <mrow>\lim_{x\to 0^+} x^x \amp = \lim_{x\to 0^+} e^{x\ln(x)} </mrow>
+                <mrow> \amp = e^{\lim_{x\to 0^+} x\ln(x)}</mrow>
+                <mrow> \amp = e^0 = 1</mrow>
+              </md>
+              So <m>\displaystyle \lim_{x\to 0^+} x^x = 1</m>.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Evaluate the following limit:
+              <me>
+                \lim_{x\to\infty}\sqrt[x]{x}
+              </me>.
+              Note that this is the <m>0^\infty</m> indeterminate form.
+            </p>
+          </statement>
+          <hint>
+            <p>
+              Re-write this as <m>\displaystyle\lim_{x\to\infty}x^{\frac{1}{x}}</m>. Now you can use the exponential/log composition to rewrite this again.
+            </p>
+          </hint>
+          <solution>
+            <p>
+              <md>
+                <mrow>\lim_{x\to\infty} \sqrt[x]{x}\amp = \lim_{x\to\infty} x^{\frac{1}{x}} </mrow>
+                <mrow> \amp \lim_{x\to\infty} e^{\frac{1}{x}\ln(x)}</mrow>
+                <mrow> \amp = e^{\lim_{x\to\infty} \frac{1}{x}\ln(x)}</mrow>
+              </md>
+              Now we can notice that the limit in the exponent is in a <m>\dfrac{\infty}{\infty}</m> indeterminate form.
+              <md>
+                <mrow>\lim_{x\to\infty} \frac{\ln(x)}{x} \amp  = \lim_{x\to\infty} \frac{1/x}{1}</mrow>
+                <mrow> \amp = 0</mrow>
+              </md>
+              So then we have:
+              <md>
+                <mrow>\lim_{x\to\infty} \sqrt[x]{x} \amp = e^{\lim_{x\to\infty} \frac{\ln(x)}{x}} </mrow>
+                <mrow> \amp e^0</mrow>
+                <mrow> \amp = 1</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
       </example>
     </subsubsection>
   </subsection>
