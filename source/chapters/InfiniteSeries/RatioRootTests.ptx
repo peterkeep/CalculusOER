@@ -73,6 +73,53 @@
       So these tests are good and fine, but when do we use them? How do we know that they can be helpful? The key is to notice behavior in the terms of a series that look <q>kind of</q> geometric: we're looking for <m>k</m> up in the exponent on things and we're looking for repeated multiplication.
     </p>
     <xi:include href="./activities/act-FactorialsExponentials.ptx" />
+    <example>
+      <introduction>
+        <p>
+          For each infinite series, apply one of the Ratio or Root tests and interpret the conclusions of the test.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{k=0}^\infty \frac{2^k}{k!}</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{k=0}^\infty \frac{k^2}{(k+1)^k}</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{k=1}^\infty \frac{k\ln(k+1)}{e^{2k}}</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle \sum_{k=0}^\infty \frac{(-1)^k(k+2)}{(k!)(3^k)}</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            This is an alternating series! We can show that this series converges using the Alternating Series Test, and so we really need to test for absolute convergence.
+          </p>
+          <p>
+            That works perfectly, though, since the Ratio and Root tests only test series with positive terms. So test the series:
+            <me>
+              \sum_{k=0}^\infty \frac{(k+2)}{(k!)(3^k)}
+            </me>
+            
+          </p>
+        </hint>
+      </task>
+    </example>
   </subsection>
 
 </section>
