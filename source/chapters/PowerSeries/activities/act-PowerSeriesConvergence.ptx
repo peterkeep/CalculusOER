@@ -10,11 +10,11 @@
             <p>
                 Consider the power series:
                 <me>
-                    \sum_{k=0}^\infty \frac{(x-1)^k}{k^2}
+                    \sum_{k=1}^\infty \frac{(x-1)^k}{k^2}
                 </me>.
                 In order for us to apply the Ratio Test, we'll actually need to consider the positive-term version:
                 <me>
-                    \sum_{k=0}^\infty \frac{|x-1|^k}{k^2}
+                    \sum_{k=1}^\infty \frac{|x-1|^k}{k^2}
                 </me>.
                 Apply the Ratio Test. What do you get in the limit of the ratio between terms?                
             </p>
@@ -23,7 +23,25 @@
     <task>
         <statement>
             <p>
-                
+                What kind of result from the Ratio Test guarantees convergence for the series? What are the <m>x</m>-values that guarantee convergence?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                The Ratio Test is inconclusive when the limit is equal to 1. What <m>x</m>-values does this happen at? Consider the power series evaluated at each of these <m>x</m>-values. Do these series converge or diverge?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Consider the power series:
+                <me>
+                    \sum_{k=1}^\infty \frac{(x-1)^k}{\sqrt{k}}
+                </me>.
+                Find the interval of <m>x</m>-values for which this series converges and test the end points of the interval in the same way as earlier. If it differs, explain why.
             </p>
         </statement>
     </task>
