@@ -805,24 +805,103 @@ f(x)=\sum_{k=1}^\infty \frac{1}{k^x}\text{.}
 <div class="para">Consider the power series:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum_{k=0}^\infty \frac{(x-1)^k}{k^2}\text{.}
+\sum_{k=1}^\infty \frac{(x-1)^k}{k^2}\text{.}
 \end{equation*}
 </div>
 <div class="para">In order for us to apply the Ratio Test, we’ll actually need to consider the positive-term version:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum_{k=0}^\infty \frac{|x-1|^k}{k^2}\text{.}
+\sum_{k=1}^\infty \frac{|x-1|^k}{k^2}\text{.}
 \end{equation*}
 </div>
 <div class="para">Apply the Ratio Test. What do you get in the limit of the ratio between terms?</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#act-PowerSeriesConvergence-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Task 9.2.2.a"><a href="#act-PowerSeriesConvergence-3" title="Copy heading and permalink for Task 9.2.2.a" aria-label="Copy heading and permalink for Task 9.2.2.a">🔗</a></div></article><article class="task exercise-like" id="act-PowerSeriesConvergence-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-PowerSeriesConvergence-4-1-1"><div class="autopermalink" data-description="Paragraph"><a href="#act-PowerSeriesConvergence-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="autopermalink" data-description="Task 9.2.2.b"><a href="#act-PowerSeriesConvergence-4" title="Copy heading and permalink for Task 9.2.2.b" aria-label="Copy heading and permalink for Task 9.2.2.b">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.2.2: Some Power Series and their Convergence"><a href="#act-PowerSeriesConvergence" title="Copy heading and permalink for Activity 9.2.2: Some Power Series and their Convergence" aria-label="Copy heading and permalink for Activity 9.2.2: Some Power Series and their Convergence">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Interval of Convergence"><a href="#subsec-IntervalOfConvergence" title="Copy heading and permalink for Subsection: Interval of Convergence" aria-label="Copy heading and permalink for Subsection: Interval of Convergence">🔗</a></div></section><section class="subsection" id="subsec-OperationsPowerSeries"><h3 class="heading hide-type">
+<div class="para" id="act-PowerSeriesConvergence-4-1-1">What kind of result from the Ratio Test guarantees convergence for the series? What are the <span class="process-math">\(x\)</span>-values that guarantee convergence?<div class="autopermalink" data-description="Paragraph"><a href="#act-PowerSeriesConvergence-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.2.2.b"><a href="#act-PowerSeriesConvergence-4" title="Copy heading and permalink for Task 9.2.2.b" aria-label="Copy heading and permalink for Task 9.2.2.b">🔗</a></div></article><article class="task exercise-like" id="act-PowerSeriesConvergence-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-PowerSeriesConvergence-5-1-1">The Ratio Test is inconclusive when the limit is equal to 1. What <span class="process-math">\(x\)</span>-values does this happen at? Consider the power series evaluated at each of these <span class="process-math">\(x\)</span>-values. Do these series converge or diverge?<div class="autopermalink" data-description="Paragraph"><a href="#act-PowerSeriesConvergence-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.2.2.c"><a href="#act-PowerSeriesConvergence-5" title="Copy heading and permalink for Task 9.2.2.c" aria-label="Copy heading and permalink for Task 9.2.2.c">🔗</a></div></article><article class="task exercise-like" id="act-PowerSeriesConvergence-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para logical" id="act-PowerSeriesConvergence-6-1-1">
+<div class="para">Consider the power series:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=1}^\infty \frac{(x-1)^k}{\sqrt{k}}\text{.}
+\end{equation*}
+</div>
+<div class="para">Find the interval of <span class="process-math">\(x\)</span>-values for which this series converges and test the end points of the interval in the same way as earlier. If it differs, explain why.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-PowerSeriesConvergence-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.2.2.d"><a href="#act-PowerSeriesConvergence-6" title="Copy heading and permalink for Task 9.2.2.d" aria-label="Copy heading and permalink for Task 9.2.2.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.2.2: Some Power Series and their Convergence"><a href="#act-PowerSeriesConvergence" title="Copy heading and permalink for Activity 9.2.2: Some Power Series and their Convergence" aria-label="Copy heading and permalink for Activity 9.2.2: Some Power Series and their Convergence">🔗</a></div></article><article class="definition definition-like" id="def-IntervalOfConvergence"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Interval of Convergence.</span>
+</h4>
+<div class="para" id="def-IntervalOfConvergence-2-1">For a power series <span class="process-math">\(\displaystyle\sum_{k=0}^\infty c_k(x-a)^k\)</span> centered at <span class="process-math">\(x=a\text{,}\)</span> the interval of <span class="process-math">\(x\)</span>-values for which the power series converges is called the <dfn class="terminology">Interval of Convergence</dfn>. The distance from the center to endpoints of the interval is called the <dfn class="terminology">Radius of Convergence</dfn><div class="autopermalink" data-description="Paragraph"><a href="#def-IntervalOfConvergence-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9.2.2: Interval of Convergence"><a href="#def-IntervalOfConvergence" title="Copy heading and permalink for Definition 9.2.2: Interval of Convergence" aria-label="Copy heading and permalink for Definition 9.2.2: Interval of Convergence">🔗</a></div></article><div class="para" id="subsec-IntervalOfConvergence-10">So this is how we’ll think about convergence! When we think about power series and their convergence, we’re specifically thinking about convergence for specific inputs. These series are really families of infinite series, and we can try to explain their convergence criteria.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntervalOfConvergence-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-IntervalOfConvergence-11">
+<div class="para">And for a power series, there is always some <span class="process-math">\(x-\)</span>value for which if converges. For the power series</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x)=\sum_{k=0}^\infty c_k(x-a)^k
+\end{equation*}
+</div>
+<div class="para">centered at <span class="process-math">\(x=a\text{,}\)</span> then as long as <span class="process-math">\(\{c_k\}\)</span> is a sequence of real numbers, then the series converges at <span class="process-math">\(x=a\text{.}\)</span> We get <span class="process-math">\(f(a)=c_0\text{,}\)</span> the constant term. This should match with how we thought about these series originally! They came from polynomial approximations of our functions, where of course the polynomials needed to match the function value at the center. We were thinking about tangent lines, tangent quadratics, tangent cubics, etc. They <em class="emphasis">need</em> to be tangent, and so they “covnerge” at that single center <span class="process-math">\(x\)</span>-value at least.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntervalOfConvergence-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Interval of Convergence"><a href="#subsec-IntervalOfConvergence" title="Copy heading and permalink for Subsection: Interval of Convergence" aria-label="Copy heading and permalink for Subsection: Interval of Convergence">🔗</a></div></section><section class="subsection" id="subsec-OperationsPowerSeries"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Operations on Power Series</span>
 </h3>
-<div class="autopermalink" data-description="Subsection: Operations on Power Series"><a href="#subsec-OperationsPowerSeries" title="Copy heading and permalink for Subsection: Operations on Power Series" aria-label="Copy heading and permalink for Subsection: Operations on Power Series">🔗</a></div></section><div class="autopermalink" data-description="Section 9.2: Power Series Convergence"><a href="#sec-PowerSeriesConvergence" title="Copy heading and permalink for Section 9.2: Power Series Convergence" aria-label="Copy heading and permalink for Section 9.2: Power Series Convergence">🔗</a></div></section></div>
+<article class="theorem theorem-like" id="thm-OperationsPowerSeries"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Operations on Power Series.</span>
+</h4>
+<div class="para" id="thm-OperationsPowerSeries-2-1">For two power series <span class="process-math">\(\displaystyle\sum_{k=0}^\infty c_kx^k\)</span> and <span class="process-math">\(\displaystyle\sum_{k=0}^\infty d_kx^k\)</span> that converge to <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> (respectively) on the interval of convergence <span class="process-math">\(I\text{,}\)</span> we can consider the following operations to combine power series.<div class="autopermalink" data-description="Paragraph"><a href="#thm-OperationsPowerSeries-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="thm-OperationsPowerSeries-2-2">
+<ul class="disc" id="thm-OperationsPowerSeries-2-2-1">
+<li id="thm-OperationsPowerSeries-2-2-1-1">
+<div class="para" id="thm-OperationsPowerSeries-2-2-1-1-1">
+<em class="emphasis">Sum:</em> <span class="process-math">\(\displaystyle \sum_{k=0}^\infty (c_k+d_k)x^k\)</span> converges to <span class="process-math">\(f(x)+g(x)\)</span> on <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-OperationsPowerSeries-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#thm-OperationsPowerSeries-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="thm-OperationsPowerSeries-2-2-1-2">
+<div class="para" id="thm-OperationsPowerSeries-2-2-1-2-1">
+<em class="emphasis">Difference:</em> <span class="process-math">\(\displaystyle \sum_{k=0}^\infty (c_k-d_k)x^k\)</span> converges to <span class="process-math">\(f(x)-g(x)\)</span> on <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-OperationsPowerSeries-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#thm-OperationsPowerSeries-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="thm-OperationsPowerSeries-2-2-1-3">
+<div class="para" id="thm-OperationsPowerSeries-2-2-1-3-1">
+<em class="emphasis">Product:</em> If <span class="process-math">\(bx^n\)</span> is a power function, then <span class="process-math">\(\displaystyle \sum_{k=0}^\infty b(c_k)x^{k+n}\)</span> converges to <span class="process-math">\((bx^m)f(x)\)</span> on <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-OperationsPowerSeries-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#thm-OperationsPowerSeries-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="thm-OperationsPowerSeries-2-2-1-4">
+<div class="para" id="thm-OperationsPowerSeries-2-2-1-4-1">
+<em class="emphasis">Composition:</em> If <span class="process-math">\(bx^n\)</span> is a power function, then <span class="process-math">\(\displaystyle \sum_{k=0}^\infty c_k(b^k)(x^{nk})\)</span> converges to <span class="process-math">\(f(bx^n)\)</span> on <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-OperationsPowerSeries-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#thm-OperationsPowerSeries-2-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-OperationsPowerSeries-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.2.3: Operations on Power Series"><a href="#thm-OperationsPowerSeries" title="Copy heading and permalink for Theorem 9.2.3: Operations on Power Series" aria-label="Copy heading and permalink for Theorem 9.2.3: Operations on Power Series">🔗</a></div></article><div class="para" id="subsec-OperationsPowerSeries-3">We can do something similar with some of our calculus operations: differentiation and integration.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-DiffPowerSeries"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Differentiating and Integrating Power Series.</span>
+</h4>
+<div class="para" id="thm-DiffPowerSeries-2-1">If <span class="process-math">\(\displaystyle\sum_{k=0}^\infty c_k(x-a)^k\)</span> converges to <span class="process-math">\(f(x)\)</span> on an interval of convergence with a radius <span class="process-math">\(R\gt0\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum_{k=0}^\infty kc_k(x-a)^{k-1}\)</span> converges to <span class="process-math">\(f'(x)\)</span> and <span class="process-math">\(\displaystyle\sum_{k=0}^\infty \frac{c_k(x-a)^{k+1}}{k+1}\)</span> converges to <span class="process-math">\(F(x)\text{,}\)</span> an antiderivative of <span class="process-math">\(f(x)\text{.}\)</span> Both of these converge on an interval of convergence centered at <span class="process-math">\(x=a\)</span> with radius <span class="process-math">\(R\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-DiffPowerSeries-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.2.4: Differentiating and Integrating Power Series"><a href="#thm-DiffPowerSeries" title="Copy heading and permalink for Theorem 9.2.4: Differentiating and Integrating Power Series" aria-label="Copy heading and permalink for Theorem 9.2.4: Differentiating and Integrating Power Series">🔗</a></div></article><article class="note remark-like" id="subsec-OperationsPowerSeries-5"><h4 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">9.2.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-OperationsPowerSeries-5-1">We’re being weird about naming the interval of convergence for these. The issue is that when we differentiate, we might lose closed endpoints of an interval. Similarly, when we antidifferentiate, we could add endpoints to an open interval.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-OperationsPowerSeries-5-2">We can see this in some of the examples that follow, but the intervals of convergence are going to be identical except for possibly at the endpoints.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Note 9.2.5"><a href="#subsec-OperationsPowerSeries-5" title="Copy heading and permalink for Note 9.2.5" aria-label="Copy heading and permalink for Note 9.2.5">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Operations on Power Series"><a href="#subsec-OperationsPowerSeries" title="Copy heading and permalink for Subsection: Operations on Power Series" aria-label="Copy heading and permalink for Subsection: Operations on Power Series">🔗</a></div></section><div class="autopermalink" data-description="Section 9.2: Power Series Convergence"><a href="#sec-PowerSeriesConvergence" title="Copy heading and permalink for Section 9.2: Power Series Convergence" aria-label="Copy heading and permalink for Section 9.2: Power Series Convergence">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-PolynomialApproximation.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-BuildingTaylorSeries.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
