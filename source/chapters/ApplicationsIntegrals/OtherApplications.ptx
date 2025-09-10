@@ -329,9 +329,9 @@
               <md>
                 <mrow>W \amp = \rho g \int_{y=0}^{y=2}A(y)(2-y)\;dy</mrow>
                 <mrow> \amp = 3\rho g\int_{y=0}^{y=2} 2-y\;dy</mrow>
-                <mrow> \amp = 3\left(2y-\frac{y^2}{2}\right)\bigg|_{y=0}^{y=2}</mrow>
-                <mrow> \amp = 3\left(2\right)</mrow>
-                <mrow> \amp = 6</mrow>
+                <mrow> \amp = 3\rho g\left(2y-\frac{y^2}{2}\right)\bigg|_{y=0}^{y=2}</mrow>
+                <mrow> \amp = 3\rho g\left(2\right)</mrow>
+                <mrow> \amp = 6\rho g</mrow>
               </md>
             </p>
           </solution>
