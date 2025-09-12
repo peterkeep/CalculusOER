@@ -10,22 +10,97 @@
     <subsection xml:id="subsec-WhatDoWeWant">
         <title>What Do We Want From a Polynomial Approximation?</title>
         <p>
-            
+            It's always good to lay out our expectations clearly. We want to make sure that, when we create this new <em>thing</em>, that we have some clear idea of what we're trying to accomplish in its creation. So let's start with our <xref ref="def-LinearApproximation" text="title"/>. What were the important properties of this linear function we created?
+            <ol>
+                <li>
+                    <p>
+                        The function's output, <m>f(x)</m>, matched the output from the linear approximation, <m>L(x)</m>, at the center <m>x=a</m>.
+                        <md>
+                            <mrow>L(x) \amp = f'(a)(x-a)+f(a) </mrow>
+                            <mrow>L(a) \amp = f'(a)(a-a)+f(a)</mrow>
+                            <mrow> \amp f(a)</mrow>
+                        </md>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The function's first derivative, <m>f'(x)</m>, matched the slope of the linear approximation, <m>L'(x)</m>, at <m>x=a</m>.
+                        <md>
+                            <mrow>L'(x) \amp = \ddx{f'(a)(x-a)+f(a)} </mrow>
+                            <mrow> \amp = f'(a)</mrow>
+                            <mrow>L'(a) \amp = f'(a)</mrow>
+                        </md>
+                    </p>
+                </li>
+            </ol>
+            This seems like a good structure! We have <m>f(a)=L(a)</m>, giving us that nice intersection between our approximation and the function we're approximating at the center. Then we used the slope of the function to estimate how our approximating function should move away from that center. The only real problem is that our function probably doesn't have a <em>constant</em> slope, while a constant slope is the defining characteristic of the line we're using.
+        </p>
+        <p>
+            So how do we extend this, then, into a better approximation? Well, an easy next step is to make the slope of our approximating function change as we move away from the center, <m>x=a</m>. That way, maybe the slopes change in a way that's similar to the slopes of the actual function, and our approximating curve (not a line anymore) can follow the function for a bit longer. 
+        </p>
+        <p>
+            What we're saying is that we want a function where the second derivative is <m>f''(a)</m>, just like our first derivative matched <m>f'(a)</m>. Instead of using letters like <m>L</m> for linear and <m>Q</m> for quadratic, let's just call these approximations by their function type (polynomials!) and degree. So <m>p_1(x)=f'(a)(x-a)+f(a)</m>, the first-degree polynomial approximation.
+        </p>
+        <p>
+            Now, to find <m>p_2(x)</m>, we're going to add a term to the first-degree polynomial:
+            <me>
+                p_2(x) = <fillin characters="3" />(x-a)^2+f'(a)(x-a)+f(a)
+            </me>
+            Let's differentiate this function twice, and force it to match <m>f''(a)</m> at <m>x=a</m>.
+            <md>
+                <mrow> p_2(x) \amp= <fillin characters="3" />(x-a)^2+f'(a)(x-a)+f(a)</mrow>
+                <mrow>p_2'(x) \amp = 2(<fillin characters="3" />)(x-a)+f'(a)</mrow>
+                <mrow>p_2''(x) \amp = 2(<fillin characters="3" /> )</mrow>
+            </md>
+            What do we need to fill in the blank to make this match <m>f''(a)</m>?
+            <md>
+                <mrow>p_2''(x) \amp = 2\left(\frac{f''(a)}{2}\right) </mrow>
+                <mrow> \amp = f''(a)</mrow>
+            </md>
+            So we get:
+            <me>
+                p_2(x) = \frac{f''(a)}{2}(x-a)^2+f'(a)(x-a)+f(a)
+            </me>.
+            What if we wanted a higher degree? Like, <m>p_3(x)</m>? Let's repeat the same process and see what happens!
+            <md>
+                <mrow>p_3(x) \amp = <fillin characters="3" />(x-a)^3 + \frac{f''(a)}{2}(x-a)^2+f'(a)(x-a)+f(a)</mrow>
+                <mrow>p_3'(x) \amp = 3 (<fillin characters="3" />)(x-a)^2+f''(a)(x-a)+f'(a)</mrow>
+                <mrow>p_3''(x) \amp = 3(2)(<fillin characters="3" />)(x-a)+f''(a)</mrow>
+                <mrow>p_3'''(x) \amp = 3(2)(<fillin characters="3" />)</mrow>
+            </md>
+            If we, again, want this third derivative to match <m>f'''(a)</m> (so that the rate at which the slope changes as we move away from the center changes in the same way that it does on <m>f</m>...whew, that is going to be hard to interpret!), then we need to fill the blank in with <m>\dfrac{f'''(a)}{3(2)}</m>.
         </p>
     </subsection>
     <subsection xml:id="subsec-HowDoWeBuild">
         <title>How Do We Build a Polynomial Approximation?</title>
         <p>
-            
+            Let's jump into a generalization of what we've just done. Answer these few questions with yourself, just to make sure you can see where we're going:
+            <ol>
+                <li>
+                    <p>
+                        Why, in the coefficients for each term, do we have the derivative that matches the degree of the term? (First derivative for the first degree term, second derivative for the second degree term, and third derivative for the third degree term.)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Why, in the coefficients for each term, do we divide? What are we dividing by, and why do we need these numbers specifically?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If we add a 4th, 5th, and 6th term, what will we divide those 4th, 5th, and 6th derivatives (<m>f^{(4)}(a)</m>, <m>f^{(5)}(a)</m>, and <m>f^{(6)}(a)</m>) by?
+                    </p>
+                </li>
+            </ol>
         </p>
         <definition xml:id="def-PolynomialApproximation">
             <title>Polynomial Approximation</title>          
             <statement>
                 <p>
-                    If <m>f(x)</m> is a function that is <m>n</m>-times differentiable at <m>x=a</m> (that is, the functions <m>f(a)</m>, <m>f'(a)</m>, <m>f''(a)</m>, ..., <m>f^{(n)}(a)</m> all exist), then the <m>n</m>th degree <term>polynomial approximation of <m>f(x)</m> centered at <m>x=a</m></term> is:
+                    If <m>f(x)</m> is a function that is <m>n</m>-times differentiable at <m>x=a</m> (that is, the function/derivative values <m>f(a)</m>, <m>f'(a)</m>, <m>f''(a)</m>, ..., <m>f^{(n)}(a)</m> all exist), then the <m>n</m>th degree <term>polynomial approximation of <m>f(x)</m> centered at <m>x=a</m></term> is:
                     <md>
                         <mrow>p_n(x) \amp = f(a)+ f'(a)(x-a)+\frac{f''(a)}{2}(x-a)^2+...+ \frac{f^{(n)}(a)}{n!}(x-a)^n</mrow>
-                        <mrow> \amp = \sum_{k=1}^n \frac{f^{(k)}(a)}{k!}(x-a)^k</mrow>
+                        <mrow> \amp = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k</mrow>
                     </md>
                 </p>
             </statement>
