@@ -137,9 +137,27 @@
     <subsection xml:id="subsec-AreThesePartialSums">
         <title>Are These Partial Sums?</title>
         <p>
-            
+            We have been using some familiar language here...we're talking about these <q>approximations</q> improving as we increase some parameter, <m>n</m>. We have some intuition that when we increase <m>n</m>, these approximations <q>approach</q> an object (in this case, a function) in some sense. 
+        </p>
+        <p>
+            We're adding more and more terms to this sum as we increase <m>n</m>. Is a polynomial approximation just a partial sum?
+        </p>
+        <p>
+            Are we just going to look at a limit as <m>n\to\infty</m> and see what happens?
         </p>
         <xi:include href="./activities/act-PartialSumsOfWhat.ptx" />
+        <p>
+            We'll explore these polynomials more, but we're specifically interested in the infinite-series version of these things. For now, let's think about convergence a bit.
+        </p>
         <xi:include href="./activities/act-ConvergeToWhat.ptx" />
+        <p>
+            Ok, so this is pretty interesting! For some functions, like <m>\sin(x)</m>, <m>e^x</m>, and <m>\cos(x)</m>, it seems like the polynomials that we built will end up matching (converging to) the functions pretty much everywhere: as <m>n\to\infty</m> we can get any function value from the polynomial, approximated to whatever accuracy we'd like!
+        </p>
+        <p>
+            But that's different for the log function. We were only able to get our polynomial to match the function's behavior on a specific interval of <m>x</m>-values. No matter how high the degree of the polynomial was, we weren't able to get it close to approximating something like <m>\ln(10)</m>, for instance. Unless we changed the center, of course!
+        </p>
+        <p>
+            This is going to bring up some great questions about how these partial sums converge to functions. We'll talk all about that in the next section!
+        </p>
     </subsection>
 </section>
