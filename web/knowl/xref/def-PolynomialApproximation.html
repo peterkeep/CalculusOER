@@ -22,11 +22,11 @@
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Polynomial Approximation.</span>
 </h4>
 <div class="para logical">
-<div class="para">If <span class="process-math">\(f(x)\)</span> is a function that is <span class="process-math">\(n\)</span>-times differentiable at <span class="process-math">\(x=a\)</span> (that is, the functions <span class="process-math">\(f(a)\text{,}\)</span> <span class="process-math">\(f'(a)\text{,}\)</span> <span class="process-math">\(f''(a)\text{,}\)</span> ..., <span class="process-math">\(f^{(n)}(a)\)</span> all exist), then the <span class="process-math">\(n\)</span>th degree <dfn class="terminology">polynomial approximation of <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=a\)</span></dfn> is:</div>
+<div class="para">If <span class="process-math">\(f(x)\)</span> is a function that is <span class="process-math">\(n\)</span>-times differentiable at <span class="process-math">\(x=a\)</span> (that is, the function/derivative values <span class="process-math">\(f(a)\text{,}\)</span> <span class="process-math">\(f'(a)\text{,}\)</span> <span class="process-math">\(f''(a)\text{,}\)</span> ..., <span class="process-math">\(f^{(n)}(a)\)</span> all exist), then the <span class="process-math">\(n\)</span>th degree <dfn class="terminology">polynomial approximation of <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=a\)</span></dfn> is:</div>
 <div class="displaymath process-math">
 \begin{align*}
 p_n(x) \amp = f(a)+ f'(a)(x-a)+\frac{f''(a)}{2}(x-a)^2+...+ \frac{f^{(n)}(a)}{n!}(x-a)^n\\
-\amp = \sum_{k=1}^n \frac{f^{(k)}(a)}{k!}(x-a)^k
+\amp = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#def-PolynomialApproximation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>

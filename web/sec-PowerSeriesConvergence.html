@@ -848,14 +848,78 @@ f(x)=\sum_{k=1}^\infty \frac{1}{k^x}\text{.}
 f(x)=\sum_{k=0}^\infty c_k(x-a)^k
 \end{equation*}
 </div>
-<div class="para">centered at <span class="process-math">\(x=a\text{,}\)</span> then as long as <span class="process-math">\(\{c_k\}\)</span> is a sequence of real numbers, then the series converges at <span class="process-math">\(x=a\text{.}\)</span> We get <span class="process-math">\(f(a)=c_0\text{,}\)</span> the constant term. This should match with how we thought about these series originally! They came from polynomial approximations of our functions, where of course the polynomials needed to match the function value at the center. We were thinking about tangent lines, tangent quadratics, tangent cubics, etc. They <em class="emphasis">need</em> to be tangent, and so they “covnerge” at that single center <span class="process-math">\(x\)</span>-value at least.</div>
+<div class="para">centered at <span class="process-math">\(x=a\text{,}\)</span> then as long as <span class="process-math">\(\{c_k\}\)</span> is a sequence of real numbers, then the series converges at <span class="process-math">\(x=a\text{.}\)</span> We get <span class="process-math">\(f(a)=c_0\text{,}\)</span> the constant term. This should match with how we thought about these series originally! They came from polynomial approximations of our functions, where of course the polynomials needed to match the function value at the center. We were thinking about tangent lines, tangent quadratics, tangent cubics, etc. They <em class="emphasis">need</em> to be tangent, and so they “converge” at that single center <span class="process-math">\(x\)</span>-value at least.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-IntervalOfConvergence-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Interval of Convergence"><a href="#subsec-IntervalOfConvergence" title="Copy heading and permalink for Subsection: Interval of Convergence" aria-label="Copy heading and permalink for Subsection: Interval of Convergence">🔗</a></div></section><section class="subsection" id="subsec-OperationsPowerSeries"><h3 class="heading hide-type">
+<article class="example example-like" id="ex-IOCexample"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="ex-IOCexample-1-1">For the power series <span class="process-math">\(f(x)=\displaystyle\sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}\text{,}\)</span> find the interval of convergence. Along the way, it will likely be helpful to identify the center and the radius of convergence.<div class="autopermalink" data-description="Paragraph"><a href="#ex-IOCexample-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-IOCexample-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-IOCexample-2-1">
+<div class="para">Let’s apply the Ratio Test. We’ll technically be applying this to <span class="process-math">\(\displaystyle\sum_{k=0}^\infty \frac{3^k|x|^k}{2k+1}\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="ex-IOCexample-2-1-2">
+\begin{align*}
+\lim_{k\to\infty} \frac{3^{k+1}|x|^{k+1}}{2(k+1)+1}\cdot \frac{2k+1}{3^k|x|^k}\amp =\lim_{k\to\infty} \frac{3|x|(2k+1)}{2k+3}\\
+\amp = 3|x|
+\end{align*}
+</div>
+<div class="para">For us to conclude that this series converges, we need the limit from the ratio test to be less than 1.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+3|x|\lt 1 \to |x|\lt \frac{1}{3}
+\end{equation*}
+</div>
+<div class="para">This series is centered at 0 with a radius of convergence of <span class="process-math">\(\frac{1}{3}\text{.}\)</span> So we know that this series converges for <span class="process-math">\(-\dfrac{1}{3}\lt x \lt \dfrac{1}{3}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-IOCexample-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-IOCexample-2-2">Since the Ratio Test is inconclusive when <span class="process-math">\(x=-\dfrac{1}{3}\)</span> and <span class="process-math">\(x=\dfrac{1}{3}\text{,}\)</span> we’ll test those individually.<div class="autopermalink" data-description="Paragraph"><a href="#ex-IOCexample-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1%;margin-right:1%;">
+<div class="sbspanel top" style="width:48.9795918367347%;"><div class="para logical" id="ex-IOCexample-2-3-1">
+<div class="para">When <span class="process-math">\(x=-\dfrac{1}{3}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-AlternatingSeriesTest.html" id="ex-IOCexample-2-3-1-2">
+\begin{align*}
+\amp \sum_{k=0}^\infty \frac{3^k\left(-\frac{1}{3}\right)^k}{2k+1}  \\
+\amp = \sum_{k=0}^\infty \frac{(-1)^k}{2k+1}
+\end{align*}
+</div>
+<div class="para">We can apply the <a href="sec-AlternatingSeries.html#thm-AlternatingSeriesTest" class="xref" data-knowl="./knowl/xref/thm-AlternatingSeriesTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.5.3: Alternating Series Test">Alternating Series Test</a>!</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-AlternatingSeriesTest.html" id="ex-IOCexample-2-3-1-4">
+\begin{align*}
+\amp \lim_{k\to\infty} \frac{1}{2k+1}\\
+\amp = 0
+\end{align*}
+</div>
+<div class="para">This series converges!</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-IOCexample-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel top" style="width:48.9795918367347%;"><div class="para logical" id="ex-IOCexample-2-3-2">
+<div class="para">When <span class="process-math">\(x=\dfrac{1}{3}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-RationalComparison.html" id="ex-IOCexample-2-3-2-2">
+\begin{align*}
+\amp \sum_{k=0}^\infty \frac{3^k\left(\frac{1}{3}\right)^k}{2k+1}  \\
+\amp = \sum_{k=0}^\infty \frac{1}{2k+1}
+\end{align*}
+</div>
+<div class="para">We can apply the <a href="sec-ComparisonTests.html#thm-RationalComparison" class="xref" data-knowl="./knowl/xref/thm-RationalComparison.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.7.10: Rational Comparison Theorem">Rational Comparison Theorem</a>! Since the difference in degrees is 1, we know that this series could be compared to the Harmonic series, and so it diverges.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-IOCexample-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="para" id="ex-IOCexample-2-4">So the interval of convergence is <span class="process-math">\(\left[-\dfrac{1}{3},\dfrac{1}{3}\right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IOCexample-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.3.1"><a href="#ex-IOCexample-2" title="Copy heading and permalink for Solution 9.2.3.1" aria-label="Copy heading and permalink for Solution 9.2.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.2.3"><a href="#ex-IOCexample" title="Copy heading and permalink for Example 9.2.3" aria-label="Copy heading and permalink for Example 9.2.3">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Interval of Convergence"><a href="#subsec-IntervalOfConvergence" title="Copy heading and permalink for Subsection: Interval of Convergence" aria-label="Copy heading and permalink for Subsection: Interval of Convergence">🔗</a></div></section><section class="subsection" id="subsec-OperationsPowerSeries"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Operations on Power Series</span>
 </h3>
 <article class="theorem theorem-like" id="thm-OperationsPowerSeries"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Operations on Power Series.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Operations on Power Series.</span>
 </h4>
 <div class="para" id="thm-OperationsPowerSeries-2-1">For two power series <span class="process-math">\(\displaystyle\sum_{k=0}^\infty c_kx^k\)</span> and <span class="process-math">\(\displaystyle\sum_{k=0}^\infty d_kx^k\)</span> that converge to <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> (respectively) on the interval of convergence <span class="process-math">\(I\text{,}\)</span> we can consider the following operations to combine power series.<div class="autopermalink" data-description="Paragraph"><a href="#thm-OperationsPowerSeries-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="thm-OperationsPowerSeries-2-2">
@@ -887,21 +951,139 @@ f(x)=\sum_{k=0}^\infty c_k(x-a)^k
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#thm-OperationsPowerSeries-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 9.2.3: Operations on Power Series"><a href="#thm-OperationsPowerSeries" title="Copy heading and permalink for Theorem 9.2.3: Operations on Power Series" aria-label="Copy heading and permalink for Theorem 9.2.3: Operations on Power Series">🔗</a></div></article><div class="para" id="subsec-OperationsPowerSeries-3">We can do something similar with some of our calculus operations: differentiation and integration.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Theorem 9.2.4: Operations on Power Series"><a href="#thm-OperationsPowerSeries" title="Copy heading and permalink for Theorem 9.2.4: Operations on Power Series" aria-label="Copy heading and permalink for Theorem 9.2.4: Operations on Power Series">🔗</a></div></article><div class="para" id="subsec-OperationsPowerSeries-3">We can do something similar with some of our calculus operations: differentiation and integration.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="thm-DiffPowerSeries"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Differentiating and Integrating Power Series.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Differentiating and Integrating Power Series.</span>
 </h4>
-<div class="para" id="thm-DiffPowerSeries-2-1">If <span class="process-math">\(\displaystyle\sum_{k=0}^\infty c_k(x-a)^k\)</span> converges to <span class="process-math">\(f(x)\)</span> on an interval of convergence with a radius <span class="process-math">\(R\gt0\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum_{k=0}^\infty kc_k(x-a)^{k-1}\)</span> converges to <span class="process-math">\(f'(x)\)</span> and <span class="process-math">\(\displaystyle\sum_{k=0}^\infty \frac{c_k(x-a)^{k+1}}{k+1}\)</span> converges to <span class="process-math">\(F(x)\text{,}\)</span> an antiderivative of <span class="process-math">\(f(x)\text{.}\)</span> Both of these converge on an interval of convergence centered at <span class="process-math">\(x=a\)</span> with radius <span class="process-math">\(R\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-DiffPowerSeries-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="thm-DiffPowerSeries-2-1">
+<div class="para">If <span class="process-math">\(\displaystyle\sum_{k=0}^\infty c_k(x-a)^k\)</span> converges to <span class="process-math">\(f(x)\)</span> on an interval of convergence with a radius <span class="process-math">\(R\gt0\text{,}\)</span> then:</div>
+<ul class="disc" id="thm-DiffPowerSeries-2-1-4">
+<li id="thm-DiffPowerSeries-2-1-4-1">
+<div class="para" id="thm-DiffPowerSeries-2-1-4-1-1">
+<span class="process-math">\(\displaystyle\sum_{k=0}^\infty kc_k(x-a)^{k-1}\)</span> converges to <span class="process-math">\(f'(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-DiffPowerSeries-2-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 9.2.4: Differentiating and Integrating Power Series"><a href="#thm-DiffPowerSeries" title="Copy heading and permalink for Theorem 9.2.4: Differentiating and Integrating Power Series" aria-label="Copy heading and permalink for Theorem 9.2.4: Differentiating and Integrating Power Series">🔗</a></div></article><article class="note remark-like" id="subsec-OperationsPowerSeries-5"><h4 class="heading">
-<span class="type">Note</span><span class="space"> </span><span class="codenumber">9.2.5</span><span class="period">.</span>
+<div class="autopermalink" data-description="Item"><a href="#thm-DiffPowerSeries-2-1-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="thm-DiffPowerSeries-2-1-4-2">
+<div class="para" id="thm-DiffPowerSeries-2-1-4-2-1">
+<span class="process-math">\(\displaystyle\sum_{k=0}^\infty \frac{c_k(x-a)^{k+1}}{k+1}\)</span> converges to <span class="process-math">\(F(x)\text{,}\)</span> an antiderivative of <span class="process-math">\(f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-DiffPowerSeries-2-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#thm-DiffPowerSeries-2-1-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Both of these converge on an interval of convergence centered at <span class="process-math">\(x=a\)</span> with radius <span class="process-math">\(R\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-DiffPowerSeries-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.2.5: Differentiating and Integrating Power Series"><a href="#thm-DiffPowerSeries" title="Copy heading and permalink for Theorem 9.2.5: Differentiating and Integrating Power Series" aria-label="Copy heading and permalink for Theorem 9.2.5: Differentiating and Integrating Power Series">🔗</a></div></article><article class="note remark-like" id="subsec-OperationsPowerSeries-5"><h4 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">9.2.6</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-OperationsPowerSeries-5-1">We’re being weird about naming the interval of convergence for these. The issue is that when we differentiate, we might lose closed endpoints of an interval. Similarly, when we antidifferentiate, we could add endpoints to an open interval.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-OperationsPowerSeries-5-2">We can see this in some of the examples that follow, but the intervals of convergence are going to be identical except for possibly at the endpoints.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Note 9.2.5"><a href="#subsec-OperationsPowerSeries-5" title="Copy heading and permalink for Note 9.2.5" aria-label="Copy heading and permalink for Note 9.2.5">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Operations on Power Series"><a href="#subsec-OperationsPowerSeries" title="Copy heading and permalink for Subsection: Operations on Power Series" aria-label="Copy heading and permalink for Subsection: Operations on Power Series">🔗</a></div></section><div class="autopermalink" data-description="Section 9.2: Power Series Convergence"><a href="#sec-PowerSeriesConvergence" title="Copy heading and permalink for Section 9.2: Power Series Convergence" aria-label="Copy heading and permalink for Section 9.2: Power Series Convergence">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Note 9.2.6"><a href="#subsec-OperationsPowerSeries-5" title="Copy heading and permalink for Note 9.2.6" aria-label="Copy heading and permalink for Note 9.2.6">🔗</a></div></article><div class="para" id="subsec-OperationsPowerSeries-6">Let’s finish this here by revisiting the power series from <a href="sec-PowerSeriesConvergence.html#ex-IOCexample" class="xref" data-knowl="./knowl/xref/ex-IOCexample.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.2.3">Example 9.2.3</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsec-OperationsPowerSeries-7"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.7</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="subsec-OperationsPowerSeries-7-1"><div class="para" id="subsec-OperationsPowerSeries-7-1-1">Let’s re-consider the power series <span class="process-math">\(\displaystyle\sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}\text{.}\)</span> We know, from <a href="sec-PowerSeriesConvergence.html#ex-IOCexample" class="xref" data-knowl="./knowl/xref/ex-IOCexample.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.2.3">Example 9.2.3</a>, that this power series converges to <span class="process-math">\(f(x)\)</span> for <span class="process-math">\(x\)</span>-values in the interval <span class="process-math">\(\left[-\dfrac{1}{3},\dfrac{1}{3}\right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="subsec-OperationsPowerSeries-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-OperationsPowerSeries-7-2-1-1">Find a power series that converges to <span class="process-math">\(x^7f(x)\text{.}\)</span> What is the interval of convergence?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-OperationsPowerSeries-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-OperationsPowerSeries-7-2-2-1">
+<div class="displaymath process-math" id="subsec-OperationsPowerSeries-7-2-2-1-1">
+\begin{align*}
+f(x) \amp = \sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}\\
+x^7f(x) \amp = x^7 \sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}\\
+\amp = \sum_{k=0}^\infty \frac{3^k(x^k)(x^7)}{2k+1}\\
+\amp = \sum_{k=0}^\infty \frac{3^kx^{k+7}}{2k+1}
+\end{align*}
+</div>
+<div class="para">The interval of convergence doesn’t change: <span class="process-math">\(\left[-\dfrac{1}{3},\dfrac{1}{3}\right)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.7.a.1"><a href="#subsec-OperationsPowerSeries-7-2-2" title="Copy heading and permalink for Solution 9.2.7.a.1" aria-label="Copy heading and permalink for Solution 9.2.7.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 9.2.7.a"><a href="#subsec-OperationsPowerSeries-7-2" title="Copy heading and permalink for Task 9.2.7.a" aria-label="Copy heading and permalink for Task 9.2.7.a">🔗</a></div></article><article class="task exercise-like" id="subsec-OperationsPowerSeries-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-OperationsPowerSeries-7-3-1-1">Find a power series that converges to <span class="process-math">\(f(x^2)\text{.}\)</span> What is the interval of convergence?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-OperationsPowerSeries-7-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-OperationsPowerSeries-7-3-2-1">
+<div class="displaymath process-math" id="subsec-OperationsPowerSeries-7-3-2-1-1">
+\begin{align*}
+f(x) \amp = \sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}\\
+f(x^2) \amp = \sum_{k=0}^\infty \frac{3^k((x^2)^k)}{2k+1}\\
+\amp = \sum_{k=0}^\infty \frac{3^k(x^{2k})(x^7)}{2k+1}
+\end{align*}
+</div>
+<div class="para">The interval of convergence is <span class="process-math">\(\left(-\dfrac{1}{\sqrt{3}},\dfrac{1}{\sqrt{3}}\right)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.7.b.1"><a href="#subsec-OperationsPowerSeries-7-3-2" title="Copy heading and permalink for Solution 9.2.7.b.1" aria-label="Copy heading and permalink for Solution 9.2.7.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 9.2.7.b"><a href="#subsec-OperationsPowerSeries-7-3" title="Copy heading and permalink for Task 9.2.7.b" aria-label="Copy heading and permalink for Task 9.2.7.b">🔗</a></div></article><article class="task exercise-like" id="subsec-OperationsPowerSeries-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-OperationsPowerSeries-7-4-1-1">Find a power series that converges to <span class="process-math">\(f'(x)\text{.}\)</span> What is the interval of convergence?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-OperationsPowerSeries-7-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-OperationsPowerSeries-7-4-2-1">
+<div class="displaymath process-math" id="subsec-OperationsPowerSeries-7-4-2-1-1">
+\begin{align*}
+f(x) \amp = \sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}\\
+f'(x) \amp = \ddx{\sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}}\\
+\amp = \sum_{k=0}^\infty \ddx{frac{3^k(x^k)}{2k+1}}\\
+\amp = \sum_{k=0}^\infty \frac{3^k\ddx{x^k}}{2k+1}\\
+\amp = \sum_{k=0}^\infty \frac{k3^k(x^{k-1})}{2k+1}
+\end{align*}
+</div>
+<div class="para">Since <span class="process-math">\(k\)</span> is in the coefficient, starting the index at <span class="process-math">\(k=0\)</span> means that the “first” term is 0: we can re-index if we’d like, but it is not necessary.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=1}^\infty \frac{k3^k(x^{k-1})}{2k+1}
+\hspace{0.5cm} \text{or} \hspace{0.5cm}
+\sum_{k=0}^\infty \frac{(k+1)3^{k+1}(x^k)}{2k+3}
+\end{equation*}
+</div>
+<div class="para">In any of these cases, the interval of convergence is <span class="process-math">\(\left(-\dfrac{1}{3},\dfrac{1}{3}\right)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-OperationsPowerSeries-7-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.7.c.1"><a href="#subsec-OperationsPowerSeries-7-4-2" title="Copy heading and permalink for Solution 9.2.7.c.1" aria-label="Copy heading and permalink for Solution 9.2.7.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 9.2.7.c"><a href="#subsec-OperationsPowerSeries-7-4" title="Copy heading and permalink for Task 9.2.7.c" aria-label="Copy heading and permalink for Task 9.2.7.c">🔗</a></div></article><div class="autopermalink" data-description="Example 9.2.7"><a href="#subsec-OperationsPowerSeries-7" title="Copy heading and permalink for Example 9.2.7" aria-label="Copy heading and permalink for Example 9.2.7">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Operations on Power Series"><a href="#subsec-OperationsPowerSeries" title="Copy heading and permalink for Subsection: Operations on Power Series" aria-label="Copy heading and permalink for Subsection: Operations on Power Series">🔗</a></div></section><section class="conclusion" id="sec-PowerSeriesConvergence-5"><div class="para" id="sec-PowerSeriesConvergence-5-1">These operations aren’t that useful without a purpose. Similarly, these power series aren’t that interesting without knowing what functions they converge to.<div class="autopermalink" data-description="Paragraph"><a href="#sec-PowerSeriesConvergence-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-PowerSeriesConvergence-5-2">
+<div class="para">We’ll now start putting some things we’ve learned together.</div>
+<ul class="disc" id="sec-PowerSeriesConvergence-5-2-1">
+<li id="sec-PowerSeriesConvergence-5-2-1-1">
+<div class="para" id="sec-PowerSeriesConvergence-5-2-1-1-1">We have ideas of power series representations for <span class="process-math">\(\sin(x)\text{,}\)</span> <span class="process-math">\(\cos(x)\text{,}\)</span> and <span class="process-math">\(e^x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-PowerSeriesConvergence-5-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-PowerSeriesConvergence-5-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-PowerSeriesConvergence-5-2-1-2">
+<div class="para" id="sec-PowerSeriesConvergence-5-2-1-2-1">We know the geometric series, which we can use to get a power series representation for <span class="process-math">\(\dfrac{1}{1-x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-PowerSeriesConvergence-5-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-PowerSeriesConvergence-5-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-PowerSeriesConvergence-5-2-1-3">
+<div class="para" id="sec-PowerSeriesConvergence-5-2-1-3-1">We have a general way of building terms of these power series, using the polynomial approximations and the formula for building those terms.<div class="autopermalink" data-description="Paragraph"><a href="#sec-PowerSeriesConvergence-5-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-PowerSeriesConvergence-5-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-PowerSeriesConvergence-5-2-1-4">
+<div class="para" id="sec-PowerSeriesConvergence-5-2-1-4-1">We have ways of combining, differentiating, and anti-differentiating power series.<div class="autopermalink" data-description="Paragraph"><a href="#sec-PowerSeriesConvergence-5-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-PowerSeriesConvergence-5-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">We’ll move forward and demonstrate some really great ways of constructing power series representations of some new functions. And then we’ll show some very fun uses of these power series representations to illustrate how friendly they are to work with.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-PowerSeriesConvergence-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="autopermalink" data-description="Section 9.2: Power Series Convergence"><a href="#sec-PowerSeriesConvergence" title="Copy heading and permalink for Section 9.2: Power Series Convergence" aria-label="Copy heading and permalink for Section 9.2: Power Series Convergence">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-PolynomialApproximation.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-BuildingTaylorSeries.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

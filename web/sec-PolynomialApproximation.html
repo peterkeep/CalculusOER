@@ -641,20 +641,123 @@ eBookConfig.enable_chatcodes =  false;
 </div></section><section class="subsection" id="subsec-WhatDoWeWant"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">What Do We Want From a Polynomial Approximation?</span>
 </h3>
-<div class="para" id="subsec-WhatDoWeWant-2"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-WhatDoWeWant-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para logical" id="subsec-WhatDoWeWant-2">
+<div class="para">It’s always good to lay out our expectations clearly. We want to make sure that, when we create this new <em class="emphasis">thing</em>, that we have some clear idea of what we’re trying to accomplish in its creation. So let’s start with our <a href="sec-LinearApproximation.html#def-LinearApproximation" class="xref" data-knowl="./knowl/xref/def-LinearApproximation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 4.6.1: Linear Approximation of a Function">Linear Approximation of a Function</a>. What were the important properties of this linear function we created?</div>
+<ol class="decimal" id="subsec-WhatDoWeWant-2-3">
+<li id="subsec-WhatDoWeWant-2-3-1">
+<div class="para logical" id="subsec-WhatDoWeWant-2-3-1-1">
+<div class="para">The function’s output, <span class="process-math">\(f(x)\text{,}\)</span> matched the output from the linear approximation, <span class="process-math">\(L(x)\text{,}\)</span> at the center <span class="process-math">\(x=a\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-WhatDoWeWant-2-3-1-1-4">
+\begin{align*}
+L(x) \amp = f'(a)(x-a)+f(a) \\
+L(a) \amp = f'(a)(a-a)+f(a)\\
+\amp f(a)
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-WhatDoWeWant-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-WhatDoWeWant-2-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-WhatDoWeWant-2-3-2">
+<div class="para logical" id="subsec-WhatDoWeWant-2-3-2-1">
+<div class="para">The function’s first derivative, <span class="process-math">\(f'(x)\text{,}\)</span> matched the slope of the linear approximation, <span class="process-math">\(L'(x)\text{,}\)</span> at <span class="process-math">\(x=a\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-WhatDoWeWant-2-3-2-1-4">
+\begin{align*}
+L'(x) \amp = \ddx{f'(a)(x-a)+f(a)} \\
+\amp = f'(a)\\
+L'(a) \amp = f'(a)
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-WhatDoWeWant-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-WhatDoWeWant-2-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">This seems like a good structure! We have <span class="process-math">\(f(a)=L(a)\text{,}\)</span> giving us that nice intersection between our approximation and the function we’re approximating at the center. Then we used the slope of the function to estimate how our approximating function should move away from that center. The only real problem is that our function probably doesn’t have a <em class="emphasis">constant</em> slope, while a constant slope is the defining characteristic of the line we’re using.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-WhatDoWeWant-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-WhatDoWeWant-3">So how do we extend this, then, into a better approximation? Well, an easy next step is to make the slope of our approximating function change as we move away from the center, <span class="process-math">\(x=a\text{.}\)</span> That way, maybe the slopes change in a way that’s similar to the slopes of the actual function, and our approximating curve (not a line anymore) can follow the function for a bit longer.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-WhatDoWeWant-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-WhatDoWeWant-4">What we’re saying is that we want a function where the second derivative is <span class="process-math">\(f''(a)\text{,}\)</span> just like our first derivative matched <span class="process-math">\(f'(a)\text{.}\)</span> Instead of using letters like <span class="process-math">\(L\)</span> for linear and <span class="process-math">\(Q\)</span> for quadratic, let’s just call these approximations by their function type (polynomials!) and degree. So <span class="process-math">\(p_1(x)=f'(a)(x-a)+f(a)\text{,}\)</span> the first-degree polynomial approximation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-WhatDoWeWant-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-WhatDoWeWant-5">
+<div class="para">Now, to find <span class="process-math">\(p_2(x)\text{,}\)</span> we’re going to add a term to the first-degree polynomial:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p_2(x) = \fillinmath{XXX}(x-a)^2+f'(a)(x-a)+f(a)
+\end{equation*}
+</div>
+<div class="para">Let’s differentiate this function twice, and force it to match <span class="process-math">\(f''(a)\)</span> at <span class="process-math">\(x=a\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-WhatDoWeWant-5-5">
+\begin{align*}
+p_2(x) \amp= \fillinmath{XXX}(x-a)^2+f'(a)(x-a)+f(a)\\
+p_2'(x) \amp = 2(\fillinmath{XXX})(x-a)+f'(a)\\
+p_2''(x) \amp = 2(\fillinmath{XXX} )
+\end{align*}
+</div>
+<div class="para">What do we need to fill in the blank to make this match <span class="process-math">\(f''(a)\text{?}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-WhatDoWeWant-5-7">
+\begin{align*}
+p_2''(x) \amp = 2\left(\frac{f''(a)}{2}\right) \\
+\amp = f''(a)
+\end{align*}
+</div>
+<div class="para">So we get:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p_2(x) = \frac{f''(a)}{2}(x-a)^2+f'(a)(x-a)+f(a)\text{.}
+\end{equation*}
+</div>
+<div class="para">What if we wanted a higher degree? Like, <span class="process-math">\(p_3(x)\text{?}\)</span> Let’s repeat the same process and see what happens!</div>
+<div class="displaymath process-math" id="subsec-WhatDoWeWant-5-10">
+\begin{align*}
+p_3(x) \amp = \fillinmath{XXX}(x-a)^3 + \frac{f''(a)}{2}(x-a)^2+f'(a)(x-a)+f(a)\\
+p_3'(x) \amp = 3 (\fillinmath{XXX})(x-a)^2+f''(a)(x-a)+f'(a)\\
+p_3''(x) \amp = 3(2)(\fillinmath{XXX})(x-a)+f''(a)\\
+p_3'''(x) \amp = 3(2)(\fillinmath{XXX})
+\end{align*}
+</div>
+<div class="para">If we, again, want this third derivative to match <span class="process-math">\(f'''(a)\)</span> (so that the rate at which the slope changes as we move away from the center changes in the same way that it does on <span class="process-math">\(f\text{...}\)</span>whew, that is going to be hard to interpret!), then we need to fill the blank in with <span class="process-math">\(\dfrac{f'''(a)}{3(2)}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-WhatDoWeWant-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="autopermalink" data-description="Subsection: What Do We Want From a Polynomial Approximation?"><a href="#subsec-WhatDoWeWant" title="Copy heading and permalink for Subsection: What Do We Want From a Polynomial Approximation?" aria-label="Copy heading and permalink for Subsection: What Do We Want From a Polynomial Approximation?">🔗</a></div></section><section class="subsection" id="subsec-HowDoWeBuild"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">How Do We Build a Polynomial Approximation?</span>
 </h3>
-<div class="para" id="subsec-HowDoWeBuild-2"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-HowDoWeBuild-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para logical" id="subsec-HowDoWeBuild-2">
+<div class="para">Let’s jump into a generalization of what we’ve just done. Answer these few questions with yourself, just to make sure you can see where we’re going:</div>
+<ol class="decimal" id="subsec-HowDoWeBuild-2-1">
+<li id="subsec-HowDoWeBuild-2-1-1">
+<div class="para" id="subsec-HowDoWeBuild-2-1-1-1">Why, in the coefficients for each term, do we have the derivative that matches the degree of the term? (First derivative for the first degree term, second derivative for the second degree term, and third derivative for the third degree term.)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-HowDoWeBuild-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-HowDoWeBuild-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-HowDoWeBuild-2-1-2">
+<div class="para" id="subsec-HowDoWeBuild-2-1-2-1">Why, in the coefficients for each term, do we divide? What are we dividing by, and why do we need these numbers specifically?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-HowDoWeBuild-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-HowDoWeBuild-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-HowDoWeBuild-2-1-3">
+<div class="para" id="subsec-HowDoWeBuild-2-1-3-1">If we add a 4th, 5th, and 6th term, what will we divide those 4th, 5th, and 6th derivatives (<span class="process-math">\(f^{(4)}(a)\text{,}\)</span> <span class="process-math">\(f^{(5)}(a)\text{,}\)</span> and <span class="process-math">\(f^{(6)}(a)\)</span>) by?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-HowDoWeBuild-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-HowDoWeBuild-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-HowDoWeBuild-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-PolynomialApproximation"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Polynomial Approximation.</span>
 </h4>
 <div class="para logical" id="def-PolynomialApproximation-2-1">
-<div class="para">If <span class="process-math">\(f(x)\)</span> is a function that is <span class="process-math">\(n\)</span>-times differentiable at <span class="process-math">\(x=a\)</span> (that is, the functions <span class="process-math">\(f(a)\text{,}\)</span> <span class="process-math">\(f'(a)\text{,}\)</span> <span class="process-math">\(f''(a)\text{,}\)</span> ..., <span class="process-math">\(f^{(n)}(a)\)</span> all exist), then the <span class="process-math">\(n\)</span>th degree <dfn class="terminology">polynomial approximation of <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=a\)</span></dfn> is:</div>
+<div class="para">If <span class="process-math">\(f(x)\)</span> is a function that is <span class="process-math">\(n\)</span>-times differentiable at <span class="process-math">\(x=a\)</span> (that is, the function/derivative values <span class="process-math">\(f(a)\text{,}\)</span> <span class="process-math">\(f'(a)\text{,}\)</span> <span class="process-math">\(f''(a)\text{,}\)</span> ..., <span class="process-math">\(f^{(n)}(a)\)</span> all exist), then the <span class="process-math">\(n\)</span>th degree <dfn class="terminology">polynomial approximation of <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=a\)</span></dfn> is:</div>
 <div class="displaymath process-math" id="def-PolynomialApproximation-2-1-10">
 \begin{align*}
 p_n(x) \amp = f(a)+ f'(a)(x-a)+\frac{f''(a)}{2}(x-a)^2+...+ \frac{f^{(n)}(a)}{n!}(x-a)^n\\
-\amp = \sum_{k=1}^n \frac{f^{(k)}(a)}{k!}(x-a)^k
+\amp = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#def-PolynomialApproximation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -813,7 +916,12 @@ p_n(x) \amp = f(a)+ f'(a)(x-a)+\frac{f''(a)}{2}(x-a)^2+...+ \frac{f^{(n)}(a)}{n!
 <div class="autopermalink" data-description="Assemblage: Accuracy in Polynomial Approximations"><a href="#strat-ApproximationAccuracy" title="Copy heading and permalink for Assemblage: Accuracy in Polynomial Approximations" aria-label="Copy heading and permalink for Assemblage: Accuracy in Polynomial Approximations">🔗</a></div></article><div class="autopermalink" data-description="Subsection: How Do We Build a Polynomial Approximation?"><a href="#subsec-HowDoWeBuild" title="Copy heading and permalink for Subsection: How Do We Build a Polynomial Approximation?" aria-label="Copy heading and permalink for Subsection: How Do We Build a Polynomial Approximation?">🔗</a></div></section><section class="subsection" id="subsec-AreThesePartialSums"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Are These Partial Sums?</span>
 </h3>
-<div class="para" id="subsec-AreThesePartialSums-2"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreThesePartialSums-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="subsec-AreThesePartialSums-2">We have been using some familiar language here...we’re talking about these “approximations” improving as we increase some parameter, <span class="process-math">\(n\text{.}\)</span> We have some intuition that when we increase <span class="process-math">\(n\text{,}\)</span> these approximations “approach” an object (in this case, a function) in some sense.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreThesePartialSums-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-AreThesePartialSums-3">We’re adding more and more terms to this sum as we increase <span class="process-math">\(n\text{.}\)</span> Is a polynomial approximation just a partial sum?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreThesePartialSums-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-AreThesePartialSums-4">Are we just going to look at a limit as <span class="process-math">\(n\to\infty\)</span> and see what happens?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreThesePartialSums-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="activity project-like" id="act-PartialSumsOfWhat"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Partial Sums of What?</span>
 </h4>
@@ -841,7 +949,9 @@ e^x \amp \approx 1+x+\frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^
 <div class="autopermalink" data-description="Task 9.1.3.c"><a href="#act-PartialSumsOfWhat-5" title="Copy heading and permalink for Task 9.1.3.c" aria-label="Copy heading and permalink for Task 9.1.3.c">🔗</a></div></article><article class="task exercise-like" id="act-PartialSumsOfWhat-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="act-PartialSumsOfWhat-6-1-1">Make a conjecture about what a polynomial approximation for <span class="process-math">\(f(x)=\cos(x)\)</span> centered at <span class="process-math">\(x=0\)</span> would be.<div class="autopermalink" data-description="Paragraph"><a href="#act-PartialSumsOfWhat-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 9.1.3.d"><a href="#act-PartialSumsOfWhat-6" title="Copy heading and permalink for Task 9.1.3.d" aria-label="Copy heading and permalink for Task 9.1.3.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.1.3: Partial Sums of What?"><a href="#act-PartialSumsOfWhat" title="Copy heading and permalink for Activity 9.1.3: Partial Sums of What?" aria-label="Copy heading and permalink for Activity 9.1.3: Partial Sums of What?">🔗</a></div></article><article class="activity project-like" id="act-ConvergeToWhat"><h4 class="heading">
+<div class="autopermalink" data-description="Task 9.1.3.d"><a href="#act-PartialSumsOfWhat-6" title="Copy heading and permalink for Task 9.1.3.d" aria-label="Copy heading and permalink for Task 9.1.3.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.1.3: Partial Sums of What?"><a href="#act-PartialSumsOfWhat" title="Copy heading and permalink for Activity 9.1.3: Partial Sums of What?" aria-label="Copy heading and permalink for Activity 9.1.3: Partial Sums of What?">🔗</a></div></article><div class="para" id="subsec-AreThesePartialSums-6">We’ll explore these polynomials more, but we’re specifically interested in the infinite-series version of these things. For now, let’s think about convergence a bit.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreThesePartialSums-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-ConvergeToWhat"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">How Do These Polynomials Converge?</span>
 </h4>
 <div class="introduction" id="act-ConvergeToWhat-2">
@@ -878,7 +988,13 @@ e^x \amp \approx 1+x+\frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^
 <div class="autopermalink" data-description="Task 9.1.4.h"><a href="#act-ConvergeToWhat-10" title="Copy heading and permalink for Task 9.1.4.h" aria-label="Copy heading and permalink for Task 9.1.4.h">🔗</a></div></article><article class="task exercise-like" id="act-ConvergeToWhat-11"><h5 class="heading"><span class="codenumber">(i)</span></h5>
 <div class="para" id="act-ConvergeToWhat-11-1-1">Does this behavior change if we centered our approximation elsewhere?<div class="autopermalink" data-description="Paragraph"><a href="#act-ConvergeToWhat-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 9.1.4.i"><a href="#act-ConvergeToWhat-11" title="Copy heading and permalink for Task 9.1.4.i" aria-label="Copy heading and permalink for Task 9.1.4.i">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.1.4: How Do These Polynomials Converge?"><a href="#act-ConvergeToWhat" title="Copy heading and permalink for Activity 9.1.4: How Do These Polynomials Converge?" aria-label="Copy heading and permalink for Activity 9.1.4: How Do These Polynomials Converge?">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Are These Partial Sums?"><a href="#subsec-AreThesePartialSums" title="Copy heading and permalink for Subsection: Are These Partial Sums?" aria-label="Copy heading and permalink for Subsection: Are These Partial Sums?">🔗</a></div></section><div class="autopermalink" data-description="Section 9.1: Polynomial Approximations of Functions"><a href="#sec-PolynomialApproximation" title="Copy heading and permalink for Section 9.1: Polynomial Approximations of Functions" aria-label="Copy heading and permalink for Section 9.1: Polynomial Approximations of Functions">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Task 9.1.4.i"><a href="#act-ConvergeToWhat-11" title="Copy heading and permalink for Task 9.1.4.i" aria-label="Copy heading and permalink for Task 9.1.4.i">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.1.4: How Do These Polynomials Converge?"><a href="#act-ConvergeToWhat" title="Copy heading and permalink for Activity 9.1.4: How Do These Polynomials Converge?" aria-label="Copy heading and permalink for Activity 9.1.4: How Do These Polynomials Converge?">🔗</a></div></article><div class="para" id="subsec-AreThesePartialSums-8">Ok, so this is pretty interesting! For some functions, like <span class="process-math">\(\sin(x)\text{,}\)</span> <span class="process-math">\(e^x\text{,}\)</span> and <span class="process-math">\(\cos(x)\text{,}\)</span> it seems like the polynomials that we built will end up matching (converging to) the functions pretty much everywhere: as <span class="process-math">\(n\to\infty\)</span> we can get any function value from the polynomial, approximated to whatever accuracy we’d like!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreThesePartialSums-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-AreThesePartialSums-9">But that’s different for the log function. We were only able to get our polynomial to match the function’s behavior on a specific interval of <span class="process-math">\(x\)</span>-values. No matter how high the degree of the polynomial was, we weren’t able to get it close to approximating something like <span class="process-math">\(\ln(10)\text{,}\)</span> for instance. Unless we changed the center, of course!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreThesePartialSums-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-AreThesePartialSums-10">This is going to bring up some great questions about how these partial sums converge to functions. We’ll talk all about that in the next section!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreThesePartialSums-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Are These Partial Sums?"><a href="#subsec-AreThesePartialSums" title="Copy heading and permalink for Subsection: Are These Partial Sums?" aria-label="Copy heading and permalink for Subsection: Are These Partial Sums?">🔗</a></div></section><div class="autopermalink" data-description="Section 9.1: Polynomial Approximations of Functions"><a href="#sec-PolynomialApproximation" title="Copy heading and permalink for Section 9.1: Polynomial Approximations of Functions" aria-label="Copy heading and permalink for Section 9.1: Polynomial Approximations of Functions">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-PowerSeries.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-PowerSeriesConvergence.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
