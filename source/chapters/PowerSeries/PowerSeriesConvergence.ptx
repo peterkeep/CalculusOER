@@ -78,6 +78,57 @@
       </me>
       centered at <m>x=a</m>, then as long as <m>\{c_k\}</m> is a sequence of real numbers, then the series converges at <m>x=a</m>. We get <m>f(a)=c_0</m>, the constant term. This should match with how we thought about these series originally! They came from polynomial approximations of our functions, where of course the polynomials needed to match the function value at the center. We were thinking about tangent lines, tangent quadratics, tangent cubics, etc. They <em>need</em> to be tangent, and so they <q>converge</q> at that single center <m>x</m>-value at least.
     </p>
+    <example xml:id="ex-IOCexample">
+      <statement>
+        <p>
+          For the power series <m>f(x)=\displaystyle\sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}</m>, find the interval of convergence. Along the way, it will likely be helpful to identify the center and the radius of convergence.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's apply the Ratio Test. We'll technically be applying this to <m>\displaystyle\sum_{k=0}^\infty \frac{3^k|x|^k}{2k+1}</m>.
+          <md>
+            <mrow> \lim_{k\to\infty} \frac{3^{k+1}|x|^{k+1}}{2(k+1)+1}\cdot \frac{2k+1}{3^k|x|^k}\amp =\lim_{k\to\infty} \frac{3|x|(2k+1)}{2k+3}</mrow>
+            <mrow> \amp = 3|x|</mrow>
+          </md>
+          For us to conclude that this series converges, we need the limit from the ratio test to be less than 1.
+          <me>
+            3|x|\lt 1 \to |x|\lt \frac{1}{3}
+          </me>
+          This series is centered at 0 with a radius of convergence of <m>\frac{1}{3}</m>. So we know that this series converges for <m>-\dfrac{1}{3}\lt x \lt \dfrac{1}{3}</m>. 
+        </p>
+        <p>
+          Since the Ratio Test is inconclusive when <m>x=-\dfrac{1}{3}</m> and <m>x=\dfrac{1}{3}</m>, we'll test those individually.
+        </p>
+        <sidebyside widths="48% 48%">
+          <p>
+            When <m>x=-\dfrac{1}{3}</m>
+            <md>
+              <mrow>\amp \sum_{k=0}^\infty \frac{3^k\left(-\frac{1}{3}\right)^k}{2k+1}  </mrow>
+              <mrow> \amp = \sum_{k=0}^\infty \frac{(-1)^k}{2k+1}</mrow>
+            </md>
+            We can apply the <xref ref="thm-AlternatingSeriesTest" text="title"/>!
+            <md>
+              <mrow> \amp \lim_{k\to\infty} \frac{1}{2k+1}</mrow>
+              <mrow> \amp = 0</mrow>
+            </md>
+            This series converges!
+          </p>
+          <p>
+            When <m>x=\dfrac{1}{3}</m>
+            <md>
+              <mrow>\amp \sum_{k=0}^\infty \frac{3^k\left(\frac{1}{3}\right)^k}{2k+1}  </mrow>
+              <mrow> \amp = \sum_{k=0}^\infty \frac{1}{2k+1}</mrow>
+            </md>
+            We can apply the <xref ref="thm-RationalComparison" text="title"/>! Since the difference in degrees is 1, we know that this series could be compared to the Harmonic series, and so it diverges.
+
+          </p>
+        </sidebyside>
+        <p>
+          So the interval of convergence is <m>\left[-\dfrac{1}{3},\dfrac{1}{3}\right)</m>.
+        </p>
+      </solution>
+    </example>
   </subsection>
   <subsection xml:id="subsec-OperationsPowerSeries">
     <title>Operations on Power Series</title>
@@ -145,6 +196,107 @@
         We can see this in some of the examples that follow, but the intervals of convergence are going to be identical except for possibly at the endpoints.
       </p>
     </note>
+    <p>
+      Let's finish this here by revisiting the power series from <xref ref="ex-IOCexample"/>.
+    </p>
+    <example>
+      <introduction>
+        <p>
+          Let's re-consider the power series <m>\displaystyle\sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}</m>. We know, from <xref ref="ex-IOCexample"/>, that this power series converges to <m>f(x)</m> for <m>x</m>-values in the interval <m>\left[-\dfrac{1}{3},\dfrac{1}{3}\right)</m>.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Find a power series that converges to <m>x^7f(x)</m>. What is the interval of convergence?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>f(x) \amp = \sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}</mrow>
+              <mrow>x^7f(x) \amp = x^7 \sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}</mrow>
+              <mrow> \amp = \sum_{k=0}^\infty \frac{3^k(x^k)(x^7)}{2k+1}</mrow>
+              <mrow> \amp = \sum_{k=0}^\infty \frac{3^kx^{k+7}}{2k+1}</mrow>
+            </md>
+            The interval of convergence doesn't change: <m>\left[-\dfrac{1}{3},\dfrac{1}{3}\right)</m>.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Find a power series that converges to <m>f(x^2)</m>. What is the interval of convergence?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>f(x) \amp = \sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}</mrow>
+              <mrow>f(x^2) \amp = \sum_{k=0}^\infty \frac{3^k((x^2)^k)}{2k+1}</mrow>
+              <mrow> \amp = \sum_{k=0}^\infty \frac{3^k(x^{2k})(x^7)}{2k+1}</mrow>
+            </md>
+            The interval of convergence is <m>\left(-\dfrac{1}{\sqrt{3}},\dfrac{1}{\sqrt{3}}\right)</m>.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Find a power series that converges to <m>f'(x)</m>. What is the interval of convergence?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>f(x) \amp = \sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}</mrow>
+              <mrow>f'(x) \amp = \ddx{\sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}}</mrow>
+              <mrow> \amp = \sum_{k=0}^\infty \ddx{frac{3^k(x^k)}{2k+1}}</mrow>
+              <mrow> \amp = \sum_{k=0}^\infty \frac{3^k\ddx{x^k}}{2k+1}</mrow>
+              <mrow> \amp = \sum_{k=0}^\infty \frac{k3^k(x^{k-1})}{2k+1}</mrow>
+            </md>
+            Since <m>k</m> is in the coefficient, starting the index at <m>k=0</m> means that the <q>first</q> term is 0: we can re-index if we'd like, but it is not necessary.
+            <me>
+              \sum_{k=1}^\infty \frac{k3^k(x^{k-1})}{2k+1}
+              \hspace{0.5cm} \text{or} \hspace{0.5cm}
+              \sum_{k=0}^\infty \frac{(k+1)3^{k+1}(x^k)}{2k+3}
+            </me>
+            In any of these cases, the interval of convergence is <m>\left(-\dfrac{1}{3},\dfrac{1}{3}\right)</m>.
+          </p>
+        </solution>
+      </task>
+    </example>
   </subsection>
+  <conclusion>
+    <p>
+      These operations aren't that useful without a purpose. Similarly, these power series aren't that interesting without knowing what functions they converge to.
+    </p>
+    <p>
+      We'll now start putting some things we've learned together.
+      <ul>
+        <li>
+          <p>
+            We have ideas of power series representations for <m>\sin(x)</m>, <m>\cos(x)</m>, and <m>e^x</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            We know the geometric series, which we can use to get a power series representation for <m>\dfrac{1}{1-x}</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            We have a general way of building terms of these power series, using the polynomial approximations and the formula for building those terms.
+          </p>
+        </li>
+        <li>
+          <p>
+            We have ways of combining, differentiating, and anti-differentiating power series.
+          </p>
+        </li>
+      </ul>
+      We'll move forward and demonstrate some really great ways of constructing power series representations of some new functions. And then we'll show some very fun uses of these power series representations to illustrate how friendly they are to work with.
+    </p>
+  </conclusion>
 
 </section>
