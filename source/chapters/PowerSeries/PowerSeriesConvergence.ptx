@@ -76,7 +76,7 @@
       <me>
         f(x)=\sum_{k=0}^\infty c_k(x-a)^k
       </me>
-      centered at <m>x=a</m>, then as long as <m>\{c_k\}</m> is a sequence of real numbers, then the series converges at <m>x=a</m>. We get <m>f(a)=c_0</m>, the constant term. This should match with how we thought about these series originally! They came from polynomial approximations of our functions, where of course the polynomials needed to match the function value at the center. We were thinking about tangent lines, tangent quadratics, tangent cubics, etc. They <em>need</em> to be tangent, and so they <q>covnerge</q> at that single center <m>x</m>-value at least.
+      centered at <m>x=a</m>, then as long as <m>\{c_k\}</m> is a sequence of real numbers, then the series converges at <m>x=a</m>. We get <m>f(a)=c_0</m>, the constant term. This should match with how we thought about these series originally! They came from polynomial approximations of our functions, where of course the polynomials needed to match the function value at the center. We were thinking about tangent lines, tangent quadratics, tangent cubics, etc. They <em>need</em> to be tangent, and so they <q>converge</q> at that single center <m>x</m>-value at least.
     </p>
   </subsection>
   <subsection xml:id="subsec-OperationsPowerSeries">
@@ -120,7 +120,20 @@
       <title>Differentiating and Integrating Power Series</title>
       <statement>
         <p>
-          If <m>\displaystyle\sum_{k=0}^\infty c_k(x-a)^k</m> converges to <m>f(x)</m> on an interval of convergence with a radius <m>R\gt0</m>, then <m>\displaystyle\sum_{k=0}^\infty kc_k(x-a)^{k-1}</m> converges to <m>f'(x)</m> and <m>\displaystyle\sum_{k=0}^\infty \frac{c_k(x-a)^{k+1}}{k+1}</m> converges to <m>F(x)</m>, an antiderivative of <m>f(x)</m>. Both of these converge on an interval of convergence centered at <m>x=a</m> with radius <m>R</m>.
+          If <m>\displaystyle\sum_{k=0}^\infty c_k(x-a)^k</m> converges to <m>f(x)</m> on an interval of convergence with a radius <m>R\gt0</m>, then:
+          <ul>
+            <li>
+              <p>
+                <m>\displaystyle\sum_{k=0}^\infty kc_k(x-a)^{k-1}</m> converges to <m>f'(x)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\displaystyle\sum_{k=0}^\infty \frac{c_k(x-a)^{k+1}}{k+1}</m> converges to <m>F(x)</m>, an antiderivative of <m>f(x)</m>.
+              </p>
+            </li>
+          </ul>
+           Both of these converge on an interval of convergence centered at <m>x=a</m> with radius <m>R</m>.
         </p>
       </statement>
     </theorem>
