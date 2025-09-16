@@ -1,0 +1,223 @@
+<exercises xml:id="ex-ProductQuotientRule">
+    <exercise>
+        <p>
+            A student encounters the problem <m>\ddx{e^x(x^2+1)}</m> and notes that since <m>\ddx{e^x} = e^x</m> and <m>\ddx{x^2+1}=2x</m>, then <m>\ddx{e^x(x^2+1)} = 2xe^x</m>. Explain not only why the student is incorrect, but also what kinds of pitfalls can occur if we use this <q>the derivative of a product is the product of the derivatives</q> method. Differentiate correctly, explaining your process for the student's benefit.
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the following table of values of <m>f</m>, <m>g</m>, <m>f'</m>, and <m>g'</m>.
+            </p>
+            <table>
+                <title></title>
+                <tabular>
+                    <row halign="center" bottom="medium">
+                        <cell><m>x</m></cell>
+                        <cell><m>f(x)</m></cell>
+                        <cell><m>f'(x)</m></cell>
+                        <cell><m>g(x)</m></cell>
+                        <cell><m>g'(x)</m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>0</m></cell>
+                        <cell><m>-3</m></cell>
+                        <cell><m>\frac{1}{2}</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>-4</m></cell>
+                    </row>
+                    <row halign="center" bottom="medium">
+                        <cell><m>2</m></cell>
+                        <cell><m>\frac{1}{7}</m></cell>
+                        <cell><m>-1</m></cell>
+                        <cell><m>-\frac{5}{2}</m></cell>
+                        <cell><m>\frac{7}{3}</m></cell>
+                    </row>
+                </tabular>
+            </table>
+            <p>
+                Find the following derivatives, using the table.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\Ddx{\dfrac{g(x)}{f(x)}}\bigg|_{x=2}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\Ddx{f(x)g(x)}\bigg|_{x=0}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\Ddx{\dfrac{f(x)+1}{g(x)-2}}\bigg|_{x=0}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\Ddx{f(x)g(x)}\bigg|_{x=2}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Use the product and quotient rules to differentiate each of the following.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = (4x+4)(7x^2-6)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>g(x) = \dfrac{x^2+1}{x}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>j(x) = \dfrac{e^x}{x-1}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>s(t) = e^t(t^2+t-1)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\Gamma(\theta) = 4e^\theta\sqrt{\theta}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>r(t) = e^{2t}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    This function can be written as <m>r(t) = \left(e^t\right)^2</m>.
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>w(x) = (5x^5-4x^2+5x-1)^2</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>p(\alpha) = \dfrac{\alpha^3+1}{\alpha^2-1}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{x+e}{x^3-4x}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>g(x) = \dfrac{x+4}{e^x}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Differentiate the following.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>y = e^x(x+4)^2(4x-3)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y = \dfrac{xe^x+1}{x^2-1}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y = \dfrac{x^2+4x-1}{xe^x}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y = \left(\dfrac{x^2-4}{x+5}\right)\left(e^x(x+3)\right)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Find the equation of the line tangent to the function <m>f(x)</m> at the given point.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{x^2-5}{x^2+1}</m> at <m>(1,-2)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{e^x}{x+1}</m> at <m>(0,1)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = e^x(x^2+6)</m> at <m>(1,7e)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{xe^x}{x+2}</m> at <m>(0,0)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
