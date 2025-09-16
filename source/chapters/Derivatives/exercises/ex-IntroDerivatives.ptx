@@ -1,0 +1,177 @@
+<exercises xml:id="ex-IntroDerivatives">
+    <exercise>
+        <p>
+            We define a derivative of<m>f(x)</m> at <m>x=a</m> as<m>f'(x) = \displaystyle \lim_{x\to a} \left(\dfrac{f(x)-f(a)}{x-a}\right)</m>. What is this limit? What does it represent in terms of<m>f(x)</m>? Feel free to sketch some pictures in order to discuss it visually.
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            For some function<m>f(x)</m>, we have that <m>f'(3)=-4</m>. What does this mean? Interpret this value in the context of<m>f(x)</m>.
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                 For each of the following functions, use the definition of the derivative at a point to find the slope of the line tangent to the function's curve at the specified point.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                   <m>f(x) = 6x+1</m> at <m>(1, 7)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>g(x) = x^2-5</m> at <m>(-1, -4)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>j(x) = \sqrt{x}</m> at <m>(4, 2)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>f(x) = \dfrac{1}{4-x}</m> at <m>(3,1)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>g(x) = 4+3x-2x^2</m> at <m>(2,2)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   <m>j(x) = \dfrac{1}{x^2}</m> at <m>(1,1)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                We have talked about two limit-based definitions of derivatives:
+                <md>
+                    <mrow> f'(a) \amp = \lim_{x\to a} \left(\dfrac{f(x)-f(a)}{x-a}\right)</mrow>
+                    <mrow> f'(x) \amp = \lim_{\Delta x \to 0} \left(\frac{f(x+\Delta x)-f(x)}{\Delta x}\right)</mrow>
+                </md>
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    What are some similarities between these definitions? It might help to compare visual depictions of each.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What are some differences between these definitions? Focus on differences in how they are built as well as how we use them.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Pick a situation where it might make sense to use each definition. Explain your choice.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the functions below, find the derivative function <m>f'(x)</m>, and evaluate that function at <m>x=1</m>, <m>x=2</m>, <m>x=3</m>, and <m>x=4</m>. Interpret these values.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = 5x+2</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                     <m>f(x) = \sqrt{x+4}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                     <m>f(x) = x^3-x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{x+1}{x}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Find the following derivatives.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\Ddx{4-\sqrt{x}}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\Ddx{\frac{5}{x-2}}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\Ddx{3\sqrt{x-1}}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\Ddx{x^2+3x}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\Ddx{\frac{1}{x^2+1}}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\Ddx{\sqrt{x^2+1}}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

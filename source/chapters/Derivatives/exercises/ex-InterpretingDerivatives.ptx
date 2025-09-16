@@ -1,0 +1,152 @@
+<exercises xml:id="ex-InterpretingDerivatives">
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following functions, use the definition of the derivative at a point to find <m>f'(a)</m> and then find the equation of the line tangent to the graph of <m>f(x)</m> at <m>x=a</m>.
+            </p>
+            <p>
+                Remember: The equation of a line given the slope <m>m</m> and <m>(x_1, y_1)</m>, a point on the line is <m>y=m(x-x_1)+y_1</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^2+x-1</m> with <m>a=0</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^3+1</m> with <m>a=2</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{2}{\sqrt{x}}</m> with <m>a=6</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sqrt{3x-1}</m> with <m>a=2</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x-x^2</m> with <m>a=2</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{x}{x+1}</m> with <m>a=1</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                We start watching a car driving down a straight road towards a stop sign. We can tell that their position function is <m>s(t) = -7.5t^2 + 81t</m> with position measured in feet from their location when we began observing them and time measured in seconds.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    How fast is the car driving at <m>t=0</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    How fast is the car driving at <m>t=2</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    At what value of <m>t</m> does the car stop (their velocity is 0)?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    How far did they travel before they stopped?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    At <m>t=0</m> what is the acceleration of the car?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    At <m>t=2</m> what is the acceleration of the car?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                The monetary value of an ancient mathematical artifact (the pencil that Isaac Barrow used to prove the Fundamental Theorem of Calculus in 1667) follows the function <m>m(t) = \sqrt{1600t}+10</m> where <m>t</m> is the number of years since 1667 and <m>m(t)</m> is the monetary value of the pencil in US Dollars.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    What was the overall change in value from 1667 to 1967 (from <m>t=0</m> to <m>t=300)</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What was the average rate of change of the value from 1667 to 1967?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What was the instantaneous rate of change of the value in 1967?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find <m>m(354)</m> and <m>m'(354)</m>, and interpret both of these values.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use <m>m(354)</m> and <m>m'(354)</m> to approximate the value of the pencil in 2022.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use <m>m(t)</m> to find the value in 2022. Was the approximation close or not? Explain.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
