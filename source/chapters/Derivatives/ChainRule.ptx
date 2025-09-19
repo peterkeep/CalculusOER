@@ -30,7 +30,7 @@
   <subsection xml:id="subsec-ChainRule">
     <title>The Chain Rule, Intuitively</title>
     <p>
-      Before we build the Chain Rule for differentiating composed functions, we should talk about some notation. Earlier (in <xref ref="subsec-DerivativeNotation"/>) we talked about the derivative notation, <m>\dydx</m>. One of the things we mentioned is that while we know that the derivative is an instantaneous rate of change, this notation is helpful to tell us <em>what</em> is changing with regard to <em>what</em>.
+      Before we build the Chain Rule for differentiating composed functions, we should talk about some notation. Earlier (in <xref ref="subsec-DerivativeNotation" text="title"/>) we talked about the derivative notation, <m>\dydx</m>. One of the things we mentioned is that while we know that the derivative is an instantaneous rate of change, this notation is helpful to tell us <em>what</em> is changing with regard to <em>what</em>.
     </p>
     <p>
       In <m>\dydx</m>, we are calculating how much the <m>y</m>-variable changes when <m>x</m> increases. If we talked about <m>\dd{f}{t}</m>, then we are discussing how much <m>f</m> changes for an increase in <m>t</m>, whatever these variables represent.
