@@ -1,0 +1,273 @@
+<exercises xml:id="ex-Concavity">
+    <exercise>
+        <statement>
+            <p>
+                Consider a function <m>f(x)</m> that is continuous on <m>(-\infty, \infty)</m> with <m>f''(x) \gt 0</m> on <m>(-\infty, 5)</m> and <m>f''(x)\lt 0</m> on <m>(5,\infty)</m>. What do we know about <m>f'(x)</m> on these intervals? What do we know about <m>f(x)</m> on these intervals?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Consider a function <m>g(x)</m> that is continuous on <m>(-\infty, \infty)</m> that is concave down on <m>(-\infty, -2)</m>, concave up on <m>(-2,4)</m>, and concave down on <m>(4,\infty)</m>. Where are the inflection points of <m>g(x)</m>? What is happening to <m>g'(x)</m> at these points?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Explain (with words and/or sketches) why the Second Derivative Test requires <m>f'(a)=0</m> for the second derivative to classify the critical number <m>a</m> as a local maximum or minimum. Why can't the second derivative classify a critical point where <m>f'(a)</m> does not exist?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following functions, use the second derivative to find the intervals where the function is concave up or concave down, and find the location of any inflection points.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = e^x - x^2</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \ln(x^2+1)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = e^{-x^2}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = 1-2x+\dfrac{x^{5}}{20}-\dfrac{x^{4}}{12}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{4x^{5/2}}{15}-x^2</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = 5\cos(x)-2x+1</m> on <m>(0, 2\pi)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^2e^x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \tan^{-1}(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{1}{(x-1)(x-2)}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = 2x^4+x</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Find critical points of the following functions, and apply the Second Derivative Test to classify those critical points as local maximums/minimums. If the test fails, explain why.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = 2x^4+x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{4}{x} + 3x</m> on <m>(0,\infty)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = (x-1)e^x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sqrt{x^3} - x</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Sketch a graph of a function <m>f(x)</m> and has the following characteristics. Label the intervals where <m>f</m> is concave up/down, and find the locations of any local inflection points.
+                <ul>
+                    <li>
+                        <p>
+                            <m>f''(x)\lt 0</m> on <m>(-\infty, -1)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f''(x)\gt 0</m> on <m>(-1, 4)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f'(x)\lt 0</m> on <m>(-\infty,2)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f'(x)\gt 0</m> on <m>(2, 6)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f'(6) = 0</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f''(x)\lt 0</m> on <m>(4,6)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f'(x) \gt 0</m> on <m>(6,\infty)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f''(x) \gt 0</m> on <m>(6,\infty)</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider a function <m>f(x)</m> that is differentiable on <m>(-\infty, \infty)</m>. We graph the <em>first derivative</em>, <m>f'(x)</m>, below.
+            </p>
+            <figure xml:id="fig-InterpretDerivatives-1">
+                <caption>Graph of <m>f'(x)</m>.</caption>
+                <image source="./ApplicationsDerivatives/Interpret.png" width="70%">
+                    <shortdescription>(for accessibility)A graph that increases to the x-axis at x=a, then peaks at x=b. It decreases through the axis at x=c until x=d, where it increases through the axis at x=e and peaks at x=f. It decreases through the axis at x=g.</shortdescription>
+                </image>
+            </figure>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Where is the function <m>f(x)</m> concave up?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Where is the function <m>f(x)</m> concave down?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Where are the inflection points of <m>f(x)</m>? What do they correspond with on the graph of <m>f'(x)</m>? Explain.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain whether <m>x=a</m> is the location of a local max of <m>f(x)</m>, a local min of <m>f(x)</m>, or neither. Reference both the First and Second Derivative Test.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                     Where are the other local maximums/minimums of <m>f(x)</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider a function <m>g(x)</m> that is differentiable on <m>(-\infty, \infty)</m>. We graph the <em>second derivative</em>, <m>g''(x)</m>, below.
+            </p>
+            <figure xml:id="fig-InterpretDerivatives-2">
+                <caption>Graph of <m>g''(x)</m>.</caption>
+                <image source="./ApplicationsDerivatives/Interpret.png" width="70%">
+                    <shortdescription>(for accessibility)A graph that increases to the x-axis at x=a, then peaks at x=b. It decreases through the axis at x=c until x=d, where it increases through the axis at x=e and peaks at x=f. It decreases through the axis at x=g.</shortdescription>
+                </image>
+            </figure>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Where is the function <m>g(x)</m> concave up?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Where is the function <m>g(x)</m> concave down?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Where are the inflection points of <m>g(x)</m>? What do they correspond with on the graph of <m>g''(x)</m>? Explain.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    If there is some <m>x</m>-value, (call it <m>x_0</m>) with <m>a\lt x_0\lt b</m> where we know that <m>g'(x_0)=0</m>, then what else can we say about this point on the graph of <m>g(x)</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

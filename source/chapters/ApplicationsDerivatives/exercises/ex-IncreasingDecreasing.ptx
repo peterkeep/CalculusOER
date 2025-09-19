@@ -1,0 +1,231 @@
+<exercises xml:id="ex-IncreasingDecreasing">
+    <exercise>
+        <statement>
+            <p>
+                Give an example of a function that has <m>f'(x)\gt 0</m> on <m>(-\infty, 4)</m> and <m>f'(x)\lt 0</m> on <m>(4,\infty)</m>. Show graphically where the function is increasing and decreasing. Explain how to find out the location of a local maximum or minimum for your example.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Sketch a graph of a function that increases everywhere, but has <m>f'(4)=0</m>. Explain what sign the derivative is when <m>x\neq 4</m>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following functions, use the first derivative to find the intervals where the function is increasing or decreasing.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^2e^x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x\ln(x)-x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \frac{1}{x^2}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \ln(x^4 + 1)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{x-4}{x^2+1}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = e^{-x^2-2x}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{\sqrt{x}}{e^x}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sin(x)</m> on <m>\left[0, \frac{\sqrt{\pi}}{2}\right]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \cos^3(x)</m> on <m>(-2\pi, 2\pi)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Explain how the First Derivative Test helps us classify critical numbers as local maximums or minimums.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Find any local maximums or local minimums for each of the following functions. Note that these are the same functions that you've already worked with in Practice Problem 3.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^2e^x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x\ln(x)-x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \frac{1}{x^2}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \ln(x^4 + 1)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{x-4}{x^2+1}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = e^{-x^2-2x}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{\sqrt{x}}{e^x}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sin(x)</m> on <m>\left[0, \frac{\sqrt{\pi}}{2}\right]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \cos^3(x)</m> on <m>(-2\pi, 2\pi)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Sketch a graph of a function <m>f(x)</m> that is continuous on <m>(-\infty,\infty)</m> and has the following characteristics. Label the intervals where <m>f</m> is increasing/decreasing, and find the locations of any local maximums/minimums.
+                <ul>
+                    <li>
+                        <p>
+                            <m>f'(x) \gt 0</m> on <m>(-\infty,3)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f'(3)</m> does not exist
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f'(x) \lt 0</m> on <m>(3,6)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f'(6)=0</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f'(x)\lt 0</m> on <m>(6,\infty)</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Sketch a graph of a function <m>f(x)</m> and has the following characteristics. Label the intervals where <m>f</m> is increasing/decreasing, and find the locations of any local maximums/minimums.
+                <ul>
+                    <li>
+                        <p>
+                            <m>f'(x) \lt 0</m> on <m>(-\infty,3)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f'(3) = 0</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f'(x)\gt 0</m> on <m>(3,6)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f(x)</m> has a vertical asymptote at <m>x=6</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f'(x)\lt 0</m> on <m>(6,\infty)</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </exercise>
+</exercises>
