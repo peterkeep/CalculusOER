@@ -1,0 +1,226 @@
+<exercises xml:id="ex-DerivativesInverse">
+    <exercise>
+        <introduction>
+            <p>
+                Find the derivatives of the following functions.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>y=7^x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y = \log_3(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>A(t) = 400(1.001)^{12t}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{3^x}{3^x+1}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>g(x) = \ln(x^2+1)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>s(x) = (e^x)(x^e)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y = \ln(4x^3)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y = \ln(\sqrt{x^4+x^2})</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y = x\ln(x)-x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y = \sin(4^x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y = e^x\ln(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>r(\theta) = (\theta^2) (5^\theta)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y = \ln(\ln(x))</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y = -\ln(\cos(x))</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Find the derivatives of the following functions.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sin^{-1}(5x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^2\tan^{-1}(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = (\sec^{-1}(x))^3</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \cos^{-1}\left(\frac{1}{x}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \ln(\sin^{-1}(x))</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \cot^{-1}(e^{2x})</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Find the equation of the line tangent to the graph of the following functions at the point listed.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \tan^{-1}(x)</m> at <m>\left(1,\frac{\pi}{4}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sin^{-1}\left(\frac x4\right)</m> at <m>\left(2,\frac{\pi}{6}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \cos^{-1}(x^2)</m> at <m>\left(\frac{1}{\sqrt{2}}, \frac{\pi}{3}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sec^{-1}(e^x)</m> at <m>\left(\ln(2), \frac{\pi}{3}\right)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Graph the function <m>f(x) = \tan^{x}-x^3-x</m> using a graphing utility like Desmos.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Find <m>f'(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Graph <m>f'(x)</m> using a graphing utility like Desmos.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Where is <m>f'(x)=0</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Where does <m>f(x)</m> have a horizontal tangent line?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
