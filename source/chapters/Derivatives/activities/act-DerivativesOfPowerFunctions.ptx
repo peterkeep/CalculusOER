@@ -84,12 +84,12 @@
                 </li>
                 <li>
                     <p>
-                        The rest of the terms in the multiplication have at least one copy of <m>\Delta x</m>, and so we can factor out <m>\Delta x</m> and "cancel" it with the <m>\Delta x</m> in the denominator.
+                        The rest of the terms in the multiplication have at least one copy of <m>\Delta x</m>, and so we can factor out <m>\Delta x</m> and <q>cancel</q> it with the <m>\Delta x</m> in the denominator.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Once this has done, we've escaped the portion of the limit that was giving us the <m>\frac{0}{0}</m> indeterminate form, and so we can evaluate the limit as <m>\Delta x\to 0</m>. The result is just that whatever terms still have at least one remaining copy of <m>\Delta x</m> in it "go to" 0, and we're left with just the terms that do not have any copies of <m>\Delta x</m> in them.
+                        Once this has done, we've escaped the portion of the limit that was giving us the <m>\frac{0}{0}</m> indeterminate form, and so we can evaluate the limit as <m>\Delta x\to 0</m>. The result is just that whatever terms still have at least one remaining copy of <m>\Delta x</m> in it <q>go to</q> 0, and we're left with just the terms that do not have any copies of <m>\Delta x</m> in them.
                     </p>
                 </li>
             </ol>

@@ -8,7 +8,7 @@
             <ol>
                 <li>
                     <p>
-                        We defined the derivative at a point (<xref ref="def-DerivativeAtPoint"/>) to find the slope of a line touching a graph of a function <m>f(x)</m> at a single point. We call this the "slope of the tangent line" at a point.
+                        We defined the derivative at a point (<xref ref="def-DerivativeAtPoint"/>) to find the slope of a line touching a graph of a function <m>f(x)</m> at a single point. We call this the <q>slope of the tangent line</q> at a point.
                     </p>
                 </li>
                 <li>
@@ -45,7 +45,7 @@
                         
                     </p>
                     <p>
-                        A function or curve that is defined <term>implicitly</term> us one where the relationship between the variables is stated with an equation connecting the variables, but not necessarily one which is "solved" for a single variable. Here, the relationship between variables is not stated with the typical "input" and "output" variables. As an example, we might consider the same function as above, but defined as:
+                        A function or curve that is defined <term>implicitly</term> us one where the relationship between the variables is stated with an equation connecting the variables, but not necessarily one which is solved for a single variable. Here, the relationship between variables is not stated with the typical input and output variables. As an example, we might consider the same function as above, but defined as:
                         <me>
                             y-3x-1=0
                         </me>.
@@ -78,7 +78,7 @@
     <subsection xml:id="subsec-DerivativeOperator">
         <title>Using a Derivative as an Operator</title>
         <p>
-            Let's recall back to <xref ref="subsec-DerivativeNotation" text="type-global-title"/>. We talked about how we can use the notation <m>\ddx{f(x)}</m> as a kind of action: the notation says "find the derivative of <m>f(x)</m> with respect to <m>x</m>." When we say "with respect to <m>x</m>," we mean that we are treating <m>x</m> as an input variable, and trying to find out how <m>f</m> changes based on changes to that input. The notation says, "find the rate at which <m>f(x)</m> changes as <m>x</m> increases."
+            Let's recall back to <xref ref="subsec-DerivativeNotation" text="type-global-title"/>. We talked about how we can use the notation <m>\ddx{f(x)}</m> as a kind of action: the notation says <q>find the derivative of <m>f(x)</m> with respect to <m>x</m>.</q> When we say <q>with respect to <m>x</m>,</q> we mean that we are treating <m>x</m> as an input variable, and trying to find out how <m>f</m> changes based on changes to that input. The notation says, <q>find the rate at which <m>f(x)</m> changes as <m>x</m> increases.</q>
         </p>
         <p>
             Because this notation is a call to action, we can use it when we're dealing with an equation. We can call back to our early algebra days, where we learn that whatever we do to one side of an equation needs to be done to the other side as well, in order to maintain the equality.

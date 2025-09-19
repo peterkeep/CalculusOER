@@ -84,7 +84,7 @@
   </subsection>
   <conclusion>
     <p>
-      So how do we wrap this up? I hope we can see that logs are a useful and powerful tool: we can use logarithmic differentiation to transform our functions to become "easier to work with" versions of themselves: we put everything on a log-scale and allow our properties of logarithms to make the operations become a bit more accessible.
+      So how do we wrap this up? I hope we can see that logs are a useful and powerful tool: we can use logarithmic differentiation to transform our functions to become <q>easier to work with</q> versions of themselves: we put everything on a log-scale and allow our properties of logarithms to make the operations become a bit more accessible.
     </p>
     <p>
       This is a commonly used trick in many applications of calculus. Specifically, this is used often enough in statistics that there is a whole paradigm of estimation (called Maximum Likelihood Estimation) that uses a log-transformed version of a likelihood function and then applies some basic calculus ideas (that we'll cover in <xref ref="sec-Optimization"/>) to perform some powerful estimations.

@@ -21,7 +21,7 @@
     </p>
     <xi:include href="./activities/act-CompositionDecomposition.ptx" />
     <p>
-      A big thing to notice here is that when we pick the pieces of functions that we think were composed inside of each other, there's not a single obvious answer. This is pretty different compared to, say, using the <xref ref="thm-QuotientRule" text="title"/>. In these quotients, we have a natural division (literally) between the pieces. Here, it's much more subjective for us when we decide to label an "inside" function and an "outside" function.
+      A big thing to notice here is that when we pick the pieces of functions that we think were composed inside of each other, there's not a single obvious answer. This is pretty different compared to, say, using the <xref ref="thm-QuotientRule" text="title"/>. In these quotients, we have a natural division (literally) between the pieces. Here, it's much more subjective for us when we decide to label an <q>inside</q> function and an <q>outside</q> function.
     </p>
     <p>
       We will build up our intuition to find a good balance for how we pick these.
@@ -43,7 +43,7 @@
       We can think of these linked gears as functions: Gear C changes based on what is happening with Gear B, which changes based on Gear A. We can translate Gear A to be an input variable, like <m>x</m>. Then Gear B is a function based on that: we can call it <m>g(x)</m>. Then Gear C is a function that takes in the position of Gear B (the function <m>g(x)</m>), and so we can think of it as <m>f(g(x))</m>.
     </p>
     <p>
-      To build the derivative rule for composite functions, we need to find how the "outside" function changes as the "inside" function changes (<m>\dd{C}{B}</m> in this case) and multiply that by how the "inside" function changes as the input variable changes (<m>\dd{B}{A}</m> here).
+      To build the derivative rule for composite functions, we need to find how the <q>outside</q> function changes as the <q>inside</q> function changes (<m>\dd{C}{B}</m> in this case) and multiply that by how the <q>inside</q> function changes as the input variable changes (<m>\dd{B}{A}</m> here).
     </p>
     <theorem xml:id="thm-ChainRule">
     <title>The Chain Rule</title>
@@ -71,7 +71,7 @@
       <me>
         \ddx{\sin(x^2)}
       </me>
-      We'll call the "inside" function <m>u=x^2</m>, so we can really write the whole function (normally we're calling this <m>y</m>) as <m>y=\sin(u)</m>.
+      We'll call the <q>inside</q> function <m>u=x^2</m>, so we can really write the whole function (normally we're calling this <m>y</m>) as <m>y=\sin(u)</m>.
       <md>
         <mrow> \ddx{\underbrace{\sin(\overbrace{x^2}^{u})}_{y}}\amp =\dd{y}{u} \cdot \dd{u}{x}</mrow>
         <mrow> \amp = \frac{d}{du}\left(\sin(u)\right) \cdot \frac{d}{dx}\left(x^2\right)</mrow>
@@ -83,13 +83,13 @@
         <mrow> \amp = \cos(x^2)\cdot 2x </mrow>
         <mrow> \amp =  2x\cos(x^2)</mrow>
       </md>
-      After we finished differentiating <m>\frac{d}{du}\left(\sin(u)\right)</m>, you'll notice that we used the fact that <m>u=x^2</m> to write our combination of derivatives (the derivative of the "outside" function and the derivative of the "inside" function) in terms of the same input variable again.
+      After we finished differentiating <m>\frac{d}{du}\left(\sin(u)\right)</m>, you'll notice that we used the fact that <m>u=x^2</m> to write our combination of derivatives (the derivative of the <q>outside</q> function and the derivative of the <q>inside</q> function) in terms of the same input variable again.
     </p>
     <p>
       The last line, rewriting <m>\cos(x^2)\cdot 2x </m> as <m>2x\cos(x^2)</m>, is just for aesthetics.
     </p>
     <p>
-      Now you're ready to try some more examples! In each, focus on identifying a natural selection for the "inside" function, <m>u</m>.
+      Now you're ready to try some more examples! In each, focus on identifying a natural selection for the <q>inside</q> function, <m>u</m>.
     </p>
     <example>
       <introduction>
