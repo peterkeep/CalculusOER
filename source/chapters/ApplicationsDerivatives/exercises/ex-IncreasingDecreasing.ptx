@@ -1,5 +1,72 @@
 <exercises xml:id="ex-IncreasingDecreasing">
     <exercise>
+        <p>
+            Explain what a critical number of <m>f(x)</m> is. What are the things we're looking for?
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For the following functions, find the critical numbers and explain each one. Is it one where the derivative is 0, or one where the derivative doesn't exist? Feel free to confirm these by graphing the function!
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^2+5x-4</m> on <m>[-4,2]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sqrt[3]{x+4}</m> on <m>[-6,-2]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{x^2+1}{x-3}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^2 e^{-x}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^2 e^{-x}</m> on <m>[1, 10]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \ln\left(x^{4}+x+1\right)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Find the critical numbers of the function <m>f(x)</m>, graphed below. Explain each one.
+            </p>
+            <figure xml:id="fig-Critical">
+                <caption>Graph of <m>f(x)</m>.</caption>
+                <image source="./ApplicationsDerivatives/Critical.png" width="70%">
+                    <shortdescription>A function that decreases until the point (-2,-1), where it turns around (like a parabola) up to an open hole at (0,1). Then it jumps to a point at (0,2), and increases until it turns around at x=1 (like a parabola). It decreases until x=3. There is a sharp corner as it increases away from the point.</shortdescription>
+                </image>
+            </figure>
+        </statement>
+    </exercise>
+    <exercise>
         <statement>
             <p>
                 Give an example of a function that has <m>f'(x)\gt 0</m> on <m>(-\infty, 4)</m> and <m>f'(x)\lt 0</m> on <m>(4,\infty)</m>. Show graphically where the function is increasing and decreasing. Explain how to find out the location of a local maximum or minimum for your example.
