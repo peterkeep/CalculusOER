@@ -1,0 +1,212 @@
+<exercises xml:id="ex-ImplicitDifferentiation">
+    <exercise>
+        <p>
+            Explain the difference between <m>\ddx{x^2}</m> and <m>\ddx{y^2}</m>. How is the differentiation process different in each? Why?
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Explain why we need to use the product rule to differentiate <m>\ddx{ye^x}</m>.
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Use implicit differentiation to find <m>\dydx</m> or <m>y'</m>. Make a note of when you are using the product or chain rule, and make sure you know why you are using them.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>x^2-y^2 = 0</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>4x+\sin(y) = 0</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>ye^x + 1=0</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>x^3\tan(y) + e^y - 10x = 1</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y^3 - xy = x^2 - 2x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>4xy - y\sec(x) + x^5 = 0</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\cos(xy)-x^3y^2=0</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>4x^3 = y^2(4-x)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <p>
+            Pick 2 problems from Practice Problem 3, above, that you can solve for <m>y</m> explicitly. Find the derivative <m>\dydx</m> or <m>y'</m> this way, and confirm that your answers are the same.
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Pick 2 problems from Practice Problem 3, above, that you cannot solve for <m>y</m> explicitly. Explain why implicit differentiation is a useful method here.
+        </p>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For the following curves, find the equation of the line tangent at the point given.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>3x^3+7y^3=10y</m> at the point <m>(1,1)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>x^3+y^3=9xy</m> at the point <m>(4,2)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>y(x^2+4) = 8</m> at the point <m>(0,2)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>(x^2+y^2)^2 = \dfrac{25}{4}xy^2</m> at <m>(1,2)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Find the locations of the horizontal and vertical tangent lines for the curve:
+                <me>x^2+y^2+2xy = 12</me>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the following curve:
+                <me>(xt+1)^3=t-x^2+7</me>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Find <m>\frac{dx}{dt}</m>. Explain where you need to use the chain rule and why.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find <m>\frac{dt}{dx}</m>. Explain where you need to use the chain rule and why.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercisegroup>
+        <title>Related Rates</title>
+        <introduction>
+            <p>
+                The rest of the exercises are related rates problems.
+            </p>
+        </introduction>
+    
+        <exercise>
+            <statement>
+                <p>
+                    Consider the equation:
+                    <me>3r + 5y^2 - 4 = 3\sin(x)</me>. 
+                    Differentiate both sides with regard to the variable  <m>t</m>, and solve for  <m>\frac{dr}{dt}</m>.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Consider the equation:
+                    <me>3r + 5y^2 - 4 = 3\sin(x)</me>. 
+                    Differentiate both sides with regard to the variable  <m>t</m>, and solve for  <m>\frac{dy}{dt}</m>.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    A crab is walking along a path defined by the parabola  <m>y=x^2+1</m>. It moves horizontally forward at a rate of 2 units/second,  <m>\frac{dx}{dt}=2</m>. If it is currently at the point  <m>(2,5)</m>, what is the crab's vertical speed,  <m>\frac{dy}{dt}</m>?
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Person A is holding a balloon 30m away from another Person B. If the balloon is released and floats into the air, rising straight up at a speed of 0.5m/s. Person B watches the balloon, their eye-line forming an angle  <m>\theta</m> with the ground. When the balloon is 10m up in the air, what is the speed at which  <m>\theta</m> changes,  <m>\frac{d\theta}{dt}</m>?
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    A paper cup shaped like a cone is leaking water out of the bottom. The cup is 4 inches tall, and the radius is 1/3 of the height. If the water is leaking at a rate of 1.5 in<m>^3</m>/s while the the cup is full, how quickly is the height of the water in the cup decreasing?
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    A 12 foot ladder is leaning against a vertical wall. Someone is pushing the base of the ladder closer to the wall at a speed of 0.5 ft/s. If the ladder is currently 6 feet away from the wall, how quickly does the top of the ladder move up the wall?
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    A spherical water balloon is leaking water. The radius of the balloon is currently 2 inches, and we notice that it is decreasing at a rate of 1 in/min. How fast is the water leaking, in in<m>^3</m>/min?
+                </p>
+            </statement>
+        </exercise>
+    </exercisegroup>
+</exercises>
