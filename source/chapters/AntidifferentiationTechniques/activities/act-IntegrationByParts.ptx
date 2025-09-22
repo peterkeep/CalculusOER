@@ -6,7 +6,7 @@
             <me>
                 \ddx{u(x)\cdot v(x)} = <fillin characters="5" /> + <fillin characters="5" />
             </me>.
-            We know that we intend to "undo" the product rule, so let's try to re-frame the product rule from a rule about derivatives to a rule about antiderivatives.
+            We know that we intend to <q>undo</q> the product rule, so let's try to re-frame the product rule from a rule about derivatives to a rule about antiderivatives.
         </p>
     </introduction>
     <task>
@@ -42,13 +42,5 @@
                 Look back at this formula for <m>\int u v'\;dx</m>. Explain how this is really the product rule for derivatives (without just undo-ing all of the steps we have just done).
             </p>
         </statement>
-    </task>
-    <conclusion>
-        <p>
-            What made it so useful to pick <m>u=x</m> instead of <m>dv = x\;dx</m> in this case? Since we know that we are going to get another integral, one that specifically has the new derivative and new antiderivative that we find from the parts we picked, we noticed that differentiating the function <m>x</m> was much nicer than antidifferentiating it: we get a constant that we multiply by the trig function in this new integral, instead of a power function with an even bigger exponent.
-
-            We can also notice that when it comes to the trig function, it doesn't really matter if we differentiate it or antidifferentiate it. In both cases, we get a <m>cos(x)</m> in our new integral, with the only difference being whether it is positive or negative.
-        </p>
-    </conclusion>
-    
+    </task>    
 </activity>
