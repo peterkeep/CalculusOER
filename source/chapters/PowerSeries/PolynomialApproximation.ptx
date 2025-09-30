@@ -147,7 +147,36 @@
         </p>
         <xi:include href="./activities/act-PartialSumsOfWhat.ptx" />
         <p>
-            We'll explore these polynomials more, but we're specifically interested in the infinite-series version of these things. For now, let's think about convergence a bit.
+            We'll explore these polynomials more, but we're specifically interested in the infinite-series version of these things. We'll give these polynomials a name, for easy reference: <term>Taylor polynomials</term>.
+        </p>
+        <aside>
+            <p>
+                These polynomials are named after the 17th century British mathematician, Brook Taylor. Taylor is mostly famous for his contributions in this area of calculus, but he also sat on the committee that mediated a major dispute between Isaac Newton and Gottfried Leibniz centered around their individual claims to get credit for the <q>creation</q> of calculus.
+            </p>
+            <p>
+                Taylor was not able to give an unbiased judgment, due to his public support of Isaac Newton.
+            </p>
+        </aside>
+        <p>
+            The main result to come out of this has to do with the relationship between these polynomials and the function they are approximating.
+        </p>
+        <theorem xml:id="thm-TaylorsTheorem">
+            <title>Taylor's Theorem</title>
+            <statement>
+                <p>
+                    If <m>f(x)</m> is a function that is <m>n</m>-times differentiable at <m>x=a</m>, then there is some remainder function, <m>R_n(x)</m>, such that:
+                    <me>
+                        f(x) = \left(\sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k\right) + R_n(x)(x-a)^n
+                    </me>
+                    where <m>\displaystyle\lim_{x\to a}R_n(x)=0</m>.
+                </p>
+                <p>
+                    That is, the remainder is small for <m>x</m>-values close to the center, <m>x=a</m>.
+                </p>
+            </statement>
+        </theorem>
+        <p>    
+            This result is great, in that it gives us the confidence to approximate these functions. We can add on to this the idea that we expect <m>R_n(x)</m> to get smaller as <m>n\to\infty</m>. This should lead us to some idea of convergence, which we can think about here.
         </p>
         <xi:include href="./activities/act-ConvergeToWhat.ptx" />
         <p>
