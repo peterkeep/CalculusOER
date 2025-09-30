@@ -24,7 +24,188 @@
     <title>Derivatives of Common Functions</title>
     <xi:include href="./activities/act-DerivativesOfPowerFunctions.ptx" />
     <p>
-      Triangle binomial theorem for coefficients.
+      There is a really nice theorem that helps to understand how the <m>(x+\Delta x)^n</m> multiplication goes (for different positive integer exponents, <m>n</m>) called the Binomial Theorem, but we won't introduce it here, fully. What we'll do, instead, is summarize the results:
+      <ol>
+        <li>
+          <p>
+            In each term, the exponents on <m>x</m> count down from <m>n</m> to <m>0</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Similarly, in each term, the exponents on <m>\Delta x</m> will count up from <m>0</m> to <m>n</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The coefficients for each term are generated from a very cool pattern, displayed below.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <figure xml:id="fig-BinomialTriangle-1">
+      <caption></caption>
+      <image width="80%">
+        <shortdescription>Triangle with the binomial coefficients, ending with the row that begins 1, 8, 28, ...</shortdescription>
+        <latex-image>
+          \begin{tikzpicture}
+            % 0th row
+            \node [hexagon] at (0,0) {1};
+            % 1st row
+            \node [hexagon] at (-1/2*0.866,-0.75) {1};
+            \node [hexagon] at (1/2*0.866, -0.75) {1};
+            % 2nd row 
+            \node [hexagon] at (-1*0.866,-1.5) {1};
+            \node [hexagon] at (0*0.866, -1.5) {2};
+            \node [hexagon] at (1*0.866, -1.5) {1};
+            % 3rd row 
+            \node [hexagon] at (-3/2*0.866,-2.25) {1};
+            \node [hexagon] at (-1/2*0.866,-2.25) {3};
+            \node [hexagon] at (1/2*0.866, -2.25) {3};
+            \node [hexagon] at (3/2*0.866, -2.25) {1};
+            % 4th row 
+            \node [hexagon] at (-2*0.866,-3) {1};
+            \node [hexagon] at (-1*0.866,-3) {4};
+            \node [hexagon] at (0*0.866, -3) {6};
+            \node [hexagon] at (1*0.866, -3) {4};
+            \node [hexagon] at (2*0.866, -3) {1};
+            % 5th row 
+            \node [hexagon, fill=DCyellow!40] at (-5/2*0.866,-3.75) {1};
+            \node [hexagon, fill=DCyellow!40] at (-3/2*0.866,-3.75) {5};
+            \node [hexagon, fill=DCyellow!40] at (-1/2*0.866,-3.75) {10};
+            \node [hexagon, fill=DCyellow!40] at (1/2*0.866, -3.75) {10};
+            \node [hexagon, fill=DCyellow!40] at (3/2*0.866, -3.75) {5};
+            \node [hexagon, fill=DCyellow!40] at (5/2*0.866, -3.75) {1};
+            % 6th row 
+            \node [hexagon] at (-3*0.866,-4.5) {1};
+            \node [hexagon] at (-2*0.866,-4.5) {6};
+            \node [hexagon] at (-1*0.866,-4.5) {15};
+            \node [hexagon] at (0*0.866, -4.5) {20};
+            \node [hexagon] at (1*0.866, -4.5) {15};
+            \node [hexagon] at (2*0.866, -4.5) {6};
+            \node [hexagon] at (3*0.866, -4.5) {1};
+            % 7th row 
+            \node [hexagon] at (-7/2*0.866,-5.25) {1};
+            \node [hexagon] at (-5/2*0.866,-5.25) {7};
+            \node [hexagon] at (-3/2*0.866,-5.25) {21};
+            \node [hexagon] at (-1/2*0.866, -5.25) {35};
+            \node [hexagon] at (1/2*0.866, -5.25) {35};
+            \node [hexagon] at (3/2*0.866, -5.25) {21};
+            \node [hexagon] at (5/2*0.866, -5.25) {7};
+            \node [hexagon] at (7/2*0.866, -5.25) {1};
+            % 8th row 
+            \node [hexagon] at (-4*0.866,-6) {1};
+            \node [hexagon] at (-3*0.866,-6) {8};
+            \node [hexagon] at (-2*0.866,-6) {28};
+            \node [hexagon] at (-1*0.866, -6) {56};
+            \node [hexagon] at (0*0.866, -6) {70};
+            \node [hexagon] at (1*0.866, -6) {56};
+            \node [hexagon] at (2*0.866, -6) {28};
+            \node [hexagon] at (3*0.866, -6) {8};
+            \node [hexagon] at (4*0.866, -6) {1};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      In each row, the coefficients are build by the sum of the two coefficients above it. We have highlighted the 5th row, in order to compare it to the work we did in <xref ref="act-DerivativesOfPowerFunctions"/>.
+      <me>
+        (x+\Delta x)^5 = x^5+5x^4\Delta x + 10x^3\Delta x^2 + 10x^2\Delta x^3 + 5 x\Delta x^4 + \Delta x^5
+      </me>
+      We can see the coefficients on each term match the highlighted row!
+    </p>
+    <figure xml:id="fig-BinomialTriangle-2">
+      <caption></caption>
+      <image width="80%">
+        <shortdescription>Triangle with the binomial coefficients, ending with the row that begins 1, 8, 28, ... In each row, the first term (1) is red. The second number (1, 2, 3, 4, ..., 8) is red. The remaining numbers are blue.</shortdescription>
+        <latex-image>
+          \begin{tikzpicture}
+            % 0th row
+            \node [hexagon, fill=DCred!40] at (0,0) {1};
+            % 1st row
+            \node [hexagon, fill=DCred!40] at (-1/2*0.866,-0.75) {1};
+            \node [hexagon, fill=DCgreen!40] at (1/2*0.866, -0.75) {1};
+            % 2nd row 
+            \node [hexagon, fill=DCred!40] at (-1*0.866,-1.5) {1};
+            \node [hexagon, fill=DCgreen!40] at (0*0.866, -1.5) {2};
+            \node [hexagon, fill=DCblue!40] at (1*0.866, -1.5) {1};
+            % 3rd row 
+            \node [hexagon, fill=DCred!40] at (-3/2*0.866,-2.25) {1};
+            \node [hexagon, fill=DCgreen!40] at (-1/2*0.866,-2.25) {3};
+            \node [hexagon, fill=DCblue!40] at (1/2*0.866, -2.25) {3};
+            \node [hexagon, fill=DCblue!40] at (3/2*0.866, -2.25) {1};
+            % 4th row 
+            \node [hexagon, fill=DCred!40] at (-2*0.866,-3) {1};
+            \node [hexagon, fill=DCgreen!40] at (-1*0.866,-3) {4};
+            \node [hexagon, fill=DCblue!40] at (0*0.866, -3) {6};
+            \node [hexagon, fill=DCblue!40] at (1*0.866, -3) {4};
+            \node [hexagon, fill=DCblue!40] at (2*0.866, -3) {1};
+            % 5th row 
+            \node [hexagon, fill=DCred!40] at (-5/2*0.866,-3.75) {1};
+            \node [hexagon, fill=DCgreen!40] at (-3/2*0.866,-3.75) {5};
+            \node [hexagon, fill=DCblue!40] at (-1/2*0.866,-3.75) {10};
+            \node [hexagon, fill=DCblue!40] at (1/2*0.866, -3.75) {10};
+            \node [hexagon, fill=DCblue!40] at (3/2*0.866, -3.75) {5};
+            \node [hexagon, fill=DCblue!40] at (5/2*0.866, -3.75) {1};
+            % 6th row 
+            \node [hexagon, fill=DCred!40] at (-3*0.866,-4.5) {1};
+            \node [hexagon, fill=DCgreen!40] at (-2*0.866,-4.5) {6};
+            \node [hexagon, fill=DCblue!40] at (-1*0.866,-4.5) {15};
+            \node [hexagon, fill=DCblue!40] at (0*0.866, -4.5) {20};
+            \node [hexagon, fill=DCblue!40] at (1*0.866, -4.5) {15};
+            \node [hexagon, fill=DCblue!40] at (2*0.866, -4.5) {6};
+            \node [hexagon, fill=DCblue!40] at (3*0.866, -4.5) {1};
+            % 7th row 
+            \node [hexagon, fill=DCred!40] at (-7/2*0.866,-5.25) {1};
+            \node [hexagon, fill=DCgreen!40] at (-5/2*0.866,-5.25) {7};
+            \node [hexagon, fill=DCblue!40] at (-3/2*0.866,-5.25) {21};
+            \node [hexagon, fill=DCblue!40] at (-1/2*0.866, -5.25) {35};
+            \node [hexagon, fill=DCblue!40] at (1/2*0.866, -5.25) {35};
+            \node [hexagon, fill=DCblue!40] at (3/2*0.866, -5.25) {21};
+            \node [hexagon, fill=DCblue!40] at (5/2*0.866, -5.25) {7};
+            \node [hexagon, fill=DCblue!40] at (7/2*0.866, -5.25) {1};
+            % 8th row 
+            \node [hexagon, fill=DCred!40] at (-4*0.866,-6) {1};
+            \node [hexagon, fill=DCgreen!40] at (-3*0.866,-6) {8};
+            \node [hexagon, fill=DCblue!40] at (-2*0.866,-6) {28};
+            \node [hexagon, fill=DCblue!40] at (-1*0.866, -6) {56};
+            \node [hexagon, fill=DCblue!40] at (0*0.866, -6) {70};
+            \node [hexagon, fill=DCblue!40] at (1*0.866, -6) {56};
+            \node [hexagon, fill=DCblue!40] at (2*0.866, -6) {28};
+            \node [hexagon, fill=DCblue!40] at (3*0.866, -6) {8};
+            \node [hexagon, fill=DCblue!40] at (4*0.866, -6) {1};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      We can now think of each row, and figure out what was happening in the limit work we did.
+      <ol>
+          <li>
+              <p>
+                  The first term of that multiplication will combine with the subtraction of <m>x^n</m> in the numerator and subtract to 0.
+              </p>
+              <p>
+                We can designate this in the triangle by shading in the first term in red.
+              </p>
+          </li>
+          <li>
+              <p>
+                  The rest of the terms in the multiplication have at least one copy of <m>\Delta x</m>, and so we can factor out <m>\Delta x</m> and <q>cancel</q> it with the <m>\Delta x</m> in the denominator. 
+              </p>
+              <p>
+                We can designate the terms in the triangle without any remaining <m>\Delta x</m>'s in them by shading the second term in green. The rest, that have at least one <m>\Delta x</m> in it, are shaded in blue.
+              </p>
+          </li>
+          <li>
+              <p>
+                  Once this has done, we've escaped the portion of the limit that was giving us the <m>\frac{0}{0}</m> indeterminate form, and so we can evaluate the limit as <m>\Delta x\to 0</m>. The result is just that whatever terms still have at least one remaining copy of <m>\Delta x</m> in it <q>go to</q> 0, and we're left with just the terms that do not have any copies of <m>\Delta x</m> in them.
+              </p>
+              <p>
+                Note that all of the blue terms go to <m>0</m> in the limit, and we are left with the green terms, but without any <m>\Delta x</m>. Since these are the second terms, we have the coefficient and one fewer exponent on <m>x</m>.
+              </p>
+          </li>
+      </ol>
     </p>
     <theorem xml:id="thm-PowerRuleDerivatives">
       <title>Power Rule for Derivatives</title>

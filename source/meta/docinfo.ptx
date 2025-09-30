@@ -46,6 +46,14 @@
     \definecolor{DCred}{HTML}{AD343E}
     \definecolor{DCyellow}{HTML}{EDAE49}
     \definecolor{DClightgreen}{HTML}{799E8F}
+    \usetikzlibrary{shapes.geometric}
+    \tikzset{hexagon/.style={
+      regular polygon, regular polygon sides=6, shape border rotate=30,
+      minimum size=1cm, inner sep=0pt,
+      draw, ultra thick, execute at begin node={\setbox0\hbox\bgroup},
+      execute at end node={\egroup\pgfmathparse{min(4ex,\wd0)/\wd0}%
+        \scalebox{\pgfmathresult}{\box0}}
+    }}
   </latex-image-preamble>
 
   <!-- It is possible to rename elements: -->
