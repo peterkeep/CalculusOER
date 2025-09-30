@@ -267,7 +267,7 @@
                             Using <m>x=3\sec(\theta)</m>, we get:
                             <md>
                                 <mrow> \int \frac{\sqrt{x^2-9}}{x}\;dx \amp = \int \frac{\sqrt{9\sec^2(\theta)-9}}{3\sec(\theta)}\left(3\sec(\theta)\tan(\theta)\right)\;d\theta</mrow>
-                                <mrow> \amp = \int \frac{3\sqrt{9\tan^2(\theta)}\sec(theta)\tan(\theta)}{3\sec(\theta)}\;d\theta</mrow>
+                                <mrow> \amp = \int \frac{3\sqrt{9\tan^2(\theta)}\sec(\theta)\tan(\theta)}{3\sec(\theta)}\;d\theta</mrow>
                                 <mrow> \amp = 3 \int \tan^2(\theta)\;d\theta</mrow>
                                 <mrow> \amp 3 \int \sec^2(\theta)-1\;d\theta</mrow>
                                 <mrow> \amp 3 \left(\tan(\theta)-\theta\right)+C</mrow>
