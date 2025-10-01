@@ -632,7 +632,13 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html#subsec-OperationsPowerSeries" class="internal"><span class="title">Operations on Power Series</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html" class="internal"><span class="codenumber">9.3</span> <span class="title">How to Build Taylor Series</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html" class="internal"><span class="codenumber">9.3</span> <span class="title">How to Build Taylor Series</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#subsec-Directly" class="internal"><span class="title">Constructing Directly</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#subsec-ConnectionsToOther" class="internal"><span class="title">Connections To Other Taylor Series</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html" class="internal"><span class="codenumber">9.4</span> <span class="title">How to Use Taylor Series</span></a></div></li>
 </ul>
 </li>
@@ -647,9 +653,121 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-BuildingTaylorSeries"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">9.3</span><span class="space"> </span><span class="title">How to Build Taylor Series</span>
 </h2>
-<div class="para" id="sec-BuildingTaylorSeries-2">Text of section.<div class="autopermalink" data-description="Paragraph"><a href="#sec-BuildingTaylorSeries-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-BuildingTaylorSeries-2"><div class="para" id="sec-BuildingTaylorSeries-2-1">Let’s first clear the air: we’ve been talking about <a href="sec-PolynomialApproximation.html#def-PolynomialApproximation" class="xref" data-knowl="./knowl/xref/def-PolynomialApproximation.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 9.1.1: Polynomial Approximation">Taylor Polynomials</a> that are partial sums of some larger infinite series. Then we talked about <a href="sec-PowerSeriesConvergence.html#def-PowerSeries" class="xref" data-knowl="./knowl/xref/def-PowerSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 9.2.1: Power Series">Power Series</a>, a generic structure of an infinite series of power functions of <span class="process-math">\(x\text{.}\)</span> We want to combine these together, and name the specific power series that these Polynomial Approximations are partial sums of.<div class="autopermalink" data-description="Paragraph"><a href="#sec-BuildingTaylorSeries-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Section 9.3: How to Build Taylor Series"><a href="#sec-BuildingTaylorSeries" title="Copy heading and permalink for Section 9.3: How to Build Taylor Series" aria-label="Copy heading and permalink for Section 9.3: How to Build Taylor Series">🔗</a></div></section></div>
+<article class="definition definition-like" id="def-TaylorSeries"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Taylor Series.</span>
+</h3>
+<div class="para logical" id="def-TaylorSeries-2-1">
+<div class="para">If <span class="process-math">\(f(x)\)</span> is an infinitely differentiable function at <span class="process-math">\(x=a\text{,}\)</span> then the <dfn class="terminology">Taylor series</dfn> expansion of <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=a\)</span> is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=0}^\infty \frac{f^{(k)}(a)}{k!}(x-a)^k\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-TaylorSeries-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9.3.1: Taylor Series"><a href="#def-TaylorSeries" title="Copy heading and permalink for Definition 9.3.1: Taylor Series" aria-label="Copy heading and permalink for Definition 9.3.1: Taylor Series">🔗</a></div></article><aside class="aside aside-like" id="sec-BuildingTaylorSeries-2-3"><div class="para" id="sec-BuildingTaylorSeries-2-3-1">If the Taylor series expansion of <span class="process-math">\(f(x)\)</span> is centered at <span class="process-math">\(x=0\text{,}\)</span> some people name these specifically, calling them <dfn class="terminology">Maclaurin series</dfn>.  Colin Maclaurin made good use of Taylor series, and so is credited with having this special case named after him.<div class="autopermalink" data-description="Paragraph"><a href="#sec-BuildingTaylorSeries-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside><div class="para" id="sec-BuildingTaylorSeries-2-4">Now that we have named these Taylor series, we want to work on constructing these Taylor series for a given function. In this section, we’ll investigate a couple of ways that we can do this.<div class="autopermalink" data-description="Paragraph"><a href="#sec-BuildingTaylorSeries-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-Directly"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Constructing Directly</span>
+</h3>
+<div class="para" id="subsec-Directly-2">We saw in <a href="sec-PolynomialApproximation.html" class="internal" title="Section 9.1: Polynomial Approximations of Functions">Section 9.1 Polynomial Approximations of Functions</a> that we can use the idea of a polynomial partial sum to build out a Taylor series representation for a function.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Directly-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Directly-3">We’ll need to build a bunch of terms for some Taylor polynomial, and then we can hopefully extrapolate afterwards. We want to come up with a general formula to define these terms, so that we can write the explicit formula in the infinite series, but we know that this, in general, is a difficult task! It’s <em class="emphasis">hard</em> to find these explicit formulas for the terms in these series.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Directly-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Directly-4">It’s not impossible, though! You can remind yourself of how we’ve done this! We found (and speculated about) the Taylor series for <span class="process-math">\(f(x)=e^x\text{,}\)</span> <span class="process-math">\(f(x)=\sin(x)\text{,}\)</span> and <span class="process-math">\(f(x)=\cos(x)\)</span> (all centered at <span class="process-math">\(x=0\)</span>) in <a href="sec-PolynomialApproximation.html#act-BuildPolynomial" class="xref" data-knowl="./knowl/xref/act-BuildPolynomial.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 9.1.1: Build a Polynomial">Activity 9.1.1 Build a Polynomial</a> and <a href="sec-PolynomialApproximation.html#act-PartialSumsOfWhat" class="xref" data-knowl="./knowl/xref/act-PartialSumsOfWhat.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 9.1.3: Partial Sums of What?">Activity 9.1.3 Partial Sums of What?</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Directly-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-ConstructDirectly"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Constructing a Taylor Series Directly.</span>
+</h4>
+<div class="introduction" id="act-ConstructDirectly-2">
+<div class="para" id="act-ConstructDirectly-2-1">Let’s work on this! To be honest, the goal here is to realize how difficult this can be.<div class="autopermalink" data-description="Paragraph"><a href="#act-ConstructDirectly-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="act-ConstructDirectly-2-2">Let’s consider the function <span class="process-math">\(f(x)=\tan(x)\text{.}\)</span> We’re going to build a Taylor polynomial approximating <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-ConstructDirectly-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="act-ConstructDirectly-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-ConstructDirectly-3-1-1">We’re going to build a 4th degree polynomial approximating <span class="process-math">\(f(x)=\tan(x)\text{.}\)</span> In order to do this, we’ll need to find the coefficients for the 5 terms.<div class="autopermalink" data-description="Paragraph"><a href="#act-ConstructDirectly-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <figure class="table table-like" id="act-ConstructDirectly-3-1-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">9.3.2<span class="period">.</span></span><span class="space"> </span>Coefficients for Polynomial Approximation<div class="autopermalink" data-description="Table 9.3.2: Coefficients for Polynomial Approximation"><a href="#act-ConstructDirectly-3-1-2" title="Copy heading and permalink for Table 9.3.2: Coefficients for Polynomial Approximation" aria-label="Copy heading and permalink for Table 9.3.2: Coefficients for Polynomial Approximation">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(k\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(f^{(k)}(x)\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(f^{(k)}(a)\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(\dfrac{f^{(k)}(a)}{k!}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)=\tan(x)\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=1\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f'(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f'(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=2\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f''(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f''(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=3\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f'''(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f'''(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(k=4\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f^{(4)}(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f^{(4)}(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(k=5\)</span></td>
+<td class="r m b2 r0 l0 t0 lines"><span class="process-math">\(f^{(5)}(x)=\fillinmath{XXXXX}\)</span></td>
+<td class="r m b2 r0 l0 t0 lines"><span class="process-math">\(f^{(5)}(0)=\fillinmath{XXXXX}\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(\fillinmath{XXXXX}\)</span></td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Task 9.3.1.a"><a href="#act-ConstructDirectly-3" title="Copy heading and permalink for Task 9.3.1.a" aria-label="Copy heading and permalink for Task 9.3.1.a">🔗</a></div></article><article class="task exercise-like" id="act-ConstructDirectly-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-ConstructDirectly-4-1-1">Now we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form <span class="process-math">\((x-a)^k\)</span> for <span class="process-math">\(k=0,1,...,5\text{.}\)</span> These (added together) will form your polynomial, <span class="process-math">\(p_5(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-ConstructDirectly-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.3.1.b"><a href="#act-ConstructDirectly-4" title="Copy heading and permalink for Task 9.3.1.b" aria-label="Copy heading and permalink for Task 9.3.1.b">🔗</a></div></article><article class="task exercise-like" id="act-ConstructDirectly-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-ConstructDirectly-5-1-1">Can you find a general explicit formula for the terms? If you’re having a hard time with this, what could you do to try to make this easier? Why is this difficult?<div class="autopermalink" data-description="Paragraph"><a href="#act-ConstructDirectly-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-ConstructDirectly-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-ConstructDirectly-5-2-1">How many more derivatives do you think you’ll need to find before you get a non-zero term? How many non-zero terms do you think you’d need to find before you can guess the pattern?<div class="autopermalink" data-description="Paragraph"><a href="#act-ConstructDirectly-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 9.3.1.c.1"><a href="#act-ConstructDirectly-5-2" title="Copy heading and permalink for Hint 9.3.1.c.1" aria-label="Copy heading and permalink for Hint 9.3.1.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 9.3.1.c"><a href="#act-ConstructDirectly-5" title="Copy heading and permalink for Task 9.3.1.c" aria-label="Copy heading and permalink for Task 9.3.1.c">🔗</a></div></article><div class="conclusion" id="act-ConstructDirectly-6"><div class="para" id="act-ConstructDirectly-6-1">We’re going to stop there. This series is famously difficult to work with. We won’t generate the whole Taylor series this way, and this strategy really doesn’t work well for functions like this (where the derivatives are pretty annoying to find).<div class="autopermalink" data-description="Paragraph"><a href="#act-ConstructDirectly-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="autopermalink" data-description="Activity 9.3.1: Constructing a Taylor Series Directly"><a href="#act-ConstructDirectly" title="Copy heading and permalink for Activity 9.3.1: Constructing a Taylor Series Directly" aria-label="Copy heading and permalink for Activity 9.3.1: Constructing a Taylor Series Directly">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Constructing Directly"><a href="#subsec-Directly" title="Copy heading and permalink for Subsection: Constructing Directly" aria-label="Copy heading and permalink for Subsection: Constructing Directly">🔗</a></div></section><section class="subsection" id="subsec-ConnectionsToOther"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Connections To Other Taylor Series</span>
+</h3>
+<div class="para" id="subsec-ConnectionsToOther-2">A (hopefully) more useful strategy is to collect the Taylor series that we know, and then try to build a series for a function based on how that function relates. We saw this in <a href="sec-PowerSeriesConvergence.html#thm-OperationsPowerSeries" class="xref" data-knowl="./knowl/xref/thm-OperationsPowerSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.2.4: Operations on Power Series">Theorem 9.2.4 Operations on Power Series</a> and <a href="sec-PowerSeriesConvergence.html#thm-DiffPowerSeries" class="xref" data-knowl="./knowl/xref/thm-DiffPowerSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.2.5: Differentiating and Integrating Power Series">Theorem 9.2.5 Differentiating and Integrating Power Series</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ConnectionsToOther-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-ConnectingToAnotherSeries"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Connecting to Another Series.</span>
+</h4>
+<div class="introduction" id="act-ConnectingToAnotherSeries-2"><div class="para logical" id="act-ConnectingToAnotherSeries-2-1">
+<div class="para">Let’s start with some “known” series.</div>
+<div class="displaymath process-math" id="act-ConnectingToAnotherSeries-2-1-2">
+\begin{align*}
+\frac{1}{1-x} \amp = \sum_{k=0}^\infty x^k \amp \text{on }(-1,1)\\
+e^x \amp = \sum_{k=0}^\infty \frac{x^k}{k!} \amp \text{on } (-\infty,\infty)\\
+\sin(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{(2k+1)!} \amp \text{on } (-\infty,\infty)\\
+\cos(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k}}{(2k)!} \amp \text{on } (-\infty,\infty)
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="act-ConnectingToAnotherSeries-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-ConnectingToAnotherSeries-3-1-1"><div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Task 9.3.2.a"><a href="#act-ConnectingToAnotherSeries-3" title="Copy heading and permalink for Task 9.3.2.a" aria-label="Copy heading and permalink for Task 9.3.2.a">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.3.2: Connecting to Another Series"><a href="#act-ConnectingToAnotherSeries" title="Copy heading and permalink for Activity 9.3.2: Connecting to Another Series" aria-label="Copy heading and permalink for Activity 9.3.2: Connecting to Another Series">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Connections To Other Taylor Series"><a href="#subsec-ConnectionsToOther" title="Copy heading and permalink for Subsection: Connections To Other Taylor Series" aria-label="Copy heading and permalink for Subsection: Connections To Other Taylor Series">🔗</a></div></section><div class="autopermalink" data-description="Section 9.3: How to Build Taylor Series"><a href="#sec-BuildingTaylorSeries" title="Copy heading and permalink for Section 9.3: How to Build Taylor Series" aria-label="Copy heading and permalink for Section 9.3: How to Build Taylor Series">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-PowerSeriesConvergence.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-ApplyingTaylorSeries.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
