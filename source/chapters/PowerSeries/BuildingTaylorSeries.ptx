@@ -4,19 +4,46 @@
   <title>How to Build Taylor Series</title>
   <introduction>
     <p>
-      
+      Let's first clear the air: we've been talking about <xref ref="def-PolynomialApproximation" text="custom">Taylor Polynomials</xref> that are partial sums of some larger infinite series. Then we talked about <xref ref="def-PowerSeries" text="title"/>, a generic structure of an infinite series of power functions of <m>x</m>. We want to combine these together, and name the specific power series that these Polynomial Approximations are partial sums of.
+    </p>
+    <definition xml:id="def-TaylorSeries">
+      <title>Taylor Series</title>
+      <statement>
+        <p>
+          If <m>f(x)</m> is an infinitely differentiable function at <m>x=a</m>, then the <term>Taylor series</term> expansion of <m>f(x)</m> centered at <m>x=a</m> is:
+          <me>
+            \sum_{k=0}^\infty \frac{f^{(k)}(a)}{k!}(x-a)^k
+          </me>.
+        </p>
+      </statement>
+    </definition>
+    <aside>
+      <p>
+        If the Taylor series expansion of <m>f(x)</m> is centered at <m>x=0</m>, some people name these specifically, calling them <term>Maclaurin series</term>.  Colin Maclaurin made good use of Taylor series, and so is credited with having this special case named after him. 
+      </p>
+    </aside>
+    <p>
+      Now that we have named these Taylor series, we want to work on constructing these Taylor series for a given function. In this section, we'll investigate a couple of ways that we can do this.
     </p>
   </introduction>
   <subsection xml:id="subsec-Directly">
-    <title>Directly</title>
+    <title>Constructing Directly</title>
     <p>
-      We saw in <xref ref="sec-PolynomialApproximation" text="type-global-title"/> that we can use the idea of a polynomial partial sum to build out a Taylor series representation for a function: we can 
+      We saw in <xref ref="sec-PolynomialApproximation" text="type-global-title"/> that we can use the idea of a polynomial partial sum to build out a Taylor series representation for a function.
     </p>
+    <p>
+      We'll need to build a bunch of terms for some Taylor polynomial, and then we can hopefully extrapolate afterwards. We want to come up with a general formula to define these terms, so that we can write the explicit formula in the infinite series, but we know that this, in general, is a difficult task! It's <em>hard</em> to find these explicit formulas for the terms in these series.
+    </p>
+    <p>
+      It's not impossible, though! You can remind yourself of how we've done this! We found (and speculated about) the Taylor series for <m>f(x)=e^x</m>, <m>f(x)=\sin(x)</m>, and <m>f(x)=\cos(x)</m> (all centered at <m>x=0</m>) in <xref ref="act-BuildPolynomial" text="type-global-title"/> and <xref ref="act-PartialSumsOfWhat" text="type-global-title"/>.
+    </p>
+    <xi:include href="./activities/act-ConstructDirectly.ptx" />
   </subsection>
   <subsection xml:id="subsec-ConnectionsToOther">
     <title>Connections To Other Taylor Series</title>
     <p>
-      A (hopefully) more useful strategy is to collect the Taylor series that we know, and then try to build a series for a function based on how that function relates. We saw this in
+      A (hopefully) more useful strategy is to collect the Taylor series that we know, and then try to build a series for a function based on how that function relates. We saw this in <xref ref="thm-OperationsPowerSeries" text="type-global-title"/> and <xref ref="thm-DiffPowerSeries" text="type-global-title"/>.
     </p>
+    <xi:include href="./activities/act-ConnectingToAnotherSeries.ptx" />
   </subsection>
 </section>

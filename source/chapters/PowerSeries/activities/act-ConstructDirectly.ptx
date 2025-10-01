@@ -1,0 +1,89 @@
+<activity xml:id="act-ConstructDirectly">
+    <title>Constructing a Taylor Series Directly</title>
+    <introduction>
+        <p>
+            Let's work on this! To be honest, the goal here is to realize how difficult this can be.
+        </p>
+        <p>
+            Let's consider the function <m>f(x)=\tan(x)</m>. We're going to build a Taylor polynomial approximating <m>f(x)</m> centered at <m>x=0</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                We're going to build a 4th degree polynomial approximating <m>f(x)=\tan(x)</m>. In order to do this, we'll need to find the coefficients for the 5 terms.
+            </p>
+            <table>
+                <title>Coefficients for Polynomial Approximation</title>
+                <tabular>
+                    <row halign="center" bottom="medium">
+                        <cell><m>k</m></cell>
+                        <cell><m>f^{(k)}(x)</m></cell>
+                        <cell><m>f^{(k)}(a)</m></cell>
+                        <cell><m>\dfrac{f^{(k)}(a)}{k!}</m></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>k=0</m></cell>
+                        <cell halign="center"><m>f(x)=\tan(x)</m></cell>
+                        <cell halign="right"><m>f(0)=<fillin characters="5" /></m></cell>
+                        <cell halign="center"><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>k=1</m></cell>
+                        <cell halign="right"><m>f'(x)=<fillin characters="5" /></m></cell>
+                        <cell halign="right"><m>f'(0)=<fillin characters="5" /></m></cell>
+                        <cell halign="center"><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>k=2</m></cell>
+                        <cell halign="right"><m>f''(x)=<fillin characters="5" /></m></cell>
+                        <cell halign="right"><m>f''(0)=<fillin characters="5" /></m></cell>
+                        <cell halign="center"><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>k=3</m></cell>
+                        <cell halign="right"><m>f'''(x)=<fillin characters="5" /></m></cell>
+                        <cell halign="right"><m>f'''(0)=<fillin characters="5" /></m></cell>
+                        <cell halign="center"><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>k=4</m></cell>
+                        <cell halign="right"><m>f^{(4)}(x)=<fillin characters="5" /></m></cell>
+                        <cell halign="right"><m>f^{(4)}(0)=<fillin characters="5" /></m></cell>
+                        <cell halign="center"><m><fillin characters="5" /></m></cell>
+                    </row>
+                    <row bottom="medium">
+                        <cell halign="center"><m>k=5</m></cell>
+                        <cell halign="right"><m>f^{(5)}(x)=<fillin characters="5" /></m></cell>
+                        <cell halign="right"><m>f^{(5)}(0)=<fillin characters="5" /></m></cell>
+                        <cell halign="center"><m><fillin characters="5" /></m></cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form <m>(x-a)^k</m> for <m>k=0,1,...,5</m>. These (added together) will form your polynomial, <m>p_5(x)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you find a general explicit formula for the terms? If you're having a hard time with this, what could you do to try to make this easier? Why is this difficult?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                How many more derivatives do you think you'll need to find before you get a non-zero term? How many non-zero terms do you think you'd need to find before you can guess the pattern?
+            </p>
+        </hint>
+    </task>
+    <conclusion>
+        <p>
+            We're going to stop there. This series is famously difficult to work with. We won't generate the whole Taylor series this way, and this strategy really doesn't work well for functions like this (where the derivatives are pretty annoying to find).
+        </p>
+    </conclusion>
+</activity>

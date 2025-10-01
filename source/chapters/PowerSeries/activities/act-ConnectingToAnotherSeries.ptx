@@ -1,0 +1,22 @@
+<activity xml:id="act-ConnectingToAnotherSeries">
+    <title>Connecting to Another Series</title>
+    <introduction>
+        <p>
+            Let's start with some <q>known</q> series.
+            <md>
+                <mrow>\frac{1}{1-x} \amp = \sum_{k=0}^\infty x^k \amp \text{on }(-1,1)</mrow>
+                <mrow>e^x \amp = \sum_{k=0}^\infty \frac{x^k}{k!} \amp \text{on } (-\infty,\infty)</mrow>
+                <mrow>\sin(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{(2k+1)!} \amp \text{on } (-\infty,\infty)</mrow>
+                <mrow>\cos(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k}}{(2k)!} \amp \text{on } (-\infty,\infty)</mrow>
+            </md>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                
+            </p>
+        </statement>
+    </task>
+    
+</activity>
