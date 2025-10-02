@@ -1,0 +1,109 @@
+<activity xml:id="act-ConnectingToAnotherSeriesArcTan">
+    <title>Connecting to Yet Another Series</title>
+    <introduction>
+        <p>
+            Here, again, are some <em>updated</em> <q>known</q> series
+            <md>
+                <mrow>\frac{1}{1-x} \amp = \sum_{k=0}^\infty x^k \amp \text{on }(-1,1)</mrow>
+                <mrow>e^x \amp = \sum_{k=0}^\infty \frac{x^k}{k!} \amp \text{on } (-\infty,\infty)</mrow>
+                <mrow>\sin(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{(2k+1)!} \amp \text{on } (-\infty,\infty)</mrow>
+                <mrow>\cos(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k}}{(2k)!} \amp \text{on } (-\infty,\infty)</mrow>
+                <mrow>\ln(1+x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{k+1}}{k+1} \amp \text{on } (-1,1]</mrow>
+            </md>
+            We're going to build a Taylor series for a logarithmic function:
+            <me>
+                y=\tan^{-1}(x)
+            </me>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                In order to start, we're going to find a Taylor series for <m>g(x)=\dfrac{1}{1+x^2}</m>. Which of the <q>known</q> series above is this most similar to? How is it different?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find a Taylor series for <m>g(x)=\dfrac{1}{1+x^2}</m> by using <xref ref="thm-OperationsPowerSeries" text="type=global-title"/>. Can you connect this series to the known series by multiplying or composing something?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Note that <m>1+x^2 = 1-(-x^2)</m>.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                We're going to connect <m>g(x)=\dfrac{1}{1+x^2}</m> to the geometric Taylor series for <m>f(x) = \dfrac{1}{1-x}</m>. We can note that <m>g(x)=f(-x^2)</m>.
+                <md>
+                    <mrow>f(-x^2) \amp = \sum_{k=0}^\infty (-x^2)^k </mrow>
+                    <mrow> \amp = \sum_{k=0}^{\infty} (-1)^k x^{2k}</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Notice that the function we're trying to get a Taylor series for, <m>y=\tan^{-1}(x)</m>, is an antiderivative of <m>g(x)=\dfrac{1}{1+x^2}</m>. Antidifferentiate the series you found above, using <xref ref="thm-DiffPowerSeries" text="type-global-title"/>. We know that at <m>x=0</m>, <m>y=0</m>, so use this information to find specific constant that we need when we antidifferentiate.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>G(x) \amp = \int g(x)\;dx </mrow>
+                    <mrow>G(x) \amp = \int \left(\sum_{k=0}^{\infty}(-1)^k x^{2k}\right)\;dx</mrow>
+                    <mrow> \amp = \sum_{k=0}^\infty (-1)^k \int x^{2k}\;dx</mrow>
+                    <mrow> \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{2k+1} + C</mrow>
+                </md>
+                We want <m>G(0)=0</m>, so we need to let <m>C=0</m>.
+            </p>
+            <p>
+                So:
+                <me>
+                    \tan^{-1}(x) = \sum_{k=0}^{\infty} \frac{(-1)^k x^{2k+1}}{2k+1}
+                </me>.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the interval of convergence for this new series? How does that relate to the interval of convergence of the <q>known</q> series you started with?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                We can apply the Ratio Test:
+
+            <md>
+                <mrow>\lim_{k\to\infty} \frac{|x|^{2(k+1)+1}}{2(k+1)+1}\cdot \frac{2k+1}{|x|^{2k+1} \amp = \lim_{k\to\infty}  \frac{|x|^{2k+3}}{2k+3}\cdot \frac{2k+1}{|x|^{2k+1}}</mrow>
+                <mrow> \amp = \lim_{k\to\infty} \frac{|x|^2 (2k+3)}{2k+1}</mrow>
+                <mrow> \amp  = |x|^2</mrow>
+            </md>
+            So we know that the series will converge for <m>x^2\lt 1</m>. Now we can test the endpoints at <m>x=-1</m> and <m>x=1</m>.
+            </p>
+            <sidebyside widths="48% 48%">
+                <p>
+                    Case: <m>x=-1</m>
+                    <me>
+                        \sum_{k=0}^{\infty} \frac{(-1)^{k+1}}{2k+1}
+                    </me>
+                    This series converges by the <xref ref="thm-AlternatingSeriesTest" text="title"/>.
+                </p>
+                <p>
+                    Case: <m>x=1</m>
+                    <me>
+                        \sum_{k=0}^{\infty} \frac{(-1)^k}{2k+1}
+                    </me>
+                    This series converges by the <xref ref="thm-AlternatingSeriesTest" text="title"/>.
+                </p>
+            </sidebyside>
+            <p>
+                So, the interval of convergence is <m>[-1,1]</m>.
+            </p>
+        </solution>
+    </task>    
+</activity>

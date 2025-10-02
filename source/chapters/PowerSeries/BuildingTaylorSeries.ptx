@@ -45,5 +45,25 @@
       A (hopefully) more useful strategy is to collect the Taylor series that we know, and then try to build a series for a function based on how that function relates. We saw this in <xref ref="thm-OperationsPowerSeries" text="type-global-title"/> and <xref ref="thm-DiffPowerSeries" text="type-global-title"/>.
     </p>
     <xi:include href="./activities/act-ConnectingToAnotherSeries.ptx" />
+    <p>
+      We're going to try this again with a different function as the goal!
+    </p>
+    <xi:include href="./activities/act-ConnectingToAnotherSeriesArcTan.ptx" />
+    <p>
+      Now we can update our list of <q>known</q> series!
+    </p>
+    <assemblage xml:id="strat-KnownSeries">
+      <title>Known Taylor Series</title>
+      <p>
+        <md>
+          <mrow>\frac{1}{1-x} \amp = \sum_{k=0}^\infty x^k \amp \text{on }(-1,1)</mrow>
+          <mrow>e^x \amp = \sum_{k=0}^\infty \frac{x^k}{k!} \amp \text{on } (-\infty,\infty)</mrow>
+          <mrow>\sin(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{(2k+1)!} \amp \text{on } (-\infty,\infty)</mrow>
+          <mrow>\cos(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k}}{(2k)!} \amp \text{on } (-\infty,\infty)</mrow>
+          <mrow>\ln(1+x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{k+1}}{k+1} \amp \text{on } (-1,1]</mrow>
+          <mrow>\tan^{-1}(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{2k+1} \amp \text{on } [-1,1]</mrow>
+      </md>
+      </p>
+    </assemblage>
   </subsection>
 </section>
