@@ -101,15 +101,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.11';
+eBookConfig.runestone_version = '7.9.13';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.59de9dca80a62a76.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.b37c97cbe7a5455b.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/prefix-runtime.9f7f6b353cd8c357.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.629fdbd852876870.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -763,11 +763,268 @@ e^x \amp = \sum_{k=0}^\infty \frac{x^k}{k!} \amp \text{on } (-\infty,\infty)\\
 \cos(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k}}{(2k)!} \amp \text{on } (-\infty,\infty)
 \end{align*}
 </div>
+<div class="para">We’re going to build a Taylor series for a logarithmic function:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y=\ln(1+x)\text{.}
+\end{equation*}
+</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="act-ConnectingToAnotherSeries-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-ConnectingToAnotherSeries-3-1-1"><div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="autopermalink" data-description="Task 9.3.2.a"><a href="#act-ConnectingToAnotherSeries-3" title="Copy heading and permalink for Task 9.3.2.a" aria-label="Copy heading and permalink for Task 9.3.2.a">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.3.2: Connecting to Another Series"><a href="#act-ConnectingToAnotherSeries" title="Copy heading and permalink for Activity 9.3.2: Connecting to Another Series" aria-label="Copy heading and permalink for Activity 9.3.2: Connecting to Another Series">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Connections To Other Taylor Series"><a href="#subsec-ConnectionsToOther" title="Copy heading and permalink for Subsection: Connections To Other Taylor Series" aria-label="Copy heading and permalink for Subsection: Connections To Other Taylor Series">🔗</a></div></section><div class="autopermalink" data-description="Section 9.3: How to Build Taylor Series"><a href="#sec-BuildingTaylorSeries" title="Copy heading and permalink for Section 9.3: How to Build Taylor Series" aria-label="Copy heading and permalink for Section 9.3: How to Build Taylor Series">🔗</a></div></section></div>
+<div class="para" id="act-ConnectingToAnotherSeries-3-1-1">In order to start, we’re going to find a Taylor series for <span class="process-math">\(g(x)=\dfrac{1}{1+x}\text{.}\)</span> Which of the “known” series above is this most similar to? How is it different?<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.3.2.a"><a href="#act-ConnectingToAnotherSeries-3" title="Copy heading and permalink for Task 9.3.2.a" aria-label="Copy heading and permalink for Task 9.3.2.a">🔗</a></div></article><article class="task exercise-like" id="act-ConnectingToAnotherSeries-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-ConnectingToAnotherSeries-4-1-1">Find a Taylor series for <span class="process-math">\(g(x)=\dfrac{1}{1+x}\)</span> by using <a href="sec-PowerSeriesConvergence.html#thm-OperationsPowerSeries" class="xref" data-knowl="./knowl/xref/thm-OperationsPowerSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.2.4: Operations on Power Series">Theorem 9.2.4</a>. Can you connect this series to the known series by multiplying or composing something?<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="act-ConnectingToAnotherSeries-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-ConnectingToAnotherSeries-4-2-1">Note that <span class="process-math">\(1+x = 1-(-x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 9.3.2.b.1"><a href="#act-ConnectingToAnotherSeries-4-2" title="Copy heading and permalink for Hint 9.3.2.b.1" aria-label="Copy heading and permalink for Hint 9.3.2.b.1">🔗</a></div>
+</div></details><details id="act-ConnectingToAnotherSeries-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-ConnectingToAnotherSeries-4-3-1">
+<div class="para">We’re going to connect <span class="process-math">\(g(x)=\dfrac{1}{1+x}\)</span> to the geometric Taylor series for <span class="process-math">\(f(x) = \dfrac{1}{1-x}\text{.}\)</span> We can note that <span class="process-math">\(g(x)=f(-x)\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="act-ConnectingToAnotherSeries-4-3-1-4">
+\begin{align*}
+f(-x) \amp = \sum_{k=0}^\infty (-x)^k \\
+\amp = \sum_{k=0}^{\infty} (-1)^k x^k
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.3.2.b.1"><a href="#act-ConnectingToAnotherSeries-4-3" title="Copy heading and permalink for Solution 9.3.2.b.1" aria-label="Copy heading and permalink for Solution 9.3.2.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 9.3.2.b"><a href="#act-ConnectingToAnotherSeries-4" title="Copy heading and permalink for Task 9.3.2.b" aria-label="Copy heading and permalink for Task 9.3.2.b">🔗</a></div></article><article class="task exercise-like" id="act-ConnectingToAnotherSeries-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-ConnectingToAnotherSeries-5-1-1">Notice that the function we’re trying to get a Taylor series for, <span class="process-math">\(y=\ln(1+x)\text{,}\)</span> is an antiderivative of <span class="process-math">\(g(x)=\dfrac{1}{1+x}\text{.}\)</span> Antidifferentiate the series you found above, using <a href="sec-PowerSeriesConvergence.html#thm-DiffPowerSeries" class="xref" data-knowl="./knowl/xref/thm-DiffPowerSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.2.5: Differentiating and Integrating Power Series">Theorem 9.2.5 Differentiating and Integrating Power Series</a>. We know that at <span class="process-math">\(x=0\text{,}\)</span> <span class="process-math">\(y=0\text{,}\)</span> so use this information to find specific constant that we need when we antidifferentiate.<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-ConnectingToAnotherSeries-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-ConnectingToAnotherSeries-5-2-1">
+<div class="displaymath process-math" id="act-ConnectingToAnotherSeries-5-2-1-1">
+\begin{align*}
+G(x) \amp = \int g(x)\;dx \\
+G(x) \amp = \int \left(\sum_{k=0}^{\infty}(-1)^k x^k\right)\;dx\\
+\amp = \sum_{k=0}^\infty (-1)^k \int x^k\;dx\\
+\amp = \sum_{k=0}^\infty \frac{(-1)^k x^{k+1}}{k+1} + C
+\end{align*}
+</div>
+<div class="para">We want <span class="process-math">\(G(0)=0\text{,}\)</span> so we need to let <span class="process-math">\(C=0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="act-ConnectingToAnotherSeries-5-2-2">
+<div class="para">So:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ln(1+x) = \sum_{k=0}^{\infty} \frac{(-1)^k x^{k+1}}{k+1}\text{.}
+\end{equation*}
+</div>
+<div class="para">Sometimes this is written as:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ln(1+x) = \sum_{k=1}^{\infty} \frac{(-1)^{k+1} x^{k}}{k}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.3.2.c.1"><a href="#act-ConnectingToAnotherSeries-5-2" title="Copy heading and permalink for Solution 9.3.2.c.1" aria-label="Copy heading and permalink for Solution 9.3.2.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 9.3.2.c"><a href="#act-ConnectingToAnotherSeries-5" title="Copy heading and permalink for Task 9.3.2.c" aria-label="Copy heading and permalink for Task 9.3.2.c">🔗</a></div></article><article class="task exercise-like" id="act-ConnectingToAnotherSeries-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-ConnectingToAnotherSeries-6-1-1">What is the interval of convergence for this new series? How does that relate to the interval of convergence of the “known” series you started with?<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-ConnectingToAnotherSeries-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-ConnectingToAnotherSeries-6-2-1">
+<div class="para">We can apply the Ratio Test:</div>
+<div class="displaymath process-math" id="act-ConnectingToAnotherSeries-6-2-1-1">
+\begin{align*}
+\lim_{k\to\infty} \frac{|x|^{k+2}}{k+2}\cdot \frac{k+1}{|x|^{k+1}} \amp = \lim_{k\to\infty} \frac{|x|(k+1)}{k+2}\\
+\amp  = |x|
+\end{align*}
+</div>
+<div class="para">So we know that the series will converge for <span class="process-math">\(|x|\lt 1\text{.}\)</span> Now we can test the endpoints at <span class="process-math">\(x=-1\)</span> and <span class="process-math">\(x=1\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1%;margin-right:1%;">
+<div class="sbspanel top" style="width:48.9795918367347%;"><div class="para logical" id="act-ConnectingToAnotherSeries-6-2-2-1">
+<div class="para">Case: <span class="process-math">\(x=-1\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=0}^{\infty} \frac{-1}{k+1}
+\end{equation*}
+</div>
+<div class="para">This is the negative harmonic series, and so the series diverges at <span class="process-math">\(x=-1\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel top" style="width:48.9795918367347%;"><div class="para logical" id="act-ConnectingToAnotherSeries-6-2-2-2">
+<div class="para">Case: <span class="process-math">\(x=1\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{k=0}^{\infty} \frac{(-1)^k}{k+1}
+\end{equation*}
+</div>
+<div class="para">This is the alternating harmonic series, and so the series converges at <span class="process-math">\(x=1\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-6-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="para" id="act-ConnectingToAnotherSeries-6-2-3">So, the interval of convergence is <span class="process-math">\((-1,1]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeries-6-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.3.2.d.1"><a href="#act-ConnectingToAnotherSeries-6-2" title="Copy heading and permalink for Solution 9.3.2.d.1" aria-label="Copy heading and permalink for Solution 9.3.2.d.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 9.3.2.d"><a href="#act-ConnectingToAnotherSeries-6" title="Copy heading and permalink for Task 9.3.2.d" aria-label="Copy heading and permalink for Task 9.3.2.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.3.2: Connecting to Another Series"><a href="#act-ConnectingToAnotherSeries" title="Copy heading and permalink for Activity 9.3.2: Connecting to Another Series" aria-label="Copy heading and permalink for Activity 9.3.2: Connecting to Another Series">🔗</a></div></article><div class="para" id="subsec-ConnectionsToOther-4">We’re going to try this again with a different function as the goal!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ConnectionsToOther-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-ConnectingToAnotherSeriesArcTan"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Connecting to Yet Another Series.</span>
+</h4>
+<div class="introduction" id="act-ConnectingToAnotherSeriesArcTan-2"><div class="para logical" id="act-ConnectingToAnotherSeriesArcTan-2-1">
+<div class="para">Here, again, are some <em class="emphasis">updated</em> “known” series</div>
+<div class="displaymath process-math" id="act-ConnectingToAnotherSeriesArcTan-2-1-3">
+\begin{align*}
+\frac{1}{1-x} \amp = \sum_{k=0}^\infty x^k \amp \text{on }(-1,1)\\
+e^x \amp = \sum_{k=0}^\infty \frac{x^k}{k!} \amp \text{on } (-\infty,\infty)\\
+\sin(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{(2k+1)!} \amp \text{on } (-\infty,\infty)\\
+\cos(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k}}{(2k)!} \amp \text{on } (-\infty,\infty)\\
+\ln(1+x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{k+1}}{k+1} \amp \text{on } (-1,1]
+\end{align*}
+</div>
+<div class="para">We’re going to build a Taylor series for a logarithmic function:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y=\tan^{-1}(x)\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="act-ConnectingToAnotherSeriesArcTan-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-ConnectingToAnotherSeriesArcTan-3-1-1">In order to start, we’re going to find a Taylor series for <span class="process-math">\(g(x)=\dfrac{1}{1+x^2}\text{.}\)</span> Which of the “known” series above is this most similar to? How is it different?<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.3.3.a"><a href="#act-ConnectingToAnotherSeriesArcTan-3" title="Copy heading and permalink for Task 9.3.3.a" aria-label="Copy heading and permalink for Task 9.3.3.a">🔗</a></div></article><article class="task exercise-like" id="act-ConnectingToAnotherSeriesArcTan-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-ConnectingToAnotherSeriesArcTan-4-1-1">Find a Taylor series for <span class="process-math">\(g(x)=\dfrac{1}{1+x^2}\)</span> by using <a href="sec-PowerSeriesConvergence.html#thm-OperationsPowerSeries" class="xref" data-knowl="./knowl/xref/thm-OperationsPowerSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.2.4: Operations on Power Series">Theorem 9.2.4</a>. Can you connect this series to the known series by multiplying or composing something?<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="act-ConnectingToAnotherSeriesArcTan-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-ConnectingToAnotherSeriesArcTan-4-2-1">Note that <span class="process-math">\(1+x^2 = 1-(-x^2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 9.3.3.b.1"><a href="#act-ConnectingToAnotherSeriesArcTan-4-2" title="Copy heading and permalink for Hint 9.3.3.b.1" aria-label="Copy heading and permalink for Hint 9.3.3.b.1">🔗</a></div>
+</div></details><details id="act-ConnectingToAnotherSeriesArcTan-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-ConnectingToAnotherSeriesArcTan-4-3-1">
+<div class="para">We’re going to connect <span class="process-math">\(g(x)=\dfrac{1}{1+x^2}\)</span> to the geometric Taylor series for <span class="process-math">\(f(x) = \dfrac{1}{1-x}\text{.}\)</span> We can note that <span class="process-math">\(g(x)=f(-x^2)\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="act-ConnectingToAnotherSeriesArcTan-4-3-1-4">
+\begin{align*}
+f(-x^2) \amp = \sum_{k=0}^\infty (-x^2)^k \\
+\amp = \sum_{k=0}^{\infty} (-1)^k x^{2k}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.3.3.b.1"><a href="#act-ConnectingToAnotherSeriesArcTan-4-3" title="Copy heading and permalink for Solution 9.3.3.b.1" aria-label="Copy heading and permalink for Solution 9.3.3.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 9.3.3.b"><a href="#act-ConnectingToAnotherSeriesArcTan-4" title="Copy heading and permalink for Task 9.3.3.b" aria-label="Copy heading and permalink for Task 9.3.3.b">🔗</a></div></article><article class="task exercise-like" id="act-ConnectingToAnotherSeriesArcTan-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-ConnectingToAnotherSeriesArcTan-5-1-1">Notice that the function we’re trying to get a Taylor series for, <span class="process-math">\(y=\tan^{-1}(x)\text{,}\)</span> is an antiderivative of <span class="process-math">\(g(x)=\dfrac{1}{1+x^2}\text{.}\)</span> Antidifferentiate the series you found above, using <a href="sec-PowerSeriesConvergence.html#thm-DiffPowerSeries" class="xref" data-knowl="./knowl/xref/thm-DiffPowerSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.2.5: Differentiating and Integrating Power Series">Theorem 9.2.5 Differentiating and Integrating Power Series</a>. We know that at <span class="process-math">\(x=0\text{,}\)</span> <span class="process-math">\(y=0\text{,}\)</span> so use this information to find specific constant that we need when we antidifferentiate.<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-ConnectingToAnotherSeriesArcTan-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-ConnectingToAnotherSeriesArcTan-5-2-1">
+<div class="displaymath process-math" id="act-ConnectingToAnotherSeriesArcTan-5-2-1-1">
+\begin{align*}
+G(x) \amp = \int g(x)\;dx \\
+G(x) \amp = \int \left(\sum_{k=0}^{\infty}(-1)^k x^{2k}\right)\;dx\\
+\amp = \sum_{k=0}^\infty (-1)^k \int x^{2k}\;dx\\
+\amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{2k+1} + C
+\end{align*}
+</div>
+<div class="para">We want <span class="process-math">\(G(0)=0\text{,}\)</span> so we need to let <span class="process-math">\(C=0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="act-ConnectingToAnotherSeriesArcTan-5-2-2">
+<div class="para">So:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\tan^{-1}(x) = \sum_{k=0}^{\infty} \frac{(-1)^k x^{2k+1}}{2k+1}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.3.3.c.1"><a href="#act-ConnectingToAnotherSeriesArcTan-5-2" title="Copy heading and permalink for Solution 9.3.3.c.1" aria-label="Copy heading and permalink for Solution 9.3.3.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 9.3.3.c"><a href="#act-ConnectingToAnotherSeriesArcTan-5" title="Copy heading and permalink for Task 9.3.3.c" aria-label="Copy heading and permalink for Task 9.3.3.c">🔗</a></div></article><article class="task exercise-like" id="act-ConnectingToAnotherSeriesArcTan-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-ConnectingToAnotherSeriesArcTan-6-1-1">What is the interval of convergence for this new series? How does that relate to the interval of convergence of the “known” series you started with?<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-ConnectingToAnotherSeriesArcTan-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-ConnectingToAnotherSeriesArcTan-6-2-1">
+<div class="para">We can apply the Ratio Test:</div>
+<div class="displaymath process-math" id="act-ConnectingToAnotherSeriesArcTan-6-2-1-1">
+\begin{align*}
+\lim_{k\to\infty} \frac{|x|^{2(k+1)+1}}{2(k+1)+1}\cdot \frac{2k+1}{|x|^{2k+1} \amp = \lim_{k\to\infty}  \frac{|x|^{2k+3}}{2k+3}\cdot \frac{2k+1}{|x|^{2k+1}}\\
+\amp = \lim_{k\to\infty} \frac{|x|^2 (2k+3)}{2k+1}\\
+\amp  = |x|^2
+\end{align*}
+</div>
+<div class="para">So we know that the series will converge for <span class="process-math">\(x^2\lt 1\text{.}\)</span> Now we can test the endpoints at <span class="process-math">\(x=-1\)</span> and <span class="process-math">\(x=1\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1%;margin-right:1%;">
+<div class="sbspanel top" style="width:48.9795918367347%;"><div class="para logical" id="act-ConnectingToAnotherSeriesArcTan-6-2-2-1">
+<div class="para">Case: <span class="process-math">\(x=-1\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-AlternatingSeriesTest.html">
+\begin{equation*}
+\sum_{k=0}^{\infty} \frac{(-1)^{k+1}}{2k+1}
+\end{equation*}
+</div>
+<div class="para">This series converges by the <a href="sec-AlternatingSeries.html#thm-AlternatingSeriesTest" class="xref" data-knowl="./knowl/xref/thm-AlternatingSeriesTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.5.3: Alternating Series Test">Alternating Series Test</a>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel top" style="width:48.9795918367347%;"><div class="para logical" id="act-ConnectingToAnotherSeriesArcTan-6-2-2-2">
+<div class="para">Case: <span class="process-math">\(x=1\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-AlternatingSeriesTest.html">
+\begin{equation*}
+\sum_{k=0}^{\infty} \frac{(-1)^k}{2k+1}
+\end{equation*}
+</div>
+<div class="para">This series converges by the <a href="sec-AlternatingSeries.html#thm-AlternatingSeriesTest" class="xref" data-knowl="./knowl/xref/thm-AlternatingSeriesTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.5.3: Alternating Series Test">Alternating Series Test</a>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-6-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="para" id="act-ConnectingToAnotherSeriesArcTan-6-2-3">So, the interval of convergence is <span class="process-math">\([-1,1]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-ConnectingToAnotherSeriesArcTan-6-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.3.3.d.1"><a href="#act-ConnectingToAnotherSeriesArcTan-6-2" title="Copy heading and permalink for Solution 9.3.3.d.1" aria-label="Copy heading and permalink for Solution 9.3.3.d.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 9.3.3.d"><a href="#act-ConnectingToAnotherSeriesArcTan-6" title="Copy heading and permalink for Task 9.3.3.d" aria-label="Copy heading and permalink for Task 9.3.3.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.3.3: Connecting to Yet Another Series"><a href="#act-ConnectingToAnotherSeriesArcTan" title="Copy heading and permalink for Activity 9.3.3: Connecting to Yet Another Series" aria-label="Copy heading and permalink for Activity 9.3.3: Connecting to Yet Another Series">🔗</a></div></article><div class="para" id="subsec-ConnectionsToOther-6">Now we can update our list of “known” series!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ConnectionsToOther-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="assemblage assemblage-like" id="strat-KnownSeries"><h4 class="heading"><span class="title">Known Taylor Series.</span></h4>
+<div class="para logical" id="strat-KnownSeries-2">
+<div class="displaymath process-math" id="strat-KnownSeries-2-1">
+\begin{align*}
+\frac{1}{1-x} \amp = \sum_{k=0}^\infty x^k \amp \text{on }(-1,1)\\
+e^x \amp = \sum_{k=0}^\infty \frac{x^k}{k!} \amp \text{on } (-\infty,\infty)\\
+\sin(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{(2k+1)!} \amp \text{on } (-\infty,\infty)\\
+\cos(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k}}{(2k)!} \amp \text{on } (-\infty,\infty)\\
+\ln(1+x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{k+1}}{k+1} \amp \text{on } (-1,1]\\
+\tan^{-1}(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{2k+1} \amp \text{on } [-1,1]
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#strat-KnownSeries-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: Known Taylor Series"><a href="#strat-KnownSeries" title="Copy heading and permalink for Assemblage: Known Taylor Series" aria-label="Copy heading and permalink for Assemblage: Known Taylor Series">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Connections To Other Taylor Series"><a href="#subsec-ConnectionsToOther" title="Copy heading and permalink for Subsection: Connections To Other Taylor Series" aria-label="Copy heading and permalink for Subsection: Connections To Other Taylor Series">🔗</a></div></section><section class="conclusion" id="sec-BuildingTaylorSeries-5"><div class="para" id="sec-BuildingTaylorSeries-5-1">Most importantly, we can use these two activities as a framework for a more general way of constructing Taylor series representations of functions. If we can link the function we’re interested in to one of the functions with a “known” Taylor series, then we can use the link between functions as a way of linking the respective Taylor series.<div class="autopermalink" data-description="Paragraph"><a href="#sec-BuildingTaylorSeries-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-BuildingTaylorSeries-5-2">That is, if we know the Taylor series for <span class="process-math">\(f(x)\)</span> and we want to find the Taylor series for a different function <span class="process-math">\(g(x)\)</span> where <span class="process-math">\(g(x)\)</span> is some sort of transformed version of <span class="process-math">\(f(x)\text{,}\)</span> then we can list the transformations or changes to <span class="process-math">\(f(x)\)</span> in order to produce <span class="process-math">\(g(x)\text{,}\)</span> and apply those transformations or changes to the Taylor series for <span class="process-math">\(f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-BuildingTaylorSeries-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-TaylorSeriesFunction"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/fig-TaylorSeriesFunction-2.svg" role="img" class="contained" alt='Two rectangles, one labeled "Taylor Series Context" and the other, beside it, labeled "Function Context." Inside the "Taylor Series Context" rectangle is a power series with an arrow labeled "apply operation A" pointing towards a transformed power series. Inside the "Function Context" rectangle is a function f(x) with an arrow labeled "apply operation A" pointing towards A(f(x)). Two arrows connect the power series and the function as well as the transformed versions, labeled "equivalent on IOC".'></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.3.3<span class="period">.</span></span><span class="space"> </span>Constructing a Taylor series from a related series.<div class="autopermalink" data-description="Figure 9.3.3"><a href="#fig-TaylorSeriesFunction" title="Copy heading and permalink for Figure 9.3.3" aria-label="Copy heading and permalink for Figure 9.3.3">🔗</a></div></figcaption></figure><div class="para" id="sec-BuildingTaylorSeries-5-4">So when the operation <span class="process-math">\(A\)</span> is something from either <a href="sec-PowerSeriesConvergence.html#thm-OperationsPowerSeries" class="xref" data-knowl="./knowl/xref/thm-OperationsPowerSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.2.4: Operations on Power Series">Theorem 9.2.4 Operations on Power Series</a> or <a href="sec-PowerSeriesConvergence.html#thm-DiffPowerSeries" class="xref" data-knowl="./knowl/xref/thm-DiffPowerSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.2.5: Differentiating and Integrating Power Series">Theorem 9.2.5 Differentiating and Integrating Power Series</a>, then we can apply these operations to the Taylor series of <span class="process-math">\(f(x)\)</span> in order to construct the Taylor series of <span class="process-math">\(A(f(x))\text{.}\)</span> Interestingly enough, we can note that the intervals of convergence can be mostly constructed from these same transformations: there might be some changes to the inclusion of the endpoints based on differentiation and integration.<div class="autopermalink" data-description="Paragraph"><a href="#sec-BuildingTaylorSeries-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-BuildingTaylorSeries-5-5">Now that we have a convenient way of constructing Taylor series for conveniently linked functions, we should think about how we might use these Taylor series representations of functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-BuildingTaylorSeries-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="autopermalink" data-description="Section 9.3: How to Build Taylor Series"><a href="#sec-BuildingTaylorSeries" title="Copy heading and permalink for Section 9.3: How to Build Taylor Series" aria-label="Copy heading and permalink for Section 9.3: How to Build Taylor Series">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-PowerSeriesConvergence.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-ApplyingTaylorSeries.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
