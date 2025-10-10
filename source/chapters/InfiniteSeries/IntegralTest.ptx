@@ -346,4 +346,48 @@
       In the Integral Test, and in general, we want to (and need to) be careful about the conditions we apply: we want them to be general enough that we can actually use the test, but specific enough to protect against strange counter-examples.
     </p>
   </subsection>
+  <conclusion>
+    <p>
+      Overall, we're really just trying to connect an integral in one context to an integral in another context. We have talked, briefly, about how we can think of an infinite series as a kind of improper integral for some discrete function (since we are summing up the function values multiplied by the minimal distance between inputs).
+    </p>
+    <p>
+      Earlier (in <xref ref="sec-uSubstitution" text="type-global-title"/> and <xref ref="sec-TrigSub" text="type-global-title"/>), we tried to visualize the variable substitutions (with <xref ref="fig-uSub"/>, <xref ref="fig-uSubDefinite"/>, and <xref ref="fig-TrigSub"/>) as a translation of functions between one context and another. We can visualize the Integral Test in a similar way: we're translating our integral from a Discrete context into a Continuous context, figuring out whether the integral converges in this context, and then taking the conclusions and applying them to the integral in the Discrete context.
+    </p>
+    <figure xml:id="fig-IntegralTest">
+      <caption>Integral Test, visualized as a transformation between contexts.</caption>
+      <image width="80%">
+          <shortdescription>
+              Two rectangles, one labeled "Discrete Context" and the other, beside it, labeled "Continuous Context." Inside the "Discrete Context" rectangle is an infinite series with an arrow pointing towards "Existence of limit of partial sums". Inside the "Continuous Context" rectangle is an improper integral with an arrow pointing towards "Existence of limit of definite integral". There is an arrow connecting the infinite series in the first rectangle to the improper integral. Then there is an arrow connecting the statements about the existence of limits.
+          </shortdescription>
+          <latex-image>
+            \begin{tikzpicture}
+                \draw[DCgreen] (0,0) -- (0,5);
+                \draw[DCgreen] (0,5) -- (3,5);
+                \draw[DCgreen] (3,5) -- (3,0);
+                \draw[DCgreen] (3,0) -- (0,0);
+                \node[DCgreen] at (1.5, 3.7) [above] {$\displaystyle\sum_{k=0}^\infty a_k$};
+                \node[DCgreen] at (1.5, 1.2) [below] {$\displaystyle \lim_{n\to\infty} \sum_{k=0}^n a_k$};
+                \node[DCgreen] at (1.5, 1.2) [above] {Existence of};
+                \draw[-latex, line width=1.5pt][DCgreen] (1.5, 3.7) -- (1.5, 1.6);
+                \node[DCgreen] at (1.5, 5.2) [above] {\Large Discrete Context};
+
+                \draw[DCblue] (5,0) -- (5,5);
+                \draw[DCblue] (5,5) -- (8,5);
+                \draw[DCblue] (8,5) -- (8,0);
+                \draw[DCblue] (8,0) -- (5,0);
+                \node[DCblue] at (6.5, 3.7) [above] {$\displaystyle\int_{x=0}^\infty f(x)\;dx$};
+                \node[DCblue] at (6.5, 1.2) [above] {Existence of};
+                \node[DCblue] at (6.5, 1.2) [below] {$\displaystyle\lim_{t\to\infty} \int_{x=0}^{x=t} f(x)\;dx$};
+                \draw[-latex, line width = 1.5pt][DCblue] (6.5, 3.7) -- (6.5, 1.6);
+                \node[DCblue] at (6.5, 5.2) [above] {\Large Continuous Context};
+
+                \draw[-latex, line width = 1.2pt][DCred] (2.5,4.5) .. controls (3.2,5) and (4.8,5) .. (5.5,4.5);
+                \node[DCred] at (4,4.9) [below] {\small conditions};
+                \draw[-latex, line width = 1.2pt][DCred] (5.5,0.1) .. controls (4.8, -0.4) and (3.2,-0.4) .. (2.5,0.1);
+                \node[DCred] at (4,-0.3) [above] {\small conditions};
+            \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+  </conclusion>
 </section>
