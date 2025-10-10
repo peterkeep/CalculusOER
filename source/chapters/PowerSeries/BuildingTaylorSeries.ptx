@@ -66,4 +66,62 @@
       </p>
     </assemblage>
   </subsection>
+  <conclusion>
+    <p>
+      Most importantly, we can use these two activities as a framework for a more general way of constructing Taylor series representations of functions. If we can link the function we're interested in to one of the functions with a <q>known</q> Taylor series, then we can use the link between functions as a way of linking the respective Taylor series.
+    </p>
+    <p>
+      That is, if we know the Taylor series for <m>f(x)</m> and we want to find the Taylor series for a different function <m>g(x)</m> where <m>g(x)</m> is some sort of transformed version of <m>f(x)</m>, then we can list the transformations or changes to <m>f(x)</m> in order to produce <m>g(x)</m>, and apply those transformations or changes to the Taylor series for <m>f(x)</m>.
+    </p>
+
+    <figure xml:id="fig-TaylorSeriesFunction">
+      <caption>Constructing a Taylor series from a related series.</caption>
+      <image width="80%">
+          <shortdescription>
+              Two rectangles, one labeled "Taylor Series Context" and the other, beside it, labeled "Function Context." Inside the "Taylor Series Context" rectangle is a power series with an arrow labeled "apply operation A" pointing towards a transformed power series. Inside the "Function Context" rectangle is a function f(x) with an arrow labeled "apply operation A" pointing towards A(f(x)). Two arrows connect the power series and the function as well as the transformed versions, labeled "equivalent on IOC".
+          </shortdescription>
+          <latex-image>
+            \begin{tikzpicture}
+                \draw[DCgreen] (0,0) -- (0,5);
+                \draw[DCgreen] (0,5) -- (3,5);
+                \draw[DCgreen] (3,5) -- (3,0);
+                \draw[DCgreen] (3,0) -- (0,0);
+                \node[DCgreen] at (1.5, 3.7) [above] {$\displaystyle\sum_{k=0}^\infty c_k(x-a)^k$};
+                \node[DCgreen] at (1.5, 1.2) [below] {$\displaystyle\sum_{k=0}^\infty A(c_k(x-a)^k)$};
+                \draw[-latex, line width=1.5pt][DCgreen] (1.4, 3.7) -- (1.4, 1.2);
+                \node[DCgreen] at (1.4, 2.8) [right] {apply};
+                \node[DCgreen] at (1.4, 2.45) [right] {operation};
+                \node[DCgreen] at (1.4, 2.1) [right] {$A$};
+                \node[DCgreen] at (1.5, 5.2) [above] {\Large Taylor Series Context};
+
+                \draw[DCblue] (5,0) -- (5,5);
+                \draw[DCblue] (5,5) -- (8,5);
+                \draw[DCblue] (8,5) -- (8,0);
+                \draw[DCblue] (8,0) -- (5,0);
+                \node[DCblue] at (6.5, 4) [above] {$f(x)$};
+                \node[DCblue] at (6.5, 0.85) [below] {$A(f(x))$};
+                \draw[-latex, line width = 1.5pt][DCblue] (6.4, 3.7) -- (6.4, 1.2);
+                \node[DCblue] at (6.4, 2.8) [right] {apply};
+                \node[DCblue] at (6.4, 2.45) [right] {operation};
+                \node[DCblue] at (6.4, 2.1) [right] {$A$};
+                \node[DCblue] at (6.5, 5.2) [above] {\Large Function Context};
+
+                \draw[latex-latex, line width = 1.2pt][DCred] (2.9, 0.6) -- (5.5, 0.6);
+                \node[DCred] at (4, 0.6) [above] {equivalent};
+                \node[DCred] at (4, 0.6) [below] {on IOC};
+
+                \draw[latex-latex, line width = 1.2pt][DCred] (2.9, 4.4) -- (5.5, 4.4);
+                \node[DCred] at (4, 4.4) [above] {equivalent};
+                \node[DCred] at (4, 4.4) [below] {on IOC};
+            \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      So when the operation <m>A</m> is something from either <xref ref="thm-OperationsPowerSeries" text="type-global-title"/> or <xref ref="thm-DiffPowerSeries" text="type-global-title"/>, then we can apply these operations to the Taylor series of <m>f(x)</m> in order to construct the Taylor series of <m>A(f(x))</m>. Interestingly enough, we can note that the intervals of convergence can be mostly constructed from these same transformations: there might be some changes to the inclusion of the endpoints based on differentiation and integration.
+    </p>
+    <p>
+      Now that we have a convenient way of constructing Taylor series for conveniently linked functions, we should think about how we might use these Taylor series representations of functions.
+    </p>
+  </conclusion>
 </section>
