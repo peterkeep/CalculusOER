@@ -389,5 +389,11 @@
         </latex-image>
       </image>
     </figure>
+    <p>
+      In both the discrete context and the continuous context, we care about whether the limit of the partial sum (or the limit of the definite integral) exists. Under the conditions of the Integral Test, though, we can translate our infinite series to the continuous context and represent it as a traditional improper integral. If we can get conclusions about whether the improper integral converges or not (based on the behavior of the limit of the definite integral), then we can bring that conclusion back to the discrete context and apply it to the limit of the partial sum.
+    </p>
+    <p>
+      This process works both ways! We could use information about an infinite series to learn about whether the corresponding improper integral converges or not! But for now, we are likely much more confident working with the integral in the continuous context, and so it makes most sense to think about the Integral Test using the directions pictured in <xref ref="fig-IntegralTest"/>.
+    </p>
   </conclusion>
 </section>
