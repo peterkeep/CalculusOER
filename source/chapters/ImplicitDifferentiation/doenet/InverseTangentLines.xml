@@ -11,13 +11,13 @@
   <function name="tangent" styleNumber="2">
     $$dfdx($point.x)*(x-$point.x)+$point.y
   </function>
-  <point name="pointS">(1,0)
+  <point name="pointS">(2,$$fs(2))
     <constraints>
       <constrainTo>$fS</constrainTo>
     </constraints>
   </point>
   <function name="fS">arcsec(x)</function>
-  <derivative name="dfdxS">$f</derivative>
+  <derivative name="dfdxS">$fS</derivative>
   <function name="tangentS" styleNumber="2">
     $$dfdxS($pointS.x)*(x-$pointS.x)+$pointS.y
   </function>
