@@ -10,6 +10,16 @@
       We'll try to focus on the flexible uses and applications of Taylor series as a way of allowing us the freedom to think about calculus topics in hard-to-work-with contexts, or to extend our uses of calculus ideas into new contexts.
     </p>
   </introduction>
+  <subsection xml:id="subsec-Approximations">
+    <title>Approximations</title>
+    <p>
+      Taylor series have, as a part of their structure, a built-in approximation strategy. If we want to approximate a series, we can use a partial sum! Approximations of functions using Taylor series, then, are easily approximated using the polynomials that build the partial sums.
+    </p>
+    <p>
+      We can use this as a way of approximating the functions themselves or approximating function outputs (by evaluating our Taylor series at specific <m>x</m>-values).
+    </p>
+    <xi:include href="./activities/act-ApproximatingPi.ptx" />
+  </subsection>
   <subsection xml:id="subsec-Integrals">
     <title>Integrals</title>
     <p>
@@ -19,18 +29,34 @@
       A typical example is <m>\sin(x^2)</m>. Let's look at an integral involving this function!
     </p>
     <xi:include href="./activities/act-IntegralSine.ptx" />
-  </subsection>
-  <subsection xml:id="subsec-Derivatives">
-    <title>Derivatives</title>
-    
+    <p>
+      We got lucky here, in that the alternating series was reasonable to approximate with some specified error bound (based on <xref ref="thm-ApproximatingAlternating"/>), but this isn't technically unique to alternating series! There are some other ways of building error bounds on our partial sum approximations, but we won't spend our time building them.
+    </p>
+    <project>
+      <introduction>
+        <p>
+          HEre
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Task
+          </p>
+        </statement>
+      </task>
+    </project>
   </subsection>
   <subsection xml:id="subsec-EulersFormula">
     <title>Euler's Formula</title>
-    
+    <p>
+      
+    </p>
   </subsection>
   <subsection xml:id="subsec-OtherApplications">
     <title>Other Applications</title>
-    
+    <p>
+      
+    </p>
   </subsection>
-
 </section>

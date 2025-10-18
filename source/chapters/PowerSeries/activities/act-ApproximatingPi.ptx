@@ -1,0 +1,42 @@
+<activity xml:id="act-ApproximatingPi">
+    <title>Approximating <m>\pi</m> and Other Values</title>
+    <introduction>
+        <p>
+            Let's pick a couple of values that are just based on functions with <xref ref="strat-KnownSeries" text="title"/> and approximate them.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                If we note that <m>\tan^{-1}(1)=\dfrac{\pi}{4}</m>, then we can say that <m>\pi = 4\tan^{-1}(1)</m>.
+            </p>
+            <p>
+                Find an infinite series that converges to <m>\tan^{-1}(1)</m>, and use that to construct a series that converges to <m>\pi</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                If we note that <m>\dfrac{1}{e}=e^{-1}</m>, then find an infinite series that converges to <m>\dfrac{1}{e}</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find an infinite series that converges to <m>\sin(1)</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Note that each of these three series are alternating series! We can approximate them using a partial sum, and then we can get an error bound for that partial sum by looking at the size of the next term in the infinite series (<xref ref="thm-ApproximatingAlternating" text="type-global-title"/>).
+            </p>
+            <p>
+                Approximate the value of each infinite series using a partial sum with the same number of terms. You can pick the number of terms you use. Then, compare the margin of error. Which approximations are most/least accurate? Why do you think that is?
+            </p>
+        </statement>
+    </task>
+</activity>
