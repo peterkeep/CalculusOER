@@ -1,0 +1,155 @@
+<activity xml:id="act-IntegralSine" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Integrating a Cursed Function</title>
+    <introduction>
+        <p>
+            Let's consider the definite integral:
+            <me>
+                \int_{x=0}^{x=1}\sin(x^2)\;dx
+            </me>.
+            We know this function is continuous everywhere, and so it is continuous on the interval <m>[0,1]</m>. So the <xref ref="thm-FTOC2" text="custom">Fundamental Theorem of Calculus</xref> applies. All we need to do is find an antiderivative, evaluate it at the end-points of the interval, and subtract.
+        </p>
+        <p>
+            Great! Easy!
+        </p>
+        <p>
+            Except that we can't write out the family of antiderivatives for this function.
+        </p>
+        <p>
+            So let's convert over to the Taylor series context and solve our problem there.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Create a Taylor series for the function <m>f(x)=\sin(x^2)</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Note that if we let <m>g(x)=\sin(x)</m>, then we can write our function as <m>f(x)=g(x^2)</m>. This can help serve as a blueprint for creating the Taylor series for <m>f(x)</m>.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                <md>
+                    <mrow>g(x) \amp = \sin(x)</mrow>
+                    <mrow> \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{(2k+1)!}</mrow>
+                    <mrow>f(x) \amp = g(x^2)</mrow>
+                    <mrow> \amp =  \sum_{k=0}^\infty \frac{(-1)^k (x^2)^{2k+1}}{(2k+1)!}</mrow>
+                    <mrow> \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{4k+2}}{(2k+1)!}</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the interval of convergence for this Taylor series. Specifically, we want to know if this series converges to <m>\sin(x^2)</m> on the interval <m>[0,1]</m>, since that's the interval we're integrating over.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Since the Taylor series for <m>\sin(x)</m> converges when <m>x</m> is in <m>(-\infty,\infty)</m>, then we expect that the Taylor series for <m>\sin(x^2)</m> will converge when <m>x^2</m> is in <m>(-\infty,\infty)</m>. What kinds of <m>x</m>-values will produce real numbers when we square them?
+            </p>
+        </hint>
+        <solution>
+            <p>
+                The interval of convergence is <m>(-\infty,\infty)</m>, so we should be comfortable using this series as a replacement for <m>\sin(x^2)</m> in the integral we're working on.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                If <m>f(x)=\sin(x^2)</m>, find a Taylor series representation of <m>F(x)</m>, an antiderivative of <m>f(x)=\sin(x^2)</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                We can find <m>F(x)</m> by applying the <xref ref="thm-PowerRuleAntiderivatives" text="title"/>.
+                <md>
+                    <mrow> F(x)\amp=\sum_{k=0}^\infty \frac{(-1)^k\left(\frac{x^{4k+3}}{4k+3}\right)}{(2k+1)!} </mrow>
+                    <mrow> \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{4k+3}}{(4k+3)(2k+1)!}</mrow>
+                </md>
+                Note that we don't need to worry about any constant of integration, since we are simply choosing <em>one</em> of the antiderivatives.
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Evaluate this antidervative at the endpoints and subtract:
+                <me>F(1)-F(0)</me>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Since <m>\displaystyle F(x)=\sum_{k=0}^\infty \frac{(-1)^k x^{4k+3}}{(4k+3)(2k+1)!}</m>, we're really evaluating this power series at <m>x=0</m> and <m>x=1</m>.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                First, we evaluate at <m>x=1</m>:
+                <md>
+                    <mrow>F(1) \amp= \sum_{k=0}^\infty \frac{(-1)^k (1)^{4k+3}}{(4k+3)(2k+1)!}</mrow>
+                    <mrow> \amp = \sum_{k=0}^\infty \frac{(-1)^k}{(4k+3)(2k+1)!}</mrow>
+                </md>
+                Now we evaluate at <m>x=0</m>:
+                <md>
+                    <mrow>F(0) \amp = \sum_{k=0}^\infty \frac{(-1)^k (0)^{4k+3}}{(4k+3)(2k+1)!} </mrow>
+                    <mrow> \amp = \sum_{k=0}^\infty (0)</mrow>
+                    <mrow> \amp = 0</mrow>
+                </md>
+                So we can notice that <m>F(1)-F(0)=F(1)</m>.
+                <me>
+                    \int_{x=0}^{x=1} \sin(x^2)\;dx = \sum_{k=0}^\infty \frac{(-1)^k}{(4k+3)(2k+1)!}
+                </me>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use <xref ref="thm-ApproximatingAlternating" text="type-global-title"/> to approximate the value of <m>\displaystyle\int_{x=0}^{x=1}\sin(x^2)\;dx</m> with a maximum error of <m>10^{-5}</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                We're really tasked with finding a value of <m>k</m> to make
+                <me>
+                    \left|\frac{(-1)^k}{(4k+3)(2k+1)!}\right| \lt 0.000001
+                </me>
+                or 
+                <me>
+                    \left|\frac{(-1)^k}{(4k+3)(2k+1)!}\right| \lt \frac{1}{100000}
+                </me>.
+                These terms will get small quickly, due to the factorial. It's probably easiest to just do a little guess-and-check process.
+            </p>
+        </hint>
+        <solution>
+            <p>
+                When <m>k=4</m>, we get
+                <md>
+                    <mrow>\left|\frac{(-1)^k}{(4k+3)(2k+1)!}\right| \amp =\frac{1}{(4(4)+3)(2(4)+1)!} </mrow>
+                    <mrow> \amp = \frac{1}{19(9!)}</mrow>
+                    <mrow> \amp = \frac{1}{6894720}</mrow>
+                </md>
+                Since this is smaller than our margin of error, we know that the actual value of the integral is bounded between <m>S_3</m> and <m>S_4</m>.
+            </p>
+            <p>
+                <md>
+                    <mrow>S_3 \amp = \sum_{k=0}^{3} \frac{(-1)^k}{(4k+3)(2k+1)!}</mrow>
+                    <mrow> \amp = \frac{258019}{831600}</mrow>
+                    <mrow> \amp \approx 0.31026816</mrow>
+                    <mrow>S_4 \amp = \sum_{k=0}^4 \frac{(-1)^k}{(4k+3)(2k+1)!}</mrow>
+                    <mrow> \amp = \frac{117656719}{379209600}</mrow>
+                    <mrow> \amp \approx 0.31026830</mrow>
+                </md>
+                So we know that the integral is some number in between these! We can actually round this value to six decimal places and be pretty confident in this estimation!
+                <me>
+                    \int_{x=0}^{x=1} \sin(x^2)\;dx \approx 0.310268
+                </me>
+            </p>
+        </solution>
+    </task>
+</activity>

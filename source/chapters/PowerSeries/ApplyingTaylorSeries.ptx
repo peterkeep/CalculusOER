@@ -2,7 +2,35 @@
 
 <section xml:id="sec-ApplyingTaylorSeries" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>How to Use Taylor Series</title>
-
-  <p> Text of section. </p>
+  <introduction>
+    <p>
+      In this final topic for this chapter, we'll pause for a moment to figure out what we could actually <em>use</em> these Taylor series for. This next statement is the personal opinion of the author: I do not typically care to focus on the applications of mathematical topics. In this text, you'll maybe notice that there is less of a focus on applications of derivatives and integrals into other areas and more focus on what these calculus objects actually are.
+    </p>
+    <p>
+      We'll try to focus on the flexible uses and applications of Taylor series as a way of allowing us the freedom to think about calculus topics in hard-to-work-with contexts, or to extend our uses of calculus ideas into new contexts.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-Integrals">
+    <title>Integrals</title>
+    <p>
+      We have built a whole host of antidifferentiation strategies in <xref ref="ch-AntidifferentiationTechniques"/>, but there are plenty of functions that are resistant to those specific techniques. In fact, most functions do not have what we call <term>elementary antiderivatives</term>: antiderivative functions that can be written as some combination of the basic, named function types.
+    </p>
+    <p>
+      A typical example is <m>\sin(x^2)</m>. Let's look at an integral involving this function!
+    </p>
+    <xi:include href="./activities/act-IntegralSine.ptx" />
+  </subsection>
+  <subsection xml:id="subsec-Derivatives">
+    <title>Derivatives</title>
+    
+  </subsection>
+  <subsection xml:id="subsec-EulersFormula">
+    <title>Euler's Formula</title>
+    
+  </subsection>
+  <subsection xml:id="subsec-OtherApplications">
+    <title>Other Applications</title>
+    
+  </subsection>
 
 </section>
