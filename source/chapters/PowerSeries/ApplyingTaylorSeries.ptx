@@ -32,31 +32,185 @@
     <p>
       We got lucky here, in that the alternating series was reasonable to approximate with some specified error bound (based on <xref ref="thm-ApproximatingAlternating"/>), but this isn't technically unique to alternating series! There are some other ways of building error bounds on our partial sum approximations, but we won't spend our time building them.
     </p>
-    <project>
-      <introduction>
-        <p>
-          HEre
-        </p>
-      </introduction>
-      <task>
-        <statement>
-          <p>
-            Task
-          </p>
-        </statement>
-      </task>
-    </project>
   </subsection>
   <subsection xml:id="subsec-EulersFormula">
     <title>Euler's Formula</title>
-    <p>
-      
-    </p>
+    <introduction>
+      <p>
+        Three of the Taylor series that we've looked at have been pretty similar:
+        <md>
+          <mrow>e^x \amp = \sum_{k=0}^\infty \frac{x^k}{k!}</mrow>
+          <mrow>\sin(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{(2k+1)!}</mrow>
+          <mrow>\cos(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k}}{(2k)!}</mrow>
+        </md>
+        It's probably worth stopping for a moment to remember <em>why</em> the exponential function's Taylor series has <q>all</q> of the terms, while the ones for the sine and cosine functions have only the odd and even terms (respectively), and also why the terms for the sine and cosine function alternate in sign.
+      </p>
+      <p>
+        If you want to refresh yourself on why these series have these kinds of structures, take a look back at <xref ref="sec-PolynomialApproximation"/>, where we built the partial sums of these series and conjectured about the infinite series for each.
+      </p>
+      <p>
+        Before we begin, let's remember a fact about <m>i</m>, the imaginary unit where <m>i^2=-1</m>.
+      </p>
+      <fact xml:id="fact-PowersOfi">
+        <title>Powers of <m>i</m></title>
+        <statement>
+          <p>
+            For <m>i=\sqrt{-1}</m> where <m>i^2=-1</m>, we can think about the following powers of <m>i</m>:
+          </p>
+          <sidebyside>
+            <p>
+              <md>
+                <mrow>i^0 \amp = 1 </mrow>
+                <mrow>i^1 \amp = i</mrow>
+                <mrow>i^2 \amp = -1</mrow>
+                <mrow>i^3 \amp = -i</mrow>
+              </md>
+            </p>
+            <p>
+              <md>
+                <mrow>i^4 \amp = 1 </mrow>
+                <mrow>i^5 \amp = i</mrow>
+                <mrow>i^6 \amp = -1</mrow>
+                <mrow>i^7 \amp = -i</mrow>
+              </md>
+            </p>
+            <p>
+              <md>
+                <mrow>i^8 \amp = 1 </mrow>
+                <mrow>i^9 \amp = i</mrow>
+                <mrow>i^{10} \amp = -1</mrow>
+                <mrow>i^{11} \amp = -i</mrow>
+              </md>
+            </p>
+            <p>
+              <md>
+                <mrow>i^{4k} \amp = 1 </mrow>
+                <mrow>i^{4k+1} \amp = i</mrow>
+                <mrow>i^{4k+2} \amp = -1</mrow>
+                <mrow>i^{4k+3} \amp = -i</mrow>
+              </md>
+              (where <m>k</m> is some integer)
+            </p>
+          </sidebyside>
+        </statement>
+      </fact>
+      <p>
+        This structure (flipping back and forth between two things, and changing the sign as we do it) might feel familiar! It <em>almost</em> feels like the same thing that happens with derivatives of the sine and cosine functions, right? Hmm....
+      </p>
+      <xi:include href="./activities/act-EulersFormula.ptx" />
+      <theorem xml:id="thm-EulersFormula">
+        <title>Euler's Formula</title>
+        <statement>
+          <p>
+            For <m>i</m>, the imaginary unit, 
+            <me>
+              e^{ix}=\cos(x)+i\sin(x)
+            </me>.
+          </p>
+        </statement>
+      </theorem>
+      <p>
+        This is a really powerful theorem for a couple of reasons, but we'll just touch on a few of them. The first, and maybe least important, is a really cool identity, called <term>Euler's Identity</term>. It's just <xref ref="thm-EulersFormula" text="title"/> evaluated at <m>x=\pi</m>:
+        <md>
+          <mrow>e^{i\pi} \amp = \cos(\pi) + i\sin(\pi) </mrow>
+          <mrow>e^{i\pi} \amp =-1</mrow>
+          <mrow>e^{i\pi}+1 \amp=0 </mrow>
+        </md>
+        This last statement is the one most used. It's often cited as one of the most <q>beautiful</q> or interesting equations in mathematics, since it combines 5 of the most important numbers:
+        <ul>
+          <li>
+            <p>
+              <m>e</m>, the natural exponential base, <m>e=\displaystyle\lim_{n\to\infty}\left(1+\frac{1}{n}\right)^n</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>i</m>, the imaginary unit where <m>i=\sqrt{-1}</m> and <m>i^2=-1</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\pi</m>, the constant ratio between the circumference and diameter of every circle.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>1</m>, the multiplicative identity, where <m>1(x)=x</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>0</m>, the additive identity, where <m>0+x=x</m>.
+            </p>
+          </li>
+        </ul>
+        These 5 numbers are all combined into one connected equation, even though they are seemingly not connected at all in their <q>origins</q>. It's no wonder so many people love this equation!
+      </p>
+      <aside>
+        <p>
+          As a fun scavenger hunt, see if you can find the faculty in the mathematics department at Moraine Valley Community College that has a tattoo of this identity!
+        </p>
+      </aside>
+    </introduction>
+    <subsubsection xml:id="subsec-ComplexAnalysis">
+      <title>Complex Analysis</title>
+      <p>
+        Euler's Formula is a really nice way of linking some of our well-known functions to their complex-function extensions. We have complex exponentials, and we can use this same formula to create a complex-valued logarithmic function.
+      </p>
+      <p>
+        From here, mathematicians were able to think about how the concepts of calculus could be applied to functions that took in complex-valued inputs and outputs complex-valued outputs. This area of mathematics proved to be rich in applications and also hugely interesting.
+      </p>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-TrigIdentities">
+      <title>Trigonometric Identities</title>
+      <p>
+        Trigonometric identities are used in a ton of different areas of mathematics (including in this textbook) to try to re-write some expressions into friendlier forms. One of the big struggles for mathematics students, though, is trying to remember them when needed. The author of this textbook thinks, as a matter of personal opinion, that memorizing facts and identities like this is overrated in general, but being able to construct these when necessary is more helpful.
+      </p>
+      <p>
+        A problem with many trigonometric identities is that the construction or explanation of them often relies on tricky geometry involving lots of triangles. 
+      </p>
+      <p>
+        Euler's Formula provides a really nice way of thinking of these identities, since we can construct them from the definition of the complex exponential.
+      </p>
+      <example>
+        <p>
+          Let's construct the sum of angle identites for sine and cosine. We, eventually, want to have some formula for <m>\sin(\alpha+\beta)</m> and <m>\cos(\alpha+\beta)</m>.
+        </p>
+        <p>
+          In order to do this, let's evaluate <m>e^{ix}</m> at <m>x=\alpha+\beta</m> and see what happens.
+          <me>
+            e^{i(\alpha+\beta)} = \cos(\alpha+\beta) + i\sin(\alpha+\beta)
+          </me>
+          So we can see that the <q>real</q> part of this is the sum of angles for the cosine function, and the <q>imaginary</q> part is the sum of angles for the sine function.
+        </p>
+        <p>
+          But now we can think about <m>e^{i(\alpha+\beta)}</m> by considering that a sum of exponents could really be a product of exponentials:
+          <me>
+            e^{i(\alpha+\beta)} = e^{i\alpha}e^{i\beta}
+          </me>
+          Let's look at this second version.
+          <md>
+            <mrow> e^{i\alpha}e^{i\beta} \amp = \left(\cos(\alpha)+i\sin(\alpha)\right)\left(\cos(\beta)+i\sin(\beta)\right)</mrow>
+            <mrow> \amp = \cos(\alpha)\cos(\beta) + i\sin(\alpha)\cos(\beta) + i\cos(\alpha)\sin(\beta) - \sin(\alpha)\sin(\beta)</mrow>
+            <mrow> \amp = \left(\cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)\right) + i\left(\sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)\right)</mrow>
+          </md>
+          Now we can remember that this should be equivalent to <m>\cos(\alpha+\beta) + i\sin(\alpha+\beta)</m>, from earlier:
+          <me>
+            \cos(\alpha+\beta) + i\sin(\alpha+\beta) = \left(\cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)\right) + i \left(\sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)\right)
+          </me>
+          So we can equate the real parts and the imaginary parts separately to get:
+          <md>
+            <mrow>\cos(\alpha+\beta) \amp = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)</mrow>
+            <mrow>\sin(\alpha+\beta) \amp = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)</mrow>
+          </md>
+          This strategy is super useful for creating these identities, since we can often take advantage of exponent properties to write two different equivalent expressions to connect.
+        </p>
+      </example>
+    </subsubsection>
   </subsection>
-  <subsection xml:id="subsec-OtherApplications">
-    <title>Other Applications</title>
+  <conclusion>
     <p>
-      
+      These are only a few applications of Taylor series, but hopefully they are enough to show a sufficiently wide range of applications or uses. Taylor series, whether they're used to get polynomial approximations of objects or to translate some function into a different context, are some of the most used applications of calculus, and are a wonderful way to think about connections between some of the calculus concepts that we've talked about.
     </p>
-  </subsection>
+  </conclusion>
 </section>

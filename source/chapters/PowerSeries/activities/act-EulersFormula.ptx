@@ -1,0 +1,62 @@
+<activity xml:id="act-EulersFormula">
+    <title>Constructing Euler's Formula</title>
+    <introduction>
+        <p>
+            
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Compose <m>(ix)</m> inside of the <m>e^x</m> function and it's Taylor series to come up with a Taylor series representation for <m>e^{ix}</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <me>
+                    e^{ix} = \sum_{k=0}^\infty \frac{(ix)^k}{k!}
+                </me>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Write out several terms of this new series. You should write out at least 6 of them, but more is fun, too!
+            </p>
+            <p>
+                Now, use <xref ref="fact-PowersOfi" text="type-global-title"/> to re-write these terms.
+            </p>
+        </statement>
+        <solution>
+            <p>
+               <md>
+                <mrow>e^{ix} \amp = \sum_{k=0}^\infty \frac{(ix)^k}{k!}</mrow>
+                <mrow> \amp = i + ix + \frac{i^2x^2}{2!} + \frac{i^3x^3}{3!} + \frac{i^4x^4}{4!} + \frac{i^5x^5}{5!} + \frac{i^6x^6}{6!} + \frac{i^6x^6}{6!} + \frac{i^7x^7}{7!} + ...</mrow>
+                <mrow> \amp = 1 + ix - \frac{x^2}{2!} - \frac{ix^3}{3!} + \frac{x^4}{4!} + \frac{ix^5}{5!} - \frac{x^6}{6!} - \frac{ix^7}{7!} +...</mrow>
+               </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Which terms have are real coefficients? Which terms have imaginary coefficients? If you group these together, do you recognize these terms?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Write <m>e^{ix}</m> in terms of sines and cosines.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <me>
+                    e^{ix} = \cos(x)+i\sin(x)
+                </me>
+            </p>
+        </solution>
+    </task>
+</activity>
