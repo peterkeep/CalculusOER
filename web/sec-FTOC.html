@@ -101,14 +101,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.13';
+eBookConfig.runestone_version = '7.9.15';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.9f7f6b353cd8c357.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.629fdbd852876870.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.65bdf16e03e918ea.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.29d986501a531379.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
@@ -639,7 +639,20 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#subsec-ConnectionsToOther" class="internal"><span class="title">Connections To Other Taylor Series</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html" class="internal"><span class="codenumber">9.4</span> <span class="title">How to Use Taylor Series</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html" class="internal"><span class="codenumber">9.4</span> <span class="title">How to Use Taylor Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-Approximations" class="internal"><span class="title">Approximations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-Integrals" class="internal"><span class="title">Integrals</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-EulersFormula" class="internal"><span class="title">Euler’s Formula</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-ComplexAnalysis" class="internal"><span class="title">Complex Analysis</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsubsec-TrigIdentities" class="internal"><span class="title">Trigonometric Identities</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter">
@@ -656,7 +669,7 @@ eBookConfig.enable_chatcodes =  false;
 <section class="introduction" id="sec-FTOC-2"><div class="para" id="sec-FTOC-2-1">Let’s remind ourselves of how we interpret derivatives. We are going to repeat a task that we did in <a href="sec-IncreasingDecreasing.html#act-FDTGraphically" class="xref" data-knowl="./knowl/xref/act-FDTGraphically.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 4.2.3: First Derivative Test Graphically">Activity 4.2.3 First Derivative Test Graphically</a>. It should feel familiar, which is good! We’re going to use the intuition to make the big connection we’ve been forecasting so far.<div class="autopermalink" data-description="Paragraph"><a href="#sec-FTOC-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-InterpretDerivative"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Interpreting the Graph of a Derivarive.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Interpreting the Graph of a Derivative.</span>
 </h3>
 <div class="introduction" id="act-InterpretDerivative-2">
 <div class="para" id="act-InterpretDerivative-2-1">Let’s look at a picture of a graph of the first derivative, <span class="process-math">\(f'(x)\text{,}\)</span> and try to get some information about <span class="process-math">\(f(x)\)</span> from it. Use the following graph of <span class="process-math">\(f'(x)\text{,}\)</span> the first derivative, to answer the questions about <span class="process-math">\(f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-InterpretDerivative-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -676,7 +689,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Task 5.4.1.c"><a href="#act-InterpretDerivative-5" title="Copy heading and permalink for Task 5.4.1.c" aria-label="Copy heading and permalink for Task 5.4.1.c">🔗</a></div></article><article class="task exercise-like" id="act-InterpretDerivative-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="act-InterpretDerivative-6-1-1">Find the <span class="process-math">\(x\)</span>-values of any inflection points of <span class="process-math">\(f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-InterpretDerivative-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 5.4.1.d"><a href="#act-InterpretDerivative-6" title="Copy heading and permalink for Task 5.4.1.d" aria-label="Copy heading and permalink for Task 5.4.1.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 5.4.1: Interpreting the Graph of a Derivarive"><a href="#act-InterpretDerivative" title="Copy heading and permalink for Activity 5.4.1: Interpreting the Graph of a Derivarive" aria-label="Copy heading and permalink for Activity 5.4.1: Interpreting the Graph of a Derivarive">🔗</a></div></article></section><section class="subsection" id="subsec-AreasAndAntierivatives"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Task 5.4.1.d"><a href="#act-InterpretDerivative-6" title="Copy heading and permalink for Task 5.4.1.d" aria-label="Copy heading and permalink for Task 5.4.1.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 5.4.1: Interpreting the Graph of a Derivative"><a href="#act-InterpretDerivative" title="Copy heading and permalink for Activity 5.4.1: Interpreting the Graph of a Derivative" aria-label="Copy heading and permalink for Activity 5.4.1: Interpreting the Graph of a Derivative">🔗</a></div></article></section><section class="subsection" id="subsec-AreasAndAntierivatives"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Areas and Antiderivatives</span>
 </h3>
 <article class="activity project-like" id="act-FTOC1"><h4 class="heading">
@@ -712,7 +725,7 @@ A(x)=\int_{t=0}^{t=x} g(t)\;dt\text{.}
 <div class="para" id="act-FTOC1-6-1-1">Find the <span class="process-math">\(x\)</span>-values of any inflection points of <span class="process-math">\(A(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-FTOC1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Task 5.4.2.d"><a href="#act-FTOC1-6" title="Copy heading and permalink for Task 5.4.2.d" aria-label="Copy heading and permalink for Task 5.4.2.d">🔗</a></div></article><article class="task exercise-like" id="act-FTOC1-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="act-FTOC1-7-1-1">Compare your answers here to your answers about the behavior of <span class="process-math">\(f(x)\)</span> based on the (same) graph of <span class="process-math">\(f'(x)\)</span> in <a href="sec-FTOC.html#act-InterpretDerivative" class="xref" data-knowl="./knowl/xref/act-InterpretDerivative.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.4.1: Interpreting the Graph of a Derivarive">Activity 5.4.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#act-FTOC1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-FTOC1-7-1-1">Compare your answers here to your answers about the behavior of <span class="process-math">\(f(x)\)</span> based on the (same) graph of <span class="process-math">\(f'(x)\)</span> in <a href="sec-FTOC.html#act-InterpretDerivative" class="xref" data-knowl="./knowl/xref/act-InterpretDerivative.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.4.1: Interpreting the Graph of a Derivative">Activity 5.4.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#act-FTOC1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="act-FTOC1-7-1-2">What does this mean about the connection between areas and derivatives, or areas and antiderivatives?<div class="autopermalink" data-description="Paragraph"><a href="#act-FTOC1-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Task 5.4.2.e"><a href="#act-FTOC1-7" title="Copy heading and permalink for Task 5.4.2.e" aria-label="Copy heading and permalink for Task 5.4.2.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 5.4.2: Interpreting Area"><a href="#act-FTOC1" title="Copy heading and permalink for Activity 5.4.2: Interpreting Area" aria-label="Copy heading and permalink for Activity 5.4.2: Interpreting Area">🔗</a></div></article><div class="para" id="subsec-AreasAndAntierivatives-3">There it is! The way that we can interpret antiderivatives of functions! We found that the derivative of the function that tells us the signed area trapped between a curve and the <span class="process-math">\(x\)</span>-axis between a fixed starting point and a variable ending point is the curve itself.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreasAndAntierivatives-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>

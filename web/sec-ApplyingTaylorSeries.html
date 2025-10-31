@@ -101,14 +101,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.13';
+eBookConfig.runestone_version = '7.9.15';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.9f7f6b353cd8c357.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.629fdbd852876870.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.65bdf16e03e918ea.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.29d986501a531379.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
@@ -639,7 +639,20 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#subsec-ConnectionsToOther" class="internal"><span class="title">Connections To Other Taylor Series</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html" class="internal"><span class="codenumber">9.4</span> <span class="title">How to Use Taylor Series</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html" class="internal"><span class="codenumber">9.4</span> <span class="title">How to Use Taylor Series</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-Approximations" class="internal"><span class="title">Approximations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-Integrals" class="internal"><span class="title">Integrals</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-EulersFormula" class="internal"><span class="title">Euler’s Formula</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-ComplexAnalysis" class="internal"><span class="title">Complex Analysis</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsubsec-TrigIdentities" class="internal"><span class="title">Trigonometric Identities</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter">
@@ -653,9 +666,471 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-ApplyingTaylorSeries"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">9.4</span><span class="space"> </span><span class="title">How to Use Taylor Series</span>
 </h2>
-<div class="para" id="sec-ApplyingTaylorSeries-2">Text of section.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ApplyingTaylorSeries-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-ApplyingTaylorSeries-2"><div class="para" id="sec-ApplyingTaylorSeries-2-1">In this final topic for this chapter, we’ll pause for a moment to figure out what we could actually <em class="emphasis">use</em> these Taylor series for. This next statement is the personal opinion of the author: I do not typically care to focus on the applications of mathematical topics. In this text, you’ll maybe notice that there is less of a focus on applications of derivatives and integrals into other areas and more focus on what these calculus objects actually are.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ApplyingTaylorSeries-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Section 9.4: How to Use Taylor Series"><a href="#sec-ApplyingTaylorSeries" title="Copy heading and permalink for Section 9.4: How to Use Taylor Series" aria-label="Copy heading and permalink for Section 9.4: How to Use Taylor Series">🔗</a></div></section></div>
+<div class="para" id="sec-ApplyingTaylorSeries-2-2">We’ll try to focus on the flexible uses and applications of Taylor series as a way of allowing us the freedom to think about calculus topics in hard-to-work-with contexts, or to extend our uses of calculus ideas into new contexts.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ApplyingTaylorSeries-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-Approximations"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Approximations</span>
+</h3>
+<div class="para" id="subsec-Approximations-2">Taylor series have, as a part of their structure, a built-in approximation strategy. If we want to approximate a series, we can use a partial sum! Approximations of functions using Taylor series, then, are easily approximated using the polynomials that build the partial sums.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Approximations-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Approximations-3">We can use this as a way of approximating the functions themselves or approximating function outputs (by evaluating our Taylor series at specific <span class="process-math">\(x\)</span>-values).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Approximations-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-ApproximatingPi"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Approximating <span class="process-math">\(\pi\)</span> and Other Values.</span>
+</h4>
+<div class="introduction" id="act-ApproximatingPi-2"><div class="para" id="act-ApproximatingPi-2-1">Let’s pick a couple of values that are just based on functions with <a href="sec-BuildingTaylorSeries.html#strat-KnownSeries" class="xref" data-knowl="./knowl/xref/strat-KnownSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Known Taylor Series">Known Taylor Series</a> and approximate them.<div class="autopermalink" data-description="Paragraph"><a href="#act-ApproximatingPi-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="act-ApproximatingPi-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-ApproximatingPi-3-1-1">If we note that <span class="process-math">\(\tan^{-1}(1)=\dfrac{\pi}{4}\text{,}\)</span> then we can say that <span class="process-math">\(\pi = 4\tan^{-1}(1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-ApproximatingPi-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="act-ApproximatingPi-3-1-2">Find an infinite series that converges to <span class="process-math">\(\tan^{-1}(1)\text{,}\)</span> and use that to construct a series that converges to <span class="process-math">\(\pi\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-ApproximatingPi-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.4.1.a"><a href="#act-ApproximatingPi-3" title="Copy heading and permalink for Task 9.4.1.a" aria-label="Copy heading and permalink for Task 9.4.1.a">🔗</a></div></article><article class="task exercise-like" id="act-ApproximatingPi-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-ApproximatingPi-4-1-1">If we note that <span class="process-math">\(\dfrac{1}{e}=e^{-1}\text{,}\)</span> then find an infinite series that converges to <span class="process-math">\(\dfrac{1}{e}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-ApproximatingPi-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.4.1.b"><a href="#act-ApproximatingPi-4" title="Copy heading and permalink for Task 9.4.1.b" aria-label="Copy heading and permalink for Task 9.4.1.b">🔗</a></div></article><article class="task exercise-like" id="act-ApproximatingPi-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-ApproximatingPi-5-1-1">Find an infinite series that converges to <span class="process-math">\(\sin(1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-ApproximatingPi-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.4.1.c"><a href="#act-ApproximatingPi-5" title="Copy heading and permalink for Task 9.4.1.c" aria-label="Copy heading and permalink for Task 9.4.1.c">🔗</a></div></article><article class="task exercise-like" id="act-ApproximatingPi-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-ApproximatingPi-6-1-1">Note that each of these three series are alternating series! We can approximate them using a partial sum, and then we can get an error bound for that partial sum by looking at the size of the next term in the infinite series (<a href="sec-AlternatingSeries.html#thm-ApproximatingAlternating" class="xref" data-knowl="./knowl/xref/thm-ApproximatingAlternating.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.5.5: Approximations of Alternating Series">Theorem 8.5.5 Approximations of Alternating Series</a>).<div class="autopermalink" data-description="Paragraph"><a href="#act-ApproximatingPi-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="act-ApproximatingPi-6-1-2">Approximate the value of each infinite series using a partial sum with the same number of terms. You can pick the number of terms you use. Then, compare the margin of error. Which approximations are most/least accurate? Why do you think that is?<div class="autopermalink" data-description="Paragraph"><a href="#act-ApproximatingPi-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.4.1.d"><a href="#act-ApproximatingPi-6" title="Copy heading and permalink for Task 9.4.1.d" aria-label="Copy heading and permalink for Task 9.4.1.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.4.1: Approximating \pi and Other Values"><a href="#act-ApproximatingPi" title="Copy heading and permalink for Activity 9.4.1: Approximating \pi and Other Values" aria-label="Copy heading and permalink for Activity 9.4.1: Approximating \pi and Other Values">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Approximations"><a href="#subsec-Approximations" title="Copy heading and permalink for Subsection: Approximations" aria-label="Copy heading and permalink for Subsection: Approximations">🔗</a></div></section><section class="subsection" id="subsec-Integrals"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Integrals</span>
+</h3>
+<div class="para" id="subsec-Integrals-2">We have built a whole host of antidifferentiation strategies in <a href="ch-AntidifferentiationTechniques.html" class="internal" title="Chapter 7: Techniques for Antidifferentiation">Chapter 7</a>, but there are plenty of functions that are resistant to those specific techniques. In fact, most functions do not have what we call <dfn class="terminology">elementary antiderivatives</dfn>: antiderivative functions that can be written as some combination of the basic, named function types.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Integrals-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Integrals-3">A typical example is <span class="process-math">\(\sin(x^2)\text{.}\)</span> Let’s look at an integral involving this function!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Integrals-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-IntegralSine"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Integrating using Taylor Series.</span>
+</h4>
+<div class="introduction" id="act-IntegralSine-2">
+<div class="para logical" id="act-IntegralSine-2-1">
+<div class="para">Let’s consider the definite integral:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-FTOC2.html">
+\begin{equation*}
+\int_{x=0}^{x=1}\sin(x^2)\;dx\text{.}
+\end{equation*}
+</div>
+<div class="para">We know this function is continuous everywhere, and so it is continuous on the interval <span class="process-math">\([0,1]\text{.}\)</span> So the <a href="sec-FTOC.html#thm-FTOC2" class="xref" data-knowl="./knowl/xref/thm-FTOC2.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.4.4: Fundamental Theorem of Calculus (Part 2)">Fundamental Theorem of Calculus</a> applies. All we need to do is find an antiderivative, evaluate it at the end-points of the interval, and subtract.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="act-IntegralSine-2-2">Great! Easy!<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="act-IntegralSine-2-3">Except that we can’t write out the family of antiderivatives for this function.<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="act-IntegralSine-2-4">So let’s convert over to the Taylor series context and solve our problem there.<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="act-IntegralSine-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-IntegralSine-3-1-1">Create a Taylor series for the function <span class="process-math">\(f(x)=\sin(x^2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="act-IntegralSine-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-IntegralSine-3-2-1">Note that if we let <span class="process-math">\(g(x)=\sin(x)\text{,}\)</span> then we can write our function as <span class="process-math">\(f(x)=g(x^2)\text{.}\)</span> This can help serve as a blueprint for creating the Taylor series for <span class="process-math">\(f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 9.4.2.a.1"><a href="#act-IntegralSine-3-2" title="Copy heading and permalink for Hint 9.4.2.a.1" aria-label="Copy heading and permalink for Hint 9.4.2.a.1">🔗</a></div>
+</div></details><details id="act-IntegralSine-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-IntegralSine-3-3-1">
+<div class="displaymath process-math" id="act-IntegralSine-3-3-1-1">
+\begin{align*}
+g(x) \amp = \sin(x)\\
+\amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{(2k+1)!}\\
+f(x) \amp = g(x^2)\\
+\amp =  \sum_{k=0}^\infty \frac{(-1)^k (x^2)^{2k+1}}{(2k+1)!}\\
+\amp = \sum_{k=0}^\infty \frac{(-1)^k x^{4k+2}}{(2k+1)!}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.2.a.1"><a href="#act-IntegralSine-3-3" title="Copy heading and permalink for Solution 9.4.2.a.1" aria-label="Copy heading and permalink for Solution 9.4.2.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 9.4.2.a"><a href="#act-IntegralSine-3" title="Copy heading and permalink for Task 9.4.2.a" aria-label="Copy heading and permalink for Task 9.4.2.a">🔗</a></div></article><article class="task exercise-like" id="act-IntegralSine-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-IntegralSine-4-1-1">Find the interval of convergence for this Taylor series. Specifically, we want to know if this series converges to <span class="process-math">\(\sin(x^2)\)</span> on the interval <span class="process-math">\([0,1]\text{,}\)</span> since that’s the interval we’re integrating over.<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="act-IntegralSine-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-IntegralSine-4-2-1">Since the Taylor series for <span class="process-math">\(\sin(x)\)</span> converges when <span class="process-math">\(x\)</span> is in <span class="process-math">\((-\infty,\infty)\text{,}\)</span> then we expect that the Taylor series for <span class="process-math">\(\sin(x^2)\)</span> will converge when <span class="process-math">\(x^2\)</span> is in <span class="process-math">\((-\infty,\infty)\text{.}\)</span> What kinds of <span class="process-math">\(x\)</span>-values will produce real numbers when we square them?<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 9.4.2.b.1"><a href="#act-IntegralSine-4-2" title="Copy heading and permalink for Hint 9.4.2.b.1" aria-label="Copy heading and permalink for Hint 9.4.2.b.1">🔗</a></div>
+</div></details><details id="act-IntegralSine-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="act-IntegralSine-4-3-1">The interval of convergence is <span class="process-math">\((-\infty,\infty)\text{,}\)</span> so we should be comfortable using this series as a replacement for <span class="process-math">\(\sin(x^2)\)</span> in the integral we’re working on.<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.2.b.1"><a href="#act-IntegralSine-4-3" title="Copy heading and permalink for Solution 9.4.2.b.1" aria-label="Copy heading and permalink for Solution 9.4.2.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 9.4.2.b"><a href="#act-IntegralSine-4" title="Copy heading and permalink for Task 9.4.2.b" aria-label="Copy heading and permalink for Task 9.4.2.b">🔗</a></div></article><article class="task exercise-like" id="act-IntegralSine-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-IntegralSine-5-1-1">If <span class="process-math">\(f(x)=\sin(x^2)\text{,}\)</span> find a Taylor series representation of <span class="process-math">\(F(x)\text{,}\)</span> an antiderivative of <span class="process-math">\(f(x)=\sin(x^2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-IntegralSine-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-IntegralSine-5-2-1">
+<div class="para">We can find <span class="process-math">\(F(x)\)</span> by applying the <a href="sec-IndefiniteIntegrals.html#thm-PowerRuleAntiderivatives" class="xref" data-knowl="./knowl/xref/thm-PowerRuleAntiderivatives.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.1.6: Power Rule for Antiderivatives">Power Rule for Antiderivatives</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-PowerRuleAntiderivatives.html" id="act-IntegralSine-5-2-1-3">
+\begin{align*}
+F(x)\amp=\sum_{k=0}^\infty \frac{(-1)^k\left(\frac{x^{4k+3}}{4k+3}\right)}{(2k+1)!} \\
+\amp = \sum_{k=0}^\infty \frac{(-1)^k x^{4k+3}}{(4k+3)(2k+1)!}
+\end{align*}
+</div>
+<div class="para">Note that we don’t need to worry about any constant of integration, since we are simply choosing <em class="emphasis">one</em> of the antiderivatives.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.2.c.1"><a href="#act-IntegralSine-5-2" title="Copy heading and permalink for Solution 9.4.2.c.1" aria-label="Copy heading and permalink for Solution 9.4.2.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 9.4.2.c"><a href="#act-IntegralSine-5" title="Copy heading and permalink for Task 9.4.2.c" aria-label="Copy heading and permalink for Task 9.4.2.c">🔗</a></div></article><article class="task exercise-like" id="act-IntegralSine-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para logical" id="act-IntegralSine-6-1-1">
+<div class="para">Evaluate this antidervative at the endpoints and subtract:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+F(1)-F(0)\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="act-IntegralSine-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-IntegralSine-6-2-1">Since <span class="process-math">\(\displaystyle F(x)=\sum_{k=0}^\infty \frac{(-1)^k x^{4k+3}}{(4k+3)(2k+1)!}\text{,}\)</span> we’re really evaluating this power series at <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 9.4.2.d.1"><a href="#act-IntegralSine-6-2" title="Copy heading and permalink for Hint 9.4.2.d.1" aria-label="Copy heading and permalink for Hint 9.4.2.d.1">🔗</a></div>
+</div></details><details id="act-IntegralSine-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-IntegralSine-6-3-1">
+<div class="para">First, we evaluate at <span class="process-math">\(x=1\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="act-IntegralSine-6-3-1-2">
+\begin{align*}
+F(1) \amp= \sum_{k=0}^\infty \frac{(-1)^k (1)^{4k+3}}{(4k+3)(2k+1)!}\\
+\amp = \sum_{k=0}^\infty \frac{(-1)^k}{(4k+3)(2k+1)!}
+\end{align*}
+</div>
+<div class="para">Now we evaluate at <span class="process-math">\(x=0\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="act-IntegralSine-6-3-1-4">
+\begin{align*}
+F(0) \amp = \sum_{k=0}^\infty \frac{(-1)^k (0)^{4k+3}}{(4k+3)(2k+1)!} \\
+\amp = \sum_{k=0}^\infty (0)\\
+\amp = 0
+\end{align*}
+</div>
+<div class="para">So we can notice that <span class="process-math">\(F(1)-F(0)=F(1)\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^{x=1} \sin(x^2)\;dx = \sum_{k=0}^\infty \frac{(-1)^k}{(4k+3)(2k+1)!}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.2.d.1"><a href="#act-IntegralSine-6-3" title="Copy heading and permalink for Solution 9.4.2.d.1" aria-label="Copy heading and permalink for Solution 9.4.2.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 9.4.2.d"><a href="#act-IntegralSine-6" title="Copy heading and permalink for Task 9.4.2.d" aria-label="Copy heading and permalink for Task 9.4.2.d">🔗</a></div></article><article class="task exercise-like" id="act-IntegralSine-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-IntegralSine-7-1-1">Use <a href="sec-AlternatingSeries.html#thm-ApproximatingAlternating" class="xref" data-knowl="./knowl/xref/thm-ApproximatingAlternating.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.5.5: Approximations of Alternating Series">Theorem 8.5.5 Approximations of Alternating Series</a> to approximate the value of <span class="process-math">\(\displaystyle\int_{x=0}^{x=1}\sin(x^2)\;dx\)</span> with a maximum error of <span class="process-math">\(10^{-5}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="act-IntegralSine-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para logical" id="act-IntegralSine-7-2-1">
+<div class="para">We’re really tasked with finding a value of <span class="process-math">\(k\)</span> to make</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left|\frac{(-1)^k}{(4k+3)(2k+1)!}\right| \lt 0.000001
+\end{equation*}
+</div>
+<div class="para">or</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left|\frac{(-1)^k}{(4k+3)(2k+1)!}\right| \lt \frac{1}{100000}\text{.}
+\end{equation*}
+</div>
+<div class="para">These terms will get small quickly, due to the factorial. It’s probably easiest to just do a little guess-and-check process.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 9.4.2.e.1"><a href="#act-IntegralSine-7-2" title="Copy heading and permalink for Hint 9.4.2.e.1" aria-label="Copy heading and permalink for Hint 9.4.2.e.1">🔗</a></div>
+</div></details><details id="act-IntegralSine-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-IntegralSine-7-3-1">
+<div class="para">When <span class="process-math">\(k=4\text{,}\)</span> we get</div>
+<div class="displaymath process-math" id="act-IntegralSine-7-3-1-2">
+\begin{align*}
+\left|\frac{(-1)^k}{(4k+3)(2k+1)!}\right| \amp =\frac{1}{(4(4)+3)(2(4)+1)!} \\
+\amp = \frac{1}{19(9!)}\\
+\amp = \frac{1}{6894720}
+\end{align*}
+</div>
+<div class="para">Since this is smaller than our margin of error, we know that the actual value of the integral is bounded between <span class="process-math">\(S_3\)</span> and <span class="process-math">\(S_4\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="act-IntegralSine-7-3-2">
+<div class="displaymath process-math" id="act-IntegralSine-7-3-2-1">
+\begin{align*}
+S_3 \amp = \sum_{k=0}^{3} \frac{(-1)^k}{(4k+3)(2k+1)!}\\
+\amp = \frac{258019}{831600}\\
+\amp \approx 0.31026816\\
+S_4 \amp = \sum_{k=0}^4 \frac{(-1)^k}{(4k+3)(2k+1)!}\\
+\amp = \frac{117656719}{379209600}\\
+\amp \approx 0.31026830
+\end{align*}
+</div>
+<div class="para">So we know that the integral is some number in between these! We can actually round this value to six decimal places and be pretty confident in this estimation!</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=0}^{x=1} \sin(x^2)\;dx \approx 0.310268
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-IntegralSine-7-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.2.e.1"><a href="#act-IntegralSine-7-3" title="Copy heading and permalink for Solution 9.4.2.e.1" aria-label="Copy heading and permalink for Solution 9.4.2.e.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 9.4.2.e"><a href="#act-IntegralSine-7" title="Copy heading and permalink for Task 9.4.2.e" aria-label="Copy heading and permalink for Task 9.4.2.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.4.2: Integrating using Taylor Series"><a href="#act-IntegralSine" title="Copy heading and permalink for Activity 9.4.2: Integrating using Taylor Series" aria-label="Copy heading and permalink for Activity 9.4.2: Integrating using Taylor Series">🔗</a></div></article><div class="para" id="subsec-Integrals-5">We got lucky here, in that the alternating series was reasonable to approximate with some specified error bound (based on <a href="sec-AlternatingSeries.html#thm-ApproximatingAlternating" class="xref" data-knowl="./knowl/xref/thm-ApproximatingAlternating.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.5.5: Approximations of Alternating Series">Theorem 8.5.5</a>), but this isn’t technically unique to alternating series! There are some other ways of building error bounds on our partial sum approximations, but we won’t spend our time building them.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Integrals-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Integrals"><a href="#subsec-Integrals" title="Copy heading and permalink for Subsection: Integrals" aria-label="Copy heading and permalink for Subsection: Integrals">🔗</a></div></section><section class="subsection" id="subsec-EulersFormula"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Euler’s Formula</span>
+</h3>
+<section class="introduction" id="subsec-EulersFormula-2"><div class="para logical" id="subsec-EulersFormula-2-1">
+<div class="para">Three of the Taylor series that we’ve looked at have been pretty similar:</div>
+<div class="displaymath process-math" id="subsec-EulersFormula-2-1-1">
+\begin{align*}
+e^x \amp = \sum_{k=0}^\infty \frac{x^k}{k!}\\
+\sin(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k+1}}{(2k+1)!}\\
+\cos(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k}}{(2k)!}
+\end{align*}
+</div>
+<div class="para">It’s probably worth stopping for a moment to remember <em class="emphasis">why</em> the exponential function’s Taylor series has “all” of the terms, while the ones for the sine and cosine functions have only the odd and even terms (respectively), and also why the terms for the sine and cosine function alternate in sign.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EulersFormula-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-EulersFormula-2-2">If you want to refresh yourself on why these series have these kinds of structures, take a look back at <a href="sec-PolynomialApproximation.html" class="internal" title="Section 9.1: Polynomial Approximations of Functions">Section 9.1</a>, where we built the partial sums of these series and conjectured about the infinite series for each.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EulersFormula-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-EulersFormula-2-3">Before we begin, let’s remember a fact about <span class="process-math">\(i\text{,}\)</span> the imaginary unit where <span class="process-math">\(i^2=-1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EulersFormula-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="fact theorem-like" id="fact-PowersOfi"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">9.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Powers of <span class="process-math">\(i\)</span>.</span>
+</h4>
+<div class="para" id="fact-PowersOfi-2-1">For <span class="process-math">\(i=\sqrt{-1}\)</span> where <span class="process-math">\(i^2=-1\text{,}\)</span> we can think about the following powers of <span class="process-math">\(i\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#fact-PowersOfi-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:25%;"><div class="para logical" id="fact-PowersOfi-2-2-1">
+<div class="displaymath process-math" id="fact-PowersOfi-2-2-1-1">
+\begin{align*}
+i^0 \amp = 1 \\
+i^1 \amp = i\\
+i^2 \amp = -1\\
+i^3 \amp = -i
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#fact-PowersOfi-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel top" style="width:25%;"><div class="para logical" id="fact-PowersOfi-2-2-2">
+<div class="displaymath process-math" id="fact-PowersOfi-2-2-2-1">
+\begin{align*}
+i^4 \amp = 1 \\
+i^5 \amp = i\\
+i^6 \amp = -1\\
+i^7 \amp = -i
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#fact-PowersOfi-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel top" style="width:25%;"><div class="para logical" id="fact-PowersOfi-2-2-3">
+<div class="displaymath process-math" id="fact-PowersOfi-2-2-3-1">
+\begin{align*}
+i^8 \amp = 1 \\
+i^9 \amp = i\\
+i^{10} \amp = -1\\
+i^{11} \amp = -i
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#fact-PowersOfi-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel top" style="width:25%;"><div class="para logical" id="fact-PowersOfi-2-2-4">
+<div class="displaymath process-math" id="fact-PowersOfi-2-2-4-1">
+\begin{align*}
+i^{4k} \amp = 1 \\
+i^{4k+1} \amp = i\\
+i^{4k+2} \amp = -1\\
+i^{4k+3} \amp = -i
+\end{align*}
+</div>
+<div class="para">(where <span class="process-math">\(k\)</span> is some integer)</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#fact-PowersOfi-2-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="autopermalink" data-description="Fact 9.4.1: Powers of i"><a href="#fact-PowersOfi" title="Copy heading and permalink for Fact 9.4.1: Powers of i" aria-label="Copy heading and permalink for Fact 9.4.1: Powers of i">🔗</a></div></article><div class="para" id="subsec-EulersFormula-2-5">This structure (flipping back and forth between two things, and changing the sign as we do it) might feel familiar! It <em class="emphasis">almost</em> feels like the same thing that happens with derivatives of the sine and cosine functions, right? Hmm....<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EulersFormula-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-EulersFormula"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Constructing Euler’s Formula.</span>
+</h4>
+<div class="introduction" id="act-EulersFormula-2"><div class="para" id="act-EulersFormula-2-1"><div class="autopermalink" data-description="Paragraph"><a href="#act-EulersFormula-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></div>
+<article class="task exercise-like" id="act-EulersFormula-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-EulersFormula-3-1-1">Compose <span class="process-math">\((ix)\)</span> inside of the <span class="process-math">\(e^x\)</span> function and it’s Taylor series to come up with a Taylor series representation for <span class="process-math">\(e^{ix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-EulersFormula-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-EulersFormula-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-EulersFormula-3-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+e^{ix} = \sum_{k=0}^\infty \frac{(ix)^k}{k!}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-EulersFormula-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.3.a.1"><a href="#act-EulersFormula-3-2" title="Copy heading and permalink for Solution 9.4.3.a.1" aria-label="Copy heading and permalink for Solution 9.4.3.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 9.4.3.a"><a href="#act-EulersFormula-3" title="Copy heading and permalink for Task 9.4.3.a" aria-label="Copy heading and permalink for Task 9.4.3.a">🔗</a></div></article><article class="task exercise-like" id="act-EulersFormula-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-EulersFormula-4-1-1">Write out several terms of this new series. You should write out at least 6 of them, but more is fun, too!<div class="autopermalink" data-description="Paragraph"><a href="#act-EulersFormula-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="act-EulersFormula-4-1-2">Now, use <a href="sec-ApplyingTaylorSeries.html#fact-PowersOfi" class="xref" data-knowl="./knowl/xref/fact-PowersOfi.html" data-reveal-label="Reveal" data-close-label="Close" title="Fact 9.4.1: Powers of i">Fact 9.4.1 Powers of <span class="process-math">\(i\)</span></a> to re-write these terms.<div class="autopermalink" data-description="Paragraph"><a href="#act-EulersFormula-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-EulersFormula-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-EulersFormula-4-2-1">
+<div class="displaymath process-math" id="act-EulersFormula-4-2-1-1">
+\begin{align*}
+e^{ix} \amp = \sum_{k=0}^\infty \frac{(ix)^k}{k!}\\
+\amp = i + ix + \frac{i^2x^2}{2!} + \frac{i^3x^3}{3!} + \frac{i^4x^4}{4!} + \frac{i^5x^5}{5!} + \frac{i^6x^6}{6!} + \frac{i^6x^6}{6!} + \frac{i^7x^7}{7!} + ...\\
+\amp = 1 + ix - \frac{x^2}{2!} - \frac{ix^3}{3!} + \frac{x^4}{4!} + \frac{ix^5}{5!} - \frac{x^6}{6!} - \frac{ix^7}{7!} +...
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-EulersFormula-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.3.b.1"><a href="#act-EulersFormula-4-2" title="Copy heading and permalink for Solution 9.4.3.b.1" aria-label="Copy heading and permalink for Solution 9.4.3.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 9.4.3.b"><a href="#act-EulersFormula-4" title="Copy heading and permalink for Task 9.4.3.b" aria-label="Copy heading and permalink for Task 9.4.3.b">🔗</a></div></article><article class="task exercise-like" id="act-EulersFormula-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-EulersFormula-5-1-1">Which terms have are real coefficients? Which terms have imaginary coefficients? If you group these together, do you recognize these terms?<div class="autopermalink" data-description="Paragraph"><a href="#act-EulersFormula-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 9.4.3.c"><a href="#act-EulersFormula-5" title="Copy heading and permalink for Task 9.4.3.c" aria-label="Copy heading and permalink for Task 9.4.3.c">🔗</a></div></article><article class="task exercise-like" id="act-EulersFormula-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-EulersFormula-6-1-1">Write <span class="process-math">\(e^{ix}\)</span> in terms of sines and cosines.<div class="autopermalink" data-description="Paragraph"><a href="#act-EulersFormula-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-EulersFormula-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="act-EulersFormula-6-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+e^{ix} = \cos(x)+i\sin(x)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-EulersFormula-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.4.3.d.1"><a href="#act-EulersFormula-6-2" title="Copy heading and permalink for Solution 9.4.3.d.1" aria-label="Copy heading and permalink for Solution 9.4.3.d.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 9.4.3.d"><a href="#act-EulersFormula-6" title="Copy heading and permalink for Task 9.4.3.d" aria-label="Copy heading and permalink for Task 9.4.3.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 9.4.3: Constructing Euler’s Formula"><a href="#act-EulersFormula" title="Copy heading and permalink for Activity 9.4.3: Constructing Euler’s Formula" aria-label="Copy heading and permalink for Activity 9.4.3: Constructing Euler’s Formula">🔗</a></div></article><article class="theorem theorem-like" id="thm-EulersFormula"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Euler’s Formula.</span>
+</h4>
+<div class="para logical" id="thm-EulersFormula-2-1">
+<div class="para">For <span class="process-math">\(i\text{,}\)</span> the imaginary unit,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{ix}=\cos(x)+i\sin(x)\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-EulersFormula-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.4.2: Euler’s Formula"><a href="#thm-EulersFormula" title="Copy heading and permalink for Theorem 9.4.2: Euler’s Formula" aria-label="Copy heading and permalink for Theorem 9.4.2: Euler’s Formula">🔗</a></div></article><div class="para logical" id="subsec-EulersFormula-2-8">
+<div class="para">This is a really powerful theorem for a couple of reasons, but we’ll just touch on a few of them. The first, and maybe least important, is a really cool identity, called <dfn class="terminology">Euler’s Identity</dfn>. It’s just <a href="sec-ApplyingTaylorSeries.html#thm-EulersFormula" class="xref" data-knowl="./knowl/xref/thm-EulersFormula.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.4.2: Euler’s Formula">Euler’s Formula</a> evaluated at <span class="process-math">\(x=\pi\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-EulersFormula.html" id="subsec-EulersFormula-2-8-4">
+\begin{align*}
+e^{i\pi} \amp = \cos(\pi) + i\sin(\pi) \\
+e^{i\pi} \amp =-1\\
+e^{i\pi}+1 \amp=0 
+\end{align*}
+</div>
+<div class="para">This last statement is the one most used. It’s often cited as one of the most “beautiful” or interesting equations in mathematics, since it combines 5 of the most important numbers:</div>
+<ul class="disc" id="subsec-EulersFormula-2-8-6">
+<li id="subsec-EulersFormula-2-8-6-1">
+<div class="para" id="subsec-EulersFormula-2-8-6-1-1">
+<span class="process-math">\(e\text{,}\)</span> the natural exponential base, <span class="process-math">\(e=\displaystyle\lim_{n\to\infty}\left(1+\frac{1}{n}\right)^n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EulersFormula-2-8-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-EulersFormula-2-8-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-EulersFormula-2-8-6-2">
+<div class="para" id="subsec-EulersFormula-2-8-6-2-1">
+<span class="process-math">\(i\text{,}\)</span> the imaginary unit where <span class="process-math">\(i=\sqrt{-1}\)</span> and <span class="process-math">\(i^2=-1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EulersFormula-2-8-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-EulersFormula-2-8-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-EulersFormula-2-8-6-3">
+<div class="para" id="subsec-EulersFormula-2-8-6-3-1">
+<span class="process-math">\(\pi\text{,}\)</span> the constant ratio between the circumference and diameter of every circle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EulersFormula-2-8-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-EulersFormula-2-8-6-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-EulersFormula-2-8-6-4">
+<div class="para" id="subsec-EulersFormula-2-8-6-4-1">
+<span class="process-math">\(1\text{,}\)</span> the multiplicative identity, where <span class="process-math">\(1(x)=x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EulersFormula-2-8-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-EulersFormula-2-8-6-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-EulersFormula-2-8-6-5">
+<div class="para" id="subsec-EulersFormula-2-8-6-5-1">
+<span class="process-math">\(0\text{,}\)</span> the additive identity, where <span class="process-math">\(0+x=x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EulersFormula-2-8-6-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-EulersFormula-2-8-6-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">These 5 numbers are all combined into one connected equation, even though they are seemingly not connected at all in their “origins”. It’s no wonder so many people love this equation!</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EulersFormula-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<aside class="aside aside-like" id="subsec-EulersFormula-2-9"><div class="para" id="subsec-EulersFormula-2-9-1">As a fun scavenger hunt, see if you can find the faculty in the mathematics department at Moraine Valley Community College that has a tattoo of this identity!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EulersFormula-2-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></section><section class="subsubsection" id="subsec-ComplexAnalysis"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Complex Analysis</span>
+</h4>
+<div class="para" id="subsec-ComplexAnalysis-2">Euler’s Formula is a really nice way of linking some of our well-known functions to their complex-function extensions. We have complex exponentials, and we can use this same formula to create a complex-valued logarithmic function.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComplexAnalysis-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ComplexAnalysis-3">From here, mathematicians were able to think about how the concepts of calculus could be applied to functions that took in complex-valued inputs and outputs complex-valued outputs. This area of mathematics proved to be rich in applications and also hugely interesting.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ComplexAnalysis-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Complex Analysis"><a href="#subsec-ComplexAnalysis" title="Copy heading and permalink for Subsubsection: Complex Analysis" aria-label="Copy heading and permalink for Subsubsection: Complex Analysis">🔗</a></div></section><section class="subsubsection" id="subsubsec-TrigIdentities"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Trigonometric Identities</span>
+</h4>
+<div class="para" id="subsubsec-TrigIdentities-2">Trigonometric identities are used in a ton of different areas of mathematics (including in this textbook) to try to re-write some expressions into friendlier forms. One of the big struggles for mathematics students, though, is trying to remember them when needed. The author of this textbook thinks, as a matter of personal opinion, that memorizing facts and identities like this is overrated in general, but being able to construct these when necessary is more helpful.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-TrigIdentities-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-TrigIdentities-3">A problem with many trigonometric identities is that the construction or explanation of them often relies on tricky geometry involving lots of triangles.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-TrigIdentities-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-TrigIdentities-4">Euler’s Formula provides a really nice way of thinking of these identities, since we can construct them from the definition of the complex exponential.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-TrigIdentities-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsubsec-TrigIdentities-5"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.4.3</span><span class="period">.</span>
+</h5>
+<div class="para" id="subsubsec-TrigIdentities-5-1">Let’s construct the sum of angle identites for sine and cosine. We, eventually, want to have some formula for <span class="process-math">\(\sin(\alpha+\beta)\)</span> and <span class="process-math">\(\cos(\alpha+\beta)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-TrigIdentities-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-TrigIdentities-5-2">
+<div class="para">In order to do this, let’s evaluate <span class="process-math">\(e^{ix}\)</span> at <span class="process-math">\(x=\alpha+\beta\)</span> and see what happens.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{i(\alpha+\beta)} = \cos(\alpha+\beta) + i\sin(\alpha+\beta)
+\end{equation*}
+</div>
+<div class="para">So we can see that the “real” part of this is the sum of angles for the cosine function, and the “imaginary” part is the sum of angles for the sine function.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-TrigIdentities-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-TrigIdentities-5-3">
+<div class="para">But now we can think about <span class="process-math">\(e^{i(\alpha+\beta)}\)</span> by considering that a sum of exponents could really be a product of exponentials:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{i(\alpha+\beta)} = e^{i\alpha}e^{i\beta}
+\end{equation*}
+</div>
+<div class="para">Let’s look at this second version.</div>
+<div class="displaymath process-math" id="subsubsec-TrigIdentities-5-3-3">
+\begin{align*}
+e^{i\alpha}e^{i\beta} \amp = \left(\cos(\alpha)+i\sin(\alpha)\right)\left(\cos(\beta)+i\sin(\beta)\right)\\
+\amp = \cos(\alpha)\cos(\beta) + i\sin(\alpha)\cos(\beta) + i\cos(\alpha)\sin(\beta) - \sin(\alpha)\sin(\beta)\\
+\amp = \left(\cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)\right) + i\left(\sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)\right)
+\end{align*}
+</div>
+<div class="para">Now we can remember that this should be equivalent to <span class="process-math">\(\cos(\alpha+\beta) + i\sin(\alpha+\beta)\text{,}\)</span> from earlier:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\cos(\alpha+\beta) + i\sin(\alpha+\beta) = \left(\cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)\right) + i \left(\sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)\right)
+\end{equation*}
+</div>
+<div class="para">So we can equate the real parts and the imaginary parts separately to get:</div>
+<div class="displaymath process-math" id="subsubsec-TrigIdentities-5-3-6">
+\begin{align*}
+\cos(\alpha+\beta) \amp = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)\\
+\sin(\alpha+\beta) \amp = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)
+\end{align*}
+</div>
+<div class="para">This strategy is super useful for creating these identities, since we can often take advantage of exponent properties to write two different equivalent expressions to connect.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-TrigIdentities-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 9.4.3"><a href="#subsubsec-TrigIdentities-5" title="Copy heading and permalink for Example 9.4.3" aria-label="Copy heading and permalink for Example 9.4.3">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Trigonometric Identities"><a href="#subsubsec-TrigIdentities" title="Copy heading and permalink for Subsubsection: Trigonometric Identities" aria-label="Copy heading and permalink for Subsubsection: Trigonometric Identities">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Euler’s Formula"><a href="#subsec-EulersFormula" title="Copy heading and permalink for Subsection: Euler’s Formula" aria-label="Copy heading and permalink for Subsection: Euler’s Formula">🔗</a></div></section><section class="conclusion" id="sec-ApplyingTaylorSeries-6"><div class="para" id="sec-ApplyingTaylorSeries-6-1">These are only a few applications of Taylor series, but hopefully they are enough to show a sufficiently wide range of applications or uses. Taylor series, whether they’re used to get polynomial approximations of objects or to translate some function into a different context, are some of the most used applications of calculus, and are a wonderful way to think about connections between some of the calculus concepts that we’ve talked about.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ApplyingTaylorSeries-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="autopermalink" data-description="Section 9.4: How to Use Taylor Series"><a href="#sec-ApplyingTaylorSeries" title="Copy heading and permalink for Section 9.4: How to Use Taylor Series" aria-label="Copy heading and permalink for Section 9.4: How to Use Taylor Series">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-BuildingTaylorSeries.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
