@@ -251,7 +251,7 @@
             <md>
               <mrow>f(x) \amp = \sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}</mrow>
               <mrow>f'(x) \amp = \ddx{\sum_{k=0}^\infty \frac{3^k(x^k)}{2k+1}}</mrow>
-              <mrow> \amp = \sum_{k=0}^\infty \ddx{frac{3^k(x^k)}{2k+1}}</mrow>
+              <mrow> \amp = \sum_{k=0}^\infty \ddx{\frac{3^k(x^k)}{2k+1}}</mrow>
               <mrow> \amp = \sum_{k=0}^\infty \frac{3^k\ddx{x^k}}{2k+1}</mrow>
               <mrow> \amp = \sum_{k=0}^\infty \frac{k3^k(x^{k-1})}{2k+1}</mrow>
             </md>
