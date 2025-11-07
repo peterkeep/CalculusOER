@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Discover Calculus</title>
+<meta name="description" content="Single-Variable Calculus Topics with Motivating Activities" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body class="w3-content w3-back3" style="max-width:1300px">
+
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-half w3-back1 w3-container w3-center" style="min-height:700px">
+    <div class="w3-padding-32">
+    <a href="https://www.discovercalculus.com/web" class="w3-margin"><img src="images/cover.png" alt="Cover" style="width:50%"></a>
+    </div>
+    <div>
+      <a href="index.html" class="w3-button w3-back1 w3-block w3-hover-list w3-padding-16">Home</a>
+      <a href="https://www.discovercalculus.com/web/" class="w3-button w3-back1 w3-block w3-hover-list w3-padding-16">Read Online</a>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Other Downloads</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.discovercalculus.com/pdf/DiscoverCalculus-PeterKeep.pdf">Discover Calculus (Full Text pdf)</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.discovercalculus.com/pdf/DiscoverCalculus1-PeterKeep.pdf">&emsp; • Discover Calculus 1</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.discovercalculus.com/pdf/DiscoverCalculus2-PeterKeep.pdf">&emsp; • Discover Calculus 2</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.discovercalculus.com/ancillaries/DiscoverCalculus-ActivityBook.pdf">Activity Workbook (Full Text pdf)</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.discovercalculus.com/ancillaries/DiscoverCalculus1-ActivityBook.pdf">&emsp; • Discover Calculus 1 - Activity Workbook</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.discovercalculus.com/ancillaries/DiscoverCalculus2-ActivityBook.pdf">&emsp; • Discover Calculus 2 - Activity Workbook</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.discovercalculus.com/ancillaries/DiscoverCalculus-Solutions.pdf">Solutions (Full Text pdf)</a>
+        </div>
+      </div>
+      <a href="instructorresources.html" class="w3-button w3-back1 w3-block w3-hover-list w3-padding-16">Instructor Resources</a>
+      
+    </div>
+  </div>
+
+  <div class="w3-half w3-back1 w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-center">
+      <h1>Python Demonstrations</h1>
+      <div class="w3-left-align w3-padding-large">
+        <p>
+          <ol>
+            <li>Limits</li>
+            <ul>
+              <li>Link 1</li>
+            </ul>
+            <li>Derivatives</li>
+            <ul>
+              <li>Link 1</li>
+            </ul>
+            <li>Implicit Differentiation</li>
+            <ul>
+              <li>Link 1</li>
+            </ul>
+            <li>Applications of Derivatives</li>
+            <ul>
+              <li>Link 1</li>
+            </ul>
+            <li>Antiderivatives and Integrals</li>
+            <ul>
+              <li>Link 1</li>
+            </ul>
+            <li>Applications of Integrals</li>
+            <ul>
+              <li>Link 1</li>
+            </ul>
+            <li>Techniques for Antidifferentiation</li>
+            <ul>
+              <li>Link 1</li>
+            </ul>
+            <li>Infinite Series</li>
+            <ul>
+              <li>Link 1</li>
+            </ul>
+            <li>Power Series</li>
+            <ul>
+              <li>Link 1</li>
+            </ul>
+          </ol>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid: Work & Resume -->
+<div class="w3-row">
+  <div class="w3-half w3-back3 w3-center" style="min-height:100px">
+  </div>
+  <div class="w3-half w3-back3 w3-container w3-center" style="min-height:100px">
+  </div>
+</div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-16">
+  <p>Open source and maintained on <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/peterkeep/CalculusOER">GitHub</a>.</p>
+  <p>
+    <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/4.0/">
+    <img src="./images/ccby.png" width=20% alt="CC BY"/>
+    </a>
+  </p>
+</footer>
+
+</body>
+</html>
