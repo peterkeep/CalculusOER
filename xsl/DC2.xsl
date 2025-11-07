@@ -18,6 +18,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:apply-templates select="." mode="number" />
 </xsl:template>
 
+<xsl:template name="chapter-start-number">
+    <xsl:text>\setcounter{chapter}{</xsl:text>
+    <xsl:value-of select="$chapter-start + 4" />
+    <xsl:text>}&#xa;</xsl:text>
+</xsl:template>
+
+
 <!-- <xsl:variable name="b-latex-hardcode-numbers" select="true()"/> -->
 
 <!-- Skip DC1 chapters -->

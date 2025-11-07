@@ -17,6 +17,12 @@
   <xsl:apply-templates select="." mode="number" />
 </xsl:template>
 
+<xsl:template name="chapter-start-number">
+    <xsl:text>\setcounter{chapter}{</xsl:text>
+    <xsl:value-of select="$chapter-start + 4" />
+    <xsl:text>}&#xa;</xsl:text>
+</xsl:template>
+
 
 <!-- We pull activities from each introduction -->
 <!-- We want to leave the introductions to activities, so we're skipping over them -->
