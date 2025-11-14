@@ -1,23 +1,25 @@
 <setup>
   <!-- Calculate the offset: sample point x_i^* = x_i + offset -->
   <!-- Left, Mid and Right Endpoint Rule corresponds to 0, 1, 2 in following computation -->
-  <conditionalContent assignNames="ruleChoiceNumber">
+  <number name="ruleChoiceNumber">
+  <conditionalContent>
     <case condition="$ruleChoice=Left Riemann Sum">0</case>
     <case condition="$ruleChoice=Midpoint Riemann Sum">1</case>
     <case condition="$ruleChoice=Right Riemann Sum">2</case>
   </conditionalContent>
+  </number>
   <number name="offset">$dx*$ruleChoiceNumber / 2</number>
   <!-- numeric version of dx in case symbolic version (displayed to user) slows things down -->
   <number name="dxN">$dx</number>
 
   <!-- Compute the x_i's here, instead of within the graph -->
-  <sequence from="$a" to="$b-$dx" step="$dx" name="xiValues"/>
+  <sequence from="$a" to="$b-$dx" step="$dx" name="xiValues" />
   <!-- For help in zooming into the graph correctly: what are the minimum and maximum rectangle heights? -->
   <!-- make sure to to include 0 in the computations, in case all heights are positive (or negative) -->
   <!-- note: could use $$f($xVal+$offset), but tacking $$f($b) on the computation means less shifting
       of the graph when switching between rules (if rectanges stretch beyond the graph with right 
       endpoints but not left, for example.  Less shifting seems better -->
-  <map name="fValues"><template>$$f($xVal)</template><sources alias="xVal">$xiValues</sources></map>
+  <setup><group name="group">$xiValues</group></setup><repeat for="$group" name="fValues" valueName="xVal">$$f($xVal)</repeat>
   <number name="minY"><min>0 $fValues $$f($b)</min></number>
   <number name="maxY"><max>0 $fValues $$f($b)</max></number>
 </setup>
@@ -28,22 +30,22 @@
 <table suppressTableNameInTitle="true">
     <row>
       <cell halign="right"><m>f(x) = </m></cell>
-      <cell><mathinput prefill="x^2+1" name="fnFormula" /></cell>
+      <cell><mathInput prefill="x^2+1" name="fnFormula" /></cell>
     </row>
     <row>
       <cell halign="right"><m>a =</m></cell>
-      <cell><mathinput name="a" prefill="0" /></cell>
+      <cell><mathInput name="a" prefill="0" /></cell>
     </row>
     <row>
       <cell halign="right"><m>b =</m></cell>
-      <cell><mathinput name="b" prefill="2" /></cell>
+      <cell><mathInput name="b" prefill="2" /></cell>
     </row>
     <row>
       <cell halign="right"><m>n =</m></cell>
-      <cell><mathinput prefill="5" name="n" /></cell>
+      <cell><mathInput prefill="5" name="n" /></cell>
     </row>
     <row>
-      <cell halign="right"><m>\Delta x =</m></cell><cell><math simplify name="dx">($b-$a)/$n</math></cell>
+      <cell halign="right"><m>\Delta x =</m></cell><cell><math simplify="true" name="dx">($b-$a)/$n</math></cell>
     </row>
     <row>
       <cell halign="right">Selection Strategy for <m>x_k^*</m>:</cell>
@@ -57,23 +59,16 @@
 </table>
 
 <!-- Graph the function, points at (a,0) and (b,0), and then the n rectangles -->
-<graph xmin="$a-1" xmax="$b+1" ymin="$minY-1" ymax="$maxY+1" 
-  identicalAxisScales="false" showNavigation="false">
-  <function name="f" layer="0" symbolic>$fnFormula</function>
+<graph xmin="$a-1" xmax="$b+1" ymin="$minY-1" ymax="$maxY+1" identicalAxisScales="false" showNavigation="false" fixAxes>
+  <function name="f" layer="0" symbolic="true">$fnFormula</function>
   <regionBetweenCurveXAxis function="$f" boundaryValues="$a $b" />
 
-<map>
-  <template>
-    <polygon stylenumber="6" filled draggable="false"
-      vertices="($xVal,0) 
+<repeatForSequence from="$a" to="$b-$dxN" step="$dxN" valueName="xVal">
+    <polygon stylenumber="6" filled="true" draggable="false" vertices="($xVal,0) 
                 ($xVal+$dxN,0) 
                 ($xVal+$dxN, $$f($xVal+$offset)) 
                 ($xVal,$$f($xVal+$offset))" />
-  </template>
-  <sources alias="xVal">
-    <sequence from="$a" to="$b-$dxN" step="$dxN" />
-  </sources>
-</map>  
+  </repeatForSequence>  
 </graph>
 
 <p>
@@ -89,9 +84,6 @@
     </case>
   </conditionalContent>
   <sum displaydecimals="4">
-    <map>
-      <template><number>$$f($xVal+$offset)*$dx</number></template>
-      <sources alias="xVal">$xiValues</sources>
-    </map>
+    <setup><group name="group1">$xiValues</group></setup><repeat for="$group1" valueName="xVal"><number>$$f($xVal+$offset)*$dx</number></repeat>
   </sum>.
 </p>
