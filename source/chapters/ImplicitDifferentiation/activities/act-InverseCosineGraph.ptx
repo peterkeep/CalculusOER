@@ -29,7 +29,7 @@
                     <image source="./ImplicitDifferentiation/triangle.png" width="40%">
                         <shortdescription>A right triangle with side lengths labeled x and sqrt(1-x^2) with the hypotenuse labeled 1.</shortdescription>
                     </image>
-                </figure> We're going to think about these inverse trigonometric functions as angles: let <m>\alpha = \cos^{-1}(x)</m> and <m>\beta = \sin^{-1}(x)</m>. We can re-write these as:
+                </figure> We're going to think about these inverse trigonometric functions as angles: let <m>\alpha = \cos^{-1}(x)</m> and <m>\beta = \sin^{-1}(x)</m>. We can rewrite these as:
                 <md>
                     <mrow>\cos(\alpha) \amp = x</mrow>
                     <mrow>\sin(\beta) \amp =x </mrow>
@@ -44,7 +44,7 @@
     <task>
         <statement>
             <p>
-                Use this equation above, re-writing <m>\cos^{-1}(x)</m> as some expression involving the inverse sine function, and then find
+                Use this equation above, rewriting <m>\cos^{-1}(x)</m> as some expression involving the inverse sine function, and then find
                 <me>
                     \ddx{\cos^{-1}(x)}
                 </me>.

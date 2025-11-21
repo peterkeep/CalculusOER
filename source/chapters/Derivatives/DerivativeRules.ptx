@@ -279,7 +279,7 @@
             <mrow>\frac{d}{d\theta}\left(\sin(\theta)\right) \amp = \lim_{\Delta \theta \to 0}\left(\frac{\sin(\theta+\Delta \theta)-\sin(\theta)}{\Delta \theta}\right)</mrow>
             <mrow>\frac{d}{d\theta}\left(\cos(\theta)\right) \amp = \lim_{\Delta \theta \to 0}\left(\frac{\cos(\theta+\Delta \theta)-\cos(\theta)}{\Delta \theta}\right)</mrow>
           </md>
-          Our goal is to re-write the numerators in both of these limits as something more usable. So far, we have been evaluating these types of limits (<xref ref="sec-IndeterminateForms" text="title"/>) using some algebraic manipulations. Instead of using algebra, we will use geometry.
+          Our goal is to rewrite the numerators in both of these limits as something more usable. So far, we have been evaluating these types of limits (<xref ref="sec-IndeterminateForms" text="title"/>) using some algebraic manipulations. Instead of using algebra, we will use geometry.
         </p>
         <p>
           Consider the unit circle below. We have plotted the angle <m>\theta</m> and are reminded that the point on the circle that corresponds with the terminal side of the angle <m>\theta</m> has coordinates <m>(\cos(\theta),\sin(\theta))</m>. We can label the sides of the triangle pictured below.

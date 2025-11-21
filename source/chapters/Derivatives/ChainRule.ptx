@@ -158,7 +158,7 @@
     <me>
       2^x = \left(\underbrace{e^{\ln(2)}}_{=2}\right)^x
     </me>
-    But we also might notice that we can re-write this using an exponent rule! We know that in general: <m>\left(a^b\right)^c = a^{b\cdot c}</m>. Let's re-write this exponential function:
+    But we also might notice that we can rewrite this using an exponent rule! We know that in general: <m>\left(a^b\right)^c = a^{b\cdot c}</m>. Let's rewrite this exponential function:
     <md>
       <mrow> 2^x \amp = \left(e^{\ln(2)}\right)^x</mrow>
       <mrow> \amp =e^{\ln(2)\cdot x}</mrow>
@@ -171,7 +171,7 @@
     Now we can remember that <m>e^{\ln(2)\cdot x}</m> is really <m>\left(e^{\ln(2)}\right)^x</m> which is just <m>2^x</m>.
   </p>
   <p>
-    So we get <m>\Ddx{2^x} = 2^x\ln(2)</m>. We can notice that we can re-create this with <em>any</em> (reasonable) value for the base of this exponential function.
+    So we get <m>\Ddx{2^x} = 2^x\ln(2)</m>. We can notice that we can recreate this with <em>any</em> (reasonable) value for the base of this exponential function.
   </p>
   <theorem xml:id="thm-GeneralizedExponentialDerivaitve">
     <title>Derivative of the Generalized Exponential Function</title>    

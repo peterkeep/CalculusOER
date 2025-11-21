@@ -123,14 +123,14 @@
       </md>
     </p>
     <p>
-      This works great! We can <em>always</em> think about quotients as just products of reciprocals! But the problem is that we can't always differentiate these reciprocals (for now). We were able to differentiate <m>\dfrac{1}{x^2}</m> by re-writing this as just a power function (with a negative exponent).
+      This works great! We can <em>always</em> think about quotients as just products of reciprocals! But the problem is that we can't always differentiate these reciprocals (for now). We were able to differentiate <m>\dfrac{1}{x^2}</m> by rewriting this as just a power function (with a negative exponent).
     </p>
     <p>
       What about this flipped example:
       <me>
         \ddx{\frac{x^2}{\sin(x)}}
       </me>?
-      In order for us to do the same thing, we need to re-write this as
+      In order for us to do the same thing, we need to rewrite this as
       <me>
         \ddx{x^2\left(\sin(x)\right)^{-1}}
       </me>
@@ -141,7 +141,7 @@
     </p>
     <xi:include href="./activities/act-QuotientRule.ptx" />
     <p>
-      This formula is fine, but a little clunky. We'll try to re-write it in some nice ways, but it is a bit more complex than the <xref ref="thm-ProductRule" text="title"/>.
+      This formula is fine, but a little clunky. We'll try to rewrite it in some nice ways, but it is a bit more complex than the <xref ref="thm-ProductRule" text="title"/>.
     </p>
     <theorem xml:id="thm-QuotientRule">
       <title>Quotient Rule</title>

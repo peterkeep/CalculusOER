@@ -257,21 +257,21 @@
                 </li>
                 <li>
                     <p>
-                        Implicit differentiation will be a very useful tool. Even when we have functions that can be written explicitly, they might be hard to deal with -- overly complex or maybe involving functions that we aren't used to. It is absolutely possible, and a really useful strategy, to re-write the relationship between variables implicitly! We can maybe create a version of these equations that we can differentiate!
+                        Implicit differentiation will be a very useful tool. Even when we have functions that can be written explicitly, they might be hard to deal with -- overly complex or maybe involving functions that we aren't used to. It is absolutely possible, and a really useful strategy, to rewrite the relationship between variables implicitly! We can maybe create a version of these equations that we can differentiate!
                     </p>
                 </li>
             </ol>
             We're going to use this second idea first: in the next section we'll be thinking about inverse functions. We do not have any idea of how to think about derivatives of logarithmic functions, like <m>y=\ln(x)</m>.
         </p>
         <p>
-            We can re-write this:
+            We can rewrite this:
             <me>
                 y=\ln(x) \longleftrightarrow x=e^y
             </me>.
             This second representation is something we can differentiate!
         </p>
         <p>
-            Similarly, if we wanted to think about the derivative of <m>y=\tan^{-1}(x)</m>, we might instead think about re-writing this:
+            Similarly, if we wanted to think about the derivative of <m>y=\tan^{-1}(x)</m>, we might instead think about rewriting this:
             <me>
                 y=\tan^{-1}(x) \longleftrightarrow x=\tan(y)
             </me>.
