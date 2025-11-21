@@ -37,7 +37,7 @@
     <task>
         <statement>
             <p>
-                Let's re-write our limit. We can replace <m>f(x)</m> with our formula for its linear approximation, <m>L_f(x)</m> and replace <m>g(x)</m> with its linear approximation, <m>L_g(x)</m>:
+                Let's rewrite our limit. We can replace <m>f(x)</m> with our formula for its linear approximation, <m>L_f(x)</m> and replace <m>g(x)</m> with its linear approximation, <m>L_g(x)</m>:
                 <me>
                     \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \left(\frac{<fillin characters="15" />}{<fillin characters="15" />}\right)
                 </me>
@@ -65,12 +65,12 @@
     <task>
         <statement>
             <p>
-                Use this new information about the values of <m>f(a)</m> and <m>g(a)</m> to revisit the limit. We re-wrote <m>\displaystyle \lim_{x\to a} \frac{f(x)}{g(x)}</m> by replacing each function with its linear approximation. What happens with the algebra when we know this information about <m>f(a)</m> and <m>g(a)</m>?
+                Use this new information about the values of <m>f(a)</m> and <m>g(a)</m> to revisit the limit. We rewrote <m>\displaystyle \lim_{x\to a} \frac{f(x)}{g(x)}</m> by replacing each function with its linear approximation. What happens with the algebra when we know this information about <m>f(a)</m> and <m>g(a)</m>?
             </p>
         </statement>
         <hint>
             <p>
-                We re-wrote
+                We rewrote
                 <me>
                     \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \left(\frac{f'(a)(x-a)+f(a)}{g'(a)(x-a)+g(a)}\right)
                 </me>
