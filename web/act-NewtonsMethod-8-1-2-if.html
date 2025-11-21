@@ -93,68 +93,66 @@ window.MathJax = {
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-                    <!-- https://doenet.org/portfolioeditor/_sEugebfB7ZjjhQjGzucZC/_kIoXzr0CVTOOplY9wR0iy -->
-
-<setup>
-    <number name="iter">0</number>
-    <number name="x0" displayDecimals="4">2</number>
-    <number name="x1" displayDecimals="4">$x0 - $$f($x0)/$$fPrime($x0)</number>
-    <number name="x2" displayDecimals="4">$x1 - $$f($x1)/$$fPrime($x1)</number>
-    <number name="x3" displayDecimals="4">$x2 - $$f($x2)/$$fPrime($x2)</number>
-    <number name="x4" displayDecimals="4">$x3 - $$f($x3)/$$fPrime($x3)</number>
-    <number name="estimate">
-      <conditionalContent>
-        <case condition="$iter = 0">$x0</case>
-        <case condition="$iter = 1">$x1</case>
-        <case condition="$iter = 2">$x2</case>
-        <case condition="$iter = 3">$x3</case>
-        <case condition="$iter >= 4">$x4</case>
-      </conditionalContent>
-    </number>
-    <number name="previous">
-      <conditionalContent>
-        <case condition="$iter = 0"></case>
-        <case condition="$iter = 1">$x0</case>
-        <case condition="$iter = 2">$x1</case>
-        <case condition="$iter = 3">$x2</case>
-        <case condition="$iter >= 4">$x3</case>
-      </conditionalContent>
-    </number>
-    <function name="f">x^2-2</function>
-    <derivative name="fPrime">$f</derivative>
-    <point name="P0" fixed>($x0,$$f($x0))</point>  
-  </setup>
-  
-  <p><em>Instructions:</em> This is a visualization of our iterative approximation of <m>\sqrt{2}</m> by estimating solutions to <m>x^2-2=0</m>. Click the buttons below to move forward one iteration/step or backward one interation/step. For each step, explore how we use a linear approximation (centered at our previous estimation) to calculate a new estimation of the <m>x</m>-intercept.</p>
-  
-  <p>
-    <updateValue target="iter" newValue="$iter+1" disabled="$iter >= 4">
-      <label>Go forward a step.</label>
-    </updateValue>
-  
-    <updateValue  target="iter" newValue="$iter-1" disabled="$iter <= 0" >
-      <label>Go backward a step.</label>
-    </updateValue>
-  </p>
-  
-  <graph xmin="-0.1" xmax="2.5" ymin="-2.2" ymax="5">
-    $f
-    <function styleNumber="2">$$fPrime($previous)(x-$previous)+$$f($previous)</function>
+                    <setup>
+  <number name="iter">0</number>
+  <number name="x0" displayDecimals="4">2</number>
+  <number name="x1" displayDecimals="4">$x0 - $$f($x0)/$$fPrime($x0)</number>
+  <number name="x2" displayDecimals="4">$x1 - $$f($x1)/$$fPrime($x1)</number>
+  <number name="x3" displayDecimals="4">$x2 - $$f($x2)/$$fPrime($x2)</number>
+  <number name="x4" displayDecimals="4">$x3 - $$f($x3)/$$fPrime($x3)</number>
+  <number name="estimate">
     <conditionalContent>
-      <case condition="$iter =0">
-        $P0
-      </case>
-      <case condition="$iter > 0">
-        <lineSegment styleNumber="6" endpoints="($estimate, 0) ($estimate, $$f($estimate))"/>
-        <point>($previous, $$f($previous))</point>
-        <point styleNumber="2">($estimate, 0)</point>
-        <point styleNumber="3">($estimate, $$f($estimate))</point>
-      </case>
+      <case condition="$iter = 0">$x0</case>
+      <case condition="$iter = 1">$x1</case>
+      <case condition="$iter = 2">$x2</case>
+      <case condition="$iter = 3">$x3</case>
+      <case condition="$iter >= 4">$x4</case>
     </conditionalContent>
-  </graph>
-  <p>This is step number $iter, where our estimate is:
-    <me>\sqrt{2}\approx $estimate</me>
-  </p>
+  </number>
+  <number name="previous">
+    <conditionalContent>
+      <case condition="$iter = 0" />
+      <case condition="$iter = 1">$x0</case>
+      <case condition="$iter = 2">$x1</case>
+      <case condition="$iter = 3">$x2</case>
+      <case condition="$iter >= 4">$x3</case>
+    </conditionalContent>
+  </number>
+  <function name="f">x^2-2</function>
+  <derivative name="fPrime">$f</derivative>
+  <point name="P0" fixed="true">($x0,$$f($x0))</point>  
+</setup>
+
+<p><em>Instructions:</em> This is a visualization of our iterative approximation of <m>\sqrt{2}</m> by estimating solutions to <m>x^2-2=0</m>. Click the buttons below to move forward one iteration/step or backward one interation/step. For each step, explore how we use a linear approximation (centered at our previous estimation) to calculate a new estimation of the <m>x</m>-intercept.</p>
+
+<p>
+  <updateValue target="$iter" newValue="$iter+1" disabled="$iter >= 4">
+    <label>Go forward a step.</label>
+  </updateValue>
+
+  <updateValue target="$iter" newValue="$iter-1" disabled="$iter &lt;= 0">
+    <label>Go backward a step.</label>
+  </updateValue>
+</p>
+
+<graph xmin="-0.1" xmax="2.5" ymin="-2.2" ymax="5">
+  $f
+  <function styleNumber="2">$$fPrime($previous)(x-$previous)+$$f($previous)</function>
+  <conditionalContent>
+    <case condition="$iter =0">
+      $P0
+    </case>
+    <case condition="$iter > 0">
+      <lineSegment styleNumber="6" endpoints="($estimate, 0) ($estimate, $$f($estimate))" />
+      <point>($previous, $$f($previous))</point>
+      <point styleNumber="2">($estimate, 0)</point>
+      <point styleNumber="3">($estimate, $$f($estimate))</point>
+    </case>
+  </conditionalContent>
+</graph>
+<p>This is step number $iter, where our estimate is:
+  <me>\sqrt{2}\approx $estimate</me>
+</p>
                 </script>
 </div></div>
 </body>
