@@ -59,7 +59,7 @@
   <subsection xml:id="subsec-SignedArea">
     <title>Signed Area</title>
     <p>
-      We're going to now deal with the consequences of our decisions. A truth about mathematics, sometimes not an obvious truth, is that every time we state a definition what we are actually doing is making a decision. We are deciding on some common way of classifying and describing an object. These classifications and descriptions are choices that we are making: choices to prioritize some property or aspect over a different one, choices to include or exclude a type of object into the group of things we're interested in, choices that come with downstream effects.
+      We're going to now deal with the consequences of our decisions. A truth about mathematics, sometimes not an obvious truth, is that every time we state a definition, what we are actually doing is making a decision. We are deciding on some common way of classifying and describing an object. These classifications and descriptions are choices that we are making: choices to prioritize some property or aspect over a different one, choices to include or exclude a type of object into the group of things we're interested in, and choices that come with downstream effects.
     </p>
     <p>
       We chose to define the area bounded between a curve defined by the function <m>f(x)</m> and the <m>x</m>-axis between <m>x=a</m> and <m>x=b</m> as:
@@ -80,7 +80,7 @@
     </p>
     <xi:include href="./activities/act-WeirdAreas-2.ptx" />
     <p>
-      Ok so we have some intuition about how the signs of these areas work, and we've also built up some nice properties that we can talk through. Let's finish this section by just summarizing some of the things we've done and thinking about what kinds of functions this works for!
+      Ok, so we have some intuition about how the signs of these areas work, and we've also built up some nice properties that we can talk through. Let's finish this section by just summarizing some of the things we've done and thinking about what kinds of functions this works for!
     </p>
   </subsection>
   <subsection xml:id="subsec-PropertiesOfDefiniteIntegrals">
@@ -106,7 +106,7 @@
       <title>Properties of Definite Integrals</title>
       <statement>
         <p>
-          If <m>a</m>. <m>b</m>, and <m>c</m> are real numbers and <m>f(x)</m> is a function that is continuous on the intervals <m>[a,b]</m> and <m>[b,c]</m>, then:
+          If <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>f(x)</m> is a function that is continuous on the intervals <m>[a,b]</m> and <m>[b,c]</m>, then:
           <ul>
             <li>
               <p>
@@ -124,7 +124,7 @@
             </li>
             <li>
               <p>
-                When we integrate a function <q>backwards</q> through an interval, we an area with an opposite sign:
+                When we integrate a function <q>backwards</q> through an interval, we get an area with an opposite sign:
                 <me>
                   \int_{x=a}^{x=b}f(x)\;dx = -\int_{x=b}^{x=a} f(x)\;dx
                 </me>

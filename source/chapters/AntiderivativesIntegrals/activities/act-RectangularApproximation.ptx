@@ -11,7 +11,7 @@
                 Let's start with approximating this region with a single rectangle. We're going to define the rectangle by picking some <m>x</m>-value in the interval <m>[0,2]</m>. Then, we'll use the point at that <m>x</m>-value to define the height of our rectangle.
             </p>
             <p>
-                Essentially, we are picking a single point on the our function on the interval and our approximation is pretending that the single point we picked is representative of the whole function on the interval.
+                Essentially, we are picking a single point on our function on the interval, and our approximation is pretending that the single point we picked is representative of the whole function on the interval.
             </p>
             <interactive platform="doenetml" width="95%" aspect="1:1.2">
             <slate surface="doenetml">
@@ -23,7 +23,7 @@
     <task>
         <statement>
             <p>
-                Can you try repicking an <m>x</m>-value, and trying to find one that gets you an area approximation that is pretty good? 
+                Can you try repicking an <m>x</m>-value, and try to find one that gets you an area approximation that is pretty good? 
             </p>
         </statement>
     </task>

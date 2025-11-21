@@ -95,7 +95,7 @@
                         <m>G(x) = 5\ln|x| - 3\tan^{-1}(x)+C</m>
                     </p>
                     <p>
-                        We use absolute values in the logarithm because we want to find a functions whose derivative is <m>g(x)</m> on the whole interval that <m>g(x)</m> is defined. The log function is only defined for positive inputs, but we would like to be able put any non-zero input into our function (since that's the domain of <m>g</m>).
+                        We use absolute values in the logarithm because we want to find a function whose derivative is <m>g(x)</m> on the whole interval that <m>g(x)</m> is defined. The log function is only defined for positive inputs, but we would like to be able to put any non-zero input into our function (since that's the domain of <m>g</m>).
                     </p>
                 </solution>
             </task>
@@ -326,10 +326,7 @@
             What does <m>f(x)</m> tell us about <m>f'(x)</m>? We're probably so used to thinking about what <m>f'(x)</m> tells us about <m>f(x)</m> that it might be hard to reverse the interpretation. And that's ok!
         </p>
         <p>
-            Instead of worrying about this, we can just present us with the answer, and then spend some time uncovering it more.
-        </p>
-        <p>
-            Over the next few sections, we'll discover that antiderivatives of <m>f(x)</m> are deeply connected to areas carved out by the graph of <m>f(x)</m>. 
+            Instead of worrying about uncovering this connection naturally, let's just take a different approach, by stating the relationship first: Over the next few sections, we'll discover that antiderivatives of <m>f(x)</m> are deeply connected to <em>areas</em> carved out by the graph of <m>f(x)</m>. 
         </p>
     </conclusion>
     <xi:include href="./exercises/ex-IndefiniteIntegrals.ptx" />

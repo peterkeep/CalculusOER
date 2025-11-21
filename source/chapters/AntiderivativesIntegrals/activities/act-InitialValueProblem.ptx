@@ -5,7 +5,7 @@
             A computer program is trying to sort a group of computer files based on their size. The program isn't very efficient, and the time that it takes to sort the files increases when it tries to sort more files.
         </p>
         <p>
-            The time that it takes, measured in seconds, based on the total, cumulative size of the files <m>g</m>, measured in gigabytes, is modeled by a function <m>T(g)</m>. We don't know the function, but we do know that the time increases at an instantaneous rate of <m>0.0001g</m> seconds when the total size, <m>g</m> increases slightly.
+            The time that it takes, measured in seconds, based on the total, cumulative size of the files <m>g</m>, measured in gigabytes, is modeled by a function <m>T(g)</m>. We don't know the function, but we do know that the time increases at an instantaneous rate of <m>0.0001g</m> seconds when the total size, <m>g</m> increases slightly. That is, the rate of change is a function of the file size, <m>g</m>, itself.
         </p>
     </introduction>
     <task>
@@ -45,7 +45,7 @@
                 Let's say that we feed some number of files totaling up to 1.4GB in size into this program. It takes 0.24 seconds to sort the files by size.
             </p>
             <p>
-                Find the function, <m>T(g)</m>, that models the how quickly this program sorts these files.
+                Find the function, <m>T(g)</m>, that models how quickly this program sorts these files.
             </p>
         </statement>
     </task>

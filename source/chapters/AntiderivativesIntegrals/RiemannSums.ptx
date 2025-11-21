@@ -42,7 +42,7 @@
     </p>
     <xi:include href="./activities/act-RectangularApproximation.ptx" />
     <p>
-      This is our process! We'll refer to it often as the <term>slice-and-sum process</term>, since we are slicing out region into a bunch of pieces, approximating the area on each piece (by using one point to represent the whole slice), and then summing the areas back up.
+      This is our process! We'll refer to it often as the <term>slice-and-sum process</term>, since we are slicing our region into a bunch of pieces, approximating the area on each piece (by using one point to represent the whole slice), and then summing the areas back up.
     </p>
     <p>
       More formally, we can call this the Riemann Sum process, because the sum of the areas is a special form of summation.
