@@ -68,7 +68,7 @@
         Do you see the (slight) difference?
         </p>
         <p>
-        What we'll secretly see is that all of these statements are actually correct but require a result for us to say them. The Mean Value Theorem will be the result that we use to build important and helpful results throughout the rest of this course.
+        What we'll secretly see is that all of these statements are actually correct, but require a result for us to say them. The Mean Value Theorem will be the result that we use to build important and helpful results throughout the rest of this course.
         </p>
     </introduction>
 
@@ -128,13 +128,13 @@
         <example>
             <introduction>
                 <p>
-                    Let's say that a person is planning on biking to their college campus, 8 miles away. At 2:39pm they send a text to their friend with a selfie of them on their bike about to start their trip, captioned <q>Beautiful day for a ride!</q> At 3:27pm, they post a picture on their social media of them in front of the bike rack on campus.
+                    Let's say that a person is planning on biking to their college campus, 8 miles away. At 2:39 p.m., they send a text to their friend with a selfie of them on their bike about to start their trip, captioned <q>Beautiful day for a ride!</q> At 3:27 p.m., they post a picture on their social media of them in front of the bike rack on campus.
                 </p>
             </introduction>
             <task>
                 <statement>
                     <p>
-                        What was the average velocity of the student between 2:39pm and 3:27pm?
+                        What was the average velocity of the student between 2:39 p.m. and 3:27 p.m.?
                     </p>
                 </statement>
                 <solution>
@@ -166,7 +166,7 @@
                 </statement>
                 <solution>
                     <p>
-                        We know that at some point between 2:39pm and 3:27pm, the cyclist had to be traveling at exactly 10 miles per hour.
+                        We know that at some point between 2:39 p.m. and 3:27 p.m., the cyclist had to be traveling at exactly 10 miles per hour.
                     </p>
                 </solution>
             </task>
@@ -202,7 +202,7 @@
             </task>
         </example>
         <p>
-            These examples are fine, but the real power of the Mean Value Theorem comes in how we can use it to general more interesting results. Let's check those out!
+            These examples are fine, but the real power of the Mean Value Theorem comes in how we can use it to generate more interesting results. Let's check those out!
         </p>
     </subsection>
     <subsection xml:id="subsec-ResultsFromMVT">
@@ -253,10 +253,10 @@
                     <me>
                         f'(c)(x_2-x_1) = f(x_2)-f(x_1)
                     </me>.
-                    Notice that <m>f'(c)\gt 0</m> (since the derivative is positive everywhere in the interval) and <m>(x_2-x_1)gt 0</m> (by the wat we named these <m>x</m>-values). This means that <m> f'(c)(x_2-x_1)\gt 0</m>, and so <m>(f(x_2)-f(x_1))\gt 0</m> as well.
+                    Notice that <m>f'(c)\gt 0</m> (since the derivative is positive everywhere in the interval) and <m>(x_2-x_1)\gt 0</m> (by the way we named these <m>x</m>-values). This means that <m> f'(c)(x_2-x_1)\gt 0</m>, and so <m>(f(x_2)-f(x_1))\gt 0</m> as well.
                 </p>
                 <p>
-                    Ok so notice what just happened: we arbitrarily chose <m>x</m>-values <m>x_1</m> and <m>x_2</m> and noticed that for any of these pairs where <m>x_1\lt x_2</m>, we found that <m>f(x_1)\lt f(x_2)</m>. This is exactly what it means for <m>f</m> to be increasing on the interval <m>(a,b)</m> (based on <xref ref="def-IncreasingDecreasing"/>).
+                    So notice what just happened: we arbitrarily chose <m>x</m>-values <m>x_1</m> and <m>x_2</m> and noticed that for any of these pairs where <m>x_1\lt x_2</m>, we found that <m>f(x_1)\lt f(x_2)</m>. This is exactly what it means for <m>f</m> to be increasing on the interval <m>(a,b)</m> (based on <xref ref="def-IncreasingDecreasing"/>).
                 </p>
             </proof>
         </theorem>

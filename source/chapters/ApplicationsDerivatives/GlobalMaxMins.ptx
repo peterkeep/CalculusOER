@@ -35,7 +35,7 @@
       <title>Extreme Value Theorem</title>
       <statement>
         <p>
-          If <m>f(x)</m> is a continuous function on a closed interval <m>[a,b]</m> then <m>f</m> must have both a global maximum and a global minimum on the interval.
+          If <m>f(x)</m> is a continuous function on a closed interval <m>[a,b]</m>, then <m>f</m> must have both a global maximum and a global minimum on the interval.
         </p>
       </statement>
     </theorem>
@@ -84,7 +84,7 @@
       Without the conditions that imply the Extreme Value Theorem, things become trickier. For instance, if the function is not continuous, then the function might have some unbounded behavior at a vertical asymptote. In this case, we might need to look at the one-sided limits around that asymptote, in order to see if our function tends towards positive or negative infinity on either side of the asymptote. This could tell us that the function doesn't have a global maximum, a global minimum, or that it doesn't have either.
     </p>
     <p>
-      Similarly, if the function is not defined on a closed interval, then we need to investigate what happens to the function's behavior as the function moves towards the <q>ends</q> of the interval (which could be a real number but something like positive or negative infinity). These end behavior limits could exist, in which case we need to compare these heights of horizontal asymptotes or open ends of an interval to the heights of any critical numbers.
+      Similarly, if the function is not defined on a closed interval, then we need to investigate what happens to the function's behavior as the function moves towards the <q>ends</q> of the interval. This could mean that the function approaches some real number, but it could also mean that the function approaches positive or negative infinity, or something else. These end behavior limits could exist, in which case we need to compare these heights of horizontal asymptotes or open ends of an interval to the heights of any critical numbers.
     </p>
     <p>
       But we might also find that the function tends towards infinity or negative infinity in the end behavior.

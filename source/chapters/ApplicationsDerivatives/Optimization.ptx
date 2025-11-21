@@ -36,7 +36,7 @@
           The first thing that we know is that <m>a+b=14</m>. This isn't a huge amount of information, but it does provide us with a nice connection between our numbers. If we know what one number is, then we automatically know the second one: if one number is <m>4</m>, then the other number is whatever we need to add to <m>4</m> to get <m>14</m>.
         </p>
         <p>
-          We also know that we're interesting in the product: <m>P=ab</m>. We don't, currently, know anything about this product other than the fact that we want it to be large. Ok so automatically, we know that both <m>a</m> and <m>b</m> need to be positive: if we had one number that was positive (like <m>15</m>) and one number that was negative (like <m>-1</m>), then the product will be negative, and even though they add to <m>14</m>, we are <em>not</em> going to get a big product.
+          We also know that we're interested in the product: <m>P=ab</m>. We don't, currently, know anything about this product other than the fact that we want it to be large. Ok so automatically, we know that both <m>a</m> and <m>b</m> need to be positive: if we had one number that was positive (like <m>15</m>) and one number that was negative (like <m>-1</m>), then the product will be negative, and even though they add to <m>14</m>, we are <em>not</em> going to get a big product.
         </p>
         <p>
           So we know that for both of these numbers <m>a,b\geq 0</m>.
@@ -207,7 +207,7 @@
               <ol>
                 <li>
                   <p>
-                    A function you are optimizing. This should be a function with only one input, so we might need to use the constraint to rewrite out formula from earlier in order for it to only have a single input variable.
+                    A function you are optimizing. This should be a function with only one input, so we might need to use the constraint to rewrite our formula from earlier in order for it to only have a single input variable.
                   </p>
                 </li>
                 <li>

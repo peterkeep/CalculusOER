@@ -85,7 +85,7 @@
   <subsection xml:id="subsec-ApproximatingZeros">
     <title>Approximating Zeros of a Function</title>
     <p>
-      Let's look one really cool application of linear approximations before we finish things up in this section.
+      Let's look at one really cool application of linear approximations before we finish things up in this section.
     </p>
     <p>
       In approximately 60 AD, Heron of Alexandria presented a method for approximating square roots (probably...historians know very little about exactly when Heron was born and died, but they think he saw an eclipse that matched one from 62 AD, so it's a good guess). This algorithm was presented along with different formulas for volumes and surface areas of a mixture of objects. 
@@ -96,14 +96,14 @@
       </p>
     </aside>
     <p>
-      Over 1000 years later, in the late 1660's, Isaac Newton was one of a long list of mathematicians  to recreate this formula in a more general way, where we can use it to approximate roots of polynomials. This method was later extended by several different mathematicians, and is now known as the <term>Newton-Raphson method</term>, or sometimes more simply <term>Newton's method</term>.
+      More than 1000 years later, in the late 1660's, Isaac Newton was one of a long list of mathematicians  to recreate this formula in a more general way, where we can use it to approximate roots of polynomials. This method was later extended by several different mathematicians, and is now known as the <term>Newton-Raphson method</term>, or sometimes more simply <term>Newton's method</term>.
     </p>
     <xi:include href="./activities/act-NewtonsMethod.ptx" />
     <definition xml:id="def-NewtonsMethod">
       <title>Newton's Method for Approximating Zeros of Functions</title>
       <statement>
         <p>
-          If <m>x_0</m> is some initial estimation of a solution to <m>f(x)=0</m>, then we we can iteratively generate more estimations using the following formula:
+          If <m>x_0</m> is some initial estimation of a solution to <m>f(x)=0</m>, then we can iteratively generate more estimations using the following formula
           <me>x_n = x_{n-1} - \frac{f(x_{n-1})}{f'(x_{n-1})}</me> 
           provided that <m>f'(x_{n-1})</m> exists and is non-zero.
         </p>

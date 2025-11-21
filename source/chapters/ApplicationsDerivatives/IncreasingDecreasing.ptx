@@ -49,7 +49,7 @@
     </definition>
     <aside>
       <p>
-        If you look around online, or in other textbooks, you'll find different definitions of these same kinds of pints. Some of those definitions have silly stipulations, like saying that an ending point of a function cannot be a local maximum/local minimum.
+        If you look around online, or in other textbooks, you'll find different definitions of these same kinds of points. Some of those definitions have silly stipulations, like saying that an ending point of a function cannot be a local maximum/local minimum.
       </p>
       <p>
         This seems to come from some sense that the derivative must be defined on each <q>side</q> of a local max/min. In this book, we'll not worry about this restriction, and instead just look at the highest and lowest points relative to the other points near it.
@@ -89,7 +89,7 @@
       This is great, we have a nice strategy for thinking about critical points!
     </p>
     <p> 
-      Something we can notice: in finding these critical points (as well as thinking about the domain of the function), we found <em>all</em> of the locations where the derivative is both not positive and not negative. This is a weird way of saying that all of the intervals in between the critical points we found and any breaks in the domain of the function (like if there were vertical asymptotes or holes or something) are places where the derivative is positive or negative.
+      Something we can notice in finding these critical points (as well as thinking about the domain of the function), we found <em>all</em> of the locations where the derivative is both not positive and not negative. This is a weird way of saying that all of the intervals in between the critical points we found and any breaks in the domain of the function (like if there were vertical asymptotes or holes or something) are places where the derivative is positive or negative.
   </p>
   <p>
       Even more exciting: if the derivative function we found is continuous, then the <xref ref="thm-IVT" text="title"/> says that it will <em>only</em> change signs at these critical points (or places like vertical asymptotes or holes). So this means that we can always construct a little chart or something, think about the <m>x</m>-values around and at critical points or other breaks in the domain, and then look at what the derivative does as we move through those intervals and <m>x</m>-values.

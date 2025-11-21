@@ -2,7 +2,7 @@
     <title>Walking in the Footsteps of Ancient Mathematicians</title>
     <introduction>
         <p>
-            Let's travel all the way back to the first (or maybe second) century AD and recreate Heron's method to approximate the value of <m>\sqrt{2}</m>. We'll develop this using modern calculus, and simple linear approximation.
+            Let's travel all the way back to the first (or maybe second) century AD and re-create Heron's method to approximate the value of <m>\sqrt{2}</m>. We'll develop this using modern calculus, and simple linear approximation.
         </p>
         <p>
             We're going to reframe the problem, and instead we're going to try to use a linear approximation of <m>f(x)=x^2-2</m> to approximate the <m>x</m>-value where <m>f(x)=0</m>. We know enough about quadratic functions to know that there are two values: <m>x=-\sqrt{2}</m> and <m>x=\sqrt{2}</m>.
@@ -101,7 +101,7 @@
                 We can keep repeating this process, and that's exactly what the mathematicians we talked about discovered.
             </p>
             <p>
-                Say we've build a linear approximation at some <m>x</m>-value (we'll call it <m>x_{\text{old}}</m>).
+                Say we've built a linear approximation at some <m>x</m>-value (we'll call it <m>x_{\text{old}}</m>).
                 <me>
                     L(x) = f'(x_{\text{old}})(x-x_{\text{old}}) + f(x_{\text{old}})
                 </me>.
