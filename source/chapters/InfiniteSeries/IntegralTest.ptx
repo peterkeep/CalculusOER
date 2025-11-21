@@ -11,7 +11,7 @@
       Earlier (in <xref ref="subsec-SequencesAsFunctions" text="title"/>) we tried to describe sequences as just a special kind of function: the domain is the set of non-negative integer (or positive integers, depending on whether we start our index at <m>n=0</m> or <m>n=1</m>) and we map these inputs to real number outputs. And now we want to think about what it might mean to accumulate the values of these kinds of functions.
     </p>
     <p>
-      Function value accumulation is what we've been looking at lately! That's what integration is! We are trying to accumulate all of the function values and weigh them based on their "width." In the context of continuous functions, that means we start approximating this accumulation by looking at some finite number of function values that we pick, and we give them some <m>\Delta x</m> width between them. That's our Riemann sum:
+      Function value accumulation is what we've been looking at lately! That's what integration is! We are trying to accumulate all of the function values and weigh them based on their <q>width.</q> In the context of continuous functions, that means we start approximating this accumulation by looking at some finite number of function values that we pick, and we give them some <m>\Delta x</m> width between them. That's our Riemann sum:
       <me>
         \sum_{k=1}^n f(x_k^*) \; \Delta x
       </me>

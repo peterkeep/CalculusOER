@@ -34,7 +34,7 @@
         </li>
         <li>
           <p>
-            We can take advantage of similar structure or common term formulas when we see them to essentially say, "This series kind of looks like one that I recognize. I wonder if they act the same?"
+            We can take advantage of similar structure or common term formulas when we see them to essentially say, <q>This series kind of looks like one that I recognize. I wonder if they act the same?</q>
           </p>
         </li>
         <li>
@@ -58,7 +58,7 @@
       To illustrate what we've done, let's think about two sequences of terms: <m>\{a_k\}_{k=0}^\infty</m> and <m>\{b_k\}_{k=0}^infty</m> where <m>a_k\leq b_k</m> for <m>k\geq 0</m>. We can think of the graphs, pictured below.
     </p>
     <figure xml:id="fig-ComparisonTest-Terms">
-      <caption>The "smaller" sequence of terms <m>\{a_k\}_{k=0}^\infty</m> graphed alongside the "bigger" sequence of terms <m>\{b_k\}_{k=0}^\infty</m>.</caption>
+      <caption>The <q>smaller</q> sequence of terms <m>\{a_k\}_{k=0}^\infty</m> graphed alongside the <q>bigger</q> sequence of terms <m>\{b_k\}_{k=0}^\infty</m>.</caption>
       <image source="./InfiniteSeries/ComparisonTest-Terms.png" width="80%">
         <shortdescription>A sequence of green dots, labeled {b_k}, decreasing to the horizontal axis. There is a second sequence of red dots, labeled {a_k}, also decreasing to the horizontal axis. At some point, the green dots look like they're on top of the red ones.</shortdescription>
       </image>
@@ -85,7 +85,7 @@
       </image>
     </figure>
     <p>
-      We can think that this "smaller" sequence of partial sums is "pushing" the "larger" sequence of partial sums up to infinity with it.
+      We can think that this <q>smaller</q> sequence of partial sums is <q>pushing</q> the <q>larger</q> sequence of partial sums up to infinity with it.
     </p>
     <p>
       These two cases make up our first comparison mechanic between two infinite series.
@@ -572,7 +572,7 @@
     </theorem>
     <note>
       <p>
-        We can extend this result pretty easily by loosening up the "rational function" requirement. If we have combinations of power functions (even with non-integer exponents), this works as well!
+        We can extend this result pretty easily by loosening up the <q>rational function</q> requirement. If we have combinations of power functions (even with non-integer exponents), this works as well!
       </p>
     </note>
   </subsection>
@@ -602,7 +602,7 @@
       We can set up some comparisons, like we did in this section, for each of these series individually. But is there a result similar to <xref ref="thm-RationalComparison"/> for series that act like a geometric series?
     </p>
     <p>
-      It turns out that the answer is a resounding, "Yes!" We just need to think about what aspects of a geometric series we're looking for.
+      It turns out that the answer is a resounding, <q>Yes!</q> We just need to think about what aspects of a geometric series we're looking for.
     </p>
   </conclusion>
 </section>

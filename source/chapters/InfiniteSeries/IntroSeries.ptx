@@ -21,7 +21,7 @@
       <ol>
         <li>
           <p>
-            Truncate the infinite series at some finite ending point. This is what we did with the integral, when we replaced the infinity with some real number variable <m>t</m>. We might use <m>n</m> for the series "ending index."
+            Truncate the infinite series at some finite ending point. This is what we did with the integral, when we replaced the infinity with some real number variable <m>t</m>. We might use <m>n</m> for the series <q>ending index.</q>
           </p>
         </li>
         <li>
@@ -231,7 +231,7 @@
       In this first example (as well as the example in <xref ref="act-IntroSeries"/>), we noticed that because of the exponential function defining the terms, we were able to find some nice patterns in the partial sums. We'll explore this a bit more later in <xref ref="sec-CommonSeries"/>.
     </p>
     <p>
-      Then in these other two examples, we noticed that once we could write each term as really a difference of two fractions that have a really similar structure, we got these "repeat" values from term to term where the opposite signs made things add up to 0. These are called "telescoping series," and they're mostly fun examples to think about partial sum formulas. We'll see some pop up later though, and Partial Fraction Decomposition is a nice trick to keep in mind for these kinds of things.
+      Then in these other two examples, we noticed that once we could write each term as really a difference of two fractions that have a really similar structure, we got these <q>repeat</q> values from term to term where the opposite signs made things add up to 0. These are called <q>telescoping series,</q> and they're mostly fun examples to think about partial sum formulas. We'll see some pop up later though, and Partial Fraction Decomposition is a nice trick to keep in mind for these kinds of things.
     </p>
   </subsection>
   

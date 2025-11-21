@@ -32,7 +32,7 @@
         <me>
           \dfrac{1+4+5}{3} = \dfrac{10}{3}
         </me>.
-        These are just different kinds of measures of "center" of a list of values, although you might be most familiar with the arithmetic mean.
+        These are just different kinds of measures of <q>center</q> of a list of values, although you might be most familiar with the arithmetic mean.
       </p>
     </aside>
     <definition xml:id="def-GeometricSeries">
@@ -169,13 +169,13 @@
     Here's some justification: for an infinite series like <m>\displaystyle \sum_{k=0}^\infty \frac{1}{k^2+1}</m>, we previously (in <xref ref="ex-InvTanSeries"/>) compared this series to the integral <m>\displaystyle \int_{x=0}^{\infty} \frac{1}{x^2+1}\;dx</m>. This worked well, since we could pretty easily antidifferentiate and conclude that the integral converged.
   </p>
   <p>
-    Now, though, we have another connection to make: doesn't this series <em>almost</em> look like a <xref ref="def-pSeries" text="title"/>? It's very close to a reciprocal power function, where the only thing that's "off" is the "<m>+1</m>" in the denominator.
+    Now, though, we have another connection to make: doesn't this series <em>almost</em> look like a <xref ref="def-pSeries" text="title"/>? It's very close to a reciprocal power function, where the only thing that's <q>off</q> is the <q><m>+1</m></q> in the denominator.
   </p>
   <p>
     We can hopefully think about changing this example slightly: what about the series <m>\displaystyle \sum_{k=0}^\infty \frac{1}{k^3+1}</m>? This one could still be compared to the integral <m>\displaystyle \int_{x=0}^\infty \frac{1}{x^3+1}\;dx</m>, but this integral will be harder for us to integrate. But if we think about this as <em>almost</em> a <xref ref="def-pSeries" text="title"/>, then we might still be able to have some intuition about it's behavior: it <em>looks</em> kind of like a converging <m>p</m>-series, so shouldn't it also converge?
   </p>
   <p>
-    Our next section will develop this kind of comparison, where instead of comparing an "integral" in the discrete context to one in the continuous context (like we do in the <xref ref="thm-IntegralTest" text="title"/>), we can compare an "integral" in the discrete context to a similar one in a similar context.
+    Our next section will develop this kind of comparison, where instead of comparing an <q>integral</q> in the discrete context to one in the continuous context (like we do in the <xref ref="thm-IntegralTest" text="title"/>), we can compare an <q>integral</q> in the discrete context to a similar one in a similar context.
   </p>
 </conclusion>
 </section>
