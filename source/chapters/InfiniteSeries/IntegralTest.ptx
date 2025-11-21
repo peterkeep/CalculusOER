@@ -119,7 +119,7 @@
                 <me>
                   \lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx = \infty
                 </me>.
-                We can re-consider the inequalities from <xref ref="act-IntegralTest"/>:
+                We can reconsider the inequalities from <xref ref="act-IntegralTest"/>:
                 <md>
                   <mrow>\int_{x=0}^{x=n} f(x)\;dx \amp\lt \sum_{k=0}^n a_k </mrow>
                   <mrow>\lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx \amp \lt \lim_{n\to\infty} \sum_{k=0}^n a_k</mrow>
@@ -195,7 +195,7 @@
         </statement>
         <hint>
           <p>
-            We can re-write <m>\dfrac{1}{e^{k^2}}</m> to <m>e^{-k^2}</m>, and so we're thinking about the integral <m>\displaystyle\int_{x=0}^\infty e^{-x^2}\;dx</m>. Does this function meet the conditions of the Integral Test? Can we antidifferentiate?
+            We can rewrite <m>\dfrac{1}{e^{k^2}}</m> to <m>e^{-k^2}</m>, and so we're thinking about the integral <m>\displaystyle\int_{x=0}^\infty e^{-x^2}\;dx</m>. Does this function meet the conditions of the Integral Test? Can we antidifferentiate?
           </p>
         </hint>
         <solution>

@@ -267,7 +267,7 @@
     <subsection xml:id="subsec-RecursiveLimits">
         <title>Some Cool Recursive Examples</title>
     <p>
-        Let's re-visit one of the recursively defined sequences that we've seen already and then think about a couple of other interesting ones. Before we do that, though, we should recognize why we need to treat recursively defined sequences a bit differently than ones defined explicitly.
+        Let's revisit one of the recursively defined sequences that we've seen already and then think about a couple of other interesting ones. Before we do that, though, we should recognize why we need to treat recursively defined sequences a bit differently than ones defined explicitly.
     </p>
     <p>
         In an explicit formula, the terms themselves are a function of <m>k</m>, the index. This means that we can simply apply a limit as <m>k\to\infty</m> to understand whether or not the sequence converges and what it might converge to. These limits could be tricky, but we have the tools to evaluate them! In a recursion relation, though, each term is not a function of the index, which means we can't easily apply a limit as <m>k\to\infty</m> to the term definition.
@@ -277,7 +277,7 @@
     </p>
     <example xml:id="ex-FirstRecursiveSequence">
         <introduction>
-        <p>Let's re-visit the first sequence from <xref ref="ex-PracticeWritingTerms"/>: <m>\{a_k\}_{k=1}^\infty</m> where <m>a_1 = \frac{1}{3}</m> and <m>a_{k} = 2(a_{k-1})^2</m>.</p>
+        <p>Let's revisit the first sequence from <xref ref="ex-PracticeWritingTerms"/>: <m>\{a_k\}_{k=1}^\infty</m> where <m>a_1 = \frac{1}{3}</m> and <m>a_{k} = 2(a_{k-1})^2</m>.</p>
         </introduction>
         <task>
             <statement>
