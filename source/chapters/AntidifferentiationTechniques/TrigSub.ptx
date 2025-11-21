@@ -17,7 +17,7 @@
   <subsection xml:id="subsec-AnotherVariableSubstitution">
     <title>Another Type of Variable Substitution</title>
     <p>
-      We're going to employ another variable substitution, in the same way that we use <m>u</m>-substitution. The main difference is the goal: we're going to select our substitution not based on uncovering the composition in our function (like in <m>u</m>-substitution). Instead, we'll focus on selecting a trigonometric function in order to utilize the relevant Pythagorean identity to re-write our sum or difference of squares.
+      We're going to employ another variable substitution, in the same way that we use <m>u</m>-substitution. The main difference is the goal: we're going to select our substitution not based on uncovering the composition in our function (like in <m>u</m>-substitution). Instead, we'll focus on selecting a trigonometric function in order to utilize the relevant Pythagorean identity to rewrite our sum or difference of squares.
     </p>
     <figure xml:id="fig-TrigSub">
       <caption>General idea of how this variable substitution works.</caption>
@@ -209,7 +209,7 @@
           We can finish the substitution we started in <xref ref="act-DifferenceOfSquares"/>. We used the substitution <m>x=\sin(\theta)</m>, but we can now construct the relevant triangle.
         </p>
         <p>
-          Since we were hoping so use a substitution to re-write the difference of squares, <m>\sqrt{1-x^2}</m>, we had the following triangle:
+          Since we were hoping so use a substitution to rewrite the difference of squares, <m>\sqrt{1-x^2}</m>, we had the following triangle:
         </p>
         <figure>
           <caption>Substitution used in <xref ref="act-DifferenceOfSquares"/>.</caption>

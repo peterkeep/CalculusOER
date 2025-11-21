@@ -16,7 +16,7 @@
     <example>
       <introduction>
         <p>
-          For each of the following integrals, re-write the integrand function using some algebraic manipulation, trigonometric identity, or some other strategy. Then, once the integrand function is in a friendlier form, antidifferentiate.
+          For each of the following integrals, rewrite the integrand function using some algebraic manipulation, trigonometric identity, or some other strategy. Then, once the integrand function is in a friendlier form, antidifferentiate.
         </p>
       </introduction>
       <task>
@@ -74,18 +74,18 @@
       </task>
     </example>
     <p>
-      Let's look at one more type of example, just to re-iterate what we're thinking about with these re-written functions.
+      Let's look at one more type of example, just to reiterate what we're thinking about with these rewritten functions.
     </p>
     <xi:include href="./activities/act-NegativeExponent.ptx" />
     <example>
       <statement>
         <p>
-          Re-write the integrand function for <m>\displaystyle \int \frac{1}{x+x^{-1}}\;dx</m>, and then integrate using an appropriate substitution.
+          Rewrite the integrand function for <m>\displaystyle \int \frac{1}{x+x^{-1}}\;dx</m>, and then integrate using an appropriate substitution.
         </p>
       </statement>
       <hint>
         <p>
-          Try to re-write this integral by noticing that <m>x^{-1}=\dfrac{1}{x}</m>. Then try to make the resulting fraction a bit nicer to look at, since it has a fraction inside of the denominator of another fraction.
+          Try to rewrite this integral by noticing that <m>x^{-1}=\dfrac{1}{x}</m>. Then try to make the resulting fraction a bit nicer to look at, since it has a fraction inside of the denominator of another fraction.
         </p>
       </hint>
       <solution>
@@ -109,14 +109,14 @@
   <subsection xml:id="subsec-RationalFunctions">
     <title>Antidifferentiating Rational Functions</title>
     <p>
-      Strategies for antidifferentiating rational functions are just that: strategies. There isn't one consistent rule to use to antidifferentiate these (like there is with derivatives and the Quotient Rule), but we'll find some common tactics to apply and try to build our intuition for noticing the different kinds of structure we can have in these rational functions. All of these strategies are based around cleverly re-writing our rational functions (using some algebraic manipulations) to reveal some structure. We'll try to notice the structure, so that we know what we're trying to reveal.
+      Strategies for antidifferentiating rational functions are just that: strategies. There isn't one consistent rule to use to antidifferentiate these (like there is with derivatives and the Quotient Rule), but we'll find some common tactics to apply and try to build our intuition for noticing the different kinds of structure we can have in these rational functions. All of these strategies are based around cleverly rewriting our rational functions (using some algebraic manipulations) to reveal some structure. We'll try to notice the structure, so that we know what we're trying to reveal.
     </p>
     <xi:include href="./activities/act-Division.ptx" />
     <p>
       This gives us a good approach for whenever division will help us rewrite our rational function as some polynomial and a remainder.
     </p>
     <p>
-      Let's look at two more rational functions: these ones won't be good candidates to use long division, but we'll try to build some intuition for why we will need to re-write one of them to get a substitution that works.
+      Let's look at two more rational functions: these ones won't be good candidates to use long division, but we'll try to build some intuition for why we will need to rewrite one of them to get a substitution that works.
     </p>
     <xi:include href="./activities/act-LogVsInvTan.ptx" />
     <p>

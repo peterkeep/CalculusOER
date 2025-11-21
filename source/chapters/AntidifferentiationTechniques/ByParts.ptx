@@ -14,7 +14,7 @@
     <title>Discovering the Integration by Parts Formula</title>
     <xi:include href="./activities/act-IntegrationByParts.ptx" />
    <p>
-    We typically use the substitutions <m>du = u'\;dx</m> and <m>dv=v'\;dx</m> to re-write the integrals.
+    We typically use the substitutions <m>du = u'\;dx</m> and <m>dv=v'\;dx</m> to rewrite the integrals.
    </p> 
   <assemblage xml:id="strat-IntegrationByParts">
     <title>Integration by Parts</title>      
@@ -120,7 +120,7 @@
   <subsection xml:id="subsec-FlexibleChoices">
     <title>Some Flexible Choices for Parts</title>
     <p>
-      We're going to look at a couple of examples where we can showcase some of the flexibility we have with our choices of parts. First, we'll revisit <xref ref="ex-2xarctan"/>.In this example, when we got to that second integral, we noticed that for the fraction <m>\frac{x^2}{x^2+1}</m>, we could either do some long division (since the degrees in the numerator and denominator are the same) or do some clever re-writing of the numerator. Either way, we know that this fraction is <em>almost</em> 1...It's really <m>1\pm</m> some bit (in this case, the extra bit was a fraction <m>\frac{1}{x^2+1}</m>).
+      We're going to look at a couple of examples where we can showcase some of the flexibility we have with our choices of parts. First, we'll revisit <xref ref="ex-2xarctan"/>.In this example, when we got to that second integral, we noticed that for the fraction <m>\frac{x^2}{x^2+1}</m>, we could either do some long division (since the degrees in the numerator and denominator are the same) or do some clever rewriting of the numerator. Either way, we know that this fraction is <em>almost</em> 1...It's really <m>1\pm</m> some bit (in this case, the extra bit was a fraction <m>\frac{1}{x^2+1}</m>).
     </p>
     <p>
       What if we chose our parts differently? Not the <m>u</m> and <m>dv</m> parts, though, since we still haven't figured out how to antidifferentiate <m>\tan^{-1}(x)</m>. But we get one more choice!
@@ -285,7 +285,7 @@
         </statement>
         <hint>  
           <p>
-            This one is pretty straight forward, since it doesn't really matter what we select as our parts. Notice, though, that this isn't the only way we can approach this! We can use <m>u</m>-substitution, or even re-write this using a trigonometric identity.
+            This one is pretty straight forward, since it doesn't really matter what we select as our parts. Notice, though, that this isn't the only way we can approach this! We can use <m>u</m>-substitution, or even rewrite this using a trigonometric identity.
           </p>
         </hint>
         <solution>

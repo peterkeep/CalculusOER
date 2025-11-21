@@ -30,12 +30,12 @@
     <task>
         <statement>
             <p>
-                Re-write the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?
+                Rewrite the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?
             </p>
         </statement>
         <hint>
             <p>
-                Re-write <m>e^{-x}</m> as <m>\frac{1}{e^x}</m>, giving you:
+                Rewrite <m>e^{-x}</m> as <m>\frac{1}{e^x}</m>, giving you:
                 <me>
                     \int \frac{1}{1+\frac{1}{e^x}}\;dx
                 </me>.
