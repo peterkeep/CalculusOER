@@ -1,0 +1,210 @@
+<exercises xml:id="ex-MoreDefiniteIntegrals">
+    <exercise>
+        <statement>
+            <p>
+                Explain how we can use the different types of symmetry can help us as we evaluate the definite integral <m>\displaystyle\int_{x=-a}^{x=a} f(x)\;dx</m>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Use the definition of <em>even symmetric</em> (where <m>f(-x) = f(x)</m> for all <m>x</m>-values) to explain why <m>\displaystyle\int_{x=-4}^{x=4} f(x)\;dx = 2\displaystyle\int_{x=0}^{x=4}f(x)\;dx</m> for an even symmetric function <m>f(x)</m>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Use the definition of <em>odd symmetric</em> (where <m>f(-x) = -f(x)</m> for all <m>x</m>-values) to explain why <m>\displaystyle\int_{x=-4}^{x=4} f(x)\;dx = 0</m> for an odd symmetric function <m>f(x)</m>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Assume that <m>f(x)</m> is some even symmetric function with <m>\displaystyle\int_{x=0}^{x=6} f(x)\;dx = 4</m> and <m>\displaystyle\int_{x=-3}^{x=0} f(x) \;dx= 9</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Sketch a possible graph of the function <m>f(x)</m>, and shade in the areas from the integrals listed.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate <m>\displaystyle\int_{x=0}^{x=3} f(x)\;dx</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate <m>\displaystyle\int_{x=3}^{x=6} f(x)\;dx</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate <m>\displaystyle\int_{x=-6}^{x=-3} f(x)\;dx</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate <m>\displaystyle\int_{x=-6}^{x=6} f(x)\;dx</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Assume that <m>g(x)</m> is some odd symmetric function with <m>\displaystyle\int_{x=0}^{x=6} g(x)\;dx = 4</m> and <m>\displaystyle\int_{x=-3}^{x=0} g(x) \;dx= 9</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Sketch a possible graph of the function <m>g(x)</m>, and shade in the areas from the integrals listed.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate <m>\displaystyle\int_{x=0}^{x=3} g(x)\;dx</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate <m>\displaystyle\int_{x=3}^{x=6} g(x)\;dx</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate <m>\displaystyle\int_{x=-6}^{x=-3} g(x)\;dx</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate <m>\displaystyle\int_{x=-6}^{x=6} g(x)\;dx</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Explain how to find the average height of a function on an interval. Why does this work?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Note that <m>y=\sin(x)</m> is odd symmetric and <m>y=x^2</m> is even symmetric.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Show that <m>f(x) = x^2\sin(x)</m> is odd symmetric by showing that <m>f(-x) = -f(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate <m>\displaystyle\int_{x=-\pi}^{x=\pi} x^2\sin(x)\;dx</m>.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    You shouldn't need to find an antiderivative for this function, which is good news (since this is a tricky function to antidifferentiate).
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find the average height of <m>f(x)</m> on the interval <m>[-\pi, \pi]</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Note that <m>y=\cos(x)</m> is even symmetric and <m>y=x^2</m> is even symmetric.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Show that <m>f(x) = x^2\cos(x)</m> is even symmetric by showing that <m>f(-x) = f(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Given that <m>\displaystyle\int_{x=0}^{x=\pi} x^2\cos(x)\;dx = -2\pi</m>, evaluate <m>\displaystyle\int_{x=-\pi}^{x=\pi} x^2\cos(x)\;dx</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find the average height of <m>f(x)</m> on the interval <m>[-\pi,\pi]</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Find the average height of the following functions on the intervals listed.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = e^x -x</m> on <m>[0,3]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>g(x) = \cos(x) + x</m> on <m>\left[0,\frac{\pi}{2}\right]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>j(x) = \dfrac{1}{1+x^2}</m> on <m>[-1,1]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\ell(x) = \dfrac{1}{x^2}</m> on <m>[1,4]</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

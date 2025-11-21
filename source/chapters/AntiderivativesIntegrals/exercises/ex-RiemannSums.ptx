@@ -1,0 +1,262 @@
+<exercises xml:id="ex-RiemannSums">
+    <exercise>
+        <statement>
+            <p>
+                Explain in words how we will approximate the area bounded between a function and the <m>x</m>-axis between two <m>x</m>-values, <m>x=a</m> and <m>x=b</m>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the function <m>f(x) = x^2+1</m> on the interval <m>[0,2]</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Divide the interval <m>[0,2]</m> into 5 equally sized subintervals.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What is the width of each subinterval, <m>\Delta x</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Pick an <m>x</m>-value from each of the subintervals. Label them <m>x_1^*, x_2^*, ..., x_5^*</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find the function outputs at each of the <m>x_k^*</m> values for <m>k=1,2,...,5</m>, <m>f(x_1^*), f(x_2^*), ..., f(x_5^*)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Multiply each of the function values above by <m>\Delta x</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Add each of the values above together.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Interpret this sum. What does this represent? What does it approximate?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Draw the Riemann sum you built above. Your graph should include the graph of <m>f(x) = x^2+1</m> as well as 5 rectangles, with heights defined by the points you found above.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Let's consider a function <m>f(x)</m> that is continuous on some interval <m>[a,b]</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    In the construction of a Riemann sum, we use <m>x</m>-values notated <m>x_k^*</m>. What are these? Explain them.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What does it mean to construct a Left Riemann sum?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What does it mean to construct a Right Riemann sum?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What does it mean to construct a Midpoint Riemann sum?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the function <m>g(x)</m> with the following function values.
+            </p>
+            <table>
+                <title>Function values for <m>g(x)</m></title>
+                <tabular>
+                    <row halign="center" bottom="medium">
+                        <cell><m>x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>0.5</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>1.5</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>2.5</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>3.5</m></cell>
+                        <cell><m>4</m></cell>
+                    </row>
+                    <row halign="center">
+                        <cell><m>g(x)</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>-4</m></cell>
+                        <cell><m>7</m></cell>
+                        <cell><m>0.5</m></cell>
+                        <cell><m>-1</m></cell>
+                        <cell><m>3.5</m></cell>
+                        <cell><m>-3</m></cell>
+                        <cell><m>1</m></cell>
+                    </row>
+                </tabular>
+            </table>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Approximate the area bounded between the curve <m>y=g(x)</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=4</m> using a Right Riemann sum with <m>n=4</m> rectangles (<m>R_4</m>).
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Approximate the area bounded between the curve <m>y=g(x)</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=4</m> using a Left Riemann sum with <m>n=4</m> rectangles (<m>L_4</m>).
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Approximate the area bounded between the curve <m>y=g(x)</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=4</m> using a Midpoint Riemann sum with <m>n=4</m> rectangles (<m>M_4</m>).
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Approximate the area bounded between the curve <m>y=g(x)</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=4</m> using a Right Riemann sum with <m>n=8</m> rectangles (<m>R_8</m>).
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Approximate the area bounded between the curve <m>y=g(x)</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=4</m> using a Left Riemann sum with <m>n=8</m> rectangles (<m>L_8</m>).
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Evaluate the following Riemann sums to approximate areas described. Sketch a picture of the region and Riemann sum for each.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    The area bounded by the graph of <m>f(x) = \dfrac{x^3}{2} - 3x^2 + 4x +2</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=2</m> using an <m>L_5</m> Riemann sum.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The area bounded by the graph of <m>g(x) = \dfrac{x^3}{2} - 3x^2 + 4x +2</m> and the <m>x</m>-axis between <m>x=2</m> and <m>x=4</m> using an <m>R_3</m> Riemann sum.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The area bounded by the graph of <m>j(x) = \sqrt{x}-x</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=1</m> using an <m>L_4</m> Riemann sum.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The area bounded by the graph of <m>j(x) = \sqrt{x}-x</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=1</m> using an <m>M_4</m> Riemann sum.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The area bounded by the graph of <m>j(x) = \sqrt{x}-x</m> and the <m>x</m>-axis between <m>x=0</m> and <m>x=2</m> using an <m>R_5</m> Riemann sum.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Consider a function that is increasing on the interval <m>[a,b]</m>. Will a Left Riemann sum overapproximate or underapproximate the true area bounded between the curve of <m>f(x)</m> and the <m>x</m>-axis on the interval <m>[a,b]</m>? What about a Right Riemann sum?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                 Consider a function that is decreasing on the interval <m>[a,b]</m>. Will a Left Riemann sum overapproximate or underapproximate the true area bounded between the curve of <m>f(x)</m> and the <m>x</m>-axis on the interval <m>[a,b]</m>? What about a Right Riemann sum?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each pair of Riemann sums, explain which one you think most accurately estimates the area under the curve <m>f(x)</m> from <m>[a,b]</m>, or explain why it is impossible or difficult to tell.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>L_5</m> or <m>R_5</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>L_8</m> or <m>M_8</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>M_6</m> or <m>R_{10000}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

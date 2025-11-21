@@ -1,0 +1,383 @@
+<exercises xml:id="ex-FTOC">
+    <exercise>
+        <statement>
+            <p>
+                The Fundamental Theorem of Calculus comes in two parts. Explain why the <xref ref="thm-FTOC1" text="title"/> guarantees that any function that is continuous on an interval has an antiderivative on that interval.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                The Fundamental Theorem of Calculus comes in two parts. Explain what the <xref ref="thm-FTOC2" text="title"/> says about evaluating definite integrals.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the function <m>f(x) = x</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Sketch the graph of <m>f(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use geometry to find the area under the curve <m>f(x) = x</m> from <m>x=0</m> to <m>x=1</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use geometry to find the area under the curve <m>f(x) = x</m> from <m>x=0</m> to <m>x=4</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use geometry to find the area under the curve <m>f(x) = x</m> from <m>x=0</m> to some unknown <m>x</m>-value with <m>x\gt 0</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Write your area formula from above as a function <m>A(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find <m>A'(x)</m>. How does this connect with the function <m>f(x) = x</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the function <m>f(x) = 4x+1</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Sketch the graph of <m>f(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use geometry to find the area under the curve <m>f(x) = x</m> from <m>x=2</m> to <m>x=3</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use geometry to find the area under the curve <m>f(x) = x</m> from <m>x=2</m> to <m>x=5</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use geometry to find the area under the curve <m>f(x) = x</m> from <m>x=2</m> to some unknown <m>x</m>-value with <m>x\gt 2</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Write your area formula from above as a function <m>A(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find <m>A'(x)</m>. How does this connect with the function <m>f(x) = 4x+1</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the function <m>f(x) = 3x^2+6</m> on the interval <m>x=-1</m> to <m>x=3</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Find an antiderivative of <m>f(x)</m>. Call it <m>F(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate <m>F(3)</m> and <m>F(-1)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find a different antiderivative of <m>f(x)</m>. Call it <m>\tilde{F}(x)</m>.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    We know that all of the antiderivatives of <m>f(x)</m> are only different by the constant term.
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate <m>\tilde{F}(3)</m> and <m>\tilde{F}(-1)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Compare your answers in (b) and (d). What of these is similar? What of these are different?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate the definite integral <m>\displaystyle\int_{x=-1}^{x=3}\left(3x^2+6\right)\;dx</m> using the Fundamental Theorem of Calculus.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    When evaluating a definite integral using the Fundamental Theorem of Calculus, why does it not matter which antiderivative of <m>f(x)</m> you use?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the graph of the first derivative <m>f'(x)</m> below.
+            </p>
+            <figure xml:id="fig-FTOCDerivative">
+                <caption>Graph of a first derivative, <m>f'(x)</m>.</caption>
+                <image source="./AntiderivativesIntegrals/FTOCDerivative.png" width="50%">
+                    <shortdescription>A graph labeled f'(x). It starts at (x1,0), increases to x2, decreases to (x3,0), decreases to x4, increases to (x5,0), increases to x6, decreases to (x7,0), decreases to x8, and then increases to (x9,0) and beyond.</shortdescription>
+                </image>
+            </figure>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Where is the function <m>f(x)</m> increasing? Where is it decreasing?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Where are the local maximums and/or local minimums of <m>f(x)</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Where is the function <m>f(x)</m> concave up? Where is it concave down?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Where are the inflection points of <m>f(x)</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Sketch a graph of <m>f(x)</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the graph of the function <m>g(t)</m> below with the Area function <m>A(x) = \displaystyle\int_{t=x_1}^{t=x} g(t)\;dt</m> shaded in.
+            </p>
+            <figure xml:id="fig-FTOCArea">
+                <caption>Graph of <m>g(t)</m> and the area function, <m>A(x)</m>.</caption>
+                <image source="./AntiderivativesIntegrals/FTOCArea.png" width="50%">
+                    <shortdescription>A graph labeled g(t). It starts at (x1,0), increases to x2, decreases to (x3,0), decreases to x4, increases to (x5,0), increases to x6, decreases to (x7,0), decreases to x8, and then increases to (x9,0) and beyond. There is a point at (x,g(x)), where the area shaded under the curve g(t) from t=x1 to t=x is labeled A(x).</shortdescription>
+                </image>
+            </figure>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Where is the function <m>A(x)</m> increasing? Where is it decreasing?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Where are the local maximums and/or local minimums of <m>A(x)</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Where is the function <m>A(x)</m> concave up? Where is it concave down?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Where are the inflection points of <m>A(x)</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Sketch a graph of <m>A(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Compare your answers to the answers above. What can you conclude about the relationship between <m>A(x)</m> and <m>g(x)</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the definite integrals below, evaluate using the Fundamental Theorem of Calculus.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=1}^{x=5} \left(3x^2+6\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=1}^{x=4} \sqrt{x}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=0}^{x=\pi/4} \left(\cos(x)+4\sin(x)\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=-1}^{x=1} \left(\frac{1}{1+x^2}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=0}^{x=\pi} \left(\sin(x)\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{t=-2}^{t=1} (t^5 + 2t^4 - 2t^3 + t^2 - 4t -2)\;dt</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=1}^{x=3} \left(\frac{1}{x^2} + \frac{1}{x}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=0}^{x=5} (e^x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=\pi/4}^{x=\pi/3} \left(-5\sec^{2}(x)\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=1}^{x=2} \left(\frac{xe^x-1}{x}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=1}^{x=6} \left(\frac{3}{\sqrt{x}} + \frac{1}{\sqrt[3]{x^2}}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=-1}^{x=2} \left(x(x-1)(x-4)\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=2}^{x=4} \left(\frac{4}{3x} - \frac{3x}{4}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{\theta=\pi/3}^{\theta=\pi/2} \left( \frac{\cos\theta}{\sin^2\theta} \right)\;d\theta</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

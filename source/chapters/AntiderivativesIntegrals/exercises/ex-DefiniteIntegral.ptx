@@ -1,0 +1,172 @@
+<exercises xml:id="ex-DefiniteIntegral">
+    <exercise>
+        <statement>
+            <p>
+                Explain what <m>\displaystyle\int_{x=a}^{x=b} f(x)\;dx</m> means geometrically/graphically.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                What does <q>signed</q> area or <q>net</q> area mean?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Sketch the integral <m>\displaystyle\int_{x=0}^{x=2\pi} \left(\sin(x)\right)\;dx</m>. Estimate this value from the sketch you drew. Explain your answer.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Using the idea of Riemann sums, explain why area ``under'' the <m>x</m>-axis is considered negative.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Using the idea of Riemann sums, explain why the <m>\displaystyle\int_{x=a}^{x=b} f(x)\;dx = -\displaystyle\int_{x=b}^{x=a} f(x)\;dx</m>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following definite integrals, sketch the integral and use geometry to evaluate the definite integral. Feel free to use desmos to visualize the graphs of functions.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=0}^{x=4} \left(5\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=0}^{x=3} \left(2x\right) \;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=1}^{x=2} \left(x+6\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=-3}^{x=3} \left(\sqrt{9-x^2}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=0}^{x=2} \left(-\sqrt{4-x^2}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the function <m>f(x)</m>, graphed below, with areas of different regions noted (without noting sign of the area).
+            </p>
+            <figure xml:id="fig-LabeledArea">
+                <caption>Graph of <m>f(x)</m> with labeled areas.</caption>
+                <image source="./AntiderivativesIntegrals/LabeledArea.png" width="50%">
+                    <shortdescription>A graph of a function that starts negative at x=a, increases to (0,0), then increases to some point at x=b, increases further and then decreases to (c,0). The region from x=a to x=0 is labeled with Area=pi, the region from x=0 to x=b is labeled with Area=pi+1, and the region from x=b to x=c is labeled x=pi^2+pi.</shortdescription>
+                </image>
+            </figure>
+            <p>
+                 Evaluate the following definite integrals.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=a}^{x=0} f(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=a}^{x=b} f(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=0}^{x=c} f(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=a}^{x=c} f(x)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=a}^{x=c} |f(x)|\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=a}^{x=c} \left(f(x) + 1\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Say we are given that <m>\displaystyle\int_{x=0}^{x=5} f(x)\;dx = 10</m>, <m>\displaystyle\int_{x=5}^{x=9} f(x)\;dx = -2</m>, and <m>\displaystyle\int_{x=0}^{x=9} g(x) \;dx = -6</m>. Evaluate each of the following.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=0}^{x=9} \left(f(x)-g(x)\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=0}^{x=5} \left(\frac{f(x)}{3}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=0}^{x=9} \left(3g(x) + 4\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\int_{x=0}^{x=9} \left(2g(x) + f(x)\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
