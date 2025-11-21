@@ -7,7 +7,7 @@
       We've seen now that <xref ref="sec-uSubstitution" text="title"/> is a useful technique for undo-ing <xref ref="thm-ChainRule" text="title"/>. We set up the variable substitution with the specific goal of going backwards through the Chain Rule and antidifferentiating some composition of functions.
     </p>
     <p>
-      A reasonable next step is to ask: What other derivative rules can we "undo?" What other operations between functions should we think about? This brings us to Integration by Parts, the integration technique specifically for undo-ing <xref ref="thm-ProductRule" text="title"/>.
+      A reasonable next step is to ask: What other derivative rules can we <q>undo?</q> What other operations between functions should we think about? This brings us to Integration by Parts, the integration technique specifically for undo-ing <xref ref="thm-ProductRule" text="title"/>.
     </p>
   </introduction>
   <subsection xml:id="subsec-DiscoveringIntegrationByParts">
@@ -250,7 +250,7 @@
               &amp; = x^2\ln(x)-x^2 + \frac{x^2}{2} - \int x\ln(x)\;dx
             \end{aligned}
           </me>
-            Note that this last integral is really recognizable: it's the one we started with! Let's "solve" this equation for that integral by adding it to both sides of our equation.
+            Note that this last integral is really recognizable: it's the one we started with! Let's <q>solve</q> this equation for that integral by adding it to both sides of our equation.
           <me>
             \begin{aligned}
               2\int x\ln(x)\;dx &amp; = x^2\ln(x) - \frac{x^2}{2}\\
@@ -265,11 +265,11 @@
   <subsection xml:id="subsec-SolvingForIntegral">
     <title>Solving for the Integral</title>
     <p>
-      In this last example, we ended up seeing the original integral repeated when we did integration by parts. This is a useful technique, especially when we deal with functions that have a kind of "repeating" structure to their derivatives or antiderivatives. We'll look at a couple of classic integrals where we see this kind of technique employed. Let's have you explore this idea.
+      In this last example, we ended up seeing the original integral repeated when we did integration by parts. This is a useful technique, especially when we deal with functions that have a kind of <q>repeating</q> structure to their derivatives or antiderivatives. We'll look at a couple of classic integrals where we see this kind of technique employed. Let's have you explore this idea.
     </p>
     <xi:include href="./activities/act-SolveIntegral.ptx" />
     <p>
-      This "solving for the integral" approach works well, but works best when we can see it coming. Notice that it happened here due to the repeating structure of the derivatives of the sine and cosine functions, as well as the Pythagorean identities. We can see some more examples of this in play with similar functions!
+      This <q>solving for the integral</q> approach works well, but works best when we can see it coming. Notice that it happened here due to the repeating structure of the derivatives of the sine and cosine functions, as well as the Pythagorean identities. We can see some more examples of this in play with similar functions!
     </p>
     <example xml:id="ex-sincos">
       <introduction>

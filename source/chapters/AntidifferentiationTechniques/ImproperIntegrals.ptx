@@ -4,7 +4,7 @@
   <title>Improper Integrals</title>
   <introduction>
     <p>
-      We're going to think a bit about integration with a twist: what happens when our "definite" integrals can't actually be evaluated? First, let's try to sink ourselves back into the context we've been in for a while now: what kinds of problems have we encountered so far, and how do we use our calculus intuition to get around those problems?
+      We're going to think a bit about integration with a twist: what happens when our <q>definite</q> integrals can't actually be evaluated? First, let's try to sink ourselves back into the context we've been in for a while now: what kinds of problems have we encountered so far, and how do we use our calculus intuition to get around those problems?
     </p>
     <xi:include href="./activities/act-RememberingTheme.ptx" />
     <p> 
@@ -12,7 +12,7 @@
     </p>
     <xi:include href="./activities/act-RememberingFTOC.ptx" />
     <p>
-      This should build a pretty good idea of a new "class" of integrals: ones that aren't <em>quite</em> definite integrals that we can evaluate with the Fundamental Theorem of Calculus, but ones that we can use limits to get at.
+      This should build a pretty good idea of a new <q>class</q> of integrals: ones that aren't <em>quite</em> definite integrals that we can evaluate with the Fundamental Theorem of Calculus, but ones that we can use limits to get at.
     </p>
   </introduction>
   <subsection xml:id="subsec-ImproperIntegrals">
@@ -137,7 +137,7 @@
       </statement>
     </definition>
     <p>
-      All we've done here is added some language: we'll say that an improper integral diverges if the limit doesn't exist. And if the limit exists, we'll say that the improper integral "converges to <fillin characters="5" />."
+      All we've done here is added some language: we'll say that an improper integral diverges if the limit doesn't exist. And if the limit exists, we'll say that the improper integral <q>converges to <fillin characters="5" />.</q>
     </p>
   </subsection>
   <xi:include href="./exercises/ex-ImproperIntegrals.ptx" />
