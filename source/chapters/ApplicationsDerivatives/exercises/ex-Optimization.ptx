@@ -1,0 +1,118 @@
+<exercises xml:id="ex-Optimization">
+    <exercise>
+        <introduction>
+            <p>
+                When we set up an optimization problem, we normally look for some formula connecting information that we have with the thing we want to optimize, some sort of constraint or link between variables, and an clue to whether we want to find a maximum or minimum. From this, we work to create a <q>Calculus Statement</q> which includes a function (of one variable) that we want to find the absolute maximum or minimum of on a domain.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Why is it important to create a function of one variable? How do we normally do this?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Why is it important to find a domain for the function? How do we normally do this?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Why is it important to note whether we're looking for an absolute maximum or an absolute minimum?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Let's say we're looking at two positive numbers that add up to 7. What is the maximum product that we can get when we multiply these two numbers together?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Out of all of the rectangles that have an area of 24 square units, which one has the smallest perimeter? Report the dimensions and the perimeter.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider a box created from an 18in square piece of material. We form the box by cutting an <m>h</m>-inch square out of each corner, and folding the sides up along the dotted lines.
+            </p>
+            <figure xml:id="fig-Opt-Box">
+                <caption>Material for the box.</caption>
+                <image source="./ApplicationsDerivatives/opt-Box.png" width="50%">
+                    <shortdescription>A square with a dotted line square set inside of it, as if to fold on. The folds are labeled b. In each corner is a small cutout square, h by h. The total width of the square is 18.</shortdescription>
+                </image>
+            </figure>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    What are the dimensions of the resulting open-topped box?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    How are the values <m>b</m> and <m>h</m> related to each other?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What is the largest possible value for <m>h</m>? What is the corresponding value of <m>b</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What is the smallest possible value for <m>h</m>? What is the corresponding value of <m>b</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find the value for <m>h</m> that maximizes the volume of the box. What is the maximum volume? What are the dimensions of the box?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                A trucking service is looking to add a route to their plan, but the road that they are considering passes through a tunnel. The top of the opening above the driving lane is formed by the curve <m>y=4-\dfrac{4}{27}x^3</m>. The width from the center line to the edge of the tunnel is 3 meters. What are the dimensions for the largest rectangular trailer the trucking service could pull through the tunnel?
+            </p>
+            <figure xml:id="fig-Opt-Truck">
+                <caption>The truck in the tunnel.</caption>
+                <image source="./ApplicationsDerivatives/opt-Truck.png" width="50%">
+                    <shortdescription>A curve labeled y=4-4x^3/27 for x between 0 and 3. There is a rectangle spanning from the origin to the curve, touching the curve at (x,y). The height of the rectangle is labeled y, and the width is labeled x.</shortdescription>
+                </image>
+            </figure>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                A circular area of radius 20ft. is surrounded by a paved pathway. A lamp post is placed in the middle of the circular area. What height should the light be to illuminate the walk most strongly? The intensity of illumination is <m>I=\dfrac{\sin\theta}{s}</m> where <m>s</m> is the distance form the light source and <m>\theta</m> is the angle at which the light hits the surface.
+            </p>
+            <figure xml:id="fig-Opt-Light">
+                <caption>A solitary lampost.</caption>
+                <image source="./ApplicationsDerivatives/opt-Light.png" width="50%">
+                    <shortdescription>A lamp post stands in the middle of a circle on the ground. The post forms a right triangle, where the line connecting the light to the circle is labeled s. The radius of the circle/base of the triangle is labeled 20. The angle formed with the ground is labeled theta.</shortdescription>
+                </image>
+            </figure>
+        </statement>
+    </exercise>
+</exercises>

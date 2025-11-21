@@ -1,0 +1,70 @@
+<exercises xml:id="ex-GlobalMaxMins">
+    <exercise>
+        <statement>
+            <p>
+                What does the Extreme Value Theorem say? Why is it helpful?
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Where, in general, do we find global/absolute extrema?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each function, describe whether or not the Extreme Value Theorem applies (and explain why or why not). If it does apply, find the absolute maximum and absolute minimum.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^2+5x-4</m> on <m>[-4,2]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sqrt[3]{x+4}</m> on <m>[-6,-2]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = |x-1|</m> on <m>[-4,0]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{1}{x^2}</m> on <m>[-3,1]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^{2/3}(2-x)^2</m> on <m>[-1,1]</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) =
+      \begin{cases}
+        4x \amp \text{if } 0\leq x\lt 1\\
+        \sqrt{x} \amp \text{if } 1\leq x \leq 4
+      \end{cases}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

@@ -1,0 +1,261 @@
+<exercises xml:id="ex-LHopitalsRule">
+    <exercise>
+        <introduction>
+            <p>
+                Explain how to use L'Hôpital's Rule to evaluate a limit with the following indeterminate forms:
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>0/0</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\infty/\infty</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>0\cdot \infty</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>0^0</m>, <m>1^\infty</m>, or <m>\infty^0</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the following limit: <m>\displaystyle\lim_{x\to -2} \left(\frac{x+2}{x^2-4}\right)</m>
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Evaluate this limit using L'Hôpital's Rule.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate this limit without using L'Hôpital's Rule. Instead, use some algebraic manipulation of the function.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the following limit: <m>\displaystyle\lim_{x\to 3} \left(\frac{2+\frac{3}{x}-x}{x-3}\right)</m>
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Evaluate this limit using L'Hôpital's Rule.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate this limit without using L'Hôpital's Rule. Instead, use some algebraic manipulation of the function.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the following limit: <m>\displaystyle\lim_{x\to \infty} \left(\frac{2x^3-x^2+9x-1}{10-5x+3x^2-8x^4}\right)</m>
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Evaluate this limit using L'Hôpital's Rule.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate this limit without using L'Hôpital's Rule. Instead, use some algebraic manipulation of the function.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Give an example of:
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    A limit with a <m>0/0</m> indeterminate form that we wouldn't be able to evaluate using the basic algebraic manipulations we have. Use L'Hôpital's Rule to evaluate that limit.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    A limit with an <m>\infty/\infty</m> indeterminate form, and evaluate it using L'Hôpital's Rule.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    A limit with a <m>0/0</m> indeterminate form that equals <m>6</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    A limit with an <m>\infty/\infty</m> indeterminate form that equals <m>-2</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Evaluate the following limits using L'Hôpital's Rule.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to \infty}\left(\dfrac{e^{2x}+4x-2}{x^2+1}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 3}\left( \dfrac{x^3-x^2-4x-6}{x^2-5x+6} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to \infty}\left( \dfrac{\ln x}{x^2} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 0}\left( \dfrac{\sin(x) + x}{\cos(x)-2x} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 0}\left( \dfrac{e^x - \frac{x^3}{6} - \frac{x^2}{2}  - x - 1}{\cos x - \sin x - \frac{x^3}{6} + \frac{x^2}{2} + x - 1} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to \infty} \left( \frac{x^2+1}{e^{4x+1}} \right)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Evaluate the following limits using L'Hôpital's Rule.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 0^+} \left(x \ln x\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 0^+} \left(\sin(x)\ln(x)\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to \infty} (x^2e^{-x})</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to \infty} (e^{-x}\sqrt{x})</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to\infty} x^{1/x}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to 0^+} x^x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to0} (\cos(x))^{(1/x)}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to\infty} \left(1+ \frac{1}{x}\right)^x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to \infty} \left(1 + \frac{a}{x}\right)^x</m> with <m>a</m> a real number
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\lim_{x\to\infty} (\ln(x))^{1/x}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

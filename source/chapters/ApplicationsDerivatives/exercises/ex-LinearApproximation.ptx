@@ -1,0 +1,269 @@
+<exercises xml:id="ex-LinearApproximation">
+    <exercise>
+        <statement>
+            <p>
+                What is the formula for the Linear Approximation of a function <m>f(x)</m> centered at some <m>x</m>-value <m>x=a</m>? Explain what this is.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                or some function <m>f(x)</m> that is differentiable everywhere, how could we use the concepts of linear approximation to find an approximate value <m>f(0.0001)</m>?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Let's say that we have a function <m>f(x)</m> that is differentiable at <m>x=5</m> and a Linear Approximation <m>L(x) = f'(5)(x-5)+f(5)</m>. Give examples of two different <m>x</m>-values where <m>L(x)</m> does a good job of approximating <m>f(x)</m> accurately, and two examples of <m>x</m>-values where <m>L(x)</m> does not do a good job of approximating <m>f(x)</m> accurately.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following functions and centers, build a Linear Approximation function.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sqrt{x}</m> centered at <m>x=4</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sin{x}</m> centered at <m>x=0</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \cos{x}</m> centered at <m>x=0</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \ln{x}</m> centered at <m>x=1</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sqrt[3]{x}</m> centered at <m>x=8</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \dfrac{1}{x}</m> centered at <m>x=4</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Use the linear approximating functions you created above to estimate the following values. Comment on the accuracy of these approximations.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                   <m>\sqrt{3.9}</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\sin(-0.0002)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\cos(0.001)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\ln(2)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\sqrt[3]{9}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{1}{4.0001}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Approximate each of the following values using a Linear Approximation. For each one:
+                <ul>
+                    <li>
+                        <p>
+                            Report the function <m>f(x)</m> and center.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Write out the Linear Approximation function <m>L(x)</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Approximate the value.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Justify whether your approximation is an over-approximation or under-approximation without referring to the actual value.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>(5.985)^2</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>(2.013)^3</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\cos(3)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>e^{0.01}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Explain how Newton's method uses Linear Approximation to approximate the <m>x</m>-intercept of a function.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Explain how we cam use Newton's method to approximate:
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    the intersection point of two functions.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    local maximums or minimums of a function.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    inflection points of a function.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Use Newton's method to find a zero for each function using the initial value given. Stop approximating when you get successive approximations that are within <m>0.001</m> of each other.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^3-5</m> with <m>x_0 = 2</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x\cos(x)</m> with <m>x_0 = 2</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Use Newton's method to find an intersection point between the two curves. Stop approximating when you get successive approximations that are within <m>0.001</m> of each other. Feel free to use a graphing utility like desmos.com to graph the curves and pick a reasonable stating value.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                     <m>y=x^2</m> and <m>y=\sin(x)</m> (Note: these curves intersect at <m>x=0</m>. Find the second intersection point.)
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                     <m>y = e^x</m> and <m>y = \sqrt{x}+2</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Find/approximate the absolute maximum and absolute minimum of <m>y=x\sin(x)</m> on <m>[0,6]</m> using Newton's method (and any other techniques or concepts we've used).
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Find/approximate the inflection point of <m>y=\dfrac{x^3}{10} + e^x</m>  using Newton's method (and any other techniques or concepts we've used).
+            </p>
+        </statement>
+    </exercise>
+</exercises>
