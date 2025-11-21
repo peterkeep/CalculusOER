@@ -81,7 +81,7 @@
             We can translate this into a rate of change! We think of two rates of change: an average rate of change on some interval and the instantaneous rate of change at some point.
         </p>
         <p>
-            We will try to connect these two different slopes/rates of change for "well-behaved" functions. Let's take a look at an example. In the graph below, we have a curve where we are considering some closed interval, as well as a point within that interval. Both slopes are visualized and calculated: the slope between the ending points of the interval is the average slope, while the slope of the line tangent to the curve at a point is the instantaneous slope. Move the point/interval around and get a feel for how these two different slopes relate (or don't relate!) to each other.
+            We will try to connect these two different slopes/rates of change for <q>well-behaved</q> functions. Let's take a look at an example. In the graph below, we have a curve where we are considering some closed interval, as well as a point within that interval. Both slopes are visualized and calculated: the slope between the ending points of the interval is the average slope, while the slope of the line tangent to the curve at a point is the instantaneous slope. Move the point/interval around and get a feel for how these two different slopes relate (or don't relate!) to each other.
         </p>
         <interactive platform="doenetml" width="95%" aspect="1:1">
             <slate surface="doenetml">
@@ -89,7 +89,7 @@
             </slate>
         </interactive>
         <p>
-            If you move the interval/point around enough, you'll see that sometimes these two slopes are really similar and sometimes they're very different. But what if the point in the middle of the interval wasn't so "set" at being stuck in the exact middle of the interval? What if we stuck the interval in place, and then had the freedom to move the point anywhere in the interval?
+            If you move the interval/point around enough, you'll see that sometimes these two slopes are really similar and sometimes they're very different. But what if the point in the middle of the interval wasn't so <q>set</q> at being stuck in the exact middle of the interval? What if we stuck the interval in place, and then had the freedom to move the point anywhere in the interval?
         </p>
         <interactive platform="doenetml" width="95%" aspect="1:0.95">
             <slate surface="doenetml">
@@ -128,7 +128,7 @@
         <example>
             <introduction>
                 <p>
-                    Let's say that a person is planning on biking to their college campus, 8 miles away. At 2:39pm they send a text to their friend with a selfie of them on their bike about to start their trip, captioned "Beautiful day for a ride!" At 3:27pm, they post a picture on their social media of them in front of the bike rack on campus.
+                    Let's say that a person is planning on biking to their college campus, 8 miles away. At 2:39pm they send a text to their friend with a selfie of them on their bike about to start their trip, captioned <q>Beautiful day for a ride!</q> At 3:27pm, they post a picture on their social media of them in front of the bike rack on campus.
                 </p>
             </introduction>
             <task>

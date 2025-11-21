@@ -2,17 +2,17 @@
     <title>Approximating an Exponential Function</title>
     <introduction>
         <p>
-            Let's consider the function <m>f(x)=e^x</m>. We're going to build the linear approximation, <m>L(x)</m>, but we also want to focus on understanding what the "center" is, and how we think about accuracy of our estimations.
+            Let's consider the function <m>f(x)=e^x</m>. We're going to build the linear approximation, <m>L(x)</m>, but we also want to focus on understanding what the <q>center</q> is, and how we think about accuracy of our estimations.
         </p>
     </introduction>
     <task>
         <statement>
             <p>
-                We first need to find a "good" center for our linear approximation. We have two real requirements here:
+                We first need to find a <q>good</q> center for our linear approximation. We have two real requirements here:
                 <ol>
                     <li>
                         <p>
-                            We need the center to be some <m>x</m>-value that will be "close" to the inputs we're most interested in. We know that <m>L(x)\approx f(x)</m> for <m>x</m>-values "near" the center, so we should keep this in mind. We don't have a specific input that we're interested in (we are not specifically focused on estimating <m>f(7.35)</m> for instance), so we don't need to worry about this for now.
+                            We need the center to be some <m>x</m>-value that will be <q>close</q> to the inputs we're most interested in. We know that <m>L(x)\approx f(x)</m> for <m>x</m>-values <q>near</q> the center, so we should keep this in mind. We don't have a specific input that we're interested in (we are not specifically focused on estimating <m>f(7.35)</m> for instance), so we don't need to worry about this for now.
                         </p>
                     </li>
                     <li>

@@ -10,7 +10,7 @@
       What do you want the difference to be?
     </p>
     <p>
-      If we focus on the terms or the names we're giving, then the difference should be based on the distinction between the words "local" and "global." In one, we're considering some confined and relatively arbitrary geographic area, just the things around or in the neighborhood. In the other, our context grows until we're considering the whole picture, the whole space that we're interested in!
+      If we focus on the terms or the names we're giving, then the difference should be based on the distinction between the words <q>local</q> and <q>global.</q> In one, we're considering some confined and relatively arbitrary geographic area, just the things around or in the neighborhood. In the other, our context grows until we're considering the whole picture, the whole space that we're interested in!
     </p>
     <definition xml:id="def-GlobalMaxMin">
       <title>Global Maximum and Global Minimum</title>
@@ -24,7 +24,7 @@
       </statement>
     </definition>
     <p>
-      Note that the difference between this definition and <xref ref="def-LocalMaxMin" text="type-global-title"/> is the types of <m>y</m>-values we're comparing <m>f(c)</m> to: in this new definition, we just use all of the <m>x</m>-values in the domain. In the definition for a local max/min, we had to construct some interval to intersect with the domain in order to just consider the "local" picture.
+      Note that the difference between this definition and <xref ref="def-LocalMaxMin" text="type-global-title"/> is the types of <m>y</m>-values we're comparing <m>f(c)</m> to: in this new definition, we just use all of the <m>x</m>-values in the domain. In the definition for a local max/min, we had to construct some interval to intersect with the domain in order to just consider the <q>local</q> picture.
     </p>
     <xi:include href="./activities/act-NoMaxMin.ptx" />
 
@@ -84,7 +84,7 @@
       Without the conditions that imply the Extreme Value Theorem, things become trickier. For instance, if the function is not continuous, then the function might have some unbounded behavior at a vertical asymptote. In this case, we might need to look at the one-sided limits around that asymptote, in order to see if our function tends towards positive or negative infinity on either side of the asymptote. This could tell us that the function doesn't have a global maximum, a global minimum, or that it doesn't have either.
     </p>
     <p>
-      Similarly, if the function is not defined on a closed interval, then we need to investigate what happens to the function's behavior as the function moves towards the "ends" of the interval (which could be a real number but something like positive or negative infinity). These end behavior limits could exist, in which case we need to compare these heights of horizontal asymptotes or open ends of an interval to the heights of any critical numbers.
+      Similarly, if the function is not defined on a closed interval, then we need to investigate what happens to the function's behavior as the function moves towards the <q>ends</q> of the interval (which could be a real number but something like positive or negative infinity). These end behavior limits could exist, in which case we need to compare these heights of horizontal asymptotes or open ends of an interval to the heights of any critical numbers.
     </p>
     <p>
       But we might also find that the function tends towards infinity or negative infinity in the end behavior.

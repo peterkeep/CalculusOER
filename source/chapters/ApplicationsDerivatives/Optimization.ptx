@@ -5,7 +5,7 @@
 
   <introduction>
     <p>
-      How do we use calculus to make decisions? If we're trying to find the best allocation of time between different tasks, or if we're trying to construct some object with limited resources, or if we're trying to find some other solution to the question, "How do we make the best/most/maximum/minimum of..." then we can think about translating these to a calculus context.
+      How do we use calculus to make decisions? If we're trying to find the best allocation of time between different tasks, or if we're trying to construct some object with limited resources, or if we're trying to find some other solution to the question, <q>How do we make the best/most/maximum/minimum of...</q> then we can think about translating these to a calculus context.
     </p>
     <p>
       Optimization problems are some of the clearest application of calculus concepts to applied problems from any industry or field. While there certainly aren't teams of calculus experts in every office waiting for these kinds of problems to arrive, these problems are routinely solved using calculus, either done by computer software or coming from calculus experts who make sweeping recommendations across a whole field or some other source.
@@ -14,7 +14,7 @@
   <subsection xml:id="subsec-OptimizationFramework">
     <title>Optimization Framework</title>
     <p>
-      We'll start this discussion with a small example. This is <em>not</em> an example that shows up in "real life," but will be helpful to build a strategy for approaching these problems. 
+      We'll start this discussion with a small example. This is <em>not</em> an example that shows up in <q>real life,</q> but will be helpful to build a strategy for approaching these problems. 
     </p>
     <p>
       Here's our problem:
@@ -221,7 +221,7 @@
                   </p>
                 </li>
               </ol>
-              An example of a calculus statement might be something like: "We want to find the <kbd>maximum/minimum</kbd> of <kbd>function</kbd> on <kbd>domain</kbd>."
+              An example of a calculus statement might be something like: <q>We want to find the <kbd>maximum/minimum</kbd> of <kbd>function</kbd> on <kbd>domain</kbd>.</q>
             </p>
           </li>
           <li>
@@ -298,7 +298,7 @@
       So what kinds of problems can we actually do?
     </p>
     <p>
-      There are a bunch, but they don't really stand up to intense scrutiny: if we looked carefully at most of the "classic" optimization problems that we see in calculus texts, they'd fall apart just like the optimal can problem from <xref ref="act-VolumeCan"/>.
+      There are a bunch, but they don't really stand up to intense scrutiny: if we looked carefully at most of the <q>classic</q> optimization problems that we see in calculus texts, they'd fall apart just like the optimal can problem from <xref ref="act-VolumeCan"/>.
     </p>
     <p>
       That said, it's good to practice thinking about using constraints and translating physical situations into formulas and functions, so try the practice problems to get used to this part of the optimization process!

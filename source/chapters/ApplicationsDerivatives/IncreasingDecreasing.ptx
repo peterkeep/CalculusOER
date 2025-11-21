@@ -14,7 +14,7 @@
       Let's start by saying what we're really looking for is the highest and lowest points on a function. These points are interesting, have useful applications, and are difficult to find in general without calculus. We hopefully noticed, though, that these points always end up showing up at the same kinds of locations! They're points where the direction of a function changes (or terminates).
     </p>
     <p>
-      We also noticed that there are some common characteristics of those points. They're points where the derivative was either 0 or didn't exist. So we'll start by defining these points, and then we'll define the idea of "highest" and "lowest" points. Then we'll put together a result that we hopefully noticed here: that the highest and lowest points show up at these points where the derivative is 0 or doesn't exist.
+      We also noticed that there are some common characteristics of those points. They're points where the derivative was either 0 or didn't exist. So we'll start by defining these points, and then we'll define the idea of <q>highest</q> and <q>lowest</q> points. Then we'll put together a result that we hopefully noticed here: that the highest and lowest points show up at these points where the derivative is 0 or doesn't exist.
     </p>
     <definition xml:id="def-CriticalPoint">
       <title>Critical Point of a Function</title>
@@ -28,7 +28,7 @@
       </statement>
     </definition>
     <p>
-      So these are the points we will look for to find the "highest" and "lowest" points.
+      So these are the points we will look for to find the <q>highest</q> and <q>lowest</q> points.
     </p>
     <p>
       Now we need to define this idea so that we can build the result that tells us how to find these highest and lowest points.
@@ -52,7 +52,7 @@
         If you look around online, or in other textbooks, you'll find different definitions of these same kinds of pints. Some of those definitions have silly stipulations, like saying that an ending point of a function cannot be a local maximum/local minimum.
       </p>
       <p>
-        This seems to come from some sense that the derivative must be defined on each "side" of a local max/min. In this book, we'll not worry about this restriction, and instead just look at the highest and lowest points relative to the other points near it.
+        This seems to come from some sense that the derivative must be defined on each <q>side</q> of a local max/min. In this book, we'll not worry about this restriction, and instead just look at the highest and lowest points relative to the other points near it.
       </p>
     </aside>
     <p>
@@ -73,7 +73,7 @@
       WAIT! STOP! Before you move on, let's make sure we understand what this theorem is saying. Or maybe what this theorem is <em>not</em> saying.
     </p>
     <p>
-      Notice that we are not saying that every critical point is a local maximum or local minimum! This is a classic "every square is a rectangle but not every rectangle is a square" situation.
+      Notice that we are not saying that every critical point is a local maximum or local minimum! This is a classic <q>every square is a rectangle but not every rectangle is a square</q> situation.
     </p>
     <p>
       Every local maximum/minimum occurs at a critical point, but not every critical point is a local maximum/minimum. 
@@ -471,7 +471,7 @@
           </p>
         </li>
       </ol>
-      Lastly, just a couple of notes: in these little tables or charts (sometimes called <term>sign charts</term>, since they are showing the signs of the derivative), we'll use some shorthand notation. In <xref ref="ex-StrangeDomains"/>, we used "DNE" to mean that a derivative "does not exist" at a point. Similarly, we used <m>\va</m> to represent the vertical asymptote at that <m>x</m>-value (so that we didn't accidentally think it was a local maximum or minimum based on the signs of the derivative around it).
+      Lastly, just a couple of notes: in these little tables or charts (sometimes called <term>sign charts</term>, since they are showing the signs of the derivative), we'll use some shorthand notation. In <xref ref="ex-StrangeDomains"/>, we used <q>DNE</q> to mean that a derivative <q>does not exist</q> at a point. Similarly, we used <m>\va</m> to represent the vertical asymptote at that <m>x</m>-value (so that we didn't accidentally think it was a local maximum or minimum based on the signs of the derivative around it).
     </p>
     <p>
       Moving forward, we'll use this same kind of analysis to think about how the derivative might be changing on these intervals. This rate of change of the slopes, the <term>second derivative</term>, will be a useful tool for gathering more information about how a function might be acting.
