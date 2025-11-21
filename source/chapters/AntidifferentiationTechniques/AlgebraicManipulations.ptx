@@ -63,12 +63,12 @@
         </statement>
         <hint>
           <p>
-            This is <delete>a hard one</delete> an annoying one, and we'll revisit it later with a better strategy, but for now you can notice something nice happen when you multiply the numerator and denominator by <m>(\sec(x)+\tan(x))</m>:
+            This is <delete>a hard one</delete> an annoying one, and we'll revisit it later with a better strategy, but for now you can notice something nice happens when you multiply the numerator and denominator by <m>(\sec(x)+\tan(x))</m>:
 
             <me>
               \int \sec(x)\left(\frac{\sec(x)+\tan(x)}{\sec(x)+\tan(x)}\right)\;dx = \int \frac{\sec^2(x)+\sec(x)\tan(x)}{\sec(x)+\tan(x)}\;dx
             </me>.
-            This strategy is <em>not</em> intuitive, in my opinion: the nice thing to multiply seemingly comes out of nowehere!
+            This strategy is <em>not</em> intuitive, in my opinion: the nice thing to multiply seemingly comes out of nowhere!
           </p>
         </hint>
       </task>
@@ -174,7 +174,7 @@
             <mrow> \amp = \frac{1}{a}\tan^{-1}(w)+C</mrow>
             <mrow> \amp = \frac{1}{a}\tan^{-1}\left(\frac{u}{a}\right)+C</mrow>
           </md>
-          This strategy can also be used for other inverse trigonometric derivatives. But we will use the inverse tangent form most of all, and thus we want to outline it fully.
+          This strategy also can be used for other inverse trigonometric derivatives. But we will use the inverse tangent form most of all, and thus we want to outline it fully.
         </p>
       </proof>
     </theorem>

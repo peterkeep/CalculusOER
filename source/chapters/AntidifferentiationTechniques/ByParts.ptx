@@ -4,10 +4,10 @@
   <title>Integration By Parts</title>
   <introduction>
     <p>
-      We've seen now that <xref ref="sec-uSubstitution" text="title"/> is a useful technique for undo-ing <xref ref="thm-ChainRule" text="title"/>. We set up the variable substitution with the specific goal of going backwards through the Chain Rule and antidifferentiating some composition of functions.
+      We've seen now that <xref ref="sec-uSubstitution" text="title"/> is a useful technique for undoing <xref ref="thm-ChainRule" text="title"/>. We set up the variable substitution with the specific goal of going backwards through the Chain Rule and antidifferentiating some composition of functions.
     </p>
     <p>
-      A reasonable next step is to ask: What other derivative rules can we <q>undo?</q> What other operations between functions should we think about? This brings us to Integration by Parts, the integration technique specifically for undo-ing <xref ref="thm-ProductRule" text="title"/>.
+      A reasonable next step is to ask: What other derivative rules can we <q>undo?</q> What other operations between functions should we think about? This brings us to Integration by Parts, the integration technique specifically for undoing <xref ref="thm-ProductRule" text="title"/>.
     </p>
   </introduction>
   <subsection xml:id="subsec-DiscoveringIntegrationByParts">
@@ -120,13 +120,13 @@
   <subsection xml:id="subsec-FlexibleChoices">
     <title>Some Flexible Choices for Parts</title>
     <p>
-      We're going to look at a couple of examples where we can showcase some of the flexibility we have with our choices of parts. First, we'll revisit <xref ref="ex-2xarctan"/>.In this example, when we got to that second integral, we noticed that for the fraction <m>\frac{x^2}{x^2+1}</m>, we could either do some long division (since the degrees in the numerator and denominator are the same) or do some clever rewriting of the numerator. Either way, we know that this fraction is <em>almost</em> 1...It's really <m>1\pm</m> some bit (in this case, the extra bit was a fraction <m>\frac{1}{x^2+1}</m>).
+      We're going to look at a couple of examples where we can showcase some of the flexibility we have with our choices of parts. First, we'll revisit <xref ref="ex-2xarctan"/>. In this example, when we got to that second integral, we noticed that for the fraction <m>\frac{x^2}{x^2+1}</m>, we could either do some long division (since the degrees in the numerator and denominator are the same) or do some clever rewriting of the numerator. Either way, we know that this fraction is <em>almost</em> 1...It's really <m>1\pm</m> some bit (in this case, the extra bit was a fraction <m>\frac{1}{x^2+1}</m>).
     </p>
     <p>
       What if we chose our parts differently? Not the <m>u</m> and <m>dv</m> parts, though, since we still haven't figured out how to antidifferentiate <m>\tan^{-1}(x)</m>. But we get one more choice!
     </p>
     <p>
-      Once we choose <m>u</m>, we don't really get a separate choice for <m>du</m>: it's simply the derivative of <m>u</m> with regard to <m>x</m> multiplied by the differential <m>dx</m>. But consider our choice of <m>dv</m>, and the subsequent process of finding <m>v</m>. Yes, there's only one possible answer, but in a much more real sense, there isn't just one possible answer. There are an infinite number of them! We know, due to the <xref ref="thm-MVT" text="title"/> and then later due to <xref ref="thm-OffByConstant"/>, that there are an infinite number of antiderivatives, all differing by at most a constant term. So let's pick a more appropriate antiderivative!
+      Once we choose <m>u</m>, we don't really get a separate choice for <m>du</m>: it's simply the derivative of <m>u</m> with regard to <m>x</m> multiplied by the differential <m>dx</m>. But consider our choice of <m>dv</m>, and the subsequent process of finding <m>v</m>. Yes, there's only one possible answer, but in a much more real sense, there isn't just one possible answer. There are an infinite number of them! We know, due to the <xref ref="thm-MVT" text="title"/> and then later due to <xref ref="thm-OffByConstant"/>, that there are an infinite number of antiderivatives, all differing by, at most, a constant term. So let's pick a more appropriate antiderivative!
     </p>
     <example>
       <statement>
@@ -211,7 +211,7 @@
             <mrow> \amp = te^t - \int e^t\;dt</mrow>
             <mrow> \amp = te^t - e^t +C</mrow>
           </md>
-          Now we can substitute back to <m>x</m>:
+          Now, we can substitute back to <m>x</m>:
           <me>
             te^t - e^t +C = x\ln(x)-x+C
           </me>.
@@ -285,7 +285,7 @@
         </statement>
         <hint>  
           <p>
-            This one is pretty straight forward, since it doesn't really matter what we select as our parts. Notice, though, that this isn't the only way we can approach this! We can use <m>u</m>-substitution, or even rewrite this using a trigonometric identity.
+            This one is pretty straightforward, since it doesn't really matter what we select as our parts. Notice, though, that this isn't the only way we can approach this! We can use <m>u</m>-substitution, or even rewrite this using a trigonometric identity.
           </p>
         </hint>
         <solution>

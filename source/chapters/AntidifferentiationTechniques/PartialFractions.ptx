@@ -17,7 +17,7 @@
   <subsection xml:id="subsec-WhenPartialFractions">
     <title>When?</title>
     <p>
-      In order to recognize <em>when</em> we will employ this strategy, we should think about what we're doing: We are attempting to write one fraction as a sum or difference of others. We're <q>undo-ing</q> fraction addition, here. We can remember that when we add (or subtract) fractions, we need to find a common denominator and rewrite our fraction terms as equivalent versions with this same denominator. This is typically done by just <q>scaling</q> the numerator and denominator of a fraction by a factor (often then other denominator). For instance:
+      In order to recognize <em>when</em> we will employ this strategy, we should think about what we're doing: we are attempting to write one fraction as a sum or difference of others. We're <q>undo-ing</q> fraction addition, here. We can remember that when we add (or subtract) fractions, we need to find a common denominator and rewrite our fraction terms as equivalent versions with this same denominator. This typically is done by just <q>scaling</q> the numerator and denominator of a fraction by a factor (often the other denominator). For instance:
       <md>
         <mrow>\frac{3}{5} - \frac{1}{3} \amp  = \frac{3}{5}\left(\frac{3}{3}\right) - \frac{1}{3}\left(\frac{5}{5}\right)</mrow>
         <mrow> \amp = \frac{9}{15} - \frac{5}{15}</mrow>
@@ -34,7 +34,7 @@
       Now, we can notice something about these (common) denominators: since we scaled each fraction before adding/subtracting them, the denominator is a product of factors.
     </p>
     <p>
-      So right away we know that this method will only work well when we can factor the denominator of a rational integrand. 
+      So right away we know that this method only will work well when we can factor the denominator of a rational integrand. 
     </p>
     <p>
       We also know (from <xref ref="strat-RationalFunctions" text="title"/>) that once the degree of the numerator is at least the same (or larger) than the degree of the denominator, we can rewrite things using division.
@@ -126,7 +126,7 @@
         Let's pause here.
       </p>
       <p>
-        We are hoping to find the values of <m>A</m> and <m>B</m> that will make this equation work out for all values of <m>x</m>. But we can also make use of the fact that this equation will be true for some <em>specific</em> values of <m>x</m>. For instance, we can evaluate this equation at <m>x=2</m>:
+        We are hoping to find the values of <m>A</m> and <m>B</m> that will make this equation work out for all values of <m>x</m>. But we0 also can make use of the fact that this equation will be true for some <em>specific</em> values of <m>x</m>. For instance, we can evaluate this equation at <m>x=2</m>:
         <md>
           <mrow>A(2-1)+B(2-3) \amp = 6(2)-16</mrow>
           <mrow>A-B \amp = -4 </mrow>
@@ -166,7 +166,7 @@
     <subsubsection xml:id="subsubsec-IrreducibleQuadratics">
       <title>Partial Fraction Type: Irreducible Quadratic Factors</title>
       <p>
-        So what about our other example in <xref ref="act-PartialFractionsFirstExamples"/>? We had a quadratic factor (that couldn't be factored nicely). We'll call these <term>irreducible quadratic</term> factors. The real difference was just the structure of the numerator, where we accounted for the option of the numerator being some linear function, <m>Ax+B</m>.
+        So what about our other example in <xref ref="act-PartialFractionsFirstExamples"/>? We had a quadratic factor (that couldn't be factored nicely). We'll call these <term>irreducible quadratic</term> factors. The real difference just was the structure of the numerator, where we accounted for the option of the numerator being some linear function, <m>Ax+B</m>.
       </p>
       <p>
         There isn't much more to say here, since the algebra can be frustrating to deal with. It can be helpful to save some of these coefficients for last: that way, we can find some of the <q>easier</q> ones (from the <xref ref="strat-SimpleLinear" text="title"/> cases) first, and hopefully the remaining coefficients won't be too difficult to find.
@@ -332,13 +332,13 @@
             <me>
                \int \frac{6x^2+25x+27}{(x+1)(x^2+4x+5)}\;dx = \int \frac{4}{x+1}+ \frac{2x+7}{x^2+4x+5}\;dx
             </me>
-            The first term is pretty straight-forward to integrate: we'll get a log. The second one, though, will take some work. Let's consider it by itself:
+            The first term is pretty straightforward to integrate: we'll get a log. The second one, though, will take some work. Let's consider it by itself:
             <me>
-              \int frac{2x+7}{x^2+4x+5}\;dx
+              \int \frac{2x+7}{x^2+4x+5}\;dx
             </me>.
             We can start with a <m>u</m>-substitution of <m>u=x^2+4x+5</m>, giving us <m>dx=2x+4\;dx</m>. Let's rewrite the numerator as <m>2x+4+3</m> in order to make this work:
             <md>
-              <mrow>\int frac{2x+7}{x^2+4x+5}\;dx \amp =\int frac{(2x+4)+3}{x^2+4x+5}\;dx</mrow>
+              <mrow>\int \frac{2x+7}{x^2+4x+5}\;dx \amp =\int \frac{(2x+4)+3}{x^2+4x+5}\;dx</mrow>
               <mrow> \amp = \int \frac{2x+4}{x^2+4x+5}\;dx + \int \frac{3}{x^2+4x+5}\;dx</mrow>
             </md>
             Now, the first of these will work with our stated substitution. The second one, though, will require a different strategy. Let's complete the square to get the inverse tangent form (<xref ref="thm-GeneralizedInvTan"/>). For all three integrals, then, we get:
@@ -356,7 +356,7 @@
       There are more things that we can think about, but it really ends up being just extensions of what we've done. For instance, we could think about repeated quadratic factors or irreducible polynomials that have larger degrees, but the general principles are the same: we set up a placeholder numerator that has a degree less than the denominator and try to solve for the unknown coefficients.
     </p>
     <p>
-      There are really only two limitations for us:
+      There really are only two limitations for us:
       <ol>
         <li>
           <p>
@@ -365,7 +365,7 @@
         </li>
         <li>
           <p>
-            As we increase the degree of the kinds of denominators we see, we run out of approaches for antidifferentiation. We could spend <em>much</em> more time talking about integrating more rational functions or dive into the much of irrational coefficients (or even non-real ones), but this serves as a good stopping point for our purposes.
+            As we increase the degree of the kinds of denominators we see, we run out of approaches for antidifferentiation. We could spend <em>much</em> more time talking about integrating more rational functions or dive into the world of irrational coefficients (or even non-real ones), but this serves as a good stopping point for our purposes.
           </p>
         </li>
       </ol>

@@ -16,7 +16,7 @@
                 <me>
                     \sin^2(x)+\cos^2(x)=1
                 </me>.
-                Since we want a version that connects <m>\tan(x)</m>, which is also written as <m>\frac{\sin(x)}{\cos(x)}</m>, with <m>\sec(x)</m>, or <m>\frac{1}{\cos(x)}</m>, let's divide everything in the Pythagorean Identity by <m>\cos^2(x)</m>:
+                Since we want a version that connects <m>\tan(x)</m>, which also is written as <m>\frac{\sin(x)}{\cos(x)}</m>, with <m>\sec(x)</m>, or <m>\frac{1}{\cos(x)}</m>, let's divide everything in the Pythagorean Identity by <m>\cos^2(x)</m>:
                 <md>
                     <mrow> \frac{\sin^2(x)}{<fillin characters="5" />} + \frac{\cos^2(x)}{<fillin characters="5" />} \amp = \frac{1}{<fillin characters="5" />}</mrow>
                     <mrow> <fillin characters="5" /> + <fillin characters="5" /> \amp = <fillin characters="5" /> </mrow>
@@ -60,7 +60,7 @@
         </statement>
         <hint>
             <p>
-                Now <m>du=\sec(x)\tan(x)\;dx</m>, and we'll use the same Pythagorean identity, just rewritten as <m>\tan^2(x) = \sec^2(x)-1</m>.
+                Now <m>du=\sec(x)\tan(x)\;dx</m>, and we'll use the same Pythagorean Identity, just rewritten as <m>\tan^2(x) = \sec^2(x)-1</m>.
             </p>
         </hint>
         <solution>

@@ -4,7 +4,7 @@
     <title>More on <m>u</m>-Substitution</title>
     <introduction>
         <p>
-            We're going to do some more thinking about an integration topic that we've technically already introduced in <xref ref="sec-uSubstitution"/>. We're going to do a bit more with it now, and try to build some more flexibility, so definitely review that introduction section if you'd like!
+            We're going to do some more thinking about an integration topic that we've already introduced in <xref ref="sec-uSubstitution"/>. We're going to do a bit more with it now, and try to build some more flexibility, so definitely review that introduction section if you'd like!
         </p>
         <p>
             Before moving on, we should work through these few examples, just to make sure we remember what we're up to.
@@ -14,7 +14,7 @@
     <subsection xml:id="subsec-VariableSubstitution">
         <title>Variable Substitution in Integrals</title>
         <p>
-            In <m>u</m>-substitution, we focus a lot on one specific kind of structure: composition in our integrand function and/or some function-derivative pairing present. We do this because we're undo-ing the <xref ref="thm-ChainRule" text="title"/>. Variable substitutions can be much more general in their goal, but this is a good one to focus on because it solves a specific problem that we might run into while integrating.
+            In <m>u</m>-substitution, we focus a lot on one specific kind of structure: composition in our integrand function and/or some function-derivative pairing present. We do this because we're undoing the <xref ref="thm-ChainRule" text="title"/>. Variable substitutions can be much more general in their goal, but this is a good one to focus on because it solves a specific problem that we might run into while integrating.
         </p>
         <assemblage xml:id="strat-uSub">
             <title>Strategy for <m>u</m>-Substitution</title>
@@ -42,7 +42,7 @@
                 </li>
                 <li>
                     <p>
-                        The structure of the integral, by grouping <m>x+5</m> into one term, <m>u</m> and expanding <m>x</m> into two terms, <m>u-5</m>. This allowed us to change how the algebra would work, making it much friendlier!
+                        The structure of the integral, by grouping <m>x+5</m> into one term, <m>u</m>, and expanding <m>x</m> into two terms, <m>u-5</m>. This allowed us to change how the algebra would work, making it much friendlier!
                     </p>
                 </li>
             </ol>
@@ -77,14 +77,14 @@
             </solution>
         </example>
         <p>
-            This specific example is an interesting one, because we actually have a couple of different options with how we approach it. This is true in a lot of cases: there is very rarely only a single approach to an integral that will eventually work out. Sometimes there are approaches or more techniques that are more obvious to some people, and sometimes there are approaches that seem more easy/difficult for some people. But even still, we are often presented with many choices we could make in how we approach our integration.
+            This specific example is an interesting one, because we actually have a couple of different options as to how we approach it. This is true in a lot of cases: there is very rarely only a single approach to an integral that will eventually work out. Sometimes there are approaches or more techniques that are more obvious to some people, and sometimes there are approaches that seem more easy/difficult for some people. But even still, we are often presented with many choices we could make in how we approach our integration.
         </p>
         <p>
             Moving forward in this chapter, we'll present a whole host of strategies for how we might integrate different types of functions and how we might approach different structures that we see in the integrals we'll look at. We'll try to balance a difficult duality:
             <ul>
                 <li>
                     <p>
-                        There is rarely no single <q>right</q> way to do things! We can't summarize things with strongly worded rules like <q>if you function looks like this, then you have to do this to antidifferentiate.</q>
+                        There is rarely no single <q>right</q> way to do things! We can't summarize things with strongly worded rules like <q>if your function looks like this, then you have to do this to antidifferentiate.</q>
                     </p>
                 </li>
                 <li>

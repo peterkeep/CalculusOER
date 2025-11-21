@@ -7,7 +7,7 @@
       Let's remind ourselves of two example problems that we've done in the past.
     </p>
     <p>
-      In <xref ref="ex-uSubTurn"/>, we performed a <m>u</m>-substitution, but needed to work to rewrite our whole integrand in terms of <m>u</m>. Specifically, we found that in the numerator, there was an <m>x^3</m>, but <m>du=2x\;dx</m>. We were substituting out a linear function of <m>x</m> in the numerator, but the actual function was cubic. This wasn't a problem: we rewrote <m>x^3=x^2\cdot x</m>, and noticed that the extra <m>x^2</m> was able to be substituted, since we could rewrite out subsitution rule: we noted that <m>u=x^2+1</m> is equivalent to <m>x^2=u-1</m>. This meant that even though we had an extra factor of <m>x^2</m> <q>in</q> the part that we were using for substituting in the differential <m>du</m>, we were still able to translate the whole function to be written in terms of <m>u</m>.
+      In <xref ref="ex-uSubTurn"/>, we performed a <m>u</m>-substitution, but needed to work to rewrite our whole integrand in terms of <m>u</m>. Specifically, we found that in the numerator, there was an <m>x^3</m>, but <m>du=2x\;dx</m>. We were substituting out a linear function of <m>x</m> in the numerator, but the actual function was cubic. This wasn't a problem: we rewrote <m>x^3=x^2\cdot x</m>, and noticed that the extra <m>x^2</m> was able to be substituted, since we could rewrite our substitution rule: we noted that <m>u=x^2+1</m> is equivalent to <m>x^2=u-1</m>. This meant that even though we had an extra factor of <m>x^2</m> <q>in</q> the part that we were using for substituting in the differential <m>du</m>, we were still able to translate the whole function to be written in terms of <m>u</m>.
     </p>
     <p>
       Then, more recently, in <xref ref="ex-sincos"/>, we noted that we could use a mix of methods to integrate this:
@@ -16,7 +16,7 @@
       </me>.      
     </p>
     <p>
-      One on hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that's what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a <m>u</m>-substitution was also appropriate.
+      On one hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that's what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a <m>u</m>-substitution also was appropriate.
     </p>
     <p>
       In this section, we'll explore more combinations of trigonometric functions and build a strategy for antidifferentiating them that includes some ideas from both of these previous examples.
@@ -34,12 +34,12 @@
           <ul>
             <li>
               <p>
-                If <m>q</m>, the exponent on <m>\cos(x)</m> is odd, we should use <m>u=\sin(x)</m> and <m>du=\cos(x)\;dx</m>. Then we can apply the Pythagorean Identity <m>\cos^2(x)=1-\sin^2(x)</m>.
+                If <m>q</m>, the exponent on <m>\cos(x)</m> is odd, we should use <m>u=\sin(x)</m> and <m>du=\cos(x)\;dx</m>. Then, we can apply the Pythagorean Identity <m>\cos^2(x)=1-\sin^2(x)</m>.
               </p>
             </li>
             <li>
               <p>
-                If <m>p</m>, the exponent on <m>\sin(x)</m> is odd, we should use <m>u=\cos(x)</m> and <m>du=-\sin(x)\;dx</m>. Then we can apply the Pythagorean Identity <m>\sin^2(x)=1-\cos^2(x)</m>.
+                If <m>p</m>, the exponent on <m>\sin(x)</m> is odd, we should use <m>u=\cos(x)</m> and <m>du=-\sin(x)\;dx</m>. Then, we can apply the Pythagorean Identity <m>\sin^2(x)=1-\cos^2(x)</m>.
               </p>
             </li>
             <li>
@@ -83,7 +83,7 @@
         </statement>
         <hint>
           <p>
-            This one seems scary at first, because of the fraction exponent. Notice, though, that you have <em>no hope</em> of converting fractional exponents of sine functions into cosine functions easily. So pick <m>u=\sin(x)</m> and try to convert any remaining cosines using <m>\cos^2(x)=1-\sin^2(x)</m>.
+            This one seems scary at first, because of the fraction exponent. Notice, though, that you have <em>no hope</em> of converting fractional exponents of sine functions into cosine functions easily. So, pick <m>u=\sin(x)</m> and try to convert any remaining cosines using <m>\cos^2(x)=1-\sin^2(x)</m>.
           </p>
         </hint>
       </task>
@@ -95,7 +95,7 @@
         </statement>
         <hint>
           <p>
-            You get a choice here! Both exponents are odd, so picking either function as <m>u</m> will leave you with an even exponent on the other function to use the Pythagorean Identity on. Is there a choice of <m>u</m> that will be easier than the other choice?
+            You get a choice here! Both exponents are odd, so picking either function as <m>u</m> will leave you with an even exponent on the other function on which to use the Pythagorean Identity. Is there a choice of <m>u</m> that will be easier than the other choice?
           </p>
         </hint>
       </task>
@@ -141,7 +141,7 @@
         </statement>
         <hint>
           <p>
-            You have some choices here! If you use <m>u=\sec(x)</m>, then you'll end up with a remaining <m>tan^2(x)</m> to convert using a Pythagorean identity. Alternatively, if you use <m>u=\tan(x)</m>, you'll end up needing to convert the remaining <m>\sec^6(x) = (\sec^2(x))^3</m>.
+            You have some choices here! If you use <m>u=\sec(x)</m>, then you'll end up with a remaining <m>tan^2(x)</m> to convert using a Pythagorean Identity. Alternatively, if you use <m>u=\tan(x)</m>, you'll end up needing to convert the remaining <m>\sec^6(x) = (\sec^2(x))^3</m>.
           </p>
         </hint>
       </task>

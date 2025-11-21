@@ -49,7 +49,7 @@
         </statement>
         <hint>
             <p>
-                We want to pick some trigonometric function <m>T(\theta)</m> so that when we let <m>x=T(\theta)</m>, we end up with one of the Pythagorean identities above. Is there something we can put in for <m>x</m> such that <m>1-x^2</m> becomes <m>1-(T(\theta))^2</m> in a convenient way?
+                We want to pick some trigonometric function <m>T(\theta)</m> so that when we let <m>x=T(\theta)</m>, we end up with one of the Pythagorean Identities above. Is there something we can put in for <m>x</m> such that <m>1-x^2</m> becomes <m>1-(T(\theta))^2</m> in a convenient way?
             </p>
         </hint>
     </task>
@@ -68,10 +68,10 @@
     <task>
         <statement>
             <p>
-                Perform your substitution! Use your substitution <m>x=T(\theta)</m> and <m>dx=T'(\theta)\;d\theta</m>. Note that we have picked this substitution with a very specific goal: we are hoping to notice a Pythagorean identity.
+                Perform your substitution! Use your substitution <m>x=T(\theta)</m> and <m>dx=T'(\theta)\;d\theta</m>. Note that we have picked this substitution with a very specific goal: we are hoping to notice a Pythagorean Identity.
             </p>
             <p>
-                After you have performed your substitution, apply the relevant Pythagorean identity to the <term>radicand</term>: the bit of our function underneath the radical or root. What integral are we left with (in terms of <m>\theta</m>)?
+                After you have performed your substitution, apply the relevant Pythagorean Identity to the <term>radicand</term>: the bit of our function underneath the radical or root. What integral are we left with (in terms of <m>\theta</m>)?
             </p>
         </statement>
         <hint>
@@ -93,7 +93,7 @@
     </task>
     <conclusion>
         <p>
-            This new integral is something we can antidifferentiate now! We have already done this one in <xref ref="act-SolveIntegral" text="type-global-title"/>. So we can end up with:
+            This new integral is something we can antidifferentiate now! We already have done this one in <xref ref="act-SolveIntegral" text="type-global-title"/>. So we can end up with:
             <md>
                 <mrow>\int \sqrt{1-x^2}\;dx \amp = \int \cos^2(\theta)\;d\theta</mrow>
                 <mrow> \amp = \frac{\theta + \sin(\theta)\cos(\theta)}{2}+C</mrow>

@@ -82,7 +82,7 @@
                     </li>
                     <li>
                         <p>
-                            We know that <m>\sqrt{x^2+1} \gt x</m>, since we are adding <m>1</m> to <m>x^2</m> under the square root. This is also the reason that <m>\sqrt{x^2+1}\gt 1</m> (we are adding <m>x^2</m> under the root). So <m>\sqrt{x^2+1}</m> has to be the length of the hypotenuse.
+                            We know that <m>\sqrt{x^2+1} \gt x</m>, since we are adding <m>1</m> to <m>x^2</m> under the square root. This also is the reason that <m>\sqrt{x^2+1}\gt 1</m> (we are adding <m>x^2</m> under the root). So <m>\sqrt{x^2+1}</m> has to be the length of the hypotenuse.
                         </p>
                     </li>
                 </ol>
@@ -189,7 +189,7 @@
     <task>
         <statement>
             <p>
-                Define your substitution (for both <m>x</m> and the differential <m>dx</m>), and identify the Pythagorean identity that will be relevant for the integral.
+                Define your substitution (for both <m>x</m> and the differential <m>dx</m>), and identify the Pythagorean Identity that will be relevant for the integral.
             </p>
         </statement>
         <solution>
@@ -200,7 +200,7 @@
                             We will use <m>x=3\sec(\theta)</m> and <m>dx=3\sec(\theta)\tan(\theta)\;d\theta</m>.
                         </p>
                         <p>
-                            Then, we can expect to find the Pythagorean identity <m>9\sec^2(\theta)-9=9\tan^2(\theta)</m>.
+                            Then, we can expect to find the Pythagorean Identity <m>9\sec^2(\theta)-9=9\tan^2(\theta)</m>.
                         </p>
                     </li>
                     <li>
@@ -208,7 +208,7 @@
                             We will use <m>x=2\sin(\theta)</m> and <m>dx=2\cos(\theta)\;d\theta</m>.
                         </p>
                         <p>
-                            Then, we can expect to find the Pythagorean identity <m>4-4\sin^2(\theta)=4\cos^2(\theta)</m>.
+                            Then, we can expect to find the Pythagorean Identity <m>4-4\sin^2(\theta)=4\cos^2(\theta)</m>.
                         </p>
                     </li>
                     <li>
@@ -216,7 +216,7 @@
                             We will use <m>x=\tan(\theta)</m> and <m>dx=\sec^2(\theta)\;d\theta</m>.
                         </p>
                         <p>
-                            Then, we can expect to find the Pythagorean identity <m>\tan^2(\theta)+1=\sec^2(\theta)</m>.
+                            Then, we can expect to find the Pythagorean Identity <m>\tan^2(\theta)+1=\sec^2(\theta)</m>.
                         </p>
                     </li>
                 </ol>

@@ -25,7 +25,7 @@
     <task>
         <statement>
             <p>
-                Now set up the integration by parts formula using your labeled pieces. Notice that the integration by parts formula gives us another integral. Don't worry about antidifferentiating this yet, let's just set the pieces up.
+                Now, set up the integration by parts formula using your labeled pieces. Notice that the integration by parts formula gives us another integral. Don't worry about antidifferentiating this yet, let's just set up the pieces.
             </p>
         </statement>
         <hint>
@@ -50,7 +50,7 @@
     <task>
         <statement>
             <p>
-                Now set up the integration by parts formula using this setup.
+                Now, set up the integration by parts formula using this setup.
             </p>
         </statement>
         <hint>
@@ -80,7 +80,7 @@
     </task>
     <conclusion>
         <p>
-            What made things so much better when we chose <m>u=x</m> compared to <m>dv = x\;dx</m>? We know that the new integral from our integration by parts formula will be built from the new pieces, the derivative we find from <m>u</m> and the antiderivative we pick from <m>dv</m>. So when we differentiate <m>u=x</m>, we get a constant, compared to antidifferentiating <m>dv = x\;dx</m> and getting another power function, but with a larger exponent. We know this will be combined with a <m>cos(x)</m> function no matter what (since the derivative and antiderivatives of <m>sin(x)</m> will only differ in their sign). So picking the version that gets that second integral to be built from a trig function and a constant is going to be much nicer than a trig function and a power function.
+            What made things so much better when we chose <m>u=x</m> compared to <m>dv = x\;dx</m>? We know that the new integral from our integration by parts formula will be built from the new pieces, the derivative we find from <m>u</m> and the antiderivative we pick from <m>dv</m>. So when we differentiate <m>u=x</m>, we get a constant, compared to antidifferentiating <m>dv = x\;dx</m> and getting another power function, but with a larger exponent. We know this will be combined with a <m>\cos(x)</m> function no matter what (since the derivative and antiderivatives of <m>\sin(x)</m> only will differ in their sign). So picking the version that gets that second integral to be built from a trig function and a constant is going to be much nicer than a trig function and a power function.
 
             It was nice to pick <m>x</m> to be the piece that we found the derivative of!
         </p>
