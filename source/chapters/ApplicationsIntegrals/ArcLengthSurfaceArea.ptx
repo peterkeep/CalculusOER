@@ -24,7 +24,7 @@
     </p>
     <xi:include href="./activities/act-MeasuringDistance.ptx" />
     <p>
-      This might be a reminder of something we already knew, but let's make sure we are certain: when we calculate distances, we're really just using the Pythagorean Theorem! We can square the vertical distance between the points and the horizontal distance between the points, and then we the length of the straight line connecting two points is:
+      This might be a reminder of something we already knew, but let's make sure we are certain: when we calculate distances, we're really just using the Pythagorean Theorem! We can square the vertical distance between the points and the horizontal distance between the points, and then the length of the straight line connecting two points is:
       <me>
         \ell = \sqrt{(\Delta x)^2 + (\Delta y)^2}
       </me>.
@@ -92,7 +92,7 @@
           </p>
         </li>
       </ol>
-      Before we can do anything, we need to try to manipulate this sum so that it is in the form of a Riemann sum. What does this mean? What are the some of the things required for the Riemann sum structure that we don't have here? Feel free to look back at <xref ref="def-RiemannSum" text="type-global-title"/> to remind yourself what elements are needed for a Riemann sum.
+      Before we can do anything, we need to try to manipulate this sum so that it is in the form of a Riemann sum. What does this mean? What are some of the things required for the Riemann sum structure that we don't have here? Feel free to look back at <xref ref="def-RiemannSum" text="type-global-title"/> to remind yourself what elements are needed for a Riemann sum.
     </p>
     <p>
       Notice, first, that we need a function evaluated at any single input on the subinterval: <m>f(x_k^*)</m>. In our version, we have a function evaluated twice at very specific inputs:
@@ -118,7 +118,7 @@
       The inside of our root, though, is still a bit messed up. We would like a single function of <m>x_k^*</m>, any <m>x</m>-value from the <m>k</m>th subinterval. Instead, we have a function involving the two <m>x</m>-values of the end points <em>and</em> we still have <m>\Delta x</m> involved in this part!
     </p>
     <p>
-      But we can notice something about <m>\frac{\Delta y_k}{\Delta x}</m>: it really is the slope of the straight line! Can we use a function to represent this? We can <em>absolutely</em> approximate this slope using a function: the derivative!
+      But we can notice something about <m>\frac{\Delta y_k}{\Delta x}</m>: it really is the slope of the straight line! Can we use a function to represent this? We <em>absolutely</em> can approximate this slope using a function: the derivative!
     </p>
     <figure xml:id="fig-ArcLength-3">
       <caption></caption>
@@ -269,7 +269,7 @@
       </image>
     </figure>
     <p>
-      Instead of averaging the large and small radii from the end-points, we'll just select the one function output to represent this "average" radius. In the limit as <m>n\to\infty</m>, things will work out, since this randomly selected radius will become exactly equal the average radius in the limit since <m>\Delta x\to 0</m>.
+      Instead of averaging the large and small radii from the end-points, we'll just select the one function output to represent this "average" radius. In the limit as <m>n\to\infty</m>, things will work out, since this randomly selected radius will become exactly equal to the average radius in the limit since <m>\Delta x\to 0</m>.
     </p>
     <p>
       Now we can slice and sum!
@@ -285,7 +285,7 @@
       <title>Surface Area</title>
       <statement>
         <p>
-          Let <m>f(x)</m> is continuous with <m>f(x)\geq 0</m> on the interval <m>[a,b]</m> and differentiable on <m>(a,b)</m>. If the region bounded by <m>f(x)</m> and the <m>x</m>-axis from <m>x=a</m> to <m>x=b</m> is revolved around the <m>x</m>-axis, then the surface area of the resulting solid is:
+          Let <m>f(x)</m> be a continuous function with <m>f(x)\geq 0</m> on the interval <m>[a,b]</m> and differentiable on <m>(a,b)</m>. If the region bounded by <m>f(x)</m> and the <m>x</m>-axis from <m>x=a</m> to <m>x=b</m> is revolved around the <m>x</m>-axis, then the surface area of the resulting solid is:
           <me>
             A = 2\pi\int_{x=a}^{x=b} f(x)\sqrt{1+(f'(x))^2}\;dx
           </me>.

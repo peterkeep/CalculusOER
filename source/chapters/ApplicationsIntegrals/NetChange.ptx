@@ -12,7 +12,7 @@
     <title>Estimating Movement</title>
     <xi:include href="./activities/act-EstimatingMovement.ptx" />
     <p>
-      So what are the big ideas in this short activity? There are a lot, and many of them are already things we know, at least to some level.
+      So what are the big ideas in this short activity? There are a lot, and many of them already are things we know, at least to some level.
       So we are really focusing on adding depth to our understanding of these big ideas.
       Let's list them in the order that they showed up in this activity:
     <ol>
@@ -28,7 +28,7 @@
       </li>
       <li>
         <p>
-          We can estimate the total <em>displacement</em> of the object by predicting how far it traveled in eahc 30-second time interval. We might pick the starting velocity for each 30-second interval and multiply that by 30 seconds. We could alternatively pick the ending velocity of each 30-second interval. Then we can add all of these products of velocity and time together to approximate a total change in position! Doesn't this feel like a Riemann sum?
+          We can estimate the total <em>displacement</em> of the object by predicting how far it traveled in each 30-second time interval. We might pick the starting velocity for each 30-second interval and multiply that by 30 seconds. We could alternatively pick the ending velocity of each 30-second interval. Then, we can add all of these products of velocity and time together to approximate a total change in position! Doesn't this feel like a Riemann sum?
         </p>
       </li>
       <li>
@@ -38,7 +38,7 @@
       </li>
       <li>
         <p>
-          In order to forecast some position at time <m>t</m>, we just need to start with the initial position, and then calculate (or approximate) the displacement from <m>t=0</m> to whatever time <m>t\leq 300</m> we care about, and then add the displacement to the intitial position.
+          In order to forecast some position at time <m>t</m>, we just need to start with the initial position, and then calculate (or approximate) the displacement from <m>t=0</m> to whatever time <m>t\leq 300</m> we care about, and then add the displacement to the initial position.
         </p>
       </li>
     </ol>
@@ -49,9 +49,7 @@
   <subsection xml:id="subsec-position-velocity-acceleration">
     <title>Position, Velocity, and Acceleration</title>
     <p>
-      We know that the velocity of an object is really a rate of change of the position of that object with regard to time. 
-Similarly, the acceleration of an object is the rate of change of the velocity of the object with regard to time.
-So we're really thinking about derivatives!
+      We know that the velocity of an object is really a rate of change of the position of that object with regard to time. Similarly, the acceleration of an object is the rate of change of the velocity of the object with regard to time. So we're really thinking about derivatives!
     </p>
     <definition xml:id="def-position-velocity-acceleration">
       <title>Position, Velocity, and Acceleration Functions</title>
@@ -74,11 +72,11 @@ So we're really thinking about derivatives!
 
       <me>\sum_{k=1}^{10} v(t_k^*) \Delta t</me>
 
-      We chose our <m>t_k^*</m> as either the time at the beginning of each 30-second interval or the time atr the end of the 30-second interval, but that was only because of the limited information that we had about different values of <m>v(t)</m>. If we had information about the <m>v(t)</m> function at any values of <m>t</m> (<m>0\leq t\leq 300</m>), then we could pick <em>any</em> time in each 30-second time interval for our Riemann sum!
+      We chose our <m>t_k^*</m> as either the time at the beginning of each 30-second interval or the time at the end of the 30-second interval, but that was only because of the limited information that we had about different values of <m>v(t)</m>. If we had information about the <m>v(t)</m> function at any values of <m>t</m> (<m>0\leq t\leq 300</m>), then we could pick <em>any</em> time in each 30-second time interval for our Riemann sum!
 
-      We might note, though, that if we did have this kind of information about the velocity at any time in the 5-minute interval, then we would also build a more precise approximation by subdividing the time interval into smaller/shorter pieces.
+      We might note, though, that if we did have this kind of information about the velocity at any time in the 5-minute interval, then we also would build a more precise approximation by subdividing the time interval into smaller/shorter pieces.
 
-      So maybe the Riemann sum <m>\displaystyle\sum_{k=1}^{100} v(t_k^*)\Delta t</m> (where we are dividing up the 5 minute interval into 100 3-second intervals) would do a better job!
+      So maybe the Riemann sum <m>\displaystyle\sum_{k=1}^{100} v(t_k^*)\Delta t</m> (where we are dividing up the 5 minute interval into 100, 3-second intervals) would do a better job!
 
       But why stop there? If we have the definition of the velocity function, and so we can truly obtain the velocity of the object at <em>any</em> time in the 5 minute interval, then we can use the definition of the definite integral as the limit of a Riemann sum:
 
@@ -142,11 +140,11 @@ So we're really thinking about derivatives!
             \underbrace{s(t)}_{\text{future}\atop \text{position}} = \underbrace{s(a)}_{\text{initial}\atop\text{position}} + \underbrace{\int_{x=a}^{x=t} v(x)\;dx}_{\text{displacement from}\atop{a \text{ to } t}}
           </me>
         
-        Note that we change the variable in the velocity function while we integrate: since we want our position function to be in terms of <m>t</m>, the ending time point that we calculate the displacement up to, we need to choose a different variable to write velocity in terms of. Mechanically, there is no difference, since we're just swapping out the variables and naming them <m>x</m>.</p>
+        Note that we change the variable in the velocity function while we integrate: since we want our position function to be in terms of <m>t</m>, the ending time point that we calculate the displacement up to, we need to choose to write the velocity function in terms of a different variable. Mechanically, there is no difference, since we're just swapping out the variables and naming them <m>x</m>.</p>
       </statement>
     </theorem>
     <p>
-      We can note that this relationship between velocity and position can exist in many other context: any pair of functions that are derivatives/antiderivatives of each other can have this relationship!
+      We can note that this relationship between velocity and position can exist in many other contexts: any pair of functions that are derivatives/antiderivatives of each other can have this relationship!
     </p>
 
     <theorem xml:id="thm-FutureValue">

@@ -4,7 +4,7 @@
   <title>Volumes of Solids of Revolution</title>
   <introduction>
     <p>
-      Hopefully by now we're feeling pretty comfortable with the use of a Riemann sum to create an integral formula. So far, these integral formulas have matched with our intuition somewhat. We can probably justify the integral formula for displacement of an object (<xref ref="def-displacement" text="type-global-title"/>) by thinking about the fact that position is an antiderivative of velocity. We can probably convince ourselves about the integral formula for the area between curves (<xref ref="def-AreaBetweenCurves" text="type-global-title"/>) by thinking about subtracting areas, geometrically.
+      Hopefully, by now we're feeling pretty comfortable with the use of a Riemann sum to create an integral formula. So far, these integral formulas have matched with our intuition somewhat. We probably can justify the integral formula for displacement of an object (<xref ref="def-displacement" text="type-global-title"/>) by thinking about the fact that position is an antiderivative of velocity. We probably can convince ourselves about the integral formula for the area between curves (<xref ref="def-AreaBetweenCurves" text="type-global-title"/>) by thinking about subtracting areas, geometrically.
     </p>
     <p>
       We're going to make a jump from a 2-dimensional measurement of size, area, to a 3-dimensional measurement of size, volume.
@@ -22,7 +22,7 @@
         </li>
         <li>
           <p>
-            For each slice, we'll approximate the volume. We can do this by thinking about the cross-sectional area. If we assume that the area is constant all the way through the slice (in the same way that we assumed earlier that the heights of our rectangles were constant), then we can simply multiply the cross-sectional area by the thickness to get the volume of each slice:
+            For each slice, we'll approximate the volume. We can do this by thinking about the cross-sectional area. If we assume that the area is constant all the way through the slice (in the same way that we assumed earlier that the heights of our rectangles were constant), then we simply can multiply the cross-sectional area by the thickness to get the volume of each slice:
             <me>
               V_k = A(x_k^*)\Delta x
             </me>.
@@ -104,11 +104,11 @@
       </image>
     </figure>
     <p>
-      This is something we can easily find the area of! We know the formula for the area of a circle: <m>A=\pi r^2</m>. We'll notice that the radius of this circle is the distance from the center of our slice to the outer edge: this is the height of the rectangle in <xref ref="fig-Disks-3"/>. So we can use <m>r=f(x_k^*)</m>, giving us the cross-sectional area of the <m>k</m>th slice:
+      This is something we easily can find the area of! We know the formula for the area of a circle: <m>A=\pi r^2</m>. We'll notice that the radius of this circle is the distance from the center of our slice to the outer edge: this is the height of the rectangle in <xref ref="fig-Disks-3"/>. So we can use <m>r=f(x_k^*)</m>, giving us the cross-sectional area of the <m>k</m>th slice:
       <me>
         A(x_k^*) = \pi \left(f(x_k^*)\right)^2
       </me>.
-      Now we can drop into our slice and sum process:
+      Now, we can drop into our slice and sum process:
       <ol>
         <li>
           <p>
@@ -174,7 +174,7 @@
     </p>
     <xi:include href="./activities/act-VolumesDisksWashers.ptx" />
     <p>
-      Ok, so when we're creating these integrals, we are really focussing on using the rectangle we drew to show us which functions serve as the large radius compared to the small radius. In the next example, we'll see another key thing to notice from a single rectangle.
+      Ok, so when we're creating these integrals, we really are focussing on using the rectangle we drew to show us which functions serve as the large radius compared to the small radius. In the next example, we'll see another key thing to notice from a single rectangle.
     </p>
     <xi:include href="./activities/act-VolumesDisksWashers-y.ptx" />
     <p>
@@ -188,7 +188,7 @@
   <subsection xml:id="subsec-Re-OrientingRectangles">
     <title>Reorienting our Rectangles</title>
     <p>
-      We saw in <xref ref="act-VolumesDisksWashers-y"/> that thinking about the single rectangle we draw can be helpful. We'll see that again in this next formula that we build.
+      We saw in <xref ref="act-VolumesDisksWashers-y"/> that thinking about the single rectangle we drew was helpful. We'll see that again in this next formula that we build.
     </p>
     <p>
       Notice that, in all of the previous work we've done, we've drawn our rectangle so that it is standing <em>perpendicular</em> to the axis of revolution. This is the kind of rectangle that, when we revolve it, traces out the "washer" shape!

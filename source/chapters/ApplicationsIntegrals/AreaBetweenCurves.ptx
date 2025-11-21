@@ -4,7 +4,7 @@
     <title>Area Between Curves</title>
     <introduction>
         <p>
-            We're going to stick with our theme of thinking about a <xref ref="def-RiemannSum" text="title"/>, but this time we'll get back to thinking about area. First, we'll try to remind ourselves now just on what a Riemann sum is, but how we actually constructed it.
+            We're going to stick with our theme of thinking about a <xref ref="def-RiemannSum" text="title"/>, but this time we'll get back to thinking about area. First, we'll try to remind ourselves not just of what a Riemann sum is, but how we actually constructed it.
         </p>
     </introduction>
     <subsection xml:id="subsec-RememberingRiemannSums">
@@ -25,7 +25,7 @@
                 </li>
                 <li>
                     <p>
-                        We multiply the function value, <m>f(x_k^*)</m>, with the width of the slice, <m>\Delta x</m>, to get the measured area of each slice, <m>A_k = f(x_k^*)\Delta x</m>.
+                        We multiply the function value, <m>f(x_k^*)</m>, by the width of the slice, <m>\Delta x</m>, to get the measured area of each slice, <m>A_k = f(x_k^*)\Delta x</m>.
                     </p>
                 </li>
                 <li>
@@ -41,7 +41,7 @@
                     </p>
                 </li>
             </ol>
-            We're going to use this process (we'll call it the <term>slice-and-sum</term> process) for other measurements! Let's see how we can change this so slightly to measure a different area.
+            We're going to use this process (we'll call it the <term>slice-and-sum</term> process) for other measurements! Let's see how we can change this slightly to measure a different area.
         </p>
     </subsection>
     <subsection xml:id="subsec-AreaBetweenCurves">
@@ -59,7 +59,7 @@
             </statement>
         </definition>
         <p>
-            When we're applying this formula for the area between curves, we won't need to recreate the process from <xref ref="act-AreaBetweenCurves"/> to <em>create</em> the integral formula. We can simply identify the functions bounding the region and the end points of the interval, and set up the integral.
+            When we're applying this formula for the area between curves, we won't need to recreate the process from <xref ref="act-AreaBetweenCurves"/> to <em>create</em> the integral formula. We simply can identify the functions bounding the region and the end points of the interval, and set up the integral.
         </p>
         <p>
             We'll use the slice-and-sum process for two reasons:
@@ -79,10 +79,10 @@
         <example>
             <introduction>
                 <p>
-                    For each of the following regions, set up an integral expression representing the area of the region. We can also practice evaluating these integrals to actually calculate the areas.
+                    For each of the following regions, set up an integral expression representing the area of the region. We also can practice evaluating these integrals to actually calculate the areas.
                 </p>
                 <p>
-                    For each of these described regions, the hint will reveal a visualization of the region (using desmos). Feel free to use that to set up the integral expression!
+                    For each of these described regions, the hint will reveal a visualization of the region (using Desmos). Feel free to use that to set up the integral expression!
                 </p>
             </introduction>
             <task>

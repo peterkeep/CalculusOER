@@ -2,7 +2,7 @@
     <title>Volumes by Disks/Washers</title>
     <introduction>
         <p>
-            Consider the region bounded between the curves <m>y=4+2x-x^2</m> and <m>y=\dfrac{4}{x+1}</m>. Will will create a 3-dimensional solid by revolving this region around the <m>x</m>-axis.
+            Consider the region bounded between the curves <m>y=4+2x-x^2</m> and <m>y=\dfrac{4}{x+1}</m>. We will create a 3-dimensional solid by revolving this region around the <m>x</m>-axis.
         </p>
         <figure xml:id="fig-WashersAct-1">
             <caption></caption>
@@ -87,10 +87,10 @@
         </hint>
         <solution>
             <p>
-                The first function, the quadratic, will be annoying to square. We'll end up with some big degree 4 polynomial, though, and antidifferentiating will be easy, since we can use the power rule.
+                The first function, the quadratic, will be annoying to square. We'll end up with some big degree 4 polynomial, though, and antidifferentiating will be easy, since we can use the Power Rule.
             </p>
             <p>
-                The second function squared will give us <m>\dfrac{4}{(x+1)^2}</m>. We can use a <m>u</m>-substitution here with <m>u=x+1</m>. Then we have a negative exponent and we can use more power rule!
+                The second function squared will give us <m>\dfrac{4}{(x+1)^2}</m>. We can use a <m>u</m>-substitution here with <m>u=x+1</m>. Then, we have a negative exponent and we can use the Power Rule!
             </p>
         </solution>
     </task>
