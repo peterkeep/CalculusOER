@@ -45,7 +45,7 @@
                         
                     </p>
                     <p>
-                        A function or curve that is defined <term>implicitly</term> us one where the relationship between the variables is stated with an equation connecting the variables, but not necessarily one which is solved for a single variable. Here, the relationship between variables is not stated with the typical input and output variables. As an example, we might consider the same function as above, but defined as:
+                        A function or curve that is defined <term>implicitly</term> is one where the relationship between the variables is stated with an equation connecting the variables, but not necessarily one which is solved for a single variable. Here, the relationship between variables is not stated with the typical input and output variables. As an example, we might consider the same function as above, but defined as:
                         <me>
                             y-3x-1=0
                         </me>.
@@ -81,14 +81,14 @@
             Let's recall back to <xref ref="subsec-DerivativeNotation" text="title"/>. We talked about how we can use the notation <m>\ddx{f(x)}</m> as a kind of action: the notation says <q>find the derivative of <m>f(x)</m> with respect to <m>x</m>.</q> When we say <q>with respect to <m>x</m>,</q> we mean that we are treating <m>x</m> as an input variable, and trying to find out how <m>f</m> changes based on changes to that input. The notation says, <q>find the rate at which <m>f(x)</m> changes as <m>x</m> increases.</q>
         </p>
         <p>
-            Because this notation is a call to action, we can use it when we're dealing with an equation. We can call back to our early algebra days, where we learn that whatever we do to one side of an equation needs to be done to the other side as well, in order to maintain the equality.
+            Because this notation is a call to action, we can use it when we're dealing with an equation. We can call back to our early algebra days, where we learned that whatever we do to one side of an equation needs to be done to the other side, in order to maintain the equality.
         </p>
         <p>
             We can apply this to our derivative actions: we can differentiate both sides of an equation!
         </p>
         <xi:include href="./activities/act-ImplicitChainRule.ptx" />
         <p>
-            Because we'll be applying our derivative notation to pieces of some equation, we'll need to be very aware of where we need to apply the Chain Rule.
+            Because we'll be applying our derivative notation to pieces of some equation, we need to be very aware of where we need to apply the Chain Rule.
         </p>
         <p>
             Now we can look at some examples of implicitly defined curves and think about questions about the derivative. Let's start with our circle.
@@ -196,14 +196,14 @@
             Let's wrap this up with some general strategy and summary of what we've seen.
         </p>
         <p>
-            The first thing we can notice is that we have talked through how to employ two of the three big derivative rules: we used Chain Rule throughout these examples, and in <xref ref="act-ImplicitSine"/> we needed to use the Product Rule in order to differentiate <m>\ddx{x^2y^2}</m>. We have a glaring omission from our examples so far, though. Where is the Quotient Rule?
+            The first thing we can notice is that we have talked through how to employ two of the three big derivative rules: we used the Chain Rule throughout these examples, and in <xref ref="act-ImplicitSine"/> we needed to use the Product Rule in order to differentiate <m>\ddx{x^2y^2}</m>. We have a glaring omission from our examples so far, though. Where is the Quotient Rule?
         </p>
         <p>
             In these implicitly defined curves, we can manipulate the equations to never have to think about division! Consider the curve:
             <me>
                 \frac{\sin(x)}{x} + \frac{\sin(y)}{x} = xy^2
             </me>.
-            Graph this curve in a graphing utility like desmos. Does it look any different than the curve in <xref ref="act-ImplicitSine"/>?
+            Graph this curve in a graphing utility like Desmos. Does it look any different than the curve in <xref ref="act-ImplicitSine"/>?
         </p>
         <p>
             The only difference, really, is that the curve with the division is not defined at <m>x=0</m>. As long as we keep those domain issues in mind, we can multiply everything by <m>x</m> to get our familiar equation:
