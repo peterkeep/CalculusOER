@@ -12,7 +12,7 @@
 
     <xi:include href="./activities/act-MotivatingProductRule.ptx" />
     <p>
-        A thing that I like to think about is this: if <m>\Ddx{f(x)g(x)} = f'(x)g'(x)</m>, then every function's derivative would be 0.
+        I like to think about it this way: if <m>\Ddx{f(x)g(x)} = f'(x)g'(x)</m>, then every function's derivative would be 0.
     </p>
     <p>
         In the example with the <m>\sin(x)</m> function, we noticed that we could write the function as <m>(1)(\sin(x))</m>. This is true of every function!
@@ -56,9 +56,9 @@
           <me>
             \ddx{f(x)} = u'(x)\cdot v(x) + u(x) \cdot v'(x)
           </me>.
-          For convenience, this is often written as:
+          For convenience, this often is written as:
           <me>
-            \ddx{u\cdot v} = u'v + uv' \hspace{1cm} \text{or}\hspace{1cm} \ddx{u\cdot v} = v \left(\dd{u}{x}\right) + u \left(\dd{v}{x}\right)
+            \ddx{u\cdot v} = u'v + uv' \hspace{1cm}f \text{or}\hspace{1cm} \ddx{u\cdot v} = v \left(\dd{u}{x}\right) + u \left(\dd{v}{x}\right)
           </me>.
         </p>
       </statement>
@@ -105,7 +105,7 @@
   <subsection xml:id="subsec-QuotientRule">
     <title>What about Dividing?</title>
     <p>
-      So we can differentiate a product of functions, and the obvious next question should be about division: if we needed to build a reasonable way of differentiating a product, shouldn't we also need to build a new way of thinking about derivatives of quotients?
+      Since we can differentiate a product of functions, then the obvious next question should be about division: if we needed to build a reasonable way of differentiating a product, shouldn't we also need to build a new way of thinking about derivatives of quotients?
     </p>
     <p>
       A nice thing that we can do is think about division as really just multiplication. For instance, if we want to differentiate <m>\Ddx{\dfrac{\sin(x)}{x^2}}</m>,
@@ -113,7 +113,7 @@
       <me>
         \ddx{\frac{\sin(x)}{x^2}} = \ddx{\frac{1}{x^2}\left(\sin(x)\right)}
       </me>.
-      Now we can just apply product rule!
+      Now we can just apply the Product Rule!
       <md>
         <mrow>\ddx{\frac{1}{x^2}\left(\sin(x)\right)} \amp =\ddx{x^{-2}\sin(x)}</mrow>
         <mrow>u = \sin(x) \amp \;\;\; v = x^{-2} </mrow>
@@ -141,7 +141,7 @@
     </p>
     <xi:include href="./activities/act-QuotientRule.ptx" />
     <p>
-      This formula is fine, but a little clunky. We'll try to rewrite it in some nice ways, but it is a bit more complex than the <xref ref="thm-ProductRule" text="title"/>.
+      This formula is fine, but a little clunky. We'll try to rewrite it in a friendlier way, but it is a bit more complex than the <xref ref="thm-ProductRule" text="title"/>.
     </p>
     <theorem xml:id="thm-QuotientRule">
       <title>Quotient Rule</title>
@@ -153,7 +153,7 @@
           </me>.
         </p>
         <p>
-          For convenience, this is often written as:
+          For convenience, this often is written as:
           <me>
             \ddx{\frac{u}{v}} = \frac{vu'-uv'}{v^2}
           </me>.

@@ -37,7 +37,7 @@
     </p>
     <xi:include href="./activities/act-Gears.ptx" />
     <p>
-      So what we need to do now is to somehow translate this intuitive idea of multiplying rates of change to build a strategy for thinking about derivatives of composed functions.
+      So what we need to do now is somehow translate this intuitive idea of multiplying rates of change to build a strategy for thinking about derivatives of composed functions.
     </p>
     <p>
       We can think of these linked gears as functions: Gear C changes based on what is happening with Gear B, which changes based on Gear A. We can translate Gear A to be an input variable, like <m>x</m>. Then Gear B is a function based on that: we can call it <m>g(x)</m>. Then Gear C is a function that takes in the position of Gear B (the function <m>g(x)</m>), and so we can think of it as <m>f(g(x))</m>.
@@ -71,7 +71,7 @@
       <me>
         \ddx{\sin(x^2)}
       </me>
-      We'll call the <q>inside</q> function <m>u=x^2</m>, so we can really write the whole function (normally we're calling this <m>y</m>) as <m>y=\sin(u)</m>.
+      We'll call the <q>inside</q> function <m>u=x^2</m>, so we can really write the whole function (normally, we're calling this <m>y</m>) as <m>y=\sin(u)</m>.
       <md>
         <mrow> \ddx{\underbrace{\sin(\overbrace{x^2}^{u})}_{y}}\amp =\dd{y}{u} \cdot \dd{u}{x}</mrow>
         <mrow> \amp = \frac{d}{du}\left(\sin(u)\right) \cdot \frac{d}{dx}\left(x^2\right)</mrow>
@@ -148,7 +148,7 @@
     This is just because logs are defined in this circular way: they are, by definition, the exponent you would need to output whatever number is inside the log.
   </p>
   <p>
-    This means that if we want to think about the number <m>2</m>, but written in a different way, we can think of <m>e^{\ln(2)}</m>.
+    This means that if we want to think about the number <m>2</m>, written in a different way, we can think of <m>e^{\ln(2)}</m>.
   </p>
   <p>
     Ok, but why would we <em>ever</em> use this? This seems like a ridiculous way to write a number as basic as 2!

@@ -2,7 +2,7 @@
     <title>Gears and Chains</title>
     <introduction>
         <p>
-            Let's think about some gears. We've got three gears, all different sizes. But the gears are linked together, and a small motor works to spin one of the gears. Since the gears are linked, when one gear spins, they all do. But since they are different sizes, they complete a different number of revolutions: the smaller ones spin more times than the larger ones, since they have a smaller circumference.
+            Let's think about some gears. We've got three gears, all different sizes. But the gears are linked together, and a small motor works to spin one of the gears. Since the gears are linked, when one gear spins, they all spin. But since they are different sizes, they complete a different number of revolutions: the smaller ones spin more times than the larger ones, since they have a smaller circumference.
         </p>
         <interactive platform="doenetml" width="90%" aspect="1:0.8">
             <slate surface="doenetml">
@@ -40,10 +40,10 @@
     <task>
         <statement>
             <p>
-                Now let's translate this into some derivative notation: we've really been finding rates at which one thing changes (the speed of the gear spinning) relative to another's.
+                Now, let's translate this into some derivative notation: we've really been finding rates at which one thing changes (the speed of the gear spinning) relative to another's.
             </p>
             <p>
-                Call the speed of Gear B compared to Gear A: <m>\dd{B}{A}</m>. Now call the speed of Gear C compared to Gear B: <m>\dd{C}{B}</m>. Come up with a formula to find <m>\dd{C}{A}</m>.
+                Call the speed of Gear B compared to Gear A: <m>\dd{B}{A}</m>. Now, call the speed of Gear C compared to Gear B: <m>\dd{C}{B}</m>. Come up with a formula to find <m>\dd{C}{A}</m>.
             </p>
         </statement>
     </task>

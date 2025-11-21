@@ -8,10 +8,10 @@
       What is a derivative?
     </p>
     <p>
-      This can feel like a silly question, since we're calculating it and getting used to finding them. But what is it?
+      This can feel like a silly question, since we're calculating derivatives and getting used to finding them. But what is a derivative?
     </p>
     <p>
-      In this section, we just want to remind ourselves of what this object is, how we should hold it in our minds as we move through the course, and then practice being flexible with this interpretation.
+      In this section, we just want to remind ourselves of what this object<mdash/>the derivative<mdash/>is, how we should hold it in our minds as we move through the course, and then practice being flexible with this interpretation.
     </p>
   </introduction>
   <subsection xml:id="subsec-DerivativeIsSlope">
@@ -101,7 +101,7 @@
         <cell><m>y'\bigg|_{x=a}</m></cell>
         <cell>
           <p>
-            We can find slopes on any curve, not just functions. This is sometimes also used as a way to simplify the notation, especially when we want to manipulate equations involving <m>y'</m>.
+            We can find slopes on any curve, not just functions. This sometimes is also used as a way to simplify the notation, especially when we want to manipulate equations involving <m>y'</m>.
           </p>
         </cell>
       </row>
@@ -111,7 +111,7 @@
         <cell><m>\frac{dy}{dx}\bigg|_{x=a}</m></cell>
         <cell>
           <p>
-            The derivative is a slope. It is <m>\frac{\Delta y}{\Delta x}</m> as <m>\Delta x \to 0</m>, and we use <m>dx</m> and <m>dy</m> (called <term>differentials</term>) to represent <m>\Delta x</m> and <m>\Delta y</m> as the limits as <m>\Delta x \to 0</m>. This notation is also useful to tell us what the rate of change is: what is changing (in this case <m>y</m>) and what is it changing based on (in this case <m>x</m>).
+            The derivative is a slope. It is <m>\frac{\Delta y}{\Delta x}</m> as <m>\Delta x \to 0</m>, and we use <m>dx</m> and <m>dy</m> (called <term>differentials</term>) to represent <m>\Delta x</m> and <m>\Delta y</m> as the limits as <m>\Delta x \to 0</m>. This notation also is useful to tell us what the rate of change is: what is changing (in this case <m>y</m>) and what is it changing based on (in this case <m>x</m>)?
           </p> 
         </cell>
       </row>
@@ -121,7 +121,7 @@
         <cell><m>\frac{d}{dx}\left(f(x)\right)\bigg|_{x=a}</m></cell>
         <cell>
          <p>
-          The derivative is an action that we do to some function. We can call it an <term>operator</term>, although we won't formally define that term in this text. We'll look at this idea more in <xref ref="sec-ImplicitDifferentiation"/>. We can specify what we are expecting the input variable to be, based on the differential <m>dx</m> in the denominator. 
+          The derivative is an action that we do to some function. We can call it an <term>operator</term> although we won't formally define that term in this text. We'll look at this idea more in <xref ref="sec-ImplicitDifferentiation"/>. We can specify what we are expecting the input variable to be, based on the differential <m>dx</m> in the denominator. 
           </p> 
         </cell>
       </row>
