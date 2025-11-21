@@ -2,13 +2,41 @@
     <title>The Alternating Harmonic Series Converges (Again)</title>
     <introduction>
         <p>
-            
+            Now let's consider a new, rearrranged, version of the alternating harmonic series:
+            <me>
+                1-\frac{1}{2}-\frac{1}{4}+\frac{1}{3}-\frac{1}{6}-\frac{1}{8} +\frac{1}{5}-\frac{1}{10}-\frac{1}{12}+ ...
+            </me>
+            We can write this in summation notation as:
+            <me>
+                \sum_{k=1}^\infty \left(\frac{1}{2k-1}-\frac{1}{4k-2}-\frac{1}{4k}\right)
+            </me>.
         </p>
     </introduction>
     <task>
         <statement>
             <p>
-                
+                First, confirm that all of the terms from the alternating harmonic series will eventually show up in this series. Convince yourself that we are truly adding (and subtracting) all of the same values with just a different order. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Does this new series converge? Check, using the <xref ref="thm-AlternatingSeriesTest" text="title"/>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Add up the first few terms of this series to find the value of a partial sum. You can choose how many terms you add. Does it look like it will also converge to <m>\ln(2)</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use technology to add up many terms of this series. Can you convince yourself what this series converges to?
             </p>
         </statement>
     </task>

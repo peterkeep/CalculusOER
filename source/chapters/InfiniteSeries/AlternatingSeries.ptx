@@ -4,7 +4,7 @@
   <title>Alternating Series and Conditional Convergence</title>
   <introduction>
     <p>
-      Before we move too far forward, let's circle back to a point made in <xref ref="subsec-WhyConditions" text="title"/>. In the <xref ref="thm-IntegralTest" text="title"/>, we required the terms of our series (and the continuous function we connected it with) to be positive. This was really just a mechanism that allowed us to say, in our proof, that the sequence of partial sums was monotonic. When we accumulate more of a positive thing, the total gets bigger. This is half of what we needed for us to employ the <xref ref="thm-MonotoneConvergence" text="title"/>. And because this is such a useful tool, we'll see more of this "positive term series" condition showing up in the tools we use to see if a series converges.
+      Before we move too far forward, let's circle back to a point made in <xref ref="subsec-WhyConditions" text="title"/>. In the <xref ref="thm-IntegralTest" text="title"/>, we required the terms of our series (and the continuous function we connected it with) to be positive. This was really just a mechanism that allowed us to say, in our proof, that the sequence of partial sums was monotonic. When we accumulate more of a positive thing, the total gets bigger. This is half of what we needed for us to employ the <xref ref="thm-MonotoneConvergence" text="title"/>. And because this is such a useful tool, we'll see more of this <q>positive term series</q>condition showing up in the tools we use to see if a series converges.
     </p>
     <p>
       But that makes this a perfect time to stop and ask a hallowed mathematical question: <em>What happens if that property isn't there?</em> What happens when our series does not only have positive terms?
@@ -17,7 +17,7 @@
   <subsection xml:id="subsec-AlternatingSeries">
     <title>Defining Alternating Series, and the Main Result</title>
     <p>
-      Ok so hopefully we have convinced ourselves that a series that has terms that alternate in sign might have an "easier" time converging than a series with only positive terms. Let's start with a definition (so that we can continue to refer to these types of series easily), and then move towards the main result.
+      Ok so hopefully we have convinced ourselves that a series that has terms that alternate in sign might have an <q>easier</q>time converging than a series with only positive terms. Let's start with a definition (so that we can continue to refer to these types of series easily), and then move towards the main result.
     </p>
     <definition xml:id="def-AlternatingSeries">
     <title>Alternating Series</title>
@@ -95,15 +95,15 @@
           <ul>
             <li>
               <p>
-                All of the "even-indexed" terms (<m>a_0</m>, <m>a_2</m>, <m>a_4</m>, etc.) are positive, while all of the "odd-indexed" terms (<m>a_1</m>, <m>a_3</m>, <m>a_5</m>, etc.) are negative.
+                All of the <q>even-indexed</q>terms (<m>a_0</m>, <m>a_2</m>, <m>a_4</m>, etc.) are positive, while all of the <q>odd-indexed</q>terms (<m>a_1</m>, <m>a_3</m>, <m>a_5</m>, etc.) are negative.
               </p>
             </li>
             <li>
               <p>
-                This means that all of the "even-indexed" partial sums are big, while all of the "odd-indexed partial sums" are small. Our sequence of partial sums bounces up to an even-index and bounces down to an odd-index.
+                This means that all of the <q>even-indexed</q>partial sums are big, while all of the <q>odd-indexed partial sums</q>are small. Our sequence of partial sums bounces up to an even-index and bounces down to an odd-index.
               </p>
               <p>
-                As long as the size of the terms (the size of the differences between partial sums) is decreasing like we have pictured, then each "next" even-indexed partial sum is a bit smaller than the "previous" even-indexed partial sum. The same thing is true for the odd-indexed partial sums.
+                As long as the size of the terms (the size of the differences between partial sums) is decreasing like we have pictured, then each <q>next</q>even-indexed partial sum is a bit smaller than the <q>previous</q>even-indexed partial sum. The same thing is true for the odd-indexed partial sums.
               </p>
             </li>
             <li>
@@ -230,7 +230,7 @@
       We can actually get another result really easily from this one! It's about how we might approximate the value that an infinite series converges to.
     </p>
     <p>
-      We know that if a series converges, it's because the limit of the partial sums exists. So we "just" need to find what the real number, <m>S</m>, is when
+      We know that if a series converges, it's because the limit of the partial sums exists. So we <q>just</q>need to find what the real number, <m>S</m>, is when
       <me>
         \lim_{n\to\infty} \sum_{k=0}^n a_k = S
       </me>.
@@ -263,11 +263,11 @@
     </p>
     <xi:include href="./activities/act-AlternatingHarmonicSeries.ptx" />
     <p>
-      Let's look at another "version" of this "same" series. You'll notice that we're using scare-quotes on "version" and "same," and that's what we're going to investigate.
+      So we have some evidence that says that the alternating harmonic series converges to <m>\ln(2)</m>. Let's look at another <q>version</q> of this <q>same</q> series. You'll notice that we're using scare-quotes on <q>version</q> and <q>same,</q> and that's what we're going to investigate.
     </p>
     <xi:include href="./activities/act-RearrangedAlternatingHarmonicSeries.ptx" />
     <p>
-      This is strange! We have two series that seem to be the same thing (one is just a re-arranged version of the other) that both converge, but they converge to different things!
+      This is strange! We have two series that seem to be the same thing (one is just a re-arranged version of the other) that both converge, but they converge to different things! One seemingly converges to <m>\ln(2)</m> while the other converges to half of that: <m>\dfrac{\ln(2)}{2}</m>. Very strange!
     </p>
     <p>
       This doesn't seem to follow the <em>normal</em> rules of addition: we lose the normal associative property of addition, where the order or the way that we group terms to add typically doesn't matter. Here it does!
@@ -286,7 +286,14 @@
         </p>
       </statement>
     </definition>
-
+    <aside>
+      <p>
+        We won't go into this more, but a very cool result is that if an alternating series converges conditionally, then we can find a rearrangement of the terms that will converge to <em>literally any real number that you'd like</em>. We can rearrange the terms in such a way that the series converges to <m>0</m> or to <m>\pi</m> or to anything else you'd like.
+      </p>
+      <p>
+        But wait, it gets even stranger: you can also rearrange the terms in such a way that the resulting series diverges to <m>\infty</m> or to <m>-\infty</m>. These series really test the limits of what we mean when we say that a series converges, and so I hope that it seems reasonable to classify them separately of the <q>normally behaved</q> series.
+      </p>
+    </aside>
   </subsection>
   <conclusion>
     <p>
