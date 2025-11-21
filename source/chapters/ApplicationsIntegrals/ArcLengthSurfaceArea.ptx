@@ -99,7 +99,7 @@
       <me>
         \Delta y_k = f(x_{k+1}) - f(x_k)
       </me>.
-      We'll need to re-think about how we represent this part in order to get a single function output.
+      We'll need to rethink about how we represent this part in order to get a single function output.
     </p>
     <p>
       We also need to have this function <em>multiplied</em> by <m>\Delta x</m>. In our sum, we have <m>\Delta x</m> as a part of the function itself, under the square root. We'll want to move this <m>\Delta x</m> outside of the root. Let's start there.
@@ -176,7 +176,7 @@
             Instead of worrying about actually evaluating this integral, we'll leave it like this.
           </p>
           <p>
-            If you do want to fiddle with this integral, than it might be helpful to note that we can re-write it:
+            If you do want to fiddle with this integral, than it might be helpful to note that we can rewrite it:
             <md>
               <mrow> \int_{x=1}^{x=2}\sqrt{1+\frac{1}{x^4}}\;dx \amp = \int_{x=1}^{x=2}\sqrt{\frac{x^4+1}{x^4}}\;dx </mrow>
               <mrow> \amp = \int_{x=1}^{x=2} \frac{\sqrt{1+x^4}}{x^2}\;dx</mrow>
@@ -200,7 +200,7 @@
             We can leave this integral like this for now.
           </p>
           <p>
-            Similar to the first example, though, we can re-write this if you'd like to explore it more!
+            Similar to the first example, though, we can rewrite this if you'd like to explore it more!
             <md>
               <mrow> \int_{x=-1}^{x=1} \sqrt{1+\frac{1}{1-x^2}}\;dx \amp = \int_{x=-1}^{x=1} \sqrt{\frac{2-x^2}{1-x^2}}\;dx</mrow>
             </md>

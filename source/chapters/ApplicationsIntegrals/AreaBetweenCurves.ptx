@@ -59,7 +59,7 @@
             </statement>
         </definition>
         <p>
-            When we're applying this formula for the area between curves, we won't need to re-create the process from <xref ref="act-AreaBetweenCurves"/> to <em>create</em> the integral formula. We can simply identify the functions bounding the region and the end points of the interval, and set up the integral.
+            When we're applying this formula for the area between curves, we won't need to recreate the process from <xref ref="act-AreaBetweenCurves"/> to <em>create</em> the integral formula. We can simply identify the functions bounding the region and the end points of the interval, and set up the integral.
         </p>
         <p>
             We'll use the slice-and-sum process for two reasons:
@@ -156,11 +156,11 @@
             This last example had two interesting regions: we had to split them into two pieces because the boundary functions changed order or, in the case of the last example, changed completely to different boundary functions.
         </p>
         <p>
-            We're going to re-do the last problem and work on trying to change our perspective a bit in order to get a single integral to evaluate the area.
+            We're going to redo the last problem and work on trying to change our perspective a bit in order to get a single integral to evaluate the area.
         </p>
         <xi:include href="./activities/act-SingleIntegral.ptx" />
         <p>
-            We can re-write our definition of the area between curves (<xref ref="def-AreaBetweenCurves"/>) to account for this change in perspective, by thinking about these same functions in terms of <m>y</m>.
+            We can rewrite our definition of the area between curves (<xref ref="def-AreaBetweenCurves"/>) to account for this change in perspective, by thinking about these same functions in terms of <m>y</m>.
         </p>
         <definition xml:id="def-AreaBetweenCurves-y">
             <title>Area Between Curves (in terms of <m>y</m>)</title>
