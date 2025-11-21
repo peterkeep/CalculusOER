@@ -5,7 +5,7 @@
 
   <introduction>
     <p>
-      We're going to re-visit limits, but with a slightly new problem-solving tool. Specifically, we'll be thinking about Indeterminate Forms. We noticed, back in <xref ref="sec-IndeterminateForms" text="type-global"/>, that we could evaluate limits for indeterminate forms by swapping out the function with another function that was mostly equivalent, only differing at the <m>x</m>-value we were approaching in the limit (<xref ref="thm-SlightlyDifferentFunctions" text="type-global-title"/>). 
+      We're going to revisit limits, but with a slightly new problem-solving tool. Specifically, we'll be thinking about Indeterminate Forms. We noticed, back in <xref ref="sec-IndeterminateForms" text="type-global"/>, that we could evaluate limits for indeterminate forms by swapping out the function with another function that was mostly equivalent, only differing at the <m>x</m>-value we were approaching in the limit (<xref ref="thm-SlightlyDifferentFunctions" text="type-global-title"/>). 
     </p>
     <p>
       We ended that section by thinking about a limit where this was difficult, in <xref ref="act-SinXOverX"/>. 
@@ -187,7 +187,7 @@
     <subsubsection xml:id="subsubsec-Products">
       <title>Products!</title>
       <p>
-        We can re-write <m>f(x)\cdot g(x)</m> as a quotient by dividing by a reciprocal. So either
+        We can rewrite <m>f(x)\cdot g(x)</m> as a quotient by dividing by a reciprocal. So either
         <me>
           f(x)\cdot g(x) = \frac{f(x)}{1/g(x)}
         </me>
@@ -209,7 +209,7 @@
         </statement>
         <hint>
           <p>
-            Re-write this limit as:
+            Rewrite this limit as:
             <me>
               \lim_{x\to 0^+} \left(\frac{\ln(x)}{1/x}\right)
             </me>.
@@ -234,7 +234,7 @@
     <subsubsection xml:id="subsubsec-Differences">
       <title>Differences!</title>
       <p>
-        We can re-write <m>f(x)-g(x)</m> as a product by factoring something out of the difference. Then, if the product is a <m>0\cdot\infty</m> indeterminate form, we can divide by a reciprocal to turn it into a quotient.
+        We can rewrite <m>f(x)-g(x)</m> as a product by factoring something out of the difference. Then, if the product is a <m>0\cdot\infty</m> indeterminate form, we can divide by a reciprocal to turn it into a quotient.
       </p>
       <p>
         Choosing what to factor out is sometimes very difficult. But we should note that this is the strategy we used to evaluate <xref ref="thm-PolynomialEndBehavior" text="title"/>.
@@ -284,7 +284,7 @@
         We can think about how we approached these types of functions raised to functions when we learned about <xref ref="sec-LogarithmicDifferentiation" text="title"/>.
       </p>
       <p>
-        We were able to use logarithms to re-write these types of exponentials as products. So we can say that:
+        We were able to use logarithms to rewrite these types of exponentials as products. So we can say that:
         <md>
           <mrow>f(x)^{g(x)} \amp = e^{\ln\left(f(x)^{g(x)}\right)}</mrow>
           <mrow> \amp = e^{g(x)\ln(f(x))}</mrow>
@@ -304,7 +304,7 @@
           </statement>
           <hint>
             <p>
-              We can re-write <m>x^x</m> as <m>e^{\ln\left(x^x\right)}</m> which is the same as <m>e^{x\ln(x)}</m>. Now we can evaluate the limit <m>\displaystyle\lim_{x\to 0^+} x\ln(x)</m>, and make sure to return the value into the exponent.
+              We can rewrite <m>x^x</m> as <m>e^{\ln\left(x^x\right)}</m> which is the same as <m>e^{x\ln(x)}</m>. Now we can evaluate the limit <m>\displaystyle\lim_{x\to 0^+} x\ln(x)</m>, and make sure to return the value into the exponent.
             </p>
           </hint>
           <solution>
@@ -331,7 +331,7 @@
           </statement>
           <hint>
             <p>
-              Re-write this as <m>\displaystyle\lim_{x\to\infty}x^{\frac{1}{x}}</m>. Now you can use the exponential/log composition to rewrite this again.
+              Rewrite this as <m>\displaystyle\lim_{x\to\infty}x^{\frac{1}{x}}</m>. Now you can use the exponential/log composition to rewrite this again.
             </p>
           </hint>
           <solution>
