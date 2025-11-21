@@ -6,10 +6,10 @@
             <me>
                 A(x)=\int_{t=0}^{t=x} g(t)\;dt
             </me>.
-            This is a strange function, because we're defining the function as an integral of another function. Specifically, note that the <em>input</em> for our area function <m>A(x)</m> is the ending limit of integration: we're calculating the signed area "under" the curve of <m>g(t)</m> from <m>t=0</m> up to some variable ending point <m>t=x</m>.
+            This is a strange function, because we're defining the function as an integral of another function. Specifically, note that the <em>input</em> for our area function <m>A(x)</m> is the ending limit of integration: we're calculating the signed area <q>under</q> the curve of <m>g(t)</m> from <m>t=0</m> up to some variable ending point <m>t=x</m>.
         </p>
         <p>
-            We can visualize this function by looking at the areas we create as we change <m>x</m>. For now, get used to just seeing the area "under" <m>g</m> when we move the point around. The areas themselves are the outputs of the function <m>A(x)</m>.
+            We can visualize this function by looking at the areas we create as we change <m>x</m>. For now, get used to just seeing the area <q>under</q> <m>g</m> when we move the point around. The areas themselves are the outputs of the function <m>A(x)</m>.
         </p>
         <interactive platform="doenetml" width="95%" aspect="1:1.3">
             <slate surface="doenetml">

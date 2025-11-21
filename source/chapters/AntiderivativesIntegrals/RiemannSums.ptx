@@ -83,7 +83,7 @@
       The only real downside is that when we increase the number of slices/rectangles, we are really increasing the number of decisions that we have to make: we have to choose an <m>x_k^*</m> for each subinterval, and so while it isn't hard to just calculate a bunch of areas and add them up, it is difficult, on a human level, to make a bunch of decisions about which <m>x</m>-value to choose from each subinterval. But this decision isn't even that important!
     </p>
     <p>
-      We use the "star" notation on the <m>x_k^*</m> to represent the fact that it really doesn't matter which <m>x</m>-value gets chosen from the subinterval: as long as we pick one, we get an approximation! And when <m>n</m> increases, it matters less and less what the actual <m>x</m>-value is: as long as our function <m>f(x)</m> is continuous, then there will be not much variation among the <m>y</m>-value outputs for any <m>x</m>-values in each (small) interval!
+      We use the <q>star</q> notation on the <m>x_k^*</m> to represent the fact that it really doesn't matter which <m>x</m>-value gets chosen from the subinterval: as long as we pick one, we get an approximation! And when <m>n</m> increases, it matters less and less what the actual <m>x</m>-value is: as long as our function <m>f(x)</m> is continuous, then there will be not much variation among the <m>y</m>-value outputs for any <m>x</m>-values in each (small) interval!
     </p>
     <p>
       All of this to say: let's make a single decision about picking <m>n</m> <m>x</m>-values from <m>n</m> subintervals instead of having to make <m>n</m> decisions (one for each <m>x</m>-value).

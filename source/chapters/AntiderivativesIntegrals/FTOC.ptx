@@ -29,7 +29,7 @@
       </statement>
       <proof>
         <p>
-          The proof of this theorem is one of the most delightful proofs we'll see. This is a "connector" theorem: a theorem that brings together several big ideas or objects from one common area of math and links them together. Let's enjoy the proof together.
+          The proof of this theorem is one of the most delightful proofs we'll see. This is a <q>connector</q> theorem: a theorem that brings together several big ideas or objects from one common area of math and links them together. Let's enjoy the proof together.
         </p>
         <p>
           Let <m>f(t)</m> be a function that is continuous on the interval <m>a\leq t\leq b</m>. Then, we'll define the area function as <m>A(x) = \displaystyle \int_{t=a}^{t=x} f(t)\;dt</m> for <m>a\leq x \leq b</m>. We are interested in <m>A'(x)</m>.
@@ -57,7 +57,7 @@
           <me>
             \int_{t=x}^{t=x+\Delta x} f(t)\;dt \approx f(x^*) \Delta x
           </me>
-          where <m>x^*</m> is some <m>x</m>-value in <m>[x, x+\Delta x]</m>. Note that we don't have a sum, as we normally would, since we are only "adding" a single area of a single rectangle.
+          where <m>x^*</m> is some <m>x</m>-value in <m>[x, x+\Delta x]</m>. Note that we don't have a sum, as we normally would, since we are only <q>adding</q> a single area of a single rectangle.
         </p>
         <p>
           This is only an approximation of the difference <m>A(x+\Delta x)-A(x)</m>, and so we can say, for small values of <m>\Delta x</m>,
@@ -85,7 +85,7 @@
               </p>
             </li>
           </ol>
-          To be convinced that <m>A'(x)\to f(x^*)</m>, we just have to rely on the fact that, while our Riemann sum only has <m>n=1</m> rectangle, as <m>\Delta x\to 0</m> the width(s) of "all" of our rectangles (our only one) approach 0, and so we end up with the definition of a definite integral in the limit:
+          To be convinced that <m>A'(x)\to f(x^*)</m>, we just have to rely on the fact that, while our Riemann sum only has <m>n=1</m> rectangle, as <m>\Delta x\to 0</m> the width(s) of <q>all</q> of our rectangles (our only one) approach 0, and so we end up with the definition of a definite integral in the limit:
           <md>
             <mrow>\lim_{\Delta x \to 0} f(x^*)\Delta x \amp = \lim_{\Delta x \to 0} \sum_{k=1}^1 f(x_k^*) \Delta x </mrow>
             <mrow> \amp = \lim_{\Delta x \to 0} \int_{t=x}^{t=x+\Delta x} f(t)\;dt</mrow>
@@ -109,7 +109,7 @@
       </proof>
     </theorem>
     <p>
-      This theorem is going to be the big result that we use to show how to actually evaluate an area, and so it is easy to think of it as purely support for a "more important" result coming next. But we should pause and think about what this result tells us.
+      This theorem is going to be the big result that we use to show how to actually evaluate an area, and so it is easy to think of it as purely support for a <q>more important</q> result coming next. But we should pause and think about what this result tells us.
     </p>
     <p>
       What we've done here is come up with a way of:
@@ -121,7 +121,7 @@
         </li>
         <li>
           <p>
-            Generating antiderivatives. Until now, we have had to rely on being able to recognize functions as derivatives of other things, or be able to "undo" derivative rules. And this will continue to be an important way for us to antidifferentiate functions. But now we have a way of constructing antiderivatives, albeit weird looking ones<mdash/>we are not yet used to thinking about a function that is defined as a definite integral with a variable ending point.
+            Generating antiderivatives. Until now, we have had to rely on being able to recognize functions as derivatives of other things, or be able to <q>undo</q> derivative rules. And this will continue to be an important way for us to antidifferentiate functions. But now we have a way of constructing antiderivatives, albeit weird looking ones<mdash/>we are not yet used to thinking about a function that is defined as a definite integral with a variable ending point.
           </p>
         </li>
       </ol>
@@ -139,7 +139,7 @@
           <me>
             \int_{x=a}^{x=b} f(x)\;dx = F(x)\bigg{|}_{x=a}^{x=b} = F(b)-F(a)
           </me>.
-          The vertical bar means "evaluated," and <m>F(x)\bigg{|}_{x=a}^{x=b}</m> is typically read as "<m>F(x)</m> evaluated from <m>x=a</m> to <m>x=b</m>."
+          The vertical bar means <q>evaluated,</q> and <m>F(x)\bigg{|}_{x=a}^{x=b}</m> is typically read as <q><m>F(x)</m> evaluated from <m>x=a</m> to <m>x=b</m>.</q>
         </p>
       </statement>
     </theorem>

@@ -2,7 +2,7 @@
     <title>A Hard Integral</title>
     <introduction>
         <p>
-            We're going to be thinking about two integrals here, but before we do, we should remind ourselves about how we can "re-phrase" an integration question.
+            We're going to be thinking about two integrals here, but before we do, we should remind ourselves about how we can <q>rephrase</q> an integration question.
         </p>
         <p>
             If we are asked to find <m>\displaystyle \int f(x)\;dx</m>, then we are really being asked to find some function <m>F(x)</m> whose derivative is <m>f(x)</m>. Of course, we're actually being asked to find <em>all</em> of the possible functions that fit this requirement, but we know that the constant of integration covers all of the differences.
@@ -27,7 +27,7 @@
                 If you're looking at the structure of <m>F'(x)=3x^2e^{x^3}</m>, can you tell what kind of derivative rule we had to have used in order to get this derivative?
             </p>
             <p>
-                How do we use that to "undo" this differentiation?
+                How do we use that to <q>undo</q> this differentiation?
             </p>
         </hint>
     </task>

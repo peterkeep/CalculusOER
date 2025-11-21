@@ -26,7 +26,7 @@
         </p>
         <xi:include href="./activities/act-FindFunction.ptx" />
         <p>
-            We've done two things here: thought about how we might "undo" differnentiation, and discovered a nice property about constants.
+            We've done two things here: thought about how we might <q>undo</q> differnentiation, and discovered a nice property about constants.
         </p>
         <p>
             Note that we've already discovered this rule! We proved it, back when we were playing with the <xref ref="thm-MVT" text="title"/>. We built a related theorem that showed that two functions can have the same derivative, and if they do then they are off by, at most, a constant: <xref ref="thm-OffByConstant" text="type-global-title"/>.
@@ -43,7 +43,7 @@
     <subsection xml:id="subsec-Antiderivatives">
         <title>Antiderivatives</title>
         <p>
-            We want to try to define and name these "backwards derivatives." Instead of calling them the "negative first" derivative, we will name them as <term>antiderivatives</term>.
+            We want to try to define and name these <q>backwards derivatives.</q> Instead of calling them the <q>negative first</q> derivative, we will name them as <term>antiderivatives</term>.
         </p>
         <definition xml:id="def-Antiderivative">
             <title>Antiderivative</title>
@@ -122,12 +122,12 @@
         <title>Initial Value Problems</title>
         <xi:include href="./activities/act-InitialValueProblem.ptx" />
         <p>
-            We call this type of problem an "initial value problem." Here, we ended up solving for a family of antiderivatives, but then using some more information about that antiderivative (in this case, information about file size and time) to find the specific antiderivative function that was relevant.
+            We call this type of problem an <q>initial value problem.</q> Here, we ended up solving for a family of antiderivatives, but then using some more information about that antiderivative (in this case, information about file size and time) to find the specific antiderivative function that was relevant.
         </p>
         <assemblage xml:id="strat-InitialValueProblems">
             <title>Solving Initial Value Problems</title>
             <p>
-                For some function <m>f(x)</m>, if we want to find an antiderivative function <m>F(x)</m> and we know some "initial value," <m>F(a)</m>, then we can find the exact antiderivative by:
+                For some function <m>f(x)</m>, if we want to find an antiderivative function <m>F(x)</m> and we know some <q>initial value,</q> <m>F(a)</m>, then we can find the exact antiderivative by:
                 <ol>
                     <li>
                         <p>
@@ -186,7 +186,7 @@
                         </li>
                         <li>
                             <p>
-                                <m>dx</m> is a differential, and represents both the "end" of the integral as well as an indicator of what the input variable of the integrand should be (or what variable we antidifferentiate "with regard to").
+                                <m>dx</m> is a differential, and represents both the <q>end</q> of the integral as well as an indicator of what the input variable of the integrand should be (or what variable we antidifferentiate <q>with regard to</q>).
                             </p>
                         </li>
                         <li>
@@ -196,7 +196,7 @@
                         </li>
                         <li>
                             <p>
-                                <m>C</m> is called the "constant of integration" and represents any real number
+                                <m>C</m> is called the <q>constant of integration</q> and represents any real number
                             </p>
                         </li>
                     </ul>

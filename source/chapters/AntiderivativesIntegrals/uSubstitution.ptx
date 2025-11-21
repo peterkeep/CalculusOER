@@ -38,23 +38,23 @@
     <subsection xml:id="subsec-UndoChainRule">
         <title>Undoing the Chain Rule</title>
         <p>
-            Let's try to formalize this process of "undoing the Chain Rule" that we noticed in <xref ref="act-UndoChainRule"/>. It might be helpful to, first, think about the Chain Rule and how the differentiation process works. Let's look at the differentiating <m>\sin(x^7)</m> using the Chain Rule.
+            Let's try to formalize this process of <q>undoing the Chain Rule</q> that we noticed in <xref ref="act-UndoChainRule"/>. It might be helpful to, first, think about the Chain Rule and how the differentiation process works. Let's look at the differentiating <m>\sin(x^7)</m> using the Chain Rule.
         </p>
         <p>
-            The first thing we should do when finding <m>\ddx{\sin(x^7)}</m> is recognize and identify the composition. We might call <m>x^7</m> the "inside" function, or re-label it as <m>u</m>. Then we know that the Chain Rule will tell us to differentiate the "outside" function with regard to the "inside" function (or <m>u</m> if we re-label things) and then multiply by the derivative of the inside function (or <m>\frac{du}{dx}</m>).
+            The first thing we should do when finding <m>\ddx{\sin(x^7)}</m> is recognize and identify the composition. We might call <m>x^7</m> the <q>inside</q> function, or re-label it as <m>u</m>. Then we know that the Chain Rule will tell us to differentiate the <q>outside</q> function with regard to the <q>inside</q> function (or <m>u</m> if we re-label things) and then multiply by the derivative of the inside function (or <m>\frac{du}{dx}</m>).
             <md>
                 <mrow>\ddx{\sin(\underbrace{x^7}_{u})} \amp =\ddx{\sin(u)}</mrow>
                 <mrow> \amp = \frac{d}{du}\left(\sin(u)\right)\left(\frac{du}{dx}\right)</mrow>
                 <mrow> \amp = \cos(u)\ddx{x^7}</mrow>
                 <mrow> \amp = \cos(x^7)7x^6</mrow>
             </md>
-            From here, we might re-write things to make it look nicer (coefficients look weird when they're not in the front 😭) and write:
+            From here, we might re-write things to make it look nicer (coefficients look weird when they're not in the front, in my opinion) and write:
             <me>
                 \ddx{\sin(x^7)}= 7x^6\cos(x^7)
             </me>
         </p>
         <p>
-            When we work through this process backwards, we'll need to identify the "inside" function, but also find the derivative of that "inside" function, <m>\frac{du}{dx}</m>. This derivative gets introduced in the Chain Rule, and so it will have to be picked out when we undo the Chain Rule.
+            When we work through this process backwards, we'll need to identify the <q>inside</q> function, but also find the derivative of that <q>inside</q> function, <m>\frac{du}{dx}</m>. This derivative gets introduced in the Chain Rule, and so it will have to be picked out when we undo the Chain Rule.
         </p>
         <p>
             Let's build this process and go through the integral <m>\displaystyle \int 7x^6\cos(x^7)\;dx</m> from <xref ref="act-UndoChainRule"/>.
@@ -65,10 +65,10 @@
                 <ol>
                     <li>
                         <p>
-                            Identify an "inside" function and/or a "function-derivative pair." We'll label the "inside" function, or the "function" part of the "function-derivative pair," as <m>u</m>.
+                            Identify an <q>inside</q> function and/or a <q>function-derivative pair.</q> We'll label the <q>inside</q> function, or the <q>function</q> part of the <q>function-derivative pair,</q> as <m>u</m>.
                         </p>
                         <p>
-                            <em>Example:</em> In our integral <m>\displaystyle\int 7x^6\cos(x^7)\;dx</m> we can see the "inside" function is <m>x^7</m>, and also we have <m>x^7</m> and <m>7x^6</m> as the function-derivative pair. Let <m>u=x^7</m>.
+                            <em>Example:</em> In our integral <m>\displaystyle\int 7x^6\cos(x^7)\;dx</m> we can see the <q>inside</q> function is <m>x^7</m>, and also we have <m>x^7</m> and <m>7x^6</m> as the function-derivative pair. Let <m>u=x^7</m>.
                         </p>
                     </li>
                     <li>
@@ -93,7 +93,7 @@
                     </li>
                     <li>
                         <p>
-                            Antidifferentiate! We should have an integral that is "written in terms of <m>u</m>," and so we can antidifferentiate the function as if <m>u</m> was our input variable. Notice that what we've done with our substitution is to undo the "multiply by the derivative of the inside function" step of the Chain Rule. Now we can antidifferentiate the "outside" function!
+                            Antidifferentiate! We should have an integral that is <q>written in terms of <m>u</m>,</q> and so we can antidifferentiate the function as if <m>u</m> was our input variable. Notice that what we've done with our substitution is to undo the <q>multiply by the derivative of the inside function</q> step of the Chain Rule. Now we can antidifferentiate the <q>outside</q> function!
                         </p>
                         <p>
                             <em>Example:</em> <m>\displaystyle\int\cos(u)\;du = \sin(u)+C</m>
@@ -101,7 +101,7 @@
                     </li>
                     <li>
                         <p>
-                            Substitute "back" to have our antiderivative family written in terms of our original input variable, <m>x</m> in this case. We'll replace <m>u</m> with whatever we had defined our substitution to be in step 1.
+                            Substitute <q>back</q> to have our antiderivative family written in terms of our original input variable, <m>x</m> in this case. We'll replace <m>u</m> with whatever we had defined our substitution to be in step 1.
                         </p>
                         <p>
                             <em>Example:</em> We defined <m>u=x^7</m>, so:
@@ -122,7 +122,7 @@
         </p>
         <aside>
             <p>
-                The first time I saw <xref ref="fig-uSub"/> was in a Differential Equations class. We were learning about Laplace transformations, a technique that is very useful for solving a variety of problems in the field of differential equations. My professor was explaining why and how Laplace transformations were so powerful, and drew a version of the figure I've included to explain <m>u</m>-substitution. It was so helpful for me to understand what was happening, but the most helpful thing was when the professor said, offhand, "But that's exactly the same type of thing that <m>u</m>-substitution does, too." So many things fell into place for me because of that comment! You are guaranteed to see different versions of this picture throughout this textbook, but you can also keep an eye out for this in different problem-solving techniques in mathematics.
+                The first time I saw <xref ref="fig-uSub"/> was in a Differential Equations class. We were learning about Laplace transformations, a technique that is very useful for solving a variety of problems in the field of differential equations. My professor was explaining why and how Laplace transformations were so powerful, and drew a version of the figure I've included to explain <m>u</m>-substitution. It was so helpful for me to understand what was happening, but the most helpful thing was when the professor said, offhand, <q>But that's exactly the same type of thing that <m>u</m>-substitution does, too.</q> So many things fell into place for me because of that comment! You are guaranteed to see different versions of this picture throughout this textbook, but you can also keep an eye out for this in different problem-solving techniques in mathematics.
             </p>
         </aside>
         <figure xml:id="fig-uSub">
@@ -168,7 +168,7 @@
             In this case, we can try to identify what the problem is (in this case, composition) and find some transformation to apply to our integral. We choose a variable substitution, and we translate our integral to a different context (in this case, by writing it in terms of a different variable). In order for us to do this, we ned to define some substitution <m>u</m>, and then translate <m>dx</m> into <m>du</m> using the relationship <m>du=u'\;dx</m>.
         </p>
         <p>
-            Once we have this new integral, of a different function <m>g(u)</m> in a different context with <m>u</m> acting as the input, we try to antidifferentiate again. If we pick our substitution carefully and we know what kind of problem we're trying to fix (in this case, getting around the composition), then this new integral in the <m>u</m> context could be "easier" to antidifferentiate. So our goal is to antidifferentiate the integral, but we can antidifferentiate it after translating it to a different context.
+            Once we have this new integral, of a different function <m>g(u)</m> in a different context with <m>u</m> acting as the input, we try to antidifferentiate again. If we pick our substitution carefully and we know what kind of problem we're trying to fix (in this case, getting around the composition), then this new integral in the <m>u</m> context could be <q>easier</q> to antidifferentiate. So our goal is to antidifferentiate the integral, but we can antidifferentiate it after translating it to a different context.
         </p>
         <p>
             Once we have this antiderivative, we can translate that antiderivative family back to the original context (in this case, we write it in terms of <m>x</m>). We do this by utilizing the same translation or substitution that we defined earlier: we have something defined to link <m>u</m> and <m>x</m>. We can notice that, since the object we're translating is not an integral anymore, we do not have a differential to translate.
@@ -191,7 +191,7 @@
         <assemblage xml:id="strat-duFixes">
             <title>Fixing Coefficients for <m>du</m></title>
             <p>
-                If we choose to perform a <m>u</m>-substitution in the integral <m>\displaystyle \int f(x)\;dx</m>, but we require a coefficient <m>k</m> in our definition of <m>du</m>, we can "fix" the coefficient in our integral:
+                If we choose to perform a <m>u</m>-substitution in the integral <m>\displaystyle \int f(x)\;dx</m>, but we require a coefficient <m>k</m> in our definition of <m>du</m>, we can <q>fix</q> the coefficient in our integral:
                 <me>
                     \frac{1}{k}\int kf(x)\;dx
                 </me>
@@ -364,7 +364,7 @@
             There are more little tricks and nuances that we can think about with <m>u</m>-substitution: in general, this is an extremely flexible integration technique that we'll use in a variety of ways. For now, let's leave things off with one more interesting example.
         </p>
         <p>
-            In this example, we'll see a similar kind of issue to the one we saw in <xref ref="act-duFixes"/>: when we pick our substitution, there will be some issues "finding" <m>du</m>.
+            In this example, we'll see a similar kind of issue to the one we saw in <xref ref="act-duFixes"/>: when we pick our substitution, there will be some issues <q>finding</q> <m>du</m>.
         </p>
         <example xml:id="ex-uSubTurn">
             <statement>

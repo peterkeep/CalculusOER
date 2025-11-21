@@ -26,7 +26,7 @@
           if this limit exists. When this limit exists, we say that <m>f(x)</m> is <term>integrable</term> on the interval <m>[a,b]</m>.
         </p>
         <p>
-          We call <m>x=a</m> and <m>x=b</m> the <term>limits of integration</term> for this definite integral, and we read <m>\displaystyle \int_{x=a}^{x=b} f(x)\;dx</m> as "the integral from <m>x=a</m> to <m>x=b</m> of <m>f(x)</m> with regard to <m>x</m>," or sometimes we might just say "of <m>f(x)\;dx</m>" for short.
+          We call <m>x=a</m> and <m>x=b</m> the <term>limits of integration</term> for this definite integral, and we read <m>\displaystyle \int_{x=a}^{x=b} f(x)\;dx</m> as <q>the integral from <m>x=a</m> to <m>x=b</m> of <m>f(x)</m> with regard to <m>x</m>,</q> or sometimes we might just say <q>of <m>f(x)\;dx</m></q> for short.
         </p>
       </statement>
     </definition>
@@ -76,7 +76,7 @@
       Weird areas, right? Negative? That's not how we normally think about areas. So we have to be slightly careful with how we describe this new object, the definite integral, that we've built. We don't need to go back and change anything about the object itself: we just need to change how we talk about it.
     </p>
     <p>
-      It's common to think about <m>\displaystyle \int_{x=a}^{x=b}f(x)\;dx</m> as the "area under the curve <m>f(x)</m> from <m>x=a</m> to <m>x=b</m>," but we know that's not really true. Instead, we'll think about it as a <term>signed area</term> of the region bounded between the curve <m>f(x)</m> and the <m>x</m>-axis from <m>x=a</m> to <m>x=b</m>. When we say "signed area," we're just referring to the consequence of using <m>y</m>-values to define "heights" of the rectangles: when the curve is under the <m>x</m>-axis, we end up with negative values for heights, and so those rectangles have negative area. 
+      It's common to think about <m>\displaystyle \int_{x=a}^{x=b}f(x)\;dx</m> as the <q>area under the curve <m>f(x)</m> from <m>x=a</m> to <m>x=b</m>,</q> but we know that's not really true. Instead, we'll think about it as a <term>signed area</term> of the region bounded between the curve <m>f(x)</m> and the <m>x</m>-axis from <m>x=a</m> to <m>x=b</m>. When we say <q>signed area,</q> we're just referring to the consequence of using <m>y</m>-values to define <q>heights</q> of the rectangles: when the curve is under the <m>x</m>-axis, we end up with negative values for heights, and so those rectangles have negative area. 
     </p>
     <xi:include href="./activities/act-WeirdAreas-2.ptx" />
     <p>
@@ -124,7 +124,7 @@
             </li>
             <li>
               <p>
-                When we integrate a function "backwards" through an interval, we an area with an opposite sign:
+                When we integrate a function <q>backwards</q> through an interval, we an area with an opposite sign:
                 <me>
                   \int_{x=a}^{x=b}f(x)\;dx = -\int_{x=b}^{x=a} f(x)\;dx
                 </me>
@@ -137,7 +137,7 @@
   </subsection>
   <conclusion>
     <p>
-      Ok, that's enough of this: let's get to the point and try to figure out how to actually calculate these areas without relying on our functions being "nice" enough that we can use geometry!
+      Ok, that's enough of this: let's get to the point and try to figure out how to actually calculate these areas without relying on our functions being <q>nice</q> enough that we can use geometry!
     </p>
   </conclusion>
   <xi:include href="./exercises/ex-DefiniteIntegral.ptx" />
