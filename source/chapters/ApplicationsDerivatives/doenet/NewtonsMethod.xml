@@ -1,10 +1,10 @@
 <setup>
   <number name="iter">0</number>
   <number name="x0" displayDecimals="4">2</number>
-  <number name="x1" displayDecimals="4">$x0 - $$f($x0)/$$fPrime($x0)</number>
-  <number name="x2" displayDecimals="4">$x1 - $$f($x1)/$$fPrime($x1)</number>
-  <number name="x3" displayDecimals="4">$x2 - $$f($x2)/$$fPrime($x2)</number>
-  <number name="x4" displayDecimals="4">$x3 - $$f($x3)/$$fPrime($x3)</number>
+  <number name="x1" displayDecimals="4" fixed>$x0 - $$f($x0)/$$fPrime($x0)</number>
+  <number name="x2" displayDecimals="4" fixed>$x1 - $$f($x1)/$$fPrime($x1)</number>
+  <number name="x3" displayDecimals="4" fixed>$x2 - $$f($x2)/$$fPrime($x2)</number>
+  <number name="x4" displayDecimals="4" fixed>$x3 - $$f($x3)/$$fPrime($x3)</number>
   <number name="estimate">
     <conditionalContent>
       <case condition="$iter = 0">$x0</case>
@@ -25,7 +25,7 @@
   </number>
   <function name="f">x^2-2</function>
   <derivative name="fPrime">$f</derivative>
-  <point name="P0" fixed="true">($x0,$$f($x0))</point>  
+  <point name="P0" draggable="false">($x0,$$f($x0))</point>  
 </setup>
 
 <p><em>Instructions:</em> This is a visualization of our iterative approximation of <m>\sqrt{2}</m> by estimating solutions to <m>x^2-2=0</m>. Click the buttons below to move forward one iteration/step or backward one interation/step. For each step, explore how we use a linear approximation (centered at our previous estimation) to calculate a new estimation of the <m>x</m>-intercept.</p>
@@ -48,10 +48,10 @@
       $P0
     </case>
     <case condition="$iter > 0">
-      <lineSegment styleNumber="6" endpoints="($estimate, 0) ($estimate, $$f($estimate))" />
+      <lineSegment styleNumber="6" endpoints="($estimate, 0) ($estimate, $$f($estimate))" fixed/>
       <point>($previous, $$f($previous))</point>
-      <point styleNumber="2">($estimate, 0)</point>
-      <point styleNumber="3">($estimate, $$f($estimate))</point>
+      <point styleNumber="2" draggable="false">($estimate, 0)</point>
+      <point styleNumber="3" fixed>($estimate, $$f($estimate))</point>
     </case>
   </conditionalContent>
 </graph>
