@@ -93,33 +93,40 @@ window.MathJax = {
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-                    <!-- https://www.doenet.org/portfolioeditor/_qBAxRqlYi1XjkKA6N7iD9/_ccePqubRJJzQ0wfVhjfog -->
+                    <p><em>Instructions:</em> The function <m>y=\cos(x)</m> is plotted below, as well as a line tangent to the function at a point. Pause the animation to drag the point along the graph of the sine function and examine the tangent line at the point. Alternatively, input the <m>x</m>-value you'd like to use to construct the tangent line.</p>
 
-<p><em>Instructions:</em> Drag the point along the graph of the cosine function and examine the tangent line at the point. Alternatively, input the <m>x</m>-value you'd like to use to construct the tangent line.</p>
-
-<p><m>x=</m><mathInput name="a" prefill="0"/></p>
+<updateValue type="boolean" target="$aAnimate.animationOn" newValue="not $aAnimate.animationOn">
+  <label>
+    <conditionalContent>
+      <case condition="$aAnimate.animationOn = true">
+        Pause Animation
+      </case>
+      <case condition="$aAnimate.animationOn = false">
+        Start Animation
+      </case>
+    </conditionalContent>
+  </label>
+</updateValue> 
 
 <setup>
+  <number name="a">0</number>
   <function name="f">cos(x)</function>
   <derivative name="fPrime">$f</derivative>
+  <animateFromSequence name="aAnimate" target="$a" from="-2*pi" to="2*pi" step="0.03" animationInterval="15" animationMode="increase" animationOn="true" />
 </setup>
-<graph xTickScaleFactor="pi" xmin="-6.5" xmax="6.5" ymin="-3" ymax="3" showNavigation="false" identicalAxisScales >
+<graph xTickScaleFactor="pi" xmin="-6.7" xmax="6.7" ymin="-3" ymax="3" identicalAxisScales displayYAxisTickLabels="false" fixAxes>
     $f
     <function name="g" styleNumber="2">$$fPrime($a)*(x-$a) + $$f($a)</function>
     <point name="afa" styleNumber="1">($a,$$f($a))
-      <constraints>
-        <attractTo threshold="0.3"><point>(-2pi,$$f(-2pi))</point></attractTo>
-        <attractTo threshold="0.3"><point>(-3pi/2,$$f(-3pi/2))</point></attractTo>
-        <attractTo threshold="0.3"><point>(-pi,$$f(-pi))</point></attractTo>
-        <attractTo threshold="0.3"><point>(-pi/2,$$f(-pi/2))</point></attractTo>
-        <attractTo threshold="0.3"><point>(0,$$f(0))</point></attractTo>
-        <attractTo threshold="0.3"><point>(pi/2,$$f(pi/2))</point></attractTo>
-        <attractTo threshold="0.3"><point>(pi,$$f(pi))</point></attractTo>
-        <attractTo threshold="0.3"><point>(3pi/2,$$f(3pi/2))</point></attractTo>
-        <attractTo threshold="0.3"><point>(2pi,$$f(2pi))</point></attractTo>
-      </constraints>
     </point>
 </graph>
+
+<conditionalContent>
+  <case condition="$aAnimate.animationOn = false">
+    <p>While the animation is paused, feel free to move the tangent line manually by dragging the point or by inputting specific <m>x</m>-values below.</p>
+    <p><m>x=</m><mathInput name="t" prefill="0" bindValueTo="$a"/></p>
+  </case>
+</conditionalContent>
                 </script>
 </div></div>
 </body>
