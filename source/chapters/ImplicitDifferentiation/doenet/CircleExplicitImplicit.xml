@@ -1,16 +1,34 @@
-<!-- https://doenet.org/portfolioeditor/_m8Pmfiu0uYCy6kgC0IWwX/_v4mwUgVyZPvuW5kvtkLDA -->
+<setup>
+  <boolean name="showExplicit">false</boolean>
+</setup>
+<updateValue type="boolean" target="$showExplicit" newValue="not $showExplicit">
+  <label>
+    <conditionalContent>
+      <case condition="$showExplicit = true">
+        Show the implicitly defined circle
+      </case>
+      <case condition="$showExplicit = false">
+        Show the explicitly defined circle
+      </case>
+    </conditionalContent>
+  </label>
+</updateValue> 
 
-<sideBySide>
-  <graph xmin="-1.5" xmax="1.5" ymin="-1.5" ymax="1.5" identicalAxisScales size="small" 
-    showBorder="false" showNavigation="false" fixLocation>
-    <circle/>
-    <label anchor="(-0.7, 1.1)"><m>x^2+y^2=1</m></label>
-  </graph>
-  <graph xmin="-1.5" xmax="1.5" ymin="-1.5" ymax="1.5" identicalAxisScales size="small"
-    showBorder="false" showNavigation="false" fixLocation>
-    <function styleNumber="2">sqrt(1-x^2)</function>
-    <label anchor="(-0.7, 1.1)" styleNumber="2"><m>y=\sqrt{1-x^2}</m></label>
-    <function styleNumber="4">-sqrt(1-x^2)</function>
-    <label anchor="(-0.8, -1.1)" styleNumber="4"><m>y=-\sqrt{1-x^2}</m></label>
-  </graph>
-</sideBySide>
+    <conditionalContent>
+      <case condition="$showExplicit = true">
+        <graph xmin="-1.5" xmax="1.5" ymin="-1.5" ymax="1.5" identicalAxisScales size="small"
+  showBorder="false" showNavigation="false" fixLocation>
+          <function styleNumber="2">sqrt(1-x^2)</function>
+          <label anchor="(-0.7, 1.1)" styleNumber="2"><m>y=\sqrt{1-x^2}</m></label>
+          <function styleNumber="4">-sqrt(1-x^2)</function>
+          <label anchor="(-0.8, -1.1)" styleNumber="4"><m>y=-\sqrt{1-x^2}</m></label>
+        </graph>
+      </case>
+      <case condition="$showExplicit = false">
+        <graph xmin="-1.5" xmax="1.5" ymin="-1.5" ymax="1.5" identicalAxisScales size="small" 
+  showBorder="false" showNavigation="false" fixLocation >
+          <circle/>
+          <label anchor="(-0.7, 1.1)"><m>x^2+y^2=1</m></label>
+        </graph>
+      </case>
+    </conditionalContent>
