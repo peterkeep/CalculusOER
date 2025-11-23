@@ -121,5 +121,63 @@
       </task>
     </example>
   </subsection>
+  <subsection xml:id="subsec-InconclusiveRatioRoot">
+    <title>Inconclusive Results</title>
+    <p>
+      We've seen some of our series tests have some inconclusive results:
+      <ul>
+        <li>
+          <p>
+            The <xref ref="thm-DivergenceTest" text="title"/> is inconclusive when the limit of the terms is 0.
+          </p>
+        </li>
+        <li>
+          <p>
+            The <xref ref="thm-DirectComparisonTest" text="title"/> is inconclusive when the inequality is the <q>wrong</q> way around (like when the series we're interested in has terms smaller than a diverging series, or has terms larger than a converging series). The <xref ref="thm-LimitComparisonTest" text="title"/> has the same issue (where the order of the inequality matters) when the limit we get is either 0 or <m>\infty</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            And now we find that the <xref ref="thm-RatioTest" text="title"/> and <xref ref="thm-RootTest" text="title"/> are inconclusive when the limit we consider in the test is equal to 1.
+          </p>
+        </li>
+      </ul>
+      So what does it really mean when the conclusion from the series convergence test is <q>we actually can't tell if our series converges or now?</q>
+    </p>
+    <p>
+      In general, this means that we can find an example of a series that converges and an example of a series that diverges, where both give the same result of the test. We know, for example, that every converging series has terms where the limit of the terms is 0, but we have also see examples of series whose terms approach 0 in the limit that diverge. The first example we looked at that did this was the <xref ref="def-HarmonicSeries" text="title"/>.
+    </p>
+    <p>
+      For the Ratio and the Root Tests, specifically, though, we can glean some more information.
+    </p>
+    <p>
+      We introduced these convergence tests by thinking about whether or not a series could <em>act</em> like a <xref ref="def-GeometricSeries" text="title"/> in the long run (in the limit). And the tests do a great job of uncovering this eventually-geometric-ish behavior! So good, in fact, that (almost) <em>any</em> series that eventually acts kind of like a geometric series will be correctly classified as converging or diverging.
+    </p>
+    <aside>
+      <p>
+        This claim, that the Ratio and Root test can classify every series that acts kind of like a geometric series is intentionally ambiguous. What does it mean to act <q>kind of</q> like a geometric series? We cannot precisely define this term.
+      </p>
+      <p>
+        We can say, though, that these tests do a great job, but are not perfect. For instance, there are examples of carefully created infinite series where the Root Test classifies it correctly as a converging or diverging series, but the Ratio Test is inconclusive. We will not study this in this text, but it's interesting!
+      </p>
+    </aside>
+    <p>
+      So what, then, does it mean when the Ratio or Root Test is inconclusive? Simply this: it means that the series we're considering does not act like a geometric series.
+    </p>
+    <p>
+      Let's consider the general <xref ref="def-pSeries" text="title"/>, and apply the Ratio Test:
+      <md>
+        <mrow>r \amp = \lim_{k\to\infty} \frac{\left(\frac{1}{(k+1)^p}\right)}{\left(\frac{1}{k^p}\right)}</mrow>
+        <mrow> \amp = \lim_{k\to\infty} \frac{k^{p}}{(k+1)^p}</mrow>
+      </md>
+      This limit is 1.
+    </p>
+    <p>
+      Note that this limit does not depend on the exponent, <m>p</m>, which means that the limit will be 1 when the <m>p</m>-series converges and also when the <m>p</m>-series diverges. 
+    </p>
+    <p>
+      So, in a sense, when we get an inconclusive result from the Ratio or Root Tests, we are learning a lot about our series: it <em>doesn't</em> act like a geometric series, and that's likely because it <em>does</em> act like a <m>p</m>-series! We should try to approach this series again, this time looking for a suitable <m>p</m>-series to compare it to (whether directly or using the Limit Comparison Test).
+    </p>
+  </subsection>
 
 </section>
