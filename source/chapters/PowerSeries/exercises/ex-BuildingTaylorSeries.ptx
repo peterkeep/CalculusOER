@@ -1,0 +1,121 @@
+<exercises xml:id="ex-BuildingTaylorSeries">
+    <exercise>
+        <statement>
+            <p>
+                What is the difference between a Taylor Polynomial approximation for <m>f(x)</m> centered at <m>x=a</m> and the Taylor Series for <m>f(x)</m> centered at <m>x=a</m>?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Given the geometric power series <m>\displaystyle \sum_{k=0}^\infty x^k = \dfrac{1}{1-x}</m> for <m>|x|\lt 1</m>, find the Taylor series representations for the following functions. Make sure to explain, for each, how it connects to the geometric Taylor series. Also, report the interval of convergence for each.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{x^3}{1-x}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{x}{1+x^4}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{1}{x^2-1} = -\dfrac{1}{1-x^2}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{1}{(1-x)^2}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                or each of the following functions, explain how they are related to <m>f(x) = \sin(x)</m>. Then, use the connections you describe to find the Taylor Series for the function given by relating it to the Taylor Series for <m>\sin(x)</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\sin(x^2)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>2x\sin(x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>2x\cos(x^2)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Find a Taylor Series for each of the following functions. Report the center and interval of convergence for each.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = xe^x</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = e^{\sqrt{x}}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = e^{x+2}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \cos(2x)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = x^3\tan^{-1}(x^2)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x) = \sqrt[5]{x^7}\ln(x+1)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

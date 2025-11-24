@@ -1,0 +1,52 @@
+<exercises xml:id="ex-ApplyingTaylorSeries">
+    <exercise>
+        <introduction>
+            <p>
+                We can define hyperbolic trigonometric functions in the following way:
+                <md>
+                    <mrow> \sinh(x) \amp= \frac{e^x - e^{-x}}{2} </mrow>
+                    <mrow>\cosh(x) \amp = \frac{e^x + e^{-x}}{2} </mrow>
+                </md>
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Find a Taylor Series representation for <m>\sinh(x)</m> centered at <m>x=0</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find a Taylor Series representation for <m>\cosh(x)</m> centered at <m>x=0</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Show that <m>\sinh(x)+\cosh(x) = e^x</m> using the definition of the hyperbolic trigonometric functions above.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Show that <m>\sinh(x) + \cosh(x) = e^x</m> using the Taylor Series.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Use a Taylor series to estimate the value of the integral
+                <me>
+                    \int_{x=0}^{x=1}e^{-x^2}\;dx
+                </me>
+                within a maximum error margin of 0.001.
+            </p>
+        </statement>
+    </exercise>
+</exercises>

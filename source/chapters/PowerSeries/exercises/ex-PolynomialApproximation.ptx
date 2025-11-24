@@ -1,0 +1,128 @@
+<exercises xml:id="ex-PolynomialApproximation">
+    <exercise>
+        <statement>
+            <p>
+                Consider a polynomial approximation of some function <m>f(x)</m> centered at <m>0</m>. Explain how the degree of the polynomial approximation impacts the accuracy of the approximation.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Consider a function <m>f(x)</m> with a a second degree polynomial, <m>p(x) = \frac{f''(a)}{2}(x-a)^2 + f'(a)(x-a) + f(a)</m>. We want to approximate <m>f(b)</m> using the polynomial by evaluating <m>p(b)</m>. Explain how the location of <m>b</m> in relation to the center <m>a</m> impacts the accuracy of the approximation.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Say we want to approximate <m>\sqrt[3]{7}</m> using a third degree polynomial.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Which function, <m>f(x)</m>, will you use to build the polynomial?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What is an appropriate value for the center, <m>a</m>, for your polynomial? Why is this value appropriate?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Build the polynomial approximation, <m>p(x)</m>, to approximate <m>f(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Evaluate your polynomial at <m>x=7</m>. What does this tell you about the value of <m>\sqrt[3]{7}</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the function <m>f(x)=\sin(x)</m>. Our goal is to approximate <m>\sin(0.023)</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Build a third degree polynomial approximation of <m>f(x)</m> centered at <m>0</m> and use it to approximate <m>\sin(0.023)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Build a fifth degree polynomial approximation of <m>f(x)</m> centered at <m>0</m> and use it to approximate <m>\sin(0.023)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What would you do to get a better approximation of the value <m>\sin(0.023)</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What could you do to get the exact value of <m>\sin(0.023)</m> using polynomials?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following functions, find a fourth degree polynomial to approximate the given value.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Approximate <m>\sqrt{1.05}</m> using <m>f(x) = \sqrt{1+x}</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Approximate <m>\ln(0.95)</m> using <m>f(x) = \ln(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Approximate <m>e^{-0.12}</m> using <m>f(x) = e^{-x}</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Approximate <m>\cos(-0.15)</m> using <m>f(x) = \cos(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Approximate <m>\frac{1}{1.02}</m> using <m>f(x) = \frac{1}{x+1}</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

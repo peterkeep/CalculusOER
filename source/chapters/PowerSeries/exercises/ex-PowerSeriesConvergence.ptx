@@ -1,0 +1,122 @@
+<exercises xml:id="ex-PowerSeriesConvergence">
+    <exercise>
+        <introduction>
+            <p>
+                Describe the following terms in your own words, and explain how they relate to a power series.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Center.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Interval of Convergence.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Radius of Convergence.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Does a power series ever diverge everywhere? Explain why not, using an example.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                For a power series that converges for <m>\left|\frac{x-3}{4}\right| \lt 1</m> and diverges elsewhere, find the center of the power series, the radius of convergence, and interval of convergence.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                For a power series that converges for <m>\left|4(x+1)\right| \lt 1</m> and diverges elsewhere, find the center of the power series, the radius of convergence, and interval of convergence.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following power series, determine the interval of convergence. Be specific on which convergence test you are applying and how you are finding the interval of convergence.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=0}^\infty (3x)^k</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=0}^\infty \left(\frac{x}{3}\right)^k</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=0}^\infty \dfrac{(x-3)^k}{k!}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=0}^\infty \dfrac{(x-3)^k}{k}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \dfrac{2^k(x-1)^k}{k}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left(\frac{x}{k}\right)^k</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=0}^\infty (-1)^k(3x-4)^k</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=0}^\infty \left(\dfrac{3x}{5}\right)^{k/2}</m>
+
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \frac{(x-1)^k3^k}{(k+1)^k}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
