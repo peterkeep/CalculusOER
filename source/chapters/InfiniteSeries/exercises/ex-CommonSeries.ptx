@@ -1,0 +1,89 @@
+<exercises xml:id="ex-CommonSeries">
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following series, classify each of the series by type (geometric, <m>p</m>-series, or neither) and whether it converges or diverges (as well as why).
+            </p>
+            <p>
+                For any geometric series that converges, find what it converges to.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{1}{3^k} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{1}{k^3} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left(\frac{1}{4^k}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=0}^\infty \left(e^{-2k}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{1}{\sqrt{k-2}} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left(\frac{1}{\sqrt[5]{k^7}}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left(\frac{1}{\sqrt[7]{k^5}}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=0}^\infty \left(\frac{(-1)^k3^{k+8}}{5^{k+2}}\right)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                 This is a fun problem! We'll consider a special cake with a weird twist. The cake is made of stacked, cylindrical tiers, each with a height of 1 unit. The radius of the tiers is <m>\frac{1}{k}</m> for <m>k=1,2,...</m>, meaning the bottom tier has a radius of 1, the second tier has a radius of 1/2, the third has a radius of 1/3, etc. The cake, somehow, has an infinite number of tiers.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    We want to ice the sides of the cake, and want to know how much icing to use to cover the sides of each tier. Create an infinite series to represent the area of the outside edges. Does the series converge or diverge? Explain.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    We want to figure out how much batter needed to bake the cake. Create an infinite series representing the volume of the tiers. Does the series converge or diverge? Explain.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

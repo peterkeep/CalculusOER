@@ -170,7 +170,7 @@
         </statement>
         <hint>
           <p>
-            We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator (<xref ref="thm-PolynomialEndBehavior" text="title"/>). We could also get this same result using some other techniques, like what we use to prove that theorem. Then we can use <xref ref="thm-LHopitalsRule" text="title"/> to evaluate the limit, since we have a <m>\frac{\infty}{\infty}</m> indeterminate form.
+            We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator (<xref ref="thm-PolynomialEndBehavior" text="title"/>). We could also get this same result using some other techniques, like what we use to prove that theorem. Or we can use <xref ref="thm-LHopitalsRule" text="title"/> to evaluate the limit, since we have a <m>\frac{\infty}{\infty}</m> indeterminate form.
           </p>
         </hint>
       </task>
@@ -210,5 +210,80 @@
       </task>
     </example>
   </subsection>
-
+  <subsection xml:id="subsec-GrowthRates">
+    <title>Squeeze Theorem and Growth Rates</title>
+    <p>
+      In order for us to calculate the limits of the terms of an infinite series, we are often using results like <xref ref="thm-SqueezeTheorem" text="title"/> and <xref ref="thm-LHopitalsRule" text="title"/>. Let's observe two facts that will help us out.
+    </p>
+    <p>
+      We don't need to apply the Squeeze Theorem in <q>full,</q> since we're only concerned with whether the limit is 0 or not. Let's clarify with an example:
+      <me>
+        \sum_{k=1}^\infty \frac{(-1)^{k+1}2k^2}{7k^2+k+1} = \frac{2}{9} - \frac{8}{31} + \frac{18}{67} - \frac{32}{117} +-...
+      </me>
+      For us to apply the Divergence Test, we really should note that:
+      <me>
+        -\frac{2k^2}{7k^2+k+1}\leq \frac{(-1)^{k+1}2k^2}{7k^2+k+1} \leq \frac{2k^2}{7k^2+k+1}
+      </me>.
+      We could look at the limits of both of the bounds, but since we're concerned with whether they are 0 or not, we can simply check one:
+      <me>
+        \lim_{k\to\infty} \left(\frac{2k^2}{7k^2+k+1}\right)  = \frac{2}{7}
+      </me>.
+      Since we know that the negative version of this limit isn't 0 either, we can see that the limit <m>\displaystyle\lim_{k\to\infty}\frac{(-1)^{k+1}2k^2}{7k^2+k+1}</m> doesn't exist. Thus, the series diverges.
+    </p>
+    <p>
+      We can test just the positive version of the limit in each of these cases, then!
+    </p>
+    <p>"
+      Lastly, we can notice now that <xref ref="thm-LHopitalsRule" text="title"/> can be difficult to apply, especially since the functions we're working with are not required to be differentiable. For instance, how could we consider the series
+      <me>
+        \sum_{k=0}^\infty \frac{k!}{3^k}
+      </me>
+     by thinking about the limit
+     <me>
+      \lim_{k\to\infty} \frac{k!}{3^k}
+     </me>?
+    </p>
+    <aside>
+      <p>
+        The factorial function, <m>k!</m>, is formally defined as a recursive function, where <m>0!=1</m> and <m>n!=n(n-1)!</m>. More informally, this really means that a factorial really tells us to multiply the integer by all of the positive integers less than it. So:
+        <me>
+          7! = 7(6)(5)(4)(3)(2)(1)
+        </me>.
+      </p>
+      <p>
+        We define <m>0!=1</m> for convenience, but a nice explanation of why we might do that is based on counting arrangements.
+      </p>
+      <p>
+        If we were to arrange 3 items on a shelf, we could count the number of total arrangements by thinking about how many options we have to place the first item on the shelf (3) multiplied by how many options we have for the second item (only 2 remaining) and then how many options we have for the last item (once we've placed the other two, we only have 1 option). So the number of arrangements is <m>3! = 3(2)(1)</m>.
+      </p>
+      <p>
+        How many ways can you arrange an empty shelf?
+      </p>
+    </aside>
+    <p>
+      Because we can't think about the derivative of <m>k!</m> (since the function is not continuous, and thus not differentiable in the traditional sense), we need to consider this limit in a different way. We can instead appeal to <term>growth rates</term> of these functions: that is, the rate at which these functions approach infinity.
+    </p>
+    <assemblage xml:id="strat-GrowthRates">
+      <title>Growth Rates of Functions</title>
+      <p>
+        If <m>m</m> and <m>n</m> are real numbers with <m>0\lt m\lt n</m>, then we can arrange the growth rates of the following functions from <q>slow</q> to <q>fast:</q>
+        <me>
+          \ln(k)\lt\lt k^m \lt\lt k^m\ln(k) \lt\lt k^n \lt \lt m^k \lt \lt n^k \lt \lt k! \lt\lt k^k
+        </me>
+      </p>
+    </assemblage>
+    <p>
+      So, returning to our series <m>\displaystyle \sum_{k=0}^\infty \frac{k!}{3^k}</m>, we can see that
+      <me>
+        \lim_{k\to\infty} \frac{k!}{3^k} = \infty
+      </me>
+      since <m>k!</m> has a <q>faster</q> growth rate than <m>3^k</m>.
+    </p>
+    <note>
+      <p>
+        It's worth investigating this yourself! Try to convince yourself that you understand <em>why</em> exponentials grow <q>slower</q> than factorials. Why does <m>k^k</m> have a <q>faster</q> growth rate than <m>k!</m>?
+      </p>
+    </note>
+  </subsection>
+  <xi:include href="./exercises/ex-DivergenceTest.ptx" />
 </section>

@@ -1,0 +1,184 @@
+<exercises xml:id="ex-ComparisonTests">
+    <exercise>
+        <introduction>
+            <p>
+                For a series <m>\sum a_k</m>  where all of the terms <m>a_k</m>  are positive, explain whether the series converges, diverges, or if we cannot tell based on the following comparisons.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>a_k \lt \frac{1}{k^2}</m>  for all <m>k</m> .
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>a_k \gt \frac{1}{k^2}</m>  for all <m>k</m> .
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>a_k \lt \frac{1}{k}</m>  for all <m>k</m> .
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>a_k \gt \frac{1}{k}</m>  for all <m>k</m> .
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>a_k \lt 1</m>  for all <m>k</m> .
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>a_k \gt 1</m>  for all <m>k</m> .
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each pair of series, compare the terms of each with either <m>\lt</m> or <m>\gt</m>. What does the Direct Comparison Test say about the first series in each pair (if anything)?
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left(\frac{1}{\sqrt{k^3+1}}\right)</m>  compared with <m>\displaystyle \sum_{k=1}^\infty \left(\frac{1}{k^{3/2}}\right)</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left(\frac{1}{k^24^k}\right)</m>  compared with <m>\displaystyle \sum_{k=1}^\infty \left( \frac{1}{4^k} \right)</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=2}^\infty \left(\frac{k+1}{(k-1)^2}\right)</m>  compared with <m>\displaystyle \sum_{k=2}^\infty\left(\frac{1}{k}\right)</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left(\frac{1}{k!}\right)</m>  compared with <m>\displaystyle \sum_{k=1}^\infty \left( \frac{1}{k^2} \right)</m> 
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                What is an advantage of using the Limit Comparison Test instead of the Direct Comparison Test? Demonstrate this with a specific example.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each pair of series, attempt to compare the terms with either <m>\lt</m>  or <m>\gt</m> . Explain why the Direct Comparison Test fails (or explain why the comparison is difficult), and then apply the Limit Comparison Test, and explain the conclusions.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left(\frac{1}{\sqrt{k+1}}\right)</m>  compared with <m>\displaystyle \sum_{k=1}^\infty \left(\frac{1}{k^{1/2}}\right)</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left(\frac{k-1}{(k+1)^2}\right)</m>  compared with <m>\displaystyle \sum_{k=1}^\infty\left(\frac{1}{k}\right)</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left(\sqrt{\frac{k}{k^2+1}}\right)</m>  compared with <m>\displaystyle \sum_{k=1}^\infty \left(\frac{1}{\sqrt{k}}\right)</m> 
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each series below, determine whether the series converges or diverges using either the Direct or Limit Comparison Test.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=2}^\infty \left( \frac{4k}{k^3-1}\right)</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left( \frac{k}{2^k} \right)</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left( \frac{3}{\sqrt{k}+\sqrt[3]{k}}\right)</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=2}^\infty \left( \sqrt[4]{\frac{k}{k^4-1}}\right)</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left( \frac{1}{\ln(k)} \right)</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left( \frac{2}{k^k}\right)</m> 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left(\frac{k^3-k+1}{k^{9/2}+4k^2+1}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left(\frac{k^{3/2}+4}{k^{2}-k+\sqrt{k}}\right)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

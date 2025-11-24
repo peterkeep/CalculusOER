@@ -1,0 +1,206 @@
+<exercises xml:id="ex-RatioRootTests">
+    <exercise>
+        <statement>
+            <p>
+                For the Ratio Test, we note that if <m>\displaystyle\lim_{k\to\infty} \left|\frac{a_{k+1}}{a_k}\right| \lt 1</m>, then the series <m>\sum a_k</m> converges. Why is this? Explain some general intuition for why the Ratio Test guarantees convergence in this case.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                For the Root Test, we note that if <m>\displaystyle\lim_{k\to\infty} \sqrt[k]{|a_k|}\lt 1</m>, then the series <m>\sum a_k</m> converges. Why is this? Explain some general intuition for why the Root Test guarantees convergence in this case.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Note that in both the Ratio and Root Tests above, that we use the absolute value of the terms. Is it possible, then, for the Ratio or Root Test to tell us that a series converges conditionally?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Simplify each of the following expressions.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{104!}{103!}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{22!}{20!}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\sqrt[k]{\dfrac{2^k}{e^{k^2}}}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{(k+4)!}{(k+3)!}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{3^{k+2}}{3^k}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\dfrac{2^{k+1}(k)!}{2^k(k+1)!}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For the following series, use the apply the Ratio or Root Test (whichever is more applicable) and interpret the results.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \frac{(k+1)^2}{k!}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left(\frac{1}{k!}\right)^k</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=2}^\infty \frac{k^2}{e^k}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \frac{(-1)^k}{(3k)^{k}}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left(\frac{1}{\ln(k+1)}\right)^k</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \frac{k}{\pi^k}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \left(\frac{k}{\pi}\right)^k</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}k^k}{k!}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty \frac{k!}{(2k+1)!}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                For what values of <m>p</m>  (with <m>p \gt 0</m>) will the following series converge? 
+                <me>\displaystyle \sum_{k=1}^\infty \frac{k^p}{k!}</me>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following infinite series, use any methods we've learned about so far to determine whether the series converges or diverges. If it converges and you are able to tell what it converges to, say so and explain. If you cannot tell what it converges to, say so and explain. Clearly state the test or method you use or the type of series.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=2}^\infty \left( \frac{k^2-1}{(k^3-k+1)^4} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=2}^\infty \left( \frac{1}{k\ln(k^4)} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=0}^\infty \left( \frac{(-1)^{k} +2^k}{e^{2k}} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=2}^\infty \left( \frac{1}{k^2-1}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=2}^\infty \left( \frac{1}{k\sqrt{k^2-1}}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=0}^\infty \left(\frac{4^k(k^2)}{k!}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=2}^\infty \left( \frac{\ln(k)}{k+2}\right)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

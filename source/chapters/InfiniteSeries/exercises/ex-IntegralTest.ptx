@@ -1,0 +1,71 @@
+<exercises xml:id="ex-IntegralTest">
+    <exercise>
+        <statement>
+            <p>
+                What are the conditions of the Integral Test? What are the conclusions of the Integral Test?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following series, apply the Integral Test and interpret the conclusion of the test.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left(\frac{k}{k^2+1}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left(\frac{k}{e^k}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=2}^\infty \left( \frac{1}{k\ln(k)} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{k^2+k}{e^k} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{1}{k^2+1} \right)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise xml:id="ex-pSeriesConverge">
+        <statement>
+            <p>
+                For what values of <m>p</m> (with <m>p\gt 0</m>) will the following series converge?
+                <me>
+                    \sum_{k=1}^\infty \frac{1}{k^p}
+                </me>
+            </p>
+        </statement>
+    </exercise>
+    <exercise xml:id="ex-GeometricConverge">
+        <statement>
+            <p>
+                For what values of <m>r</m> (with <m>r\gt 0</m>) will the following series converge?
+                <me>
+                    \sum_{k=0}^\infty r^k
+                </me>
+            </p>
+        </statement>
+    </exercise>
+</exercises>

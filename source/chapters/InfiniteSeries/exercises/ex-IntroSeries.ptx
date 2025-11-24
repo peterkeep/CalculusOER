@@ -1,0 +1,137 @@
+<exercises xml:id="ex-IntroSeries">
+    <exercise>
+        <statement>
+            <p>
+                What does it mean for an infinite series <m>\displaystyle\sum_{k=1}^\infty a_k</m> to converge? What does it mean for this series to diverge?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                What is a partial sum, <m>S_n</m>, of the infinite series <m>\displaystyle\sum_{k=1}^\infty a_k</m>? Why do we care about this?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For some infinite series <m>\displaystyle\sum_{k=1}^\infty b_k</m>, we consider the partial sum 
+                <me>S_n=\sum_{k=1}^n b_k</me>. 
+                For each of the following descriptions of <m>S_n</m>, explain what conclusions we can make about the infinite series. Be specific, and justify your answers.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>S_n = \dfrac{3n^2}{2n^2+1}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{S_n\}</m> is increasing and bounded.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>0\leq S_n \leq 1</m> for all <m>n \geq 1</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>4- \dfrac{1}{n} \leq S_n \leq 4 + \dfrac{1}{n}</m> for all <m>n\geq 1</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the infinite series <m>\displaystyle \sum_{k=1}^\infty c_k = 0.6 + 0.06 + 0.006 + 0.0006 +...</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Write out an explicit formula for the sequence of terms <m>\{c_k\} = \{0.6, 0.06, 0.006, 0.0006, ...\}</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Write out the partial sums <m>S_1</m>, <m>S_2</m>, <m>S_3</m>, and <m>S_4</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Write out an explicit formula for the <m>n</m>th partial sum, <m>S_n</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Does the sequence <m>\{S_n\}</m> converge or diverge? Explain. If it converges, what does it converge to?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Does the series <m>\displaystyle\sum_{k=1}^\infty c_k</m> converge or diverge? Explain. If it converges, what does it converge to.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the infinite series <m>\displaystyle\sum_{k=1}^\infty \frac{1}{k(k+1)}</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Use Partial Fraction Decomposition to rewrite this series.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Write out the first five terms, and the partial sum <m>S_5</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Write out the explicit formula for the <m>n</m>th partial sum, <m>S_n</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Does the sequence <m>\{S_n\}</m> converge or diverge? Explain. If it converges, what does it converge to?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Does the series <m>\displaystyle\sum_{k=1}^\infty \frac{1}{k(k+1)}</m> converge or diverge? Explain. If it converges, what does it converge to?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

@@ -1,0 +1,86 @@
+<exercises xml:id="ex-DivergenceTest">
+    <exercise>
+        <statement>
+            <p>
+                Give an example of a series that diverges due to the Divergence Test. Explain.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Give an example of a series that fails the Divergence Test. Do you know if this series converges or diverges? Explain.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Apply the Divergence Test to each of the following series. Explain the conclusions of the test for each series.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left(\frac{k}{k^2+1}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left(\frac{k}{e^k}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=2}^\infty \left( \frac{1}{k\ln(k)} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=2}^\infty \left(\frac{k}{\ln(k)}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left(\sqrt[k]{k}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=0}^\infty \left( \frac{k^2+k}{e^k} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{1}{k^2+1} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{k!}{k^2} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-1)^k(k+1)}{k+\frac{1}{k}} \right)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

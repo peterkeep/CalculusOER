@@ -1,0 +1,240 @@
+<exercises xml:id="ex-IntroSequences">
+    <exercise>
+        <statement>
+            <p>
+                What is the index of an infinite sequence? How does the index relate to terms of the infinite sequence?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Explain the differences between how an explicit formula and a recursion relation can define an infinite sequence.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Why does a recursion relation defining a sequence rely on an initial value?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Use the explicit formulas write out the first 8 terms of each sequence.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\{a_k\} = \left\{\dfrac{1}{k}\right\}_{k=1}^\infty</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{b_k\} = \left\{\dfrac{k+2}{n=k^2+1}\right\}_{k=1}^\infty</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{c_k\} = \left\{\sin\left(\dfrac{k\pi}{4}\right)\right\}_{k=0}^\infty</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                     <m>\{d_k\} = \left\{\dfrac{1}{2^k}\right\}_{k=0}^\infty</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{j_k\} = \left\{\dfrac{(-1)^k}{k^2}\right\}_{k=1}^\infty</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{\ell_k\} = \left\{\dfrac{k+1}{k!}\right\}_{k=0}^\infty</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following recursion relations, write out the first 8 terms of the sequence.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>a_k = \dfrac{a_{k-1}+1}{2}</m>; <m>a_1 = 3</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>b_k = \dfrac{2}{b_{k-1}}</m>; <m>b_1 = 4</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>c_k = 2c_{k-1} - 2</m>; <m>c_1 = 3</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>d_k = \dfrac{d_{k-1}}{3}</m>; <m>d_1 = 2</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>j_k = 3(j_{k-1})^2 - 1</m>; <m>j_1 = 1</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\ell_k = \dfrac{1}{(\ell_{k-1})^2}</m>; <m>\ell_1 = 2</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following sequences, write down a possibility for an explicit formula defining the sequence as well as a recursion relation (with initial value) defining the sequence.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\{a_k\} = \{4, 5, 6, 7, ...\}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{b_k\} = \{0, 2, 4, 6, ...\}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{c_k\} = \left\{ \dfrac{3}{4}, \dfrac{1}{2}, \dfrac{1}{3}, \dfrac{2}{9}, ... \right\}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{d_k\} = \left\{\dfrac{1}{8}, \dfrac{3}{16}, \dfrac{1}{4}, \dfrac{5}{16}, ...\right\}</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following sequences, describe whether they converge or diverge. If they converge, show what they converge to using limit work.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\{a_k\} = \left\{ 3 + \dfrac{(-1)^{k+1}}{k} \right\}_{k=1}^\infty</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{b_k\} = \left\{ \sqrt[k]{k} \right\}_{k=1}^\infty</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{c_k\} = \left\{ \dfrac{k!}{e^k}\right\}_{k=0}^\infty</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{d_k\} = \left\{ \left(1+\dfrac{2}{k}\right)^k\right\}_{k=1}^\infty</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{j_k\} = \left\{ \dfrac{k^3 + 1}{k^2+\ln(k)}\right\}_{k=1}^\infty</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\{\ell_k\} = \left\{ k\ln\left(1/k\right)\right\}_{k=1}^\infty</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Compare a sequence to a function. What are some similarities? What are some differences? Carefully discuss this in terms of different representations of sequences/functions.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Choose through the sequences in any of the problems above to find one to fit each of the descriptions below. Explain your choices for each.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Monotonic non-decreasing.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Monotonic non-increasing.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Bounded. What are the upper and lower bounds?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

@@ -1,0 +1,131 @@
+<exercises xml:id="ex-AlternatingSeries">
+    <exercise>
+        <statement>
+            <p>
+                What is an <q>alternating series?</q> What are some reasons that we need to consider these as a separate class of infinite series?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Explain the differences between the Divergence Test and the Alternating Series Test. What do each tell us about the infinite series? How do we do each of the tests?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Give an example of an alternating series that converges conditionally. Explain your reasoning, and show that it converges conditionally.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Give an example of an alternating series that converges absolutely. Explain your reasoning, and show that it converges absolutely.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Explain how an alternating series could converge conditionally. What about alternating series makes this even possible? Can a positive-term series converge conditionally? Why or why not?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following alternating series, determine whether the series diverges, converges conditionally, or converges absolutely.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-1)^{k+1} \tan^{-1}(k)}{k^4} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-1)^{k+1}}{\sqrt{k^2+3}} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-1)^k}{\sqrt[k]{k}} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=2}^\infty \left( \frac{(-1)^{k+1}}{\sqrt[3]{k^2-k}} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=0}^\infty \left( \frac{(-1)^k}{\sqrt{k^3+1}} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-2)^{k+1}}{k^k} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-1)^{k+1} k}{k^5-k^2+1} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{\cos(\pi (k-1))}{k^2\ln(k+1)} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=0}^\infty \left( \frac{\cos(\pi k)}{e^k + \pi^k} \right)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                In <xref ref="ex-pSeriesConverge" text="custom">Section 8.4, Practice Problem 3</xref>, you found the values of <m>p</m> (with <m>p\gt0</m>) such that the series <m>\displaystyle\sum_{k=1}^\infty \frac{1}{k^p}</m> converges.
+            </p>
+            <p>
+                What are the values of <m>p</m> (with <m>p\gt 0</m>) such that 
+                <me>\displaystyle\sum_{k=1}^\infty \frac{(-1)^{k+1}}{k^p}</me>
+                converges conditionally?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                In <xref ref="ex-GeometricConverge" text="custom">Section 8.4, Practice Problem 4</xref>, you found the values of <m>r</m> (with <m>r\gt0</m>) such that the series <m>\displaystyle\sum_{k=0}^\infty \frac{1}{r^k}</m> converges.
+            </p>
+            <p>
+                Are there any values of <m>r</m> (with <m>r\gt 0</m>) such that 
+                <me>\displaystyle\sum_{k=0}^\infty \frac{(-1)^{k}}{r^k}</me>
+                converges conditionally?
+            </p>
+        </statement>
+    </exercise>
+</exercises>
