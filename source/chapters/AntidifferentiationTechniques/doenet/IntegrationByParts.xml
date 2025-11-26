@@ -1,0 +1,123 @@
+<setup>
+  <math name="F">x^3/3+x</math>
+  <math name="G">-cos(x)</math>
+  <derivative name="f">$F</derivative>
+  <derivative name="g">$G</derivative>
+  <!-- Find choice of u -->
+  <boolean name="uISg">
+    $uChoice = $ug.math
+  </boolean>
+  <boolean name="uISf">
+    $uChoice = $uf.math
+  </boolean>
+  <math name="u">
+    <conditionalContent>
+      <case condition="$uISg">
+        $g
+      </case>
+      <case condition="$uISf">
+        $f
+      </case>
+    </conditionalContent>
+  </math>
+  <!-- Calculate du -->
+  <math name="du">
+    <derivative>$u</derivative>
+  </math>
+  <!-- Find v based on choice of dv -->
+  <boolean name="dvISg">
+    $dvChoice = $dvg.math
+  </boolean>
+  <boolean name="dvISf">
+    $dvChoice = $dvf.math
+  </boolean>
+  <math name="v">
+    <conditionalContent>
+      <case condition="$dvISg">
+        $G
+      </case>
+      <case condition="$dvISf">
+        $F
+      </case>
+    </conditionalContent>
+  </math>
+  <!-- Integral terms -->
+  <math name="uv" simplify="full"> $u $v</math>
+  <math name="vdu" simplify="full"> $v $du</math> 
+
+</setup>
+
+<p>
+  <em>Instructions:</em> Consider the following integral. We'll perform integration by parts on it and explore how our selection of the parts might impact things.
+</p>
+<me>\int \left($f\right)$g \;dx</me>
+
+<p>
+  Select your choice for <m>u</m> (the part that you'll differentiate) and <m>dv</m> (the part that you'll antidifferentiate).
+</p>
+<tabular>
+  <row>
+    <cell>
+      <choiceInput name="uChoice">
+       <choice name="uf"><m>u=$f</m></choice>
+        <choice name="ug"><m>u=$g</m></choice>
+      </choiceInput>
+    </cell>
+    <cell>
+      <m>\displaystyle v = $v</m>
+    </cell>
+  </row>
+  <row>
+    <cell>
+      <m>\displaystyle du = $du\;dx</m>
+    </cell>
+    <cell>
+
+<choiceInput name="dvChoice">
+  <choice name="dvf"><m>dv = ($f)\;dx</m></choice>
+  <choice name="dvg"><m>dv = $g\;dx</m></choice>
+</choiceInput>
+    </cell>
+  </row>
+</tabular>
+
+<p>
+  When we apply integration by parts, we get:
+  <md>
+    <mrow> \int $f $g\;dx \amp = uv-\int v\;du</mrow>
+    <mrow> \amp =$uv- \int \left($vdu\right)\;dx</mrow>
+  </md>
+  Do you think this selection is reasonable? How would you antidifferentiate this new function in the integral part of the formula?
+</p>
+
+<aside>
+  <title>Feedback</title>
+  <conditionalContent>
+    <case condition="not($uISf or $uISg) or not($dvISf or $dvISg)">
+      <p>
+        Finish making your selections for <m>u</m> and <m>dv</m>. Which of these functions would you like to differentiate, and which of these functions would you like to antidifferentiate?
+      </p>
+    </case>
+    <case condition="($uISf and $dvISf) or ($uISg and $dvISg)">
+      <p>
+        Wait, did you select <m>$uChoice</m> and <m>$dvChoice</m>? Both of these are using the same function: <m>$u</m>. How can you change your choice, so that your choices include both functions?
+      </p>
+    </case>
+    <case condition="$uISg and $dvISf">
+      <p>
+        Hm...this uses both functions in the formula, but the resulting integral looks worse! Antidifferentiating <m>(<derivative>$v</derivative>)</m> seemed to be a bad idea here.
+      </p>
+    </case>
+    <case condition="$uISf and $dvISg">
+      <p>
+        This is great! You got to differentiate <m>$u</m> and antidifferentiate <m><derivative>$v</derivative></m>. The resulting integral is hopefully something a bit easier to approach!
+      </p>
+      <p>
+        Do you think you could repeat another integration by parts process on the following integral?
+        <me>\int $vdu \;dx</me>
+        What would you select for the part you want to differentiate? What about the part you'd like to antidifferentiate?
+      </p>
+    </case>
+  </conditionalContent>
+</aside>
+

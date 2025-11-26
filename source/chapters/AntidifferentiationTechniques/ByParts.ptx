@@ -36,6 +36,17 @@
      Let's practice this comparison with another example in order to build our intuition for picking the parts in our integration by parts formula.
     </p>
     <xi:include href="./activities/act-PickingParts-2.ptx" />
+    <p>
+      Let's try this again, but with a different set of functions. For this one, we'll not worry about finding derivatives and antiderivatives ourselves: we'll just play with the selection of the pieces to see how that changes things.
+    </p>
+    <interactive platform="doenetml" width="95%" aspect="1:3">
+      <slate surface="doenetml">
+          <xi:include parse="text" href="./doenet/IntegrationByParts.xml"/>
+      </slate>
+    </interactive>
+    <p>
+      Hopefully we can see a bit of strategy in the selection process! Let's try some examples.
+    </p>
     <aside>
       <p>
         It is common for students to want to place functions into sort of hierarchy or classification guidelines for choosing the parts. Some students have found that the acronym LIPET (logs, inverse trig, power functions, exponentials, and trig functions) can be a useful tool for selecting the parts. When you have two different types of functions, it might help to select <m>u</m> to be whichever function shows up first in that list.
