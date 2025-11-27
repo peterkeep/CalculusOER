@@ -1,0 +1,41 @@
+<section xml:id="explore-Series" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Exploration: Infinite Series</title>
+    <p>
+        We've seen a lot of infinite series examples, and we have a lot of tools for how to think about infinite series. Take a look at some more examples that are a bit strange to think about.
+    </p>
+    <project xml:id="prj-InterestingSeries">
+        <title>Interesting Infinite Series</title>
+        <task>
+            <statement>
+                <p>
+                    Consider the series
+                    <me>
+                        \sum_{k=1}^\infty \frac{1}{D(k)k^p}
+                    </me>
+                    where <m>D(k)</m> is the function that returns the number of digits in the number <m>k</m> (so <m>D(9)=1</m> and <m>D(435)=3</m>), and <m>p</m> is a real number.         
+                </p>
+                <p>
+                    For what values of <m>p</m> does this series converge?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Consider the series
+                    <me>
+                        \sum_{k=1}^\infty \frac{1}{F(k)k^p}
+                    </me>
+                    where <m>F(k)</m> is the function that returns the <m>k</m>th Fibbonacci number, and <m>p</m> is a real number. As a reminder, the Fibbonacci sequence is:
+                    <me>
+                        1,1,2,3,5,8,13,21...
+                    </me>
+                    where <m>F(k)=F(k-1)+F(k-2)</m>.
+                </p>
+                <p>
+                    For what values of <m>p</m> does this series converge?
+                </p>
+            </statement>
+        </task>
+    </project>
+</section>
