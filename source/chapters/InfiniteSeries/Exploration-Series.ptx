@@ -1,41 +1,80 @@
 <section xml:id="explore-Series" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Exploration: Infinite Series</title>
-    <p>
-        We've seen a lot of infinite series examples, and we have a lot of tools for how to think about infinite series. Take a look at some more examples that are a bit strange to think about.
-    </p>
-    <project xml:id="prj-InterestingSeries">
-        <title>Interesting Infinite Series</title>
-        <task>
+    <subsection xml:id="subsec-InterestingSeries">
+        <title>InterestingSeries</title>
+        <p>
+            We've seen a lot of infinite series examples, and we have a lot of tools for how to think about infinite series. Take a look at some more examples that are a bit strange to think about.
+        </p>
+        <project xml:id="prj-InterestingSeries">
+            <title>Interesting Infinite Series</title>
+            <task>
+                <statement>
+                    <p>
+                        Consider the series
+                        <me>
+                            \sum_{k=1}^\infty \frac{1}{D(k)k^p}
+                        </me>
+                        where <m>D(k)</m> is the function that returns the number of digits in the number <m>k</m> (so <m>D(9)=1</m> and <m>D(435)=3</m>), and <m>p</m> is a real number.         
+                    </p>
+                    <p>
+                        For what values of <m>p</m> does this series converge?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Consider the series
+                        <me>
+                            \sum_{k=1}^\infty \frac{1}{F(k)k^p}
+                        </me>
+                        where <m>F(k)</m> is the function that returns the <m>k</m>th Fibbonacci number, and <m>p</m> is a real number. As a reminder, the Fibbonacci sequence is:
+                        <me>
+                            1,1,2,3,5,8,13,21...
+                        </me>
+                        where <m>F(k)=F(k-1)+F(k-2)</m>.
+                    </p>
+                    <p>
+                        For what values of <m>p</m> does this series converge?
+                    </p>
+                </statement>
+            </task>
+        </project>
+    </subsection>
+    <subsection xml:id="subsec-InfiniteProducts">
+        <title>Infinite Products</title>
+        <p>
+            In this chapter, we've analyzed infinite sums of function-generated values. A natural extension is to think about an infinite product of function-generated values. We can define this using some notation, and work on building some preliminary results.
+        </p>
+        <definition xml:id="def-InfiniteProduct">
+            <title>Infinite Product</title>
             <statement>
                 <p>
-                    Consider the series
+                    For a sequence of real numbers, <m>\{a_k\}_{k=1}^\infty</m>, the <term>infinite product</term>
                     <me>
-                        \sum_{k=1}^\infty \frac{1}{D(k)k^p}
+                        \prod_{k=1}^\infty a_k = (a_1)(a_2)(a_3)(a_4)\cdots
                     </me>
-                    where <m>D(k)</m> is the function that returns the number of digits in the number <m>k</m> (so <m>D(9)=1</m> and <m>D(435)=3</m>), and <m>p</m> is a real number.         
-                </p>
-                <p>
-                    For what values of <m>p</m> does this series converge?
+                    We define this as a sequence of <term>partial products</term>, similar to how we define an infinite series as a sequence of partial sums.
+                    <me>
+                        \prod_{k=1}^\infty a_k = \left\{\prod_{k=1}^n a_k\right\}_{n=1}^\infty
+                    </me>
                 </p>
             </statement>
-        </task>
-        <task>
-            <statement>
+        </definition>
+        <project xml:id="prj-InfiniteProducts">
+            <title>Infinite Products</title>
+            <introduction>
                 <p>
-                    Consider the series
-                    <me>
-                        \sum_{k=1}^\infty \frac{1}{F(k)k^p}
-                    </me>
-                    where <m>F(k)</m> is the function that returns the <m>k</m>th Fibbonacci number, and <m>p</m> is a real number. As a reminder, the Fibbonacci sequence is:
-                    <me>
-                        1,1,2,3,5,8,13,21...
-                    </me>
-                    where <m>F(k)=F(k-1)+F(k-2)</m>.
+                    
                 </p>
-                <p>
-                    For what values of <m>p</m> does this series converge?
-                </p>
-            </statement>
-        </task>
-    </project>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        
+                    </p>
+                </statement>
+            </task>
+        </project>
+    </subsection>
 </section>
