@@ -155,7 +155,109 @@
     <subsection xml:id="subsec-NormalDistribution">
         <title>The Normal Distribution</title>
         <p>
-            
+            The <term>normal distribution</term> (what we typically think of when we imagine a <q>bell curve</q>) is very important in the study of probability and statistics.
         </p>
+        <definition xml:id="def-StandardNormal">
+            <title>Standard Normal Distribution</title>
+            <statement>
+                <p>
+                    We say that a random variable follows the <term>standard normal distribution</term> when the mean or expected value of the random variable is 0, the variance of the random variable is 0, and the probability density function is:
+                    <me>
+                        f(x)=\frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}
+                    </me>.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            There are a lot of technical details behind some of these terms, but we won't concern ourselves with it too much. For now, we'll state two facts:
+            <ol>
+                <li>
+                    <p>
+                        We use an integral to represent probability. For instance, the probability that a random variable will take on a value that is up to 1 standard deviation above the mean is:
+                        <me>
+                            \frac{1}{\sqrt{2\pi}}\int_{x=0}^{x=1}  e^{-\frac{x^2}{2}}\;dx
+                        </me>.
+                        We can change the limits of integration to change the range of values that we are concerned with.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The <term>Empirical Rule</term>, or the <term>68-95-99.7</term> rule states that:
+                        <ul>
+                            <li>
+                                <p>
+                                    About 68% of the values will be within 1 standard deviation of the mean (between <m>x=-1</m> and <m>x=1</m>).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    About 95% of the values will be within 2 standard deviations of the mean (between <m>x=-2</m> and <m>x=2</m>).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Almost all (about 99.7%) of the values will be within 3 standard deviations of the mean (between <m>x=-3</m> and <m>x=3</m>).
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <project xml:id="prj-NormalDistribution">
+            <title>Normal Distribution</title>
+            <task>
+                <statement>
+                    <p>
+                        Write an integral that represents the probability of a random variable with a normal distribution taking on a value up to 2 standard deviations above the mean.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Based on the Empirical Rule, what do you expect the value of this integral to be?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Construct a Taylor series representing the function <m>e^{-\frac{x^2}{2}}</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        In order to estimate your integral, we will need to antidifferentiate <m>e^{-\frac{x^2}{2}}</m>. This function does not have an <term>elementary antiderivative</term>, meaning we cannot express an antiderivative in terms of the traditional functions we have named and the traditional operations we have defined. Antidifferentiate your Taylor series representation of <m>e^{-\frac{x^2}{2}}</m>, and call this <m>F(x)</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Evaluate your integral using this new representation an antiderivative, <m>F(x)</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        This is an alternating series, and so we can approximate this value to whatever degree of accuracy we'd like using <xref ref="thm-ApproximatingAlternating" text="type-global-title"/>.
+                    </p>
+                    <p>
+                        How many terms do you need, in order to approximate this probability within 0.01?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Construct, evaluate, and approximate the integral representing the probability that a normally distributed random variable takes on a value between 1 and 1.5 standard deviations above the mean (using the same number of terms as above).
+                    </p>
+                </statement>
+            </task>
+        </project>
     </subsection>
 </section>
