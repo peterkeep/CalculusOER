@@ -87,17 +87,17 @@
                         </me>
                         Use the zeros of the <m>\dfrac{\sin(x)}{x}</m> function that you found earlier to write out the factors of this.
                     </p>
+                    <interactive platform="doenetml" width="95%" aspect="1:1">
+                        <slate surface="doenetml">
+                            <xi:include parse="text" href="./doenet/BaselProblemZeros.xml"/>
+                        </slate>
+                    </interactive>
                 </statement>
-                <hint>
-                    <p>
-                        It might be helpful to list the zeros in order of size, and pair them: <m>\pm\pi, \pm2\pi, \pm3\pi, \pm 4\pi...</m>
-                    </p>
-                </hint>
             </task>
             <task>
                 <statement>
                     <p>
-                        Note that we have pairs of factors that are in the form <m>\left(1-\frac{x}{c}\right)\left(1+\frac{x}{c}\right)</m>. This is hopefully a very recognizable factoring pattern! It's the difference of squares! What do you get when you multiply these?
+                        Note that we have pairs of factors that are in the form <m>\left(1-\dfrac{x}{c}\right)\left(1+\dfrac{x}{c}\right)</m>. This is hopefully a very recognizable factoring pattern! It's the difference of squares! What do you get when you multiply these?
                     </p>
                     <p>
                         This should allow you to write your factored function from above in a slightly different way, by combining the pairs of factors using this multiplication. What does this look like?
@@ -150,7 +150,7 @@
                     </p>
                 </statement>
             </task>
-        </project>
+        </project>  
     </subsection>
     <subsection xml:id="subsec-NormalDistribution">
         <title>The Normal Distribution</title>

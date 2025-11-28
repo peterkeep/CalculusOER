@@ -1,0 +1,40 @@
+<setup>
+  <piecewiseFunction name="f">
+    <function domain="(-infinity, 0)">
+      sin(x)/x
+    </function>
+    <function domain="[0,0]">
+      1
+    </function>
+    <function domain="(0,infinity)">
+      sin(x)/x
+    </function>
+  </piecewiseFunction>
+  <function name="g" styleNumber="3">
+    (1-x/$z1)(1+x/$z1)(1-x/$z2)(1+x/$z2)(1-x/$z3)(1+x/$z3)(1-x/$z4)(1+x/$z4)(1-x/$z5)(1+x/$z5)(1-x/$z6)(1+x/$z6)
+  </function>
+  <function name="gDisplay">
+    (1-x/$z1)(1+x/$z1)(1-x/$z2)(1+x/$z2)(1-x/$z3)(1+x/$z3)(1-x/$z4)(1+x/$z4)
+  </function>
+</setup>
+
+<p><em>Instructions:</em> Below is a graph of the function:
+  <me>f(x)=\begin{cases} \dfrac{\sin(x)}{x} \amp \text{for } x\neq 0\\ 1 \amp \text{for }x=0\end{cases}</me>
+  List the zeros in pairs as you find them.</p>
+<p>Zeros: <m>\pm</m><mathInput name="z1" prefill="20"/>,
+  <m>\pm</m><mathInput name="z2" prefill="20"/>,
+  <m>\pm</m><mathInput name="z3" prefill="20"/>,
+  <m>\pm</m><mathInput name="z4" prefill="20"/>,
+  <m>\pm</m><mathInput name="z5" prefill="20"/>,
+  <m>\pm</m><mathInput name="z6" prefill="20"/>,
+  <m>...</m>
+</p>
+<p>(The zeros have all been pre-filled with <m>\pm</m>20, but you should replace these with the actual zeros of the function.)</p>
+<graph xTickScaleFactor="pi" xMin="-4pi-1" xMax="4pi+1" yMin="-2" yMax="2" aspectRatio="2" fixed>
+  $f
+  $g
+</graph>
+<p>
+  An alternate form of this function is:
+<me>f(x)=$gDisplay...</me>
+</p>
