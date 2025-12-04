@@ -14,8 +14,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="example" mode="tcb-style">
     <xsl:text>
         fonttitle=\bfseries,
-        colbacktitle=DCgreen, 
-        coltitle=white, 
+        colbacktitle=white, 
+        coltitle=black, 
         boxrule=0mm,
         leftrule=0.5mm,
         rightrule=0mm,
@@ -117,8 +117,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         attach boxed title to top left={yshift*=-\tcboxedtitleheight},
         boxed title style={size=minimal, top=4pt, left=4pt},
         borderline west={2pt}{-3pt}{DCyellow},
-        colframe=white,
-        colback=white,
+        colframe=DCyellow!10,
+        colback=DCyellow!10,
         fontupper=\footnotesize
     </xsl:text>
 </xsl:template>
@@ -132,7 +132,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         leftrule=0.5mm,
         rightrule=0mm,
         titlerule=0mm,
-        toprule=0.5mm,
+        toprule=0mm,
         bottomrule=0.5mm,
         sharpish corners,
         colframe=DClightgreen, 
