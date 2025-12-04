@@ -11,20 +11,40 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:text>\cleardoublepage&#xA;&#xA;</xsl:text>
 </xsl:template>
 
+<xsl:template match="activity" mode="tcb-style">
+    <xsl:text>
+        fonttitle=\bfseries,
+        colbacktitle=white,
+        attach boxed title to top left={yshift*=-\tcboxedtitleheight/2,xshift=4mm},
+        leftrule=2pt,
+        bottomrule=0pt,
+        rightrule=0pt,
+        titlerule=0pt,
+        toprule=0pt,
+        coltitle=black, boxed title style={colback=white, sharpish corners, boxrule=0pt},
+        sharpish corners,
+        colframe=DClightgreen, 
+        borderline north={2pt}{0pt}{DClightgreen},
+        borderline south={2pt}{0pt}{DClightgreen},
+        colback=white
+    </xsl:text>
+</xsl:template>
+
 <xsl:template match="example" mode="tcb-style">
     <xsl:text>
         fonttitle=\bfseries,
-        colbacktitle=white, 
-        coltitle=black, 
-        boxrule=0mm,
-        leftrule=0.5mm,
-        rightrule=0mm,
-        titlerule=0mm,
-        toprule=0mm,
-        bottomrule=0.5mm,
+        colbacktitle=DCgreen, 
+        attach boxed title to top left,
+        leftrule=2pt,
+        bottomrule=0pt,
+        rightrule=0pt,
+        titlerule=0pt,
+        toprule=0pt,
+        coltitle=white, boxed title style={colback=DCgreen, sharpish corners},
         sharpish corners,
         colframe=DCgreen, 
-        colback=white
+        colback=white,
+        borderline south={2pt}{0pt}{DCgreen},
     </xsl:text>
 </xsl:template>
 
@@ -40,7 +60,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         bottomrule=0.5mm,
         sharpish corners,
         colframe=DCgreenish, 
-        colback=DCgreenish!10,
+        colback=DCgreenish!10
     </xsl:text>
 </xsl:template>
 
@@ -123,22 +143,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </xsl:text>
 </xsl:template>
 
-<xsl:template match="activity" mode="tcb-style">
-    <xsl:text>
-        fonttitle=\bfseries,
-        colbacktitle=white, 
-        coltitle=black,
-        boxrule=0mm,
-        leftrule=0.5mm,
-        rightrule=0mm,
-        titlerule=0mm,
-        toprule=0mm,
-        bottomrule=0.5mm,
-        sharpish corners,
-        colframe=DClightgreen, 
-        colback=white
-    </xsl:text>
-</xsl:template>
+
 
 <xsl:template match="proof" mode="tcb-style">
     <xsl:text>
@@ -150,7 +155,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         boxed title style={size=minimal, top=4pt, left=4pt},
         coltitle=black, 
         fonttitle=\footnotesize\bfseries,
-        borderline west={2pt}{-3pt}{black!10},
+        borderline west={2pt}{0pt}{black!10},
+        borderline south={2pt}{0pt}{black!10},
         fontupper=\footnotesize
     </xsl:text>
 </xsl:template>
