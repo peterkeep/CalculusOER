@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Exploration: Limits</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Discover Calculus">
+<meta property="book:author" content="Peter Keep">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.0';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.f91c1a4dc12163f2.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.731d8387162b79c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
+<link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="DiscoverCalculus.html"><span class="title">Discover Calculus</span> <span class="subtitle">Single-Variable Calculus Topics with Motivating Activities</span></a></h1>
+<p class="byline">Peter Keep</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-Continuity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Limits.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-Derivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
+\newcommand{\ddx}[1]{\frac{d}{dx}\left(#1\right)}
+\newcommand{\Ddx}[1]{\dfrac{d}{dx}\left(#1\right)}
+\newcommand{\dd}[2]{\frac{d#1}{d#2}}
+\newcommand{\Dd}[2]{\dfrac{d#1}{d#2}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\Dydx}{\dfrac{dy}{dx}}
+\newcommand{\blank}[1]{\underline{\hspace{#1}}} 
+\newcommand{\dint}{\displaystyle \int}
+\newcommand{\va}{┊}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="acknowledements.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="Preface-NoteOnAI.html" class="internal"><span class="title">Disclosure about the Use of AI</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-ForStudents.html" class="internal"><span class="title">Notes for Students</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-ForInstructors.html" class="internal"><span class="title">Notes for Instructors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-Limits.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DefinitionOfLimits.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Definition of the Limit</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-DefiningALimit" class="internal"><span class="title">Defining a Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-ApproximatingLimits" class="internal"><span class="title">Approximating Limits Using Our New Definition</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#ex-DefinitionOfLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-EvaluatingLimits.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Evaluating Limits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-AddingPrecisionToEstimations" class="internal"><span class="title">Adding Precision to Our Estimations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-LimitProperties" class="internal"><span class="title">Limit Properties</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#ex-EvaluatingLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IndeterminateForms.html" class="internal"><span class="codenumber">1.3</span> <span class="title">First Indeterminate Forms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-FirstIndeterminateForms" class="internal"><span class="title">A First Introduction to Indeterminate Forms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-WhatIfIndeterminateForms" class="internal"><span class="title">What if There Is No Algebra Trick?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#exercises-" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Limits Involving Infinity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits" class="internal"><span class="title">Infinite Limits</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits" class="internal"><span class="title">End Behavior Limits</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#ex-LimitsInvolvingInfinity" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-WeirdFunctionsWeirdBehavior" class="internal"><span class="title">Weird Functions, Weird Behavior</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-SqueezeTheorem" class="internal"><span class="title">Squeeze Theorem</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#ex-SqueezeTheorem" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Continuity.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Continuity and the Intermediate Value Theorem</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-ContinuityAsConnectedness" class="internal"><span class="title">Continuity as Connectedness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-DefiningContinuity" class="internal"><span class="title">Defining Continuity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-Discontinuities" class="internal"><span class="title">Discontinuities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-IntermediateValueTheorem" class="internal"><span class="title">Intermediate Value Theorem</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Continuity.html#ex-Continuity" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="explore-Limits.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Exploration: Limits</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Limits.html#subsec-PreciseLimits" class="internal"><span class="title">Precise Definition of Limits</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="explore-Limits.html#ex-PreciseLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Derivatives.html" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntroDerivatives.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-DefiningDerivative" class="internal"><span class="title">Defining the Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-ManySlopes" class="internal"><span class="title">Calculating a Bunch of Slopes at Once</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#ex-IntroDerivatives" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-InterpretingDerivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Interpreting Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsSlope" class="internal"><span class="title">The Derivative is a Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsChange" class="internal"><span class="title">The Derivative is a Rate of Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsLimit" class="internal"><span class="title">The Derivative is a Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsFunction" class="internal"><span class="title">The Derivative is a Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeNotation" class="internal"><span class="title">Notation for Derivatives</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#ex-InterpretingDerivatives" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfCommonFunctions" class="internal"><span class="title">Derivatives of Common Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativeProperties" class="internal"><span class="title">Some Properties of Derivatives in General</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DerivativeRules.html#ex-DerivativeRules" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ProductQuotientRule.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Product and Quotient Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-ProductRule" class="internal"><span class="title">The Product Rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-QuotientRule" class="internal"><span class="title">What about Dividing?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-MoreTrigDerivatives" class="internal"><span class="title">Derivatives of (the Rest of the) Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#ex-ProductQuotientRule" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ChainRule.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The Chain Rule</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-CompositionDecomposition" class="internal"><span class="title">Composition and Decomposition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-ChainRule" class="internal"><span class="title">The Chain Rule, Intuitively</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-DoingChainRule" class="internal"><span class="title">Doing is Different than Knowing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-GeneralizedExponential" class="internal"><span class="title">Generalizing the Derivative of the Exponential</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ChainRule.html#ex-ChainRule" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-ImplicitDifferentiation.html" class="internal"><span class="codenumber">3</span> <span class="title">Implicit Differentiation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Implicit Differentiation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-ExplicitImplicit" class="internal"><span class="title">Explicit vs. Implicit Definitions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-DerivativeOperator" class="internal"><span class="title">Using a Derivative as an Operator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-SummaryAndStrategy" class="internal"><span class="title">Some Summary and Strategy</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#ex-ImplicitDifferentiation" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DerivativesInverse.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Derivatives of Inverse Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativesInverse.html#subsec-WieldingImplicitDifferentiation" class="internal"><span class="title">Wielding Implicit Differentiation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativesInverse.html#subsec-InverseTrigDerivatives" class="internal"><span class="title">Derivatives of the Inverse Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DerivativesInverse.html#ex-DerivativesInverse" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Logarithmic Differentiation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#subsec-LogsAreFriends" class="internal"><span class="title">Logs Are Friends!</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#subsec-WowSoFriendly" class="internal"><span class="title">Wow, So Friendly!</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#ex-LogarithmicDifferentiation" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-ApplicationsDerivatives.html" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-MeanValueTheorem.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Mean Value Theorem</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-Slopes" class="internal"><span class="title">Slopes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-MVT" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-ResultsFromMVT" class="internal"><span class="title">More Results due to the Mean Value Theorem</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IncreasingDecreasing.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Increasing and Decreasing Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-CriticalPointsLocalMaxMins" class="internal"><span class="title">Critical Points, Local Maximums, and Local Minimums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-FindingDirection" class="internal"><span class="title">Direction of a Function (and Where it Changes)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-FDTGraphically" class="internal"><span class="title">Using the Graph of the First Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-StrangeDomains" class="internal"><span class="title">Strange Domains</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#ex-IncreasingDecreasing" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Concavity.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Concavity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Concavity.html#subsec-DefiningCurvature" class="internal"><span class="title">Defining the Curvature of a Curve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Concavity.html#subsec-ConcavityAtCriticalPoints" class="internal"><span class="title">Interpreting the Concavity at Critical Points</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Concavity.html#ex-Concavity" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-GlobalMaxMins.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Global Maximums and Minimums</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html#subsec-BothMaxMins" class="internal"><span class="title">When Do We Guarantee Both a Global Maximum and a Global Minimum?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html#subsec-WhatAboutOpenIntervals" class="internal"><span class="title">What about Domains of Functions that Aren’t Closed?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html#ex-GlobalMaxMins" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Optimization.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Optimization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Optimization.html#subsec-OptimizationFramework" class="internal"><span class="title">Optimization Framework</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Optimization.html#subsec-VolumeAndSurfaceArea" class="internal"><span class="title">Balancing Volume and Surface Area</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Optimization.html#subsec-MoreOptimizationExamples" class="internal"><span class="title">What Other Examples Can We Do?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Optimization.html#ex-Optimization" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-LinearApproximation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Linear Approximations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LinearApproximation.html#subsec-LinearApproximation" class="internal"><span class="title">Linearly Approximating a Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LinearApproximation.html#subsec-ApproximatingZeros" class="internal"><span class="title">Approximating Zeros of a Function</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LinearApproximation.html#ex-LinearApproximation" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-LHopitalsRule.html" class="internal"><span class="codenumber">4.7</span> <span class="title">L’Hôpital’s Rule</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsec-IndeterminateForms" class="internal"><span class="title">Indeterminate Forms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsec-LHopitalsRule" class="internal"><span class="title">L’Hôpital’s Rule</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsec-ForcingDivision" class="internal"><span class="title">Forcing Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsubsec-Products" class="internal"><span class="title">Products!</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsubsec-Differences" class="internal"><span class="title">Differences!</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsubsec-Exponentials" class="internal"><span class="title">Exponentials!</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#ex-LHopitalsRule" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="explore-ApplicationsDerivatives.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Exploration: Applications of Derivatives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-AntiderivativesIntegrals.html" class="internal"><span class="codenumber">5</span> <span class="title">Antiderivatives and Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Antiderivatives and Indefinite Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-Antiderivatives" class="internal"><span class="title">Antiderivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-InitialValueProblems" class="internal"><span class="title">Initial Value Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-IndefiniteIntegrals" class="internal"><span class="title">Indefinite Integrals</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#ex-IndefiniteIntegrals" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-RiemannSums.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Riemann Sums and Area Approximations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RiemannSums.html#subsec-RectangularApproximations" class="internal"><span class="title">Rectangular Approximations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RiemannSums.html#subsec-SelectionStrategy" class="internal"><span class="title">Selection Strategies</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-RiemannSums.html#ex-RiemannSums" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DefiniteIntegral.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Definite Integral</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#subsec-EvaluatingAreas" class="internal"><span class="title">Evaluating Areas (Instead of Approximating Them)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#subsec-SignedArea" class="internal"><span class="title">Signed Area</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#subsec-PropertiesOfDefiniteIntegrals" class="internal"><span class="title">Properties of Definite Integrals</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#ex-DefiniteIntegral" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-FTOC.html" class="internal"><span class="codenumber">5.4</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FTOC.html#subsec-AreasAndAntierivatives" class="internal"><span class="title">Areas and Antiderivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FTOC.html#subsec-EvaluatingIntegrals" class="internal"><span class="title">Evaluating Definite Integrals</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-FTOC.html#ex-FTOC" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html" class="internal"><span class="codenumber">5.5</span> <span class="title">More Results about Definite Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html#subsec-Symmetry" class="internal"><span class="title">Symmetry</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html#subsec-AverageValue" class="internal"><span class="title">Average Value of a Function</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html#ex-MoreDefiniteIntegrals" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-uSubstitution.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Introduction to <span class="process-math">\(u\)</span>-Substitution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-UndoChainRule" class="internal"><span class="title">Undoing the Chain Rule</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-uSubDefiniteIntegrals" class="internal"><span class="title">Substitution for Definite Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsubsec-uSubDefinite1" class="internal"><span class="title">Antidifferentiate, then Evaluate</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsubsec-SubstituteLimits" class="internal"><span class="title">A More Wholistic Substitution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-MoreToTranslate" class="internal"><span class="title">More to Translate</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-uSubstitution.html#ex-uSubstitution" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-ApplicationsIntegrals.html" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-NetChange.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Integrals as Net Change</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NetChange.html#subsec-EstimatingMovement" class="internal"><span class="title">Estimating Movement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NetChange.html#subsec-position-velocity-acceleration" class="internal"><span class="title">Position, Velocity, and Acceleration</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NetChange.html#subsec-displacement-distance-speed" class="internal"><span class="title">Displacement, Distance, and Speed</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NetChange.html#subsec-FutureValueFunction" class="internal"><span class="title">Finding the Future Value of a Function</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-NetChange.html#ex-NetChange" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-AreaBetweenCurves.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Area Between Curves</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AreaBetweenCurves.html#subsec-RememberingRiemannSums" class="internal"><span class="title">Remembering Riemann Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AreaBetweenCurves.html#subsec-AreaBetweenCurves" class="internal"><span class="title">Building an Integral Formula for the Area Between Curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AreaBetweenCurves.html#subsec-ChangingPerspective" class="internal"><span class="title">Changing Perspective</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-AreaBetweenCurves.html#ex-AreaBetweenCurves" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-VolumesOfRevolution.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Volumes of Solids of Revolution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-FromAreaToVolume" class="internal"><span class="title">From Area To Volume</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-SolidsOfRevolution" class="internal"><span class="title">Solids of Revolution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-Re-OrientingRectangles" class="internal"><span class="title">Reorienting our Rectangles</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#ex-Volumes" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-MoreVolumes.html" class="internal"><span class="codenumber">6.4</span> <span class="title">More Volumes: Shifting the Axis of Revolution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreVolumes.html#subsec-WhatChanges" class="internal"><span class="title">What Changes?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreVolumes.html#subsec-FormalizingTheChanges" class="internal"><span class="title">Formalizing These Changes in the Washers and Shells</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-MoreVolumes.html#ex-MoreVolumes" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Arc Length and Surface Area</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#subsec-ArcLength" class="internal"><span class="title">Integrals for Evaluating the Length of a Curve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#subsec-SurfaceArea" class="internal"><span class="title">Integrals for Evaluating the Surface Area of a Solid</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#ex-ArcLengthSurfaceArea" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Other Applications of Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Mass" class="internal"><span class="title">Physics Application: Mass</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Work" class="internal"><span class="title">Physics Application: Work</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Springs" class="internal"><span class="title">Work: Springs</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Pumping" class="internal"><span class="title">Work: Pumping Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-OtherApplications.html#ex-OtherApplications" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-AntidifferentiationTechniques.html" class="internal"><span class="codenumber">7</span> <span class="title">Techniques for Antidifferentiation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ImproperIntegrals.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Improper Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#subsec-ImproperIntegrals" class="internal"><span class="title">Improper Integrals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#subsec-ImproperIntegralStrategies" class="internal"><span class="title">Strategies for Evaluating Improper Integrals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#subsec-IntegralConvergence" class="internal"><span class="title">Convergence and Divergence of an Improper Integral</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#ex-ImproperIntegrals" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-MoreuSubstitution.html" class="internal"><span class="codenumber">7.2</span> <span class="title">More on <span class="process-math">\(u\)</span>-Substitution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreuSubstitution.html#subsec-VariableSubstitution" class="internal"><span class="title">Variable Substitution in Integrals</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-AlgebraicManipulations.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Manipulating Integrands</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-Rewriting" class="internal"><span class="title">Rewriting the Integrand</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-RationalFunctions" class="internal"><span class="title">Antidifferentiating Rational Functions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#ex-AlgebraicManipulations" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntegrationByParts.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Integration By Parts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-DiscoveringIntegrationByParts" class="internal"><span class="title">Discovering the Integration by Parts Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-PickingParts" class="internal"><span class="title">Intuition for Selecting the Parts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-FlexibleChoices" class="internal"><span class="title">Some Flexible Choices for Parts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-SolvingForIntegral" class="internal"><span class="title">Solving for the Integral</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#ex-ByParts" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PowersOfTrig.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Integrating Powers of Trigonometric Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#subsec-StrategySinesCosines" class="internal"><span class="title">Building a Strategy for Powers of Sines and Cosines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#subsec-StrategySecantsTangents" class="internal"><span class="title">Building a Strategy for Powers of Secants and Tangents</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#ex-PowersOfTrig" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-TrigSub.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Trigonometric Substitution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-TrigSub.html#subsec-AnotherVariableSubstitution" class="internal"><span class="title">Another Type of Variable Substitution</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-TrigSub.html#ex-TrigSub" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PartialFractions.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Partial Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-WhenPartialFractions" class="internal"><span class="title">When?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-HowPartialFractions" class="internal"><span class="title">How?</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-SpecificStrategies" class="internal"><span class="title">More Specific Strategies</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsubsec-SimpleLinear" class="internal"><span class="title">Partial Fraction Type: Simple Linear Factors</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsubsec-IrreducibleQuadratics" class="internal"><span class="title">Partial Fraction Type: Irreducible Quadratic Factors</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsubsec-RepeatedLinear" class="internal"><span class="title">Partial Fraction Type: Repeated Linear Factors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PartialFractions.html#ex-PartialFractions" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-InfiniteSeries.html" class="internal"><span class="codenumber">8</span> <span class="title">Infinite Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntroSequences.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Introduction to Infinite Sequences</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-SequencesAsFunctions" class="internal"><span class="title">Sequences as Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-GraphingSequences" class="internal"><span class="title">Graphing Sequences</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-SequenceTerminology" class="internal"><span class="title">Sequence Terminology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-RecursiveLimits" class="internal"><span class="title">Some Cool Recursive Examples</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IntroSequences.html#ex-IntroSequences" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntroSeries.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Introduction to Infinite Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSeries.html#subsec-PartialSums" class="internal"><span class="title">Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSeries.html#subsec-VisualizingPartialSums" class="internal"><span class="title">Visualizing the Sequence of Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSeries.html#subsec-SpecialSeries" class="internal"><span class="title">Special Series</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IntroSeries.html#ex-IntroSeries" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DivergenceTest.html" class="internal"><span class="codenumber">8.3</span> <span class="title">The Divergence Test and the Harmonic Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-RelationshipSeqSeries" class="internal"><span class="title">The Relationship Between a Sequence and Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-DivergenceTest" class="internal"><span class="title">The Divergence Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-GrowthRates" class="internal"><span class="title">Squeeze Theorem and Growth Rates</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DivergenceTest.html#ex-DivergenceTest" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntegralTest.html" class="internal"><span class="codenumber">8.4</span> <span class="title">The Integral Test</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-SeriesAsIntegrals" class="internal"><span class="title">Infinite Series As a Kind of Integral</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-IntegralTest" class="internal"><span class="title">The Integral Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-WhyConditions" class="internal"><span class="title">Why Do We Need These Conditions?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IntegralTest.html#ex-IntegralTest" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-AlternatingSeries.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Alternating Series and Conditional Convergence</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlternatingSeries.html#subsec-AlternatingSeries" class="internal"><span class="title">Defining Alternating Series, and the Main Result</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlternatingSeries.html#subsec-ConditionalConvergence" class="internal"><span class="title">Convergence, More Carefully</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-AlternatingSeries.html#ex-AlternatingSeries" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-CommonSeries.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Common Series Types</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CommonSeries.html#subsec-GeometricSeries" class="internal"><span class="title">Geometric Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CommonSeries.html#subsec-pSeries" class="internal"><span class="title"><span class="process-math">\(p\)</span>-Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CommonSeries.html#subsec-RecappingObjects" class="internal"><span class="title">Recapping Our Mathematical Objects</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-CommonSeries.html#ex-CommonSeries" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ComparisonTests.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Comparison Tests</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ComparisonTests.html#subsec-ComparingPartialSums" class="internal"><span class="title">Comparing Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ComparisonTests.html#subsec-UnhelpfulComparisons" class="internal"><span class="title">(Un)Helpful Comparisons</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ComparisonTests.html#subsec-LimitComparison" class="internal"><span class="title">Limit Comparison</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ComparisonTests.html#ex-ComparisonTests" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-RatioRootTests.html" class="internal"><span class="codenumber">8.8</span> <span class="title">The Ratio and Root Tests</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RatioRootTests.html#subsec-EventuallyGeometricish" class="internal"><span class="title">Eventually Geometric-ish</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RatioRootTests.html#subsec-InconclusiveRatioRoot" class="internal"><span class="title">Inconclusive Results</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-RatioRootTests.html#ex-RatioRootTests" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="explore-Series.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Exploration: Infinite Series</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Series.html#subsec-InterestingSeries" class="internal"><span class="title">InterestingSeries</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-PowerSeries.html" class="internal"><span class="codenumber">9</span> <span class="title">Power Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PolynomialApproximation.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Polynomial Approximations of Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#subsec-WhatDoWeWant" class="internal"><span class="title">What Do We Want From a Polynomial Approximation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#subsec-HowDoWeBuild" class="internal"><span class="title">How Do We Build a Polynomial Approximation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#subsec-AreThesePartialSums" class="internal"><span class="title">Are These Partial Sums?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#ex-PolynomialApproximation" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Power Series Convergence</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html#subsec-IntervalOfConvergence" class="internal"><span class="title">Interval of Convergence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html#subsec-OperationsPowerSeries" class="internal"><span class="title">Operations on Power Series</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html#ex-PowerSeriesConvergence" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html" class="internal"><span class="codenumber">9.3</span> <span class="title">How to Build Taylor Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#subsec-Directly" class="internal"><span class="title">Constructing Directly</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#subsec-ConnectionsToOther" class="internal"><span class="title">Connections To Other Taylor Series</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#ex-BuildingTaylorSeries" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html" class="internal"><span class="codenumber">9.4</span> <span class="title">How to Use Taylor Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-Approximations" class="internal"><span class="title">Approximations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-Integrals" class="internal"><span class="title">Integrals</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-EulersFormula" class="internal"><span class="title">Euler’s Formula</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-ComplexAnalysis" class="internal"><span class="title">Complex Analysis</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsubsec-TrigIdentities" class="internal"><span class="title">Trigonometric Identities</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#ex-ApplyingTaylorSeries" class="internal"><span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="explore-PowerSeries.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Exploration: Power Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-PowerSeries.html#subsec-BaselProblem" class="internal"><span class="title">The Basel Problem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-PowerSeries.html#subsec-NormalDistribution" class="internal"><span class="title">The Normal Distribution</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="app-CarnationLetter.html" class="internal"><span class="codenumber">A</span> <span class="title">Carnation Letter</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="explore-Limits"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.7</span><span class="space"> </span><span class="title">Exploration: Limits</span>
+</h2>
+<section class="introduction" id="explore-Limits-2"><div class="para" id="explore-Limits-2-1">We’re going to return to the definition of the <a href="sec-DefinitionOfLimits.html#def-Limit" class="xref" data-knowl="./knowl/xref/def-Limit.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.1: Limit of a Function">Limit of a Function</a>, and try to add some more precision to the way that we talk about these limits. We’ll recreate the definition, without some of the ambiguous terminology, and then explore the new definition a bit, in order to get a good feel for what this means.<div class="autopermalink" data-description="Paragraph"><a href="#explore-Limits-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="explore-Limits-2-2">By the end of this exploration, we should have a pretty good understanding of what a limit is, it should match our intuition that we’ve built, and we should see a path that we <em class="emphasis">could</em> walk to investigate how these limit properties and results that we’ve talked about could be described.<div class="autopermalink" data-description="Paragraph"><a href="#explore-Limits-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-PreciseLimits"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Precise Definition of Limits</span>
+</h3>
+<div class="para" id="subsec-PreciseLimits-2">What are the areas in the definition of a limit where we need to add precision?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PreciseLimits-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exploration project-like" id="exploration-PreciseLimits1"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">1.7.1</span><span class="period">.</span><span class="space"> </span><span class="title">A First Function to Think About.</span>
+</h4>
+<div class="introduction" id="exploration-PreciseLimits1-2">
+<div class="para logical" id="exploration-PreciseLimits1-2-1">
+<div class="para">Let’s consider the function <span class="process-math">\(f(x)=\sqrt{x}\text{.}\)</span> We’re going to mostly be interested in the <span class="process-math">\(x\)</span>-values around 9, since we’ll be investigating <span class="process-math">\(\displaystyle\lim_{x\to 9}\sqrt{x}\text{.}\)</span> We know that the <span class="process-math">\(y\)</span>-value outputs of <span class="process-math">\(f(x)\)</span> are going to be around 3, giving us:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 9} \sqrt{x}=3\text{.}
+\end{equation*}
+</div>
+<div class="para">Now we’re going to perform some tasks that will hopefully help us add some precision to our definition of a limit. You can use the graph and inputs below while you work.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<iframe id="exploration-PreciseLimits1-2-2" width="540" height="540" src="exploration-PreciseLimits1-2-2-if.html"></iframe>
+</div>
+<article class="task exercise-like" id="exploration-PreciseLimits1-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exploration-PreciseLimits1-3-1-1">We want to come up with points on the graph of <span class="process-math">\(f(x)\)</span> whose <span class="process-math">\(y\)</span>-values are within the interval <span class="process-math">\((2,4)\text{.}\)</span> Can you find an interval of <span class="process-math">\(x\)</span>-values around <span class="process-math">\(x=9\)</span> where the function outputs <span class="process-math">\(f(x)\)</span> are all in the interval <span class="process-math">\((2,4)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.1.a"><a href="#exploration-PreciseLimits1-3" title="Copy heading and permalink for Task 1.7.1.a" aria-label="Copy heading and permalink for Task 1.7.1.a">🔗</a></div></article><article class="task exercise-like" id="exploration-PreciseLimits1-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exploration-PreciseLimits1-4-1-1">Can you describe this in terms of distance? How far can <span class="process-math">\(x\)</span>-values be from <span class="process-math">\(x=9\)</span> where the corresponding <span class="process-math">\(f(x)\)</span> values are all in <span class="process-math">\((2,4)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exploration-PreciseLimits1-4-1-2">Your answer should fill in the blank in the following sentence:<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exploration-PreciseLimits1-4-1-3">“If I construct an interval of <span class="process-math">\(x\)</span>-values that are within <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span> units of <span class="process-math">\(x=9\text{,}\)</span> then the corresponding function outputs will all be within <span class="process-math">\((2,4)\text{.}\)</span>”<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exploration-PreciseLimits1-4-1-4">Note that another way of describing the interval, <span class="process-math">\((2,4)\)</span> is to say that the function outputs are all within 1 unit of <span class="process-math">\(y=3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-4-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.1.b"><a href="#exploration-PreciseLimits1-4" title="Copy heading and permalink for Task 1.7.1.b" aria-label="Copy heading and permalink for Task 1.7.1.b">🔗</a></div></article><article class="task exercise-like" id="exploration-PreciseLimits1-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="exploration-PreciseLimits1-5-1-1">Repeat this process, but for the interval <span class="process-math">\((2.9, 3.1)\text{.}\)</span> Can you find an interval of <span class="process-math">\(x\)</span>-values around <span class="process-math">\(x=9\)</span> where the function outputs <span class="process-math">\(f(x)\)</span> are all in the interval <span class="process-math">\((2.9,3.1)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.1.c"><a href="#exploration-PreciseLimits1-5" title="Copy heading and permalink for Task 1.7.1.c" aria-label="Copy heading and permalink for Task 1.7.1.c">🔗</a></div></article><article class="task exercise-like" id="exploration-PreciseLimits1-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="exploration-PreciseLimits1-6-1-1">Can you describe this in terms of distance? How far can <span class="process-math">\(x\)</span>-values be from <span class="process-math">\(x=9\)</span> where the corresponding <span class="process-math">\(f(x)\)</span> values are all in <span class="process-math">\((2.9,3.1)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exploration-PreciseLimits1-6-1-2">Your answer should fill in the blank in the following sentence:<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exploration-PreciseLimits1-6-1-3">“If I construct an interval of <span class="process-math">\(x\)</span>-values that are within <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span> units of <span class="process-math">\(x=9\text{,}\)</span> then the corresponding function outputs will all be within 0.1 units of <span class="process-math">\(y=3\text{.}\)</span>”<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-6-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.1.d"><a href="#exploration-PreciseLimits1-6" title="Copy heading and permalink for Task 1.7.1.d" aria-label="Copy heading and permalink for Task 1.7.1.d">🔗</a></div></article><article class="task exercise-like" id="exploration-PreciseLimits1-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="exploration-PreciseLimits1-7-1-1">Come up with an even smaller interval. Change the distance between the function outputs and <span class="process-math">\(y=3\)</span> to something smaller than 0.1. Construct a new target interval of <span class="process-math">\(y\)</span>-values, and see if you can find an interval of <span class="process-math">\(x\)</span>-values such that all of the function outputs are in your target interval.<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.1.e"><a href="#exploration-PreciseLimits1-7" title="Copy heading and permalink for Task 1.7.1.e" aria-label="Copy heading and permalink for Task 1.7.1.e">🔗</a></div></article><article class="task exercise-like" id="exploration-PreciseLimits1-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="exploration-PreciseLimits1-8-1-1">Have you convinced yourself that you can always do this? Do you think it really matters what the target interval of <span class="process-math">\(y\)</span>-values is? Can you <em class="emphasis">always</em> find an interval of <span class="process-math">\(x\)</span>-values around <span class="process-math">\(x=9\)</span> (or <span class="process-math">\(x\)</span>-values that are some non-zero distance from <span class="process-math">\(x=9\)</span>) where the outputs are in within that target distance from <span class="process-math">\(y=3\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.1.f"><a href="#exploration-PreciseLimits1-8" title="Copy heading and permalink for Task 1.7.1.f" aria-label="Copy heading and permalink for Task 1.7.1.f">🔗</a></div></article><article class="task exercise-like" id="exploration-PreciseLimits1-9"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para" id="exploration-PreciseLimits1-9-1-1">Let’s formalize this: If <span class="process-math">\(\varepsilon\)</span> is some real number with <span class="process-math">\(\varepsilon\gt 0\text{,}\)</span> then can you find an interval of <span class="process-math">\(x\)</span>-values around <span class="process-math">\(x=9\)</span> where the function outputs <span class="process-math">\(f(x)\)</span> are all in the interval <span class="process-math">\(\left( 3-\varepsilon , 3+\varepsilon \right)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.1.g"><a href="#exploration-PreciseLimits1-9" title="Copy heading and permalink for Task 1.7.1.g" aria-label="Copy heading and permalink for Task 1.7.1.g">🔗</a></div></article><article class="task exercise-like" id="exploration-PreciseLimits1-10"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="para" id="exploration-PreciseLimits1-10-1-1">Can you describe this in terms of distance? How far can <span class="process-math">\(x\)</span>-values be from <span class="process-math">\(x=9\)</span> where the corresponding <span class="process-math">\(f(x)\)</span> values are all in <span class="process-math">\(\left( 3-\varepsilon , 3+\varepsilon \right)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exploration-PreciseLimits1-10-1-2">Your answer should fill in the blank in the following sentence:<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-10-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exploration-PreciseLimits1-10-1-3">“If I construct an interval of <span class="process-math">\(x\)</span>-values that are within <span class="fillin underline" role="img" aria-label="7-character blank" style="width: 3.181818181818182em;"></span> units of <span class="process-math">\(x=9\text{,}\)</span> then the corresponding function outputs will all be within <span class="process-math">\(\varepsilon\)</span> units of <span class="process-math">\(y=3\text{.}\)</span>”<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-10-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exploration-PreciseLimits1-10-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="exploration-PreciseLimits1-10-2-1">Note that your distance is going to be some function of <span class="process-math">\(\varepsilon\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits1-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 1.7.1.h.1"><a href="#exploration-PreciseLimits1-10-2" title="Copy heading and permalink for Hint 1.7.1.h.1" aria-label="Copy heading and permalink for Hint 1.7.1.h.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 1.7.1.h"><a href="#exploration-PreciseLimits1-10" title="Copy heading and permalink for Task 1.7.1.h" aria-label="Copy heading and permalink for Task 1.7.1.h">🔗</a></div></article><div class="autopermalink" data-description="Exploration 1.7.1: A First Function to Think About"><a href="#exploration-PreciseLimits1" title="Copy heading and permalink for Exploration 1.7.1: A First Function to Think About" aria-label="Copy heading and permalink for Exploration 1.7.1: A First Function to Think About">🔗</a></div></article><article class="exploration project-like" id="exploration-PreciseLimits2"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">1.7.2</span><span class="period">.</span><span class="space"> </span><span class="title">A Linear Function.</span>
+</h4>
+<div class="introduction" id="exploration-PreciseLimits2-2">
+<div class="para logical" id="exploration-PreciseLimits2-2-1">
+<div class="para">We’ll try this again, but with a new function. This will change a bit of how we think about constructing our intervals. Consider the function <span class="process-math">\(g(x)=\dfrac{x}{4}+3\text{.}\)</span> We’re going to mostly be interested in the <span class="process-math">\(x\)</span>-values around -2, since we’ll be investigating:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to-2} \left(\frac{x}{4}+3\right) = \frac{5}{2}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exploration-PreciseLimits2-2-2">You can, again, use the graph and inputs below while you work.<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<iframe id="exploration-PreciseLimits2-2-3" width="540" height="540" src="exploration-PreciseLimits2-2-3-if.html"></iframe>
+</div>
+<article class="task exercise-like" id="exploration-PreciseLimits2-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exploration-PreciseLimits2-3-1-1">We want to come up with points on the graph of <span class="process-math">\(g(x)\)</span> whose <span class="process-math">\(y\)</span>-values are within the interval <span class="process-math">\((2,3)\text{.}\)</span> Can you find an interval of <span class="process-math">\(x\)</span>-values around <span class="process-math">\(x=-2\)</span> where the function outputs <span class="process-math">\(g(x)\)</span> are all in the interval <span class="process-math">\((2,3)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.2.a"><a href="#exploration-PreciseLimits2-3" title="Copy heading and permalink for Task 1.7.2.a" aria-label="Copy heading and permalink for Task 1.7.2.a">🔗</a></div></article><article class="task exercise-like" id="exploration-PreciseLimits2-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exploration-PreciseLimits2-4-1-1">Can you describe this in terms of distance? How far can <span class="process-math">\(x\)</span>-values be from <span class="process-math">\(x=-2\)</span> where the corresponding <span class="process-math">\(g(x)\)</span> values are all in <span class="process-math">\((2,3)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exploration-PreciseLimits2-4-1-2">Your answer should fill in the blank in the following sentence:<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exploration-PreciseLimits2-4-1-3">“If I construct an interval of <span class="process-math">\(x\)</span>-values that are within <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span> units of <span class="process-math">\(x=-2\text{,}\)</span> then the corresponding function outputs will all be within <span class="process-math">\((2,3)\text{.}\)</span>”<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exploration-PreciseLimits2-4-1-4">Note that another way of describing the interval, <span class="process-math">\((2,3)\)</span> is to say that the function outputs are all within <span class="process-math">\(\dfrac{1}{2}\)</span> unit of <span class="process-math">\(y=\dfrac{5}{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-4-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.2.b"><a href="#exploration-PreciseLimits2-4" title="Copy heading and permalink for Task 1.7.2.b" aria-label="Copy heading and permalink for Task 1.7.2.b">🔗</a></div></article><article class="task exercise-like" id="exploration-PreciseLimits2-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="exploration-PreciseLimits2-5-1-1">Repeat this process, but for the interval <span class="process-math">\(\left(\dfrac{19}{8}, \dfrac{21}{8}\right)\text{.}\)</span> Can you find an interval of <span class="process-math">\(x\)</span>-values around <span class="process-math">\(x=-2\)</span> where the function outputs <span class="process-math">\(g(x)\)</span> are all in the interval <span class="process-math">\(\left(\dfrac{19}{8}, \dfrac{21}{8}\right)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.2.c"><a href="#exploration-PreciseLimits2-5" title="Copy heading and permalink for Task 1.7.2.c" aria-label="Copy heading and permalink for Task 1.7.2.c">🔗</a></div></article><article class="task exercise-like" id="exploration-PreciseLimits2-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="exploration-PreciseLimits2-6-1-1">Can you describe this in terms of distance? How far can <span class="process-math">\(x\)</span>-values be from <span class="process-math">\(x=-2\)</span> where the corresponding <span class="process-math">\(g(x)\)</span> values are all in <span class="process-math">\(\left(\dfrac{19}{8}, \dfrac{21}{8}\right)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exploration-PreciseLimits2-6-1-2">Your answer should fill in the blank in the following sentence:<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exploration-PreciseLimits2-6-1-3">“If I construct an interval of <span class="process-math">\(x\)</span>-values that are within <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span> units of <span class="process-math">\(x=-2\text{,}\)</span> then the corresponding function outputs will all be within <span class="process-math">\(\frac{1}{8}\)</span> unit of <span class="process-math">\(y=-2\text{.}\)</span>”<div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-6-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.2.d"><a href="#exploration-PreciseLimits2-6" title="Copy heading and permalink for Task 1.7.2.d" aria-label="Copy heading and permalink for Task 1.7.2.d">🔗</a></div></article><article class="task exercise-like" id="exploration-PreciseLimits2-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="exploration-PreciseLimits2-7-1-1">If <span class="process-math">\(\varepsilon\)</span> is any real number with <span class="process-math">\(\varepsilon\gt 0\text{,}\)</span> then can you find an interval of <span class="process-math">\(x\)</span>-values around <span class="process-math">\(x=-2\)</span> where the function outputs <span class="process-math">\(g(x)\)</span> are all in the interval <span class="process-math">\(\left(\dfrac{5}{2}-\varepsilon, \dfrac{5}{2}+\varepsilon\right)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.2.e"><a href="#exploration-PreciseLimits2-7" title="Copy heading and permalink for Task 1.7.2.e" aria-label="Copy heading and permalink for Task 1.7.2.e">🔗</a></div></article><article class="task exercise-like" id="exploration-PreciseLimits2-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="exploration-PreciseLimits2-8-1-1">Can you describe this in terms of distance? How far can <span class="process-math">\(x\)</span>-values be from <span class="process-math">\(x=-2\)</span> where the corresponding <span class="process-math">\(f(x)\)</span> values are all in <span class="process-math">\(\left(\dfrac{5}{2}-\varepsilon, \dfrac{5}{2}+\varepsilon\right)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exploration-PreciseLimits2-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.7.2.f"><a href="#exploration-PreciseLimits2-8" title="Copy heading and permalink for Task 1.7.2.f" aria-label="Copy heading and permalink for Task 1.7.2.f">🔗</a></div></article><div class="autopermalink" data-description="Exploration 1.7.2: A Linear Function"><a href="#exploration-PreciseLimits2" title="Copy heading and permalink for Exploration 1.7.2: A Linear Function" aria-label="Copy heading and permalink for Exploration 1.7.2: A Linear Function">🔗</a></div></article><div class="para logical" id="subsec-PreciseLimits-5">
+<div class="para">Our goal, now, is to summarize what we’ve done.</div>
+<ul class="disc" id="subsec-PreciseLimits-5-1">
+<li id="subsec-PreciseLimits-5-1-1">
+<div class="para" id="subsec-PreciseLimits-5-1-1-1">We built a system to talk about <span class="process-math">\(y\)</span>-values that are “arbitrarily close the single, real number, <span class="process-math">\(L\text{.}\)</span>” We constructed an interval, <span class="process-math">\((L-\varepsilon, L+\varepsilon)\)</span> for any <span class="process-math">\(\varepsilon\gt 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PreciseLimits-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PreciseLimits-5-1-1-2">We also thought about this in terms of distance, by considering the <span class="process-math">\(y\)</span>-values that were within <span class="process-math">\(\varepsilon\)</span> units of <span class="process-math">\(y=L\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PreciseLimits-5-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-PreciseLimits-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-PreciseLimits-5-1-2">
+<div class="para" id="subsec-PreciseLimits-5-1-2-1">We found a way to talk about <span class="process-math">\(x\)</span>-values being “sufficiently close to, but not equal to, <span class="process-math">\(a\text{.}\)</span>” We constructed an interval of <span class="process-math">\(x\)</span>-values <em class="emphasis">around</em> <span class="process-math">\(x=a\text{,}\)</span> and then considered the function outputs from those <span class="process-math">\(x\)</span>-values. We should clarify that we really are considering the function outputs from all of these <span class="process-math">\(x\)</span>-values in the interval <em class="emphasis">except</em> <span class="process-math">\(x=a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PreciseLimits-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PreciseLimits-5-1-2-2">We also talked about this in terms of distance! We want to construct <span class="process-math">\(x\)</span>-values that are some non-zero distance away from <span class="process-math">\(x=a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PreciseLimits-5-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-PreciseLimits-5-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-PreciseLimits-5-1-3">
+<div class="para" id="subsec-PreciseLimits-5-1-3-1">We tried to come up with a way of describing this interval of <span class="process-math">\(x\)</span>-values—whose function outputs (except <span class="process-math">\(f(a)\)</span>) are all guaranteed to be in <span class="process-math">\((L-\varepsilon, L+\varepsilon)\)</span>—using a kind of function of <span class="process-math">\(\varepsilon\text{.}\)</span> That way, we can know that we can repeat this process for <em class="emphasis">any</em> <span class="process-math">\(\varepsilon\)</span> measure of “closeness.”<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PreciseLimits-5-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PreciseLimits-5-1-3-2">When we refer to that function of <span class="process-math">\(\varepsilon\)</span> to give us the distance for the <span class="process-math">\(x\)</span>-values, we often use the symbol, <span class="process-math">\(\delta\text{.}\)</span> Sometimes people call this <span class="process-math">\(\delta_{\varepsilon}\)</span> as a way of reminding ourselves that it depends on the value of <span class="process-math">\(\varepsilon\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PreciseLimits-5-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-PreciseLimits-5-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PreciseLimits-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PreciseLimits-6">This gives us two definitions that we can think of as a way of adding precision to the idea of a limit.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PreciseLimits-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-PreciseLimitInterval"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.7.1</span><span class="period">.</span><span class="space"> </span><span class="title">(Open Interval) Limit of a Function.</span>
+</h4>
+<div class="para logical" id="def-PreciseLimitInterval-2-1">
+<div class="para">Suppose that <span class="process-math">\(f(x)\)</span> is a function that exists for all <span class="process-math">\(x\)</span>-values in some open interval around and containing <span class="process-math">\(a\text{,}\)</span> except possibly at <span class="process-math">\(x=a\)</span> itself. We say that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to a} f(x)=L
+\end{equation*}
+</div>
+<div class="para">if, for any open interval <span class="process-math">\((p,q)\)</span> of <span class="process-math">\(y\)</span>-values containing the single, real number <span class="process-math">\(L\text{,}\)</span> there is some corresponding open interval <span class="process-math">\((c, d)\)</span> around <span class="process-math">\(x=a\)</span> (that is, <span class="process-math">\(c\lt a\lt d\)</span>) such that for all <span class="process-math">\(x\)</span>-values in <span class="process-math">\((c,d)\)</span> with <span class="process-math">\(x\neq a\text{,}\)</span> the function output <span class="process-math">\(f(x)\)</span> is in <span class="process-math">\((p,q)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-PreciseLimitInterval-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.7.1: (Open Interval) Limit of a Function"><a href="#def-PreciseLimitInterval" title="Copy heading and permalink for Definition 1.7.1: (Open Interval) Limit of a Function" aria-label="Copy heading and permalink for Definition 1.7.1: (Open Interval) Limit of a Function">🔗</a></div></article><article class="definition definition-like" id="def-PreciseLimitEpsDelta"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.7.2</span><span class="period">.</span><span class="space"> </span><span class="title">(Epsilon-Delta) Limit of a Function.</span>
+</h4>
+<div class="para logical" id="def-PreciseLimitEpsDelta-2-1">
+<div class="para">Suppose that <span class="process-math">\(f(x)\)</span> is a function that exists for all <span class="process-math">\(x\)</span>-values in some open interval around and containing <span class="process-math">\(a\text{,}\)</span> except possibly at <span class="process-math">\(x=a\)</span> itself. We say that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to a} f(x)=L
+\end{equation*}
+</div>
+<div class="para">if <span class="process-math">\(L\)</span> is some single, real number, and for any real number <span class="process-math">\(\varepsilon \gt 0\text{,}\)</span> there is a corresponding <span class="process-math">\(\delta_\varepsilon \gt0\)</span> such that <span class="process-math">\(|f(x)-L|\lt \varepsilon\)</span> whenever <span class="process-math">\(0\lt|x-a|\lt \delta_\varepsilon\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-PreciseLimitEpsDelta-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.7.2: (Epsilon-Delta) Limit of a Function"><a href="#def-PreciseLimitEpsDelta" title="Copy heading and permalink for Definition 1.7.2: (Epsilon-Delta) Limit of a Function" aria-label="Copy heading and permalink for Definition 1.7.2: (Epsilon-Delta) Limit of a Function">🔗</a></div></article><div class="para" id="subsec-PreciseLimits-9">Both of these definitions are very important to the further study of calculus, but especially important it to use these definitions of limits to think about continuity.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PreciseLimits-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PreciseLimits-10">We can say that a function is continuous at some point if every open interval in the range of the function around the <span class="process-math">\(y\)</span>-value of the point comes from an open interval in the domain of the function around the <span class="process-math">\(x\)</span>-value of the point. This is a very useful and important definition for the study of <dfn class="terminology">topology</dfn>, and a nice way of generalizing the concept of continuity.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PreciseLimits-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Precise Definition of Limits"><a href="#subsec-PreciseLimits" title="Copy heading and permalink for Subsection: Precise Definition of Limits" aria-label="Copy heading and permalink for Subsection: Precise Definition of Limits">🔗</a></div></section><section class="exercises" id="ex-PreciseLimits"><h3 class="heading hide-type">
+<span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="ex-PreciseLimits-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="ex-PreciseLimits-1-1-1">Consider the <span class="process-math">\(\varepsilon-\delta\)</span> definition of a limit. What does <span class="process-math">\(\varepsilon\)</span> represent? Connect it with the standard definition of a limit that we’ve been using. Similarly, what does <span class="process-math">\(\delta\)</span> represent? Connect it with the standard definition of a limit we’ve been using.<div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1"><a href="#ex-PreciseLimits-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ex-PreciseLimits-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="introduction" id="ex-PreciseLimits-2-1"><div class="para" id="ex-PreciseLimits-2-1-1">Draw a picture of the following situations:<div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ex-PreciseLimits-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ex-PreciseLimits-2-2-1-1">A function <span class="process-math">\(f(x)\)</span> where if <span class="process-math">\(0\lt |x-3|\lt 2\)</span> then <span class="process-math">\(|f(x)+4|\lt 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.a"><a href="#ex-PreciseLimits-2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="ex-PreciseLimits-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-PreciseLimits-2-3-1-1">A function <span class="process-math">\(g(x)\)</span> where if <span class="process-math">\(0\lt |x+1|\lt \dfrac{1}{2}\)</span> then <span class="process-math">\(|g(x)-6|\lt 2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.b"><a href="#ex-PreciseLimits-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 2"><a href="#ex-PreciseLimits-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ex-PreciseLimits-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="introduction" id="ex-PreciseLimits-3-1"><div class="para" id="ex-PreciseLimits-3-1-1">For the following, find <span class="process-math">\(\delta\)</span> or <span class="process-math">\(\varepsilon\text{.}\)</span> Include a sketch that illustrates the values you found with the function.<div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ex-PreciseLimits-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ex-PreciseLimits-3-2-1-1">For <span class="process-math">\(f(x) = 3x+1\text{,}\)</span> if <span class="process-math">\(0\lt |x-2|\lt \delta\text{,}\)</span> then <span class="process-math">\(|f(x) - 7| \lt 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.a"><a href="#ex-PreciseLimits-3-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ex-PreciseLimits-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-PreciseLimits-3-3-1-1">For <span class="process-math">\(g(x) = \sqrt{x+3}\text{,}\)</span> if <span class="process-math">\(0\lt |x-6|\lt 5\text{,}\)</span> then <span class="process-math">\(|g(x) - 3|\lt \varepsilon\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.b"><a href="#ex-PreciseLimits-3-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><article class="task exercise-like" id="ex-PreciseLimits-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ex-PreciseLimits-3-4-1-1">For the function <span class="process-math">\(f(x) = -3x+1\text{,}\)</span> explain how to find a value for <span class="process-math">\(\delta\)</span> that corresponds with any <span class="process-math">\(\varepsilon\)</span> so that when <span class="process-math">\(0\lt |x-2|\lt \delta\)</span> we have <span class="process-math">\(|f(x) +5|\lt \varepsilon\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.c"><a href="#ex-PreciseLimits-3-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div></article><article class="task exercise-like" id="ex-PreciseLimits-3-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ex-PreciseLimits-3-5-1-1">Consider the open interval definition of a limit. What do <span class="process-math">\((c, d)\)</span> and <span class="process-math">\((p,q)\)</span> represent. Connect them to the standard definition of a limit that we’ve been using.<div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.d"><a href="#ex-PreciseLimits-3-5" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 3"><a href="#ex-PreciseLimits-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ex-PreciseLimits-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="introduction" id="ex-PreciseLimits-4-1"><div class="para" id="ex-PreciseLimits-4-1-1">Draw a picture of the following situations:<div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ex-PreciseLimits-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ex-PreciseLimits-4-2-1-1">A function <span class="process-math">\(f(x)\)</span> with <span class="process-math">\(a = 1\)</span> and <span class="process-math">\(L = 8.5\)</span> where if <span class="process-math">\(x\)</span> is in <span class="process-math">\((0,2)\)</span> then <span class="process-math">\(f(x)\)</span> is in <span class="process-math">\((8,9)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.a"><a href="#ex-PreciseLimits-4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="ex-PreciseLimits-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-PreciseLimits-4-3-1-1">A function <span class="process-math">\(g(x)\)</span> with <span class="process-math">\(a = -4\)</span> and <span class="process-math">\(L = 10\)</span> where if <span class="process-math">\(x\)</span> is in <span class="process-math">\((-4.5, -3.5)\)</span> then <span class="process-math">\(g(x)\)</span> is in <span class="process-math">\((9.8, 10.2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.b"><a href="#ex-PreciseLimits-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 4"><a href="#ex-PreciseLimits-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="ex-PreciseLimits-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="introduction" id="ex-PreciseLimits-5-1"><div class="para" id="ex-PreciseLimits-5-1-1">For the following, find values for <span class="process-math">\((c,d)exploration\)</span> or <span class="process-math">\((p,q)\text{.}\)</span> Include a sketch that illustrates the intervals you found with the function.<div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ex-PreciseLimits-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ex-PreciseLimits-5-2-1-1">For <span class="process-math">\(f(x) = 2x-1\text{,}\)</span> if <span class="process-math">\(x\)</span> is in <span class="process-math">\((1, 2)\text{,}\)</span> then <span class="process-math">\(f(x)\)</span> is in <span class="process-math">\((p, q)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.a"><a href="#ex-PreciseLimits-5-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div></article><article class="task exercise-like" id="ex-PreciseLimits-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ex-PreciseLimits-5-3-1-1">For <span class="process-math">\(g(x) = x^3+1\text{,}\)</span> if <span class="process-math">\(x\)</span> is in <span class="process-math">\((c, d)\text{,}\)</span> then <span class="process-math">\(g(x)\)</span> is in <span class="process-math">\((8, 9)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.b"><a href="#ex-PreciseLimits-5-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 5"><a href="#ex-PreciseLimits-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="ex-PreciseLimits-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="ex-PreciseLimits-6-1-1">For the function <span class="process-math">\(f(x)=x^2+4\text{,}\)</span> explain how to find an interval <span class="process-math">\((c,d)\)</span> around <span class="process-math">\(x=2\)</span> if we are given some interval <span class="process-math">\((p,q)\)</span> around <span class="process-math">\(L=8\)</span> such that if <span class="process-math">\(x\)</span> is in <span class="process-math">\((c,d)\)</span> then <span class="process-math">\(f(x)\)</span> is in <span class="process-math">\((p,q)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-PreciseLimits-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 6"><a href="#ex-PreciseLimits-6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div></article><div class="autopermalink" data-description="Practice Problems"><a href="#ex-PreciseLimits" title="Copy heading and permalink for Practice Problems" aria-label="Copy heading and permalink for Practice Problems">🔗</a></div></section><div class="autopermalink" data-description="Section 1.7: Exploration: Limits"><a href="#explore-Limits" title="Copy heading and permalink for Section 1.7: Exploration: Limits" aria-label="Copy heading and permalink for Section 1.7: Exploration: Limits">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-Continuity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Derivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

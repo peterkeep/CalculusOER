@@ -811,6 +811,114 @@ var ptx_lunr_docs = [
   "body": "  Prove that at some point in your life you were exactly feet tall.   "
 },
 {
+  "id": "explore-Limits",
+  "level": "1",
+  "url": "explore-Limits.html",
+  "type": "Section",
+  "number": "1.7",
+  "title": "Exploration: Limits",
+  "body": " Exploration: Limits   We're going to return to the definition of the , and try to add some more precision to the way that we talk about these limits. We'll recreate the definition, without some of the ambiguous terminology, and then explore the new definition a bit, in order to get a good feel for what this means.  By the end of this exploration, we should have a pretty good understanding of what a limit is, it should match our intuition that we've built, and we should see a path that we could walk to investigate how these limit properties and results that we've talked about could be described.    Precise Definition of Limits  What are the areas in the definition of a limit where we need to add precision?   A First Function to Think About   Let's consider the function . We're going to mostly be interested in the -values around 9, since we'll be investigating . We know that the -value outputs of are going to be around 3, giving us: . Now we're going to perform some tasks that will hopefully help us add some precision to our definition of a limit. You can use the graph and inputs below while you work.      We want to come up with points on the graph of whose -values are within the interval . Can you find an interval of -values around where the function outputs are all in the interval ?      Can you describe this in terms of distance? How far can -values be from where the corresponding values are all in ?  Your answer should fill in the blank in the following sentence:   If I construct an interval of -values that are within units of , then the corresponding function outputs will all be within .   Note that another way of describing the interval, is to say that the function outputs are all within 1 unit of .      Repeat this process, but for the interval . Can you find an interval of -values around where the function outputs are all in the interval ?      Can you describe this in terms of distance? How far can -values be from where the corresponding values are all in ?  Your answer should fill in the blank in the following sentence:   If I construct an interval of -values that are within units of , then the corresponding function outputs will all be within 0.1 units of .       Come up with an even smaller interval. Change the distance between the function outputs and to something smaller than 0.1. Construct a new target interval of -values, and see if you can find an interval of -values such that all of the function outputs are in your target interval.      Have you convinced yourself that you can always do this? Do you think it really matters what the target interval of -values is? Can you always find an interval of -values around (or -values that are some non-zero distance from ) where the outputs are in within that target distance from ?      Let's formalize this: If is some real number with , then can you find an interval of -values around where the function outputs are all in the interval ?      Can you describe this in terms of distance? How far can -values be from where the corresponding values are all in ?  Your answer should fill in the blank in the following sentence:   If I construct an interval of -values that are within units of , then the corresponding function outputs will all be within units of .     Note that your distance is going to be some function of .      A Linear Function   We'll try this again, but with a new function. This will change a bit of how we think about constructing our intervals. Consider the function . We're going to mostly be interested in the -values around -2, since we'll be investigating: .  You can, again, use the graph and inputs below while you work.      We want to come up with points on the graph of whose -values are within the interval . Can you find an interval of -values around where the function outputs are all in the interval ?      Can you describe this in terms of distance? How far can -values be from where the corresponding values are all in ?  Your answer should fill in the blank in the following sentence:   If I construct an interval of -values that are within units of , then the corresponding function outputs will all be within .   Note that another way of describing the interval, is to say that the function outputs are all within unit of .      Repeat this process, but for the interval . Can you find an interval of -values around where the function outputs are all in the interval ?      Can you describe this in terms of distance? How far can -values be from where the corresponding values are all in ?  Your answer should fill in the blank in the following sentence:   If I construct an interval of -values that are within units of , then the corresponding function outputs will all be within unit of .       If is any real number with , then can you find an interval of -values around where the function outputs are all in the interval ?      Can you describe this in terms of distance? How far can -values be from where the corresponding values are all in ?     Our goal, now, is to summarize what we've done.   We built a system to talk about -values that are arbitrarily close the single, real number, . We constructed an interval, for any .  We also thought about this in terms of distance, by considering the -values that were within units of .    We found a way to talk about -values being sufficiently close to, but not equal to, . We constructed an interval of -values around  , and then considered the function outputs from those -values. We should clarify that we really are considering the function outputs from all of these -values in the interval except  .  We also talked about this in terms of distance! We want to construct -values that are some non-zero distance away from .    We tried to come up with a way of describing this interval of -values whose function outputs (except ) are all guaranteed to be in using a kind of function of . That way, we can know that we can repeat this process for any  measure of closeness.   When we refer to that function of to give us the distance for the -values, we often use the symbol, . Sometimes people call this as a way of reminding ourselves that it depends on the value of .     This gives us two definitions that we can think of as a way of adding precision to the idea of a limit.   (Open Interval) Limit of a Function   Suppose that is a function that exists for all -values in some open interval around and containing , except possibly at itself. We say that if, for any open interval of -values containing the single, real number , there is some corresponding open interval around (that is, ) such that for all -values in with , the function output is in .     (Epsilon-Delta) Limit of a Function   Suppose that is a function that exists for all -values in some open interval around and containing , except possibly at itself. We say that if is some single, real number, and for any real number , there is a corresponding such that whenever .    Both of these definitions are very important to the further study of calculus, but especially important it to use these definitions of limits to think about continuity.  We can say that a function is continuous at some point if every open interval in the range of the function around the -value of the point comes from an open interval in the domain of the function around the -value of the point. This is a very useful and important definition for the study of topology , and a nice way of generalizing the concept of continuity.      Consider the definition of a limit. What does represent? Connect it with the standard definition of a limit that we've been using. Similarly, what does represent? Connect it with the standard definition of a limit we've been using.      Draw a picture of the following situations:     A function where if then .      A function where if then .       For the following, find or . Include a sketch that illustrates the values you found with the function.     For , if , then .      For , if , then .      For the function , explain how to find a value for that corresponds with any so that when we have .      Consider the open interval definition of a limit. What do and represent. Connect them to the standard definition of a limit that we've been using.       Draw a picture of the following situations:     A function with and where if is in then is in .      A function with and where if is in then is in .       For the following, find values for or . Include a sketch that illustrates the intervals you found with the function.     For , if is in , then is in .      For , if is in , then is in .       For the function , explain how to find an interval around if we are given some interval around such that if is in then is in .     "
+},
+{
+  "id": "exploration-PreciseLimits1",
+  "level": "2",
+  "url": "explore-Limits.html#exploration-PreciseLimits1",
+  "type": "Exploration",
+  "number": "1.7.1",
+  "title": "A First Function to Think About.",
+  "body": " A First Function to Think About   Let's consider the function . We're going to mostly be interested in the -values around 9, since we'll be investigating . We know that the -value outputs of are going to be around 3, giving us: . Now we're going to perform some tasks that will hopefully help us add some precision to our definition of a limit. You can use the graph and inputs below while you work.      We want to come up with points on the graph of whose -values are within the interval . Can you find an interval of -values around where the function outputs are all in the interval ?      Can you describe this in terms of distance? How far can -values be from where the corresponding values are all in ?  Your answer should fill in the blank in the following sentence:   If I construct an interval of -values that are within units of , then the corresponding function outputs will all be within .   Note that another way of describing the interval, is to say that the function outputs are all within 1 unit of .      Repeat this process, but for the interval . Can you find an interval of -values around where the function outputs are all in the interval ?      Can you describe this in terms of distance? How far can -values be from where the corresponding values are all in ?  Your answer should fill in the blank in the following sentence:   If I construct an interval of -values that are within units of , then the corresponding function outputs will all be within 0.1 units of .       Come up with an even smaller interval. Change the distance between the function outputs and to something smaller than 0.1. Construct a new target interval of -values, and see if you can find an interval of -values such that all of the function outputs are in your target interval.      Have you convinced yourself that you can always do this? Do you think it really matters what the target interval of -values is? Can you always find an interval of -values around (or -values that are some non-zero distance from ) where the outputs are in within that target distance from ?      Let's formalize this: If is some real number with , then can you find an interval of -values around where the function outputs are all in the interval ?      Can you describe this in terms of distance? How far can -values be from where the corresponding values are all in ?  Your answer should fill in the blank in the following sentence:   If I construct an interval of -values that are within units of , then the corresponding function outputs will all be within units of .     Note that your distance is going to be some function of .    "
+},
+{
+  "id": "exploration-PreciseLimits2",
+  "level": "2",
+  "url": "explore-Limits.html#exploration-PreciseLimits2",
+  "type": "Exploration",
+  "number": "1.7.2",
+  "title": "A Linear Function.",
+  "body": " A Linear Function   We'll try this again, but with a new function. This will change a bit of how we think about constructing our intervals. Consider the function . We're going to mostly be interested in the -values around -2, since we'll be investigating: .  You can, again, use the graph and inputs below while you work.      We want to come up with points on the graph of whose -values are within the interval . Can you find an interval of -values around where the function outputs are all in the interval ?      Can you describe this in terms of distance? How far can -values be from where the corresponding values are all in ?  Your answer should fill in the blank in the following sentence:   If I construct an interval of -values that are within units of , then the corresponding function outputs will all be within .   Note that another way of describing the interval, is to say that the function outputs are all within unit of .      Repeat this process, but for the interval . Can you find an interval of -values around where the function outputs are all in the interval ?      Can you describe this in terms of distance? How far can -values be from where the corresponding values are all in ?  Your answer should fill in the blank in the following sentence:   If I construct an interval of -values that are within units of , then the corresponding function outputs will all be within unit of .       If is any real number with , then can you find an interval of -values around where the function outputs are all in the interval ?      Can you describe this in terms of distance? How far can -values be from where the corresponding values are all in ?    "
+},
+{
+  "id": "def-PreciseLimitInterval",
+  "level": "2",
+  "url": "explore-Limits.html#def-PreciseLimitInterval",
+  "type": "Definition",
+  "number": "1.7.1",
+  "title": "(Open Interval) Limit of a Function.",
+  "body": " (Open Interval) Limit of a Function   Suppose that is a function that exists for all -values in some open interval around and containing , except possibly at itself. We say that if, for any open interval of -values containing the single, real number , there is some corresponding open interval around (that is, ) such that for all -values in with , the function output is in .   "
+},
+{
+  "id": "def-PreciseLimitEpsDelta",
+  "level": "2",
+  "url": "explore-Limits.html#def-PreciseLimitEpsDelta",
+  "type": "Definition",
+  "number": "1.7.2",
+  "title": "(Epsilon-Delta) Limit of a Function.",
+  "body": " (Epsilon-Delta) Limit of a Function   Suppose that is a function that exists for all -values in some open interval around and containing , except possibly at itself. We say that if is some single, real number, and for any real number , there is a corresponding such that whenever .   "
+},
+{
+  "id": "subsec-PreciseLimits-10",
+  "level": "2",
+  "url": "explore-Limits.html#subsec-PreciseLimits-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "topology "
+},
+{
+  "id": "ex-PreciseLimits-1",
+  "level": "2",
+  "url": "explore-Limits.html#ex-PreciseLimits-1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the definition of a limit. What does represent? Connect it with the standard definition of a limit that we've been using. Similarly, what does represent? Connect it with the standard definition of a limit we've been using.   "
+},
+{
+  "id": "ex-PreciseLimits-2",
+  "level": "2",
+  "url": "explore-Limits.html#ex-PreciseLimits-2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Draw a picture of the following situations:     A function where if then .      A function where if then .    "
+},
+{
+  "id": "ex-PreciseLimits-3",
+  "level": "2",
+  "url": "explore-Limits.html#ex-PreciseLimits-3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  For the following, find or . Include a sketch that illustrates the values you found with the function.     For , if , then .      For , if , then .      For the function , explain how to find a value for that corresponds with any so that when we have .      Consider the open interval definition of a limit. What do and represent. Connect them to the standard definition of a limit that we've been using.    "
+},
+{
+  "id": "ex-PreciseLimits-4",
+  "level": "2",
+  "url": "explore-Limits.html#ex-PreciseLimits-4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Draw a picture of the following situations:     A function with and where if is in then is in .      A function with and where if is in then is in .    "
+},
+{
+  "id": "ex-PreciseLimits-5",
+  "level": "2",
+  "url": "explore-Limits.html#ex-PreciseLimits-5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  For the following, find values for or . Include a sketch that illustrates the intervals you found with the function.     For , if is in , then is in .      For , if is in , then is in .    "
+},
+{
+  "id": "ex-PreciseLimits-6",
+  "level": "2",
+  "url": "explore-Limits.html#ex-PreciseLimits-6",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  For the function , explain how to find an interval around if we are given some interval around such that if is in then is in .   "
+},
+{
   "id": "sec-IntroDerivatives",
   "level": "1",
   "url": "sec-IntroDerivatives.html",
@@ -2699,6 +2807,24 @@ var ptx_lunr_docs = [
   "number": "7",
   "title": "",
   "body": "  Evaluate the following limits using L'Hôpital's Rule.                                                              with a real number           "
+},
+{
+  "id": "explore-ApplicationsDerivatives",
+  "level": "1",
+  "url": "explore-ApplicationsDerivatives.html",
+  "type": "Section",
+  "number": "4.8",
+  "title": "Exploration: Applications of Derivatives",
+  "body": " Exploration: Applications of Derivatives  We have a lot of practice with calculating derivatives, and we hopefully have a good idea of how we might interpret what this derivative is: a function that tells us slopes of a line tangent to a curve at a specific -value.  Let's think about this idea.   A Tangent Triangle   Let's consider the function .     Consider a point on this curve at some -value where . Find the equation of the line tangent to at this point.      We can graph this line, as well as the function .   Find the area of the triangle formed by the tangent line and the axes.      Hopefully you found something surprising about this area. Show that this surprising fact also occurs for the function , where .      Are there other functions that have this interesting property about the area of a triangle formed by the tangent line and the axes? What are some requirements that these functions would need to have?     "
+},
+{
+  "id": "exploration-AreaTriangle",
+  "level": "2",
+  "url": "explore-ApplicationsDerivatives.html#exploration-AreaTriangle",
+  "type": "Exploration",
+  "number": "4.8.1",
+  "title": "A Tangent Triangle.",
+  "body": " A Tangent Triangle   Let's consider the function .     Consider a point on this curve at some -value where . Find the equation of the line tangent to at this point.      We can graph this line, as well as the function .   Find the area of the triangle formed by the tangent line and the axes.      Hopefully you found something surprising about this area. Show that this surprising fact also occurs for the function , where .      Are there other functions that have this interesting property about the area of a triangle formed by the tangent line and the axes? What are some requirements that these functions would need to have?    "
 },
 {
   "id": "sec-IndefiniteIntegrals",
@@ -6400,6 +6526,24 @@ var ptx_lunr_docs = [
   "body": "  For each of the following infinite series, use any methods we've learned about so far to determine whether the series converges or diverges. If it converges and you are able to tell what it converges to, say so and explain. If you cannot tell what it converges to, say so and explain. Clearly state the test or method you use or the type of series.                                                    "
 },
 {
+  "id": "explore-Series",
+  "level": "1",
+  "url": "explore-Series.html",
+  "type": "Section",
+  "number": "8.9",
+  "title": "Exploration: Infinite Series",
+  "body": " Exploration: Infinite Series   InterestingSeries  We've seen a lot of infinite series examples, and we have a lot of tools for how to think about infinite series. Take a look at some more examples that are a bit strange to think about.   Interesting Infinite Series    Consider the series where is the function that returns the number of digits in the number (so and ), and is a real number.  For what values of does this series converge?      Consider the series where is the function that returns the th Fibbonacci number, and is a real number. As a reminder, the Fibbonacci sequence is: where .  For what values of does this series converge?       "
+},
+{
+  "id": "exploration-InterestingSeries",
+  "level": "2",
+  "url": "explore-Series.html#exploration-InterestingSeries",
+  "type": "Exploration",
+  "number": "8.9.1",
+  "title": "Interesting Infinite Series.",
+  "body": " Interesting Infinite Series    Consider the series where is the function that returns the number of digits in the number (so and ), and is a real number.  For what values of does this series converge?      Consider the series where is the function that returns the th Fibbonacci number, and is a real number. As a reminder, the Fibbonacci sequence is: where .  For what values of does this series converge?    "
+},
+{
   "id": "sec-PolynomialApproximation",
   "level": "1",
   "url": "sec-PolynomialApproximation.html",
@@ -6857,6 +7001,69 @@ var ptx_lunr_docs = [
   "number": "2",
   "title": "",
   "body": "  Use a Taylor series to estimate the value of the integral within a maximum error margin of 0.001.   "
+},
+{
+  "id": "explore-PowerSeries",
+  "level": "1",
+  "url": "explore-PowerSeries.html",
+  "type": "Section",
+  "number": "9.5",
+  "title": "Exploration: Power Series",
+  "body": " Exploration: Power Series   We're going to use Taylor series a bit more here, and we'll look at two interesting problems: one a historical relic, and the other a modern statistical result.    The Basel Problem  The Basel Problem is the name given to a problem about infinite series, solved by Leonard Euler.   Basel Problem   The sum of reciprocal squares converges, and specifically: .    This result was incredible at the time of its proof for two reasons:   This was a longstanding question in mathematics! Mathematicians knew that this infinite series converged, but were stumped about what the value could be.    The proof of the result actually proved what a whole bunch of different -series converged to.   Let's follow along with Euler's proof of this result!   The Basel Problem   We're going to follow along this proof, and for most of the time it might seem like we're fiddling with unrelated results and functions. By the end, we'll tie what we're doing together to show that: .     First, consider the function .  Find a Taylor series representation for this function.    Try using the fact that: Can you divide by ?      We're going to consider this function again, but in a different form. We're going to think about this infinite polynomial, but we'll try to write it by thinking about the factors that we expect to see, specifically when we think of the zeros of the function.  So first, note that the zeros of this function, must occur when . What are the -values that make ?      We'll use these zeros to write out the function's factors, but we're also going to make use of the fact that . This means that if is a zero of the function, then the corresponding factor should be written as . So, if are all zeros, then we should write the function as: Use the zeros of the function that you found earlier to write out the factors of this.       Note that we have pairs of factors that are in the form . This is hopefully a very recognizable factoring pattern! It's the difference of squares! What do you get when you multiply these?  This should allow you to write your factored function from above in a slightly different way, by combining the pairs of factors using this multiplication. What does this look like?      We are almost complete. We now have represented the function as an infinite sum and also as an infinite product We can note that the constant term is in each, since it is the product of all of the constant terms in the infinite product.  We know that the quadratic terms should be (from the infinite sum). Can you find what the quadratic term from the infinite product would be?    This should be the quadratic term in each factor multiplied by the constant term in each of the rest of the factors, summed together.      You should have shown that: What is the sum of ?      Can you use this same strategy to find our what the sum converges to?  Note that we're really asking what the degree 4 terms are in each representation of the function .       The Normal Distribution  The normal distribution (what we typically think of when we imagine a bell curve ) is very important in the study of probability and statistics.   Standard Normal Distribution   We say that a random variable follows the standard normal distribution when the mean or expected value of the random variable is 0, the variance of the random variable is 0, and the probability density function is: .    There are a lot of technical details behind some of these terms, but we won't concern ourselves with it too much. For now, we'll state two facts:   We use an integral to represent probability. For instance, the probability that a random variable will take on a value that is up to 1 standard deviation above the mean is: . We can change the limits of integration to change the range of values that we are concerned with.    The Empirical Rule , or the 68-95-99.7 rule states that:   About 68% of the values will be within 1 standard deviation of the mean (between and ).    About 95% of the values will be within 2 standard deviations of the mean (between and ).    Almost all (about 99.7%) of the values will be within 3 standard deviations of the mean (between and ).         Normal Distribution    Write an integral that represents the probability of a random variable with a normal distribution taking on a value up to 2 standard deviations above the mean.      Based on the Empirical Rule, what do you expect the value of this integral to be?      Construct a Taylor series representing the function .      In order to estimate your integral, we will need to antidifferentiate . This function does not have an elementary antiderivative , meaning we cannot express an antiderivative in terms of the traditional functions we have named and the traditional operations we have defined. Antidifferentiate your Taylor series representation of , and call this .      Evaluate your integral using this new representation an antiderivative, .      This is an alternating series, and so we can approximate this value to whatever degree of accuracy we'd like using .  How many terms do you need, in order to approximate this probability within 0.01?      Construct, evaluate, and approximate the integral representing the probability that a normally distributed random variable takes on a value between 1 and 1.5 standard deviations above the mean (using the same number of terms as above).      "
+},
+{
+  "id": "thm-BaselProblem",
+  "level": "2",
+  "url": "explore-PowerSeries.html#thm-BaselProblem",
+  "type": "Theorem",
+  "number": "9.5.1",
+  "title": "Basel Problem.",
+  "body": " Basel Problem   The sum of reciprocal squares converges, and specifically: .   "
+},
+{
+  "id": "exploration-BaselProblem",
+  "level": "2",
+  "url": "explore-PowerSeries.html#exploration-BaselProblem",
+  "type": "Exploration",
+  "number": "9.5.1",
+  "title": "The Basel Problem.",
+  "body": " The Basel Problem   We're going to follow along this proof, and for most of the time it might seem like we're fiddling with unrelated results and functions. By the end, we'll tie what we're doing together to show that: .     First, consider the function .  Find a Taylor series representation for this function.    Try using the fact that: Can you divide by ?      We're going to consider this function again, but in a different form. We're going to think about this infinite polynomial, but we'll try to write it by thinking about the factors that we expect to see, specifically when we think of the zeros of the function.  So first, note that the zeros of this function, must occur when . What are the -values that make ?      We'll use these zeros to write out the function's factors, but we're also going to make use of the fact that . This means that if is a zero of the function, then the corresponding factor should be written as . So, if are all zeros, then we should write the function as: Use the zeros of the function that you found earlier to write out the factors of this.       Note that we have pairs of factors that are in the form . This is hopefully a very recognizable factoring pattern! It's the difference of squares! What do you get when you multiply these?  This should allow you to write your factored function from above in a slightly different way, by combining the pairs of factors using this multiplication. What does this look like?      We are almost complete. We now have represented the function as an infinite sum and also as an infinite product We can note that the constant term is in each, since it is the product of all of the constant terms in the infinite product.  We know that the quadratic terms should be (from the infinite sum). Can you find what the quadratic term from the infinite product would be?    This should be the quadratic term in each factor multiplied by the constant term in each of the rest of the factors, summed together.      You should have shown that: What is the sum of ?      Can you use this same strategy to find our what the sum converges to?  Note that we're really asking what the degree 4 terms are in each representation of the function .    "
+},
+{
+  "id": "subsec-NormalDistribution-2",
+  "level": "2",
+  "url": "explore-PowerSeries.html#subsec-NormalDistribution-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "normal distribution "
+},
+{
+  "id": "def-StandardNormal",
+  "level": "2",
+  "url": "explore-PowerSeries.html#def-StandardNormal",
+  "type": "Definition",
+  "number": "9.5.2",
+  "title": "Standard Normal Distribution.",
+  "body": " Standard Normal Distribution   We say that a random variable follows the standard normal distribution when the mean or expected value of the random variable is 0, the variance of the random variable is 0, and the probability density function is: .   "
+},
+{
+  "id": "subsec-NormalDistribution-4",
+  "level": "2",
+  "url": "explore-PowerSeries.html#subsec-NormalDistribution-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Empirical Rule 68-95-99.7 "
+},
+{
+  "id": "exploration-NormalDistribution",
+  "level": "2",
+  "url": "explore-PowerSeries.html#exploration-NormalDistribution",
+  "type": "Exploration",
+  "number": "9.5.2",
+  "title": "Normal Distribution.",
+  "body": " Normal Distribution    Write an integral that represents the probability of a random variable with a normal distribution taking on a value up to 2 standard deviations above the mean.      Based on the Empirical Rule, what do you expect the value of this integral to be?      Construct a Taylor series representing the function .      In order to estimate your integral, we will need to antidifferentiate . This function does not have an elementary antiderivative , meaning we cannot express an antiderivative in terms of the traditional functions we have named and the traditional operations we have defined. Antidifferentiate your Taylor series representation of , and call this .      Evaluate your integral using this new representation an antiderivative, .      This is an alternating series, and so we can approximate this value to whatever degree of accuracy we'd like using .  How many terms do you need, in order to approximate this probability within 0.01?      Construct, evaluate, and approximate the integral representing the probability that a normally distributed random variable takes on a value between 1 and 1.5 standard deviations above the mean (using the same number of terms as above).    "
 },
 {
   "id": "app-CarnationLetter",
