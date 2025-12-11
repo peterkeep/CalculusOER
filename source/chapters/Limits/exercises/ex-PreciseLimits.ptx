@@ -1,0 +1,114 @@
+<exercises xml:id="ex-PreciseLimits">
+    <exercise>
+        <statement>
+            <p>
+                Consider the <m>\varepsilon-\delta</m> definition of a limit. What does <m>\varepsilon</m> represent? Connect it with the standard definition of a limit that we've been using. Similarly, what does <m>\delta</m> represent? Connect it with the standard definition of a limit we've been using.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Draw a picture of the following situations:
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    A function <m>f(x)</m> where if <m>0\lt |x-3|\lt 2</m> then <m>|f(x)+4|\lt 1</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    A function <m>g(x)</m> where if <m>0\lt |x+1|\lt \dfrac{1}{2}</m> then <m>|g(x)-6|\lt 2</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For the following, find <m>\delta</m> or <m>\varepsilon</m>. Include a sketch that illustrates the values you found with the function.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    For <m>f(x) = 3x+1</m>, if <m>0\lt |x-2|\lt \delta</m>, then <m>|f(x) - 7| \lt 1</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    For <m>g(x) = \sqrt{x+3}</m>, if <m>0\lt |x-6|\lt 5</m>, then <m>|g(x) - 3|\lt \varepsilon</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    For the function <m>f(x) = -3x+1</m>, explain how to find a value for <m>\delta</m> that corresponds with any <m>\varepsilon</m> so that when <m>0\lt |x-2|\lt \delta</m> we have <m>|f(x) +5|\lt \varepsilon</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Consider the open interval definition of a limit. What do <m>(c, d)</m> and <m>(p,q)</m> represent. Connect them to the standard definition of a limit that we've been using.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Draw a picture of the following situations:
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    A function <m>f(x)</m> with <m>a = 1</m> and <m>L = 8.5</m> where if <m>x</m> is in <m>(0,2)</m> then <m>f(x)</m> is in <m>(8,9)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    A function <m>g(x)</m> with <m>a = -4</m> and <m>L = 10</m> where if <m>x</m> is in <m>(-4.5, -3.5)</m> then <m>g(x)</m> is in <m>(9.8, 10.2)</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For the following, find values for <m>(c,d)exploration</m> or <m>(p,q)</m>. Include a sketch that illustrates the intervals you found with the function.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                     For <m>f(x) = 2x-1</m>, if <m>x</m> is in <m>(1, 2)</m>, then <m>f(x)</m> is in <m>(p, q)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    For <m>g(x) = x^3+1</m>, if <m>x</m> is in <m>(c, d)</m>, then <m>g(x)</m> is in <m>(8, 9)</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                For the function <m>f(x)=x^2+4</m>, explain how to find an interval <m>(c,d)</m> around <m>x=2</m> if we are given some interval <m>(p,q)</m> around <m>L=8</m> such that if <m>x</m> is in <m>(c,d)</m> then <m>f(x)</m> is in <m>(p,q)</m>.
+            </p>
+        </statement>
+    </exercise>
+</exercises>

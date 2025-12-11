@@ -1,0 +1,263 @@
+<section xml:id="explore-PowerSeries" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Exploration: Power Series</title>
+    <introduction>
+        <p>
+            We're going to use Taylor series a bit more here, and we'll look at two interesting problems: one a historical relic, and the other a modern statistical result.
+        </p>
+    </introduction>
+    <subsection xml:id="subsec-BaselProblem">
+        <title>The Basel Problem</title>
+        <p>
+            The Basel Problem is the name given to a problem about infinite series, solved by Leonard Euler. 
+                        
+        </p>
+        <theorem xml:id="thm-BaselProblem">
+            <title>Basel Problem</title>
+            <statement>
+                <p>
+                    The sum of reciprocal squares converges, and specifically:
+                    <me>
+                        \sum_{k=1}^\infty \frac{1}{k^2}=\frac{\pi^2}{6}
+                    </me>.
+                </p>
+            </statement>
+        </theorem>
+        <p>
+            This result was incredible at the time of its proof for two reasons:
+            <ol>
+                <li>
+                    <p>
+                        This was a longstanding question in mathematics! Mathematicians knew that this infinite series converged, but were stumped about what the value could be.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The proof of the result actually proved what a whole bunch of different <m>p</m>-series converged to.
+                    </p>
+                </li>
+            </ol>
+            Let's follow along with Euler's proof of this result! 
+        </p>
+        <exploration xml:id="exploration-BaselProblem">
+            <title>The Basel Problem</title>
+            <introduction>
+                <p>
+                    We're going to follow along this proof, and for most of the time it might seem like we're fiddling with unrelated results and functions. By the end, we'll tie what we're doing together to show that:
+                    <me>
+                        \sum_{k=1}^\infty \frac{1}{k^2}=\frac{\pi^2}{6}
+                    </me>.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        First, consider the function <m>\displaystyle f(x) = \begin{cases} \dfrac{\sin(x)}{x} \amp \text{for } x\neq 0\\ 1 \amp \text{for }x=0\end{cases}</m>.
+                    </p>
+                    <p>
+                        Find a Taylor series representation for this function.
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        Try using the fact that:
+                        <md>
+                            <mrow>\sin(x) \amp = \sum_{k=1}^\infty \frac{(-1)^k x^{2k+1}}{(2k+1)!} </mrow>
+                            <mrow> \amp = x - \frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+-...</mrow>
+                        </md>
+                        Can you divide by <m>x</m>?
+                    </p>
+                </hint>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        We're going to consider this function again, but in a different form. We're going to think about this infinite polynomial, but we'll try to write it by thinking about the factors that we expect to see, specifically when we think of the zeros of the function.
+                    </p>
+                    <p>
+                        So first, note that the zeros of this function, <m>\dfrac{\sin(x)}{x}</m> must occur when <m>\sin(x)=0</m>. What are the <m>x</m>-values that make <m>\sin(x)=0</m>? 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        We'll use these zeros to write out the function's factors, but we're also going to make use of the fact that <m>f(0)=1</m>. This means that if <m>x=c</m> is a zero of the function, then the corresponding factor should be written as <m>\left(1-\dfrac{x}{c}\right)</m>. So, if <m>c_1, c_2, c_3, c_4, ...</m> are all zeros, then we should write the function as:
+                        <me>
+                            f(x)=\left(1-\frac{x}{c_1}\right)\left(1-\frac{x}{c_2}\right)\left(1-\frac{x}{c_3}\right)\left(1-\frac{x}{c_4}\right)...
+                        </me>
+                        Use the zeros of the <m>\dfrac{\sin(x)}{x}</m> function that you found earlier to write out the factors of this.
+                    </p>
+                    <interactive platform="doenetml" width="95%" aspect="1:1">
+                        <slate surface="doenetml">
+                            <xi:include parse="text" href="./doenet/BaselProblemZeros.xml"/>
+                        </slate>
+                    </interactive>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Note that we have pairs of factors that are in the form <m>\left(1-\dfrac{x}{c}\right)\left(1+\dfrac{x}{c}\right)</m>. This is hopefully a very recognizable factoring pattern! It's the difference of squares! What do you get when you multiply these?
+                    </p>
+                    <p>
+                        This should allow you to write your factored function from above in a slightly different way, by combining the pairs of factors using this multiplication. What does this look like?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        We are almost complete. We now have represented the function 
+                        <me>f(x) \begin{cases} \dfrac{\sin(x)}{x} \amp \text{for } x\neq 0\\ 1 \amp \text{for }x=0\end{cases} </me>
+                        as an infinite sum
+                        <me>
+                            1-\frac{x^2}{3!}+\frac{x^4}{5!}-\frac{x^6}{7!}+-...
+                        </me>
+                        and also as an infinite product
+                        <me>
+                            \left(1-\frac{x^2}{\pi^2}\right)\left(1-\frac{x^2}{4\pi^2}\right)\left(1-\frac{x^2}{9\pi^2}\right)...
+                        </me>
+                        We can note that the constant term is <m>1</m> in each, since it is the product of all of the constant terms in the infinite product.
+                    </p>
+                    <p>
+                        We know that the quadratic terms should be <m>-\frac{x^2}{6}</m> (from the infinite sum). Can you find what the quadratic term from the infinite product would be?
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        This should be the quadratic term in each factor multiplied by the constant term in each of the rest of the factors, summed together.
+                    </p>
+                </hint>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        You should have shown that:
+                        <me>
+                            -\frac{x^2}{6} = -\frac{x^2}{\pi^2} - \frac{x^2}{4\pi^2} - \frac{x^2}{9\pi^2} - ...
+                        </me>
+                        What is the sum of <m>1 + \dfrac{1}{4} + \dfrac{1}{9} + ... \dfrac{1}{k^2}+...</m>?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Can you use this same strategy to find our what the sum <m>\displaystyle \sum_{k=1}^\infty \frac{1}{k^4}</m> converges to?
+                    </p>
+                    <p>
+                        Note that we're really asking what the degree 4 terms are in each representation of the function <m>f(x)</m>.
+                    </p>
+                </statement>
+            </task>
+        </exploration>  
+    </subsection>
+    <subsection xml:id="subsec-NormalDistribution">
+        <title>The Normal Distribution</title>
+        <p>
+            The <term>normal distribution</term> (what we typically think of when we imagine a <q>bell curve</q>) is very important in the study of probability and statistics.
+        </p>
+        <definition xml:id="def-StandardNormal">
+            <title>Standard Normal Distribution</title>
+            <statement>
+                <p>
+                    We say that a random variable follows the <term>standard normal distribution</term> when the mean or expected value of the random variable is 0, the variance of the random variable is 0, and the probability density function is:
+                    <me>
+                        f(x)=\frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}
+                    </me>.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            There are a lot of technical details behind some of these terms, but we won't concern ourselves with it too much. For now, we'll state two facts:
+            <ol>
+                <li>
+                    <p>
+                        We use an integral to represent probability. For instance, the probability that a random variable will take on a value that is up to 1 standard deviation above the mean is:
+                        <me>
+                            \frac{1}{\sqrt{2\pi}}\int_{x=0}^{x=1}  e^{-\frac{x^2}{2}}\;dx
+                        </me>.
+                        We can change the limits of integration to change the range of values that we are concerned with.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The <term>Empirical Rule</term>, or the <term>68-95-99.7</term> rule states that:
+                        <ul>
+                            <li>
+                                <p>
+                                    About 68% of the values will be within 1 standard deviation of the mean (between <m>x=-1</m> and <m>x=1</m>).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    About 95% of the values will be within 2 standard deviations of the mean (between <m>x=-2</m> and <m>x=2</m>).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Almost all (about 99.7%) of the values will be within 3 standard deviations of the mean (between <m>x=-3</m> and <m>x=3</m>).
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <exploration xml:id="exploration-NormalDistribution">
+            <title>Normal Distribution</title>
+            <task>
+                <statement>
+                    <p>
+                        Write an integral that represents the probability of a random variable with a normal distribution taking on a value up to 2 standard deviations above the mean.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Based on the Empirical Rule, what do you expect the value of this integral to be?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Construct a Taylor series representing the function <m>e^{-\frac{x^2}{2}}</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        In order to estimate your integral, we will need to antidifferentiate <m>e^{-\frac{x^2}{2}}</m>. This function does not have an <term>elementary antiderivative</term>, meaning we cannot express an antiderivative in terms of the traditional functions we have named and the traditional operations we have defined. Antidifferentiate your Taylor series representation of <m>e^{-\frac{x^2}{2}}</m>, and call this <m>F(x)</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Evaluate your integral using this new representation an antiderivative, <m>F(x)</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        This is an alternating series, and so we can approximate this value to whatever degree of accuracy we'd like using <xref ref="thm-ApproximatingAlternating" text="type-global-title"/>.
+                    </p>
+                    <p>
+                        How many terms do you need, in order to approximate this probability within 0.01?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Construct, evaluate, and approximate the integral representing the probability that a normally distributed random variable takes on a value between 1 and 1.5 standard deviations above the mean (using the same number of terms as above).
+                    </p>
+                </statement>
+            </task>
+        </exploration>
+    </subsection>
+</section>

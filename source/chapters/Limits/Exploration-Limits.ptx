@@ -1,0 +1,255 @@
+<section xml:id="explore-Limits" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Exploration: Limits</title>
+    <introduction>
+        <p>
+            We're going to return to the definition of the <xref ref="def-Limit" text="title"/>, and try to add some more precision to the way that we talk about these limits. We'll recreate the definition, without some of the ambiguous terminology, and then explore the new definition a bit, in order to get a good feel for what this means. 
+        </p>
+        <p>
+            By the end of this exploration, we should have a pretty good understanding of what a limit is, it should match our intuition that we've built, and we should see a path that we <em>could</em> walk to investigate how these limit properties and results that we've talked about could be described.
+        </p>
+    </introduction>
+    <subsection xml:id="subsec-PreciseLimits">
+        <title>Precise Definition of Limits</title>
+        <p>
+            What are the areas in the definition of a limit where we need to add precision?
+        </p>
+        <exploration xml:id="exploration-PreciseLimits1">
+            <title>A First Function to Think About</title>
+            <introduction>
+                <p>
+                    Let's consider the function <m>f(x)=\sqrt{x}</m>. We're going to mostly be interested in the <m>x</m>-values around 9, since we'll be investigating <m>\displaystyle\lim_{x\to 9}\sqrt{x}</m>. We know that the <m>y</m>-value outputs of <m>f(x)</m> are going to be around 3, giving us:
+                    <me>
+                        \lim_{x\to 9} \sqrt{x}=3
+                    </me>.
+                    Now we're going to perform some tasks that will hopefully help us add some precision to our definition of a limit. You can use the graph and inputs below while you work.
+                </p>
+                <interactive platform="doenetml" width="90%">
+                    <slate surface="doenetml">
+                        <xi:include parse="text" href="./doenet/PreciseLimits-sqrt(x).xml"/>
+                    </slate>
+                </interactive>
+
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        We want to come up with points on the graph of <m>f(x)</m> whose <m>y</m>-values are within the interval <m>(2,4)</m>. Can you find an interval of <m>x</m>-values around <m>x=9</m> where the function outputs <m>f(x)</m> are all in the interval <m>(2,4)</m>?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Can you describe this in terms of distance? How far can <m>x</m>-values be from <m>x=9</m> where the corresponding <m>f(x)</m> values are all in <m>(2,4)</m>?
+                    </p>
+                    <p>
+                        Your answer should fill in the blank in the following sentence:
+                    </p>
+                    <p>
+                        <q>If I construct an interval of <m>x</m>-values that are within <fillin characters="5" /> units of <m>x=9</m>, then the corresponding function outputs will all be within <m>(2,4)</m>.</q>
+                    </p>
+                    <p>
+                        Note that another way of describing the interval, <m>(2,4)</m> is to say that the function outputs are all within 1 unit of <m>y=3</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Repeat this process, but for the interval <m>(2.9, 3.1)</m>. Can you find an interval of <m>x</m>-values around <m>x=9</m> where the function outputs <m>f(x)</m> are all in the interval <m>(2.9,3.1)</m>?
+                    </p>
+                </statement>
+            </task>
+             <task>
+                <statement>
+                    <p>
+                        Can you describe this in terms of distance? How far can <m>x</m>-values be from <m>x=9</m> where the corresponding <m>f(x)</m> values are all in <m>(2.9,3.1)</m>?
+                    </p>
+                    <p>
+                        Your answer should fill in the blank in the following sentence:
+                    </p>
+                    <p>
+                        <q>If I construct an interval of <m>x</m>-values that are within <fillin characters="5" /> units of <m>x=9</m>, then the corresponding function outputs will all be within 0.1 units of <m>y=3</m>.</q>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Come up with an even smaller interval. Change the distance between the function outputs and <m>y=3</m> to something smaller than 0.1. Construct a new target interval of <m>y</m>-values, and see if you can find an interval of <m>x</m>-values such that all of the function outputs are in your target interval.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Have you convinced yourself that you can always do this? Do you think it really matters what the target interval of <m>y</m>-values is? Can you <em>always</em> find an interval of <m>x</m>-values around <m>x=9</m> (or <m>x</m>-values that are some non-zero distance from <m>x=9</m>) where the outputs are in within that target distance from <m>y=3</m>?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Let's formalize this: If <m>\varepsilon</m> is some real number with <m>\varepsilon\gt 0</m>, then can you find an interval of <m>x</m>-values around <m>x=9</m> where the function outputs <m>f(x)</m> are all in the interval <m>\left( 3-\varepsilon , 3+\varepsilon \right)</m>?
+                    </p>
+                </statement>
+            </task>
+             <task>
+                <statement>
+                    <p>
+                        Can you describe this in terms of distance? How far can <m>x</m>-values be from <m>x=9</m> where the corresponding <m>f(x)</m> values are all in <m>\left( 3-\varepsilon , 3+\varepsilon \right)</m>?
+                    </p>
+                    <p>
+                        Your answer should fill in the blank in the following sentence:
+                    </p>
+                    <p>
+                        <q>If I construct an interval of <m>x</m>-values that are within <fillin characters="7" /> units of <m>x=9</m>, then the corresponding function outputs will all be within <m>\varepsilon</m> units of <m>y=3</m>.</q>
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        Note that your distance is going to be some function of <m>\varepsilon</m>.
+                    </p>
+                </hint>
+            </task>
+        </exploration>
+
+        <exploration xml:id="exploration-PreciseLimits2">
+            <title>A Linear Function</title>
+            <introduction>
+                <p>
+                    We'll try this again, but with a new function. This will change a bit of how we think about constructing our intervals. Consider the function <m>g(x)=\dfrac{x}{4}+3</m>. We're going to mostly be interested in the <m>x</m>-values around -2, since we'll be investigating: 
+                    <me>\lim_{x\to-2} \left(\frac{x}{4}+3\right) = \frac{5}{2}</me>.
+                </p>
+                <p>
+                    You can, again, use the graph and inputs below while you work.
+                </p>
+                <interactive platform="doenetml" width="90%">
+                    <slate surface="doenetml">
+                        <xi:include parse="text" href="./doenet/PreciseLimits-Linear.xml"/>
+                    </slate>
+                </interactive>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        We want to come up with points on the graph of <m>g(x)</m> whose <m>y</m>-values are within the interval <m>(2,3)</m>. Can you find an interval of <m>x</m>-values around <m>x=-2</m> where the function outputs <m>g(x)</m> are all in the interval <m>(2,3)</m>?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Can you describe this in terms of distance? How far can <m>x</m>-values be from <m>x=-2</m> where the corresponding <m>g(x)</m> values are all in <m>(2,3)</m>?
+                    </p>
+                    <p>
+                        Your answer should fill in the blank in the following sentence:
+                    </p>
+                    <p>
+                        <q>If I construct an interval of <m>x</m>-values that are within <fillin characters="5" /> units of <m>x=-2</m>, then the corresponding function outputs will all be within <m>(2,3)</m>.</q>
+                    </p>
+                    <p>
+                        Note that another way of describing the interval, <m>(2,3)</m> is to say that the function outputs are all within <m>\dfrac{1}{2}</m> unit of <m>y=\dfrac{5}{2}</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Repeat this process, but for the interval <m>\left(\dfrac{19}{8}, \dfrac{21}{8}\right)</m>. Can you find an interval of <m>x</m>-values around <m>x=-2</m> where the function outputs <m>g(x)</m> are all in the interval <m>\left(\dfrac{19}{8}, \dfrac{21}{8}\right)</m>?
+                    </p>
+                </statement>
+            </task>
+             <task>
+                <statement>
+                    <p>
+                        Can you describe this in terms of distance? How far can <m>x</m>-values be from <m>x=-2</m> where the corresponding <m>g(x)</m> values are all in <m>\left(\dfrac{19}{8}, \dfrac{21}{8}\right)</m>?
+                    </p>
+                    <p>
+                        Your answer should fill in the blank in the following sentence:
+                    </p>
+                    <p>
+                        <q>If I construct an interval of <m>x</m>-values that are within <fillin characters="5" /> units of <m>x=-2</m>, then the corresponding function outputs will all be within <m>\frac{1}{8}</m> unit of <m>y=-2</m>.</q>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        If <m>\varepsilon</m> is any real number with <m>\varepsilon\gt 0</m>, then can you find an interval of <m>x</m>-values around <m>x=-2</m> where the function outputs <m>g(x)</m> are all in the interval <m>\left(\dfrac{5}{2}-\varepsilon, \dfrac{5}{2}+\varepsilon\right)</m>?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Can you describe this in terms of distance? How far can <m>x</m>-values be from <m>x=-2</m> where the corresponding <m>f(x)</m> values are all in <m>\left(\dfrac{5}{2}-\varepsilon, \dfrac{5}{2}+\varepsilon\right)</m>?
+                    </p>
+                </statement>
+            </task>
+        </exploration>
+        <p>
+            Our goal, now, is to summarize what we've done.
+            <ul>
+                <li>
+                    <p>
+                        We built a system to talk about <m>y</m>-values that are <q>arbitrarily close the single, real number, <m>L</m>.</q> We constructed an interval, <m>(L-\varepsilon, L+\varepsilon)</m> for any <m>\varepsilon\gt 0</m>.
+                    </p>
+                    <p>
+                        We also thought about this in terms of distance, by considering the <m>y</m>-values that were within <m>\varepsilon</m> units of <m>y=L</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We found a way to talk about <m>x</m>-values being <q>sufficiently close to, but not equal to, <m>a</m>.</q> We constructed an interval of <m>x</m>-values <em>around</em> <m>x=a</m>, and then considered the function outputs from those <m>x</m>-values. We should clarify that we really are considering the function outputs from all of these <m>x</m>-values in the interval <em>except</em> <m>x=a</m>.
+                    </p>
+                    <p>
+                        We also talked about this in terms of distance! We want to construct <m>x</m>-values that are some non-zero distance away from <m>x=a</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We tried to come up with a way of describing this interval of <m>x</m>-values<mdash/>whose function outputs (except <m>f(a)</m>) are all guaranteed to be in <m>(L-\varepsilon, L+\varepsilon)</m><mdash/>using a kind of function of <m>\varepsilon</m>. That way, we can know that we can repeat this process for <em>any</em> <m>\varepsilon</m> measure of <q>closeness.</q>
+                    </p>
+                    <p>
+                        When we refer to that function of <m>\varepsilon</m> to give us the distance for the <m>x</m>-values, we often use the symbol, <m>\delta</m>. Sometimes people call this <m>\delta_{\varepsilon}</m> as a way of reminding ourselves that it depends on the value of <m>\varepsilon</m>.
+                    </p>
+                </li>
+            </ul>
+        </p>
+        <p>
+            This gives us two definitions that we can think of as a way of adding precision to the idea of a limit.
+        </p>
+        <definition xml:id="def-PreciseLimitInterval">
+            <title>(Open Interval) Limit of a Function</title>
+            <statement>
+                <p>
+                    Suppose that <m>f(x)</m> is a function that exists for all <m>x</m>-values in some open interval around and containing <m>a</m>, except possibly at <m>x=a</m> itself. We say that
+                    <me>
+                        \lim_{x\to a} f(x)=L
+                    </me>
+                    if, for any open interval <m>(p,q)</m> of <m>y</m>-values containing the single, real number <m>L</m>, there is some corresponding open interval <m>(c, d)</m> around <m>x=a</m> (that is, <m>c\lt a\lt d</m>) such that for all <m>x</m>-values in <m>(c,d)</m> with <m>x\neq a</m>, the function output <m>f(x)</m> is in <m>(p,q)</m>.
+                </p>
+            </statement>
+        </definition>
+        <definition xml:id="def-PreciseLimitEpsDelta">
+            <title>(Epsilon-Delta) Limit of a Function</title>
+            <statement>
+                <p>
+                    Suppose that <m>f(x)</m> is a function that exists for all <m>x</m>-values in some open interval around and containing <m>a</m>, except possibly at <m>x=a</m> itself. We say that
+                    <me>
+                        \lim_{x\to a} f(x)=L
+                    </me>
+                    if <m>L</m> is some single, real number, and for any real number <m>\varepsilon \gt 0</m>, there is a corresponding <m>\delta_\varepsilon \gt0</m> such that <m>|f(x)-L|\lt \varepsilon</m> whenever <m>0\lt|x-a|\lt \delta_\varepsilon</m>.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            Both of these definitions are very important to the further study of calculus, but especially important it to use these definitions of limits to think about continuity.
+        </p>
+        <p>
+            We can say that a function is continuous at some point if every open interval in the range of the function around the <m>y</m>-value of the point comes from an open interval in the domain of the function around the <m>x</m>-value of the point. This is a very useful and important definition for the study of <term>topology</term>, and a nice way of generalizing the concept of continuity.
+        </p>
+    </subsection>
+    <xi:include href="./exercises/ex-PreciseLimits.ptx" />
+</section>

@@ -1,0 +1,81 @@
+<setup>
+  <styleDefinitions>
+    <styleDefinition styleNumber="7" markerColor="#07aa60" 
+      markerStyle="square" markerSize="5" fillColor="#07aa60" 
+      lineColor="#07aa60" lineStyle="solid" lineWidth="3" />
+   </styleDefinitions>
+  <function name="f">sqrt(x)</function>
+  <function name="fInv" domain="[0,infinity)">x^2</function>
+  <function name="axis">0</function>
+  <regionBetweenCurves name="yTarget"
+    boundaryValues="$c $d"
+    flipFunctions styleNumber="6">
+    $fInv
+    $axis
+  </regionBetweenCurves>
+  <regionBetweenCurves name="xInt"
+    boundaryValues="$a $b"
+    styleNumber="3">
+    $f
+    $axis
+  </regionBetweenCurves>
+  <regionBetweenCurves name="yInt"
+    boundaryValues="$$f($a) $$f($b)"
+    flipFunctions styleNumber="$style">
+    $fInv
+    $axis
+  </regionBetweenCurves>
+  <number name="style">
+    <conditionalContent>
+      <case condition="($c <= $$f($a) <= $d) and ($c <= $$f($b) <= $d)">
+        7
+      </case>
+      <case>
+        2
+      </case>
+    </conditionalContent>
+  </number>
+</setup>
+
+<p><em>Instructions:</em> Input target the interval of <m>y</m>-value outputs. Then, try to find an interval of <m>x</m>-values where all of the <m>f(x)</m> outputs are within your target interval.</p>
+
+<p><m>f(x)</m> outputs must be in the interval: <m>\big(</m><mathInput name="c" prefill="2"/>,<mathInput name="d" prefill="4"/><m>\big)</m>  </p>
+
+<graph xMin="-0.5" xMax="20" yMin="-1" yMax="6" identicalAxisScales
+  size="large" fixAxes>
+  $f
+  $yTarget
+  <point styleNumber="6">($a, $$axis($a))</point>
+  <point styleNumber="6">($b, $$axis($b))</point>
+  $xInt
+  <conditionalContent>
+    <case condition="$a < 9 and $b > 9">
+      $yInt
+    </case>
+  </conditionalContent>
+</graph>
+
+<p>Try <m>x</m>-values in the interval: <m>\big(</m><mathInput name="a" prefill="0"/>,<mathInput name="b" prefill="1"/><m>\big)</m>  </p>
+
+<conditionalContent>
+  <case condition="$a > 9 or $b < 9">
+    <p>
+      Start by constructing an interval <em>around</em> <m>x=9</m>, and then we can display the corresponding <m>y</m>-values.
+    </p>
+  </case>
+  <case condition="($$f($a) = $c and $$f($b) = $d) or ($$f($b) = $c and $$f($c)=$d)">
+    <p>
+      Congratulations! You found an interval of <m>x</m>-values around <m>x=9</m> such that all of the function outputs, <m>f(x)</m>, are within the interval <m>($c, $d)</m>! The function outputs for your interval filled the whole interval <m>($c, $d)</m>!
+    </p>
+  </case>
+  <case condition="($c <= $$f($a) <= $d) and ($c <= $$f($b) <= $d)">
+    <p>
+      Congratulations! You found an interval of <m>x</m>-values around <m>x=9</m> such that all of the function outputs, <m>f(x)</m>, are within the interval <m>($c, $d)</m>! The function outputs for your interval were all actually in the interval <m>($$f($a), $$f($b))</m>, which still counts!
+    </p>
+  </case>
+  <case condition="$style=2">
+    <p>
+      Hm...These points don't look like they produce <m>f(x)</m> values within the interval <m>($c, $d)</m>. Try changing the interval of <m>x</m>-values you're using.
+    </p>
+  </case>
+</conditionalContent>

@@ -1,0 +1,53 @@
+<section xml:id="explore-ApplicationsDerivatives" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Exploration: Applications of Derivatives</title>
+    <p>
+        We have a lot of practice with calculating derivatives, and we hopefully have a good idea of how we might interpret what this derivative is: a function that tells us slopes of a line tangent to a curve at a specific <m>x</m>-value.
+    </p>
+    <p>
+        Let's think about this idea.
+    </p>
+    <exploration xml:id="exploration-AreaTriangle">
+        <title>A Tangent Triangle</title>
+        <introduction>
+            <p>
+                Let's consider the function <m>f(x)=\dfrac{1}{x}</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Consider a point on this curve at some <m>x</m>-value <m>x=a</m> where <m>a\gt 0</m>. Find the equation of the line tangent to <m>f(x)</m> at this point.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    We can graph this line, as well as the function <m>f(x)</m>.
+                </p>
+                <interactive platform="doenetml" width="100%" aspect="1:1">
+                    <slate surface="doenetml">
+                        <xi:include parse="text" href="./doenet/TriangleTangent.xml"/>
+                    </slate>
+                </interactive>
+                <p>
+                    Find the area of the triangle formed by the tangent line and the axes.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Hopefully you found something surprising about this area. Show that this surprising fact also occurs for the function <m>g(x)=\dfrac{k}{x}</m>, where <m>k\gt 0</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Are there other functions that have this interesting property about the area of a triangle formed by the tangent line and the axes? What are some requirements that these functions would need to have?
+                </p>
+            </statement>
+        </task>
+    </exploration>
+</section>
