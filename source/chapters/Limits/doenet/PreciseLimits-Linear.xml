@@ -27,7 +27,7 @@
   </regionBetweenCurves>
   <number name="style">
     <conditionalContent>
-      <case condition="($c <= $$g($a) <= $d) and ($c <= $$g($b) <= $d)">
+      <case condition="$a<-2<$b and ($c <= $$g($a) <= $d) and ($c <= $$g($b) <= $d)">
         7
       </case>
       <case>
@@ -48,34 +48,23 @@
   <point styleNumber="6">($a, $$axis($a))</point>
   <point styleNumber="6">($b, $$axis($b))</point>
   $xInt
-  <conditionalContent>
-    <case condition="$a < -2 and $b > -2">
-      $yInt
-    </case>
-  </conditionalContent>
+  $yInt
 </graph>
 
 <p>Try <m>x</m>-values in the interval: <m>\big(</m><mathInput name="a" prefill="-5.5"/>,<mathInput name="b" prefill="-4.5"/><m>\big)</m>  </p>
 
-<conditionalContent>
-  <case condition="$a > -2 or $b < -2">
-    <p>
-      Start by constructing an interval <em>around</em> <m>x=-2</m>, and then we can display the corresponding <m>y</m>-values.
-    </p>
-  </case>
-  <case condition="($$g($a) = $c and $$g($b) = $d) or ($$g($b) = $c and $$g($c)=$d)">
-    <p>
-      Congratulations! You found an interval of <m>x</m>-values around <m>x=9</m> such that all of the function outputs, <m>g(x)</m>, are within the interval <m>($c, $d)</m>! The function outputs for your interval filled the whole interval <m>($c, $d)</m>!
-    </p>
-  </case>
-  <case condition="($c <= $$g($a) <= $d) and ($c <= $$g($b) <= $d)">
-    <p>
-      Congratulations! You found an interval of <m>x</m>-values around <m>x=9</m> such that all of the function outputs, <m>g(x)</m>, are within the interval <m>($c, $d)</m>! The function outputs for your interval were all actually in the interval <m>($$g($a), $$g($b))</m>, which still counts!
-    </p>
-  </case>
-  <case condition="$style=2">
-    <p>
-      Hm...These points don't look like they produce <m>g(x)</m> values within the interval <m>($c, $d)</m>. Try changing the interval of <m>x</m>-values you're using.
-    </p>
-  </case>
-</conditionalContent>
+<feedback condition="$a >= $b">
+  Your interval is backwards! Oops!
+</feedback>
+
+<feedback condition="($a < $b) and ($a > -2 or $b < -2)">
+  Start by constructing an interval <em>around </em> <m>x=-2</m>, and then we can display the corresponding <m>y</m>-values.
+</feedback>
+
+<feedback condition="($a < -2 < $b) and (($c <= $$g($a) <= $d) and ($c <= $$g($b) <= $d))">
+  Congratulations! You found an interval of <m>x</m>-values around <m>x=-2</m> such that all of the function outputs, <m>g(x)</m>, are within the interval <m>($c, $d)</m>!
+</feedback>
+
+<feedback condition="($a < 2 $b) and (($$g($a) < $c and $b > -2) or ($$g($b) > $d and $c < -2))">
+  Hm...These points don't look like they produce <m>g(x)</m> values within the interval <m>($c, $d)</m>. Try changing the interval of <m>x</m>-values you're using.
+</feedback>
