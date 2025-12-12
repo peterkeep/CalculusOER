@@ -30,6 +30,25 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </xsl:text>
 </xsl:template>
 
+<xsl:template match="exploration" mode="tcb-style">
+    <xsl:text>
+        fonttitle=\bfseries,
+        colbacktitle=white,
+        attach boxed title to top left={yshift*=-\tcboxedtitleheight/2,xshift=4mm},
+        leftrule=2pt,
+        bottomrule=0pt,
+        rightrule=0pt,
+        titlerule=0pt,
+        toprule=0pt,
+        coltitle=black, boxed title style={colback=white, sharpish corners, boxrule=0pt},
+        sharpish corners,
+        colframe=DClightgreen, 
+        borderline north={2pt}{0pt}{DClightgreen},
+        borderline south={2pt}{0pt}{DClightgreen},
+        colback=white
+    </xsl:text>
+</xsl:template>
+
 <xsl:template match="example" mode="tcb-style">
     <xsl:text>
         fonttitle=\bfseries,
