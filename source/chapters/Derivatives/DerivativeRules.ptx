@@ -40,6 +40,7 @@
           <p>
             The coefficients for each term are generated from a very cool pattern, displayed below.
           </p>
+          
         </li>
       </ol>
     </p>
@@ -328,6 +329,14 @@
         <p>
           So we have shown that <m>\dfrac{d}{d\theta}(\sin(\theta)) = \cos(\theta)</m> and <m>\dfrac{d}{d\theta}(\cos(\theta)) = -\sin(\theta)</m> as we claimed.
         </p>
+        <p>
+          To see a clearer and more interactive version of this visual proof, see the figure below.
+        </p>
+        <interactive platform="doenetml" width="95%">
+        <slate surface="doenetml">
+            <xi:include parse="text" href="./doenet/TrigDerivatives.xml"/>
+        </slate>
+    </interactive>
       </proof>
     </theorem>
     <xi:include href="./activities/act-ExponentialDerivatives.ptx" />
