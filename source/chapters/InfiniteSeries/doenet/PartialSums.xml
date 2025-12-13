@@ -21,9 +21,9 @@
     <case condition="$k=$term">
       1
     </case>
-    <else>
+    <case>
       6
-    </else>
+    </case>
   </conditionalContent>
 </repeatForSequence>
   <!-- Sequence and Partial Sum -->
@@ -69,11 +69,11 @@
 </sideBySide>
 
 <sideBySide>
-  <graph xMin="-1" xMax="10.5" yMin="$aYMin-0.2" yMax="$aYMax+0.2" fixAxes>
+  <graph xMin="-1" xMax="10.5" yMin="$aYMin-0.2" yMax="$aYMax+0.2" fixAxes showBorder="false">
     $a
   </graph>
 
-  <graph xMin="-1" xMax="10.5" yMin="$SYMin-0.5" yMax="$SYMax+1" fixAxes>
+  <graph xMin="-1" xMax="10.5" yMin="$SYMin-0.5" yMax="$SYMax+1" fixAxes showBorder="false">
     $S
   </graph>
 </sideBySide>
