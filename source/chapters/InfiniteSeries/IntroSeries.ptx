@@ -117,6 +117,14 @@
         <mrow> \amp = S_{n-1}+a_n</mrow>
       </md>
     </p>
+    <p>
+      In order to further examine the connection between sequences and partial sums, let's look at an interactive example, where you can create the terms of a sequence (however you'd like) and examine the corresponding partial sums.
+    </p>
+    <interactive platform="doenetml" width="100%" aspect="1:2">
+        <slate surface="doenetml">
+            <xi:include parse="text" href="./doenet/PartialSums.xml"/>
+        </slate>
+    </interactive>
     <note xml:id="note-ExplicitFormulaPartialSums">
       <title>Finding Explicit Formulas</title>
       <p>
