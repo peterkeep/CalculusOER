@@ -300,6 +300,10 @@ textarea {
   padding: 0;
 }
 
+textarea {
+  height: 200px;
+}
+
 [type="checkbox"],
 [type="radio"],
 [type="range"] {
