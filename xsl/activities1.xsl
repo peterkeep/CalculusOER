@@ -36,6 +36,8 @@
 
 <xsl:template match="activity" mode="tcb-style">
     <xsl:text>
+        enhanced,
+        breakable,
         fonttitle=\large,
         colbacktitle=black!20, 
         colback=white, 
@@ -53,6 +55,8 @@
 
 <xsl:template match="exploration" mode="tcb-style">
     <xsl:text>
+        enhanced,
+        breakable,
         fonttitle=\large,
         colbacktitle=black!20, 
         colback=white, 
