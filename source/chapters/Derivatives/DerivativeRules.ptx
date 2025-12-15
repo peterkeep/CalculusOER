@@ -20,8 +20,8 @@
       </ol>
     </p>
   </introduction>
-  <subsection xml:id="subsec-DerivativesOfCommonFunctions">
-    <title>Derivatives of Common Functions</title>
+  <subsection xml:id="subsec-DerivativesOfPowerFunctions">
+    <title>Derivatives of Power Functions</title>
     <xi:include href="./activities/act-DerivativesOfPowerFunctions.ptx" />
     <p>
       There is a really nice theorem that helps to understand how the <m>(x+\Delta x)^n</m> multiplication goes (for different positive integer exponents, <m>n</m>) called the Binomial Theorem, but we won't introduce it here, fully. What we'll do, instead, is summarize the results:
@@ -256,7 +256,15 @@
         </p>
       </statement>
     </theorem>
-    
+    <p>
+      At this point, we have a pretty good handle on some really common function types: power functions of <m>x</m>. Let's look at some more functions that we'll use frequently.
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-DerivativesOfTrigExpFunctions">
+    <title>Derivatives of Trigonometric and Exponential Functions</title>
+    <p>
+      We'll start this off by thinking of the two foundational trigonometric functions, <m>\sin(x)</m> and <m>\cos(x)</m>.
+    </p>
     <xi:include href="./activities/act-TrigDerivatives.ptx" />
     
     <theorem xml:id="thm-TrigDerivatives">
@@ -339,6 +347,9 @@
     </interactive>
       </proof>
     </theorem>
+    <p>
+      We'll think about the other trigonometric functions a bit later, in <xref ref="sec-ProductQuotientRule"/>. Let's move on to another useful function, the exponential function <m>e^x</m>. 
+    </p>
     <xi:include href="./activities/act-ExponentialDerivatives.ptx" />
     <theorem xml:id="thm-ExponentialDerivative">
       <title>Derivative of the Exponential Function</title>
