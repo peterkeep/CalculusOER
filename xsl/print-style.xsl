@@ -14,7 +14,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="activity" mode="tcb-style">
     <xsl:text>
         fonttitle=\bfseries,
-        colbacktitle=DClightgreen!10, 
+        colbacktitle=DClightgreen!80, 
         coltitle=black, 
         leftrule=0.5mm,
         rightrule=0mm,
@@ -28,30 +28,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         breakable
     </xsl:text>
 </xsl:template>
-<!-- 
-<xsl:template match="activity" mode="tcb-style">
-    <xsl:text>
-        fonttitle=\bfseries,
-        colbacktitle=white,
-        attach boxed title to top left={yshift*=-\tcboxedtitleheight/2,xshift=4mm},
-        leftrule=2pt,
-        bottomrule=0pt,
-        rightrule=0pt,
-        titlerule=0pt,
-        toprule=0pt,
-        coltitle=black, boxed title style={colback=white, sharpish corners, boxrule=0pt},
-        sharpish corners,
-        colframe=DClightgreen, 
-        borderline north={2pt}{0pt}{DClightgreen},
-        borderline south={2pt}{0pt}{DClightgreen},
-        colback=white
-    </xsl:text>
-</xsl:template> -->
 
 <xsl:template match="exploration" mode="tcb-style">
     <xsl:text>
         fonttitle=\bfseries,
-        colbacktitle=DClightgreen!10, 
+        colbacktitle=DClightgreen!80, 
         coltitle=black, 
         leftrule=0.5mm,
         rightrule=0mm,
@@ -177,17 +158,18 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="aside" mode="tcb-style">
     <xsl:text>
-        empty,
-        frame engine=path,
         sharpish corners,
-        title={"Aside"},
-        attach boxed title to top left={yshift*=-\tcboxedtitleheight},
-        boxed title style={size=minimal, top=4pt, left=4pt},
-        borderline west={2pt}{-2pt}{DCyellow},
-        colframe=DCyellow!10,
+        colframe=DCyellow,
         colback=DCyellow!10,
-        fontupper=\footnotesize,
-        enhanced ,
+        colbacktitle=DCyellow!10, 
+        coltitle=DCyellow!10, 
+        leftrule=1.5mm,
+        rightrule=0mm,
+        titlerule=0mm,
+        toprule=0mm,
+        bottomrule=0mm,
+        sharpish corners,
+        enhanced,
         breakable
     </xsl:text>
 </xsl:template>
