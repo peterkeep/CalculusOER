@@ -42,7 +42,7 @@
     </conditionalContent>
   </math>
   <!-- Integral terms -->
-  <math name="uv" simplify="full"> $u $v</math>
+  <math name="uv" simplify="full"> ($u)($v)</math>
   <math name="vdu" simplify="full"> $v $du</math> 
 
 </setup>
@@ -50,7 +50,7 @@
 <p>
   <em>Instructions:</em> Consider the following integral. We'll perform integration by parts on it and explore how our selection of the parts might impact things.
 </p>
-<me>\int \left($f\right)$g \;dx</me>
+<me>\int \left($f\right)\left($g\right) \;dx</me>
 
 <p>
   Select your choice for <m>u</m> (the part that you'll differentiate) and <m>dv</m> (the part that you'll antidifferentiate).
@@ -84,7 +84,7 @@
 <p>
   When we apply integration by parts, we get:
   <md>
-    <mrow> \int $f $g\;dx \amp = uv-\int v\;du</mrow>
+    <mrow> \int \left($f\right) \left($g\right)\;dx \amp = uv-\int v\;du</mrow>
     <mrow> \amp =$uv- \int \left($vdu\right)\;dx</mrow>
   </md>
   Do you think this selection is reasonable? How would you antidifferentiate this new function in the integral part of the formula?
