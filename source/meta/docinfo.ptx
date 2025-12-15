@@ -38,6 +38,7 @@
     \usepackage{tikz, pgfplots}
     \usepackage{graphicx} 
     \usepackage{amsmath}
+    \tcbuselibrary{breakable}
     \usetikzlibrary{positioning,matrix,arrows} 
     \usetikzlibrary{shapes,decorations,shadows,fadings,patterns, angles, quotes} 
     \usetikzlibrary{decorations.markings}
