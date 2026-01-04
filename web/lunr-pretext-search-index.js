@@ -6532,7 +6532,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.9",
   "title": "Exploration: Infinite Series",
-  "body": " Exploration: Infinite Series   Interesting Infinity Series  We've seen a lot of infinite series examples, and we have a lot of tools for how to think about infinite series. Take a look at some more examples that are a bit strange to think about.   Interesting Infinite Series    Consider the series where is the function that returns the number of digits in the number (so and ), and is a real number.  For what values of does this series converge?      Consider the series where is the function that returns the th Fibbonacci number, and is a real number. As a reminder, the Fibbonacci sequence is: where .  For what values of does this series converge?       "
+  "body": " Exploration: Infinite Series   Interesting Infinite Series  We've seen a lot of infinite series examples, and we have a lot of tools for how to think about infinite series. Take a look at some more examples that are a bit strange to think about.   Interesting Infinite Series    Consider the series where is the function that returns the number of digits in the number (so and ), and is a real number.  For what values of does this series converge?      Consider the series where is the function that returns the th Fibbonacci number, and is a real number. As a reminder, the Fibbonacci sequence is: where .  For what values of does this series converge?       "
 },
 {
   "id": "exploration-InterestingSeries",
