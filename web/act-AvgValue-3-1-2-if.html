@@ -154,23 +154,28 @@ window.MathJax = {
     </conditionalContent>
   </label>
 </booleanInput>
-
-<feedback condition="$Check=false">
-  Move the horizontal line up or down until you think it is close to the average height of the function. Then, check your answer!
-</feedback>
-
-<feedback condition="$Check=true and abs($est.yintercept - $avg) <= 0.02">
-  You got it! This is very close to the average height of the function!
-</feedback>
-
-<feedback condition="$Check=true and abs($est.yintercept - $avg) < 0.1">
-  Close! Do you think you need to move the line higher or lower?
-</feedback>
-
-<feedback condition="$Check=true and abs($est.yintercept - $avg) >= 0.1">
-  Hm...try again! Do you think you need to move the line higher or lower?
-</feedback>
-
+<conditionalContent>
+  <case condition="$Check=false">
+    <p>
+      Move the horizontal line up or down until you think it is close to the average height of the function.
+    </p>
+  </case>
+  <case condition="abs($est.yintercept - $avg) <= 0.02">
+    <p>
+      You got it! This is very close to the average height of the function!
+    </p>
+  </case>
+  <case condition="abs($est.yintercept - $avg) < 0.1">
+    <p>
+      Close! Do you think you need to move the line higher or lower?
+    </p>
+  </case>
+  <else>
+    <p>
+      Hm...try again! Do you think you need to move the line higher or lower?
+    </p>
+  </else>
+</conditionalContent>
 <aside>
   <title>Hint!</title>
   <p>

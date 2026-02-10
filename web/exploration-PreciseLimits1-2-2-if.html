@@ -122,7 +122,7 @@ window.MathJax = {
   </regionBetweenCurves>
   <number name="style">
     <conditionalContent>
-      <case condition="($a < 9 < $b) and (($c <= $$f($a) <= $d) and ($c <= $$f($b) <= $d))">
+      <case condition="($c <= $$f($a) <= $d) and ($c <= $$f($b) <= $d)">
         7
       </case>
       <case>
@@ -143,26 +143,37 @@ window.MathJax = {
   <point styleNumber="6">($a, $$axis($a))</point>
   <point styleNumber="6">($b, $$axis($b))</point>
   $xInt
-  $yInt
+  <conditionalContent>
+    <case condition="$a < 9 and $b > 9">
+      $yInt
+    </case>
+  </conditionalContent>
 </graph>
 
 <p>Try <m>x</m>-values in the interval: <m>\big(</m><mathInput name="a" prefill="0"/>,<mathInput name="b" prefill="1"/><m>\big)</m>  </p>
 
-<feedback condition="$a >= $b">
-  Your interval is backwards! Oops!
-</feedback>
-
-<feedback condition="($a < $b) and ($a > 9 or $b < 9)">
-  Start by constructing an interval <em>around </em> <m>x=9</m>, and then we can display the corresponding <m>y</m>-values.
-</feedback>
-
-<feedback condition="($a < 9 < $b) and (($c <= $$f($a) <= $d) and ($c <= $$f($b) <= $d))">
-  Congratulations! You found an interval of <m>x</m>-values around <m>x=9</m> such that all of the function outputs, <m>f(x)</m>, are within the interval <m>($c, $d)</m>! 
-</feedback>
-
-<feedback condition="($a < 9 <$b) and (($$f($a) < $c) or ($$f($b) > $d))">
-  Hm...These points don't look like they produce <m>f(x)</m> values within the interval <m>($c, $d)</m>. Try changing the interval of <m>x</m>-values you're using.
-</feedback>
+<conditionalContent>
+  <case condition="$a > 9 or $b < 9">
+    <p>
+      Start by constructing an interval <em>around</em> <m>x=9</m>, and then we can display the corresponding <m>y</m>-values.
+    </p>
+  </case>
+  <case condition="($$f($a) = $c and $$f($b) = $d) or ($$f($b) = $c and $$f($c)=$d)">
+    <p>
+      Congratulations! You found an interval of <m>x</m>-values around <m>x=9</m> such that all of the function outputs, <m>f(x)</m>, are within the interval <m>($c, $d)</m>! The function outputs for your interval filled the whole interval <m>($c, $d)</m>!
+    </p>
+  </case>
+  <case condition="($c <= $$f($a) <= $d) and ($c <= $$f($b) <= $d)">
+    <p>
+      Congratulations! You found an interval of <m>x</m>-values around <m>x=9</m> such that all of the function outputs, <m>f(x)</m>, are within the interval <m>($c, $d)</m>! The function outputs for your interval were all actually in the interval <m>($$f($a), $$f($b))</m>, which still counts!
+    </p>
+  </case>
+  <case condition="$style=2">
+    <p>
+      Hm...These points don't look like they produce <m>f(x)</m> values within the interval <m>($c, $d)</m>. Try changing the interval of <m>x</m>-values you're using.
+    </p>
+  </case>
+</conditionalContent>
 
                     </script>
 </div></div>

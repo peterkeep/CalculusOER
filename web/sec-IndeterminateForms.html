@@ -101,15 +101,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.7';
+eBookConfig.runestone_version = '7.11.13';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c2757fc695bc848c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
+<script src="_static/prefix-runtime.0d5f811896ddeac1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.e2abc79debce15fd.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -247,8 +247,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfPowerFunctions" class="internal"><span class="title">Derivatives of Power Functions</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfTrigExpFunctions" class="internal"><span class="title">Derivatives of Trigonometric and Exponential Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfCommonFunctions" class="internal"><span class="title">Derivatives of Common Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativeProperties" class="internal"><span class="title">Some Properties of Derivatives in General</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DerivativeRules.html#ex-DerivativeRules" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
@@ -645,7 +644,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="explore-Series.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Exploration: Infinite Series</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Series.html#subsec-InterestingSeries" class="internal"><span class="title">Interesting Infinite Series</span></a></div></li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Series.html#subsec-InterestingSeries" class="internal"><span class="title">InterestingSeries</span></a></div></li></ul>
 </li>
 </ul>
 </li>
@@ -1018,9 +1017,33 @@ t^2 - t-5 \amp \text{when } t\gt 4
 <article class="task exercise-like" id="exercises--2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="exercises--2-2-1-1">Confirm that this limit has an indeterminate form.<div class="autopermalink" data-description="Paragraph"><a href="#exercises--2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises--2-2-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 3} \left(\frac{2x^2-5x-3}{x^2+5x-24}\right) \stackrel{?}{\to} \frac{0}{0}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises--2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.a.1"><a href="#exercises--2-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 2.a"><a href="#exercises--2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="exercises--2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="exercises--2-3-1-1">Evaluate the limit.<div class="autopermalink" data-description="Paragraph"><a href="#exercises--2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises--2-3-2-1">
+<div class="displaymath process-math" id="exercises--2-3-2-1-1">
+\begin{align*}
+\lim_{x\to 3} \left(\frac{2x^2-5x-3}{x^2+5x-24}\right) \amp = \lim_{x\to 3} \frac{(x-3)(2x+1)}{(x-3)(x+8)} \\
+\amp = \lim_{x\to 3} \frac{(2x+1)}{(x+8)}\\
+\amp = \frac{7}{11}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises--2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.b.1"><a href="#exercises--2-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 2.b"><a href="#exercises--2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="exercises--2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="exercises--2-4-1-1">When you were evaluating the limit, you likely “cancelled” a factor of <span class="process-math">\((x-3)\)</span> from the numerator and denominator. Why might you have known, before factoring anything, that <span class="process-math">\((x-3)\)</span> would be a factor shared in the numerator and denominator?<div class="autopermalink" data-description="Paragraph"><a href="#exercises--2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="exercises--2-4-1-2">For instance, how did you know it wasn’t going to be <span class="process-math">\((x-4)\)</span> or <span class="process-math">\((x+1)\)</span> or something else?<div class="autopermalink" data-description="Paragraph"><a href="#exercises--2-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1038,9 +1061,34 @@ t^2 - t-5 \amp \text{when } t\gt 4
 <article class="task exercise-like" id="exercises--3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="exercises--3-2-1-1">Confirm that this limit has an indeterminate form.<div class="autopermalink" data-description="Paragraph"><a href="#exercises--3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises--3-2-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 4}\left(\frac{\frac{2}{x+1} - \frac{x-2}{5}}{x-4}\right) \stackrel{?}{\to} \frac{0}{0}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises--3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.a.1"><a href="#exercises--3-2-2" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 3.a"><a href="#exercises--3-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="exercises--3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="exercises--3-3-1-1">Evaluate the limit.<div class="autopermalink" data-description="Paragraph"><a href="#exercises--3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises--3-3-2-1">
+<div class="displaymath process-math" id="exercises--3-3-2-1-1">
+\begin{align*}
+\lim_{x\to 4}\left(\frac{\frac{2}{x+1} - \frac{x-2}{5}}{x-4}\right)\amp  = \lim_{x\to 4} \left( \frac{\frac{10-(x^2-x-2)}{5(x+1)}}{x-4}\right)\\
+\amp =  \lim_{x\to 4} \left(\frac{-(x-4)(x+3)}{5(x+1)}\right)\left(\frac{1}{x-4}\right)\\
+\amp = \lim_{x\to 4} \left(-\frac{x+3}{5(x+1)}\right) \\
+\amp = -\frac{7}{25}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises--3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.b.1"><a href="#exercises--3-3-2" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 3.b"><a href="#exercises--3-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><article class="task exercise-like" id="exercises--3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="exercises--3-4-1-1">When you were evaluating the limit, you likely “cancelled” a factor of <span class="process-math">\((x-4)\)</span> from the numerator and denominator. Why might you have known, before factoring anything, that <span class="process-math">\((x-4)\)</span> would be a factor shared in the numerator and denominator?<div class="autopermalink" data-description="Paragraph"><a href="#exercises--3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="exercises--3-4-1-2">For instance, how did you know it wasn’t going to be <span class="process-math">\((x-3)\)</span> or <span class="process-math">\((x+1)\)</span> or something else?<div class="autopermalink" data-description="Paragraph"><a href="#exercises--3-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1052,38 +1100,92 @@ t^2 - t-5 \amp \text{when } t\gt 4
 <div class="para" id="exercises--4-2-1-1">
 <span class="process-math">\(\displaystyle \lim_{x\to 2} \left(\frac{x^2-4}{x^2+3x-10}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercises--4-2-2-1">
+<span class="process-math">\(\displaystyle \lim_{x\to 2} \left(\frac{x^2-4}{x^2+3x-10}\right) = \frac{4}{7}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.a.1"><a href="#exercises--4-2-2" title="Copy heading and permalink for Solution 4.a.1" aria-label="Copy heading and permalink for Solution 4.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.a"><a href="#exercises--4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="exercises--4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="exercises--4-3-1-1">
 <span class="process-math">\(\displaystyle \lim_{x\to-1} \left(\frac{2x^2+x-1}{x+1}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercises--4-3-2-1">
+<span class="process-math">\(\displaystyle \lim_{x\to-1} \left(\frac{2x^2+x-1}{x+1}\right)=3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.b.1"><a href="#exercises--4-3-2" title="Copy heading and permalink for Solution 4.b.1" aria-label="Copy heading and permalink for Solution 4.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.b"><a href="#exercises--4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div></article><article class="task exercise-like" id="exercises--4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="exercises--4-4-1-1">
 <span class="process-math">\(\displaystyle \lim_{x\to4} \left(\frac{4-x}{x-4}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercises--4-4-2-1">
+<span class="process-math">\(\displaystyle \lim_{x\to4} \left(\frac{4-x}{x-4}\right) =-1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.c.1"><a href="#exercises--4-4-2" title="Copy heading and permalink for Solution 4.c.1" aria-label="Copy heading and permalink for Solution 4.c.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.c"><a href="#exercises--4-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div></article><article class="task exercise-like" id="exercises--4-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="exercises--4-5-1-1">
 <span class="process-math">\(\displaystyle \lim_{x\to1} \left(\frac{\sqrt{x+3}-2}{x-1}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--4-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercises--4-5-2-1">
+<span class="process-math">\(\displaystyle \lim_{x\to1} \left(\frac{\sqrt{x+3}-2}{x-1}\right) = \frac{1}{4}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.d.1"><a href="#exercises--4-5-2" title="Copy heading and permalink for Solution 4.d.1" aria-label="Copy heading and permalink for Solution 4.d.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.d"><a href="#exercises--4-5" title="Copy heading and permalink for Task 4.d" aria-label="Copy heading and permalink for Task 4.d">🔗</a></div></article><article class="task exercise-like" id="exercises--4-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="exercises--4-6-1-1">
 <span class="process-math">\(\displaystyle \lim_{x\to2} \left(\frac{\sqrt{x^2-1} - \sqrt{x+1}}{x-2}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--4-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercises--4-6-2-1">
+<span class="process-math">\(\displaystyle \lim_{x\to2} \left(\frac{\sqrt{x^2-1} - \sqrt{x+1}}{x-2}\right) = \frac{3}{2\sqrt{3}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.e.1"><a href="#exercises--4-6-2" title="Copy heading and permalink for Solution 4.e.1" aria-label="Copy heading and permalink for Solution 4.e.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.e"><a href="#exercises--4-6" title="Copy heading and permalink for Task 4.e" aria-label="Copy heading and permalink for Task 4.e">🔗</a></div></article><article class="task exercise-like" id="exercises--4-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="exercises--4-7-1-1">
 <span class="process-math">\(\displaystyle \lim_{h\to0} \left(\frac{\sqrt{a+h}-\sqrt{a}}{h}\right)\)</span> where <span class="process-math">\(a\)</span> is some non-negative real number<div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--4-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercises--4-7-2-1">
+<span class="process-math">\(\displaystyle \lim_{h\to0} \left(\frac{\sqrt{a+h}-\sqrt{a}}{h}\right) = \frac{1}{2\sqrt{a}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.f.1"><a href="#exercises--4-7-2" title="Copy heading and permalink for Solution 4.f.1" aria-label="Copy heading and permalink for Solution 4.f.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.f"><a href="#exercises--4-7" title="Copy heading and permalink for Task 4.f" aria-label="Copy heading and permalink for Task 4.f">🔗</a></div></article><article class="task exercise-like" id="exercises--4-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
 <div class="para" id="exercises--4-8-1-1">
 <span class="process-math">\(\displaystyle \lim_{t\to3} \left(\frac{\frac{1}{t}- \frac{1}{3}}{t-3}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--4-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercises--4-8-2-1">
+<span class="process-math">\(\displaystyle \lim_{t\to3} \left(\frac{\frac{1}{t}- \frac{1}{3}}{t-3}\right) = -\frac{1}{9}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.g.1"><a href="#exercises--4-8-2" title="Copy heading and permalink for Solution 4.g.1" aria-label="Copy heading and permalink for Solution 4.g.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.g"><a href="#exercises--4-8" title="Copy heading and permalink for Task 4.g" aria-label="Copy heading and permalink for Task 4.g">🔗</a></div></article><article class="task exercise-like" id="exercises--4-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
 <div class="para" id="exercises--4-9-1-1">
 <span class="process-math">\(\displaystyle \lim_{t\to6} \left(\frac{\frac{t+1}{t-1} - \frac{7}{11-t}}{t-6}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--4-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercises--4-9-2-1">
+<span class="process-math">\(\displaystyle \lim_{t\to6} \left(\frac{\frac{t+1}{t-1} - \frac{7}{11-t}}{t-6}\right) = -\frac{9}{25}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.h.1"><a href="#exercises--4-9-2" title="Copy heading and permalink for Solution 4.h.1" aria-label="Copy heading and permalink for Solution 4.h.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.h"><a href="#exercises--4-9" title="Copy heading and permalink for Task 4.h" aria-label="Copy heading and permalink for Task 4.h">🔗</a></div></article><article class="task exercise-like" id="exercises--4-10"><h5 class="heading"><span class="codenumber">(i)</span></h5>
 <div class="para" id="exercises--4-10-1-1">
 <span class="process-math">\(\displaystyle \lim_{h\to0} \left(\frac{\frac{1}{a+h}-\frac{1}{a}}{h}\right)\)</span> where <span class="process-math">\(a\)</span> is some real number<div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="exercises--4-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercises--4-10-2-1">
+<span class="process-math">\(\displaystyle \lim_{h\to0} \left(\frac{\frac{1}{a+h}-\frac{1}{a}}{h}\right) = -\frac{1}{a^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises--4-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.i.1"><a href="#exercises--4-10-2" title="Copy heading and permalink for Solution 4.i.1" aria-label="Copy heading and permalink for Solution 4.i.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.i"><a href="#exercises--4-10" title="Copy heading and permalink for Task 4.i" aria-label="Copy heading and permalink for Task 4.i">🔗</a></div></article><div class="autopermalink" data-description="Exercise 4"><a href="#exercises--4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div></article><div class="autopermalink" data-description="Practice Problems"><a href="#exercises-" title="Copy heading and permalink for Practice Problems" aria-label="Copy heading and permalink for Practice Problems">🔗</a></div></section><div class="autopermalink" data-description="Section 1.3: First Indeterminate Forms"><a href="#sec-IndeterminateForms" title="Copy heading and permalink for Section 1.3: First Indeterminate Forms" aria-label="Copy heading and permalink for Section 1.3: First Indeterminate Forms">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-EvaluatingLimits.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-LimitsInvolvingInfinity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

@@ -101,15 +101,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.7';
+eBookConfig.runestone_version = '7.11.13';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c2757fc695bc848c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
+<script src="_static/prefix-runtime.0d5f811896ddeac1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.e2abc79debce15fd.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -247,8 +247,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfPowerFunctions" class="internal"><span class="title">Derivatives of Power Functions</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfTrigExpFunctions" class="internal"><span class="title">Derivatives of Trigonometric and Exponential Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfCommonFunctions" class="internal"><span class="title">Derivatives of Common Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativeProperties" class="internal"><span class="title">Some Properties of Derivatives in General</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DerivativeRules.html#ex-DerivativeRules" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
@@ -645,7 +644,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="explore-Series.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Exploration: Infinite Series</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Series.html#subsec-InterestingSeries" class="internal"><span class="title">Interesting Infinite Series</span></a></div></li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Series.html#subsec-InterestingSeries" class="internal"><span class="title">InterestingSeries</span></a></div></li></ul>
 </li>
 </ul>
 </li>
@@ -1306,7 +1305,7 @@ p(x) \amp =a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0\\
 <div class="para">The same process could be used to show that:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-PolynomialEndBehavior.html">
 \begin{equation*}
-\lim_{x\to -\infty} \left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right)=2\text{.}
+lim_{x\to -\infty} \left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right)=2\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-EndBehaviorLimits-10-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1358,38 +1357,92 @@ x \amp \text{when } x\geq 0
 <div class="para" id="ex-LimitsInvolvingInfinity-1-2-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to-3^-} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-1-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-1-2-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to-3^-} f(x) = \infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.a.1"><a href="#ex-LimitsInvolvingInfinity-1-2-2" title="Copy heading and permalink for Solution 1.a.1" aria-label="Copy heading and permalink for Solution 1.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 1.a"><a href="#ex-LimitsInvolvingInfinity-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-1-3-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to-3^+} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-1-3-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to-3^+} f(x) = \infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.b.1"><a href="#ex-LimitsInvolvingInfinity-1-3-2" title="Copy heading and permalink for Solution 1.b.1" aria-label="Copy heading and permalink for Solution 1.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 1.b"><a href="#ex-LimitsInvolvingInfinity-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-1-4-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to-3} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-1-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-1-4-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to-3} f(x) = \infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.c.1"><a href="#ex-LimitsInvolvingInfinity-1-4-2" title="Copy heading and permalink for Solution 1.c.1" aria-label="Copy heading and permalink for Solution 1.c.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 1.c"><a href="#ex-LimitsInvolvingInfinity-1-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-1-5-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to5^-} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-1-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-1-5-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to5^-} f(x) = \infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.d.1"><a href="#ex-LimitsInvolvingInfinity-1-5-2" title="Copy heading and permalink for Solution 1.d.1" aria-label="Copy heading and permalink for Solution 1.d.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 1.d"><a href="#ex-LimitsInvolvingInfinity-1-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-1-6-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to5^+} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-1-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-1-6-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to5^+} f(x) = -\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.e.1"><a href="#ex-LimitsInvolvingInfinity-1-6-2" title="Copy heading and permalink for Solution 1.e.1" aria-label="Copy heading and permalink for Solution 1.e.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 1.e"><a href="#ex-LimitsInvolvingInfinity-1-6" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-1-7-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to5} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-1-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-1-7-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to5} f(x)\)</span> doesn’t exist<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.f.1"><a href="#ex-LimitsInvolvingInfinity-1-7-2" title="Copy heading and permalink for Solution 1.f.1" aria-label="Copy heading and permalink for Solution 1.f.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 1.f"><a href="#ex-LimitsInvolvingInfinity-1-7" title="Copy heading and permalink for Task 1.f" aria-label="Copy heading and permalink for Task 1.f">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-1-8-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to10^-} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-1-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-1-8-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to10^-} f(x) = -\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.g.1"><a href="#ex-LimitsInvolvingInfinity-1-8-2" title="Copy heading and permalink for Solution 1.g.1" aria-label="Copy heading and permalink for Solution 1.g.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 1.g"><a href="#ex-LimitsInvolvingInfinity-1-8" title="Copy heading and permalink for Task 1.g" aria-label="Copy heading and permalink for Task 1.g">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-1-9-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to10^+} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-1-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-1-9-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to10^+} f(x) = \infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.h.1"><a href="#ex-LimitsInvolvingInfinity-1-9-2" title="Copy heading and permalink for Solution 1.h.1" aria-label="Copy heading and permalink for Solution 1.h.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 1.h"><a href="#ex-LimitsInvolvingInfinity-1-9" title="Copy heading and permalink for Task 1.h" aria-label="Copy heading and permalink for Task 1.h">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-1-10"><h5 class="heading"><span class="codenumber">(i)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-1-10-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to10} f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-1-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-1-10-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to10} f(x)\)</span> doesn’t exist<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-1-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.i.1"><a href="#ex-LimitsInvolvingInfinity-1-10-2" title="Copy heading and permalink for Solution 1.i.1" aria-label="Copy heading and permalink for Solution 1.i.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 1.i"><a href="#ex-LimitsInvolvingInfinity-1-10" title="Copy heading and permalink for Task 1.i" aria-label="Copy heading and permalink for Task 1.i">🔗</a></div></article><div class="autopermalink" data-description="Exercise 1"><a href="#ex-LimitsInvolvingInfinity-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ex-LimitsInvolvingInfinity-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-LimitsInvolvingInfinity-2-1">
 <div class="para" id="ex-LimitsInvolvingInfinity-2-1-1">Use the graph of the function <span class="process-math">\(g(x)\)</span> below to determine each limit.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1401,10 +1454,22 @@ x \amp \text{when } x\geq 0
 <div class="para" id="ex-LimitsInvolvingInfinity-2-2-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to-\infty}g(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-2-2-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to-\infty}g(x) = -2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.a.1"><a href="#ex-LimitsInvolvingInfinity-2-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 2.a"><a href="#ex-LimitsInvolvingInfinity-2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-2-3-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to\infty}g(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-2-3-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to\infty}g(x) =2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.b.1"><a href="#ex-LimitsInvolvingInfinity-2-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 2.b"><a href="#ex-LimitsInvolvingInfinity-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 2"><a href="#ex-LimitsInvolvingInfinity-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ex-LimitsInvolvingInfinity-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-LimitsInvolvingInfinity-3-1">
 <div class="para" id="ex-LimitsInvolvingInfinity-3-1-1">Use the graph of the function <span class="process-math">\(h(x)\)</span> below to determine each limit.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1416,10 +1481,22 @@ x \amp \text{when } x\geq 0
 <div class="para" id="ex-LimitsInvolvingInfinity-3-2-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to-\infty}h(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-3-2-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to-\infty}h(x) = -\inftry\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.a.1"><a href="#ex-LimitsInvolvingInfinity-3-2-2" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 3.a"><a href="#ex-LimitsInvolvingInfinity-3-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-3-3-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to\infty}h(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-3-3-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to\infty}h(x) = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.b.1"><a href="#ex-LimitsInvolvingInfinity-3-3-2" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 3.b"><a href="#ex-LimitsInvolvingInfinity-3-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 3"><a href="#ex-LimitsInvolvingInfinity-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ex-LimitsInvolvingInfinity-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-LimitsInvolvingInfinity-4-1"><div class="para" id="ex-LimitsInvolvingInfinity-4-1-1">For each limit, fill in the table in a way that determines the limit, and report your answer.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
@@ -1442,6 +1519,12 @@ x \amp \text{when } x\geq 0
 <td class="c m b0 r0 l0 t0 lines">does not exist</td>
 </tr>
 </table></div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-4-2-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to4^-} \left(\frac{3x}{x-4}\right) = -\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.a.1"><a href="#ex-LimitsInvolvingInfinity-4-2-2" title="Copy heading and permalink for Solution 4.a.1" aria-label="Copy heading and permalink for Solution 4.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.a"><a href="#ex-LimitsInvolvingInfinity-4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-4-3-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to4^+} \left(\frac{3x}{x-4}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1461,6 +1544,12 @@ x \amp \text{when } x\geq 0
 <td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
 </tr>
 </table></div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-4-3-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to4^+} \left(\frac{3x}{x-4}\right) = \infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.b.1"><a href="#ex-LimitsInvolvingInfinity-4-3-2" title="Copy heading and permalink for Solution 4.b.1" aria-label="Copy heading and permalink for Solution 4.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.b"><a href="#ex-LimitsInvolvingInfinity-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-4-4-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to 1} \left(\frac{x-3}{(2x-4)(x-1)^2}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1486,6 +1575,12 @@ x \amp \text{when } x\geq 0
 <td class="c m b0 r0 l0 t0 lines"><span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></td>
 </tr>
 </table></div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-4-4-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to 1} \left(\frac{x-3}{(2x-4)(x-1)^2}\right) = \infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.c.1"><a href="#ex-LimitsInvolvingInfinity-4-4-2" title="Copy heading and permalink for Solution 4.c.1" aria-label="Copy heading and permalink for Solution 4.c.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 4.c"><a href="#ex-LimitsInvolvingInfinity-4-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise 4"><a href="#ex-LimitsInvolvingInfinity-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="ex-LimitsInvolvingInfinity-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-LimitsInvolvingInfinity-5-1"><div class="para" id="ex-LimitsInvolvingInfinity-5-1-1">Evaluate the following limits analytically. Also evaluate the relevant one-sided limits when needed.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
@@ -1493,34 +1588,94 @@ x \amp \text{when } x\geq 0
 <div class="para" id="ex-LimitsInvolvingInfinity-5-2-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to-\infty} \left(2+4x-5x^2+\dfrac{x^3}{7} - \dfrac{8x^4}{9}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-5-2-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to-\infty} \left(2+4x-5x^2+\dfrac{x^3}{7} - \dfrac{8x^4}{9}\right) = -\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.a.1"><a href="#ex-LimitsInvolvingInfinity-5-2-2" title="Copy heading and permalink for Solution 5.a.1" aria-label="Copy heading and permalink for Solution 5.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 5.a"><a href="#ex-LimitsInvolvingInfinity-5-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-5-3-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to\infty} \left( \dfrac{5x^3-4x+3}{2x+6}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-5-3-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to\infty} \left( \dfrac{5x^3-4x+3}{2x+6}\right) = \infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.b.1"><a href="#ex-LimitsInvolvingInfinity-5-3-2" title="Copy heading and permalink for Solution 5.b.1" aria-label="Copy heading and permalink for Solution 5.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 5.b"><a href="#ex-LimitsInvolvingInfinity-5-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-5-4-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to -3^-} \left( \dfrac{5x^3-4x+3}{2x+6}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-5-4-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to -3^-} \left( \dfrac{5x^3-4x+3}{2x+6}\right) = \infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.c.1"><a href="#ex-LimitsInvolvingInfinity-5-4-2" title="Copy heading and permalink for Solution 5.c.1" aria-label="Copy heading and permalink for Solution 5.c.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 5.c"><a href="#ex-LimitsInvolvingInfinity-5-4" title="Copy heading and permalink for Task 5.c" aria-label="Copy heading and permalink for Task 5.c">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-5-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-5-5-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to-\infty} \left( \dfrac{x-10}{3x+4}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-5-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-5-5-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to-\infty} \left( \dfrac{x-10}{3x+4}\right) = \frac{1}{3}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.d.1"><a href="#ex-LimitsInvolvingInfinity-5-5-2" title="Copy heading and permalink for Solution 5.d.1" aria-label="Copy heading and permalink for Solution 5.d.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 5.d"><a href="#ex-LimitsInvolvingInfinity-5-5" title="Copy heading and permalink for Task 5.d" aria-label="Copy heading and permalink for Task 5.d">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-5-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-5-6-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to 2} \left( \dfrac{4x-1}{x^4-16}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-5-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-LimitsInvolvingInfinity-5-6-2-1">
+<div class="displaymath process-math" id="ex-LimitsInvolvingInfinity-5-6-2-1-1">
+\begin{align*}
+\lim_{x\to 2^-} \left( \dfrac{4x-1}{x^4-16}\right) \amp = -\infty \\
+\lim_{x\to 2^+} \left( \dfrac{4x-1}{x^4-16}\right) \amp = \infty 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.e.1"><a href="#ex-LimitsInvolvingInfinity-5-6-2" title="Copy heading and permalink for Solution 5.e.1" aria-label="Copy heading and permalink for Solution 5.e.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 5.e"><a href="#ex-LimitsInvolvingInfinity-5-6" title="Copy heading and permalink for Task 5.e" aria-label="Copy heading and permalink for Task 5.e">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-5-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-5-7-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to\infty} \left( \dfrac{6-5x^5}{2+3x^2}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-5-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-5-7-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to\infty} \left( \dfrac{6-5x^5}{2+3x^2}\right) = -\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.f.1"><a href="#ex-LimitsInvolvingInfinity-5-7-2" title="Copy heading and permalink for Solution 5.f.1" aria-label="Copy heading and permalink for Solution 5.f.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 5.f"><a href="#ex-LimitsInvolvingInfinity-5-7" title="Copy heading and permalink for Task 5.f" aria-label="Copy heading and permalink for Task 5.f">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-5-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-5-8-1-1">
 <span class="process-math">\(\displaystyle\lim_{x\to 1} \left( \dfrac{x^2+1}{x^3-2x^2+x}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-5-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-LimitsInvolvingInfinity-5-8-2-1">
+<span class="process-math">\(\displaystyle\lim_{x\to 1} \left( \dfrac{x^2+1}{x^3-2x^2+x}\right)=\infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.g.1"><a href="#ex-LimitsInvolvingInfinity-5-8-2" title="Copy heading and permalink for Solution 5.g.1" aria-label="Copy heading and permalink for Solution 5.g.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 5.g"><a href="#ex-LimitsInvolvingInfinity-5-8" title="Copy heading and permalink for Task 5.g" aria-label="Copy heading and permalink for Task 5.g">🔗</a></div></article><article class="task exercise-like" id="ex-LimitsInvolvingInfinity-5-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
 <div class="para" id="ex-LimitsInvolvingInfinity-5-9-1-1">
 <span class="process-math">\(\displaystyle\lim_{\theta\to3\pi/2} \sin(\theta)\tan(\theta)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LimitsInvolvingInfinity-5-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-LimitsInvolvingInfinity-5-9-2-1">
+<div class="displaymath process-math" id="ex-LimitsInvolvingInfinity-5-9-2-1-1">
+\begin{align*}
+\lim_{\theta\to3\pi/2^-} \sin(\theta)\tan(\theta) \amp =-\infty\\
+\lim_{\theta\to3\pi/2^+} \sin(\theta)\tan(\theta) \amp =\infty
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-5-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.h.1"><a href="#ex-LimitsInvolvingInfinity-5-9-2" title="Copy heading and permalink for Solution 5.h.1" aria-label="Copy heading and permalink for Solution 5.h.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 5.h"><a href="#ex-LimitsInvolvingInfinity-5-9" title="Copy heading and permalink for Task 5.h" aria-label="Copy heading and permalink for Task 5.h">🔗</a></div></article><div class="autopermalink" data-description="Exercise 5"><a href="#ex-LimitsInvolvingInfinity-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="ex-LimitsInvolvingInfinity-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-LimitsInvolvingInfinity-6-1"><div class="para" id="ex-LimitsInvolvingInfinity-6-1-1">For each of the following functions, find the locations of any vertical asymptotes and report the behavior of the functions around those asymptotes using limit statements.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LimitsInvolvingInfinity-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
