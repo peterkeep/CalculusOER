@@ -417,6 +417,21 @@
           </p>
         </solution>
       </task>
+      <task>
+        <statement>
+          <p>
+             <m>\displaystyle \ddx{\frac{1}{x}- \dfrac{\sqrt{x}}{4}+\sin(x)-5e^x}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\ddx{\frac{1}{x}- \dfrac{\sqrt{x}}{4}+\sin(x)-5e^x} \amp = \ddx{\frac{1}{x}}- \ddx{\dfrac{\sqrt{x}}{4}}+\ddx{\sin(x)}-\ddx{5e^x}</mrow>
+              <mrow> \amp = -\frac{1}{x^2} + \frac{1}{8\sqrt{x}} + \cos(x)-5e^x</mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
     </example>
   </subsection> 
   <xi:include href="./exercises/ex-DerivativeRules.ptx" />
