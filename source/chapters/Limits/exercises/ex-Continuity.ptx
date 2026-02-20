@@ -22,9 +22,36 @@
                         \begin{cases}
                           4x+1 \amp \text{if } x\lt 1\\
                           x^2+5 \amp \text{if } x\geq 1
-                        \end{cases}</m> at <m>x=1</m>
+                        \end{cases}</m>
+                </p>
+                <p>
+                    Is <m>f(x)</m> continuous at <m>x=1</m>?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x\to 1} f(x)</m> doesn't exist.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(1)=6</m>
+                            </p>
+                        </li>
+                    </ol>
+                    This function is not continuous at this point, since
+                    <me>
+                        \lim_{x\to 1} f(x) \neq f(1)
+                    </me>.
+                    But, it is continuous on the right side, since 
+                    <me>
+                        \lim_{x\to 1^+} f(x) = f(1)
+                    </me>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -34,9 +61,32 @@
                           6x^2-2 \amp \text{if } x\lt0\\
                           4 \amp \text{if } x=0\\
                           1-3\cos(x) \amp \text{if } x\gt 0
-                        \end{cases}</m> at <m>x=0</m>
+                        \end{cases}</m>
+                </p>
+                <p>
+                    Is <m>g(x)</m> continuous at <m>x=0</m>?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x\to 0} g(x) = -2</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>g(0)=4</m>
+                            </p>
+                        </li>
+                    </ol>
+                    This function is not continuous at this point, since
+                    <me>
+                        \lim_{x\to -2} g(x) \neq g(-2)
+                    </me>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -45,9 +95,32 @@
                         \begin{cases}
                           \left(\dfrac{x^2-1}{x+1}\right) \amp \text{if } x\neq -1\\
                           -2 \amp\text{if } x=-1
-                        \end{cases}</m> at <m>x=-1</m>
+                        \end{cases}</m>
+                </p>
+                <p>
+                    Is <m>h(x)</m> continuous at <m>x=-1</m>?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x\to -1} h(x) = -2</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>h(-1)=-2</m>
+                            </p>
+                        </li>
+                    </ol>
+                    This function is continuous at this point, since
+                    <me>
+                        \lim_{x\to -1} h(x) = h(-1)
+                    </me>.
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -66,6 +139,11 @@
                         \end{cases}</m> at <m>x=3</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>a=-\dfrac{2}{9}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -77,6 +155,11 @@
                         \end{cases}</m> at <m>x=-2</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>a=-4</m>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -91,6 +174,14 @@
                     <m>\displaystyle \lim_{x\to 0} \left(\sin\left(e^{\sqrt{x^2}}\right)\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \lim_{x\to 0} \left(\sin\left(e^{\sqrt{x^2}}\right)\right)\amp = \sin\left(e^{\sqrt{\lim_{x\to 0} x^2}}\right)</mrow>
+                        <mrow> \amp = \sin(1)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -98,6 +189,14 @@
                     <m>\displaystyle \lim_{x\to 0} \ln\left(\dfrac{\cos(x^2)}{x^2+1}\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \lim_{x\to 0} \ln\left(\dfrac{\cos(x^2)}{x^2+1}\right)\amp = \ln\left(\dfrac{\cos(\lim_{x\to 0} x^2)}{\lim_{x\to 0}(x^2+1)}\right)</mrow>
+                        <mrow> \amp =0</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -105,6 +204,14 @@
                     <m>\displaystyle \lim_{x\to 0} \sqrt[3]{\dfrac{x}{\sqrt{16x+1}-1}}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{x\to 0} \sqrt[3]{\dfrac{x}{\sqrt{16x+1}-1}} \amp = \sqrt[3]{\lim_{x\to 0} \left(\dfrac{x}{\sqrt{16x+1}-1}\right)}</mrow>
+                        <mrow> \amp = \frac{1}{2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
