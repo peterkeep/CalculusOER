@@ -14,6 +14,14 @@
                     <m>f(x) = x^2+x-1</m> with <m>a=0</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(0) \amp = 1</mrow>
+                        <mrow>y \amp = x-1</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -21,6 +29,14 @@
                     <m>f(x) = x^3+1</m> with <m>a=2</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(2) \amp = 12</mrow>
+                        <mrow>y \amp = 12x-15</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -28,6 +44,14 @@
                     <m>f(x) = \dfrac{2}{\sqrt{x}}</m> with <m>a=6</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(6) \amp = \dfrac{1}{\sqrt{6}}</mrow>
+                        <mrow>y \amp = -\frac{x}{6\sqrt{6}}+\frac{3}{\sqrt{6}}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -35,6 +59,14 @@
                     <m>f(x) = \sqrt{3x-1}</m> with <m>a=2</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(2) \amp = \dfrac{3}{2\sqrt{5}}</mrow>
+                        <mrow>y \amp = -\frac{3x}{2\sqrt{5}}+\frac{2}{\sqrt{5}}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -42,6 +74,14 @@
                     <m>f(x) = x-x^2</m> with <m>a=2</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(2) \amp = -3</mrow>
+                        <mrow>y \amp = -3x+4</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -49,6 +89,14 @@
                     <m>f(x) = \dfrac{x}{x+1}</m> with <m>a=1</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(1) \amp = \frac{1}{4}</mrow>
+                        <mrow>y \amp = \frac{x}{4} + \frac{1}{4}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -63,6 +111,11 @@
                     How fast is the car driving at <m>t=0</m>?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>v(0)=s'(0)=81</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -70,6 +123,11 @@
                     How fast is the car driving at <m>t=2</m>?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>v(2) = s'(2)=36</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -77,6 +135,11 @@
                     At what value of <m>t</m> does the car stop (their velocity is 0)?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>t=5.4</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -84,6 +147,11 @@
                     How far did they travel before they stopped?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>s(5.4)-s(0)=396.9</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -91,6 +159,11 @@
                     At <m>t=0</m> what is the acceleration of the car?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>a(0)=v'(0)=-15</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -98,6 +171,11 @@
                     At <m>t=2</m> what is the acceleration of the car?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>a(2)=v'(2)=-15</m>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -112,6 +190,11 @@
                     What was the overall change in value from 1667 to 1967 (from <m>t=0</m> to <m>t=300)</m>?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>m(300)-m(0)\approx \$292.82</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -119,6 +202,11 @@
                     What was the average rate of change of the value from 1667 to 1967?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\dfrac{m(300)-m(0)}{300-0} \approx \$0.98</m>/year
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -126,6 +214,11 @@
                     What was the instantaneous rate of change of the value in 1967?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>m'(300)\approx \$1.55</m>/year
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -133,6 +226,14 @@
                     Find <m>m(354)</m> and <m>m'(354)</m>, and interpret both of these values.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>m(354)\approx \$762.60</m> is the value of the pencil 354 years after 1667 (in 2021).
+                </p>
+                <p>
+                    <m>m'(354)\approx \$1.06</m> is the rate of change in the value of the pencil 354 years after 1667 (in 2021). This means that in 2021, we expect the price to increase at a rate of $1.06/year.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -140,6 +241,11 @@
                     Use <m>m(354)</m> and <m>m'(354)</m> to approximate the value of the pencil in 2022.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>m(354)+m'(354)\approx \$763.66</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -147,6 +253,11 @@
                     Use <m>m(t)</m> to find the value in 2022. Was the approximation close or not? Explain.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>m(355)\approx \$763.66</m>
+                </p>
+            </solution>
         </task>
     </exercise>
 </exercises>
