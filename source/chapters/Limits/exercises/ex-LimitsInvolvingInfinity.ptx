@@ -412,13 +412,31 @@
                    <m>f(x) = \dfrac{|x-4|}{x+2}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{x\to -2^-} f(x) \amp= -\infty</mrow>
+                        <mrow>\lim_{x\to -2^+} f(x) \amp= \infty</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
-                   <m>g(x) = \dfrac{\sin x}{x^2-1}</m>
+                   <m>g(x) = \dfrac{\sin(x)}{x^2-1}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{x\to -1^-} g(x) \amp= -\infty</mrow>
+                        <mrow>\lim_{x\to -1^+} g(x) \amp= \infty</mrow>
+                        <mrow>\lim_{x\to 1^-} g(x) \amp= -\infty</mrow>
+                        <mrow>\lim_{x\to 1^+} g(x) \amp= \infty</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -430,10 +448,20 @@
                 <p>
                     If you'd rather, you can add the terms together to get:
                     <me>
-                        h(t)=\frac{13t-4}{t(t-1)}
+                        h(t)=\frac{13t-4}{t^2(t-1)}
                     </me>.
                 </p>
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \lim_{t\to 0^-} h(t) \amp = \infty</mrow>
+                        <mrow> \lim_{t\to 0^+} h(t) \amp = \infty</mrow>
+                        <mrow> \lim_{t\to 1^-} h(t) \amp = -\infty</mrow>
+                        <mrow> \lim_{t\to 1^+} h(t) \amp = \infty</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -441,6 +469,19 @@
                    <m>s(w) = \dfrac{w^3-3w^2+w-1}{w^2-5w+6}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <me>
+                        s(w) = \dfrac{w^3-3w^2+w-1}{(w-2)(w-3)}
+                    </me>
+                    <md>
+                        <mrow>\lim_{w\to 2^-} s(w) \amp = -\infty</mrow>
+                        <mrow>\lim_{w\to 2^+} s(w) \amp = \infty</mrow>
+                        <mrow>\lim_{w\to 3^-} s(w) \amp = -\infty</mrow>
+                        <mrow>\lim_{w\to 3^+} s(w) \amp = \infty</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -448,6 +489,14 @@
                    <m>f(x) = \dfrac{e^x}{(x-3)^4}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{x\to 3^-} f(x) \amp= \infty</mrow>
+                        <mrow>\lim_{x\to 3^+} f(x) \amp= \infty</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -462,6 +511,14 @@
                    <m>f(x)= 2 + \dfrac{10}{x^2}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{x\to-\infty} f(x) \amp = 0 </mrow>
+                        <mrow>\lim_{x\to\infty} f(x) \amp = 0 </mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -469,6 +526,14 @@
                     <m>g(x)=\dfrac{4x^5-3x^3+5x-1}{10x^2+5x^3-5x^4}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{x\to-\infty} g(x) \amp = \infty </mrow>
+                        <mrow>\lim_{x\to\infty} g(x) \amp = -\infty </mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -476,6 +541,14 @@
                     <m>h(x) = \dfrac{3x^2+4x+\sqrt{x}}{1-\sqrt{x}-2x^2}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{x\to-\infty} h(x) \amp = -\frac{3}{2}</mrow>
+                        <mrow>\lim_{x\to\infty} h(x) \amp = -\frac{3}{2} </mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -483,6 +556,14 @@
                     <m>j(x) = \dfrac{3}{5 + 10^{1/x}}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{x\to-\infty} g(x) \amp = \frac{1}{2} </mrow>
+                        <mrow>\lim_{x\to\infty} g(x) \amp = \frac{1}{2} </mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
 </exercises>
