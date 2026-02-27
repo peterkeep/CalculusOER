@@ -440,23 +440,17 @@
       <task>
         <statement>
           <p>
-            <m>\displaystyle\ddx{3x^2-6e^x + \frac{\sin(x)}{2}}</m>
+             <m>\displaystyle \ddx{\frac{1}{x}- \dfrac{\sqrt{x}}{4}+\sin(x)-5e^x}</m>
           </p>
         </statement>
-      </task>
-      <task>
-        <statement>
+        <solution>
           <p>
-            <m>\displaystyle \ddx{\frac{1}{x^3} + \sqrt[3]{x}}</m>
+            <md>
+              <mrow>\ddx{\frac{1}{x}- \dfrac{\sqrt{x}}{4}+\sin(x)-5e^x} \amp = \ddx{\frac{1}{x}}- \ddx{\dfrac{\sqrt{x}}{4}}+\ddx{\sin(x)}-\ddx{5e^x}</mrow>
+              <mrow> \amp = -\frac{1}{x^2} + \frac{1}{8\sqrt{x}} + \cos(x)-5e^x</mrow>
+            </md>
           </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\displaystyle \ddx{\frac{5}{2\sqrt{x}} + \frac{\sqrt[5]{x^2}}{6}}</m>
-          </p>
-        </statement>
+        </solution>
       </task>
     </example>
   </subsection> 

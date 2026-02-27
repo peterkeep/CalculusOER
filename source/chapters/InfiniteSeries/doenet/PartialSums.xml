@@ -64,8 +64,8 @@
 </repeatForSequence>
 
 <sideBySide>
-  <p><me>\text{Sequence Terms } \{a_k\}_{k=1}^{\infty}</me></p>
-  <p><me>\text{Sequence of Partial Sums } \left\{S_n\right\}_{n=1}^{\infty}</me></p>
+  <p><me>\{a_k\}_{k=1}^{\infty}</me></p>
+  <p><me>\left\{S_n\right\}_{n=1}^{\infty}</me></p>
 </sideBySide>
 
 <sideBySide>
@@ -87,3 +87,4 @@
 <p><me>S_{$term} = \sum_{k=1}^{$term} a_k = $Sk[$term]</me></p>
 
 <p>Based on what you see here, do you think this series would converge?</p>
+

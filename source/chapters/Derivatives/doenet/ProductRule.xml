@@ -1,5 +1,3 @@
-<!-- https://www.doenet.org/portfolioeditor/_ZWT6Eb6oFui8hFQQRq8Po/_Y4eHQwS6VHms1HSFAPYuq -->
-
 <setup>
   <function name="f">x-0.1x</function>
   <function name="g">sqrt(x)+0.1x</function>
@@ -24,12 +22,13 @@
                 ($$f($init+$delta),$$g($init)) 
                 ($$f($init+$delta),$$g($init+$delta)) 
                 ($$f($init),$$g($init+$delta))" filled/>
+  <number name="delta">-$d</number>
 </setup>
 
 <p><em>Instructions:</em> Move the slider to change the value of <m>\Delta x</m>. This will change the side lengths of the larger rectangle, and the corresponding change in area from the small rectangle to the large rectangle.</p>
 
-<slider name="delta" from="0.001" to="1" initialValue="1" step="0.001" showValue="false" showTicks="false">
-  <label><m>\Delta x</m></label>
+<slider name="d" from="-1" to="0.001" initialValue="-1" step="0.001" showValue="false" showTicks="false">
+  <label><m>\Delta x\to 0</m></label>
 </slider>
 
 <graph xmin="-2" xmax="5.6" ymin="-0.4" ymax="2.8" 

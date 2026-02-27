@@ -11,6 +11,15 @@
                     <m>\displaystyle\lim_{x\to3} \left(6f(x) -\frac{g(x)}{3}\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \lim_{x\to3} \left(6f(x) -\frac{g(x)}{3}\right)\amp  = 6\lim_{x\to 3}f(x) - \frac{\lim_{x\to 3} g(x)}{3}</mrow>
+                        <mrow> \amp = 6(5)-\frac{(-2)}{3}</mrow>
+                        <mrow> \amp = \frac{92}{3}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -18,6 +27,15 @@
                     <m>\displaystyle\lim_{x\to 3} (f(x))^2g(x)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \lim_{x\to 3} (f(x))^2g(x)\amp = \left(\lim_{x\to 3} f(x)\right)^2\left(\lim_{x\to 3}g(x)\right) </mrow>
+                        <mrow> \amp = (5)^2(-2)</mrow>
+                        <mrow> \amp =-50</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -25,6 +43,15 @@
                     <m>\displaystyle\lim_{x\to3^-} \left(\frac{4g(x)}{f(x)} + 3f(x)\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>lim_{x\to3^-} \left(\frac{4g(x)}{f(x)} + 3f(x)\right) \amp = \frac{4\lim_{x\to 3^-} g(x)}{\lim_{x\to 3^-} f(x)} + 3\lim_{x\to 3^-} f(x)</mrow>
+                        <mrow> \amp = \frac{4(-2)}{5}+3(5)</mrow>
+                        <mrow> \amp =\frac{67}{5}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -39,6 +66,14 @@
                     <m>\displaystyle \lim_{x\to 0} (4x^3-6x^2+7x-10)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    This is a polynomial, so we can evaluate this function at <m>x=0</m>:
+                    <me>
+                       4(0)^3-6(0)^2+7(0)-10 = -10 
+                    </me>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -46,6 +81,14 @@
                     <m>\displaystyle \lim_{x\to -2} (9-3x+x^2+3x^3+x^4)</m> 
                 </p>
             </statement>
+            <solution>
+                <p>
+                    This is also a polynomial, and so we can evaluate the function at <m>x=-2</m>:
+                    <me>
+                        9-3(-2)+(-2)^2+3(-2)^3+(-2)^4 = 11
+                    </me>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -53,6 +96,13 @@
                     <m>\displaystyle \lim_{t\to a} \left(9t^2 + 3at - 1\right)</m> where <m>a</m> is some real number
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <me>
+                        9(a)^2 +3a(a)-1 = 12a^2-1
+                    </me>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -60,6 +110,15 @@
                     <m>\displaystyle \lim_{s\to 1} \left( \dfrac{5s^2-6s+1}{s^2-4} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{s\to 1} \left( \dfrac{5s^2-6s+1}{s^2-4} \right) \amp = \frac{\displaystyle\lim_{s\to 1}(s^2-6s+1)}{\displaystyle \lim_{s\to 1}(s^2-4)} </mrow>
+                        <mrow> \amp = \frac{0}{(-3)}</mrow>
+                        <mrow> \amp = 0</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -67,13 +126,31 @@
                     <m>\displaystyle \lim_{t\to 2} \left( \dfrac{4t-5}{6+t^2} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \lim_{t\to 2} \left( \dfrac{4t-5}{6+t^2} \right)\amp = \frac{\displaystyle \lim_{t\to 2}(4t-5)}{\displaystyle \lim_{t\to 2}(6+t^2)}
+                        </mrow>
+                        <mrow> \amp = \frac{3}{10}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
-                    <m>\displaystyle \lim_{z\to2} \frac{z^2-4}{z+2}</m>
+                    <m>\displaystyle \lim_{z\to2} \left(\frac{z^2+z-4}{z+2}\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \lim_{z\to2} \left(\frac{z^2+z-4}{z+2}\right) \amp = \frac{\displaystyle \lim_{z\to 2}(z^2+z-4)}{\displaystyle \lim_{z\to 2}(z+2)} </mrow>
+                        <mrow> \amp = \frac{2}{4}</mrow>
+                        <mrow> \amp = \frac{1}{2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -95,6 +172,19 @@
                     Evaluate <m>\displaystyle \lim_{x\to-1^-} f(x)</m>, <m>\displaystyle \lim_{x\to-1^+} f(x)</m>, and <m>\displaystyle \lim_{x\to-1} f(x)</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \lim_{x\to-1^-} f(x)\amp  = -5</mrow>
+                        <mrow> \lim_{x\to-1^+} f(x) \amp = -4</mrow>
+                    </md>
+                    Since the left-sided limit and right-sided limit do not match, we say that
+                    <me>
+                        \lim_{x\to-1} f(x)
+                    </me>
+                    does not exist.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -110,6 +200,18 @@
                     Evaluate <m>\displaystyle \lim_{x\to -3^-} g(x)</m>, <m>\displaystyle \lim_{x\to-3^+} g(x)</m>, and <m>\displaystyle \lim_{x\to-3} g(x)</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \lim_{x\to-3^-} g(x)\amp  = 3</mrow>
+                        <mrow> \lim_{x\to-3^+} g(x) \amp = 3</mrow>
+                    </md>
+                    Since the left-sided limit and right-sided limit match, we say that
+                    <me>
+                        \lim_{x\to-3} g(x) = 3
+                    </me>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -124,6 +226,19 @@
                     Evaluate <m>\displaystyle \lim_{t\to1^-} s(t)</m>, <m>\displaystyle \lim_{t\to1^+} s(t)</m>, and <m>\displaystyle \lim_{t\to1} s(t)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \lim_{t\to1^-} s(t)\amp  = 2</mrow>
+                        <mrow> \lim_{t\to1^+} s(t) \amp = 0</mrow>
+                    </md>
+                    Since the left-sided limit and right-sided limit do not match, we say that
+                    <me>
+                        \lim_{t\to1} s(t)
+                    </me>
+                    does not exist.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -138,6 +253,19 @@
                     Evaluate <m>\displaystyle \lim_{\theta\to2^-} r(\theta)</m>, <m>\displaystyle \lim_{\theta\to2^+} r(\theta)</m>, and <m>\displaystyle \lim_{\theta\to2} r(\theta)</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \lim_{\theta\to 2^-} r(\theta)\amp  = 9</mrow>
+                        <mrow> \lim_{\theta\to 2^+} r(\theta) \amp = 8</mrow>
+                    </md>
+                    Since the left-sided limit and right-sided limit do not match, we say that
+                    <me>
+                        \lim_{\theta\to 2} r(\theta)
+                    </me>
+                    does not exist.
+                </p>
+            </solution>
         </task>
     </exercise>
 </exercises>
