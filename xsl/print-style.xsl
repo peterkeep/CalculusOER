@@ -159,16 +159,19 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="aside" mode="tcb-style">
     <xsl:text>
         sharpish corners,
+        fonttitle=\bfseries\footnotesize,
         colframe=DCyellow,
+        title={Aside.},
         colback=DCyellow!10,
         colbacktitle=DCyellow!10, 
-        coltitle=DCyellow!10, 
+        coltitle=black, 
         leftrule=1.5mm,
         rightrule=0mm,
         titlerule=0mm,
         toprule=0mm,
         bottomrule=0mm,
         sharpish corners,
+        fontupper=\footnotesize,
         enhanced,
         breakable
     </xsl:text>
