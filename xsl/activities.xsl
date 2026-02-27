@@ -20,13 +20,15 @@
 
 <!-- We pull activities from each introduction -->
 <!-- We want to leave the introductions to activities, so we're skipping over them -->
-<xsl:template match="introduction[not(parent::activity)]">
+<xsl:template match="introduction[not((parent::activity) | (parent::exploration))]">
     <xsl:apply-templates select="activity"/>
+    <xsl:apply-templates select="exploration"/>  
 </xsl:template>
 
 <!-- We pull activities from each subsection -->
 <xsl:template match="subsection">
-    <xsl:apply-templates select="activity"/>    
+    <xsl:apply-templates select="activity"/>  
+    <xsl:apply-templates select="exploration"/>  
     <!-- <xsl:text>\cleardoublepage&#xA;&#xA;</xsl:text>  -->
 </xsl:template>
 
@@ -34,6 +36,8 @@
 
 <xsl:template match="activity" mode="tcb-style">
     <xsl:text>
+        enhanced,
+        breakable,
         fonttitle=\large,
         colbacktitle=black!20, 
         colback=white, 
@@ -49,6 +53,24 @@
     </xsl:text>
 </xsl:template>
 
+<xsl:template match="exploration" mode="tcb-style">
+    <xsl:text>
+        enhanced,
+        breakable,
+        fonttitle=\large,
+        colbacktitle=black!20, 
+        colback=white, 
+        coltitle=black, 
+        colframe=black,
+        leftrule=2mm,
+        rightrule=0mm,
+        titlerule=0mm,
+        toprule=0mm,
+        bottomrule=0mm,
+        sharpish corners,
+        after={\clearpage}
+    </xsl:text>
+</xsl:template>
 
 
 <!-- <xsl:template match="activity">
