@@ -77,6 +77,7 @@ window.MathJax = {
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
+<meta property="og:image" content="https://www.discovercalculus.com/web/external/cover.png">
 <meta property="book:title" content="Discover Calculus">
 <meta property="book:author" content="Peter Keep">
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
@@ -101,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.14';
+eBookConfig.runestone_version = '7.11.15';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.529fd9398bfbd03e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
@@ -116,10 +117,12 @@ eBookConfig.enable_chatcodes =  false;
 </script>
 </head>
 <body class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://www.discovercalculus.com"><img src="external/cover.png" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="DiscoverCalculus.html"><span class="title">Discover Calculus</span> <span class="subtitle">Single-Variable Calculus Topics with Motivating Activities</span></a></h1>
 <p class="byline">Peter Keep</p>
-</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
@@ -247,7 +250,8 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfCommonFunctions" class="internal"><span class="title">Derivatives of Common Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfPowerFunctions" class="internal"><span class="title">Derivatives of Power Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfTrigExpFunctions" class="internal"><span class="title">Derivatives of Trigonometric and Exponential Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativeProperties" class="internal"><span class="title">Some Properties of Derivatives in General</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DerivativeRules.html#ex-DerivativeRules" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
@@ -644,7 +648,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="explore-Series.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Exploration: Infinite Series</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Series.html#subsec-InterestingSeries" class="internal"><span class="title">InterestingSeries</span></a></div></li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Series.html#subsec-InterestingSeries" class="internal"><span class="title">Interesting Infinite Series</span></a></div></li></ul>
 </li>
 </ul>
 </li>
@@ -1026,62 +1030,26 @@ f'(x) = \lim_{\Delta x\to 0} \left( \frac{f(x+\Delta x) - f(x)}{\Delta x} \right
 <div class="para" id="ex-IntroDerivatives-3-2-1-1">
 <span class="process-math">\(f(x) = 6x+1\)</span> at <span class="process-math">\((1, 7)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-IntroDerivatives-3-2-2-1">
-<span class="process-math">\(f'(1)=6\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 3.a.1"><a href="#ex-IntroDerivatives-3-2-2" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 3.a"><a href="#ex-IntroDerivatives-3-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-IntroDerivatives-3-3-1-1">
 <span class="process-math">\(g(x) = x^2-5\)</span> at <span class="process-math">\((-1, -4)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-IntroDerivatives-3-3-2-1">
-<span class="process-math">\(g'(-1)=-2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 3.b.1"><a href="#ex-IntroDerivatives-3-3-2" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 3.b"><a href="#ex-IntroDerivatives-3-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-IntroDerivatives-3-4-1-1">
 <span class="process-math">\(j(x) = \sqrt{x}\)</span> at <span class="process-math">\((4, 2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-IntroDerivatives-3-4-2-1">
-<span class="process-math">\(j'(4)=\dfrac{1}{4}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-3-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 3.c.1"><a href="#ex-IntroDerivatives-3-4-2" title="Copy heading and permalink for Solution 3.c.1" aria-label="Copy heading and permalink for Solution 3.c.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 3.c"><a href="#ex-IntroDerivatives-3-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-3-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-IntroDerivatives-3-5-1-1">
 <span class="process-math">\(f(x) = \dfrac{1}{4-x}\)</span> at <span class="process-math">\((3,1)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-IntroDerivatives-3-5-2-1">
-<span class="process-math">\(f'(3)=1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 3.d.1"><a href="#ex-IntroDerivatives-3-5-2" title="Copy heading and permalink for Solution 3.d.1" aria-label="Copy heading and permalink for Solution 3.d.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 3.d"><a href="#ex-IntroDerivatives-3-5" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-3-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="ex-IntroDerivatives-3-6-1-1">
 <span class="process-math">\(g(x) = 4+3x-2x^2\)</span> at <span class="process-math">\((2,2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-3-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-IntroDerivatives-3-6-2-1">
-<span class="process-math">\(g'(2)=-5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 3.e.1"><a href="#ex-IntroDerivatives-3-6-2" title="Copy heading and permalink for Solution 3.e.1" aria-label="Copy heading and permalink for Solution 3.e.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 3.e"><a href="#ex-IntroDerivatives-3-6" title="Copy heading and permalink for Task 3.e" aria-label="Copy heading and permalink for Task 3.e">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-3-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="ex-IntroDerivatives-3-7-1-1">
 <span class="process-math">\(j(x) = \dfrac{1}{x^2}\)</span> at <span class="process-math">\((1,1)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-3-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-IntroDerivatives-3-7-2-1">
-<span class="process-math">\(j'(1)=-2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-3-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 3.f.1"><a href="#ex-IntroDerivatives-3-7-2" title="Copy heading and permalink for Solution 3.f.1" aria-label="Copy heading and permalink for Solution 3.f.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 3.f"><a href="#ex-IntroDerivatives-3-7" title="Copy heading and permalink for Task 3.f" aria-label="Copy heading and permalink for Task 3.f">🔗</a></div></article><div class="autopermalink" data-description="Exercise 3"><a href="#ex-IntroDerivatives-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ex-IntroDerivatives-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-IntroDerivatives-4-1"><div class="para logical" id="ex-IntroDerivatives-4-1-1">
 <div class="para">We have talked about two limit-based definitions of derivatives:</div>
@@ -1109,78 +1077,18 @@ f'(x) \amp = \lim_{\Delta x \to 0} \left(\frac{f(x+\Delta x)-f(x)}{\Delta x}\rig
 <div class="para" id="ex-IntroDerivatives-5-2-1-1">
 <span class="process-math">\(f(x) = 5x+2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para logical" id="ex-IntroDerivatives-5-2-2-1">
-<div class="displaymath process-math" id="ex-IntroDerivatives-5-2-2-1-1">
-\begin{align*}
-f'(x) \amp = 5\\
-f'(1) \amp = 5\\
-f'(2) \amp = 5\\
-f'(3) \amp = 5\\
-f'(4) \amp = 5
-\end{align*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 5.a.1"><a href="#ex-IntroDerivatives-5-2-2" title="Copy heading and permalink for Solution 5.a.1" aria-label="Copy heading and permalink for Solution 5.a.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 5.a"><a href="#ex-IntroDerivatives-5-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-IntroDerivatives-5-3-1-1">
 <span class="process-math">\(f(x) = \sqrt{x+4}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para logical" id="ex-IntroDerivatives-5-3-2-1">
-<div class="displaymath process-math" id="ex-IntroDerivatives-5-3-2-1-1">
-\begin{align*}
-f'(x) \amp = \dfrac{1}{2\sqrt{x+4}}\\
-f'(1) \amp = \dfrac{1}{2\sqrt{5}}\\
-f'(2) \amp = \dfrac{1}{2\sqrt{6}}\\
-f'(3) \amp = \dfrac{1}{2\sqrt{7}}\\
-f'(4) \amp = \dfrac{1}{2\sqrt{8}}
-\end{align*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 5.b.1"><a href="#ex-IntroDerivatives-5-3-2" title="Copy heading and permalink for Solution 5.b.1" aria-label="Copy heading and permalink for Solution 5.b.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 5.b"><a href="#ex-IntroDerivatives-5-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-IntroDerivatives-5-4-1-1">
 <span class="process-math">\(f(x) = x^3-x\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para logical" id="ex-IntroDerivatives-5-4-2-1">
-<div class="displaymath process-math" id="ex-IntroDerivatives-5-4-2-1-1">
-\begin{align*}
-f'(x) \amp = 3x^2-1\\
-f'(1) \amp = 2\\
-f'(2) \amp = 11\\
-f'(3) \amp = 26\\
-f'(4) \amp = 47
-\end{align*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 5.c.1"><a href="#ex-IntroDerivatives-5-4-2" title="Copy heading and permalink for Solution 5.c.1" aria-label="Copy heading and permalink for Solution 5.c.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 5.c"><a href="#ex-IntroDerivatives-5-4" title="Copy heading and permalink for Task 5.c" aria-label="Copy heading and permalink for Task 5.c">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-5-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-IntroDerivatives-5-5-1-1">
 <span class="process-math">\(f(x) = \dfrac{x+1}{x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-5-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para logical" id="ex-IntroDerivatives-5-5-2-1">
-<div class="displaymath process-math" id="ex-IntroDerivatives-5-5-2-1-1">
-\begin{align*}
-f'(x) \amp = -\frac{1}{x^2}\\
-f'(1) \amp = -1\\
-f'(2) \amp = -\frac{1}{4}\\
-f'(3) \amp = -\frac{1}{9}\\
-f'(4) \amp = -\frac{1}{16}
-\end{align*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 5.d.1"><a href="#ex-IntroDerivatives-5-5-2" title="Copy heading and permalink for Solution 5.d.1" aria-label="Copy heading and permalink for Solution 5.d.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 5.d"><a href="#ex-IntroDerivatives-5-5" title="Copy heading and permalink for Task 5.d" aria-label="Copy heading and permalink for Task 5.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 5"><a href="#ex-IntroDerivatives-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="ex-IntroDerivatives-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-IntroDerivatives-6-1"><div class="para" id="ex-IntroDerivatives-6-1-1">Find the derivative function for each of the following functions.<div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
@@ -1188,62 +1096,26 @@ f'(4) \amp = -\frac{1}{16}
 <div class="para" id="ex-IntroDerivatives-6-2-1-1">
 <span class="process-math">\(f(x) = {4-\sqrt{x}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-IntroDerivatives-6-2-2-1">
-<span class="process-math">\(f'(x)= -\dfrac{1}{2\sqrt{x}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 6.a.1"><a href="#ex-IntroDerivatives-6-2-2" title="Copy heading and permalink for Solution 6.a.1" aria-label="Copy heading and permalink for Solution 6.a.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 6.a"><a href="#ex-IntroDerivatives-6-2" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-IntroDerivatives-6-3-1-1">
 <span class="process-math">\(f(x) = {\dfrac{5}{x-2}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-IntroDerivatives-6-3-2-1">
-<span class="process-math">\(f'(x)= -\dfrac{5}{(x-2)^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 6.b.1"><a href="#ex-IntroDerivatives-6-3-2" title="Copy heading and permalink for Solution 6.b.1" aria-label="Copy heading and permalink for Solution 6.b.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 6.b"><a href="#ex-IntroDerivatives-6-3" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-6-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-IntroDerivatives-6-4-1-1">
 <span class="process-math">\(f(x) = {3\sqrt{x-1}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-IntroDerivatives-6-4-2-1">
-<span class="process-math">\(f'(x)= \dfrac{3}{2\sqrt{x-1}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 6.c.1"><a href="#ex-IntroDerivatives-6-4-2" title="Copy heading and permalink for Solution 6.c.1" aria-label="Copy heading and permalink for Solution 6.c.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 6.c"><a href="#ex-IntroDerivatives-6-4" title="Copy heading and permalink for Task 6.c" aria-label="Copy heading and permalink for Task 6.c">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-6-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-IntroDerivatives-6-5-1-1">
 <span class="process-math">\(f(x) = {x^2+3x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-6-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-IntroDerivatives-6-5-2-1">
-<span class="process-math">\(f'(x)= 2x+3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 6.d.1"><a href="#ex-IntroDerivatives-6-5-2" title="Copy heading and permalink for Solution 6.d.1" aria-label="Copy heading and permalink for Solution 6.d.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 6.d"><a href="#ex-IntroDerivatives-6-5" title="Copy heading and permalink for Task 6.d" aria-label="Copy heading and permalink for Task 6.d">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-6-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="ex-IntroDerivatives-6-6-1-1">
 <span class="process-math">\(f(x) = {\dfrac{1}{x^2+1}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-6-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-IntroDerivatives-6-6-2-1">
-<span class="process-math">\(f'(x)= -\dfrac{2x}{(x^2+1)^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 6.e.1"><a href="#ex-IntroDerivatives-6-6-2" title="Copy heading and permalink for Solution 6.e.1" aria-label="Copy heading and permalink for Solution 6.e.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 6.e"><a href="#ex-IntroDerivatives-6-6" title="Copy heading and permalink for Task 6.e" aria-label="Copy heading and permalink for Task 6.e">🔗</a></div></article><article class="task exercise-like" id="ex-IntroDerivatives-6-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="ex-IntroDerivatives-6-7-1-1">
 <span class="process-math">\(f(x) = {\sqrt{x^2+1}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-IntroDerivatives-6-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="ex-IntroDerivatives-6-7-2-1">
-<span class="process-math">\(f'(x)= \dfrac{x}{\sqrt{x^2+1}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntroDerivatives-6-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 6.f.1"><a href="#ex-IntroDerivatives-6-7-2" title="Copy heading and permalink for Solution 6.f.1" aria-label="Copy heading and permalink for Solution 6.f.1">🔗</a></div>
-</div></details></div>
 <div class="autopermalink" data-description="Task 6.f"><a href="#ex-IntroDerivatives-6-7" title="Copy heading and permalink for Task 6.f" aria-label="Copy heading and permalink for Task 6.f">🔗</a></div></article><div class="autopermalink" data-description="Exercise 6"><a href="#ex-IntroDerivatives-6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div></article><div class="autopermalink" data-description="Practice Problems"><a href="#ex-IntroDerivatives" title="Copy heading and permalink for Practice Problems" aria-label="Copy heading and permalink for Practice Problems">🔗</a></div></section><div class="autopermalink" data-description="Section 2.1: Introduction to Derivatives"><a href="#sec-IntroDerivatives" title="Copy heading and permalink for Section 2.1: Introduction to Derivatives" aria-label="Copy heading and permalink for Section 2.1: Introduction to Derivatives">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-Derivatives.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-InterpretingDerivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

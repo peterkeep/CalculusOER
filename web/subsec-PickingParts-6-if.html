@@ -137,7 +137,7 @@ window.MathJax = {
     </conditionalContent>
   </math>
   <!-- Integral terms -->
-  <math name="uv" simplify="full"> $u $v</math>
+  <math name="uv" simplify="full"> ($u)($v)</math>
   <math name="vdu" simplify="full"> $v $du</math> 
 
 </setup>
@@ -145,7 +145,7 @@ window.MathJax = {
 <p>
   <em>Instructions:</em> Consider the following integral. We'll perform integration by parts on it and explore how our selection of the parts might impact things.
 </p>
-<me>\int \left($f\right)$g \;dx</me>
+<me>\int \left($f\right)\left($g\right) \;dx</me>
 
 <p>
   Select your choice for <m>u</m> (the part that you'll differentiate) and <m>dv</m> (the part that you'll antidifferentiate).
@@ -179,32 +179,26 @@ window.MathJax = {
 <p>
   When we apply integration by parts, we get:
   <md>
-    <mrow> \int $f $g\;dx \amp = uv-\int v\;du</mrow>
+    <mrow> \int \left($f\right) \left($g\right)\;dx \amp = uv-\int v\;du</mrow>
     <mrow> \amp =$uv- \int \left($vdu\right)\;dx</mrow>
   </md>
   Do you think this selection is reasonable? How would you antidifferentiate this new function in the integral part of the formula?
 </p>
 
-<aside>
-  <title>Feedback</title>
-  <conditionalContent>
-    <case condition="not($uISf or $uISg) or not($dvISf or $dvISg)">
-      <p>
-        Finish making your selections for <m>u</m> and <m>dv</m>. Which of these functions would you like to differentiate, and which of these functions would you like to antidifferentiate?
-      </p>
-    </case>
-    <case condition="($uISf and $dvISf) or ($uISg and $dvISg)">
-      <p>
-        Wait, did you select <m>$uChoice</m> and <m>$dvChoice</m>? Both of these are using the same function: <m>$u</m>. How can you change your choice, so that your choices include both functions?
-      </p>
-    </case>
-    <case condition="$uISg and $dvISf">
-      <p>
-        Hm...this uses both functions in the formula, but the resulting integral looks worse! Antidifferentiating <m>(<derivative>$v</derivative>)</m> seemed to be a bad idea here.
-      </p>
-    </case>
-    <case condition="$uISf and $dvISg">
-      <p>
+<feedback condition="not($uISf or $uISg) or not($dvISf or $dvISg)">
+  Finish making your selections for <m>u</m> and <m>dv</m>. Which of these functions would you like to differentiate, and which of these functions would you like to antidifferentiate?
+</feedback>
+
+<feedback condition="($uISf and $dvISf) or ($uISg and $dvISg)">
+  Wait, did you select <m>$uChoice</m> and <m>$dvChoice</m>? Both of these are using the same function: <m>$u</m>. How can you change your choice, so that your choices include both functions?
+</feedback>
+
+<feedback condition="$uISg and $dvISf">
+  Hm...this uses both functions in the formula, but the resulting integral looks worse! Antidifferentiating <m>(<derivative>$v</derivative>)</m> seemed to be a bad idea here.
+</feedback>
+
+<feedback condition="$uISf and $dvISg">
+  <p>
         This is great! You got to differentiate <m>$u</m> and antidifferentiate <m><derivative>$v</derivative></m>. The resulting integral is hopefully something a bit easier to approach!
       </p>
       <p>
@@ -212,11 +206,7 @@ window.MathJax = {
         <me>\int $vdu \;dx</me>
         What would you select for the part you want to differentiate? What about the part you'd like to antidifferentiate?
       </p>
-    </case>
-  </conditionalContent>
-</aside>
-
-
+</feedback>
       </script>
 </div></div>
 </body>
