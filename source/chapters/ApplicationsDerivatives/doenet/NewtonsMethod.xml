@@ -31,13 +31,14 @@
 <p><em>Instructions:</em> This is a visualization of our iterative approximation of <m>\sqrt{2}</m> by estimating solutions to <m>x^2-2=0</m>. Click the buttons below to move forward one iteration/step or backward one interation/step. For each step, explore how we use a linear approximation (centered at our previous estimation) to calculate a new estimation of the <m>x</m>-intercept.</p>
 
 <p>
+  <updateValue target="$iter" newValue="$iter-1" disabled="$iter &lt;= 0">
+    <label>Go backward a step.</label>
+  </updateValue>
+  
   <updateValue target="$iter" newValue="$iter+1" disabled="$iter >= 4">
     <label>Go forward a step.</label>
   </updateValue>
 
-  <updateValue target="$iter" newValue="$iter-1" disabled="$iter &lt;= 0">
-    <label>Go backward a step.</label>
-  </updateValue>
 </p>
 
 <graph xmin="-0.1" xmax="2.5" ymin="-2.2" ymax="5">
