@@ -132,6 +132,11 @@
         Ok, actually, this will be an impossible task. There is no closed-form formula for this. We cannot simply find <m>\displaystyle \lim_{n\to\infty}S_n</m> in the way that we've found the limit of the sequence of terms.
       </p>
     </note>
+    <interactive platform="doenetml" width="100%" aspect="1.4:1">
+        <slate surface="doenetml">
+            <xi:include parse="text" href="./doenet/PartialSums.xml"/>
+        </slate>
+    </interactive>
   </subsection>
   <subsection xml:id="subsec-SpecialSeries">
     <title>Special Series</title>

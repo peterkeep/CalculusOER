@@ -1,0 +1,90 @@
+<setup>
+  <!-- Point colors -->
+  <repeatForSequence name="seqStyle"
+  from="1"
+  to="10"
+  valueName="k">
+  <conditionalContent>
+    <case condition="$k<=$term">
+      1
+    </case>
+    <case condition="$k>$term">
+      6
+    </case>
+  </conditionalContent>
+</repeatForSequence>
+  <repeatForSequence name="sumStyle"
+  from="1"
+  to="10"
+  valueName="k">
+  <conditionalContent>
+    <case condition="$k=$term">
+      1
+    </case>
+    <case>
+      6
+    </case>
+  </conditionalContent>
+</repeatForSequence>
+  <!-- Sequence and Partial Sum -->
+  <repeatForSequence name="a"
+   from="1"
+   to="10"
+   valueName="k">
+   <point styleNumber="$seqStyle[$k]" fixed>($k,$ak[$k])</point>
+  </repeatForSequence>
+  <repeatForSequence from="1" to="10" valueName="n" name="Sk">
+    <sum simplify="full">
+      <repeatForSequence from="1" to="$n" valueName="k">
+        <math>$ak[$k]</math>
+      </repeatForSequence>
+    </sum>
+  </repeatForSequence>
+  <repeatForSequence from="1" to="10" valueName="k" name="S">
+    <point styleNumber="$sumStyle[$k]" fixed>($k, $Sk[$k])</point>
+  </repeatForSequence>
+  <!-- Graph bounds -->
+  <number name="aYMax"><max> $a.y </max></number>
+  <number name="aYMin"><min> $a.y 0</min></number>
+  <number name="SYMax"><max> $S.y</max></number>
+  <number name="SYMin"><min> $S.y 0</min></number>
+</setup>
+
+<p>
+  <em>Instructions:</em> Consider some sequence <m>\left\{a_k\right\}_{k=1}^\infty</m>. Input the first 10 terms of your sequence below to see the graph of the sequence terms and the graph of the sequence of partial sums for the series <m>\displaystyle\sum_{k=1}^\infty a_k</m>.
+</p>
+
+<p>Input the values for your sequence here:</p>
+
+<repeatForSequence 
+          name="ak"
+          from="1"
+          to="10" valueName="k" asList>
+  <mathInput prefill="1/$k"/>
+</repeatForSequence>
+
+<sideBySide>
+  <p><me>\{a_k\}_{k=1}^{\infty}</me></p>
+  <p><me>\left\{S_n\right\}_{n=1}^{\infty}</me></p>
+</sideBySide>
+
+<sideBySide>
+  <graph xMin="-1" xMax="10.5" yMin="$aYMin-0.2" yMax="$aYMax+0.2" fixAxes showBorder="false">
+    $a
+  </graph>
+
+  <graph xMin="-1" xMax="10.5" yMin="$SYMin-0.5" yMax="$SYMax+1" fixAxes showBorder="false">
+    $S
+  </graph>
+</sideBySide>
+
+<p>Which partial sum would you like to look at? Change the number of terms using the slider below!</p>
+
+<slider name="term" from="1" to="10" step="1" initialValue="5">
+  <label><m>n</m></label>
+</slider>
+
+<p><me>S_{$term} = \sum_{k=1}^{$term} a_k = $Sk[$term]</me></p>
+
+<p>Based on what you see here, do you think this series would converge?</p>
+
