@@ -93,10 +93,8 @@ window.MathJax = {
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-                    <!-- https://www.doenet.org/portfolioeditor/_x1uotFzk6sJ6KDndtREDH/_98MNRwBF4AP31QeqYQEFS -->
-
-<setup>
-  <circle name="circle"/>
+                    <setup>
+  <circle name="circle" fixed/>
   <function name="f" domain="[cos(7pi/15), cos(pi/15)]">sqrt(1-x^2)</function>
   <point name="point" coords="(cos(pi/5),sin(pi/5))" draggable="true" showCoordsWhenDragging="false">
     <constraints>
@@ -108,7 +106,7 @@ window.MathJax = {
       <case condition="$point.y >=0">
         ($point.x/2, $point.y/2+0.1)
       </case>
-      <case condition="$point.y <0">
+      <case condition="$point.y &lt;0">
         ($point.x/2, $point.y/2-0.1)
       </case>
     </conditionalContent>
@@ -118,30 +116,29 @@ window.MathJax = {
       <case condition="$point.y >=0">
         ($point.x/2, -0.1)
       </case>
-      <case condition="$point.y <0">
+      <case condition="$point.y &lt;0">
         ($point.x/2, 0.1)
       </case>
     </conditionalContent>
   </point>
 </setup>
 
-<graph xmin="-0.05" xmax="1.35" ymin="-1.15" ymax="1.15" identicalAxisScales
-  showNavigation="false" fixAxes displayXAxisTickLabels="false" displayYAxisTickLabels="false" size="small">
+<graph xmin="-0.05" xmax="1.35" ymin="-1.15" ymax="1.15" identicalAxisScales="true" showNavigation="false" fixAxes="true" displayXAxisTickLabels="false" displayYAxisTickLabels="false" size="small">
   $circle
   $point
-  <lineSegment endpoints="(0,0) $point" styleNumber="5" endpointsDraggable="false" draggable="false"/>
-  <lineSegment endpoints="(0,0) ($point.x, 0)" endpointsDraggable="false" styleNumber="2" draggable="false"/>
+  <lineSegment endpoints="(0,0) $point" styleNumber="5" endpointsDraggable="false" draggable="false" />
+  <lineSegment endpoints="(0,0) ($point.x, 0)" endpointsDraggable="false" styleNumber="2" draggable="false" />
   <label anchor="$ancx" styleNumber="2">
     <m>\sqrt{1-x^2}</m>
   </label>
-  <lineSegment endpoints="$point ($point.x, 0)" endpointsDraggable="false" styleNumber="2" draggable="false"/>
+  <lineSegment endpoints="$point ($point.x, 0)" endpointsDraggable="false" styleNumber="2" draggable="false" />
   <label anchor="($point.x+0.03, $point.y/2)" positionFromAnchor="right" styleNumber="2">
     <conditionalContent>
       <case condition="$point.y>=0">
-      <m>x\\(x\geq0)</m>
+      <m>x\;(x\geq0)</m>
       </case>
       <case condition="$point.y<0">
-      <m>x\\(x\lt0)</m>
+      <m>x\(x\lt0)</m>
       </case>
     </conditionalContent>
   </label>
@@ -151,7 +148,9 @@ window.MathJax = {
   <label anchor="$ancHyp">
     <m>1</m>
   </label>
-  
+  <shortDescription>
+    Quadrants 1 and 4 of a unit circle with an angle marked. The angle is y, the height is x, and the horizontal component is the square root of 1 minus x squared.
+  </shortDescription>
 </graph>
                 </script>
 </div></div>
