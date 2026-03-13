@@ -1,7 +1,5 @@
-<!-- https://www.doenet.org/portfolioeditor/_JPdtQx1FB5PFypycLn0Uo/_SL9cgYHHEBiWKiA1Ibw39 -->
-
 <setup>
-  <circle name="circle"/>
+  <circle name="circle" fixed/>
   <point name="point" coords="(cos(pi/5),sin(pi/5))" draggable="true" showCoordsWhenDragging="false">
     <constraints>
       <constrainTo>$circle</constrainTo>
@@ -61,7 +59,10 @@
   </label>
   <label anchor="$ancHyp">
     <m>1</m>
-  </label>  
+  </label>
+  <shortDescription>
+    Quadrants 1 and 2 of the unit circle. The angle is labeled y, the vertical component is labeled sine of y, and the horizontal component is labeled cosine of y.
+  </shortDescription>
 </graph>
 <aside><title>Hint</title>
 <p>
