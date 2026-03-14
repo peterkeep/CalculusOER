@@ -51,14 +51,17 @@
   <conditionalContent>
     <case condition="$dfGraph = true">
       <graph fixAxes xMin="-6" xMax="6" yMin="-5" yMax="3" identicalAxisScales>
-        <caption>Test</caption>
         $df
         <point styleNumber="2">
           ($P.x, $$df($P.y))
           <constrainTo>
             $df
           </constrainTo>
+          <label><m>($P.x, $$df($P.y))</m></label>
         </point>
+        <shortDescription>
+          Graph of the derivative of the polynomial function, curving up and down.
+        </shortDescription>
       </graph>
     </case>
   </conditionalContent>
