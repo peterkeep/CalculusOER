@@ -10,6 +10,12 @@
     <p>
       This can feel like a silly question, since we're calculating derivatives and getting used to finding them. But what is a derivative?
     </p>
+    <interactive platform="doenetml" width="90%" aspect="1.1:1">
+      <slate surface="doenetml">
+        <xi:include parse="text" href="./doenet/OrderDerivatives.xml"/>
+      </slate>
+    </interactive>
+
     <p>
       In this section, we just want to remind ourselves of what this object<mdash/>the derivative<mdash/>is, how we should hold it in our minds as we move through the course, and then practice being flexible with this interpretation.
     </p>
