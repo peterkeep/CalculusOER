@@ -93,9 +93,7 @@ window.MathJax = {
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-                    <!-- https://www.doenet.org/portfolioeditor/_l58gjRScN3IhdJk6zumuQ/_Uygz0k1GstfCSg1WhEjPH -->
-
-<setup>
+                    <setup>
   <function name="arcs" styleNumber="1">$A*arcsin(x)+$B</function>
   <curve name="cosy" variable="t" styleNumber="6">(cos(t),t)</curve>
   <function name="arcc" styleNumber="2">arccos(x)</function>
@@ -103,31 +101,31 @@ window.MathJax = {
 </setup>
 <p><em>Instructions:</em> Fill in values in the inverse sine function below to change the plot. Try to find values that will make it line up with the plot of <m>y=\cos^{-1}(x)</m>.</p>
 
-<p><m>y=</m><mathInput name="A" prefill="1"/><m>\sin^{-1}(x)+</m><mathInput name="B" prefill="0"/></p>
-<graph xmin="-2.2" xmax="2.2" ymin="-2" ymax="4" identicalAxisScales size="small" yTickScaleFactor="pi" displayYAxisTickLabels="false" fixAxes>
+<p><m>y=</m><mathInput name="A" prefill="1" /><m>\sin^{-1}(x)+</m><mathInput name="B" prefill="0" /></p>
+<graph xmin="-2.2" xmax="2.2" ymin="-2" ymax="4" identicalAxisScales="true" size="small" yTickScaleFactor="pi" displayYAxisTickLabels="false" fixAxes="true">
   $arcs
-  <label styleNumber="1" anchor="($A*sin($y-$B)+0.1, $y+0.1)" 
-    positionFromAnchor="top" draggable="false">
+  <label styleNumber="1" anchor="($A*sin($y-$B)+0.1, $y+0.1)" positionFromAnchor="top" draggable="false">
     <m>y=$A\cdot\sin^{-1}(x)+$B</m>
   </label>
   $cosy
   $arcc
-  <label styleNumber="2" anchor="(-1.5,pi/2)" 
-    positionFromAnchor="right" draggable="false">
+  <label styleNumber="2" anchor="(-1.5,pi/2)" positionFromAnchor="right" draggable="false">
     <m>y=\cos^{-1}(x)</m>
   </label>
+  <shortDescription>
+    Graph of the inverse cosine function overlayed with the graph of the inverse sine function as well as x equals sine of y.
+  </shortDescription>
 </graph>
 
-<conditionalContent>
-  <case condition="($A, $B)=(-1,pi/2)">
+<p>
+  What values can you use to make these curves match? What kinds of transformations should you apply to the <m>y=\sin^{-1}(x)</m> function in order to make it match <m>y=\cos^{-1}(x)</m>?
+</p>
+
+<feedback condition="($A, $B)=(-1,pi/2)">
     <p>Nice job! You're right! 
       <me>\cos^{-1}(x) = -\sin^{-1}(x)+\frac{\pi}{2}</me>
     </p>
-  </case>
-  <else>
-    <p>Hm...What values can you use to make these curves match? What kinds of transformations should you apply to the <m>y=\sin^{-1}(x)</m> function in order to make it match <m>y=\cos^{-1}(x)</m>?</p>
-  </else>
-</conditionalContent>
+</feedback>
                 </script>
 </div></div>
 </body>
