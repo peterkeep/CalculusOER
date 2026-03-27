@@ -41,17 +41,17 @@
     <task>
         <statement>
             <p>
-                How does the partial sum, <m>\displaystyle \sum_{k=0}^n a_k</m> compare to the Riemann sum for <m>f(x)</m> from <m>x=0</m> to <m>x=n</m> with <m>n</m> rectangles?
+                How does the partial sum, <m>\displaystyle \sum_{k=0}^n a_k</m> compare to the Riemann sum for <m>f(x)</m> from <m>x=0</m> to <m>x=n</m> with <m>n+1</m> rectangles?
             </p>
         </statement>
         <hint>
             <p>
-                It might help to visualize the Left Riemann sum!
+                It might help to visualize the Left Riemann sum, specifically!
             </p>
         </hint>
         <solution>
             <p>
-                Hopefully we can see that the partial sum, <m>\displaystyle \sum_{k=0}^n a_k</m> is the exact same thing as the left Riemann sum!
+                Hopefully we can see that the partial sum, <m>\displaystyle \sum_{k=0}^n a_k</m> is the exact same thing as the Left Riemann sum!
             </p>
         </solution>
     </task>
