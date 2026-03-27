@@ -177,7 +177,7 @@
               <mrow>\int_{x=0}^\infty \frac{1}{x^2+1}\;dx \amp = \lim_{t\to\infty}\int_{x=0}^{x=t}\frac{1}{x^2+1}\;dx</mrow>
               <mrow> \amp = \lim_{t\to\infty} \left(\tan^{-1}(x)\right)\bigg|_{x=0}^{x=t}</mrow>
               <mrow> \amp = \lim_{t\to\infty}\tan^{-1}(t) - \tan^{-1}(0)</mrow>
-              <mrow> \amp = \frac{\pi}{2} - \frac{\pi}{4}</mrow>
+              <mrow> \amp = \frac{\pi}{2} - 0</mrow>
               <mrow> \amp = \frac{\pi}{4}</mrow>
             </md>
             This integral converges.
