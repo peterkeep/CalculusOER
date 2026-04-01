@@ -37,7 +37,7 @@
     <exercise>
         <introduction>
             <p>
-                For each of the following alternating series, determine whether the series diverges, converges conditionally, or converges absolutely.
+                For each of the following alternating series, determine whether the series converges or diverges.
             </p>
         </introduction>
         <task>
@@ -100,6 +100,48 @@
             <statement>
                 <p>
                     <m>\displaystyle\sum_{k=0}^\infty \left( \frac{\cos(\pi k)}{e^k + \pi^k} \right)</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                In <xref ref="ex-IntegralTestProblems" text="custom">Section 8.4, Practice Problem 2</xref>, you used the Integral Test to see if some series converged or diverged. Now, consider the alternating series below: test to see if they diverge, converge conditionally, or converge absolutely.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left(\frac{(-1)^{k+1}(k)}{k^2+1}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left(\frac{(-1)^{k+1}(k)}{e^k}\right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=2}^\infty \left( \frac{(-1)^{k}}{k\ln(k)} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-1)^{k+1}(k^2+k)}{e^k} \right)</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-1)^{k+1}}{k^2+1} \right)</m>
                 </p>
             </statement>
         </task>
