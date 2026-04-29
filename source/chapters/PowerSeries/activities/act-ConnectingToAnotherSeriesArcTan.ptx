@@ -10,7 +10,7 @@
                 <mrow>\cos(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k}}{(2k)!} \amp \text{on } (-\infty,\infty)</mrow>
                 <mrow>\ln(1+x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{k+1}}{k+1} \amp \text{on } (-1,1]</mrow>
             </md>
-            We're going to build a Taylor series for a logarithmic function:
+            We're going to build a Taylor series for the inverse tangent function:
             <me>
                 y=\tan^{-1}(x)
             </me>.
