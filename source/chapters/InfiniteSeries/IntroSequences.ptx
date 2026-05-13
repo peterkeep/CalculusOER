@@ -49,7 +49,7 @@
             </statement>
         </definition>
         <p>
-            These definitions are relatively limited. You might, for instance, know of a <em>very</em> famous sequence that is defined recursively by having each term being the sum of the <em>two</em> previous terms. Our study of sequences will be brief and all pointing towards infinite series, so there are a lot of nuances about sequences that we will skip.
+            These definitions are relatively limited. You might, for instance, know of a <em>very</em> famous sequence that is defined recursively by having each term being the sum of the <em>two</em> previous terms. Our study of sequences will be brief and will be leading us towards infinite series, so there are a lot of nuances about sequences that we will skip.
         </p>
     <xi:include href="./activities/act-FirstSequencesAgain.ptx" />
     <example xml:id="ex-PracticeWritingTerms">
@@ -91,7 +91,7 @@
     <xi:include href="./activities/act-DescribingSequences.ptx" />
     <xi:include href="./activities/act-WriteSequences.ptx" />
     <p>
-        Before moving on, we should think about a couple of notes:
+        Before moving on, we should make a couple of notes:
         <ul>
             <li>
                 <p>
@@ -112,7 +112,7 @@
             </li>
             <li>
                 <p>
-                    In general, it can be pretty difficult to find either of these formulas for a given sequence of numbers. In fact, in any sequence where only the first few terms are given, we can find an infinite number of formulas that provide those first few terms and then deviate on to any other numbers. We cannot easily extrapolate onto only one <q>pattern</q> or formula. Because of this, we'll try to limit our work as much as we can to situations where we have the formula defining the sequences.
+                    In general, it can be pretty difficult to find either of these formulas for a given sequence of numbers. In fact, in any sequence where only the first few terms are given, we can find an infinite number of formulas that provide those first few terms and then deviate to any other numbers. We cannot easily extrapolate onto only one <q>pattern</q> or formula. Because of this, we'll try to limit our work as much as we can to situations where we have the formula defining the sequences.
                 </p>
             </li>
         </ul>
@@ -208,7 +208,7 @@
                     We say that <m>a_k</m> is constant if <m>a_{k+1}=a_k</m>, but this is a very boring sequence and we will likely not think terribly hard about these kinds of sequences.
                 </p>
                 <p>
-                    Sometimes we might say that a sequence is <term>eventually non-increasing</term> if there is some <m>K\gt1</m>, and the sequence is non-increasing for <m>k=K, K+1, K+2, ...</m>, and similarly for <term>eventually non-decreasing</term>.
+                    Sometimes we might say that a sequence is <term>eventually decreasing</term> (or <term>eventually non-increasing</term>) if there is some <m>K\gt1</m>, and the sequence is decreasing (or non-increasing) for <m>k=K, K+1, K+2, ...</m>, and similarly for <term>eventually increasing</term> or <term>eventually non-decreasing</term>.
                 </p>
             </statement>
         </definition>
@@ -273,7 +273,7 @@
         In an explicit formula, the terms themselves are a function of <m>k</m>, the index. This means that we can simply apply a limit as <m>k\to\infty</m> to understand whether or not the sequence converges and what it might converge to. These limits could be tricky, but we have the tools to evaluate them! In a recursion relation, though, each term is not a function of the index, which means we can't easily apply a limit as <m>k\to\infty</m> to the term definition.
     </p>
     <p>
-        We'll be able to apply a limit, but it will feel a bit different: we're going to go into the limit work under the assumption that the limit exists. Let's see how it goes.
+        We'll be able to apply a limit, but it will feel a bit different: we're going to go into the computational work for the limit already assuming that the limit exists. Let's see how it goes.
     </p>
     <example xml:id="ex-FirstRecursiveSequence">
         <introduction>

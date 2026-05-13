@@ -26,7 +26,7 @@
     </p>
   </assemblage>
   <p>
-    When we select the parts for our integral, we are selecting a function to be labeled <m>u</m> and a function to be labeled as <m>dv</m>. We begin with one of the pieces of the product rule, a function multiplied by some other function's derivative. It is important to recognize that we do different things to these functions: for one of them, <m>u</m>, we need to find the derivative, <m>du</m>. For the other, <m>dv</m>, we need to find an antiderivative, <m>b</m>. Because of these differences, it is important to build some good intuition for how to select the parts. 
+    When we select the parts for our integral, we are selecting a function to be labeled <m>u</m> and a function to be labeled as <m>dv</m>. We begin with one of the pieces of the product rule, a function multiplied by some other function's derivative. It is important to recognize that we do different things to these functions: for one of them, <m>u</m>, we need to find the derivative, <m>du</m>. For the other, <m>dv</m>, we need to find an antiderivative, <m>v</m>. Because of these differences, it is important to build some good intuition for how to select the parts. 
   </p>
   </subsection>
   <subsection xml:id="subsec-PickingParts">
@@ -49,7 +49,10 @@
     </p>
     <aside>
       <p>
-        It is common for students to want to place functions into sort of hierarchy or classification guidelines for choosing the parts. Some students have found that the acronym LIPET (logs, inverse trig, power functions, exponentials, and trig functions) can be a useful tool for selecting the parts. When you have two different types of functions, it might help to select <m>u</m> to be whichever function shows up first in that list.
+        It is common for students to want to place functions into some sort of hierarchy or classification guidelines for choosing the parts. Some students have found that the acronym LIPET (logs, inverse trig, power functions, exponentials, and trig functions) can be a useful tool for selecting the parts. When you have two different types of functions, it might help to select <m>u</m> to be whichever function shows up first in that list.
+      </p>
+      <p>
+        This can be a helpful tool to start, but we shouldn't tie ourselves too tightly to a mnemonic like this. Instead, we should focus on building intuition beyond a memory tool like this.
       </p>
     </aside>
     <example xml:id="ex-2xarctan">
@@ -137,7 +140,7 @@
       What if we chose our parts differently? Not the <m>u</m> and <m>dv</m> parts, though, since we still haven't figured out how to antidifferentiate <m>\tan^{-1}(x)</m>. But we get one more choice!
     </p>
     <p>
-      Once we choose <m>u</m>, we don't really get a separate choice for <m>du</m>: it's simply the derivative of <m>u</m> with regard to <m>x</m> multiplied by the differential <m>dx</m>. But consider our choice of <m>dv</m>, and the subsequent process of finding <m>v</m>. Yes, there's only one possible answer, but in a much more real sense, there isn't just one possible answer. There are an infinite number of them! We know, due to the <xref ref="thm-MVT" text="title"/> and then later due to <xref ref="thm-OffByConstant"/>, that there are an infinite number of antiderivatives, all differing by, at most, a constant term. So let's pick a more appropriate antiderivative!
+      Once we choose <m>u</m>, we don't really get a separate choice for <m>du</m>: it's simply the derivative of <m>u</m> with regard to <m>x</m> multiplied by the differential <m>dx</m>. But consider our choice of <m>dv</m>, and the subsequent process of finding <m>v</m>. In a sense, yes, there's only one possible answer for the antiderivative, but we also know that we have a lot of flexibility in our choice of antiderivative. There are an infinite number of them, all in the same <em>family</em> of antiderivatives! We know, due to the <xref ref="thm-MVT" text="title"/> and then later due to <xref ref="thm-OffByConstant"/>, that there are an infinite number of antiderivatives, all differing by, at most, a constant term. So let's pick a more appropriate antiderivative!
     </p>
     <example>
       <statement>

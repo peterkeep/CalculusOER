@@ -30,8 +30,17 @@
   <subsection xml:id="subsec-ChainRule">
     <title>The Chain Rule, Intuitively</title>
     <p>
-      Before we build the Chain Rule for differentiating composed functions, we should talk about some notation. Earlier (in <xref ref="subsec-DerivativeNotation" text="title"/>) we talked about the derivative notation, <m>\dydx</m>. One of the things we mentioned is that while we know that the derivative is an instantaneous rate of change, this notation is helpful to tell us <em>what</em> is changing with regard to <em>what</em>.
+      Before we build the Chain Rule for differentiating composed functions, we should talk about some notation. Earlier (in <xref ref="subsec-DerivativeNotation" text="title"/>) we talked about the derivative notation, <m>\dydx</m>.
+       One of the things we mentioned is that while we know that the derivative is an instantaneous rate of change, this notation is helpful to tell us <em>what</em> is changing with regard to <em>what</em>.
     </p>
+    <aside>
+      <p>
+        This notation, <m>\dydx</m>, is called <term>Leibniz's Notation</term>, named after Gottfried Wilhelm Leibniz. Leibniz used <m>dy</m> and <m>dx</m> to represent infinitely small changes or increments in the <m>y</m> and <m>x</m> variables. This was meant to be a nod to <m>\Delta y</m> and <m>\Delta x</m> being used as finite changes in <m>y</m> and <m>x</m>.
+      </p>
+      <p>
+        While the general idea of calculus using these infinitely small changes hasn't persisted (we now use the concept of a limit to formalize the logic), we still use the notation where we can as a nod to Leibniz's contributions to the development of calculus and analysis as a field of mathematics.
+      </p>
+    </aside>
     <p>
       In <m>\dydx</m>, we are calculating how much the <m>y</m>-variable changes when <m>x</m> increases. If we talked about <m>\dd{f}{t}</m>, then we are discussing how much <m>f</m> changes for an increase in <m>t</m>, whatever these variables represent.
     </p>

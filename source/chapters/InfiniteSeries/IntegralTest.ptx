@@ -318,8 +318,13 @@
         </li>
       </ol>
     </p>
+    <note>
+      <p>
+        We could pretty easily make a version of the Integral Test that would work for functions that are negative and increasing.
+      </p>
+    </note>
     <p>
-      We talked about why it's nice to have a monotonic sequence of terms, but what happens when they aren't? Briefly, we can say that there are plenty of examples where the series and the integral may not behave similarly. For an easy to see example, let's consider the following series:
+      We talked about why it's nice to have a sequence of terms that correspond with a monotonic function, but what happens when they don't? Briefly, we can say that there are plenty of examples where the series and the integral may not behave similarly. For an easy to see example, let's consider the following series:
       <me>
         \sum_{k=0}^{\infty} \sin^2(\pi\cdot k)
       </me>.

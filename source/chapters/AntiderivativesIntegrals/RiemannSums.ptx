@@ -19,11 +19,6 @@
         <li>
           <p>
             Flexibility. We want to be able to apply our approach to an area defined by any curve.
-            <aside>
-              <p>
-                This is the problem with Archimedes' method: it only worked for areas defined by parabolas. Once we change our function to something else, Archimedes would have to come up with a completely new area formula for calculation. The techniques we're looking at now have the advantage of flexibility!
-              </p>
-            </aside>
           </p>
         </li>
         <li>
@@ -33,6 +28,14 @@
         </li>
       </ul>
     </p>
+    <aside>
+      <p>
+        Archimedes of Syracuse discovered how to calculate this area exactly, without estimation, around 300 BC, writing his results in the now-famous <q>Quadrature of the Parabola.</q> This is, notably, before the formalization of Calculus (during the 1600's). It might be unfair to say that Archimedes proved this <q>without using calculus,</q> though, since his technique, the <q>Method of Exhaustion,</q> is really a version of what we do in calculus, but without a formal framework of limits.
+      </p>
+      <p>
+        This is the problem with Archimedes' method: without a framework that could be flexible while maintaining precision, it only worked for areas defined by parabolas. Once we change our function to something else, Archimedes would have to come up with a completely new area formula for calculation. The techniques we're looking at now have the advantage of flexibility!
+      </p>
+  </aside>
   </introduction>
 
   <subsection xml:id="subsec-RectangularApproximations">
