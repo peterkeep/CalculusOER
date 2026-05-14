@@ -102,15 +102,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.5';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -286,6 +286,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-ExplicitImplicit" class="internal"><span class="title">Explicit vs. Implicit Definitions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-DerivativeOperator" class="internal"><span class="title">Using a Derivative as an Operator</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-SummaryAndStrategy" class="internal"><span class="title">Some Summary and Strategy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-RelatedRates" class="internal"><span class="title">Related Rates</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#ex-ImplicitDifferentiation" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
@@ -715,7 +716,7 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-LimitsInvolvingInfinity"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.4</span><span class="space"> </span><span class="title">Limits Involving Infinity</span>
 </h2>
-<section class="introduction" id="sec-LimitsInvolvingInfinity-2"><div class="para" id="sec-LimitsInvolvingInfinity-2-1">Two types of limits involving infinity. In both cases, we’ll mostly just consider what happens when we divide by small things and what happens when we divide by big things. We can summarize this here, though:<div class="autopermalink" data-description="Paragraph"><a href="#sec-LimitsInvolvingInfinity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-LimitsInvolvingInfinity-2"><div class="para" id="sec-LimitsInvolvingInfinity-2-1">We’re going to look at two types of limits involving infinity. In both cases, we’ll mostly just consider what happens when we divide by small things and what happens when we divide by big things. We can summarize this here, though:<div class="autopermalink" data-description="Paragraph"><a href="#sec-LimitsInvolvingInfinity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-LimitsInvolvingInfinity-2-2">
 <em class="emphasis">Fractions with small denominators are big, and fractions with big denominators are small.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-LimitsInvolvingInfinity-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -728,7 +729,7 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">What Happens When We Divide by 0?</span>
 </h4>
 <div class="introduction" id="act-DivideBy0-2">
-<div class="para" id="act-DivideBy0-2-1">First, let’s make sure we’re clear on one thing: there is no real number than is represented as some other number divided by 0.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-DivideBy0-2-1">First, let’s make sure we’re clear on one thing: there is no real number that is represented as some other number divided by 0.<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="act-DivideBy0-2-2">When we talk about “dividing by 0” here (and in <a href="sec-IndeterminateForms.html" class="internal" title="Section 1.3: First Indeterminate Forms">Section 1.3</a>), we’re talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator <em class="emphasis">gets arbitrarily close to 0</em> (or, the limit of the denominator is 0).<div class="autopermalink" data-description="Paragraph"><a href="#act-DivideBy0-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>

@@ -102,15 +102,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.5';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -286,6 +286,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-ExplicitImplicit" class="internal"><span class="title">Explicit vs. Implicit Definitions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-DerivativeOperator" class="internal"><span class="title">Using a Derivative as an Operator</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-SummaryAndStrategy" class="internal"><span class="title">Some Summary and Strategy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-RelatedRates" class="internal"><span class="title">Related Rates</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#ex-ImplicitDifferentiation" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
@@ -1178,25 +1179,81 @@ y^2=x^3-x+1\text{.}
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#strat-ImplicitDifferentiation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: Strategy for Implicit Differentiation"><a href="#strat-ImplicitDifferentiation" title="Copy heading and permalink for Assemblage: Strategy for Implicit Differentiation" aria-label="Copy heading and permalink for Assemblage: Strategy for Implicit Differentiation">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Some Summary and Strategy"><a href="#subsec-SummaryAndStrategy" title="Copy heading and permalink for Subsection: Some Summary and Strategy" aria-label="Copy heading and permalink for Subsection: Some Summary and Strategy">🔗</a></div></section><section class="conclusion" id="sec-ImplicitDifferentiation-6"><div class="para logical" id="sec-ImplicitDifferentiation-6-1">
+<div class="autopermalink" data-description="Assemblage: Strategy for Implicit Differentiation"><a href="#strat-ImplicitDifferentiation" title="Copy heading and permalink for Assemblage: Strategy for Implicit Differentiation" aria-label="Copy heading and permalink for Assemblage: Strategy for Implicit Differentiation">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Some Summary and Strategy"><a href="#subsec-SummaryAndStrategy" title="Copy heading and permalink for Subsection: Some Summary and Strategy" aria-label="Copy heading and permalink for Subsection: Some Summary and Strategy">🔗</a></div></section><section class="subsection" id="subsec-RelatedRates"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Related Rates</span>
+</h3>
+<div class="para logical" id="subsec-RelatedRates-2">
+<div class="para">What is the difference between the three derivatives below?</div>
+<div class="displaymath process-math" id="subsec-RelatedRates-2-1">
+\begin{align*}
+\amp \frac{d}{dx}\left(x\sin(y)\right) \amp \frac{d}{dy}\left(x\sin(y)\right) \amp \amp \frac{d}{dt}\left(x\sin(y)\right)
+\end{align*}
+</div>
+<div class="para">We can notice that variable in the differential notation tells us when we apply the Chain Rule and when we don’t need to.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RelatedRates-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-RelatedRates-3">This small idea allows us to think through some bigger application problems using implicit differentiation. We will call these <dfn class="terminology">Related Rates</dfn> problems, since we’ll use implicit differentiation to build an equation that relates at least two different rates of change to each other.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RelatedRates-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-DrippingWater"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Dripping Water.</span>
+</h4>
+<div class="introduction" id="act-DrippingWater-2">
+<div class="para" id="act-DrippingWater-2-1">Two people are sitting at a table. Person A reaches across the table, grabs a water bottle, and begins dripping water onto the table right in front of Person B.<div class="autopermalink" data-description="Paragraph"><a href="#act-DrippingWater-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="act-DrippingWater-2-2">A puddle starts forming, in the shape of a circle.<div class="autopermalink" data-description="Paragraph"><a href="#act-DrippingWater-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="act-DrippingWater-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-DrippingWater-3-1-1">If the puddle has a thickness of 0.5cm, what is the formula for the volume of the puddle?<div class="autopermalink" data-description="Paragraph"><a href="#act-DrippingWater-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-DrippingWater-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-DrippingWater-3-2-1">This should be the area of the circle multiplied by the thickness or depth of the puddle.<div class="autopermalink" data-description="Paragraph"><a href="#act-DrippingWater-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 3.1.4.a.1"><a href="#act-DrippingWater-3-2" title="Copy heading and permalink for Hint 3.1.4.a.1" aria-label="Copy heading and permalink for Hint 3.1.4.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 3.1.4.a"><a href="#act-DrippingWater-3" title="Copy heading and permalink for Task 3.1.4.a" aria-label="Copy heading and permalink for Task 3.1.4.a">🔗</a></div></article><article class="task exercise-like" id="act-DrippingWater-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-DrippingWater-4-1-1">Find a formula for how quickly the volume of the puddle is increasing per second.<div class="autopermalink" data-description="Paragraph"><a href="#act-DrippingWater-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-DrippingWater-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-DrippingWater-4-2-1">This means we’re going to find <span class="process-math">\(\frac{dV}{dt}\)</span> by differentiating the volume formula with regard to <span class="process-math">\(t\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DrippingWater-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 3.1.4.b.1"><a href="#act-DrippingWater-4-2" title="Copy heading and permalink for Hint 3.1.4.b.1" aria-label="Copy heading and permalink for Hint 3.1.4.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 3.1.4.b"><a href="#act-DrippingWater-4" title="Copy heading and permalink for Task 3.1.4.b" aria-label="Copy heading and permalink for Task 3.1.4.b">🔗</a></div></article><article class="task exercise-like" id="act-DrippingWater-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-DrippingWater-5-1-1">Convince yourself that of <em class="emphasis">course</em> <span class="process-math">\(\frac{dV}{dt}\)</span> is connected to the change in the radius of the puddle, <span class="process-math">\(\frac{dr}{dt}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DrippingWater-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.1.4.c"><a href="#act-DrippingWater-5" title="Copy heading and permalink for Task 3.1.4.c" aria-label="Copy heading and permalink for Task 3.1.4.c">🔗</a></div></article><article class="task exercise-like" id="act-DrippingWater-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-DrippingWater-6-1-1">If Person A is dripping the water at a rate of <span class="process-math">\(0.2\)</span>cm<span class="process-math">\(^3\)</span>/s and the puddle is currently 13cm wide (in diameter), then how quickly is the edge of the puddle moving along the table?<div class="autopermalink" data-description="Paragraph"><a href="#act-DrippingWater-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="act-DrippingWater-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="act-DrippingWater-6-2-1">Note that what we’re really looking for is the value of <span class="process-math">\(\frac{dr}{dt}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-DrippingWater-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 3.1.4.d.1"><a href="#act-DrippingWater-6-2" title="Copy heading and permalink for Hint 3.1.4.d.1" aria-label="Copy heading and permalink for Hint 3.1.4.d.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 3.1.4.d"><a href="#act-DrippingWater-6" title="Copy heading and permalink for Task 3.1.4.d" aria-label="Copy heading and permalink for Task 3.1.4.d">🔗</a></div></article><article class="task exercise-like" id="act-DrippingWater-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="act-DrippingWater-7-1-1">How does this change when the puddle is larger? For instance, how does this change when the puddle is 20cm wide (in diameter)?<div class="autopermalink" data-description="Paragraph"><a href="#act-DrippingWater-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.1.4.e"><a href="#act-DrippingWater-7" title="Copy heading and permalink for Task 3.1.4.e" aria-label="Copy heading and permalink for Task 3.1.4.e">🔗</a></div></article><div class="autopermalink" data-description="Activity 3.1.4: Dripping Water"><a href="#act-DrippingWater" title="Copy heading and permalink for Activity 3.1.4: Dripping Water" aria-label="Copy heading and permalink for Activity 3.1.4: Dripping Water">🔗</a></div></article><div class="para" id="subsec-RelatedRates-5">These related rates problems are a nice way for us to practice thinking about implicit differentiation, but also a nice way for us to think about how changes in one quantity might impact changes in another.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-RelatedRates-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Related Rates"><a href="#subsec-RelatedRates" title="Copy heading and permalink for Subsection: Related Rates" aria-label="Copy heading and permalink for Subsection: Related Rates">🔗</a></div></section><section class="conclusion" id="sec-ImplicitDifferentiation-7"><div class="para logical" id="sec-ImplicitDifferentiation-7-1">
 <div class="para">From here on out, we will use the ideas of implicit differentiation to accomplish two things:</div>
-<ol class="decimal" id="sec-ImplicitDifferentiation-6-1-1">
-<li id="sec-ImplicitDifferentiation-6-1-1-1">
-<div class="para" id="sec-ImplicitDifferentiation-6-1-1-1-1">We have a bit more flexibility with how we think of derivatives! We do not need to be restricted to only thinking about functions in order to think about rates of change or slopes at a point. We can think about any curve, any relationship between variables, and think about the relationship between them based on how one changes with regard to the other.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImplicitDifferentiation-6-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ol class="decimal" id="sec-ImplicitDifferentiation-7-1-1">
+<li id="sec-ImplicitDifferentiation-7-1-1-1">
+<div class="para" id="sec-ImplicitDifferentiation-7-1-1-1-1">We have a bit more flexibility with how we think of derivatives! We do not need to be restricted to only thinking about functions in order to think about rates of change or slopes at a point. We can think about any curve, any relationship between variables, and think about the relationship between them based on how one changes with regard to the other.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImplicitDifferentiation-7-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#sec-ImplicitDifferentiation-6-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-ImplicitDifferentiation-7-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
-<li id="sec-ImplicitDifferentiation-6-1-1-2">
-<div class="para" id="sec-ImplicitDifferentiation-6-1-1-2-1">Implicit differentiation will be a very useful tool. Even when we have functions that can be written explicitly, they might be hard to deal with -- overly complex or maybe involving functions that we aren’t used to. It is absolutely possible, and a really useful strategy, to rewrite the relationship between variables implicitly! We can maybe create a version of these equations that we can differentiate!<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImplicitDifferentiation-6-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sec-ImplicitDifferentiation-7-1-1-2">
+<div class="para" id="sec-ImplicitDifferentiation-7-1-1-2-1">Implicit differentiation will be a very useful tool. Even when we have functions that can be written explicitly, they might be hard to deal with -- overly complex or maybe involving functions that we aren’t used to. It is absolutely possible, and a really useful strategy, to rewrite the relationship between variables implicitly! We can maybe create a version of these equations that we can differentiate!<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImplicitDifferentiation-7-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#sec-ImplicitDifferentiation-6-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-ImplicitDifferentiation-7-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
 <div class="para">We’re going to use this second idea first: in the next section we’ll be thinking about inverse functions. We do not have any idea of how to think about derivatives of logarithmic functions, like <span class="process-math">\(y=\ln(x)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImplicitDifferentiation-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImplicitDifferentiation-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sec-ImplicitDifferentiation-6-2">
+<div class="para logical" id="sec-ImplicitDifferentiation-7-2">
 <div class="para">We can rewrite this:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1204,9 +1261,9 @@ y=\ln(x) \longleftrightarrow x=e^y\text{.}
 \end{equation*}
 </div>
 <div class="para">This second representation is something we can differentiate!</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImplicitDifferentiation-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImplicitDifferentiation-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sec-ImplicitDifferentiation-6-3">
+<div class="para logical" id="sec-ImplicitDifferentiation-7-3">
 <div class="para">Similarly, if we wanted to think about the derivative of <span class="process-math">\(y=\tan^{-1}(x)\text{,}\)</span> we might instead think about rewriting this:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1214,7 +1271,7 @@ y=\tan^{-1}(x) \longleftrightarrow x=\tan(y)\text{.}
 \end{equation*}
 </div>
 <div class="para">There are some weird issues to think about with the domains and ranges of these functions, but this is how we’ll approach these derivatives next.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImplicitDifferentiation-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-ImplicitDifferentiation-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="exercises" id="ex-ImplicitDifferentiation"><h3 class="heading hide-type">
 <span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice Problems</span>
 </h3>

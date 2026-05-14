@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/doenet-standalone-test@0.6.0/dist/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/doenet-standalone-test@0.6.0/dist/doenet-standalone.min.js"></script><script>function onLoad() {window.renderDoenetToContainer(document.querySelector(".doenetml-applet"))}</script>
+</head>
+<body class="ptx-content ignore-math">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
+\newcommand{\ddx}[1]{\frac{d}{dx}\left(#1\right)}
+\newcommand{\Ddx}[1]{\dfrac{d}{dx}\left(#1\right)}
+\newcommand{\dd}[2]{\frac{d#1}{d#2}}
+\newcommand{\Dd}[2]{\dfrac{d#1}{d#2}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\Dydx}{\dfrac{dy}{dx}}
+\newcommand{\blank}[1]{\underline{\hspace{#1}}} 
+\newcommand{\dint}{\displaystyle \int}
+\newcommand{\va}{┊}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="width:570px; height:1026px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet">
+<div class="doenetml-loading" style="text-align:center">
+<p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
+<p>Waiting on the page to load...</p>
+</div>
+<script type="text/doenetml">
+                <!-- https://doenet.org/portfolioeditor/_OKRNKEVp9Xe8DUN2aiRLg/_wgFwMsRcnMkOw9iXkZB8d -->
+
+<setup>
+  <function name="f">ln(x^2+1)-x^2/2</function>
+  <derivative name="df" styleNumber="2">$f</derivative>
+  <derivative name="ddf" styleNumber="4">$df</derivative>
+  <number name="a">-2</number>
+  <text name="fDirection" styleNumber="2">
+    <conditionalContent>
+      <case condition="$$df($a)>0">
+        increasing
+      </case>
+      <case condition="$$df($a)<0">
+        decreasing
+      </case>
+      <case condition="$$df($a)=0">
+        ...
+      </case>
+    </conditionalContent>
+  </text>
+  <text name="fConcavity" styleNumber="4">
+    <conditionalContent>
+      <case condition="$$ddf($a)>0">
+        concave up.
+      </case>
+      <case condition="$$ddf($a)<0">
+        concave down.
+      </case>
+      <case condition="$$ddf($a)=0">
+        ...
+      </case>
+    </conditionalContent>
+  </text>
+  <text name="dfSign" styleNumber="2">
+    <conditionalContent>
+      <case condition="$$df($a)>0">
+        positive
+      </case>
+      <case condition="$$df($a)<0">
+        negative
+      </case>
+      <case condition="$$df($a)=0">
+        zero
+      </case>
+    </conditionalContent>
+  </text>
+  <text name="dfDirection" styleNumber="4">
+    <conditionalContent>
+      <case condition="$$ddf($a)>0">
+        increasing.
+      </case>
+      <case condition="$$ddf($a)<0">
+        decreasing.
+      </case>
+      <case condition="$$ddf($a)=0">
+        ...
+      </case>
+    </conditionalContent>
+  </text>
+  <text name="ddfSign" styleNumber="4">
+    <conditionalContent>
+      <case condition="$$ddf($a)>0">
+        positive.
+      </case>
+      <case condition="$$ddf($a)<0">
+        negative.
+      </case>
+      <case condition="$$ddf($a)=0">
+        zero.
+      </case>
+    </conditionalContent>
+  </text>
+</setup>
+
+<p>
+  <em>Instructions:</em> Compare what you've found to what is happening in the plots. Turn on or off information using the checkboxes.
+</p>
+
+<p><booleanInput name="extrema"/> Show the local maximums and local minimums of <m>f(x)</m>.</p>
+<p><booleanInput name="inflection"/> Show the inflection points of <m>f(x)</m>.</p>
+
+<sideBySide>
+  <graph size="small" xmin="-2.5" xmax="2.5" ymin="-2" ymax="1">
+    $f
+    <point>($a, $$f($a))</point>
+    <function domain="[$a-2,$a+2]" styleNumber="2">$$df($a)(x-$a)+$$f($a)</function>
+    <conditionalContent condition="$extrema">
+      <point draggable="false" styleNumber="5">(0,$$f(0))</point>
+      <point draggable="false" styleNumber="5">(-1,$$f(-1))</point>
+      <point draggable="false" styleNumber="5">(1,$$f(1))</point>
+    </conditionalContent>
+    <conditionalContent condition="$inflection">
+      <point draggable="false" styleNumber="6">
+        (sqrt(sqrt(5)-2),$$f(sqrt(sqrt(5)-2)))
+      </point>
+      <point draggable="false" styleNumber="6">
+        (-sqrt(sqrt(5)-2),$$f(-sqrt(sqrt(5)-2)))
+      </point>
+    </conditionalContent>
+  </graph>
+
+  <ul>
+    <li>
+      <p>The outputs of <m>f(x)</m> are $fDirection and $fConcavity</p>
+    </li>
+    <li>
+      <p>This is because the the slopes of <m>f(x)</m> are $dfSign and $dfDirection</p>
+    </li>
+    <li>
+      <p>This is because the concavity of <m>f(x)</m> is $ddfSign</p>
+    </li>
+  </ul>
+</sideBySide>
+
+<sideBySide>
+  <graph size="small" xmin="-2.5" xmax="2.5" ymin="-2" ymax="2">
+    $df
+    <point styleNumber="2">($a, $$df($a))</point>
+    <function domain="[$a-2,$a+2]" styleNumber="4">$$ddf($a)(x-$a)+$$df($a)</function>
+    <conditionalContent condition="$extrema">
+      <point draggable="false" styleNumber="5">(0,$$df(0))</point>
+      <point draggable="false" styleNumber="5">(-1,$$df(-1))</point>
+      <point draggable="false" styleNumber="5">(1,$$df(1))</point>
+    </conditionalContent>
+    <conditionalContent condition="$inflection">
+      <point draggable="false" styleNumber="6">
+        (sqrt(sqrt(5)-2),$$df(sqrt(sqrt(5)-2)))
+      </point>
+      <point draggable="false" styleNumber="6">
+        (-sqrt(sqrt(5)-2),$$df(-sqrt(sqrt(5)-2)))
+      </point>
+    </conditionalContent>
+  </graph>
+
+  <ul>
+    <li>
+      <p>The outputs of <m>f'(x)</m> are $dfSign and $dfDirection</p>
+    </li>
+    <li>
+      <p>This is because the the slopes of <m>f'(x)</m> are $ddfSign</p>
+    </li>
+  </ul>
+</sideBySide>
+
+<sideBySide>
+  <graph size="small" xmin="-2.5" xmax="2.5" ymin="-2" ymax="2">
+    $ddf
+    <point styleNumber="4">($a, $$ddf($a))</point>
+    <conditionalContent condition="$inflection">
+      <point draggable="false" styleNumber="6">
+        (sqrt(sqrt(5)-2),$$ddf(sqrt(sqrt(5)-2)))
+      </point>
+      <point draggable="false" styleNumber="6">
+        (-sqrt(sqrt(5)-2),$$ddf(-sqrt(sqrt(5)-2)))
+      </point>
+    </conditionalContent>
+
+  </graph>
+
+  <ul>
+    <li>
+      <p>The outputs of <m>f''(x)</m> are $ddfSign</p>
+    </li>
+  </ul>
+</sideBySide>
+            </script>
+</div></div>
+</body>
+</html>

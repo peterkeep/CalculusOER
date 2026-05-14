@@ -102,15 +102,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.5';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -286,6 +286,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-ExplicitImplicit" class="internal"><span class="title">Explicit vs. Implicit Definitions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-DerivativeOperator" class="internal"><span class="title">Using a Derivative as an Operator</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-SummaryAndStrategy" class="internal"><span class="title">Some Summary and Strategy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-RelatedRates" class="internal"><span class="title">Related Rates</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#ex-ImplicitDifferentiation" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
@@ -890,7 +891,7 @@ A'(x) \amp =\lim_{\Delta x \to 0}\left(\frac{A(x+\Delta x) - A(x)}{\Delta x}\rig
 <div class="autopermalink" data-description="Item 1"><a href="#subsec-AreasAndAntierivatives-7-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="subsec-AreasAndAntierivatives-7-1-2">
-<div class="para" id="subsec-AreasAndAntierivatives-7-1-2-1">Generating antiderivatives. Until now, we have had to rely on being able to recognize functions as derivatives of other things, or be able to “undo” derivative rules. And this will continue to be an important way for us to antidifferentiate functions. But now we have a way of constructing antiderivatives, albeit weird looking ones—we are not yet used to thinking about a function that is defined as a definite integral with a variable ending point.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreasAndAntierivatives-7-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-AreasAndAntierivatives-7-1-2-1">Generating antiderivatives. Until now, we have had to rely on being able to recognize functions as derivatives of other things, or be able to “undo” derivative rules. And this will continue to be an important way for us to antidifferentiate functions. But now we have a way of constructing antiderivatives, albeit weird looking ones. We are not yet used to thinking about a function that is defined as a definite integral with a variable ending point.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-AreasAndAntierivatives-7-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 2"><a href="#subsec-AreasAndAntierivatives-7-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
@@ -963,7 +964,7 @@ A(a) = \int_{t=a}^{t=a} f(t)\;dt = 0
 A(b) = \int_{t=a}^{t=b} f(t)\;dt
 \end{equation*}
 </div>
-<div class="para">For <span class="process-math">\(F(a)\text{,}\)</span> you can evaluate your antiderivative at <span class="process-math">\(x=b\text{.}\)</span> The important part is thinking about how these two values are different from each other. Is the difference between these values the same, or different from the difference between <span class="process-math">\(A(a)\)</span> and <span class="process-math">\(F(a)\text{?}\)</span>
+<div class="para">For <span class="process-math">\(F(b)\text{,}\)</span> you can evaluate your antiderivative at <span class="process-math">\(x=b\text{.}\)</span> The important part is thinking about how these two values are different from each other. Is the difference between these values the same, or different from the difference between <span class="process-math">\(A(a)\)</span> and <span class="process-math">\(F(a)\text{?}\)</span>
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#act-FTOC2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
