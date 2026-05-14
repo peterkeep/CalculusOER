@@ -1,0 +1,61 @@
+<activity xml:id="act-DrippingWater">
+    <title>Dripping Water</title>
+    <introduction>
+        <p>
+            Two people are sitting at a table. Person A reaches across the table, grabs a water bottle, and begins dripping water onto the table right in front of Person B.
+        </p>
+        <p>
+            A puddle starts forming, in the shape of a circle. 
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                If the puddle has a thickness of 0.5cm, what is the formula for the volume of the puddle?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                This should be the area of the circle multiplied by the thickness or depth of the puddle. 
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find a formula for how quickly the volume of the puddle is increasing per second.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                This means we're going to find <m>\frac{dV}{dt}</m> by differentiating the volume formula with regard to <m>t</m>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Convince yourself that of <em>course</em> <m>\frac{dV}{dt}</m> is connected to the change in the radius of the puddle, <m>\frac{dr}{dt}</m>. 
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                If Person A is dripping the water at a rate of <m>0.2</m>cm<m>^3</m>/s and the puddle is currently 13cm wide (in diameter), then how quickly is the edge of the puddle moving along the table?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Note that what we're really looking for is the value of <m>\frac{dr}{dt}</m>.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How does this change when the puddle is larger? For instance, how does this change when the puddle is 20cm wide (in diameter)?
+            </p>
+        </statement>
+    </task>
+</activity>

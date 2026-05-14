@@ -246,6 +246,24 @@
             </p>
         </assemblage> 
     </subsection>
+    <subsection xml:id="subsec-RelatedRates">
+        <title>Related Rates</title>
+        <p>
+            What is the difference between the three derivatives below?
+            <md>
+                <mrow> \amp \frac{d}{dx}\left(x\sin(y)\right) \amp \frac{d}{dy}\left(x\sin(y)\right) \amp \amp \frac{d}{dt}\left(x\sin(y)\right)</mrow> 
+            </md>
+            We can notice that variable in the differential notation tells us when we apply the Chain Rule and when we don't need to.
+        </p>
+        <p>
+            This small idea allows us to think through some bigger application problems using implicit differentiation. We will call these <term>Related Rates</term> problems, since we'll use implicit differentiation to build an equation that relates at least two different rates of change to each other.
+        </p>
+        <xi:include href="./activities/act-DrippingWater.ptx" />
+        <p>
+            These related rates problems are a nice way for us to practice thinking about implicit differentiation, but also a nice way for us to think about how changes in one quantity might impact changes in another.
+        </p>
+    </subsection>
+
     <conclusion>
         <p>
             From here on out, we will use the ideas of implicit differentiation to accomplish two things:
