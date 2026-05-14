@@ -61,7 +61,11 @@
             publication="pub-activity.ptx">
       <stringparams project.hint="no"
                     project.answer="no"
-                    project.solution="no"/>
+                    project.solution="no"
+                    exercise.divisional.hint="no"
+                    exercise.divisional.answer="no"
+                    exercise.divisional.solution="no"/>
+                    
     </target>
     <target name="activities1"
             format="pdf"
@@ -71,7 +75,10 @@
             publication="pub-activity1.ptx">
       <stringparams project.hint="no"
                     project.answer="no"
-                    project.solution="no"/>
+                    project.solution="no"
+                    exercise.divisional.hint="no"
+                    exercise.divisional.answer="no"
+                    exercise.divisional.solution="no"/>
     </target>
     <target name="activities2"
             format="pdf"
@@ -81,7 +88,10 @@
             publication="pub-activity2.ptx">
       <stringparams project.hint="no"
                     project.answer="no"
-                    project.solution="no"/>
+                    project.solution="no"
+                    exercise.divisional.hint="no"
+                    exercise.divisional.answer="no"
+                    exercise.divisional.solution="no"/>
     </target>
   </targets>
 </project>

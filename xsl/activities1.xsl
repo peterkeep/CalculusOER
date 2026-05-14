@@ -2,6 +2,7 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" version="1.0">
 
+
 <!-- Next paths assume current file has been copied to mathbook/user -->
 <xsl:import href="./core/pretext-latex.xsl" />
 
@@ -20,16 +21,22 @@
 
 <!-- We pull activities from each introduction -->
 <!-- We want to leave the introductions to activities, so we're skipping over them -->
-<xsl:template match="introduction[not((parent::activity) | (parent::exploration))]">
+<xsl:template match="introduction[not((parent::activity) | (parent::exploration) | (parent::exercise) | (parent::exercisegroup))]">
     <xsl:apply-templates select="activity"/>
-    <xsl:apply-templates select="exploration"/>  
+    <xsl:apply-templates select="exploration"/>
 </xsl:template>
 
 <!-- We pull activities from each subsection -->
 <xsl:template match="subsection">
     <xsl:apply-templates select="activity"/>  
-    <xsl:apply-templates select="exploration"/>  
-    <!-- <xsl:text>\cleardoublepage&#xA;&#xA;</xsl:text>  -->
+    <xsl:apply-templates select="exploration"/> 
+    <xsl:apply-templates select="exercises"/>
+</xsl:template>
+
+<xsl:template match="exercises">
+    <xsl:text>\subsection*{Practice Problems}</xsl:text>
+    <xsl:apply-templates/>
+    <xsl:text>\clearpage</xsl:text>
 </xsl:template>
 
 <!-- style of the activity boxes -->
@@ -72,26 +79,11 @@
     </xsl:text>
 </xsl:template>
 
-
-
-<!-- <xsl:template match="activity">
-    <xsl:copy-of select="."/>
-    <xsl:text>\newpage&#xA;&#xA;</xsl:text> 
-</xsl:template> -->
-
-
-<!-- <xsl:template match="introduction">
-     <xsl:if test="
-        parent::section
-        ">
-    </xsl:if>
-</xsl:template> -->
 <xsl:template match="conclusion[not(parent::activity)]"/>
 <xsl:template match="acknowledgement"/>
 <xsl:template match="fact"/>
 <xsl:template match="objectives" />
 <!--Exercise groups are not in a subsection, so drop them -->
-<xsl:template match="exercises" />
 <!--Drop all the preface-->
 <xsl:template match="preface" />
 <!--Drop back matter stuff -->
