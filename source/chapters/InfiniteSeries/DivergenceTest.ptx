@@ -95,12 +95,17 @@
     <p>
       This is a strange result, and one that has been brought up again and again by mathematicians throughout history. We'll see that this series is notable because of its use later on in this chapter, but for now we can simply note that it is strange to see a series of terms that get so small (and so quickly) and yet the sum of those terms diverges.
     </p>
-    <p>
-      The connection between the terms of a series and the behavior of the infinite series itself is maybe more mysterious than we initially thought. Since we will likely not have <q>access</q> to the formula for the partial sums (<xref ref="note-ExplicitFormulaPartialSums"/>), we will want to explore these kinds of connections as much as we can. They will be the things to help us analyze an infinite series.
-    </p>
+    
   </subsection>
   <subsection xml:id="subsec-DivergenceTest">
     <title>The Divergence Test</title>
+    <p>
+      The connection between the terms of a series and the behavior of the infinite series itself is maybe more mysterious than we initially thought. Since we will likely not have <q>access</q> to the formula for the partial sums (<xref ref="note-ExplicitFormulaPartialSums"/>), we will want to explore these kinds of connections as much as we can. They will be the things to help us analyze an infinite series.
+    </p>
+    <xi:include href="./activities/act-Terms.ptx" />
+    <p>
+      We have a pretty soft result here: we have discovered a connection between the terms of a series and the series behavior itself, but it's not as strong as we'd like.
+    </p>
     <theorem xml:id="thm-DivergenceTest">
       <title>Divergence Test</title>
       <statement>
@@ -156,6 +161,9 @@
         </p>
       </proof>
     </theorem>
+    <p>
+      We should notice that the Divergence Test never tells us that a series converges. The only conclusions are that a series diverges (if <m>\displaystyle \lim_{k\to\infty} a_k\neq 0</m>) or the test fails/is inconclusive (if <m>\displaystyle \lim_{k\to\infty} a_k= 0</m>). In these cases, we've seen instances where a series could converge or diverge and have terms that approach 0.
+    </p>
     <example>
     <introduction>
       <p>

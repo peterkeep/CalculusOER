@@ -1,0 +1,39 @@
+<activity xml:id="act-Terms">
+    <title>Thinking about the Terms of a Series</title>
+    <task>
+        <statement>
+            <p>
+                What does it mean for the series <m>\displaystyle\sum_{k=1}^\infty a_k</m> to converge?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                If you need a reminder, take a look back at <xref ref="def-SeriesConvergence" text="type-global-title"/>
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Calculate the difference between <m>S_{n+1}=\displaystyle \sum_{k=1}^{n+1} a_k</m> and <m>S_{n}=\displaystyle \sum_{k=1}^{n} a_k</m>, <m>S_{n+1}-S_n</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                If the sequence of partial sums for a series, <m>\{S_n\}_{n=1}^\infty</m> converges, then what should we expect to happen with the values of <m>S_{n+1}</m> and <m>S_n</m>? What does this mean for the difference <m>S_{n+1}-S_n</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now consider a series that we know diverges, the <xref ref="def-HarmonicSeries" text="title"/>. Find the limit,
+                <me>
+                    \lim_{k\to\infty} \frac{1}{k}
+                </me>.
+            </p>
+        </statement>
+    </task>
+</activity>
