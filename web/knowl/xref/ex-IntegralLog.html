@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Antidifferentiating the Log Function.</span>
+</h4>
+<div class="para">Integrate <span class="process-math">\(\displaystyle \int \ln(x)\;dx\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntegralLog-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para">Pick <span class="process-math">\(u=\ln(x)\text{,}\)</span> since we can differentiate it. What does that leave for <span class="process-math">\(dv\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-IntegralLog-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 7.4.3.1"><a href="#ex-IntegralLog-3" title="Copy heading and permalink for Hint 7.4.3.1" aria-label="Copy heading and permalink for Hint 7.4.3.1">🔗</a></div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{ll}
+u = \ln(x) &amp; v = x\\
+du = \frac{1}{x}\;dx &amp; dv = \;dx
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\int \ln(x)\;dx &amp;= x\ln(x) - \int \frac{x}{x}\;dx\\
+&amp; = x\ln(x) - x + C
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-IntegralLog-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 7.4.3.1"><a href="#ex-IntegralLog-4" title="Copy heading and permalink for Solution 7.4.3.1" aria-label="Copy heading and permalink for Solution 7.4.3.1">🔗</a></div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">An alternate approach is to use a substitution first. We’re going to be using a lot of different variable names here, so let’s use a <span class="process-math">\(t\)</span>-substitution. Let <span class="process-math">\(t=\ln(x)\)</span> so that <span class="process-math">\(dt=\frac{1}{x}\;dx\text{.}\)</span> In order to induce this derivative of the log, let’s multiply by <span class="process-math">\(\frac{x}{x}\)</span> inside the integral:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\int \ln(x)\;dx\amp = \int \frac{x}{x}\ln(x)\;dx\\
+\amp = \int x\underbrace{\ln(x)}_{t}\underbrace{\left(\frac{1}{x}\right)\;dx}_{dt}\\
+t = \ln(x) \amp\longrightarrow x=e^t \\
+\int x \ln(x)\left(\frac{1}{x}\right)\;dx \amp = \int te^t\;dt
+\end{align*}
+</div>
+<div class="para">This integral can be done using the standard integration by parts!</div>
+<div class="displaymath process-math">
+\begin{align*}
+u = t \amp v = e^t\\
+du=dt \amp dv=e^t\;dt \\
+\int te^t\;dt \amp = uv-\int v\;du \\
+\amp = te^t - \int e^t\;dt\\
+\amp = te^t - e^t +C
+\end{align*}
+</div>
+<div class="para">Now, we can substitute back to <span class="process-math">\(x\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+te^t - e^t +C = x\ln(x)-x+C\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-IntegralLog-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 7.4.3.2"><a href="#ex-IntegralLog-5" title="Copy heading and permalink for Solution 7.4.3.2" aria-label="Copy heading and permalink for Solution 7.4.3.2">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 7.4.3: Antidifferentiating the Log Function"><a href="#ex-IntegralLog" title="Copy heading and permalink for Example 7.4.3: Antidifferentiating the Log Function" aria-label="Copy heading and permalink for Example 7.4.3: Antidifferentiating the Log Function">🔗</a></div></article><span class="incontext"><a class="internal" href="sec-IntegrationByParts.html#ex-IntegralLog">in-context</a></span>
+</body>
+</html>
