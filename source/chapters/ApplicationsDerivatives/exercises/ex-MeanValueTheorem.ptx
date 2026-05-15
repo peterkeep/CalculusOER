@@ -1,0 +1,90 @@
+<exercises xml:id="ex-MeanValueTheorem">
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following scenarios, explain whether the Mean Value Theorem applies. If it does, explain what it tells us.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    A student in a class is distracted by someone else tapping their fingers on their desk. The student decides to count the taps. In the 3 minutes that they counted, the other student tapped on their desk 245 times.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Is there a continuous and differentiable function somewhere in this description?
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    On a sunny, Chicago day in May, the temperature was 58<degree/> at 7:15am. Later on, at 3:45pm, the temperature was 79<degree/>.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    What is changing here? Can you calculate an average rate of change? What does the Mean Value Theorem say should be happening?
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    In a small oceanside town, residents notice that the tide goes out and in every day. High tide is at 10am, and then again at 10pm, and, wow this is pretty incredible, the water level is exactly the same at both times.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    What's the average rate of change if the water level is the same at both times? What does this mean about the rate of change of the water level somewhere between those times?
+                </p>
+            </hint>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each function:
+                <ul>
+                    <li>
+                        <p>
+                            Sketch (or look up) a graph of the curve on the interval.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Calculate the slope of the line connecting the end points.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find the location of any points that exist from the Mean Value Theorem.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>f(x)=x^2-4x+1</m> on the interval <m>[0,3]</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>g(x)=\dfrac{1}{\sqrt{x-3}}</m> on the interval <m>[4,7]</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>r(x)=\sin(x)\cos(x)</m> on the interval <m>\left[0,\frac{\pi}{2}\right]</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
