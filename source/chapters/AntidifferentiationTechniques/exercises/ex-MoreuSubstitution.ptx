@@ -1,0 +1,70 @@
+<exercises xml:id="ex-MoreuSubstitution">
+    <exercise>
+        <statement>
+            <p>
+                Why do we say that <m>u</m>-substitution undoes the Chain Rule? Explain how the process of our variable substitution accomplishes that.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following indefinite integrals, identify a useful substitution and antidifferentiate.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \int \frac{x^2+2}{x^3+6x-5}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \int \sec(4x-1)\tan(4x-1)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \int \left(\frac{x+5}{x-1}\right)\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \int (x+5)\sqrt{x-1}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \int (x+5)^{51}(x-1)^2\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \int \frac{x+1}{\sqrt{x-3}}\;dx</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\displaystyle \int \frac{1}{(x+2)\sqrt{x+1}}\;dx</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Don't multiply the denominator out.
+                </p>
+            </hint>
+        </task>
+    </exercise>
+</exercises>
