@@ -185,4 +185,47 @@
             </statement>
         </task>
     </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                In <xref ref="ex-IntegralLog"/>, we found that
+                <me>
+                    \int \ln(x)\;dx = x\ln(x)-x+C
+                </me>.
+                Let's find this result again, but in a different way.                
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    We'll start with a <m>u</m>-substitution. Let <m>u=\ln(x)</m>. Solve for <m>x</m>, and find a substitution for <m>dx</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>x \amp = e^u</mrow>
+                        <mrow> dx\amp = e^u\;du </mrow>
+                    </md>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Apply your substitution above. You should have an integral for which you can use integration by parts! Integrate.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \int \ln(x)\;dx \amp = \int ue^u \;du</mrow>
+                        <mrow> \amp = ue^u-\int e^u \;du</mrow>
+                        <mrow> \amp = ue^u - e^u+C</mrow>
+                        <mrow> \amp = x\ln(x)-x+C</mrow>
+                    </md>
+                </p>
+            </solution>
+        </task>
+    </exercise>
 </exercises>
