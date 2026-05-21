@@ -40,6 +40,16 @@
                      <m>h(x) = 3f(x)</m>; Find <m>h'(0)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> h'(x) \amp = 3f'(x) </mrow>
+                        <mrow> h'(0) \amp = 3f'(0)</mrow>
+                        <mrow> \amp = 3\left(\frac{1}{3}\right)</mrow>
+                        <mrow> \amp = 1</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -47,6 +57,16 @@
                     <m>h(x) = -2g(x)</m>; Find <m>h'(-1)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> h'(x) \amp = -2g'(x) </mrow>
+                        <mrow> h'(-1) \amp = -2g'(-1)</mrow>
+                        <mrow> \amp = -2\left(-3\right)</mrow>
+                        <mrow> \amp = 6</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -54,13 +74,33 @@
                      <m>h(x) = \frac{1}{3}f(x)-\frac{2}{5}g(x)</m>; Find <m>h'(2)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> h'(x) \amp = \frac{1}{3}f'(x) - \frac{2}{5}g'(x)</mrow>
+                        <mrow> h'(2) \amp = \frac{1}{3}f'(2) - \frac{2}{5}g'(2)</mrow>
+                        <mrow> \amp = \left(\frac{1}{3}\right)(0)- \left(\frac{2}{5}\right)(-2)</mrow>
+                        <mrow> \amp = -\frac{4}{5}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
                     <m>h(x) = g(x)-\frac{f(x)}{6}</m>; Find <m>h'(1)</m>
                 </p>
-            </statement>
+            </statement> 
+            <solution>
+                <p>
+                    <md>
+                        <mrow> h'(x) \amp = g'(x)-\frac{f'(x)}{6}</mrow>
+                        <mrow>h'(1) \amp = g'(1)-\frac{f'(1)}{6}</mrow>
+                        <mrow> \amp = \frac{1}{2} - \left(-\frac{5}{12}\right)</mrow>
+                        <mrow> \amp = \frac{11}{12}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -75,6 +115,11 @@
                     <m>y = 3x^2</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\dydx=6x</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -82,6 +127,11 @@
                     <m>y = 5x^3+1</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\dydx = 15x^2</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -89,6 +139,11 @@
                     <m>y = 4x^3- 5x^{-2}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\dydx = 12x^2+10x^{-3}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -96,6 +151,14 @@
                     <m>y = \sqrt{x}+4x^{15} + 400</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    Since <m>y=x^{1/2}+4x^{15}+400</m>, we can write <m>\dydx = \frac{1}{2}y^{-1/2} + 60x^{14}</m>, or:
+                    <me>
+                        \dydx = \frac{1}{2\sqrt{x}} + 60x^{14}
+                    </me>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -103,6 +166,14 @@
                     <m>y = e^3 + e^\pi - e^x</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    Since <m>e^3</m> and <m>e^\pi</m> are real numbers, we can write:
+                    <me>
+                        \dydx = -e^x
+                    </me>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -110,6 +181,16 @@
                     <m>y = \dfrac{\sqrt{x^3}}{5} - \sqrt[3]{x^2}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>y \amp = \frac{1}{5}x^{1/3} - x^{2/3}</mrow>
+                        <mrow>\dydx \amp = \frac{1}{15}x^{-2/3} - \frac{2}{3}x^{-1/3}</mrow>
+                        <mrow> \amp = \frac{1}{15\sqrt[3]{x^2}} - \frac{2}{3\sqrt[3]{x}}</mrow>
+                    </md>
+                    
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -117,6 +198,16 @@
                     <m>y = \dfrac{5}{x^3} + \dfrac{x^3}{5}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>y \amp = 5x^{-3} + \frac{1}{5}x^3 </mrow>
+                        <mrow>\dydx \amp = -15x^{-4} + \frac{3}{5}x^2 </mrow>
+                        <mrow> \amp = -\frac{15}{x^4} + \frac{3x^2}{5}</mrow>
+                    </md>
+                    
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -124,6 +215,16 @@
                     <m>y = \sqrt[3]{x^2} - 23</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>y \amp = x^{2/3}-23</mrow>
+                        <mrow>\dydx \amp = \frac{2}{3}x^{-1/3} </mrow>
+                        <mrow> \amp = \frac{2}{3\sqrt[3]{x}}</mrow>
+                    </md>
+                    
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -131,6 +232,11 @@
                     <m>y = e^x - x^e</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\dydx = e^x - ex^{e-1}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -138,6 +244,15 @@
                     <m>y = 4e^x + \dfrac{2}{\sqrt{x^5}}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>y \amp = 4e^x + 2x^{-5/2} </mrow>
+                        <mrow>\dydx \amp = 4e^x - 5x^{-7/2} </mrow>
+                        <mrow> \amp = 4e^x - \frac{5}{\sqrt{x^7}}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -155,6 +270,16 @@
                     <m>f(x) = \dfrac{x^2+1}{x}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f(x) \amp = \frac{x^2}{x}+\frac{1}{x}</mrow>
+                        <mrow> \amp = x + x^{-1}</mrow>
+                        <mrow>f'(x) \amp = 1-x^{-2}</mrow>
+                        <mrow> \amp = 1-\frac{1}{x^2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -162,6 +287,15 @@
                     <m>g(x) = (3x+1)^2</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>g(x) \amp = (3x+1)(3x+1)</mrow>
+                        <mrow> \amp = 9x^2+6x+1</mrow>
+                        <mrow>g'(x) \amp = 18x+6</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -169,6 +303,15 @@
                     <m>p(x) = \dfrac{x^2-9}{x+3}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>p(x) \amp = \frac{(x+3)(x-3)}{x+3}</mrow>
+                        <mrow> \amp = x+3 \amp \text{for }x\neq -3</mrow>
+                        <mrow>p'(x) \amp = 1 \amp \text{for }x\neq -3</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -176,6 +319,16 @@
                     <m>r(h) = \dfrac{h-2}{\sqrt{h}-\sqrt{2}}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>r(h) \amp = \sqrt{h}+\sqrt{2} \amp \text{for }h\neq 2</mrow>
+                        <mrow> \amp = h^{1/2} + \sqrt{2} \amp \text{for }h\neq 2</mrow>
+                        <mrow>r'(h) \amp =\frac{1}{2}h^{-1/2}\amp \text{for }h\neq 2</mrow>
+                        <mrow> \amp = \frac{1}{2\sqrt{h}} \amp \text{for }h\neq 2</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -183,6 +336,15 @@
                     <m>\Gamma(x) = \sqrt{x}(x^{5/2}-5)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\Gamma(x) \amp = x^3 - 5x^{1/2} </mrow>
+                        <mrow>\Gamma'(x) \amp = 3x^2 - \frac{5}{2}x^{-1/2}</mrow>
+                        <mrow> \amp = 3x^2 - \frac{5}{2\sqrt{x}}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -190,6 +352,16 @@
                     <m>w(t) = \dfrac{te^t-1}{t}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>w(t) \amp = \frac{te^t}{t} - \frac{1}{t}</mrow>
+                        <mrow> \amp = e^t - t^{-1}</mrow>
+                        <mrow> w'(t) \amp = e^t + t^{-2}</mrow>
+                        <mrow> \amp = e^t + \frac{1}{t^2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -197,6 +369,14 @@
                     <m>g(w) = w(w+3)^2(2w-5)^2</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>g(w) \amp = 4w^5 + 4w^4 - 59w^3-30w^2 + 225w</mrow>
+                        <mrow>g'(w) \amp = 20w^4 + 16w^3 - 177w^2 - 60w + 225</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -204,6 +384,14 @@
                     <m>s(t) = \dfrac{6t^{3/2}+4t^{5/3}}{5t^{1/3}}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>s(t) \amp = \frac{6}{5}t^{7/6} + \frac{4}{5}t</mrow>
+                        <mrow>s'(t) \amp = \frac{7}{5} t^{1/6} + \frac{4}{5}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -218,6 +406,14 @@
                     <m>f(x) = 7x^5 - 2x^4 + x^3 - 7x^2+14x-10</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = 35x^4 - 8x^3 +3x^2-14x+14</mrow>
+                        <mrow>f''(x) \amp = 140x^3 - 24x^2 + 6x - 14</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -225,6 +421,15 @@
                     <m>f(x) = 4e^x - \dfrac{3}{x^5}+ x</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f(x) \amp = 4e^x - 3x^{-5} + x</mrow>
+                        <mrow>f'(x) \amp = 4e^x + 15x^{-6}+1</mrow>
+                        <mrow>f''(x) \amp = 4e^x - 90x^{-7}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -239,6 +444,20 @@
                     <m>f(x) = 4x^2-x^3</m> for <m>a=3</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = 8x-3x^2</mrow>
+                        <mrow>f'(3) \amp = 24-27</mrow>
+                        <mrow> \amp = -3</mrow>
+                    </md>
+                    So the tangent line has a slope of <m>-3</m> and passes through the point <m>(3, f(3)) = (3,-9)</m>:
+                    <md>
+                        <mrow>y \amp =-3(x-3)-9</mrow>
+                        <mrow> \amp = -3x</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -246,6 +465,20 @@
                     <m>f(x) = e^x-4x</m> for <m>a=0</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = e^x-4</mrow>
+                        <mrow>f'(0) \amp = 1 - 4</mrow>
+                        <mrow> \amp =-3</mrow>
+                    </md>
+                    So the tangent line has a slope of <m>-3</m> and passes through the point <m>(0, f(0)) = (0,0)</m>:
+                    <md>
+                        <mrow>y \amp =-3(x-0)+0</mrow>
+                        <mrow> \amp = -3x</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -253,6 +486,20 @@
                     <m>f(x) = x^2-x+1</m> for <m>a=-2</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = 2x-1</mrow>
+                        <mrow>f'(-2) \amp = -4 - 1</mrow>
+                        <mrow> \amp =-5</mrow>
+                    </md>
+                    So the tangent line has a slope of <m>-5</m> and passes through the point <m>(-2, f(-2)) = (-2,7)</m>:
+                    <md>
+                        <mrow>y \amp =-5(x+2)+7</mrow>
+                        <mrow> \amp = -5x-3</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -260,6 +507,20 @@
                     <m>f(x) = 4\sqrt{x}-x</m> for <m>a=9</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = \frac{2}{\sqrt{x}}-1</mrow>
+                        <mrow>f'(9) \amp = \frac{2}{3} - 1</mrow>
+                        <mrow> \amp =-\frac{1}{3}</mrow>
+                    </md>
+                    So the tangent line has a slope of <m>-3</m> and passes through the point <m>(0, f(0)) = (0,0)</m>:
+                    <md>
+                        <mrow>y \amp =-3(x-0)+0</mrow>
+                        <mrow> \amp = -3x</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -274,6 +535,11 @@
                     Find the derivative <m>f'(x)</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>f'(x)=4e^x - 5</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -288,6 +554,17 @@
                     Find the value of <m>x</m> where the slope of the line tangent to <m>f(x)</m> is 6.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = 4e^x-5 </mrow>
+                        <mrow>6 \amp = 4e^x - 5</mrow>
+                        <mrow>\frac{11}{4} \amp = e^x</mrow>
+                        <mrow>x \amp = \ln\left(\frac{11}{4}\right) </mrow>
+                        <mrow> \amp = \ln(11)-\ln(4)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -295,6 +572,17 @@
                     Find the value for <m>x</m> where <m>f(x)</m> has a horizontal tangent line.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = 4e^x-5 </mrow>
+                        <mrow>0 \amp = 4e^x - 5</mrow>
+                        <mrow>\frac{5}{4} \amp = e^x</mrow>
+                        <mrow>x \amp = \ln\left(\frac{5}{4}\right) </mrow>
+                        <mrow> \amp = \ln(5)-\ln(4)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -309,6 +597,11 @@
                      Find the derivative <m>f'(x)</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>f'(x)=\frac{1}{3\sqrt[3]{x^2}}+1</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -316,6 +609,16 @@
                      Find the value for <m>x</m> where the slope of the line tangent to <m>f(x)</m> is 2.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x)\amp =\frac{1}{3\sqrt[3]{x^2}}+1 </mrow>
+                        <mrow>2 \amp =\frac{1}{3\sqrt[3]{x^2}}+1</mrow>
+                        <mrow>1 \amp = \sqrt[3]{x^2} </mrow>
+                        <mrow>1 \amp = x</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -323,6 +626,15 @@
                     Find the value for <m>x</m> where <m>f(x)</m> has a vertical tangent line.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    We are interested in finding any values of <m>x</m> that will make <m>f'(x)</m> not exist, and specifically ones that will result in the derivative approaching <m>\pm \infty</m>.
+                    <me>
+                        f'(x)=\frac{1}{3\sqrt[3]{x^2}}+1
+                    </me>
+                    Note that when <m>x=0</m>, we end up with division by 0.
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
