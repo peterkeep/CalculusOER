@@ -45,6 +45,16 @@
                     <m>\Ddx{\dfrac{g(x)}{f(x)}}\bigg|_{x=2}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> \Ddx{\dfrac{g(x)}{f(x)}}\amp = \frac{f(x)g'(x)-g(x)f'(x)}{(f(x))^2}</mrow>
+                        <mrow> \Ddx{\dfrac{g(x)}{f(x)}}\bigg|_{x=2}\amp = \frac{f(2)g'(2)-g(2)f'(2)}{(f(2))^2} </mrow>
+                        <mrow> \amp = \frac{\left(\frac{1}{7}\right)\left(\frac{7}{3}\right)-\left(-\frac{5}{2}\right)\left(-1\right)}{\left(\frac{1}{7}\right)^2}</mrow>
+                        <mrow> \amp = - \frac{637}{6} </mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -52,6 +62,16 @@
                     <m>\Ddx{f(x)g(x)}\bigg|_{x=0}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\Ddx{f(x)g(x)} \amp = f(x)g'(x)+f'(x)g(x)</mrow>
+                        <mrow>\Ddx{f(x)g(x)}\bigg|_{x=0} \amp = f(0)g'(0)+f'(0)g(0)</mrow>
+                        <mrow> \amp = (-3)(-4)+\left(\frac{1}{2}\right)(2)</mrow>
+                        <mrow> \amp = 10</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -59,6 +79,16 @@
                     <m>\Ddx{\dfrac{f(x)+1}{g(x)-2}}\bigg|_{x=0}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\Ddx{\dfrac{f(x)+1}{g(x)-2}} \amp = \frac{(g(x)-2)(f'(x))-(f(x)+1)(g'(x))}{(g(x)-2)^2}</mrow>
+                        <mrow>\Ddx{\dfrac{f(x)+1}{g(x)-2}}\bigg|_{x=0} \amp = \frac{(g(0)-2)(f'(0))-(f(0)+1)(g'(0))}{(g(0)-2)^2}</mrow>
+                        <mrow> \amp = \frac{(0)\left(\frac{1}{2}\right)-(-2)(-4)}{0}</mrow>
+                    </md>
+                    This derivative doesn't exist, since we have division by 0. We can notice that the actual quotient doesn't exist: there's a vertical asymptote on this function at <m>x=0</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -66,6 +96,16 @@
                     <m>\Ddx{f(x)g(x)}\bigg|_{x=2}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\Ddx{f(x)g(x)} \amp = f(x)g'(x)+f'(x)g(x)</mrow>
+                        <mrow>\Ddx{f(x)g(x)}\bigg|_{x=2} \amp = f(2)g'(2)+f'(2)g(2)</mrow>
+                        <mrow> \amp = \left(\frac{1}{7}\right)\left(\frac{7}{3}\right)+\left(-1\right)\left(-\frac{5}{2}\right)</mrow>
+                        <mrow> \amp = \frac{17}{6}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -80,6 +120,15 @@
                     <m>f(x) = (4x+4)(7x^2-6)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = (4)(7x^2-6)+(14x)(4x+4) </mrow>
+                        <mrow> \amp = 84x^2 + 56x-24</mrow>
+                    </md>
+                    
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -87,6 +136,14 @@
                     <m>g(x) = \dfrac{x^2+1}{x}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>g'(x) \amp = \frac{(2x)(x)-(1)(x^2+1)}{x^2}</mrow>
+                        <mrow> \amp = \frac{x^2-1}{x^2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -94,6 +151,14 @@
                     <m>j(x) = \dfrac{e^x}{x-1}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>j'(x) \amp = \frac{(e^x)(x-1)-(1)(e^x)}{(x-1)^2}</mrow>
+                        <mrow> \amp = \frac{xe^x-2e^x}{(x-1)^2} = \frac{e^x(x-2)}{(x-1)^2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -101,6 +166,14 @@
                     <m>s(t) = e^t(t^2+t-1)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>s'(t) \amp = (e^t)(2t+1)+(e^t)(t^2+t-1)</mrow>
+                        <mrow> \amp = t^2e^t+3te^t = e^t(t^2+3t)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -108,6 +181,15 @@
                     <m>\Gamma(\theta) = 4e^\theta\sqrt{\theta}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\Gamma'(\theta) \amp = (4e^\theta)\left(\frac{1}{2\sqrt{\theta}}\right) + (4e^\theta)(\sqrt{\theta})
+                        </mrow>
+                        <mrow> \amp = 4e^\theta\left(\frac{1}{2\sqrt{\theta}}+\sqrt{\theta}\right)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -120,6 +202,15 @@
                     This function can be written as <m>r(t) = \left(e^t\right)^2</m>.
                 </p>
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>r(t) \amp = \left(e^t\right)\left(e^t\right)</mrow>
+                        <mrow> r'(t) \amp =  \left(e^t\right)\left(e^t\right) + \left(e^t\right)\left(e^t\right)</mrow>
+                        <mrow> \amp = 2\left(e^t\right)^2 = 2e^{2t}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -127,6 +218,16 @@
                     <m>w(x) = (5x^5-4x^2+5x-1)^2</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>w(x) \amp = (5x^5-4x^2+5x-1)(5x^5-4x^2+5x-1)</mrow>
+                        <mrow>w'(x) \amp = (25x^4 -8x+5)(5x^5-4x^2+5x-1) + (25x^4 -8x+5)(5x^5-4x^2+5x-1)</mrow>
+                        <mrow> \amp = 2(25x^4 -8x+5)(5x^5-4x^2+5x-1)</mrow>
+                        <mrow> \amp = 250 x^9 - 280 x^6 + 300 x^5 - 50 x^4 + 64 x^3 - 120 x^2 + 66 x - 10</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -134,6 +235,14 @@
                     <m>p(\alpha) = \dfrac{\alpha^3+1}{\alpha^2-1}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>p'(\alpha) \amp  = \frac{3\alpha^2(\alpha^2-1)-2\alpha(\alpha^3+1)}{(\alpha^2-1)^2}</mrow>
+                        <mrow> \amp = \frac{\alpha^4 - 3\alpha^2-2\alpha}{(\alpha^2-1)^2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -141,6 +250,14 @@
                     <m>f(x) = \dfrac{x+e}{x^3-4x}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = \frac{(3x^2-4)(x+e)-(x^3-4x)}{(x^3-4x)^2}</mrow>
+                        <mrow> \amp = \frac{2x^3+3ex^2-4e}{(x^3-4x)^2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -148,6 +265,15 @@
                     <m>g(x) = \dfrac{x+4}{e^x}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>g'(x) \amp = \frac{e^x-e^x(x+4)}{(e^x)^2}</mrow>
+                        <mrow> \amp = \frac{-xe^x-5e^x}{(e^x)^2}</mrow>
+                        <mrow> \amp = -\frac{x+5}{e^x}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -162,6 +288,11 @@
                     <m>y = e^x(x+4)^2(4x-3)</m>
                 </p>
             </statement>
+            <answer>
+                <p>
+                    <m>\dydx = e^x(4x^3+41x^2+98x-8)</m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
@@ -169,6 +300,11 @@
                     <m>y = \dfrac{xe^x+1}{x^2-1}</m>
                 </p>
             </statement>
+            <answer>
+                <p>
+                    <m>\Dydx = \dfrac{e^x(x^3-x^2-x-1)-2x}{(x^2-1)^2}</m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
@@ -176,6 +312,11 @@
                     <m>y = \dfrac{x^2+4x-1}{xe^x}</m>
                 </p>
             </statement>
+            <answer>
+                <p>
+                    <m>\Dydx = \dfrac{-x^3-3x^2+x+1}{x^2e^x}</m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
@@ -183,6 +324,11 @@
                     <m>y = \left(\dfrac{x^2-4}{x+5}\right)\left(e^x(x+3)\right)</m>
                 </p>
             </statement>
+            <answer>
+                <p>
+                    <m>\Dydx = \dfrac{e^x(x^4+10x^3+29x^2-2x-68)}{(x+5)^2}</m>
+                </p>
+            </answer>
         </task>
     </exercise>
     <exercise>
@@ -197,6 +343,20 @@
                     <m>f(x) = \dfrac{x^2-5}{x^2+1}</m> at <m>(1,-2)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = \frac{2x(x^2+1)-2x(x^2-5)}{(x^2+1)} </mrow>
+                        <mrow>f'(1) \amp = \frac{2(2)-2(-4)}{(2)^2} </mrow>
+                        <mrow> \amp = 3</mrow>
+                    </md>
+                    So the equation of the tangent line is:
+                    <md>
+                        <mrow>y \amp = 3(x-1)-2</mrow>
+                        <mrow> \amp = 3x-5</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -204,6 +364,20 @@
                     <m>f(x) = \dfrac{e^x}{x+1}</m> at <m>(0,1)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = \frac{e^x(x+1)-e^x}{(x+1)^2}</mrow>
+                        <mrow>f'(0) \amp = \frac{1-1}{(1)^2}</mrow>
+                        <mrow> \amp = 0</mrow>
+                    </md>
+                    So the equation of the tangent line is:
+                    <md>
+                        <mrow>y \amp= 0(x-0)+1 </mrow>
+                        <mrow> \amp = 1</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -211,6 +385,20 @@
                     <m>f(x) = e^x(x^2+6)</m> at <m>(1,7e)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = e^x(x^2+6)+2xe^x</mrow>
+                        <mrow>f'(1) \amp = 7e+2e</mrow>
+                        <mrow> \amp = 9e</mrow>
+                    </md>
+                    So the equation of the tangent line is:
+                    <md>
+                        <mrow>y \amp = 9e(x-1)+7e</mrow>
+                        <mrow> \amp = 9ex-2e</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -218,6 +406,20 @@
                     <m>f(x) = \dfrac{xe^x}{x+2}</m> at <m>(0,0)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = \frac{(xe^x+e^x)(x+2)-xe^x}{(x+2)^2}</mrow>
+                        <mrow>f'(0) \amp = \frac{(1)(2)}{(2)^2}</mrow>
+                        <mrow> \amp = \frac{1}{2}</mrow>
+                    </md>
+                    So the equation of the tangent line is:
+                    <md>
+                        <mrow>y \amp = \frac{1}{2}(x-0)+0</mrow>
+                        <mrow> \amp = \frac{x}{2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
 </exercises>
