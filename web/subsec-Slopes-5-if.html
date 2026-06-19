@@ -93,13 +93,11 @@ window.MathJax = {
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-                <!-- https://www.doenet.org/portfolioeditor/_MIinBPapnArG3nOcWG3YT/_P4uJCNezOIwGr79Su4NUH -->
-
-<setup>
+                <setup>
   <function name="f" styleNumber="6">(x-1)(x-3)(x+5)/40</function>
   <function name="fEnds" domain="[$a-3,$a+3]">$f</function>
   <derivative name="fPrime">$f</derivative>
-  <number name="a">2</number>
+  <!-- <number name="a">2</number> -->
   <point name="point" styleNumber="2">($a,$$f($a))</point>
   <function name="tan" domain="[$a-2, $a+2]" styleNumber="2">$$fPrime($a)(x-$a)+$$f($a)</function>
   <point name="P" styleNumber="1">($a-3, $$f($a-3))</point>
@@ -108,7 +106,16 @@ window.MathJax = {
   <number name="instSlope" styleNumber="2">$$fPrime($a)</number>
 </setup>
 
+<p><em>Instructions:</em> Shift the interval back and forth. What do you notice about the visual? Is there anything you wonder about?</p>
+
+<slider name="a" from="-6" to="6" initialValue="2" step="0.001" showValue="false" showTicks="false">
+  <label>Shift the interval.</label>
+</slider>
+
 <graph fixAxes>
+  <shortDescription>
+    A cubic polynomilal with a movable interval that is highlighted. On the interval, there is a secant line connecting the end points and a tangent line around half-way through the interval.
+  </shortDescription>
   $f
   $fEnds
   $P

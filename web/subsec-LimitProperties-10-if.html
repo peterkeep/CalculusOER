@@ -137,14 +137,16 @@ window.MathJax = {
 </p>
 
 <choiceInput name="funcChoice">  
-  <choice preSelect>Constant Function: <m>y=k</m> (currently <m>y=$k</m>)</choice>
+  <choice preSelect>Constant Function: <m>y=k</m></choice>
   <choice>Identity Function: <m>y=x</m></choice>
+  <label>Function Choice</label>
 </choiceInput>
 
 <conditionalContent>
   <case condition="$showConstant">
-    Select the value of the constant, <m>k</m>:
-    <slider name="slider" from="-2" to="2" step="0.01" initialValue="1" showTicks="false"  showValue="true" labelIsName bindValueTo="$k"/>
+    Select the value of the constant, <m>k</m>. 
+    <slider name="slider" from="-2" to="2" step="0.01" initialValue="1" showTicks="false"  showValue="false" bindValueTo="$k"/>
+    (<m>k=$k</m>)
   </case>
 </conditionalContent>
 
@@ -168,6 +170,9 @@ window.MathJax = {
     </case>
   </conditionalContent>
   $P
+  <shortDescription>
+    Graph of a horizontal line, or a diagonal line, depending on the selection. There is a small interval on the x-axis that is moveable that corresponds with a section of the graph. The y-values of this section are highlighted on the graph. 
+  </shortDescription>
 </graph>
         </script>
 </div></div>

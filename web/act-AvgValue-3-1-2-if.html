@@ -94,23 +94,21 @@ window.MathJax = {
 </div>
 <script type="text/doenetml">
                 <setup>
-  <styleDefinitions>
-    <styleDefinition styleNumber="7" markerColor="#07aa60" 
-      markerStyle="square" markerSize="5" fillColor="#07aa60" 
-      lineColor="#07aa60" lineStyle="solid" lineWidth="3" />
-  </styleDefinitions>
+  <styleDefinition styleNumber="7" markerColor="green" 
+    markerStyle="square" markerSize="5" fillColor="green" 
+    lineColor="green" lineStyle="solid" lineWidth="3" />
   <conditionalContent name="color">
-    <case condition="abs($est.yintercept - $avg) <= 0.02">
+    <case condition="$ans.justSubmitted and abs($est.yintercept - $avg) <= 0.025">
       7
     </case>
-    <case condition="abs($est.yintercept - $avg) < 0.1">
+    <case condition="$ans.justSubmitted and abs($est.yintercept - $avg) < 0.1">
       3
     </case>
     <else>
       2
     </else>
   </conditionalContent>
-  <line name="est" draggable="true" through="(-1,0.2) (1,0.2)" styleNumber="4"/>
+  <line name="est" draggable="true" through="(-1,$a) (1,$a)" styleNumber="4"/>
   <line name="estCheck" draggable="false" equation="y=$est.yintercept" styleNumber="$color" />
   <number name="avg">($$F(2) - $$F(-1))/3</number>
   <function name="F">(x-3)(x-4)(x+1)^2 x^2/30 + x/4</function>
@@ -118,60 +116,49 @@ window.MathJax = {
   <function name="estFunc">$est.yintercept</function>
 </setup>
 
-<p><em>Instructions:</em> Move the purple horizontal line up or down until you think it is at the vertical location of the average value of <m>f(x)</m> on the interval <m>[a, b]</m>. Check your answer using the button on the bottom of the graph.</p>
+<p><em>Instructions:</em> Move the horizontal line up or down until you think it is at the vertical location of the average value of <m>f(x)</m> on the interval <m>[a, b]</m>. Check your answer using the button on the bottom of the graph.</p>
 
-<graph xmin="-1.5" xmax="2.5" ymin="-0.15" ymax="2.5" identicalAxisScales fixAxes displayXAxisTickLabels="false" displayYAxisTickLabels="false">
+<slider name="a" from="0" to="2" step="0.001" initialValue="0.2" showTicks="false" showValue="false">
+  <label>Slide to change the height of the horizontal line.</label>
+</slider>
+<graph xmin="-1.5" xmax="2.5" ymin="-0.15" ymax="2.5" identicalAxisScales fixAxes 
+  displayXAxisTickLabels="false" displayXAxisTicks="false" 
+  displayYAxisTickLabels="false" displayYAxisTicks="false">
+  <shortDescription>
+    A graph of a polynomial function on an interval, with the area below it shaded in. A horizontal line moves up and down.
+  </shortDescription>
   $f
   <point fixed>(2, $$f(2))</point>
   <point fixed>(-1, $$f(-1))</point>
   <line equation="x=2" styleNumber="6" fixed/>
   <line equation="x=-1" styleNumber="6" fixed/>
-  <conditionalContent>
-    <case condition="$Check=false">
       $est
-    </case>
-    <case condition="$Check=true">
       $estCheck
-    </case>
-  </conditionalContent>
-  <conditionalContent>
-    <case condition="$showArea=true">
-      <regionBetweenCurveXAxis function="$f" boundaryValues="-1 2"/>
-      <regionBetweenCurveXAxis function="$estFunc" boundaryValues="-1 2" styleNumber="4"/>
-    </case>
-  </conditionalContent>
+      <regionBetweenCurveXAxis function="$f" boundaryValues="-1 2" hide="!$showArea"/>
+      <regionBetweenCurveXAxis function="$estFunc" boundaryValues="-1 2" styleNumber="$color" hide="!$showArea"/>
 </graph>
 
-<booleanInput asToggleButton name="Check">
-  <label>
-    <conditionalContent>
-      <case condition="$Check=false">
-        Check your answer!
-      </case>
-      <case condition="$Check=true">
-        Try it again!
-      </case>
-    </conditionalContent>
-  </label>
-</booleanInput>
+<answer name="ans">
+  <award>
+    <when>
+      abs($est.yintercept - $avg) <= 0.02
+    </when>
+  </award>
+</answer>
 
-<feedback condition="$Check=false">
-  Move the horizontal line up or down until you think it is close to the average height of the function. Then, check your answer!
-</feedback>
-
-<feedback condition="$Check=true and abs($est.yintercept - $avg) <= 0.02">
+<feedback condition="$ans.justSubmitted and abs($est.yintercept - $avg) <= 0.025">
   You got it! This is very close to the average height of the function!
 </feedback>
 
-<feedback condition="$Check=true and abs($est.yintercept - $avg) < 0.1">
+<feedback condition="$ans.justSubmitted and 0.025 <  abs($est.yintercept - $avg) < 0.1">
   Close! Do you think you need to move the line higher or lower?
 </feedback>
 
-<feedback condition="$Check=true and abs($est.yintercept - $avg) >= 0.1">
+<feedback condition="$ans.justSubmitted and abs($est.yintercept - $avg) >= 0.1">
   Hm...try again! Do you think you need to move the line higher or lower?
 </feedback>
 
-<aside>
+<hint>
   <title>Hint!</title>
   <p>
     Can you think about this in terms of area? How can you balance the "area" between the curve and your horizontal line?
@@ -188,7 +175,7 @@ window.MathJax = {
       </conditionalContent>
     </label>
   </booleanInput>
-</aside>
+</hint>
             </script>
 </div></div>
 </body>

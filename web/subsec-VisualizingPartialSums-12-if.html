@@ -155,22 +155,29 @@ window.MathJax = {
           name="ak"
           from="1"
           to="10" valueName="k" asList>
-  <mathInput prefill="1/$k"/>
+  <mathInput prefill="1/$k"><shortDescription>sequence term</shortDescription></mathInput>
 </repeatForSequence>
 
 <sideBySide>
-  <p><me>\{a_k\}_{k=1}^{\infty}</me></p>
-  <p><me>\left\{S_n\right\}_{n=1}^{\infty}</me></p>
-</sideBySide>
-
-<sideBySide>
-  <graph xMin="-1" xMax="10.5" yMin="$aYMin-0.2" yMax="$aYMax+0.2" fixAxes showBorder="false">
-    $a
-  </graph>
-
-  <graph xMin="-1" xMax="10.5" yMin="$SYMin-0.5" yMax="$SYMax+1" fixAxes showBorder="false">
-    $S
-  </graph>
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>\{a_k\}_{k=1}^{\infty}</m>.</caption>
+    <graph xMin="-1" xMax="10.5" yMin="$aYMin-0.2" yMax="$aYMax+0.2" fixAxes showBorder="false">
+      <shortDescription>
+        Graph of the sequence terms above. The graph is represented by dots at the values. The first n points are highlighted (where n is selected from the slider).
+      </shortDescription>
+      $a
+    </graph>
+  </figure>
+  
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>\left\{S_n\right\}_{n=1}^{\infty}</m>.</caption>
+    <graph xMin="-1" xMax="10.5" yMin="$SYMin-0.5" yMax="$SYMax+1" fixAxes showBorder="false">
+      <shortDescription>
+        Graph of the partial sums of the sequence. The graph is represented by dots at the values. The nth point is highlighted (where n is selected from the slider).
+      </shortDescription>
+      $S
+    </graph>
+  </figure>
 </sideBySide>
 
 <p>Which partial sum would you like to look at? Change the number of terms using the slider below!</p>

@@ -93,9 +93,7 @@ window.MathJax = {
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-                    <!-- https://www.doenet.org/portfolioeditor/_3Qp7y1YuT4I4A6cRf8fyX/_a3iZpqOIOdMIWG2PfkR9V -->
-
-<setup>
+                    <setup>
   <number name="a">$$uinv(1/2)</number>
   <number name="b">$$uinv(4)</number>
   <function name="u">x^(3-$h)</function>
@@ -112,10 +110,13 @@ window.MathJax = {
 </p>
 <slider name="h" from="1" to="2" step="0.001" initialValue="1"
   showTicks="false" showValue="false">
-  <label>Slide from <m>x</m> to <m>u</m></label>
+  <label>Slide to substitute from <m>x</m> to <m>u</m></label>
 </slider>
 
-<graph xmin="-0.2" xmax="ceil($$uinv(4)+0.5)" ymin="-3.2" ymax="3.2">
+<graph xmin="-0.2" xmax="ceil($$uinv(4)+0.5)" ymin="-3.2" ymax="3.2" fixAxes>
+  <shortDescription>
+    Graph of a function with the region between the graph and the x-axis from around x=0.75 to x=2 shaded in. As the slider moves, the function changes and the interval changes, but the size of the region stays the same.
+  </shortDescription>
   $fu
   <lineSegment endpoints="($a, 0) ($a, $$fu($a))" draggable="false" styleNumber="6"/>
   <lineSegment endpoints="($b, 0) ($b, $$fu($b))" draggable="false" styleNumber="6"/>

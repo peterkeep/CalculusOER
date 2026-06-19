@@ -93,27 +93,20 @@ window.MathJax = {
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-                    <!-- https://doenet.org/portfolioeditor/_e0Zl2rjvA8GweNOBUp5DN/_IFku4mkcIZLylbxL44Ix6 -->
-
-<setup>
+                    <setup>
   <function name="f" domain="[0,1]">x^2</function>
   <function name="g" domain="[0,1]">-(x-1)^2+1</function>
-  <number name="a">0</number>
-  <point name="fPoint">($a, $$f($a))
-  <constraints>
+  <point name="fPoint" hide="!$ToggleTangent">($a, $$f($a))
     <constrainTo>$f</constrainTo>
-  </constraints>
   </point>
   
-  <point name="gPoint">($a, $$g($a))
-  <constraints>
+  <point name="gPoint" hide="!$ToggleTangent">($a, $$g($a))
     <constrainTo>$g</constrainTo>
-  </constraints>
   </point>
   <derivative name="dfdx">$f</derivative>
   <derivative name="dgdx">$g</derivative>
-  <function name="fTangent" styleNumber="2">$$dfdx($a)(x-$a)+$$f($a)</function>
-  <function name="gTangent" styleNumber="2">$$dgdx($a)(x-$a)+$$g($a)</function>
+  <function name="fTangent" styleNumber="2" hide="!$ToggleTangent" domain="[$a-0.2,$a+0.2]">$$dfdx($a)(x-$a)+$$f($a)</function>
+  <function name="gTangent" styleNumber="2" hide="!$ToggleTangent" domain="[$a-0.2,$a+0.2]">$$dgdx($a)(x-$a)+$$g($a)</function>
   <text name="TanLabel">
     <conditionalContent>
       <case condition="$ToggleTangent">Hide Tangent Lines</case>
@@ -130,66 +123,82 @@ window.MathJax = {
 
 <p><em>Instructions:</em> Compare the functions <m>f(x)</m> and <m>g(x)</m> on the interval <m>[0,1]</m>.</p>
 
+<sideBySide>
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>f(x)</m>.</caption>
+    <graph xmin="-0.1" xmax="1.1" ymin="-0.1" ymax="1.1" size="small" fixAxes="true" 
+      displayXAxisTickLabels="false" displayXAxisTicks="false"
+      displayYAxisTickLabels="false" displayYAxisTicks="false">
+      <shortDescription>
+        Graph of a function starting at the point (0,0) and ending at (1,1). It starts flat near the origin and then curves upwards towards (1,1).
+      </shortDescription>
+      $f
+      $fPoint
+      $fTangent
+    </graph>
+  </figure>
+  
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>g(x)</m>.</caption>
+    <graph xmin="-0.15" xmax="1.1" ymin="-0.1" ymax="1.1" size="small" fixAxes="true" 
+      displayXAxisTickLabels="false" displayXAxisTicks="false"
+      displayYAxisTickLabels="false" displayYAxisTicks="false">
+      <shortDescription>
+        Graph of a function starting at the point (0,0) and ending at (1,1). It starts steep near the origin and then curves back down as it goes towards (1,1).
+      </shortDescription>
+      $g
+      $gPoint
+      $gTangent
+    </graph>
+  </figure>
+</sideBySide>
+
 <p><em>Hint 1:</em> Click the button below to add tangent lines to the graphs of <m>f(x)</m> and <m>g(x)</m>.</p>
 
-<booleanInput name="ToggleTangent" asToggleButton>
+<booleanInput name="ToggleTangent" asToggleButton="true">
   <label>$TanLabel</label>
 </booleanInput>
 
-<sideBySide>
-  <p><me>\text{Graph of } f(x)</me></p>
-  <p><me>\text{Graph of } g(x)</me></p>
-</sideBySide>
-<sideBySide>
-  <graph xmin="-0.1" xmax="1.1" ymin="-0.1" ymax="1.1" size="small" fixAxes>
-    $f
-    <conditionalContent condition="$ToggleTangent">
-    $fPoint
-    $fTangent
-    </conditionalContent>
-  </graph>
+<slider name="a" initialValue="0" from="0" to="1" step="0.01" showTicks="false" showValue="false" hide="!$ToggleTangent">
+  <label>Move the points and tangent lines.</label>
+</slider>
 
-  <graph xmin="-0.15" xmax="1.1" ymin="-0.1" ymax="1.1" size="small" fixAxes>
-    $g
-    <conditionalContent condition="$ToggleTangent">
-    $gPoint
-    $gTangent
-    </conditionalContent>
-  </graph>
-</sideBySide>
+<p hide="!$ToggleTangent"><em>Hint 2:</em> Click the button below to see the graphs of the derivative functions, <m>f'(x)</m> and <m>g'(x)</m>.</p>
 
-<p><em>Hint 2:</em> Click the button below to see the graphs of the derivative functions, <m>f'(x)</m> and <m>g'(x)</m>.</p>
-
-<booleanInput name="ToggleDerivative" asToggleButton>
+<booleanInput name="ToggleDerivative" asToggleButton="true" hide="!$ToggleTangent">
   <label>$DerivativeLabel</label>
 </booleanInput>
 
-<conditionalContent condition="$ToggleDerivative">
-  <sideBySide>
-    <p><me>\text{Graph of } f'(x)</me></p>
-    <p><me>\text{Graph of } g'(x)</me></p>
-  </sideBySide>
-
-  <sideBySide>
-    <graph xmin="-0.1" xmax="1.1" ymin="-0.2" ymax="2.2" size="small" fixAxes>
+<sideBySide hide="!$ToggleDerivative or !$ToggleTangent">
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>f'(x)</m>.</caption>
+    <graph xmin="-0.1" xmax="1.1" ymin="-0.2" ymax="2.2" size="small" fixAxes="true" 
+      displayXAxisTickLabels="false" displayXAxisTicks="false"
+      displayYAxisTickLabels="false" displayYAxisTicks="false">
+      <shortDescription>
+        A positive and increasing linear function.
+      </shortDescription>
       <function domain="[0,$a]" styleNumber="2">$dfdx</function>
       <point styleNumber="2">($a, $$dfdx($a))
-        <constraints>
           <constrainTo>$dfdx</constrainTo>
-        </constraints>
       </point>
     </graph>
-
-    <graph xmin="-0.1" xmax="1.1" ymin="-0.2" ymax="2.2" size="small" fixAxes>
+  </figure>
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>g'(x)</m>.</caption>
+    <graph xmin="-0.1" xmax="1.1" ymin="-0.2" ymax="2.2" size="small" fixAxes="true" 
+      displayXAxisTickLabels="false" displayXAxisTicks="false"
+      displayYAxisTickLabels="false" displayYAxisTicks="false">
+      <shortDescription>
+        A positive and decreasing linear function.
+      </shortDescription>
       <function domain="[0,$a]" styleNumber="2">$dgdx</function>
       <point styleNumber="2">($a, $$dgdx($a))
-        <constraints>
-          <constrainTo>$dgdx</constrainTo>
-        </constraints>
+        <constrainTo>$dgdx</constrainTo>
       </point>
     </graph>
-  </sideBySide>
-</conditionalContent>
+  </figure>
+</sideBySide>
                 </script>
 </div></div>
 </body>

@@ -112,9 +112,12 @@ window.MathJax = {
   <number name="a">0</number>
   <function name="f">cos(x)</function>
   <derivative name="fPrime">$f</derivative>
-  <animateFromSequence name="aAnimate" target="$a" from="-2*pi" to="2*pi" step="0.03" animationInterval="15" animationMode="increase" animationOn="true" />
+  <animateFromSequence name="aAnimate" target="$a" from="-2*pi" to="2*pi" step="pi/48" animationInterval="15" animationMode="increase" animationOn="false" />
 </setup>
 <graph xTickScaleFactor="pi" xmin="-6.7" xmax="6.7" ymin="-3" ymax="3" identicalAxisScales displayYAxisTickLabels="false" fixAxes>
+  <shortDescription>
+    Graph of the cosine function, with a point that moves along the oscillations. At the point, a tangent line changes direction and location as the point moves.
+  </shortDescription>
     $f
     <function name="g" styleNumber="2">$$fPrime($a)*(x-$a) + $$f($a)</function>
     <point name="afa" styleNumber="1">($a,$$f($a))
@@ -124,7 +127,7 @@ window.MathJax = {
 <conditionalContent>
   <case condition="$aAnimate.animationOn = false">
     <p>While the animation is paused, feel free to move the tangent line manually by dragging the point or by inputting specific <m>x</m>-values below.</p>
-    <p><m>x=</m><mathInput name="t" prefill="0" bindValueTo="$a"/></p>
+    <p><mathInput name="t" prefill="0" bindValueTo="$a"><label><m>x=</m></label></mathInput></p>
   </case>
 </conditionalContent>
                 </script>

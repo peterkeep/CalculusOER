@@ -96,7 +96,7 @@ window.MathJax = {
                 <setup>
     <!-- Styles -->
   <styleDefinitions>
-    <styleDefinition styleNumber="1" lineWidth="3" textColor="#92B0FF"/>
+    <styleDefinition styleNumber="1" lineWidth="3" textColor="#3b4c78"/>
     <styleDefinition styleNumber="2" markerStyle="circle" lineWidth="3"/>
     <styleDefinition styleNumber="3" markerStyle="circle" lineWidth="3"/>
     <styleDefinition styleNumber="5" lineWidth="3"/>
@@ -123,6 +123,9 @@ window.MathJax = {
 
 
 <graph displayXAxis="false" displayYAxis="false" xmin="-8" xmax="6" ymin="-4" ymax="4" identicalAxisScales="true" fixAxes showBorder="false">
+  <shortDescription>
+    Three circles, each with a point circling around it, made to look like interlocking gears spinning together.
+  </shortDescription>
   $GearA
   <point styleNumber="1">(3cos($t)-4, -3sin($t))</point>
   $GearB
@@ -134,6 +137,22 @@ window.MathJax = {
   <label styleNumber="2" anchor="(0,1.5)" draggable="false">Gear B</label>
   <label styleNumber="3" anchor="(3,2.5)" draggable="false">Gear C</label>
 </graph>
+
+<!-- 
+
+
+<booleanInput name="hide" asToggleButton>
+  <label>
+    <conditionalContent>
+      <case condition="$hide=false">
+        Hide the gears!
+      </case>
+      <case condition="$hide=true">
+        Go back!
+      </case>
+    </conditionalContent>
+  </label>
+</booleanInput> -->
             </script>
 </div></div>
 </body>

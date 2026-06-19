@@ -94,12 +94,10 @@ window.MathJax = {
 </div>
 <script type="text/doenetml">
                     <setup>
-  <circle name="circle" fixed/>
+  <circle name="circle" fixed="true" />
   <function name="f" domain="[cos(7pi/15), cos(pi/15)]">sqrt(1-x^2)</function>
-  <point name="point" coords="(cos(pi/5),sin(pi/5))" draggable="true" showCoordsWhenDragging="false">
-    <constraints>
-      <constrainTo>$circle</constrainTo>
-    </constraints>
+  <point name="point" coords="(cos($t),sin($t))" draggable="true" showCoordsWhenDragging="false">
+    <constrainTo>$circle</constrainTo>
   </point>
   <point name="ancHyp">
     <conditionalContent>
@@ -122,7 +120,9 @@ window.MathJax = {
     </conditionalContent>
   </point>
 </setup>
-
+<slider name="t" from="-pi/2" to="pi/2" step="0.01" initialValue="pi/5" showTicks="false" showValue="false">
+  <label>Move the point:</label>
+</slider>
 <graph xmin="-0.05" xmax="1.35" ymin="-1.15" ymax="1.15" identicalAxisScales="true" showNavigation="false" fixAxes="true" displayXAxisTickLabels="false" displayYAxisTickLabels="false" size="small">
   $circle
   $point
@@ -137,7 +137,7 @@ window.MathJax = {
       <case condition="$point.y>=0">
       <m>x\;(x\geq0)</m>
       </case>
-      <case condition="$point.y<0">
+      <case condition="$point.y&lt;0">
       <m>x\;(x\lt0)</m>
       </case>
     </conditionalContent>

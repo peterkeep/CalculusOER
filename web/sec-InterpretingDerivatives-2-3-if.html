@@ -100,7 +100,7 @@ window.MathJax = {
     (x)^2(x+7)(x-6)(x+5)(x-2)/2000
   </function>
   <point name="P">
-    (1,1)
+    ($a,1)
     <constrainTo>
       $f
     </constrainTo>
@@ -123,7 +123,7 @@ window.MathJax = {
 
 
 <sideBySide>
-  <figure>
+  <figure suppressFigureNameInCaption>
     <graph fixAxes xMin="-6" xMax="6" yMin="-5" yMax="3" identicalAxisScales size="small">
       $f
       <conditionalContent>
@@ -140,7 +140,7 @@ window.MathJax = {
   </figure>
   <conditionalContent>
     <case condition="$dfGraph = true">
-      <figure>
+      <figure suppressFigureNameInCaption>
         <graph fixAxes xMin="-6" xMax="6" yMin="-5" yMax="3" identicalAxisScales size="small">
           $df
           <point styleNumber="2">
@@ -172,6 +172,10 @@ window.MathJax = {
     </conditionalContent>
   </label>
 </updateValue>
+
+<slider name="a" initialValue="0" from="-5" to="5" step="0.01" showTicks="false" showValue="false" hide="!$hint and !$dfGraph">
+  <label>Move the point.</label>
+</slider>
 
 <sideBySide>
   <p>A. <m>f'($pList[1])</m></p>

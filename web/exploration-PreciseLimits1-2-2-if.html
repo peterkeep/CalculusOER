@@ -94,35 +94,25 @@ window.MathJax = {
 </div>
 <script type="text/doenetml">
                         <setup>
-  <styleDefinitions>
-    <styleDefinition styleNumber="7" markerColor="#07aa60" 
-      markerStyle="square" markerSize="5" fillColor="#07aa60" 
-      lineColor="#07aa60" lineStyle="solid" lineWidth="3" />
-   </styleDefinitions>
+  <styleDefinition styleNumber="7" markerColor="green" markerStyle="square" markerSize="5" fillColor="green" lineColor="green" lineStyle="solid" lineWidth="3" />
   <function name="f">sqrt(x)</function>
   <function name="fInv" domain="[0,infinity)">x^2</function>
   <function name="axis">0</function>
-  <regionBetweenCurves name="yTarget"
-    boundaryValues="$c $d"
-    flipFunctions styleNumber="6">
+  <regionBetweenCurves name="yTarget" boundaryValues="$c $d" flipFunctions="true" styleNumber="6">
     $fInv
     $axis
   </regionBetweenCurves>
-  <regionBetweenCurves name="xInt"
-    boundaryValues="$a $b"
-    styleNumber="3">
+  <regionBetweenCurves name="xInt" boundaryValues="$a $b" styleNumber="3">
     $f
     $axis
   </regionBetweenCurves>
-  <regionBetweenCurves name="yInt"
-    boundaryValues="$$f($a) $$f($b)"
-    flipFunctions styleNumber="$style">
+  <regionBetweenCurves name="yInt" boundaryValues="$$f($a) $$f($b)" flipFunctions="true" styleNumber="$style">
     $fInv
     $axis
   </regionBetweenCurves>
   <number name="style">
     <conditionalContent>
-      <case condition="($a < 9 < $b) and (($c <= $$f($a) <= $d) and ($c <= $$f($b) <= $d))">
+      <case condition="($a &lt; 9 &lt; $b) and (($c &lt;= $$f($a) &lt;= $d) and ($c &lt;= $$f($b) &lt;= $d))">
         7
       </case>
       <case>
@@ -134,10 +124,20 @@ window.MathJax = {
 
 <p><em>Instructions:</em> Input target the interval of <m>y</m>-value outputs. Then, try to find an interval of <m>x</m>-values where all of the <m>f(x)</m> outputs are within your target interval.</p>
 
-<p><m>f(x)</m> outputs must be in the interval: <m>\big(</m><mathInput name="c" prefill="2"/>,<mathInput name="d" prefill="4"/><m>\big)</m>  </p>
+<p><m>f(x)</m> outputs must be in the interval: <m>\big(</m><mathInput name="c" prefill="2">
+  <shortDescription>
+    starting y-value of an interval
+  </shortDescription>
+</mathInput>,<mathInput name="d" prefill="4">
+  <shortDescription>
+    ending y-value of an interval
+  </shortDescription>
+</mathInput><m>\big)</m>  </p>
 
-<graph xMin="-0.5" xMax="20" yMin="-1" yMax="6" identicalAxisScales
-  size="large" fixAxes>
+<graph xMin="-0.5" xMax="20" yMin="-1" yMax="6" identicalAxisScales="true" size="large" fixAxes="true">
+  <shortDescription>
+    The square root function with an interval on the x-axis and corresponding interval on the y-axis (from the square root function). There is a shaded in region between the y-values in the interval declared earlier.
+  </shortDescription>
   $f
   $yTarget
   <point styleNumber="6">($a, $$axis($a))</point>
@@ -146,21 +146,31 @@ window.MathJax = {
   $yInt
 </graph>
 
-<p>Try <m>x</m>-values in the interval: <m>\big(</m><mathInput name="a" prefill="0"/>,<mathInput name="b" prefill="1"/><m>\big)</m>  </p>
+<p>Try <m>x</m>-values in the interval: <m>\big(</m>
+  <mathInput name="a" prefill="0">
+    <shortDescription>
+      starting x-value of an interval
+    </shortDescription>
+  </mathInput>,
+  <mathInput name="b" prefill="1" >
+    <shortDescription>
+      ending x-value of an interval
+    </shortDescription>
+  </mathInput><m>\big)</m>  </p>
 
 <feedback condition="$a >= $b">
   Your interval is backwards! Oops!
 </feedback>
 
-<feedback condition="($a < $b) and ($a > 9 or $b < 9)">
+<feedback condition="($a &lt; $b) and ($a > 9 or $b &lt; 9)">
   Start by constructing an interval <em>around </em> <m>x=9</m>, and then we can display the corresponding <m>y</m>-values.
 </feedback>
 
-<feedback condition="($a < 9 < $b) and (($c <= $$f($a) <= $d) and ($c <= $$f($b) <= $d))">
+<feedback condition="($a &lt; 9 &lt; $b) and (($c &lt;= $$f($a) &lt;= $d) and ($c &lt;= $$f($b) &lt;= $d))">
   Congratulations! You found an interval of <m>x</m>-values around <m>x=9</m> such that all of the function outputs, <m>f(x)</m>, are within the interval <m>($c, $d)</m>! 
 </feedback>
 
-<feedback condition="($a < 9 <$b) and (($$f($a) < $c) or ($$f($b) > $d))">
+<feedback condition="($a &lt; 9 &lt;$b) and (($$f($a) &lt; $c) or ($$f($b) > $d))">
   Hm...These points don't look like they produce <m>f(x)</m> values within the interval <m>($c, $d)</m>. Try changing the interval of <m>x</m>-values you're using.
 </feedback>
 
