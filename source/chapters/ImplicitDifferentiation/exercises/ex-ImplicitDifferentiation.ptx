@@ -168,6 +168,24 @@
                     <m>3x^3+7y^3=10y</m> at the point <m>(1,1)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{3x^3} + \ddx{7y^3} \amp = \ddx{10y}</mrow>
+                        <mrow>9x^2 + 21y^2 \dydx \amp = 10\dydx</mrow>
+                        <mrow>\dydx \amp = \frac{9x^2}{10-21y^2}</mrow>
+                        <mrow>\dydx\bigg|_{(1,1)} \amp = \frac{9(1)^2}{10-21(1)^2} </mrow>
+                        <mrow> \amp = -\frac{9}{11}</mrow>
+                    </md>
+                </p>
+                <p>
+                    The line tangent to the curve at <m>(1,1)</m> is:
+                    <md>
+                        <mrow>y \amp = -\frac{9}{11}(x-1)+1 </mrow>
+                        <mrow> \amp = -\frac{9}{11} x + \frac{20}{11}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -175,6 +193,24 @@
                     <m>x^3+y^3=9xy</m> at the point <m>(4,2)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{x^3}+\ddx{y^3} \amp = \ddx{9xy}</mrow>
+                        <mrow>3x^2 + 3y^2\dydx \amp = 9y + 9x\dydx</mrow>
+                        <mrow>\dydx \amp = \frac{9y - 3x^2}{3y^2 - 9x}</mrow>
+                        <mrow>\dydx\bigg|_{(4,2)} \amp = \frac{9(2)-3(4)^2}{3(2)^2 - 9(4)}</mrow>
+                        <mrow> \amp = \frac{5}{3}</mrow>
+                    </md>
+                </p>
+                <p>
+                    The line tangent to the curve at <m>(4,2)</m> is:
+                    <md>
+                        <mrow>y \amp = \frac{5}{3}(x-4)+2</mrow>
+                        <mrow> \amp = \frac{5}{3}x - \frac{14}{3}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -182,6 +218,24 @@
                     <m>y(x^2+4) = 8</m> at the point <m>(0,2)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{y(x^2+4)} \amp = \ddx{8}</mrow>
+                        <mrow>\dydx (x^2+4) + 2xy \amp = 0</mrow>
+                        <mrow>\dydx  \amp = -\frac{2xy}{x^2+4}</mrow>
+                        <mrow>\dydx\bigg|_{(0,2)} \amp = -\frac{2(0)(2)}{(0)^2+4}</mrow>
+                        <mrow> \amp = 0</mrow>
+                    </md>
+                </p>
+                <p>
+                    The line tangent to the curve at <m>(0,2)</m> is:
+                    <md>
+                        <mrow>y \amp = 0(x-0)+2</mrow>
+                        <mrow> \amp = 2</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -189,6 +243,27 @@
                     <m>(x^2+y^2)^2 = \dfrac{25}{4}xy^2</m> at <m>(1,2)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{(x^2+y^2)^2} \amp = \ddx{\frac{25}{4}xy^2}</mrow>
+                        <mrow>2(x^2+y^2)\ddx{x^2+y^2} \amp = \frac{25}{4}y^2 + \frac{25}{2}xy\dydx</mrow>
+                        <mrow>2(x^2+y^2)\left(2x + 2y\dydx\right) \amp = \frac{25}{4}y^2 + \frac{25}{2}xy\dydx </mrow>
+                        <mrow>4x^3+4xy^2 + 4x^2y\dydx + 4y^3\dydx \amp = \frac{25}{4}y^2 + \frac{25}{2}xy\dydx</mrow>
+                        <mrow>16x^3 + 16xy^2 + 16x^2y\dydx + 16y^3\dydx \amp = 25y^2 + 50xy\dydx</mrow>
+                        <mrow>\dydx \amp = \frac{16x^3 + 16xy^2 - 25y^2}{50xy - 16x^2y  - 16y^3}</mrow>
+                        <mrow>\dydx\bigg|_{(1,2)} \amp = \frac{16(1)^3 + 16(1)(2)^2 - 25(2)^2}{50(1)(2) - 16(1)^2(2)  - 16(2)^3}</mrow>
+                        <mrow> \amp = \frac{1}{3}</mrow>
+                    </md>
+                </p>
+                <p>
+                    The line tangent to the curve at <m>(1,2)</m> is:
+                    <md>
+                        <mrow>y \amp = \frac{1}{3}(x-1)+2</mrow>
+                        <mrow> \amp = \frac{1}{3} x + \frac{5}{3}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -198,6 +273,11 @@
                 <me>x^2+y^2+2xy = 12</me>.
             </p>
         </statement>
+        <hint>
+            <p>
+                Solve for <m>\dydx</m>, and then think about where <m>\dydx</m> is either 0 (for the horizontal tangent lines) or doesn't exist (for the vertical ones).
+            </p>
+        </hint>
     </exercise>
     <exercise>
         <introduction>
@@ -212,6 +292,16 @@
                     Find <m>\frac{dx}{dt}</m>. Explain where you need to use the chain rule and why.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\frac{d}{dt}\left((xt+1)^3\right) \amp = \frac{d}{dt}(t) - \frac{d}{dt}(x^2) + \frac{d}{dt}(7)</mrow>
+                        <mrow>3(xt+1)^2 \frac{d}{dt}(xt+1) \amp = 1 - 2x\frac{dx}{dt} + 0 </mrow>
+                        <mrow>3(xt+1)^2\left(x + t\frac{dx}{dt}\right) \amp = 1- 2x\frac{dx}{dt} </mrow>
+                        <mrow>\frac{dx}{dt} \amp = \frac{1 - 3x(xt+1)^2}{3t(xt+1)^2 - 2x}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -219,6 +309,16 @@
                     Find <m>\frac{dt}{dx}</m>. Explain where you need to use the chain rule and why.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{(xt+1)^3} \amp = \ddx{t}-\ddx{x^2}+\ddx{7} </mrow>
+                        <mrow>3(xt+1)^2 \ddx{xt+1} \amp = \frac{dt}{dx} - 2x</mrow>
+                        <mrow>3(xt+1)^2\left(t+x\frac{dt}{dx}\right) \amp = \frac{dt}{dx} - 2x </mrow>
+                        <mrow>\frac{dt}{dx} \amp = \frac{2x + 3t(xt+1)^2}{1 - 3x(xt+1)^2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercisegroup>
@@ -237,6 +337,15 @@
                     Differentiate both sides with regard to the variable  <m>t</m>, and solve for  <m>\frac{dr}{dt}</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\frac{d}{dt}\left(3r\right) + \frac{d}{dt}\left(5y^2\right) - \frac{d}{dt}(4) \amp = \frac{d}{dt}\left(3\sin(x)\right)</mrow>
+                        <mrow>3\frac{dr}{dt} + 10y\frac{dy}{dt} \amp = 3\cos(x)\frac{dx}{dt}</mrow>
+                        <mrow>\frac{dr}{dt} \amp = \frac{3\cos(x)\frac{dx}{dt} - 10y\frac{dy}{dt}}{3}</mrow>
+                    </md>
+                </p>
+            </solution>
         </exercise>
         <exercise>
             <statement>
@@ -246,6 +355,15 @@
                     Differentiate both sides with regard to the variable  <m>t</m>, and solve for  <m>\frac{dy}{dt}</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\frac{d}{dt}\left(3r\right) + \frac{d}{dt}\left(5y^2\right) - \frac{d}{dt}(4) \amp = \frac{d}{dt}\left(3\sin(x)\right)</mrow>
+                        <mrow>3\frac{dr}{dt} + 10y\frac{dy}{dt} \amp = 3\cos(x)\frac{dx}{dt}</mrow>
+                        <mrow>\frac{dy}{dt} \amp = \frac{3\cos(x)\frac{dx}{dt} - 3\frac{dr}{dt}}{10y}</mrow>
+                    </md>
+                </p>
+            </solution>
         </exercise>
         <exercise>
             <statement>
@@ -253,6 +371,20 @@
                     A crab is walking along a path defined by the parabola  <m>y=x^2+1</m>. It moves horizontally forward at a rate of 2 units/second,  <m>\frac{dx}{dt}=2</m>. If it is currently at the point  <m>(2,5)</m>, what is the crab's vertical speed,  <m>\frac{dy}{dt}</m>?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\frac{d}{dt}\left(y\right) \amp = \frac{d}{dt}(x^2)+\frac{d}{dt}(1)</mrow>
+                        <mrow>\frac{dy}{dt} \amp = 2x\frac{dx}{dt}</mrow>
+                    </md>
+                    When we evaluate with <m>x=2</m>, <m>y=5</m>, and <m>\frac{dx}{dt}=2</m>, we get 
+                    <md>
+                        <mrow>\frac{dy}{dt} \amp = 2(2)(2)</mrow>
+                        <mrow> \amp = 8</mrow>
+                    </md>
+                    The crab's vertical speed is 8 units/second.
+                </p>
+            </solution>
         </exercise>
         <exercise>
             <statement>
@@ -260,6 +392,11 @@
                     Person A is holding a balloon 30m away from another Person B. If the balloon is released and floats into the air, rising straight up at a speed of 0.5m/s. Person B watches the balloon, their eye-line forming an angle  <m>\theta</m> with the ground. When the balloon is 10m up in the air, what is the speed at which  <m>\theta</m> changes,  <m>\frac{d\theta}{dt}</m>?
                 </p>
             </statement>
+            <hint>
+                <p>
+                    You might use the fact that <m>\tan(\theta)=\dfrac{y}{x}</m>. Also, note that the horizontal distance between the people (<m>x</m>) is not changing.
+                </p>
+            </hint>
         </exercise>
         <exercise>
             <statement>
@@ -267,6 +404,11 @@
                     A paper cup shaped like a cone is leaking water out of the bottom. The cup is 4 inches tall, and the radius is 1/3 of the height. If the water is leaking at a rate of 1.5 in<m>^3</m>/s while the the cup is full, how quickly is the height of the water in the cup decreasing?
                 </p>
             </statement>
+            <hint>
+                <p>
+                    Remember, the volume of a cone is <m>V = \dfrac{\pi r^2 h}{3}</m>.
+                </p>
+            </hint>
         </exercise>
         <exercise>
             <statement>
@@ -274,6 +416,11 @@
                     A 12 foot ladder is leaning against a vertical wall. Someone is pushing the base of the ladder closer to the wall at a speed of 0.5 ft/s. If the ladder is currently 6 feet away from the wall, how quickly does the top of the ladder move up the wall?
                 </p>
             </statement>
+            <hint>
+                <p>
+                    The ladder and the wall form a right triangle, so maybe the Pythagorean Theorem will connect the side lengths! Also, note that the ladder is not changing length. 
+                </p>
+            </hint>
         </exercise>
         <exercise>
             <statement>
@@ -281,6 +428,11 @@
                     A spherical water balloon is leaking water. The radius of the balloon is currently 2 inches, and we notice that it is decreasing at a rate of 1 in/min. How fast is the water leaking, in in<m>^3</m>/min?
                 </p>
             </statement>
+            <hint>
+                <p>
+                    The volume of a sphere is <m>V = \frac{4}{3}\pi r^3</m>.
+                </p>
+            </hint>
         </exercise>
     </exercisegroup>
 </exercises>
