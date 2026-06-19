@@ -1,0 +1,26 @@
+<setup>
+  <function name="f" domain="(0,infinity)">1/x</function>
+  <point name="P">($a,$$f(1))
+    <constrainTo>$f</constrainTo>
+    <label><m>\left(a, \dfrac{1}{a}\right)</m></label>
+  </point>
+  <derivative name="df">$f</derivative>
+  <function name="tangent" styleNumber="2">$$df($P.x)(x-$P.x)+$P.y</function>
+  <number name="b">$P.x - $P.y/$$df($P.x)</number>
+</setup>
+
+<p><em>Instructions:</em> Drag the point on the function <m>f(x)=\dfrac{1}{x}</m> and observe the changes to the tangent line and the triangle formed by the tangent line and the axes.</p>
+
+<slider name="a" initialValue="1" from="0.01" to="4.5" step="0.01" showTicks="false" showValue="false">
+  <label>Move the point.</label>
+</slider>
+
+<graph xMin="-0.5" xMax="5" yMin="-0.5" yMax="5" fixAxes="true" size="medium">
+  <shortDescription>
+    A graph of 1 over x in the first quadrant. There is a point labeled (a,1/a) with a tangent line. The triangle formed by the tangent line and the two axes is shaded.
+  </shortDescription>
+  $f
+  $P
+  $tangent
+  <regionBetweenCurveXAxis function="$tangent" boundaryValues="0 $b" styleNumber="3" />
+</graph>

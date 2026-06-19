@@ -25,7 +25,7 @@
                 </p>
                 <interactive platform="doenetml" width="90%">
                     <slate surface="doenetml">
-                        <xi:include parse="text" href="./doenet/PreciseLimits-sqrt(x).xml"/>
+                        <xi:include parse="text" href="./doenet/PreciseLimits-sqrt(x).doenet"/>
                     </slate>
                 </interactive>
 
@@ -126,7 +126,7 @@
                 </p>
                 <interactive platform="doenetml" width="90%">
                     <slate surface="doenetml">
-                        <xi:include parse="text" href="./doenet/PreciseLimits-Linear.xml"/>
+                        <xi:include parse="text" href="./doenet/PreciseLimits-Linear.doenet"/>
                     </slate>
                 </interactive>
             </introduction>

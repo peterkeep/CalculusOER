@@ -1,0 +1,31 @@
+<setup>
+  <function name="f">e^x</function>
+  <function name="L" styleNumber="2">x+1</function>
+  <point fixed="true">(0,1)</point>
+  <point name="Pf">($a, $$f($a))</point>
+  <point name="PL" styleNumber="2">($Pf.x, $$L($Pf.x))</point>
+</setup>
+<p><em>Instructions:</em> The red line is the linear approximation of the exponential function, centered at <m>x=0</m>. Move the point around to see how well the linear approximation actually estimates the <m>y</m>-value outputs from the exponential function.</p>
+<p>For <m>x</m>-values close to 0, we know:
+<md>
+  <mrow> L(x) \amp \approx f(x)</mrow>
+  <mrow> x+1 \amp \approx e^x</mrow>
+</md></p>
+
+
+<graph xmin="-3" xmax="3" ymin="-1" ymax="4" identicalAxisScales="true" fixAxes="true">
+  <shortDescription>
+    Graph of the exponential function and a tangent line at x=0. There is a point highlighted on both the exponential function and tangent line that can move.
+  </shortDescription>
+  $f
+  $L
+  $Pf
+  $PL
+</graph>
+<slider name="a" from="-2" to="1.2" initialValue="1" step="0.01" showTicks="false" showValue="false">
+  <label>Move the point on the graph of <m>f(x)=e^x</m> and the tangent line.</label>
+</slider>
+<md>
+  <mrow> L($Pf.x) \amp \approx f($Pf.x)</mrow>
+  <mrow> $$L($Pf.x) \amp \approx e^{$Pf.x}</mrow>
+</md>

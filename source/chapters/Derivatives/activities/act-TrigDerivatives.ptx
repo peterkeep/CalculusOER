@@ -13,7 +13,7 @@
 
             <interactive platform="doenetml" width="90%" aspect="1.2:1">
                 <slate surface="doenetml">
-                    <xi:include parse="text" href="../doenet/TangentSine.xml"/>
+                    <xi:include parse="text" href="../doenet/TangentSine.doenet"/>
                 </slate>
             </interactive>
 
@@ -34,7 +34,7 @@
             </p>
             <interactive platform="doenetml" width="90%" aspect="1:1.6">
                 <slate surface="doenetml">
-                    <xi:include parse="text" href="../doenet/DerivativeSine.xml"/>
+                    <xi:include parse="text" href="../doenet/DerivativeSine.doenet"/>
                 </slate>
             </interactive>
         </statement>
@@ -49,7 +49,7 @@
             </p>
             <interactive platform="doenetml" width="90%" aspect="1.2:1">
                 <slate surface="doenetml">
-                    <xi:include parse="text" href="../doenet/TangentCosine.xml"/>
+                    <xi:include parse="text" href="../doenet/TangentCosine.doenet"/>
                 </slate>
             </interactive>
             <p>
@@ -69,7 +69,7 @@
             </p>
             <interactive platform="doenetml" width="90%" aspect="1:1.6">
                 <slate surface="doenetml">
-                    <xi:include parse="text" href="../doenet/DerivativeCosine.xml"/>
+                    <xi:include parse="text" href="../doenet/DerivativeCosine.doenet"/>
                 </slate>
             </interactive>
         </statement>

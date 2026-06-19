@@ -1,0 +1,45 @@
+<setup>
+  <point name="point">($a,0)
+    <constrainTo>$f</constrainTo>
+  </point>
+  <function name="f">arctan(x)</function>
+  <derivative name="dfdx">$f</derivative>
+  <function name="tangent" styleNumber="2">
+    $$dfdx($point.x)*(x-$point.x)+$point.y
+  </function>
+  <point name="pointS">($b,$$fS(2))
+    <constrainTo>$fS</constrainTo>
+  </point>
+  <function name="fS">arcsec(x)</function>
+  <derivative name="dfdxS">$fS</derivative>
+  <function name="tangentS" styleNumber="2">
+    $$dfdxS($pointS.x)*(x-$pointS.x)+$pointS.y
+  </function>
+</setup>
+
+<p><em>Instructions:</em> Move the points on the graphs of <m>y=\tan^{-1}(x)</m> and <m>y=\sec^{-1}(x)</m> and think about what must be true about the signs of the derivatives.</p>
+
+<sideBySide margins="3%">
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>y=\tan^{-1}(x)</m>, highlighting the point at <mathInput name="a" displayDecimals="3">0<label><m>x=</m></label></mathInput>.</caption>
+    <graph xmin="-4" xmax="4" ymin="-pi/2-0.5" ymax="pi/2+0.5" size="medium" identicalAxisScales="true" showBorder="false" fixAxes="true">
+      <shortDescription>
+        Graph of the inverse tangent function with a point and tangent line at the listed x-value.
+      </shortDescription>
+      $f
+      $point
+      $tangent
+    </graph>
+  </figure>
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>y=\sec^{-1}(x)</m>, highlighting the point at <mathInput name="b" displayDecimals="3">2<label><m>x=</m></label></mathInput>.</caption>
+    <graph xmin="-4" xmax="4" ymin="-0.5" ymax="pi+0.5" size="medium" identicalAxisScales="true" showBorder="false" fixAxes="true">
+      <shortDescription>
+        Graph of the inverse secant function with a point and tangent line at the listed x-value.
+      </shortDescription>
+      $fS
+      $pointS
+      $tangentS
+    </graph>
+  </figure>
+</sideBySide>

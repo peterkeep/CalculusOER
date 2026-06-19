@@ -1,0 +1,44 @@
+<setup>
+  <function name="f" styleNumber="6">(x-8)(x-6)(x+8)/60</function>
+  <function name="fEnds" domain="[-6,6]">(x-8)(x-6)(x+8)/60</function>
+  <derivative name="fPrime">$fEnds</derivative>
+  <point name="point" styleNumber="2" >($a,$$fEnds($a))
+    <constrainTo>$fEnds</constrainTo>
+  </point>
+  <function name="tan" domain="[$a-3, $a+3]" styleNumber="2">$$fPrime($a)(x-$a)+$$fEnds($a)</function>
+  <point name="P" styleNumber="1" fixLocation="true">(-6, $$f(-6))</point>
+  <point name="Q" styleNumber="1" fixLocation="true">(6, $$f(6))</point>
+  <number name="avgSlope">($P.y - $Q.y) / ($P.x - $Q.x)</number>
+  <number name="instSlope" styleNumber="2">$$fPrime($a)</number>
+</setup>
+
+<p><em>Instructions:</em> Move the point in the interval (or input an <m>x</m>-value below) and try to make the slope of the line tangent to the curve at the point match the slope of the line connecting the endpoints of the interval.</p>
+
+<graph ymin="-4" identicalAxisScales="true" fixAxes="true">
+  <shortDescription>
+    A polynomial function with points at approximately (-6, 5.5) and (6,0). There is a secant line connecting the points, and a tangent line at the x-value described below.
+  </shortDescription>
+  $f
+  $fEnds
+  $P
+  $Q
+  <lineSegment endpoints="$P $Q" styleNumber="3" />
+  $point
+  $tan
+</graph>
+
+<mathInput name="a" forAnswer="$MVT" displayDecimals="2">
+  <label>Change the location of the point: <m>x=</m></label>
+  0
+</mathInput>
+<answer name="MVT">
+  <award>
+    <when>
+    |$instSlope - $avgSlope| < 0.15
+  </when>
+  </award>
+</answer>
+
+<feedback condition="$MVT">
+  Congratulations! This point looks like it has a tangent line with (approximately) the same slope as ther secant line connecting the end points!
+</feedback>

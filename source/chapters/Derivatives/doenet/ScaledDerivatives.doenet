@@ -1,0 +1,55 @@
+<setup>
+  <function name="f">x*(x-2)*(x-9)/30+4</function>
+  <function name="fbase" styleNumber="6">$f</function>
+  <derivative name="dfdx">$f</derivative>
+  <line name="tan" slope="$$dfdx($a)" through="$point" styleNumber="2"/>
+  <point name="point">($a, $$f($a))</point>
+  <point name="pointbase" styleNumber="6">($a, $$fbase($a))</point>
+  <function name="g" styleNumber="3">$k$f</function>
+  <point styleNumber="3" name="kpoint">($a, $$g($a))</point>
+  <derivative name="dgdx">$g</derivative>
+  <line name="ktan" slope="$$dgdx($a)" through="$kpoint" styleNumber="2"/>
+</setup>
+
+<p><em>Instructions:</em> The function <m>f(x)</m> is graphed on the left. On the right is a scaled function, <m>g(x) = kf(x)</m>. Change the scaling factor, <m>k</m>, and see how the graph of <m>g(x)</m> changes. Then, find the corresponding change in the slope of the line tangent at the point.</p>
+<slider name="k" from="-2" to="4" step="0.001" initialValue="1"><label><m>k</m></label></slider>
+
+<sideBySide>
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>f(x)</m></caption>
+    <graph showBorder="false" fixAxes displayXAxisTickLabels="false" displayYAxisTickLabels="false">
+      <shortDescription>
+        A polynomial function with a point and a tangent line. The slope of the tangent line is marked by showing a small delta y and a small delta x.
+      </shortDescription>
+      $f
+      $point
+      $tan
+      <lineSegment endpoints="$point ($point.x-2, $point.y)" styleNumber="6"/>
+      <label anchor="($point.x-1,$point.y)" positionFromAnchor="top"><m>\Delta x</m></label>
+      <lineSegment endpoints="($point.x-2, $point.y-2*$tan.slope) ($point.x-2, $point.y)" styleNumber="6"/>
+      <label anchor="($point.x-2,$point.y- $tan.slope)" positionFromAnchor="left"><m>\Delta y</m></label>
+    </graph>
+  </figure>
+  
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>g(x)</m>.</caption>
+    <graph showBorder="false" showNavigation="true" displayXAxisTickLabels="false" displayYAxisTickLabels="false">
+      <shortDescription>
+        A polynomial function with a point and a tangent line. The polynomial is a scaled version of the previous one. The slope of the tangent line is marked by showing a small k times delta y and a small delta x, where k is the scaling factor..
+      </shortDescription>
+      $fbase
+      $pointbase
+      $g
+      $kpoint
+      $ktan
+      <lineSegment endpoints="$kpoint ($kpoint.x-2, $kpoint.y)" styleNumber="6"/>
+      <label anchor="($kpoint.x-1,$kpoint.y)" positionFromAnchor="top"><m>\Delta x</m></label>
+      <lineSegment endpoints="($kpoint.x-2, $kpoint.y-2*$ktan.slope) ($kpoint.x-2, $kpoint.y)" styleNumber="6"/>
+        <label anchor="($kpoint.x-2,$kpoint.y- $ktan.slope)" positionFromAnchor="left"><m>$k\cdot\Delta y</m></label>
+    </graph>
+  </figure>  
+</sideBySide>
+<p>Feel free to change the location of the point to convince yourself that these slopes are all scaled by <m>k</m>, since the change in <m>y</m>-values are skaled by <m>k</m>.</p>
+<slider name="a" from="-4" to="6" step="0.01" showValue="false" showTicks="false" initialValue="-1">
+  <label>Change the location of the point.</label>
+</slider>

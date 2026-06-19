@@ -1,0 +1,41 @@
+<setup>
+  <function name="arcs" styleNumber="1">$A*arcsin(x)+$B</function>
+  <curve name="cosy" variable="t" styleNumber="6">(cos(t),t)</curve>
+  <function name="arcc" styleNumber="2">arccos(x)</function>
+  <number name="y">max($$arcs(-1), $$arcs(1))</number>
+</setup>
+<p><em>Instructions:</em> Fill in values in the inverse sine function below to change the plot. Try to find values that will make it line up with the plot of <m>y=\cos^{-1}(x)</m>.</p>
+
+<p><m>y=</m><mathInput name="A" prefill="1" forAnswer="$submit">
+  <shortDescription>coefficient on inverse sine</shortDescription></mathInput><m>\sin^{-1}(x)+</m><mathInput name="B" prefill="0" forAnswer="$submit"><shortDescription>Constant term added to inverse sine</shortDescription></mathInput></p>
+
+<answer name="submit">
+  <award>
+    <when>
+      $A = -1 && $B = pi/2
+    </when>
+  </award>
+</answer>
+
+<graph xmin="-2.2" xmax="2.2" ymin="-2" ymax="4" identicalAxisScales="true" size="small" yTickScaleFactor="pi" displayYAxisTickLabels="false" fixAxes="true">
+  $arcs
+  <label styleNumber="1" anchor="($A*sin($y-$B)+0.1, $y+0.1)" positionFromAnchor="top" draggable="false">
+    <m>y=$A \sin^{-1}(x)+$B</m>
+  </label>
+  $cosy
+  $arcc
+  <label styleNumber="2" anchor="(-1.5,pi/2)" positionFromAnchor="right" draggable="false">
+    <m>y=\cos^{-1}(x)</m>
+  </label>
+  <shortDescription>
+    Graph of the inverse cosine function overlayed with the graph of the inverse sine function as well as x equals sine of y.
+  </shortDescription>
+</graph>
+
+
+
+<feedback condition="$submit.creditAchieved">
+    <p>Nice job! You're right! 
+      <me>\cos^{-1}(x) = -\sin^{-1}(x)+\frac{\pi}{2}</me>
+    </p>
+</feedback>

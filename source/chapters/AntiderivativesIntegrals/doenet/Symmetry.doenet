@@ -1,0 +1,88 @@
+<setup>
+  <function name="f" domain="[0,oo)">
+    x^4(x-4)(x-7)(x-8)/1000
+  </function>
+  <function name="even" domain="(-oo, 0]">
+    (-x)^4(-x-4)(-x-7)(-x-8)/1000
+  </function>
+  <function name="odd" domain="(-oo,0]">
+    -$even
+  </function>
+  <point name="P">($a, $$f(6))
+    <constrainTo>
+      $f
+    </constrainTo>
+  </point>
+  <point name="PEven" styleNumber="2">
+    (-$P.x, $P.y)
+    <constrainTo>
+      $even
+    </constrainTo>
+  </point>
+  <point name="POdd" styleNumber="2">
+    (-$P.x, -$P.y)
+    <constrainTo>
+      $odd
+    </constrainTo>
+  </point>
+  <regionBetweenCurveXAxis name="intF" function="$f" boundaryValues="0 $P.x"/>
+  <regionBetweenCurveXAxis name="intEven" function="$even" boundaryValues="-$P.x 0" styleNumber="2" /> 
+  <regionBetweenCurveXAxis name="intOdd" function="$odd" boundaryValues="-$P.x 0" styleNumber="2" /> 
+</setup>
+
+<p><em>Instructions:</em> Use the selection options and drag the points to remind yourself how even and odd symmetry looks graphically in both the way the functions are represented and also with how the areas/integrals are impacted.</p>
+<p>Select which type of symmetry you'd like to visualize:
+<choiceInput name="switch">
+  <shortDescription>Choice between even or odd symmetry.</shortDescription>
+  <choice preSelect="true">Even Symmetry</choice>
+  <choice>Odd Symmetry</choice>
+</choiceInput>
+</p>
+<slider name="a" initialValue="6" from="0" to="8" step="0.01" showTicks="false" showValue="false">
+  <label>Move the point.</label>
+</slider>
+
+<graph fixAxes="true" xmin="-9" xmax="9" ymin="-6.5" ymax="6.5" identicalAxisScales="true">
+  <shortDescription>
+    A function passing through the origin. The right side of the graph is fixed, but the left side (when x is less than 0) is either a reflection of the right side (even symmetric) or an upside down reflection of it (odd symmetric). There is a point on each side.
+  </shortDescription>
+  $f
+  $P
+  <conditionalContent>
+    <case condition="$_choice1.selected">
+      $even
+      $PEven
+      <conditionalContent>
+        <case condition="$integral=true">
+          $intF
+          $intEven
+        </case>
+      </conditionalContent>
+    </case>
+    <case condition="$_choice2.selected">
+       $odd
+      $POdd
+      <conditionalContent>
+        <case condition="$integral=true">
+          $intF
+          $intOdd
+        </case>
+      </conditionalContent>
+    </case>
+  </conditionalContent>
+    
+</graph>
+
+<booleanInput name="integral" asToggleButton="true">
+  <label>
+    <conditionalContent>
+      <case condition="$integral=false">
+        Show integrals
+      </case>
+      <case condition="$integral=true">
+        Hide integrals
+      </case>
+    </conditionalContent>
+  </label>
+</booleanInput>
+

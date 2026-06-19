@@ -1,0 +1,171 @@
+<setup>
+  <function name="f">ln(x^2+1)-x^2/2</function>
+  <derivative name="df" styleNumber="2">$f</derivative>
+  <derivative name="ddf" styleNumber="4">$df</derivative>
+  <text name="fDirection" styleNumber="2">
+    <conditionalContent>
+      <case condition="$$df($a)>0">
+        increasing
+      </case>
+      <case condition="$$df($a)<0">
+        decreasing
+      </case>
+      <case condition="$$df($a)=0">
+        ...
+      </case>
+    </conditionalContent>
+  </text>
+  <text name="fConcavity" styleNumber="4">
+    <conditionalContent>
+      <case condition="$$ddf($a)>0">
+        concave up.
+      </case>
+      <case condition="$$ddf($a)<0">
+        concave down.
+      </case>
+      <case condition="$$ddf($a)=0">
+        ...
+      </case>
+    </conditionalContent>
+  </text>
+  <text name="dfSign" styleNumber="2">
+    <conditionalContent>
+      <case condition="$$df($a)>0">
+        positive
+      </case>
+      <case condition="$$df($a)<0">
+        negative
+      </case>
+      <case condition="$$df($a)=0">
+        zero
+      </case>
+    </conditionalContent>
+  </text>
+  <text name="dfDirection" styleNumber="4">
+    <conditionalContent>
+      <case condition="$$ddf($a)>0">
+        increasing.
+      </case>
+      <case condition="$$ddf($a)<0">
+        decreasing.
+      </case>
+      <case condition="$$ddf($a)=0">
+        ...
+      </case>
+    </conditionalContent>
+  </text>
+  <text name="ddfSign" styleNumber="4">
+    <conditionalContent>
+      <case condition="$$ddf($a)>0">
+        positive.
+      </case>
+      <case condition="$$ddf($a)<0">
+        negative.
+      </case>
+      <case condition="$$ddf($a)=0">
+        zero.
+      </case>
+    </conditionalContent>
+  </text>
+</setup>
+
+<p>
+  <em>Instructions:</em> Move the point to see the behavior of <m>f(x)</m>, <m>f'(x)</m>, and <m>f''(x)'</m> graphically. Compare what you've found, and turn on or off information using the checkboxes underneath the graphs.
+</p>
+
+<slider name="a" showTicks="false" showValue="false" initialValue="-2" from="-2" to="2" step="0.02"><label>Change the location of the point on each graph. </label></slider>
+
+<sideBySide>
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>f(x)</m>.</caption>
+    <graph size="small" xmin="-2.5" xmax="2.5" ymin="-2" ymax="1" fixAxes>
+      <shortDescription>
+        Polynomial function with a point highlighted with a tangent line.
+      </shortDescription>
+      $f
+      <point>($a, $$f($a))</point>
+      <function domain="[$a-2,$a+2]" styleNumber="2">$$df($a)(x-$a)+$$f($a)</function>
+      <point draggable="false" styleNumber="5" hide="!$extrema">(0,$$f(0))</point>
+      <point draggable="false" styleNumber="5" hide="!$extrema">(-1,$$f(-1))</point>
+      <point draggable="false" styleNumber="5" hide="!$extrema">(1,$$f(1))</point>
+      <point draggable="false" styleNumber="6" hide="!$inflection">
+        (sqrt(sqrt(5)-2),$$f(sqrt(sqrt(5)-2)))
+      </point>
+      <point draggable="false" styleNumber="6" hide="!$inflection">
+        (-sqrt(sqrt(5)-2),$$f(-sqrt(sqrt(5)-2)))
+      </point>
+    </graph>
+  </figure>
+
+  <ul>
+    <li>
+      <p>The outputs of <m>f(x)</m> are $fDirection and $fConcavity</p>
+    </li>
+    <li>
+      <p>This is because the the slopes of <m>f(x)</m> are $dfSign and $dfDirection</p>
+    </li>
+    <li>
+      <p>This is because the concavity of <m>f(x)</m> is $ddfSign</p>
+    </li>
+  </ul>
+</sideBySide>
+
+<sideBySide>
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>f'(x)</m>.</caption>
+    <graph size="small" xmin="-2.5" xmax="2.5" ymin="-2" ymax="2" fixAxes>
+      <shortDescription>
+        Polynomial function, the first derivative of the one above, with a point highlighted with a tangent line.
+      </shortDescription>
+      $df
+      <point styleNumber="2">($a, $$df($a))</point>
+      <function domain="[$a-2,$a+2]" styleNumber="4">$$ddf($a)(x-$a)+$$df($a)</function>
+      <point draggable="false" styleNumber="5" hide="!$extrema">(0,$$df(0))</point>
+      <point draggable="false" styleNumber="5" hide="!$extrema">(-1,$$df(-1))</point>
+      <point draggable="false" styleNumber="5" hide="!$extrema">(1,$$df(1))</point>
+      <point draggable="false" styleNumber="6" hide="!$inflection">
+        (sqrt(sqrt(5)-2),$$df(sqrt(sqrt(5)-2)))
+      </point>
+      <point draggable="false" styleNumber="6" hide="!$inflection">
+        (-sqrt(sqrt(5)-2),$$df(-sqrt(sqrt(5)-2)))
+      </point>
+    </graph>
+  </figure>
+
+  <ul>
+    <li>
+      <p>The outputs of <m>f'(x)</m> are $dfSign and $dfDirection</p>
+    </li>
+    <li>
+      <p>This is because the the slopes of <m>f'(x)</m> are $ddfSign</p>
+    </li>
+  </ul>
+</sideBySide>
+
+<sideBySide>
+  <figure suppressFigureNameInCaption>
+    <caption>Graph of <m>f''(x)</m>.</caption>
+      <graph size="small" xmin="-2.5" xmax="2.5" ymin="-2" ymax="2" fixAxes>
+        <shortDescription>
+          Polynomial function, the second derivative of the one above, with a point highlighted with a tangent line.
+        </shortDescription>
+      $ddf
+      <point styleNumber="4">($a, $$ddf($a))</point>
+      <point draggable="false" styleNumber="6" hide="!$inflection">
+        (sqrt(sqrt(5)-2),$$ddf(sqrt(sqrt(5)-2)))
+      </point>
+      <point draggable="false" styleNumber="6" hide="!$inflection">
+        (-sqrt(sqrt(5)-2),$$ddf(-sqrt(sqrt(5)-2)))
+      </point>
+    </graph>
+  </figure>
+  
+  <ul>
+    <li>
+      <p>The outputs of <m>f''(x)</m> are $ddfSign</p>
+    </li>
+  </ul>
+</sideBySide>
+
+<p><booleanInput name="extrema"><label>Show the local maximums and local minimums of <m>f(x)</m>.</label></booleanInput></p>
+<p><booleanInput name="inflection"><label>Show the inflection points of <m>f(x)</m>.</label></booleanInput></p>

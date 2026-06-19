@@ -32,7 +32,7 @@
             </p>
             <interactive platform="doenetml" width="90%" aspect="1:0.9">
                 <slate surface="doenetml">
-                    <xi:include parse="text" href="../doenet/InverseSine.xml"/>
+                    <xi:include parse="text" href="../doenet/InverseSine.doenet"/>
                 </slate>
             </interactive>
             <p>
@@ -74,7 +74,7 @@
             </p>
             <interactive platform="doenetml" width="90%" aspect="1:1">
                 <slate surface="doenetml">
-                    <xi:include parse="text" href="../doenet/InverseSineTangent.xml"/>
+                    <xi:include parse="text" href="../doenet/InverseSineTangent.doenet"/>
                 </slate>
             </interactive>
         </statement>

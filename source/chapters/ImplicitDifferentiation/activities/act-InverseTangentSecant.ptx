@@ -40,7 +40,7 @@
             </p>
             <interactive platform="doenetml" width="90%" aspect="1:0.8">
                 <slate surface="doenetml">
-                    <xi:include parse="text" href="../doenet/InverseTangentSecantSigns.xml"/>
+                    <xi:include parse="text" href="../doenet/InverseTangentSecantSigns.doenet"/>
                 </slate>
             </interactive>
         </statement>
@@ -67,7 +67,7 @@
             </p>
             <interactive platform="doenetml" width="90%" aspect="1:0.7">
                 <slate surface="doenetml">
-                    <xi:include parse="text" href="../doenet/InverseTangentLines.xml"/>
+                    <xi:include parse="text" href="../doenet/InverseTangentLines.doenet"/>
                 </slate>
             </interactive>
         </statement>

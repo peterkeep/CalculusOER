@@ -1,0 +1,25 @@
+<setup>
+  <point name="point">($a,$$f($a))
+    <constrainTo>$f</constrainTo>
+  </point>
+  <function name="f">arcsin(x)</function>
+  <derivative name="dfdx">$f</derivative>
+  <function name="tangent" styleNumber="2" domain="[$a-0.5, $a+0.5]">
+    $$dfdx($point.x)*(x-$point.x)+$point.y
+  </function>
+</setup>
+
+<p><em>Instructions:</em> Move the point on the graph of <m>y=\sin^{-1}(x)</m> and think about what must be true about the derivative <m>\frac{dy}{dx}</m>.</p>
+
+<slider name="a" from="-1" to="1" step="0.01" initialValue="0" showTicks="false" showValue="false">
+  <label>Move the point:</label>
+</slider>
+
+<graph xmin="-1.1" xmax="1.1" ymin="-pi/2-0.1" ymax="pi/2+0.1" identicalAxisScales size="small" fixAxes>
+  <shortDescription>
+    The graph of the inverse sine function with a point and tangent line.
+  </shortDescription>
+  $f
+  $point
+  $tangent
+</graph>

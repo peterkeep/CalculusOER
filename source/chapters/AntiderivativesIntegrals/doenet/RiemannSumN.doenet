@@ -1,0 +1,82 @@
+<setup>
+  <!-- Calculate the offset: sample point x_i^* = x_i + offset -->
+  <!-- Left, Mid and Right Endpoint Rule corresponds to 0, 1, 2 in following computation -->
+  <number name="ruleChoiceNumber">
+    <conditionalContent>
+      <case condition="$ruleChoice=Left Riemann Sum">0</case>
+      <case condition="$ruleChoice=Midpoint Riemann Sum">1</case>
+      <case condition="$ruleChoice=Right Riemann Sum">2</case>
+    </conditionalContent>
+  </number>
+  <number name="offset">$dx*$ruleChoiceNumber / 2</number>
+  <!-- numeric version of dx in case symbolic version (displayed to user) slows things down -->
+  <number name="dxN">$dx</number>
+
+  <!-- Compute the x_i's here, instead of within the graph -->
+  <sequence from="$a" to="$b-$dx" step="$dx" name="xiValues" />
+  <!-- For help in zooming into the graph correctly: what are the minimum and maximum rectangle heights? -->
+  <!-- make sure to to include 0 in the computations, in case all heights are positive (or negative) -->
+  <!-- note: could use $$f($xVal+$offset), but tacking $$f($b) on the computation means less shifting
+      of the graph when switching between rules (if rectanges stretch beyond the graph with right 
+      endpoints but not left, for example.  Less shifting seems better -->
+  <setup><group name="group">$xiValues</group></setup><repeat for="$group" name="fValues" valueName="xVal">$$f($xVal)</repeat>
+  <number name="minY"><min>0 $fValues $$f($b)</min></number>
+  <number name="maxY"><max>0 $fValues $$f($b)</max></number>
+  <number name="nFloor"><floor>$n</floor></number>
+</setup>
+
+<p><em>Instructions:</em> In this Riemann Sum calculator, you can input your own function, your own starting point (<m>x=a</m>) and ending point (<m>x=b</m>), and the number of rectangles you'd like to use (<m>n</m>). Then, select your strategy for selecting the <m>x</m>-values from each of the subintervals (Left, Midpoint, or Right Riemann Sums).</p>
+
+<!-- Start by definining the function, a, b, and n (and hence dx), and rule choice -->
+<p>
+  Function <mathInput name="fnFormula">x^2+1<label><m>f(x)=</m></label></mathInput>
+  from <mathInput name="a">0<label><m>a=</m></label></mathInput> 
+  to <mathInput name="b">2<label><m>b=</m></label></mathInput>
+  using <mathInput name="n">5<label><m>n=</m></label></mathInput>
+  rectangles.
+</p>
+<feedback condition="$n < 0 or $n > $nFloor">
+  Please pick a positive integer for <m>n</m>.
+</feedback>
+<p>This means that <m>\Delta x =<math name="dx" simplify>($b-$a)/$n</math></m>.</p>
+<p><choiceInput name="ruleChoice" inline="true" preselectChoice="1">
+        <label>Choose a selection strategy for <m>x_k^*</m>:</label>
+          <choice>Left Riemann Sum</choice>
+          <choice>Midpoint Riemann Sum</choice>
+          <choice>Right Riemann Sum</choice>
+      </choiceInput></p>
+<!-- Graph the function, points at (a,0) and (b,0), and then the n rectangles -->
+<graph xmin="$a-1" xmax="$b+1" ymin="$minY-1" ymax="$maxY+1" identicalAxisScales="false" showNavigation="false" fixAxes="true">
+  <shortDescription>A graph of the function on the interval with the Riemann sum selected.</shortDescription>
+  <function name="f" layer="0" symbolic="true">$fnFormula</function>
+  <regionBetweenCurveXAxis function="$f" boundaryValues="$a $b" hide="$n > 20"/>
+  <regionBetweenCurveXAxis function="$f" boundaryValues="$a $b" hide="$n <= 20" styleNumber="5"/>
+
+  <conditionalContent>
+    <case condition="$n <= 20">
+      <repeatForSequence from="$a" to="$b-$dxN" step="$dxN" valueName="xVal">
+        <polygon stylenumber="6" filled="true" draggable="false" vertices="($xVal,0) 
+                    ($xVal+$dxN,0) 
+                    ($xVal+$dxN, $$f($xVal+$offset)) 
+                    ($xVal,$$f($xVal+$offset))" />
+      </repeatForSequence>  
+    </case>
+  </conditionalContent>
+</graph>
+
+<p>
+  Your area approximation is: <conditionalContent>
+    <case condition="$ruleChoice=Left Riemann Sum">
+      <m>L_{$n}=</m>
+    </case>
+    <case condition="$ruleChoice=Right Riemann Sum">
+      <m>R_{$n}=</m>
+    </case>
+    <case condition="$ruleChoice=Midpoint Riemann Sum">
+      <m>M_{$n}=</m>
+    </case>
+  </conditionalContent>
+  <sum displaydecimals="4">
+    <setup><group name="group1">$xiValues</group></setup><repeat for="$group1" valueName="xVal"><number>$$f($xVal+$offset)*$dx</number></repeat>
+  </sum>.
+</p>

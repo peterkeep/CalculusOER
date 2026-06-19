@@ -52,7 +52,7 @@
         </p>
         <interactive platform="doenetml" width="90%" aspect="1.1:1">
             <slate surface="doenetml">
-                <xi:include parse="text" href="./doenet/DerivativeAtPoint.xml"/>
+                <xi:include parse="text" href="./doenet/DerivativeAtPoint.doenet"/>
             </slate>
         </interactive>
         <p>
@@ -82,7 +82,7 @@
         </p>
         <interactive platform="doenetml" width="90%" aspect="1:1.25">
             <slate surface="doenetml">
-                <xi:include parse="text" href="./doenet/DerivativeFunction.xml"/>
+                <xi:include parse="text" href="./doenet/DerivativeFunction.doenet"/>
             </slate>
         </interactive>
     </subsection>

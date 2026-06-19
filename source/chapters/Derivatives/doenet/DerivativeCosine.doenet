@@ -1,0 +1,113 @@
+<setup>
+  <function name="f">cos(x)</function>
+  <derivative name="fPrime">$f</derivative>
+  <function name="yPrimePlot" styleNumber="3">$yPrimeGuess</function>
+</setup>
+
+<p><em>Instructions:</em> Fill in values in the following table. As you plot points on the graph of both <m>y=\cos(x)</m> and <m>y'</m>, try to think about what function <m>y'</m> could be.</p>
+
+<table suppressTableNameInTitle>
+  <title>Input values of <m>y</m> and <m>y'</m> at the different <m>x</m>-values.</title>
+  <tabular>
+    <row header="true" bottom="medium">
+      <cell><m>x</m></cell> 
+      <cell><m>y=\cos(x)</m></cell>
+      <cell><m>y'</m></cell>
+    </row>
+    <row>
+      <cell><m>-2\pi</m></cell>
+      <cell><mathInput name="y1"><shortDescription>cosine at negative 2 pi</shortDescription></mathInput></cell>
+      <cell><mathInput name="yP1"><shortDescription>derivative of cosine at negative 2 pi</shortDescription></mathInput></cell>
+    </row>
+    <row>
+      <cell><m>-\frac{3\pi}{2}</m></cell>
+      <cell><mathInput name="y2"><shortDescription>cosine at negative 3 pi over 2</shortDescription></mathInput></cell>
+      <cell><mathInput name="yP2"><shortDescription>derivative of cosine at negative 2 pi</shortDescription></mathInput></cell>
+    </row>
+    <row>
+      <cell><m>-\pi</m></cell>
+      <cell><mathInput name="y3"><shortDescription>cosine at negative pi</shortDescription></mathInput></cell>
+      <cell><mathInput name="yP3"><shortDescription>derivative of cosine at negative pi</shortDescription></mathInput></cell>
+    </row>
+    <row>
+      <cell><m>-\frac{\pi}{2}</m></cell>
+      <cell><mathInput name="y4"><shortDescription>cosine at negative pi over 2</shortDescription></mathInput></cell>
+      <cell><mathInput name="yP4"><shortDescription>derivative of cosine at negative pi over 2</shortDescription></mathInput></cell>
+    </row>
+    <row>
+      <cell><m>0</m></cell>
+      <cell><mathInput name="y5"><shortDescription>cosine at 0</shortDescription></mathInput></cell>
+      <cell><mathInput name="yP5"><shortDescription>derivative of cosine at negative pi over 2</shortDescription></mathInput></cell>
+    </row>
+    <row>
+      <cell><m>\frac{\pi}{2}</m></cell>
+      <cell><mathInput name="y6"><shortDescription>cosine at pi over 2</shortDescription></mathInput></cell>
+      <cell><mathInput name="yP6"><shortDescription>derivative of cosine at pi over 2</shortDescription></mathInput></cell>
+    </row>
+    <row>
+      <cell><m>\pi</m></cell>
+      <cell><mathInput name="y7"><shortDescription>cosine at pi</shortDescription></mathInput></cell>
+      <cell><mathInput name="yP7"><shortDescription>derivative of cosine at pi</shortDescription></mathInput></cell>
+    </row>
+    <row>
+      <cell><m>\frac{3\pi}{2}</m></cell>
+      <cell><mathInput name="y8"><shortDescription>cosine at 3 pi over 2</shortDescription></mathInput></cell>
+      <cell><mathInput name="yP8"><shortDescription>derivative of cosine at 3 pi over 2</shortDescription></mathInput></cell>
+    </row>
+    <row bottom="medium"> 
+      <cell><m>2\pi</m></cell>
+      <cell><mathInput name="y9"><shortDescription>cosine at 2 pi</shortDescription></mathInput></cell>
+      <cell><mathInput name="yP9"><shortDescription>derivative of cosine at 2 pi</shortDescription></mathInput></cell>
+    </row>
+  </tabular>
+</table>
+
+<slider name="a" from="-2pi" to="2pi" initialValue="0" step="0.001" showValue="false" showTicks="false">
+  <label>
+    Move the point to remind yourself of the value of <m>y'</m> at some point.
+  </label>
+</slider>
+
+<graph xTickScaleFactor="pi" xmin="-6.5" xmax="6.5" ymin="-3" ymax="3" fixAxes identicalAxisScales="true">
+  <shortDescription>
+    Graph of the cosine function. As coordinates of the cosine function and derivative are added in the table above, the points display on the graph.
+  </shortDescription>
+    $f
+    <function name="g" styleNumber="2">$$fPrime($a)*(x-$a) + $$f($a)</function>
+    $yPrimePlot
+  <!-- points on cosine -->
+    <point styleNumber="1" draggable="false">(-2pi, $y1)</point>
+    <point styleNumber="1" draggable="false">(-3pi/2, $y2)</point>
+    <point styleNumber="1" draggable="false">(-pi, $y3)</point>
+    <point styleNumber="1" draggable="false">(-pi/2, $y4)</point>
+    <point styleNumber="1" draggable="false">(0, $y5)</point>
+    <point styleNumber="1" draggable="false">(pi/2, $y6)</point>
+    <point styleNumber="1" draggable="false">(pi, $y7)</point>
+    <point styleNumber="1" draggable="false">(3pi/2, $y8)</point>
+    <point styleNumber="1" draggable="false">(2pi, $y9)</point>
+  <!-- points on derivative -->
+    <point styleNumber="3" draggable="false">(-2pi, $yP1)</point>
+    <point styleNumber="3" draggable="false">(-3pi/2, $yP2)</point>
+    <point styleNumber="3" draggable="false">(-pi, $yP3)</point>
+    <point styleNumber="3" draggable="false">(-pi/2, $yP4)</point>
+    <point styleNumber="3" draggable="false">(0, $yP5)</point>
+    <point styleNumber="3" draggable="false">(pi/2, $yP6)</point>
+    <point styleNumber="3" draggable="false">(pi, $yP7)</point>
+    <point styleNumber="3" draggable="false">(3pi/2, $yP8)</point>
+    <point styleNumber="3" draggable="false">(2pi, $yP9)</point>
+    <point name="afa" styleNumber="1">($a,$$f($a))
+      <attractTo threshold="0.3"><point>(-2pi,$$f(-2pi))</point></attractTo>
+      <attractTo threshold="0.3"><point>(-3pi/2,$$f(-3pi/2))</point></attractTo>
+      <attractTo threshold="0.3"><point>(-pi,$$f(-pi))</point></attractTo>
+      <attractTo threshold="0.3"><point>(-pi/2,$$f(-pi/2))</point></attractTo>
+      <attractTo threshold="0.3"><point>(0,$$f(0))</point></attractTo>
+      <attractTo threshold="0.3"><point>(pi/2,$$f(pi/2))</point></attractTo>
+      <attractTo threshold="0.3"><point>(pi,$$f(pi))</point></attractTo>
+      <attractTo threshold="0.3"><point>(3pi/2,$$f(3pi/2))</point></attractTo>
+      <attractTo threshold="0.3"><point>(2pi,$$f(2pi))</point></attractTo>
+    </point>
+</graph>
+
+<p>Do you recognize any curves that might connect these dots? Try inputting some possibilities for <m>y'</m> below to check!</p>
+
+<p><mathInput name="yPrimeGuess"><label><m>y'=</m></label></mathInput></p>
