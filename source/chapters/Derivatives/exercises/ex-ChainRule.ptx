@@ -25,7 +25,7 @@
                 Consider the following table of values of <m>f</m>, <m>g</m>, <m>f'</m> and <m>g'</m>.
             </p>
             <table>
-                <title></title>
+                <title>Function and derivative values at selected points.</title>
                 <tabular>
                     <row halign="center" bottom="medium">
                         <cell><m>x</m></cell>
@@ -64,30 +64,74 @@
         <task>
             <statement>
                 <p>
-                    <m>\ddx{f(g(x))}\bigg\vert_{x=-1}</m>
+                    <m>\Ddx{f(g(x))}\bigg\vert_{x=-1}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{f(g(x))} \amp = f'(g(x))\cdot g'(x) </mrow>
+                        <mrow>\ddx{f(g(x))}\bigg\vert_{x=-1} \amp = f'(g(-1))\cdot g'(-1) </mrow>
+                        <mrow> \amp = f'(0)\cdot g'(-1)</mrow>
+                        <mrow> \amp = (6)(-2)</mrow>
+                        <mrow> \amp = -12</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
-                    <m>\ddx{f(f(x))}\bigg\vert_{x=0}</m>
+                    <m>\Ddx{f(f(x))}\bigg\vert_{x=0}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{f(f(x))} \amp = f'(f(x))\cdot f'(x) </mrow>
+                        <mrow>\ddx{f(f(x))}\bigg\vert_{x=0} \amp = f'(f(0))\cdot f'(0)</mrow>
+                        <mrow> \amp = f'(1)\cdot 6</mrow>
+                        <mrow> \amp = (-4)(6)</mrow>
+                        <mrow> \amp = -24</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
-                    <m>\ddx{g(f(x))}\bigg\vert_{x=1}</m>
+                    <m>\Ddx{g(f(x))}\bigg\vert_{x=1}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{g(f(x))} \amp = g'(f(x))\cdot f'(x) </mrow>
+                        <mrow>\ddx{g(f(x))}\bigg\vert_{x=1} \amp = g'(f(1))\cdot f'(1)</mrow>
+                        <mrow> \amp = g'(0)\cdot (-4)</mrow>
+                        <mrow> \amp = (-4)(-4)</mrow>
+                        <mrow> \amp = 16</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
-                    <m>\ddx{g(g(x))}\bigg\vert_{x=-1}</m>
+                    <m>\Ddx{g(g(x))}\bigg\vert_{x=-1}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{g(g(x))} \amp = g'(g(x))\cdot g'(x) </mrow>
+                        <mrow>\ddx{g(g(x))}\bigg\vert_{x=-1} \amp = g'(g(-1))\cdot g'(-1)</mrow>
+                        <mrow> \amp = g'(0)\cdot (-2)</mrow>
+                        <mrow> \amp = (-1)(-2)</mrow>
+                        <mrow> \amp = 2</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -102,6 +146,14 @@
                     <m>\Ddx{\tan(x^2)}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{\tan(x^2)} \amp = \sec^2(x^2)(2x)</mrow>
+                        <mrow> \amp = 2x\sec^2(x^2)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -109,6 +161,14 @@
                     <m>\Ddx{e^{x^3+1}}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{e^{x^3+1}} \amp = e^{x^3+1}(3x^2)</mrow>
+                        <mrow> \amp = 3x^2e^{x^3+1}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -116,6 +176,15 @@
                     <m>\Ddx{\sin^4(x)}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{\sin^{4}(x)} \amp = \ddx{(\sin(x))^4}</mrow>
+                        <mrow> \amp = 4(\sin(x))^3\cos(x)</mrow>
+                        <mrow> \amp = 4\sin^3(x)\cos(x)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -123,6 +192,16 @@
                     <m>\Ddx{\sqrt{\sec(x)}}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{\sqrt{\sec{x}}} \amp = \ddx{(\sec(x))^{1/2}}</mrow>
+                        <mrow> \amp = \frac{1}{2}(\sec(x))^{-1/2}(\sec(x)\tan(x))</mrow>
+                        <mrow> \amp = \frac{\sec(x)\tan(x)}{2\sqrt{\sec(x)}}</mrow>
+                        <mrow> \amp = \frac{\tan(x)\sqrt{\sec(x)}}{2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -130,6 +209,17 @@
                     <m>\Ddx{\sqrt{e^{\cos(x)}}}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{\sqrt{e^{\cos(x)}}} \amp = \ddx{\left(e^{\cos(x)}\right)^{1/2}} </mrow>
+                        <mrow> \amp = \frac{1}{2}\left(e^{\cos(x)}\right)^{-1/2} \ddx{e^{\cos(x)}}</mrow>
+                        <mrow> \amp = left(\frac{1}{2\sqrt{e^{\cos(x)}}}\right)\left(e^{\cos(x)}\right)\left(\ddx{\cos(x)}\right)</mrow>
+                        <mrow> \amp = left(\frac{1}{2\sqrt{e^{\cos(x)}}}\right)\left(e^{\cos(x)}\right)\left(-\sin(x)\right) </mrow>
+                        <mrow> \amp - \frac{\sin(x)e^{\cos(x)}}{2\sqrt{e^{\cos(x)}}}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -137,6 +227,16 @@
                     <m>\Ddx{\dfrac{4}{\sqrt[3]{x^2+x+1}}}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{\dfrac{4}{\sqrt[3]{x^2+x+1}}} \amp = \ddx{4(x^2+x+1)^{-1/3}}</mrow>
+                        <mrow> \amp = -\frac{4}{3}(x^2+x+1)^{-4/3}(2x+1)</mrow>
+                        <mrow> \amp = -\frac{4(2x+1)}{(x^2+x+1)^{4/3}}</mrow>
+                        <mrow> \amp = -\frac{8x+4}{\sqrt[3]{(x^2+x+1)^4}}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -144,6 +244,14 @@
                     <m>\Ddx{\sec(e^x)}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{\sec(e^x)} \amp = \sec(e^x)\tan(e^x)e^x </mrow>
+                        <mrow> \amp = e^x\sec(e^x)\tan(e^x)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -162,6 +270,11 @@
                     Show that <m>\ddx{\sinh(x)} = \cosh(x)</m>.
                 </p>
             </statement>
+            <hint>
+                <p>
+                    Show that <m>\Ddx{\dfrac{e^x-e^{-x}}{2}} = \dfrac{e^x+e^{-x}}{2}</m>.
+                </p>
+            </hint>
         </task>
         <task>
             <statement>
@@ -169,6 +282,11 @@
                     Show that <m>\ddx{\cosh(x)} = \sinh(x)</m>.
                 </p>
             </statement>
+            <hint>
+                <p>
+                    Show that <m>\Ddx{\dfrac{e^x+e^{-x}}{2}} = \dfrac{e^x-e^{-x}}{2}</m>.
+                </p>
+            </hint>
         </task>
         <task>
             <statement>
@@ -176,6 +294,18 @@
                     Let <m>\tanh(x) = \dfrac{\sinh(x)}{\cosh(x)}</m>. Find <m>\ddx{\tanh(x)}</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{\tanh(x)} \amp = \ddx{\frac{\sinh(x)}{\cosh(x)}}</mrow>
+                        <mrow>u = \sinh(x) \amp \;\; u' = \cosh(x)</mrow>
+                        <mrow>v = \cosh(x) \amp \;\; v' = \sinh(x)</mrow>
+                        <mrow>\ddx{\tanh(x)} \amp = \dfrac{\cosh(x)\cosh(x) - \sinh(x)\sinh(x)}{\cosh^2(x)}</mrow>
+                        <mrow> \amp = \frac{\cosh^2(x)}{\cosh^2(x)} - \frac{\sinh^2(x)}{\cosh^2(x)}</mrow>
+                        <mrow> \amp = 1 - \tanh^2(x) </mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -183,6 +313,14 @@
                     Find <m>\ddx{\sinh(x^2)}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{\sinh(x^2)} \amp = \cosh(x^2)(2x) </mrow>
+                        <mrow> \amp = 2x\cosh(x^2)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -190,6 +328,15 @@
                     Find <m>\ddx{\sqrt{\cosh(x)}}</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ddx{\sqrt{\cosh(x)}} \amp = \ddx{(\cosh(x))^{1/2}}</mrow>
+                        <mrow> \amp = \frac{1}{2}(\cosh(x))^{-1/2}\sinh(x)</mrow>
+                        <mrow> \amp = \frac{\sinh(x)}{2\sqrt{\cosh(x)}}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -204,6 +351,11 @@
                     <m>\Ddx{\dfrac{\sin(e^x)}{\sqrt{x}}}</m>
                 </p>
             </statement>
+            <hint>
+                <p>
+                    You can use the quotient rule! Let <m>u=\sin(e^x)</m> and <m>v=\sqrt{x}</m>. Then we can use the chain rule to find <m>u'</m>, and make sure to write <m>v=x^{1/2}</m> in order to find <m>v'</m>.
+                </p>
+            </hint>
         </task>
         <task>
             <statement>
@@ -211,6 +363,11 @@
                     <m>\Ddx{e^{x\cos(x)}}</m>
                 </p>
             </statement>
+            <hint>
+                <p>
+                    We're going to use chain rule here, but notice that when we find the derivative of the <q>inside</q> function, <m>x\cos(x)</m>, we'll need to use the product rule.
+                </p>
+            </hint>
         </task>
         <task>
             <statement>
@@ -218,6 +375,11 @@
                     <m>\Ddx{\tan\left(\dfrac{x+1}{x^2+1}\right)}</m>
                 </p>
             </statement>
+            <hint>
+                <p>
+                    There's an obvious quotient here, but notice that it's inside of the tangent function. We'll differentiate the tangent function, but then make sure to multiply by the quotient rule derivative.
+                </p>
+            </hint>
         </task>
         <task>
             <statement>
@@ -225,6 +387,11 @@
                     <m>\Ddx{(x+5)^2e^{\tan(x)}}</m>
                 </p>
             </statement>
+            <hint>
+                <p>
+                    Here's a product! Let's think about <m>u=(x+5)^2</m>, and <m>v=e^{\tan(x)}</m>. Then to find <m>u'</m>, you can use the chain rule (or just multiply that out and find the derivative using the power rule), and to find <m>v'</m> you'll use the chain rule with the tangent function as the inside part.
+                </p>
+            </hint>
         </task>
     </exercise>
 </exercises>
