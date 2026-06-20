@@ -109,7 +109,7 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.a10fa8051d88cfa9.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.5d73f63c3f06044a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<script src="_static/prefix-runtime.d1480f934b51d4ec.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.fa61545fa3ffbf2f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
@@ -932,9 +932,68 @@ y=\frac{(x-4)^2\sqrt{3x+1}}{(x+1)^7(x+5)^3}\text{.}
 <div class="para" id="ex-LogarithmicDifferentiation-1-2-1-1">
 <span class="process-math">\(f(x) = \ln\left(\sqrt{5x^2e^x}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-LogarithmicDifferentiation-1-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-LogarithmicDifferentiation-1-2-2-1">
+<div class="displaymath process-math" id="ex-LogarithmicDifferentiation-1-2-2-1-1">
+\begin{align*}
+f'(x) \amp = \frac{1}{\sqrt{5x^2e^x}} \left(\frac{1}{2\sqrt{5x^2e^x}}\right)\left(10xe^x + 5x^2e^x\right)\\
+\amp = \frac{10xe^x + 5x^2e^x}{2(5x^2e^x)}\\
+\amp = \frac{2 + x}{2x}\\
+\amp = \frac{1}{x} + \frac{1}{2}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.a.1"><a href="#ex-LogarithmicDifferentiation-1-2-2" title="Copy heading and permalink for Solution 1.a.1" aria-label="Copy heading and permalink for Solution 1.a.1">🔗</a></div>
+</div></details><details id="ex-LogarithmicDifferentiation-1-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-LogarithmicDifferentiation-1-2-3-1">
+<div class="displaymath process-math" id="ex-LogarithmicDifferentiation-1-2-3-1-1">
+\begin{align*}
+f(x) \amp = \ln((5x^2e^x)^{1/2})\\
+\amp = \frac{1}{2} \ln(5x^2e^x)\\
+\amp = \frac{1}{2}\ln(5x^2) + \frac{1}{2}\ln(e^x)\\
+\amp = \ln(5x) + \frac{1}{2}x\\
+\amp = \ln(5) + \ln(x) + \frac{x}{2}\\
+f'(x) \amp = \frac{1}{x} + \frac{1}{2}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.a.2"><a href="#ex-LogarithmicDifferentiation-1-2-3" title="Copy heading and permalink for Solution 1.a.2" aria-label="Copy heading and permalink for Solution 1.a.2">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" data-description="Task 1.a"><a href="#ex-LogarithmicDifferentiation-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="ex-LogarithmicDifferentiation-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-LogarithmicDifferentiation-1-3-1-1">
 <span class="process-math">\(g(x) = \left(e^{5x^3+\ln(x)}\right)^7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-LogarithmicDifferentiation-1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-LogarithmicDifferentiation-1-3-2-1">
+<div class="displaymath process-math" id="ex-LogarithmicDifferentiation-1-3-2-1-1">
+\begin{align*}
+g'(x) \amp = 7\left(e^{5x^3+\ln(x)}\right)^6 \left(e^{5x^3+\ln(x)}\right) \left(15x^2 + \frac{1}{x}\right)\\
+\amp = 7\left(e^{5x^3+\ln(x)}\right)^7 \left(15x^2 + \frac{1}{x}\right)
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.b.1"><a href="#ex-LogarithmicDifferentiation-1-3-2" title="Copy heading and permalink for Solution 1.b.1" aria-label="Copy heading and permalink for Solution 1.b.1">🔗</a></div>
+</div></details><details id="ex-LogarithmicDifferentiation-1-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-LogarithmicDifferentiation-1-3-3-1">
+<div class="displaymath process-math" id="ex-LogarithmicDifferentiation-1-3-3-1-1">
+\begin{align*}
+g(x) \amp = e^{7(5x^3+\ln(x))}\\
+\amp = e^{35x^3}e^{7\ln(x)}\\
+\amp =e^{35x^3}x^7\\
+g'(x) \amp = e^{35x^3}(7x^6) + x^7(e^{35x^3})(105x^2)\\
+\amp = 7x^6e^{35x^3}(1+15x^3)
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.b.2"><a href="#ex-LogarithmicDifferentiation-1-3-3" title="Copy heading and permalink for Solution 1.b.2" aria-label="Copy heading and permalink for Solution 1.b.2">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" data-description="Task 1.b"><a href="#ex-LogarithmicDifferentiation-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 1"><a href="#ex-LogarithmicDifferentiation-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ex-LogarithmicDifferentiation-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div class="introduction" id="ex-LogarithmicDifferentiation-2-1"><div class="para" id="ex-LogarithmicDifferentiation-2-1-1">Use logarithmic differentiation to find the derivative of each of the following.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -943,21 +1002,110 @@ y=\frac{(x-4)^2\sqrt{3x+1}}{(x+1)^7(x+5)^3}\text{.}
 <div class="para" id="ex-LogarithmicDifferentiation-2-2-1-1">
 <span class="process-math">\(y = (4x)^{10x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LogarithmicDifferentiation-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-LogarithmicDifferentiation-2-2-2-1">
+<div class="displaymath process-math" id="ex-LogarithmicDifferentiation-2-2-2-1-1">
+\begin{align*}
+\ln(y) \amp = \ln((4x)^(10x))\\
+\ln(y) \amp = 10x\ln(4x)\\
+\ddx{\ln(y)} \amp = \ddx{10x\ln(4x)}\\
+\frac{y'}{y} \amp = 10\ln(4x) + 10\\
+y' \amp = (4x)^{10x}\left(10\ln(4x)+10\right)
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.a.1"><a href="#ex-LogarithmicDifferentiation-2-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 2.a"><a href="#ex-LogarithmicDifferentiation-2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="ex-LogarithmicDifferentiation-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ex-LogarithmicDifferentiation-2-3-1-1">
-<span class="process-math">\(y=\sin(x)^{\cos(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(y=(\sin(x))^{\cos(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LogarithmicDifferentiation-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-LogarithmicDifferentiation-2-3-2-1">
+<div class="displaymath process-math" id="ex-LogarithmicDifferentiation-2-3-2-1-1">
+\begin{align*}
+\ln(y) \amp = \ln((\sin(x))^{\cos(x)})\\
+\ln(y) \amp = \cos(x)\ln(\sin(x))\\
+\ddx{\ln(y)} \amp \ddx{\cos(x)\ln(\sin(x))}\\
+\frac{y'}{y} \amp = \frac{\cos(x)}{\sin(x)} - \sin(x)\ln(\sin(x))\\
+y' \amp = (\sin(x))^{\cos(x)}(\cot(x) - \sin(x)\ln(\sin(x)))
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.b.1"><a href="#ex-LogarithmicDifferentiation-2-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 2.b"><a href="#ex-LogarithmicDifferentiation-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="ex-LogarithmicDifferentiation-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ex-LogarithmicDifferentiation-2-4-1-1">
 <span class="process-math">\(y = (x+5)^6(x-5)^9(3x+1)^3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LogarithmicDifferentiation-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-LogarithmicDifferentiation-2-4-2-1">
+<div class="displaymath process-math" id="ex-LogarithmicDifferentiation-2-4-2-1-1">
+\begin{align*}
+\ln(y) \amp = \ln((x+5)^6(x-5)^9(3x+1)^3)\\
+\ln(y) \amp = 6\ln(x+5) + 9\ln(x-5) + 3\ln(3x+1)\\
+\ddx{\ln(y)} \amp = 6\ddx{\ln(x+5)} + 9\ddx{\ln(x-5)} + 3\ddx{\ln(3x+1)}\\
+\frac{y'}{y} \amp = \frac{6}{x+5} + \frac{9}{x-5} + \frac{9}{3x+1}\\
+y' \amp  = (x+5)^6(x-5)^9(3x+1)^3 \left(\frac{6}{x+5} + \frac{9}{x-5} + \frac{9}{3x+1}\right) 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.c.1"><a href="#ex-LogarithmicDifferentiation-2-4-2" title="Copy heading and permalink for Solution 2.c.1" aria-label="Copy heading and permalink for Solution 2.c.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 2.c"><a href="#ex-LogarithmicDifferentiation-2-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><article class="task exercise-like" id="ex-LogarithmicDifferentiation-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="ex-LogarithmicDifferentiation-2-5-1-1">
 <span class="process-math">\(y = \dfrac{(x+2)^{2/3}(x+5)^{7/3}}{(x-4)^{5/3}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LogarithmicDifferentiation-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-LogarithmicDifferentiation-2-5-2-1">
+<div class="displaymath process-math" id="ex-LogarithmicDifferentiation-2-5-2-1-1">
+\begin{align*}
+\ln(y) \amp = \ln\left( \dfrac{(x+2)^{2/3}(x+5)^{7/3}}{(x-4)^{5/3}} \right)\\
+\ln(y) \amp = \frac{2}{3}\ln(x+2) + \frac{7}{3}\ln(x+5) - \frac{5}{3}\ln(x-4)\\
+\ddx{\ln(y)} \amp  = \frac{2}{3}\ddx{\ln(x+2)} + \frac{7}{3}\ddx{\ln(x+5)} - \frac{5}{3}\ddx{\ln(x-4)}\\
+\frac{y'}{y} \amp = \frac{2}{3(x+2)} + \frac{7}{3(x+5)} - \frac{5}{3(x-4)}\\
+y' \amp = \dfrac{(x+2)^{2/3}(x+5)^{7/3}}{(x-4)^{5/3}} \left(\frac{2}{3(x+2)} + \frac{7}{3(x+5)} - \frac{5}{3(x-4)}\right) 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.d.1"><a href="#ex-LogarithmicDifferentiation-2-5-2" title="Copy heading and permalink for Solution 2.d.1" aria-label="Copy heading and permalink for Solution 2.d.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Task 2.d"><a href="#ex-LogarithmicDifferentiation-2-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 2"><a href="#ex-LogarithmicDifferentiation-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ex-LogarithmicDifferentiation-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div class="para" id="ex-LogarithmicDifferentiation-3-1-1">For the function <span class="process-math">\(f(x)=x^2e^{-x^2}\text{,}\)</span> find the points where the graph of <span class="process-math">\(f\)</span> has horizontal tangent lines.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions"><details id="ex-LogarithmicDifferentiation-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-LogarithmicDifferentiation-3-2-1">
+<div class="displaymath process-math" id="ex-LogarithmicDifferentiation-3-2-1-1">
+\begin{align*}
+\ln(f(x)) \amp = \ln\left(x^2e^{-x^2}\right)\\
+\ln(f(x)) \amp = 2\ln(x) - x^2\\
+\ddx{\ln(f(x))} \amp = 2\ddx{\ln(x)} - \ddx{x^2} \\
+\frac{f'(x)}{f(x)} \amp = \frac{2}{x} - 2x\\
+f'(x) \amp = x^2e^{-x^2}\left(\frac{2}{x} - 2x\right)
+\end{align*}
+</div>
+<div class="para">We can see that <span class="process-math">\(f'(x)=0\)</span> when <span class="process-math">\(x^2\text{,}\)</span> <span class="process-math">\(e^{-x^2}\text{,}\)</span> and <span class="process-math">\(\left(\frac{2}{x} - 2x\right)\)</span> are 0. Note that <span class="process-math">\(e^{-x^2}\)</span> is only ever positive, and so is never 0. while <span class="process-math">\(x^2 = 0\)</span> when <span class="process-math">\(x=0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-LogarithmicDifferentiation-3-2-2">
+<div class="displaymath process-math" id="ex-LogarithmicDifferentiation-3-2-2-1">
+\begin{align*}
+\frac{2}{x} - 2x \amp = 0\\
+2-2x^2 \amp =0\\
+2(1-x)(1+x) \amp = 0\\
+x \amp = \pm 1
+\end{align*}
+</div>
+<div class="para">Note that <span class="process-math">\(f'(-1)=0\text{,}\)</span> <span class="process-math">\(f'(0) = 0\text{,}\)</span> and <span class="process-math">\(f'(1) = 0\text{,}\)</span> and so these are the <span class="process-math">\(x\)</span>-values where <span class="process-math">\(f(x)\)</span> has horizontal tangent lines.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.1"><a href="#ex-LogarithmicDifferentiation-3-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details></div>
 <div class="autopermalink" data-description="Exercise 3"><a href="#ex-LogarithmicDifferentiation-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><div class="autopermalink" data-description="Practice Problems"><a href="#ex-LogarithmicDifferentiation" title="Copy heading and permalink for Practice Problems" aria-label="Copy heading and permalink for Practice Problems">🔗</a></div></section><div class="autopermalink" data-description="Section 3.3: Logarithmic Differentiation"><a href="#sec-LogarithmicDifferentiation" title="Copy heading and permalink for Section 3.3: Logarithmic Differentiation" aria-label="Copy heading and permalink for Section 3.3: Logarithmic Differentiation">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-DerivativesInverse.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-ApplicationsDerivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
