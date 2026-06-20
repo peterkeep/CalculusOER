@@ -11,6 +11,28 @@
                     <m>f(x) = \ln\left(\sqrt{5x^2e^x}\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = \frac{1}{\sqrt{5x^2e^x}} \left(\frac{1}{2\sqrt{5x^2e^x}}\right)\left(10xe^x + 5x^2e^x\right)</mrow>
+                        <mrow> \amp = \frac{10xe^x + 5x^2e^x}{2(5x^2e^x)}</mrow>
+                        <mrow> \amp = \frac{2 + x}{2x}</mrow>
+                        <mrow> \amp = \frac{1}{x} + \frac{1}{2}</mrow>
+                    </md>
+                </p>
+            </solution>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f(x) \amp = \ln((5x^2e^x)^{1/2})</mrow>
+                        <mrow> \amp = \frac{1}{2} \ln(5x^2e^x)</mrow>
+                        <mrow> \amp = \frac{1}{2}\ln(5x^2) + \frac{1}{2}\ln(e^x)</mrow>
+                        <mrow> \amp = \ln(5x) + \frac{1}{2}x</mrow>
+                        <mrow> \amp = \ln(5) + \ln(x) + \frac{x}{2}</mrow>
+                        <mrow>f'(x) \amp = \frac{1}{x} + \frac{1}{2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -18,6 +40,25 @@
                     <m>g(x) = \left(e^{5x^3+\ln(x)}\right)^7</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>g'(x) \amp = 7\left(e^{5x^3+\ln(x)}\right)^6 \left(e^{5x^3+\ln(x)}\right) \left(15x^2 + \frac{1}{x}\right)</mrow>
+                        <mrow> \amp = 7\left(e^{5x^3+\ln(x)}\right)^7 \left(15x^2 + \frac{1}{x}\right)</mrow>
+                    </md>
+                </p>
+            </solution>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>g(x) \amp = e^{7(5x^3+\ln(x))}</mrow>
+                        <mrow> \amp = e^{35x^3}e^{7\ln(x)}</mrow>
+                        <mrow> \amp =e^{35x^3}x^7</mrow>
+                        <mrow>g'(x) \amp = e^{35x^3}(7x^6) + x^7(e^{35x^3})(105x^2)</mrow>
+                        <mrow> \amp = 7x^6e^{35x^3}(1+15x^3)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -32,13 +73,35 @@
                     <m>y = (4x)^{10x}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ln(y) \amp = \ln((4x)^(10x))</mrow>
+                        <mrow>\ln(y) \amp = 10x\ln(4x)</mrow>
+                        <mrow>\ddx{\ln(y)} \amp = \ddx{10x\ln(4x)}</mrow>
+                        <mrow>\frac{y'}{y} \amp = 10\ln(4x) + 10</mrow>
+                        <mrow>y' \amp = (4x)^{10x}\left(10\ln(4x)+10\right)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
-                    <m>y=\sin(x)^{\cos(x)}</m>
+                    <m>y=(\sin(x))^{\cos(x)}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ln(y) \amp = \ln((\sin(x))^{\cos(x)})</mrow>
+                        <mrow>\ln(y) \amp = \cos(x)\ln(\sin(x))</mrow>
+                        <mrow>\ddx{\ln(y)} \amp \ddx{\cos(x)\ln(\sin(x))}</mrow>
+                        <mrow>\frac{y'}{y} \amp = \frac{\cos(x)}{\sin(x)} - \sin(x)\ln(\sin(x))</mrow>
+                        <mrow>y' \amp = (\sin(x))^{\cos(x)}(\cot(x) - \sin(x)\ln(\sin(x)))</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -46,6 +109,17 @@
                     <m>y = (x+5)^6(x-5)^9(3x+1)^3</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ln(y) \amp = \ln((x+5)^6(x-5)^9(3x+1)^3)</mrow>
+                        <mrow>\ln(y) \amp = 6\ln(x+5) + 9\ln(x-5) + 3\ln(3x+1)</mrow>
+                        <mrow>\ddx{\ln(y)} \amp = 6\ddx{\ln(x+5)} + 9\ddx{\ln(x-5)} + 3\ddx{\ln(3x+1)}</mrow>
+                        <mrow>\frac{y'}{y} \amp = \frac{6}{x+5} + \frac{9}{x-5} + \frac{9}{3x+1}</mrow>
+                        <mrow>y' \amp  = (x+5)^6(x-5)^9(3x+1)^3 \left(\frac{6}{x+5} + \frac{9}{x-5} + \frac{9}{3x+1}\right) </mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -53,6 +127,17 @@
                     <m>y = \dfrac{(x+2)^{2/3}(x+5)^{7/3}}{(x-4)^{5/3}}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\ln(y) \amp = \ln\left( \dfrac{(x+2)^{2/3}(x+5)^{7/3}}{(x-4)^{5/3}} \right)</mrow>
+                        <mrow>\ln(y) \amp = \frac{2}{3}\ln(x+2) + \frac{7}{3}\ln(x+5) - \frac{5}{3}\ln(x-4)</mrow>
+                        <mrow>\ddx{\ln(y)} \amp  = \frac{2}{3}\ddx{\ln(x+2)} + \frac{7}{3}\ddx{\ln(x+5)} - \frac{5}{3}\ddx{\ln(x-4)}</mrow>
+                        <mrow>\frac{y'}{y} \amp = \frac{2}{3(x+2)} + \frac{7}{3(x+5)} - \frac{5}{3(x-4)}</mrow>
+                        <mrow>y' \amp = \dfrac{(x+2)^{2/3}(x+5)^{7/3}}{(x-4)^{5/3}} \left(\frac{2}{3(x+2)} + \frac{7}{3(x+5)} - \frac{5}{3(x-4)}\right) </mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -61,5 +146,26 @@
                 For the function <m>f(x)=x^2e^{-x^2}</m>, find the points where the graph of <m>f</m> has horizontal tangent lines.
             </p>
         </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow> \ln(f(x)) \amp = \ln\left(x^2e^{-x^2}\right)</mrow>
+                    <mrow>\ln(f(x)) \amp = 2\ln(x) - x^2</mrow>  
+                    <mrow>\ddx{\ln(f(x))} \amp = 2\ddx{\ln(x)} - \ddx{x^2} </mrow>
+                    <mrow>\frac{f'(x)}{f(x)} \amp = \frac{2}{x} - 2x</mrow>
+                    <mrow>f'(x) \amp = x^2e^{-x^2}\left(\frac{2}{x} - 2x\right)</mrow>
+                </md>
+                We can see that <m>f'(x)=0</m> when <m>x^2</m>, <m>e^{-x^2}</m>, and <m>\left(\frac{2}{x} - 2x\right)</m> are 0. Note that <m>e^{-x^2}</m> is only ever positive, and so is never 0. while <m>x^2 = 0</m> when <m>x=0</m>.
+            </p>
+            <p>
+                <md>
+                    <mrow>\frac{2}{x} - 2x \amp = 0</mrow>
+                    <mrow>2-2x^2 \amp =0</mrow>
+                    <mrow>2(1-x)(1+x) \amp = 0</mrow>
+                    <mrow>x \amp = \pm 1</mrow>
+                </md>
+                Note that <m>f'(-1)=0</m>, <m>f'(0) = 0</m>, and <m>f'(1) = 0</m>, and so these are the <m>x</m>-values where <m>f(x)</m> has horizontal tangent lines.
+            </p>
+        </solution>
     </exercise>
 </exercises>
