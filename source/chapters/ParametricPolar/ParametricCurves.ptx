@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-ParametricCurves">
+<section xml:id="sec-ParametricCurves" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Parametric Curves</title>
-    <p>
+    <introduction>
+        <p>
+            Let's start with a small deviation from calculus to introduce (or re-introduce) some ideas of how we might define functions and curves. We have been working with functions and graphs of functions for so long, but that might mean that some of the ideas are so engrained that might not even think about them. Let's remind ourselves as much as possible.
+        </p>
+        <xi:include href="./activities/act-FunctionReminder.ptx" />
+    </introduction>
+    <subsection xml:id="subsec-ParametricWhatIf">
+        <title>What If...?</title>
         
-    </p>
+    </subsection>
+    <subsection xml:id="subsec-ExploringParametricCurves">
+        <title>Exploring Parametric Curves</title>
+        
+    </subsection>
+    <subsection xml:id="subsec-Cycloid">
+        <title>The Cycloid</title>
+        
+    </subsection>
 </section>
