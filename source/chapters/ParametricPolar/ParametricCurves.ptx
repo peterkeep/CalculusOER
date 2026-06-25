@@ -7,10 +7,42 @@
             Let's start with a small deviation from calculus to introduce (or re-introduce) some ideas of how we might define functions and curves. We have been working with functions and graphs of functions for so long, but that might mean that some of the ideas are so engrained that might not even think about them. Let's remind ourselves as much as possible.
         </p>
         <xi:include href="./activities/act-FunctionReminder.ptx" />
+        <p>
+            None of this should be new to you, but it probably has been some time since you've thought about it! The reason we're starting this chapter (and this section) with this little reminder is simple: we're going to think about how we could slightly alter some of these basic concepts and change the way that we think about functions, curves, and graphs.
+        </p>
     </introduction>
     <subsection xml:id="subsec-ParametricWhatIf">
         <title>What If...?</title>
-        
+        <p>
+            We're going to try to change some of the assumptions about curves and graphs and functions by asking some <q>What if...?</q> questions. For this section, we'll ask a very short one:
+        </p>
+        <p>
+            <em>What if, instead of the <m>y</m> variable being an output that depends on the <m>x</m> variable input, we had both <m>x</m> and <m>y</m> as outputs of some third variable, like time?</em>
+        </p>
+        <p>
+            Instead of thinking of <m>y</m> as a function output of <m>x</m>, <m>y=f(x)</m>, we'll think about the vertical component <m>y</m> and the horizontal component <m>x</m> of our curve being defined as functions of <m>t</m>. Now, instead of <m>x</m> being an independent variable and <m>y</m> being dependent on the value of <m>x</m>, we have that <m>x</m> and <m>y</m> are independent of each other, both dependent on <m>t</m>, which we often call a <term>parameter</term>. Typically, we think of this parameter as time: <m>x</m> and <m>y</m> both act independently, but change as time marches forward.
+        </p>
+        <definition xml:id="def-ParametricCurve">
+            <title>Parametric Curve</title>
+            <statement>
+                <p>
+                   A curve is defined <term>parametrically</term> if
+                   <md>
+                        <mrow>x \amp = f(t)</mrow>
+                        <mrow>y \amp = g(t)</mrow>
+                    </md>
+                    for values of <m>t</m> in some interval.
+                </p>
+            </statement>
+        </definition>
+        <aside>
+            <p>
+                It's kind of like an etch-a-sketch toy, where you move the two dials independently to trace out some picture! One dial represents the horizontal position while the other represents the vertical position. If you turn both dials at once, you'll create some sort of curve!
+            </p>
+        </aside>
+        <p>
+            
+        </p>
     </subsection>
     <subsection xml:id="subsec-ExploringParametricCurves">
         <title>Exploring Parametric Curves</title>

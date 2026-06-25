@@ -1,0 +1,139 @@
+<setup>
+  <function name="xf" variable="t" styleNumber="10">
+    $xt
+  </function>
+  <function name="yf" variable="t" styleNumber="11">
+    $yt
+  </function>
+  <curve name="f" variable="t" parMin="$a" parMax="$b" hide="$VisCurve" styleNumber="12">
+    ($$xf(t), $$yf(t))
+  </curve>
+  <styleDefinition styleNumber="10" lineColor="red" markerColor="red" lineOpacity="0.65"/>
+  <styleDefinition styleNumber="11" lineColor="blue" markerColor="blue" lineOpacity="0.5"/>
+  <styleDefinition styleNumber="12" lineColor="black" markerColor="black"/>
+  <styleDefinition styleNumber="13" lineColor="red" markerColor="red" lineOpacity="0.65" lineStyle="dashed"/>
+
+  <styleDefinition styleNumber="14" lineColor="blue" markerColor="blue" lineOpacity="0.5" lineStyle="dashed"/>
+</setup>
+
+<p>
+  <em>Instructions:</em> Construct and explore a new parametric curve. Pick some properties or characteristics and try to build a parametric curve with those properties or characteristics.
+</p>
+<sideBySide>
+  <p>
+    Function for <m>x</m>:<br/>
+    <mathInput name="xt" disabled="$pages.currentPage = 2"><label><m>x(t) = </m></label>cos(t)</mathInput>
+  </p>
+
+  <p>
+    Function for <m>y</m>: <br/>
+    <mathInput name="yt" disabled="$pages.currentPage = 1"><label><m>y(t) = </m></label>sin(t)</mathInput>
+  </p>
+  <p>
+    Interval of <m>t</m>-values: <br/>
+    <mathInput name="a"><shortDescription>lower bound for t</shortDescription>0</mathInput> <m> \leq t \leq</m> <mathInput name="b"><shortDescription>upper bound for t</shortDescription>2 pi</mathInput>
+  </p>
+</sideBySide>
+<p>
+  So, we'll consider the parametric curve:
+  <md>
+    <mrow>x(t) \amp = $xf</mrow>
+    <mrow>y(t) \amp = $yf</mrow>
+  </md>
+  for <m>$a \leq t \leq $b</m>.
+</p>
+
+<slider name="time" from="$a" to="$b" step="0.01" showTicks="false">
+  <label><m>t</m></label>
+</slider>
+
+<paginator name="pages">
+  <!-- x function and coordinate -->
+  <div>
+    <p>
+      First, we'll consider just the <m>x</m>-values of our parametric curve: <m>x = $xf</m>. 
+    </p>
+    <sideBySide>
+      <figure suppressFigureNameInCaption>
+        <caption>Graph of <m>x=$xf</m>.</caption>
+        <graph size="small">
+          <shortDescription>
+            Graph of the function x(t) with a point on it at. The vertical axis is labeled x and the horizontal axis is labeled t.
+          </shortDescription>
+          <xLabel><m>t</m></xLabel>
+          <yLabel><m>x</m></yLabel>
+          $xf
+          <point styleNumber="10">($time, $$xf($time))</point>
+        </graph>
+      </figure>
+      <figure suppressFigureNameInCaption>
+        <caption>The <m>x</m>-value, depending on time.</caption>
+        <graph size="small" displayYAxis="false">
+          <shortDescription>
+            A horizontal line labeled x. There is a point on it that moves, corresponding with the height of the point in the first graph.
+          </shortDescription>
+          <xLabel><m>x</m></xLabel>
+          <point draggable="false" styleNumber="10">($$xf($time), 0)</point>
+        </graph>
+      </figure>
+    </sideBySide>
+  </div>
+  <!-- y function and coordinate -->
+  <div>
+    <p>
+      Now, we'll consider just the <m>y</m>-values of our parametric curve: <m>y = $yf</m>.
+    </p>
+    <sideBySide>
+      <figure suppressFigureNameInCaption>
+        <caption>Graph of <m>y = $yf</m>.</caption>
+        <graph size="small">
+          <shortDescription>
+            Graph of a the function y(t) with a point on it at. The vertical axis is labeled y and the horizontal axis is labeled t.
+          </shortDescription>
+          <xLabel><m>t</m></xLabel>
+          <yLabel><m>y</m></yLabel>
+          $yf
+          <point styleNumber="11">($time, $$yf($time))</point>
+        </graph>
+      </figure>
+      <figure suppressFigureNameInCaption>
+        <caption>The <m>y</m>-value, depending on time.</caption>
+        <graph size="small"  displayxAxis="false">
+          <shortDescription>
+            A vertical line labeled y. There is a point on it that moves, corresponding with the height of the point in the first graph.
+          </shortDescription>
+          <yLabel><m>y</m></yLabel>
+          <point draggable="false" styleNumber="11">(0, $$yf($time))</point>
+        </graph>
+      </figure>
+    </sideBySide>
+  </div>
+  <!-- Both coordinates, button for curve -->
+  <div>
+    <graph size="medium">
+      <shortDescription>
+        A graph with a point on each axis with horizontal and vertical lines connecting those axis-points to a point in the coordinate plane. The horizontal axis is labeled x and the vertical axis is labeled y.
+      </shortDescription>
+      <xLabel><m>x</m></xLabel>
+      <yLabel><m>y</m></yLabel>
+      <point draggable="false" hide="!$VisCurve" styleNumber="10">($$xf($time), 0)</point>
+      <lineSegment endpoints="($$xf($time), 0) ($$xf($time), $$yf($time))" hide="!$VisCurve" styleNumber="13" endpointsDraggable="false"/>
+      <point draggable="false" hide="!$VisCurve" styleNumber="11">(0, $$yf($time))</point>
+      <lineSegment endpoints="(0, $$yf($time)) ($$xf($time), $$yf($time))" hide="!$VisCurve" styleNumber="14" endpointsDraggable="false"/>
+      <point draggable="false" styleNumber="12">($$xf($time), $$yf($time))</point>
+      $f
+    </graph>
+    <p>
+      Can you visualize the curve being traced out by this point?
+    </p>
+    <booleanInput name="VisCurve" asToggleButton prefill="true">
+        <label>Show/Hide the Curve</label>
+      </booleanInput>
+  </div>
+</paginator>
+
+<paginatorControls paginator="$pages"
+  pageLabel="Step" 
+  nextLabel="Next Step" 
+  previousLabel="Previous Step"/>
+
