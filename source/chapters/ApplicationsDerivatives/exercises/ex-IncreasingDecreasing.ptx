@@ -16,6 +16,16 @@
                     <m>f(x) = x^2+5x-4</m> on <m>[-4,2]</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = 2x+5</mrow>
+                        <mrow>0 \amp = 2x+5 </mrow>
+                        <mrow>x \amp = -\frac{5}{2}</mrow>
+                    </md>
+                    The critical numbers are <m>4</m> (where <m>f'</m> doesn't exist), <m>-\frac{5}{2}</m> (where the derivative is 0), and <m>2</m> (where the derivative doesn't exist). 
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -23,6 +33,14 @@
                     <m>f(x) = \sqrt[3]{x+4}</m> on <m>[-6,-2]</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = \frac{1}{3(x+4)^{2/3}} </mrow>
+                    </md>
+                    At <m>-6</m>, <m>-4</m> and <m>-2</m> we can see that <m>f'</m> doesn't exist. Since these are all in the domain of <m>f</m>, they are critical numbers. We can also see that <m>f'</m> is never 0, so we don't have any of those types of critical numbers.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -30,6 +48,18 @@
                     <m>f(x) = \dfrac{x^2+1}{x-3}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = \frac{2x(x-3) - (x^2+1)}{(x-3)^2}</mrow>
+                        <mrow> \amp = \frac{x^2-6x-1}{(x-3)^2}</mrow>
+                        <mrow>0 \amp = \frac{x^2-6x-1}{(x-3)^2}</mrow>
+                        <mrow>0 \amp = x^2-6x-1</mrow>
+                        <mrow>x \amp = 3\pm \sqrt{10}</mrow>
+                    </md>
+                    Since <m>f'(x)=0</m> when <m>x=3-\sqrt{10}</m> and <m>x=3+\sqrt{10}</m>, these are critical numbers. We can also see that <m>f'</m> doesn't exist at <m>x=3</m>, but this is not in the domain of <m>f</m> since there is a vertical asymptote there, and so this is not a critical number.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -37,6 +67,15 @@
                     <m>f(x) = x^2 e^{-x}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = 2xe^{-x} - x^2e^{-x}</mrow>
+                        <mrow> \amp = xe^{-x}(2-x)</mrow>
+                    </md>
+                    We can see that <m>f'</m> is 0 at <m>x=0</m> and <m>x=2</m>, and there aren't any <m>x</m>-values where <m>f'</m> doesn't exist. This means that <m>0</m> and <m>2</m> are the only critical numbers.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -44,6 +83,11 @@
                     <m>f(x) = x^2 e^{-x}</m> on <m>[1, 10]</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    This function is the same as above, but the domain has been limited to only <m>1\leq x\leq 10</m>. The derivative doesn't exist at these new end points, and <m>0</m> is not in the domain anymore. The critical numbers are <m>1</m>, <m>2</m>, and <m>10</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -51,6 +95,18 @@
                     <m>f(x) = \ln\left(x^{4}+x+1\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = \frac{4x^3+1}{x^4+x+1}</mrow>
+                        <mrow>0 \amp = \frac{4x^3+1}{x^4+x+1}</mrow>
+                        <mrow>0 \amp = 4x^3+1</mrow>
+                        <mrow>-1 \amp = 4x^3</mrow>
+                        <mrow>x = \frac{1}{\sqrt[3]{4}} \amp </mrow>
+                    </md>
+                    We can note that <m>x^4+x+1\neq 0</m>, and so this derivative will never not exist. The derivative is 0 at <m>x=\frac{1}{\sqrt[3]{4}}</m>, which is the only critical number.
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -65,6 +121,11 @@
                 </image>
             </figure>
         </statement>
+        <solution>
+            <p>
+                It looks like there is a horizontal tangent line at <m>x=-2</m> and <m>x=1</m>, which would mean that the derivative is 0 at each of these locations. The derivative doesn't exist at <m>x=0</m> and <m>x=3</m>. Since all of these are in the domain of <m>f</m>, we can say that all of these are critical numbers of <m>f</m>.
+            </p>
+        </solution>
     </exercise>
     <exercise>
         <statement>
@@ -92,6 +153,55 @@
                     <m>f(x) = x^2e^x</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = 2xe^x+x^2e^x</mrow>
+                        <mrow> \amp = xe^x(2+x)</mrow>
+                    </md>
+                    The critical numbers are <m>x=-2</m> and <m>x=0</m>.
+                </p>
+                <tabular halign="center" top="medium">
+                    <col width="16%" top="medium"/>
+                    <col width="16%" top="medium"/>
+                    <col width="16%" top="medium"/>
+                    <col width="16%" top="medium"/>
+                    <col width="16%" top="medium"/>
+                    <col width="16%" top="medium"/>
+                    <row bottom="minor">
+                        <cell><p><m>x</m></p></cell>
+                        <cell><p><m>(-\infty, -2)</m></p></cell>
+                        <cell><p><m>-2</m></p></cell>
+                        <cell><p><m>(-2,0)</m></p></cell>
+                        <cell><p><m>0</m></p></cell>
+                        <cell><p><m>(0,\infty)</m></p></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><p><m>f'</m></p></cell>
+                        <cell><p><m>\oplus</m></p></cell>
+                        <cell><p><m>0</m></p></cell>
+                        <cell><p><m>\ominus</m></p></cell>
+                        <cell><p><m>0</m></p></cell>
+                        <cell><p><m>\oplus</m></p></cell>
+                    </row>
+                    <row>
+                        <cell><p><m>f</m></p></cell>
+                        <cell><p><m>\nearrow</m></p></cell>
+                        <cell><p></p></cell>
+                        <cell><p><m>\searrow</m></p></cell>
+                        <cell><p></p></cell>
+                        <cell><p><m>\nearrow</m></p></cell>
+                    </row>
+                    <row bottom="medium">
+                        <cell><p></p></cell>
+                        <cell><p>increasing</p></cell>
+                        <cell><p></p></cell>
+                        <cell><p>decreasing</p></cell>
+                        <cell><p></p></cell>
+                        <cell><p>increasing</p></cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -99,13 +209,82 @@
                     <m>f(x) = x\ln(x)-x</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = x\left(\frac{1}{x}\right) + \ln(x) - 1</mrow>
+                        <mrow> \amp = \ln(x)</mrow>
+                    </md>
+                    The only critical number is <m>x=1</m>.
+                </p>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>(-\infty, 1)</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>(1, \infty)</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>(1,-1)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
-                    <m>f(x) = \frac{1}{x^2}</m>
+                    <m>f(x) = \dfrac{1}{x^2}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = -\frac{2}{x^3}</mrow>
+                    </md>
+                    This derivative doesn't exist when <m>x=0</m>, but this is not a critical number, since it's not in the domain of <m>f</m>. There's a vertical asymptote there.
+                </p>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>(-\infty, 0)</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>(0, \infty)</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>\va</m></cell>
+                        <cell><m>\oplus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>\va</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -113,6 +292,43 @@
                     <m>f(x) = \ln(x^4 + 1)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = \frac{4x^3}{x^4+1}</mrow>
+                        <mrow>0 \amp = \frac{4x^3}{x^4+1}</mrow>
+                        <mrow>0 \amp = 4x^3</mrow>
+                        <mrow>x \amp = 0</mrow>
+                    </md>
+                    There is a critical number at <m>x=0</m>.
+                </p>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>(-\infty, 0)</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>(0, \infty)</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>(0,0)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -120,6 +336,52 @@
                     <m>f(x) = \dfrac{x-4}{x^2+1}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = \frac{(x^2+1)-2x(x-4)}{(x^2+1)^2}</mrow>
+                        <mrow> \amp = \frac{1+8x-x^2}{(x^2+1)^2}</mrow>
+                        <mrow>0 \amp = \frac{1+8x-x^2}{(x^2+1)^2}</mrow>
+                        <mrow>0 \amp = 1+8x-x^2</mrow>
+                        <mrow>x \amp = 4 \pm \sqrt{17}</mrow>
+                    </md>
+                    These are the only critical numbers, since <m>x^2+1\neq 0</m>.
+                </p>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>(-\infty, 4-\sqrt{17})</m></cell>
+                        <cell><m>4-\sqrt{17}</m></cell>
+                        <cell><m>(4-\sqrt{17}, 4+\sqrt{17})</m></cell>
+                        <cell><m>4+\sqrt{17}</m></cell>
+                        <cell><m>(4+\sqrt{17}, \infty)</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\ominus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>\left(4-\sqrt{17},-2-\frac{\sqrt{17}}{2}\right)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>\left(4+\sqrt{17} , \frac{\sqrt{17}}{2} - 2\right)</m></cell>
+                        <cell><m>\searrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -127,6 +389,43 @@
                     <m>f(x) = e^{-x^2-2x}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = (-2x-2)e^{-x^2-2x}</mrow>
+                        <mrow> \amp = -2(x+1)e^{-x^2-2x}</mrow>
+                        <mrow>0 \amp = -2(x+1)e^{-x^2-2x}</mrow>
+                        <mrow>0 \amp = x+1</mrow>
+                        <mrow>x \amp = -1</mrow>
+                    </md>
+                </p>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>(-\infty, -1)</m></cell>
+                        <cell><m>-1</m></cell>
+                        <cell><m>(-1, \infty)</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\ominus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>(-1,e)</m></cell>
+                        <cell><m>\searrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>increasing</cell>
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -180,7 +479,7 @@
         <task>
             <statement>
                 <p>
-                    <m>f(x) = \frac{1}{x^2}</m>
+                    <m>f(x) = \dfrac{1}{x^2}</m>
                 </p>
             </statement>
         </task>
