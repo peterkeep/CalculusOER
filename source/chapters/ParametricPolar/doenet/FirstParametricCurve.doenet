@@ -45,7 +45,12 @@
           <xLabel><m>t</m></xLabel>
           <yLabel><m>x</m></yLabel>
           $xf
-          <point styleNumber="10">($time, $$xf($time))</point>
+          <point styleNumber="10" layer="1">($time, $$xf($time))</point>
+          <point draggable="false" styleNumber="6">(0, $x0)</point>
+          <point draggable="false" styleNumber="6">(1, $x1)</point>
+          <point draggable="false" styleNumber="6">(2, $x2)</point>
+          <point draggable="false" styleNumber="6">(3, $x3)</point>
+          <point draggable="false" styleNumber="6">(4, $x4)</point>
         </graph>
       </figure>
       <figure suppressFigureNameInCaption>
@@ -55,10 +60,36 @@
             A horizontal line labeled x. There is a point on it that moves, corresponding with the height of the point in the first graph.
           </shortDescription>
           <xLabel><m>x</m></xLabel>
-          <point draggable="false" styleNumber="10">($$xf($time), 0)</point>
+          <point draggable="false" styleNumber="10" layer="1">($$xf($time), 0)</point>
+          <point draggable="false" styleNumber="6">($x0, 0)</point>
+          <point draggable="false" styleNumber="6">($x1, 0)</point>
+          <point draggable="false" styleNumber="6">($x2, 0)</point>
+          <point draggable="false" styleNumber="6">($x3, 0)</point>
+          <point draggable="false" styleNumber="6">($x4, 0)</point>
         </graph>
       </figure>
     </sideBySide>
+    <p>Fill in the table below using the function for <m>x</m>:</p>
+    <table suppressTableNameInTitle>
+      <tabular top="medium">
+        <row bottom="minor" halign="center">
+          <cell><m>t</m></cell>
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+          <cell>4</cell>
+        </row>
+        <row  bottom="medium" halign="center">
+          <cell><m>x</m></cell>
+          <cell><mathInput name="x0"><shortDescription>x value when t=0</shortDescription></mathInput></cell>
+          <cell><mathInput name="x1"><shortDescription>x value when t=1</shortDescription></mathInput></cell>
+          <cell><mathInput name="x2"><shortDescription>x value when t=2</shortDescription></mathInput></cell>
+          <cell><mathInput name="x3"><shortDescription>x value when t=3</shortDescription></mathInput></cell>
+          <cell><mathInput name="x4"><shortDescription>x value when t=4</shortDescription></mathInput></cell>
+        </row>
+      </tabular>
+    </table>
   </div>
   <!-- y function and coordinate -->
   <div>
@@ -75,7 +106,12 @@
           <xLabel><m>t</m></xLabel>
           <yLabel><m>y</m></yLabel>
           $yf
-          <point styleNumber="11">($time, $$yf($time))</point>
+          <point styleNumber="11" layer="1">($time, $$yf($time))</point>
+          <point draggable="false" styleNumber="6">(0, $y0)</point>
+          <point draggable="false" styleNumber="6">(1, $y1)</point>
+          <point draggable="false" styleNumber="6">(2, $y2)</point>
+          <point draggable="false" styleNumber="6">(3, $y3)</point>
+          <point draggable="false" styleNumber="6">(4, $y4)</point>
         </graph>
       </figure>
       <figure suppressFigureNameInCaption>
@@ -85,10 +121,36 @@
             A vertical line labeled y. There is a point on it that moves, corresponding with the height of the point in the first graph.
           </shortDescription>
           <yLabel><m>y</m></yLabel>
-          <point draggable="false" styleNumber="11">(0, $$yf($time))</point>
+          <point draggable="false" styleNumber="11" layer="1">(0, $$yf($time))</point>
+          <point draggable="false" styleNumber="6">(0, $y0)</point>
+          <point draggable="false" styleNumber="6">(0, $y1)</point>
+          <point draggable="false" styleNumber="6">(0, $y2)</point>
+          <point draggable="false" styleNumber="6">(0, $y3)</point>
+          <point draggable="false" styleNumber="6">(0, $y4)</point>
         </graph>
       </figure>
     </sideBySide>
+    <p>Fill in the table below using the function for <m>y</m>:</p>
+    <table suppressTableNameInTitle>
+      <tabular top="medium">
+        <row bottom="minor" halign="center">
+          <cell><m>t</m></cell>
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+          <cell>4</cell>
+        </row>
+        <row  bottom="medium" halign="center">
+          <cell><m>y</m></cell>
+          <cell><mathInput name="y0"><shortDescription>y value when t=0</shortDescription></mathInput></cell>
+          <cell><mathInput name="y1"><shortDescription>y value when t=1</shortDescription></mathInput></cell>
+          <cell><mathInput name="y2"><shortDescription>y value when t=2</shortDescription></mathInput></cell>
+          <cell><mathInput name="y3"><shortDescription>y value when t=3</shortDescription></mathInput></cell>
+          <cell><mathInput name="y4"><shortDescription>y value when t=4</shortDescription></mathInput></cell>
+        </row>
+      </tabular>
+    </table>
   </div>
   <!-- Both coordinates, button for curve -->
   <div>
@@ -105,8 +167,13 @@
       <lineSegment endpoints="($$xf($time), 0) ($$xf($time), $$yf($time))" hide="!$VisCurve" styleNumber="13" endpointsDraggable="false"/>
       <point draggable="false" hide="!$VisCurve" styleNumber="11">(0, $$yf($time))</point>
       <lineSegment endpoints="(0, $$yf($time)) ($$xf($time), $$yf($time))" hide="!$VisCurve" styleNumber="14" endpointsDraggable="false"/>
-      <point draggable="false" styleNumber="12">($$xf($time), $$yf($time))</point>
+      <point draggable="false" styleNumber="12" layer="1">($$xf($time), $$yf($time))</point>
       $f
+      <point styleNumber="6">($x0, $y0)</point>
+      <point styleNumber="6">($x1, $y1)</point>
+      <point styleNumber="6">($x2, $y2)</point>
+      <point styleNumber="6">($x3, $y3)</point>
+      <point styleNumber="6">($x4, $y4)</point>
     </graph>
     <p>
       Can you visualize the curve being traced out by this point?

@@ -41,15 +41,21 @@
             </p>
         </aside>
         <p>
-            
+            This small change in perspective (we're changing how we view or think of the relationship between variables) impacts a lot of what we assumed and recalled in <xref ref="act-FunctionReminder"/>.
         </p>
     </subsection>
     <subsection xml:id="subsec-ExploringParametricCurves">
         <title>Exploring Parametric Curves</title>
-        
+        <p>
+            Let's begin with an actual example and see how the parametric definitions can build the curve.
+        </p>
+        <xi:include href="./activities/act-FirstParametricCurve.ptx" />
+        <p>
+            This small interactive graph is a nice one, because it highlights one of the important aspects of a parametric curve: <em>motion</em>. A graph of a parametric curve is really a path that a point travels along, which is pretty different from our original interpretation of a graph<mdash/>the collection of points <m>(x,y)</m> where <m>y=f(x)</m>. 
+        </p>
+        <p>
+            
+        </p>
     </subsection>
-    <subsection xml:id="subsec-Cycloid">
-        <title>The Cycloid</title>
-        
-    </subsection>
+    
 </section>
