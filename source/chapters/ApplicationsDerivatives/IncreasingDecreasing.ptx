@@ -383,7 +383,7 @@
         </hint>
         <hint>
           <p>
-            <tabular>
+            <tabular halign="center">
               <col width="16%" top="medium"/>
               <col width="16%" top="medium"/>
               <col width="16%" top="medium"/>
@@ -399,17 +399,17 @@
               </row>
               <row bottom="minor">
                 <cell><p><m>g'</m></p></cell>
-                <cell></cell>
-                <cell></cell>
-                <cell></cell>
-                <cell></cell>
+                <cell><p></p></cell>
+                <cell><p></p></cell>
+                <cell><p></p></cell>
+                <cell><p></p></cell>
               </row>
               <row bottom="medium">
                 <cell><p><m>g</m></p></cell>
-                <cell></cell>
-                <cell></cell>
-                <cell></cell>
-                <cell></cell>
+                <cell><p></p></cell>
+                <cell><p></p></cell>
+                <cell><p></p></cell>
+                <cell><p></p></cell>
               </row>
             </tabular>
           </p>
@@ -446,7 +446,7 @@
                 <cell><p><m>\nearrow</m></p></cell>
               </row>
               <row bottom="medium">
-                <cell></cell>
+                <cell><p></p></cell>
                 <cell><p>local max</p></cell>
                 <cell><p>decreasing</p></cell>
                 <cell><p>local min</p></cell>
