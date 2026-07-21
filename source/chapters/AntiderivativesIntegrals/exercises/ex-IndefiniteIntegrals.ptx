@@ -18,6 +18,11 @@
                     For a first derivative <m>f'(x) = 3x^2+\cos(x)+2</m>, find a suitable function <m>f(x)</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    These answers might differ based on what constant term you choose, but will look like: <m>f(x)=x^3+\sin(x)+2x+15</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -25,6 +30,11 @@
                     For a second derivative <m>f''(x) = 3x^2+\cos(x)+2</m>, find a suitable first derivative <m>f'(x)</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    These answers might differ based on what constant term you choose, but will look like: <m>f'(x)=x^3+\sin(x)+2x+15</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -32,6 +42,11 @@
                     For a function <m>f(x) = 3x^2 + \cos(x)+2</m>, find a suitable antiderivative function <m>F(x)</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    These answers might differ based on what constant term you choose, but will look like: <m>F(x)=x^3+\sin(x)+2x+15</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -39,6 +54,11 @@
                     For a function <m>f(x) = 3x^2+\cos(x)+2</m>, find the family of antiderivatives.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>F(x)=x^3+\sin(x)+2x+C</m>, where <m>C</m> is some real-number constant.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -46,6 +66,11 @@
                     Find <m>\displaystyle\int \left(3x^2 + \cos(x) +2\right)\;dx</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\displaystyle\int \left(3x^2 + \cos(x) +2\right)\;dx = x^3+\sin(x)+2x+C</m>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -74,6 +99,11 @@
                     <m>\displaystyle\int \left(4x^3 - \frac{1}{x}\right)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>x^4 - \ln|x| + C</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -81,6 +111,11 @@
                     <m>\displaystyle\int \left(8x - \sec^2(x) - \frac{1}{x^2}\right)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>4x^2 - \tan(x) + \dfrac{1}{x} + C</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -88,6 +123,11 @@
                     <m>\displaystyle\int \left( x^5 - 3\sin(x) +  2e^x\right)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\dfrac{x^6}{6} + 3\cos(x) + 2e^x +C</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -95,6 +135,11 @@
                     <m>\displaystyle\int \left(\sqrt[3]{t} + \frac{4}{t^3}+2\right)\;dt</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\dfrac{3t^{4/3}}{4} - \dfrac{1}{t^4}+2t+C</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -102,6 +147,11 @@
                     <m>\displaystyle\int \left( \frac{4y}{3} - \frac{3}{4y} \right)\;dy</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\dfrac{2y^2}{3}-\dfrac{3}{4}\ln|y|+C</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -109,6 +159,11 @@
                     <m>\displaystyle\int \left( 5\sec(x)\tan(x) + 2\sqrt[5]{x^3} \right)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>5\sec(x) + \dfrac{5\sqrt[5]{x^8}}{4} + C</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -116,6 +171,11 @@
                     <m>\displaystyle\int \left( \frac{1}{\sqrt{1-x^2}} + \frac{4x^2}{3} \right)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\sin^{-1}(x) + 4x^3 + C</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -123,6 +183,11 @@
                     <m>\displaystyle\int \left( \frac{1}{1+x^2} -\cos(x) \right)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\tan^{-1}(x) - \sin(x)+C</m>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -137,6 +202,15 @@
                     <m>\displaystyle\int \left( \frac{x^2-1}{x-1} \right)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \left( \frac{x^2-1}{x-1} \right)\;dx \amp = \in \left(\frac{(x+1)(x-1)}{x-1}\right)\;dx</mrow>
+                        <mrow> \amp = \int (x+1)\;dx</mrow>
+                        <mrow> \amp = \frac{x^2}{2} + x + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -144,6 +218,14 @@
                     <m>\displaystyle\int \left( x(x^2+1) \right)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \left( x(x^2+1) \right)\;dx \amp = \int \left(x^2+x\right)\;dx</mrow>
+                        <mrow> \amp = \frac{x^3}{3}+\frac{x^2}{2}+C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -151,6 +233,19 @@
                     <m>\displaystyle\int \left( \frac{\sec(x) + \tan(x)}{\cos(x)} \right)\;dx</m>
                 </p>
             </statement>
+            <hint>
+                <p>
+                    It might be useful to think of the division by <m>\cos(x)</m> to actually be multiplication by <m>\sec(x)</m>.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \left( \frac{\sec(x) + \tan(x)}{\cos(x)} \right)\;dx \amp = \int \left(\sec^2(x) + \sec(x)\tan(x)\right)\;dx </mrow>
+                        <mrow> \amp = \tan(x) + \sec(x)\;dx </mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -158,6 +253,15 @@
                     <m>\displaystyle\int \left( \frac{xe^x+1}{x} \right)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \left( \frac{xe^x+1}{x} \right)\;dx \amp = \int \left( \frac{xe^x}{x} + \frac{1}{x} \right)\;dx</mrow>
+                        <mrow> \amp = \int \left( e^x + \frac{1}{x} \right)\;dx</mrow>
+                        <mrow> \amp = e^x + \ln|x| + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -165,6 +269,14 @@
                     <m>\displaystyle\int \left( \ln(e^{2x}) \right)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \left( \ln(e^{2x}) \right)\;dx \amp \int \left( 2x \right) \;dx</mrow>
+                        <mrow> \amp = x^2 + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -177,6 +289,15 @@
                     It might be helpful to write <m>x^2+2</m> as <m>(x^2+1)+1</m>. Then, try to split up that fraction.
                 </p>
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \left( \frac{x^2+2}{x^2+1} \right)\;dx \amp = \int \left( \frac{(x^2+1)+1}{x^2+1}\right)\;dx</mrow>
+                        <mrow> \amp = \int \left(1 + \frac{1}{x^2+1}\right)\;dx </mrow>
+                        <mrow> \amp = x + \tan^{-1}(x) + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -191,6 +312,16 @@
                     <m>f(x) = x^2 - 4 \sin(x)</m> with <m>F(0) = 3</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>F(x) \amp = \frac{x^3}{3} + 4\cos(x) + C</mrow>
+                        <mrow>3 \amp = 0 + 4 + C</mrow>
+                        <mrow>C \amp = -1 </mrow>
+                    </md>
+                    So the specific antiderivative is <m>F(x) = \dfrac{x^3}{3} + 4 \cos(x) -1</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -198,6 +329,16 @@
                     <m>g(x) = x^3 - 4x^2 + 5x</m> with <m>G(1) = 0</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>G(x) \amp = \frac{x^4}{4} + \frac{5x^2}{2} + C</mrow>
+                        <mrow>0 \amp = \frac{1}{4} + \frac{5}{2} + C</mrow>
+                        <mrow>C \amp = - \frac{11}{4}</mrow>
+                    </md>
+                    So the specific antiderivative is <m>G(x) = \dfrac{x^4}{4} + \dfrac{5x^2}{2} - \dfrac{11}{4}</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -205,6 +346,16 @@
                     <m>m(x) = \dfrac{9}{x} - 3e^x</m> with <m>M(1) = 4</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>M(x) \amp = 9\ln|x| - 3e^x + C</mrow>
+                        <mrow>4 \amp = 9(0) - 3e + C</mrow>
+                        <mrow>C \amp = 4 + 3e</mrow>
+                    </md>
+                    So the specific antiderivative is <m>M(x) = 9\ln|x| - 3e^x + 4 + 3e</m>.
+                </p>
+            </solution>
         </task>
     </exercise>
 </exercises>
