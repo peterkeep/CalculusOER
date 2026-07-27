@@ -53,9 +53,56 @@
         <p>
             This small interactive graph is a nice one, because it highlights one of the important aspects of a parametric curve: <em>motion</em>. A graph of a parametric curve is really a path that a point travels along, which is pretty different from our original interpretation of a graph<mdash/>the collection of points <m>(x,y)</m> where <m>y=f(x)</m>. 
         </p>
+        <definition xml:id="def-Orientation">
+            <title>Orientation</title>
+            <statement>
+                <p>
+                    The direction for which a parametric curve is traced when the value of the parameter is increasing is called the <term>orientation</term> of the curve.
+                </p>
+            </statement>
+        </definition>
         <p>
-            
+            We often try to include some visual clues depicting the orientation or direction of the curve when we visualize it. Often, this can be achieved with a simple animation (where we can see a point move along the curve), but this is also achieved using arrows along a curve.
+        </p>
+        <figure xml:id="fig-Orientation">
+            <caption>Orientation of a parametric curve: <m>\begin{aligned}x \amp = t^2 - 3t-4 \\ y \amp = 1-t^2\end{aligned}</m> for <m>0 \leq t \leq 4</m>.</caption>
+            <image source="./ParametricPolar/orientation.png" width="50%">
+                <shortdescription>A parametric curve, shaped a bit like the left side of a  heart. There are arrow heads along the curve, starting on the top and pointing to the left and then downwards as they move along the curve.</shortdescription>
+            </image>
+        </figure>
+    </subsection>
+    <subsection xml:id="subsec-MoreCurves">
+        <title>More Parametric Curves</title>
+        <p>
+            We could end our section with a list of facts or formulas for different curves that we might recognize, but it will be more fun to explore these and discover them ourselves.
+        </p>
+        <xi:include href="./activities/act-CircleExploration.ptx" />
+    </subsection>
+    <subsection xml:id="subsec-EliminatingParameter">
+        <title>Eliminating the Parameter</title>
+        <p>
+            It is possible that, in some case, we might want to represent our curve in a more traditional <q><m>y</m> as a function of <m>x</m></q> or <q><m>x</m> as a function of <m>y</m></q> setting. In this case, we need to manipulate our functions for <m>x</m> and <m>y</m> in order to <term>eliminate the parameter</term>, <m>t</m>, from our function representation.
+        </p>
+        <p>
+            Typically, this can be done by isolating <m>t</m> in either the function definition for <m>x</m> or <m>y</m>, and then substituting this new expression for <m>t</m> into the other variable's function.
+        </p>
+        <xi:include href="./activities/act-EliminateParameter.ptx" />
+        <xi:include href="./activities/act-EliminateParameter-2.ptx" />
+        <p>
+            We might notice that this strategy depends on us being able to solve for <m>t</m> in at least one of these functions. For instance, the following parametric curve will be hard to employ this strategy:
+            <md>
+                <mrow>x \amp = t - \sin(t)</mrow>
+                <mrow>y \amp = t\cos(t)</mrow>
+            </md>
+        </p>
+        <p>
+            There are no <q>nice</q> ways of solving for <m>t</m> in either of these functions! 
         </p>
     </subsection>
+    <conclusion>
+        <p>
+            This is everything we need for now. We're going to make one more quick stop to check out another way of representing functions, and then we'll spend our time thinking about how we might do calculus with these parametric curves.
+        </p>
+    </conclusion>
     
 </section>

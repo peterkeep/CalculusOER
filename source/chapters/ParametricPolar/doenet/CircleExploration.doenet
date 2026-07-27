@@ -21,17 +21,22 @@
 </setup>
 
 <p>
-  <em>Instructions:</em> Construct and explore a new parametric curve. Pick some properties or characteristics and try to build a parametric curve with those properties or characteristics.
+  <em>Instructions:</em> Begin by exploring the parametric curve,
+  <md>
+    <mrow>x \amp = \cos(t)</mrow>
+    <mrow>y \amp = \sin(t)</mrow>
+  </md>
+  with <m>0\leq t \leq 2\pi</m>. Then, make changes to the parametric curve as directed.
 </p>
 <sideBySide>
   <p>
     Function for <m>x</m>:<br/>
-    <mathInput name="xt" disabled="$pages.currentPage = 2"><label><m>x = </m></label>cos(t)</mathInput>
+    <mathInput name="xt" disabled="$pages.currentPage > 1"><label><m>x = </m></label>cos(t)</mathInput>
   </p>
 
   <p>
     Function for <m>y</m>: <br/>
-    <mathInput name="yt" disabled="$pages.currentPage = 1"><label><m>y = </m></label>sin(t)</mathInput>
+    <mathInput name="yt" disabled="$pages.currentPage != 2"><label><m>y = </m></label>sin(t)</mathInput>
   </p>
   <p>
     Interval of <m>t</m>-values: <br/>
@@ -41,8 +46,8 @@
 <p>
   So, we'll consider the parametric curve:
   <md>
-    <mrow>x(t) \amp = $xf</mrow>
-    <mrow>y(t) \amp = $yf</mrow>
+    <mrow>x \amp = $xf</mrow>
+    <mrow>y \amp = $yf</mrow>
   </md>
   for <m>$a \leq t \leq $b</m>.
 </p>

@@ -1,0 +1,81 @@
+<activity xml:id="act-EliminateParameter" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Eliminate the Parameter</title>
+    <introduction>
+        <p>
+            Consider the parametric curve
+            <md>
+                <mrow>x \amp = \sqrt{t+1}</mrow>
+                <mrow>y \amp = \frac{t}{3}+1</mrow>
+            </md>
+            for <m>0\leq t \leq 15</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Solve <m>x=\sqrt{t+1}</m> for <m>t</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <m>t=x^2-1</m>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Substitute this expression for <m>t</m> into <m>y=\dfrac{t}{3}-1</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>y \amp = \frac{t}{3}-1</mrow>
+                    <mrow> \amp = \frac{x^2-1}{3}-1</mrow>
+                    <mrow> \amp = \frac{x^2}{3}-\frac{4}{3} </mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Start over, and instead solve <m>y=\dfrac{t}{3}-1</m> for <m>t</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <m>t = 3y+3</m>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now substitute this expression for <m>t</m> into <m>x=\sqrt{t+1}</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>x \amp = \sqrt{t+1}</mrow>
+                    <mrow> \amp = \sqrt{(3y+3)+1}</mrow>
+                    <mrow> \amp = \sqrt{3y+4}</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use the graphing tool below to check to see if these curves are all the same. You'll need to find appropriate intervals of <m>x</m>-values or <m>y</m>-values along the way.
+            </p>
+            <interactive platform="doenetml" width="95%" aspect="1:2">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/EliminateParameter.doenet"/>
+                </slate>
+            </interactive>
+        </statement>
+    </task>
+</activity>
