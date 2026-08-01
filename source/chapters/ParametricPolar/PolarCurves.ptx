@@ -4,23 +4,50 @@
     <title>Polar Curves</title>
     <introduction>
         <p>
-            
+            It's time for another small deviation to think about functions, again. This time, we're going to specifically think about graphs of functions and how we visualize things.
+        </p>
+        <xi:include href="./activities/act-GraphRefresher.ptx" />
+        <p>
+            We'll move forward in a familiar way. Just like in <xref ref="sec-ParametricCurves"/>, we'll ask a <q>What if...?</q> question to alter some basic ideas about how we graph things, and think about functions in a slightly different way.
         </p>
     </introduction>
     <subsection xml:id="subsec-PolarWhatIf">
         <title>What If...?</title>
         <p>
-            
+            <em>What if, instead of <m>x</m> and <m>y</m> representing the horizontal and vertical locations of our point, we thought about a point's location using a direction and a distance?</em>
         </p>
+        <p>
+            Instead of thinking about a point, <m>(x,y)</m>, as the location described on a rectangular grid, we might think about a point described on a circular grid: the coordinates might describe a direction (an angle, measured in radians) and a distance from the origin.
+        </p>
+        <p>
+            This isn't a new way of describing locations! While we might, in a city like Chicago, describe the location of something using rectangular coordinates (<q>My favorite sushi place is 7 blocks north and 3 block east of here.</q>), this isn't the only way to describe a location. In the middle of a forest, for instance, these directions wouldn't be helpful. Instead, we might point someone in the right direction and tell them how far away something is (<q>There's a nice spot to forage for mushrooms a half a mile to the southwest of here.</q>).
+        </p>
+        <definition xml:id="def-PolarCurve">
+            <title>Polar Curve</title>
+            <statement>
+                <p>
+                    A <term>polar curve</term> is a curve defined by <m>r=f(\theta)</m>, where <m>\theta</m> represents the an angle from the measured to the positive horizontal axis (the <term>polar axis</term>), and <m>r</m> is a distance from the origin (here, called the <term>pole</term>).
+                </p>
+                <p>
+                    The distance, <m>r</m>, is called the radius (or radial component), and the angle, <m>\theta</m> is called the polar angle (or angular component), and the description of a point using these two components is called the <term>polar coordinate system</term>.
+                </p>
+            </statement>
+        </definition>
     </subsection>
-    <subsection xml:id="subsec-ExploringPolarCurves">
-        <title>Exploring Polar Curves</title>
+    <subsection xml:id="subsec-ExploringPolarCoordinates">
+        <title>Exploring Polar Coordinates</title>
         <p>
             
         </p>
     </subsection>
-    <subsection xml:id="subsec-PolarRoses">
-        <title>Polar Roses</title>
+    <subsection xml:id="subsec-PolarCurves">
+        <title>Polar Curves</title>
+        <p>
+            
+        </p>
+    </subsection>
+    <subsection xml:id="subsec-ConvertingCoordinateSystems">
+        <title>Converting Between Coordinate Systems</title>
         <p>
             
         </p>
