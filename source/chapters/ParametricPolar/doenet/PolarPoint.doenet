@@ -1,0 +1,38 @@
+<p>
+  <em>Instructions:</em> Input values for both <m>\theta</m> and <m>r</m> to plot the polar point <m>(r, \theta)</m>.
+</p>
+
+<p>
+  <mathInput name="t"><label><m>\theta = </m></label>pi/4</mathInput>
+</p>
+
+<p>
+  <mathInput name="r"><label><m>r = </m></label>3</mathInput>
+</p>
+
+<figure suppressFigureNameInCaption>
+    <caption>The point <m>\left($r, $t\right)</m>.</caption>
+  <graph xMin="-5" xMax="5" yMin="-5" yMax="5" fixAxes displayXAxisTicks="false" displayYAxisTicks="false">
+    <shortDescription>
+      A point plotted at the polar point (r, theta) as defined. There is a dashed line connecting the origin/pole and the point labeled r, and a red arc connecting the positive horizontal axis and the dashed line labeled theta.
+    </shortDescription>
+    <!-- Grid -->
+    <repeatForSequence from="0" to="6" step="1" valueName="k">
+      <circle styleNumber="6" radius="$k" draggable="false"/>
+    </repeatForSequence>
+    <repeatForSequence from="0" to="6" step="1" valueName="k">
+      <line through="(0,0) (cos($k*pi/6), sin($k*pi/6))" draggable="false" styleNumber="6"/>
+    </repeatForSequence>
+    <!-- Point -->
+    <point name="P" draggable="false">
+      ($r * cos($t), $r * sin($t))
+    </point>
+    <label anchor="($P.x+0.1, $P.y+0.1)" positionFromAnchor="right"><m>\left($r, $t\right)</m></label>
+    <lineSegment endpoints="(0,0) $P" draggable="false" lineStyle="dashed" lineWidth="2"/>
+    <label anchor="(2$P.x / 3, 2$P.y / 3)" positionFromAnchor="right"><m>r=$r</m></label>
+    <curve parMin="0" parMax="$t" variable="t" styleNumber="2">
+      ((1 + 0.05*t) * cos(t), (1 + 0.05*t) * sin(t))
+    </curve>
+    <label anchor="((1 + 0.1*$t) * cos($t/2), (1 + 0.1*$t) * sin($t/2))" positionFromAnchor="right"><m>\theta = $t</m></label>
+  </graph>
+</figure>

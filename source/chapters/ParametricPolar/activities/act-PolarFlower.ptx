@@ -1,0 +1,73 @@
+<activity xml:id="act-PolarFlower" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>A Polar Flower</title>
+    <introduction>
+        <p>
+            We'll now explore a polar flower, <m>r=5\cos(2\theta)</m>.
+        </p>
+        <p>
+            For each task, we'll use the following visualization:
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:2">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/PolarFlower.doenet"/>
+            </slate>
+        </interactive>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                In Step 1, explain how the changes to the cosine function (multiplying the input, <m>\theta</m> by 2 and multiplying the cosine function by 5) changes the graph from a standard cosine function's graph. Where are the zeros, compared to where they typically are?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Fill in the table with the function outputs <m>f(\theta)</m> for different values of <m>\theta</m>. Note that the points have been colored based on the sign on the output.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                In Step 2, explain why there only looks to be one grey point (when <m>r=0</m>, when there were more plotted in Step 1.)
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Think about how <m>\theta</m> changes. As <m>\theta</m> increases, where should the points be traveling? Describe this in terms of quadrants on the graph if you'd like. Does this match the movement of the points on the polar function?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Fill in the table with the <m>r</m> outputs at different values of <m>\theta</m>. Describe why these points are plotted where they are, including the quadrants and distances from the origin/pole.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                In Step 3, confirm that the polar curve <m>r=5\cos(2\theta)</m> doesn't follow the counter-clockwise path that we expect when <m>\theta</m> increases.
+            </p>
+            <p>
+                Compare the path that <m>r=5\cos(2\theta)</m> travels with the path that <m>r=|5\cos(2\theta)|</m> travels as <m>\theta</m> increases. What is happening to the curve when <m>r=5\cos(2\theta)</m> is negative?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Feel free to label the function outputs on these graphs to see this more clearly.
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What, then, do you think happens to a polar point <m>(r,\theta)</m> when <m>r\lt 0</m>? How do we plot it?
+            </p>
+        </statement>
+    </task>
+</activity>

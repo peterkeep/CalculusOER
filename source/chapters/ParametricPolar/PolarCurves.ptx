@@ -22,14 +22,30 @@
         <p>
             This isn't a new way of describing locations! While we might, in a city like Chicago, describe the location of something using rectangular coordinates (<q>My favorite sushi place is 7 blocks north and 3 block east of here.</q>), this isn't the only way to describe a location. In the middle of a forest, for instance, these directions wouldn't be helpful. Instead, we might point someone in the right direction and tell them how far away something is (<q>There's a nice spot to forage for mushrooms a half a mile to the southwest of here.</q>).
         </p>
+        <definition xml:id="def-PolarCoordinates">
+            <title>Polar Coordinates</title>          
+            <statement>
+                <p>
+                    A point <m>(r, \theta)</m> is written in the <term>polar coordinate system</term>, where <m>r</m> represents the distance between the point and the origin (called the <term>pole</term>) and <m>\theta</m> represents the angle measured to the positive horizontal axis and a ray from the pole passing through the point.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            We can practice visualizing these points using the graphing utility below.
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:2">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="./doenet/PolarPoint.doenet"/>
+            </slate>
+        </interactive>
+        <p>
+            We will mostly be interested in thinking about functions defined using this new coordinate system.
+        </p>
         <definition xml:id="def-PolarCurve">
             <title>Polar Curve</title>
             <statement>
                 <p>
-                    A <term>polar curve</term> is a curve defined by <m>r=f(\theta)</m>, where <m>\theta</m> represents the an angle from the measured to the positive horizontal axis (the <term>polar axis</term>), and <m>r</m> is a distance from the origin (here, called the <term>pole</term>).
-                </p>
-                <p>
-                    The distance, <m>r</m>, is called the radius (or radial component), and the angle, <m>\theta</m> is called the polar angle (or angular component), and the description of a point using these two components is called the <term>polar coordinate system</term>.
+                    A <term>polar curve</term> is a curve defined by the function <m>r=f(\theta)</m>, where <m>\theta</m> is the input/independent variable and <m>r</m> is the output/dependent variable.
                 </p>
             </statement>
         </definition>
@@ -37,14 +53,13 @@
     <subsection xml:id="subsec-ExploringPolarCoordinates">
         <title>Exploring Polar Coordinates</title>
         <p>
-            
+            We'll start with a small example to try to understand more about how we can visualize polar curves.
         </p>
-    </subsection>
-    <subsection xml:id="subsec-PolarCurves">
-        <title>Polar Curves</title>
+        <xi:include href="./activities/act-FirstPolarCurve.ptx" />
         <p>
-            
+            One thing to note, and focus on more closely, is our use of the word <q>distance</q> when we defined <m>r</m>. Our typical understanding of distance is that this is a non-negative measurement. In <xref ref="act-FirstPolarCurve"/> , we looked at a non-negative function, so we didn't have to consider what might happen when our function has negative outputs. In order to give ourselves more flexibility in this coordinate system, let's consider a new function<mdash/>one with both positive and negative outputs.
         </p>
+        <xi:include href="./activities/act-PolarFlower.ptx" />
     </subsection>
     <subsection xml:id="subsec-ConvertingCoordinateSystems">
         <title>Converting Between Coordinate Systems</title>
