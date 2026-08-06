@@ -71,8 +71,8 @@
     </sideBySide>
     <p>Fill in the table below using the function for <m>x</m>:</p>
     <table suppressTableNameInTitle>
-      <tabular top="medium">
-        <row bottom="minor" halign="center">
+      <tabular topBorder="medium" bottomBorder="medium">
+        <row bottomBorder="minor" halign="center">
           <cell><m>t</m></cell>
           <cell>0</cell>
           <cell>1</cell>
@@ -80,7 +80,7 @@
           <cell>3</cell>
           <cell>4</cell>
         </row>
-        <row  bottom="medium" halign="center">
+        <row halign="center">
           <cell><m>x</m></cell>
           <cell><mathInput name="x0"><shortDescription>x value when t=0</shortDescription></mathInput></cell>
           <cell><mathInput name="x1"><shortDescription>x value when t=1</shortDescription></mathInput></cell>
