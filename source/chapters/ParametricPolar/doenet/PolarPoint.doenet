@@ -34,5 +34,10 @@
       ((1 + 0.05*t) * cos(t), (1 + 0.05*t) * sin(t))
     </curve>
     <label anchor="((1 + 0.1*$t) * cos($t/2), (1 + 0.1*$t) * sin($t/2))" positionFromAnchor="right"><m>\theta = $t</m></label>
+    <!-- Negative r -->
+    <point name="oppP" hide="$r >= 0" styleNumber="5">
+      (-$r * cos($t), -$r * sin($t))
+    </point>
+    <lineSegment endpoints="(0,0) $oppP" draggable="false" styleNumber="5" hide="$r >=0" lineStyle="dashed" lineWidth="2"/>
   </graph>
 </figure>

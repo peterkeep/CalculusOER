@@ -1,0 +1,83 @@
+<activity xml:id="act-ConvertingCoordinates">
+    <title>Converting Coordinates</title>
+    <statement>
+        <p>
+            Fill in the following table, converting points written in the Cartesian coordinate system to the polar coordinate system and points in the polar coordinate system to the Cartesian coordinate system. It might be helpful to sketch the point first!
+        </p>
+        <p>
+            Then, find a second polar representation for each point.
+        </p>
+        <table>
+            <title></title>
+            <tabular top="medium" halign="center">
+                <row header="yes" bottom="minor">
+                    <cell>Cartesian</cell>
+                    <cell>Polar</cell>
+                    <cell>Second Polar</cell>
+                </row>
+                <row>
+                    <cell></cell>
+                    <cell><m>\left(3, \dfrac{7\pi}{4}\right)</m></cell>
+                    <cell></cell>
+                </row>
+                <row>
+                    <cell></cell>
+                    <cell><m>\left(\dfrac{1}{2}, \dfrac{\pi}{6}\right)</m></cell>
+                    <cell></cell>
+                </row>
+                <row>
+                    <cell><m>(-4, 4\sqrt{3})</m></cell>
+                    <cell></cell>
+                    <cell></cell>
+                </row>
+                <row>
+                    <cell><m>(-3, -5)</m></cell>
+                    <cell></cell>
+                    <cell></cell>
+                </row>
+                <row bottom="medium">
+                    <cell></cell>
+                    <cell><m>\left(-1,-\dfrac{2\pi}{3}\right)</m></cell>
+                    <cell></cell>
+                </row>
+            </tabular>
+        </table>
+    </statement>
+    <solution>
+        <table>
+            <title>One possible solution</title>
+            <tabular top="medium" halign="center">
+                <row header="yes" bottom="minor">
+                    <cell>Cartesian</cell>
+                    <cell>Polar</cell>
+                    <cell>Second Polar</cell>
+                </row>
+                <row>
+                    <cell><m>\left(\dfrac{3}{\sqrt{2}}, -\dfrac{3}{\sqrt{2}}\right)</m></cell>
+                    <cell><m>\left(3, \dfrac{7\pi}{4}\right)</m></cell>
+                    <cell><m>\left(-3, \dfrac{3\pi}{4}\right)</m></cell>
+                </row>
+                <row>
+                    <cell><m>\left(\dfrac{\sqrt{3}}{4},\dfrac{1}{4} \right)</m></cell>
+                    <cell><m>\left(\dfrac{1}{2}, \dfrac{\pi}{6}\right)</m></cell>
+                    <cell><m>\left(-\dfrac{1}{2}, \dfrac{7\pi}{6}\right)</m></cell>
+                </row>
+                <row>
+                    <cell><m>(-4, 4\sqrt{3})</m></cell>
+                    <cell><m>\left(8,\dfrac{2\pi}{3}\right)</m></cell>
+                    <cell><m>\left(8, \dfrac{8\pi}{3}\right)</m></cell>
+                </row>
+                <row>
+                    <cell><m>(-3, -4)</m></cell>
+                    <cell><m>\left(5, \tan^{-1}\left(\dfrac{4}{3}\right)+\pi\right)</m> </cell>
+                    <cell><m>\left(-5, \tan^{-1}\left(\dfrac{4}{3}\right)\right)</m></cell>
+                </row>
+                <row bottom="medium">
+                    <cell><m>\left(\dfrac{1}{2},\dfrac{\sqrt{3}}{2}\right)</m></cell>
+                    <cell><m>\left(-1,\dfrac{2\pi}{3}\right)</m></cell>
+                    <cell><m>\left(1, \dfrac{\pi}{3} \right)</m></cell>
+                </row>
+            </tabular>
+        </table>
+    </solution>
+</activity>
