@@ -1,0 +1,49 @@
+<activity xml:id="act-ParametricArcLength">
+    <title>Building a Parametric Arc Length Formula</title>
+    <introduction>
+        <p>
+            Before we begin, it might be helpful to remind yourself how we build the arclength formula in <xref ref="sec-ArcLengthSurfaceArea" text="type-global-title"/>.
+        </p>
+        <p>
+            Let's drop back in to that derivation with some small changes. Because we're dealing with a parametric curve, we'll use <m>t</m> as our input variable, and so we'll eventually need a <m>\Delta t</m> to turn into a differential <m>dt</m> in the integral. This means that we'll have non-uniform <m>\Delta x</m> distances, since they'll be based on the changes in the input, <m>t</m>. So we'll actually use <m>\Delta x_k</m> to represent the change in the <m>x</m>-variable on the <m>k</m>th subinterval.
+        </p>
+        <p>
+            So, our length on the <m>k</m>th subinterval is:
+            <me>
+                \ell_k = \sqrt{(\Delta x_k)^2 + (\Delta y_k)^2}
+            </me>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                In order to build the arc length formula in <xref ref="sec-ArcLengthSurfaceArea"/>, we factored out <m>\sqrt{\Delta x^2}</m> in order to end up with a <m>\Delta x</m> that turned into the differential <m>dx</m> in the integral. This time, factor out a <m>\Delta t^2</m> under the square root.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\ell_k \amp = \sqrt{(\Delta t)^2\left(\frac{(\Delta x_k)^2}{(\Delta t)^2} + \frac{(\Delta y_k)^2}{(\Delta t)^2}\right)}</mrow>
+                    <mrow> \amp = \sqrt{(\Delta t)^2}\sqrt{\left(\frac{\Delta x_k}{\Delta t}\right)^2 + \left(\frac{\Delta y_k}{\Delta t}\right)^2}</mrow>
+                    <mrow> \amp = \sqrt{\left(\frac{\Delta x_k}{\Delta t}\right)^2 + \left(\frac{\Delta y_k}{\Delta t}\right)^2} \Delta t</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now, create a Riemann sum and let <m>n\to \infty</m> (and, correspondingly, <m>\Delta t\to 0</m>). Note that you should end up with some differentials instead of deltas!
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\ell \amp \approx \sum_{k=1}^n  \sqrt{\left(\frac{\Delta x_k}{\Delta t}\right)^2 + \left(\frac{\Delta y_k}{\Delta t}\right)^2} \Delta t</mrow>
+                    <mrow> \amp = \lim_{n\to\infty}  \sum_{k=1}^n  \sqrt{\left(\frac{\Delta x_k}{\Delta t}\right)^2 + \left(\frac{\Delta y_k}{\Delta t}\right)^2} \Delta t</mrow>
+                    <mrow> \amp = \int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2}\;dt</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+</activity>

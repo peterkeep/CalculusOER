@@ -1,0 +1,53 @@
+<activity xml:id="act-CycloidSlopes">
+    <title>Slopes on a Cycloid</title>
+    <introduction>
+        <p>
+            Consider the cycloid formed by a circle with radius <m>r=1</m>:
+            <md>
+                <mrow>x \amp = t-\sin(t)</mrow>
+                <mrow>y \amp = 1-\cos(t)</mrow>
+            </md>
+            <figure xml:id="fig-cycloid">
+                <caption>The cycloid.</caption>
+                <image source="./ParametricPolar/cycloid.png" width="80%">
+                    <shortdescription>The cycloid, visualized on the interval from 0 to approximately 4 pi. This looks like 2 arches, with bottoms at 0, 2 pi and 4 pi.</shortdescription>
+                </image>
+            </figure>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                First, make a conjecture: where do you think the cycloid will have horizontal tangent lines? What about vertical tangent lines, or other points where the derivative doesn't exist?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find <m>\frac{dy}{dt}</m> and <m>\frac{dx}{dt}</m>, and construct <m>\dydx</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the values of <m>t</m> where <m>\dydx = 0</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the values of <m>t</m> where <m>\dydx</m> does not exist.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use these values of <m>t</m> to find the points on the cycloid where there are horizontal tangent lines or points where the derivative doesn't exist. Do they match what you conjectured?
+            </p>
+        </statement>
+    </task>
+</activity>

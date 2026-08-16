@@ -1,0 +1,36 @@
+<setup>
+  <function name="xf" variable="t">t-sin(t)</function>
+  <function name="xfCirc" variable="t">$a-sin(t)</function>
+  <function name="yf" variable="t">1-cos(t)</function>
+  <curve name="circle" parMin="0" parMax="2pi" variable="t" styleNumber="3" hide="!$rollCircle" >
+    ($$xfCirc(t), $$yf(t))
+  </curve>
+  <point name="P" hide="!$rollCircle">($$xf($a), $$yf($a))</point>
+  <curve name="cycloid" parMin="0" parMax="$a" variable="t" hide="!$cycloidShow">
+    ($$xf(t), $$yf(t))
+  </curve>
+</setup>
+
+<p>
+  <em>Instructions:</em> Use the sliders and options to build the cycloid curve.
+</p>
+
+<slider name="b" initialValue="0" from="0" to="4pi" step="0.001" showTicks="false" showValue="false" hide="$rollCircle">
+  <label>Slide to spin the wheel.</label>
+</slider>
+
+<slider name="a" initialValue="0" from="0" to="4pi" step="0.001" showTicks="false" showValue="false" hide="!$rollCircle">
+  <label>Slide to roll the wheel.</label>
+</slider>
+
+<graph xMin="-1.5" xMax="4pi+1.5" yMin="-3" yMax="5" identicalAxisScales>
+  <point hide="$rollCircle">(-sin($b),1-cos($b))</point>
+  <circle center="(0,1)" hide="$rollCircle" styleNumber="3"/>
+  $circle
+  $P
+  $cycloid
+</graph>
+
+<p><booleanInput name="rollCircle" hide="$cycloidShow"><label>Roll the circle.</label></booleanInput></p>
+
+<p><booleanInput name="cycloidShow" hide="!$rollCircle"><label>Show the cycloid.</label></booleanInput></p>
