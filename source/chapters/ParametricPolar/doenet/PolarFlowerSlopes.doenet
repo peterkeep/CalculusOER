@@ -1,0 +1,43 @@
+<setup>
+  <function name="f" variable="t">2sin(3t)</function>
+  <derivative name="dy" variable="t">$f * sin(t)</derivative>
+  <derivative name="dx" variable="t">$f * cos(t)</derivative>
+</setup>
+
+<p>
+  <em>Instructions:</em> On the graph of the polar function
+  <me>r=2\sin(3\theta)</me>
+  move the point and tangent line around the curve to investigate and conjecture about the values of the derivative <m>\frac{dy}{dx}</m> at different points.
+</p>
+
+<slider bindValueTo="$t" from="0" to="pi" step="0.001" showTicks="false" showValue="true">
+  <label><m>\theta</m></label>
+</slider>
+
+
+<graph xMin="-3" xMax="3" yMin="-3" yMax="3" displayXAxisTicks="false" displayYAxisTicks="false" fixAxes>
+  <shortDescription>
+    The graph of a polar flower. It has 3 petals at pi over 6, 5 pi over 6. and 3 pi over 2. There is a point that moves around the plot with the slider and a small tangent line at that point.
+  </shortDescription>
+  <!-- Grid -->
+  <repeatForSequence from="0" to="6" step="1" valueName="k">
+    <circle styleNumber="6" radius="$k" draggable="false"/>
+  </repeatForSequence>
+  <repeatForSequence from="0" to="6" step="1" valueName="k">
+    <line through="(0,0) (cos($k*pi/6), sin($k*pi/6))" draggable="false" styleNumber="6"/>
+  </repeatForSequence>
+  <!-- Curve -->
+  <curve variable="t" parMin="0" parMax="2pi">
+    ($f * cos(t), $f * sin(t))
+  </curve>
+  <point name="P">($$f($t)*cos($t), $$f($t)*sin($t))</point>
+  <!-- Tangent line -->
+  <function styleNumber="2" variable="x" domain="[$P.x-0.5, $P.x+0.5]">
+    $$dy($t)/$$dx($t) * (x-$P.x) + $P.y
+  </function>
+</graph>
+
+<p>
+  For more precision, input a specific value of <m>\theta</m> below.
+</p>
+<mathInput name="t"><label><m>\theta=</m></label>0</mathInput>

@@ -1,0 +1,112 @@
+<activity xml:id="act-PolarArea" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Slice-and-Sum for Polar Areas</title>
+    <introduction>
+        <p>
+            Remember slice-and-sum? Here's the general procedure:
+            <ul>
+                <li>
+                    <p>
+                        We'll divide up the interval of inputs into <m>n</m> (equally-sized) subintervals. We'll pick one value from each subinterval.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        One each slice, we'll use the representative input variable to calculate the measurement we're interested in. In this case, it's an area.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Add up the areas of the <m>n</m> slices, and the sum should be an approximation of the actual area we're interested in.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Use a limit as <m>n\to\infty</m> to produce an integral our of a Riemann sum!
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                The area of a sector of a circle with angle <m>\alpha</m> is:
+                <me> 
+                    A=\frac{1}{2}\alpha r^2
+                </me>.
+                Convince yourselves that this is true, using appropriate test angles for:
+                <ul>
+                    <li>
+                        <p>
+                            A circle.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            A semicircle.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            A quarter of a circle.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                The reason that we're thinking about sectors of circles is that when we slice an interval of angles in a polar coordinate system, a bunch of rays extending away from the pole.
+            </p>
+            <p>
+                When do this for a polar curve, we'll pick a point in the subinterval and assume that the whole subinterval has a constant function output, just like we did with the rectangle. Take a look at the graphing utility below, and get a feel for how we'll find the <m>k</m>th slice.
+            </p>
+                <interactive platform="doenetml" width="95%" aspect="1:1">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/PolarArea.doenet"/>
+                </slate>
+            </interactive>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Calculate the area of the <m>k</m>th slice, <m>A_k</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <m>A_k = \frac{1}{2}(r(\theta_k^*))^2\Delta \theta</m>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Add these up to approximate the total area.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <m>A\approx \frac{1}{2}\displaystyle \sum_{k=1}^n (r(\theta_k^*))^2\Delta \theta</m>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Introduce a limit to find an integral formula for the area trapped inside a polar curve from <m>\theta=\alpha</m> to <m>\theta=\beta</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>A \amp = \lim_{n\to\infty}\frac{1}{2}\displaystyle \sum_{k=1}^n (r(\theta_k^*))^2\Delta \theta </mrow>
+                    <mrow> \amp = \frac{1}{2}\int_{\theta=\alpha}^{\theta=\beta} r^2\;d\theta</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+</activity>
