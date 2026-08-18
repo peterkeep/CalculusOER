@@ -1,0 +1,120 @@
+<setup>
+  <function name="f" variable="t" domain="[0, 2pi]">4cos^2(t)</function>
+</setup>
+
+<p>
+  <em>Instructions:</em> Navigate through each step one at a time to slowly reveal the polar curve. For our example, we'll begin by looking at <m>r = 4\cos^2(\theta)</m> for <m>0\leq \theta \leq 2\pi</m>.
+</p>
+
+<slider name="t" from="0" to="2pi" step="0.01" showTicks="false">
+  <label><m>\theta</m></label>
+</slider>
+
+<paginator name="pages">
+  <!-- Cartesian plot -->
+  <div>
+    Let's first plot this as a regular Cartesian function, <m>f(\theta) = 4\cos^2(\theta)</m>.
+
+    <graph xMin="-1" xMax="7" yMin="-1" yMax="5" xTickScaleFactor="pi/4" identicalAxisScales fixAxes>
+      <shortDescription>
+        A graph of 4 cosine squared theta, oscillating between 0 and 4 between 0 and 2 pi. There is a point that moves with the slider, and points that show up at the coordinates input from the table.
+      </shortDescription>
+      $f
+      <!-- User input points -->
+      <point draggable="false" styleNumber="6">(0, $f0)</point>
+      <point draggable="false" styleNumber="6">(pi/4, $f1)</point>
+      <point draggable="false" styleNumber="6">(pi/2, $f2)</point>
+      <point draggable="false" styleNumber="6">(3pi/4, $f3)</point>
+      <point draggable="false" styleNumber="6">(pi, $f4)</point>
+      <!-- Sliding point -->
+      <point>($t, $$f($t))</point>
+    </graph>
+    
+    <p>Fill in the table below using the function <m>f(\theta)</m>.</p>
+
+    <table suppressTableNameInTitle>
+       <tabular topBorder="medium" bottomBorder="medium" halign="center">
+         <row bottomBorder="minor">
+           <cell><m>\theta</m></cell>
+           <cell><m>0</m></cell>
+           <cell><m>\dfrac{\pi}{4}</m></cell>
+           <cell><m>\dfrac{\pi}{2}</m></cell>
+           <cell><m>\dfrac{3\pi}{4}</m></cell>
+           <cell><m>\pi</m></cell>
+         </row>
+         <row>
+           <cell><m>f(\theta)</m></cell>
+           <cell><mathInput name="f0"><shortDescription>f when theta equals 0</shortDescription></mathInput></cell>
+           <cell><mathInput name="f1"><shortDescription>f when theta equals pi over 4</shortDescription></mathInput></cell>
+           <cell><mathInput name="f2"><shortDescription>f when theta equals pi over 2</shortDescription></mathInput></cell>
+           <cell><mathInput name="f3"><shortDescription>f when theta equals 3 pi over 4</shortDescription></mathInput></cell>
+           <cell><mathInput name="f4"><shortDescription>f when theta equals pi</shortDescription></mathInput></cell>
+         </row>
+       </tabular>
+    </table>
+  </div>
+  
+  <!-- Polar plot -->
+  <div>
+    <p>
+      Now we'll try to visualize this as a polar function, <m>r=4\cos^2(\theta)</m>.
+    </p>
+    <graph xMin="-5" xMax="5" yMin="-3" yMax="3" displayXAxisTicks="false" displayYAxisTicks="false" identicalAxisScales fixAxes>
+      <shortDescription>
+        A polar plot of r equals 4 cosine squared theta. It has two loops on the horizontal axis extending from 0 to 4 and negative 4. There is a point that moves around according to the slider, with a small, dashed line segment connecting the origin and the point. The points from earlier are displayed, and new points appear according to the inputs below.
+      </shortDescription>
+      <!-- Grid -->
+      <repeatForSequence from="0" to="6" step="1" valueName="k">
+        <circle styleNumber="6" radius="$k" draggable="false"/>
+      </repeatForSequence>
+      <repeatForSequence from="0" to="6" step="1" valueName="k">
+        <line through="(0,0) (cos($k*pi/6), sin($k*pi/6))" draggable="false" styleNumber="6"/>
+      </repeatForSequence>
+      <curve parMin="0" parMax="2pi" variable="t">
+        ($$f(t) * cos(t), $$f(t) * sin(t))
+      </curve>
+      <!-- Previous points -->
+      <point draggable="false" styleNumber="6">($f0 * cos(0), $f0 * sin(0))</point>
+      <point draggable="false" styleNumber="6">($f1 * cos(pi/4), $f1 * sin(pi/4))</point>
+      <point draggable="false" styleNumber="6">($f2 * cos(pi/2), $f2 * sin(pi/2))</point>
+      <point draggable="false" styleNumber="6">($f3 * cos(3pi/4), $f3 * sin(3pi/4))</point>
+      <point draggable="false" styleNumber="6">($f4 * cos(pi), $f4 * sin(pi))</point>
+      <!-- New user points -->
+      <point draggable="false" styleNumber="6">($f5 * cos(5pi/4), $f5 * sin(5pi/4))</point>
+      <point draggable="false" styleNumber="6">($f6 * cos(3pi/2), $f6 * sin(3pi/2))</point>
+      <point draggable="false" styleNumber="6">($f7 * cos(7pi/4), $f7 * sin(7pi/4))</point>
+      <point draggable="false" styleNumber="6">($f8 * cos(2pi), $f8 * sin(2pi))</point>
+      <!-- Sliding point -->
+      <point name="polP" draggable="false">
+        ($$f($t) * cos($t), $$f($t) * sin($t))
+      </point>
+      <lineSegment lineStyle="dashed" lineWidth="1" draggable="false" endpoints="(0,0) $polP"/>
+    </graph>
+    
+    <p>Fill in the table below using the polar function.</p>
+
+    <table suppressTableNameInTitle>
+       <tabular topBorder="medium" bottomBorder="medium" halign="center">
+         <row bottomBorder="minor">
+           <cell><m>\theta</m></cell>
+           <cell><m>\dfrac{5\pi}{4}</m></cell>
+           <cell><m>\dfrac{3\pi}{2}</m></cell>
+           <cell><m>\dfrac{7\pi}{4}</m></cell>
+           <cell><m>2\pi</m></cell>
+         </row>
+         <row>
+           <cell><m>r</m></cell>
+           <cell><mathInput name="f5"><shortDescription>f when theta equals 5 pi over 4</shortDescription></mathInput></cell>
+           <cell><mathInput name="f6"><shortDescription>f when theta equals 3 pi over 2</shortDescription></mathInput></cell>
+           <cell><mathInput name="f7"><shortDescription>f when theta equals 7 pi over 4</shortDescription></mathInput></cell>
+           <cell><mathInput name="f8"><shortDescription>f when theta equals 2 pi</shortDescription></mathInput></cell>
+         </row>
+       </tabular>
+    </table>
+  </div>
+</paginator>
+
+<paginatorControls paginator="$pages"
+  pageLabel="Step" 
+  nextLabel="Next Step" 
+  previousLabel="Previous Step"/>

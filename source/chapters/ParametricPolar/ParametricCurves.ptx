@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-ParametricCurves" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Parametric Curves</title>
+    <introduction>
+        <p>
+            Let's start with a small deviation from calculus to introduce (or re-introduce) some ideas of how we might define functions and curves. We have been working with functions and graphs of functions for so long, but that might mean that some of the ideas are so engrained that might not even think about them. Let's remind ourselves as much as possible.
+        </p>
+        <xi:include href="./activities/act-FunctionReminder.ptx" />
+        <p>
+            None of this should be new to you, but it probably has been some time since you've thought about it! The reason we're starting this chapter (and this section) with this little reminder is simple: we're going to think about how we could slightly alter some of these basic concepts and change the way that we think about functions, curves, and graphs.
+        </p>
+    </introduction>
+    <subsection xml:id="subsec-ParametricWhatIf">
+        <title>What If...?</title>
+        <p>
+            We're going to try to change some of the assumptions about curves and graphs and functions by asking some <q>What if...?</q> questions. For this section, we'll ask a very short one:
+        </p>
+        <p>
+            <em>What if, instead of the <m>y</m> variable being an output that depends on the <m>x</m> variable input, we had both <m>x</m> and <m>y</m> as outputs of some third variable, like time?</em>
+        </p>
+        <p>
+            Instead of thinking of <m>y</m> as a function output of <m>x</m>, <m>y=f(x)</m>, we'll think about the vertical component <m>y</m> and the horizontal component <m>x</m> of our curve being defined as functions of <m>t</m>. Now, instead of <m>x</m> being an independent variable and <m>y</m> being dependent on the value of <m>x</m>, we have that <m>x</m> and <m>y</m> are independent of each other, both dependent on <m>t</m>, which we often call a <term>parameter</term>. Typically, we think of this parameter as time: <m>x</m> and <m>y</m> both act independently, but change as time marches forward.
+        </p>
+        <definition xml:id="def-ParametricCurve">
+            <title>Parametric Curve</title>
+            <statement>
+                <p>
+                   A curve is defined <term>parametrically</term> if
+                   <md>
+                        <mrow>x \amp = f(t)</mrow>
+                        <mrow>y \amp = g(t)</mrow>
+                    </md>
+                    for values of <m>t</m> in some interval.
+                </p>
+            </statement>
+        </definition>
+        <aside>
+            <p>
+                It's kind of like an etch-a-sketch toy, where you move the two dials independently to trace out some picture! One dial represents the horizontal position while the other represents the vertical position. If you turn both dials at once, you'll create some sort of curve!
+            </p>
+        </aside>
+        <p>
+            This small change in perspective (we're changing how we view or think of the relationship between variables) impacts a lot of what we assumed and recalled in <xref ref="act-FunctionReminder"/>.
+        </p>
+    </subsection>
+    <subsection xml:id="subsec-ExploringParametricCurves">
+        <title>Exploring Parametric Curves</title>
+        <p>
+            Let's begin with an actual example and see how the parametric definitions can build the curve.
+        </p>
+        <xi:include href="./activities/act-FirstParametricCurve.ptx" />
+        <p>
+            This small interactive graph is a nice one, because it highlights one of the important aspects of a parametric curve: <em>motion</em>. A graph of a parametric curve is really a path that a point travels along, which is pretty different from our original interpretation of a graph<mdash/>the collection of points <m>(x,y)</m> where <m>y=f(x)</m>. 
+        </p>
+        <definition xml:id="def-Orientation">
+            <title>Orientation</title>
+            <statement>
+                <p>
+                    The direction for which a parametric curve is traced when the value of the parameter is increasing is called the <term>orientation</term> of the curve.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            We often try to include some visual clues depicting the orientation or direction of the curve when we visualize it. Often, this can be achieved with a simple animation (where we can see a point move along the curve), but this is also achieved using arrows along a curve.
+        </p>
+        <figure xml:id="fig-Orientation">
+            <caption>Orientation of a parametric curve: <m>\begin{aligned}x \amp = t^2 - 3t-4 \\ y \amp = 1-t^2\end{aligned}</m> for <m>0 \leq t \leq 4</m>.</caption>
+            <image source="./ParametricPolar/orientation.png" width="50%">
+                <shortdescription>A parametric curve, shaped a bit like the left side of a  heart. There are arrow heads along the curve, starting on the top and pointing to the left and then downwards as they move along the curve.</shortdescription>
+            </image>
+        </figure>
+    </subsection>
+    <subsection xml:id="subsec-MoreCurves">
+        <title>More Parametric Curves</title>
+        <p>
+            We could end our section with a list of facts or formulas for different curves that we might recognize, but it will be more fun to explore these and discover them ourselves.
+        </p>
+        <xi:include href="./activities/act-CircleExploration.ptx" />
+    </subsection>
+    <subsection xml:id="subsec-EliminatingParameter">
+        <title>Eliminating the Parameter</title>
+        <p>
+            It is possible that, in some case, we might want to represent our curve in a more traditional <q><m>y</m> as a function of <m>x</m></q> or <q><m>x</m> as a function of <m>y</m></q> setting. In this case, we need to manipulate our functions for <m>x</m> and <m>y</m> in order to <term>eliminate the parameter</term>, <m>t</m>, from our function representation.
+        </p>
+        <p>
+            Typically, this can be done by isolating <m>t</m> in either the function definition for <m>x</m> or <m>y</m>, and then substituting this new expression for <m>t</m> into the other variable's function.
+        </p>
+        <xi:include href="./activities/act-EliminateParameter.ptx" />
+        <xi:include href="./activities/act-EliminateParameter-2.ptx" />
+        <p>
+            We might notice that this strategy depends on us being able to solve for <m>t</m> in at least one of these functions. For instance, the following parametric curve will be hard to employ this strategy:
+            <md>
+                <mrow>x \amp = t - \sin(t)</mrow>
+                <mrow>y \amp = t\cos(t)</mrow>
+            </md>
+        </p>
+        <p>
+            There are no <q>nice</q> ways of solving for <m>t</m> in either of these functions! 
+        </p>
+    </subsection>
+    <conclusion>
+        <p>
+            This is everything we need for now. We're going to make one more quick stop to check out another way of representing functions, and then we'll spend our time thinking about how we might do calculus with these parametric curves.
+        </p>
+    </conclusion>
+    
+</section>

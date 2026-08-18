@@ -1,0 +1,190 @@
+<setup>
+  <function name="xf" variable="t" styleNumber="10">
+    t^2 - 3t - 4
+  </function>
+  <function name="yf" variable="t" styleNumber="11">
+    1 - t^2
+  </function>
+  <curve name="f" variable="t" parMin="0" parMax="4" hide="$VisCurve" styleNumber="12">
+    ($$xf(t), $$yf(t))
+  </curve>
+  <styleDefinition styleNumber="10" lineColor="red" markerColor="red" lineOpacity="0.65"/>
+  <styleDefinition styleNumber="11" lineColor="blue" markerColor="blue" lineOpacity="0.5"/>
+  <styleDefinition styleNumber="12" lineColor="black" markerColor="black"/>
+  <styleDefinition styleNumber="13" lineColor="red" markerColor="red" lineOpacity="0.65" lineStyle="dashed"/>
+
+  <styleDefinition styleNumber="14" lineColor="blue" markerColor="blue" lineOpacity="0.5" lineStyle="dashed"/>
+</setup>
+
+<p>
+  <em>Instructions:</em> Navigate through each step one at a time to slowly reveal the parametric curve. For our example, we'll be looking at:
+  <md>
+    <mrow>x \amp = $xf</mrow>
+    <mrow>y \amp = $yf</mrow>
+  </md>
+  for <m>0 \leq t \leq 4</m>.
+</p>
+
+<slider name="time" from="0" to="4" step="0.01" showTicks="false">
+  <label><m>t</m></label>
+</slider>
+
+<paginator name="pages">
+  <!-- x function and coordinate -->
+  <div>
+    <p>
+      First, we'll consider just the <m>x</m>-values of our parametric curve: <m>x = $xf</m>.
+    </p>
+    <sideBySide>
+      <figure suppressFigureNameInCaption>
+        <caption>Graph of <m>x=$xf</m>.</caption>
+        <graph fixAxes size="small" xMin="-2" xMax="6" yMin="-7" yMax="1" >
+          <shortDescription>
+            Graph of a parabola with a point on it at. The vertical axis is labeled x and the horizontal axis is labeled t.
+          </shortDescription>
+          <xLabel><m>t</m></xLabel>
+          <yLabel><m>x</m></yLabel>
+          $xf
+          <point styleNumber="10" layer="1">($time, $$xf($time))</point>
+          <point draggable="false" styleNumber="6">(0, $x0)</point>
+          <point draggable="false" styleNumber="6">(1, $x1)</point>
+          <point draggable="false" styleNumber="6">(2, $x2)</point>
+          <point draggable="false" styleNumber="6">(3, $x3)</point>
+          <point draggable="false" styleNumber="6">(4, $x4)</point>
+        </graph>
+      </figure>
+      <figure suppressFigureNameInCaption>
+        <caption>The <m>x</m>-value, depending on time.</caption>
+        <graph fixAxes size="small" xMin="-9" xMax="1" yMin="-2" yMax="2" displayYAxis="false">
+          <shortDescription>
+            A horizontal line labeled x. There is a point on it that moves, corresponding with the height of the point in the first graph.
+          </shortDescription>
+          <xLabel><m>x</m></xLabel>
+          <point draggable="false" styleNumber="10" layer="1">($$xf($time), 0)</point>
+          <point draggable="false" styleNumber="6">($x0, 0)</point>
+          <point draggable="false" styleNumber="6">($x1, 0)</point>
+          <point draggable="false" styleNumber="6">($x2, 0)</point>
+          <point draggable="false" styleNumber="6">($x3, 0)</point>
+          <point draggable="false" styleNumber="6">($x4, 0)</point>
+        </graph>
+      </figure>
+    </sideBySide>
+    <p>Fill in the table below using the function for <m>x</m>:</p>
+    <table suppressTableNameInTitle>
+      <tabular topBorder="medium" bottomBorder="medium">
+        <row bottomBorder="minor" halign="center">
+          <cell><m>t</m></cell>
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+          <cell>4</cell>
+        </row>
+        <row halign="center">
+          <cell><m>x</m></cell>
+          <cell><mathInput name="x0"><shortDescription>x value when t=0</shortDescription></mathInput></cell>
+          <cell><mathInput name="x1"><shortDescription>x value when t=1</shortDescription></mathInput></cell>
+          <cell><mathInput name="x2"><shortDescription>x value when t=2</shortDescription></mathInput></cell>
+          <cell><mathInput name="x3"><shortDescription>x value when t=3</shortDescription></mathInput></cell>
+          <cell><mathInput name="x4"><shortDescription>x value when t=4</shortDescription></mathInput></cell>
+        </row>
+      </tabular>
+    </table>
+  </div>
+  <!-- y function and coordinate -->
+  <div>
+    <p>
+      Now, we'll consider just the <m>y</m>-values of our parametric curve: <m>y = $yf</m>.
+    </p>
+    <sideBySide>
+      <figure suppressFigureNameInCaption>
+        <caption>Graph of <m>y = $yf</m>.</caption>
+        <graph fixAxes size="small" xMin="-2" xMax="6" yMin="-17" yMax="2" >
+          <shortDescription>
+            Graph of a parabola with a point on it at. The vertical axis is labeled y and the horizontal axis is labeled t.
+          </shortDescription>
+          <xLabel><m>t</m></xLabel>
+          <yLabel><m>y</m></yLabel>
+          $yf
+          <point styleNumber="11" layer="1">($time, $$yf($time))</point>
+          <point draggable="false" styleNumber="6">(0, $y0)</point>
+          <point draggable="false" styleNumber="6">(1, $y1)</point>
+          <point draggable="false" styleNumber="6">(2, $y2)</point>
+          <point draggable="false" styleNumber="6">(3, $y3)</point>
+          <point draggable="false" styleNumber="6">(4, $y4)</point>
+        </graph>
+      </figure>
+      <figure suppressFigureNameInCaption>
+        <caption>The <m>y</m>-value, depending on time.</caption>
+        <graph fixAxes size="small" xMin="-2" xMax="2" yMin="-17" yMax="2" displayxAxis="false">
+          <shortDescription>
+            A vertical line labeled y. There is a point on it that moves, corresponding with the height of the point in the first graph.
+          </shortDescription>
+          <yLabel><m>y</m></yLabel>
+          <point draggable="false" styleNumber="11" layer="1">(0, $$yf($time))</point>
+          <point draggable="false" styleNumber="6">(0, $y0)</point>
+          <point draggable="false" styleNumber="6">(0, $y1)</point>
+          <point draggable="false" styleNumber="6">(0, $y2)</point>
+          <point draggable="false" styleNumber="6">(0, $y3)</point>
+          <point draggable="false" styleNumber="6">(0, $y4)</point>
+        </graph>
+      </figure>
+    </sideBySide>
+    <p>Fill in the table below using the function for <m>y</m>:</p>
+    <table suppressTableNameInTitle>
+      <tabular top="medium">
+        <row bottom="minor" halign="center">
+          <cell><m>t</m></cell>
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+          <cell>4</cell>
+        </row>
+        <row  bottom="medium" halign="center">
+          <cell><m>y</m></cell>
+          <cell><mathInput name="y0"><shortDescription>y value when t=0</shortDescription></mathInput></cell>
+          <cell><mathInput name="y1"><shortDescription>y value when t=1</shortDescription></mathInput></cell>
+          <cell><mathInput name="y2"><shortDescription>y value when t=2</shortDescription></mathInput></cell>
+          <cell><mathInput name="y3"><shortDescription>y value when t=3</shortDescription></mathInput></cell>
+          <cell><mathInput name="y4"><shortDescription>y value when t=4</shortDescription></mathInput></cell>
+        </row>
+      </tabular>
+    </table>
+  </div>
+  <!-- Both coordinates, button for curve -->
+  <div>
+    <p>
+      If we put these two coordinates together, than the point on our parametric curve will follow the <m>x</m>-value funtion horizontally and the <m>y</m>-value function vertically. Our point is at the normal Cartesian intersection of these coordinates!
+    </p>
+    <graph fixAxes xMin="-10" xMax="10" yMin="-17" yMax="3" size="medium">
+      <shortDescription>
+        A graph with a point on each axis with horizontal and vertical lines connecting those axis-points to a point in the coordinate plane. The horizontal axis is labeled x and the vertical axis is labeled y.
+      </shortDescription>
+      <xLabel><m>x</m></xLabel>
+      <yLabel><m>y</m></yLabel>
+      <point draggable="false" hide="!$VisCurve" styleNumber="10">($$xf($time), 0)</point>
+      <lineSegment endpoints="($$xf($time), 0) ($$xf($time), $$yf($time))" hide="!$VisCurve" styleNumber="13" endpointsDraggable="false"/>
+      <point draggable="false" hide="!$VisCurve" styleNumber="11">(0, $$yf($time))</point>
+      <lineSegment endpoints="(0, $$yf($time)) ($$xf($time), $$yf($time))" hide="!$VisCurve" styleNumber="14" endpointsDraggable="false"/>
+      <point draggable="false" styleNumber="12" layer="1">($$xf($time), $$yf($time))</point>
+      $f
+      <point styleNumber="6">($x0, $y0)</point>
+      <point styleNumber="6">($x1, $y1)</point>
+      <point styleNumber="6">($x2, $y2)</point>
+      <point styleNumber="6">($x3, $y3)</point>
+      <point styleNumber="6">($x4, $y4)</point>
+    </graph>
+    <p>
+      Can you visualize the curve being traced out by this point?
+    </p>
+    <booleanInput name="VisCurve" asToggleButton prefill="true">
+        <label>Show/Hide the Curve</label>
+      </booleanInput>
+  </div>
+</paginator>
+
+<paginatorControls paginator="$pages"
+  pageLabel="Step" 
+  nextLabel="Next Step" 
+  previousLabel="Previous Step"/>

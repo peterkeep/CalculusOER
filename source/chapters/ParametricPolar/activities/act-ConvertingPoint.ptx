@@ -1,0 +1,76 @@
+<activity xml:id="act-ConvertingPoint">
+    <title>Converting the Coordinates of a Point</title>
+    <introduction>
+        <p>
+            We're going to think about the two coordinate systems (and converting between them) by considering a point and collecting information. For simplicity, we'll visualize a point in the first quadrant.
+        </p>
+        <figure xml:id="fig-point">
+            <caption></caption>
+            <image source="./ParametricPolar/point.png" width="50%">
+                <shortdescription>A point in the first quadrant. There is a line connecting the origin with the point, and the horizontal and vertical components are shown as dashed lines, making a right triangle. The angle formed by the horizontal axis and the line to the point is labeled.</shortdescription>
+            </image>
+        </figure>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                If the point is written in Cartesian coordinates, <m>(x,y)</m>, label <m>x</m> and <m>y</m> in the image.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                If the point is written in polar coordinates, <m>(r,\theta)</m>, label <m>\theta</m> and <m>r</m> in the image.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Assume that we know the values of <m>x</m> and <m>y</m>. Come up with an equation linking <m>r</m>, <m>x</m>, and <m>y</m> in order for us to find the value of <m>r</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What equations do we have connecting the side lengths of a triangle like this one?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now come up with some equation linking <m>\theta</m>, <m>x</m>, and <m>y</m> in order for us to find the value of <m>\theta</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What kinds of trigonometric functions connect these three variables?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Now imagine that we know the values of <m>r</m> and <m>\theta</m> instead. Come up with an equation connecting <m>x</m>, <m>r</m>, and <m>\theta</m> in order for us to find the value of <m>x</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What kinds of trigonometric functions connect these two side lengths of this triangle?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Come up with an equation connecting <m>y</m>, <m>r</m>, and <m>\theta</m> in order for us to find the value of <m>y</m>.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                What kinds of trigonometric functions connect these two side lengths of this triangle?
+            </p>
+        </hint>
+    </task>
+</activity>

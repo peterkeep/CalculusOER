@@ -1,0 +1,56 @@
+<activity xml:id="act-FirstParametricCurve" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Our First Parametric Curve</title>
+    <introduction>
+        <p>
+            We'll begin by exploring the parametrically defined curve:
+            <md>
+                <mrow>x \amp = t^2-3t-4</mrow>
+                <mrow>y \amp = 1-t^2</mrow>
+            </md>
+            for <m>0 \leq t \leq 4</m>.
+        </p>
+        <p>
+            For each task, we'll use the following visualization:
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:2">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/FirstParametricCurve.doenet"/>
+            </slate>
+        </interactive>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                In Step 1, how does the graph of <m>x=t^2-3t-4</m> give us information about the horizontal movement of our parametric curve?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Fill in the table with the <m>x</m>-values at different values of <m>t</m>. Describe the horizontal motion of the parametric curve using this information.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                In Step 2, how does the graph of <m>y=1-t^2</m> give us information about the vertical movement of our parametric curve?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Fill in the table with the <m>y</m>-values at different values of <m>t</m>. Describe the vertical motion of the parametric curve using this information.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                In Step 3, confirm that the point follows the path you constructed. 
+            </p>
+        </statement>
+    </task>
+</activity>

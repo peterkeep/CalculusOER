@@ -1,0 +1,225 @@
+<setup>
+  <function name="f" variable="t" domain="[0,2pi]">
+    5cos(2t)
+  </function>
+  <function name="fAbs" variable="t">
+    abs($f)
+  </function>
+  <styleDefinition styleNumber="10" 
+    markerColor="red" 
+    markerOpacity="0.7"/>
+  <styleDefinition styleNumber="11" 
+    markerColor="green" 
+    markerOpacity="0.7"/>
+  <number name="style0">
+    <conditionalContent>
+      <case condition="$f0 > 0">11</case>
+      <case condition="$f0 < 0">10</case>
+      <else>6</else>
+    </conditionalContent>
+  </number>
+  <number name="style1">
+    <conditionalContent>
+      <case condition="$f1 > 0">11</case>
+      <case condition="$f1 < 0">10</case>
+      <else>6</else>
+    </conditionalContent>
+  </number>
+  <number name="style2">
+    <conditionalContent>
+      <case condition="$f2 > 0">11</case>
+      <case condition="$f2 < 0">10</case>
+      <else>6</else>
+    </conditionalContent>
+  </number>
+  <number name="style3">
+    <conditionalContent>
+      <case condition="$f3 > 0">11</case>
+      <case condition="$f3 < 0">10</case>
+      <else>6</else>
+    </conditionalContent>
+  </number>
+  <number name="style4">
+    <conditionalContent>
+      <case condition="$f4 > 0">11</case>
+      <case condition="$f4 < 0">10</case>
+      <else>6</else>
+    </conditionalContent>
+  </number>
+    <number name="style5">
+    <conditionalContent>
+      <case condition="$f5 > 0">11</case>
+      <case condition="$f5 < 0">10</case>
+      <else>6</else>
+    </conditionalContent>
+  </number>
+    <number name="style6">
+    <conditionalContent>
+      <case condition="$f6 > 0">11</case>
+      <case condition="$f6 < 0">10</case>
+      <else>6</else>
+    </conditionalContent>
+  </number>
+    <number name="style7">
+    <conditionalContent>
+      <case condition="$f7 > 0">11</case>
+      <case condition="$f7 < 0">10</case>
+      <else>6</else>
+    </conditionalContent>
+  </number>
+    <number name="style8">
+    <conditionalContent>
+      <case condition="$f8 > 0">11</case>
+      <case condition="$f8 < 0">10</case>
+      <else>6</else>
+    </conditionalContent>
+  </number>
+</setup>
+
+<p>
+  <em>Instructions:</em> Navigate through each step one at a time to slowly reveal the polar curve, <m>r = 5\cos(2\theta)</m> for <m>0\leq \theta \leq 2\pi</m>.
+</p>
+
+<slider name="t" from="0" to="2pi" step="0.01" showTicks="false">
+  <label><m>\theta</m></label>
+</slider>
+
+<paginator name="pages">
+  <!-- Cartesian plot -->
+  <div>
+    <p>Let's start by thinking about the Cartesian plot of the function, <m>f(\theta)=5\cos(2\theta)</m>.</p>
+
+    <graph xMin="-1" xMax="7" yMin="-6" yMax="6" xTickScaleFactor="pi/4"  fixAxes aspectRatio="2">
+      <shortDescription>
+        A graph of 5 cosine of 2 theta, oscillating between -5 and 5 between 0 and 2 pi. There is a point that moves with the slider, and points that show up at the coordinates input from the table.
+      </shortDescription>
+      $f
+      <!-- User input points -->
+      <point draggable="false" styleNumber="$style0">(0, $f0)</point>
+      <point draggable="false" styleNumber="$style1">(pi/4, $f1)</point>
+      <point draggable="false" styleNumber="$style2">(pi/2, $f2)</point>
+      <point draggable="false" styleNumber="$style3">(3pi/4, $f3)</point>
+      <point draggable="false" styleNumber="$style4">(pi, $f4)</point>
+      <!-- Sliding point -->
+      <point>($t, $$f($t))</point>
+    </graph>
+
+    <p>Fill in the table below using the function <m>f(\theta)</m>.</p>
+
+    <table suppressTableNameInTitle>
+       <tabular topBorder="medium" bottomBorder="medium" halign="center">
+         <row bottomBorder="minor">
+           <cell><m>\theta</m></cell>
+           <cell><m>0</m></cell>
+           <cell><m>\dfrac{\pi}{4}</m></cell>
+           <cell><m>\dfrac{\pi}{2}</m></cell>
+           <cell><m>\dfrac{3\pi}{4}</m></cell>
+           <cell><m>\pi</m></cell>
+         </row>
+         <row>
+           <cell><m>f(\theta)</m></cell>
+           <cell><mathInput name="f0"><shortDescription>f when theta equals 0</shortDescription></mathInput></cell>
+           <cell><mathInput name="f1"><shortDescription>f when theta equals pi over 4</shortDescription></mathInput></cell>
+           <cell><mathInput name="f2"><shortDescription>f when theta equals pi over 2</shortDescription></mathInput></cell>
+           <cell><mathInput name="f3"><shortDescription>f when theta equals 3 pi over 4</shortDescription></mathInput></cell>
+           <cell><mathInput name="f4"><shortDescription>f when theta equals pi</shortDescription></mathInput></cell>
+         </row>
+       </tabular>
+    </table>
+  </div>
+  <!-- Polar plot -->
+  <div>
+     <graph xMin="-6" xMax="6" yMin="-6" yMax="6" displayXAxisTicks="false" displayYAxisTicks="false" fixAxes>
+        <shortDescription>
+          The graph of a polar flower. It has 4 petals, each extending to 5 or negative 5 on the x and y axis. It looks like a four-leafed clover.
+        </shortDescription>
+        <!-- Grid -->
+        <repeatForSequence from="0" to="6" step="1" valueName="k">
+          <circle styleNumber="6" radius="$k" draggable="false"/>
+        </repeatForSequence>
+        <repeatForSequence from="0" to="6" step="1" valueName="k">
+          <line through="(0,0) (cos($k*pi/6), sin($k*pi/6))" draggable="false" styleNumber="6"/>
+        </repeatForSequence>
+        <!-- Previous points -->
+        <point draggable="false" styleNumber="$style0">($f0 * cos(0), $f0 * sin(0))</point>
+        <point draggable="false" styleNumber="$style1">($f1 * cos(pi/4), $f1 * sin(pi/4))</point>
+        <point draggable="false" styleNumber="$style2">($f2 * cos(pi/2), $f2 * sin(pi/2))</point>
+        <point draggable="false" styleNumber="$style3">($f3 * cos(3pi/4), $f3 * sin(3pi/4))</point>
+        <point draggable="false" styleNumber="$style4">($f4 * cos(pi), $f4 * sin(pi))</point>
+       <point draggable="false" styleNumber="$style5">($f5 * cos(5pi/4), $f5 * sin(5pi/4))</point>
+        <point draggable="false" styleNumber="$style6">($f6 * cos(3pi/2), $f6 * sin(3pi/2))</point>
+        <point draggable="false" styleNumber="$style7">($f7 * cos(7pi/4), $f7 * sin(7pi/4))</point>
+        <point draggable="false" styleNumber="$style8">($f8 * cos(2pi), $f8 * sin(2pi))</point>
+       <!-- Curve -->
+       <curve parMin="0" parMax="2pi" variable="t">
+         ($$f(t) * cos(t), $$f(t) * sin(t))
+       </curve>
+       <point draggable="false">
+         ($$f($t) * cos($t), $$f($t) * sin($t))
+       </point>
+     </graph>
+
+    <p>Fill in the table below using the polar function.</p>
+
+    <table suppressTableNameInTitle>
+       <tabular topBorder="medium" bottomBorder="medium" halign="center">
+         <row bottomBorder="minor">
+           <cell><m>\theta</m></cell>
+           <cell><m>\dfrac{5\pi}{4}</m></cell>
+           <cell><m>\dfrac{3\pi}{2}</m></cell>
+           <cell><m>\dfrac{7\pi}{4}</m></cell>
+           <cell><m>2\pi</m></cell>
+         </row>
+         <row>
+           <cell><m>r</m></cell>
+           <cell><mathInput name="f5"><shortDescription>f when theta equals 5 pi over 4</shortDescription></mathInput></cell>
+           <cell><mathInput name="f6"><shortDescription>f when theta equals 3 pi over 2</shortDescription></mathInput></cell>
+           <cell><mathInput name="f7"><shortDescription>f when theta equals 7 pi over 4</shortDescription></mathInput></cell>
+           <cell><mathInput name="f8"><shortDescription>f when theta equals 2 pi</shortDescription></mathInput></cell>
+         </row>
+       </tabular>
+    </table>
+  </div>
+  <!-- Compare polar plot with absolute value -->
+  <div>
+    <p>
+      Use the graph display options and slider to investigate the graph of the polar curve, <m>r=5\cos(\theta)</m>.
+      </p>
+      <choiceInput selectMultiple>
+        <label>Graph display options:</label>
+        <choice preSelect name="showReg">Show <m>r=5\cos(2\theta)</m></choice>
+        <choice name="showAbs">Show <m>r=|5\cos(2\theta)|</m></choice>
+        <choice name="showLines">Label the function outputs</choice>
+      </choiceInput>
+      
+
+      <graph xMin="-6" xMax="6" yMin="-6" yMax="6" displayXAxisTicks="false" displayYAxisTicks="false" fixAxes>
+        <shortDescription>
+          The graph of a polar flower. It has 4 petals, each extending to 5 or negative 5 on the x and y axis. It looks like a four-leafed clover.
+        </shortDescription>
+        <!-- Grid -->
+        <repeatForSequence from="0" to="6" step="1" valueName="k">
+          <circle styleNumber="6" radius="$k" draggable="false"/>
+        </repeatForSequence>
+        <repeatForSequence from="0" to="6" step="1" valueName="k">
+          <line through="(0,0) (cos($k*pi/6), sin($k*pi/6))" draggable="false" styleNumber="6"/>
+        </repeatForSequence>
+        <!-- Curve -->
+        <curve variable="t" parMin="0" parMax="$t" hide="!$showReg.selected">
+          ($f * cos(t), $f * sin(t))
+        </curve>
+        <point name="P" hide="!$showReg.selected">($$f($t) * cos($t), $$f($t) * sin($t))</point>
+        <curve variable="t" parMin="0" parMax="$t" styleNumber="5" lineStyle="dashed" lineWidth="3" hide="!$showAbs.selected">
+          ($fAbs * cos(t), $fAbs * sin(t))
+        </curve>
+        <point name="PAbs" hide="!$showAbs.selected" styleNumber="5">($$fAbs($t) * cos($t), $$fAbs($t) * sin($t))</point>
+        <lineSegment endpoints="(0,0) $P"  lineStyle="dotted" hide="!($showReg.selected and $showLines.selected)" draggable="false"/>
+        <lineSegment endpoints="(0,0) $PAbs" styleNumber="5" lineWidth="3" lineStyle="dotted" hide="!($showAbs.selected and $showLines.selected)" draggable="false"/>
+      </graph>
+  </div>
+</paginator>
+
+<paginatorControls paginator="$pages"
+  pageLabel="Step" 
+  nextLabel="Next Step" 
+  previousLabel="Previous Step"/>

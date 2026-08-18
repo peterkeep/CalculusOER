@@ -1,0 +1,88 @@
+<setup>
+  <function name="xf" variable="t">
+    $xt
+  </function>
+  <function name="yf" variable="t">
+    $yt
+  </function>
+  <curve name="Par" variable="t" parMin="$a" parMax="$b">
+    ($$xf(t), $$yf(t))
+  </curve>
+</setup>
+
+<p>
+  <em>Instructions:</em> Inpuit a parametric curve and the proposed representation of the same curve with the parameter eliminated.
+</p>
+<sideBySide widths="47% 47%">
+<section boxed>
+  <title>Parametric Curve</title>
+  <p>
+    Function for <m>x</m>: <br/>
+    <mathInput name="xt"><label><m>x = </m></label>sqrt(t+1)</mathInput>
+  </p>
+
+  <p>
+    Function for <m>y</m>: <br/>
+    <mathInput name="yt"><label><m>y = </m></label>t/3-1</mathInput>
+  </p>
+  <p>
+    Interval for <m>t</m>: <br/>
+    <mathInput name="a"><shortDescription>lower bound for t</shortDescription>0</mathInput> <m> \leq t \leq</m> <mathInput name="b"><shortDescription>upper bound for t</shortDescription>15</mathInput>
+  </p>
+</section>
+<section boxed>
+  <title>Eliminate the Parameter</title>
+    <choiceInput name="input">
+      <label>Variable setup:</label>
+      <choice preSelect><m>y</m> as a function output of <m>x</m>.</choice>
+      <choice><m>x</m> as a function output of <m>y</m>.</choice>
+    </choiceInput>
+    <mathInput name="fx" hide="$input.selectedIndex=2"><label><m>y=</m></label></mathInput>
+  
+    <mathInput name="fy" hide="$input.selectedIndex=1"><label><m>x=</m></label></mathInput>
+  <p hide="$input.selectedIndex=2">
+    <mathInput name="ax"><shortDescription>lower bound for x</shortDescription>0</mathInput> <m> \leq x \leq</m> <mathInput name="bx"><shortDescription>upper bound for x</shortDescription>10</mathInput>
+  </p>
+  <p hide="$input.selectedIndex=1">
+    <mathInput name="ay"><shortDescription>lower bound for y</shortDescription>0</mathInput> <m> \leq y \leq</m> <mathInput name="by"><shortDescription>upper bound for y</shortDescription>10</mathInput>
+  </p>
+  
+</section>
+  </sideBySide>
+
+<sideBySide widths="47% 47%">
+  <figure suppressFigureNameInCaption>
+    <caption>
+      Graph of the parametric curve: 
+      <md>
+        <mrow>x \amp = $xt</mrow>
+        <mrow>y \amp = $yt</mrow>
+      </md>
+      for <m>$a \leq t \leq $b</m>.
+    </caption>
+    <graph >
+      <shortDescription>Graph of the parametric curve.</shortDescription>
+      $Par
+    </graph>
+  </figure>
+
+  <figure suppressFigureNameInCaption>
+    <caption>
+      Graph of the curve:
+      <me hide="$input.selectedIndex=2">
+        y = $fx
+      </me>
+      <me hide="$input.selectedIndex=1">
+        x = $fy
+      </me>
+      for <m hide="$input.selectedIndex=2">$ax \leq x \leq $bx</m><m hide="$input.selectedIndex=1">$ay \leq y \leq $by</m>.
+    </caption>
+    <graph>
+      <shortDescription>Graph of the user input function above.</shortDescription>
+      <function hide="$input.selectedIndex=2" domain="[$ax, $bx]">$fx</function>
+      <curve flipFunction hide="$input.selectedIndex=1" variable="y" >
+        <function domain="[$ay, $by]">$fy</function>
+      </curve>
+    </graph>
+  </figure>
+</sideBySide>

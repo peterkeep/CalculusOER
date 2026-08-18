@@ -1,0 +1,75 @@
+<activity xml:id="act-PolarFlowerSlope" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Slopes on a Polar Flower</title>
+    <introduction>
+        <p>
+            Consider the polar flower defined by
+            <me>r=2\sin(3\theta)</me>
+            for <m>0\leq \theta \leq \pi</m>. For this activity, refer to the graphing utility below.
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:2">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/PolarFlowerSlopes.doenet"/>
+                </slate>
+            </interactive>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                How many points on this polar flower do you think have horizontal tangent lines?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How many points on this polar flower do you think have vertical tangent lines?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+               Make a conjecture about the slope of the tangent line when <m>\theta = \dfrac{5\pi}{6}</m> by looking at the graph only.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find an expression for <m>\dydx</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\dydx \amp  = \frac{\frac{d}{d\theta}\left(2\sin(3\theta)\sin(\theta)\right)}{\frac{d}{d\theta}\left(2\sin(3\theta)\cos(\theta)\right)}</mrow>
+                    <mrow> \amp = \frac{2\sin(3\theta)\cos(\theta) + 6\cos(3\theta)\sin(\theta)}{6\cos(3\theta)\cos(\theta)-2\sin(3\theta)\sin(\theta)}</mrow>
+                    <mrow> \amp = \frac{\sin(3\theta)\cos(\theta) + 3\cos(3\theta)\sin(\theta)}{3\cos(3\theta)\cos(\theta)-\sin(3\theta)\sin(\theta)}</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Pick one of the values of <m>\theta</m> where you thought this curve might have a horizontal or vertical tangent line. Evaluate <m>\dydx</m> at that value, and check to see if you were correct.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Evaluate <m>\dydx</m> when <m>\theta=\dfrac{5\pi}{6}</m>. How close was your guess at the slope?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <md>
+                    <mrow>\dydx\bigg|_{\theta = \frac{5\pi}{6}} \amp = \frac{\sin\left(\frac{15\pi}{6}\right)\cos\left(\frac{5\pi}{6}\right) + 3\cos\left(\frac{15\pi}{6}\right)\sin\left(\frac{5\pi}{6}\right)}{3\cos\left(\frac{15\pi}{6}\right)\cos\left(\frac{5\pi}{6}\right)-\sin\left(\frac{15\pi}{6}\right)\sin\left(\frac{5\pi}{6}\right)}</mrow>
+                    <mrow> \amp= \frac{-\frac{\sqrt{3}}{2}}{-\frac{1}{2}} </mrow>
+                    <mrow> \amp = \sqrt{3}</mrow>
+                </md>
+            </p>
+        </solution>
+    </task>
+</activity>

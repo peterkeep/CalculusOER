@@ -1,0 +1,98 @@
+<activity xml:id="act-CircleExploration" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Explore Some Curves</title>
+    <introduction>
+        <p>
+            We'll start off with a family of parametric curves, where we can change the functions and hopefully predict some of the curve's behavior.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Let's start by thinking about the parametric curve:
+                <md>
+                    <mrow>x \amp = \cos(t) </mrow>
+                    <mrow>y \amp = \sin(t)</mrow>
+                </md>
+                for <m>0\leq t \leq 2\pi</m>.
+            </p>
+            <p>
+                Before you visualize any of this, think about the behavior of the <m>x</m>-values and <m>y</m>-values. What do you think they'll do? What will this curve look like?
+            </p>
+        </statement>
+        <statement>
+            <p>
+                Visualize the movement of the <m>x</m>-values, the <m>y</m>-values, and the complete parametric curve using the graphing tool below.
+            </p>
+            <interactive platform="doenetml" width="95%" aspect="1:2">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/CircleExploration.doenet"/>
+                </slate>
+            </interactive>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What do you think would happen when we multiply the function for <m>x</m> by a factor of 3?
+            </p>
+            <p>
+                In the graphing tool above, change the function for <m>x</m> to:
+                <me>x = 3\cos(t)</me>.
+                Explain the changes you're seeing.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What do you think would happen when we multiply the input of the cosine function by 3?
+            </p>
+            <p>
+                In the graphing tool above, change the function for <m>x</m> to:
+                <me>x = \cos(3t)</me>.
+                Explain the changes you're seeing.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Explore the parametric curve:
+                <md>
+                    <mrow>x \amp = \cos(3t)</mrow>
+                    <mrow>y \amp = \sin(2t)</mrow>
+                </md>
+                for <m>0 \leq t \leq 2\pi</m>.
+            </p>
+            <p>
+                Explain to yourself why the curve looks the way that it does.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Create a parametric curve for a circle, but reverse the orientation.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Create a parametric curve for a circle centered at the point <m>(2,-1)</m> with radius <m>3</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What do you think the following parametric curve will look like:
+                <md>
+                    <mrow>x \amp = \cos^3(t)</mrow>
+                    <mrow>y \amp = \sin(t)</mrow>
+                </md>
+                for <m>0 \leq t \leq 2\pi</m>?
+            </p>
+        </statement>
+    </task>
+</activity>

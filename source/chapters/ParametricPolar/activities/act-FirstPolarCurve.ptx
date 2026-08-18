@@ -1,0 +1,68 @@
+<activity xml:id="act-FirstPolarCurve" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>First Polar Curve</title>
+    <introduction>
+        <p>
+            We'll begin by exploring the polar curve, <m>r=4\cos^2(\theta)</m> for <m>0\leq \theta \leq 2\pi</m>.
+        </p>
+        <p>
+            For each task, we'll use the following visualization:
+        </p>
+         <interactive platform="doenetml" width="95%" aspect="1:2">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="../doenet/FirstPolarCurve.doenet"/>
+            </slate>
+        </interactive>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                In Step 1, explain the shape and behavior of the function based on your knowledge of trigonometric functions. How do you know, based on the function being specifically <m>4\cos^2(\theta)</m> that it will look like this?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Why does this function oscillate between 0 and 4? Why did you know where the zeros would be? 
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Fill in the table with the function outputs <m>f(\theta)</m> for different values of <m>\theta</m>.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                In Step 2, why do the points that we filled in end up where they are on the polar curve? Explain how we use the coordinates you input in the previous step to plot these polar points.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Explain why the polar point has this shape/behavior. Refer back to explanation of the Cartesian curve in Step 1, and explain how these graphical features manifest themselves in the polar curve.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                How do we visualize the oscillation between 0 and 4 in this context? What is happening at the zeros of the function?
+            </p>
+        </hint>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Fill in the table with the <m>r</m> outputs at different values of <m>\theta</m>. Describe why these points are plotted where they are, including the quadrants and distances from the origin/pole.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Why do the two points <m>(4, 0)</m> and <m>(4, 2\pi)</m> seem to overlap in the graph? Why does it look like this is only a single point?
+            </p>
+        </statement>
+    </task>
+</activity>

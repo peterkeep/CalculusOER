@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-PolarCalculus" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Calculus with Polar Curves</title>
+    <introduction>
+        <p>
+            In one sense, we don't have much to do in this section. Since we can think of polar functions as parameterized Cartesian functions, we can rely on the results from <xref ref="sec-ParametricCalculus" text="type-global-title"/> for much of this! In fact, that's exactly what we'll do.
+        </p>
+        <p>
+            When we consider a polar function <m>r=f(\theta)</m>, we'll also think of it as a parametric one:
+            <md>
+                <mrow>x \amp = f(\theta)\cos(\theta)</mrow>
+                <mrow>y \amp = f(\theta)\sin(\theta)</mrow>
+            </md>
+            Slopes and arc lengths will follow pretty directly from our results for parametric curves, but we'll need to think about the areas bounded by polar curves a bit more.
+        </p>
+    </introduction>
+    <subsection xml:id="subsec-PolarSlopes">
+        <title>Slopes of Tangent Lines</title>
+        <xi:include href="./activities/act-PolarFlowerSlope.ptx" />
+    </subsection>
+    <subsection xml:id="subsec-PolarArcLengths">
+        <title>Arc Lengths</title>
+        <p>
+            We could, similarly, dive right into our <xref ref="def-ParametricArcLength" text="title"/> formula, but let's pause for a second. It might get a bit messy working with each specific <m>\frac{dx}{d\theta}</m> and <m>\frac{dy}{d\theta}</m>, so we'll start with this in a more general sense.
+        </p>
+        <p>
+            Consider some polar function named <m>r</m>.
+        </p>
+        <p>
+            We'll use the product rule to find the derivatives needed for the arc length formula:
+            <md>
+                <mrow>\frac{dx}{d\theta} \amp = \frac{d}{d\theta}\left(r\cos(\theta)\right)</mrow>
+                <mrow> \amp = r'\cos(\theta)-r\sin(\theta)</mrow>
+                <mrow>\frac{dy}{d\theta} \amp = \frac{d}{d\theta}\left(r\sin(\theta)\right)</mrow>
+                <mrow> \amp = r'\sin(\theta)+r\cos(\theta)</mrow>
+            </md>
+            Let's now find use these in our arc length formula!
+            <md>
+                <mrow>\ell \amp = \int_{\theta=\alpha}^{\theta=\beta} \sqrt{\left( r'\cos(\theta)-r\sin(\theta) \right)^2 + \left( r'\sin(\theta)+r\cos(\theta) \right)^2}\;d\theta</mrow>
+                <mrow> \amp = \int_{\theta=\alpha}^{\theta=\beta} \sqrt{ (r'\cos(\theta))^2 - 2rr'\sin(\theta)\cos(\theta) + (r\sin(\theta))^2 + (r'\sin(\theta))^2 + 2rr'\sin(\theta)\cos(\theta) + (r\cos(\theta))^2 }\;d\theta</mrow>
+                <mrow> \amp =  \int_{\theta=\alpha}^{\theta=\beta} \sqrt{ r^2(\sin^2(\theta)+\cos^2(\theta)) + (r')^2(\sin^2(\theta)+\cos^2(\theta)) }\;d\theta</mrow>
+                <mrow> \amp = \int_{\theta=\alpha}^{\theta=\beta} \sqrt{r^2 + (r')^2}\;d\theta</mrow>
+            </md>
+        </p>
+        <definition xml:id="def-PolarArcLength">
+            <title>Polar Arc Length</title>
+            <statement>
+                <p>
+                    If <m>r(\theta)</m> is a continuous function on <m>[\alpha, \beta]</m> and differentiable on <m>(\alpha,\beta)</m>, then the length of the polar curve <m>r(\theta)</m> between <m>\theta=\alpha</m> ,and <m>\theta=\beta</m> is:
+                    <me>
+                        \ell = \int_{\theta=\alpha}^{\theta=\beta}\sqrt{r^2 + \left(\frac{dr}{d\theta}\right)^2}\;d\theta
+                    </me>.
+                </p>
+            </statement>
+        </definition>
+        <example>
+            <title>Petal Length</title>
+            <introduction>
+                <p>
+                    For the polar graphs that we've been calling <q>Polar Flowers,</q> we can call each loop that the polar curve makes (between the points where it crosses the pole) <term>petals</term>.
+                </p>
+                <p>
+                    We'll consider, again, the polar flower <m>r=2\sin(3\theta)</m>.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Find the interval of <m>\theta</m> that defines the first petal of the polar flower.
+                    </p>
+                </statement>
+                <hint>
+                    <p>
+                        We're really thinking about where <m>2\sin(3\theta) = 0</m>.
+                    </p>
+                </hint>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Set up an integral for the length of the curve tracing out that first petal.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <md>
+                            <mrow>\ell \amp = \int_{\theta=0}^{\theta = \pi/3} \sqrt{r^2 + \left(\frac{dr}{d\theta}\right)^2}\;d\theta </mrow>
+                            <mrow> \amp = \int_{\theta=0}^{\theta = \pi/3} \sqrt{(2\sin(3\theta))^2 + (6\cos(3\theta))^2}\;d\theta</mrow>
+                            <mrow> \amp = \int_{\theta=0}^{\theta = \pi/3} \sqrt{4\sin^2(3\theta) + 36\cos^2(3\theta)}\;d\theta</mrow>
+                        </md>
+                    </p>
+                </solution>
+            </task>
+        </example>
+    </subsection>
+    <subsection xml:id="subsec-PolarAreas">
+        <title>Areas Bounded by Curves</title>
+        <p>
+            The last calculus topic we'll visit in this section will be one to reinforce, for one last time, an important theme: the theme of accumulation.
+        </p>
+        <p>
+            We're going to go back to our slice-and-sum process to build a formula for calculating a polar area. 
+        </p>
+        <xi:include href="./activities/act-PolarArea.ptx" />
+        <example>
+            <title>Petal Area</title>
+            <statement>
+                <p>
+                    Let's consider, one last time, the polar flower <m>r=2\sin(3\theta)</m>.
+                </p>
+                <p>
+                    Set up and evaluate an integral calculate the area bounded inside one of the petals of the polar flower.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>A \amp = \frac{1}{2}\int_{\theta=0}^{\theta=\pi/3} \left(2\sin(3\theta)\right)^2\;d\theta </mrow>
+                        <mrow> \amp= \frac{1}{2}\int_{\theta=0}^{\theta=\pi/3} \left(4\sin^2(3\theta)\right)\;d\theta</mrow>
+                        <mrow> \amp = \int_{\theta=0}^{\theta=\pi/3} \left(1-\cos(3\theta)\right)\;d\theta</mrow>
+                        <mrow> \amp = \left(\theta + \frac{1}{3}\sin(3\theta)\right)\bigg|_{\theta=0}^{\theta=\pi/3}</mrow>
+                        <mrow> \amp = \frac{\pi}{3}</mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+</section>

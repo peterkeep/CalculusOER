@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-PolarCurves" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Polar Curves</title>
+    <introduction>
+        <p>
+            It's time for another small deviation to think about functions, again. This time, we're going to specifically think about graphs of functions and how we visualize things.
+        </p>
+        <xi:include href="./activities/act-GraphRefresher.ptx" />
+        <p>
+            We'll move forward in a familiar way. Just like in <xref ref="sec-ParametricCurves"/>, we'll ask a <q>What if...?</q> question to alter some basic ideas about how we graph things, and think about functions in a slightly different way.
+        </p>
+    </introduction>
+    <subsection xml:id="subsec-PolarWhatIf">
+        <title>What If...?</title>
+        <p>
+            <em>What if, instead of <m>x</m> and <m>y</m> representing the horizontal and vertical locations of our point, we thought about a point's location using a direction and a distance?</em>
+        </p>
+        <p>
+            Instead of thinking about a point, <m>(x,y)</m>, as the location described on a rectangular grid, we might think about a point described on a circular grid: the coordinates might describe a direction (an angle, measured in radians) and a distance from the origin.
+        </p>
+        <p>
+            This isn't a new way of describing locations! While we might, in a city like Chicago, describe the location of something using rectangular coordinates (<q>My favorite sushi place is 7 blocks north and 3 block east of here.</q>), this isn't the only way to describe a location. In the middle of a forest, for instance, these directions wouldn't be helpful. Instead, we might point someone in the right direction and tell them how far away something is (<q>There's a nice spot to forage for mushrooms a half a mile to the southwest of here.</q>).
+        </p>
+        <definition xml:id="def-PolarCoordinates">
+            <title>Polar Coordinates</title>          
+            <statement>
+                <p>
+                    A point <m>(r, \theta)</m> is written in the <term>polar coordinate system</term>, where <m>r</m> represents the distance between the point and the origin (called the <term>pole</term>) and <m>\theta</m> represents the angle measured to the positive horizontal axis and a ray from the pole passing through the point.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            We can practice visualizing these points using the graphing utility below.
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:2">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="./doenet/PolarPoint.doenet"/>
+            </slate>
+        </interactive>
+        <p>
+            We will mostly be interested in thinking about functions defined using this new coordinate system.
+        </p>
+        <definition xml:id="def-PolarCurve">
+            <title>Polar Curve</title>
+            <statement>
+                <p>
+                    A <term>polar curve</term> is a curve defined by the function <m>r=f(\theta)</m>, where <m>\theta</m> is the input/independent variable and <m>r</m> is the output/dependent variable.
+                </p>
+            </statement>
+        </definition>
+    </subsection>
+    <subsection xml:id="subsec-ExploringPolarCoordinates">
+        <title>Exploring Polar Coordinates</title>
+        <p>
+            We'll start with a small example to try to understand more about how we can visualize polar curves.
+        </p>
+        <xi:include href="./activities/act-FirstPolarCurve.ptx" />
+        <p>
+            One thing to note, and focus on more closely, is our use of the word <q>distance</q> when we defined <m>r</m>. Our typical understanding of distance is that this is a non-negative measurement. In <xref ref="act-FirstPolarCurve"/> , we looked at a non-negative function, so we didn't have to consider what might happen when our function has negative outputs. In order to give ourselves more flexibility in this coordinate system, let's consider a new function<mdash/>one with both positive and negative outputs.
+        </p>
+        <xi:include href="./activities/act-PolarFlower.ptx" />
+        <p>
+            This should be a relatively intuitive extension of our idea of <q>distance.</q> When our a polar point has a negative value of <m>r</m>, the point is reflected through the pole (the origin).
+        </p>
+        <note xml:id="note-ManyRepresentations">
+            <title>Many Representations of One Point</title>
+            <p>
+                We've seen now that a single point can be represented in many ways!
+                <ol>
+                    <li>
+                        <p>
+                            Polar points <m>(r,\theta)</m> and <m>(r,\theta + 2k\pi)</m>, where <m>k</m> is some integer, will end up looking identical.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Polar points <m>(r, \theta)</m> and <m>(-r, \theta+(2k+1)\pi)</m>, where <m>k</m> is some integer, will end up looking identical.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </note>
+        <p>
+            Before moving on, it might be nice to get more familiarity with polar plots of curves. Use the graphing utility below to look at different curves and compare the Cartesian and polar plots.
+        </p>
+        <interactive platform="doenetml" width="95%" aspect="1:2">
+            <slate surface="doenetml">
+                <xi:include parse="text" href="./doenet/PolarCartesianCurveComparison.doenet"/>
+            </slate>
+        </interactive>
+    </subsection>
+    <subsection xml:id="subsec-ConvertingCoordinateSystems">
+        <title>Converting Between Coordinate Systems</title>
+        <p>
+            When we thought about <xref ref="sec-ParametricCurves" text="title"/>, we used a technique called <xref ref="subsec-EliminatingParameter" text="title"/> to write a parametric curve in a more standard format, <m>y=f(x)</m>. It seems reasonable to come up with a way of converting a polar curve to Cartesian one, as well.
+        </p>
+        <p>
+            Before we tackle this, we'll focus on converting the coordinates of a single point: we'll see how we can write the coordinates of a polar point in the Cartesian coordinate system and the coordinates of a Cartesian point in the polar coordinate system.
+        </p>
+        <xi:include href="./activities/act-ConvertingPoint.ptx" />
+        <p>
+            This small triangle exploration gives us a lot of traction! We now have a collection of formulas to help us convert the coordinates of a point back and forth between the Cartesian coordinate system and the polar coordinate system.
+        </p>
+        <theorem xml:id="thm-ConvertingCoordinates">
+            <title>Polar/Cartesian Coordinate Conversion</title>
+            <statement>
+                <p>
+                    For a point <m>(r,\theta)</m> in the polar coordinate system, the corresponding Cartesian point <m>(x,y)</m> can be written where:
+                    <md>
+                        <mrow>x \amp = r\cos(\theta)</mrow>
+                        <mrow>y \amp = r\sin(\theta)</mrow>
+                    </md>
+                </p>
+                <p>
+                    For a point <m>(x,y)</m> in the Cartesian coordinate system, a corresponding polar point <m>(r,\theta)</m> can be written where:
+                    <md>
+                        <mrow>\tan(\theta) \amp = \frac{y}{x}</mrow>
+                        <mrow>r^2 \amp = x^2 + y^2</mrow>
+                    </md>
+                </p>
+            </statement>
+        </theorem>
+        <note xml:id="note-MultiplePolar">
+            <title>Be Careful Finding Polar Coordinates</title>
+            <p>
+                We saw in <xref ref="note-ManyRepresentations"/> that polar points can be written in an infinite number of ways, and so we need to be careful while solving for <m>\theta</m> and <m>r</m> if we are given the Cartesian coordinates <m>x</m> and <m>y</m>.
+                <ul>
+                    <li>
+                        <p>
+                            Note that <m>\theta = \tan^{-1}\left(\frac{y}{x}\right)</m> will only give values of <m>\theta</m> in the interval <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Note that <m>r=\sqrt{x^2 + y^2}</m> will only ever give values of <m>r</m> in <m>[0,\infty)</m>.
+                        </p>
+                    </li>
+                </ul>
+                For a Cartesian point in the second or third quadrant, we can either change the value of <m>\theta</m> to make sure it is pointing in the correct direction, or change the sign on <m>r</m> to reflect it back into the correct quadrant.
+            </p>
+        </note>
+        <xi:include href="./activities/act-ConvertingCoordinates.ptx" />
+        <p>
+            Let's finish this section with one last note. In thinking about converting the coordinates of a single point, we've actually come up with a way of converting functions!
+        </p>
+        <p>
+            For a polar function <m>r=f(\theta)</m>, we can use <xref ref="thm-ConvertingCoordinates"/> to write a parametrically defined curve:
+            <md>
+                <mrow>x \amp = f(\theta)\cos(\theta)</mrow>
+                <mrow>y \amp = f(\theta)\sin(\theta)</mrow>
+            </md>
+            In general, eliminating the parameter to write this as a more standard <m>y=g(x)</m> is a difficult, if even possible, task.
+        </p>
+    </subsection>
+</section>
