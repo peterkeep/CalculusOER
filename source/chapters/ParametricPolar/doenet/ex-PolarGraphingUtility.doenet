@@ -1,0 +1,79 @@
+<setup>
+  <curve name="pol" variable="t" parMin="0" parMax="$b">
+    ($f*cos(t), $f*sin(t))
+  </curve>
+  <point name="polP" draggable="false">
+    ($$f($t) * cos($t), $$f($t) * sin($t))
+  </point>
+  <function name="f" variable="t" domain="[0,$b]" variable="theta">$r</function>
+  <point name="P" draggable="false">
+    ($t, $$f($t))
+  </point>
+</setup>
+
+<p>
+  <em>Instructions:</em> Input a function to investigate polar plot. Use the table below to plot some points on the curve.
+</p>
+
+<mathInput name="r"><label><m>r=</m></label></mathInput> on <mathInput name="b"><label><m>0 \leq \theta \leq</m></label>2pi</mathInput>
+
+<p>Use the slider to move the point on each curve.</p>
+
+<slider name="t" initialValue="0" from="0" to="$b" step="0.001" showTicks="false"><label><m>\theta</m></label></slider>
+
+<figure suppressFigureNameInCaption>
+  <caption>Polar plot of <m>r=$f</m>.</caption>
+  <graph xMin="-3" xMax="3" yMin="-3" yMax="3" displayXAxisTicks="false" displayYAxisTicks="false">
+    <shortDescription>
+      The polar plot of the function on the interval. There is a point that moves along the curve with the slider. There is a line connecting the pole/origin labeled r and the angle from the horizontal axis to that line is labeled theta.
+    </shortDescription>
+    <!-- Grid -->
+    <repeatForSequence from="0" to="20" step="1" valueName="k">
+      <circle styleNumber="6" radius="$k" draggable="false"/>
+    </repeatForSequence>
+    <repeatForSequence from="0" to="6" step="1" valueName="k">
+      <line through="(0,0) (cos($k*pi/6), sin($k*pi/6))" draggable="false" styleNumber="6"/>
+    </repeatForSequence>
+    $polP
+    <curve parMin="0" parMax="$b" variable="t">
+      ($$f(t) * cos(t), $$f(t) * sin(t))
+    </curve>
+    <lineSegment endpoints="(0,0) $polP" draggable="false" lineStyle="dashed" lineWidth="2"/>
+    <curve variable="t" parMin="0" parMax="$t" styleNumber="2">
+      ((0.25 + 0.05*t) * cos(t), (0.25 + 0.05*t) * sin(t))
+    </curve>
+    <label anchor="((0.5 + 0.05*$t/2) * cos($t/1.5), (0.5 + 0.05*$t/1.5) * sin($t/1.5))" hide="$t=0"><m>\theta</m></label>
+    <point name="oppP" hide="$$f($t) >= 0" styleNumber="5">
+      (-$$f($t) * cos($t), -$$f($t) * sin($t))
+    </point>
+    <label anchor="($polP.x / 2+0.05, $polP.y / 2+0.05)" positionFromAnchor="right"><m>r</m></label>
+    <lineSegment endpoints="(0,0) $oppP" draggable="false" styleNumber="5" hide="$$f($t) >=0" lineStyle="dashed" lineWidth="2"/>
+    <!-- Points -->
+    <point styleNumber="6">($r1 * cos($t1), $r1 * sin($t1))</point>
+    <point styleNumber="6">($r2 * cos($t2), $r2 * sin($t2))</point>
+    <point styleNumber="6">($r3 * cos($t3), $r3 * sin($t3))</point>
+    <point styleNumber="6">($r4 * cos($t4), $r4 * sin($t4))</point>
+    <point styleNumber="6">($r5 * cos($t5), $r5 * sin($t5))</point>
+  </graph>
+</figure>
+
+<table suppressTableNameInTitle>
+  <tabular topBorder="medium" bottomBorder="medium" halign="center">
+     <row bottomBorder="minor">
+      <cell><m>\theta</m></cell>
+      <cell><mathInput name="t1"><shortDescription>first theta value</shortDescription></mathInput></cell>
+      <cell><mathInput name="t2"><shortDescription>second theta value</shortDescription></mathInput></cell>
+      <cell><mathInput name="t3"><shortDescription>third theta value</shortDescription></mathInput></cell>
+      <cell><mathInput name="t4"><shortDescription>fourth theta value</shortDescription></mathInput></cell>
+      <cell><mathInput name="t5"><shortDescription>fifth theta value</shortDescription></mathInput></cell>
+    </row>
+    <row>
+      <cell><m>r</m></cell>
+      <cell><mathInput name="r1"><shortDescription>first r value</shortDescription></mathInput></cell>
+      <cell><mathInput name="r2"><shortDescription>second r value</shortDescription></mathInput></cell>
+      <cell><mathInput name="r3"><shortDescription>third r value</shortDescription></mathInput></cell>
+      <cell><mathInput name="r4"><shortDescription>fourth r value</shortDescription></mathInput></cell>
+      <cell><mathInput name="r5"><shortDescription>fifth r value</shortDescription></mathInput></cell>
+    </row>
+  </tabular>
+</table>

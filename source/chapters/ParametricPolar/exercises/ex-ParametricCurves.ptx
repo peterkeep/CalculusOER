@@ -1,0 +1,176 @@
+<exercises xml:id="ex-ParametricCurves" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <exercise>
+        <statement>
+            <p>
+                Explain how a curve written in parametric form is different than one written in standard function notation.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the following parametric curves, plot the curves in the graphing utility below. Then, find at least 5 different points on the curve, plot them, and describe the curve.
+            </p>
+            <interactive platform="doenetml" width="95%" aspect="1:1">
+                <slate surface="doenetml">
+                    <xi:include parse="text" href="../doenet/ex-ParametricGraphingUtility.doenet"/>
+                </slate>
+            </interactive>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\begin{array}{l}
+                        x=t-4\\
+                        y=3+t-t^2
+                        \end{array}
+                    </m> for <m>0\leq t\leq 10</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\begin{array}{l}
+                        x = t+3\\
+                        y = 5-2t
+                        \end{array}
+                    </m> for <m>0\leq t\leq 5</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\begin{array}{l}
+                        x=5\cos^2(t)\\
+                        y=5\sin^2(t)
+                        \end{array}
+                    </m> for <m>0\leq t\leq 2\pi</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\begin{array}{l}
+                        x=\sqrt{t+4}\\
+                        y=5t+1
+                        \end{array}
+                    </m> for <m>0\leq t\leq 5</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Eliminate the parameter, <m>t</m>, in each of the parametric curves, expressing the curve either as a function <m>y=f(x)</m> or <m>x=f(y)</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\begin{array}{l}
+                        x=t-4\\
+                        y=3+t-t^2
+                        \end{array}
+                    </m> for <m>0\leq t\leq 10</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\begin{array}{l}
+                        x = t+3\\
+                        y = 5-2t
+                        \end{array}
+                    </m> for <m>0\leq t\leq 5</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\begin{array}{l}
+                        x=5\cos^2(t)\\
+                        y=5\sin^2(t)
+                        \end{array}
+                    </m> for <m>0\leq t\leq 2\pi</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\begin{array}{l}
+                        x=\sqrt{t+4}\\
+                        y=5t+1
+                        \end{array}
+                    </m> for <m>0\leq t\leq 5</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                In <xref ref="act-CircleExploration" text="type-global-title"/>, we saw the we can define a circle parametrically by
+                <md>
+                    <mrow>x \amp = \cos(t)</mrow>
+                    <mrow>y \amp = \sin(t)</mrow>
+                </md>
+                for <m>0\leq t \leq 2\pi</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Remind yourself why this parametric definition makes sense, based on how we think about trig functions on a unit circle.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Eliminate the parameter to create an equation with <m>x</m> and <m>y</m> related to each other.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Try squaring each parametric function! How can you combine them in a typical trigonometric identity way?
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    How does the function <m>f(t)=\cos(5t)</m> compare to the function <m>g(t)=\cos(t)</m>? How about <m>\ell(t)=\sin(5t)</m> compared to the function <m>m(t)=\sin(t)</m>?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The parametric curve
+                    <md>
+                        <mrow>x \amp = \cos(5t)</mrow>
+                        <mrow>y \amp = \sin(5t)</mrow>
+                    </md>
+                    for <m>0 \leq t \leq 2\pi</m> looks exactly the same as the unit circle we defined earlier.
+                </p>
+                <p>
+                    How is it different? What does the coefficient on <m>t</m> do?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Create a parametric curve that looks like the unit circle but has an opposite orientation (direction).
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

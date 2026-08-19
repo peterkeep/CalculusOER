@@ -1,0 +1,85 @@
+<setup>
+  <function name="xf" variable="t">
+    $xt
+  </function>
+  <function name="yf" variable="t">
+    $yt
+  </function>
+</setup>
+
+<p>
+  <em>Instructions:</em> Input a parametric curve to investigate graph. Use the table below to plot some points on the curve.
+</p>
+<sideBySide>
+  <p>
+    Function for <m>x</m>:<br/>
+    <mathInput name="xt"><label><m>x = </m></label></mathInput>
+  </p>
+
+  <p>
+    Function for <m>y</m>: <br/>
+    <mathInput name="yt"><label><m>y = </m></label></mathInput>
+  </p>
+  <p>
+    Interval of <m>t</m>-values: <br/>
+    <mathInput name="a"><shortDescription>lower bound for t</shortDescription>0</mathInput> <m> \leq t \leq</m> <mathInput name="b"><shortDescription>upper bound for t</shortDescription>10</mathInput>
+  </p>
+</sideBySide>
+<p>
+  So, we'll consider the parametric curve:
+  <md>
+    <mrow>x \amp = $xf</mrow>
+    <mrow>y \amp = $yf</mrow>
+  </md>
+  for <m>$a \leq t \leq $b</m>.
+</p>
+
+<slider name="t" from="$a" to="$b" step="0.01" showTicks="false">
+  <label><m>t</m></label>
+</slider>
+
+<graph>
+  <shortDescription>
+    Graph of the parametric curve. There is a point connected to the slider, and any points input in the table below appear as well.
+  </shortDescription>
+  <!-- Curve -->
+  <curve parMin="$a" parMax="$b" variable="t">
+    ($$xf(t), $$yf(t))
+  </curve>
+  <point>($$xf($t), $$yf($t))</point>
+  <!-- Points -->
+  <point styleNumber="6">($x1, $y1)</point>
+  <point styleNumber="6">($x2, $y2)</point>
+  <point styleNumber="6">($x3, $y3)</point>
+  <point styleNumber="6">($x4, $y4)</point>
+  <point styleNumber="6">($x5, $y5)</point>
+</graph>
+
+<table suppressTableNameInTitle>
+  <tabular topBorder="medium" bottomBorder="medium" halign="center">
+    <row bottomBorder="minor">
+      <cell><m>t</m></cell>
+      <cell><mathInput name="t1"><shortDescription>t 1</shortDescription></mathInput></cell>
+      <cell><mathInput name="t2"><shortDescription>t 2</shortDescription></mathInput></cell>
+      <cell><mathInput name="t3"><shortDescription>t 3</shortDescription></mathInput></cell>
+      <cell><mathInput name="t4"><shortDescription>t 4</shortDescription></mathInput></cell>
+      <cell><mathInput name="t5"><shortDescription>t 5</shortDescription></mathInput></cell>
+    </row>
+    <row bottomBorder="minor">
+      <cell><m>x</m></cell>
+      <cell><mathInput name="x1"><shortDescription>x 1</shortDescription></mathInput></cell>
+      <cell><mathInput name="x2"><shortDescription>x 2</shortDescription></mathInput></cell>
+      <cell><mathInput name="x3"><shortDescription>x 3</shortDescription></mathInput></cell>
+      <cell><mathInput name="x4"><shortDescription>x 4</shortDescription></mathInput></cell>
+      <cell><mathInput name="x5"><shortDescription>x 5</shortDescription></mathInput></cell>
+    </row>
+    <row>
+      <cell><m>y</m></cell>
+      <cell><mathInput name="y1"><shortDescription>y 1</shortDescription></mathInput></cell>
+      <cell><mathInput name="y2"><shortDescription>y 2</shortDescription></mathInput></cell>
+      <cell><mathInput name="y3"><shortDescription>y 3</shortDescription></mathInput></cell>
+      <cell><mathInput name="y4"><shortDescription>y 4</shortDescription></mathInput></cell>
+      <cell><mathInput name="y5"><shortDescription>y 5</shortDescription></mathInput></cell>
+    </row>
+  </tabular>
+</table>
