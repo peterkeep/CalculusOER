@@ -433,13 +433,86 @@
                     <m>f(x) = \dfrac{\sqrt{x}}{e^x}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = \frac{\frac{e^x}{2\sqrt{x}} - e^x\sqrt{x}}{(e^x)^2} </mrow>{
+                        <mrow> \amp = \frac{1-2x}{2e^x\sqrt{x}}</mrow>
+                        <mrow>0 \amp = \frac{1-2x}{2e^x\sqrt{x}}</mrow>
+                        <mrow>0 \amp = 1-2x</mrow>
+                        <mrow>x \amp = \frac{1}{2}</mrow>
+                    </md>
+                    Also note that <m>f'(0)</m> doesn't exist, and is in the domain of <m>f</m>, so this is a critical number as well.
+                </p>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\left(0, \frac{1}{2}\right)</m></cell>
+                        <cell><m>\frac{1}{2}</m></cell>
+                        <cell><m>\left(\frac{1}{2}, \infty\right)</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell>DNE</cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\ominus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>(0,0)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>(-1,e)</m></cell>
+                        <cell><m>\searrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
-                    <m>f(x) = \sin(x)</m> on <m>\left[0, \frac{\sqrt{\pi}}{2}\right]</m>
+                    <m>f(x) = \sin(x)</m> on <m>\left[0, \frac{\pi}{2}\right]</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>f'(x) = \cos(x)</m> on <m>\left(0,\frac{\pi}{2})</m>. Since <m>f'(x)</m> doesn't exist at <m>x=0</m> and <m>x=\frac{\pi}{2}</m>, these are both critical points.
+                </p>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\left(0, \frac{1}{2}\right)</m></cell>
+                        <cell><m>\frac{1}{2}</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell>DNE</cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell>DNE</cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>(0,0)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>\left(\frac{\pi}{2},1\right)</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                       <cell></cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -447,6 +520,91 @@
                     <m>f(x) = \cos^3(x)</m> on <m>(-2\pi, 2\pi)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>f'(x) \amp = -3\sin(x)\cos^2(x)</mrow>
+                    </md>
+                    To find critical points, we'll look for where <m>\sin(x)=0</m> or <m>\cos(x)=0</m> in <m>(-2\pi,\pi)</m>:
+                    <me>
+                        x = -\frac{3\pi}{2}, -\pi, -\frac{\pi}{2}, 0, \frac{\pi}{2}, \pi, \frac{3\pi}{2}
+                    </me>
+                </p>
+                 <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>\left(-2\pi, -\frac{3\pi}{2}\right)</m></cell>
+                        <cell><m>-\frac{3\pi}{2}</m></cell>
+                        <cell><m>\left(-\frac{3\pi}{2}, -\pi\right)</m></cell>   
+                        <cell><m>-\pi</m></cell>
+                        <cell><m>\left(-\pi, -\frac{\pi}{2}\right)</m></cell>
+                        <cell><m>-\frac{\pi}{2}</m></cell>
+                        <cell><m>\left(-\frac{\pi}{2}, 0\right)</m></cell>   
+                        <cell><m>0</m></cell>
+                        <cell><m>\left(0, \frac{\pi}{2}\right)</m></cell>
+                        <cell><m>\frac{\pi}{2}</m></cell>
+                        <cell><m>\left(\frac{\pi}{2}, \pi\right)</m></cell>   
+                        <cell><m>\pi</m></cell>
+                        <cell><m>\left(\pi, \frac{3\pi}{2}\right)</m></cell>
+                        <cell><m>\frac{3\pi}{2}</m></cell>
+                        <cell><m>\left(\frac{3\pi}{2}, 2\pi\right)</m></cell>   
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell><m>0</m></cell>
+                         <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>\left(-\frac{3\pi}{2},0\right)</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>\left(-\pi,-1\right)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>\left(-\frac{\pi}{2},0\right)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>\left(0,1\right)</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>\left(\frac{\pi}{2},0\right)</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>\left(\pi,-1\right)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>\left(\frac{3\pi}{2},0\right)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -468,6 +626,48 @@
                     <m>f(x) = x^2e^x</m>
                 </p>
             </statement>
+            <solution>
+                <tabular halign="center" top="medium">
+                    <col width="16%" top="medium"/>
+                    <col width="16%" top="medium"/>
+                    <col width="16%" top="medium"/>
+                    <col width="16%" top="medium"/>
+                    <col width="16%" top="medium"/>
+                    <col width="16%" top="medium"/>
+                    <row bottom="minor">
+                        <cell><p><m>x</m></p></cell>
+                        <cell><p><m>(-\infty, -2)</m></p></cell>
+                        <cell><p><m>-2</m></p></cell>
+                        <cell><p><m>(-2,0)</m></p></cell>
+                        <cell><p><m>0</m></p></cell>
+                        <cell><p><m>(0,\infty)</m></p></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><p><m>f'</m></p></cell>
+                        <cell><p><m>\oplus</m></p></cell>
+                        <cell><p><m>0</m></p></cell>
+                        <cell><p><m>\ominus</m></p></cell>
+                        <cell><p><m>0</m></p></cell>
+                        <cell><p><m>\oplus</m></p></cell>
+                    </row>
+                    <row>
+                        <cell><p><m>f</m></p></cell>
+                        <cell><p><m>\nearrow</m></p></cell>
+                        <cell><p></p></cell>
+                        <cell><p><m>\searrow</m></p></cell>
+                        <cell><p></p></cell>
+                        <cell><p><m>\nearrow</m></p></cell>
+                    </row>
+                    <row bottom="medium">
+                        <cell><p></p></cell>
+                        <cell><p>increasing</p></cell>
+                        <cell><p>local max</p></cell>
+                        <cell><p>decreasing</p></cell>
+                        <cell><p>local min</p></cell>
+                        <cell><p>increasing</p></cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -475,6 +675,34 @@
                     <m>f(x) = x\ln(x)-x</m>
                 </p>
             </statement>
+            <solution>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>(-\infty, 1)</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>(1, \infty)</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>(1,-1)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell>local min</cell>
+                       <cell>increasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -482,6 +710,34 @@
                     <m>f(x) = \dfrac{1}{x^2}</m>
                 </p>
             </statement>
+            <solution>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>(-\infty, 0)</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>(0, \infty)</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>\va</m></cell>
+                        <cell><m>\oplus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>\va</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -489,6 +745,34 @@
                     <m>f(x) = \ln(x^4 + 1)</m>
                 </p>
             </statement>
+            <solution>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>(-\infty, 0)</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>(0, \infty)</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>(0,0)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell>local min</cell>
+                       <cell>increasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -496,6 +780,42 @@
                     <m>f(x) = \dfrac{x-4}{x^2+1}</m>
                 </p>
             </statement>
+            <solution>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>(-\infty, 4-\sqrt{17})</m></cell>
+                        <cell><m>4-\sqrt{17}</m></cell>
+                        <cell><m>(4-\sqrt{17}, 4+\sqrt{17})</m></cell>
+                        <cell><m>4+\sqrt{17}</m></cell>
+                        <cell><m>(4+\sqrt{17}, \infty)</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\ominus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>\left(4-\sqrt{17},-2-\frac{\sqrt{17}}{2}\right)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>\left(4+\sqrt{17} , \frac{\sqrt{17}}{2} - 2\right)</m></cell>
+                        <cell><m>\searrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell>local min</cell>
+                       <cell>increasing</cell>
+                       <cell>local max</cell>
+                       <cell>decreasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -503,6 +823,34 @@
                     <m>f(x) = e^{-x^2-2x}</m>
                 </p>
             </statement>
+            <solution>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>(-\infty, -1)</m></cell>
+                        <cell><m>-1</m></cell>
+                        <cell><m>(-1, \infty)</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\ominus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>(-1,e)</m></cell>
+                        <cell><m>\searrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>increasing</cell>
+                       <cell>local max</cell>
+                       <cell>decreasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -510,6 +858,38 @@
                     <m>f(x) = \dfrac{\sqrt{x}}{e^x}</m>
                 </p>
             </statement>
+            <solution>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\left(0, \frac{1}{2}\right)</m></cell>
+                        <cell><m>\frac{1}{2}</m></cell>
+                        <cell><m>\left(\frac{1}{2}, \infty\right)</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell>DNE</cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\ominus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>(0,0)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>(-1,e)</m></cell>
+                        <cell><m>\searrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>local min</cell>
+                       <cell>increasing</cell>
+                       <cell>local max</cell>
+                       <cell>decreasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -517,6 +897,34 @@
                     <m>f(x) = \sin(x)</m> on <m>\left[0, \frac{\sqrt{\pi}}{2}\right]</m>
                 </p>
             </statement>
+            <solution>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\left(0, \frac{1}{2}\right)</m></cell>
+                        <cell><m>\frac{1}{2}</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell>DNE</cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell>DNE</cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>(0,0)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>\left(\frac{\pi}{2},1\right)</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>local min</cell>
+                       <cell>increasing</cell>
+                       <cell>local max</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
         <task>
             <statement>
@@ -524,6 +932,108 @@
                     <m>f(x) = \cos^3(x)</m> on <m>(-2\pi, 2\pi)</m>
                 </p>
             </statement>
+            <solution>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\left(0, \frac{1}{2}\right)</m></cell>
+                        <cell><m>\frac{1}{2}</m></cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell>DNE</cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell>DNE</cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>(0,0)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>\left(\frac{\pi}{2},1\right)</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>local min</cell>
+                       <cell>increasing</cell>
+                       <cell>local max</cell>
+                    </row>
+                </tabular>
+                <tabular halign="center" top="medium">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>\left(-2\pi, -\frac{3\pi}{2}\right)</m></cell>
+                        <cell><m>-\frac{3\pi}{2}</m></cell>
+                        <cell><m>\left(-\frac{3\pi}{2}, -\pi\right)</m></cell>   
+                        <cell><m>-\pi</m></cell>
+                        <cell><m>\left(-\pi, -\frac{\pi}{2}\right)</m></cell>
+                        <cell><m>-\frac{\pi}{2}</m></cell>
+                        <cell><m>\left(-\frac{\pi}{2}, 0\right)</m></cell>   
+                        <cell><m>0</m></cell>
+                        <cell><m>\left(0, \frac{\pi}{2}\right)</m></cell>
+                        <cell><m>\frac{\pi}{2}</m></cell>
+                        <cell><m>\left(\frac{\pi}{2}, \pi\right)</m></cell>   
+                        <cell><m>\pi</m></cell>
+                        <cell><m>\left(\pi, \frac{3\pi}{2}\right)</m></cell>
+                        <cell><m>\frac{3\pi}{2}</m></cell>
+                        <cell><m>\left(\frac{3\pi}{2}, 2\pi\right)</m></cell>   
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>f'</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell><m>0</m></cell>
+                         <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\ominus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\oplus</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>\left(-\frac{3\pi}{2},0\right)</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>\left(-\pi,-1\right)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>\left(-\frac{\pi}{2},0\right)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>\left(0,1\right)</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>\left(\frac{\pi}{2},0\right)</m></cell>
+                        <cell><m>\searrow</m></cell>
+                        <cell><m>\left(\pi,-1\right)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                        <cell><m>\left(\frac{3\pi}{2},0\right)</m></cell>
+                        <cell><m>\nearrow</m></cell>
+                    </row>
+                    <row bottom="medium">
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell>local min</cell>
+                       <cell>increasing</cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                       <cell>local max</cell>
+                       <cell>decreasing</cell>
+                       <cell></cell>
+                       <cell>decreasing</cell>
+                       <cell>local min</cell>
+                       <cell>increasing</cell>
+                       <cell></cell>
+                       <cell>increasing</cell>
+                    </row>
+                </tabular>
+            </solution>
         </task>
     </exercise>
     <exercise>
