@@ -118,7 +118,7 @@
                 </hint>
                 <solution>
                     <p>
-                        Notice that the boundary functions intersect at <m>x=\frac{\pi}{4}</m>, and they switch order. We'll need to split this region into two different regions in order to identify the "top" and "bottom" boundary functions.
+                        Notice that the boundary functions intersect at <m>x=\frac{\pi}{4}</m>, and they switch order. We'll need to split this region into two different regions in order to identify the <q>top</q> and <q>bottom</q> boundary functions.
                         <md>
                             <mrow>\int_{x=0}^{x=\pi/4} \cos(x)-\sin(x)\;dx + \int_{x=\pi/4}^{x=\pi} \sin(x)-\cos(x)\;dx \amp = \left(\sqrt{2}-1\right) + \left(1+\sqrt{2}\right) </mrow>
                             <mrow> \amp = 2\sqrt{2}</mrow>

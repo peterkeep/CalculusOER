@@ -1,7 +1,7 @@
 <exercises xml:id="ex-AreaBetweenCurves">
     <exercise>
         <p>
-            Explain how we use the "slice and sum" method to build an integral formula for the area bounded between curves. Give some details, enough to make sure you understand how the Riemann sums are constructed and how they turn into our integral formula.
+            Explain how we use the <q>slice and sum</q> method to build an integral formula for the area bounded between curves. Give some details, enough to make sure you understand how the Riemann sums are constructed and how they turn into our integral formula.
         </p>
     </exercise>
     <exercise>
@@ -185,6 +185,18 @@
             <hint>
                 <interactive desmos="55wd9reyqd" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <me>
+                        \int_{x=0}^{x=1/2} \sqrt{32x}-(2x^2)\;dx + \int_{x=1/2}^{x=1} (-4x+6)-(2x^2)\;dx
+                    </me>
+                    Or, alternatively:
+                    <me>
+                        \int_{y=0}^{y=2} \sqrt{\frac{y}{2}}-\left(\frac{y^2}{32}\right)\;dy + \int_{y=2}^{y=4} \left(\frac{6-y}{4}\right) - \left(\frac{y^2}{32}\right)\;dy
+                    </me>.
+                    In either case, the area is <m>\dfrac{13}{6}</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -195,6 +207,13 @@
             <hint>
                 <interactive desmos="wqkgqyinp6" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <me>
+                        
+                    </me>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -205,6 +224,13 @@
             <hint>
                 <interactive desmos="9obq4ogzey" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <me>
+                        \int_{y=-1}^{y=3}\left(2y\right)-\left(y^2-3\right)\;dy = \frac{32}{3}
+                    </me>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>

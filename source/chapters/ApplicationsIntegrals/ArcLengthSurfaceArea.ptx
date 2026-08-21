@@ -253,7 +253,7 @@
     </figure>
     </sidebyside>
     <p>
-      In order for us to find the surface area of this <m>k</m>th slice, we'll think about how "far" the diagonal line revolves. This is based on the circumference of each circular end of our slice, which means we have two radii to consider: the function outputs at both endpoints of the <m>k</m>th subinterval:
+      In order for us to find the surface area of this <m>k</m>th slice, we'll think about how <q>far</q> the diagonal line revolves. This is based on the circumference of each circular end of our slice, which means we have two radii to consider: the function outputs at both endpoints of the <m>k</m>th subinterval:
       <me>
         A_k = 2\pi\left(\frac{f(x_k)+f(x_{k+1})}{2}\right)\ell_k
       </me>
@@ -269,7 +269,7 @@
       </image>
     </figure>
     <p>
-      Instead of averaging the large and small radii from the end-points, we'll just select the one function output to represent this "average" radius. In the limit as <m>n\to\infty</m>, things will work out, since this randomly selected radius will become exactly equal to the average radius in the limit since <m>\Delta x\to 0</m>.
+      Instead of averaging the large and small radii from the end-points, we'll just select the one function output to represent this <q>average</q> radius. In the limit as <m>n\to\infty</m>, things will work out, since this randomly selected radius will become exactly equal to the average radius in the limit since <m>\Delta x\to 0</m>.
     </p>
     <p>
       Now we can slice and sum!
