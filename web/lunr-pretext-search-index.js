@@ -68,7 +68,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#def-Limit",
   "type": "Definition",
-  "number": "1.1.1",
+  "number": "1.1.2",
   "title": "Limit of a Function.",
   "body": " Limit of a Function   For the function defined at all -xalues around (except maybe at itself), we say that the limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but not equal to, . We write this as: or sometimes we write when .   "
 },
@@ -77,7 +77,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#def-LeftSidedLimit",
   "type": "Definition",
-  "number": "1.1.2",
+  "number": "1.1.3",
   "title": "Left-Sided Limit.",
   "body": " Left-Sided Limit   For the function defined at all -xalues around and less than , we say that the left-sided limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but less than, . We write this as: or sometimes we write when .   "
 },
@@ -86,7 +86,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#def-RightSidedLimit",
   "type": "Definition",
-  "number": "1.1.3",
+  "number": "1.1.4",
   "title": "Right-Sided Limit.",
   "body": " Right-Sided Limit   For the function defined at all -xalues around and greater than , we say that the right-sided limit of as approaches is if is arbitrarily close to the single, real number whenever is sufficiently close to, but greater than, . We write this as: or sometimes we write when .   "
 },
@@ -95,7 +95,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#thm-LimitExistence",
   "type": "Theorem",
-  "number": "1.1.4",
+  "number": "1.1.5",
   "title": "Mismatched Limits.",
   "body": " Mismatched Limits   For a function , if both , then we say that  does not exist .   "
 },
@@ -104,7 +104,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#act-ApproximatingLimitsGraphically",
   "type": "Activity",
-  "number": "1.1.2",
+  "number": "1.1.6",
   "title": "Approximating Limits.",
   "body": " Approximating Limits   For each of the following graphs of functions, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.     Approximate using the graph of the function below.     A decreasing linear function with a single point removed from the line. At the x-value x=1, there is a hole on the line at y=1, and a point is located at (1,0).        Approximate using the graph of the function below.     A piecewise defined function, where the graph is split up into two sections around x=2. For x-values less than (and equal) to 2, the function is decreasing and curves downward towards a filled in point at (2,1). Then the graph drops to an open point at (2,0), where the graph is linear and increasing afterwards from that hole.        Approximate the following three limits using the graph of the function below.                      A piecewise-defined fucntion with three distinct pieces. For x-values less than -1, the graph is increasing and curves towards an open hole at (-1,0). Then, at x=-1, we have a point at (-1,1). The graph is constant at y=1 until a hole at (0,1). After this hole, it decreases from (0,1) towards and through (3,0) linearly.        Why do we say these are approximations or estimations of the limits we're interested in?      Are there any limit statements that you made that you are 100% confident in? Which ones?      Which limit statements are you least confident in? What about them makes them ones you aren't confident in?      What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?    "
 },
@@ -113,7 +113,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#fig-LimitGraph1-1",
   "type": "Figure",
-  "number": "1.1.8",
+  "number": "1.1.10",
   "title": "",
   "body": " The function, .   The graph of a function f(x). It passes through the origin and then curves a bit in the first quadrant. There is a label for x=a on the horizontal axis.   "
 },
@@ -122,7 +122,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#LimitGraph1-2",
   "type": "Figure",
-  "number": "1.1.9",
+  "number": "1.1.11",
   "title": "",
   "body": " The -values around .   The graph of a function f(x). Around x=a is a vertical band, representing the interval of x-values around x=a.   "
 },
@@ -131,7 +131,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#LimitGraph1-3",
   "type": "Figure",
-  "number": "1.1.10",
+  "number": "1.1.12",
   "title": "",
   "body": " The -values around, but not equal to, .   The graph of a function f(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and the point at x=a has been removed.   "
 },
@@ -140,7 +140,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#LimitGraph1-4",
   "type": "Figure",
-  "number": "1.1.11",
+  "number": "1.1.13",
   "title": "",
   "body": " The corresponding function outputs are all in the target interval of -values.   The graph of a function f(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and there is a corresponding horizontal band of y-values surrounding a label y=L.   "
 },
@@ -149,7 +149,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#LimitGraph1-5",
   "type": "Figure",
-  "number": "1.1.12",
+  "number": "1.1.14",
   "title": "",
   "body": " The -values around, but not equal to, .   The graph of a function f(x) is highlighted in the interval of x-values. The interval of y-values is smaller, as is the interval of x-values.   "
 },
@@ -158,7 +158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#LimitGraph2-1",
   "type": "Figure",
-  "number": "1.1.13",
+  "number": "1.1.15",
   "title": "",
   "body": "   The graph of a function g(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and there is a corresponding horizontal band of y-values. The function itself is a piecewise function and has a big vertical gap at x=a.   "
 },
@@ -167,7 +167,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#LimitGraph2-2",
   "type": "Figure",
-  "number": "1.1.14",
+  "number": "1.1.16",
   "title": "",
   "body": "   The graph of a function g(x). Around x=a is a vertical band, representing the interval of x-values around x=a, and there is a corresponding horizontal band of y-values. The function itself is a piecewise function and has a big vertical gap at x=a.   "
 },
@@ -176,7 +176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefinitionOfLimits.html#act-ApproximateLimitsNumerically",
   "type": "Activity",
-  "number": "1.1.3",
+  "number": "1.1.17",
   "title": "Approximating Limits Numerically.",
   "body": " Approximating Limits Numerically   For each of the following tables of function values, approximate the limit in question. When you do so, approximate the values of the relevant one-sided limits as well.     Approximate using the table of values of below.        0.5  0.9  0.99  1  1.01  1.1  1.5     8.672  9.2  9.0001  -7  8.9998  9.5  7.59         Approximate using the table of values of below.        -3.5  -3.1  -3.01  -3  -2.99  -2.9  -2.5     -4.41  -3.89  -4.003  -4  7.035  2.06  -4.65         Approximate using the table of values of below.        3.1  3.14  3.141     3.142  3.15  3.2     6  6  6  undefined  5.915  6.75  8.12         Are you 100% confident about the existence (or lack of existence) of any of these limits?      What extra details would you like to see to increase the confidence in your estimations? Are there changes we could make to the way these functions are represented that would make these approximations better or easier to make?    "
 },
@@ -284,7 +284,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-EvaluatingLimits.html#act-EstimatingToEvaluating-2",
   "type": "Activity",
-  "number": "1.2.2",
+  "number": "1.2.4",
   "title": "From Estimating to Evaluating Limits (Part 2).",
   "body": " From Estimating to Evaluating Limits (Part 2)   Let's consider the following graphs of functions and , now with the added labels of the equations defining each part of these functions.    The function decreases linearly towards (1,1), but has a hole there. After the holw the function increases away from this point. There is a point above the curve at (1,3). The graph also has the function labeled on it: y=2-x when x is less than 1, and y = x^2\/4 - x\/2 + 5\/4 when x is greater than 1.   Graph of the function .     The graph increases until (1,3) and then decreases down to the filled in point at (2,2). There is a jump down towards an open point at (2,1). The function continues decreasing from here until (3,0), where it starts increasing again. The graph also has the function labeled on it: y=3-(x-1)^2 when x is less than or equal to 2, and y=(x-3)^2 when x is greater than 2.   Graph of the function .        Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                       Estimate the values of the following limits. If you believe that the limit does not exist, say so and explain why.                       Does the addition of the function rules change the level of confidence you have in these answers? What limits are you more confident in with this added information?      Consider these functions without their graphs:  Find the limits and . Compare these values of and : are they related at all?    "
 },
@@ -293,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-EvaluatingLimits.html#act-CombinationsOfFunctions",
   "type": "Activity",
-  "number": "1.2.3",
+  "number": "1.2.7",
   "title": "Combinations of Functions.",
   "body": " Combinations of Functions   We want to remind ourselves how we can combine functions using different operations, and how we might find outputs based on the different combinations. Our goal is to then think about how this might work with limits: how can we summarize the behavior of combinations of functions around some point?  Let's consider some functions and . We'll say that the domain of both functions is for our own convenience.     Let's consider the function . Describe at least two different ways of finding the value of .    You might think about writing out a function rule for . But can you also find without ever writing out a rule for ?       Since , we can evaluate by:     Since , we can evaluate by:          If we instead define the function , how would you describe at least two different ways of finding the value of ?      What about a scaled version of one of these functions? If we let and , can you describe more than one way to find the value of and ?      You can probably guess where we're going: we're going to define a function that is the product of and : . Describe more than one way of evaluating .      And finally, let's define . Now describe more than one way of finding .      If , then are there any -values that are in the domain of and (the domain is ) that cannot be defined for? Why?     Ok, we can confront this big idea: when we combine functions, we can either evaluate the combination of the functions at some -value or evaluate each function separately and just combine the answers! Of course, there are some limitations (like when the combination isn't nicely defined because of division by 0 or something else), but this is a good framework to move forward with!   "
 },
@@ -302,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-EvaluatingLimits.html#thm-CombinationsOfLimits",
   "type": "Theorem",
-  "number": "1.2.5",
+  "number": "1.2.8",
   "title": "Combinations of Limits.",
   "body": " Combinations of Limits   If and are two functions defined at -values around, but maybe not at, and and both exist, then we can evaluate limits of combinations of these functions.    Sums: The limit of the sum of and is the sum of the limits of and :      Differences: The limit of a difference of and is the difference of the limits of and :      Coefficients: If is some real number coefficient, then:      Products: The limit of a product of and is the product of the limits of and :      Quotients: The limit of a quotient of and is the quotient of the limits of and (provided that you do not divide by 0):       "
 },
@@ -311,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-EvaluatingLimits.html#thm-LimitsOfTwoFunctions",
   "type": "Theorem",
-  "number": "1.2.6",
+  "number": "1.2.9",
   "title": "Limits of Two Basic Functions.",
   "body": " Limits of Two Basic Functions   Let be some real number.    Limit of a Constant Function: If is some real number constant, then:      Limit of the Identity Function:        "
 },
@@ -320,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-EvaluatingLimits.html#act-LimitsOfPolynomials",
   "type": "Activity",
-  "number": "1.2.4",
+  "number": "1.2.10",
   "title": "Limits of Polynomial Functions.",
   "body": " Limits of Polynomial Functions   We're going to use a combination of properties from and to think a bit more deeply about polynomial functions. Let's consider a polynomial function:      We're going to evaluate the limit . First, use the properties from to rewrite this limit as 4 different limits added or subtracted together.           Now, for each of these limits, rewrite them as products of things until you have only limits of constants and identity functions, as in . Evaluate your limits.           Based on the definition of a limit ( ), we normally say that is not dependent on the value of . Why do we say this?      Compare the values of and . Why do these values feel connected?      Come up with a new polynomial function: some combination of coefficients with 's raised to natural number exponents. Call your new polynomial function . Evaluate and compare the value to . Explain why these values are the same.      Explain why, for any polynomial function , the limit is the same value as .    "
 },
@@ -329,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-EvaluatingLimits.html#thm-LimitsOfPolynomials",
   "type": "Theorem",
-  "number": "1.2.7",
+  "number": "1.2.11",
   "title": "Limits of Polynomials.",
   "body": " Limits of Polynomials   If is a polynomial function and is some real number, then:    "
 },
@@ -383,7 +383,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndeterminateForms.html#thm-SlightlyDifferentFunctions",
   "type": "Theorem",
-  "number": "1.3.3",
+  "number": "1.3.4",
   "title": "Limits of (Slightly) Different Functions.",
   "body": " Limits of (Slightly) Different Functions   If and are two functions defined at -values around (but maybe not at itself) with for the -values around but with then , if the limits exist.   "
 },
@@ -392,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndeterminateForms.html#def-IndeterminateForm",
   "type": "Definition",
-  "number": "1.3.4",
+  "number": "1.3.5",
   "title": "Indeterminate Form.",
   "body": " Indeterminate Form   We say that a limit has an indeterminate form if the general structure of the limit could take on any different value, or not exist, depending on the specific circumstances.  For instance, if and , then we say that the limit has an indeterminate form. We typically denote this using the informal symbol , as in: .   "
 },
@@ -401,7 +401,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndeterminateForms.html#act-IndeterminateForms",
   "type": "Activity",
-  "number": "1.3.2",
+  "number": "1.3.6",
   "title": "",
   "body": "   Were going to evaluate .   First, check that we get the indeterminate form when .    Now we want to find a new function that is equivalent to for all -values other than . Try factoring the numerator, . What do you notice?     Cancel out any factors that show up in the numerator and denominator. Make a special note about what that factor is.    This function is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.         Now we'll evaluate a new limit: .   First, check that we get the indeterminate form when .    Now we want a new function that is equivalent to for all -values other than . Try multiplying the numerator and the denominator by . We'll call this the conjugate of the numerator.    In your multiplication, confirm that .    Try to factor the new numerator and denominator. Do you notice anything? Can you cancel anything? Make another note of what factor(s) you cancel.    This function is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.         Our last limit in this activity is going to be .   Again, check to see that we get the indeterminate form when .    Again, we want a new function that is equivalent to for all -values other than . Try completing the subtraction in the numerator, , using common denominators.     Try to factor the new numerator and denominator(s). Do you notice anything? Can you cancel anything? Make another note of what factor(s) you cancel.    For the final time, we've found a function that is equivalent to except at . The difference is that this function has an actual function output at , while doesn't. Evaluate the limit as for your new function.         In each of the previous limits, we ended up finding a factor that was shared in the numerator and denominator to cancel. Think back to each example and the factor you found. Why is it clear that these must have been the factors we found to cancel?      Let's say we have some new function where . You know, based on these examples, that you're going to apply some algebra trick to rewrite your function, factor, and cancel. Can you predict what you will end up looking for to cancel in the numerator and denominator? Why?    "
 },
@@ -410,7 +410,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndeterminateForms.html#act-SinXOverX",
   "type": "Activity",
-  "number": "1.3.3",
+  "number": "1.3.7",
   "title": "",
   "body": "  Let's consider a new limit: . This one is strange!     Notice that this function, , is resistent to our algebra tricks:   There's nothing to factor here, since our trigonometric function is not a polynomial.    We can't use a trick like the conjugate to multiply and rewrite, since there's no square roots and also only one term in the numerator.    There aren't any fractions that we can combine by addition or subtraction.         Be frustrated at this new limit for resisting our algebra tricks.      Now let's think about the meaning of and even in general. In this text, we will often use Greek letters, like , to represent angles. In general, these angles will be measured in radians (unless otherwise specified). So what does the sine function do or tell us ? What is a radian?    On the unit circle, if we plot some point at an angle of , then the coordinates of that point can be represented with trig functions! Which ones?    The length of the curve defining a unit circle is . This also corresponds to the angle we would use to represent moving all the way around the circle. What must the length of the portion of the circle be up to some point at an angle ?      Let's visualize our limit, then, by comparing the length of the arc and the height of the point as .       Explain to yourself, until you are absolutely certain, why the two lengths must be the same in the limit as . What does this mean about ?    "
 },
@@ -473,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#def-InfiniteLimit",
   "type": "Definition",
-  "number": "1.4.1",
+  "number": "1.4.2",
   "title": "Infinite Limit.",
   "body": " Infinite Limit   We say that a function has an infinite limit at if is arbitrarily large (positive or negative) when is sufficiently close to, but not equal to, .  We would then say, depending on the sign of the values of , that: . If the sign of both one-sided limits are the same, we can say that (depending on the sign), but it is helpful to note that, by the definition of the , this limit does not exist, since is not arbitrarily close to a single real number.   "
 },
@@ -482,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#thm-DivBy0-InfiniteLimit",
   "type": "Theorem",
-  "number": "1.4.2",
+  "number": "1.4.3",
   "title": "Dividing by 0 in a Limit.",
   "body": " Dividing by 0 in a Limit   If with and , then has an at . We will often denote this behavior as: where is meant to be some shorthand representation of a non-zero limit in the numerator (often, but not necessarily, some real number).   "
 },
@@ -491,7 +491,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits-10",
   "type": "Example",
-  "number": "1.4.3",
+  "number": "1.4.4",
   "title": "",
   "body": "  For each function, find the relevant one-sided limits at the input-value mentioned. If you can use a two-sided limit statement to discuss the behavior of the function around this input-value, then do so.      and     Let's first factor the denominator: we want to see the factor , where we divide by . Now, when , we have . This is our form that tells us we have an infinite limit. We're going to look at the one-sided limits, but let's notice something:   For -values close to , we expect that the numerator will be close to . No matter what side of it is, it's still going to be positive.    For -values close to , we expect the denominator to be close to . Depending on what side of it is, it could be positive or negative.   So in our one-sided limits, we know that these both will be infinite limits (the function values will either approach or ). The only difference in these is the sign. So let's check the signs!  First, we'll consider . That's . We know the numerator is positive, since it is close to , and we also know that the factor . So we know that is an infinite limit, and we know that it is positive.   Now we can check the signs of these factors when (and so ). The numerator is still close to , and so still negative. Now, is positive, and is still being squared.   Since this is an infinite limit and is also positive, we know that: .  Since the function approaches on both sides, we can say that , but we know that this limit does not exist (since the function values are not close to a single real number).       and     We can start this in a similar way: factor the denominator to see the places where we divide by : . Now, when we think about the limit as , we're thinking about . We can check the signs, again! The numerator has , and so for -values slightly smaller than , this numerator is close to , and so positive. Similarly, , and so for -values close to but less than , this is negative. Then, we can see that . This is the part that gives us the form.  For , we have , and so this is negative. And so this limit is a positive infinite limit: .  Now we can similarly check the signs when , which is when . Note that, since is still close to , the numerator and the factor will retain their sign. But, for the factor , we get . And so this limit is a negative infinite limit: .       and     We can think of as a reciprocal: . Now, we can see that , hence this is an infinite limit.  Let's visualize , so that we can tell the sign of this denominator when is on either side of .     A unit circle with a point at (0,1) labeled (cos(pi\/2),sin(pi\/2)). On the right side of the point is a small blue arc labeled theta less than pi\/2. On the left side of the point is a small red arc labeled theta greater than pi\/2.    We can see that for , we are looking at a point in the first quadrant with a positive horizontal component. So, in this case, .  For the case when , though, we are looking in the second quadrant with a negative horizontal component. So we see that .  All of this to say:      "
 },
@@ -500,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#act-DivideByInfinity",
   "type": "Activity",
-  "number": "1.4.2",
+  "number": "1.4.6",
   "title": "What Happens When We Divide by Infinity?",
   "body": " What Happens When We Divide by Infinity?   Again, we need to start by making something clear: if we were really going to try divide some real number by infinity, then we would need to rebuild our definition of what it means to divide. In the context we're in right now, we only have division defined as an operation for real (and maybe complex) numbers. Since infinity is neither, then we will not literally divide by infinity.  When we talk about dividing by infinity here, we're again talking about the behavior of some function in a limit. We want to consider what it might look like to have a function that involves division where the denominator gets arbitrarily large (positive or negative) (or, the limit of the denominator is infinite).     Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?         Let's again consider . What is the value of this division problem when:    ?     ?     ?     ?     ?         Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very large and positive.      Consider a function . What happens to the value of this function when ? Note that this means that the -values we're considering most are very large and negative.      Why is there no difference in the behavior of as compared to when the sign of the function outputs are opposite ( when and when )?    "
 },
@@ -509,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#def-LimitAtInfinity",
   "type": "Definition",
-  "number": "1.4.5",
+  "number": "1.4.7",
   "title": "Limit at Infinity.",
   "body": " Limit at Infinity   If is defined for all large and positive -values and gets arbitrarily close to the single real number when gets sufficiently large, then we say: .  Similarly, if is defined for all large and negative -values and gets arbitrarily close to the single real number when gets sufficiently negative, then we say: .  In the case that has a limit at infinity that exists, then we say has a horizontal asymptote at .  Lastly, if is defined for all large and positive (or negative) -values and gets arbitrarily large and positive (or negative) when gets sufficiently large (or negative), then we could say: .   "
 },
@@ -527,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#thm-EndBehaviorReciprocalPower",
   "type": "Theorem",
-  "number": "1.4.6",
+  "number": "1.4.8",
   "title": "End Behavior of Reciprocal Power Functions.",
   "body": " End Behavior of Reciprocal Power Functions   If is a positive real number, then: .   "
 },
@@ -536,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#thm-PolynomialEndBehavior",
   "type": "Theorem",
-  "number": "1.4.7",
+  "number": "1.4.9",
   "title": "Polynomial End Behavior Limits.",
   "body": " Polynomial End Behavior Limits   For some polynomial function: with a positive integer (the degree) and all of the coefficients real numbers (with ), then   That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.    Consider the polynomial function: where is some integer and is a real number for . For simplicity, we will consider only the limit as , but we could easily repeat this exact proof for the case where .  Before we consider this limit, we can factor out , the variable with the highest exponent: Now consider the limit of this product: We can see that in the second limit, we have a single constant term, , followed by reciprocal power functions. Then, due to , we know that the second limit will by , since the reciprocal power functions will all approach 0. And so as we claimed.   "
 },
@@ -545,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits-10",
   "type": "Example",
-  "number": "1.4.8",
+  "number": "1.4.10",
   "title": "",
   "body": "  For each function, find the limits as and .          You can think about the limit in the numerator and the limit in the denominator. Based on , which terms will be the ones to dictate the behavior of the numerator and denominator?    What happens when you think about just those dominant terms in the numerator and denominator and reduce the fraction? What is left?    We'll start with the same kind of factoring that is used in the proof of . Now we can apply the limits as and , since the reciprocal power functions will all . Alternatively, we could have done the following: The same process could be used to show that: .           Be careful about which term (in the numerator) will persist!           It might be helpful to remind yourself of the definition of the absolute value function: . This means you can replace with either or in the limits as and .    "
 },
@@ -635,7 +635,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-SqueezeTheorem.html#thm-SqueezeTheorem",
   "type": "Theorem",
-  "number": "1.5.1",
+  "number": "1.5.2",
   "title": "The Squeeze Theorem.",
   "body": " The Squeeze Theorem   For some functions , , and which are all defined and ordered for -values near (but not necessarily at itself), and for some real number , if we know that then we also know that .   "
 },
@@ -644,7 +644,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-SqueezeTheorem.html#act-SketchSqueeze",
   "type": "Activity",
-  "number": "1.5.2",
+  "number": "1.5.3",
   "title": "Sketch This Function Around This Point.",
   "body": " Sketch This Function Around This Point    Sketch or visualize the functions and , especially around .      Now we want to add in a sketch of some function , all the while satisfying the requirements of the Squeeze Theorem.       Use the Squeeze Theorem to evaluate and explain for your function .      Is this limit dependent on the specific version of that you sketched? Would this limit be different for someone else's choice of given the same parameters?      What information must be true (if anything) about and ?  Do we know that these limits exist? If they do, do we have information about their values?    "
 },
@@ -689,7 +689,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Continuity.html#def-ContinuousAtPoint",
   "type": "Definition",
-  "number": "1.6.2",
+  "number": "1.6.3",
   "title": "Continuous at a Point.",
   "body": " Continuous at a Point   The function is continuous at an -value in the domain of if if .  If is not continuous at , but one of the one-sided limits is equal to the function output, then we can define directional continuity at that point:   We say is continuous on the left at when .    We say is continuous on the right at when .      "
 },
@@ -698,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Continuity.html#subsec-DefiningContinuity-5",
   "type": "Example",
-  "number": "1.6.3",
+  "number": "1.6.4",
   "title": "",
   "body": "  For the function defined below, decide whether or not the function is continuous at the point listed. If it is not continuous, report whether it is continuous on one side.      Is continuous at the point ?    Check the one-sided limits as . Do they both equal ? Does one of them?     So . Since as well, we have which means that is continuous at .      Is continuous at the point ?    Check the one-sided limits as . Do they both equal ? Does one of them?     Since we know that doesn't exist, and so this function cannot be continuous at .  But we can notice that , and so we can say that the function is still continuous on the right side at .    "
 },
@@ -707,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Continuity.html#def-ContinuousOnInterval",
   "type": "Definition",
-  "number": "1.6.4",
+  "number": "1.6.5",
   "title": "Continuous on an Interval.",
   "body": " Continuous on an Interval   We say that is continuous on the interval  if is continuous at every -value with .  If is continuous on the right at and\/or continuous on the left at , then we will say that is continuous on the interval , , or , whichever is relevant.   "
 },
@@ -716,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Continuity.html#subsec-Discontinuities-5",
   "type": "Example",
-  "number": "1.6.5",
+  "number": "1.6.6",
   "title": "",
   "body": "  Let's revisit the same function we looked at earlier:   We already looked at what was happening at and . Are there any other -values where this function might not be continuous? Why or why not? Can you report the intervals on which is continuous?    Can you name the function type for , and ?    Since is polynomial for and , we know that the function is continuous on those intervals as well. We can see that for , is a rational function. Since the only -value where we might divide by 0 is outside of the interval for which this function part is defined, we know that this function is continuous for .  Since our function is continuous at , we can say that it is continuous on the interval . We also say that the function was continuous on the right at , and so we can say that is also continuous on the interval .   "
 },
@@ -725,7 +725,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Continuity.html#thm-ContinuityWithComposition",
   "type": "Theorem",
-  "number": "1.6.6",
+  "number": "1.6.7",
   "title": "Continuity with Composition.",
   "body": " Continuity with Composition   For two functions and , if and is continuous at , then .   "
 },
@@ -734,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Continuity.html#thm-IVT",
   "type": "Theorem",
-  "number": "1.6.7",
+  "number": "1.6.8",
   "title": "Intermediate Value Theorem.",
   "body": " Intermediate Value Theorem   If is a function that is continuous on with and is any real number between and (either or ), then there exists some between and ( ) such that .   "
 },
@@ -842,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "explore-Limits.html#def-PreciseLimitInterval",
   "type": "Definition",
-  "number": "1.7.1",
+  "number": "1.7.3",
   "title": "(Open Interval) Limit of a Function.",
   "body": " (Open Interval) Limit of a Function   Suppose that is a function that exists for all -values in some open interval around and containing , except possibly at itself. We say that if, for any open interval of -values containing the single, real number , there is some corresponding open interval around (that is, ) such that for all -values in with , the function output is in .   "
 },
@@ -851,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "explore-Limits.html#def-PreciseLimitEpsDelta",
   "type": "Definition",
-  "number": "1.7.2",
+  "number": "1.7.4",
   "title": "(Epsilon-Delta) Limit of a Function.",
   "body": " (Epsilon-Delta) Limit of a Function   Suppose that is a function that exists for all -values in some open interval around and containing , except possibly at itself. We say that if is some single, real number, and for any real number , there is a corresponding such that whenever .   "
 },
@@ -950,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroDerivatives.html#def-DerivativeAtPoint",
   "type": "Definition",
-  "number": "2.1.1",
+  "number": "2.1.3",
   "title": "Derivative at a Point.",
   "body": " Derivative at a Point   For a function , we say that the derivative of at is: provided that the limit exists.  If exists, then we say is differentiable at .   "
 },
@@ -959,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroDerivatives.html#act-ManySlopes",
   "type": "Activity",
-  "number": "2.1.3",
+  "number": "2.1.4",
   "title": "Calculating a Bunch of Slopes.",
   "body": " Calculating a Bunch of Slopes   Let's do this all again, but this time we'll calculate the slope at a bunch of different points on the same function.  Let's use .     Start calculating the following derivatives, using the definition of the :                            Stop calculating the above derivatives when you get tired\/bored of it. How many did you get through?      Notice how repetitive this is: on one hand, we have to set up a completely different limit each time (since we're looking at a different point on the function each time). On the other hand, you might have noticed that the work is all the same: you factor and cancel over and over. These limits are all ones that we covered in , and so it's no surprise that we keep using the same algebra manipulations over and over again to evaluate these limits.  Do you notice any patterns, any connections between the -value you used for each point and the slope you calculated at that point? You might need to go back and do some more.      Try to evaluate this limit in general: . Remember, you know how this goes! You're going to do the same type of algebra that you did earlier!  What is the formula, the pattern, the way of finding the slope on the function at any -value, ?      Confirm this by using your new formula to recalculate the following derivatives:                           We're going to try to think about the derivative as something that can be calculated in general, as well as something that can be calculated at a point. We'll define a new way of calculating it, still a limit of slopes, that will be a bit more general.   "
 },
@@ -968,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroDerivatives.html#def-DerivativeFunction",
   "type": "Definition",
-  "number": "2.1.2",
+  "number": "2.1.5",
   "title": "The Derivative Function.",
   "body": " The Derivative Function   For a function , the derivative of , denoted , is: for -values in the domain of where this limit exists.   "
 },
@@ -1130,7 +1130,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativeRules.html#fig-BinomialTriangle-1",
   "type": "Figure",
-  "number": "2.3.1",
+  "number": "2.3.2",
   "title": "",
   "body": "   Triangle with the binomial coefficients, ending with the row that begins 1, 8, 28, ...    "
 },
@@ -1139,7 +1139,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativeRules.html#fig-BinomialTriangle-2",
   "type": "Figure",
-  "number": "2.3.2",
+  "number": "2.3.3",
   "title": "",
   "body": "   Triangle with the binomial coefficients, ending with the row that begins 1, 8, 28, ... In each row, the first term (1) is red. The second number (1, 2, 3, 4, ..., 8) is red. The remaining numbers are blue.    "
 },
@@ -1148,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativeRules.html#thm-PowerRuleDerivatives",
   "type": "Theorem",
-  "number": "2.3.3",
+  "number": "2.3.4",
   "title": "Power Rule for Derivatives.",
   "body": " Power Rule for Derivatives       "
 },
@@ -1157,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativeRules.html#subsec-DerivativesOfPowerFunctions-10",
   "type": "Example",
-  "number": "2.3.4",
+  "number": "2.3.5",
   "title": "",
   "body": "  Let's confirm this Power Rule for two examples that we are familiar with.     Find the derivative using the limit definition of the derivative function. Note that and .      Find the derivative using the limit definition of the derivative function. Note that and .    "
 },
@@ -1166,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativeRules.html#thm-DerivativeConstant",
   "type": "Theorem",
-  "number": "2.3.5",
+  "number": "2.3.6",
   "title": "Derivative of a Constant Function.",
   "body": " Derivative of a Constant Function   If where is some real number constant, then . Another way of saying this is: .   "
 },
@@ -1175,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativeRules.html#act-TrigDerivatives",
   "type": "Activity",
-  "number": "2.3.2",
+  "number": "2.3.7",
   "title": "Derivatives of Trigonometric Functions.",
   "body": " Derivatives of Trigonometric Functions   Let's try to think through the derivatives of and . In this activity, we'll look at graphs and try to collect some information about the derivative functions. We'll be practicing our interpretations, so if you need to brush up on before we start, that's fine!     The following plot includes both the graph of , and the line tangent to . Watch as the point where we build the tangent line moves along the graph, between and .   Collect as much information about the derivative, , as you can. What do you know about it? What are some facts about the slopes of the tangent lines in this animation?    What kinds of values do the slopes take? Are there some values that these slopes never will be? Can you find any special points on this graph where you can actually tell what the slope is?      We're going to get more specific here: let's find the coordinates of points that are on both the graph of and it's derivative . Remember, to get the values for , we're really looking at the slope of the tangent line at that point.       Let's repeat this process using the function instead.  The following plot includes both the graph of , and the line tangent to . Watch as the point where we build the tangent line moves along the graph, between and .   Collect as much information about the derivative, , as you can. What do you know about it? What are some facts about the slopes of the tangent lines in this animation?    What kinds of values do the slopes take? Are there some values that these slopes never will be? Can you find any special points on this graph where you actually can tell what the slope is?      We're going to get more specific here: let's find the coordinates of points that are on both the graph of and it's derivative . Remember, to get the values for , we're really looking at the slope of the tangent line at that point.     "
 },
@@ -1184,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativeRules.html#thm-TrigDerivatives",
   "type": "Theorem",
-  "number": "2.3.6",
+  "number": "2.3.8",
   "title": "Derivatives of the Sine and Cosine Functions.",
   "body": " Derivatives of the Sine and Cosine Functions           In order to show why and , we will work with the limit definitions of both. Consider both: Our goal is to rewrite the numerators in both of these limits as something more usable. So far, we have been evaluating these types of limits ( ) using some algebraic manipulations. Instead of using algebra, we will use geometry.  Consider the unit circle below. We have plotted the angle and are reminded that the point on the circle that corresponds with the terminal side of the angle has coordinates . We can label the sides of the triangle pictured below.   Unit circle with the angle .   A unit circle, with an angle theta placed in the first quadrant. A triangle is formed using the angle, where the hypotenuse is the radius of the circle (1) the height is sin(theta) and the base is cos(theta).    Now we consider a second point on the circle, this one formed by the terminal side of the angle . This point has coordinates . Note below, we want to find expressions for and . We can find these geometrically.   Angles and .   A triangle on a unit circle, with standard lengths 1, sin(theta), and cos(theta). Another point is labeled on the unit circle. There is a triangle formed by the line connecting the two points, and then the vertical and horizontal components of the distance between the two points. The vertical distance is labeled sin(theta+Delta theta)-sin(theta) and the horizontal distance is labeled cos(theta)-cos(theta+Delta theta). The hypotenuse is labeled h, but it is very close to the same as the arclength between the two points, labeled Delta theta.    Note, then, that the two triangles look to be similar triangles. We can say, then, that: In fact, we will find that in the limit as , the length matches the arc length perfectly, and thus lays at a right angle to the terminal side of the angle . Since as we have , we can say:   Consider, then, the limits involved in the derivative calculations that we built earlier.   So we have shown that and as we claimed.  To see a clearer and more interactive version of this visual proof, see the figure below.    "
 },
@@ -1193,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativeRules.html#act-ExponentialDerivatives",
   "type": "Activity",
-  "number": "2.3.3",
+  "number": "2.3.11",
   "title": "Derivative of the Exponential Function.",
   "body": " Derivative of the Exponential Function   We're going to consider a maybe-unfamiliar function, . We'll explore this function similarly to how we thought of the derivatives of sine and cosine in : we'll look at a tangent line at different points, and think about the slope.     The plot below includes both the graph of and the line tangent to . Watch as the point moves along the curve.   Collect as much information about the derivative, , as you can. What do you know about it? What are some facts about the slopes of the tangent lines in this animation?    Are there any -values where the slope is negative? Are there any where the slope is equal to 0? What happens to the slopes as increases?      There is a slightly hidden fact about slopes and tangent lines in this animation. In the following animation, we'll add (and label) one more point. Let's look at this again, this time noting the point at which this tangent line crosses the -axis. This will make it easier to think about slopes!   What information does this reveal about the slopes?    It might be especially helpful to think about the slopes and their relationship to the -value of the point we are building the tangent line at.      Make a conjecture about the slope of the line tangent to the exponential function at any -value. What do you believe the formula\/equation for is then?    "
 },
@@ -1202,7 +1202,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativeRules.html#thm-ExponentialDerivative",
   "type": "Theorem",
-  "number": "2.3.9",
+  "number": "2.3.12",
   "title": "Derivative of the Exponential Function.",
   "body": " Derivative of the Exponential Function       "
 },
@@ -1211,7 +1211,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativeRules.html#thm-CombinationsOfDerivatives",
   "type": "Theorem",
-  "number": "2.3.10",
+  "number": "2.3.13",
   "title": "Combinations of Derivatives.",
   "body": " Combinations of Derivatives   If and are differentiable functions, then the following statements about their derivatives are true.    Sums: The derivative of the sum of and is the sum of the derivatives of and :      Differences: The derivative of the difference of and is the difference of the derivatives of and :      Coefficients: If is some real number coefficient, then:       "
 },
@@ -1220,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativeRules.html#subsec-DerivativeProperties-5",
   "type": "Example",
-  "number": "2.3.11",
+  "number": "2.3.14",
   "title": "Putting These Together.",
   "body": " Putting These Together   Find the following derivatives:                           "
 },
@@ -1328,7 +1328,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ProductQuotientRule.html#thm-ProductRule",
   "type": "Theorem",
-  "number": "2.4.3",
+  "number": "2.4.5",
   "title": "Product Rule.",
   "body": " Product Rule   If and are functions that are differentiable at and , then: . For convenience, this often is written as: .   "
 },
@@ -1337,7 +1337,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ProductQuotientRule.html#subsec-ProductRule-6",
   "type": "Example",
-  "number": "2.4.4",
+  "number": "2.4.6",
   "title": "",
   "body": "  Use the to find the following derivatives.          Use and . Now find and , and use: .                  "
 },
@@ -1346,7 +1346,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ProductQuotientRule.html#act-QuotientRule",
   "type": "Activity",
-  "number": "2.4.3",
+  "number": "2.4.7",
   "title": "Constructing a Quotient Rule.",
   "body": " Constructing a Quotient Rule   We're going to start with a function that is a quotient of two other functions: . Our goal is that we want to find , but we're going to shuffle this function around first. We won't calculate this derivative directly!     Start with . Multiply on both sides to write a definition for .       Find .      Wait: we don't care about , right? We care about finding !  Use what you found for and solve for .       This is a strange formula: we have a formula for written in terms of ! But we said earlier that .  In your formula for , replace with .     "
 },
@@ -1355,7 +1355,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ProductQuotientRule.html#thm-QuotientRule",
   "type": "Theorem",
-  "number": "2.4.5",
+  "number": "2.4.8",
   "title": "Quotient Rule.",
   "body": " Quotient Rule   If and are differentiable at and then: .  For convenience, this often is written as: .   "
 },
@@ -1364,7 +1364,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ProductQuotientRule.html#subsec-QuotientRule-10",
   "type": "Example",
-  "number": "2.4.6",
+  "number": "2.4.9",
   "title": "",
   "body": "  Use the to find the following derivatives.        Once you have this derivative, confirm that it is the same as , the way that we found it using the Product Rule.                  "
 },
@@ -1373,7 +1373,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ProductQuotientRule.html#subsec-MoreTrigDerivatives-3",
   "type": "Example",
-  "number": "2.4.7",
+  "number": "2.4.10",
   "title": "",
   "body": "  Find the derivatives of the remaining trigonometric functions.          Write and use the Quotient Rule.           Write and use the Quotient Rule.           Write and use the Quotient Rule.           Write and use the Quotient Rule.    "
 },
@@ -1463,7 +1463,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ChainRule.html#thm-ChainRule",
   "type": "Theorem",
-  "number": "2.5.1",
+  "number": "2.5.3",
   "title": "The Chain Rule.",
   "body": " The Chain Rule   For the composite function , if we define and , then, as long as both and are differentiable at and respectively: . Alternatively, this can be written as: .   "
 },
@@ -1472,7 +1472,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ChainRule.html#subsec-DoingChainRule-6",
   "type": "Example",
-  "number": "2.5.2",
+  "number": "2.5.4",
   "title": "",
   "body": "  Use the Chain Rule to differentiate the following:          Notice that is composed under the square root. Use .           Try letting , since it's composed inside the exponent of the exponential function.           You could think about this as and try to use a very annoying product rule, but it might be easier to think about this as .    "
 },
@@ -1481,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ChainRule.html#thm-GeneralizedExponentialDerivaitve",
   "type": "Theorem",
-  "number": "2.5.3",
+  "number": "2.5.5",
   "title": "Derivative of the Generalized Exponential Function.",
   "body": " Derivative of the Generalized Exponential Function   If and , then: .   "
 },
@@ -1580,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ImplicitDifferentiation.html#act-ImplicitChainRule",
   "type": "Activity",
-  "number": "3.1.1",
+  "number": "3.1.2",
   "title": "Thinking about the Chain Rule.",
   "body": " Thinking about the Chain Rule    Explain to someone how (and why) we use to find the following derivative: .      Let's say that . Explain how we find the following derivative: . How is this different, or not different, than the previous derivative?      Let's say that we have some other function, . Explain how we find the following derivative: . How is this different, or not different, than the previous derivatives?      What is the difference between the following derivatives:     When do we need to use the Chain Rule? When do we need to use some linking derivative to connect the function we're looking at with the variable we care about?               "
 },
@@ -1589,7 +1589,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ImplicitDifferentiation.html#act-Circle",
   "type": "Activity",
-  "number": "3.1.2",
+  "number": "3.1.3",
   "title": "Slopes on a Circle.",
   "body": " Slopes on a Circle   Visualize the unit circle. Feel free to draw one, or find the picture above. We're going to think about slopes on this circle.     Point out the locations on the unit circle where you would expect to see tangent lines that are perfectly horizontal. What do you think the value of the derivative, , would be at these points?      Point out the locations on the unit circle where you would expect to see tangent lines that are perfectly vertical. What do you think the value of the derivative, , would be at these points?      Find the point(s) where . What do you think the value of the derivative, , would be at these points?    There are two points to consider here: and .      For the unit circle defined by the equation , apply the derivative to both sides of this equation to get the following: Carefully consider each of these derivatives (each of the terms). Which of these will you need to apply the Chain Rule for?      Differentiate. Solve for or , whichever notation you decide to use.    Make sure to use the Chain Rule when necessary!     or       Go back to the first few questions, and try to answer them again:   Find the locations of any horizontal tangent lines (where ).    Find the locations of any vertical tangent lines (where doesn't exist, or where you would divide by 0).    Find the values of for the points on the circle where .       "
 },
@@ -1598,7 +1598,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ImplicitDifferentiation.html#subsec-DerivativeOperator-9",
   "type": "Example",
-  "number": "3.1.2",
+  "number": "3.1.4",
   "title": "",
   "body": "  Let's repeat some of this process, but using a new curve. Consider the curve defined by the equation: . This curve is a special curve with some interesting mathematical properties, and is actually a part of a family of curves called elliptic curves . For now, let's just consider it as a fun curve to look at, and use implicit differentiation to think about it.     The elliptic curve, y^2=x^3-x+1. If has a flared horseshoe type shape. The curve has a symmetry across the x-axis, and the upper section starts somewhere near (-1.3,0). It starts moving vertically upwards, and then curves towards (-1,1). From there, it descends lightly towards somewhere near (0.6, 0.6), where it flares upwards. The portion under the x-axis is a reflection of this.       Mark the locations on the curve where it looks like the curve will have horizontal tangent lines. How many did you find?      Mark the locations on the curve where it looks like the curve will have vertical tangent lines. How many did you find?      Find the point(s) where . What do you think the value of the derivative, , would be at these points?      For the elliptic curve defined by the equation , apply the derivative to both sides of this equation: Carefully consider each of these derivatives (each of the terms). Which of these will you need to apply the Chain Rule for?      Differentiate. Solve for or , whichever notation you decide to use.    Make sure to use the Chain Rule when necessary!     or       Go back to the first few questions, and try to answer them again:   Find the locations of any horizontal tangent lines (where ).    Find the locations of any vertical tangent lines (where doesn't exist, or where you would divide by 0).    Find the values of for the points on the curve where .       "
 },
@@ -1607,7 +1607,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ImplicitDifferentiation.html#act-ImplicitSine",
   "type": "Activity",
-  "number": "3.1.3",
+  "number": "3.1.6",
   "title": "A New Curve.",
   "body": " A New Curve   Let's consider a new curve: .    A curve with 4 independent loops visible. The main, middle, loop, looks like a deformed circle. It passes through the origin, and has some straight sides and almost pointed corners, although they are still round. On the x-axis, there are two very flat round loops: one around (8,0) and another around (-5,0). A third one lays on the y-axis around (-5,0).        We are going to find or . Let's dive into differentiation: Think carefully about these derivatives. For each of the three, how will you approach it? What kinds of nuances or rules or strategies will you need to think about? Why?    Are any of these derivatives involving a variable other than , the input variable (based on our notation, since we are thinking about how changes with regard to  ).  Are any of these derivatives involving any other combination of functions? Are there products and\/or quotients that we need to think about?      Implement your ideas or strategies from above to differentiate each term.    We need to apply the Chain Rule to and then we need to apply the Product Rule . Notice that when we find the derivative of for the Product Rule, we need to use the Chain Rule!           Now we need to solve for or , whichever you are using. While this equation can look complicated, we can notice something about the location of or in our equation.  Why do we always know that or will be multiplied on a term whenever it shows up?      Now that we are confident that we will always know that we are multiplying this derivative, we can employ a consistent strategy:   Rearrange our equation so that every term with a or is on one side, and everything without is on the other.    Now we are guaranteed that or is a common factor: factor it out.    Now we can solve for or by dividing!   Solve for or in your equation!      Build the equation of a line that lays tangent to the curve at the origin. Does the value of at look reasonable to you?    "
 },
@@ -1625,7 +1625,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ImplicitDifferentiation.html#act-DrippingWater",
   "type": "Activity",
-  "number": "3.1.4",
+  "number": "3.1.8",
   "title": "Dripping Water.",
   "body": " Dripping Water   Two people are sitting at a table. Person A reaches across the table, grabs a water bottle, and begins dripping water onto the table right in front of Person B.  A puddle starts forming, in the shape of a circle.     If the puddle has a thickness of 0.5cm, what is the formula for the volume of the puddle?    This should be the area of the circle multiplied by the thickness or depth of the puddle.      Find a formula for how quickly the volume of the puddle is increasing per second.    This means we're going to find by differentiating the volume formula with regard to .      Convince yourself that of course  is connected to the change in the radius of the puddle, .      If Person A is dripping the water at a rate of cm \/s and the puddle is currently 13cm wide (in diameter), then how quickly is the edge of the puddle moving along the table?    Note that what we're really looking for is the value of .      How does this change when the puddle is larger? For instance, how does this change when the puddle is 20cm wide (in diameter)?    "
 },
@@ -1787,7 +1787,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativesInverse.html#thm-DerivativeLog",
   "type": "Theorem",
-  "number": "3.2.1",
+  "number": "3.2.2",
   "title": "Derivative of the Logarithmic Function.",
   "body": " Derivative of the Logarithmic Function    for .  Further, since (for and ), we can say that: for .   "
 },
@@ -1796,7 +1796,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativesInverse.html#act-InverseSineDerivative",
   "type": "Activity",
-  "number": "3.2.2",
+  "number": "3.2.3",
   "title": "Finding the Derivative of the Inverse Sine Function.",
   "body": " Finding the Derivative of the Inverse Sine Function   We're going to do the same trick, except that there will be a couple of small differences due to thinking specifically about trigonometric functions.  Let's think about the function . We know that this is equivalent to (for -values in ).     Move the point around the portion of the unit circle in the graph below. Convince yourself that:         when      when       What is in this figure? Does the sign change depending on the value of ?      Use implicit differentiation and the equation to find or       If you still have your derivative written in terms of , make sure to write in terms of !      Let's think about the domain of this derivative: what -values make sense to think about?  Think about this both in terms of what -values reasonably fit into your formula of as well as the domain of the inverse sine function in general.      Notice that in the denominator of , you have a square root. Based on that information (and the visual above), what do you expect to be true about the sign of the derivative of the inverse sine function?  Confirm this by playing with the graph of below.       Investigate the behavior of at the end-points of the function: at and . What do the slopes look like they're doing, graphically?  How does this work when you look at the function you built above? What happens when you try to find or ?    "
 },
@@ -1805,7 +1805,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativesInverse.html#act-InverseTangentSecant",
   "type": "Activity",
-  "number": "3.2.3",
+  "number": "3.2.4",
   "title": "Building the Derivatives for Inverse Tangent and Secant.",
   "body": " Building the Derivatives for Inverse Tangent and Secant    Consider the triangle representing the case when .     Right triangle with hypotenuse sqrt(x^2+1) and the other side lengths 1 and x. The angle between 1 and sqrt(x^2+1) is labeled y.    For , find using implicit differentiation. Find an appropriate expression for based on the triangle above, but we will refer back to the version with the in it later.      Consider the triangle representing the case when .     Right triangle with hypotenuse x and the other side lengths 1 and sqrt(x^2-1). The angle between 1 and x is labeled y.    For , find using implicit differentiation. Find an appropriate expression for and based on the triangle above, but we will refer back to the version with the functions of in it later.      Here's a graph of just the unit circle for angles . We are choosing to focus on this region, since these are the angles that the inverse tangent and inverse secant functions will return to us. We want to investigate the signs of and .       Go back to our derivative expressions for both the inverse tangent and inverse secant functions. What do we know about the signs of these derivatives?    Notice that in , we know that the derivative must be positive. Even when , we are squaring it.  In , we know that the derivative must also always be positive. Whenever , we have , and so the product must be positive.      Confirm your idea about the sign of the derivatives by investigating the graphs of each function.       How do we need to write these derivatives, when we write them in terms of to account for the sign of the derivative?    Use an absolute value in the formula for !    "
 },
@@ -1814,7 +1814,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativesInverse.html#act-InverseCosineGraph",
   "type": "Activity",
-  "number": "3.2.4",
+  "number": "3.2.7",
   "title": "Connecting These Inverse Functions.",
   "body": " Connecting These Inverse Functions   We're going to look at a graph of , but we're specifically going to try to compare it to the graph of . We'll use some graphical transformations to make these functions match up, and then later we'll think about derivatives.     Ok, consider the graph of and a transformed version of the inverse sine function. Apply some graphical transformations to make these match!       It might be fun to think about another reason that this connection between and exists.  Consider this triangle:    A right triangle with side lengths labeled x and sqrt(1-x^2) with the hypotenuse labeled 1.   We're going to think about these inverse trigonometric functions as angles: let and . We can rewrite these as: . Can you fill in your triangle using this information?  Why does ? Convince yourself that this is what we did with the graphical transformations above, as well.      Use this equation above, rewriting as some expression involving the inverse sine function, and then find .          We could repeat this task to try to connect the graph of with as well as the graph of with , but we can hopefully see what will happen. In each case, we have the same kind of connection that we saw in the triangle, since these are cofunctions of each other!  We can summarize by believing that:    "
 },
@@ -1823,7 +1823,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DerivativesInverse.html#thm-InverseTrigDerivatives",
   "type": "Theorem",
-  "number": "3.2.5",
+  "number": "3.2.9",
   "title": "Derivatives of the Inverse Trigonometric Functions.",
   "body": " Derivatives of the Inverse Trigonometric Functions       "
 },
@@ -1895,7 +1895,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LogarithmicDifferentiation.html#act-GeneralizedPowerRule",
   "type": "Activity",
-  "number": "3.3.1",
+  "number": "3.3.3",
   "title": "Returning to the Power Rule.",
   "body": " Returning to the Power Rule   Back in we built an explanation for why that relied on thinking about exponents as repeated multiplication: it relied on being some positive integer. We said, at the time, that the Power Rule generalizes and works for any integer, but did so without explanation.  Let's consider where is just some real number without any other restrictions.     Apply a logarithm to both sides of this equation: Now use one of the to rewrite this equation.      Use implicit differentiation to find or .    Remember that when you solve for or , you might have some -variables in your derivative. Replace them with .      Explain to yourself why this is equivalent to the Power Rule that we built so long ago: .      Let's get weird. What if we have a not-quite-power function? Where the thing in the exponent isn't simply a number, but another variable?  Let's use the same technique to think about and its derivative. First, though, confirm that this is not a power function (and so we cannot use the Power Rule to find the derivative) and is also not an exponential function (and so the derivative isn't itself or itself scaled by a log).      Now apply a log to both sides: . Rewrite this using the same log property as before, and then use implicit differentiation to find or .    Don't forget that in order to find , we need to use the Product Rule.      Explain to yourself why logs are friends, especially when trying to differentiate functions in the form of .    "
 },
@@ -1913,7 +1913,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LogarithmicDifferentiation.html#act-LogsProductsQuotients",
   "type": "Activity",
-  "number": "3.3.2",
+  "number": "3.3.4",
   "title": "Logarithmic Differentiation with Products and Quotients.",
   "body": " Logarithmic Differentiation with Products and Quotients   Let's say we've got some function that has products and quotients in it. Like, a lot. Consider the function: .     Work out a general strategy for how you would find directly. Where would you have to use Quotient Rule? What are the pieces? Where would you have to use Product Rule? What are the pieces? Where would you have to use the Chain Rule? What are the pieces?  To be clear: do not actually differentiate this. Just look at it in horror and try to outline a plan that some other fool would use.     What now? Can we simplify this somehow? Maybe, but I am not doing any more of this!      Let's instead use logarithmic differentiation. First, apply the log to both sides to get: . Since this function is just a bunch of products of things with exponents all put into some big quotient, we can use our log properties to rewrite this!      We should have: . Confirm this.      Now differentiate both sides! You'll have to use some Chain Rule (but not a lot)! Refer back to for help here.      Solve for or .      While this is not a nice looking expression for the derivative, spend some time confirming that this was a nicer process than differentiating directly. This is because logs are friends.    "
 },
@@ -2041,7 +2041,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Increasing and Decreasing Functions",
-  "body": " Increasing and Decreasing Functions    How Should We Think About Direction?   Our goal in this activity is to motivate some new terminology and results that will help us talk about the direction of a function and some interesting points on a function (related to the direction of a function). For us to do this, we'll look at some different examples of functions and try to think about some unifying ideas.       A rational function that increases gently up to a point in the third quadrant, then decreases towards a vertical asymptote at x=0. In the first quadrant, the function decreases down to some point, and then gently increases.    A polynomial function that decreases down to a point, then increases, then decreases, then increases.      A kind of oscillating function that looks like it bounces off of the horizontal axis, creating sharp corners. It gently changes direction near the peak. The graph decreases, hits the axis and increases, then gently decreases towards the horizontal axis. It bounces one more time, and increases then decreases.    A bell curve, with horizontal asymptote at y=0. It increases up to a point on the top where it changes to decreasing towards the horizontal axis.      These examples do not cover all of the possibilities of how a function can act, but will hopefully provide us enough fertile ground to think about some different situations.     In each graph, find and identify:   The intervals where the function is increasing.    The intervals where the function is decreasing.    The points (or locations) around and between these intervals, the points where the function changes direction or the direction terminates.         Make a conjecture about the behavior of a function at any point where the function changes direction.    What do you think has to be true about the derivative at these points?      Look at the highest and lowest points on each function. You can even include the points that are highest and lowest just compared to the points around it. Make a conjecture about the behavior of the function at these points.    What do you think has to be true about the derivative at these points?     We want to turn this little bit of thinking and exploring into some useful definitions for us. To craft these definitions, we need to start with thinking about what we care about and why we might care about it.    Critical Points, Local Maximums, and Local Minimums  Let's start by saying what we're really looking for is the highest and lowest points on a function. These points are interesting, have useful applications, and are difficult to find in general without calculus. We hopefully noticed, though, that these points always end up showing up at the same kinds of locations! They're points where the direction of a function changes (or terminates).  We also noticed that there are some common characteristics of those points. They're points where the derivative was either 0 or didn't exist. So we'll start by defining these points, and then we'll define the idea of highest and lowest points. Then we'll put together a result that we hopefully noticed here: that the highest and lowest points show up at these points where the derivative is 0 or doesn't exist.   Critical Point of a Function   We say that a point on the graph of is a critical point of the function if or doesn't exist.  If is a critical point of , then we sometimes will call a critical number and a critical value .    So these are the points we will look for to find the highest and lowest points.  Now we need to define this idea so that we can build the result that tells us how to find these highest and lowest points.   Local Maximum\/Minimum   A point is a local maximum of if there is some open interval of real numbers around (that is, ) and for all -values in the intersection of and the domain of .  Similarly, a point is a local minimum of if there is some open interval of real numbers around (that is, ) and for all -values in the intersection of and the domain of .  These are really just slightly technical ways of saying that is either the highest or lowest -value produced by the function for the -values near .     If you look around online, or in other textbooks, you'll find different definitions of these same kinds of points. Some of those definitions have silly stipulations, like saying that an ending point of a function cannot be a local maximum\/local minimum.  This seems to come from some sense that the derivative must be defined on each side of a local max\/min. In this book, we'll not worry about this restriction, and instead just look at the highest and lowest points relative to the other points near it.   Now we want to build the connection between these points. In , we pointed out that the highest and lowest points on a function all had the common theme of showing up at places where the derivative was 0 or didn't exist.   Every Local Maximum\/Minimum Occurs at a Critical Point   Every local maximum or local minimum of occurs at a critical point of .  Another way of saying this is that if is a local maximum or local minimum of , then it must also be a critical point of .    WAIT! STOP! Before you move on, let's make sure we understand what this theorem is saying. Or maybe what this theorem is not saying.  Notice that we are not saying that every critical point is a local maximum or local minimum! This is a classic every square is a rectangle but not every rectangle is a square situation.  Every local maximum\/minimum occurs at a critical point, but not every critical point is a local maximum\/minimum.    Direction of a Function (and Where it Changes)  Let's build up a way of classifying critical points as local maximums, local minimums, or neither.   Comparing Critical Points   Let's think about four different functions:                      Our goal is to find the critical points on the interval and then to try to figure out if these critical points are local maximums or local minimums or just points that the function increases or decreases through.     To start, we're going to be finding critical points. Without looking at a picture of the graph of the function, find the derivative.  Are there any -values (in the domain of the function) where the derivative doesn't exist? We are normally looking for things like division by 0 here, but we could be finding more than that. Check out to remind yourself if needed.  Are there any -values (in the domain of the function) where the derivative is 0?      Now that we have the critical points for the function, let's think about where the derivative might be positive and negative. These will correspond to the direction of a function, based on .  Write out the intervals of -values around and between your list of critical points. For each interval, what is the sign of the derivative? What do these signs mean about the direction of your function?      Without looking at the graph of your function:   What changes about how your function increases up to or decreases down to a critical point based on whether the derivative was 0 or the derivative didn't exist?    Does your function change direction at a critical point? What will that look like, whether it does or does not change direction?         Give a basic sketch of your graph. It might be helpful to find the -values for any critical points you've got. Then you can sketch your function increasing\/decreasing in the intervals between these points.  In your sketch, include enough detail to tell whether the derivative is 0 or doesn't exist at each critical point.      Compare your sketch to the actual graph of the function (you can find all of the graphs in the hint).          A graph of f(x). It is a parabola that increases up to a horizontal tangent line a the point (3\/2, 25\/4), and then decreases away from it.    A graph of g(x). It increases to a vertical tangent line at (-1,0), and then continues increases from there.      A graph of h(x). It decreases down to a vertical tangent line at (4,0), and then increases away from it, forming a cusp or sharp corner.    A graph of j(x). It decreases down to a horizontal tangent line at (0,1), and then decreases away from it.          This is great, we have a nice strategy for thinking about critical points!  Something we can notice in finding these critical points (as well as thinking about the domain of the function), we found all of the locations where the derivative is both not positive and not negative. This is a weird way of saying that all of the intervals in between the critical points we found and any breaks in the domain of the function (like if there were vertical asymptotes or holes or something) are places where the derivative is positive or negative.  Even more exciting: if the derivative function we found is continuous, then the says that it will only change signs at these critical points (or places like vertical asymptotes or holes). So this means that we can always construct a little chart or something, think about the -values around and at critical points or other breaks in the domain, and then look at what the derivative does as we move through those intervals and -values.  This will serve as a nice way of thinking about what's going on with our functions!   First Derivative Test   If is a critical point of and we can evaluate the derivative on either side of this point, then we can use the signs of the first derivative to classify the critical point:   If the sign of changes from positive to negative as passes through , then is a local maximum.    If the sign of changes from negative to positive as passes through , then is a local minimum.    If the sign of does not change as passes through , then the function increases or decreases (depending on whether or ) through .   We will often lay these results out in a chart or table, like the following:                             local max                               local min                                 increasing through                               decreasing through            Using the Graph of the First Derivative   First Derivative Test Graphically   Let's focus on looking at a picture of a derivative, , and trying to collect information about the function . This is what we've done already, except that we've done it by thinking about the representation of as a function rule written out with algebraic symbols. Here we'll focus on connecting all of that to the picture of the graphs.  For all of the following questions, refer to the plot below. You can add information with the hints whenever you need to. Don't reveal the picture of until you're really ready to check what you know.      Based on the graph of , estimate the interval(s) of -values where is increasing.      Based on the graph of , estimate the interval(s) of -values where is decreasing.      Find the -values of the critical points of . Once you've estimated these, classify them as local maximums, local minimums, or neither. Explain your reasoning.      What do you think the graph of looks like? Do your best to sketch it or explain it before revealing it!      Why could we estimate the -values of the critical numbers of , but not find the actual coordinates? How come we can't find the -value based on looking at the graph of ?     Reading the graphs of functions is, in general, an important skill. But it's an especially important idea to be able to read and understand the graph of a function like a derivative and then interpret what we are seeing into some other context.  So for us to really excel here, we'll want to focus on the fact that a first derivative tells about the slope or direction of a function. Whatever -values we find on the graph of a needs to be interpreted as a slope or rate of change of . Then we can string these slopes or rates of changes together to try to think about the behavior of by knowing how the -values are changing as we move along the curve of !    Strange Domains  We'll look at two more examples, both of them using functions whose domain is not  .     Consider the function . Find the domain of , the critical points of , and then the intervals where is increasing\/decreasing. Then, classify any critical points local maximums\/minimums if necessary.         The function has one critical point at . Why isn't there a critical point at ? What is happening there instead?                                        The domain of is due to the vertical asymptote at . The only critical point is at . The table below shows where is increasing and decreasing, as well as any local maximums or minimums.                                  decreasing  local min  increasing  asymptote  decreasing         Consider the function . Find the domain of , the critical points of , and then the intervals where is increasing\/decreasing. Then, classify any critical points local maximums\/minimums if necessary.         Notice that, by our definition of critical points, both and are critical points.                                     The domain of is . There are two critical points: one at and another at . The table below shows where is increasing and decreasing, as well as any local maximums or minimums.                 DNE               local max  decreasing  local min  increasing        So we have two things to notice:   When we have some gap or missing spot in the domain of a function, that can still divide up the intervals where our function is increasing or decreasing! We should notice, though, that since this isn't actually a point on the curve of our function, it won't be a critical point and so we have to interpret it differently: we can't use the !    An ending point of an interval is a location where the derivative cannot exist! We could define a one-sided derivative (similar to how we defined one-sided continuity in ), but for now we'll just say that the derivative doesn't exist, and call those ending points critical points. That means that depending on the direction that a function goes away (or leading up to) that ending point, we can classify it as a local maximum or minimum.   Lastly, just a couple of notes: in these little tables or charts (sometimes called sign charts , since they are showing the signs of the derivative), we'll use some shorthand notation. In , we used DNE to mean that a derivative does not exist at a point. Similarly, we used to represent the vertical asymptote at that -value (so that we didn't accidentally think it was a local maximum or minimum based on the signs of the derivative around it).  Moving forward, we'll use this same kind of analysis to think about how the derivative might be changing on these intervals. This rate of change of the slopes, the second derivative , will be a useful tool for gathering more information about how a function might be acting.     Explain what a critical number of is. What are the things we're looking for?     For the following functions, find the critical numbers and explain each one. Is it one where the derivative is 0, or one where the derivative doesn't exist? Feel free to confirm these by graphing the function!      on      The critical numbers are (where doesn't exist), (where the derivative is 0), and (where the derivative doesn't exist).       on      At , and we can see that doesn't exist. Since these are all in the domain of , they are critical numbers. We can also see that is never 0, so we don't have any of those types of critical numbers.            Since when and , these are critical numbers. We can also see that doesn't exist at , but this is not in the domain of since there is a vertical asymptote there, and so this is not a critical number.            We can see that is 0 at and , and there aren't any -values where doesn't exist. This means that and are the only critical numbers.       on     This function is the same as above, but the domain has been limited to only . The derivative doesn't exist at these new end points, and is not in the domain anymore. The critical numbers are , , and .            We can note that , and so this derivative will never not exist. The derivative is 0 at , which is the only critical number.       Find the critical numbers of the function , graphed below. Explain each one.   Graph of .   A function that decreases until the point (-2,-1), where it turns around (like a parabola) up to an open hole at (0,1). Then it jumps to a point at (0,2), and increases until it turns around at x=1 (like a parabola). It decreases until x=3. There is a sharp corner as it increases away from the point.      It looks like there is a horizontal tangent line at and , which would mean that the derivative is 0 at each of these locations. The derivative doesn't exist at and . Since all of these are in the domain of , we can say that all of these are critical numbers of .      Give an example of a function that has on and on . Show graphically where the function is increasing and decreasing. Explain how to find out the location of a local maximum or minimum for your example.      Sketch a graph of a function that increases everywhere, but has . Explain what sign the derivative is when .      For each of the following functions, use the first derivative to find the intervals where the function is increasing or decreasing.           The critical numbers are and .                                   increasing   decreasing   increasing              The only critical number is .                       decreasing   increasing              This derivative doesn't exist when , but this is not a critical number, since it's not in the domain of . There's a vertical asymptote there.                       decreasing   increasing              There is a critical number at .                       decreasing   increasing              These are the only critical numbers, since .                             decreasing   increasing   decreasing                                     increasing   decreasing                on        on        Explain how the First Derivative Test helps us classify critical numbers as local maximums or minimums.      Find any local maximums or local minimums for each of the following functions. Note that these are the same functions that you've already worked with in Practice Problem 6.                                                       on        on        Sketch a graph of a function that is continuous on and has the following characteristics. Label the intervals where is increasing\/decreasing, and find the locations of any local maximums\/minimums.    on      does not exist     on           on          Sketch a graph of a function and has the following characteristics. Label the intervals where is increasing\/decreasing, and find the locations of any local maximums\/minimums.    on           on      has a vertical asymptote at      on         "
+  "body": " Increasing and Decreasing Functions    How Should We Think About Direction?   Our goal in this activity is to motivate some new terminology and results that will help us talk about the direction of a function and some interesting points on a function (related to the direction of a function). For us to do this, we'll look at some different examples of functions and try to think about some unifying ideas.       A rational function that increases gently up to a point in the third quadrant, then decreases towards a vertical asymptote at x=0. In the first quadrant, the function decreases down to some point, and then gently increases.    A polynomial function that decreases down to a point, then increases, then decreases, then increases.      A kind of oscillating function that looks like it bounces off of the horizontal axis, creating sharp corners. It gently changes direction near the peak. The graph decreases, hits the axis and increases, then gently decreases towards the horizontal axis. It bounces one more time, and increases then decreases.    A bell curve, with horizontal asymptote at y=0. It increases up to a point on the top where it changes to decreasing towards the horizontal axis.      These examples do not cover all of the possibilities of how a function can act, but will hopefully provide us enough fertile ground to think about some different situations.     In each graph, find and identify:   The intervals where the function is increasing.    The intervals where the function is decreasing.    The points (or locations) around and between these intervals, the points where the function changes direction or the direction terminates.         Make a conjecture about the behavior of a function at any point where the function changes direction.    What do you think has to be true about the derivative at these points?      Look at the highest and lowest points on each function. You can even include the points that are highest and lowest just compared to the points around it. Make a conjecture about the behavior of the function at these points.    What do you think has to be true about the derivative at these points?     We want to turn this little bit of thinking and exploring into some useful definitions for us. To craft these definitions, we need to start with thinking about what we care about and why we might care about it.    Critical Points, Local Maximums, and Local Minimums  Let's start by saying what we're really looking for is the highest and lowest points on a function. These points are interesting, have useful applications, and are difficult to find in general without calculus. We hopefully noticed, though, that these points always end up showing up at the same kinds of locations! They're points where the direction of a function changes (or terminates).  We also noticed that there are some common characteristics of those points. They're points where the derivative was either 0 or didn't exist. So we'll start by defining these points, and then we'll define the idea of highest and lowest points. Then we'll put together a result that we hopefully noticed here: that the highest and lowest points show up at these points where the derivative is 0 or doesn't exist.   Critical Point of a Function   We say that a point on the graph of is a critical point of the function if or doesn't exist.  If is a critical point of , then we sometimes will call a critical number and a critical value .    So these are the points we will look for to find the highest and lowest points.  Now we need to define this idea so that we can build the result that tells us how to find these highest and lowest points.   Local Maximum\/Minimum   A point is a local maximum of if there is some open interval of real numbers around (that is, ) and for all -values in the intersection of and the domain of .  Similarly, a point is a local minimum of if there is some open interval of real numbers around (that is, ) and for all -values in the intersection of and the domain of .  These are really just slightly technical ways of saying that is either the highest or lowest -value produced by the function for the -values near .     If you look around online, or in other textbooks, you'll find different definitions of these same kinds of points. Some of those definitions have silly stipulations, like saying that an ending point of a function cannot be a local maximum\/local minimum.  This seems to come from some sense that the derivative must be defined on each side of a local max\/min. In this book, we'll not worry about this restriction, and instead just look at the highest and lowest points relative to the other points near it.   Now we want to build the connection between these points. In , we pointed out that the highest and lowest points on a function all had the common theme of showing up at places where the derivative was 0 or didn't exist.   Every Local Maximum\/Minimum Occurs at a Critical Point   Every local maximum or local minimum of occurs at a critical point of .  Another way of saying this is that if is a local maximum or local minimum of , then it must also be a critical point of .    WAIT! STOP! Before you move on, let's make sure we understand what this theorem is saying. Or maybe what this theorem is not saying.  Notice that we are not saying that every critical point is a local maximum or local minimum! This is a classic every square is a rectangle but not every rectangle is a square situation.  Every local maximum\/minimum occurs at a critical point, but not every critical point is a local maximum\/minimum.    Direction of a Function (and Where it Changes)  Let's build up a way of classifying critical points as local maximums, local minimums, or neither.   Comparing Critical Points   Let's think about four different functions:                      Our goal is to find the critical points on the interval and then to try to figure out if these critical points are local maximums or local minimums or just points that the function increases or decreases through.     To start, we're going to be finding critical points. Without looking at a picture of the graph of the function, find the derivative.  Are there any -values (in the domain of the function) where the derivative doesn't exist? We are normally looking for things like division by 0 here, but we could be finding more than that. Check out to remind yourself if needed.  Are there any -values (in the domain of the function) where the derivative is 0?      Now that we have the critical points for the function, let's think about where the derivative might be positive and negative. These will correspond to the direction of a function, based on .  Write out the intervals of -values around and between your list of critical points. For each interval, what is the sign of the derivative? What do these signs mean about the direction of your function?      Without looking at the graph of your function:   What changes about how your function increases up to or decreases down to a critical point based on whether the derivative was 0 or the derivative didn't exist?    Does your function change direction at a critical point? What will that look like, whether it does or does not change direction?         Give a basic sketch of your graph. It might be helpful to find the -values for any critical points you've got. Then you can sketch your function increasing\/decreasing in the intervals between these points.  In your sketch, include enough detail to tell whether the derivative is 0 or doesn't exist at each critical point.      Compare your sketch to the actual graph of the function (you can find all of the graphs in the hint).          A graph of f(x). It is a parabola that increases up to a horizontal tangent line a the point (3\/2, 25\/4), and then decreases away from it.    A graph of g(x). It increases to a vertical tangent line at (-1,0), and then continues increases from there.      A graph of h(x). It decreases down to a vertical tangent line at (4,0), and then increases away from it, forming a cusp or sharp corner.    A graph of j(x). It decreases down to a horizontal tangent line at (0,1), and then decreases away from it.          This is great, we have a nice strategy for thinking about critical points!  Something we can notice in finding these critical points (as well as thinking about the domain of the function), we found all of the locations where the derivative is both not positive and not negative. This is a weird way of saying that all of the intervals in between the critical points we found and any breaks in the domain of the function (like if there were vertical asymptotes or holes or something) are places where the derivative is positive or negative.  Even more exciting: if the derivative function we found is continuous, then the says that it will only change signs at these critical points (or places like vertical asymptotes or holes). So this means that we can always construct a little chart or something, think about the -values around and at critical points or other breaks in the domain, and then look at what the derivative does as we move through those intervals and -values.  This will serve as a nice way of thinking about what's going on with our functions!   First Derivative Test   If is a critical point of and we can evaluate the derivative on either side of this point, then we can use the signs of the first derivative to classify the critical point:   If the sign of changes from positive to negative as passes through , then is a local maximum.    If the sign of changes from negative to positive as passes through , then is a local minimum.    If the sign of does not change as passes through , then the function increases or decreases (depending on whether or ) through .   We will often lay these results out in a chart or table, like the following:                             local max                               local min                                 increasing through                               decreasing through            Using the Graph of the First Derivative   First Derivative Test Graphically   Let's focus on looking at a picture of a derivative, , and trying to collect information about the function . This is what we've done already, except that we've done it by thinking about the representation of as a function rule written out with algebraic symbols. Here we'll focus on connecting all of that to the picture of the graphs.  For all of the following questions, refer to the plot below. You can add information with the hints whenever you need to. Don't reveal the picture of until you're really ready to check what you know.      Based on the graph of , estimate the interval(s) of -values where is increasing.      Based on the graph of , estimate the interval(s) of -values where is decreasing.      Find the -values of the critical points of . Once you've estimated these, classify them as local maximums, local minimums, or neither. Explain your reasoning.      What do you think the graph of looks like? Do your best to sketch it or explain it before revealing it!      Why could we estimate the -values of the critical numbers of , but not find the actual coordinates? How come we can't find the -value based on looking at the graph of ?     Reading the graphs of functions is, in general, an important skill. But it's an especially important idea to be able to read and understand the graph of a function like a derivative and then interpret what we are seeing into some other context.  So for us to really excel here, we'll want to focus on the fact that a first derivative tells about the slope or direction of a function. Whatever -values we find on the graph of a needs to be interpreted as a slope or rate of change of . Then we can string these slopes or rates of changes together to try to think about the behavior of by knowing how the -values are changing as we move along the curve of !    Strange Domains  We'll look at two more examples, both of them using functions whose domain is not  .     Consider the function . Find the domain of , the critical points of , and then the intervals where is increasing\/decreasing. Then, classify any critical points local maximums\/minimums if necessary.         The function has one critical point at . Why isn't there a critical point at ? What is happening there instead?                                        The domain of is due to the vertical asymptote at . The only critical point is at . The table below shows where is increasing and decreasing, as well as any local maximums or minimums.                                  decreasing  local min  increasing  asymptote  decreasing         Consider the function . Find the domain of , the critical points of , and then the intervals where is increasing\/decreasing. Then, classify any critical points local maximums\/minimums if necessary.         Notice that, by our definition of critical points, both and are critical points.                                     The domain of is . There are two critical points: one at and another at . The table below shows where is increasing and decreasing, as well as any local maximums or minimums.                 DNE               local max  decreasing  local min  increasing        So we have two things to notice:   When we have some gap or missing spot in the domain of a function, that can still divide up the intervals where our function is increasing or decreasing! We should notice, though, that since this isn't actually a point on the curve of our function, it won't be a critical point and so we have to interpret it differently: we can't use the !    An ending point of an interval is a location where the derivative cannot exist! We could define a one-sided derivative (similar to how we defined one-sided continuity in ), but for now we'll just say that the derivative doesn't exist, and call those ending points critical points. That means that depending on the direction that a function goes away (or leading up to) that ending point, we can classify it as a local maximum or minimum.   Lastly, just a couple of notes: in these little tables or charts (sometimes called sign charts , since they are showing the signs of the derivative), we'll use some shorthand notation. In , we used DNE to mean that a derivative does not exist at a point. Similarly, we used to represent the vertical asymptote at that -value (so that we didn't accidentally think it was a local maximum or minimum based on the signs of the derivative around it).  Moving forward, we'll use this same kind of analysis to think about how the derivative might be changing on these intervals. This rate of change of the slopes, the second derivative , will be a useful tool for gathering more information about how a function might be acting.     Explain what a critical number of is. What are the things we're looking for?     For the following functions, find the critical numbers and explain each one. Is it one where the derivative is 0, or one where the derivative doesn't exist? Feel free to confirm these by graphing the function!      on      The critical numbers are (where doesn't exist), (where the derivative is 0), and (where the derivative doesn't exist).       on      At , and we can see that doesn't exist. Since these are all in the domain of , they are critical numbers. We can also see that is never 0, so we don't have any of those types of critical numbers.            Since when and , these are critical numbers. We can also see that doesn't exist at , but this is not in the domain of since there is a vertical asymptote there, and so this is not a critical number.            We can see that is 0 at and , and there aren't any -values where doesn't exist. This means that and are the only critical numbers.       on     This function is the same as above, but the domain has been limited to only . The derivative doesn't exist at these new end points, and is not in the domain anymore. The critical numbers are , , and .            We can note that , and so this derivative will never not exist. The derivative is 0 at , which is the only critical number.       Find the critical numbers of the function , graphed below. Explain each one.   Graph of .   A function that decreases until the point (-2,-1), where it turns around (like a parabola) up to an open hole at (0,1). Then it jumps to a point at (0,2), and increases until it turns around at x=1 (like a parabola). It decreases until x=3. There is a sharp corner as it increases away from the point.      It looks like there is a horizontal tangent line at and , which would mean that the derivative is 0 at each of these locations. The derivative doesn't exist at and . Since all of these are in the domain of , we can say that all of these are critical numbers of .      Give an example of a function that has on and on . Show graphically where the function is increasing and decreasing. Explain how to find out the location of a local maximum or minimum for your example.      Sketch a graph of a function that increases everywhere, but has . Explain what sign the derivative is when .      For each of the following functions, use the first derivative to find the intervals where the function is increasing or decreasing.           The critical numbers are and .                                   increasing   decreasing   increasing              The only critical number is .                       decreasing   increasing              This derivative doesn't exist when , but this is not a critical number, since it's not in the domain of . There's a vertical asymptote there.                       decreasing   increasing              There is a critical number at .                       decreasing   increasing              These are the only critical numbers, since .                             decreasing   increasing   decreasing                                     increasing   decreasing              Also note that doesn't exist, and is in the domain of , so this is a critical number as well.            DNE                increasing   decreasing         on      on . Since doesn't exist at and , these are both critical points.           DNE   DNE            increasing          on      To find critical points, we'll look for where or in :                                                            decreasing   decreasing   increasing   increasing   decreasing   decreasing   increasing   increasing         Explain how the First Derivative Test helps us classify critical numbers as local maximums or minimums.      Find any local maximums or local minimums for each of the following functions. Note that these are the same functions that you've already worked with in Practice Problem 6.                                           increasing  local max  decreasing  local min  increasing                                  decreasing  local min  increasing                                  decreasing   increasing                                  decreasing  local min  increasing                                        decreasing  local min  increasing  local max  decreasing                                  increasing  local max  decreasing                       DNE               local min  increasing  local max  decreasing         on              DNE   DNE           local min  increasing  local max         on              DNE   DNE           local min  increasing  local max                                                             decreasing   decreasing  local min  increasing   increasing  local max  decreasing   decreasing  local min  increasing   increasing         Sketch a graph of a function that is continuous on and has the following characteristics. Label the intervals where is increasing\/decreasing, and find the locations of any local maximums\/minimums.    on      does not exist     on           on          Sketch a graph of a function and has the following characteristics. Label the intervals where is increasing\/decreasing, and find the locations of any local maximums\/minimums.    on           on      has a vertical asymptote at      on         "
 },
 {
   "id": "act-FunctionDirection",
@@ -2057,7 +2057,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IncreasingDecreasing.html#def-CriticalPoint",
   "type": "Definition",
-  "number": "4.2.2",
+  "number": "4.2.3",
   "title": "Critical Point of a Function.",
   "body": " Critical Point of a Function   We say that a point on the graph of is a critical point of the function if or doesn't exist.  If is a critical point of , then we sometimes will call a critical number and a critical value .   "
 },
@@ -2066,7 +2066,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IncreasingDecreasing.html#def-LocalMaxMin",
   "type": "Definition",
-  "number": "4.2.3",
+  "number": "4.2.4",
   "title": "Local Maximum\/Minimum.",
   "body": " Local Maximum\/Minimum   A point is a local maximum of if there is some open interval of real numbers around (that is, ) and for all -values in the intersection of and the domain of .  Similarly, a point is a local minimum of if there is some open interval of real numbers around (that is, ) and for all -values in the intersection of and the domain of .  These are really just slightly technical ways of saying that is either the highest or lowest -value produced by the function for the -values near .   "
 },
@@ -2075,7 +2075,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IncreasingDecreasing.html#thm-LocalMaxMinAtCriticalPoints",
   "type": "Theorem",
-  "number": "4.2.4",
+  "number": "4.2.5",
   "title": "Every Local Maximum\/Minimum Occurs at a Critical Point.",
   "body": " Every Local Maximum\/Minimum Occurs at a Critical Point   Every local maximum or local minimum of occurs at a critical point of .  Another way of saying this is that if is a local maximum or local minimum of , then it must also be a critical point of .   "
 },
@@ -2084,7 +2084,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IncreasingDecreasing.html#act-ComparingCriticalPoints",
   "type": "Activity",
-  "number": "4.2.2",
+  "number": "4.2.6",
   "title": "Comparing Critical Points.",
   "body": " Comparing Critical Points   Let's think about four different functions:                      Our goal is to find the critical points on the interval and then to try to figure out if these critical points are local maximums or local minimums or just points that the function increases or decreases through.     To start, we're going to be finding critical points. Without looking at a picture of the graph of the function, find the derivative.  Are there any -values (in the domain of the function) where the derivative doesn't exist? We are normally looking for things like division by 0 here, but we could be finding more than that. Check out to remind yourself if needed.  Are there any -values (in the domain of the function) where the derivative is 0?      Now that we have the critical points for the function, let's think about where the derivative might be positive and negative. These will correspond to the direction of a function, based on .  Write out the intervals of -values around and between your list of critical points. For each interval, what is the sign of the derivative? What do these signs mean about the direction of your function?      Without looking at the graph of your function:   What changes about how your function increases up to or decreases down to a critical point based on whether the derivative was 0 or the derivative didn't exist?    Does your function change direction at a critical point? What will that look like, whether it does or does not change direction?         Give a basic sketch of your graph. It might be helpful to find the -values for any critical points you've got. Then you can sketch your function increasing\/decreasing in the intervals between these points.  In your sketch, include enough detail to tell whether the derivative is 0 or doesn't exist at each critical point.      Compare your sketch to the actual graph of the function (you can find all of the graphs in the hint).          A graph of f(x). It is a parabola that increases up to a horizontal tangent line a the point (3\/2, 25\/4), and then decreases away from it.    A graph of g(x). It increases to a vertical tangent line at (-1,0), and then continues increases from there.      A graph of h(x). It decreases down to a vertical tangent line at (4,0), and then increases away from it, forming a cusp or sharp corner.    A graph of j(x). It decreases down to a horizontal tangent line at (0,1), and then decreases away from it.         "
 },
@@ -2093,7 +2093,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IncreasingDecreasing.html#thm-FirstDerivativeTest",
   "type": "Theorem",
-  "number": "4.2.6",
+  "number": "4.2.8",
   "title": "First Derivative Test.",
   "body": " First Derivative Test   If is a critical point of and we can evaluate the derivative on either side of this point, then we can use the signs of the first derivative to classify the critical point:   If the sign of changes from positive to negative as passes through , then is a local maximum.    If the sign of changes from negative to positive as passes through , then is a local minimum.    If the sign of does not change as passes through , then the function increases or decreases (depending on whether or ) through .   We will often lay these results out in a chart or table, like the following:                             local max                               local min                                 increasing through                               decreasing through         "
 },
@@ -2102,7 +2102,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IncreasingDecreasing.html#act-FDTGraphically",
   "type": "Activity",
-  "number": "4.2.3",
+  "number": "4.2.9",
   "title": "First Derivative Test Graphically.",
   "body": " First Derivative Test Graphically   Let's focus on looking at a picture of a derivative, , and trying to collect information about the function . This is what we've done already, except that we've done it by thinking about the representation of as a function rule written out with algebraic symbols. Here we'll focus on connecting all of that to the picture of the graphs.  For all of the following questions, refer to the plot below. You can add information with the hints whenever you need to. Don't reveal the picture of until you're really ready to check what you know.      Based on the graph of , estimate the interval(s) of -values where is increasing.      Based on the graph of , estimate the interval(s) of -values where is decreasing.      Find the -values of the critical points of . Once you've estimated these, classify them as local maximums, local minimums, or neither. Explain your reasoning.      What do you think the graph of looks like? Do your best to sketch it or explain it before revealing it!      Why could we estimate the -values of the critical numbers of , but not find the actual coordinates? How come we can't find the -value based on looking at the graph of ?    "
 },
@@ -2111,7 +2111,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IncreasingDecreasing.html#ex-StrangeDomains",
   "type": "Example",
-  "number": "4.2.7",
+  "number": "4.2.10",
   "title": "",
   "body": "   Consider the function . Find the domain of , the critical points of , and then the intervals where is increasing\/decreasing. Then, classify any critical points local maximums\/minimums if necessary.         The function has one critical point at . Why isn't there a critical point at ? What is happening there instead?                                        The domain of is due to the vertical asymptote at . The only critical point is at . The table below shows where is increasing and decreasing, as well as any local maximums or minimums.                                  decreasing  local min  increasing  asymptote  decreasing         Consider the function . Find the domain of , the critical points of , and then the intervals where is increasing\/decreasing. Then, classify any critical points local maximums\/minimums if necessary.         Notice that, by our definition of critical points, both and are critical points.                                     The domain of is . There are two critical points: one at and another at . The table below shows where is increasing and decreasing, as well as any local maximums or minimums.                 DNE               local max  decreasing  local min  increasing       "
 },
@@ -2185,7 +2185,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6",
   "title": "",
-  "body": "  For each of the following functions, use the first derivative to find the intervals where the function is increasing or decreasing.           The critical numbers are and .                                   increasing   decreasing   increasing              The only critical number is .                       decreasing   increasing              This derivative doesn't exist when , but this is not a critical number, since it's not in the domain of . There's a vertical asymptote there.                       decreasing   increasing              There is a critical number at .                       decreasing   increasing              These are the only critical numbers, since .                             decreasing   increasing   decreasing                                     increasing   decreasing                on        on     "
+  "body": "  For each of the following functions, use the first derivative to find the intervals where the function is increasing or decreasing.           The critical numbers are and .                                   increasing   decreasing   increasing              The only critical number is .                       decreasing   increasing              This derivative doesn't exist when , but this is not a critical number, since it's not in the domain of . There's a vertical asymptote there.                       decreasing   increasing              There is a critical number at .                       decreasing   increasing              These are the only critical numbers, since .                             decreasing   increasing   decreasing                                     increasing   decreasing              Also note that doesn't exist, and is in the domain of , so this is a critical number as well.            DNE                increasing   decreasing         on      on . Since doesn't exist at and , these are both critical points.           DNE   DNE            increasing          on      To find critical points, we'll look for where or in :                                                            decreasing   decreasing   increasing   increasing   decreasing   decreasing   increasing   increasing      "
 },
 {
   "id": "ex-IncreasingDecreasing-7",
@@ -2203,7 +2203,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8",
   "title": "",
-  "body": "  Find any local maximums or local minimums for each of the following functions. Note that these are the same functions that you've already worked with in Practice Problem 6.                                                       on        on     "
+  "body": "  Find any local maximums or local minimums for each of the following functions. Note that these are the same functions that you've already worked with in Practice Problem 6.                                           increasing  local max  decreasing  local min  increasing                                  decreasing  local min  increasing                                  decreasing   increasing                                  decreasing  local min  increasing                                        decreasing  local min  increasing  local max  decreasing                                  increasing  local max  decreasing                       DNE               local min  increasing  local max  decreasing         on              DNE   DNE           local min  increasing  local max         on              DNE   DNE           local min  increasing  local max                                                             decreasing   decreasing  local min  increasing   increasing  local max  decreasing   decreasing  local min  increasing   increasing      "
 },
 {
   "id": "ex-IncreasingDecreasing-9",
@@ -2246,7 +2246,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Concavity.html#def-Concavity",
   "type": "Definition",
-  "number": "4.3.1",
+  "number": "4.3.2",
   "title": "Concavity and Inflection Points.",
   "body": " Concavity and Inflection Points   We say that a function is concave up on an interval if is increasing on the interval. If is decreasing on the interval, then we say that is concave down .  We say that a point is an inflection point if it is a point at which changes concavity (from concave up to concave down or vice versa).   "
 },
@@ -2255,7 +2255,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Concavity.html#act-FindingConcavity",
   "type": "Activity",
-  "number": "4.3.2",
+  "number": "4.3.3",
   "title": "Finding a Function’s Concavity.",
   "body": " Finding a Function's Concavity   We're going to consider a pretty complicated function to work with, and employ a strategy similar to what we did with the first derivative:   Our goal is to find the sign of on different intervals and where that sign changes .    To do' this, we'll find the places that or where doesn't exist. These are the critical points of .    From there, we can build a little sign chart, where we split up the -values based on the domain of and the critical numbers of . Then we can attach each interval of -values with a sign of the second derivative, , on that interval.    We'll interpret these signs. For any intervals where , we know that must be increasing and so is concave up. Similarly, for any intervals where , we know that must be decreasing and so is concave down.   Let's consider the function .     Find the first derivative, , and use some algebra to confirm that it is really: . While we have this first derivative, we could find the critical points of and then classify those critical points using the .  For our goal of finding the intervals where is concave up and concave down, and then finding the inflection points of , let's move on.      Find the second derivative, , and confirm that this is really: .      Our goal is to find the -values where or where doesn't exist.  Note that in order to find where , we are really looking at the -values that make the numerator : . Then, to find where doesn't exist, we are finding the -values that make the denominator : . Solve these equations.    Here are two strategies for solving :   Write some sort of substitution where  Now solve this for using the quadratic formula. Note that in the end, the two values you get will be possibilities for . Make sure you get your answer to be in terms of !    A similar technique (really the same thing) is to complete the square and write your equation this way: . Now solve for in a natural way.  Something to note here is that , so (and notably not ).       You should get that the critical points of are at and .      You have two critical points of (let's just call them and ). These are possible inflection points of , but we need to check to see if the concavity changes at these points.  Fill in the following sign chart and interpret.                                                                                concave down  inflection point  concave up  inflection point  concave down        Let's confirm what we've just calculated graphically. Below, we have three graphs:                 Move the point on any graph and make sure the statements about signs, directions, and concavity match what you found! You should notice that signs of the first and second derivative change at the local maximums\/minimums and the inflection points that we found.    "
 },
@@ -2264,7 +2264,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Concavity.html#subsec-DefiningCurvature-7",
   "type": "Example",
-  "number": "4.3.2",
+  "number": "4.3.4",
   "title": "",
   "body": "  Let's look at a few more examples, but this time they can be ones with derivatives that are a bit easier to work with.     Consider the function . Find the intervals where is concave up, the intervals where it is concave down, and then find the locations of any inflection points.      Consider the function . Find the intervals where is concave up, the intervals where it is concave down, and then find the locations of any inflection points.    "
 },
@@ -2273,7 +2273,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Concavity.html#thm-SecondDerivativeTest",
   "type": "Theorem",
-  "number": "4.3.3",
+  "number": "4.3.5",
   "title": "Second Derivative Test for Local Maximums or Local Minimums.",
   "body": " Second Derivative Test for Local Maximums or Local Minimums   If is a critical point of with , then we can use the value of the second derivative at to classify the critical point:   If , then is concave up at and around , and so the function has a local minimum at .    If , then is concave down at and around , and so the function has a local maximum at .    If , then the Second Derivative Test is inconclusive.      "
 },
@@ -2282,7 +2282,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Concavity.html#subsec-ConcavityAtCriticalPoints-4",
   "type": "Example",
-  "number": "4.3.4",
+  "number": "4.3.6",
   "title": "",
   "body": "  Find any critical points of the following functions. For each, use the Second Derivative Test to classify the critical point. If the Second Derivative Test fails (we get that the second derivative evaluated at the critical point is 0, and so is inconclusive), then classify the critical point in some other way.      where the domain of is .       where the domain of is .    "
 },
@@ -2381,7 +2381,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GlobalMaxMins.html#act-NoMaxMin",
   "type": "Activity",
-  "number": "4.4.1",
+  "number": "4.4.2",
   "title": "When Would We Not Have Maximums or Minimums?",
   "body": " When Would We Not Have Maximums or Minimums?   In this section, we're going to define these global maximums and then, most importantly, try to predict when these global maximums or global minimums might actually exist for a function.  To start, maybe we should come up with some examples of functions that do not have them!     Come up with some situations where a function does not have some combination of global maximum\/minimums. Sketch some graphs!      Come up with some examples of graphs of functions that are bounded (do not ever have -values that tend towards infinity in a limit) that do not have some combination of global maximum\/minimums.      For the examples of graphs that you have built or collected, what are the features of the functions that allow for the examples you picked? If you could impose some requirements that would fix the examples you found (so that they had both a global maximum and a global minimum), what requirements could you use?    "
 },
@@ -2390,7 +2390,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GlobalMaxMins.html#thm-ExtremeValueTheorem",
   "type": "Theorem",
-  "number": "4.4.2",
+  "number": "4.4.3",
   "title": "Extreme Value Theorem.",
   "body": " Extreme Value Theorem   If is a continuous function on a closed interval , then must have both a global maximum and a global minimum on the interval.   "
 },
@@ -2399,7 +2399,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GlobalMaxMins.html#subsec-BothMaxMins-6",
   "type": "Example",
-  "number": "4.4.3",
+  "number": "4.4.4",
   "title": "",
   "body": "  Check to see if each function (on the stated domain) satisfies the conditions of the Extreme Value Theorem, and then find any global maximums\/minimums of the function on the interval.      on        on        on     "
 },
@@ -2408,7 +2408,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GlobalMaxMins.html#thm-GlobalMaxMinOpenInterval",
   "type": "Theorem",
-  "number": "4.4.4",
+  "number": "4.4.5",
   "title": "",
   "body": "  If is a continuous function on some interval, and has only a single critical point (call it ) where the direction changes, then if that point is a local maximum of , then is the global maximum. Similarly, if is a local minimum, then is the global minimum of .   "
 },
@@ -2417,7 +2417,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-GlobalMaxMins.html#subsec-WhatAboutOpenIntervals-11",
   "type": "Example",
-  "number": "4.4.5",
+  "number": "4.4.6",
   "title": "",
   "body": "  For each function, find any global maximums\/minimums that may exist.      and note that the domain of this function is        and note that the domain of this function is .    "
 },
@@ -2480,7 +2480,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Optimization.html#act-VolumeCan",
   "type": "Activity",
-  "number": "4.5.1",
+  "number": "4.5.2",
   "title": "Constructing a Can.",
   "body": " Constructing a Can   A typical can of pop is 355 ml, and has around 15 ml of headspace (air). This results in a can that can hold approximately 23 cubic inches of volume.  Let's say we want to construct this can in the most efficient way, where we use the least amount of material. How could we do that? What are the dimensions of the can?     First, let's think of our can and try to translate this to some geometric shape with variable names. Collect as much information as we can about this setup! What is the shape? What are the names of the dimensions?    Our can is probably a cylinder! For a cylinder, we can define it based on a radius and height, and we normally call them and . Both of these will be measured in inches.      What is the actual measurement that we are trying to optimize? Are we finding a maximum or a minimum?    We're trying to minimize the amount of material used to create the can: this should match up with surface area!  The formula for the surface area of a cylinder is .      What other information about the can do we know? How do we translate this into a constraint, or a connection between our variables?    We're told that the volume is 23 cubic inches! The volume formula for a cylinder is , so we have a constraint: .      What kinds of values can our variables take on? Is there a smallest value for either? A largest? Are there other limitations to these?    It's hopefully obvious that we need positive dimensions to make sense: we can't have a can with a negative radius or a negative height.  Notice, also, that neither dimension can be equal to : if one of them were , then the volume would also be , which doesn't work with our constraint!  We can also notice that as one dimension gets close to 0, think about the radius for example, then the other dimension, the height in this case, would need to get really large to compensate and keep the volume fixed.  All of this to say that our intervals are:       Now we need to set up a calculus statement. This part mostly relies on us finding a way to build a single-variable function defining the surface area. Build that function, and then write down the calculus statement.    Can you solve the constraint, for one of the variables? Can you then use that to replace or substitute out one of the variables in our surface area formula to create a function, or ?    We have two options here, depending on which variable you isolated in the constraint and then substituted. These are the two ways of isolating for a variable in the constraint:               We want to find the minimum of on .    We want to find the minimum of on    Personally, I think the first option is probably easier to work with.      Do some calculus to find the global maximum or minimum, and solve the optimization problem.    Find a derivative, then find critical points, and test them using with the or the . Make sure you find the other dimension after you've confirmed that you found the minimum of the function!    Let's look at the version with on . So we have a critical point on at . Now we need to test it to ensure that it is a minimum (since that's what we're trying to find). We have two options to do this: the First Derivative Test, or the Second Derivative Test.    FDT:                           decreasing  local min  increasing   Since this is the only turning point, then we know that there is a global minimum of at .     SDT:  Hang on one second: notice that no matter what, since , then we can see that . We don't even need to evaluate this second derivative at the critical point to know that the function is concave up here!  So then we have to have a local minimum, and since it's the only turning point, a global minimum of at .   So we found our minimum! Now we just need to find the other dimension, . This is a lot of algebra, when we could have just plopped these values into a calculator and noticed the same, interesting thing.      What is the relationship between and , here? How do they compare? What about the height and diameter of our can?  Is this relationship noticeable in a typical can of pop?    The height is twice the radius, or the height is equal to the diameter!  We might call this a square-cylinder , since the width and the height of the cylinder are equal.  Do you ever see square-cylinder cans?    "
 },
@@ -2489,7 +2489,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Optimization.html#subsec-VolumeAndSurfaceArea-6",
   "type": "Note",
-  "number": "4.5.2",
+  "number": "4.5.3",
   "title": "",
   "body": " This question (why do the dimensions of cans not match what we found as the optimal solution?) is interesting, and sometime in the in the 1980's, a math professor felt strongly enough about it that they wrote a letter to Carnation, a brand of food products that produces canned goods, asking why reality doesn't match mathematics.  The professor received a response from the Assistant Product Manager of Friskies Buffet with 5 reasons for the non-square dimensions. The full text of the letter can be found here: .  "
 },
@@ -2579,7 +2579,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LinearApproximation.html#act-LinearApproximation-Exponential",
   "type": "Activity",
-  "number": "4.6.1",
+  "number": "4.6.2",
   "title": "Approximating an Exponential Function.",
   "body": " Approximating an Exponential Function   Let's consider the function . We're going to build the linear approximation, , but we also want to focus on understanding what the center is, and how we think about accuracy of our estimations.     We first need to find a good center for our linear approximation. We have two real requirements here:   We need the center to be some -value that will be close to the inputs we're most interested in. We know that for -values near the center, so we should keep this in mind. We don't have a specific input that we're interested in (we are not specifically focused on estimating for instance), so we don't need to worry about this for now.    We are going to need to evaluate the function and its derivative at the center: we use to find the slope and to find a -value for a point on the line. We'd like to choose a center that will make evaluating these functions reasonable, if we can!   We are going to choose a center of 0: why?      Build a linear approximation of centered at .    Build a line with a slope of that goes through the point .      Use your linear approximation to estimate the value of .    Since for -values near 0, we can say that . So you can evaluate your linear approximation function at .      Let's visualize this approximation a bit:   Are you confident in your approximation of ? Would you be more or less confident in an approximation of ? Why?      Is your estimate of too big or too small? How can you tell, without even calculating the actual value of ?  How can you tell that every estimate that you get out of any linear approximation of (no matter what the center is) is going to be too small?    It might be helpful to think about how the function moves away from the tangent line: how do the slopes of change? Can you link this to ideas of concavity?    "
 },
@@ -2588,7 +2588,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LinearApproximation.html#act-LinearApproximations",
   "type": "Activity",
-  "number": "4.6.2",
+  "number": "4.6.3",
   "title": "Approximating some Values.",
   "body": " Approximating some Values   Pick one of the following values to approximate:                      Throughout the rest of this activity, use your value to build a linear approximation of some relevant function and estimate the value you chose.     To build a linear approximation of some function at some center, we need two things:   A function.    A center.   What function will you be using for ? Why that one?    Your value should look like the output of some function after you plug in some -value. What function?      What center are you choosing? Why that one?    Remember that we want some input for your function that is both close to the input you'd like to estimate your function at and also a reasonable one to know the value of your function and its derivative.      Build your linear approximation at your center! You should end up with an actual linear function. It might be helpful to plot this linear function and your actual function to confirm that you have actually built a tangent line.      Use your linear approximation function to estimate your value! Report the estimate, and comment on the accuracy of your estimate. Without calculating the actual value, can you tell if this is close or not? Do you have an overestimate or underestimate?    Think about issues relating to the distance from the center, the concavity of the function, and even the rate at which the slopes change away as we move away from the center.    "
 },
@@ -2606,7 +2606,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LinearApproximation.html#act-NewtonsMethod",
   "type": "Activity",
-  "number": "4.6.3",
+  "number": "4.6.4",
   "title": "Walking in the Footsteps of Ancient Mathematicians.",
   "body": " Walking in the Footsteps of Ancient Mathematicians   Let's travel all the way back to the first (or maybe second) century AD and re-create Heron's method to approximate the value of . We'll develop this using modern calculus, and simple linear approximation.  We're going to reframe the problem, and instead we're going to try to use a linear approximation of to approximate the -value where . We know enough about quadratic functions to know that there are two values: and .     We're going to build a linear approximation of , and we need a reasonable center. Honestly, any integer will work, since we can evaluate and really easily, but we want to find one that is close to . Let's center our approximation at .  Find , and then construct the linear approximation: .    Since , we have and . So then we end up with the following for our linear approximation: .      Now we know that for -values near our center, . What if we estimate the -value where by solving instead? Since , the -value where should make pretty close to 0 at least.  Solve .           Ok, this might be kind of close to the value of , right? Let's visualize this.  Hm...so this isn't that good of an approximation yet. We can check this by looking at the actual value of our function at and seeing if it's close to 0. This...isn't that close to 0.  So let's try this again. This time, though, let's center our new linear approximation at .           Now set this new linear approximation equal to 0 and solve to estimate the solution to .           We can keep repeating this process, and that's exactly what the mathematicians we talked about discovered.  Say we've built a linear approximation at some -value (we'll call it ). . Set this equal to 0 and solve.           Let's visualize these calculations.   Something kind of strange happens in the last two steps. Why does the value of our estimation not change? What happens to our estimate?    "
 },
@@ -2615,7 +2615,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LinearApproximation.html#def-NewtonsMethod",
   "type": "Definition",
-  "number": "4.6.2",
+  "number": "4.6.5",
   "title": "Newton’s Method for Approximating Zeros of Functions.",
   "body": " Newton's Method for Approximating Zeros of Functions   If is some initial estimation of a solution to , then we can iteratively generate more estimations using the following formula provided that exists and is non-zero.   "
 },
@@ -2750,7 +2750,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LHopitalsRule.html#thm-LHopitalsRule",
   "type": "Theorem",
-  "number": "4.7.1",
+  "number": "4.7.2",
   "title": "L’Hôpital’s Rule.",
   "body": " L'Hôpital's Rule   If and are functions and is some real number with and both being differentiable at and and , then . Similarly, this holds if and .  If and are both differentiable as and either:    and      and    then .  This is also true as .   "
 },
@@ -2759,7 +2759,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LHopitalsRule.html#ex-FirstLHopitalsRule",
   "type": "Example",
-  "number": "4.7.2",
+  "number": "4.7.3",
   "title": "Some First Limits.",
   "body": " Some First Limits   Evaluate the following limits. You should first confirm that they are, actually, indeterminate forms!                                      "
 },
@@ -2768,7 +2768,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LHopitalsRule.html#ex-xlnx",
   "type": "Example",
-  "number": "4.7.3",
+  "number": "4.7.4",
   "title": "",
   "body": "  Evaluate the limit: Note that since and , this is a indeterminate form.    Rewrite this limit as: . Note that this is not an indeterminate form, and we can use L'Hôpital's Rule.     So .   "
 },
@@ -2777,7 +2777,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LHopitalsRule.html#subsubsec-Differences-4",
   "type": "Example",
-  "number": "4.7.4",
+  "number": "4.7.5",
   "title": "",
   "body": "  Evaluate the following limit: Note that since and , this is an indeterminate form.    Try to factor out . You won't be able to actual factor it nicely, but you'll end up with a fraction term that is an indeterminate form!     Let's focus on the limit , since it is in an indeterminate form. So then we can go back to our original limit:    "
 },
@@ -2786,7 +2786,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-LHopitalsRule.html#ex-xRootx",
   "type": "Example",
-  "number": "4.7.5",
+  "number": "4.7.6",
   "title": "",
   "body": "   Evaluate the following limit: Note that this is the indeterminate form.    We can rewrite as which is the same as . Now we can evaluate the limit , and make sure to return the value into the exponent.    We know from that . So then: So .      Evaluate the following limit: . Note that this is the indeterminate form.    Rewrite this as . Now you can use the exponential\/log composition to rewrite this again.     Now we can notice that the limit in the exponent is in a indeterminate form. So then we have:     "
 },
@@ -2903,7 +2903,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndefiniteIntegrals.html#def-Antiderivative",
   "type": "Definition",
-  "number": "5.1.1",
+  "number": "5.1.2",
   "title": "Antiderivative.",
   "body": " Antiderivative   For a function , we say that is an antiderivative of on an interval if on the interval.  We call the family of antiderivatives of , where represents any real number constant.   "
 },
@@ -2912,7 +2912,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndefiniteIntegrals.html#subsec-Antiderivatives-4",
   "type": "Example",
-  "number": "5.1.2",
+  "number": "5.1.3",
   "title": "",
   "body": "  For each of the following functions, find the family of antiderivatives.          Do we know a function whose derivative is ?                We won't be undoing the Power Rule with either of these! We might try to think about functions whose derivatives are and .       We use absolute values in the logarithm because we want to find a function whose derivative is on the whole interval that is defined. The log function is only defined for positive inputs, but we would like to be able to put any non-zero input into our function (since that's the domain of ).           It might help to write the function as .         "
 },
@@ -2921,7 +2921,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndefiniteIntegrals.html#act-InitialValueProblem",
   "type": "Activity",
-  "number": "5.1.2",
+  "number": "5.1.4",
   "title": "A File Sorting Speed Test.",
   "body": " A File Sorting Speed Test   A computer program is trying to sort a group of computer files based on their size. The program isn't very efficient, and the time that it takes to sort the files increases when it tries to sort more files.  The time that it takes, measured in seconds, based on the total, cumulative size of the files , measured in gigabytes, is modeled by a function . We don't know the function, but we do know that the time increases at an instantaneous rate of seconds when the total size, increases slightly. That is, the rate of change is a function of the file size, , itself.     We can build a function for . What is it?           Find all of the possibilities for the function modeling the time, , that it takes the computer program to sort files with a total size of .    We are looking for the family of antiderivatives of .      What does your constant represent, here? You can interpret it graphically, interpret it by thinking about derivatives, but you should also interpret it in terms of the time that it takes this program to sort these files by size.      Let's say that we feed some number of files totaling up to 1.4GB in size into this program. It takes 0.24 seconds to sort the files by size.  Find the function, , that models how quickly this program sorts these files.    "
 },
@@ -2930,7 +2930,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndefiniteIntegrals.html#subsec-InitialValueProblems-5",
   "type": "Example",
-  "number": "5.1.3",
+  "number": "5.1.5",
   "title": "",
   "body": "   For , find where .      For , find where and .    "
 },
@@ -2939,7 +2939,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndefiniteIntegrals.html#def-IndefiniteIntegral",
   "type": "Definition",
-  "number": "5.1.4",
+  "number": "5.1.6",
   "title": "Indefinite Integral.",
   "body": " Indefinite Integral   An indefinite integral represents a family of antiderivatives: where    is a symbol directing us to find a family of antiderivatives (or integrate)     is called the integrand     is a differential, and represents both the end of the integral as well as an indicator of what the input variable of the integrand should be (or what variable we antidifferentiate with regard to ).     is an antiderivative of (where ).     is called the constant of integration and represents any real number      "
 },
@@ -2948,7 +2948,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndefiniteIntegrals.html#subsec-IndefiniteIntegrals-4",
   "type": "Example",
-  "number": "5.1.5",
+  "number": "5.1.7",
   "title": "",
   "body": "  Find families of antiderivatives according to each of the following indefinite integrals.                 While we do not know how to antidifferentiate products of functions yet, we can just multiply the integrand function! Antidifferentiate this.           Similar to the previous problem, we do not know how to antidifferentiate quotients, but we can rewrite this function before we antidifferentiate! Antidifferentiate this!    "
 },
@@ -2957,7 +2957,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndefiniteIntegrals.html#thm-PowerRuleAntiderivatives",
   "type": "Theorem",
-  "number": "5.1.6",
+  "number": "5.1.8",
   "title": "Power Rule for Antiderivatives.",
   "body": " Power Rule for Antiderivatives    for    "
 },
@@ -2966,7 +2966,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndefiniteIntegrals.html#thm-ExpLogAntiderivatives",
   "type": "Theorem",
-  "number": "5.1.7",
+  "number": "5.1.9",
   "title": "Antiderivatives Related to the Exponential and Log Functions.",
   "body": " Antiderivatives Related to the Exponential and Log Functions       "
 },
@@ -2975,7 +2975,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndefiniteIntegrals.html#thm-TrigAntiderivatives",
   "type": "Theorem",
-  "number": "5.1.8",
+  "number": "5.1.10",
   "title": "Antiderivatives of Trigonometric Functions.",
   "body": " Antiderivatives of Trigonometric Functions       "
 },
@@ -2984,7 +2984,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IndefiniteIntegrals.html#thm-CombinationsOfIntegrals",
   "type": "Theorem",
-  "number": "5.1.9",
+  "number": "5.1.11",
   "title": "Combinations of Indefinite Integrals.",
   "body": " Combinations of Indefinite Integrals       Sums:       Differences:       Coefficients:        "
 },
@@ -3074,7 +3074,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-RiemannSums.html#act-RectangularApproximation",
   "type": "Activity",
-  "number": "5.2.2",
+  "number": "5.2.4",
   "title": "Approximating the Area using Rectangles.",
   "body": " Approximating the Area using Rectangles   We're going to stick with the function on the interval , and keep thinking about the area bounded by the curve and the -axis on this interval. We're going to approximate the area in a couple of different tries, each one more accurate than the one before. By the end of this activity, we'll have a pretty good process built!     Let's start with approximating this region with a single rectangle. We're going to define the rectangle by picking some -value in the interval . Then, we'll use the point at that -value to define the height of our rectangle.  Essentially, we are picking a single point on our function on the interval, and our approximation is pretending that the single point we picked is representative of the whole function on the interval.       Can you try repicking an -value, and try to find one that gets you an area approximation that is pretty good?      We're going to use more rectangles. Let's jump up to 3 rectangles. If we split up the interval between and into 3 rectangles, we can make them all the same width, and pick an -value that we can use to get a representative point for each of the 3 rectangles.  We'll need to pick 3 -values this time.       Can you try repicking your -values, and trying to find one that gets you an area approximation that is pretty good?      Let's scale this up a bit. Pick a good number for your number of rectangles. We'll call this value .  (If you're working in a classroom, maybe it would be good to pick the number of groups or the number of students, or some other number between 10 and 20 or something like that.)  For your value , we're going to divide up the interval between and into pieces. These will be the intervals that we pick from to get our rectangles. What are the subintervals? What are the widths of each subinterval (and then the widths of the rectangles)? Call this with .      For each subinterval, pick an -value in the subinterval to represent it.      Evaluate the function at each of the -values you picked. These are the heights of your rectangles!      Find the areas of each rectangle by multiplying the height of each rectangle by , the width of each rectangle.      Add these areas up to get a total approximation of the actual area!  What do you think: is it worth fiddling with what -value to pick from each subinterval to try to get a better approximation? If is large, do you think it matters how we pick the -values from each subinterval?    "
 },
@@ -3092,7 +3092,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-RiemannSums.html#def-RiemannSum",
   "type": "Definition",
-  "number": "5.2.3",
+  "number": "5.2.5",
   "title": "Riemann Sum.",
   "body": " Riemann Sum   For a closed interval with a partition with , consider some , any -value in the interval and , the length of the interval . If is a function that is defined on the interval , then we call the sum a Riemann Sum for on .   "
 },
@@ -3101,7 +3101,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-RiemannSums.html#note-RegularPartition",
   "type": "Note",
-  "number": "5.2.4",
+  "number": "5.2.6",
   "title": "",
   "body": " In practice, we typically choose a Regular Partition , where each subinterval is equally-wide, and so for every . We then normally write our Riemann sum as where is the value of the widths of all of the equally-sized subintervals.  "
 },
@@ -3209,7 +3209,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefiniteIntegral.html#act-WeirdAreas",
   "type": "Activity",
-  "number": "5.3.1",
+  "number": "5.3.3",
   "title": "Weird Areas.",
   "body": " Weird Areas   Let's think about a simple linear function, . We'll both approximate and evaluate the area bounded between and the -axis from to :     A graph of the linear function f(x)=4-3x. The points (0,4) and (3,-5) are marked, and the region between the curve and the axis is shaded in. This shape makes two triangles, one above the axis and one below it, since the line crosses the x-axis.        Explain why we do not need to think about Riemann sums in order for us to calculate the shaded area. How would you calculate this without using calculus?  Calculate the area!    Are there some shapes that you recognize? What are the dimensions of these shapes?      Let's approximate this area using a Riemann sum. Calculate , the Left Riemann sum with rectangles.    You're going to divide up the interval from to into 3 subintervals: , , and . Note that .  Then you're picking the left-most -value from each subinterval ( , , and ) to plug into in order to find the heights of your rectangles.      Let's approximate this area a second time, but with a different selection strategy for our -values. Calculate , the Right Riemann sum with rectangles.    You're still going to divide up the interval from to into 3 subintervals: , , and . We still have .  Then you're picking the right-most -value from each subinterval ( , , and ) to plug into in order to find the heights of your rectangles.      Compare your answers for and . They should be very different. Why? What is happening that makes specifically such a weird value?      Do you need to go back and recalculate the area geometrically (from the first part of this activity)? Explain why your answer for  should be negative, based on the Riemann sums we calculated.    Did you account for negative area in the second trianglular region in this integral?      Find a value such that: .      Find a different value such that: . Is there a second way of making this area 0?    Depending on what you did earlier, you might have to find some ending -value that balances the area above and below the -axis. If you already did this, then you might have to find an ending -value that collapses this shape down to a 1-dimensional shape with no area.    "
 },
@@ -3227,7 +3227,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefiniteIntegral.html#act-WeirdAreas-2",
   "type": "Activity",
-  "number": "5.3.2",
+  "number": "5.3.5",
   "title": "Weird Areas - Part 2.",
   "body": " Weird Areas - Part 2   We're going to think about the same region, kind of.     A graph of the linear function f(x)=4-3x. The points (0,4) and (3,-5) are marked, and the region between the curve and the axis is shaded in. This shape makes two triangles, one above the axis and one below it, since the line crosses the x-axis.    Let's think about the same linear function, , but this time we'll approximate and evaluate the area bounded between and the -axis from to :      Use geometry to calculate the area. Compare this to the result from .      Let's approximate this using a Riemann sum. Calculate , the Midpoint Riemann sum with rectangles.    You're going to divide up the interval from to into 3 subintervals: , , and .  Then you're picking the middle -value from each subinterval ( , , and ) to plug into in order to find the heights of your rectangles.  If and , , and , then what value do we use for the widths, ?      Do you need to go back and recalculate the area geometrically (from the first part of this activity)? Explain why your answer for  should be positive, based on the Riemann sums we calculated.    "
 },
@@ -3236,7 +3236,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefiniteIntegral.html#thm-IntegrableFunction",
   "type": "Theorem",
-  "number": "5.3.5",
+  "number": "5.3.7",
   "title": "Continuous Functions are Integrable.",
   "body": " Continuous Functions are Integrable   If is continuous on the interval , then is integrable on . That is, the limit exists and so we can evaluate the definite integral: .   "
 },
@@ -3245,7 +3245,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DefiniteIntegral.html#thm-DefiniteIntegralProperties",
   "type": "Theorem",
-  "number": "5.3.6",
+  "number": "5.3.8",
   "title": "Properties of Definite Integrals.",
   "body": " Properties of Definite Integrals   If , , and are real numbers and is a function that is continuous on the intervals and , then:   The signed area under a single point is 0:     We can cut a region into pieces and evaluate the areas separately:     When we integrate a function backwards through an interval, we get an area with an opposite sign:       "
 },
@@ -3353,7 +3353,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-FTOC.html#thm-FTOC1",
   "type": "Theorem",
-  "number": "5.4.1",
+  "number": "5.4.3",
   "title": "Fundamental Theorem of Calculus (Part 1).",
   "body": " Fundamental Theorem of Calculus (Part 1)   For a function that is continuous on an interval , and a function defined for -values in , then . That is: .    The proof of this theorem is one of the most delightful proofs we'll see. This is a connector theorem: a theorem that brings together several big ideas or objects from one common area of math and links them together. Let's enjoy the proof together.  Let be a function that is continuous on the interval . Then, we'll define the area function as for . We are interested in .  From , we know: If we just focus on the numerator, , we have: Let's approximate this integral with a Riemann sum with rectangle.     Area shaded in under a curve from t=a to t=x, labeled A(x). After this there is a rectangle with width Delta x that touches the curve at some point (x*,f(x*)). The rectangle spans from t=x to t=x + Delta x.    The total width of our interval is , so we have that where is some -value in . Note that we don't have a sum, as we normally would, since we are only adding a single area of a single rectangle.  This is only an approximation of the difference , and so we can say, for small values of , All that is left to do is to convince ourselves of two facts:   This approximation gets better as gets smaller, and as we have .     Area shaded in under a curve from t=a to t=x, labeled A(x). After this there is a very thin rectangle that touches the curve at some point (x*,f(x*)). This point looks like it's essentially at the same point as t=x, and the rectangle spans from t=x to some other t value close by, with the label Delta x approaches 0.      As , the options for in reduce to just , since the interval collapses towards the single value. So as , we have .   To be convinced that , we just have to rely on the fact that, while our Riemann sum only has rectangle, as the width(s) of all of our rectangles (our only one) approach 0, and so we end up with the definition of a definite integral in the limit: Hopefully it is easy to see that , since collapses on .  Once we are convinced of these two facts, then it is clear that , since: This completes the proof! Most of the proofs that you might see for this theorem use the to help, since we can see a connection between the derivative and the average rate of change of the area function: The Mean Value Theorem really is behind many of the most important results in calculus!   "
 },
@@ -3362,7 +3362,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-FTOC.html#act-FTOC2",
   "type": "Activity",
-  "number": "5.4.3",
+  "number": "5.4.6",
   "title": "Evaluating Areas and Antiderivatives.",
   "body": " Evaluating Areas and Antiderivatives   In this short activity, we'll just collect information about antiderivatives and this new area function, for a function that is continuous on the interval .  For our purposes in this activity, let's say that .     From the , we know that is an antiderivative of , since .  Write out the function , and then name\/write out one other antiderivative of , some .     , and for you can use your antidifferentiation rules from .      We know that all of the antiderivatives of a function are connected to each other.  Describe the connection between and your .    This is the result that we proved in and used to define a family of antiderivatives in .      What is the value of ? What is the value of ? How are they different from each other?     For , you can evaluate your antiderivative at . The important part is thinking about how these two values are different from each other.      What is the value of ? What is the value of ? How are they different from each other?     For , you can evaluate your antiderivative at . The important part is thinking about how these two values are different from each other. Is the difference between these values the same, or different from the difference between and ?      What about the differences: compared to ?    It is worth noting that:     "
 },
@@ -3371,7 +3371,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-FTOC.html#thm-FTOC2",
   "type": "Theorem",
-  "number": "5.4.4",
+  "number": "5.4.7",
   "title": "Fundamental Theorem of Calculus (Part 2).",
   "body": " Fundamental Theorem of Calculus (Part 2)   For a function continuous on the closed interval and some , an antiderivative of , then . The vertical bar means evaluated, and is typically read as evaluated from to .    "
 },
@@ -3380,7 +3380,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-FTOC.html#subsec-EvaluatingIntegrals-5",
   "type": "Example",
-  "number": "5.4.5",
+  "number": "5.4.8",
   "title": "",
   "body": "  Evaluate the following definite integrals. Interpret the answers.           This is the area we were approximating in !            Why is this area 0? What does that mean about the region trapped between and the -axis between and ?            This value is . Why is this value negative? What does that mean about the region we're looking at, and the function we're looking at?    "
 },
@@ -3479,7 +3479,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreDefiniteIntegral.html#thm-SymmetricIntegrals",
   "type": "Theorem",
-  "number": "5.5.1",
+  "number": "5.5.2",
   "title": "Definite Integrals of Symmetric Functions.",
   "body": " Definite Integrals of Symmetric Functions   If is a continuous function on for some real number , then:   If is even symmetric on , then: .    If is odd symmetric on , then: .      "
 },
@@ -3488,7 +3488,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreDefiniteIntegral.html#act-SymmetricIntegrals",
   "type": "Activity",
-  "number": "5.5.2",
+  "number": "5.5.3",
   "title": "Connecting Symmetric Integrals.",
   "body": " Connecting Symmetric Integrals   We're going to do some sketching here, and I want you to be clear about something: your sketches can be absolutely terrible. It's ok! They just need to embody the kind of symmetry we're talking about. You will probably sketch something and notice that your areas aren't to scale (or maybe even the wrong sign!), and that's fine.  It might be helpful to practice sketching graphs accurately, but don't worry if that part is a struggle.     Sketch a function with the following properties:    is even symmetric on the interval                    Find the values of the following integrals:                Since is even symmetric, what are the two other integrals that we know about? How can we use those to help us find these two?                      Sketch a function with the following properties:    is odd symmetric on the interval                    Find the values of the following integrals:                Since is even symmetric, what are the two other integrals that we know about? How can we use those to help us find these two?                    "
 },
@@ -3497,7 +3497,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreDefiniteIntegral.html#act-AvgValue",
   "type": "Activity",
-  "number": "5.5.3",
+  "number": "5.5.4",
   "title": "Visualizing the Average Height of a Function.",
   "body": " Visualizing the Average Height of a Function   We are going to build a formula to find the average height or average value of a function on the interval . We're going to look at a function and try to find the average height. Along the way, we'll think a bit about areas!     Consider the following function. Find the average height of the function on the interval pictured!       How does the area under the curve on the interval compare to the area of the rectangle formed by the average height line?      How do you define the two areas?    One of these is the area under from to , which we can use calculus for!  The other is the area of a rectangle with a height (the average height of ) and a width (the width of the interval).      Set up an equation connecting the two areas, and solve for the average height of .    If , then doesn't it make sense that ? How, then, do we find average height by dividing an area and a width?    "
 },
@@ -3506,7 +3506,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreDefiniteIntegral.html#thm-AverageValue",
   "type": "Theorem",
-  "number": "5.5.2",
+  "number": "5.5.5",
   "title": "Average Value of a Function.",
   "body": " Average Value of a Function   If a function is continuous on the interval , then the average value of on is: .   "
 },
@@ -3515,7 +3515,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreDefiniteIntegral.html#subsec-AverageValue-4",
   "type": "Example",
-  "number": "5.5.3",
+  "number": "5.5.6",
   "title": "",
   "body": "  A small model glider airplane is thrown and travels for 10 seconds before it hits the ground. The height of the glider is modeled by the function on the interval .  Find the average height of the glider on the time interval.     The glider has an average height of 6 feet and 4 inches.   "
 },
@@ -3632,7 +3632,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-uSubstitution.html#fig-uSub",
   "type": "Figure",
-  "number": "5.6.1",
+  "number": "5.6.3",
   "title": "",
   "body": " General idea of how a variable substitution in an integral works.   Two rectangles, one labeled \"x Context\" and the other, beside it, labeled \"u Context.\" Inside the \"x Context\" rectangle is an integral of f(x) dx with an arrow pointing towards F(x)+C. Inside the \"u Context\" rectangle is an integral of g(u) du with an arrow pointing towards G(u)+C. There is an arrow connecting the integral of f(x) dx in the first rectangle to the integral of g(u) du labeled u = ... and du = u' dx. Then there is an arrow connecting G(u)+C to F(x)+C labeled u = ...    "
 },
@@ -3641,7 +3641,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-uSubstitution.html#act-duFixes",
   "type": "Activity",
-  "number": "5.6.3",
+  "number": "5.6.4",
   "title": "Compare Two Integrals.",
   "body": " Compare Two Integrals   Let's compare two integrals, and use this to build a more general strategy for performing -substitution.     Consider the following integral: Select and justify a choice for .    Where is the composition? Do you see a function-derivative pair?      Perform the -substitution and antidifferentiate, and then substitute back to write your antiderivative in terms of .    We'll let , and so .       Compare that integral to this one: What is different about this new integral? What has remained the same? How does that impact your choice for , or does it impact your choice for ?    Notice that nothing has changed about the inside function!      Has that changed what should be?    Remember that . If we didn't change our selection of , then shouldn't remain the same as well?      Ok, so we've noticed an issue here. There are plenty of good ways of solving this problem, where doesn't show up perfectly in our integral. In this case, we have that we're missing a necessary coefficient. We have the part, but we are missing the .  Try to rewrite our integral with a coefficient in there. We'll do that by multiplying the integrand function by , disguised as or .           Now we can use the same -substitution as before, and integrate in a similar way! Notice, though, that we will retain the coefficient of .  (This should be reasonable: our integral is of the original one, since our coefficient was to the original's .)  Go ahead and integrate!         "
 },
@@ -3650,7 +3650,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-uSubstitution.html#fig-uSubDefinite",
   "type": "Figure",
-  "number": "5.6.2",
+  "number": "5.6.5",
   "title": "",
   "body": " General idea of how a variable substitution in a definite integral works.   Two rectangles, one labeled \"x Context\" and the other, beside it, labeled \"u Context.\" Inside the \"x Context\" rectangle is an integral from x=a to x=b of f(x) dx with an arrow pointing towards F(x)+C and then an arrow continuing to F(b)-F(a). Inside the \"u Context\" rectangle is an integral from u=c to u=d of g(u) du with an arrow pointing towards G(u)+C and then an arrow continuing to G(d)-G(c). There is an arrow connecting the integral of f(x) dx in the first rectangle to the integral of g(u) du labeled u = ... and du = u' dx. Then there is an arrow connecting G(u)+C to F(x)+C labeled u = ... Then there is a double-sided arrow connecting F(b)-F(a) and G(d)-G(c) labeled \"equivalent.\"    "
 },
@@ -3668,7 +3668,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-uSubstitution.html#ex-uSubTurn",
   "type": "Example",
-  "number": "5.6.3",
+  "number": "5.6.6",
   "title": "",
   "body": "  Integrate the following, making sure to translate the whole integrand function to be written in terms of .     First, notice that is a great choice: we really want to focus on that composition. If this is the case, though, then .    We can write as , or if you really want to, we can write it as     Our -substitution formula can be written in a whole bunch of different ways! These are all equivalent, but the first two might be the most helpful:   Anywhere in our integral that we can see an , we can replace that with .    We can also replace any extra  pieces with !           "
 },
@@ -3767,7 +3767,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#def-position-velocity-acceleration",
   "type": "Definition",
-  "number": "6.1.2",
+  "number": "6.1.3",
   "title": "Position, Velocity, and Acceleration Functions.",
   "body": " Position, Velocity, and Acceleration Functions   For an object moving along a straight line, if represents the position of that object at time , then the velocity of the object at time is and the acceleration of the object at time is .   "
 },
@@ -3776,7 +3776,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#act-Jogger",
   "type": "Activity",
-  "number": "6.1.2",
+  "number": "6.1.4",
   "title": "A Friendly Jogger.",
   "body": " A Friendly Jogger   Consider a jogger running along a straight-line path, where their velocity at hours is , and velocity is measured in miles per hour. We begin observing this jogger at and observe them over a course of 3 hours.     When is the jogger's acceleration equal to 0 mi\/hr ?    Solve .      Does this time represent a maximum or minimum velocity for the jogger?    You can use the First Derivative Test or the Second Derivative Test here!      When is the jogger's velocity equal to 0 mi\/hr?      Describe the motion of the jogger, including information about the direction that they travel and their top speeds.    "
 },
@@ -3785,7 +3785,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#def-displacement",
   "type": "Definition",
-  "number": "6.1.3",
+  "number": "6.1.5",
   "title": "Displacement of an Object.",
   "body": " Displacement of an Object   If an object is moving along a straight line with velocity and position , then the displacement of the object from time to is    "
 },
@@ -3794,7 +3794,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#def-distance",
   "type": "Definition",
-  "number": "6.1.4",
+  "number": "6.1.6",
   "title": "Distance Traveled.",
   "body": " Distance Traveled   If an object is moving along a straight line with velocity , then the distance traveled by the object from time to is: Here, we call the speed of the object (instead of the velocity).   "
 },
@@ -3803,7 +3803,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#act-Jogger-2",
   "type": "Activity",
-  "number": "6.1.3",
+  "number": "6.1.7",
   "title": "Tracking our Jogger.",
   "body": " Tracking our Jogger   Let's revisit our jogger from .     Calculate the total displacement of the jogger from to .    Set up and evaluate a definite integral here, using the velocity function.      Think back to our description of the jogger's movement: when is this jogger moving backwards? Split up the time interval from (the start of their run) to (where is the time that the jogger changed direction) to . Calculate the displacements on each of these two intervals.      Calculate the total distance that the jogger traveled in their 3 hour run.    Remember that we're really calculating:     "
 },
@@ -3812,7 +3812,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#thm-FuturePosition",
   "type": "Theorem",
-  "number": "6.1.5",
+  "number": "6.1.8",
   "title": "Future Position of an Object.",
   "body": " Future Position of an Object   For some object moving along a straight line with velocity and an initial position of , the future position of the object at some time (with ) is: Note that we change the variable in the velocity function while we integrate: since we want our position function to be in terms of , the ending time that we calculate the displacement up to, we need to choose to write the velocity function in terms of a different variable. Mechanically, there is no difference, since we're just swapping out the variables and naming them .   "
 },
@@ -3821,7 +3821,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-NetChange.html#thm-FutureValue",
   "type": "Theorem",
-  "number": "6.1.6",
+  "number": "6.1.9",
   "title": "Net Change and Future Value.",
   "body": " Net Change and Future Value   Suppose the value changes over time at a known rate . Then the net change in between and is: . Similarly, given the initial value , the future value of at time is:    "
 },
@@ -3886,7 +3886,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Area Between Curves",
-  "body": " Area Between Curves   We're going to stick with our theme of thinking about a , but this time we'll get back to thinking about area. First, we'll try to remind ourselves not just of what a Riemann sum is, but how we actually constructed it.    Remembering Riemann Sums   Remembering Riemann Sums   Let's start with the function on the interval with on the interval. We will construct a Riemman sum to approximate the area under the curve on this interval, and then build that into the integral formula.     A graph of a positive curve, labeled f(x), from x=a to x=b. The region between the curve and the x-axis is shaded.       Divide the interval into 4 equally-sized subintervals.      Pick an for , one for each subinterval. Then, plot the points , , , and .    These points are just general ones, and you don't have to come up with actual numbers for the -values or the corresponding -values. Instead, just draw them in on the curve, somewhere in each of the subintervals.      Use these 4 points to draw 4 rectangles. What are the dimensions of these rectangles (the height and width)?    You won't have any numbers to calculate here, really: instead, see if you can calculate the widths by thinking about the total width of your interval. Then calculate the heights by thinking about the points you created.      Find the area of each rectangle by multiplying the heights and widths for each rectangle.      Add up the areas to construct a Riemman sum. Is this sum very accurate? Why or why not?    Try to think about the accuracy of your area approximation by looking at it visually. Are there any places where your approximation looks far away from the actual area we're thinking about?      Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of a positive curve, labeled f(x), from x=a to x=b. Now, though, there is a single rectangle sitting on the x-axis and spanning up to f(x). It is delta-x wide, and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Height:   Width:       Find , the area of this th rectangle.           Add up the areas of for to approximate the total area,     You might want to use summation notation, starting with            Apply a limit as to this Riemann sum in order to construct the integral formula for the area under the curve from to .          Hopefully this is helpful. If you'd like more reminders on this, you can always revisit . For now, though, we mainly want to think about the general process we're using:   We slice the region from to into pieces, and, for convenience, we choose an equal width: .    From each of the slices, we select some -value (called from the th slice). We use that to evaluate the function on each slice: .    We multiply the function value, , by the width of the slice, , to get the measured area of each slice, .    We can estimate the total measured area of the region by adding all of the areas of the slices together: .    If we keep adding more and more slices (that keep getting thinner and thinner), then we eventually (in the limit) evaluate the area exactly: .   We're going to use this process (we'll call it the slice-and-sum process) for other measurements! Let's see how we can change this slightly to measure a different area.    Building an Integral Formula for the Area Between Curves   Area Between Curves   Let's start with our same function on the same interval m but also add the function on the same interval, with on the interval. We will construct a Riemann sum to approximate the area between these two curves on this interval, and then build that into the integral formula.     A graph of a positive curve and a less positive curve, g(x), labeled f(x), from x=a to x=b. The space between these curves is shaded.       Divide the interval into 4 equally-sized subintervals.      Pick an for , one for each subinterval. Plot the points , , , and . Then plot the corresponding points on the function: , , , and .      Use these 8 points to draw 4 rectangles, with the points on the function defining the tops of the rectangles and the points on the function defining the bottoms of the rectangles. What are the dimensions of these rectangles (the height and width)?      Find the area of each rectangle by multiplying the heights and widths for each rectangle.      Add up the areas to construct a Riemman sum.      Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of the two curves f(x) and g(x) between x=a and x=b. Now, though, there is a single rectangle sitting on g(x) and spanning up to f(x). It is delta-x wide. The bottom of the rectangle touches the graph at the point (x_k, g(x_k)) and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Height:   Width:       Find , the area of this th rectangle.           Add up the areas of for to approximate the total area,     You might want to use summation notation, starting with            Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .           Area Between Curves   If and are continuous functions with on the interval , then the area bounded between the curves  and between and is .    When we're applying this formula for the area between curves, we won't need to recreate the process from to create the integral formula. We simply can identify the functions bounding the region and the end points of the interval, and set up the integral.  We'll use the slice-and-sum process for two reasons:   To justify these formulas that we continue to build! While this one isn't that difficult (you could have just built the formula by thinking about the area between curves as a difference in areas under each curves), some of the formulas we play with in this chapter will not be as intuitive.    To help us understand what a Riemann sum actually is . It's a product of a function value from a subinterval multiplied by the width of that subinterval, summed up across some larger interval.       For each of the following regions, set up an integral expression representing the area of the region. We also can practice evaluating these integrals to actually calculate the areas.  For each of these described regions, the hint will reveal a visualization of the region (using Desmos). Feel free to use that to set up the integral expression!     The region bounded between the graphs and from to .                The region bounded between the graphs and from to .         Notice that the boundary functions intersect at , and they switch order. We'll need to split this region into two different regions in order to identify the \"top\" and \"bottom\" boundary functions.       The region bounded between the curves and and the -axis.         On the interval , the region is bounded above by and below by the -axis ( ). On the interval , the region is bounded above by and below by .        Changing Perspective  This last example had two interesting regions: we had to split them into two pieces because the boundary functions changed order or, in the case of the last example, changed completely to different boundary functions.  We're going to redo the last problem and work on trying to change our perspective a bit in order to get a single integral to evaluate the area.   Trying for a Single Integral   Let's consider the same setup as earlier: the region bounded between two curves, and , as well as the -axis (the line ). We'll need to name these functions, so let's call them and . But this time, we'll approach the region a bit differently: we're going to try to find the area of the region using only a single integral.     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.       The range of -values in this region span from to . Divide this interval evenly into 4 equally sized-subintervals. What is the height of each subinterval? We'll call this .           Pick a -value from each sub-interval. You can call these , , , and .      Find the corresponding -values on the function for each of the -values you selected. These will be , , , and .    You're really just putting your -values into the equation and solving for . Or you can solve for in general, by solving for while leaving as a variable.      Do the same thing for the function. Now you have 8 points that you can plot: , , , and as well as , , , and . Plot them.      Use these points to draw 4 rectangles with points on and , determining the left and right ends of the rectangle. What are the dimensions of these rectangles (height and width)?      Find the area of each rectangle by multiplying the height and widths of each rectangle.      Add up the areas to construct a Riemann sum.      Again, we'll generalize this and think about the th rectangle, pictured below.     The same region, but this time with a horizontal rectangle spanning across it, with the height labeled delta y. The curves are relabeled x=y-6 and x = cuberoot(y).    Which variable defines the location of the th rectangle, here? That is, if you were to describe where in this graph the th rectangle is laying, would you describe it with an or variable? This will act as our general input variable for the integral we're ending with.      What are the dimensions of the th rectangle?    Height:   Width:       Find , the area of this th rectangle.           Add up the areas of for to approximate the total area, .    You might want to use summation notation, starting with            Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .           Now that you have an integral, evaluate it! Find the area of this region to compare with the work we did previously, where we used multiple integrals to measure the size of this same region.          We can rewrite our definition of the area between curves ( ) to account for this change in perspective, by thinking about these same functions in terms of .   Area Between Curves (in terms of )   If and are continuous functions with on the interval of -values , then the area bounded between the curves  and from to is .    This strategy of inverting our functions to change the variable that we integrate with regard to is useful, but a tricky part of this is deciding when to change variables.  Something that we can look for is intersection points in the region we're working with. If, in our plan for setting up an integral, we would stack rectangles that would pass through an intersection point, then this indicates that we would need to split our region up to set up the integrals (since the boundary functions are changing). If we change the orientation of the rectangles, would they still pass through an intersection point? Are the functions that we're working with relatively easy to invert? Can we antidifferentiate these functions, or their inverted versions?  These are some of the things we'll consider as we make these decisions.    To finish things up, let's look at a nice little interactive graph that can help show the differences between finding area with regard to (using in our rectangles and in our integrals) and finding area with regard to (using in our rectangles and in our integrals).      Explain how we use the \"slice and sum\" method to build an integral formula for the area bounded between curves. Give some details, enough to make sure you understand how the Riemann sums are constructed and how they turn into our integral formula.    What are some changes\/considerations that we need to make when we decide to set up our integral in terms of instead of ?     Set up (and practice evaluating) an integral expression representing the area of each of the regions described below.  The hint for each problem will open a graph of the region.     The region bounded by the curves and between and .              The region bounded by the curves and between and               The region bounded by the curves and and the line .              The region bounded by the curves and .       This one has annoying limits of integration, and so evaluating the integral is more annoying than it is worth.        Set up and evaluate an integral representing the area of each of the regions described below. Explain whether you chose to integrate with respect to or , and why you made that choice.     The region bounded by the curves and and the line between and .        Or, alternatively: . Admittedly, it is annoying to evaluate this in terms of , even though it is satisfying to have only a single integral.  The area itself is .      The region bounded by the curves and and the line in the first quadrant.        Or alternatively: . In either case, the area is .      The region bounded by the curves and and the line in the third quadrant.        Or, alternatively: . In either case, the area is .      The region bounded by the curves , , and in the first quadrant with .        Or, alternatively: . In either case, the area is .      The region bounded by the curves , , and in the first quadrant.         The other region bounded by the curves , , and in the first quadrant.         The region bounded by the curves and .         The region(s) bounded by the curves and .         "
+  "body": " Area Between Curves   We're going to stick with our theme of thinking about a , but this time we'll get back to thinking about area. First, we'll try to remind ourselves not just of what a Riemann sum is, but how we actually constructed it.    Remembering Riemann Sums   Remembering Riemann Sums   Let's start with the function on the interval with on the interval. We will construct a Riemman sum to approximate the area under the curve on this interval, and then build that into the integral formula.     A graph of a positive curve, labeled f(x), from x=a to x=b. The region between the curve and the x-axis is shaded.       Divide the interval into 4 equally-sized subintervals.      Pick an for , one for each subinterval. Then, plot the points , , , and .    These points are just general ones, and you don't have to come up with actual numbers for the -values or the corresponding -values. Instead, just draw them in on the curve, somewhere in each of the subintervals.      Use these 4 points to draw 4 rectangles. What are the dimensions of these rectangles (the height and width)?    You won't have any numbers to calculate here, really: instead, see if you can calculate the widths by thinking about the total width of your interval. Then calculate the heights by thinking about the points you created.      Find the area of each rectangle by multiplying the heights and widths for each rectangle.      Add up the areas to construct a Riemman sum. Is this sum very accurate? Why or why not?    Try to think about the accuracy of your area approximation by looking at it visually. Are there any places where your approximation looks far away from the actual area we're thinking about?      Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of a positive curve, labeled f(x), from x=a to x=b. Now, though, there is a single rectangle sitting on the x-axis and spanning up to f(x). It is delta-x wide, and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Height:   Width:       Find , the area of this th rectangle.           Add up the areas of for to approximate the total area,     You might want to use summation notation, starting with            Apply a limit as to this Riemann sum in order to construct the integral formula for the area under the curve from to .          Hopefully this is helpful. If you'd like more reminders on this, you can always revisit . For now, though, we mainly want to think about the general process we're using:   We slice the region from to into pieces, and, for convenience, we choose an equal width: .    From each of the slices, we select some -value (called from the th slice). We use that to evaluate the function on each slice: .    We multiply the function value, , by the width of the slice, , to get the measured area of each slice, .    We can estimate the total measured area of the region by adding all of the areas of the slices together: .    If we keep adding more and more slices (that keep getting thinner and thinner), then we eventually (in the limit) evaluate the area exactly: .   We're going to use this process (we'll call it the slice-and-sum process) for other measurements! Let's see how we can change this slightly to measure a different area.    Building an Integral Formula for the Area Between Curves   Area Between Curves   Let's start with our same function on the same interval m but also add the function on the same interval, with on the interval. We will construct a Riemann sum to approximate the area between these two curves on this interval, and then build that into the integral formula.     A graph of a positive curve and a less positive curve, g(x), labeled f(x), from x=a to x=b. The space between these curves is shaded.       Divide the interval into 4 equally-sized subintervals.      Pick an for , one for each subinterval. Plot the points , , , and . Then plot the corresponding points on the function: , , , and .      Use these 8 points to draw 4 rectangles, with the points on the function defining the tops of the rectangles and the points on the function defining the bottoms of the rectangles. What are the dimensions of these rectangles (the height and width)?      Find the area of each rectangle by multiplying the heights and widths for each rectangle.      Add up the areas to construct a Riemman sum.      Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of the two curves f(x) and g(x) between x=a and x=b. Now, though, there is a single rectangle sitting on g(x) and spanning up to f(x). It is delta-x wide. The bottom of the rectangle touches the graph at the point (x_k, g(x_k)) and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Height:   Width:       Find , the area of this th rectangle.           Add up the areas of for to approximate the total area,     You might want to use summation notation, starting with            Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .           Area Between Curves   If and are continuous functions with on the interval , then the area bounded between the curves  and between and is .    When we're applying this formula for the area between curves, we won't need to recreate the process from to create the integral formula. We simply can identify the functions bounding the region and the end points of the interval, and set up the integral.  We'll use the slice-and-sum process for two reasons:   To justify these formulas that we continue to build! While this one isn't that difficult (you could have just built the formula by thinking about the area between curves as a difference in areas under each curves), some of the formulas we play with in this chapter will not be as intuitive.    To help us understand what a Riemann sum actually is . It's a product of a function value from a subinterval multiplied by the width of that subinterval, summed up across some larger interval.       For each of the following regions, set up an integral expression representing the area of the region. We also can practice evaluating these integrals to actually calculate the areas.  For each of these described regions, the hint will reveal a visualization of the region (using Desmos). Feel free to use that to set up the integral expression!     The region bounded between the graphs and from to .                The region bounded between the graphs and from to .         Notice that the boundary functions intersect at , and they switch order. We'll need to split this region into two different regions in order to identify the top and bottom boundary functions.       The region bounded between the curves and and the -axis.         On the interval , the region is bounded above by and below by the -axis ( ). On the interval , the region is bounded above by and below by .        Changing Perspective  This last example had two interesting regions: we had to split them into two pieces because the boundary functions changed order or, in the case of the last example, changed completely to different boundary functions.  We're going to redo the last problem and work on trying to change our perspective a bit in order to get a single integral to evaluate the area.   Trying for a Single Integral   Let's consider the same setup as earlier: the region bounded between two curves, and , as well as the -axis (the line ). We'll need to name these functions, so let's call them and . But this time, we'll approach the region a bit differently: we're going to try to find the area of the region using only a single integral.     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.       The range of -values in this region span from to . Divide this interval evenly into 4 equally sized-subintervals. What is the height of each subinterval? We'll call this .           Pick a -value from each sub-interval. You can call these , , , and .      Find the corresponding -values on the function for each of the -values you selected. These will be , , , and .    You're really just putting your -values into the equation and solving for . Or you can solve for in general, by solving for while leaving as a variable.      Do the same thing for the function. Now you have 8 points that you can plot: , , , and as well as , , , and . Plot them.      Use these points to draw 4 rectangles with points on and , determining the left and right ends of the rectangle. What are the dimensions of these rectangles (height and width)?      Find the area of each rectangle by multiplying the height and widths of each rectangle.      Add up the areas to construct a Riemann sum.      Again, we'll generalize this and think about the th rectangle, pictured below.     The same region, but this time with a horizontal rectangle spanning across it, with the height labeled delta y. The curves are relabeled x=y-6 and x = cuberoot(y).    Which variable defines the location of the th rectangle, here? That is, if you were to describe where in this graph the th rectangle is laying, would you describe it with an or variable? This will act as our general input variable for the integral we're ending with.      What are the dimensions of the th rectangle?    Height:   Width:       Find , the area of this th rectangle.           Add up the areas of for to approximate the total area, .    You might want to use summation notation, starting with            Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .           Now that you have an integral, evaluate it! Find the area of this region to compare with the work we did previously, where we used multiple integrals to measure the size of this same region.          We can rewrite our definition of the area between curves ( ) to account for this change in perspective, by thinking about these same functions in terms of .   Area Between Curves (in terms of )   If and are continuous functions with on the interval of -values , then the area bounded between the curves  and from to is .    This strategy of inverting our functions to change the variable that we integrate with regard to is useful, but a tricky part of this is deciding when to change variables.  Something that we can look for is intersection points in the region we're working with. If, in our plan for setting up an integral, we would stack rectangles that would pass through an intersection point, then this indicates that we would need to split our region up to set up the integrals (since the boundary functions are changing). If we change the orientation of the rectangles, would they still pass through an intersection point? Are the functions that we're working with relatively easy to invert? Can we antidifferentiate these functions, or their inverted versions?  These are some of the things we'll consider as we make these decisions.    To finish things up, let's look at a nice little interactive graph that can help show the differences between finding area with regard to (using in our rectangles and in our integrals) and finding area with regard to (using in our rectangles and in our integrals).      Explain how we use the slice and sum method to build an integral formula for the area bounded between curves. Give some details, enough to make sure you understand how the Riemann sums are constructed and how they turn into our integral formula.    What are some changes\/considerations that we need to make when we decide to set up our integral in terms of instead of ?     Set up (and practice evaluating) an integral expression representing the area of each of the regions described below.  The hint for each problem will open a graph of the region.     The region bounded by the curves and between and .              The region bounded by the curves and between and               The region bounded by the curves and and the line .              The region bounded by the curves and .       This one has annoying limits of integration, and so evaluating the integral is more annoying than it is worth.        Set up and evaluate an integral representing the area of each of the regions described below. Explain whether you chose to integrate with respect to or , and why you made that choice.     The region bounded by the curves and and the line between and .        Or, alternatively: . Admittedly, it is annoying to evaluate this in terms of , even though it is satisfying to have only a single integral.  The area itself is .      The region bounded by the curves and and the line in the first quadrant.        Or alternatively: . In either case, the area is .      The region bounded by the curves and and the line in the third quadrant.        Or, alternatively: . In either case, the area is .      The region bounded by the curves , , and in the first quadrant with .        Or, alternatively: . In either case, the area is .      The region bounded by the curves , , and in the first quadrant.        Or, alternatively: . In either case, the area is .      The other region bounded by the curves , , and in the first quadrant.              The region bounded by the curves and .              The region(s) bounded by the curves and .         "
 },
 {
   "id": "act-RememberingRiemann",
@@ -3911,7 +3911,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#act-AreaBetweenCurves",
   "type": "Activity",
-  "number": "6.2.2",
+  "number": "6.2.4",
   "title": "Area Between Curves.",
   "body": " Area Between Curves   Let's start with our same function on the same interval m but also add the function on the same interval, with on the interval. We will construct a Riemann sum to approximate the area between these two curves on this interval, and then build that into the integral formula.     A graph of a positive curve and a less positive curve, g(x), labeled f(x), from x=a to x=b. The space between these curves is shaded.       Divide the interval into 4 equally-sized subintervals.      Pick an for , one for each subinterval. Plot the points , , , and . Then plot the corresponding points on the function: , , , and .      Use these 8 points to draw 4 rectangles, with the points on the function defining the tops of the rectangles and the points on the function defining the bottoms of the rectangles. What are the dimensions of these rectangles (the height and width)?      Find the area of each rectangle by multiplying the heights and widths for each rectangle.      Add up the areas to construct a Riemman sum.      Now we will generalize a little more. Let's say we divide this up into equally-sized pieces (instead of 4). Instead of trying to pick an for the unknown number of subintervals (since we don't have a value for yet), let's just focus on one of these: the arbitrary th subinterval.     The same graph of the two curves f(x) and g(x) between x=a and x=b. Now, though, there is a single rectangle sitting on g(x) and spanning up to f(x). It is delta-x wide. The bottom of the rectangle touches the graph at the point (x_k, g(x_k)) and the top of the rectangle touches the graph at the point (x_k, f(x_k)).    What are the dimensions of this th rectangle?    Height:   Width:       Find , the area of this th rectangle.           Add up the areas of for to approximate the total area,     You might want to use summation notation, starting with            Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .         "
 },
@@ -3920,7 +3920,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#def-AreaBetweenCurves",
   "type": "Definition",
-  "number": "6.2.5",
+  "number": "6.2.7",
   "title": "Area Between Curves.",
   "body": " Area Between Curves   If and are continuous functions with on the interval , then the area bounded between the curves  and between and is .   "
 },
@@ -3929,16 +3929,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#subsec-AreaBetweenCurves-6",
   "type": "Example",
-  "number": "6.2.6",
+  "number": "6.2.8",
   "title": "",
-  "body": "  For each of the following regions, set up an integral expression representing the area of the region. We also can practice evaluating these integrals to actually calculate the areas.  For each of these described regions, the hint will reveal a visualization of the region (using Desmos). Feel free to use that to set up the integral expression!     The region bounded between the graphs and from to .                The region bounded between the graphs and from to .         Notice that the boundary functions intersect at , and they switch order. We'll need to split this region into two different regions in order to identify the \"top\" and \"bottom\" boundary functions.       The region bounded between the curves and and the -axis.         On the interval , the region is bounded above by and below by the -axis ( ). On the interval , the region is bounded above by and below by .     "
+  "body": "  For each of the following regions, set up an integral expression representing the area of the region. We also can practice evaluating these integrals to actually calculate the areas.  For each of these described regions, the hint will reveal a visualization of the region (using Desmos). Feel free to use that to set up the integral expression!     The region bounded between the graphs and from to .                The region bounded between the graphs and from to .         Notice that the boundary functions intersect at , and they switch order. We'll need to split this region into two different regions in order to identify the top and bottom boundary functions.       The region bounded between the curves and and the -axis.         On the interval , the region is bounded above by and below by the -axis ( ). On the interval , the region is bounded above by and below by .     "
 },
 {
   "id": "act-SingleIntegral",
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#act-SingleIntegral",
   "type": "Activity",
-  "number": "6.2.3",
+  "number": "6.2.9",
   "title": "Trying for a Single Integral.",
   "body": " Trying for a Single Integral   Let's consider the same setup as earlier: the region bounded between two curves, and , as well as the -axis (the line ). We'll need to name these functions, so let's call them and . But this time, we'll approach the region a bit differently: we're going to try to find the area of the region using only a single integral.     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.       The range of -values in this region span from to . Divide this interval evenly into 4 equally sized-subintervals. What is the height of each subinterval? We'll call this .           Pick a -value from each sub-interval. You can call these , , , and .      Find the corresponding -values on the function for each of the -values you selected. These will be , , , and .    You're really just putting your -values into the equation and solving for . Or you can solve for in general, by solving for while leaving as a variable.      Do the same thing for the function. Now you have 8 points that you can plot: , , , and as well as , , , and . Plot them.      Use these points to draw 4 rectangles with points on and , determining the left and right ends of the rectangle. What are the dimensions of these rectangles (height and width)?      Find the area of each rectangle by multiplying the height and widths of each rectangle.      Add up the areas to construct a Riemann sum.      Again, we'll generalize this and think about the th rectangle, pictured below.     The same region, but this time with a horizontal rectangle spanning across it, with the height labeled delta y. The curves are relabeled x=y-6 and x = cuberoot(y).    Which variable defines the location of the th rectangle, here? That is, if you were to describe where in this graph the th rectangle is laying, would you describe it with an or variable? This will act as our general input variable for the integral we're ending with.      What are the dimensions of the th rectangle?    Height:   Width:       Find , the area of this th rectangle.           Add up the areas of for to approximate the total area, .    You might want to use summation notation, starting with            Apply a limit as to this Riemann sum in order to construct the integral formula for the area between the curves and from to .           Now that you have an integral, evaluate it! Find the area of this region to compare with the work we did previously, where we used multiple integrals to measure the size of this same region.         "
 },
@@ -3947,7 +3947,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AreaBetweenCurves.html#def-AreaBetweenCurves-y",
   "type": "Definition",
-  "number": "6.2.9",
+  "number": "6.2.12",
   "title": "Area Between Curves (in terms of <span class=\"process-math\">\\(y\\)<\/span>).",
   "body": " Area Between Curves (in terms of )   If and are continuous functions with on the interval of -values , then the area bounded between the curves  and from to is .   "
 },
@@ -3958,7 +3958,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1",
   "title": "",
-  "body": " Explain how we use the \"slice and sum\" method to build an integral formula for the area bounded between curves. Give some details, enough to make sure you understand how the Riemann sums are constructed and how they turn into our integral formula.  "
+  "body": " Explain how we use the slice and sum method to build an integral formula for the area bounded between curves. Give some details, enough to make sure you understand how the Riemann sums are constructed and how they turn into our integral formula.  "
 },
 {
   "id": "ex-AreaBetweenCurves-2",
@@ -3985,7 +3985,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4",
   "title": "",
-  "body": "  Set up and evaluate an integral representing the area of each of the regions described below. Explain whether you chose to integrate with respect to or , and why you made that choice.     The region bounded by the curves and and the line between and .        Or, alternatively: . Admittedly, it is annoying to evaluate this in terms of , even though it is satisfying to have only a single integral.  The area itself is .      The region bounded by the curves and and the line in the first quadrant.        Or alternatively: . In either case, the area is .      The region bounded by the curves and and the line in the third quadrant.        Or, alternatively: . In either case, the area is .      The region bounded by the curves , , and in the first quadrant with .        Or, alternatively: . In either case, the area is .      The region bounded by the curves , , and in the first quadrant.         The other region bounded by the curves , , and in the first quadrant.         The region bounded by the curves and .         The region(s) bounded by the curves and .       "
+  "body": "  Set up and evaluate an integral representing the area of each of the regions described below. Explain whether you chose to integrate with respect to or , and why you made that choice.     The region bounded by the curves and and the line between and .        Or, alternatively: . Admittedly, it is annoying to evaluate this in terms of , even though it is satisfying to have only a single integral.  The area itself is .      The region bounded by the curves and and the line in the first quadrant.        Or alternatively: . In either case, the area is .      The region bounded by the curves and and the line in the third quadrant.        Or, alternatively: . In either case, the area is .      The region bounded by the curves , , and in the first quadrant with .        Or, alternatively: . In either case, the area is .      The region bounded by the curves , , and in the first quadrant.        Or, alternatively: . In either case, the area is .      The other region bounded by the curves , , and in the first quadrant.              The region bounded by the curves and .              The region(s) bounded by the curves and .       "
 },
 {
   "id": "sec-VolumesOfRevolution",
@@ -3994,7 +3994,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.3",
   "title": "Volumes of Solids of Revolution",
-  "body": " Volumes of Solids of Revolution   Hopefully, by now we're feeling pretty comfortable with the use of a Riemann sum to create an integral formula. So far, these integral formulas have matched with our intuition somewhat. We probably can justify the integral formula for displacement of an object ( ) by thinking about the fact that position is an antiderivative of velocity. We probably can convince ourselves about the integral formula for the area between curves ( ) by thinking about subtracting areas, geometrically.  We're going to make a jump from a 2-dimensional measurement of size, area, to a 3-dimensional measurement of size, volume.    From Area To Volume  Here's the basic idea, in a broad overview: if we want to calculate a volume, then we are going to be working with a 3-dimensional solid. We'll use the slice-and-sum process:   Slice the object into uniformly thick slices along some axis.    For each slice, we'll approximate the volume. We can do this by thinking about the cross-sectional area. If we assume that the area is constant all the way through the slice (in the same way that we assumed earlier that the heights of our rectangles were constant), then we simply can multiply the cross-sectional area by the thickness to get the volume of each slice: .    Approximate the total volume of the solid by adding the volumes of the slices together: .    Apply a limit, where the number of slices gets infinitely big (and the thickness of each slice gets infinitely small): Here, and are the -values that define the interval we're slicing along and is a formula for the cross-sectional area of the object at .   The biggest issue here is going to be thinking about that formula for area. In order for us to do that, we're going to think about a specific type of 3-dimensional solid, built in a systematic way so that we can find the cross-sectional areas easily.    Solids of Revolution  A solid of revolution is a strange type of solid: we're going to define it based on a 2-dimensional region (we'll use functions in a normal -plane) that we then imagine revolving around a straight line axis. Maybe we define some region in the upper half of the plane, but then revolve it around the -axis. While we imagine this revolution, we want to think about the three dimensional solid that gets \"traced\" by the curve spinning around the axis. Let's dive into an example to see.  Let's visualize some function defined (and continuous) on the interval and with on that interval. We'll see why this is useful, but for now, we're just thinking of some function.     A graph of a red curve labeled f(x). The curve is above the x-axis and starts at the y-axis, and moves forward until it stops. There is are two points on the x-axis labeled x=a and x=b, representing the beginning and ending of the interval where this function is defined. The function looks like a sort of curvy polynomial, and the shape is unimportant.    We're going to revolve this curve (and the region bounded between it and the -axis) around the -axis. This will create the following shape.     The red curve, f(x), has been revolved around the x-axis. There is a reflection of this curve below the axis, and lines connecting the ends so that the shape looks like a vase on its side, where the outline of the vase is shaped like the graph f(x).    So our goal is to find the volume of this type of solid. The curve defining the edge of it can change, but the way that we create it will be systematic enough that we can build a formulaic integral expression for it.  As you would imagine, we'll start with a rectangle.     A graph of a red curve labeled f(x). The curve is above the x-axis and starts at the y-axis, and moves forward until it stops. There is are two points on the x-axis labeled x=a and x=b, representing the beginning and ending of the interval where this function is defined. The function looks like a sort of curvy polynomial, and the shape is unimportant. There is a red rectangle spanning from the x-axis to the curve, touching the curve at a point labeled (x_k^*, f(x_k^*)). The width of the rectangle is labeled Delta x.    This rectangle will represent a single, generic slice. We really want to imagine a slice of the 3-dimensional solid, though, and so we will revolve this rectangle around the -axis. This will create a slice of our solid of revolution. From there, we can think about the volume of this generic th slice, and fall into the rhythm of our slice-and-sum process.     The red curve, f(x), has been revolved around the x-axis. There is a reflection of this curve below the axis, and lines connecting the ends so that the shape looks like a vase on its side, where the outline of the vase is shaped like the graph f(x). Somewhere in the middle of the vase is a sliced region, looking like a small coin. This is the rectangle, revolved around the axis. The point on the curve is still labeled (x_k^*, f(x_k^*)) and the width of this slice is labeled Delta x.    We want to find the volume of this specific slice. To do this, we can remove this stubby cylinder from the solid and think about it directly. We can see the thickness of the slice is represented by , and so we need to think about the cross-sectional area of the \"face\" of this slice.     A circle where the radius is labeled r=f(x_k^*).    This is something we easily can find the area of! We know the formula for the area of a circle: . We'll notice that the radius of this circle is the distance from the center of our slice to the outer edge: this is the height of the rectangle in . So we can use , giving us the cross-sectional area of the th slice: . Now, we can drop into our slice and sum process:   The volume of the th slice is:     We can approximate the volume by adding the slices: Sometimes this can be hard to visualize. We're approximating the solid in by thinking about a bunch of these circular disks stacked next to each other.     The 3-dimensional solid, but there are 10 grey circular disks stacked next to each other. The radius of each varies, matching with the curve outlining the vase-like image.      We can apply a limit to evaluate the actual volume of the solid and construct a definite integral.      This is great! We'll call this volume integral the Disk Method , since each cross section is a circular disk.  What happens if we add a second curve defining a lower boundary to the region, like we did in for areas?   Carving out a Hole in the Center   We're going to look at the same solid as in . But this time, when we define the 2-dimensional region that we're going to revolve around the -axis, we're going to add a lower boundary function, .     A graph of two functions. The upper function is red, labeled f(x), and is a wavy polynomial. It is above the second function, g(x), which is blue. It is less wavy. Both of them are above the x-axis, and go from a point labeled x=a to x=b where they both stop.    When we revolve this region around the -axis, we get the following 3-dimensional solid.     The region revolved around the x-axis. It creates a vase type shape where the outer edge is the red f(x) function on the top and reflected onto the bottom. The inner function, g(x), creates a kind of tunnel through the solid.       How is a single generic slice on this solid different than the one in ?    Here is the rectangle that will define that slice!     A graph of two functions. The upper function is red, labeled f(x), and is a wavy polynomial. It is above the second function, g(x), which is blue. It is less wavy. Both of them are above the x-axis, and go from a point labeled x=a to x=b where they both stop. A rectangle spans from the bottom g(x) function to the top f(x) function, with the point on the bottom labeled (x_k^*, g(x_k^*)) and the point on the top labeled (x_k^*, f(x_k^*)). The width of the rectangle is labeled Delta x.      Here is the slice formed when the rectangle revolves around the axis!     The region revolved around the x-axis. It creates a vase type shape where the outer edge is the red f(x) function on the top and reflected onto the bottom. The inner function, g(x), creates a kind of tunnel through the solid. There is a disk with a hole in it, sliced in the middle of the solid. The width is labeled Delta x. The outer edge of the disk matches the function f(x) and the hole is formed from g(x).        Find a formula for the area of the face of the cross-sectional slice.    Here's a picture of the face of the slice!     A circle within a circle. The larger circle has a red radius, labeled r_1. The smaller circle has a blue radius, labeled r_2.             Use the slice-and-sum process to create an integral expression representing the volume of this solid.           Volume by Disks\/Washers   If and are continuous functions with on the interval , then the volume of the solid formed by revolving the region bounded between the curves and from to around the -axis is: . This is called the Washer Method . Note that if , then the resulting volume is: . This is called the Disk Method .    We'll walk through two examples where we construct these integral expressions before pretending to be too comfortable. Let's start with something similar to what we've just done.   Volumes by Disks\/Washers   Consider the region bounded between the curves and . We will create a 3-dimensional solid by revolving this region around the -axis.     Graph of the region bounded between the parabola y=4+2x-x^2 and the curve y=4\/(x+1). The curves intersect at (0,4) and at (3,1), and the parabola defines the top of the region. The whole region is above the x-axis.       Visualize the solid you'll create when you revolve this region around the -axis.      Draw a single rectangle in your region, standing perpendicular to the -axis.      Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    It should be a circle within a circle like in , but can you be more detailed with labeling the radii?      Find the area of the face of the th slice.    Note that this is a 2-dimensional shape, and we're just finding the area of it.           Set up the integral representing the volume of the solid.    The sum is going to be adding up all of the areas multiplied by . What will that look like in the integral?           Can you describe how you would antidifferentiate and evaluate this integral?    What happens when you square these functions? What kinds of strategies will you use for the types of functions you're left with?    The first function, the quadratic, will be annoying to square. We'll end up with some big degree 4 polynomial, though, and antidifferentiating will be easy, since we can use the Power Rule.  The second function squared will give us . We can use a -substitution here with . Then, we have a negative exponent and we can use the Power Rule!     Ok, so when we're creating these integrals, we really are focussing on using the rectangle we drew to show us which functions serve as the large radius compared to the small radius. In the next example, we'll see another key thing to notice from a single rectangle.   Another Volume   Now let's consider another region: this time, the one bounded between the curves and . We will, again, create a 3-dimensional solid by revolving this region around the -axis.     Graph of the region bounded between the root function y=3sqrt(x) and the line y=x. The curves intersect at (0,0) and at (9,9), and the root defines the top of the region. The whole region is above the x-axis.       Visualize the solid you'll create when you revolve this region around the -axis.      Draw a single rectangle in your region standing perpendicular to the -axis.    Notice that your rectangle is sitting on its side now! This will change some things for us in a familiar way!      Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    It should be a circle within a circle like in , but can you be more detailed with labeling the radii?      Find the area of the face of the th slice.    Note that this is a 2-dimensional shape, and we're just finding the area of it. You'll also notice that the radii are measuring a horizontal distance in terms of a differing height, so you'll want to express these as functions of .    The outer radius comes from the function , but we'll invert it to be .  The inner radius comes from the function , but we'll invert it be written as or .       Set up the integral representing the volume of this solid.          Notice that the rectangle was the clue that we were going to be using when we calculated volumes. This ended up being the reason that we integrated with regard to , since the in the integral.  A single rectangle, carefully drawn, can give us a large amount of information as we try to juggle these volumes!    Reorienting our Rectangles  We saw in that thinking about the single rectangle we drew was helpful. We'll see that again in this next formula that we build.  Notice that, in all of the previous work we've done, we've drawn our rectangle so that it is standing perpendicular to the axis of revolution. This is the kind of rectangle that, when we revolve it, traces out the \"washer\" shape!  So what happens when we change the orientation of our rectangle? What happens when we draw a rectangle that is parallel to the axis of revolution? Let's consider the same region as before (the one we visualized in ) with the same rectangle as before (the one we visualized in ), but we'll revolve around the -axis.  When we revolve this region around the -axis, we end up with the following solid.     A cylindrical looking solid, where the top of the solid is formed by the red f(x) function and its reflection across the y-axis, while the bottom is formed by the blue g(x) and its reflection. Some circles are also marked, showing the shape of the top.    We want to focus on the single rectangle and the shape that it forms when we revolve it around the -axis. From there, we can fall into our slice and sum process by thinking about how we might calculate the volume of this single sliced piece and then adding them up.     A cylindrical looking solid, where the top of the solid is formed by the red f(x) function and its reflection across the y-axis, while the bottom is formed by the blue g(x) and its reflection. Some circles are also marked, showing the shape of the top. A single rectangle and the small cylinder it forms is highlighted.    For this rectangle, we can notice that when we revolve it around the -axis, we create a hollow cylinder. We'll focus more specifically on this cylinder.     The single highlighted cylinder, with labels for its radius and height, as well as the thickness Delta x.    Let's focus more on the cylinder. We'll need to find the volume of this cylinder. We can think of this volume as really the surface area of the cylinder multiplied by the thickness. Another way to visualize it is to think about cutting the cylinder open, and unfurling it to create a rectangular solid with some thickness.     The single highlighted cylinder in isolation with a cut across it. Underneath there is an arrow pointing towards the unfurled rectangle, where the width is labeled 2*pi*r and the height is labeled h, while the thickness is Delta x.    So we can see that to find , we're going to multiply and again, where is the area of the cross-sectional \"face.\" In this case, we can see how we'll construct this from the unfurled cylinder.    Volume by Shells   If and are continuous functions with on the interval (with ), then the volume of the solid formed when the region bounded between the curves and from to is revolved around the -axis is .    We can apply this formula in a familiar example, and also practice changing variables.   Volume by Shells   Let's consider the region bounded by the curves and as well as the line . You might remember this region from . This time, we'll create a 3-dimensional solid by revolving the region around the -axis     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.       Sketch one or two rectangles that are perpendicular to the -axis. Then set up an integral expression to find the volume of the solid using them.    Note that in this context, we're actually using disks and washers. Also note that the bottom of the rectangles are bounded by from to and then switches to being bounded by from to .           Now, draw a single rectangle in the region that is parallel to the axis of revolution. Use this rectangle to visualize the th slice of this 3-dimensional solid. What does that single rectangle create when it is revolved around the -axis?    This won't create a disk or washer! We'll have to change variables, and try to see how we can create a shell.      Set up the integral expression representing the volume of the solid.           Confirm that your volumes are the same, no matter your approach to setting it up.       To finish things up, let's look at another interactive graph (similar to how we ended ) that can help show the differences between finding volume with regard to (using in our rectangles and in our integrals) and finding volume with regard to (using in our rectangles and in our integrals), and how this choice changes our method from washers to shells depending on the axis of revolution.      We say that the volume of a solid can be thought of as where is a function describing the cross-sectional area of our solid at an -value between and . Explain how this integral formula gets built, referencing the slice-and-sum (Riemann sum) method.    Explain the differences and similarities between the disk and washer methods for finding volumes of solids of revolution.    When do we integrate with regard to (using a in our integral and writing our functions with -value inputs) and when do we integrate with regard to (using a in our integral and writing our functions with -value inputs) when we're finding volumes using disks and washers? How do we know?     For each of the solids described below, set up an integral using the disk\/washer method that describes the volume of the solid. It will be helpful to visualize the region, a rectangle on that region, as well as the rectangle revolved around the axis of revolution.     The region bounded by the curve and the lines and , revolved around the -axis.         The region bounded by the curve and the -axis between and , revolved around the -axis.         The region bounded by the curves and between and , revolved around the -axis.         The region bounded by the curves and between and , revolved around the -axis.         The region bounded by the curve , the -axis, and the line , revolved around the -axis.         The region bounded by the curve and the -axis between and , revolved around the -axis.         Explain where the pieces of the shell formula come from. How is this different than using disks\/washers?    Say we're revolving a region around the -axis to create a solid. Using the disk\/washer method, we will integrate with respect to . Using the shell method, we integrate with respect to . Explain the difference, and why this difference occurs.     For each of the solids described below, set up an integral using the shell method that describes the volume of the solid. It will be helpful to visualize the region, a rectangle on that region, as well as the rectangle revolved around the axis of revolution.     The region bounded by the curve and the lines and , revolved around the -axis.         The region bounded by the curve and the -axis between and , revolved around the -axis.         The region bounded by the curves and and the line revolved around the -axis.         The region bounded by the curves and from to , revolved around the -axis.         The region bounded by the curves and revolved around the -axis.         The region bounded by the curves and and the -axis between and , revolved around the -axis.         Pick at least 2 integrals from to rewrite using shells instead. What about those regions did you look for to choose which ones to rewrite and which ones to not?    Pick at least 2 integrals from to rewrite using disks\/washers instead. What about those regions did you look for to choose which ones to rewrite and which ones to not?     For each of the following solids, set up an integral expression using either the disk\/washer method or the shell method. You don't need to evaluate them, but you should do some careful thinking about how you set these up, especially as you choose between methods and what variable you are integrating with.     The region bounded by the curves and in the first quadrant, revolved around the -axis.         The region bounded by the curves and in the first quadrant, revolved around the -axis.         The region bounded by the curves and in the first quadrant, revolved around the -axis.         "
+  "body": " Volumes of Solids of Revolution   Hopefully, by now we're feeling pretty comfortable with the use of a Riemann sum to create an integral formula. So far, these integral formulas have matched with our intuition somewhat. We probably can justify the integral formula for displacement of an object ( ) by thinking about the fact that position is an antiderivative of velocity. We probably can convince ourselves about the integral formula for the area between curves ( ) by thinking about subtracting areas, geometrically.  We're going to make a jump from a 2-dimensional measurement of size, area, to a 3-dimensional measurement of size, volume.    From Area To Volume  Here's the basic idea, in a broad overview: if we want to calculate a volume, then we are going to be working with a 3-dimensional solid. We'll use the slice-and-sum process:   Slice the object into uniformly thick slices along some axis.    For each slice, we'll approximate the volume. We can do this by thinking about the cross-sectional area. If we assume that the area is constant all the way through the slice (in the same way that we assumed earlier that the heights of our rectangles were constant), then we simply can multiply the cross-sectional area by the thickness to get the volume of each slice: .    Approximate the total volume of the solid by adding the volumes of the slices together: .    Apply a limit, where the number of slices gets infinitely big (and the thickness of each slice gets infinitely small): Here, and are the -values that define the interval we're slicing along and is a formula for the cross-sectional area of the object at .   The biggest issue here is going to be thinking about that formula for area. In order for us to do that, we're going to think about a specific type of 3-dimensional solid, built in a systematic way so that we can find the cross-sectional areas easily.    Solids of Revolution  A solid of revolution is a strange type of solid: we're going to define it based on a 2-dimensional region (we'll use functions in a normal -plane) that we then imagine revolving around a straight line axis. Maybe we define some region in the upper half of the plane, but then revolve it around the -axis. While we imagine this revolution, we want to think about the three dimensional solid that gets traced by the curve spinning around the axis. Let's dive into an example to see.  Let's visualize some function defined (and continuous) on the interval and with on that interval. We'll see why this is useful, but for now, we're just thinking of some function.     A graph of a red curve labeled f(x). The curve is above the x-axis and starts at the y-axis, and moves forward until it stops. There is are two points on the x-axis labeled x=a and x=b, representing the beginning and ending of the interval where this function is defined. The function looks like a sort of curvy polynomial, and the shape is unimportant.    We're going to revolve this curve (and the region bounded between it and the -axis) around the -axis. This will create the following shape.     The red curve, f(x), has been revolved around the x-axis. There is a reflection of this curve below the axis, and lines connecting the ends so that the shape looks like a vase on its side, where the outline of the vase is shaped like the graph f(x).    So our goal is to find the volume of this type of solid. The curve defining the edge of it can change, but the way that we create it will be systematic enough that we can build a formulaic integral expression for it.  As you would imagine, we'll start with a rectangle.     A graph of a red curve labeled f(x). The curve is above the x-axis and starts at the y-axis, and moves forward until it stops. There is are two points on the x-axis labeled x=a and x=b, representing the beginning and ending of the interval where this function is defined. The function looks like a sort of curvy polynomial, and the shape is unimportant. There is a red rectangle spanning from the x-axis to the curve, touching the curve at a point labeled (x_k^*, f(x_k^*)). The width of the rectangle is labeled Delta x.    This rectangle will represent a single, generic slice. We really want to imagine a slice of the 3-dimensional solid, though, and so we will revolve this rectangle around the -axis. This will create a slice of our solid of revolution. From there, we can think about the volume of this generic th slice, and fall into the rhythm of our slice-and-sum process.     The red curve, f(x), has been revolved around the x-axis. There is a reflection of this curve below the axis, and lines connecting the ends so that the shape looks like a vase on its side, where the outline of the vase is shaped like the graph f(x). Somewhere in the middle of the vase is a sliced region, looking like a small coin. This is the rectangle, revolved around the axis. The point on the curve is still labeled (x_k^*, f(x_k^*)) and the width of this slice is labeled Delta x.    We want to find the volume of this specific slice. To do this, we can remove this stubby cylinder from the solid and think about it directly. We can see the thickness of the slice is represented by , and so we need to think about the cross-sectional area of the face of this slice.     A circle where the radius is labeled r=f(x_k^*).    This is something we easily can find the area of! We know the formula for the area of a circle: . We'll notice that the radius of this circle is the distance from the center of our slice to the outer edge: this is the height of the rectangle in . So we can use , giving us the cross-sectional area of the th slice: . Now, we can drop into our slice and sum process:   The volume of the th slice is:     We can approximate the volume by adding the slices: Sometimes this can be hard to visualize. We're approximating the solid in by thinking about a bunch of these circular disks stacked next to each other.     The 3-dimensional solid, but there are 10 grey circular disks stacked next to each other. The radius of each varies, matching with the curve outlining the vase-like image.      We can apply a limit to evaluate the actual volume of the solid and construct a definite integral.      This is great! We'll call this volume integral the Disk Method , since each cross section is a circular disk.  What happens if we add a second curve defining a lower boundary to the region, like we did in for areas?   Carving out a Hole in the Center   We're going to look at the same solid as in . But this time, when we define the 2-dimensional region that we're going to revolve around the -axis, we're going to add a lower boundary function, .     A graph of two functions. The upper function is red, labeled f(x), and is a wavy polynomial. It is above the second function, g(x), which is blue. It is less wavy. Both of them are above the x-axis, and go from a point labeled x=a to x=b where they both stop. Wh   When we revolve this region around the -axis, we get the following 3-dimensional solid.     The region revolved around the x-axis. It creates a vase type shape where the outer edge is the red f(x) function on the top and reflected onto the bottom. The inner function, g(x), creates a kind of tunnel through the solid.       How is a single generic slice on this solid different than the one in ?    Here is the rectangle that will define that slice!     A graph of two functions. The upper function is red, labeled f(x), and is a wavy polynomial. It is above the second function, g(x), which is blue. It is less wavy. Both of them are above the x-axis, and go from a point labeled x=a to x=b where they both stop. A rectangle spans from the bottom g(x) function to the top f(x) function, with the point on the bottom labeled (x_k^*, g(x_k^*)) and the point on the top labeled (x_k^*, f(x_k^*)). The width of the rectangle is labeled Delta x.      Here is the slice formed when the rectangle revolves around the axis!     The region revolved around the x-axis. It creates a vase type shape where the outer edge is the red f(x) function on the top and reflected onto the bottom. The inner function, g(x), creates a kind of tunnel through the solid. There is a disk with a hole in it, sliced in the middle of the solid. The width is labeled Delta x. The outer edge of the disk matches the function f(x) and the hole is formed from g(x).        Find a formula for the area of the face of the cross-sectional slice.    Here's a picture of the face of the slice!     A circle within a circle. The larger circle has a red radius, labeled r_1. The smaller circle has a blue radius, labeled r_2.             Use the slice-and-sum process to create an integral expression representing the volume of this solid.           Volume by Disks\/Washers   If and are continuous functions with on the interval , then the volume of the solid formed by revolving the region bounded between the curves and from to around the -axis is: . This is called the Washer Method . Note that if , then the resulting volume is: . This is called the Disk Method .    We'll walk through two examples where we construct these integral expressions before pretending to be too comfortable. Let's start with something similar to what we've just done.   Volumes by Disks\/Washers   Consider the region bounded between the curves and . We will create a 3-dimensional solid by revolving this region around the -axis.     Graph of the region bounded between the parabola y=4+2x-x^2 and the curve y=4\/(x+1). The curves intersect at (0,4) and at (3,1), and the parabola defines the top of the region. The whole region is above the x-axis.       Visualize the solid you'll create when you revolve this region around the -axis.      Draw a single rectangle in your region, standing perpendicular to the -axis.      Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the face of it look like?    It should be a circle within a circle like in , but can you be more detailed with labeling the radii?      Find the area of the face of the th slice.    Note that this is a 2-dimensional shape, and we're just finding the area of it.           Set up the integral representing the volume of the solid.    The sum is going to be adding up all of the areas multiplied by . What will that look like in the integral?           Can you describe how you would antidifferentiate and evaluate this integral?    What happens when you square these functions? What kinds of strategies will you use for the types of functions you're left with?    The first function, the quadratic, will be annoying to square. We'll end up with some big degree 4 polynomial, though, and antidifferentiating will be easy, since we can use the Power Rule.  The second function squared will give us . We can use a -substitution here with . Then, we have a negative exponent and we can use the Power Rule!     Ok, so when we're creating these integrals, we really are focussing on using the rectangle we drew to show us which functions serve as the large radius compared to the small radius. In the next example, we'll see another key thing to notice from a single rectangle.   Another Volume   Now let's consider another region: this time, the one bounded between the curves and . We will, again, create a 3-dimensional solid by revolving this region around the -axis.     Graph of the region bounded between the root function y=3sqrt(x) and the line y=x. The curves intersect at (0,0) and at (9,9), and the root defines the top of the region. The whole region is above the x-axis.       Visualize the solid you'll create when you revolve this region around the -axis.      Draw a single rectangle in your region standing perpendicular to the -axis.    Notice that your rectangle is sitting on its side now! This will change some things for us in a familiar way!      Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the face of it look like?    It should be a circle within a circle like in , but can you be more detailed with labeling the radii?      Find the area of the face of the th slice.    Note that this is a 2-dimensional shape, and we're just finding the area of it. You'll also notice that the radii are measuring a horizontal distance in terms of a differing height, so you'll want to express these as functions of .    The outer radius comes from the function , but we'll invert it to be .  The inner radius comes from the function , but we'll invert it be written as or .       Set up the integral representing the volume of this solid.          Notice that the rectangle was the clue that we were going to be using when we calculated volumes. This ended up being the reason that we integrated with regard to , since the in the integral.  A single rectangle, carefully drawn, can give us a large amount of information as we try to juggle these volumes!    Reorienting our Rectangles  We saw in that thinking about the single rectangle we drew was helpful. We'll see that again in this next formula that we build.  Notice that, in all of the previous work we've done, we've drawn our rectangle so that it is standing perpendicular to the axis of revolution. This is the kind of rectangle that, when we revolve it, traces out the washer shape!  So what happens when we change the orientation of our rectangle? What happens when we draw a rectangle that is parallel to the axis of revolution? Let's consider the same region as before (the one we visualized in ) with the same rectangle as before (the one we visualized in ), but we'll revolve around the -axis.  When we revolve this region around the -axis, we end up with the following solid.     A cylindrical looking solid, where the top of the solid is formed by the red f(x) function and its reflection across the y-axis, while the bottom is formed by the blue g(x) and its reflection. Some circles are also marked, showing the shape of the top.    We want to focus on the single rectangle and the shape that it forms when we revolve it around the -axis. From there, we can fall into our slice and sum process by thinking about how we might calculate the volume of this single sliced piece and then adding them up.     A cylindrical looking solid, where the top of the solid is formed by the red f(x) function and its reflection across the y-axis, while the bottom is formed by the blue g(x) and its reflection. Some circles are also marked, showing the shape of the top. A single rectangle and the small cylinder it forms is highlighted.    For this rectangle, we can notice that when we revolve it around the -axis, we create a hollow cylinder. We'll focus more specifically on this cylinder.     The single highlighted cylinder, with labels for its radius and height, as well as the thickness Delta x.    Let's focus more on the cylinder. We'll need to find the volume of this cylinder. We can think of this volume as really the surface area of the cylinder multiplied by the thickness. Another way to visualize it is to think about cutting the cylinder open, and unfurling it to create a rectangular solid with some thickness.     The single highlighted cylinder in isolation with a cut across it. Underneath there is an arrow pointing towards the unfurled rectangle, where the width is labeled 2*pi*r and the height is labeled h, while the thickness is Delta x.    So we can see that to find , we're going to multiply and again, where is the area of the cross-sectional face. In this case, we can see how we'll construct this from the unfurled cylinder.    Volume by Shells   If and are continuous functions with on the interval (with ), then the volume of the solid formed when the region bounded between the curves and from to is revolved around the -axis is .    We can apply this formula in a familiar example, and also practice changing variables.   Volume by Shells   Let's consider the region bounded by the curves and as well as the line . You might remember this region from . This time, we'll create a 3-dimensional solid by revolving the region around the -axis     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.       Sketch one or two rectangles that are perpendicular to the -axis. Then set up an integral expression to find the volume of the solid using them.    Note that in this context, we're actually using disks and washers. Also note that the bottom of the rectangles are bounded by from to and then switches to being bounded by from to .           Now, draw a single rectangle in the region that is parallel to the axis of revolution. Use this rectangle to visualize the th slice of this 3-dimensional solid. What does that single rectangle create when it is revolved around the -axis?    This won't create a disk or washer! We'll have to change variables, and try to see how we can create a shell.      Set up the integral expression representing the volume of the solid.           Confirm that your volumes are the same, no matter your approach to setting it up.       To finish things up, let's look at another interactive graph (similar to how we ended ) that can help show the differences between finding volume with regard to (using in our rectangles and in our integrals) and finding volume with regard to (using in our rectangles and in our integrals), and how this choice changes our method from washers to shells depending on the axis of revolution.      We say that the volume of a solid can be thought of as where is a function describing the cross-sectional area of our solid at an -value between and . Explain how this integral formula gets built, referencing the slice-and-sum (Riemann sum) method.    Explain the differences and similarities between the disk and washer methods for finding volumes of solids of revolution.    When do we integrate with regard to (using a in our integral and writing our functions with -value inputs) and when do we integrate with regard to (using a in our integral and writing our functions with -value inputs) when we're finding volumes using disks and washers? How do we know?     For each of the solids described below, set up an integral using the disk\/washer method that describes the volume of the solid. It will be helpful to visualize the region, a rectangle on that region, as well as the rectangle revolved around the axis of revolution.     The region bounded by the curve and the lines and , revolved around the -axis.         The region bounded by the curve and the -axis between and , revolved around the -axis.         The region bounded by the curves and between and , revolved around the -axis.         The region bounded by the curves and between and , revolved around the -axis.         The region bounded by the curve , the -axis, and the line , revolved around the -axis.         The region bounded by the curve and the -axis between and , revolved around the -axis.         Explain where the pieces of the shell formula come from. How is this different than using disks\/washers?    Say we're revolving a region around the -axis to create a solid. Using the disk\/washer method, we will integrate with respect to . Using the shell method, we integrate with respect to . Explain the difference, and why this difference occurs.     For each of the solids described below, set up an integral using the shell method that describes the volume of the solid. It will be helpful to visualize the region, a rectangle on that region, as well as the rectangle revolved around the axis of revolution.     The region bounded by the curve and the lines and , revolved around the -axis.         The region bounded by the curve and the -axis between and , revolved around the -axis.         The region bounded by the curves and and the line revolved around the -axis.         The region bounded by the curves and from to , revolved around the -axis.         The region bounded by the curves and revolved around the -axis.         The region bounded by the curves and and the -axis between and , revolved around the -axis.         Pick at least 2 integrals from to rewrite using shells instead. What about those regions did you look for to choose which ones to rewrite and which ones to not?    Pick at least 2 integrals from to rewrite using disks\/washers instead. What about those regions did you look for to choose which ones to rewrite and which ones to not?     For each of the following solids, set up an integral expression using either the disk\/washer method or the shell method. You don't need to evaluate them, but you should do some careful thinking about how you set these up, especially as you choose between methods and what variable you are integrating with.     The region bounded by the curves and in the first quadrant, revolved around the -axis.         The region bounded by the curves and in the first quadrant, revolved around the -axis.         The region bounded by the curves and in the first quadrant, revolved around the -axis.         "
 },
 {
   "id": "subsec-SolidsOfRevolution-2",
@@ -4073,16 +4073,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#act-Washer",
   "type": "Activity",
-  "number": "6.3.1",
+  "number": "6.3.7",
   "title": "Carving out a Hole in the Center.",
-  "body": " Carving out a Hole in the Center   We're going to look at the same solid as in . But this time, when we define the 2-dimensional region that we're going to revolve around the -axis, we're going to add a lower boundary function, .     A graph of two functions. The upper function is red, labeled f(x), and is a wavy polynomial. It is above the second function, g(x), which is blue. It is less wavy. Both of them are above the x-axis, and go from a point labeled x=a to x=b where they both stop.    When we revolve this region around the -axis, we get the following 3-dimensional solid.     The region revolved around the x-axis. It creates a vase type shape where the outer edge is the red f(x) function on the top and reflected onto the bottom. The inner function, g(x), creates a kind of tunnel through the solid.       How is a single generic slice on this solid different than the one in ?    Here is the rectangle that will define that slice!     A graph of two functions. The upper function is red, labeled f(x), and is a wavy polynomial. It is above the second function, g(x), which is blue. It is less wavy. Both of them are above the x-axis, and go from a point labeled x=a to x=b where they both stop. A rectangle spans from the bottom g(x) function to the top f(x) function, with the point on the bottom labeled (x_k^*, g(x_k^*)) and the point on the top labeled (x_k^*, f(x_k^*)). The width of the rectangle is labeled Delta x.      Here is the slice formed when the rectangle revolves around the axis!     The region revolved around the x-axis. It creates a vase type shape where the outer edge is the red f(x) function on the top and reflected onto the bottom. The inner function, g(x), creates a kind of tunnel through the solid. There is a disk with a hole in it, sliced in the middle of the solid. The width is labeled Delta x. The outer edge of the disk matches the function f(x) and the hole is formed from g(x).        Find a formula for the area of the face of the cross-sectional slice.    Here's a picture of the face of the slice!     A circle within a circle. The larger circle has a red radius, labeled r_1. The smaller circle has a blue radius, labeled r_2.             Use the slice-and-sum process to create an integral expression representing the volume of this solid.         "
+  "body": " Carving out a Hole in the Center   We're going to look at the same solid as in . But this time, when we define the 2-dimensional region that we're going to revolve around the -axis, we're going to add a lower boundary function, .     A graph of two functions. The upper function is red, labeled f(x), and is a wavy polynomial. It is above the second function, g(x), which is blue. It is less wavy. Both of them are above the x-axis, and go from a point labeled x=a to x=b where they both stop. Wh   When we revolve this region around the -axis, we get the following 3-dimensional solid.     The region revolved around the x-axis. It creates a vase type shape where the outer edge is the red f(x) function on the top and reflected onto the bottom. The inner function, g(x), creates a kind of tunnel through the solid.       How is a single generic slice on this solid different than the one in ?    Here is the rectangle that will define that slice!     A graph of two functions. The upper function is red, labeled f(x), and is a wavy polynomial. It is above the second function, g(x), which is blue. It is less wavy. Both of them are above the x-axis, and go from a point labeled x=a to x=b where they both stop. A rectangle spans from the bottom g(x) function to the top f(x) function, with the point on the bottom labeled (x_k^*, g(x_k^*)) and the point on the top labeled (x_k^*, f(x_k^*)). The width of the rectangle is labeled Delta x.      Here is the slice formed when the rectangle revolves around the axis!     The region revolved around the x-axis. It creates a vase type shape where the outer edge is the red f(x) function on the top and reflected onto the bottom. The inner function, g(x), creates a kind of tunnel through the solid. There is a disk with a hole in it, sliced in the middle of the solid. The width is labeled Delta x. The outer edge of the disk matches the function f(x) and the hole is formed from g(x).        Find a formula for the area of the face of the cross-sectional slice.    Here's a picture of the face of the slice!     A circle within a circle. The larger circle has a red radius, labeled r_1. The smaller circle has a blue radius, labeled r_2.             Use the slice-and-sum process to create an integral expression representing the volume of this solid.         "
 },
 {
   "id": "def-VolumesDisksWashers",
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#def-VolumesDisksWashers",
   "type": "Definition",
-  "number": "6.3.12",
+  "number": "6.3.13",
   "title": "Volume by Disks\/Washers.",
   "body": " Volume by Disks\/Washers   If and are continuous functions with on the interval , then the volume of the solid formed by revolving the region bounded between the curves and from to around the -axis is: . This is called the Washer Method . Note that if , then the resulting volume is: . This is called the Disk Method .   "
 },
@@ -4091,25 +4091,25 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#act-VolumesDisksWashers",
   "type": "Activity",
-  "number": "6.3.2",
+  "number": "6.3.14",
   "title": "Volumes by Disks\/Washers.",
-  "body": " Volumes by Disks\/Washers   Consider the region bounded between the curves and . We will create a 3-dimensional solid by revolving this region around the -axis.     Graph of the region bounded between the parabola y=4+2x-x^2 and the curve y=4\/(x+1). The curves intersect at (0,4) and at (3,1), and the parabola defines the top of the region. The whole region is above the x-axis.       Visualize the solid you'll create when you revolve this region around the -axis.      Draw a single rectangle in your region, standing perpendicular to the -axis.      Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    It should be a circle within a circle like in , but can you be more detailed with labeling the radii?      Find the area of the face of the th slice.    Note that this is a 2-dimensional shape, and we're just finding the area of it.           Set up the integral representing the volume of the solid.    The sum is going to be adding up all of the areas multiplied by . What will that look like in the integral?           Can you describe how you would antidifferentiate and evaluate this integral?    What happens when you square these functions? What kinds of strategies will you use for the types of functions you're left with?    The first function, the quadratic, will be annoying to square. We'll end up with some big degree 4 polynomial, though, and antidifferentiating will be easy, since we can use the Power Rule.  The second function squared will give us . We can use a -substitution here with . Then, we have a negative exponent and we can use the Power Rule!    "
+  "body": " Volumes by Disks\/Washers   Consider the region bounded between the curves and . We will create a 3-dimensional solid by revolving this region around the -axis.     Graph of the region bounded between the parabola y=4+2x-x^2 and the curve y=4\/(x+1). The curves intersect at (0,4) and at (3,1), and the parabola defines the top of the region. The whole region is above the x-axis.       Visualize the solid you'll create when you revolve this region around the -axis.      Draw a single rectangle in your region, standing perpendicular to the -axis.      Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the face of it look like?    It should be a circle within a circle like in , but can you be more detailed with labeling the radii?      Find the area of the face of the th slice.    Note that this is a 2-dimensional shape, and we're just finding the area of it.           Set up the integral representing the volume of the solid.    The sum is going to be adding up all of the areas multiplied by . What will that look like in the integral?           Can you describe how you would antidifferentiate and evaluate this integral?    What happens when you square these functions? What kinds of strategies will you use for the types of functions you're left with?    The first function, the quadratic, will be annoying to square. We'll end up with some big degree 4 polynomial, though, and antidifferentiating will be easy, since we can use the Power Rule.  The second function squared will give us . We can use a -substitution here with . Then, we have a negative exponent and we can use the Power Rule!    "
 },
 {
   "id": "act-VolumesDisksWashers-y",
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#act-VolumesDisksWashers-y",
   "type": "Activity",
-  "number": "6.3.3",
+  "number": "6.3.16",
   "title": "Another Volume.",
-  "body": " Another Volume   Now let's consider another region: this time, the one bounded between the curves and . We will, again, create a 3-dimensional solid by revolving this region around the -axis.     Graph of the region bounded between the root function y=3sqrt(x) and the line y=x. The curves intersect at (0,0) and at (9,9), and the root defines the top of the region. The whole region is above the x-axis.       Visualize the solid you'll create when you revolve this region around the -axis.      Draw a single rectangle in your region standing perpendicular to the -axis.    Notice that your rectangle is sitting on its side now! This will change some things for us in a familiar way!      Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the \"face\" of it look like?    It should be a circle within a circle like in , but can you be more detailed with labeling the radii?      Find the area of the face of the th slice.    Note that this is a 2-dimensional shape, and we're just finding the area of it. You'll also notice that the radii are measuring a horizontal distance in terms of a differing height, so you'll want to express these as functions of .    The outer radius comes from the function , but we'll invert it to be .  The inner radius comes from the function , but we'll invert it be written as or .       Set up the integral representing the volume of this solid.         "
+  "body": " Another Volume   Now let's consider another region: this time, the one bounded between the curves and . We will, again, create a 3-dimensional solid by revolving this region around the -axis.     Graph of the region bounded between the root function y=3sqrt(x) and the line y=x. The curves intersect at (0,0) and at (9,9), and the root defines the top of the region. The whole region is above the x-axis.       Visualize the solid you'll create when you revolve this region around the -axis.      Draw a single rectangle in your region standing perpendicular to the -axis.    Notice that your rectangle is sitting on its side now! This will change some things for us in a familiar way!      Let's use this rectangle to visualize the th slice of this 3-dimensional solid. What does the face of it look like?    It should be a circle within a circle like in , but can you be more detailed with labeling the radii?      Find the area of the face of the th slice.    Note that this is a 2-dimensional shape, and we're just finding the area of it. You'll also notice that the radii are measuring a horizontal distance in terms of a differing height, so you'll want to express these as functions of .    The outer radius comes from the function , but we'll invert it to be .  The inner radius comes from the function , but we'll invert it be written as or .       Set up the integral representing the volume of this solid.         "
 },
 {
   "id": "fig-Shells-1",
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#fig-Shells-1",
   "type": "Figure",
-  "number": "6.3.15",
+  "number": "6.3.18",
   "title": "",
   "body": "   A cylindrical looking solid, where the top of the solid is formed by the red f(x) function and its reflection across the y-axis, while the bottom is formed by the blue g(x) and its reflection. Some circles are also marked, showing the shape of the top.   "
 },
@@ -4118,7 +4118,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#fig-Shells-2",
   "type": "Figure",
-  "number": "6.3.16",
+  "number": "6.3.19",
   "title": "",
   "body": "   A cylindrical looking solid, where the top of the solid is formed by the red f(x) function and its reflection across the y-axis, while the bottom is formed by the blue g(x) and its reflection. Some circles are also marked, showing the shape of the top. A single rectangle and the small cylinder it forms is highlighted.   "
 },
@@ -4127,7 +4127,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#fig-Shells-3",
   "type": "Figure",
-  "number": "6.3.17",
+  "number": "6.3.20",
   "title": "",
   "body": "   The single highlighted cylinder, with labels for its radius and height, as well as the thickness Delta x.   "
 },
@@ -4136,7 +4136,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#fig-Shells-4",
   "type": "Figure",
-  "number": "6.3.18",
+  "number": "6.3.21",
   "title": "",
   "body": "   The single highlighted cylinder in isolation with a cut across it. Underneath there is an arrow pointing towards the unfurled rectangle, where the width is labeled 2*pi*r and the height is labeled h, while the thickness is Delta x.   "
 },
@@ -4145,7 +4145,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#def-VolumesShells",
   "type": "Definition",
-  "number": "6.3.19",
+  "number": "6.3.22",
   "title": "Volume by Shells.",
   "body": " Volume by Shells   If and are continuous functions with on the interval (with ), then the volume of the solid formed when the region bounded between the curves and from to is revolved around the -axis is .   "
 },
@@ -4154,7 +4154,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-VolumesOfRevolution.html#act-VolumesShells",
   "type": "Activity",
-  "number": "6.3.4",
+  "number": "6.3.23",
   "title": "Volume by Shells.",
   "body": " Volume by Shells   Let's consider the region bounded by the curves and as well as the line . You might remember this region from . This time, we'll create a 3-dimensional solid by revolving the region around the -axis     A graph of the two curves y=x+6 and y=x^3 as well as the line y=0. The region trapped inside is shaded, and the intersection points (-6,0) and (2,8) are labelled.       Sketch one or two rectangles that are perpendicular to the -axis. Then set up an integral expression to find the volume of the solid using them.    Note that in this context, we're actually using disks and washers. Also note that the bottom of the rectangles are bounded by from to and then switches to being bounded by from to .           Now, draw a single rectangle in the region that is parallel to the axis of revolution. Use this rectangle to visualize the th slice of this 3-dimensional solid. What does that single rectangle create when it is revolved around the -axis?    This won't create a disk or washer! We'll have to change variables, and try to see how we can create a shell.      Set up the integral expression representing the volume of the solid.           Confirm that your volumes are the same, no matter your approach to setting it up.    "
 },
@@ -4327,7 +4327,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.5",
   "title": "Arc Length and Surface Area",
-  "body": " Arc Length and Surface Area   We're going to continue to think about different applications of definite integrals: what they can measure and how we can construct these integral formulas. In this section, we're going to add two more formulas for two more measurements. Before we get far into this discussion, we want to center the important parts of our discussion.  Sure, it is worth noting that, in this section, we'll add a 1-dimensional measurement of size to our list of things an integral can measure. We have talked about a 2-dimensional measure of size (area) and a 3-dimensional measure of size (volume), but we'll add length to the list now! We'll also add a 2-dimensional extension of perimeter to the list when we talk about surface area. That's cool!  But, more importantly, we're going to see how we can construct an integral formula from a Riemann sum, and we're going to get some experience constructing a Riemann sum to measure the thing we care about. In our study of integrals, it might not actually be that important to know how to calculate the specific kinds of volumes or lengths that we're talking about. But we can get some experience with using some formulas from a pretty comfortable field (geometry) to get some experience with the slice-and-sum process. And this process is a useful one to know! We want to see that a definite integral is more than just an area under a curve, and we want to be able to look at an integral formula for some measurement or calculation and see some of the parts of that formula that could be familiar.  Anyways, let's calculate some arc lengths.    Integrals for Evaluating the Length of a Curve  When we talk about arc length , we might think of the length of some portion of a circle. Here, we'll use it to refer to the length of some more general curve. We'll graph a function and think about how long the curve of the graph is from some point to another point.   Measuring Distance    Consider the following right-triangle with the normal names of side lengths.     A right triangle with the hypotenuse labeled c and the two other side lengths labeled a and b.    How do we use the Pythagorean Theorem to find the length of ?      Consider the two points and below.     Two points, (x_1, y_1) and (x_2, y_2), connected by a dashed line. The line is labeled d.    How do we use the distance formula to find the length of the line connecting the two points, ?      How are these two things the same? How are they different?     This might be a reminder of something we already knew, but let's make sure we are certain: when we calculate distances, we're really just using the Pythagorean Theorem! We can square the vertical distance between the points and the horizontal distance between the points, and then the length of the straight line connecting two points is: . This will be a useful formula for us to find an integral expression for the length of a curve.  If we think about the slice-and-sum technique, then we'll want to visualize the th slice of whatever we're trying to measure. In this case, that means we'll divide the curve up into equally-wide slices and calculate the length of each subsection of the curve. We'll make a recognizable assumption: we'll assume that the curve is actually a straight line between the end points, and calculate that length.   We have made similar assumptions along the way!   When we calculated area, we assumed that the curve(s) defining our region were constant on each subinterval. This is what gave us rectangular slices, with flat tops and bottoms!    When we calculated volumes by disks and washers, we again assumed that the curve(s) were constant on each subinterval. This is what gave us constant radii on each disk\/washer!    When we calculated volumes by shells, this assumption of constant curves made the cylindrical shells have flat tops and bottoms!      Let's visualize the th slice.     A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k.    In order to calculate , the straight-line length connecting the end points of the th subinterval, we can use the Pythagorean Theorem or distance formula (from ).     A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k. There are vertical and horizontal lines forming a right triangle, with l_k being the hypotenuse. The vertical component is labeled Delta y_k while the horizontal component is labeled Delta x.    Let's start the slice-and-sum process. Two notes:   We're using to denote the vertical distance between the end points of the th subinterval because we expect these to differ for each subinterval. We don't need to do this for , since we've been slicing things into equally-wide subintervals this whole time.    This isn't a Riemann sum. This is much more important, and much more pressing.   Before we can do anything, we need to try to manipulate this sum so that it is in the form of a Riemann sum. What does this mean? What are some of the things required for the Riemann sum structure that we don't have here? Feel free to look back at to remind yourself what elements are needed for a Riemann sum.  Notice, first, that we need a function evaluated at any single input on the subinterval: . In our version, we have a function evaluated twice at very specific inputs: . We'll need to rethink about how we represent this part in order to get a single function output.  We also need to have this function multiplied by . In our sum, we have as a part of the function itself, under the square root. We'll want to move this outside of the root. Let's start there.  We'll start by looking at the sum to approximate the length and factoring outside of the root. This looks better! We have floating around at the end of our sum, ready to turn into once we apply the limit as .  The inside of our root, though, is still a bit messed up. We would like a single function of , any -value from the th subinterval. Instead, we have a function involving the two -values of the end points and we still have involved in this part!  But we can notice something about : it really is the slope of the straight line! Can we use a function to represent this? We absolutely can approximate this slope using a function: the derivative!     A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k. There is a green point on the subinterval labeled (x_k^*, f(x_k^*)) with a tangent line formed in green. It runs almost parallel to the dashed line.    If we pick some point, , on the th subinterval, then we can approximate with . This is a fine approximation of this slope (and the guarantees that there is a point on the subinterval where exactly), but the real magic will happen when . The definition of the will make sure that these slopes are equal in the limit!  Let's return to our slice-and-sum process. This is a Riemann sum! We can apply a limit and get an integral!    Length of a Curve   If is continuous on the interval and differentiable on , then the length of the curve from to is: .      Find an integral expression representing the length of the following curves.     The curve from to .    Since , then we can construct the following integral: Instead of worrying about actually evaluating this integral, we'll leave it like this.  If you do want to fiddle with this integral, than it might be helpful to note that we can rewrite it:       The curve from to .    We know that , so we can construct the following integral: We can leave this integral like this for now.  Similar to the first example, though, we can rewrite this if you'd like to explore it more!        Integrals for Evaluating the Surface Area of a Solid  Moving from the length of some curve towards calculating the surface area of some solid of revolution won't be hard: we'll use the length formula in our procedure!  Let's build this surface area formula. Consider some function, , on the interval from to .     A blue curve labeled f(x) spanning from a point at x=a to a point at x=b. The curve is above the x-axis.    Instead of forming a rectangle for the th slice, we'll do the same thing that we did for arc length: we'll connect the end points of the th subinterval. This will create a trapezoid.     The same blue curve f(x). There are two more points along the curve connected by a straight line, and a shaded in trapezoid spanning from the diagonal line to the x-axis. The diagonal line of the trapezoid is labeled l_k, while the bottom spans from x_k to x_(k+1) and is labeled Delta x.    We'll use to represent the diagonal length of the line connecting the endpoints. Notice that this is going to become the arc length.  When we revolve the curve around the -axis, we can see not just the solid created by the curve, but the solid representing this th slice.      A vase-like shape formed by the blue curve f(x) being revolved around the x-axis. The trapezoid is still pictured, and we can see the circular curves formed when it revolves around the x-axis. It creates a slice that looks like a trapezoidal-cylinder type shape.     The th frustum-shaped slice.   The kth slice, looking like a trapezoidal-cylinder type shape, with the radius on one side bigger than the other.     In order for us to find the surface area of this th slice, we'll think about how \"far\" the diagonal line revolves. This is based on the circumference of each circular end of our slice, which means we have two radii to consider: the function outputs at both endpoints of the th subinterval: This is going to become problematic, since we need only one function output evaluated at some on the th subinterval.  Instead, we can select some -value on the interval and use the function output at that point to represent the radius of our th slice.     The solid formed by f(x) being revolved around, and the kth slice visualized. There is also a green arrow pointing from the x-axis to a point on the kth interval labeled (x_k^*, f(x_k^*)) acting as a radius of the sliced solid.    Instead of averaging the large and small radii from the end-points, we'll just select the one function output to represent this \"average\" radius. In the limit as , things will work out, since this randomly selected radius will become exactly equal to the average radius in the limit since .  Now we can slice and sum!    Surface Area   Let be a continuous function with on the interval and differentiable on . If the region bounded by and the -axis from to is revolved around the -axis, then the surface area of the resulting solid is: .        The formula for arc length of the function on the interval is . Explain how this definition is built, using the slice-and-sum method. Make sure to explain how we the Pythagorean Theorem is involved.      Why do we use in the formula for arc length?      For each of the following curves on intervals, evaluate the arc length.      on             on    y' \\amp = \\frac{x^{1\/2}}{2}  \\ell \\amp = \\int_{x=0}^{x=60} \\sqrt{1+\\left(\\frac{x^{1\/2}}{2}\\right)^2}\\;dx  \\amp = \\int_{x=0}^{x=60}\\sqrt{1+\\frac{x}{4}}\\;dx  \\amp = \\left(\\frac{8\\left(1+\\frac{x}{4}\\right)^{3\/2}}{3}\\right)\\bigg|_{x=0}^{x=60}  \\amp = \\frac{8(16)^{3\/2}}{3}  \\amp = \\frac{512}{3}      on             For each of the following curves on intervals, set up an integral representing the arc length. Do not evaluate.      on             on             on             Why is the formula for arc length seemingly involved in the integral formula for surface area of a solid of revolution?      In the integral formula , what does represent? What about ?      For each of the following curves and intervals, find the surface area of the solid formed when the curve is revolved around the -axis.      on             on             on             For each of the following curves and intervals, set up the surface area of the solid formed when the curve is revolved around the -axis. Do not evaluate the integral.      on             on            "
+  "body": " Arc Length and Surface Area   We're going to continue to think about different applications of definite integrals: what they can measure and how we can construct these integral formulas. In this section, we're going to add two more formulas for two more measurements. Before we get far into this discussion, we want to center the important parts of our discussion.  Sure, it is worth noting that, in this section, we'll add a 1-dimensional measurement of size to our list of things an integral can measure. We have talked about a 2-dimensional measure of size (area) and a 3-dimensional measure of size (volume), but we'll add length to the list now! We'll also add a 2-dimensional extension of perimeter to the list when we talk about surface area. That's cool!  But, more importantly, we're going to see how we can construct an integral formula from a Riemann sum, and we're going to get some experience constructing a Riemann sum to measure the thing we care about. In our study of integrals, it might not actually be that important to know how to calculate the specific kinds of volumes or lengths that we're talking about. But we can get some experience with using some formulas from a pretty comfortable field (geometry) to get some experience with the slice-and-sum process. And this process is a useful one to know! We want to see that a definite integral is more than just an area under a curve, and we want to be able to look at an integral formula for some measurement or calculation and see some of the parts of that formula that could be familiar.  Anyways, let's calculate some arc lengths.    Integrals for Evaluating the Length of a Curve  When we talk about arc length , we might think of the length of some portion of a circle. Here, we'll use it to refer to the length of some more general curve. We'll graph a function and think about how long the curve of the graph is from some point to another point.   Measuring Distance    Consider the following right-triangle with the normal names of side lengths.     A right triangle with the hypotenuse labeled c and the two other side lengths labeled a and b.    How do we use the Pythagorean Theorem to find the length of ?      Consider the two points and below.     Two points, (x_1, y_1) and (x_2, y_2), connected by a dashed line. The line is labeled d.    How do we use the distance formula to find the length of the line connecting the two points, ?      How are these two things the same? How are they different?     This might be a reminder of something we already knew, but let's make sure we are certain: when we calculate distances, we're really just using the Pythagorean Theorem! We can square the vertical distance between the points and the horizontal distance between the points, and then the length of the straight line connecting two points is: . This will be a useful formula for us to find an integral expression for the length of a curve.  If we think about the slice-and-sum technique, then we'll want to visualize the th slice of whatever we're trying to measure. In this case, that means we'll divide the curve up into equally-wide slices and calculate the length of each subsection of the curve. We'll make a recognizable assumption: we'll assume that the curve is actually a straight line between the end points, and calculate that length.   We have made similar assumptions along the way!   When we calculated area, we assumed that the curve(s) defining our region were constant on each subinterval. This is what gave us rectangular slices, with flat tops and bottoms!    When we calculated volumes by disks and washers, we again assumed that the curve(s) were constant on each subinterval. This is what gave us constant radii on each disk\/washer!    When we calculated volumes by shells, this assumption of constant curves made the cylindrical shells have flat tops and bottoms!      Let's visualize the th slice.     A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k.    In order to calculate , the straight-line length connecting the end points of the th subinterval, we can use the Pythagorean Theorem or distance formula (from ).     A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k. There are vertical and horizontal lines forming a right triangle, with l_k being the hypotenuse. The vertical component is labeled Delta y_k while the horizontal component is labeled Delta x.    Let's start the slice-and-sum process. Two notes:   We're using to denote the vertical distance between the end points of the th subinterval because we expect these to differ for each subinterval. We don't need to do this for , since we've been slicing things into equally-wide subintervals this whole time.    This isn't a Riemann sum. This is much more important, and much more pressing.   Before we can do anything, we need to try to manipulate this sum so that it is in the form of a Riemann sum. What does this mean? What are some of the things required for the Riemann sum structure that we don't have here? Feel free to look back at to remind yourself what elements are needed for a Riemann sum.  Notice, first, that we need a function evaluated at any single input on the subinterval: . In our version, we have a function evaluated twice at very specific inputs: . We'll need to rethink about how we represent this part in order to get a single function output.  We also need to have this function multiplied by . In our sum, we have as a part of the function itself, under the square root. We'll want to move this outside of the root. Let's start there.  We'll start by looking at the sum to approximate the length and factoring outside of the root. This looks better! We have floating around at the end of our sum, ready to turn into once we apply the limit as .  The inside of our root, though, is still a bit messed up. We would like a single function of , any -value from the th subinterval. Instead, we have a function involving the two -values of the end points and we still have involved in this part!  But we can notice something about : it really is the slope of the straight line! Can we use a function to represent this? We absolutely can approximate this slope using a function: the derivative!     A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k. There is a green point on the subinterval labeled (x_k^*, f(x_k^*)) with a tangent line formed in green. It runs almost parallel to the dashed line.    If we pick some point, , on the th subinterval, then we can approximate with . This is a fine approximation of this slope (and the guarantees that there is a point on the subinterval where exactly), but the real magic will happen when . The definition of the will make sure that these slopes are equal in the limit!  Let's return to our slice-and-sum process. This is a Riemann sum! We can apply a limit and get an integral!    Length of a Curve   If is continuous on the interval and differentiable on , then the length of the curve from to is: .      Find an integral expression representing the length of the following curves.     The curve from to .    Since , then we can construct the following integral: Instead of worrying about actually evaluating this integral, we'll leave it like this.  If you do want to fiddle with this integral, than it might be helpful to note that we can rewrite it:       The curve from to .    We know that , so we can construct the following integral: We can leave this integral like this for now.  Similar to the first example, though, we can rewrite this if you'd like to explore it more!        Integrals for Evaluating the Surface Area of a Solid  Moving from the length of some curve towards calculating the surface area of some solid of revolution won't be hard: we'll use the length formula in our procedure!  Let's build this surface area formula. Consider some function, , on the interval from to .     A blue curve labeled f(x) spanning from a point at x=a to a point at x=b. The curve is above the x-axis.    Instead of forming a rectangle for the th slice, we'll do the same thing that we did for arc length: we'll connect the end points of the th subinterval. This will create a trapezoid.     The same blue curve f(x). There are two more points along the curve connected by a straight line, and a shaded in trapezoid spanning from the diagonal line to the x-axis. The diagonal line of the trapezoid is labeled l_k, while the bottom spans from x_k to x_(k+1) and is labeled Delta x.    We'll use to represent the diagonal length of the line connecting the endpoints. Notice that this is going to become the arc length.  When we revolve the curve around the -axis, we can see not just the solid created by the curve, but the solid representing this th slice.      A vase-like shape formed by the blue curve f(x) being revolved around the x-axis. The trapezoid is still pictured, and we can see the circular curves formed when it revolves around the x-axis. It creates a slice that looks like a trapezoidal-cylinder type shape.     The th frustum-shaped slice.   The kth slice, looking like a trapezoidal-cylinder type shape, with the radius on one side bigger than the other.     In order for us to find the surface area of this th slice, we'll think about how far the diagonal line revolves. This is based on the circumference of each circular end of our slice, which means we have two radii to consider: the function outputs at both endpoints of the th subinterval: This is going to become problematic, since we need only one function output evaluated at some on the th subinterval.  Instead, we can select some -value on the interval and use the function output at that point to represent the radius of our th slice.     The solid formed by f(x) being revolved around, and the kth slice visualized. There is also a green arrow pointing from the x-axis to a point on the kth interval labeled (x_k^*, f(x_k^*)) acting as a radius of the sliced solid.    Instead of averaging the large and small radii from the end-points, we'll just select the one function output to represent this average radius. In the limit as , things will work out, since this randomly selected radius will become exactly equal to the average radius in the limit since .  Now we can slice and sum!    Surface Area   Let be a continuous function with on the interval and differentiable on . If the region bounded by and the -axis from to is revolved around the -axis, then the surface area of the resulting solid is: .        The formula for arc length of the function on the interval is . Explain how this definition is built, using the slice-and-sum method. Make sure to explain how we the Pythagorean Theorem is involved.      Why do we use in the formula for arc length?      For each of the following curves on intervals, evaluate the arc length.      on             on    y' \\amp = \\frac{x^{1\/2}}{2}  \\ell \\amp = \\int_{x=0}^{x=60} \\sqrt{1+\\left(\\frac{x^{1\/2}}{2}\\right)^2}\\;dx  \\amp = \\int_{x=0}^{x=60}\\sqrt{1+\\frac{x}{4}}\\;dx  \\amp = \\left(\\frac{8\\left(1+\\frac{x}{4}\\right)^{3\/2}}{3}\\right)\\bigg|_{x=0}^{x=60}  \\amp = \\frac{8(16)^{3\/2}}{3}  \\amp = \\frac{512}{3}      on             For each of the following curves on intervals, set up an integral representing the arc length. Do not evaluate.      on             on             on             Why is the formula for arc length seemingly involved in the integral formula for surface area of a solid of revolution?      In the integral formula , what does represent? What about ?      For each of the following curves and intervals, find the surface area of the solid formed when the curve is revolved around the -axis.      on             on             on             For each of the following curves and intervals, set up the surface area of the solid formed when the curve is revolved around the -axis. Do not evaluate the integral.      on             on            "
 },
 {
   "id": "subsec-ArcLength-2",
@@ -4352,7 +4352,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ArcLengthSurfaceArea.html#fig-ArcLength-1",
   "type": "Figure",
-  "number": "6.5.3",
+  "number": "6.5.4",
   "title": "",
   "body": "   A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k.   "
 },
@@ -4361,7 +4361,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ArcLengthSurfaceArea.html#fig-ArcLength-2",
   "type": "Figure",
-  "number": "6.5.4",
+  "number": "6.5.5",
   "title": "",
   "body": "   A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k. There are vertical and horizontal lines forming a right triangle, with l_k being the hypotenuse. The vertical component is labeled Delta y_k while the horizontal component is labeled Delta x.   "
 },
@@ -4370,7 +4370,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ArcLengthSurfaceArea.html#fig-ArcLength-3",
   "type": "Figure",
-  "number": "6.5.5",
+  "number": "6.5.6",
   "title": "",
   "body": "   A curvy, blue function labeled f(x) plotted from a starting point (at x=a) to some ending point (at x=b). Along the way, there are two more points forming an interval from x=x_k to x=x_(k+1). These two points are connected by a straight, dashed line labeled l_k. There is a green point on the subinterval labeled (x_k^*, f(x_k^*)) with a tangent line formed in green. It runs almost parallel to the dashed line.   "
 },
@@ -4379,7 +4379,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ArcLengthSurfaceArea.html#def-ArcLength",
   "type": "Definition",
-  "number": "6.5.6",
+  "number": "6.5.7",
   "title": "Length of a Curve.",
   "body": " Length of a Curve   If is continuous on the interval and differentiable on , then the length of the curve from to is: .   "
 },
@@ -4388,7 +4388,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ArcLengthSurfaceArea.html#subsec-ArcLength-21",
   "type": "Example",
-  "number": "6.5.7",
+  "number": "6.5.8",
   "title": "",
   "body": "  Find an integral expression representing the length of the following curves.     The curve from to .    Since , then we can construct the following integral: Instead of worrying about actually evaluating this integral, we'll leave it like this.  If you do want to fiddle with this integral, than it might be helpful to note that we can rewrite it:       The curve from to .    We know that , so we can construct the following integral: We can leave this integral like this for now.  Similar to the first example, though, we can rewrite this if you'd like to explore it more!     "
 },
@@ -4397,7 +4397,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ArcLengthSurfaceArea.html#fig-SurfaceArea-1",
   "type": "Figure",
-  "number": "6.5.8",
+  "number": "6.5.9",
   "title": "",
   "body": "   A blue curve labeled f(x) spanning from a point at x=a to a point at x=b. The curve is above the x-axis.   "
 },
@@ -4406,7 +4406,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ArcLengthSurfaceArea.html#fig-SurfaceArea-2",
   "type": "Figure",
-  "number": "6.5.9",
+  "number": "6.5.10",
   "title": "",
   "body": "   The same blue curve f(x). There are two more points along the curve connected by a straight line, and a shaded in trapezoid spanning from the diagonal line to the x-axis. The diagonal line of the trapezoid is labeled l_k, while the bottom spans from x_k to x_(k+1) and is labeled Delta x.   "
 },
@@ -4415,7 +4415,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ArcLengthSurfaceArea.html#fig-SurfaceArea-3",
   "type": "Figure",
-  "number": "6.5.10",
+  "number": "6.5.11",
   "title": "",
   "body": "   A vase-like shape formed by the blue curve f(x) being revolved around the x-axis. The trapezoid is still pictured, and we can see the circular curves formed when it revolves around the x-axis. It creates a slice that looks like a trapezoidal-cylinder type shape.   "
 },
@@ -4424,7 +4424,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ArcLengthSurfaceArea.html#fig-SurfaceArea-4",
   "type": "Figure",
-  "number": "6.5.11",
+  "number": "6.5.12",
   "title": "",
   "body": " The th frustum-shaped slice.   The kth slice, looking like a trapezoidal-cylinder type shape, with the radius on one side bigger than the other.   "
 },
@@ -4433,7 +4433,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ArcLengthSurfaceArea.html#fig-SurfaceArea-5",
   "type": "Figure",
-  "number": "6.5.12",
+  "number": "6.5.13",
   "title": "",
   "body": "   The solid formed by f(x) being revolved around, and the kth slice visualized. There is also a green arrow pointing from the x-axis to a point on the kth interval labeled (x_k^*, f(x_k^*)) acting as a radius of the sliced solid.   "
 },
@@ -4442,7 +4442,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ArcLengthSurfaceArea.html#def-SurfaceArea",
   "type": "Definition",
-  "number": "6.5.13",
+  "number": "6.5.14",
   "title": "Surface Area.",
   "body": " Surface Area   Let be a continuous function with on the interval and differentiable on . If the region bounded by and the -axis from to is revolved around the -axis, then the surface area of the resulting solid is: .   "
 },
@@ -4642,7 +4642,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.1",
   "title": "Improper Integrals",
-  "body": " Improper Integrals   We're going to think a bit about integration with a twist: what happens when our definite integrals can't actually be evaluated? First, let's try to sink ourselves back into the context we've been in for a while now: what kinds of problems have we encountered so far, and how do we use our calculus intuition to get around those problems?   Remembering a Theme so Far    Let's say that we want to find what the -values of some function are when the -values are infinitely close to some value, . Since there is no single -value that is infinitely close to  that we can evaluate at, we need to do something else. How do we do this?      Let's say that we want to find the rate of change of some function instantaneously at a point with . We can't find a rate of change unless we have two points, since we need to find some differences in the outputs and inputs. How do we do this?      Suppose you want to find the total area, covered by an infinite number of infinitely thin rectangles. You have a formula for finding the dimensions and areas for some finite number of rectangles, but how do we get an infinite number of them?      Can you find the common calculus theme in each of these scenarios?     So moving forward, we want to remember how we typically have solved these problems. Now, let's try to identify the types of problems with integrals that we need to figure our way around.   Remembering the Fundamental Theorem of Calculus   We want to think about generalizing our notion of integrals a bit. So in this activity, section, we're going to think about some of the requirements for the Fundamental Theorem of Calculus and try to loosen them up a bit to see what happens. We'll try to construct meaningful approaches to these situations that fit our overall goals of calculating area under a curve.  This practice, in general, is a really good and common mathematical process: taking some result and playing with the requirements or assumptions to see what else can happen. So it might feel like we're just fiddling with the What if? questions, but what we're actually doing is good mathematics!     What does the Fundamental Theorem of Calculus say about evaluating the definite integral ?      What do we need to be true about our setup, our function, etc. for us to be able to apply this technique to evaluate ?     We are going to introduce the idea of Improper Integrals as kind-of-but-not-quite definite integrals that we can evaluate. They are going to violate the requirements for the Fundamental Theorem of Calculus, but we'll work to salvage them in meaningful ways.    This should build a pretty good idea of a new class of integrals: ones that aren't quite definite integrals that we can evaluate with the Fundamental Theorem of Calculus, but ones that we can use limits to get at.    Improper Integrals   Improper Integral   An integral is an improper integral if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:   The interval that we integrate the function over is unbounded in width, or infinitely wide.    The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over.       With this definition, we can think about the strategies that we got from : we're going to identify the problems in our integral (infinite width of the interval or infinite height of the integrand function) and use a limit!  Before we formalize that, though, let's try to think about how this works by being really explicit about what this limit actually is doing.   Approximating Improper Integrals   In this activity, we're going to look at two improper integrals:                 First, let's just clarify to ourselves what it means for an integral to be improper. Why are each of these integrals improper? Be specific!      Let's focus on first. We're going to look at the slightly different integral: . As long as is some real number with , then our function is continuous and bounded on , and so we can evaluate this integral: where is an antiderivative of .  Find and antiderivative, .    You'll need to use -substitution, with and .    You should be thinking about finding an antiderivative using an indefinite integral: .      Now we're going to evaluate some areas for different values of . Use your antiderivative from above!   Let's start with making . So we're going to evaluate:     Now let . Evaluate:     Now let . Evaluate:          Based on what you found, what do you think is happening when to the definite integral ?      Ok, we're going to switch our focus to the other improper integral, . again, we'll look at a slightly different integral: . As long as is some real number with , then our function is continuous and bounded on , and so we can evaluate this integral: where is an antiderivative of . We can use the same antiderivative as before!  We're going to evaluate this intergal for different values of again, but this time we'll use values that are close to , but slightly bigger, since we want to be in the interval .   Let's start with making . So we're going to evaluate:     Now let . Evaluate:     Now let . Evaluate:          Based on what you found, what do you think is happening when to the definite integral ?     We can think about putting this a bit more generally into limit notation, but we'll get to this later.    Ok, let's formalize these limits with some strategies for evaluating improper integrals!    Strategies for Evaluating Improper Integrals   Evaluating Improper Integrals (Infinite Width)  For a function that is continuous on , we can evaluate the improper integral : .  If is continuous on , we can evaluate the improper integral : .  Finally, if is continuous on and is some real number, then we can evaluate the improper integral :      Evaluate the improper integral by evaluating the limit: . Try to interpret this limit. What does it mean if this limit doesn't exist? What does it mean if the limit does exist? What does the actual number represent?     Evaluating Improper Integrals (Infinite Height)  For a function that has an unbounded discontinuity (a vertical asymptote) at with , but is otherwise continuous on , then we can evaluate the improper integrals:      Evaluate the improper integral by evaluating the limit: . Try to interpret this limit. What does it mean if this limit doesn't exist? What does it mean if the limit does exist? What does the actual number represent?    Ok, let's note that we can classify these improper integrals into two categories. We have already classified them based on the reason that they're improper. But now we also can classify them based on the outcome of the limit:   Improper integrals (of any type) whose limit exists.    Improper integrals (of any type) where the limit doesn't exist.   Let's define a term for this, so that our classification isn't so wordy.    Convergence and Divergence of an Improper Integral   Convergence of an Improper Integral   We say that an improper integral converges if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral diverges .    All we've done here is added some language: we'll say that an improper integral diverges if the limit doesn't exist. And if the limit exists, we'll say that the improper integral converges to .      Explain what it means for an integral to be improper. What kinds of issues are we looking at?    Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width).    Give an example of an integral that is improper due to an unbounded integrand (infinite height).    What does it mean for an improper integral to \"converge?\" How does this connect with limits?    What does it mean for an improper integral to \"diverge?\" How does this connect with limits?    Why do we need to use limits to evaluate improper integrals?     For each of the following improper integrals:   Explain why the integral is improper. Be specific, and point out the issues in detail.    Set up the integral using the correct limit notation.    Antidifferentiate and evaluate the limit.    Explain whether the integral converges or diverges.                                                  One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of makes the function a valid probability distribution on the interval ?     Let's consider the integral . This is a difficult integral to evaluate!     First, compare to using an inequality: which one is bigger?      Second, use this inequality to compare the function to for : which one is bigger? Again, use your inequality from above to help!      Now compare to . Which one is bigger?      Explain how we can use this result to make a conclusion about whether our integral, converges or diverges.      "
+  "body": " Improper Integrals   We're going to think a bit about integration with a twist: what happens when our definite integrals can't actually be evaluated? First, let's try to sink ourselves back into the context we've been in for a while now: what kinds of problems have we encountered so far, and how do we use our calculus intuition to get around those problems?   Remembering a Theme so Far    Let's say that we want to find what the -values of some function are when the -values are infinitely close to some value, . Since there is no single -value that is infinitely close to  that we can evaluate at, we need to do something else. How do we do this?      Let's say that we want to find the rate of change of some function instantaneously at a point with . We can't find a rate of change unless we have two points, since we need to find some differences in the outputs and inputs. How do we do this?      Suppose you want to find the total area, covered by an infinite number of infinitely thin rectangles. You have a formula for finding the dimensions and areas for some finite number of rectangles, but how do we get an infinite number of them?      Can you find the common calculus theme in each of these scenarios?     So moving forward, we want to remember how we typically have solved these problems. Now, let's try to identify the types of problems with integrals that we need to figure our way around.   Remembering the Fundamental Theorem of Calculus   We want to think about generalizing our notion of integrals a bit. So in this activity, section, we're going to think about some of the requirements for the Fundamental Theorem of Calculus and try to loosen them up a bit to see what happens. We'll try to construct meaningful approaches to these situations that fit our overall goals of calculating area under a curve.  This practice, in general, is a really good and common mathematical process: taking some result and playing with the requirements or assumptions to see what else can happen. So it might feel like we're just fiddling with the What if? questions, but what we're actually doing is good mathematics!     What does the Fundamental Theorem of Calculus say about evaluating the definite integral ?      What do we need to be true about our setup, our function, etc. for us to be able to apply this technique to evaluate ?     We are going to introduce the idea of Improper Integrals as kind-of-but-not-quite definite integrals that we can evaluate. They are going to violate the requirements for the Fundamental Theorem of Calculus, but we'll work to salvage them in meaningful ways.    This should build a pretty good idea of a new class of integrals: ones that aren't quite definite integrals that we can evaluate with the Fundamental Theorem of Calculus, but ones that we can use limits to get at.    Improper Integrals   Improper Integral   An integral is an improper integral if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:   The interval that we integrate the function over is unbounded in width, or infinitely wide.    The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over.       With this definition, we can think about the strategies that we got from : we're going to identify the problems in our integral (infinite width of the interval or infinite height of the integrand function) and use a limit!  Before we formalize that, though, let's try to think about how this works by being really explicit about what this limit actually is doing.   Approximating Improper Integrals   In this activity, we're going to look at two improper integrals:                 First, let's just clarify to ourselves what it means for an integral to be improper. Why are each of these integrals improper? Be specific!      Let's focus on first. We're going to look at the slightly different integral: . As long as is some real number with , then our function is continuous and bounded on , and so we can evaluate this integral: where is an antiderivative of .  Find and antiderivative, .    You'll need to use -substitution, with and .    You should be thinking about finding an antiderivative using an indefinite integral: .      Now we're going to evaluate some areas for different values of . Use your antiderivative from above!   Let's start with making . So we're going to evaluate:     Now let . Evaluate:     Now let . Evaluate:          Based on what you found, what do you think is happening when to the definite integral ?      Ok, we're going to switch our focus to the other improper integral, . again, we'll look at a slightly different integral: . As long as is some real number with , then our function is continuous and bounded on , and so we can evaluate this integral: where is an antiderivative of . We can use the same antiderivative as before!  We're going to evaluate this intergal for different values of again, but this time we'll use values that are close to , but slightly bigger, since we want to be in the interval .   Let's start with making . So we're going to evaluate:     Now let . Evaluate:     Now let . Evaluate:          Based on what you found, what do you think is happening when to the definite integral ?     We can think about putting this a bit more generally into limit notation, but we'll get to this later.    Ok, let's formalize these limits with some strategies for evaluating improper integrals!    Strategies for Evaluating Improper Integrals   Evaluating Improper Integrals (Infinite Width)  For a function that is continuous on , we can evaluate the improper integral : .  If is continuous on , we can evaluate the improper integral : .  Finally, if is continuous on and is some real number, then we can evaluate the improper integral :      Evaluate the improper integral by evaluating the limit: . Try to interpret this limit. What does it mean if this limit doesn't exist? What does it mean if the limit does exist? What does the actual number represent?     Evaluating Improper Integrals (Infinite Height)  For a function that has an unbounded discontinuity (a vertical asymptote) at with , but is otherwise continuous on , then we can evaluate the improper integrals:      Evaluate the improper integral by evaluating the limit: . Try to interpret this limit. What does it mean if this limit doesn't exist? What does it mean if the limit does exist? What does the actual number represent?    Ok, let's note that we can classify these improper integrals into two categories. We have already classified them based on the reason that they're improper. But now we also can classify them based on the outcome of the limit:   Improper integrals (of any type) whose limit exists.    Improper integrals (of any type) where the limit doesn't exist.   Let's define a term for this, so that our classification isn't so wordy.    Convergence and Divergence of an Improper Integral   Convergence of an Improper Integral   We say that an improper integral converges if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral diverges .    All we've done here is added some language: we'll say that an improper integral diverges if the limit doesn't exist. And if the limit exists, we'll say that the improper integral converges to .      Explain what it means for an integral to be improper. What kinds of issues are we looking at?    Give an example of an integral that is improper due to an unbounded or infinite interval of integration (infinite width).    Give an example of an integral that is improper due to an unbounded integrand (infinite height).    What does it mean for an improper integral to converge? How does this connect with limits?    What does it mean for an improper integral to diverge? How does this connect with limits?    Why do we need to use limits to evaluate improper integrals?     For each of the following improper integrals:   Explain why the integral is improper. Be specific, and point out the issues in detail.    Set up the integral using the correct limit notation.    Antidifferentiate and evaluate the limit.    Explain whether the integral converges or diverges.                                                  One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of makes the function a valid probability distribution on the interval ?     Let's consider the integral . This is a difficult integral to evaluate!     First, compare to using an inequality: which one is bigger?      Second, use this inequality to compare the function to for : which one is bigger? Again, use your inequality from above to help!      Now compare to . Which one is bigger?      Explain how we can use this result to make a conclusion about whether our integral, converges or diverges.      "
 },
 {
   "id": "act-RememberingTheme",
@@ -4667,7 +4667,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ImproperIntegrals.html#def-ImproperIntegral",
   "type": "Definition",
-  "number": "7.1.1",
+  "number": "7.1.3",
   "title": "Improper Integral.",
   "body": " Improper Integral   An integral is an improper integral if it is an extension of a definite integral whose integrand or limits of integration violate a requirement in one of two ways:   The interval that we integrate the function over is unbounded in width, or infinitely wide.    The integrand is unbounded in height, or infinitely tall, somewhere on the interval that we integrate over.      "
 },
@@ -4676,7 +4676,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ImproperIntegrals.html#Act-ApproximateImproperIntegrals",
   "type": "Activity",
-  "number": "7.1.3",
+  "number": "7.1.4",
   "title": "Approximating Improper Integrals.",
   "body": " Approximating Improper Integrals   In this activity, we're going to look at two improper integrals:                 First, let's just clarify to ourselves what it means for an integral to be improper. Why are each of these integrals improper? Be specific!      Let's focus on first. We're going to look at the slightly different integral: . As long as is some real number with , then our function is continuous and bounded on , and so we can evaluate this integral: where is an antiderivative of .  Find and antiderivative, .    You'll need to use -substitution, with and .    You should be thinking about finding an antiderivative using an indefinite integral: .      Now we're going to evaluate some areas for different values of . Use your antiderivative from above!   Let's start with making . So we're going to evaluate:     Now let . Evaluate:     Now let . Evaluate:          Based on what you found, what do you think is happening when to the definite integral ?      Ok, we're going to switch our focus to the other improper integral, . again, we'll look at a slightly different integral: . As long as is some real number with , then our function is continuous and bounded on , and so we can evaluate this integral: where is an antiderivative of . We can use the same antiderivative as before!  We're going to evaluate this intergal for different values of again, but this time we'll use values that are close to , but slightly bigger, since we want to be in the interval .   Let's start with making . So we're going to evaluate:     Now let . Evaluate:     Now let . Evaluate:          Based on what you found, what do you think is happening when to the definite integral ?     We can think about putting this a bit more generally into limit notation, but we'll get to this later.   "
 },
@@ -4685,7 +4685,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ImproperIntegrals.html#subsec-ImproperIntegralStrategies-3",
   "type": "Example",
-  "number": "7.1.2",
+  "number": "7.1.5",
   "title": "",
   "body": "  Evaluate the improper integral by evaluating the limit: . Try to interpret this limit. What does it mean if this limit doesn't exist? What does it mean if the limit does exist? What does the actual number represent?   "
 },
@@ -4694,7 +4694,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ImproperIntegrals.html#subsec-ImproperIntegralStrategies-5",
   "type": "Example",
-  "number": "7.1.3",
+  "number": "7.1.6",
   "title": "",
   "body": "  Evaluate the improper integral by evaluating the limit: . Try to interpret this limit. What does it mean if this limit doesn't exist? What does it mean if the limit does exist? What does the actual number represent?   "
 },
@@ -4703,7 +4703,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ImproperIntegrals.html#def-ConvergenceImproperIntegral",
   "type": "Definition",
-  "number": "7.1.4",
+  "number": "7.1.7",
   "title": "Convergence of an Improper Integral.",
   "body": " Convergence of an Improper Integral   We say that an improper integral converges if the limit of the appropriate definite integral exists. If the limit does not exist, then we say that the improper integral diverges .   "
 },
@@ -4741,7 +4741,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4",
   "title": "",
-  "body": " What does it mean for an improper integral to \"converge?\" How does this connect with limits?  "
+  "body": " What does it mean for an improper integral to converge? How does this connect with limits?  "
 },
 {
   "id": "ex-ImproperIntegrals-5",
@@ -4750,7 +4750,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5",
   "title": "",
-  "body": " What does it mean for an improper integral to \"diverge?\" How does this connect with limits?  "
+  "body": " What does it mean for an improper integral to diverge? How does this connect with limits?  "
 },
 {
   "id": "ex-ImproperIntegrals-6",
@@ -4829,7 +4829,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-MoreuSubstitution.html#ex-TurnAround",
   "type": "Example",
-  "number": "7.2.1",
+  "number": "7.2.3",
   "title": "",
   "body": "  Find the following indefinite integral:     Try letting so that . Then we can say that .     There are some ways of rewriting this antiderivative family: we could try to group up all of the constant terms by multiplying everything out. Feel free to do this, but it is completely unnecessary.   "
 },
@@ -4874,7 +4874,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlgebraicManipulations.html#act-NegativeExponent",
   "type": "Activity",
-  "number": "7.3.1",
+  "number": "7.3.2",
   "title": "A Negative Exponent.",
   "body": " A Negative Exponent   Let's think about this integral: .     Is there any composition in this integral? Pick it out, and either explain or show that using this to guide your substitution will not be helpful.    Notice that is composed inside of the exponential function. Try a substitution with .      What does mean? What does mean?      Rewrite the integral, specifically focusing on the negative exponent. You should find that the function looks worse! How can you clean that up?    Rewrite as , giving you: .    Either add the fractions in the denominator or multiply the whole fraction by .    You should have an integral that looks like: .      Why is this new integral set up so much better for the purpose of -substitution? How could we tell this just by looking at the initial integral?    "
 },
@@ -4883,7 +4883,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlgebraicManipulations.html#subsec-Rewriting-6",
   "type": "Example",
-  "number": "7.3.2",
+  "number": "7.3.3",
   "title": "",
   "body": "  Rewrite the integrand function for , and then integrate using an appropriate substitution.    Try to rewrite this integral by noticing that . Then try to make the resulting fraction a bit nicer to look at, since it has a fraction inside of the denominator of another fraction.        "
 },
@@ -4892,7 +4892,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlgebraicManipulations.html#act-Division",
   "type": "Activity",
-  "number": "7.3.2",
+  "number": "7.3.4",
   "title": "Integrating a Rational Function Three Ways.",
   "body": " Integrating a Rational Function Three Ways   We're going to think about the integral: . Let's find 3 different ways of integrating this. This is kind of misleading, since we're actually going to look at 2, since we've already used -substitution to integrate this in .     Let's just notice some things about this rational function.   Are there any vertical asymptotes? How do you know where to find them?    Are there any horizontal asymptotes? How do you know that there aren't ?    When you zoom really far out on the graph of this function, it looks like a different kind of function. What kind of function? Why is that?          There's a vertical asymptote at , since that's where we'd find a limit with the form , like in .    There aren't any horizontal asymptotes! We know that because the degree is larger in the numerator, like in .    This graph looks linear:   This is because the numerator is one degree larger than the denominator. When we divide these two functions, we expect to end up with some sort of linear function and a remainder that approaches 0 as .         Now we're going to rewrite the function itself: means we're dividing by . So let's do the division!                                                                 Rewrite your integral using this new version of the function. Notice that we haven't done any calculus or antidifferentiating yet. Explain why this new version of this integrand function is easier to antidifferentiate. What do you get?           Let's approach this integral differently. We said earlier that this function is really an almost linear function in disguise: when we divide the quadratic numerator by a linear denominator, we expect a linear function to be left over. In the long division, we saw this happen! We ended with a linear function and some remainder.  Let's try to uncover this linear function. If we're looking to find what linear functions multiply together to get , then we can try factoring! In order for this factoring to be useful, we want to be able to cancel out the factor in the denominator. We're really only interested in what linear factor will multiply by to get .   First, explain why there is no linear function factor that accomplishes this.      What if we're able to almost factor this?  If there was a linear factor that multiplied by to get , then the linear portions would multiply together to get . What does this mean about the first linear term of our factor?    We need since .      What does the constant term of our missing factor need to be? We are hoping that whatever it is can multiply by (from ) and combine with the (from the constant multiplied by in our missing factor) to match the in .  What is it?    We need to find where when we multiply we end up with . It should be clear that .  Our missing factor is .      Note that we have not factored ! We almost did: we found two factors: .  How far off is the actual polynomial that we are working with, ?  Write as your two factors, plus or minus some remainder.    Find the constant term where: .    Since , we need to add to get .       You should get the same thing that we got from using long division! Great! The rest of the integral will work the same.  Before we end, though, compare this antiderivative to the one we got in . It's different. Why? Is this a problem?    It's only off by a constant! Show this by expanding all of the multiplication in .    "
 },
@@ -4901,7 +4901,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlgebraicManipulations.html#act-LogVsInvTan",
   "type": "Activity",
-  "number": "7.3.3",
+  "number": "7.3.5",
   "title": "Comparing Two Very Similar Integrals.",
   "body": " Comparing Two Very Similar Integrals   We're going to compare these two integrals:             Describe why is such a useful choice for the first integral, but not for the second. How do the differences in these two integrals influence this substitution, even though the denominators are the same?    If , then for both integrals. Why is this good for one integral but not the other?      Why would it be useful to have a linear substitution rule (instead of the quadratic one that we picked) for the second integral? Why would that match the structure of the numerator better?  Go ahead and integrate the first integral.           We're going to write the denominator, in a different way, in order to get a linear function composed into something familiar.   Complete the square for this polynomial: that is, find some linear factor and a real number such that . This should feel familiar, since we already haves tried to force polynomials to factor cleverly in .    We want to find a constant term so that gives us . Then, we can compare the quadratic to to see how far off it is!    We can use since . Then, we can write: .      There is an intuitive substitution to pick, since we now have more obvious composition. Pick it. What kind of integral do we end up with and how do we antidifferentiate? Complete this problem!         "
 },
@@ -4910,7 +4910,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlgebraicManipulations.html#thm-GeneralizedInvTan",
   "type": "Theorem",
-  "number": "7.3.3",
+  "number": "7.3.6",
   "title": "Generalized Inverse Tangent Forms.",
   "body": " Generalized Inverse Tangent Forms        This is really just based on a clever substitution. Once we see this specific constant over a sum of squares, we can factor out a convenient coefficient to force the denominator to look like a sum of something squared and 1. Now we can let and . This strategy also can be used for other inverse trigonometric derivatives. But we will use the inverse tangent form most of all, and thus we want to outline it fully.   "
 },
@@ -4982,7 +4982,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#ex-2xarctan",
   "type": "Example",
-  "number": "7.4.1",
+  "number": "7.4.4",
   "title": "",
   "body": "  Integrate the following:          It doesn't matter whether we differentiate or antidifferentiate , since we'll get the same thing. Let's pick so that we can differentiate it.      We need to do more integration by parts!             We don't know how to antidifferentiate , but we do know how to differentiate it!          "
 },
@@ -4991,7 +4991,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#subsec-FlexibleChoices-5",
   "type": "Example",
-  "number": "7.4.2",
+  "number": "7.4.5",
   "title": "",
   "body": "  Integrate , this time making a more intentional choice for .    Note that if we pick , then the second integral will be just delightful.         "
 },
@@ -5000,7 +5000,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#ex-IntegralLog",
   "type": "Example",
-  "number": "7.4.3",
+  "number": "7.4.6",
   "title": "Antidifferentiating the Log Function.",
   "body": " Antidifferentiating the Log Function   Integrate .    Pick , since we can differentiate it. What does that leave for ?          An alternate approach is to use a substitution first. We're going to be using a lot of different variable names here, so let's use a -substitution. Let so that . In order to induce this derivative of the log, let's multiply by inside the integral: This integral can be done using the standard integration by parts! Now, we can substitute back to : .   "
 },
@@ -5009,7 +5009,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#subsec-FlexibleChoices-13",
   "type": "Example",
-  "number": "7.4.4",
+  "number": "7.4.7",
   "title": "",
   "body": "  Integrate .      Note that this last integral is really recognizable: it's the one we started with! Let's solve this equation for that integral by adding it to both sides of our equation.    "
 },
@@ -5018,7 +5018,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#act-SolveIntegral",
   "type": "Activity",
-  "number": "7.4.4",
+  "number": "7.4.8",
   "title": "Squared Trig Functions.",
   "body": " Squared Trig Functions   Let's look at two integrals. We'll talk about both at the same time, since they're similar.             What does it mean to square a trig function? Write these integrals in a different way, where the meaning of the squared exponent is more clear. What do you notice about the structure of these integrals, the operation in the integrand function? What does this mean about our choice of integration technique?           If you were to use integration by parts on these integrals, does your choice of and even matter here? Why not?    Is there a difference in the two functions being multiplied?      Apply the integration by parts formula to each. What do you notice?    For the integral :   For the integral :       Instead of applying another round of integration by parts to the resulting integral, use the Pythagorean identities to rewrite these integrals:       You should notice that, in your equation for the integration of , you have another copy of . Similarly, in your equation for the integration of , you have another copy of .  Replace these integrals with a variable, like (for integral ). Can you solve for this variable (integral)?    For : So we end up with: .  For : So we end up with: .    "
 },
@@ -5027,7 +5027,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegrationByParts.html#ex-sincos",
   "type": "Example",
-  "number": "7.4.5",
+  "number": "7.4.9",
   "title": "",
   "body": "  For each of the following integrals, use integration by parts to solve.          This one is pretty straightforward, since it doesn't really matter what we select as our parts. Notice, though, that this isn't the only way we can approach this! We can use -substitution, or even rewrite this using a trigonometric identity.                         "
 },
@@ -5126,7 +5126,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowersOfTrig.html#subsec-StrategySinesCosines-5",
   "type": "Example",
-  "number": "7.5.1",
+  "number": "7.5.2",
   "title": "",
   "body": "  For each of the following, identify an appropriate substitution, make a note of which trigonometric identity you'll use, and then integrate.          Notice that the exponent on is odd: if you let , you'll end up with left over in your integral, and you can write it as .           This one seems scary at first, because of the fraction exponent. Notice, though, that you have no hope of converting fractional exponents of sine functions into cosine functions easily. So, pick and try to convert any remaining cosines using .           You get a choice here! Both exponents are odd, so picking either function as will leave you with an even exponent on the other function on which to use the Pythagorean Identity. Is there a choice of that will be easier than the other choice?    "
 },
@@ -5135,7 +5135,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowersOfTrig.html#act-SecTan",
   "type": "Activity",
-  "number": "7.5.2",
+  "number": "7.5.3",
   "title": "Compare and Contrast (Again).",
   "body": " Compare and Contrast (Again)   We're going to do another Compare and Contrast, but this time we're only going to consider one integral: . We're going to employ another strategy, similar to the one for .     Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is: . Since we want a version that connects , which also is written as , with , or , let's divide everything in the Pythagorean Identity by :            Now start with the integral. We're going to use two different processes here, two different -substitutions. First, set . Complete the substitution and solve the integral.    Here, . We'll also use .           Now try the integral again, this time using as your substitution.    Now , and we'll use the same Pythagorean Identity, just rewritten as .           For each of these integrals, why were the exponents set up just right for -substitution each time? How does the structure of the derivatives of each function play into this?    Notice we had an even exponent on the function, but an odd exponent on the function.      Which substitution would be best for the integral . Why?      Which substitution would be best for the integral . Why?    "
 },
@@ -5144,7 +5144,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowersOfTrig.html#subsec-StrategySecantsTangents-4",
   "type": "Example",
-  "number": "7.5.2",
+  "number": "7.5.4",
   "title": "",
   "body": "  For each of the following, identify an appropriate substitution, make a note of which trigonometric identity you'll use, and then integrate.          You have some choices here! If you use , then you'll end up with a remaining to convert using a Pythagorean Identity. Alternatively, if you use , you'll end up needing to convert the remaining .           Another fraction exponent that is pushing us towards using . There will still be a to convert after substituting in .           The odd exponent on tangent is fine, since we can use to leave us with a to convert.    "
 },
@@ -5218,7 +5218,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.6",
   "title": "Trigonometric Substitution",
-  "body": " Trigonometric Substitution   We're going to look at an integral that requires a variable substitution, but our goal for the substitution will be a bit different. We're going to focus on the structure of our integrand function, but we won't be focusing on composition. Instead, we're going to focus on some trigonometric identities that we've used already:    Difference of Squares   Consider the integral: .     First, convince yourself that a normal -substitution will not be an effective strategy for integration in this case. Why not?    There is composition in this integrand function, but what part of our -substitution is missing?      Second, convince yourself that . Why can we not distribute roots across sums and differences like this? When can we distribute roots across multiple things?    A root is really an exponent: why can't we distribute exponents across sums and differences? Try this with , and convince yourself that this isn't .  Notice, though, that something like , and could act similarly.      Our goal, then, is to utilize a substitution (using trigonometric functions) to somehow transform this difference of squared terms under the square root into a single product of squared things under the square root.  Which trigonometric identities from our list of them above utilize differences of thing squared, and equate them to a single term?  Can you use the order of the subtraction to help guide which substitution we should use?    We want to pick some trigonometric function so that when we let , we end up with one of the Pythagorean Identities above. Is there something we can put in for such that becomes in a convenient way?      When we do a variable substitution in an integral, we are not only finding a way of transforming to be in terms of some other variable (in this case, ). We also need to transform the differential, . Based on your substitution of , what is ?    We'll use . What is for you?      Perform your substitution! Use your substitution and . Note that we have picked this substitution with a very specific goal: we are hoping to notice a Pythagorean Identity.  After you have performed your substitution, apply the relevant Pythagorean Identity to the radicand : the bit of our function underneath the radical or root. What integral are we left with (in terms of )?    Since we are using , we should notice underneath the square root.          This new integral is something we can antidifferentiate now! We already have done this one in . So we can end up with: It is up to us, now, to translate this antiderivative family to be written in terms of . We can utilize our substitution to do this, but let's first think about how this variable substitution works a bit more.      Another Type of Variable Substitution  We're going to employ another variable substitution, in the same way that we use -substitution. The main difference is the goal: we're going to select our substitution not based on uncovering the composition in our function (like in -substitution). Instead, we'll focus on selecting a trigonometric function in order to utilize the relevant Pythagorean identity to rewrite our sum or difference of squares.   General idea of how this variable substitution works.   Two rectangles, one labeled \"x Context\" and the other, beside it, labeled \"theta Context.\" Inside the \"x Context\" rectangle is an integral of f(x) dx with an arrow pointing towards F(x)+C. Inside the \"theta Context\" rectangle is an integral of g(theta) d theta with an arrow pointing towards G(theta)+C. There is an arrow connecting the integral of f(x) dx in the first rectangle to the integral of g(theta) d theta labeled x=T(theta) and dx = T'(theta) d theta. Then there is an arrow connecting G(theta)+C to F(x)+C labeled x = T(theta)     Ok, but how do we choose which trigonometric function to use in our substitution? Since we're focusing on sums or differences of squared terms, we can think of the different arrangements of terms, connect them with different Pythagorean Identities, and set up some strategies for picking a trigonometric substitution. We can note that the sum is commutative, so we can treat the same way that we treat .  We'll also notice that the constant term can differ: we can scale our Pythagorean identities by some constant easily to make sure that they match.   This can be confusing, and we want to keep thinking about how we might recognize these structures to pick a substitution. Yes, we can recognize these Pythagorean identities. We can rely on the order of subtraction or noticing addition. But we also can think about this geometrically. The Pythagorean Identities come from the Pythagorean Theorem, relating the squared lengths of the sides of a right triangle together. Let's visualize our substitutions geometrically.  We'll consider three triangles, each with side lengths of and . The third side length will vary between , , and (or the equivalent ) based on which length is representing the hypotenuse.   Trig Substitution Geoemtry   We're going to consider three triangles, and we're going to fill in side lengths. In each of these, we'll assume that the lengths and are real numbers and are positive.  Three triangles to guide our trigonometric substitutions.    Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled a.     Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled a.     Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled a, and the hypotenuse is labeled x.          Use the Pythagorean theorem to label the missing side length in each of the three triangles.      For each triangle, explain how you can tell which side length represents the hypotenuse when you see the lengths , , and then the missing lengths you found above: , , or .    We know that the hypotenuse is the longest side length in a triangle. Just based on the square root length, how can you tell which length is longest?    If one of the side lengths is , then we know that (otherwise the square root is a non-real number). We also know that (because ). This means that is the length of the hypotenuse.  If one of the side lengths is , then we know that (otherwise the square root is a non-real number). We also know that (because ). This means that is the length of the hypotenuse.  If one of the side lengths is , then we know that and (because ). This means that is the length of the hypotenuse.      For each triangle, find a trigonometric function of that connects lengths and to each other.  Solve each for to reveal the relevant substitution.      For each substitution, find the corresponding substitution for the differential, .     This gives us a nice strategy for substitution!   Trigonometric Substitution  We have three (typical) ways of using trigonometric substitution to transform a sum or difference of squared terms into a product of squares.   For an integral containing , we can use the following triangle to build our substitution:     Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled a, and the remaining side length is labeled sqrt(a^2-x^2).     This results in using the following substitution and identity.     For an integral containing , we can use the following triangle to build our substitution:     Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled a, and the hypotenuse is labeled x, and the remaining side length is labeled sqrt(x^2-a^2).     This results in using the following substitution and identity.     For an integral containing , we can use the following triangle to build our substitution:     Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled a. The hypotenuse is labeled sqrt(x^2+a^2).     This results in using the following substitution and identity.       Two things to note before we move on:   There are really 6 main trigonometric substitutions. If you go back to and place the angle in the opposite corner of the triangle, the substitutions you build will all be using the co-functions : cosine, cosecant, and cotangent. Each of these has a very similar structure with regard to derivatives (for the differential substitution) and Pythagorean Identities. Each is equivalent to the respective sine, secant, and tangent substitutions. We often choose to use sine, secant, and tangent just due to familiarity.    We can use the triangle as a kind of key for our substitution! After antidifferentiating, we have some antiderivative family written in terms of an angle : we can use the triangle to substitution trigonometric functions of to be written in terms of .       We can finish the substitution we started in . We used the substitution , but we now can construct the relevant triangle.  Since we were hoping so use a substitution to rewrite the difference of squares, , we had the following triangle:   Substitution used in .   Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled 1, and the remaining side length is labeled sqrt(1-x^2).     We can see that or , which was our substitution.  But we also were left with the following antiderivative: Now we can substitute that antiderivative! We can see from our triangle that , (this also was our original substitution anyways), and we also can invert our substitution to get .      Practicing Trigonometric Substitution   Let's look at three integrals, and practice the kind of thinking we'll need to use to apply trigonometric substitution to them.                 For each integral, do the following:     Identify the term (or terms) that signify that trigonometric substitution might be a reasonable strategy.    In each case, you're looking for some sum or difference of squared terms, normally (but not always) nested inside of some square root. It also might be nice to rewrite the second integral in order to notice the root: .      Use that portion of the integral to compare three side lengths of a triangle. Which one is the largest (and so must represent the length of the hypotenuse)?       For the side lengths , , and , which must be the largest? Think about and what we can learn from it.    For the side lengths , , and , which must be the largest? Think about and what we can learn from it.    For the side lengths , , and , which must be the largest? Think about and what we can learn from it.          We know that , since . Similarly, we know that . So has to be the length of the hypotenuse.    We know that , since . Similarly, we know that . So has to be the length of the hypotenuse.    We know that , since we are adding to under the square root. This also is the reason that (we are adding under the root). So has to be the length of the hypotenuse.         Construct the triangle, label an angle , and use a trigonometric function to connect the two single-term side lengths. (Feel free to change the angle you label in order to use the sine, secant, or tangent functions instead of their co-functions).       For the integral , we have the following triangle.     Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled 3, and the hypotenuse is labeled x, and the remaining side length is labeled sqrt(x^2-9).     This gives us or, equivalently, .    For the integral , we have the following triangle.     Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled 2, and the remaining side length is labeled sqrt(4-x^2).     This gives us .    For the integral , we have the following triangle.     Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled 1. The hypotenuse is labeled sqrt(x^2+1).     This gives us or, equivalently, .         Define your substitution (for both and the differential ), and identify the Pythagorean Identity that will be relevant for the integral.       We will use and .  Then, we can expect to find the Pythagorean Identity .    We will use and .  Then, we can expect to find the Pythagorean Identity .    We will use and .  Then, we can expect to find the Pythagorean Identity .         Substitute and antidifferentiate!          Also note that .       Also note that .       Also note that .          Using , we get:     Using , we get:     Using , we get:          Use your triangle to substitute your antiderivative back in terms of .       From the triangle, we get . Then, since , we can use . This gives us:     From the triangle, we get . This gives us:     From the triangle, we get . This gives us:         Trigonometric substitution is a pretty involved technique! Setting up the substitution is definitely not trivial. Because our substitution involves trigonometric functions, we end up with integrals of trigonometric functions that we then have to work to antidifferentiate. And substituting back to relies on us having set up a robust substitution strategy from the beginning.  It can sometimes seem like this strategy is barely relevant: the goal of it is so focussed on the specific structure of the Pythagorean identities, and these might not feel very present.  A friend of mine, though, says that once we start recognizing sums and differences of squares as being connected to Pythagoras, it's hard to not see them.  For instance, we can go back to and see the sum of squares in the denominator. Instead of doing any tricky factoring to get the -substitution to work, we could try a trigonometric substitution and get the same thing!  Another friend of mine says that trigonometric substitution only exists so that we can evaluate arc length integrals ( ).  Whatever the case, this new substitution strategy should, at the very least, generalize the concept of a variable substitution in an integral to show that we can define these for a variety of purposes, all based on the kinds of structures that we're seeing in the integrand function itself.     Explain how trigonometric substitution helps to convert sums or differences of squares to products of squares. Why is this helpful? When is it helpful?    Draw a right triangle with as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing ?    Draw a right triangle with as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing ?    Draw a right triangle with as the hypotenuse. What are the lengths of the other two sides? What would be an appropriate substitution for an integral containing ?     Integrate the following using an appropriate trigonometric substitution.                                         (for )                     Complete the square and then integrate.                   "
+  "body": " Trigonometric Substitution   We're going to look at an integral that requires a variable substitution, but our goal for the substitution will be a bit different. We're going to focus on the structure of our integrand function, but we won't be focusing on composition. Instead, we're going to focus on some trigonometric identities that we've used already:    Difference of Squares   Consider the integral: .     First, convince yourself that a normal -substitution will not be an effective strategy for integration in this case. Why not?    There is composition in this integrand function, but what part of our -substitution is missing?      Second, convince yourself that . Why can we not distribute roots across sums and differences like this? When can we distribute roots across multiple things?    A root is really an exponent: why can't we distribute exponents across sums and differences? Try this with , and convince yourself that this isn't .  Notice, though, that something like , and could act similarly.      Our goal, then, is to utilize a substitution (using trigonometric functions) to somehow transform this difference of squared terms under the square root into a single product of squared things under the square root.  Which trigonometric identities from our list of them above utilize differences of thing squared, and equate them to a single term?  Can you use the order of the subtraction to help guide which substitution we should use?    We want to pick some trigonometric function so that when we let , we end up with one of the Pythagorean Identities above. Is there something we can put in for such that becomes in a convenient way?      When we do a variable substitution in an integral, we are not only finding a way of transforming to be in terms of some other variable (in this case, ). We also need to transform the differential, . Based on your substitution of , what is ?    We'll use . What is for you?      Perform your substitution! Use your substitution and . Note that we have picked this substitution with a very specific goal: we are hoping to notice a Pythagorean Identity.  After you have performed your substitution, apply the relevant Pythagorean Identity to the radicand : the bit of our function underneath the radical or root. What integral are we left with (in terms of )?    Since we are using , we should notice underneath the square root.          This new integral is something we can antidifferentiate now! We already have done this one in . So we can end up with: It is up to us, now, to translate this antiderivative family to be written in terms of . We can utilize our substitution to do this, but let's first think about how this variable substitution works a bit more.      Another Type of Variable Substitution  We're going to employ another variable substitution, in the same way that we use -substitution. The main difference is the goal: we're going to select our substitution not based on uncovering the composition in our function (like in -substitution). Instead, we'll focus on selecting a trigonometric function in order to utilize the relevant Pythagorean identity to rewrite our sum or difference of squares.    Two rectangles, one labeled \"x Context\" and the other, beside it, labeled \"theta Context.\" Inside the \"x Context\" rectangle is an integral of f(x) dx with an arrow pointing towards F(x)+C. Inside the \"theta Context\" rectangle is an integral of g(theta) d theta with an arrow pointing towards G(theta)+C. There is an arrow connecting the integral of f(x) dx in the first rectangle to the integral of g(theta) d theta labeled x=T(theta) and dx = T'(theta) d theta. Then there is an arrow connecting G(theta)+C to F(x)+C labeled x = T(theta)     Ok, but how do we choose which trigonometric function to use in our substitution? Since we're focusing on sums or differences of squared terms, we can think of the different arrangements of terms, connect them with different Pythagorean Identities, and set up some strategies for picking a trigonometric substitution. We can note that the sum is commutative, so we can treat the same way that we treat .  We'll also notice that the constant term can differ: we can scale our Pythagorean identities by some constant easily to make sure that they match.   This can be confusing, and we want to keep thinking about how we might recognize these structures to pick a substitution. Yes, we can recognize these Pythagorean identities. We can rely on the order of subtraction or noticing addition. But we also can think about this geometrically. The Pythagorean Identities come from the Pythagorean Theorem, relating the squared lengths of the sides of a right triangle together. Let's visualize our substitutions geometrically.  We'll consider three triangles, each with side lengths of and . The third side length will vary between , , and (or the equivalent ) based on which length is representing the hypotenuse.   Trig Substitution Geoemtry   We're going to consider three triangles, and we're going to fill in side lengths. In each of these, we'll assume that the lengths and are real numbers and are positive.  Three triangles to guide our trigonometric substitutions.    Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled a.     Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled a.     Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled a, and the hypotenuse is labeled x.          Use the Pythagorean theorem to label the missing side length in each of the three triangles.      For each triangle, explain how you can tell which side length represents the hypotenuse when you see the lengths , , and then the missing lengths you found above: , , or .    We know that the hypotenuse is the longest side length in a triangle. Just based on the square root length, how can you tell which length is longest?    If one of the side lengths is , then we know that (otherwise the square root is a non-real number). We also know that (because ). This means that is the length of the hypotenuse.  If one of the side lengths is , then we know that (otherwise the square root is a non-real number). We also know that (because ). This means that is the length of the hypotenuse.  If one of the side lengths is , then we know that and (because ). This means that is the length of the hypotenuse.      For each triangle, find a trigonometric function of that connects lengths and to each other.  Solve each for to reveal the relevant substitution.      For each substitution, find the corresponding substitution for the differential, .     This gives us a nice strategy for substitution!   Trigonometric Substitution  We have three (typical) ways of using trigonometric substitution to transform a sum or difference of squared terms into a product of squares.   For an integral containing , we can use the following triangle to build our substitution:    Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled a, and the remaining side length is labeled sqrt(a^2-x^2).     This results in using the following substitution and identity.     For an integral containing , we can use the following triangle to build our substitution:    Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled a, and the hypotenuse is labeled x, and the remaining side length is labeled sqrt(x^2-a^2).     This results in using the following substitution and identity.     For an integral containing , we can use the following triangle to build our substitution:    Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled a. The hypotenuse is labeled sqrt(x^2+a^2).     This results in using the following substitution and identity.       Two things to note before we move on:   There are really 6 main trigonometric substitutions. If you go back to and place the angle in the opposite corner of the triangle, the substitutions you build will all be using the co-functions : cosine, cosecant, and cotangent. Each of these has a very similar structure with regard to derivatives (for the differential substitution) and Pythagorean Identities. Each is equivalent to the respective sine, secant, and tangent substitutions. We often choose to use sine, secant, and tangent just due to familiarity.    We can use the triangle as a kind of key for our substitution! After antidifferentiating, we have some antiderivative family written in terms of an angle : we can use the triangle to substitution trigonometric functions of to be written in terms of .       We can finish the substitution we started in . We used the substitution , but we now can construct the relevant triangle.  Since we were hoping so use a substitution to rewrite the difference of squares, , we had the following triangle:    Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled 1, and the remaining side length is labeled sqrt(1-x^2).     We can see that or , which was our substitution.  But we also were left with the following antiderivative: Now we can substitute that antiderivative! We can see from our triangle that , (this also was our original substitution anyways), and we also can invert our substitution to get .      Practicing Trigonometric Substitution   Let's look at three integrals, and practice the kind of thinking we'll need to use to apply trigonometric substitution to them.                 For each integral, do the following:     Identify the term (or terms) that signify that trigonometric substitution might be a reasonable strategy.    In each case, you're looking for some sum or difference of squared terms, normally (but not always) nested inside of some square root. It also might be nice to rewrite the second integral in order to notice the root: .      Use that portion of the integral to compare three side lengths of a triangle. Which one is the largest (and so must represent the length of the hypotenuse)?       For the side lengths , , and , which must be the largest? Think about and what we can learn from it.    For the side lengths , , and , which must be the largest? Think about and what we can learn from it.    For the side lengths , , and , which must be the largest? Think about and what we can learn from it.          We know that , since . Similarly, we know that . So has to be the length of the hypotenuse.    We know that , since . Similarly, we know that . So has to be the length of the hypotenuse.    We know that , since we are adding to under the square root. This also is the reason that (we are adding under the root). So has to be the length of the hypotenuse.         Construct the triangle, label an angle , and use a trigonometric function to connect the two single-term side lengths. (Feel free to change the angle you label in order to use the sine, secant, or tangent functions instead of their co-functions).       For the integral , we have the following triangle.     Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled 3, and the hypotenuse is labeled x, and the remaining side length is labeled sqrt(x^2-9).     This gives us or, equivalently, .    For the integral , we have the following triangle.     Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled 2, and the remaining side length is labeled sqrt(4-x^2).     This gives us .    For the integral , we have the following triangle.     Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled 1. The hypotenuse is labeled sqrt(x^2+1).     This gives us or, equivalently, .         Define your substitution (for both and the differential ), and identify the Pythagorean Identity that will be relevant for the integral.       We will use and .  Then, we can expect to find the Pythagorean Identity .    We will use and .  Then, we can expect to find the Pythagorean Identity .    We will use and .  Then, we can expect to find the Pythagorean Identity .         Substitute and antidifferentiate!          Also note that .       Also note that .       Also note that .          Using , we get:     Using , we get:     Using , we get:          Use your triangle to substitute your antiderivative back in terms of .       From the triangle, we get . Then, since , we can use . This gives us:     From the triangle, we get . This gives us:     From the triangle, we get . This gives us:         Trigonometric substitution is a pretty involved technique! Setting up the substitution is definitely not trivial. Because our substitution involves trigonometric functions, we end up with integrals of trigonometric functions that we then have to work to antidifferentiate. And substituting back to relies on us having set up a robust substitution strategy from the beginning.  It can sometimes seem like this strategy is barely relevant: the goal of it is so focussed on the specific structure of the Pythagorean identities, and these might not feel very present.  A friend of mine, though, says that once we start recognizing sums and differences of squares as being connected to Pythagoras, it's hard to not see them.  For instance, we can go back to and see the sum of squares in the denominator. Instead of doing any tricky factoring to get the -substitution to work, we could try a trigonometric substitution and get the same thing!  Another friend of mine says that trigonometric substitution only exists so that we can evaluate arc length integrals ( ).  Whatever the case, this new substitution strategy should, at the very least, generalize the concept of a variable substitution in an integral to show that we can define these for a variety of purposes, all based on the kinds of structures that we're seeing in the integrand function itself.     Explain how trigonometric substitution helps to convert sums or differences of squares to products of squares. Why is this helpful? When is it helpful?    Draw a right triangle with as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing ?    Draw a right triangle with as one of the non-hypotenuse side lengths. What is the length of the hypotenuse? What about the other side length? What would be an appropriate substitution for an integral containing ?    Draw a right triangle with as the hypotenuse. What are the lengths of the other two sides? What would be an appropriate substitution for an integral containing ?     Integrate the following using an appropriate trigonometric substitution.                                         (for )                     Complete the square and then integrate.                   "
 },
 {
   "id": "act-DifferenceOfSquares",
@@ -5234,16 +5234,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TrigSub.html#fig-TrigSub",
   "type": "Figure",
-  "number": "7.6.1",
+  "number": "7.6.2",
   "title": "",
-  "body": " General idea of how this variable substitution works.   Two rectangles, one labeled \"x Context\" and the other, beside it, labeled \"theta Context.\" Inside the \"x Context\" rectangle is an integral of f(x) dx with an arrow pointing towards F(x)+C. Inside the \"theta Context\" rectangle is an integral of g(theta) d theta with an arrow pointing towards G(theta)+C. There is an arrow connecting the integral of f(x) dx in the first rectangle to the integral of g(theta) d theta labeled x=T(theta) and dx = T'(theta) d theta. Then there is an arrow connecting G(theta)+C to F(x)+C labeled x = T(theta)    "
+  "body": "  Two rectangles, one labeled \"x Context\" and the other, beside it, labeled \"theta Context.\" Inside the \"x Context\" rectangle is an integral of f(x) dx with an arrow pointing towards F(x)+C. Inside the \"theta Context\" rectangle is an integral of g(theta) d theta with an arrow pointing towards G(theta)+C. There is an arrow connecting the integral of f(x) dx in the first rectangle to the integral of g(theta) d theta labeled x=T(theta) and dx = T'(theta) d theta. Then there is an arrow connecting G(theta)+C to F(x)+C labeled x = T(theta)    "
 },
 {
   "id": "act-TrigSubTriangles",
   "level": "2",
   "url": "sec-TrigSub.html#act-TrigSubTriangles",
   "type": "Activity",
-  "number": "7.6.2",
+  "number": "7.6.3",
   "title": "Trig Substitution Geoemtry.",
   "body": " Trig Substitution Geoemtry   We're going to consider three triangles, and we're going to fill in side lengths. In each of these, we'll assume that the lengths and are real numbers and are positive.  Three triangles to guide our trigonometric substitutions.    Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled a.     Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled a.     Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled a, and the hypotenuse is labeled x.          Use the Pythagorean theorem to label the missing side length in each of the three triangles.      For each triangle, explain how you can tell which side length represents the hypotenuse when you see the lengths , , and then the missing lengths you found above: , , or .    We know that the hypotenuse is the longest side length in a triangle. Just based on the square root length, how can you tell which length is longest?    If one of the side lengths is , then we know that (otherwise the square root is a non-real number). We also know that (because ). This means that is the length of the hypotenuse.  If one of the side lengths is , then we know that (otherwise the square root is a non-real number). We also know that (because ). This means that is the length of the hypotenuse.  If one of the side lengths is , then we know that and (because ). This means that is the length of the hypotenuse.      For each triangle, find a trigonometric function of that connects lengths and to each other.  Solve each for to reveal the relevant substitution.      For each substitution, find the corresponding substitution for the differential, .    "
 },
@@ -5252,43 +5252,43 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TrigSub.html#fig-TrigSubSine",
   "type": "Figure",
-  "number": "7.6.3",
+  "number": "7.6.5",
   "title": "",
-  "body": "   Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled a, and the remaining side length is labeled sqrt(a^2-x^2).    "
+  "body": "  Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled a, and the remaining side length is labeled sqrt(a^2-x^2).    "
 },
 {
   "id": "fig-TrigSubSecant",
   "level": "2",
   "url": "sec-TrigSub.html#fig-TrigSubSecant",
   "type": "Figure",
-  "number": "7.6.4",
+  "number": "7.6.6",
   "title": "",
-  "body": "   Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled a, and the hypotenuse is labeled x, and the remaining side length is labeled sqrt(x^2-a^2).    "
+  "body": "  Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled a, and the hypotenuse is labeled x, and the remaining side length is labeled sqrt(x^2-a^2).    "
 },
 {
   "id": "fig-TrigSubTan",
   "level": "2",
   "url": "sec-TrigSub.html#fig-TrigSubTan",
   "type": "Figure",
-  "number": "7.6.5",
+  "number": "7.6.7",
   "title": "",
-  "body": "   Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled a. The hypotenuse is labeled sqrt(x^2+a^2).    "
+  "body": "  Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled a. The hypotenuse is labeled sqrt(x^2+a^2).    "
 },
 {
   "id": "subsec-AnotherVariableSubstitution-12",
   "level": "2",
   "url": "sec-TrigSub.html#subsec-AnotherVariableSubstitution-12",
   "type": "Example",
-  "number": "7.6.6",
+  "number": "7.6.8",
   "title": "",
-  "body": "  We can finish the substitution we started in . We used the substitution , but we now can construct the relevant triangle.  Since we were hoping so use a substitution to rewrite the difference of squares, , we had the following triangle:   Substitution used in .   Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled 1, and the remaining side length is labeled sqrt(1-x^2).     We can see that or , which was our substitution.  But we also were left with the following antiderivative: Now we can substitute that antiderivative! We can see from our triangle that , (this also was our original substitution anyways), and we also can invert our substitution to get .    "
+  "body": "  We can finish the substitution we started in . We used the substitution , but we now can construct the relevant triangle.  Since we were hoping so use a substitution to rewrite the difference of squares, , we had the following triangle:    Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled 1, and the remaining side length is labeled sqrt(1-x^2).     We can see that or , which was our substitution.  But we also were left with the following antiderivative: Now we can substitute that antiderivative! We can see from our triangle that , (this also was our original substitution anyways), and we also can invert our substitution to get .    "
 },
 {
   "id": "act-TrigSubPractice",
   "level": "2",
   "url": "sec-TrigSub.html#act-TrigSubPractice",
   "type": "Activity",
-  "number": "7.6.3",
+  "number": "7.6.10",
   "title": "Practicing Trigonometric Substitution.",
   "body": " Practicing Trigonometric Substitution   Let's look at three integrals, and practice the kind of thinking we'll need to use to apply trigonometric substitution to them.                 For each integral, do the following:     Identify the term (or terms) that signify that trigonometric substitution might be a reasonable strategy.    In each case, you're looking for some sum or difference of squared terms, normally (but not always) nested inside of some square root. It also might be nice to rewrite the second integral in order to notice the root: .      Use that portion of the integral to compare three side lengths of a triangle. Which one is the largest (and so must represent the length of the hypotenuse)?       For the side lengths , , and , which must be the largest? Think about and what we can learn from it.    For the side lengths , , and , which must be the largest? Think about and what we can learn from it.    For the side lengths , , and , which must be the largest? Think about and what we can learn from it.          We know that , since . Similarly, we know that . So has to be the length of the hypotenuse.    We know that , since . Similarly, we know that . So has to be the length of the hypotenuse.    We know that , since we are adding to under the square root. This also is the reason that (we are adding under the root). So has to be the length of the hypotenuse.         Construct the triangle, label an angle , and use a trigonometric function to connect the two single-term side lengths. (Feel free to change the angle you label in order to use the sine, secant, or tangent functions instead of their co-functions).       For the integral , we have the following triangle.     Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled 3, and the hypotenuse is labeled x, and the remaining side length is labeled sqrt(x^2-9).     This gives us or, equivalently, .    For the integral , we have the following triangle.     Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled 2, and the remaining side length is labeled sqrt(4-x^2).     This gives us .    For the integral , we have the following triangle.     Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled 1. The hypotenuse is labeled sqrt(x^2+1).     This gives us or, equivalently, .         Define your substitution (for both and the differential ), and identify the Pythagorean Identity that will be relevant for the integral.       We will use and .  Then, we can expect to find the Pythagorean Identity .    We will use and .  Then, we can expect to find the Pythagorean Identity .    We will use and .  Then, we can expect to find the Pythagorean Identity .         Substitute and antidifferentiate!          Also note that .       Also note that .       Also note that .          Using , we get:     Using , we get:     Using , we get:          Use your triangle to substitute your antiderivative back in terms of .       From the triangle, we get . Then, since , we can use . This gives us:     From the triangle, we get . This gives us:     From the triangle, we get . This gives us:        "
 },
@@ -5396,7 +5396,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PartialFractions.html#sec-PartialFractions-6-2",
   "type": "Example",
-  "number": "7.7.1",
+  "number": "7.7.4",
   "title": "",
   "body": "  For each of the following integrals, set up the relevant partial fraction forms, solve for the unknown coefficients, and then antidifferentiate.          Your partial fraction forms will look like this: .    You can find the values for and pretty easily by thinking about convenient -values, like we talked about in .    We'll rewrite our integral using the partial fraction forms: . When we combine these fractions to compare the numerators, we end up with the following equation: We can evaluate this at and to reveal the values of and : Now that we know and , we can put those into our equation connecting the numerators, and solve for and . If we just consider the cubic terms, then on the left side of the equation we have , and there are no cubic terms on the right side. This means that and so .  Similarly, we can consider just the constant terms of the (updated) equation: We can see that on the left side, we'll have and on the right side, the constant term is .   Finally, we have our new, rewritten, integral. We can antidifferentiate.            Your partial fraction forms will look like this: .    You'll be able to easily find by thinking about convenient -values, but not or .    Let's, again, rewrite our integral using the partial fraction forms we set up: Our equation for the combined numerator is: . We can find be evaluating at . Now, knowing that , we can rewrite our equation to solve for and . We can collect the quadratic terms, and see the following equation: So .  Similarly, we can collect the constant terms: . It is easy to see that . So we have our newly rewritten integral: The first term is pretty straightforward to integrate: we'll get a log. The second one, though, will take some work. Let's consider it by itself: . We can start with a -substitution of , giving us . Let's rewrite the numerator as in order to make this work: Now, the first of these will work with our stated substitution. The second one, though, will require a different strategy. Let's complete the square to get the inverse tangent form ( ). For all three integrals, then, we get:     "
 },
@@ -5486,7 +5486,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#def-ExplicitFormula",
   "type": "Definition",
-  "number": "8.1.1",
+  "number": "8.1.2",
   "title": "Explicit Formula.",
   "body": " Explicit Formula   An infinite sequence defined using an explicit formula is one where the th term of the sequence is defined as a function output of , the term's index.  Using notation, we might say that where:    is the name of the sequence (similar to how and are common names of functions).     is the index of the term, typically a non-negative integer.     is the function that we use to generate the terms.      "
 },
@@ -5495,7 +5495,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#def-RecursionRelation",
   "type": "Definition",
-  "number": "8.1.2",
+  "number": "8.1.3",
   "title": "Recursion Relation.",
   "body": " Recursion Relation   A sequence is defined using a recursion relation is one where the th term of the sequence is defined as a function output of the previous term, the st term. The sequence also needs some initial term to base the subsequent terms from.  Using notation, we might say that .   "
 },
@@ -5504,7 +5504,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#act-FirstSequencesAgain",
   "type": "Activity",
-  "number": "8.1.2",
+  "number": "8.1.4",
   "title": "Returning to our First Sequences.",
   "body": " Returning to our First Sequences   Let's return back to the four sequences we created in .     For each of the sequences, how are we going to define them? Explicit formulas? Recursion relations? How do you know?      Now, for each sequence, define the sequence formally using either an explicit formula or recursion relation, whichever matches with how you described the sequence in .    "
 },
@@ -5513,7 +5513,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#ex-PracticeWritingTerms",
   "type": "Example",
-  "number": "8.1.3",
+  "number": "8.1.5",
   "title": "Practice Writing some Terms.",
   "body": " Practice Writing some Terms   For each of the following sequences, write out the first handful of terms. There isn't a set amount, but you should write out enough to get a feel for the sequence structure and how the different ways of defining the sequences work. In each, you can start the index at 1 and count upwards ( ).      and                          "
 },
@@ -5522,7 +5522,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#act-DescribingSequences",
   "type": "Activity",
-  "number": "8.1.3",
+  "number": "8.1.6",
   "title": "Describing These Sequences.",
   "body": " Describing These Sequences   Let's look at the sequences from . Go through the following tasks for each sequence.     What do you think each sequence is counting towards (if anything)?    If you're not sure, maybe you need to write out a few more terms! You can also change how you write the numbers themselves: in some cases, fractions might be helpful, but in others it might be useful to write the numbers in decimal form. Maybe you'll approximate values of the sine or exponential functions, or maybe you'll leave them as or .      Can you show that the sequence is counting towards what you think it is with a limit (or show that it's not counting towards anything)?    Some of these limits, as , will be tricky to work with! When might you want to use ? When might you want to use ?    "
 },
@@ -5531,7 +5531,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#act-WriteSequences",
   "type": "Activity",
-  "number": "8.1.4",
+  "number": "8.1.7",
   "title": "Write the Sequence Rules.",
   "body": " Write the Sequence Rules   We'll look at some sequences by writing out the first handful of terms. From there, our goal is to write out more terms and eventually define each sequence fully.  For each sequence, write an explicit formula and a recursion relation to define the sequence. You can choose whether to start your index at or .          It might be helpful to write these numbers using a common denominator! Or at least some of the numbers. Alternatively, you can try a common numerator (which is very fun to do, since we normally don't do that).    If you are recursively multiplying by a number each time, what will that look like in the explicit formula? How do we represent repeated multiplication?           You can rewrite these fractions! Have any of them been reduced?     Rewrite and by scaling the numerator and denominator by 2. Can you find a formula for the numerator and denominator separately? This one is very difficult to find a recursion relation for, so feel free to only write it explicitly!           This one will definitely be helpful to rewrite so that all fractions have a common denominator.    If you are recursively adding something, how does that show up in the explicit formula? How do we repeatedly add?      What kinds of connections do you notice between the explicit formulas and the recursion relations for these sequences?    "
 },
@@ -5540,7 +5540,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#fig-FunctionSequence-1",
   "type": "Figure",
-  "number": "8.1.4",
+  "number": "8.1.8",
   "title": "",
   "body": " The function plotted on the interval .   A green curve, starting at (0,0) and increasing until a point at y=1 and then decreasing towards the x-axis asymptotically.   "
 },
@@ -5549,7 +5549,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#fig-FunctionSequence-2",
   "type": "Figure",
-  "number": "8.1.5",
+  "number": "8.1.9",
   "title": "",
   "body": " The sequence for   A barely visible plot of the same green curve, but with points at x=0, x=1, ..., x=10 highlighted.   "
 },
@@ -5558,7 +5558,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#def-SequenceDirection",
   "type": "Definition",
-  "number": "8.1.6",
+  "number": "8.1.10",
   "title": "Direction of a Sequence.",
   "body": " Direction of a Sequence   We say that a sequence is increasing if, for all , . If for all then we say that is non-decreasing .  We say that a sequence is decreasing if, for all , . If for all then we say that is non-increasing .  We say that is constant if , but this is a very boring sequence and we will likely not think terribly hard about these kinds of sequences.  Sometimes we might say that a sequence is eventually decreasing (or eventually non-increasing ) if there is some , and the sequence is decreasing (or non-increasing) for , and similarly for eventually increasing or eventually non-decreasing .   "
 },
@@ -5567,7 +5567,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#def-Monotonic",
   "type": "Definition",
-  "number": "8.1.7",
+  "number": "8.1.11",
   "title": "Monotonic Sequences.",
   "body": " Monotonic Sequences   For the sequence , we say that it is monotonic if the sequence is either non-increasing or non-decreasing.   "
 },
@@ -5585,7 +5585,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#def-Bounded",
   "type": "Definition",
-  "number": "8.1.8",
+  "number": "8.1.12",
   "title": "Bounded Sequences.",
   "body": " Bounded Sequences   We say that a sequence is bounded below if there is some real number such that for all .  Similarly we say that a sequence is bounded above if there is some real number such that for all .  If a sequence has both an upper bound and a lower bound, then we often just say that the sequence is bounded .   "
 },
@@ -5594,7 +5594,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#def-SequenceConvergence",
   "type": "Definition",
-  "number": "8.1.9",
+  "number": "8.1.13",
   "title": "Sequence Convergence.",
   "body": " Sequence Convergence   For the sequence , if is some real number and , the we say that the sequence  converges to . If this limit does not exist, we say that the sequence  diverges .   "
 },
@@ -5603,7 +5603,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#thm-MonotoneConvergence",
   "type": "Theorem",
-  "number": "8.1.10",
+  "number": "8.1.14",
   "title": "Monotone Convergence Theorem.",
   "body": " Monotone Convergence Theorem   If is a sequence that is both monotonic and bounded, then it must converge.   "
 },
@@ -5612,7 +5612,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#ex-FirstRecursiveSequence",
   "type": "Example",
-  "number": "8.1.11",
+  "number": "8.1.15",
   "title": "",
   "body": "  Let's revisit the first sequence from : where and .     Let's start by assuming that the sequence converges. That means that there exists some real number such that .  What would this be, if it exists? A key thing to note is that if exists (and we have a symbol, , for it) then we can say that . Whether or not this is obvious to you is not a mark of your understanding, but we need to make sure that this ends up being obvious to you. If it's not, that's ok! But it is an indicator that you should take a couple of minutes to think about this. Once you are convinced that these two limits are the same thing, move on to the next part.      Let's now apply a limit to the sequence definition: And so we have two solutions to this equation: and . This is strange: how can a sequence have more than one value that it converges to?  It's because we have yet to take into account the initial term, ! Depending on this value, the sequence might converge or not, and if it does converge, then there are two options for what the sequence can converge to, based on the value of .      You can do the next part on your own, but I want you to pick different numbers for and write out some terms of the resulting sequence. You should find that some of them look like they're converging to , one of them will converge to (it's a fun hunt to find which one), and some will diverge.    You should find that if , then the sequence is constant and converges to . If then the sequence seems like it'll converge to . And if , then it looks like the sequence diverges.      Now it is up to us to show that this sequence, with , does converge. Sure, we have some evidence and a good conjecture that it converges to , but that is just our good guess based on what we have seen in the first handful of numbers.  We will attempt to convince ourselves that this sequence is both monotonic and bounded. We'll begin with boundedness.  It should be clear that , since as long as , then . Since we start with , we are guaranteed to get non-zero values from the formula for a new term! Great news, we have a lower bound.  Let's show that is an upper bound: when   Since , we know that each successive term will also be less than . So we have an upper bound!  So the sequence is bounded. Now we just need to convince ourselves that this sequence is monotonic. We know that our terms are bounded above by , and I hope that this means we can convince ourselves that since our terms are smaller than this, which would produce a constant sequence, then all of our terms are probably decreasing.  Let's show this by showing that : We can solve for when this is negative! It shouldn't be hard to show that when . And we've already shown this is true in our case!  So is bounded and monotonic and must therefore converge because of the . Because , we know that this sequence doesn't converge to , and so must converge to the only other option: 0.    "
 },
@@ -5621,7 +5621,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSequences.html#ex-FunRecursive",
   "type": "Example",
-  "number": "8.1.12",
+  "number": "8.1.16",
   "title": "",
   "body": "   Consider the sequence defined by with . Does this sequence converge? To what?     Write out some terms to get a feel for things! Then, assuming that the sequence converges to some real number, , think about what happens when you apply a limit as : we should get the equation .      Consider the sequence defined by with . Does this sequence converge? To what?     Write out some terms to get a feel for things! Then, assuming that the sequence converges to some real number, , think about what happens when you apply a limit as : we should get the equation .    "
 },
@@ -5729,7 +5729,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSeries.html#def-PartialSum",
   "type": "Definition",
-  "number": "8.2.1",
+  "number": "8.2.2",
   "title": "Partial Sum.",
   "body": " Partial Sum   For an infinite series , we call the th Partial Sum of the infinite series.   "
 },
@@ -5738,7 +5738,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSeries.html#def-SeriesConvergence",
   "type": "Definition",
-  "number": "8.2.2",
+  "number": "8.2.3",
   "title": "Series Convergence.",
   "body": " Series Convergence   We say that the infinite series  converges to the real number if the sequence converges to (where ), where is the th partial sum of the infinite series.  If the sequence of partial sums diverges (the limit does not exist), then we say that the infinite series  diverges .   "
 },
@@ -5747,7 +5747,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSeries.html#fig-PartialSum-1",
   "type": "Figure",
-  "number": "8.2.3",
+  "number": "8.2.4",
   "title": "",
   "body": " , the sequence of terms in the series.   Green points on a plot. The points descend (since the sequence is monotonically decreasing) towards a horizontal asymptote at 0. The horizontal axis of the plot is labeled n and the vertical axis is labeled a_n.   "
 },
@@ -5756,7 +5756,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSeries.html#fig-PartialSum-2",
   "type": "Figure",
-  "number": "8.2.4",
+  "number": "8.2.5",
   "title": "",
   "body": " , the sequence of partial sums for the series.   Red points on a plot. The points ascend (the sequence is monotonically increasing). The horizontal axis of the plot is labeled n and the vertical axis is labeled S_n.   "
 },
@@ -5765,7 +5765,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSeries.html#fig-PartialSum-3",
   "type": "Figure",
-  "number": "8.2.5",
+  "number": "8.2.6",
   "title": "",
   "body": " and visualized together.   The red plot of partial sums. Between each point is a green vertical line going from the height of the previous point to the height of the next point. These are labeled a_0, a_1, a_2, a_3, and then are unlableled afterwards. On the vertical axis, there are vertical positions representing the heights of each of the red points labeled S_0, S_1, S_2, S_3, ...   "
 },
@@ -5774,7 +5774,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSeries.html#note-ExplicitFormulaPartialSums",
   "type": "Note",
-  "number": "8.2.6",
+  "number": "8.2.7",
   "title": "Finding Explicit Formulas.",
   "body": " Finding Explicit Formulas  We had noted earlier (in ) that it was hard to find explicit formulas (or recursion relations) for sequences where we had the first few terms.  This remains true when we think about finding formulas for the sequences of partial sums. Notice that it is easy to find the location of the horizontal asymptote in (by evaluating ), but that we did not attempt to find one to for the partial sums in or .  If you'd like to try this, then we need to find a formula for . Try to find the first several partial sums by adding up terms in the series. Then try to find a formula to predict the next partial sum. This will definitely not be easy!  Ok, actually, this will be an impossible task. There is no closed-form formula for this. We cannot simply find in the way that we've found the limit of the sequence of terms.  "
 },
@@ -5783,7 +5783,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntroSeries.html#ex-geometric",
   "type": "Example",
-  "number": "8.2.7",
+  "number": "8.2.8",
   "title": "",
   "body": "  For each of the following series, write out a few of the terms of the series. Then write out the corresponding partial sums. Use these to find a formula for , the th partial sum. Then make a claim about whether or not the series converges and what it converges to.           The series converges to 2.            So the series diverges.           This one is tricky! It's hard to notice anything unless we write out the series term formula a bit differently. Use to rewrite as .          "
 },
@@ -5839,7 +5839,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "The Divergence Test and the Harmonic Series",
-  "body": " The Divergence Test and the Harmonic Series   The Relationship Between a Sequence and Series  We have looked at both infinite sequences and infinite series so far, and, to make things complicated, we're really thinking about an infinite series (of terms from an infinite sequence) as an infinite sequence (of partial sums of the series). We've looked at how to visualize these (in both and ).  Let's first start with defining a new series. This is a relatively important one by itself (it does have its own name), but it's mostly an important series because it leads us into some new and interesting ways of thinking about series in general.   Harmonic Series   We call the series the Harmonic Series .    You might not recognize this, but we've worked with a version of this before. The example series that we plotted in was . We can notice that if we re-index this by starting at instead of , we were really just looking at a scaled version of the harmonic series.    Investigating the Harmonic Series    Write out the first several terms of the harmonic series, terms from . Write however many you need to get a feel for how the terms work.      Can you find out how many terms you would have to go into the series before the term was less than 0.00000001?    When is ?      Can you do this same kind of thing, no matter how small? For instance, how many terms would you have to go into the series before the term was less than some real number where ?    When is ?      Remind\/explain\/convince yourself that what we've really done is show that . This isn't a new or terribly interesting fact, but make sure that you understand why the argument above shows this.      Let's do something very similar, but with , the sequence of partial sums, instead. Write out the first few partial sums. There's no specific number that you need to write, but make sure to write enough partial sums to get a feel for how the partial sums work.      Can you find out how many terms you need to add up until the partial sum is larger than 1?    Find a value for to give .      Can you find out how many terms you need to add up until the partial sum is larger than 5?    Find a value for to give .     This is the first partial sum greater than 5.      Can you find out how many terms you need to add up until the partial sum is larger than 10?    Find a value for to give . This will be absolutely awful to try calculating by hand! Use some piece of technology!     This is the first partial sum greater than 10.      Do you think that for any positive number , we can always find some partial sum ? What do you think this would mean about ?     To actually show that for any we could always find an where is an extremely difficult task! We will show that the Harmonic Series diverges in a different way, but for now I want us to notice these contradictory results: we have a series whose terms get small, but whose partial sums do not seem to converge.  We have but it seems like does not exist. Is this behavior special to the Harmonic Series? Is this something we should make note of? Is there some other connection between the terms of a series and the behavior of the partial sums of the series that we need to note?    Let's continue to think about this strange series, but actually prove that the series itself diverges.   The Harmonic Series Diverges   The Harmonic Series , , diverges.    Let's assume, for the sake of eventual contradiction, that the harmonic series converges. Our goal in this proof is to show that this assumption (convergence) logically leads to an internal contradiction. This would mean that the assumption (convergence) cannot be true.  So, let's assume that the harmonic series converges.  Based on our definition of series convergence ( ), there exists some real number such that: . We're going to think about this number, , and show that there cannot be such a number.  First, let's write out what is: We're now going to systematically change the numbers being added together in order to create some number that is smaller than : we're going to take all of the odd terms and make them as small as the next term after it: Note, though, that we can group together these duplicate terms and add them. Let's do that! But we should recognize this new series that is smaller than ...it's the harmonic series! Which, by our initial assumption, is also !  Ok, so what we have shown is that if the harmonic series converges, then it converges to some number that has the contradictory property of being smaller than itself.  There is no such number.  This is a contradiction, then, and so the harmonic series must diverge.    This is a strange result, and one that has been brought up again and again by mathematicians throughout history. We'll see that this series is notable because of its use later on in this chapter, but for now we can simply note that it is strange to see a series of terms that get so small (and so quickly) and yet the sum of those terms diverges.    The Divergence Test  The connection between the terms of a series and the behavior of the infinite series itself is maybe more mysterious than we initially thought. Since we will likely not have access to the formula for the partial sums ( ), we will want to explore these kinds of connections as much as we can. They will be the things to help us analyze an infinite series.   Thinking about the Terms of a Series    What does it mean for the series to converge?    If you need a reminder, take a look back at       Calculate the difference between and , .      If the sequence of partial sums for a series, converges, then what should we expect to happen with the values of and ? What does this mean for the difference ?      Now consider a series that we know diverges, the . Find the limit, .     We have a pretty soft result here: we have discovered a connection between the terms of a series and the series behavior itself, but it's not as strong as we'd like.   Divergence Test   For an infinite series , if the infinite series converges then . This is equivalent to saying that if then the infinite series diverges.    We will prove the claim that if an infinite series converges, then its sequence of terms must converge to .  This result will fall out of a simple exploration of what partial sums are. We noted in that we can write any partial sum as the sum of the previous partial sum and the next term: Let's now say that the series we are dealing with converges. This means that for some real number .  What, then, would the limit of be as ?  It has to also be ! If the partial sums converge, then these two partial sums must converge to each other increases: .  So, since , we can investigate the limit of : So of course the th term has to converge to 0 in the limit!    We should notice that the Divergence Test never tells us that a series converges. The only conclusions are that a series diverges (if ) or the test fails\/is inconclusive (if ). In these cases, we've seen instances where a series could converge or diverge and have terms that approach 0.    Apply the Divergence Test to the following series and interpret the results.          We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator ( ). We could also get this same result using some other techniques, like what we use to prove that theorem. Or we can use to evaluate the limit, since we have a indeterminate form.           These terms are strange! The part really just impacts the sign of the terms, since it is either or depending on if is even or odd.  We can consider only one sign (maybe the positive), and then try to make a conclusion about the alternating terms. Do they go to 0?           This is similar: focus on only the positive terms for now. But that denominator is also strange! If you want to focus only on the denominator, you can use the following friendly rearrangement: Now you can use to evaluate this part!       Squeeze Theorem and Growth Rates  In order for us to calculate the limits of the terms of an infinite series, we are often using results like and . Let's observe two facts that will help us out.  We don't need to apply the Squeeze Theorem in full, since we're only concerned with whether the limit is 0 or not. Let's clarify with an example: For us to apply the Divergence Test, we really should note that: . We could look at the limits of both of the bounds, but since we're concerned with whether they are 0 or not, we can simply check one: . Since we know that the negative version of this limit isn't 0 either, we can see that the limit doesn't exist. Thus, the series diverges.  We can test just the positive version of the limit in each of these cases, then!  \" Lastly, we can notice now that can be difficult to apply, especially since the functions we're working with are not required to be differentiable. For instance, how could we consider the series by thinking about the limit ?   The factorial function, , is formally defined as a recursive function, where and . More informally, this really means that a factorial really tells us to multiply the integer by all of the positive integers less than it. So: .  We define for convenience, but a nice explanation of why we might do that is based on counting arrangements.  If we were to arrange 3 items on a shelf, we could count the number of total arrangements by thinking about how many options we have to place the first item on the shelf (3) multiplied by how many options we have for the second item (only 2 remaining) and then how many options we have for the last item (once we've placed the other two, we only have 1 option). So the number of arrangements is .  How many ways can you arrange an empty shelf?   Because we can't think about the derivative of (since the function is not continuous, and thus not differentiable in the traditional sense), we need to consider this limit in a different way. We can instead appeal to growth rates of these functions: that is, the rate at which these functions approach infinity.   Growth Rates of Functions  If and are real numbers with , then we can arrange the growth rates of the following functions from slow to fast:     So, returning to our series , we can see that since has a faster growth rate than .   It's worth investigating this yourself! Try to convince yourself that you understand why exponentials grow slower than factorials. Why does have a faster growth rate than ?       Give an example of a series that diverges due to the Divergence Test. Explain.      Give an example of a series that fails the Divergence Test. Do you know if this series converges or diverges? Explain.      Apply the Divergence Test to each of the following series. Explain the conclusions of the test for each series.                                                                    "
+  "body": " The Divergence Test and the Harmonic Series   The Relationship Between a Sequence and Series  We have looked at both infinite sequences and infinite series so far, and, to make things complicated, we're really thinking about an infinite series (of terms from an infinite sequence) as an infinite sequence (of partial sums of the series). We've looked at how to visualize these (in both and ).  Let's first start with defining a new series. This is a relatively important one by itself (it does have its own name), but it's mostly an important series because it leads us into some new and interesting ways of thinking about series in general.   Harmonic Series   We call the series the Harmonic Series .    You might not recognize this, but we've worked with a version of this before. The example series that we plotted in was . We can notice that if we re-index this by starting at instead of , we were really just looking at a scaled version of the harmonic series.    Investigating the Harmonic Series    Write out the first several terms of the harmonic series, terms from . Write however many you need to get a feel for how the terms work.      Can you find out how many terms you would have to go into the series before the term was less than 0.00000001?    When is ?      Can you do this same kind of thing, no matter how small? For instance, how many terms would you have to go into the series before the term was less than some real number where ?    When is ?      Remind\/explain\/convince yourself that what we've really done is show that . This isn't a new or terribly interesting fact, but make sure that you understand why the argument above shows this.      Let's do something very similar, but with , the sequence of partial sums, instead. Write out the first few partial sums. There's no specific number that you need to write, but make sure to write enough partial sums to get a feel for how the partial sums work.      Can you find out how many terms you need to add up until the partial sum is larger than 1?    Find a value for to give .      Can you find out how many terms you need to add up until the partial sum is larger than 5?    Find a value for to give .     This is the first partial sum greater than 5.      Can you find out how many terms you need to add up until the partial sum is larger than 10?    Find a value for to give . This will be absolutely awful to try calculating by hand! Use some piece of technology!     This is the first partial sum greater than 10.      Do you think that for any positive number , we can always find some partial sum ? What do you think this would mean about ?     To actually show that for any we could always find an where is an extremely difficult task! We will show that the Harmonic Series diverges in a different way, but for now I want us to notice these contradictory results: we have a series whose terms get small, but whose partial sums do not seem to converge.  We have but it seems like does not exist. Is this behavior special to the Harmonic Series? Is this something we should make note of? Is there some other connection between the terms of a series and the behavior of the partial sums of the series that we need to note?    Let's continue to think about this strange series, but actually prove that the series itself diverges.   The Harmonic Series Diverges   The Harmonic Series , , diverges.    Let's assume, for the sake of eventual contradiction, that the harmonic series converges. Our goal in this proof is to show that this assumption (convergence) logically leads to an internal contradiction. This would mean that the assumption (convergence) cannot be true.  So, let's assume that the harmonic series converges.  Based on our definition of series convergence ( ), there exists some real number such that: . We're going to think about this number, , and show that there cannot be such a number.  First, let's write out what is: We're now going to systematically change the numbers being added together in order to create some number that is smaller than : we're going to take all of the odd terms and make them as small as the next term after it: Note, though, that we can group together these duplicate terms and add them. Let's do that! But we should recognize this new series that is smaller than ...it's the harmonic series! Which, by our initial assumption, is also !  Ok, so what we have shown is that if the harmonic series converges, then it converges to some number that has the contradictory property of being smaller than itself.  There is no such number.  This is a contradiction, then, and so the harmonic series must diverge.    This is a strange result, and one that has been brought up again and again by mathematicians throughout history. We'll see that this series is notable because of its use later on in this chapter, but for now we can simply note that it is strange to see a series of terms that get so small (and so quickly) and yet the sum of those terms diverges.    The Divergence Test  The connection between the terms of a series and the behavior of the infinite series itself is maybe more mysterious than we initially thought. Since we will likely not have access to the formula for the partial sums ( ), we will want to explore these kinds of connections as much as we can. They will be the things to help us analyze an infinite series.   Thinking about the Terms of a Series    What does it mean for the series to converge?    If you need a reminder, take a look back at       Calculate the difference between and , .      If the sequence of partial sums for a series, converges, then what should we expect to happen with the values of and ? What does this mean for the difference ?      Now consider a series that we know diverges, the . Find the limit, .     We have a pretty soft result here: we have discovered a connection between the terms of a series and the series behavior itself, but it's not as strong as we'd like.   Divergence Test   For an infinite series , if the infinite series converges then . This is equivalent to saying that if then the infinite series diverges.    We will prove the claim that if an infinite series converges, then its sequence of terms must converge to .  This result will fall out of a simple exploration of what partial sums are. We noted in that we can write any partial sum as the sum of the previous partial sum and the next term: Let's now say that the series we are dealing with converges. This means that for some real number .  What, then, would the limit of be as ?  It has to also be ! If the partial sums converge, then these two partial sums must converge to each other increases: .  So, since , we can investigate the limit of : So of course the th term has to converge to 0 in the limit!    We should notice that the Divergence Test never tells us that a series converges. The only conclusions are that a series diverges (if ) or the test fails\/is inconclusive (if ). In these cases, we've seen instances where a series could converge or diverge and have terms that approach 0.    Apply the Divergence Test to the following series and interpret the results.          We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator ( ). We could also get this same result using some other techniques, like what we use to prove that theorem. Or we can use to evaluate the limit, since we have a indeterminate form.           These terms are strange! The part really just impacts the sign of the terms, since it is either or depending on if is even or odd.  We can consider only one sign (maybe the positive), and then try to make a conclusion about the alternating terms. Do they go to 0?           This is similar: focus on only the positive terms for now. But that denominator is also strange! If you want to focus only on the denominator, you can use the following friendly rearrangement: Now you can use to evaluate this part!       Squeeze Theorem and Growth Rates  In order for us to calculate the limits of the terms of an infinite series, we are often using results like and . Let's observe two facts that will help us out.  We don't need to apply the Squeeze Theorem in full, since we're only concerned with whether the limit is 0 or not. Let's clarify with an example: For us to apply the Divergence Test, we really should note that: . We could look at the limits of both of the bounds, but since we're concerned with whether they are 0 or not, we can simply check one: . Since we know that the negative version of this limit isn't 0 either, we can see that the limit doesn't exist. Thus, the series diverges.  We can test just the positive version of the limit in each of these cases, then!  Lastly, we can notice now that can be difficult to apply, especially since the functions we're working with are not required to be differentiable. For instance, how could we consider the series by thinking about the limit ?   The factorial function, , is formally defined as a recursive function, where and . More informally, this really means that a factorial really tells us to multiply the integer by all of the positive integers less than it. So: .  We define for convenience, but a nice explanation of why we might do that is based on counting arrangements.  If we were to arrange 3 items on a shelf, we could count the number of total arrangements by thinking about how many options we have to place the first item on the shelf (3) multiplied by how many options we have for the second item (only 2 remaining) and then how many options we have for the last item (once we've placed the other two, we only have 1 option). So the number of arrangements is .  How many ways can you arrange an empty shelf?   Because we can't think about the derivative of (since the function is not continuous, and thus not differentiable in the traditional sense), we need to consider this limit in a different way. We can instead appeal to growth rates of these functions: that is, the rate at which these functions approach infinity.   Growth Rates of Functions  If and are real numbers with , then we can arrange the growth rates of the following functions from slow to fast:     So, returning to our series , we can see that since has a faster growth rate than .   It's worth investigating this yourself! Try to convince yourself that you understand why exponentials grow slower than factorials. Why does have a faster growth rate than ?       Give an example of a series that diverges due to the Divergence Test. Explain.      Give an example of a series that fails the Divergence Test. Do you know if this series converges or diverges? Explain.      Apply the Divergence Test to each of the following series. Explain the conclusions of the test for each series.                                                                    "
 },
 {
   "id": "def-HarmonicSeries",
@@ -5855,7 +5855,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DivergenceTest.html#act-HarmonicSeries",
   "type": "Activity",
-  "number": "8.3.1",
+  "number": "8.3.2",
   "title": "Investigating the Harmonic Series.",
   "body": " Investigating the Harmonic Series    Write out the first several terms of the harmonic series, terms from . Write however many you need to get a feel for how the terms work.      Can you find out how many terms you would have to go into the series before the term was less than 0.00000001?    When is ?      Can you do this same kind of thing, no matter how small? For instance, how many terms would you have to go into the series before the term was less than some real number where ?    When is ?      Remind\/explain\/convince yourself that what we've really done is show that . This isn't a new or terribly interesting fact, but make sure that you understand why the argument above shows this.      Let's do something very similar, but with , the sequence of partial sums, instead. Write out the first few partial sums. There's no specific number that you need to write, but make sure to write enough partial sums to get a feel for how the partial sums work.      Can you find out how many terms you need to add up until the partial sum is larger than 1?    Find a value for to give .      Can you find out how many terms you need to add up until the partial sum is larger than 5?    Find a value for to give .     This is the first partial sum greater than 5.      Can you find out how many terms you need to add up until the partial sum is larger than 10?    Find a value for to give . This will be absolutely awful to try calculating by hand! Use some piece of technology!     This is the first partial sum greater than 10.      Do you think that for any positive number , we can always find some partial sum ? What do you think this would mean about ?     To actually show that for any we could always find an where is an extremely difficult task! We will show that the Harmonic Series diverges in a different way, but for now I want us to notice these contradictory results: we have a series whose terms get small, but whose partial sums do not seem to converge.  We have but it seems like does not exist. Is this behavior special to the Harmonic Series? Is this something we should make note of? Is there some other connection between the terms of a series and the behavior of the partial sums of the series that we need to note?   "
 },
@@ -5864,7 +5864,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DivergenceTest.html#thm-HarmonicSeriesDiverges",
   "type": "Theorem",
-  "number": "8.3.2",
+  "number": "8.3.3",
   "title": "The Harmonic Series Diverges.",
   "body": " The Harmonic Series Diverges   The Harmonic Series , , diverges.    Let's assume, for the sake of eventual contradiction, that the harmonic series converges. Our goal in this proof is to show that this assumption (convergence) logically leads to an internal contradiction. This would mean that the assumption (convergence) cannot be true.  So, let's assume that the harmonic series converges.  Based on our definition of series convergence ( ), there exists some real number such that: . We're going to think about this number, , and show that there cannot be such a number.  First, let's write out what is: We're now going to systematically change the numbers being added together in order to create some number that is smaller than : we're going to take all of the odd terms and make them as small as the next term after it: Note, though, that we can group together these duplicate terms and add them. Let's do that! But we should recognize this new series that is smaller than ...it's the harmonic series! Which, by our initial assumption, is also !  Ok, so what we have shown is that if the harmonic series converges, then it converges to some number that has the contradictory property of being smaller than itself.  There is no such number.  This is a contradiction, then, and so the harmonic series must diverge.   "
 },
@@ -5873,7 +5873,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DivergenceTest.html#act-Terms",
   "type": "Activity",
-  "number": "8.3.2",
+  "number": "8.3.4",
   "title": "Thinking about the Terms of a Series.",
   "body": " Thinking about the Terms of a Series    What does it mean for the series to converge?    If you need a reminder, take a look back at       Calculate the difference between and , .      If the sequence of partial sums for a series, converges, then what should we expect to happen with the values of and ? What does this mean for the difference ?      Now consider a series that we know diverges, the . Find the limit, .    "
 },
@@ -5882,7 +5882,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DivergenceTest.html#thm-DivergenceTest",
   "type": "Theorem",
-  "number": "8.3.3",
+  "number": "8.3.5",
   "title": "Divergence Test.",
   "body": " Divergence Test   For an infinite series , if the infinite series converges then . This is equivalent to saying that if then the infinite series diverges.    We will prove the claim that if an infinite series converges, then its sequence of terms must converge to .  This result will fall out of a simple exploration of what partial sums are. We noted in that we can write any partial sum as the sum of the previous partial sum and the next term: Let's now say that the series we are dealing with converges. This means that for some real number .  What, then, would the limit of be as ?  It has to also be ! If the partial sums converge, then these two partial sums must converge to each other increases: .  So, since , we can investigate the limit of : So of course the th term has to converge to 0 in the limit!   "
 },
@@ -5891,7 +5891,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DivergenceTest.html#subsec-DivergenceTest-7",
   "type": "Example",
-  "number": "8.3.4",
+  "number": "8.3.6",
   "title": "",
   "body": "  Apply the Divergence Test to the following series and interpret the results.          We can do a couple of things here! There is a nice result about limits of polynomials that we can use in the numerator ( ). We could also get this same result using some other techniques, like what we use to prove that theorem. Or we can use to evaluate the limit, since we have a indeterminate form.           These terms are strange! The part really just impacts the sign of the terms, since it is either or depending on if is even or odd.  We can consider only one sign (maybe the positive), and then try to make a conclusion about the alternating terms. Do they go to 0?           This is similar: focus on only the positive terms for now. But that denominator is also strange! If you want to focus only on the denominator, you can use the following friendly rearrangement: Now you can use to evaluate this part!    "
 },
@@ -5909,7 +5909,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-DivergenceTest.html#subsec-GrowthRates-10",
   "type": "Note",
-  "number": "8.3.5",
+  "number": "8.3.7",
   "title": "",
   "body": " It's worth investigating this yourself! Try to convince yourself that you understand why exponentials grow slower than factorials. Why does have a faster growth rate than ?  "
 },
@@ -5963,7 +5963,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegralTest.html#act-IntegralTest",
   "type": "Activity",
-  "number": "8.4.1",
+  "number": "8.4.2",
   "title": "Integrals and Infinite Series.",
   "body": " Integrals and Infinite Series   We're going to work with a graph of a continuous function, and we're going to start with a couple of conditions:   Our function will be continuous wherever it's defined.    Our function will be decreasing on its domain.    All of the function outputs will be positive.   Let's not worry about picking a specific function for this, but we will visualize a graph of one that meets these three requirements.     A blue curve labeled f(x). The curve is positive, decreasing, and continuous. It is defined on [0,infinity) with, seemingly, a horizontal asymptote at the x-axis.    We can then visualize the sequence of terms, for .     A blue curve labeled f(x). The curve is positive, decreasing, and continuous. It is defined on [0,infinity) with, seemingly, a horizontal asymptote at the x-axis. On the plot there are red points, labeled a_0, a_1, a_2, ..., a_n.       How does the partial sum, compare to the Riemann sum for from to with rectangles?    It might help to visualize the Left Riemann sum, specifically!    Hopefully we can see that the partial sum, is the exact same thing as the Left Riemann sum!      We're going to visualize the accumulation of from to by thinking about the integral: .     The blue curve, with the area shaded from x=0 to x=n. The area is labeled with the definite integral.    How does this area compare to the Riemann sum you thought of above? Compare them with an inequality and make sure you can explain why this has to be true.    Here's a picture of the left Riemann sum!     The left Riemann sum formed at each red point.      Since is a left Riemann sum for , and since is decreasing, then we know that each rectangle is formed from the highest point on each subinterval. That means that each rectangle's area overestimates the area under the curve on that subinterval. Note, also, that since this is a left Riemann sum, the th rectangle is hanging past the end of the definite integral. This means that: .      Remove the first term of the series, , and instead think of the sum . Can you still think of this as a Riemann sum to approximate the area from the integral ?  How does this new Riemann sum compare to the area formed by the integral? Compare them with an inequality and make sure you can explain why this has to be true.    Notice, now, that we need to be the representative height for the first rectangle. How does that change the formation of the rectangles?    We can form a Right Riemann sum! Note that we don't overhang the interval anymore.     The right Riemann sum formed at each red point, other than the first one.    Note, now, that we are using the lowest point on each subinterval to form the rectangle. This means that: .      We have thought about two sums, and we can connect them: . Use the sums to bound the integral:            Similarly, use the integral to bound the sum:           These bounds are going to be super useful! Discovering them is the main task for finding the connections between improper integrals and infinite series. These inequalities might seem kind of strange at first, but we're going to apply a limit to everything as , and then think about our definitions of convergence ( and ).   "
 },
@@ -5972,7 +5972,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegralTest.html#thm-IntegralTest",
   "type": "Theorem",
-  "number": "8.4.7",
+  "number": "8.4.8",
   "title": "Integral Test.",
   "body": " Integral Test   If is an infinite series with for all and is a continuous and decreasing function with for all , then we can compare the behaviors of and : the integral and the series are guaranteed to either both diverge or both converge.    The proof of this will come in two parts. First, we'll prove that converges when converges.  Then, we'll prove that diverges when diverges.     Let's start with the assumption that converges. We know, based on , that this means that exists. We also know, since , that . This means: This means that the partial sum, has an upper bound.  We also know that, since for all , then . This means that the sequence of partial sums, is both monotonic and bounded, and therefore must converge (by the ).  Thus, converges.    Now, we can start with the assumption that the integral diverges. Since we know that is positive, then we know that . We can reconsider the inequalities from : So then must also diverge.   This is everything we need to prove! Note that we could replicate this proof by swapping the role of the series and the integral to get the same conclusion.   "
 },
@@ -5981,7 +5981,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegralTest.html#ex-InvTanSeries",
   "type": "Example",
-  "number": "8.4.8",
+  "number": "8.4.9",
   "title": "",
   "body": "  For each of the following infinite series, decide whether it is possible (and reasonable) to use the Integral Test. If it is, apply the test and interpret the conclusions.          This would connect with the integral . Does the function, , meet the requirements of the Integral Test? Does it look like something you could antidifferentiate?    This is a fine opportunity to apply the Integral Test. The Integral Test says that we can link the behavior of the integral and the series: . Let's think about the integral! This integral converges.   Conclusion: Since the integral converges, we know that the infinite series also converges.           We can rewrite to , and so we're thinking about the integral . Does this function meet the conditions of the Integral Test? Can we antidifferentiate?    Unfortunately, this integral is going to be very difficult for us! The function has an antiderivative on the interval (it's a continuous function, and so it is integrable according to the ).  This function, though, doesn't have what we call an elementary antiderivative : any antideriative of can't be written as a combination of our basic function types.  This means that we're unable to integrate this using our typical techniques, and (for now), we don't know if the integral converges or not.   Conclusion: We won't apply the Integral Test, and so we don't know whether the series converges or not.           The Integral Test would connect this series to . Does the function meet the requirements of the Integral Test? Could we antidifferentiate?    Let's apply the Integral Test. we'll connect the behavior of the integral and the series: . We'll consider the integral, and use a -substitution where and . This integral converges.   Conclusion: The integral converges, and so we know that the infinite series also converges.           We're considering the function and the integral . Does this work for the Integral Test?    If we apply the Integral Test, we're connecting the following series and integral: . We'll consider the integral and use the substitution so that . This integral diverges.   Conclusion: We found that the integral diverges, which means that the series also diverges.    "
 },
@@ -5999,7 +5999,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegralTest.html#subsec-WhyConditions-3",
   "type": "Note",
-  "number": "8.4.9",
+  "number": "8.4.10",
   "title": "",
   "body": " We could pretty easily make a version of the Integral Test that would work for functions that are negative and increasing.  "
 },
@@ -6008,7 +6008,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegralTest.html#fig-OscillatingIntegralTest",
   "type": "Figure",
-  "number": "8.4.10",
+  "number": "8.4.11",
   "title": "",
   "body": "   An oscillating, periodic, and positive green function labeled f(x) that touches the x-axis at every integer. These points are red, labeled a_0, a_1, a_2, ...   "
 },
@@ -6017,7 +6017,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-IntegralTest.html#fig-IntegralTest",
   "type": "Figure",
-  "number": "8.4.11",
+  "number": "8.4.12",
   "title": "",
   "body": " Integral Test, visualized as a transformation between contexts.   Two rectangles, one labeled \"Discrete Context\" and the other, beside it, labeled \"Continuous Context.\" Inside the \"Discrete Context\" rectangle is an infinite series with an arrow pointing towards \"Existence of limit of partial sums\". Inside the \"Continuous Context\" rectangle is an improper integral with an arrow pointing towards \"Existence of limit of definite integral\". There is an arrow connecting the infinite series in the first rectangle to the improper integral. Then there is an arrow connecting the statements about the existence of limits.    "
 },
@@ -6089,7 +6089,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlternatingSeries.html#def-AlternatingSeries",
   "type": "Definition",
-  "number": "8.5.1",
+  "number": "8.5.2",
   "title": "Alternating Series.",
   "body": " Alternating Series   An infinite series is called an Alternating Series when or for all . That is, the sign of the terms alternates:    "
 },
@@ -6098,7 +6098,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlternatingSeries.html#fig-AlternatingPartial-1",
   "type": "Figure",
-  "number": "8.5.2",
+  "number": "8.5.3",
   "title": "",
   "body": " Partial sums of an alternating series.   Red points on a plot. They are labeled S_0, S_1, S_2, S_3, S_4, S_5, S_6, ... S_n, S_(n+1). The points bounce up and down, where the even indexed points are above. The vertical distance between each point is green and is labeled a_0, a_1, a_2, a_3, a_4, a_5, a_6, ... a_n, a_(n+1). These are getting smaller as we move from point to point.   "
 },
@@ -6107,7 +6107,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlternatingSeries.html#thm-AlternatingSeriesTest",
   "type": "Theorem",
-  "number": "8.5.3",
+  "number": "8.5.4",
   "title": "Alternating Series Test.",
   "body": " Alternating Series Test   If is an alternating series and the size of the terms is decreasing, then if then converges.    This proof will follow the discussion before the statement of the theorem. Mostly, we will just fill in some details and provide some further justification for why what we were noticing must be true.  Let's start with the conditions of the test:   We are considering an , . For our purposes, we'll assume that we have something like where the even-indexed terms are the positive ones. This could be flipped and it wouldn't make a difference.    The size of the terms are decreasing. That is, for all     The limit . Note that this also means that .     We're going to show that, under these conditions, the alternating series we're considering must converge. The way that we'll do this is, no surprise, by invoking . We're going to do it by considering the partial sums in halves: the even-indexed ones and the odd-indexed ones.  First, consider the sequence . The difference between successive terms in this sequence (successive even-indexed partial sums) is: . Since the terms of the alternating series are decreasing in size, we know that , which means that , and so .  All of this which is to say, is a decreasing sequence.  We can apply the same reasoning to the sequence . We know the differences between successive odd-indexed partial sums is: . This time, though, and so the difference is positive: which means that . The sequence is an increasing sequence.  We're getting close! We have monotonic sequences. Now we just need to show bounds, and then we'll show that each of these sequences converges. Then, we'll show that they converge to the same thing.  Getting an upper bound on the odd-indexed partial sums and a lower bound on the even-indexed partial sums is pretty easy. Let's consider subsequent partial sums, and . Ok so this is easy: we can just pick any odd-indexed partial sum to be the lower bound on the even-indexed partial sums, and vice versa.  So is an upper bound on , since every other is less than , and all of partial sums are less than : Similarly, we can say the same thing about being a lower bound for the even-indexed partial sums:   So we have shown that the sequences and are both monotonic and bounded and so both of these sequences must converge.  Now we can show that they converge to the same thing.  Since converges, let's say that there is some number where . Similarly, there is a number where . Now we can use the fact that the limit of the terms is 0: So the numbers that these two sequences of partial sums converge to are actually equal to each other.  So, finally, we know that under the conditions we started with, the alternating series must converge.   "
 },
@@ -6116,7 +6116,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlternatingSeries.html#act-ApproximatingAlternating",
   "type": "Activity",
-  "number": "8.5.2",
+  "number": "8.5.5",
   "title": "Approximating an Alternating Series.",
   "body": " Approximating an Alternating Series   Let's look, again, at the picture of the partial sums of an alternating series in . We're going to assume that the series converges, which means that:    exists.     .   Let's add to our figure.     Red points on a plot. They are labeled S_0, S_1, S_2, S_3, S_4, S_5, S_6, ... S_n, S_(n+1). The points bounce up and down, where the even indexed points are above. The vertical distance between each point is green and is labeled a_0, a_1, a_2, a_3, a_4, a_5, a_6, ... a_n, a_(n+1). These are getting smaller as we move from point to point. This means that the red points are getting closer to a grey dashed line that cuts through the points labeled lim_(n to infinity) S_n.       Why are the even-indexed partial sums sitting above the odd-indexed partial sums?    We started, in this case, with a positive term , and then the rest of the signs alternate. How does this change the partial values of partial sums?      Why are the even-indexed partial sums sitting above the horizontal line, ?    We know that the sizes of the terms, , decreases. This means that the sequence is decreasing.  What does that mean about how these partial sums relate to the limit of partial sums?      Why are the odd-indexed partial sums sitting below the horizontal line, ?    We know that the sizes of the terms, , decreases. This means that the sequence is increasing.  What does that mean about how these partial sums relate to the limit of partial sums?      If we were trying to approximate the value of , how can we use the partial sums to build an interval that approximates the value?    Since all of the even-indexed partial sums are upper bounds of any approximation and the odd-indexed partial sums are lower bounds.  This means that any pair of partial sums serves as an approximation:     "
 },
@@ -6125,7 +6125,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlternatingSeries.html#thm-ApproximatingAlternating",
   "type": "Theorem",
-  "number": "8.5.5",
+  "number": "8.5.7",
   "title": "Approximations of Alternating Series.",
   "body": " Approximations of Alternating Series   If is a converging alternating series, then the value that the series converges to is bound between consecutive partial sums.  Another way of saying this is that the partial sum approximates the actual value of with a maximum error of .   "
 },
@@ -6134,7 +6134,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlternatingSeries.html#act-AlternatingHarmonicSeries",
   "type": "Activity",
-  "number": "8.5.3",
+  "number": "8.5.8",
   "title": "The Alternating Harmonic Series Converges.",
   "body": " The Alternating Harmonic Series Converges   Let's consider the alternating harmonic series, as written below:      First, confirm that this series does converge, using the .      Find .      Use to create a bound on this estimation. Report an interval that you know that the actual value that the alternating harmonic series converges to is in.      Use technology to find . Compare this value to . Would it surprise you for someone to claim that the alternating harmonic series converges to ?    "
 },
@@ -6143,7 +6143,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlternatingSeries.html#act-RearrangedAlternatingHarmonicSeries",
   "type": "Activity",
-  "number": "8.5.4",
+  "number": "8.5.9",
   "title": "The Alternating Harmonic Series Converges (Again).",
   "body": " The Alternating Harmonic Series Converges (Again)   Now let's consider a new, rearrranged, version of the alternating harmonic series: We can write this in summation notation as: .     First, confirm that all of the terms from the alternating harmonic series will eventually show up in this series. Convince yourself that we are truly adding (and subtracting) all of the same values with just a different order.      Does this new series converge? Check, using the .      Add up the first few terms of this series to find the value of a partial sum. You can choose how many terms you add. Does it look like it will also converge to ?      Use technology to add up many terms of this series. Can you convince yourself what this series converges to?    "
 },
@@ -6152,7 +6152,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-AlternatingSeries.html#def-ConditionalConvergence",
   "type": "Definition",
-  "number": "8.5.6",
+  "number": "8.5.10",
   "title": "Conditional (and Absolute) Convergence.",
   "body": " Conditional (and Absolute) Convergence   If is a converging alternating series, then we say that the alternating series  converges conditionally if diverges.  If, instead, the positive-term series converges as well, then we say that the alternating series  converges absolutely .   "
 },
@@ -6269,7 +6269,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-CommonSeries.html#act-GeometricSeriesFormula",
   "type": "Activity",
-  "number": "8.6.1",
+  "number": "8.6.2",
   "title": "Building a Convergence Formula for Geometric Series.",
   "body": " Building a Convergence Formula for Geometric Series   We're going to think of constructing two different ways of thinking about how much area of of a circle has been shaded. We can pretend we have a circle with area that is 1, where the radius is , giving . Then we can describe the areas we're looking at as almost a percentages of the total area.     We are going to split our circle into two parts, with amount of the area left unshaded and so area shaded. We'll shade in some angular sector.     (for accessibility)    This part is easy: how much of the area is shaded?      This next step will set the stage for how we think about this problem now: we're going to divide the remaining white area up into the same proportional pieces: we'll shade in a ratio of of the remaining white space and leave a ratio of of the white space unshaded.     (for accessibility)    Can you describe two ways of calculating the total amount of shaded area?    It could be helpful to consider how much area has been shaded or to not consider how much unshaded area is left over.      We'll repeat the process: shade in more, where the ratio of shaded area to unshaded area is to .     (for accessibility)    Can you describe two ways of calculating the total amount of shaded area?    It could be helpful to consider how much area has been shaded or to not consider how much unshaded area is left over.      Now we're going to repeat this process until we've done it a total of times.     (for accessibility)    Can you describe two ways of calculating the total amount of shaded area?    It could be helpful to consider how much area has been shaded or to not consider how much unshaded area is left over.      In the limit as , how much of the area is shaded in?  Notice that is likely a common factor in one of your ways of calculating this area. Convince yourself, then, that:     "
 },
@@ -6278,7 +6278,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-CommonSeries.html#thm-GeometricSeries",
   "type": "Theorem",
-  "number": "8.6.6",
+  "number": "8.6.7",
   "title": "Geometric Series Convergence Criteria.",
   "body": " Geometric Series Convergence Criteria   A geometric series converges to when and diverges if .   "
 },
@@ -6287,7 +6287,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-CommonSeries.html#def-pSeries",
   "type": "Definition",
-  "number": "8.6.7",
+  "number": "8.6.8",
   "title": "<span class=\"process-math\">\\(p\\)<\/span>-Series.",
   "body": " -Series   For a real number , we say that the series is a -series . We mostly will be concerned about the case where , making the terms of the series be reciprocal power functions.   "
 },
@@ -6296,7 +6296,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-CommonSeries.html#thm-pSeries",
   "type": "Theorem",
-  "number": "8.6.8",
+  "number": "8.6.9",
   "title": "<span class=\"process-math\">\\(p\\)<\/span>-Series Convergence Criteria.",
   "body": " -Series Convergence Criteria   A -series converges when and diverges when .    Let's divide this into four cases: when , when , when , and when .  Case 1:  Note that for with , we can write this as . Now we can consider the limit of the terms, in order to use the . Since this limit is non-zero (since it is either or 1, depending on whether or not), the series diverges by the Divergence Test.   Case 2:   When , we can apply the to the series. It is worth showing that the conditions of the test are met, but this is left up to the reader.  So now we will consider the integral as a way of seeing whether the series converges or diverges. We can note that since , that . This means that when , as well. This integral diverges, and so then does the series.   Case 3:   This is the ! This series diverges ( ).   Case 4:   We can repeat the proof from Case 2 , but we will end with a different conclusion based on the sign of the exponent! Let us, again, apply the Integral Test.  Consider the integral as a way of seeing whether the series converges or diverges. Now, though, we have which means that . This means that . So now we will consider the limit, and note that as , we get . This integral converges, and so then does the series. We remember, though, that the series converges to something different than the integral, and so we do not know what the series converges to.   "
 },
@@ -6305,7 +6305,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-CommonSeries.html#act-ImpossibleCombinations",
   "type": "Activity",
-  "number": "8.6.2",
+  "number": "8.6.10",
   "title": "(Im)Possible Combinations.",
   "body": " (Im)Possible Combinations   When we have thought about infinite series, we have thought about three different mathematical objects: the sequence of terms of the series, the sequence of partial sums of the series, and the infinite series itself. As a reminder, if we had an infinite series we can say that:    is the sequence of terms of the series     is a partial sum and is the sequence of partial sums of the series   For each of these three objects the terms, the partial sums, and the series we have some notion of what it means for that object to converge or diverge.  Consider the following table of all of the different combinations of convergence and divergence of the three objects. For each combination, decide whether this combination is possible or impossible. If it is possible, give an example of an infinite series whose terms, partial sums, and the series itself converge\/diverge appropriately. If it is impossible, give an explanation of why.   (Im)Possible Combinations       (Im)Possible?  Example or Explanation    Converges  Converges  Converges      Converges  Converges  Diverges      Converges  Diverges  Converges      Converges  Diverges  Diverges      Diverges  Converges  Converges      Diverges  Converges  Diverges      Diverges  Diverges  Converges      Diverges  Diverges  Diverges         We can think back to some results or definitions that connect pairs of these objects. Can you think of any result or definition that connects an infinite series and a sequence of partial sums? What about a result or definition that connects the sequence of terms with the infinite series?    Look back at and .     (Im)Possible Combinations    (Im)Possible?  Example or Explanation    Possible  Any converging series serves as an example.    Impossible  The sequence of partial sums and the infinite series are the same object, and so must behave in the same way.    Impossible  The sequence of partial sums and the infinite series are the same object, and so must behave in the same way.    Possible     Impossible  If the infinite series converges, then the sequence of terms must converge to 0.    Impossible  The sequence of partial sums and the infinite series are the same object, and so must behave in the same way.    Impossible  Both of the reasons, and apply here!    Possible       "
 },
@@ -6350,7 +6350,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#fig-ComparisonTest-Terms",
   "type": "Figure",
-  "number": "8.7.1",
+  "number": "8.7.2",
   "title": "",
   "body": " The smaller sequence of terms graphed alongside the bigger sequence of terms .   A sequence of green dots, labeled {b_k}, decreasing to the horizontal axis. There is a second sequence of red dots, labeled {a_k}, also decreasing to the horizontal axis. At some point, the green dots look like they're on top of the red ones.   "
 },
@@ -6359,7 +6359,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#fig-ComparisonTest-Converge",
   "type": "Figure",
-  "number": "8.7.2",
+  "number": "8.7.3",
   "title": "",
   "body": " Comparison of partial sums when converges.   A sequence of green dots, labeled {partial sum of b_k}, increasing to a horizontal line. The line is labeled as the limit of the partial sums of b_k. There is a second sequence of red dots, labeled {partial sums of a_k}, also increasing but below the green dots.   "
 },
@@ -6368,7 +6368,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#fig-ComparisonTest-Diverge",
   "type": "Figure",
-  "number": "8.7.3",
+  "number": "8.7.4",
   "title": "",
   "body": " Comparison of partial sums when diverges.   A sequence of green dots, labeled {partial sum of b_k}, increasing to seemingly infinity. There is a second sequence of red dots, labeled {partial sums of a_k}, also increasing to seemingly infinity, but below the green dots.   "
 },
@@ -6377,7 +6377,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#thm-DirectComparisonTest",
   "type": "Theorem",
-  "number": "8.7.4",
+  "number": "8.7.5",
   "title": "Direct Comparison Test.",
   "body": " Direct Comparison Test   If and are infinite series with positive terms ( and for ) with the ordering for , then:   If diverges, then also diverges.    If converges, then also converges.      "
 },
@@ -6386,7 +6386,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#ex-FirstComparisonIntuition",
   "type": "Example",
-  "number": "8.7.5",
+  "number": "8.7.6",
   "title": "",
   "body": "  Does the series converge or diverge? How do you know?    If we're going to use our new , we need to identify two things:   Some intuition on whether we think our series converges or not.    An appropriate series to compare to. Likely, this will be either a or a , since we have clear convergence criteria for each of those.   We can do this in any order: sometimes we might use the structure of the series we're looking at to give us a good candidate to compare to, and that might tell us the behavior we think we're looking for. Other times we might have good intuition about convergence\/divergence of the series which will tell us whether we need to find a series that is smaller or larger to compare to.  What do you think? Do we have a suitable comparison?    Compare to the  . Here, . Based on this, do we need to show that is greater than or less than ?  Show this!  Does the change in the starting index matter?    Let's compare our series to the converging -series with : . We want to show that for .  Let's start with comparing the denominators, and move from there. Now we can think about reciprocals: . This means that, since converges, then must also converge.  We can just add the term where to get So then we know that our series, must converge.   "
 },
@@ -6395,7 +6395,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#act-UnhelpfulComparisons",
   "type": "Activity",
-  "number": "8.7.2",
+  "number": "8.7.7",
   "title": "(Un)Helpful Comparisons.",
   "body": " (Un)Helpful Comparisons   We're going to consider a handful of infinite series, here:                 Pick a series that is reasonable to use as a comparison for each of the series listed. Remember, we want:   A series that is recognizable (probably a or a ), so that we know the behavior of it: we need to know whether the series we're comparing to converges or diverges!    A series that is similar enough to the series we're working with that we can construct an inequality comparing the term structure. It can be hard to compare functions that are seemingly unrelated to each other!    A series that has terms that are either larger or smaller than our series, depending on whether we are trying to show that our series converges or diverges.       It can be useful to think about what the dominating pieces of each term structure are. What parts of the function will be most important, especially as the index, , gets larger?       In the denominator, think about contrasted with . Which of these will be more influential in determining the value of the term when gets large?    In the numerator, think about contrasted with under the square root. Which of these will be more influential? In the denominator, contrast and . Which of these will be more influential? What does this fraction look like when we just consider the numerator and denominator's most dominant pieces?          Let's link the following two series using a comparison: . We can notice that is a geometric series with and . It converges!  (Specifically, this series converges to 1.)    Let's link the following two series using a comparison: . Note that is a diverging -series, since .         Build the comparison from the series we start with to the one you picked. What kinds of conclusions can you make?       When we compare with , we can start with the denominator. What does multiplying by do to the value of ? It might help to write some of the values out for     When we compare with , we can think of the numerator and denominator separately. What does adding 1 under the square root do to the value of ? What does subtracting 2 in the denominator do to ? How do these impact the fraction?          Since , we can say that This means that since a big denominator leads to a small fraction. Then, we can scale both by a factor of 2:   Since is a converging geometric series (since and so ), then we can say that must also converge.    We can see that . Then, when we think about reciprocals, we see that since a small denominator leads to a big fraction. Then, we can multiply both by : . Finally, since , we know that .  This means that: . So, we have that for   Since is a diverging -series (since ), then must also diverge.         We're going to change the series we're considering to two slightly different series:            How do these small changes impact the inequalities you built?       We moved from the denominator to the numerator. If the numerator is the thing getting bigger, how does that impact the size of this fraction in the same comparison as before?    We changed the signs: we're subtracting in the numerator and adding in the denominator. How does that impact the size of this fraction in the same comparison as before?          Since , we know that . This means that     We have , and so: This means that: Finally, since , we have:          How do these changes in the inequalities change the conclusions we can draw from the ?    In both cases, the Direct Comparison Test is inconclusive. This means that we cannot conclude that either of these series converges or diverges: we don't have enough information to justify any claim we might make.      What do you think is happening with these series: do you think that these small changes are enough to change the behavior of the series (i.e. whether it converges or diverges)?    "
 },
@@ -6404,7 +6404,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#subsec-UnhelpfulComparisons-4",
   "type": "Note",
-  "number": "8.7.6",
+  "number": "8.7.8",
   "title": "",
   "body": " In fact, we might argue that we could start with a different test! It might be more useful to skip using the in favor of just using the , which we'll see soon, or the or , which we'll talk about in the next section.  I think that the only real reason to think about the Direct Comparison Test is that   Sometimes it can be pretty quick to use. Sometimes.    It is much easier to see why it works, since we can make a nice argument about monotonic and bounded sequences of partial sums. From there, the Limit Comparison Test (coming up next) isn't a big jump conceptually. But it might be harder to start with.     "
 },
@@ -6413,7 +6413,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#act-RatiosForComparison",
   "type": "Activity",
-  "number": "8.7.3",
+  "number": "8.7.9",
   "title": "Ratios for Comparison.",
   "body": " Ratios for Comparison   Let's start with some functions: we'll consider and as two functions that are continuous when with and as .  All of this is so that we can think about and know that we have an indeterminate form. We could put the requirement of differentiability on these functions (so that we could think about ), but we don't need to do that.  We're going to now consider the limit: .     What would the limit look like if at a faster rate than does? In this case, we might say that: .    What does it normally look like when a fraction of numbers has a very small denominator compared to the numerator?      What would the limit look like if at a faster rate than does? In this case, we might say that: .    What does it normally look like when a fraction of numbers has a very large denominator compared to the numerator?      If the functions and eventually act equivalently, then what does the limit look like?    When we say that these two functions act equivalently, we might mean that while they both approach 0 in the limit, they do it in the same way, or with identical growth rates.    What does it normally look like when a fraction of numbers is something over an equivalent thing?      If the function eventually acts like some scaled version of , then what does the limit look like?    We can think that as for some real number .    "
 },
@@ -6422,7 +6422,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#thm-LimitComparisonTest",
   "type": "Theorem",
-  "number": "8.7.7",
+  "number": "8.7.10",
   "title": "Limit Comparison Test.",
   "body": " Limit Comparison Test   If and are infinite series with positive terms ( and for ), then we can consider .   If , then:   If diverges, then diverges as well.    If converges, then converges as well.       If , then:   If converges, then converges as well.    If diverges, then diverges as well.       If where is some non-zero real number, then and will either both converge or both diverge.      "
 },
@@ -6431,7 +6431,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#subsec-LimitComparison-11",
   "type": "Example",
-  "number": "8.7.8",
+  "number": "8.7.11",
   "title": "",
   "body": "  For each of the following infinite series, try to select an appropriate comparison series, and then apply a comparison test to make conclusions about whether the series converges or diverges.          What happens, in the limit as to ? How does act in the limit: does the term influence much, compared to ?    One of the comparisons we can try is to link the behavior of these two series: .    In order to link these series, we'll apply a limit comparison test: . So let's investigate the limit of the ratio of the terms. This limit is one that we can think about using : we can apply the limit in the denominator under the root, and notice that the whole thing is really dependent on the behavior of .  We'll apply a technique that is used in the proof of the theorem. Now, since as we end up with: . Conclusions: Since we're comparing our series to the diverging -series , and the limit comparison test says that these two infinite series must have the same behavior (since the limit of the ratio of the term functions was 1), then we can conclude that the infinite series also diverges.           This is a hard one to come up with a reasonable comparison. Try writing out some terms and getting a feel for what kinds of things are happening structurally:   Is there something you can describe, recursively, about how we get from one term in the series to the next?    Are there consistent operations that we're applying to terms?    Does this remind you of anything?       We can compare this to a converging geometric series, . So, we want to draw the following link: . The limit comparison test follows as such: We cannot use L'Hopital's Rule here, since is not a continuous function for real numbers (since it only takes in non-negative integer inputs) and so it is not differentiable.  We can, instead, appeal to growth rates: approaches infinity much faster than , and so this fraction has a much larger denominator. . Conclusions: By the Limit Comparison Test, this means that , and so, since is a converging geometric series, then the infinite series must also converge.    "
 },
@@ -6440,7 +6440,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#subsec-LimitComparison-14",
   "type": "Example",
-  "number": "8.7.9",
+  "number": "8.7.12",
   "title": "",
   "body": "  Consider the following series: . Perform a test and state a conclusion about whether or not this series converges.    There are a lot of power functions here! Which ones do you think are most important in deciding how quickly the terms approach 0?    This isn't a -Series, but it might act like one. Compare it to a relevant -Series!    We can note that the numerator is really driven by the quadratic term, , while the denominator's behavior is determined by , the power function with the highest exponent. We can make the following comparison: Note that this is a diverging -series, and so, in performing this comparison, we think that our series also converges. Let's show this using a limit comparison. e Since this limit is a non-zero real number, we can conclude that our two series have the same behavior. So, since diverged, then we know that the series must also diverge.   "
 },
@@ -6449,7 +6449,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#thm-RationalComparison",
   "type": "Theorem",
-  "number": "8.7.10",
+  "number": "8.7.13",
   "title": "Rational Comparison Theorem.",
   "body": " Rational Comparison Theorem   If is a rational function of , where is a degree polynomial function and is a degree polynomial function, then:   If , then converges.    If , then diverges.      "
 },
@@ -6458,7 +6458,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ComparisonTests.html#subsec-LimitComparison-17",
   "type": "Note",
-  "number": "8.7.11",
+  "number": "8.7.14",
   "title": "",
   "body": " We can extend this result pretty easily by loosening up the rational function requirement. If we have combinations of power functions (even with non-integer exponents), this works as well!  "
 },
@@ -6530,7 +6530,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-RatioRootTests.html#thm-RootTest",
   "type": "Theorem",
-  "number": "8.8.1",
+  "number": "8.8.2",
   "title": "Root Test.",
   "body": " Root Test   Let be an infinite series with for and consider .   If there is some real number with and , then the series converges.    If there is some real number with and or if does not exist, then the series diverges.    If then the Root Test fails and is inconclusive.      "
 },
@@ -6539,7 +6539,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-RatioRootTests.html#thm-RatioTest",
   "type": "Theorem",
-  "number": "8.8.2",
+  "number": "8.8.3",
   "title": "Ratio Test.",
   "body": " Ratio Test   Let be an infinite series with for and consider .   If there is some real number with and , then the series converges.    If there is some real number with and or if does not exist, then the series diverges.    If then the Ratio Test fails and is inconclusive.      "
 },
@@ -6548,7 +6548,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-RatioRootTests.html#act-FactorialsExponentials",
   "type": "Activity",
-  "number": "8.8.2",
+  "number": "8.8.4",
   "title": "When Are These Tests Useful?",
   "body": " When Are These Tests Useful?   We're going to look at a couple of small examples where we can rewrite some expressions into friendlier forms, and try to connect these rewriting strategies to the Ratio and Root Tests .     Rewrite the following expression into a friendlier form. Explain why this new form is friendlier.       Rewrite the following expression into a friendlier form. Explain why this new form is friendlier.       Rewrite the following expression into a friendlier form. Explain why this new form is friendlier.       Rewrite the following expression into a friendlier form. Explain why this new form is friendlier.       Rewrite the following expression into a friendlier form. Explain why this new form is friendlier.       Why do you think the Ratio Test especially will be useful for series whose terms include factorials and exponentials?  Why do you think the Root Test will be useful for series whose terms include exponentials and functions raised to functions (of )?    "
 },
@@ -6557,7 +6557,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-RatioRootTests.html#subsec-EventuallyGeometricish-7",
   "type": "Example",
-  "number": "8.8.3",
+  "number": "8.8.5",
   "title": "",
   "body": "  For each infinite series, apply one of the Ratio or Root tests and interpret the conclusions of the test.                               This is an alternating series! We can show that this series converges using the Alternating Series Test, and so we really need to test for absolute convergence.  That works perfectly, though, since the Ratio and Root tests only test series with positive terms. So test the series:     "
 },
@@ -6665,7 +6665,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolynomialApproximation.html#act-BuildPolynomial",
   "type": "Activity",
-  "number": "9.1.1",
+  "number": "9.1.2",
   "title": "Build a Polynomial.",
   "body": " Build a Polynomial   We're going to use the formula in to construct two different polynomials that approximate two different approximations. Then, we'll use them to approximate things!     We're going to start with approximating the function centered at . Let's choose to look at a 5th degree polynomial.  This means we'll need to find the first five derivatives of . Then, we'll evaluate our function and the five derivatives at the center. After that, we can divide by the relevant factorial in order to create the coefficients of our polynomial.  Fill out the following chart to produce these coefficients.   Coefficients for Polynomial Approximation                                                   Now we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form for . These (added together) will form your polynomial, .      Approximate using your polynomial.      Let's repeat this for another function. Let's build a 5th degree polynomial approximation of centered at . We can construct the coefficients in the same way.   Coefficients for Polynomial Approximation                                                   And now, again, we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form for . These (added together) will form your polynomial, .      Approximate using your polynomial.    "
 },
@@ -6674,7 +6674,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolynomialApproximation.html#act-CompareApproximations",
   "type": "Activity",
-  "number": "9.1.2",
+  "number": "9.1.5",
   "title": "How Good Are Our Approximations?",
   "body": " How Good Are Our Approximations?   We're going to think more carefully about our approximations of and from . In order for us to do this, let's visualize the function and the 5th degree polynomial for it.      How good of a job did the polynomial approximation do when approximating ? How can you tell, visually?      How good of a job did the polynomial approximation do when approximating ? How can you tell, visually?      How does the relationship between the center and the -value that we're approximating at impact the accuracy of our approximation?      How do you think you could make these approximations better (without changing the center)?    "
 },
@@ -6683,7 +6683,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolynomialApproximation.html#act-PartialSumsOfWhat",
   "type": "Activity",
-  "number": "9.1.3",
+  "number": "9.1.6",
   "title": "Partial Sums of What?",
   "body": " Partial Sums of What?   Let's revisit our 5th degree polynomial approximations from . These approximations work well for -values that are close to 0, but we will not be more formal than that.     Make a conjecture about what the 7th degree polynomial approximations are for each of these functions.  What about the 15th degree?      Make a conjecture about what the general formula would be for these terms. If you were to write these out using summation notation, what would they look like?      Why does the polynomial approximation for the sine function only have odd-exponent terms?      Make a conjecture about what a polynomial approximation for centered at would be.    "
 },
@@ -6701,7 +6701,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolynomialApproximation.html#thm-TaylorsTheorem",
   "type": "Theorem",
-  "number": "9.1.4",
+  "number": "9.1.7",
   "title": "Taylor’s Theorem.",
   "body": " Taylor's Theorem   If is a function that is -times differentiable at , then there is some remainder function, , such that: where .  That is, the remainder is small for -values close to the center, .   "
 },
@@ -6710,7 +6710,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolynomialApproximation.html#act-ConvergeToWhat",
   "type": "Activity",
-  "number": "9.1.4",
+  "number": "9.1.8",
   "title": "How Do These Polynomials Converge?",
   "body": " How Do These Polynomials Converge?   We're going to end here by thinking about these polynomials as some partial sum from an infinite series. If there is an infinite series, we should be prepared to think about convergence!  We're going to think about convergence in the same way that we have already: as an end behavior limit of the partial sums. So let's spend our time investigating this end behavior by visualizing polynomial approximations as the degree increases.      What happens to the polynomial approximation of centered at as the degree ?      Does this behavior change if we centered our approximation elsewhere?      What happens to the polynomial approximation of centered at as the degree ?      Does this behavior change if we centered our approximation elsewhere?      What happens to the polynomial approximation of centered at as the degree ?      Does this behavior change if we centered our approximation elsewhere?      What happens to the polynomial approximation of centered at as the degree ?      Describe the difference in what you're seeing with the log function compared to the other functions we've thought about. Describe how the polynomial approximations converge: do they converge to the log function? How? More importantly, where ?      Does this behavior change if we centered our approximation elsewhere?    "
 },
@@ -6782,7 +6782,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowerSeriesConvergence.html#act-PolynomialDivision",
   "type": "Activity",
-  "number": "9.2.1",
+  "number": "9.2.2",
   "title": "Polynomial Division.",
   "body": " Polynomial Division   We're going to do some fiddling with polynomials, and hopefully use this as a bridge to connect how we think of polynomials and power series with how we think about our traditional infinite series and the notions of convergence that we've already built.     We're going to factor some polynomials, but we might end up using some division. First, we'll confirm some factors that we already know. We'll confirm this by using division.                    Now let's factor . If the factors for this polynomial isn't as familiar, it might be helpful to know that is also a factor of .                      Let's try another one. Complete the following division.                        Can you generalize this? Find the formula for for some positive integer .                        Now that we have good evidence that , We can apply a limit as . For what values of will this limit exist?      Revisit . Is there any difference for what we've just done compared to this result that we already know?    "
 },
@@ -6800,7 +6800,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowerSeriesConvergence.html#act-PowerSeriesConvergence",
   "type": "Activity",
-  "number": "9.2.2",
+  "number": "9.2.3",
   "title": "Some Power Series and their Convergence.",
   "body": " Some Power Series and their Convergence   Let's consider a couple of power series and apply some convergence tests to them in order for us to find out how it might converge.     Consider the power series: . In order for us to apply the Ratio Test, we'll actually need to consider the positive-term version: . Apply the Ratio Test. What do you get in the limit of the ratio between terms?      What kind of result from the Ratio Test guarantees convergence for the series? What are the -values that guarantee convergence?      The Ratio Test is inconclusive when the limit is equal to 1. What -values does this happen at? Consider the power series evaluated at each of these -values. Do these series converge or diverge?      Consider the power series: . Find the interval of -values for which this series converges and test the end points of the interval in the same way as earlier. If it differs, explain why.    "
 },
@@ -6809,7 +6809,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowerSeriesConvergence.html#def-IntervalOfConvergence",
   "type": "Definition",
-  "number": "9.2.2",
+  "number": "9.2.4",
   "title": "Interval of Convergence.",
   "body": " Interval of Convergence   For a power series centered at , the interval of -values for which the power series converges is called the Interval of Convergence . The distance from the center to endpoints of the interval is called the Radius of Convergence    "
 },
@@ -6818,7 +6818,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowerSeriesConvergence.html#ex-IOCexample",
   "type": "Example",
-  "number": "9.2.3",
+  "number": "9.2.5",
   "title": "",
   "body": "  For the power series , find the interval of convergence. Along the way, it will likely be helpful to identify the center and the radius of convergence.    Let's apply the Ratio Test. We'll technically be applying this to . For us to conclude that this series converges, we need the limit from the ratio test to be less than 1. This series is centered at 0 with a radius of convergence of . So we know that this series converges for .  Since the Ratio Test is inconclusive when and , we'll test those individually.   When  We can apply the ! This series converges!  When  We can apply the ! Since the difference in degrees is 1, we know that this series could be compared to the Harmonic series, and so it diverges.   So the interval of convergence is .   "
 },
@@ -6827,7 +6827,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowerSeriesConvergence.html#thm-OperationsPowerSeries",
   "type": "Theorem",
-  "number": "9.2.4",
+  "number": "9.2.6",
   "title": "Operations on Power Series.",
   "body": " Operations on Power Series   For two power series and that converge to and (respectively) on the interval of convergence , we can consider the following operations to combine power series.      Sum:  converges to on .     Difference:  converges to on .     Product: If is a power function, then converges to on .     Composition: If is a power function, then converges to when is in .      "
 },
@@ -6836,7 +6836,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowerSeriesConvergence.html#thm-DiffPowerSeries",
   "type": "Theorem",
-  "number": "9.2.5",
+  "number": "9.2.7",
   "title": "Differentiating and Integrating Power Series.",
   "body": " Differentiating and Integrating Power Series   If converges to on an interval of convergence with a radius , then:    converges to .     converges to , an antiderivative of .   Both of these converge on an interval of convergence centered at with radius .   "
 },
@@ -6845,7 +6845,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowerSeriesConvergence.html#subsec-OperationsPowerSeries-5",
   "type": "Note",
-  "number": "9.2.6",
+  "number": "9.2.8",
   "title": "",
   "body": " We're being weird about naming the interval of convergence for these. The issue is that when we differentiate, we might lose closed endpoints of an interval. Similarly, when we antidifferentiate, we could add endpoints to an open interval.  We can see this in some of the examples that follow, but the intervals of convergence are going to be identical except for possibly at the endpoints.  "
 },
@@ -6854,7 +6854,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PowerSeriesConvergence.html#subsec-OperationsPowerSeries-7",
   "type": "Example",
-  "number": "9.2.7",
+  "number": "9.2.9",
   "title": "",
   "body": "  Let's reconsider the power series . We know, from , that this power series converges to for -values in the interval .     Find a power series that converges to . What is the interval of convergence?     The interval of convergence doesn't change: .      Find a power series that converges to . What is the interval of convergence?     The interval of convergence is .      Find a power series that converges to . What is the interval of convergence?     Since is in the coefficient, starting the index at means that the first term is 0: we can re-index if we'd like, but it is not necessary. In any of these cases, the interval of convergence is .    "
 },
@@ -6935,7 +6935,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-BuildingTaylorSeries.html#act-ConstructDirectly",
   "type": "Activity",
-  "number": "9.3.1",
+  "number": "9.3.2",
   "title": "Constructing a Taylor Series Directly.",
   "body": " Constructing a Taylor Series Directly   Let's work on this! To be honest, the goal here is to realize how difficult this can be.  Let's consider the function . We're going to build a Taylor polynomial approximating centered at .     We're going to build a 4th degree polynomial approximating . In order to do this, we'll need to find the coefficients for the 5 terms.   Coefficients for Polynomial Approximation                                                   Now we can use these coefficients to construct the polynomial! These coefficients should all be on power functions in the form for . These (added together) will form your polynomial, .      Can you find a general explicit formula for the terms? If you're having a hard time with this, what could you do to try to make this easier? Why is this difficult?    How many more derivatives do you think you'll need to find before you get a non-zero term? How many non-zero terms do you think you'd need to find before you can guess the pattern?     We're going to stop there. This series is famously difficult to work with. We won't generate the whole Taylor series this way, and this strategy really doesn't work well for functions like this (where the derivatives are pretty annoying to find).   "
 },
@@ -6944,7 +6944,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-BuildingTaylorSeries.html#act-ConnectingToAnotherSeries",
   "type": "Activity",
-  "number": "9.3.2",
+  "number": "9.3.4",
   "title": "Connecting to Another Series.",
   "body": " Connecting to Another Series   Let's start with some known series. We're going to build a Taylor series for a logarithmic function: .     In order to start, we're going to find a Taylor series for . Which of the known series above is this most similar to? How is it different?      Find a Taylor series for by using . Can you connect this series to the known series by multiplying or composing something?    Note that .    We're going to connect to the geometric Taylor series for . We can note that .       Notice that the function we're trying to get a Taylor series for, , is an antiderivative of . Antidifferentiate the series you found above, using . We know that at , , so use this information to find specific constant that we need when we antidifferentiate.     We want , so we need to let .  So: . Sometimes this is written as:       What is the interval of convergence for this new series? How does that relate to the interval of convergence of the known series you started with?    We can apply the Ratio Test: So we know that the series will converge for . Now we can test the endpoints at and .   Case:  This is the negative harmonic series, and so the series diverges at .  Case:  This is the alternating harmonic series, and so the series converges at .   So, the interval of convergence is .    "
 },
@@ -6953,7 +6953,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-BuildingTaylorSeries.html#act-ConnectingToAnotherSeriesArcTan",
   "type": "Activity",
-  "number": "9.3.3",
+  "number": "9.3.5",
   "title": "Connecting to Yet Another Series.",
   "body": " Connecting to Yet Another Series   Here, again, are some updated  known series We're going to build a Taylor series for the inverse tangent function: .     In order to start, we're going to find a Taylor series for . Which of the known series above is this most similar to? How is it different?      Find a Taylor series for by using . Can you connect this series to the known series by multiplying or composing something?    Note that .    We're going to connect to the geometric Taylor series for . We can note that .       Notice that the function we're trying to get a Taylor series for, , is an antiderivative of . Antidifferentiate the series you found above, using . We know that at , , so use this information to find specific constant that we need when we antidifferentiate.     We want , so we need to let .  So: .      What is the interval of convergence for this new series? How does that relate to the interval of convergence of the known series you started with?    We can apply the Ratio Test: So we know that the series will converge for . Now we can test the endpoints at and .   Case:  This series converges by the .  Case:  This series converges by the .   So, the interval of convergence is .    "
 },
@@ -6962,7 +6962,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-BuildingTaylorSeries.html#fig-TaylorSeriesFunction",
   "type": "Figure",
-  "number": "9.3.3",
+  "number": "9.3.6",
   "title": "",
   "body": " Constructing a Taylor series from a related series.   Two rectangles, one labeled \"Taylor Series Context\" and the other, beside it, labeled \"Function Context.\" Inside the \"Taylor Series Context\" rectangle is a power series with an arrow labeled \"apply operation A\" pointing towards a transformed power series. Inside the \"Function Context\" rectangle is a function f(x) with an arrow labeled \"apply operation A\" pointing towards A(f(x)). Two arrows connect the power series and the function as well as the transformed versions, labeled \"equivalent on IOC\".    "
 },
@@ -7043,7 +7043,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ApplyingTaylorSeries.html#fact-PowersOfi",
   "type": "Fact",
-  "number": "9.4.1",
+  "number": "9.4.3",
   "title": "Powers of <span class=\"process-math\">\\(i\\)<\/span>.",
   "body": " Powers of   For where , we can think about the following powers of :             (where is some integer)    "
 },
@@ -7052,7 +7052,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ApplyingTaylorSeries.html#act-EulersFormula",
   "type": "Activity",
-  "number": "9.4.3",
+  "number": "9.4.4",
   "title": "Constructing Euler’s Formula.",
   "body": " Constructing Euler's Formula        Compose inside of the function and it's Taylor series to come up with a Taylor series representation for .           Write out several terms of this new series. You should write out at least 6 of them, but more is fun, too!  Now, use to rewrite these terms.           Which terms have are real coefficients? Which terms have imaginary coefficients? If you group these together, do you recognize these terms?      Write in terms of sines and cosines.         "
 },
@@ -7061,7 +7061,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ApplyingTaylorSeries.html#thm-EulersFormula",
   "type": "Theorem",
-  "number": "9.4.2",
+  "number": "9.4.5",
   "title": "Euler’s Formula.",
   "body": " Euler's Formula   For , the imaginary unit, .   "
 },
@@ -7079,7 +7079,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ApplyingTaylorSeries.html#subsubsec-TrigIdentities-5",
   "type": "Example",
-  "number": "9.4.3",
+  "number": "9.4.6",
   "title": "",
   "body": " Let's construct the sum of angle identites for sine and cosine. We, eventually, want to have some formula for and .  In order to do this, let's evaluate at and see what happens. So we can see that the real part of this is the sum of angles for the cosine function, and the imaginary part is the sum of angles for the sine function.  But now we can think about by considering that a sum of exponents could really be a product of exponentials: Let's look at this second version. Now we can remember that this should be equivalent to , from earlier: So we can equate the real parts and the imaginary parts separately to get: This strategy is super useful for creating these identities, since we can often take advantage of exponent properties to write two different equivalent expressions to connect.  "
 },
@@ -7124,7 +7124,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "explore-PowerSeries.html#exploration-BaselProblem",
   "type": "Exploration",
-  "number": "9.5.1",
+  "number": "9.5.2",
   "title": "The Basel Problem.",
   "body": " The Basel Problem   We're going to follow along this proof, and for most of the time it might seem like we're fiddling with unrelated results and functions. By the end, we'll tie what we're doing together to show that: .     First, consider the function .  Find a Taylor series representation for this function.    Try using the fact that: Can you divide by ?      We're going to consider this function again, but in a different form. We're going to think about this infinite polynomial, but we'll try to write it by thinking about the factors that we expect to see, specifically when we think of the zeros of the function.  So first, note that the zeros of this function, must occur when . What are the -values that make ?      We'll use these zeros to write out the function's factors, but we're also going to make use of the fact that . This means that if is a zero of the function, then the corresponding factor should be written as . So, if are all zeros, then we should write the function as: Use the zeros of the function that you found earlier to write out the factors of this.       Note that we have pairs of factors that are in the form . This is hopefully a very recognizable factoring pattern! It's the difference of squares! What do you get when you multiply these?  This should allow you to write your factored function from above in a slightly different way, by combining the pairs of factors using this multiplication. What does this look like?      We are almost complete. We now have represented the function as an infinite sum and also as an infinite product We can note that the constant term is in each, since it is the product of all of the constant terms in the infinite product.  We know that the quadratic terms should be (from the infinite sum). Can you find what the quadratic term from the infinite product would be?    This should be the quadratic term in each factor multiplied by the constant term in each of the rest of the factors, summed together.      You should have shown that: What is the sum of ?      Can you use this same strategy to find our what the sum converges to?  Note that we're really asking what the degree 4 terms are in each representation of the function .    "
 },
@@ -7142,7 +7142,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "explore-PowerSeries.html#def-StandardNormal",
   "type": "Definition",
-  "number": "9.5.2",
+  "number": "9.5.3",
   "title": "Standard Normal Distribution.",
   "body": " Standard Normal Distribution   We say that a random variable follows the standard normal distribution when the mean or expected value of the random variable is 0, the variance of the random variable is 0, and the probability density function is: .   "
 },
@@ -7160,7 +7160,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "explore-PowerSeries.html#exploration-NormalDistribution",
   "type": "Exploration",
-  "number": "9.5.2",
+  "number": "9.5.4",
   "title": "Normal Distribution.",
   "body": " Normal Distribution    Write an integral that represents the probability of a random variable with a normal distribution taking on a value up to 2 standard deviations above the mean.      Based on the Empirical Rule, what do you expect the value of this integral to be?      Construct a Taylor series representing the function .      In order to estimate your integral, we will need to antidifferentiate . This function does not have an elementary antiderivative , meaning we cannot express an antiderivative in terms of the traditional functions we have named and the traditional operations we have defined. Antidifferentiate your Taylor series representation of , and call this .      Evaluate your integral using this new representation an antiderivative, .      This is an alternating series, and so we can approximate this value to whatever degree of accuracy we'd like using .  How many terms do you need, in order to approximate this probability within 0.01?      Construct, evaluate, and approximate the integral representing the probability that a normally distributed random variable takes on a value between 1 and 1.5 standard deviations above the mean (using the same number of terms as above).    "
 },
@@ -7196,7 +7196,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCurves.html#def-ParametricCurve",
   "type": "Definition",
-  "number": "10.1.1",
+  "number": "10.1.2",
   "title": "Parametric Curve.",
   "body": " Parametric Curve   A curve is defined parametrically if for values of in some interval.   "
 },
@@ -7205,7 +7205,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCurves.html#act-FirstParametricCurve",
   "type": "Activity",
-  "number": "10.1.2",
+  "number": "10.1.3",
   "title": "Our First Parametric Curve.",
   "body": " Our First Parametric Curve   We'll begin by exploring the parametrically defined curve: for .  For each task, we'll use the following visualization:      In Step 1, how does the graph of give us information about the horizontal movement of our parametric curve?      Fill in the table with the -values at different values of . Describe the horizontal motion of the parametric curve using this information.      In Step 2, how does the graph of give us information about the vertical movement of our parametric curve?      Fill in the table with the -values at different values of . Describe the vertical motion of the parametric curve using this information.      In Step 3, confirm that the point follows the path you constructed.    "
 },
@@ -7214,7 +7214,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCurves.html#def-Orientation",
   "type": "Definition",
-  "number": "10.1.2",
+  "number": "10.1.4",
   "title": "Orientation.",
   "body": " Orientation   The direction for which a parametric curve is traced when the value of the parameter is increasing is called the orientation of the curve.   "
 },
@@ -7223,7 +7223,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCurves.html#fig-Orientation",
   "type": "Figure",
-  "number": "10.1.3",
+  "number": "10.1.5",
   "title": "",
   "body": " Orientation of a parametric curve: for .   A parametric curve, shaped a bit like the left side of a heart. There are arrow heads along the curve, starting on the top and pointing to the left and then downwards as they move along the curve.   "
 },
@@ -7232,7 +7232,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCurves.html#act-CircleExploration",
   "type": "Activity",
-  "number": "10.1.3",
+  "number": "10.1.6",
   "title": "Explore Some Curves.",
   "body": " Explore Some Curves   We'll start off with a family of parametric curves, where we can change the functions and hopefully predict some of the curve's behavior.     Let's start by thinking about the parametric curve: for .  Before you visualize any of this, think about the behavior of the -values and -values. What do you think they'll do? What will this curve look like?    Visualize the movement of the -values, the -values, and the complete parametric curve using the graphing tool below.       What do you think would happen when we multiply the function for by a factor of 3?  In the graphing tool above, change the function for to: . Explain the changes you're seeing.      What do you think would happen when we multiply the input of the cosine function by 3?  In the graphing tool above, change the function for to: . Explain the changes you're seeing.      Explore the parametric curve: for .  Explain to yourself why the curve looks the way that it does.      Create a parametric curve for a circle, but reverse the orientation.      Create a parametric curve for a circle centered at the point with radius .      What do you think the following parametric curve will look like: for ?    "
 },
@@ -7250,7 +7250,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCurves.html#act-EliminateParameter",
   "type": "Activity",
-  "number": "10.1.4",
+  "number": "10.1.7",
   "title": "Eliminate the Parameter.",
   "body": " Eliminate the Parameter   Consider the parametric curve for .     Solve for .           Substitute this expression for into .           Start over, and instead solve for .           Now substitute this expression for into .           Use the graphing tool below to check to see if these curves are all the same. You'll need to find appropriate intervals of -values or -values along the way.     "
 },
@@ -7259,7 +7259,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCurves.html#act-EliminiateParameter-2",
   "type": "Activity",
-  "number": "10.1.5",
+  "number": "10.1.8",
   "title": "Eliminate More Parameters.",
   "body": " Eliminate More Parameters   For each parametrically-defined curve, eliminate the parameter to create a function or .  Feel free to use the interactive graphing tool in .      for .       for .       for .       for .    "
 },
@@ -7322,7 +7322,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCurves.html#def-PolarCoordinates",
   "type": "Definition",
-  "number": "10.2.1",
+  "number": "10.2.2",
   "title": "Polar Coordinates.",
   "body": " Polar Coordinates   A point is written in the polar coordinate system , where represents the distance between the point and the origin (called the pole ) and represents the angle measured to the positive horizontal axis and a ray from the pole passing through the point.   "
 },
@@ -7331,7 +7331,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCurves.html#def-PolarCurve",
   "type": "Definition",
-  "number": "10.2.2",
+  "number": "10.2.3",
   "title": "Polar Curve.",
   "body": " Polar Curve   A polar curve is a curve defined by the function , where is the input\/independent variable and is the output\/dependent variable.   "
 },
@@ -7340,7 +7340,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCurves.html#act-FirstPolarCurve",
   "type": "Activity",
-  "number": "10.2.2",
+  "number": "10.2.4",
   "title": "First Polar Curve.",
   "body": " First Polar Curve   We'll begin by exploring the polar curve, for .  For each task, we'll use the following visualization:      In Step 1, explain the shape and behavior of the function based on your knowledge of trigonometric functions. How do you know, based on the function being specifically that it will look like this?    Why does this function oscillate between 0 and 4? Why did you know where the zeros would be?      Fill in the table with the function outputs for different values of .      In Step 2, why do the points that we filled in end up where they are on the polar curve? Explain how we use the coordinates you input in the previous step to plot these polar points.      Explain why the polar point has this shape\/behavior. Refer back to explanation of the Cartesian curve in Step 1, and explain how these graphical features manifest themselves in the polar curve.    How do we visualize the oscillation between 0 and 4 in this context? What is happening at the zeros of the function?      Fill in the table with the outputs at different values of . Describe why these points are plotted where they are, including the quadrants and distances from the origin\/pole.      Why do the two points and seem to overlap in the graph? Why does it look like this is only a single point?    "
 },
@@ -7349,7 +7349,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCurves.html#act-PolarFlower",
   "type": "Activity",
-  "number": "10.2.3",
+  "number": "10.2.5",
   "title": "A Polar Flower.",
   "body": " A Polar Flower   We'll now explore a polar flower, .  For each task, we'll use the following visualization:      In Step 1, explain how the changes to the cosine function (multiplying the input, by 2 and multiplying the cosine function by 5) changes the graph from a standard cosine function's graph. Where are the zeros, compared to where they typically are?      Fill in the table with the function outputs for different values of . Note that the points have been colored based on the sign on the output.      In Step 2, explain why there only looks to be one grey point (when , when there were more plotted in Step 1.)      Think about how changes. As increases, where should the points be traveling? Describe this in terms of quadrants on the graph if you'd like. Does this match the movement of the points on the polar function?      Fill in the table with the outputs at different values of . Describe why these points are plotted where they are, including the quadrants and distances from the origin\/pole.      In Step 3, confirm that the polar curve doesn't follow the counter-clockwise path that we expect when increases.  Compare the path that travels with the path that travels as increases. What is happening to the curve when is negative?    Feel free to label the function outputs on these graphs to see this more clearly.      What, then, do you think happens to a polar point when ? How do we plot it?    "
 },
@@ -7358,7 +7358,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCurves.html#note-ManyRepresentations",
   "type": "Note",
-  "number": "10.2.3",
+  "number": "10.2.6",
   "title": "Many Representations of One Point.",
   "body": " Many Representations of One Point  We've seen now that a single point can be represented in many ways!   Polar points and , where is some integer, will end up looking identical.    Polar points and , where is some integer, will end up looking identical.     "
 },
@@ -7367,7 +7367,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCurves.html#act-ConvertingPoint",
   "type": "Activity",
-  "number": "10.2.4",
+  "number": "10.2.7",
   "title": "Converting the Coordinates of a Point.",
   "body": " Converting the Coordinates of a Point   We're going to think about the two coordinate systems (and converting between them) by considering a point and collecting information. For simplicity, we'll visualize a point in the first quadrant.     A point in the first quadrant. There is a line connecting the origin with the point, and the horizontal and vertical components are shown as dashed lines, making a right triangle. The angle formed by the horizontal axis and the line to the point is labeled.       If the point is written in Cartesian coordinates, , label and in the image.      If the point is written in polar coordinates, , label and in the image.      Assume that we know the values of and . Come up with an equation linking , , and in order for us to find the value of .    What equations do we have connecting the side lengths of a triangle like this one?      Now come up with some equation linking , , and in order for us to find the value of .    What kinds of trigonometric functions connect these three variables?      Now imagine that we know the values of and instead. Come up with an equation connecting , , and in order for us to find the value of .    What kinds of trigonometric functions connect these two side lengths of this triangle?      Come up with an equation connecting , , and in order for us to find the value of .    What kinds of trigonometric functions connect these two side lengths of this triangle?    "
 },
@@ -7376,7 +7376,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCurves.html#thm-ConvertingCoordinates",
   "type": "Theorem",
-  "number": "10.2.5",
+  "number": "10.2.9",
   "title": "Polar\/Cartesian Coordinate Conversion.",
   "body": " Polar\/Cartesian Coordinate Conversion   For a point in the polar coordinate system, the corresponding Cartesian point can be written where:   For a point in the Cartesian coordinate system, a corresponding polar point can be written where:    "
 },
@@ -7385,7 +7385,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCurves.html#note-MultiplePolar",
   "type": "Note",
-  "number": "10.2.6",
+  "number": "10.2.10",
   "title": "Be Careful Finding Polar Coordinates.",
   "body": " Be Careful Finding Polar Coordinates  We saw in that polar points can be written in an infinite number of ways, and so we need to be careful while solving for and if we are given the Cartesian coordinates and .   Note that will only give values of in the interval .    Note that will only ever give values of in .   For a Cartesian point in the second or third quadrant, we can either change the value of to make sure it is pointing in the correct direction, or change the sign on to reflect it back into the correct quadrant.  "
 },
@@ -7394,7 +7394,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCurves.html#act-ConvertingCoordinates",
   "type": "Activity",
-  "number": "10.2.5",
+  "number": "10.2.11",
   "title": "Converting Coordinates.",
   "body": " Converting Coordinates   Fill in the following table, converting points written in the Cartesian coordinate system to the polar coordinate system and points in the polar coordinate system to the Cartesian coordinate system. It might be helpful to sketch the point first!  Then, find a second polar representation for each point.      Cartesian  Polar  Second Polar                                 One possible solution    Cartesian  Polar  Second Polar                                "
 },
@@ -7475,7 +7475,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCalculus.html#act-CycloidSlopes",
   "type": "Activity",
-  "number": "10.3.1",
+  "number": "10.3.3",
   "title": "Slopes on a Cycloid.",
   "body": " Slopes on a Cycloid   Consider the cycloid formed by a circle with radius :   The cycloid.   The cycloid, visualized on the interval from 0 to approximately 4 pi. This looks like 2 arches, with bottoms at 0, 2 pi and 4 pi.        First, make a conjecture: where do you think the cycloid will have horizontal tangent lines? What about vertical tangent lines, or other points where the derivative doesn't exist?      Find and , and construct .      Find the values of where .      Find the values of where does not exist.      Use these values of to find the points on the cycloid where there are horizontal tangent lines or points where the derivative doesn't exist. Do they match what you conjectured?    "
 },
@@ -7484,7 +7484,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCalculus.html#thm-ParametricArea",
   "type": "Theorem",
-  "number": "10.3.4",
+  "number": "10.3.5",
   "title": "Parametric Area.",
   "body": " Parametric Area   For a parametric curve on the interval where and are continuous on the interval and is differentiable on , then the signed area bounded between the parametric curve and the -axis from from until is .   "
 },
@@ -7493,7 +7493,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCalculus.html#subsec-ParametricAreas-6",
   "type": "Example",
-  "number": "10.3.5",
+  "number": "10.3.6",
   "title": "Area Trapped in the Cycloid.",
   "body": " Area Trapped in the Cycloid   We return to the cycloid. We'll again use the cycloid generated from a circle with radius :      Set up an integral to calculate the area trapped under one arch of the cycloid.           Evaluate this integral!           How does this change when the cycloid is generated from a circle with radius ?          "
 },
@@ -7502,7 +7502,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCalculus.html#act-ParametricArcLength",
   "type": "Activity",
-  "number": "10.3.2",
+  "number": "10.3.7",
   "title": "Building a Parametric Arc Length Formula.",
   "body": " Building a Parametric Arc Length Formula   Before we begin, it might be helpful to remind yourself how we build the arclength formula in .  Let's drop back in to that derivation with some small changes. Because we're dealing with a parametric curve, we'll use as our input variable, and so we'll eventually need a to turn into a differential in the integral. This means that we'll have non-uniform distances, since they'll be based on the changes in the input, . So we'll actually use to represent the change in the -variable on the th subinterval.  So, our length on the th subinterval is:      In order to build the arc length formula in , we factored out in order to end up with a that turned into the differential in the integral. This time, factor out a under the square root.           Now, create a Riemann sum and let (and, correspondingly, ). Note that you should end up with some differentials instead of deltas!         "
 },
@@ -7511,7 +7511,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCalculus.html#def-ParametricArcLength",
   "type": "Definition",
-  "number": "10.3.6",
+  "number": "10.3.8",
   "title": "Parametric Arc Length.",
   "body": " Parametric Arc Length   If the functions and are continuous on and differentiable on , the the length of the parametric curve on is .   "
 },
@@ -7520,7 +7520,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ParametricCalculus.html#subsec-ParametricArcLengths-5",
   "type": "Example",
-  "number": "10.3.7",
+  "number": "10.3.9",
   "title": "Length of a Cycloid Arc.",
   "body": " Length of a Cycloid Arc   Let's go back, one more time, to the cycloid. We'll again use the cycloid generated from a circle with radius :      Set up the integral measuring the length of one arch of the cycloid.           Now, evaluate the integral!    It might help to remember a trig identity! We know . So then we can note that .           How does this change when the cycloid is generated from a circle with radius ?          "
 },
@@ -7547,7 +7547,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCalculus.html#def-PolarArcLength",
   "type": "Definition",
-  "number": "10.4.1",
+  "number": "10.4.2",
   "title": "Polar Arc Length.",
   "body": " Polar Arc Length   If is a continuous function on and differentiable on , then the length of the polar curve between ,and is: .   "
 },
@@ -7556,7 +7556,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCalculus.html#subsec-PolarArcLengths-6",
   "type": "Example",
-  "number": "10.4.2",
+  "number": "10.4.3",
   "title": "Petal Length.",
   "body": " Petal Length   For the polar graphs that we've been calling Polar Flowers, we can call each loop that the polar curve makes (between the points where it crosses the pole) petals .  We'll consider, again, the polar flower .     Find the interval of that defines the first petal of the polar flower.    We're really thinking about where .      Set up an integral for the length of the curve tracing out that first petal.         "
 },
@@ -7565,7 +7565,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCalculus.html#act-PolarArea",
   "type": "Activity",
-  "number": "10.4.2",
+  "number": "10.4.4",
   "title": "Slice-and-Sum for Polar Areas.",
   "body": " Slice-and-Sum for Polar Areas   Remember slice-and-sum? Here's the general procedure:   We'll divide up the interval of inputs into (equally-sized) subintervals. We'll pick one value from each subinterval.    One each slice, we'll use the representative input variable to calculate the measurement we're interested in. In this case, it's an area.    Add up the areas of the slices, and the sum should be an approximation of the actual area we're interested in.    Use a limit as to produce an integral our of a Riemann sum!        The area of a sector of a circle with angle is: . Convince yourselves that this is true, using appropriate test angles for:   A circle.    A semicircle.    A quarter of a circle.         The reason that we're thinking about sectors of circles is that when we slice an interval of angles in a polar coordinate system, a bunch of rays extending away from the pole.  When do this for a polar curve, we'll pick a point in the subinterval and assume that the whole subinterval has a constant function output, just like we did with the rectangle. Take a look at the graphing utility below, and get a feel for how we'll find the th slice.       Calculate the area of the th slice, .           Add these up to approximate the total area.           Introduce a limit to find an integral formula for the area trapped inside a polar curve from to .         "
 },
@@ -7574,7 +7574,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-PolarCalculus.html#subsec-PolarAreas-5",
   "type": "Example",
-  "number": "10.4.3",
+  "number": "10.4.5",
   "title": "Petal Area.",
   "body": " Petal Area   Let's consider, one last time, the polar flower .  Set up and evaluate an integral calculate the area bounded inside one of the petals of the polar flower.        "
 },
@@ -7585,7 +7585,7 @@ var ptx_lunr_docs = [
   "type": "Appendix",
   "number": "A",
   "title": "Carnation Letter",
-  "body": " Carnation Letter    Response letter from Carnation.   Letter written on Carnation letterhead from Carnation. Full text below.      Full Text of the Carnation Letter  April 13, 1987  [REDACTED]  Professor of Mathematics  Dept. of Mathematics  [REDACTED]  Dear Professor [REDACTED],  We appreciate the interest you expressed in examining the height-to-diameter relationship of containers used in our food products. A 1:1 ratio of height versus diameter is the most efficient use of material, if only the surface area of material is considered. However, there are many other factors which must be considered when designing a can for a particular product. Listed below are some of these other factors:  1) Thermal Processing There is an inverse relationship between the most efficient design for cans relative to surface area and the amount of processing time required to sterilize the product contained within. In other words, a tall thin can or short wide can will require considerably less processing time and energy to achieve commercial sterility than a can which is nearly equal in height and diameter.  2) Strength Requirements During thermal processing, considerable internal pressure develops. This pressure can cause the ends of the can to become permanently distorted. Because of this, ends on most cans are made of metal which is substantially thicker than that used in the can cylinder. Therefore, there is not a simple cost-to-surface area relationship relative to metal. As this can becomes taller and the end becomes smaller, thinner metal can be used in both the cylinder and the ends.  3) Can Manufacturing Line Changeover Time Virtually all can lines run a variety of can sizes. The time required to change over from one can size to another is considerably less if only can height is changed, rather than height and diameter. In addition. since the same ends can be used if only the height is changed, the machinery used to manufacture ends does not have to be changed over to a different diameter. Reduced changeover time translates into reduced downtime and increased line efficiency.  4) Scrap Loss Generally, more metal scrap is generated as the diameter is increased.  5) Warehouse and Shipping Efficiency Smaller diameter cans make more efficient use of packaging and shipping space.  As you can see, cost and efficiency of a container are related to factors other than just the amount of material used. These are just a few of the factors which must be taken into consideration when designing a can. We hope that you now better understand that container design is not quite as simple as minimizing surface area.  Once again, thank you for your genuine interest.  Sincerely,  [REDACTED]  Vince [Illegible]  Assistant Product Manager  Friskies Buffet   "
+  "body": " Carnation Letter    Response letter from Carnation.   Letter written on Carnation letterhead from Carnation. Full text below.      April 13, 1987  [REDACTED]  Professor of Mathematics  Dept. of Mathematics  [REDACTED]  Dear Professor [REDACTED],  We appreciate the interest you expressed in examining the height-to-diameter relationship of containers used in our food products. A 1:1 ratio of height versus diameter is the most efficient use of material, if only the surface area of material is considered. However, there are many other factors which must be considered when designing a can for a particular product. Listed below are some of these other factors:  1) Thermal Processing There is an inverse relationship between the most efficient design for cans relative to surface area and the amount of processing time required to sterilize the product contained within. In other words, a tall thin can or short wide can will require considerably less processing time and energy to achieve commercial sterility than a can which is nearly equal in height and diameter.  2) Strength Requirements During thermal processing, considerable internal pressure develops. This pressure can cause the ends of the can to become permanently distorted. Because of this, ends on most cans are made of metal which is substantially thicker than that used in the can cylinder. Therefore, there is not a simple cost-to-surface area relationship relative to metal. As this can becomes taller and the end becomes smaller, thinner metal can be used in both the cylinder and the ends.  3) Can Manufacturing Line Changeover Time Virtually all can lines run a variety of can sizes. The time required to change over from one can size to another is considerably less if only can height is changed, rather than height and diameter. In addition. since the same ends can be used if only the height is changed, the machinery used to manufacture ends does not have to be changed over to a different diameter. Reduced changeover time translates into reduced downtime and increased line efficiency.  4) Scrap Loss Generally, more metal scrap is generated as the diameter is increased.  5) Warehouse and Shipping Efficiency Smaller diameter cans make more efficient use of packaging and shipping space.  As you can see, cost and efficiency of a container are related to factors other than just the amount of material used. These are just a few of the factors which must be taken into consideration when designing a can. We hope that you now better understand that container design is not quite as simple as minimizing surface area.  Once again, thank you for your genuine interest.  Sincerely,  [REDACTED]  Vince [Illegible]  Assistant Product Manager  Friskies Buffet   "
 },
 {
   "id": "fig-Carnation",

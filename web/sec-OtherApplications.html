@@ -19,68 +19,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js/lib"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
+<meta name="twitter:image" content="https://www.discovercalculus.com/web/external/cover/DC-front.png">
 <meta property="og:image" content="https://www.discovercalculus.com/web/external/cover/DC-front.png">
+<meta name="twitter:image:alt" content="Document Logo">
+<meta property="og:image:alt" content="Document Logo">
+<meta name="twitter:title" content="Discover Calculus">
+<meta property="og:title" content="Discover Calculus">
 <meta property="book:title" content="Discover Calculus">
-<meta property="book:author" content="Peter Keep">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta name="twitter:description" content="Single-Variable Calculus Topics with Motivating Activities">
+<meta property="og:description" content="Single-Variable Calculus Topics with Motivating Activities">
+<meta name="twitter:card" content="summary_large_image">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.49"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.49"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,39 +62,66 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.5';
+eBookConfig.runestone_version = '8.2.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.18d8728f6d56e11d.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
-<link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
+<script src="_static/prefix-runtime.7d3f08d51c2b60f8.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href="https://www.discovercalculus.com"><img src="external/cover/DC-front.png" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="DiscoverCalculus.html"><span class="title">Discover Calculus</span> <span class="subtitle">Single-Variable Calculus Topics with Motivating Activities</span></a></h1>
+<div class="heading ptx-banner-heading"><a href="DiscoverCalculus.html"><span class="title">Discover Calculus</span> <span class="subtitle">Single-Variable Calculus Topics with Motivating Activities</span></a></div>
 <p class="byline">Peter Keep</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
-<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<div class="search-results-controls">
-<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
-<h2 class="search-results-heading">Search Results: </h2>
-<div id="searchempty" class="searchempty"><span>No results.</span></div>
-<ol id="searchresults" class="searchresults"></ol>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
+<span class="nav-other-controls"><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-ArcLengthSurfaceArea.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-ApplicationsIntegrals.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-AntidifferentiationTechniques.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec-ArcLengthSurfaceArea.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-ApplicationsIntegrals.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-AntidifferentiationTechniques.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
 \newcommand{\ddx}[1]{\frac{d}{dx}\left(#1\right)}
 \newcommand{\Ddx}[1]{\dfrac{d}{dx}\left(#1\right)}
@@ -152,10 +139,10 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-frontmatter" class="structural toc-item-list">
 <li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
 <li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="acknowledements.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="Preface-NoteOnAI.html" class="internal"><span class="title">Disclosure about the Use of AI</span></a></div></li>
@@ -165,10 +152,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Limits.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-Limits" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-Limits-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DefinitionOfLimits.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Definition of the Limit</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-DefinitionOfLimits" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-DefiningALimit" class="internal"><span class="title">Defining a Limit</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-ApproximatingLimits" class="internal"><span class="title">Approximating Limits Using Our New Definition</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#ex-DefinitionOfLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -176,7 +164,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-EvaluatingLimits.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Evaluating Limits</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-EvaluatingLimits" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-AddingPrecisionToEstimations" class="internal"><span class="title">Adding Precision to Our Estimations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-LimitProperties" class="internal"><span class="title">Limit Properties</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#ex-EvaluatingLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -184,7 +172,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IndeterminateForms.html" class="internal"><span class="codenumber">1.3</span> <span class="title">First Indeterminate Forms</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IndeterminateForms" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-FirstIndeterminateForms" class="internal"><span class="title">A First Introduction to Indeterminate Forms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-WhatIfIndeterminateForms" class="internal"><span class="title">What if There Is No Algebra Trick?</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#exercises-" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -192,7 +180,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Limits Involving Infinity</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-LimitsInvolvingInfinity" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits" class="internal"><span class="title">Infinite Limits</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits" class="internal"><span class="title">End Behavior Limits</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#ex-LimitsInvolvingInfinity" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -200,7 +188,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-SqueezeTheorem" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-WeirdFunctionsWeirdBehavior" class="internal"><span class="title">Weird Functions, Weird Behavior</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-SqueezeTheorem" class="internal"><span class="title">Squeeze Theorem</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#ex-SqueezeTheorem" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -208,7 +196,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Continuity.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Continuity and the Intermediate Value Theorem</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-Continuity" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-ContinuityAsConnectedness" class="internal"><span class="title">Continuity as Connectedness</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-DefiningContinuity" class="internal"><span class="title">Defining Continuity</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-Discontinuities" class="internal"><span class="title">Discontinuities</span></a></div></li>
@@ -218,7 +206,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="explore-Limits.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Exploration: Limits</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-explore-Limits" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Limits.html#subsec-PreciseLimits" class="internal"><span class="title">Precise Definition of Limits</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="explore-Limits.html#ex-PreciseLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
@@ -227,10 +215,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Derivatives.html" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-Derivatives" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-Derivatives-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntroDerivatives.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Derivatives</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IntroDerivatives" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-DefiningDerivative" class="internal"><span class="title">Defining the Derivative</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-ManySlopes" class="internal"><span class="title">Calculating a Bunch of Slopes at Once</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#ex-IntroDerivatives" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -238,7 +227,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-InterpretingDerivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Interpreting Derivatives</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-InterpretingDerivatives" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsSlope" class="internal"><span class="title">The Derivative is a Slope</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsChange" class="internal"><span class="title">The Derivative is a Rate of Change</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsLimit" class="internal"><span class="title">The Derivative is a Limit</span></a></div></li>
@@ -249,7 +238,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-DerivativeRules" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfPowerFunctions" class="internal"><span class="title">Derivatives of Power Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfTrigExpFunctions" class="internal"><span class="title">Derivatives of Trigonometric and Exponential Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativeProperties" class="internal"><span class="title">Some Properties of Derivatives in General</span></a></div></li>
@@ -258,7 +247,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ProductQuotientRule.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Product and Quotient Rules</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ProductQuotientRule" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-ProductRule" class="internal"><span class="title">The Product Rule</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-QuotientRule" class="internal"><span class="title">What about Dividing?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-MoreTrigDerivatives" class="internal"><span class="title">Derivatives of (the Rest of the) Trigonometric Functions</span></a></div></li>
@@ -267,7 +256,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ChainRule.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The Chain Rule</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ChainRule" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-CompositionDecomposition" class="internal"><span class="title">Composition and Decomposition</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-ChainRule" class="internal"><span class="title">The Chain Rule, Intuitively</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-DoingChainRule" class="internal"><span class="title">Doing is Different than Knowing</span></a></div></li>
@@ -279,10 +268,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-ImplicitDifferentiation.html" class="internal"><span class="codenumber">3</span> <span class="title">Implicit Differentiation</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-ImplicitDifferentiation" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-ImplicitDifferentiation-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Implicit Differentiation</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ImplicitDifferentiation" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-ExplicitImplicit" class="internal"><span class="title">Explicit vs. Implicit Definitions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-DerivativeOperator" class="internal"><span class="title">Using a Derivative as an Operator</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-SummaryAndStrategy" class="internal"><span class="title">Some Summary and Strategy</span></a></div></li>
@@ -292,7 +282,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DerivativesInverse.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Derivatives of Inverse Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-DerivativesInverse" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativesInverse.html#subsec-WieldingImplicitDifferentiation" class="internal"><span class="title">Wielding Implicit Differentiation</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativesInverse.html#subsec-InverseTrigDerivatives" class="internal"><span class="title">Derivatives of the Inverse Trigonometric Functions</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DerivativesInverse.html#ex-DerivativesInverse" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -300,7 +290,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Logarithmic Differentiation</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-LogarithmicDifferentiation" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#subsec-LogsAreFriends" class="internal"><span class="title">Logs Are Friends!</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#subsec-WowSoFriendly" class="internal"><span class="title">Wow, So Friendly!</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#ex-LogarithmicDifferentiation" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -310,10 +300,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-ApplicationsDerivatives.html" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Derivatives</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-ApplicationsDerivatives" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-ApplicationsDerivatives-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-MeanValueTheorem.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Mean Value Theorem</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-MeanValueTheorem" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-Slopes" class="internal"><span class="title">Slopes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-MVT" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-ResultsFromMVT" class="internal"><span class="title">More Results due to the Mean Value Theorem</span></a></div></li>
@@ -322,7 +313,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IncreasingDecreasing.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Increasing and Decreasing Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IncreasingDecreasing" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-CriticalPointsLocalMaxMins" class="internal"><span class="title">Critical Points, Local Maximums, and Local Minimums</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-FindingDirection" class="internal"><span class="title">Direction of a Function (and Where it Changes)</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-FDTGraphically" class="internal"><span class="title">Using the Graph of the First Derivative</span></a></div></li>
@@ -332,7 +323,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Concavity.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Concavity</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-Concavity" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Concavity.html#subsec-DefiningCurvature" class="internal"><span class="title">Defining the Curvature of a Curve</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Concavity.html#subsec-ConcavityAtCriticalPoints" class="internal"><span class="title">Interpreting the Concavity at Critical Points</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Concavity.html#ex-Concavity" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -340,7 +331,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-GlobalMaxMins.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Global Maximums and Minimums</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-GlobalMaxMins" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html#subsec-BothMaxMins" class="internal"><span class="title">When Do We Guarantee Both a Global Maximum and a Global Minimum?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html#subsec-WhatAboutOpenIntervals" class="internal"><span class="title">What about Domains of Functions that Aren’t Closed?</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html#ex-GlobalMaxMins" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -348,7 +339,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Optimization.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Optimization</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-Optimization" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Optimization.html#subsec-OptimizationFramework" class="internal"><span class="title">Optimization Framework</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Optimization.html#subsec-VolumeAndSurfaceArea" class="internal"><span class="title">Balancing Volume and Surface Area</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Optimization.html#subsec-MoreOptimizationExamples" class="internal"><span class="title">What Other Examples Can We Do?</span></a></div></li>
@@ -357,7 +348,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-LinearApproximation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Linear Approximations</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-LinearApproximation" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LinearApproximation.html#subsec-LinearApproximation" class="internal"><span class="title">Linearly Approximating a Function</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LinearApproximation.html#subsec-ApproximatingZeros" class="internal"><span class="title">Approximating Zeros of a Function</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LinearApproximation.html#ex-LinearApproximation" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -365,12 +356,12 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-LHopitalsRule.html" class="internal"><span class="codenumber">4.7</span> <span class="title">L’Hôpital’s Rule</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-LHopitalsRule" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsec-IndeterminateForms" class="internal"><span class="title">Indeterminate Forms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsec-LHopitalsRule" class="internal"><span class="title">L’Hôpital’s Rule</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsec-ForcingDivision" class="internal"><span class="title">Forcing Division</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-subsec-ForcingDivision" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsubsec-Products" class="internal"><span class="title">Products!</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsubsec-Differences" class="internal"><span class="title">Differences!</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsubsec-Exponentials" class="internal"><span class="title">Exponentials!</span></a></div></li>
@@ -384,10 +375,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-AntiderivativesIntegrals.html" class="internal"><span class="codenumber">5</span> <span class="title">Antiderivatives and Integrals</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-AntiderivativesIntegrals" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-AntiderivativesIntegrals-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Antiderivatives and Indefinite Integrals</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IndefiniteIntegrals" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-Antiderivatives" class="internal"><span class="title">Antiderivatives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-InitialValueProblems" class="internal"><span class="title">Initial Value Problems</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-IndefiniteIntegrals" class="internal"><span class="title">Indefinite Integrals</span></a></div></li>
@@ -396,7 +388,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-RiemannSums.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Riemann Sums and Area Approximations</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-RiemannSums" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RiemannSums.html#subsec-RectangularApproximations" class="internal"><span class="title">Rectangular Approximations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RiemannSums.html#subsec-SelectionStrategy" class="internal"><span class="title">Selection Strategies</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-RiemannSums.html#ex-RiemannSums" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -404,7 +396,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DefiniteIntegral.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Definite Integral</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-DefiniteIntegral" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#subsec-EvaluatingAreas" class="internal"><span class="title">Evaluating Areas (Instead of Approximating Them)</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#subsec-SignedArea" class="internal"><span class="title">Signed Area</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#subsec-PropertiesOfDefiniteIntegrals" class="internal"><span class="title">Properties of Definite Integrals</span></a></div></li>
@@ -413,7 +405,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-FTOC.html" class="internal"><span class="codenumber">5.4</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-FTOC" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FTOC.html#subsec-AreasAndAntierivatives" class="internal"><span class="title">Areas and Antiderivatives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FTOC.html#subsec-EvaluatingIntegrals" class="internal"><span class="title">Evaluating Definite Integrals</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-FTOC.html#ex-FTOC" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -421,7 +413,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html" class="internal"><span class="codenumber">5.5</span> <span class="title">More Results about Definite Integrals</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-MoreDefiniteIntegral" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html#subsec-Symmetry" class="internal"><span class="title">Symmetry</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html#subsec-AverageValue" class="internal"><span class="title">Average Value of a Function</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html#ex-MoreDefiniteIntegrals" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -429,11 +421,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-uSubstitution.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Introduction to <span class="process-math">\(u\)</span>-Substitution</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-uSubstitution" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-UndoChainRule" class="internal"><span class="title">Undoing the Chain Rule</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-uSubDefiniteIntegrals" class="internal"><span class="title">Substitution for Definite Integrals</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-subsec-uSubDefiniteIntegrals" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsubsec-uSubDefinite1" class="internal"><span class="title">Antidifferentiate, then Evaluate</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsubsec-SubstituteLimits" class="internal"><span class="title">A More Wholistic Substitution</span></a></div></li>
 </ul>
@@ -446,10 +438,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-ApplicationsIntegrals.html" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integrals</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-ch-ApplicationsIntegrals">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-NetChange.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Integrals as Net Change</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-NetChange" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NetChange.html#subsec-EstimatingMovement" class="internal"><span class="title">Estimating Movement</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NetChange.html#subsec-position-velocity-acceleration" class="internal"><span class="title">Position, Velocity, and Acceleration</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NetChange.html#subsec-displacement-distance-speed" class="internal"><span class="title">Displacement, Distance, and Speed</span></a></div></li>
@@ -459,7 +451,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-AreaBetweenCurves.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Area Between Curves</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-AreaBetweenCurves" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AreaBetweenCurves.html#subsec-RememberingRiemannSums" class="internal"><span class="title">Remembering Riemann Sums</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AreaBetweenCurves.html#subsec-AreaBetweenCurves" class="internal"><span class="title">Building an Integral Formula for the Area Between Curves</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AreaBetweenCurves.html#subsec-ChangingPerspective" class="internal"><span class="title">Changing Perspective</span></a></div></li>
@@ -468,7 +460,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-VolumesOfRevolution.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Volumes of Solids of Revolution</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-VolumesOfRevolution" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-FromAreaToVolume" class="internal"><span class="title">From Area To Volume</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-SolidsOfRevolution" class="internal"><span class="title">Solids of Revolution</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-Re-OrientingRectangles" class="internal"><span class="title">Reorienting our Rectangles</span></a></div></li>
@@ -477,7 +469,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-MoreVolumes.html" class="internal"><span class="codenumber">6.4</span> <span class="title">More Volumes: Shifting the Axis of Revolution</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-MoreVolumes" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreVolumes.html#subsec-WhatChanges" class="internal"><span class="title">What Changes?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreVolumes.html#subsec-FormalizingTheChanges" class="internal"><span class="title">Formalizing These Changes in the Washers and Shells</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-MoreVolumes.html#ex-MoreVolumes" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -485,7 +477,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Arc Length and Surface Area</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ArcLengthSurfaceArea" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#subsec-ArcLength" class="internal"><span class="title">Integrals for Evaluating the Length of a Curve</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#subsec-SurfaceArea" class="internal"><span class="title">Integrals for Evaluating the Surface Area of a Solid</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#ex-ArcLengthSurfaceArea" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -493,11 +485,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Other Applications of Integrals</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec-OtherApplications">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Mass" class="internal"><span class="title">Physics Application: Mass</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Work" class="internal"><span class="title">Physics Application: Work</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-subsec-Work" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Springs" class="internal"><span class="title">Work: Springs</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Pumping" class="internal"><span class="title">Work: Pumping Problems</span></a></div></li>
 </ul>
@@ -509,10 +501,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-AntidifferentiationTechniques.html" class="internal"><span class="codenumber">7</span> <span class="title">Techniques for Antidifferentiation</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-AntidifferentiationTechniques" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-AntidifferentiationTechniques-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ImproperIntegrals.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Improper Integrals</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ImproperIntegrals" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#subsec-ImproperIntegrals" class="internal"><span class="title">Improper Integrals</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#subsec-ImproperIntegralStrategies" class="internal"><span class="title">Strategies for Evaluating Improper Integrals</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#subsec-IntegralConvergence" class="internal"><span class="title">Convergence and Divergence of an Improper Integral</span></a></div></li>
@@ -521,14 +514,14 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-MoreuSubstitution.html" class="internal"><span class="codenumber">7.2</span> <span class="title">More on <span class="process-math">\(u\)</span>-Substitution</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-MoreuSubstitution" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreuSubstitution.html#subsec-VariableSubstitution" class="internal"><span class="title">Variable Substitution in Integrals</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-MoreuSubstitution.html#ex-MoreuSubstitution" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-AlgebraicManipulations.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Manipulating Integrands</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-AlgebraicManipulations" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-Rewriting" class="internal"><span class="title">Rewriting the Integrand</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-RationalFunctions" class="internal"><span class="title">Antidifferentiating Rational Functions</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#ex-AlgebraicManipulations" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -536,7 +529,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntegrationByParts.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Integration By Parts</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IntegrationByParts" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-DiscoveringIntegrationByParts" class="internal"><span class="title">Discovering the Integration by Parts Formula</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-PickingParts" class="internal"><span class="title">Intuition for Selecting the Parts</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-FlexibleChoices" class="internal"><span class="title">Some Flexible Choices for Parts</span></a></div></li>
@@ -546,7 +539,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PowersOfTrig.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Integrating Powers of Trigonometric Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-PowersOfTrig" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#subsec-StrategySinesCosines" class="internal"><span class="title">Building a Strategy for Powers of Sines and Cosines</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#subsec-StrategySecantsTangents" class="internal"><span class="title">Building a Strategy for Powers of Secants and Tangents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#ex-PowersOfTrig" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -554,19 +547,19 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-TrigSub.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Trigonometric Substitution</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-TrigSub" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-TrigSub.html#subsec-AnotherVariableSubstitution" class="internal"><span class="title">Another Type of Variable Substitution</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-TrigSub.html#ex-TrigSub" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PartialFractions.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Partial Fractions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-PartialFractions" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-WhenPartialFractions" class="internal"><span class="title">When?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-HowPartialFractions" class="internal"><span class="title">How?</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-SpecificStrategies" class="internal"><span class="title">More Specific Strategies</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-subsec-SpecificStrategies" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsubsec-SimpleLinear" class="internal"><span class="title">Partial Fraction Type: Simple Linear Factors</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsubsec-IrreducibleQuadratics" class="internal"><span class="title">Partial Fraction Type: Irreducible Quadratic Factors</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsubsec-RepeatedLinear" class="internal"><span class="title">Partial Fraction Type: Repeated Linear Factors</span></a></div></li>
@@ -579,10 +572,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-InfiniteSeries.html" class="internal"><span class="codenumber">8</span> <span class="title">Infinite Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-InfiniteSeries" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-InfiniteSeries-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntroSequences.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Introduction to Infinite Sequences</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IntroSequences" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-SequencesAsFunctions" class="internal"><span class="title">Sequences as Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-GraphingSequences" class="internal"><span class="title">Graphing Sequences</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-SequenceTerminology" class="internal"><span class="title">Sequence Terminology</span></a></div></li>
@@ -592,7 +586,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntroSeries.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Introduction to Infinite Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IntroSeries" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSeries.html#subsec-PartialSums" class="internal"><span class="title">Partial Sums</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSeries.html#subsec-VisualizingPartialSums" class="internal"><span class="title">Visualizing the Sequence of Partial Sums</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSeries.html#subsec-SpecialSeries" class="internal"><span class="title">Special Series</span></a></div></li>
@@ -601,7 +595,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DivergenceTest.html" class="internal"><span class="codenumber">8.3</span> <span class="title">The Divergence Test and the Harmonic Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-DivergenceTest" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-RelationshipSeqSeries" class="internal"><span class="title">The Relationship Between a Sequence and Series</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-DivergenceTest" class="internal"><span class="title">The Divergence Test</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-GrowthRates" class="internal"><span class="title">Squeeze Theorem and Growth Rates</span></a></div></li>
@@ -610,7 +604,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntegralTest.html" class="internal"><span class="codenumber">8.4</span> <span class="title">The Integral Test</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IntegralTest" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-SeriesAsIntegrals" class="internal"><span class="title">Infinite Series As a Kind of Integral</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-IntegralTest" class="internal"><span class="title">The Integral Test</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-WhyConditions" class="internal"><span class="title">Why Do We Need These Conditions?</span></a></div></li>
@@ -619,7 +613,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-AlternatingSeries.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Alternating Series and Conditional Convergence</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-AlternatingSeries" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlternatingSeries.html#subsec-AlternatingSeries" class="internal"><span class="title">Defining Alternating Series, and the Main Result</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlternatingSeries.html#subsec-ConditionalConvergence" class="internal"><span class="title">Convergence, More Carefully</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-AlternatingSeries.html#ex-AlternatingSeries" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -627,7 +621,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-CommonSeries.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Common Series Types</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-CommonSeries" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CommonSeries.html#subsec-GeometricSeries" class="internal"><span class="title">Geometric Series</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CommonSeries.html#subsec-pSeries" class="internal"><span class="title"><span class="process-math">\(p\)</span>-Series</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CommonSeries.html#subsec-RecappingObjects" class="internal"><span class="title">Recapping Our Mathematical Objects</span></a></div></li>
@@ -636,7 +630,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ComparisonTests.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Comparison Tests</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ComparisonTests" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ComparisonTests.html#subsec-ComparingPartialSums" class="internal"><span class="title">Comparing Partial Sums</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ComparisonTests.html#subsec-UnhelpfulComparisons" class="internal"><span class="title">(Un)Helpful Comparisons</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ComparisonTests.html#subsec-LimitComparison" class="internal"><span class="title">Limit Comparison</span></a></div></li>
@@ -645,7 +639,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-RatioRootTests.html" class="internal"><span class="codenumber">8.8</span> <span class="title">The Ratio and Root Tests</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-RatioRootTests" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RatioRootTests.html#subsec-EventuallyGeometricish" class="internal"><span class="title">Eventually Geometric-ish</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RatioRootTests.html#subsec-InconclusiveRatioRoot" class="internal"><span class="title">Inconclusive Results</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-RatioRootTests.html#ex-RatioRootTests" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -653,16 +647,17 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="explore-Series.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Exploration: Infinite Series</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Series.html#subsec-InterestingSeries" class="internal"><span class="title">Interesting Infinite Series</span></a></div></li></ul>
+<ul id="ptx-toc-group-explore-Series" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Series.html#subsec-InterestingSeries" class="internal"><span class="title">Interesting Infinite Series</span></a></div></li></ul>
 </li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-PowerSeries.html" class="internal"><span class="codenumber">9</span> <span class="title">Power Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-PowerSeries" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-PowerSeries-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PolynomialApproximation.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Polynomial Approximations of Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-PolynomialApproximation" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#subsec-WhatDoWeWant" class="internal"><span class="title">What Do We Want From a Polynomial Approximation?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#subsec-HowDoWeBuild" class="internal"><span class="title">How Do We Build a Polynomial Approximation?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#subsec-AreThesePartialSums" class="internal"><span class="title">Are These Partial Sums?</span></a></div></li>
@@ -671,7 +666,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Power Series Convergence</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-PowerSeriesConvergence" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html#subsec-IntervalOfConvergence" class="internal"><span class="title">Interval of Convergence</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html#subsec-OperationsPowerSeries" class="internal"><span class="title">Operations on Power Series</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html#ex-PowerSeriesConvergence" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -679,7 +674,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html" class="internal"><span class="codenumber">9.3</span> <span class="title">How to Build Taylor Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-BuildingTaylorSeries" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#subsec-Directly" class="internal"><span class="title">Constructing Directly</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#subsec-ConnectionsToOther" class="internal"><span class="title">Connections To Other Taylor Series</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#ex-BuildingTaylorSeries" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -687,12 +682,12 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html" class="internal"><span class="codenumber">9.4</span> <span class="title">How to Use Taylor Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ApplyingTaylorSeries" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-Approximations" class="internal"><span class="title">Approximations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-Integrals" class="internal"><span class="title">Integrals</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-EulersFormula" class="internal"><span class="title">Euler’s Formula</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-subsec-EulersFormula" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-ComplexAnalysis" class="internal"><span class="title">Complex Analysis</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsubsec-TrigIdentities" class="internal"><span class="title">Trigonometric Identities</span></a></div></li>
 </ul>
@@ -702,7 +697,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="explore-PowerSeries.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Exploration: Power Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-explore-PowerSeries" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-PowerSeries.html#subsec-BaselProblem" class="internal"><span class="title">The Basel Problem</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-PowerSeries.html#subsec-NormalDistribution" class="internal"><span class="title">The Normal Distribution</span></a></div></li>
 </ul>
@@ -711,10 +706,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-ParametricPolar.html" class="internal"><span class="codenumber">10</span> <span class="title">Parametric and Polar Curves</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-ParametricPolar" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-ParametricPolar-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ParametricCurves.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Parametric Curves</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ParametricCurves" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCurves.html#subsec-ParametricWhatIf" class="internal"><span class="title">What If...?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCurves.html#subsec-ExploringParametricCurves" class="internal"><span class="title">Exploring Parametric Curves</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCurves.html#subsec-MoreCurves" class="internal"><span class="title">More Parametric Curves</span></a></div></li>
@@ -724,7 +720,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PolarCurves.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Polar Curves</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-PolarCurves" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolarCurves.html#subsec-PolarWhatIf" class="internal"><span class="title">What If...?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolarCurves.html#subsec-ExploringPolarCoordinates" class="internal"><span class="title">Exploring Polar Coordinates</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolarCurves.html#subsec-ConvertingCoordinateSystems" class="internal"><span class="title">Converting Between Coordinate Systems</span></a></div></li>
@@ -733,7 +729,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ParametricCalculus.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Calculus with Parametric Curves</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ParametricCalculus" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#subsec-Cycloid" class="internal"><span class="title">The Cycloid</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#subsec-ParametricSlopes" class="internal"><span class="title">Slopes of Tangent Lines</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#subsec-ParametricAreas" class="internal"><span class="title">Areas Bounded by Curves</span></a></div></li>
@@ -742,7 +738,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PolarCalculus.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Calculus with Polar Curves</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-PolarCalculus" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolarCalculus.html#subsec-PolarSlopes" class="internal"><span class="title">Slopes of Tangent Lines</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolarCalculus.html#subsec-PolarArcLengths" class="internal"><span class="title">Arc Lengths</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolarCalculus.html#subsec-PolarAreas" class="internal"><span class="title">Areas Bounded by Curves</span></a></div></li>
@@ -752,44 +748,49 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="app-CarnationLetter.html" class="internal"><span class="codenumber">A</span> <span class="title">Carnation Letter</span></a></div></li>
+<ul id="ptx-toc-group-backmatter" class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="app-CarnationLetter.html" class="internal"><span class="codenumber">A.</span> <span class="title">Carnation Letter</span></a></div></li>
 <li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-OtherApplications"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">6.6</span><span class="space"> </span><span class="title">Other Applications of Integrals</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-OtherApplications">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Other Applications of Integrals</span>
+</h1>
+<section class="introduction" id="sec-OtherApplications-2">
+<div class="para" id="sec-OtherApplications-2-1">We should pause and think (even briefly) about the whole point of this chapter.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-OtherApplications-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-2">Do you think you will need to know how to calculate the volume of a solid of revolution?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-OtherApplications-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-3">Is being able to think about the surface area of a solid of revolution important?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-OtherApplications-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-4">Are you going to need to calculate a bunch of arc lengths constantly in your other classes, jobs, or spare time?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-OtherApplications-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-5">No. Probably not. It’s fun to think about this stuff, but the goal is not really the formulas: it’s the construction.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-OtherApplications-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-6">What we really should be leaving this chapter with is a renewed view of what a definite integral <em class="emphasis">is</em>. After <a href="ch-AntiderivativesIntegrals.html" class="internal" title="Chapter 5: Antiderivatives and Integrals">Chapter 5 Antiderivatives and Integrals</a>, we probably thought about a definite integral as a measurement of the (signed) area “under the curve” (bounded between the curve and the <span class="process-math">\(x\)</span>-axis). Hopefully now, though, we have a deeper view of the definite integral through this slice-and-sum process.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-OtherApplications-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-7">A definite integral is an accumulation of some function outputs multiplied by the space between the inputs.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-OtherApplications-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-8">So when we do move past these topics into other classes, jobs, or your spare time, then you <em class="emphasis">will</em> run into formulas involving definite integrals. Hopefully, based on this chapter, we have the tools to deconstruct those formulas to find out what they are measuring and how they are measuring it.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-OtherApplications-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-OtherApplications-2-9">To end the chapter, let’s look at some applications of definite integrals into formulas from other academic fields.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-OtherApplications-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="subsec-Mass">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Physics Application: Mass</span>
 </h2>
-<section class="introduction" id="sec-OtherApplications-2"><div class="para" id="sec-OtherApplications-2-1">We should pause and think (even briefly) about the whole point of this chapter.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-OtherApplications-2-2">Do you think you will need to know how to calculate the volume of a solid of revolution?<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-OtherApplications-2-3">Is being able to think about the surface area of a solid of revolution important?<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-OtherApplications-2-4">Are you going to need to calculate a bunch of arc lengths constantly in your other classes, jobs, or spare time?<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-OtherApplications-2-5">No. Probably not. It’s fun to think about this stuff, but the goal is not really the formulas: it’s the construction.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-OtherApplications-2-6">What we really should be leaving this chapter with is a renewed view of what a definite integral <em class="emphasis">is</em>. After <a href="ch-AntiderivativesIntegrals.html" class="internal" title="Chapter 5: Antiderivatives and Integrals">Chapter 5 Antiderivatives and Integrals</a>, we probably thought about a definite integral as a measurement of the (signed) area “under the curve” (bounded between the curve and the <span class="process-math">\(x\)</span>-axis). Hopefully now, though, we have a deeper view of the definite integral through this slice-and-sum process.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-OtherApplications-2-7">A definite integral is an accumulation of some function outputs multiplied by the space between the inputs.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-OtherApplications-2-8">So when we do move past these topics into other classes, jobs, or your spare time, then you <em class="emphasis">will</em> run into formulas involving definite integrals. Hopefully, based on this chapter, we have the tools to deconstruct those formulas to find out what they are measuring and how they are measuring it.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-OtherApplications-2-9">To end the chapter, let’s look at some applications of definite integrals into formulas from other academic fields.<div class="autopermalink" data-description="Paragraph"><a href="#sec-OtherApplications-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><section class="subsection" id="subsec-Mass"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Physics Application: Mass</span>
-</h3>
 <div class="para logical" id="subsec-Mass-2">
 <div class="para">Let’s consider some object made out of a material with a constant density. To calculate the mass of the object, we need to know the size (the volume of the object) and the density, and then we can multiply:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-Mass-2-1">
 \begin{equation*}
 \mathrm{mass} = \mathrm{density} \cdot \mathrm{volume}\text{.}
 \end{equation*}
 </div>
 <div class="para">We’ve seen how we can use the slice-and-sum formula to calculate volumes by slicing the object into thin pieces and approximating the volume by multiplying the cross-sectional area by the thickness of the slice:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-Mass-2-2">
 \begin{equation*}
 V_k = A(x_k^*) \Delta x\text{.}
 \end{equation*}
@@ -805,52 +806,60 @@ M \amp = \lim_{n\to\infty}\sum_{k=1}^n \rho A(x_k^*)\Delta x\\
 \end{align*}
 </div>
 <div class="para">This is great! We can easily extend this to other situations, as well.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Mass-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-Mass-3">
 <div class="para">Imagine if the density of our object isn’t constant. Maybe we have some metal alloy, where the mixture of the metal changes as we traverse through the object. This variable density can be represented, then, as <span class="process-math">\(\rho(x)\text{.}\)</span> We can replace the constant <span class="process-math">\(\rho\)</span> with <span class="process-math">\(\rho(x_k^*)\)</span> and then eventually <span class="process-math">\(\rho(x)\)</span> to get:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-Mass-3-5">
 \begin{equation*}
 M = \int_{x=a}^{x=b} \rho(x) A(x)\;dx\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Mass-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="theorem theorem-like" id="thm-MassOfObject"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.6.1</span><span class="period">.</span><span class="space"> </span><span class="title">Mass of an Object.</span>
-</h4>
+<article class="theorem theorem-like" id="thm-MassOfObject"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.6.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mass of an Object.</span>
+</h3>
 <div class="para logical" id="thm-MassOfObject-2-1">
 <div class="para">For some solid spanning from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> where <span class="process-math">\(A(x)\)</span> is the cross-sectional area of the object at <span class="process-math">\(x\)</span> and <span class="process-math">\(\rho(x)\)</span> is the density of the object at <span class="process-math">\(x\text{,}\)</span> then the total mass of the object is:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="thm-MassOfObject-2-1-7">
 \begin{equation*}
 M = \int_{x=a}^{x=b} \rho(x) A(x)\;dx\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-MassOfObject-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm-MassOfObject-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 6.6.1: Mass of an Object"><a href="#thm-MassOfObject" title="Copy heading and permalink for Theorem 6.6.1: Mass of an Object" aria-label="Copy heading and permalink for Theorem 6.6.1: Mass of an Object">🔗</a></div></article><div class="para" id="subsec-Mass-5">For very thin objects, like wires, we can not consider the cross-sectional area and simply use what we call the <dfn class="terminology">linear density</dfn>: <span class="process-math">\(\rho(x)\)</span> measures the amount of mass per unit length (instead of mass per cubic unit of volume). In this case, our formula changes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 6.6.1: Mass of an Object"><a tabindex="-1" href="#thm-MassOfObject" title="Copy heading and permalink for Theorem 6.6.1: Mass of an Object" aria-label="Copy heading and permalink for Theorem 6.6.1: Mass of an Object">🔗</a></div>
+</article>
+<div class="para" id="subsec-Mass-5">For very thin objects, like wires, we can not consider the cross-sectional area and simply use what we call the <dfn class="terminology">linear density</dfn>: <span class="process-math">\(\rho(x)\)</span> measures the amount of mass per unit length (instead of mass per cubic unit of volume). In this case, our formula changes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Mass-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="theorem theorem-like" id="thm-MassOfThinWire"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.6.2</span><span class="period">.</span><span class="space"> </span><span class="title">Mass of a Thin Wire.</span>
-</h4>
+<article class="theorem theorem-like" id="thm-MassOfThinWire"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.6.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mass of a Thin Wire.</span>
+</h3>
 <div class="para logical" id="thm-MassOfThinWire-2-1">
 <div class="para">For some thin object (like a wire) spanning from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{,}\)</span> then if <span class="process-math">\(\rho(x)\)</span> measures the mass per unit of length (<span class="process-math">\(\rho(x)\)</span> is a linear density function), then the mass of the object is:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="thm-MassOfThinWire-2-1-5">
 \begin{equation*}
 M = \int_{x=a}^{x=b} \rho(x)\;dx\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-MassOfThinWire-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm-MassOfThinWire-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 6.6.2: Mass of a Thin Wire"><a href="#thm-MassOfThinWire" title="Copy heading and permalink for Theorem 6.6.2: Mass of a Thin Wire" aria-label="Copy heading and permalink for Theorem 6.6.2: Mass of a Thin Wire">🔗</a></div></article><article class="example example-like" id="subsec-Mass-7"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.6.3</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="subsec-Mass-7-1"><div class="para" id="subsec-Mass-7-1-1">For each of the following objects, set up an integral expression to calculate the mass. Evaluate the integrals!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div>
-<article class="task exercise-like" id="subsec-Mass-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="subsec-Mass-7-2-1-1">A thin wire that is <span class="process-math">\(30\)</span> cm long with a density function <span class="process-math">\(\rho(x) = 2 + \frac{x}{60}\text{,}\)</span> where <span class="process-math">\(\rho(x)\)</span> measures the density of the wire at <span class="process-math">\(x\)</span> in g/cm.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 6.6.2: Mass of a Thin Wire"><a tabindex="-1" href="#thm-MassOfThinWire" title="Copy heading and permalink for Theorem 6.6.2: Mass of a Thin Wire" aria-label="Copy heading and permalink for Theorem 6.6.2: Mass of a Thin Wire">🔗</a></div>
+</article>
+<article class="example example-like" id="subsec-Mass-7"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.6.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="introduction" id="subsec-Mass-7-1">
+<div class="para" id="subsec-Mass-7-1-1">For each of the following objects, set up an integral expression to calculate the mass. Evaluate the integrals!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Mass-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="subsec-Mass-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+</div>
+<article class="task exercise-like" id="subsec-Mass-7-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="subsec-Mass-7-2-1-1">A thin wire that is <span class="process-math">\(30\)</span> cm long with a density function <span class="process-math">\(\rho(x) = 2 + \frac{x}{60}\text{,}\)</span> where <span class="process-math">\(\rho(x)\)</span> measures the density of the wire at <span class="process-math">\(x\)</span> in g/cm.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Mass-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-Mass-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="subsec-Mass-7-2-2-1">
 <div class="displaymath process-math" id="subsec-Mass-7-2-2-1-1">
 \begin{align*}
@@ -861,19 +870,25 @@ M \amp = \int_{x=0}^{x=30} \left(2+\frac{x}{60}\right)\;dx\\
 \end{align*}
 </div>
 <div class="para">The mass of the wire is <span class="process-math">\(67.5\)</span> g.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Mass-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.6.3.a.1"><a href="#subsec-Mass-7-2-2" title="Copy heading and permalink for Solution 6.6.3.a.1" aria-label="Copy heading and permalink for Solution 6.6.3.a.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 6.6.3.a"><a href="#subsec-Mass-7-2" title="Copy heading and permalink for Task 6.6.3.a" aria-label="Copy heading and permalink for Task 6.6.3.a">🔗</a></div></article><article class="task exercise-like" id="subsec-Mass-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="subsec-Mass-7-3-1-1">A thin wire that is <span class="process-math">\(100\)</span> cm long, with an unknown density. We assume that the density changes linearly from one end to the other, with the measured density at both ends being <span class="process-math">\(5.1\)</span> g/cm and <span class="process-math">\(4.7\)</span> g/cm.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.6.3.a.1"><a tabindex="-1" href="#subsec-Mass-7-2-2" title="Copy heading and permalink for Solution 6.6.3.a.1" aria-label="Copy heading and permalink for Solution 6.6.3.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.6.3.a"><a tabindex="-1" href="#subsec-Mass-7-2" title="Copy heading and permalink for Task 6.6.3.a" aria-label="Copy heading and permalink for Task 6.6.3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="subsec-Mass-7-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="subsec-Mass-7-3-1-1">A thin wire that is <span class="process-math">\(100\)</span> cm long, with an unknown density. We assume that the density changes linearly from one end to the other, with the measured density at both ends being <span class="process-math">\(5.1\)</span> g/cm and <span class="process-math">\(4.7\)</span> g/cm.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Mass-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="subsec-Mass-7-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="subsec-Mass-7-3-2-1">Construct the density function using two points: <span class="process-math">\((0,5.1)\)</span> and <span class="process-math">\((100, 4.7)\text{.}\)</span> You could switch the orders and use <span class="process-math">\((0,4.7)\)</span> and <span class="process-math">\((100,5.1)\)</span> as well. What is the linear function connecting these points?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<details id="subsec-Mass-7-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="subsec-Mass-7-3-2-1">Construct the density function using two points: <span class="process-math">\((0,5.1)\)</span> and <span class="process-math">\((100, 4.7)\text{.}\)</span> You could switch the orders and use <span class="process-math">\((0,4.7)\)</span> and <span class="process-math">\((100,5.1)\)</span> as well. What is the linear function connecting these points?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Mass-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 6.6.3.b.1"><a href="#subsec-Mass-7-3-2" title="Copy heading and permalink for Hint 6.6.3.b.1" aria-label="Copy heading and permalink for Hint 6.6.3.b.1">🔗</a></div>
-</div></details><details id="subsec-Mass-7-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" aria-hidden="true" data-description="Hint 6.6.3.b.1"><a tabindex="-1" href="#subsec-Mass-7-3-2" title="Copy heading and permalink for Hint 6.6.3.b.1" aria-label="Copy heading and permalink for Hint 6.6.3.b.1">🔗</a></div>
+</div></details>
+<details id="subsec-Mass-7-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="subsec-Mass-7-3-3-1">
 <div class="para">We’ll use the points <span class="process-math">\((0,5.1)\)</span> and <span class="process-math">\((100, 4.7)\)</span> to construct <span class="process-math">\(\rho(x)\text{.}\)</span>
 </div>
@@ -893,17 +908,23 @@ M \amp = \int_{x=0}^{x=100} 5.1-0.004x\;dx\\
 \end{align*}
 </div>
 <div class="para">So the mass of the wire is <span class="process-math">\(490\)</span> g.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Mass-7-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Mass-7-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.6.3.b.1"><a href="#subsec-Mass-7-3-3" title="Copy heading and permalink for Solution 6.6.3.b.1" aria-label="Copy heading and permalink for Solution 6.6.3.b.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.6.3.b.1"><a tabindex="-1" href="#subsec-Mass-7-3-3" title="Copy heading and permalink for Solution 6.6.3.b.1" aria-label="Copy heading and permalink for Solution 6.6.3.b.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Task 6.6.3.b"><a href="#subsec-Mass-7-3" title="Copy heading and permalink for Task 6.6.3.b" aria-label="Copy heading and permalink for Task 6.6.3.b">🔗</a></div></article><div class="autopermalink" data-description="Example 6.6.3"><a href="#subsec-Mass-7" title="Copy heading and permalink for Example 6.6.3" aria-label="Copy heading and permalink for Example 6.6.3">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Physics Application: Mass"><a href="#subsec-Mass" title="Copy heading and permalink for Subsection: Physics Application: Mass" aria-label="Copy heading and permalink for Subsection: Physics Application: Mass">🔗</a></div></section><section class="subsection" id="subsec-Work"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Physics Application: Work</span>
-</h3>
-<section class="introduction" id="subsec-Work-2"><div class="para logical" id="subsec-Work-2-1">
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.6.3.b"><a tabindex="-1" href="#subsec-Mass-7-3" title="Copy heading and permalink for Task 6.6.3.b" aria-label="Copy heading and permalink for Task 6.6.3.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Example 6.6.3"><a tabindex="-1" href="#subsec-Mass-7" title="Copy heading and permalink for Example 6.6.3" aria-label="Copy heading and permalink for Example 6.6.3">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Physics Application: Mass"><a tabindex="-1" href="#subsec-Mass" title="Copy heading and permalink for Subsection: Physics Application: Mass" aria-label="Copy heading and permalink for Subsection: Physics Application: Mass">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-Work">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Physics Application: Work</span>
+</h2>
+<section class="introduction" id="subsec-Work-2">
+<div class="para logical" id="subsec-Work-2-1">
 <div class="para">Another example of a measurement found in physics contexts is Work. Work is, generally, the amount energy transferred to (or from, depending on perspective) an object by some force across some distance or displacement.</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-Work-2-1-1">
 \begin{equation*}
 \mathrm{Work} = \mathrm{Force} \cdot \mathrm{distance}
 \end{equation*}
@@ -917,35 +938,43 @@ W \amp = \lim_{n\to\infty} \sum_{k=1}^n F(x_k^*) \Delta x\\
 \amp = \int_{x=a}^{x=b} F(x)\;dx
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Work-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Work-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="theorem theorem-like" id="thm-Work"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.6.4</span><span class="period">.</span><span class="space"> </span><span class="title">Work Required.</span>
-</h4>
+<article class="theorem theorem-like" id="thm-Work"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.6.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Work Required.</span>
+</h3>
 <div class="para logical" id="thm-Work-2-1">
 <div class="para">If <span class="process-math">\(F(x)\)</span> is a function measuring the force applied to an object at some <span class="process-math">\(x\)</span>-value in the interval <span class="process-math">\([a,b]\text{,}\)</span> then the work done to move the object across the interval is:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="thm-Work-2-1-4">
 \begin{equation*}
 W=\int_{x=a}^{x=b} F(x)\;dx\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm-Work-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm-Work-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 6.6.4: Work Required"><a href="#thm-Work" title="Copy heading and permalink for Theorem 6.6.4: Work Required" aria-label="Copy heading and permalink for Theorem 6.6.4: Work Required">🔗</a></div></article><div class="para" id="subsec-Work-2-3">In many contexts, we can notice that the force being applied to the object is dependent on the position of the object along its path. For instance, in the 1600’s, British physicist Robert Hooke claimed (and proved) that the force required to stretch or compress a spring is directly proportional to the distance that it is away from “equilibrium” (the position the spring naturally rests in).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Work-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><section class="subsubsection" id="subsubsec-Springs"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Work: Springs</span>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 6.6.4: Work Required"><a tabindex="-1" href="#thm-Work" title="Copy heading and permalink for Theorem 6.6.4: Work Required" aria-label="Copy heading and permalink for Theorem 6.6.4: Work Required">🔗</a></div>
+</article>
+<div class="para" id="subsec-Work-2-3">In many contexts, we can notice that the force being applied to the object is dependent on the position of the object along its path. For instance, in the 1600’s, British physicist Robert Hooke claimed (and proved) that the force required to stretch or compress a spring is directly proportional to the distance that it is away from “equilibrium” (the position the spring naturally rests in).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Work-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsubsection" id="subsubsec-Springs">
+<h3 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Work: Springs</span>
+</h3>
+<div class="para" id="subsubsec-Springs-2">We’ll first look at the springs, since the force functions are relatively simple. Robert Hooke’s claim (Hooke’s Law) says that the force function for a spring is always in the form <span class="process-math">\(F(x)=kx\)</span> where <span class="process-math">\(k\)</span> is just some constant proportion connecting distance to the force required for that particular spring.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Springs-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsubsec-Springs-3"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.6.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="subsubsec-Springs-2">We’ll first look at the springs, since the force functions are relatively simple. Robert Hooke’s claim (Hooke’s Law) says that the force function for a spring is always in the form <span class="process-math">\(F(x)=kx\)</span> where <span class="process-math">\(k\)</span> is just some constant proportion connecting distance to the force required for that particular spring.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Springs-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="subsubsec-Springs-3-1">
+<div class="para" id="subsubsec-Springs-3-1-1">Calculate the work required to stretch or compress the following springs.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Springs-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="subsubsec-Springs-3"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.6.5</span><span class="period">.</span>
-</h5>
-<div class="introduction" id="subsubsec-Springs-3-1"><div class="para" id="subsubsec-Springs-3-1-1">Calculate the work required to stretch or compress the following springs.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Springs-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div>
-<article class="task exercise-like" id="subsubsec-Springs-3-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<div class="para" id="subsubsec-Springs-3-2-1-1">A spring stretched to 0.1 m past its equilibrium position, where a Force of <span class="process-math">\(F(x)=180x\)</span> is applied, measured in N.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Springs-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="subsubsec-Springs-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="subsubsec-Springs-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsubsec-Springs-3-2-1-1">A spring stretched to 0.1 m past its equilibrium position, where a Force of <span class="process-math">\(F(x)=180x\)</span> is applied, measured in N.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Springs-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsubsec-Springs-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="subsubsec-Springs-3-2-2-1">
 <div class="displaymath process-math" id="subsubsec-Springs-3-2-2-1-1">
 \begin{align*}
@@ -955,14 +984,19 @@ W \amp =\int_{x=0}^{x=0.1} 180x\;dx\\
 \end{align*}
 </div>
 <div class="para">So the work required to stretch the spring is 0.9 J.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Springs-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Springs-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.6.5.a.1"><a href="#subsubsec-Springs-3-2-2" title="Copy heading and permalink for Solution 6.6.5.a.1" aria-label="Copy heading and permalink for Solution 6.6.5.a.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 6.6.5.a"><a href="#subsubsec-Springs-3-2" title="Copy heading and permalink for Task 6.6.5.a" aria-label="Copy heading and permalink for Task 6.6.5.a">🔗</a></div></article><article class="task exercise-like" id="subsubsec-Springs-3-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<div class="para" id="subsubsec-Springs-3-3-1-1">A force of 81 N was applied to a spring to stretch it 0.8 m from its equilibrium position. Calculate the work required to stretch it 0.2 m further.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Springs-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.6.5.a.1"><a tabindex="-1" href="#subsubsec-Springs-3-2-2" title="Copy heading and permalink for Solution 6.6.5.a.1" aria-label="Copy heading and permalink for Solution 6.6.5.a.1">🔗</a></div>
+</div></details>
 </div>
-<div class="solutions"><details id="subsubsec-Springs-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.6.5.a"><a tabindex="-1" href="#subsubsec-Springs-3-2" title="Copy heading and permalink for Task 6.6.5.a" aria-label="Copy heading and permalink for Task 6.6.5.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="subsubsec-Springs-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsubsec-Springs-3-3-1-1">A force of 81 N was applied to a spring to stretch it 0.8 m from its equilibrium position. Calculate the work required to stretch it 0.2 m further.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Springs-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsubsec-Springs-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="subsubsec-Springs-3-3-2-1">
 <div class="displaymath process-math" id="subsubsec-Springs-3-3-2-1-1">
 \begin{align*}
@@ -975,40 +1009,48 @@ W \amp = \int_{x=0.8}^{x=1} \frac{405x}{4}\;dx\\
 \end{align*}
 </div>
 <div class="para">So the work required to stretch the spring is 18.225 J.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Springs-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Springs-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.6.5.b.1"><a href="#subsubsec-Springs-3-3-2" title="Copy heading and permalink for Solution 6.6.5.b.1" aria-label="Copy heading and permalink for Solution 6.6.5.b.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 6.6.5.b"><a href="#subsubsec-Springs-3-3" title="Copy heading and permalink for Task 6.6.5.b" aria-label="Copy heading and permalink for Task 6.6.5.b">🔗</a></div></article><div class="autopermalink" data-description="Example 6.6.5"><a href="#subsubsec-Springs-3" title="Copy heading and permalink for Example 6.6.5" aria-label="Copy heading and permalink for Example 6.6.5">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Work: Springs"><a href="#subsubsec-Springs" title="Copy heading and permalink for Subsubsection: Work: Springs" aria-label="Copy heading and permalink for Subsubsection: Work: Springs">🔗</a></div></section><section class="subsubsection" id="subsubsec-Pumping"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Work: Pumping Problems</span>
-</h4>
-<div class="para" id="subsubsec-Pumping-2">We can explore another class of examples with some more complications in the setup. We still will be thinking about force and distance, but we can reframe them with a new example.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.6.5.b.1"><a tabindex="-1" href="#subsubsec-Springs-3-3-2" title="Copy heading and permalink for Solution 6.6.5.b.1" aria-label="Copy heading and permalink for Solution 6.6.5.b.1">🔗</a></div>
+</div></details>
 </div>
-<div class="para" id="subsubsec-Pumping-3">What if we pump liquid out of the top of a tank? How does that work? There are some fun things to think about. Let’s visualize this tank below, and then talk through the construction of the formula.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.6.5.b"><a tabindex="-1" href="#subsubsec-Springs-3-3" title="Copy heading and permalink for Task 6.6.5.b" aria-label="Copy heading and permalink for Task 6.6.5.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Example 6.6.5"><a tabindex="-1" href="#subsubsec-Springs-3" title="Copy heading and permalink for Example 6.6.5" aria-label="Copy heading and permalink for Example 6.6.5">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsubsection: Work: Springs"><a tabindex="-1" href="#subsubsec-Springs" title="Copy heading and permalink for Subsubsection: Work: Springs" aria-label="Copy heading and permalink for Subsubsection: Work: Springs">🔗</a></div>
+</section>
+<section class="subsubsection" id="subsubsec-Pumping">
+<h3 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Work: Pumping Problems</span>
+</h3>
+<div class="para" id="subsubsec-Pumping-2">We can explore another class of examples with some more complications in the setup. We still will be thinking about force and distance, but we can reframe them with a new example.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-Pumping-3">What if we pump liquid out of the top of a tank? How does that work? There are some fun things to think about. Let’s visualize this tank below, and then talk through the construction of the formula.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="fig-Pump"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./ApplicationsIntegrals/Pump.png" class="contained" alt="(for accessibility)"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.6.6<span class="period">.</span></span><span class="space"> </span>Diagram of a pumping problem.<div class="autopermalink" data-description="Figure 6.6.6"><a href="#fig-Pump" title="Copy heading and permalink for Figure 6.6.6" aria-label="Copy heading and permalink for Figure 6.6.6">🔗</a></div></figcaption></figure><div class="para logical" id="subsubsec-Pumping-5">
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.6.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Diagram of a pumping problem.<div class="autopermalink" aria-hidden="true" data-description="Figure 6.6.6"><a tabindex="-1" href="#fig-Pump" title="Copy heading and permalink for Figure 6.6.6" aria-label="Copy heading and permalink for Figure 6.6.6">🔗</a></div></figcaption>
+</figure>
+<div class="para logical" id="subsubsec-Pumping-5">
 <div class="para">We can see a couple of notable things here:</div>
 <ul class="disc" id="subsubsec-Pumping-5-1">
 <li id="subsubsec-Pumping-5-1-1">
-<div class="para" id="subsubsec-Pumping-5-1-1-1">We’re going to slice up the liquid. So from <span class="process-math">\(y=a\text{,}\)</span> the bottom of the tank, up to <span class="process-math">\(y=b\text{,}\)</span> the height at the top of the volume of liquid, we will create <span class="process-math">\(k\)</span> slices (each at some <span class="process-math">\(y_k^*\)</span> <span class="process-math">\(y\)</span>-value) with <span class="process-math">\(\Delta y\)</span> representing the thickness of the slice.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-Pumping-5-1-1-1">We’re going to slice up the liquid. So from <span class="process-math">\(y=a\text{,}\)</span> the bottom of the tank, up to <span class="process-math">\(y=b\text{,}\)</span> the height at the top of the volume of liquid, we will create <span class="process-math">\(k\)</span> slices (each at some <span class="process-math">\(y_k^*\)</span> <span class="process-math">\(y\)</span>-value) with <span class="process-math">\(\Delta y\)</span> representing the thickness of the slice.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsubsec-Pumping-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsubsec-Pumping-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsubsec-Pumping-5-1-2">
-<div class="para" id="subsubsec-Pumping-5-1-2-1">The distance portion of the formula is not represented by the width of a subinterval from the whole distance. Instead, we’ll note that liquid at the top of the tank needs to be pumped a shorter distance than the liquid near the bottom of the tank. The distance part, then, is a function based on the <span class="process-math">\(y\)</span>-value. So, if <span class="process-math">\(y=h\)</span> is the height of the tank, then <span class="process-math">\((h-y_k^*)\)</span> is the distance that the liquid in the <span class="process-math">\(k\)</span>th slice will move.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-Pumping-5-1-2-1">The distance portion of the formula is not represented by the width of a subinterval from the whole distance. Instead, we’ll note that liquid at the top of the tank needs to be pumped a shorter distance than the liquid near the bottom of the tank. The distance part, then, is a function based on the <span class="process-math">\(y\)</span>-value. So, if <span class="process-math">\(y=h\)</span> is the height of the tank, then <span class="process-math">\((h-y_k^*)\)</span> is the distance that the liquid in the <span class="process-math">\(k\)</span>th slice will move.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsubsec-Pumping-5-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsubsec-Pumping-5-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsubsec-Pumping-5-1-3">
-<div class="para" id="subsubsec-Pumping-5-1-3-1">To calculate the force required to pump the liquid in the <span class="process-math">\(k\)</span>th slice, we need to know the mass of the liquid and the acceleration needed to pump the liquid out of the tank. The acceleration will be whatever the acceleration needed to overcome gravity: we’ll use <span class="process-math">\(g\text{,}\)</span> the positive gravitational constant. For the mass, we’ll think about the density of the liquid (a constant, <span class="process-math">\(\rho\)</span>) and the volume of the <span class="process-math">\(k\)</span>th slice.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-5-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-Pumping-5-1-3-1">To calculate the force required to pump the liquid in the <span class="process-math">\(k\)</span>th slice, we need to know the mass of the liquid and the acceleration needed to pump the liquid out of the tank. The acceleration will be whatever the acceleration needed to overcome gravity: we’ll use <span class="process-math">\(g\text{,}\)</span> the positive gravitational constant. For the mass, we’ll think about the density of the liquid (a constant, <span class="process-math">\(\rho\)</span>) and the volume of the <span class="process-math">\(k\)</span>th slice.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-5-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsubsec-Pumping-5-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsubsec-Pumping-5-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsubsec-Pumping-5-1-4">
-<div class="para" id="subsubsec-Pumping-5-1-4-1">To find the volume of the <span class="process-math">\(k\)</span>th slice, we’ll think about the cross-sectional area of the slice at <span class="process-math">\(y_k^*\)</span> (we’ll call it <span class="process-math">\(A(y_k^*)\)</span>) multiplied by the thickness, <span class="process-math">\(\Delta y\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-5-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-Pumping-5-1-4-1">To find the volume of the <span class="process-math">\(k\)</span>th slice, we’ll think about the cross-sectional area of the slice at <span class="process-math">\(y_k^*\)</span> (we’ll call it <span class="process-math">\(A(y_k^*)\)</span>) multiplied by the thickness, <span class="process-math">\(\Delta y\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-5-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsubsec-Pumping-5-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsubsec-Pumping-5-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">This gives us the following in the slice-and-sum process:</div>
@@ -1025,27 +1067,31 @@ W \amp = \lim_{n\to\infty} \sum_{k=1}^n \rho g A(y_k^*) (h-y_k^*) \Delta y\\
 <div class="para">So, when we consider these pumping problems, we really need to take note of only a few things:</div>
 <ul class="disc" id="subsubsec-Pumping-5-3">
 <li id="subsubsec-Pumping-5-3-1">
-<div class="para" id="subsubsec-Pumping-5-3-1-1">What are the limits of integration? Where <em class="emphasis">is</em> the liquid we’re pumping (based on <span class="process-math">\(y\)</span>-value heights)?<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-Pumping-5-3-1-1">What are the limits of integration? Where <em class="emphasis">is</em> the liquid we’re pumping (based on <span class="process-math">\(y\)</span>-value heights)?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsubsec-Pumping-5-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsubsec-Pumping-5-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsubsec-Pumping-5-3-2">
-<div class="para" id="subsubsec-Pumping-5-3-2-1">What is the geometry of our tank? When we consider a single slice of the liquid, what kind of shape will we have, and how do we calculate the cross-sectional area?<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-Pumping-5-3-2-1">What is the geometry of our tank? When we consider a single slice of the liquid, what kind of shape will we have, and how do we calculate the cross-sectional area?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsubsec-Pumping-5-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsubsec-Pumping-5-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="subsubsec-Pumping-6"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.6.7</span><span class="period">.</span>
-</h5>
-<div class="introduction" id="subsubsec-Pumping-6-1"><div class="para" id="subsubsec-Pumping-6-1-1">For each of the following tanks, calculate the work required to empty the liquid from the tank by pumping it through the top of the tank.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div>
-<article class="task exercise-like" id="subsubsec-Pumping-6-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<div class="para" id="subsubsec-Pumping-6-2-1-1">Consider a cylindrical tank, similar to the one in <a href="sec-OtherApplications.html#fig-Pump" class="xref" data-knowl="./knowl/xref/fig-Pump.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.6.6">Figure 6.6.6</a>. The radius of the tank is 0.5 m, and the height is 2 m. The tank is half full of some liquid with density <span class="process-math">\(\rho\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="example example-like" id="subsubsec-Pumping-6"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.6.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="introduction" id="subsubsec-Pumping-6-1">
+<div class="para" id="subsubsec-Pumping-6-1-1">For each of the following tanks, calculate the work required to empty the liquid from the tank by pumping it through the top of the tank.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="subsubsec-Pumping-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+</div>
+<article class="task exercise-like" id="subsubsec-Pumping-6-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsubsec-Pumping-6-2-1-1">Consider a cylindrical tank, similar to the one in <a href="sec-OtherApplications.html#fig-Pump" class="xref" data-knowl="./knowl/xref/fig-Pump.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.6.6">Figure 6.6.6</a>. The radius of the tank is 0.5 m, and the height is 2 m. The tank is half full of some liquid with density <span class="process-math">\(\rho\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsubsec-Pumping-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="subsubsec-Pumping-6-2-2-1">
 <div class="para">The cross sectional area is:</div>
 <div class="displaymath process-math" id="subsubsec-Pumping-6-2-2-1-1">
@@ -1065,14 +1111,19 @@ W \amp = \rho g \int_{y=0}^{y=1}A(y)(2-y)\;dy\\
 \amp = \frac{3\rho g \pi}{8}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.6.7.a.1"><a href="#subsubsec-Pumping-6-2-2" title="Copy heading and permalink for Solution 6.6.7.a.1" aria-label="Copy heading and permalink for Solution 6.6.7.a.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 6.6.7.a"><a href="#subsubsec-Pumping-6-2" title="Copy heading and permalink for Task 6.6.7.a" aria-label="Copy heading and permalink for Task 6.6.7.a">🔗</a></div></article><article class="task exercise-like" id="subsubsec-Pumping-6-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<div class="para" id="subsubsec-Pumping-6-3-1-1">Now box-shaped tank, where the base of the tank is 1 meters by 3 meters and the height is 2 meter. The tank is filled all the way to the top with some liquid with density <span class="process-math">\(\rho\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.6.7.a.1"><a tabindex="-1" href="#subsubsec-Pumping-6-2-2" title="Copy heading and permalink for Solution 6.6.7.a.1" aria-label="Copy heading and permalink for Solution 6.6.7.a.1">🔗</a></div>
+</div></details>
 </div>
-<div class="solutions"><details id="subsubsec-Pumping-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.6.7.a"><a tabindex="-1" href="#subsubsec-Pumping-6-2" title="Copy heading and permalink for Task 6.6.7.a" aria-label="Copy heading and permalink for Task 6.6.7.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="subsubsec-Pumping-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsubsec-Pumping-6-3-1-1">Now box-shaped tank, where the base of the tank is 1 meters by 3 meters and the height is 2 meter. The tank is filled all the way to the top with some liquid with density <span class="process-math">\(\rho\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsubsec-Pumping-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="subsubsec-Pumping-6-3-2-1">
 <div class="para">The cross sectional area is:</div>
 <div class="displaymath process-math" id="subsubsec-Pumping-6-3-2-1-1">
@@ -1092,17 +1143,22 @@ W \amp = \rho g \int_{y=0}^{y=2}A(y)(2-y)\;dy\\
 \amp = 6\rho g
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.6.7.b.1"><a href="#subsubsec-Pumping-6-3-2" title="Copy heading and permalink for Solution 6.6.7.b.1" aria-label="Copy heading and permalink for Solution 6.6.7.b.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 6.6.7.b"><a href="#subsubsec-Pumping-6-3" title="Copy heading and permalink for Task 6.6.7.b" aria-label="Copy heading and permalink for Task 6.6.7.b">🔗</a></div></article><article class="task exercise-like" id="subsubsec-Pumping-6-4"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<div class="para" id="subsubsec-Pumping-6-4-1-1">Consider a conical tank, where the radius of the base is 3 meters and the cone is 2 meters tall. The liquid is filled up to the 1.5 meter mark.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.6.7.b.1"><a tabindex="-1" href="#subsubsec-Pumping-6-3-2" title="Copy heading and permalink for Solution 6.6.7.b.1" aria-label="Copy heading and permalink for Solution 6.6.7.b.1">🔗</a></div>
+</div></details>
 </div>
-<div class="solutions"><details id="subsubsec-Pumping-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.6.7.b"><a tabindex="-1" href="#subsubsec-Pumping-6-3" title="Copy heading and permalink for Task 6.6.7.b" aria-label="Copy heading and permalink for Task 6.6.7.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="subsubsec-Pumping-6-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsubsec-Pumping-6-4-1-1">Consider a conical tank, where the radius of the base is 3 meters and the cone is 2 meters tall. The liquid is filled up to the 1.5 meter mark.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsubsec-Pumping-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="subsubsec-Pumping-6-4-2-1">
 <div class="para">Finding the cross-sectional area function will be a bit harder. It is the area of a circle, but the radius changes based on the <span class="process-math">\(y\)</span>-value. At <span class="process-math">\(y=0\text{,}\)</span> we have <span class="process-math">\(r=3\text{.}\)</span> At <span class="process-math">\(y=2\text{,}\)</span> we have <span class="process-math">\(r=0\text{.}\)</span> So the rate of change of the radius is -1.5 meters per meter of height.</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsubsec-Pumping-6-4-2-1-6">
 \begin{equation*}
 A(y) = \pi (3-1.5y)^2
 \end{equation*}
@@ -1117,61 +1173,104 @@ W \amp = \rho g \pi \int_{y=0}^{y=1.5}(3-1.5y)^2(2-y)\;dy\\
 \amp = \frac{2295\rho g \pi}{256}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Pumping-6-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Pumping-6-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.6.7.c.1"><a href="#subsubsec-Pumping-6-4-2" title="Copy heading and permalink for Solution 6.6.7.c.1" aria-label="Copy heading and permalink for Solution 6.6.7.c.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 6.6.7.c"><a href="#subsubsec-Pumping-6-4" title="Copy heading and permalink for Task 6.6.7.c" aria-label="Copy heading and permalink for Task 6.6.7.c">🔗</a></div></article><div class="autopermalink" data-description="Example 6.6.7"><a href="#subsubsec-Pumping-6" title="Copy heading and permalink for Example 6.6.7" aria-label="Copy heading and permalink for Example 6.6.7">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Work: Pumping Problems"><a href="#subsubsec-Pumping" title="Copy heading and permalink for Subsubsection: Work: Pumping Problems" aria-label="Copy heading and permalink for Subsubsection: Work: Pumping Problems">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Physics Application: Work"><a href="#subsec-Work" title="Copy heading and permalink for Subsection: Physics Application: Work" aria-label="Copy heading and permalink for Subsection: Physics Application: Work">🔗</a></div></section><section class="exercises" id="ex-OtherApplications"><h3 class="heading hide-type">
-<span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice Problems</span>
-</h3>
-<article class="exercise exercise-like" id="ex-OtherApplications-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div class="introduction" id="ex-OtherApplications-1-1"><div class="para" id="ex-OtherApplications-1-1-1">Consider a thin wire whose density is variable and is written as <span class="process-math">\(\rho(x)\)</span> on some interval. For each of the following density functions (and their intervals), build and evaluate an integral representing the mass of the wire.<div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div>
-<article class="task exercise-like" id="ex-OtherApplications-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.6.7.c.1"><a tabindex="-1" href="#subsubsec-Pumping-6-4-2" title="Copy heading and permalink for Solution 6.6.7.c.1" aria-label="Copy heading and permalink for Solution 6.6.7.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.6.7.c"><a tabindex="-1" href="#subsubsec-Pumping-6-4" title="Copy heading and permalink for Task 6.6.7.c" aria-label="Copy heading and permalink for Task 6.6.7.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Example 6.6.7"><a tabindex="-1" href="#subsubsec-Pumping-6" title="Copy heading and permalink for Example 6.6.7" aria-label="Copy heading and permalink for Example 6.6.7">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsubsection: Work: Pumping Problems"><a tabindex="-1" href="#subsubsec-Pumping" title="Copy heading and permalink for Subsubsection: Work: Pumping Problems" aria-label="Copy heading and permalink for Subsubsection: Work: Pumping Problems">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Subsection: Physics Application: Work"><a tabindex="-1" href="#subsec-Work" title="Copy heading and permalink for Subsection: Physics Application: Work" aria-label="Copy heading and permalink for Subsection: Physics Application: Work">🔗</a></div>
+</section>
+<section class="exercises" id="ex-OtherApplications">
+<h2 class="heading hide-type">
+<span class="type">Practice Problems</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
+</h2>
+<article class="exercise exercise-like" id="ex-OtherApplications-1"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="ex-OtherApplications-1-1">
+<div class="para" id="ex-OtherApplications-1-1-1">Consider a thin wire whose density is variable and is written as <span class="process-math">\(\rho(x)\)</span> on some interval. For each of the following density functions (and their intervals), build and evaluate an integral representing the mass of the wire.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="ex-OtherApplications-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="ex-OtherApplications-1-2-1-1">
-<span class="process-math">\(\rho(x) = \dfrac{2x+1}{10}\)</span> on <span class="process-math">\([0, 10]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\rho(x) = \dfrac{2x+1}{10}\)</span> on <span class="process-math">\([0, 10]\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.a"><a href="#ex-OtherApplications-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="ex-OtherApplications-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#ex-OtherApplications-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-OtherApplications-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ex-OtherApplications-1-3-1-1">
-<span class="process-math">\(\rho(x) = x^2-2\)</span> on <span class="process-math">\([100, 200]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\rho(x) = x^2-2\)</span> on <span class="process-math">\([100, 200]\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.b"><a href="#ex-OtherApplications-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 1"><a href="#ex-OtherApplications-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ex-OtherApplications-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div class="introduction" id="ex-OtherApplications-2-1"><div class="para" id="ex-OtherApplications-2-1-1">Consider a spring that requires 100 N of force to stretch the spring 0.3 m from its equilibrium position.<div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div>
-<article class="task exercise-like" id="ex-OtherApplications-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="ex-OtherApplications-2-2-1-1">Using Hooke’s Law, find the spring constant <span class="process-math">\(k\)</span> such that <span class="process-math">\(F(x) = kx\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#ex-OtherApplications-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 1"><a tabindex="-1" href="#ex-OtherApplications-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex-OtherApplications-2"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="ex-OtherApplications-2-1">
+<div class="para" id="ex-OtherApplications-2-1-1">Consider a spring that requires 100 N of force to stretch the spring 0.3 m from its equilibrium position.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.a"><a href="#ex-OtherApplications-2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="ex-OtherApplications-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="ex-OtherApplications-2-3-1-1">How much work is required to stretch the spring 0.4 m from its equilibrium position?<div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.b"><a href="#ex-OtherApplications-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="ex-OtherApplications-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="ex-OtherApplications-2-4-1-1">How much work is required to stretch the spring another 0.1 m after this?<div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="ex-OtherApplications-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="ex-OtherApplications-2-2-1-1">Using Hooke’s Law, find the spring constant <span class="process-math">\(k\)</span> such that <span class="process-math">\(F(x) = kx\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.c"><a href="#ex-OtherApplications-2-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise 2"><a href="#ex-OtherApplications-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ex-OtherApplications-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="introduction" id="ex-OtherApplications-3-1"><div class="para" id="ex-OtherApplications-3-1-1">Consider a spring that is stretched 0.1 m from its equilibrium position. It requires 10 N to stretch it an additional 0.2 m.<div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div>
-<article class="task exercise-like" id="ex-OtherApplications-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="ex-OtherApplications-3-2-1-1">Using Hooke’s Law, find the spring constant <span class="process-math">\(k\)</span> such that <span class="process-math">\(F(x) = kx\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#ex-OtherApplications-2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-OtherApplications-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="ex-OtherApplications-2-3-1-1">How much work is required to stretch the spring 0.4 m from its equilibrium position?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.a"><a href="#ex-OtherApplications-3-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ex-OtherApplications-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="ex-OtherApplications-3-3-1-1">How much work is required to stretch the spring 1 m from its equilibrium position?<div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#ex-OtherApplications-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-OtherApplications-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="ex-OtherApplications-2-4-1-1">How much work is required to stretch the spring another 0.1 m after this?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.b"><a href="#ex-OtherApplications-3-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><article class="task exercise-like" id="ex-OtherApplications-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="ex-OtherApplications-3-4-1-1">How much work is required to compress the spring 0.2 m from is equilibrium position?<div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#ex-OtherApplications-2-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 2"><a tabindex="-1" href="#ex-OtherApplications-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex-OtherApplications-3"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="ex-OtherApplications-3-1">
+<div class="para" id="ex-OtherApplications-3-1-1">Consider a spring that is stretched 0.1 m from its equilibrium position. It requires 10 N to stretch it an additional 0.2 m.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.c"><a href="#ex-OtherApplications-3-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise 3"><a href="#ex-OtherApplications-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="ex-OtherApplications-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
-<div class="introduction" id="ex-OtherApplications-4-1"><div class="para" id="ex-OtherApplications-4-1-1">For each tank, assume the density of the liquid is <span class="process-math">\(\rho\text{,}\)</span> and set up and evaluate the integral representing the work required to pump the liquid out of the top of the tank.<div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div>
-<article class="task exercise-like" id="ex-OtherApplications-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="ex-OtherApplications-4-2-1-1">A square-based tank that is 2 meters tall with a 0.5 m <span class="process-math">\(\times\)</span> 0.5 m base, full of liquid.<div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.a"><a href="#ex-OtherApplications-4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="ex-OtherApplications-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="ex-OtherApplications-4-3-1-1">A cylindrical tank where the base has a radius of 1 m and the height is 3 m, half-full of liquid.<div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="ex-OtherApplications-3-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="ex-OtherApplications-3-2-1-1">Using Hooke’s Law, find the spring constant <span class="process-math">\(k\)</span> such that <span class="process-math">\(F(x) = kx\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.b"><a href="#ex-OtherApplications-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div></article><article class="task exercise-like" id="ex-OtherApplications-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="ex-OtherApplications-4-4-1-1">A frustum-shaped tank where the bottom radius is 4 m, the top radius is 1 m, the height is 2 m, and the tank is filled to a height of <span class="process-math">\(\frac{2}{3}\)</span> m.<div class="autopermalink" data-description="Paragraph"><a href="#ex-OtherApplications-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#ex-OtherApplications-3-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-OtherApplications-3-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="ex-OtherApplications-3-3-1-1">How much work is required to stretch the spring 1 m from its equilibrium position?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.c"><a href="#ex-OtherApplications-4-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise 4"><a href="#ex-OtherApplications-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div></article><div class="autopermalink" data-description="Practice Problems"><a href="#ex-OtherApplications" title="Copy heading and permalink for Practice Problems" aria-label="Copy heading and permalink for Practice Problems">🔗</a></div></section><div class="autopermalink" data-description="Section 6.6: Other Applications of Integrals"><a href="#sec-OtherApplications" title="Copy heading and permalink for Section 6.6: Other Applications of Integrals" aria-label="Copy heading and permalink for Section 6.6: Other Applications of Integrals">🔗</a></div></section></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#ex-OtherApplications-3-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-OtherApplications-3-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="ex-OtherApplications-3-4-1-1">How much work is required to compress the spring 0.2 m from is equilibrium position?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.c"><a tabindex="-1" href="#ex-OtherApplications-3-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 3"><a tabindex="-1" href="#ex-OtherApplications-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex-OtherApplications-4"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="ex-OtherApplications-4-1">
+<div class="para" id="ex-OtherApplications-4-1-1">For each tank, assume the density of the liquid is <span class="process-math">\(\rho\text{,}\)</span> and set up and evaluate the integral representing the work required to pump the liquid out of the top of the tank.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="ex-OtherApplications-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="ex-OtherApplications-4-2-1-1">A square-based tank that is 2 meters tall with a 0.5 m <span class="process-math">\(\times\)</span> 0.5 m base, full of liquid.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.a"><a tabindex="-1" href="#ex-OtherApplications-4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-OtherApplications-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="ex-OtherApplications-4-3-1-1">A cylindrical tank where the base has a radius of 1 m and the height is 3 m, half-full of liquid.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.b"><a tabindex="-1" href="#ex-OtherApplications-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-OtherApplications-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="ex-OtherApplications-4-4-1-1">A frustum-shaped tank where the bottom radius is 4 m, the top radius is 1 m, the height is 2 m, and the tank is filled to a height of <span class="process-math">\(\frac{2}{3}\)</span> m.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.c"><a tabindex="-1" href="#ex-OtherApplications-4-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 4"><a tabindex="-1" href="#ex-OtherApplications-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Practice Problems"><a tabindex="-1" href="#ex-OtherApplications" title="Copy heading and permalink for Practice Problems" aria-label="Copy heading and permalink for Practice Problems">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 6.6: Other Applications of Integrals"><a tabindex="-1" href="#sec-OtherApplications" title="Copy heading and permalink for Section 6.6: Other Applications of Integrals" aria-label="Copy heading and permalink for Section 6.6: Other Applications of Integrals">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-ArcLengthSurfaceArea.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-AntidifferentiationTechniques.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

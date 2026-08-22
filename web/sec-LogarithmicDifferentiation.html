@@ -19,68 +19,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js/lib"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
+<meta name="twitter:image" content="https://www.discovercalculus.com/web/external/cover/DC-front.png">
 <meta property="og:image" content="https://www.discovercalculus.com/web/external/cover/DC-front.png">
+<meta name="twitter:image:alt" content="Document Logo">
+<meta property="og:image:alt" content="Document Logo">
+<meta name="twitter:title" content="Discover Calculus">
+<meta property="og:title" content="Discover Calculus">
 <meta property="book:title" content="Discover Calculus">
-<meta property="book:author" content="Peter Keep">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta name="twitter:description" content="Single-Variable Calculus Topics with Motivating Activities">
+<meta property="og:description" content="Single-Variable Calculus Topics with Motivating Activities">
+<meta name="twitter:card" content="summary_large_image">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.49"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.49"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,39 +62,66 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.5';
+eBookConfig.runestone_version = '8.2.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.18d8728f6d56e11d.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
-<link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
+<script src="_static/prefix-runtime.7d3f08d51c2b60f8.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href="https://www.discovercalculus.com"><img src="external/cover/DC-front.png" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="DiscoverCalculus.html"><span class="title">Discover Calculus</span> <span class="subtitle">Single-Variable Calculus Topics with Motivating Activities</span></a></h1>
+<div class="heading ptx-banner-heading"><a href="DiscoverCalculus.html"><span class="title">Discover Calculus</span> <span class="subtitle">Single-Variable Calculus Topics with Motivating Activities</span></a></div>
 <p class="byline">Peter Keep</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
-<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<div class="search-results-controls">
-<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
-<h2 class="search-results-heading">Search Results: </h2>
-<div id="searchempty" class="searchempty"><span>No results.</span></div>
-<ol id="searchresults" class="searchresults"></ol>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
+<span class="nav-other-controls"><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-DerivativesInverse.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-ImplicitDifferentiation.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-ApplicationsDerivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec-DerivativesInverse.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-ImplicitDifferentiation.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-ApplicationsDerivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
 \newcommand{\ddx}[1]{\frac{d}{dx}\left(#1\right)}
 \newcommand{\Ddx}[1]{\dfrac{d}{dx}\left(#1\right)}
@@ -152,10 +139,10 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-frontmatter" class="structural toc-item-list">
 <li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
 <li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="acknowledements.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="Preface-NoteOnAI.html" class="internal"><span class="title">Disclosure about the Use of AI</span></a></div></li>
@@ -165,10 +152,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Limits.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-Limits" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-Limits-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DefinitionOfLimits.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Definition of the Limit</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-DefinitionOfLimits" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-DefiningALimit" class="internal"><span class="title">Defining a Limit</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#subsec-ApproximatingLimits" class="internal"><span class="title">Approximating Limits Using Our New Definition</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DefinitionOfLimits.html#ex-DefinitionOfLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -176,7 +164,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-EvaluatingLimits.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Evaluating Limits</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-EvaluatingLimits" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-AddingPrecisionToEstimations" class="internal"><span class="title">Adding Precision to Our Estimations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#subsec-LimitProperties" class="internal"><span class="title">Limit Properties</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-EvaluatingLimits.html#ex-EvaluatingLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -184,7 +172,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IndeterminateForms.html" class="internal"><span class="codenumber">1.3</span> <span class="title">First Indeterminate Forms</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IndeterminateForms" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-FirstIndeterminateForms" class="internal"><span class="title">A First Introduction to Indeterminate Forms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#subsec-WhatIfIndeterminateForms" class="internal"><span class="title">What if There Is No Algebra Trick?</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IndeterminateForms.html#exercises-" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -192,7 +180,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Limits Involving Infinity</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-LimitsInvolvingInfinity" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-InfiniteLimits" class="internal"><span class="title">Infinite Limits</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#subsec-EndBehaviorLimits" class="internal"><span class="title">End Behavior Limits</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LimitsInvolvingInfinity.html#ex-LimitsInvolvingInfinity" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -200,7 +188,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-SqueezeTheorem.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Squeeze Theorem</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-SqueezeTheorem" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-WeirdFunctionsWeirdBehavior" class="internal"><span class="title">Weird Functions, Weird Behavior</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#subsec-SqueezeTheorem" class="internal"><span class="title">Squeeze Theorem</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-SqueezeTheorem.html#ex-SqueezeTheorem" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -208,7 +196,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Continuity.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Continuity and the Intermediate Value Theorem</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-Continuity" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-ContinuityAsConnectedness" class="internal"><span class="title">Continuity as Connectedness</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-DefiningContinuity" class="internal"><span class="title">Defining Continuity</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Continuity.html#subsec-Discontinuities" class="internal"><span class="title">Discontinuities</span></a></div></li>
@@ -218,7 +206,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="explore-Limits.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Exploration: Limits</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-explore-Limits" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Limits.html#subsec-PreciseLimits" class="internal"><span class="title">Precise Definition of Limits</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="explore-Limits.html#ex-PreciseLimits" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
@@ -227,10 +215,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Derivatives.html" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-Derivatives" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-Derivatives-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntroDerivatives.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Derivatives</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IntroDerivatives" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-DefiningDerivative" class="internal"><span class="title">Defining the Derivative</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#subsec-ManySlopes" class="internal"><span class="title">Calculating a Bunch of Slopes at Once</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IntroDerivatives.html#ex-IntroDerivatives" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -238,7 +227,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-InterpretingDerivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Interpreting Derivatives</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-InterpretingDerivatives" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsSlope" class="internal"><span class="title">The Derivative is a Slope</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsChange" class="internal"><span class="title">The Derivative is a Rate of Change</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-InterpretingDerivatives.html#subsec-DerivativeIsLimit" class="internal"><span class="title">The Derivative is a Limit</span></a></div></li>
@@ -249,7 +238,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DerivativeRules.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Some Early Derivative Rules</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-DerivativeRules" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfPowerFunctions" class="internal"><span class="title">Derivatives of Power Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativesOfTrigExpFunctions" class="internal"><span class="title">Derivatives of Trigonometric and Exponential Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativeRules.html#subsec-DerivativeProperties" class="internal"><span class="title">Some Properties of Derivatives in General</span></a></div></li>
@@ -258,7 +247,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ProductQuotientRule.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Product and Quotient Rules</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ProductQuotientRule" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-ProductRule" class="internal"><span class="title">The Product Rule</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-QuotientRule" class="internal"><span class="title">What about Dividing?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProductQuotientRule.html#subsec-MoreTrigDerivatives" class="internal"><span class="title">Derivatives of (the Rest of the) Trigonometric Functions</span></a></div></li>
@@ -267,7 +256,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ChainRule.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The Chain Rule</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ChainRule" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-CompositionDecomposition" class="internal"><span class="title">Composition and Decomposition</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-ChainRule" class="internal"><span class="title">The Chain Rule, Intuitively</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ChainRule.html#subsec-DoingChainRule" class="internal"><span class="title">Doing is Different than Knowing</span></a></div></li>
@@ -279,10 +268,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-ImplicitDifferentiation.html" class="internal"><span class="codenumber">3</span> <span class="title">Implicit Differentiation</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-ch-ImplicitDifferentiation">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-ImplicitDifferentiation-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Implicit Differentiation</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ImplicitDifferentiation" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-ExplicitImplicit" class="internal"><span class="title">Explicit vs. Implicit Definitions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-DerivativeOperator" class="internal"><span class="title">Using a Derivative as an Operator</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImplicitDifferentiation.html#subsec-SummaryAndStrategy" class="internal"><span class="title">Some Summary and Strategy</span></a></div></li>
@@ -292,7 +282,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DerivativesInverse.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Derivatives of Inverse Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-DerivativesInverse" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativesInverse.html#subsec-WieldingImplicitDifferentiation" class="internal"><span class="title">Wielding Implicit Differentiation</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DerivativesInverse.html#subsec-InverseTrigDerivatives" class="internal"><span class="title">Derivatives of the Inverse Trigonometric Functions</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DerivativesInverse.html#ex-DerivativesInverse" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -300,7 +290,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Logarithmic Differentiation</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec-LogarithmicDifferentiation">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#subsec-LogsAreFriends" class="internal"><span class="title">Logs Are Friends!</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#subsec-WowSoFriendly" class="internal"><span class="title">Wow, So Friendly!</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LogarithmicDifferentiation.html#ex-LogarithmicDifferentiation" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -310,10 +300,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-ApplicationsDerivatives.html" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Derivatives</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-ApplicationsDerivatives" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-ApplicationsDerivatives-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-MeanValueTheorem.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Mean Value Theorem</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-MeanValueTheorem" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-Slopes" class="internal"><span class="title">Slopes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-MVT" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MeanValueTheorem.html#subsec-ResultsFromMVT" class="internal"><span class="title">More Results due to the Mean Value Theorem</span></a></div></li>
@@ -322,7 +313,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IncreasingDecreasing.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Increasing and Decreasing Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IncreasingDecreasing" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-CriticalPointsLocalMaxMins" class="internal"><span class="title">Critical Points, Local Maximums, and Local Minimums</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-FindingDirection" class="internal"><span class="title">Direction of a Function (and Where it Changes)</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IncreasingDecreasing.html#subsec-FDTGraphically" class="internal"><span class="title">Using the Graph of the First Derivative</span></a></div></li>
@@ -332,7 +323,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Concavity.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Concavity</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-Concavity" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Concavity.html#subsec-DefiningCurvature" class="internal"><span class="title">Defining the Curvature of a Curve</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Concavity.html#subsec-ConcavityAtCriticalPoints" class="internal"><span class="title">Interpreting the Concavity at Critical Points</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Concavity.html#ex-Concavity" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -340,7 +331,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-GlobalMaxMins.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Global Maximums and Minimums</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-GlobalMaxMins" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html#subsec-BothMaxMins" class="internal"><span class="title">When Do We Guarantee Both a Global Maximum and a Global Minimum?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html#subsec-WhatAboutOpenIntervals" class="internal"><span class="title">What about Domains of Functions that Aren’t Closed?</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-GlobalMaxMins.html#ex-GlobalMaxMins" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -348,7 +339,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Optimization.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Optimization</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-Optimization" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Optimization.html#subsec-OptimizationFramework" class="internal"><span class="title">Optimization Framework</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Optimization.html#subsec-VolumeAndSurfaceArea" class="internal"><span class="title">Balancing Volume and Surface Area</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Optimization.html#subsec-MoreOptimizationExamples" class="internal"><span class="title">What Other Examples Can We Do?</span></a></div></li>
@@ -357,7 +348,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-LinearApproximation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Linear Approximations</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-LinearApproximation" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LinearApproximation.html#subsec-LinearApproximation" class="internal"><span class="title">Linearly Approximating a Function</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LinearApproximation.html#subsec-ApproximatingZeros" class="internal"><span class="title">Approximating Zeros of a Function</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-LinearApproximation.html#ex-LinearApproximation" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -365,12 +356,12 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-LHopitalsRule.html" class="internal"><span class="codenumber">4.7</span> <span class="title">L’Hôpital’s Rule</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-LHopitalsRule" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsec-IndeterminateForms" class="internal"><span class="title">Indeterminate Forms</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsec-LHopitalsRule" class="internal"><span class="title">L’Hôpital’s Rule</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsec-ForcingDivision" class="internal"><span class="title">Forcing Division</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-subsec-ForcingDivision" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsubsec-Products" class="internal"><span class="title">Products!</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsubsec-Differences" class="internal"><span class="title">Differences!</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-LHopitalsRule.html#subsubsec-Exponentials" class="internal"><span class="title">Exponentials!</span></a></div></li>
@@ -384,10 +375,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-AntiderivativesIntegrals.html" class="internal"><span class="codenumber">5</span> <span class="title">Antiderivatives and Integrals</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-AntiderivativesIntegrals" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-AntiderivativesIntegrals-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Antiderivatives and Indefinite Integrals</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IndefiniteIntegrals" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-Antiderivatives" class="internal"><span class="title">Antiderivatives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-InitialValueProblems" class="internal"><span class="title">Initial Value Problems</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IndefiniteIntegrals.html#subsec-IndefiniteIntegrals" class="internal"><span class="title">Indefinite Integrals</span></a></div></li>
@@ -396,7 +388,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-RiemannSums.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Riemann Sums and Area Approximations</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-RiemannSums" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RiemannSums.html#subsec-RectangularApproximations" class="internal"><span class="title">Rectangular Approximations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RiemannSums.html#subsec-SelectionStrategy" class="internal"><span class="title">Selection Strategies</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-RiemannSums.html#ex-RiemannSums" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -404,7 +396,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DefiniteIntegral.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Definite Integral</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-DefiniteIntegral" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#subsec-EvaluatingAreas" class="internal"><span class="title">Evaluating Areas (Instead of Approximating Them)</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#subsec-SignedArea" class="internal"><span class="title">Signed Area</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DefiniteIntegral.html#subsec-PropertiesOfDefiniteIntegrals" class="internal"><span class="title">Properties of Definite Integrals</span></a></div></li>
@@ -413,7 +405,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-FTOC.html" class="internal"><span class="codenumber">5.4</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-FTOC" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FTOC.html#subsec-AreasAndAntierivatives" class="internal"><span class="title">Areas and Antiderivatives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FTOC.html#subsec-EvaluatingIntegrals" class="internal"><span class="title">Evaluating Definite Integrals</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-FTOC.html#ex-FTOC" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -421,7 +413,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html" class="internal"><span class="codenumber">5.5</span> <span class="title">More Results about Definite Integrals</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-MoreDefiniteIntegral" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html#subsec-Symmetry" class="internal"><span class="title">Symmetry</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html#subsec-AverageValue" class="internal"><span class="title">Average Value of a Function</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-MoreDefiniteIntegral.html#ex-MoreDefiniteIntegrals" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -429,11 +421,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-uSubstitution.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Introduction to <span class="process-math">\(u\)</span>-Substitution</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-uSubstitution" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-UndoChainRule" class="internal"><span class="title">Undoing the Chain Rule</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-uSubstitution.html#subsec-uSubDefiniteIntegrals" class="internal"><span class="title">Substitution for Definite Integrals</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-subsec-uSubDefiniteIntegrals" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsubsec-uSubDefinite1" class="internal"><span class="title">Antidifferentiate, then Evaluate</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-uSubstitution.html#subsubsec-SubstituteLimits" class="internal"><span class="title">A More Wholistic Substitution</span></a></div></li>
 </ul>
@@ -446,10 +438,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-ApplicationsIntegrals.html" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integrals</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-ApplicationsIntegrals" class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-NetChange.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Integrals as Net Change</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-NetChange" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NetChange.html#subsec-EstimatingMovement" class="internal"><span class="title">Estimating Movement</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NetChange.html#subsec-position-velocity-acceleration" class="internal"><span class="title">Position, Velocity, and Acceleration</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NetChange.html#subsec-displacement-distance-speed" class="internal"><span class="title">Displacement, Distance, and Speed</span></a></div></li>
@@ -459,7 +451,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-AreaBetweenCurves.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Area Between Curves</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-AreaBetweenCurves" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AreaBetweenCurves.html#subsec-RememberingRiemannSums" class="internal"><span class="title">Remembering Riemann Sums</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AreaBetweenCurves.html#subsec-AreaBetweenCurves" class="internal"><span class="title">Building an Integral Formula for the Area Between Curves</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AreaBetweenCurves.html#subsec-ChangingPerspective" class="internal"><span class="title">Changing Perspective</span></a></div></li>
@@ -468,7 +460,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-VolumesOfRevolution.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Volumes of Solids of Revolution</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-VolumesOfRevolution" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-FromAreaToVolume" class="internal"><span class="title">From Area To Volume</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-SolidsOfRevolution" class="internal"><span class="title">Solids of Revolution</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VolumesOfRevolution.html#subsec-Re-OrientingRectangles" class="internal"><span class="title">Reorienting our Rectangles</span></a></div></li>
@@ -477,7 +469,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-MoreVolumes.html" class="internal"><span class="codenumber">6.4</span> <span class="title">More Volumes: Shifting the Axis of Revolution</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-MoreVolumes" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreVolumes.html#subsec-WhatChanges" class="internal"><span class="title">What Changes?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreVolumes.html#subsec-FormalizingTheChanges" class="internal"><span class="title">Formalizing These Changes in the Washers and Shells</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-MoreVolumes.html#ex-MoreVolumes" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -485,7 +477,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Arc Length and Surface Area</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ArcLengthSurfaceArea" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#subsec-ArcLength" class="internal"><span class="title">Integrals for Evaluating the Length of a Curve</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#subsec-SurfaceArea" class="internal"><span class="title">Integrals for Evaluating the Surface Area of a Solid</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ArcLengthSurfaceArea.html#ex-ArcLengthSurfaceArea" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -493,11 +485,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-OtherApplications.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Other Applications of Integrals</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-OtherApplications" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Mass" class="internal"><span class="title">Physics Application: Mass</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-OtherApplications.html#subsec-Work" class="internal"><span class="title">Physics Application: Work</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-subsec-Work" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Springs" class="internal"><span class="title">Work: Springs</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-OtherApplications.html#subsubsec-Pumping" class="internal"><span class="title">Work: Pumping Problems</span></a></div></li>
 </ul>
@@ -509,10 +501,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-AntidifferentiationTechniques.html" class="internal"><span class="codenumber">7</span> <span class="title">Techniques for Antidifferentiation</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-AntidifferentiationTechniques" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-AntidifferentiationTechniques-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ImproperIntegrals.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Improper Integrals</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ImproperIntegrals" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#subsec-ImproperIntegrals" class="internal"><span class="title">Improper Integrals</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#subsec-ImproperIntegralStrategies" class="internal"><span class="title">Strategies for Evaluating Improper Integrals</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ImproperIntegrals.html#subsec-IntegralConvergence" class="internal"><span class="title">Convergence and Divergence of an Improper Integral</span></a></div></li>
@@ -521,14 +514,14 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-MoreuSubstitution.html" class="internal"><span class="codenumber">7.2</span> <span class="title">More on <span class="process-math">\(u\)</span>-Substitution</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-MoreuSubstitution" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MoreuSubstitution.html#subsec-VariableSubstitution" class="internal"><span class="title">Variable Substitution in Integrals</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-MoreuSubstitution.html#ex-MoreuSubstitution" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-AlgebraicManipulations.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Manipulating Integrands</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-AlgebraicManipulations" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-Rewriting" class="internal"><span class="title">Rewriting the Integrand</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#subsec-RationalFunctions" class="internal"><span class="title">Antidifferentiating Rational Functions</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-AlgebraicManipulations.html#ex-AlgebraicManipulations" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -536,7 +529,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntegrationByParts.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Integration By Parts</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IntegrationByParts" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-DiscoveringIntegrationByParts" class="internal"><span class="title">Discovering the Integration by Parts Formula</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-PickingParts" class="internal"><span class="title">Intuition for Selecting the Parts</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegrationByParts.html#subsec-FlexibleChoices" class="internal"><span class="title">Some Flexible Choices for Parts</span></a></div></li>
@@ -546,7 +539,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PowersOfTrig.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Integrating Powers of Trigonometric Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-PowersOfTrig" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#subsec-StrategySinesCosines" class="internal"><span class="title">Building a Strategy for Powers of Sines and Cosines</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#subsec-StrategySecantsTangents" class="internal"><span class="title">Building a Strategy for Powers of Secants and Tangents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PowersOfTrig.html#ex-PowersOfTrig" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -554,19 +547,19 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-TrigSub.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Trigonometric Substitution</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-TrigSub" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-TrigSub.html#subsec-AnotherVariableSubstitution" class="internal"><span class="title">Another Type of Variable Substitution</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-TrigSub.html#ex-TrigSub" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PartialFractions.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Partial Fractions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-PartialFractions" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-WhenPartialFractions" class="internal"><span class="title">When?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-HowPartialFractions" class="internal"><span class="title">How?</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-PartialFractions.html#subsec-SpecificStrategies" class="internal"><span class="title">More Specific Strategies</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-subsec-SpecificStrategies" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsubsec-SimpleLinear" class="internal"><span class="title">Partial Fraction Type: Simple Linear Factors</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsubsec-IrreducibleQuadratics" class="internal"><span class="title">Partial Fraction Type: Irreducible Quadratic Factors</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PartialFractions.html#subsubsec-RepeatedLinear" class="internal"><span class="title">Partial Fraction Type: Repeated Linear Factors</span></a></div></li>
@@ -579,10 +572,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-InfiniteSeries.html" class="internal"><span class="codenumber">8</span> <span class="title">Infinite Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-InfiniteSeries" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-InfiniteSeries-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntroSequences.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Introduction to Infinite Sequences</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IntroSequences" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-SequencesAsFunctions" class="internal"><span class="title">Sequences as Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-GraphingSequences" class="internal"><span class="title">Graphing Sequences</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-SequenceTerminology" class="internal"><span class="title">Sequence Terminology</span></a></div></li>
@@ -592,7 +586,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntroSeries.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Introduction to Infinite Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IntroSeries" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSeries.html#subsec-PartialSums" class="internal"><span class="title">Partial Sums</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSeries.html#subsec-VisualizingPartialSums" class="internal"><span class="title">Visualizing the Sequence of Partial Sums</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSeries.html#subsec-SpecialSeries" class="internal"><span class="title">Special Series</span></a></div></li>
@@ -601,7 +595,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-DivergenceTest.html" class="internal"><span class="codenumber">8.3</span> <span class="title">The Divergence Test and the Harmonic Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-DivergenceTest" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-RelationshipSeqSeries" class="internal"><span class="title">The Relationship Between a Sequence and Series</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-DivergenceTest" class="internal"><span class="title">The Divergence Test</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-GrowthRates" class="internal"><span class="title">Squeeze Theorem and Growth Rates</span></a></div></li>
@@ -610,7 +604,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-IntegralTest.html" class="internal"><span class="codenumber">8.4</span> <span class="title">The Integral Test</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-IntegralTest" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-SeriesAsIntegrals" class="internal"><span class="title">Infinite Series As a Kind of Integral</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-IntegralTest" class="internal"><span class="title">The Integral Test</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntegralTest.html#subsec-WhyConditions" class="internal"><span class="title">Why Do We Need These Conditions?</span></a></div></li>
@@ -619,7 +613,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-AlternatingSeries.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Alternating Series and Conditional Convergence</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-AlternatingSeries" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlternatingSeries.html#subsec-AlternatingSeries" class="internal"><span class="title">Defining Alternating Series, and the Main Result</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AlternatingSeries.html#subsec-ConditionalConvergence" class="internal"><span class="title">Convergence, More Carefully</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-AlternatingSeries.html#ex-AlternatingSeries" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -627,7 +621,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-CommonSeries.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Common Series Types</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-CommonSeries" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CommonSeries.html#subsec-GeometricSeries" class="internal"><span class="title">Geometric Series</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CommonSeries.html#subsec-pSeries" class="internal"><span class="title"><span class="process-math">\(p\)</span>-Series</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CommonSeries.html#subsec-RecappingObjects" class="internal"><span class="title">Recapping Our Mathematical Objects</span></a></div></li>
@@ -636,7 +630,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ComparisonTests.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Comparison Tests</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ComparisonTests" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ComparisonTests.html#subsec-ComparingPartialSums" class="internal"><span class="title">Comparing Partial Sums</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ComparisonTests.html#subsec-UnhelpfulComparisons" class="internal"><span class="title">(Un)Helpful Comparisons</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ComparisonTests.html#subsec-LimitComparison" class="internal"><span class="title">Limit Comparison</span></a></div></li>
@@ -645,7 +639,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-RatioRootTests.html" class="internal"><span class="codenumber">8.8</span> <span class="title">The Ratio and Root Tests</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-RatioRootTests" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RatioRootTests.html#subsec-EventuallyGeometricish" class="internal"><span class="title">Eventually Geometric-ish</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-RatioRootTests.html#subsec-InconclusiveRatioRoot" class="internal"><span class="title">Inconclusive Results</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-RatioRootTests.html#ex-RatioRootTests" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -653,16 +647,17 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="explore-Series.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Exploration: Infinite Series</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Series.html#subsec-InterestingSeries" class="internal"><span class="title">Interesting Infinite Series</span></a></div></li></ul>
+<ul id="ptx-toc-group-explore-Series" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-Series.html#subsec-InterestingSeries" class="internal"><span class="title">Interesting Infinite Series</span></a></div></li></ul>
 </li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-PowerSeries.html" class="internal"><span class="codenumber">9</span> <span class="title">Power Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-PowerSeries" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-PowerSeries-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PolynomialApproximation.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Polynomial Approximations of Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-PolynomialApproximation" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#subsec-WhatDoWeWant" class="internal"><span class="title">What Do We Want From a Polynomial Approximation?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#subsec-HowDoWeBuild" class="internal"><span class="title">How Do We Build a Polynomial Approximation?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolynomialApproximation.html#subsec-AreThesePartialSums" class="internal"><span class="title">Are These Partial Sums?</span></a></div></li>
@@ -671,7 +666,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Power Series Convergence</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-PowerSeriesConvergence" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html#subsec-IntervalOfConvergence" class="internal"><span class="title">Interval of Convergence</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html#subsec-OperationsPowerSeries" class="internal"><span class="title">Operations on Power Series</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-PowerSeriesConvergence.html#ex-PowerSeriesConvergence" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -679,7 +674,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html" class="internal"><span class="codenumber">9.3</span> <span class="title">How to Build Taylor Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-BuildingTaylorSeries" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#subsec-Directly" class="internal"><span class="title">Constructing Directly</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#subsec-ConnectionsToOther" class="internal"><span class="title">Connections To Other Taylor Series</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-BuildingTaylorSeries.html#ex-BuildingTaylorSeries" class="internal"><span class="title">Practice Problems</span></a></div></li>
@@ -687,12 +682,12 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html" class="internal"><span class="codenumber">9.4</span> <span class="title">How to Use Taylor Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ApplyingTaylorSeries" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-Approximations" class="internal"><span class="title">Approximations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-Integrals" class="internal"><span class="title">Integrals</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-EulersFormula" class="internal"><span class="title">Euler’s Formula</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-subsec-EulersFormula" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsec-ComplexAnalysis" class="internal"><span class="title">Complex Analysis</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ApplyingTaylorSeries.html#subsubsec-TrigIdentities" class="internal"><span class="title">Trigonometric Identities</span></a></div></li>
 </ul>
@@ -702,7 +697,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="explore-PowerSeries.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Exploration: Power Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-explore-PowerSeries" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-PowerSeries.html#subsec-BaselProblem" class="internal"><span class="title">The Basel Problem</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="explore-PowerSeries.html#subsec-NormalDistribution" class="internal"><span class="title">The Normal Distribution</span></a></div></li>
 </ul>
@@ -711,10 +706,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-ParametricPolar.html" class="internal"><span class="codenumber">10</span> <span class="title">Parametric and Polar Curves</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-ParametricPolar" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-ParametricPolar-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ParametricCurves.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Parametric Curves</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ParametricCurves" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCurves.html#subsec-ParametricWhatIf" class="internal"><span class="title">What If...?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCurves.html#subsec-ExploringParametricCurves" class="internal"><span class="title">Exploring Parametric Curves</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCurves.html#subsec-MoreCurves" class="internal"><span class="title">More Parametric Curves</span></a></div></li>
@@ -724,7 +720,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PolarCurves.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Polar Curves</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-PolarCurves" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolarCurves.html#subsec-PolarWhatIf" class="internal"><span class="title">What If...?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolarCurves.html#subsec-ExploringPolarCoordinates" class="internal"><span class="title">Exploring Polar Coordinates</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolarCurves.html#subsec-ConvertingCoordinateSystems" class="internal"><span class="title">Converting Between Coordinate Systems</span></a></div></li>
@@ -733,7 +729,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-ParametricCalculus.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Calculus with Parametric Curves</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-ParametricCalculus" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#subsec-Cycloid" class="internal"><span class="title">The Cycloid</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#subsec-ParametricSlopes" class="internal"><span class="title">Slopes of Tangent Lines</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#subsec-ParametricAreas" class="internal"><span class="title">Areas Bounded by Curves</span></a></div></li>
@@ -742,7 +738,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-PolarCalculus.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Calculus with Polar Curves</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-PolarCalculus" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolarCalculus.html#subsec-PolarSlopes" class="internal"><span class="title">Slopes of Tangent Lines</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolarCalculus.html#subsec-PolarArcLengths" class="internal"><span class="title">Arc Lengths</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PolarCalculus.html#subsec-PolarAreas" class="internal"><span class="title">Areas Bounded by Curves</span></a></div></li>
@@ -752,163 +748,199 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="app-CarnationLetter.html" class="internal"><span class="codenumber">A</span> <span class="title">Carnation Letter</span></a></div></li>
+<ul id="ptx-toc-group-backmatter" class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="app-CarnationLetter.html" class="internal"><span class="codenumber">A.</span> <span class="title">Carnation Letter</span></a></div></li>
 <li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-LogarithmicDifferentiation"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.3</span><span class="space"> </span><span class="title">Logarithmic Differentiation</span>
-</h2>
-<section class="introduction" id="sec-LogarithmicDifferentiation-2"><div class="para" id="sec-LogarithmicDifferentiation-2-1">We’re going to start with a quick fact about logs and their derivatives. The derivative rule for <span class="process-math">\(\ddx{\ln(x)}\)</span> is still relatively new for us, so it is ok to still be getting comfortable with it, but we should notice this nice fact.<div class="autopermalink" data-description="Paragraph"><a href="#sec-LogarithmicDifferentiation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-LogarithmicDifferentiation">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Logarithmic Differentiation</span>
+</h1>
+<section class="introduction" id="sec-LogarithmicDifferentiation-2">
+<div class="para" id="sec-LogarithmicDifferentiation-2-1">We’re going to start with a quick fact about logs and their derivatives. The derivative rule for <span class="process-math">\(\ddx{\ln(x)}\)</span> is still relatively new for us, so it is ok to still be getting comfortable with it, but we should notice this nice fact.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-LogarithmicDifferentiation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="fact theorem-like" id="fact-ChainRuleLog"><h3 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Derivative of the Log of a Function.</span>
-</h3>
+<article class="fact theorem-like" id="fact-ChainRuleLog"><h2 class="heading">
+<span class="type">Fact</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivative of the Log of a Function.</span>
+</h2>
 <div class="para logical" id="fact-ChainRuleLog-2-1">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-ChainRule.html ./knowl/xref/thm-DerivativeLog.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-ChainRule.html ./knowl/xref/thm-DerivativeLog.html" id="fact-ChainRuleLog-2-1-1">
 \begin{equation*}
 \ddx{\ln(f(x))} = \frac{f'(x)}{f(x)} \;\;(\text{when } f(x)\gt 0)
 \end{equation*}
 </div>
-<div class="para">Note that there’s nothing really special going on here: this is just an application of <a href="sec-ChainRule.html#thm-ChainRule" class="xref" data-knowl="./knowl/xref/thm-ChainRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.5.1: The Chain Rule">The Chain Rule</a> to the <a href="sec-DerivativesInverse.html#thm-DerivativeLog" class="xref" data-knowl="./knowl/xref/thm-DerivativeLog.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 3.2.1: Derivative of the Logarithmic Function">Derivative of the Logarithmic Function</a>.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#fact-ChainRuleLog-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">Note that there’s nothing really special going on here: this is just an application of <a href="sec-ChainRule.html#thm-ChainRule" class="xref" data-knowl="./knowl/xref/thm-ChainRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.5.3: The Chain Rule">The Chain Rule</a> to the <a href="sec-DerivativesInverse.html#thm-DerivativeLog" class="xref" data-knowl="./knowl/xref/thm-DerivativeLog.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 3.2.2: Derivative of the Logarithmic Function">Derivative of the Logarithmic Function</a>.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fact-ChainRuleLog-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Fact 3.3.1: Derivative of the Log of a Function"><a href="#fact-ChainRuleLog" title="Copy heading and permalink for Fact 3.3.1: Derivative of the Log of a Function" aria-label="Copy heading and permalink for Fact 3.3.1: Derivative of the Log of a Function">🔗</a></div></article><div class="para" id="sec-LogarithmicDifferentiation-2-3">Throughout this section, the goal is to convince any open-minded readers of one thing:<div class="autopermalink" data-description="Paragraph"><a href="#sec-LogarithmicDifferentiation-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Fact 3.3.1: Derivative of the Log of a Function"><a tabindex="-1" href="#fact-ChainRuleLog" title="Copy heading and permalink for Fact 3.3.1: Derivative of the Log of a Function" aria-label="Copy heading and permalink for Fact 3.3.1: Derivative of the Log of a Function">🔗</a></div>
+</article>
+<div class="para" id="sec-LogarithmicDifferentiation-2-3">Throughout this section, the goal is to convince any open-minded readers of one thing:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-LogarithmicDifferentiation-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-LogarithmicDifferentiation-2-4">
-<em class="emphasis">Logs are friends.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-LogarithmicDifferentiation-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Logs are friends.</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-LogarithmicDifferentiation-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-LogarithmicDifferentiation-2-5">Let us be informal and technically not quite correct but hopefully clear in this. Logs really are friendly mathematical objects. They were <em class="emphasis">created</em> to be friendly objects! In a time when doing arithmetic with large numbers was difficult due to a lack of computing technology, logs were introduced to make arithmetic easier.<div class="autopermalink" data-description="Paragraph"><a href="#sec-LogarithmicDifferentiation-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-LogarithmicDifferentiation-2-5">Let us be informal and technically not quite correct but hopefully clear in this. Logs really are friendly mathematical objects. They were <em class="emphasis">created</em> to be friendly objects! In a time when doing arithmetic with large numbers was difficult due to a lack of computing technology, logs were introduced to make arithmetic easier.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-LogarithmicDifferentiation-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-LogarithmicDifferentiation-2-6">The general idea is that, if there is some kind of hierarchy of operations, then logs transform operations between things into different operations that are lower on the hierarchy of operations. So logs turn things like products (repeated addition) and quotients (repeated subtraction) into addition and subtraction. Logs turn exponents (repeated multiplication) into coefficients.<div class="autopermalink" data-description="Paragraph"><a href="#sec-LogarithmicDifferentiation-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-LogarithmicDifferentiation-2-6">The general idea is that, if there is some kind of hierarchy of operations, then logs transform operations between things into different operations that are lower on the hierarchy of operations. So logs turn things like products (repeated addition) and quotients (repeated subtraction) into addition and subtraction. Logs turn exponents (repeated multiplication) into coefficients.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-LogarithmicDifferentiation-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-LogarithmicDifferentiation-2-7">Using math notation, we can write the following log properties.<div class="autopermalink" data-description="Paragraph"><a href="#sec-LogarithmicDifferentiation-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-LogarithmicDifferentiation-2-7">Using math notation, we can write the following log properties.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-LogarithmicDifferentiation-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="fact theorem-like" id="fact-LogProperties"><h3 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of Logarithms.</span>
-</h3>
+<article class="fact theorem-like" id="fact-LogProperties"><h2 class="heading">
+<span class="type">Fact</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Properties of Logarithms.</span>
+</h2>
 <div class="para logical" id="fact-LogProperties-2-1">
 <div class="para">We will make use of the following properties of logarithms.</div>
 <ul class="disc" id="fact-LogProperties-2-1-1">
 <li id="fact-LogProperties-2-1-1-1">
 <div class="para" id="fact-LogProperties-2-1-1-1-1">
-<span class="process-math">\(\displaystyle \ln(xy) = \ln(x)+\ln(y)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#fact-LogProperties-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \ln(xy) = \ln(x)+\ln(y)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fact-LogProperties-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#fact-LogProperties-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#fact-LogProperties-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="fact-LogProperties-2-1-1-2">
 <div class="para" id="fact-LogProperties-2-1-1-2-1">
-<span class="process-math">\(\displaystyle \ln\left(\frac{x}{y}\right) = \ln(x)-\ln(y)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#fact-LogProperties-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \ln\left(\frac{x}{y}\right) = \ln(x)-\ln(y)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fact-LogProperties-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#fact-LogProperties-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#fact-LogProperties-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="fact-LogProperties-2-1-1-3">
 <div class="para" id="fact-LogProperties-2-1-1-3-1">
-<span class="process-math">\(\displaystyle \ln(x^y) = y\ln(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#fact-LogProperties-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \ln(x^y) = y\ln(x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fact-LogProperties-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#fact-LogProperties-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#fact-LogProperties-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">Because of the domain of the log function, we need <span class="process-math">\(x,y\gt 0\)</span> for these properties to make sense. We will use them relatively loosely, with functions that take on negative and positive values, and not worry too much about the domain issues when we don’t need to.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#fact-LogProperties-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fact-LogProperties-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Fact 3.3.2: Properties of Logarithms"><a href="#fact-LogProperties" title="Copy heading and permalink for Fact 3.3.2: Properties of Logarithms" aria-label="Copy heading and permalink for Fact 3.3.2: Properties of Logarithms">🔗</a></div></article></section><section class="subsection" id="subsec-LogsAreFriends"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Logs Are Friends!</span>
+<div class="autopermalink" aria-hidden="true" data-description="Fact 3.3.2: Properties of Logarithms"><a tabindex="-1" href="#fact-LogProperties" title="Copy heading and permalink for Fact 3.3.2: Properties of Logarithms" aria-label="Copy heading and permalink for Fact 3.3.2: Properties of Logarithms">🔗</a></div>
+</article></section>
+<section class="subsection" id="subsec-LogsAreFriends">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Logs Are Friends!</span>
+</h2>
+<div class="para" id="subsec-LogsAreFriends-2">Ok, so how will we use these new-found friends? We’re going to think about some functions (and combinations of functions) that are new to us and that aren’t so clear for us to use things like the Product, Quotient, or the Chain Rule. We’ll try to use logs to rewrite our functions into some easier to approach implicitly defined relationships in order for us to differentiate.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-LogsAreFriends-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LogsAreFriends-3">But first, let’s build an explanation for the <a href="sec-DerivativeRules.html#thm-PowerRuleDerivatives" class="xref" data-knowl="./knowl/xref/thm-PowerRuleDerivatives.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.3.4: Power Rule for Derivatives">Power Rule for Derivatives</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-LogsAreFriends-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-GeneralizedPowerRule"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Returning to the Power Rule.</span>
 </h3>
-<div class="para" id="subsec-LogsAreFriends-2">Ok, so how will we use these new-found friends? We’re going to think about some functions (and combinations of functions) that are new to us and that aren’t so clear for us to use things like the Product, Quotient, or the Chain Rule. We’ll try to use logs to rewrite our functions into some easier to approach implicitly defined relationships in order for us to differentiate.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LogsAreFriends-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-LogsAreFriends-3">But first, let’s build an explanation for the <a href="sec-DerivativeRules.html#thm-PowerRuleDerivatives" class="xref" data-knowl="./knowl/xref/thm-PowerRuleDerivatives.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.3.3: Power Rule for Derivatives">Power Rule for Derivatives</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LogsAreFriends-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<article class="activity project-like" id="act-GeneralizedPowerRule"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Returning to the Power Rule.</span>
-</h4>
 <div class="introduction" id="act-GeneralizedPowerRule-2">
-<div class="para" id="act-GeneralizedPowerRule-2-1">Back in <a href="sec-DerivativeRules.html" class="internal" title="Section 2.3: Some Early Derivative Rules">Section 2.3</a> we built an explanation for why <span class="process-math">\(\ddx{x^n}=nx^{n-1}\)</span> that relied on thinking about exponents as repeated multiplication: it relied on <span class="process-math">\(n\)</span> being some positive integer. We said, at the time, that the Power Rule generalizes and works for <em class="emphasis">any</em> integer, but did so without explanation.<div class="autopermalink" data-description="Paragraph"><a href="#act-GeneralizedPowerRule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-GeneralizedPowerRule-2-1">Back in <a href="sec-DerivativeRules.html" class="internal" title="Section 2.3: Some Early Derivative Rules">Section 2.3</a> we built an explanation for why <span class="process-math">\(\ddx{x^n}=nx^{n-1}\)</span> that relied on thinking about exponents as repeated multiplication: it relied on <span class="process-math">\(n\)</span> being some positive integer. We said, at the time, that the Power Rule generalizes and works for <em class="emphasis">any</em> integer, but did so without explanation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-GeneralizedPowerRule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="act-GeneralizedPowerRule-2-2">Let’s consider <span class="process-math">\(y=x^n\)</span> where <span class="process-math">\(n\)</span> is just some real number without any other restrictions.<div class="autopermalink" data-description="Paragraph"><a href="#act-GeneralizedPowerRule-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-GeneralizedPowerRule-2-2">Let’s consider <span class="process-math">\(y=x^n\)</span> where <span class="process-math">\(n\)</span> is just some real number without any other restrictions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-GeneralizedPowerRule-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="act-GeneralizedPowerRule-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<article class="task exercise-like" id="act-GeneralizedPowerRule-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical" id="act-GeneralizedPowerRule-3-1-1">
 <div class="para">Apply a logarithm to both sides of this equation:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fact-LogProperties.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fact-LogProperties.html" id="act-GeneralizedPowerRule-3-1-1-1">
 \begin{equation*}
 \ln(y) = \ln(x^n)
 \end{equation*}
 </div>
 <div class="para">Now use one of the <a href="sec-LogarithmicDifferentiation.html#fact-LogProperties" class="xref" data-knowl="./knowl/xref/fact-LogProperties.html" data-reveal-label="Reveal" data-close-label="Close" title="Fact 3.3.2: Properties of Logarithms">Properties of Logarithms</a> to rewrite this equation.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-GeneralizedPowerRule-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-GeneralizedPowerRule-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.3.1.a"><a href="#act-GeneralizedPowerRule-3" title="Copy heading and permalink for Task 3.3.1.a" aria-label="Copy heading and permalink for Task 3.3.1.a">🔗</a></div></article><article class="task exercise-like" id="act-GeneralizedPowerRule-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-GeneralizedPowerRule-4-1-1">Use implicit differentiation to find <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-GeneralizedPowerRule-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.3.a"><a tabindex="-1" href="#act-GeneralizedPowerRule-3" title="Copy heading and permalink for Task 3.3.3.a" aria-label="Copy heading and permalink for Task 3.3.3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="act-GeneralizedPowerRule-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="act-GeneralizedPowerRule-4-1-1">Use implicit differentiation to find <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-GeneralizedPowerRule-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="act-GeneralizedPowerRule-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-GeneralizedPowerRule-4-2-1">Remember that when you solve for <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{,}\)</span> you might have some <span class="process-math">\(y\)</span>-variables in your derivative. Replace them with <span class="process-math">\(y=x^n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-GeneralizedPowerRule-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="solutions">
+<details id="act-GeneralizedPowerRule-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="act-GeneralizedPowerRule-4-2-1">Remember that when you solve for <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{,}\)</span> you might have some <span class="process-math">\(y\)</span>-variables in your derivative. Replace them with <span class="process-math">\(y=x^n\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-GeneralizedPowerRule-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 3.3.1.b.1"><a href="#act-GeneralizedPowerRule-4-2" title="Copy heading and permalink for Hint 3.3.1.b.1" aria-label="Copy heading and permalink for Hint 3.3.1.b.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 3.3.1.b"><a href="#act-GeneralizedPowerRule-4" title="Copy heading and permalink for Task 3.3.1.b" aria-label="Copy heading and permalink for Task 3.3.1.b">🔗</a></div></article><article class="task exercise-like" id="act-GeneralizedPowerRule-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 3.3.3.b.1"><a tabindex="-1" href="#act-GeneralizedPowerRule-4-2" title="Copy heading and permalink for Hint 3.3.3.b.1" aria-label="Copy heading and permalink for Hint 3.3.3.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.3.b"><a tabindex="-1" href="#act-GeneralizedPowerRule-4" title="Copy heading and permalink for Task 3.3.3.b" aria-label="Copy heading and permalink for Task 3.3.3.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="act-GeneralizedPowerRule-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para logical" id="act-GeneralizedPowerRule-5-1-1">
 <div class="para">Explain to yourself why this is equivalent to the Power Rule that we built so long ago:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="act-GeneralizedPowerRule-5-1-1-1">
 \begin{equation*}
 \ddx{x^n}=nx^{n-1}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-GeneralizedPowerRule-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-GeneralizedPowerRule-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.3.1.c"><a href="#act-GeneralizedPowerRule-5" title="Copy heading and permalink for Task 3.3.1.c" aria-label="Copy heading and permalink for Task 3.3.1.c">🔗</a></div></article><article class="task exercise-like" id="act-GeneralizedPowerRule-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-GeneralizedPowerRule-6-1-1">Let’s get weird. What if we have a not-quite-power function? Where the thing in the exponent isn’t simply a number, but another variable?<div class="autopermalink" data-description="Paragraph"><a href="#act-GeneralizedPowerRule-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="act-GeneralizedPowerRule-6-1-2">Let’s use the same technique to think about <span class="process-math">\(y=x^x\)</span> and its derivative. First, though, confirm that this is not a power function (and so we cannot use the Power Rule to find the derivative) and is also not an exponential function (and so the derivative isn’t itself or itself scaled by a log).<div class="autopermalink" data-description="Paragraph"><a href="#act-GeneralizedPowerRule-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.3.c"><a tabindex="-1" href="#act-GeneralizedPowerRule-5" title="Copy heading and permalink for Task 3.3.3.c" aria-label="Copy heading and permalink for Task 3.3.3.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="act-GeneralizedPowerRule-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="act-GeneralizedPowerRule-6-1-1">Let’s get weird. What if we have a not-quite-power function? Where the thing in the exponent isn’t simply a number, but another variable?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-GeneralizedPowerRule-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="act-GeneralizedPowerRule-6-1-2">Let’s use the same technique to think about <span class="process-math">\(y=x^x\)</span> and its derivative. First, though, confirm that this is not a power function (and so we cannot use the Power Rule to find the derivative) and is also not an exponential function (and so the derivative isn’t itself or itself scaled by a log).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-GeneralizedPowerRule-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.3.1.d"><a href="#act-GeneralizedPowerRule-6" title="Copy heading and permalink for Task 3.3.1.d" aria-label="Copy heading and permalink for Task 3.3.1.d">🔗</a></div></article><article class="task exercise-like" id="act-GeneralizedPowerRule-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.3.d"><a tabindex="-1" href="#act-GeneralizedPowerRule-6" title="Copy heading and permalink for Task 3.3.3.d" aria-label="Copy heading and permalink for Task 3.3.3.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="act-GeneralizedPowerRule-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <div class="para logical" id="act-GeneralizedPowerRule-7-1-1">
 <div class="para">Now apply a log to both sides:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="act-GeneralizedPowerRule-7-1-1-1">
 \begin{equation*}
 \ln(y) = \ln(x^x)\text{.}
 \end{equation*}
 </div>
 <div class="para">Rewrite this using the same log property as before, and then use implicit differentiation to find <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-GeneralizedPowerRule-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-GeneralizedPowerRule-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="act-GeneralizedPowerRule-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="act-GeneralizedPowerRule-7-2-1">Don’t forget that in order to find <span class="process-math">\(\dydx{x\ln(x)}\text{,}\)</span> we need to use the Product Rule.<div class="autopermalink" data-description="Paragraph"><a href="#act-GeneralizedPowerRule-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="solutions">
+<details id="act-GeneralizedPowerRule-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="act-GeneralizedPowerRule-7-2-1">Don’t forget that in order to find <span class="process-math">\(\dydx{x\ln(x)}\text{,}\)</span> we need to use the Product Rule.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-GeneralizedPowerRule-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 3.3.1.e.1"><a href="#act-GeneralizedPowerRule-7-2" title="Copy heading and permalink for Hint 3.3.1.e.1" aria-label="Copy heading and permalink for Hint 3.3.1.e.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 3.3.1.e"><a href="#act-GeneralizedPowerRule-7" title="Copy heading and permalink for Task 3.3.1.e" aria-label="Copy heading and permalink for Task 3.3.1.e">🔗</a></div></article><article class="task exercise-like" id="act-GeneralizedPowerRule-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="act-GeneralizedPowerRule-8-1-1">Explain to yourself why logs are friends, especially when trying to differentiate functions in the form of <span class="process-math">\(y=\left(f(x)\right)^{g(x)}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-GeneralizedPowerRule-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 3.3.3.e.1"><a tabindex="-1" href="#act-GeneralizedPowerRule-7-2" title="Copy heading and permalink for Hint 3.3.3.e.1" aria-label="Copy heading and permalink for Hint 3.3.3.e.1">🔗</a></div>
+</div></details>
 </div>
-<div class="autopermalink" data-description="Task 3.3.1.f"><a href="#act-GeneralizedPowerRule-8" title="Copy heading and permalink for Task 3.3.1.f" aria-label="Copy heading and permalink for Task 3.3.1.f">🔗</a></div></article><div class="autopermalink" data-description="Activity 3.3.1: Returning to the Power Rule"><a href="#act-GeneralizedPowerRule" title="Copy heading and permalink for Activity 3.3.1: Returning to the Power Rule" aria-label="Copy heading and permalink for Activity 3.3.1: Returning to the Power Rule">🔗</a></div></article><div class="para" id="subsec-LogsAreFriends-5">This idea that we’ve just implemented (applying a logarithm to make some function more friendly and then using implicit differentiation to differentiate) is often called <dfn class="terminology">logarithmic differentiation</dfn>. It works so well because <em class="emphasis">logs are friends</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LogsAreFriends-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.3.e"><a tabindex="-1" href="#act-GeneralizedPowerRule-7" title="Copy heading and permalink for Task 3.3.3.e" aria-label="Copy heading and permalink for Task 3.3.3.e">🔗</a></div>
+</article>
+<article class="task exercise-like" id="act-GeneralizedPowerRule-8"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="act-GeneralizedPowerRule-8-1-1">Explain to yourself why logs are friends, especially when trying to differentiate functions in the form of <span class="process-math">\(y=\left(f(x)\right)^{g(x)}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-GeneralizedPowerRule-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Logs Are Friends!"><a href="#subsec-LogsAreFriends" title="Copy heading and permalink for Subsection: Logs Are Friends!" aria-label="Copy heading and permalink for Subsection: Logs Are Friends!">🔗</a></div></section><section class="subsection" id="subsec-WowSoFriendly"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Wow, So Friendly!</span>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.3.f"><a tabindex="-1" href="#act-GeneralizedPowerRule-8" title="Copy heading and permalink for Task 3.3.3.f" aria-label="Copy heading and permalink for Task 3.3.3.f">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Activity 3.3.3: Returning to the Power Rule"><a tabindex="-1" href="#act-GeneralizedPowerRule" title="Copy heading and permalink for Activity 3.3.3: Returning to the Power Rule" aria-label="Copy heading and permalink for Activity 3.3.3: Returning to the Power Rule">🔗</a></div>
+</article>
+<div class="para" id="subsec-LogsAreFriends-5">This idea that we’ve just implemented (applying a logarithm to make some function more friendly and then using implicit differentiation to differentiate) is often called <dfn class="terminology">logarithmic differentiation</dfn>. It works so well because <em class="emphasis">logs are friends</em>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-LogsAreFriends-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Logs Are Friends!"><a tabindex="-1" href="#subsec-LogsAreFriends" title="Copy heading and permalink for Subsection: Logs Are Friends!" aria-label="Copy heading and permalink for Subsection: Logs Are Friends!">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-WowSoFriendly">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Wow, So Friendly!</span>
+</h2>
+<div class="para" id="subsec-WowSoFriendly-2">This is incredible! We can now differentiate a whole new class of functions! Functions raised to functions, what could we think of next!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-WowSoFriendly-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-WowSoFriendly-3">How about products and quotients of functions? I know, I know, we have <a href="sec-ProductQuotientRule.html" class="internal" title="Section 2.4: The Product and Quotient Rules">The Product and Quotient Rules</a>...what about <em class="emphasis">big</em> products and quotients? Annoying ones. Complicated ones.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-WowSoFriendly-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="act-LogsProductsQuotients"><h3 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Logarithmic Differentiation with Products and Quotients.</span>
 </h3>
-<div class="para" id="subsec-WowSoFriendly-2">This is incredible! We can now differentiate a whole new class of functions! Functions raised to functions, what could we think of next!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-WowSoFriendly-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-WowSoFriendly-3">How about products and quotients of functions? I know, I know, we have <a href="sec-ProductQuotientRule.html" class="internal" title="Section 2.4: The Product and Quotient Rules">The Product and Quotient Rules</a>...what about <em class="emphasis">big</em> products and quotients? Annoying ones. Complicated ones.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-WowSoFriendly-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<article class="activity project-like" id="act-LogsProductsQuotients"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Logarithmic Differentiation with Products and Quotients.</span>
-</h4>
-<div class="introduction" id="act-LogsProductsQuotients-2"><div class="para logical" id="act-LogsProductsQuotients-2-1">
+<div class="introduction" id="act-LogsProductsQuotients-2">
+<div class="para logical" id="act-LogsProductsQuotients-2-1">
 <div class="para">Let’s say we’ve got some function that has products and quotients in it. Like, a lot. Consider the function:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="act-LogsProductsQuotients-2-1-1">
 \begin{equation*}
 y=\frac{(x-4)^2\sqrt{3x+1}}{(x+1)^7(x+5)^3}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-LogsProductsQuotients-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div>
-<article class="task exercise-like" id="act-LogsProductsQuotients-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-LogsProductsQuotients-3-1-1">Work out a general strategy for how you would find <span class="process-math">\(y'\)</span> directly. Where would you have to use Quotient Rule? What are the pieces? Where would you have to use Product Rule? What are the pieces? Where would you have to use the Chain Rule? What are the pieces?<div class="autopermalink" data-description="Paragraph"><a href="#act-LogsProductsQuotients-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="act-LogsProductsQuotients-3-1-2">To be clear: do not actually differentiate this. Just look at it in horror and try to outline a plan that some other fool would use.<div class="autopermalink" data-description="Paragraph"><a href="#act-LogsProductsQuotients-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-LogsProductsQuotients-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="act-LogsProductsQuotients-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+</div>
+<article class="task exercise-like" id="act-LogsProductsQuotients-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="act-LogsProductsQuotients-3-1-1">Work out a general strategy for how you would find <span class="process-math">\(y'\)</span> directly. Where would you have to use Quotient Rule? What are the pieces? Where would you have to use Product Rule? What are the pieces? Where would you have to use the Chain Rule? What are the pieces?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-LogsProductsQuotients-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="act-LogsProductsQuotients-3-1-2">To be clear: do not actually differentiate this. Just look at it in horror and try to outline a plan that some other fool would use.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-LogsProductsQuotients-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="act-LogsProductsQuotients-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="act-LogsProductsQuotients-3-2-1">
 <div class="displaymath process-math" id="act-LogsProductsQuotients-3-2-1-1">
 \begin{align*}
@@ -918,63 +950,84 @@ y=\frac{(x-4)^2\sqrt{3x+1}}{(x+1)^7(x+5)^3}\text{.}
 \end{align*}
 </div>
 <div class="para">What now? Can we “simplify” this somehow? Maybe, but I am <em class="emphasis">not</em> doing any more of this!</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-LogsProductsQuotients-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-LogsProductsQuotients-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 3.3.2.a.1"><a href="#act-LogsProductsQuotients-3-2" title="Copy heading and permalink for Solution 3.3.2.a.1" aria-label="Copy heading and permalink for Solution 3.3.2.a.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 3.3.2.a"><a href="#act-LogsProductsQuotients-3" title="Copy heading and permalink for Task 3.3.2.a" aria-label="Copy heading and permalink for Task 3.3.2.a">🔗</a></div></article><article class="task exercise-like" id="act-LogsProductsQuotients-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.3.4.a.1"><a tabindex="-1" href="#act-LogsProductsQuotients-3-2" title="Copy heading and permalink for Solution 3.3.4.a.1" aria-label="Copy heading and permalink for Solution 3.3.4.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.4.a"><a tabindex="-1" href="#act-LogsProductsQuotients-3" title="Copy heading and permalink for Task 3.3.4.a" aria-label="Copy heading and permalink for Task 3.3.4.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="act-LogsProductsQuotients-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para logical" id="act-LogsProductsQuotients-4-1-1">
 <div class="para">Let’s instead use logarithmic differentiation. First, apply the log to both sides to get:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="act-LogsProductsQuotients-4-1-1-1">
 \begin{equation*}
 \ln(y) = \ln\left(\frac{(x-4)^2\sqrt{3x+1}}{(x+1)^7(x+5)^3}\right)\text{.}
 \end{equation*}
 </div>
 <div class="para">Since this function is just a bunch of products of things with exponents all put into some big quotient, we can use our log properties to rewrite this!</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-LogsProductsQuotients-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-LogsProductsQuotients-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.3.2.b"><a href="#act-LogsProductsQuotients-4" title="Copy heading and permalink for Task 3.3.2.b" aria-label="Copy heading and permalink for Task 3.3.2.b">🔗</a></div></article><article class="task exercise-like" id="act-LogsProductsQuotients-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.4.b"><a tabindex="-1" href="#act-LogsProductsQuotients-4" title="Copy heading and permalink for Task 3.3.4.b" aria-label="Copy heading and permalink for Task 3.3.4.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="act-LogsProductsQuotients-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para logical" id="act-LogsProductsQuotients-5-1-1">
 <div class="para">We should have:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="act-LogsProductsQuotients-5-1-1-1">
 \begin{equation*}
 \ln(y) = 2\ln(x-4)+\frac{1}{2}\ln(3x+1) - 7\ln(x+1) - 3\ln(x+5)\text{.}
 \end{equation*}
 </div>
 <div class="para">Confirm this.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-LogsProductsQuotients-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-LogsProductsQuotients-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.3.2.c"><a href="#act-LogsProductsQuotients-5" title="Copy heading and permalink for Task 3.3.2.c" aria-label="Copy heading and permalink for Task 3.3.2.c">🔗</a></div></article><article class="task exercise-like" id="act-LogsProductsQuotients-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-LogsProductsQuotients-6-1-1">Now differentiate both sides! You’ll have to use some Chain Rule (but not a lot)! Refer back to <a href="sec-LogarithmicDifferentiation.html#fact-ChainRuleLog" class="xref" data-knowl="./knowl/xref/fact-ChainRuleLog.html" data-reveal-label="Reveal" data-close-label="Close" title="Fact 3.3.1: Derivative of the Log of a Function">Fact 3.3.1</a> for help here.<div class="autopermalink" data-description="Paragraph"><a href="#act-LogsProductsQuotients-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.4.c"><a tabindex="-1" href="#act-LogsProductsQuotients-5" title="Copy heading and permalink for Task 3.3.4.c" aria-label="Copy heading and permalink for Task 3.3.4.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="act-LogsProductsQuotients-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="act-LogsProductsQuotients-6-1-1">Now differentiate both sides! You’ll have to use some Chain Rule (but not a lot)! Refer back to <a href="sec-LogarithmicDifferentiation.html#fact-ChainRuleLog" class="xref" data-knowl="./knowl/xref/fact-ChainRuleLog.html" data-reveal-label="Reveal" data-close-label="Close" title="Fact 3.3.1: Derivative of the Log of a Function">Fact 3.3.1</a> for help here.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-LogsProductsQuotients-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.3.2.d"><a href="#act-LogsProductsQuotients-6" title="Copy heading and permalink for Task 3.3.2.d" aria-label="Copy heading and permalink for Task 3.3.2.d">🔗</a></div></article><article class="task exercise-like" id="act-LogsProductsQuotients-7"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="act-LogsProductsQuotients-7-1-1">Solve for <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-LogsProductsQuotients-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.4.d"><a tabindex="-1" href="#act-LogsProductsQuotients-6" title="Copy heading and permalink for Task 3.3.4.d" aria-label="Copy heading and permalink for Task 3.3.4.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="act-LogsProductsQuotients-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="act-LogsProductsQuotients-7-1-1">Solve for <span class="process-math">\(\dydx\)</span> or <span class="process-math">\(y'\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-LogsProductsQuotients-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.3.2.e"><a href="#act-LogsProductsQuotients-7" title="Copy heading and permalink for Task 3.3.2.e" aria-label="Copy heading and permalink for Task 3.3.2.e">🔗</a></div></article><article class="task exercise-like" id="act-LogsProductsQuotients-8"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="act-LogsProductsQuotients-8-1-1">While this is not a <em class="emphasis">nice</em> looking expression for the derivative, spend some time confirming that this was a nicer <em class="emphasis">process</em> than differentiating directly. This is because logs are friends.<div class="autopermalink" data-description="Paragraph"><a href="#act-LogsProductsQuotients-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.4.e"><a tabindex="-1" href="#act-LogsProductsQuotients-7" title="Copy heading and permalink for Task 3.3.4.e" aria-label="Copy heading and permalink for Task 3.3.4.e">🔗</a></div>
+</article>
+<article class="task exercise-like" id="act-LogsProductsQuotients-8"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="act-LogsProductsQuotients-8-1-1">While this is not a <em class="emphasis">nice</em> looking expression for the derivative, spend some time confirming that this was a nicer <em class="emphasis">process</em> than differentiating directly. This is because logs are friends.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-LogsProductsQuotients-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.3.2.f"><a href="#act-LogsProductsQuotients-8" title="Copy heading and permalink for Task 3.3.2.f" aria-label="Copy heading and permalink for Task 3.3.2.f">🔗</a></div></article><div class="autopermalink" data-description="Activity 3.3.2: Logarithmic Differentiation with Products and Quotients"><a href="#act-LogsProductsQuotients" title="Copy heading and permalink for Activity 3.3.2: Logarithmic Differentiation with Products and Quotients" aria-label="Copy heading and permalink for Activity 3.3.2: Logarithmic Differentiation with Products and Quotients">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Wow, So Friendly!"><a href="#subsec-WowSoFriendly" title="Copy heading and permalink for Subsection: Wow, So Friendly!" aria-label="Copy heading and permalink for Subsection: Wow, So Friendly!">🔗</a></div></section><section class="conclusion" id="sec-LogarithmicDifferentiation-5"><div class="para" id="sec-LogarithmicDifferentiation-5-1">So how do we wrap this up? I hope we can see that logs are a useful and powerful tool: we can use logarithmic differentiation to transform our functions to become “easier to work with” versions of themselves: we put everything on a log-scale and allow our properties of logarithms to make the operations become a bit more accessible.<div class="autopermalink" data-description="Paragraph"><a href="#sec-LogarithmicDifferentiation-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.3.4.f"><a tabindex="-1" href="#act-LogsProductsQuotients-8" title="Copy heading and permalink for Task 3.3.4.f" aria-label="Copy heading and permalink for Task 3.3.4.f">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Activity 3.3.4: Logarithmic Differentiation with Products and Quotients"><a tabindex="-1" href="#act-LogsProductsQuotients" title="Copy heading and permalink for Activity 3.3.4: Logarithmic Differentiation with Products and Quotients" aria-label="Copy heading and permalink for Activity 3.3.4: Logarithmic Differentiation with Products and Quotients">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Wow, So Friendly!"><a tabindex="-1" href="#subsec-WowSoFriendly" title="Copy heading and permalink for Subsection: Wow, So Friendly!" aria-label="Copy heading and permalink for Subsection: Wow, So Friendly!">🔗</a></div>
+</section>
+<section class="conclusion" id="sec-LogarithmicDifferentiation-5">
+<div class="para" id="sec-LogarithmicDifferentiation-5-1">So how do we wrap this up? I hope we can see that logs are a useful and powerful tool: we can use logarithmic differentiation to transform our functions to become “easier to work with” versions of themselves: we put everything on a log-scale and allow our properties of logarithms to make the operations become a bit more accessible.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-LogarithmicDifferentiation-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-LogarithmicDifferentiation-5-2">This is a commonly used trick in many applications of calculus. Specifically, this is used often enough in statistics that there is a whole paradigm of estimation (called Maximum Likelihood Estimation) that uses a log-transformed version of a likelihood function and then applies some basic calculus ideas (that we’ll cover in <a href="sec-Optimization.html" class="internal" title="Section 4.5: Optimization">Section 4.5</a>) to perform some powerful estimations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-LogarithmicDifferentiation-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-LogarithmicDifferentiation-5-2">This is a commonly used trick in many applications of calculus. Specifically, this is used often enough in statistics that there is a whole paradigm of estimation (called Maximum Likelihood Estimation) that uses a log-transformed version of a likelihood function and then applies some basic calculus ideas (that we’ll cover in <a href="sec-Optimization.html" class="internal" title="Section 4.5: Optimization">Section 4.5</a>) to perform some powerful estimations.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-LogarithmicDifferentiation-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-LogarithmicDifferentiation-5-3">While I hope that we end up leaving this section knowing that <em class="emphasis">logs are friends</em>, we can probably add a second (and related result) that we’re using over and over.<div class="autopermalink" data-description="Paragraph"><a href="#sec-LogarithmicDifferentiation-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-LogarithmicDifferentiation-5-3">While I hope that we end up leaving this section knowing that <em class="emphasis">logs are friends</em>, we can probably add a second (and related result) that we’re using over and over.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-LogarithmicDifferentiation-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-LogarithmicDifferentiation-5-4">
-<em class="emphasis">Using the Chain Rule is probably easier than any other option.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-LogarithmicDifferentiation-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Using the Chain Rule is probably easier than any other option.</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-LogarithmicDifferentiation-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-LogarithmicDifferentiation-5-5">We apply logs in order to rewrite these functions in a friendly way <em class="emphasis">because</em> we would rather use the Chain Rule than any combination of other derivative strategies.<div class="autopermalink" data-description="Paragraph"><a href="#sec-LogarithmicDifferentiation-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><section class="exercises" id="ex-LogarithmicDifferentiation"><h3 class="heading hide-type">
-<span class="type">Practice Problems</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Practice Problems</span>
-</h3>
-<article class="exercise exercise-like" id="ex-LogarithmicDifferentiation-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div class="introduction" id="ex-LogarithmicDifferentiation-1-1"><div class="para" id="ex-LogarithmicDifferentiation-1-1-1">For each of the following functions, find the derivatives in two ways: directly, and after using properties of logs or exponentials to rewrite the function and differentiate.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div>
-<article class="task exercise-like" id="ex-LogarithmicDifferentiation-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="sec-LogarithmicDifferentiation-5-5">We apply logs in order to rewrite these functions in a friendly way <em class="emphasis">because</em> we would rather use the Chain Rule than any combination of other derivative strategies.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-LogarithmicDifferentiation-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="exercises" id="ex-LogarithmicDifferentiation">
+<h2 class="heading hide-type">
+<span class="type">Practice Problems</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
+</h2>
+<article class="exercise exercise-like" id="ex-LogarithmicDifferentiation-1"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="ex-LogarithmicDifferentiation-1-1">
+<div class="para" id="ex-LogarithmicDifferentiation-1-1-1">For each of the following functions, find the derivatives in two ways: directly, and after using properties of logs or exponentials to rewrite the function and differentiate.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="ex-LogarithmicDifferentiation-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="ex-LogarithmicDifferentiation-1-2-1-1">
-<span class="process-math">\(f(x) = \ln\left(\sqrt{5x^2e^x}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(f(x) = \ln\left(\sqrt{5x^2e^x}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex-LogarithmicDifferentiation-1-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<details id="ex-LogarithmicDifferentiation-1-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="ex-LogarithmicDifferentiation-1-2-2-1">
 <div class="displaymath process-math" id="ex-LogarithmicDifferentiation-1-2-2-1-1">
 \begin{align*}
@@ -984,10 +1037,12 @@ f'(x) \amp = \frac{1}{\sqrt{5x^2e^x}} \left(\frac{1}{2\sqrt{5x^2e^x}}\right)\lef
 \amp = \frac{1}{x} + \frac{1}{2}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 1.a.1"><a href="#ex-LogarithmicDifferentiation-1-2-2" title="Copy heading and permalink for Solution 1.a.1" aria-label="Copy heading and permalink for Solution 1.a.1">🔗</a></div>
-</div></details><details id="ex-LogarithmicDifferentiation-1-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.a.1"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-2-2" title="Copy heading and permalink for Solution 1.a.1" aria-label="Copy heading and permalink for Solution 1.a.1">🔗</a></div>
+</div></details>
+<details id="ex-LogarithmicDifferentiation-1-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="ex-LogarithmicDifferentiation-1-2-3-1">
 <div class="displaymath process-math" id="ex-LogarithmicDifferentiation-1-2-3-1-1">
 \begin{align*}
@@ -999,17 +1054,20 @@ f(x) \amp = \ln((5x^2e^x)^{1/2})\\
 f'(x) \amp = \frac{1}{x} + \frac{1}{2}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 1.a.2"><a href="#ex-LogarithmicDifferentiation-1-2-3" title="Copy heading and permalink for Solution 1.a.2" aria-label="Copy heading and permalink for Solution 1.a.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.a.2"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-2-3" title="Copy heading and permalink for Solution 1.a.2" aria-label="Copy heading and permalink for Solution 1.a.2">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Task 1.a"><a href="#ex-LogarithmicDifferentiation-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="ex-LogarithmicDifferentiation-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-LogarithmicDifferentiation-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ex-LogarithmicDifferentiation-1-3-1-1">
-<span class="process-math">\(g(x) = \left(e^{5x^3+\ln(x)}\right)^7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(g(x) = \left(e^{5x^3+\ln(x)}\right)^7\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex-LogarithmicDifferentiation-1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<details id="ex-LogarithmicDifferentiation-1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="ex-LogarithmicDifferentiation-1-3-2-1">
 <div class="displaymath process-math" id="ex-LogarithmicDifferentiation-1-3-2-1-1">
 \begin{align*}
@@ -1017,10 +1075,12 @@ g'(x) \amp = 7\left(e^{5x^3+\ln(x)}\right)^6 \left(e^{5x^3+\ln(x)}\right) \left(
 \amp = 7\left(e^{5x^3+\ln(x)}\right)^7 \left(15x^2 + \frac{1}{x}\right)
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 1.b.1"><a href="#ex-LogarithmicDifferentiation-1-3-2" title="Copy heading and permalink for Solution 1.b.1" aria-label="Copy heading and permalink for Solution 1.b.1">🔗</a></div>
-</div></details><details id="ex-LogarithmicDifferentiation-1-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.b.1"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-3-2" title="Copy heading and permalink for Solution 1.b.1" aria-label="Copy heading and permalink for Solution 1.b.1">🔗</a></div>
+</div></details>
+<details id="ex-LogarithmicDifferentiation-1-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="ex-LogarithmicDifferentiation-1-3-3-1">
 <div class="displaymath process-math" id="ex-LogarithmicDifferentiation-1-3-3-1-1">
 \begin{align*}
@@ -1031,19 +1091,26 @@ g'(x) \amp = e^{35x^3}(7x^6) + x^7(e^{35x^3})(105x^2)\\
 \amp = 7x^6e^{35x^3}(1+15x^3)
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 1.b.2"><a href="#ex-LogarithmicDifferentiation-1-3-3" title="Copy heading and permalink for Solution 1.b.2" aria-label="Copy heading and permalink for Solution 1.b.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.b.2"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-3-3" title="Copy heading and permalink for Solution 1.b.2" aria-label="Copy heading and permalink for Solution 1.b.2">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Task 1.b"><a href="#ex-LogarithmicDifferentiation-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 1"><a href="#ex-LogarithmicDifferentiation-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="ex-LogarithmicDifferentiation-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div class="introduction" id="ex-LogarithmicDifferentiation-2-1"><div class="para" id="ex-LogarithmicDifferentiation-2-1-1">Use logarithmic differentiation to find the derivative of each of the following.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div>
-<article class="task exercise-like" id="ex-LogarithmicDifferentiation-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="ex-LogarithmicDifferentiation-2-2-1-1">
-<span class="process-math">\(y = (4x)^{10x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 1"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex-LogarithmicDifferentiation-2"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="ex-LogarithmicDifferentiation-2-1">
+<div class="para" id="ex-LogarithmicDifferentiation-2-1-1">Use logarithmic differentiation to find the derivative of each of the following.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-LogarithmicDifferentiation-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+</div>
+<article class="task exercise-like" id="ex-LogarithmicDifferentiation-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="ex-LogarithmicDifferentiation-2-2-1-1">
+<span class="process-math">\(y = (4x)^{10x}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-LogarithmicDifferentiation-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="ex-LogarithmicDifferentiation-2-2-2-1">
 <div class="displaymath process-math" id="ex-LogarithmicDifferentiation-2-2-2-1-1">
 \begin{align*}
@@ -1054,15 +1121,20 @@ g'(x) \amp = e^{35x^3}(7x^6) + x^7(e^{35x^3})(105x^2)\\
 y' \amp = (4x)^{10x}\left(10\ln(4x)+10\right)
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 2.a.1"><a href="#ex-LogarithmicDifferentiation-2-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 2.a"><a href="#ex-LogarithmicDifferentiation-2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="ex-LogarithmicDifferentiation-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.a.1"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-LogarithmicDifferentiation-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ex-LogarithmicDifferentiation-2-3-1-1">
-<span class="process-math">\(y=(\sin(x))^{\cos(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(y=(\sin(x))^{\cos(x)}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-LogarithmicDifferentiation-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions">
+<details id="ex-LogarithmicDifferentiation-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="ex-LogarithmicDifferentiation-2-3-2-1">
 <div class="displaymath process-math" id="ex-LogarithmicDifferentiation-2-3-2-1-1">
 \begin{align*}
@@ -1073,15 +1145,20 @@ y' \amp = (4x)^{10x}\left(10\ln(4x)+10\right)
 y' \amp = (\sin(x))^{\cos(x)}(\cot(x) - \sin(x)\ln(\sin(x)))
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 2.b.1"><a href="#ex-LogarithmicDifferentiation-2-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 2.b"><a href="#ex-LogarithmicDifferentiation-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="ex-LogarithmicDifferentiation-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.b.1"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-LogarithmicDifferentiation-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="ex-LogarithmicDifferentiation-2-4-1-1">
-<span class="process-math">\(y = (x+5)^6(x-5)^9(3x+1)^3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(y = (x+5)^6(x-5)^9(3x+1)^3\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-LogarithmicDifferentiation-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions">
+<details id="ex-LogarithmicDifferentiation-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="ex-LogarithmicDifferentiation-2-4-2-1">
 <div class="displaymath process-math" id="ex-LogarithmicDifferentiation-2-4-2-1-1">
 \begin{align*}
@@ -1092,15 +1169,20 @@ y' \amp = (\sin(x))^{\cos(x)}(\cot(x) - \sin(x)\ln(\sin(x)))
 y' \amp  = (x+5)^6(x-5)^9(3x+1)^3 \left(\frac{6}{x+5} + \frac{9}{x-5} + \frac{9}{3x+1}\right) 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 2.c.1"><a href="#ex-LogarithmicDifferentiation-2-4-2" title="Copy heading and permalink for Solution 2.c.1" aria-label="Copy heading and permalink for Solution 2.c.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 2.c"><a href="#ex-LogarithmicDifferentiation-2-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><article class="task exercise-like" id="ex-LogarithmicDifferentiation-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.c.1"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-4-2" title="Copy heading and permalink for Solution 2.c.1" aria-label="Copy heading and permalink for Solution 2.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-LogarithmicDifferentiation-2-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="ex-LogarithmicDifferentiation-2-5-1-1">
-<span class="process-math">\(y = \dfrac{(x+2)^{2/3}(x+5)^{7/3}}{(x-4)^{5/3}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(y = \dfrac{(x+2)^{2/3}(x+5)^{7/3}}{(x-4)^{5/3}}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="ex-LogarithmicDifferentiation-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions">
+<details id="ex-LogarithmicDifferentiation-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="ex-LogarithmicDifferentiation-2-5-2-1">
 <div class="displaymath process-math" id="ex-LogarithmicDifferentiation-2-5-2-1-1">
 \begin{align*}
@@ -1111,14 +1193,20 @@ y' \amp  = (x+5)^6(x-5)^9(3x+1)^3 \left(\frac{6}{x+5} + \frac{9}{x-5} + \frac{9}
 y' \amp = \dfrac{(x+2)^{2/3}(x+5)^{7/3}}{(x-4)^{5/3}} \left(\frac{2}{3(x+2)} + \frac{7}{3(x+5)} - \frac{5}{3(x-4)}\right) 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 2.d.1"><a href="#ex-LogarithmicDifferentiation-2-5-2" title="Copy heading and permalink for Solution 2.d.1" aria-label="Copy heading and permalink for Solution 2.d.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Task 2.d"><a href="#ex-LogarithmicDifferentiation-2-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 2"><a href="#ex-LogarithmicDifferentiation-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="ex-LogarithmicDifferentiation-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="para" id="ex-LogarithmicDifferentiation-3-1-1">For the function <span class="process-math">\(f(x)=x^2e^{-x^2}\text{,}\)</span> find the points where the graph of <span class="process-math">\(f\)</span> has horizontal tangent lines.<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.d.1"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-5-2" title="Copy heading and permalink for Solution 2.d.1" aria-label="Copy heading and permalink for Solution 2.d.1">🔗</a></div>
+</div></details>
 </div>
-<div class="solutions"><details id="ex-LogarithmicDifferentiation-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.d"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 2"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex-LogarithmicDifferentiation-3"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex-LogarithmicDifferentiation-3-1-1">For the function <span class="process-math">\(f(x)=x^2e^{-x^2}\text{,}\)</span> find the points where the graph of <span class="process-math">\(f\)</span> has horizontal tangent lines.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-LogarithmicDifferentiation-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para logical" id="ex-LogarithmicDifferentiation-3-2-1">
 <div class="displaymath process-math" id="ex-LogarithmicDifferentiation-3-2-1-1">
 \begin{align*}
@@ -1131,7 +1219,7 @@ f'(x) \amp = x^2e^{-x^2}\left(\frac{2}{x} - 2x\right)
 </div>
 <div class="para">We can see that <span class="process-math">\(f'(x)=0\)</span> when <span class="process-math">\(x^2\text{,}\)</span> <span class="process-math">\(e^{-x^2}\text{,}\)</span> and <span class="process-math">\(\left(\frac{2}{x} - 2x\right)\)</span> are 0. Note that <span class="process-math">\(e^{-x^2}\)</span> is only ever positive, and so is never 0. while <span class="process-math">\(x^2 = 0\)</span> when <span class="process-math">\(x=0\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ex-LogarithmicDifferentiation-3-2-2">
 <div class="displaymath process-math" id="ex-LogarithmicDifferentiation-3-2-2-1">
@@ -1143,11 +1231,16 @@ x \amp = \pm 1
 \end{align*}
 </div>
 <div class="para">Note that <span class="process-math">\(f'(-1)=0\text{,}\)</span> <span class="process-math">\(f'(0) = 0\text{,}\)</span> and <span class="process-math">\(f'(1) = 0\text{,}\)</span> and so these are the <span class="process-math">\(x\)</span>-values where <span class="process-math">\(f(x)\)</span> has horizontal tangent lines.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-LogarithmicDifferentiation-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 3.1"><a href="#ex-LogarithmicDifferentiation-3-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Exercise 3"><a href="#ex-LogarithmicDifferentiation-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><div class="autopermalink" data-description="Practice Problems"><a href="#ex-LogarithmicDifferentiation" title="Copy heading and permalink for Practice Problems" aria-label="Copy heading and permalink for Practice Problems">🔗</a></div></section><div class="autopermalink" data-description="Section 3.3: Logarithmic Differentiation"><a href="#sec-LogarithmicDifferentiation" title="Copy heading and permalink for Section 3.3: Logarithmic Differentiation" aria-label="Copy heading and permalink for Section 3.3: Logarithmic Differentiation">🔗</a></div></section></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-3-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 3"><a tabindex="-1" href="#ex-LogarithmicDifferentiation-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Practice Problems"><a tabindex="-1" href="#ex-LogarithmicDifferentiation" title="Copy heading and permalink for Practice Problems" aria-label="Copy heading and permalink for Practice Problems">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 3.3: Logarithmic Differentiation"><a tabindex="-1" href="#sec-LogarithmicDifferentiation" title="Copy heading and permalink for Section 3.3: Logarithmic Differentiation" aria-label="Copy heading and permalink for Section 3.3: Logarithmic Differentiation">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-DerivativesInverse.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-ApplicationsDerivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
