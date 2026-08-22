@@ -3,9 +3,9 @@
     <introduction>
         <p>
             The product rule for derivatives says that:
-            <me>
+            <md>
                 \ddx{u(x)\cdot v(x)} = <fillin characters="5" /> + <fillin characters="5" />
-            </me>.
+            </md>.
             We know that we intend to <q>undo</q> the product rule, so let's try to reframe the product rule from a rule about derivatives to a rule about antiderivatives.
         </p>
     </introduction>
@@ -13,12 +13,12 @@
         <statement>
             <p>
                 Antidifferentiate the product rule by antidifferentiating each side of the equation.
-                <me>
+                <md>
                     \begin{aligned}
                         \int \left(\ddx{u\cdot v}\right)\;dx \amp= \int <fillin characters="5" />+ <fillin characters="5" /> dx\\
                         <fillin characters="5" /> \amp= \int <fillin characters="5" /> dx + \int <fillin characters="5" /> dx
                     \end{aligned}
-                </me>
+                </md>
             </p>
         </statement>
         <hint>

@@ -6,7 +6,7 @@
         </p>
         <p>
             We're going to be working with the following limit:
-            <me>\lim_{x\to a}\frac{f(x)}{g(x)}</me>
+            <md>\lim_{x\to a}\frac{f(x)}{g(x)}</md>
             where <m>f(x)</m> and <m>g(x)</m> are differentiable at <m>x=a</m> (since we're going to want to build linear approximations of them).
         </p>
     </introduction>
@@ -38,9 +38,9 @@
         <statement>
             <p>
                 Let's rewrite our limit. We can replace <m>f(x)</m> with our formula for its linear approximation, <m>L_f(x)</m> and replace <m>g(x)</m> with its linear approximation, <m>L_g(x)</m>:
-                <me>
+                <md>
                     \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \left(\frac{<fillin characters="15" />}{<fillin characters="15" />}\right)
-                </me>
+                </md>
             </p>
         </statement>
     </task>
@@ -71,9 +71,9 @@
         <hint>
             <p>
                 We rewrote
-                <me>
+                <md>
                     \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \left(\frac{f'(a)(x-a)+f(a)}{g'(a)(x-a)+g(a)}\right)
-                </me>
+                </md>
                 and also know that in this case (due to the <m>\frac{0}{0}</m> indeterminate form) that <m>f(a)=0</m> and <m>g(a)=0</m>.
             </p>
         </hint>

@@ -9,13 +9,13 @@
         <statement>
             <p>
                 Consider the power series:
-                <me>
+                <md>
                     \sum_{k=1}^\infty \frac{(x-1)^k}{k^2}
-                </me>.
+                </md>.
                 In order for us to apply the Ratio Test, we'll actually need to consider the positive-term version:
-                <me>
+                <md>
                     \sum_{k=1}^\infty \frac{|x-1|^k}{k^2}
-                </me>.
+                </md>.
                 Apply the Ratio Test. What do you get in the limit of the ratio between terms?                
             </p>
         </statement>
@@ -38,9 +38,9 @@
         <statement>
             <p>
                 Consider the power series:
-                <me>
+                <md>
                     \sum_{k=1}^\infty \frac{(x-1)^k}{\sqrt{k}}
-                </me>.
+                </md>.
                 Find the interval of <m>x</m>-values for which this series converges and test the end points of the interval in the same way as earlier. If it differs, explain why.
             </p>
         </statement>

@@ -20,9 +20,9 @@
       <statement>
         <p>
           If <m>f(x)</m> is some function defined on the interval <m>[a,b]</m> and <m>\displaystyle\sum_{k=1}^n f(x_k^*)\Delta x</m> is a Riemann sum with <m>n</m> slices and <m>\Delta x = \frac{b-a}{n}</m>, then we say that the <term>definite integral</term> of <m>f(x)</m> from <m>x=a</m> to <m>x=b</m> is:
-          <me>
+          <md>
             \int_{x=a}^{x=b} f(x)\;dx = \lim_{n\to\infty} \sum_{k=1}^n f(x_k^*)\Delta x
-          </me>
+          </md>
           if this limit exists. When this limit exists, we say that <m>f(x)</m> is <term>integrable</term> on the interval <m>[a,b]</m>.
         </p>
         <p>
@@ -46,9 +46,9 @@
     </p>
     <p>
       Whatever you did, it's not enough: even if we decided to divide this region up into <m>n=1000</m> pieces, this is merely an approximation of the limit we want: 
-      <me>
+      <md>
         \int_{x=0}^{x=2}(x^2+1)\;dx = \lim_{n\to \infty} \sum_{k=1}^n \underbrace{\left((x_k^*)^2+1\right)}_{f(x_k^*)}\underbrace{\left(\frac{2}{n}\right)}_{\Delta x}
-      </me>
+      </md>
       There are some ways of evaluating this specific limit using some known formulas for sums of squares and end behavior limits of rational functions. But these techniques are extremely limited: we might get lucky being able to fiddle with this limit of this sum for this function, but we won't be so lucky in general.
     </p>
     <p>
@@ -63,9 +63,9 @@
     </p>
     <p>
       We chose to define the area bounded between a curve defined by the function <m>f(x)</m> and the <m>x</m>-axis between <m>x=a</m> and <m>x=b</m> as:
-      <me>
+      <md>
         \int_{x=a}^{x=b} f(x)\;dx = \lim_{n\to\infty} \sum_{k=1}^n f(x_k^*)\Delta x
-      </me>.
+      </md>.
       We are going to stand by this definition. It's a good one, for the reasons we described at the beginning of <xref ref="sec-RiemannSums" text="type-global-title"/>.
     </p>
     <p>
@@ -93,9 +93,9 @@
       <statement>
         <p>
           If <m>f(x)</m> is continuous on the interval <m>[a,b]</m>, then <m>f(x)</m> is integrable on <m>[a,b]</m>. That is, the limit <m>\displaystyle \lim_{n\to\infty} \sum_{k=1}^n f(x_k^*)\Delta x</m> exists and so we can evaluate the definite integral:
-          <me>
+          <md>
             \int_{x=a}^{x=b} f(x)\;dx
-          </me>.
+          </md>.
         </p>
       </statement>
     </theorem>
@@ -111,23 +111,23 @@
             <li>
               <p>
                 The signed area under a single point is 0:
-                <me>\displaystyle \int_{x=a}^{x=a}f(x)\;dx=0</me>
+                <md>\displaystyle \int_{x=a}^{x=a}f(x)\;dx=0</md>
               </p>
             </li>
             <li>
               <p>
                 We can cut a region into pieces and evaluate the areas separately:
-                <me>
+                <md>
                   \int_{x=a}^{x=c} f(x)\;dx = \int_{x=a}^{x=b} f(x)\;dx + \int_{x=b}^{x=c}f(x)\;dx
-                </me>
+                </md>
               </p>
             </li>
             <li>
               <p>
                 When we integrate a function <q>backwards</q> through an interval, we get an area with an opposite sign:
-                <me>
+                <md>
                   \int_{x=a}^{x=b}f(x)\;dx = -\int_{x=b}^{x=a} f(x)\;dx
-                </me>
+                </md>
               </p>
             </li>
           </ul>

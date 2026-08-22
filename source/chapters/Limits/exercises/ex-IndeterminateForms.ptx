@@ -10,9 +10,9 @@
         <introduction>
             <p>
                 Consider the following limit:
-                <me>
+                <md>
                     \lim_{x\to 3} \left(\frac{2x^2-5x-3}{x^2+5x-24}\right)
-                </me>.
+                </md>.
             </p>
         </introduction>
         <task>
@@ -23,9 +23,9 @@
             </statement>
             <solution>
                 <p>
-                     <me>
+                     <md>
                         \lim_{x\to 3} \left(\frac{2x^2-5x-3}{x^2+5x-24}\right) \stackrel{?}{\to} \frac{0}{0}
-                    </me>
+                    </md>
                 </p>
             </solution>
         </task>
@@ -60,9 +60,9 @@
         <introduction>
             <p>
                 Consider the following limit:
-                <me>
+                <md>
                     \lim_{x\to 4}\left(\frac{\frac{2}{x+1} - \frac{x-2}{5}}{x-4}\right)
-                </me>.
+                </md>.
             </p>
         </introduction>
         <task>
@@ -73,9 +73,9 @@
             </statement>
             <solution>
                 <p>
-                    <me>
+                    <md>
                         \lim_{x\to 4}\left(\frac{\frac{2}{x+1} - \frac{x-2}{5}}{x-4}\right) \stackrel{?}{\to} \frac{0}{0}
-                    </me>
+                    </md>
                 </p>
             </solution>
         </task>

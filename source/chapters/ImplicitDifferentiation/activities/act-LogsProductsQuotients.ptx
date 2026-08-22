@@ -3,9 +3,9 @@
     <introduction>
         <p>
             Let's say we've got some function that has products and quotients in it. Like, a lot. Consider the function:
-            <me>
+            <md>
                 y=\frac{(x-4)^2\sqrt{3x+1}}{(x+1)^7(x+5)^3}
-            </me>.
+            </md>.
         </p>
     </introduction>
     <task>
@@ -32,9 +32,9 @@
         <statement>
             <p>
                 Let's instead use logarithmic differentiation. First, apply the log to both sides to get:
-                <me>
+                <md>
                     \ln(y) = \ln\left(\frac{(x-4)^2\sqrt{3x+1}}{(x+1)^7(x+5)^3}\right)
-                </me>.
+                </md>.
                 Since this function is just a bunch of products of things with exponents all put into some big quotient, we can use our log properties to rewrite this!
             </p>
         </statement>
@@ -43,9 +43,9 @@
         <statement>
             <p>
                 We should have:
-                <me>
+                <md>
                     \ln(y) = 2\ln(x-4)+\frac{1}{2}\ln(3x+1) - 7\ln(x+1) - 3\ln(x+5)
-                 </me>.
+                 </md>.
                 Confirm this.
             </p>
         </statement>

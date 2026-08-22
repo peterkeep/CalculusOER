@@ -28,9 +28,9 @@
         </p>
         <p>
           We would then say, depending on the sign of the values of <m>f(x)</m>, that:
-          <me>
+          <md>
             \lim_{x\to a^-} f(x) = \pm \infty \hspace{3cm} \lim_{x\to a^+} f(x) = \pm\infty
-          </me>.
+          </md>.
           If the sign of both one-sided limits are the same, we can say that <m>\displaystyle \lim_{x\to a} f(x) = \pm \infty</m> (depending on the sign), but it is helpful to note that, by the definition of the <xref ref="def-Limit" text="title"/>, this limit does not exist, since <m>f(x)</m> is not arbitrarily close to a single real number.
         </p>
       </statement>
@@ -43,9 +43,9 @@
       <statement>
         <p>
           If <m>f(x) = \dfrac{g(x)}{h(x)}</m> with <m>\displaystyle \lim_{x\to a}g(x) \neq 0</m> and <m>\displaystyle \lim_{x\to a}h(x) = 0</m>, then <m>f(x)</m> has an <xref ref="def-InfiniteLimit" text="title"/> at <m>a</m>. We will often denote this behavior as:
-          <me>
+          <md>
             \lim_{x\to a} f(x) \stackrel{?}{\to} \frac{\#}{0}
-          </me>
+          </md>
           where <m>\#</m> is meant to be some shorthand representation of a non-zero limit in the numerator (often, but not necessarily, some real number).
         </p>
       </statement>
@@ -100,9 +100,9 @@
         <solution>
           <p>
             Let's first factor the denominator: we want to see the factor <m>(x+4)</m>, where we divide by <m>0</m>.
-            <me>
+            <md>
               \left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right) = \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right)
-            </me>
+            </md>
             Now, when <m>x\to 4</m>, we have <m>\left(\dfrac{2x^2-5x+1}{(x+4)^2}\right)\stackrel{?}{\to} \frac{13}{0}</m>. This is our <m>\frac{\#}{0}</m> form that tells us we have an infinite limit. We're going to look at the one-sided limits, but let's notice something:
             <ul>
               <li>
@@ -126,9 +126,9 @@
               <mrow> \amp = \oplus</mrow>
             </md>
             So we know that <m>\displaystyle \lim_{x\to-4^-} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) </m> is an infinite limit, and we know that it is positive. 
-            <me>
+            <md>
               \lim_{x\to-4^-} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) =\infty
-            </me>
+            </md>
           </p>
           <p>
             Now we can check the signs of these factors when <m>x\to-4^+</m> (and so <m>x\gt-4</m>). The numerator is still close to <m>13</m>, and so still negative. Now, <m>(x+4)</m> is positive, and is still being squared.
@@ -140,15 +140,15 @@
           </p>
           <p>
             Since this is an infinite limit and is also positive, we know that:
-             <me>
+             <md>
               \lim_{x\to-4^+} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) =\infty
-            </me>.
+            </md>.
           </p>
           <p>
             Since the function approaches <m>\infty</m> on both sides, we can say that 
-            <me>
+            <md>
               \lim_{x\to-4} \left(\dfrac{2x^2-5x+1}{(x+4)^2}\right) =\infty
-            </me>,
+            </md>,
             but we know that this limit does not exist (since the function values are not close to a single real number).
           </p>
         </solution>
@@ -162,30 +162,30 @@
         <solution>
           <p>
             We can start this in a similar way: factor the denominator to see the places where we divide by <m>0</m>:
-            <me>
+            <md>
               \left(\dfrac{4x^2-x^5}{x^2-4x+3}\right) = \left(\dfrac{4x^2-x^5}{(x-3)(x-1)}\right)
-            </me>.
+            </md>.
             Now, when we think about the limit as <m>x\to 1^-</m>, we're thinking about <m>x\lt 1</m>. We can check the signs, again! The numerator has <m>4x^2-x^5 \to 3</m>, and so for <m>x</m>-values slightly smaller than <m>1</m>, this numerator is close to <m>3</m>, and so positive. Similarly, <m>(x-3)\to -2</m>, and so for <m>x</m>-values close to but less than <m>1</m>, this is negative. Then, we can see that <m>(x-1)\to 0</m>. This is the part that gives us the <m>\frac{\#}{0}</m> form. 
           </p>
           <p>
             For <m>x\lt 1</m>, we have <m>(x-1)\lt 0</m>, and so this is negative.
-            <me>
+            <md>
               \lim_{x\to 1^-}\left(\dfrac{\overbrace{4x^2-x^5}^{\oplus}}{(\underbrace{x-3}_{\ominus})(\underbrace{x-1}_{\ominus})}\right)\to \oplus
-            </me>
+            </md>
             And so this limit is a positive infinite limit:
-            <me>
+            <md>
               \lim_{x\to 1^-} \left(\dfrac{4x^2-x^5}{(x-3)(x-1)}\right) = \infty
-            </me>.
+            </md>.
           </p>
           <p>
             Now we can similarly check the signs when <m>x\to 1^+</m>, which is when <m>x\gt 1</m>. Note that, since <m>x</m> is still close to <m>1</m>, the numerator and the factor <m>(x-3)</m> will retain their sign. But, for the factor <m>(x-1)</m>, we get <m>(x-1)\gt 0</m>.
-            <me>
+            <md>
               \lim_{x\to 1^-}\left(\dfrac{\overbrace{4x^2-x^5}^{\oplus}}{(\underbrace{x-3}_{\ominus})(\underbrace{x-1}_{\oplus})}\right)\to \ominus
-            </me>
+            </md>
             And so this limit is a negative infinite limit:
-            <me>
+            <md>
               \lim_{x\to 1^+} \left(\dfrac{4x^2-x^5}{(x-3)(x-1)}\right) = -\infty
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
@@ -216,12 +216,12 @@
           </p>
           <p>
             All of this to say: 
-            <me>
+            <md>
               \lim_{\theta\to\frac{\pi}{2}^-} \sec(\theta) = \infty
-            </me>
-            <me>
+            </md>
+            <md>
                \lim_{\theta\to\frac{\pi}{2}^+} \sec(\theta) = -\infty
-            </me>
+            </md>
           </p>
         </solution>
       </task>
@@ -238,23 +238,23 @@
       <statement>
         <p>
           If <m>f(x)</m> is defined for all large and positive <m>x</m>-values and <m>f(x)</m> gets arbitrarily close to the single real number <m>L</m> when <m>x</m> gets sufficiently large, then we say:
-          <me>
+          <md>
             \lim_{x\to\infty} f(x) = L
-          </me>.
+          </md>.
         </p>
         <p>
           Similarly, if <m>f(x)</m> is defined for all large and negative <m>x</m>-values and <m>f(x)</m> gets arbitrarily close to the single real number <m>L</m> when <m>x</m> gets sufficiently negative, then we say:
-          <me>
+          <md>
             \lim_{x\to-\infty} f(x) = L
-          </me>.
+          </md>.
         </p>
         <p>
           In the case that <m>f(x)</m> has a <term>limit at infinity</term> that exists, then we say <m>f(x)</m> has a horizontal asymptote at <m>y=L</m>.
         </p>
         <p>
           Lastly, if <m>f(x)</m> is defined for all large and positive (or negative) <m>x</m>-values and <m>f(x)</m> gets arbitrarily large and positive (or negative) when <m>x</m> gets sufficiently large (or negative), then we could say:
-          <me>
-            \lim_{x\to-\infty} f(x) = \pm\infty \text{ or } \lim_{x\to\infty} f(x) = \pm\infty</me>.
+          <md>
+            \lim_{x\to-\infty} f(x) = \pm\infty \text{ or } \lim_{x\to\infty} f(x) = \pm\infty</md>.
         </p>
       </statement>
     </definition>
@@ -281,9 +281,9 @@
       <statement>
         <p>
           If <m>p</m> is a positive real number, then:
-          <me>
+          <md>
             \lim_{x\to\infty} \left(\frac{1}{x^p}\right) = 0 \text{ and } \lim_{x\to-\infty} \left(\frac{1}{x^p}\right) = 0 
-          </me>.
+          </md>.
         </p>
       </statement>
     </theorem>
@@ -295,13 +295,13 @@
       <statement>
         <p>
           For some polynomial function:
-          <me>
+          <md>
             p(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0
-          </me>
+          </md>
           with <m>n</m> a positive integer (the degree) and all of the coefficients <m>a_0, a_1, ..., a_n</m> real numbers (with <m>a_n\neq 0</m>), then 
-          <me>
+          <md>
             \lim_{x\to\infty} p(x) = \lim_{x\to\infty} a_n x^n
-          </me>         
+          </md>         
         </p>
         <p>
           That is, the leading term (the term with the highest exponent) defines the end behavior for the whole polynomial function.
@@ -310,9 +310,9 @@
       <proof>
         <p>
           Consider the polynomial function:
-          <me>
+          <md>
             p(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_2 x^2 + a_1 x + a_0
-          </me>
+          </md>
           where <m>n</m> is some integer and <m>a_k</m> is a real number for <m>k=0,1,2,...,n</m>. For simplicity, we will consider only the limit as <m>x\to\infty</m>, but we could easily repeat this exact proof for the case where <m>x\to-\infty</m>.
           </p> 
           <p>
@@ -383,7 +383,7 @@
               <mrow> \amp = \lim_{x\to\infty} 2 = 2</mrow>
             </md>
             The same process could be used to show that:
-             <me>\lim_{x\to -\infty} \left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right)=2</me>.
+             <md>\lim_{x\to -\infty} \left(\dfrac{2x^2-5x+1}{x^2+8x+16}\right)=2</md>.
           </p>
         </solution>
       </task>
@@ -408,12 +408,12 @@
         <hint>
           <p>
             It might be helpful to remind yourself of the definition of the absolute value function:
-            <me>
+            <md>
               |x| = \begin{cases}
               -x \amp \text{when } x\lt0\\
               x \amp \text{when } x\geq 0
               \end{cases}
-            </me>.
+            </md>.
             This means you can replace <m>|x|</m> with either <m>x</m> or <m>-x</m> in the limits as <m>x\to\infty</m> and <m>x\to-\infty</m>.
           </p>
         </hint>

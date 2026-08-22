@@ -12,13 +12,13 @@
     </p>
     <p>
       Function value accumulation is what we've been looking at lately! That's what integration is! We are trying to accumulate all of the function values and weigh them based on their <q>width.</q> In the context of continuous functions, that means we start approximating this accumulation by looking at some finite number of function values that we pick, and we give them some <m>\Delta x</m> width between them. That's our Riemann sum:
-      <me>
+      <md>
         \sum_{k=1}^n f(x_k^*) \; \Delta x
-      </me>
+      </md>
       And from there, we work on making that space between function values get smaller (as the number of function values we use gets higher). So when <m>n</m> is the number of function values, we can let <m>n\to \infty</m> and correspondingly we get <m>\Delta x \to dx</m>, the differential in our integral:
-      <me>
+      <md>
         \lim_{n\to\infty} \sum_{k=1}^n f(x_k^*) \;\Delta x = \int_{x=a}^{x=b}f(x)\;dx
-      </me>.
+      </md>.
     </p>
     <p>
       And this is how we've talked about infinite series so far, even adopting the same notions of convergence and thinking about how we extend a familiar idea (in this case adding numbers, compared to integrating a function) out to infinity: we just keep walking our (finite) ending point out to infinity using a limit!
@@ -95,9 +95,9 @@
             <li>
               <p>
                 Let's start with the assumption that <m>\displaystyle \int_{x=0}^\infty f(x)\;dx</m> converges. We know, based on <xref ref="def-ConvergenceImproperIntegral"/>, that this means that <m>\displaystyle \lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx</m> exists. We also know, since <m>f(x)\gt 0</m>, that 
-                <me>
+                <md>
                   \lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx \gt \int_{x=0}^{x=n} f(x)\;dx
-                </me>.
+                </md>.
                 This means:
                 <md>
                   <mrow>\sum_{k=0}^n a_k \amp\lt a_0 + \int_{x=0}^{x=n} f(x)\;dx </mrow>
@@ -116,9 +116,9 @@
             <li>
               <p>
                 Now, we can start with the assumption that the integral <m>\displaystyle \int_{x=0}^\infty f(x)\;dx</m> diverges. Since we know that <m>f(x)</m> is positive, then we know that
-                <me>
+                <md>
                   \lim_{n\to\infty} \int_{x=0}^{x=n} f(x)\;dx = \infty
-                </me>.
+                </md>.
                 We can reconsider the inequalities from <xref ref="act-IntegralTest"/>:
                 <md>
                   <mrow>\int_{x=0}^{x=n} f(x)\;dx \amp\lt \sum_{k=0}^n a_k </mrow>
@@ -141,9 +141,9 @@
     </p>
     <p>
       But now, in the <em>discrete context</em>, we have something different. Without being too formal, we can think about the corresponding limit of <m>\Delta k</m> as we slice this up further. Because our functions are in the discrete context, our inputs have a minimum distance between each other: they're all 1 unit apart! So here, in the limit where we expect <m>\Delta x\to dx</m>, we get <m>\Delta k\to 1</m>. And similarly, in a typical definite integral, we are adding up an infinite number of function outputs between some starting input and stopping input. Now in the discrete context, we don't get that! We get our normal partial sum: 
-      <me>
+      <md>
         \sum_{k=0}^n a_k \underbrace{\Delta k}_{1} = \sum_{k=0}^n a_k
-      </me>.
+      </md>.
       So the <xref ref="thm-IntegralTest" text="title"/> is pretty obvious, really: these corresponding objects retain the same type of behavior when we translate them back and forth between the continuous context and the discrete context.
     </p>
     <p>
@@ -169,9 +169,9 @@
         <solution>
           <p>
             This is a fine opportunity to apply the Integral Test. The Integral Test says that we can link the behavior of the integral and the series:
-            <me>
+            <md>
               \sum_{k=0}^\infty \frac{1}{k^2+1} \sim \int_{x=0}^\infty \frac{1}{x^2+1}\;dx
-            </me>.
+            </md>.
             Let's think about the integral!
             <md>
               <mrow>\int_{x=0}^\infty \frac{1}{x^2+1}\;dx \amp = \lim_{t\to\infty}\int_{x=0}^{x=t}\frac{1}{x^2+1}\;dx</mrow>
@@ -227,9 +227,9 @@
         <solution>
           <p>
             Let's apply the Integral Test. we'll connect the behavior of the integral and the series:
-            <me>
+            <md>
               \sum_{k=1}^{\infty} \frac{k}{e^{k^2+1}} \sim \int_{x=1}^\infty \frac{x}{e^{x^2+1}}\;dx
-            </me>.
+            </md>.
             We'll consider the integral, and use a <m>u</m>-substitution where <m>u=-(x^2+1)</m> and <m>du=-2x\;dx</m>.
             <md>
               <mrow>\int_{x=1}^\infty \frac{x}{e^{x^2+1}}\;dx \amp = \lim_{t\to\infty} \int_{x=1}^{x=t} \frac{x}{e^{x^2+1}}\;dx</mrow>
@@ -260,9 +260,9 @@
         <solution>
           <p>
             If we apply the Integral Test, we're connecting the following series and integral:
-            <me>
+            <md>
               \sum_{k=2}^{\infty} \frac{1}{k\ln(k)} \sim \int_{x=2}^{\infty} \frac{1}{x\ln(x)}\;dx
-            </me>.
+            </md>.
             We'll consider the integral and use the substitution <m>u=\ln(x)</m> so that <m>du=\dfrac{1}{x}\;dx</m>.
             <md>
               <mrow>\int_{x=2}^{\infty} \frac{1}{x\ln(x)}\;dx \amp =\lim_{t\to\infty} \int_{x=2}^{x=t} \frac{1}{x\ln(x)}\;dx</mrow>
@@ -300,7 +300,7 @@
         <li>
           <p>
             <em>Positive:</em> We need <m>f(x)</m> and <m>a_k</m> to be positive in order for us to get monotonic sequences. Since we know that <m>a_k\gt 0</m>, we guarantee ourselves that <m>S_{n+1}\gt S_n</m>, since we're really adding another positive term. The same thing is true for the integrals, where we guarantee that
-            <me>\displaystyle \int_{x=0}^{x=n+1} f(x)\;dx \gt \int_{x=0}^{x=n} f(x)\;dx</me>.
+            <md>\displaystyle \int_{x=0}^{x=n+1} f(x)\;dx \gt \int_{x=0}^{x=n} f(x)\;dx</md>.
           </p>
         </li>
         <li>
@@ -325,13 +325,13 @@
     </note>
     <p>
       We talked about why it's nice to have a sequence of terms that correspond with a monotonic function, but what happens when they don't? Briefly, we can say that there are plenty of examples where the series and the integral may not behave similarly. For an easy to see example, let's consider the following series:
-      <me>
+      <md>
         \sum_{k=0}^{\infty} \sin^2(\pi\cdot k)
-      </me>.
+      </md>.
       If we try to think about the corresponding integral, we're considering:
-      <me>
+      <md>
         \int_{x=0}^\infty \sin^2(\pi\cdot x)\;dx
-      </me>.
+      </md>.
       Can you see what the problem is? The issue becomes evident when we plot the sequence of terms and the continuous function on the same axes.
     </p>
     <figure xml:id="fig-OscillatingIntegralTest">
@@ -342,9 +342,9 @@
     </figure>
     <p>
       We can see that if we define the sequence of terms using <m>a_k=\sin^2(\pi\cdot k)</m>, then <m>a_k = 0</m> for <m>k=0,1,2,...</m>. This means that
-      <me>
+      <md>
         \sum_{k=0}^{\infty} \sin^2(\pi\cdot k) = 0 + 0 + 0 + ... = 0
-      </me>.
+      </md>.
       Meanwhile, we can see that the integral <m>\displaystyle \int_{x=0}^\infty \sin^2(\pi\cdot x)\;dx</m> will diverge to <m>\infty</m>, since every oscillation adds the same positive area over and over. The limit will not exist!
     </p>
     <p>

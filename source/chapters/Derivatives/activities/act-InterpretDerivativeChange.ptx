@@ -6,9 +6,9 @@
         </p>
         <p>
             Let's say that we want to model the speed of a car as it races along a strip of the road. By the time we start measuring it (we'll call this time 0), the position of the car (along the straight strip of road) is:
-            <me>
+            <md>
                 s(t) = 73t + t^2
-            </me>,
+            </md>,
             where <m>t</m> is time measured in seconds and <m>s(t)</m> is the position measured in feet. Let's say that this function is only relevant on the domain <m>0\leq t\leq 15</m>. That is, we only model the position of the car for a 15-second window as it speeds past us.
         </p>
     </introduction>

@@ -64,13 +64,13 @@
     </p>
     <p>
       Let's consider, as a first (visual) example, the infinite series:
-      <me>
+      <md>
         \sum_{k=0}^{\infty} \frac{3}{k+1}
-      </me>.
+      </md>.
       We can think about the two important sequences that we'll consider:
-      <me>
+      <md>
       \underbrace{\left\{\frac{3}{n+1}\right\}_{n=0}^\infty}_{\{a_n\}\text{, the sequence of terms}} \hspace{1cm} \text{and}\hspace{1cm} \underbrace{\left\{\sum_{k=0}^n\frac{3}{k+1}\right\}_{n=0}^\infty}_{\{S_n\}\text{, the sequence of partial sums}}
-      </me>
+      </md>
     </p>
     <p>
       We can plot the sequence of terms, <m>\left\{\dfrac{3}{n+1}\right\}_{n=0}^{\infty}</m>, and visualize the limit <m>\displaystyle \lim_{n\to\infty} a_n=0</m>. This sequence of terms converges to 0.
@@ -83,9 +83,9 @@
     </figure>
     <p>
       Then, we can compare this with the plot of the partial sums, <m>\{S_n\}</m> where:
-      <me>
+      <md>
         S_n = \sum_{k=0}^n \frac{3}{k+1}
-      </me>.
+      </md>.
     </p>
     <figure xml:id="fig-PartialSum-2">
       <caption><m>\{S_n\}</m>, the sequence of partial sums for the series.</caption>
@@ -212,9 +212,9 @@
       </hint>
       <solution>
         <p>
-          <me>
+          <md>
             \sum_{k=2}^\infty \left(\frac{2}{k^2-1}\right) = \sum_{k=2}^\infty \left(\frac{1}{k-1} - \frac{1}{k+1}\right)
-          </me>
+          </md>
 
           <md>
             <mrow> S_2 \amp = 1 - \frac{1}{3} </mrow>

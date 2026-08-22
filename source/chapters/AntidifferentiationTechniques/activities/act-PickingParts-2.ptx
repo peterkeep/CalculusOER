@@ -3,9 +3,9 @@
     <introduction>
         <p>
             This time we'll look at a very similar integral:
-            <me>
+            <md>
                 \int x\ln(x)\;dx
-            </me>.
+            </md>.
             Again, we'll set this up two different ways and compare them.
         </p>
     </introduction>
@@ -13,12 +13,12 @@
         <statement>
             <p>
                 We'll start with selecting <m>u=x</m> and <m>dv = \ln(x)\;dx</m>. Fill in the following with the rest of the pieces:
-                <me>
+                <md>
                     \begin{array}{ll}
                         u = x \amp v = <fillin characters="5" />\\
                         du = <fillin characters="5" /> \amp dv = \ln(x)\;dx
                     \end{array}
-                </me>
+                </md>
             </p>
         </statement>
         <hint>
@@ -31,12 +31,12 @@
         <statement>
             <p>
                 Ok, so here we <em>have to</em> swap the pieces and try the setup with <m>u=\ln(x)</m> and <m>dv = x\;dx</m>, since we only know how to differentiate <m>\ln(x)</m>. Fill in the following with the rest of the pieces:
-                <me>
+                <md>
                     \begin{array}{ll}
                         u = \ln(x) \amp v = <fillin characters="5" />\\
                         du = <fillin characters="5" /> \amp dv = x\;dx
                     \end{array}
-                </me>
+                </md>
             </p>
         </statement>
     </task>

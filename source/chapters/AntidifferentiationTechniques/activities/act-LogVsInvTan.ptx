@@ -6,14 +6,14 @@
         </p>
         <sidebyside>
             <p>
-                <me>
+                <md>
                     \int \frac{x+2}{x^2+4x+5}\;dx
-                </me>
+                </md>
             </p>
             <p>
-                <me>
+                <md>
                     \int \frac{2}{x^2+4x+5}\;dx
-                </me> 
+                </md> 
             </p>
         </sidebyside> 
     </introduction>
@@ -68,9 +68,9 @@
         <solution>
             <p>
                 We can use <m>(x+2)^2</m> since <m>(x+2)^2=x^2+4x+4</m>. Then, we can write:
-                <me>
+                <md>
                     x^2+4x+5 = \overbrace{(x+2)^2}^{x^2+4x+4}+1
-                </me>.
+                </md>.
             </p>
         </solution>
     </task>

@@ -20,9 +20,9 @@
     <title>Integration by Parts</title>      
     <p>
       Suppose <m>u(x)</m> and <m>v(x)</m> are both differentiable   functions. Then:
-      <me>
+      <md>
         \int u\;dv = uv - \int v\;du
-      </me>.
+      </md>.
     </p>
   </assemblage>
   <p>
@@ -74,28 +74,28 @@
         </hint>
         <solution>
           <p>
-            <me>
+            <md>
               \begin{array}{ll}
                 u = x^2 &amp; v = e^x\\
                 du = 2x\; dx &amp; dv = e^x\;dx
               \end{array}
-            </me>
-            <me>
+            </md>
+            <md>
               \int x^2e^x\;dx = x^2e^x - \int 2xe^x \;dx
-            </me>
+            </md>
               We need to do more integration by parts!
-            <me>
+            <md>
               \begin{array}{ll}
                 u = 2x &amp; v = e^x\\
                 du = 2\;dx &amp; dv = e^x\;dx
               \end{array}
-            </me>
-            <me>
+            </md>
+            <md>
               \begin{aligned}
               \int x^2e^x\;dx &amp; = x^2e^x - \left(2xe^x - \int 2e^x\;dx\right)\\
               &amp; = x^2e^x-2xe^x+2e^x+C
               \end{aligned}
-            </me>
+            </md>
           </p>
         </solution>
       </task>
@@ -112,20 +112,20 @@
         </hint>
         <solution>
           <p>
-            <me>
+            <md>
               \begin{array}{ll}
                 u = \tan^{-1}(x) &amp; v = x^2\\
                 du = \frac{1}{x^2+1}\;dx &amp; dv = 2x\;dx
               \end{array}
-            </me>
-            <me>
+            </md>
+            <md>
               \begin{aligned}
                 \int 2x\tan^{-1}(x)\;dx &amp; = x^2\tan^{-1}(x) - \int \frac{x^2}{x^2+1}\;dx\\
                 &amp; = x^2\tan^{-1}(x) - \int \frac{(x^2+1)-1}{x^2+1}\;dx &amp; \text{Alternatively, use long division.}\\
                 &amp; = x^2\tan^{-1}(x) - \int 1 - \frac{1}{x^2+1}\;dx\\
                 &amp; = x^2\tan^{-1}(x) - x + \tan^{-1}(x)+C
               \end{aligned}
-            </me>
+            </md>
           </p>
         </solution>
       </task>
@@ -155,19 +155,19 @@
       </hint>
       <solution>
         <p>
-          <me>
+          <md>
             \begin{array}{ll}
               u = \tan^{-1}(x) &amp; v = x^2+1\\
               du = \frac{1}{x^2+1}\;dx &amp; dv = 2x\;dx
             \end{array}
-          </me>
-          <me>
+          </md>
+          <md>
             \begin{aligned}
               \int 2x\tan^{-1}(x)\;dx &amp; = (x^2+1)\tan^{-1}(x) - \int \frac{x^2+1}{x^2+1}\;dx\\
               &amp; = x^2\tan^{-1}(x) + \tan^{-1}(x) - \int \;dx\\
               &amp; = x^2\tan^{-1}(x) + \tan^{-1}(x) - x + C
             \end{aligned}
-          </me>
+          </md>
         </p>
       </solution>
     </example>
@@ -194,18 +194,18 @@
       </hint>
       <solution>
         <p>
-          <me>
+          <md>
             \begin{array}{ll}
               u = \ln(x) &amp; v = x\\
               du = \frac{1}{x}\;dx &amp; dv = \;dx
             \end{array}
-          </me> 
-          <me>
+          </md> 
+          <md>
             \begin{aligned}
               \int \ln(x)\;dx &amp;= x\ln(x) - \int \frac{x}{x}\;dx\\
               &amp; = x\ln(x) - x + C
             \end{aligned}
-          </me>
+          </md>
         </p>
       </solution>
       <solution>
@@ -226,9 +226,9 @@
             <mrow> \amp = te^t - e^t +C</mrow>
           </md>
           Now, we can substitute back to <m>x</m>:
-          <me>
+          <md>
             te^t - e^t +C = x\ln(x)-x+C
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -251,26 +251,26 @@
       </statement>
       <solution>
         <p>
-          <me>
+          <md>
             \begin{array}{ll}
               u = x &amp; v = x\ln(x)-x\\
               du = \;dx &amp; dv = \ln(x)\;dx
             \end{array}
-          </me>
-          <me>
+          </md>
+          <md>
             \begin{aligned}
               \int x\ln(x)\;dx &amp; = x(x\ln(x)-x) - \int x\ln(x)-x\;dx\\
               &amp; = x^2\ln(x)-x^2 - \int x\ln(x)\;dx + \int x \;dx\\
               &amp; = x^2\ln(x)-x^2 + \frac{x^2}{2} - \int x\ln(x)\;dx
             \end{aligned}
-          </me>
+          </md>
             Note that this last integral is really recognizable: it's the one we started with! Let's <q>solve</q> this equation for that integral by adding it to both sides of our equation.
-          <me>
+          <md>
             \begin{aligned}
               2\int x\ln(x)\;dx &amp; = x^2\ln(x) - \frac{x^2}{2}\\
               \int x\ln(x)\;dx &amp; = \frac{x^2\ln(x)}{2} - \frac{x^2}{4} + C
             \end{aligned}
-          </me>
+          </md>
           
         </p>
       </solution>
@@ -304,19 +304,19 @@
         </hint>
         <solution>
           <p>
-            <me>
+            <md>
               \begin{array}{ll}
                 u = \sin(x) &amp; v = \sin(x)\\
                 du = \cos(x)\;dx &amp; dv = \cos(x)\;dx
               \end{array}
-            </me>
-            <me>
+            </md>
+            <md>
               \begin{aligned}
                 \int \sin(x)\cos(x)\;dx &amp; = \sin^2(x) - \int \sin(x)\cos(x)\;dx\\
                 2\int \sin(x)\cos(x)\;dx &amp; = \sin^2(x)\\
                 \int \sin(x)\cos(x)\;dx &amp; = \frac{\sin^2(x)}{2} + C
               \end{aligned}
-            </me>
+            </md>
           </p>
         </solution>
       </task>
@@ -328,31 +328,31 @@
         </statement>
         <solution>
           <p>
-            <me>
+            <md>
               \begin{array}{ll}
                 u = e^x &amp; v = \sin(x)\\
                 du = e^x\;dx &amp; dv = \cos(x)\;dx
               \end{array}
-            </me>
-            <me>
+            </md>
+            <md>
               \begin{aligned}
                 \int e^x\cos(x)\;dx &amp; = e^x\sin(x) - \int e^x\sin(x)\;dx
               \end{aligned}
-            </me>
-            <me>
+            </md>
+            <md>
               \begin{array}{ll}
                 u = e^x &amp; v = -\cos(x)\\
                 du = e^x\;dx &amp; dv = \sin(x)\;dx
               \end{array}
-            </me>
-            <me>
+            </md>
+            <md>
               \begin{aligned}
                 \int e^x\cos(x)\;dx &amp; = e^x\sin(x) - \int e^x\sin(x)\;dx\\
                 \int e^x\cos(x)\;dx &amp; = e^x\sin(x) + e^x\cos(x) - \int e^x\cos(x)\;dx\\
                 2\int e^x\cos(x)\;dx &amp; = e^x\sin(x) + e^x\cos(x)\\
                 \int e^x\cos(x)\;dx &amp; = \frac{e^x\sin(x) + e^x\cos(x)}{2}+C
               \end{aligned}
-            </me>
+            </md>
           </p>
         </solution>
       </task>

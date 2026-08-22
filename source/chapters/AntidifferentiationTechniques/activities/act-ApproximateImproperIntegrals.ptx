@@ -28,13 +28,13 @@
         <statement>
             <p>
                 Let's focus on <m>\displaystyle \int_{x=2}^{\infty} \frac{1}{(x+1)^2}\;dx</m> first. We're going to look at the slightly different integral:
-                <me>
+                <md>
                     \int_{x=2}^{x=t} \frac{1}{(x+1)^2}\;dx
-                </me>.
+                </md>.
                 As long as <m>t</m> is some real number with <m>t\gt 2</m>, then our function is continuous and bounded on <m>[2,t]</m>, and so we can evaluate this integral:
-                <me>
+                <md>
                     \int_{x=2}^{x=t} \frac{1}{(x+1)^2}\;dx = F(t)-F(2)
-                </me>
+                </md>
                 where <m>F(x)</m> is an antiderivative of <m>f(x)=\dfrac{1}{(x+1)^2}</m>.
             </p>
             <p>
@@ -60,25 +60,25 @@
                     <li>
                         <p>
                             Let's start with making <m>t=99</m>. So we're going to evaluate:
-                            <me>
+                            <md>
                                 \int_{x=2}^{x=99} \frac{1}{(x+1)^2}\;dx = F(99)-F(2)
-                            </me>
+                            </md>
                         </p>
                     </li>
                     <li>
                         <p>
                             Now let <m>t=999</m>. Evaluate:
-                            <me>
+                            <md>
                                 \int_{x=2}^{x=999} \frac{1}{(x+1)^2}\;dx = F(999)-F(2)
-                            </me>
+                            </md>
                         </p>
                     </li>
                     <li>
                         <p>
                             Now let <m>t=9999</m>. Evaluate:
-                            <me>
+                            <md>
                                 \int_{x=2}^{x=9999} \frac{1}{(x+1)^2}\;dx = F(9999)-F(2)
-                            </me>
+                            </md>
                         </p>
                     </li>
                 </ul>
@@ -89,9 +89,9 @@
         <statement>
             <p>
                 Based on what you found, what do you <em>think</em> is happening when <m>t\to \infty</m> to the definite integral
-                <me>
+                <md>
                     \int_{x=2}^{x=t} \frac{1}{(x+1)^2}\;dx = F(t)-F(2)
-                </me>?
+                </md>?
             </p>
         </statement>
     </task>
@@ -99,13 +99,13 @@
         <statement>
             <p>
                 Ok, we're going to switch our focus to the other improper integral,<m>\displaystyle \int_{x=-1}^{x=2} \frac{1}{(x+1)^2}\;dx</m>. again, we'll look at a slightly different integral:
-                <me>
+                <md>
                     \int_{x=t}^{x=2} \frac{1}{(x+1)^2}\;dx
-                </me>.
+                </md>.
                 As long as <m>t</m> is some real number with <m>-1\lt t \lt 2</m>, then our function is continuous and bounded on <m>[t,2]</m>, and so we can evaluate this integral:
-                <me>
+                <md>
                     \int_{x=t}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F(t)
-                </me>
+                </md>
                 where <m>F(x)</m> is an antiderivative of <m>f(x)=\dfrac{1}{(x+1)^2}</m>. We can use the same antiderivative as before!
             </p>
             <p>
@@ -114,25 +114,25 @@
                     <li>
                         <p>
                             Let's start with making <m>t=-\frac{9}{10}</m>. So we're going to evaluate:
-                            <me>
+                            <md>
                                 \int_{x=-9/10}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F\left(-\frac{9}{10}\right)
-                            </me>
+                            </md>
                         </p>
                     </li>
                     <li>
                         <p>
                             Now let <m>t=-\frac{99}{100}</m>. Evaluate:
-                            <me>
+                            <md>
                                 \int_{x=-99/100}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F\left(-\frac{99}{100}\right)
-                            </me>
+                            </md>
                         </p>
                     </li>
                     <li>
                         <p>
                             Now let <m>t=-\frac{999}{1000}</m>. Evaluate:
-                            <me>
+                            <md>
                                 \int_{x=-999/1000}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F\left(-\frac{999}{1000}\right)
-                            </me>
+                            </md>
                         </p>
                     </li>
                 </ul>
@@ -143,9 +143,9 @@
         <statement>
             <p>
                 Based on what you found, what do you <em>think</em> is happening when <m>t\to -1^+</m> to the definite integral
-                <me>
+                <md>
                     \int_{x=t}^{x=2} \frac{1}{(x+1)^2}\;dx = F(2)-F(t)
-                </me>?
+                </md>?
             </p>
         </statement>
     </task>

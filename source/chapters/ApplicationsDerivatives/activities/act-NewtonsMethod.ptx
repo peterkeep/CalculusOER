@@ -15,17 +15,17 @@
             </p>
             <p>
                 Find <m>f'(x)</m>, and then construct the linear approximation:
-                <me>
+                <md>
                     L(x) = f'(2)(x-2)+f(2)
-                </me>.
+                </md>.
             </p>
         </statement>
         <solution>
             <p>
                 Since <m>f'(x)=2x</m>, we have <m>f'(2)=4</m> and <m>f(2) = 2</m>. So then we end up with the following for our linear approximation:
-                <me>
+                <md>
                     L(x) = 4(x-2)+2
-                </me>.
+                </md>.
             </p>
         </solution>
     </task>
@@ -102,9 +102,9 @@
             </p>
             <p>
                 Say we've built a linear approximation at some <m>x</m>-value (we'll call it <m>x_{\text{old}}</m>).
-                <me>
+                <md>
                     L(x) = f'(x_{\text{old}})(x-x_{\text{old}}) + f(x_{\text{old}})
-                </me>.
+                </md>.
                 Set this equal to 0 and solve.
             </p>
         </statement>

@@ -48,9 +48,9 @@
         <introduction>
             <p>
                 Consider the following integral, with the partial fraction forms written out:
-                <me>
+                <md>
                     \int \frac{x^3+6x^2-x}{(x-2)(x+1)(x^2+1)}\;dx = \int \left(\frac{A}{x-2} + \frac{B}{x+1}+\frac{Cx+D}{x^2+1}\right)\;dx
-                </me>.
+                </md>.
             </p>
         </introduction>
         <task>
@@ -117,9 +117,9 @@
         <statement>
         <p>
             Explain why partial fractions is not an appropriate technique for the following integral:
-            <me>
+            <md>
                 \int \dfrac{x^2+x}{x^2-x+1}\;dx
-            </me>.
+            </md>.
             How should we approach this integral, instead?
         </p>
         </statement>
@@ -198,9 +198,9 @@
             <hint>
                 <p>
                     If <m>u=e^{2x}</m> then <m>du=2e^{2x}\;dx</m> and our resulting integral looks like:
-                    <me>
+                    <md>
                         \int \frac{2}{(u+3)(u-5)}\;du
-                    </me>.
+                    </md>.
                 </p>
             </hint>
         </task>
@@ -213,9 +213,9 @@
             <hint>
                 <p>
                     If <m>u=\sqrt{e^x+1}</m> then <m>du = \dfrac{e^x}{2\sqrt{e^x+1}}\;dx</m> and the resulting integral is:
-                    <me>
+                    <md>
                         \int \frac{2u^2}{u^2-1}\;du = \int 2 + \frac{2}{u^2-1}\;du
-                    </me>.
+                    </md>.
                 </p>
             </hint>
         </task>
@@ -228,9 +228,9 @@
             <hint>
                 <p>
                     If <m>u=\sqrt{x}</m> then <m>du=\dfrac{1}{2\sqrt{x}}\;dx</m> and the resulting integral is:
-                    <me>
+                    <md>
                         \int \frac{2u+6}{u^2-1}\;du
-                    </me>.
+                    </md>.
                 </p>
             </hint>
         </task>

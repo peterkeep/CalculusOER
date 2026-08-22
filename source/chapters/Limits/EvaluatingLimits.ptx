@@ -38,39 +38,39 @@
             <li>
               <p>
                 <em>Sums:</em> The limit of the sum of <m>f(x)</m> and <m>g(x)</m> is the sum of the limits of <m>f(x)</m> and <m>g(x)</m>:
-                <me>
+                <md>
                   \lim_{x\to a}\left(f(x)+g(x)\right) = \lim_{x\to a} f(x) + \lim_{x\to a} g(x)
-                </me>
+                </md>
               </p>
             </li>
             <li>
               <p>
                 <em>Differences:</em> The limit of a difference of <m>f(x)</m> and <m>g(x)</m> is the difference of the limits of <m>f(x)</m> and <m>g(x)</m>:
-                <me>
+                <md>
                   \lim_{x\to a} \left(f(x)-g(x)\right) = \lim_{x\to a} f(x) - \lim_{x\to a} g(x)
-                </me>
+                </md>
               </p>
             </li>
             <li>
               <p>
                 <em>Coefficients:</em> If <m>k</m> is some real number coefficient, then:
-                <me>\lim_{x\to a} kf(x) = k\lim_{x\to a} f(x)</me>
+                <md>\lim_{x\to a} kf(x) = k\lim_{x\to a} f(x)</md>
               </p>
             </li>
             <li>
               <p>
                 <em>Products:</em> The limit of a product of <m>f(x)</m> and <m>g(x)</m> is the product of the limits of <m>f(x)</m> and <m>g(x)</m>:
-                <me>
+                <md>
                   \lim_{x\to a} \left(f(x)\cdot g(x)\right) = \left(\lim_{x\to a}f(x)\right) \cdot \left(\lim_{x\to a}g(x)\right)
-                </me>
+                </md>
               </p>
             </li>
             <li>
               <p>
                 <em>Quotients:</em> The limit of a quotient of <m>f(x)</m> and <m>g(x)</m> is the quotient of the limits of <m>f(x)</m> and <m>g(x)</m> (provided that you do not divide by 0):
-                <me>
+                <md>
                   \lim_{x\to a} \left(\frac{f(x)}{g(x)}\right) = \frac{\displaystyle \left(\lim_{x\to a} f(x)\right)}{\displaystyle \left(\lim_{x\to a}g(x)\right)} \hspace{1cm} (\text{if } \lim_{x\to a} g(x)\neq 0)
-                </me>
+                </md>
               </p>
             </li>
           </ol>
@@ -100,17 +100,17 @@
             <li>
               <p>
                 <em>Limit of a Constant Function:</em> If <m>k</m> is some real number constant, then:
-                <me>
+                <md>
                   \lim_{x\to a} k = k
-                </me>
+                </md>
               </p>
             </li>
             <li>
               <p>
                 <em>Limit of the Identity Function:</em> 
-                <me>
+                <md>
                   \lim_{x\to a} x = a
-                </me>
+                </md>
               </p>
             </li>
           </ol>
@@ -129,9 +129,9 @@
       <statement>
         <p>
           If <m>p(x)</m> is a polynomial function and <m>a</m> is some real number, then:
-          <me>
+          <md>
             \lim_{x\to a}p(x) = p(a)
-          </me>
+          </md>
         </p>
       </statement>
     </theorem>

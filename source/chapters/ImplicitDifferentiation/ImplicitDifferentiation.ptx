@@ -39,16 +39,16 @@
                 <statement>
                     <p>
                         A function or curve that is defined <term>explicitly</term> is one where the relationship between the variables is stated in with an equation like <m>y=f(x)</m>. Here, <m>x</m> is the input variable and we can find each corresponding value of the <m>y</m>-variable by applying some operations to <m>x</m>. As an example, we might consider the following function:
-                        <me>
+                        <md>
                             y=3x+1
-                        </me>.
+                        </md>.
                         
                     </p>
                     <p>
                         A function or curve that is defined <term>implicitly</term> is one where the relationship between the variables is stated with an equation connecting the variables, but not necessarily one which is solved for a single variable. Here, the relationship between variables is not stated with the typical input and output variables. As an example, we might consider the same function as above, but defined as:
-                        <me>
+                        <md>
                             y-3x-1=0
-                        </me>.
+                        </md>.
                     </p>
                     <p>
                         Often, an implicitly defined curve is one where we <em>cannot</em> solve for a single variable by isolating it.
@@ -56,13 +56,13 @@
                 </statement>
             </definition>
             A classic and important implicitly defined curve is the unit circle:
-            <me>
+            <md>
                 x^2+y^2=1
-            </me>.
+            </md>.
             We can try to isolate for <m>y</m> and write this as an explicitly defined curve, and end up with:
-            <me>
+            <md>
                 y=\sqrt{1-x^2}
-            </me>. 
+            </md>. 
             Unfortunately, this only displays the upper half of the circle, since the square root will only output positive values. In this case, we can get around this by defining the circle with two functions.
         </p>
         <interactive platform="doenetml" width="90%" aspect="1:0.6">
@@ -98,7 +98,7 @@
             <introduction>
                 <p>
                     Let's repeat some of this process, but using a new curve. Consider the curve defined by the equation:
-                    <me>y^2=x^3-x+1</me>.
+                    <md>y^2=x^3-x+1</md>.
                     This curve is a special curve with some interesting mathematical properties, and is actually a part of a family of curves called <term>elliptic curves</term>. For now, let's just consider it as a fun curve to look at, and use implicit differentiation to think about it.
                 </p>
                 <figure xml:id="fig-EllipticCurve">
@@ -200,16 +200,16 @@
         </p>
         <p>
             In these implicitly defined curves, we can manipulate the equations to never have to think about division! Consider the curve:
-            <me>
+            <md>
                 \frac{\sin(x)}{x} + \frac{\sin(y)}{x} = xy^2
-            </me>.
+            </md>.
             Graph this curve in a graphing utility like Desmos. Does it look any different than the curve in <xref ref="act-ImplicitSine"/>?
         </p>
         <p>
             The only difference, really, is that the curve with the division is not defined at <m>x=0</m>. As long as we keep those domain issues in mind, we can multiply everything by <m>x</m> to get our familiar equation:
-            <me>
+            <md>
                 \sin(x)+\sin(y)=x^2y^2
-            </me>.
+            </md>.
             And there we go, we never have to think about the Quotient Rule in these kinds of contexts!
         </p>
         <p>
@@ -225,21 +225,21 @@
                         </p>
                         <p>
                             This generalizes more: any time the variable in our derivative notation does not match the variable in the function/term, we need to use the Chain Rule:
-                            <me>
+                            <md>
                                 \dd{}{y}\left(e^x\right) \hspace{0.7cm} 
                                 \dd{}{t}\left(\sin(x)\right) \hspace{0.7cm}
                                 \dd{}{x}\left(y^4\right)
-                            </me>
+                            </md>
                         </p>
                     </li>
                     <li>
                         <p>
                             We use the <em>Product Rule</em> whenever we differentiate a term with some combination of <m>x</m> and <m>y</m> variables. More generally, we can use the Product Rule any time we have a combination of at least two variables. We have to treat these as different kinds of functions getting multiplied!
-                            <me>
+                            <md>
                                 \dd{}{y}\left(xe^y\right) \hspace{0.7cm} 
                                 \dd{}{t}\left(\cos(t)\sin(x)\right) \hspace{0.7cm}
                                 \dd{}{x}\left(y^4\sqrt{x+1}\right)
-                            </me>
+                            </md>
                         </p>
                     </li>
                 </ul>
@@ -283,16 +283,16 @@
         </p>
         <p>
             We can rewrite this:
-            <me>
+            <md>
                 y=\ln(x) \longleftrightarrow x=e^y
-            </me>.
+            </md>.
             This second representation is something we can differentiate!
         </p>
         <p>
             Similarly, if we wanted to think about the derivative of <m>y=\tan^{-1}(x)</m>, we might instead think about rewriting this:
-            <me>
+            <md>
                 y=\tan^{-1}(x) \longleftrightarrow x=\tan(y)
-            </me>.
+            </md>.
             There are some weird issues to think about with the domains and ranges of these functions, but this is how we'll approach these derivatives next.
         </p>
     </conclusion>

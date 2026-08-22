@@ -3,9 +3,9 @@
     <introduction>
         <p>
             Let's consider the definite integral:
-            <me>
+            <md>
                 \int_{x=0}^{x=1}\sin(x^2)\;dx
-            </me>.
+            </md>.
             We know this function is continuous everywhere, and so it is continuous on the interval <m>[0,1]</m>. So the <xref ref="thm-FTOC2" text="custom">Fundamental Theorem of Calculus</xref> applies. All we need to do is find an antiderivative, evaluate it at the end-points of the interval, and subtract.
         </p>
         <p>
@@ -79,7 +79,7 @@
         <statement>
             <p>
                 Evaluate this antidervative at the endpoints and subtract:
-                <me>F(1)-F(0)</me>.
+                <md>F(1)-F(0)</md>.
             </p>
         </statement>
         <hint>
@@ -101,9 +101,9 @@
                     <mrow> \amp = 0</mrow>
                 </md>
                 So we can notice that <m>F(1)-F(0)=F(1)</m>.
-                <me>
+                <md>
                     \int_{x=0}^{x=1} \sin(x^2)\;dx = \sum_{k=0}^\infty \frac{(-1)^k}{(4k+3)(2k+1)!}
-                </me>
+                </md>
             </p>
         </solution>
     </task>
@@ -116,13 +116,13 @@
         <hint>
             <p>
                 We're really tasked with finding a value of <m>k</m> to make
-                <me>
+                <md>
                     \left|\frac{(-1)^k}{(4k+3)(2k+1)!}\right| \lt 0.000001
-                </me>
+                </md>
                 or 
-                <me>
+                <md>
                     \left|\frac{(-1)^k}{(4k+3)(2k+1)!}\right| \lt \frac{1}{100000}
-                </me>.
+                </md>.
                 These terms will get small quickly, due to the factorial. It's probably easiest to just do a little guess-and-check process.
             </p>
         </hint>
@@ -146,9 +146,9 @@
                     <mrow> \amp \approx 0.31026830</mrow>
                 </md>
                 So we know that the integral is some number in between these! We can actually round this value to six decimal places and be pretty confident in this estimation!
-                <me>
+                <md>
                     \int_{x=0}^{x=1} \sin(x^2)\;dx \approx 0.310268
-                </me>
+                </md>
             </p>
         </solution>
     </task>

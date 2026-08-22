@@ -9,9 +9,9 @@
         <statement>
             <p>
                 Consider the integral:
-                <me>
+                <md>
                     \int x\sqrt[3]{x+5}\;dx
-                </me>.
+                </md>.
                 First, explain why <m>u</m>-substitution is reasonable here.
             </p>
         </statement>
@@ -30,9 +30,9 @@
         <solution>
             <p>
                 If we let <m>u=x+5</m>, then <m>du=dx</m>.
-                <me>
+                <md>
                     \int x\sqrt[3]{x+5}\;dx = \int {\color{red}{x}} \sqrt[3]{u}\;du
-                </me>
+                </md>
             </p>
         </solution>
     </task>
@@ -89,9 +89,9 @@
         <statement>
             <p>
                 Apply this same strategy to the following integral:
-                <me>
+                <md>
                     \int \frac{x}{x+5}\;dx
-                </me>.
+                </md>.
                 This integral might be a bit trickier to find the composition in order to identify the <m>u</m>-substitution! Give some things a try!
             </p>
         </statement>
@@ -107,9 +107,9 @@
                     <mrow> \amp = (x+5) - 5\ln|x+5|+C</mrow>
                 </md>
                 Since this antiderivative has an extra constant (the <m>5</m> being added to <m>x</m>), we can write a smaller version of this by combining the <m>5</m> with the constant of integration:
-                <me>
+                <md>
                      \int \frac{x}{x+5}\;dx = x-5\ln|x+5|+C
-                </me>.
+                </md>.
             </p>
         </solution>
     </task>

@@ -43,13 +43,13 @@
                         </li>
                     </ol>
                     This function is not continuous at this point, since
-                    <me>
+                    <md>
                         \lim_{x\to 1} f(x) \neq f(1)
-                    </me>.
+                    </md>.
                     But, it is continuous on the right side, since 
-                    <me>
+                    <md>
                         \lim_{x\to 1^+} f(x) = f(1)
-                    </me>.
+                    </md>.
                 </p>
             </solution>
         </task>
@@ -82,9 +82,9 @@
                         </li>
                     </ol>
                     This function is not continuous at this point, since
-                    <me>
+                    <md>
                         \lim_{x\to -2} g(x) \neq g(-2)
-                    </me>.
+                    </md>.
                 </p>
             </solution>
         </task>
@@ -116,9 +116,9 @@
                         </li>
                     </ol>
                     This function is continuous at this point, since
-                    <me>
+                    <md>
                         \lim_{x\to -1} h(x) = h(-1)
-                    </me>.
+                    </md>.
                 </p>
             </solution>
         </task>

@@ -70,7 +70,7 @@
     <p>
       Let's revisit <xref ref="act-EstimatingMovement"/>. When we approximated the displacement of the object, we built a Riemann sum:
 
-      <me>\sum_{k=1}^{10} v(t_k^*) \Delta t</me>
+      <md>\sum_{k=1}^{10} v(t_k^*) \Delta t</md>
 
       We chose our <m>t_k^*</m> as either the time at the beginning of each 30-second interval or the time at the end of the 30-second interval, but that was only because of the limited information that we had about different values of <m>v(t)</m>. If we had information about the <m>v(t)</m> function at any values of <m>t</m> (<m>0\leq t\leq 300</m>), then we could pick <em>any</em> time in each 30-second time interval for our Riemann sum!
 
@@ -80,7 +80,7 @@
 
       But why stop there? If we have the definition of the velocity function, and so we can truly obtain the velocity of the object at <em>any</em> time in the 5 minute interval, then we can use the definition of the definite integral as the limit of a Riemann sum:
 
-      <me>\lim_{n\to\infty} \sum_{k=1}^n v(t_k^*) \Delta t = \int_{t=0}^{t=300} v(t)\;dt</me>
+      <md>\lim_{n\to\infty} \sum_{k=1}^n v(t_k^*) \Delta t = \int_{t=0}^{t=300} v(t)\;dt</md>
 
       This should work out well with our first understanding of displacement: the displacement of an object is just the difference in position from the starting time to the ending time. So we could say that if <m>s(t)</m> is the position function, then we might expect to represent displacement from <m>t=a</m> to <m>t=b</m> as <m>s(b)-s(a)</m>. But isn't this just the Fundamental Theorem of Calculus, since <m>s'(t) = v(t)</m>?
     </p>
@@ -89,7 +89,7 @@
       <statement>
         <p>
           If an object is moving along a straight line with velocity <m>v(t)</m> and position <m>s(t)</m>, then the <term>displacement</term> of the object from time <m>t=a</m> to <m>t=b</m> is 
-          <me>\int_{t=a}^{t=b} v(t)\;dt = s(b)-s(a)</me>
+          <md>\int_{t=a}^{t=b} v(t)\;dt = s(b)-s(a)</md>
         </p>
       </statement>
     </definition>
@@ -101,7 +101,7 @@
       <statement>
         <p>
           If an object is moving along a straight line with velocity <m>v(t)</m>, then the <term>distance</term> traveled by the object from time <m>t=a</m> to <m>t=b</m> is:
-          <me>\int_{t=a}^{t=b}|v(t)|\;dt</me>
+          <md>\int_{t=a}^{t=b}|v(t)|\;dt</md>
           Here, we call <m>|v(t)|</m> the <term>speed</term> of the object (instead of the velocity).
         </p>
       </statement>
@@ -109,13 +109,13 @@
     <p>
       We should note that we don't have any quick and easy ways of dealing with the integral of the absolute value of a function.
 
-      <me>
+      <md>
         |v(t)| = 
         \begin{cases}
             -v(t) \amp \text{when } v(t)\lt 0\\
             \phantom{-}v(t) \amp \text{when } v(t)\geq 0
         \end{cases}
-      </me>
+      </md>
 
       So, in order for us to integrate <m>|v(t)|</m>, we need to think about where the velocity passes through 0, so that we can see where it might change from positive to negative.
     </p>
@@ -126,9 +126,9 @@
     <title>Finding the Future Value of a Function</title>
     <p>
       We can again think back to <xref ref="act-EstimatingMovement"/> and build our last result of this section. Remember when we were looking to predict the location of our object at different times: we said it was reasonable to start at our initial position, and then add the displacement of the object from that initial time up to the time that we were interested in. So, to estimate the object's position after 150 seconds, we would calculate:
-      <me>
+      <md>
         s(0)+\int_{t=0}^{t=150} v(t)\;dt
-      </me>.
+      </md>.
       But we said we could do this to estimate the object's position at any value for time, <m>t</m>.
     </p>
     <theorem xml:id="thm-FuturePosition">
@@ -136,9 +136,9 @@
       <statement>
         <p>
           For some object moving along a straight line with velocity <m>v(t)</m> and an initial position of <m>s(a)</m>, the <term>future position of the object</term> at some time <m>t</m> (with <m>t\geq a</m>) is:
-          <me>
+          <md>
             \underbrace{s(t)}_{\text{future}\atop \text{position}} = \underbrace{s(a)}_{\text{initial}\atop\text{position}} + \underbrace{\int_{x=a}^{x=t} v(x)\;dx}_{\text{displacement from}\atop{a \text{ to } t}}
-          </me>
+          </md>
         
         Note that we change the variable in the velocity function while we integrate: since we want our position function to be in terms of <m>t</m>, the ending time that we calculate the displacement up to, we need to choose to write the velocity function in terms of a different variable. Mechanically, there is no difference, since we're just swapping out the variables and naming them <m>x</m>.</p>
       </statement>
@@ -152,13 +152,13 @@
       <statement>
         <p>
           Suppose the value <m>F(t)</m> changes over time at a known rate <m>F'(t)</m>. Then the <term>net change</term> in <m>F</m> between <m>t=a</m> and <m>t=b</m> is:
-          <me>
+          <md>
             F(b)-F(a) = \int_{t=a}^{t=b} F'(t)\;dt
-          </me>.
+          </md>.
           Similarly, given the initial value <m>F(a)</m>, the <term>future value</term> of <m>F</m> at time <m>t\geq a</m> is:
-          <me>
+          <md>
             F(t) = F(a) + \int_{x=a}^{x=t} F'(x)\;dx
-          </me>
+          </md>
         </p>
       </statement>
     </theorem>

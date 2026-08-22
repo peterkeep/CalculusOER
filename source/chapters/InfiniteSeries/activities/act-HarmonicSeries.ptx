@@ -54,9 +54,9 @@
         <hint>
             <p>
                 Find a value for <m>n</m> to give
-                <me>
+                <md>
                     \sum_{k=1}^n \frac{1}{k} \gt 1
-                </me>.
+                </md>.
             </p>
         </hint>
     </task>
@@ -69,16 +69,16 @@
         <hint>
             <p>
                 Find a value for <m>n</m> to give
-                <me>
+                <md>
                     \sum_{k=1}^n \frac{1}{k} \gt 5
-                </me>.
+                </md>.
             </p>
         </hint>
         <solution>
             <p>
-                  <me>
+                  <md>
                     \sum_{k=1}^{83} \frac{1}{k} \approx 5.00207...
-                </me>
+                </md>
                 This is the first partial sum greater than 5.
             </p>
         </solution>
@@ -92,17 +92,17 @@
         <hint>
             <p>
                 Find a value for <m>n</m> to give
-                <me>
+                <md>
                     \sum_{k=1}^n \frac{1}{k} \gt 10
-                </me>.
+                </md>.
                 This will be absolutely awful to try calculating by hand! Use some piece of technology!
             </p>
         </hint>
         <solution>
             <p>
-                <me>
+                <md>
                     \sum_{k=1}^{12367} \frac{1}{k} \approx 10.000043...
-                </me>
+                </md>
                 This is the first partial sum greater than 10.
             </p>
         </solution>
@@ -111,16 +111,16 @@
         <statement>
             <p>
                Do you think that for any positive number <m>S</m>, we can always find some partial sum <m>\displaystyle\sum_{k=1}^n \frac{1}{k} \gt S</m>? What do you think this would mean about 
-               <me>\lim_{n\to\infty}S_n = \lim_{n\to\infty} \sum_{k=1}^n \frac{1}{k}</me>?
+               <md>\lim_{n\to\infty}S_n = \lim_{n\to\infty} \sum_{k=1}^n \frac{1}{k}</md>?
             </p>
         </statement>
     </task>
     <conclusion>
         <p>
             To actually show that for any <m>S \gt 0</m> we could always find an <m>n\gt 1</m> where 
-            <me>
+            <md>
                 \sum_{k=1}^n \frac{1}{k} \gt S
-            </me>
+            </md>
             is an extremely difficult task! We will show that the Harmonic Series diverges in a different way, but for now I want us to notice these contradictory results: we have a series whose terms get small, but whose partial sums do not seem to converge.
         </p>
         <p>

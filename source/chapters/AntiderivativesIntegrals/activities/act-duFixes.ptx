@@ -9,9 +9,9 @@
         <statement>
             <p>
                 Consider the following integral:
-                <me>
+                <md>
                     \int -4x^3\sec^2(1-x^4)\;dx
-                </me>
+                </md>
                 Select and justify a choice for <m>u</m>.
             </p>
         </statement>
@@ -43,9 +43,9 @@
         <statement>
             <p>
                 Compare that integral to this one:
-                <me>
+                <md>
                     \int x^3\sec^2(1-x^4)\;dx
-                </me>
+                </md>
                 What is different about this new integral? What has remained the same? How does that impact your choice for <m>u</m>, or <em>does</em> it impact your choice for <m>u</m>?
             </p>
         </statement>
@@ -99,9 +99,9 @@
         </statement>
         <answer>
             <p>
-                <me>
+                <md>
                     \int x^3\sec^2(1-x^4)\;dx = -\frac{1}{4}\tan(1-x^4)+C
-                </me>
+                </md>
             </p>
         </answer>
     </task>

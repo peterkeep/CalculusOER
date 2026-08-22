@@ -65,9 +65,9 @@
         </p>
         <p>
             For us to find <m>\Dydx</m>, we can start by finding <m>\dfrac{dy}{dt}</m> using the Chain Rule:
-            <me>
+            <md>
                 \frac{dy}{dt} = \frac{dy}{dx} \cdot \frac{dx}{dt}
-            </me>.
+            </md>.
             Now, we can solve for <m>\Dydx</m>.
         </p>
         <theorem xml:id="thm-ChainRuleRestated">
@@ -75,9 +75,9 @@
             <statement>
                 <p>
                     If <m>x</m> and <m>y</m> are independent variables and both are functions of some third variable <m>t</m>, then:
-                    <me>
+                    <md>
                         \dydx = \dfrac{\left(\frac{dy}{dt}\right)}{\left(\frac{dx}{dt}\right)}
-                    </me>
+                    </md>
                     when <m>\dfrac{dy}{dt}</m> and <m>\dfrac{dx}{dt}</m> exist and <m>\dfrac{dx}{dt}\neq 0</m>.
                 </p>
             </statement>
@@ -112,9 +112,9 @@
                         <mrow>y \amp = y(t)</mrow>
                     </md>
                     on the interval where <m>x(t)</m> and <m>y(t)</m> are continuous on the interval <m>a\leq t\leq b</m> and <m>x(t)</m> is differentiable on <m>a\lt t \lt b</m>, then the signed area bounded between the parametric curve and the <m>x</m>-axis from from <m>t=a</m> until <m>t=b</m> is
-                    <me>
+                    <md>
                         \int_{t=a}^{t=b} y(t)x'(t)\;dt
-                    </me>.
+                    </md>.
                     
                 </p>
             </statement>
@@ -138,7 +138,7 @@
                 </statement>
                 <solution>
                     <p>
-                        <me>\int_{t=0}^{t=2\pi} \left(1-\cos(t)\right)^2\;dt</me>
+                        <md>\int_{t=0}^{t=2\pi} \left(1-\cos(t)\right)^2\;dt</md>
                     </p>
                 </solution>
             </task>
@@ -200,9 +200,9 @@
                         <mrow>y \amp = y(t)</mrow>
                     </md>
                     on <m>a\leq t\leq b</m> is
-                    <me>
+                    <md>
                         \ell = \int_{t=a}^{t=b} \sqrt{(x'(t))^2+(y'(t))^2}\;dt
-                    </me>.
+                    </md>.
                 </p>
             </statement>
         </definition>
@@ -243,7 +243,7 @@
                 <hint>
                     <p>
                         It might help to remember a trig identity! We know <m>\sin^2(\theta) = \frac{1}{2}(1-\cos(2\theta)</m>. So then we can note that 
-                        <me>\frac{1}{2}\left(1-\cos(t)\right) = \sin^2\left(\frac{t}{2}\right)</me>.
+                        <md>\frac{1}{2}\left(1-\cos(t)\right) = \sin^2\left(\frac{t}{2}\right)</md>.
                     </p>
                 </hint>
                 <solution>

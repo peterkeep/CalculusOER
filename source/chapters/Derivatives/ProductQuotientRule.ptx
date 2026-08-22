@@ -53,13 +53,13 @@
       <statement>
         <p>
           If <m>u(x)</m> and <m>v(x)</m> are functions that are differentiable at <m>x</m> and <m>f(x) = u(x)\cdot v(x)</m>, then:
-          <me>
+          <md>
             \ddx{f(x)} = u'(x)\cdot v(x) + u(x) \cdot v'(x)
-          </me>.
+          </md>.
           For convenience, this often is written as:
-          <me>
+          <md>
             \ddx{u\cdot v} = u'v + uv' \hspace{1cm}f \text{or}\hspace{1cm} \ddx{u\cdot v} = v \left(\dd{u}{x}\right) + u \left(\dd{v}{x}\right)
-          </me>.
+          </md>.
         </p>
       </statement>
     </theorem>
@@ -79,9 +79,9 @@
         <hint>
           <p>
             Use <m>u=x^3</m> and <m>v=\sin(x)</m>. Now find <m>u'</m> and <m>v'</m>, and use:
-            <me>
+            <md>
               \ddx{uv} = u'v+uv'
-            </me>.
+            </md>.
           </p>
         </hint>
       </task>
@@ -110,9 +110,9 @@
     <p>
       A nice thing that we can do is think about division as really just multiplication. For instance, if we want to differentiate <m>\Ddx{\dfrac{\sin(x)}{x^2}}</m>,
       then we can just think about this quotient as really a product:
-      <me>
+      <md>
         \ddx{\frac{\sin(x)}{x^2}} = \ddx{\frac{1}{x^2}\left(\sin(x)\right)}
-      </me>.
+      </md>.
       Now we can just apply the Product Rule!
       <md>
         <mrow>\ddx{\frac{1}{x^2}\left(\sin(x)\right)} \amp =\ddx{x^{-2}\sin(x)}</mrow>
@@ -127,13 +127,13 @@
     </p>
     <p>
       What about this flipped example:
-      <me>
+      <md>
         \ddx{\frac{x^2}{\sin(x)}}
-      </me>?
+      </md>?
       In order for us to do the same thing, we need to rewrite this as
-      <me>
+      <md>
         \ddx{x^2\left(\sin(x)\right)^{-1}}
-      </me>
+      </md>
       but we don't know (or maybe don't know <em>yet</em>) how to differentiate <m>\left(\sin(x)\right)^{-1}</m>.
     </p>
     <p>
@@ -148,15 +148,15 @@
       <statement>
         <p>
           If <m>u(x)</m> and <m>v(x)</m> are differentiable at <m>x</m> and <m>f(x) = \dfrac{u(x)}{v(x)}</m> then:
-          <me>
+          <md>
             f'(x) = \dfrac{v(x)u'(x) - u(x)v'(x)}{(v(x))^2}
-          </me>.
+          </md>.
         </p>
         <p>
           For convenience, this often is written as:
-          <me>
+          <md>
             \ddx{\frac{u}{v}} = \frac{vu'-uv'}{v^2}
-          </me>.
+          </md>.
         </p>
       </statement>
     </theorem>

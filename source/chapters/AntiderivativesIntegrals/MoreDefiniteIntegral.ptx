@@ -21,13 +21,13 @@
             <li>
               <p>
                 If <m>f(x)</m> is even symmetric on <m>[-a,a]</m>, then: 
-                <me>\int_{x=-a}^{x=0} f(x)\;dx = \int_{x=0}^{x=a}f(x)\;dx</me>.
+                <md>\int_{x=-a}^{x=0} f(x)\;dx = \int_{x=0}^{x=a}f(x)\;dx</md>.
               </p>
             </li>
             <li>
               <p>
                 If <m>f(x)</m> is odd symmetric on <m>[-a,a]</m>, then:
-                <me>\int_{x=-a}^{x=0} f(x)\;dx = -\int_{x=0}^{x=a}f(x)\;dx</me>.
+                <md>\int_{x=-a}^{x=0} f(x)\;dx = -\int_{x=0}^{x=a}f(x)\;dx</md>.
               </p>
             </li>
           </ul>
@@ -47,9 +47,9 @@
       <statement>
         <p>
           If a function <m>f(x)</m> is continuous on the interval <m>[a,b]</m>, then the average value of <m>f(x)</m> on <m>[a,b]</m> is:
-          <me>
+          <md>
             \frac{\displaystyle\int_{x=a}^{x=b}f(x)\;dx}{b-a}
-          </me>.
+          </md>.
         </p>
       </statement>
     </theorem>

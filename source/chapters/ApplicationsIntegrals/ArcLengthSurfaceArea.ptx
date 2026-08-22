@@ -25,9 +25,9 @@
     <xi:include href="./activities/act-MeasuringDistance.ptx" />
     <p>
       This might be a reminder of something we already knew, but let's make sure we are certain: when we calculate distances, we're really just using the Pythagorean Theorem! We can square the vertical distance between the points and the horizontal distance between the points, and then the length of the straight line connecting two points is:
-      <me>
+      <md>
         \ell = \sqrt{(\Delta x)^2 + (\Delta y)^2}
-      </me>.
+      </md>.
       This will be a useful formula for us to find an integral expression for the length of a curve.
     </p>
     <p>
@@ -96,9 +96,9 @@
     </p>
     <p>
       Notice, first, that we need a function evaluated at any single input on the subinterval: <m>f(x_k^*)</m>. In our version, we have a function evaluated twice at very specific inputs:
-      <me>
+      <md>
         \Delta y_k = f(x_{k+1}) - f(x_k)
-      </me>.
+      </md>.
       We'll need to rethink about how we represent this part in order to get a single function output.
     </p>
     <p>
@@ -147,9 +147,9 @@
       <statement>
         <p>
           If <m>f(x)</m> is continuous on the interval <m>[a,b]</m> and differentiable on <m>(a,b)</m>, then the length of the curve <m>y=f(x)</m> from <m>x=a</m> to <m>x=b</m> is:
-          <me>
+          <md>
             \int_{x=a}^{x=b}\sqrt{1+(f'(x))^2}\;dx
-          </me>.
+          </md>.
         </p>
       </statement>
     </definition>
@@ -254,9 +254,9 @@
     </sidebyside>
     <p>
       In order for us to find the surface area of this <m>k</m>th slice, we'll think about how <q>far</q> the diagonal line revolves. This is based on the circumference of each circular end of our slice, which means we have two radii to consider: the function outputs at both endpoints of the <m>k</m>th subinterval:
-      <me>
+      <md>
         A_k = 2\pi\left(\frac{f(x_k)+f(x_{k+1})}{2}\right)\ell_k
-      </me>
+      </md>
       This is going to become problematic, since we need only one function output evaluated at some <m>x_k^*</m> on the <m>k</m>th subinterval.
     </p>
     <p>
@@ -286,9 +286,9 @@
       <statement>
         <p>
           Let <m>f(x)</m> be a continuous function with <m>f(x)\geq 0</m> on the interval <m>[a,b]</m> and differentiable on <m>(a,b)</m>. If the region bounded by <m>f(x)</m> and the <m>x</m>-axis from <m>x=a</m> to <m>x=b</m> is revolved around the <m>x</m>-axis, then the surface area of the resulting solid is:
-          <me>
+          <md>
             A = 2\pi\int_{x=a}^{x=b} f(x)\sqrt{1+(f'(x))^2}\;dx
-          </me>.
+          </md>.
         </p>
       </statement>
     </definition>

@@ -4,9 +4,9 @@
         <statement>
             <p>
                 Consider the integral:
-                <me>
+                <md>
                     \int \frac{6x-16}{x^2-4x+3}\;dx
-                </me>.
+                </md>.
                 First, confirm that this would be <em>very</em> annoying to try to use <m>u</m>-substitution on, even though we have a linear numerator and quadratic denominator.
             </p>
         </statement>
@@ -15,9 +15,9 @@
         <statement>
             <p>
                 Notice that the denominator can be factored:
-                <me>
+                <md>
                     \int \frac{6x-16}{(x-3)(x-1)}\;dx
-                </me>.
+                </md>.
                 If this integrand function were a sum of two <q>smaller</q> rational functions, what would their denominators be? What do we know about their numerators?
             </p>
         </statement>
@@ -76,9 +76,9 @@
                 Since <m>A=6-B</m>, we have <m>A=6-5=1</m>.
             </p>
             <p>
-                <me>
+                <md>
                     \dfrac{6x-16}{(x-3)(x-1)} = \frac{1}{x-3}+\frac{5}{x-1}
-                </me>
+                </md>
                 
             </p>
         </solution>
@@ -102,18 +102,18 @@
         <statement>
             <p>
                 Let's do the same thing with a new integral:
-                <me>
+                <md>
                     \int \frac{3x^2-2x+3}{x(x^2+1)}\;dx
-                </me>.
+                </md>.
                 What are the partial fraction forms? What kinds of numerators should we expect to see? Use variables to represent these.
             </p>
         </statement>
         <solution>
             <p>
                 We expect to see partial fractions <m>\dfrac{<fillin characters="2" />}{x}</m> and <m>\dfrac{<fillin characters="2" />}{x^2+1}</m>. We know the numerator over <m>x</m> needs to be constant, but we could have a linear numerator over <m>x^2+1</m>. So our partial fractions are:
-                <me>
+                <md>
                     \frac{A}{x}+\frac{Bx+C}{x^2+1}
-                </me>.
+                </md>.
             </p>
         </solution>
     </task>
@@ -126,13 +126,13 @@
         <hint>
             <p>
                 We want to find values for <m>A</m>, <m>B</m>, and <m>C</m> where
-                <me>
+                <md>
                     \frac{A}{x}+\frac{Bx+C}{x^2+1} = \frac{3x^2-2x+3}{x(x^2+1)}
-                </me>.
+                </md>.
                 Use common denominators to add
-                <me>
+                <md>
                     \frac{A}{x}+\frac{Bx+C}{x^2+1}
-                </me>
+                </md>
                 and then set the resulting numerator equal to <m>3x^2-2x+3</m> and try to solve.
             </p>
         </hint>

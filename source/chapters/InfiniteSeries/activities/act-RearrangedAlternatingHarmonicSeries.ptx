@@ -3,13 +3,13 @@
     <introduction>
         <p>
             Now let's consider a new, rearrranged, version of the alternating harmonic series:
-            <me>
+            <md>
                 1-\frac{1}{2}-\frac{1}{4}+\frac{1}{3}-\frac{1}{6}-\frac{1}{8} +\frac{1}{5}-\frac{1}{10}-\frac{1}{12}+ ...
-            </me>
+            </md>
             We can write this in summation notation as:
-            <me>
+            <md>
                 \sum_{k=1}^\infty \left(\frac{1}{2k-1}-\frac{1}{4k-2}-\frac{1}{4k}\right)
-            </me>.
+            </md>.
         </p>
     </introduction>
     <task>

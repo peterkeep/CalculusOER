@@ -169,9 +169,9 @@
             <statement>
                 <p>
                     An <term>indefinite integral</term> represents a family of antiderivatives:
-                    <me>
+                    <md>
                         \int f(x)\;dx = F(x)+C
-                    </me>
+                    </md>
                     where
                     <ul>
                         <li>
@@ -225,9 +225,9 @@
                 <hint>
                     <p>
                         While we do not know how to antidifferentiate products of functions yet, we can just multiply the integrand function!
-                        <me>
+                        <md>
                             (x+4)(x^2-7) = x^3 + 4x^2-7x-28
-                        </me>
+                        </md>
                         Antidifferentiate this.
                     </p>
                 </hint>
@@ -257,9 +257,9 @@
             <title>Power Rule for Antiderivatives</title>
             <statement>
                 <p>
-                    <me>
+                    <md>
                         \int x^n\;dx = \dfrac{x^{n+1}}{n+1}+C
-                    </me>
+                    </md>
                     for <m>n\neq -1</m>
                 </p>
             </statement>

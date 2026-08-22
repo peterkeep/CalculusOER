@@ -69,9 +69,9 @@
             <solution>
                 <p>
                     This is a polynomial, so we can evaluate this function at <m>x=0</m>:
-                    <me>
+                    <md>
                        4(0)^3-6(0)^2+7(0)-10 = -10 
-                    </me>.
+                    </md>.
                 </p>
             </solution>
         </task>
@@ -84,9 +84,9 @@
             <solution>
                 <p>
                     This is also a polynomial, and so we can evaluate the function at <m>x=-2</m>:
-                    <me>
+                    <md>
                         9-3(-2)+(-2)^2+3(-2)^3+(-2)^4 = 11
-                    </me>.
+                    </md>.
                 </p>
             </solution>
         </task>
@@ -98,9 +98,9 @@
             </statement>
             <solution>
                 <p>
-                    <me>
+                    <md>
                         9(a)^2 +3a(a)-1 = 12a^2-1
-                    </me>.
+                    </md>.
                 </p>
             </solution>
         </task>
@@ -179,9 +179,9 @@
                         <mrow> \lim_{x\to-1^+} f(x) \amp = -4</mrow>
                     </md>
                     Since the left-sided limit and right-sided limit do not match, we say that
-                    <me>
+                    <md>
                         \lim_{x\to-1} f(x)
-                    </me>
+                    </md>
                     does not exist.
                 </p>
             </solution>
@@ -207,9 +207,9 @@
                         <mrow> \lim_{x\to-3^+} g(x) \amp = 3</mrow>
                     </md>
                     Since the left-sided limit and right-sided limit match, we say that
-                    <me>
+                    <md>
                         \lim_{x\to-3} g(x) = 3
-                    </me>.
+                    </md>.
                 </p>
             </solution>
         </task>
@@ -233,9 +233,9 @@
                         <mrow> \lim_{t\to1^+} s(t) \amp = 0</mrow>
                     </md>
                     Since the left-sided limit and right-sided limit do not match, we say that
-                    <me>
+                    <md>
                         \lim_{t\to1} s(t)
-                    </me>
+                    </md>
                     does not exist.
                 </p>
             </solution>
@@ -260,9 +260,9 @@
                         <mrow> \lim_{\theta\to 2^+} r(\theta) \amp = 8</mrow>
                     </md>
                     Since the left-sided limit and right-sided limit do not match, we say that
-                    <me>
+                    <md>
                         \lim_{\theta\to 2} r(\theta)
-                    </me>
+                    </md>
                     does not exist.
                 </p>
             </solution>

@@ -112,9 +112,9 @@
       </theorem>
       <p>
         At the end of <xref ref="sec-CommonSeries" text="type-global-title"/>, we referenced the series:
-        <me>
+        <md>
           \sum_{k=0}^\infty \frac{1}{k^3+1}
-        </me>.
+        </md>.
         Let's use our new test!
       </p>
       <example xml:id="ex-FirstComparisonIntuition">
@@ -158,20 +158,20 @@
         <solution>
           <p>
             Let's compare our series to the converging <m>p</m>-series with <m>p=3</m>:
-            <me>
+            <md>
               \sum_{k=0}^\infty \frac{1}{k^3+1}\sim \sum_{k=1}^\infty \frac{1}{k^3}
-            </me>.
+            </md>.
             We want to show that <m>\dfrac{1}{k^3+1}\leq \dfrac{1}{k^3}</m> for <m>k\geq 1</m>. 
           </p>
           <p>
             Let's start with comparing the denominators, and move from there.
-            <me>
+            <md>
               k^3+1 \gt k^3 \text{ for any value of } k
-            </me>
+            </md>
             Now we can think about reciprocals:
-            <me>
+            <md>
               \frac{1}{k^3+1} \lt \frac{1}{k^3} \text{ for all } k\geq 1
-            </me>.
+            </md>.
             This means that, since <m>\displaystyle \sum_{k=1}^\infty \frac{1}{k^3}</m> converges, then <m>\displaystyle\sum_{k=1}^\infty \frac{1}{k^3+1}</m> must also converge.
           </p>
           <p>
@@ -186,9 +186,9 @@
       </example>
       <p>
         A quick note: in this example, we thought about building the link
-        <me>
+        <md>
           \sum_{k=1}^\infty \frac{1}{k^3+1} \sim \sum_{k=1}^\infty \frac{1}{k^3}
-        </me>
+        </md>
         and then arguing that changing the index to start at <m>k=0</m> by adding in a single term wouldn't change the behavior of the infinite series.
       </p>
       <p>
@@ -236,13 +236,13 @@
     </note>
     <p>
       So let's think about one of the series from <xref ref="act-UnhelpfulComparisons"/>:
-      <me>
+      <md>
         \sum_{k=1}^\infty \frac{2k}{3^k}
-      </me>
+      </md>
       We, intuitively, tried to compare this a related geometric series:
-      <me>
+      <md>
         \sum_{k=1}^\infty \frac{2k}{3^k} \sim \underbrace{\sum_{k=1}^\infty \frac{2}{3^k}}_{\text{converges}}
-      </me>
+      </md>
       Unfortunately, we weren't able to make this connection, since <m>\dfrac{2k}{3^k} \geq \dfrac{2}{3^k}</m> for <m>k=1,2,3\ldots</m>
     </p>
     <p>
@@ -400,17 +400,17 @@
         <hint>
           <p>
             One of the comparisons we can try is to link the behavior of these two series:
-            <me>
+            <md>
               \sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}} \sim \sum_{k=1}^\infty \frac{1}{\sqrt{k^2}} = \sum_{k=1}^\infty \frac{1}{k}
-            </me>.
+            </md>.
           </p>
         </hint>
         <solution>
           <p>
             In order to link these series, we'll apply a limit comparison test:
-            <me>
+            <md>
               \sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}} \sim \sum_{k=1}^\infty \frac{1}{\sqrt{k^2}} = \sum_{k=1}^\infty \frac{1}{k}
-            </me>.
+            </md>.
             So let's investigate the limit of the ratio of the terms.
             <md>
               <mrow>\lim_{k\to\infty} \frac{\left(\frac{e^{1/k}}{\sqrt{k^2+k}}\right)}{\left(\frac{1}{k}\right)} \amp = \lim_{k\to\infty} \left(\frac{e^{1/k}}{\sqrt{k^2+k}}\right)\left(\frac{k}{1}\right)</mrow>
@@ -429,9 +429,9 @@
               <mrow> \amp = \lim_{k\to\infty} \frac{1}{\sqrt{1+\frac{1}{k}}}</mrow>
             </md>
             Now, since <m>\dfrac{1}{k}\to 0</m> as <m>k\to\infty</m> we end up with:
-            <me>
+            <md>
               \lim_{k\to\infty} \frac{\left(\frac{e^{1/k}}{\sqrt{k^2+k}}\right)}{\left(\frac{1}{k}\right)} = 1
-            </me>.
+            </md>.
             <em>Conclusions:</em> Since we're comparing our series to the diverging <m>p</m>-series <m>\displaystyle\sum_{k=1}^\infty \frac{1}{k}</m>, and the limit comparison test says that these two infinite series must have the same behavior (since the limit of the ratio of the term functions was 1), then we can conclude that the infinite series <m>\displaystyle \sum_{k=1}^\infty \frac{e^{1/k}}{\sqrt{k^2+k}}</m> also diverges.
           </p>
         </solution>
@@ -467,9 +467,9 @@
         <solution>
           <p>
             We can compare this to a converging geometric series, <m>\displaystyle\sum_{k=0}^\infty \frac{1}{2^k}</m>. So, we want to draw the following link:
-            <me>
+            <md>
               \sum_{k=0}^\infty \frac{1}{k!} \sim \sum_{k=0}^\infty \frac{1}{2^k}
-            </me>.
+            </md>.
             The limit comparison test follows as such:
             <md>
               <mrow>\lim_{k\to\infty} \frac{\left(\frac{1}{k!}\right)}{\left(\frac{1}{2^k}\right)} \amp  = \lim_{k\to\infty} \frac{2^k}{k!}</mrow>
@@ -478,9 +478,9 @@
           </p>
           <p>
             We can, instead, appeal to growth rates: <m>k!</m> approaches infinity much faster than <m>2^k</m>, and so this fraction has a much larger denominator.
-            <me>
+            <md>
               \lim_{k\to\infty} \frac{2^k}{k!} = 0
-            </me>.
+            </md>.
             <em>Conclusions:</em> By the Limit Comparison Test, this means that <m>\frac{1}{k!} \lt \lt \frac{1}{2^k}</m>, and so, since <m>\displaystyle\sum_{k=0}^\infty \frac{1}{2^k}</m> is a converging geometric series, then the infinite series <m>\displaystyle \sum_{k=0}^\infty \frac{1}{k!}</m> must also converge.
           </p>
         </solution>
@@ -514,9 +514,9 @@
       <statement>
         <p>
           Consider the following series:
-          <me>
+          <md>
             \sum_{k=1}^\infty \frac{2k^2-k+3\sqrt{k}}{3k^{7/3}+4k^{5/3} - k^{2/5}}
-          </me>.
+          </md>.
           Perform a test and state a conclusion about whether or not this series converges.
         </p>
       </statement>

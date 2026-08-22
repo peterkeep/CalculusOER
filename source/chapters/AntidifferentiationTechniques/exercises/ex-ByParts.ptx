@@ -129,9 +129,9 @@
             <statement>
                 <p>
                     We know that:
-                    <me>
+                    <md>
                         \dint \sin^2(x)\;dx = \dint \sin(x)\sin(x)\;dx
-                    </me>. 
+                    </md>. 
                     Use the Integration by Parts strategy, and especially note that you can solve for the integral (<xref ref="subsec-SolvingForIntegral" text="title"/>).
                 </p>
             </statement>
@@ -140,13 +140,13 @@
             <statement>
                 <p>
                     We can use a trigonometric identity to rewrite the integral:
-                    <me>
+                    <md>
                         \sin^2(x) = \dfrac{1-\cos(2x)}{2}
-                    </me>.
+                    </md>.
                     So we have:
-                    <me>
+                    <md>
                         \int \sin^2(x)\;dx = \int \frac{1}{2} - \frac{1}{2}\cos(2x)\;dx
-                    </me>.
+                    </md>.
                     Use <m>u</m>-substitution.
                 </p>
             </statement>
@@ -189,9 +189,9 @@
         <introduction>
             <p>
                 In <xref ref="ex-IntegralLog"/>, we found that
-                <me>
+                <md>
                     \int \ln(x)\;dx = x\ln(x)-x+C
-                </me>.
+                </md>.
                 Let's find this result again, but in a different way.                
             </p>
         </introduction>

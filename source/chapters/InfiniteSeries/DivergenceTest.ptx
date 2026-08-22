@@ -15,18 +15,18 @@
         <statement>
             <p>
                 We call the series 
-                <me>
+                <md>
                     \sum_{k=1}^\infty \frac{1}{k}
-                </me>
+                </md>
                 the <term>Harmonic Series</term>.
             </p>
         </statement>
     </definition>
     <p>
       You might not recognize this, but we've worked with a version of this before. The example series that we plotted in <xref ref="fig-PartialSum-3"/> was
-      <me>
+      <md>
         \sum_{k=0}^{\infty} \frac{3}{k+1}
-      </me>.
+      </md>.
       We can notice that if we re-index this by starting at <m>k=1</m> instead of <m>k=0</m>, we were really just looking at a scaled version of the harmonic series.
       <md>
         <mrow> \sum_{k=0}^{\infty} \frac{3}{k+1} \amp = \sum_{k=1}^{\infty} \frac{3}{k}</mrow>
@@ -43,7 +43,7 @@
       <statement>
         <p>
           The <term>Harmonic Series</term>, 
-          <me>\sum_{k=1}^\infty \frac{1}{k}</me>, 
+          <md>\sum_{k=1}^\infty \frac{1}{k}</md>, 
           diverges.
         </p>
       </statement>
@@ -56,16 +56,16 @@
         </p>
         <p>
           Based on our definition of series convergence (<xref ref="def-SeriesConvergence"/>), there exists some real number <m>S</m> such that:
-          <me>
+          <md>
             \lim_{n\to\infty} \sum_{k=1}^n \frac{1}{k} = S
-          </me>.
+          </md>.
           We're going to think about this number, <m>S</m>, and show that there cannot be such a number.
         </p>
         <p>
           First, let's write out what <m>S</m> is:
-          <me>
+          <md>
             S = 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \frac{1}{6} + ...
-          </me>
+          </md>
           We're now going to systematically change the numbers being added together in order to create some number that is smaller than <m>S</m>: we're going to take all of the odd terms and make them as small as the next term after it:
           <md>
             <mrow> S \amp = 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \frac{1}{6} + ... 
@@ -111,13 +111,13 @@
       <statement>
         <p>
           For an infinite series <m>\displaystyle\sum_{k=0}^\infty a_k</m>, if the infinite series converges then
-          <me>
+          <md>
             \lim_{k\to\infty} a_k = 0
-          </me>.
+          </md>.
           This is equivalent to saying that if 
-          <me>
+          <md>
             \lim_{k\to\infty} a_k\neq 0
-          </me>
+          </md>
           then the infinite series <m>\displaystyle\sum_{k=0}^\infty a_k</m> diverges.
         </p>
       </statement>
@@ -146,9 +146,9 @@
         </p>
         <p>
           It has to also be <m>S</m>! If the partial sums converge, then these two partial sums must converge to each other <m>n</m> increases:
-          <me>
+          <md>
             \lim_{n\to\infty} S_{n-1} = \lim_{n\to\infty} S_n 
-          </me>.
+          </md>.
         </p>
         <p>
           So, since <m>S_n = S_{n-1} + a_n</m>, we can investigate the limit of <m>a_n</m>:
@@ -225,17 +225,17 @@
     </p>
     <p>
       We don't need to apply the Squeeze Theorem in <q>full,</q> since we're only concerned with whether the limit is 0 or not. Let's clarify with an example:
-      <me>
+      <md>
         \sum_{k=1}^\infty \frac{(-1)^{k+1}2k^2}{7k^2+k+1} = \frac{2}{9} - \frac{8}{31} + \frac{18}{67} - \frac{32}{117} +-...
-      </me>
+      </md>
       For us to apply the Divergence Test, we really should note that:
-      <me>
+      <md>
         -\frac{2k^2}{7k^2+k+1}\leq \frac{(-1)^{k+1}2k^2}{7k^2+k+1} \leq \frac{2k^2}{7k^2+k+1}
-      </me>.
+      </md>.
       We could look at the limits of both of the bounds, but since we're concerned with whether they are 0 or not, we can simply check one:
-      <me>
+      <md>
         \lim_{k\to\infty} \left(\frac{2k^2}{7k^2+k+1}\right)  = \frac{2}{7}
-      </me>.
+      </md>.
       Since we know that the negative version of this limit isn't 0 either, we can see that the limit <m>\displaystyle\lim_{k\to\infty}\frac{(-1)^{k+1}2k^2}{7k^2+k+1}</m> doesn't exist. Thus, the series diverges.
     </p>
     <p>
@@ -243,20 +243,20 @@
     </p>
     <p>
       Lastly, we can notice now that <xref ref="thm-LHopitalsRule" text="title"/> can be difficult to apply, especially since the functions we're working with are not required to be differentiable. For instance, how could we consider the series
-      <me>
+      <md>
         \sum_{k=0}^\infty \frac{k!}{3^k}
-      </me>
+      </md>
      by thinking about the limit
-     <me>
+     <md>
       \lim_{k\to\infty} \frac{k!}{3^k}
-     </me>?
+     </md>?
     </p>
     <aside>
       <p>
         The factorial function, <m>k!</m>, is formally defined as a recursive function, where <m>0!=1</m> and <m>n!=n(n-1)!</m>. More informally, this really means that a factorial really tells us to multiply the integer by all of the positive integers less than it. So:
-        <me>
+        <md>
           7! = 7(6)(5)(4)(3)(2)(1)
-        </me>.
+        </md>.
       </p>
       <p>
         We define <m>0!=1</m> for convenience, but a nice explanation of why we might do that is based on counting arrangements.
@@ -275,16 +275,16 @@
       <title>Growth Rates of Functions</title>
       <p>
         If <m>m</m> and <m>n</m> are real numbers with <m>0\lt m\lt n</m>, then we can arrange the growth rates of the following functions from <q>slow</q> to <q>fast:</q>
-        <me>
+        <md>
           \ln(k)\lt\lt k^m \lt\lt k^m\ln(k) \lt\lt k^n \lt \lt m^k \lt \lt n^k \lt \lt k! \lt\lt k^k
-        </me>
+        </md>
       </p>
     </assemblage>
     <p>
       So, returning to our series <m>\displaystyle \sum_{k=0}^\infty \frac{k!}{3^k}</m>, we can see that
-      <me>
+      <md>
         \lim_{k\to\infty} \frac{k!}{3^k} = \infty
-      </me>
+      </md>
       since <m>k!</m> has a <q>faster</q> growth rate than <m>3^k</m>.
     </p>
     <note>

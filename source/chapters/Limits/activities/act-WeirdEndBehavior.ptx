@@ -3,9 +3,9 @@
     <introduction>
         <p>
             In this activity, we're going to find the following limit:
-            <me>
+            <md>
                 \lim_{x\to\infty} \left(\dfrac{\sin^2(x)}{x^2+1}\right)
-            </me>.
+            </md>.
             This limit is a bit weird, in that we really haven't looked at trigonometric functions that much. We're going to start by looking at a different limit in the hopes that we can eventually build towards this one.
         </p>
     </introduction>
@@ -13,9 +13,9 @@
         <statement>
             <p>
                 Consider, instead, the following limit:
-                <me>
+                <md>
                     \lim_{x\to\infty} \left(\frac{1}{x^2+1}\right)
-                </me>.
+                </md>.
                 Find the limit and connect the process or intuition behind it to at least one of the results from this text.
             </p>
         </statement>
@@ -46,7 +46,7 @@
         <statement>
             <p>
                 What kinds of values doe we expect <m>\sin(x)</m> to take on for different values of <m>x</m>?
-                <me><fillin characters="10" /> \leq \sin(x) \leq <fillin characters="10" /></me>
+                <md><fillin characters="10" /> \leq \sin(x) \leq <fillin characters="10" /></md>
             </p>
             
         </statement>
@@ -55,7 +55,7 @@
         <statement>
             <p>
                 What happens when we square the sine function? What kinds of  values can that take on?
-                <me><fillin characters="10" /> \leq \sin^2(x) \leq <fillin characters="10" /></me>
+                <md><fillin characters="10" /> \leq \sin^2(x) \leq <fillin characters="10" /></md>
             </p>
         </statement>
     </task>
@@ -79,7 +79,7 @@
             </p>
             <p>
                 In your inequality above, multiply <m>\left(\frac{1}{x^2+1}\right)</m> onto all three pieces of the inequality. Make sure you're convinced about the direction or order of the inequality and whether or not it changes with this multiplication.
-                <me>\underbrace{\frac{<fillin characters="10" />}{x^2+1}}_{\text{call this }f(x)} \leq \frac{\sin^2(x)}{x^2+1} \leq \underbrace{\frac{<fillin characters="10" />}{x^2+1}}_{\text{call this }h(x)} </me>
+                <md>\underbrace{\frac{<fillin characters="10" />}{x^2+1}}_{\text{call this }f(x)} \leq \frac{\sin^2(x)}{x^2+1} \leq \underbrace{\frac{<fillin characters="10" />}{x^2+1}}_{\text{call this }h(x)} </md>
             </p>
         </statement>
     </task>

@@ -154,9 +154,9 @@
             <solution>
                 <p>
                     Since <m>y=x^{1/2}+4x^{15}+400</m>, we can write <m>\dydx = \frac{1}{2}y^{-1/2} + 60x^{14}</m>, or:
-                    <me>
+                    <md>
                         \dydx = \frac{1}{2\sqrt{x}} + 60x^{14}
-                    </me>.
+                    </md>.
                 </p>
             </solution>
         </task>
@@ -169,9 +169,9 @@
             <solution>
                 <p>
                     Since <m>e^3</m> and <m>e^\pi</m> are real numbers, we can write:
-                    <me>
+                    <md>
                         \dydx = -e^x
-                    </me>.
+                    </md>.
                 </p>
             </solution>
         </task>
@@ -629,9 +629,9 @@
             <solution>
                 <p>
                     We are interested in finding any values of <m>x</m> that will make <m>f'(x)</m> not exist, and specifically ones that will result in the derivative approaching <m>\pm \infty</m>.
-                    <me>
+                    <md>
                         f'(x)=\frac{1}{3\sqrt[3]{x^2}}+1
-                    </me>
+                    </md>
                     Note that when <m>x=0</m>, we end up with division by 0.
                 </p>
             </solution>

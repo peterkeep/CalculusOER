@@ -107,22 +107,22 @@
       <title>Partial Fraction Type: Simple Linear Factors</title>
       <p>
         For rational functions where the denominator has some linear factor like <m>(x-k)</m>, we can set up a partial fraction with just a constant coefficient in the numerator:
-        <me>
+        <md>
           \frac{A}{x-k}
-        </me>.
+        </md>.
         We have outlined a pretty reasonable approach for these in <xref ref="act-PartialFractionsFirstExamples"/> when we worked on the integral
-        <me>
+        <md>
           \int \frac{6x-16}{(x-3)(x-1)}\;dx
-        </me>.
+        </md>.
         We can make note of something useful, though. At one point during the process, we had set up the two partial fractions, added them together, and then we said that we wanted to find the values of <m>A</m> and <m>B</m> that made the general partial fraction forms we had set up match with the actual function we were hoping to integrate.
         <md>
           <mrow>\frac{A}{x-3} + \frac{B}{x-1} \amp = \frac{A(x-1) + B(x-3)}{(x-3)(x-1)}</mrow>
             <mrow> \amp = \frac{6x-16}{(x-3)(x-1)}</mrow>
         </md>
         What this meant for us was that we can set the numerators equal to each other and solve for <m>A</m> and <m>B</m>:
-        <me>
+        <md>
           A(x-1)+B(x-3)=6x-16
-        </me>.
+        </md>.
         Let's pause here.
       </p>
       <p>
@@ -135,9 +135,9 @@
       </p>
       <p>
         But is there a nicer, more convenient <m>x</m>-value to use? Can we force this to generate a nicer equation involving our unknown coefficients? Can we find some <m>x</m>-values that will make the factors <m>(x-1)</m> and <m>(x-3)</m> go to 0, for instance?
-        <me>
+        <md>
           A\underbrace{(x-1)}_{x=1}+B\underbrace{(x-3)}_{x=3}=6x-16
-        </me>
+        </md>
         Let's try it!
         <md>
           <mrow>x=1: \amp \amp A(1-1)+B(1-3) \amp = 6(1)-16 \amp</mrow>
@@ -153,9 +153,9 @@
         <title>Simple Linear Factors</title>
         <p>
           If a rational function has a simple linear factor in the denominator in the form <m>(x-k)</m>, then the corresponding partial fraction is
-          <me>
+          <md>
             \frac{A}{x-k}
-          </me>
+          </md>
           where <m>A</m> is a real number constant with <m>A\neq 0</m>.
         </p>
         <p>
@@ -175,9 +175,9 @@
         <title>Irreducible Quadratic Factors</title>
         <p>
           If a rational function has an irreducible quadratic factor in the denominator in the form <m>(ax^2+bx+c)</m>, then the corresponding partial fraction is
-          <me>
+          <md>
             \frac{Ax+B}{ax^2+bx+c}
-          </me>
+          </md>
           where <m>A</m> and <m>B</m> are real number constants, and <m>A</m> and <m>B</m> cannot both be <m>0</m>. That is, if one of <m>A</m> or <m>B</m> is <m>0</m>, then the other cannot be.
         </p>
         <p>
@@ -195,9 +195,9 @@
         <title>Repeated Linear Factors</title>
         <p>
           If a rational function has a repeated linear factor in the denominator in the form <m>(x-k)^n</m>, where m<m>n</m> is some integer greater than 1, then the corresponding partial fractions are
-          <me>
+          <md>
             \frac{A_1}{x-k} + \frac{A_2}{(x-k)^2} + ... + \frac{A_n}{(x-k)^n}
-          </me>
+          </md>
           where <m>A_1, A_2, ..., A_n</m> are real numbers and <m>A_n\neq 0</m>.
         </p>
         <p>
@@ -225,9 +225,9 @@
         <hint>
           <p>
             Your partial fraction forms will look like this:
-            <me>
+            <md>
               \frac{A}{x-2}+\frac{B}{x+3}+\frac{C}{(x+3)^2}+\frac{D}{(x+3)^3}
-            </me>.
+            </md>.
           </p>
         </hint>
         <hint>
@@ -238,13 +238,13 @@
         <solution>
           <p>
             We'll rewrite our integral using the partial fraction forms:
-            <me>
+            <md>
               \int \frac{5x^2+27x+51}{(x-2)(x+3)^3}\;dx = \int \frac{A}{x-2}+\frac{B}{x+3}+\frac{C}{(x+3)^2}+\frac{D}{(x+3)^3}\;dx
-            </me>.
+            </md>.
             When we combine these fractions to compare the numerators, we end up with the following equation:
-            <me>
+            <md>
               A(x+3)^3 + B(x-2)(x+3)^2 + C(x-2)(x+3)+D(x-2) = 5x^2+27x+51
-            </me>
+            </md>
             We can evaluate this at <m>x=2</m> and <m>x=-3</m> to reveal the values of <m>A</m> and <m>D</m>:
             <md>
               <mrow>x=2: \amp \amp A(5)^3 \amp = 5(4)+27(2)+51 \amp</mrow>
@@ -253,16 +253,16 @@
               <mrow>\amp \amp D \amp = \frac{15}{-5}=-3</mrow>
             </md>
             Now that we know <m>A=1</m> and <m>D=-3</m>, we can put those into our equation connecting the numerators, and solve for <m>B</m> and <m>C</m>.
-            <me>
+            <md>
               (x+3)^3 + B(x-2)(x+3)^2 + C(x-2)(x+3)-3(x-2) = 5x^2+27x+51
-            </me>
+            </md>
             If we just consider the cubic terms, then on the left side of the equation we have <m>x^3+Bx^3</m>, and there are no cubic terms on the right side. This means that <m>1+B=0</m> and so <m>B=-1</m>.
           </p>
           <p>
             Similarly, we can consider just the constant terms of the (updated) equation:
-            <me>
+            <md>
               (x+3)^3 - (x-2)(x+3)^2 + C(x-2)(x+3)-3(x-2) = 5x^2+27x+51
-            </me>
+            </md>
             We can see that on the left side, we'll have <m>(3)^3-(-2)(3)^2 + C(-2)(3) - 3(-2)</m> and on the right side, the constant term is <m>51</m>.
             <md>
               <mrow>27+18-6C+6 \amp = 51</mrow>
@@ -288,9 +288,9 @@
         <hint>
           <p>
             Your partial fraction forms will look like this:
-            <me>
+            <md>
               \frac{A}{x+1} + \frac{Bx+C}{x^2+4x+5}
-            </me>.
+            </md>.
           </p>
         </hint>
         <hint>
@@ -301,41 +301,41 @@
         <solution>
           <p>
             Let's, again, rewrite our integral using the partial fraction forms we set up:
-            <me>
+            <md>
               \int \frac{6x^2+25x+27}{(x+1)(x^2+4x+5)}\;dx = \int frac{A}{x+1} + \frac{Bx+C}{x^2+4x+5}\;dx
-            </me>
+            </md>
             Our equation for the combined numerator is:
-            <me>
+            <md>
               A(x^2+4x+5) + (Bx+C)(x+1) = 6x^2+25x+27
-            </me>.
+            </md>.
             We can find <m>A</m> be evaluating at <m>x=-1</m>.
             <md>
               <mrow>x=-1:\amp \amp A(1-4+5) \amp = 6(1)-25+27\amp</mrow>
               <mrow>\amp \amp A\amp= \frac{8}{2} = 4</mrow>
             </md>
             Now, knowing that <m>A=2</m>, we can rewrite our equation to solve for <m>B</m> and <m>C</m>.
-            <me>
+            <md>
               4(x^2+4x+5) + (Bx+C)(x+1) = 6x^2+25x+27
-            </me>
+            </md>
             We can collect the quadratic terms, and see the following equation:
-            <me>
+            <md>
               4x^2 + Bx^2 = 6x^2
-            </me>
+            </md>
             So <m>B=2</m>.
           </p>
           <p>
             Similarly, we can collect the constant terms:
-            <me>
+            <md>
               4(5) + C = 27
-            </me>.
+            </md>.
             It is easy to see that <m>C=7</m>. So we have our newly rewritten integral:
-            <me>
+            <md>
                \int \frac{6x^2+25x+27}{(x+1)(x^2+4x+5)}\;dx = \int \frac{4}{x+1}+ \frac{2x+7}{x^2+4x+5}\;dx
-            </me>
+            </md>
             The first term is pretty straightforward to integrate: we'll get a log. The second one, though, will take some work. Let's consider it by itself:
-            <me>
+            <md>
               \int \frac{2x+7}{x^2+4x+5}\;dx
-            </me>.
+            </md>.
             We can start with a <m>u</m>-substitution of <m>u=x^2+4x+5</m>, giving us <m>dx=2x+4\;dx</m>. Let's rewrite the numerator as <m>2x+4+3</m> in order to make this work:
             <md>
               <mrow>\int \frac{2x+7}{x^2+4x+5}\;dx \amp =\int \frac{(2x+4)+3}{x^2+4x+5}\;dx</mrow>

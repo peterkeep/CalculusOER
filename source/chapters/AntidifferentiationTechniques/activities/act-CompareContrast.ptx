@@ -6,14 +6,14 @@
         </p>
         <sidebyside>
             <p>
-                <me>
+                <md>
                     \int \sin^4(x)\cos(x)\;dx
-                </me>
+                </md>
             </p>
             <p>
-                <me>
+                <md>
                     \int \sin^4(x)\cos^3(x)\;dx
-                </me>
+                </md>
             </p>
         </sidebyside>
     </introduction>
@@ -50,9 +50,9 @@
         <hint>
             <p>
                 We have a trigonometric identity (the Pythagorean Identity):
-                <me>
+                <md>
                     \sin^2(x)+\cos^2(x) = 1
-                </me>.
+                </md>.
             </p>
         </hint>
     </task>

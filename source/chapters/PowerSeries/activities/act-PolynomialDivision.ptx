@@ -9,9 +9,9 @@
         <statement>
             <p>
                 We're going to factor some polynomials, but we might end up using some division. First, we'll confirm some factors that we already know. 
-                <me>
+                <md>
                     x^2-1 = (x-1)(x+1)
-                </me>
+                </md>
                 We'll confirm this by using division.
                 <tabular>
                     <row halign="right">
@@ -107,9 +107,9 @@
         <statement>
             <p>
                 Now that we have good evidence that
-                <me>
+                <md>
                     \sum_{k=0}^\infty x^k = \frac{x^n-1}{x-1}
-                </me>,
+                </md>,
                 We can apply a limit as <m>n\to\infty</m>. 
                 <md>
                     <mrow> \sum_{k=0}^\infty x^k \amp =\lim_{n\to\infty} \sum_{k=0}^n x^k </mrow>

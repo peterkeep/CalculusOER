@@ -22,9 +22,9 @@
       <statement>
         <p>
           For a function <m>f</m> that is continuous on an interval <m>[a,b]</m>, and a function <m>A(x) = \displaystyle\int_{t=a}^{t=x} f(t)\;dt</m> defined for <m>x</m>-values in <m>[a,b]</m>, then <m>A'(x) = f(x)</m>. That is:
-          <me>
+          <md>
             \ddx{\int_{t=a}^{t=x} f(t)\;dt} = f(x)
-          </me>.
+          </md>.
         </p>
       </statement>
       <proof>
@@ -36,9 +36,9 @@
         </p>
         <p>
           From <xref ref="def-DerivativeFunction"/>, we know:
-          <me>
+          <md>
             A'(x) = \lim_{\Delta x \to 0}\left(\frac{A(x+\Delta x) - A(x)}{\Delta x}\right)
-          </me>
+          </md>
           If we just focus on the numerator, <m>A(x+\Delta x) - A(x)</m>, we have:
           <md>
             <mrow> A(x+\Delta x) - A(x)\amp =\left(\int_{t=a}^{t=x+\Delta x} f(t)\;dt\right) - \left(\int_{t=a}^{t=x} f(t)\;dt\right)</mrow>
@@ -54,9 +54,9 @@
         </figure> 
         <p> 
           The total width of our interval is <m>\Delta x</m>, so we have that 
-          <me>
+          <md>
             \int_{t=x}^{t=x+\Delta x} f(t)\;dt \approx f(x^*) \Delta x
-          </me>
+          </md>
           where <m>x^*</m> is some <m>x</m>-value in <m>[x, x+\Delta x]</m>. Note that we don't have a sum, as we normally would, since we are only <q>adding</q> a single area of a single rectangle.
         </p>
         <p>
@@ -101,9 +101,9 @@
             <mrow> \amp = f(x)</mrow>
           </md>
           This completes the proof! Most of the proofs that you might see for this theorem use the <xref ref="thm-MVT" text="title"/> to help, since we can see a connection between the derivative <m>A'(x)</m> and the average rate of change of the area function:
-          <me>
+          <md>
             \left(\frac{A(x+\Delta x) - A(x)}{\Delta x}\right)
-          </me>
+          </md>
           The Mean Value Theorem really is behind many of the most important results in calculus!
         </p>
       </proof>
@@ -136,9 +136,9 @@
       <statement>
         <p>
           For a function <m>f(x)</m> continuous on the closed interval <m>[a,b]</m> and some <m>F(x)</m>, an antiderivative of <m>f(x)</m>, then
-          <me>
+          <md>
             \int_{x=a}^{x=b} f(x)\;dx = F(x)\bigg{|}_{x=a}^{x=b} = F(b)-F(a)
-          </me>.
+          </md>.
           The vertical bar means <q>evaluated,</q> and <m>F(x)\bigg{|}_{x=a}^{x=b}</m> is typically read as <q><m>F(x)</m> evaluated from <m>x=a</m> to <m>x=b</m>.</q>
         </p>
       </statement>

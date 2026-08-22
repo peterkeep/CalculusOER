@@ -22,9 +22,9 @@
     </p>
     <p>
       We said that <m>\frac{0}{0}</m> is an indeterminate form, since a limit whose numerator and denominator approach 0 can end up taking on different values or even not exist. For instance, we can notice that the definition of the <xref ref="def-DerivativeAtPoint" text="title"/> is a limit with this indeterminate form. As long as <m>f(x)</m> is continuous (a necessity of it being differentiable) at <m>x=a</m>, then:
-      <me>
+      <md>
         \lim_{x\to a} \left(\frac{f(x)-f(a)}{x-a}\right) \stackrel{?}{\to} \frac{f(a)-f(a)}{a-a} = \frac{0}{0}
-      </me>
+      </md>
       But we have seen so many different values that this limit can end up being! We have spent most of the past two chapters in this text playing with derivatives and evaluating them: all of those values come from this limit! We have also seen that, even for continuous functions, this limit may not exist. A function can be non-differentiable at <m>x=a</m>.
     </p>
     <p>
@@ -32,9 +32,9 @@
     </p>
     <p>
       Let's think about the following limit:
-      <me>
+      <md>
         \lim_{x\to \infty} \left(\frac{2x^m+1}{1-3x^n}\right)
-      </me>.
+      </md>.
       As long as <m>m,n\gt 0</m>, then this limit looks like it's in the form of <m>\frac{\infty}{\infty}</m>. Sure, the denominator is really approaching <m>-\infty</m>, but we really just mean that there is an infinite numerator and an infinite denominator, regardless of sign.
     </p>
     <p>
@@ -69,9 +69,9 @@
       <statement>
         <p>
           If <m>f(x)</m> and <m>g(x)</m> are functions and <m>a</m> is some real number with <m>f</m> and <m>g</m> both being differentiable at <m>a</m> and <m>\displaystyle\lim_{x\to a} f(x) = 0</m> and <m>\displaystyle\lim_{x\to a}g(x) = 0</m>, then
-          <me>
+          <md>
             \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}
-          </me>.
+          </md>.
           Similarly, this holds if <m>\displaystyle\lim_{x\to a} f(x) = \pm\infty</m> and <m>\displaystyle\lim_{x\to a} g(x) = \pm \infty</m>.
         </p>
         <p>
@@ -89,9 +89,9 @@
             </li>
           </ul>
           then
-          <me>
+          <md>
             \lim_{x\to \infty} \frac{f(x)}{g(x)} = \lim_{x\to \infty} \frac{f'(x)}{g'(x)}
-          </me>.
+          </md>.
         </p>
         <p>
           This is also true as <m>x\to-\infty</m>.
@@ -188,31 +188,31 @@
       <title>Products!</title>
       <p>
         We can rewrite <m>f(x)\cdot g(x)</m> as a quotient by dividing by a reciprocal. So either
-        <me>
+        <md>
           f(x)\cdot g(x) = \frac{f(x)}{1/g(x)}
-        </me>
+        </md>
         or 
-        <me>
+        <md>
           f(x)\cdot g(x) = \frac{g(x)}{1/f(x)}
-        </me>.
+        </md>.
         Our choice ends up being based on what is most helpful.
       </p>
       <example xml:id="ex-xlnx">
         <statement>
           <p>
             Evaluate the limit:
-            <me>
+            <md>
               \lim_{x\to 0^+} \left(x\ln(x)\right)
-            </me>
+            </md>
             Note that since <m>x\to 0</m> and <m>\ln(x)\to -\infty</m>, this is a <m>0\cdot\infty</m> indeterminate form.
           </p>
         </statement>
         <hint>
           <p>
             Rewrite this limit as:
-            <me>
+            <md>
               \lim_{x\to 0^+} \left(\frac{\ln(x)}{1/x}\right)
-            </me>.
+            </md>.
             Note that this is not an <m>\frac{\infty}{\infty}</m> indeterminate form, and we can use L'Hôpital's Rule.
           </p>
         </hint>
@@ -243,9 +243,9 @@
         <statement>
           <p>
             Evaluate the following limit:
-            <me>
+            <md>
               \lim_{x\to \infty} \left(2^x - x^2\right)
-            </me>
+            </md>
             Note that since <m>2^x\to \infty</m> and <m>x^2\to \infty</m>, this is an <m>\infty-\infty</m> indeterminate form.
           </p>
         </statement>
@@ -296,9 +296,9 @@
           <statement>
             <p>
               Evaluate the following limit:
-              <me>
+              <md>
                 \lim_{x\to 0^+} x^x
-              </me>
+              </md>
               Note that this is the <m>0^0</m> indeterminate form.
             </p>
           </statement>
@@ -323,9 +323,9 @@
           <statement>
             <p>
               Evaluate the following limit:
-              <me>
+              <md>
                 \lim_{x\to\infty}\sqrt[x]{x}
-              </me>.
+              </md>.
               Note that this is the <m>0^\infty</m> indeterminate form.
             </p>
           </statement>

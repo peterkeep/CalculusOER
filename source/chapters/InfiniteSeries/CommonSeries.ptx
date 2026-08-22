@@ -25,13 +25,13 @@
       </p>
       <p>
         For instance, a geometric mean of the numbers 1, 4, and 5 is:
-        <me>
+        <md>
           \sqrt[3]{1\cdot 4\cdot 5} = \sqrt[3]{20}
-        </me>
+        </md>
         This is approximately 2.714. We can compare that to the arithmetic mean:
-        <me>
+        <md>
           \dfrac{1+4+5}{3} = \dfrac{10}{3}
-        </me>.
+        </md>.
         These are just different kinds of measures of <q>center</q> of a list of values, although you might be most familiar with the arithmetic mean.
       </p>
     </aside>
@@ -40,7 +40,7 @@
     <statement>
       <p>
         For real numbers <m>a</m> and <m>r</m> with <m>a, r \neq 0</m>, we say that the series
-        <me>\sum_{k=0}^\infty ar^k = a + ar + ar^2 + ar^3 + ...</me>
+        <md>\sum_{k=0}^\infty ar^k = a + ar + ar^2 + ar^3 + ...</md>
         is a <term>geometric series</term>. We call <m>r</m> the <term>constant ratio</term> and <m>a</m> the <term>initial term</term>.
       </p>
     </statement>
@@ -78,7 +78,7 @@
       <statement>
         <p>
           For a real number <m>p</m>, we say that the series
-          <me>\sum_{k=1}^\infty \frac{1}{k^p}</me>
+          <md>\sum_{k=1}^\infty \frac{1}{k^p}</md>
           is a <term><m>p</m>-series</term>. We mostly will be concerned about the case where <m>p\gt 0</m>, making the terms of the series be reciprocal power functions.
         </p>
       </statement>
@@ -100,7 +100,7 @@
         <p><em>Case 1: <m>p\leq 0</m></em></p>
         <p>
           Note that for <m>\frac{1}{k^p}</m> with <m>p\lt 0</m>, we can write this as <m>k^{|p|}</m>. Now we can consider the limit of the terms, in order to use the <xref ref="thm-DivergenceTest" text="title"/>.
-          <me>\lim_{k\to\infty} \frac{1}{k^p} = \lim_{k\to \infty} k^{|p|}</me>
+          <md>\lim_{k\to\infty} \frac{1}{k^p} = \lim_{k\to \infty} k^{|p|}</md>
           Since this limit is non-zero (since it is either <m>\infty</m> or 1, depending on whether <m>p=0</m> or not), the series diverges by the Divergence Test.
         </p>
         <p>
@@ -118,9 +118,9 @@
             <mrow> \amp = \lim_{t\to\infty} \frac{t^{1-p}}{1-p} - \frac{1}{1-p}</mrow>
           </md>
           We can note that since <m>0\lt p \lt 1</m>, that <m>1-p\gt 0</m>. This means that when <m>t\to\infty</m>, <m>t^{1-p}\to\infty</m> as well.
-          <me>
+          <md>
             \int_{x=0}^\infty \frac{1}{x^p}\;dx\ = \lim_{t\to\infty} \frac{t^{1-p}}{1-p} - \frac{1}{1-p} = \infty
-          </me>
+          </md>
           This integral diverges, and so then does the series.
         </p>
         <p>
@@ -145,9 +145,9 @@
           </md>
 
           Now, though, we have <m>p\gt 1</m> which means that <m>1-p \lt 0</m>. This means that <m>t^{1-p} = \frac{1}{t^{|p-1|}}</m>. So now we will consider the limit, and note that as <m>t\to\infty</m>, we get <m>\frac{1}{t^{|p-1|}}\to 0</m>.
-          <me>
+          <md>
             \int_{x=0}^\infty \frac{1}{x^p}\;dx\ = \lim_{t\to\infty} \frac{1}{(1-p)t^{|p-1|}} - \frac{1}{1-p} = -\frac{1}{1-p}
-          </me>
+          </md>
           This integral converges, and so then does the series. We remember, though, that the series converges to something different than the integral, and so we do not know what the series converges to.
         </p>
       </proof>

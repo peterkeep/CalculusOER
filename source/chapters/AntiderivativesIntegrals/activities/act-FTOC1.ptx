@@ -3,9 +3,9 @@
     <introduction>
         <p>
             First, we're going to define a bit of a weird function. Sometimes it's called the <term>Area function</term>:
-            <me>
+            <md>
                 A(x)=\int_{t=0}^{t=x} g(t)\;dt
-            </me>.
+            </md>.
             This is a strange function, because we're defining the function as an integral of another function. Specifically, note that the <em>input</em> for our area function <m>A(x)</m> is the ending limit of integration: we're calculating the signed area <q>under</q> the curve of <m>g(t)</m> from <m>t=0</m> up to some variable ending point <m>t=x</m>.
         </p>
         <p>

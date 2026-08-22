@@ -80,19 +80,19 @@
         <statement>
             <p>
                 Consider these functions without their graphs:
-                <me>
+                <md>
                     f(x) = \begin{cases}
                     2- x \amp \text{when } x\lt 1\\
                     3 \amp \text{when } x=1\\
                     \frac{x^2}{4} - \frac{x}{2} + \frac{5}{4} \amp \text{when } x\gt 1
                     \end{cases}
-                </me>
-                <me>
+                </md>
+                <md>
                     g(x) = \begin{cases}
                     3 - (x-1)^2 \amp \text{when } x\leq 2\\
                     (x-3)^2 \amp \text{when } x\gt 2
                     \end{cases}
-                </me>
+                </md>
                 Find the limits <m>\displaystyle \lim_{x\to 1}f(x)</m> and <m>\displaystyle \lim_{x\to 2}g(x)</m>. Compare these values of <m>f(1)</m> and <m>g(2)</m>: are they related at all?
             </p>
         </statement>

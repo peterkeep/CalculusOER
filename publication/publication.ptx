@@ -45,9 +45,7 @@
   <!-- stored or created.  Directories are relative to the main -->
   <!-- source PreTeXt file                                      -->
   <source>
-    <!-- Paths to folders containing external assets and generated assets -->
-    <!-- relative to your main source file.                               -->
-    <directories external="../assets" generated="../generated-assets" />
+    
 
     <!-- Set which marked elements are included in this version: -->
     <!-- See
@@ -215,6 +213,8 @@
               statcounter-project="0123456"
               statcounter-security="0123456"
             /> -->
+    <brandlogo url="https://www.discovercalculus.com" source="cover/DC-front.png"/>
+    <!-- <covers front="images/front.pdf" back="images/back.pdf"/> -->
   </html>
 
   <epub>

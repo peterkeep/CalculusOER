@@ -55,16 +55,16 @@
       <p>
         For a function <m>f(x)</m> that is continuous on <m>[a,\infty)</m>, we can evaluate the improper integral <m>\displaystyle\int_{x=a}^\infty f(x)\;dx</m>:
 
-        <me>
+        <md>
           \int_{x=a}^\infty f(x)\;dx = \lim_{t\to\infty} \int_{x=a}^{x=t} f(x)\;dx
-        </me>.
+        </md>.
       </p>
       <p>
         If <m>f(x)</m> is continuous on <m>(-\infty,b]</m>, we can evaluate the improper integral <m>\displaystyle\int_{-\infty}^{x=b} f(x)\;dx</m>:
 
-        <me>
+        <md>
           \int_{-\infty}^{x=b} f(x)\;dx = \lim_{t\to -\infty} \int_{x=t}^{x=b} f(x)\;dx
-        </me>.
+        </md>.
       </p>
       <p>
         Finally, if <m>f(x)</m> is continuous on <m>(-\infty,\infty)</m> and <m>m</m> is some real number, then we can evaluate the improper integral <m>\displaystyle\int_{-\infty}^{\infty}f(x)\;dx</m>:
@@ -78,9 +78,9 @@
       <statement>
         <p>
           Evaluate the improper integral <m>\displaystyle \int_{x=2}^{\infty}\frac{1}{(x+1)^2}dx</m> by evaluating the limit:
-          <me>
+          <md>
             \lim_{t\to\infty} \int_{x=2}^{x=t} \frac{1}{(x+1)^2}dx = \lim_{t\to\infty} \left(F(t)-F(2)\right)
-          </me>.
+          </md>.
           Try to interpret this limit. What does it mean if this limit doesn't exist? What does it mean if the limit does exist? What does the actual number represent?
         </p>
       </statement>
@@ -102,9 +102,9 @@
       <statement>
         <p>
           Evaluate the improper integral <m>\displaystyle \int_{x=-1}^{x=2}\frac{1}{(x+1)^2}dx</m> by evaluating the limit:
-          <me>
+          <md>
             \lim_{t\to -1^{+}} \int_{x=t}^{x=2} \frac{1}{(x+1)^2}dx = \lim_{t\to -1^+} \left(F(2)-F(t)\right)
-          </me>.
+          </md>.
           Try to interpret this limit. What does it mean if this limit doesn't exist? What does it mean if the limit does exist? What does the actual number represent?
         </p>
       </statement>

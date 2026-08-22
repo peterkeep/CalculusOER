@@ -24,9 +24,9 @@
       <statement>
         <p>
           An infinite series <m>\displaystyle\sum_{k=0}^\infty a_k</m> is called an <term>Alternating Series</term> when <m>a_k = (-1)^k|a_k|</m> or <m>a_k = (-1)^{k+1}|a_k|</m> for all <m>k=0,1,2,...</m>. That is, the sign of the terms alternates:
-          <me>
+          <md>
             \sum_{k=0}^\infty a_k = |a_0| - |a_1| + |a_2| - + ...
-          </me>
+          </md>
         </p>
       </statement>
     </definition>
@@ -134,9 +134,9 @@
             <li>
               <p>
                 We are considering an <xref ref="def-AlternatingSeries" text="title"/>, <m>\displaystyle \sum_{k=0}^\infty a_k</m>. For our purposes, we'll assume that we have something like
-                <me>
+                <md>
                   \sum_{k=0}^\infty a_k = |a_0| - |a_1| + |a_2| - |a_3| +-...
-                </me>
+                </md>
                 where the even-indexed terms are the positive ones. This could be flipped and it wouldn't make a difference.
               </p>
             </li>
@@ -157,7 +157,7 @@
         </p>
         <p>
           First, consider the sequence <m>\{S_{2n}\}_{n=0}^\infty = \{S_0, S_2, S_4, ...\}</m>. The difference between successive terms in this sequence (successive even-indexed partial sums) is:
-          <me>S_{2n+2} - S_{2n} = -|a_{2n+1}| + |a_{2n+2}|</me>.
+          <md>S_{2n+2} - S_{2n} = -|a_{2n+1}| + |a_{2n+2}|</md>.
           Since the terms of the alternating series are decreasing in size, we know that <m>|a_{2n+2}|\lt |a_{2n+1}|</m>, which means that <m>S_{2n+2}-S_{2n}\lt 0</m>, and so <m>S_{2n} \gt S_{2n+2}</m>.
         </p>
         <p>
@@ -165,9 +165,9 @@
         </p>
         <p>
           We can apply the same reasoning to the sequence <m>\{S_{2n+1}\}_{n=0}^\infty = \{S_1, S_3, S_5, ...\}</m>. We know the differences between successive odd-indexed partial sums is:
-          <me>
+          <md>
             S_{2n+3} - S_{2n+1} = -|a_{2n+3}| + |a_{2n+2}|
-          </me>.
+          </md>.
           This time, though, <m>|a_{2n+2}|\gt |a_{2n+3}|</m> and so the difference is positive:
           <m>S_{2n+3} - S_{2n+1}\gt 0</m> which means that <m>S_{2n+3} \gt S_{2n+1}</m>. The sequence <m>\{S_{2n+1}\}_{n=0}^\infty</m> is an increasing sequence.
         </p>
@@ -205,13 +205,13 @@
         </p>
         <p>
           Since <m>\{S_{2n}\}_{n=0}^\infty</m> converges, let's say that there is some number <m>S_E</m> where
-          <me>
+          <md>
             \lim_{n\to\infty} S_{2n} = S_E
-          </me>.
+          </md>.
           Similarly, there is a number <m>S_O</m> where
-          <me>
+          <md>
             \lim_{n\to\infty} S_{2n+1} = S_O
-          </me>.
+          </md>.
           Now we can use the fact that the limit of the terms is 0:
           <md>
             <mrow>\lim_{k\to\infty} a_k \amp=0 </mrow>
@@ -231,9 +231,9 @@
     </p>
     <p>
       We know that if a series converges, it's because the limit of the partial sums exists. So we <q>just</q>need to find what the real number, <m>S</m>, is when
-      <me>
+      <md>
         \lim_{n\to\infty} \sum_{k=0}^n a_k = S
-      </me>.
+      </md>.
       We said earlier, though, that this is pretty hard to do! We can always approximate this limit, though, by looking at a <em>big</em> partial sum: if the limit exists, then probably adding up the first 10,000 terms will be a pretty good approximation (since we don't expect the partial sums to change, much, as <m>n</m> gets bigger). But how many terms is enough to give us a good enough approximation?
     </p>
     <p>

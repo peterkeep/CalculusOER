@@ -6,10 +6,10 @@
         </p>
         <sidebyside>
             <p>
-                <me>\int \sin^2(x)\;dx</me>
+                <md>\int \sin^2(x)\;dx</md>
             </p>
             <p>
-                <me>\int \cos^2(x)\;dx</me>
+                <md>\int \cos^2(x)\;dx</md>
             </p>
         </sidebyside>
     </introduction>
@@ -96,9 +96,9 @@
                     <mrow>I \amp = \dfrac{-\sin(x)\cos(x)+x}{2}+C</mrow>
                 </md>
                 So we end up with:
-                <me>
+                <md>
                     \int \sin^2(x)\;dx = \frac{x-\sin(x)\cos(x)}{2}+C
-                </me>.
+                </md>.
             </p>
             <p>
                 For <m>\int \cos^2(x)\;dx</m>:
@@ -110,9 +110,9 @@
                     <mrow>I \amp = \dfrac{\sin(x)\cos(x)+x}{2}+C</mrow>
                 </md>
                 So we end up with:
-                <me>
+                <md>
                     \int \cos^2(x)\;dx = \frac{x+\sin(x)\cos(x)}{2}+C
-                </me>.
+                </md>.
             </p>
         </solution>
     </task>

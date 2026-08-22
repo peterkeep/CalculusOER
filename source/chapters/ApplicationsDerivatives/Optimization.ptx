@@ -43,13 +43,13 @@
         </p>
         <p>
           This doesn't seem like a lot of information, but we can put it all together really nicely. For instance, I can manipulate the fact that these two numbers add to get <m>14</m> into an equation that tells me what the value of one number is based on the other:
-          <me>
+          <md>
             a+b=14 \longrightarrow b=14-a
-          </me>.
+          </md>.
           I can also write my product as an actual function of a single variable:
-          <me>
+          <md>
             P=ab \longrightarrow P(a)=a(\underbrace{14-a}_{b})
-          </me>.
+          </md>.
           Lastly, I actually know a domain for this function: we know that <m>a\geq 0</m>, but since <m>b\geq 0</m>, then <m>a\leq 14</m>. We <em>can't</em> have a number larger than <m>14</m>, since the other number would be negative.
         </p>
         <aside>

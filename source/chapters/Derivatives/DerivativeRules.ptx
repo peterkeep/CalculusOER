@@ -110,9 +110,9 @@
     </figure>
     <p>
       In each row, the coefficients are built by the sum of the two coefficients above it. We have highlighted the 5th row, in order to compare it to the work we did in <xref ref="act-DerivativesOfPowerFunctions"/>.
-      <me>
+      <md>
         (x+\Delta x)^5 = x^5+5x^4\Delta x + 10x^3\Delta x^2 + 10x^2\Delta x^3 + 5 x\Delta x^4 + \Delta x^5
-      </me>
+      </md>
       We can see the coefficients on each term match the highlighted row!
     </p>
     <figure xml:id="fig-BinomialTriangle-2">
@@ -212,9 +212,9 @@
       <title>Power Rule for Derivatives</title>
       <statement>
         <p>
-          <me>
+          <md>
             \frac{d}{dx}(x^n) = nx^{n-1}
-          </me>
+          </md>
         </p>
       </statement>
     </theorem>
@@ -250,9 +250,9 @@
       <statement>
         <p>
           If <m>y=k</m> where <m>k</m> is some real number constant, then <m>y'=0</m>. Another way of saying this is:
-          <me>
+          <md>
             \frac{d}{dx}\left(k\right)=0
-         </me>.
+         </md>.
         </p>
       </statement>
     </theorem>
@@ -271,14 +271,14 @@
       <title>Derivatives of the Sine and Cosine Functions</title>
       <statement>
         <p>
-          <me>
+          <md>
             \dfrac{d}{d\theta}\left(\sin(\theta)\right) = \cos(\theta)
-          </me>
+          </md>
           </p>
           <p>
-          <me>
+          <md>
             \dfrac{d}{d\theta}\left(\cos(\theta)\right) = -\sin(\theta)
-          </me>
+          </md>
         </p>
       </statement>
       <proof>
@@ -355,9 +355,9 @@
       <title>Derivative of the Exponential Function</title>
       <statement>
         <p>
-          <me>
+          <md>
             \frac{d}{dx}\left(e^x\right) = e^x
-          </me>
+          </md>
         </p>
       </statement>
     </theorem>

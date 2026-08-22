@@ -11,9 +11,9 @@
     </p>
     <p>
       Then, more recently, in <xref ref="ex-sincos"/>, we noted that we could use a mix of methods to integrate this:
-      <me>
+      <md>
         \int \sin(x)\cos(x)\;dx
-      </me>.      
+      </md>.      
     </p>
     <p>
       On one hand, we can look at the structure of the integrand and notice that we have a product of two functions! Integration by parts was a fine strategy to employ, and that's what we did in the example. On the other hand, we noticed that since we have this function-derivative pairing, a <m>u</m>-substitution also was appropriate.

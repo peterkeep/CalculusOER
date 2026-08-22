@@ -10,9 +10,9 @@
                 <mrow>\cos(x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{2k}}{(2k)!} \amp \text{on } (-\infty,\infty)</mrow>
             </md>
             We're going to build a Taylor series for a logarithmic function:
-            <me>
+            <md>
                 y=\ln(1+x)
-            </me>.
+            </md>.
         </p>
     </introduction>
     <task>
@@ -61,13 +61,13 @@
             </p>
             <p>
                 So:
-                <me>
+                <md>
                     \ln(1+x) = \sum_{k=0}^{\infty} \frac{(-1)^k x^{k+1}}{k+1}
-                </me>.
+                </md>.
                 Sometimes this is written as:
-                <me>
+                <md>
                     \ln(1+x) = \sum_{k=1}^{\infty} \frac{(-1)^{k+1} x^{k}}{k}
-                </me>
+                </md>
             </p>
         </solution>
     </task>
@@ -90,16 +90,16 @@
             <sidebyside widths="48% 48%">
                 <p>
                     Case: <m>x=-1</m>
-                    <me>
+                    <md>
                         \sum_{k=0}^{\infty} \frac{-1}{k+1}
-                    </me>
+                    </md>
                     This is the negative harmonic series, and so the series diverges at <m>x=-1</m>.
                 </p>
                 <p>
                     Case: <m>x=1</m>
-                    <me>
+                    <md>
                         \sum_{k=0}^{\infty} \frac{(-1)^k}{k+1}
-                    </me>
+                    </md>
                     This is the alternating harmonic series, and so the series converges at <m>x=1</m>.
                 </p>
             </sidebyside>

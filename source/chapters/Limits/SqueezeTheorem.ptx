@@ -30,9 +30,9 @@
     <statement>
       <p>
         For some functions <m>f(x)</m>, <m>g(x)</m>, and <m>h(x)</m> which are all defined and ordered <m>f(x)\leq g(x)\leq h(x)</m> for <m>x</m>-values near <m>x=a</m> (but not necessarily at <m>x=a</m> itself), and for some real number <m>L</m>, if we know that 
-        <me>
+        <md>
           \lim_{x\to a} f(x) = L = \lim_{x\to a} h(x)
-        </me>
+        </md>
         then we also know that <m>\displaystyle \lim_{x\to a} g(x) = L</m>.
       </p>
     </statement>

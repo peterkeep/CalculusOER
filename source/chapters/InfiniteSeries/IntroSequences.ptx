@@ -96,17 +96,17 @@
             <li>
                 <p>
                     When we add something recursively (where we add the same thing repetitively to get from the <m>k</m>th term to the <m>(k+1)</m>st term), this is the same thing as multiplication in an explicit formula!
-                    <me>
+                    <md>
                         \underbrace{3 + 3 + ... + 3}_{k \text{ times}} = 3k
-                    </me>
+                    </md>
                 </p>
             </li>
             <li>
                 <p>
                     Similarly, when we multiply something recursively, we can think about this as an exponential in the explicit formula!
-                    <me>
+                    <md>
                         \underbrace{3\cdot 3 \cdot 3 \cdots 3}_{k \text{ times}} = 3^k
-                    </me>
+                    </md>
                     
                 </p>
             </li>
@@ -131,13 +131,13 @@
         </p>
         <p>
             Consider, for example the following function and sequence:
-            <me>
+            <md>
                 f(x)= \frac{x}{x^2+1} \text{ for } x\geq 0
-            </me>
+            </md>
             and
-            <me>
+            <md>
                 a_k = \frac{k}{k^2+1} \text{ for } k = 0, 1, 2, ...
-            </me>
+            </md>
             We can graph the curve <m>y=f(x)</m> in the normal way, as a smooth curve starting at the point at <m>x=0</m>.       
         </p>
         <figure xml:id="fig-FunctionSequence-1">
@@ -283,11 +283,11 @@
             <statement>
                 <p>
                     Let's start by assuming that the sequence converges. That means that there exists some real number <m>L</m> such that
-                    <me> \lim_{k\to\infty} a_k = L </me>.
+                    <md> \lim_{k\to\infty} a_k = L </md>.
                 </p>
                 <p>
                     What would this <m>L</m> be, if it exists? A key thing to note is that if <m>\lim_{k\to\infty} a_k</m> exists (and we have a symbol, <m>L</m>, for it) then we can say that
-                    <me>\lim_{k\to\infty} a_{k-1} = L</me>.
+                    <md>\lim_{k\to\infty} a_{k-1} = L</md>.
                     Whether or not this is obvious to you is not a mark of your understanding, but we need to make sure that this ends up being obvious to you. If it's not, that's ok! But it is an indicator that you should take a couple of minutes to think about this. Once you are convinced that these two limits are the same thing, move on to the next part.
                 </p>
             </statement>

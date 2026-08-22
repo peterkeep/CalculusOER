@@ -4,9 +4,9 @@
         <statement>
             <p>
                 Explain to someone how (and why) we use <xref ref="thm-ChainRule" text="title"/> to find the following derivative:
-                <me>
+                <md>
                     \ddx{\sqrt{\sin(x)}}
-                </me>.
+                </md>.
             </p>
         </statement>
     </task>
@@ -14,9 +14,9 @@
         <statement>
             <p>
                 Let's say that <m>f(x)=\sin(x)</m>. Explain how we find the following derivative:
-                <me>
+                <md>
                     \ddx{\sqrt{f(x)}}
-                </me>.
+                </md>.
                 How is this different, or not different, than the previous derivative?
             </p>
         </statement>
@@ -25,9 +25,9 @@
         <statement>
             <p>
                 Let's say that we have some other function, <m>g(x)</m>. Explain how we find the following derivative:
-                <me>
+                <md>
                     \ddx{\sqrt{g(x)}}
-                </me>.
+                </md>.
                 How is this different, or not different, than the previous derivatives?
             </p>
         </statement>
@@ -36,9 +36,9 @@
         <statement>
             <p>
                 What is the difference between the following derivatives:
-                <me>
+                <md>
                     \ddx{\sqrt{x}} \hspace{0.7cm} \ddx{\sqrt{y}} \hspace{0.7cm} \dd{}{y}\left(\sqrt{y}\right)
-                </me>
+                </md>
             </p>
         </statement>
         <hint>

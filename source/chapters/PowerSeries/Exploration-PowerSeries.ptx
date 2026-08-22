@@ -16,9 +16,9 @@
             <statement>
                 <p>
                     The sum of reciprocal squares converges, and specifically:
-                    <me>
+                    <md>
                         \sum_{k=1}^\infty \frac{1}{k^2}=\frac{\pi^2}{6}
-                    </me>.
+                    </md>.
                 </p>
             </statement>
         </theorem>
@@ -43,9 +43,9 @@
             <introduction>
                 <p>
                     We're going to follow along this proof, and for most of the time it might seem like we're fiddling with unrelated results and functions. By the end, we'll tie what we're doing together to show that:
-                    <me>
+                    <md>
                         \sum_{k=1}^\infty \frac{1}{k^2}=\frac{\pi^2}{6}
-                    </me>.
+                    </md>.
                 </p>
             </introduction>
             <task>
@@ -82,9 +82,9 @@
                 <statement>
                     <p>
                         We'll use these zeros to write out the function's factors, but we're also going to make use of the fact that <m>f(0)=1</m>. This means that if <m>x=c</m> is a zero of the function, then the corresponding factor should be written as <m>\left(1-\dfrac{x}{c}\right)</m>. So, if <m>c_1, c_2, c_3, c_4, ...</m> are all zeros, then we should write the function as:
-                        <me>
+                        <md>
                             f(x)=\left(1-\frac{x}{c_1}\right)\left(1-\frac{x}{c_2}\right)\left(1-\frac{x}{c_3}\right)\left(1-\frac{x}{c_4}\right)...
-                        </me>
+                        </md>
                         Use the zeros of the <m>\dfrac{\sin(x)}{x}</m> function that you found earlier to write out the factors of this.
                     </p>
                     <interactive platform="doenetml" width="95%" aspect="1:1">
@@ -108,15 +108,15 @@
                 <statement>
                     <p>
                         We are almost complete. We now have represented the function 
-                        <me>f(x) \begin{cases} \dfrac{\sin(x)}{x} \amp \text{for } x\neq 0\\ 1 \amp \text{for }x=0\end{cases} </me>
+                        <md>f(x) \begin{cases} \dfrac{\sin(x)}{x} \amp \text{for } x\neq 0\\ 1 \amp \text{for }x=0\end{cases} </md>
                         as an infinite sum
-                        <me>
+                        <md>
                             1-\frac{x^2}{3!}+\frac{x^4}{5!}-\frac{x^6}{7!}+-...
-                        </me>
+                        </md>
                         and also as an infinite product
-                        <me>
+                        <md>
                             \left(1-\frac{x^2}{\pi^2}\right)\left(1-\frac{x^2}{4\pi^2}\right)\left(1-\frac{x^2}{9\pi^2}\right)...
-                        </me>
+                        </md>
                         We can note that the constant term is <m>1</m> in each, since it is the product of all of the constant terms in the infinite product.
                     </p>
                     <p>
@@ -133,9 +133,9 @@
                 <statement>
                     <p>
                         You should have shown that:
-                        <me>
+                        <md>
                             -\frac{x^2}{6} = -\frac{x^2}{\pi^2} - \frac{x^2}{4\pi^2} - \frac{x^2}{9\pi^2} - ...
-                        </me>
+                        </md>
                         What is the sum of <m>1 + \dfrac{1}{4} + \dfrac{1}{9} + ... \dfrac{1}{k^2}+...</m>?
                     </p>
                 </statement>
@@ -162,9 +162,9 @@
             <statement>
                 <p>
                     We say that a random variable follows the <term>standard normal distribution</term> when the mean or expected value of the random variable is 0, the variance of the random variable is 0, and the probability density function is:
-                    <me>
+                    <md>
                         f(x)=\frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}
-                    </me>.
+                    </md>.
                 </p>
             </statement>
         </definition>
@@ -174,9 +174,9 @@
                 <li>
                     <p>
                         We use an integral to represent probability. For instance, the probability that a random variable will take on a value that is up to 1 standard deviation above the mean is:
-                        <me>
+                        <md>
                             \frac{1}{\sqrt{2\pi}}\int_{x=0}^{x=1}  e^{-\frac{x^2}{2}}\;dx
-                        </me>.
+                        </md>.
                         We can change the limits of integration to change the range of values that we are concerned with.
                     </p>
                 </li>

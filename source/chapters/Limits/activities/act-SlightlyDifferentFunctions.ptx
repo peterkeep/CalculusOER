@@ -37,14 +37,14 @@
         <statement>
             <p>
                 For the function <m>r(t)</m> defined below, evaluate the limit <m>\displaystyle \lim_{t\to 4} r(t)</m>.
-                <me>
+                <md>
                     r(t) = 
                     \begin{cases}
                         2t - \frac{4}{t} \amp \text{when } t\lt 4\\
                         8 \amp \text{when } t=4\\
                         t^2 - t-5 \amp \text{when } t\gt 4
                     \end{cases}
-                </me>
+                </md>
             </p>
         </statement>
     </task>
@@ -52,13 +52,13 @@
         <statement>
             <p>
                 For the slightly different function <m>s(t)</m> defined below, evaluate the limit <m>\displaystyle \lim_{t\to 4} s(t)</m>.
-                <me>
+                <md>
                     s(t) = 
                     \begin{cases}
                         2t - \frac{4}{t} \amp \text{when } t\leq 4\\
                         t^2 - t-5 \amp \text{when } t\gt 4
                     \end{cases}
-                </me>
+                </md>
             </p>
         </statement>
     </task>

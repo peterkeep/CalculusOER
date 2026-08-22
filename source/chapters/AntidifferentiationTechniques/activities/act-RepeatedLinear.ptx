@@ -3,9 +3,9 @@
     <introduction>
         <p>
             Let's sit with the following integral:
-            <me>
+            <md>
                 \int \frac{3x+5}{x^2+2x+1}\;dx
-            </me>.
+            </md>.
             Before we start, we can think about how annoying it would be to try to start with a <m>u</m>-substitution where <m>u=x^2+2x+1</m>.
         </p>
     </introduction>
@@ -35,16 +35,16 @@
             </p>
             <p>
                 Can you write the numerator, <m>3x+5</m>, as some coefficient on the factor <m>(x+1)</m> with some constant <q>remainder?</q>
-                <me>
+                <md>
                     3x+5 = <fillin characters="2" />(x+1)+<fillin characters="2" />
-                </me>
+                </md>
             </p>
         </statement>
         <answer>
             <p>
-                <me>
+                <md>
                     3x+5 = 3(x+1)+2
-                </me>
+                </md>
             </p>
         </answer>
     </task>
@@ -82,9 +82,9 @@
         <solution>
             <p>
                 We'll use our rewritten integral:
-                <me>
+                <md>
                     \int \frac{3x+5}{x^2+2x+1}\;dx = \int \frac{3}{x+1}+\frac{2}{(x+1)^2}\;dx
-                </me>.
+                </md>.
                 Now, we can split this into two integrals to deal with separately. For both, we can use the <m>u</m>-substitution <m>u=x+1</m>.
                 <md>
                     <mrow>\int \frac{3}{x+1}+\frac{2}{(x+1)^2}\;dx \amp = \int \frac{3}{u}\;du + \int \frac{2}{u^2}\;du</mrow>

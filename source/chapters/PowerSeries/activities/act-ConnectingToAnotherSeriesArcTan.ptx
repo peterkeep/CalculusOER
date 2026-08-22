@@ -11,9 +11,9 @@
                 <mrow>\ln(1+x) \amp = \sum_{k=0}^\infty \frac{(-1)^k x^{k+1}}{k+1} \amp \text{on } (-1,1]</mrow>
             </md>
             We're going to build a Taylor series for the inverse tangent function:
-            <me>
+            <md>
                 y=\tan^{-1}(x)
-            </me>.
+            </md>.
         </p>
     </introduction>
     <task>
@@ -62,9 +62,9 @@
             </p>
             <p>
                 So:
-                <me>
+                <md>
                     \tan^{-1}(x) = \sum_{k=0}^{\infty} \frac{(-1)^k x^{2k+1}}{2k+1}
-                </me>.
+                </md>.
             </p>
         </solution>
     </task>
@@ -88,16 +88,16 @@
             <sidebyside widths="48% 48%">
                 <p>
                     Case: <m>x=-1</m>
-                    <me>
+                    <md>
                         \sum_{k=0}^{\infty} \frac{(-1)^{k+1}}{2k+1}
-                    </me>
+                    </md>
                     This series converges by the <xref ref="thm-AlternatingSeriesTest" text="title"/>.
                 </p>
                 <p>
                     Case: <m>x=1</m>
-                    <me>
+                    <md>
                         \sum_{k=0}^{\infty} \frac{(-1)^k}{2k+1}
-                    </me>
+                    </md>
                     This series converges by the <xref ref="thm-AlternatingSeriesTest" text="title"/>.
                 </p>
             </sidebyside>

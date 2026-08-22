@@ -43,9 +43,9 @@
         </p>
         <p>
             Now, to find <m>p_2(x)</m>, we're going to add a term to the first-degree polynomial:
-            <me>
+            <md>
                 p_2(x) = <fillin characters="3" />(x-a)^2+f'(a)(x-a)+f(a)
-            </me>
+            </md>
             Let's differentiate this function twice, and force it to match <m>f''(a)</m> at <m>x=a</m>.
             <md>
                 <mrow> p_2(x) \amp= <fillin characters="3" />(x-a)^2+f'(a)(x-a)+f(a)</mrow>
@@ -58,9 +58,9 @@
                 <mrow> \amp = f''(a)</mrow>
             </md>
             So we get:
-            <me>
+            <md>
                 p_2(x) = \frac{f''(a)}{2}(x-a)^2+f'(a)(x-a)+f(a)
-            </me>.
+            </md>.
             What if we wanted a higher degree? Like, <m>p_3(x)</m>? Let's repeat the same process and see what happens!
             <md>
                 <mrow>p_3(x) \amp = <fillin characters="3" />(x-a)^3 + \frac{f''(a)}{2}(x-a)^2+f'(a)(x-a)+f(a)</mrow>
@@ -165,9 +165,9 @@
             <statement>
                 <p>
                     If <m>f(x)</m> is a function that is <m>n</m>-times differentiable at <m>x=a</m>, then there is some remainder function, <m>R_n(x)</m>, such that:
-                    <me>
+                    <md>
                         f(x) = \left(\sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k\right) + R_n(x)(x-a)^n
-                    </me>
+                    </md>
                     where <m>\displaystyle\lim_{x\to a}R_n(x)=0</m>.
                 </p>
                 <p>

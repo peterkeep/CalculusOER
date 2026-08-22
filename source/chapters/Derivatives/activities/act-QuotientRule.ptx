@@ -3,9 +3,9 @@
     <introduction>
         <p>
             We're going to start with a function that is a quotient of two other functions:
-            <me>
+            <md>
                 f(x) = \frac{u(x)}{v(x)}
-            </me>.
+            </md>.
             Our goal is that we want to find <m>f'(x)</m>, but we're going to shuffle this function around first. We won't calculate this derivative directly!
         </p>
     </introduction>
@@ -13,9 +13,9 @@
         <statement>
             <p>
                 Start with <m>f(x)=\dfrac{u(x)}{v(x)}</m>. Multiply <m>v(x)</m> on both sides to write a definition for <m>u(x)</m>.
-                <me>
+                <md>
                     u(x) = <fillin characters="20" />
-                </me>
+                </md>
             </p>
         </statement>
     </task>
@@ -33,9 +33,9 @@
             </p>
             <p>
                 Use what you found for <m>u'(x)</m> and solve for <m>f'(x)</m>.
-                <me>
+                <md>
                     f'(x) = <fillin characters="20" />
-                </me>
+                </md>
             </p>
         </statement>
     </task>
@@ -46,9 +46,9 @@
             </p>
             <p>
                 In your formula for <m>f'(x)</m>, replace <m>f(x)</m> with <m>\dfrac{u(x)}{v(x)}</m>.
-                <me>
+                <md>
                     f'(x) = <fillin characters="20" />
-                </me>
+                </md>
             </p>
         </statement>
     </task>

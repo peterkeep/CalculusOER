@@ -33,9 +33,9 @@
             <statement>
                 <p>
                     For a function <m>f(x)</m>, we say that the <term>derivative</term> of <m>f(x)</m> at <m>x=a</m> is:
-                    <me>
+                    <md>
                         f'(a) = \lim_{x\to a} \left(\frac{f(x)-f(a)}{x-a}\right)
-                    </me>
+                    </md>
                     provided that the limit exists.
                 </p>
                 <p>
@@ -45,9 +45,9 @@
         </definition>
         <p>
             We can investigate this definition visually. Consider the function <m>f(x)</m> plotted below, where we will look at the point <m>(-1, f(-1))</m>. In the definition of the limit, we'll let <m>a=-1</m>, and so consider:
-            <me>
+            <md>
                 \lim_{x\to-1}\left(\dfrac{f(x)-f(-1)}{x-(-1)}\right)
-            </me>.
+            </md>.
             Can you estimate the limit of the slope of the tangent line as <m>x\to -1</m>?
         </p>
         <interactive platform="doenetml" width="90%" aspect="1.1:1">
@@ -67,9 +67,9 @@
             <statement>
                 <p>
                     For a function <m>f(x)</m>, the derivative of <m>f(x)</m>, denoted <m>f'(x)</m>, is:
-                    <me>
+                    <md>
                         f'(x) = \lim_{\Delta x\to 0} \left( \frac{f(x+\Delta x) - f(x)}{\Delta x} \right)
-                    </me>
+                    </md>
                     for <m>x</m>-values in the domain of <m>f(x)</m> where this limit exists.
                 </p>
             </statement>

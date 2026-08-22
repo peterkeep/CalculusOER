@@ -11,9 +11,9 @@
       <statement>
         <p>
           If <m>f(x)</m> is an infinitely differentiable function at <m>x=a</m>, then the <term>Taylor series</term> expansion of <m>f(x)</m> centered at <m>x=a</m> is:
-          <me>
+          <md>
             \sum_{k=0}^\infty \frac{f^{(k)}(a)}{k!}(x-a)^k
-          </me>.
+          </md>.
         </p>
       </statement>
     </definition>

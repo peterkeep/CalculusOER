@@ -27,7 +27,7 @@
         <li>
           <p>
             Based on this re-representation above, we can always compose a function and its inverse to get the identity function, <m>y=x</m>. In general, if <m>y=f(x)</m> has an inverse function <m>f^{-1}</m>, then <m>\left(f\circ f^{-1}\right)(x)=f\left(f^{-1}(x)\right) = x</m>. Similarly, we can compose in the opposite order: <m>\left(f^{-1}\circ f\right)(x) = f^{-1}\left(f(x)\right) = x</m>. This can be a bit trickier to think about for the inverse trigonometric functions, since this only works on intervals of <m>x</m> where that inverse is defined. So we end up with strange things like:
-            <me>\sin^{-1}\left(\sin\left(\frac{3\pi}{2}\right)\right) = \sin^{-1}\left(-1\right) = -\frac{\pi}{2}</me>.
+            <md>\sin^{-1}\left(\sin\left(\frac{3\pi}{2}\right)\right) = \sin^{-1}\left(-1\right) = -\frac{\pi}{2}</md>.
             This is because the inverse sine function finds only angles in the interval <m>\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]</m>, and the angles <m>\frac{3\pi}{2}</m> and <m>-\frac{\pi}{2}</m> are <em>coterminal</em> (and so have the same output from the sine function).
           </p>
         </li>
@@ -45,12 +45,12 @@
       <title>Derivative of the Logarithmic Function</title>
       <statement>
         <p>
-          <me>\ddx{\ln(x)}=\frac{1}{x}</me>
+          <md>\ddx{\ln(x)}=\frac{1}{x}</md>
           for <m>x\gt 0</m>.
         </p>
         <p>
           Further, since <m>\log_b(x) = \frac{\ln(x)}{\ln(b)}</m> (for <m>b\geq 0</m> and <m>b\neq 1</m>), we can say that:
-          <me>\ddx{\log_b(x)} = \frac{1}{x\ln(b)}</me>
+          <md>\ddx{\log_b(x)} = \frac{1}{x\ln(b)}</md>
           for <m>x\gt 0</m>.
         </p>
       </statement>

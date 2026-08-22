@@ -3,9 +3,9 @@
     <introduction>
         <p>
             We're going to do another Compare and Contrast, but this time we're only going to consider one integral:
-            <me>
+            <md>
                 \int \sec^4(x)\tan^3(x)\;dx
-            </me>.
+            </md>.
             We're going to employ another strategy, similar to the one for <xref ref="strat-PowersSineCosine" text="title"/>.
         </p>
     </introduction>
@@ -13,9 +13,9 @@
         <statement>
             <p>
                 Before you start thinking about this integral, let's build the relevant version of the Pythagorean Identity that we'll use. Our standard version of this is:
-                <me>
+                <md>
                     \sin^2(x)+\cos^2(x)=1
-                </me>.
+                </md>.
                 Since we want a version that connects <m>\tan(x)</m>, which also is written as <m>\frac{\sin(x)}{\cos(x)}</m>, with <m>\sec(x)</m>, or <m>\frac{1}{\cos(x)}</m>, let's divide everything in the Pythagorean Identity by <m>\cos^2(x)</m>:
                 <md>
                     <mrow> \frac{\sin^2(x)}{<fillin characters="5" />} + \frac{\cos^2(x)}{<fillin characters="5" />} \amp = \frac{1}{<fillin characters="5" />}</mrow>
@@ -25,7 +25,7 @@
         </statement>
         <solution>
             <p>
-                <me>\tan^2(x)+1 = \sec^2(x)</me>
+                <md>\tan^2(x)+1 = \sec^2(x)</md>
             </p>
         </solution>
     </task>

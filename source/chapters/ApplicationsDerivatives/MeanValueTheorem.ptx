@@ -107,9 +107,9 @@
             <statement>
                 <p>
                     For a function <m>f(x)</m> that is continuous on the closed interval <m>[a,b]</m> and differentiable on the open interval <m>(a,b)</m>, then there is some value <m>x=c</m> with <m>a\lt c\lt b</m> where:
-                    <me>
+                    <md>
                         f'(c) = \frac{f(b)-f(a)}{b-a}
-                    </me>.
+                    </md>.
                 </p>
             </statement>
         </theorem>
@@ -244,13 +244,13 @@
                 </p>
                 <p>
                     The Mean Value Theorem says that there is some <m>x=c</m> in <m>(x_1,x_2)</m> with 
-                    <me>
+                    <md>
                         f'(c)=\frac{f(x_2)-f(x_1)}{x_2-x_1}
-                    </me>.
+                    </md>.
                     Equivalently, this means that 
-                    <me>
+                    <md>
                         f'(c)(x_2-x_1) = f(x_2)-f(x_1)
-                    </me>.
+                    </md>.
                     Notice that <m>f'(c)\gt 0</m> (since the derivative is positive everywhere in the interval) and <m>(x_2-x_1)\gt 0</m> (by the way we named these <m>x</m>-values). This means that <m> f'(c)(x_2-x_1)\gt 0</m>, and so <m>(f(x_2)-f(x_1))\gt 0</m> as well.
                 </p>
                 <p>
@@ -278,13 +278,13 @@
                 </p>
                 <p>
                     The Mean Value Theorem says that there is some <m>x=c</m> in <m>(x_1,x_2)</m> with 
-                    <me>
+                    <md>
                         f'(c)=\frac{f(x_2)-f(x_1)}{x_2-x_1}
-                    </me>.
+                    </md>.
                     Equivalently, this means that 
-                    <me>
+                    <md>
                         f'(c)(x_2-x_1) = f(x_2)-f(x_1)
-                    </me>.
+                    </md>.
                     Notice that <m>f'(c)= 0</m> (since the derivative is zero everywhere in the interval). This means that <m> f'(c)(x_2-x_1)= 0</m>, and so <m>(f(x_2)-f(x_1))= 0</m> as well.
                 </p>
                 <p>

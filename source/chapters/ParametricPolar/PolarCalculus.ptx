@@ -48,9 +48,9 @@
             <statement>
                 <p>
                     If <m>r(\theta)</m> is a continuous function on <m>[\alpha, \beta]</m> and differentiable on <m>(\alpha,\beta)</m>, then the length of the polar curve <m>r(\theta)</m> between <m>\theta=\alpha</m> ,and <m>\theta=\beta</m> is:
-                    <me>
+                    <md>
                         \ell = \int_{\theta=\alpha}^{\theta=\beta}\sqrt{r^2 + \left(\frac{dr}{d\theta}\right)^2}\;d\theta
-                    </me>.
+                    </md>.
                 </p>
             </statement>
         </definition>

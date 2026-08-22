@@ -59,9 +59,9 @@
         <statement>
             <p>
                 We're going to visualize the accumulation of <m>f(x)</m> from <m>x=0</m> to <m>x=n</m> by thinking about the integral:
-                <me>
+                <md>
                     \int_{x=0}^{x=n} f(x)\;dx
-                </me>.
+                </md>.
             </p>
             <figure xml:id="fig-IntegralTest-3">
                 <caption></caption>
@@ -87,9 +87,9 @@
         <solution>
             <p>
                 Since <m>\displaystyle \sum_{k=0}^n a_k</m> is a left Riemann sum for <m>f(x)</m>, and since <m>f(x)</m> is decreasing, then we know that each rectangle is formed from the highest point on each subinterval. That means that each rectangle's area overestimates the area under the curve on that subinterval. Note, also, that since this is a left Riemann sum, the <m>n</m>th rectangle is hanging past the end of the definite integral. This means that:
-                <me>
+                <md>
                     \sum_{k=0}^n a_k \gt \int_{x=0}^{x=n} f(x)\;dx
-                </me>.
+                </md>.
             </p>
         </solution>
     </task>
@@ -119,9 +119,9 @@
             </figure>
             <p>
                 Note, now, that we are using the lowest point on each subinterval to form the rectangle. This means that:
-                <me>
+                <md>
                     \sum_{k=1}^n a_k \lt \int_{x=0}^{x=n} f(x)\;dx
-                </me>.
+                </md>.
             </p>
         </solution>
     </task>
@@ -129,13 +129,13 @@
         <statement>
             <p>
                 We have thought about two sums, and we can connect them:
-                <me>
+                <md>
                     \sum_{k=0}^n a_k = a_0 + \sum_{k=1}^n a_k
-                </me>.
+                </md>.
                 Use the sums to bound the integral:
-                <me>
+                <md>
                     <fillin characters="8" /> \lt \int_{x=0}^{x=n} f(x)\;dx \lt <fillin characters="8" />
-                </me>
+                </md>
             </p>
         </statement>
         <solution>
@@ -151,16 +151,16 @@
         <statement>
             <p>
                 Similarly, use the integral to bound the sum:
-                <me>
+                <md>
                     <fillin characters="8" /> \lt \sum_{k=0}^n a_k \lt <fillin characters="8" />
-                </me>
+                </md>
             </p>
         </statement>
         <solution>
             <p>
-               <me>
+               <md>
                 \int_{x=0}^{x=n}f(x)\;dx \lt \sum_{k=0}^n a_k \lt a_0 + \int_{x=0}^{x=n}f(x)\;dx
-               </me>
+               </md>
             </p>
         </solution>
     </task>

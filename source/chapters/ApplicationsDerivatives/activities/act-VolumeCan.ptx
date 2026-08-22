@@ -44,9 +44,9 @@
         <solution>
             <p>
                 We're told that the volume is 23 cubic inches! The volume formula for a cylinder is <m>V=\pi r^2 h</m>, so we have a constraint:
-                <me>
+                <md>
                     23=\pi r^2 h
-                </me>.
+                </md>.
             </p>
         </solution>
     </task>
@@ -182,9 +182,9 @@
                     <li>
                         <p>
                             <em>SDT:</em>
-                            <me>
+                            <md>
                                 A''(r) = 4\pi + \frac{92}{r^3}
-                            </me>
+                            </md>
                             Hang on one second: notice that no matter what, since <m>r\gt 0</m>, then we can see that <m>A''(r)\gt 0</m>. We don't even need to evaluate this second derivative at the critical point to know that the function is concave up here!
                         </p>
                         <p>

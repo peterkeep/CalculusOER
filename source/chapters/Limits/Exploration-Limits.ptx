@@ -18,9 +18,9 @@
             <introduction>
                 <p>
                     Let's consider the function <m>f(x)=\sqrt{x}</m>. We're going to mostly be interested in the <m>x</m>-values around 9, since we'll be investigating <m>\displaystyle\lim_{x\to 9}\sqrt{x}</m>. We know that the <m>y</m>-value outputs of <m>f(x)</m> are going to be around 3, giving us:
-                    <me>
+                    <md>
                         \lim_{x\to 9} \sqrt{x}=3
-                    </me>.
+                    </md>.
                     Now we're going to perform some tasks that will hopefully help us add some precision to our definition of a limit. You can use the graph and inputs below while you work.
                 </p>
                 <interactive platform="doenetml" width="90%">
@@ -119,7 +119,7 @@
             <introduction>
                 <p>
                     We'll try this again, but with a new function. This will change a bit of how we think about constructing our intervals. Consider the function <m>g(x)=\dfrac{x}{4}+3</m>. We're going to mostly be interested in the <m>x</m>-values around -2, since we'll be investigating: 
-                    <me>\lim_{x\to-2} \left(\frac{x}{4}+3\right) = \frac{5}{2}</me>.
+                    <md>\lim_{x\to-2} \left(\frac{x}{4}+3\right) = \frac{5}{2}</md>.
                 </p>
                 <p>
                     You can, again, use the graph and inputs below while you work.
@@ -225,9 +225,9 @@
             <statement>
                 <p>
                     Suppose that <m>f(x)</m> is a function that exists for all <m>x</m>-values in some open interval around and containing <m>a</m>, except possibly at <m>x=a</m> itself. We say that
-                    <me>
+                    <md>
                         \lim_{x\to a} f(x)=L
-                    </me>
+                    </md>
                     if, for any open interval <m>(p,q)</m> of <m>y</m>-values containing the single, real number <m>L</m>, there is some corresponding open interval <m>(c, d)</m> around <m>x=a</m> (that is, <m>c\lt a\lt d</m>) such that for all <m>x</m>-values in <m>(c,d)</m> with <m>x\neq a</m>, the function output <m>f(x)</m> is in <m>(p,q)</m>.
                 </p>
             </statement>
@@ -237,9 +237,9 @@
             <statement>
                 <p>
                     Suppose that <m>f(x)</m> is a function that exists for all <m>x</m>-values in some open interval around and containing <m>a</m>, except possibly at <m>x=a</m> itself. We say that
-                    <me>
+                    <md>
                         \lim_{x\to a} f(x)=L
-                    </me>
+                    </md>
                     if <m>L</m> is some single, real number, and for any real number <m>\varepsilon \gt 0</m>, there is a corresponding <m>\delta_\varepsilon \gt0</m> such that <m>|f(x)-L|\lt \varepsilon</m> whenever <m>0\lt|x-a|\lt \delta_\varepsilon</m>.
                 </p>
             </statement>

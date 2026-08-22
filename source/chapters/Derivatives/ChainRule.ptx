@@ -59,13 +59,13 @@
       <statement>
         <p>
           For the composite function <m>y=f(g(x))</m>, if we define <m>u=g(x)</m> and <m>y=f(u)</m>, then, as long as both <m>f</m> and <m>g</m> are differentiable at <m>u</m> and <m>x</m> respectively:
-          <me>
+          <md>
             \ddx{f(g(x))} = \frac{d}{du}\left(f(u)\right)\cdot \frac{d}{dx}\left(g(x)\right)
-          </me>.
+          </md>.
           Alternatively, this can be written as:
-          <me>
+          <md>
             \dydx = \dd{y}{u} \cdot \dd{u}{x} \hspace{1cm} \text{or}\hspace{1cm} \frac{d}{dx}\left(f(g(x))\right) = f'(g(x))\cdot g'(x)
-          </me>.
+          </md>.
         </p>
       </statement>
     </theorem>
@@ -77,9 +77,9 @@
     </p>
     <p>
       But doing the Chain Rule is different than just knowing it, so let's walk through a first example. Let's find the following derivative:
-      <me>
+      <md>
         \ddx{\sin(x^2)}
-      </me>
+      </md>
       We'll call the <q>inside</q> function <m>u=x^2</m>, so we can really write the whole function (normally, we're calling this <m>y</m>) as <m>y=\sin(u)</m>.
       <md>
         <mrow> \ddx{\underbrace{\sin(\overbrace{x^2}^{u})}_{y}}\amp =\dd{y}{u} \cdot \dd{u}{x}</mrow>
@@ -151,9 +151,9 @@
   </p>
   <p>
     A big fact to recall is that a logarithm is a way of finding an exponent with a specific property. If we want to find the exponent that we would need to put on the number <m>e</m> to give us <m>9</m> as an answer, we could use <m>\ln(9)</m>.
-    <me>
+    <md>
       e^{\ln(9)} = 9
-    </me>
+    </md>
     This is just because logs are defined in this circular way: they are, by definition, the exponent you would need to output whatever number is inside the log.
   </p>
   <p>
@@ -164,9 +164,9 @@
   </p>
   <p>
     Consider the following:
-    <me>
+    <md>
       2^x = \left(\underbrace{e^{\ln(2)}}_{=2}\right)^x
-    </me>
+    </md>
     But we also might notice that we can rewrite this using an exponent rule! We know that in general: <m>\left(a^b\right)^c = a^{b\cdot c}</m>. Let's rewrite this exponential function:
     <md>
       <mrow> 2^x \amp = \left(e^{\ln(2)}\right)^x</mrow>
@@ -187,9 +187,9 @@
     <statement>
       <p>
         If <m>b\gt 0</m> and <m>b\neq 1</m>, then:
-        <me>
+        <md>
           \ddx{b^x} = b^x\ln(b)
-        </me>.
+        </md>.
       </p>
     </statement>
   </theorem>

@@ -3,9 +3,9 @@
     <introduction>
         <p>
             Let's consider the integral:
-            <me>
+            <md>
                 \int x\sin(x)\;dx
-            </me>.
+            </md>.
             We'll investigate how to set up the integration by parts formula with the different choices for the parts.
         </p>
     </introduction>
@@ -13,12 +13,12 @@
         <statement>
             <p>
                 We'll start with selecting <m>u=x</m> and <m>dv = \sin(x)\;dx</m>. Fill in the following with the rest of the pieces:
-                <me>
+                <md>
                     \begin{array}{ll}
                         u = x \amp v = <fillin characters="5" />\\
                         du = <fillin characters="5" /> \amp dv = \sin(x)\;dx
                     \end{array}
-                </me>
+                </md>
             </p>
         </statement>
     </task>
@@ -38,12 +38,12 @@
         <statement>
             <p>
                 Let's swap the pieces and try the setup with <m>u=\sin(x)</m> and <m>dv = x\;dx</m>. Fill in the following with the rest of the pieces:
-                <me>
+                <md>
                     \begin{array}{ll}
                         u = \sin(x) \amp v = <fillin characters="5" />\\
                         du = <fillin characters="5" /> \amp dv = x\;dx
                     \end{array}
-                </me>
+                </md>
             </p>
         </statement>
     </task>

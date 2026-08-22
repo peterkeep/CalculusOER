@@ -34,9 +34,9 @@
           <p>
             For the function <m>f(x)</m> defined at all <m>x</m>-xalues around <m>a</m> (except maybe at <m>x=a</m> itself), we say that the <term>limit of <m>f(x)</m></term> as <m>x</m> approaches <m>a</m> is <m>L</m> if <m>f(x)</m> is arbitrarily close to the single, real number <m>L</m> whenever <m>x</m> is sufficiently close to, but not equal to, <m>a</m>.
             We write this as:
-            <me>
+            <md>
               \lim_{x\to a} f(x) = L
-            </me>
+            </md>
             or sometimes we write <m>f(x) \to L</m> when <m>x\to a</m>.
           </p>
         </statement>
@@ -68,9 +68,9 @@
           <p>
             For the function <m>f(x)</m> defined at all <m>x</m>-xalues around and less than <m>a</m>, we say that the <term>left-sided limit of <m>f(x)</m></term> as <m>x</m> approaches <m>a</m> is <m>L</m> if <m>f(x)</m> is arbitrarily close to the single, real number <m>L</m> whenever <m>x</m> is sufficiently close to, but less than, <m>a</m>.
             We write this as:
-            <me>
+            <md>
               \lim_{x\to a^-} f(x) = L
-            </me>
+            </md>
             or sometimes we write <m>f(x) \to L</m> when <m>x\to a^-</m>.
           </p>
         </statement>
@@ -82,9 +82,9 @@
           <p>
             For the function <m>f(x)</m> defined at all <m>x</m>-xalues around and greater than <m>a</m>, we say that the <term>right-sided limit of <m>f(x)</m></term> as <m>x</m> approaches <m>a</m> is <m>L</m> if <m>f(x)</m> is arbitrarily close to the single, real number <m>L</m> whenever <m>x</m> is sufficiently close to, but greater than, <m>a</m>.
             We write this as:
-            <me>
+            <md>
               \lim_{x\to a^+} f(x) = L
-            </me>
+            </md>
             or sometimes we write <m>f(x) \to L</m> when <m>x\to a^+</m>.
           </p>
         </statement>
@@ -230,9 +230,9 @@
   </figure>
   <p>
     These function outputs are spread apart! They are not close to a single value. Instead, they're close to two! The function is close to a value on the left side, and then the function is close to a larger value on the right side.
-    <me>
+    <md>
       \lim_{x\to a^-} g(x) \neq \lim_{x\to a^+} g(x) \text{ and so } \lim_{x\to a} g(x) \text{ does not exist}
-    </me>.
+    </md>.
   </p>
   <p>
     Now let's think about how we can approximate (and learn more about) limits using when we just think about the actual values of a function's inputs and corresponding outputs.

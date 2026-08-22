@@ -54,9 +54,9 @@
       <statement>
         <p>
           If <m>f(x)</m> is differentiable at <m>x=a</m>, then we say that a <term>linear approximation</term> of <m>f(x)</m> centered at <m>x=a</m> is:
-          <me>
+          <md>
             L(x) = f'(a)(x-a)+f(a)
-          </me>.
+          </md>.
           We know, then, that <m>L(x)\approx f(x)</m> for <m>x</m>-values <q>close</q> to the center, <m>x=a</m>. 
         </p>
         <p>
@@ -104,7 +104,7 @@
       <statement>
         <p>
           If <m>x_0</m> is some initial estimation of a solution to <m>f(x)=0</m>, then we can iteratively generate more estimations using the following formula
-          <me>x_n = x_{n-1} - \frac{f(x_{n-1})}{f'(x_{n-1})}</me> 
+          <md>x_n = x_{n-1} - \frac{f(x_{n-1})}{f'(x_{n-1})}</md> 
           provided that <m>f'(x_{n-1})</m> exists and is non-zero.
         </p>
       </statement>

@@ -4,9 +4,9 @@
         <p>
             Let's start with two quick facts:
 
-            <me>
+            <md>
                 \ddx{x^3} =3x^2 \text{ and } \ddx{\sin(x)}=\cos(x)
-            </me>.
+            </md>.
         </p>
     </introduction>
     <task>
@@ -25,9 +25,9 @@
         <hint>
             <p>
                 Does it seem reasonable that we could just multiply the derivatives together, and say that <m>\Ddx{x^3\sin(x)}</m> was the same thing as 
-                <me>
+                <md>
                     \ddx{x^3}\cdot \ddx{\sin(x)}
-                </me>?
+                </md>?
             </p>
         </hint>
     </task>
@@ -49,9 +49,9 @@
         <statement>
             <p>
                 Let's show another way that we know this. Think about <m>\sin(x)</m>. We know two things:
-                <me>
+                <md>
                     \sin(x) = (1)(\sin(x)) \text{ and } \ddx{\sin(x)}=\cos(x)
-                </me>.
+                </md>.
                 What, though, is <m>\Ddx{1}\cdot\Ddx{\sin(x)}</m>?
             </p>
         </statement>

@@ -29,9 +29,9 @@
             </hint>
             <solution>
                 <p>
-                    <me>
+                    <md>
                         \int_{x=0}^{x=2} (4x+1)-(x^2+1)\;dx  = \frac{16}{3}
-                    </me>
+                    </md>
                 </p>
             </solution>
         </task>
@@ -46,7 +46,7 @@
             </hint>
             <solution>
                 <p>
-                    <me>\int_{x=0}^{x=2} (4-x)-(x)\;dx = 4</me>
+                    <md>\int_{x=0}^{x=2} (4-x)-(x)\;dx = 4</md>
                 </p>
             </solution>
         </task>
@@ -61,7 +61,7 @@
             </hint>
             <solution>
                 <p>
-                    <me>\int_{x=0}^{x=4}(\sqrt{x}+2) - (x)\;dx = \frac{16}{3}</me>
+                    <md>\int_{x=0}^{x=4}(\sqrt{x}+2) - (x)\;dx = \frac{16}{3}</md>
                 </p>
             </solution>
         </task>
@@ -78,7 +78,7 @@
                 <p>
                     This one has annoying limits of integration, and so evaluating the integral is more annoying than it is worth.
 
-                    <me>\int_{x=-\sqrt{\frac{\sqrt{5}-1}{2}}}^{x=\sqrt{\frac{\sqrt{5}-1}{2}}}\left(\frac{1}{x^2+1}\right)-(x^2)\;dx</me>
+                    <md>\int_{x=-\sqrt{\frac{\sqrt{5}-1}{2}}}^{x=\sqrt{\frac{\sqrt{5}-1}{2}}}\left(\frac{1}{x^2+1}\right)-(x^2)\;dx</md>
                 </p>
             </solution>
         </task>
@@ -100,11 +100,11 @@
             </hint>
             <solution>
                 <p>
-                    <me>\int_{x=0}^{x=\frac{\pi}{4}} \sin(x)\;dx + \int_{x=\frac{\pi}{4}}^{x=\frac{\pi}{2}}\cos(x)\;dx</me>
+                    <md>\int_{x=0}^{x=\frac{\pi}{4}} \sin(x)\;dx + \int_{x=\frac{\pi}{4}}^{x=\frac{\pi}{2}}\cos(x)\;dx</md>
                     Or, alternatively:
-                    <me>
+                    <md>
                         \int_{y=0}^{y=\frac{\sqrt{2}}{2}} \cos^{-1}(y)-\sin^{-1}(y)\;dy
-                    </me>.
+                    </md>.
                     Admittedly, it is annoying to evaluate this in terms of <m>y</m>, even though it is satisfying to have only a single integral.
                 </p>
                 <p>
@@ -123,11 +123,11 @@
             </hint>
             <solution>
                 <p>
-                    <me>\int_{x=0}^{x=\sqrt{2}} x\;dx + \int_{x=\sqrt{2}}^{x=2} x-(x^2-2)\;dx</me>
+                    <md>\int_{x=0}^{x=\sqrt{2}} x\;dx + \int_{x=\sqrt{2}}^{x=2} x-(x^2-2)\;dx</md>
                     Or alternatively:
-                    <me>
+                    <md>
                         \int_{y=0}^{y=2}\sqrt{y+2}-y\;dy
-                    </me>.
+                    </md>.
                     In either case, the area is <m>\dfrac{10-4\sqrt{2}}{3}</m>.
                 </p>
             </solution>
@@ -143,13 +143,13 @@
             </hint>
             <solution>
                 <p>
-                    <me>
+                    <md>
                         \int_{x=-\sqrt{2}}^{x=-1} 0-(x^2-2)\;dx + \int_{x=-1}^{x=0} 0-(x)\;dx
-                    </me>
+                    </md>
                     Or, alternatively:
-                    <me>
+                    <md>
                         \int_{y=-1}^{y=0} y-\sqrt{y+2}\;dy    
-                    </me>.
+                    </md>.
                     In either case, the area is <m>\dfrac{4\sqrt{2}}{3}-\dfrac{7}{6}</m>.
                 </p>
             </solution>
@@ -165,13 +165,13 @@
             </hint>
             <solution>
                 <p>
-                    <me>
+                    <md>
                         \int_{x=0}^{x=1} (3x)-(x^2)\;dx + \int_{x=1}^{x=\sqrt{2}} (4-x^2)-(x^2)\;dx
-                    </me>
+                    </md>
                     Or, alternatively:
-                    <me>
+                    <md>
                         \int_{y=0}^{y=2} \sqrt{y}-\left(\frac{y}{3}\right)\;dy + \int_{y=2}^{y=3}\sqrt{4-y} - \left(\frac{y}{3}\right)\;dy
-                    </me>.
+                    </md>.
                     In either case, the area is <m>\dfrac{8\sqrt{2}}{3} - \dfrac{13}{6}</m>.
                 </p>
             </solution>
@@ -187,13 +187,13 @@
             </hint>
             <solution>
                 <p>
-                    <me>
+                    <md>
                         \int_{x=0}^{x=1/2} \sqrt{32x}-(2x^2)\;dx + \int_{x=1/2}^{x=1} (-4x+6)-(2x^2)\;dx
-                    </me>
+                    </md>
                     Or, alternatively:
-                    <me>
+                    <md>
                         \int_{y=0}^{y=2} \sqrt{\frac{y}{2}}-\left(\frac{y^2}{32}\right)\;dy + \int_{y=2}^{y=4} \left(\frac{6-y}{4}\right) - \left(\frac{y^2}{32}\right)\;dy
-                    </me>.
+                    </md>.
                     In either case, the area is <m>\dfrac{13}{6}</m>.
                 </p>
             </solution>
@@ -209,9 +209,9 @@
             </hint>
             <solution>
                 <p>
-                    <me>
+                    <md>
                         
-                    </me>
+                    </md>
                 </p>
             </solution>
         </task>
@@ -226,9 +226,9 @@
             </hint>
             <solution>
                 <p>
-                    <me>
+                    <md>
                         \int_{y=-1}^{y=3}\left(2y\right)-\left(y^2-3\right)\;dy = \frac{32}{3}
-                    </me>
+                    </md>
                 </p>
             </solution>
         </task>

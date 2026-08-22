@@ -11,20 +11,20 @@
         </p>
         <sidebyside>
             <p>
-                <me>
+                <md>
                     \int x^5\;dx
-                </me>
+                </md>
             </p>
             <p>
-                <me>
+                <md>
                     \int \sec^2(x)\;dx
-                </me>
+                </md>
                 
             </p>
             <p>
-                <me>
+                <md>
                     \int \frac{x^3}{1+x^2}\;dx
-                </me>
+                </md>
             </p>
         </sidebyside>
         <p>
@@ -49,9 +49,9 @@
                 <mrow> \amp = \cos(x^7)7x^6</mrow>
             </md>
             From here, we might rewrite things to make it look nicer (coefficients look weird when they're not in the front, in my opinion) and write:
-            <me>
+            <md>
                 \ddx{\sin(x^7)}= 7x^6\cos(x^7)
-            </me>
+            </md>
         </p>
         <p>
             When we work through this process backwards, we'll need to identify the <q>inside</q> function, but also find the derivative of that <q>inside</q> function, <m>\frac{du}{dx}</m>. This derivative gets introduced in the Chain Rule, and so it will have to be picked out when we undo the Chain Rule.
@@ -105,9 +105,9 @@
                         </p>
                         <p>
                             <em>Example:</em> We defined <m>u=x^7</m>, so:
-                            <me>
+                            <md>
                                 \sin(u)+C = \sin(x^7)+C
-                            </me>
+                            </md>
                         </p>
                     </li>
                 </ol>
@@ -192,9 +192,9 @@
             <title>Fixing Coefficients for <m>du</m></title>
             <p>
                 If we choose to perform a <m>u</m>-substitution in the integral <m>\displaystyle \int f(x)\;dx</m>, but we require a coefficient <m>k</m> in our definition of <m>du</m>, we can <q>fix</q> the coefficient in our integral:
-                <me>
+                <md>
                     \frac{1}{k}\int kf(x)\;dx
-                </me>
+                </md>
                 This strategy works well for coefficients, since we can factor out the <m>\frac{1}{k}</m> from the integral.
             </p>
         </assemblage>
@@ -205,9 +205,9 @@
         <introduction>
             <p>
                 How would we evaluate the following definite integral?
-                <me>
+                <md>
                     \int_{x=0}^{x=2}\left(\frac{x+1}{x^2+2x+1}\right)\;dx
-                </me>
+                </md>
                 We can think back to what the <xref ref="thm-FTOC2" text="title"/> says about evaluating a definite integral. We need to do two things:
                 <ol>
                     <li>
@@ -256,9 +256,9 @@
             </p>
             <p>
                 Great, so we have a way of evaluating this integral!
-                <me>
+                <md>
                     \int_{x=0}^{x=2}\left(\frac{x+1}{x^2+2x+1}\right)\;dx = \ln(3)
-                </me>
+                </md>
             </p>
         </subsubsection>
         <subsubsection xml:id="subsubsec-SubstituteLimits">
@@ -274,9 +274,9 @@
             </p>
             <p>
                 Consider the definite integral. Really think about it.
-                <me>
+                <md>
                     \int_{x=0}^{x=2}\left(\frac{x+1}{x^2+2x+1}\right)\;dx
-                </me>
+                </md>
                 Here, we label the limits of integration as <m>x</m>-values: <m>x=0</m> and <m>x=2</m>. 
             </p>
             <p>
@@ -370,9 +370,9 @@
             <statement>
                 <p>
                 Integrate the following, making sure to translate the whole integrand function to be written in terms of <m>u</m>.
-                    <me>
+                    <md>
                         \int \left( \frac{x^3}{\sqrt{x^2+1}} \right)\;dx
-                    </me>
+                    </md>
                 </p>
             </statement>
             <hint>

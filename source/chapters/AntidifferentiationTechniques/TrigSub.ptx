@@ -20,7 +20,6 @@
       We're going to employ another variable substitution, in the same way that we use <m>u</m>-substitution. The main difference is the goal: we're going to select our substitution not based on uncovering the composition in our function (like in <m>u</m>-substitution). Instead, we'll focus on selecting a trigonometric function in order to utilize the relevant Pythagorean identity to rewrite our sum or difference of squares.
     </p>
     <figure xml:id="fig-TrigSub">
-      <caption>General idea of how this variable substitution works.</caption>
       <image width="80%">
           <shortdescription>
               Two rectangles, one labeled "x Context" and the other, beside it, labeled "theta Context." Inside the "x Context" rectangle is an integral of f(x) dx with an arrow pointing towards F(x)+C. Inside the "theta Context" rectangle is an integral of g(theta) d theta with an arrow pointing towards G(theta)+C. There is an arrow connecting the integral of f(x) dx in the first rectangle to the integral of g(theta) d theta labeled x=T(theta) and dx = T'(theta) d theta. Then there is an arrow connecting G(theta)+C to F(x)+C labeled x = T(theta)
@@ -91,7 +90,6 @@
               For an integral containing <m>(a^2-x^2)</m>, we can use the following triangle to build our substitution:
             </p>
               <figure xml:id="fig-TrigSubSine">
-                <caption></caption>
                 <image width="50%">
                   <shortdescription>
                       Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled a, and the remaining side length is labeled sqrt(a^2-x^2).
@@ -124,7 +122,6 @@
               For an integral containing <m>(x^2-a^2)</m>, we can use the following triangle to build our substitution:
             </p>
               <figure xml:id="fig-TrigSubSecant">
-                <caption></caption>
                 <image width="67%">
                     <shortdescription>
                         Right triangle with one of the acute angles labeled as theta. The side adjacent to theta is labeled a, and the hypotenuse is labeled x, and the remaining side length is labeled sqrt(x^2-a^2).
@@ -157,7 +154,6 @@
               For an integral containing <m>(x^2+a^2)</m>, we can use the following triangle to build our substitution:
             </p>
               <figure xml:id="fig-TrigSubTan">
-                <caption></caption>
                 <image width="50%">
                   <shortdescription>
                       Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the side adjacent to theta is labeled a. The hypotenuse is labeled sqrt(x^2+a^2).
@@ -212,7 +208,6 @@
           Since we were hoping so use a substitution to rewrite the difference of squares, <m>\sqrt{1-x^2}</m>, we had the following triangle:
         </p>
         <figure>
-          <caption>Substitution used in <xref ref="act-DifferenceOfSquares"/>.</caption>
           <image width="50%">
                   <shortdescription>
                       Right triangle with one of the acute angles labeled as theta. The side opposite theta is labeled x, and the hypotenuse is labeled 1, and the remaining side length is labeled sqrt(1-x^2).

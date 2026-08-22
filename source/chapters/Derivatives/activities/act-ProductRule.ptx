@@ -3,9 +3,9 @@
     <introduction>
         <p>
             Let's investigate how we might differentiate the product of two functions:
-            <me>
+            <md>
                 \ddx{f(x)g(x)}
-            </me>.
+            </md>.
             We'll use an area model for multiplication here: we can consider a rectangle where the side lengths are functions <m>f(x)</m> and <m>g(x)</m> that change for different values of <m>x</m>. Maybe <m>x</m> is representative of some type of time component, and the side lengths change size based on time, but it could be anything.
         </p>
         <p>
@@ -52,9 +52,9 @@
             </figure>
             <p>
                 In order to do this, we've broken the region up into three pieces. Calculate the areas of the three pieces. Use this to fill in the following equation:
-                <me>
+                <md>
                     f(x+\Delta x)g(x+\Delta x) - f(x)g(x) = <fillin characters="20" />
-                </me>.
+                </md>.
             </p>
         </statement>
     </task>
@@ -98,9 +98,9 @@
         <statement>
             <p>
                 Use <xref ref="def-DerivativeFunction" text="type-global-title"/> to rewrite these limits. Show that when <m>\Delta x\to 0</m>, we get:
-                <me>
+                <md>
                     f(x)g'(x) + g(x)f'(x) + 0
-                </me>.
+                </md>.
             </p>
         </statement>
     </task>

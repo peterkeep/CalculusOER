@@ -3,25 +3,25 @@
     <introduction>
         <p>
             We're going to compare three integrals:
-            <me>
+            <md>
                 \int \frac{2}{x^2+4x+5}\;dx
-            </me>
+            </md>
             
-            <me>
+            <md>
                 \int \frac{2}{x^2+4x+3}\;dx
-            </me>
-            <me>
+            </md>
+            <md>
                 \int \left(\frac{1}{x+1} - \frac{1}{x+3}\right)\;dx
-            </me>
+            </md>
         </p>
     </introduction>
     <task>
         <statement>
             <p>
                 Start with the first integral: 
-                <me>
+                <md>
                      \int \frac{2}{x^2+4x+5}\;dx
-                </me>.
+                </md>.
                 How would you approach integrating this?
             </p>
         </statement>
@@ -35,9 +35,9 @@
         <statement>
             <p>
                 Try the same tactic on the second integral:
-                <me>
+                <md>
                     \int \frac{2}{x^2+4x+3}\;dx
-                </me>.
+                </md>.
                 You don't need to complete this integral, but think about how you might proceed.
             </p>
         </statement>
@@ -51,9 +51,9 @@
         <statement>
             <p>
                 Think about the third integral:
-                <me>
+                <md>
                     \int \left(\frac{1}{x+1} - \frac{1}{x+3}\right)\;dx
-                </me>.
+                </md>.
                 How would you integrate this?
             </p>
         </statement>

@@ -35,13 +35,13 @@
     <title>Physics Application: Mass</title>
     <p>
       Let's consider some object made out of a material with a constant density. To calculate the mass of the object, we need to know the size (the volume of the object) and the density, and then we can multiply:
-      <me>
+      <md>
         \mathrm{mass} = \mathrm{density} \cdot \mathrm{volume}
-      </me>.
+      </md>.
       We've seen how we can use the slice-and-sum formula to calculate volumes by slicing the object into thin pieces and approximating the volume by multiplying the cross-sectional area by the thickness of the slice:
-      <me>
+      <md>
         V_k = A(x_k^*) \Delta x
-      </me>. 
+      </md>. 
       We can easily construct an integral formula for the mass of an object now! We just need to find some measurement of the mass of a single slice of an object, and then start summing until we end up with a definite integral! So, for an object spanning from <m>x=a</m> to <m>x=b</m> with density, <m>\rho</m>, we have:
       <md>
         <mrow>M_k \amp = \rho V_k</mrow>
@@ -54,18 +54,18 @@
     </p>
     <p>
       Imagine if the density of our object isn't constant. Maybe we have some metal alloy, where the mixture of the metal changes as we traverse through the object. This variable density can be represented, then, as <m>\rho(x)</m>. We can replace the constant <m>\rho</m> with <m>\rho(x_k^*)</m> and then eventually <m>\rho(x)</m> to get:
-      <me>
+      <md>
         M = \int_{x=a}^{x=b} \rho(x) A(x)\;dx
-      </me>.
+      </md>.
     </p>
     <theorem xml:id="thm-MassOfObject">
       <title>Mass of an Object</title>
       <statement>
         <p>
           For some solid spanning from <m>x=a</m> to <m>x=b</m> where <m>A(x)</m> is the cross-sectional area of the object at <m>x</m> and <m>\rho(x)</m> is the density of the object at <m>x</m>, then the total mass of the object is:
-          <me>
+          <md>
              M = \int_{x=a}^{x=b} \rho(x) A(x)\;dx
-          </me>.
+          </md>.
         </p>
       </statement>
     </theorem>
@@ -77,9 +77,9 @@
       <statement>
         <p>
           For some thin object (like a wire) spanning from <m>x=a</m> to <m>x=b</m>, then if <m>\rho(x)</m> measures the mass per unit of length (<m>\rho(x)</m> is a linear density function), then the mass of the object is:
-          <me>
+          <md>
             M = \int_{x=a}^{x=b} \rho(x)\;dx
-          </me>.
+          </md>.
         </p>
       </statement>
     </theorem>
@@ -143,9 +143,9 @@
     <introduction>
       <p>
         Another example of a measurement found in physics contexts is Work. Work is, generally, the amount energy transferred to (or from, depending on perspective) an object by some force across some distance or displacement.
-        <me>
+        <md>
           \mathrm{Work} = \mathrm{Force} \cdot \mathrm{distance}
-        </me>
+        </md>
         In general, we can use the <q>slice-and-sum</q> process when the force applied to our object is some function of the position:
         <md>
           <mrow>W_k \amp = F(x_k^*) \Delta x </mrow>
@@ -159,9 +159,9 @@
         <statement>
           <p>
             If <m>F(x)</m> is a function measuring the force applied to an object at some <m>x</m>-value in the interval <m>[a,b]</m>, then the work done to move the object across the interval is:
-            <me>
+            <md>
               W=\int_{x=a}^{x=b} F(x)\;dx
-            </me>.
+            </md>.
           </p>
         </statement>
       </theorem>
@@ -345,9 +345,9 @@
           <solution>
             <p>
               Finding the cross-sectional area function will be a bit harder. It is the area of a circle, but the radius changes based on the <m>y</m>-value. At <m>y=0</m>, we have <m>r=3</m>. At <m>y=2</m>, we have <m>r=0</m>. So the rate of change of the radius is -1.5 meters per meter of height.
-              <me>
+              <md>
                 A(y) = \pi (3-1.5y)^2
-              </me>
+              </md>
               The limits of integration are from <m>y=0</m> to <m>y=1.5</m>:
               <md>
                 <mrow>W \amp = \rho g \pi \int_{y=0}^{y=1.5}(3-1.5y)^2(2-y)\;dy</mrow>

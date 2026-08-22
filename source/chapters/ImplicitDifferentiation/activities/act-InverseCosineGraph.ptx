@@ -45,16 +45,16 @@
         <statement>
             <p>
                 Use this equation above, rewriting <m>\cos^{-1}(x)</m> as some expression involving the inverse sine function, and then find
-                <me>
+                <md>
                     \ddx{\cos^{-1}(x)}
-                </me>.
+                </md>.
             </p>
         </statement>
         <hint>
             <p>
-                <me>
+                <md>
                     \ddx{\cos^{-1}(x)} = \ddx{-\sin^{-1}(x)+\frac{\pi}{2}}
-                </me>
+                </md>
             </p>
         </hint>
     </task>

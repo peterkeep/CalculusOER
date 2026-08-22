@@ -3,9 +3,9 @@
     <introduction>
         <p>
             We're going to use a combination of properties from <xref ref="thm-CombinationsOfLimits"/> and <xref ref="thm-LimitsOfTwoFunctions"/> to think a bit more deeply about polynomial functions. Let's consider a polynomial function:
-                <me>
+                <md>
                     f(x) =  2x^4-4x^3+\frac{x}{2}-5
-                </me>
+                </md>
         </p>
     </introduction>
     <task>
@@ -16,7 +16,7 @@
         </statement>
         <solution>
             <p>
-                <me>\lim_{x\to 1} (2x^4) - \lim_{x\to 1} (4x^3) + \lim_{x\to 1}\left(\frac{x}{2}\right) - \lim_{x\to 1} 5</me>
+                <md>\lim_{x\to 1} (2x^4) - \lim_{x\to 1} (4x^3) + \lim_{x\to 1}\left(\frac{x}{2}\right) - \lim_{x\to 1} 5</md>
             </p>
         </solution>
     </task>
@@ -28,7 +28,7 @@
         </statement>
         <solution>
             <p>
-                <me>2\left(\lim_{x\to 1} x\right)^4 - 4\left(\lim_{x\to 1} x\right)^3 + \frac{1}{2}\left(\lim_{x\to 1}x\right) - \lim_{x\to 1} 5</me>
+                <md>2\left(\lim_{x\to 1} x\right)^4 - 4\left(\lim_{x\to 1} x\right)^3 + \frac{1}{2}\left(\lim_{x\to 1}x\right) - \lim_{x\to 1} 5</md>
             </p>
         </solution>
     </task>

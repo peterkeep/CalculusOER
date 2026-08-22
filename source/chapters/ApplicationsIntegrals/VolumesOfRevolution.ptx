@@ -23,17 +23,17 @@
         <li>
           <p>
             For each slice, we'll approximate the volume. We can do this by thinking about the cross-sectional area. If we assume that the area is constant all the way through the slice (in the same way that we assumed earlier that the heights of our rectangles were constant), then we simply can multiply the cross-sectional area by the thickness to get the volume of each slice:
-            <me>
+            <md>
               V_k = A(x_k^*)\Delta x
-            </me>.
+            </md>.
           </p>
         </li>
         <li>
           <p>
             Approximate the total volume of the solid by adding the volumes of the slices together:
-            <me>
+            <md>
               V \approx \sum_{k=1}^n A(x_k^*)\Delta x
-            </me>.
+            </md>.
           </p>
         </li>
         <li>
@@ -105,9 +105,9 @@
     </figure>
     <p>
       This is something we easily can find the area of! We know the formula for the area of a circle: <m>A=\pi r^2</m>. We'll notice that the radius of this circle is the distance from the center of our slice to the outer edge: this is the height of the rectangle in <xref ref="fig-Disks-3"/>. So we can use <m>r=f(x_k^*)</m>, giving us the cross-sectional area of the <m>k</m>th slice:
-      <me>
+      <md>
         A(x_k^*) = \pi \left(f(x_k^*)\right)^2
-      </me>.
+      </md>.
       Now, we can drop into our slice and sum process:
       <ol>
         <li>
@@ -122,9 +122,9 @@
         <li>
           <p>
             We can approximate the volume by adding the slices:
-            <me>
+            <md>
               V \approx \sum_{k=1}^n \pi\left(f(x_k^*)\right)^2 \Delta x
-            </me>
+            </md>
             Sometimes this can be hard to visualize. We're approximating the solid in <xref ref="fig-Disks-2"/> by thinking about a bunch of these circular disks stacked next to each other.
           </p>
           <figure xml:id="fig-Disks-5">
@@ -158,13 +158,13 @@
       <statement>
         <p>
           If <m>f</m> and <m>g</m> are continuous functions with <m>f(x)\geq g(x) \geq 0</m> on the interval <m>[a,b]</m>, then the volume of the solid formed by revolving the region bounded between the curves <m>y=f(x)</m> and <m>y=g(x)</m> from <m>x=a</m> to <m>x=b</m> around the <m>x</m>-axis is:
-          <me>
+          <md>
             V = \pi\int_{x=a}^{x=b}\left( (f(x))^2 - (g(x))^2 \right)\;dx
-          </me>.
+          </md>.
           This is called the <term>Washer Method</term>. Note that if <m>g(x) = 0</m>, then the resulting volume is:
-          <me>
+          <md>
             V = \pi\int_{x=a}^{x=b}\left(f(x)\right)^2\;dx
-          </me>.
+          </md>.
           This is called the <term>Disk Method</term>.
         </p>
       </statement>
@@ -247,9 +247,9 @@
       <statement>
         <p>
           If <m>f(x)</m> and <m>g(x)</m> are continuous functions with <m>f(x)\geq g(x)</m> on the interval <m>[a,b]</m> (with <m>a\geq0</m>), then the volume of the solid formed when the region bounded between the curves <m>y=f(x)</m> and <m>y=g(x)</m> from <m>x=a</m> to <m>x=b</m> is revolved around the <m>y</m>-axis is 
-          <me>
+          <md>
             V = 2\pi \int_{x=a}^{x=b} x\left(f(x)-g(x)\right)\;dx
-          </me>.
+          </md>.
         </p>
       </statement>
     </definition>

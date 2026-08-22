@@ -3,9 +3,9 @@
     <introduction>
         <p>
             Let's think about a simple linear function, <m>f(x)=4-3x</m>. We'll both approximate and evaluate the area bounded between <m>f(x)</m> and the <m>x</m>-axis from <m>x=0</m> to <m>x=3</m>:
-            <me>
+            <md>
                 \int_{x=0}^{x=3}(4-3x)\;dx
-            </me>
+            </md>
             <figure xml:id="fig-WeirdArea">
                 <caption></caption>
                 <image source="AntiderivativesIntegrals/WeirdArea.png" width="35%">
@@ -82,9 +82,9 @@
         <statement>
             <p>
                 Find a value <m>x=b</m> such that:
-                <me>
+                <md>
                     \int_{x=0}^{x=b}(4-3x)\;dx=0
-                </me>.
+                </md>.
             </p>
         </statement>
     </task>
@@ -92,9 +92,9 @@
         <statement>
             <p>
                 Find a <em>different</em> value <m>x=b</m> such that:
-                <me>
+                <md>
                     \int_{x=0}^{x=b}(4-3x)\;dx=0
-                </me>.
+                </md>.
                 Is there a second way of making this area 0?
             </p>
         </statement>
