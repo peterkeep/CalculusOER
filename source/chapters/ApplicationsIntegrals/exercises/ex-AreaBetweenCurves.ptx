@@ -210,8 +210,13 @@
             <solution>
                 <p>
                     <md>
-                        
+                        \int_{x=1/2}^{x=1} \sqrt{32x}-(-4x+6)\;dx + \int_{x=1}^{x=2} \sqrt{32x}-(2x^2)\;dx
                     </md>
+                    Or, alternatively:
+                    <md>
+                        \int_{y=2}^{y=4} \sqrt{\frac{y}{2}}-\left(\frac{6-y}{4}\right)\;dy + \int_{y=2}^{y=4} \sqrt{\frac{y}{2}} - \left(\frac{y^2}{32}\right)\;dy
+                    </md>.
+                    In either case, the area is <m>\dfrac{19}{6}</m>.
                 </p>
             </solution>
         </task>
@@ -241,6 +246,18 @@
             <hint>
                 <interactive desmos="j75mtftfvm" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        \int_{x=-1}^{x=0}(x^3-x)\;dx + \int_{x=0}^{x=1}(x-x^3)\;dx
+                    </md>
+                    Or, alternatively:
+                    <md>
+                        \int_{y=-1}^{y=0} (y-\sqrt[3]{y})\;dy + \int_{y=0}^{y=1} (\sqrt[3]{x}-y)\;dy
+                    </md>
+                    In either case, the area is <m>\dfrac{1}{2}</m>.
+                </p>
+            </solution>
         </task>
     </exercise>
 </exercises>
