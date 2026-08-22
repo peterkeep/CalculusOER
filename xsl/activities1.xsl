@@ -100,6 +100,7 @@
 <xsl:template match="id('ch-AntidifferentiationTechniques')"/>
 <xsl:template match="id('ch-InfiniteSeries')"/>
 <xsl:template match="id('ch-PowerSeries')"/>
+<xsl:template match="id('ch-ParametricPolar')"/>
 
 <!-- Skip DC2 Appendices -->
 
