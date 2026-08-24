@@ -93,6 +93,12 @@
 <!-- Use letter paper and leave one-inch margins all around -->
 <xsl:param name="latex.geometry" select="'letterpaper,margin=1in'" />
 
+<xsl:template name="chapter-start-number">
+    <xsl:text>\setcounter{chapter}{</xsl:text>
+    <xsl:value-of select="$chapter-start + 4" />
+    <xsl:text>}&#xa;</xsl:text>
+</xsl:template>
+
 
 
 <!-- Skip DC1 chapters -->
