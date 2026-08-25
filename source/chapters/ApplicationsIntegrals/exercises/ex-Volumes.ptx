@@ -29,6 +29,15 @@
             <hint>
                 <interactive desmos="rbny8buex4" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = \pi\int_{x=0}^{x=3} (2x)^2\;dx</mrow>
+                        <mrow> \amp = \pi\int_{x=0}^{x=3} 4x^2\;dx</mrow>
+                        <mrow> \amp = 36\pi</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -39,6 +48,15 @@
             <hint>
                 <interactive desmos="fvigtcmyby" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = \pi \int_{x=0}^{x=\ln(2)} (e^{-2x})^2\;dx</mrow>
+                        <mrow> \amp = \pi \int_{x=0}^{x=\ln(2)} e^{-4x}\;dx</mrow>
+                        <mrow> \amp = \frac{15\pi}{64}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -49,6 +67,15 @@
             <hint>
                 <interactive desmos="uljvyvdnpx" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = \pi \int_{y=0}^{y=1} (e^y)^2 - (y^2)^2\;dy</mrow>
+                        <mrow> \amp = \pi \int_{y=0}^{y=1} e^{2y} - y^4\;dy</mrow>
+                        <mrow> \amp \pi\left(\frac{e^2}{2}-\frac{7}{10}\right)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -59,6 +86,15 @@
             <hint>
                 <interactive desmos="cvogjyhsqb" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = \pi \int_{x=0}^{x=3} (2x+1)^2 - x^2\;dx</mrow>
+                        <mrow> \amp = \pi \int_{x=0}^{x=3} 3x^2+4x+1\;dx</mrow>
+                        <mrow> \amp 48 \pi</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -69,6 +105,15 @@
             <hint>
                 <interactive desmos="i3qm0jincy" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = \pi \int_{y=0}^{y=8} (2)^2 - (\sqrt[3]{y})^2\;dy</mrow>
+                        <mrow> \amp = \pi \int_{y=0}^{y=8} 4 - y^{2/3}\;dy</mrow>
+                        <mrow> \amp = \frac{64\pi}{5}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -79,6 +124,15 @@
             <hint>
                 <interactive desmos="usht8dxvv7" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = \pi \int_{y=0}^{y=2} (\sqrt[3]{y})^2\;dy</mrow>
+                        <mrow> \amp = \pi \int_{y=0}^{y=2} y^{2/3}\;dy</mrow>
+                        <mrow> \amp = \frac{6\pi 2{2/3}}{5}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -106,6 +160,15 @@
             <hint>
                 <interactive desmos="apnpsg7imm" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = 2\pi \int_{x=0}^{x=5/3} x(5-3x)\;dx</mrow>
+                        <mrow> \amp = 2\pi \int_{x=0}^{x=5/3} 5x-3x^2\; dx</mrow>
+                        <mrow> \amp = \frac{125\pi}{27}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -116,6 +179,15 @@
             <hint>
                 <interactive desmos="gjgxaqhpg3" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = 2\pi \int_{y=0}^{y=3} y(9-y^2)\;dy </mrow>
+                        <mrow> \amp = 2\pi \int_{y=0}^{y=3} 9y-y^3\;dy</mrow>
+                        <mrow> \amp = \frac{81\pi}{2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -126,6 +198,15 @@
             <hint>
                 <interactive desmos="3hl2oghjhg" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = 2\pi \int_{x=0}^{x=1} x(2-x^2-x)\;dx</mrow>
+                        <mrow> \amp = 2\pi \int_{x=0}^{x=1} 2x - x^2 - x^3 \;dx</mrow>
+                        <mrow> \amp = \frac{5\pi}{6}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -136,6 +217,15 @@
             <hint>
                 <interactive desmos="cbwtqzdhrh" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = 2\pi \int_{x=0}^{x=1} x(\sin(x^2)+2-x)\;dx</mrow>
+                        <mrow> \amp = 2\pi \int_{x=0}^{x=1} x\sin(x^2)\;dx + 2\pi\int_{x=0}^{x=1} 2x-x^2\;dx</mrow>
+                        <mrow> \amp = \frac{7\pi}{3} - \pi\cos(1)</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -146,6 +236,15 @@
             <hint>
                 <interactive desmos="hh8tmig9gb" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = 2\pi \int_{x=1}^{x=4} x(2+4x-x^2 - (x^2-6x+10))</mrow>
+                        <mrow> \amp = 2\pi \int_{x=1}^{x=4} -2x^3 +10x^2 - 8x\;dx</mrow>
+                        <mrow> \amp = 45\pi</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -156,6 +255,18 @@
             <hint>
                 <interactive desmos="p9fovjd08w" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = 2\pi \int_{y=0}^{y=2} y\left(\frac{y^2}{2}\right) + y(4-(4-y))\;dy </mrow>
+                        <mrow> \amp + 2\pi \int_{y=2}^{y=4} y(4-y)\;dy + 2\pi\int_{y=2}^{y=\sqrt{8}} y\left(4-\frac{y^2}{2}\right)\;dy
+                        </mrow>
+                        <mrow> \amp = 2\pi \int_{y=0}^{y=2} \frac{y^3}{2} + y^2\;dy</mrow>
+                        <mrow> \amp + 2\pi \int_{y=2}^{y=4} 4y-y^2\;dy + 2\pi \int_{y=2}{y=\sqrt{8}} 4y-\frac{y^3}{2}\;dy</mrow>
+                        <mrow> \amp = 24\pi</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -183,6 +294,15 @@
             <hint>
                 <interactive desmos="n4wviayatm" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = \pi \int_{x=0}^{x=1} (x^2+1)^2 - (x^3+1)^2\;dx</mrow>
+                        <mrow> \amp = \pi \int_{x=0}^{x=1} 2x^2 - 2x^3 + x^4 - x^6\;dx</mrow>
+                        <mrow> \amp = \frac{47\pi}{210}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -193,16 +313,40 @@
             <hint>
                 <interactive desmos="n4wviayatm" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = 2\pi \int_{x=0}^{x=1} x(x^2+1-x^3-1)\;dx</mrow>
+                        <mrow>V \amp = 2\pi \int_{x=0}^{x=1} x^3-x^4\;dx</mrow>
+                        <mrow> \amp = \frac{\pi}{10}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
-                    The region bounded by the curves <m>y=\frac{1}{x}</m> and <m>y=1-(x-1)^2</m> in the first quadrant, revolved around the <m>x</m>-axis.
+                    The region bounded by the curves <m>y=\dfrac{1}{x}</m> and <m>y=1-(x-1)^2</m> in the first quadrant, revolved around the <m>x</m>-axis.
                 </p>
             </statement>
             <hint>
                 <interactive desmos="jqvnnf5vaq" width="60%" aspect="2:3" />
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>V \amp = \pi \int_{x=1}^{x=\frac{1+\sqrt{5}}{2}} (1-(x-1)^2)^2 - \left(\frac{1}{x}\right)^2\;dx</mrow>
+                        <mrow> \amp = \pi \int_{x=1}^{x=\frac{1+\sqrt{5}}{2}} \left(x^4-4x^3+4x^2 - \frac{1}{x^2}\right)\;dx </mrow>
+                        <mrow> \amp = \frac{5\sqrt{5}}{5} - \frac{53}{30}</mrow>
+                    </md>
+                    Or, alternatively:
+                    <md>
+                        <mrow>V \amp = 2\pi \int_{y=\frac{2}{1+\sqrt{5}}}^{y=1} y\left(1+\sqrt{1-y} - \frac{1}{y}\right)\;dy</mrow>
+                        <mrow> \amp = 2\pi \int_{y=\frac{2}{1+\sqrt{5}}}^{y=1} \left(y+y\sqrt{1-y} - 1\right)\;dy</mrow>
+                        <mrow> \amp = \frac{5\sqrt{5}}{5} - \frac{53}{30}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
 </exercises>
