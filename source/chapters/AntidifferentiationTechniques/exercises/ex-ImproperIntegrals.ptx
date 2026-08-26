@@ -63,6 +63,18 @@
             <m>\displaystyle \int_{x=0}^{\infty} \frac{1}{\sqrt{x+1}}\;dx</m>
           </p>
         </statement>
+        <solution>
+          <p>
+            This is an improper integral because of the infinite width of the integral: we cannot use the Fundamental Theorem of Calculus to evaluate this, since the function isn't being considered on a closed interval (or even an open one with finite width).
+            <md>
+              <mrow>\int_{x=0}^{\infty} \frac{1}{\sqrt{x+1}}\;dx \amp = \lim_{t\to \infty} \int_{x=0}^{x=t} (x+1)^{-1/2}\;dx</mrow>
+              <mrow> \amp = \lim_{t\to\infty} 2(x+1)^{1/2}\bigg|_{x=0}^{x=t}</mrow>
+              <mrow> \amp = \lim_{t\to\infty} 2(t+1){1/2} - 2</mrow>
+              <mrow> \amp = \infty</mrow>
+            </md>
+            The limit does not exist, and so this integral diverges.
+          </p>
+        </solution>
       </task>
       <task>
         <statement>
@@ -70,6 +82,18 @@
             <m>\displaystyle \int_{x=0}^{\infty} e^{-2x}\;dx</m>
           </p>
         </statement>
+        <solution>
+          <p>
+            This is an improper integral because of the infinite width of the integral: we cannot use the Fundamental Theorem of Calculus to evaluate this, since the function isn't being considered on a closed interval (or even an open one with finite width).
+            <md>
+              <mrow>\int_{x=0}^{\infty} e^{-2x} \;dx \amp = \lim_{t\to \infty} \int_{x=0}^{x=t} e^{-2x}\;dx</mrow>
+              <mrow> \amp = \lim_{t\to\infty} -\frac{1}{2} e^{-2x}\bigg|_{x=0}^{x=t}</mrow>
+              <mrow> \amp = \lim_{t\to\infty} -\frac{1}{2e^{2t}} + \frac{1}{2e^0}</mrow>
+              <mrow> \amp = \frac{1}{2}</mrow>
+            </md>
+            The limit exists, and so the integral converges to <m>\frac{1}{2}</m>.
+          </p>
+        </solution>
       </task>
       <task>
         <statement>
@@ -77,6 +101,19 @@
             <m>\displaystyle \int_{x=-1}^{x=3} \dfrac{1}{x+1}\;dx </m>
           </p>
         </statement>
+        <solution>
+          <p>
+            This integral is improper because at <m>x=-1</m> the integrand function has a vertical asymptote: this unbounded discontinuity violates the requirements of the Fundamental Theorem of Calculus.
+            <md>
+              <mrow> \int_{x=-1}^{x=3} \dfrac{1}{x+1}\;dx \amp = \lim_{t\to-1^+} \int_{x=t}^{x=3} \dfrac{1}{x+1}\;dx </mrow>
+              <mrow> \amp = \lim_{t\to-1^+} \ln|x+1|\bigg|_{x=t}^{x=3}</mrow>
+              <mrow> \amp = \lim_{t\to-1^+} \ln|4| - \ln|t+1|</mrow>
+              <mrow> \amp = \ln(4) - (-\infty)</mrow>
+              <mrow> \amp = \infty</mrow>
+            </md>
+             The limit does not exist, and so this integral diverges.
+          </p>
+        </solution>
       </task>
       <task>
         <statement>
@@ -84,6 +121,18 @@
             <m>\displaystyle \int_{-\infty}^{x=0} \sqrt{e^x}\;dx</m>
           </p>
         </statement>
+        <solution>
+          <p>
+            This is an improper integral because of the infinite width of the integral: we cannot use the Fundamental Theorem of Calculus to evaluate this, since the function isn't being considered on a closed interval (or even an open one with finite width).
+            <md>
+              <mrow> \int_{-\infty}^{x=0} \sqrt{e^x}\;dx \amp = \lim_{t\to-\infty}  \int_{x=t}^{x=0} e^{\frac{1}{2}x}\;dx</mrow>
+              <mrow> \amp = \lim_{t\to-\infty} \left(2e^{\frac{1}{2}x}\right)\bigg|_{x=t}^{x=0} </mrow>
+              <mrow> \amp = \lim_{t\to-\infty} 2e^{0} - 2e^{t/2} </mrow>
+              <mrow> \amp = 2</mrow>
+            </md>
+            The limit exists, and so the integral converges to <m>2</m>.
+          </p>
+        </solution>
       </task>
       <task>
         <statement>
@@ -91,19 +140,66 @@
             <m>\displaystyle \int_{x=2}^{x=8} \dfrac{5}{(x-2)^3}\;dx</m>
           </p>
         </statement>
+        <solution>
+          <p>
+            This integral is improper because at <m>x=2</m> the integrand function has a vertical asymptote: this unbounded discontinuity violates the requirements of the Fundamental Theorem of Calculus.
+          </p>
+          <p>
+            <md>
+              <mrow> \int_{x=2}^{x=8} \dfrac{5}{(x-2)^3}\;dx \amp = \lim_{t\to 2^+} \int_{x=t}^{x=8} 5(x-2)^{-3}\;dx</mrow>
+              <mrow> \amp = \lim_{t\to 2^+} -\frac{5}{2(x-2)^2} \bigg|{x=t}^{x=8}</mrow>
+              <mrow> \amp = \lim_{t\to 2^+} -\frac{5}{2(6)^2} + \frac{5}{2(t-2)^2}</mrow>
+              <mrow> \amp = - \frac{5}{72} + \infty</mrow>
+              <mrow> \amp = \infty</mrow>
+            </md>
+            The limit does not exist, and so this integral diverges.
+          </p>
+        </solution>
       </task>
       <task>
         <statement>
           <p>
-            <m>\displaystyle \int_{x=1}^{x=12} \dfrac{dx}{\sqrt[5]{12-x}}</m>
+            <m>\displaystyle \int_{x=1}^{x=12} \dfrac{1}{\sqrt[5]{12-x}}\;dx</m>
           </p>
         </statement>
+        <solution>
+          <p>
+            This integral is improper because at <m>x=12</m> the integrand function has a vertical asymptote: this unbounded discontinuity violates the requirements of the Fundamental Theorem of Calculus.
+            <md>
+              <mrow>\int_{x=1}^{x=12} \dfrac{1}{\sqrt[5]{12-x}}\;dx \amp = \lim_{t\to 12^-} \int_{x=1}^{x=t} (12-x)^{-1/5}\;dx</mrow>
+              <mrow> \amp = \lim_{t\to 12^-} -\frac{5(12-x)^{4/5}}{4}\bigg|_{x=1}^{x=t}</mrow>
+              <mrow> \amp = \lim_{t\to 12^-} -\frac{5(12-t)^{4/5}}{4} +\frac{5(11)^{4/5}}{4}</mrow>
+              <mrow> \amp = \frac{5(11)^{4/5}}{4} </mrow>
+            </md>
+            The limit exists, and so the integral converges to <m>\dfrac{5(11)^{4/5}}{4} </m>.
+          </p>
+        </solution>
       </task>
     </exercise>
     <exercise>
-      <p>
-         One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of <m>k</m> makes the function <m>\dfrac{kx}{(x^2+3)^{5/4}}</m> a valid probability distribution on the interval <m>[0,\infty)</m>?
-      </p>
+      <statement>
+        <p>
+          One of the big ideas in probability is that for a curve that defines a probability density function, the area under the curve needs to be 1. What value of <m>k</m> makes the function <m>\dfrac{kx}{(x^2+3)^{5/4}}</m> a valid probability distribution on the interval <m>[0,\infty)</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We'll set up the integral <m>\displaystyle \int_{x=0}^\infty \frac{kx}{(x^2+3)^{5/4}}\;dx</m> and find the value of <m>k</m> such that:
+          <md>
+            \int_{x=0}^\infty \frac{kx}{(x^2+3)^{5/4}}\;dx =1
+          </md>.
+          
+          <md>
+            <mrow>\int_{x=0}^\infty \frac{kx}{(x^2+3)^{5/4}}\;dx \amp = \lim_{t\to\infty} \int_{x=0}^{x=t} \frac{kx}{(x^2+3)^{5/4}}\;dx</mrow>
+            <mrow>u = x^2+3\;\;\; \amp \;\;\;dx = 2x\;du </mrow>
+            <mrow> \amp = \frac{k}{2}\lim_{t\to\infty} \int_{u=3}^{u=t^2+3} u^{-5/4}\;du</mrow>
+            <mrow> \amp =\frac{k}{2} \lim_{t\to\infty} -\frac{4}{u^{1/4}}\bigg|_{u=3}^{u=t^2+3}</mrow>
+            <mrow> \amp = \frac{k}{2} \lim_{t\to\infty} -\frac{4}{(t^2+3)^{5/4}} + \frac{4}{\sqrt[4]{3}}</mrow>
+            <mrow> \amp \frac{2k}{\sqrt[4]{3}}</mrow>
+          </md>
+          Since we are hoping for this integral to be 1, we need <m>k=\frac{\sqrt[4]{3}}{2}</m>.
+        </p>
+      </solution>
     </exercise>
     <exercise>
       <introduction>
@@ -117,6 +213,11 @@
             First, compare <m>\sqrt{x^2+1}</m> to <m>\sqrt{x^2}</m> using an inequality: which one is bigger?
           </p>
         </statement>
+        <solution>
+          <p>
+            Since <m>k^2+1 \gt k</m>, we know that <m>\sqrt{k^2+1} \gt \sqrt{k^2}</m>.
+          </p>
+        </solution>
       </task>
       <task>
         <statement>
@@ -124,6 +225,16 @@
             Second, use this inequality to compare the function <m>\dfrac{\sqrt{x^2+1}}{x^2}</m> to <m>\dfrac{1}{x}</m> for <m>x\gt 0</m>: which one is bigger? Again, use your inequality from above to help!
           </p>
         </statement>
+        <solution>
+          <p>
+            First, since <m>k\gt 0</m>, we know that <m>\sqrt{k^2} = k</m>. From our work above, we know that <m>\sqrt{k^2+1} \gt k</m>.
+            <md>
+              <mrow>\sqrt{k^2+1} \amp \gt k</mrow>
+              <mrow>\frac{\sqrt{k^2+1}}{k^2} \amp \gt \frac{k}{k^2}</mrow>
+              <mrow>\frac{\sqrt{k^2+1}}{k^2} \amp \gt \frac{1}{k}</mrow>
+            </md>
+          </p>
+        </solution>
       </task>
       <task>
         <statement>
@@ -131,6 +242,14 @@
             Now compare <m>\displaystyle \int_{x=1}^\infty \dfrac{\sqrt{x^2+1}}{x^2}\;dx</m> to <m>\displaystyle \int_{x=1}^\infty \dfrac{1}{x}\;dx</m>. Which one is bigger?
           </p>
         </statement>
+        <solution>
+          <p>
+            Since <m>\dfrac{\sqrt{k^2+1}}{k^2} \gt \dfrac{1}{k}</m> on the interval <m>[1,\infty)</m>, we can say that:
+            <md>
+              \int_{x=1}^{\infty} frac{\sqrt{k^2+1}}{k^2}\;dx \gt \int_{x=1}^{\infty} \frac{1}{k}\;dx
+            </md>.
+          </p>
+        </solution>
       </task>
       <task>
         <statement>
@@ -138,6 +257,21 @@
             Explain how we can use this result to make a conclusion about whether our integral, <m>\displaystyle \int_{x=1}^\infty \dfrac{\sqrt{x^2+1}}{x^2}\;dx</m> converges or diverges.
           </p>
         </statement>
+        <solution>
+          <p>
+              <md>
+                <mrow>\int_{x=1}^{\infty} \frac{1}{x}\;dx \amp = \lim_{t\to\infty} \int_{x=1}^{x=t} \frac{1}{x}\;dx</mrow>
+                <mrow> \amp = \lim_{t\to\infty} \ln|x|\bigg|_{x=1}^{x=t}</mrow>
+                <mrow> \amp = \lim_{t\to\infty} \ln(t)</mrow>
+                <mrow> \amp = \infty</mrow>
+              </md>
+              But since we know that
+              <md>
+                \int_{x=1}^{\infty} frac{\sqrt{k^2+1}}{k^2}\;dx \gt \int_{x=1}^{\infty} \frac{1}{k}\;dx
+              </md>
+              we know that the integral <m>\displaystyle \int_{x=1}^\infty \dfrac{\sqrt{x^2+1}}{x^2}\;dx</m> must diverge as well: there is no real number that the limit of this integral could converge to that is greater than infinity.
+          </p>
+        </solution>
       </task>
     </exercise>
 </exercises>
