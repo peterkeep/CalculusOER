@@ -11,6 +11,15 @@
                     <m>\rho(x) = \dfrac{2x+1}{10}</m> on <m>[0, 10]</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>m \amp = \int_{x=0}^{x=10} \left(\frac{2x+1}{10}\right)\;dx</mrow>
+                        <mrow> \amp = \left(\frac{x^3}{15} + \frac{x}{10}\right)\bigg|_{x=0}^{x=10}</mrow>
+                        <mrow> \amp = 11</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -18,6 +27,15 @@
                     <m>\rho(x) = x^2-2</m> on <m>[100, 200]</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>m \amp = \int_{x=100}^{x=100}(x^2-2)\;dx</mrow>
+                        <mrow> \amp = \left(\frac{x^3}{3} - 2x\right)\bigg|_{x=100}^{x=200}</mrow>
+                        <mrow> \amp = \frac{6999400}{3}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -32,6 +50,14 @@
                     Using Hooke's Law, find the spring constant <m>k</m> such that <m>F(x) = kx</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>100 \amp = 0.3k</mrow>
+                        <mrow>k \amp = \frac{1000}{3}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -39,6 +65,15 @@
                     How much work is required to stretch the spring 0.4 m from its equilibrium position?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>W \amp = \int_{x=0}^{x=0.4} \frac{1000x}{3}\;dx</mrow>
+                        <mrow> \amp = \left(\frac{500x}{3}\right)\bigg|_{x=0}^{x=0.4}</mrow>
+                        <mrow> \amp = \frac{80}{3}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -46,6 +81,15 @@
                     How much work is required to stretch the spring another 0.1 m after this?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>W \amp = \int_{x=0.4}^{x=0.5} \frac{1000x}{3}\;dx</mrow>
+                        <mrow> \amp = \left(\frac{500x}{3}\right)\bigg|_{x=0.4}^{x=0.5}</mrow>
+                        <mrow> \amp = 15</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -60,6 +104,14 @@
                     Using Hooke's Law, find the spring constant <m>k</m> such that <m>F(x) = kx</m>.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>10 \amp 0.2k</mrow>
+                        <mrow>k \amp 50</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -67,6 +119,15 @@
                     How much work is required to stretch the spring 1 m from its equilibrium position?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>W \amp = \int_{x=0}^{x=1} 50x\;dx</mrow>
+                        <mrow> \amp = \left(25x^2\right)\bigg|_{x=0}^{x=1} </mrow>
+                        <mrow> \amp = 25</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -74,6 +135,15 @@
                     How much work is required to compress the spring 0.2 m from is equilibrium position?
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>W \amp = \int_{x=0}^{x=-0.2}50x\;dx</mrow>
+                        <mrow> \amp = (50x)\bigg|_{x=0}^{x=-0.2}</mrow>
+                        <mrow> \amp -10</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -88,6 +158,15 @@
                     A square-based tank that is 2 meters tall with a 0.5 m <m>\times</m> 0.5 m base, full of liquid.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>W \amp = \int_{y=0}^{y=2} \frac{1}{4}(2-y)\;dy</mrow>
+                        <mrow> \amp = \left(\frac{y}{2} - \frac{y^2}{8}\right)\bigg|_{y=0}^{y=2}</mrow>
+                        <mrow> \amp = \frac{1}{2}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -95,6 +174,15 @@
                     A cylindrical tank where the base has a radius of 1 m and the height is 3 m, half-full of liquid.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>W \amp = \pi \int_{y=0}^{y=3/2}(3-y)\;dy</mrow>
+                        <mrow> \amp = \pi\left(3y - \frac{y^2}{2}\right)\bigg|_{y=0}^{y=3/2}</mrow>
+                        <mrow> \amp = \frac{27\pi}{8}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -102,6 +190,19 @@
                     A frustum-shaped tank where the bottom radius is 4 m, the top radius is 1 m, the height is 2 m, and the tank is filled to a height of <m>\frac{2}{3}</m> m.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    The equation for the radius <m>r</m> at height <m>y</m> is:
+                    <md>
+                        r(y)=4-\frac{3y}{2}
+                    </md>.
+                    <md>
+                        <mrow>W \amp = \pi \int_{y=0}^{y=2/3}\left(4-\frac{3y}{2}\right)^2(2-y)\;dy</mrow>
+                        <mrow> \amp = \pi \int_{y=0}^{y=2/3} \left(32 - 40y + \frac{33y}{2}-\frac{9y^3}{4}\right)\;dy</mrow>
+                        <mrow> \amp =\frac{377\pi}{27}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
 </exercises>
