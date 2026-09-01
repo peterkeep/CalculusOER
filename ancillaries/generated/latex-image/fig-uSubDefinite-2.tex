@@ -1,0 +1,74 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz, pgfplots}
+\usepackage{graphicx} 
+\usepackage{amsmath}
+\usetikzlibrary{positioning,matrix,arrows} 
+\usetikzlibrary{shapes,decorations,shadows,fadings,patterns, angles, quotes} 
+\usetikzlibrary{decorations.markings}
+\definecolor{DCgreen}{HTML}{085646}
+\definecolor{DCblue}{HTML}{5762D5}
+\definecolor{DCred}{HTML}{AD343E}
+\definecolor{DCyellow}{HTML}{EDAE49}
+\definecolor{DClightgreen}{HTML}{799E8F}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} 
+\newcommand{\ddx}[1]{\frac{d}{dx}\left(#1\right)}
+\newcommand{\Ddx}[1]{\dfrac{d}{dx}\left(#1\right)}
+\newcommand{\dd}[2]{\frac{d#1}{d#2}}
+\newcommand{\Dd}[2]{\dfrac{d#1}{d#2}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\Dydx}{\dfrac{dy}{dx}}
+\newcommand{\blank}[1]{\underline{\hspace{#1}}} 
+\newcommand{\dint}{\displaystyle \int}
+\newcommand{\va}{┊}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture}
+    \node[DCgreen] at (1.5, 5.3) [above] {\Large $x$ Context};
+    \draw[DCgreen] (0,0) -- (0,5.1);
+    \draw[DCgreen] (0,5.1) -- (3,5.1);
+    \draw[DCgreen] (3,5.1) -- (3,0);
+    \draw[DCgreen] (3,0) -- (0,0);
+
+    \node[DCgreen] at (1.5, 4) [above] {$\displaystyle\int_{x=a}^{x=b} f(x)\;dx$};
+    \node[DCgreen] at (1.5, 2.7) [below] {$F(x)+C$};
+    \draw[-latex, line width=1.5pt][DCgreen] (1.5, 4) -- (1.5, 2.7);
+
+    \draw[-latex, line width = 1.5pt][DCgreen] (1.5, 2) -- (1.5, 0.7);
+    \node[DCgreen] at (1.5, 0.7) [below] {$F(b)-F(a)$};
+    
+    \node[DCblue] at (6.5, 5.3) [above] {\Large $u$ Context};
+    \draw[DCblue] (5,0) -- (5,5.1);
+    \draw[DCblue] (5,5.1) -- (8,5.1);
+    \draw[DCblue] (8,5.1) -- (8,0);
+    \draw[DCblue] (8,0) -- (5,0);
+
+    \node[DCblue] at (6.5, 4) [above] {$\displaystyle\int_{u=c}^{u=d} g(u)\;du$};
+    \node[DCblue] at (6.5, 2.7) [below] {$G(u)+C$};
+    \draw[-latex, line width = 1.5pt][DCblue] (6.5, 4) -- (6.5, 2.7);
+
+    \draw[-latex, line width = 1.5pt][DCblue] (6.5, 2) -- (6.5, 0.7);
+    \node[DCblue] at (6.5, 0.7) [below] {$G(d)-G(c)$};
+
+    \draw[-latex, line width = 1.2pt][DCred] (2.6,4.5) .. controls (3.2,5) and (4.8,5) .. (5.4,4.5);
+    \node[DCred] at (4,5) [above] {$u = \leadsto ...$};
+    \node[DCred] at (4,4.8) [below] {$du = u'\;dx$};
+
+    \draw[-latex, line width = 1.2pt][DCred] (5.5,2.4) .. controls (4.8, 1.9) and (3.2,1.9) .. (2.5,2.4);
+    \node[DCred] at (4,2.1) [above] {$u = \leadsto ...$};
+
+    \draw[latex-latex, line width = 1.2pt][black] (2.5, 0.4) -- (5.5, 0.4);
+    \node[black] at (4, 0.4) [above] {equivalent};
+\end{tikzpicture}%
+}
+\end{document}

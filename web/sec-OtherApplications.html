@@ -19,6 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<style>
+@counter-style ptx-marker-0 { system: extends lower-alpha; prefix: '('; suffix: ') '; }
+</style>
 <script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
 startMathJax({
 hasWebworkReps: false,
@@ -40,7 +43,7 @@ lang: "en-US",
 <meta name="twitter:description" content="Single-Variable Calculus Topics with Motivating Activities">
 <meta property="og:description" content="Single-Variable Calculus Topics with Motivating Activities">
 <meta name="twitter:card" content="summary_large_image">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.49"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.49"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.50"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.50"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -62,16 +65,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.7';
+eBookConfig.runestone_version = '8.2.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.7d3f08d51c2b60f8.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
-<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script defer src="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/coordinator.js" data-iframe-selector="iframe[data-doenet-coordinate]" data-max-live-viewers="3" data-max-concurrent-boots="2" data-shared-core-workers="true"></script><link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -1187,11 +1190,43 @@ W \amp = \rho g \pi \int_{y=0}^{y=1.5}(3-1.5y)^2(2-y)\;dy\\
 <div class="para" id="ex-OtherApplications-1-2-1-1">
 <span class="process-math">\(\rho(x) = \dfrac{2x+1}{10}\)</span> on <span class="process-math">\([0, 10]\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-OtherApplications-1-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-OtherApplications-1-2-2-1">
+<div class="displaymath process-math" id="ex-OtherApplications-1-2-2-1-1">
+\begin{align*}
+m \amp = \int_{x=0}^{x=10} \left(\frac{2x+1}{10}\right)\;dx\\
+\amp = \left(\frac{x^3}{15} + \frac{x}{10}\right)\bigg|_{x=0}^{x=10}\\
+\amp = 11
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.a.1"><a tabindex="-1" href="#ex-OtherApplications-1-2-2" title="Copy heading and permalink for Solution 1.a.1" aria-label="Copy heading and permalink for Solution 1.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#ex-OtherApplications-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-OtherApplications-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ex-OtherApplications-1-3-1-1">
 <span class="process-math">\(\rho(x) = x^2-2\)</span> on <span class="process-math">\([100, 200]\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-OtherApplications-1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-OtherApplications-1-3-2-1">
+<div class="displaymath process-math" id="ex-OtherApplications-1-3-2-1-1">
+\begin{align*}
+m \amp = \int_{x=100}^{x=100}(x^2-2)\;dx\\
+\amp = \left(\frac{x^3}{3} - 2x\right)\bigg|_{x=100}^{x=200}\\
+\amp = \frac{6999400}{3}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.b.1"><a tabindex="-1" href="#ex-OtherApplications-1-3-2" title="Copy heading and permalink for Solution 1.b.1" aria-label="Copy heading and permalink for Solution 1.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#ex-OtherApplications-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Exercise 1"><a tabindex="-1" href="#ex-OtherApplications-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
@@ -1204,15 +1239,62 @@ W \amp = \rho g \pi \int_{y=0}^{y=1.5}(3-1.5y)^2(2-y)\;dy\\
 <article class="task exercise-like" id="ex-OtherApplications-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="ex-OtherApplications-2-2-1-1">Using Hooke’s Law, find the spring constant <span class="process-math">\(k\)</span> such that <span class="process-math">\(F(x) = kx\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-OtherApplications-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-OtherApplications-2-2-2-1">
+<div class="displaymath process-math" id="ex-OtherApplications-2-2-2-1-1">
+\begin{align*}
+100 \amp = 0.3k\\
+k \amp = \frac{1000}{3}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.a.1"><a tabindex="-1" href="#ex-OtherApplications-2-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#ex-OtherApplications-2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-OtherApplications-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ex-OtherApplications-2-3-1-1">How much work is required to stretch the spring 0.4 m from its equilibrium position?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-OtherApplications-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-OtherApplications-2-3-2-1">
+<div class="displaymath process-math" id="ex-OtherApplications-2-3-2-1-1">
+\begin{align*}
+W \amp = \int_{x=0}^{x=0.4} \frac{1000x}{3}\;dx\\
+\amp = \left(\frac{500x}{3}\right)\bigg|_{x=0}^{x=0.4}\\
+\amp = \frac{80}{3}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.b.1"><a tabindex="-1" href="#ex-OtherApplications-2-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#ex-OtherApplications-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-OtherApplications-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="ex-OtherApplications-2-4-1-1">How much work is required to stretch the spring another 0.1 m after this?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-OtherApplications-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-OtherApplications-2-4-2-1">
+<div class="displaymath process-math" id="ex-OtherApplications-2-4-2-1-1">
+\begin{align*}
+W \amp = \int_{x=0.4}^{x=0.5} \frac{1000x}{3}\;dx\\
+\amp = \left(\frac{500x}{3}\right)\bigg|_{x=0.4}^{x=0.5}\\
+\amp = 15
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.c.1"><a tabindex="-1" href="#ex-OtherApplications-2-4-2" title="Copy heading and permalink for Solution 2.c.1" aria-label="Copy heading and permalink for Solution 2.c.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#ex-OtherApplications-2-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Exercise 2"><a tabindex="-1" href="#ex-OtherApplications-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
@@ -1225,15 +1307,62 @@ W \amp = \rho g \pi \int_{y=0}^{y=1.5}(3-1.5y)^2(2-y)\;dy\\
 <article class="task exercise-like" id="ex-OtherApplications-3-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="ex-OtherApplications-3-2-1-1">Using Hooke’s Law, find the spring constant <span class="process-math">\(k\)</span> such that <span class="process-math">\(F(x) = kx\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-OtherApplications-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-OtherApplications-3-2-2-1">
+<div class="displaymath process-math" id="ex-OtherApplications-3-2-2-1-1">
+\begin{align*}
+10 \amp 0.2k\\
+k \amp 50
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.a.1"><a tabindex="-1" href="#ex-OtherApplications-3-2-2" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#ex-OtherApplications-3-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-OtherApplications-3-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ex-OtherApplications-3-3-1-1">How much work is required to stretch the spring 1 m from its equilibrium position?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-OtherApplications-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-OtherApplications-3-3-2-1">
+<div class="displaymath process-math" id="ex-OtherApplications-3-3-2-1-1">
+\begin{align*}
+W \amp = \int_{x=0}^{x=1} 50x\;dx\\
+\amp = \left(25x^2\right)\bigg|_{x=0}^{x=1} \\
+\amp = 25
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.b.1"><a tabindex="-1" href="#ex-OtherApplications-3-3-2" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#ex-OtherApplications-3-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-OtherApplications-3-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="ex-OtherApplications-3-4-1-1">How much work is required to compress the spring 0.2 m from is equilibrium position?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-OtherApplications-3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-OtherApplications-3-4-2-1">
+<div class="displaymath process-math" id="ex-OtherApplications-3-4-2-1-1">
+\begin{align*}
+W \amp = \int_{x=0}^{x=-0.2}50x\;dx\\
+\amp = (50x)\bigg|_{x=0}^{x=-0.2}\\
+\amp -10
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-3-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.c.1"><a tabindex="-1" href="#ex-OtherApplications-3-4-2" title="Copy heading and permalink for Solution 3.c.1" aria-label="Copy heading and permalink for Solution 3.c.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.c"><a tabindex="-1" href="#ex-OtherApplications-3-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Exercise 3"><a tabindex="-1" href="#ex-OtherApplications-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
@@ -1246,15 +1375,69 @@ W \amp = \rho g \pi \int_{y=0}^{y=1.5}(3-1.5y)^2(2-y)\;dy\\
 <article class="task exercise-like" id="ex-OtherApplications-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="ex-OtherApplications-4-2-1-1">A square-based tank that is 2 meters tall with a 0.5 m <span class="process-math">\(\times\)</span> 0.5 m base, full of liquid.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-OtherApplications-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-OtherApplications-4-2-2-1">
+<div class="displaymath process-math" id="ex-OtherApplications-4-2-2-1-1">
+\begin{align*}
+W \amp = \int_{y=0}^{y=2} \frac{1}{4}(2-y)\;dy\\
+\amp = \left(\frac{y}{2} - \frac{y^2}{8}\right)\bigg|_{y=0}^{y=2}\\
+\amp = \frac{1}{2}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.a.1"><a tabindex="-1" href="#ex-OtherApplications-4-2-2" title="Copy heading and permalink for Solution 4.a.1" aria-label="Copy heading and permalink for Solution 4.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.a"><a tabindex="-1" href="#ex-OtherApplications-4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-OtherApplications-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ex-OtherApplications-4-3-1-1">A cylindrical tank where the base has a radius of 1 m and the height is 3 m, half-full of liquid.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-OtherApplications-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-OtherApplications-4-3-2-1">
+<div class="displaymath process-math" id="ex-OtherApplications-4-3-2-1-1">
+\begin{align*}
+W \amp = \pi \int_{y=0}^{y=3/2}(3-y)\;dy\\
+\amp = \pi\left(3y - \frac{y^2}{2}\right)\bigg|_{y=0}^{y=3/2}\\
+\amp = \frac{27\pi}{8}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.b.1"><a tabindex="-1" href="#ex-OtherApplications-4-3-2" title="Copy heading and permalink for Solution 4.b.1" aria-label="Copy heading and permalink for Solution 4.b.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.b"><a tabindex="-1" href="#ex-OtherApplications-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-OtherApplications-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="ex-OtherApplications-4-4-1-1">A frustum-shaped tank where the bottom radius is 4 m, the top radius is 1 m, the height is 2 m, and the tank is filled to a height of <span class="process-math">\(\frac{2}{3}\)</span> m.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-OtherApplications-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-OtherApplications-4-4-2-1">
+<div class="para">The equation for the radius <span class="process-math">\(r\)</span> at height <span class="process-math">\(y\)</span> is:</div>
+<div class="displaymath process-math" id="ex-OtherApplications-4-4-2-1-3">
+\begin{equation*}
+r(y)=4-\frac{3y}{2}\text{.}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="ex-OtherApplications-4-4-2-1-4">
+\begin{align*}
+W \amp = \pi \int_{y=0}^{y=2/3}\left(4-\frac{3y}{2}\right)^2(2-y)\;dy\\
+\amp = \pi \int_{y=0}^{y=2/3} \left(32 - 40y + \frac{33y}{2}-\frac{9y^3}{4}\right)\;dy\\
+\amp =\frac{377\pi}{27}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-OtherApplications-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.c.1"><a tabindex="-1" href="#ex-OtherApplications-4-4-2" title="Copy heading and permalink for Solution 4.c.1" aria-label="Copy heading and permalink for Solution 4.c.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.c"><a tabindex="-1" href="#ex-OtherApplications-4-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Exercise 4"><a tabindex="-1" href="#ex-OtherApplications-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>

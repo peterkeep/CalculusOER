@@ -19,6 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<style>
+@counter-style ptx-marker-0 { system: extends lower-alpha; prefix: '('; suffix: ') '; }
+</style>
 <script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
 startMathJax({
 hasWebworkReps: false,
@@ -40,7 +43,7 @@ lang: "en-US",
 <meta name="twitter:description" content="Single-Variable Calculus Topics with Motivating Activities">
 <meta property="og:description" content="Single-Variable Calculus Topics with Motivating Activities">
 <meta name="twitter:card" content="summary_large_image">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.49"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.49"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.50"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.50"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -62,16 +65,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.7';
+eBookConfig.runestone_version = '8.2.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.7d3f08d51c2b60f8.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
-<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script defer src="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/coordinator.js" data-iframe-selector="iframe[data-doenet-coordinate]" data-max-live-viewers="3" data-max-concurrent-boots="2" data-shared-core-workers="true"></script><link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -798,7 +801,7 @@ eBookConfig.enable_chatcodes =  false;
 </article>
 <div class="para" id="subsec-PolarWhatIf-6">We can practice visualizing these points using the graphing utility below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-PolarWhatIf-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="interactive-iframe-container"><iframe id="subsec-PolarWhatIf-7" style="width:570px; height:1140px; display: block; " src="subsec-PolarWhatIf-7-if.html"></iframe></div>
+<div class="interactive-iframe-container"><iframe id="subsec-PolarWhatIf-7" style="width:570px; height:1140px; display: block; " src="subsec-PolarWhatIf-7-if.html" data-doenet-coordinate="true"></iframe></div>
 <div class="interactive-iframe-container__opener"><a href="subsec-PolarWhatIf-7.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
 <div class="para" id="subsec-PolarWhatIf-8">We will mostly be interested in thinking about functions defined using this new coordinate system.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-PolarWhatIf-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -824,7 +827,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="act-FirstPolarCurve-2-2">For each task, we’ll use the following visualization:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-FirstPolarCurve-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="interactive-iframe-container"><iframe id="act-FirstPolarCurve-2-3" style="width:570px; height:1140px; display: block; " src="act-FirstPolarCurve-2-3-if.html"></iframe></div>
+<div class="interactive-iframe-container"><iframe id="act-FirstPolarCurve-2-3" style="width:570px; height:1140px; display: block; " src="act-FirstPolarCurve-2-3-if.html" data-doenet-coordinate="true"></iframe></div>
 <div class="interactive-iframe-container__opener"><a href="act-FirstPolarCurve-2-3.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
 </div>
 <article class="task exercise-like" id="act-FirstPolarCurve-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
@@ -884,7 +887,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="act-PolarFlower-2-2">For each task, we’ll use the following visualization:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-PolarFlower-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="interactive-iframe-container"><iframe id="act-PolarFlower-2-3" style="width:570px; height:1140px; display: block; " src="act-PolarFlower-2-3-if.html"></iframe></div>
+<div class="interactive-iframe-container"><iframe id="act-PolarFlower-2-3" style="width:570px; height:1140px; display: block; " src="act-PolarFlower-2-3-if.html" data-doenet-coordinate="true"></iframe></div>
 <div class="interactive-iframe-container__opener"><a href="act-PolarFlower-2-3.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
 </div>
 <article class="task exercise-like" id="act-PolarFlower-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
@@ -958,7 +961,7 @@ eBookConfig.enable_chatcodes =  false;
 </article>
 <div class="para" id="subsec-ExploringPolarCoordinates-8">Before moving on, it might be nice to get more familiarity with polar plots of curves. Use the graphing utility below to look at different curves and compare the Cartesian and polar plots.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-ExploringPolarCoordinates-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="interactive-iframe-container"><iframe id="subsec-ExploringPolarCoordinates-9" style="width:570px; height:1140px; display: block; " src="subsec-ExploringPolarCoordinates-9-if.html"></iframe></div>
+<div class="interactive-iframe-container"><iframe id="subsec-ExploringPolarCoordinates-9" style="width:570px; height:1140px; display: block; " src="subsec-ExploringPolarCoordinates-9-if.html" data-doenet-coordinate="true"></iframe></div>
 <div class="interactive-iframe-container__opener"><a href="subsec-ExploringPolarCoordinates-9.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
 <div class="autopermalink" aria-hidden="true" data-description="Subsection: Exploring Polar Coordinates"><a tabindex="-1" href="#subsec-ExploringPolarCoordinates" title="Copy heading and permalink for Subsection: Exploring Polar Coordinates" aria-label="Copy heading and permalink for Subsection: Exploring Polar Coordinates">🔗</a></div>
 </section>
@@ -1252,7 +1255,7 @@ y \amp = f(\theta)\sin(\theta)
 <div class="introduction" id="ex-PolarCurves-5-1">
 <div class="para" id="ex-PolarCurves-5-1-1">For each of the following polar curves, plot the curve in the graphing utility below. Then, find at least 5 different points on the polar curve, plot them, and describe the behavior of the curve.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-PolarCurves-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="interactive-iframe-container"><iframe id="ex-PolarCurves-5-1-2" style="width:570px; height:570px; display: block; " src="ex-PolarCurves-5-1-2-if.html"></iframe></div>
+<div class="interactive-iframe-container"><iframe id="ex-PolarCurves-5-1-2" style="width:570px; height:570px; display: block; " src="ex-PolarCurves-5-1-2-if.html" data-doenet-coordinate="true"></iframe></div>
 <div class="interactive-iframe-container__opener"><a href="ex-PolarCurves-5-1-2.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
 </div>
 <article class="task exercise-like" id="ex-PolarCurves-5-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
