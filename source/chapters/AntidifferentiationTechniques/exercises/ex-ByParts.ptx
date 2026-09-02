@@ -26,6 +26,18 @@
                     <m>\dint 3x\sin(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = 3x \amp v \amp = -\cos(x)</mrow>
+                        <mrow>du \amp = 3\;dx\;\; \amp dv \amp = \sin(x)\;dx</mrow>
+                    </md>
+                    <md> 
+                        <mrow>\int 3x\sin(x)\;dx  \amp = -3x\cos(x)+\int 3\cos(x)\;dx</mrow>
+                        <mrow> \amp = -3x\cos(x) + 3\sin(x) + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -33,6 +45,18 @@
                     <m>\dint 5xe^x\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = 5x \amp v \amp = e^x</mrow>
+                        <mrow>du \amp = 5\;dx \amp dv \amp = e^x\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int 5xe^x\;dx \amp = 5xe^x - \int 5e^x\;dx</mrow>
+                        <mrow> \amp = 5xe^x - 5e^x + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -40,6 +64,26 @@
                     <m>\dint x^2e^{-x}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = x^2 \amp v \amp = -e^{-x}</mrow>
+                        <mrow>du \amp = 2x\;dx \amp dv \amp e^{-x}\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int x^2e^{-x}\;dx \amp = -x^2e^{-x} + \int 2xe^{-x}\;dx </mrow>
+                    </md>
+                    <md>
+                        <mrow>u \amp = 2x \amp v \amp = -e^{-x}</mrow>
+                        <mrow>du \amp = 2\;dx \amp dv \amp = e^{-x}\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int x^2e^{-x}\;dx \amp = -x^2e^{-x} + \int 2xe^{-x}\;dx </mrow>
+                        <mrow> \amp = -x^2e^{-x} -2xe^{-x} + \int 2e^{-x}\;dx</mrow>
+                        <mrow> \amp = -x^2e^{-x} - 2xe^{-x} - 2e^{-x} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -47,6 +91,18 @@
                     <m>\dint x^2\ln(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \ln(x) \amp v \amp = \frac{x^3}{3}</mrow>
+                        <mrow>du \amp = \frac{1}{x}\;dx \amp dv \amp x^2\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int x^2\ln(x)\;dx \amp = \frac{x^3\ln(x)}{3} - \int \frac{x^2}{3}\;dx</mrow>
+                        <mrow> \amp = \frac{x^3\ln(x)}{3} - \frac{x^3}{9} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -54,6 +110,26 @@
                     <m>\dint x^2\cos(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = x^2 \amp v \amp \sin(x)</mrow>
+                        <mrow>du \amp = 2x\;dx \amp dv \amp = \cos(x)\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int x^2\cos(x)\;dx \amp = x^2\sin(x) - \int 2x\sin(x)\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>u \amp = 2x \amp v \amp -\cos(x)</mrow>
+                        <mrow>du \amp = 2\;dx \amp dv \amp \sin(x)\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int x^2\cos(x)\;dx \amp = x^2\sin(x) - \int 2x\sin(x)\;dx</mrow>
+                        <mrow> \amp = x^2\sin(x) + 2x\cos(x) -\int 2\cos(x)\;dx</mrow>
+                        <mrow> \amp = x^2\sin(x) + 2x\cos(x) - 2\sin(x) + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -61,6 +137,23 @@
                     <m>\dint x^3e^{-x}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = x^3 \amp v \amp =-e^{-x}</mrow>
+                        <mrow>du \amp = 3x^2\;dx \amp dv \amp e^{-x}\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int x^3e^{-x}\;dx \amp = -x^3e^{-x} + 3\int x^2e^{-x}\;dx</mrow>
+                    </md>
+                    Note that we found a solution for <m>\dint x^2e^{-x}\;dx</m> earlier, and so we can use that here!
+                    <md>
+                        <mrow>\int x^3e^{-x}\;dx \amp = -x^3e^{-x} + 3\int x^2e^{-x}\;dx</mrow>
+                        <mrow> \amp = -x^3e^{-x} + 3(-x^2e^{-x} - 2x e^{-x} - 2e^{-x})+C</mrow>
+                        <mrow> \amp = -x^3e^{-x} -3x^2e^{-x} -6x e^{-x} -6e^{-x} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -68,6 +161,11 @@
                     <m>\dint x\sin(x)\cos(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -223,6 +321,33 @@
                         <mrow> \amp = ue^u-\int e^u \;du</mrow>
                         <mrow> \amp = ue^u - e^u+C</mrow>
                         <mrow> \amp = x\ln(x)-x+C</mrow>
+                    </md>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use this same technique to integrate the following:
+                    <md>
+                        \int \left(\ln(x)\right)^3\;dx
+                    </md>
+                    
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>x \amp = e^u</mrow>
+                        <mrow>dx \amp = e^u\;du</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \left(\ln(x)\right)^3\;dx \amp = \int u^3e^u\;du</mrow>
+                        <mrow> \amp = u^3e^u - \int 3u^2 e^u\;du</mrow>
+                        <mrow> \amp = u^3e^u - 3u^2e^u + \int 6ue^u \; du</mrow>
+                        <mrow> \amp = u^3e^u - 3u^2e^u + 6ue^u - \int 6e^u\;du</mrow>
+                        <mrow> \amp = u^3e^u - 3u^2e^u + 6ue^u - 6e^u + C </mrow>
+                        <mrow> \amp = x(\ln(x))^3 - 3x(\ln(x))^2 + 6x\ln(x) - 6x + C</mrow>
                     </md>
                 </p>
             </solution>
