@@ -17,6 +17,72 @@
     <exercise>
         <introduction>
             <p>
+                In this problem, we'll consider the integral <m>\dint \sin^2(x)\;dx</m>. We'll integrate this in two different ways!
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    We know that:
+                    <md>
+                        \dint \sin^2(x)\;dx = \dint \sin(x)\sin(x)\;dx
+                    </md>. 
+                    Use the Integration by Parts strategy, and especially note that you can solve for the integral (<xref ref="subsec-SolvingForIntegral" text="title"/>).
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \sin^2(x)\;dx \amp = -\sin(x)\cos(x) + \int \cos^2(x)\;dx </mrow>
+                        <mrow> \amp = -\sin(x)\cos(x) + \int (1 - \sin^2(x))\;dx</mrow>
+                        <mrow> \amp = -\sin(x)\cos(x) + \int 1 \;dx - \int \sin^2(x)\;dx</mrow>
+                        <mrow>2\int \sin^2(x)\;dx \amp = -\sin(x)\cos(x) + x</mrow>
+                        <mrow>\int \sin^2(x)\;dx \amp = -\frac{\sin(x)\cos(x)+x}{2} + C</mrow>
+                    </md>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    We can use a trigonometric identity to rewrite the integral:
+                    <md>
+                        \sin^2(x) = \dfrac{1-\cos(2x)}{2}
+                    </md>.
+                    So we have:
+                    <md>
+                        \int \sin^2(x)\;dx = \int \frac{1}{2} - \frac{1}{2}\cos(2x)\;dx
+                    </md>.
+                    Use <m>u</m>-substitution.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We will let <m>u = 2x</m>, giving <m>du = 2\;dx</m>.
+                    <md>
+                        <mrow> \int \sin^2(x)\;dx \amp= \int \frac{1}{2} - \frac{1}{2}\cos(2x)\;dx </mrow>
+                        <mrow> \amp = \frac{x}{2} - \frac{1}{4}\int \cos(u)\;du</mrow>
+                        <mrow> \amp = \frac{x}{2} - \frac{\sin(2x)}{4} + C</mrow>
+                    </md>
+                </p>
+            </solution>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Were your answers the same or different? Should they be the same? Why or why not? Are they connected somehow? 
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    They might be different, but they should only be different by, at most, a constant.
+                </p>
+            </hint>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
                 Integrate the following.
             </p>
         </introduction>
@@ -308,83 +374,17 @@
             <solution>
                 <p>
                     <md>
-                        <mrow>u \amp = x \amp v \amp e^x</mrow>
-                        <mrow>du \amp dx \amp dv \amp e^x\;dx</mrow>
+                        <mrow>u \amp = x \amp v \amp =e^x</mrow>
+                        <mrow>du \amp = dx \amp dv \amp = e^x\;dx</mrow>
                     </md>
                     <md>
-                        <mrow> \int_{x=0}^{x=\ln(5)} xe^x\;dx \amp = \left( xe^x \right)\bigg_{x=0}^{x=\ln(5)} - \int_{x=0}^{x=\ln(5)} e^x\;dx</mrow>
+                        <mrow> \int_{x=0}^{x=\ln(5)} xe^x\;dx \amp = \left( xe^x \right)\bigg|_{x=0}^{x=\ln(5)} - \int_{x=0}^{x=\ln(5)} e^x\;dx</mrow>
                         <mrow> \amp = \left(xe^x - e^x \right) \bigg|_{x=0}^{x=\ln(5)}</mrow>
                         <mrow> \amp = (5\ln(5) - 5) - (0 - 1)</mrow>
                         <mrow> \amp = 5\ln(5) - 4</mrow>
                     </md>
                 </p>
             </solution>
-        </task>
-    </exercise>
-    <exercise>
-        <introduction>
-            <p>
-                In this problem, we'll consider the integral <m>\dint \sin^2(x)\;dx</m>. We'll integrate this in two different ways!
-            </p>
-        </introduction>
-        <task>
-            <statement>
-                <p>
-                    We know that:
-                    <md>
-                        \dint \sin^2(x)\;dx = \dint \sin(x)\sin(x)\;dx
-                    </md>. 
-                    Use the Integration by Parts strategy, and especially note that you can solve for the integral (<xref ref="subsec-SolvingForIntegral" text="title"/>).
-                </p>
-            </statement>
-            <solution>
-                <p>
-                    <md>
-                        <mrow>\int \sin^2(x)\;dx \amp = -\sin(x)\cos(x) + \int \cos^2(x)\;dx </mrow>
-                        <mrow> \amp = -\sin(x)\cos(x) + \int (1 - \sin^2(x))\;dx</mrow>
-                        <mrow> \amp = -\sin(x)\cos(x) + \int 1 \;dx - \int \sin^2(x)\;dx</mrow>
-                        <mrow>2\int \sin^2(x)\;dx \amp = -\sin(x)\cos(x) + x</mrow>
-                        <mrow>\int \sin^2(x)\;dx \amp = -\frac{\sin(x)\cos(x)+x}{2} + C</mrow>
-                    </md>
-                </p>
-            </solution>
-        </task>
-        <task>
-            <statement>
-                <p>
-                    We can use a trigonometric identity to rewrite the integral:
-                    <md>
-                        \sin^2(x) = \dfrac{1-\cos(2x)}{2}
-                    </md>.
-                    So we have:
-                    <md>
-                        \int \sin^2(x)\;dx = \int \frac{1}{2} - \frac{1}{2}\cos(2x)\;dx
-                    </md>.
-                    Use <m>u</m>-substitution.
-                </p>
-            </statement>
-            <solution>
-                <p>
-                    We will let <m>u = 2x</m>, giving <m>du = 2\;dx</m>.
-                    <md>
-                        <mrow> \int \sin^2(x)\;dx amp= \int \frac{1}{2} - \frac{1}{2}\cos(2x)\;dx </mrow>
-                        <mrow> \amp = \frac{x}{2} - \frac{1}{4}\int \cos(u)\;du</mrow>
-                        <mrow> \amp = \frac{x}{2} - \frac{\sin(2x)}{4} + C</mrow>
-                    </md>
-                </p>
-            </solution>
-        </task>
-        <task>
-            <statement>
-                <p>
-                    Were your answers the same or different? Should they be the same? Why or why not? Are they connected somehow? 
-                </p>
-            </statement>
-            <hint>
-                <p>
-                    They might be different, but they should only be different by, at most, a constant.
-                </p>
-            </hint>
         </task>
     </exercise>
     <exercise>
