@@ -46,13 +46,13 @@
                     exercise.divisional.answer="no"
                     exercise.divisional.solution="no"/>
     </target>
-    <target name="solutions"
+    <!-- <target name="solutions"
             format="pdf"
             source="main.ptx"
             publication="pub-solutions.ptx"
             xsl="solutions.xsl"
             deploy-dir="ancillaries"
-            output-filename="DiscoverCalculus-Solutions.pdf" />
+            output-filename="DiscoverCalculus-Solutions.pdf" /> -->
     <target name="activities"
             format="pdf"
             xsl="activities.xsl"
