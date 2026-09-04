@@ -163,16 +163,45 @@
             </statement>
             <solution>
                 <p>
-                    
+                    <md>
+                        <mrow> u \amp = x \amp v \amp = \frac{\sin^2(x)}{2}</mrow>
+                        <mrow>du \amp = dx \amp dv \amp = \sin(x)\cos(x)\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int x\sin(x)\cos(x)\;dx \amp = \frac{x\sin^2(x)}{2} - \frac{1}{2}\int \sin^2(x)\;dx </mrow>
+                        <mrow> \amp = \frac{\sin^2(x)}{2} - \frac{1}{4}\int 1-\cos(2x)\;dx</mrow>
+                        <mrow> \amp = \frac{\sin^2(x)}{2} - \frac{1}{4} x - \frac{\sin(2x)}{8} + C</mrow>
+                    </md>
                 </p>
             </solution>
         </task>
         <task>
             <statement>
                 <p>
-                    <m>\dint e^x\sin(x)</m>
+                    <m>\dint e^x\sin(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \sin(x) \amp v \amp = e^x</mrow>
+                        <mrow>du \amp = \cos(x)\;dx \amp dv \amp = e^x \; dx</mrow>
+                    </md>
+                    <md>
+                        \int e^x\sin(x) \;dx = e^x\sin(x) - \int e^x\cos(x)\;dx
+                    </md>
+                    <md>
+                        <mrow>u \amp = \cos(x) \amp v \amp = e^x</mrow>
+                        <mrow>du \amp = -\sin(x)\;dx \amp dv \amp = e^x\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow> \int e^x\sin(x)\;dx \amp = e^x\sin(x) - \int e^x\cos(x)\;dx</mrow>
+                        <mrow> \amp = e^x \sin(x) - e^x\cos(x) - \int e^x\sin(x)\;dx</mrow>
+                        <mrow>2\int e^x\sin(x)\;dx \amp = e^x\sin(x) - e^x\cos(x) </mrow>
+                        <mrow>\int e^x\sin(x)\;dx \amp = \frac{e^x\sin(x) - e^x\cos(x)}{2} +C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -180,6 +209,23 @@
                     <m>\dint \sin^{-1}(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \sin^{-1}(x) \amp v \amp = x</mrow>
+                        <mrow>du \amp = \frac{1}{\sqrt{1-x^2}}\;dx \amp dv \amp = dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \sin^{-1}(x)\;dx \amp = x\sin^{-1}(x) - \int \frac{x}{\sqrt{1-x^2}}\;dx</mrow>
+                        <mrow>u \amp = 1-x^2 </mrow>
+                        <mrow>du \amp = -2x\;dx</mrow>
+                        <mrow>\int \sin^{-1}(x)\;dx \amp = x\sin^{-1}(x) - \int \frac{x}{\sqrt{1-x^2}}\;dx</mrow>
+                        <mrow> \amp = x\sin^{-1}(x) + \frac{1}{2} \int u^{-1/2}\;du</mrow>
+                        <mrow> \amp = x\sin^{-1}(x) + \sqrt{u}+C</mrow>
+                        <mrow> \amp = x\sin^{-1}(x) + \sqrt{1-x^2} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -187,6 +233,23 @@
                     <m>\dint \tan^{-1}(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \tan^{-1}(x) \amp v \amp = x</mrow>
+                        <mrow>du \amp = \frac{1}{x^2+1}\;dx \amp dv \amp = dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \tan^{-1}(x)\;dx \amp = x\tan^{-1}(x) - \int \frac{x}{x^2+1}\;dx</mrow>
+                        <mrow>u \amp = x^2+1 </mrow>
+                        <mrow>du \amp = 2x\;dx</mrow>
+                        <mrow>\int \tan^{-1}(x)\;dx \amp = x\tan^{-1}(x) - \int \frac{x}{x^2+1}\;dx</mrow>
+                        <mrow> \amp = x\tan^{-1}(x) - \frac{1}{2} \int \frac{1}{u}\;du</mrow>
+                        <mrow> \amp = x\tan^{-1}(x) - \frac{1}{2}\ln|u|+C</mrow>
+                        <mrow> \amp = x\tan^{-1}(x) - \frac{1}{2} \ln(x^2+1) + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -201,6 +264,20 @@
                     <m>\dint_{x=1}^{x=e} x\ln(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \ln(x) \amp v \amp = \frac{x^2}{2} </mrow>
+                        <mrow>du \amp = \frac{1}{x}\;dx \amp  dv \amp = x\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int_{x=1}^{x=e} x\ln(x)\;dx \amp = \left(\frac{x^2\ln(x)}{2}\right)\bigg|_{x=1}^{x=e} - \frac{1}{2} \int_{x=1}^{x=e} x\;dx  </mrow>
+                        <mrow> \amp = \left(\frac{x^2\ln(x)}{2} - \frac{x^2}{4}\right)\bigg|_{x=1}^{x=e}</mrow>
+                        <mrow> \amp = \left(\frac{e^2}{2} - \frac{e^2}{4}\right) - \left(0 - \frac{1}{4}\right)</mrow>
+                        <mrow> \amp = \frac{e^2+1}{4}</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -208,6 +285,19 @@
                     <m>\dint_{x=0}^{x=\pi/4} x\cos(2x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = x \amp v \amp = \frac{\sin(2x)}{2}</mrow>
+                        <mrow>du \amp = dx \amp dv \amp = \cos(2x)\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int_{x=0}^{x=\pi/4} x\cos(2x)\;dx \amp = \left(\frac{x\sin(2)}{2}\right)\bigg|_{x=0}^{x=\pi/4} - \frac{1}{2}\int_{x=0}^{x=\pi/4} \sin(2x)\;dx</mrow>
+                        <mrow> \amp = \left( \frac{x\sin(2x)}{2} + \frac{\cos(2x)}{4}\right)\bigg|_{x=0}^{x=\pi/4}</mrow>
+                        <mrow> \amp = \frac{\pi}{8} - \frac{1}{4} </mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -215,6 +305,20 @@
                     <m>\dint_{x=0}^{x=\ln(5)} xe^{x}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = x \amp v \amp e^x</mrow>
+                        <mrow>du \amp dx \amp dv \amp e^x\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow> \int_{x=0}^{x=\ln(5)} xe^x\;dx \amp = \left( xe^x \right)\bigg_{x=0}^{x=\ln(5)} - \int_{x=0}^{x=\ln(5)} e^x\;dx</mrow>
+                        <mrow> \amp = \left(xe^x - e^x \right) \bigg|_{x=0}^{x=\ln(5)}</mrow>
+                        <mrow> \amp = (5\ln(5) - 5) - (0 - 1)</mrow>
+                        <mrow> \amp = 5\ln(5) - 4</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -233,6 +337,17 @@
                     Use the Integration by Parts strategy, and especially note that you can solve for the integral (<xref ref="subsec-SolvingForIntegral" text="title"/>).
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \sin^2(x)\;dx \amp = -\sin(x)\cos(x) + \int \cos^2(x)\;dx </mrow>
+                        <mrow> \amp = -\sin(x)\cos(x) + \int (1 - \sin^2(x))\;dx</mrow>
+                        <mrow> \amp = -\sin(x)\cos(x) + \int 1 \;dx - \int \sin^2(x)\;dx</mrow>
+                        <mrow>2\int \sin^2(x)\;dx \amp = -\sin(x)\cos(x) + x</mrow>
+                        <mrow>\int \sin^2(x)\;dx \amp = -\frac{\sin(x)\cos(x)+x}{2} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -248,6 +363,16 @@
                     Use <m>u</m>-substitution.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    We will let <m>u = 2x</m>, giving <m>du = 2\;dx</m>.
+                    <md>
+                        <mrow> \int \sin^2(x)\;dx amp= \int \frac{1}{2} - \frac{1}{2}\cos(2x)\;dx </mrow>
+                        <mrow> \amp = \frac{x}{2} - \frac{1}{4}\int \cos(u)\;du</mrow>
+                        <mrow> \amp = \frac{x}{2} - \frac{\sin(2x)}{4} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -274,6 +399,16 @@
                     <m>\dint \sin(\sqrt{x})\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \sin(\sqrt{x})\;dx \amp = \int 2u\sin(u)\;du</mrow>
+                        <mrow> \amp = -2u\cos(u) + 2\int \cos(u)\;du </mrow>
+                        <mrow> \amp = -2u\cos(u) + 2\sin(u) + C</mrow>
+                        <mrow> \amp = -2\sqrt{x}\cos(\sqrt{x}) + 2\sin(\sqrt{x}) + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -281,6 +416,16 @@
                     <m>\dint e^{\sqrt{x}}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int e^{\sqrt{x}}\;dx \amp = \int 2ue^u\;du</mrow>
+                        <mrow> \amp = 2ue^{u} - 2\int e^u \;du</mrow>
+                        <mrow> \amp = 2ue^u - 2e^u + C</mrow>
+                        <mrow> \amp = 2\sqrt{x}e^{\sqrt{x}} - 2e^{\sqrt{x}} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
