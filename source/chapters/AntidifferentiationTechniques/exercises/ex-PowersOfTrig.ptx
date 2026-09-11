@@ -21,6 +21,19 @@
                     <m>\dint \sin^3(x)\cos^2(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \cos(x)</mrow>
+                        <mrow>du \amp = -\sin(x)\;dx</mrow>
+                        <mrow>\int \sin^3(x)\cos^2(x)\;dx \amp = -\int(1-\cos^2(x))\cos^2(x)(-\sin(x))\;dx</mrow>
+                        <mrow> \amp = -\int (1-u^2)u^2\;du</mrow>
+                        <mrow> \amp = - \int u^2-u^4\;du</mrow>
+                        <mrow> \amp = - \left(\frac{u^3}{3} - \frac{u^5}{5}\right)+C</mrow>
+                        <mrow> \amp = \frac{\cos^5(x)}{5} - \frac{\cos^3(x)}{3} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -28,6 +41,19 @@
                     <m>\dint \sin^2(x)\cos^3(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \sin(x)</mrow>
+                        <mrow>du \amp = \cos(x)\;dx</mrow>
+                        <mrow>\int \sin^2(x)\cos^3(x)\;dx \amp = \int \sin^2(x)(1-\sin^2(x))\cos(x)\;dx</mrow>
+                        <mrow> \amp = \int u^2(1-u^2)\;du</mrow>
+                        <mrow> \amp = \int u^2 - u^4\;du</mrow>
+                        <mrow> \amp = \frac{u^3}{3} - \frac{u^5}{5} + C</mrow>
+                        <mrow> \amp = \frac{\sin^3(x)}{3} - \frac{\sin^5(x)}{5} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -35,6 +61,28 @@
                     <m>\dint \sin^3(x)\cos^3(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \sin(x)</mrow>
+                        <mrow>du \amp = \cos(x)\;dx</mrow>
+                        <mrow>\int \sin^3\cos^3(x)\;dx \amp = \int u^3(1-u^2)\;du</mrow>
+                        <mrow> \amp = \frac{u^4}{4} - \frac{u^6}{6} + C</mrow>
+                        <mrow> \amp = \frac{\sin^4(x)}{4} - \frac{\sin^6(x)}{6} + C</mrow>
+                    </md>
+                </p>
+            </solution>
+            <solution>
+                <p>
+                     <md>
+                        <mrow>u \amp = \cos(x)</mrow>
+                        <mrow>du \amp = -\sin(x)\;dx</mrow>
+                        <mrow>\int \sin^3\cos^3(x)\;dx \amp = -\int u^3(1-u^2)\;du</mrow>
+                        <mrow> \amp = -\frac{u^4}{4} + \frac{u^6}{6} + C</mrow>
+                        <mrow> \amp = \frac{\cos^6(x)}{6} - \frac{\cos^4(x)}{4} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -42,6 +90,19 @@
                     <m>\dint \tan^4(x)\sec^4(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \tan(x)</mrow>
+                        <mrow>du \amp = \sec^2(x)\;dx</mrow>
+                        <mrow>\int \tan^4(x) \sec^4(x)\;dx \amp = \int \tan^4(x) (\tan^2(x)+1)\sec^2(x)\;dx</mrow>
+                        <mrow> \amp = \int u^4(u^2+1)\;du</mrow>
+                        <mrow> \amp = \int u^6 + u^4 \;du</mrow>
+                        <mrow> \amp = \frac{u^7}{7} + \frac{u^5}{5}+C</mrow>
+                        <mrow> \amp = \frac{\tan^7(x)}{7} + \frac{\tan^5(x)}{5} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -49,6 +110,19 @@
                     <m>\dint \tan^3(x)\sec^3(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \sec(x)</mrow>
+                        <mrow>du \amp = \sec(x)\tan(x)\;dx</mrow>
+                        <mrow>\int \tan^3(x) \sec^3(x)\;dx \amp = \int \sec^2(x)(\sec^2(x)-1)\sec(x)\tan(x)\;dx</mrow>
+                        <mrow> \amp = \int u^2(u^2-1)\;du</mrow>
+                        <mrow> \amp = \int u^4 - u^2\;du</mrow>
+                        <mrow> \amp = \frac{u^5}{5} - \frac{u^3}{3} + C</mrow>
+                        <mrow> \amp = \frac{\sec^5(x)}{5} - \frac{\sec^3(x)}{3} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -56,6 +130,28 @@
                     <m>\dint \tan^3(x)\sec^4(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \tan(x)</mrow>
+                        <mrow>du \amp = \sec^2(x)\;dx</mrow>
+                        <mrow>\int \tan^3(x)\sec^4(x)\;dx \amp = \int u^3(u^2+1)\;du</mrow>
+                        <mrow> \amp = \frac{u^6}{6} + \frac{u^4}{4} + C</mrow>
+                        <mrow> \amp = \frac{\tan^6(x)}{6} + \frac{\tan^4(x)}{4} + C</mrow>
+                    </md>
+                </p>
+            </solution>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \sec(x)</mrow>
+                        <mrow>du \amp = \sec(x)\tan(x)\;dx</mrow>
+                        <mrow>\int \tan^3(x) \sec^4(x)\;du \amp = \int u^3(u^2-1)\;du</mrow>
+                        <mrow> \amp = \frac{u^6}{6} - \frac{u^4}{4} + C</mrow>
+                        <mrow> \amp = \frac{\sec^6(x)}{6} - \frac{\sec^4(x)}{4} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -70,6 +166,18 @@
                     <m>\dint \sin^{3/4}(x)\cos^5(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \sin(x)</mrow>
+                        <mrow>du \amp = \cos(x)\;dx</mrow>
+                        <mrow>\int \sin^{3/4}(x)\cos^5(x)\;dx \amp = \int u^{3/4}(1-u^2)^2\;du</mrow>
+                        <mrow> \amp = \int u^{3/4} - 2u^{11/4} + u^{19/4}\;du </mrow>
+                        <mrow> \amp = \frac{4u^{7/4}}{7} - \frac{8u^{15/4}}{15} + \frac{4u^{23/4}}{23} + C</mrow>
+                        <mrow>  \amp = \frac{4\sin^{7/4}(x)}{7} - \frac{8\sin^{15/4}(x)}{15} + \frac{4\sin^{23/4}(x)}{23} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -77,20 +185,19 @@
                     <m>\dint \tan^5(x)\sec^{-1/2}(x)\;dx</m>
                 </p>
             </statement>
-        </task>
-        <task>
-            <statement>
+            <solution>
                 <p>
-                    <m>\dint \sin^{3/4}(x)\cos^5(x)\;dx</m>
+                    <md>
+                        <mrow>u \amp = \sec(x)</mrow>
+                        <mrow>du \amp = \sec(x)\tan(x)\;dx</mrow>
+                        <mrow>\int \tan^5(x)\sec^{-1/2}(x)\;dx \amp = \int \tan^4(x)\sec^{-3/2}(x)\sec(x)\tan(x)\;dx</mrow>
+                        <mrow> \amp = \int (u^2-1)^2u^{-3/2}\;du</mrow>
+                        <mrow> \amp = \int u^{1/2}-u^{-3/2} \;du</mrow>
+                        <mrow> \amp = \frac{2u^{3/2}}{3} + \frac{2}{u^{1/2}} + C</mrow>
+                        <mrow> \amp = \frac{2\sec^{3/2}(x)}{3} + \frac{2}{\sqrt{\sec(x)}} + C</mrow>
+                    </md>
                 </p>
-            </statement>
-        </task>
-        <task>
-            <statement>
-                <p>
-                    <m>\dint \tan^5(x)\sec^{-1/2}(x)\;dx</m>
-                </p>
-            </statement>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -109,6 +216,14 @@
                     to integrate.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \sin^2(x)\;dx \amp = \frac{1}{2}\int 1-\cos(2x)\;dx</mrow>
+                        <mrow> \amp = \frac{x}{2} - \frac{\sin(2x)}{4} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -121,6 +236,21 @@
                     Check out <xref ref="subsec-SolvingForIntegral" text="title"/>
                 </p>
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \sin(x) \amp v \amp = -\cos(x)</mrow>
+                        <mrow>du \amp = \cos(x)\;dx \amp dv \amp = \sin(x)\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \sin^2(x)\;dx \amp = -\sin(x)\cos(x) + \int \cos^2(x)\;dx </mrow>
+                        <mrow>\int \sin^2(x)\;dx  \amp = -\sin(x)\cos(x) + \int 1 - \sin^2(x)\;dx</mrow>
+                        <mrow>\int \sin^2(x)\;dx  \amp = -\sin(x)\cos(x)+ x -\int \sin^2(x)\;dx</mrow>
+                        <mrow>2\int \sin^2(x)\;dx  \amp = -\sin(x)\cos(x)+x</mrow>
+                        <mrow>\int \sin^2(x)\;dx  \amp = -\frac{\sin(x)\cos(x)}{2} + \frac{x}{2} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -146,6 +276,16 @@
                     to integrate.
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \cos^4(x)\;dx \amp = \int \left(\frac{1 + \cos(2x)}{2}\right)^2\;dx</mrow>
+                        <mrow> \amp = \frac{1}{4}\int 1 + 2\cos(2x) + \cos^2(2x)\;dx</mrow>
+                        <mrow> \amp = \frac{1}{4}\int 1 + 2\cos(2x) + \frac{1}{2} + \frac{\cos(4x)}{2}\;dx</mrow>
+                        <mrow> \amp = \frac{3x}{8} + \frac{\sin(2x)}{4} + \frac{\sin(4x)}{32} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -158,6 +298,37 @@
                     Try picking <m>u=\cos^3(x)</m> and <m>dv=\cos(x)\;dx</m>.
                 </p>
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \cos^3(x) \amp v \amp = \sin(x)</mrow>
+                        <mrow>du \amp = -3\cos^2(x)\sin(x)\;dx \amp dv \amp = \cos(x)\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \cos^4(x)\;dx \amp = \sin(x)\cos^3(x) + 3\int \sin^2(x)\cos^2(x)\;dx</mrow>
+                        <mrow>\int \cos^4(x)\;dx \amp = \sin(x)\cos^3(x) + 3 \int(1-\cos^2(x))\cos^2(x)\;dx</mrow>
+                        <mrow>\int \cos^4(x)\;dx \amp = \sin(x)\cos^3(x) + 3\int \cos^2(x)\;dx - 3\int\cos^4(x)\;dx</mrow>
+                        <mrow>4\int \cos^4(x)\;dx \amp =  \sin(x)\cos^3(x) + 3\int \cos^2(x)\;dx</mrow>
+                        <mrow>\int \cos^4(x)\;dx \amp = \frac{\sin(x)\cos^3(x)}{4} + \frac{3}{4} \int \cos^2(x)\;dx</mrow>
+                    </md>
+                    We can handle <m>\dint \cos^2(x)\;dx</m> in two ways: either use the trig identity, or integration by parts. I'll show integration by parts, since that's what I started with.
+                    <md>
+                        <mrow>u \amp = \cos(x) \amp v \amp = \sin(x)</mrow>
+                        <mrow>du \amp = -\sin(x)\;dx \amp dv \amp = \cos(x)\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \cos^2(x)\;dx \amp = \sin(x)\cos(x) + \int \sin^2(x)\;dx</mrow>
+                        <mrow>\int \cos^2(x)\;dx \amp = \sin(x)\cos(x) + \int 1-\cos^2(x)\;dx</mrow>
+                        <mrow>2\int \cos^2(x)\;dx \amp = \sin(x)\cos(x) + x</mrow>
+                        <mrow>\int \cos^2(x)\;dx \amp = \frac{\sin(x)\cos(x)}{2} + \frac{x}{2} + C</mrow>
+                    </md>
+                    So we can return to our original integral:
+                    <md>
+                        <mrow> \int \cos^4(x)\;dx \amp = \frac{\sin(x)\cos^3(x)}{4} + \frac{3}{4} \int \cos^2(x)\;dx</mrow>
+                        <mrow> \int\cos^4(x)\;dx \amp = \frac{\sin(x)\cos^3(x)}{4} + \frac{3\sin(x)\cos(x)}{8} + \frac{3x}{8} + C </mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -184,6 +355,14 @@
                     Use a Pythagorean Identity to convert this to be written in terms of secant functions.
                 </p>
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \tan^2(x)\;dx \amp = \int \sec^2(x) - 1\;dx</mrow>
+                        <mrow> \amp = \tan(x)-x + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -196,6 +375,21 @@
                     Integration by parts works well here, and it's helpful to know the derivative of <m>\sec(x)</m> and an antiderivative of <m>\sec^2(x)</m>.
                 </p>
             </hint>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \sec(x) \amp v \amp = \tan(x)</mrow>
+                        <mrow>du \amp = \sec(x)\tan(x)\;dx \amp dv \amp = \sec^2(x)\;dx</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \sec^3(x)\;dx \amp = \sec(x)\tan(x) - \int \sec(x)\tan^2(x)\;dx</mrow>
+                        <mrow>\int \sec^3(x)\;dx \amp = \sec(x)\tan(x) - \int \sec(x)(\sec^2(x) - 1)\;dx </mrow>
+                        <mrow>\int \sec^3(x)\;dx \amp = \sec(x)\tan(x) + \int \sec(x)\;dx - \int \sec^3(x)\;dx</mrow>
+                        <mrow>2\int\sec^3(x)\;dx \amp = \sec(x)\tan(x) + \ln|\sec(x)+\tran(x)| + C</mrow>
+                        <mrow> \int \sec^3(x)\;dx \amp = \frac{\sec(x)\tan(x)}{2} + \frac{1}{2}\ln|\sec(x)+\tan(x)|+ C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -208,6 +402,17 @@
                     You can technically use either <m>u=\sec(x)</m> or <m>u=\tan(x)</m> here.
                 </p>
             </hint>
+            <solution>
+                <p>
+                    We'll look at the solution when <m>u=\tan(x)</m> and <m>du=\sec^2(x)\;dx</m>.
+                    <md>
+                        <mrow>\int \tan^5(x) \;dx\amp = \int \frac{u^5}{u^2+1}\;du</mrow>
+                        <mrow> \amp = \int u^3 - u + \frac{u}{u^2+1}\;du</mrow>
+                        <mrow> \amp = \frac{u^4}{4} - \frac{u^2}{2} + \frac{1}{2}\ln(u^2+1) + C</mrow>
+                        <mrow> \amp = \frac{\tan^4(x)}{4} - \frac{\tan^2(x)}{2} + \frac{1}{2}\ln(sec^2(x)) + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -215,6 +420,18 @@
                     <m>\dint \sin^5(x)\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>u \amp = \cos(x)</mrow>
+                        <mrow>du \amp = -\sin(x)\;dx</mrow>
+                        <mrow>\int \sin^5(x)\;dx \amp = -\int (1-u^2)^2\;du</mrow>
+                        <mrow> \amp = -\int u^4-2u^2+1\;du</mrow>
+                        <mrow> \amp = -\frac{u^5}{5} + \frac{2u^3}{3} - u + C</mrow>
+                        <mrow> \amp = - \frac{\cos^5(x)}{5} + \frac{2\cos^3(x)}{3} - \cos(x)+C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
 </exercises>
