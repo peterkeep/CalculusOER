@@ -107,8 +107,8 @@
             <solution>
                 <p>
                     <md>
-                        <mrow>10 \amp 0.2k</mrow>
-                        <mrow>k \amp 50</mrow>
+                        <mrow>10 \amp = 0.2k</mrow>
+                        <mrow>k \amp = 50</mrow>
                     </md>
                 </p>
             </solution>
@@ -140,7 +140,7 @@
                     <md>
                         <mrow>W \amp = \int_{x=0}^{x=-0.2}50x\;dx</mrow>
                         <mrow> \amp = (50x)\bigg|_{x=0}^{x=-0.2}</mrow>
-                        <mrow> \amp -10</mrow>
+                        <mrow> \amp =-10</mrow>
                     </md>
                 </p>
             </solution>
@@ -161,9 +161,9 @@
             <solution>
                 <p>
                     <md>
-                        <mrow>W \amp = \int_{y=0}^{y=2} \frac{1}{4}(2-y)\;dy</mrow>
-                        <mrow> \amp = \left(\frac{y}{2} - \frac{y^2}{8}\right)\bigg|_{y=0}^{y=2}</mrow>
-                        <mrow> \amp = \frac{1}{2}</mrow>
+                        <mrow>W \amp = \rho g \int_{y=0}^{y=2} \frac{1}{4}(2-y)\;dy</mrow>
+                        <mrow> \amp = \rho g \left(\frac{y}{2} - \frac{y^2}{8}\right)\bigg|_{y=0}^{y=2}</mrow>
+                        <mrow> \amp = \frac{\rho g}{2}</mrow>
                     </md>
                 </p>
             </solution>
@@ -177,9 +177,9 @@
             <solution>
                 <p>
                     <md>
-                        <mrow>W \amp = \pi \int_{y=0}^{y=3/2}(3-y)\;dy</mrow>
-                        <mrow> \amp = \pi\left(3y - \frac{y^2}{2}\right)\bigg|_{y=0}^{y=3/2}</mrow>
-                        <mrow> \amp = \frac{27\pi}{8}</mrow>
+                        <mrow>W \amp = \rho g \pi \int_{y=0}^{y=3/2}(3-y)\;dy</mrow>
+                        <mrow> \amp = \rho g \pi\left(3y - \frac{y^2}{2}\right)\bigg|_{y=0}^{y=3/2}</mrow>
+                        <mrow> \amp = \frac{27\rho g \pi}{8}</mrow>
                     </md>
                 </p>
             </solution>
@@ -197,9 +197,9 @@
                         r(y)=4-\frac{3y}{2}
                     </md>.
                     <md>
-                        <mrow>W \amp = \pi \int_{y=0}^{y=2/3}\left(4-\frac{3y}{2}\right)^2(2-y)\;dy</mrow>
-                        <mrow> \amp = \pi \int_{y=0}^{y=2/3} \left(32 - 40y + \frac{33y}{2}-\frac{9y^3}{4}\right)\;dy</mrow>
-                        <mrow> \amp =\frac{377\pi}{27}</mrow>
+                        <mrow>W \amp = \rho g \pi \int_{y=0}^{y=2/3}\left(4-\frac{3y}{2}\right)^2(2-y)\;dy</mrow>
+                        <mrow> \amp = \rho g \pi \int_{y=0}^{y=2/3} \left(32 - 40y + \frac{33y}{2}-\frac{9y^3}{4}\right)\;dy</mrow>
+                        <mrow> \amp =\frac{377\rho g \pi}{27}</mrow>
                     </md>
                 </p>
             </solution>

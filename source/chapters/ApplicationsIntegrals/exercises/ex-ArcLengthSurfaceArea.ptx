@@ -194,8 +194,8 @@
                         <mrow> \amp = 2\pi \int_{x=1}^{x=3} \left( \frac{x^4}{4} + \frac{1}{8x^2} \right) \sqrt{x^6 + \frac{1}{2} + \frac{1}{16x^6}}\;dx </mrow>
                         <mrow> \amp = 2\pi \int_{x=1}^{x=3} \left( \frac{x^4}{4} + \frac{1}{8x^2} \right) \left( x^3 + \frac{1}{4x^3}\right)\;dx</mrow>
                         <mrow> \amp = 2\pi \int_{x=1}^{x=3} \left( \frac{x^7}{4} + \frac{3x}{16} + \frac{1}{32x^5} \right)\;dx</mrow>
-                        <mrow> \amp = 2\pi \left( \frac{x^8}{32} + \frac{3x^3}{64} - \frac{1}{160x^4} \right)\bigg|_{x=1}^{x=3}</mrow>
-                        <mrow> \amp = 2\pi \left(205 + \frac{39}{32} - \frac{1}{3^4(160)} + \frac{1}{160}\right)</mrow>
+                        <mrow> \amp = 2\pi \left( \frac{x^8}{32} + \frac{3x^2}{32} - \frac{1}{160x^4} \right)\bigg|_{x=1}^{x=3}</mrow>
+                        <mrow> \amp = 2\pi \left(205 + \frac{27}{32} - \frac{1}{3^4(160)} + \frac{1}{160}\right)</mrow>
                     </md>
                 </p>
             </solution>

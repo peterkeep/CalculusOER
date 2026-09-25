@@ -153,7 +153,7 @@
             </statement>
             <solution>
                 <p>
-                    Since <m>y=x^{1/2}+4x^{15}+400</m>, we can write <m>\dydx = \frac{1}{2}y^{-1/2} + 60x^{14}</m>, or:
+                    Since <m>y=x^{1/2}+4x^{15}+400</m>, we can write <m>\dydx = \frac{1}{2}x^{-1/2} + 60x^{14}</m>, or:
                     <md>
                         \dydx = \frac{1}{2\sqrt{x}} + 60x^{14}
                     </md>.
