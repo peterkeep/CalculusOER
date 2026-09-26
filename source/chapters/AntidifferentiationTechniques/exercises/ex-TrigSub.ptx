@@ -31,6 +31,21 @@
                     <m>\dint \frac{x^2}{\sqrt{16-x^2}}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>x \amp = 4\sin(\theta)</mrow>
+                        <mrow>dx \amp = 4\cos(\theta)\;d\theta </mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \frac{x^2}{\sqrt{16-x^2}}\;dx \amp = \int \frac{(16\sin^2(\theta))(4\cos(\theta))}{\sqrt{16-16\sin^2(\theta)}}\;d\theta</mrow>
+                        <mrow> \amp = 16(4)\int \frac{\sin^2(\theta)\cos(\theta)}{\sqrt{16\cos^2(\theta)}}\;d\theta</mrow>
+                        <mrow> \amp = 16 \int \sin^2(\theta)\;d\theta</mrow>
+                        <mrow> \amp = 8\theta - 8\sin(\theta)\cos(\theta)+C</mrow>
+                        <mrow> \amp = 8\sin^{-1}\left(\frac{x}{4}\right) - \frac{x\sqrt{16-x^2}}{2} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -38,6 +53,22 @@
                     <m>\dint \frac{\sqrt{1-x^2}}{x^2}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>x \amp = \sin(\theta)</mrow>
+                        <mrow>dx \amp = \cos(\theta)\;d\theta</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \frac{\sqrt{1-x^2}}{x^2}\;dx \amp = \int \frac{\sqrt{1-\sin^2(\theta)}\cos(\theta)}{\sin^2(\theta)}\;d\theta</mrow>
+                        <mrow> \amp = \int \frac{\sqrt{\cos^2(\theta)}\cos(\theta)}{\sin^2(\theta)}\;d\theta</mrow>
+                        <mrow> \amp = \int \cot^2(\theta)\;d\theta</mrow>
+                        <mrow> \amp = \int \csc^2(\theta)-1 \;d\theta</mrow>
+                        <mrow> \amp = -\cot(\theta)-\theta + C</mrow>
+                        <mrow> \amp = - \frac{\sqrt{1-x^2}}{x} - \sin^{-1}(x) + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -45,6 +76,22 @@
                     <m>\dint \frac{1}{(9x^2+1)^{3/2}}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>x \amp = \frac{\tan(\theta)}{3}</mrow>
+                        <mrow>dx \amp = \frac{\sec^2(\theta)}{3} </mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \frac{1}{(9x^2+1)^{3/2}}\;d\theta \amp = \frac{1}{3} \int \frac{\sec^2(\theta)}{(\tan^2(\theta)+1)^{3/2}}\;d\theta</mrow>
+                        <mrow> \amp = \frac{1}{3} \int \frac{\sec^2(\theta)}{(\sec^2(\theta))^{3/2}}\;d\theta</mrow>
+                        <mrow> \amp = \frac{1}{3} \int \frac{1}{\sec(\theta)}\;d\theta</mrow>\
+                        <mrow> \amp = frac{1}{3} \int \cos(\theta)\;d\theta</mrow>
+                        <mrow> \amp = \frac{\sin(\theta)}{3} + C</mrow>
+                        <mrow> \amp \frac{x}{\sqrt{9x^2+1}} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -52,6 +99,22 @@
                     <m>\dint \frac{\sqrt{x^2-1}}{x}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>x \amp = \sec(\theta)</mrow>
+                        <mrow>dx \amp = \sec(\theta)\tan(\theta)\;d\theta</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \frac{\sqrt{x^2-1}}{x}\;dx \amp \int \frac{\sqrt{\sec^2(\theta)-1} \sec(\theta)\tan(\theta)}{\sec(\theta)}\;d\theta </mrow>
+                        <mrow> \amp = \int \sqrt{\tan^2(\theta)}\tan(\theta)\;d\theta</mrow>
+                        <mrow> \amp = \int \tan^2(\theta)\;d\theta</mrow>
+                        <mrow> \amp = \int \sec^2(\theta)-1 \; d\theta</mrow>
+                        <mrow> \amp = \tan(\theta) - \theta + C</mrow>
+                        <mrow> \amp = \frac{\sqrt{1-x^2}}{x} - \sec^{-1}(x) + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -59,6 +122,21 @@
                     <m>\dint \sqrt{49-x^2}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>x \amp = 7\sin(\theta) </mrow>
+                        <mrow>dx \amp = 7\cos(\theta)\;d\theta </mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \sqrt{46-x^2}\;dx \amp = 7\int \sqrt{49-49\sin^2(\theta)} \cos(\theta)\;d\theta</mrow>
+                        <mrow> \amp = 7 \int \sqrt{49\cos^2(\theta)}\cos(\theta)\;d\theta</mrow>
+                        <mrow> \amp = 49 \int \cos^2(\theta)\;d\theta</mrow>
+                        <mrow> \amp = \frac{49\theta}{2} + \frac{49\sin(\theta)\cos(\theta)}{2} + C</mrow>
+                        <mrow> \amp = \frac{49 \sin^{-1}\left(\frac{x}{7}\right)}{2} + \frac{x\sqrt{49-x^2}}{2} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -66,6 +144,22 @@
                     <m>\dint \frac{1}{x(x^2-1)^{3/2}}\;dx</m> (for <m>x\gt 1</m>)
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>x \amp = \sec(\theta)</mrow>
+                        <mrow>dx \amp = \sec(\theta)\tan(\theta)\;d\theta</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \frac{1}{x(x^2-1)^{3/2}}\;dx \amp = \int \frac{\sec(\theta)\tan(\theta)}{\sec(\theta)(\sec^2(\theta)-1)^{3/2}} \; d\theta</mrow>
+                        <mrow> \amp = \int \frac{\sec(\theta)\tan(\theta)}{\sec(\theta)(\tan^2(\theta))^{3/2}} \; d\theta</mrow>
+                        <mrow> \amp = \int \cot^2(\theta)\;d\theta</mrow>
+                        <mrow> \amp = \int \csc^2(\theta)-1 \;d\theta</mrow>
+                        <mrow> \amp = -\cot(\theta)-\theta + C</mrow>
+                        <mrow> \amp = -\frac{1}{\sqrt{x^2-1}} - \sec^{-1}(x)+C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -73,6 +167,31 @@
                     <m>\dint \frac{x^3}{\sqrt{4+x^2}}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>x \amp = 2\tan(\theta)</mrow>
+                        <mrow>dx \amp = 2\sec^2(\theta)\;d\theta</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \frac{x^3}{\sqrt{4+x^2}}\;dx \amp = \int \frac{16\tan^3(\theta)\sec^2(\theta)}{\sqrt{4+4\tan^2(\theta)}}\;d\theta</mrow>
+                        <mrow> \amp = 16 \int \frac{\tan^3(\theta)\sec^2(\theta)}{\sqrt{4\sec^2(\theta)}}\;d\theta</mrow>
+                        <mrow> \amp = 8 \int \tan^3(\theta)\sec(\theta)\;d\theta</mrow>
+                    </md>
+                    <md>
+                        <mrow>u \amp =\sec(\theta)</mrow>
+                        <mrow>du \amp = \sec(\theta)\tan(\theta)\;d\theta</mrow>
+                    </md>
+                    <md>
+                        <mrow>8 \int \tan^3(\theta)\sec(\theta)\;d\theta \amp = 8 \int \tan^2(\theta)\sec(\theta)\tan(\theta)\;d\theta</mrow>
+                        <mrow> \amp = 8 \int (\sec^2(\theta)-1)\sec(\theta)\tan(\theta)\;d\theta</mrow>
+                        <mrow> \amp =8 \int u^2-1\;du</mrow>
+                        <mrow> \amp = \frac{8u^3}{3} - 8u + C</mrow>
+                        <mrow> \amp = \frac{8\sec^3(\theta)}{3} - 8\sec(\theta) + C</mrow>
+                        <mrow> \amp = \frac{(x^2+4)^{3/2}}{3} - 4\sqrt{x^2+4} + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -80,6 +199,39 @@
                     <m>\dint \frac{x^2}{(x^2+81)^2}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow> x \amp = 9\tan(\theta)</mrow>
+                        <mrow>dx \amp = 9\sec^2(\theta)\;d\theta</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \frac{x^2}{(x^2+81)^2}\;dx \amp = 9^3 \int \frac{\tan^2(\theta)\sec^2(\theta)}{\sqrt{81\tan^2(\theta)+81}} \;d\theta </mrow>
+                        <mrow> \amp = 9^3 \int \frac{\sec^2(\theta)\tan^2(\theta)}{\sqrt{81\sec^2(\theta)}}\;d\theta</mrow>
+                        <mrow> \amp = 81 \int \sec(\theta)\tan^2(\theta)\;d\theta</mrow>
+                    </md>
+                    Let's use integration by parts for this integral. We'll hang on to the for later, but for now we'll just consider:
+                    <md>
+                        \int \sec(\theta)\tan^2(\theta)\;d\theta
+                    </md>.
+                    <md>
+                        <mrow>u \amp = \tan(\theta) \amp v \amp = \sec(\theta)</mrow>
+                        <mrow>du \amp = \sec^2(\theta)\;d\theta \amp dv \amp = \sec(\theta)\tan(\theta)\;d\theta</mrow>
+                    </md>
+                    <md>
+                        <mrow> \int \sec(\theta)\tan^2(\theta)\;d\theta \amp = \sec(\theta)\tan^2(\theta) -  \int \sec^3(\theta)\;d\theta </mrow>
+                        <mrow>  \int \sec(\theta)\tan^2(\theta)\;d\theta \amp =  \sec(\theta)\tan(\theta) -  \int (\tan^2(\theta)+1)\sec(\theta)\;d\theta</mrow>
+                        <mrow> \int \sec(\theta)\tan^2(\theta)\;d\theta \amp =  \sec(\theta)\tan(\theta) -  \int \sec(\theta)\tan^2(\theta)\;d\theta -  \int \sec(\theta)\;d\theta</mrow>
+                        <mrow>2\int \sec(\theta)\tan^2(\theta)\;d\theta \amp = \sec(\theta)\tan(\theta) - \ln|\sec(\theta)+\tan(\theta)| + C</mrow>
+                        <mrow>\int \sec(\theta)\tan^2(\theta)\;d\theta \amp = \frac{1}{2}\sec(\theta)\tan(\theta) - \frac{1}{2}\ln|\sec(\theta) + \tan(\theta) | + C</mrow>
+                    </md>
+                    So:
+                    <md>
+                        <mrow>81 \int \sec(\theta)\tan^2(\theta)\;d\theta \amp = \frac{81}{2}\sec(\theta)\tan(\theta) - \frac{81}{2}\ln|\sec(\theta) + \tan(\theta) | + C</mrow>
+                        <mrow> \amp =\frac{x\sqrt{x^2+81}}{2} - \frac{81}{2}\ln\left|\frac{\sqrt{x^2+81}}{9} + \frac{x}{9} \right| + C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -94,6 +246,30 @@
                     <m>\dint \frac{1}{x^2-8x+62}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\int \frac{1}{x^2-8x+52}\;dx \amp = \int \frac{1}{(x-4)^2+36}\;dx</mrow>
+                    </md>
+                    This isn't necessary, but in order to keep the trig substitution as simple as possible, let's let <m>u=x-4</m>, with <m>du=dx</m>.
+                    <md>
+                        <mrow>\int \frac{1}{(x-4)^2+36}\;dx \amp = \int \frac{1}{u^2+36}\;du</mrow>
+                    </md>
+                    <md>
+                        <mrow>u \amp = 6\tan(\theta)</mrow>
+                        <mrow>du \amp = 6\sec^2(\theta)\;d\theta</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \frac{1}{u^2+36}\;du \amp = 6\int \frac{\sec^2(\theta)}{36\tan^2(\theta)+36}\;d\theta </mrow>
+                        <mrow> \amp = \int \frac{\sec^2(\theta)}{6\sec^2(\theta)}\;d\theta</mrow>
+                        <mrow> \amp = \int \frac{1}{6} d\theta</mrow>
+                        <mrow> \amp = \frac{\theta}{6} + C</mrow>
+                        <mrow> \amp = \frac{1}{6}\tan^{-1}\left(\frac{u}{6}\right) + C</mrow>
+                        <mrow> \amp = \frac{1}{6} \tan^{-1}\left(\frac{x-4}{6}\right) + C</mrow>
+                    </md>
+                    Note that this matches the strategy we developed in <xref ref="thm-GeneralizedInvTan" text="title"/>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -101,6 +277,30 @@
                     <m>\dint \frac{x^2-8x+16}{(-x^2+8x+9)^{3/2}}\;dx</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        \int \frac{x^2-8x+16}{(-x^2+8x+9)^{3/2}}\;dx = \int \frac{(x-4)^2}{(25-(x-4)^2)^{3/2}}\;dx
+                    </md>
+                    Again, we can use the substitution <m>u=x-4</m> with <m>du=dx</m> to keep the work with the trigonometric substitution as simple as possible.
+                    <md>
+                        \int \frac{(x-4)^2}{(25-(x-4)^2)^{3/2}}\;dx = \int \frac{u^2}{(25-u^2)^{3/2}}\;du
+                    </md>
+                    <md>
+                        <mrow>u \amp = 5\sec(\theta)</mrow>
+                        <mrow>du \amp = 5\sec(\theta)\tan(\theta)\;d\theta</mrow>
+                    </md>
+                    <md>
+                        <mrow>\int \frac{u^2}{25-u^2}\;du \amp = 125\int \frac{\sec^3(\theta)\tan(\theta)}{(25-25\sec^2(\theta))^{3/2}} \;d\theta</mrow>
+                        <mrow> \amp = \int \frac{\sec^3(\theta)\tan(\theta)}{\tan^3(\theta)}\;d\theta </mrow>
+                        <mrow> \amp = \int \frac{\sec^3(\theta)}{\tan^2(\theta)}</mrow>
+                        <mrow> \amp = \int \csc(\theta)\cot(\theta)\;d\theta</mrow>
+                        <mrow> \amp = -\csc(\theta)+C</mrow>
+                        <mrow> \amp = - \frac{u}{\sqrt{u^2-25}} + C</mrow>
+                        <mrow> \amp = - \frac{x-4}{\sqrt{x^2 - 8x - 9}}+C</mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
 </exercises>
