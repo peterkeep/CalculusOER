@@ -43,7 +43,7 @@ lang: "en-US",
 <meta name="twitter:description" content="Single-Variable Calculus Topics with Motivating Activities">
 <meta property="og:description" content="Single-Variable Calculus Topics with Motivating Activities">
 <meta name="twitter:card" content="summary_large_image">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.52"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.52"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.53"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.53"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -65,15 +65,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.10';
+eBookConfig.runestone_version = '8.3.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/prefix-runtime.6ad113829064d43a.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.02090e9f6a81e70e.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script defer src="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/coordinator.js" data-iframe-selector="iframe[data-doenet-coordinate]" data-max-live-viewers="3" data-max-concurrent-boots="2" data-shared-core-workers="true"></script><link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -757,7 +757,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="sec-ParametricCurves-2-1">Let’s start with a small deviation from calculus to introduce (or re-introduce) some ideas of how we might define functions and curves. We have been working with functions and graphs of functions for so long, but that might mean that some of the ideas are so engrained that might not even think about them. Let’s remind ourselves as much as possible.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-ParametricCurves-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-FunctionReminder"><h2 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Refresher on Functions.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Refresher on Functions.</span>
 </h2>
 <div class="introduction" id="act-FunctionReminder-2">
 <div class="para" id="act-FunctionReminder-2-1">This  is mostly a discussion activity. There’s not a lot to <em class="emphasis">do</em>, other than think and share your thoughts with others. If you’re not in a classroom setting, this can be hard! Find someone else with a relatively similar math background, and talk about this with them!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-FunctionReminder-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -798,7 +798,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="subsec-ParametricWhatIf-4">Instead of thinking of <span class="process-math">\(y\)</span> as a function output of <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y=f(x)\text{,}\)</span> we’ll think about the vertical component <span class="process-math">\(y\)</span> and the horizontal component <span class="process-math">\(x\)</span> of our curve being defined as functions of <span class="process-math">\(t\text{.}\)</span> Now, instead of <span class="process-math">\(x\)</span> being an independent variable and <span class="process-math">\(y\)</span> being dependent on the value of <span class="process-math">\(x\text{,}\)</span> we have that <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are independent of each other, both dependent on <span class="process-math">\(t\text{,}\)</span> which we often call a <dfn class="terminology">parameter</dfn>. Typically, we think of this parameter as time: <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> both act independently, but change as time marches forward.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-ParametricWhatIf-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def-ParametricCurve"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parametric Curve.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parametric Curve.</span>
 </h3>
 <div class="para logical" id="def-ParametricCurve-2-1">
 <div class="para">A curve is defined <dfn class="terminology">parametrically</dfn> if</div>
@@ -829,7 +829,7 @@ y \amp = g(t)
 <div class="para" id="subsec-ExploringParametricCurves-2">Let’s begin with an actual example and see how the parametric definitions can build the curve.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-ExploringParametricCurves-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-FirstParametricCurve"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Our First Parametric Curve.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Our First Parametric Curve.</span>
 </h3>
 <div class="introduction" id="act-FirstParametricCurve-2">
 <div class="para logical" id="act-FirstParametricCurve-2-1">
@@ -878,7 +878,7 @@ y \amp = 1-t^2
 <div class="para" id="subsec-ExploringParametricCurves-4">This small interactive graph is a nice one, because it highlights one of the important aspects of a parametric curve: <em class="emphasis">motion</em>. A graph of a parametric curve is really a path that a point travels along, which is pretty different from our original interpretation of a graph—the collection of points <span class="process-math">\((x,y)\)</span> where <span class="process-math">\(y=f(x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-ExploringParametricCurves-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def-Orientation"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Orientation.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Orientation.</span>
 </h3>
 <div class="para" id="def-Orientation-2-1">The direction for which a parametric curve is traced when the value of the parameter is increasing is called the <dfn class="terminology">orientation</dfn> of the curve.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-Orientation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -897,7 +897,7 @@ y \amp = 1-t^2
 <div class="para" id="subsec-MoreCurves-2">We could end our section with a list of facts or formulas for different curves that we might recognize, but it will be more fun to explore these and discover them ourselves.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-MoreCurves-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-CircleExploration"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Explore Some Curves.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Explore Some Curves.</span>
 </h3>
 <div class="introduction" id="act-CircleExploration-2">
 <div class="para" id="act-CircleExploration-2-1">We’ll start off with a family of parametric curves, where we can change the functions and hopefully predict some of the curve’s behavior.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-CircleExploration-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1006,7 +1006,7 @@ y \amp = \sin(t)
 <div class="para" id="subsec-EliminatingParameter-3">Typically, this can be done by isolating <span class="process-math">\(t\)</span> in either the function definition for <span class="process-math">\(x\)</span> or <span class="process-math">\(y\text{,}\)</span> and then substituting this new expression for <span class="process-math">\(t\)</span> into the other variable’s function.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-EliminatingParameter-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-EliminateParameter"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Eliminate the Parameter.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Eliminate the Parameter.</span>
 </h3>
 <div class="introduction" id="act-EliminateParameter-2">
 <div class="para logical" id="act-EliminateParameter-2-1">
@@ -1100,7 +1100,7 @@ x \amp = \sqrt{t+1}\\
 </article><div class="autopermalink" aria-hidden="true" data-description="Activity 10.1.7: Eliminate the Parameter"><a tabindex="-1" href="#act-EliminateParameter" title="Copy heading and permalink for Activity 10.1.7: Eliminate the Parameter" aria-label="Copy heading and permalink for Activity 10.1.7: Eliminate the Parameter">🔗</a></div>
 </article>
 <article class="activity project-like" id="act-EliminiateParameter-2"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Eliminate More Parameters.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.8</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Eliminate More Parameters.</span>
 </h3>
 <div class="introduction" id="act-EliminiateParameter-2-2">
 <div class="para" id="act-EliminiateParameter-2-2-1">For each parametrically-defined curve, eliminate the parameter to create a function <span class="process-math">\(y=f(x)\)</span> or <span class="process-math">\(x=f(y)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-EliminiateParameter-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
