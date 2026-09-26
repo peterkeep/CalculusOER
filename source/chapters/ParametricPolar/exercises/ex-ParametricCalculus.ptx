@@ -1,0 +1,156 @@
+<exercises xml:id="ex-ParametricCalculus" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <exercise>
+        <statement>
+            <p>
+                Explain how (and why) we implement the chain rule to find <m>\dydx</m> for the parametric curve:
+                <md>
+                    <mrow>x \amp = f(t)</mrow>
+                    <mrow>y \amp = g(t)</mrow>
+                </md>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the parametric curves below, find the slope of the line tangent to the curve at the indicated value.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    The parametric curve
+                    <md>
+                        <mrow>x \amp = 4-3t^2</mrow>
+                        <mrow>y \amp = 6 + \frac{1}{t}</mrow>
+                    </md>
+                    at <m>t=2</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The parametric curve
+                    <md>
+                        <mrow>x \amp = t-\sin(t)</mrow>
+                        <mrow>y \amp = 1 - \cos(t)</mrow>
+                    </md>
+                    ar <m>t=\frac{3\pi}{4}</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The parametric curve 
+                    <md>
+                        <mrow>x \amp = \sin^3(t)</mrow>
+                        <mrow>y \amp = \cos(t)</mrow>
+                    </md>
+                    at <m>t=\frac{7\pi}{6}</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Why, when we calculate the area under a parametric curve, do we need to consider <m>x'</m>?
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Set up and evaluate a definite integral to calculate the following areas.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    The area bounded by the parametric curve
+                    <md>
+                        <mrow>x \amp = \sin^3(t)</mrow>
+                        <mrow>y \amp = \cos(t)</mrow>
+                    </md>
+                    in the first quadrant and the <m>x</m>-axis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The area bounded underneath the curve
+                    <md>
+                        <mrow>x \amp = \frac{t^2}{10}</mrow>
+                        <mrow>y \amp = 1-\cos(t)</mrow>
+                    </md>
+                    from <m>t=0</m> to <m>t=2\pi</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The area bounded between the parametric curve
+                    <md>
+                        <mrow>x \amp = 5-t + \frac{1}{t+1}</mrow>
+                        <mrow>y \amp = t^2</mrow>
+                    </md>
+                    and the <m>x</m>-axis from <m>t=0</m> to <m>t=1</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Explain how the formula for finding the length of a parametric curve is similar (and different) from the arc length formula in <xref ref="def-ArcLength"/>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Set up an integral representing the length of the following parametric curves.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    The parametric curve
+                    <md>
+                        <mrow>x \amp = \sqrt{t}+1</mrow>
+                        <mrow>y \amp = t^2-t+3</mrow>
+                    </md>
+                    on the interval <m>0\leq t \leq 4</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The parametric curve
+                    <md>
+                        <mrow>x \amp = \cos(t)</mrow>
+                        <mrow>y \amp = \sin(t)</mrow>
+                    </md>
+                    on the interval <m>0\leq t \leq 2\pi</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The parametric curve
+                    <md>
+                        <mrow>x \amp = \cos^3(t)</mrow>
+                        <mrow>y \amp = \sin^3(t)</mrow>
+                    </md>
+                    on the interval <m>\leq t \leq \pi</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>

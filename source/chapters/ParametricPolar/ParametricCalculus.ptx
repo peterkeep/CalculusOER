@@ -251,7 +251,7 @@
                         <md>
                             <mrow>\ell \amp = \sqrt{2}\int_{t=0}^{t=2\pi} \sqrt{1-\cos(t)}\;dt</mrow>
                             <mrow> \amp = 2 \int_{t=0}^{t=2\pi} \sqrt{\frac{1}{2}\left(1-\cos(t)\right)}\;dt</mrow>
-                            <mrow> \amp = 2 \int_{t=0}^{t=2\pi} \sqrt{sin^2\left(\frac{t}{2}\right)}\;dt</mrow>
+                            <mrow> \amp = 2 \int_{t=0}^{t=2\pi} \sqrt{\sin^2\left(\frac{t}{2}\right)}\;dt</mrow>
                             <mrow> \amp = 2 \int_{t=0}^{2\pi} \sin\left(\frac{t}{2}\right)\;dt</mrow>
                             <mrow> \amp = 2 \left(-2\cos\left(\frac{t}{2}\right)\right)\bigg|_{t=0}^{t=2\pi}</mrow>
                             <mrow> \amp = 2(-2 -2)</mrow>
@@ -278,7 +278,7 @@
                             <mrow> \amp = \int_{t=0}^{t=2\pi} r\sqrt{2-2\cos(t)}\;dt </mrow>
                             <mrow> \amp = r\sqrt{2}\int_{t=0}^{t=2\pi} \sqrt{1-\cos(t)}\;dt</mrow>
                             <mrow> \amp = 2r \int_{t=0}^{t=2\pi} \sqrt{\frac{1}{2}\left(1-\cos(t)\right)}\;dt</mrow>
-                            <mrow> \amp = 2r \int_{t=0}^{t=2\pi} \sqrt{sin^2\left(\frac{t}{2}\right)}\;dt</mrow>
+                            <mrow> \amp = 2r \int_{t=0}^{t=2\pi} \sqrt{\sin^2\left(\frac{t}{2}\right)}\;dt</mrow>
                             <mrow> \amp = 2r \int_{t=0}^{2\pi} \sin\left(\frac{t}{2}\right)\;dt</mrow>
                             <mrow> \amp = 2r \left(-2\cos\left(\frac{t}{2}\right)\right)\bigg|_{t=0}^{t=2\pi}</mrow>
                             <mrow> \amp = 2r(-2 -2)</mrow>
@@ -289,4 +289,5 @@
             </task>
         </example>
     </subsection>
+    <xi:include href="./exercises/ex-ParametricCalculus.ptx" />
 </section>
