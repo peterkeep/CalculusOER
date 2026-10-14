@@ -111,7 +111,7 @@
                         <mrow> \amp = \int \tan^2(\theta)\;d\theta</mrow>
                         <mrow> \amp = \int \sec^2(\theta)-1 \; d\theta</mrow>
                         <mrow> \amp = \tan(\theta) - \theta + C</mrow>
-                        <mrow> \amp = \frac{\sqrt{1-x^2}}{x} - \sec^{-1}(x) + C</mrow>
+                        <mrow> \amp = \sqrt{x^2-1} - \sec^{-1}(x) + C</mrow>
                     </md>
                 </p>
             </solution>

@@ -194,14 +194,14 @@
       <assemblage xml:id="strat-RepeatedLinear">
         <title>Repeated Linear Factors</title>
         <p>
-          If a rational function has a repeated linear factor in the denominator in the form <m>(x-k)^n</m>, where m<m>n</m> is some integer greater than 1, then the corresponding partial fractions are
+          If a rational function has a repeated linear factor in the denominator in the form <m>(x-k)^n</m>, where <m>n</m> is some integer greater than 1, then the corresponding partial fractions are
           <md>
             \frac{A_1}{x-k} + \frac{A_2}{(x-k)^2} + ... + \frac{A_n}{(x-k)^n}
           </md>
           where <m>A_1, A_2, ..., A_n</m> are real numbers and <m>A_n\neq 0</m>.
         </p>
         <p>
-          When we antidifferentiate these, we can expect to use the rule and maybe find a logarithm function.
+          When we antidifferentiate these, we can expect to use the power rule and maybe find a logarithm function.
         </p>
       </assemblage>
     </subsubsection>

@@ -221,7 +221,7 @@
                 <ul>
                     <li>
                         <p>
-                            We use the <em>Chain Rule</em> whenever we differentiate something like <m>\dd{}{y}\left(f(y)\right)</m>. We differentiate whatever the function is, and multiply by the derivative of <m>y</m>: <m>f'(y)y'</m>.
+                            We use the <em>Chain Rule</em> whenever we differentiate something like <m>\dd{}{x}\left(f(y)\right)</m>. We differentiate whatever the function is, and multiply by the derivative of <m>y</m>: <m>f'(y)y'</m>.
                         </p>
                         <p>
                             This generalizes more: any time the variable in our derivative notation does not match the variable in the function/term, we need to use the Chain Rule:
