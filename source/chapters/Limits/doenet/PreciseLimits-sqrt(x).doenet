@@ -67,7 +67,7 @@
   Your interval is backwards! Oops!
 </feedback>
 
-<feedback condition="($a &lt; $b) and ($a > 9 or $b &lt; 9)">
+<feedback condition="($a &lt; $b) and ($a >= 9 or $b &leq; 9)">
   Start by constructing an interval <em>around </em> <m>x=9</m>, and then we can display the corresponding <m>y</m>-values.
 </feedback>
 
