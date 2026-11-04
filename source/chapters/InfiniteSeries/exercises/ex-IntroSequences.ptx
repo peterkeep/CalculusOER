@@ -32,6 +32,11 @@
                     <m>\{a_k\} = \left\{\dfrac{1}{k}\right\}_{k=1}^\infty</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\left\{ 1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \frac{1}{5}, \frac{1}{6}, \frac{1}{7}, \frac{1}{8}, ...\right\}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -39,6 +44,11 @@
                     <m>\{b_k\} = \left\{\dfrac{k+2}{k^2+1}\right\}_{k=1}^\infty</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\left\{\frac{3}{2}, \frac{4}{5}, \frac{1}{2}, \frac{6}{17}, \frac{7}{26}, \frac{8}{37}, \frac{9}{50}, \frac{2}{13}, ...\right\}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -46,6 +56,11 @@
                     <m>\{c_k\} = \left\{\sin\left(\dfrac{k\pi}{4}\right)\right\}_{k=0}^\infty</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\left\{0, \frac{1}{\sqrt{2}}, 1, \frac{\sqrt{2}}{2}, 0, -\frac{1}{\sqrt{2}}, -1, -\frac{\sqrt{2}}{2}, ...\right\}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -53,6 +68,11 @@
                      <m>\{d_k\} = \left\{\dfrac{1}{2^k}\right\}_{k=0}^\infty</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\left\{1, \frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \frac{1}{16}, \frac{1}{32}, \frac{1}{64}, \frac{1}{128}, ...\right\}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -60,6 +80,11 @@
                     <m>\{j_k\} = \left\{\dfrac{(-1)^k}{k^2}\right\}_{k=1}^\infty</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\left\{-1, \frac{1}{4}, -\frac{1}{9}, \frac{1}{16}, -\frac{1}{25}, \frac{1}{36}, -\frac{1}{49}, \frac{1}{64}, ...\right\}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -67,6 +92,16 @@
                     <m>\{\ell_k\} = \left\{\dfrac{k+1}{k!}\right\}_{k=0}^\infty</m>
                 </p>
             </statement>
+            <hint>
+                <p>
+                    We'll define <m>n!</m> as <m>n!=n(n-1)(n-2)\cdots(2)(1)</m> and <m>0!=1</m>.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <m>\left\{1, 2, \frac{3}{2}, \frac{2}{3}, \frac{5}{24}, \frac{6}{5!}, \frac{7}{6!}, \frac{8}{7!}, ...\right\}</m>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -81,6 +116,11 @@
                     <m>a_k = \dfrac{a_{k-1}+1}{2}</m>; <m>a_1 = 3</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\left\{ 3, 2, \frac{3}{2}, \frac{5}{4}, \frac{9}{8}, \frac{17}{16}, \frac{33}{32}, \frac{65}{64}, ...\right\}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -88,6 +128,11 @@
                     <m>b_k = \dfrac{2}{b_{k-1}}</m>; <m>b_1 = 4</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\left\{4, \frac{1}{2}, 4, \frac{1}{2}, 4, \frac{1}{2}, 4, \frac{1}{2}, ...\right\}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -95,6 +140,11 @@
                     <m>c_k = 2c_{k-1} - 2</m>; <m>c_1 = 3</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\left\{3, 4, 6, 10, 18, 34, 66, 130, ...\right\} </m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -102,20 +152,41 @@
                     <m>d_k = \dfrac{d_{k-1}}{3}</m>; <m>d_1 = 2</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\left\{2, \frac{2}{3}, \frac{2}{9}, \frac{2}{27}, \frac{2}{3^4}, \frac{2}{3^5}, \frac{2}{3^6}, \frac{2}{3^7}, ...\right\}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
                     <m>j_k = 3(j_{k-1})^2 - 1</m>; <m>j_1 = 1</m>
                 </p>
+                <p>
+                    (For this one, only find the first 6 terms. You'll see why.)
+                </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\left\{1, 2, 11, 362, 393131, 463655949482, ...\right\}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
                 <p>
                     <m>\ell_k = \dfrac{1}{(\ell_{k-1})^2}</m>; <m>\ell_1 = 2</m>
                 </p>
+                <p>
+                    (Again, only find the first 6 terms for this one.)
+                </p>
             </statement>
+            <solution>
+                <p>
+                    <m>\left\{2, \frac{1}{4}, 16, \frac{1}{256}, 65536, \frac{1}{4294967296}, ...\right\}</m>
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -130,6 +201,14 @@
                     <m>\{a_k\} = \{4, 5, 6, 7, ...\}</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <em>Explicit Formula:</em> <m>a_k = k+3</m> for <m>k=1, 2, 3, ...</m>
+                </p>
+                <p>
+                    <em>Recursion Relation:</em> <m>a_1 = 4</m> and <m>a_{k+1} = a_k + 1</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -137,6 +216,14 @@
                     <m>\{b_k\} = \{0, 2, 4, 6, ...\}</m>
                 </p>
             </statement>
+             <solution>
+                <p>
+                    <em>Explicit Formula:</em> <m>b_k = 2k</m> for <m>k=0, 1, 2, ...</m>
+                </p>
+                <p>
+                    <em>Recursion Relation:</em> <m>b_0 = 0</m> and <m>b_{k+1} = b_k + 2</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -144,6 +231,14 @@
                     <m>\{c_k\} = \left\{ \dfrac{3}{4}, \dfrac{1}{2}, \dfrac{1}{3}, \dfrac{2}{9}, ... \right\}</m>
                 </p>
             </statement>
+             <solution>
+                <p>
+                    <em>Explicit Formula:</em> <m>c_k = \dfrac{3}{4}\left(\dfrac{2}{3}\right)^k</m> for <m>k=0, 1, 2, ...</m>
+                </p>
+                <p>
+                    <em>Recursion Relation:</em> <m>c_0 = \dfrac{3}{4}</m> and <m>c_{k+1} = \dfrac{2}{3}\left(a_k\right)</m>.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -151,6 +246,14 @@
                     <m>\{d_k\} = \left\{\dfrac{1}{8}, \dfrac{3}{16}, \dfrac{1}{4}, \dfrac{5}{16}, ...\right\}</m>
                 </p>
             </statement>
+             <solution>
+                <p>
+                    <em>Explicit Formula:</em> <m>d_k = \dfrac{1}{8} + \dfrac{k}{16}</m> for <m>k=0, 1, 2, ...</m>
+                </p>
+                <p>
+                    <em>Recursion Relation:</em> <m>d_0 = \dfrac{1}{8}</m> and <m>d_{k+1} = d_k + \dfrac{1}{16}</m>.
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
@@ -165,6 +268,18 @@
                     <m>\{a_k\} = \left\{ 3 + \dfrac{(-1)^{k+1}}{k} \right\}_{k=1}^\infty</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    We'll consider the even and odd indexed terms separately.
+                </p>
+                <p>
+                    <md>
+                        <mrow>\lim_{k\to\infty} 3 + \frac{1}{k} \amp = 3</mrow>
+                        <mrow>\lim_{k\to\infty} 3 - \frac{1}{k} \amp = 3</mrow>
+                    </md>
+                    So <m>\{a_k\}</m> converges to 3.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -172,6 +287,18 @@
                     <m>\{b_k\} = \left\{ \sqrt[k]{k} \right\}_{k=1}^\infty</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    This limit is a <m>\infty^0</m> indeterminate form.
+                    <md>
+                        <mrow>\lim_{k\to\infty} k^{1/k} \amp \lim_{k\to\infty}e^{\ln\left(k^{1/k}\right)}</mrow>
+                        <mrow> \amp = e^{\lim_{k\to\infty} \frac{\ln(k)}{k}}</mrow>
+                        <mrow> \amp = e^{\lim_{k\to\infty} \frac{1}{k}}</mrow>
+                        <mrow> \amp = e^{0} = 1</mrow>
+                    </md>
+                    So <m>\{b_k\}</m> converges to 1.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -179,6 +306,11 @@
                     <m>\{c_k\} = \left\{ \dfrac{k!}{e^k}\right\}_{k=0}^\infty</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    Using growth rates, we can see that <m>\displaystyle \lim_{k\to\infty}  \dfrac{k!}{e^k} = \infty</m>, so <m>\{c_k\}</m> diverges.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -186,6 +318,20 @@
                     <m>\{d_k\} = \left\{ \left(1+\dfrac{2}{k}\right)^k\right\}_{k=1}^\infty</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    This limit is in the <m>1^\infty</m> indeterminate form.
+                    <md>
+                        <mrow>\lim_{k\to\infty}\left(1 + \frac{2}{k}\right)^k \amp = \lim_{k\to\infty} e^{\ln\left(\left(1+\frac{2}{k}\right)^k\right)}</mrow>
+                        <mrow> \amp = e^{\overbrace{\lim_{k\to\infty} k\ln\left(1+\frac{2}{k}\right)}^L}</mrow>
+                        <mrow>L \amp = \lim_{k\to\infty} \dfrac{\ln\left(1+\frac{2}{k}\right)}{\frac{1}{k}}</mrow>
+                        <mrow> \amp = \lim_{k\to\infty} \frac{\frac{1}{1+2/k}\left(-\frac{2}{k^2}\right)}{-1/k^2}</mrow>
+                        <mrow> \amp = \lim_{k\to\infty} \frac{2}{1+2/k} = 2</mrow>
+                    </md>
+                    So <m>\{d_k\}</m> converges to <m>e^2</m>
+
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -193,6 +339,14 @@
                     <m>\{j_k\} = \left\{ \dfrac{k^3 + 1}{k^2+\ln(k)}\right\}_{k=1}^\infty</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        \lim_{k\to\infty} \dfrac{k^3 + 1}{k^2+\ln(k)} = \infty
+                    </md>
+                    So <m>\{j_k\}</m> diverges.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -200,6 +354,14 @@
                     <m>\{\ell_k\} = \left\{ k\ln\left(1/k\right)\right\}_{k=1}^\infty</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                   <md>
+                    \lim_{k\to\infty} k\ln\left(1/k\right) = (\infty)(-\infty) = -\infty
+                   </md>
+                   So the sequence <m>\{\ell_k\}</m> diverges.
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
