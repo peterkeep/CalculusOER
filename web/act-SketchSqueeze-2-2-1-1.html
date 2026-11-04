@@ -85,5 +85,27 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="DiscoverCalculus.html"><span class="title">Discover Calculus:</span> <span class="subtitle">Single-Variable Calculus Topics with Motivating Activities</span></a></h1>
 <p class="byline">Peter Keep</p>
 </div></div></header><div class="ptx-page"><main class="ptx-main"><div id="ptx-content" class="ptx-content" style="max-width: 1600px"><iframe src="https://www.desmos.com/calculator/tagisgwxw2" id="act-SketchSqueeze-2-2-1-1" width="360" height="540"></iframe></div></main></div>
+<script data-pretext-tools-frame-bridge="true">
+(function () {
+  if (window.__ptxFrameBridge) { return; }
+  window.__ptxFrameBridge = true;
+  function report() {
+    try {
+      parent.postMessage({
+        command: 'ptxFramePath',
+        path: location.pathname + location.search + location.hash
+      }, '*');
+    } catch (e) { /* not framed */ }
+  }
+  report();
+  window.addEventListener('hashchange', report);
+  window.addEventListener('pageshow', report);
+  window.addEventListener('message', function (event) {
+    if (event.data && event.data.command === 'ptxFrameReload') {
+      location.reload();
+    }
+  });
+})();
+</script>
 </body>
 </html>

@@ -43,7 +43,7 @@ lang: "en-US",
 <meta name="twitter:description" content="Single-Variable Calculus Topics with Motivating Activities">
 <meta property="og:description" content="Single-Variable Calculus Topics with Motivating Activities">
 <meta name="twitter:card" content="summary_large_image">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.53"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.53"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.52"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.52"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -65,15 +65,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.3.2';
+eBookConfig.runestone_version = '8.3.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.6ad113829064d43a.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.02090e9f6a81e70e.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
+<script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script defer src="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/coordinator.js" data-iframe-selector="iframe[data-doenet-coordinate]" data-max-live-viewers="3" data-max-concurrent-boots="2" data-shared-core-workers="true"></script><link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -577,6 +577,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-GraphingSequences" class="internal"><span class="title">Graphing Sequences</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-SequenceTerminology" class="internal"><span class="title">Sequence Terminology</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-RecursiveLimits" class="internal"><span class="title">Some Cool Recursive Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-GrowthRatesSequence" class="internal"><span class="title">Growth Rates</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IntroSequences.html#ex-IntroSequences" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
@@ -594,7 +595,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul id="ptx-toc-group-sec-DivergenceTest" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-RelationshipSeqSeries" class="internal"><span class="title">The Relationship Between a Sequence and Series</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-DivergenceTest" class="internal"><span class="title">The Divergence Test</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-GrowthRates" class="internal"><span class="title">Squeeze Theorem and Growth Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-SqueezeTheoremSequence" class="internal"><span class="title">Squeeze Theorem</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DivergenceTest.html#ex-DivergenceTest" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
@@ -728,6 +729,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#subsec-ParametricSlopes" class="internal"><span class="title">Slopes of Tangent Lines</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#subsec-ParametricAreas" class="internal"><span class="title">Areas Bounded by Curves</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#subsec-ParametricArcLengths" class="internal"><span class="title">Arc Lengths</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#ex-ParametricCalculus" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -760,7 +762,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="subsec-SequencesAsFunctions-2">Before we move on to our actual goal of analyzing infinite series, we will construct infinite sequences. The big thing to remember here is that, when we build and analyze these sequences, we are are really building and analyzing functions. We want to keep this idea of sequences as functions in the forefront, since it will help us as we think about accumulating these function values into infinite series.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SequencesAsFunctions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-FirstSequences"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Building our First Sequences.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Building our First Sequences.</span>
 </h3>
 <div class="introduction" id="act-FirstSequences-2">
 <div class="para" id="act-FirstSequences-2-1">We might already have some familiarity with sequences. Here, we’ll focus less on some of the detailed mechanics and just think about these sequences as functions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-FirstSequences-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -788,7 +790,7 @@ eBookConfig.enable_chatcodes =  false;
 </article><div class="autopermalink" aria-hidden="true" data-description="Activity 8.1.1: Building our First Sequences"><a tabindex="-1" href="#act-FirstSequences" title="Copy heading and permalink for Activity 8.1.1: Building our First Sequences" aria-label="Copy heading and permalink for Activity 8.1.1: Building our First Sequences">🔗</a></div>
 </article>
 <article class="definition definition-like" id="def-ExplicitFormula"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Explicit Formula.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Explicit Formula.</span>
 </h3>
 <div class="para" id="def-ExplicitFormula-2-1">An infinite sequence defined using an <dfn class="terminology">explicit formula</dfn> is one where the <span class="process-math">\(k\)</span>th term of the sequence is defined as a function output of <span class="process-math">\(k\text{,}\)</span> the term’s index.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-ExplicitFormula-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
@@ -819,7 +821,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" aria-hidden="true" data-description="Definition 8.1.2: Explicit Formula"><a tabindex="-1" href="#def-ExplicitFormula" title="Copy heading and permalink for Definition 8.1.2: Explicit Formula" aria-label="Copy heading and permalink for Definition 8.1.2: Explicit Formula">🔗</a></div>
 </article>
 <article class="definition definition-like" id="def-RecursionRelation"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Recursion Relation.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Recursion Relation.</span>
 </h3>
 <div class="para" id="def-RecursionRelation-2-1">A sequence is defined using a <dfn class="terminology">recursion relation</dfn> is one where the <span class="process-math">\(k\)</span>th term of the sequence is defined as a function output of the previous term, the <span class="process-math">\((k-1)\)</span>st term. The sequence also needs some initial term to base the subsequent terms from.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-RecursionRelation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
@@ -830,7 +832,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="subsec-SequencesAsFunctions-6">These definitions are relatively limited. You might, for instance, know of a <em class="emphasis">very</em> famous sequence that is defined recursively by having each term being the sum of the <em class="emphasis">two</em> previous terms. Our study of sequences will be brief and will be leading us towards infinite series, so there are a lot of nuances about sequences that we will skip.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SequencesAsFunctions-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-FirstSequencesAgain"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Returning to our First Sequences.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Returning to our First Sequences.</span>
 </h3>
 <div class="introduction" id="act-FirstSequencesAgain-2">
 <div class="para" id="act-FirstSequencesAgain-2-1">Let’s return back to the four sequences we created in <a href="sec-IntroSequences.html#act-FirstSequences" class="xref" data-knowl="./knowl/xref/act-FirstSequences.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.1.1: Building our First Sequences">Activity 8.1.1</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-FirstSequencesAgain-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -848,7 +850,7 @@ eBookConfig.enable_chatcodes =  false;
 </article><div class="autopermalink" aria-hidden="true" data-description="Activity 8.1.4: Returning to our First Sequences"><a tabindex="-1" href="#act-FirstSequencesAgain" title="Copy heading and permalink for Activity 8.1.4: Returning to our First Sequences" aria-label="Copy heading and permalink for Activity 8.1.4: Returning to our First Sequences">🔗</a></div>
 </article>
 <article class="example example-like" id="ex-PracticeWritingTerms"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Writing some Terms.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Writing some Terms.</span>
 </h3>
 <div class="introduction" id="ex-PracticeWritingTerms-2">
 <div class="para" id="ex-PracticeWritingTerms-2-1">For each of the following sequences, write out the first handful of terms. There isn’t a set amount, but you should write out enough to get a feel for the sequence structure and how the different ways of defining the sequences work. In each, you can start the index <span class="process-math">\(k\)</span> at 1 and count upwards (<span class="process-math">\(k=1,2,3,...\)</span>).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-PracticeWritingTerms-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -880,7 +882,7 @@ eBookConfig.enable_chatcodes =  false;
 </article><div class="autopermalink" aria-hidden="true" data-description="Example 8.1.5: Practice Writing some Terms"><a tabindex="-1" href="#ex-PracticeWritingTerms" title="Copy heading and permalink for Example 8.1.5: Practice Writing some Terms" aria-label="Copy heading and permalink for Example 8.1.5: Practice Writing some Terms">🔗</a></div>
 </article>
 <article class="activity project-like" id="act-DescribingSequences"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Describing These Sequences.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Describing These Sequences.</span>
 </h3>
 <div class="introduction" id="act-DescribingSequences-2">
 <div class="para" id="act-DescribingSequences-2-1">Let’s look at the sequences from <a href="sec-IntroSequences.html#ex-PracticeWritingTerms" class="xref" data-knowl="./knowl/xref/ex-PracticeWritingTerms.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 8.1.5: Practice Writing some Terms">Example 8.1.5</a>. Go through the following tasks for each sequence.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-DescribingSequences-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -914,7 +916,7 @@ eBookConfig.enable_chatcodes =  false;
 </article><div class="autopermalink" aria-hidden="true" data-description="Activity 8.1.6: Describing These Sequences"><a tabindex="-1" href="#act-DescribingSequences" title="Copy heading and permalink for Activity 8.1.6: Describing These Sequences" aria-label="Copy heading and permalink for Activity 8.1.6: Describing These Sequences">🔗</a></div>
 </article>
 <article class="activity project-like" id="act-WriteSequences"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Write the Sequence Rules.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Write the Sequence Rules.</span>
 </h3>
 <div class="introduction" id="act-WriteSequences-2">
 <div class="para" id="act-WriteSequences-2-1">We’ll look at some sequences by writing out the first handful of terms. From there, our goal is to write out more terms and eventually define each sequence fully.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-WriteSequences-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1103,7 +1105,7 @@ a_k = \frac{k}{k^2+1} \text{ for } k = 0, 1, 2, ...
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SequenceTerminology-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def-SequenceDirection"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.10</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Direction of a Sequence.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Direction of a Sequence.</span>
 </h3>
 <div class="para" id="def-SequenceDirection-2-1">We say that a sequence <span class="process-math">\(\{a_k\}_{k=1}^\infty\)</span> is <dfn class="terminology">increasing</dfn> if, for all <span class="process-math">\(k=1,2,3...\text{,}\)</span> <span class="process-math">\(a_{k+1}\gt a_k\text{.}\)</span> If <span class="process-math">\(a_{k+1}\geq a_k\)</span> for all <span class="process-math">\(k=1,2,3,...\)</span> then we say that <span class="process-math">\(\{a_k\}\)</span> is <dfn class="terminology">non-decreasing</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-SequenceDirection-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
@@ -1120,7 +1122,7 @@ a_k = \frac{k}{k^2+1} \text{ for } k = 0, 1, 2, ...
 <div class="para" id="subsec-SequenceTerminology-5">We could think about the corresponding continuous function (the one plotted in <a href="sec-IntroSequences.html#fig-FunctionSequence-2" class="xref" data-knowl="./knowl/xref/fig-FunctionSequence-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.1.9">Figure 8.1.9</a>) and find the point at which our function starts decreasing: we just need to refer back to <a href="sec-IncreasingDecreasing.html#thm-FirstDerivativeTest" class="xref" data-knowl="./knowl/xref/thm-FirstDerivativeTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.2.8: First Derivative Test">Theorem 4.2.8 First Derivative Test</a> to find the interval(s) for which <span class="process-math">\(f(x)=\dfrac{x}{x^2+1}\)</span> decreases.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SequenceTerminology-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def-Monotonic"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.11</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Monotonic Sequences.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Monotonic Sequences.</span>
 </h3>
 <div class="para" id="def-Monotonic-2-1">For the sequence <span class="process-math">\(\{a_k\}_{k=1}^\infty\text{,}\)</span> we say that it is <dfn class="terminology">monotonic</dfn> if the sequence is either non-increasing or non-decreasing.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-Monotonic-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1129,7 +1131,7 @@ a_k = \frac{k}{k^2+1} \text{ for } k = 0, 1, 2, ...
 <div class="para" id="subsec-SequenceTerminology-7">We can, again, include a little modifier to talk about a sequence being <dfn class="terminology">eventually monotonic</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SequenceTerminology-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def-Bounded"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.12</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Bounded Sequences.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Bounded Sequences.</span>
 </h3>
 <div class="para" id="def-Bounded-2-1">We say that a sequence <span class="process-math">\(\{a_k\}_{k=1}^\infty\)</span> is <dfn class="terminology">bounded below</dfn> if there is some real number <span class="process-math">\(M\)</span> such that <span class="process-math">\(a_k\geq M\)</span> for all <span class="process-math">\(k=1,2,3,...\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-Bounded-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
@@ -1142,14 +1144,14 @@ a_k = \frac{k}{k^2+1} \text{ for } k = 0, 1, 2, ...
 <div class="para" id="subsec-SequenceTerminology-9">Lastly, we’ll focus on the end-behavior of a sequence. We’ll think about convergence of a sequence in the same way that we did for <a href="sec-ImproperIntegrals.html" class="internal" title="Section 7.1: Improper Integrals">Improper Integrals</a>: does the limit exist?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SequenceTerminology-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def-SequenceConvergence"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.13</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sequence Convergence.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sequence Convergence.</span>
 </h3>
 <div class="para" id="def-SequenceConvergence-2-1">For the sequence <span class="process-math">\(\{a_k\}\text{,}\)</span> if <span class="process-math">\(L\)</span> is some real number and <span class="process-math">\(\lim_{k\to\infty}a_k = L\text{,}\)</span> the we say that the sequence <span class="process-math">\(\{a_k\}\)</span> <dfn class="terminology">converges</dfn> to <span class="process-math">\(L\text{.}\)</span> If this limit does not exist, we say that the sequence <span class="process-math">\(\{a_k\}\)</span> <dfn class="terminology">diverges</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-SequenceConvergence-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Definition 8.1.13: Sequence Convergence"><a tabindex="-1" href="#def-SequenceConvergence" title="Copy heading and permalink for Definition 8.1.13: Sequence Convergence" aria-label="Copy heading and permalink for Definition 8.1.13: Sequence Convergence">🔗</a></div>
 </article>
 <article class="theorem theorem-like" id="thm-MonotoneConvergence"><h3 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.14</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Monotone Convergence Theorem.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Monotone Convergence Theorem.</span>
 </h3>
 <div class="para" id="thm-MonotoneConvergence-2-1">If <span class="process-math">\(\{a_k\}\)</span> is a sequence that is both monotonic and bounded, then it must converge.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm-MonotoneConvergence-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1305,6 +1307,77 @@ a_{k+1} - a_k \amp = 2(a_k)^2 - a_k\\
 </article><div class="autopermalink" aria-hidden="true" data-description="Example 8.1.16"><a tabindex="-1" href="#ex-FunRecursive" title="Copy heading and permalink for Example 8.1.16" aria-label="Copy heading and permalink for Example 8.1.16">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Some Cool Recursive Examples"><a tabindex="-1" href="#subsec-RecursiveLimits" title="Copy heading and permalink for Subsection: Some Cool Recursive Examples" aria-label="Copy heading and permalink for Subsection: Some Cool Recursive Examples">🔗</a></div>
 </section>
+<section class="subsection" id="subsec-GrowthRatesSequence">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Growth Rates</span>
+</h2>
+<div class="para logical" id="subsec-GrowthRatesSequence-2">
+<div class="para">Lastly, we can notice now that <a href="sec-LHopitalsRule.html#thm-LHopitalsRule" class="xref" data-knowl="./knowl/xref/thm-LHopitalsRule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.7.2: L’Hôpital’s Rule">L’Hôpital’s Rule</a> can be difficult to apply, especially since the functions we’re working with are not required to be differentiable. For instance, how could we consider the sequence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-LHopitalsRule.html" id="subsec-GrowthRatesSequence-2-2">
+\begin{equation*}
+\left\{\frac{k!}{3^k}\right\}_{k=0}^{\infty}
+\end{equation*}
+</div>
+<div class="para">and think about the limit</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm-LHopitalsRule.html" id="subsec-GrowthRatesSequence-2-3">
+\begin{equation*}
+\lim_{k\to\infty} \frac{k!}{3^k}\text{?}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-GrowthRatesSequence-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-GrowthRatesSequence-3" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para logical" id="subsec-GrowthRatesSequence-3-1">
+<div class="para">The factorial function, <span class="process-math">\(k!\text{,}\)</span> is formally defined as a recursive function, where <span class="process-math">\(0!=1\)</span> and <span class="process-math">\(n!=n(n-1)!\text{.}\)</span> More informally, this really means that a factorial really tells us to multiply the integer by all of the positive integers less than it. So:</div>
+<div class="displaymath process-math" id="subsec-GrowthRatesSequence-3-1-4">
+\begin{equation*}
+7! = 7(6)(5)(4)(3)(2)(1)\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-GrowthRatesSequence-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GrowthRatesSequence-3-2">We define <span class="process-math">\(0!=1\)</span> for convenience, but a nice explanation of why we might do that is based on counting arrangements.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-GrowthRatesSequence-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GrowthRatesSequence-3-3">If we were to arrange 3 items on a shelf, we could count the number of total arrangements by thinking about how many options we have to place the first item on the shelf (3) multiplied by how many options we have for the second item (only 2 remaining) and then how many options we have for the last item (once we’ve placed the other two, we only have 1 option). So the number of arrangements is <span class="process-math">\(3! = 3(2)(1)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-GrowthRatesSequence-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GrowthRatesSequence-3-4">How many ways can you arrange an empty shelf?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-GrowthRatesSequence-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<div class="para" id="subsec-GrowthRatesSequence-4">Because we can’t think about the derivative of <span class="process-math">\(k!\)</span> (since the function is not continuous, and thus not differentiable in the traditional sense), we need to consider this limit in a different way. We can instead appeal to <dfn class="terminology">growth rates</dfn> of these functions: that is, the rate at which these functions approach infinity.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-GrowthRatesSequence-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="assemblage assemblage-like" id="strat-GrowthRates"><h3 class="heading"><span class="title">Growth Rates of Functions.</span></h3>
+<div class="para logical" id="strat-GrowthRates-2">
+<div class="para">If <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> are real numbers with <span class="process-math">\(0\lt m\lt n\text{,}\)</span> then we can arrange the growth rates of the following functions from “slow” to “fast:”</div>
+<div class="displaymath process-math" id="strat-GrowthRates-2-6">
+\begin{equation*}
+\ln(k)\lt\lt k^m \lt\lt k^m\ln(k) \lt\lt k^n \lt \lt m^k \lt \lt n^k \lt \lt k! \lt\lt k^k
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#strat-GrowthRates-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Assemblage: Growth Rates of Functions"><a tabindex="-1" href="#strat-GrowthRates" title="Copy heading and permalink for Assemblage: Growth Rates of Functions" aria-label="Copy heading and permalink for Assemblage: Growth Rates of Functions">🔗</a></div>
+</article>
+<div class="para logical" id="subsec-GrowthRatesSequence-6">
+<div class="para">So, returning to our sequence <span class="process-math">\(\left\{\dfrac{k!}{3^k}\right\}_{k=0}^\infty
+\text{,}\)</span> we can see that</div>
+<div class="displaymath process-math" id="subsec-GrowthRatesSequence-6-2">
+\begin{equation*}
+\lim_{k\to\infty} \frac{k!}{3^k} = \infty
+\end{equation*}
+</div>
+<div class="para">since <span class="process-math">\(k!\)</span> has a “faster” growth rate than <span class="process-math">\(3^k\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-GrowthRatesSequence-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="subsec-GrowthRatesSequence-7"><h3 class="heading">
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.1.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="subsec-GrowthRatesSequence-7-1">It’s worth investigating this yourself! Try to convince yourself that you understand <em class="emphasis">why</em> exponentials grow “slower” than factorials. Why does <span class="process-math">\(k^k\)</span> have a “faster” growth rate than <span class="process-math">\(k!\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-GrowthRatesSequence-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Note 8.1.17"><a tabindex="-1" href="#subsec-GrowthRatesSequence-7" title="Copy heading and permalink for Note 8.1.17" aria-label="Copy heading and permalink for Note 8.1.17">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Growth Rates"><a tabindex="-1" href="#subsec-GrowthRatesSequence" title="Copy heading and permalink for Subsection: Growth Rates" aria-label="Copy heading and permalink for Subsection: Growth Rates">🔗</a></div>
+</section>
 <section class="exercises" id="ex-IntroSequences">
 <h2 class="heading hide-type">
 <span class="type">Practice Problems</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
@@ -1333,11 +1406,29 @@ a_{k+1} - a_k \amp = 2(a_k)^2 - a_k\\
 <div class="para" id="ex-IntroSequences-4-2-1-1">
 <span class="process-math">\(\{a_k\} = \left\{\dfrac{1}{k}\right\}_{k=1}^\infty\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-IntroSequences-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-4-2-2-1">
+<span class="process-math">\(\left\{ 1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \frac{1}{5}, \frac{1}{6}, \frac{1}{7}, \frac{1}{8}, ...\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.a.1"><a tabindex="-1" href="#ex-IntroSequences-4-2-2" title="Copy heading and permalink for Solution 4.a.1" aria-label="Copy heading and permalink for Solution 4.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.a"><a tabindex="-1" href="#ex-IntroSequences-4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-IntroSequences-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ex-IntroSequences-4-3-1-1">
 <span class="process-math">\(\{b_k\} = \left\{\dfrac{k+2}{k^2+1}\right\}_{k=1}^\infty\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-IntroSequences-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-4-3-2-1">
+<span class="process-math">\(\left\{\frac{3}{2}, \frac{4}{5}, \frac{1}{2}, \frac{6}{17}, \frac{7}{26}, \frac{8}{37}, \frac{9}{50}, \frac{2}{13}, ...\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.b.1"><a tabindex="-1" href="#ex-IntroSequences-4-3-2" title="Copy heading and permalink for Solution 4.b.1" aria-label="Copy heading and permalink for Solution 4.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.b"><a tabindex="-1" href="#ex-IntroSequences-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
 </article>
@@ -1345,11 +1436,29 @@ a_{k+1} - a_k \amp = 2(a_k)^2 - a_k\\
 <div class="para" id="ex-IntroSequences-4-4-1-1">
 <span class="process-math">\(\{c_k\} = \left\{\sin\left(\dfrac{k\pi}{4}\right)\right\}_{k=0}^\infty\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-IntroSequences-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-4-4-2-1">
+<span class="process-math">\(\left\{0, \frac{1}{\sqrt{2}}, 1, \frac{\sqrt{2}}{2}, 0, -\frac{1}{\sqrt{2}}, -1, -\frac{\sqrt{2}}{2}, ...\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.c.1"><a tabindex="-1" href="#ex-IntroSequences-4-4-2" title="Copy heading and permalink for Solution 4.c.1" aria-label="Copy heading and permalink for Solution 4.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.c"><a tabindex="-1" href="#ex-IntroSequences-4-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-IntroSequences-4-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="ex-IntroSequences-4-5-1-1">
 <span class="process-math">\(\{d_k\} = \left\{\dfrac{1}{2^k}\right\}_{k=0}^\infty\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-IntroSequences-4-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-4-5-2-1">
+<span class="process-math">\(\left\{1, \frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \frac{1}{16}, \frac{1}{32}, \frac{1}{64}, \frac{1}{128}, ...\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.d.1"><a tabindex="-1" href="#ex-IntroSequences-4-5-2" title="Copy heading and permalink for Solution 4.d.1" aria-label="Copy heading and permalink for Solution 4.d.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.d"><a tabindex="-1" href="#ex-IntroSequences-4-5" title="Copy heading and permalink for Task 4.d" aria-label="Copy heading and permalink for Task 4.d">🔗</a></div>
 </article>
@@ -1357,11 +1466,35 @@ a_{k+1} - a_k \amp = 2(a_k)^2 - a_k\\
 <div class="para" id="ex-IntroSequences-4-6-1-1">
 <span class="process-math">\(\{j_k\} = \left\{\dfrac{(-1)^k}{k^2}\right\}_{k=1}^\infty\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-IntroSequences-4-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-4-6-2-1">
+<span class="process-math">\(\left\{-1, \frac{1}{4}, -\frac{1}{9}, \frac{1}{16}, -\frac{1}{25}, \frac{1}{36}, -\frac{1}{49}, \frac{1}{64}, ...\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.e.1"><a tabindex="-1" href="#ex-IntroSequences-4-6-2" title="Copy heading and permalink for Solution 4.e.1" aria-label="Copy heading and permalink for Solution 4.e.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.e"><a tabindex="-1" href="#ex-IntroSequences-4-6" title="Copy heading and permalink for Task 4.e" aria-label="Copy heading and permalink for Task 4.e">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-IntroSequences-4-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
 <div class="para" id="ex-IntroSequences-4-7-1-1">
 <span class="process-math">\(\{\ell_k\} = \left\{\dfrac{k+1}{k!}\right\}_{k=0}^\infty\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-IntroSequences-4-7-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-4-7-2-1">We’ll define <span class="process-math">\(n!\)</span> as <span class="process-math">\(n!=n(n-1)(n-2)\cdots(2)(1)\)</span> and <span class="process-math">\(0!=1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 4.f.1"><a tabindex="-1" href="#ex-IntroSequences-4-7-2" title="Copy heading and permalink for Hint 4.f.1" aria-label="Copy heading and permalink for Hint 4.f.1">🔗</a></div>
+</div></details>
+<details id="ex-IntroSequences-4-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-4-7-3-1">
+<span class="process-math">\(\left\{1, 2, \frac{3}{2}, \frac{2}{3}, \frac{5}{24}, \frac{6}{5!}, \frac{7}{6!}, \frac{8}{7!}, ...\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-4-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.f.1"><a tabindex="-1" href="#ex-IntroSequences-4-7-3" title="Copy heading and permalink for Solution 4.f.1" aria-label="Copy heading and permalink for Solution 4.f.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.f"><a tabindex="-1" href="#ex-IntroSequences-4-7" title="Copy heading and permalink for Task 4.f" aria-label="Copy heading and permalink for Task 4.f">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Exercise 4"><a tabindex="-1" href="#ex-IntroSequences-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
@@ -1375,11 +1508,29 @@ a_{k+1} - a_k \amp = 2(a_k)^2 - a_k\\
 <div class="para" id="ex-IntroSequences-5-2-1-1">
 <span class="process-math">\(a_k = \dfrac{a_{k-1}+1}{2}\text{;}\)</span> <span class="process-math">\(a_1 = 3\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-IntroSequences-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-5-2-2-1">
+<span class="process-math">\(\left\{ 3, 2, \frac{3}{2}, \frac{5}{4}, \frac{9}{8}, \frac{17}{16}, \frac{33}{32}, \frac{65}{64}, ...\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.a.1"><a tabindex="-1" href="#ex-IntroSequences-5-2-2" title="Copy heading and permalink for Solution 5.a.1" aria-label="Copy heading and permalink for Solution 5.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 5.a"><a tabindex="-1" href="#ex-IntroSequences-5-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-IntroSequences-5-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ex-IntroSequences-5-3-1-1">
 <span class="process-math">\(b_k = \dfrac{2}{b_{k-1}}\text{;}\)</span> <span class="process-math">\(b_1 = 4\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-IntroSequences-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-5-3-2-1">
+<span class="process-math">\(\left\{4, \frac{1}{2}, 4, \frac{1}{2}, 4, \frac{1}{2}, 4, \frac{1}{2}, ...\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.b.1"><a tabindex="-1" href="#ex-IntroSequences-5-3-2" title="Copy heading and permalink for Solution 5.b.1" aria-label="Copy heading and permalink for Solution 5.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 5.b"><a tabindex="-1" href="#ex-IntroSequences-5-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div>
 </article>
@@ -1387,23 +1538,63 @@ a_{k+1} - a_k \amp = 2(a_k)^2 - a_k\\
 <div class="para" id="ex-IntroSequences-5-4-1-1">
 <span class="process-math">\(c_k = 2c_{k-1} - 2\text{;}\)</span> <span class="process-math">\(c_1 = 3\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-IntroSequences-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-5-4-2-1">
+<span class="process-math">\(\left\{3, 4, 6, 10, 18, 34, 66, 130, ...\right\} \)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.c.1"><a tabindex="-1" href="#ex-IntroSequences-5-4-2" title="Copy heading and permalink for Solution 5.c.1" aria-label="Copy heading and permalink for Solution 5.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 5.c"><a tabindex="-1" href="#ex-IntroSequences-5-4" title="Copy heading and permalink for Task 5.c" aria-label="Copy heading and permalink for Task 5.c">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-IntroSequences-5-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="ex-IntroSequences-5-5-1-1">
 <span class="process-math">\(d_k = \dfrac{d_{k-1}}{3}\text{;}\)</span> <span class="process-math">\(d_1 = 2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-IntroSequences-5-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-5-5-2-1">
+<span class="process-math">\(\left\{2, \frac{2}{3}, \frac{2}{9}, \frac{2}{27}, \frac{2}{3^4}, \frac{2}{3^5}, \frac{2}{3^6}, \frac{2}{3^7}, ...\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.d.1"><a tabindex="-1" href="#ex-IntroSequences-5-5-2" title="Copy heading and permalink for Solution 5.d.1" aria-label="Copy heading and permalink for Solution 5.d.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 5.d"><a tabindex="-1" href="#ex-IntroSequences-5-5" title="Copy heading and permalink for Task 5.d" aria-label="Copy heading and permalink for Task 5.d">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-IntroSequences-5-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <div class="para" id="ex-IntroSequences-5-6-1-1">
 <span class="process-math">\(j_k = 3(j_{k-1})^2 - 1\text{;}\)</span> <span class="process-math">\(j_1 = 1\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ex-IntroSequences-5-6-1-2">(For this one, only find the first 6 terms. You’ll see why.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-IntroSequences-5-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-5-6-2-1">
+<span class="process-math">\(\left\{1, 2, 11, 362, 393131, 463655949482, ...\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.e.1"><a tabindex="-1" href="#ex-IntroSequences-5-6-2" title="Copy heading and permalink for Solution 5.e.1" aria-label="Copy heading and permalink for Solution 5.e.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 5.e"><a tabindex="-1" href="#ex-IntroSequences-5-6" title="Copy heading and permalink for Task 5.e" aria-label="Copy heading and permalink for Task 5.e">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-IntroSequences-5-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
 <div class="para" id="ex-IntroSequences-5-7-1-1">
 <span class="process-math">\(\ell_k = \dfrac{1}{(\ell_{k-1})^2}\text{;}\)</span> <span class="process-math">\(\ell_1 = 2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ex-IntroSequences-5-7-1-2">(Again, only find the first 6 terms for this one.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-IntroSequences-5-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-5-7-2-1">
+<span class="process-math">\(\left\{2, \frac{1}{4}, 16, \frac{1}{256}, 65536, \frac{1}{4294967296}, ...\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-5-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.f.1"><a tabindex="-1" href="#ex-IntroSequences-5-7-2" title="Copy heading and permalink for Solution 5.f.1" aria-label="Copy heading and permalink for Solution 5.f.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 5.f"><a tabindex="-1" href="#ex-IntroSequences-5-7" title="Copy heading and permalink for Task 5.f" aria-label="Copy heading and permalink for Task 5.f">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Exercise 5"><a tabindex="-1" href="#ex-IntroSequences-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
@@ -1417,11 +1608,35 @@ a_{k+1} - a_k \amp = 2(a_k)^2 - a_k\\
 <div class="para" id="ex-IntroSequences-6-2-1-1">
 <span class="process-math">\(\{a_k\} = \{4, 5, 6, 7, ...\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-IntroSequences-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-6-2-2-1">
+<em class="emphasis">Explicit Formula:</em> <span class="process-math">\(a_k = k+3\)</span> for <span class="process-math">\(k=1, 2, 3, ...\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-IntroSequences-6-2-2-2">
+<em class="emphasis">Recursion Relation:</em> <span class="process-math">\(a_1 = 4\)</span> and <span class="process-math">\(a_{k+1} = a_k + 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-6-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.a.1"><a tabindex="-1" href="#ex-IntroSequences-6-2-2" title="Copy heading and permalink for Solution 6.a.1" aria-label="Copy heading and permalink for Solution 6.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 6.a"><a tabindex="-1" href="#ex-IntroSequences-6-2" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-IntroSequences-6-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ex-IntroSequences-6-3-1-1">
 <span class="process-math">\(\{b_k\} = \{0, 2, 4, 6, ...\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-IntroSequences-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-6-3-2-1">
+<em class="emphasis">Explicit Formula:</em> <span class="process-math">\(b_k = 2k\)</span> for <span class="process-math">\(k=0, 1, 2, ...\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-IntroSequences-6-3-2-2">
+<em class="emphasis">Recursion Relation:</em> <span class="process-math">\(b_0 = 0\)</span> and <span class="process-math">\(b_{k+1} = b_k + 2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-6-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.b.1"><a tabindex="-1" href="#ex-IntroSequences-6-3-2" title="Copy heading and permalink for Solution 6.b.1" aria-label="Copy heading and permalink for Solution 6.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 6.b"><a tabindex="-1" href="#ex-IntroSequences-6-3" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div>
 </article>
@@ -1429,11 +1644,35 @@ a_{k+1} - a_k \amp = 2(a_k)^2 - a_k\\
 <div class="para" id="ex-IntroSequences-6-4-1-1">
 <span class="process-math">\(\{c_k\} = \left\{ \dfrac{3}{4}, \dfrac{1}{2}, \dfrac{1}{3}, \dfrac{2}{9}, ... \right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-IntroSequences-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-6-4-2-1">
+<em class="emphasis">Explicit Formula:</em> <span class="process-math">\(c_k = \dfrac{3}{4}\left(\dfrac{2}{3}\right)^k\)</span> for <span class="process-math">\(k=0, 1, 2, ...\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-6-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-IntroSequences-6-4-2-2">
+<em class="emphasis">Recursion Relation:</em> <span class="process-math">\(c_0 = \dfrac{3}{4}\)</span> and <span class="process-math">\(c_{k+1} = \dfrac{2}{3}\left(a_k\right)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-6-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.c.1"><a tabindex="-1" href="#ex-IntroSequences-6-4-2" title="Copy heading and permalink for Solution 6.c.1" aria-label="Copy heading and permalink for Solution 6.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 6.c"><a tabindex="-1" href="#ex-IntroSequences-6-4" title="Copy heading and permalink for Task 6.c" aria-label="Copy heading and permalink for Task 6.c">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-IntroSequences-6-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="ex-IntroSequences-6-5-1-1">
 <span class="process-math">\(\{d_k\} = \left\{\dfrac{1}{8}, \dfrac{3}{16}, \dfrac{1}{4}, \dfrac{5}{16}, ...\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-IntroSequences-6-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-6-5-2-1">
+<em class="emphasis">Explicit Formula:</em> <span class="process-math">\(d_k = \dfrac{1}{8} + \dfrac{k}{16}\)</span> for <span class="process-math">\(k=0, 1, 2, ...\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-6-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-IntroSequences-6-5-2-2">
+<em class="emphasis">Recursion Relation:</em> <span class="process-math">\(d_0 = \dfrac{1}{8}\)</span> and <span class="process-math">\(d_{k+1} = d_k + \dfrac{1}{16}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-6-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.d.1"><a tabindex="-1" href="#ex-IntroSequences-6-5-2" title="Copy heading and permalink for Solution 6.d.1" aria-label="Copy heading and permalink for Solution 6.d.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 6.d"><a tabindex="-1" href="#ex-IntroSequences-6-5" title="Copy heading and permalink for Task 6.d" aria-label="Copy heading and permalink for Task 6.d">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Exercise 6"><a tabindex="-1" href="#ex-IntroSequences-6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div>
@@ -1447,11 +1686,48 @@ a_{k+1} - a_k \amp = 2(a_k)^2 - a_k\\
 <div class="para" id="ex-IntroSequences-7-2-1-1">
 <span class="process-math">\(\{a_k\} = \left\{ 3 + \dfrac{(-1)^{k+1}}{k} \right\}_{k=1}^\infty\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-IntroSequences-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-7-2-2-1">We’ll consider the even and odd indexed terms separately.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-IntroSequences-7-2-2-2">
+<div class="displaymath process-math" id="ex-IntroSequences-7-2-2-2-1">
+\begin{align*}
+\lim_{k\to\infty} 3 + \frac{1}{k} \amp = 3\\
+\lim_{k\to\infty} 3 - \frac{1}{k} \amp = 3
+\end{align*}
+</div>
+<div class="para">So <span class="process-math">\(\{a_k\}\)</span> converges to 3.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.a.1"><a tabindex="-1" href="#ex-IntroSequences-7-2-2" title="Copy heading and permalink for Solution 7.a.1" aria-label="Copy heading and permalink for Solution 7.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 7.a"><a tabindex="-1" href="#ex-IntroSequences-7-2" title="Copy heading and permalink for Task 7.a" aria-label="Copy heading and permalink for Task 7.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-IntroSequences-7-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ex-IntroSequences-7-3-1-1">
 <span class="process-math">\(\{b_k\} = \left\{ \sqrt[k]{k} \right\}_{k=1}^\infty\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-IntroSequences-7-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-IntroSequences-7-3-2-1">
+<div class="para">This limit is a <span class="process-math">\(\infty^0\)</span> indeterminate form.</div>
+<div class="displaymath process-math" id="ex-IntroSequences-7-3-2-1-2">
+\begin{align*}
+\lim_{k\to\infty} k^{1/k} \amp \lim_{k\to\infty}e^{\ln\left(k^{1/k}\right)}\\
+\amp = e^{\lim_{k\to\infty} \frac{\ln(k)}{k}}\\
+\amp = e^{\lim_{k\to\infty} \frac{1}{k}}\\
+\amp = e^{0} = 1
+\end{align*}
+</div>
+<div class="para">So <span class="process-math">\(\{b_k\}\)</span> converges to 1.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.b.1"><a tabindex="-1" href="#ex-IntroSequences-7-3-2" title="Copy heading and permalink for Solution 7.b.1" aria-label="Copy heading and permalink for Solution 7.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 7.b"><a tabindex="-1" href="#ex-IntroSequences-7-3" title="Copy heading and permalink for Task 7.b" aria-label="Copy heading and permalink for Task 7.b">🔗</a></div>
 </article>
@@ -1459,11 +1735,40 @@ a_{k+1} - a_k \amp = 2(a_k)^2 - a_k\\
 <div class="para" id="ex-IntroSequences-7-4-1-1">
 <span class="process-math">\(\{c_k\} = \left\{ \dfrac{k!}{e^k}\right\}_{k=0}^\infty\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-IntroSequences-7-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-IntroSequences-7-4-2-1">Using growth rates, we can see that <span class="process-math">\(\displaystyle \lim_{k\to\infty}  \dfrac{k!}{e^k} = \infty\text{,}\)</span> so <span class="process-math">\(\{c_k\}\)</span> diverges.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.c.1"><a tabindex="-1" href="#ex-IntroSequences-7-4-2" title="Copy heading and permalink for Solution 7.c.1" aria-label="Copy heading and permalink for Solution 7.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 7.c"><a tabindex="-1" href="#ex-IntroSequences-7-4" title="Copy heading and permalink for Task 7.c" aria-label="Copy heading and permalink for Task 7.c">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-IntroSequences-7-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="ex-IntroSequences-7-5-1-1">
 <span class="process-math">\(\{d_k\} = \left\{ \left(1+\dfrac{2}{k}\right)^k\right\}_{k=1}^\infty\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-IntroSequences-7-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-IntroSequences-7-5-2-1">
+<div class="para">This limit is in the <span class="process-math">\(1^\infty\)</span> indeterminate form.</div>
+<div class="displaymath process-math" id="ex-IntroSequences-7-5-2-1-2">
+\begin{align*}
+\lim_{k\to\infty}\left(1 + \frac{2}{k}\right)^k \amp = \lim_{k\to\infty} e^{\ln\left(\left(1+\frac{2}{k}\right)^k\right)}\\
+\amp = e^{\overbrace{\lim_{k\to\infty} k\ln\left(1+\frac{2}{k}\right)}^L}\\
+L \amp = \lim_{k\to\infty} \dfrac{\ln\left(1+\frac{2}{k}\right)}{\frac{1}{k}}\\
+\amp = \lim_{k\to\infty} \frac{\frac{1}{1+2/k}\left(-\frac{2}{k^2}\right)}{-1/k^2}\\
+\amp = \lim_{k\to\infty} \frac{2}{1+2/k} = 2
+\end{align*}
+</div>
+<div class="para">So <span class="process-math">\(\{d_k\}\)</span> converges to <span class="process-math">\(e^2\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.d.1"><a tabindex="-1" href="#ex-IntroSequences-7-5-2" title="Copy heading and permalink for Solution 7.d.1" aria-label="Copy heading and permalink for Solution 7.d.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 7.d"><a tabindex="-1" href="#ex-IntroSequences-7-5" title="Copy heading and permalink for Task 7.d" aria-label="Copy heading and permalink for Task 7.d">🔗</a></div>
 </article>
@@ -1471,11 +1776,41 @@ a_{k+1} - a_k \amp = 2(a_k)^2 - a_k\\
 <div class="para" id="ex-IntroSequences-7-6-1-1">
 <span class="process-math">\(\{j_k\} = \left\{ \dfrac{k^3 + 1}{k^2+\ln(k)}\right\}_{k=1}^\infty\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="ex-IntroSequences-7-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-IntroSequences-7-6-2-1">
+<div class="displaymath process-math" id="ex-IntroSequences-7-6-2-1-1">
+\begin{equation*}
+\lim_{k\to\infty} \dfrac{k^3 + 1}{k^2+\ln(k)} = \infty
+\end{equation*}
+</div>
+<div class="para">So <span class="process-math">\(\{j_k\}\)</span> diverges.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.e.1"><a tabindex="-1" href="#ex-IntroSequences-7-6-2" title="Copy heading and permalink for Solution 7.e.1" aria-label="Copy heading and permalink for Solution 7.e.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 7.e"><a tabindex="-1" href="#ex-IntroSequences-7-6" title="Copy heading and permalink for Task 7.e" aria-label="Copy heading and permalink for Task 7.e">🔗</a></div>
 </article>
 <article class="task exercise-like" id="ex-IntroSequences-7-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
 <div class="para" id="ex-IntroSequences-7-7-1-1">
 <span class="process-math">\(\{\ell_k\} = \left\{ k\ln\left(1/k\right)\right\}_{k=1}^\infty\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-IntroSequences-7-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-IntroSequences-7-7-2-1">
+<div class="displaymath process-math" id="ex-IntroSequences-7-7-2-1-1">
+\begin{equation*}
+\lim_{k\to\infty} k\ln\left(1/k\right) = (\infty)(-\infty) = -\infty
+\end{equation*}
+</div>
+<div class="para">So the sequence <span class="process-math">\(\{\ell_k\}\)</span> diverges.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntroSequences-7-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.f.1"><a tabindex="-1" href="#ex-IntroSequences-7-7-2" title="Copy heading and permalink for Solution 7.f.1" aria-label="Copy heading and permalink for Solution 7.f.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 7.f"><a tabindex="-1" href="#ex-IntroSequences-7-7" title="Copy heading and permalink for Task 7.f" aria-label="Copy heading and permalink for Task 7.f">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Exercise 7"><a tabindex="-1" href="#ex-IntroSequences-7" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div>

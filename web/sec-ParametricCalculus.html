@@ -43,7 +43,7 @@ lang: "en-US",
 <meta name="twitter:description" content="Single-Variable Calculus Topics with Motivating Activities">
 <meta property="og:description" content="Single-Variable Calculus Topics with Motivating Activities">
 <meta name="twitter:card" content="summary_large_image">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.53"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.53"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.52"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.52"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -65,15 +65,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.3.2';
+eBookConfig.runestone_version = '8.3.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.6ad113829064d43a.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.02090e9f6a81e70e.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
+<script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script defer src="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/coordinator.js" data-iframe-selector="iframe[data-doenet-coordinate]" data-max-live-viewers="3" data-max-concurrent-boots="2" data-shared-core-workers="true"></script><link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
@@ -577,6 +577,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-GraphingSequences" class="internal"><span class="title">Graphing Sequences</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-SequenceTerminology" class="internal"><span class="title">Sequence Terminology</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-RecursiveLimits" class="internal"><span class="title">Some Cool Recursive Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroSequences.html#subsec-GrowthRatesSequence" class="internal"><span class="title">Growth Rates</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-IntroSequences.html#ex-IntroSequences" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
@@ -594,7 +595,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul id="ptx-toc-group-sec-DivergenceTest" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-RelationshipSeqSeries" class="internal"><span class="title">The Relationship Between a Sequence and Series</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-DivergenceTest" class="internal"><span class="title">The Divergence Test</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-GrowthRates" class="internal"><span class="title">Squeeze Theorem and Growth Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivergenceTest.html#subsec-SqueezeTheoremSequence" class="internal"><span class="title">Squeeze Theorem</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-DivergenceTest.html#ex-DivergenceTest" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
@@ -728,6 +729,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#subsec-ParametricSlopes" class="internal"><span class="title">Slopes of Tangent Lines</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#subsec-ParametricAreas" class="internal"><span class="title">Areas Bounded by Curves</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#subsec-ParametricArcLengths" class="internal"><span class="title">Arc Lengths</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ParametricCalculus.html#ex-ParametricCalculus" class="internal"><span class="title">Practice Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -792,7 +794,7 @@ y \amp = 1-\cos(t)
 </div>
 <div class="para">If we want to scale the circle to have a generic radius, <span class="process-math">\(r\text{,}\)</span> we can scale the whole thing! 
 <article class="definition definition-like" id="def-cycloid"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Cycloid.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Cycloid.</span>
 </h3>
 <div class="para logical" id="def-cycloid-2-1">
 <div class="para">The cycloid passing through the origin and generated by a circle of radius <span class="process-math">\(r\)</span> rolling along the <span class="process-math">\(x\)</span>-axis from left to right is parameterized as:</div>
@@ -831,7 +833,7 @@ y \amp = r(1-\cos(t))
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-ParametricSlopes-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="thm-ChainRuleRestated"><h3 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Chain Rule (Restated).</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Chain Rule (Restated).</span>
 </h3>
 <div class="para logical" id="thm-ChainRuleRestated-2-1">
 <div class="para">If <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are independent variables and both are functions of some third variable <span class="process-math">\(t\text{,}\)</span> then:</div>
@@ -849,7 +851,7 @@ y \amp = r(1-\cos(t))
 <div class="para" id="subsec-ParametricSlopes-6">Now, let’s revisit the cycloid!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-ParametricSlopes-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-CycloidSlopes"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Slopes on a Cycloid.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Slopes on a Cycloid.</span>
 </h3>
 <div class="introduction" id="act-CycloidSlopes-2">
 <div class="para logical" id="act-CycloidSlopes-2-1">
@@ -916,7 +918,7 @@ dx = x'(t) \;dt
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-ParametricAreas-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="thm-ParametricArea"><h3 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parametric Area.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parametric Area.</span>
 </h3>
 <div class="para logical" id="thm-ParametricArea-2-1">
 <div class="para">For a parametric curve</div>
@@ -937,7 +939,7 @@ y \amp = y(t)
 <div class="autopermalink" aria-hidden="true" data-description="Theorem 10.3.5: Parametric Area"><a tabindex="-1" href="#thm-ParametricArea" title="Copy heading and permalink for Theorem 10.3.5: Parametric Area" aria-label="Copy heading and permalink for Theorem 10.3.5: Parametric Area">🔗</a></div>
 </article>
 <article class="example example-like" id="subsec-ParametricAreas-6"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Area Trapped in the Cycloid.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Area Trapped in the Cycloid.</span>
 </h3>
 <div class="introduction" id="subsec-ParametricAreas-6-2">
 <div class="para logical" id="subsec-ParametricAreas-6-2-1">
@@ -1034,7 +1036,7 @@ y \amp = r(1-\cos(t))
 <div class="para" id="subsec-ParametricArcLengths-2">We have built an arc length formula already in this textbook! Remember: <a href="sec-ArcLengthSurfaceArea.html#def-ArcLength" class="xref" data-knowl="./knowl/xref/def-ArcLength.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 6.5.7: Length of a Curve">Definition 6.5.7 Length of a Curve</a>? Let’s rebuild this integral formula in a way that makes sense for a parametric curve.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-ParametricArcLengths-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-ParametricArcLength"><h3 class="heading">
-<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Building a Parametric Arc Length Formula.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Building a Parametric Arc Length Formula.</span>
 </h3>
 <div class="introduction" id="act-ParametricArcLength-2">
 <div class="para" id="act-ParametricArcLength-2-1">Before we begin, it might be helpful to remind yourself how we build the arclength formula in <a href="sec-ArcLengthSurfaceArea.html" class="internal" title="Section 6.5: Arc Length and Surface Area">Section 6.5 Arc Length and Surface Area</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#act-ParametricArcLength-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1095,7 +1097,7 @@ y \amp = r(1-\cos(t))
 </article><div class="autopermalink" aria-hidden="true" data-description="Activity 10.3.7: Building a Parametric Arc Length Formula"><a tabindex="-1" href="#act-ParametricArcLength" title="Copy heading and permalink for Activity 10.3.7: Building a Parametric Arc Length Formula" aria-label="Copy heading and permalink for Activity 10.3.7: Building a Parametric Arc Length Formula">🔗</a></div>
 </article>
 <article class="definition definition-like" id="def-ParametricArcLength"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.8</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parametric Arc Length.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parametric Arc Length.</span>
 </h3>
 <div class="para logical" id="def-ParametricArcLength-2-1">
 <div class="para">If the functions <span class="process-math">\(x(t)\)</span> and <span class="process-math">\(y(t)\)</span> are continuous on <span class="process-math">\([a,b]\)</span> and differentiable on <span class="process-math">\((a,b)\text{,}\)</span> the the length of the parametric curve</div>
@@ -1116,7 +1118,7 @@ y \amp = y(t)
 <div class="autopermalink" aria-hidden="true" data-description="Definition 10.3.8: Parametric Arc Length"><a tabindex="-1" href="#def-ParametricArcLength" title="Copy heading and permalink for Definition 10.3.8: Parametric Arc Length" aria-label="Copy heading and permalink for Definition 10.3.8: Parametric Arc Length">🔗</a></div>
 </article>
 <article class="example example-like" id="subsec-ParametricArcLengths-5"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.9</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Length of a Cycloid Arc.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Length of a Cycloid Arc.</span>
 </h3>
 <div class="introduction" id="subsec-ParametricArcLengths-5-2">
 <div class="para logical" id="subsec-ParametricArcLengths-5-2-1">
@@ -1177,7 +1179,7 @@ y \amp = 1-\cos(t)
 \begin{align*}
 \ell \amp = \sqrt{2}\int_{t=0}^{t=2\pi} \sqrt{1-\cos(t)}\;dt\\
 \amp = 2 \int_{t=0}^{t=2\pi} \sqrt{\frac{1}{2}\left(1-\cos(t)\right)}\;dt\\
-\amp = 2 \int_{t=0}^{t=2\pi} \sqrt{sin^2\left(\frac{t}{2}\right)}\;dt\\
+\amp = 2 \int_{t=0}^{t=2\pi} \sqrt{\sin^2\left(\frac{t}{2}\right)}\;dt\\
 \amp = 2 \int_{t=0}^{2\pi} \sin\left(\frac{t}{2}\right)\;dt\\
 \amp = 2 \left(-2\cos\left(\frac{t}{2}\right)\right)\bigg|_{t=0}^{t=2\pi}\\
 \amp = 2(-2 -2)\\
@@ -1214,7 +1216,7 @@ y \amp = r(1-\cos(t))
 \amp = \int_{t=0}^{t=2\pi} r\sqrt{2-2\cos(t)}\;dt \\
 \amp = r\sqrt{2}\int_{t=0}^{t=2\pi} \sqrt{1-\cos(t)}\;dt\\
 \amp = 2r \int_{t=0}^{t=2\pi} \sqrt{\frac{1}{2}\left(1-\cos(t)\right)}\;dt\\
-\amp = 2r \int_{t=0}^{t=2\pi} \sqrt{sin^2\left(\frac{t}{2}\right)}\;dt\\
+\amp = 2r \int_{t=0}^{t=2\pi} \sqrt{\sin^2\left(\frac{t}{2}\right)}\;dt\\
 \amp = 2r \int_{t=0}^{2\pi} \sin\left(\frac{t}{2}\right)\;dt\\
 \amp = 2r \left(-2\cos\left(\frac{t}{2}\right)\right)\bigg|_{t=0}^{t=2\pi}\\
 \amp = 2r(-2 -2)\\
@@ -1229,6 +1231,186 @@ y \amp = r(1-\cos(t))
 <div class="autopermalink" aria-hidden="true" data-description="Task 10.3.9.c"><a tabindex="-1" href="#subsec-ParametricArcLengths-5-5" title="Copy heading and permalink for Task 10.3.9.c" aria-label="Copy heading and permalink for Task 10.3.9.c">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Example 10.3.9: Length of a Cycloid Arc"><a tabindex="-1" href="#subsec-ParametricArcLengths-5" title="Copy heading and permalink for Example 10.3.9: Length of a Cycloid Arc" aria-label="Copy heading and permalink for Example 10.3.9: Length of a Cycloid Arc">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Arc Lengths"><a tabindex="-1" href="#subsec-ParametricArcLengths" title="Copy heading and permalink for Subsection: Arc Lengths" aria-label="Copy heading and permalink for Subsection: Arc Lengths">🔗</a></div>
+</section>
+<section class="exercises" id="ex-ParametricCalculus">
+<h2 class="heading hide-type">
+<span class="type">Practice Problems</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
+</h2>
+<article class="exercise exercise-like" id="ex-ParametricCalculus-1"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="ex-ParametricCalculus-1-1-1">
+<div class="para">Explain how (and why) we implement the chain rule to find <span class="process-math">\(\dydx\)</span> for the parametric curve:</div>
+<div class="displaymath process-math" id="ex-ParametricCalculus-1-1-1-2">
+\begin{align*}
+x \amp = f(t)\\
+y \amp = g(t)
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1"><a tabindex="-1" href="#ex-ParametricCalculus-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex-ParametricCalculus-2"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="ex-ParametricCalculus-2-1">
+<div class="para" id="ex-ParametricCalculus-2-1-1">For each of the parametric curves below, find the slope of the line tangent to the curve at the indicated value.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="ex-ParametricCalculus-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="ex-ParametricCalculus-2-2-1-1">
+<div class="para">The parametric curve</div>
+<div class="displaymath process-math" id="ex-ParametricCalculus-2-2-1-1-1">
+\begin{align*}
+x \amp = 4-3t^2\\
+y \amp = 6 + \frac{1}{t}
+\end{align*}
+</div>
+<div class="para">at <span class="process-math">\(t=2\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#ex-ParametricCalculus-2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-ParametricCalculus-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="ex-ParametricCalculus-2-3-1-1">
+<div class="para">The parametric curve</div>
+<div class="displaymath process-math" id="ex-ParametricCalculus-2-3-1-1-1">
+\begin{align*}
+x \amp = t-\sin(t)\\
+y \amp = 1 - \cos(t)
+\end{align*}
+</div>
+<div class="para">ar <span class="process-math">\(t=\frac{3\pi}{4}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#ex-ParametricCalculus-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-ParametricCalculus-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="ex-ParametricCalculus-2-4-1-1">
+<div class="para">The parametric curve</div>
+<div class="displaymath process-math" id="ex-ParametricCalculus-2-4-1-1-1">
+\begin{align*}
+x \amp = \sin^3(t)\\
+y \amp = \cos(t)
+\end{align*}
+</div>
+<div class="para">at <span class="process-math">\(t=\frac{7\pi}{6}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#ex-ParametricCalculus-2-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 2"><a tabindex="-1" href="#ex-ParametricCalculus-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex-ParametricCalculus-3"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex-ParametricCalculus-3-1-1">Why, when we calculate the area under a parametric curve, do we need to consider <span class="process-math">\(x'\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 3"><a tabindex="-1" href="#ex-ParametricCalculus-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex-ParametricCalculus-4"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="ex-ParametricCalculus-4-1">
+<div class="para" id="ex-ParametricCalculus-4-1-1">Set up and evaluate a definite integral to calculate the following areas.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="ex-ParametricCalculus-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="ex-ParametricCalculus-4-2-1-1">
+<div class="para">The area bounded by the parametric curve</div>
+<div class="displaymath process-math" id="ex-ParametricCalculus-4-2-1-1-1">
+\begin{align*}
+x \amp = \sin^3(t)\\
+y \amp = \cos(t)
+\end{align*}
+</div>
+<div class="para">in the first quadrant and the <span class="process-math">\(x\)</span>-axis.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.a"><a tabindex="-1" href="#ex-ParametricCalculus-4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-ParametricCalculus-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="ex-ParametricCalculus-4-3-1-1">
+<div class="para">The area bounded underneath the curve</div>
+<div class="displaymath process-math" id="ex-ParametricCalculus-4-3-1-1-1">
+\begin{align*}
+x \amp = \frac{t^2}{10}\\
+y \amp = 1-\cos(t)
+\end{align*}
+</div>
+<div class="para">from <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t=2\pi\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.b"><a tabindex="-1" href="#ex-ParametricCalculus-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-ParametricCalculus-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="ex-ParametricCalculus-4-4-1-1">
+<div class="para">The area bounded between the parametric curve</div>
+<div class="displaymath process-math" id="ex-ParametricCalculus-4-4-1-1-1">
+\begin{align*}
+x \amp = 5-t + \frac{1}{t+1}\\
+y \amp = t^2
+\end{align*}
+</div>
+<div class="para">and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t=1\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.c"><a tabindex="-1" href="#ex-ParametricCalculus-4-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 4"><a tabindex="-1" href="#ex-ParametricCalculus-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex-ParametricCalculus-5"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex-ParametricCalculus-5-1-1">Explain how the formula for finding the length of a parametric curve is similar (and different) from the arc length formula in <a href="sec-ArcLengthSurfaceArea.html#def-ArcLength" class="xref" data-knowl="./knowl/xref/def-ArcLength.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 6.5.7: Length of a Curve">Definition 6.5.7</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 5"><a tabindex="-1" href="#ex-ParametricCalculus-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex-ParametricCalculus-6"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="ex-ParametricCalculus-6-1">
+<div class="para" id="ex-ParametricCalculus-6-1-1">Set up an integral representing the length of the following parametric curves.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="ex-ParametricCalculus-6-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="ex-ParametricCalculus-6-2-1-1">
+<div class="para">The parametric curve</div>
+<div class="displaymath process-math" id="ex-ParametricCalculus-6-2-1-1-1">
+\begin{align*}
+x \amp = \sqrt{t}+1\\
+y \amp = t^2-t+3
+\end{align*}
+</div>
+<div class="para">on the interval <span class="process-math">\(0\leq t \leq 4\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.a"><a tabindex="-1" href="#ex-ParametricCalculus-6-2" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-ParametricCalculus-6-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="ex-ParametricCalculus-6-3-1-1">
+<div class="para">The parametric curve</div>
+<div class="displaymath process-math" id="ex-ParametricCalculus-6-3-1-1-1">
+\begin{align*}
+x \amp = \cos(t)\\
+y \amp = \sin(t)
+\end{align*}
+</div>
+<div class="para">on the interval <span class="process-math">\(0\leq t \leq 2\pi\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.b"><a tabindex="-1" href="#ex-ParametricCalculus-6-3" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ex-ParametricCalculus-6-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="ex-ParametricCalculus-6-4-1-1">
+<div class="para">The parametric curve</div>
+<div class="displaymath process-math" id="ex-ParametricCalculus-6-4-1-1-1">
+\begin{align*}
+x \amp = \cos^3(t)\\
+y \amp = \sin^3(t)
+\end{align*}
+</div>
+<div class="para">on the interval <span class="process-math">\(\leq t \leq \pi\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-ParametricCalculus-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.c"><a tabindex="-1" href="#ex-ParametricCalculus-6-4" title="Copy heading and permalink for Task 6.c" aria-label="Copy heading and permalink for Task 6.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 6"><a tabindex="-1" href="#ex-ParametricCalculus-6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Practice Problems"><a tabindex="-1" href="#ex-ParametricCalculus" title="Copy heading and permalink for Practice Problems" aria-label="Copy heading and permalink for Practice Problems">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section 10.3: Calculus with Parametric Curves"><a tabindex="-1" href="#sec-ParametricCalculus" title="Copy heading and permalink for Section 10.3: Calculus with Parametric Curves" aria-label="Copy heading and permalink for Section 10.3: Calculus with Parametric Curves">🔗</a></div>
 </section>
 </div>
