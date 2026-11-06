@@ -288,6 +288,33 @@
         The professor received a response from the Assistant Product Manager of Friskies Buffet with 5 reasons for the non-square dimensions. The full text of the letter can be found here: <xref ref="app-CarnationLetter" text="type-global-title"/>.
       </p>
     </note>
+    <example>
+      <introduction>
+        <p>
+          We're going to consider our can of pop again, but this time we're going to think about the surface area formula a bit differently.
+        </p>
+        <p>
+          Assume that the top and bottoms of the cans are thicker than the cylindrical part by a factor of <m>k</m>. Then, our surface area formula is:
+          <md>
+            A = 2k\pi r^2 + 2\pi r h
+          </md>.
+        </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Use the same constraint from <xref ref="act-VolumeCan"/>, where the volume of the can is fixed at 23 cubic inches. Find the dimensions of the optimal can in the same way that we did, but now with the parameter <m>k</m> involved.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              A typical can of pop is about 4.75 inches tall with a radius of approximately 1.25 inches. Can you find a value of <m>k</m> that brings the dimensions of the optimal can close to the actual dimensions? What does this mean about the thickness of the can in different parts?
+            </p>
+          </statement>
+        </task>
+    </example>
   </subsection>
   <subsection xml:id="subsec-MoreOptimizationExamples">
     <title>What Other Examples Can We Do?</title>
