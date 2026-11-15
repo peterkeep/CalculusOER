@@ -1,0 +1,127 @@
+<exercises xml:id="ex-PolarCalculus" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <exercise>
+        <statement>
+            <p>
+                Explain how (and why) we implement the Chain Rule to find <m>\dydx</m> for the polar curve <m>r=f(\theta)</m>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                For each of the polar curves listed below, find the slope of the line tangent to the curve at the indicated value.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>r=\sin^3(\theta)\cos(\theta)</m> at <m>\theta = \frac{\pi}{3}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>r = \theta + \cos(\theta)</m> at <m>\theta = \pi</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>r = 4\theta - 1</m> at <m>\theta = 0</m>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Let's consider a polar plot of the function <m>r=f(\theta)</m>. We'll describe how to construct a definite integral to represent the area bounded inside of the curve.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Explain why the area of a sector of a circle is written as <m>\frac{r^2\Delta\theta}{2}</m> where <m>\Delta \theta</m> is the size of the angle that is spanned in the sector of the circle.
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Relate this formula to the area of the circle as a whole, and the area of a semicircle.
+                </p>
+            </hint>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Set up a Riemann sum approximation for the area bounded inside the polar curve <m>r=f(\theta)</m> from <m>\theta = \alpha</m> to <m>\theta = \beta</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use this Riemann sum to justify the integral formula, 
+                    <me>\frac{1}{2}\int_{\theta = \alpha}^{\theta = \beta} \left(f(\theta)\right)^2\;d\theta </me>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Set up an integral to represent each of the areas described below.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    The area bounded inside all 4 loops of the curve <m>r = \sin(\theta)\cos(\theta)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The area bounded between the polar curves <m>r=\theta</m> and <m>r=\sin(\theta)</m> between <m>\theta = 0</m> and <m>\theta = \pi</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The area bounded inside of the first, or smallest, loop of the curve <m>r = \theta^2\cos(\theta)</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Set up an integral describing the lengths of the polar curves described below.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    All 4 loops of the curve <m>r = \sin(\theta)\cos(\theta)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                   The polar curve <m>r=\sin(\theta)</m> between <m>\theta = 0</m> and <m>\theta = \pi</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    The first, or smallest, loop of the curve <m>r = \theta^2\cos(\theta)</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</exercises>
