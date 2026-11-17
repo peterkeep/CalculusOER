@@ -100,7 +100,7 @@
                 <p>
                     <md>
                         <mrow>\int\left( \dfrac{1}{x^2-2x+10} \right)\;dx \amp = \int \left( \frac{1}{(x-1)^2 + 9}\right)\;dx</mrow>
-                        <mrow> \amp = \frac{1}{3}\tan^{-x}\left(\frac{x-1}{3}\right)+C</mrow>
+                        <mrow> \amp = \frac{1}{3}\tan^{-1}\left(\frac{x-1}{3}\right)+C</mrow>
                     </md>
                 </p>
             </solution>
@@ -207,8 +207,9 @@
                         <mrow>u \amp = \cos(\theta)</mrow>
                         <mrow>du \amp = -\sin(\theta)\;d\theta</mrow>
                         <mrow>\int \left( \frac{\sin(\theta)}{\cos^2(\theta)} + \frac{\sin(\theta)}{\cos^3(\theta)} \right) \; d\theta \amp = \int -u^{-2} - u^{-3}\;du </mrow>
-                        <mrow> \amp = \frac{1}{3u^3} + \frac{1}{4u^4} + C</mrow>
-                        <mrow> \amp = \frac{1}{3\cos^3(\theta)} + \frac{1}{4\cos^4(\theta)} + C</mrow>
+                        <mrow> \amp = \frac{1}{u} + \frac{}{2u^2} + C</mrow>
+                        <mrow> \amp = \frac{1}{\cos(\theta)} + \frac{1}{2\cos^2(\theta)} + C</mrow>
+                        <mrow> \amp = \sec(\theta) + \sec^2(\theta) + C</mrow>
                     </md>
                 </p>
             </solution>
@@ -248,7 +249,7 @@
             <solution>
                 <p>
                     <md>
-                        <mrow> int\left(\dfrac{1}{1-\sin^2(\theta)}\right)\;d\theta \amp = \int \left(\frac{1}{\cos^2(\theta)}\right)\;d\theta</mrow>
+                        <mrow> \int\left(\dfrac{1}{1-\sin^2(\theta)}\right)\;d\theta \amp = \int \left(\frac{1}{\cos^2(\theta)}\right)\;d\theta</mrow>
                         <mrow> \amp = \int \sec^2(\theta)\;d\theta</mrow>
                         <mrow> \amp = \tan(\theta)+C</mrow>
                     </md>
@@ -264,7 +265,7 @@
             <solution>
                 <p>
                     <md>
-                        <mrow>int\left( \dfrac{x^{2/3}-x^3}{x^{1/4}} \right)\;dx \amp = \int \left( \frac{x^{2/3}}{x^{1/4}} - \frac{x^3}{x^{1/4}} \right) \; dx</mrow>
+                        <mrow>\int\left( \dfrac{x^{2/3}-x^3}{x^{1/4}} \right)\;dx \amp = \int \left( \frac{x^{2/3}}{x^{1/4}} - \frac{x^3}{x^{1/4}} \right) \; dx</mrow>
                         <mrow> \amp = \int x^{5/12} - x^{11/4} \; dx</mrow>
                         <mrow> \amp = \frac{12x^{17/12}}{17} - \frac{4x{15/4}}{15} + C</mrow>
                     </md>

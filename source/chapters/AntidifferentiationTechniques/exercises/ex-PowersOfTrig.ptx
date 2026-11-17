@@ -192,9 +192,9 @@
                         <mrow>du \amp = \sec(x)\tan(x)\;dx</mrow>
                         <mrow>\int \tan^5(x)\sec^{-1/2}(x)\;dx \amp = \int \tan^4(x)\sec^{-3/2}(x)\sec(x)\tan(x)\;dx</mrow>
                         <mrow> \amp = \int (u^2-1)^2u^{-3/2}\;du</mrow>
-                        <mrow> \amp = \int u^{1/2}-u^{-3/2} \;du</mrow>
-                        <mrow> \amp = \frac{2u^{3/2}}{3} + \frac{2}{u^{1/2}} + C</mrow>
-                        <mrow> \amp = \frac{2\sec^{3/2}(x)}{3} + \frac{2}{\sqrt{\sec(x)}} + C</mrow>
+                        <mrow> \amp = \int u^{5/2} - 2u^{1/2} + u^{-3/2} \;du</mrow>
+                        <mrow> \amp = \frac{2u^{7/2}}{7} -\frac{4u^{3/2}}{3} + \frac{2}{u^{1/2}} + C</mrow>
+                        <mrow> \amp = \frac{2\sec^{7/2}(x)}{7}-\frac{4\sec^{3/2}(x)}{3} + \frac{2}{\sqrt{\sec(x)}} + C</mrow>
                     </md>
                 </p>
             </solution>
