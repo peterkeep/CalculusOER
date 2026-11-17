@@ -7567,7 +7567,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.4",
   "title": "Calculus with Polar Curves",
-  "body": " Calculus with Polar Curves   In one sense, we don't have much to do in this section. Since we can think of polar functions as parameterized Cartesian functions, we can rely on the results from for much of this! In fact, that's exactly what we'll do.  When we consider a polar function , we'll also think of it as a parametric one: Slopes and arc lengths will follow pretty directly from our results for parametric curves, but we'll need to think about the areas bounded by polar curves a bit more.    Slopes of Tangent Lines   Slopes on a Polar Flower   Consider the polar flower defined by for . For this activity, refer to the graphing utility below.      How many points on this polar flower do you think have horizontal tangent lines?      How many points on this polar flower do you think have vertical tangent lines?      Make a conjecture about the slope of the tangent line when by looking at the graph only.      Find an expression for .           Pick one of the values of where you thought this curve might have a horizontal or vertical tangent line. Evaluate at that value, and check to see if you were correct.      Evaluate when . How close was your guess at the slope?            Arc Lengths  We could, similarly, dive right into our formula, but let's pause for a second. It might get a bit messy working with each specific and , so we'll start with this in a more general sense.  Consider some polar function named .  We'll use the product rule to find the derivatives needed for the arc length formula: Let's now find use these in our arc length formula!    Polar Arc Length   If is a continuous function on and differentiable on , then the length of the polar curve between ,and is: .     Petal Length   For the polar graphs that we've been calling Polar Flowers, we can call each loop that the polar curve makes (between the points where it crosses the pole) petals .  We'll consider, again, the polar flower .     Find the interval of that defines the first petal of the polar flower.    We're really thinking about where .      Set up an integral for the length of the curve tracing out that first petal.            Areas Bounded by Curves  The last calculus topic we'll visit in this section will be one to reinforce, for one last time, an important theme: the theme of accumulation.  We're going to go back to our slice-and-sum process to build a formula for calculating a polar area.   Slice-and-Sum for Polar Areas   Remember slice-and-sum? Here's the general procedure:   We'll divide up the interval of inputs into (equally-sized) subintervals. We'll pick one value from each subinterval.    One each slice, we'll use the representative input variable to calculate the measurement we're interested in. In this case, it's an area.    Add up the areas of the slices, and the sum should be an approximation of the actual area we're interested in.    Use a limit as to produce an integral our of a Riemann sum!        The area of a sector of a circle with angle is: . Convince yourselves that this is true, using appropriate test angles for:   A circle.    A semicircle.    A quarter of a circle.         The reason that we're thinking about sectors of circles is that when we slice an interval of angles in a polar coordinate system, a bunch of rays extending away from the pole.  When do this for a polar curve, we'll pick a point in the subinterval and assume that the whole subinterval has a constant function output, just like we did with the rectangle. Take a look at the graphing utility below, and get a feel for how we'll find the th slice.       Calculate the area of the th slice, .           Add these up to approximate the total area.           Introduce a limit to find an integral formula for the area trapped inside a polar curve from to .           Petal Area   Let's consider, one last time, the polar flower .  Set up and evaluate an integral calculate the area bounded inside one of the petals of the polar flower.          "
+  "body": " Calculus with Polar Curves   In one sense, we don't have much to do in this section. Since we can think of polar functions as parameterized Cartesian functions, we can rely on the results from for much of this! In fact, that's exactly what we'll do.  When we consider a polar function , we'll also think of it as a parametric one: Slopes and arc lengths will follow pretty directly from our results for parametric curves, but we'll need to think about the areas bounded by polar curves a bit more.    Slopes of Tangent Lines   Slopes on a Polar Flower   Consider the polar flower defined by for . For this activity, refer to the graphing utility below.      How many points on this polar flower do you think have horizontal tangent lines?      How many points on this polar flower do you think have vertical tangent lines?      Make a conjecture about the slope of the tangent line when by looking at the graph only.      Find an expression for .           Pick one of the values of where you thought this curve might have a horizontal or vertical tangent line. Evaluate at that value, and check to see if you were correct.      Evaluate when . How close was your guess at the slope?            Arc Lengths  We could, similarly, dive right into our formula, but let's pause for a second. It might get a bit messy working with each specific and , so we'll start with this in a more general sense.  Consider some polar function named .  We'll use the product rule to find the derivatives needed for the arc length formula: Let's now find use these in our arc length formula!    Polar Arc Length   If is a continuous function on and differentiable on , then the length of the polar curve between ,and is: .     Petal Length   For the polar graphs that we've been calling Polar Flowers, we can call each loop that the polar curve makes (between the points where it crosses the pole) petals .  We'll consider, again, the polar flower .     Find the interval of that defines the first petal of the polar flower.    We're really thinking about where .      Set up an integral for the length of the curve tracing out that first petal.            Areas Bounded by Curves  The last calculus topic we'll visit in this section will be one to reinforce, for one last time, an important theme: the theme of accumulation.  We're going to go back to our slice-and-sum process to build a formula for calculating a polar area.   Slice-and-Sum for Polar Areas   Remember slice-and-sum? Here's the general procedure:   We'll divide up the interval of inputs into (equally-sized) subintervals. We'll pick one value from each subinterval.    One each slice, we'll use the representative input variable to calculate the measurement we're interested in. In this case, it's an area.    Add up the areas of the slices, and the sum should be an approximation of the actual area we're interested in.    Use a limit as to produce an integral our of a Riemann sum!        The area of a sector of a circle with angle is: . Convince yourselves that this is true, using appropriate test angles for:   A circle.    A semicircle.    A quarter of a circle.         The reason that we're thinking about sectors of circles is that when we slice an interval of angles in a polar coordinate system, a bunch of rays extending away from the pole.  When do this for a polar curve, we'll pick a point in the subinterval and assume that the whole subinterval has a constant function output, just like we did with the rectangle. Take a look at the graphing utility below, and get a feel for how we'll find the th slice.       Calculate the area of the th slice, .           Add these up to approximate the total area.           Introduce a limit to find an integral formula for the area trapped inside a polar curve from to .           Petal Area   Let's consider, one last time, the polar flower .  Set up and evaluate an integral calculate the area bounded inside one of the petals of the polar flower.             Explain how (and why) we implement the Chain Rule to find for the polar curve .      For each of the polar curves listed below, find the slope of the line tangent to the curve at the indicated value.      at        at        at        Let's consider a polar plot of the function . We'll describe how to construct a definite integral to represent the area bounded inside of the curve.     Explain why the area of a sector of a circle is written as where is the size of the angle that is spanned in the sector of the circle.    Relate this formula to the area of the circle as a whole, and the area of a semicircle.      Set up a Riemann sum approximation for the area bounded inside the polar curve from to .      Use this Riemann sum to justify the integral formula, .       Set up an integral to represent each of the areas described below.     The area bounded inside all 4 loops of the curve .      The area bounded between the polar curves and between and .      The area bounded inside of the first, or smallest, loop of the curve .       Set up an integral describing the lengths of the polar curves described below.     All 4 loops of the curve .      The polar curve between and .      The first, or smallest, loop of the curve .      "
 },
 {
   "id": "act-PolarFlowerSlope",
@@ -7613,6 +7613,51 @@ var ptx_lunr_docs = [
   "number": "10.4.5",
   "title": "Petal Area.",
   "body": " Petal Area   Let's consider, one last time, the polar flower .  Set up and evaluate an integral calculate the area bounded inside one of the petals of the polar flower.        "
+},
+{
+  "id": "ex-PolarCalculus-1",
+  "level": "2",
+  "url": "sec-PolarCalculus.html#ex-PolarCalculus-1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Explain how (and why) we implement the Chain Rule to find for the polar curve .   "
+},
+{
+  "id": "ex-PolarCalculus-2",
+  "level": "2",
+  "url": "sec-PolarCalculus.html#ex-PolarCalculus-2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  For each of the polar curves listed below, find the slope of the line tangent to the curve at the indicated value.      at        at        at     "
+},
+{
+  "id": "ex-PolarCalculus-3",
+  "level": "2",
+  "url": "sec-PolarCalculus.html#ex-PolarCalculus-3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Let's consider a polar plot of the function . We'll describe how to construct a definite integral to represent the area bounded inside of the curve.     Explain why the area of a sector of a circle is written as where is the size of the angle that is spanned in the sector of the circle.    Relate this formula to the area of the circle as a whole, and the area of a semicircle.      Set up a Riemann sum approximation for the area bounded inside the polar curve from to .      Use this Riemann sum to justify the integral formula, .    "
+},
+{
+  "id": "ex-PolarCalculus-4",
+  "level": "2",
+  "url": "sec-PolarCalculus.html#ex-PolarCalculus-4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Set up an integral to represent each of the areas described below.     The area bounded inside all 4 loops of the curve .      The area bounded between the polar curves and between and .      The area bounded inside of the first, or smallest, loop of the curve .    "
+},
+{
+  "id": "ex-PolarCalculus-5",
+  "level": "2",
+  "url": "sec-PolarCalculus.html#ex-PolarCalculus-5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Set up an integral describing the lengths of the polar curves described below.     All 4 loops of the curve .      The polar curve between and .      The first, or smallest, loop of the curve .    "
 },
 {
   "id": "app-CarnationLetter",
