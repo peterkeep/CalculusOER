@@ -20,6 +20,13 @@
                         For what values of <m>p</m> does this series converge?
                     </p>
                 </statement>
+                <hint>
+                    <p>
+                        It will be helpful to know that when we think about the digits in a number, we can use a logarithm!
+                        <me>D(k) = \ceiling{\log(k)}</me>
+                        where <m>\ceiling{x}</m> is the smallest integer that is greater than or equal to <m>x</m>. That is, it's a <q>round the number up</q> function.
+                    </p>
+                </hint>
             </task>
             <task>
                 <statement>
@@ -38,8 +45,19 @@
                         For what values of <m>p</m> does this series converge?
                     </p>
                 </statement>
+                <hint>
+                    <p>
+                        Can you find some bounds on <m>F(k)</m> based on <m>k</m>? You might want to look them up, and use those!
+                    </p>
+                </hint>
             </task>
         </exploration>
+        <p>
+            These series are all pretty closely connected to the <m>p</m>-series that we've talked about previously, using some extra functions to force us to use some sort of comparison to these <m>p</m>-series.
+        </p>
+        <p>
+            Can you think of more, different functions to include in a denominator? 
+        </p>
     </subsection>
     <!-- <subsection xml:id="subsec-InfiniteProducts">
         <title>Infinite Products</title>
