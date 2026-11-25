@@ -25,6 +25,14 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left(\frac{k}{k^2+1}\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        \lim_k\to\infty \frac{k}{k^2+1} = 0
+                    </md>
+                    The Divergence Test is inconclusive.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -32,6 +40,14 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left(\frac{k}{e^k}\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        \lim_{k\to\infty} \frac{k}{e^k} = 0
+                    </md>
+                    The Divergence Test is inconclusive.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -39,6 +55,14 @@
                     <m>\displaystyle\sum_{k=2}^\infty \left( \frac{1}{k\ln(k)} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        \lim_{k\to\infty} \frac{1}{k\ln(k)} = 0
+                    </md>
+                    The Divergence Test is inconclusive.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -46,6 +70,13 @@
                     <m>\displaystyle\sum_{k=2}^\infty \left(\frac{k}{\ln(k)}\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>\lim_{k\to\infty} \frac{k}{\ln(k)} = \infty
+                    </md>
+                    Since the limit is not 0, the series diverges.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -53,6 +84,14 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left(\sqrt[k]{k}\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        \lim_{k\to\infty} \sqrt[k]{k} = 1
+                    </md>
+                    Since the limit is not 0, the series diverges.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -60,6 +99,14 @@
                     <m>\displaystyle\sum_{k=0}^\infty \left( \frac{k^2+k}{e^k} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        \lim_{k\to\infty} \frac{k^2+k}{e^k} = 0
+                    </md>
+                    The Divergence Test is inconclusive.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -67,6 +114,14 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left( \frac{1}{k^2+1} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        \lim_{k\to\infty} \frac{1}{k^2+1} = 0
+                    </md>
+                    The Divergence Test is inconclusive.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -74,6 +129,14 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left( \frac{k!}{k^2} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        \lim_{k\to\infty} \frac{k!}{k^2} = \infty
+                    </md>
+                    The Divergence Test is inconclusive.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -81,6 +144,15 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-1)^k(k+1)}{k+\frac{1}{k}} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    Consider the limit of the positive terms:
+                    <md>
+                        \lim_{k\to\infty} \frac{k+1}{k+\frac{1}{k}} = 1
+                    </md>
+                    The limit of the terms oscillates between <m>1</m> and <m>-1</m>. But we can see that the limit of the terms is not <m>0</m>, and so the series diverges.
+                </p>
+            </solution>
         </task>
     </exercise>
 </exercises>
