@@ -29,11 +29,47 @@
 <div class="para">
 <span class="process-math">\(\displaystyle\sum_{k=1}^\infty \left(\frac{k}{k^2+1}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntegralTestProblems-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{align*}
+\sum_{k=1}^\infty \left(\frac{k}{k^2+1}\right) \amp  \sim \int_{x=1}^\infty \frac{x}{x^2+1}\;dx \\
+\amp = \lim_{t\to\infty} \frac{1}{2}\ln(x^2+1)\bigg|_{x=1}^{x=t}\\
+\amp = \lim_{t\to\infty} \frac{\ln(t^2+1)}{2} - \frac{\ln(2)}{2}\\
+\amp = \infty
+\end{align*}
+</div>
+<div class="para">The integral diverges, and so the series must diverge as well.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntegralTestProblems-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.a.1"><a tabindex="-1" href="#ex-IntegralTestProblems-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#ex-IntegralTestProblems-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
 </article>
 <article class="task exercise-like"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para">
 <span class="process-math">\(\displaystyle\sum_{k=1}^\infty \left(\frac{k}{e^k}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntegralTestProblems-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{align*}
+\sum_{k=1}^\infty \left(\frac{k}{e^k}\right) \amp \sim \int_{x=1}^\infty xe^{-x}\;dx\\
+\amp = \lim_{t\to\infty} \left(-xe^{-x} - e^{-x}\right)\bigg|_{x=1}^{x=t}\\
+\amp =\lim_{t\to\infty} -\frac{t}{e^t} - \frac{1}{e^t} + \frac{1}{e} + \frac{1}{e}\\
+\amp = \frac{2}{e} 
+\end{align*}
+</div>
+<div class="para">The integral converges, and so the series must converge as well.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntegralTestProblems-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.b.1"><a tabindex="-1" href="#ex-IntegralTestProblems-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#ex-IntegralTestProblems-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
 </article>
@@ -41,17 +77,72 @@
 <div class="para">
 <span class="process-math">\(\displaystyle\sum_{k=2}^\infty \left( \frac{1}{k\ln(k)} \right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntegralTestProblems-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{align*}
+\sum_{k=2}^\infty \left( \frac{1}{k\ln(k)} \amp \sim \int_{x=2}^\infty \frac{1}{x\ln(x)}\;dx\\
+\amp = \lim_{t\to\infty} \ln(\ln(x))\bigg|_{x=2}^{x=t}\\
+\amp = \lim_{t\to\infty} \ln(\ln(t)) - \ln(\ln(2))\\
+\amp = \infty
+\end{align*}
+</div>
+<div class="para">The integral diverges and so the series diverges as well.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntegralTestProblems-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.c.1"><a tabindex="-1" href="#ex-IntegralTestProblems-4-2" title="Copy heading and permalink for Solution 2.c.1" aria-label="Copy heading and permalink for Solution 2.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#ex-IntegralTestProblems-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
 </article>
 <article class="task exercise-like"><h3 class="heading"><span class="codenumber">(d)</span></h3>
 <div class="para">
 <span class="process-math">\(\displaystyle\sum_{k=1}^\infty \left( \frac{k^2+k}{e^k} \right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntegralTestProblems-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{align*}
+\sum_{k=1}^\infty \left( \frac{k^2+k}{e^k} \right) \amp \sim \int_{x=1}^{\infty} (x^2+x)e^{-x}\;dx\\
+\amp = \lim_{t\to\infty}\left(-\frac{x^2}{e^x} - \frac{3x}{e^x} - \frac{3}{e^x}\right)\bigg|_{x=1}^{x=t}\\
+\amp = \lim_{t\to\infty} - \frac{t^2}{e^t} - \frac{3t}{e^t} - \frac{3}{e^t} + \frac{1}{e} + \frac{3}{e} + \frac{3}{e}\\
+\amp = \frac{7}{e}
+\end{align*}
+</div>
+<div class="para">The integral converges, and so the series converges as well.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntegralTestProblems-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.d.1"><a tabindex="-1" href="#ex-IntegralTestProblems-5-2" title="Copy heading and permalink for Solution 2.d.1" aria-label="Copy heading and permalink for Solution 2.d.1">🔗</a></div>
+</div></details>
+</div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.d"><a tabindex="-1" href="#ex-IntegralTestProblems-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
 </article>
 <article class="task exercise-like"><h3 class="heading"><span class="codenumber">(e)</span></h3>
 <div class="para">
 <span class="process-math">\(\displaystyle\sum_{k=1}^\infty \left( \frac{1}{k^2+1} \right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntegralTestProblems-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{align*}
+\sum_{k=1}^\infty \left( \frac{1}{k^2+1} \right) \amp \sim \int_{x=1}^{\infty} \frac{1}{x^2+1}\;dx\\
+\amp = \lim_{t\to\infty} \tan^{-1}(x)\bigg|_{x=1}^{x=t}\\
+\amp = \lim_{t\to\infty} \tan^{-1}(t) - \tan^{-1}(1)\\
+\amp = \frac{\pi}{2} - \frac{\pi}{4}\\
+\amp = \frac{\pi}{4}
+\end{align*}
+</div>
+<div class="para">The integral converges and so the series converges as well.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-IntegralTestProblems-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.e.1"><a tabindex="-1" href="#ex-IntegralTestProblems-6-2" title="Copy heading and permalink for Solution 2.e.1" aria-label="Copy heading and permalink for Solution 2.e.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.e"><a tabindex="-1" href="#ex-IntegralTestProblems-6" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Exercise 2"><a tabindex="-1" href="#ex-IntegralTestProblems" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
