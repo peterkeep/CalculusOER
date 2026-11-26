@@ -18,6 +18,17 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left(\frac{k}{k^2+1}\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\sum_{k=1}^\infty \left(\frac{k}{k^2+1}\right) \amp  \sim \int_{x=1}^\infty \frac{x}{x^2+1}\;dx </mrow>
+                        <mrow> \amp = \lim_{t\to\infty} \frac{1}{2}\ln(x^2+1)\bigg|_{x=1}^{x=t}</mrow>
+                        <mrow> \amp = \lim_{t\to\infty} \frac{\ln(t^2+1)}{2} - \frac{\ln(2)}{2}</mrow>
+                        <mrow> \amp = \infty</mrow>
+                    </md>
+                    The integral diverges, and so the series must diverge as well.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -25,6 +36,17 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left(\frac{k}{e^k}\right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\sum_{k=1}^\infty \left(\frac{k}{e^k}\right) \amp \sim \int_{x=1}^\infty xe^{-x}\;dx</mrow>
+                        <mrow> \amp = \lim_{t\to\infty} \left(-xe^{-x} - e^{-x}\right)\bigg|_{x=1}^{x=t}</mrow>
+                        <mrow> \amp =\lim_{t\to\infty} -\frac{t}{e^t} - \frac{1}{e^t} + \frac{1}{e} + \frac{1}{e}</mrow>
+                        <mrow> \amp = \frac{2}{e} </mrow>
+                    </md>
+                    The integral converges, and so the series must converge as well.    
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -32,6 +54,17 @@
                     <m>\displaystyle\sum_{k=2}^\infty \left( \frac{1}{k\ln(k)} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\sum_{k=2}^\infty \left( \frac{1}{k\ln(k)} \amp \sim \int_{x=2}^\infty \frac{1}{x\ln(x)}\;dx</mrow>
+                        <mrow> \amp = \lim_{t\to\infty} \ln(\ln(x))\bigg|_{x=2}^{x=t}</mrow>
+                        <mrow> \amp = \lim_{t\to\infty} \ln(\ln(t)) - \ln(\ln(2))</mrow>
+                        <mrow> \amp = \infty</mrow>
+                    </md>
+                    The integral diverges and so the series diverges as well.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -39,6 +72,17 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left( \frac{k^2+k}{e^k} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\sum_{k=1}^\infty \left( \frac{k^2+k}{e^k} \right) \amp \sim \int_{x=1}^{\infty} (x^2+x)e^{-x}\;dx</mrow>
+                        <mrow> \amp = \lim_{t\to\infty}\left(-\frac{x^2}{e^x} - \frac{3x}{e^x} - \frac{3}{e^x}\right)\bigg|_{x=1}^{x=t}</mrow>
+                        <mrow> \amp = \lim_{t\to\infty} - \frac{t^2}{e^t} - \frac{3t}{e^t} - \frac{3}{e^t} + \frac{1}{e} + \frac{3}{e} + \frac{3}{e}</mrow>
+                        <mrow> \amp = \frac{7}{e}</mrow>
+                    </md>
+                    The integral converges, and so the series converges as well.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -46,6 +90,18 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left( \frac{1}{k^2+1} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\sum_{k=1}^\infty \left( \frac{1}{k^2+1} \right) \amp \sim \int_{x=1}^{\infty} \frac{1}{x^2+1}\;dx</mrow>
+                        <mrow> \amp = \lim_{t\to\infty} \tan^{-1}(x)\bigg|_{x=1}^{x=t}</mrow>
+                        <mrow> \amp = \lim_{t\to\infty} \tan^{-1}(t) - \tan^{-1}(1)</mrow>
+                        <mrow> \amp = \frac{\pi}{2} - \frac{\pi}{4}</mrow>
+                        <mrow> \amp = \frac{\pi}{4}</mrow>
+                    </md>
+                    The integral converges and so the series converges as well.
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise xml:id="ex-pSeriesConverge">
