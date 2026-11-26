@@ -46,6 +46,16 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-1)^{k+1} \tan^{-1}(k)}{k^4} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{k\to\infty} \frac{\tan^{-1}(k)}{k^4} \amp = \left(\lim_{k\to\infty} \tan^{-1}(k)\right)\left(\lim_{k\to\infty}\frac{1}{k^4}) </mrow>
+                        <mrow> \amp = \left(\frac{\pi}{4}\right)\left(0\right)</mrow>
+                        <mrow> \amp = 0</mrow>
+                    </md>
+                    Since the limit of the terms of the alternating series is 0, the series converges.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -53,6 +63,14 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-1)^{k+1}}{\sqrt{k^2+3}} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{k\to\infty}\frac{1}{\sqrt{k^2+3}}\amp 0</mrow>
+                    </md>
+                    Since the limit of the terms of the alternating series is 0, the series converges.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -60,6 +78,15 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-1)^k}{\sqrt[k]{k}} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{k\to\infty} \frac{1}{k^{1/k}} \amp  = \frac{1}{1}</mrow>
+                        <mrow> \amp \neq 0</mrow>
+                    </md>
+                    Since the limit of the terms is not 0, the series diverges.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -67,6 +94,15 @@
                     <m>\displaystyle\sum_{k=2}^\infty \left( \frac{(-1)^{k+1}}{\sqrt[3]{k^2-k}} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{k\to\infty} \frac{1}{\sqrt[3]{k^2-k}} \amp  = \lim_{k\to\infty} \frac{1}{k^{2/3}}</mrow>
+                        <mrow> \amp = 0</mrow>
+                    </md>
+                    Since the limit of the terms of the alternating series is 0, the series converges.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -74,6 +110,15 @@
                     <m>\displaystyle\sum_{k=0}^\infty \left( \frac{(-1)^k}{\sqrt{k^3+1}} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{k\to\infty} \frac{1}{\sqrt{k^3+1}} \amp = \lim_{k\to\infty} \frac{1}{k^{3/2}}</mrow>
+                        <mrow> \amp = 0</mrow>
+                    </md>
+                    Since the limit of the terms of the alternating series is 0, the series converges.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -81,6 +126,16 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-2)^{k+1}}{k^k} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{k\to\infty} \frac{2^k}{k^k} \amp = \lim_{k\to\infty} \left(\frac{2}{k}\right)^k</mrow>
+                        <mrow> \amp = 0^\infty </mrow>
+                        <mrow> \amp = 0</mrow>
+                    </md>
+                    Since the limit of the terms of the alternating series is 0, the series converges.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -88,6 +143,15 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left( \frac{(-1)^{k+1} k}{k^5-k^2+1} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{k\to\infty} \frac{k}{k^5 - k^2 + 1} \amp = \lim_{k\to \infty} \frac{1}{k^4}</mrow>
+                        <mrow> \amp = 0</mrow>
+                    </md>
+                    Since the limit of the terms of the alternating series is 0, the series converges.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -95,6 +159,14 @@
                     <m>\displaystyle\sum_{k=1}^\infty \left( \frac{\cos(\pi (k-1))}{k^2\ln(k+1)} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        <mrow>\lim_{k\to\infty} \frac{1}{k^2\ln(k+1)} \amp=0 </mrow>
+                    </md>
+                    Since the limit of the terms of the alternating series is 0, the series converges.
+                </p>
+            </solution>
         </task>
         <task>
             <statement>
@@ -102,6 +174,14 @@
                     <m>\displaystyle\sum_{k=0}^\infty \left( \frac{\cos(\pi k)}{e^k + \pi^k} \right)</m>
                 </p>
             </statement>
+            <solution>
+                <p>
+                    <md>
+                        \lim_{k\to\infty} \frac{1}{e^k+\pi^k} = 0
+                    </md>
+                    Since the limit of the terms of the alternating series is 0, the series converges.
+                </p>
+            </solution>
         </task>
     </exercise>
     <exercise>
