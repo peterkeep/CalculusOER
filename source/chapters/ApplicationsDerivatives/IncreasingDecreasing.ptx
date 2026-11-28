@@ -65,7 +65,7 @@
           Every local maximum or local minimum of <m>f</m> occurs at a critical point of <m>f</m>.
         </p>
         <p>
-          Another way of saying this is that if <m>(c,f(c))</m> is a local maximum or local minimum of <m>f</m>, then it must also be a critical point of <m>f</m>.
+          Another way of saying this is that if <m>f(c)</m> is a local maximum or local minimum of <m>f</m>, then it must also be a critical value of <m>f</m> (and <m>(c,f(c))</m> is a critical point of <m>f</m>).
         </p>
       </statement>
     </theorem>
@@ -73,16 +73,16 @@
       WAIT! STOP! Before you move on, let's make sure we understand what this theorem is saying. Or maybe what this theorem is <em>not</em> saying.
     </p>
     <p>
-      Notice that we are not saying that every critical point is a local maximum or local minimum! This is a classic <q>every square is a rectangle but not every rectangle is a square</q> situation.
+      Notice that we are not saying that every critical value is a local maximum or local minimum! This is a classic <q>every square is a rectangle but not every rectangle is a square</q> situation.
     </p>
     <p>
-      Every local maximum/minimum occurs at a critical point, but not every critical point is a local maximum/minimum. 
+      Every local maximum/minimum occurs at a critical point, but not every critical point is a place where <m>f</m> achieves a local maximum/minimum. 
     </p>
   </subsection>
   <subsection xml:id="subsec-FindingDirection">
     <title>Direction of a Function (and Where it Changes)</title>
     <p>
-      Let's build up a way of classifying critical points as local maximums, local minimums, or neither.
+      Let's build up a way of classifying critical values as local maximums, local minimums, or neither.
     </p>
     <xi:include href="./activities/act-ComparingCriticalPoints.ptx" />
     <p>
