@@ -37,10 +37,10 @@
     <title>Local Maximum/Minimum</title>
       <statement>
         <p>
-          A point <m>(c,f(c))</m> is a <term>local maximum</term> of <m>f(x)</m> if there is some open interval of real numbers <m>(a,b)</m> around <m>x=c</m> (that is, <m>a\lt c\lt b</m>) and <m>f(c)\geq f(x)</m> for all <m>x</m>-values in the intersection of <m>(a,b)</m> and the domain of <m>f</m>.
+          A function output <m>f(c)</m> is a <term>local maximum</term> of <m>f(x)</m> if there is some open interval of real numbers <m>(a,b)</m> around <m>x=c</m> (that is, <m>a\lt c\lt b</m>) and <m>f(c)\geq f(x)</m> for all <m>x</m>-values in the intersection of <m>(a,b)</m> and the domain of <m>f</m>. We can say that <m>f</m> <term>achieves a local maximum</term> at the point <m>(c,f(c))</m>.
         </p>
         <p>
-          Similarly, a point <m>(c,f(c))</m> is a <term>local minimum</term> of <m>f(x)</m> if there is some open interval of real numbers <m>(a,b)</m> around <m>x=c</m> (that is, <m>a\lt c\lt b</m>) and <m>f(c)\leq f(x)</m> for all <m>x</m>-values in the intersection of <m>(a,b)</m> and the domain of <m>f</m>.
+          Similarly, a function output <m>f(c)</m> is a <term>local minimum</term> of <m>f(x)</m> if there is some open interval of real numbers <m>(a,b)</m> around <m>x=c</m> (that is, <m>a\lt c\lt b</m>) and <m>f(c)\leq f(x)</m> for all <m>x</m>-values in the intersection of <m>(a,b)</m> and the domain of <m>f</m>.  We can say that <m>f</m> <term>achieves a local minimum</term> at the point <m>(c,f(c))</m>.
         </p>
         <p>
           These are really just slightly technical ways of saying that <m>f(c)</m> is either the highest or lowest <m>y</m>-value produced by the function <m>f</m> for the <m>x</m>-values near <m>x=c</m>.
